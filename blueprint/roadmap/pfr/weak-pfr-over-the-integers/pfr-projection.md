@@ -50,7 +50,7 @@ $$
 
 Note that this exists since $H=\{0\}$ is an example of such a subgroup or we are done with this choice of $H$.
 
-We know that $G/H$ is a $2$-elementary group and so by Lemma [Lemma app-ent-pfr](app-ent-pfr.md) there exists some non-trivial subgroup $H'\leq G/H$ such that
+We know that $G/H$ is a $2$-elementary group and so by Lemma [app-ent-pfr](app-ent-pfr.md) there exists some non-trivial subgroup $H'\leq G/H$ such that
 
 $$
 \log \lvert H'\rvert < \frac{1+\alpha}{2}(\mathbb{H}(\psi(X))+\mathbb{H}(\psi(Y))

@@ -16,7 +16,7 @@ If $R$ and $S$ are locally compact topological rings, then $\delta_{R\times S}(r
 
 ## Proof
 
-Follows immediately from lemma [Lemma MeasureTheory.addEquivAddHaarChar\_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md).
+Follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md).
 
 ## Lean
 

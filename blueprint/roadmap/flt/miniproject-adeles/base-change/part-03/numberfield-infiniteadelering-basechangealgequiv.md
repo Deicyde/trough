@@ -22,7 +22,7 @@ L \otimes_K K_{\infty} \cong_L \prod_v (L \otimes_K K_v) \cong_L
 \prod_v \prod_{w\mid v}L_w \cong_L L_{\infty} .
 $$
 
-The first isomorphism is the standard $L$-algebra isomorphism $L \otimes_K \prod_v K_v \cong_L \prod_v (L \otimes_K K_v)$. The second isomorphism is given by the component $L$-algebra isomorphisms $L \otimes_K K_v \cong_L \prod_{w\mid v}L_w$ from Theorem [Theorem NumberField.InfinitePlace.Completion.baseChangeEquiv](../part-02/numberfield-infiniteplace-completion-basechangee.md).
+The first isomorphism is the standard $L$-algebra isomorphism $L \otimes_K \prod_v K_v \cong_L \prod_v (L \otimes_K K_v)$. The second isomorphism is given by the component $L$-algebra isomorphisms $L \otimes_K K_v \cong_L \prod_{w\mid v}L_w$ from Theorem [NumberField.InfinitePlace.Completion.baseChangeEquiv](../part-02/numberfield-infiniteplace-completion-basechangee.md).
 
 ## Lean
 

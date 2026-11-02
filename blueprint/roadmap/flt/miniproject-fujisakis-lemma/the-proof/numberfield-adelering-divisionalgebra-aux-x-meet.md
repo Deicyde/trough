@@ -17,7 +17,7 @@ If $\beta\in D_{\mathbb{A}}^{(1)}$ then $\beta X\cap D^\times\not=\emptyset$.
 
 ## Proof
 
-Indeed by lemma [Lemma NumberField.AdeleRing.DivisionAlgebra.Aux.existsE](numberfield-adelering-divisionalgebra-aux-exists.md), the map $\beta E\to D\backslash D_{\mathbb{A}}$ isn't injective, so there are distinct $\beta e_1,\beta e_2\in \beta E$ with $e_i\in E$ and $\beta e_1-\beta e_2=b\in D$. Now $b\not=0$ and $D$ is a division algebra, so $b\in D^\times$. And $e_1-e_2\in X$ so $b=\beta(e_1-e_2)\in \beta X$, so we're done.
+Indeed by lemma [NumberField.AdeleRing.DivisionAlgebra.Aux.existsE](numberfield-adelering-divisionalgebra-aux-exists.md), the map $\beta E\to D\backslash D_{\mathbb{A}}$ isn't injective, so there are distinct $\beta e_1,\beta e_2\in \beta E$ with $e_i\in E$ and $\beta e_1-\beta e_2=b\in D$. Now $b\not=0$ and $D$ is a division algebra, so $b\in D^\times$. And $e_1-e_2\in X$ so $b=\beta(e_1-e_2)\in \beta X$, so we're done.
 
 ## Lean
 

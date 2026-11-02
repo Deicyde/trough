@@ -9,7 +9,17 @@ We regard $\mathbb{A}_F^\infty$ as a subring of $D_{\mathbb{A}^\infty}:=D\otimes
 Let $R$ be an additive commutative group. Later on $R$ will be a commutative ring but we will not need this for the definition.
 
 - [TotallyDefiniteQuaternionAlgebra.WeightTwoAutomorphicForm](totallydefinitequaternionalgebra-weighttwoautomo.md)
+
+Let $S^D(R)$ denote the set of automorphic forms for $D^\times$. The space $S^D(R)$ is sometimes referred to as a space of “quaternionic modular forms” over $R$. Three basic observations about $S^D(R)$ are
+
 - [TotallyDefiniteQuaternionAlgebra.WeightTwoAutomorphicForm.addCommGroup](totallydefinitequaternionalgebra-weighttwoautomo-2.md)
 - [TotallyDefiniteQuaternionAlgebra.WeightTwoAutomorphicForm.module](totallydefinitequaternionalgebra-weighttwoautomo-3.md)
 - [TotallyDefiniteQuaternionAlgebra.WeightTwoAutomorphicForm.distribMulAction](totallydefinitequaternionalgebra-weighttwoautomo-4.md)
+
+If $R$ is a commutative ring then the action of $D_{\mathbb{A}^\infty}^\times$ commutes with the $R$-action.
+
+Now let $U$ be a level, that is, a compact open subgroup of $D_{\mathbb{A}^\infty}^\times$.
+
 - [TotallyDefiniteQuaternionAlgebra.WeightTwoAutomorphicFormOfLevel](totallydefinitequaternionalgebra-weighttwoautomo-5.md)
+
+The Hecke algebras involved in the main modularity lifting theorems needed in the FLT project will be endomorphisms of these spaces $S^D(U;R)$.

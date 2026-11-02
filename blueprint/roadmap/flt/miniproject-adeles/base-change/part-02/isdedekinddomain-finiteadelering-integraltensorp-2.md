@@ -13,7 +13,7 @@ The ring $R$ introduced above (the restricted product of the $B\otimes_A K_v$ wi
 
 ## Proof
 
-Let $V$ be the finite places of $K$ and $W$ the finite places of $L$, let $X_v$ be $B\otimes_A K_v$, let $C_v$ be $B\otimes_A A_v$, let $Y_w$ be $L_w$, let $D_w$ be $B_w$ and the result follows from the previous definition, given theorem [Theorem IsDedekindDomain.HeightOneSpectrum.range\_baseChange\_comp\_tensorAdicCompletionTo\_eq\_pi](../part-01/isdedekinddomain-heightonespectrum-range-basecha.md).
+Let $V$ be the finite places of $K$ and $W$ the finite places of $L$, let $X_v$ be $B\otimes_A K_v$, let $C_v$ be $B\otimes_A A_v$, let $Y_w$ be $L_w$, let $D_w$ be $B_w$ and the result follows from the previous definition, given theorem [IsDedekindDomain.HeightOneSpectrum.range\_baseChange\_comp\_tensorAdicCompletionTo\_eq\_pi](../part-01/isdedekinddomain-heightonespectrum-range-basecha.md).
 
 ## Sources
 

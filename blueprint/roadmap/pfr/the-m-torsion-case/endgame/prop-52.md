@@ -19,7 +19,7 @@ $$
 where
 
 $$
-t :=  m(4m+1) \eta k.
+t :=  m(4m+1) \eta k.\qquad\text{(3)}
 $$
 
 ## Depends on
@@ -51,7 +51,7 @@ $$
 \mathbb{I}[ (P_i)_{i \in \mathbb{Z}/m\mathbb{Z}} : (Q_j)_{j \in \mathbb{Z}/m\mathbb{Z} } \,\big|\, W ] \leq t,
 $$
 
-with $t$ as in (t-def). Since $Z_1$ is a function of $(P_i)_{i \in \mathbb{Z}/m\mathbb{Z}}$ by (pqr-defs), and similarly $Z_2$ is a function of $(Q_j)_{j \in \mathbb{Z}/m\mathbb{Z}}$, it follows immediately from [Data processing inequality](../data-processing-inequality/data-process.md) that
+with $t$ as in (3). Since $Z_1$ is a function of $(P_i)_{i \in \mathbb{Z}/m\mathbb{Z}}$ by [(1)](more-random.md), and similarly $Z_2$ is a function of $(Q_j)_{j \in \mathbb{Z}/m\mathbb{Z}}$, it follows immediately from [Data processing inequality](../data-processing-inequality/data-process.md) that
 
 $$
 \mathbb{I}[ Z_1 : Z_2 \,|\, W ] \leq t.
@@ -69,7 +69,7 @@ $$
 \sum_{i=1}^m X'_{i,j} = \sum_{i \in \mathbb{Z}/m\mathbb{Z}} Y_{i-j,j} = Q_j.
 $$
 
-As before, $\sum_{i,j=1}^m X'_{i,j} = W$. Hence, using (pqr-defs) and [Data processing inequality](../data-processing-inequality/data-process.md) again, [Bounding mutual information](../bounding-the-mutual-information/key.md) tells us
+As before, $\sum_{i,j=1}^m X'_{i,j} = W$. Hence, using [(1)](more-random.md) and [Data processing inequality](../data-processing-inequality/data-process.md) again, [Bounding mutual information](../bounding-the-mutual-information/key.md) tells us
 
 $$
 \mathbb{I}[ Z_3 :  Z_2 \,|\, W] \leq \mathbb{I}[ (R_i)_{i \in \mathbb{Z}/m\mathbb{Z}} : (Q_j)_{j \in \mathbb{Z}/m\mathbb{Z} } \,\big|\, W ] \leq t.

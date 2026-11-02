@@ -33,7 +33,7 @@ Take $(X'_i)_{1 \leq i \leq m}$ to be further independent copies of $(X_i)_{1 \l
 From [Kaimanovich-Vershik-Madiman inequality](../../entropic-ruzsa-calculus/part-02/kv.md) one has
 
 $$
-\mathbb{H}[W + W'] \leq  \mathbb{H}[W] + \mathbb{H}[X_{a} + W'] - \mathbb{H}[X_{a}]
+\mathbb{H}[W + W'] \leq  \mathbb{H}[W] + \mathbb{H}[X_{a} + W'] - \mathbb{H}[X_{a}]\qquad\text{(1)}
 $$
 
 and also
@@ -42,7 +42,7 @@ $$
 \mathbb{H}[X_a + W'] \leq \mathbb{H}[X_a + X_b] + \mathbb{H}[W'] - \mathbb{H}[X'_b].
 $$
 
-Combining this with (7922) and then applying [Independent lower bound on sumset](../../entropic-ruzsa-calculus/part-01/sumset-lower.md) we have
+Combining this with (1) and then applying [Independent lower bound on sumset](../../entropic-ruzsa-calculus/part-01/sumset-lower.md) we have
 
 $$
 \begin{aligned}  \mathbb{H}[W + W']  & \leq    2\mathbb{H}[W] + \mathbb{H}[X_a + X_b]  - \mathbb{H}[X_a] - \mathbb{H}[X_b] \\ & \leq

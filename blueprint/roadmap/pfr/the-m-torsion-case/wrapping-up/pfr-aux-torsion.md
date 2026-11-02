@@ -11,7 +11,7 @@ proof: formalized
 Suppose that $G$ is a finite abelian group of torsion $m$. If $A \subset G$ is non-empty and $|A+A| \leq K|A|$, then $A$ can be covered by at most $K ^ {128m^3+1}|A|^{1/2}/|H|^{1/2}$ translates of a subspace $H$ of $G$ with
 
 $$
-|H|/|A| \in [K^{-256m^3}, K^{256m^3}].
+|H|/|A| \in [K^{-256m^3}, K^{256m^3}].\qquad\text{(1)}
 $$
 
 ## Depends on

@@ -3,7 +3,7 @@ declaration: lemma
 origin: cited
 ---
 
-# lemma-AdeleMiniproject-1
+# Lemma: If $X_v$ and $Y_v$ are topological spaces…
 
 If $X_v$ and $Y_v$ are topological spaces with open subspaces $C_v$ and $D_v$, then the obvious bijection $\prod'_v(X_v \times Y_v,C_v\times D_v) \cong \left(\prod'_v(X_v,C_v)\right)\times\left(\prod'_v(Y_v,D_v)\right)$ is a homeomorphism, where the restricted products have the restricted product topology and the binary product has the product topology.
 

@@ -16,7 +16,7 @@ If $\mu$ is any regular Haar measure on $A$ then $d_A(\phi)\mu = \phi^*\mu.$
 
 ## Proof
 
-This follows from lemma [Lemma MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md) applied to the regular Haar measure $\phi^*\mu$ and the fact that $\phi_*\phi^*\mu=\mu$.
+This follows from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md) applied to the regular Haar measure $\phi^*\mu$ and the fact that $\phi_*\phi^*\mu=\mu$.
 
 ## Lean
 

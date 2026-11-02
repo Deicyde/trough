@@ -18,7 +18,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-$K_v$ is known to be Hausdorff, so $M_2(K_v)$ is Hausdorff and the results follow from lemmas [Lemma Submonoid.units\_isOpen](../restricted-products/submonoid-units-isopen.md) and [Lemma Submonoid.units\_isCompact](../restricted-products/submonoid-units-iscompact.md).
+$K_v$ is known to be Hausdorff, so $M_2(K_v)$ is Hausdorff and the results follow from lemmas [Submonoid.units\_isOpen](../restricted-products/submonoid-units-isopen.md) and [Submonoid.units\_isCompact](../restricted-products/submonoid-units-iscompact.md).
 
 ## Sources
 

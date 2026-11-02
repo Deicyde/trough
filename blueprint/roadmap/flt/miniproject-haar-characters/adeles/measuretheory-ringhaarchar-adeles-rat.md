@@ -23,7 +23,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-By theorem [Lemma MeasureTheory.addEquivAddHaarChar\_prodCongr](../finite-products/measuretheory-addequivaddhaarchar-prodcongr.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}}(x)=\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}(x^\infty)\times\delta_{\mathbb{R}}(x_\infty)$. By lemma [Lemma MeasureTheory.ringHaarChar\_real](../examples/measuretheory-ringhaarchar-real.md) we have $\delta_{\mathbb{R}}(x_\infty)=|x|_\infty$, and by theorem [Theorem MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}=\prod_p\delta_{\mathbb{Q}_p}(x_p)$. By lemma [Lemma MeasureTheory.ringHaarChar\_padic](../examples/measuretheory-ringhaarchar-padic.md) we have $\delta_{\mathbb{Q}_p}(x_p)=|x_p|_p$ and putting everything together we get the result.
+By theorem [MeasureTheory.addEquivAddHaarChar\_prodCongr](../finite-products/measuretheory-addequivaddhaarchar-prodcongr.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}}(x)=\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}(x^\infty)\times\delta_{\mathbb{R}}(x_\infty)$. By lemma [MeasureTheory.ringHaarChar\_real](../examples/measuretheory-ringhaarchar-real.md) we have $\delta_{\mathbb{R}}(x_\infty)=|x|_\infty$, and by theorem [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}=\prod_p\delta_{\mathbb{Q}_p}(x_p)$. By lemma [MeasureTheory.ringHaarChar\_padic](../examples/measuretheory-ringhaarchar-padic.md) we have $\delta_{\mathbb{Q}_p}(x_p)=|x_p|_p$ and putting everything together we get the result.
 
 ## Lean
 

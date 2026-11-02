@@ -12,8 +12,14 @@ navigation: transparent
 - [Entropy of uniform random variable](uniform-entropy.md)
 - [Entropy of uniform random variable, II](uniform-entropy-ii.md)
 - [Bounded entropy implies concentration](bound-conc.md)
+
+We use $X,Y$ to denote the pair $\omega \mapsto (X(\omega),Y(\omega)$).
+
 - [Commutativity and associativity of joint entropy](entropy-comm.md)
 - [Conditioned event](condition-event-def.md)
+
+Note: it may happen that $E$ has zero measure. In which case, the ambient probability measure should be replaced with a zero measure. (In our formalization we achieve this by working with arbitrary measures, and normalizing them to be probability measures if possible, else using the zero measure. Conditioning is also formalized using existing Mathlib definitions.)
+
 - [Conditional entropy](conditional-entropy-def.md)
 - [Conditional entropy and relabeling](relabeled-entropy-cond.md)
 - [Chain rule](chain-rule.md)

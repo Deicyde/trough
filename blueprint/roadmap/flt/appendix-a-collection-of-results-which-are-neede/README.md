@@ -8,3 +8,4 @@ In this (temporary, unorganised) appendix we list a whole host of definitions an
 - [Automorphic forms and representations](automorphic-forms-and-representations/README.md)
 - [Galois representations](galois-representations/README.md)
 - [Algebraic geometry](algebraic-geometry/README.md)
+- [Algebra](algebra/README.md)

@@ -20,7 +20,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-By lemma [Lemma MeasureTheory.ringHaarChar\_adeles\_rat](measuretheory-ringhaarchar-adeles-rat.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}}(x)=\prod_v|x|_v$. But the product formula says that this is 1. A quick proof: if $x=\pm\prod_pp^{e_p}$ then $\prod_p|x|_p=\prod_pp^{-e_p}$ and $|x|_\infty=\prod_pp^{e_p}$ so they cancel.
+By lemma [MeasureTheory.ringHaarChar\_adeles\_rat](measuretheory-ringhaarchar-adeles-rat.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}}(x)=\prod_v|x|_v$. But the product formula says that this is 1. A quick proof: if $x=\pm\prod_pp^{e_p}$ then $\prod_p|x|_p=\prod_pp^{-e_p}$ and $|x|_\infty=\prod_pp^{e_p}$ so they cancel.
 
 ## Lean
 

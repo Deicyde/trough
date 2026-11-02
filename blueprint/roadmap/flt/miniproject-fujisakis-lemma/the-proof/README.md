@@ -15,5 +15,13 @@ We prove the theorem via a series of lemmas.
 - [NumberField.AdeleRing.DivisionAlgebra.Aux.C](numberfield-adelering-divisionalgebra-aux-c.md)
 - [NumberField.AdeleRing.DivisionAlgebra.Aux.C\_compact](numberfield-adelering-divisionalgebra-aux-c-comp.md)
 - [NumberField.AdeleRing.DivisionAlgebra.Aux.antidiag\_mem\_C](numberfield-adelering-divisionalgebra-aux-antidi.md)
+
+We can now prove Fujisaki's theorem [NumberField.AdeleRing.DivisionAlgebra.compact\_quotient](../enter-the-adeles/numberfield-adelering-divisionalgebra-compact-qu.md).
+
+We note here some useful consequences.
+
 - [NumberField.FiniteAdeleRing.DivisionAlgebra.units\_cocompact](numberfield-finiteadelering-divisionalgebra-unit.md)
+
+**Remark.** In this generality the quotient might not be Hausdorff.
+
 - [NumberField.FiniteAdeleRing.DivisionAlgebra.finiteDoubleCoset](numberfield-finiteadelering-divisionalgebra-fini.md)

@@ -19,7 +19,7 @@ This natural map $L\otimes_K\mathbb{A}_{A,K}^\infty\to\mathbb{A}_{B,L}^\infty$ i
 
 ## Proof
 
-Follows immediately from theorem [Theorem IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](../part-02/isdedekinddomain-finiteadelering-basechangeinteg.md) and theorem [Corollary IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
+Follows immediately from theorem [IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](../part-02/isdedekinddomain-finiteadelering-basechangeinteg.md) and theorem [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
 
 ## Lean
 

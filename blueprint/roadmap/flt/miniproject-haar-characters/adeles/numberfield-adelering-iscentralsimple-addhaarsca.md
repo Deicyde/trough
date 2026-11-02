@@ -20,7 +20,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-We think of $B_{\mathbb{A}}$ as $B\otimes_K\mathbb{A}_K$. If $u=(u_v)$ as $v$ runs through the places of $K$ then $d_{B_{\mathbb{A}}}(\ell_u)=\prod_v d_{B_v}(\ell_{u_v})$ by theorem [Theorem MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) (and the product is finite). By corollary [Corollary IsSimpleRing.ringHaarChar\_eq\_addEquivAddHaarChar\_mulRight](../left-and-right-multiplication/issimplering-ringhaarchar-eq-addequivaddhaarchar.md) this equals $\prod_v d_{B_v}(r_{u_v})$, and again by theorem [Theorem MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) this is $d_{B_{\mathbb{A}}}(r_u)$.
+We think of $B_{\mathbb{A}}$ as $B\otimes_K\mathbb{A}_K$. If $u=(u_v)$ as $v$ runs through the places of $K$ then $d_{B_{\mathbb{A}}}(\ell_u)=\prod_v d_{B_v}(\ell_{u_v})$ by theorem [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) (and the product is finite). By corollary [IsSimpleRing.ringHaarChar\_eq\_addEquivAddHaarChar\_mulRight](../left-and-right-multiplication/issimplering-ringhaarchar-eq-addequivaddhaarchar.md) this equals $\prod_v d_{B_v}(r_{u_v})$, and again by theorem [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) this is $d_{B_{\mathbb{A}}}(r_u)$.
 
 ## Lean
 

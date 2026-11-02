@@ -12,8 +12,8 @@ Every element of $\widehat{\mathbb{Q}}:=\mathbb{Q}\otimes\widehat{\mathbb{Z}}$ c
 
 ## Depends on
 
-- [QHat](../qhat-and-tensor-products/qhat.md)
-- [ZHat.commRing](../zhat/zhat-commring.md)
+- [QHat](../widehat-q-and-tensor-products/qhat.md)
+- [ZHat.commRing](../widehat-z/zhat-commring.md)
 
 ## Proof
 

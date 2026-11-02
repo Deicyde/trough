@@ -11,7 +11,7 @@ proof: formalized
 If $X,Y,Z$ are $G$-valued random variables on $\Omega$ with $(X,Y)$ independent of $Z$, then
 
 $$
-\mathbb{H}[X - Y] \leq \mathbb{H}[X-Z] + \mathbb{H}[Z-Y] - \mathbb{H}[Z]
+\mathbb{H}[X - Y] \leq \mathbb{H}[X-Z] + \mathbb{H}[Z-Y] - \mathbb{H}[Z]\qquad\text{(1)}
 $$
 
 ## Depends on
@@ -51,7 +51,7 @@ $$
 \mathbb{H}[X - Z, Y, X - Y] = \mathbb{H}[X, Y, Z] = \mathbb{H}[X, Y] + \mathbb{H}[Z]
 $$
 
-(from [Entropy and relabeling](../../shannon-entropy-inequalities/part-01/relabeled-entropy.md) and [Additivity of entropy](../../shannon-entropy-inequalities/part-02/add-entropy.md)) and rearranging, we indeed obtain (submod-explicit).
+(from [Entropy and relabeling](../../shannon-entropy-inequalities/part-01/relabeled-entropy.md) and [Additivity of entropy](../../shannon-entropy-inequalities/part-02/add-entropy.md)) and rearranging, we indeed obtain (1).
 
 ## Lean
 

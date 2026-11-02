@@ -15,7 +15,7 @@ If $\rho$ is the mod $p$ Galois representation associated to a Frey package $(a,
 
 ## Proof
 
-This follows from a profound and long result of Mazur \[mazur-torsion\] from 1977, namely the fact that the torsion subgroup of an elliptic curve over $\mathbb{Q}$ can have size at most 16. In fact there is still a little more work which needs to be done to deduce the theorem from Mazur's result. A pre-1990 reference for the full proof of this claim is Proposition 6 in §4.1 of \[serreconj\].
+This follows from a profound and long result of Mazur \[[Mazur 1977b](http://www.numdam.org/item?id=PMIHES_1977__47__33_0)\] from 1977, namely the fact that the torsion subgroup of an elliptic curve over $\mathbb{Q}$ can have size at most 16. In fact there is still a little more work which needs to be done to deduce the theorem from Mazur's result. A pre-1990 reference for the full proof of this claim is Proposition 6 in §4.1 of \[[Serre 1987](https://doi.org/10.1215/S0012-7094-87-05413-5)\].
 
 ## Lean
 

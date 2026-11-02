@@ -1,4 +1,4 @@
-# The m-torsion case
+# The $m$-torsion case
 
 - [Data processing inequality](data-processing-inequality/README.md)
 - [More Ruzsa distance estimates](more-ruzsa-distance-estimates/README.md)

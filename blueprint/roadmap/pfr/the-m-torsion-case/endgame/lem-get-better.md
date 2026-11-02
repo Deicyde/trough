@@ -17,7 +17,7 @@ $$
 Let $Y_1,\dots,Y_n$ be some further $G$-valued random variables and let $\alpha>0$ be a constant. Then there exists a random variable $U$ such that
 
 $$
-d[U;U] + \alpha \sum_{i=1}^n d[Y_i;U] \leq \Bigl(2 + \frac{\alpha n}{2} \Bigr) \delta + \alpha \sum_{i=1}^n d[Y_i;T_2].
+d[U;U] + \alpha \sum_{i=1}^n d[Y_i;U] \leq \Bigl(2 + \frac{\alpha n}{2} \Bigr) \delta + \alpha \sum_{i=1}^n d[Y_i;T_2].\qquad\text{(7)}
 $$
 
 ## Depends on
@@ -40,7 +40,7 @@ $$
 &\leq  3 \mathbb{I}[T_1 : T_2] + 2 \mathbb{H}[T_3] - \mathbb{H}[T_1] - \mathbb{H}[T_2] \\
 &\ = \mathbb{I}[T_1 : T_2] + \mathbb{I}[T_1 : T_3] + \mathbb{I}[T_2 : T_3]
 = \delta,
-\end{split}
+\end{split}\qquad\text{(8)}
 $$
 
 where the last line follows from [Entropy and relabeling](../../shannon-entropy-inequalities/part-01/relabeled-entropy.md) by observing
@@ -51,7 +51,7 @@ $$
 
 since any two of $T_1,T_2,T_3$ determine the third.
 
-By (514a) and the triangle inequality,
+By (8) and the triangle inequality,
 
 $$
 \sum_z p_{T_3}(z) d[T_2 \,|\, T_3 \mathop{=} z; T_2 \,|\, T_3\mathop{=}z] \leq 2 \delta

@@ -12,8 +12,7 @@ Let $X, Y, Z, Z'$ be random variables taking values in some abelian group, and w
 
 $$
 \begin{aligned}
-& d[X ;Y + Z | Y + Z + Z'] - d[X ;Y] \\ & \qquad \leq \tfrac{1}{2} ( \mathbb{H}[Y + Z + Z'] + \mathbb{H}[Y + Z] - \mathbb{H}[Y] - \mathbb{H}[Z']).
-\end{aligned}
+& d[X ;Y + Z | Y + Z + Z'] - d[X ;Y] \\ & \qquad \leq \tfrac{1}{2} ( \mathbb{H}[Y + Z + Z'] + \mathbb{H}[Y + Z] - \mathbb{H}[Y] - \mathbb{H}[Z']).\qquad\text{(10)}\end{aligned}
 $$
 
 ## Depends on
@@ -32,7 +31,7 @@ $$
 d[X ; Y + Z | Y + Z + Z'] - d[X ; Y + Z] \leq \tfrac{1}{2}( \mathbb{H}[Y + Z + Z'] - \mathbb{H}[Z']).
 $$
 
-Adding this to (lem51-a) gives the result.
+Adding this to [(8)](first-useful.md) gives the result.
 
 ## Lean
 

@@ -18,7 +18,7 @@ Let $b_0 \in B/Q$. Suppose that $b_0$ is fixed by the stabilizer subgroup $D_Q$.
 
 ## Proof
 
-Let $a,b\in B$ be elements from [Lemma fixed\_of\_fixed1\_aux2](../the-extension-b-q-a-p/fixed-of-fixed1-aux2.md). Let $M_b \in A[X]$ be the characteristic polynomial of $b$. We can map $M_b$ to $L[X]$ in two different ways: via $B[X]$ and via $K[X]$. Going via $B[X]$ tells us that the image of $M_b(X)$ in $L[X]$ is exactly
+Let $a,b\in B$ be elements from [fixed\_of\_fixed1\_aux2](../the-extension-b-q-a-p/fixed-of-fixed1-aux2.md). Let $M_b \in A[X]$ be the characteristic polynomial of $b$. We can map $M_b$ to $L[X]$ in two different ways: via $B[X]$ and via $K[X]$. Going via $B[X]$ tells us that the image of $M_b(X)$ in $L[X]$ is exactly
 
 $$
 (X - ab_0)^{\lvert D_Q\rvert}X^{\lvert G\rvert-\lvert D_Q\rvert}.

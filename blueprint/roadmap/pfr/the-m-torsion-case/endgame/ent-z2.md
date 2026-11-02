@@ -35,7 +35,7 @@ $$
 \end{aligned}
 $$
 
-Using [Sums of dilates II](../more-ruzsa-distance-estimates/sum-dilate-ii.md) and (eq:s-bound) we get
+Using [Sums of dilates II](../more-ruzsa-distance-estimates/sum-dilate-ii.md) and [(4)](ent-w.md) we get
 
 $$
 \begin{aligned}
@@ -45,7 +45,7 @@ $$
 \end{aligned}
 $$
 
-Applying (eq:ent-s) gives the claim.
+Applying [(5)](ent-w.md) gives the claim.
 
 ## Lean
 

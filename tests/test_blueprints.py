@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import pytest
@@ -158,14 +159,19 @@ def test_articles_carry_the_blueprints_marks(blueprint, tmp_path):
     assert lemma["lean"] == "A.one, A.two" and lemma["statement"] == "formalized" and "proof" not in lemma
     assert dict(leaves["Main"].fields)["mathlib_declaration"] == "Mathlib.main"
     assert "mathlib" not in dict(leaves["noname"].fields)
-    assert dict(leaves["lemma-one-1"].fields)["not_ready"] == "true"
-    assert [leaf.title for leaf in leaves["lemma-one-1"].depends] == ["a-proof-label"]
+    unlabelled = leaves["Lemma: Unlabelled and not ready."]  # a node with no label or title is headed by its text
+    assert dict(unlabelled.fields)["not_ready"] == "true"
+    assert [leaf.title for leaf in unlabelled.depends] == ["a-proof-label"]
     assert [leaf.title for leaf in leaves["a-proof-label"].proof_depends] == ["Main"]
     assert "[Definition Thing]" not in leaves["a-proof-label"].body
     assert "By [Thing](def-thing.md), things exist." == leaves["a-proof-label"].body
     assert built.lean_links["A.one"] == "https://example.org/docs/find/#doc/A.one"
-    assert built.root.entries[0].node.title == "First"
-    assert "Some prose about $\\mathbb{R}$." in built.root.entries[0].node.prose
+    first = built.root.entries[0].node
+    assert first.title == "First" and first.prose == "Some prose about $\\mathbb{R}$."
+    basics = first.entries[0].node
+    # The remark and its proof sit between the cards of the nodes around them.
+    assert [entry.node.title for entry in basics.entries] == ["Thing", "a-proof-label", "Lemma: Unlabelled and not ready."]
+    assert basics.entries[2].before == "**Remark.** A remark.\n\n*Proof.* Proves the remark, not the lemma."
 
 
 def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
@@ -189,10 +195,103 @@ def test_a_library_without_a_license_shows_structure_only(blueprint, tmp_path):
     assert all("does not reproduce its text" in leaf.body for leaf in leaves)
 
 
-@pytest.mark.parametrize("library, nodes", [("pfr", 219), ("equational-theories", 214), ("flt", 241), ("strongpnt", 621)])
-def test_vendored_blueprints_read_whole(library, nodes):
+@pytest.mark.parametrize("library", sorted(path.name for path in DATA.iterdir() if (path / "source.json").is_file()))
+def test_vendored_blueprints_read_as_refreshed(library):
+    """Each vendored blueprint reads to the node count its refresh recorded, and every
+    reference in its pages resolves."""
     project = blueprints.load_projects(DATA.parent, [{"id": library, "name": library}])[0]
+    source = json.loads((project.directory / "source.json").read_text(encoding="utf-8"))
     blueprint = blueprints.load_blueprint(project)
-    assert len(blueprint.graph) == nodes
+    assert len(blueprint.graph) == source["nodes"] > 0
+    assert not [problem for problem in blueprint.problems if "names no file" in problem]
     built = blueprints.chapter(project, blueprint, {})
-    assert built.stats["nodes"] == nodes and not built.unknown
+    assign_paths(built.root, Path("blueprint/roadmap") / library)
+    blueprints.resolve(built, Path("blueprint"))
+    assert built.stats["nodes"] == source["nodes"]
+
+
+def test_formulas_keep_dollars_inside_braces_and_let_copies_a_meaning():
+    assert writer().statement(r"If $x = \text{a $y$ b}$ then.") == r"If $x = \text{a $y$ b}$ then."
+    assert tex.expand(r"$\phi$", tex.definitions(r"\let\oldphi\phi \renewcommand{\phi}{\oldphi_0}")) == r"$\phi_0$"
+
+
+def test_titles_keep_their_formulas_and_quotes_close():
+    assert writer().plain(r"Reduction to \texorpdfstring{$n\geq5$}{ngeq5} and prime") == r"Reduction to $n\geq5$ and prime"
+    assert writer().statement(r"call it `the $x'$ map' and `don't'") == r"call it ‘the $x'$ map’ and ‘don't’"
+
+
+def test_lists_stay_lists():
+    w = writer()
+    assert w.statement(r"\begin{itemize}\item \[ x = y \]. \item two \end{itemize}") == "- $$\n    x = y.\n    $$\n\n- two"
+    nested = r"\begin{enumerate}\item one \begin{itemize}\item a \item b\end{itemize} \item two\end{enumerate}"
+    assert w.statement(nested) == "1. one\n\n    - a\n    - b\n\n2. two"
+
+
+def test_missing_files_are_problems(tmp_path):
+    (tmp_path / "web.tex").write_text("\\begin{document}\\input{gone}\\end{document}\n")
+    assert leanblueprint.read(tmp_path, "web.tex").problems == ["web.tex:1: \\input{gone} names no file"]
+    with pytest.raises(FileNotFoundError):
+        leanblueprint.read(tmp_path, "renamed.tex")
+
+
+def test_a_proof_inside_a_proof_is_part_of_it(tmp_path):
+    (tmp_path / "web.tex").write_text(
+        "\\begin{document}\\chapter{C}\\begin{lemma}\\label{a} A. \\end{lemma}\n"
+        "\\begin{proof}\\leanok Outer. \\begin{proof} Inner. \\end{proof} \\end{proof}\n"
+        "\\begin{lemma}\\label{b}\\leanok B. \\end{lemma}\\begin{proof}\\mathlibok\\end{proof}\\end{document}\n"
+    )
+    a, b = leanblueprint.read(tmp_path, "web.tex").graph
+    assert a.proof.leanok and "Outer." in a.proof.body and "Inner." in a.proof.body
+    assert b.proof.leanok  # \mathlibok marks a proof formalized, as in leanblueprint
+
+
+PAGES = r"""
+\documentclass{report}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+\begin{document}
+\chapter{Eq}
+Consider
+\begin{equation}\label{eq:a} a = b \end{equation}
+\begin{lemma}\label{lem:e}By \eqref{eq:a}, and
+\begin{align} c &= d \label{eq:c} \\ e &= f \end{align}
+so \eqref{eq:c} and \ref{eq:c}.
+\end{lemma}
+\begin{remark}\label{rem:x} Remark text. \end{remark}
+\section{Sub}
+See \cref{lem:e}, Lemma~\ref{lem:e}, \eqref{eq:c}, \cref{rem:x} and \cite[p.~1]{knuth}.
+\subsection{Deeper}
+Text here.
+\begin{theorem}\label{my thm} T. \end{theorem}
+After, by \cref{my thm}.
+\section{Words}
+Only words, in a section with no nodes.
+\bibliography{refs}
+\end{document}
+"""
+
+
+def test_pages_read_in_the_blueprints_order(tmp_path):
+    (tmp_path / "src").mkdir()
+    (tmp_path / "src" / "web.tex").write_text(PAGES)
+    (tmp_path / "src" / "refs.bib").write_text(
+        "@book{knuth, author = {Knuth, Donald E.}, title = {Art}, year = 1968, doi = {10.1/x}}\n"
+    )
+    blueprint = leanblueprint.read(tmp_path / "src", "web.tex")
+    assert blueprint.bibliography == ["refs.bib"]
+    built = blueprints.chapter(project(tmp_path), blueprint, {})
+    assign_paths(built.root, Path("blueprint/roadmap/demo"))
+    blueprints.resolve(built, Path("blueprint"))
+    eq = built.root.entries[0].node
+    assert eq.prose == "Consider\n\n$$\na = b\\qquad\\text{(1)}\n$$"
+    lemma = eq.entries[0].node
+    assert lemma.body == ("By [(1)](README.md), and\n\n$$\n\\begin{aligned} c &= d\\qquad\\text{(2)}\\\\ e &= f "
+                          "\\end{aligned}\n$$\n\nso (2) and 2.")
+    sub, words = eq.entries[1].node, eq.entries[2].node
+    assert eq.entries[1].before == "**Remark.** Remark text."
+    assert sub.prose == ("See [Lemma e](../lem-e.md), Lemma [e](../lem-e.md), [(2)](../lem-e.md), [Remark "
+                         "x](../README.md) and \\[[Knuth 1968](https://doi.org/10.1/x), p. 1\\].\n\n## Deeper\n\nText here.")
+    assert [entry.node.title for entry in sub.entries] == ["my thm"]
+    assert sub.tail == "After, by [Theorem my thm](my-thm.md)."
+    assert words.prose == "Only words, in a section with no nodes." and not words.entries

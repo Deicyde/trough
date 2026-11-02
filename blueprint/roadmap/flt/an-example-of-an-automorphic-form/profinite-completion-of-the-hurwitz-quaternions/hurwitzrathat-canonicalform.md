@@ -11,8 +11,8 @@ Every element of $\widehat{D}$ can be written as $z/N$ with $z\in\widehat{\mathc
 
 ## Depends on
 
-- [QHat](../qhat-and-tensor-products/qhat.md)
-- [ZHat](../zhat/zhat.md)
+- [QHat](../widehat-q-and-tensor-products/qhat.md)
+- [ZHat](../widehat-z/zhat.md)
 - [Hurwitz](../the-hurwitz-quaternions/hurwitz.md)
 
 ## Proof

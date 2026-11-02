@@ -20,15 +20,18 @@ import re
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import quote, unquote
 
-from trough import leanblueprint
-from trough.leanblueprint import Blueprint, Node, Proof, Unit, Where
+from trough import bibtex, leanblueprint
+from trough.leanblueprint import Blueprint, Node, Prose, Proof, Unit, Where
 from trough.tex import Writer, expand
 from trough.vault import MATH_SPAN, Container, Entry, Leaf, chunk, rel, slugify, walk
 
 KINDS = {"theorem": "theorem", "lemma": "lemma", "proposition": "proposition", "corollary": "corollary",
          "definition": "definition", "sublemma": "lemma", "conjecture": "theorem", "claim": "lemma"}
-LINK = re.compile(r"\]\(trough:([^)\s]*)\)")
+LINK = re.compile(r"\]\(trough:([^)\s]*)\)")  # a placeholder's target is percent-encoded
+# References that print only a number in LaTeX, so the text before them names the kind.
+NUMBER_ONLY = {"ref", "pageref", "vref", "Vref", "labelcref", "cpageref", "Cpageref", "nameref", "hyperref"}
 PREFIX = re.compile(r"^[A-Za-z]{1,12}:(?=.)")
 STRUCTURE_SCHEMA = "trough-blueprint-structure/v1"
 
@@ -92,7 +95,8 @@ def structure(blueprint: Blueprint) -> dict:
         "thms": list(blueprint.thms),
         "units": [
             {"level": unit.level, "title": title(unit.title), "label": unit.label, "file": unit.where.file,
-             "line": unit.where.line, "parent": index[id(unit.parent)] if unit.parent else None}
+             "line": unit.where.line, "parent": index[id(unit.parent)] if unit.parent else None,
+             "offset": unit.offset}
             for unit in blueprint.units
         ],
         "nodes": [
@@ -100,6 +104,7 @@ def structure(blueprint: Blueprint) -> dict:
              "leanok": node.leanok, "mathlibok": node.mathlibok, "notready": node.notready,
              "discussion": node.discussion, "uses": node.uses, "file": node.where.file, "line": node.where.line,
              "unit": index[id(node.unit)] if node.unit else None, "graph": node.graph, "equations": node.equations,
+             "offset": node.offset,
              "proof": None if node.proof is None else {
                  "leanok": node.proof.leanok, "uses": node.proof.uses, "labels": node.proof.labels,
                  "file": node.proof.where.file, "line": node.proof.where.line}}
@@ -113,7 +118,8 @@ def from_structure(data: dict) -> Blueprint:
     units: list[Unit] = []
     for item in data["units"]:
         parent = units[item["parent"]] if item["parent"] is not None else None
-        units.append(Unit(item["level"], item["title"], Where(item["file"], item["line"]), item["label"], "", parent))
+        units.append(Unit(item["level"], item["title"], Where(item["file"], item["line"]), item["label"], parent,
+                          item.get("offset", 0)))
     nodes: list[Node] = []
     labels: dict[str, object] = {}
     for item in data["nodes"]:
@@ -125,7 +131,7 @@ def from_structure(data: dict) -> Blueprint:
             unit=units[item["unit"]] if item["unit"] is not None else None, graph=item["graph"],
             proof=None if proof is None else Proof("", proof["leanok"], list(proof["uses"]), list(proof["labels"]),
                                                    Where(proof["file"], proof["line"])),
-            equations=list(item["equations"]), id=item["id"],
+            equations=list(item["equations"]), id=item["id"], offset=item.get("offset", 0),
         )
         nodes.append(node)
         for label in node.labels:
@@ -169,13 +175,34 @@ class Built:
 
 def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Leaf]) -> Built:
     """The chapter for *project*. *mathlib_heads* maps a Mathlib declaration to the
-    Mathlib-chapter article it heads, for nodes in Mathlib."""
+    Mathlib-chapter article it heads, for nodes in Mathlib.
+
+    Each part, chapter and section with anything in it is a page; smaller units are
+    headings on their section's page. A page reads in the blueprint's order: its
+    prose, remarks and examples, and each node's card where the node stands. A
+    labelled display shows a number, counted on its page, that references print."""
     captions = {**{kind: kind.capitalize() for kind in KINDS}, **blueprint.captions}
     dochome = blueprint.links.get("dochome", "https://leanprover-community.github.io/mathlib4_docs")
     nodes = blueprint.graph
+    unit_index = {id(unit): k for k, unit in enumerate(blueprint.units)}
+    bib = bibtex.bibliography([project.directory / "src" / name for name in blueprint.bibliography]) if project.text else {}
+    stats = Counter(nodes=len(nodes))
 
     def caption(node: Node) -> str:
         return captions.get(node.env, node.env.capitalize())
+
+    def page_unit(unit: Unit | None) -> Unit | None:
+        while unit is not None and unit.level > 2:
+            unit = unit.parent
+        return unit
+
+    def key(unit: Unit | None) -> str:
+        """The target key of the page that shows *unit*."""
+        unit = page_unit(unit)
+        return "#root" if unit is None else f"#unit-{unit_index[id(unit)]}"
+
+    def placeholder(text: str, target: str) -> str:
+        return f"[{escape(text)}](trough:{quote(target, safe='')})"
 
     def display(node: Node) -> str:
         """How the text refers to a node; an article's own heading drops the caption, which
@@ -183,30 +210,72 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         return writer.plain(node.title) if node.title else f"{caption(node)} {short_id(node.id)}"
 
     def heading(node: Node) -> str:
-        return writer.plain(node.title) if node.title else short_id(node.id)
+        if node.title:
+            return writer.plain(node.title)
+        if node.labels:
+            return short_id(node.id)
+        # No label and no title: the made-up id is in no blueprint, so say what the node says.
+        words = re.findall(r"\$[^$]*\$|\S+", writer.plain(node.body)) if node.body else []
+        if not words:
+            return f"{caption(node)} ({node.where.file.rsplit('/', 1)[-1]}, line {node.where.line})"
+        cut = 1
+        while cut < len(words) and len(" ".join(words[:cut])) < 40:
+            cut += 1
+        return f"{caption(node)}: {' '.join(words[:cut])}" + ("…" if cut < len(words) else "")
+
+    asides = [node for node in blueprint.nodes if not node.graph] if project.text else []
+    events: list[Node | Prose] = sorted([*nodes, *asides, *(blueprint.prose if project.text else [])],
+                                        key=lambda event: event.offset)
+    shown = {id(unit) for event in events for unit in ancestors(event.unit) if unit.level <= 2}
+    numbers: dict[str, tuple[str, str]] = {}  # an equation's label: its number, and the article that shows it
+    current = ["#root"]  # the article whose text is being written
 
     def ref(label: str, command: str) -> str:
         target = blueprint.labels.get(label)
         if isinstance(target, Node):
-            return f"[{escape(display(target))}](trough:{target.id})" if target.graph else display(target)
+            text = display(target)
+            if command in NUMBER_ONLY:
+                text = writer.plain(target.title) if target.title else short_id(target.id)
+            return placeholder(text, target.id if target.graph else key(target.unit))
         if isinstance(target, Unit):
-            return f"[{escape(writer.plain(target.title))}](trough:{label})"
-        if isinstance(target, tuple):
-            return f"({label})"
-        return label
+            home = page_unit(target)
+            title = writer.plain(target.title)
+            return placeholder(title, key(target)) if home is None or id(home) in shown else escape(title)
+        if isinstance(target, tuple) and label in numbers:
+            number, article = numbers[label]
+            text = number if command in NUMBER_ONLY else f"({number})"
+            return text if article == current[0] else placeholder(text, article)
+        stats["unresolved_refs"] += 1
+        return f"({escape(label)})" if isinstance(target, tuple) else escape(label)
 
-    writer = Writer(blueprint.macros, ref)
+    writer = Writer(blueprint.macros, ref, bib, tag=lambda label: numbers[label][0] if label in numbers else None)
     leaf_of: dict[Node, Leaf] = {}
     owned: set[Node] = set()
-    lean_links: dict[str, str] = {}
-    stats = Counter(nodes=len(nodes))
     for node in nodes:
         if node.mathlibok and node.lean and node.lean[0] in mathlib_heads:
             leaf_of[node] = mathlib_heads[node.lean[0]]
             stats["mathlib_shared"] += 1
+        else:
+            owned.add(node)
+
+    # Equations: numbered on their page in the blueprint's order, before any text refers to one.
+    counts: Counter = Counter()
+    for event in events if project.text else []:
+        if isinstance(event, Node) and event.graph and event not in owned:
             continue
-        leaf_of[node] = leaf(project, node, caption(node), heading(node), writer, dochome, blueprint, lean_links, stats)
-        owned.add(node)
+        article = event.id if isinstance(event, Node) and event.graph else key(event.unit)
+        for label in event.equations:
+            if label not in numbers:
+                counts[key(event.unit)] += 1
+                numbers[label] = (str(counts[key(event.unit)]), article)
+    stats["equations"] = len(numbers)
+
+    lean_links: dict[str, str] = {}
+    for node in nodes:
+        if node in owned:
+            current[0] = node.id
+            leaf_of[node] = leaf(project, node, caption(node), heading(node), writer, dochome, blueprint, lean_links,
+                                 stats)
 
     # Dependencies: a node's \uses that name nodes, a proof's apart from its statement's.
     for node in nodes:
@@ -222,37 +291,95 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     stats["informal"] = break_cycles([leaf_of[node] for node in nodes if node in owned])
     stats["unresolved"] = sum(1 for node in nodes for label in node.uses + node.proof_uses if label not in blueprint.labels)
 
-    # Containers: the blueprint's parts, chapters and sections that hold nodes.
+    # Pages, filled in the blueprint's order.
     root = Container(project.name, project.id, prose=intro(project, blueprint, stats))
-    containers: dict[int, Container] = {}
+    targets: dict[str, Leaf | Container] = {"#root": root}
+    pages: dict[int, Container] = {}
+    pending: dict[int, list[str]] = {}  # text waiting for the next line of a page's listing
+    opened: dict[int, list[Unit]] = {}  # the units whose headings a page has shown last
 
-    def container_for(unit: Unit | None) -> Container:
-        while unit is not None and unit.level > 2:
-            unit = unit.parent
+    def page(unit: Unit | None) -> Container:
+        unit = page_unit(unit)
         if unit is None:
             return root
-        key = id(unit)
-        if key not in containers:
-            parent = container_for(unit.parent)
+        if id(unit) not in pages:
+            parent = page(unit.parent)
             title = writer.plain(unit.title) or "Untitled"
-            prose = writer.statement(unit.prose) if project.text and unit.prose else ""
-            containers[key] = Container(title, slugify(title), prose=prose)
-            parent.entries.append(Entry(containers[key]))
-            if unit.label:
-                targets[unit.label] = containers[key]
-        return containers[key]
+            pages[id(unit)] = Container(title, slugify(title))
+            add(parent, Entry(pages[id(unit)]))
+            targets[key(unit)] = pages[id(unit)]
+        return pages[id(unit)]
 
-    targets: dict[str, Leaf | Container] = {}
+    def add(container: Container, entry: Entry) -> None:
+        entry.before = "\n\n".join(pending.pop(id(container), []))
+        container.entries.append(entry)
+
+    def write(container: Container, markdown: str) -> None:
+        if container.entries:
+            pending.setdefault(id(container), []).append(markdown)
+        else:
+            container.prose = f"{container.prose}\n\n{markdown}".strip()
+
+    def open_headings(home: Container, unit: Unit | None) -> None:
+        """Show the headings of the units below *home*'s that *unit* is in, unless shown last."""
+        chain = [sub for sub in ancestors(unit) if sub.level > 2][::-1]
+        base = page_unit(unit).level if page_unit(unit) is not None else 2
+        last = opened.get(id(home), [])
+        common = 0
+        while common < min(len(chain), len(last)) and chain[common] is last[common]:
+            common += 1
+        for sub in chain[common:]:
+            write(home, f"{'#' * min(6, sub.level - base + 1)} {escape(writer.plain(sub.title) or 'Untitled')}")
+        opened[id(home)] = chain
+
+    for event in events:
+        home = page(event.unit)
+        if isinstance(event, Node) and event.graph:
+            open_headings(home, event.unit)
+            add(home, Entry(leaf_of[event], event in owned))
+            continue
+        current[0] = key(event.unit)
+        markdown = writer.statement(event.text) if isinstance(event, Prose) else aside(event, caption(event), writer)
+        if markdown:
+            open_headings(home, event.unit)
+            write(home, markdown)
+            stats["prose" if isinstance(event, Prose) else "asides"] += 1
+    for container in [root, *pages.values()]:
+        container.tail = "\n\n".join(pending.pop(id(container), []))
     for node in nodes:
-        home = container_for(node.unit)
-        home.entries.append(Entry(leaf_of[node], node in owned))
         for label in [node.id, *node.labels]:
             targets[label] = leaf_of[node]
-    for container in list(containers.values()) + [root]:
+    for container in [*pages.values(), root]:
         chunk(container)
-    stats["containers"] = len(containers)
+    stats["containers"] = len(pages)
     stats["problems"] = len(blueprint.problems)
     return Built(root, targets, lean_links, dict(stats), writer.unknown)
+
+
+def ancestors(unit: Unit | None):
+    """*unit* and the units it is in, innermost first."""
+    while unit is not None:
+        yield unit
+        unit = unit.parent
+
+
+def aside(node: Node, caption: str, writer: Writer) -> str:
+    """A remark, example or other theorem-like text that is no node, as its page shows it."""
+    title = f" ({escape(writer.plain(node.title))})" if node.title else ""
+    text = run_in(f"**{caption}{title}.**", writer.statement(node.body))
+    if node.proof is not None:
+        text += "\n\n" + run_in("*Proof.*", writer.statement(node.proof.body))
+    return text
+
+
+def run_in(head: str, body: str) -> str:
+    """*head* starting the first paragraph of *body*, or above it when *body* opens with a
+    display, a list or a quote."""
+    if not body:
+        return head
+    if re.match(r"\$\$|[-+*>] |\d+\. |\*\(", body):
+        return f"{head}\n\n{body}"
+    return f"{head} {body}"
 
 
 def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer, dochome: str,
@@ -350,13 +477,17 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
     date = f" ({project.date[:10]})" if project.date else ""
     nodes = stats["nodes"]
     lines = [
-        f"The blueprint of {project.name}, read at commit {rev}{date}: {nodes:,} nodes, one article each. A node it "
+        f"The blueprint of {project.name}, read at commit {rev}{date}: {nodes:,} nodes, one article each. A node the "
         "blueprint marks `\\leanok` is formalized here, its proof too when that is marked, and `\\mathlibok` "
         "puts it in Mathlib. Dependencies are the blueprint's `\\uses`: a statement's under *Depends on*, a "
         "proof's under *Proof depends on*.",
     ]
     if project.text:
-        lines.append(f"Statements and proofs are quoted from the blueprint, under its {project.license} license.")
+        lines.append(
+            f"The text is the blueprint's, under its {project.license} license: each page has a section's prose, "
+            "remarks and examples in the blueprint's order, with each node's statement and proof where the node "
+            "stands."
+        )
     else:
         lines.append(
             "The project gives no license, so this chapter has each node's title, Lean names, marks and "
@@ -370,9 +501,7 @@ def resolve(built: Built, vault: Path) -> None:
 
     def fix(text: str, here: Path) -> str:
         def link(match: re.Match) -> str:
-            target = built.targets.get(match.group(1))
-            if target is None:
-                return "](#)"
+            target = built.targets[unquote(match.group(1))]
             return f"]({rel(here, target.path.relative_to(vault))})"
 
         return LINK.sub(link, text)
@@ -381,6 +510,9 @@ def resolve(built: Built, vault: Path) -> None:
         here = node.path.relative_to(vault)
         if isinstance(node, Container):
             node.prose = fix(node.prose, here)
+            node.tail = fix(node.tail, here)
+            for entry in node.entries:
+                entry.before = fix(entry.before, here)
         else:
             node.body = fix(node.body, here)
             node.notes = [(heading, fix(text, here)) for heading, text in node.notes]

@@ -21,7 +21,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-This follows from lemma [Theorem ContinuousMulEquiv.restrictedProductUnits](../restricted-products/continuousmulequiv-restrictedproductunits.md) and lemma [Corollary Homeomorph.restrictedProductMatrix](../restricted-products/homeomorph-restrictedproductmatrix.md).
+This follows from lemma [ContinuousMulEquiv.restrictedProductUnits](../restricted-products/continuousmulequiv-restrictedproductunits.md) and lemma [Homeomorph.restrictedProductMatrix](../restricted-products/homeomorph-restrictedproductmatrix.md).
 
 ## Lean
 

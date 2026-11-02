@@ -8,6 +8,9 @@ In the definitions below, $G$ is a set.
 - [Converse Gibbs inequality](gibbs-converse.md)
 - [Convexity of Kullback–Leibler](kl-div-convex.md)
 - [Kullback–Leibler and injections](kl-div-inj.md)
+
+Now let $G$ be an additive group.
+
 - [Kullback–Leibler and sums](kl-sums.md)
 - [Conditional Kullback–Leibler divergence](ckl-div.md)
 - [Kullback–Leibler and conditioning](kl-cond.md)

@@ -1,0 +1,3 @@
+# Overview
+
+In chapter [First reductions of the problem](../../first-reductions-of-the-problem/README.md) we reduced FLT, modulo a hard theorem from the 1970s, to Theorem [Wiles,Taylor–Wiles, Ribet,…](../../first-reductions-of-the-problem/reduction-to-two-big-theorems/wiles-frey.md), the assertion that $p$-torsion in the Frey curve is reducible. In this chapter we deduce this assertion from three more complex claims about “hardly ramified” Galois representations. It is relatively straightforward to reduce one of these three claims to a result of Fontaine proved in the 1980s in his paper on the nonexistence of nontrivial abelian schemes over $\mathbb{Z}$. The other two claims lie deeper, and their proofs use techniques initially developed by Wiles in the 1990s.

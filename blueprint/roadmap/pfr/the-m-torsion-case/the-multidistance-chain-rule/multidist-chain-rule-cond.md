@@ -13,8 +13,7 @@ Let $\pi \colon G \to H$ be a homomorphism of abelian groups. Let $I$ be a finit
 $$
 \begin{aligned}
 D[ X_{[m]} | Y_{[m]} ] &=  D[ X_{[m]} \,|\, \pi(X_{[m]}), Y_{[m]}] + D[ \pi(X_{[m]}) \,|\, Y_{[m]}] \\
-&\quad\qquad + \mathbb{I}[ \sum_{i=1}^m X_i : \pi(X_{[m]}) \; \big| \;  \pi\bigl(\sum_{i=1}^m X_i \bigr), Y_{[m]} ].
-\end{aligned}
+&\quad\qquad + \mathbb{I}[ \sum_{i=1}^m X_i : \pi(X_{[m]}) \; \big| \;  \pi\bigl(\sum_{i=1}^m X_i \bigr), Y_{[m]} ].\qquad\text{(4)}\end{aligned}
 $$
 
 ## Depends on
@@ -27,7 +26,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-For each $y_i$ in the support of $p_{Y_i}$, apply [Multidistance chain rule](multidist-chain-rule.md) with $X_i$ replaced by the conditioned random variable $(X_i|Y_i=y_i)$, and the claim (chain-eq-cond) follows by averaging (chain-eq) in the $y_i$ using the weights $p_{Y_i}$.
+For each $y_i$ in the support of $p_{Y_i}$, apply [Multidistance chain rule](multidist-chain-rule.md) with $X_i$ replaced by the conditioned random variable $(X_i|Y_i=y_i)$, and the claim (4) follows by averaging [(1)](multidist-chain-rule.md) in the $y_i$ using the weights $p_{Y_i}$.
 
 ## Lean
 

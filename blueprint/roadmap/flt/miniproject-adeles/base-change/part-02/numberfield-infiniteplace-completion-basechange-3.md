@@ -15,7 +15,7 @@ For a fixed infinite place $v$ of $K$, the map $L\otimes_K K_v \to\prod_{w\mid v
 
 ## Proof
 
-The $L$-algebra map $L\otimes_K K_v \to\prod_{w\mid v}L_w$ can equivalently be thought of as $K_v$-linear, which is injective, because it is surjective by Theorem [Theorem NumberField.InfinitePlace.Completion.baseChange\_surjective](numberfield-infiniteplace-completion-basechange-2.md), and both side have the same $K_v$-dimension by Theorem [Theorem NumberField.InfinitePlace.Completion.finrank\_pi\_eq\_finrank\_tensorProduct](numberfield-infiniteplace-completion-finrank-pi.md).
+The $L$-algebra map $L\otimes_K K_v \to\prod_{w\mid v}L_w$ can equivalently be thought of as $K_v$-linear, which is injective, because it is surjective by Theorem [NumberField.InfinitePlace.Completion.baseChange\_surjective](numberfield-infiniteplace-completion-basechange-2.md), and both side have the same $K_v$-dimension by Theorem [NumberField.InfinitePlace.Completion.finrank\_pi\_eq\_finrank\_tensorProduct](numberfield-infiniteplace-completion-finrank-pi.md).
 
 ## Lean
 

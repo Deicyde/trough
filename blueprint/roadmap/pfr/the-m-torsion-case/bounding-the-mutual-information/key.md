@@ -17,7 +17,7 @@ $$
 Then
 
 $$
-{\mathcal I} \leq m(4m+1) \eta k.
+{\mathcal I} \leq m(4m+1) \eta k.\qquad\text{(1)}
 $$
 
 ## Depends on
@@ -43,7 +43,7 @@ For each $j \in \{1,\dots,m\}$ we call the tuple $(X_{i,j})_{i = 1}^m$ a *column
 From [Corollary cor-multid](../the-multidistance-chain-rule/cor-multid.md) we have
 
 $$
-{\mathcal I} \leq \sum_{j=1}^{m-1} A_j + B,
+{\mathcal I} \leq \sum_{j=1}^{m-1} A_j + B,\qquad\text{(2)}
 $$
 
 where
@@ -68,8 +68,7 @@ Let $\sigma = \sigma_j \colon I \to I$ be a permutation such that $X_{i,j} \equi
 
 $$
 \begin{aligned}
-A_j & \leq \eta (\sum_{i = 1}^{m} d[X_{i,j}; X_{i, j}|X_{i, j} + \cdots + X_{i,m}]).
-\end{aligned}
+A_j & \leq \eta (\sum_{i = 1}^{m} d[X_{i,j}; X_{i, j}|X_{i, j} + \cdots + X_{i,m}]).\qquad\text{(3)}\end{aligned}
 $$
 
 We similarly consider $B$. By [Relabeling](../multidistance/multidist-perm.md) applied to the $m$-th column,
@@ -87,10 +86,10 @@ $$
 if we apply [Lower bound on conditional multidistance, II](../the-tau-functional/cond-multidist-lower-ii.md) again, now with $X_{\sigma(i)} = X_{i,m}$, $X'_i := V_i$, and with the variable $Y_i$ being trivial, we obtain
 
 $$
-B \leq \eta \sum_{i = 1}^m d[X_{i,m}; V_i].
+B \leq \eta \sum_{i = 1}^m d[X_{i,m}; V_i].\qquad\text{(4)}
 $$
 
-It remains to bound the distances appearing in (54a) and (55a) further using Ruzsa calculus. For $1 \leq j \leq m-1$ and $1 \leq i \leq m$, by [Comparison of Ruzsa distances, I](../../entropic-ruzsa-calculus/part-02/first-useful.md) we have
+It remains to bound the distances appearing in (3) and (4) further using Ruzsa calculus. For $1 \leq j \leq m-1$ and $1 \leq i \leq m$, by [Comparison of Ruzsa distances, I](../../entropic-ruzsa-calculus/part-02/first-useful.md) we have
 
 $$
 \begin{aligned} &d[ X_{i,j}; X_{i,j}| X_{i,j}+\cdots+X_{i,m}]
@@ -104,8 +103,7 @@ For each $i$, summing over $j = 1,\dots, m-1$ gives
 $$
 \begin{aligned}
 &\sum_{j=1}^{m-1} d[X_{i,j}; X_{i,j}| X_{i,j}+\cdots+X_{i,m}] \\
-&\qquad \leq \sum_{j=1}^{m-1} d[X_{i,j}; X_{i,j}] + \frac12 \bigl( \mathbb{H}[V_i] - \mathbb{H}[X_{i,m}] \bigr).
-\end{aligned}
+&\qquad \leq \sum_{j=1}^{m-1} d[X_{i,j}; X_{i,j}] + \frac12 \bigl( \mathbb{H}[V_i] - \mathbb{H}[X_{i,m}] \bigr).\qquad\text{(5)}\end{aligned}
 $$
 
 On the other hand, by [Kaimonovich–Vershik–Madiman inequality, III](../more-ruzsa-distance-estimates/klm-3.md) (since $X_{i,m}$ appears in the sum $V_i$) we have
@@ -113,17 +111,15 @@ On the other hand, by [Kaimonovich–Vershik–Madiman inequality, III](../more-
 $$
 \begin{aligned}
 d[X_{i,m}; V_i]
-&\leq d[X_{i,m}; X_{i,m}] + \frac12 \bigl( \mathbb{H}[V_i] - \mathbb{H}[X_{i,m}] \bigr).
-\end{aligned}
+&\leq d[X_{i,m}; X_{i,m}] + \frac12 \bigl( \mathbb{H}[V_i] - \mathbb{H}[X_{i,m}] \bigr).\qquad\text{(6)}\end{aligned}
 $$
 
-Combining (441), (54a) and (55a) with (eq:distbnd1) and (eq:distbnd2) (the latter two summed over $i$), we get
+Combining (2), (3) and (4) with (5) and (6) (the latter two summed over $i$), we get
 
 $$
 \begin{aligned}
 \frac1{\eta} {\mathcal I} &\leq \sum_{i,j=1}^m d[X_{i,j};X_{i,j}] + \sum_{i=1}^m (\mathbb{H}[V_i] - \mathbb{H}[X_{i,m}]) \\
-&= m \sum_{i=1}^m d[X_i; X_i] + \sum_{i=1}^m \mathbb{H}[V_i] - \sum_{i=1}^m \mathbb{H}[X_i].
-\end{aligned}
+&= m \sum_{i=1}^m d[X_i; X_i] + \sum_{i=1}^m \mathbb{H}[V_i] - \sum_{i=1}^m \mathbb{H}[X_i].\qquad\text{(7)}\end{aligned}
 $$
 
 By [Comparing sums](../more-ruzsa-distance-estimates/compare-sums.md) (with $f$ taking each $j$ to the index $j'$ such that $X_{i,j}$ is a copy of $X_{j'}$) we obtain the bound
@@ -140,13 +136,13 @@ $$
 \end{aligned}
 $$
 
-where in the second step we used the permutation hypothesis. Combining this with (eq:distbnd3) gives the
+where in the second step we used the permutation hypothesis. Combining this with (7) gives the
 
 $$
 {\mathcal I} \leq 2\eta m \biggl( \sum_{i=1}^m d[X_i;X_i] \biggr) + mk.
 $$
 
-The claim (I-ineq) is now immediate from [Multidistance and Ruzsa distance, II](../multidistance/multidist-ruzsa-ii.md).
+The claim (1) is now immediate from [Multidistance and Ruzsa distance, II](../multidistance/multidist-ruzsa-ii.md).
 
 ## Lean
 

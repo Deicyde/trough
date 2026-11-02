@@ -1,4 +1,4 @@
-# Bound on zeta'/zeta
+# Bound on $\zeta'/\zeta$
 
 ## [Delta zeros to Inverse gap](part-01/README.md)
 

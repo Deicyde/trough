@@ -24,7 +24,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Apply Lemma [Lemma rho-increase](rho-increase.md) on $(Y_i,Y_j,Y_k,Y_4)$ for $(i,j,k)=(1,2,3),(2,3,1),(1,3,2)$, and take the sum.
+Apply Lemma [rho-increase](rho-increase.md) on $(Y_i,Y_j,Y_k,Y_4)$ for $(i,j,k)=(1,2,3),(2,3,1),(1,3,2)$, and take the sum.
 
 ## Lean
 

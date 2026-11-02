@@ -15,7 +15,7 @@ If $K\to L$ is a ring homomorphism between two number fields then there is a nat
 
 ## Proof
 
-Since both sides of the $L$-algebra isomorphism in [Theorem NumberField.InfiniteAdeleRing.baseChangeAlgEquiv](numberfield-infiniteadelering-basechangealgequiv.md) have the $K_{\infty}$-module topology, and since the isomorphism can equivalently be viewed as a $K_{\infty}$-linear isomorphism, it is also a homeomorphism.
+Since both sides of the $L$-algebra isomorphism in [NumberField.InfiniteAdeleRing.baseChangeAlgEquiv](numberfield-infiniteadelering-basechangealgequiv.md) have the $K_{\infty}$-module topology, and since the isomorphism can equivalently be viewed as a $K_{\infty}$-linear isomorphism, it is also a homeomorphism.
 
 ## Lean
 

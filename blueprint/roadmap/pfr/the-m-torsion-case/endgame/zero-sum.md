@@ -11,7 +11,7 @@ proof: formalized
 We have
 
 $$
-Z_1+Z_2+Z_3= 0
+Z_1+Z_2+Z_3= 0\qquad\text{(2)}
 $$
 
 ## Depends on

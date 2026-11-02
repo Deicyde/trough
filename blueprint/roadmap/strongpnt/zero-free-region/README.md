@@ -92,10 +92,10 @@
 - [Series nonneg](part-04/lem-seriespos.md)
 - [Positive sum](part-04/lem-341zpos.md)
 
-## [Inequality to Bound on zeta'/zeta](part-05/README.md)
+## [Inequality to Bound on $\zeta'/\zeta$](part-05/README.md)
 
 - [Inequality](part-05/lem-341tsc.md)
 - [Rearranged](part-05/lem-341tsc2.md)
 - [Final bound](part-05/lem-341tsc3.md)
 - [Zero free](part-05/lem-zerofree.md)
-- [Bound on zeta'/zeta](part-05/bound-on-zeta-zeta/README.md)
+- [Bound on $\zeta'/\zeta$](part-05/bound-on-zeta-zeta/README.md)

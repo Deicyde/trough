@@ -11,7 +11,7 @@ proof: formalized
 With the notation of the previous lemma, we have
 
 $$
-k - D[ X'_{[m]} | Y_{[m]} ] \leq \eta \sum_{i=1}^m d[X_{\sigma(i)};X'_i|Y_i]
+k - D[ X'_{[m]} | Y_{[m]} ] \leq \eta \sum_{i=1}^m d[X_{\sigma(i)};X'_i|Y_i]\qquad\text{(3)}
 $$
 
 for any permutation $\sigma : \{1,\dots,m\} \rightarrow \{1,\dots,m\}$.

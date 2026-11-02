@@ -1,0 +1,7 @@
+# More advanced remarks on $\widehat{\mathbb{Z}}$ versus $\mathbb{Q}$
+
+This section can be skipped on first reading.
+
+People who have seen some more advanced algebra might recognise this construction of $\widehat{\mathbb{Z}}$ as being the profinite completion of the additive abelian group $\mathbb{Z}$, so it is a fundamental object of mathematics in some sense. But usually, when building mathematics, after $\mathbb{Z}$ we go to $\mathbb{Q}$, a multiplicative localisation of $\mathbb{Z}$, and only complete after that (to get $\mathbb{R}$). The process of “completing before localising” gives us a far more arithmetic completion of $\mathbb{Z}$.
+
+Even though $\mathbb{Q}$ is a divisible abelian group and hence its profinite completion vanishes, we can still attempt to "locally profinitely complete it" by defining $\widehat{\mathbb{Q}}:=\mathbb{Q}\otimes_{\mathbb{Z}}\widehat{\mathbb{Z}}$. This object is more commonly known as the *finite adeles* of $\mathbb{Q}$. More generally if $F$ is any number field then $F\otimes_{\mathbb{Z}}\widehat{\mathbb{Z}}$ is the ring of finite adeles of $F$. To get to the full ring of adeles of a number field $F$ you need to take the product with the ring of infinite adeles of $F$, which is $F\otimes_{\mathbb{Q}}\mathbb{R}$: some kind of universal archimedean completion of $F$. I don't know a reference which develops the theory of adeles in this way, so this is what we shall do here.

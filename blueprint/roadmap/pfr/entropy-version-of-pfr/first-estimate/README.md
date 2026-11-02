@@ -15,4 +15,7 @@ $$
 - [Lower bound on conditional distances](first-cond.md)
 - [Upper bound on distance differences](first-upper.md)
 - [First estimate](first-estimate.md)
+
+One can also extract the following useful inequality from the proof of the above lemma.
+
 - [Entropy bound on quadruple sum](foursum-bound.md)

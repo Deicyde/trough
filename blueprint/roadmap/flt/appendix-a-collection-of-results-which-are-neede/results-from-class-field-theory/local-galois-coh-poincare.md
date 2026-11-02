@@ -14,7 +14,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-This is Theorem 2 in section 5.2 in \[serre-galcoh\]. Note again the dubious (as far as Lean is concerned) use of the equality symbol.
+This is Theorem 2 in section 5.2 in \[Serre 2002\]. Note again the dubious (as far as Lean is concerned) use of the equality symbol.
 
 ## Sources
 

@@ -65,7 +65,7 @@ $$
 Combining all these inequalities with [Distance between sums](dist-sums.md), we have
 
 $$
-\mathbb{I}[X_1+X_2 : X_1 + \tilde X_1 | X_1+X_2+\tilde X_1+\tilde X_2] \leq \eta ( d[X_1; X_1] + d[X_2; X_2] ).
+\mathbb{I}[X_1+X_2 : X_1 + \tilde X_1 | X_1+X_2+\tilde X_1+\tilde X_2] \leq \eta ( d[X_1; X_1] + d[X_2; X_2] ).\qquad\text{(1)}
 $$
 
 Together with [Lemma second-estimate-aux](second-estimate-aux.md), this gives the conclusion.

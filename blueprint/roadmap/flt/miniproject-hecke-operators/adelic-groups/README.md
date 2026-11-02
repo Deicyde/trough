@@ -9,3 +9,5 @@ We will assume that there exists an $\mathbb{A}_K^\infty$-algebra isomorphism $D
 This means that our group $G$ is isomorphic (both algebraically and topologically) to $GL_2(\mathbb{A}_K^\infty)$. Before we go any further, let say something about matrix rings over complete fields.
 
 - [GL2.restrictedProduct](gl2-restrictedproduct.md)
+
+If $S$ is a finite set of finite places of $K$, and for each $v\in S$ we choose a subgroup $\Gamma_v$ of $GL_2(k_v)$ then we saw in the previous section how to create a compact open subgroup $\tilde{\Gamma}_v$ of $GL_2(K_v)$. For $v\notin S$ define $\tilde{\Gamma}_v=GL_2(\mathcal{O}_v)$. Then $\prod_v\tilde{\Gamma}_v$ is a compact open subgroup of $\prod_vGL_2(\mathcal{O}_v)$. It is compact subgroups of this form which we shall be using.

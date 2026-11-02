@@ -3,7 +3,7 @@ declaration: definition
 origin: cited
 ---
 
-# definition-AdeleMiniproject-2
+# Definition: If all the $f_v$ are homeomorphisms identifying…
 
 If all the $f_v$ are homeomorphisms identifying $C_v$ with $D_v$ then the induced map on restricted products is also a homeomorphism (proof: apply the previous construction to $f_v$ and their inverses)
 

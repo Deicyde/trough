@@ -11,7 +11,7 @@ proof: formalized
 If the $(X_i,Y_i)$ are independent,
 
 $$
-D[ X_{[m]} | Y_{[m]}] := \mathbb{H}[\sum_{i=1}^m X_i \big| (Y_j)_{1 \leq j \leq m} ] - \frac{1}{m} \sum_{i=1}^m \mathbb{H}[ X_i | Y_i].
+D[ X_{[m]} | Y_{[m]}] := \mathbb{H}[\sum_{i=1}^m X_i \big| (Y_j)_{1 \leq j \leq m} ] - \frac{1}{m} \sum_{i=1}^m \mathbb{H}[ X_i | Y_i].\qquad\text{(2)}
 $$
 
 ## Depends on

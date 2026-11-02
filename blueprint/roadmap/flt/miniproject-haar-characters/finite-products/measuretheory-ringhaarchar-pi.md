@@ -16,7 +16,7 @@ If $R_i$ are a finite collection of locally compact topological rings, and $u_i\
 
 ## Proof
 
-Follows immediately from lemma [Lemma MeasureTheory.addEquivAddHaarChar\_piCongrRight](measuretheory-addequivaddhaarchar-picongrright.md).
+Follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_piCongrRight](measuretheory-addequivaddhaarchar-picongrright.md).
 
 ## Lean
 

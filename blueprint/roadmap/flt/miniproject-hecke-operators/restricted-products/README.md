@@ -10,10 +10,33 @@ More subtle is the theory of topological space structures. If the $X_i$ are topo
 
 If you've seen automorphic forms before, then here is an obvious-sounding claim: because the adeles $\mathbb{A}_F$ of a number field are a restricted product of completions $F_v$ with respect to the integer rings $\mathcal{O}_v$, then $GL_2(\mathbb{A}_F)$ is obviously topologically a restricted product of $GL_2(F_v)$ with respect to $GL_2(\mathcal{O}_v)$. We now spend some time justifying this claim, which is a little more intricate than it sounds.
 
+## Products
+
+Here are some basic facts we need about restricted products.
+
 - [Homeomorph.restrictedProductProd](homeomorph-restrictedproductprod.md)
+
+**Remark.** This may well not be true if $B_i$ and $D_i$ are not open, because filtered colimits and binary products do not appear in general to commute in the category of topological spaces. I don't know an explicit counterexample though.
+
 - [Homeomorph.restrictedProductPi](homeomorph-restrictedproductpi.md)
+
+Let $n$ be a natural and let $M_n(X)$ for a set $X$ denote “$n\times n$ matrices with coefficient in $X$”, i.e. $X^{n^2}$. If $X$ is a topological spaces then give $M_n(X)$ the product topology.
+
 - [Homeomorph.restrictedProductMatrix](homeomorph-restrictedproductmatrix.md)
+
+## Units
+
+We now want to move from matrices to invertible matrices whilst keeping track of topology, so we need to understand units of topological monoids. Openness of the subobject was crucial in the above arguments, so we need the next lemma before we can get anywhere.
+
 - [Submonoid.units\_isOpen](submonoid-units-isopen.md)
+
+**Remark.** Note that $M^\times$ doesn't get the subspace topology from $M$, it is embedded into $M\times M$ via $g\mapsto (g,g^{-1})$ and gets the subspace topology from the product. This makes it into a topological group.
+
+Later on, compactness will be key for us, so we record the analogous result for compactness.
+
 - [Submonoid.units\_isCompact](submonoid-units-iscompact.md)
+
+**Remark.** Is Hausdorffness necessary?
+
 - [ContinuousMulEquiv.piUnits](continuousmulequiv-piunits.md)
 - [ContinuousMulEquiv.restrictedProductUnits](continuousmulequiv-restrictedproductunits.md)

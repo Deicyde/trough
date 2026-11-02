@@ -28,7 +28,7 @@ Consider $T_1:=X_1+X_2,T_2:=X_1+\tilde X_1, T_3:=\tilde X_1 + X_2$, and $S=X_1+X
 
 $$
 \begin{aligned}
-d[X_1;X_2] &\leq  \sum_{1 \leq i\lt j \leq 3} \mathbb{I}[T_i:T_j\mid S] + \frac{\eta}{3}   \sum_{1 \leq i\lt j \leq 3} (\rho(T_i|T_j,S) + \rho(T_j|T_i,S) -\rho(X_1)-\rho(X_2))\\
+d[X_1;X_2] &\leq  \sum_{1 \leq i\lt j \leq 3} \mathbb{I}[T_i:T_j\mid S] + \frac{\eta}{3}   \sum_{1 \leq i\lt j \leq 3} (\rho(T_i|T_j,S) + \rho(T_j|T_i,S) -\rho(X_1)-\rho(X_2))\qquad\text{(1)}\\
 &= (I_1+2I_2) + \frac{\eta}{3}   \sum_{1 \leq i\lt j \leq 3} (\rho(T_i|T_j,S) + \rho(T_j|T_i,S) -\rho(X_1)-\rho(X_2)).
 \end{aligned}
 $$
@@ -39,7 +39,7 @@ $$
 \sum_{1 \leq i\lt j \leq 3} (\rho(T_i|T_j,S) + \rho(T_j|T_i,S) -  \rho(X_1)-\rho(X_2))\le (4d[X_1;X_2]+d[X_1;X_2]+d[X_2;X_2])= 6 d[X_1;X_2]+(I_2-I_1)
 $$
 
-by [Lemma I1-I2-diff](i1-i2-diff.md). Plug in the inequality above to ((eq:further-bsg)), we get
+by [Lemma I1-I2-diff](i1-i2-diff.md). Plug in the inequality above to (1), we get
 
 $$
 d[X_1;X_2] \le (I_1+2I_2)+2\eta d[X_1;X_2]+\frac{\eta}{3}(I_2-I_1).

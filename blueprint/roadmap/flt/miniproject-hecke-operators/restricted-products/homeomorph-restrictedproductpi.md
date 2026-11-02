@@ -21,7 +21,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Induction on the size of the finite set, using lemma [Lemma Homeomorph.restrictedProductProd](homeomorph-restrictedproductprod.md) to get you started.
+Induction on the size of the finite set, using lemma [Homeomorph.restrictedProductProd](homeomorph-restrictedproductprod.md) to get you started.
 
 ## Lean
 

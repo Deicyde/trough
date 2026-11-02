@@ -3,7 +3,7 @@ declaration: lemma
 origin: cited
 ---
 
-# lemma-ch07exampleGLn-2
+# Lemma: This function is well-defined, i.e., it sends…
 
 This function is well-defined, i.e., it sends a $U$-invariant form to a $U$-invariant form which is independent of the choice of $g_i$.
 

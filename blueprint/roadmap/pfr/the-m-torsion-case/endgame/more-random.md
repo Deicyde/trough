@@ -24,7 +24,7 @@ The addition $(-i-j)$ takes place over $\mathbb{Z}/m\mathbb{Z}$. Note that, beca
 $$
 P_i := \sum_{j \in \mathbb{Z}/m\mathbb{Z}} Y_{i,j} , \quad
 Q_j := \sum_{i \in \mathbb{Z}/m\mathbb{Z}} Y_{i,j} , \quad
-R_r := \sum_{\substack{i,j \in \mathbb{Z}/m\mathbb{Z} \\ i+j=-r}} Y_{i,j} .
+R_r := \sum_{\substack{i,j \in \mathbb{Z}/m\mathbb{Z} \\ i+j=-r}} Y_{i,j} .\qquad\text{(1)}
 $$
 
 ## Depends on

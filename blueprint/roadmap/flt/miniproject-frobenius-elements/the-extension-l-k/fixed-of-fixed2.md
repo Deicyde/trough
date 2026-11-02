@@ -19,7 +19,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Since $(B/Q)/(A/Q)$ is algebraic by [Theorem Algebra.IsInvariant.isIntegral](../the-extension-b-a/algebra-isinvariant-isintegral.md), [Lemma IsAlgebraic.exists\_smul\_eq\_mul](isalgebraic-exists-smul-eq-mul.md) let's us write $x=b/a$ for $b \in B/Q$ and $a \in A/P$. Then $b$ is fixed by the stabilizer subgroup $D_Q$, and it suffices to show that $b$ is fixed by the automorphism group $\operatorname{Aut}(L/K)$. But this is exactly [Proposition fixed\_of\_fixed1](fixed-of-fixed1.md).
+Since $(B/Q)/(A/Q)$ is algebraic by [Algebra.IsInvariant.isIntegral](../the-extension-b-a/algebra-isinvariant-isintegral.md), [IsAlgebraic.exists\_smul\_eq\_mul](isalgebraic-exists-smul-eq-mul.md) let's us write $x=b/a$ for $b \in B/Q$ and $a \in A/P$. Then $b$ is fixed by the stabilizer subgroup $D_Q$, and it suffices to show that $b$ is fixed by the automorphism group $\operatorname{Aut}(L/K)$. But this is exactly [fixed\_of\_fixed1](fixed-of-fixed1.md).
 
 ## Lean
 

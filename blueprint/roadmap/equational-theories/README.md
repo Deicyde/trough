@@ -1,23 +1,38 @@
 # Equational Theories
 
-The blueprint of Equational Theories, read at commit [2ddb16c4](https://github.com/teorth/equational_theories/tree/2ddb16c4c4c036242ad3e18167579b57cac2a006) (2026-11-01): 214 nodes, one article each. A node it blueprint marks `\leanok` is formalized here, its proof too when that is marked, and `\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+The blueprint of Equational Theories, read at commit [2ddb16c4](https://github.com/teorth/equational_theories/tree/2ddb16c4c4c036242ad3e18167579b57cac2a006) (2026-11-01): 214 nodes, one article each. A node the blueprint marks `\leanok` is formalized here, its proof too when that is marked, and `\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
-Statements and proofs are quoted from the blueprint, under its Apache-2.0 license.
+The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 
-- [Basic theory of magmas](basic-theory-of-magmas/README.md)
-- [Selected laws](selected-laws/README.md)
-- [General implications](general-implications/README.md)
-- [Implications between selected laws](implications-between-selected-laws/README.md)
-- [Finite implications and infinite models](finite-implications-and-infinite-models/README.md)
-- [Infinite magma constructions](infinite-magma-constructions/README.md)
-- [Metatheorems from Invariants](metatheorems-from-invariants/README.md)
-- [Some abstract nonsense](some-abstract-nonsense/README.md)
-- [Weak central groupoids](weak-central-groupoids/README.md)
-- [Equation 677](equation-677/README.md)
-- [Equation 854](equation-854/README.md)
-- [Equation 906](equation-906/README.md)
-- [Equation 1323](equation-1323/README.md)
-- [Equation 1516](equation-1516/README.md)
-- [Equation 1729](equation-1729/README.md)
-- [Rewriting theory](rewriting-theory/README.md)
-- [E-Graphs](e-graphs/README.md)
+## [Basic theory of magmas to Order 5 Austin laws](part-01/README.md)
+
+- [Basic theory of magmas](part-01/basic-theory-of-magmas/README.md)
+- [Selected laws](part-01/selected-laws/README.md)
+- [General implications](part-01/general-implications/README.md)
+- [Implications between selected laws](part-01/implications-between-selected-laws/README.md)
+- [Finite implications and infinite models](part-01/finite-implications-and-infinite-models/README.md)
+- [Selected magmas](part-01/selected-magmas/README.md)
+- [Infinite magma constructions](part-01/infinite-magma-constructions/README.md)
+- [Equivalence with the constant and singleton laws](part-01/equivalence-with-the-constant-and-singleton-laws/README.md)
+- [Metatheorems from Invariants](part-01/metatheorems-from-invariants/README.md)
+- [Some abstract nonsense](part-01/some-abstract-nonsense/README.md)
+- [Magma cohomology](part-01/magma-cohomology/README.md)
+- [Weak central groupoids](part-01/weak-central-groupoids/README.md)
+- [Equation 677](part-01/equation-677/README.md)
+- [Equation 854](part-01/equation-854/README.md)
+- [Equation 906](part-01/equation-906/README.md)
+- [Equation 1323](part-01/equation-1323/README.md)
+- [Equation 1516](part-01/equation-1516/README.md)
+- [Equation 1729](part-01/equation-1729/README.md)
+- [Rewriting theory](part-01/rewriting-theory/README.md)
+- [Order 5 Austin laws](part-01/order-5-austin-laws/README.md)
+
+## [Simple rewrites to Hard implications](part-02/README.md)
+
+- [Simple rewrites](part-02/simple-rewrites/README.md)
+- [Trivial auto-generated theorems](part-02/trivial-auto-generated-theorems/README.md)
+- [Enumerating Small Finite Magmas](part-02/enumerating-small-finite-magmas/README.md)
+- [Equation Search](part-02/equation-search/README.md)
+- [E-Graphs](part-02/e-graphs/README.md)
+- [Using the Vampire theorem prover](part-02/using-the-vampire-theorem-prover/README.md)
+- [Hard implications](part-02/hard-implications/README.md)

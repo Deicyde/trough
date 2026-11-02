@@ -16,7 +16,7 @@ The map $i_v:K_v\to L_w$ sends the integer ring $A_v$ into $B_w$.
 
 ## Proof
 
-The integer ring is defined by $v\geq0$ (or $v\leq 1$ in mathlib, which uses multiplicative valuations) so the result follows from [Lemma IsDedekindDomain.HeightOneSpectrum.Extension.valued\_adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-val.md).
+The integer ring is defined by $v\geq0$ (or $v\leq 1$ in mathlib, which uses multiplicative valuations) so the result follows from [IsDedekindDomain.HeightOneSpectrum.Extension.valued\_adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-val.md).
 
 ## Lean
 

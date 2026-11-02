@@ -3,9 +3,9 @@ declaration: theorem
 origin: cited
 ---
 
-# theorem-AdeleMiniproject-1
+# Theorem: In the same setup as definition RestrictedProduct.relabelIso…
 
-In the same setup as definition [Definition RestrictedProduct.relabelIso](restrictedproduct-relabeliso.md) ($V,W$ index sets, $f:W\to V$, $C_v\subseteq X_v$ and $D_w\subseteq Y_w$, bijections $b_v:X_v\to\prod_{w:f(w)=v}Y_w$ identifying $C_v$ with $\prod_{w:f(w)=v}D_w$), if all the $X_v$ and $Y_w$ are furthermore topological spaces, all the $C_v$ and $D_w$ are open, and all the $b_v$ are homeomorphisms, then the induced map $\prod'_v(X_v,C_v)\to\prod'_w(Y_w,D_w)$ is also a homeomorphism.
+In the same setup as definition [RestrictedProduct.relabelIso](restrictedproduct-relabeliso.md) ($V,W$ index sets, $f:W\to V$, $C_v\subseteq X_v$ and $D_w\subseteq Y_w$, bijections $b_v:X_v\to\prod_{w:f(w)=v}Y_w$ identifying $C_v$ with $\prod_{w:f(w)=v}D_w$), if all the $X_v$ and $Y_w$ are furthermore topological spaces, all the $C_v$ and $D_w$ are open, and all the $b_v$ are homeomorphisms, then the induced map $\prod'_v(X_v,C_v)\to\prod'_w(Y_w,D_w)$ is also a homeomorphism.
 
 ## Depends on
 

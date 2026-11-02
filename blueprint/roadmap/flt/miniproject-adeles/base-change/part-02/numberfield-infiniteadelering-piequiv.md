@@ -15,7 +15,7 @@ There is a natural $K_{\infty}$-linear homeomorphism $K_{\infty}^{[L:K]} \cong_{
 
 ## Proof
 
-Using the isomorphisms $K_v^{[L:K]} \cong_{K_v} \prod_{w\mid v}L_w$ from Theorem [Theorem NumberField.InfinitePlace.Completion.piEquiv](numberfield-infiniteplace-completion-piequiv.md), we clearly have a bijection $K_{\infty}^{[L:K]} \cong \prod_v\prod_{w \mid v} L_w \cong \prod_w L_w$. The $K_v$-linearity of each component isomorphism extends to $K_{\infty}$-linearity if the action of $\prod_v K_v$ on $\prod_w L_w$ is constant on the fibers of the restriction map on infinite places. In other words, if, for all $x \in K_{\infty}$ and $y \in L_{\infty}$, we have $(x \cdot y)_w = x_{v_w} \cdot y_w$, which is true by definition.
+Using the isomorphisms $K_v^{[L:K]} \cong_{K_v} \prod_{w\mid v}L_w$ from Theorem [NumberField.InfinitePlace.Completion.piEquiv](numberfield-infiniteplace-completion-piequiv.md), we clearly have a bijection $K_{\infty}^{[L:K]} \cong \prod_v\prod_{w \mid v} L_w \cong \prod_w L_w$. The $K_v$-linearity of each component isomorphism extends to $K_{\infty}$-linearity if the action of $\prod_v K_v$ on $\prod_w L_w$ is constant on the fibers of the restriction map on infinite places. In other words, if, for all $x \in K_{\infty}$ and $y \in L_{\infty}$, we have $(x \cdot y)_w = x_{v_w} \cdot y_w$, which is true by definition.
 
 ## Lean
 

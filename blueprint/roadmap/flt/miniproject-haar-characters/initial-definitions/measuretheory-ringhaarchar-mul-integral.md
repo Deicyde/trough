@@ -21,7 +21,7 @@ If $f:R\to\mathbb{R}$ is a Borel measurable function and $u\in R^\times$ then $\
 
 ## Proof
 
-A short calculation using lemma [Lemma MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map](measuretheory-addequivaddhaarchar-smul-integral.md).
+A short calculation using lemma [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map](measuretheory-addequivaddhaarchar-smul-integral.md).
 
 ## Lean
 

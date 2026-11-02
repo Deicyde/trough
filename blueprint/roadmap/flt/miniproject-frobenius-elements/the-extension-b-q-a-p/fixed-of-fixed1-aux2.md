@@ -20,7 +20,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Multiply the $b$ from [Lemma fixed\_of\_fixed1\_aux1](fixed-of-fixed1-aux1.md) by $b_0$.
+Multiply the $b$ from [fixed\_of\_fixed1\_aux1](fixed-of-fixed1-aux1.md) by $b_0$.
 
 ## Lean
 

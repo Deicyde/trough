@@ -3,7 +3,7 @@ declaration: corollary
 origin: cited
 ---
 
-# corollary-AdeleMiniproject-1
+# Corollary: $\mathbb{\mathbb{A}_L^\infty}$ is homeomorphic…
 
 $\mathbb{\mathbb{A}_L^\infty}$ is homeomorphic to $\prod_v(B\otimes_AK_v,B\otimes_AA_v)$.
 

@@ -18,7 +18,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-$\Gamma_v$ is a group and hence its preimage $U_v$ is a subgroup of the monoid $M_2(K_v)$. It is compact and open as we just saw. Hence its units (also $U_v$) are a subgroup of $GL_2(K_v)$, which is compact and open, again by lemmas [Lemma Submonoid.units\_isOpen](../restricted-products/submonoid-units-isopen.md) and [Lemma Submonoid.units\_isCompact](../restricted-products/submonoid-units-iscompact.md).
+$\Gamma_v$ is a group and hence its preimage $U_v$ is a subgroup of the monoid $M_2(K_v)$. It is compact and open as we just saw. Hence its units (also $U_v$) are a subgroup of $GL_2(K_v)$, which is compact and open, again by lemmas [Submonoid.units\_isOpen](../restricted-products/submonoid-units-isopen.md) and [Submonoid.units\_isCompact](../restricted-products/submonoid-units-iscompact.md).
 
 ## Sources
 

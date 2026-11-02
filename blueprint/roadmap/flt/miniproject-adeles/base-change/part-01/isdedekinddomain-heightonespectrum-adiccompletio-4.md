@@ -16,7 +16,7 @@ For $v$ fixed, the product topology on $\prod_{w|v}L_w$ is the $K_v$-module topo
 
 ## Proof
 
-This is a finite product of $K_v$-modules each of which has the $K_v$-module topology by [Theorem IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology](isdedekinddomain-heightonespectrum-adiccompletio.md), and the product topology is the module topology for a finite product of modules each of which has the module topology (this is in mathlib).
+This is a finite product of $K_v$-modules each of which has the $K_v$-module topology by [IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology](isdedekinddomain-heightonespectrum-adiccompletio.md), and the product topology is the module topology for a finite product of modules each of which has the module topology (this is in mathlib).
 
 ## Lean
 

@@ -17,7 +17,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-We have $d_A(\phi)\mu(A)=\mu(A)$ from lemma [Lemma MeasureTheory.addEquivAddHaarChar\_smul\_preimage](../initial-definitions/measuretheory-addequivaddhaarchar-smul-preimage.md) and $\mu(A)$ is positive and finite because $A$ is open and compact.
+We have $d_A(\phi)\mu(A)=\mu(A)$ from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](../initial-definitions/measuretheory-addequivaddhaarchar-smul-preimage.md) and $\mu(A)$ is positive and finite because $A$ is open and compact.
 
 ## Lean
 

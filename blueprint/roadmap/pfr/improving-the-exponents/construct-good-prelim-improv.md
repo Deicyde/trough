@@ -31,11 +31,10 @@ Its statement uses no other node of the blueprint.
 We apply [Balog-Szemerédi-Gowers](../entropic-ruzsa-calculus/part-02/entropic-bsg.md) with $(A,B) = (T_1, T_2)$ there. Since $T_1 + T_2 = T_3$, the conclusion is that
 
 $$
-\begin{aligned}  \sum_{t_3} \mathbb{P}[T_3 = t_3] & d[(T_1 | T_3 = t_3); (T_2 | T_3 = t_3)] \\ & \leq 3 \mathbb{I}[T_1 : T_2] + 2 \mathbb{H}[T_3] - \mathbb{H}[T_1] - \mathbb{H}[T_2].
-\end{aligned}
+\begin{aligned}  \sum_{t_3} \mathbb{P}[T_3 = t_3] & d[(T_1 | T_3 = t_3); (T_2 | T_3 = t_3)] \\ & \leq 3 \mathbb{I}[T_1 : T_2] + 2 \mathbb{H}[T_3] - \mathbb{H}[T_1] - \mathbb{H}[T_2].\qquad\text{(1)}\end{aligned}
 $$
 
-The right-hand side in (bsg-t1t2') can be rearranged as
+The right-hand side in (1) can be rearranged as
 
 $$
 \begin{aligned} & 2( \mathbb{H}[T_1] + \mathbb{H}[T_2] + \mathbb{H}[T_3]) - 3 \mathbb{H}[T_1,T_2] \\ & = 2(\mathbb{H}[T_1] + \mathbb{H}[T_2] + \mathbb{H}[T_3]) - \mathbb{H}[T_1,T_2] - \mathbb{H}[T_2,T_3] - \mathbb{H}[T_1, T_3] = \delta,\end{aligned}

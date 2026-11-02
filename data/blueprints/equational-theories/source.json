@@ -4,5 +4,6 @@
  "date": "2026-11-01T15:37:33-08:00",
  "entry": "blueprint/src/web.tex",
  "license": "Apache-2.0",
- "text": true
+ "text": true,
+ "nodes": 214
 }

@@ -31,7 +31,7 @@ $$
 k \leq \delta + \frac{\eta}{3} \biggl( \delta + \sum_{i=1}^2 \sum_{j = 1}^3 (d[X^0_1;T_j] - d[X^0_i;X_i]) \biggr).
 $$
 
-Note that $\delta$ is still defined by delta-t1t2t3-def and thus depends on $T_1,T_2,T_3$. In particular we may apply this for
+Note that $\delta$ is still defined by [(1)](README.md) and thus depends on $T_1,T_2,T_3$. In particular we may apply this for
 
 $$
 T_1 = (U | S = s),\qquad T_2 = (V | S = s), \qquad T_3 = (W | S = s)

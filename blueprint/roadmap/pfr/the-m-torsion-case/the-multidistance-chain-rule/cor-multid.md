@@ -36,7 +36,7 @@ $$
 \pi_d(x_1,\dots,x_m) := (x_1,\dots,x_{d-1}, x_d + \cdots + x_m)
 $$
 
-with $\pi_0=0$. Since $\pi_{d-1}(x)$ can be obtained from $\pi_{d}(x)$ by applying a homomorphism, we obtain a sequence of the form (g-seq).
+with $\pi_0=0$. Since $\pi_{d-1}(x)$ can be obtained from $\pi_{d}(x)$ by applying a homomorphism, we obtain a sequence of the form [(5)](multidist-chain-rule-iter.md).
 
 Now we apply [Lemma multidist-chain-rule-iter](multidist-chain-rule-iter.md) with $I = \{1,\dots, m\}$ and $X_i := (X_{i,j})_{j = 1}^m$. Using joint independence and [Additivity of entropy](../../shannon-entropy-inequalities/part-02/add-entropy.md), we find that
 

@@ -20,7 +20,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Lemma [Lemma IsModuleTopology.continuous\_bilinear\_of\_finite\_left](ismoduletopology-continuous-bilinear-of-finite-l.md) tells us that $V\otimes_K\mathbb{A}_K$ has the $\mathbb{A}_{\mathbb{Q}}$-module topology, and it is easily checked that the isomorphism is $\mathbb{A}_{\mathbb{Q}}$-linear and hence automatically continuous.
+Lemma [IsModuleTopology.continuous\_bilinear\_of\_finite\_left](ismoduletopology-continuous-bilinear-of-finite-l.md) tells us that $V\otimes_K\mathbb{A}_K$ has the $\mathbb{A}_{\mathbb{Q}}$-module topology, and it is easily checked that the isomorphism is $\mathbb{A}_{\mathbb{Q}}$-linear and hence automatically continuous.
 
 Note that in the Lean we prove this for a general extension $L/K$ rather than $K/\mathbb{Q}$.
 

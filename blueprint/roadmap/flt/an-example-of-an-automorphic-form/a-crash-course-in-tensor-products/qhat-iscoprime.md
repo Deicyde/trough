@@ -11,7 +11,7 @@ If $N\in\mathbb{N}^+$ and $z\in\widehat{\mathbb{Z}}$ then we say that $N$ and $z
 
 ## Depends on
 
-- [ZHat.commRing](../zhat/zhat-commring.md)
+- [ZHat.commRing](../widehat-z/zhat-commring.md)
 
 ## Lean
 

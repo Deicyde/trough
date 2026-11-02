@@ -69,8 +69,19 @@ class Unit:
     title: str
     where: Where
     label: str | None = None
-    prose: str = ""
     parent: Unit | None = None
+    offset: int = 0  # where in the document it starts
+
+
+@dataclass(eq=False)
+class Prose:
+    """A run of the document's text between its sectioning commands and environments."""
+
+    text: str
+    where: Where
+    unit: Unit | None
+    offset: int
+    equations: list[str] = field(default_factory=list)
 
 
 @dataclass(eq=False)
@@ -91,6 +102,7 @@ class Node:
     proof: Proof | None = None
     equations: list[str] = field(default_factory=list)
     id: str = ""
+    offset: int = 0  # where in the document it starts
 
     @property
     def proof_uses(self) -> list[str]:
@@ -105,9 +117,11 @@ class Blueprint:
     thms: tuple[str, ...]
     units: list[Unit]
     nodes: list[Node]  # every theorem-like environment, in document order
-    labels: dict[str, object]  # label -> Node, Unit, or ("equation", Node)
+    labels: dict[str, object]  # label -> Node, Unit, or ("equation", the Node or Prose it is in)
     links: dict[str, str]  # home, github, dochome
     problems: list[str]
+    prose: list[Prose] = field(default_factory=list)  # in document order, from the first sectioning unit on
+    bibliography: list[str] = field(default_factory=list)  # the .bib files it cites from
 
     @property
     def graph(self) -> list[Node]:
@@ -123,7 +137,10 @@ class Document:
         self.parts: list[str] = []
         self.starts: list[int] = []
         self.origins: list[Where] = []
+        self.missing: list[str] = []  # each \input or \include that names no file, with its place
         self.size = 0
+        if self.resolve(entry) is None:
+            raise FileNotFoundError(f"no blueprint entry file {entry} in {root}")
         self.visit(entry, 0)
         self.text = "".join(self.parts)
 
@@ -134,9 +151,11 @@ class Document:
                 return path.relative_to(self.root.resolve()).as_posix()
         return None
 
-    def visit(self, name: str, depth: int) -> None:
+    def visit(self, name: str, depth: int, origin: str = "") -> None:
         rel = self.resolve(name)
         if rel is None or depth > 16:
+            self.missing.append(f"{origin}: \\input{{{name}}} names no file" if rel is None
+                                else f"{origin}: \\input{{{name}}} nests too deep")
             return
         if rel not in self.files:
             self.files.append(rel)
@@ -145,7 +164,7 @@ class Document:
             position = 0
             for match in INPUT.finditer(code):
                 self.add(code[position : match.start()], rel, number, newline=False)
-                self.visit(match.group(1).strip(), depth + 1)
+                self.visit(match.group(1).strip(), depth + 1, f"{rel}:{number}")
                 position = match.end()
             self.add(code[position:], rel, number, newline=True)
 
@@ -204,7 +223,7 @@ def read(root: Path, entry: str) -> Blueprint:
     """The blueprint whose web entry file is root/entry."""
     document = Document(root, entry)
     text = document.text
-    problems: list[str] = []
+    problems: list[str] = list(document.missing)
     begin = re.search(r"\\begin\s*\{document\}", text)
     body_start = begin.end() if begin else 0
     captions = theorem_kinds(text[:body_start] or text)
@@ -219,6 +238,7 @@ def read(root: Path, entry: str) -> Blueprint:
     # Sectioning units.
     units: list[Unit] = []
     unit_at: list[tuple[int, Unit]] = []
+    headings: list[tuple[int, int]] = []  # where each unit's heading, with its \label, starts and ends
     stack: list[Unit] = []
     for match in SECTION.finditer(text, body_start):
         level = SECTIONING.index(match.group(1))
@@ -230,7 +250,8 @@ def read(root: Path, entry: str) -> Blueprint:
             continue
         while stack and stack[-1].level >= level:
             stack.pop()
-        unit = Unit(level, title[0], document.where(match.start()), parent=stack[-1] if stack else None)
+        unit = Unit(level, title[0], document.where(match.start()), parent=stack[-1] if stack else None,
+                    offset=match.start())
         after = text[title[1] : title[1] + 400]
         label = re.match(r"\s*\\label\s*\{([^}]*)\}", after)
         if label:
@@ -238,6 +259,7 @@ def read(root: Path, entry: str) -> Blueprint:
         stack.append(unit)
         units.append(unit)
         unit_at.append((title[1], unit))
+        headings.append((match.start(), title[1] + (label.end() if label else 0)))
     offsets = [offset for offset, _ in unit_at]
 
     def unit_of(offset: int) -> Unit | None:
@@ -263,6 +285,15 @@ def read(root: Path, entry: str) -> Blueprint:
             body = body[opt[1]:] if opt and body.lstrip().startswith("[") else body
         blocks.append((match.start(), end, env, title, body))
 
+    # Each block's innermost enclosing block, if any.
+    enclosing: list[int | None] = []
+    open_blocks: list[int] = []
+    for k, (start, end, *_) in enumerate(blocks):
+        while open_blocks and blocks[open_blocks[-1]][1] <= start:
+            open_blocks.pop()
+        enclosing.append(open_blocks[-1] if open_blocks else None)
+        open_blocks.append(k)
+
     def own(start: int, end: int, body: str) -> str:
         """The body without the environments nested inside it."""
         result = body
@@ -276,7 +307,9 @@ def read(root: Path, entry: str) -> Blueprint:
     labels: dict[str, object] = {}
     last: Node | None = None
     last_unit: Unit | None = None
-    for start, end, env, title, body in blocks:
+    for k, (start, end, env, title, body) in enumerate(blocks):
+        if env == "proof" and enclosing[k] is not None and blocks[enclosing[k]][2] == "proof":
+            continue  # a proof inside a proof is part of it
         unit = unit_of(start)
         mine = own(start, end, body)
         plain = masked(mine)
@@ -286,7 +319,7 @@ def read(root: Path, entry: str) -> Blueprint:
         uses = names(macro_args(mine, "uses")[-1]) if macro_args(mine, "uses") else []
         where = document.where(start)
         if env == "proof":
-            proof = Proof(body, flag(mine, "leanok"), uses, own_labels, where)
+            proof = Proof(body, flag(mine, "leanok") or flag(mine, "mathlibok"), uses, own_labels, where)
             target = None
             proves = macro_args(mine, "proves")
             if proves:
@@ -305,6 +338,8 @@ def read(root: Path, entry: str) -> Blueprint:
                 target.labels.append(label)
             for label in equations:
                 labels.setdefault(label, ("equation", target))
+                if label not in target.equations:
+                    target.equations.append(label)
             continue
         node = Node(
             env=env,
@@ -321,6 +356,7 @@ def read(root: Path, entry: str) -> Blueprint:
             unit=unit,
             graph=env in thms,
             equations=equations,
+            offset=start,
         )
         for label in own_labels:
             labels[label] = node
@@ -348,19 +384,35 @@ def read(root: Path, entry: str) -> Blueprint:
         taken.add(node.id)
         labels[node.id] = node
 
-    # Prose: what a unit says before its first environment or subunit.
-    starts = sorted([start for start, *_ in blocks] + [m.start() for m in SECTION.finditer(text, body_start)])
-    for offset, unit in unit_at:
-        k = bisect.bisect_right(starts, offset)
-        stop = starts[k] if k < len(starts) else len(text)
-        end_document = re.search(r"\\end\s*\{document\}", text[offset:stop])
-        stop = offset + end_document.start() if end_document else stop
-        prose = text[offset:stop]
-        prose = re.sub(r"^\s*\\label\s*\{[^}]*\}", "", prose)
-        unit.prose = prose.strip()
+    # Prose: the runs of text between headings and the outermost environments, from the
+    # first sectioning unit to \end{document}.
+    end_document = re.search(r"\\end\s*\{document\}", text)
+    stop = end_document.start() if end_document else len(text)
+    events = sorted(headings + [(start, end) for k, (start, end, *_) in enumerate(blocks) if enclosing[k] is None])
+    prose: list[Prose] = []
+    first = units[0].offset if units else stop
+    for k, (start, end) in enumerate(events):
+        following = min(events[k + 1][0] if k + 1 < len(events) else stop, stop)
+        run = text[end:following]
+        if start < first or not run.strip():
+            continue
+        offset = end + len(run) - len(run.lstrip())
+        equations = [squeeze(label) for label in macro_args(run, "label")
+                     if squeeze(label) not in {squeeze(other) for other in macro_args(masked(run), "label")}]
+        prose.append(Prose(run.strip(), document.where(offset), unit_of(offset), offset, equations))
+        for label in equations:
+            labels.setdefault(label, ("equation", prose[-1]))
+
+    # Bibliographies: each .bib that \bibliography or \addbibresource names.
+    bibliography: list[str] = []
+    for match in re.finditer(r"\\(?:bibliography|addbibresource)\s*(?:\[[^\]]*\])?\s*\{([^}]*)\}", text):
+        for name in names(match.group(1)):
+            found = document.resolve(name if name.endswith(".bib") else f"{name}.bib")
+            if found and found not in bibliography:
+                bibliography.append(found)
 
     for node in nodes:
         for label in node.uses + node.proof_uses:
             if label not in labels:
                 problems.append(f"{node.where.file}:{node.where.line}: \\uses{{{label}}} names no label")
-    return Blueprint(document.files, macros, captions, thms, units, nodes, labels, links, problems)
+    return Blueprint(document.files, macros, captions, thms, units, nodes, labels, links, problems, prose, bibliography)

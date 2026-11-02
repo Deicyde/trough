@@ -21,7 +21,7 @@ If $f:A\to\mathbb{R}$ is a Borel measurable function then $d_A(\phi)\int f(x)d\p
 
 ## Proof
 
-This also follows immediately from lemma [Lemma MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md).
+This also follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md).
 
 ## Lean
 

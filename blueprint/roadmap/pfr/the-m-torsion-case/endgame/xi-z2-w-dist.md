@@ -27,7 +27,7 @@ Its statement uses no other node of the blueprint.
 For each $i \in \{1,\dots, m\}$, using [Kaimonovich–Vershik–Madiman inequality, III](../more-ruzsa-distance-estimates/klm-3.md) (noting the sum $Z_2$ contains $X_i$ as a summand) we have
 
 $$
-d[X_i;Z_2] \leq d[X_i;X_i] + \tfrac12 (\mathbb{H}[Z_2] - \mathbb{H}[X_i])
+d[X_i;Z_2] \leq d[X_i;X_i] + \tfrac12 (\mathbb{H}[Z_2] - \mathbb{H}[X_i])\qquad\text{(6)}
 $$
 
 and using [Upper bound on conditioned Ruzsa distance](../../entropic-ruzsa-calculus/part-02/cond-dist-fact.md) we have
@@ -36,7 +36,7 @@ $$
 d[X_i;Z_2 | W] \leq d[X_i;Z_2] + \tfrac12 \mathbb{I}[W : Z_2].
 $$
 
-Combining with (in-a-bit-6) and [Mutual information bound](mutual-w-z2.md) gives
+Combining with (6) and [Mutual information bound](mutual-w-z2.md) gives
 
 $$
 d[X_i;Z_2 | W] \leq d[X_i;X_i] + \tfrac12 (\mathbb{H}[Z_2] - \mathbb{H}[X_i]) + (m-1)k.

@@ -14,7 +14,7 @@ If $N$ is a finite extension of $\mathbb{Q}$ then there are two “canonical” 
 
 ## Proof
 
-This is the main theorem of global class field theory; see for example Tate's article in \[cf\].
+This is the main theorem of global class field theory; see for example Tate's article in \[Cassels and Fröhlich 1967\].
 
 ## Sources
 

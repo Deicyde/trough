@@ -1,0 +1,3 @@
+# Overview
+
+The proof of Fermat's Last Theorem is by contradiction. We assume that we have a counterexample $a^n+b^n=c^n$, and manipulate it until it satisfies the axioms of a “Frey package”, a basic concept which we will explain below. From the Frey package we build a Frey curve – an elliptic curve defined over the rationals. We then look at a certain representation of a Galois group coming from this elliptic curve, and finally using two very deep and independent theorems (one due to Mazur, the other due to Wiles) we show that this representation is both reducible and irreducible, the contradiction we seek.

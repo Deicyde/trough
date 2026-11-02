@@ -22,7 +22,7 @@ We have $\mathbb{H}[W] \leq (2m-1)k + \frac1m \sum_{i=1}^m \mathbb{H}[X_i]$.
 
 ## Proof
 
-Without loss of generality, we may take $X_1,\dots,X_m$ to be independent. Write $S = \sum_{i=1}^m X_i$. Note that for each $j \in \mathbb{Z}/m\mathbb{Z}$, the sum $Q_j$ from (pqr-defs) above has the same distribution as $S$. By [Kaimonovich–Vershik–Madiman inequality](../more-ruzsa-distance-estimates/klm-1.md) we have
+Without loss of generality, we may take $X_1,\dots,X_m$ to be independent. Write $S = \sum_{i=1}^m X_i$. Note that for each $j \in \mathbb{Z}/m\mathbb{Z}$, the sum $Q_j$ from [(1)](more-random.md) above has the same distribution as $S$. By [Kaimonovich–Vershik–Madiman inequality](../more-ruzsa-distance-estimates/klm-1.md) we have
 
 $$
 \begin{aligned}
@@ -33,7 +33,7 @@ $$
 By [Multidistance and Ruzsa distance, IV](../multidistance/multidist-ruzsa-iv.md), we have
 
 $$
-d[S; -S] \leq 2 k
+d[S; -S] \leq 2 k\qquad\text{(4)}
 $$
 
 and hence
@@ -45,7 +45,7 @@ $$
 From [Multidistance](../multidistance/multidist-def.md) we have
 
 $$
-\mathbb{H}[S] = k + \frac1m \sum_{i=1}^m \mathbb{H}[X_i],
+\mathbb{H}[S] = k + \frac1m \sum_{i=1}^m \mathbb{H}[X_i],\qquad\text{(5)}
 $$
 
 and the claim follows.

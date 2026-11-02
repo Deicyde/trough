@@ -12,8 +12,8 @@ The ring homomorphism $\mathbb{Q}\to\widehat{\mathbb{Q}}$ sending $q$ to $q\otim
 
 ## Depends on
 
-- [QHat](../qhat-and-tensor-products/qhat.md)
-- [ZHat.commRing](../zhat/zhat-commring.md)
+- [QHat](../widehat-q-and-tensor-products/qhat.md)
+- [ZHat.commRing](../widehat-z/zhat-commring.md)
 
 ## Proof
 

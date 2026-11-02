@@ -18,7 +18,7 @@ If $X$ is a Borel subset of $R$ and $r\in R^\times$ then $\mu(rX)=\delta_R(r)\mu
 
 ## Proof
 
-Immediate from lemma [Lemma MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md).
+Immediate from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md).
 
 ## Lean
 

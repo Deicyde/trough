@@ -1,5 +1,6 @@
 # Miniproject: Haar Characters
 
+- [The goal](the-goal/README.md)
 - [Initial definitions](initial-definitions/README.md)
 - [Examples](examples/README.md)
 - [Algebras](algebras/README.md)

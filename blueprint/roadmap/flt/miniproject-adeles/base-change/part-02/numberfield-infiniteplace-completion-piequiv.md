@@ -15,7 +15,7 @@ Let $v$ be an infinite place of $K$. There is a natural $K_v$-linear homeomorphi
 
 ## Proof
 
-Compose the $K_v$-linear isomorphism $K_v^{[L:K]} \cong \prod_{w\mid v}L_w$ with the $K_v$-linear version of base change [Theorem NumberField.InfinitePlace.Completion.baseChangeEquiv](numberfield-infiniteplace-completion-basechangee.md) to get the isomorphism in the statement. Since both sides have the $K_v$-module topology, then this is also a homeomorphism.
+Compose the $K_v$-linear isomorphism $K_v^{[L:K]} \cong \prod_{w\mid v}L_w$ with the $K_v$-linear version of base change [NumberField.InfinitePlace.Completion.baseChangeEquiv](numberfield-infiniteplace-completion-basechangee.md) to get the isomorphism in the statement. Since both sides have the $K_v$-module topology, then this is also a homeomorphism.
 
 ## Lean
 

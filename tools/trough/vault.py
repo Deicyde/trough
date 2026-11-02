@@ -4,6 +4,8 @@ A container is a directory holding a README.md; a leaf is one statement page.
 Containers list their entries in order. An entry either owns its node, which
 then lives in the container's directory, or refers to a node that lives
 elsewhere, so one article can appear in several lists but has one home.
+Text can sit between the entries: AutoformBot shows each owned leaf's card in
+place of its line, so the page reads in the order it is written.
 """
 
 from __future__ import annotations
@@ -44,6 +46,7 @@ class Entry:
     node: Leaf | Container
     owned: bool = True
     label: str | None = None
+    before: str = ""  # Markdown between the previous line and this one
 
     @property
     def text(self) -> str:
@@ -58,6 +61,7 @@ class Container:
     prose: str = ""
     navigation: str | None = None
     path: Path = Path()
+    tail: str = ""  # Markdown after the last entry
 
     @property
     def children(self) -> list[Leaf | Container]:
@@ -104,6 +108,8 @@ def chunk(container: Container, title: Callable[[list[Entry], int, int], str] = 
     parts = []
     for number, group in enumerate(groups, 1):
         part = Container(title(group, number, len(groups)), f"part-{number:02d}", group, navigation="transparent")
+        if number == len(groups):
+            part.tail, container.tail = container.tail, ""
         parts.append(Entry(chunk(part, title)))
     container.entries = parts
     return container
@@ -176,7 +182,12 @@ def render_container(node: Container, vault: Path, previous: str | None) -> str:
             lines += [f"## {heading}", "", *(link(item) for item in part.entries), ""]
         lines.pop()
     else:
-        lines += [link(entry) for entry in node.entries]
+        for entry in node.entries:
+            if entry.before:
+                lines += ([""] if lines[-1] else []) + [entry.before.strip(), ""]
+            lines.append(link(entry))
+    if node.tail:
+        lines += ["", node.tail.strip()]
     fields = [("navigation", node.navigation)] if node.navigation else []
     return frontmatter(fields, previous) + "\n".join(lines).rstrip() + "\n"
 

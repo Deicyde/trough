@@ -12,8 +12,8 @@ The ring homomorphism $\widehat{\mathbb{Z}}\to\widehat{\mathbb{Q}}$ sending $z$ 
 
 ## Depends on
 
-- [QHat](../qhat-and-tensor-products/qhat.md)
-- [ZHat.torsionfree](../zhat/zhat-torsionfree.md)
+- [QHat](../widehat-q-and-tensor-products/qhat.md)
+- [ZHat.torsionfree](../widehat-z/zhat-torsionfree.md)
 
 ## Proof
 

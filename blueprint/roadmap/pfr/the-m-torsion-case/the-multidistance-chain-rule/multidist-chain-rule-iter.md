@@ -11,7 +11,7 @@ proof: formalized
 Let $m$ be a positive integer. Suppose one has a sequence
 
 $$
-G_m \to G_{m-1} \to \dots \to G_1 \to G_0 = \{0\}
+G_m \to G_{m-1} \to \dots \to G_1 \to G_0 = \{0\}\qquad\text{(5)}
 $$
 
 of homomorphisms between abelian groups $G_0,\dots,G_m$, and for each $d=0,\dots,m$, let $\pi_d : G_m \to G_d$ be the homomorphism from $G_m$ to $G_d$ arising from this sequence by composition (so for instance $\pi_m$ is the identity homomorphism and $\pi_0$ is the zero homomorphism). Let $X_{[m]} = (X_i)_{1 \leq i \leq m}$ be a jointly independent tuple of $G_m$-valued random variables. Then
@@ -20,7 +20,7 @@ $$
 \begin{split}
 D[ X_{[m]} ] &=  \sum_{d=1}^m D[ \pi_d(X_{[m]}) \,|\, \pi_{d-1}(X_{[m]})] \\
 &\quad + \sum_{d=1}^{m-1} \mathbb{I}[ \sum_i X_i : \pi_d(X_{[m]}) \; \big| \; \pi_d\big(\sum_i X_i\big), \pi_{d-1}(X_{[m]}) ].
-\end{split}
+\end{split}\qquad\text{(6)}
 $$
 
 In particular, by [Nonnegativity of conditional mutual information](../../shannon-entropy-inequalities/part-02/conditional-nonneg.md),
@@ -28,8 +28,7 @@ In particular, by [Nonnegativity of conditional mutual information](../../shanno
 $$
 \begin{aligned}
 D[ X_{[m]} ] \geq  & \sum_{d=1}^m D[ \pi_d(X_{[m]})|\pi_{d-1}(X_{[m]}) ] \\
-& + \mathbb{I}[ \sum_i X_i : \pi_1(X_{[m]}) \; \big| \; \pi_1\bigl(\sum_i X_i\bigr) ].
-\end{aligned}
+& + \mathbb{I}[ \sum_i X_i : \pi_1(X_{[m]}) \; \big| \; \pi_1\bigl(\sum_i X_i\bigr) ].\qquad\text{(7)}\end{aligned}
 $$
 
 ## Depends on

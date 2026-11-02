@@ -17,7 +17,7 @@ If $i_v:K_v\to L_w$ denotes the map of the previous definition then for $x\in K_
 
 ## Proof
 
-Follows by continuity from lemma [Lemma IsDedekindDomain.HeightOneSpectrum.valuation\_comap](isdedekinddomain-heightonespectrum-valuation-com.md).
+Follows by continuity from lemma [IsDedekindDomain.HeightOneSpectrum.valuation\_comap](isdedekinddomain-heightonespectrum-valuation-com.md).
 
 ## Lean
 

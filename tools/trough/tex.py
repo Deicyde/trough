@@ -131,6 +131,7 @@ class Macro:
     nargs: int = 0
     default: str | None = None  # the first argument's default, when that argument is optional
     body: str = ""
+    primitive: bool = False  # \let to a command that is no macro: its body is that command, read no further
 
 
 DEFINER = re.compile(r"\\(?:(?:re)?newcommand|providecommand|DeclareMathOperator|DeclareRobustCommand)\*?|\\[gex]?def(?![A-Za-z])|\\let(?![A-Za-z])")
@@ -151,7 +152,7 @@ def definitions(text: str, macros: dict[str, Macro] | None = None) -> dict[str, 
             j = j + 1 if text[j : j + 1] == "=" else j
             source = argument(text, j)
             if source and target[0].startswith("\\") and source[0].startswith("\\"):
-                macros[target[0][1:]] = macros.get(source[0][1:], Macro(body=source[0]))
+                macros[target[0][1:]] = macros.get(source[0][1:], Macro(body=source[0], primitive=True))
             continue
         if command.endswith("def"):
             name = CONTROL.match(text, skip_space(text, i))
@@ -233,6 +234,10 @@ def expand(text: str, macros: dict[str, Macro], depth: int = 0) -> str:
         macro = macros.get(name)
         if macro is None:
             out.append(match.group())
+            i = j
+            continue
+        if macro.primitive:
+            out.append(macro.body)
             i = j
             continue
         args: list[str] = []
@@ -326,6 +331,36 @@ class Omitted:
     what: str
 
 
+def tagged(tex: str, tag: Callable[[str], str | None]) -> str:
+    """A display's TeX with each \\label that *tag* numbers shown as that number at the end of
+    its row, since AutoformBot turns \\tag off."""
+    if "\\label" not in tex:
+        return tex
+    rows: list[str] = []
+    depth = 0
+    start = 0
+    for match in re.finditer(r"\\(?:begin|end)\s*\{[^}]*\}|\\\\|\\.|[{}]", tex):
+        token = match.group()
+        if token == "{" or token.startswith("\\begin"):
+            depth += 1
+        elif token == "}" or token.startswith("\\end"):
+            depth -= 1
+        elif token == "\\\\" and depth == 0:
+            rows.append(tex[start : match.start()])
+            rows.append(token)
+            start = match.end()
+    rows.append(tex[start:])
+    out = []
+    for row in rows:
+        numbers = [tag(squeeze(label)) for label in re.findall(r"\\label\s*\{([^{}]*)\}", row)]
+        row = re.sub(r"\\label\s*\{[^{}]*\}", "", row)
+        shown = [number for number in numbers if number]
+        if shown:
+            row = row.rstrip() + "\\qquad\\text{" + ", ".join(f"({number})" for number in shown) + "}"
+        out.append(row)
+    return "".join(out)
+
+
 def math_text(tex: str, display: bool) -> str:
     """A formula's TeX as MathJax will read it: labels and tags out, no blank lines."""
     tex = re.sub(r"\\(?:label|tag\*?)\s*\{[^{}]*\}", "", tex)
@@ -338,28 +373,38 @@ def math_text(tex: str, display: bool) -> str:
 
 
 def closing_dollar(text: str, i: int, delimiter: str) -> int:
-    """Where the formula that starts at text[i] ends: the next unescaped *delimiter*."""
+    """Where the formula that starts at text[i] ends: the next unescaped *delimiter* outside
+    the braces the formula opens, so $\\text{a $b$}$ is one formula."""
+    depth = 0
     j = i
-    while True:
-        j = text.find(delimiter, j)
-        if j < 0:
-            return len(text)
-        backslashes = len(text[:j]) - len(text[:j].rstrip("\\"))
-        if backslashes % 2 == 0:
+    while j < len(text):
+        c = text[j]
+        if c == "\\":
+            j += 2
+            continue
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+        elif depth <= 0 and text.startswith(delimiter, j):
             return j
         j += 1
+    return len(text)
 
 
 class Writer:
     """Turns a blueprint's TeX into Markdown. *ref* gives the Markdown for a reference to a
-    label (or None for plain text), and *cite* the text of a citation."""
+    label, *bib* each citation key's label and link, and *tag* the number a display shows
+    for one of its labels (None to show none)."""
 
     def __init__(self, macros: dict[str, Macro], ref: Callable[[str, str], str] | None = None,
-                 cite: Callable[[list[str], str | None], str] | None = None, markdown: bool = True):
+                 bib: dict[str, tuple[str, str | None]] | None = None, markdown: bool = True,
+                 tag: Callable[[str], str | None] | None = None):
         self.macros = macros
         self.ref = ref or (lambda label, command: label)
-        self.cite = cite or (lambda keys, note: "[" + ", ".join(keys) + (f", {note}" if note else "") + "]")
+        self.bib = bib or {}
         self.markdown = markdown
+        self.tag = tag or (lambda label: None)
         self.unknown: Counter[str] = Counter()
 
     # ---- entry points
@@ -370,10 +415,26 @@ class Writer:
 
     def plain(self, tex: str) -> str:
         """One line of text for a title: formatting dropped, formulas kept as TeX."""
-        writer = Writer(self.macros, lambda label, command: label, self.cite, markdown=False)
+        writer = Writer(self.macros, lambda label, command: label, self.bib, markdown=False)
         text = writer.inline(expand(tex, self.macros))
         self.unknown.update(writer.unknown)
-        return re.sub(r"\s+", " ", text).strip()
+        return close_quotes(re.sub(r"\s+", " ", text).strip())
+
+    def citation(self, keys: list[str], note: str | None) -> str:
+        """[label, label, note], each label linked to its work when the bibliography gives a link."""
+        works = []
+        for key in keys:
+            label, url = self.bib.get(key, (key, None))
+            if not self.markdown:
+                works.append(label)
+            elif url:
+                works.append(f"[{self.text(label)}]({link_url(url)})")
+            else:
+                works.append(self.text(label))
+        if note:
+            works.append(self.text(note) if self.markdown else note)
+        inner = ", ".join(works)
+        return f"\\[{inner}\\]" if self.markdown else f"[{inner}]"
 
     # ---- block level
 
@@ -382,10 +443,17 @@ class Writer:
         para: list[str] = []
 
         def flush() -> None:
-            text = re.sub(r"\s+", " ", "".join(para)).strip()
+            text = close_quotes(re.sub(r"\s+", " ", "".join(para)).strip())
             para.clear()
             if text:
                 out.append(Para(text))
+
+        def display(formula: str, end: int) -> int:
+            """Add a display; punctuation just after it moves inside, so it opens no paragraph."""
+            flush()
+            stop = re.match(r"\s*([.,;:])(?=\s|$)", tex[end:])
+            out.append(Display(math_text(formula.rstrip() + (stop.group(1) if stop else ""), True)))
+            return end + stop.end() if stop else end
 
         i = 0
         while i < len(tex):
@@ -396,16 +464,12 @@ class Writer:
                 continue
             if tex.startswith("$$", i):
                 end = closing_dollar(tex, i + 2, "$$")
-                flush()
-                out.append(Display(math_text(tex[i + 2 : end], True)))
-                i = end + 2
+                i = display(tagged(tex[i + 2 : end], self.tag), end + 2)
                 continue
             if tex.startswith("\\[", i):
                 end = tex.find("\\]", i + 2)
                 end = len(tex) if end < 0 else end
-                flush()
-                out.append(Display(math_text(tex[i + 2 : end], True)))
-                i = end + 2
+                i = display(tagged(tex[i + 2 : end], self.tag), end + 2)
                 continue
             if tex.startswith("\\begin", i) and re.match(r"\\begin\s*\{", tex[i:]):
                 env_arg = argument(tex, i + len("\\begin"))
@@ -414,8 +478,8 @@ class Writer:
                 body_end, end = environment_end(tex, body_start, env)
                 body = tex[body_start:body_end]
                 if env in DISPLAY_MATH or env in INNER_MATH:
-                    flush()
-                    out.append(Display(math_text(self.display_env(env, body), True)))
+                    i = display(self.display_env(env, tagged(body, self.tag)), end)
+                    continue
                 elif env in LISTS:
                     flush()
                     out.append(self.list_block(env, body))
@@ -466,13 +530,13 @@ class Writer:
         block = ListBlock(LISTS[env])
         starts = []
         depth = 0
-        for match in re.finditer(r"\\begin\s*\{|\\end\s*\{|\\item(?![A-Za-z])|[{}]", body):
+        for match in re.finditer(r"\\(?:begin|end)\s*\{[^}]*\}|\\item(?![A-Za-z])|\\.|[{}]", body):
             token = match.group()
             if token.startswith("\\begin") or token == "{":
                 depth += 1
             elif token.startswith("\\end") or token == "}":
                 depth -= 1
-            elif depth == 0:
+            elif token.startswith("\\item") and depth == 0:
                 starts.append(match)
         for k, match in enumerate(starts):
             end = starts[k + 1].start() if k + 1 < len(starts) else len(body)
@@ -610,8 +674,9 @@ class Writer:
             if not arg:
                 return j
             if name == "texorpdfstring":
+                # The second argument is for PDF bookmarks; titles here keep their formulas.
                 second = argument(tex, arg[1])
-                para.append(self.inline(arg[0]) if self.markdown else self.inline(second[0] if second else arg[0]))
+                para.append(self.inline(arg[0]))
                 return second[1] if second else arg[1]
             if name == "foreignlanguage":
                 second = argument(tex, arg[1])
@@ -643,8 +708,7 @@ class Writer:
             if not arg:
                 return j
             note = self.plain_text(notes[-1]) if notes and notes[-1].strip() else None
-            text = self.cite(names(arg[0]), note)
-            para.append(self.text(text) if self.markdown else text)
+            para.append(self.citation(names(arg[0]), note))
             return arg[1]
         if name == "href":
             url = argument(tex, j)
@@ -731,7 +795,7 @@ class Writer:
         return k
 
     def plain_text(self, tex: str) -> str:
-        writer = Writer(self.macros, self.ref, self.cite, markdown=False)
+        writer = Writer(self.macros, self.ref, self.bib, markdown=False)
         return re.sub(r"\s+", " ", writer.inline(tex)).strip()
 
 
@@ -755,7 +819,7 @@ def render(blocks: list, indent: int = 0) -> str:
             if block.tex:
                 parts.append(f"$$\n{safe_math_markdown('$$' + block.tex + '$$')[2:-2]}\n$$")
         elif isinstance(block, ListBlock):
-            lines = []
+            items = []
             for number, (label, item) in enumerate(block.items, 1):
                 marker = f"{number}. " if block.kind == "ol" and not label else "- "
                 body = render(item)
@@ -763,17 +827,45 @@ def render(blocks: list, indent: int = 0) -> str:
                     lead = f"**{label}**" if block.kind == "dl" else label
                     body = f"{lead} {body}" if body and not body.startswith("$$") else f"{lead}\n\n{body}".rstrip()
                 first, *rest = body.split("\n") if body else [""]
-                if first == "$$":
-                    first, rest = "", body.split("\n")
-                lines.append((marker + first).rstrip())
-                lines += ["    " + line if line else "" for line in rest]
-            parts.append("\n".join(lines))
+                # An item that opens with a display keeps it on the marker line: "- $$".
+                items.append("\n".join([(marker + first).rstrip(), *("    " + line if line else "" for line in rest)]))
+            # An item of several lines ends in an indented line, which would swallow the next
+            # marker as its continuation; blank lines between items keep each one its own.
+            parts.append(("\n\n" if any("\n" in item for item in items) else "\n").join(items))
         elif isinstance(block, Quote):
             inner = render(block.blocks)
             parts.append("\n".join("> " + line if line else ">" for line in inner.split("\n")))
         elif isinstance(block, Omitted):
             parts.append(f"*({block.what.capitalize()} in the source is not reproduced here.)*")
     return "\n\n".join(part for part in parts if part.strip())
+
+
+def close_quotes(text: str) -> str:
+    """text with the ' that closes each ‘ made ’, as TeX prints `quoted'; an apostrophe
+    inside a word stays as typed, and formulas are left alone."""
+    if "‘" not in text:
+        return text
+    out = list(text)
+    quoted = False
+    i = 0
+    while i < len(text):
+        if text.startswith("$$", i):
+            i = closing_dollar(text, i + 2, "$$") + 2
+            continue
+        c = text[i]
+        if c == "$":
+            i = closing_dollar(text, i + 1, "$") + 1
+            continue
+        if c == "\\":
+            i += 2
+            continue
+        if c == "‘":
+            quoted = True
+        elif c == "'" and quoted and not text[i + 1 : i + 2].isalpha():
+            out[i] = "’"
+            quoted = False
+        i += 1
+    return "".join(out)
 
 
 def paragraph_start(text: str) -> str:

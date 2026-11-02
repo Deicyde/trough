@@ -1,8 +1,8 @@
 # Polynomial Freiman-Ruzsa
 
-The blueprint of Polynomial Freiman-Ruzsa, read at commit [7e7fadf0](https://github.com/teorth/pfr/tree/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f) (2026-10-29): 219 nodes, one article each. A node it blueprint marks `\leanok` is formalized here, its proof too when that is marked, and `\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+The blueprint of Polynomial Freiman-Ruzsa, read at commit [7e7fadf0](https://github.com/teorth/pfr/tree/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f) (2026-10-29): 219 nodes, one article each. A node the blueprint marks `\leanok` is formalized here, its proof too when that is marked, and `\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
-Statements and proofs are quoted from the blueprint, under its Apache-2.0 license.
+The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 
 - [Applications of Jensen's inequality](applications-of-jensens-inequality/README.md)
 - [Shannon entropy inequalities](shannon-entropy-inequalities/README.md)
@@ -15,5 +15,5 @@ Statements and proofs are quoted from the blueprint, under its Apache-2.0 licens
 - [Homomorphism version of PFR](homomorphism-version-of-pfr/README.md)
 - [Approximate homomorphism version of PFR](approximate-homomorphism-version-of-pfr/README.md)
 - [Weak PFR over the integers](weak-pfr-over-the-integers/README.md)
-- [The m-torsion case](the-m-torsion-case/README.md)
+- [The $m$-torsion case](the-m-torsion-case/README.md)
 - [Further improvement to exponent](further-improvement-to-exponent/README.md)

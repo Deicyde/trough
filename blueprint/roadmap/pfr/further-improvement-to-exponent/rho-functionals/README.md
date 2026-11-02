@@ -17,5 +17,8 @@ Let $G$ be an additive group, and let $A$ be a non-empty subset of $G$.
 - [Conditional rho and translation](rho-cond-invariant.md)
 - [Conditional rho and relabeling](rho-cond-relabeled.md)
 - [Rho and conditioning](rho-cond.md)
+
+The following lemmas hold for $G=\mathbb{F}_2^n$.
+
 - [Rho and sums, symmetrized](rho-sums-sym.md)
 - [Rho and conditioning, symmetrized](rho-cond-sym.md)

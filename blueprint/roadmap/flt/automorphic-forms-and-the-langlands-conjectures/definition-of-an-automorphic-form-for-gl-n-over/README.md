@@ -1,0 +1,3 @@
+# Definition of an automorphic form for $\operatorname{GL}_n$ over $\mathbb{Q}$.
+
+The global Langlands reciprocity conjectures relate automorphic forms to Galois representations. The statements for a general connected reductive group involve the construction of the Langlands dual group, and we do not have quite enough Lie algebra theory to push this definition through in general. However if we restrict the special case of the group $\operatorname{GL}_n/\mathbb{Q}$, the dual group is just $\operatorname{GL}_n(\mathbb{C})$ and several other technical obstructions are also removed. In this section we will explain the definition of an automorphic form for the group $\operatorname{GL}_n/\mathbb{Q}$, following the exposition by Borel and Jacquet in Corvallis.

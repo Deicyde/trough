@@ -50,19 +50,24 @@ the same title in another list.
 ## The blueprint chapters
 
 A library with a leanblueprint becomes a chapter with one article per node,
-following the blueprint's chapters and sections.
+following the blueprint's chapters and sections. Each part, chapter and
+section is a page that reads in the blueprint's order: its prose, remarks and
+examples, smaller units as headings, and each node's card where the node
+stands. A labelled display shows a number, counted on its page, and
+references print it.
 
-1. `data/blueprints/<id>/source.json` pins the library's commit and names its
-   web entry file. `src/` holds the TeX files that entry reads, with the
-   repository's `LICENSE`. Strong PNT gives no license, so it has
-   `structure.json` instead: titles, labels, Lean names, marks and places,
-   but no text.
+1. `data/blueprints/<id>/source.json` pins the library's commit, names its
+   web entry file and records its node count. `src/` holds the TeX and BibTeX
+   files that entry reads, with the repository's `LICENSE`. Strong PNT gives
+   no license, so it has `structure.json` instead: titles, labels, Lean
+   names, marks and places, but no text.
 2. `tools/trough/leanblueprint.py` reads a blueprint the way leanblueprint
    does: the nodes are the theorem-like environments of the kinds in its
    `thms=` option, a node's id is its last `\label`, and a proof belongs to
    the node its `\proves` names or else to the nearest one before it.
-   `tools/trough/tex.py` writes the statements and proofs as Markdown, with
-   each library's macros expanded in its own formulas.
+   `tools/trough/tex.py` writes the text as Markdown, with each library's
+   macros expanded in its own formulas; `tools/trough/bibtex.py` turns its
+   citations into author-year labels linked to each work.
 3. A node's status follows its marks: `\leanok` makes its statement, or its
    proof, formalized, `\mathlibok` puts it in Mathlib, and `\notready` marks
    it not ready. A Mathlib node whose first Lean name heads a Mathlib-chapter
@@ -73,7 +78,10 @@ following the blueprint's chapters and sections.
    library's documentation instead.
 5. The **Blueprint data** workflow refreshes the sources weekly from each
    library's newest commit; `tools/refresh_blueprints.py ID CHECKOUT` does the
-   same from a local checkout.
+   same from a local checkout. A refresh writes nothing, and the workflow
+   fails, when the blueprint names a file its repository lacks, reads to no
+   nodes or to under half the last count, or when a library whose text is
+   shown loses its license or changes it.
 
 ## Working on it
 

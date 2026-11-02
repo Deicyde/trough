@@ -7,7 +7,7 @@ statement: formalized
 
 # NumberField.InfinitePlace.Completion.baseChangeEquiv
 
-Let $v$ be an infinite place of $K$. There is a natural $L$-algebra homeomorphism $L\otimes_K K_v \cong_L \prod_{w\mid v}L_w$, whose restriction to $1\otimes_K K_v$ corresponds to the map in [Definition NumberField.InfinitePlace.Completion.piExtension](numberfield-infiniteplace-completion-piextension.md).
+Let $v$ be an infinite place of $K$. There is a natural $L$-algebra homeomorphism $L\otimes_K K_v \cong_L \prod_{w\mid v}L_w$, whose restriction to $1\otimes_K K_v$ corresponds to the map in [NumberField.InfinitePlace.Completion.piExtension](numberfield-infiniteplace-completion-piextension.md).
 
 ## Depends on
 
@@ -18,7 +18,7 @@ Let $v$ be an infinite place of $K$. There is a natural $L$-algebra homeomorphis
 
 ## Proof
 
-The map in [Definition NumberField.InfinitePlace.Completion.baseChange](numberfield-infiniteplace-completion-basechange.md) is an $L$-algebra isomorphism by Theorem [Theorem NumberField.InfinitePlace.Completion.baseChange\_surjective](numberfield-infiniteplace-completion-basechange-2.md) and Theorem [Theorem NumberField.InfinitePlace.Completion.baseChange\_injective](numberfield-infiniteplace-completion-basechange-3.md). Every $K_v$-algebra isomorphism between two $K_v$-module topological spaces is a homeomorphism. Since the $L$-algebra isomorphism of Definition [Definition NumberField.InfinitePlace.Completion.baseChange](numberfield-infiniteplace-completion-basechange.md) can equivalently be viewed as a $K_v$-algebra isomorphism, it is also a homeomorphism.
+The map in [NumberField.InfinitePlace.Completion.baseChange](numberfield-infiniteplace-completion-basechange.md) is an $L$-algebra isomorphism by Theorem [NumberField.InfinitePlace.Completion.baseChange\_surjective](numberfield-infiniteplace-completion-basechange-2.md) and Theorem [NumberField.InfinitePlace.Completion.baseChange\_injective](numberfield-infiniteplace-completion-basechange-3.md). Every $K_v$-algebra isomorphism between two $K_v$-module topological spaces is a homeomorphism. Since the $L$-algebra isomorphism of Definition [NumberField.InfinitePlace.Completion.baseChange](numberfield-infiniteplace-completion-basechange.md) can equivalently be viewed as a $K_v$-algebra isomorphism, it is also a homeomorphism.
 
 ## Lean
 

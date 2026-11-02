@@ -21,7 +21,7 @@ If $X$ is a Borel set then $\mu(X)=d_A(\phi)\mu(\phi^{-1}X)$.
 
 ## Proof
 
-This follows immediately from lemma [Lemma MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md) and the definition of the pushforward of a measure.
+This follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md) and the definition of the pushforward of a measure.
 
 ## Lean
 

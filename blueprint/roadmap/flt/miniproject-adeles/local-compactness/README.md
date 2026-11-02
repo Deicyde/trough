@@ -5,4 +5,7 @@ As mentioned above, Salvatore Mercuri was the first to give a complete formalisa
 What we need then is this (note that this is not true for a general Dedekind domain):
 
 - [NumberField.instCompactSpaceAdicCompletionIntegers](numberfield-instcompactspaceadiccompletionintege.md)
+
+Once we have this, the above result from mathlib gives us
+
 - [NumberField.AdeleRing.locallyCompactSpace](numberfield-adelering-locallycompactspace.md)

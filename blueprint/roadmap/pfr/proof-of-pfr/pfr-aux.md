@@ -11,7 +11,7 @@ proof: formalized
 If $A \subset {\bf F}_2^n$ is non-empty and $|A+A| \leq K|A|$, then $A$ can be covered by at most $K ^ {13/2}|A|^{1/2}/|H|^{1/2}$ translates of a subspace $H$ of ${\bf F}_2^n$ with
 
 $$
-|H|/|A| \in [K^{-11}, K^{11}].
+|H|/|A| \in [K^{-11}, K^{11}].\qquad\text{(1)}
 $$
 
 ## Depends on
@@ -40,7 +40,7 @@ $$
 By [Entropy version of PFR](../entropy-version-of-pfr/conclusion/entropy-pfr.md), we may thus find a subspace $H$ of $\mathbb{F}_2^n$ such that
 
 $$
-d[U_A;U_H] \leq \tfrac{1}{2} C' \log K
+d[U_A;U_H] \leq \tfrac{1}{2} C' \log K\qquad\text{(2)}
 $$
 
 with $C' = 11$. By [Distance controls entropy difference](../entropic-ruzsa-calculus/part-01/ruzsa-diff.md) we conclude that
@@ -49,7 +49,7 @@ $$
 |\log |H| - \log |A|| \leq C' \log K,
 $$
 
-proving (ah). From [Ruzsa distance](../entropic-ruzsa-calculus/part-01/ruz-dist-def.md), (uauh) is equivalent to
+proving (1). From [Ruzsa distance](../entropic-ruzsa-calculus/part-01/ruz-dist-def.md), (2) is equivalent to
 
 $$
 \mathbb{H}[U_A - U_H] \leq \log( |A|^{1/2} |H|^{1/2}) + \tfrac{1}{2} C' \log K.

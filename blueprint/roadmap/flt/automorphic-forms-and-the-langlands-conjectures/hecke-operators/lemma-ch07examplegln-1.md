@@ -3,7 +3,7 @@ declaration: lemma
 origin: cited
 ---
 
-# lemma-ch07exampleGLn-1
+# Lemma: The group $\operatorname{GL}_n(\mathbb{A}_{\mathbb{Q}}^f)$…
 
 The group $\operatorname{GL}_n(\mathbb{A}_{\mathbb{Q}}^f)$ acts (on the left) on the space of automorphic forms for $\operatorname{GL}_n(\mathbb{A}_{\mathbb{Q}})$ by the formula $(g\cdot f)(x,y)=f(xg,y)$.
 

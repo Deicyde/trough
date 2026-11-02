@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# PFR with C=9
+# PFR with $C=9$
 
 If $A \subset {\bf F}_2^n$ is finite non-empty with $|A+A| \leq K|A|$, then there exists a subgroup $H$ of ${\bf F}_2^n$ with $|H| \leq |A|$ such that $A$ can be covered by at most $2K^9$ translates of $H$.
 

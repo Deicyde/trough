@@ -14,7 +14,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-This is also included in Lemma 2 of section 5.2 of \[serre-galcoh\] (Serre just writes that the groups are equal; he clearly is not a Lean user. I can see no explanation in his book of this use of the equality symbol. When the statement of this “theorem” is formalised in Lean it may well actually be a definition, giving the map).
+This is also included in Lemma 2 of section 5.2 of \[Serre 2002\] (Serre just writes that the groups are equal; he clearly is not a Lean user. I can see no explanation in his book of this use of the equality symbol. When the statement of this “theorem” is formalised in Lean it may well actually be a definition, giving the map).
 
 ## Sources
 

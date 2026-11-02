@@ -21,7 +21,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Immediate from the previous corollary [Corollary Homeomorph.restrictedProductPi](homeomorph-restrictedproductpi.md).
+Immediate from the previous corollary [Homeomorph.restrictedProductPi](homeomorph-restrictedproductpi.md).
 
 ## Lean
 

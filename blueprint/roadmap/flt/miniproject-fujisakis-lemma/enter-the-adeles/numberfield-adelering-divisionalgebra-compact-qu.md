@@ -22,7 +22,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Indeed, if $M$ is the preimage of $C$ under the inclusion $D_{\mathbb{A}}^{(1)} \to D_{\mathbb{A}}\times D_{\mathbb{A}}$ sending $\nu$ to $(\nu,\nu^{-1})$, then $M$ is a closed subspace of a compact space so it's compact (note that $\delta_{D_{\mathbb{A}}}$ is continuous, by theorem [Corollary MeasureTheory.ringHaarChar\_continuous](../../miniproject-haar-characters/initial-definitions/measuretheory-ringhaarchar-continuous.md), so $D_{\mathbb{A}}^{(1)}$ is a closed subset of $D_{\mathbb{A}}^\times$ which is itself a closed subset of $D_{\mathbb{A}}\times D_{\mathbb{A}}$). Lemma [Lemma NumberField.AdeleRing.DivisionAlgebra.Aux.antidiag\_mem\_C](../the-proof/numberfield-adelering-divisionalgebra-aux-antidi.md) shows that $M$ surjects onto $D^\times\backslash D_{\mathbb{A}}^{(1)}$ which is thus also compact.
+Indeed, if $M$ is the preimage of $C$ under the inclusion $D_{\mathbb{A}}^{(1)} \to D_{\mathbb{A}}\times D_{\mathbb{A}}$ sending $\nu$ to $(\nu,\nu^{-1})$, then $M$ is a closed subspace of a compact space so it's compact (note that $\delta_{D_{\mathbb{A}}}$ is continuous, by theorem [MeasureTheory.ringHaarChar\_continuous](../../miniproject-haar-characters/initial-definitions/measuretheory-ringhaarchar-continuous.md), so $D_{\mathbb{A}}^{(1)}$ is a closed subset of $D_{\mathbb{A}}^\times$ which is itself a closed subset of $D_{\mathbb{A}}\times D_{\mathbb{A}}$). Lemma [NumberField.AdeleRing.DivisionAlgebra.Aux.antidiag\_mem\_C](../the-proof/numberfield-adelering-divisionalgebra-aux-antidi.md) shows that $M$ surjects onto $D^\times\backslash D_{\mathbb{A}}^{(1)}$ which is thus also compact.
 
 ## Lean
 

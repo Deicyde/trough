@@ -8,3 +8,5 @@ Another way of saying that $D$ has no nontrivial two-sided ideals: every surject
 
 - [MatrixRing.isCentralSimple](matrixring-iscentralsimple.md)
 - [IsCentralSimple.baseChange](iscentralsimple-basechange.md)
+
+Next: define trace and norm.
