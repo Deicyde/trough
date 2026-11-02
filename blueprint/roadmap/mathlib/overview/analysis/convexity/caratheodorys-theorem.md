@@ -3,19 +3,36 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: convexHull_eq_union
+mathlib_file: Mathlib/Analysis/Convex/Caratheodory.lean
 ---
 
 # Carathéodory's theorem
 
-Mathlib states this as `convexHull_eq_union`.
+**Carathéodory's convexity theorem**
+
+```lean
+convexHull_eq_union.{u, u_1} {𝕜 : Type u_1} {E : Type u} [Field 𝕜] [LinearOrder 𝕜]
+  [IsStrictOrderedRing 𝕜] [AddCommGroup E] [_root_.Module 𝕜 E] {s : Set E} :
+  (convexHull 𝕜) s = ⋃ t, ⋃ (_ : ↑t ⊆ s), ⋃ (_ : AffineIndependent 𝕜 Subtype.val), (convexHull 𝕜) ↑t
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Convex hull of a subset of an affine real space](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
+- [Field](../../general-algebra/field-theory/field.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
+
+## Proof depends on
+
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources
 
-- [Mathlib documentation: `convexHull_eq_union`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=convexHull_eq_union#doc)
+- [Mathlib documentation: `convexHull_eq_union`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Caratheodory.html#convexHull_eq_union)
+- [Source of `convexHull_eq_union` in Mathlib/Analysis/Convex/Caratheodory.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/Caratheodory.lean#L105)
 - [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L326)
 - [1000+ theorems list: Q2471737](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2220)
 - [1000+ theorems project: Q2471737](https://1000-plus.github.io/?length=-1#Q2471737)

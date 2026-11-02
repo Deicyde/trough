@@ -1,19 +1,27 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: crossProduct
+mathlib_file: Mathlib/LinearAlgebra/CrossProduct.lean
 ---
 
 # Cross product
 
-Mathlib states this as `crossProduct`.
+The cross product of two vectors in $R^3$ for $R$ a commutative ring.
+
+```lean
+crossProduct.{u_1} {R : Type u_1} [CommRing R] : (Fin 3 → R) →ₗ[R] (Fin 3 → R) →ₗ[R] Fin 3 → R
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
+- [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Sources
 
-- [Mathlib documentation: `crossProduct`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=crossProduct#doc)
+- [Mathlib documentation: `crossProduct`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/CrossProduct.html#crossProduct)
+- [Source of `crossProduct` in Mathlib/LinearAlgebra/CrossProduct.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/CrossProduct.lean#L46)
 - [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Low dimensions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L236)

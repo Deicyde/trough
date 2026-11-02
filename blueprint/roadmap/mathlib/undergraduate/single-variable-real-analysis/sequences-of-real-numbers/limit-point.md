@@ -1,19 +1,27 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: MapClusterPt
+mathlib_file: Mathlib/Topology/Defs/Filter.lean
 ---
 
 # Limit point
 
-Mathlib states this as `MapClusterPt`.
+A point `x` is a cluster point of a sequence `u` along a filter `F` if it is a cluster point
+of `map u F`.
+
+```lean
+MapClusterPt.{u_1, u_3} {X : Type u_1} [TopologicalSpace X] {ι : Type u_3} (x : X) (F : Filter ι)
+  (u : ι → X) : Prop
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
 
 ## Sources
 
-- [Mathlib documentation: `MapClusterPt`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=MapClusterPt#doc)
+- [Mathlib documentation: `MapClusterPt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Defs/Filter.html#MapClusterPt)
+- [Source of `MapClusterPt` in Mathlib/Topology/Defs/Filter.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Defs/Filter.lean#L282)
 - [Mathlib undergraduate list: Single Variable Real Analysis › Sequences of real numbers](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L285)

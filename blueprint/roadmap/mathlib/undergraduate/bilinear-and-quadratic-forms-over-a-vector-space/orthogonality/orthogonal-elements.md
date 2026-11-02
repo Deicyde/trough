@@ -1,19 +1,28 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: LinearMap.BilinForm.iIsOrtho
+mathlib_file: Mathlib/LinearAlgebra/BilinearForm/Orthogonal.lean
 ---
 
 # Orthogonal elements
 
-Mathlib states this as `LinearMap.BilinForm.iIsOrtho`.
+A set of vectors `v` is orthogonal with respect to some bilinear form `B` if and only
+if for all `i ≠ j`, `B (v i) (v j) = 0`.
+
+```lean
+LinearMap.BilinForm.iIsOrtho.{w, u_1, u_2} {R : Type u_1} {M : Type u_2} [CommSemiring R]
+  [AddCommMonoid M] [_root_.Module R M] {n : Type w} (B : LinearMap.BilinForm R M) (v : n → M) :
+  Prop
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Bilinear form](../../../overview/linear-algebra/bilinear-and-quadratic-forms/bilinear-form.md)
 
 ## Sources
 
-- [Mathlib documentation: `LinearMap.BilinForm.iIsOrtho`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=LinearMap.BilinForm.iIsOrtho#doc)
+- [Mathlib documentation: `LinearMap.BilinForm.iIsOrtho`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/BilinearForm/Orthogonal.html#LinearMap.BilinForm.iIsOrtho)
+- [Source of `LinearMap.BilinForm.iIsOrtho` in Mathlib/LinearAlgebra/BilinearForm/Orthogonal.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/BilinearForm/Orthogonal.lean#L63)
 - [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L207)

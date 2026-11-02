@@ -1,19 +1,44 @@
 ---
-declaration: definition
+declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: exists_isMIntegralCurve_of_isMIntegralCurveOn
+mathlib_file: Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean
 ---
 
 # Uniform time existence
 
-Mathlib states this as `exists_isMIntegralCurve_of_isMIntegralCurveOn`.
+If there exists `ε > 0` such that the local integral curve at each point `x : M` is defined at
+least on an open interval `Ioo (-ε) ε`, then every point on `M` has a global integral curve
+passing through it.
+
+See Lemma 9.15, [J.M. Lee (2012)][lee2012].
+
+```lean
+exists_isMIntegralCurve_of_isMIntegralCurveOn.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] {H : Type u_2} [TopologicalSpace H] {I : ModelWithCorners ℝ E H} {M : Type u_3}
+  [TopologicalSpace M] [ChartedSpace H M] [IsManifold I 1 M] [T2Space M] [BoundarylessManifold I M]
+  {v : (x : M) → TangentSpace I x} (hv : ContMDiff I I.tangent 1 fun x => ⟨x, v x⟩) {ε : ℝ}
+  (hε : 0 < ε) (h : ∀ (x : M), ∃ γ, γ 0 = x ∧ IsMIntegralCurveOn γ v (Set.Ioo (-ε) ε)) (x : M) :
+  ∃ γ, γ 0 = x ∧ IsMIntegralCurve γ v
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
+- [Integral curves](integral-curves.md)
+- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Smooth map between manifolds](smooth-map-between-manifolds.md)
+- [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)
+- [Tangent bundle](tangent-bundle.md)
+- [Topological fiber bundle](../../../topology/general-topology/part-01/topological-fiber-bundle.md)
+
+## Proof depends on
+
+- [Uniqueness of integral curves](uniqueness-of-integral-curves.md)
 
 ## Sources
 
-- [Mathlib documentation: `exists_isMIntegralCurve_of_isMIntegralCurveOn`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=exists_isMIntegralCurve_of_isMIntegralCurveOn#doc)
+- [Mathlib documentation: `exists_isMIntegralCurve_of_isMIntegralCurveOn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.html#exists_isMIntegralCurve_of_isMIntegralCurveOn)
+- [Source of `exists_isMIntegralCurve_of_isMIntegralCurveOn` in Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean#L162)
 - [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L455)

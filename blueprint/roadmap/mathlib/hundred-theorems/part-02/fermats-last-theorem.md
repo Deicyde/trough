@@ -8,6 +8,10 @@ not_ready: true
 
 Mathlib states this as `FermatLastTheorem` but does not prove it.
 
+```lean
+FermatLastTheorem : Prop
+```
+
 Formalized outside Mathlib; the 100 theorems list links the formalization.
 
 External Lean proof of FermatLastTheorem, building on the Imperial College FLT project, flt-regular, and mathlib. The Imperial College FLT project is at <https://imperialcollegelondon.github.io/FLT/>.

@@ -3,17 +3,35 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: lucas_lehmer_sufficiency
+mathlib_file: Mathlib/NumberTheory/LucasLehmer.lean
 ---
 
 # Lucas-Lehmer primality test
 
-Mathlib states this as `lucas_lehmer_sufficiency`.
+**Lucas–Lehmer primality test**: sufficiency direction.
+
+```lean
+lucas_lehmer_sufficiency (p : ℕ) (w : 1 < p) : LucasLehmerTest p → Nat.Prime (mersenne p)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Irreducible element](irreducible-element.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+
+## Proof depends on
+
+- [Characteristic p](../field-theory/characteristic-p.md)
+- [Characteristic zero](../field-theory/characteristic-zero.md)
+- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Group morphism](../group-theory/part-01/group-morphism.md)
+- [Order of an element](../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
+- [Ordered ring](../rings/ordered-ring.md)
+- [Prime numbers](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 
 ## Sources
 
-- [Mathlib documentation: `lucas_lehmer_sufficiency`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=lucas_lehmer_sufficiency#doc)
+- [Mathlib documentation: `lucas_lehmer_sufficiency`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LucasLehmer.html#lucas_lehmer_sufficiency)
+- [Source of `lucas_lehmer_sufficiency` in Mathlib/NumberTheory/LucasLehmer.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/LucasLehmer.lean#L582)
 - [Mathlib overview: General algebra › Divisibility in integral domains](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L93)

@@ -3,19 +3,46 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: banach_steinhaus
+mathlib_file: Mathlib/Analysis/Normed/Operator/BanachSteinhaus.lean
 ---
 
 # Banach-Steinhaus theorem
 
-Mathlib states this as `banach_steinhaus`.
+This is the standard Banach-Steinhaus theorem, or Uniform Boundedness Principle.
+If a family of continuous linear maps from a Banach space into a normed space is pointwise
+bounded, then the norms of these linear maps are uniformly bounded.
+
+See also `WithSeminorms.banach_steinhaus` for the general statement in barrelled spaces.
+
+```lean
+banach_steinhaus.{u_1, u_2, u_3, u_4, u_5} {E : Type u_1} {F : Type u_2} {𝕜 : Type u_3}
+  {𝕜₂ : Type u_4} [SeminormedAddCommGroup E] [SeminormedAddCommGroup F] [NontriviallyNormedField 𝕜]
+  [NontriviallyNormedField 𝕜₂] [NormedSpace 𝕜 E] [NormedSpace 𝕜₂ F] {σ₁₂ : 𝕜 →+* 𝕜₂}
+  [RingHomIsometric σ₁₂] {ι : Type u_5} [CompleteSpace E] {g : ι → E →SL[σ₁₂] F}
+  (h : ∀ (x : E), ∃ C, ∀ (i : ι), ‖(g i) x‖ ≤ C) : ∃ C', ∀ (i : ι), ‖g i‖ ≤ C'
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Completeness](../../topology/uniform-notions/completeness.md)
+- [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
+- [Normed vector space over a normed field](normed-vector-space-over-a-normed-field.md)
+
+## Proof depends on
+
+- [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Baire theorem](../../topology/metric-spaces/baire-theorem.md)
+- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
+- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
+- [Topology on a normed vector space](topology-on-a-normed-vector-space.md)
+- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 
-- [Mathlib documentation: `banach_steinhaus`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=banach_steinhaus#doc)
+- [Mathlib documentation: `banach_steinhaus`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Operator/BanachSteinhaus.html#banach_steinhaus)
+- [Source of `banach_steinhaus` in Mathlib/Analysis/Normed/Operator/BanachSteinhaus.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Operator/BanachSteinhaus.lean#L35)
 - [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L285)
 - [1000+ theorems list: Q1426292](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1682)
 - [1000+ theorems project: Q1426292](https://1000-plus.github.io/?length=-1#Q1426292)

@@ -1,19 +1,29 @@
 ---
-declaration: definition
+declaration: instance
 origin: cited
 mathlib: true
 mathlib_declaration: metricSpacePi
+mathlib_file: Mathlib/Topology/MetricSpace/Basic.lean
 ---
 
 # Finite product of metric spaces
 
-Mathlib states this as `metricSpacePi`.
+A finite product of metric spaces is a metric space, with the sup distance.
+
+```lean
+metricSpacePi.{v, u_2} {β : Type v} {X : β → Type u_2} [Fintype β] [(b : β) → MetricSpace (X b)] :
+  MetricSpace ((b : β) → X b)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 
-- [Mathlib documentation: `metricSpacePi`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=metricSpacePi#doc)
+- [Mathlib documentation: `metricSpacePi`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Basic.html#metricSpacePi)
+- [Source of `metricSpacePi` in Mathlib/Topology/MetricSpace/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/MetricSpace/Basic.lean#L156)
 - [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L407)

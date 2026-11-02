@@ -1,20 +1,32 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: HasDerivAt
+mathlib_file: Mathlib/Analysis/Calculus/Deriv/Basic.lean
 ---
 
 # Derivative at a point
 
-Mathlib states this as `HasDerivAt`.
+`f` has the derivative `f'` at the point `x`.
+
+That is, `f x' = f x + (x' - x) • f' + o(x' - x)` where `x'` converges to `x`.
+
+```lean
+HasDerivAt.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [AddCommGroup F]
+  [_root_.Module 𝕜 F] [TopologicalSpace F] [ContinuousSMul 𝕜 F] (f : 𝕜 → F) (f' : F) (x : 𝕜) : Prop
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Sources
 
-- [Mathlib documentation: `HasDerivAt`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=HasDerivAt#doc)
+- [Mathlib documentation: `HasDerivAt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Deriv/Basic.html#HasDerivAt)
+- [Source of `HasDerivAt` in Mathlib/Analysis/Calculus/Deriv/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/Deriv/Basic.lean#L127)
 - [Mathlib undergraduate list: Single Variable Real Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L314)
 - [Mathlib undergraduate list: Single Variable Real Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L315)

@@ -1,20 +1,28 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: Real.arcsin
+mathlib_file: Mathlib/Analysis/SpecialFunctions/Trigonometric/Inverse.lean
 ---
 
 # Inverse trigonometric functions
 
-Mathlib states this as `Real.arcsin`.
+Inverse of the `sin` function, returns values in the range `-π / 2 ≤ arcsin x ≤ π / 2`.
+It defaults to `-π / 2` on `(-∞, -1)` and to `π / 2` to `(1, ∞)`.
+
+```lean
+Real.arcsin : ℝ → ℝ
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Cos](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Trigonometric functions](trigonometric-functions.md)
 
 ## Sources
 
-- [Mathlib documentation: `Real.arcsin`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Real.arcsin#doc)
+- [Mathlib documentation: `Real.arcsin`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecialFunctions/Trigonometric/Inverse.html#Real.arcsin)
+- [Source of `Real.arcsin` in Mathlib/Analysis/SpecialFunctions/Trigonometric/Inverse.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SpecialFunctions/Trigonometric/Inverse.lean#L33)
 - [Mathlib overview: Analysis › Special functions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L332)
 - [Mathlib undergraduate list: Single Variable Real Analysis › Elementary functions (trigonometric, rational, $\exp$, $\log$, etc)](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L337)

@@ -1,19 +1,25 @@
 ---
-declaration: definition
+declaration: inductive
 origin: cited
 mathlib: true
 mathlib_declaration: BinaryTree
+mathlib_file: Mathlib/Data/Tree/Basic.lean
 ---
 
 # Tree
 
-Mathlib states this as `BinaryTree`.
+A binary tree with values stored in non-leaf nodes.
+
+```lean
+BinaryTree.{u} (α : Type u) : Type u
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+Its statement uses no other concept on these lists.
 
 ## Sources
 
-- [Mathlib documentation: `BinaryTree`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=BinaryTree#doc)
+- [Mathlib documentation: `BinaryTree`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Tree/Basic.html#BinaryTree)
+- [Source of `BinaryTree` in Mathlib/Data/Tree/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Data/Tree/Basic.lean#L30)
 - [Mathlib overview: Data structures › Trees](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L593)

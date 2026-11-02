@@ -3,19 +3,51 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes
+mathlib_file: Mathlib/RingTheory/Ideal/KrullsHeightTheorem.lean
 ---
 
 # Krull's principal ideal theorem
 
-Mathlib states this as `Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes`.
+**Krull's principal ideal theorem** (also known as **Krullscher Hauptidealsatz**) :
+In a commutative Noetherian ring `R`, any prime ideal that is minimal over a principal ideal
+has height at most 1.
+
+```lean
+Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes.{u_1} {R : Type u_1} [CommRing R]
+  [IsNoetherianRing R] (I : Ideal R) [Submodule.IsPrincipal I] (p : Ideal R)
+  (hp : p ∈ I.minimalPrimes) : p.height ≤ 1
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
+- [Prime spectrum](../../../overview/geometry/algebraic-geometry/prime-spectrum.md)
+- [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
+- [Ring](../../../overview/general-algebra/rings/ring.md)
+
+## Proof depends on
+
+- [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
+- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
+- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Cayley-Hamilton theorem](../../../overview/linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
+- [Chinese remainder theorem](../../../overview/general-algebra/ideals-and-quotients/chinese-remainder-theorem.md)
+- [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
+- [Local ring](../../../overview/general-algebra/rings/local-ring.md)
+- [Localization](../../../overview/general-algebra/rings/localization.md)
+- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
+- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
+- [Subring](../../../overview/general-algebra/rings/subring.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
 
 ## Sources
 
-- [Mathlib documentation: `Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes#doc)
+- [Mathlib documentation: `Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/KrullsHeightTheorem.html#Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes)
+- [Source of `Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes` in Mathlib/RingTheory/Ideal/KrullsHeightTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/Ideal/KrullsHeightTheorem.lean#L105)
 - [1000+ theorems list: Q3527241](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2574)
 - [1000+ theorems project: Q3527241](https://1000-plus.github.io/?length=-1#Q3527241)
 - [Wikipedia: Krull's principal ideal theorem](https://en.wikipedia.org/wiki/Krull's_principal_ideal_theorem)

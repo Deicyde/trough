@@ -3,17 +3,32 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: exists_gcd_eq_mul_add_mul
+mathlib_file: Mathlib/RingTheory/PrincipalIdealDomain.lean
 ---
 
 # Bézout's identity
 
-Mathlib states this as `exists_gcd_eq_mul_add_mul`.
+**Bézout's lemma**
+
+```lean
+exists_gcd_eq_mul_add_mul.{u} {R : Type u} [CommRing R] [IsBezout R] [IsDomain R] [GCDMonoid R]
+  (a b : R) : ∃ x y, gcd a b = a * x + b * y
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
+- [Ideal of a commutative ring](../../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
+- [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
+- [Ring](../../../overview/general-algebra/rings/ring.md)
+
+## Proof depends on
+
+- [Sum of subspaces](../../linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources
 
-- [Mathlib documentation: `exists_gcd_eq_mul_add_mul`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=exists_gcd_eq_mul_add_mul#doc)
+- [Mathlib documentation: `exists_gcd_eq_mul_add_mul`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/PrincipalIdealDomain.html#exists_gcd_eq_mul_add_mul)
+- [Source of `exists_gcd_eq_mul_add_mul` in Mathlib/RingTheory/PrincipalIdealDomain.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/PrincipalIdealDomain.lean#L473)
 - [Mathlib undergraduate list: Ring Theory › Divisibility in integral domains](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L154)

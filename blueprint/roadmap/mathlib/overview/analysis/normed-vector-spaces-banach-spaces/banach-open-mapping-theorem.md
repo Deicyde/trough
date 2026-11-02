@@ -3,19 +3,43 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: ContinuousLinearMap.isOpenMap
+mathlib_file: Mathlib/Analysis/Normed/Operator/Banach.lean
 ---
 
 # Banach open mapping theorem
 
-Mathlib states this as `ContinuousLinearMap.isOpenMap`.
+The Banach open mapping theorem: a surjective bounded linear map between Banach spaces is
+open.
+
+```lean
+ContinuousLinearMap.isOpenMap.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {𝕜' : Type u_2}
+  [NontriviallyNormedField 𝕜] [NontriviallyNormedField 𝕜'] {σ : 𝕜 →+* 𝕜'} {E : Type u_3}
+  [NormedAddCommGroup E] [NormedSpace 𝕜 E] {F : Type u_4} [NormedAddCommGroup F] [NormedSpace 𝕜' F]
+  (f : E →SL[σ] F) {σ' : 𝕜' →+* 𝕜} [RingHomInvPair σ σ'] [RingHomIsometric σ] [RingHomIsometric σ']
+  [CompleteSpace F] [CompleteSpace E] (surj : Function.Surjective ⇑f) : IsOpenMap ⇑f
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Completeness](../../topology/uniform-notions/completeness.md)
+- [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
+- [Normed vector space over a normed field](normed-vector-space-over-a-normed-field.md)
+- [Open map](../../topology/general-topology/part-01/open-map.md)
+
+## Proof depends on
+
+- [Absolutely convergent series in Banach spaces](absolutely-convergent-series-in-banach-spaces.md)
+- [Baire theorem](../../topology/metric-spaces/baire-theorem.md)
+- [Closed map](../../topology/general-topology/part-01/closed-map.md)
+- [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
+- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
+- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 
-- [Mathlib documentation: `ContinuousLinearMap.isOpenMap`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=ContinuousLinearMap.isOpenMap#doc)
+- [Mathlib documentation: `ContinuousLinearMap.isOpenMap`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Operator/Banach.html#ContinuousLinearMap.isOpenMap)
+- [Source of `ContinuousLinearMap.isOpenMap` in Mathlib/Analysis/Normed/Operator/Banach.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Operator/Banach.lean#L227)
 - [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L286)
 - [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L425)
 - [1000+ theorems list: Q944297](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1131)

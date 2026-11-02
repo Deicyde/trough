@@ -1,19 +1,33 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: FormalMultilinearSeries.radius
+mathlib_file: Mathlib/Analysis/Analytic/ConvergenceRadius.lean
 ---
 
 # Radius of convergence
 
-Mathlib states this as `FormalMultilinearSeries.radius`.
+The radius of a formal multilinear series is the largest `r` such that the sum `Σ ‖pₙ‖ ‖y‖ⁿ`
+converges for all `‖y‖ < r`. This implies that `Σ pₙ yⁿ` converges for all `‖y‖ < r`, but these
+definitions are *not* equivalent in general.
+
+```lean
+FormalMultilinearSeries.radius.{u_1, u_3, u_4} {𝕜 : Type u_1} {E : Type u_3} {F : Type u_4}
+  [NontriviallyNormedField 𝕜] [NormedAddCommGroup E] [NormedSpace 𝕜 E] [NormedAddCommGroup F]
+  [NormedSpace 𝕜 F] (p : FormalMultilinearSeries 𝕜 E F) : ENNReal
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Multilinear map](../../../overview/linear-algebra/fundamentals/multilinear-map.md)
+- [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Sources
 
-- [Mathlib documentation: `FormalMultilinearSeries.radius`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=FormalMultilinearSeries.radius#doc)
+- [Mathlib documentation: `FormalMultilinearSeries.radius`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Analytic/ConvergenceRadius.html#FormalMultilinearSeries.radius)
+- [Source of `FormalMultilinearSeries.radius` in Mathlib/Analysis/Analytic/ConvergenceRadius.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Analytic/ConvergenceRadius.lean#L106)
 - [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L369)

@@ -1,20 +1,28 @@
 ---
-declaration: definition
+declaration: instance
 origin: cited
 mathlib: true
 mathlib_declaration: MeasurableSpace.pi
+mathlib_file: Mathlib/MeasureTheory/MeasurableSpace/Constructions.lean
 ---
 
 # Product of sigma-algebras
 
 Mathlib states this as `MeasurableSpace.pi`.
 
+```lean
+MeasurableSpace.pi.{u_4, u_6} {δ : Type u_4} {X : δ → Type u_6}
+  [m : (a : δ) → MeasurableSpace (X a)] : MeasurableSpace ((a : δ) → X a)
+```
+
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
+- [Events](../../probability-theory/definitions-of-a-probability-space/events.md)
 
 ## Sources
 
-- [Mathlib documentation: `MeasurableSpace.pi`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=MeasurableSpace.pi#doc)
+- [Mathlib documentation: `MeasurableSpace.pi`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/MeasurableSpace/Constructions.html#MeasurableSpace.pi)
+- [Source of `MeasurableSpace.pi` in Mathlib/MeasureTheory/MeasurableSpace/Constructions.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/MeasurableSpace/Constructions.lean#L580)
 - [Mathlib undergraduate list: Measures and integral calculus › Measure theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L504)
 - [Mathlib undergraduate list: Measures and integral calculus › Measure theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L509)

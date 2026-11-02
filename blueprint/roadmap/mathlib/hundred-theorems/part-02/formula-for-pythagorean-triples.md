@@ -3,17 +3,41 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: PythagoreanTriple.classification
+mathlib_file: Mathlib/NumberTheory/PythagoreanTriples.lean
 ---
 
 # Formula for Pythagorean Triples
 
-Mathlib states this as `PythagoreanTriple.classification`.
+**Formula for Pythagorean Triples**
+
+```lean
+PythagoreanTriple.classification {x y z : ℤ} :
+  PythagoreanTriple x y z ↔
+    ∃ k m n,
+      (x = k * (m ^ 2 - n ^ 2) ∧ y = k * (2 * m * n) ∨
+          x = k * (2 * m * n) ∧ y = k * (m ^ 2 - n ^ 2)) ∧
+        (z = k * (m ^ 2 + n ^ 2) ∨ z = -k * (m ^ 2 + n ^ 2))
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Array](../../overview/data-structures/list-like-structures/array.md)
+- [Integer](../../overview/general-algebra/numbers/integer.md)
+
+## Proof depends on
+
+- [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
+- [Congruence in $\Z$](../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [Finite set](../../overview/data-structures/sets/finite-set.md)
+- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
+- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Ring morphism](../../overview/general-algebra/rings/ring-morphism.md)
+- [The Fundamental Theorem of Arithmetic](../part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources
 
-- [Mathlib documentation: `PythagoreanTriple.classification`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=PythagoreanTriple.classification#doc)
+- [Mathlib documentation: `PythagoreanTriple.classification`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PythagoreanTriples.html#PythagoreanTriple.classification)
+- [Source of `PythagoreanTriple.classification` in Mathlib/NumberTheory/PythagoreanTriples.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/PythagoreanTriples.lean#L604)
 - [Freek Wiedijk's 100 theorems, no. 23](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L112)

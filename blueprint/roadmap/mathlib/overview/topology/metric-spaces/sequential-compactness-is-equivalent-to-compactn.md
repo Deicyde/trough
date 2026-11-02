@@ -1,20 +1,37 @@
 ---
-declaration: definition
+declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: isCompact_iff_isSeqCompact
+mathlib_file: Mathlib/Topology/Sequences.lean
 ---
 
 # Sequential compactness is equivalent to compactness (Bolzano-Weierstrass)
 
-Mathlib states this as `isCompact_iff_isSeqCompact`.
+A version of **Bolzano-Weierstrass**: in a (pseudo)metrizable space, a set is compact if and
+only if it is sequentially compact.
+
+```lean
+isCompact_iff_isSeqCompact.{u_1} {X : Type u_1} [TopologicalSpace X]
+  [TopologicalSpace.PseudoMetrizableSpace X] {s : Set X} : IsCompact s ↔ IsSeqCompact s
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Compactness in terms of filters](../general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Uniform space](../uniform-notions/uniform-space.md)
+
+## Proof depends on
+
+- [Cauchy sequence](../uniform-notions/cauchy-sequence.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Induced topology](../general-topology/part-01/induced-topology.md)
+- [Integer](../../general-algebra/numbers/integer.md)
+- [Limit point](../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
 
 ## Sources
 
-- [Mathlib documentation: `isCompact_iff_isSeqCompact`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=isCompact_iff_isSeqCompact#doc)
+- [Mathlib documentation: `isCompact_iff_isSeqCompact`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Sequences.html#isCompact_iff_isSeqCompact)
+- [Source of `isCompact_iff_isSeqCompact` in Mathlib/Topology/Sequences.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Sequences.lean#L413)
 - [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L262)
 - [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L413)

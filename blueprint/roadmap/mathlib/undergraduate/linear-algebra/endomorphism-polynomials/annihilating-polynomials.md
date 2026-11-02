@@ -1,19 +1,34 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: Polynomial.annIdeal
+mathlib_file: Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean
 ---
 
 # Annihilating polynomials
 
-Mathlib states this as `Polynomial.annIdeal`.
+`annIdeal R a` is the *annihilating ideal* of all `p : R[X]` such that `p(a) = 0`.
+
+The informal notation `p(a)` stands for `Polynomial.aeval a p`.
+Again informally, the annihilating ideal of `a` is
+`{ p ∈ R[X] | p(a) = 0 }`. This is an ideal in `R[X]`.
+The formal definition uses the kernel of the aeval map.
+
+```lean
+Polynomial.annIdeal.{u_1, u_2} (R : Type u_1) {A : Type u_2} [CommSemiring R] [Semiring A]
+  [Algebra R A] (a : A) : Ideal (Polynomial R)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Ideal of a commutative ring](../../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
+- [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
+- [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 
 ## Sources
 
-- [Mathlib documentation: `Polynomial.annIdeal`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Polynomial.annIdeal#doc)
+- [Mathlib documentation: `Polynomial.annIdeal`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/AnnihilatingPolynomial.html#Polynomial.annIdeal)
+- [Source of `Polynomial.annIdeal` in Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean#L48)
 - [Mathlib undergraduate list: Linear algebra › Endomorphism polynomials](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L54)

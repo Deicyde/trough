@@ -3,19 +3,41 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: jacobson_density
+mathlib_file: Mathlib/RingTheory/SimpleModule/Basic.lean
 ---
 
 # Jacobson density theorem
 
 Mathlib states this as `jacobson_density`.
 
+```lean
+jacobson_density.{u_2, u_4} {R : Type u_2} [Ring R] {M : Type u_4} [AddCommGroup M]
+  [_root_.Module R M] [IsSemisimpleModule R M] (f : Module.End (Module.End R M) M) (s : Finset M) :
+  ∃ r, ∀ m ∈ s, f m = r • m
+```
+
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
+- [Ring](../../../overview/general-algebra/rings/ring.md)
+- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
+
+## Proof depends on
+
+- [Finitely supported function](../../../overview/data-structures/maps/finitely-supported-function.md)
+- [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
+- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
+- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
 
 ## Sources
 
-- [Mathlib documentation: `jacobson_density`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=jacobson_density#doc)
+- [Mathlib documentation: `jacobson_density`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/SimpleModule/Basic.html#jacobson_density)
+- [Source of `jacobson_density` in Mathlib/RingTheory/SimpleModule/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/SimpleModule/Basic.lean#L561)
 - [1000+ theorems list: Q17098298](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L4145)
 - [1000+ theorems project: Q17098298](https://1000-plus.github.io/?length=-1#Q17098298)
 - [Wikipedia: Jacobson density theorem](https://en.wikipedia.org/wiki/Jacobson_density_theorem)

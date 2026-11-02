@@ -3,19 +3,65 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Vitali.exists_disjoint_covering_ae
+mathlib_file: Mathlib/MeasureTheory/Covering/Vitali.lean
 ---
 
 # Vitali covering theorem
 
-Mathlib states this as `Vitali.exists_disjoint_covering_ae`.
+The measurable **Vitali covering theorem**.
+
+Assume one is given a family `t` of closed sets with nonempty interior, such that each `a ∈ t` is
+included in a ball `B (x, r)` and covers a definite proportion of the ball `B (x, 3 r)` for a given
+measure `μ` \(think of the situation where `μ` is a doubling measure and `t` is a family of balls\).
+Consider a \(possibly non-measurable\) set `s` at which the family is fine, i.e., every point of `s`
+belongs to arbitrarily small elements of `t`. Then one can extract from `t` a disjoint subfamily
+that covers almost all `s`.
+
+For more flexibility, we give a statement with a parameterized family of sets.
+
+```lean
+Vitali.exists_disjoint_covering_ae.{u_1, u_2} {α : Type u_1} {ι : Type u_2} [PseudoMetricSpace α]
+  [MeasurableSpace α] [OpensMeasurableSpace α] [SecondCountableTopology α]
+  (μ : MeasureTheory.Measure α) [MeasureTheory.IsLocallyFiniteMeasure μ] (s : Set α) (t : Set ι)
+  (C : NNReal) (r : ι → ℝ) (c : ι → α) (B : ι → Set α)
+  (hB : ∀ a ∈ t, B a ⊆ Metric.closedBall (c a) (r a))
+  (μB : ∀ a ∈ t, μ (Metric.closedBall (c a) (3 * r a)) ≤ ↑C * μ (B a))
+  (ht : ∀ a ∈ t, (interior (B a)).Nonempty) (h't : ∀ a ∈ t, IsClosed (B a))
+  (hf : ∀ x ∈ s, ∀ ε > 0, ∃ a ∈ t, r a ≤ ε ∧ c a = x) :
+  ∃ u ⊆ t, u.Countable ∧ u.PairwiseDisjoint B ∧ μ (s \ ⋃ a ∈ u, B a) = 0
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Bornology](../../../../overview/analysis/topological-vector-spaces/bornology.md)
+- [Positive measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
+- [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
+
+## Proof depends on
+
+- [Almost sure convergence](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
+- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
+- [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
+- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Module](../../../../overview/linear-algebra/fundamentals/module.md)
+- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
+- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
+- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
+- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 
-- [Mathlib documentation: `Vitali.exists_disjoint_covering_ae`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Vitali.exists_disjoint_covering_ae#doc)
+- [Mathlib documentation: `Vitali.exists_disjoint_covering_ae`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Covering/Vitali.html#Vitali.exists_disjoint_covering_ae)
+- [Source of `Vitali.exists_disjoint_covering_ae` in Mathlib/MeasureTheory/Covering/Vitali.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Covering/Vitali.lean#L229)
 - [1000+ theorems list: Q3229352](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2367)
 - [1000+ theorems project: Q3229352](https://1000-plus.github.io/?length=-1#Q3229352)
 - [Wikipedia: Vitali covering theorem](https://en.wikipedia.org/wiki/Vitali_covering_theorem)

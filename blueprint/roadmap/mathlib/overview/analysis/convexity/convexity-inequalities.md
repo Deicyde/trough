@@ -2,12 +2,20 @@
 declaration: theorem
 origin: cited
 mathlib: true
+mathlib_declaration: Real.geom_mean_le_arith_mean_weighted, Real.geom_mean_le_arith_mean, Real.geom_mean_eq_arith_mean_weighted_iff_of_pos', Real.geom_mean_eq_arith_mean_weighted_iff', Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_eq_arith_mean_weighted_iff, Real.geom_mean_eq_arith_mean_weighted_iff_of_pos, Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg, Real.geom_mean_lt_arith_mean_weighted_iff_of_pos', Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_lt_arith_mean_weighted_iff_of_pos, Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg
 mathlib_file: Mathlib/Analysis/MeanInequalities.lean
 ---
 
 # Convexity inequalities
 
+In this file we prove several inequalities for finite sums, including AM-GM inequality,
+HM-GM inequality, Young's inequality, Hölder inequality, and Minkowski inequality. Versions for
+integrals of some of these inequalities are available in
+`Mathlib/MeasureTheory/Integral/MeanInequalities.lean`.
+
 Mathlib covers this with the module `Mathlib.Analysis.MeanInequalities` rather than a single declaration.
+
+Its 58 documented declarations include `Real.geom_mean_le_arith_mean_weighted`, `Real.geom_mean_le_arith_mean`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_pos'`, `Real.geom_mean_eq_arith_mean_weighted_iff'`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg'`, `Real.geom_mean_eq_arith_mean_weighted_iff`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_pos`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_pos'`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg'`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_pos`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg`, and 46 more.
 
 ## Depends on
 

@@ -1,20 +1,26 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: IsSelfAdjoint
+mathlib_file: Mathlib/Algebra/Star/SelfAdjoint.lean
 ---
 
 # Self-adjoint operator
 
-Mathlib states this as `IsSelfAdjoint`.
+An element is self-adjoint if it is equal to its star.
+
+```lean
+IsSelfAdjoint.{u_1} {R : Type u_1} [Star R] (x : R) : Prop
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+Its statement uses no other concept on these lists.
 
 ## Sources
 
-- [Mathlib documentation: `IsSelfAdjoint`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=IsSelfAdjoint#doc)
+- [Mathlib documentation: `IsSelfAdjoint`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Star/SelfAdjoint.html#IsSelfAdjoint)
+- [Source of `IsSelfAdjoint` in Mathlib/Algebra/Star/SelfAdjoint.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Star/SelfAdjoint.lean#L49)
 - [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L297)
 - [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Endomorphisms](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L227)

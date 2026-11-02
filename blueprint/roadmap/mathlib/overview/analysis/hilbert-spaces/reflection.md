@@ -1,19 +1,30 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: Submodule.reflection
+mathlib_file: Mathlib/Analysis/InnerProductSpace/Projection/Reflection.lean
 ---
 
 # Reflection
 
-Mathlib states this as `Submodule.reflection`.
+Reflection in a complete subspace of an inner product space.  The word "reflection" is
+sometimes understood to mean specifically reflection in a codimension-one subspace, and sometimes
+more generally to cover operations such as reflection in a point.  The definition here, of
+reflection in a subspace, is a more general sense of the word that includes both those common
+cases.
+
+```lean
+Submodule.reflection.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RCLike 𝕜] [NormedAddCommGroup E]
+  [InnerProductSpace 𝕜 E] (K : Submodule 𝕜 E) [K.HasOrthogonalProjection] : E ≃ₗᵢ[𝕜] E
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Orthogonal projection](orthogonal-projection.md)
 
 ## Sources
 
-- [Mathlib documentation: `Submodule.reflection`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Submodule.reflection#doc)
+- [Mathlib documentation: `Submodule.reflection`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Projection/Reflection.html#Submodule.reflection)
+- [Source of `Submodule.reflection` in Mathlib/Analysis/InnerProductSpace/Projection/Reflection.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/InnerProductSpace/Projection/Reflection.lean#L47)
 - [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L299)

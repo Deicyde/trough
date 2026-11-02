@@ -3,19 +3,43 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: BoundedContinuousFunction.arzela_ascoli
+mathlib_file: Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean
 ---
 
 # Arzela-Ascoli theorem
 
-Mathlib states this as `BoundedContinuousFunction.arzela_ascoli`.
+Third \(main\) version, with pointwise equicontinuity and range in a compact subset, but
+without closedness. The closure is then compact.
+
+```lean
+BoundedContinuousFunction.arzela_ascoli.{u, v} {α : Type u} {β : Type v} [TopologicalSpace α]
+  [CompactSpace α] [PseudoMetricSpace β] [T2Space β] (s : Set β) (hs : IsCompact s)
+  (A : Set (BoundedContinuousFunction α β))
+  (in_s : ∀ (f : BoundedContinuousFunction α β) (x : α), f ∈ A → f x ∈ s)
+  (H : Equicontinuous fun x => ⇑↑x) : IsCompact (closure A)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Bornology](../../analysis/topological-vector-spaces/bornology.md)
+- [Closure](../general-topology/part-01/closure.md)
+- [Compactness in terms of filters](../general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Continuous function](../general-topology/part-01/continuous-function.md)
+- [Hausdorff space](../general-topology/part-01/hausdorff-space.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Uniform space](../uniform-notions/uniform-space.md)
+
+## Proof depends on
+
+- [Completeness of spaces of bounded continuous functions](../../analysis/normed-vector-spaces-banach-spaces/completeness-of-spaces-of-bounded-continuous-fun.md)
+- [Limit point](../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
+- [Lipschitz continuity](lipschitz-continuity.md)
+- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 
-- [Mathlib documentation: `BoundedContinuousFunction.arzela_ascoli`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=BoundedContinuousFunction.arzela_ascoli#doc)
+- [Mathlib documentation: `BoundedContinuousFunction.arzela_ascoli`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.html#BoundedContinuousFunction.arzela_ascoli)
+- [Source of `BoundedContinuousFunction.arzela_ascoli` in Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean#L111)
 - [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L268)
 - [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L436)
 - [1000+ theorems list: Q1477053](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1722)

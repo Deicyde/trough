@@ -1,19 +1,25 @@
 ---
-declaration: definition
+declaration: instance
 origin: cited
 mathlib: true
 mathlib_declaration: Real.metricSpace
+mathlib_file: Mathlib/Topology/MetricSpace/Basic.lean
 ---
 
 # Metric structure
 
-Mathlib states this as `Real.metricSpace`.
+Instantiate the reals as a metric space.
+
+```lean
+Real.metricSpace : MetricSpace ℝ
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 
 ## Sources
 
-- [Mathlib documentation: `Real.metricSpace`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Real.metricSpace#doc)
+- [Mathlib documentation: `Real.metricSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Basic.html#Real.metricSpace)
+- [Source of `Real.metricSpace` in Mathlib/Topology/MetricSpace/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/MetricSpace/Basic.lean#L121)
 - [Mathlib undergraduate list: Single Variable Real Analysis › Topology of R](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L290)

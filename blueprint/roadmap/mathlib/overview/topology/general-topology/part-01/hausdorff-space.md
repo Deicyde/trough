@@ -1,19 +1,29 @@
 ---
-declaration: definition
+declaration: class
 origin: cited
 mathlib: true
 mathlib_declaration: T2Space
+mathlib_file: Mathlib/Topology/Separation/Hausdorff.lean
 ---
 
 # Hausdorff space
 
-Mathlib states this as `T2Space`.
+A T₂ space, also known as a Hausdorff space, is one in which for every
+`x ≠ y` there exists disjoint open sets around `x` and `y`. This is
+the most widely used of the separation axioms.
+
+```lean
+T2Space.{u} (X : Type u) [TopologicalSpace X] : Prop
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Array](../../../data-structures/list-like-structures/array.md)
+- [Natural number](../../../general-algebra/numbers/natural-number.md)
+- [Topological space](topological-space.md)
 
 ## Sources
 
-- [Mathlib documentation: `T2Space`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=T2Space#doc)
+- [Mathlib documentation: `T2Space`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Separation/Hausdorff.html#T2Space)
+- [Source of `T2Space` in Mathlib/Topology/Separation/Hausdorff.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Separation/Hausdorff.lean#L80)
 - [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L225)

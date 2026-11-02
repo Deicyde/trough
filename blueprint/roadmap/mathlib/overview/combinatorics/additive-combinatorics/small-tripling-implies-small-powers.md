@@ -1,19 +1,45 @@
 ---
-declaration: definition
+declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Finset.small_pow_of_small_tripling
+mathlib_file: Mathlib/Combinatorics/Additive/SmallTripling.lean
 ---
 
 # Small tripling implies small powers
 
-Mathlib states this as `Finset.small_pow_of_small_tripling`.
+If `A` is symmetric \(`A⁻¹ = A`\) and has small tripling, then `A` has small powers,
+in the sense that `|A ^ m|` is at most `|A|` times a constant exponential in `m`.
+
+See also `Finset.small_alternating_pow_of_small_tripling` for a version with a weaker constant but
+which encompasses non-symmetric sets.
+
+```lean
+Finset.small_pow_of_small_tripling.{u_1} {G : Type u_1} [DecidableEq G] [Group G] {A : Finset G}
+  {K : ℝ} {m : ℕ} (hm : 3 ≤ m) (hA : ↑(A ^ 3).card ≤ K * ↑A.card) (hAsymm : A⁻¹ = A) :
+  ↑(A ^ m).card ≤ K ^ (m - 2) * ↑A.card
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Group](../../general-algebra/group-theory/part-01/group.md)
+- [Real number](../../general-algebra/numbers/real-number.md)
+- [Set](../../data-structures/sets/set.md)
+
+## Proof depends on
+
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Group morphism](../../general-algebra/group-theory/part-01/group-morphism.md)
+- [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
+- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
 
 ## Sources
 
-- [Mathlib documentation: `Finset.small_pow_of_small_tripling`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Finset.small_pow_of_small_tripling#doc)
+- [Mathlib documentation: `Finset.small_pow_of_small_tripling`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/SmallTripling.html#Finset.small_pow_of_small_tripling)
+- [Source of `Finset.small_pow_of_small_tripling` in Mathlib/Combinatorics/Additive/SmallTripling.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Additive/SmallTripling.lean#L167)
 - [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L548)

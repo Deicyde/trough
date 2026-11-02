@@ -1,19 +1,26 @@
 ---
-declaration: definition
+declaration: instance
 origin: cited
 mathlib: true
 mathlib_declaration: Int.euclideanDomain
+mathlib_file: Mathlib/Algebra/EuclideanDomain/Int.lean
 ---
 
 # $\Z$ is a Euclidean ring
 
 Mathlib states this as `Int.euclideanDomain`.
 
+```lean
+Int.euclideanDomain : EuclideanDomain ℤ
+```
+
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Euclidean domain](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Ring structure $\Z$](../fundamentals/ring-structure.md)
 
 ## Sources
 
-- [Mathlib documentation: `Int.euclideanDomain`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Int.euclideanDomain#doc)
+- [Mathlib documentation: `Int.euclideanDomain`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Int.html#Int.euclideanDomain)
+- [Source of `Int.euclideanDomain` in Mathlib/Algebra/EuclideanDomain/Int.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/EuclideanDomain/Int.lean#L25)
 - [Mathlib undergraduate list: Ring Theory › Divisibility in integral domains](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L151)

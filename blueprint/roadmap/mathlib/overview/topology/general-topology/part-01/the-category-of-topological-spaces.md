@@ -1,19 +1,25 @@
 ---
-declaration: definition
+declaration: structure
 origin: cited
 mathlib: true
 mathlib_declaration: TopCat
+mathlib_file: Mathlib/Topology/Category/TopCat/Basic.lean
 ---
 
 # The category of topological spaces
 
-Mathlib states this as `TopCat`.
+The category of topological spaces.
+
+```lean
+TopCat.{u} : Type (u + 1)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Topological space](topological-space.md)
 
 ## Sources
 
-- [Mathlib documentation: `TopCat`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=TopCat#doc)
+- [Mathlib documentation: `TopCat`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Category/TopCat/Basic.html#TopCat)
+- [Source of `TopCat` in Mathlib/Topology/Category/TopCat/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Category/TopCat/Basic.lean#L33)
 - [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L219)

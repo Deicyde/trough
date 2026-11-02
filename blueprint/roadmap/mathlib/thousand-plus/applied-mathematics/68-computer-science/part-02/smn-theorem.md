@@ -3,19 +3,34 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Nat.Partrec.Code.smn
+mathlib_file: Mathlib/Computability/PartrecCode.lean
 ---
 
 # Smn theorem
 
-Mathlib states this as `Nat.Partrec.Code.smn`.
+The $S_n^m$ theorem: There is a computable function, namely `Nat.Partrec.Code.curry`, that takes a
+program and a ℕ `n`, and returns a new program using `n` as the first argument.
+
+```lean
+Nat.Partrec.Code.smn :
+  ∃ f, Computable₂ f ∧ ∀ (c : Nat.Partrec.Code) (n x : ℕ), (f c n).eval x = c.eval (Nat.pair n x)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Array](../../../../overview/data-structures/list-like-structures/array.md)
+- [In terms of general recursive functions](../../../../overview/logic-and-computation/computability/computable-function/in-terms-of-general-recursive-functions.md)
+
+## Proof depends on
+
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Integer](../../../../overview/general-algebra/numbers/integer.md)
+- [Primitive recursive function](../../../../overview/logic-and-computation/computability/primitive-recursive-function.md)
 
 ## Sources
 
-- [Mathlib documentation: `Nat.Partrec.Code.smn`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Nat.Partrec.Code.smn#doc)
+- [Mathlib documentation: `Nat.Partrec.Code.smn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/PartrecCode.html#Nat.Partrec.Code.smn)
+- [Source of `Nat.Partrec.Code.smn` in Mathlib/Computability/PartrecCode.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/PartrecCode.lean#L520)
 - [1000+ theorems list: Q1766814](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1885)
 - [1000+ theorems project: Q1766814](https://1000-plus.github.io/?length=-1#Q1766814)
 - [Wikipedia: Smn theorem](https://en.wikipedia.org/wiki/Smn_theorem)

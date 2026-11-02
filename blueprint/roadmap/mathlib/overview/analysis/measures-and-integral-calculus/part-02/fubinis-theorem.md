@@ -3,19 +3,50 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: MeasureTheory.integral_prod
+mathlib_file: Mathlib/MeasureTheory/Integral/Prod.lean
 ---
 
 # Fubini's theorem
 
-Mathlib states this as `MeasureTheory.integral_prod`.
+**Fubini's Theorem**: For integrable functions on `α × β`,
+the Bochner integral of `f` is equal to the iterated Bochner integral.
+`integrable_prod_iff` can be useful to show that the function in question in integrable.
+`MeasureTheory.Integrable.integral_prod_right` is useful to show that the inner integral
+of the right-hand side is integrable.
+
+```lean
+MeasureTheory.integral_prod.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {E : Type u_3}
+  [MeasurableSpace α] [MeasurableSpace β] {μ : MeasureTheory.Measure α}
+  {ν : MeasureTheory.Measure β} [NormedAddCommGroup E] [MeasureTheory.SFinite ν] [NormedSpace ℝ E]
+  [MeasureTheory.SFinite μ] (f : α × β → E) (hf : MeasureTheory.Integrable f (μ.prod ν)) :
+  ∫ (z : α × β), f z ∂μ.prod ν = ∫ (x : α), ∫ (y : β), f (x, y) ∂ν ∂μ
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Bochner integral](../part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Giry monad](../part-01/giry-monad.md)
+- [Measurable function](../part-01/measurable-function.md)
+
+## Proof depends on
+
+- [Affine space](../../../geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
+- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
+- [Characteristic p](../../../general-algebra/field-theory/characteristic-p.md)
+- [Closed map](../../../topology/general-topology/part-01/closed-map.md)
+- [Fatou's lemma](../part-01/fatous-lemma.md)
+- [Finite-dimensional normed spaces over complete normed fields are complete](../../normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
+- [Inner product space, over $R$ or $C$](../../hilbert-spaces/inner-product-space-over-r-or-c.md)
+- [Monotone convergence theorem](../part-01/monotone-convergence-theorem.md)
+- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources
 
-- [Mathlib documentation: `MeasureTheory.integral_prod`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=MeasureTheory.integral_prod#doc)
+- [Mathlib documentation: `MeasureTheory.integral_prod`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Prod.html#MeasureTheory.integral_prod)
+- [Source of `MeasureTheory.integral_prod` in Mathlib/MeasureTheory/Integral/Prod.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/Prod.lean#L438)
 - [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L357)
 - [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L524)
 - [1000+ theorems list: Q1149022](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1443)

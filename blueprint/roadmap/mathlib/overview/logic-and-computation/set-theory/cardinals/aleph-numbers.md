@@ -1,19 +1,33 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: Cardinal.aleph
+mathlib_file: Mathlib/SetTheory/Cardinal/Aleph.lean
 ---
 
 # Aleph numbers
 
-Mathlib states this as `Cardinal.aleph`.
+The `aleph` function gives the infinite cardinals listed by their ordinal index. `aleph 0 = ℵ₀`,
+`aleph 1 = succ ℵ₀` is the first uncountable cardinal, and so on.
+
+For a version including finite cardinals, see `Cardinal.preAleph`.
+
+Conventions for notations in identifiers:
+
+ * The recommended spelling of `ℵ_` in identifiers is `aleph`.
+
+```lean
+Cardinal.aleph.{u_1} : Ordinal.{u_1} ↪o Cardinal.{u_1}
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Cofinality](cofinality.md)
+- [Ordinal](../ordinals/ordinal.md)
 
 ## Sources
 
-- [Mathlib documentation: `Cardinal.aleph`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Cardinal.aleph#doc)
+- [Mathlib documentation: `Cardinal.aleph`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/SetTheory/Cardinal/Aleph.html#Cardinal.aleph)
+- [Source of `Cardinal.aleph` in Mathlib/SetTheory/Cardinal/Aleph.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/SetTheory/Cardinal/Aleph.lean#L404)
 - [Mathlib overview: Logic and computation › Set theory › Cardinals](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L631)

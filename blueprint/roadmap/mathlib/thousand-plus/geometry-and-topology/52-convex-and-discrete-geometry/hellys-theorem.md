@@ -3,19 +3,52 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Convex.helly_theorem
+mathlib_file: Mathlib/Analysis/Convex/Radon.lean
 ---
 
 # Helly's theorem
 
-Mathlib states this as `Convex.helly_theorem`.
+**Helly's theorem** for finite families of convex sets in its classical form.
+
+If `F` is a family of `n` convex sets in a vector space of finite dimension `d`, with `n ≥ d + 1`,
+and any `d + 1` sets of `F` intersect nontrivially, then all sets of `F` intersect nontrivially.
+
+```lean
+Convex.helly_theorem.{u_1, u_2, u_3} {ι : Type u_1} {𝕜 : Type u_2} {E : Type u_3} [Field 𝕜]
+  [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜] [AddCommGroup E] [_root_.Module 𝕜 E]
+  [FiniteDimensional 𝕜 E] {F : ι → Set E} {s : Finset ι} (h_card : Module.finrank 𝕜 E + 1 ≤ s.card)
+  (h_convex : ∀ i ∈ s, Convex 𝕜 (F i))
+  (h_inter : ∀ I ⊆ s, I.card = Module.finrank 𝕜 E + 1 → (⋂ i ∈ I, F i).Nonempty) :
+  (⋂ i ∈ s, F i).Nonempty
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Convex subsets](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
+- [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
+
+## Proof depends on
+
+- [Aleph numbers](../../../overview/logic-and-computation/set-theory/cardinals/aleph-numbers.md)
+- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Fundamental sequences](../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
+- [Hilbert basis theorem](../../../overview/general-algebra/polynomials-and-power-series/hilbert-basis-theorem.md)
+- [Isomorphism with $K^n$](../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
+- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
+- [Radon's theorem](radons-theorem.md)
+- [Rank of a set of vectors](../../../undergraduate/linear-algebra/finite-dimensional-vector-spaces/rank-of-a-set-of-vectors.md)
+- [Subring](../../../overview/general-algebra/rings/subring.md)
+- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Well-ordering theorem](../../general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
 
 ## Sources
 
-- [Mathlib documentation: `Convex.helly_theorem`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Convex.helly_theorem#doc)
+- [Mathlib documentation: `Convex.helly_theorem`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Radon.html#Convex.helly_theorem)
+- [Source of `Convex.helly_theorem` in Mathlib/Analysis/Convex/Radon.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/Radon.lean#L141)
 - [1000+ theorems list: Q1632433](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1812)
 - [1000+ theorems project: Q1632433](https://1000-plus.github.io/?length=-1#Q1632433)
 - [Wikipedia: Helly's theorem](https://en.wikipedia.org/wiki/Helly's_theorem)

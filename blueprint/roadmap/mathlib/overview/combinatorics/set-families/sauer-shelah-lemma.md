@@ -3,17 +3,28 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Finset.card_shatterer_le_sum_vcDim
+mathlib_file: Mathlib/Combinatorics/SetFamily/Shatter.lean
 ---
 
 # Sauer-Shelah lemma
 
-Mathlib states this as `Finset.card_shatterer_le_sum_vcDim`.
+The **Sauer-Shelah lemma**.
+
+```lean
+Finset.card_shatterer_le_sum_vcDim.{u_1} {α : Type u_1} [DecidableEq α] {𝒜 : Finset (Finset α)}
+  [Fintype α] : 𝒜.shatterer.card ≤ ∑ k ≤ 𝒜.vcDim, (Fintype.card α).choose k
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [VC dimension](vc-dimension.md)
+
+## Proof depends on
+
+- [Formula for the Number of Combinations](../../../hundred-theorems/part-03/formula-for-the-number-of-combinations.md)
 
 ## Sources
 
-- [Mathlib documentation: `Finset.card_shatterer_le_sum_vcDim`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Finset.card_shatterer_le_sum_vcDim#doc)
+- [Mathlib documentation: `Finset.card_shatterer_le_sum_vcDim`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/Shatter.html#Finset.card_shatterer_le_sum_vcDim)
+- [Source of `Finset.card_shatterer_le_sum_vcDim` in Mathlib/Combinatorics/SetFamily/Shatter.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/SetFamily/Shatter.lean#L196)
 - [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L520)

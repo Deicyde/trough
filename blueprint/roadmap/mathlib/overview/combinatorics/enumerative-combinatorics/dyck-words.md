@@ -1,19 +1,27 @@
 ---
-declaration: definition
+declaration: structure
 origin: cited
 mathlib: true
 mathlib_declaration: DyckWord
+mathlib_file: Mathlib/Combinatorics/Enumerative/DyckWord.lean
 ---
 
 # Dyck words
 
-Mathlib states this as `DyckWord`.
+A Dyck word is a list of `DyckStep`s with as many `U`s as `D`s and with every prefix having
+at least as many `U`s as `D`s.
+
+```lean
+DyckWord : Type
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [List](../../data-structures/list-like-structures/list.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 
-- [Mathlib documentation: `DyckWord`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=DyckWord#doc)
+- [Mathlib documentation: `DyckWord`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Enumerative/DyckWord.html#DyckWord)
+- [Source of `DyckWord` in Mathlib/Combinatorics/Enumerative/DyckWord.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Enumerative/DyckWord.lean#L62)
 - [Mathlib overview: Combinatorics › Enumerative combinatorics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L506)

@@ -1,21 +1,35 @@
 ---
-declaration: theorem
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers
+mathlib_file: Mathlib/CategoryTheory/Monad/Monadicity.lean
 ---
 
 # Beck's monadicity theorem
 
-Mathlib states this as `CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers`.
+**Beck's monadicity theorem**: if `G` has a left adjoint and creates coequalizers of `G`-split
+pairs, then it is monadic.
+This is the converse of `createsGSplitCoequalizersOfMonadic`.
+
+```lean
+CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers.{v₁, u₁, u₂} {C : Type u₁} {D : Type u₂}
+  [CategoryTheory.Category.{v₁, u₁} C] [CategoryTheory.Category.{v₁, u₂} D]
+  {G : CategoryTheory.Functor D C} {F : CategoryTheory.Functor C D} (adj : F ⊣ G)
+  [CategoryTheory.Monad.CreatesColimitOfIsSplitPair G] : CategoryTheory.MonadicRightAdjoint G
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Adjunction](../../../overview/general-algebra/category-theory/adjunction.md)
+- [Isomorphism](../../../overview/general-algebra/category-theory/isomorphism.md)
+- [Monad](../../../overview/general-algebra/category-theory/monad.md)
+- [Small category](../../../overview/general-algebra/category-theory/small-category.md)
 
 ## Sources
 
-- [Mathlib documentation: `CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers#doc)
+- [Mathlib documentation: `CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Monad/Monadicity.html#CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers)
+- [Source of `CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers` in Mathlib/CategoryTheory/Monad/Monadicity.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/CategoryTheory/Monad/Monadicity.lean#L345)
 - [1000+ theorems list: Q4878586](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2881)
 - [1000+ theorems project: Q4878586](https://1000-plus.github.io/?length=-1#Q4878586)
 - [Wikipedia: Beck's monadicity theorem](https://en.wikipedia.org/wiki/Beck's_monadicity_theorem)

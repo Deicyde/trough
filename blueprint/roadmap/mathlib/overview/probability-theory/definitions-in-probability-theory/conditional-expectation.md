@@ -1,19 +1,37 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: MeasureTheory.condExp
+mathlib_file: Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean
 ---
 
 # Conditional expectation
 
-Mathlib states this as `MeasureTheory.condExp`.
+Conditional expectation of a function, with notation `μ[f | m]`.
+
+It is defined as 0 if any one of the following conditions is true:
+- `m` is not a sub-σ-algebra of `m₀`,
+- `μ` is not σ-finite with respect to `m`,
+- `f` is not integrable.
+
+```lean
+MeasureTheory.condExp.{u_1, u_3} {α : Type u_1} {E : Type u_3} (m : MeasurableSpace α)
+  {m₀ : MeasurableSpace α} [NormedAddCommGroup E] [NormedSpace ℝ E] (μ : MeasureTheory.Measure α)
+  (f : α → E) : α → E
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Inner product space $L^2$](../../../undergraduate/topology/hilbert-spaces/inner-product-space-l-2-2.md)
+- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
+- [Orthogonal projection](../../analysis/hilbert-spaces/orthogonal-projection.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Sources
 
-- [Mathlib documentation: `MeasureTheory.condExp`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=MeasureTheory.condExp#doc)
+- [Mathlib documentation: `MeasureTheory.condExp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.html#MeasureTheory.condExp)
+- [Source of `MeasureTheory.condExp` in Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean#L94)
 - [Mathlib overview: Probability Theory › Definitions in probability theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L396)

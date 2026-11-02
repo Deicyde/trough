@@ -3,19 +3,40 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: doublyStochastic_eq_convexHull_permMatrix
+mathlib_file: Mathlib/Analysis/Convex/Birkhoff.lean
 ---
 
 # Birkhoff–Von Neumann theorem
 
-Mathlib states this as `doublyStochastic_eq_convexHull_permMatrix`.
+**Birkhoff's theorem**
+The set of doubly stochastic matrices is the convex hull of the permutation matrices.  Note
+`exists_eq_sum_perm_of_mem_doublyStochastic` gives a convex weighting of each permutation matrix
+directly.  To show `doublyStochastic n` is convex, use `convex_doublyStochastic`.
+
+```lean
+doublyStochastic_eq_convexHull_permMatrix.{u_1, u_2} {R : Type u_1} {n : Type u_2} [Fintype n]
+  [DecidableEq n] [Field R] [LinearOrder R] [IsStrictOrderedRing R] :
+  ↑(doublyStochastic R n) = (convexHull R) {x | ∃ σ, Equiv.Perm.permMatrix R σ = x}
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Convex hull of a subset of an affine real space](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
+- [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Ring-valued matrix](../../../overview/linear-algebra/matrices/ring-valued-matrix.md)
+
+## Proof depends on
+
+- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Hall's marriage theorem](../../../overview/combinatorics/transversals/halls-marriage-theorem.md)
 
 ## Sources
 
-- [Mathlib documentation: `doublyStochastic_eq_convexHull_permMatrix`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=doublyStochastic_eq_convexHull_permMatrix#doc)
+- [Mathlib documentation: `doublyStochastic_eq_convexHull_permMatrix`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Birkhoff.html#doublyStochastic_eq_convexHull_permMatrix)
+- [Source of `doublyStochastic_eq_convexHull_permMatrix` in Mathlib/Analysis/Convex/Birkhoff.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/Birkhoff.lean#L158)
 - [1000+ theorems list: Q1243340](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1567)
 - [1000+ theorems project: Q1243340](https://1000-plus.github.io/?length=-1#Q1243340)
 - [Wikipedia: Birkhoff–Von Neumann theorem](https://en.wikipedia.org/wiki/Birkhoff%E2%80%93Von_Neumann_theorem)

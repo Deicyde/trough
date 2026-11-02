@@ -1,19 +1,35 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: BoxIntegral.integralSum
+mathlib_file: Mathlib/Analysis/BoxIntegral/Basic.lean
 ---
 
 # Riemann sums
 
-Mathlib states this as `BoxIntegral.integralSum`.
+The integral sum of `f : ℝⁿ → E` over a tagged prepartition `π` w.r.t. box-additive volume `vol`
+with codomain `E →L[ℝ] F` is the sum of `vol J (f (π.tag J))` over all boxes of `π`.
+
+```lean
+BoxIntegral.integralSum.{u, v, w} {ι : Type u} {E : Type v} {F : Type w} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F] {I : BoxIntegral.Box ι}
+  (f : (ι → ℝ) → E) (vol : BoxIntegral.BoxAdditiveMap ι (E →L[ℝ] F) ⊤)
+  (π : BoxIntegral.TaggedPrepartition I) : F
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Metric structure](../topology-of-r/metric-structure.md)
+- [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 
-- [Mathlib documentation: `BoxIntegral.integralSum`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=BoxIntegral.integralSum#doc)
+- [Mathlib documentation: `BoxIntegral.integralSum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/BoxIntegral/Basic.html#BoxIntegral.integralSum)
+- [Source of `BoxIntegral.integralSum` in Mathlib/Analysis/BoxIntegral/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/BoxIntegral/Basic.lean#L77)
 - [Mathlib undergraduate list: Single Variable Real Analysis › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L341)

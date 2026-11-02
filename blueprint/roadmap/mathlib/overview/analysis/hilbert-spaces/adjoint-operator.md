@@ -1,19 +1,28 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: LinearPMap.adjoint
+mathlib_file: Mathlib/Analysis/InnerProductSpace/LinearPMap.lean
 ---
 
 # Adjoint operator
 
-Mathlib states this as `LinearPMap.adjoint`.
+The adjoint operator as a partially defined linear operator, denoted as `T†`.
+
+```lean
+LinearPMap.adjoint.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u_2} {F : Type u_3} [RCLike 𝕜]
+  [NormedAddCommGroup E] [InnerProductSpace 𝕜 E] [NormedAddCommGroup F] [InnerProductSpace 𝕜 F]
+  (T : E →ₗ.[𝕜] F) [CompleteSpace E] : F →ₗ.[𝕜] E
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Extension by continuity](../../topology/general-topology/part-01/extension-by-continuity.md)
+- [Fréchet-Riesz representation of the dual of a Hilbert space](frechet-riesz-representation-of-the-dual-of-a-hi.md)
 
 ## Sources
 
-- [Mathlib documentation: `LinearPMap.adjoint`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=LinearPMap.adjoint#doc)
+- [Mathlib documentation: `LinearPMap.adjoint`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/LinearPMap.html#LinearPMap.adjoint)
+- [Source of `LinearPMap.adjoint` in Mathlib/Analysis/InnerProductSpace/LinearPMap.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/InnerProductSpace/LinearPMap.lean#L150)
 - [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L296)

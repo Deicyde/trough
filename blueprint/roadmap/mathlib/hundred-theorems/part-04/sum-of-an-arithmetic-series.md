@@ -3,17 +3,30 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Finset.sum_range_id
+mathlib_file: Mathlib/Algebra/BigOperators/Intervals.lean
 ---
 
 # Sum of an arithmetic series
 
-Mathlib states this as `Finset.sum_range_id`.
+Gauss' summation formula
+
+```lean
+Finset.sum_range_id (n : ℕ) : ∑ i ∈ Finset.range n, i = n * (n - 1) / 2
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Array](../../overview/data-structures/list-like-structures/array.md)
+- [Finite set](../../overview/data-structures/sets/finite-set.md)
+- [Natural number](../../overview/general-algebra/numbers/natural-number.md)
+
+## Proof depends on
+
+- [Integer](../../overview/general-algebra/numbers/integer.md)
+- [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources
 
-- [Mathlib documentation: `Finset.sum_range_id`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Finset.sum_range_id#doc)
+- [Mathlib documentation: `Finset.sum_range_id`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/BigOperators/Intervals.html#Finset.sum_range_id)
+- [Source of `Finset.sum_range_id` in Mathlib/Algebra/BigOperators/Intervals.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/BigOperators/Intervals.lean#L184)
 - [Freek Wiedijk's 100 theorems, no. 68](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L343)

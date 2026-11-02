@@ -3,19 +3,43 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Complex.cos_add_sin_mul_I_pow
+mathlib_file: Mathlib/Analysis/Complex/Trigonometric.lean
 ---
 
 # De Moivre’s Formula
 
-Mathlib states this as `Complex.cos_add_sin_mul_I_pow`.
+**De Moivre's formula**
+
+```lean
+Complex.cos_add_sin_mul_I_pow (n : ℕ) (z : ℂ) :
+  (Complex.cos z + Complex.sin z * Complex.I) ^ n =
+    Complex.cos (↑n * z) + Complex.sin (↑n * z) * Complex.I
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Cos](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Sin](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/sin.md)
+
+## Proof depends on
+
+- [Ball](../../overview/topology/metric-spaces/ball.md)
+- [Closure](../../overview/topology/general-topology/part-01/closure.md)
+- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
+- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
+- [Metric space](../../overview/topology/metric-spaces/metric-space.md)
+- [Order topology](../../overview/topology/topological-algebra/order-topology.md)
+- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
+- [The Triangle Inequality](../part-05/the-triangle-inequality.md)
+- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
+- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 
-- [Mathlib documentation: `Complex.cos_add_sin_mul_I_pow`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Complex.cos_add_sin_mul_I_pow#doc)
+- [Mathlib documentation: `Complex.cos_add_sin_mul_I_pow`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Trigonometric.html#Complex.cos_add_sin_mul_I_pow)
+- [Source of `Complex.cos_add_sin_mul_I_pow` in Mathlib/Analysis/Complex/Trigonometric.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/Trigonometric.lean#L541)
 - [Freek Wiedijk's 100 theorems, no. 17](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L87)
 - [1000+ theorems list: Q190556](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L147)
 - [1000+ theorems project: Q190556](https://1000-plus.github.io/?length=-1#Q190556)

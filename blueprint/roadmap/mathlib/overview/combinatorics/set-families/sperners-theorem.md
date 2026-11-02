@@ -3,19 +3,37 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: IsAntichain.sperner
+mathlib_file: Mathlib/Combinatorics/SetFamily/LYM.lean
 ---
 
 # Sperner's theorem
 
-Mathlib states this as `IsAntichain.sperner`.
+**Sperner's theorem**. The size of an antichain in `Finset α` is bounded by the size of the
+maximal layer in `Finset α`. This precisely means that `Finset α` is a Sperner order.
+
+```lean
+IsAntichain.sperner.{u_2} {α : Type u_2} [Fintype α] {𝒜 : Finset (Finset α)}
+  (h𝒜 : IsAntichain (fun x1 x2 => x1 ⊆ x2) ↑𝒜) :
+  𝒜.card ≤ (Fintype.card α).choose (Fintype.card α / 2)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Array](../../data-structures/list-like-structures/array.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
+- [Set](../../data-structures/sets/set.md)
+
+## Proof depends on
+
+- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [LYM inequality](lym-inequality.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
 
 ## Sources
 
-- [Mathlib documentation: `IsAntichain.sperner`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=IsAntichain.sperner#doc)
+- [Mathlib documentation: `IsAntichain.sperner`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/LYM.html#IsAntichain.sperner)
+- [Source of `IsAntichain.sperner` in Mathlib/Combinatorics/SetFamily/LYM.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/SetFamily/LYM.lean#L233)
 - [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L514)
 - [1000+ theorems list: Q2226786](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2094)
 - [1000+ theorems project: Q2226786](https://1000-plus.github.io/?length=-1#Q2226786)

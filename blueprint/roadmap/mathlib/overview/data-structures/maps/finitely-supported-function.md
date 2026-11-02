@@ -1,19 +1,28 @@
 ---
-declaration: definition
+declaration: structure
 origin: cited
 mathlib: true
 mathlib_declaration: Finsupp
+mathlib_file: Mathlib/Data/Finsupp/Defs.lean
 ---
 
 # Finitely supported function
 
-Mathlib states this as `Finsupp`.
+`Finsupp α M`, denoted `α →₀ M`, is the type of functions `f : α → M` such that
+`f x = 0` for all but finitely many `x`.
+
+```lean
+Finsupp.{u_8, u_9} (α : Type u_8) (M : Type u_9) [Zero M] : Type (max u_8 u_9)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Finite set](../sets/finite-set.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
+- [Set](../sets/set.md)
 
 ## Sources
 
-- [Mathlib documentation: `Finsupp`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Finsupp#doc)
+- [Mathlib documentation: `Finsupp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Finsupp/Defs.html#Finsupp)
+- [Source of `Finsupp` in Mathlib/Data/Finsupp/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Data/Finsupp/Defs.lean#L87)
 - [Mathlib overview: Data structures › Maps](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L589)

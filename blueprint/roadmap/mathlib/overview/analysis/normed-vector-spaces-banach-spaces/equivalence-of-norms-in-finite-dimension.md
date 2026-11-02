@@ -1,20 +1,36 @@
 ---
-declaration: definition
+declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: LinearEquiv.toContinuousLinearEquiv
+mathlib_file: Mathlib/Topology/Algebra/Module/FiniteDimension.lean
 ---
 
 # Equivalence of norms in finite dimension
 
-Mathlib states this as `LinearEquiv.toContinuousLinearEquiv`.
+The continuous linear equivalence induced by a linear equivalence on a finite-dimensional
+space.
+
+```lean
+LinearEquiv.toContinuousLinearEquiv.{u, v, w} {𝕜 : Type u} [hnorm : NontriviallyNormedField 𝕜]
+  {E : Type v} [AddCommGroup E] [_root_.Module 𝕜 E] [TopologicalSpace E] [IsTopologicalAddGroup E]
+  [ContinuousSMul 𝕜 E] {F : Type w} [AddCommGroup F] [_root_.Module 𝕜 F] [TopologicalSpace F]
+  [IsTopologicalAddGroup F] [ContinuousSMul 𝕜 F] [CompleteSpace 𝕜] [T2Space E] [T2Space F]
+  [FiniteDimensional 𝕜 E] (e : E ≃ₗ[𝕜] F) : E ≃L[𝕜] F
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Completeness](../../topology/uniform-notions/completeness.md)
+- [Finite-dimensionality](../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
+- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
+- [Metric space](../../topology/metric-spaces/metric-space.md)
+- [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Sources
 
-- [Mathlib documentation: `LinearEquiv.toContinuousLinearEquiv`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=LinearEquiv.toContinuousLinearEquiv#doc)
+- [Mathlib documentation: `LinearEquiv.toContinuousLinearEquiv`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/Module/FiniteDimension.html#LinearEquiv.toContinuousLinearEquiv)
+- [Source of `LinearEquiv.toContinuousLinearEquiv` in Mathlib/Topology/Algebra/Module/FiniteDimension.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Algebra/Module/FiniteDimension.lean#L369)
 - [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L281)
 - [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L426)

@@ -3,19 +3,45 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: Theorems100.quartic_eq_zero_iff
+mathlib_file: Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean
 ---
 
 # The Solution of the General Quartic Equation
 
-Mathlib states this as `Theorems100.quartic_eq_zero_iff`.
+**The Solution of Quartic**.
+The roots of a quartic polynomial when `q` is nonzero. See [Zwillinger](zwillinger2003).
+Here, `u` needs to satisfy the cubic resolvent. An explicit expression of `u` is possible using
+the cubic formula, but would be too long.
+
+```lean
+Theorems100.quartic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d e : K) {p q r s u v w : K}
+  [Invertible 2] (ha : a ≠ 0) (hp : p = (8 * a * c - 3 * b ^ 2) / (8 * a ^ 2))
+  (hq : q = (b ^ 3 - 4 * a * b * c + 8 * a ^ 2 * d) / (8 * a ^ 3)) (hq_nonzero : q ≠ 0)
+  (hr : r = (16 * a * b ^ 2 * c + 256 * a ^ 3 * e - 3 * b ^ 4 - 64 * a ^ 2 * b * d) / (256 * a ^ 4))
+  (hu : u ^ 3 - p * u ^ 2 - 4 * r * u + 4 * p * r - q ^ 2 = 0) (hs : s ^ 2 = u - p)
+  (hv : v ^ 2 = 4 * s ^ 2 - 8 * (u - q / s)) (hw : w ^ 2 = 4 * s ^ 2 - 8 * (u + q / s)) (x : K) :
+  a * x ^ 4 + b * x ^ 3 + c * x ^ 2 + d * x + e = 0 ↔
+    x = (-2 * s - v) / 4 - b / (4 * a) ∨
+      x = (-2 * s + v) / 4 - b / (4 * a) ∨
+        x = (2 * s - w) / 4 - b / (4 * a) ∨ x = (2 * s + w) / 4 - b / (4 * a)
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Field](../../overview/general-algebra/field-theory/field.md)
+- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
+
+## Proof depends on
+
+- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Group morphism](../../overview/general-algebra/group-theory/part-01/group-morphism.md)
+- [Local ring](../../overview/general-algebra/rings/local-ring.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
 
 ## Sources
 
-- [Mathlib documentation: `Theorems100.quartic_eq_zero_iff`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=Theorems100.quartic_eq_zero_iff#doc)
+- [Mathlib documentation: `Theorems100.quartic_eq_zero_iff`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.html#Theorems100.quartic_eq_zero_iff)
+- [Source of `Theorems100.quartic_eq_zero_iff` in Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean#L194)
 - [Freek Wiedijk's 100 theorems, no. 46](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L243)
 - [1000+ theorems list: Q476776](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L489)
 - [1000+ theorems project: Q476776](https://1000-plus.github.io/?length=-1#Q476776)

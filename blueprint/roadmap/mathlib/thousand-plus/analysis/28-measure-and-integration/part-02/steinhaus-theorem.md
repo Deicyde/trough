@@ -3,19 +3,54 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos
+mathlib_file: Mathlib/MeasureTheory/Measure/Haar/Basic.lean
 ---
 
 # Steinhaus theorem
 
-Mathlib states this as `MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos`.
+**Steinhaus Theorem**.
+
+In any locally compact group `G` with an inner regular Haar measure `μ`,
+for any measurable set `E` of positive measure, the set `E / E` is a neighbourhood of `1`.
+
+```lean
+MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos.{u_1} {G : Type u_1} [Group G]
+  [TopologicalSpace G] [IsTopologicalGroup G] [MeasurableSpace G] [BorelSpace G]
+  (μ : MeasureTheory.Measure G) [μ.IsHaarMeasure] [LocallyCompactSpace G] [μ.InnerRegular]
+  (E : Set G) (hE : MeasurableSet E) (hEpos : 0 < μ E) : E / E ∈ nhds 1
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Almost sure convergence](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
+- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Carathéodory's theorem (measure theory)](../part-01/caratheodorys-theorem-measure-theory.md)
+- [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Linear map](../../../../overview/linear-algebra/fundamentals/linear-map.md)
+- [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Positive measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
+- [Topological group](../../../../overview/topology/topological-algebra/topological-group.md)
+
+## Proof depends on
+
+- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
+- [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
+- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
+- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 
-- [Mathlib documentation: `MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos#doc)
+- [Mathlib documentation: `MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/Haar/Basic.html#MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos)
+- [Source of `MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos` in Mathlib/MeasureTheory/Measure/Haar/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Measure/Haar/Basic.lean#L629)
 - [1000+ theorems list: Q3527166](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2515)
 - [1000+ theorems project: Q3527166](https://1000-plus.github.io/?length=-1#Q3527166)
 - [Wikipedia: Steinhaus theorem](https://en.wikipedia.org/wiki/Steinhaus_theorem)

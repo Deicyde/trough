@@ -3,19 +3,46 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: MeasureTheory.tendsto_integral_of_dominated_convergence
+mathlib_file: Mathlib/MeasureTheory/Integral/DominatedConvergence.lean
 ---
 
 # Dominated convergence theorem
 
-Mathlib states this as `MeasureTheory.tendsto_integral_of_dominated_convergence`.
+**Lebesgue dominated convergence theorem** provides sufficient conditions under which almost
+everywhere convergence of a sequence of functions implies the convergence of their integrals.
+We could weaken the condition `bound_integrable` to require `HasFiniteIntegral bound μ` instead
+(i.e. not requiring that `bound` is measurable), but in all applications proving integrability
+is easier.
+
+```lean
+MeasureTheory.tendsto_integral_of_dominated_convergence.{u_1, u_3} {α : Type u_1} {G : Type u_3}
+  [NormedAddCommGroup G] [NormedSpace ℝ G] {m : MeasurableSpace α} {μ : MeasureTheory.Measure α}
+  {F : ℕ → α → G} {f : α → G} (bound : α → ℝ)
+  (F_measurable : ∀ (n : ℕ), MeasureTheory.AEStronglyMeasurable (F n) μ)
+  (bound_integrable : MeasureTheory.Integrable bound μ)
+  (h_bound : ∀ (n : ℕ), ∀ᵐ (a : α) ∂μ, ‖F n a‖ ≤ bound a)
+  (h_lim : ∀ᵐ (a : α) ∂μ, Filter.Tendsto (fun n => F n a) Filter.atTop (nhds (f a))) :
+  Filter.Tendsto (fun n => ∫ (a : α), F n a ∂μ) Filter.atTop (nhds (∫ (a : α), f a ∂μ))
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Bochner integral](bochner-integral.md)
+
+## Proof depends on
+
+- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
+- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
+- [Characteristic p](../../../general-algebra/field-theory/characteristic-p.md)
+- [Closed map](../../../topology/general-topology/part-01/closed-map.md)
+- [Fatou's lemma](fatous-lemma.md)
+- [Monotone convergence theorem](monotone-convergence-theorem.md)
+- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources
 
-- [Mathlib documentation: `MeasureTheory.tendsto_integral_of_dominated_convergence`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=MeasureTheory.tendsto_integral_of_dominated_convergence#doc)
+- [Mathlib documentation: `MeasureTheory.tendsto_integral_of_dominated_convergence`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/DominatedConvergence.html#MeasureTheory.tendsto_integral_of_dominated_convergence)
+- [Source of `MeasureTheory.tendsto_integral_of_dominated_convergence` in Mathlib/MeasureTheory/Integral/DominatedConvergence.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/DominatedConvergence.lean#L53)
 - [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L354)
 - [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L517)
 - [1000+ theorems list: Q1067156](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1299)

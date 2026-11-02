@@ -3,19 +3,68 @@ declaration: theorem
 origin: cited
 mathlib: true
 mathlib_declaration: MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const
+mathlib_file: Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean
 ---
 
 # Slutsky's theorem
 
-Mathlib states this as `MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const`.
+**Slutsky's theorem** for a continuous function: if `X n` converges in distribution to `Z`,
+`Y n` converges in probability to a constant `c`, and `g` is a continuous function, then
+`g (X n, Y n)` converges in distribution to `g (Z, c)`.
+
+```lean
+MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const.{u_1, u_2, u_3,
+    u_4, u_6, u_7}
+  {ι : Type u_1} {E : Type u_2} {Ω' : Type u_3} {Ω'' : Type u_4} {m' : MeasurableSpace Ω'}
+  {μ' : MeasureTheory.Measure Ω'} [MeasureTheory.IsProbabilityMeasure μ']
+  {m'' : MeasurableSpace Ω''} {μ'' : MeasureTheory.Measure Ω''}
+  [MeasureTheory.IsProbabilityMeasure μ''] {mE : MeasurableSpace E} {Z : Ω' → E} {l : Filter ι}
+  [SeminormedAddCommGroup E] [SecondCountableTopology E] [BorelSpace E] {E' : Type u_6}
+  {F : Type u_7} {mE' : MeasurableSpace E'} [SeminormedAddCommGroup E'] [SecondCountableTopology E']
+  [BorelSpace E'] [TopologicalSpace F] [MeasurableSpace F] [BorelSpace F] {g : E × E' → F}
+  (hg : Continuous g) [l.IsCountablyGenerated] {X : ι → Ω'' → E} {Y : ι → Ω'' → E'} {c : E'}
+  (hXZ : MeasureTheory.TendstoInDistribution X l Z (fun x => μ'') μ')
+  (hY_tendsto : MeasureTheory.TendstoInMeasure μ'' Y l fun x => c)
+  (hY : ∀ (i : ι), AEMeasurable (Y i) μ'') :
+  MeasureTheory.TendstoInDistribution (fun n ω => g (X n ω, Y n ω)) l (fun ω => g (Z ω, c))
+    (fun x => μ'') μ'
+```
 
 ## Depends on
 
-Dependencies are computed by the Mathlib data workflow and are not in yet.
+- [Almost sure convergence](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
+- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Carathéodory's theorem (measure theory)](../../../analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Continuous linear map](../../../../overview/topology/topological-algebra/continuous-linear-map.md)
+- [Convergence in probability](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/convergence-in-probability.md)
+- [Integral of positive measurable functions](../../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
+- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
+- [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
+
+## Proof depends on
+
+- [Affine space](../../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Bounded convergence theorem](../../../analysis/28-measure-and-integration/part-01/bounded-convergence-theorem.md)
+- [Complementary subspaces](../../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
+- [Continuous mapping theorem](../part-01/continuous-mapping-theorem.md)
+- [Convergence in distribution](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/convergence-in-distribution.md)
+- [Giry monad](../../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
+- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
+- [Hilbert projection theorem](../../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
+- [Lebesgue measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
+- [Orthogonal projection](../../../../overview/analysis/hilbert-spaces/orthogonal-projection.md)
+- [Quotient space](../../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Self-adjoint operator](../../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
+- [Stieltjes measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/stieltjes-measure.md)
 
 ## Sources
 
-- [Mathlib documentation: `MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const#doc)
+- [Mathlib documentation: `MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/ConvergenceInDistribution.html#MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const)
+- [Source of `MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const` in Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean#L326)
 - [1000+ theorems list: Q643826](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L664)
 - [1000+ theorems project: Q643826](https://1000-plus.github.io/?length=-1#Q643826)
 - [Wikipedia: Slutsky's theorem](https://en.wikipedia.org/wiki/Slutsky's_theorem)
