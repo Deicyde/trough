@@ -21,6 +21,11 @@ IsCompact.exists_isMinOn.{u_2, u_3} {α : Type u_2} {β : Type u_3} [LinearOrder
 - [Compactness in terms of filters](../general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Limit of a map with respect to filters](../general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
 
+## Proof depends on
+
+- [List](../../data-structures/list-like-structures/list.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
+
 ## Sources
 
 - [Mathlib documentation: `IsCompact.exists_isMinOn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Order/Compact.html#IsCompact.exists_isMinOn)

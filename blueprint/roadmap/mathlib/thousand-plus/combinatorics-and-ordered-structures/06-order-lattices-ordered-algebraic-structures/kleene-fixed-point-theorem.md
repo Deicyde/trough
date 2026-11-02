@@ -18,7 +18,6 @@ fixedPoints.lfp_eq_sSup_iterate.{u} {α : Type u} [CompleteLattice α] (f : α �
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../overview/data-structures/sets/set.md)
 

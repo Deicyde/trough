@@ -27,6 +27,7 @@ Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes.{u_1} {R : Type u_1} [Co
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)

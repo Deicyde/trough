@@ -17,7 +17,6 @@ IsOrderedRing.{u_1} (R : Type u_1) [Semiring R] [PartialOrder R] : Prop
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Sources

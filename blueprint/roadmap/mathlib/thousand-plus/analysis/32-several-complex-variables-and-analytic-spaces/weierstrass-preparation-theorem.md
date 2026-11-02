@@ -32,6 +32,7 @@ PowerSeries.exists_isWeierstrassFactorization.{u_1} {A : Type u_1} [CommRing A] 
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)

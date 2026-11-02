@@ -28,6 +28,7 @@ isSolvable_gal_minpoly.{u_1, u_2} {F : Type u_1} {E : Type u_2} [Field F] [Field
 - [$K\[X\]$ is Euclidean](../polynomials-and-power-series/k-x-is-euclidean.md)
 - [Aleph numbers](../../logic-and-computation/set-theory/cardinals/aleph-numbers.md)
 - [Algebraic extension](algebraic-extension.md)
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Cayley-Hamilton theorem](../../linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
 - [Characteristic p](characteristic-p.md)
 - [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)

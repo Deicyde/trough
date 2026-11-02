@@ -19,7 +19,6 @@ QuadraticMap.polar.{u_4, u_5} {M : Type u_4} {N : Type u_5} [AddCommGroup M] [Ad
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources

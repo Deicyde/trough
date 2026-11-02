@@ -20,6 +20,7 @@ HomologicalComplex.homology.{v_1, u_1, u_2} {C : Type u_1} [CategoryTheory.Categ
 
 - [Isomorphism](../category-theory/isomorphism.md)
 - [Limits](../category-theory/limits.md)
+- [Natural number](../numbers/natural-number.md)
 - [Small category](../category-theory/small-category.md)
 
 ## Sources

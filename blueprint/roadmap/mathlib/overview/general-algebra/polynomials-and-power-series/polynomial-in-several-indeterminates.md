@@ -17,7 +17,6 @@ MvPolynomial.{u_1, u_2} (σ : Type u_1) (R : Type u_2) [CommSemiring R] : Type (
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finitely supported function](../../data-structures/maps/finitely-supported-function.md)
 
 ## Sources

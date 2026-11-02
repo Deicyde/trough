@@ -18,6 +18,7 @@ TensorProduct.{u_1, u_5, u_6} (R : Type u_1) [CommSemiring R] (M : Type u_5) (N 
 
 ## Depends on
 
+- [List](../../data-structures/list-like-structures/list.md)
 - [Module](module.md)
 
 ## Sources

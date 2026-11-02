@@ -19,10 +19,6 @@ Nat.gcd_eq_gcd_ab (x y : ℕ) : ↑(x.gcd y) = ↑x * x.gcdA y + ↑y * x.gcdB y
 
 - [Euclid's' algorithm](../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
 
-## Proof depends on
-
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-
 ## Sources
 
 - [Mathlib documentation: `Nat.gcd_eq_gcd_ab`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Int/GCD.html#Nat.gcd_eq_gcd_ab)

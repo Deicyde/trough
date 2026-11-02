@@ -17,9 +17,7 @@ fixedPoints.completeLattice.{u} {α : Type u} [CompleteLattice α] (f : α →o 
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Fixed points](../../../overview/dynamics/general-theory/fixed-points.md)
-- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

@@ -35,6 +35,7 @@ HasSum.{u_1, u_2} {α : Type u_1} {β : Type u_2} [AddCommMonoid α] [Topologica
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Limit of a map with respect to filters](../general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Topological space](../general-topology/part-01/topological-space.md)
 
 ## Sources

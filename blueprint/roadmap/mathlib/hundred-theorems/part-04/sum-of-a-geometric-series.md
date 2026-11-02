@@ -34,6 +34,7 @@ NNReal.hasSum_geometric {r : NNReal} (hr : r < 1) : HasSum (fun n => r ^ n) (1 -
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Ball](../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)

@@ -25,6 +25,7 @@ Multiset.prod_X_add_C_eq_sum_esymm.{u_1} {R : Type u_1} [CommSemiring R] (s : Mu
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Integer](../../../overview/general-algebra/numbers/integer.md)
 
 ## Sources

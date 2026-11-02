@@ -16,7 +16,6 @@ TuringDegree : Type
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 

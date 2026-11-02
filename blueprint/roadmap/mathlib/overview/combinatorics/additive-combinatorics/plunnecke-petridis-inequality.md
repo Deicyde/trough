@@ -18,7 +18,6 @@ Finset.pluennecke_petridis_inequality_add.{u_1} {G : Type u_1} [DecidableEq G] [
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 - [Set](../../data-structures/sets/set.md)

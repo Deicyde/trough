@@ -28,6 +28,7 @@ Field.exists_primitive_element.{u_1, u_2} (F : Type u_1) (E : Type u_2) [Field F
 
 - [$A\[X\]$ has gcd and lcm if $A$ does](../../../overview/general-algebra/polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
 - [$K\[X\]$ is Euclidean](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)

@@ -18,9 +18,7 @@ LatticeHom.birkhoffSet.{u_1} {α : Type u_1} [DistribLattice α] [Fintype α]
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources

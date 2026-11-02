@@ -16,8 +16,7 @@ Equiv.Perm.{u_1} (α : Sort u_1) : Sort (max 1 u_1)
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
-- [Natural number](../../numbers/natural-number.md)
+Its statement uses no other concept on these lists.
 
 ## Sources
 

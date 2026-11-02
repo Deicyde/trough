@@ -16,7 +16,7 @@ Nat.three_dvd_iff (n : ℕ) : 3 ∣ n ↔ 3 ∣ (Nat.digits 10 n).sum
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
+- [List](../../overview/data-structures/list-like-structures/list.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources

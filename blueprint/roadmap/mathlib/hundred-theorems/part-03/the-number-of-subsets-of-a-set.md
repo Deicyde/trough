@@ -16,12 +16,12 @@ Finset.card_powerset.{u_1} {α : Type u_1} (s : Finset α) : s.powerset.card = 2
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Integer](../../overview/general-algebra/numbers/integer.md)
 
 ## Sources

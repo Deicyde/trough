@@ -35,6 +35,7 @@ compl_beattySeq {r s : ℝ} (hrs : r.HolderConjugate s) :
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)

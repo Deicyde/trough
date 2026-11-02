@@ -22,7 +22,6 @@ MeasureTheory.IsStoppingTime.{u_1, u_3} {Ω : Type u_1} {ι : Type u_3} {m : Mea
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Events](../../../undergraduate/probability-theory/definitions-of-a-probability-space/events.md)
 
 ## Sources

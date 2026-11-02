@@ -24,7 +24,6 @@ Fintype.exists_ne_map_eq_of_card_lt.{u_1, u_2} {α : Type u_1} {β : Type u_2} [
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources

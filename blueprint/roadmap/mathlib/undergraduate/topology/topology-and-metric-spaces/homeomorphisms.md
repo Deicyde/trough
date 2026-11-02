@@ -17,9 +17,7 @@ Homeomorph.{u_4, u_5} (X : Type u_4) (Y : Type u_5) [TopologicalSpace X] [Topolo
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

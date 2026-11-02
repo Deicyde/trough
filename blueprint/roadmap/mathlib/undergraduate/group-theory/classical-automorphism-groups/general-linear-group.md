@@ -18,7 +18,6 @@ Matrix.GeneralLinearGroup.{u, v} (n : Type u) (R : Type v) [DecidableEq n] [Fint
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 - [Ring-valued matrix](../../../overview/linear-algebra/matrices/ring-valued-matrix.md)

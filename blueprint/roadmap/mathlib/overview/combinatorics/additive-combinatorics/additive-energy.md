@@ -19,7 +19,6 @@ Finset.addEnergy.{u_1} {α : Type u_1} [DecidableEq α] [Add α] (s t : Finset �
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 

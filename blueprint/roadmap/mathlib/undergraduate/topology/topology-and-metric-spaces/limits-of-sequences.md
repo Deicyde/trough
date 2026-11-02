@@ -24,6 +24,7 @@ Metric.tendsto_atTop.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpace α] [
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)

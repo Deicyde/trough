@@ -18,7 +18,7 @@ Nat.zeckendorfEquiv : ℕ ≃ { l // l.IsZeckendorfRep }
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
+- [List](../../../overview/data-structures/list-like-structures/list.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources

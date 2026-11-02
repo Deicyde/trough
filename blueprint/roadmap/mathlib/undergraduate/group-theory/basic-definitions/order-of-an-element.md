@@ -17,7 +17,6 @@ orderOf.{u_1} {G : Type u_1} [Monoid G] (x : G) : ℕ
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Periodic points](../../../overview/dynamics/general-theory/periodic-points.md)
 
 ## Sources

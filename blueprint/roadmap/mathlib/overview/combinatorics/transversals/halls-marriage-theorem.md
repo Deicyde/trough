@@ -45,6 +45,7 @@ SimpleGraph.exists_isPerfectMatching_of_forall_ncard_le.{u_1} {V : Type u_1} {G 
 ## Proof depends on
 
 - [Adjunction](../../general-algebra/category-theory/adjunction.md)
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../topology/general-topology/part-01/closure.md)

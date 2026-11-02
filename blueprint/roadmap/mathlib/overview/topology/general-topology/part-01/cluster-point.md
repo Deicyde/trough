@@ -19,9 +19,7 @@ ClusterPt.{u_1} {X : Type u_1} [TopologicalSpace X] (x : X) (F : Filter X) : Pro
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
 - [Filter](filter.md)
-- [Natural number](../../../general-algebra/numbers/natural-number.md)
 - [Topological space](topological-space.md)
 
 ## Sources

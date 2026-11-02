@@ -19,7 +19,6 @@ Order.iso_of_countable_dense.{u_1, u_2} (α : Type u_1) (β : Type u_2) [LinearO
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Proof depends on

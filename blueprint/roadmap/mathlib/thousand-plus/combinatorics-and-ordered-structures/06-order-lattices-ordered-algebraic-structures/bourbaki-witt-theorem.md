@@ -19,9 +19,7 @@ ChainCompletePartialOrder.nonempty_fixedPoints_of_inflationary.{u_1} {α : Type 
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Fixed points](../../../overview/dynamics/general-theory/fixed-points.md)
-- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

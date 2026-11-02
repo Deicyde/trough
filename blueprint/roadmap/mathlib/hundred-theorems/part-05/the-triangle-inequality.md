@@ -22,6 +22,7 @@ norm_add_le.{u_4} {E : Type u_4} [SeminormedAddGroup E] (a b : E) : ‖a + b‖ 
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)

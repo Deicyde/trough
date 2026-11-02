@@ -26,6 +26,7 @@ AddSubgroup.dense_or_isCyclic.{u_1} {G : Type u_1} [AddCommGroup G] [LinearOrder
 ## Proof depends on
 
 - [Filter](../../../overview/topology/general-topology/part-01/filter.md)
+- [List](../../../overview/data-structures/list-like-structures/list.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 

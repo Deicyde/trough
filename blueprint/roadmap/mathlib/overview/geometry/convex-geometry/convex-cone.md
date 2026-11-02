@@ -18,7 +18,6 @@ ConvexCone.{u_2, u_4} (R : Type u_2) (M : Type u_4) [Semiring R] [PartialOrder R
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 

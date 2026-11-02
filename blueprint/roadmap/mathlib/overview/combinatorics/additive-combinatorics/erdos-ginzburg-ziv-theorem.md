@@ -26,6 +26,7 @@ ZMod.erdos_ginzburg_ziv.{u_1} {ι : Type u_1} {n : ℕ} {s : Finset ι} (a : ι 
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Chevalley–Warning theorem](../../../thousand-plus/algebra/12-field-theory-and-polynomials/chevalley-warning-theorem.md)
 - [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)

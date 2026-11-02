@@ -17,7 +17,6 @@ Nat.Partition.card_odds_eq_card_distincts (n : ℕ) :
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../overview/data-structures/sets/set.md)

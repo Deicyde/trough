@@ -19,12 +19,12 @@ Hindman.FS_partition_regular.{u_1} {M : Type u_1} [AddSemigroup M] (a : Stream' 
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Set](../../data-structures/sets/set.md)
 - [Stream](../../data-structures/list-like-structures/stream.md)
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Closed map](../../topology/general-topology/part-01/closed-map.md)
 - [Closure](../../topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)

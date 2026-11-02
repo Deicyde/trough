@@ -19,12 +19,12 @@ CompositionSeries.jordan_holder.{u} {X : Type u} [Lattice X] [JordanHolderLattic
 
 ## Depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
+- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../../../overview/data-structures/sets/finite-set.md)
 - [Integer](../../../../overview/general-algebra/numbers/integer.md)
 - [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)

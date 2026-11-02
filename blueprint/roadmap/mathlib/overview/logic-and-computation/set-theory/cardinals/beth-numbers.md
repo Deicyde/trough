@@ -23,6 +23,7 @@ Cardinal.beth.{u} (o : Ordinal.{u}) : Cardinal.{u}
 ## Depends on
 
 - [Cardinal](cardinal.md)
+- [Natural number](../../../general-algebra/numbers/natural-number.md)
 - [Ordinal](../ordinals/ordinal.md)
 - [Set](../../../data-structures/sets/set.md)
 

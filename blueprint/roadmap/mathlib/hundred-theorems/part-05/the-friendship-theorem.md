@@ -23,6 +23,7 @@ Theorems100.friendship_theorem.{u} {V : Type u} [Fintype V] {G : SimpleGraph V}
 ## Depends on
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
+- [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../overview/data-structures/sets/set.md)
 - [Simple graph](../../overview/combinatorics/graph-theory/simple-graph.md)
 
@@ -30,6 +31,7 @@ Theorems100.friendship_theorem.{u} {V : Type u} [Fintype V] {G : SimpleGraph V}
 
 - [Adjacency matrix](../../overview/combinatorics/graph-theory/adjacency-matrix.md)
 - [Algebra of endomorphisms of a vector space](../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Bezout’s Theorem](../part-03/bezouts-theorem.md)
 - [Cantor’s Theorem](../part-04/cantors-theorem.md)
 - [Cardinal](../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)

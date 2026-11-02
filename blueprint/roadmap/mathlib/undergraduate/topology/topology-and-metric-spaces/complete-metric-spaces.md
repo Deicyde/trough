@@ -24,6 +24,7 @@ Metric.complete_of_cauchySeq_tendsto.{u} {α : Type u} [PseudoMetricSpace α] :
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)

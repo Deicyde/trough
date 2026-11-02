@@ -17,7 +17,6 @@ Nat.ModEq.pow_totient {x n : ℕ} (h : x.Coprime n) : x ^ n.totient ≡ 1 [MOD n
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Euler's totient function ($\varphi$)](../../overview/general-algebra/divisibility-in-integral-domains/eulers-totient-function-varphi.md)
 
 ## Proof depends on

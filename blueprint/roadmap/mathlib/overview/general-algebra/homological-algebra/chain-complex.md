@@ -20,6 +20,7 @@ ChainComplex.{v, u, u_2} (V : Type u) [CategoryTheory.Category.{v, u} V]
 ## Depends on
 
 - [Category](../category-theory/category.md)
+- [Natural number](../numbers/natural-number.md)
 
 ## Sources
 

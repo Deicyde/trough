@@ -19,7 +19,6 @@ Ordset.{u_2} (α : Type u_2) [Preorder α] : Type u_2
 
 ## Depends on
 
-- [Array](../list-like-structures/array.md)
 - [Size-balanced binary search tree](../trees/size-balanced-binary-search-tree.md)
 
 ## Sources

@@ -16,7 +16,6 @@ PowerSeries.{u_1} (R : Type u_1) : Type u_1
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finitely supported function](../../data-structures/maps/finitely-supported-function.md)
 
 ## Sources

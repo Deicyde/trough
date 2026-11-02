@@ -24,7 +24,6 @@ CharP.{u_2} (R : Type u_2) [AddMonoidWithOne R] (p : outParam ℕ) : Prop
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Sources

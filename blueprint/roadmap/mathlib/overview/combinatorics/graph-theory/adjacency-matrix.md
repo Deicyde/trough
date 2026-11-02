@@ -18,6 +18,7 @@ SimpleGraph.adjMatrix.{u_1, u_2} (α : Type u_1) {V : Type u_2} (G : SimpleGraph
 
 ## Depends on
 
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Ring-valued matrix](../../linear-algebra/matrices/ring-valued-matrix.md)
 - [Simple graph](simple-graph.md)
 

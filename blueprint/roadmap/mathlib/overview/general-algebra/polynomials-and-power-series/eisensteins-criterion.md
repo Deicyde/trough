@@ -33,6 +33,7 @@ Polynomial.irreducible_of_eisenstein_criterion.{u_1} {R : Type u_1} [CommRing R]
 ## Proof depends on
 
 - [$K\[X\]$ is Euclidean](k-x-is-euclidean.md)
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Field of fractions of an integral domain](../field-theory/field-of-fractions-of-an-integral-domain.md)
 - [Greatest common divisor](../divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Group](../group-theory/part-01/group.md)

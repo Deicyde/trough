@@ -32,6 +32,7 @@ Module.End.exists_isNilpotent_isSemisimple.{u_1, u_2} {K : Type u_1} {V : Type u
 - [$A\[X\]$ has gcd and lcm if $A$ does](../../../overview/general-algebra/polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
 - [$K\[X\]$ is Euclidean](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
 - [Algebraic elements](../../ring-theory/field-theory/part-01/algebraic-elements.md)
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Cayley-Hamilton theorem](../../../overview/linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)

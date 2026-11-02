@@ -16,7 +16,6 @@ GCDMonoid.lcm.{u_2} {α : Type u_2} {inst✝ : CommMonoidWithZero α} [self : GC
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Sources

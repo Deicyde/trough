@@ -16,7 +16,6 @@ Ring.{u} (R : Type u) : Type u
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Integer](../numbers/integer.md)
 
 ## Sources

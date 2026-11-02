@@ -21,11 +21,11 @@ PythagoreanTriple.classification {x y z : ℤ} :
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Integer](../../overview/general-algebra/numbers/integer.md)
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Congruence in $\Z$](../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)

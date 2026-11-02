@@ -38,6 +38,7 @@ sum_Ico_pow (n p : ℕ) :
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)

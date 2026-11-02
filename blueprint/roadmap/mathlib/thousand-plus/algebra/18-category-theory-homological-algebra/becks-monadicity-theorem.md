@@ -24,6 +24,7 @@ CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers.{v₁, u₁, u₂} {C : 
 - [Adjunction](../../../overview/general-algebra/category-theory/adjunction.md)
 - [Isomorphism](../../../overview/general-algebra/category-theory/isomorphism.md)
 - [Monad](../../../overview/general-algebra/category-theory/monad.md)
+- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 - [Small category](../../../overview/general-algebra/category-theory/small-category.md)
 
 ## Sources

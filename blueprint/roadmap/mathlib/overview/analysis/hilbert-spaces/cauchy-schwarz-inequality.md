@@ -31,6 +31,7 @@ norm_inner_le_norm.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RCLike 𝕜] [Se
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Ball](../../topology/metric-spaces/ball.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../topology/general-topology/part-01/closure.md)

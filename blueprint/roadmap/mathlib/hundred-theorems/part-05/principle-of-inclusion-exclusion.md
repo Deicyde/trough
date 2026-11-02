@@ -57,13 +57,13 @@ Finset.inclusion_exclusion_card_inf_compl.{u_1, u_2} {ι : Type u_1} {α : Type 
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Module](../../overview/linear-algebra/fundamentals/module.md)
 - [Ring morphism](../../overview/general-algebra/rings/ring-morphism.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)

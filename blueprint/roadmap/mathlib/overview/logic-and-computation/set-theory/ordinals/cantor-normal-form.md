@@ -21,6 +21,8 @@ Ordinal.CNF.{u_1} (b o : Ordinal.{u_1}) : List (Ordinal.{u_1} × Ordinal.{u_1})
 
 ## Depends on
 
+- [List](../../../data-structures/list-like-structures/list.md)
+- [Natural number](../../../general-algebra/numbers/natural-number.md)
 - [Ordinal](ordinal.md)
 - [Set](../../../data-structures/sets/set.md)
 

@@ -20,7 +20,6 @@ RingHom.{u_5, u_6} (α : Type u_5) (β : Type u_6) [NonAssocSemiring α] [NonAss
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Group morphism](../group-theory/part-01/group-morphism.md)
 
 ## Sources

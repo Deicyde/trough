@@ -31,7 +31,6 @@ Fintype.exists_lt_card_fiber_of_mul_lt_card.{u, v} {α : Type u} {β : Type v} [
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources

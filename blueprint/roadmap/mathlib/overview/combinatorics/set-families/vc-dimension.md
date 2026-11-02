@@ -16,7 +16,6 @@ Finset.vcDim.{u_1} {α : Type u_1} [DecidableEq α] (𝒜 : Finset (Finset α)) 
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)

@@ -27,6 +27,7 @@ riesz_extension.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.Module ℝ E] (s :
 
 ## Proof depends on
 
+- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)

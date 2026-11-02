@@ -17,7 +17,6 @@ Rat : Type
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Integer](integer.md)
 
 ## Sources

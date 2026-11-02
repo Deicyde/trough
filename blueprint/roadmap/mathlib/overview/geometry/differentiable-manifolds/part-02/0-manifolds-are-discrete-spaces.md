@@ -24,6 +24,8 @@ ChartedSpace.discreteTopology.{u, u_2} (H : Type u) (M : Type u_2) [TopologicalS
 
 - [Continuous function](../../../topology/general-topology/part-01/continuous-function.md)
 - [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
+- [List](../../../data-structures/list-like-structures/list.md)
+- [Natural number](../../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 

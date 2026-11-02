@@ -16,11 +16,11 @@ Nat.Partrec.Code.fixed_point₂ {f : Nat.Partrec.Code → ℕ →. ℕ} (hf : Pa
 
 ## Depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Proof depends on
 
+- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [In terms of general recursive functions](../../../../overview/logic-and-computation/computability/computable-function/in-terms-of-general-recursive-functions.md)
 - [Integer](../../../../overview/general-algebra/numbers/integer.md)

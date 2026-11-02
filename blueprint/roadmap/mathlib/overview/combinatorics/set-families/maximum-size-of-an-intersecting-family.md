@@ -18,7 +18,6 @@ Set.Intersecting.is_max_iff_card_eq.{u_1} {α : Type u_1} [BooleanAlgebra α] [N
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)

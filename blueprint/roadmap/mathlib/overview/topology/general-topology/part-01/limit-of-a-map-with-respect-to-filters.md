@@ -19,9 +19,7 @@ Filter.Tendsto.{u_1, u_2} {α : Type u_1} {β : Type u_2} (f : α → β) (l₁ 
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
 - [Filter](filter.md)
-- [Natural number](../../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 

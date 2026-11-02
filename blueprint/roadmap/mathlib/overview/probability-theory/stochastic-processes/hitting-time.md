@@ -21,8 +21,6 @@ MeasureTheory.hittingBtwn.{u_1, u_2, u_3} {Ω : Type u_1} {β : Type u_2} {ι : 
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 
 ## Sources

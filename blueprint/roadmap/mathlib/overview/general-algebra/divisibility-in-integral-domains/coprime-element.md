@@ -18,7 +18,6 @@ IsCoprime.{u} {R : Type u} [CommSemiring R] (x y : R) : Prop
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Sources

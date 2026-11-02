@@ -18,6 +18,7 @@ SequentialSpace.{u_1} (X : Type u_1) [TopologicalSpace X] : Prop
 ## Depends on
 
 - [Limit of a map with respect to filters](limit-of-a-map-with-respect-to-filters.md)
+- [Natural number](../../../general-algebra/numbers/natural-number.md)
 - [Topological space](topological-space.md)
 
 ## Sources

@@ -21,6 +21,7 @@ Nat.Prime.sq_add_sq {p : ℕ} [Fact (Nat.Prime p)] (hp : p % 4 ≠ 3) : ∃ a b,
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Bezout’s Theorem](../../../hundred-theorems/part-03/bezouts-theorem.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)

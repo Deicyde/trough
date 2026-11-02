@@ -19,7 +19,6 @@ MeasurableEmbedding.schroederBernstein.{u_1, u_2} {α : Type u_1} {β : Type u_2
 
 ## Depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 
 ## Sources

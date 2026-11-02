@@ -16,11 +16,11 @@ Nat.sum_four_squares (n : ℕ) : ∃ a b c d, a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 = n
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Bezout’s Theorem](../../../hundred-theorems/part-03/bezouts-theorem.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)

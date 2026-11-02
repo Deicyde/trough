@@ -32,7 +32,6 @@ FreeAlgebra.{u_1, u_2} (R : Type u_1) (X : Type u_2) [CommSemiring R] : Type (ma
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Sources

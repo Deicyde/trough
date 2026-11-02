@@ -25,11 +25,13 @@ ContinuousOn.image_Icc.{u_2, u_3} {α : Type u_2} {β : Type u_3} [Conditionally
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

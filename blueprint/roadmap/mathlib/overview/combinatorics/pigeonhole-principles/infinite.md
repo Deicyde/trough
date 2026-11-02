@@ -22,7 +22,6 @@ Finite.exists_infinite_fiber.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Infinit
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 

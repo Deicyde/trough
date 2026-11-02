@@ -17,7 +17,6 @@ Prime.{u_1} {M : Type u_1} [CommMonoidWithZero M] (p : M) : Prop
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources

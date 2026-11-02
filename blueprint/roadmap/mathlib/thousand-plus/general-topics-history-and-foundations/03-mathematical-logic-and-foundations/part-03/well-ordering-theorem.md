@@ -16,8 +16,7 @@ exists_wellFoundedLT.{u} (α : Type u) : ∃ x, WellFoundedLT α
 
 ## Depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
-- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
+Its statement uses no other concept on these lists.
 
 ## Proof depends on
 

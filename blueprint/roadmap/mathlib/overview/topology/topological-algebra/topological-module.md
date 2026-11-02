@@ -19,10 +19,8 @@ ContinuousSMul.{u_1, u_2} (M : Type u_1) (X : Type u_2) [SMul M X] [TopologicalS
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Continuous function](../general-topology/part-01/continuous-function.md)
 - [Induced topology](../general-topology/part-01/induced-topology.md)
-- [Natural number](../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 

@@ -35,6 +35,7 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 - [Abelian category](../../general-algebra/category-theory/abelian-category.md)
 - [Adjunction](../../general-algebra/category-theory/adjunction.md)
 - [Aleph numbers](../../logic-and-computation/set-theory/cardinals/aleph-numbers.md)
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Cayley-Hamilton theorem](../endomorphism-polynomials/cayley-hamilton-theorem.md)
 - [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Coprime element](../../general-algebra/divisibility-in-integral-domains/coprime-element.md)

@@ -17,7 +17,6 @@ MeasurableSpace.pi.{u_4, u_6} {δ : Type u_4} {X : δ → Type u_6}
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Events](../../probability-theory/definitions-of-a-probability-space/events.md)
 
 ## Sources

@@ -19,6 +19,7 @@ isCompact_iff_isSeqCompact.{u_1} {X : Type u_1} [TopologicalSpace X]
 ## Depends on
 
 - [Compactness in terms of filters](../general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Proof depends on

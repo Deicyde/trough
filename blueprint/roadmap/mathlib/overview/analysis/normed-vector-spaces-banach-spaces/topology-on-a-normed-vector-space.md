@@ -24,6 +24,7 @@ NormSMulClass.toIsBoundedSMul.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Semino
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)

@@ -20,11 +20,9 @@ IsDenseInducing.extend.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {γ : Typ
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
 - [Closure](closure.md)
 - [Filter](filter.md)
 - [Induced topology](induced-topology.md)
-- [Natural number](../../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 

@@ -30,6 +30,7 @@ Polynomial.abc.{u_1} {k : Type u_1} [Field k] [DecidableEq k] {a b c : Polynomia
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)

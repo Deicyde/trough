@@ -22,6 +22,7 @@ irrational_sqrt_two : Irrational √2
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Ball](../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../overview/topology/general-topology/part-01/closure.md)

@@ -17,7 +17,6 @@ Finset.ruzsa_triangle_inequality_sub_sub_sub.{u_1} {G : Type u_1} [DecidableEq G
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 

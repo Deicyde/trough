@@ -21,7 +21,6 @@ Language.self_eq_mul_add_iff.{u_1} {α : Type u_1} {l m n : Language α} (hm : [
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 
 ## Sources

@@ -30,7 +30,6 @@ In `pell.eq_pell`, `d` is defined to be `a*a - 1` for an arbitrary `a > 1`.
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Solutions to Pell's equation](../../overview/general-algebra/number-theory/solutions-to-pells-equation.md)
 

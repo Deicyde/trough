@@ -17,13 +17,13 @@ Nat.Partition.card_restricted_eq_card_countRestricted (n : ℕ) {m : ℕ} (hm : 
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)

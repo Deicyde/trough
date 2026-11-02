@@ -30,6 +30,7 @@ Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line.{u_1, u_2, u_3
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Barycenter](../../overview/geometry/affine-and-euclidean-geometry/barycenter.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)

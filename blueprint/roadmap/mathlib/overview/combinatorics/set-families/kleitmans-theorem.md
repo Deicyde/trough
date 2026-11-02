@@ -20,7 +20,6 @@ Finset.card_biUnion_le_of_intersecting.{u_1, u_2} {ι : Type u_1} {α : Type u_2
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)

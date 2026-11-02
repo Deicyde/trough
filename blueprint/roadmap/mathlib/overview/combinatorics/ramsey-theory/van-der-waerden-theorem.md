@@ -18,7 +18,6 @@ Combinatorics.exists_mono_homothetic_copy.{u_5, u_6} {M : Type u_5} {κ : Type u
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)

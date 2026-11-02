@@ -20,9 +20,12 @@ This is the prime ideal separation theorem for (bounded) distributive lattices, 
 
 ## Depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
-- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../../overview/data-structures/sets/set.md)
+
+## Proof depends on
+
+- [List](../../../../overview/data-structures/list-like-structures/list.md)
+- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

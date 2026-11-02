@@ -24,7 +24,6 @@ Group.{u_2} (G : Type u_2) : Type u_2
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
 - [Integer](../../numbers/integer.md)
 
 ## Sources

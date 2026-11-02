@@ -17,7 +17,6 @@ add_pow.{u_1} {R : Type u_1} [CommSemiring R] (x y : R) (n : ℕ) :
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 

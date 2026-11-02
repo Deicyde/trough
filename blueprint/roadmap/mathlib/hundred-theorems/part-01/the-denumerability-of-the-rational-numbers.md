@@ -16,6 +16,7 @@ Rat.instDenumerable : Denumerable ℚ
 
 ## Depends on
 
+- [List](../../overview/data-structures/list-like-structures/list.md)
 - [Rational number](../../overview/general-algebra/numbers/rational-number.md)
 - [Set](../../overview/data-structures/sets/set.md)
 

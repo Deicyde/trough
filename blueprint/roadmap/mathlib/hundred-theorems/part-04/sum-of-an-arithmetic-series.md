@@ -16,7 +16,6 @@ Finset.sum_range_id (n : ℕ) : ∑ i ∈ Finset.range n, i = n * (n - 1) / 2
 
 ## Depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 

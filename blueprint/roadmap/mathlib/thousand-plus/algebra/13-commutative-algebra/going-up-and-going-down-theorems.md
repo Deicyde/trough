@@ -62,6 +62,7 @@ Algebra.HasGoingDown.of_comap_localRingHom_surjective.{u_3, u_4} {R : Type u_3} 
 ## Proof depends on
 
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)

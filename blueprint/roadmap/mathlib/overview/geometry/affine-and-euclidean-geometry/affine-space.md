@@ -20,7 +20,6 @@ AddTorsor.{u_1, u_2} (G : outParam (Type u_1)) (P : Type u_2) [AddGroup G] : Typ
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources

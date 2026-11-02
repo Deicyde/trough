@@ -18,8 +18,7 @@ Cardinal.{u} : Type (u + 1)
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
-- [Natural number](../../../general-algebra/numbers/natural-number.md)
+Its statement uses no other concept on these lists.
 
 ## Sources
 

@@ -32,6 +32,7 @@ CategoryTheory.Abelian.freyd_mitchell.{v, u} (C : Type u) [CategoryTheory.Catego
 ## Proof depends on
 
 - [Adjunction](../../../overview/general-algebra/category-theory/adjunction.md)
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Comma category](../../../overview/general-algebra/category-theory/comma-category.md)
 - [Fundamental sequences](../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)

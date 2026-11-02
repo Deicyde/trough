@@ -18,7 +18,6 @@ Bornology.{u_4} (α : Type u_4) : Type u_4
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Filter](../../topology/general-topology/part-01/filter.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 

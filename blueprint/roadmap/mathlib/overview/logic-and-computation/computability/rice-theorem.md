@@ -17,7 +17,6 @@ ComputablePred.rice (C : Set (ℕ →. ℕ)) (h : ComputablePred fun c => c.eval
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [In terms of general recursive functions](computable-function/in-terms-of-general-recursive-functions.md)
 - [Set](../../data-structures/sets/set.md)
 

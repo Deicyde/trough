@@ -20,7 +20,6 @@ Finset.erdos_ko_rado {n : ℕ} {𝒜 : Finset (Finset (Fin n))} {r : ℕ} (h𝒜
 
 ## Depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Finite set](../../../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../../overview/data-structures/sets/set.md)

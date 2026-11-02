@@ -22,6 +22,7 @@ Nat.exists_infinite_primes (n : ℕ) : ∃ p, n ≤ p ∧ Nat.Prime p
 ## Proof depends on
 
 - [Integer](../../overview/general-algebra/numbers/integer.md)
+- [List](../../overview/data-structures/list-like-structures/list.md)
 
 ## Sources
 

@@ -25,6 +25,7 @@ Set.ruzsa_covering_add.{u_1} {G : Type u_1} [AddGroup G] {K : ℝ} {A B : Set G}
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Finite set](../../data-structures/sets/finite-set.md)

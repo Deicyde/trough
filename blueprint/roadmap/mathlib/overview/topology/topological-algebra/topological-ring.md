@@ -20,7 +20,6 @@ IsTopologicalRing.{u_1} (R : Type u_1) [TopologicalSpace R] [NonUnitalNonAssocRi
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Continuous function](../general-topology/part-01/continuous-function.md)
 - [Induced topology](../general-topology/part-01/induced-topology.md)
 - [Integer](../../general-algebra/numbers/integer.md)

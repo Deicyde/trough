@@ -28,6 +28,7 @@ Theorems100.«82».cannot_cube_a_cube {n : ℕ} :
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Group](../../overview/general-algebra/group-theory/part-01/group.md)

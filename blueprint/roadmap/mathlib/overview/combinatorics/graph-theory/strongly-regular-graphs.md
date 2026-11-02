@@ -22,6 +22,7 @@ SimpleGraph.IsSRGWith.{u} {V : Type u} [Fintype V] (G : SimpleGraph V) [Decidabl
 ## Depends on
 
 - [Finite set](../../data-structures/sets/finite-set.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 - [Simple graph](simple-graph.md)
 

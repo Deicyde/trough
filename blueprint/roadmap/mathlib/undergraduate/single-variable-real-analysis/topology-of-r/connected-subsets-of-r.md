@@ -30,10 +30,12 @@ setOfPred_isPreconnected_eq_of_ordered.{u} {α : Type u} [TopologicalSpace α]
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Limit of a map with respect to filters](../../../overview/topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
+- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

@@ -18,8 +18,6 @@ T2Space.{u} (X : Type u) [TopologicalSpace X] : Prop
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
-- [Natural number](../../../general-algebra/numbers/natural-number.md)
 - [Topological space](topological-space.md)
 
 ## Sources

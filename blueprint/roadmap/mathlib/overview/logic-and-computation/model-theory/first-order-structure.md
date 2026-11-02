@@ -20,7 +20,6 @@ FirstOrder.Language.Structure.{u, v, w} (L : FirstOrder.Language) (M : Type w) :
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 
 ## Sources

@@ -26,7 +26,6 @@ MulAction.{u_9, u_10} (α : Type u_9) (β : Type u_10) [Monoid α] : Type (max u
 
 ## Depends on
 
-- [Array](../../../data-structures/list-like-structures/array.md)
 - [Natural number](../../numbers/natural-number.md)
 
 ## Sources

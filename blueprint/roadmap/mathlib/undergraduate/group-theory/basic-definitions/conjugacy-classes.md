@@ -16,7 +16,6 @@ ConjClasses.{u_1} (α : Type u_1) [Monoid α] : Type u_1
 
 ## Depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources

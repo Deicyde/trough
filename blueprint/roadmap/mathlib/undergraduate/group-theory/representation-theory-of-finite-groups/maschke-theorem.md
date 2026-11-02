@@ -27,6 +27,7 @@ MonoidAlgebra.Submodule.exists_isCompl.{u_1, u_2, u_3} {k : Type u_1} [Field k] 
 
 ## Proof depends on
 
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)

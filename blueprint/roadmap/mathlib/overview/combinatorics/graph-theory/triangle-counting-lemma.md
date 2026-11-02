@@ -31,6 +31,7 @@ SimpleGraph.triangle_counting.{u_1} {α : Type u_1} (G : SimpleGraph α) [Decida
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Group](../../general-algebra/group-theory/part-01/group.md)
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)

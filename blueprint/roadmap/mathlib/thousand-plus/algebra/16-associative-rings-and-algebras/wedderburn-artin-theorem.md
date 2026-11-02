@@ -42,6 +42,7 @@ IsSemisimpleRing.exists_algEquiv_pi_matrix_divisionRing.{u, u_1} (R₀ : Type u_
 ## Proof depends on
 
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
+- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)

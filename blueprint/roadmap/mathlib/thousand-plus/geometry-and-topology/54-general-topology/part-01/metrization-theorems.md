@@ -21,6 +21,7 @@ Urysohn's metrization theorem (only).
 
 ## Depends on
 
+- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on

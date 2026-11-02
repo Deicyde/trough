@@ -24,6 +24,7 @@ Metric.uniformContinuous_iff.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpa
 
 ## Proof depends on
 
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Group](../../general-algebra/group-theory/part-01/group.md)

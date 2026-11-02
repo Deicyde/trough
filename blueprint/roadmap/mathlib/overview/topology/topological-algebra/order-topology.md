@@ -19,8 +19,6 @@ OrderTopology.{u_1} (α : Type u_1) [t : TopologicalSpace α] [Preorder α] : Pr
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Topological space](../general-topology/part-01/topological-space.md)
 
 ## Sources

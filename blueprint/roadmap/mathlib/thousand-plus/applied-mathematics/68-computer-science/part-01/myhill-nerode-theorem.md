@@ -17,7 +17,6 @@ Language.isRegular_iff_finite_range_leftQuotient.{u} {α : Type u} {L : Language
 
 ## Depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Regular language](../../../../overview/logic-and-computation/formal-languages/regular-language.md)
 

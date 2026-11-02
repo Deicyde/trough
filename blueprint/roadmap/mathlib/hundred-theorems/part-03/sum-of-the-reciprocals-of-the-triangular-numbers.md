@@ -22,10 +22,9 @@ Theorems100.inverse_triangle_sum (n : ℕ) :
 
 ## Proof depends on
 
+- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
-- [Group morphism](../../overview/general-algebra/group-theory/part-01/group-morphism.md)
-- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Set](../../overview/data-structures/sets/set.md)

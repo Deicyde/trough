@@ -27,6 +27,7 @@ SimpleGraph.tutte.{u_1} {V : Type u_1} {G : SimpleGraph V} [Finite V] :
 
 ## Proof depends on
 
+- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Degree-sum formula](../../../../overview/combinatorics/graph-theory/degree-sum-formula.md)
 - [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)

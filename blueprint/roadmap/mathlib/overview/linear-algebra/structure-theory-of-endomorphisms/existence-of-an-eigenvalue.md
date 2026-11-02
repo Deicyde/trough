@@ -26,6 +26,7 @@ Module.End.exists_eigenvalue.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K] 
 ## Proof depends on
 
 - [Aleph numbers](../../logic-and-computation/set-theory/cardinals/aleph-numbers.md)
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Cayley-Hamilton theorem](../endomorphism-polynomials/cayley-hamilton-theorem.md)
 - [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)

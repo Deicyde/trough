@@ -21,7 +21,6 @@ Irreducible.{u_1} {M : Type u_1} [Monoid M] (p : M) : Prop
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Sources

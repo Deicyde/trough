@@ -18,7 +18,6 @@ Finset.addDysonETransform.{u_1} {α : Type u_1} [DecidableEq α] [AddCommGroup �
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 

@@ -16,7 +16,6 @@ ComputablePred.halting_problem (n : ℕ) : ¬ComputablePred fun c => (c.eval n).
 
 ## Depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [In terms of general recursive functions](computable-function/in-terms-of-general-recursive-functions.md)
 
 ## Proof depends on
