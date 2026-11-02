@@ -1,4 +1,4 @@
-{"stats": {"walked": 30503, "theorems_with_proof": 450, "theorems": 450, "listed": 934},
+{"stats": {"walked": 30503, "theorems_with_proof": 450, "theorems": 450, "listed": 934, "cited": 0},
  "schema": "trough-concept-deps/v1",
  "modules":
  {"Mathlib.Order.LiminfLimsup":
@@ -23125,4 +23125,5 @@
    "line": 46,
    "kind": "structure",
    "doc":
-   "`AList β` is a key-value map stored as a `List` (i.e. a linked list).\nIt is a wrapper around certain `List` functions with the added constraint\nthat the list have unique keys."}}}
+   "`AList β` is a key-value map stored as a `List` (i.e. a linked list).\nIt is a wrapper around certain `List` functions with the added constraint\nthat the list have unique keys."}},
+ "cited": {}}
