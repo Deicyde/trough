@@ -1,0 +1,16 @@
+\begin{theorem}[existsDifferentiableOn-of-bddAbove]
+\label{existsDifferentiableOn_of_bddAbove}
+\lean{existsDifferentiableOn_of_bddAbove}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ResidueCalcOnRectangles.lean:137.0-159.23
+\leanok
+If $f$ is differentiable on a set $s$ except at $c\in s$,
+  and $f$ is bounded above on $s\setminus\{c\}$, then there
+  exists a differentiable function $g$ on $s$ such that $f$
+  and $g$ agree on $s\setminus\{c\}$.
+\end{theorem}
+\begin{proof}
+\leanok
+This is the Riemann Removable Singularity Theorem, slightly
+  rephrased from what's in Mathlib. (We don't care what the
+  function $g$ is, just that it's holomorphic.)
+\end{proof}

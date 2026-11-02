@@ -1,0 +1,17 @@
+\begin{theorem}[two-pow-omega-tsum-prime-pow]
+\uses{sumOnPrimePows}
+\label{two_pow_omega_tsum_prime_pow}
+\lean{ArithmeticFunction.two_pow_omega_tsum_prime_pow}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1022.0-1058.61
+\leanok
+For $1<\Re(s)$ and $p$ prime, we have that
+    $$\sum_{0\leq k}2^{\omega(p^k)}p^{-ks}=\frac{1+p^{-s}}{1-p^{-s}}.$$
+\end{theorem}
+\begin{proof}
+\uses{LSeriesSummable_two_pow_omega,sumOnPrimePows_apply}
+\leanok
+Note that $\omega(p^0)=0$ and $\omega(p^k)=1$ whenever $0<k$. Thus,
+    $$\sum_{0\leq k}2^{\omega(p^k)}p^{-ks}=1+2p^{-s}+2p^{-2s}+\ldots.$$
+    Now apply a geometric sum to the non-constant terms and simplify. We have the necessary
+    convergence as $1<\Re(s)$.
+\end{proof}

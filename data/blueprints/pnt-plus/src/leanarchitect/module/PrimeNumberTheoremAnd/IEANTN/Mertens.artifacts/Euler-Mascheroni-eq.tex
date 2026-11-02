@@ -1,0 +1,14 @@
+\begin{theorem}[Compatibility with Mathlib Euler-Mascheroni constant]
+\uses{Euler-Mascheroni-const-alt}
+\label{Euler-Mascheroni-eq}
+\lean{Mertens.deriv_gamma_add_γ_eq_zero}
+\discussion{1320}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1898.0-1925.39
+\leanok
+$\gamma$ is the Euler--Mascheroni constant.
+\end{theorem}
+\begin{proof}
+\uses{Mertens-second-error-mangoldt,log-zeta-limit,Mertens-first-error-mangoldt,Mertens-second-error-mangoldt-bound,log-zeta-eq}
+\leanok
+Take limits as $s \to 1$ in the previous asymptotic using known asymptotics for $\zeta(s)$, and using that $- \Gamma'(1)$ is the Euler--Mascheroni constant.
+\end{proof}

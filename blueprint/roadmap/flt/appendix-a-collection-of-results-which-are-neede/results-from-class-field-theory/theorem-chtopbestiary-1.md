@@ -4,7 +4,7 @@ origin: cited
 not_ready: true
 ---
 
-# Theorem: There is a “canonical” isomorphism $H^2(K,\mu_\infty)=\mathbb{Q}/\mathbb{Z}$…
+# Theorem: There is a “canonical” isomorphism $H^2(K,\mu_\infty)=\mathbb{Q}/\mathbb{Z}$.
 
 There is a “canonical” isomorphism $H^2(K,\mu_\infty)=\mathbb{Q}/\mathbb{Z}$.
 
@@ -14,7 +14,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-This is in Theorem II.5.2 in \[Serre 2002\].
+This is in Theorem II.5.2 in (Serre 2002).
 
 ## Sources
 

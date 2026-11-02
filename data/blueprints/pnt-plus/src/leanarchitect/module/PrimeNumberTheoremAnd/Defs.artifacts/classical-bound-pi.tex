@@ -1,0 +1,17 @@
+\begin{definition}[Definitions 1, 5, FKS2]
+\uses{Epi-def}
+\label{classical-bound-pi}
+\lean{Eπ.classicalBound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Defs.lean:159.0-174.45
+\leanok
+We say that $E_\pi$ satisfies a \emph{classical bound}
+  with parameters $A, B, C, R, x_0$ if for all
+  $x \geq x_0$ we have
+  \[ E_\pi(x) \leq A \left(\frac{\log x}{R}\right)^B
+     \exp\left(-C \left(\frac{\log x}{R}\right)^{1/2}
+     \right). \]
+  We say that it obeys a \emph{numerical bound} with
+  parameter $\varepsilon(x_0)$ if for all $x \geq x_0$
+  we have
+  \[ E_\pi(x) \leq \varepsilon(x_0). \]
+\end{definition}

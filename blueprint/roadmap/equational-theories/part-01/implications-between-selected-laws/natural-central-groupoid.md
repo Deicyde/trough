@@ -13,7 +13,7 @@ origin: cited
 
 ## Proof
 
-See \[Knuth 1970, Theorem 5\]. The proof is quite lengthy; a sketch is as follows. It is easy to see that natural central groupoids satisfy [E26302](https://teorth.github.io/equational_theories/implications/?26302). Conversely, if this law holds, then
+See (Knuth 1970, Theorem 5). The proof is quite lengthy; a sketch is as follows. It is easy to see that natural central groupoids satisfy [E26302](https://teorth.github.io/equational_theories/implications/?26302). Conversely, if this law holds, then
 
 $$
 \begin{aligned}

@@ -1,0 +1,17 @@
+\begin{corollary}[Integral form for second error (prime form)]
+\uses{Mertens-second-error-mangoldt,Mertens-first-error-prime}
+\label{Mertens-second-error-prime-eq}
+\lean{Mertens.E₂p.eq}
+\discussion{1325}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:2021.0-2062.84
+\leanok
+For any $x \geq 2$, one has
+$$ E_{2,p}(x) = \frac{E_{1,p}(x)}{\log x} - \int_x^\infty \frac{E_{1,p}(t)}{t \log^2 t}\ dt$$
+\end{corollary}
+\begin{proof}
+\uses{Mertens-first-theorem-prime-bounded,Mertens-integral-ident,Meissel-Mertens-constant}
+\leanok
+From Lemma \ref{Mertens-integral-ident} one has
+$$ \sum_{p \leq x} \frac{1}{p} = \frac{1}{\log x} \sum_{p \leq x} \frac{\log p}{p} + \int_2^x \frac{1}{t \log^2 t} \sum_{p \leq t} \frac{\log p}{p} \, dt.$$
+Now substitute the definitions of $E_{1,p}$, $E_{2,p}$, $M$ and simplify.
+\end{proof}

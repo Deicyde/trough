@@ -1,0 +1,17 @@
+\begin{theorem}[two-pow-omega-LSeries-eulerProduct-hasProd]
+\label{two_pow_omega_LSeries_eulerProduct_hasProd}
+\lean{ArithmeticFunction.two_pow_omega_LSeries_eulerProduct_hasProd}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1109.0-1130.60
+\leanok
+For $1<\Re(s)$ we have that
+    $$\sum_{1\leq n}2^{\omega(n)}n^{-s}=\prod_p\frac{1+p^{-s}}{1-p^{-s}}.$$
+    The naming convention here is designed to match
+    \begin{verbatim}
+      riemannZeta_eulerProduct_hasProd
+    \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{two_pow_omega_tsum_prime_pow,two_pow_omega_LSeries.term_isMultiplicative,LSeriesSummable_two_pow_omega}
+\leanok
+Immediately follows from Lemmas \ref{two-pow-omega-LSeries.term-IsMultiplicative} and \ref{two-pow-omega-tsum-prime-pow}.
+\end{proof}

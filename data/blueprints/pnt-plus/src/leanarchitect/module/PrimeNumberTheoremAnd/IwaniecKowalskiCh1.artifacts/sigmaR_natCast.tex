@@ -1,0 +1,17 @@
+\begin{theorem}[sigmaR-natCast]
+\uses{sigmaR}
+\label{sigmaR_natCast}
+\lean{ArithmeticFunction.sigmaR_natCast}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:363.0-379.29
+\leanok
+For natural exponents, $\sigma^R$ agrees with $\sigma$.
+\end{theorem}
+\begin{proof}
+\leanok
+The function $\sigma^R$ is defined as the sum of the $s$-th powers of the divisors of $n$. When
+  $s$ is a natural number $k$, this definition coincides with the classical divisor power sum
+  function $\sigma_k(n)$, which also sums the $k$-th powers of the divisors of $n$. Therefore, for
+  natural exponents, we have $\sigma^R_k(n) = \sigma_k(n)$ when we view $\sigma_k(n)$ as a complex
+  number. This can be shown by directly comparing the definitions and noting that both functions sum
+  over the same set of divisors with the same exponentiation.
+\end{proof}

@@ -1,0 +1,16 @@
+\begin{lemma}[Classic bound implies numerical bound]
+\uses{Epsi-def,classical-bound-psi,classical-bound-theta,Etheta-def,classical-bound-pi,Epi-def}
+\label{classical-to-numeric}
+\lean{Eψ.classicalBound.to_numericalBound,Eθ.classicalBound.to_numericalBound,Eπ.classicalBound.to_numericalBound}
+\discussion{901}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Defs.lean:258.0-278.76
+\leanok
+A classical bound for $x \geq x_0$ implies a numerical
+  bound for $x \geq \max(x_0,
+  \exp( R (2B/C)^2  ))$.
+\end{lemma}
+\begin{proof}
+\uses{admissible-bound-monotone,admissible-bound-monotone,admissible-bound-monotone}
+\leanok
+Immediate from previous lemma
+\end{proof}

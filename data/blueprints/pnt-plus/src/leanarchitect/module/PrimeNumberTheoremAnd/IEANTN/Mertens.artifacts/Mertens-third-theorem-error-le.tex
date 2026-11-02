@@ -1,0 +1,17 @@
+\begin{theorem}[Mertens' third theorem error bound]
+\uses{Mertens-third-error,Mertens-third-error,Mertens-third-error}
+\label{Mertens-third-theorem-error-le}
+\lean{Mertens.E₃.abs_le,Mertens.E₃.bound,Mertens.E₃.bound',Mertens.E₃.bound'',Mertens.E₃.bound'''}
+\discussion{1330}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:2368.0-2400.18
+\leanok
+For any $x \geq 2$, one has
+$$ E_3(x) = O\left(\frac{1}{\log x}\right) $$
+\end{theorem}
+\begin{proof}
+\uses{Mertens-second-error-mangoldt,Euler-Mascheroni-const-alt,Meissel-Mertens-eq,Mertens-second-error-prime-abs-le,Mertens-first-error-mangoldt,Meissel-Mertens-constant,Euler-Mascheroni-eq,Mertens-third-error,Mertens-third-theorem-error,Mertens-third-error,Mertens-third-theorem-error}
+\leanok
+Estimating the error in \ref{Meissel-Mertens-eq} using the first order Taylor expansion of log one gets
+$$\sum_{p \le x}(\log (1-1/p)+1/p) = (M - \gamma) + O(1/x).$$
+The result follows by combining with \ref{Mertens-second-error-prime-abs-le}.
+\end{proof}

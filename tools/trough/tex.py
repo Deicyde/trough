@@ -11,12 +11,13 @@ inside formulas.
 from __future__ import annotations
 
 import re
+import textwrap
 import unicodedata
 from collections import Counter
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
-from trough.vault import safe_math_markdown
+from trough.vault import MATH_SPAN, safe_math_markdown
 
 CONTROL = re.compile(r"\\(?:[A-Za-z@]+|.)", re.S)
 PARBREAK = re.compile(r"\n[ \t]*\n\s*")
@@ -278,7 +279,7 @@ STRONG = {"textbf"}
 CODE = {"texttt", "path", "lstinline"}
 TRANSPARENT = {"textrm", "textsf", "textup", "textnormal", "textmd", "textsc", "mbox", "hbox", "text", "underline",
                "uline", "textlf", "foreignlanguage", "selectlanguage", "texorpdfstring", "NoCaseChange"}
-DROPPED = {"label", "lean", "uses", "proves", "discussion", "alsoIn", "index", "hspace", "vspace", "hskip",
+DROPPED = {"label", "lean", "uses", "proves", "discussion", "alsoIn", "index", "hspace", "vspace", "hskip", "includegraphics",
            "vskip", "phantom", "hphantom", "vphantom", "color", "pagecolor", "setlength", "addtolength",
            "addcontentsline", "nocite", "bibliographystyle", "bibliography", "raisebox", "kern", "rule"}
 QUIET = {"leanok", "mathlibok", "notready", "noindent", "indent", "medskip", "bigskip", "smallskip", "newline",
@@ -298,11 +299,21 @@ DISPLAY_MATH = {"equation": None, "equation*": None, "displaymath": None, "math"
                 "multline*": "gathered", "alignat": "alignedat", "alignat*": "alignedat"}
 INNER_MATH = {"split", "aligned", "gathered", "cases", "array", "matrix", "pmatrix", "bmatrix", "Bmatrix", "vmatrix",
               "Vmatrix", "smallmatrix", "CD", "dcases", "alignedat"}
+# Math symbols that a blueprint sometimes writes outside a formula, where TeX would stop;
+# plasTeX prints them, and so does this, as a formula.
+MATH_ONLY = {"infty", "leq", "geq", "le", "ge", "neq", "ne", "times", "cdot", "cdots", "pm", "mp", "to", "mapsto",
+             "in", "notin", "subset", "subseteq", "cup", "cap", "setminus", "emptyset", "partial", "nabla", "ell",
+             "alpha", "beta", "gamma", "delta", "epsilon", "varepsilon", "zeta", "eta", "theta", "vartheta", "iota",
+             "kappa", "lambda", "mu", "nu", "xi", "pi", "rho", "sigma", "tau", "upsilon", "phi", "varphi", "chi",
+             "psi", "omega", "Gamma", "Delta", "Theta", "Lambda", "Xi", "Pi", "Sigma", "Phi", "Psi", "Omega"}
 LISTS = {"itemize": "ul", "enumerate": "ol", "description": "dl", "compactitem": "ul", "compactenum": "ol"}
 QUOTES = {"quote", "quotation", "displayquote"}
-OMITTED = {"tikzcd": "a commutative diagram", "tikzpicture": "a picture", "figure": "a figure", "table": "a table",
-           "tabular": "a table", "verbatim": "verbatim text", "lstlisting": "a listing", "algorithm": "an algorithm",
-           "minted": "a listing", "picture": "a picture", "xy": "a diagram", "wrapfigure": "a figure"}
+OMITTED = {"tikzcd": "a commutative diagram", "tikzpicture": "a picture", "algorithm": "an algorithm",
+           "picture": "a picture", "xy": "a diagram"}
+CODE_BLOCKS = {"verbatim", "verbatim*", "Verbatim", "lstlisting", "minted"}
+TABULARS = {"tabular", "tabular*", "tabularx", "array*"}
+FLOATS = {"figure": "Figure", "figure*": "Figure", "table": "Table", "table*": "Table", "wrapfigure": "Figure"}
+RULES = re.compile(r"\\(?:hline|toprule|midrule|bottomrule|cline\s*\{[^}]*\}|cmidrule\s*(?:\([^)]*\))?\s*\{[^}]*\})")
 
 
 @dataclass
@@ -329,6 +340,17 @@ class Quote:
 @dataclass
 class Omitted:
     what: str
+
+
+@dataclass
+class Code:
+    text: str
+    language: str = ""
+
+
+@dataclass
+class Table:
+    rows: list[list[str]]  # Markdown cells; the first row is the header
 
 
 def tagged(tex: str, tag: Callable[[str], str | None]) -> str:
@@ -414,14 +436,17 @@ class Writer:
         return render(self.blocks(expand(tex, self.macros)))
 
     def plain(self, tex: str) -> str:
-        """One line of text for a title: formatting dropped, formulas kept as TeX."""
-        writer = Writer(self.macros, lambda label, command: label, self.bib, markdown=False)
+        """One line of text for a title: formatting dropped, formulas kept as TeX, and a
+        reference as the words it links."""
+        writer = Writer(self.macros, lambda label, command: unlinked(self.ref(label, command)), self.bib,
+                        markdown=False)
         text = writer.inline(expand(tex, self.macros))
         self.unknown.update(writer.unknown)
         return close_quotes(re.sub(r"\s+", " ", text).strip())
 
     def citation(self, keys: list[str], note: str | None) -> str:
-        """[label, label, note], each label linked to its work when the bibliography gives a link."""
+        """(label, label, note), as author-year styles print it: each label linked to its work
+        when the bibliography gives a link, and the note, already written, as it is."""
         works = []
         for key in keys:
             label, url = self.bib.get(key, (key, None))
@@ -431,10 +456,7 @@ class Writer:
                 works.append(f"[{self.text(label)}]({link_url(url)})")
             else:
                 works.append(self.text(label))
-        if note:
-            works.append(self.text(note) if self.markdown else note)
-        inner = ", ".join(works)
-        return f"\\[{inner}\\]" if self.markdown else f"[{inner}]"
+        return "(" + ", ".join(works + ([note] if note else [])) + ")"
 
     # ---- block level
 
@@ -449,10 +471,15 @@ class Writer:
                 out.append(Para(text))
 
         def display(formula: str, end: int) -> int:
-            """Add a display; punctuation just after it moves inside, so it opens no paragraph."""
+            """Add a display; punctuation just after it moves inside, before any number the
+            display shows, so it opens no paragraph."""
             flush()
             stop = re.match(r"\s*([.,;:])(?=\s|$)", tex[end:])
-            out.append(Display(math_text(formula.rstrip() + (stop.group(1) if stop else ""), True)))
+            if stop:
+                number = re.search(r"\\qquad\\text\{[^{}]*\}\s*$", formula)
+                cut = number.start() if number else len(formula.rstrip())
+                formula = formula[:cut].rstrip() + stop.group(1) + formula[cut:]
+            out.append(Display(math_text(formula.rstrip(), True)))
             return end + stop.end() if stop else end
 
         i = 0
@@ -489,6 +516,15 @@ class Writer:
                 elif env in OMITTED:
                     flush()
                     out.append(Omitted(OMITTED[env]))
+                elif env in CODE_BLOCKS:
+                    flush()
+                    out.append(self.code(env, body))
+                elif env in TABULARS:
+                    flush()
+                    out.append(self.table(env, body))
+                elif env in FLOATS:
+                    flush()
+                    out.extend(self.float(env, body))
                 else:
                     flush()
                     out.extend(self.blocks(self.skip_env_args(env, body)))
@@ -514,6 +550,73 @@ class Writer:
             columns, body = (count[0], body[count[1]:]) if count else ("1", body)
             return f"\\begin{{alignedat}}{{{columns}}}{body}\\end{{alignedat}}"
         return f"\\begin{{{inner}}}{body}\\end{{{inner}}}"
+
+    @staticmethod
+    def code(env: str, body: str) -> Code:
+        """A verbatim block, as typed; a listing's language, when it names one."""
+        language = ""
+        if env == "lstlisting" or env == "Verbatim":
+            options = optional(body, 0) if body.lstrip(" \t").startswith("[") else None
+            if options:
+                body = body[options[1] :]
+                named = re.search(r"language\s*=\s*\{?([\w+#-]+)", options[0])
+                language = named.group(1) if named else ""
+        elif env == "minted":
+            name = argument(body, 0)
+            if name:
+                language, body = name[0].strip(), body[name[1] :]
+        lines = body.split("\n")
+        while lines and not lines[0].strip():
+            lines.pop(0)
+        while lines and not lines[-1].strip():
+            lines.pop()
+        return Code(textwrap.dedent("\n".join(lines)), language.lower())
+
+    def table(self, env: str, body: str) -> Table:
+        """A tabular as a Markdown table: its first row is the header."""
+        for _ in range(2 if env in ("tabular*", "tabularx") else 1):  # a width, then the column spec
+            arg = argument(body, 0)
+            body = body[arg[1] :] if arg else body
+        rows = []
+        for row in split_top(RULES.sub(" ", body), "\\\\"):
+            if not row.strip():
+                continue
+            cells = []
+            for cell in split_top(row, "&"):
+                span = re.match(r"\s*\\multicolumn\s*\{(\d+)\}\s*\{[^}]*\}\s*", cell)
+                if span:
+                    text = argument(cell, span.end())
+                    cell = text[0] if text else ""
+                cells.append(table_cell(self.inline(cell)))
+                cells += [""] * (int(span.group(1)) - 1 if span else 0)
+            rows.append(cells)
+        return Table(rows)
+
+    def float(self, env: str, body: str) -> list:
+        """A figure or table: what of it can be shown, and its caption, headed with its number."""
+        placement = optional(body, 0) if body.lstrip(" \t").startswith("[") else None
+        body = body[placement[1] :] if placement else body
+        if env == "wrapfigure":  # its place and width
+            for _ in range(2):
+                arg = argument(body, 0)
+                body = body[arg[1] :] if arg else body
+        caption = re.search(r"\\caption\s*(?:\[[^\]]*\])?\s*(?=\{)", body)
+        text = None
+        if caption:
+            end = group_end(body, caption.end())
+            text = body[caption.end() + 1 : end - 1]
+            body = body[: caption.start()] + "\x00" + body[end:]
+        numbers = [number for label in re.findall(r"\\label\s*\{([^{}]*)\}", body) if (number := self.tag(squeeze(label)))]
+        head = f"**{numbers[0] if numbers else FLOATS[env]}.**"
+        before, _, after = body.partition("\x00")
+        above = [block for block in self.blocks(before) if not isinstance(block, Omitted)]
+        below = [block for block in self.blocks(after) if not isinstance(block, Omitted)]
+        if FLOATS[env] == "Figure" and not above + below:
+            note = "*(The picture is not reproduced here.)*"
+            return [Para(f"{head} {self.inline(text).strip()} {note}" if text else f"{head} {note}")]
+        lead = [Para(f"{head} {self.inline(text).strip()}")] if text else []
+        # The caption stays where the source put it, above or below what it describes.
+        return above + lead + below
 
     @staticmethod
     def skip_env_args(env: str, body: str) -> str:
@@ -707,7 +810,7 @@ class Writer:
             arg = argument(tex, k)
             if not arg:
                 return j
-            note = self.plain_text(notes[-1]) if notes and notes[-1].strip() else None
+            note = re.sub(r"\s+", " ", self.inline(notes[-1])).strip() if notes and notes[-1].strip() else None
             para.append(self.citation(names(arg[0]), note))
             return arg[1]
         if name == "href":
@@ -750,6 +853,9 @@ class Writer:
         if name in ("begin", "end"):
             arg = argument(tex, j)
             return arg[1] if arg else j
+        if name in MATH_ONLY:
+            para.append(self.inline_math("\\" + name) if self.markdown else "\\" + name)
+            return j
         # Unknown: keep what a reader can use, the text of its last braced argument.
         self.unknown[name] = self.unknown[name] + 1
         k, last = j, None
@@ -799,6 +905,17 @@ class Writer:
         return re.sub(r"\s+", " ", writer.inline(tex)).strip()
 
 
+def cited(text: str) -> list[str]:
+    """The keys text cites, in order."""
+    pattern = r"\\(?:" + "|".join(sorted(CITES)) + r")\*?(?:\s*\[[^\]]*\])*\s*\{([^}]*)\}"
+    return [key for match in re.finditer(pattern, text) for key in names(match.group(1))]
+
+
+def unlinked(markdown: str) -> str:
+    """The words of the Markdown links in markdown, without their targets."""
+    return re.sub(r"\[((?:\\.|[^\]\\])*)\]\([^)\s]*\)", lambda link: re.sub(r"\\(.)", r"\1", link.group(1)), markdown)
+
+
 def is_web(url: str) -> bool:
     return url.startswith(("http://", "https://", "mailto:"))
 
@@ -837,7 +954,46 @@ def render(blocks: list, indent: int = 0) -> str:
             parts.append("\n".join("> " + line if line else ">" for line in inner.split("\n")))
         elif isinstance(block, Omitted):
             parts.append(f"*({block.what.capitalize()} in the source is not reproduced here.)*")
+        elif isinstance(block, Code):
+            fence = "~~~~" if "```" in block.text else "```"
+            parts.append(f"{fence}{block.language}\n{block.text}\n{fence}")
+        elif isinstance(block, Table) and block.rows:
+            width = max(len(row) for row in block.rows)
+            rows = [row + [""] * (width - len(row)) for row in block.rows]
+            lines = ["| " + " | ".join(rows[0]) + " |", "|" + " --- |" * width]
+            lines += ["| " + " | ".join(row) + " |" for row in rows[1:]]
+            parts.append("\n".join(lines))
     return "\n\n".join(part for part in parts if part.strip())
+
+
+def split_top(text: str, separator: str) -> list[str]:
+    """text split at *separator* outside braces and environments; an escaped character, such
+    as \\&, never separates."""
+    parts, depth, start = [], 0, 0
+    for match in re.finditer(r"\\(?:begin|end)\s*\{[^}]*\}|" + re.escape(separator) + r"|\\.|[{}]", text):
+        token = match.group()
+        if token == "{" or token.startswith("\\begin"):
+            depth += 1
+        elif token == "}" or token.startswith("\\end"):
+            depth -= 1
+        elif token == separator and depth == 0:
+            parts.append(text[start : match.start()])
+            start = match.end()
+    parts.append(text[start:])
+    return parts
+
+
+def table_cell(markdown: str) -> str:
+    """A cell's Markdown on one line, with no bar that would end the cell: in a formula a bar
+    becomes \\vert."""
+    markdown = re.sub(r"\s+", " ", markdown).strip()
+    out, last = [], 0
+    for match in MATH_SPAN.finditer(markdown):
+        out.append(markdown[last : match.start()].replace("|", "\\|"))
+        out.append(match.group().replace("\\|", "\\Vert ").replace("|", "\\vert "))
+        last = match.end()
+    out.append(markdown[last:].replace("|", "\\|"))
+    return "".join(out)
 
 
 def close_quotes(text: str) -> str:

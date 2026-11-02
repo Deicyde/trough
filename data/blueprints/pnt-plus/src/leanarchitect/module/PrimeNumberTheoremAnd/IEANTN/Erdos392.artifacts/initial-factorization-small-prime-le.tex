@@ -1,0 +1,15 @@
+\begin{sublemma}
+\uses{params-set,initial-factorization-def,balance-def}
+\label{initial-factorization-small-prime-le}
+\lean{Erdos392.Params.initial.balance_small_prime_le}
+\discussion{513}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:1355.0-1423.38
+\leanok
+A small prime $p \leq \sqrt{n}$ can be in surplus by at most $M\log n$.
+\end{sublemma}
+\begin{proof}
+\uses{factorization-def}
+\leanok
+Routine computation using Legendre's formula, noting that at most
+  $\log n / \log 2$ powers of $p$ divide any given number up to $n$.
+\end{proof}

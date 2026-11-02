@@ -1,0 +1,19 @@
+\begin{theorem}[ZetaBoxEval]
+\uses{Smooth1}
+\label{ZetaBoxEval}
+\lean{ZetaBoxEval}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:1577.0-1607.42
+\leanok
+For all $\epsilon > 0$ sufficiently close to $0$, the rectangle integral over $[1-\delta,2] \times_{ℂ} [-T,T]$ of the integrand in
+  $\psi_{\epsilon}$ is
+  $$
+  \frac{X^{1}}{1}\mathcal{M}(\widetilde{1_{\epsilon}})(1)
+  = X(1+O(\epsilon))
+  ,$$
+  where the implicit constant is independent of $X$.
+\end{theorem}
+\begin{proof}
+\uses{MellinOfSmooth1c}
+\leanok
+Unfold the definitions and apply Lemma \ref{MellinOfSmooth1c}.
+\end{proof}

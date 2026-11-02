@@ -1,0 +1,13 @@
+\begin{theorem}[LSeries sigma eq riemannZeta mul]
+\uses{sigmaR}
+\label{LSeries_sigma_eq_riemannZeta_mul}
+\lean{ArithmeticFunction.LSeries_sigma_eq_riemannZeta_mul}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:610.0-626.32
+\leanok
+$\zeta(s)\zeta(s - \nu) = \sum_{n=1}^{\infty} \sigma_\nu(n) n^{-s}$ for $\Re(s) > 1$ and $\Re(s - \nu) > 1$.
+\end{theorem}
+\begin{proof}
+\uses{LSeries_powR_eq,sigmaR_eq_zeta_mul_powR,powR,abscissa_powR_le}
+\leanok
+The divisor power sum function $\sigma_\nu$ is the Dirichlet convolution of the constant function $1$ (i.e., $\zeta$) and the power function $n \mapsto n^\nu$. The L-series of a Dirichlet convolution is the product of the L-series of the individual functions. Since $L(1, s) = \zeta(s)$ and $L(n \mapsto n^\nu, s) = \zeta(s - \nu)$, we have $L(\sigma_\nu, s) = \zeta(s) \cdot \zeta(s - \nu)$ for $\Re(s) > 1$ and $\Re(s - \nu) > 1$.
+\end{proof}

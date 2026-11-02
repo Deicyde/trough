@@ -4,8 +4,48 @@
 
 Scripts generated theorems to try simple combinations of equation rewrites to reach the desired goal for every unknown implication. The generated proof scripts were run with lean and the successful theorems were extracted. An example of the types of generated rewrites that were tested:
 
-*(Verbatim text in the source is not reproduced here.)*
+```
+repeat intro
+apply
+```
 
-*(Verbatim text in the source is not reproduced here.)*
+```
+repeat intro
+try { rw [<-h] }
+try { rw [<-h, <-h] }
+try { rw [<-h, <-h, <-h] }
+try { rw [<-h, <-h, <-h, <-h] }
+try { rw [<-h, <-h, <-h, <-h, <-h] }
+repeat rw [h]
+```
 
-*(Verbatim text in the source is not reproduced here.)*
+```
+repeat intro
+try {
+  nth_rewrite 1 [h]
+  try { rw [h] }
+  try { rw [<-h] }
+}
+try {
+  nth_rewrite 2 [h]
+  try { rw [h] }
+  try { rw [<-h] }
+}
+try {
+  nth_rewrite 3 [h]
+  try { rw [h] }
+  try { rw [<-h] }
+}
+try {
+  nth_rewrite 4 [h]
+  try { rw [h] }
+  try { rw [<-h] }
+}
+try {
+  nth_rewrite 1 [h]
+  nth_rewrite 1 [h]
+  try { rw [h] }
+  try { rw [<-h] }
+}
+...
+```

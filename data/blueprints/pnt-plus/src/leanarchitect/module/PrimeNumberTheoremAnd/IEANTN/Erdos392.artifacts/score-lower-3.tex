@@ -1,0 +1,18 @@
+\begin{sublemma}
+\uses{score-def,factorization-def,balance-def}
+\label{score-lower-3}
+\lean{Erdos392.Factorization.lower_score_3}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:834.0-864.51
+\leanok
+If there is a prime $p$ in deficit less than $L$, one can remove it without increasing the score.
+\end{sublemma}
+\begin{proof}
+\uses{waste-def,score-eq,score-lower-2,score-lower-1}
+\leanok
+Without loss of generality we may assume that one is not in the previous two
+  situations, i.e., wlog there are no surplus primes and all primes in deficit are at most $L$.
+  If all deficit primes multiply to $n$ or less, add that product to the factorization (this
+  increases the waste by at most $\log n$, but we save a $\log n$ from now being in balance).
+  Otherwise, greedily multiply all primes together while staying below $n$ until one cannot do so
+  any further; add this product to the factorization, increasing the waste by at most $\log L$.
+\end{proof}

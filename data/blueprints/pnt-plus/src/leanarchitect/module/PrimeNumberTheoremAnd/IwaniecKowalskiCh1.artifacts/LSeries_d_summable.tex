@@ -1,0 +1,13 @@
+\begin{theorem}[LSeries d summable]
+\uses{d}
+\label{LSeries_d_summable}
+\lean{ArithmeticFunction.LSeries_d_summable}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:231.0-248.66
+\leanok
+The L-series for $d_k$ is summable for $\Re(s) > 1$.
+\end{theorem}
+\begin{proof}
+\uses{d_succ,d_zero}
+\leanok
+Since $d_k$ is defined as the $k$-fold Dirichlet convolution of $\zeta$, and we know that the L-series of $\zeta$ converges for $\Re(s) > 1$, it follows that the L-series of $d_k$ also converges for $\Re(s) > 1$. This is because the convolution of functions with convergent L-series will also have a convergent L-series in the same region. Therefore, we can conclude that $L(d_k, s)$ is summable for $\Re(s) > 1$.
+\end{proof}

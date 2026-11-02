@@ -1,0 +1,14 @@
+\begin{theorem}[An identity for $\log \zeta(s)$]
+\uses{Mertens-second-error-mangoldt,Euler-Mascheroni-const-alt}
+\label{log-zeta-eq}
+\lean{_private.PrimeNumberTheoremAnd.IEANTN.Mertens.0.Mertens.log_zeta_eq}
+\discussion{1319}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1603.0-1630.80
+\leanok
+If $s > 1$ then $\log\zeta(s) = - \log (s-1) + \Gamma'(1) + \gamma + (s-1) \int_1^\infty E_{2,\Lambda}(x) x^{-s}\ ds$.
+\end{theorem}
+\begin{proof}
+\uses{log-zeta-eq-3,log-zeta-eq-2,log-zeta-eq-4,Mertens-first-error-mangoldt,Mertens-second-error-mangoldt-bound}
+\leanok
+Combine the previous four sublemmas.
+\end{proof}

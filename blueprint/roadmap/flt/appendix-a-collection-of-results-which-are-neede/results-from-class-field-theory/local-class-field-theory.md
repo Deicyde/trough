@@ -14,7 +14,7 @@ If $K$ is a finite extension of $\mathbb{Q}_p$ then there are two “canonical�
 
 ## Proof
 
-This is the main theorem of local class field theory; see for example the relevant articles in \[Cassels and Fröhlich 1967\] or many other places.
+This is the main theorem of local class field theory; see for example the relevant articles in (Cassels and Fröhlich 1967) or many other places.
 
 ## Sources
 

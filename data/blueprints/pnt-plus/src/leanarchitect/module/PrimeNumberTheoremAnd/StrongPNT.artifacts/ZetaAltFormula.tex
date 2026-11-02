@@ -1,0 +1,15 @@
+\begin{theorem}[ZetaAltFormula]
+\uses{riemannZeta1}
+\label{ZetaAltFormula}
+\lean{ZetaAltFormula}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:1359.0-1371.59
+\leanok
+We have that
+    $$\zeta(s)=\zeta_1(s)$$
+    for all $s\in S$ with $S=\{s\in\mathbb{C}:0<\mathfrak{R}s,\,s\neq 1\}$.
+\end{theorem}
+\begin{proof}
+\uses{riemannZeta0,Zeta1AltFormula,Zeta0EqZeta}
+\leanok
+This immediately follows from Lemmas \ref{Zeta1AltFormula} and \ref{Zeta0EqZeta}.
+\end{proof}

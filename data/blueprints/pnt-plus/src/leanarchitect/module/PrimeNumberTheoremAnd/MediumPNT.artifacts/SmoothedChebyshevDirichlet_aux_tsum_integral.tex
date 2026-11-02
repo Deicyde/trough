@@ -1,0 +1,19 @@
+\begin{lemma}[SmoothedChebyshevDirichlet-aux-tsum-integral]
+\uses{Smooth1}
+\label{SmoothedChebyshevDirichlet_aux_tsum_integral}
+\lean{SmoothedChebyshevDirichlet_aux_tsum_integral}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:178.0-259.65
+\leanok
+Fix a nonnegative, continuously differentiable function $F$ on $\mathbb{R}$ with support in
+  $[1/2,2]$, and total mass one, $\int_{(0,\infty)} F(x)/x dx = 1$. Then for any $\epsilon>0$ and
+  $\sigma\in(1,2]$, the function
+  $x \mapsto \sum_{n=1}^\infty \frac{\Lambda(n)}{n^{\sigma+it}}
+  \mathcal{M}(\widetilde{1_{\epsilon}})(\sigma+it) x^{\sigma+it}$ is equal to
+  $\sum_{n=1}^\infty \int_{(0,\infty)} \frac{\Lambda(n)}{n^{\sigma+it}}
+  \mathcal{M}(\widetilde{1_{\epsilon}})(\sigma+it) x^{\sigma+it}$.
+\end{lemma}
+\begin{proof}
+\uses{Smooth1Nonneg,Smooth1Properties_above,Smooth1ContinuousAt,SmoothedChebyshevDirichlet_aux_integrable,Smooth1LeOne}
+\leanok
+Interchange of summation and integration.
+\end{proof}

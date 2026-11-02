@@ -1,0 +1,14 @@
+\begin{theorem}[sum divisors mul of coprime]
+\label{sum_divisors_mul_of_coprime}
+\lean{ArithmeticFunction.sum_divisors_mul_of_coprime}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:78.0-95.7
+\leanok
+If $f$ is a multiplicative arithmetic function, then for coprime, nonzero $a$ and $b$, we have that
+  $\sum_{d | ab} f(d) = (\sum_{d | a} f(d)) \cdot (\sum_{d | b} f(d))$.
+  \begin{verbatim}
+  This has been upstreamed #36495.
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+Since $f$ is multiplicative, we can express the sum over divisors of $ab$ in terms of the sums over divisors of $a$ and $b$. The key idea is to use the fact that the divisors of $ab$ can be expressed as products of divisors of $a$ and divisors of $b$, due to the coprimality condition. Specifically, each divisor $d$ of $ab$ can be uniquely written as $d = d_a * d_b$, where $d_a$ divides $a$ and $d_b$ divides $b$. Therefore, we can rewrite the sum as a double sum over the divisors of $a$ and $b$, which factorizes into the product of the two separate sums.
+\end{proof}

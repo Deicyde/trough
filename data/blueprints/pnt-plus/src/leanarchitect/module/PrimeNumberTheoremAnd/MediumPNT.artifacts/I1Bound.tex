@@ -1,0 +1,59 @@
+\begin{lemma}[I1Bound]
+\uses{I1}
+\label{I1Bound}
+\lean{I1Bound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:1785.0-2145.10
+\leanok
+We have that
+  $$
+  \left|I_{1}(\nu, \epsilon, X, T)\
+  \right| \ll \frac{X\log X}{\epsilon T}
+  .
+  $$
+\end{lemma}
+\begin{proof}
+\uses{SmoothedChebyshevPull1_aux_integrable,riemannZetaLogDerivResidue,Smooth1,MellinOfSmooth1b}
+\leanok
+Unfold the definitions and apply the triangle inequality.
+  $$
+  \left|I_{1}(\nu, \epsilon, X, T)\right| =
+  \left|
+  \frac{1}{2\pi i} \int_{-\infty}^{-T}
+  \left(
+  \frac{-\zeta'}\zeta(\sigma_0 + t i)
+  \right)
+   \mathcal M(\widetilde 1_\epsilon)(\sigma_0 + t i)
+  X^{\sigma_0 + t i}
+  \ i \ dt
+  \right|
+  $$
+  By Theorem \ref{dlog_riemannZeta_bdd_on_vertical_lines},
+  $\zeta'/\zeta (\sigma_0 + t i)$ is bounded by $\zeta'/\zeta(\sigma_0)$, and
+  Theorem \ref{riemannZetaLogDerivResidue} gives $\ll 1/(\sigma_0-1)$ for the latter. This gives:
+  $$
+  \leq
+  \frac{1}{2\pi}
+  \left|
+   \int_{-\infty}^{-T}
+  C \log X\cdot
+   \frac{C'}{\epsilon|\sigma_0 + t i|^2}
+  X^{\sigma_0}
+  \ dt
+  \right|
+  ,
+  $$
+  where we used Theorem \ref{MellinOfSmooth1b}.
+  Continuing the calculation, we have
+  $$
+  \leq
+  \log X \cdot
+  C'' \frac{X^{\sigma_0}}{\epsilon}
+  \int_{-\infty}^{-T}
+  \frac{1}{t^2}
+  \ dt
+  \ \leq \
+  C''' \frac{X\log X}{\epsilon T}
+  ,
+  $$
+  where we used that $\sigma_0=1+1/\log X$, and $X^{\sigma_0} = X\cdot X^{1/\log X}=e \cdot X$.
+\end{proof}

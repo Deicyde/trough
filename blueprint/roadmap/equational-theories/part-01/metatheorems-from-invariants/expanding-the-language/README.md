@@ -12,13 +12,13 @@ $$
 
 Again, this clearly agrees with our previous definition. Although $\mathcal{Y}(\varphi) \cap \Pi$ might not be upwards closed in $\Pi'$, it is upwards closed in $\Pi$, which is enough to get the fundamental property of invariants *verbatim*. This leads to more metatheorems we didn't have access to before.
 
-### Example: associativity and idempotency
+## Example: associativity and idempotency
 
 Let $\varphi$ be the conjunction of the associative law and the idempotency law ($x \diamond x = x$). Again, we will rely on our intuition, which says that an invariant $I$ defined by taking $I(w)$ to be the set of all variables appearing in $w$, works. The corresponding metatheorem is the following
 
 **Metatheorem.** Let $w = w'$ be an equation such that the set of variables appearing in $w$ is equal to the set of variables appearing on $w'$. Then $w = w'$ cannot imply an equation that does not have the property from the last sentence.
 
-### Example: associativity and commutativity
+## Example: associativity and commutativity
 
 For a similar example, we can let $\varphi$ be the conjunction of the associative and the commutative laws. Here we can define $I(w)$ to be the [multiset](https://en.wikipedia.org/wiki/Multiset) of variables appearing in $w$. We obtain the following metatheorem.
 
@@ -26,7 +26,7 @@ For a similar example, we can let $\varphi$ be the conjunction of the associativ
 
 Trivia: this was the first example of a metatheorem obtained by use of an invariant.
 
-### Example: associativity and commutativity with a twist
+## Example: associativity and commutativity with a twist
 
 We can keep expanding our language if it helps us express more intricate invariants. For instance, we can add the symbol ‘1’ to our language. Let $\varphi$ be the conjunction of associativity, commutativity, the equations $1 \diamond x = x$, and
 

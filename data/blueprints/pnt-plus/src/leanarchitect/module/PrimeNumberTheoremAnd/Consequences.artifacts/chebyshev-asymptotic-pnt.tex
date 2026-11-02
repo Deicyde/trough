@@ -1,0 +1,13 @@
+\begin{theorem}[Prime number theorem in AP]
+\label{chebyshev-asymptotic-pnt}
+\lean{chebyshev_asymptotic_pnt}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Consequences.lean:2436.0-2512.99
+\leanok
+If $a\ (q)$ is a primitive residue class, then one has
+  $$ \sum_{p \leq x: p = a\ (q)} \log p = \frac{x}{\phi(q)} + o(x).$$
+\end{theorem}
+\begin{proof}
+\uses{WeakPNT-AP,chebyshev-asymptotic}
+\leanok
+This is a routine modification of the proof of Theorem \ref{chebyshev-asymptotic}.
+\end{proof}

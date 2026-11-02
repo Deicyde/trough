@@ -1,0 +1,15 @@
+\begin{proposition}
+\uses{score-def,factorization-def,balance-def}
+\label{card-bound}
+\lean{Erdos392.Factorization.card_bound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:898.0-910.81
+\leanok
+Starting from any factorization $f$, one can find a factorization $f'$ in balance whose
+  cardinality is at most $\log n!$ plus the score of $f$, divided by $\log n$.
+\end{proposition}
+\begin{proof}
+\uses{waste-eq,waste-def,score-eq,score-lowest}
+\leanok
+Combine Lemma \ref{score-lowest}, Lemma \ref{score-eq}, and
+  Lemma \ref{waste-eq}.
+\end{proof}

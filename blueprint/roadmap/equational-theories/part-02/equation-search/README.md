@@ -4,7 +4,23 @@
 
 An example proof illustrates the logic it uses:
 
-*(Verbatim text in the source is not reproduced here.)*
+```
+have eq3315 (x y : G) : x * y = x * (y * (x * x)) := by
+  apply Apply.Equation12_implies_Equation11 at h
+  apply RewriteHypothesis.Equation11_implies_Equation3323 at h
+  apply Apply.Equation3323_implies_Equation3315 at h
+  apply h
+have eq52 (x y : G) : x = x * (y * (x * x)) := by
+  apply Apply.Equation12_implies_Equation61 at h
+  apply Apply.Equation61_implies_Equation54 at h
+  apply Apply.Equation54_implies_Equation52 at h
+  apply h
+repeat intro
+nth_rewrite 1 [eq3315]
+nth_rewrite 1 [← eq52]
+apply h
+repeat assumption
+```
 
 Using the graph of implications and refutations, it identifies equivalence classes/strongly-connected components in the implication graph and possible goals by subtracting out the refutation graph. Iterating through all equivalence classes, it can perform a meet-in-the-middle graph search where it searches outwards from both hypotheses and goals by performing equation substitutions. Depending on the number of hypotheses versus goals, it dynamically adjusts the search depth on both sides based on a configured branching factor.
 

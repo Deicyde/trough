@@ -1,0 +1,14 @@
+\begin{theorem}[Formula for Meissel-Mertens constant]
+\uses{Euler-Mascheroni-const-alt,Meissel-Mertens-constant}
+\label{Meissel-Mertens-eq}
+\lean{Mertens.M.eq}
+\discussion{1328}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:2247.0-2256.6
+\leanok
+One has $M = \gamma + \sum_p \log(1-\frac{1}{p}) + \frac{1}{p}$.
+\end{theorem}
+\begin{proof}
+\uses{Mertens-second-error-mangoldt,Mertens-second-error-prime-abs-le,Mertens-first-error-mangoldt,Mertens-second-error-mangoldt-bound}
+\leanok
+The RHS can be Taylor expanded as $\sum_{j=2}^\infty \sum_p \frac{1}{jp^j}$.  Meanwhile, the difference between $\sum_{n \leq x} \frac{\Lambda(n)}{n \log n}$ and $\sum_{p \leq x} \frac{1}{p}$ is equal to $\sum_{j=2}^\infty \sum_{p: p^j \leq x} \frac{1}{j p^j}$.  Applying the monotone convergence theorem, Lemma \ref{Mertens-second-error-prime-abs-le}, and Lemma \ref{Mertens-second-error-mangoldt-bound} gives the claim.
+\end{proof}

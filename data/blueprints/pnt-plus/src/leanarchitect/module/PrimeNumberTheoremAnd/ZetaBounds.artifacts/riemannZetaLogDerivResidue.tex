@@ -1,0 +1,13 @@
+\begin{theorem}[riemannZetaLogDerivResidue]
+\label{riemannZetaLogDerivResidue}
+\lean{riemannZetaLogDerivResidue}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:578.0-623.15
+\leanok
+The log derivative of the Riemann zeta function $\zeta(s)$ has a simple pole at $s=1$ with
+  residue $-1$: $-\frac{\zeta'(s)}{\zeta(s)} - \frac{1}{s-1} = O(1)$.
+\end{theorem}
+\begin{proof}
+\uses{logDerivResidue,nonZeroOfBddAbove,riemannZetaResidue}
+\leanok
+This follows from Theorem \ref{logDerivResidue} and Theorem \ref{riemannZetaResidue}.
+\end{proof}

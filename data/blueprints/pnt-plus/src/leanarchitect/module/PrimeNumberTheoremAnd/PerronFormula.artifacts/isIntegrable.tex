@@ -1,0 +1,20 @@
+\begin{lemma}[isIntegrable]
+\label{isIntegrable}
+\lean{Perron.isIntegrable}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/PerronFormula.lean:634.0-662.12
+\leanok
+Let $x>0$ and $\sigma\in\R$. Then
+  $$\int_{\R}\frac{x^{\sigma+it}}{(\sigma+it)(1+\sigma + it)}dt$$
+  is integrable.
+\end{lemma}
+\begin{proof}
+\uses{isHolomorphicOn}
+\leanok
+By \ref{isHolomorphicOn}, $f$ is continuous, so it is integrable on any interval.
+
+Also, $|f(x)| = \Theta(x^{-2})$ as $x\to\infty$,
+
+and $|f(-x)| = \Theta(x^{-2})$ as $x\to\infty$.
+
+Since $g(x) = x^{-2}$ is integrable on $[a,\infty)$ for any $a>0$, we conclude.
+\end{proof}

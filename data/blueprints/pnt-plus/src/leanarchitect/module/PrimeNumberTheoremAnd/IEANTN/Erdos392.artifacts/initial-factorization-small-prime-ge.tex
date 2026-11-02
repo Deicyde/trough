@@ -1,0 +1,16 @@
+\begin{sublemma}
+\uses{params-set,initial-factorization-def,balance-def}
+\label{initial-factorization-small-prime-ge}
+\lean{Erdos392.Params.initial.balance_small_prime_ge}
+\discussion{514}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:1529.0-1559.76
+\leanok
+A small prime $L < p \leq \sqrt{n}$ can be in deficit by at most
+  $M\log n$.
+\end{sublemma}
+\begin{proof}
+\uses{factorization-def}
+\leanok
+Routine computation using Legendre's formula, noting that at most
+  $\log n / \log 2$ powers of $p$ divide any given number up to $n$.
+\end{proof}

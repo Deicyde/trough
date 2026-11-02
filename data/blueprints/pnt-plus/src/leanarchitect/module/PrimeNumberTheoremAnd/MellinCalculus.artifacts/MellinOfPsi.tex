@@ -1,0 +1,23 @@
+\begin{theorem}[MellinOfPsi]
+\label{MellinOfPsi}
+\lean{MellinOfPsi}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:495.0-568.79
+\leanok
+The Mellin transform of $\nu$ is
+  $$\mathcal{M}(\nu)(s) =  O\left(\frac{1}{|s|}\right),$$
+  as $|s|\to\infty$ with $\sigma_1 \le \Re(s) \le 2$.
+\end{theorem}
+\begin{proof}
+\uses{PartialIntegration}
+\leanok
+Integrate by parts:
+  $$
+  \left|\int_0^\infty \nu(x)x^s\frac{dx}{x}\right| =
+  \left|-\int_0^\infty \nu'(x)\frac{x^{s}}{s}dx\right|
+  $$
+  $$
+  \le \frac{1}{|s|} \int_{1/2}^2|\nu'(x)|x^{\Re(s)}dx.
+  $$
+  Since $\Re(s)$ is bounded, the right-hand side is bounded by a
+  constant times $1/|s|$.
+\end{proof}

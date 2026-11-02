@@ -21,6 +21,8 @@ From this, we can deduce the theorem we claimed earlier:
 
 Because this map factors through the isomorphism $B\otimes_A\mathbb{A}_K^\infty\to L\otimes_K\mathbb{A}_K^\infty$ we can finally deduce that the natural map $L\otimes_K\mathbb{A}_K^\infty\to\mathbb{A}_L^\infty$ is an algebraic isomorphism.
 
+*The proof of [Theorem IsDedekindDomain.FiniteAdeleRing.baseChangeAlgEquiv](../part-01/isdedekinddomain-finiteadelering-basechangealgeq.md) is shown with its statement.*
+
 We still need to talk about topologies though, so let's finish by doing this. Let's start with some trivialities, expressed as definitions rather than theorems because they're constructions.
 
 - [Definition: If $X_v$ and $Y_v$ are families of topological…](definition-adeleminiproject-1.md)

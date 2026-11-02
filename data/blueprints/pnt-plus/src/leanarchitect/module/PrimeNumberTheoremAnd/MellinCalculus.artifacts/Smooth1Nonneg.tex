@@ -1,0 +1,18 @@
+\begin{lemma}[Smooth1Nonneg]
+\uses{Smooth1}
+\label{Smooth1Nonneg}
+\lean{Smooth1Nonneg}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:1098.0-1117.68
+\leanok
+If $\nu$ is nonnegative, then $\widetilde{1_{\epsilon}}(x)$ is nonnegative.
+\end{lemma}
+\begin{proof}
+\uses{DeltaSpike,MellinConvolution}
+\leanok
+By Definitions \ref{Smooth1}, \ref{MellinConvolution} and \ref{DeltaSpike}
+  $$
+    \widetilde{1_\epsilon}(x)
+    =\int_0^\infty 1_{(0,1]}(y)\frac1\epsilon\nu((x/y)^{\frac1\epsilon}) \frac{dy}y
+  $$
+  and all the factors in the integrand are nonnegative.
+\end{proof}

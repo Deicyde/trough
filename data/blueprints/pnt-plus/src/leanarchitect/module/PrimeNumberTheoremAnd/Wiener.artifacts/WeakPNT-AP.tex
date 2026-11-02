@@ -1,0 +1,14 @@
+\begin{theorem}[WeakPNT-AP]
+\label{WeakPNT-AP}
+\lean{WeakPNT_AP}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:4016.0-4051.67
+\leanok
+If $q ≥ 1$ and $a$ is coprime to $q$, we have
+  $$ \sum_{n \leq x: n = a\ (q)} \Lambda(n) = \frac{x}{\varphi(q)} + o(x).$$
+\end{theorem}
+\begin{proof}
+\uses{WienerIkehara2,WeakPNT-AP-prelim,WienerIkehara}
+\leanok
+Apply Theorem \ref{WienerIkehara} (or Theorem \ref{WienerIkehara2} to avoid
+  checking the Chebyshev condition) using Proposition \ref{WeakPNT-AP-prelim}.
+\end{proof}

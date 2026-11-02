@@ -1,0 +1,19 @@
+\begin{lemma}[norm-fOfZero-le-norm-BlaschkeOfZero]
+\uses{BlaschkeB,SetOfZeros}
+\label{norm_fOfZero_le_norm_BlaschkeOfZero}
+\lean{norm_fOfZero_le_norm_BlaschkeOfZero}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:648.0-683.36
+\leanok
+Let $0 < r < R<1$, and $f:\mathbb{C}\to\mathbb{C}$ be analytic on $\overline{\mathbb{D}_1}$ with
+    $f(0)\neq 0$. Then
+    $$|f(0)|\leq|B_f(0)|.$$
+\end{lemma}
+\begin{proof}
+\uses{BlaschkeOfZero}
+\leanok
+Applying lemma \ref{BlaschkeOfZero} we know that
+    $$|B_f(0)|=|f(0)|\prod_{\rho\in\mathcal{K}_f(r)}
+      \left(\frac{R}{|\rho|}\right)^{m_f(\rho)}.$$
+    Note that for all $\rho\in\mathcal{K}_f(r)$ that $1<R/|\rho|$ since $r<R$.
+    Thus, the result follows.
+\end{proof}

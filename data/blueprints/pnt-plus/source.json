@@ -1,0 +1,10 @@
+{
+ "repo": "AlexKontorovich/PrimeNumberTheoremAnd",
+ "rev": "127b50e33f6033e2147921167a117af96d9ba4ea",
+ "date": "2026-10-19T22:09:59-04:00",
+ "entry": "blueprint/src/web.tex",
+ "license": "Apache-2.0",
+ "text": true,
+ "nodes": 403,
+ "build": "lake build :blueprint"
+}

@@ -1,0 +1,14 @@
+\begin{theorem}[deriv-riemannZeta-conj]
+\label{deriv_riemannZeta_conj}
+\lean{deriv_riemannZeta_conj}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaConj.lean:30.0-42.27
+\leanok
+Conjugation symmetry of the derivative of the Riemann zeta function. Let $s \in \mathbb{C}$.
+    Then $$\zeta'(\overline{s}) = \overline{\zeta'(s)}.$$
+\end{theorem}
+\begin{proof}
+\uses{deriv_conj_conj'}
+\leanok
+We apply the derivative conjugation symmetry to the Riemann zeta function and use the
+    conjugation symmetry of the Riemann zeta function itself.
+\end{proof}

@@ -1,0 +1,14 @@
+\begin{corollary}[prime-between]
+\label{prime_between}
+\lean{prime_between}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Consequences.lean:1546.0-1573.7
+\leanok
+For every $\eps>0$, there is a prime between $x$ and $(1+\eps)x$ for
+  all sufficiently large $x$.
+\end{corollary}
+\begin{proof}
+\uses{pi_alt}
+\leanok
+Use Corollary \ref{pi_alt} to show that $\pi((1+\eps)x) - \pi(x)$ goes to infinity
+  as $x \to \infty$.
+\end{proof}

@@ -1,0 +1,25 @@
+\begin{lemma}[MellinConvolutionSymmetric]
+\uses{MellinConvolution}
+\label{MellinConvolutionSymmetric}
+\lean{MellinConvolutionSymmetric}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:293.0-324.57
+\leanok
+Let $f$ and $g$ be functions from $\mathbb{R}_{>0}$ to $\mathbb{R}$ or $\mathbb{C}$, for $x\neq0$,
+  $$
+    (f\ast g)(x)=(g\ast f)(x)
+    .
+  $$
+\end{lemma}
+\begin{proof}
+\leanok
+By Definition \ref{MellinConvolution},
+  $$
+    (f\ast g)(x) = \int_0^\infty f(y)g(x/y)\frac{dy}{y}
+  $$
+  in which we change variables to $z=x/y$:
+  $$
+    (f\ast g)(x) = \int_0^\infty f(x/z)g(z)\frac{dz}{z}
+    =(g\ast f)(x)
+    .
+  $$
+\end{proof}

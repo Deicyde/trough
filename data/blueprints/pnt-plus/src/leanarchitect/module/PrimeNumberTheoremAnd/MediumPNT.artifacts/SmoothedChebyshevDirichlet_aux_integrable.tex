@@ -1,0 +1,20 @@
+\begin{lemma}[SmoothedChebyshevDirichlet-aux-integrable]
+\uses{Smooth1}
+\label{SmoothedChebyshevDirichlet_aux_integrable}
+\lean{SmoothedChebyshevDirichlet_aux_integrable}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:127.0-172.25
+\leanok
+Fix a nonnegative, continuously differentiable function $F$ on $\mathbb{R}$ with support in
+  $[1/2,2]$, and total mass one, $\int_{(0,\infty)} F(x)/x dx = 1$. Then for any $\epsilon>0$,
+  and $\sigma\in (1, 2]$, the function
+  $$
+  x \mapsto\mathcal{M}(\widetilde{1_{\epsilon}})(\sigma + ix)
+  $$
+  is integrable on $\mathbb{R}$.
+\end{lemma}
+\begin{proof}
+\uses{Smooth1Nonneg,Smooth1Properties_above,Smooth1ContinuousAt,Smooth1LeOne,MellinOfSmooth1b}
+\leanok
+By Lemma \ref{MellinOfSmooth1b} the integrand is $O(1/t^2)$ as $t\rightarrow \infty$ and hence
+  the function is integrable.
+\end{proof}

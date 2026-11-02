@@ -1,0 +1,14 @@
+\begin{corollary}[Partial sum of $\frac{\log p}{p}$ upper bound]
+\uses{Mertens-first-error-prime}
+\label{Mertens-first-error-prime-le}
+\lean{Mertens.E₁p.le}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:600.0-611.38
+\leanok
+For any $x \geq 1$, one has
+$$ E_{1,p}(x) \leq \log 4 + 4.$$
+\end{corollary}
+\begin{proof}
+\uses{Mertens-first-error-prime-le-mangoldt,Mertens-first-error-mangoldt,Mertens-first-error-mangoldt-le}
+\leanok
+Drop all terms in Lemma \ref{Mertens-sum-mangoldt-div-le} arising from prime powers.
+\end{proof}

@@ -1,0 +1,14 @@
+\begin{sublemma}[Integral identity involving inverse log weight]
+\label{Mertens-integral-ident}
+\lean{_private.PrimeNumberTheoremAnd.IEANTN.Mertens.0.Mertens.sum_div_log_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:886.0-935.29
+\leanok
+For any $x \geq 2$ and any $f : {\mathbb N} \mapsto {\mathbb R}$, one has
+$$ \sum_{2 \leq n \leq x} \frac{f(n)}{\log n} = \frac{1}{\log x} \sum_{2 \leq n \leq x} f(n) + \int_2^x \frac{1}{t \log^2 t} \sum_{2 \leq n \leq t} f(n) \, dt$$
+\end{sublemma}
+\begin{proof}
+\leanok
+Establish the identity
+  $$ \frac{1}{\log n} = \frac{1}{\log x} + \int_2^x \frac{1}{t \log^2 t} 1_{t \geq n}\ dt$$
+  for $2 \leq n \leq x$,multiply by $f(n)$, then sum.
+\end{proof}

@@ -16,3 +16,5 @@ Now we upgrade this to elements of $L$ fixed by $D_Q$. The following lemma will 
 - [fixed\_of\_fixed2](fixed-of-fixed2.md)
 
 Combining this with [FixedPoints.toAlgAut\_surjective](fixedpoints-toalgaut-surjective.md) finishes the proof.
+
+*Proof of main theorem: shown with [Theorem IsFractionRing.stabilizerHom\_surjective](../statement-of-the-theorem/isfractionring-stabilizerhom-surjective.md).*

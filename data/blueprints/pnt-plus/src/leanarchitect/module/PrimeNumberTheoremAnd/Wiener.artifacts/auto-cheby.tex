@@ -1,0 +1,18 @@
+\begin{corollary}[auto-cheby]
+\label{auto-cheby}
+\lean{auto_cheby}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:3877.0-3897.62
+\leanok
+One has $$ \sum_{n \leq x} f(n) = O(x)$$ for all $x \geq 1$.
+\end{corollary}
+\begin{proof}
+\uses{second-fourier,first-fourier,crude-upper-bound,WienerIkehara}
+\leanok
+By applying Corollary \ref{crude-upper-bound} for a specific compactly supported function $\psi$,
+  one can obtain a bound of the form $\sum_{(1-\varepsilon)x < n \leq x} f(n) = O(x)$ for all $x$
+  and some absolute constant $\varepsilon$ (which can be made explicit).
+
+  If $C$ is a sufficiently large constant, the claim $|\sum_{n \leq x} f(n)| \leq Cx$ can now be
+  proven by strong induction on $x$, as the claim for $(1-\varepsilon)x$ implies the claim for $x$
+  by the triangle inequality (and the claim is trivial for $x < 1$).
+\end{proof}

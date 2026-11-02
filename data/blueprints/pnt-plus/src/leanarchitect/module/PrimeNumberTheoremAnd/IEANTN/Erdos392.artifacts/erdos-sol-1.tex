@@ -1,0 +1,16 @@
+\begin{theorem}
+\uses{factorization-def,balance-def}
+\label{erdos-sol-1}
+\lean{Erdos392.Solution_1}
+\discussion{648}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:3012.0-3087.80
+\leanok
+One can find a balanced factorization of $n!$ with cardinality at most
+  $n - n / \log n + o(n / \log n)$.-
+\end{theorem}
+\begin{proof}
+\uses{card-bound,params-set,score-def,initial-score,initial-factorization-def}
+\leanok
+Combine Proposition \ref{initial-score} with Proposition \ref{card-bound} and
+  the Stirling approximation.
+\end{proof}

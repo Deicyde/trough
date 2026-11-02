@@ -1,0 +1,37 @@
+\begin{lemma}[MellinOfDeltaSpikeAt1-asymp]
+\label{MellinOfDeltaSpikeAt1_asymp}
+\lean{MellinOfDeltaSpikeAt1_asymp}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:700.0-764.41
+\leanok
+As $\epsilon\to 0$, we have
+  $$\mathcal{M}(\nu_\epsilon)(1) = 1+O(\epsilon).$$
+\end{lemma}
+\begin{proof}
+\leanok
+By Lemma \ref{MellinOfDeltaSpikeAt1},
+  $$
+    \mathcal M(\nu_\epsilon)(1)=\mathcal M(\nu)(\epsilon)
+  $$
+  which by Definition \ref{MellinTransform} is
+  $$
+    \mathcal M(\nu)(\epsilon)=\int_0^\infty\nu(x)x^{\epsilon-1}dx
+    .
+  $$
+  Since $\nu(x) x^{\epsilon-1}$ is integrable (because $\nu$ is continuous and compactly
+  supported),
+  $$
+    \mathcal M(\nu)(\epsilon)-\int_0^\infty\nu(x)\frac{dx}x
+    =\int_0^\infty\nu(x)(x^{\epsilon-1}-x^{-1})dx
+    .
+  $$
+  By Taylor's theorem,
+  $$
+    x^{\epsilon-1}-x^{-1}=O(\epsilon)
+  $$
+  so, since $\nu$ is absolutely integrable,
+  $$
+    \mathcal M(\nu)(\epsilon)-\int_0^\infty\nu(x)\frac{dx}x=O(\epsilon)
+    .
+  $$
+  We conclude the proof using Theorem \ref{SmoothExistence}.
+\end{proof}

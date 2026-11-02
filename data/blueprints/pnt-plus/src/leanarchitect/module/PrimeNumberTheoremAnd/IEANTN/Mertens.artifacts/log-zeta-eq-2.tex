@@ -1,0 +1,14 @@
+\begin{sublemma}[Integration by parts identity for $\log \zeta(s)$]
+\uses{Mertens-second-error-mangoldt,Euler-Mascheroni-const-alt}
+\label{log-zeta-eq-2}
+\lean{_private.PrimeNumberTheoremAnd.IEANTN.Mertens.0.Mertens.log_zeta_eq_integ}
+\discussion{1583}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1452.0-1463.41
+\leanok
+If $s > 1$ then $\log\zeta(s) = (s-1) \int_1^\infty (\log \log x + \gamma + E_{2,\Lambda}(x)) x^{-s})\ dx$.
+\end{sublemma}
+\begin{proof}
+\uses{Mertens-first-error-mangoldt,log-zeta-eq-1}
+\leanok
+Apply the preceding identity then integrate by parts.
+\end{proof}

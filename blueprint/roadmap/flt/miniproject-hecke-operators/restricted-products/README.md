@@ -18,6 +18,8 @@ Here are some basic facts we need about restricted products.
 
 **Remark.** This may well not be true if $B_i$ and $D_i$ are not open, because filtered colimits and binary products do not appear in general to commute in the category of topological spaces. I don't know an explicit counterexample though.
 
+*The proof of [Lemma Homeomorph.restrictedProductProd](homeomorph-restrictedproductprod.md) is shown with its statement.*
+
 - [Homeomorph.restrictedProductPi](homeomorph-restrictedproductpi.md)
 
 Let $n$ be a natural and let $M_n(X)$ for a set $X$ denote “$n\times n$ matrices with coefficient in $X$”, i.e. $X^{n^2}$. If $X$ is a topological spaces then give $M_n(X)$ the product topology.
@@ -32,11 +34,15 @@ We now want to move from matrices to invertible matrices whilst keeping track of
 
 **Remark.** Note that $M^\times$ doesn't get the subspace topology from $M$, it is embedded into $M\times M$ via $g\mapsto (g,g^{-1})$ and gets the subspace topology from the product. This makes it into a topological group.
 
+*The proof of [Lemma Submonoid.units\_isOpen](submonoid-units-isopen.md) is shown with its statement.*
+
 Later on, compactness will be key for us, so we record the analogous result for compactness.
 
 - [Submonoid.units\_isCompact](submonoid-units-iscompact.md)
 
 **Remark.** Is Hausdorffness necessary?
+
+*The proof of [Lemma Submonoid.units\_isCompact](submonoid-units-iscompact.md) is shown with its statement.*
 
 - [ContinuousMulEquiv.piUnits](continuousmulequiv-piunits.md)
 - [ContinuousMulEquiv.restrictedProductUnits](continuousmulequiv-restrictedproductunits.md)

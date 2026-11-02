@@ -1,0 +1,12 @@
+\begin{theorem}[IsCompletelyMultiplicative.isMultiplicative]
+\uses{IsCompletelyMultiplicative}
+\label{IsCompletelyMultiplicative.isMultiplicative}
+\lean{ArithmeticFunction.IsCompletelyMultiplicative.isMultiplicative}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1762.0-1771.39
+\leanok
+A function that is completely multiplicative is also multiplicative.
+\end{theorem}
+\begin{proof}
+\leanok
+Let $f$ be a completely multiplicative function. To show that $f$ is multiplicative, we need to verify that $f(1) = 1$ and that $f(ab) = f(a)f(b)$ for all coprime natural numbers $a$ and $b$. Since $f$ is completely multiplicative, we have $f(1) = 1$ by definition. For coprime $a$ and $b$, we can write $ab$ as a product of prime factors, and since $f$ is completely multiplicative, it will factor as the product of the values of $f$ at those prime factors. This means that $f(ab) = f(a)f(b)$ for coprime $a$ and $b$, which shows that $f$ is multiplicative.
+\end{proof}

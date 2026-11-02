@@ -1,0 +1,16 @@
+\begin{lemma}[Real.log-le-const-mul-rpow]
+\label{Real.log_le_const_mul_rpow}
+\lean{Real.log_le_const_mul_rpow}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:2438.0-2456.45
+\leanok
+For all $0<c$ and $0<x$ we have that
+  $$\log x\leq cx^{1/c}.$$
+\end{lemma}
+\begin{proof}
+\leanok
+By \texttt{Real.log\_le\_sub\_one\_of\_pos} we know that $\log y\leq y-1$. If we set $y=x^{1/c}$ this becomes
+  $$\frac{\log x}{c}\leq x^{1/c}-1.$$
+  Multiplying through by $c$ we have
+  $$\log x\leq cx^{1/c}-c\leq cx^{1/c}$$
+  as desired.
+\end{proof}

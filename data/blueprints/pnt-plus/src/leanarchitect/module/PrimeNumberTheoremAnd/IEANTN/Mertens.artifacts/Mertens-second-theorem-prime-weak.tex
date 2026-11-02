@@ -1,0 +1,14 @@
+\begin{theorem}[Mertens' second theorem (weak prime form)]
+\label{Mertens-second-theorem-prime-weak}
+\lean{Mertens.sum_prime_div_eq_log_log,Mertens.sum_prime_div_eq_log_log',Mertens.sum_prime_div_eq_log_log''}
+\discussion{1327}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:2118.0-2138.28
+\leanok
+For any $x \geq 2$, one has
+$$ \sum_{p \leq x} \frac{1}{p} = \log \log x + O(1). $$
+\end{theorem}
+\begin{proof}
+\uses{Mertens-second-error-mangoldt,Mertens-second-error-prime-abs-le,Meissel-Mertens-constant}
+\leanok
+Immediate from previous two corollaries.
+\end{proof}

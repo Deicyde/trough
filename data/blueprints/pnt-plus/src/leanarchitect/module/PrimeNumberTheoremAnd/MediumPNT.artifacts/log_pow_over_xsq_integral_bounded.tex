@@ -1,0 +1,19 @@
+\begin{lemma}[log-pow-over-xsq-integral-bounded]
+\label{log_pow_over_xsq_integral_bounded}
+\lean{log_pow_over_xsq_integral_bounded}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:2458.0-2514.10
+\leanok
+For every $0<n$ there exists a constant $C>0$ (depending on $n$) such that
+  $$
+  \int_3^T\frac{(\log x)^n}{x^2}dx < C
+  $$
+\end{lemma}
+\begin{proof}
+\uses{Real.log_le_const_mul_rpow}
+\leanok
+Using the previous lemma, we know for all $0<c$ and $0<x$ that
+  $$(\log x)^n\leq (cx^{1/c})^n=c^nx^{n/c}.$$
+  Now if we choose $c=2n$ then
+  $$\frac{(\log x)^n}{x^2}\leq (2n)^nx^{-3/2}.$$
+  This function is dominates the integrand and is integrable in $x$ by the $p$-test.
+\end{proof}

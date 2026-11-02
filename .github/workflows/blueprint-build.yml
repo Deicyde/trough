@@ -1,13 +1,19 @@
-# Builds the blueprints that a Lean build writes. PrimeNumberTheoremAnd's
+# Refreshes the blueprints that a Lean build writes. PrimeNumberTheoremAnd's
 # blueprint is LeanArchitect output: `lake build :blueprint` turns each
 # declaration's @[blueprint] attribute into TeX under .lake/build/blueprint,
-# which the TeX in blueprint/src inputs. This job builds it at the library's
-# newest commit and keeps the TeX as an artifact.
+# which the TeX in blueprint/src inputs. This builds it at the library's newest
+# commit and refreshes data/blueprints/pnt-plus/ from the result, as the
+# Blueprint data workflow does for the blueprints written by hand.
+#
+# The commit job records the new sources in the newest main, regenerates the
+# pages there, and starts the Pages and Tests workflows.
 
 name: Blueprint build
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "41 4 * * 2"
   pull_request:
     paths:
       - ".github/workflows/blueprint-build.yml"
@@ -17,12 +23,18 @@ permissions:
 
 concurrency:
   group: blueprint-build-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  LIBRARY: pnt-plus
+  REPO: AlexKontorovich/PrimeNumberTheoremAnd
 
 jobs:
-  build:
+  refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 150
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
     steps:
       - name: Free disk space for Mathlib
         uses: jlumbroso/free-disk-space@36e9a5af4eddb91fc11aec4c6f6f79b3cc0cb523 # main, 2026-09-17
@@ -35,10 +47,15 @@ jobs:
           docker-images: false
           swap-storage: false
 
-      - name: Check out PrimeNumberTheoremAnd
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: trough
+          persist-credentials: false
+
+      - name: Check out the library
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          repository: AlexKontorovich/PrimeNumberTheoremAnd
+          repository: ${{ env.REPO }}
           path: library
           persist-credentials: false
 
@@ -58,11 +75,105 @@ jobs:
           build-args: ":blueprint"
           use-github-cache: false
 
-      - name: Keep the TeX
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Refresh the blueprint from the build
+        working-directory: trough
+        run: |
+          set -euo pipefail
+          first=()
+          if [ ! -f "data/blueprints/$LIBRARY/source.json" ]; then
+            first=(--repo "$REPO" --entry blueprint/src/web.tex --license Apache-2.0)
+          fi
+          uv run --no-dev python tools/refresh_blueprints.py "$LIBRARY" ../library "${first[@]}"
+
+      - name: Regenerate the pages
+        working-directory: trough
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Run the tests on the new sources
+        working-directory: trough
+        run: uv run pytest -q
+
+      - name: Compare with the committed sources
+        id: compare
+        working-directory: trough
+        run: |
+          git add -A "data/blueprints/$LIBRARY" blueprint hooks/lean-links.json
+          if git diff --cached --quiet; then
+            echo "The committed blueprint is the newest."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git diff --cached --stat -- "data/blueprints/$LIBRARY" | tail -n 5
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Keep the sources for the commit job
+        if: steps.compare.outputs.changed == 'true'
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: pnt-plus-blueprint
-          path: |
-            library/.lake/build/blueprint/
-            library/blueprint/src/
+          name: blueprint-build
+          path: trough/data/blueprints/${{ env.LIBRARY }}/
           retention-days: 14
+
+  # Records the sources in the newest main and regenerates the pages with
+  # main's generator. A push made with this token starts no workflow, so it
+  # starts Pages and Tests.
+  commit:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the sources
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: blueprint-build
+          path: ${{ runner.temp }}/library
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Commit the sources and pages
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            rm -rf "data/blueprints/$LIBRARY"
+            cp -R "$RUNNER_TEMP/library" "data/blueprints/$LIBRARY"
+            uv run --no-dev python tools/generate.py
+            git add -A "data/blueprints/$LIBRARY" blueprint hooks/lean-links.json
+            if git diff --cached --quiet; then
+              echo "main already has these sources."
+              exit 0
+            fi
+            git commit --quiet -m "Blueprint data: $LIBRARY"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
+
+      - name: Rebuild the site and run the tests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"

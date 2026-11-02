@@ -1,0 +1,25 @@
+\begin{lemma}[Limiting identity for Schwartz functions]
+\label{schwarz-id}
+\lean{limiting_cor_schwartz}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:1791.0-1819.37
+\leanok
+The previous corollary also holds for functions $\psi$ that are assumed to be in the Schwartz
+  class, as opposed to being $C^2$ and compactly supported.
+\end{lemma}
+\begin{proof}
+\uses{limiting-cor,smooth-ury}
+\leanok
+For any $R>1$, one can use a smooth cutoff function (provided by Lemma \ref{smooth-ury} to write
+  $\psi = \psi_{\leq R} + \psi_{>R}$, where $\psi_{\leq R}$ is $C^2$ (in fact smooth) and compactly
+  supported (on $[-R,R]$), and $\psi_{>R}$ obeys bounds of the form
+  $$ |\psi_{>R}(t)|, |\psi''_{>R}(t)| \ll R^{-1} / (1 + |t|^2) $$
+  where the implied constants depend on $\psi$.  By Lemma \ref{decay} we then have
+  $$ \hat \psi_{>R}(u) \ll R^{-1} / (1+|u|^2).$$
+  Using this and \eqref{cheby} one can show that
+  $$ \sum_{n=1}^\infty \frac{f(n)}{n} \hat \psi_{>R}( \frac{1}{2\pi} \log \frac{n}{x} ),
+    A \int_{-\infty}^\infty \hat \psi_{>R} (\frac{u}{2\pi})\ du \ll R^{-1} $$
+  (with implied constants also depending on $A$), while from Lemma \ref{limiting-cor} one has
+  $$ \sum_{n=1}^\infty \frac{f(n)}{n} \hat \psi_{\leq R}( \frac{1}{2\pi} \log \frac{n}{x} )
+    = A \int_{-\infty}^\infty \hat \psi_{\leq R} (\frac{u}{2\pi})\ du + o(1).$$
+  Combining the two estimates and letting $R$ be large, we obtain the claim.
+\end{proof}

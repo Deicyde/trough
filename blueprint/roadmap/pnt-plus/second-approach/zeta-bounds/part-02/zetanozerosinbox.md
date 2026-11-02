@@ -1,0 +1,33 @@
+---
+declaration: lemma
+origin: cited
+lean: ZetaNoZerosInBox
+statement: formalized
+proof: formalized
+---
+
+# ZetaNoZerosInBox
+
+For any $T>0$, there is a constant $\sigma<1$ so that
+
+$$
+\zeta(\sigma'+it) \ne 0
+$$
+
+for all $|t| \leq T$ and $\sigma' \ge \sigma$.
+
+## Depends on
+
+Its statement uses no other node of the blueprint.
+
+## Proof
+
+Assume not. Then there is a sequence $|t_n| \le T$ and $\sigma_n \to 1$ so that $\zeta(\sigma_n + it_n) = 0$. By compactness, there is a subsequence $t_{n_k} \to t_0$ along which $\zeta(\sigma_{n_k} + it_{n_k}) = 0$. If $t_0\ne0$, use the continuity of $\zeta$ to get that $\zeta(1 + it_0) = 0$; this is a contradiction. If $t_0=0$, $\zeta$ blows up near $1$, so can't be zero nearby.
+
+## Lean
+
+Formalized as [`ZetaNoZerosInBox`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ZetaNoZerosInBox).
+
+## Sources
+
+- [PNT+ blueprint: PrimeNumberTheoremAnd/ZetaBounds.lean](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/blob/127b50e33f6033e2147921167a117af96d9ba4ea/PrimeNumberTheoremAnd/ZetaBounds.lean)

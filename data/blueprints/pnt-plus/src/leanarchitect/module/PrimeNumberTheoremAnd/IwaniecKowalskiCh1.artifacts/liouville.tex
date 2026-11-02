@@ -1,0 +1,11 @@
+\begin{theorem}[liouville]
+\label{liouville}
+\lean{ArithmeticFunction.liouville}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1737.0-1748.48
+\leanok
+Liouville function: $\lambda(n) = (-1)^{\Omega(n)}$.
+\end{theorem}
+\begin{proof}
+\leanok
+The Liouville function $\lambda(n)$ is defined as $(-1)^{\Omega(n)}$, where $\Omega(n)$ is the total number of prime factors of $n$ counted with multiplicity. This means that for each prime factor of $n$, we contribute a factor of $-1$ to the product, and the overall sign of $\lambda(n)$ depends on whether the total number of prime factors is even or odd. Thus, we have $\lambda(n) = (-1)^{\Omega(n)}$ by definition.
+\end{proof}

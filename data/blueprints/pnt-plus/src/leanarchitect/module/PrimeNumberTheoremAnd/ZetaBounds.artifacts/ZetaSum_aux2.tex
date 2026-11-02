@@ -1,0 +1,17 @@
+\begin{lemma}[ZetaSum-aux2]
+\label{ZetaSum_aux2}
+\lean{ZetaSum_aux2}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:954.0-993.86
+\leanok
+Let $N$ be a natural number and $s\in \C$, $\Re(s)>1$.
+  Then
+  \[
+  \sum_{N < n} \frac{1}{n^s} =  \frac{- N^{1-s}}{1-s} + \frac{-N^{-s}}{2}
+    + s \int_N^\infty \frac{\lfloor x\rfloor + 1/2 - x}{x^{s+1}} \, dx.
+  \]
+\end{lemma}
+\begin{proof}
+\uses{ZetaSum_aux1}
+\leanok
+Apply Lemma \ref{ZetaSum_aux1} with $a=N$ and $b\to \infty$.
+\end{proof}

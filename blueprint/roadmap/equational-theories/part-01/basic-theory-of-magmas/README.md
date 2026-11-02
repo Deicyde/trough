@@ -31,7 +31,7 @@ For instance, if $X = \{0,1\}$, then $M_X$ would consist of the following words:
 - $0 \diamond (0 \diamond 0)$, $0 \diamond (0 \diamond 1)$, $0 \diamond (1 \diamond 0)$, $0 \diamond (1 \diamond 1)$, $1 \diamond (0 \diamond 0)$, $1 \diamond (0 \diamond 1)$, $1 \diamond (1 \diamond 0)$, $1 \diamond (1 \diamond 1)$, $(0 \diamond 0) \diamond 0$, $(0 \diamond 0) \diamond 1$, $(0 \diamond 1) \diamond 0$, $(0 \diamond 1) \diamond 1$, $(1 \diamond 0) \diamond 0$, $(1 \diamond 0) \diamond 1$, $(1 \diamond 1) \diamond 0$, $(1 \diamond 1) \diamond 1$ (the words of order $2$);
 - etc.
 
-- [Lemma: For a finite alphabet $X$ , the number of…](lemma-intro-1.md)
+- [Lemma: For a finite alphabet $X$, the number of…](lemma-intro-1.md)
 
 The first few Catalan numbers are
 

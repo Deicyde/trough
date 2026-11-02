@@ -3,7 +3,7 @@ declaration: theorem
 origin: cited
 ---
 
-# Theorem: ; $R$ is Church-Rosser iff it is confluent.…
+# Theorem: $R$ is Church-Rosser iff it is confluent.…
 
 1. $R$ is Church-Rosser iff it is confluent.
 2. (Newman's lemma) if $R$ is strongly normalizing, then $R$ is confluent iff it is locally confluent.

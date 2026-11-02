@@ -1,6 +1,6 @@
 # Automorphic forms and representations
 
-This section needs a lot of work; I am just attempting to write down some approximation to the (well-known) definitions but in great generality (far greater than we need). Some definitions below are short on details; indeed there may even be errors or imprecisions right now (because we are working in more generality than I am used to). It will be a very interesting project to get these details down. One reference (which leaves a lot of exercises) is Borel-Casselman in \[Borel and Casselman 1979a\]. Even *stating* these definitions will be a big challenge in Lean; indeed one of the motivations of the project is that it forces us to write down all the below properly.
+This section needs a lot of work; I am just attempting to write down some approximation to the (well-known) definitions but in great generality (far greater than we need). Some definitions below are short on details; indeed there may even be errors or imprecisions right now (because we are working in more generality than I am used to). It will be a very interesting project to get these details down. One reference (which leaves a lot of exercises) is Borel-Casselman in (Borel and Casselman 1979a). Even *stating* these definitions will be a big challenge in Lean; indeed one of the motivations of the project is that it forces us to write down all the below properly.
 
 Let $G$ be a connected reductive group over a number field $N$. We note that $G(\mathbb{A}_N^f)$ is a (locally profinite) topological space and $G(N_\infty)$ is a real Lie group; their product is $G(\mathbb{A}_N)$. If $g\in G(\mathbb{A}_N)$, write $g_f\in G(\mathbb{A}_N^f)$ for the finite part and $g_\infty\in G(N_\infty)$ for its infinite part.
 
@@ -14,7 +14,7 @@ $$
 ||g||_\rho=(\operatorname{tr} \rho(g)^*\rho(g))^{1/2},
 $$
 
-where the asterisk denotes adjoint with respect to the sesquilinear form. According to the article by Borel–Jacquet in \[Borel and Casselman 1979a\] (p189), if $\rho'$ is another such choice then there exists a positive real $C$ and a positive integer $n$ such that $||g||_{\rho'}\leq C||g||_\rho^n$ for all $g\in G(N_\infty)$.
+where the asterisk denotes adjoint with respect to the sesquilinear form. According to the article by Borel–Jacquet in (Borel and Casselman 1979a) (p189), if $\rho'$ is another such choice then there exists a positive real $C$ and a positive integer $n$ such that $||g||_{\rho'}\leq C||g||_\rho^n$ for all $g\in G(N_\infty)$.
 
 - [slowly\_increasing](slowly-increasing.md)
 - [slowly\_increasing\_well\_defined](slowly-increasing-well-defined.md)

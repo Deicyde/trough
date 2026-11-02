@@ -1,0 +1,15 @@
+\begin{corollary}[Bound for second error (prime form)]
+\uses{Mertens-second-error-mangoldt,Mertens-second-error-mangoldt,Mertens-second-error-mangoldt}
+\label{Mertens-second-error-prime-abs-le}
+\lean{Mertens.E₂p.abs_le,Mertens.E₂p.bound,Mertens.E₂p.bound'}
+\discussion{1326}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:2064.0-2102.9
+\leanok
+For any $x \geq 2$, one has
+$$ |E_{2,p}(x)| \leq \frac{\log 4 + 6 + E_1}{\log x}.$$
+\end{corollary}
+\begin{proof}
+\uses{Mertens-first-error-prime-le,Mertens-first-theorem-prime-bounded,Mertens-first-error-prime,Mertens-first-error-mangoldt,Mertens-first-error-prime-ge,Mertens-second-error-prime-eq,Mertens-first-error-mangoldt-ge}
+\leanok
+Similar to Lemma \ref{Mertens-second-error-prime-eq}.
+\end{proof}

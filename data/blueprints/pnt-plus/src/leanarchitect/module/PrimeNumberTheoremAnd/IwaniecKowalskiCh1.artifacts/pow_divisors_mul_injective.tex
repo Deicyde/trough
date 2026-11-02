@@ -1,0 +1,14 @@
+\begin{theorem}[pow-divisors-mul-injective]
+\label{pow_divisors_mul_injective}
+\lean{ArithmeticFunction.pow_divisors_mul_injective}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1620.0-1636.26
+\leanok
+Let $m$ and $n$ be coprime natural numbers and let $k$ be fixed. The map $(a,b) \mapsto ab$ is
+    injective on the product of $\{a \mid m : a^k \mid m\}$ and $\{b \mid n : b^k \mid n\}$.
+\end{theorem}
+\begin{proof}
+\uses{divisors_mul_injective}
+\leanok
+This is the restriction of Lemma \ref{divisors-mul-injective} to a subset of the divisor
+    product, so injectivity is preserved.
+\end{proof}

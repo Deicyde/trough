@@ -1,0 +1,14 @@
+\begin{lemma}[DeltaSpikeMass]
+\uses{DeltaSpike}
+\label{DeltaSpikeMass}
+\lean{DeltaSpikeMass}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:590.0-617.91
+\leanok
+For any $\epsilon>0$, we have
+  $$\int_0^\infty \nu_\epsilon(x)\frac{dx}{x} = 1.$$
+\end{lemma}
+\begin{proof}
+\leanok
+Substitute $y=x^{1/\epsilon}$, and use the fact that $\nu$ has mass one, and that $dx/x$ is Haar
+  measure.
+\end{proof}

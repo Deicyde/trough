@@ -18,6 +18,8 @@ We prove the theorem via a series of lemmas.
 
 We can now prove Fujisaki's theorem [NumberField.AdeleRing.DivisionAlgebra.compact\_quotient](../enter-the-adeles/numberfield-adelering-divisionalgebra-compact-qu.md).
 
+*The proof of [Theorem NumberField.AdeleRing.DivisionAlgebra.compact\_quotient](../enter-the-adeles/numberfield-adelering-divisionalgebra-compact-qu.md) is shown with its statement.*
+
 We note here some useful consequences.
 
 - [NumberField.FiniteAdeleRing.DivisionAlgebra.units\_cocompact](numberfield-finiteadelering-divisionalgebra-unit.md)

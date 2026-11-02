@@ -1,0 +1,16 @@
+\begin{lemma}[vertIntBound]
+\uses{VerticalIntegral}
+\label{vertIntBound}
+\lean{Perron.vertIntBound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/PerronFormula.lean:490.0-529.5
+\leanok
+Let $x>0$ and $\sigma>1$. Then
+  $$\left|
+  \int_{(\sigma)}\frac{x^s}{s(s+1)}ds\right| \leq
+    x^\sigma \int_\R\frac{1}{|(1+t ^ 2)(2+t ^ 2)|^{1/2}}dt.$$
+\end{lemma}
+\begin{proof}
+\uses{integralPosAux}
+\leanok
+Triangle inequality and pointwise estimate.
+\end{proof}

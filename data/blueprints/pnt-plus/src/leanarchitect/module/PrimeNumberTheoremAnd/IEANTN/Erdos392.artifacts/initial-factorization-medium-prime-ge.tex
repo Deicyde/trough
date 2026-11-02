@@ -1,0 +1,16 @@
+\begin{sublemma}
+\uses{params-set,initial-factorization-def,balance-def}
+\label{initial-factorization-medium-prime-ge}
+\lean{Erdos392.Params.initial.balance_medium_prime_ge}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:1274.0-1291.55
+\leanok
+A medium prime $\sqrt{n} < p ≤ n/L$ can be in deficit by at most $M$.
+\end{sublemma}
+\begin{proof}
+\uses{factorization-def}
+\leanok
+The number of times $p$ divides $a_1 \dots a_t$ is at least $M \lfloor n/Mp
+  \rfloor ≥ n/p - M$ (note that the removal of the non-smooth numbers
+  does not remove any multiples
+  of $p$).  Meanwhile, the number of times $p$ divides $n!$ is at most $n/p$.
+\end{proof}

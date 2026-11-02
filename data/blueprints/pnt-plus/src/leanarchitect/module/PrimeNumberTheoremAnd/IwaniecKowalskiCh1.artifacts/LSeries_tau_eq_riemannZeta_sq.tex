@@ -1,0 +1,15 @@
+\begin{theorem}[LSeries tau eq riemannZeta sq]
+\label{LSeries_tau_eq_riemannZeta_sq}
+\lean{ArithmeticFunction.LSeries_tau_eq_riemannZeta_sq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:161.0-178.71
+\leanok
+The L-series of $\tau$ equals the square of the Riemann zeta function for $\Re(s) > 1$.
+\end{theorem}
+\begin{proof}
+\uses{zeta_mul_zeta}
+\leanok
+From the previous theorem, we have that the Dirichlet convolution of $\zeta$ with itself is $\tau$.
+  Taking L-series on both sides, we get $L(\tau, s) = L(\zeta, s) \cdot L(\zeta, s)$.
+  Since $L(\zeta, s)$ is the Riemann zeta function $\zeta(s)$, we conclude that
+  $L(\tau, s) = \zeta(s)^2$ for $\Re(s) > 1$.
+\end{proof}

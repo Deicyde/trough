@@ -1,0 +1,16 @@
+\begin{proposition}[pn-asymptotic]
+\label{pn_asymptotic}
+\lean{pn_asymptotic}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Consequences.lean:961.0-994.10
+\leanok
+One has
+    $$ p_n = (1+o(1)) n \log n$$
+  as $n \to \infty$.
+\end{proposition}
+\begin{proof}
+\uses{pi_alt}
+\leanok
+Use Corollary \ref{pi_alt} to show that $n=\pi(p_n)\sim p_n/\log p_n$
+    Taking logs gives $\log n \sim \log p_n - \log\log p_n \sim \log p_n$.
+    Multiplying these gives $p_n\sim n\log n$ from which the result follows.
+\end{proof}

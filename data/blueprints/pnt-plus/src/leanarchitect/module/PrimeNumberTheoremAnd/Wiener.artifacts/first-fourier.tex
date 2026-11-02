@@ -1,0 +1,21 @@
+\begin{lemma}[first-fourier]
+\label{first-fourier}
+\lean{first_fourier}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:110.0-163.12
+\leanok
+If $\psi: \R \to \C$ is integrable and $x > 0$, then for any $\sigma>1$
+  $$ \sum_{n=1}^\infty \frac{f(n)}{n^\sigma} \hat \psi( \frac{1}{2\pi} \log \frac{n}{x} ) =
+  \int_\R F(\sigma + it) \psi(t) x^{it}\ dt.$$
+\end{lemma}
+\begin{proof}
+\leanok
+By the definition of the Fourier transform, the left-hand side expands as
+  $$ \sum_{n=1}^\infty \int_\R \frac{f(n)}{n^\sigma} \psi(t) e( - \frac{1}{2\pi} t \log
+  \frac{n}{x})\ dt$$
+  while the right-hand side expands as
+  $$ \int_\R \sum_{n=1}^\infty \frac{f(n)}{n^{\sigma+it}} \psi(t) x^{it}\ dt.$$
+  Since
+  $$\frac{f(n)}{n^\sigma} \psi(t) e( - \frac{1}{2\pi} t \log \frac{n}{x}) =
+  \frac{f(n)}{n^{\sigma+it}} \psi(t) x^{it}$$
+  the claim then follows from Fubini's theorem.
+\end{proof}

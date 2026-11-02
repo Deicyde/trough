@@ -1,0 +1,16 @@
+\begin{lemma}[ZetaNear1BndExact]
+\label{ZetaNear1BndExact}
+\lean{ZetaNear1BndExact}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:2241.0-2298.96
+\leanok
+There exists a $c>0$ such that for all $1 < \sigma ≤ 2$,
+  $$
+  |\zeta(\sigma)| ≤ c/(\sigma-1).
+  $$
+\end{lemma}
+\begin{proof}
+\uses{ZetaNear1BndFilter}
+\leanok
+Split into two cases, use Lemma \ref{ZetaNear1BndFilter} for $\sigma$ sufficiently small
+  and continuity on a compact interval otherwise.
+\end{proof}

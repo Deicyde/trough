@@ -39,6 +39,8 @@ For technical reasons (which will be helpful later when we expand the magma) we 
 
 Note from (1) and the hypothesis $Sa=a$ that $R_a c = a$ if and only if $c=a$. Thus, the requirement that $a,b$ be distinct in (ii) is necessary.
 
+*The proof of [Base magma](1516-base.md) is shown with its statement.*
+
 Let us denote by $A$ the free group over $\mathbb{N}$. Note that a magma with the same properties as in [Base magma](1516-base.md) but having carrier $A$ can be constructed similarly. The same thing is true for the following results. In fact, the Lean implementation has $A$ whenever $\mathbb{Z}$ is; this has been done to reuse some preexisting code.
 
 Now we construct a more complex 1516 magma, whose carrier $G$ is $\mathbb{Z} \cup G'$, where

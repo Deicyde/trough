@@ -80,28 +80,29 @@ def top_level_split(text: str, separator: str) -> list[str]:
 
 
 def surname(name: str) -> str:
-    """The surname of a BibTeX name, "Last, First" or "First von Last"."""
+    """The surname of a BibTeX name, "von Last, First" or "First von Last": from its first
+    lowercase word, the "von" part, to the end, or else its last word."""
     pieces = top_level_split(name, ",")
     if len(pieces) > 1:
         return pieces[0]
     words = top_level_split(name, " ")
     if not words:
         return name
-    last = len(words) - 1
-    while last > 0 and words[last - 1][:1].islower():
-        last -= 1
-    return " ".join(words[last:])
+    particle = next((k for k, word in enumerate(words[:-1]) if k and word[:1].islower()), None)
+    return " ".join(words[particle:] if particle is not None else words[-1:])
 
 
 def label(fields: dict[str, str], writer: Writer) -> str | None:
     people = fields.get("author") or fields.get("editor")
     year = fields.get("year") or fields.get("date", "")[:4]
     if people:
-        names = [writer.plain(surname(name)) for name in top_level_split(people, " and ")]
-        names = [name for name in names if name and name.lower() != "others"]
+        listed = top_level_split(people, " and ")
+        names = [writer.plain(surname(name)) for name in listed if name.strip().lower() != "others"]
+        names = [name for name in names if name]
         if not names:
             return None
-        who = names[0] if len(names) == 1 else f"{names[0]} and {names[1]}" if len(names) == 2 else f"{names[0]} et al."
+        more = len(names) > 2 or len(names) < len(listed)  # "and others" stands for more authors
+        who = f"{names[0]} et al." if more else " and ".join(names)
     elif fields.get("title"):
         who = writer.plain(fields["title"])
     else:
@@ -119,19 +120,20 @@ def link(fields: dict[str, str]) -> str | None:
     return None
 
 
-def bibliography(paths: list[Path]) -> dict[str, tuple[str, str | None]]:
-    """Each citation key of the .bib files at *paths*: its label and link."""
+def bibliography(paths: list[Path], cited: list[str]) -> dict[str, tuple[str, str | None]]:
+    """Each key of the .bib files at *paths* that the blueprint cites: its label and link.
+    Works that share a label get the letters a, b, ... in the order they are first cited."""
     writer = Writer({})
     found: dict[str, tuple[str, str | None]] = {}
     for path in paths:
         for key, fields in entries(path.read_text(encoding="utf-8", errors="replace")).items():
             name = label(fields, writer)
-            if name and key not in found:
+            if name and key not in found and key in cited:
                 found[key] = (name, link(fields))
-    # Works that share a label are told apart as in author-year styles: 2023a, 2023b.
     shared: dict[str, list[str]] = {}
-    for key, (name, _) in found.items():
-        shared.setdefault(name, []).append(key)
+    for key in dict.fromkeys(cited):
+        if key in found:
+            shared.setdefault(found[key][0], []).append(key)
     for name, keys in shared.items():
         if len(keys) > 1:
             for letter, key in zip("abcdefghijklmnopqrstuvwxyz", keys):

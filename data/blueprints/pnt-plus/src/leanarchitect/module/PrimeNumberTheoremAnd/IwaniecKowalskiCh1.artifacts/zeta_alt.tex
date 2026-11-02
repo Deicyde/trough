@@ -1,0 +1,15 @@
+\begin{theorem}[zeta alt]
+\label{zeta_alt}
+\lean{ArithmeticFunction.zeta_alt}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1537.0-1569.87
+\leanok
+$$\zeta(s) =\zeta(2s) \sum_{n=1}^{\infty}\mu^2(n)n^{-s}.$$
+  \begin{verbatim}
+    An expression for `ζ`, in IK (1.32).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{moebius_sq_LSeries_eulerProduct_tprod,moebius_sq_LSeries_eulerProduct_hasProd,Complex.one_add_prime_cpow_ne_zero}
+\leanok
+The series $\sum_{n=1}^{\infty}\mu^2(n)n^{-s}$ has Euler product $\prod_{p} (1 + p^{-s})$. On the other hand, $\zeta(2s)=\prod_p (1 - p^{-2s})^{-1}$. The product of these two Euler products is $\prod_p (1 - p^{-s})^{-1} = \zeta(s)$, which gives the desired formula.
+\end{proof}

@@ -1,0 +1,15 @@
+\begin{lemma}[Preliminary decay bound II]
+\label{prelim-decay-2}
+\lean{prelim_decay_2}
+\discussion{562}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:313.0-327.84
+\leanok
+If $\psi:\R \to \C$ is absolutely integrable and of bounded variation, then
+$$ |\hat \psi(u)| \leq \| \psi \|_{TV} / 2\pi |u| $$
+for all non-zero $u \in \R$.
+\end{lemma}
+\begin{proof}
+By Lebesgue--Stiejtes integration by parts we have
+$$ 2\pi i u \hat \psi(u) = \int _\R e(-tu) d\psi(t)$$
+and the claim then follows from the triangle inequality.
+\end{proof}

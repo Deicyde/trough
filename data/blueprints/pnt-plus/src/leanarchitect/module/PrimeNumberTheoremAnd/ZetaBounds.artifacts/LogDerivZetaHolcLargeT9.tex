@@ -1,0 +1,17 @@
+\begin{lemma}[LogDerivZetaHolcLargeT9]
+\label{LogDerivZetaHolcLargeT9}
+\lean{LogDerivZetaHolcLargeT9}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:3351.0-3366.62
+\leanok
+There is an $A>0$ so that for all $T>3$, the function
+  $
+  \frac {\zeta'}{\zeta}(s)
+  $
+  is holomorphic on $\{1-A/\log^9 T \le \Re s \le 2, |\Im s|\le T \}\setminus\{1\}$.
+\end{lemma}
+\begin{proof}
+\uses{ZetaZeroFree9,ZetaNoZerosInBox}
+\leanok
+The derivative of $\zeta$ is holomorphic away from $s=1$; the denominator $\zeta(s)$ is nonzero
+  in this range by Lemma \ref{ZetaZeroFree9}.
+\end{proof}

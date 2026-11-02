@@ -1,0 +1,15 @@
+\begin{corollary}[Bound for second Mertens error (von Mangoldt form)]
+\uses{Mertens-second-error-mangoldt,Mertens-second-error-mangoldt,Mertens-second-error-mangoldt}
+\label{Mertens-second-error-mangoldt-bound}
+\lean{Mertens.E₂Λ.abs_le,Mertens.E₂Λ.bound,Mertens.E₂Λ.bound'}
+\discussion{1318}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1061.0-1100.9
+\leanok
+For any $x \geq 2$, one has
+$$ |E_{2,\Lambda}(x)| \leq \frac{\log 4 + 6}{\log x}.$$
+\end{corollary}
+\begin{proof}
+\uses{Mertens-first-error-mangoldt,Mertens-first-error-mangoldt-le,Mertens-first-theorem-mangoldt,Mertens-first-error-mangoldt-ge,Mertens-second-error-mangoldt-eq}
+\leanok
+Insert Lemma \ref{Mertens-first-error-mangoldt-le} and Lemma \ref{Mertens-first-error-mangoldt-ge} into Lemma \ref{Mertens-second-error-mangoldt-eq} and use the triangle inequality to obtain the required upper and lower bounds.
+\end{proof}

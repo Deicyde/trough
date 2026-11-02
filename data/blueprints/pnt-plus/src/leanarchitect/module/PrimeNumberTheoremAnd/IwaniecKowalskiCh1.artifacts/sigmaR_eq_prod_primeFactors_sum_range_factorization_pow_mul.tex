@@ -1,0 +1,16 @@
+\begin{theorem}[sigmaR-eq-prod-primeFactors-sum-range-factorization-pow-mul]
+\uses{sigmaR}
+\label{sigmaR_eq_prod_primeFactors_sum_range_factorization_pow_mul}
+\lean{ArithmeticFunction.sigmaR_eq_prod_primeFactors_sum_range_factorization_pow_mul}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:551.0-567.57
+\leanok
+We have that
+    $$\sigma^R_s(n)=\prod_{p\mid n}\sum_{j=0}^{v_p(n)}p^{js}.$$
+\end{theorem}
+\begin{proof}
+\uses{isMultiplicative_sigmaR,sigmaR_apply_prime_pow}
+\leanok
+Since $\sigma^R_s$ is multiplicative, it suffices to understand it at primes powers.
+    $$\sigma^R_s(n)=\prod_{p\mid n}\sigma^R_s(p^{v_p(n)}).$$
+    Applying Lemma \ref{sigmaR-apply-prime-pow}.
+\end{proof}

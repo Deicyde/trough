@@ -1,0 +1,12 @@
+\begin{theorem}[LSeriesSummable-two-pow-omega]
+\label{LSeriesSummable_two_pow_omega}
+\lean{ArithmeticFunction.LSeriesSummable.of_norm_le_norm,ArithmeticFunction.LSeriesSummable_two_pow_omega}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:893.0-910.11
+\leanok
+An L-series is convergent if the absolute value of each term is term wise less than a summable series.
+\end{theorem}
+\begin{proof}
+\uses{d,two_pow_omega_le_sigma_zero,d_two,LSeries_d_summable}
+\leanok
+Apply triangle inequality and comparison test.
+\end{proof}

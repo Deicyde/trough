@@ -7,4 +7,6 @@ We now forget the additive structure on the commutative ring $\widehat{\mathbb{Q
 
 Note that by the previous lemma, this representation will be unique up to sign.
 
+*The proof of [Lemma QHat.unitsrat\_join\_unitszHat](qhat-unitsrat-join-unitszhat.md) is shown with its statement.*
+
 We are nearly ready to embark upon the multiplicative adelic theory for quaternion algebras. However before we do this, we need to develop the theory of the Hurwitz quaternions a bit more formally.

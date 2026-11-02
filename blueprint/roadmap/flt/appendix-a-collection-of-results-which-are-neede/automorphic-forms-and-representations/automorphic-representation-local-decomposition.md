@@ -14,7 +14,7 @@ An irreducible admissible $(G(\mathbb{A}_N^f)\times U_\infty,\mathfrak{g})$-modu
 
 ## Proof
 
-See Flath's article in \[Borel and Casselman 1979b\].
+See Flath's article in (Borel and Casselman 1979b).
 
 ## Sources
 

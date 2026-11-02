@@ -1,0 +1,12 @@
+\begin{theorem}[d succ]
+\uses{d}
+\label{d_succ}
+\lean{ArithmeticFunction.d_succ}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:221.0-229.66
+\leanok
+Recurrence: $d_{k+1} = d_k * \zeta$.
+\end{theorem}
+\begin{proof}
+\leanok
+By definition, $d_k$ is the $k$-fold Dirichlet convolution of $\zeta$. Therefore, $d_{k + 1}$ is the $(k + 1)$-fold convolution of $\zeta$, which can be expressed as the convolution of $d_k$ (the $k$-fold convolution) with $\zeta$. Thus, we have $d_{k + 1} = d_k * \zeta$.
+\end{proof}

@@ -1,0 +1,25 @@
+\begin{theorem}[d apply]
+\uses{d}
+\label{d_apply}
+\lean{ArithmeticFunction.d_apply}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:324.0-349.67
+\leanok
+(1.25) in Iwaniec-Kowalski: a formula for $d_k$ for all $n$.
+\end{theorem}
+\begin{proof}
+\uses{d_apply_prime_pow,d_isMultiplicative}
+\leanok
+The function $d_k$ is multiplicative, so to compute $d_k(n)$ for a general natural number $n$, we can factor $n$ into its prime power decomposition: $n = p_1^{a_1} p_2^{a_2} ... p_m^{a_m}$. Since $d_k$ is multiplicative, we have:
+
+  \[
+  d_k(n) = d_k(p_1^{a_1}) \cdot d_k(p_2^{a_2}) \cdot ... \cdot d_k(p_m^{a_m})
+  \]
+
+  Using the explicit formula for prime powers from the previous theorem, we can substitute to get:
+
+  \[
+  d_k(n) = \prod_{i=1}^{m} (a_i + k - 1).choose (k - 1)
+  \]
+
+  This gives us a complete formula for $d_k(n)$ in terms of the prime factorization of $n$.
+\end{proof}

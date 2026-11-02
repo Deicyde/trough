@@ -1,0 +1,18 @@
+\begin{theorem}[vonMangoldtLSeriesSummable]
+\label{vonMangoldtLSeriesSummable}
+\lean{vonMangoldtLSeriesSummable}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:2107.0-2126.46
+\leanok
+The series
+    $$\sum_{n=1}^\infty\frac{\Lambda(n)}{n^s}$$
+    converges when $1<\mathfrak{R}(s)$.
+\end{theorem}
+\begin{proof}
+\leanok
+We know that $\Lambda(n)$ is $O(n^\varepsilon)$ since it is bounded above by $\log(n)$. Thus,
+    $$\left|\sum_{n=1}^\infty\frac{\Lambda(n)}{n^s}\right|\leq
+      \sum_{n=1}^\infty\left|\frac{\Lambda(n)}{n^s}\right|\ll
+      \sum_{n=1}^\infty\frac{1}{n^{\mathfrak{R}(s)-\varepsilon}}.$$
+    Since $\varepsilon$ can be arbitrarily small, we know the left hand side converges by the
+    $p$-test.
+\end{proof}

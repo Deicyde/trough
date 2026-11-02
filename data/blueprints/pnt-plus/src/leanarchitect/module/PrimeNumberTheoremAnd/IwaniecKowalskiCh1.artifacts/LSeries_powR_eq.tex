@@ -1,0 +1,15 @@
+\begin{theorem}[LSeries powR eq]
+\uses{powR}
+\label{LSeries_powR_eq}
+\lean{ArithmeticFunction.LSeries_powR_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:569.0-593.42
+\leanok
+$L(\text{pow}^R(\nu), s) = \zeta(s - \nu)$ for $\Re(s - \nu) > 1$.
+  \begin{verbatim}
+  This is IK (1.27).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\leanok
+The function $\text{pow}^R(\nu)$ is defined as $n \mapsto n^\nu$ for $n \neq 0$ and $0$ for $n = 0$. The L-series of $\text{pow}^R(\nu)$ at $s$ is given by the sum $\sum_{n=1}^{\infty} n^{\nu - s}$. This series converges to the Riemann zeta function $\zeta(s - \nu)$ for $\Re(s - \nu) > 1$, since the zeta function is defined as $\zeta(s) = \sum_{n=1}^{\infty} n^{-s}$ for $\Re(s) > 1$. Therefore, we have $L(\text{pow}^R(\nu), s) = \zeta(s - \nu)$ under the condition that $\Re(s - \nu) > 1$.
+\end{proof}

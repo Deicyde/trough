@@ -1,0 +1,21 @@
+\begin{lemma}[second-fourier]
+\label{second-fourier}
+\lean{second_fourier}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:221.0-286.43
+\leanok
+If $\psi: \R \to \C$ is absolutely integrable and $x > 0$, then for any $\sigma>1$
+  $$ \int_{-\log x}^\infty e^{-u(\sigma-1)} \hat \psi(\frac{u}{2\pi})\ du =
+  x^{\sigma - 1} \int_\R \frac{1}{\sigma+it-1} \psi(t) x^{it}\ dt.$$
+\end{lemma}
+\begin{proof}
+\leanok
+The left-hand side expands as
+  $$ \int_{-\log x}^\infty \int_\R e^{-u(\sigma-1)} \psi(t) e(-\frac{tu}{2\pi})\ dt\ du$$
+  so by Fubini's theorem it suffices to verify the identity
+  \begin{align*}
+  \int_{-\log x}^\infty e^{-u(\sigma-1)} e(-\frac{tu}{2\pi})\ du
+  &= \int_{-\log x}^\infty e^{(it - \sigma + 1)u}\ du \\
+  &= \frac{1}{it - \sigma + 1} e^{(it - \sigma + 1)u}\ \Big|_{-\log x}^\infty \\
+  &= x^{\sigma - 1} \frac{1}{\sigma+it-1} x^{it}
+  \end{align*}
+\end{proof}

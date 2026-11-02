@@ -1,0 +1,15 @@
+\begin{theorem}[sigmaR-eq-sum-div]
+\uses{sigmaR}
+\label{sigmaR_eq_sum_div}
+\lean{ArithmeticFunction.sigmaR_eq_sum_div}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:439.0-455.99
+\leanok
+We have that $\sigma^R_s(n)=\sum_{d\mid n}(n/d)^s$.
+\end{theorem}
+\begin{proof}
+\uses{sigmaR_apply}
+\leanok
+Note that $d \mapsto n/d$ forms a one-to-one mapping between the divisors of $n$. Using this in
+    combination with the definiton we have that
+    $$\sigma^R_s(n)=\sum_{d\mid n}d^s=\sum_{d\mid n}(n/d)^s.$$
+\end{proof}

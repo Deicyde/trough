@@ -11,8 +11,9 @@ Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
 Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
 gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
-Mathlib is mapped from its curated lists, and four research projects from
-their leanblueprints: Imperial's FLT, PFR, Equational Theories and Strong PNT.
+Mathlib is mapped from its curated lists, and five research projects from
+their leanblueprints: Imperial's FLT, PFR, Equational Theories, Strong PNT and
+PNT+.
 
 ## The Mathlib map
 
@@ -53,8 +54,8 @@ A library with a leanblueprint becomes a chapter with one article per node,
 following the blueprint's chapters and sections. Each part, chapter and
 section is a page that reads in the blueprint's order: its prose, remarks and
 examples, smaller units as headings, and each node's card where the node
-stands. A labelled display shows a number, counted on its page, and
-references print it.
+stands. A labelled display, figure or table shows a number, counted on its
+page, and references print it; tables, listings and figure captions are kept.
 
 1. `data/blueprints/<id>/source.json` pins the library's commit, names its
    web entry file and records its node count. `src/` holds the TeX and BibTeX
@@ -78,7 +79,9 @@ references print it.
    library's documentation instead.
 5. The **Blueprint data** workflow refreshes the sources weekly from each
    library's newest commit; `tools/refresh_blueprints.py ID CHECKOUT` does the
-   same from a local checkout. A refresh writes nothing, and the workflow
+   same from a local checkout. PNT+'s blueprint is LeanArchitect output that
+   `lake build :blueprint` writes, so the **Blueprint build** workflow builds
+   it in CI first and the copy of that output sits in `src/leanarchitect/`. A refresh writes nothing, and the workflow
    fails, when the blueprint names a file its repository lacks, reads to no
    nodes or to under half the last count, or when a library whose text is
    shown loses its license or changes it.

@@ -1,0 +1,17 @@
+\begin{lemma}[ZetaSum-aux1]
+\label{ZetaSum_aux1}
+\lean{ZetaSum_aux1}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:753.0-785.50
+\leanok
+Let $0 < a < b$ be natural numbers and $s\in \C$ with $s \ne 1$ and $s \ne 0$.
+  Then
+  \[
+  \sum_{a < n \le b} \frac{1}{n^s} =  \frac{b^{1-s} - a^{1-s}}{1-s} + \frac{b^{-s}-a^{-s}}{2}
+    + s \int_a^b \frac{\lfloor x\rfloor + 1/2 - x}{x^{s+1}} \, dx.
+  \]
+\end{lemma}
+\begin{proof}
+\uses{sum_eq_int_deriv}
+\leanok
+Apply Lemma \ref{sum_eq_int_deriv} to the function $x \mapsto x^{-s}$.
+\end{proof}

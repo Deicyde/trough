@@ -1,0 +1,17 @@
+\begin{theorem}[LogDerivZetaBdd-of-Re-ge-three-halves]
+\label{LogDerivZetaBdd_of_Re_ge_three_halves}
+\lean{LogDerivZetaBdd_of_Re_ge_three_halves}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:2766.0-2812.71
+\leanok
+There exists a uniform constant $C$ such that for $z=\sigma+it$ one has
+    $$3/2\leq\sigma\implies\left|\frac{\zeta'}{\zeta}(z)\right|\leq C.$$
+\end{theorem}
+\begin{proof}
+\uses{vonMangoldtLSeriesSummable,LogDerivativeDirichlet}
+\leanok
+Note that
+    $$\left|\frac{\zeta'}{\zeta}(z)\right|=\left|\sum_{n=1}^\infty\frac{\Lambda(n)}{n^z}\right|\leq
+      \sum_{n=1}^\infty\frac{\Lambda(n)}{|n^z|}=\sum_{n=1}^\infty\frac{\Lambda(n)}{n^\sigma}\leq
+      \sum_{n=1}^\infty\frac{\Lambda(n)}{n^{3/2}}<\infty$$
+    by \ref{vonMangoldtLSeriesSummable}.
+\end{proof}

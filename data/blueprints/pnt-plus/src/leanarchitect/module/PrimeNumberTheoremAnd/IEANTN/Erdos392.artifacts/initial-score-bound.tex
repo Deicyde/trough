@@ -1,0 +1,25 @@
+\begin{proposition}
+\uses{params-set,score-def,initial-factorization-def}
+\label{initial-score-bound}
+\lean{Erdos392.Params.initial.score_bound}
+\discussion{665}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:2336.0-2366.52
+\leanok
+The initial score is bounded by
+  $$ n \log(1-1/M)^{-1} + \sum_{p \leq n/L} M \log n + \sum_{p \leq \sqrt{n}} M \log^2 n / \log 2
+  + \sum_{n/L < p \leq n} \frac{n}{p} \log \frac{n}{p}
+  + \sum_{p \leq L} (M \log n + M L \pi(n)) \log L.$$
+\end{proposition}
+\begin{proof}
+\uses{waste-def,initial-factorization-large-prime-le,initial-factorization-large-prime-ge,initial-factorization-medium-prime-le,initial-factorization-waste,initial-factorization-small-prime-le,balance-def,initial-factorization-small-prime-ge,initial-factorization-medium-prime-ge,initial-factorization-tiny-prime-ge}
+\leanok
+Combine Lemma \ref{initial-factorization-waste},
+  Sublemma \ref{initial-factorization-large-prime-le},
+  Sublemma \ref{initial-factorization-large-prime-ge},
+  Sublemma \ref{initial-factorization-medium-prime-le},
+  Sublemma \ref{initial-factorization-medium-prime-ge},
+  Sublemma \ref{initial-factorization-small-prime-le},
+  Sublemma \ref{initial-factorization-small-prime-ge}, and
+  Sublemma \ref{initial-factorization-tiny-prime-ge}, and combine
+  $\log p$ and $\log (n/p)$ to $\log n$.
+\end{proof}

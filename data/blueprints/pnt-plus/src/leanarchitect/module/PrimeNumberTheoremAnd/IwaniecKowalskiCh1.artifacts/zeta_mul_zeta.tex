@@ -1,0 +1,13 @@
+\begin{theorem}[zeta mul zeta]
+\label{zeta_mul_zeta}
+\lean{ArithmeticFunction.zeta_mul_zeta}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:147.0-159.29
+\leanok
+The Dirichlet convolution of $\zeta$ with itself is $\tau$ (the divisor count function).
+\end{theorem}
+\begin{proof}
+\leanok
+By definition of $\zeta$, we have $\zeta(n) = 1$ for all $n \geq 1$. Thus, the Dirichlet convolution
+  $(\zeta * \zeta)(n)$ counts the number of ways to write $n$ as a product of two positive integers,
+  which is exactly the number of divisors of $n$, i.e., $\tau(n)$.
+\end{proof}

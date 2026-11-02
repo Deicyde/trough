@@ -1,0 +1,16 @@
+\begin{lemma}[Decay bound, alternate form]
+\label{decay-alt}
+\lean{decay_alt}
+\discussion{564}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:349.0-386.88
+\leanok
+If $\psi:\R \to \C$ is absolutely
+integrable, absolutely continuous, and $\psi'$ is of bounded variation, then
+$$ |\hat \psi(u)| \leq ( \|\psi\|_1 + \| \psi' \|_{TV} / (2\pi)^2) / (1+|u|^2)$$
+for all $u \in \R$.
+\end{lemma}
+\begin{proof}
+\uses{prelim-decay-3,decay,prelim-decay}
+\leanok
+Should follow from previous lemmas.
+\end{proof}

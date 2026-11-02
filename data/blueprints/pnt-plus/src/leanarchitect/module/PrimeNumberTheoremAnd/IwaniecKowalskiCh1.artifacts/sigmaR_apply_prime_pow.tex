@@ -1,0 +1,14 @@
+\begin{theorem}[sigmaR-apply-prime-pow]
+\uses{sigmaR}
+\label{sigmaR_apply_prime_pow}
+\lean{ArithmeticFunction.sigmaR_apply_prime_pow}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:403.0-418.56
+\leanok
+For a prime power, we have that $\sigma^R_s(p^i)=\sum_{j=0}^ip^{js}$.
+\end{theorem}
+\begin{proof}
+\uses{sigmaR_apply}
+\leanok
+Note that $d\mid p^i$ implies that $d=p^j$ with $0\leq j\leq i$. Thus,
+    $$\sigma^R_s(p^i)=\sum_{d\mid p^i}d^s=\sum_{j=0}^i(p^j)^s=\sum_{j=0}^ip^{js}.$$
+\end{proof}

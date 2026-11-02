@@ -1,0 +1,14 @@
+\begin{theorem}[Mertens' second theorem (weak von Mangoldt form)]
+\label{Mertens-second-theorem-mangoldt-weak}
+\lean{Mertens.sum_mangoldt_div_log_eq_log_log,Mertens.sum_mangoldt_div_log_eq_log_log',Mertens.sum_mangoldt_div_log_eq_log_log''}
+\discussion{1321}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1933.0-1950.24
+\leanok
+For any $x \geq 2$, one has
+$$ \sum_{n \leq x} \frac{\Lambda(n)}{n \log n} = \log \log x + O(1). $$
+\end{theorem}
+\begin{proof}
+\uses{Mertens-second-error-mangoldt,Euler-Mascheroni-const-alt,Mertens-first-error-mangoldt,Euler-Mascheroni-eq,Mertens-second-error-mangoldt-bound}
+\leanok
+Immediate from previous two corollaries.
+\end{proof}

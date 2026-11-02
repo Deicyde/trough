@@ -1,0 +1,18 @@
+\begin{lemma}[Decay bounds]
+\label{decay}
+\lean{decay_bounds}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:423.0-443.35
+\leanok
+If $\psi:\R \to \C$ is $C^2$ and obeys the bounds
+    $$ |\psi(t)|, |\psi''(t)| \leq A / (1 + |t|^2)$$
+    for all $t \in \R$, then
+  $$ |\hat \psi(u)| \leq C A / (1+|u|^2)$$
+  for all $u \in \R$, where $C$ is an absolute constant.
+\end{lemma}
+\begin{proof}
+\leanok
+From two integration by parts we obtain the identity
+  $$ (1+u^2) \hat \psi(u) = \int_{\bf R} (\psi(t) - \frac{u}{4\pi^2} \psi''(t)) e(-tu)\ dt.$$
+  Now apply the triangle inequality and the identity $\int_{\bf R} \frac{dt}{1+t^2}\ dt = \pi$ to
+  obtain the claim with $C = \pi + 1 / 4 \pi$.
+\end{proof}

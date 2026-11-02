@@ -27,5 +27,7 @@ $$
 
 (Note: in the paper, this lemma was phrased in a more intuitive formulation that is basically the contrapositive of the one here. Similarly for the next two lemmas.)
 
+*The proof of [Constructing good variables, I](construct-good-prelim.md) is shown with its statement.*
+
 - [Constructing good variables, II](construct-good.md)
 - [$\tau$-decrement](de-prop.md)

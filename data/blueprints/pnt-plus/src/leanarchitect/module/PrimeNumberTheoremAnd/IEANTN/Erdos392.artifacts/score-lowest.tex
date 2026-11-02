@@ -1,0 +1,14 @@
+\begin{lemma}
+\uses{score-def,factorization-def,balance-def}
+\label{score-lowest}
+\lean{Erdos392.Factorization.lowest_score}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:866.0-896.77
+\leanok
+One can bring any factorization into balance without increasing the score.
+\end{lemma}
+\begin{proof}
+\uses{score-lower-2,score-lower-3,balance-def,score-lower-1}
+\leanok
+Apply strong induction on the total imbalance of the factorization and use the
+  previous three sublemmas.
+\end{proof}

@@ -1,0 +1,18 @@
+\begin{proposition}
+\uses{params-set,score-def,initial-factorization-def}
+\label{initial-score}
+\lean{Erdos392.Params.initial.score}
+\discussion{519}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:2918.0-3010.24
+\leanok
+The score of the initial factorization can be taken to be $o(n)$.
+\end{proposition}
+\begin{proof}
+\uses{bound-score-4,bound-score-1,bound-score-2,initial-score-bound,bound-score-5,bound-score-3}
+\leanok
+Pick $M$ large depending on $\varepsilon$, then $L$ sufficiently large depending
+  on $M, \varepsilon$, then $n$ sufficiently large depending on $M,L,\varepsilon$, so that the
+  bounds in Sublemma \ref{bound-score-1}, Sublemma \ref{bound-score-2},
+  Sublemma \ref{bound-score-3}, Sublemma \ref{bound-score-4}, and Sublemma \ref{bound-score-5}
+  each contribute at most $(\varepsilon/5) n$.  Then use Proposition \ref{initial-score-bound}.
+\end{proof}

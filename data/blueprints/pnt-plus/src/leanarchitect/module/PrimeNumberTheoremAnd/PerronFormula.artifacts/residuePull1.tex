@@ -1,0 +1,22 @@
+\begin{lemma}[residuePull1]
+\uses{VerticalIntegral}
+\label{residuePull1}
+\lean{Perron.residuePull1}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/PerronFormula.lean:1020.0-1056.90
+\leanok
+For $x>1$ (of course $x>0$ would suffice) and $\sigma>0$, we have
+  $$
+  \frac1{2\pi i}
+  \int_{(\sigma)}\frac{x^s}{s(s+1)}ds =1
+  +
+  \frac 1{2\pi i}
+  \int_{(-1/2)}\frac{x^s}{s(s+1)}ds.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{residueAtZero,HolomorphicOn.vanishesOnRectangle,tendsto_zero_Lower,isIntegrable,Perron.tendsto_zero_Upper,RectangleBorder,RectangleIntegral_tendsTo_VerticalIntegral,RectangleIntegral,isHolomorphicOn}
+\leanok
+We pull to a square with corners at $-c-i*c$ and $c+i*c$ for $c>0$
+  sufficiently small.
+  By Lemma \ref{residueAtZero}, the integral over this square is equal to $1$.
+\end{proof}

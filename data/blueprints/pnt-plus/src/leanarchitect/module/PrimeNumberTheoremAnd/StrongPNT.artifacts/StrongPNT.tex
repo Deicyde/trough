@@ -1,0 +1,15 @@
+\begin{theorem}[StrongPNT]
+\uses{ChebyshevPsi}
+\label{StrongPNT}
+\lean{StrongPNT}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:2886.0-2899.53
+\leanok
+We have
+    $$\sum_{n \leq x}\Lambda(n)=x+O(x \exp(-c(\log x)^{1/2})).$$
+\end{theorem}
+\begin{proof}
+\uses{LogDerivZetaUniformLogSquaredBound,LogDerivZetaUniformLogSquaredBoundStrip,ZeroInequality,LogDerivZetaHasBound,ZetaNoZerosInBox,GenStrengthPNT}
+\leanok
+This follows as a corollary of
+    Theorems \ref{GenStrengthPNT} and \ref{LogDerivZetaUniformLogSquaredBound}.
+\end{proof}

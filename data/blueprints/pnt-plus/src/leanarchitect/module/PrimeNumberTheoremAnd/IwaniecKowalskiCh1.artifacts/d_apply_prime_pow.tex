@@ -1,0 +1,13 @@
+\begin{theorem}[d apply prime pow]
+\uses{d}
+\label{d_apply_prime_pow}
+\lean{ArithmeticFunction.d_apply_prime_pow}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:306.0-322.80
+\leanok
+Explicit formula: $d_k (p^a) = (a + k - 1).choose (k - 1)$ for prime $p$ and $k \geq 1$.
+\end{theorem}
+\begin{proof}
+\uses{d_one,d_succ}
+\leanok
+The function $d_k$ counts the number of ways to write a natural number as an ordered product of $k$ natural numbers. For a prime power $p^a$, the number of ways to factor it into $k$ factors corresponds to the number of non-negative integer solutions to the equation $x_1 + x_2 + ... + x_k = a$, where each $x_i$ represents the exponent of $p$ in the factorization of the corresponding factor. This is a classic combinatorial problem, and the number of solutions is given by the formula $(a + k - 1).choose (k - 1)$, which counts the ways to distribute $a$ indistinguishable items (the prime factors) into $k$ distinguishable boxes (the factors).
+\end{proof}

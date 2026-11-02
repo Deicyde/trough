@@ -1,0 +1,14 @@
+\begin{lemma}[LogDerivZetaBndUnif99]
+\label{LogDerivZetaBndUnif99}
+\lean{LogDerivZetaBndUnif99}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:3612.0-3683.119
+\leanok
+There exist $A, C > 0$ such that
+  $$|\frac{\zeta'}{\zeta}(\sigma + it)|\leq C \log |t|^9$$
+  whenever $|t|>3$ and $\sigma > 1 - A/\log |t|^9$.
+\end{lemma}
+\begin{proof}
+\uses{riemannZetaLogDerivResidue,LogDerivZetaBnd}
+\leanok
+For $\sigma$ close to $1$ use Lemma \ref{LogDerivZetaBnd}, otherwise estimate trivially.
+\end{proof}

@@ -1,0 +1,16 @@
+\begin{theorem}[sum-moebius-sq-divisors-is-multiplicative]
+\uses{sum_moebius_sq_divisors}
+\label{sum_moebius_sq_divisors_IsMultiplicative}
+\lean{ArithmeticFunction.sum_moebius_sq_divisors_IsMultiplicative}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1653.0-1681.29
+\leanok
+The function $n \mapsto \sum_{d^2|n} \mu(d)$ is multiplicative.
+\end{theorem}
+\begin{proof}
+\uses{pow_divisors_mul,pow_divisors_mul_injective}
+\leanok
+We will show that for coprime $m$ and $n$, we have
+    $\sum_{d^2|mn} \mu(d) = \sum_{d^2|m} \mu(d) \cdot \sum_{d^2|n} \mu(d)$. This follows from
+    Lemma \ref{pow-divisors-mul}: the divisors $d$ of $mn$ with $d^2 \mid mn$ factor uniquely as
+    $d=ab$ with $a^2 \mid m$ and $b^2 \mid n$. Multiplicativity of $\mu$ then factors the sum.
+\end{proof}

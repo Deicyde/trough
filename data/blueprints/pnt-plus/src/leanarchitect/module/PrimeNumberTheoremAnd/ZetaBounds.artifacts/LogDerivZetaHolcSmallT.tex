@@ -1,0 +1,17 @@
+\begin{lemma}[LogDerivZetaHolcSmallT]
+\label{LogDerivZetaHolcSmallT}
+\lean{LogDerivZetaHolcSmallT}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:3232.0-3282.31
+\leanok
+There is a $\sigma_2 < 1$ so that the function
+  $$
+  \frac {\zeta'}{\zeta}(s)
+  $$
+  is holomorphic on $\{ \sigma_2 \le \Re s \le 2, |\Im s| \le 3 \} \setminus \{1\}$.
+\end{lemma}
+\begin{proof}
+\uses{ZetaNoZerosInBox}
+\leanok
+The derivative of $\zeta$ is holomorphic away from $s=1$; the denominator $\zeta(s)$ is nonzero
+  in this range by Lemma \ref{ZetaNoZerosInBox}.
+\end{proof}

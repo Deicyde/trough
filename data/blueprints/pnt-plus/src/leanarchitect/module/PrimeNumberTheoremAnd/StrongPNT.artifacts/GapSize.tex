@@ -1,0 +1,25 @@
+\begin{theorem}[GapSize]
+\uses{DeltaT,ZeroWindow}
+\label{GapSize}
+\lean{GapSize}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:2503.0-2549.39
+\leanok
+Let $t\in\mathbb{R}$ with $|t|\geq 3$ and $z=\sigma+it$ where $1-\delta_t/3\leq\sigma\leq 3/2$.
+   Additionally, let $\rho\in\mathcal{Z}_t$. Then we have that
+   $$|z-\rho|\geq\delta_t/6.$$
+\end{theorem}
+\begin{proof}
+\uses{ZeroInequality}
+\leanok
+Let $\rho=\sigma'+it'$ and note that since $\rho\in\mathcal{Z}_t$, we have $t'\in(t-3/4,t+3/4)$.
+    Thus, if $t>1$ we have
+    $$\log|t'|\leq\log|t+3/4|\leq\log|2t|=\log 2+\log|t|\leq 2\log|t|.$$
+    And otherwise if $t<-1$ we have
+    $$\log|t'|\leq\log|t-3/4|\leq\log|2t|=\log 2+\log|t|\leq 2\log|t|.$$
+    So by taking reciprocals and multiplying through by a constant we have
+    that $\delta_t\leq2\delta_{t'}$. Now note that since $\rho\in\mathcal{Z}_t$
+    we know that $\sigma'\leq 1-\delta_{t'}$ by Theorem \ref{ZeroInequality}
+    (here we use the fact that $|t|\geq 3$ to give us that $|t'|\geq 2$). Thus,
+    $$\delta_t/6\leq\delta_{t'}-\delta_t/3
+      =1-\delta_t/3-(1-\delta_{t'})\leq\sigma-\sigma'\leq|z-\rho|.$$
+\end{proof}

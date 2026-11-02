@@ -1,0 +1,15 @@
+\begin{theorem}[zeta mul tau square eq]
+\label{zeta_mul_tau_square_eq}
+\lean{ArithmeticFunction.zeta_mul_tau_square_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:742.0-824.34
+\leanok
+Baby Rankin-Selberg: $\zeta(s)\sum_{n=1}^{\infty}\tau(n^2)n^{-s} = \sum_{n=1}^{\infty}\tau(n)^2 n^{-s}$ for $\Re(s) > 1$.
+  \begin{verbatim}
+  Precursor to IK (1.30).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{d_apply_prime_pow,d,d_two,LSeries_d_summable,d_isMultiplicative}
+\leanok
+This follows from the multiplicative properties of the divisor function $\tau$ and the definition of the L-series. The left-hand side can be expressed as a product of L-series corresponding to $\zeta$ and the function $n \mapsto \tau(n^2)$. The right-hand side is the L-series of the function $n \mapsto \tau(n)^2$. By analyzing the Euler products and using the fact that $\tau(n)$ counts divisors, we can derive the stated equality.
+\end{proof}

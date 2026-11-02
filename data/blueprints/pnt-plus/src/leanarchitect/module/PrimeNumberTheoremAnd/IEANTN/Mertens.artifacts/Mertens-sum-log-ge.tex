@@ -1,0 +1,22 @@
+\begin{corollary}[Partial sum of logarithm lower bound]
+\label{Mertens-sum-log-ge}
+\lean{Mertens.sum_log_ge}
+\discussion{1305}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:377.0-423.58
+\leanok
+For any $x \geq 1$, one has
+$$ \sum_{n \leq x} \log n \geq x \log x - 2 x.$$
+\end{corollary}
+\begin{proof}
+\leanok
+We have
+ \begin{align*}
+ \sum_{n \leq x} \log n &= \sum_{2 \leq n \leq \lfloor x \rfloor} \log n \\
+ &\geq \sum_{2 \leq n \leq \lfloor x \rfloor} \int_{n-1}^n \log t \, dt \\
+ &= \int_1^{\lfloor x \rfloor} \log t \, dt \\
+ &\geq \int_1^x \log t\ dt - \log x \\
+ &= x \log x - x - \log x \\
+ &\geq x \log x - 2 x.
+\end{align*}
+Here we use the monotonicity of $\log n$ (and its vanishing at $n=1$) and the crude bound $\log x \leq x$. Note: the tools at Mathlib.Analysis.SumIntegralComparisons may be useful.
+\end{proof}

@@ -1,0 +1,16 @@
+\begin{sublemma}
+\uses{params-set}
+\label{bound-score-4}
+\lean{Erdos392.Params.initial.bound_score_4}
+\discussion{517}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:2733.0-2790.57
+\leanok
+If $n$ sufficiently large depending on $L, \varepsilon$, then
+$\sum_{n/L < p \leq n} \frac{n}{p} \log \frac{n}{p} \leq \varepsilon n$.
+\end{sublemma}
+\begin{proof}
+\uses{primeCounting-is-o-id}
+\leanok
+Bound $\frac{n}{p}$ by $L$ and use the prime
+  number theorem (or the Chebyshev bound).
+\end{proof}

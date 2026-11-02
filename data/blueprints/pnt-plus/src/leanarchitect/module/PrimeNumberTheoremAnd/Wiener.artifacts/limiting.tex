@@ -1,0 +1,21 @@
+\begin{lemma}[Limiting Fourier identity]
+\label{limiting}
+\lean{limiting_fourier}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:1112.0-1143.100
+\leanok
+If $\psi: \R \to \C$ is $C^2$ and compactly supported and $x \geq 1$, then
+  $$ \sum_{n=1}^\infty \frac{f(n)}{n} \hat \psi( \frac{1}{2\pi} \log \frac{n}{x} )
+    - A \int_{-\log x}^\infty \hat \psi(\frac{u}{2\pi})\ du
+    = \int_\R G(1+it) \psi(t) x^{it}\ dt.$$
+\end{lemma}
+\begin{proof}
+\uses{second-fourier,first-fourier}
+\leanok
+By Lemma \ref{first-fourier} and Lemma \ref{second-fourier}, we know that for any $\sigma>1$,
+  we have
+  $$ \sum_{n=1}^\infty \frac{f(n)}{n^\sigma} \hat \psi( \frac{1}{2\pi} \log \frac{n}{x} )
+    - A x^{1-\sigma} \int_{-\log x}^\infty e^{-u(\sigma-1)} \hat \psi(\frac{u}{2\pi})\ du
+    = \int_\R G(\sigma+it) \psi(t) x^{it}\ dt.$$
+  Now take limits as $\sigma \to 1$ using dominated convergence together with \eqref{cheby}
+  and Lemma \ref{decay} to obtain the result.
+\end{proof}

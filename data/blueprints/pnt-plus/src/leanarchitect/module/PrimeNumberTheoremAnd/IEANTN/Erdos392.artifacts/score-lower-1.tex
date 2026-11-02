@@ -1,0 +1,15 @@
+\begin{sublemma}
+\uses{score-def,factorization-def,balance-def}
+\label{score-lower-1}
+\lean{Erdos392.Factorization.lower_score_1}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:649.0-666.22
+\leanok
+If there is a prime $p$ in surplus, one can remove it without increasing the
+  score.
+\end{sublemma}
+\begin{proof}
+\uses{waste-def}
+\leanok
+Locate a factor $a_i$ that contains the surplus prime $p$, then
+  replace $a_i$ with $a_i/p$.
+\end{proof}

@@ -1,0 +1,16 @@
+\begin{lemma}[limitOfConstantLeft]
+\label{limitOfConstantLeft}
+\lean{limitOfConstantLeft}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/PerronFormula.lean:315.0-333.51
+\leanok
+Let $a:\R\to\C$ be a function, and let $\sigma<-3/2$ be a real number. Suppose that, for all
+  $\sigma, \sigma'>0$, we have $a(\sigma')=a(\sigma)$, and that
+  $\lim_{\sigma\to-\infty}a(\sigma)=0$. Then $a(\sigma)=0$.
+\end{lemma}
+\begin{proof}
+\leanok
+\begin{align*}
+    \lim_{\sigma'\to-\infty}a(\sigma) &= \lim_{\sigma'\to-\infty}a(\sigma') \\
+    &= 0
+  \end{align*}
+\end{proof}

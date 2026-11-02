@@ -1,0 +1,20 @@
+\begin{lemma}[SmoothedChebyshevPull1-aux-integrable]
+\uses{Smooth1}
+\label{SmoothedChebyshevPull1_aux_integrable}
+\lean{SmoothedChebyshevPull1_aux_integrable}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:1040.0-1116.14
+\leanok
+The integrand $$\zeta'(s)/\zeta(s)\mathcal{M}(\widetilde{1_{\epsilon}})(s)X^{s}$$
+  is integrable on the contour $\sigma_0 + t i$ for $t \in \R$ and $\sigma_0 > 1$.
+\end{lemma}
+\begin{proof}
+\uses{dlog_riemannZeta_bdd_on_vertical_lines,SmoothedChebyshevDirichlet_aux_integrable}
+\leanok
+The $\zeta'(s)/\zeta(s)$ term is bounded, as is $X^s$, and the smoothing function
+  $\mathcal{M}(\widetilde{1_{\epsilon}})(s)$
+  decays like $1/|s|^2$ by Theorem \ref{MellinOfSmooth1b}.
+  Actually, we already know that
+  $\mathcal{M}(\widetilde{1_{\epsilon}})(s)$
+  is integrable from Theorem \ref{SmoothedChebyshevDirichlet_aux_integrable},
+  so we should just need to bound the rest.
+\end{proof}

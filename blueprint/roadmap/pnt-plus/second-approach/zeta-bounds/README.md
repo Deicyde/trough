@@ -1,0 +1,53 @@
+# Zeta Bounds
+
+Now in Mathlib:
+
+## [deriv-conj-conj to isPathConnected-aux](part-01/README.md)
+
+- [deriv-conj-conj](part-01/deriv-conj-conj.md)
+- [deriv-riemannZeta-conj](part-01/deriv-riemannzeta-conj.md)
+- [intervalIntegral-conj](part-01/intervalintegral-conj.md)
+- [ResidueOfTendsTo](part-01/residueoftendsto.md)
+- [riemannZetaResidue](part-01/riemannzetaresidue.md)
+- [nonZeroOfBddAbove](part-01/nonzeroofbddabove.md)
+- [logDerivResidue](part-01/logderivresidue.md)
+- [BddAbove-to-IsBigO](part-01/bddabove-to-isbigo.md)
+- [ResidueMult](part-01/residuemult.md)
+- [riemannZetaLogDerivResidue](part-01/riemannzetalogderivresidue.md)
+- [riemannZeta0](part-01/riemannzeta0.md)
+- [sum-eq-int-deriv](part-01/sum-eq-int-deriv.md)
+- [ZetaSum-aux1](part-01/zetasum-aux1.md)
+- [ZetaBnd-aux1a](part-01/zetabnd-aux1a.md)
+- [ZetaSum-aux2](part-01/zetasum-aux2.md)
+- [ZetaBnd-aux1b](part-01/zetabnd-aux1b.md)
+- [ZetaBnd-aux1](part-01/zetabnd-aux1.md)
+- [ZetaBnd-aux1p](part-01/zetabnd-aux1p.md)
+- [HolomorphicOn-riemannZeta0](part-01/holomorphicon-riemannzeta0.md)
+- [isPathConnected-aux](part-01/ispathconnected-aux.md)
+
+## [Zeta0EqZeta to LogDerivZetaHolcLargeT9](part-02/README.md)
+
+- [Zeta0EqZeta](part-02/zeta0eqzeta.md)
+- [ZetaBnd-aux2](part-02/zetabnd-aux2.md)
+- [ZetaUpperBnd](part-02/zetaupperbnd.md)
+- [DerivUpperBnd-aux7](part-02/derivupperbnd-aux7.md)
+- [ZetaDerivUpperBnd](part-02/zetaderivupperbnd.md)
+- [ZetaNear1BndFilter](part-02/zetanear1bndfilter.md)
+- [ZetaNear1BndExact](part-02/zetanear1bndexact.md)
+- [ZetaLowerBound3](part-02/zetalowerbound3.md)
+- [ZetaInvBound1](part-02/zetainvbound1.md)
+- [ZetaInvBound2](part-02/zetainvbound2.md)
+- [Zeta-eq-int-derivZeta](part-02/zeta-eq-int-derivzeta.md)
+- [Zeta-diff-Bnd](part-02/zeta-diff-bnd.md)
+- [ZetaInvBnd](part-02/zetainvbnd.md)
+- [ZetaLowerBnd](part-02/zetalowerbnd.md)
+- [ZetaZeroFree9](part-02/zetazerofree9.md)
+- [LogDerivZetaBnd](part-02/logderivzetabnd.md)
+- [ZetaNoZerosOn1Line](part-02/zetanozeroson1line.md)
+- [ZetaNoZerosInBox](part-02/zetanozerosinbox.md)
+- [LogDerivZetaHolcSmallT](part-02/logderivzetaholcsmallt.md)
+- [LogDerivZetaHolcLargeT9](part-02/logderivzetaholclarget9.md)
+
+## [Part 3 of 3](part-03/README.md)
+
+- [LogDerivZetaBndUnif99](part-03/logderivzetabndunif99.md)

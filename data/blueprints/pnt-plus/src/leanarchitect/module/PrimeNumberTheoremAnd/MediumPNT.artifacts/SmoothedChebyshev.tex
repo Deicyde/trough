@@ -1,0 +1,13 @@
+\begin{definition}[SmoothedChebyshev]
+\uses{Smooth1,VerticalIntegral}
+\label{SmoothedChebyshev}
+\lean{SmoothedChebyshev}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:86.0-97.90
+\leanok
+Fix $\epsilon>0$, and a bumpfunction supported in $[1/2,2]$. Then we define the smoothed
+  Chebyshev function $\psi_{\epsilon}$ from $\mathbb{R}_{>0}$ to $\mathbb{C}$ by
+  $$\psi_{\epsilon}(X) = \frac{1}{2\pi i}\int_{(\sigma)}\frac{-\zeta'(s)}{\zeta(s)}
+  \mathcal{M}(\widetilde{1_{\epsilon}})(s)
+  X^{s}ds,$$
+  where we'll take $\sigma = 1 + 1 / \log X$.
+\end{definition}

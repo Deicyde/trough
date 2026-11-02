@@ -1,0 +1,20 @@
+\begin{theorem}[DeltaRange]
+\uses{DeltaT}
+\label{DeltaRange}
+\lean{DeltaRange}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:2378.0-2398.100
+\leanok
+For all $t\in\mathbb{R}$ with $|t|\geq 2$ we have that $$\delta_t<1/9.$$
+\end{theorem}
+\begin{proof}
+\uses{ZeroInequality}
+\leanok
+Note that $\delta_t=E/\log|t|$ where $E$ is the implied constant from
+    Lemma \ref{ZeroInequality}. But we know that $E=(14D)^{-1}$ where $D\geq 5A+4B+C$
+    where $A$, $B$, and $C$ are the constants coming from
+    Lemmas \ref{ShiftZeroBound}, \ref{ShiftOneBound}, and \ref{ShiftTwoBound} respectively. Thus,
+    $$E\leq\frac{1}{14\,(5A+4B+C)}.$$
+    But note that $A\geq 1$, $B>0$, and $C>0$ by Lemmas \ref{ShiftZeroBound}, \ref{ShiftOneBound},
+    and \ref{ShiftTwoBound} respectively. So, by a very lazy estimate we have $E\leq 1/14$. Thus,
+    $$\delta_t=\frac{E}{\log|t|}\leq\frac{1}{14\,\log2}<\frac{1}{9}.$$
+\end{proof}

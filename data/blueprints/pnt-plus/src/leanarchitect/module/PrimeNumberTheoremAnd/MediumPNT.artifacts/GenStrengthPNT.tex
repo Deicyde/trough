@@ -1,0 +1,25 @@
+\begin{theorem}[GenStrengthPNT]
+\uses{LogDerivZetaHasBound}
+\label{GenStrengthPNT}
+\lean{GenStrengthPNT}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:3579.0-4124.18
+\leanok
+Assuming a bound of the form of Definition \ref{LogDerivZetaHasBound}, we have that
+    $$\sum_{n \leq x}\Lambda(n)=x+O(x\exp(-c(\log x)^{1/(1+n_1)})).$$
+\end{theorem}
+\begin{proof}
+\uses{I7GenBound,I3GenBound,LogDerivZetaHolcSmallT,I4,I2,I6,I5Bound,I4GenBound,SmoothedChebyshevClose,I3,I1,Smooth1Nonneg,MellinOfSmooth1c,Smooth1ContinuousAt,I6GenBound,I1Bound,I37,I9,Smooth1Properties_above,Smooth1,I8,I5,I8GenBound,SmoothedChebyshev,SmoothedChebyshevPull2,SmoothExistence,I9Bound,I2GenBound,I7,Smooth1LeOne,SmoothedChebyshevPull1}
+\leanok
+By Theorems \ref{SmoothedChebyshevPull1}, \ref{SmoothedChebyshevPull2},
+    and \ref{SmoothedChebyshevClose} we have that
+    $$\mathcal{M}(\tilde{1}_\varepsilon)(1)\,x^1+I_1-I_2+I_3-I_4+I_5+I_6+I_7+I_8+I_9
+      =\psi(x)+O(\varepsilon x\log x).$$
+    Applying Theorems \ref{I1Bound}, \ref{I2GenBound}, \ref{I3GenBound}, \ref{I4GenBound},
+    \ref{I5Bound}, \ref{I6GenBound}, \ref{I7GenBound}, \ref{I8GenBound}, \ref{I9Bound},
+    and \ref{MellinOfSmooth1c} we have
+    $$\psi(x)=x+O(\varepsilon x)+O(\varepsilon x\log x)+O\left(\frac{X}{\varepsilon T}\right)+
+      O\left(\frac{X\log X}{\varepsilon T}\right)+
+      O\left(\frac{X}{\varepsilon}\,X^{-A/(\log T)^{n_1}}\right)+
+      O\left(\frac{X^{\sigma_2}}{\varepsilon}\right).$$
+    Balancing the error terms in $\varepsilon$ and $T$ completes the proof.
+\end{proof}

@@ -1,0 +1,19 @@
+\begin{corollary}[Partial sum of $\frac{\log p}{p}$ lower bound]
+\uses{Mertens-first-error-prime,Mertens-first-error-mangoldt}
+\label{Mertens-first-error-prime-ge}
+\lean{Mertens.E₁Λ.le_E₁p_add_E₁}
+\discussion{1312}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:772.0-827.68
+\leanok
+For any $x \geq 1$, one has
+$$ E_{1,\Lambda}(x) \leq E_{1,p}(x) + E_1$$
+and thus
+$$ E_{1,p}(x) \geq -2 - E_1$$
+where
+$$ E_1 := \sum_{p} \frac{\log p}{p(p-1)}. $$
+\end{corollary}
+\begin{proof}
+\uses{E1_summable}
+\leanok
+Use the triangle inequality and the geometric series formula to estimate in Lemma \ref{Mertens-sum-mangoldt-div-le} arising from prime powers.
+\end{proof}

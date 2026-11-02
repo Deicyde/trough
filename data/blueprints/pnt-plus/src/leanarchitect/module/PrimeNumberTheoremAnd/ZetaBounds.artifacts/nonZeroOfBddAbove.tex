@@ -1,0 +1,16 @@
+\begin{theorem}[nonZeroOfBddAbove]
+\label{nonZeroOfBddAbove}
+\lean{nonZeroOfBddAbove}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:241.0-308.18
+\leanok
+If a function $f$ has a simple pole at a point $p$ with residue $A \neq 0$, then
+  $f$ is nonzero in a punctured neighborhood of $p$.
+\end{theorem}
+\begin{proof}
+\leanok
+We know that $f(s) = \frac{A}{s-p} + O(1)$ near $p$, so we can write
+  $$f(s) = \left(f(s) - \frac{A}{s-p}\right) + \frac{A}{s-p}.$$
+  The first term is bounded, say by $M$, and the second term goes to $\infty$ as $s \to p$.
+  Therefore, there exists a neighborhood $V$ of $p$ such that for all $s \in V \setminus \{p\}$,
+  we have $f(s) \neq 0$.
+\end{proof}

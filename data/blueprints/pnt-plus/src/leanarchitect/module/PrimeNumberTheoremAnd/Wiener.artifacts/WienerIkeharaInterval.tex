@@ -1,0 +1,13 @@
+\begin{proposition}[Wiener-Ikehara in an interval]
+\label{WienerIkeharaInterval}
+\lean{WienerIkeharaInterval}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:2230.0-2303.65
+\leanok
+For any closed interval $I \subset (0,+\infty)$, we have
+  $$ \sum_{n=1}^\infty f(n) 1_I( \frac{n}{x} ) = A x |I|  + o(x).$$
+\end{proposition}
+\begin{proof}
+\uses{WienerIkeharaSmooth}
+\leanok
+Use Lemma \ref{smooth-ury} to bound $1_I$ above and below by smooth compactly supported functions whose integral is close to the measure of $|I|$, and use the non-negativity of $f$.
+\end{proof}

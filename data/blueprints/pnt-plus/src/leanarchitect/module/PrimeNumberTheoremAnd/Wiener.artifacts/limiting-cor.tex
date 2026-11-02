@@ -1,0 +1,16 @@
+\begin{corollary}[Corollary of limiting identity]
+\label{limiting-cor}
+\lean{limiting_cor}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:1170.0-1192.50
+\leanok
+With the hypotheses as above, we have
+  $$ \sum_{n=1}^\infty \frac{f(n)}{n} \hat \psi( \frac{1}{2\pi} \log \frac{n}{x} )
+    = A \int_{-\infty}^\infty \hat \psi(\frac{u}{2\pi})\ du + o(1)$$
+  as $x \to \infty$.
+\end{corollary}
+\begin{proof}
+\uses{limiting}
+\leanok
+Immediate from the Riemann-Lebesgue lemma, and also noting that
+  $\int_{-\infty}^{-\log x} \hat \psi(\frac{u}{2\pi})\ du = o(1)$.
+\end{proof}

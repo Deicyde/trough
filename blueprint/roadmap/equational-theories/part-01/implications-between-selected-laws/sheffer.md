@@ -16,7 +16,7 @@ Definition [E345169](https://teorth.github.io/equational_theories/implications/?
 
 ## Proof
 
-See \[[McCune et al. 2002](https://doi.org/10.1023/A:1020542009983)\]. In fact this is the shortest law with this property.
+See ([McCune et al. 2002](https://doi.org/10.1023/A:1020542009983)). In fact this is the shortest law with this property.
 
 A sketch of proof follows. One can easily verify that the Sheffer stroke operation satisfies this law. Conversely, if this law holds, then automated theorem provers can show that the three Sheffer axioms
 
@@ -32,7 +32,7 @@ $$
 (x \diamond (y \diamond z)) \diamond (x \diamond (y \diamond z)) = ((y \diamond y) \diamond x) \diamond ((z \diamond z) \diamond x)
 $$
 
-are satisfied. A classical result of Sheffer \[[Sheffer 1913](https://doi.org/10.2307/1988701)\] then allows one to conclude.
+are satisfied. A classical result of Sheffer ([Sheffer 1913](https://doi.org/10.2307/1988701)) then allows one to conclude.
 
 ## Lean
 

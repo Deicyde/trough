@@ -1,0 +1,15 @@
+\begin{corollary}[Partial sum of $\Lambda(d)/d$ upper bound]
+\uses{Mertens-first-error-mangoldt}
+\label{Mertens-first-error-mangoldt-le}
+\lean{Mertens.E₁Λ.le}
+\discussion{1308}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:501.0-530.18
+\leanok
+For any $x \geq 1$, one has
+$$ E_{1,\Lambda}(x) \leq \log 4 + 4.$$
+\end{corollary}
+\begin{proof}
+\uses{Mertens-sum-log-le,Mertens-sum-log-eq-sum-mangoldt}
+\leanok
+Insert Lemma \ref{Mertens-sum-log-eq-sum-mangoldt} into Lemma \ref{Mertens-sum-log-le} and upper bound $x/d$ by $\lfloor x/d \rfloor + 1$, and use the Mathlib bound $\psi(x) \leq (\log 4 + 4) x$.
+\end{proof}

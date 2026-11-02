@@ -1,0 +1,25 @@
+\begin{lemma}[ResidueTheoremOnRectangleWithSimplePole]
+\uses{RectangleIntegral}
+\label{ResidueTheoremOnRectangleWithSimplePole}
+\lean{ResidueTheoremOnRectangleWithSimplePole}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ResidueCalcOnRectangles.lean:608.0-658.71
+\leanok
+Suppose that $f$ is a holomorphic function on a rectangle,
+  except for a simple pole at $p$.
+  By the latter, we mean that there is a function $g$
+  holomorphic on the rectangle such that,
+  $f = g + A/(s-p)$ for some $A\in\C$. Then the integral of
+  $f$ over the rectangle is $A$.
+\end{lemma}
+\begin{proof}
+\uses{HolomorphicOn.vanishesOnRectangle,RectangleBorder}
+\leanok
+Replace $f$ with $g + A/(s-p)$ in the integral.
+  The integral of $g$ vanishes by
+  Lemma \ref{HolomorphicOn.vanishesOnRectangle}.
+  To evaluate the integral of $1/(s-p)$, pull everything to a
+  square about the origin using
+  Lemma \ref{RectanglePullToNhdOfPole}, and rescale by $c$;
+  what remains is handled by
+  Lemma \ref{ResidueTheoremAtOrigin}.
+\end{proof}

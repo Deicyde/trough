@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Lemma: For a finite alphabet $X$ , the number of…
+# Lemma: For a finite alphabet $X$, the number of…
 
 For a finite alphabet $X$, the number of words of order $n$ is $C_n |X|^{n+1}$, where $C_n$ is the $n^{\mathrm{th}}$ Catalan number and $X$ is the cardinality of $X$.
 

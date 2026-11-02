@@ -1,0 +1,23 @@
+\begin{theorem}[zeta pow two]
+\label{zeta_pow_two}
+\lean{ArithmeticFunction.zeta_pow_two}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1132.0-1173.69
+\leanok
+$$\zeta(s)^2 =\zeta(2s) \sum_{n=1}^{\infty} 2^{\omega(n)} n^{-s}$$ for $\Re(s) > 1$.
+  \begin{verbatim}
+    An expression for `ζ^2`, in IK (1.31).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{two_pow_omega_LSeries_eulerProduct_tprod,two_pow_omega_LSeries_eulerProduct_hasProd,Complex.one_add_prime_cpow_ne_zero}
+\leanok
+Note that
+    $$\zeta(s)^2=\prod_p\frac{1}{(1-p^{-s})^2}.$$
+    Similarly
+    $$\zeta(2s)=\prod_p\frac{1}{(1-p^{-2s})}.$$
+    Applying Theorems \ref{two-pow-omega-LSeries-eulerProduct-tprod} and \ref{two-pow-omega-LSeries-eulerProduct-hasProd} we have
+    $$\sum_{1\leq n}2^{\omega(n)}n^{-s}=\prod_p\frac{1+p^{-s}}{1-p^{-s}}.$$
+    Thus
+    $$\zeta(2s)\left(\sum_{1\leq n}2^{\omega(n)}n^{-s}\right)=\prod_p\frac{1+p^{-s}}{(1-p^{-s})(1-p^{-2s})}=\prod_p\frac{1}{(1-p^{-s})^2}$$
+    by the difference of squares. This is exactly the Euler product for $\zeta(s)^2$ mentioned earlier.
+\end{proof}

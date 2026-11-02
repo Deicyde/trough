@@ -1,0 +1,16 @@
+\begin{lemma}[ZetaBnd-aux1b]
+\label{ZetaBnd_aux1b}
+\lean{ZetaBnd_aux1b}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:996.0-1030.93
+\leanok
+For any $N\ge1$ and $s = \sigma + tI \in \C$, $\sigma > 0$,
+  $$
+  \left| \int_N^\infty \frac{\lfloor x\rfloor + 1/2 - x}{x^{s+1}} \, dx \right|
+  \le \frac{N^{-\sigma}}{\sigma}.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{ZetaBnd_aux1a}
+\leanok
+Apply Lemma \ref{ZetaBnd_aux1a} with $a=N$ and $b\to \infty$.
+\end{proof}

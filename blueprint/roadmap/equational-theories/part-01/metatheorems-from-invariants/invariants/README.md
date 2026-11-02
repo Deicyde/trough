@@ -14,7 +14,15 @@ If we can find an invariant which is computable for each term $w$, then we can e
 
 **Meta-metatheorem (Fundamental property of invariants).** Let $I$ be an invariant of $E$. If $w = w'$ implies $w'' = w'''$ and $I(w) = I(w')$ (that is, $E$ implies $w = w'$), then $I(w'') = I(w''')$.
 
-*Proof.* Let $\Pi$ denote the preorder of magma equations ordered by implication. If $I$ is an invariant then define
+More succinctly, for an invariant $I$ of $E$ we must have
+
+$$
+(w = w' \Rightarrow w'' = w''') \implies (I(w) = I(w') \Rightarrow I(w'') = I(w''')).
+$$
+
+When using this result, we commonly take the contrapositive: if $I(w) = I(w')$ and $I(w'') \neq I(w''')$, then $w=w'$ cannot imply $w'' = w'''$. Note that the conclusion is independent of the equation $E$; all we need to know is that $I$ is an invariant.
+
+*Note for category theorists.* Let $\Pi$ denote the preorder of magma equations ordered by implication. If $I$ is an invariant then define
 
 $$
 I(w = w')\coloneqq \begin{cases}
@@ -29,17 +37,9 @@ Question 1: Does every functor $\Pi \to \textbf{Bool}$ come from an invariant?
 
 Question 2: What can we say about the category of functors $\Pi \to \textbf{Bool}$? Give a nice interpretation of natural transformations between invariants.
 
-More succinctly, for an invariant $I$ of $E$ we must have
-
-$$
-(w = w' \Rightarrow w'' = w''') \implies (I(w) = I(w') \Rightarrow I(w'') = I(w''')).
-$$
-
-When using this result, we commonly take the contrapositive: if $I(w) = I(w')$ and $I(w'') \neq I(w''')$, then $w=w'$ cannot imply $w'' = w'''$. Note that the conclusion is independent of the equation $E$; all we need to know is that $I$ is an invariant.
-
 The fundamental property of invariants is not a theorem, nor a metatheorem: it is a meta-metatheorem, in the sense that it will allow us to get a metatheorem for every invariant we find.
 
-### Example: absorption law
+## Example: absorption law
 
 Let $E$ be the equation $x \diamond y = x$. Intuitively, we must have
 
@@ -51,7 +51,7 @@ We will talk about proving statements like this one (say in Lean) later on; take
 
 **Metatheorem.** Let $w = w'$ be an equation such that the leftmost variable of $w$ is the same as the leftmost variable of $w'$. Then $w = w'$ cannot imply an equation that does not have the property from the last sentence.
 
-### Example: associativity
+## Example: associativity
 
 For a more complicated example, let $E$ be the associativity equation $x \diamond (y \diamond z) = (x \diamond y) \diamond z$. Intuitively, we must have
 

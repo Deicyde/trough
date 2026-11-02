@@ -1,0 +1,14 @@
+\begin{corollary}[Wiener-Ikehara Theorem (1)]
+\label{WienerIkehara}
+\lean{WienerIkeharaTheorem'}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:2396.0-2418.46
+\leanok
+We have
+  $$ \sum_{n\leq x} f(n) = A x + o(x).$$
+\end{corollary}
+\begin{proof}
+\uses{WienerIkeharaInterval}
+\leanok
+Apply the preceding proposition with $I = [\varepsilon,1]$ and then send
+  $\varepsilon$ to zero (using \eqref{cheby} to control the error).
+\end{proof}

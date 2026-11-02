@@ -1,0 +1,14 @@
+\begin{corollary}[Mertens' first theorem (von Mangoldt form)]
+\label{Mertens-first-theorem-mangoldt}
+\lean{Mertens.sum_mangoldt_div_eq_log}
+\discussion{1309}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:532.0-544.42
+\leanok
+For any $x \geq 1$, one has
+$$ \sum_{n \leq x} \frac{\Lambda(n)}{n} = \log x + O(1). $$
+\end{corollary}
+\begin{proof}
+\uses{Mertens-first-error-mangoldt,Mertens-first-error-mangoldt-le,Mertens-first-error-mangoldt-ge}
+\leanok
+Immediate from previous two corollaries.
+\end{proof}

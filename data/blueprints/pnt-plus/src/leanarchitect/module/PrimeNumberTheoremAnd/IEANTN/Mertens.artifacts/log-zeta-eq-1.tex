@@ -1,0 +1,15 @@
+\begin{sublemma}[Dirichlet series for $\log \zeta(s)$]
+\label{log-zeta-eq-1}
+\lean{Mertens.log_zeta_eq_sum}
+\discussion{1582}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1117.0-1248.47
+\leanok
+If $s > 1$ then $\log\zeta(s) = - \log (s-1) + \Gamma'(1) + \gamma + (s-1) \int_1^\infty E_{2,\Lambda}(x) x^{-s}\ ds$.
+\end{sublemma}
+\begin{proof}
+\leanok
+First use the fundamental theorem of calculus and decay of $\log \zeta(s)$ to write
+  $$ \log \zeta(s) = \int_s^\infty -\frac{\zeta'(u)}{\zeta(u)}\ du.$$
+  Then substitute in the known identity
+  $-\frac{\zeta'(u)}{\zeta(u)} = \sum_n \frac{\Lambda(n)}{n^u}$ and integrate term by term.
+\end{proof}

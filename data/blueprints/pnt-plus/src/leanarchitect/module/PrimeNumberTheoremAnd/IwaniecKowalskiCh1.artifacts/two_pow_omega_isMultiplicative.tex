@@ -1,0 +1,12 @@
+\begin{theorem}[two-pow-omega-isMultiplicative]
+\label{two_pow_omega_isMultiplicative}
+\lean{ArithmeticFunction.two_pow_omega_isMultiplicative}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:977.0-988.102
+\leanok
+The function $n\mapsto 2^{\omega(n)}$ is multiplicative.
+\end{theorem}
+\begin{proof}
+\uses{powOfAdditive_isMultiplicative}
+\leanok
+This follows directly from Lemma \ref{powOfAdditive-isMultiplicative} and the fact that $\omega(mn)=\omega(m)+\omega(n)$.
+\end{proof}

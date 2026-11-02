@@ -1,0 +1,20 @@
+\begin{lemma}[BlaschkeOfZero]
+\uses{BlaschkeB,SetOfZeros}
+\label{BlaschkeOfZero}
+\lean{BlaschkeOfZero}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:609.0-644.46
+\leanok
+Let $0 < r < R<1$, and $f:\mathbb{C}\to\mathbb{C}$ be analytic on $\overline{\mathbb{D}_1}$ with
+    $f(0)\neq 0$. Then
+    $$|B_f(0)|=|f(0)|\prod_{\rho\in\mathcal{K}_f(r)}
+      \left(\frac{R}{|\rho|}\right)^{m_f(\rho)}.$$
+\end{lemma}
+\begin{proof}
+\uses{CFunction,ZeroFactor}
+\leanok
+Since $f(0)\neq 0$, we know that $0\not\in\mathcal{K}_f(r)$. Thus,
+    $$C_f(0)=\frac{f(0)}{\displaystyle\prod_{\rho\in\mathcal{K}_f(r)}(-\rho)^{m_f(\rho)}}.$$
+    Thus, substituting this into Definition \ref{BlaschkeB},
+    $$|B_f(0)|=|C_f(0)|\prod_{\rho\in\mathcal{K}_f(r)}R^{m_f(\rho)}
+      =|f(0)|\prod_{\rho\in\mathcal{K}_f(r)}\left(\frac{R}{|\rho|}\right)^{m_f(\rho)}.$$
+\end{proof}

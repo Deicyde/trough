@@ -1,0 +1,14 @@
+\begin{lemma}[BlaschkeAnalytic]
+\uses{BlaschkeB,SetOfZeros}
+\label{BlaschkeAnalytic}
+\lean{BlaschkeAnalytic}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:574.0-605.29
+\leanok
+If $f:\mathbb{C}\to\mathbb{C}$ is analytic on $\overline{\mathbb{D}_R}$ then so too is $B_f$.
+\end{lemma}
+\begin{proof}
+\uses{CFunction,CfAnalytic}
+\leanok
+Expand out $B_f$ as a product, and observe that each part is analytic on
+    $\overline{\mathbb{D}_R}$.
+\end{proof}

@@ -7,9 +7,11 @@ We will be interested in seeing which laws imply which other laws, in the sense 
 
 Note that we view the stronger law as less than or equal to the weaker law. This is because the class of magmas that satisfy the stronger law is a subset of the class of magmas that satisfy the weaker law. It is also consistent with the conventions of Lean's Mathlib.
 
-Implications between the laws from [Selected laws](../selected-laws/README.md) are depicted in fig:implications.
+*The proof of [Pre-order](pre-order.md) is shown with its statement.*
 
-*(A figure in the source is not reproduced here.)*
+Implications between the laws from [Selected laws](../selected-laws/README.md) are depicted in Figure 1.
+
+**Figure 1.** Implications between the above equations, displayed as a Hasse diagram. *(The picture is not reproduced here.)*
 
 - [Maximal element](maximal.md)
 - [Minimal element](minimal.md)

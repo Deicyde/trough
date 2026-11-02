@@ -1,0 +1,13 @@
+\begin{corollary}[Dirichlet's theorem]
+\label{dirichlet_thm}
+\lean{dirichlet_thm}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Consequences.lean:2514.0-2534.37
+\leanok
+Any primitive residue class contains an infinite number of primes.
+\end{corollary}
+\begin{proof}
+\uses{chebyshev-asymptotic-pnt}
+\leanok
+If this were not the case, then the sum $\sum_{p \leq x: p = a\ (q)} \log p$
+  would be bounded in $x$, contradicting Theorem \ref{chebyshev-asymptotic-pnt}.
+\end{proof}

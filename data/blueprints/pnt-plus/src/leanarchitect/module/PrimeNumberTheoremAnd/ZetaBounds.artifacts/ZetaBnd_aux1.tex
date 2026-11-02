@@ -1,0 +1,16 @@
+\begin{lemma}[ZetaBnd-aux1]
+\label{ZetaBnd_aux1}
+\lean{ZetaBnd_aux1}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:1032.0-1052.17
+\leanok
+For any $N\ge1$ and $s = \sigma + tI \in \C$, $\sigma=\in(0,2], 2 < |t|$,
+  $$
+  \left| s\int_N^\infty \frac{\lfloor x\rfloor + 1/2 - x}{x^{s+1}} \, dx \right|
+  \le 2 |t| \frac{N^{-\sigma}}{\sigma}.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{ZetaBnd_aux1b}
+\leanok
+Apply Lemma \ref{ZetaBnd_aux1b} and estimate $|s|\ll |t|$.
+\end{proof}

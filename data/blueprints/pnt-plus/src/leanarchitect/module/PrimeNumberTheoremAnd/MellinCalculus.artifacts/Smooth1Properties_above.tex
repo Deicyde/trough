@@ -1,0 +1,33 @@
+\begin{lemma}[Smooth1Properties-above]
+\uses{Smooth1}
+\label{Smooth1Properties_above}
+\lean{Smooth1Properties_above}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:1011.0-1074.54
+\leanok
+Fix $0<\epsilon<1$. There is an absolute constant $c>0$ so that:
+  if $x\geq (1+c\epsilon)$, then
+  $$\widetilde{1_{\epsilon}}(x) = 0.$$
+\end{lemma}
+\begin{proof}
+\uses{DeltaSpike,MellinConvolution}
+\leanok
+Again the Mellin convolution is
+  $$\int_0^1 \nu_\epsilon(x/y)\frac{dy}{y},$$
+  but now if $x > 2^\epsilon$, then the support of $\nu_\epsilon$ is disjoint
+  from the region of integration, and hence the integral is zero.
+  We choose
+  $$
+    c:=2\log 2
+    .
+  $$
+  By Lemma \ref{Smooth1Properties_estimate},
+  $$
+    c > 2\frac{1-2^{-\epsilon}}\epsilon > 2^\epsilon\frac{1-2^{-\epsilon}}\epsilon
+    =
+    \frac{2^\epsilon-1}\epsilon,
+  $$
+  so
+  $$
+    1+c\epsilon > 2^\epsilon.
+  $$
+\end{proof}

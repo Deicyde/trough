@@ -27,6 +27,8 @@ One random variable is said to be a copy of another if they have the same distri
 
 This is an improvement over the usual Ruzsa triangle inequality because $X,Y$ are not assumed to be independent. However we will not utilize this improvement here.
 
+*The proof of [Improved Ruzsa triangle inequality](ruzsa-triangle-improved.md) is shown with its statement.*
+
 - [Ruzsa triangle inequality](ruzsa-triangle.md)
 - [Conditioned Ruzsa distance](cond-dist-def.md)
 - [Alternate form of distance](cond-dist-alt.md)

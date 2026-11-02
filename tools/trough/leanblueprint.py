@@ -14,6 +14,13 @@ entry file, without plasTeX:
   proof of the same environment replaces an earlier one;
 - \\leanok marks a statement, or a proof, as formalized; \\mathlibok marks a
   node as in Mathlib (and formalized); \\notready marks it as not ready.
+
+A blueprint can also be LeanArchitect output, which `lake build :blueprint`
+writes under .lake/build/blueprint from each declaration's @[blueprint]
+attribute: a module file defines each node with \\newleannode{label}{\\input
+{file}} and the module with \\newleanmodule{Module}{...}, and the document
+places them with \\inputleannode and \\inputleanmodule. The reader reads those
+files from a copy of that directory, as if their text stood where it is placed.
 """
 
 from __future__ import annotations
@@ -25,10 +32,12 @@ from pathlib import Path
 
 from trough.tex import (
     CONTROL,
+    LISTS,
     argument,
     bracket_end,
     definitions,
     environment_end,
+    group_end,
     names,
     optional,
     skip_space,
@@ -38,7 +47,10 @@ from trough.tex import (
 
 DEFAULT_THMS = ("definition", "lemma", "proposition", "theorem", "corollary")
 SECTIONING = ("part", "chapter", "section", "subsection", "subsubsection")
-INPUT = re.compile(r"\\(?:input|include)\s*\{([^}]*)\}")
+INPUT = re.compile(r"\\(input|include|inputleanmodule|inputleannode)\s*\{([^}]*)\}")
+VERBATIM = re.compile(r"\\begin\s*\{(verbatim\*?|Verbatim|lstlisting|minted)\}")
+ARCHITECT = "leanarchitect"  # where a copy of LeanArchitect's .lake/build/blueprint sits, beside the TeX
+ARCHITECT_PATH = re.compile(r"(?:^|/)\.lake/build/blueprint/(.+)$")
 SECTION = re.compile(r"\\(part|chapter|section|subsection|subsubsection)(\*?)(?![A-Za-z])")
 MATH = re.compile(
     r"(?s)\$\$.*?\$\$|(?<!\\)\$.*?(?<!\\)\$|\\\[.*?\\\]|\\\(.*?\\\)"
@@ -59,6 +71,9 @@ class Proof:
     uses: list[str]
     labels: list[str]
     where: Where
+    title: str | None = None  # its optional argument, as in \\begin{proof}[Proof of the main theorem]
+    offset: int = 0  # where in the document it starts
+    unit: Unit | None = None
 
 
 @dataclass(eq=False)
@@ -82,6 +97,7 @@ class Prose:
     unit: Unit | None
     offset: int
     equations: list[str] = field(default_factory=list)
+    floats: list[tuple[str, str]] = field(default_factory=list)  # (label, "figure" or "table")
 
 
 @dataclass(eq=False)
@@ -103,6 +119,7 @@ class Node:
     equations: list[str] = field(default_factory=list)
     id: str = ""
     offset: int = 0  # where in the document it starts
+    floats: list[tuple[str, str]] = field(default_factory=list)  # (label, "figure" or "table")
 
     @property
     def proof_uses(self) -> list[str]:
@@ -117,7 +134,7 @@ class Blueprint:
     thms: tuple[str, ...]
     units: list[Unit]
     nodes: list[Node]  # every theorem-like environment, in document order
-    labels: dict[str, object]  # label -> Node, Unit, or ("equation", the Node or Prose it is in)
+    labels: dict[str, object]  # label -> Node, Unit, ("equation", its Node or Prose) or ("figure"/"table", ...)
     links: dict[str, str]  # home, github, dochome
     problems: list[str]
     prose: list[Prose] = field(default_factory=list)  # in document order, from the first sectioning unit on
@@ -131,8 +148,11 @@ class Blueprint:
 class Document:
     """A blueprint's TeX with \\input expanded and comments removed, and where each line is from."""
 
-    def __init__(self, root: Path, entry: str):
+    def __init__(self, root: Path, entry: str, architect: Path | None = None):
         self.root = root
+        self.architect = architect or root / ARCHITECT
+        self.lean_nodes: dict[str, str] = {}  # LeanArchitect: a node's label -> the file of its TeX
+        self.lean_modules: dict[str, tuple[str, list[tuple[int, str]]]] = {}  # a module -> its file and lines
         self.files: list[str] = []
         self.parts: list[str] = []
         self.starts: list[int] = []
@@ -145,11 +165,23 @@ class Document:
         self.text = "".join(self.parts)
 
     def resolve(self, name: str) -> str | None:
+        """The file *name* names, as a path under root; LeanArchitect's output, wherever the
+        build put it, is read from the copy in architect and named under leanarchitect/."""
+        base, prefix = self.root, ""
+        lake = ARCHITECT_PATH.search(name)
+        if lake:
+            base, prefix, name = self.architect, f"{ARCHITECT}/", lake.group(1)
         for candidate in (name, f"{name}.tex"):
-            path = (self.root / candidate).resolve()
-            if path.is_file() and path.is_relative_to(self.root.resolve()):
-                return path.relative_to(self.root.resolve()).as_posix()
+            path = (base / candidate).resolve()
+            if path.is_file() and path.is_relative_to(base.resolve()):
+                return prefix + path.relative_to(base.resolve()).as_posix()
         return None
+
+    def path(self, rel: str) -> Path:
+        """Where the file that resolve() named *rel* is."""
+        if rel.startswith(f"{ARCHITECT}/"):
+            return self.architect / rel.removeprefix(f"{ARCHITECT}/")
+        return self.root / rel
 
     def visit(self, name: str, depth: int, origin: str = "") -> None:
         rel = self.resolve(name)
@@ -159,14 +191,72 @@ class Document:
             return
         if rel not in self.files:
             self.files.append(rel)
-        for number, raw in enumerate((self.root / rel).read_text(encoding="utf-8").split("\n"), 1):
-            code = strip_comment(raw)
-            position = 0
-            for match in INPUT.finditer(code):
-                self.add(code[position : match.start()], rel, number, newline=False)
-                self.visit(match.group(1).strip(), depth + 1, f"{rel}:{number}")
-                position = match.end()
-            self.add(code[position:], rel, number, newline=True)
+        text = self.path(rel).read_text(encoding="utf-8")
+        if rel.startswith(f"{ARCHITECT}/") and "\\newleanmodule" in text:
+            self.define(rel, text)
+            return
+        self.emit(rel, list(enumerate(text.split("\n"), 1)), depth)
+
+    def emit(self, rel: str, lines: list[tuple[int, str]], depth: int) -> None:
+        """Add *lines* of file *rel*: comments out and inputs expanded, except inside verbatim
+        environments, which keep every character."""
+        verbatim = None
+        for number, raw in lines:
+            if verbatim:
+                close = re.search(r"\\end\s*\{" + re.escape(verbatim) + r"\}", raw)
+                if not close:
+                    self.add(raw, rel, number, newline=True)
+                    continue
+                self.add(raw[: close.start()], rel, number, newline=False)
+                raw, verbatim = raw[close.start() :], None
+            while True:
+                code = strip_comment(raw)
+                opening = VERBATIM.search(code)
+                head = code[: opening.end()] if opening else code
+                position = 0
+                for match in INPUT.finditer(head):
+                    self.add(head[position : match.start()], rel, number, newline=False)
+                    self.expand(match.group(1), match.group(2).strip(), f"{rel}:{number}", depth)
+                    position = match.end()
+                if not opening:
+                    self.add(head[position:], rel, number, newline=True)
+                    break
+                self.add(head[position:], rel, number, newline=False)
+                rest = raw[opening.end() :]
+                close = re.search(r"\\end\s*\{" + re.escape(opening.group(1)) + r"\}", rest)
+                if not close:
+                    self.add(rest, rel, number, newline=True)
+                    verbatim = opening.group(1)
+                    break
+                self.add(rest[: close.start()], rel, number, newline=False)
+                raw = rest[close.start() :]
+
+    def expand(self, command: str, name: str, origin: str, depth: int) -> None:
+        """Put in what \\input, \\include, \\inputleanmodule or \\inputleannode names."""
+        if command == "inputleanmodule":
+            if name in self.lean_modules and depth < 16:
+                self.emit(*self.lean_modules[name], depth + 1)
+            else:
+                self.missing.append(f"{origin}: \\inputleanmodule{{{name}}} names no module")
+        elif command == "inputleannode":
+            if name in self.lean_nodes:
+                self.visit(self.lean_nodes[name], depth + 1, origin)
+            else:
+                self.missing.append(f"{origin}: \\inputleannode{{{name}}} names no node")
+        else:
+            self.visit(name, depth + 1, origin)
+
+    def define(self, rel: str, text: str) -> None:
+        """Record what a LeanArchitect module file defines: each node's file, and the module's
+        content, which \\inputleanmodule places."""
+        code = "\n".join(strip_comment(line) for line in text.split("\n"))
+        for match in re.finditer(r"\\newleannode\s*\{([^}]*)\}\s*\{\s*\\input\s*\{([^}]*)\}\s*\}", code):
+            self.lean_nodes[match.group(1).strip()] = match.group(2).strip()
+        for match in re.finditer(r"\\newleanmodule\s*\{([^}]*)\}\s*(?=\{)", code):
+            end = group_end(code, match.end())
+            first = code.count("\n", 0, match.end()) + 1
+            body = code[match.end() + 1 : end - 1]
+            self.lean_modules[match.group(1).strip()] = (rel, list(enumerate(body.split("\n"), first)))
 
     def add(self, text: str, file: str, line: int, newline: bool) -> None:
         self.starts.append(self.size)
@@ -215,13 +305,24 @@ def macro_args(body: str, name: str) -> list[str]:
     return values
 
 
+def floats_in(text: str) -> list[tuple[str, str]]:
+    """The labels of the figures and tables in text, with which each is."""
+    found = []
+    for match in re.finditer(r"\\begin\s*\{(figure|table)(\*?)\}", text):
+        body_end, _ = environment_end(text, match.end(), match.group(1) + match.group(2))
+        for label in macro_args(text[match.end() : body_end], "label"):
+            found.append((squeeze(label), match.group(1)))
+    return found
+
+
 def flag(body: str, name: str) -> bool:
     return re.search(r"\\" + name + r"(?![A-Za-z])", body) is not None
 
 
-def read(root: Path, entry: str) -> Blueprint:
-    """The blueprint whose web entry file is root/entry."""
-    document = Document(root, entry)
+def read(root: Path, entry: str, architect: Path | None = None) -> Blueprint:
+    """The blueprint whose web entry file is root/entry. *architect* is LeanArchitect's
+    output directory, when it is not the copy in root/leanarchitect."""
+    document = Document(root, entry, architect)
     text = document.text
     problems: list[str] = list(document.missing)
     begin = re.search(r"\\begin\s*\{document\}", text)
@@ -275,17 +376,14 @@ def read(root: Path, entry: str) -> Blueprint:
         body_end, end = environment_end(text, match.end(), env)
         body = text[match.end() : body_end]
         title = None
-        if env != "proof":
-            stripped = len(body) - len(body.lstrip())
-            if body[stripped : stripped + 1] == "[":
-                close = bracket_end(body, stripped)
-                title, body = body[stripped + 1 : close - 1], body[close:]
-        else:
-            opt = optional(body, 0)
-            body = body[opt[1]:] if opt and body.lstrip().startswith("[") else body
+        stripped = len(body) - len(body.lstrip())
+        if body[stripped : stripped + 1] == "[":
+            close = bracket_end(body, stripped)
+            title, body = body[stripped + 1 : close - 1], body[close:]
         blocks.append((match.start(), end, env, title, body))
 
-    # Each block's innermost enclosing block, if any.
+    # Each block's innermost enclosing block, if any. A proof inside another block with no
+    # theorem-like environment before it there is part of that block's text.
     enclosing: list[int | None] = []
     open_blocks: list[int] = []
     for k, (start, end, *_) in enumerate(blocks):
@@ -293,33 +391,46 @@ def read(root: Path, entry: str) -> Blueprint:
             open_blocks.pop()
         enclosing.append(open_blocks[-1] if open_blocks else None)
         open_blocks.append(k)
+    absorbed = {
+        k for k, block in enumerate(blocks)
+        if block[2] == "proof" and enclosing[k] is not None
+        and not any(enclosing[j] == enclosing[k] and blocks[j][2] != "proof" for j in range(enclosing[k] + 1, k))
+    }
+    inner = [k for k in range(len(blocks)) if enclosing[k] is not None and k not in absorbed]
 
-    def own(start: int, end: int, body: str) -> str:
-        """The body without the environments nested inside it."""
+    def own(k: int, body: str, pointer: bool = False) -> str:
+        """Block k's body without the blocks nested in it that stand on their own: blanked, or
+        with *pointer* a marker where each theorem-like one was, for a reference to it."""
         result = body
-        for s, e, *_ in blocks:
-            if start < s and e <= end:
-                nested = text[s:e]
-                result = result.replace(nested, " " * len(nested), 1)
+        for j in inner:
+            if enclosing[j] == k:
+                nested = text[blocks[j][0] : blocks[j][1]]
+                stand_in = " " * len(nested) if not pointer else ("" if blocks[j][2] == "proof" else f"\x00{j}\x00")
+                result = result.replace(nested, stand_in, 1)
         return result
 
     nodes: list[Node] = []
+    node_of: dict[int, Node] = {}
+    shown: list[tuple[Node | Proof, int]] = []  # texts whose markers name nested nodes
     labels: dict[str, object] = {}
-    last: Node | None = None
-    last_unit: Unit | None = None
+    last: tuple[Node, Unit | None] | None = None  # the last outermost theorem-like environment, and its unit
     for k, (start, end, env, title, body) in enumerate(blocks):
-        if env == "proof" and enclosing[k] is not None and blocks[enclosing[k]][2] == "proof":
-            continue  # a proof inside a proof is part of it
+        if k in absorbed:
+            continue
         unit = unit_of(start)
-        mine = own(start, end, body)
+        mine = own(k, body)
+        float_labels = floats_in(mine)
         plain = masked(mine)
-        own_labels = [squeeze(label) for label in macro_args(plain, "label")]
-        equations = [squeeze(label) for label in macro_args(mine, "label") if squeeze(label) not in own_labels]
+        own_labels = [squeeze(label) for label in macro_args(plain, "label")
+                      if squeeze(label) not in {label for label, _ in float_labels}]
+        equations = [squeeze(label) for label in macro_args(mine, "label")
+                     if squeeze(label) not in own_labels and squeeze(label) not in {label for label, _ in float_labels}]
         lean = names(macro_args(mine, "lean")[-1]) if macro_args(mine, "lean") else []
         uses = names(macro_args(mine, "uses")[-1]) if macro_args(mine, "uses") else []
         where = document.where(start)
         if env == "proof":
-            proof = Proof(body, flag(mine, "leanok") or flag(mine, "mathlibok"), uses, own_labels, where)
+            proof = Proof(own(k, body, pointer=True), flag(mine, "leanok") or flag(mine, "mathlibok"), uses,
+                          own_labels, where, title, start, unit)
             target = None
             proves = macro_args(mine, "proves")
             if proves:
@@ -327,12 +438,16 @@ def read(root: Path, entry: str) -> Blueprint:
                 if not isinstance(target, Node):
                     problems.append(f"{where.file}:{where.line}: \\proves{{{squeeze(proves[-1])}}} names no theorem")
                     target = None
-            if target is None and last is not None and last_unit is unit:
-                target = last
+            if target is None and enclosing[k] is not None:
+                siblings = [j for j in range(enclosing[k] + 1, k) if enclosing[j] == enclosing[k] and j in node_of]
+                target = node_of[siblings[-1]] if siblings else None
+            elif target is None and last is not None and last[1] is unit:
+                target = last[0]
             if target is None:
                 problems.append(f"{where.file}:{where.line}: a proof with no theorem before it")
                 continue
             target.proof = proof
+            shown.append((proof, k))
             for label in own_labels:
                 labels[label] = target
                 target.labels.append(label)
@@ -340,11 +455,14 @@ def read(root: Path, entry: str) -> Blueprint:
                 labels.setdefault(label, ("equation", target))
                 if label not in target.equations:
                     target.equations.append(label)
+            for label, kind in float_labels:
+                labels.setdefault(label, (kind, target))
+                target.floats.append((label, kind))
             continue
         node = Node(
             env=env,
             title=title,
-            body=body,
+            body=own(k, body, pointer=True),
             labels=own_labels,
             lean=lean,
             leanok=flag(mine, "leanok") or flag(mine, "mathlibok"),
@@ -357,13 +475,19 @@ def read(root: Path, entry: str) -> Blueprint:
             graph=env in thms,
             equations=equations,
             offset=start,
+            floats=float_labels,
         )
         for label in own_labels:
             labels[label] = node
         for label in equations:
             labels.setdefault(label, ("equation", node))
+        for label, kind in float_labels:
+            labels.setdefault(label, (kind, node))
         nodes.append(node)
-        last, last_unit = node, unit
+        node_of[k] = node
+        shown.append((node, k))
+        if enclosing[k] is None:
+            last = (node, unit)
     for unit in units:
         if unit.label:
             labels.setdefault(unit.label, unit)
@@ -383,32 +507,53 @@ def read(root: Path, entry: str) -> Blueprint:
             node.id = f"{base}-{counters[base]}"
         taken.add(node.id)
         labels[node.id] = node
+    # A node stated inside another's text stands on its own; that text refers to it there.
+    for item, _ in shown:
+        item.body = re.sub("\x00(\\d+)\x00", lambda marker: f" (\\cref{{{node_of[int(marker.group(1))].id}}}) ",
+                           item.body)
 
-    # Prose: the runs of text between headings and the outermost environments, from the
-    # first sectioning unit to \end{document}.
+    # Prose: the runs of text between headings and the outermost environments, up to
+    # \end{document}. A list that an environment interrupts goes on after it.
     end_document = re.search(r"\\end\s*\{document\}", text)
     stop = end_document.start() if end_document else len(text)
-    events = sorted(headings + [(start, end) for k, (start, end, *_) in enumerate(blocks) if enclosing[k] is None])
+    heading_starts = {start for start, _ in headings}
+    events = sorted([(body_start, body_start), *headings,
+                     *[(start, end) for k, (start, end, *_) in enumerate(blocks) if enclosing[k] is None]])
     prose: list[Prose] = []
-    first = units[0].offset if units else stop
+    open_lists: list[str] = []
     for k, (start, end) in enumerate(events):
+        if start in heading_starts:
+            open_lists = []
         following = min(events[k + 1][0] if k + 1 < len(events) else stop, stop)
         run = text[end:following]
-        if start < first or not run.strip():
+        reopened = "".join(f"\\begin{{{env}}}" for env in open_lists)
+        for match in re.finditer(r"\\(begin|end)\s*\{(" + "|".join(LISTS) + r")\}", run):
+            if match.group(1) == "begin":
+                open_lists.append(match.group(2))
+            elif open_lists:
+                open_lists.pop()
+        if not run.strip() or end >= stop:
             continue
         offset = end + len(run) - len(run.lstrip())
+        float_labels = floats_in(run)
         equations = [squeeze(label) for label in macro_args(run, "label")
                      if squeeze(label) not in {squeeze(other) for other in macro_args(masked(run), "label")}]
-        prose.append(Prose(run.strip(), document.where(offset), unit_of(offset), offset, equations))
+        prose.append(Prose(reopened + run.strip(), document.where(offset), unit_of(offset), offset, equations,
+                           float_labels))
         for label in equations:
             labels.setdefault(label, ("equation", prose[-1]))
+        for label, kind in float_labels:
+            labels.setdefault(label, (kind, prose[-1]))
 
     # Bibliographies: each .bib that \bibliography or \addbibresource names.
     bibliography: list[str] = []
     for match in re.finditer(r"\\(?:bibliography|addbibresource)\s*(?:\[[^\]]*\])?\s*\{([^}]*)\}", text):
         for name in names(match.group(1)):
             found = document.resolve(name if name.endswith(".bib") else f"{name}.bib")
-            if found and found not in bibliography:
+            if found is None:
+                problems.append(f"{document.where(match.start()).file}:{document.where(match.start()).line}: "
+                                f"\\bibliography{{{name}}} names no file")
+            elif found not in bibliography:
                 bibliography.append(found)
 
     for node in nodes:

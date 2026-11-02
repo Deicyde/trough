@@ -1,0 +1,15 @@
+\begin{lemma}
+\label{primeCounting-is-o-id}
+\lean{Erdos392.primeCounting_is_o_id}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:2630.0-2673.32
+\leanok
+$$\pi(n) = o(n) \quad \text{as } n \to \infty.$$
+\end{lemma}
+\begin{proof}
+\leanok
+Given $\varepsilon > 0$, choose $a \neq 0$ with $\varphi(a)/a < \varepsilon/2$
+(using $\prod_{p \leq n}(1 - 1/p) \to 0$). For $n \geq a + 2$,
+$$\pi(n) \leq \frac{\varphi(a)}{a} \cdot n + \varphi(a) + \pi(a+1) + 1.$$
+Since $\varphi(a)/a < \varepsilon/2$, for $n$ large enough the constant terms are absorbed,
+giving $\pi(n) < \varepsilon n$.
+\end{proof}

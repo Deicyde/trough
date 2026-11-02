@@ -1,0 +1,39 @@
+\begin{theorem}[MellinConvolutionTransform]
+\uses{MellinConvolution}
+\label{MellinConvolutionTransform}
+\lean{MellinConvolutionTransform}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:357.0-432.26
+\leanok
+Let $f$ and $g$ be functions from $\mathbb{R}_{>0}$ to $\mathbb{C}$ such that
+  \begin{equation}
+    (x,y)\mapsto f(y)\frac{g(x/y)}yx^{s-1}
+    \label{eq:assm_integrable_Mconv}
+  \end{equation}
+  is absolutely integrable on $[0,\infty)^2$.
+  Then
+  $$\mathcal{M}(f\ast g)(s) = \mathcal{M}(f)(s)\mathcal{M}(g)(s).$$
+\end{theorem}
+\begin{proof}
+\leanok
+By Definitions \ref{MellinTransform} and \ref{MellinConvolution}
+  $$
+    \mathcal M(f\ast g)(s)=
+    \int_0^\infty \int_0^\infty f(y)g(x/y)x^{s-1}\frac{dy}ydx
+  $$
+  By (\ref{eq:assm_integrable_Mconv}) and Fubini's theorem,
+  $$
+    \mathcal M(f\ast g)(s)=
+    \int_0^\infty \int_0^\infty f(y)g(x/y)x^{s-1}dx\frac{dy}y
+  $$
+  in which we change variables from $x$ to $z=x/y$:
+  $$
+    \mathcal M(f\ast g)(s)=
+    \int_0^\infty \int_0^\infty f(y)g(z)y^{s-1}z^{s-1}dzdy
+  $$
+  which, by Definition \ref{MellinTransform}, is
+  $$
+    \mathcal M(f\ast g)(s)=
+    \mathcal M(f)(s)\mathcal M(g)(s)
+    .
+  $$
+\end{proof}

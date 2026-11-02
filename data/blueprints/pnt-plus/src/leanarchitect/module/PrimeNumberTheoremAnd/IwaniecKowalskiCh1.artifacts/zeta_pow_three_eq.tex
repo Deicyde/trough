@@ -1,0 +1,18 @@
+\begin{theorem}[zeta pow three eq]
+\label{zeta_pow_three_eq}
+\lean{ArithmeticFunction.zeta_pow_three_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1344.0-1386.6
+\leanok
+Zeta cubed: $\zeta(s)^3 = \zeta(2s) \sum_{n=1}^{\infty}\tau(n^2) n^{-s}$ for $\Re(s) > 1$.
+  \begin{verbatim}
+  This is IK (1.30).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{d_apply_prime_pow,d,LSeries.term_isMultiplicative_if_fun_isMultiplicative,LSeries_d_summable,d_isMultiplicative,LSeriesSummable_two_pow_omega,Complex.one_add_prime_cpow_ne_zero,sumOnPrimePows_apply,sumOnPrimePows}
+\leanok
+Direct Euler-product proof (independent of Ramanujan / Baby Rankin--Selberg).
+  Locally $\tau((p^k)^2)=\tau(p^{2k})=2k+1$, and $\sum_k(2k+1)x^k=(1+x)/(1-x)^2$ for $|x|<1$.
+  Multiplying by the local factor $1/(1-x^2)$ of $\zeta(2s)$ recovers $1/(1-x)^3$, the local
+  factor of $\zeta(s)^3$. Absolute convergence follows by comparing $\tau(n^2)\le d_3(n)$.
+\end{proof}

@@ -1,0 +1,33 @@
+\begin{proposition}[M\"obius form of prime number theorem]
+\label{mu-pnt}
+\lean{mu_pnt}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Consequences.lean:1923.0-1970.30
+\leanok
+We have $\sum_{n \leq x} \mu(n) = o(x)$.
+\end{proposition}
+\begin{proof}
+\uses{WeakPNT,mun}
+\leanok
+From the Dirichlet convolution identity
+    $$ \mu(n) \log n = - \sum_{d|n} \mu(d) \Lambda(n/d)$$
+  and summing we obtain
+  $$ \sum_{n \leq x} \mu(n) \log n = - \sum_{d \leq x} \mu(d) \sum_{m \leq x/d} \Lambda(m).$$
+  For any $\eps>0$, we have from the prime number theorem that
+  $$ \sum_{m \leq x/d} \Lambda(m) = x/d + O(\eps x/d) + O_\eps(1)$$
+  (divide into cases depending on whether $x/d$ is large or small compared to $\eps$).
+  We conclude that
+  $$ \sum_{n \leq x} \mu(n) \log n
+    = - x \sum_{d \leq x} \frac{\mu(d)}{d} + O(\eps x \log x) + O_\eps(x).$$
+  Applying \eqref{mun} we conclude that
+  $$ \sum_{n \leq x} \mu(n) \log n = O(\eps x \log x) + O_\eps(x).$$
+  and hence
+  $$ \sum_{n \leq x} \mu(n) \log x
+    = O(\eps x \log x) + O_\eps(x) + O( \sum_{n \leq x} (\log x - \log n) ).$$
+  From Stirling's formula one has
+  $$  \sum_{n \leq x} (\log x - \log n) = O(x)$$
+  thus
+  $$ \sum_{n \leq x} \mu(n) \log x = O(\eps x \log x) + O_\eps(x)$$
+  and thus
+  $$ \sum_{n \leq x} \mu(n) = O(\eps x) + O_\eps(\frac{x}{\log x}).$$
+  Sending $\eps \to 0$ we obtain the claim.
+\end{proof}

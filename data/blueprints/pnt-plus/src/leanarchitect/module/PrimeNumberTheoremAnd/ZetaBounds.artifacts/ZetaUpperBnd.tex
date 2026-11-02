@@ -1,0 +1,38 @@
+\begin{lemma}[ZetaUpperBnd]
+\label{ZetaUpperBnd}
+\lean{ZetaUpperBnd}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:1664.0-1709.78
+\leanok
+For any $s = \sigma + tI \in \C$, $1/2 \le \sigma\le 2, 3 < |t|$
+  and any $0 < A < 1$ sufficiently small, and $1-A/\log |t| \le \sigma$, we have
+  $$
+  |\zeta(s)| \ll \log t.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{ZetaBnd_aux2,riemannZeta0,ZetaBnd_aux1,Zeta0EqZeta}
+\leanok
+First replace $\zeta(s)$ by $\zeta_0(N,s)$ for $N = \lfloor |t| \rfloor$.
+  We estimate:
+  $$
+  |\zeta_0(N,s)| \ll
+  \sum_{1\le n \le |t|} |n^{-s}|
+  +
+  \frac{- |t|^{1-\sigma}}{|1-s|} + \frac{-|t|^{-\sigma}}{2} +
+  |t| \cdot |t| ^ {-σ} / σ
+  $$
+  $$
+  \ll
+  e^A \sum_{1\le n < |t|} n^{-1}
+  +|t|^{1-\sigma}
+  $$
+  ,
+  where we used Lemma \ref{ZetaBnd_aux2} and Lemma \ref{ZetaBnd_aux1}.
+  The first term is $\ll \log |t|$.
+  For the second term, estimate
+  $$
+  |t|^{1-\sigma}
+  \le |t|^{1-(1-A/\log |t|)}
+  = |t|^{A/\log |t|} \ll 1.
+  $$
+\end{proof}

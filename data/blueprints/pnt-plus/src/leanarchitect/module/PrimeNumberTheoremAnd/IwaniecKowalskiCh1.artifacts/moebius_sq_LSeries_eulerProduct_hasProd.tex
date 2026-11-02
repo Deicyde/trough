@@ -1,0 +1,17 @@
+\begin{theorem}[moebius-sq-LSeries-eulerProduct-hasProd]
+\label{moebius_sq_LSeries_eulerProduct_hasProd}
+\lean{ArithmeticFunction.moebius_sq_LSeries_eulerProduct_hasProd}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1510.0-1532.57
+\leanok
+For $1<\Re(s)$ we have that
+    $$\sum_{1\leq n}\mu^2(n)n^{-s}=\prod_p(1+p^{-s}).$$
+    The naming convention here is designed to match
+    \begin{verbatim}
+      riemannZeta_eulerProduct_hasProd
+    \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{LSeriesSummable_moebius_sq,moebius_sq_tsum_prime_pow,moebius_sq_LSeries.term_isMultiplicative}
+\leanok
+Immediately follows from Lemmas \ref{moebius-sq-LSeries.term-IsMultiplicative} and \ref{moebius-sq-tsum-prime-pow}.
+\end{proof}

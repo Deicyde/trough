@@ -1,0 +1,57 @@
+\begin{lemma}[BlaschkeNonZero]
+\uses{BlaschkeB,SetOfZeros}
+\label{BlaschkeNonZero}
+\lean{BlaschkeNonzero}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:751.0-843.98
+\leanok
+Let $0 < r < R<1$ and $f:\overline{\mathbb{D}_1}\to\mathbb{C}$ be analytic on
+    neighborhoods of points in $\overline{\mathbb{D}_1}$ with $f(0)\neq 0$. Then $B_f(z)\neq 0$
+    for all $z\in\overline{\mathbb{D}_r}$.
+\end{lemma}
+\begin{proof}
+\uses{CFunction,ZeroFactorization,ZeroFactor}
+\leanok
+Suppose that $z\in\mathcal{K}_f(r)$. Then we have that
+    $$C_f(z)=\frac{h_z(z)}{\displaystyle\prod_{\rho\in\mathcal{K}_f(r)\setminus\{z\}}
+      (z-\rho)^{m_f(\rho)}}.$$
+    where $h_z(z)\neq 0$ according to Lemma \ref{ZeroFactorization}. Thus, substituting
+    this into Definition \ref{BlaschkeB},
+    \begin{equation}\label{pickupPoint2}
+        |B_f(z)|=|h_z(z)|\cdot\left|R-\frac{|z|^2}{R}\right|^{m_f(z)}
+          \prod_{\rho\in\mathcal{K}_f(r)\setminus\{z\}}
+          \left|\frac{R-z\overline{\rho}/R}{z-\rho}\right|^{m_f(\rho)}.
+    \end{equation}
+    Trivially, $|h_z(z)|\neq 0$. Now note that
+    $$\left|R-\frac{|z|^2}{R}\right|=0\implies|z|=R.$$
+    However, this is a contradiction because $z\in\overline{\mathbb{D}_r}$ tells us that
+    $|z|\leq r < R$. Similarly, note that
+    $$\left|\frac{R-z\overline{\rho}/R}{z-\rho}\right|=0\implies|z|=\frac{R^2}{|\overline{\rho}|}.$$
+    However, this is also a contradiction because $\rho\in\mathcal{K}_f(r)$ tells us that
+    $R < R^2/|\overline{\rho}|=|z|$, but $z\in\overline{\mathbb{D}_r}$ tells us that
+    $|z|\leq r < R$. So, we know that
+    $$\left|R-\frac{|z|^2}{R}\right|\neq 0\qquad\text{and}\qquad
+      \left|\frac{R-z\overline{\rho}/R}{z-\rho}\right|\neq 0
+      \quad\text{for all}\quad\rho\in\mathcal{K}_f(r)\setminus\{z\}.$$
+    Applying this to Equation (\ref{pickupPoint2}) we have that $|B_f(z)|\neq 0$.
+    So, $B_f(z)\neq 0$.
+
+    Now suppose that $z\not\in\mathcal{K}_f(r)$. Then we have that
+    $$C_f(z)=\frac{f(z)}{\displaystyle\prod_{\rho\in\mathcal{K}_f(r)}(z-\rho)^{m_f(\rho)}}.$$
+    Thus, substituting this into Definition \ref{BlaschkeB},
+    \begin{equation}\label{pickupPoint3}
+        |B_f(z)|=|f(z)|\prod_{\rho\in\mathcal{K}_f(r)}
+          \left|\frac{R-z\overline{\rho}/R}{z-\rho}\right|^{m_f(\rho)}.
+    \end{equation}
+    We know that $|f(z)|\neq 0$ since $z\not\in\mathcal{K}_f(r)$. Now note that
+    $$\left|\frac{R-z\overline{\rho}/R}{z-\rho}\right|=0\implies|z|=\frac{R^2}{|\overline{\rho}|}.$$
+    However, this is a contradiction because $\rho\in\mathcal{K}_f(r)$ tells us that
+    $R < R^2/|\overline{\rho}|=|z|$, but $z\in\overline{\mathbb{D}_r}$ tells us that
+    $|z|\leq r < R$. So, we know that
+    $$\left|\frac{R-z\overline{\rho}/R}{z-\rho}\right|\neq 0
+      \quad\text{for all}\quad\rho\in\mathcal{K}_f(r).$$
+    Applying this to Equation (\ref{pickupPoint3}) we have that $|B_f(z)|\neq 0$.
+    So, $B_f(z)\neq 0$.
+
+    We have shown that $B_f(z)\neq 0$ for both $z\in\mathcal{K}_f(r)$ and
+    $z\not\in\mathcal{K}_f(r)$, so the result follows.
+\end{proof}

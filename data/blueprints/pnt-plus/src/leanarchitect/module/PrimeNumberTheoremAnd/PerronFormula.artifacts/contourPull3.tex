@@ -1,0 +1,18 @@
+\begin{lemma}[contourPull3]
+\uses{VerticalIntegral}
+\label{contourPull3}
+\lean{Perron.contourPull3}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/PerronFormula.lean:1096.0-1116.51
+\leanok
+For $x>1$ and $\sigma<-3/2$, we have
+  $$
+  \frac1{2\pi i}
+  \int_{(-3/2)}\frac{x^s}{s(s+1)}ds = \frac 1{2\pi i}
+  \int_{(\sigma)}\frac{x^s}{s(s+1)}ds.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{zeroTendstoDiff,tendsto_zero_Lower,isIntegrable,Perron.tendsto_zero_Upper,RectangleIntegral_tendsTo_VerticalIntegral,RectangleIntegral,isHolomorphicOn}
+\leanok
+Pull contour from $(-3/2)$ to $(\sigma)$.
+\end{proof}

@@ -1,0 +1,15 @@
+\begin{theorem}[zeta pow four eq]
+\label{zeta_pow_four_eq}
+\lean{ArithmeticFunction.zeta_pow_four_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:649.0-668.40
+\leanok
+Corollary: $\zeta(s)^4 = \zeta(2s) \sum_{n=1}^{\infty} \tau(n)^2 n^{-s}$ for $\Re(s) > 1$.
+  \begin{verbatim}
+  This is IK (1.29).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{sigmaR,zeta_mul_zeta_mul_zeta_mul_zeta_eq}
+\leanok
+This is a special case of the previous theorem where we set $\alpha = \beta = 0$.
+\end{proof}

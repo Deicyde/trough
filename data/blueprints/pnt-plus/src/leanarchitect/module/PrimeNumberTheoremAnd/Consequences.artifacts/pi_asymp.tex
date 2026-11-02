@@ -1,0 +1,26 @@
+\begin{theorem}[pi-asymp]
+\label{pi_asymp}
+\lean{pi_asymp}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Consequences.lean:764.0-794.52
+\leanok
+There exists a function $c(x)$ such that $c(x) = o(1)$ as $x \to \infty$ and
+  $$ \pi(x) = (1 + c(x)) \int_2^x \frac{dt}{\log t}$$
+  for all $x$ large enough.
+\end{theorem}
+\begin{proof}
+\uses{chebyshev-asymptotic}
+\leanok
+We have the identity
+  $$ \pi(x) = \frac{1}{\log x} \sum_{p \leq x} \log p
+  + \int_2^x (\sum_{p \leq t} \log p) \frac{dt}{t \log^2 t}$$
+  as can be proven by interchanging the sum and integral and using the fundamental theorem of
+  calculus.  For any $\eps$, we know from Theorem \ref{chebyshev_asymptotic} that there is $x_\eps$
+  such that $\sum_{p \leq t} \log p = t + O(\eps t)$ for $t \geq x_\eps$, hence for $x \geq x_\eps$
+  $$ \pi(x) = \frac{1}{\log x} (x + O(\eps x))
+  + \int_{x_\eps}^x (t + O(\eps t)) \frac{dt}{t \log^2 t} + O_\eps(1)$$
+  where the $O_\eps(1)$ term can depend on $x_\eps$ but is independent of $x$.  One can evaluate
+  this after an integration by parts as
+  $$ \pi(x) = (1+O(\eps)) \int_{x_\eps}^x \frac{dt}{\log t} + O_\eps(1)$$
+  $$  = (1+O(\eps)) \int_{2}^x \frac{dt}{\log t} $$
+  for $x$ large enough, giving the claim.
+\end{proof}

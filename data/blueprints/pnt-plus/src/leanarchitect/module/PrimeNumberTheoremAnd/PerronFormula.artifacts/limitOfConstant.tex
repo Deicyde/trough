@@ -1,0 +1,16 @@
+\begin{lemma}[limitOfConstant]
+\label{limitOfConstant}
+\lean{limitOfConstant}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/PerronFormula.lean:293.0-311.51
+\leanok
+Let $a:\R\to\C$ be a function, and let $\sigma>0$ be a real number. Suppose that, for all
+  $\sigma, \sigma'>0$, we have $a(\sigma')=a(\sigma)$, and that
+  $\lim_{\sigma\to\infty}a(\sigma)=0$. Then $a(\sigma)=0$.
+\end{lemma}
+\begin{proof}
+\leanok
+\begin{align*}
+  \lim_{\sigma'\to\infty}a(\sigma) &= \lim_{\sigma'\to\infty}a(\sigma') \\
+  &= 0
+  \end{align*}
+\end{proof}

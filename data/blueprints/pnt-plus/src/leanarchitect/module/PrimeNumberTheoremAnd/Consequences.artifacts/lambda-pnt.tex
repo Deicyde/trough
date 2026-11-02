@@ -1,0 +1,20 @@
+\begin{proposition}
+\label{lambda-pnt}
+\lean{lambda_pnt}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Consequences.lean:2201.0-2251.97
+\leanok
+We have $\sum_{n \leq x} \lambda(n) = o(x)$.
+\end{proposition}
+\begin{proof}
+\uses{WeakPNT,mu-pnt,mun}
+\leanok
+From the identity
+    $$ \lambda(n) = \sum_{d^2|n} \mu(n/d^2)$$
+  and summing, we have
+  $$ \sum_{n \leq x} \lambda(n) = \sum_{d \leq \sqrt{x}} \sum_{n \leq x/d^2} \mu(n).$$
+  For any $\eps>0$, we have from Proposition \ref{mu-pnt} that
+  $$ \sum_{n \leq x/d^2} \mu(n) = O(\eps x/d^2) + O_\eps(1)$$
+  and hence on summing in $d$
+  $$ \sum_{n \leq x} \lambda(n) = O(\eps x) + O_\eps(x^{1/2}).$$
+  Sending $\eps \to 0$ we obtain the claim.
+\end{proof}

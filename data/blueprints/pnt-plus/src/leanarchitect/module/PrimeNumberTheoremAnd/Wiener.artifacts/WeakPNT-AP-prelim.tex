@@ -1,0 +1,26 @@
+\begin{proposition}[WeakPNT-AP-prelim]
+\label{WeakPNT-AP-prelim}
+\lean{WeakPNT_AP_prelim}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:3955.0-3991.32
+\leanok
+If $q ≥ 1$ and $a$ is coprime to $q$, the Dirichlet series
+  $\sum_{n \leq x: n = a\ (q)} \frac{\Lambda(n)}{n^s}$ converges for $\mathrm{Re}(s) > 1$ to
+  $\frac{1}{\varphi(q)} \frac{1}{s-1} + G(s)$ where $G$ has a continuous extension to
+  $\mathrm{Re}(s)=1$.
+\end{proposition}
+\begin{proof}
+\uses{ChebyshevPsi,WeakPNT-character}
+\leanok
+We expand out the left-hand side using Lemma \ref{WeakPNT-character}.  The contribution of the
+  non-principal characters $\chi$ extend continuously to $\mathrm{Re}(s) = 1$ thanks to the
+  non-vanishing of $L(s,\chi)$ on this line (which should follow from another component of
+  this project), so it suffices to show that for the principal character $\chi_0$, that
+  $$ -\frac{L'(s,\chi_0)}{L(s,\chi_0)} - \frac{1}{s-1}$$
+  also extends continuously here.  But we already know that
+  $$ -\frac{\zeta'(s)}{\zeta(s)} - \frac{1}{s-1}$$
+  extends, and from Euler product machinery one has the identity
+  $$ \frac{L'(s,\chi_0)}{L(s,\chi_0)}
+  = \frac{\zeta'(s)}{\zeta(s)} + \sum_{p|q} \frac{\log p}{p^s-1}.$$
+  Since there are only finitely many primes dividing $q$, and each summand $\frac{\log p}{p^s-1}$
+  extends continuously, the claim follows.
+\end{proof}

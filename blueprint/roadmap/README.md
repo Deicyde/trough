@@ -7,6 +7,7 @@ Trough maps Lean formalization libraries: what each one formalizes, how its resu
 - [Mathlib](mathlib/README.md): One article per concept on Mathlib's four curated lists (overview, undergraduate, Freek's 100, 1000+), linked to its declarations, with edges collapsed from Mathlib's declaration graph.
 - [ATLAS](https://github.com/facebookresearch/atlas-lean) (17,683 Lean files): Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>.
 - [Fermat's Last Theorem (Imperial)](flt/README.md): One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses; the Verso blueprint (3 chapters) is left for later.
+- [PNT+](pnt-plus/README.md): One article per node of its LeanArchitect blueprint, which the Blueprint build workflow builds weekly with `lake build :blueprint`, with statuses from the blueprint's marks and dependencies from its uses.
 - [Polynomial Freiman-Ruzsa](pfr/README.md): One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses.
 - [Equational Theories](equational-theories/README.md): One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses; the equations and implication classes in the project's data files are left for later.
 - [Strong PNT (Math Inc)](strongpnt/README.md): One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them.
@@ -16,10 +17,6 @@ Trough maps Lean formalization libraries: what each one formalizes, how its resu
 ### AI-written libraries
 
 - [Tau Ceti](https://github.com/TauCetiProject/TauCeti) (23,408 Lean files): One article per TauCetiRoadmap roadmap (124 active, 30 completed), its Suggested.lean signatures as statements, and the named results in STATUS.md linked to Tau Ceti declarations.
-
-### Research projects with blueprints
-
-- [PNT+](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) (235 Lean files): Import the LeanArchitect blueprint (997 @[blueprint] nodes) from `lake build :blueprintJson`.
 
 ### Libraries
 

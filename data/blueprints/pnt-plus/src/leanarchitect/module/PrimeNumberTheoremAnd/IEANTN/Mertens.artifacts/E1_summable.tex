@@ -1,0 +1,13 @@
+\begin{proposition}[$E_1$ summable]
+\label{E1_summable}
+\lean{Mertens.E₁.summable}
+\discussion{1352}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:622.0-652.14
+\leanok
+The series $E_1 := \sum_p \frac{\log p}{p(p-1)}$ converges.
+\end{proposition}
+\begin{proof}
+\leanok
+We have $\sum_{n=2}^\infty \frac{\log n}{n(n-1)}$ converges by comparison with $\sum_{n=2}^\infty \frac{2\log n}{n^2}$, which converges by the integral test.  By a further application of comparison test we can conclude that $E_1$ converges as well.
+  Alternatively bound $\log n$ by $2\sqrt n$ and use the existing Mathlib API for $\sum n^{-3/2}$.
+\end{proof}

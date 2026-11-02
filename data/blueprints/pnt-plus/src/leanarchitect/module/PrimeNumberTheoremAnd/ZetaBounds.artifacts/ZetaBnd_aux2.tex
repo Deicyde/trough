@@ -1,0 +1,21 @@
+\begin{lemma}[ZetaBnd-aux2]
+\label{ZetaBnd_aux2}
+\lean{ZetaBnd_aux2}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:1457.0-1506.91
+\leanok
+Given $n ≤ t$ and $\sigma$ with $1-A/\log t \le \sigma$, we have
+  that
+  $$
+  |n^{-s}| \le n^{-1} e^A.
+  $$
+\end{lemma}
+\begin{proof}
+\leanok
+Use $|n^{-s}| = n^{-\sigma}
+  = e^{-\sigma \log n}
+  \le
+  \exp(-\left(1-\frac{A}{\log t}\right)\log n)
+  \le
+  n^{-1} e^A$,
+  since $n\le t$.
+\end{proof}

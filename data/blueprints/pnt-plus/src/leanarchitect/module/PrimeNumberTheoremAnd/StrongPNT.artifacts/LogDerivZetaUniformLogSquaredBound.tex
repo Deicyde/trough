@@ -1,0 +1,15 @@
+\begin{theorem}[LogDerivZetaUniformLogSquaredBound]
+\uses{LogDerivZetaUniformLogSquaredBoundStrip,ZeroInequality}
+\label{LogDerivZetaUniformLogSquaredBound}
+\lean{LogDerivZetaUniformLogSquaredBound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:2816.0-2845.37
+\leanok
+There exists a constant $F\in(0,1/42)$ such that for all $t\in\mathbb{R}$ with $|t|\geq 3$ one has
+    $$1-\frac{F}{\log|t|}\leq\sigma\implies\left|\frac{\zeta'}{\zeta}(\sigma+it)\right|\ll\log^2|t|$$
+    where the implied constant is uniform in $\sigma$.
+\end{theorem}
+\begin{proof}
+\uses{LogDerivZetaBdd_of_Re_ge_three_halves}
+\leanok
+Put the previous two Lemmas together.
+\end{proof}

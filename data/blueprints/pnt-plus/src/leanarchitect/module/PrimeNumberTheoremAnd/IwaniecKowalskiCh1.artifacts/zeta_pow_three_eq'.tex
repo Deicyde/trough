@@ -1,0 +1,15 @@
+\begin{theorem}[zeta pow three eq]
+\label{zeta_pow_three_eq'}
+\lean{ArithmeticFunction.zeta_pow_three_eq'}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:826.0-844.98
+\leanok
+Zeta cubed: $\zeta(s)^3 = \zeta(2s) \sum_{n=1}^{\infty}\tau(n^2) n^{-s}$.
+  \begin{verbatim}
+  This is IK (1.30).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{zeta_mul_tau_square_eq,zeta_pow_four_eq}
+\leanok
+This follows from the previous two theorems. From the corollary of Ramanujan's formula, we have $\zeta(s)^4 = \zeta(2s) \sum_{n=1}^{\infty} \tau(n)^2 n^{-s}$. From the Baby Rankin-Selberg result, we have $\zeta(s) \sum_{n=1}^{\infty} \tau(n^2) n^{-s} = \sum_{n=1}^{\infty} \tau(n)^2 n^{-s}$. Combining these two results, we can express $\zeta(s)^4$ in terms of $\zeta(s)$ and $\sum_{n=1}^{\infty} \tau(n^    2) n^{-s}$, which leads to the conclusion that $\zeta(s)^3 = \zeta(2s) \sum_{n=1}^{\infty} \tau(n^2) n^{-s}$.
+\end{proof}

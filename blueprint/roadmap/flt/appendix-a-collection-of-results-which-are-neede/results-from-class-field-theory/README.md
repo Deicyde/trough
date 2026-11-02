@@ -25,7 +25,7 @@ Continuous group cohomology $H^i(G_K,M)$ in this setting can be defined using co
 - [local\_galois\_coh\_finite](local-galois-coh-finite.md)
 - ["the dimension is 2"](local-galois-coh-dim-two.md)
 - ["top degree"](local-galois-coh-top-degree.md)
-- [Theorem: There is a “canonical” isomorphism $H^2(K,\mu_\infty)=\mathbb{Q}/\mathbb{Z}$…](theorem-chtopbestiary-1.md)
+- [Theorem: There is a “canonical” isomorphism $H^2(K,\mu_\infty)=\mathbb{Q}/\mathbb{Z}$.](theorem-chtopbestiary-1.md)
 - ["Poincaré duality"](local-galois-coh-poincare.md)
 - ["Euler-Poincaré characteristic"](local-galois-coh-euler-poincare.md)
 

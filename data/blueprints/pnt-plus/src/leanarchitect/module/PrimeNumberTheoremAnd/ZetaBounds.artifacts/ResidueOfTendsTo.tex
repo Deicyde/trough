@@ -1,0 +1,18 @@
+\begin{theorem}[ResidueOfTendsTo]
+\label{ResidueOfTendsTo}
+\lean{ResidueOfTendsTo}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:41.0-159.33
+\leanok
+If a function $f$ is holomorphic in a neighborhood of $p$ and
+  $\lim_{s\to p} (s-p)f(s) = A$, then
+  $f(s) = \frac{A}{s-p} + O(1)$ near $p$.
+\end{theorem}
+\begin{proof}
+\uses{existsDifferentiableOn_of_bddAbove}
+\leanok
+The function $(s - p)\cdot f(s)$ bounded, so by Theorem
+  \ref{existsDifferentiableOn_of_bddAbove}, there is a holomorphic function, $g$, say, so that
+  $(s-p)f(s) = g(s)$ in a neighborhood of $s=p$, and $g(p)=A$. Now because $g$ is holomorphic,
+  near $s=p$, we have $g(s)=A+O(s-p)$. Then when you divide by $(s-p)$, you get
+  $f(s) = A/(s-p) + O(1)$.
+\end{proof}

@@ -1,0 +1,17 @@
+\begin{theorem}[BorelCaratheodoryDeriv]
+\label{BorelCaratheodoryDeriv}
+\lean{BorelCaratheodoryDeriv}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:186.0-218.22
+\leanok
+Let $R,\,M>0$. Let $f$ be analytic on $|z|\leq R$ such that $f(0)=0$ and suppose
+    $\Re f(z)\leq M$ for all $|z|\leq R$. Then for any $0 < r < R$,
+    $$|f'(z)|\leq\frac{16MR^2}{(R-r)^3}$$
+    for all $|z|\leq r$.
+\end{theorem}
+\begin{proof}
+\uses{DerivativeBound}
+\leanok
+Using Lemma \ref{DerivativeBound} with $r'=(R+r)/2$, and noting that $r < R$,
+    we have that
+    $$|f'(z)|\leq\frac{4M(R+r)^2}{(R-r)^3}\leq\frac{16MR^2}{(R-r)^3}.$$
+\end{proof}

@@ -13,6 +13,10 @@ accepts a new one). With --no-text, for a library whose text trough may not
 reproduce, only structure.json is written: titles, labels, Lean names, marks
 and places.
 
+A blueprint that LeanArchitect writes needs the checkout built first, with
+`lake build :blueprint`; its output, from .lake/build/blueprint or --architect,
+is copied into src/leanarchitect/, and source.json says how it was built.
+
 Nothing is written when the blueprint names a file the checkout lacks, has no
 nodes, or has under half the nodes of the last refresh (--force writes anyway).
 """
@@ -68,6 +72,8 @@ def main() -> int:
     parser.add_argument("--no-text", dest="text", action="store_false", default=None)
     parser.add_argument("--text", dest="text", action="store_true")
     parser.add_argument("--force", action="store_true", help="write even when the node count halves")
+    parser.add_argument("--architect", type=Path,
+                        help="LeanArchitect's output, if not the checkout's .lake/build/blueprint")
     args = parser.parse_args()
 
     directory = DATA / args.id
@@ -95,7 +101,9 @@ def main() -> int:
               "text; refresh with --text to do so", file=sys.stderr)
 
     root = args.checkout / entry.rsplit("/", 1)[0] if "/" in entry else args.checkout
-    blueprint = leanblueprint.read(root, entry.rsplit("/", 1)[-1])
+    architect = args.architect or args.checkout / ".lake" / "build" / "blueprint"
+    blueprint = leanblueprint.read(root, entry.rsplit("/", 1)[-1], architect)
+    built = any(name.startswith(f"{leanblueprint.ARCHITECT}/") for name in blueprint.files)
     graph = blueprint.graph
     missing = [problem for problem in blueprint.problems if "names no file" in problem]
     if missing or not graph:
@@ -116,7 +124,8 @@ def main() -> int:
         for name in blueprint.files + blueprint.bibliography:
             target = directory / "src" / name
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(root / name, target)
+            lake = name.removeprefix(f"{leanblueprint.ARCHITECT}/")
+            shutil.copyfile(architect / lake if lake != name else root / name, target)
         shutil.copyfile(args.checkout / license_file, directory / "LICENSE")
     else:
         payload = blueprints.structure(blueprint)
@@ -130,6 +139,8 @@ def main() -> int:
         "text": text,
         "nodes": len(graph),
     }
+    if built:
+        source["build"] = "lake build :blueprint"
     source_file.write_text(json.dumps(source, indent=1) + "\n", encoding="utf-8")
     print(f"{args.id}: {len(blueprint.files)} files, {len(graph)} nodes at {source['rev'][:8]}", file=sys.stderr)
     for problem in blueprint.problems:

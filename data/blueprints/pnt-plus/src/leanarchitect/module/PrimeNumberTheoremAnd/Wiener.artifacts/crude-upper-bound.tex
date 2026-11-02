@@ -1,0 +1,14 @@
+\begin{corollary}[crude-upper-bound]
+\label{crude-upper-bound}
+\lean{crude_upper_bound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:3393.0-3535.14
+\leanok
+If $\psi: \R \to \C$ is $C^2$ and compactly supported with $f$ and $\hat \psi$ non-negative, then there exists a constant $B$ such that
+  $$ |\sum_{n=1}^\infty \frac{f(n)}{n} \hat \psi( \frac{1}{2\pi} \log \frac{n}{x} )| \leq B$$
+  for all $x > 0$.
+\end{corollary}
+\begin{proof}
+\uses{limiting-fourier-variant}
+\leanok
+This readily follows from the previous lemma and the triangle inequality.
+\end{proof}

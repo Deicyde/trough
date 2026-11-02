@@ -1,0 +1,21 @@
+\begin{theorem}[Zeta1AltFormula]
+\uses{riemannZeta1,riemannZeta0}
+\label{Zeta1AltFormula}
+\lean{Zeta1AltFormula}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:1301.0-1355.98
+\leanok
+We have that
+    $$\zeta_1(s)=\zeta_0(1,s)$$
+    where $\zeta_0(1,s)$ comes from Definition \ref{riemannZeta0}.
+\end{theorem}
+\begin{proof}
+\leanok
+Note that
+    $$\zeta_0(1,s)=1+\frac{-1}{1-s}+\frac{-1}{2}+
+      s\int_1^\infty\frac{\lfloor x\rfloor+1/2-x}{x^{s+1}}\,dx.$$
+    With minor simplifications we have
+    $$\zeta_0(1,s)=1+\frac{1}{s-1}-\frac{1}{2}+
+      \frac{s}{2}\int_1^\infty x^{-s-1}\,dx-s\int_1^\infty\{x\}\,x^{-s-1}\,dx.$$
+    The first integral evaluates to $1/s$ (when $0<\mathfrak{R}s$), so this term when multiplied
+    by the $s/2$ cancels with the $-1/2$. This exactly gives $\zeta_1$.
+\end{proof}

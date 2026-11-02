@@ -1,0 +1,12 @@
+\begin{theorem}[liouville eq moebius on squarefree]
+\uses{liouville}
+\label{liouville_eq_moebius_on_squarefree}
+\lean{ArithmeticFunction.liouville_eq_moebius_on_squarefree}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1801.0-1813.69
+\leanok
+The Liouville function agrees with the Möbius function on square-free numbers.
+\end{theorem}
+\begin{proof}
+\leanok
+The Liouville function $\lambda(n)$ is defined as $(-1)^{\Omega(n)}$, where $\Omega(n)$ counts the total number of prime factors of $n$ with multiplicity. The Möbius function $\mu(n)$ is defined as $0$ if $n$ has a squared prime factor, and otherwise it is $(-1)^{\omega(n)}$, where $\omega(n)$ counts the number of distinct prime factors of $n$. For square-free numbers, we have $\Omega(n) = \omega(n)$, since there are no repeated prime factors. Therefore, for square-free numbers, we have $\lambda(n) = (-1)^{\omega(n)} = \mu(n)$, which shows that the Liouville function agrees with the Möbius function on square-free numbers.
+\end{proof}

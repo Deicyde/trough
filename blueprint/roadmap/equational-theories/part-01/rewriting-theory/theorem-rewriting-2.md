@@ -3,7 +3,7 @@ declaration: theorem
 origin: cited
 ---
 
-# Theorem: Given a rewrite system $R$ , if for every…
+# Theorem: Given a rewrite system $R$, if for every…
 
 Given a rewrite system $R$, if for every critical pair $(t, u)$ of $R$, there is a term $v$ such that $t\rightarrow^* v\ {}^*\leftarrow u$, then $R$ is locally confluent.
 

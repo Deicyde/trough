@@ -1,0 +1,13 @@
+\begin{theorem}[sigmaR-eq-zeta-mul-powR]
+\uses{sigmaR,powR}
+\label{sigmaR_eq_zeta_mul_powR}
+\lean{ArithmeticFunction.sigmaR_eq_zeta_mul_powR}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:520.0-533.75
+\leanok
+$\sigma^R(\nu) = \zeta * \text{pow}^R(\nu)$, where $\zeta$ is the constant function $1$.
+\end{theorem}
+\begin{proof}
+\uses{sigmaR_apply}
+\leanok
+The function $\sigma^R(\nu)$ is defined as the sum of the $\nu$-th powers of the divisors of $n$. The function $\text{pow}^R(\nu)$ is defined as $n \mapsto n^\nu$ for $n \neq 0$ and $0$ for $n = 0$. The Dirichlet convolution of $\zeta$ (the constant function $1$) and $\text{pow}^R(\nu)$ is exactly $\sigma^R(\nu)$, since for each divisor $d$ of $n$, we have $(\zeta * \text{pow}^R(\nu))(n) = \sum_{d|n} 1 \cdot d^\nu = \sigma^R(\nu)(n)$. Thus, we have $\sigma^R(\nu) = \zeta * \text{pow}^R(\nu)$.
+\end{proof}

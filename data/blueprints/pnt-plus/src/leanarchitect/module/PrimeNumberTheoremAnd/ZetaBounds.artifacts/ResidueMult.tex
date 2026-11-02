@@ -1,0 +1,27 @@
+\begin{theorem}[ResidueMult]
+\label{ResidueMult}
+\lean{ResidueMult}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:499.0-572.11
+\leanok
+If $f$ has a simple pole at $p$ with residue $A$, and $g$ is holomorphic near $p$, then the
+  residue of $f \cdot g$ at $p$ is $A \cdot g(p)$. That is, we assume that
+  $$
+  f(s) = \frac{A}{s - p} + O(1)$$
+  near $p$, and that $g$ is holomorphic near $p$. Then
+  $$
+  f(s) \cdot g(s) = \frac{A \cdot g(p)}{s - p} + O(1).$$
+\end{theorem}
+\begin{proof}
+\leanok
+Elementary calculation.
+  $$
+  f(s) * g(s) - \frac{A * g(p)}{s - p} =
+  \left(f(s) * g(s) - \frac{A * g(s)}{s - p}\right)
+  + \left(\frac{A * g(s) - A * g(p)}{s - p}\right).
+  $$
+  The first term is $g(s)(f(s) - \frac{A}{s - p})$, which is bounded near $p$ by the assumption
+  on $f$
+   and the fact that $g$ is holomorphic near $p$.
+  The second term is $A$ times the log derivative of $g$ at $p$, which is bounded by the assumption
+  that  $g$ is holomorphic.
+\end{proof}

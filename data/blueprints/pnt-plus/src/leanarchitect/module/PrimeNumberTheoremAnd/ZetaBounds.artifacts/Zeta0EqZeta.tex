@@ -1,0 +1,16 @@
+\begin{lemma}[Zeta0EqZeta]
+\uses{riemannZeta0}
+\label{Zeta0EqZeta}
+\lean{Zeta0EqZeta}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:1383.0-1421.11
+\leanok
+For $\Re(s)>0$, $s\ne1$, and for any $N$,
+  $$
+  \zeta_0(N,s) = \zeta(s).
+  $$
+\end{lemma}
+\begin{proof}
+\uses{isPathConnected_aux,ZetaSum_aux2,HolomorphicOn_riemannZeta0}
+\leanok
+Use Lemma \ref{ZetaSum_aux2} and the Definition \ref{riemannZeta0}.
+\end{proof}

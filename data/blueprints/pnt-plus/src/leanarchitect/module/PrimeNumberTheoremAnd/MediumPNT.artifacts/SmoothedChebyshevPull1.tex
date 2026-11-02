@@ -1,0 +1,19 @@
+\begin{theorem}[SmoothedChebyshevPull1]
+\uses{I1,SmoothedChebyshev,I37,I9,Smooth1,I2,I8}
+\label{SmoothedChebyshevPull1}
+\lean{SmoothedChebyshevPull1}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:1130.0-1311.10
+\leanok
+We have that
+  $$\psi_{\epsilon}(X) =
+  \mathcal{M}(\widetilde{1_{\epsilon}})(1)
+  X^{1} +
+  I_1 - I_2 +I_{37} + I_8 + I_9
+  .
+  $$
+\end{theorem}
+\begin{proof}
+\uses{Smooth1Nonneg,ResidueMult,SmoothedChebyshevPull1_aux_integrable,ResidueTheoremOnRectangleWithSimplePole,BddAbove_to_IsBigO,riemannZetaLogDerivResidue,Smooth1Properties_above,existsDifferentiableOn_of_bddAbove,Smooth1ContinuousAt,Smooth1LeOne,RectangleIntegral,VerticalIntegral}
+\leanok
+Pull rectangle contours and evaluate the pole at $s=1$.
+\end{proof}

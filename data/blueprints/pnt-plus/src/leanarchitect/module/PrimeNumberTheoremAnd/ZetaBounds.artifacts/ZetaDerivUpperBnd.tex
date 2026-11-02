@@ -1,0 +1,26 @@
+\begin{lemma}[ZetaDerivUpperBnd]
+\label{ZetaDerivUpperBnd}
+\lean{ZetaDerivUpperBnd}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:2129.0-2174.49
+\leanok
+For any $s = \sigma + tI \in \C$, $1/2 \le \sigma\le 2, 3 < |t|$,
+  there is an $A>0$ so that for $1-A/\log t \le \sigma$, we have
+  $$
+  |\zeta'(s)| \ll \log^2 t.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{ZetaBnd_aux2,ZetaUpperBnd,DerivUpperBnd_aux7,riemannZeta0,ZetaBnd_aux1,Zeta0EqZeta}
+\leanok
+First replace $\zeta(s)$ by $\zeta_0(N,s)$ for $N = \lfloor |t| \rfloor$.
+  Differentiating term by term, we get:
+  $$
+  \zeta'(s) = -\sum_{1\le n < N} n^{-s} \log n
+  + \frac{N^{1 - s}}{(1 - s)^2} + \frac{N^{1 - s} \log N} {1 - s}
+  + \frac{N^{-s}\log N}{2} +
+  \int_N^\infty \frac{\lfloor x\rfloor + 1/2 - x}{x^{s+1}} \, dx
+  -s \int_N^\infty \log x \frac{\lfloor x\rfloor + 1/2 - x}{x^{s+1}} \, dx
+  .
+  $$
+  Estimate as before, with an extra factor of $\log |t|$.
+\end{proof}

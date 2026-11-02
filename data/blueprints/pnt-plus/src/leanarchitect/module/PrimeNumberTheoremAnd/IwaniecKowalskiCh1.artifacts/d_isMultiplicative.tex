@@ -1,0 +1,13 @@
+\begin{theorem}[d isMultiplicative]
+\uses{d}
+\label{d_isMultiplicative}
+\lean{ArithmeticFunction.d_isMultiplicative}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:275.0-288.40
+\leanok
+$d_k$ is multiplicative for all $k$.
+\end{theorem}
+\begin{proof}
+\uses{d_succ,d_zero}
+\leanok
+The function $d_k$ is defined as the $k$-fold Dirichlet convolution of $\zeta$. Since $\zeta$ is a multiplicative function, and the Dirichlet convolution of multiplicative functions is also multiplicative, it follows that $d_k$ is multiplicative for all $k$. This can be shown by induction on $k$, using the fact that the convolution of a multiplicative function with another multiplicative function remains multiplicative.
+\end{proof}

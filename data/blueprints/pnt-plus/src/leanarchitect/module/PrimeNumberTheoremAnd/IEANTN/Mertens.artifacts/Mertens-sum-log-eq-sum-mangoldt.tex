@@ -1,0 +1,19 @@
+\begin{lemma}[Partial sum of logarithm as sum of $\Lambda(d)/d$]
+\label{Mertens-sum-log-eq-sum-mangoldt}
+\lean{Mertens.sum_log_eq_sum_mangoldt}
+\discussion{1306}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:442.0-461.66
+\leanok
+For any real $x$, one has
+$$ \sum_{n \leq x} \log n = \sum_{d \leq x} \Lambda(d) \lfloor \frac{x}{d} \rfloor.$$
+\end{lemma}
+\begin{proof}
+\leanok
+We have
+\begin{align*}
+\sum_{n \leq x} \log n
+&= \sum_{n \leq x} \sum_{d \mid n} \Lambda(d)
+= \sum_{d \leq x} \Lambda(d) \sum_{n \leq x, d \mid n} 1
+= \sum_{d \leq x} \Lambda(d) \left\lfloor \frac{x}{d} \right\rfloor.
+\end{align*}
+\end{proof}

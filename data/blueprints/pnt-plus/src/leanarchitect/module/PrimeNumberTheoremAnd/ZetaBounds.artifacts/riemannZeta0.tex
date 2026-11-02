@@ -1,0 +1,13 @@
+\begin{definition}[riemannZeta0]
+\label{riemannZeta0}
+\lean{riemannZeta0}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:632.0-646.69
+\leanok
+For any natural $N\ge1$, we define
+  $$
+  \zeta_0(N,s) :=
+  \sum_{1\le n \le N} \frac1{n^s}
+  +
+  \frac{- N^{1-s}}{1-s} + \frac{-N^{-s}}{2} + s \int_N^\infty \frac{\lfloor x\rfloor + 1/2 - x}{x^{s+1}} \, dx
+  $$
+\end{definition}

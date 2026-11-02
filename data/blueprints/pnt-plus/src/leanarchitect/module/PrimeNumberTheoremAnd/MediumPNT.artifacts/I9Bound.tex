@@ -1,0 +1,18 @@
+\begin{lemma}[I9Bound]
+\uses{I9}
+\label{I9Bound}
+\lean{I9Bound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:2168.0-2192.37
+\leanok
+We have that
+  $$
+  \left|I_{1}(\nu, \epsilon, X, T)\
+  \right| \ll \frac{X}{\epsilon T}
+  .
+  $$
+\end{lemma}
+\begin{proof}
+\uses{I1,I1Bound,Smooth1,deriv_riemannZeta_conj}
+\leanok
+We deduce this from the corresponding bound for $I_1$, using the symmetry between $I_1$ and $I_9$.
+\end{proof}

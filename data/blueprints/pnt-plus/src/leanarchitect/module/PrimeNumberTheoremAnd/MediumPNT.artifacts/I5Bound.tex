@@ -1,0 +1,18 @@
+\begin{lemma}[I5Bound]
+\uses{I5}
+\label{I5Bound}
+\lean{I5Bound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:3302.0-3460.38
+\leanok
+We have that
+  $$
+  \left|I_5(\nu,\epsilon,X,\sigma_2)\right|\ll\frac{X^{\sigma_2}}{\epsilon}.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{Smooth1,MellinOfSmooth1b}
+\leanok
+Here $\zeta'/\zeta$ is absolutely bounded on the compact interval $\sigma_2 + i [-3,3]$, and
+  $X^s$ is bounded by $X^{\sigma_2}$. Using Theorem \ref{MellinOfSmooth1b} gives the bound
+  $1/(\epsilon |s|^2)$, which is bounded by $C'/\epsilon$. Putting these together gives the result.
+\end{proof}

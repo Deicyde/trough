@@ -1,0 +1,14 @@
+\begin{corollary}[Lower bound for $M$]
+\uses{Meissel-Mertens-constant}
+\label{Mertens-second-constant-prime-ge}
+\lean{Mertens.M.ge}
+\discussion{1324}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1992.0-2009.57
+\leanok
+One has $M \geq -\frac{2 + E_1}{\log 2} + 1 - \log \log 2$.
+\end{corollary}
+\begin{proof}
+\uses{Mertens-first-theorem-prime-bounded,Mertens-first-error-prime,Mertens-first-error-mangoldt,Mertens-first-error-prime-ge,Mertens-first-error-mangoldt-ge}
+\leanok
+Insert Lemma \ref{Mertens-first-error-prime-ge} into the definition of $M$ and use the fact that $\int_2^\infty \frac{dt}{t \log^2 t} = 1/\log 2$.
+\end{proof}

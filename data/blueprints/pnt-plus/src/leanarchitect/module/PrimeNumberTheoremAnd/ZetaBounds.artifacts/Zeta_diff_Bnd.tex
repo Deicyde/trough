@@ -1,0 +1,18 @@
+\begin{lemma}[Zeta-diff-Bnd]
+\label{Zeta_diff_Bnd}
+\lean{Zeta_diff_Bnd}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:2650.0-2677.67
+\leanok
+For any $A>0$ sufficiently small, there is a constant $C>0$ so that
+  whenever $1- A / \log t \le \sigma_1 < \sigma_2\le 2$ and $3 < |t|$, we have that:
+  $$
+  |\zeta (\sigma_2 + it) - \zeta (\sigma_1 + it)|
+  \le C (\log |t|)^2 (\sigma_2 - \sigma_1).
+  $$
+\end{lemma}
+\begin{proof}
+\uses{Zeta_eq_int_derivZeta,ZetaDerivUpperBnd}
+\leanok
+Use Lemma \ref{Zeta_eq_int_derivZeta} and
+  estimate trivially using Lemma \ref{ZetaDerivUpperBnd}.
+\end{proof}

@@ -1,0 +1,26 @@
+\begin{theorem}[ZerosBound]
+\uses{SetOfZeros}
+\label{ZerosBound}
+\lean{ZerosBound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:847.0-900.74
+\leanok
+Let $0< r < R<1$. If $f:\mathbb{C}\to\mathbb{C}$ is a function analytic on
+    neighborhoods of points in $\overline{\mathbb{D}_1}$ with $f(0)=1$ and $|f(z)|\leq B$
+    for $|z|\leq R$, then
+    $$\sum_{\rho\in\mathcal{K}_f(r)}m_f(\rho)\leq\frac{\log B}{\log(R/r)}.$$
+\end{theorem}
+\begin{proof}
+\uses{BlaschkeB,DiskBound,BlaschkeOfZero}
+\leanok
+Since $f(0)=1$, by Lemma \ref{BlaschkeOfZero} we know that
+    $$|B_f(0)|
+      =|f(0)|\prod_{\rho\in\mathcal{K}_f(r)}\left(\frac{R}{|\rho|}\right)^{m_f(\rho)}
+      =\prod_{\rho\in\mathcal{K}_f(r)}\left(\frac{R}{|\rho|}\right)^{m_f(\rho)}.$$
+    Thus, substituting this into Definition \ref{BlaschkeB},
+    $$(R/r)^{\sum_{\rho\in\mathcal{K}_f(r)}m_f(\rho)}
+      =\prod_{\rho\in\mathcal{K}_f(r)}\left(\frac{R}{r}\right)^{m_f(\rho)}
+      \leq\prod_{\rho\in\mathcal{K}_f(r)}\left(\frac{R}{|\rho|}\right)^{m_f(\rho)}
+      =|B_f(0)|\leq B$$
+    whereby Lemma \ref{DiskBound} we know that $|B_f(z)|\leq B$ for all $|z|\leq R$.
+    Taking the logarithm of both sides and rearranging gives the desired result.
+\end{proof}

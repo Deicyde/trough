@@ -1,0 +1,14 @@
+\begin{lemma}[Partial sum of logarithm identity]
+\label{Mertens-sum-log}
+\lean{Mertens.sum_log_eq}
+\discussion{1303}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:314.0-340.29
+\leanok
+For any $x \geq 1$, one has
+$$ \sum_{n \leq x} \log n = x \log x - (\{ x \}-1/2) \log x - x + 1 + \int_1^x (\{ t \}-1/2) \frac{dt}{t} $$
+(NOTE: this identity is not actually needed in the proof of Mertens' theorems, but may be worth recording nevertheless.)
+\end{lemma}
+\begin{proof}
+\leanok
+Apply the Euler-Maclaurin formula.
+\end{proof}

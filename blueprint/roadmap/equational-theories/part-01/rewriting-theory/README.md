@@ -1,6 +1,6 @@
 # Rewriting theory
 
-We briefly recall the basics of rewrite theory necessary to our exposition, following mostly Baader and Nipkow \[Baader and Nipkow 1998\], and generally omitting proofs when they can be found there.
+We briefly recall the basics of rewrite theory necessary to our exposition, following mostly Baader and Nipkow (Baader and Nipkow 1998), and generally omitting proofs when they can be found there.
 
 We first work in the abstract taking an arbitrary set $A$, with a given equivalence relation over it which we denote $\approx$. We consider a relation $R$ over $A$.
 
@@ -33,7 +33,7 @@ The strategy is therefore, for a given $\approx$ to find an $R$ which is (strong
 
 The task is helped by the following facts, which we state here also without proof.
 
-- [Theorem: ; $R$ is Church-Rosser iff it is confluent.…](theorem-rewriting-1.md)
+- [Theorem: $R$ is Church-Rosser iff it is confluent.…](theorem-rewriting-1.md)
 
 This can be leveraged by looking at the particulars of the equivalence relation of interest, namely quantified equations over syntactic trees as in [Some abstract nonsense](../some-abstract-nonsense/README.md), and a theory $\Gamma$, which we will usually take to be finite (usually it will have a single equation!).
 
@@ -53,7 +53,7 @@ $$
 
 We have $a\cdot (b \cdot (c \cdot d)) \rightarrow^* b$, but also $a\cdot (b\cdot (c\cdot d))\rightarrow^* a\cdot c$ for any $a, b, c, d$ (which are both in normal form).
 
-Knuth and Bendix \[Knuth and Bendix 1970\] described a technique by which a theory or set of equations $\Gamma$ could be turned into a complete system. The crucial idea is the observation that the non-local-confluence of a rewrite system can be reduced to a finite (if the system is finite) set of “worst offenders” for confluence. If these pairs can be *joined* (reduced to the same term) then the system is confluent. It is possible to compute such pairs.
+Knuth and Bendix (Knuth and Bendix 1970) described a technique by which a theory or set of equations $\Gamma$ could be turned into a complete system. The crucial idea is the observation that the non-local-confluence of a rewrite system can be reduced to a finite (if the system is finite) set of “worst offenders” for confluence. If these pairs can be *joined* (reduced to the same term) then the system is confluent. It is possible to compute such pairs.
 
 The high-level idea is therefore to identify such pairs, and add them as an unoriented equation, to be oriented if possible, and repeating until no un-joinable pairs exist. If this procedure succeeds and terminates, the system is successfully completed, and as a result the theory $\Gamma$ is decidable, via the completed system as described above.
 
@@ -63,7 +63,7 @@ We use the intuitive notions of “position in a word” and “word at a positi
 
 Note that, in the above setting, $t\leftarrow l_1\sigma\rightarrow u$, giving us a candidate for non-local-confluence. The next lemma states that these candidates are the most general ones.
 
-- [Theorem: Given a rewrite system $R$ , if for every…](theorem-rewriting-2.md)
+- [Theorem: Given a rewrite system $R$, if for every…](theorem-rewriting-2.md)
 
 Note that building critical pairs of a finite system is computable. Therefore the only step of the completion process which require genuine creativity is the choice of the orientation of the equations, along with the proof that the orientation is strongly normalizing.
 

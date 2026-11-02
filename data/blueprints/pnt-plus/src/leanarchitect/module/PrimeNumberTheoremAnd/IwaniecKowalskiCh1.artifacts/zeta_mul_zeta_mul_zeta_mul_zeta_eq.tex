@@ -1,0 +1,14 @@
+\begin{theorem}[zeta mul zeta mul zeta mul zeta eq]
+\uses{sigmaR}
+\label{zeta_mul_zeta_mul_zeta_mul_zeta_eq}
+\lean{ArithmeticFunction.zeta_mul_zeta_mul_zeta_mul_zeta_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:628.0-647.7
+\leanok
+Ramanujan formula: $\zeta(s)\zeta(s-\alpha)\zeta(s-\beta)\zeta(s-\alpha-\beta)=\zeta(2s-\alpha-\beta) \sum_{n=1}^{\infty} \sigma_\alpha(n)\sigma_\beta(n)n^{-s}$ for $\Re(s) > 1$, $\Re(s-\alpha) > 1$, $\Re(s-\beta) > 1$, and $\Re(s-\alpha-\beta) > 1$.
+  \begin{verbatim}
+  This is IK (1.28).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+This is a direct consequence of the multiplicative properties of the functions involved and the definition of the L-series. The left-hand side can be expressed as a product of L-series corresponding to the functions $\zeta$, $n \mapsto n^{-\alpha}$, and $n \mapsto n^{-\beta}$. The right-hand side involves the L-series of the convolution of $\sigma_\alpha$ and $\sigma_\beta$, which can be expressed in terms of the L-series of $\zeta$ and the power functions. By carefully applying the properties of Dirichlet convolutions and the definitions of the L-series, we can derive the stated formula.
+\end{proof}

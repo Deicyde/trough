@@ -1,0 +1,16 @@
+\begin{sublemma}
+\uses{params-set,initial-factorization-def,balance-def}
+\label{initial-factorization-tiny-prime-ge}
+\lean{Erdos392.Params.initial.balance_tiny_prime_ge}
+\discussion{515}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:1902.0-1929.73
+\leanok
+A tiny prime $p \leq L$ can be in deficit by at most $M\log n + ML\pi(n)$.
+\end{sublemma}
+\begin{proof}
+\uses{factorization-def}
+\leanok
+In addition to the Legendre calculations, one potentially removes factors of the
+  form $plq$ with $l \leq L$ and $q \leq n$ a prime up to $M$ times each, with at most $L$ copies
+  of $p$ removed at each factor.
+\end{proof}

@@ -1,0 +1,20 @@
+\begin{theorem}[LSeries totient eq]
+\label{LSeries_totient_eq}
+\lean{ArithmeticFunction.LSeries_totient_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1845.0-1883.17
+\leanok
+Euler totient series: $\sum_{n=1}^{\infty} \varphi(n) n^{-s} = \zeta(s-1)/\zeta(s)$ for $\Re(s) > 2$.
+  \begin{verbatim}
+  This is IK (1.35). The L-series converges absolutely for Re(s) > 2
+  (using φ(n) ≤ n to bound terms; the original hypothesis 1 < Re(s) is incorrect).
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{LSeries_powR_eq,powR}
+\leanok
+The Euler totient function $\varphi(n)$ counts the positive integers up to $n$ that are relatively prime to $n$. It is a multiplicative function, and its value at prime powers is given by $\varphi(p^k) = p^k - p^{k-1}$. The Dirichlet series of $\varphi$ can be expressed as an Euler product over primes:
+\[
+L(\varphi, s) = \prod_{p} \left(1 + \varphi(p)p^{-s} + \varphi(p^2)p^{-2s} + \ldots\right) = \prod_{p} \left(1 - p^{-s  +1}\right)^{-1} \left(1 - p^{-s}\right) = \frac{\zeta(s-1)}{\zeta(s)}.
+\]
+  The L-series converges absolutely for Re(s) > 2, using φ(n) ≤ n to bound the terms.
+\end{proof}

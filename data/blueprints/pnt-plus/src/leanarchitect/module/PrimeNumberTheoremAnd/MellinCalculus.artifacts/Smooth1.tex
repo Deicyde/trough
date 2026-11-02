@@ -1,0 +1,23 @@
+\begin{definition}[Smooth1]
+\label{Smooth1}
+\lean{Smooth1}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:795.0-816.77
+\leanok
+Let $\epsilon>0$. Then we define the smooth function $\widetilde{1_{\epsilon}}$ from
+  $\mathbb{R}_{>0}$ to $\mathbb{C}$ by
+  $$\widetilde{1_{\epsilon}} = 1_{(0,1]}\ast\nu_\epsilon.$$
+\end{definition}
+\begin{proof}
+\uses{DeltaSpike,MellinConvolution}
+\leanok
+Let $c:=2^\epsilon > 1$, in terms of which we wish to prove
+  $$
+    -1 < c \log c - c .
+  $$
+  Letting $f(x):=x\log x - x$, we can rewrite this as $f(1) < f(c)$.
+  Since
+  $$
+    \frac {d}{dx}f(x) = \log x > 0 ,
+  $$
+  $f$ is monotone increasing on [1, \infty), and we are done.
+\end{proof}

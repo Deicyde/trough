@@ -1,0 +1,15 @@
+\begin{theorem}[deriv-conj-conj]
+\label{deriv_conj_conj'}
+\lean{deriv_conj_conj'}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaConj.lean:12.0-28.6
+\leanok
+Let $f : \mathbb{C} \to \mathbb{C}$ be a function at $p \in \mathbb{C}$ with derivative $a$.
+    Then the derivative of the function $g(z) = \overline{f(\overline{z})}$ at $\overline{p}$ is
+    $\overline{a}$.
+\end{theorem}
+\begin{proof}
+\leanok
+We proceed by case analysis on whether $f$ is differentiable at $p$. If $f$ is differentiable
+    at $p$, then we can apply the previous theorem. If $f$ is not differentiable at $p$, then
+    neither is $g$, and both derivatives have the default value of zero.
+\end{proof}

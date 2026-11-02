@@ -1,0 +1,45 @@
+\begin{theorem}[ShiftTwoBound]
+\uses{ZeroWindow}
+\label{ShiftTwoBound}
+\lean{ShiftTwoBound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/StrongPNT.lean:1810.0-1881.44
+\leanok
+For all $\delta\in (0,1)$ and $t\in\mathbb{R}$ with $|t|\geq 2$ we have
+    $$-\Re \left(\frac{\zeta'}{\zeta}(1+\delta+2it)\right)\ll\log|t|.$$
+\end{theorem}
+\begin{proof}
+\uses{SumBoundI}
+\leanok
+Note that, for $\rho\in\mathcal{Z}_{2t}$
+    \begin{align*}
+        \Re \left(\frac{1}{1+\delta+2it-\rho}\right)
+          &=\Re \left(\frac{1+\delta-2it-\overline{\rho}}
+            {(1+\delta+2it-\rho)(1+\delta-2it-\overline{\rho})}\right) \\
+          &=\frac{\Re (1+\delta-2it-\overline{\rho})}{|1+\delta+2it-\rho|^2}
+            =\frac{1+\delta-\Re \rho}{(1+\delta-\Re \rho)^2+(2t-\mathfrak{I}\rho)^2}.
+    \end{align*}
+    Now since $\rho\in\mathcal{Z}_{2t}$, we have that $|\rho-(3/2+2it)|\leq 3/4$. So,
+    we have $\Re \rho\in[3/4,9/4]$ and $\mathfrak{I}\rho\in[2t-3/4,2t+3/4]$. Additionally,
+    we know that $\zeta(\rho)=0$. This implies the stronger condition that $\Re \rho\in[3/4,1]$.
+    Thus,
+    $$\delta\leq 1+\delta-\Re \rho\qquad\text{and}\qquad
+      (1+\delta-\Re \rho)^2+(2t-\mathfrak{I}\rho)^2\leq 25/16+9/16=17/8.$$
+    Which implies that
+    \begin{equation}\label{pickupPoint4}
+        0<\frac{8}{17}\,\delta
+          \leq\frac{1+\delta-\Re \rho}{(1+\delta-\Re \rho)^2+(2t-\mathfrak{I}\rho)^2}
+          =\Re \left(\frac{1}{1+\delta+2it-\rho}\right).
+    \end{equation}
+    Note that, from Lemma \ref{SumBoundI}, we have
+    $$\sum_{\rho\in\mathcal{Z}_{2t}}m_\zeta(\rho)\,
+      \Re \left(\frac{1}{1+\delta+2it-\rho}\right)
+      -\Re \left(\frac{\zeta'}{\zeta}(1+\delta+2it)\right)
+      \leq\left|\frac{\zeta'}{\zeta}(1+\delta+2it)
+      -\sum_{\rho\in\mathcal{Z}_{2t}}\frac{m_\zeta(\rho)}{1+\delta+2it-\rho}\right|
+      \ll\log|2t|.$$
+    Since $m_\zeta(\rho)\geq 0$ for all $\rho\in\mathcal{Z}_{2t}$, the inequality from
+    Equation (\ref{pickupPoint4}) tells us that by subtracting the sum from both sides
+    we have
+    $$-\Re \left(\frac{\zeta'}{\zeta}(1+\delta+2it)\right)\ll\log|2t|.$$
+    Noting that $\log|2t|=\log(2)+\log|t|\leq2\log|t|$ completes the proof.
+\end{proof}

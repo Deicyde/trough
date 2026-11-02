@@ -1,0 +1,19 @@
+\begin{lemma}[residuePull2]
+\uses{VerticalIntegral}
+\label{residuePull2}
+\lean{Perron.residuePull2}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/PerronFormula.lean:1059.0-1092.12
+\leanok
+For $x>1$, we have
+  $$
+  \frac1{2\pi i}
+  \int_{(-1/2)}\frac{x^s}{s(s+1)}ds = -1/x +
+  \frac 1{2\pi i}
+  \int_{(-3/2)}\frac{x^s}{s(s+1)}ds.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{HolomorphicOn.vanishesOnRectangle,tendsto_zero_Lower,isIntegrable,Perron.tendsto_zero_Upper,RectangleBorder,residueAtNegOne,RectangleIntegral_tendsTo_VerticalIntegral,RectangleIntegral,isHolomorphicOn}
+\leanok
+Pull contour from $(-1/2)$ to $(-3/2)$.
+\end{proof}

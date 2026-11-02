@@ -1,0 +1,12 @@
+\begin{theorem}[moebius-sq-eq]
+\label{moebius_sq_eq}
+\lean{ArithmeticFunction.moebius_sq_eq}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1721.0-1735.96
+\leanok
+I-K (1.33): $\mu^2(n) = \sum_{d^2|n} \mu(d)$.
+\end{theorem}
+\begin{proof}
+\uses{sum_moebius_sq_divisors,sum_moebius_sq_divisors_IsMultiplicative,sum_moebius_sq_divisors_apply,sum_moebius_sq_divisors_apply_prime_pow}
+\leanok
+Apply the previous two lemmas.
+\end{proof}

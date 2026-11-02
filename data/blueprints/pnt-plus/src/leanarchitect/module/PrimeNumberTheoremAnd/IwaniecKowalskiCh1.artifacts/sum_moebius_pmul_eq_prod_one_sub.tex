@@ -1,0 +1,16 @@
+\begin{theorem}[sum moebius pmul eq prod one sub]
+\label{sum_moebius_pmul_eq_prod_one_sub}
+\lean{ArithmeticFunction.sum_moebius_pmul_eq_prod_one_sub}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:97.0-145.69
+\leanok
+If $g$ is a multiplicative arithmetic function, then for any $n \neq 0$,
+    $\sum_{d | n} \mu(d) \cdot g(d) = \prod_{p | n} (1 - g(p))$.
+      \begin{verbatim}
+  Upstream issue has been created #1240.
+  \end{verbatim}
+\end{theorem}
+\begin{proof}
+\uses{sum_divisors_mul_of_coprime}
+\leanok
+Multiply out and collect terms.
+\end{proof}

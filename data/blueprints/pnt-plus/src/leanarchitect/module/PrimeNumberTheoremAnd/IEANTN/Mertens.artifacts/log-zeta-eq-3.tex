@@ -1,0 +1,12 @@
+\begin{sublemma}[First integral identity]
+\label{log-zeta-eq-3}
+\lean{_private.PrimeNumberTheoremAnd.IEANTN.Mertens.0.Mertens.mul_integ_log_log_eq}
+\discussion{1584}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1465.0-1476.31
+\leanok
+If $s > 1$ then $(s-1) \int_1^\infty \log \log x \cdot x^{-s}\ dx = -\log (s-1) + \Gamma'(1)$.
+\end{sublemma}
+\begin{proof}
+\leanok
+Writing $t = \log x$, the LHS is $(s-1) \int_0^\infty \log t e^{-(s-1) t}\ dt$.  Now differentiate $\Gamma(z) = (s-1)^z \int_0^\infty t^{z-1} e^{-(s-1)t}\ dt$ in $z$ at $z=1$.
+\end{proof}

@@ -1,0 +1,26 @@
+\begin{theorem}[SmoothedChebyshevDirichlet]
+\uses{SmoothedChebyshev,Smooth1}
+\label{SmoothedChebyshevDirichlet}
+\lean{SmoothedChebyshevDirichlet}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:262.0-379.28
+\leanok
+We have that
+  $$\psi_{\epsilon}(X) = \sum_{n=1}^\infty \Lambda(n)\widetilde{1_{\epsilon}}(n/X).$$
+\end{theorem}
+\begin{proof}
+\uses{Smooth1Nonneg,Smooth1Properties_above,Smooth1ContinuousAt,SmoothedChebyshevDirichlet_aux_integrable,LogDerivativeDirichlet,Smooth1LeOne,SmoothedChebyshevDirichlet_aux_tsum_integral}
+\leanok
+We have that
+  $$\psi_{\epsilon}(X) = \frac{1}{2\pi i}\int_{(2)}\sum_{n=1}^\infty \frac{\Lambda(n)}{n^s}
+  \mathcal{M}(\widetilde{1_{\epsilon}})(s)
+  X^{s}ds.$$
+  We have enough decay (thanks to quadratic decay of $\mathcal{M}(\widetilde{1_{\epsilon}})$) to
+  justify the interchange of summation and integration. We then get
+  $$\psi_{\epsilon}(X) =
+  \sum_{n=1}^\infty \Lambda(n)\frac{1}{2\pi i}\int_{(2)}
+  \mathcal{M}(\widetilde{1_{\epsilon}})(s)
+  (n/X)^{-s}
+  ds
+  $$
+  and apply the Mellin inversion formula.
+\end{proof}

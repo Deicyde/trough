@@ -1,0 +1,13 @@
+\begin{theorem}[moebius-sq-LSeries.term-isMultiplicative]
+\label{moebius_sq_LSeries.term_isMultiplicative}
+\lean{ArithmeticFunction.moebius_sq_LSeries.term_isMultiplicative}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1430.0-1444.179
+\leanok
+We have that $n\mapsto \mu^2(n)/n^{s}$ is a multiplicative function.
+\end{theorem}
+\begin{proof}
+\uses{powOfMultiplicative_isMultiplicative,LSeries.term_isMultiplicative_if_fun_isMultiplicative}
+\leanok
+Follows as a consequence of Lemma \ref{LSeries.term-isMultiplicative-if-fun-isMultiplicative}
+    and \ref{moebius-sq-isMultiplicative}.
+\end{proof}

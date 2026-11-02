@@ -1,0 +1,20 @@
+\begin{corollary}[Smoothed Wiener-Ikehara]
+\label{WienerIkeharaSmooth}
+\lean{wiener_ikehara_smooth}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Wiener.lean:1948.0-2018.79
+\leanok
+If $\Psi: (0,\infty) \to \C$ is smooth and compactly supported away from the origin, then,
+  $$ \sum_{n=1}^\infty f(n) \Psi( \frac{n}{x} ) = A x \int_0^\infty \Psi(y)\ dy + o(x)$$
+  as $x \to \infty$.
+\end{corollary}
+\begin{proof}
+\uses{schwarz-id,bij}
+\leanok
+By Lemma \ref{bij}, we can write
+  $$ y \Psi(y) = \hat \psi( \frac{1}{2\pi} \log y )$$
+  for all $y>0$ and some Schwartz function $\psi$.  Making this substitution, the claim is then
+  equivalent after standard manipulations to
+  $$ \sum_{n=1}^\infty \frac{f(n)}{n} \hat \psi( \frac{1}{2\pi} \log \frac{n}{x} )
+    = A \int_{-\infty}^\infty \hat \psi(\frac{u}{2\pi})\ du + o(1)$$
+  and the claim follows from Lemma \ref{schwarz-id}.
+\end{proof}

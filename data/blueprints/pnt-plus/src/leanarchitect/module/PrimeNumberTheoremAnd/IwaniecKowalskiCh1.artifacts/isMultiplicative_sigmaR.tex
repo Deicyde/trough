@@ -1,0 +1,15 @@
+\begin{theorem}[isMultiplicative-sigmaR]
+\uses{sigmaR}
+\label{isMultiplicative_sigmaR}
+\lean{ArithmeticFunction.isMultiplicative_sigmaR}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:535.0-549.64
+\leanok
+For fixed $s$ function $n\mapsto\sigma^R_s(n)$ is multiplicative.
+\end{theorem}
+\begin{proof}
+\uses{isMultiplicative_powR,sigmaR_eq_zeta_mul_powR,powR}
+\leanok
+Recall from Lemma \ref{sigmaR-eq-zeta-mul-powR} that $\sigma^R$ is $\zeta$ convolved with
+    Definition \ref{powR}. Since both of these are multiplicative functions, their convolution is
+    also multiplicative.
+\end{proof}

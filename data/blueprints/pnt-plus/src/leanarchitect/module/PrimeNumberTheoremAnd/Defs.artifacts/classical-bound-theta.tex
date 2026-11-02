@@ -1,0 +1,17 @@
+\begin{definition}[Definitions 1, 5, FKS2]
+\uses{Etheta-def}
+\label{classical-bound-theta}
+\lean{Eθ.classicalBound}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/Defs.lean:138.0-154.45
+\leanok
+We say that $E_\theta$ satisfies a \emph{classical bound}
+  with parameters $A, B, C, R, x_0$ if for all
+  $x \geq x_0$ we have
+  \[ E_\theta(x) \leq A \left(\frac{\log x}{R}\right)^B
+     \exp\left(-C \left(\frac{\log x}{R}\right)^{1/2}
+     \right). \]
+  We say that it obeys a \emph{numerical bound} with
+  parameter $\varepsilon(x_0)$ if for all $x \geq x_0$
+  we have
+  \[ E_\theta(x) \leq \varepsilon(x_0). \]
+\end{definition}

@@ -1,0 +1,14 @@
+\begin{corollary}[Upper bound for $M$]
+\uses{Meissel-Mertens-constant}
+\label{Mertens-second-constant-prime-le}
+\lean{Mertens.M.le}
+\discussion{1323}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Mertens.lean:1973.0-1990.57
+\leanok
+One has $M \leq \frac{\log 4 + 4}{\log 2} + 1 - \log \log 2$.
+\end{corollary}
+\begin{proof}
+\uses{Mertens-first-error-prime-le,Mertens-first-theorem-prime-bounded,Mertens-first-error-prime}
+\leanok
+Insert Lemma \ref{Mertens-first-error-prime-le} into the definition of $M$ and use the fact that $\int_2^\infty \frac{dt}{t \log^2 t} = 1/\log 2$.
+\end{proof}

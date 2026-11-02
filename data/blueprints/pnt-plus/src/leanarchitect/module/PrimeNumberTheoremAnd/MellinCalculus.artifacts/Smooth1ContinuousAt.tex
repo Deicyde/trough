@@ -1,0 +1,18 @@
+\begin{lemma}[Smooth1ContinuousAt]
+\uses{Smooth1}
+\label{Smooth1ContinuousAt}
+\lean{Smooth1ContinuousAt}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:1389.0-1485.46
+\leanok
+Fix a nonnegative, continuously differentiable function $F$ on $\mathbb{R}$ with support in
+  $[1/2,2]$. Then for any $\epsilon>0$, the function
+  $x \mapsto \int_{(0,\infty)} x^{1+it} \widetilde{1_{\epsilon}}(x) dx$ is continuous at any $y>0$.
+\end{lemma}
+\begin{proof}
+\uses{DeltaSpike,MellinConvolution,MellinConvolutionSymmetric}
+\leanok
+Use Lemma \ref{MellinconvolutionSymmetric} to write $\widetilde{1_{\epsilon}}(x)$ as an integral
+  over an integral near $1$, in particular avoiding the singularity at $0$. The integrand may be
+  bounded by $2^{\epsilon}\nu_\epsilon(t)$ which is independent of $x$ and we can use dominated
+  convergence to prove continuity.
+\end{proof}

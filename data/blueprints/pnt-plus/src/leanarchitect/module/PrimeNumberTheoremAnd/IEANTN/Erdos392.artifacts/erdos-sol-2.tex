@@ -1,0 +1,15 @@
+\begin{theorem}
+\label{erdos-sol-2}
+\lean{Erdos392.Solution_2}
+\discussion{649}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean:3128.0-3178.34
+\leanok
+One can factorize $n!$ into at most $n/2 - n / 2\log n + o(n / \log n)$
+  numbers of size at most $n^2$.-
+\end{theorem}
+\begin{proof}
+\uses{factorization-def,balance-def,erdos-sol-1,balance-zero}
+\leanok
+Group the factorization arising in Theorem \ref{erdos-sol-1} into pairs, using
+  Lemma \ref{balance-zero}.
+\end{proof}

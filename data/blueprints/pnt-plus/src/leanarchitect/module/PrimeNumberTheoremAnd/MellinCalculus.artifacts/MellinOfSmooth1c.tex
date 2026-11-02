@@ -1,0 +1,15 @@
+\begin{lemma}[MellinOfSmooth1c]
+\uses{Smooth1}
+\label{MellinOfSmooth1c}
+\lean{MellinOfSmooth1c}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MellinCalculus.lean:1363.0-1385.10
+\leanok
+At $s=1$, we have
+  $$\mathcal{M}(\widetilde{1_{\epsilon}})(1) = 1+O(\epsilon)).$$
+\end{lemma}
+\begin{proof}
+\uses{MellinOfDeltaSpikeAt1_asymp,MellinOfSmooth1a}
+\leanok
+Follows from Lemmas \ref{MellinOfSmooth1a}, \ref{MellinOfDeltaSpikeAt1} and
+  \ref{MellinOfDeltaSpikeAt1_asymp}.
+\end{proof}

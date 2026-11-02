@@ -52,7 +52,7 @@ The “Obelix” law, studied further in [The Asterix equation](../../infinite-m
 
 - [Equation 1571](eq1571.md)
 
-Introduced in \[[Mendelsohn and Padmanabhan 1975](https://doi.org/10.1016/0021-8693%2875%2990169-6)\]. As shown in [Consequences of 1571](../../implications-between-selected-laws/1571-impl.md), this law characterizes abelian groups of exponent two.
+Introduced in ([Mendelsohn and Padmanabhan 1975](https://doi.org/10.1016/0021-8693%2875%2990169-6)). As shown in [Consequences of 1571](../../implications-between-selected-laws/1571-impl.md), this law characterizes abelian groups of exponent two.
 
 - [Equation 1648](eq1648.md)
 
@@ -66,7 +66,7 @@ These two laws admit infinite models on the natural numbers arising from the mod
 
 - [Equation 1689](eq1689.md)
 
-Mentioned in \[[Kisielewicz 1997](https://doi.org/10.1007/s000120050057)\]. See [1689 is equivalent to 2](../../implications-between-selected-laws/1689-equiv-2.md).
+Mentioned in ([Kisielewicz 1997](https://doi.org/10.1007/s000120050057)). See [1689 is equivalent to 2](../../implications-between-selected-laws/1689-equiv-2.md).
 
 - [Equation 1701](eq1701.md)
 
@@ -74,6 +74,6 @@ This law admits infinite models on the natural numbers arising from the modified
 
 - [Equation 2662](eq2662.md)
 
-Appears in \[[Mendelsohn and Padmanabhan 1975](https://doi.org/10.1016/0021-8693%2875%2990169-6)\].
+Appears in ([Mendelsohn and Padmanabhan 1975](https://doi.org/10.1016/0021-8693%2875%2990169-6)).
 
 - [Equation 3167](eq3167.md)

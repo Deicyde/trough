@@ -1,0 +1,13 @@
+\begin{theorem}[LSeries d eq riemannZeta pow]
+\uses{d}
+\label{LSeries_d_eq_riemannZeta_pow}
+\lean{ArithmeticFunction.LSeries_d_eq_riemannZeta_pow}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:250.0-272.40
+\leanok
+The $L$-series of $d_k$ equals $\zeta(s)^k$ for $\Re(s) > 1$.
+\end{theorem}
+\begin{proof}
+\uses{d_succ,LSeries_d_summable,d_zero}
+\leanok
+From the definition of $d_k$ as the $k$-fold Dirichlet convolution of $\zeta$, we can express $d_k$ as $\zeta^k$. The L-series of a Dirichlet convolution corresponds to the product of the L-series of the individual functions. Since $L(\zeta, s)$ is the Riemann zeta function $\zeta(s)$, it follows that $L(d_k, s) = L(\zeta^k, s) = (L(\zeta, s))^k = \zeta(s)^k$ for $\Re(s) > 1$ where the series converges.
+\end{proof}

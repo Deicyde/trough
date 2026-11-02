@@ -1,0 +1,17 @@
+\begin{theorem}[Complex.one-add-prime-cpow-ne-zero]
+\label{Complex.one_add_prime_cpow_ne_zero}
+\lean{ArithmeticFunction.Complex.one_add_prime_cpow_ne_zero}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean:1060.0-1082.59
+\leanok
+For $1<\Re(s)$ and $p$ prime, we have that $1+p^{-s}\neq 0$. The naming convention is to mimic
+    \begin{verbatim}
+      Complex.one_sub_prime_cpow_ne_zero
+    \end{verbatim}
+\end{theorem}
+\begin{proof}
+\leanok
+Suppose for contradiction $1+p^{-s}=0$, then $|p^{-s}|=1$. However, this can not happen per
+    \begin{verbatim}
+      Complex.norm_prime_cpow_le_one_half
+    \end{verbatim}
+\end{proof}

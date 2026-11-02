@@ -1,0 +1,15 @@
+\begin{lemma}[IBound-aux1]
+\label{IBound_aux1}
+\lean{IBound_aux1}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/MediumPNT.lean:1732.0-1777.31
+\leanok
+Given a natural number $k$ and a real number $X_0 > 0$, there exists $C \geq 1$ so that for all $X \geq X_0$,
+  $$
+  \log^k X \le C \cdot X.
+  $$
+\end{lemma}
+\begin{proof}
+\leanok
+We use the fact that $\log^k X / X$ goes to $0$ as $X \to \infty$.
+  Then we use the extreme value theorem to find a constant $C$ that works for all $X \geq X_0$.
+\end{proof}

@@ -1,0 +1,43 @@
+# Erdos problem 392
+
+The proof here is adapted from <https://www.erdosproblems.com/forum/thread/392\#post-2696> which in turn is inspired by the arguments in <https://arxiv.org/abs/2503.20170>.
+
+## [factorization-def to initial-factorization-medium-pri…](part-01/README.md)
+
+- [factorization-def](part-01/factorization-def.md)
+- [waste-def](part-01/waste-def.md)
+- [balance-def](part-01/balance-def.md)
+- [balance-zero](part-01/balance-zero.md)
+- [waste-eq](part-01/waste-eq.md)
+- [score-def](part-01/score-def.md)
+- [score-eq](part-01/score-eq.md)
+- [score-lower-1](part-01/score-lower-1.md)
+- [score-lower-2](part-01/score-lower-2.md)
+- [score-lower-3](part-01/score-lower-3.md)
+- [score-lowest](part-01/score-lowest.md)
+- [card-bound](part-01/card-bound.md)
+- [params-set](part-01/params-set.md)
+- [initial-factorization-def](part-01/initial-factorization-def.md)
+- [initial-factorization-card](part-01/initial-factorization-card.md)
+- [initial-factorization-waste](part-01/initial-factorization-waste.md)
+- [initial-factorization-large-prime-le](part-01/initial-factorization-large-prime-le.md)
+- [initial-factorization-large-prime-ge](part-01/initial-factorization-large-prime-ge.md)
+- [initial-factorization-medium-prime-le](part-01/initial-factorization-medium-prime-le.md)
+- [initial-factorization-medium-prime-ge](part-01/initial-factorization-medium-prime-ge.md)
+
+## [initial-factorization-small-prim… to erdos-sol-2](part-02/README.md)
+
+- [initial-factorization-small-prime-le](part-02/initial-factorization-small-prime-le.md)
+- [initial-factorization-small-prime-ge](part-02/initial-factorization-small-prime-ge.md)
+- [initial-factorization-tiny-prime-ge](part-02/initial-factorization-tiny-prime-ge.md)
+- [initial-score-bound](part-02/initial-score-bound.md)
+- [bound-score-1](part-02/bound-score-1.md)
+- [bound-score-2](part-02/bound-score-2.md)
+- [bound-score-3](part-02/bound-score-3.md)
+- [primeCounting-is-o-id](part-02/primecounting-is-o-id.md)
+- [bound-score-4](part-02/bound-score-4.md)
+- [primeCounting-le-bound](part-02/primecounting-le-bound.md)
+- [bound-score-5](part-02/bound-score-5.md)
+- [initial-score](part-02/initial-score.md)
+- [erdos-sol-1](part-02/erdos-sol-1.md)
+- [erdos-sol-2](part-02/erdos-sol-2.md)

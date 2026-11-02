@@ -1,0 +1,17 @@
+\begin{lemma}[ZetaLowerBound3]
+\label{ZetaLowerBound3}
+\lean{ZetaLowerBound3}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:2359.0-2454.37
+\leanok
+There exists a $c>0$ such that for all $1 < \sigma <= 2$ and $3 < |t|$,
+  $$
+  c \frac{(\sigma-1)^{3/4}}{(\log |t|)^{1/4}} \le |\zeta(\sigma + tI)|.
+  $$
+\end{lemma}
+\begin{proof}
+\uses{ZetaUpperBnd,ZetaNear1BndExact}
+\leanok
+Combine Lemma \ref{ZetaLowerBound2} with upper bounds for
+  $|\zeta(\sigma)|$ (from Lemma \ref{ZetaNear1BndExact}) and
+  $|\zeta(\sigma+2it)|$ (from Lemma \ref{ZetaUpperBnd}).
+\end{proof}

@@ -29,7 +29,7 @@ The key theorem about hardly ramified representations is the following.
 
 - [hardly\_ramified\_reducible](hardly-ramified-reducible.md)
 
-Note that this (deep) claim is a consequence of Serre's conjecture \[[Serre 1987](https://doi.org/10.1215/S0012-7094-87-05413-5)\], now a theorem of Khare and Wintenberger \[[Khare and Wintenberger 2009](https://doi.org/10.1007/s00222-009-0206-6)\], and indeed we shall use methods introduced by Khare and Wintenberger to prove this special case of Serre's conjecture. Given this result, we can deduce Theorem [Wiles,Taylor–Wiles, Ribet,…](../../first-reductions-of-the-problem/reduction-to-two-big-theorems/wiles-frey.md) (which we restate here) easily:
+Note that this (deep) claim is a consequence of Serre's conjecture ([Serre 1987](https://doi.org/10.1215/S0012-7094-87-05413-5)), now a theorem of Khare and Wintenberger ([Khare and Wintenberger 2009](https://doi.org/10.1007/s00222-009-0206-6)), and indeed we shall use methods introduced by Khare and Wintenberger to prove this special case of Serre's conjecture. Given this result, we can deduce Theorem [Wiles,Taylor–Wiles, Ribet,…](../../first-reductions-of-the-problem/reduction-to-two-big-theorems/wiles-frey.md) (which we restate here) easily:
 
 - [Wiles\_Frey\_again](wiles-frey-again.md)
 
@@ -58,6 +58,8 @@ And we can use this to essentially completely classify the hardly ramified 3-adi
 - [hardly\_ramified\_3adic\_reducible](hardly-ramified-3adic-reducible.md)
 
 Theorem [hardly\_ramified\_reducible](hardly-ramified-reducible.md) (if $\ell\geq 3$ is a prime and $\overline{\rho}:\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to\operatorname{GL}_2(\mathbb{Z}/\ell\mathbb{Z})$ is hardly ramified, then $\overline{\rho}$ is reducible) is an easy consequence of these theorems, as we now show.
+
+*The proof of [Theorem hardly\_ramified\_reducible](hardly-ramified-reducible.md) is shown with its statement.*
 
 What remains then (modulo several results which were known in the 1980s), is to prove the three theorems [hardly\_ramified\_lifts](hardly-ramified-lifts.md), [hardly\_ramified\_spreads\_out](hardly-ramified-spreads-out.md) and [hardly\_ramified\_3adic\_reducible](hardly-ramified-3adic-reducible.md). By far the easiest is theorem [hardly\_ramified\_3adic\_reducible](hardly-ramified-3adic-reducible.md); this follows from old estimates of Fontaine (ultimately relying on bounds for root discriminants due to Odlyzko and Poitou), originally developed to prove that there was no nontrivial abelian scheme over $\mathbb{Z}.$ The other two theorems are deeper, and both use modern variants of Wiles' $R=T$ machinery.
 

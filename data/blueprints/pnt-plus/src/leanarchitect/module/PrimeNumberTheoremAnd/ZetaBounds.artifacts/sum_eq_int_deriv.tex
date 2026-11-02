@@ -1,0 +1,18 @@
+\begin{lemma}[sum-eq-int-deriv]
+\label{sum_eq_int_deriv}
+\lean{sum_eq_int_deriv}
+% at /home/runner/work/trough/trough/library/PrimeNumberTheoremAnd/ZetaBounds.lean:669.0-703.6
+\leanok
+Let $a < b$, and let $\phi$ be continuously differentiable on $[a, b]$.
+  Then
+  \[
+  \sum_{a < n \le b} \phi(n) = \int_a^b \phi(x) \, dx
+    + \left(\lfloor b \rfloor + \frac{1}{2} - b\right) \phi(b)
+    - \left(\lfloor a \rfloor + \frac{1}{2} - a\right) \phi(a)
+    - \int_a^b \left(\lfloor x \rfloor + \frac{1}{2} - x\right) \phi'(x) \, dx.
+  \]
+\end{lemma}
+\begin{proof}
+\leanok
+This is first order Euler-Maclaurin.
+\end{proof}

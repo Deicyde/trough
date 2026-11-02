@@ -11,6 +11,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ## Blueprints
 
 - `data/blueprints/flt/`: the TeX of [Fermat's Last Theorem (Imperial)'s blueprint](https://github.com/ImperialCollegeLondon/FLT), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/pnt-plus/`: the TeX of [PNT+'s blueprint](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd), pinned in its source.json, Apache-2.0; the license is copied beside it.
 - `data/blueprints/pfr/`: the TeX of [Polynomial Freiman-Ruzsa's blueprint](https://github.com/teorth/pfr), pinned in its source.json, Apache-2.0; the license is copied beside it.
 - `data/blueprints/equational-theories/`: the TeX of [Equational Theories's blueprint](https://github.com/teorth/equational_theories), pinned in its source.json, Apache-2.0; the license is copied beside it.
 - `data/blueprints/strongpnt/structure.json`: the titles, labels, Lean names, marks and places of [Strong PNT (Math Inc)'s blueprint](https://github.com/math-inc/strongpnt); it gives no license, so its text is not copied.

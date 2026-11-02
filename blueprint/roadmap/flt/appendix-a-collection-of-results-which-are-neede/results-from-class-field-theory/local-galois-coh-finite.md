@@ -14,7 +14,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-This is Proposition 14 in section 5.2 of \[Serre 2002\].
+This is Proposition 14 in section 5.2 of (Serre 2002).
 
 ## Sources
 
