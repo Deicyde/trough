@@ -39,13 +39,17 @@ BuffonsNeedle.buffon_long.{u_1} {Ω : Type u_1} [MeasureTheory.MeasureSpace Ω] 
 
 - [Bochner integral](../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Conditional probability](../../overview/probability-theory/definitions-in-probability-theory/conditional-probability.md)
-- [Giry monad](../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
+- [Inverse trigonometric functions](../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
 - [Lebesgue measure (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Measurable function](../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 
 ## Proof depends on
 
+- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Compactness in terms of filters](../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Fubini's theorem](../../overview/analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
+- [The Triangle Inequality](the-triangle-inequality.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

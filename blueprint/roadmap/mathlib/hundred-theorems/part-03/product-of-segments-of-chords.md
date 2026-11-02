@@ -29,7 +29,7 @@ EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_pi.{u_1, u_2} 
 - [Affine span](../../overview/geometry/affine-and-euclidean-geometry/affine-span.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

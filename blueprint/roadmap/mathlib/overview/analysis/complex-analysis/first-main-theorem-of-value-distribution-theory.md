@@ -23,13 +23,15 @@ ValueDistribution.characteristic_sub_characteristic_inv_le {f : ℂ → ℂ} {R 
 
 - [Analytic function](../differentiability/analytic-function.md)
 - [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Lebesgue measure (Measures and integral calculus)](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Logarithm](../special-functions/logarithm.md)
 
 ## Proof depends on
 
-- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 
 ## Sources
 

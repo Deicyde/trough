@@ -26,7 +26,6 @@ HasStrictDerivAt.of_local_left_inverse.{u} {𝕜 : Type u} [NontriviallyNormedFi
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Proof depends on

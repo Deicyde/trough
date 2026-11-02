@@ -23,7 +23,6 @@ Nat.sum_four_squares (n : ℕ) : ∃ a b c d, a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 = n
 - [Characteristic p](../field-theory/characteristic-p.md)
 - [Characteristic zero](../field-theory/characteristic-zero.md)
 - [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
-- [Euclid's' algorithm](../divisibility-in-integral-domains/euclids-algorithm.md)
 - [Field](../field-theory/field.md)
 - [Finitely supported function](../../data-structures/maps/finitely-supported-function.md)
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)

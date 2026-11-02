@@ -22,18 +22,25 @@ TendstoLocallyUniformlyOn.differentiableOn.{u_1, u_2} {E : Type u_1} {ι : Type 
 ## Depends on
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../../overview/general-algebra/numbers/complex-number.md)
 - [Holomorphic functions](holomorphic-functions.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Proof depends on
 
+- [Ball](../../../overview/topology/metric-spaces/ball.md)
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean domain](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Extreme value theorem](../../../overview/topology/topological-algebra/extreme-value-theorem.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

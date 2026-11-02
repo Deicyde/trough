@@ -20,12 +20,10 @@ Freek Wiedijk's list (no. 7) and the 1000+ list (Q472883) also cite `jacobiSym.q
 
 ## Depends on
 
-- [Euclid's' algorithm](../divisibility-in-integral-domains/euclids-algorithm.md)
 - [Field](../field-theory/field.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Group morphism](../group-theory/part-01/group-morphism.md)
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on

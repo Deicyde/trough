@@ -29,7 +29,6 @@ QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed.{u_2, u_3} {K : Type 
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Polar form of a quadratic](../../../overview/linear-algebra/bilinear-and-quadratic-forms/polar-form-of-a-quadratic.md)
 - [Quadratic form](../../../overview/linear-algebra/bilinear-and-quadratic-forms/quadratic-form.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

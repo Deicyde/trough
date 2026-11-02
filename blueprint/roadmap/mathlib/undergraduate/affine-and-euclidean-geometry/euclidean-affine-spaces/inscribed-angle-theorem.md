@@ -23,15 +23,13 @@ Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq.{u_1} {V : T
 ## Depends on
 
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Determinant of vectors](../../linear-algebra/multilinearity/determinant-of-vectors.md)
 - [Existence of orthonormal basis](../../../overview/linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Inverse trigonometric functions](../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
 - [Isomorphism with $K^n$](../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Orientation of a $\R$-vector space](../../linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
 

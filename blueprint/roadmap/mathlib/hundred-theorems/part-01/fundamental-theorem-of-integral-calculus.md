@@ -39,19 +39,22 @@ intervalIntegral.integral_eq_sub_of_hasDeriv_right_of_le.{u_3} {E : Type u_3} [N
 ## Depends on
 
 - [Bochner integral](../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Lebesgue measure (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Topological module](../../overview/topology/topological-algebra/topological-module.md)
 
 ## Proof depends on
 
 - [Affine space](../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Compactness in terms of filters](../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Differentiable function between normed vector spaces](../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Dual of a normed space](../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Extended real number](../../overview/general-algebra/numbers/extended-real-number.md)
 - [Local convexity](../../overview/analysis/topological-vector-spaces/local-convexity.md)
 - [Measurable function](../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

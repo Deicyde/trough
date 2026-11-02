@@ -26,20 +26,18 @@ differentiable_tsum.{u_1, u_2, u_3, u_4} {α : Type u_1} {𝕜 : Type u_2} {E : 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Differentiable functions](../../multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Metric structure](../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 
-- [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
+- [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Connectedness](../../../overview/topology/general-topology/part-01/connectedness.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 - [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
+- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

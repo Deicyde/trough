@@ -27,7 +27,6 @@ maximal_orthonormal_iff_basis_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} 
 ## Proof depends on
 
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Orthogonal complement](../../../overview/analysis/hilbert-spaces/orthogonal-complement.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)

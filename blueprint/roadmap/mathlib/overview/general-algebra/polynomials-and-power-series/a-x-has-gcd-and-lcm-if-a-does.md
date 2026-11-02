@@ -19,7 +19,6 @@ Polynomial.normalizedGcdMonoid.{u_1} {R : Type u_1} [CommRing R] [NormalizedGCDM
 
 - [Greatest common divisor](../divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Least common multiple](../divisibility-in-integral-domains/least-common-multiple.md)
-- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](polynomial-in-one-indeterminate.md)
 - [Ring](../rings/ring.md)
 

@@ -20,14 +20,17 @@ mellinInv_mellin_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ
 ## Depends on
 
 - [Bochner integral](../../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Carathéodory's theorem (measure theory)](../../28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 
+- [Change of variables formula](../../../../overview/analysis/measures-and-integral-calculus/part-02/change-of-variables-formula.md)
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Euclidean domain](../../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Fourier theorem](../../43-abstract-harmonic-analysis/fourier-theorem.md)
+- [Inverse trigonometric functions](../../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
+- [Logarithm](../../../../overview/analysis/special-functions/logarithm.md)
 
 ## Sources
 

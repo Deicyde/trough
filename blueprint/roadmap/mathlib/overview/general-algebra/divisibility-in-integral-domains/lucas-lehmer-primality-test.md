@@ -17,7 +17,7 @@ lucas_lehmer_sufficiency (p : ℕ) (w : 1 < p) : LucasLehmerTest p → Nat.Prime
 ## Depends on
 
 - [Irreducible element](irreducible-element.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ring](../rings/ring.md)
 
 ## Proof depends on
 

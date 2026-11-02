@@ -24,10 +24,13 @@ ProbabilityTheory.measure_limsup_eq_one.{u_1} {Ω : Type u_1} {m0 : MeasurableSp
 
 ## Proof depends on
 
-- [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Approximation by step functions](../../measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
+- [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Conditional expectation](../../../overview/probability-theory/definitions-in-probability-theory/conditional-expectation.md)
 - [Independence of random variables](../../../overview/probability-theory/random-variables-and-their-laws/independence-of-random-variables.md)
 - [Independent sigma-algebras](../../../overview/probability-theory/definitions-in-probability-theory/independent-sigma-algebras.md)
+- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Probability measure](../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 
 ## Sources

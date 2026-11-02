@@ -33,6 +33,7 @@ Theorems100.heron.{u_1, u_2} {V : Type u_1} {P : Type u_2} [NormedAddCommGroup V
 
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [The Law of Cosines](../part-05/the-law-of-cosines.md)
 
 ## Sources

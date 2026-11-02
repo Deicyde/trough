@@ -29,19 +29,17 @@ MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure.{u_1}
 - [Cardinal](../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Compactness in terms of filters](../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Convex subsets](../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite-dimensionality](../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Linear independence](../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Measurable function](../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Positive measure](../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Continuous function](../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Induced topology](../../overview/topology/general-topology/part-01/induced-topology.md)
 
 ## Sources
 

@@ -27,7 +27,6 @@ Module.End.exists_eigenvalue.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K] 
 
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
 - [Basis](../fundamentals/basis.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

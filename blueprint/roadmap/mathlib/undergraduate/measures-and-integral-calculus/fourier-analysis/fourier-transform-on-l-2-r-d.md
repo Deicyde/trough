@@ -19,13 +19,18 @@ MeasureTheory.Lp.fourierTransformₗᵢ.{u_1, u_2} (E : Type u_1) (F : Type u_2)
 
 ## Depends on
 
-- [Fourier transforms on $\mathcal{S}(\R^d)$](../../distribution-calculus/spaces-s-r-d/fourier-transforms-on-s-r-d.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
+- [$L^p$ space](../../../overview/analysis/measures-and-integral-calculus/part-01/l-p-space.md)
+- [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Complex number](../../../overview/general-algebra/numbers/complex-number.md)
+- [Extension by continuity](../../../overview/topology/general-topology/part-01/extension-by-continuity.md)
+- [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Kernel of a linear map](../../linear-algebra/fundamentals/kernel-of-a-linear-map.md)
+- [Lebesgue measure (Measure theory)](../measure-theory/lebesgue-measure.md)
 - [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
+- [Schwartz space](../../../overview/analysis/distribution-theory/schwartz-space.md)
+- [Vector-valued integrable function (Bochner integral)](../../../overview/analysis/measures-and-integral-calculus/part-01/vector-valued-integrable-function-bochner-integr.md)
 
 ## Sources
 

@@ -26,7 +26,6 @@ EuclideanGeometry.dist_sq_eq_dist_mul_dist_of_angle_eq_pi_div_two.{u_1, u_2} {V 
 - [Affine function](../../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Angle](../../../../overview/geometry/affine-and-euclidean-geometry/angle.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

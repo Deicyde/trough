@@ -36,7 +36,8 @@ MeasureTheory.tendstoUniformlyOn_of_ae_tendsto.{u_1, u_2, u_3} {α : Type u_1} {
 
 - [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
+- [Sum of a Geometric Series](../../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
 - [Uniform convergence norm (sup-norm)](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/uniform-convergence-norm-sup-norm.md)
 
 ## Sources

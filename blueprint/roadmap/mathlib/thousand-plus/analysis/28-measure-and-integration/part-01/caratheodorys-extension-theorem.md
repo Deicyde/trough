@@ -39,7 +39,6 @@ MeasureTheory.AddContent.measure_eq.{u_1} {α : Type u_1} {C : Set (Set α)} {s 
 
 - [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources

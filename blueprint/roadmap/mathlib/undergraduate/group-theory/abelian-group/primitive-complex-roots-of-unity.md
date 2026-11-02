@@ -19,13 +19,13 @@ Complex.isPrimitiveRoot_iff (ζ : ℂ) (n : ℕ) (hn : n ≠ 0) :
 ## Depends on
 
 - [Cos (extension of trigonometric functions to the complex plane)](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Coprime element](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
 - [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

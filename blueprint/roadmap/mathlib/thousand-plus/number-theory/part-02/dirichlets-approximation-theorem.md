@@ -52,9 +52,7 @@ Real.exists_rat_abs_sub_le_and_den_le (ξ : ℝ) {n : ℕ} (n_pos : 0 < n) :
 
 ## Depends on
 
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 
 ## Proof depends on
 
@@ -72,6 +70,7 @@ Real.exists_rat_abs_sub_le_and_den_le (ξ : ℝ) {n : ℕ} (n_pos : 0 < n) :
 - [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources

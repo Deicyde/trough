@@ -17,9 +17,7 @@ UniformSpace.Completion.instAddCommGroup.{u_3} {α : Type u_3} [UniformSpace α]
 
 ## Depends on
 
-- [Completeness](../uniform-notions/completeness.md)
 - [Completion](../uniform-notions/completion.md)
-- [Extension by continuity](../general-topology/part-01/extension-by-continuity.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources

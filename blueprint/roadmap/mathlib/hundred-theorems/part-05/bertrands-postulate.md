@@ -30,7 +30,8 @@ Nat.bertrand (n : ℕ) (hn0 : n ≠ 0) : ∃ p, Nat.Prime p ∧ n < p ∧ p ≤ 
 - [Convex function](../../overview/analysis/convexity/convex-function.md)
 - [Finitely supported function](../../overview/data-structures/maps/finitely-supported-function.md)
 - [Linear map](../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Power functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Logarithm](../../overview/analysis/special-functions/logarithm.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

@@ -18,18 +18,17 @@ Differentiable.apply_eq_apply_of_bounded.{u, v} {E : Type u} [NormedAddCommGroup
 
 ## Depends on
 
+- [Complex number](../../general-algebra/numbers/complex-number.md)
 - [Differentiable functions](../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Proof depends on
 
-- [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Cauchy formulas](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/cauchy-formulas.md)
 - [Completion of an abelian topological group](../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Derivative at a point](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Higher-order derivatives of functions](../../../undergraduate/single-variable-real-analysis/differentiability/higher-order-derivatives-of-functions.md)
 - [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Lebesgue measure (Measures and integral calculus)](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Sources
 

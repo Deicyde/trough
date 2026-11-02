@@ -25,23 +25,28 @@ Complex.two_pi_I_inv_smul_circleIntegral_sub_inv_smul_of_differentiable_on_off_c
 
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 
 - [Affine space](../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Continuity (Complex-valued series)](../complex-valued-series/continuity.md)
 - [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Differentiable functions](../../multivariable-calculus/differential-calculus/differentiable-functions.md)
+- [Divergence theorem](../../../overview/analysis/measures-and-integral-calculus/part-02/divergence-theorem.md)
 - [Euclidean domain](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Giry monad](../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Logarithm](../../../overview/analysis/special-functions/logarithm.md)
 - [Product of vector spaces](../../linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
 
 ## Sources
 

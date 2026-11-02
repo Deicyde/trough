@@ -20,7 +20,6 @@ intermediate_value_Icc.{u, u_1} {α : Type u} [TopologicalSpace α]
 
 ## Depends on
 
-- [Induced topology](../general-topology/part-01/induced-topology.md)
 - [Limit of a map with respect to filters](../general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
 - [Order topology](order-topology.md)
 

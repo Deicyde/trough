@@ -25,7 +25,6 @@ norm_le_gronwallBound_of_norm_deriv_right_le.{u_1} {E : Type u_1} [NormedAddComm
 
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Exponential](../../../overview/analysis/special-functions/exponential.md)
-- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
@@ -33,10 +32,12 @@ norm_le_gronwallBound_of_norm_deriv_right_le.{u_1} {E : Type u_1} [NormedAddComm
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

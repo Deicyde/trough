@@ -21,22 +21,16 @@ AnalyticOnNhd.is_constant_or_isOpen.{u_1} {E : Type u_1} [NormedAddCommGroup E] 
 ## Depends on
 
 - [Analytic function](../../../../overview/analysis/differentiability/analytic-function.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../../../overview/general-algebra/numbers/complex-number.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 
 ## Proof depends on
 
-- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
+- [Analyticity of holomorphic functions](../../../../overview/analysis/complex-analysis/analyticity-of-holomorphic-functions.md)
 - [Convex subsets](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
-- [Differentiable function between normed vector spaces](../../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Extreme value theorem](../../../../overview/topology/topological-algebra/extreme-value-theorem.md)
-- [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Maximum modulus principle](../../../../overview/analysis/complex-analysis/maximum-modulus-principle.md)
 - [Principle of analytic continuation](../../../../overview/analysis/complex-analysis/principle-of-analytic-continuation.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
-- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

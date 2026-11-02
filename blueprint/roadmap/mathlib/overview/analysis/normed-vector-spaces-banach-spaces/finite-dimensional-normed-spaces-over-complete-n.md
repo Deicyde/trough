@@ -32,7 +32,6 @@ Submodule.complete_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} {E : Type u
 - [Equivalence of norms in finite dimension](equivalence-of-norms-in-finite-dimension.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Local ring](../../general-algebra/rings/local-ring.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources

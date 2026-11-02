@@ -19,7 +19,6 @@ Algebra.TensorProduct.instAlgebra.{uR, uA, uB} {R : Type uR} {A : Type uA} {B : 
 ## Depends on
 
 - [Associative algebra over a commutative ring](associative-algebra-over-a-commutative-ring.md)
-- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Tensor product](../../linear-algebra/fundamentals/tensor-product.md)
 
 ## Sources

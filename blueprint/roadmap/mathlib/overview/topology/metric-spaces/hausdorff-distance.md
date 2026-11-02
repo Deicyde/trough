@@ -17,9 +17,7 @@ Metric.hausdorffEDist.{u} {α : Type u} [PseudoEMetricSpace α] (s t : Set α) :
 
 ## Depends on
 
-- [Induced topology](../general-topology/part-01/induced-topology.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
+- [Real number](../../general-algebra/numbers/real-number.md)
 - [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources

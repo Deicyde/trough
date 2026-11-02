@@ -26,6 +26,7 @@ CommGroup.is_simple_iff_prime_card.{u_1} {α : Type u_1} [CommGroup α] :
 
 - [Characteristic zero](../../field-theory/characteristic-zero.md)
 - [Cyclic group](../part-01/cyclic-group.md)
+- [Lagrange's theorem](lagranges-theorem.md)
 - [Order of an element](../../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
 
 ## Sources

@@ -19,19 +19,17 @@ lp.completeSpace.{u_3, u_4} {α : Type u_3} {E : α → Type u_4} {p : ENNReal}
 ## Depends on
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Complete metric spaces](../topology-and-metric-spaces/complete-metric-spaces.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 

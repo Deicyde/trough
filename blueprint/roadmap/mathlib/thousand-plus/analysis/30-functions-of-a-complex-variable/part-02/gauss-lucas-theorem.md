@@ -35,7 +35,6 @@ Polynomial.eq_centerMass_of_eval_derivative_eq_zero {P : Polynomial â„‚} {z : â„
 
 ## Depends on
 
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Convex hull of a subset of an affine real space](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
 - [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
@@ -46,6 +45,7 @@ Polynomial.eq_centerMass_of_eval_derivative_eq_zero {P : Polynomial â„‚} {z : â„
 ## Proof depends on
 
 - [Fundamental theorem of algebra](../../../../overview/analysis/complex-analysis/fundamental-theorem-of-algebra.md)
+- [The Factor and Remainder Theorems](../../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
 
 ## Sources
 

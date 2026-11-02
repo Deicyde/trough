@@ -27,19 +27,20 @@ MeasureTheory.ProbabilityMeasure.tendsto_iff_tendsto_charFun.{u_1} {E : Type u_1
 - [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Characteristic function](../../../../overview/probability-theory/definitions-in-probability-theory/characteristic-function.md)
 - [Finite-dimensionality](../../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 
 ## Proof depends on
 
+- [Change of variable](../../../../undergraduate/single-variable-real-analysis/integration/change-of-variable.md)
 - [Dominated convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/dominated-convergence-theorem.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Group](../../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Lebesgue measure (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Limits of sequences](../../../../undergraduate/topology/topology-and-metric-spaces/limits-of-sequences.md)
+- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Prokhorov's theorem](../../../analysis/28-measure-and-integration/part-01/prokhorovs-theorem.md)
 - [Squeeze theorem](../../../analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Sources
 

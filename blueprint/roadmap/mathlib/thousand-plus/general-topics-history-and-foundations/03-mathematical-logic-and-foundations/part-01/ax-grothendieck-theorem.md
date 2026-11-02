@@ -35,13 +35,10 @@ ax_grothendieck_zeroLocus.{u_1, u_2} {K : Type u_1} {ι : Type u_2} [Field K] [I
 - [Algebraic extension](../../../../overview/general-algebra/field-theory/algebraic-extension.md)
 - [Characteristic of a ring](../../../../overview/general-algebra/field-theory/characteristic-of-a-ring.md)
 - [Definable set](../../../../overview/logic-and-computation/model-theory/definable-set.md)
-- [Euclid's' algorithm](../../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
 - [Existence of algebraic closure of a field](../../../../overview/general-algebra/field-theory/existence-of-algebraic-closure-of-a-field.md)
 - [Irreducible element](../../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Local ring](../../../../overview/general-algebra/rings/local-ring.md)
 - [Noetherian ring](../../../../overview/general-algebra/rings/noetherian-ring.md)
-- [Quotient ring](../../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Satisfiability](../../../../overview/logic-and-computation/model-theory/satisfiability.md)
 - [Sum of subspaces](../../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 

@@ -23,8 +23,7 @@ MeasureTheory.Measure.{u_5} (α : Type u_5) [MeasurableSpace α] : Type u_5
 
 - [Events](../../../../undergraduate/probability-theory/definitions-of-a-probability-space/events.md)
 - [Infinite sum](../../../topology/topological-algebra/infinite-sum.md)
-- [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
+- [Real number](../../../general-algebra/numbers/real-number.md)
 
 ## Sources
 

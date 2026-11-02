@@ -33,7 +33,6 @@ EuclideanGeometry.angle_eq_of_congruent.{u_1, u_2, u_3, u_4, u_5} {ι : Type u_1
 
 - [Angle](../../../../overview/geometry/affine-and-euclidean-geometry/angle.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 
 ## Sources
 

@@ -30,6 +30,7 @@ continuous_tsum.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {F : Type u_3} [
 - [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

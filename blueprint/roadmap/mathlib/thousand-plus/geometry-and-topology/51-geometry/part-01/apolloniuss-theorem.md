@@ -21,14 +21,14 @@ EuclideanGeometry.dist_sq_add_dist_sq_eq_two_mul_dist_midpoint_sq_add_half_dist_
 
 - [Affine function](../../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Invertible elements](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 - [Stewart's theorem](../part-05/stewarts-theorem.md)
 
 ## Sources

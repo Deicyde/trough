@@ -33,9 +33,8 @@ ContinuousLinearMap.isOpenMap.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {𝕜' : Ty
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Order topology](../../topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Topological ring](../../topology/topological-algebra/topological-ring.md)
+- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
 - [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources

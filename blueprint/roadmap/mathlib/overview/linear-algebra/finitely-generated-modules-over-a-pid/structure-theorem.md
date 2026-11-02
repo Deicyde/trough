@@ -46,11 +46,9 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 - [Prime ideal](../../general-algebra/ideals-and-quotients/prime-ideal.md)
 - [Quotient ring](../../general-algebra/ideals-and-quotients/quotient-ring.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Small category](../../general-algebra/category-theory/small-category.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 - [The category of modules over a ring](../fundamentals/the-category-of-modules-over-a-ring.md)
-- [Unique factorisation domain](../../general-algebra/divisibility-in-integral-domains/unique-factorisation-domain.md)
+- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources
 

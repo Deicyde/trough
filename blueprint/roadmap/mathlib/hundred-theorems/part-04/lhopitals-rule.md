@@ -22,18 +22,18 @@ deriv.lhopital_zero_nhds {a : ℝ} {l : Filter ℝ} {f g : ℝ → ℝ}
 
 - [Differentiable function between normed vector spaces](../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Closure](../../overview/topology/general-topology/part-01/closure.md)
-- [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Completeness](../../overview/topology/uniform-notions/completeness.md)
 - [Convex subsets](../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Derivative at a point](../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Squeeze theorem](../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)

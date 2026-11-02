@@ -24,18 +24,17 @@ Polynomial.irreducible_of_eisenstein_criterion.{u_1} {R : Type u_1} [CommRing R]
 
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
+- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](polynomial-in-one-indeterminate.md)
 - [Prime ideal](../ideals-and-quotients/prime-ideal.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 - [Ring](../rings/ring.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Proof depends on
 
 - [$K\[X\]$ is Euclidean](k-x-is-euclidean.md)
 - [Localization](../rings/localization.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Quotient ring](../ideals-and-quotients/quotient-ring.md)
+- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources

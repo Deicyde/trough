@@ -32,7 +32,7 @@ hasSum_fourier_series_L2 {T : ℝ} [hT : Fact (0 < T)]
 - [Borel sigma-algebra](../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Carathéodory's theorem (measure theory)](../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Compact open topology](../../overview/topology/general-topology/part-01/compact-open-topology.md)
-- [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Inner product space, over $R$ or $C$](../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
@@ -42,10 +42,11 @@ hasSum_fourier_series_L2 {T : ℝ} [hT : Fact (0 < T)]
 ## Proof depends on
 
 - [Completeness of $L^2$](../../undergraduate/topology/hilbert-spaces/completeness-of-l-2-2.md)
+- [Completeness of $l^2$](../../undergraduate/topology/hilbert-spaces/completeness-of-l-2.md)
 - [Example, the Hilbert basis of trigonometric polynomials](../../undergraduate/topology/hilbert-spaces/example-the-hilbert-basis-of-trigonometric-polyn.md)
-- [Finite-dimensionality](../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Probability measure](../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
+- [Urysohn's lemma](../../overview/topology/general-topology/part-02/urysohns-lemma.md)
 - [Weierstrass trigonometric approximation theorem](../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/weierstrass-trigonometric-approximation-theorem.md)
 
 ## Sources

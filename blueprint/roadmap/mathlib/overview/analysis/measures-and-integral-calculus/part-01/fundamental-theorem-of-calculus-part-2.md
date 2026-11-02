@@ -23,19 +23,22 @@ intervalIntegral.integral_eq_sub_of_hasDeriv_right_of_le.{u_3} {E : Type u_3} [N
 ## Depends on
 
 - [Bochner integral](bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Lebesgue measure (Measures and integral calculus)](lebesgue-measure.md)
 - [Topological module](../../../topology/topological-algebra/topological-module.md)
 
 ## Proof depends on
 
 - [Affine space](../../../geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Differentiable function between normed vector spaces](../../differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Dual of a normed space](../../normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Extended real number](../../../general-algebra/numbers/extended-real-number.md)
 - [Local convexity](../../topological-vector-spaces/local-convexity.md)
 - [Measurable function](measurable-function.md)
+- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Order topology](../../../topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../../topology/topological-algebra/topological-ring.md)
 
 ## Sources

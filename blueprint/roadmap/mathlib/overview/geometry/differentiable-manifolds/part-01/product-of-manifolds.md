@@ -22,7 +22,6 @@ IsManifold.prod.{u_5, u_6, u_7, u_8, u_9, u_10, u_11} {n : WithTop ℕ∞} {𝕜
 
 ## Depends on
 
-- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)
 
 ## Proof depends on

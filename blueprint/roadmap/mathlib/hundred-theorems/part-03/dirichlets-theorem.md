@@ -20,28 +20,24 @@ Nat.infinite_setOfPred_prime_and_eq_mod {q : ℕ} [NeZero q] {a : ZMod q} (ha : 
 ## Depends on
 
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ring](../../overview/general-algebra/rings/ring.md)
 - [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
+- [Absolutely convergent series in Banach spaces](../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Arithmetic functions](../../overview/general-algebra/number-theory/arithmetic-functions.md)
-- [Bochner integral](../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Bezout’s Theorem](bezouts-theorem.md)
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Cyclic group](../../overview/general-algebra/group-theory/part-01/cyclic-group.md)
-- [Differentials (linear tangent functions)](../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Euclid's' algorithm](../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
+- [Divergence of the Prime Reciprocal Series](../part-05/divergence-of-the-prime-reciprocal-series.md)
 - [Euler's totient function ($\varphi$)](../../overview/general-algebra/divisibility-in-integral-domains/eulers-totient-function-varphi.md)
 - [Extended real number](../../overview/general-algebra/numbers/extended-real-number.md)
 - [Fundamental theorem of algebra](../../overview/analysis/complex-analysis/fundamental-theorem-of-algebra.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Lebesgue measure (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Order topology](../../overview/topology/topological-algebra/order-topology.md)
 - [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 - [Separable polynomial](../../overview/general-algebra/polynomials-and-power-series/separable-polynomial.md)
 - [Subgroup](../../overview/general-algebra/group-theory/part-01/subgroup.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

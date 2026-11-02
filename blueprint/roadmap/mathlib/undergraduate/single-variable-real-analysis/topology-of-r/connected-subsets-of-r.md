@@ -32,7 +32,6 @@ setOfPred_isPreconnected_eq_of_ordered.{u} {α : Type u} [TopologicalSpace α]
 
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Limit of a map with respect to filters](../../../overview/topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
 
 ## Sources

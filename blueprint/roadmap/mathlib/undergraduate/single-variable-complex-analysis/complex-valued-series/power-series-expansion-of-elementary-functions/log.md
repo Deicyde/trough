@@ -18,7 +18,6 @@ Complex.hasSum_taylorSeries_log {z : ℂ} (hz : ‖z‖ < 1) :
 
 ## Depends on
 
-- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Inverse trigonometric functions](../../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
 - [Logarithm](../../../../overview/analysis/special-functions/logarithm.md)
@@ -26,11 +25,13 @@ Complex.hasSum_taylorSeries_log {z : ℂ} (hz : ‖z‖ < 1) :
 
 ## Proof depends on
 
-- [Bochner integral](../../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Absolutely convergent series in Banach spaces](../../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Derivative at a point](../../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Lebesgue measure (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Fundamental theorem of calculus, part 2](../../../../overview/analysis/measures-and-integral-calculus/part-01/fundamental-theorem-of-calculus-part-2.md)
+- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 
 ## Sources
 

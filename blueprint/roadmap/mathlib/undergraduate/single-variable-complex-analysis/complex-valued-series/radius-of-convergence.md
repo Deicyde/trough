@@ -22,7 +22,6 @@ FormalMultilinearSeries.radius.{u_1, u_3, u_4} {𝕜 : Type u_1} {E : Type u_3} 
 
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Multilinear map](../../../overview/linear-algebra/fundamentals/multilinear-map.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 

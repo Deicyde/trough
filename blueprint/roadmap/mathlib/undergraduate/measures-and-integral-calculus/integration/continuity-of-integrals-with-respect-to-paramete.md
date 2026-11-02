@@ -34,7 +34,7 @@ intervalIntegral.continuous_of_dominated_interval.{u_2, u_3} {E : Type u_2} [Nor
 ## Proof depends on
 
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Sources

@@ -20,13 +20,9 @@ NormedSpace.inclusionInDoubleDualLi.{u, v} (𝕜 : Type v) [RCLike 𝕜] {E : Ty
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Dual of a normed space](dual-of-a-normed-space.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](normed-vector-space-over-a-normed-field.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 

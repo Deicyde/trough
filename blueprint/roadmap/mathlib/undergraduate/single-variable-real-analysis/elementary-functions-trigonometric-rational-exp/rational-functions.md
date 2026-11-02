@@ -21,8 +21,10 @@ RatFunc.eval.{u} {K : Type u} [Field K] {L : Type u} [Field L] (f : K →+* L) (
 
 ## Depends on
 
-- [$A\[X\]$ has gcd and lcm if $A$ does](../../../overview/general-algebra/polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
 - [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
+- [Least common multiple](../../../overview/general-algebra/divisibility-in-integral-domains/least-common-multiple.md)
+- [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Rational fraction fields with one indeterminate over a field](../../ring-theory/field-theory/part-01/rational-fraction-fields-with-one-indeterminate.md)
 
 ## Sources

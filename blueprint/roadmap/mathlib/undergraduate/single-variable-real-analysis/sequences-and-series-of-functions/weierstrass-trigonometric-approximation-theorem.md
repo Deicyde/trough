@@ -27,13 +27,10 @@ span_fourier_closure_eq_top {T : ℝ} [hT : Fact (0 < T)] :
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Completeness of R](../topology-of-r/completeness-of-r.md)
+- [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../topology-of-r/metric-structure.md)
-- [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Stone-Weierstrass theorem](../../../overview/topology/general-topology/part-02/stone-weierstrass-theorem.md)
 
 ## Sources
 

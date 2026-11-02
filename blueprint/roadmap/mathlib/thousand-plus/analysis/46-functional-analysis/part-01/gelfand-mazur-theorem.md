@@ -50,21 +50,16 @@ The first two are over the complex numbers (with different assumptions), the thi
 ## Depends on
 
 - [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
+- [Completeness](../../../../overview/topology/uniform-notions/completeness.md)
+- [Complex number](../../../../overview/general-algebra/numbers/complex-number.md)
+- [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
+- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 
 - [Algebraic extension](../../../../overview/general-algebra/field-theory/algebraic-extension.md)
-- [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Connectedness](../../../../overview/topology/general-topology/part-01/connectedness.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Fundamental theorem of algebra](../../../../overview/analysis/complex-analysis/fundamental-theorem-of-algebra.md)
 
 ## Sources
 

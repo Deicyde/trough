@@ -29,21 +29,21 @@ NumberField.Units.exist_unique_eq_mul_prod.{u_1} (K : Type u_1) [Field K] [Numbe
 
 ## Depends on
 
+- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Euclidean domain](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../../overview/general-algebra/numbers/complex-number.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
-- [Minimal polynomial](../../../overview/linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Orbit](../../../undergraduate/group-theory/basic-definitions/orbit.md)
 - [Periodic points](../../../overview/dynamics/general-theory/periodic-points.md)
-- [Quotient group](../../../overview/general-algebra/group-theory/part-01/quotient-group.md)
+- [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
-- [Subring](../../../overview/general-algebra/rings/subring.md)
+- [Subgroup](../../../overview/general-algebra/group-theory/part-01/subgroup.md)
+
+## Proof depends on
+
+- [Quotient group](../../../overview/general-algebra/group-theory/part-01/quotient-group.md)
 
 ## Sources
 

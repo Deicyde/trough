@@ -21,11 +21,9 @@ The 1000+ list (Q193878) also cites `ZMod.chineseRemainder`.
 
 ## Depends on
 
-- [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Coprime element](../divisibility-in-integral-domains/coprime-element.md)
 - [Quotient ring](quotient-ring.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
+- [Ring morphism](../rings/ring-morphism.md)
 
 ## Sources
 

@@ -21,11 +21,8 @@ Complex.eventually_eq_of_isLocalMax_norm.{u, v} {E : Type u} [NormedAddCommGroup
 
 ## Depends on
 
-- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Complex number](../../general-algebra/numbers/complex-number.md)
 - [Differentiable function between normed vector spaces](../differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Proof depends on
@@ -35,7 +32,7 @@ Complex.eventually_eq_of_isLocalMax_norm.{u, v} {E : Type u} [NormedAddCommGroup
 - [Completion of an abelian topological group](../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 
 ## Sources
 

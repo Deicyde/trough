@@ -25,9 +25,6 @@ hasFDerivAt_of_tendstoUniformly.{u_1, u_2, u_3, u_4} {ι : Type u_1} {l : Filter
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Uniform convergence](../../../overview/topology/uniform-notions/uniform-convergence.md)
@@ -38,8 +35,11 @@ hasFDerivAt_of_tendstoUniformly.{u_1, u_2, u_3, u_4} {ι : Type u_1} {l : Filter
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Convex subsets](../../affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [List](../../../overview/data-structures/list-like-structures/list.md)
 - [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

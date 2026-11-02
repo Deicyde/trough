@@ -26,7 +26,6 @@ Complex.mem_rootsOfUnity (n : ℕ) [NeZero n] (x : ℂˣ) :
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Coprime element](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
 - [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

@@ -19,7 +19,6 @@ MvPolynomial.IsSymmetric.{u_1, u_3} {σ : Type u_1} {R : Type u_3} [CommSemiring
 ## Depends on
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Module](../../../overview/linear-algebra/fundamentals/module.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 

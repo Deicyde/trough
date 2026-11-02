@@ -23,7 +23,6 @@ MeasureTheory.Lp.toTemperedDistributionCLM.{u_3, u_4} {E : Type u_3} (F : Type u
 - [$L^p$ space](../../../overview/analysis/measures-and-integral-calculus/part-01/l-p-space.md)
 - [Algebra of endomorphisms of a vector space](../../linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Extension by continuity](../../../overview/topology/general-topology/part-01/extension-by-continuity.md)
 - [Tempered distributions](../../../overview/analysis/distribution-theory/tempered-distributions.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)

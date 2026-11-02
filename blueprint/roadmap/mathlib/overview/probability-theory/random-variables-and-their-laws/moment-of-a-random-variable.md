@@ -18,7 +18,6 @@ ProbabilityTheory.moment.{u_1} {Ω : Type u_1} {m : MeasurableSpace Ω} (X : Ω 
 ## Depends on
 
 - [Bochner integral](../../analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 
 ## Sources

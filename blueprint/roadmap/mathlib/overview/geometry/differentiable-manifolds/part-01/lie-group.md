@@ -21,7 +21,6 @@ LieGroup.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] {
 ## Depends on
 
 - [Group](../../../general-algebra/group-theory/part-01/group.md)
-- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Smooth map between manifolds](smooth-map-between-manifolds.md)
 - [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)
 

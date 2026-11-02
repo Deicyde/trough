@@ -26,8 +26,9 @@ Urysohn's metrization theorem (only).
 
 ## Proof depends on
 
-- [Ball](../../../../overview/topology/metric-spaces/ball.md)
+- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
+- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 - [Urysohn's lemma](../../../../overview/topology/general-topology/part-02/urysohns-lemma.md)
 
 ## Sources

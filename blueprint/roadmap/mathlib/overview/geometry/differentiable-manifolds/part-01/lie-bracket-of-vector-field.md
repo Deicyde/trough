@@ -19,7 +19,6 @@ VectorField.mlieBracket.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNorm
 
 ## Depends on
 
-- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Pullback of vector fields](pullback-of-vector-fields.md)
 
 ## Sources

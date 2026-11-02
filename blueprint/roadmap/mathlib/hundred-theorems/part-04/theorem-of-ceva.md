@@ -32,7 +32,6 @@ Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line.{u_1, u_2, u_3
 
 - [Affine function](../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

@@ -29,6 +29,7 @@ Cardinal.not_countable_real : ¬Set.univ.Countable
 - [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
+- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

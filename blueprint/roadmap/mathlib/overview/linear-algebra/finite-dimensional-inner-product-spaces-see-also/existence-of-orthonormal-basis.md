@@ -18,10 +18,9 @@ OrthonormalBasis.{u_1, u_3, u_4} (ι : Type u_1) (𝕜 : Type u_3) [RCLike 𝕜]
 
 ## Depends on
 
-- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Linear map](../fundamentals/linear-map.md)
-- [Power functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Sources
 

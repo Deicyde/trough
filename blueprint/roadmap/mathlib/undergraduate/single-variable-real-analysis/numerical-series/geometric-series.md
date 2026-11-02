@@ -22,10 +22,9 @@ tsum_geometric_of_norm_lt_one.{u_4} {K : Type u_4} [NormedDivisionRing K] {ξ : 
 
 ## Proof depends on
 
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Completeness of R](../topology-of-r/completeness-of-r.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

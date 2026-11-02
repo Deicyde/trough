@@ -24,7 +24,6 @@ EuclideanGeometry.exterior_angle_eq_angle_add_angle.{u_1, u_2} {V : Type u_1} {P
 - [Affine function](../../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Angle](../../../../overview/geometry/affine-and-euclidean-geometry/angle.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

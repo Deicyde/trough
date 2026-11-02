@@ -19,20 +19,20 @@ MeasureTheory.Lp.instCompleteSpace.{u_1, u_3} {α : Type u_1} {m : MeasurableSpa
 ## Depends on
 
 - [$L^p$ space](../../../overview/analysis/measures-and-integral-calculus/part-01/l-p-space.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 
 ## Proof depends on
 
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
+- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 - [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

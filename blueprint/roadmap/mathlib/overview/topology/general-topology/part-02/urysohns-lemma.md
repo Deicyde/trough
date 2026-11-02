@@ -41,7 +41,7 @@ exists_continuous_zero_one_of_isClosed.{u_1} {X : Type u_1} [TopologicalSpace X]
 - [Normed vector space over a normed field](../../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Order topology](../../topological-algebra/order-topology.md)
 - [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological module](../../topological-algebra/topological-module.md)
 - [Topological ring](../../topological-algebra/topological-ring.md)
 

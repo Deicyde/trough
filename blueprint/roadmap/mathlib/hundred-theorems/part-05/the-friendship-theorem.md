@@ -31,7 +31,6 @@ Theorems100.friendship_theorem.{u} {V : Type u} [Fintype V] {G : SimpleGraph V}
 
 - [Adjacency matrix](../../overview/combinatorics/graph-theory/adjacency-matrix.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Euclid's' algorithm](../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
 - [Field](../../overview/general-algebra/field-theory/field.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)

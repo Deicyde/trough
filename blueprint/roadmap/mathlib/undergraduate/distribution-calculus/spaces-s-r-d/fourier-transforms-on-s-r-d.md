@@ -22,19 +22,13 @@ SchwartzMap.fourierTransformCLM.{u_1, u_2, u_3} (𝕜 : Type u_1) [RCLike 𝕜] 
 
 ## Depends on
 
-- [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Existence of orthonormal basis](../../../overview/linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Lebesgue measure (Measure theory)](../../measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
-- [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Schwartz space](../../../overview/analysis/distribution-theory/schwartz-space.md)
 
 ## Sources

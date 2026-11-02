@@ -19,19 +19,19 @@ niven {θ : ℝ} (hθ : ∃ r, θ = ↑r * Real.pi) (hcos : ∃ q, Real.cos θ =
 ## Depends on
 
 - [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Integral root theorem](../../algebra/12-field-theory-and-polynomials/integral-root-theorem.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources
 

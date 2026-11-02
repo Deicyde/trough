@@ -29,10 +29,11 @@ HasCompactSupport.contDiff_convolution_left.{u𝕜, uG, uE, uE', uF} {𝕜 : Typ
 - [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Convolution (Measures and integral calculus)](convolution.md)
 - [Measurable function](../part-01/measurable-function.md)
+- [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
 - [Derivative of a composition of functions (Analysis)](../../differentiability/derivative-of-a-composition-of-functions.md)
 - [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
@@ -41,6 +42,7 @@ HasCompactSupport.contDiff_convolution_left.{u𝕜, uG, uE, uE', uF} {𝕜 : Typ
 - [Inner product space, over $R$ or $C$](../../hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
+- [Topology on a normed vector space](../../normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

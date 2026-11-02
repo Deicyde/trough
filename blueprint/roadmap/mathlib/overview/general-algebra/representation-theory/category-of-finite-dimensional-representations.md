@@ -22,7 +22,7 @@ FDRep.{u, v} (R : Type u) (G : Type v) [Ring R] [Monoid G] : Type (max (max (u +
 - [Category](../category-theory/category.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
-- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
+- [Group morphism](../group-theory/part-01/group-morphism.md)
 - [The category of modules over a ring](../../linear-algebra/fundamentals/the-category-of-modules-over-a-ring.md)
 
 ## Sources

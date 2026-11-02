@@ -19,8 +19,6 @@ Subgroup.index.{u_1} {G : Type u_1} [Group G] (H : Subgroup G) : ℕ
 ## Depends on
 
 - [Cardinal](../../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Group action](group-action.md)
-- [Orbit](../../../../undergraduate/group-theory/basic-definitions/orbit.md)
 - [Ring morphism](../../rings/ring-morphism.md)
 - [Subgroup](subgroup.md)
 

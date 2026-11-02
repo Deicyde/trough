@@ -21,7 +21,6 @@ InnerProductSpace.toDual.{u_1, u_2} (ğ•œ : Type u_1) (E : Type u_2) [RCLike ğ•
 - [Dual of a normed space](../normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Inner product space, over $R$ or $C$](inner-product-space-over-r-or-c.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources

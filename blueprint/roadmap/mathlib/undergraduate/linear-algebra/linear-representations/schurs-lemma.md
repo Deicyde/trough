@@ -20,20 +20,15 @@ FDRep.finrank_hom_simple_simple.{u, v} {k : Type u} {G : Type v} [Field k] [Mono
 ## Depends on
 
 - [Algebraically closed field](../../../overview/general-algebra/field-theory/algebraically-closed-field.md)
-- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Category of finite-dimensional representations](../../../overview/general-algebra/representation-theory/category-of-finite-dimensional-representations.md)
-- [Functor](../../../overview/general-algebra/category-theory/functor.md)
 - [Isomorphism](../../../overview/general-algebra/category-theory/isomorphism.md)
 - [Linear independence](../fundamentals/linear-independence.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
-- [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Limits](../../../overview/general-algebra/category-theory/limits.md)
 - [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
-- [Small category](../../../overview/general-algebra/category-theory/small-category.md)
+- [Schur's lemma (1000+ theorems)](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-03/schurs-lemma.md)
 - [Sum of subspaces](../fundamentals/sum-of-subspaces.md)
 
 ## Sources

@@ -34,17 +34,17 @@ Vitali.exists_disjoint_covering_ae.{u_1, u_2} {α : Type u_1} {ι : Type u_2} [P
 ## Depends on
 
 - [Bornology](../../../../overview/analysis/topological-vector-spaces/bornology.md)
+- [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Positive measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 - [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 
-- [Ball](../../../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 - [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

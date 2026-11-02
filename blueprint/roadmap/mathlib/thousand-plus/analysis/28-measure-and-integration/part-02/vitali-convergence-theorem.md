@@ -30,20 +30,17 @@ MeasureTheory.tendstoInMeasure_iff_tendsto_Lp.{u_1, u_2} {α : Type u_1} {β : T
 - [Carathéodory's theorem (measure theory)](../part-01/caratheodorys-theorem-measure-theory.md)
 - [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Convergence in probability](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/convergence-in-probability.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Integral of positive measurable functions](../../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
 - [Linear map](../../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Proof depends on
 
+- [Borel-Cantelli lemma (easy direction)](../../../../undergraduate/probability-theory/definitions-of-a-probability-space/borel-cantelli-lemma-easy-direction.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

@@ -24,11 +24,12 @@ Behrend.roth_lower_bound {N : ℕ} : ↑N * Real.exp (-4 * √(Real.log ↑N)) �
 - [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../topology/general-topology/part-01/closure.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Euclidean domain](../../general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Freiman homomorphisms](freiman-homomorphisms.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
 
 ## Sources
 

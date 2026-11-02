@@ -22,6 +22,7 @@ Manifold.IsSmoothEmbedding.{u_1, u_2, u_4, u_6, u_8, u_10, u_12} {𝕜 : Type u_
 
 ## Depends on
 
+- [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
 - [Smooth immersion](smooth-immersion.md)
 
 ## Sources

@@ -44,19 +44,21 @@ MeasureTheory.integral_divergence_of_hasFDerivAt_off_countable.{u} {E : Type u}
 ## Depends on
 
 - [Bochner integral](../part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Differentiable function between normed vector spaces](../../differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Lebesgue measure (Measures and integral calculus)](../part-01/lebesgue-measure.md)
-- [Product of finitely many measures](product-of-finitely-many-measures.md)
 
 ## Proof depends on
 
 - [Algebra of endomorphisms of a vector space](../../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
+- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
 - [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
-- [Measurable function](../part-01/measurable-function.md)
-- [Order topology](../../../topology/topological-algebra/order-topology.md)
+- [Heine-Cantor theorem](../../../topology/uniform-notions/heine-cantor-theorem.md)
+- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
+- [Product of finitely many measures](product-of-finitely-many-measures.md)
 - [Riemann sums](../../../../undergraduate/single-variable-real-analysis/integration/riemann-sums.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

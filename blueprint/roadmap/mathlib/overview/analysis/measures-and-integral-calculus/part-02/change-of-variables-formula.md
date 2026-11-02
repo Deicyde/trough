@@ -33,18 +33,16 @@ MeasureTheory.integral_image_eq_integral_abs_det_fderiv_smul.{u_1, u_2} {E : Typ
 
 ## Proof depends on
 
-- [Cardinal](../../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Equivalence of norms in finite dimension](../../normed-vector-spaces-banach-spaces/equivalence-of-norms-in-finite-dimension.md)
+- [Besicovitch covering theorem](../../../../thousand-plus/analysis/26-real-functions/part-01/besicovitch-covering-theorem.md)
 - [Euclidean affine space](../../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Euclidean domain](../../../general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Invertibility](../../../linear-algebra/matrices/invertibility.md)
 - [Lebesgue's density theorem](../../../../thousand-plus/geometry-and-topology/54-general-topology/part-01/lebesgues-density-theorem.md)
-- [Linear independence](../../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Order topology](../../../topology/topological-algebra/order-topology.md)
+- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological ring](../../../topology/topological-algebra/topological-ring.md)
+- [Uniformly continuous function](../../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

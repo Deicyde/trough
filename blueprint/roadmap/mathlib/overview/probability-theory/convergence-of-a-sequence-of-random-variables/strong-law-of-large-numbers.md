@@ -36,13 +36,17 @@ ProbabilityTheory.strong_law_ae.{u_1, u_2} {Ω : Type u_1} {mΩ : MeasurableSpac
 
 ## Proof depends on
 
+- [Approximation by step functions](../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
+- [Borel-Cantelli lemma (easy direction)](../../../undergraduate/probability-theory/definitions-of-a-probability-space/borel-cantelli-lemma-easy-direction.md)
 - [Chebyshev inequality](chebyshev-inequality.md)
 - [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
-- [Order topology](../../topology/topological-algebra/order-topology.md)
+- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 

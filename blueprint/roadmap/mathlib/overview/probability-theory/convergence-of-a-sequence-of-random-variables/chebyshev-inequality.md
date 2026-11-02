@@ -22,6 +22,11 @@ ProbabilityTheory.meas_ge_le_variance_div_sq.{u_1} {Ω : Type u_1} {mΩ : Measur
 
 - [Variance of a real-valued random variable](../random-variables-and-their-laws/variance-of-a-real-valued-random-variable.md)
 
+## Proof depends on
+
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+
 ## Sources
 
 - [Mathlib documentation: `ProbabilityTheory.meas_ge_le_variance_div_sq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Moments/Variance.html#ProbabilityTheory.meas_ge_le_variance_div_sq)

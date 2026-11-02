@@ -28,6 +28,7 @@ szemeredi_regularity.{u_1} {α : Type u_1} [DecidableEq α] [Fintype α] (G : Si
 
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

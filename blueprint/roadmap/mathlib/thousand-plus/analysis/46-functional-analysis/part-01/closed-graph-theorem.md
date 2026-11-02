@@ -22,14 +22,12 @@ LinearMap.continuous_of_isClosed_graph.{u_1, u_3, u_5} {𝕜 : Type u_1} [Nontri
 
 - [Completeness](../../../../overview/topology/uniform-notions/completeness.md)
 - [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Linear map](../../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 
 ## Proof depends on
 
-- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 - [Range of a linear map](../../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Sources

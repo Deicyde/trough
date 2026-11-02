@@ -27,8 +27,7 @@ Real.tendsto_sum_pi_div_four :
 
 - [Abel's theorem](../../thousand-plus/analysis/26-real-functions/part-01/abels-theorem.md)
 - [Alternating series](../../undergraduate/single-variable-real-analysis/numerical-series/alternating-series.md)
-- [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [Sin (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/sin.md)
+- [Log](../../undergraduate/single-variable-complex-analysis/complex-valued-series/power-series-expansion-of-elementary-functions/log.md)
 
 ## Sources
 

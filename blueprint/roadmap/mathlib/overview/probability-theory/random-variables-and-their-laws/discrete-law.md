@@ -18,7 +18,6 @@ PMF.{u} (α : Type u) : Type u
 ## Depends on
 
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Real number](../../general-algebra/numbers/real-number.md)
 
 ## Sources

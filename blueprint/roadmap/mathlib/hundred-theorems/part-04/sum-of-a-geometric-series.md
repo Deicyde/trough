@@ -25,18 +25,19 @@ NNReal.hasSum_geometric {r : NNReal} (hr : r < 1) : HasSum (fun n => r ^ n) (1 -
 
 ## Depends on
 
-- [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
-- [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
+- [Real number](../../overview/general-algebra/numbers/real-number.md)
 
 ## Proof depends on
 
+- [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Closure](../../overview/topology/general-topology/part-01/closure.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
+- [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

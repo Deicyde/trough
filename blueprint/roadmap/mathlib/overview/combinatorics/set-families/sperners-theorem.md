@@ -26,7 +26,6 @@ IsAntichain.sperner.{u_2} {α : Type u_2} [Fintype α] {𝒜 : Finset (Finset α
 ## Proof depends on
 
 - [LYM inequality](lym-inequality.md)
-- [Ring](../../general-algebra/rings/ring.md)
 
 ## Sources
 

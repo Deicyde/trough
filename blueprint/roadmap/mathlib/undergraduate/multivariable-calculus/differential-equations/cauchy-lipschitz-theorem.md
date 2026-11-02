@@ -24,18 +24,17 @@ IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt.{u_1} {E : Type u_1}
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Proof depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 
 ## Sources
 

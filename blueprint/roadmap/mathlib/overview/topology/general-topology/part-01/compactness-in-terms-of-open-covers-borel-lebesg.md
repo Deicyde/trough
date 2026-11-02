@@ -22,10 +22,6 @@ isCompact_iff_finite_subcover.{u} {X : Type u} [TopologicalSpace X] {s : Set X} 
 - [Compactness in terms of filters](compactness-in-terms-of-filters.md)
 - [Finite set](../../../data-structures/sets/finite-set.md)
 
-## Proof depends on
-
-- [Natural number](../../../general-algebra/numbers/natural-number.md)
-
 ## Sources
 
 - [Mathlib documentation: `isCompact_iff_finite_subcover`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html#isCompact_iff_finite_subcover)

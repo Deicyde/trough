@@ -30,13 +30,12 @@ compl_beattySeq {r s : ℝ} (hrs : r.HolderConjugate s) :
 ## Depends on
 
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

@@ -28,6 +28,7 @@ AnalyticOnNhd.eqOn_of_preconnected_of_frequently_eq.{u_1, u_2} {𝕜 : Type u_1}
 ## Proof depends on
 
 - [Principle of isolated zeros](principle-of-isolated-zeros.md)
+- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

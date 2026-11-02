@@ -19,19 +19,13 @@ Real.fourier_eq.{u_1, u_3} {V : Type u_1} {E : Type u_3} [NormedAddCommGroup E] 
 
 ## Depends on
 
-- [Basis](../../linear-algebra/fundamentals/basis.md)
 - [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Borel sigma-algebra](../measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Existence of orthonormal basis](../../linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Finite-dimensionality](../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Group](../../general-algebra/group-theory/part-01/group.md)
+- [Inner product space, over $R$ or $C$](../hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
-- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 
 ## Sources
 

@@ -21,19 +21,16 @@ ZMod.erdos_ginzburg_ziv.{u_1} {ι : Type u_1} {n : ℕ} {s : Finset ι} (a : ι 
 ## Depends on
 
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Set](../../data-structures/sets/set.md)
+- [Ring](../../general-algebra/rings/ring.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Euclid's' algorithm](../../general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
-- [Field](../../general-algebra/field-theory/field.md)
-- [Irreducible element](../../general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Chevalley–Warning theorem (1000+ theorems)](../../../thousand-plus/algebra/12-field-theory-and-polynomials/chevalley-warning-theorem.md)
+- [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
-- [Polynomial in several indeterminates](../../general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

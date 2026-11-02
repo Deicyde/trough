@@ -23,6 +23,10 @@ IsManifold.disjointUnion.{u_1, u_2, u_3, u_4, u_5} {𝕜 : Type u_1} [Nontrivial
 
 - [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)
 
+## Proof depends on
+
+- [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
+
 ## Sources
 
 - [Mathlib documentation: `IsManifold.disjointUnion`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/IsManifold/Basic.html#IsManifold.disjointUnion)

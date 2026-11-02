@@ -22,7 +22,6 @@ EuclideanGeometry.Sphere.dist_sq_eq_mul_dist_of_tangent_and_secant.{u_1, u_2} {V
 ## Depends on
 
 - [Affine span](../../../../overview/geometry/affine-and-euclidean-geometry/affine-span.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Orthogonal complement](../../../../overview/analysis/hilbert-spaces/orthogonal-complement.md)
 
@@ -32,7 +31,7 @@ EuclideanGeometry.Sphere.dist_sq_eq_mul_dist_of_tangent_and_secant.{u_1, u_2} {V
 - [Angle](../../../../overview/geometry/affine-and-euclidean-geometry/angle.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Invertible elements](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

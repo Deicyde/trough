@@ -42,11 +42,11 @@ sum_Ico_pow (n p : ℕ) :
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Induced topology](../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Linear map](../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Metric space](../../overview/topology/metric-spaces/metric-space.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Power series](../../overview/general-algebra/polynomials-and-power-series/power-series.md)
+- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
 
 ## Sources
 

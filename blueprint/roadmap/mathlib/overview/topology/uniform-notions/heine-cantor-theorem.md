@@ -23,10 +23,6 @@ CompactSpace.uniformContinuous_of_continuous.{u_1, u_2} {α : Type u_1} {β : Ty
 - [Continuous function](../general-topology/part-01/continuous-function.md)
 - [Uniform space](uniform-space.md)
 
-## Proof depends on
-
-- [Induced topology](../general-topology/part-01/induced-topology.md)
-
 ## Sources
 
 - [Mathlib documentation: `CompactSpace.uniformContinuous_of_continuous`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UniformSpace/HeineCantor.html#CompactSpace.uniformContinuous_of_continuous)

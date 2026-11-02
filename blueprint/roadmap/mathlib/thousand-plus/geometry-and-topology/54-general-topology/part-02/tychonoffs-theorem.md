@@ -19,7 +19,6 @@ isCompact_pi_infinite.{u_1, u_2} {ι : Type u_1} {X : ι → Type u_2}
 ## Depends on
 
 - [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 
 ## Proof depends on
 

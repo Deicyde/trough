@@ -32,11 +32,12 @@ FiniteDimensional.proper.{u, v} (𝕜 : Type u) [NontriviallyNormedField 𝕜] (
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
 - [Equivalence of norms in finite dimension](equivalence-of-norms-in-finite-dimension.md)
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Finite product of metric spaces](../../../undergraduate/topology/topology-and-metric-spaces/finite-product-of-metric-spaces.md)
+- [Heine-Borel theorem (proper metric space version)](../../topology/metric-spaces/heine-borel-theorem-proper-metric-space-version.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Local ring](../../general-algebra/rings/local-ring.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
+- [Topology on a normed vector space](topology-on-a-normed-vector-space.md)
 
 ## Sources
 

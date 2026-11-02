@@ -32,18 +32,16 @@ RatFunc.valuation_isEquiv_infty_or_adic.{u_1, u_2} {K : Type u_1} {Γ : Type u_2
 
 ## Depends on
 
-- [$A\[X\]$ has gcd and lcm if $A$ does](../../../overview/general-algebra/polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
 - [$K\[X\]$ is Euclidean](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Field of fractions of an integral domain](../../../overview/general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
+- [Least common multiple](../../../overview/general-algebra/divisibility-in-integral-domains/least-common-multiple.md)
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
 - [Noetherian module](../../../overview/linear-algebra/fundamentals/noetherian-module.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Prime ideal](../../../overview/general-algebra/ideals-and-quotients/prime-ideal.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 - [Rational fraction fields with one indeterminate over a field](../../../undergraduate/ring-theory/field-theory/part-01/rational-fraction-fields-with-one-indeterminate.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Proof depends on
@@ -51,10 +49,13 @@ RatFunc.valuation_isEquiv_infty_or_adic.{u_1, u_2} {K : Type u_1} {Γ : Type u_2
 - [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Coprime element](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
+- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Logarithm](../../../overview/analysis/special-functions/logarithm.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Power functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

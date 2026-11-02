@@ -17,19 +17,18 @@ Theorems100.area_disc (r : NNReal) :
 
 ## Depends on
 
-- [Almost sure convergence](../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
-- [Giry monad](../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
-- [Integral of positive measurable functions](../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Lebesgue measure (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Measurable function](../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 
 ## Proof depends on
 
-- [Bochner integral](../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Continuity of monotone functions](../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Derivative at a point](../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
+- [Fundamental theorem of calculus, part 2](../../overview/analysis/measures-and-integral-calculus/part-01/fundamental-theorem-of-calculus-part-2.md)
+- [Giry monad](../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
+- [Inverse trigonometric functions](../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
 
 ## Sources
 

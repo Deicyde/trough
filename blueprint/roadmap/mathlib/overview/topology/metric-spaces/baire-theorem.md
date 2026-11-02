@@ -27,8 +27,7 @@ The 1000+ list (Q1052678) also cites `BaireSpace.of_t2Space_locallyCompactSpace`
 ## Proof depends on
 
 - [Cauchy sequence](../uniform-notions/cauchy-sequence.md)
-- [Induced topology](../general-topology/part-01/induced-topology.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
+- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
 
 ## Sources
 

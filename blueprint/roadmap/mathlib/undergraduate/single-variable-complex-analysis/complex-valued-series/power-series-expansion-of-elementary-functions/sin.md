@@ -17,7 +17,6 @@ Complex.hasSum_sin (z : ℂ) :
 
 ## Depends on
 
-- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 - [Sin (extension of trigonometric functions to the complex plane)](../extension-of-trigonometric-functions-to-the-comp/sin.md)
@@ -26,9 +25,9 @@ Complex.hasSum_sin (z : ℂ) :
 
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Matrix exponential](../../../linear-algebra/exponential/matrix-exponential.md)
-- [Metric structure](../../../single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Sources
 

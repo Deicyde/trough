@@ -19,7 +19,6 @@ Submodule.orthogonalProjectionOnto.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [
 ## Depends on
 
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
-- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
 - [Orthogonal complement](orthogonal-complement.md)
 - [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)

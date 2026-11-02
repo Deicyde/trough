@@ -28,9 +28,12 @@ ProbabilityTheory.tendsto_choose_mul_pow_of_tendsto_mul_atTop {p : ℕ → ℝ} 
 
 - [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Completeness](../../../../overview/topology/uniform-notions/completeness.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
+- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [The Binomial Theorem](../../../../hundred-theorems/part-03/the-binomial-theorem.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
 - [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 

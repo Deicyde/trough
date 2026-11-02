@@ -25,15 +25,15 @@ intervalIntegral.integral_deriv_smul_comp.{u_1} {a b : ℝ} {E : Type u_1} [Norm
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Derivative at a point](../differentiability/derivative-at-a-point.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Proof depends on
 
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Fundamental theorem of calculus, part 2](../../../overview/analysis/measures-and-integral-calculus/part-01/fundamental-theorem-of-calculus-part-2.md)
+- [Image of a segment](../real-valued-functions-defined-on-a-subset-of-r/image-of-a-segment.md)
 
 ## Sources
 

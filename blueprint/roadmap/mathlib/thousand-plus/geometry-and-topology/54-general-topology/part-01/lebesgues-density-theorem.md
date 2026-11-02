@@ -36,8 +36,7 @@ Besicovitch.ae_tendsto_measure_inter_div.{u} {β : Type u} [MetricSpace β] [Mea
 
 ## Proof depends on
 
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Lebesgue's decomposition theorem](lebesgues-decomposition-theorem.md)
 
 ## Sources
 

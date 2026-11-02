@@ -20,10 +20,8 @@ InnerProductSpace.Core.toNorm.{u_1, u_3} {𝕜 : Type u_1} {F : Type u_3} [RCLik
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Sources

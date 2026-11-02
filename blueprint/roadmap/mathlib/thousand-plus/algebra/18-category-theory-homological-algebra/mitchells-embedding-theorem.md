@@ -25,15 +25,14 @@ CategoryTheory.Abelian.freyd_mitchell.{v, u} (C : Type u) [CategoryTheory.Catego
 
 - [Abelian category](../../../overview/general-algebra/category-theory/abelian-category.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Set](../../../overview/data-structures/sets/set.md)
 - [The category of modules over a ring](../../../overview/linear-algebra/fundamentals/the-category-of-modules-over-a-ring.md)
 
 ## Proof depends on
 
 - [Adjunction](../../../overview/general-algebra/category-theory/adjunction.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Monoidal category](../../../overview/general-algebra/category-theory/monoidal-category.md)
+- [Isomorphism](../../../overview/general-algebra/category-theory/isomorphism.md)
+- [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Yoneda embedding](../../../overview/general-algebra/category-theory/yoneda-embedding.md)
 
 ## Sources

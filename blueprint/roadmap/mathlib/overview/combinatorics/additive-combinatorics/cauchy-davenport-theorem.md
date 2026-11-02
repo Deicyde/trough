@@ -20,7 +20,7 @@ ZMod.cauchy_davenport {p : ℕ} (hp : Nat.Prime p) {s t : Finset (ZMod p)} (hs :
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Irreducible element](../../general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ring](../../general-algebra/rings/ring.md)
 - [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on

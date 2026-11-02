@@ -98,10 +98,8 @@ exists_hasDerivWithinAt_eq_of_le_of_ge {a b : ℝ} {f f' : ℝ → ℝ} (hab : a
 - [Convex subsets](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Differentiable function between normed vector spaces](../../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../../../overview/data-structures/sets/finite-set.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
 
@@ -111,7 +109,9 @@ exists_hasDerivWithinAt_eq_of_le_of_ge {a b : ℝ} {f f' : ℝ → ℝ} (hab : a
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Dual of a normed space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Extreme value theorem](../../../../overview/topology/topological-algebra/extreme-value-theorem.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

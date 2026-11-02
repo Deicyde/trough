@@ -24,18 +24,16 @@ BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding.{u_1, u_
 
 - [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 
 ## Proof depends on
 
-- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Completeness of spaces of bounded continuous functions](../../../../overview/analysis/normed-vector-spaces-banach-spaces/completeness-of-spaces-of-bounded-continuous-fun.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [List](../../../../overview/data-structures/list-like-structures/list.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Urysohn's lemma](../../../../overview/topology/general-topology/part-02/urysohns-lemma.md)
 
 ## Sources
 

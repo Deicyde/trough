@@ -26,7 +26,6 @@ ConvexOn.map_integral_le.{u_1, u_2} {α : Type u_1} {E : Type u_2} {m0 : Measura
 ## Depends on
 
 - [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Convex function](convex-function.md)
 - [Inner product space, over $R$ or $C$](../hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Probability measure](../../probability-theory/definitions-in-probability-theory/probability-measure.md)
@@ -34,9 +33,10 @@ ConvexOn.map_integral_le.{u_1, u_2} {α : Type u_1} {E : Type u_2} {m0 : Measura
 ## Proof depends on
 
 - [Borel sigma-algebra](../measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Measurable function](../measures-and-integral-calculus/part-01/measurable-function.md)
 - [Order topology](../../topology/topological-algebra/order-topology.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources
 

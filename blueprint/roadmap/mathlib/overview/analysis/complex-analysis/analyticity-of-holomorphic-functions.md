@@ -20,8 +20,7 @@ DifferentiableOn.analyticAt.{u} {E : Type u} [NormedAddCommGroup E] [NormedSpace
 ## Depends on
 
 - [Analytic function](../differentiability/analytic-function.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../general-algebra/numbers/complex-number.md)
 - [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Inner product space, over $R$ or $C$](../hilbert-spaces/inner-product-space-over-r-or-c.md)
 

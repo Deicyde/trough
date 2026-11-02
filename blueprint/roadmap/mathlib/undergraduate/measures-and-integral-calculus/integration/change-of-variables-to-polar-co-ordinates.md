@@ -19,21 +19,20 @@ integral_comp_polarCoord_symm.{u_1} {E : Type u_1} [NormedAddCommGroup E] [Norme
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Giry monad](../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Inverse trigonometric functions](../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 
 ## Proof depends on
 
+- [Change of variables formula](../../../overview/analysis/measures-and-integral-calculus/part-02/change-of-variables-formula.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Determinant of endomorphisms](../../linear-algebra/multilinearity/determinant-of-endomorphisms.md)
-- [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Giry monad](../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
 - [Kernel of a linear map](../../linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Noetherian module](../../../overview/linear-algebra/fundamentals/noetherian-module.md)
 - [Product of vector spaces](../../linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Sum of subspaces](../../linear-algebra/fundamentals/sum-of-subspaces.md)
-- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

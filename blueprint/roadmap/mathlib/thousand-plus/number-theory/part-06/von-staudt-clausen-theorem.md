@@ -24,7 +24,6 @@ Bernoulli.vonStaudt_clausen (k : ℕ) :
 
 ## Proof depends on
 
-- [Euclid's' algorithm](../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)

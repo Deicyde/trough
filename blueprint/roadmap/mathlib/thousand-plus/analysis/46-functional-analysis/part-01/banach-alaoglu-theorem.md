@@ -28,9 +28,7 @@ WeakDual.isCompact_polar.{u_1, u_3} (𝕜 : Type u_1) {E : Type u_3} [Nontrivial
 ## Proof depends on
 
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Tychonoff's theorem](../../../geometry-and-topology/54-general-topology/part-02/tychonoffs-theorem.md)
 - [Weak-* topology for dualities](../../../../overview/analysis/topological-vector-spaces/weak-topology-for-dualities.md)
 
 ## Sources

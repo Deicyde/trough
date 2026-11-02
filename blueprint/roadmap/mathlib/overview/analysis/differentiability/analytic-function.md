@@ -20,7 +20,6 @@ AnalyticAt.{u_1, u_2, u_3} (𝕜 : Type u_1) {E : Type u_2} {F : Type u_3} [Nont
 ## Depends on
 
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Radius of convergence](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
 
 ## Sources

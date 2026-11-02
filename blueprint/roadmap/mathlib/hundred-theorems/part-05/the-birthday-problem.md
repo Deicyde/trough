@@ -26,14 +26,15 @@ Theorems100.birthday_measure : MeasureTheory.volume {f | Function.Injective f} <
 
 ## Depends on
 
-- [Conditional probability](../../overview/probability-theory/definitions-in-probability-theory/conditional-probability.md)
-- [Counting measure](../../undergraduate/measures-and-integral-calculus/measure-theory/counting-measure.md)
 - [Lebesgue measure (Measure theory)](../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
-- [Product of sigma-algebras](../../undergraduate/measures-and-integral-calculus/measure-theory/product-of-sigma-algebras.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Conditional probability](../../overview/probability-theory/definitions-in-probability-theory/conditional-probability.md)
+- [Counting measure](../../undergraduate/measures-and-integral-calculus/measure-theory/counting-measure.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
+- [Product of sigma-algebras](../../undergraduate/measures-and-integral-calculus/measure-theory/product-of-sigma-algebras.md)
 
 ## Sources
 

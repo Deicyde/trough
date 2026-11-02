@@ -23,9 +23,7 @@ MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto.{u_1, u_2} 
 
 ## Depends on
 
-- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Bochner integral](../../analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
 
 ## Sources

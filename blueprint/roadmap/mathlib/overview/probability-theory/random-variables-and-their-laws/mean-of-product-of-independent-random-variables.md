@@ -22,7 +22,6 @@ ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral.{u_1, u_2} {Ω : Type u_
 
 - [Bochner integral](../../analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Giry monad](../../analysis/measures-and-integral-calculus/part-01/giry-monad.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Measurable function](../../analysis/measures-and-integral-calculus/part-01/measurable-function.md)
@@ -30,11 +29,10 @@ ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral.{u_1, u_2} {Ω : Type u_
 ## Proof depends on
 
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Borel sigma-algebra](../../analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Fubini's theorem](../../analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
+- [Topology on a normed vector space](../../analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

@@ -24,20 +24,20 @@ PadicInt.hasSum_mahler.{u_1} {p : ℕ} [hp : Fact (Nat.Prime p)] {E : Type u_1} 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
+- [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Proof depends on
 
+- [Bezout’s Theorem](../../../hundred-theorems/part-03/bezouts-theorem.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Heine-Cantor theorem](../../../overview/topology/uniform-notions/heine-cantor-theorem.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
+- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

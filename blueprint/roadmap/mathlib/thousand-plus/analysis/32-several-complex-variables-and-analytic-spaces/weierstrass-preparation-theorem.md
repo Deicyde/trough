@@ -23,16 +23,11 @@ PowerSeries.exists_isWeierstrassFactorization.{u_1} {A : Type u_1} [CommRing A] 
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
-- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Power series](../../../overview/general-algebra/polynomials-and-power-series/power-series.md)
 - [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-
-## Proof depends on
-
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources
 

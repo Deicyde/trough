@@ -21,7 +21,6 @@ HasFDerivAt.{u_1, u_2, u_3} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] {E 
 
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
 - [Metric space](../../topology/metric-spaces/metric-space.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

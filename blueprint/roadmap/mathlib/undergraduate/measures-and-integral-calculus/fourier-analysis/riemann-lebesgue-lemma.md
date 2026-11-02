@@ -27,9 +27,8 @@ tendsto_integral_exp_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_2} [No
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Dual of a normed space](../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
@@ -38,10 +37,10 @@ tendsto_integral_exp_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_2} [No
 
 ## Proof depends on
 
-- [Equivalence of norms in finite dimension](../../../overview/analysis/normed-vector-spaces-banach-spaces/equivalence-of-norms-in-finite-dimension.md)
+- [Dominated convergence theorem](../../../overview/analysis/measures-and-integral-calculus/part-01/dominated-convergence-theorem.md)
 - [Fréchet-Riesz representation of the dual of a Hilbert space](../../../overview/analysis/hilbert-spaces/frechet-riesz-representation-of-the-dual-of-a-hi.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
+- [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Riemann-Lebesgue lemma (Analysis)](../../../overview/analysis/fourier-analysis/riemann-lebesgue-lemma.md)
 
 ## Sources

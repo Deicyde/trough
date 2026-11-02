@@ -27,10 +27,7 @@ Bundle.ContMDiffRiemannianMetric.{u_1, u_2, u_3, u_4, u_5} {EB : Type u_1} [Norm
 
 ## Depends on
 
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Smooth map between manifolds](../differentiable-manifolds/part-01/smooth-map-between-manifolds.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)

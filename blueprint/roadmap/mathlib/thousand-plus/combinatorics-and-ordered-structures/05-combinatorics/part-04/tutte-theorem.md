@@ -27,7 +27,7 @@ SimpleGraph.tutte.{u_1} {V : Type u_1} {G : SimpleGraph V} [Finite V] :
 
 ## Proof depends on
 
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
+- [Degree-sum formula](../../../../overview/combinatorics/graph-theory/degree-sum-formula.md)
 
 ## Sources
 

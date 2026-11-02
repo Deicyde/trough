@@ -16,18 +16,10 @@ Real.measureSpace : MeasureTheory.MeasureSpace ℝ
 
 ## Depends on
 
-- [Basis](../../../linear-algebra/fundamentals/basis.md)
 - [Borel sigma-algebra](borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Cardinal](../../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Closure](../../../topology/general-topology/part-01/closure.md)
-- [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuous function](../../../topology/general-topology/part-01/continuous-function.md)
-- [Existence of orthonormal basis](../../../linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
 - [Finite-dimensionality](../../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Inner product space, over $R$ or $C$](../../hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Lebesgue measure (Measure theory)](../../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
-- [Linear independence](../../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 
 ## Sources
 

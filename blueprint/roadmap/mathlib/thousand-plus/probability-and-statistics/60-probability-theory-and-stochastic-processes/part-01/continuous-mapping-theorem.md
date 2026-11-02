@@ -28,11 +28,9 @@ MeasureTheory.TendstoInDistribution.continuous_comp.{u_1, u_2, u_3, u_5, u_6} {Œ
 - [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Carath√©odory's theorem (measure theory)](../../../analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Continuous linear map](../../../../overview/topology/topological-algebra/continuous-linear-map.md)
-- [Integral of positive measurable functions](../../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
-- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
+- [Linear map](../../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 - [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 
 ## Sources

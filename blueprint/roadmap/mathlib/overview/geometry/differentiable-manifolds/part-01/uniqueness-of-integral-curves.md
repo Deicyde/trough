@@ -23,7 +23,6 @@ isMIntegralCurveOn_Ioo_eqOn_of_contMDiff_boundaryless.{u_1, u_2, u_3} {E : Type 
 ## Depends on
 
 - [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
-- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Smooth map between manifolds](smooth-map-between-manifolds.md)
 - [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)
 - [Tangent bundle](tangent-bundle.md)
@@ -33,8 +32,8 @@ isMIntegralCurveOn_Ioo_eqOn_of_contMDiff_boundaryless.{u_1, u_2, u_3} {E : Type 
 ## Proof depends on
 
 - [Closure](../../../topology/general-topology/part-01/closure.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Order topology](../../../topology/topological-algebra/order-topology.md)
 
 ## Sources

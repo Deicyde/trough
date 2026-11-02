@@ -20,7 +20,6 @@ TemperedDistribution.instLineDeriv.{u_3, u_4} {E : Type u_3} {F : Type u_4} [Nor
 
 ## Depends on
 
-- [Stability by derivation (Spaces $\mathcal{S}(\R^d)$)](../spaces-s-r-d/stability-by-derivation.md)
 - [Tempered distributions](../../../overview/analysis/distribution-theory/tempered-distributions.md)
 
 ## Sources

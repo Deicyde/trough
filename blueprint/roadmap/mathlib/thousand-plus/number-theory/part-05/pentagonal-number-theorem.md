@@ -32,7 +32,6 @@ hasProd_eulerFunction.{u_1} {R : Type u_1} [NormedCommRing R] [NormOneClass R] [
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)

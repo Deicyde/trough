@@ -26,8 +26,6 @@ AlgebraicGeometry.Scheme.{u_1} : Type (u_1 + 1)
 - [Isomorphism](../../general-algebra/category-theory/isomorphism.md)
 - [Locally ringed space](locally-ringed-space.md)
 - [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Subring](../../general-algebra/rings/subring.md)
 - [Zariski topology](zariski-topology.md)
 
 ## Sources

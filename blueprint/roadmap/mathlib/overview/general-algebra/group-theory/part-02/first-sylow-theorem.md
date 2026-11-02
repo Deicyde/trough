@@ -27,8 +27,8 @@ Freek Wiedijk's list (no. 72) and the 1000+ list (Q1057919) also cite `Sylow.isP
 
 ## Proof depends on
 
+- [Cauchy's theorem (group theory)](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md)
 - [Index of a subgroup](../part-01/index-of-a-subgroup.md)
-- [Order of an element](../../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
 - [Quotient group](../part-01/quotient-group.md)
 
 ## Sources

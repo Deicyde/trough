@@ -34,13 +34,11 @@ NumberField.RingOfIntegers.instFintypeClassGroup.{u_1} (K : Type u_1) [Field K] 
 - [Minimal polynomial](../../linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
 - [Noetherian module](../../linear-algebra/fundamentals/noetherian-module.md)
 - [Nondegenerate forms](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/bilinear-forms/nondegenerate-forms.md)
-- [Power functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Prime ideal](../ideals-and-quotients/prime-ideal.md)
 - [Quotient group](../group-theory/part-01/quotient-group.md)
 - [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
 - [Separable polynomial](../polynomials-and-power-series/separable-polynomial.md)
-- [Subring](../rings/subring.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources

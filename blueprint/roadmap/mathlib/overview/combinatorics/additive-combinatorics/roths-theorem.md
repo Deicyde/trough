@@ -25,9 +25,10 @@ roth_3ap_theorem_nat {n : ℕ} (ε : ℝ) (hε : 0 < ε) (hG : cornersTheoremBou
 ## Proof depends on
 
 - [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Freiman homomorphisms](freiman-homomorphisms.md)
-- [Simple graph](../graph-theory/simple-graph.md)
+- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Regularity lemma](../graph-theory/regularity-lemma.md)
+- [Triangle counting lemma](../graph-theory/triangle-counting-lemma.md)
 
 ## Sources
 

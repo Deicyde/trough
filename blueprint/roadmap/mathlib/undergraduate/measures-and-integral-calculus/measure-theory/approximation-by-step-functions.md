@@ -23,16 +23,15 @@ MeasureTheory.SimpleFunc.tendsto_approxOn.{u_1, u_2} {α : Type u_1} {β : Type 
 
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
+- [Real number](../../../overview/general-algebra/numbers/real-number.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

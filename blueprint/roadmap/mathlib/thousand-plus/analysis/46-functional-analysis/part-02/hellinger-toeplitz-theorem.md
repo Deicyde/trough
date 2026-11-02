@@ -25,8 +25,9 @@ LinearMap.IsSymmetric.continuous.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RC
 
 ## Proof depends on
 
+- [Closed graph theorem](../part-01/closed-graph-theorem.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

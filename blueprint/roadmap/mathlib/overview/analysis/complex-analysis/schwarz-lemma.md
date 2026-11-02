@@ -24,19 +24,17 @@ Complex.norm_le_norm_of_mapsTo_ball.{u_1, u_2} {E : Type u_1} {F : Type u_2} [No
 ## Depends on
 
 - [Ball](../../topology/metric-spaces/ball.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../general-algebra/numbers/complex-number.md)
 - [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Proof depends on
 
 - [Affine function](../../geometry/affine-and-euclidean-geometry/affine-function.md)
-- [Differentiable functions](../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Dual of a normed space](../normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
+- [Cauchy integral formula](cauchy-integral-formula.md)
+- [Hahn-Banach theorem](../normed-vector-spaces-banach-spaces/hahn-banach-theorem.md)
 - [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [Order topology](../../topology/topological-algebra/order-topology.md)
 - [Removable singularity](removable-singularity.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

@@ -18,10 +18,8 @@ MeasureTheory.integral.{u_1, u_5} {α : Type u_1} {G : Type u_5} [NormedAddCommG
 ## Depends on
 
 - [$L^p$ space](l-p-space.md)
-- [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
 - [Completeness](../../../topology/uniform-notions/completeness.md)
 - [Extension by continuity](../../../topology/general-topology/part-01/extension-by-continuity.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Norm of a continuous linear map](../../normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
 - [Normed vector space over a normed field](../../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Vector-valued integrable function (Bochner integral)](vector-valued-integrable-function-bochner-integr.md)

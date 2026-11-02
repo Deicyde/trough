@@ -32,7 +32,6 @@ ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub.{u_1, u_2} {Ω : Ty
 
 - [Gaussian law](../random-variables-and-their-laws/gaussian-law.md)
 - [Independence of random variables](../random-variables-and-their-laws/independence-of-random-variables.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
 - [Variance of a real-valued random variable](../random-variables-and-their-laws/variance-of-a-real-valued-random-variable.md)
 

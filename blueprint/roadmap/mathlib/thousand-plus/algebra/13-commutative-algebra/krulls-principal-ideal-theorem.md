@@ -34,7 +34,6 @@ Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes.{u_1} {R : Type u_1} [Co
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

@@ -20,7 +20,6 @@ Finset.addConst.{u_1} {G : Type u_1} [AddGroup G] [DecidableEq G] (A B : Finset 
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Rational number](../../general-algebra/numbers/rational-number.md)
-- [Ring](../../general-algebra/rings/ring.md)
 
 ## Sources
 

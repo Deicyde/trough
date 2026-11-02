@@ -20,6 +20,7 @@ Real.log (x : ℝ) : ℝ
 ## Depends on
 
 - [Exponential](exponential.md)
+- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

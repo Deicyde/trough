@@ -34,8 +34,9 @@ closure_convexHull_extremePoints.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.M
 ## Proof depends on
 
 - [Dual of a normed space](../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
+- [Extreme value theorem](../../../overview/topology/topological-algebra/extreme-value-theorem.md)
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources

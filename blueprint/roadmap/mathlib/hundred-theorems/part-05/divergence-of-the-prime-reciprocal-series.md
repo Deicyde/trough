@@ -36,10 +36,11 @@ not_summable_one_div_on_primes : ¬Summable ({p | Nat.Prime p}.indicator fun n =
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Continuous function](../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Induced topology](../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Metric space](../../overview/topology/metric-spaces/metric-space.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
+- [The Infinitude of Primes](../part-01/the-infinitude-of-primes.md)
 - [The Number of Subsets of a Set](../part-03/the-number-of-subsets-of-a-set.md)
+- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

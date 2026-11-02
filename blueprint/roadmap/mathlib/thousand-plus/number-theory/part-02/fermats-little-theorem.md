@@ -17,10 +17,8 @@ ZMod.pow_card_sub_one_eq_one {p : ℕ} [Fact (Nat.Prime p)] {a : ZMod p} (ha : a
 
 ## Depends on
 
-- [Euclid's' algorithm](../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Irreducible element](../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

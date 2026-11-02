@@ -19,11 +19,15 @@ Real.geom_mean_le_arith_mean_weighted.{u} {ι : Type u} (s : Finset ι) (w z : �
 
 ## Depends on
 
-- [Power functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Finite set](../../overview/data-structures/sets/finite-set.md)
+- [Real number](../../overview/general-algebra/numbers/real-number.md)
+- [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
 - [Jensen's inequality (finite sum version)](../../overview/analysis/convexity/jensens-inequality-finite-sum-version.md)
+- [Logarithm](../../overview/analysis/special-functions/logarithm.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

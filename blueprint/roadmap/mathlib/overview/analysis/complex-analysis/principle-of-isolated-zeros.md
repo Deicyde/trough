@@ -26,11 +26,10 @@ AnalyticAt.eventually_eq_zero_or_eventually_ne_zero.{u_1, u_2} {𝕜 : Type u_1}
 ## Proof depends on
 
 - [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Continuity (Complex-valued series)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/continuity.md)
 - [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Norm of a continuous linear map](../normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

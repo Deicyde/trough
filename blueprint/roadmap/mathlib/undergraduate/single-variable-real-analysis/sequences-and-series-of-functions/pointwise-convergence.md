@@ -19,8 +19,12 @@ tendsto_pi_nhds.{v, u_2, u_3} {Y : Type v} {ι : Type u_2} {A : ι → Type u_3}
 
 ## Depends on
 
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Limit of a map with respect to filters](../../../overview/topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
+- [Topological space](../../../overview/topology/general-topology/part-01/topological-space.md)
+
+## Proof depends on
+
+- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 
 ## Sources
 

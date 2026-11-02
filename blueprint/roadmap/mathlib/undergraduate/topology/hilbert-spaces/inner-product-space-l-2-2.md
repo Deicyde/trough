@@ -18,8 +18,7 @@ MeasureTheory.L2.innerProductSpace.{u_1, u_2, u_4} {α : Type u_1} {E : Type u_2
 
 ## Depends on
 
-- [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [$L^p$ space](../../../overview/analysis/measures-and-integral-calculus/part-01/l-p-space.md)
 - [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 
 ## Sources

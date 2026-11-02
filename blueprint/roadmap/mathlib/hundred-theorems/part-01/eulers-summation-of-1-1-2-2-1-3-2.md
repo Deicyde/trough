@@ -29,9 +29,9 @@ hasSum_zeta_two : HasSum (fun n => 1 / ↑n ^ 2) (Real.pi ^ 2 / 6)
 - [Derivative at a point](../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Fourier Series](../part-04/fourier-series.md)
-- [Lebesgue measure (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Fundamental theorem of calculus, part 2](../../overview/analysis/measures-and-integral-calculus/part-01/fundamental-theorem-of-calculus-part-2.md)
 - [Polynomial derivative](../../undergraduate/ring-theory/polynomial-rings/polynomial-derivative.md)
-- [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
+- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

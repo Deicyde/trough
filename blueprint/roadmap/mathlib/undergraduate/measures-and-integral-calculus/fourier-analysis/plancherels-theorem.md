@@ -20,11 +20,16 @@ SchwartzMap.integral_inner_fourier_fourier.{u_3, u_4} {V : Type u_3} [NormedAddC
 
 ## Depends on
 
-- [Fourier transforms on $\mathcal{S}(\R^d)$](../../distribution-calculus/spaces-s-r-d/fourier-transforms-on-s-r-d.md)
+- [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Complex number](../../../overview/general-algebra/numbers/complex-number.md)
+- [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
+- [Lebesgue measure (Measure theory)](../measure-theory/lebesgue-measure.md)
+- [Schwartz space](../../../overview/analysis/distribution-theory/schwartz-space.md)
 
 ## Proof depends on
 
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Inversion formula](../../../overview/analysis/fourier-analysis/inversion-formula.md)
 
 ## Sources

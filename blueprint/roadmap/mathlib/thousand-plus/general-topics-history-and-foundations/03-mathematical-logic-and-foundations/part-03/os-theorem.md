@@ -20,7 +20,6 @@ FirstOrder.Language.Ultraproduct.sentence_realize.{u, v, u_1, u_2} {α : Type u_
 ## Depends on
 
 - [Filter](../../../../overview/topology/general-topology/part-01/filter.md)
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
 - [First-order formula](../../../../overview/logic-and-computation/model-theory/first-order-formula.md)
 - [First-order structure](../../../../overview/logic-and-computation/model-theory/first-order-structure.md)
 

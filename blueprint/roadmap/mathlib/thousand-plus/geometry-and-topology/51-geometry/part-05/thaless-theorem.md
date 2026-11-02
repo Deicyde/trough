@@ -28,7 +28,10 @@ EuclideanGeometry.Sphere.thales_theorem.{u_1, u_2} {V : Type u_1} {P : Type u_2}
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Invertible elements](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+
+## Proof depends on
+
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

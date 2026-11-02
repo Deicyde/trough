@@ -37,14 +37,8 @@ The 1000+ list (Q853067): In `pell.eq_pell`, `d` is defined to be `a*a - 1` for 
 
 ## Proof depends on
 
-- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Dirichlet's approximation theorem](../../thousand-plus/number-theory/part-02/dirichlets-approximation-theorem.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Finite set](../../overview/data-structures/sets/finite-set.md)
-- [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources
 

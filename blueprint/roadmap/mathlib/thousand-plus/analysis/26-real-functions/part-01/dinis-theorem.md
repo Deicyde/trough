@@ -25,11 +25,6 @@ Monotone.tendstoLocallyUniformly_of_forall_tendsto.{u_1, u_2, u_3} {ι : Type u_
 - [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 
-## Proof depends on
-
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-
 ## Sources
 
 - [Mathlib documentation: `Monotone.tendstoLocallyUniformly_of_forall_tendsto`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UniformSpace/Dini.html#Monotone.tendstoLocallyUniformly_of_forall_tendsto)

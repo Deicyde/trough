@@ -22,11 +22,7 @@ exists_extension_norm_eq.{u_1, u_2} {ùïú : Type u_1} [NontriviallyNormedField 
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Dual of a normed space](dual-of-a-normed-space.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](normed-vector-space-over-a-normed-field.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Vector subspace](../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
 
@@ -34,7 +30,6 @@ exists_extension_norm_eq.{u_1, u_2} {ùïú : Type u_1} [NontriviallyNormedField 
 
 - [Dual vector space](../../linear-algebra/duality/dual-vector-space.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 

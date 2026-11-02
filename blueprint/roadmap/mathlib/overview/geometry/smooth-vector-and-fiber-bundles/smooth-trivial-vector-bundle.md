@@ -24,6 +24,7 @@ Bundle.Trivial.contMDiffVectorBundle.{u_1, u_2, u_3, u_6, u_7} {n : WithTop â„•â
 
 ## Proof depends on
 
+- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Smooth map between manifolds](../differentiable-manifolds/part-01/smooth-map-between-manifolds.md)
 
 ## Sources

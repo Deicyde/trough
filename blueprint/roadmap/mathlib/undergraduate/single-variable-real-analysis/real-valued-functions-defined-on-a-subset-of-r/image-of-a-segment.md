@@ -27,7 +27,6 @@ ContinuousOn.image_Icc.{u_2, u_3} {α : Type u_2} {β : Type u_3} [Conditionally
 
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 
 ## Sources
 

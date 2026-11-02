@@ -22,12 +22,8 @@ Complex.exists_root {f : Polynomial ℂ} (hf : 0 < f.degree) : ∃ z, f.IsRoot z
 
 ## Proof depends on
 
-- [Characteristic zero](characteristic-zero.md)
-- [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Differentiable functions](../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
+- [Liouville theorem](../../analysis/complex-analysis/liouville-theorem.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 
 ## Sources
 

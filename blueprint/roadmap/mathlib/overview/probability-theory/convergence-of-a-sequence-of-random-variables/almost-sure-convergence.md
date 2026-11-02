@@ -18,7 +18,6 @@ MeasureTheory.ae.{u_1, u_3} {α : Type u_1} {F : Type u_3} [FunLike F (Set α) E
 ## Depends on
 
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Real number](../../general-algebra/numbers/real-number.md)
 
 ## Sources

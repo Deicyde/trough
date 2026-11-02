@@ -27,6 +27,10 @@ MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem.{u_1} {α : Type u_1}
 - [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 - [Positive measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 
+## Proof depends on
+
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
+
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Dynamics/Ergodic/Conservative.html#MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem)

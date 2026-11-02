@@ -32,15 +32,12 @@ The 1000+ list (Q1137206) also cites `taylor_mean_remainder_cauchy`.
 
 ## Depends on
 
-- [Algebra of endomorphisms of a vector space](../../linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Completeness of R](../topology-of-r/completeness-of-r.md)
 - [Holomorphic functions](../../single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Radius of convergence](../../single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
@@ -48,9 +45,12 @@ The 1000+ list (Q1137206) also cites `taylor_mean_remainder_cauchy`.
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Derivative at a point](../differentiability/derivative-at-a-point.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Generating sets](../../linear-algebra/fundamentals/generating-sets.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

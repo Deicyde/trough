@@ -24,11 +24,14 @@ MeasureTheory.condExp.{u_1, u_3} {α : Type u_1} {E : Type u_3} (m : MeasurableS
 ## Depends on
 
 - [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Extension by continuity](../../topology/general-topology/part-01/extension-by-continuity.md)
 - [Inner product space $L^2$](../../../undergraduate/topology/hilbert-spaces/inner-product-space-l-2-2.md)
 - [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
+- [Norm of a continuous linear map](../../analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
 - [Orthogonal projection](../../analysis/hilbert-spaces/orthogonal-projection.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
+- [Vector-valued integrable function (Bochner integral)](../../analysis/measures-and-integral-calculus/part-01/vector-valued-integrable-function-bochner-integr.md)
 
 ## Sources
 

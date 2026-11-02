@@ -20,7 +20,6 @@ HasFPowerSeriesOnBall.continuousOn.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u
 ## Depends on
 
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Radius of convergence](radius-of-convergence.md)
 
 ## Proof depends on
@@ -28,7 +27,9 @@ HasFPowerSeriesOnBall.continuousOn.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
 - [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

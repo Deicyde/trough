@@ -30,12 +30,10 @@ banach_steinhaus.{u_1, u_2, u_3, u_4, u_5} {E : Type u_1} {F : Type u_2} {𝕜 :
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Baire theorem](../../topology/metric-spaces/baire-theorem.md)
-- [Finite set](../../data-structures/sets/finite-set.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
+- [Topology on a normed vector space](topology-on-a-normed-vector-space.md)
 
 ## Sources
 

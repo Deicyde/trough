@@ -19,17 +19,18 @@ Real.summable_one_div_nat_rpow {p : ℝ} : (Summable fun n => 1 / ↑n ^ p) ↔ 
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Power functions](../elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Order (Real numbers)](../real-numbers/order.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../topology-of-r/metric-structure.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

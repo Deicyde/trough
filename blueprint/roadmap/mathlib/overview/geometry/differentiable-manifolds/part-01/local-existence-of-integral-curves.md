@@ -22,7 +22,6 @@ exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless.{u_1, u_2, u_3} {E : Type 
 
 ## Depends on
 
-- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)
 - [Tangent bundle](tangent-bundle.md)
 - [Topological fiber bundle](../../../topology/general-topology/part-01/topological-fiber-bundle.md)
@@ -31,6 +30,7 @@ exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless.{u_1, u_2, u_3} {E : Type 
 ## Proof depends on
 
 - [Ball](../../../topology/metric-spaces/ball.md)
+- [Cauchy-Lipschitz Theorem](../../../../undergraduate/multivariable-calculus/differential-equations/cauchy-lipschitz-theorem.md)
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Differentiable function between normed vector spaces](../../../analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 

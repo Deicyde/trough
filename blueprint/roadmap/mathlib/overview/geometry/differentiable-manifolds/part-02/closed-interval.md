@@ -17,7 +17,6 @@ instIsManifoldIcc (x y : ℝ) [Fact (x < y)] {n : WithTop ℕ∞} :
 
 ## Depends on
 
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Inner product space, over $R$ or $C$](../../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Smooth or analytic manifold (with boundary and corners)](../part-01/smooth-or-analytic-manifold-with-boundary-and-co.md)
@@ -25,7 +24,8 @@ instIsManifoldIcc (x y : ℝ) [Fact (x < y)] {n : WithTop ℕ∞} :
 ## Proof depends on
 
 - [$C^k$ function](../../../analysis/differentiability/c-k-function.md)
-- [Finite product of metric spaces](../../../../undergraduate/topology/topology-and-metric-spaces/finite-product-of-metric-spaces.md)
+- [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological ring](../../../topology/topological-algebra/topological-ring.md)
 
 ## Sources

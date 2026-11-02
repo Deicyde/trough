@@ -18,9 +18,7 @@ metricSpacePi.{v, u_2} {β : Type v} {X : β → Type u_2} [Fintype β] [(b : β
 ## Depends on
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

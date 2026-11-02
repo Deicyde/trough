@@ -19,7 +19,6 @@ InnerProductGeometry.angle.{u_1} {V : Type u_1} [NormedAddCommGroup V] [InnerPro
 
 ## Depends on
 
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Inverse trigonometric functions](../../analysis/special-functions/inverse-trigonometric-functions.md)
 

@@ -19,20 +19,21 @@ AkraBazziRecurrence.isBigO_asympBound.{u_1} {α : Type u_1} [Fintype α] {T : �
 ## Depends on
 
 - [Filter](../../../../overview/topology/general-topology/part-01/filter.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Logarithm](../../../../overview/analysis/special-functions/logarithm.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Completeness](../../../../overview/topology/uniform-notions/completeness.md)
 - [Convex subsets](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Differentiable function between normed vector spaces](../../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
+- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 
 ## Sources
 

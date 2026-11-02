@@ -28,9 +28,9 @@ MeasureTheory.lintegral_liminf_le.{u_1, u_3} {α : Type u_1} {m : MeasurableSpac
 - [Borel sigma-algebra](borel-sigma-algebra.md)
 - [Closure](../../../topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../topology/general-topology/part-01/cluster-point.md)
-- [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Metric space](../../../topology/metric-spaces/metric-space.md)
 - [Order topology](../../../topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

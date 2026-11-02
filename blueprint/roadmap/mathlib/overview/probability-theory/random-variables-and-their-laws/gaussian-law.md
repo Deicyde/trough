@@ -16,8 +16,12 @@ ProbabilityTheory.gaussianReal (μ : ℝ) (v : NNReal) : MeasureTheory.Measure �
 
 ## Depends on
 
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Exponential](../../analysis/special-functions/exponential.md)
 - [Integral of positive measurable functions](../../analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
 - [Lebesgue measure (Measures and integral calculus)](../../analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 
 ## Sources
 

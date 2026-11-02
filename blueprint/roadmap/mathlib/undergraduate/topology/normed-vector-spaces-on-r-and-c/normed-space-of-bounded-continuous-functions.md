@@ -19,7 +19,6 @@ BoundedContinuousFunction.instNormedSpace.{u, v, u_1} {α : Type u} {β : Type v
 ## Depends on
 
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Sources

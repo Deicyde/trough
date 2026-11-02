@@ -23,21 +23,15 @@ Complex.differentiableOn_update_limUnder_insert_of_isLittleO.{u} {E : Type u} [N
 ## Depends on
 
 - [Completeness](../../topology/uniform-notions/completeness.md)
+- [Complex number](../../general-algebra/numbers/complex-number.md)
 - [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Proof depends on
 
 - [Analytic function](../differentiability/analytic-function.md)
-- [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Differentiable function between normed vector spaces](../differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Lebesgue measure (Measures and integral calculus)](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
-- [Topological ring](../../topology/topological-algebra/topological-ring.md)
+- [Cauchy formulas](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/cauchy-formulas.md)
 
 ## Sources
 

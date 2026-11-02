@@ -19,15 +19,18 @@ NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT.{u_1} (K : Type u_1) [Field 
 ## Depends on
 
 - [Almost sure convergence](../../probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Determinant](../../linear-algebra/matrices/determinant.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Finite product of metric spaces](../../../undergraduate/topology/topology-and-metric-spaces/finite-product-of-metric-spaces.md)
 - [Finiteness of the class number](finiteness-of-the-class-number.md)
 - [Lebesgue measure (Measures and integral calculus)](../../analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Logarithm](../../analysis/special-functions/logarithm.md)
 - [Periodic points](../../dynamics/general-theory/periodic-points.md)
-- [Product of finitely many measures](../../analysis/measures-and-integral-calculus/part-02/product-of-finitely-many-measures.md)
-- [Roots of a polynomial](../polynomials-and-power-series/roots-of-a-polynomial.md)
+- [Product of sigma-algebras](../../../undergraduate/measures-and-integral-calculus/measure-theory/product-of-sigma-algebras.md)
 - [Self-adjoint operator](../../analysis/hilbert-spaces/self-adjoint-operator.md)
+
+## Proof depends on
+
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 
 ## Sources
 

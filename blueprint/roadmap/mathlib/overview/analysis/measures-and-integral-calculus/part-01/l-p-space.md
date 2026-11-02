@@ -20,10 +20,8 @@ MeasureTheory.Lp.{u_6, u_7} {α : Type u_7} (E : Type u_6) {m : MeasurableSpace 
 
 - [Almost sure convergence](../../../probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
 - [Continuous function](../../../topology/general-topology/part-01/continuous-function.md)
-- [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
 - [Integral of positive measurable functions](integral-of-positive-measurable-functions.md)
 - [Metric space](../../../topology/metric-spaces/metric-space.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Sources
 

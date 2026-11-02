@@ -23,15 +23,13 @@ Complex.borelCaratheodory {f : ℂ → ℂ} {M R : ℝ} {z : ℂ} (hM : 0 < M)
 ## Depends on
 
 - [Ball](../../../../overview/topology/metric-spaces/ball.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../../../overview/general-algebra/numbers/complex-number.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 
 ## Proof depends on
 
-- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [List](../../../../overview/data-structures/list-like-structures/list.md)
+- [Removable singularity](../../../../overview/analysis/complex-analysis/removable-singularity.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 
 ## Sources
 

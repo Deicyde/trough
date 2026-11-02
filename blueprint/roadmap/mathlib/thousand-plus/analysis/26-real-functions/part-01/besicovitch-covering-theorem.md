@@ -40,14 +40,11 @@ Besicovitch.exists_disjoint_closedBall_covering_ae.{u_1} {α : Type u_1} [Metric
 
 ## Proof depends on
 
-- [Almost sure convergence](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
-- [Ball](../../../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 - [Ordinal](../../../../overview/logic-and-computation/set-theory/ordinals/ordinal.md)
+- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

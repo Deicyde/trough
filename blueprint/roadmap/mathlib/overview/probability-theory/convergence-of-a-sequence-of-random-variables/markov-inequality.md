@@ -29,7 +29,6 @@ MeasureTheory.mul_meas_ge_le_lintegral.{u_1} {α : Type u_1} {mα : MeasurableSp
 - [Borel sigma-algebra](../../analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
-- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Order topology](../../topology/topological-algebra/order-topology.md)
 

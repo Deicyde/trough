@@ -28,6 +28,7 @@ intervalIntegral.integral_hasFDerivAt_of_tendsto_ae.{u_3} {E : Type u_3} [Normed
 ## Depends on
 
 - [Bochner integral](bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Differentiable function between normed vector spaces](../../differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Lebesgue measure (Measures and integral calculus)](lebesgue-measure.md)
 - [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
@@ -35,8 +36,8 @@ intervalIntegral.integral_hasFDerivAt_of_tendsto_ae.{u_3} {E : Type u_3} [Normed
 
 ## Proof depends on
 
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Order topology](../../../topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

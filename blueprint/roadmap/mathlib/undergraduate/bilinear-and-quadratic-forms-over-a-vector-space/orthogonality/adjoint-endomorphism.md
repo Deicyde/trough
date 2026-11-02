@@ -28,7 +28,6 @@ LinearMap.BilinForm.leftAdjointOfNondegenerate.{u_5, u_6} {V : Type u_5} {K : Ty
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Nondegenerate forms](../bilinear-forms/nondegenerate-forms.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

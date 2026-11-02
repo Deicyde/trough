@@ -40,28 +40,29 @@ The wikipedia page is really vague; it's not clear what is meant here. While mat
 
 ## Depends on
 
-- [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
-- [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Existence of orthonormal basis](../../../overview/linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../../overview/general-algebra/numbers/complex-number.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
-- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Vector-valued integrable function (Bochner integral)](../../../overview/analysis/measures-and-integral-calculus/part-01/vector-valued-integrable-function-bochner-integr.md)
 
 ## Proof depends on
 
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Exponential](../../../overview/analysis/special-functions/exponential.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
+- [Squeeze theorem](../26-real-functions/part-03/squeeze-theorem.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

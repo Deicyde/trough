@@ -30,6 +30,7 @@ HasFDerivAt.of_local_left_inverse.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u_
 ## Proof depends on
 
 - [Finite set](../../data-structures/sets/finite-set.md)
+- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Sources

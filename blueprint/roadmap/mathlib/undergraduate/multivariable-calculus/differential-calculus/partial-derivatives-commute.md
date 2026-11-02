@@ -24,17 +24,12 @@ second_derivative_symmetric.{u_1, u_2, u_3} {𝕜 : Type u_1} [NontriviallyNorme
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Convex subsets](../../affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
@@ -42,6 +37,8 @@ second_derivative_symmetric.{u_1, u_2, u_3} {𝕜 : Type u_1} [NontriviallyNorme
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
+- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

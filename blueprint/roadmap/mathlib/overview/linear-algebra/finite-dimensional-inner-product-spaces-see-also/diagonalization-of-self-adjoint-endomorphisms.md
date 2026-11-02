@@ -25,18 +25,17 @@ LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply.{u_1, u_2} {𝕜 : Type 
 
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Direct sum](../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
-- [Eigenvalue](../structure-theory-of-endomorphisms/eigenvalue.md)
 - [Existence of orthonormal basis](existence-of-orthonormal-basis.md)
 - [Finite-dimensionality](../finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Generalized eigenspaces](../../../undergraduate/linear-algebra/structure-theory-of-endomorphisms/generalized-eigenspaces.md)
 - [Isomorphism with $K^n$](../finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Proof depends on
 
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Eigenvector](../structure-theory-of-endomorphisms/eigenvector.md)
+- [Eigenvalue](../structure-theory-of-endomorphisms/eigenvalue.md)
+- [Eigenvalues from Rayleigh quotient](../../analysis/hilbert-spaces/eigenvalues-from-rayleigh-quotient.md)
 - [Local ring](../../general-algebra/rings/local-ring.md)
 - [Orthogonal complement](../../analysis/hilbert-spaces/orthogonal-complement.md)
 

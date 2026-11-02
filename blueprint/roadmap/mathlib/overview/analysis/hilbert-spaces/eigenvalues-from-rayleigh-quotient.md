@@ -21,19 +21,20 @@ IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn.{u_1, u_2} {𝕜 : Type u_1} [RCLi
 
 ## Depends on
 
+- [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
 - [Eigenvector](../../linear-algebra/structure-theory-of-endomorphisms/eigenvector.md)
-- [Finite set](../../data-structures/sets/finite-set.md)
-- [Fréchet-Riesz representation of the dual of a Hilbert space](frechet-riesz-representation-of-the-dual-of-a-hi.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Inner product space, over $R$ or $C$](inner-product-space-over-r-or-c.md)
 - [Self-adjoint operator](self-adjoint-operator.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Dual of a normed space](../normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
 - [Hellinger–Toeplitz theorem](../../../thousand-plus/analysis/46-functional-analysis/part-02/hellinger-toeplitz-theorem.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Topological module](../../topology/topological-algebra/topological-module.md)
+- [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

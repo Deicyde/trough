@@ -25,13 +25,10 @@ MeasureTheory.measure_limsup_atTop_eq_zero.{u_1, u_3} {α : Type u_1} {F : Type 
 ## Depends on
 
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Real number](../../../overview/general-algebra/numbers/real-number.md)
 
 ## Proof depends on
 
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources

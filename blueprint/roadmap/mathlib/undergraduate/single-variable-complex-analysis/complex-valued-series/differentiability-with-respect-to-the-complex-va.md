@@ -28,10 +28,8 @@ HasFPowerSeriesOnBall.differentiableOn.{u, v, u_1} {𝕜 : Type u_1} [Nontrivial
 
 - [Analytic function](../../../overview/analysis/differentiability/analytic-function.md)
 - [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

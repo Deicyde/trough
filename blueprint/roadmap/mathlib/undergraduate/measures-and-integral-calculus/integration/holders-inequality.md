@@ -23,11 +23,12 @@ NNReal.lintegral_mul_le_Lp_mul_Lq.{u_1} {α : Type u_1} [MeasurableSpace α]
 ## Depends on
 
 - [Almost sure convergence](../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
-- [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Integral of positive measurable functions](../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
+
+## Proof depends on
+
+- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
 
 ## Sources
 

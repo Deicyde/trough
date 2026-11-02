@@ -21,7 +21,6 @@ HasDerivAt.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [A
 
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Sources

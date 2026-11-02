@@ -31,10 +31,9 @@ Real.tendsto_tsum_powerSeries_nhdsWithin_lt {f : ℕ → ℝ} {l : ℝ}
 
 ## Depends on
 
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../../../overview/general-algebra/numbers/complex-number.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
-- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Proof depends on
 
@@ -42,9 +41,9 @@ Real.tendsto_tsum_powerSeries_nhdsWithin_lt {f : ℕ → ℝ} {l : ℝ}
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Continuous linear map](../../../../overview/topology/topological-algebra/continuous-linear-map.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Limits of sequences](../../../../undergraduate/topology/topology-and-metric-spaces/limits-of-sequences.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)

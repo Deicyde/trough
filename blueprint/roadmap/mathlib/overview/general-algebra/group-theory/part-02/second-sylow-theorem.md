@@ -19,7 +19,6 @@ Sylow.isPretransitive_of_finite.{u_1} {p : ℕ} {G : Type u_1} [Group G] [hp : F
 ## Depends on
 
 - [Group action](../part-01/group-action.md)
-- [Group morphism](../part-01/group-morphism.md)
 - [Irreducible element](../../divisibility-in-integral-domains/irreducible-element.md)
 - [Subgroup](../part-01/subgroup.md)
 

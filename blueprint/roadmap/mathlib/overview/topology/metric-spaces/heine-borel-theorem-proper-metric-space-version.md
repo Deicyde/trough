@@ -27,7 +27,6 @@ The 1000+ list (Q253214) also cites `FiniteDimensional.proper`.
 
 - [Ball](ball.md)
 - [Hausdorff space](../general-topology/part-01/hausdorff-space.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

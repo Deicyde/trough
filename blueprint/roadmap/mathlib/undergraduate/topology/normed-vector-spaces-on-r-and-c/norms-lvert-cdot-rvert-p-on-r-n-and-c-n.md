@@ -18,9 +18,8 @@ PiLp.normedSpace.{u_1, u_2, u_4} (p : ENNReal) (𝕜 : Type u_1) {ι : Type u_2}
 
 ## Depends on
 
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Sources
 

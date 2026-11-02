@@ -43,9 +43,10 @@ MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone.{u_1} {α : Type u_1} {m 
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology on a normed vector space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

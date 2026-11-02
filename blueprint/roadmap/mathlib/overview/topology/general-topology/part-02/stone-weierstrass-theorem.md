@@ -23,19 +23,15 @@ ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints.{u_1} {X :
 - [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Closure](../part-01/closure.md)
 - [Compact open topology](../part-01/compact-open-topology.md)
-- [Lipschitz continuity](../../metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Metric space](../../metric-spaces/metric-space.md)
 - [Topological ring](../../topological-algebra/topological-ring.md)
 
 ## Proof depends on
 
 - [Ball](../../metric-spaces/ball.md)
 - [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Linear map](../../../linear-algebra/fundamentals/linear-map.md)
-- [Order topology](../../topological-algebra/order-topology.md)
-- [Polynomial functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
-- [Subring](../../../general-algebra/rings/subring.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Weierstrass polynomial approximation theorem](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/weierstrass-polynomial-approximation-theorem.md)
 
 ## Sources
 

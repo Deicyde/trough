@@ -21,12 +21,8 @@ BoxIntegral.integralSum.{u, v, w} {ι : Type u} {E : Type v} {F : Type w} [Norme
 ## Depends on
 
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Metric structure](../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

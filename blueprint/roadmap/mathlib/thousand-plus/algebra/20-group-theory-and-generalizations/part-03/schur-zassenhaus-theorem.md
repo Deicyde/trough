@@ -25,10 +25,11 @@ Subgroup.exists_left_complement'_of_coprime.{u} {G : Type u} [Group G] {N : Subg
 ## Proof depends on
 
 - [Euclid's' algorithm](../../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
-- [Irreducible element](../../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Lagrange's theorem](../../../../overview/general-algebra/group-theory/part-02/lagranges-theorem.md)
 - [Quotient group](../../../../overview/general-algebra/group-theory/part-01/quotient-group.md)
+- [Second Sylow theorem](../../../../overview/general-algebra/group-theory/part-02/second-sylow-theorem.md)
 - [Stabilizer of a point](../../../../undergraduate/group-theory/basic-definitions/stabilizer-of-a-point.md)
+- [Third Sylow theorem](../../../../overview/general-algebra/group-theory/part-02/third-sylow-theorem.md)
 
 ## Sources
 

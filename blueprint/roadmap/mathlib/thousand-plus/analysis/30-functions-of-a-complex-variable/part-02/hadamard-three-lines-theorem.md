@@ -27,21 +27,14 @@ Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip.{u_1} 
 ## Depends on
 
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Complex number](../../../../overview/general-algebra/numbers/complex-number.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Inverse trigonometric functions](../../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
-- [Logarithm](../../../../overview/analysis/special-functions/logarithm.md)
 
 ## Proof depends on
 
 - [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Differentiable functions](../../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Phragmen-Lindelöf principle](../../../../overview/analysis/complex-analysis/phragmen-lindelof-principle.md)
 
 ## Sources
 

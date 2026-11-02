@@ -30,7 +30,9 @@ MeasureTheory.Measure.haveLebesgueDecomposition_of_sigmaFinite.{u_1} {α : Type 
 ## Proof depends on
 
 - [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Monotone convergence theorem (1000+ theorems)](../../../analysis/26-real-functions/part-03/monotone-convergence-theorem.md)
+- [Squeeze theorem](../../../analysis/26-real-functions/part-03/squeeze-theorem.md)
 
 ## Sources
 

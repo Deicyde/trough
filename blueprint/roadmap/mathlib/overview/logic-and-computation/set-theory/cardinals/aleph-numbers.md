@@ -24,6 +24,7 @@ Cardinal.aleph.{u_1} : Ordinal.{u_1} ↪o Cardinal.{u_1}
 ## Depends on
 
 - [Cofinality](cofinality.md)
+- [Natural number](../../../general-algebra/numbers/natural-number.md)
 - [Ordinal](../ordinals/ordinal.md)
 
 ## Sources

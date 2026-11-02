@@ -21,13 +21,8 @@ Distribution.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E
 
 ## Depends on
 
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Inner product space, over $R$ or $C$](../hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [Local convexity](../topological-vector-spaces/local-convexity.md)
 - [Test functions](test-functions.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Sources
 

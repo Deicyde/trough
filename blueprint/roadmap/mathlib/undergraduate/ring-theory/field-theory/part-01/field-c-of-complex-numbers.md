@@ -18,8 +18,6 @@ Complex.instField : Field ℂ
 
 - [Complex number](../../../../overview/general-algebra/numbers/complex-number.md)
 - [Field $\R$ of real numbers](field-r-of-real-numbers.md)
-- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Ring morphism](../../../../overview/general-algebra/rings/ring-morphism.md)
 
 ## Sources
 

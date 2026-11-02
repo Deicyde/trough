@@ -23,11 +23,13 @@ exists_hilbertBasis.{u_2, u_3} (𝕜 : Type u_2) [RCLike 𝕜] (E : Type u_3) [N
 
 - [Closure](../../topology/general-topology/part-01/closure.md)
 - [Completeness of $l^2$](../../../undergraduate/topology/hilbert-spaces/completeness-of-l-2.md)
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Orthogonal complement](orthogonal-complement.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
+- [Topology on a normed vector space](../normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

@@ -56,15 +56,10 @@ isCompact_closure_of_isTightMeasureSet.{u_1} {E : Type u_1} [MeasurableSpace E] 
 
 ## Depends on
 
-- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Continuous linear map](../../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Integral of positive measurable functions](../../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
-- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 - [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 
 ## Proof depends on
@@ -72,10 +67,10 @@ isCompact_closure_of_isTightMeasureSet.{u_1} {E : Type u_1} [MeasurableSpace E] 
 - [Bochner integral](../../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Carathéodory's theorem (measure theory)](caratheodorys-theorem-measure-theory.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Heine-Borel theorem (proper metric space version)](../../../../overview/topology/metric-spaces/heine-borel-theorem-proper-metric-space-version.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Urysohn's lemma](../../../../overview/topology/general-topology/part-02/urysohns-lemma.md)
 
 ## Sources
 

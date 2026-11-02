@@ -27,8 +27,9 @@ EuclideanGeometry.angle_add_angle_add_angle_eq_pi.{u_1, u_2} {V : Type u_1} {P :
 
 ## Proof depends on
 
+- [Cauchy-Schwarz inequality](../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

@@ -23,18 +23,18 @@ QuadraticForm.equivalent_one_zero_neg_one_weighted_sum_squared.{u_2} {M : Type u
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Quadratic form](../../../overview/linear-algebra/bilinear-and-quadratic-forms/quadratic-form.md)
+- [Real number](../../../overview/general-algebra/numbers/real-number.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Invertible elements](../../ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Isomorphism with $K^n$](../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
 - [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Sources

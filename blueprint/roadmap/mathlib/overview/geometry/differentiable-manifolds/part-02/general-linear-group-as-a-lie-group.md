@@ -19,12 +19,14 @@ Units.instLieGroupModelWithCornersSelf.{u_1, u_2} {R : Type u_1} [NormedRing R] 
 ## Depends on
 
 - [Lie group](../part-01/lie-group.md)
-- [Open map](../../../topology/general-topology/part-01/open-map.md)
 
 ## Proof depends on
 
 - [$C^k$ function](../../../analysis/differentiability/c-k-function.md)
+- [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
 - [Invertible elements](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
+- [Open map](../../../topology/general-topology/part-01/open-map.md)
+- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

@@ -21,7 +21,6 @@ Hard to say what exactly is meant.
 ## Depends on
 
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 - [Real number](../../../../overview/general-algebra/numbers/real-number.md)
 - [Sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/sigma-algebra.md)
 

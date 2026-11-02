@@ -29,10 +29,6 @@ MeasureTheory.tendsto_integral_of_dominated_convergence.{u_1, u_3} {α : Type u_
 
 - [Bochner integral](bochner-integral.md)
 
-## Proof depends on
-
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.tendsto_integral_of_dominated_convergence`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/DominatedConvergence.html#MeasureTheory.tendsto_integral_of_dominated_convergence)

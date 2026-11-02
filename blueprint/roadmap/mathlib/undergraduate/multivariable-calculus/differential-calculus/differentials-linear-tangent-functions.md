@@ -21,7 +21,6 @@ fderiv.{u_1, u_2, u_3} (𝕜 : Type u_1) [NontriviallyNormedField 𝕜] {E : Typ
 
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

@@ -22,10 +22,6 @@ Metric.complete_of_cauchySeq_tendsto.{u} {α : Type u} [PseudoMetricSpace α] :
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 
-## Proof depends on
-
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-
 ## Sources
 
 - [Mathlib documentation: `Metric.complete_of_cauchySeq_tendsto`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Cauchy.html#Metric.complete_of_cauchySeq_tendsto)

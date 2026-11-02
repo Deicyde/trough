@@ -19,8 +19,7 @@ Real.rpow (x y : ℝ) : ℝ
 
 ## Depends on
 
-- [Inverse trigonometric functions](../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
-- [Logarithm](../../../overview/analysis/special-functions/logarithm.md)
+- [Complex number](../../../overview/general-algebra/numbers/complex-number.md)
 
 ## Sources
 

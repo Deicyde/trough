@@ -26,6 +26,10 @@ MvPolynomial.mul_esymm_eq_sum.{u_1, u_2} (σ : Type u_1) [Fintype σ] (R : Type 
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 - [Ring](../../../overview/general-algebra/rings/ring.md)
 
+## Proof depends on
+
+- [Formula for the Number of Combinations](../../../hundred-theorems/part-03/formula-for-the-number-of-combinations.md)
+
 ## Sources
 
 - [Mathlib documentation: `MvPolynomial.mul_esymm_eq_sum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/MvPolynomial/Symmetric/NewtonIdentities.html#MvPolynomial.mul_esymm_eq_sum)

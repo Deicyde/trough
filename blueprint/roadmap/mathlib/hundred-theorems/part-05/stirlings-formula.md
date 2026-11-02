@@ -28,14 +28,14 @@ Stirling.tendsto_stirlingSeq_sqrt_pi :
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
+- [Logarithm](../../overview/analysis/special-functions/logarithm.md)
 - [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [Power functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
-- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
+- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
 
 ## Sources
 

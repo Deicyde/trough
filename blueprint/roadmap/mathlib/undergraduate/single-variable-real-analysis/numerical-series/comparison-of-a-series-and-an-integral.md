@@ -19,15 +19,19 @@ AntitoneOn.tsum_le_integral {f : ℝ → ℝ} (anti : AntitoneOn f (Set.Ici 0))
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Completeness of R](../topology-of-r/completeness-of-r.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Metric structure](../topology-of-r/metric-structure.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

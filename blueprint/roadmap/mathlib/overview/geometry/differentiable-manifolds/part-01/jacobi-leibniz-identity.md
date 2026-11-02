@@ -28,7 +28,6 @@ VectorField.leibniz_identity_mlieBracket.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1}
 ## Depends on
 
 - [Lie bracket of vector field](lie-bracket-of-vector-field.md)
-- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Smooth map between manifolds](smooth-map-between-manifolds.md)
 - [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)
 - [Tangent bundle](tangent-bundle.md)
@@ -40,6 +39,8 @@ VectorField.leibniz_identity_mlieBracket.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1}
 - [Closure](../../../topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../topology/general-topology/part-01/cluster-point.md)
 - [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
+- [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 
 ## Sources
 

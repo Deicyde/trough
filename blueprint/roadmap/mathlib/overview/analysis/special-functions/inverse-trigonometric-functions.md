@@ -18,6 +18,7 @@ Real.arcsin : ℝ → ℝ
 ## Depends on
 
 - [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Set](../../data-structures/sets/set.md)
 - [Trigonometric functions](trigonometric-functions.md)
 
 ## Sources

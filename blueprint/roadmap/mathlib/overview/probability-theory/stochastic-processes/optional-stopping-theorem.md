@@ -29,6 +29,7 @@ MeasureTheory.submartingale_iff_expected_stoppedValue_mono.{u_1} {Ω : Type u_1}
 
 ## Depends on
 
+- [Bochner integral](../../analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Conditional expectation](../definitions-in-probability-theory/conditional-expectation.md)
 - [Stopping time](stopping-time.md)
 

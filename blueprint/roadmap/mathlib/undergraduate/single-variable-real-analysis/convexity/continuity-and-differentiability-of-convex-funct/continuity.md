@@ -18,27 +18,23 @@ ConvexOn.continuousOn.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace â
 ## Depends on
 
 - [Convex function](../../../../overview/analysis/convexity/convex-function.md)
-- [Field $\R$ of real numbers](../../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite-dimensionality](../../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Metric structure](../../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Proof depends on
 
 - [Affine span](../../../../overview/geometry/affine-and-euclidean-geometry/affine-span.md)
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
-- [Ball](../../../../overview/topology/metric-spaces/ball.md)
 - [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Convex hull of a subset of an affine real space](../../../affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Linear independence](../../../linear-algebra/fundamentals/linear-independence.md)
+- [Metric structure](../../topology-of-r/metric-structure.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Ring structure $\Z$](../../../ring-theory/fundamentals/ring-structure-z.md)
 - [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
 - [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology of a metric space](../../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

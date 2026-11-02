@@ -18,12 +18,12 @@ exists_deriv_eq_zero {f : ℝ → ℝ} {a b : ℝ} (hab : a < b) (hfc : Continuo
 ## Depends on
 
 - [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 
 ## Proof depends on
 
+- [Extreme value theorem](../../topology/topological-algebra/extreme-value-theorem.md)
 - [Fermat's theorem (stationary points)](../../../thousand-plus/analysis/26-real-functions/part-01/fermats-theorem-stationary-points.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 
 ## Sources
 
