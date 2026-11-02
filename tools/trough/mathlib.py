@@ -24,6 +24,7 @@ from urllib.parse import quote
 import yaml
 
 from .vault import Container, Entry, Leaf, chunk, safe_math_markdown, slugify
+from .wiki import Authored, cited, link_citations
 
 LISTS = ("overview", "undergrad", "100", "1000")
 LIST_TITLES = {
@@ -286,6 +287,15 @@ def module_names(articles: list[Article]) -> list[str]:
     return sorted({article.module for article in articles if article.module})
 
 
+def concept_key(article: Article) -> str:
+    """What an authored article names its concept by: the first declaration, the statement or
+    module, or for one Mathlib lacks "<list>:<item key>"."""
+    if article.decls:
+        return article.decls[0]
+    statement = next((item.statement for item in article.items if item.statement), None)
+    return statement or article.module or f"{article.home.list}:{article.home.key}"
+
+
 def module_path(module: str) -> str:
     return module.replace(".", "/") + ".lean"
 
@@ -527,8 +537,11 @@ def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = fro
     return leaf
 
 
-def tree_container(sources: Sources, name: str, articles_by_item: dict[int, Article]) -> Container:
-    """overview and undergrad: the list's own headings, in its order."""
+def tree_container(sources: Sources, name: str, articles_by_item: dict[int, Article],
+                   areas: dict[tuple[str, ...], str] | None = None,
+                   targets: dict[str, Leaf | Container] | None = None) -> Container:
+    """overview and undergrad: the list's own headings, in its order. An overview section with an
+    authored page (areas) opens with its text."""
     yaml_url = f"{MATHLIB_REPO}/blob/{sources.rev}/docs/{name}.yaml"
     root = Container(LIST_TITLES[name], LIST_SLUGS[name], prose=LIST_PROSE[name].format(yaml=yaml_url))
     by_path: dict[tuple[str, ...], Container] = {(): root}
@@ -537,6 +550,10 @@ def tree_container(sources: Sources, name: str, articles_by_item: dict[int, Arti
             path = item.path[:depth]
             if path not in by_path:
                 node = Container(capitalize(path[-1]), slugify(path[-1]))
+                if name == "overview" and areas and path in areas:
+                    node.prose = areas[path]
+                if name == "overview" and targets is not None:
+                    targets["area:" + "/".join(path)] = node
                 by_path[path[:-1]].entries.append(Entry(node))
                 by_path[path] = node
         article = articles_by_item[id(item)]
@@ -720,7 +737,41 @@ def disambiguate(articles: list[Article]) -> None:
                 break
 
 
-def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
+def citation_urls(sources: Sources, names: list[str]) -> dict[str, str]:
+    """Each cited name's documentation page, from the module the dump gives it. A name the dump
+    has not read yet (CI reads it once the article is pushed) goes to the documentation's search."""
+    records = {**((sources.deps or {}).get("cited") or {}), **((sources.deps or {}).get("concepts") or {})}
+    return {name: doc_url(name, (records.get(name) or {}).get("module")) for name in names}
+
+
+def apply_authored(articles: list[Article], authored: dict[str, Authored], urls: dict[str, str],
+                   targets: dict[str, Leaf | Container]) -> int:
+    """Put each authored article in place of its concept's generated text and dependencies."""
+    count = 0
+    for article in articles:
+        written = authored.get(concept_key(article))
+        if written is None:
+            continue
+        leaf = article.leaf
+        leaf.body = link_citations(written.body, urls)
+        leaf.fields = [("article_id", written.article_id), *leaf.fields]
+        for attribute in ("depends", "proof_depends"):
+            keys = getattr(written, attribute)
+            unknown = [key for key in keys if not isinstance(targets.get(key), Leaf)]
+            if unknown:
+                raise ValueError(f"{written.path}: no article for {', '.join(unknown)}")
+            setattr(leaf, attribute, [targets[key] for key in keys])
+        leaf.informal = []
+        leaf.no_depends = "Its article names no prerequisites."
+        count += 1
+    return count
+
+
+def chapter(sources: Sources, authored: dict[str, Authored] | None = None
+            ) -> tuple[Container, dict[str, int], dict[str, Leaf | Container]]:
+    """The chapter, its numbers, and the pages a trough: link can name: every concept by its
+    key, and each overview section as "area:<headings>"."""
+    authored = authored or {}
     articles = merge(sources.lists)
     claimed = frozenset(concept_names(articles))
     for article in articles:
@@ -728,6 +779,16 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
     disambiguate(articles)
     articles_by_item = {id(item): article for article in articles for item in article.items}
     edge_stats = link_edges(sources, articles)
+    targets: dict[str, Leaf | Container] = {concept_key(article): article.leaf for article in articles}
+    known = set(targets) | {key for key in authored if key.startswith("area:")}
+    stray = sorted(key for key in authored if key not in known)
+    if stray:
+        raise ValueError(f"authored articles about no concept of this chapter: "
+                         f"{', '.join(str(authored[key].path) for key in stray)}")
+    urls = citation_urls(sources, cited(authored))
+    written = apply_authored(articles, authored, urls, targets)
+    areas = {tuple(key.removeprefix("area:").split("/")): link_citations(article.body, urls)
+             for key, article in authored.items() if key.startswith("area:")}
     formalized = sum(article.kind != "wanted" for article in articles)
     wanted = len(articles) - formalized
     rev_link = f"[{sources.rev[:8]}]({MATHLIB_REPO}/tree/{sources.rev})"
@@ -762,10 +823,13 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
     )
     root = Container("Mathlib", "mathlib", prose=prose)
     root.entries = [
-        Entry(tree_container(sources, "overview", articles_by_item)),
+        Entry(tree_container(sources, "overview", articles_by_item, areas, targets)),
         Entry(tree_container(sources, "undergrad", articles_by_item)),
         Entry(hundred_container(sources, articles_by_item)),
         Entry(thousand_container(sources, articles_by_item)),
     ]
-    stats = dict(edge_stats, articles=len(articles), formalized=formalized, wanted=wanted)
-    return root, stats
+    unplaced = sorted(f"area:{'/'.join(path)}" for path in areas if "area:" + "/".join(path) not in targets)
+    if unplaced:
+        raise ValueError(f"authored area pages for no section of the overview: {', '.join(unplaced)}")
+    stats = dict(edge_stats, articles=len(articles), formalized=formalized, wanted=wanted, authored=written)
+    return root, stats, targets
