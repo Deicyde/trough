@@ -3,7 +3,6 @@ declaration: structure
 origin: cited
 mathlib: true
 mathlib_declaration: Array
-mathlib_file: Init/Prelude.lean
 ---
 
 # Array

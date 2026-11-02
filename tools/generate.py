@@ -71,7 +71,8 @@ def main() -> int:
     parser.add_argument("--modules", type=Path, help="write the listed module names here and stop")
     args = parser.parse_args()
     if args.concepts or args.modules:
-        articles = mathlib.merge(mathlib.load_sources(DATA).lists)
+        # Listing needs only the lists: the dump may be of the previous pin.
+        articles = mathlib.merge(mathlib.load_sources(DATA, deps=False).lists)
         statements = sorted({item.statement for article in articles for item in article.items if item.statement})
         if args.concepts:
             names = sorted(set(mathlib.concept_names(articles)) | set(statements))

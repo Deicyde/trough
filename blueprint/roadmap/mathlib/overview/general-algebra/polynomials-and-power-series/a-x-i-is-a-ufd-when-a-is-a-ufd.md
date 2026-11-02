@@ -18,11 +18,13 @@ MvPolynomial.uniqueFactorizationMonoid.{u, v} (σ : Type v) {D : Type u} [CommRi
 ## Depends on
 
 - [Polynomial in several indeterminates](polynomial-in-several-indeterminates.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Ring](../rings/ring.md)
+- [Unique factorisation domain](../divisibility-in-integral-domains/unique-factorisation-domain.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Characteristic zero](../field-theory/characteristic-zero.md)
 - [Greatest common divisor](../divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Group](../group-theory/part-01/group.md)
 - [Least common multiple](../divisibility-in-integral-domains/least-common-multiple.md)

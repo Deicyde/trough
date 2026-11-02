@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Rice–Shapiro theorem to Valiant–Vazirani theorem
+# Rice's theorem to Valiant–Vazirani theorem
 
+- [Rice's theorem](../../../../overview/logic-and-computation/computability/rice-theorem.md)
 - [Rice–Shapiro theorem](rice-shapiro-theorem.md)
 - [Savitch's theorem](savitchs-theorem.md)
 - [Schaefer's dichotomy theorem](schaefers-dichotomy-theorem.md)

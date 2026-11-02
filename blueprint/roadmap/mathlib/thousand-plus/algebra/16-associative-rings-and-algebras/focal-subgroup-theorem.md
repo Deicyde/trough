@@ -37,6 +37,6 @@ Subgroup.commutator_inf_eq_focalSubgroup.{u_1} {G : Type u_1} [Group G] {p : ℕ
 - [Mathlib documentation: `Subgroup.commutator_inf_eq_focalSubgroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Focal.html#Subgroup.commutator_inf_eq_focalSubgroup)
 - [Source of `Subgroup.commutator_inf_eq_focalSubgroup` in Mathlib/GroupTheory/Focal.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/Focal.lean#L210)
 - [1000+ theorems list: Q5463860](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3216)
-- [1000+ theorems project: Q5463860](https://1000-plus.github.io/?length=-1#Q5463860)
+- [1000+ theorems project: Q5463860](https://1000-plus.github.io/all.html?length=-1#Q5463860)
 - [Wikipedia: Focal subgroup theorem](https://en.wikipedia.org/wiki/Focal_subgroup_theorem)
 - [Wikidata: Q5463860](https://www.wikidata.org/wiki/Q5463860)

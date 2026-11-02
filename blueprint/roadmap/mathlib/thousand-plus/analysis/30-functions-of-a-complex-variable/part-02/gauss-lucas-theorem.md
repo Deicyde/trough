@@ -54,6 +54,6 @@ Polynomial.eq_centerMass_of_eval_derivative_eq_zero {P : Polynomial ℂ} {z : �
 - [Mathlib documentation: `Polynomial.eq_centerMass_of_eval_derivative_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Polynomial/GaussLucas.html#Polynomial.eq_centerMass_of_eval_derivative_eq_zero)
 - [Source of `Polynomial.eq_centerMass_of_eval_derivative_eq_zero` in Mathlib/Analysis/Complex/Polynomial/GaussLucas.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/Polynomial/GaussLucas.lean#L54)
 - [1000+ theorems list: Q1008566](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1197)
-- [1000+ theorems project: Q1008566](https://1000-plus.github.io/?length=-1#Q1008566)
+- [1000+ theorems project: Q1008566](https://1000-plus.github.io/all.html?length=-1#Q1008566)
 - [Wikipedia: Gauss–Lucas theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Lucas_theorem)
 - [Wikidata: Q1008566](https://www.wikidata.org/wiki/Q1008566)

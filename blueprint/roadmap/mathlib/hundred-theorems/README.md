@@ -79,7 +79,7 @@ Freek Wiedijk's list of 100 famous theorems, with Mathlib's formalizations and t
 - [64. L’Hopital’s Rule](part-04/lhopitals-rule.md)
 - [65. Isosceles Triangle Theorem](part-04/isosceles-triangle-theorem.md)
 - [66. Sum of a Geometric Series](part-04/sum-of-a-geometric-series.md)
-- [67. E is Transcendental](part-04/e-is-transcendental.md)
+- [67. e is Transcendental](part-04/e-is-transcendental.md)
 - [68. Sum of an arithmetic series](part-04/sum-of-an-arithmetic-series.md)
 - [69. Greatest Common Divisor Algorithm](part-04/greatest-common-divisor-algorithm.md)
 - [70. The Perfect Number Theorem](part-04/the-perfect-number-theorem.md)

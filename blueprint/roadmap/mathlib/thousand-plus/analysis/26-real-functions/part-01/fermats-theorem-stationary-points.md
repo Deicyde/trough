@@ -43,6 +43,6 @@ IsLocalExtr.fderiv_eq_zero.{u} {E : Type u} [NormedAddCommGroup E] [NormedSpace 
 - [Mathlib documentation: `IsLocalExtr.fderiv_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/LocalExtr/Basic.html#IsLocalExtr.fderiv_eq_zero)
 - [Source of `IsLocalExtr.fderiv_eq_zero` in Mathlib/Analysis/Calculus/LocalExtr/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/LocalExtr/Basic.lean#L200)
 - [1000+ theorems list: Q727102](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L789)
-- [1000+ theorems project: Q727102](https://1000-plus.github.io/?length=-1#Q727102)
+- [1000+ theorems project: Q727102](https://1000-plus.github.io/all.html?length=-1#Q727102)
 - [Wikipedia: Fermat's theorem (stationary points)](https://en.wikipedia.org/wiki/Fermat's_theorem_%28stationary_points%29)
 - [Wikidata: Q727102](https://www.wikidata.org/wiki/Q727102)

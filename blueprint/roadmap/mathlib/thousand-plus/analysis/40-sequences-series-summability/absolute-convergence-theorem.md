@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q332465](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L370)
-- [1000+ theorems project: Q332465](https://1000-plus.github.io/?length=-1#Q332465)
+- [1000+ theorems project: Q332465](https://1000-plus.github.io/all.html?length=-1#Q332465)
 - [Wikipedia: Absolute convergence theorem](https://en.wikipedia.org/wiki/Absolute_convergence_theorem)
 - [Wikidata: Q332465](https://www.wikidata.org/wiki/Q332465)

@@ -85,6 +85,6 @@ Real.exists_rat_abs_sub_le_and_den_le (ξ : ℝ) {n : ℕ} (n_pos : 0 < n) :
 - [Mathlib documentation: `Real.exists_rat_abs_sub_le_and_den_le`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/DiophantineApproximation/Basic.html#Real.exists_rat_abs_sub_le_and_den_le)
 - [Source of `Real.exists_rat_abs_sub_le_and_den_le` in Mathlib/NumberTheory/DiophantineApproximation/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/DiophantineApproximation/Basic.lean#L141)
 - [1000+ theorems list: Q1227703](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1554)
-- [1000+ theorems project: Q1227703](https://1000-plus.github.io/?length=-1#Q1227703)
+- [1000+ theorems project: Q1227703](https://1000-plus.github.io/all.html?length=-1#Q1227703)
 - [Wikipedia: Dirichlet's approximation theorem](https://en.wikipedia.org/wiki/Dirichlet's_approximation_theorem)
 - [Wikidata: Q1227703](https://www.wikidata.org/wiki/Q1227703)

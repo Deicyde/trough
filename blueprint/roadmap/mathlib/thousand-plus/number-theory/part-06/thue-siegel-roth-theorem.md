@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q751120](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L836)
-- [1000+ theorems project: Q751120](https://1000-plus.github.io/?length=-1#Q751120)
+- [1000+ theorems project: Q751120](https://1000-plus.github.io/all.html?length=-1#Q751120)
 - [Wikipedia: Thue–Siegel–Roth theorem](https://en.wikipedia.org/wiki/Thue%E2%80%93Siegel%E2%80%93Roth_theorem)
 - [Wikidata: Q751120](https://www.wikidata.org/wiki/Q751120)

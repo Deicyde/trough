@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q97359729](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L4271)
-- [1000+ theorems project: Q97359729](https://1000-plus.github.io/?length=-1#Q97359729)
+- [1000+ theorems project: Q97359729](https://1000-plus.github.io/all.html?length=-1#Q97359729)
 - [Wikipedia: Stahl's theorem](https://en.wikipedia.org/wiki/Stahl's_theorem)
 - [Wikidata: Q97359729](https://www.wikidata.org/wiki/Q97359729)

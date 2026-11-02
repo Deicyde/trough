@@ -35,6 +35,6 @@ HasStrictFDerivAt.to_localInverse.{u_1, u_2, u_3} {𝕜 : Type u_1} [Nontriviall
 - [Source of `HasStrictFDerivAt.to_localInverse` in Mathlib/Analysis/Calculus/InverseFunctionTheorem/FDeriv.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/InverseFunctionTheorem/FDeriv.lean#L185)
 - [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L316)
 - [1000+ theorems list: Q931001](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1108)
-- [1000+ theorems project: Q931001](https://1000-plus.github.io/?length=-1#Q931001)
+- [1000+ theorems project: Q931001](https://1000-plus.github.io/all.html?length=-1#Q931001)
 - [Wikipedia: Inverse function theorem](https://en.wikipedia.org/wiki/Inverse_function_theorem)
 - [Wikidata: Q931001](https://www.wikidata.org/wiki/Q931001)

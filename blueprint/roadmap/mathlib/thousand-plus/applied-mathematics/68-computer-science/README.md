@@ -1,6 +1,6 @@
 # 68 Computer science
 
-## [Akra–Bazzi theorem to Rice's theorem](part-01/README.md)
+## [Akra–Bazzi theorem to Quantum threshold theorem](part-01/README.md)
 
 - [Akra–Bazzi theorem](part-01/akra-bazzi-theorem.md)
 - [Blum's speedup theorem](part-01/blums-speedup-theorem.md)
@@ -16,15 +16,16 @@
 - [Karp–Lipton theorem](part-01/karp-lipton-theorem.md)
 - [Kraft–McMillan theorem](part-01/kraft-mcmillan-theorem.md)
 - [Ladner's theorem](part-01/ladners-theorem.md)
+- [Lamé’s theorem](part-01/lames-theorem.md)
 - [Linear speedup theorem](part-01/linear-speedup-theorem.md)
 - [Myhill–Nerode theorem](part-01/myhill-nerode-theorem.md)
 - [PCP theorem](part-01/pcp-theorem.md)
 - [Pseudorandom generator theorem](part-01/pseudorandom-generator-theorem.md)
 - [Quantum threshold theorem](part-01/quantum-threshold-theorem.md)
+
+## [Rice's theorem to Valiant–Vazirani theorem](part-02/README.md)
+
 - [Rice's theorem](../../../overview/logic-and-computation/computability/rice-theorem.md)
-
-## [Rice–Shapiro theorem to Valiant–Vazirani theorem](part-02/README.md)
-
 - [Rice–Shapiro theorem](part-02/rice-shapiro-theorem.md)
 - [Savitch's theorem](part-02/savitchs-theorem.md)
 - [Schaefer's dichotomy theorem](part-02/schaefers-dichotomy-theorem.md)

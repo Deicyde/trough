@@ -28,7 +28,9 @@ AddCommGroup.equiv_free_prod_directSum_zmod.{u} (G : Type u) [AddCommGroup G] [h
 
 ## Proof depends on
 
+- [$\Z$ is a Euclidean ring](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/z-is-a-euclidean-ring.md)
 - [Structure theorem](../../../linear-algebra/finitely-generated-modules-over-a-pid/structure-theorem.md)
+- [The Fundamental Theorem of Arithmetic](../../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources
 

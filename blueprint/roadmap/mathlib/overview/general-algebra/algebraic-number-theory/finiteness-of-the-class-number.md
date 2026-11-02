@@ -17,6 +17,7 @@ NumberField.RingOfIntegers.instFintypeClassGroup.{u_1} (K : Type u_1) [Field K] 
 
 ## Depends on
 
+- [$\Z$ is a Euclidean ring](../../../undergraduate/ring-theory/divisibility-in-integral-domains/z-is-a-euclidean-ring.md)
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
 - [Algebraic extension](../field-theory/algebraic-extension.md)
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)

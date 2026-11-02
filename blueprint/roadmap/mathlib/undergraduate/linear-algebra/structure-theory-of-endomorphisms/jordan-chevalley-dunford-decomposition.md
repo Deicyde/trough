@@ -30,9 +30,12 @@ Module.End.exists_isNilpotent_isSemisimple.{u_1, u_2} {K : Type u_1} {V : Type u
 ## Proof depends on
 
 - [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
+- [Ideal of a commutative ring](../../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
 - [Minimal polynomial](../../../overview/linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
+- [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Unique factorisation domain](../../../overview/general-algebra/divisibility-in-integral-domains/unique-factorisation-domain.md)
 
 ## Sources
 

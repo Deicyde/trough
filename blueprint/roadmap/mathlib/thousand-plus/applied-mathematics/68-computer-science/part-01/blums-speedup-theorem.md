@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q1751105](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1863)
-- [1000+ theorems project: Q1751105](https://1000-plus.github.io/?length=-1#Q1751105)
+- [1000+ theorems project: Q1751105](https://1000-plus.github.io/all.html?length=-1#Q1751105)
 - [Wikipedia: Blum's speedup theorem](https://en.wikipedia.org/wiki/Blum's_speedup_theorem)
 - [Wikidata: Q1751105](https://www.wikidata.org/wiki/Q1751105)

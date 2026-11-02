@@ -40,7 +40,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) at 6e837e753555: A complete machine-checked proof of FLT via Frey-Serre-Ribet-Wiles-Taylor-Wiles, from the three standard axioms; checked by comparator and the nanoda kernel.
 - [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Lean proofs of results from about 721 model-generated research manuscripts (README says ~42% of top-line results are formalized). Includes Hodge for CM abelian varieties, BSD cases, and counterexamples (Hadwiger, Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
-- [Lean Pool](https://github.com/LeanPool/lean-pool) at 01db1d7049cf: A pool of 289 permissively licensed Lean projects outside Mathlib's scope (README: about 9.9M lines), e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
+- [Lean Pool](https://github.com/LeanPool/lean-pool) at edbe5bd56f47: A pool of 317 permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
 
 ### Formal Frontier libraries
 

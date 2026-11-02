@@ -50,6 +50,6 @@ MeasureTheory.tendstoInMeasure_iff_tendsto_Lp.{u_1, u_2} {α : Type u_1} {β : T
 - [Mathlib documentation: `MeasureTheory.tendstoInMeasure_iff_tendsto_Lp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/UnifTight.html#MeasureTheory.tendstoInMeasure_iff_tendsto_Lp)
 - [Source of `MeasureTheory.tendstoInMeasure_iff_tendsto_Lp` in Mathlib/MeasureTheory/Function/UnifTight.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/UnifTight.lean#L362)
 - [1000+ theorems list: Q11352023](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L4046)
-- [1000+ theorems project: Q11352023](https://1000-plus.github.io/?length=-1#Q11352023)
+- [1000+ theorems project: Q11352023](https://1000-plus.github.io/all.html?length=-1#Q11352023)
 - [Wikipedia: Vitali convergence theorem](https://en.wikipedia.org/wiki/Vitali_convergence_theorem)
 - [Wikidata: Q11352023](https://www.wikidata.org/wiki/Q11352023)

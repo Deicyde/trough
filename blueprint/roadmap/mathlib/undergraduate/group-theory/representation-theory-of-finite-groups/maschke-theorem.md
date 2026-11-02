@@ -36,6 +36,6 @@ MonoidAlgebra.Submodule.exists_isCompl.{u_1, u_2, u_3} {k : Type u_1} [Field k] 
 - [Source of `MonoidAlgebra.Submodule.exists_isCompl` in Mathlib/RepresentationTheory/Maschke.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RepresentationTheory/Maschke.lean#L159)
 - [Mathlib undergraduate list: Group Theory › Representation theory of finite groups](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L114)
 - [1000+ theorems list: Q656198](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L691)
-- [1000+ theorems project: Q656198](https://1000-plus.github.io/?length=-1#Q656198)
+- [1000+ theorems project: Q656198](https://1000-plus.github.io/all.html?length=-1#Q656198)
 - [Wikipedia: Maschke's theorem](https://en.wikipedia.org/wiki/Maschke's_theorem)
 - [Wikidata: Q656198](https://www.wikidata.org/wiki/Q656198)

@@ -3,7 +3,6 @@ declaration: inductive
 origin: cited
 mathlib: true
 mathlib_declaration: Int
-mathlib_file: Init/Data/Int/Basic.lean
 ---
 
 # Integer

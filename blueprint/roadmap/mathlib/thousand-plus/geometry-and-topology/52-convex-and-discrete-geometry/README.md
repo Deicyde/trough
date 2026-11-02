@@ -2,7 +2,7 @@
 
 - [Alexandrov's uniqueness theorem](alexandrovs-uniqueness-theorem.md)
 - [Carathéodory's theorem (convex hull)](../../../overview/analysis/convexity/caratheodorys-theorem.md)
-- [De Bruijn's theorem](de-bruijns-theorem.md)
+- [de Bruijn's theorem](de-bruijns-theorem.md)
 - [Erdős–Anning theorem](erdos-anning-theorem.md)
 - [Erdős–Nagy theorem](erdos-nagy-theorem.md)
 - [Erdős–Szekeres theorem](../../../hundred-theorems/part-04/ascending-or-descending-sequences-erdos-szekeres.md)

@@ -3,7 +3,6 @@ declaration: structure
 origin: cited
 mathlib: true
 mathlib_declaration: Rat
-mathlib_file: Init/Data/Rat/Basic.lean
 ---
 
 # Rational number

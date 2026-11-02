@@ -39,6 +39,6 @@ AbelRuffini.exists_not_solvable_by_rad : ∃ x, IsAlgebraic ℚ x ∧ x ∉ solv
 - [Source of `AbelRuffini.exists_not_solvable_by_rad` in Archive/Wiedijk100Theorems/AbelRuffini.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/AbelRuffini.lean#L169)
 - [Freek Wiedijk's 100 theorems, no. 16](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L83)
 - [1000+ theorems list: Q657482](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L712)
-- [1000+ theorems project: Q657482](https://1000-plus.github.io/?length=-1#Q657482)
+- [1000+ theorems project: Q657482](https://1000-plus.github.io/all.html?length=-1#Q657482)
 - [Wikipedia: Abel–Ruffini theorem](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem)
 - [Wikidata: Q657482](https://www.wikidata.org/wiki/Q657482)

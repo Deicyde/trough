@@ -46,10 +46,11 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 - [Prime ideal](../../general-algebra/ideals-and-quotients/prime-ideal.md)
 - [Quotient ring](../../general-algebra/ideals-and-quotients/quotient-ring.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Small category](../../general-algebra/category-theory/small-category.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 - [The category of modules over a ring](../fundamentals/the-category-of-modules-over-a-ring.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Unique factorisation domain](../../general-algebra/divisibility-in-integral-domains/unique-factorisation-domain.md)
 
 ## Sources
 
@@ -57,6 +58,6 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 - [Source of `Module.equiv_free_prod_directSum` in Mathlib/Algebra/Module/PID.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Module/PID.lean#L252)
 - [Mathlib overview: Linear algebra › Finitely generated modules over a PID](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L188)
 - [1000+ theorems list: Q7888360](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3953)
-- [1000+ theorems project: Q7888360](https://1000-plus.github.io/?length=-1#Q7888360)
+- [1000+ theorems project: Q7888360](https://1000-plus.github.io/all.html?length=-1#Q7888360)
 - [Wikipedia: Structure theorem for finitely generated modules over a principal ideal domain](https://en.wikipedia.org/wiki/Structure_theorem_for_finitely_generated_modules_over_a_principal_ideal_domain)
 - [Wikidata: Q7888360](https://www.wikidata.org/wiki/Q7888360)

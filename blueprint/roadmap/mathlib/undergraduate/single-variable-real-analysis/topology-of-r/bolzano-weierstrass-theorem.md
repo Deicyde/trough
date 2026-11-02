@@ -6,7 +6,7 @@ mathlib_declaration: tendsto_subseq_of_bounded
 mathlib_file: Mathlib/Topology/MetricSpace/Sequences.lean
 ---
 
-# Bolzano-Weierstrass theorem
+# Bolzano-Weierstrass theorem (Topology of R)
 
 A version of **Bolzano-Weierstrass**: in a proper metric space (e.g. $ℝ^n$),
 every bounded sequence has a converging subsequence.
@@ -27,7 +27,7 @@ tendsto_subseq_of_bounded.{u_1} {X : Type u_1} [PseudoMetricSpace X] [ProperSpac
 
 ## Proof depends on
 
-- [Bolzano–Weierstrass theorem](../../../thousand-plus/analysis/26-real-functions/part-01/bolzano-weierstrass-theorem.md)
+- [Bolzano–Weierstrass theorem (1000+ theorems)](../../../thousand-plus/analysis/26-real-functions/part-01/bolzano-weierstrass-theorem.md)
 
 ## Sources
 

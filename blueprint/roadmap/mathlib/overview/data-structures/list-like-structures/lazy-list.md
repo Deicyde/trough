@@ -3,7 +3,6 @@ declaration: def
 origin: cited
 mathlib: true
 mathlib_declaration: MLList
-mathlib_file: Batteries/Data/MLList/Basic.lean
 ---
 
 # Lazy list

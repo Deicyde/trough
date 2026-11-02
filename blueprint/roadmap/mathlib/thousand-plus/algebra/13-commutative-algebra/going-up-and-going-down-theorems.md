@@ -78,6 +78,6 @@ Algebra.HasGoingDown.of_comap_localRingHom_surjective.{u_3, u_4} {R : Type u_3} 
 - [Mathlib documentation: `Algebra.HasGoingDown.of_comap_localRingHom_surjective`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/GoingDown.html#Algebra.HasGoingDown.of_comap_localRingHom_surjective)
 - [Source of `Algebra.HasGoingDown.of_comap_localRingHom_surjective` in Mathlib/RingTheory/Ideal/GoingDown.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/Ideal/GoingDown.lean#L134)
 - [1000+ theorems list: Q2379132](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2196)
-- [1000+ theorems project: Q2379132](https://1000-plus.github.io/?length=-1#Q2379132)
+- [1000+ theorems project: Q2379132](https://1000-plus.github.io/all.html?length=-1#Q2379132)
 - [Wikipedia: Going up and going down](https://en.wikipedia.org/wiki/Going_up_and_going_down)
 - [Wikidata: Q2379132](https://www.wikidata.org/wiki/Q2379132)

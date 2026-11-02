@@ -59,7 +59,7 @@
 - [Newton's theorem about ovals](part-03/newtons-theorem-about-ovals.md)
 - [Noether's theorem on rationality for surfaces](part-03/noethers-theorem-on-rationality-for-surfaces.md)
 - [Proper base change theorem](part-03/proper-base-change-theorem.md)
-- [Puiseux's theorem](part-03/puiseuxs-theorem.md)
+- [Puiseux's theorem](../../../hundred-theorems/part-03/puiseuxs-theorem.md)
 - [Ramanujam vanishing theorem](part-03/ramanujam-vanishing-theorem.md)
 - [Reider's theorem](part-03/reiders-theorem.md)
 - [Ribet's theorem](part-03/ribets-theorem.md)

@@ -3,7 +3,6 @@ declaration: inductive
 origin: cited
 mathlib: true
 mathlib_declaration: List
-mathlib_file: Init/Prelude.lean
 ---
 
 # List

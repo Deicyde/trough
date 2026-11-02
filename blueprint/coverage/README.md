@@ -9,7 +9,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Mathlib / Freek Wiedijk's 100 theorems | `DECOMPOSED` | [100 list items](../roadmap/mathlib/hundred-theorems/README.md), one article per concept. |
 | Mathlib / 1000+ theorems | `DECOMPOSED` | [1199 list items](../roadmap/mathlib/thousand-plus/README.md), one article per concept. |
 | Tau Ceti | `DEFERRED` | Planned map, by roadmap: One article per TauCetiRoadmap roadmap (124 active, 30 completed), its Suggested.lean signatures as statements, and the named results in STATUS.md linked to Tau Ceti declarations. |
-| ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at https://deicyde.github.io/atlas-lean/. |
+| ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>. |
 | Fermat's Last Theorem (Imperial) | `DEFERRED` | Planned map, by blueprint node: Import the leanblueprint (277 nodes, 187 with Lean names) and the Verso blueprint. |
 | PNT+ | `DEFERRED` | Planned map, by blueprint node: Import the LeanArchitect blueprint (997 @[blueprint] nodes) from `lake build :blueprintJson`. |
 | Polynomial Freiman-Ruzsa | `DEFERRED` | Planned map, by blueprint node: Import the leanblueprint (219 nodes) and the six formalization.yaml main results. |

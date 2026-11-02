@@ -3,7 +3,6 @@ declaration: structure
 origin: cited
 mathlib: true
 mathlib_declaration: Std.HashMap
-mathlib_file: Std/Data/HashMap/Basic.lean
 ---
 
 # Hash map

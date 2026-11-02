@@ -55,6 +55,6 @@ hasProd_eulerFunction.{u_1} {R : Type u_1} [NormedCommRing R] [NormOneClass R] [
 - [Mathlib documentation: `hasProd_eulerFunction`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Enumerative/Pentagonal/EulerFunction.html#hasProd_eulerFunction)
 - [Source of `hasProd_eulerFunction` in Mathlib/Combinatorics/Enumerative/Pentagonal/EulerFunction.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Enumerative/Pentagonal/EulerFunction.lean#L149)
 - [1000+ theorems list: Q282649](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L329)
-- [1000+ theorems project: Q282649](https://1000-plus.github.io/?length=-1#Q282649)
+- [1000+ theorems project: Q282649](https://1000-plus.github.io/all.html?length=-1#Q282649)
 - [Wikipedia: Pentagonal number theorem](https://en.wikipedia.org/wiki/Pentagonal_number_theorem)
 - [Wikidata: Q282649](https://www.wikidata.org/wiki/Q282649)

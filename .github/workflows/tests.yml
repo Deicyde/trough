@@ -1,23 +1,13 @@
 name: Tests
 
+# The tests read the catalog and the committed data as well as the code, so
+# every change runs them. The Mathlib data workflow starts them after its
+# commits, which start no workflow on their own.
 on:
   push:
     branches: [main]
-    paths:
-      - "tools/**"
-      - "tests/**"
-      - "scripts/**"
-      - "pyproject.toml"
-      - "uv.lock"
-      - ".github/workflows/tests.yml"
   pull_request:
-    paths:
-      - "tools/**"
-      - "tests/**"
-      - "scripts/**"
-      - "pyproject.toml"
-      - "uv.lock"
-      - ".github/workflows/tests.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read

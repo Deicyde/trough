@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q5132840](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3047)
-- [1000+ theorems project: Q5132840](https://1000-plus.github.io/?length=-1#Q5132840)
+- [1000+ theorems project: Q5132840](https://1000-plus.github.io/all.html?length=-1#Q5132840)
 - [Wikipedia: Clifford's theorem on special divisors](https://en.wikipedia.org/wiki/Clifford's_theorem_on_special_divisors)
 - [Wikidata: Q5132840](https://www.wikidata.org/wiki/Q5132840)

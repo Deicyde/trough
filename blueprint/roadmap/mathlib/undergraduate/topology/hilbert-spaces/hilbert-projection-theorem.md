@@ -40,6 +40,6 @@ exists_norm_eq_iInf_of_complete_convex.{u_3} {F : Type u_3} [NormedAddCommGroup 
 - [Source of `exists_norm_eq_iInf_of_complete_convex` in Mathlib/Analysis/InnerProductSpace/Projection/Minimal.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/InnerProductSpace/Projection/Minimal.lean#L36)
 - [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L438)
 - [1000+ theorems list: Q3527215](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2543)
-- [1000+ theorems project: Q3527215](https://1000-plus.github.io/?length=-1#Q3527215)
+- [1000+ theorems project: Q3527215](https://1000-plus.github.io/all.html?length=-1#Q3527215)
 - [Wikipedia: Hilbert projection theorem](https://en.wikipedia.org/wiki/Hilbert_projection_theorem)
 - [Wikidata: Q3527215](https://www.wikidata.org/wiki/Q3527215)

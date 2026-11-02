@@ -10,7 +10,7 @@ navigation: transparent
 - [64. L’Hopital’s Rule](lhopitals-rule.md)
 - [65. Isosceles Triangle Theorem](isosceles-triangle-theorem.md)
 - [66. Sum of a Geometric Series](sum-of-a-geometric-series.md)
-- [67. E is Transcendental](e-is-transcendental.md)
+- [67. e is Transcendental](e-is-transcendental.md)
 - [68. Sum of an arithmetic series](sum-of-an-arithmetic-series.md)
 - [69. Greatest Common Divisor Algorithm](greatest-common-divisor-algorithm.md)
 - [70. The Perfect Number Theorem](the-perfect-number-theorem.md)

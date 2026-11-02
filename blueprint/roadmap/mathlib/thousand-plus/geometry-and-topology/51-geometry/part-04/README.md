@@ -17,7 +17,7 @@ navigation: transparent
 - [Pappus's centroid theorem](pappuss-centroid-theorem.md)
 - [Pappus's hexagon theorem](pappuss-hexagon-theorem.md)
 - [Pascal's theorem](pascals-theorem.md)
-- [Pick's theorem](picks-theorem.md)
+- [Pick's theorem](../../../../hundred-theorems/part-05/picks-theorem.md)
 - [Pitot theorem](pitot-theorem.md)
 - [Pivot theorem](pivot-theorem.md)
 - [Pizza theorem](pizza-theorem.md)

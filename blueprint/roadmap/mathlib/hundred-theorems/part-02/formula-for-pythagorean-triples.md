@@ -25,11 +25,14 @@ PythagoreanTriple.classification {x y z : ℤ} :
 
 ## Proof depends on
 
+- [$\Z$ is a Euclidean ring](../../undergraduate/ring-theory/divisibility-in-integral-domains/z-is-a-euclidean-ring.md)
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
+- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
+- [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [The Fundamental Theorem of Arithmetic](../part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources
 

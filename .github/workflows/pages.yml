@@ -211,4 +211,6 @@ jobs:
           echo "$REF" > .github/autoform-ref
           git add .github/autoform-ref
           git commit --quiet -m "Build the site with Autoform ${REF:0:8}"
+          # The pin is the commit's only file, so it rebases onto any newer main.
+          git pull --rebase --quiet origin main
           git push --quiet origin "HEAD:main"

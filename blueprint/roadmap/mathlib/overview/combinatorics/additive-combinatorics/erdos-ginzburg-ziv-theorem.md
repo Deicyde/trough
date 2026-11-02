@@ -41,6 +41,6 @@ ZMod.erdos_ginzburg_ziv.{u_1} {ι : Type u_1} {n : ℕ} {s : Finset ι} (a : ι 
 - [Source of `ZMod.erdos_ginzburg_ziv` in Mathlib/Combinatorics/Additive/ErdosGinzburgZiv.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Additive/ErdosGinzburgZiv.lean#L178)
 - [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L551)
 - [1000+ theorems list: Q716171](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L765)
-- [1000+ theorems project: Q716171](https://1000-plus.github.io/?length=-1#Q716171)
+- [1000+ theorems project: Q716171](https://1000-plus.github.io/all.html?length=-1#Q716171)
 - [Wikipedia: Erdős–Ginzburg–Ziv theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Ginzburg%E2%80%93Ziv_theorem)
 - [Wikidata: Q716171](https://www.wikidata.org/wiki/Q716171)

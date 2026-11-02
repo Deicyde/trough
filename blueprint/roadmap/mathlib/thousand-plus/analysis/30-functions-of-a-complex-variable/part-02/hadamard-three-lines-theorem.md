@@ -48,6 +48,6 @@ Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip.{u_1} 
 - [Mathlib documentation: `Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Hadamard.html#Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip)
 - [Source of `Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip` in Mathlib/Analysis/Complex/Hadamard.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/Hadamard.lean#L585)
 - [1000+ theorems list: Q3527250](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2586)
-- [1000+ theorems project: Q3527250](https://1000-plus.github.io/?length=-1#Q3527250)
+- [1000+ theorems project: Q3527250](https://1000-plus.github.io/all.html?length=-1#Q3527250)
 - [Wikipedia: Hadamard three-lines theorem](https://en.wikipedia.org/wiki/Hadamard_three-lines_theorem)
 - [Wikidata: Q3527250](https://www.wikidata.org/wiki/Q3527250)

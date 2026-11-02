@@ -101,8 +101,14 @@ class Item:
     links: dict[str, str] = field(default_factory=dict)
 
     @property
+    def heading(self) -> str:
+        """The title as a heading. The tree lists' keys are lowercase and get a capital; the
+        100 and 1000+ titles are written as titles ("e is Transcendental") and stay as they are."""
+        return capitalize(self.title) if self.list in ("overview", "undergrad") else self.title
+
+    @property
     def label(self) -> str:
-        return f"{self.key}. {capitalize(self.title)}" if self.list == "100" else capitalize(self.title)
+        return f"{self.key}. {self.heading}" if self.list == "100" else self.heading
 
 
 @dataclass(eq=False)
@@ -130,6 +136,12 @@ class Sources:
     lists: dict[str, list[Item]]
     deps: dict | None
     thousand_plus: dict | None
+
+
+def title_key(title: str) -> str:
+    """A title for matching across lists, which differ in quotes, dashes, case and a leading "The"."""
+    text = title.translate(str.maketrans("‘’–—", "''--")).casefold().strip()
+    return re.sub(r"^the\s+", "", text)
 
 
 def capitalize(title: str) -> str:
@@ -207,7 +219,8 @@ def record_items(name: str, root: yaml.MappingNode) -> list[Item]:
     return items
 
 
-def load_sources(data: Path) -> Sources:
+def load_sources(data: Path, deps: bool = True) -> Sources:
+    """The lists, and unless `deps` is false the dump, which must be of the lists' Mathlib commit."""
     directory = data / "mathlib"
     source = json.loads((directory / "source.json").read_text(encoding="utf-8"))
     lists = {}
@@ -215,15 +228,15 @@ def load_sources(data: Path) -> Sources:
         root = compose(directory / "yaml" / f"{name}.yaml")
         lists[name] = tree_items(name, root) if name in ("overview", "undergrad") else record_items(name, root)
     deps_file = directory / "concept-deps.json"
-    deps = json.loads(deps_file.read_text(encoding="utf-8")) if deps_file.is_file() else None
-    if deps is not None and deps.get("mathlib_rev") != source["rev"]:
+    dump = json.loads(deps_file.read_text(encoding="utf-8")) if deps and deps_file.is_file() else None
+    if dump is not None and dump.get("mathlib_rev") != source["rev"]:
         raise ValueError(
-            f"{deps_file} was computed at Mathlib {deps.get('mathlib_rev')}, but the lists are at {source['rev']}: "
+            f"{deps_file} was computed at Mathlib {dump.get('mathlib_rev')}, but the lists are at {source['rev']}: "
             "rerun the Mathlib data workflow"
         )
     thousand_file = data / "thousand-plus.json"
     thousand_plus = json.loads(thousand_file.read_text(encoding="utf-8")) if thousand_file.is_file() else None
-    return Sources(source["rev"], source.get("date", ""), lists, deps, thousand_plus)
+    return Sources(source["rev"], source.get("date", ""), lists, dump, thousand_plus)
 
 
 def merge(lists: dict[str, list[Item]]) -> list[Article]:
@@ -231,6 +244,8 @@ def merge(lists: dict[str, list[Item]]) -> list[Article]:
 
     Items naming the same set of declarations, or the same first declaration, are
     one concept: an article's first declaration is the one that takes its credit.
+    The article keeps its first item's declarations, since a list item that bundles
+    several results (Freek's "Sylow's Theorem") is not all of them at once.
     Sharing only a later declaration does not merge two items, since a common
     lemma does not make two results the same. An item naming nothing is known by
     its title alone: the same title in another list is the same concept, a second
@@ -246,7 +261,6 @@ def merge(lists: dict[str, list[Item]]) -> list[Article]:
                     articles[("first", item.decls[0])] = article
                 else:
                     article.items.append(item)
-                    article.decls = tuple(dict.fromkeys(article.decls + item.decls))
                 articles.setdefault(frozenset(item.decls), article)
                 continue
             if item.statement:
@@ -254,7 +268,7 @@ def merge(lists: dict[str, list[Item]]) -> list[Article]:
             elif item.module:
                 key = ("module", item.module)
             else:
-                key = ("wanted", item.title.casefold())
+                key = ("wanted", title_key(item.title))
                 if key in articles and any(other.list == item.list for other in articles[key].items):
                     key = ("item", item.list, item.key)
             if key in articles:
@@ -300,8 +314,17 @@ def item_source(sources: Sources, item: Item) -> tuple[str, str]:
     return f"1000+ theorems list: {item.key}", url
 
 
+def list_reference(item: Item) -> str:
+    """An item's list, for prose."""
+    if item.list in ("overview", "undergrad"):
+        return "Mathlib's overview" if item.list == "overview" else "Mathlib's undergraduate list"
+    return f"Freek Wiedijk's list (no. {item.key})" if item.list == "100" else f"the 1000+ list ({item.key})"
+
+
 def wikipedia_url(page: str) -> str:
-    return "https://en.wikipedia.org/wiki/" + quote(page.replace(" ", "_"), safe="_,'-:!")
+    title, _, section = page.partition("#")
+    url = "https://en.wikipedia.org/wiki/" + quote(title.replace(" ", "_"), safe="_,'-:!")
+    return url + ("#" + quote(section.replace(" ", "_"), safe="_,'-:!.") if section else "")
 
 
 def link_url(url: str) -> str:
@@ -343,8 +366,18 @@ def default_kind(article: Article) -> str:
     return "definition"
 
 
-def thousand_entry(sources: Sources, key: str) -> dict:
-    return ((sources.thousand_plus or {}).get("entries") or {}).get(key) or {}
+def thousand_entry(sources: Sources, item: Item) -> tuple[str, dict]:
+    """The 1000+ project's key and entry for a 1000.yaml item. A few of Mathlib's keys are ones
+    the project has since replaced; those match the entry whose Wikipedia page is the title."""
+    entries = (sources.thousand_plus or {}).get("entries") or {}
+    if item.key in entries:
+        return item.key, entries[item.key]
+    listed = {other.key for other in sources.lists["1000"]}
+    title = title_key(item.title)
+    for key, entry in entries.items():
+        if key not in listed and any(title_key(page.partition("#")[0]) == title for page in entry.get("wikipedia", [])):
+            return key, entry
+    return item.key, {}
 
 
 def external_lines(sources: Sources, article: Article) -> tuple[list[str], list[tuple[str, str]]]:
@@ -353,11 +386,13 @@ def external_lines(sources: Sources, article: Article) -> tuple[list[str], list[
     links: list[tuple[str, str]] = []
     for item in article.items:
         if item.list == "1000":
-            qid = re.sub(r"[A-Z]$", "", item.key)
-            entry = thousand_entry(sources, item.key)
-            links.append((f"1000+ theorems project: {item.key}", f"https://1000-plus.github.io/?length=-1#{item.key}"))
+            key, entry = thousand_entry(sources, item)
+            # The project's rows are keyed by bare Wikidata ids, and only its all-theorems
+            # page has a row for every theorem.
+            qid = re.sub(r"[A-Z]$", "", key)
+            links.append((f"1000+ theorems project: {key}", f"https://1000-plus.github.io/all.html?length=-1#{qid}"))
             for page in entry.get("wikipedia", [])[:1]:
-                links.append((f"Wikipedia: {page}", wikipedia_url(page)))
+                links.append((f"Wikipedia: {page.replace('#', ' § ')}", wikipedia_url(page)))
             links.append((f"Wikidata: {qid}", f"https://www.wikidata.org/wiki/{qid}"))
             others = sorted(prover for prover in entry.get("others", {}) if prover != "lean")
             if others and not article.decls:
@@ -368,8 +403,8 @@ def external_lines(sources: Sources, article: Article) -> tuple[list[str], list[
                     + ", ".join(names.get(prover, prover) for prover in others) + "."
                 )
         if item.url and item.list == "1000":
-            prose.append("Formalized in Lean outside Mathlib.")
-            links.append(("Formalization outside Mathlib", link_url(item.url)))
+            prose.append("Mathlib's 1000+ list links a formalization.")
+            links.append(("Formalization linked by the 1000+ list", link_url(item.url)))
         if item.url and item.list == "undergrad":
             links.append(("Reference given by Mathlib's undergraduate list", link_url(item.url)))
         if item.links and not article.decls:
@@ -377,13 +412,15 @@ def external_lines(sources: Sources, article: Article) -> tuple[list[str], list[
         for label, url in item.links.items():
             links.append((f"Outside Mathlib: {label}", link_url(url)))
         if item.note:
-            prose.append(note_text(item.note))
+            # Another list's note is about that list's item, which may be a narrower result.
+            whose = "" if item is article.home else capitalize(list_reference(item)) + ": "
+            prose.append(whose + note_text(item.note))
     return list(dict.fromkeys(prose)), list(dict.fromkeys(links))
 
 
 def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = frozenset()) -> Leaf:
     home = article.home
-    title = capitalize(home.title)
+    title = home.heading
     concepts = (sources.deps or {}).get("concepts", {})
     prose, external = external_lines(sources, article)
     item_links = [item_source(sources, item) for item in article.items]
@@ -393,7 +430,7 @@ def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = fro
         kind = KIND_COMMANDS.get(first.get("kind"), first.get("kind")) or default_kind(article)
         fields = [("declaration", kind), ("origin", "cited"), ("mathlib", "true"),
                   ("mathlib_declaration", ", ".join(article.decls))]
-        if first.get("module"):
+        if first.get("module") and source_url(sources.rev, first["module"], None):
             fields.append(("mathlib_file", module_path(first["module"])))
         body: list[str] = []
         many = len(article.decls) > 1
@@ -410,6 +447,15 @@ def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = fro
                 body.append(f"Mathlib states this as `{name}`.")
             if record.get("signature"):
                 body.append(fence(record["signature"]))
+        extras: dict[tuple[str, ...], list[Item]] = defaultdict(list)
+        for item in article.items[1:]:
+            extra = tuple(name for name in item.decls if name not in article.decls)
+            if extra:
+                extras[extra].append(item)
+        for extra, items in extras.items():
+            refs = " and ".join(list_reference(item) for item in items)
+            body.append(capitalize(refs) + (" also cite " if len(items) > 1 else " also cites ")
+                        + ", ".join(f"`{name}`" for name in extra) + ".")
         body += prose
         links = []
         for name, record in zip(article.decls, records):
@@ -524,7 +570,7 @@ def thousand_container(sources: Sources, articles_by_item: dict[int, Article]) -
     names = (sources.thousand_plus or {}).get("msc_names", {})
     by_code: dict[str, list[Item]] = defaultdict(list)
     for item in sources.lists["1000"]:
-        by_code[thousand_entry(sources, item.key).get("msc", "")].append(item)
+        by_code[thousand_entry(sources, item)[1].get("msc", "")].append(item)
 
     def code_container(code: str) -> Container:
         title = f"{code} {names[code]}" if code in names else "Unclassified"
@@ -573,7 +619,11 @@ def link_edges(sources: Sources, articles: list[Article]) -> dict[str, int]:
     concepts = (sources.deps or {}).get("concepts")
     if not concepts:
         return stats
-    by_decl = {name: article for article in articles for name in article.decls}
+    # A declaration in two articles stands for the one whose first declaration it is.
+    by_decl = {article.decls[0]: article for article in articles if article.decls}
+    for article in articles:
+        for name in article.decls:
+            by_decl.setdefault(name, article)
     nodes = sorted((article for article in articles if article.decls), key=sort_key)
     stmt: dict[Article, set[Article]] = {article: set() for article in nodes}
     proof: dict[Article, set[Article]] = {article: set() for article in nodes}
@@ -657,7 +707,7 @@ def disambiguate(articles: list[Article]) -> None:
     """Add to each shared title the nearest section that tells its articles apart."""
     groups: dict[str, list[Article]] = defaultdict(list)
     for article in articles:
-        groups[article.leaf.title.casefold()].append(article)
+        groups[title_key(article.leaf.title)].append(article)
     for group in groups.values():
         if len(group) < 2:
             continue
@@ -704,8 +754,9 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
             f"and {wanted:,} not yet.",
             "Items that name the same declarations in several lists, or name none and share a title, are one "
             "article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, "
-            "with their documentation and source. One that Mathlib lacks is marked not ready: its statement "
-            "and prerequisites are still to be written.",
+            "with their documentation and source. One that Mathlib lacks is marked not ready, since its "
+            "prerequisites are not mapped; its page says when Mathlib states it without a proof or another "
+            "project has formalized it.",
             edges,
         ]
     )

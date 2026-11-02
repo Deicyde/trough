@@ -59,15 +59,16 @@ UniqueFactorizationMonoid.factors_unique.{u_1} {α : Type u_1} [CommMonoidWithZe
 
 it also has a generalized version, by showing that every Euclidean domain is a unique factorization domain, and showing that the integers form a Euclidean domain.
 
+The 1000+ list (Q670235): it also has a generalized version, by showing that every Euclidean domain is a unique factorization domain, and showing that the integers form a Euclidean domain.
+
 ## Depends on
 
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Ideal of a commutative ring](../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
-- [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Multiset](../../overview/data-structures/sets/multiset.md)
-- [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 - [Principal ideal domain](../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Unique factorisation domain](../../overview/general-algebra/divisibility-in-integral-domains/unique-factorisation-domain.md)
 
 ## Proof depends on
 
@@ -87,6 +88,6 @@ it also has a generalized version, by showing that every Euclidean domain is a u
 - [Source of `UniqueFactorizationMonoid.factors_unique` in Mathlib/RingTheory/UniqueFactorizationDomain/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/UniqueFactorizationDomain/Basic.lean#L109)
 - [Freek Wiedijk's 100 theorems, no. 80](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L405)
 - [1000+ theorems list: Q670235](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L735)
-- [1000+ theorems project: Q670235](https://1000-plus.github.io/?length=-1#Q670235)
+- [1000+ theorems project: Q670235](https://1000-plus.github.io/all.html?length=-1#Q670235)
 - [Wikipedia: Fundamental theorem of arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic)
 - [Wikidata: Q670235](https://www.wikidata.org/wiki/Q670235)

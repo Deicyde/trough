@@ -6,7 +6,7 @@ mathlib_declaration: Pell.pell
 mathlib_file: Mathlib/NumberTheory/PellMatiyasevic.lean
 ---
 
-# Solutions to Pell's equation
+# Solutions to Pell's equation (Number theory)
 
 The Pell sequences, i.e. the sequence of integer solutions to `x ^ 2 - d * y ^ 2 = 1`, where
 `d = a ^ 2 - 1`, defined together in mutual recursion.

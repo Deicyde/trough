@@ -1,6 +1,6 @@
 import Mathlib
 import Archive
-import Counterexamples
+import Lean.DocString.Markdown
 
 /-!
 # Concept dependencies for trough's Mathlib map
@@ -10,7 +10,9 @@ Reads the declaration names in `$TROUGH_CONCEPTS` and the module names in
 declaration it records the module, kind, line, docstring and signature, and the
 nearest listed declarations that its statement and its proof use, reached
 through declarations that are not listed. For each listed module it records the
-module docstring and the documented declarations, in source order.
+module docstring, Markdown or Verso, and the documented declarations, in source
+order. A listed name that does not resolve, or listed theorems whose proofs
+cannot be read, stop the run rather than give partial data.
 
 A definition's body counts as part of its statement, and a structure's fields
 (its constructor's type) do too. A statement reaches listed declarations
@@ -198,8 +200,8 @@ def run : MetaM Unit := do
       for u in reached do
         if index.contains u || moduleOf env u == home || !isTheorem env u then continue
         unless cites.contains u do
-          let some lemma := env.find? u | continue
-          cites := cites.insert u <| (localClosure env index (moduleOf env u) (directUses env lemma).2).filter
+          let some used := env.find? u | continue
+          cites := cites.insert u <| (localClosure env index (moduleOf env u) (directUses env used).2).filter
             fun v => index.contains v && isTheorem env v
         cited := cited ++ cites.getD u #[]
       proofs := proofs.insert name (reached ++ cited)
@@ -207,8 +209,11 @@ def run : MetaM Unit := do
       if info matches .thmInfo _ then
         theorems := theorems + 1
         unless proofUses.isEmpty do withProof := withProof + 1
-  if theorems > 0 && withProof == 0 then
-    throwError "none of the {theorems} listed theorems has a readable proof; private module data is missing"
+  -- Without a module's private data its theorems import as axioms, so count those too.
+  if theorems == 0 || withProof == 0 then
+    throwError "{theorems} listed theorems, {withProof} with a readable proof: private module data is missing"
+  unless missing.isEmpty do
+    throwError "listed names that do not resolve: {(missing.map (·.compress)).toList}"
   let stmtFront := fronts env index starts
   let mut concepts : Array (String × Json) := #[]
   for i in [0:listed.size] do
@@ -240,8 +245,14 @@ def run : MetaM Unit := do
     match env.getModuleIdx? module with
     | none => modules := modules.push (module.toString, Json.mkObj [("found", false)])
     | some idx =>
-      let docs := (getModuleDoc? env module).getD #[]
-      let doc := if docs.isEmpty then none else some ("\n\n".intercalate (docs.toList.map (·.doc)))
+      let mut texts := ((getModuleDoc? env module).getD #[]).map (·.doc)
+      -- A module with `set_option doc.verso true` keeps its docs in the Verso extension.
+      for snippet in (getVersoModuleDoc? env module).getD #[] do
+        try
+          texts := texts.push (← Doc.MarkdownM.run' (Doc.ToMarkdown.toMarkdown snippet))
+        catch _ =>
+          pure ()
+      let doc := if texts.isEmpty then none else some ("\n\n".intercalate texts.toList)
       let mut documented : Array (Nat × Name) := #[]
       for constant in env.header.moduleData[idx.toNat]!.constNames do
         if isPrivateName constant || constant.isInternalDetail then continue
@@ -268,8 +279,7 @@ def run : MetaM Unit := do
       ("listed", toJson listed.size),
       ("theorems", toJson theorems),
       ("theorems_with_proof", toJson withProof),
-      ("walked", toJson stmtFront.size),
-      ("milliseconds", toJson elapsed)])]
+      ("walked", toJson stmtFront.size)])]
   IO.FS.writeFile outPath (out.pretty 100 ++ "\n")
   IO.println s!"{listed.size} listed, {missing.size} missing, {stmtFront.size} constants walked in {elapsed} ms"
 

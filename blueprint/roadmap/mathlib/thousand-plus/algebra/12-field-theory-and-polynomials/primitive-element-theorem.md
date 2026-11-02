@@ -40,6 +40,6 @@ Field.exists_primitive_element.{u_1, u_2} (F : Type u_1) (E : Type u_2) [Field F
 - [Mathlib documentation: `Field.exists_primitive_element`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/PrimitiveElement.html#Field.exists_primitive_element)
 - [Source of `Field.exists_primitive_element` in Mathlib/FieldTheory/PrimitiveElement.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/FieldTheory/PrimitiveElement.lean#L206)
 - [1000+ theorems list: Q2093886](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2007)
-- [1000+ theorems project: Q2093886](https://1000-plus.github.io/?length=-1#Q2093886)
+- [1000+ theorems project: Q2093886](https://1000-plus.github.io/all.html?length=-1#Q2093886)
 - [Wikipedia: Primitive element theorem](https://en.wikipedia.org/wiki/Primitive_element_theorem)
 - [Wikidata: Q2093886](https://www.wikidata.org/wiki/Q2093886)

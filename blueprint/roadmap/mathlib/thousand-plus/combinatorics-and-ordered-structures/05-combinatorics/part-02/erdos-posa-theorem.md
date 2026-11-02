@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q5385325](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3164)
-- [1000+ theorems project: Q5385325](https://1000-plus.github.io/?length=-1#Q5385325)
+- [1000+ theorems project: Q5385325](https://1000-plus.github.io/all.html?length=-1#Q5385325)
 - [Wikipedia: Erdős–Pósa theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93P%C3%B3sa_theorem)
 - [Wikidata: Q5385325](https://www.wikidata.org/wiki/Q5385325)

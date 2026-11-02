@@ -30,6 +30,6 @@ Affine.Simplex.point_vsub_centroid_eq_smul_vsub.{u_1, u_2, u_3} {k : Type u_1} {
 - [Mathlib documentation: `Affine.Simplex.point_vsub_centroid_eq_smul_vsub`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/AffineSpace/Simplex/Centroid.html#Affine.Simplex.point_vsub_centroid_eq_smul_vsub)
 - [Source of `Affine.Simplex.point_vsub_centroid_eq_smul_vsub` in Mathlib/LinearAlgebra/AffineSpace/Simplex/Centroid.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/AffineSpace/Simplex/Centroid.lean#L345)
 - [1000+ theorems list: Q2226625](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2049)
-- [1000+ theorems project: Q2226625](https://1000-plus.github.io/?length=-1#Q2226625)
+- [1000+ theorems project: Q2226625](https://1000-plus.github.io/all.html?length=-1#Q2226625)
 - [Wikipedia: Commandino's theorem](https://en.wikipedia.org/wiki/Commandino's_theorem)
 - [Wikidata: Q2226625](https://www.wikidata.org/wiki/Q2226625)

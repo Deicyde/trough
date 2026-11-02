@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q164262](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L69)
-- [1000+ theorems project: Q164262](https://1000-plus.github.io/?length=-1#Q164262)
+- [1000+ theorems project: Q164262](https://1000-plus.github.io/all.html?length=-1#Q164262)
 - [Wikipedia: Lebesgue covering dimension](https://en.wikipedia.org/wiki/Lebesgue_covering_dimension)
 - [Wikidata: Q164262](https://www.wikidata.org/wiki/Q164262)

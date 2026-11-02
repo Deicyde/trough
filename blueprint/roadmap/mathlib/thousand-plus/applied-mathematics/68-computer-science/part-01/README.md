@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Akra–Bazzi theorem to Rice's theorem
+# Akra–Bazzi theorem to Quantum threshold theorem
 
 - [Akra–Bazzi theorem](akra-bazzi-theorem.md)
 - [Blum's speedup theorem](blums-speedup-theorem.md)
@@ -18,9 +18,9 @@ navigation: transparent
 - [Karp–Lipton theorem](karp-lipton-theorem.md)
 - [Kraft–McMillan theorem](kraft-mcmillan-theorem.md)
 - [Ladner's theorem](ladners-theorem.md)
+- [Lamé’s theorem](lames-theorem.md)
 - [Linear speedup theorem](linear-speedup-theorem.md)
 - [Myhill–Nerode theorem](myhill-nerode-theorem.md)
 - [PCP theorem](pcp-theorem.md)
 - [Pseudorandom generator theorem](pseudorandom-generator-theorem.md)
 - [Quantum threshold theorem](quantum-threshold-theorem.md)
-- [Rice's theorem](../../../../overview/logic-and-computation/computability/rice-theorem.md)

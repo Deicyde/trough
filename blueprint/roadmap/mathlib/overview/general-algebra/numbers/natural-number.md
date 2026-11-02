@@ -3,7 +3,6 @@ declaration: inductive
 origin: cited
 mathlib: true
 mathlib_declaration: Nat
-mathlib_file: Init/Prelude.lean
 ---
 
 # Natural number
@@ -18,7 +17,7 @@ implementation. Both use a fast arbitrary-precision arithmetic library (usually
 Nat : Type
 ```
 
-Automatically generated when defining the natural numbers.
+Freek Wiedijk's list (no. 74): Automatically generated when defining the natural numbers.
 
 ## Depends on
 

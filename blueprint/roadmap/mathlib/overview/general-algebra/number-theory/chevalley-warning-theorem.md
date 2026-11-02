@@ -6,7 +6,7 @@ mathlib_declaration: char_dvd_card_solutions
 mathlib_file: Mathlib/FieldTheory/ChevalleyWarning.lean
 ---
 
-# Chevalley-Warning theorem
+# Chevalley-Warning theorem (Number theory)
 
 The **Chevalley–Warning theorem**, unary version.
 Let `f` be a multivariate polynomial in finitely many variables (`X s`, `s : σ`)
@@ -30,7 +30,7 @@ char_dvd_card_solutions.{u_1, u_2} {K : Type u_1} {σ : Type u_2} [Fintype K] [F
 
 ## Proof depends on
 
-- [Chevalley–Warning theorem](../../../thousand-plus/algebra/12-field-theory-and-polynomials/chevalley-warning-theorem.md)
+- [Chevalley–Warning theorem (1000+ theorems)](../../../thousand-plus/algebra/12-field-theory-and-polynomials/chevalley-warning-theorem.md)
 
 ## Sources
 

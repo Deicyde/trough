@@ -42,6 +42,6 @@ EuclideanGeometry.angle_eq_of_congruent.{u_1, u_2, u_3, u_4, u_5} {ι : Type u_1
 - [Mathlib documentation: `EuclideanGeometry.angle_eq_of_congruent`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Congruence.html#EuclideanGeometry.angle_eq_of_congruent)
 - [Source of `EuclideanGeometry.angle_eq_of_congruent` in Mathlib/Geometry/Euclidean/Congruence.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Euclidean/Congruence.lean#L108)
 - [1000+ theorems list: Q154210](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L62)
-- [1000+ theorems project: Q154210](https://1000-plus.github.io/?length=-1#Q154210)
+- [1000+ theorems project: Q154210](https://1000-plus.github.io/all.html?length=-1#Q154210)
 - [Wikipedia: CPCTC](https://en.wikipedia.org/wiki/CPCTC)
 - [Wikidata: Q154210](https://www.wikidata.org/wiki/Q154210)

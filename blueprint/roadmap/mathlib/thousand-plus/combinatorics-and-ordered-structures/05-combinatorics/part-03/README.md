@@ -23,4 +23,4 @@ navigation: transparent
 - [Perlis theorem](perlis-theorem.md)
 - [Planar separator theorem](planar-separator-theorem.md)
 - [Pólya enumeration theorem](polya-enumeration-theorem.md)
-- [Ramsey's theorem](ramseys-theorem.md)
+- [Ramsey's theorem](../../../../hundred-theorems/part-02/ramseys-theorem.md)

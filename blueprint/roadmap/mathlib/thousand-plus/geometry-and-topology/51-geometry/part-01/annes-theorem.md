@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q15859323](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L4076)
-- [1000+ theorems project: Q15859323](https://1000-plus.github.io/?length=-1#Q15859323)
+- [1000+ theorems project: Q15859323](https://1000-plus.github.io/all.html?length=-1#Q15859323)
 - [Wikipedia: Anne's theorem](https://en.wikipedia.org/wiki/Anne's_theorem)
 - [Wikidata: Q15859323](https://www.wikidata.org/wiki/Q15859323)

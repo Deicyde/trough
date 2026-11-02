@@ -49,6 +49,6 @@ MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure.{u_1}
 - [Source of `MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure` in Mathlib/MeasureTheory/Group/GeometryOfNumbers.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Group/GeometryOfNumbers.lean#L63)
 - [Freek Wiedijk's 100 theorems, no. 40](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L210)
 - [1000+ theorems list: Q1097021](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1350)
-- [1000+ theorems project: Q1097021](https://1000-plus.github.io/?length=-1#Q1097021)
+- [1000+ theorems project: Q1097021](https://1000-plus.github.io/all.html?length=-1#Q1097021)
 - [Wikipedia: Minkowski's theorem](https://en.wikipedia.org/wiki/Minkowski's_theorem)
 - [Wikidata: Q1097021](https://www.wikidata.org/wiki/Q1097021)

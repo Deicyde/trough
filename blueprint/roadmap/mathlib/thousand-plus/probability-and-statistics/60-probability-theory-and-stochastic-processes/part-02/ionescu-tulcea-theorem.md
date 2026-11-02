@@ -41,6 +41,6 @@ ProbabilityTheory.Kernel.traj.{u_1} {X : ℕ → Type u_1} [(n : ℕ) → Measur
 - [Mathlib documentation: `ProbabilityTheory.Kernel.traj`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Kernel/IonescuTulcea/Traj.html#ProbabilityTheory.Kernel.traj)
 - [Source of `ProbabilityTheory.Kernel.traj` in Mathlib/Probability/Kernel/IonescuTulcea/Traj.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Probability/Kernel/IonescuTulcea/Traj.lean#L511)
 - [1000+ theorems list: Q25378690](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L4227)
-- [1000+ theorems project: Q25378690](https://1000-plus.github.io/?length=-1#Q25378690)
+- [1000+ theorems project: Q25378690](https://1000-plus.github.io/all.html?length=-1#Q25378690)
 - [Wikipedia: Ionescu-Tulcea theorem](https://en.wikipedia.org/wiki/Ionescu-Tulcea_theorem)
 - [Wikidata: Q25378690](https://www.wikidata.org/wiki/Q25378690)

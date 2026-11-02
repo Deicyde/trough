@@ -29,6 +29,6 @@ EuclideanGeometry.dist_sq_eq_dist_sq_add_dist_sq_iff_angle_eq_pi_div_two.{u_1, u
 - [Source of `EuclideanGeometry.dist_sq_eq_dist_sq_add_dist_sq_iff_angle_eq_pi_div_two` in Mathlib/Geometry/Euclidean/Angle/Unoriented/RightAngle.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Euclidean/Angle/Unoriented/RightAngle.lean#L326)
 - [Freek Wiedijk's 100 theorems, no. 4](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L20)
 - [1000+ theorems list: Q11518](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L14)
-- [1000+ theorems project: Q11518](https://1000-plus.github.io/?length=-1#Q11518)
+- [1000+ theorems project: Q11518](https://1000-plus.github.io/all.html?length=-1#Q11518)
 - [Wikipedia: Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem)
 - [Wikidata: Q11518](https://www.wikidata.org/wiki/Q11518)

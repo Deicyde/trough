@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q852183](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L974)
-- [1000+ theorems project: Q852183](https://1000-plus.github.io/?length=-1#Q852183)
+- [1000+ theorems project: Q852183](https://1000-plus.github.io/all.html?length=-1#Q852183)
 - [Wikipedia: Viviani's theorem](https://en.wikipedia.org/wiki/Viviani's_theorem)
 - [Wikidata: Q852183](https://www.wikidata.org/wiki/Q852183)

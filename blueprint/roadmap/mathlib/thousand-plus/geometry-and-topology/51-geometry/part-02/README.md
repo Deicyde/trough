@@ -15,7 +15,7 @@ navigation: transparent
 - [Dandelin's theorem](dandelins-theorem.md)
 - [De Bruijn–Erdős theorem (incidence geometry)](de-bruijn-erdos-theorem-incidence-geometry.md)
 - [De Gua's theorem](de-guas-theorem.md)
-- [Desargues's theorem](desarguess-theorem.md)
+- [Desargues's theorem](../../../../hundred-theorems/part-05/desarguess-theorem.md)
 - [Descartes's theorem](descartess-theorem.md)
 - [Descartes's theorem on total angular defect](descartess-theorem-on-total-angular-defect.md)
 - [Dinostratus' theorem](dinostratus-theorem.md)

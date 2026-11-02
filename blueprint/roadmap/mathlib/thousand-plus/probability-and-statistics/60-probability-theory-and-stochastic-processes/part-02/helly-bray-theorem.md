@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q5709171](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3362)
-- [1000+ theorems project: Q5709171](https://1000-plus.github.io/?length=-1#Q5709171)
+- [1000+ theorems project: Q5709171](https://1000-plus.github.io/all.html?length=-1#Q5709171)
 - [Wikipedia: Helly–Bray theorem](https://en.wikipedia.org/wiki/Helly%E2%80%93Bray_theorem)
 - [Wikidata: Q5709171](https://www.wikidata.org/wiki/Q5709171)

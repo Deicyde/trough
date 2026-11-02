@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q865665](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1006)
-- [1000+ theorems project: Q865665](https://1000-plus.github.io/?length=-1#Q865665)
+- [1000+ theorems project: Q865665](https://1000-plus.github.io/all.html?length=-1#Q865665)
 - [Wikipedia: Birkhoff's theorem (relativity)](https://en.wikipedia.org/wiki/Birkhoff's_theorem_%28relativity%29)
 - [Wikidata: Q865665](https://www.wikidata.org/wiki/Q865665)

@@ -33,6 +33,6 @@ Matrix.invOf_add_mul_mul'.{u_1, u_2, u_3} {m : Type u_1} {n : Type u_2} {α : Ty
 - [Mathlib documentation: `Matrix.invOf_add_mul_mul'`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Invertible.html#Matrix.invOf_add_mul_mul')
 - [Source of `Matrix.invOf_add_mul_mul'` in Mathlib/LinearAlgebra/Matrix/Invertible.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/Matrix/Invertible.lean#L241)
 - [1000+ theorems list: Q1551745](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1755)
-- [1000+ theorems project: Q1551745](https://1000-plus.github.io/?length=-1#Q1551745)
+- [1000+ theorems project: Q1551745](https://1000-plus.github.io/all.html?length=-1#Q1551745)
 - [Wikipedia: Binomial inverse theorem](https://en.wikipedia.org/wiki/Binomial_inverse_theorem)
 - [Wikidata: Q1551745](https://www.wikidata.org/wiki/Q1551745)

@@ -31,6 +31,6 @@ FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable.{u, v} {L : F
 - [Source of `FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable` in Mathlib/ModelTheory/Satisfiability.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/ModelTheory/Satisfiability.lean#L99)
 - [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L642)
 - [1000+ theorems list: Q1149458](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1453)
-- [1000+ theorems project: Q1149458](https://1000-plus.github.io/?length=-1#Q1149458)
+- [1000+ theorems project: Q1149458](https://1000-plus.github.io/all.html?length=-1#Q1149458)
 - [Wikipedia: Compactness theorem](https://en.wikipedia.org/wiki/Compactness_theorem)
 - [Wikidata: Q1149458](https://www.wikidata.org/wiki/Q1149458)

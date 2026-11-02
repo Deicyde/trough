@@ -44,7 +44,7 @@ def files_note(library: dict) -> str:
 
 
 def roadmap_root(libraries: list[dict], chapters: dict[str, str], previous: str | None) -> str:
-    """The book's preface: the live chapters, then every library still to map."""
+    """The book's preface: the chapters, here or elsewhere, then every library still to map."""
     lines = [
         "# Trough",
         "",
@@ -60,9 +60,11 @@ def roadmap_root(libraries: list[dict], chapters: dict[str, str], previous: str 
     for library in libraries:
         if library["map_status"] == "live" and library["id"] in chapters:
             lines.append(f"- [{library['name']}]({chapters[library['id']]}): {library['map_plan']}")
+        elif library["map_status"] == "elsewhere":
+            lines.append(f"- [{library['name']}]({repo_url(library)}){files_note(library)}: {library['map_plan']}")
     lines += ["", "## Libraries still to map", ""]
     for group, heading in GROUPS:
-        members = [library for library in libraries if library["group"] == group and library["map_status"] != "live"]
+        members = [library for library in libraries if library["group"] == group and library["map_status"] == "planned"]
         if not members:
             continue
         lines += [f"### {heading}", ""]

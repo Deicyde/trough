@@ -5,13 +5,13 @@ Trough maps Lean formalization libraries: what each one formalizes, how its resu
 ## Chapters
 
 - [Mathlib](mathlib/README.md): One article per concept on Mathlib's four curated lists (overview, undergraduate, Freek's 100, 1000+), linked to its declarations, with edges collapsed from Mathlib's declaration graph.
+- [ATLAS](https://github.com/facebookresearch/atlas-lean) (17,683 Lean files): Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>.
 
 ## Libraries still to map
 
 ### AI-written libraries
 
 - [Tau Ceti](https://github.com/TauCetiProject/TauCeti) (23,408 Lean files): One article per TauCetiRoadmap roadmap (124 active, 30 completed), its Suggested.lean signatures as statements, and the named results in STATUS.md linked to Tau Ceti declarations.
-- [ATLAS](https://github.com/facebookresearch/atlas-lean) (17,683 Lean files): Mapped separately: one article per documented public declaration, at https://deicyde.github.io/atlas-lean/.
 
 ### Research projects with blueprints
 
@@ -34,7 +34,7 @@ Trough maps Lean formalization libraries: what each one formalizes, how its resu
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) (60,478 Lean files): One article per step of PROOF-PATH.md, linked to the Lean theorem it names.
 - [OpenAI Math](https://github.com/openai/math) (163,097 Lean files): One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results.
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) (229,089 Lean files): Milestones from the in-Lean CFSG/Blueprint catalog and the formalization.yaml main results.
-- [Lean Pool](https://github.com/LeanPool/lean-pool) (22,324 Lean files): One article per project in LeanPool/projects (317), with its main_results as statements.
+- [Lean Pool](https://github.com/LeanPool/lean-pool) (28,795 Lean files): One article per project in LeanPool/projects (317), with its main_results as statements.
 
 ### Formal Frontier libraries
 

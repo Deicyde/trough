@@ -8,7 +8,7 @@ navigation: transparent
 - [Fubini's theorem on differentiation](fubinis-theorem-on-differentiation.md)
 - [Fundamental theorem of calculus](../../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
 - [Gradient theorem](gradient-theorem.md)
-- [Green's theorem](greens-theorem.md)
+- [Green's theorem](../../../../hundred-theorems/part-02/greens-theorem.md)
 - [Hardy–Littlewood maximal theorem](hardy-littlewood-maximal-theorem.md)
 - [Hardy–Littlewood tauberian theorem](hardy-littlewood-tauberian-theorem.md)
 - [Heine–Borel theorem](../../../../overview/topology/metric-spaces/heine-borel-theorem-proper-metric-space-version.md)

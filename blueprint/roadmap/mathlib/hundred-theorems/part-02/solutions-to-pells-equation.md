@@ -6,7 +6,7 @@ mathlib_declaration: Pell.eq_pell, Pell.exists_of_not_isSquare
 mathlib_file: Mathlib/NumberTheory/PellMatiyasevic.lean
 ---
 
-# Solutions to Pell’s Equation
+# Solutions to Pell’s Equation (Freek Wiedijk's 100 theorems)
 
 Mathlib records this with 2 declarations.
 
@@ -28,10 +28,12 @@ Pell.exists_of_not_isSquare {d : ℤ} (h₀ : 0 < d) (hd : ¬IsSquare d) :
 
 In `pell.eq_pell`, `d` is defined to be `a*a - 1` for an arbitrary `a > 1`.
 
+The 1000+ list (Q853067): In `pell.eq_pell`, `d` is defined to be `a*a - 1` for an arbitrary `a > 1`.
+
 ## Depends on
 
 - [Integer](../../overview/general-algebra/numbers/integer.md)
-- [Solutions to Pell's equation](../../overview/general-algebra/number-theory/solutions-to-pells-equation.md)
+- [Solutions to Pell's equation (Number theory)](../../overview/general-algebra/number-theory/solutions-to-pells-equation.md)
 
 ## Proof depends on
 
@@ -52,6 +54,6 @@ In `pell.eq_pell`, `d` is defined to be `a*a - 1` for an arbitrary `a > 1`.
 - [Source of `Pell.exists_of_not_isSquare` in Mathlib/NumberTheory/Pell.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Pell.lean#L322)
 - [Freek Wiedijk's 100 theorems, no. 39](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L203)
 - [1000+ theorems list: Q853067](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L980)
-- [1000+ theorems project: Q853067](https://1000-plus.github.io/?length=-1#Q853067)
+- [1000+ theorems project: Q853067](https://1000-plus.github.io/all.html?length=-1#Q853067)
 - [Wikipedia: Pell's equation](https://en.wikipedia.org/wiki/Pell's_equation)
 - [Wikidata: Q853067](https://www.wikidata.org/wiki/Q853067)

@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q856032](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L988)
-- [1000+ theorems project: Q856032](https://1000-plus.github.io/?length=-1#Q856032)
+- [1000+ theorems project: Q856032](https://1000-plus.github.io/all.html?length=-1#Q856032)
 - [Wikipedia: CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 - [Wikidata: Q856032](https://www.wikidata.org/wiki/Q856032)

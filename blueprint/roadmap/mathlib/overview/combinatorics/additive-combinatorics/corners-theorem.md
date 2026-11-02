@@ -36,6 +36,6 @@ corners_theorem_nat {n : ℕ} {ε : ℝ} (hε : 0 < ε) (hn : cornersTheoremBoun
 - [Source of `corners_theorem_nat` in Mathlib/Combinatorics/Additive/Corner/Roth.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Additive/Corner/Roth.lean#L96)
 - [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L541)
 - [1000+ theorems list: Q5171652](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3080)
-- [1000+ theorems project: Q5171652](https://1000-plus.github.io/?length=-1#Q5171652)
+- [1000+ theorems project: Q5171652](https://1000-plus.github.io/all.html?length=-1#Q5171652)
 - [Wikipedia: Corners theorem](https://en.wikipedia.org/wiki/Corners_theorem)
 - [Wikidata: Q5171652](https://www.wikidata.org/wiki/Q5171652)

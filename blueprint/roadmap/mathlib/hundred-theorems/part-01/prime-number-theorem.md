@@ -12,9 +12,9 @@ Formalized outside Mathlib; the 100 theorems list links the formalization.
 
 The 1000+ theorems project records formalizations in Metamath.
 
-Formalized in Lean outside Mathlib.
+Mathlib's 1000+ list links a formalization.
 
-Ongoing formalisation of various versions in <https://github.com/AlexKontorovich/PrimeNumberTheoremAnd>.
+The 1000+ list (Q386292): Ongoing formalisation of various versions in <https://github.com/AlexKontorovich/PrimeNumberTheoremAnd>.
 
 ## Depends on
 
@@ -27,7 +27,7 @@ Its prerequisites are not mapped yet.
 - [Outside Mathlib: Prime Number Theorem](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/blob/a5040887e6bb24f7c201db8568e7755c138b3878/PrimeNumberTheoremAnd/Wiener.lean#L2196-L2211)
 - [Outside Mathlib: With Error Terms](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/blob/a5040887e6bb24f7c201db8568e7755c138b3878/PrimeNumberTheoremAnd/MediumPNT.lean#L5504-L6162)
 - [Outside Mathlib: website](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd)
-- [1000+ theorems project: Q386292](https://1000-plus.github.io/?length=-1#Q386292)
+- [1000+ theorems project: Q386292](https://1000-plus.github.io/all.html?length=-1#Q386292)
 - [Wikipedia: Prime number theorem](https://en.wikipedia.org/wiki/Prime_number_theorem)
 - [Wikidata: Q386292](https://www.wikidata.org/wiki/Q386292)
-- [Formalization outside Mathlib](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd)
+- [Formalization linked by the 1000+ list](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd)

@@ -4,7 +4,7 @@ origin: cited
 not_ready: true
 ---
 
-# E is Transcendental
+# e is Transcendental
 
 Not in Mathlib.
 

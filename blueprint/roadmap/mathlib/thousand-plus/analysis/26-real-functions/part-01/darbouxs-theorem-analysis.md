@@ -136,6 +136,6 @@ exists_hasDerivWithinAt_eq_of_le_of_ge {a b : ℝ} {f f' : ℝ → ℝ} (hab : a
 - [Mathlib documentation: `exists_hasDerivWithinAt_eq_of_le_of_ge`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Darboux.html#exists_hasDerivWithinAt_eq_of_le_of_ge)
 - [Source of `exists_hasDerivWithinAt_eq_of_le_of_ge` in Mathlib/Analysis/Calculus/Darboux.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/Darboux.lean#L130)
 - [1000+ theorems list: Q660799](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L720)
-- [1000+ theorems project: Q660799](https://1000-plus.github.io/?length=-1#Q660799)
+- [1000+ theorems project: Q660799](https://1000-plus.github.io/all.html?length=-1#Q660799)
 - [Wikipedia: Darboux's theorem (analysis)](https://en.wikipedia.org/wiki/Darboux's_theorem_%28analysis%29)
 - [Wikidata: Q660799](https://www.wikidata.org/wiki/Q660799)

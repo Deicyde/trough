@@ -37,6 +37,6 @@ intermediate_value_Icc.{u, u_1} {α : Type u} [TopologicalSpace α]
 - [Mathlib undergraduate list: Single Variable Real Analysis › Real-valued functions defined on a subset of $\R$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L309)
 - [Freek Wiedijk's 100 theorems, no. 79](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L401)
 - [1000+ theorems list: Q245098](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L263)
-- [1000+ theorems project: Q245098](https://1000-plus.github.io/?length=-1#Q245098)
+- [1000+ theorems project: Q245098](https://1000-plus.github.io/all.html?length=-1#Q245098)
 - [Wikipedia: Intermediate value theorem](https://en.wikipedia.org/wiki/Intermediate_value_theorem)
 - [Wikidata: Q245098](https://www.wikidata.org/wiki/Q245098)

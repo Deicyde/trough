@@ -74,7 +74,7 @@ def test_merge_on_declaration_set_or_first_declaration():
     sylow = [article for article in articles if "Sylow.exists_subgroup_card_pow_prime" in article.decls]
     assert len(sylow) == 1
     assert sylow[0].home.list == "overview"
-    assert sylow[0].decls == ("Sylow.exists_subgroup_card_pow_prime", "Sylow.isPretransitive_of_finite")
+    assert sylow[0].decls == ("Sylow.exists_subgroup_card_pow_prime",)
     kinds = sorted(article.kind for article in articles)
     assert kinds.count("module") == 1
     assert kinds.count("wanted") == 3  # row reduction, Galois theory, Fermat's Last Theorem
@@ -167,7 +167,7 @@ def test_shared_titles_get_the_nearest_section_that_differs():
         "overview": [mathlib.Item("overview", "a", ("Analysis", "Differentiability"), "chain rule", 1, decls=("A",))],
         "undergrad": [mathlib.Item("undergrad", "b", ("Real analysis", "Differentiability"), "chain rule", 2, decls=("B",))],
         "100": [],
-        "1000": [mathlib.Item("1000", "Q1", (), "chain rule", 3, decls=("C",))],
+        "1000": [mathlib.Item("1000", "Q1", (), "Chain rule", 3, decls=("C",))],
     }
     sources = mathlib.Sources("r", "", lists, None, None)
     root, _ = mathlib.chapter(sources)
@@ -180,3 +180,37 @@ def test_citation_keys_link_to_the_bibliography():
     assert f"[Zwillinger]({mathlib.DOCS}/references.html#ref_zwillinger2003)" in doc
     assert f"[axler2024]({mathlib.DOCS}/references.html#ref_axler2024)" in doc
     assert "[x](https://a.org)" in doc and "`l[i]`" in doc
+
+
+def test_a_shared_declaration_links_to_the_article_it_heads():
+    lists = {
+        "overview": [mathlib.Item("overview", "a", ("S",), "alpha", 1, decls=("A",)),
+                     mathlib.Item("overview", "c", ("S",), "gamma", 2, decls=("C",))],
+        "undergrad": [],
+        "100": [mathlib.Item("100", "1", (), "Bundle", 3, decls=("B", "A"))],
+        "1000": [],
+    }
+    deps = {"mathlib_rev": "r", "modules": {},
+            "concepts": {"A": record(kind="def"), "B": record(), "C": record(statement=["A"])}}
+    root, _ = mathlib.chapter(mathlib.Sources("r", "", lists, deps, None))
+    leaves = {node.title: node for node in walk(root) if not hasattr(node, "entries")}
+    assert [leaf.title for leaf in leaves["Gamma"].depends] == ["Alpha"]
+
+
+def test_titles_match_across_typography_and_keys_the_project_replaced():
+    lists = {
+        "overview": [], "undergrad": [],
+        "100": [mathlib.Item("100", "6", (), "Gödel’s Incompleteness Theorem", 1)],
+        "1000": [mathlib.Item("1000", "Q200787", (), "Gödel's incompleteness theorem", 2),
+                 mathlib.Item("1000", "Q230848", (), "Lamé’s theorem", 3)],
+    }
+    assert len(mathlib.merge(lists)) == 2
+    thousand = {"entries": {"Q10380294": {"msc": "68", "wikipedia": ["Lamé's theorem"], "others": {}}}}
+    sources = mathlib.Sources("r", "", lists, None, thousand)
+    assert mathlib.thousand_entry(sources, lists["1000"][1])[0] == "Q10380294"
+
+
+def test_headings_keep_list_titles_and_wikipedia_sections():
+    assert mathlib.Item("100", "67", (), "e is Transcendental", 1).label == "67. e is Transcendental"
+    assert mathlib.Item("overview", "x", ("A",), "group", 1).heading == "Group"
+    assert mathlib.wikipedia_url("Integer partition#Odd parts") == "https://en.wikipedia.org/wiki/Integer_partition#Odd_parts"

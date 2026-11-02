@@ -4,8 +4,9 @@
 # (lean/ConceptDeps.lean). The pages are then regenerated from that data.
 #
 # On main, a dispatch or the weekly run, the commit job records the data and
-# the pages, then starts the Pages workflow. On a pull request the run fails
-# when the committed data differ from what this Lean gives, and keeps a patch.
+# the pages, then starts the Pages and Tests workflows. On a pull request the
+# run fails when the committed data differ from what this Lean gives, and keeps
+# a patch.
 
 name: Mathlib data
 
@@ -50,10 +51,19 @@ jobs:
     outputs:
       changed: ${{ steps.compare.outputs.changed }}
       rev: ${{ steps.pin.outputs.rev }}
+      sha: ${{ steps.head.outputs.sha }}
     steps:
+      # Outside pull requests, read the branch as it is now rather than the
+      # commit that started the run: a run queued behind another then sees the
+      # data and pin that one recorded.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
           persist-credentials: false
+
+      - name: Record the commit this run reads
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Free disk space for Mathlib
         run: |
@@ -118,14 +128,12 @@ jobs:
         working-directory: lean
         run: lake exe cache get
 
-      # 100.yaml names a few declarations from Archive and Counterexamples.
-      - name: Build Archive and Counterexamples
+      # 100.yaml names a few declarations from Archive. ConceptDeps stops if a
+      # listed name does not resolve, so a list that names another library
+      # fails here rather than publishing articles without data.
+      - name: Build Archive
         working-directory: lean
-        run: |
-          if ! lake build @mathlib/Archive @mathlib/Counterexamples; then
-            echo "::warning::Archive and Counterexamples did not build; their declarations stay unresolved."
-            sed -i '/^import \(Archive\|Counterexamples\)$/d' ConceptDeps.lean
-          fi
+        run: lake build @mathlib/Archive
 
       - name: Copy Mathlib's curated lists at this commit
         env:
@@ -163,10 +171,12 @@ jobs:
       - name: Regenerate the pages
         run: uv run --no-dev python tools/generate.py
 
+      - name: Run the tests on the new data
+        run: uv run pytest -q
+
       - name: Compare with the committed data
         id: compare
         run: |
-          git restore lean/ConceptDeps.lean
           git add -A data blueprint lean/lakefile.toml lean/lean-toolchain lean/lake-manifest.json
           if git diff --cached --quiet; then
             echo "The committed data are this Mathlib's."
@@ -177,7 +187,10 @@ jobs:
           git diff --cached --binary > mathlib-data.patch
           echo "changed=true" >> "$GITHUB_OUTPUT"
           if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
-            echo "::error::The committed data differ from this Lean's. Apply the patch: gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n mathlib-data && git apply mathlib-data.patch"
+            # The patch is against this pull request merged with main, so merge
+            # that main commit (the merge's first parent) before applying it.
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            echo "::error::The committed data differ from this Lean's. Merge main and apply the patch: git fetch origin ${base} && git merge --no-edit ${base} && gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n mathlib-data && git apply mathlib-data.patch"
             exit 1
           fi
 
@@ -187,6 +200,20 @@ jobs:
         with:
           name: mathlib-data
           path: mathlib-data.patch
+          retention-days: 14
+
+      - name: Keep the data for the commit job
+        if: steps.compare.outputs.changed == 'true' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: mathlib-data-files
+          path: |
+            data/mathlib/concept-deps.json
+            data/mathlib/source.json
+            data/mathlib/yaml/
+            lean/lakefile.toml
+            lean/lean-toolchain
+            lean/lake-manifest.json
           retention-days: 14
 
       - name: Keep the dump
@@ -201,9 +228,12 @@ jobs:
             lean/lake-manifest.json
           retention-days: 14
 
-  # Runs no Lean or Python: it applies the dump job's patch after checking that
-  # it touches only data, pages and the Mathlib pin. A push made with this
-  # token starts no workflow, so it starts the Pages workflow itself.
+  # Records the data in the newest main: it copies the dump's data files there
+  # and regenerates the pages with main's generator, so a push made meanwhile
+  # is kept, and a push that changed the generator or the dump gets its own run
+  # after this one. Only a pin moved meanwhile wins: that push's run records the
+  # data. A push made with this token starts no workflow, so it starts Pages
+  # and Tests.
   commit:
     needs: dump
     if: >-
@@ -215,32 +245,60 @@ jobs:
       actions: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
 
-      - name: Fetch the patch
+      - name: Fetch the data
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
-          name: mathlib-data
-          path: ${{ runner.temp }}/patch
+          name: mathlib-data-files
+          path: ${{ runner.temp }}/data
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
 
       - name: Commit the data and pages
         env:
           REV: ${{ needs.dump.outputs.rev }}
+          DUMPED: ${{ needs.dump.outputs.sha }}
           GIT_AUTHOR_NAME: github-actions[bot]
           GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
           set -euo pipefail
-          git apply --index "$RUNNER_TEMP/patch/mathlib-data.patch"
-          if git diff --cached --no-renames --name-only \
-            | grep -vE '^(data/|blueprint/|lean/(lakefile\.toml|lean-toolchain|lake-manifest\.json)$)'; then
-            echo "::error::The patch changes the files listed above."
+          src="$RUNNER_TEMP/data"
+          if (cd "$src" && find . -type f | sed 's|^\./||') \
+            | grep -vE '^(data/mathlib/(concept-deps\.json|source\.json|yaml/[a-z0-9]+\.yaml)|lean/(lakefile\.toml|lean-toolchain|lake-manifest\.json))$'; then
+            echo "::error::The data artifact holds the files listed above."
             exit 1
           fi
-          git commit --quiet -m "Mathlib data at ${REV:0:8}"
-          git push --quiet origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            if ! git diff --quiet "$DUMPED" HEAD -- lean/lakefile.toml lean/lean-toolchain; then
+              echo "::notice::main has moved the Mathlib pin since ${DUMPED:0:8}; that push's run records the data."
+              exit 0
+            fi
+            cp -R "$src/." .
+            uv run --no-dev python tools/generate.py
+            git add -A data/mathlib blueprint lean/lakefile.toml lean/lean-toolchain lean/lake-manifest.json
+            if git diff --cached --quiet; then
+              echo "main already has this data."
+              exit 0
+            fi
+            git commit --quiet -m "Mathlib data at ${REV:0:8}"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
 
-      - name: Rebuild the site
+      - name: Rebuild the site and run the tests
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"

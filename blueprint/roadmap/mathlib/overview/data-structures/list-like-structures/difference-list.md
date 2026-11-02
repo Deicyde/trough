@@ -3,7 +3,6 @@ declaration: structure
 origin: cited
 mathlib: true
 mathlib_declaration: Batteries.DList
-mathlib_file: Batteries/Data/DList/Basic.lean
 ---
 
 # Difference list

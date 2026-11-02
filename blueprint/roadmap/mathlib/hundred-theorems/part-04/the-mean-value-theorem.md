@@ -2,29 +2,20 @@
 declaration: theorem
 origin: cited
 mathlib: true
-mathlib_declaration: exists_deriv_eq_slope, exists_ratio_deriv_eq_ratio_slope
+mathlib_declaration: exists_deriv_eq_slope
 mathlib_file: Mathlib/Analysis/Calculus/Deriv/MeanValue.lean
 ---
 
-# The Mean Value Theorem
+# The Mean Value Theorem (Freek Wiedijk's 100 theorems)
 
-Mathlib records this with 2 declarations.
-
-`exists_deriv_eq_slope`: Lagrange's **Mean Value Theorem**, `deriv` version.
+Lagrange's **Mean Value Theorem**, `deriv` version.
 
 ```lean
 exists_deriv_eq_slope (f : ℝ → ℝ) {a b : ℝ} (hab : a < b) (hfc : ContinuousOn f (Set.Icc a b))
   (hfd : DifferentiableOn ℝ f (Set.Ioo a b)) : ∃ c ∈ Set.Ioo a b, deriv f c = (f b - f a) / (b - a)
 ```
 
-`exists_ratio_deriv_eq_ratio_slope`: Cauchy's Mean Value Theorem, `deriv` version.
-
-```lean
-exists_ratio_deriv_eq_ratio_slope (f : ℝ → ℝ) {a b : ℝ} (hab : a < b)
-  (hfc : ContinuousOn f (Set.Icc a b)) (hfd : DifferentiableOn ℝ f (Set.Ioo a b)) (g : ℝ → ℝ)
-  (hgc : ContinuousOn g (Set.Icc a b)) (hgd : DifferentiableOn ℝ g (Set.Ioo a b)) :
-  ∃ c ∈ Set.Ioo a b, (g b - g a) * deriv f c = (f b - f a) * deriv g c
-```
+The 1000+ list (Q189136) also cites `exists_ratio_deriv_eq_ratio_slope`.
 
 ## Depends on
 
@@ -48,10 +39,8 @@ exists_ratio_deriv_eq_ratio_slope (f : ℝ → ℝ) {a b : ℝ} (hab : a < b)
 
 - [Mathlib documentation: `exists_deriv_eq_slope`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Deriv/MeanValue.html#exists_deriv_eq_slope)
 - [Source of `exists_deriv_eq_slope` in Mathlib/Analysis/Calculus/Deriv/MeanValue.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/Deriv/MeanValue.lean#L154)
-- [Mathlib documentation: `exists_ratio_deriv_eq_ratio_slope`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Deriv/MeanValue.html#exists_ratio_deriv_eq_ratio_slope)
-- [Source of `exists_ratio_deriv_eq_ratio_slope` in Mathlib/Analysis/Calculus/Deriv/MeanValue.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/Deriv/MeanValue.lean#L133)
 - [Freek Wiedijk's 100 theorems, no. 75](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L379)
 - [1000+ theorems list: Q189136](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L126)
-- [1000+ theorems project: Q189136](https://1000-plus.github.io/?length=-1#Q189136)
+- [1000+ theorems project: Q189136](https://1000-plus.github.io/all.html?length=-1#Q189136)
 - [Wikipedia: Mean value theorem](https://en.wikipedia.org/wiki/Mean_value_theorem)
 - [Wikidata: Q189136](https://www.wikidata.org/wiki/Q189136)

@@ -29,7 +29,7 @@
 - [Fubini's theorem on differentiation](part-02/fubinis-theorem-on-differentiation.md)
 - [Fundamental theorem of calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
 - [Gradient theorem](part-02/gradient-theorem.md)
-- [Green's theorem](part-02/greens-theorem.md)
+- [Green's theorem](../../../hundred-theorems/part-02/greens-theorem.md)
 - [Hardy–Littlewood maximal theorem](part-02/hardy-littlewood-maximal-theorem.md)
 - [Hardy–Littlewood tauberian theorem](part-02/hardy-littlewood-tauberian-theorem.md)
 - [Heine–Borel theorem](../../../overview/topology/metric-spaces/heine-borel-theorem-proper-metric-space-version.md)

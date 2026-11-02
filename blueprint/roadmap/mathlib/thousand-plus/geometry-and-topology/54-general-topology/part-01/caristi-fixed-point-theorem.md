@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q2287393](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2159)
-- [1000+ theorems project: Q2287393](https://1000-plus.github.io/?length=-1#Q2287393)
+- [1000+ theorems project: Q2287393](https://1000-plus.github.io/all.html?length=-1#Q2287393)
 - [Wikipedia: Caristi fixed-point theorem](https://en.wikipedia.org/wiki/Caristi_fixed-point_theorem)
 - [Wikidata: Q2287393](https://www.wikidata.org/wiki/Q2287393)

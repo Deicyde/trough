@@ -67,7 +67,7 @@
 - [Perlis theorem](part-03/perlis-theorem.md)
 - [Planar separator theorem](part-03/planar-separator-theorem.md)
 - [Pólya enumeration theorem](part-03/polya-enumeration-theorem.md)
-- [Ramsey's theorem](part-03/ramseys-theorem.md)
+- [Ramsey's theorem](../../../hundred-theorems/part-02/ramseys-theorem.md)
 
 ## [Ringel–Youngs theorem to Wagner's theorem](part-04/README.md)
 

@@ -32,6 +32,6 @@ Combinatorics.exists_mono_homothetic_copy.{u_5, u_6} {M : Type u_5} {κ : Type u
 - [Source of `Combinatorics.exists_mono_homothetic_copy` in Mathlib/Combinatorics/HalesJewett.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/HalesJewett.lean#L458)
 - [Mathlib overview: Combinatorics › Ramsey theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L534)
 - [1000+ theorems list: Q764287](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L857)
-- [1000+ theorems project: Q764287](https://1000-plus.github.io/?length=-1#Q764287)
+- [1000+ theorems project: Q764287](https://1000-plus.github.io/all.html?length=-1#Q764287)
 - [Wikipedia: Van der Waerden's theorem](https://en.wikipedia.org/wiki/Van_der_Waerden's_theorem)
 - [Wikidata: Q764287](https://www.wikidata.org/wiki/Q764287)

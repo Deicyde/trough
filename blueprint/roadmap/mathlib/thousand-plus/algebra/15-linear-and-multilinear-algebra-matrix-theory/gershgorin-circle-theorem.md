@@ -37,6 +37,6 @@ eigenvalue_mem_ball.{u_1, u_2} {K : Type u_1} {n : Type u_2} [NormedField K] [Fi
 - [Mathlib documentation: `eigenvalue_mem_ball`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Gershgorin.html#eigenvalue_mem_ball)
 - [Source of `eigenvalue_mem_ball` in Mathlib/LinearAlgebra/Matrix/Gershgorin.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/Matrix/Gershgorin.lean#L27)
 - [1000+ theorems list: Q978688](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1179)
-- [1000+ theorems project: Q978688](https://1000-plus.github.io/?length=-1#Q978688)
+- [1000+ theorems project: Q978688](https://1000-plus.github.io/all.html?length=-1#Q978688)
 - [Wikipedia: Gershgorin circle theorem](https://en.wikipedia.org/wiki/Gershgorin_circle_theorem)
 - [Wikidata: Q978688](https://www.wikidata.org/wiki/Q978688)

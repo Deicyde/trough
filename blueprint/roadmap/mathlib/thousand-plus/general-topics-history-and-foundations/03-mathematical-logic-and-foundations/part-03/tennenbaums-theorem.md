@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q2226803](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2106)
-- [1000+ theorems project: Q2226803](https://1000-plus.github.io/?length=-1#Q2226803)
+- [1000+ theorems project: Q2226803](https://1000-plus.github.io/all.html?length=-1#Q2226803)
 - [Wikipedia: Tennenbaum's theorem](https://en.wikipedia.org/wiki/Tennenbaum's_theorem)
 - [Wikidata: Q2226803](https://www.wikidata.org/wiki/Q2226803)

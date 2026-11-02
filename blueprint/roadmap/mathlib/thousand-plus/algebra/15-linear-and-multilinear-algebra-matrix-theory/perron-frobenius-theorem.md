@@ -15,6 +15,6 @@ Its prerequisites are not mapped yet.
 ## Sources
 
 - [1000+ theorems list: Q1564541](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1764)
-- [1000+ theorems project: Q1564541](https://1000-plus.github.io/?length=-1#Q1564541)
+- [1000+ theorems project: Q1564541](https://1000-plus.github.io/all.html?length=-1#Q1564541)
 - [Wikipedia: Perron–Frobenius theorem](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem)
 - [Wikidata: Q1564541](https://www.wikidata.org/wiki/Q1564541)

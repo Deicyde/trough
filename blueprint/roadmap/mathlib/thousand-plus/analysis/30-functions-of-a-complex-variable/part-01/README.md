@@ -18,7 +18,7 @@ navigation: transparent
 - [Cauchy integral theorem](cauchy-integral-theorem.md)
 - [Cauchy–Hadamard theorem](cauchy-hadamard-theorem.md)
 - [Corona theorem](corona-theorem.md)
-- [De Branges's theorem](de-brangess-theorem.md)
+- [de Branges's theorem](de-brangess-theorem.md)
 - [De Moivre's theorem](../../../../hundred-theorems/part-01/de-moivres-formula.md)
 - [Edge-of-the-wedge theorem](edge-of-the-wedge-theorem.md)
 - [Farrell–Markushevich theorem](farrell-markushevich-theorem.md)
