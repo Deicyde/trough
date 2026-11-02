@@ -130,6 +130,15 @@ def test_blueprint_nodes_follow_leanblueprint(blueprint):
     assert blueprint.labels["ch:first"].title == "First"
 
 
+def test_a_label_across_lines_is_one_line(tmp_path):
+    (tmp_path / "web.tex").write_text(
+        "\\begin{document}\n\\begin{lemma}\\label{A.one,\n    A.two}\\uses{B,\n  C}\n"
+        "Text.\n\\end{lemma}\n\\end{document}\n"
+    )
+    [node] = leanblueprint.read(tmp_path, "web.tex").graph
+    assert node.id == "A.one, A.two" and node.uses == ["B", "C"]
+
+
 def project(tmp_path: Path, text: bool = True) -> blueprints.Project:
     return blueprints.Project("demo", "Demo", "o/p", "0123456789abcdef", "2026-11-02T00:00:00Z", "blueprint/src/web.tex",
                               "Apache-2.0", text, tmp_path)

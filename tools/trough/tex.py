@@ -104,9 +104,14 @@ def optional(text: str, i: int) -> tuple[str, int] | None:
     return None
 
 
+def squeeze(text: str) -> str:
+    """*text* on one line, each run of white space one space, as TeX reads a label."""
+    return " ".join(text.split())
+
+
 def names(text: str) -> list[str]:
     """The comma-separated names of a \\lean or \\uses argument."""
-    return [name.strip() for name in text.split(",") if name.strip()]
+    return [squeeze(name) for name in text.split(",") if name.strip()]
 
 
 def environment_end(text: str, i: int, env: str) -> tuple[int, int]:

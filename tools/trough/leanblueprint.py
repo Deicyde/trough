@@ -32,6 +32,7 @@ from trough.tex import (
     names,
     optional,
     skip_space,
+    squeeze,
     strip_comment,
 )
 
@@ -233,7 +234,7 @@ def read(root: Path, entry: str) -> Blueprint:
         after = text[title[1] : title[1] + 400]
         label = re.match(r"\s*\\label\s*\{([^}]*)\}", after)
         if label:
-            unit.label = label.group(1).strip()
+            unit.label = squeeze(label.group(1))
         stack.append(unit)
         units.append(unit)
         unit_at.append((title[1], unit))
@@ -279,8 +280,8 @@ def read(root: Path, entry: str) -> Blueprint:
         unit = unit_of(start)
         mine = own(start, end, body)
         plain = masked(mine)
-        own_labels = [label.strip() for label in macro_args(plain, "label")]
-        equations = [label.strip() for label in macro_args(mine, "label") if label.strip() not in own_labels]
+        own_labels = [squeeze(label) for label in macro_args(plain, "label")]
+        equations = [squeeze(label) for label in macro_args(mine, "label") if squeeze(label) not in own_labels]
         lean = names(macro_args(mine, "lean")[-1]) if macro_args(mine, "lean") else []
         uses = names(macro_args(mine, "uses")[-1]) if macro_args(mine, "uses") else []
         where = document.where(start)
@@ -289,9 +290,9 @@ def read(root: Path, entry: str) -> Blueprint:
             target = None
             proves = macro_args(mine, "proves")
             if proves:
-                target = labels.get(proves[-1].strip())
+                target = labels.get(squeeze(proves[-1]))
                 if not isinstance(target, Node):
-                    problems.append(f"{where.file}:{where.line}: \\proves{{{proves[-1].strip()}}} names no theorem")
+                    problems.append(f"{where.file}:{where.line}: \\proves{{{squeeze(proves[-1])}}} names no theorem")
                     target = None
             if target is None and last is not None and last_unit is unit:
                 target = last

@@ -7,8 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/517
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_eq\_ringHaarChar\_det,
-    MeasureTheory.addEquivAddHaarChar\_eq\_ringHaarChar\_det\_of\_existsListTransvecEtc
+# MeasureTheory.addEquivAddHaarChar\_eq\_ringHaarChar\_det, MeasureTheory.addEquivAddHaarChar\_eq\_ringHaarChar\_det\_of\_existsListTransvecEtc
 
 Assume that there's an $F$-basis for $V$ such that $\phi$ is a product of elementary and diagonal matrices (note that this is automatic if $F$ is a field and mathlib has this). Then $d_V(\phi)=\delta_F(\det(\phi))$, where $\det(\phi)\in F$ is the determinant of $\phi$ as an $F$-linear map.
 
