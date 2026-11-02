@@ -107,25 +107,11 @@ exists_hasDerivWithinAt_eq_of_le_of_ge {a b : ℝ} {f f' : ℝ → ℝ} (hab : a
 
 ## Proof depends on
 
-- [Affine function](../../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Dual of a normed space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Extreme value theorem](../../../../overview/topology/topological-algebra/extreme-value-theorem.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Norm of a continuous linear map](../../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources
 

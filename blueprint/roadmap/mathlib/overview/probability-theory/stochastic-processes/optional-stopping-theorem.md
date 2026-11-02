@@ -32,22 +32,6 @@ MeasureTheory.submartingale_iff_expected_stoppedValue_mono.{u_1} {Ω : Type u_1}
 - [Conditional expectation](../definitions-in-probability-theory/conditional-expectation.md)
 - [Stopping time](stopping-time.md)
 
-## Proof depends on
-
-- [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Borel-Cantelli lemma (easy direction)](../../../undergraduate/probability-theory/definitions-of-a-probability-space/borel-cantelli-lemma-easy-direction.md)
-- [Cauchy-Schwarz inequality](../../analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Completeness of $L^2$](../../../undergraduate/topology/hilbert-spaces/completeness-of-l-2-2.md)
-- [Convergence in probability](../convergence-of-a-sequence-of-random-variables/convergence-in-probability.md)
-- [Fatou's lemma](../../analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Finite-dimensional normed spaces over complete normed fields are complete](../../analysis/normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
-- [Hahn-Banach theorem](../../analysis/normed-vector-spaces-banach-spaces/hahn-banach-theorem.md)
-- [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Self-adjoint operator](../../analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.submartingale_iff_expected_stoppedValue_mono`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Martingale/OptionalStopping.html#MeasureTheory.submartingale_iff_expected_stoppedValue_mono)

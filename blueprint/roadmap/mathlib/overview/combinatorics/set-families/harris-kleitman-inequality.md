@@ -24,7 +24,6 @@ IsLowerSet.le_card_inter_finset.{u_1} {α : Type u_1} [DecidableEq α] {𝒜 ℬ
 
 ## Proof depends on
 
-- [Integer](../../general-algebra/numbers/integer.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources

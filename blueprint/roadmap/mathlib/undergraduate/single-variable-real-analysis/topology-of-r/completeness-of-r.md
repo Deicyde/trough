@@ -24,6 +24,7 @@ Real.instCompleteSpace : CompleteSpace ℝ
 
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
 - [Complete metric spaces](../../topology/topology-and-metric-spaces/complete-metric-spaces.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 
 ## Sources
 

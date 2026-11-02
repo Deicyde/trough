@@ -27,17 +27,12 @@ exists_norm_eq_iInf_of_complete_convex.{u_3} {F : Type u_3} [NormedAddCommGroup 
 
 ## Proof depends on
 
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../topology-and-metric-spaces/homeomorphisms.md)
-- [Limits of sequences](../topology-and-metric-spaces/limits-of-sequences.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ isCompact_iff_finite_subcover.{u} {X : Type u} [TopologicalSpace X] {s : Set X} 
 
 ## Proof depends on
 
-- [Integer](../../../general-algebra/numbers/integer.md)
+- [Natural number](../../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 

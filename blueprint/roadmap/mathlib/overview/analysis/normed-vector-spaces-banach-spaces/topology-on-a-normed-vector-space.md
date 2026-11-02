@@ -22,15 +22,6 @@ NormSMulClass.toIsBoundedSMul.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Semino
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../topology/uniform-notions/uniform-space.md)
 
-## Proof depends on
-
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-
 ## Sources
 
 - [Mathlib documentation: `NormSMulClass.toIsBoundedSMul`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/MulAction.html#NormSMulClass.toIsBoundedSMul)

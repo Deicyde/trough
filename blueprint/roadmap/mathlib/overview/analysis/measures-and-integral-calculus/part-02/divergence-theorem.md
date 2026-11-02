@@ -50,28 +50,13 @@ MeasureTheory.integral_divergence_of_hasFDerivAt_off_countable.{u} {E : Type u}
 
 ## Proof depends on
 
-- [Affine space](../../../geometry/affine-and-euclidean-geometry/affine-space.md)
 - [Algebra of endomorphisms of a vector space](../../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../../general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../topology/general-topology/part-01/closed-map.md)
-- [Complementary subspaces](../../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Fatou's lemma](../part-01/fatous-lemma.md)
-- [Giry monad](../part-01/giry-monad.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Heine-Cantor theorem](../../../topology/uniform-notions/heine-cantor-theorem.md)
-- [Hilbert projection theorem](../../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../part-01/monotone-convergence-theorem.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
-- [Orthogonal projection](../../hilbert-spaces/orthogonal-projection.md)
+- [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
+- [Measurable function](../part-01/measurable-function.md)
+- [Order topology](../../../topology/topological-algebra/order-topology.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Probability measure](../../../probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Quotient space (Fundamentals)](../../../linear-algebra/fundamentals/quotient-space.md)
 - [Riemann sums](../../../../undergraduate/single-variable-real-analysis/integration/riemann-sums.md)
-- [Self-adjoint operator](../../hilbert-spaces/self-adjoint-operator.md)
-- [Stieltjes measure](../part-01/stieltjes-measure.md)
-- [The Number of Subsets of a Set](../../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

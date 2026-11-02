@@ -45,29 +45,6 @@ NumberField.Units.exist_unique_eq_mul_prod.{u_1} (K : Type u_1) [Field K] [Numbe
 - [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 
-## Proof depends on
-
-- [Aleph numbers](../../../overview/logic-and-computation/set-theory/cardinals/aleph-numbers.md)
-- [Ball](../../../overview/topology/metric-spaces/ball.md)
-- [Cayley-Hamilton theorem](../../../overview/linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Fundamental sequences](../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Hilbert basis theorem](../../../overview/general-algebra/polynomials-and-power-series/hilbert-basis-theorem.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Isomorphism with $K^n$](../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
-- [Order of an element](../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
-- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Well-ordering theorem](../../general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
-
 ## Sources
 
 - [Mathlib documentation: `NumberField.Units.basisModTorsion`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.html#NumberField.Units.basisModTorsion)

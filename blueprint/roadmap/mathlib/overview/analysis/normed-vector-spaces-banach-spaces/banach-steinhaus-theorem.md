@@ -30,14 +30,12 @@ banach_steinhaus.{u_1, u_2, u_3, u_4, u_5} {E : Type u_1} {F : Type u_2} {𝕜 :
 
 ## Proof depends on
 
-- [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Array](../../data-structures/list-like-structures/array.md)
 - [Baire theorem](../../topology/metric-spaces/baire-theorem.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
+- [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Sources
 

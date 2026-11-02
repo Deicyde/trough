@@ -23,11 +23,7 @@ Matrix.det_one_add_mul_comm.{u_2, u_3, u_4} {m : Type u_2} {n : Type u_3} {α : 
 
 ## Proof depends on
 
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Decomposition into transpositions](../../../undergraduate/group-theory/permutation-group/decomposition-into-transpositions.md)
-- [Direct product of groups](../../../undergraduate/group-theory/basic-definitions/direct-product-of-groups.md)
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Subgroup](../../../overview/general-algebra/group-theory/part-01/subgroup.md)
 
 ## Sources
 

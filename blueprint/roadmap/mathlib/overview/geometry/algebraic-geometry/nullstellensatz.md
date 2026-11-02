@@ -26,28 +26,15 @@ MvPolynomial.vanishingIdeal_zeroLocus_eq_radical.{u_1, u_2, u_3} {k : Type u_1} 
 
 ## Proof depends on
 
-- [$K\[X\]$ is Euclidean](../../general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
-- [Aleph numbers](../../logic-and-computation/set-theory/cardinals/aleph-numbers.md)
 - [Algebraic extension](../../general-algebra/field-theory/algebraic-extension.md)
-- [Cayley-Hamilton theorem](../../linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
 - [Field of fractions of an integral domain](../../general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
 - [Finite-dimensionality](../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Fundamental sequences](../../logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Going-up and going-down theorems](../../../thousand-plus/algebra/13-commutative-algebra/going-up-and-going-down-theorems.md)
-- [Greatest common divisor](../../general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
-- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Least common multiple](../../general-algebra/divisibility-in-integral-domains/least-common-multiple.md)
-- [Minimal polynomial](../../linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
-- [Noetherian ring](../../general-algebra/rings/noetherian-ring.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Roots of a polynomial](../../general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
-- [Rupture field](../../general-algebra/field-theory/rupture-field.md)
-- [Subfield](../../general-algebra/field-theory/subfield.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [Well-ordering theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
+- [Local ring](../../general-algebra/rings/local-ring.md)
+- [Localization](../../general-algebra/rings/localization.md)
+- [Maximal ideal](../../general-algebra/ideals-and-quotients/maximal-ideal.md)
+- [Prime ideal](../../general-algebra/ideals-and-quotients/prime-ideal.md)
+- [Quotient ring](../../general-algebra/ideals-and-quotients/quotient-ring.md)
+- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources
 

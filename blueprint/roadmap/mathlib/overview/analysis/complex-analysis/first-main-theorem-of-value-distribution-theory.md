@@ -29,15 +29,7 @@ ValueDistribution.characteristic_sub_characteristic_inv_le {f : ℂ → ℂ} {R 
 
 ## Proof depends on
 
-- [Analyticity of holomorphic functions](analyticity-of-holomorphic-functions.md)
-- [Cauchy-Schwarz inequality](../hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Chain rule](../../../undergraduate/multivariable-calculus/differential-calculus/chain-rule.md)
-- [Connected components](../../../undergraduate/topology/topology-and-metric-spaces/connected-components.md)
-- [Connectedness](../../topology/general-topology/part-01/connectedness.md)
-- [Convex hull of a subset of an affine real space](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
-- [Path connectedness](../../../undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
-- [Principle of isolated zeros](principle-of-isolated-zeros.md)
-- [Tensor product](../../linear-algebra/fundamentals/tensor-product.md)
+- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
 
 ## Sources
 

@@ -30,7 +30,7 @@ doublyStochastic_eq_convexHull_permMatrix.{u_1, u_2} {R : Type u_1} {n : Type u_
 
 ## Proof depends on
 
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Hall's marriage theorem](../../../overview/combinatorics/transversals/halls-marriage-theorem.md)
 
 ## Sources

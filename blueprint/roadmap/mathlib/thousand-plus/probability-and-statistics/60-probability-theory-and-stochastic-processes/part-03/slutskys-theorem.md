@@ -46,20 +46,11 @@ MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_c
 
 ## Proof depends on
 
-- [Affine space](../../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Bounded convergence theorem](../../../analysis/28-measure-and-integration/part-01/bounded-convergence-theorem.md)
-- [Complementary subspaces](../../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
+- [Bochner integral](../../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Continuous mapping theorem](../part-01/continuous-mapping-theorem.md)
-- [Convergence in distribution](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/convergence-in-distribution.md)
-- [Giry monad](../../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Lebesgue measure (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
-- [Orthogonal projection](../../../../overview/analysis/hilbert-spaces/orthogonal-projection.md)
-- [Quotient space (Fundamentals)](../../../../overview/linear-algebra/fundamentals/quotient-space.md)
-- [Self-adjoint operator](../../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Stieltjes measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/stieltjes-measure.md)
+- [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

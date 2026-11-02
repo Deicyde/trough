@@ -32,19 +32,13 @@ hensels_lemma.{u_1} {p : ℕ} [Fact (Nat.Prime p)] {R : Type u_1} [CommSemiring 
 
 ## Proof depends on
 
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Order topology](../../topology/topological-algebra/order-topology.md)
+- [Ordered ring](../rings/ordered-ring.md)
 - [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
-- [Prime numbers](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

@@ -20,21 +20,16 @@ Nat.sum_four_squares (n : ℕ) : ∃ a b c d, a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 = n
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Bezout’s Theorem](../../../hundred-theorems/part-03/bezouts-theorem.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic p](../field-theory/characteristic-p.md)
+- [Characteristic zero](../field-theory/characteristic-zero.md)
 - [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
-- [Orbit](../../../undergraduate/group-theory/basic-definitions/orbit.md)
-- [Order of an element](../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
+- [Euclid's' algorithm](../divisibility-in-integral-domains/euclids-algorithm.md)
+- [Field](../field-theory/field.md)
+- [Finitely supported function](../../data-structures/maps/finitely-supported-function.md)
+- [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
+- [Ordered ring](../rings/ordered-ring.md)
 - [Permutation group of a type](../group-theory/part-02/permutation-group-of-a-type.md)
-- [Roots of a polynomial](../polynomials-and-power-series/roots-of-a-polynomial.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Subgroup](../group-theory/part-01/subgroup.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

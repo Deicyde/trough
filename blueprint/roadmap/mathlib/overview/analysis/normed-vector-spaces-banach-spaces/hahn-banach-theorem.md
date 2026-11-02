@@ -32,22 +32,11 @@ exists_extension_norm_eq.{u_1, u_2} {ùïú : Type u_1} [NontriviallyNormedField 
 
 ## Proof depends on
 
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
 - [Dual vector space](../../linear-algebra/duality/dual-vector-space.md)
-- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [M. Riesz extension theorem](../../../thousand-plus/analysis/46-functional-analysis/part-02/m-riesz-extension-theorem.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

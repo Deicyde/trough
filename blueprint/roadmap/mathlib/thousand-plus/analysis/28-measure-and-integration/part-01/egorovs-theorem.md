@@ -35,23 +35,9 @@ MeasureTheory.tendstoUniformlyOn_of_ae_tendsto.{u_1, u_2, u_3} {α : Type u_1} {
 ## Proof depends on
 
 - [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of inverse functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-inverse-functions.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
-- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Sum of a Geometric Series](../../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 - [Uniform convergence norm (sup-norm)](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/uniform-convergence-norm-sup-norm.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

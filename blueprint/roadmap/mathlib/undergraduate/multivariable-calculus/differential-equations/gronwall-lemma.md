@@ -32,15 +32,12 @@ norm_le_gronwallBound_of_norm_deriv_right_le.{u_1} {E : Type u_1} [NormedAddComm
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
-- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

@@ -35,20 +35,9 @@ taylor_integral_remainder_of_absolutelyContinuous {f : ℝ → ℝ} {x x₀ : �
 
 ## Proof depends on
 
-- [$C^k$ function](../../../overview/analysis/differentiability/c-k-function.md)
-- [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
-- [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
-- [Differentiability of integrals with respect to parameters](../../measures-and-integral-calculus/integration/differentiability-of-integrals-with-respect-to-p.md)
-- [Differentiable functions](../../multivariable-calculus/differential-calculus/differentiable-functions.md)
+- [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Holomorphic functions](../../single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
-- [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
-- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [The Number of Subsets of a Set](../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
 
 ## Sources
 

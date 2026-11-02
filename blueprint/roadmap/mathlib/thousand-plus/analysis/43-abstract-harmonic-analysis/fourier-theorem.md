@@ -57,22 +57,11 @@ The wikipedia page is really vague; it's not clear what is meant here. While mat
 
 ## Proof depends on
 
-- [Cauchy-Schwarz inequality](../../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Change of variables to polar co-ordinates](../../../undergraduate/measures-and-integral-calculus/integration/change-of-variables-to-polar-co-ordinates.md)
-- [Connected components](../../../undergraduate/topology/topology-and-metric-spaces/connected-components.md)
-- [Connectedness](../../../overview/topology/general-topology/part-01/connectedness.md)
-- [Continuity of the sum of a series of functions](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/continuity-of-the-sum-of-a-series-of-functions.md)
-- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
-- [Determinant of vectors](../../../undergraduate/linear-algebra/multilinearity/determinant-of-vectors.md)
-- [Differentiable functions](../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Divergence theorem](../../../overview/analysis/measures-and-integral-calculus/part-02/divergence-theorem.md)
-- [Dominated convergence theorem](../../../overview/analysis/measures-and-integral-calculus/part-01/dominated-convergence-theorem.md)
-- [Fubini's theorem](../../../overview/analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
-- [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
-- [Orientation of a $\R$-vector space](../../../undergraduate/linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
-- [Path connectedness](../../../undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
-- [Unitary group](../../../undergraduate/group-theory/classical-automorphism-groups/unitary-group.md)
+- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
+- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

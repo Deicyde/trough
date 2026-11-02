@@ -27,28 +27,13 @@ Submodule.complete_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} {E : Type u
 
 ## Proof depends on
 
-- [Aleph numbers](../../logic-and-computation/set-theory/cardinals/aleph-numbers.md)
-- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
-- [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
+- [Basis](../../linear-algebra/fundamentals/basis.md)
+- [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Equivalence of norms in finite dimension](equivalence-of-norms-in-finite-dimension.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Fundamental sequences](../../logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Hilbert basis theorem](../../general-algebra/polynomials-and-power-series/hilbert-basis-theorem.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Isomorphism with $K^n$](../../linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
+- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Local ring](../../general-algebra/rings/local-ring.md)
-- [Polynomial in several indeterminates](../../general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [Subring](../../general-algebra/rings/subring.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
-- [Well-ordering theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
 
 ## Sources
 

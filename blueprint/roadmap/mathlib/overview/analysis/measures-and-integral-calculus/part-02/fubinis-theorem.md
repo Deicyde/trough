@@ -32,16 +32,13 @@ MeasureTheory.integral_prod.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {E :
 
 ## Proof depends on
 
-- [Affine space](../../../geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../../general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../topology/general-topology/part-01/closed-map.md)
-- [Fatou's lemma](../part-01/fatous-lemma.md)
-- [Finite-dimensional normed spaces over complete normed fields are complete](../../normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
+- [Borel sigma-algebra](../part-01/borel-sigma-algebra.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
 - [Inner product space, over $R$ or $C$](../../hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../part-01/monotone-convergence-theorem.md)
-- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
+- [Order topology](../../../topology/topological-algebra/order-topology.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Topological module](../../../topology/topological-algebra/topological-module.md)
 
 ## Sources
 

@@ -33,20 +33,6 @@ Real.fourier_eq.{u_1, u_3} {V : Type u_1} {E : Type u_3} [NormedAddCommGroup E] 
 - [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 
-## Proof depends on
-
-- [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
-- [Complementary subspaces](../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
-- [Orthogonal projection](../hilbert-spaces/orthogonal-projection.md)
-- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
-- [Self-adjoint operator](../hilbert-spaces/self-adjoint-operator.md)
-
 ## Sources
 
 - [Mathlib documentation: `Real.fourier_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/FourierTransform.html#Real.fourier_eq)

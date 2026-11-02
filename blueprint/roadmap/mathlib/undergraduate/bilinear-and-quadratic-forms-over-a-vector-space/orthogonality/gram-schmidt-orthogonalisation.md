@@ -26,9 +26,8 @@ InnerProductSpace.gramSchmidt_orthogonal.{u_1, u_2, u_3} (𝕜 : Type u_1) {E : 
 
 ## Proof depends on
 
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Self-adjoint operator](../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
+- [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 
 ## Sources
 

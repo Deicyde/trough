@@ -21,8 +21,6 @@ Its statement uses no other concept on these lists.
 
 ## Proof depends on
 
-- [List](../../../../overview/data-structures/list-like-structures/list.md)
-- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../../overview/data-structures/sets/set.md)
 
 ## Sources

@@ -25,7 +25,7 @@ transcendental_liouvilleNumber {m : ℕ} (hm : 2 ≤ m) : Transcendental ℤ (li
 
 ## Proof depends on
 
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
+- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Liouville’s Theorem and the Construction of Transcendental Numbers](../../../hundred-theorems/part-01/liouvilles-theorem-and-the-construction-of-trans.md)
 
 ## Sources

@@ -26,11 +26,8 @@ Urysohn's metrization theorem (only).
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Ball](../../../../overview/topology/metric-spaces/ball.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 - [Urysohn's lemma](../../../../overview/topology/general-topology/part-02/urysohns-lemma.md)
 
 ## Sources

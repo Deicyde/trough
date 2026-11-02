@@ -33,22 +33,9 @@ IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt.{u_1} {E : Type u_1}
 
 ## Proof depends on
 
-- [$C^k$ function](../../../overview/analysis/differentiability/c-k-function.md)
-- [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
-- [Compact open topology](../../../overview/topology/general-topology/part-01/compact-open-topology.md)
-- [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Contraction mapping theorem](../../../overview/topology/metric-spaces/contraction-mapping-theorem.md)
-- [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
-- [Differentials (linear tangent functions)](../differential-calculus/differentials-linear-tangent-functions.md)
-- [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
-- [Holomorphic functions](../../single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Matrix exponential](../../linear-algebra/exponential/matrix-exponential.md)
-- [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
-- [The Number of Subsets of a Set](../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
-- [Uniform convergence](../../../overview/topology/uniform-notions/uniform-convergence.md)
+- [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 
 ## Sources
 

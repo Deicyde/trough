@@ -25,20 +25,9 @@ Module.End.exists_eigenvalue.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K] 
 
 ## Proof depends on
 
-- [Aleph numbers](../../logic-and-computation/set-theory/cardinals/aleph-numbers.md)
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Cayley-Hamilton theorem](../endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Fundamental sequences](../../logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Ideal of a commutative ring](../../general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
-- [Noetherian ring](../../general-algebra/rings/noetherian-ring.md)
-- [Prime numbers](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Principal ideal domain](../../general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Roots of a polynomial](../../general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
-- [Well-ordering theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
+- [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
+- [Basis](../fundamentals/basis.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

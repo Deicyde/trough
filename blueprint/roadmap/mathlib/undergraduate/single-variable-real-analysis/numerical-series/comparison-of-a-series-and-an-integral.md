@@ -23,23 +23,11 @@ AntitoneOn.tsum_le_integral {f : ℝ → ℝ} (anti : AntitoneOn f (Set.Ici 0))
 
 ## Proof depends on
 
-- [Affine space](../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Approximation by step functions](../../measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Complementary subspaces](../../linear-algebra/fundamentals/complementary-subspaces.md)
-- [Fatou's lemma](../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Giry monad](../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
-- [Orthogonal projection](../../../overview/analysis/hilbert-spaces/orthogonal-projection.md)
-- [Pointwise convergence](../sequences-and-series-of-functions/pointwise-convergence.md)
-- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
-- [Self-adjoint operator](../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Stieltjes measure](../../../overview/analysis/measures-and-integral-calculus/part-01/stieltjes-measure.md)
+- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

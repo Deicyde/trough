@@ -22,10 +22,6 @@ Fintype.exists_ne_map_eq_of_card_lt.{u_1, u_2} {α : Type u_1} {β : Type u_2} [
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Integer](../../general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Fintype.exists_ne_map_eq_of_card_lt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Fintype/Pigeonhole.html#Fintype.exists_ne_map_eq_of_card_lt)

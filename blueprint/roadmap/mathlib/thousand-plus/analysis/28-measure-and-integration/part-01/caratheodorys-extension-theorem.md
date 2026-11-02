@@ -37,22 +37,10 @@ MeasureTheory.AddContent.measure_eq.{u_1} {α : Type u_1} {C : Set (Set α)} {s 
 
 ## Proof depends on
 
-- [Almost sure convergence](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
-- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
+- [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Module](../../../../overview/linear-algebra/fundamentals/module.md)
-- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources
 

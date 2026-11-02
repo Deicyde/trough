@@ -35,24 +35,6 @@ EuclideanGeometry.angle_eq_of_congruent.{u_1, u_2, u_3, u_4, u_5} {ι : Type u_1
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 
-## Proof depends on
-
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Norm of a continuous linear map](../../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Squeeze theorem](../../../analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Binomial Theorem](../../../../hundred-theorems/part-03/the-binomial-theorem.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
-
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.triangle_congruent_iff_dist_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Congruence.html#EuclideanGeometry.triangle_congruent_iff_dist_eq)

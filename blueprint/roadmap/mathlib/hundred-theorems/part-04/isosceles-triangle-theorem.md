@@ -22,23 +22,6 @@ EuclideanGeometry.angle_eq_angle_of_dist_eq.{u_1, u_2} {V : Type u_1} {P : Type 
 - [Angle](../../overview/geometry/affine-and-euclidean-geometry/angle.md)
 - [Euclidean affine space](../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 
-## Proof depends on
-
-- [Cauchy-Schwarz inequality](../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Intermediate value theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)
-- [Lipschitz continuity](../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Norm of a continuous linear map](../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Self-adjoint operator](../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Squeeze theorem](../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
-- [The Triangle Inequality](../part-05/the-triangle-inequality.md)
-- [Topology of a metric space](../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
-
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.angle_eq_angle_of_dist_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Triangle.html#EuclideanGeometry.angle_eq_angle_of_dist_eq)

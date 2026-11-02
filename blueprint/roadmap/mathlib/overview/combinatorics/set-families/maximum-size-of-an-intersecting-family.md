@@ -22,10 +22,6 @@ Set.Intersecting.is_max_iff_card_eq.{u_1} {α : Type u_1} [BooleanAlgebra α] [N
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Integer](../../general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Set.Intersecting.is_max_iff_card_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/Intersecting.html#Set.Intersecting.is_max_iff_card_eq)

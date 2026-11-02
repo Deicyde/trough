@@ -25,11 +25,7 @@ Theorems100.Nat.eq_two_pow_mul_prime_mersenne_of_even_perfect {n : ℕ} (ev : Ev
 ## Proof depends on
 
 - [Arithmetic functions](../../overview/general-algebra/number-theory/arithmetic-functions.md)
-- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Group action](../../overview/general-algebra/group-theory/part-01/group-action.md)
-- [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 
 ## Sources
 

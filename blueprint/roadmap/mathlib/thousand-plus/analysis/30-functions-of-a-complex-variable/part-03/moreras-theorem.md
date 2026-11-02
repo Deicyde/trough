@@ -25,8 +25,12 @@ Complex.isConservativeOn_and_continuousOn_iff_isDifferentiableOn.{u_1} {E : Type
 
 ## Proof depends on
 
-- [Analyticity of holomorphic functions](../../../../overview/analysis/complex-analysis/analyticity-of-holomorphic-functions.md)
-- [Convex hull of a subset of an affine real space](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
+- [Convex subsets](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
+- [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
+- [Differentiable function between normed vector spaces](../../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
+- [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
+- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

@@ -31,7 +31,6 @@ Convex.radon_partition.{u_1, u_2, u_3} {ι : Type u_1} {𝕜 : Type u_2} {E : Ty
 
 ## Proof depends on
 
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources

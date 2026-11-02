@@ -23,10 +23,6 @@ Finset.sum_pow_eq_sum_piAntidiag_of_commute.{u_1, u_2} {α : Type u_1} {R : Type
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../../../overview/data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Integer](../../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Finset.sum_pow_eq_sum_piAntidiag_of_commute`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/Choose/Multinomial.html#Finset.sum_pow_eq_sum_piAntidiag_of_commute)

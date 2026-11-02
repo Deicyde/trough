@@ -24,21 +24,11 @@ Complex.hasSum_sin (z : ℂ) :
 
 ## Proof depends on
 
-- [Absolutely convergent series in Banach spaces](../../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Linear map](../../../../overview/linear-algebra/fundamentals/linear-map.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Completeness of R](../../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Matrix exponential](../../../linear-algebra/exponential/matrix-exponential.md)
-- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../../linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Radius of convergence](../radius-of-convergence.md)
-- [Squeeze theorem](../../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
-- [Topology of a metric space](../../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Metric structure](../../../single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Sources
 

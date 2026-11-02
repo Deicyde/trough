@@ -30,11 +30,10 @@ IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn.{u_1, u_2} {𝕜 : Type u_1} [RCLi
 
 ## Proof depends on
 
-- [Differentiable function between normed vector spaces](../differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Dual vector space](../../linear-algebra/duality/dual-vector-space.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Hellinger–Toeplitz theorem](../../../thousand-plus/analysis/46-functional-analysis/part-02/hellinger-toeplitz-theorem.md)
-- [Norm of a continuous linear map](../normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
+- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 
 ## Sources
 

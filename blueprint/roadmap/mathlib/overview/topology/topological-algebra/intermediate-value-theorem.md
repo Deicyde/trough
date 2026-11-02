@@ -26,10 +26,8 @@ intermediate_value_Icc.{u, u_1} {α : Type u} [TopologicalSpace α]
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Closure](../general-topology/part-01/closure.md)
 - [Continuous function](../general-topology/part-01/continuous-function.md)
-- [Natural number](../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 

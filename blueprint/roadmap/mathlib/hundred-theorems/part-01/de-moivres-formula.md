@@ -23,18 +23,8 @@ Complex.cos_add_sin_mul_I_pow (n : ℕ) (z : ℂ) :
 
 ## Proof depends on
 
-- [Ball](../../overview/topology/metric-spaces/ball.md)
-- [Closure](../../overview/topology/general-topology/part-01/closure.md)
+- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Metric space](../../overview/topology/metric-spaces/metric-space.md)
-- [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
-- [The Triangle Inequality](../part-05/the-triangle-inequality.md)
-- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

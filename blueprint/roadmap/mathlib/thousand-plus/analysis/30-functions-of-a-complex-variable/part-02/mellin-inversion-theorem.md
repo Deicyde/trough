@@ -25,6 +25,8 @@ mellinInv_mellin_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ
 
 ## Proof depends on
 
+- [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
+- [Euclidean domain](../../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Fourier theorem](../../43-abstract-harmonic-analysis/fourier-theorem.md)
 
 ## Sources

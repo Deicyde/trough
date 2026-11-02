@@ -30,8 +30,11 @@ ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral.{u_1, u_2} {Ω : Type u_
 ## Proof depends on
 
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Fubini's theorem](../../analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
+- [Borel sigma-algebra](../../analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Sources
 

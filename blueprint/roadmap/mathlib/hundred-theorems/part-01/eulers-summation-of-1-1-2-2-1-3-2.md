@@ -25,12 +25,13 @@ hasSum_zeta_two : HasSum (fun n => 1 / ↑n ^ 2) (Real.pi ^ 2 / 6)
 
 - [Absolutely convergent series in Banach spaces](../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Bernoulli numbers](../../overview/general-algebra/number-theory/bernoulli-numbers.md)
+- [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Derivative at a point](../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
+- [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Fourier Series](../part-04/fourier-series.md)
-- [Fundamental Theorem of Integral Calculus](fundamental-theorem-of-integral-calculus.md)
+- [Lebesgue measure (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Polynomial derivative](../../undergraduate/ring-theory/polynomial-rings/polynomial-derivative.md)
-- [Power series](../../overview/general-algebra/polynomials-and-power-series/power-series.md)
-- [Sequential space](../../overview/topology/general-topology/part-01/sequential-space.md)
+- [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 
 ## Sources
 

@@ -35,17 +35,10 @@ LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply.{u_1, u_2} {𝕜 : Type 
 
 ## Proof depends on
 
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Cayley-Hamilton theorem](../endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Eigenvalues from Rayleigh quotient](../../analysis/hilbert-spaces/eigenvalues-from-rayleigh-quotient.md)
-- [Extreme value theorem](../../topology/topological-algebra/extreme-value-theorem.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Minimal polynomial](../endomorphism-polynomials/minimal-polynomial.md)
-- [Orthogonal projection](../../analysis/hilbert-spaces/orthogonal-projection.md)
-- [Roots of a polynomial](../../general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Eigenvector](../structure-theory-of-endomorphisms/eigenvector.md)
+- [Local ring](../../general-algebra/rings/local-ring.md)
+- [Orthogonal complement](../../analysis/hilbert-spaces/orthogonal-complement.md)
 
 ## Sources
 

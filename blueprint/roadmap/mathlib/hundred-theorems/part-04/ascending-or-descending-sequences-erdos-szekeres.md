@@ -30,11 +30,6 @@ Theorems100.erdos_szekeres.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Fintype �
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../overview/data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-- [Integer](../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Theorems100.erdos_szekeres`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/AscendingDescendingSequences.html#Theorems100.erdos_szekeres)

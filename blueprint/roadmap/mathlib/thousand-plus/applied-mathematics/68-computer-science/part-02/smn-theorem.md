@@ -22,9 +22,6 @@ Nat.Partrec.Code.smn :
 
 ## Proof depends on
 
-- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Integer](../../../../overview/general-algebra/numbers/integer.md)
-- [List](../../../../overview/data-structures/list-like-structures/list.md)
 - [Primitive recursive function](../../../../overview/logic-and-computation/computability/primitive-recursive-function.md)
 
 ## Sources

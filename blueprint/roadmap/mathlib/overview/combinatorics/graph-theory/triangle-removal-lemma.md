@@ -26,6 +26,7 @@ SimpleGraph.triangle_removal.{u_1} {α : Type u_1} [DecidableEq α] [Fintype α]
 
 ## Proof depends on
 
+- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Regularity lemma](regularity-lemma.md)
 - [Triangle counting lemma](triangle-counting-lemma.md)
 

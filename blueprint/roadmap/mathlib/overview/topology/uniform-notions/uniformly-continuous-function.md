@@ -24,16 +24,8 @@ Metric.uniformContinuous_iff.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpa
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Group](../../general-algebra/group-theory/part-01/group.md)
-- [Group morphism](../../general-algebra/group-theory/part-01/group-morphism.md)
-- [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

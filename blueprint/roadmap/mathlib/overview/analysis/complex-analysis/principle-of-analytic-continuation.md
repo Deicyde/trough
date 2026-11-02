@@ -27,16 +27,7 @@ AnalyticOnNhd.eqOn_of_preconnected_of_frequently_eq.{u_1, u_2} {𝕜 : Type u_1}
 
 ## Proof depends on
 
-- [Absolutely convergent series in Banach spaces](../normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
-- [Completion of an abelian topological group](../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Principle of isolated zeros](principle-of-isolated-zeros.md)
-- [Sequential space](../../topology/general-topology/part-01/sequential-space.md)
-- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
-- [The Number of Subsets of a Set](../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
 
 ## Sources
 

@@ -48,7 +48,10 @@ card_sylow_modEq_one.{u_1} (p : ℕ) (G : Type u_1) [Group G] [Fact (Nat.Prime p
 
 ## Proof depends on
 
-- [Second Sylow theorem](second-sylow-theorem.md)
+- [Finite set](../../../data-structures/sets/finite-set.md)
+- [Order of an element](../../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
+- [Quotient group](../part-01/quotient-group.md)
+- [Quotient space (Basic definitions)](../../../../undergraduate/group-theory/basic-definitions/quotient-space.md)
 
 ## Sources
 

@@ -25,10 +25,8 @@ LinearMap.IsSymmetric.continuous.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RC
 
 ## Proof depends on
 
-- [Cauchy-Schwarz inequality](../../../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Closed graph theorem](../part-01/closed-graph-theorem.md)
-- [Self-adjoint operator](../../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Sequential space](../../../../overview/topology/general-topology/part-01/sequential-space.md)
+- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 
 ## Sources
 

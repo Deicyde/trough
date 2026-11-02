@@ -23,7 +23,6 @@ exists_deriv_eq_zero {f : ℝ → ℝ} {a b : ℝ} (hab : a < b) (hfc : Continuo
 
 ## Proof depends on
 
-- [Extreme value theorem](../../topology/topological-algebra/extreme-value-theorem.md)
 - [Fermat's theorem (stationary points)](../../../thousand-plus/analysis/26-real-functions/part-01/fermats-theorem-stationary-points.md)
 
 ## Sources

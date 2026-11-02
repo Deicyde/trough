@@ -26,9 +26,11 @@ Subgroup.commutator_inf_eq_focalSubgroup.{u_1} {G : Type u_1} [Group G] {p : ℕ
 
 ## Proof depends on
 
-- [Bezout’s Theorem](../../../hundred-theorems/part-03/bezouts-theorem.md)
-- [Second Sylow theorem](../../../overview/general-algebra/group-theory/part-02/second-sylow-theorem.md)
-- [Third Sylow theorem](../../../overview/general-algebra/group-theory/part-02/third-sylow-theorem.md)
+- [Euclid's' algorithm](../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Periodic points](../../../overview/dynamics/general-theory/periodic-points.md)
+- [Quotient group](../../../overview/general-algebra/group-theory/part-01/quotient-group.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

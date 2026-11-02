@@ -31,10 +31,12 @@ BoundedContinuousFunction.arzela_ascoli.{u, v} {α : Type u} {β : Type v} [Topo
 
 ## Proof depends on
 
+- [Ball](ball.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of spaces of bounded continuous functions](../../analysis/normed-vector-spaces-banach-spaces/completeness-of-spaces-of-bounded-continuous-fun.md)
-- [Limit point](../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
 - [Lipschitz continuity](lipschitz-continuity.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 

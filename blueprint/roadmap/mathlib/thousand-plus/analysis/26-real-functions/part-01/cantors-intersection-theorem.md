@@ -22,11 +22,6 @@ IsCompact.nonempty_sInter_of_directed_nonempty_isCompact_isClosed.{u} {X : Type 
 
 - [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 
-## Proof depends on
-
-- [List](../../../../overview/data-structures/list-like-structures/list.md)
-- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
-
 ## Sources
 
 - [Mathlib documentation: `IsCompact.nonempty_sInter_of_directed_nonempty_isCompact_isClosed`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html#IsCompact.nonempty_sInter_of_directed_nonempty_isCompact_isClosed)

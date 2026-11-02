@@ -25,11 +25,6 @@ Finset.kruskal_katona {n r : ℕ} {𝒜 𝒞 : Finset (Finset (Fin n))} (h𝒜r 
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Integer](../../general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Finset.kruskal_katona`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/KruskalKatona.html#Finset.kruskal_katona)

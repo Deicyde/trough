@@ -31,8 +31,9 @@ intervalIntegral.integral_deriv_smul_comp.{u_1} {a b : ℝ} {E : Type u_1} [Norm
 
 ## Proof depends on
 
-- [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
-- [Image of a segment](../real-valued-functions-defined-on-a-subset-of-r/image-of-a-segment.md)
+- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources
 

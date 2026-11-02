@@ -33,14 +33,10 @@ ConvexOn.map_integral_le.{u_1, u_2} {α : Type u_1} {E : Type u_2} {m0 : Measura
 
 ## Proof depends on
 
-- [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Approximation by step functions](../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
-- [Fatou's lemma](../measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
+- [Borel sigma-algebra](../measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Measurable function](../measures-and-integral-calculus/part-01/measurable-function.md)
+- [Order topology](../../topology/topological-algebra/order-topology.md)
+- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 
 ## Sources
 

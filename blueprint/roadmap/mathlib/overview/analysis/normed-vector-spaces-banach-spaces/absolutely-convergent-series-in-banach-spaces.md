@@ -25,9 +25,8 @@ Summable.of_norm.{u_1, u_3} {ι : Type u_1} {E : Type u_3} [SeminormedAddCommGro
 ## Proof depends on
 
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
+- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 
 ## Sources
 

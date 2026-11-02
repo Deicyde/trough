@@ -35,24 +35,6 @@ Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq.{u_1} {V : T
 - [Orientation of a $\R$-vector space](../../linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
 
-## Proof depends on
-
-- [Affine space](../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Cauchy-Schwarz inequality](../../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Complementary subspaces](../../linear-algebra/fundamentals/complementary-subspaces.md)
-- [Decomposition into transpositions](../../group-theory/permutation-group/decomposition-into-transpositions.md)
-- [Direct product of groups](../../group-theory/basic-definitions/direct-product-of-groups.md)
-- [Fréchet-Riesz representation of the dual of a Hilbert space](../../../overview/analysis/hilbert-spaces/frechet-riesz-representation-of-the-dual-of-a-hi.md)
-- [Gram-Schmidt orthogonalisation](../../bilinear-and-quadratic-forms-over-a-vector-space/orthogonality/gram-schmidt-orthogonalisation.md)
-- [Invertibility](../../../overview/linear-algebra/matrices/invertibility.md)
-- [Matrix representation of a linear map](../../../overview/linear-algebra/matrices/matrix-representation-of-a-linear-map.md)
-- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
-- [Subgroup](../../../overview/general-algebra/group-theory/part-01/subgroup.md)
-- [Unitary group](../../group-theory/classical-automorphism-groups/unitary-group.md)
-
 ## Sources
 
 - [Mathlib documentation: `Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Angle/Sphere.html#Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq)

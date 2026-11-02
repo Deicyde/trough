@@ -23,11 +23,6 @@ Multiset.prod_X_add_C_eq_sum_esymm.{u_1} {R : Type u_1} [CommSemiring R] (s : Mu
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 
-## Proof depends on
-
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
-- [Integer](../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Multiset.prod_X_add_C_eq_sum_esymm`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Vieta.html#Multiset.prod_X_add_C_eq_sum_esymm)

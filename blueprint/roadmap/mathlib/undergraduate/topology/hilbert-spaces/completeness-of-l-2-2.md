@@ -24,17 +24,16 @@ MeasureTheory.Lp.instCompleteSpace.{u_1, u_3} {α : Type u_1} {m : MeasurableSpa
 
 ## Proof depends on
 
-- [Approximation by step functions](../../measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
-- [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
+- [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
+- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
+- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
+- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

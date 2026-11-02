@@ -21,15 +21,13 @@ exists_hilbertBasis.{u_2, u_3} (𝕜 : Type u_2) [RCLike 𝕜] (E : Type u_3) [N
 
 ## Proof depends on
 
-- [Cauchy-Schwarz inequality](cauchy-schwarz-inequality.md)
+- [Closure](../../topology/general-topology/part-01/closure.md)
 - [Completeness of $l^2$](../../../undergraduate/topology/hilbert-spaces/completeness-of-l-2.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Local ring](../../general-algebra/rings/local-ring.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Orthogonal projection](orthogonal-projection.md)
-- [Self-adjoint operator](self-adjoint-operator.md)
+- [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
+- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
+- [Orthogonal complement](orthogonal-complement.md)
+- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
+- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources
 

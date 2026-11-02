@@ -30,10 +30,13 @@ FDRep.char_orthonormal.{u, v} {k : Type u} [Field k] {G : Type v} [Group G] [IsA
 
 ## Proof depends on
 
-- [Dual basis](../../linear-algebra/duality/dual-basis.md)
+- [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
+- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Monoidal category](../category-theory/monoidal-category.md)
+- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 - [Representation](representation.md)
 - [Schur's lemma (Linear representations)](../../../undergraduate/linear-algebra/linear-representations/schurs-lemma.md)
+- [Tensor product](../../linear-algebra/fundamentals/tensor-product.md)
 - [Transpose of a linear map](../../../undergraduate/linear-algebra/duality/transpose-of-a-linear-map.md)
 
 ## Sources

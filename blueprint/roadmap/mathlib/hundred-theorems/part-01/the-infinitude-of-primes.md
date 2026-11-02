@@ -19,11 +19,6 @@ Nat.exists_infinite_primes (n : ℕ) : ∃ p, n ≤ p ∧ Nat.Prime p
 
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 
-## Proof depends on
-
-- [Integer](../../overview/general-algebra/numbers/integer.md)
-- [List](../../overview/data-structures/list-like-structures/list.md)
-
 ## Sources
 
 - [Mathlib documentation: `Nat.exists_infinite_primes`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/Prime/Infinite.html#Nat.exists_infinite_primes)

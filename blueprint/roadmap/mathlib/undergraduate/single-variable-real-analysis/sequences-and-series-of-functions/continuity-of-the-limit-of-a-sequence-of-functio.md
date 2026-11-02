@@ -21,11 +21,6 @@ continuous_of_uniform_approx_of_continuous.{u_1, u_2} {α : Type u_1} {β : Type
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
-## Proof depends on
-
-- [List](../../../overview/data-structures/list-like-structures/list.md)
-- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
-
 ## Sources
 
 - [Mathlib documentation: `continuous_of_uniform_approx_of_continuous`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UniformSpace/UniformApproximation.html#continuous_of_uniform_approx_of_continuous)

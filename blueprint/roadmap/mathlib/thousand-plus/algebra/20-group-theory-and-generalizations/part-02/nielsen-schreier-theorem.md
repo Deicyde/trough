@@ -26,7 +26,6 @@ Subgroup.isFreeGroupOfIsFreeGroup.{u} {G : Type u} [Group G] [IsFreeGroup G] (H 
 - [Isomorphism](../../../../overview/general-algebra/category-theory/isomorphism.md)
 - [Natural transformation](../../../../overview/general-algebra/category-theory/natural-transformation.md)
 - [Orbit](../../../../undergraduate/group-theory/basic-definitions/orbit.md)
-- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Small category](../../../../overview/general-algebra/category-theory/small-category.md)
 - [Stabilizer of a point](../../../../undergraduate/group-theory/basic-definitions/stabilizer-of-a-point.md)
 

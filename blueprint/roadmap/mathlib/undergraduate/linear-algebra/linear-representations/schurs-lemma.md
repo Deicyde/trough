@@ -30,10 +30,11 @@ FDRep.finrank_hom_simple_simple.{u, v} {k : Type u} {G : Type v} [Field k] [Mono
 
 ## Proof depends on
 
-- [Adjunction](../../../overview/general-algebra/category-theory/adjunction.md)
-- [Existence of bases](../fundamentals/existence-of-bases.md)
-- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Schur's lemma (1000+ theorems)](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-03/schurs-lemma.md)
+- [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Limits](../../../overview/general-algebra/category-theory/limits.md)
+- [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
+- [Small category](../../../overview/general-algebra/category-theory/small-category.md)
+- [Sum of subspaces](../fundamentals/sum-of-subspaces.md)
 
 ## Sources
 

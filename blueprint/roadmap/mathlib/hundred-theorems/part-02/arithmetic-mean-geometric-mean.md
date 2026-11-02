@@ -23,26 +23,7 @@ Real.geom_mean_le_arith_mean_weighted.{u} {ι : Type u} (s : Finset ι) (w z : �
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Intermediate value theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)
 - [Jensen's inequality (finite sum version)](../../overview/analysis/convexity/jensens-inequality-finite-sum-version.md)
-- [Lipschitz continuity](../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Norm of a continuous linear map](../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Squeeze theorem](../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
-- [The Triangle Inequality](../part-05/the-triangle-inequality.md)
-- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

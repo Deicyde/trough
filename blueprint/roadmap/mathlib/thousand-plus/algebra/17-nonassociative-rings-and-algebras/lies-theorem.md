@@ -36,24 +36,17 @@ LieModule.exists_nontrivial_weightSpace_of_isSolvable.{u_1, u_2, u_3} (k : Type 
 
 ## Proof depends on
 
-- [Aleph numbers](../../../overview/logic-and-computation/set-theory/cardinals/aleph-numbers.md)
-- [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Characteristic polynomial](../../../overview/linear-algebra/endomorphism-polynomials/characteristic-polynomial.md)
-- [Complementary subspaces](../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
+- [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
+- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Eigenvalue](../../../overview/linear-algebra/structure-theory-of-endomorphisms/eigenvalue.md)
 - [Eigenvector](../../../overview/linear-algebra/structure-theory-of-endomorphisms/eigenvector.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Fundamental sequences](../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Hilbert basis theorem](../../../overview/general-algebra/polynomials-and-power-series/hilbert-basis-theorem.md)
-- [Matrix representation of a linear map](../../../overview/linear-algebra/matrices/matrix-representation-of-a-linear-map.md)
-- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Prime ideal](../../../overview/general-algebra/ideals-and-quotients/prime-ideal.md)
-- [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Subring](../../../overview/general-algebra/rings/subring.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [Well-ordering theorem](../../general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
+- [Ideal of a commutative ring](../../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
+- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
+- [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
+- [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
+- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Sources
 

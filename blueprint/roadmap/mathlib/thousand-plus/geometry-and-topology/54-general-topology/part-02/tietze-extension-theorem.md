@@ -28,12 +28,14 @@ BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding.{u_1, u_
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Completeness of spaces of bounded continuous functions](../../../../overview/analysis/normed-vector-spaces-banach-spaces/completeness-of-spaces-of-bounded-continuous-fun.md)
-- [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Urysohn's lemma](../../../../overview/topology/general-topology/part-02/urysohns-lemma.md)
+- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [List](../../../../overview/data-structures/list-like-structures/list.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

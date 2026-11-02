@@ -34,21 +34,8 @@ NNReal.hasSum_geometric {r : NNReal} (hr : r < 1) : HasSum (fun n => r ^ n) (1 -
 
 ## Proof depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-- [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Ball](../../overview/topology/metric-spaces/ball.md)
-- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Module](../../overview/linear-algebra/fundamentals/module.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

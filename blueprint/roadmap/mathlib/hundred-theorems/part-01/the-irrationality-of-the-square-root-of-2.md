@@ -22,23 +22,9 @@ irrational_sqrt_two : Irrational √2
 
 ## Proof depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-- [Ball](../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Closure](../../overview/topology/general-topology/part-01/closure.md)
 - [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Finite set](../../overview/data-structures/sets/finite-set.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring morphism](../../overview/general-algebra/rings/ring-morphism.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

@@ -35,26 +35,6 @@ MeasureTheory.TendstoInDistribution.continuous_comp.{u_1, u_2, u_3, u_5, u_6} {Î
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 - [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 
-## Proof depends on
-
-- [Cantorâ€™s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of inverse functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-inverse-functions.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
-- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
-- [Weak-* topology for dualities](../../../../overview/analysis/topological-vector-spaces/weak-topology-for-dualities.md)
-
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.TendstoInDistribution.continuous_comp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/ConvergenceInDistribution.html#MeasureTheory.TendstoInDistribution.continuous_comp)

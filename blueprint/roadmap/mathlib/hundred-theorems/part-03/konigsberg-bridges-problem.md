@@ -24,10 +24,8 @@ Konigsberg.not_isEulerian {u v : Konigsberg.Verts} (p : Konigsberg.graph.Walk u 
 
 ## Proof depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
-- [Integer](../../overview/general-algebra/numbers/integer.md)
 
 ## Sources
 

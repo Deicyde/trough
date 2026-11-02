@@ -30,7 +30,9 @@ exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless.{u_1, u_2, u_3} {E : Type 
 
 ## Proof depends on
 
-- [Cauchy-Lipschitz Theorem](../../../../undergraduate/multivariable-calculus/differential-equations/cauchy-lipschitz-theorem.md)
+- [Ball](../../../topology/metric-spaces/ball.md)
+- [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
+- [Differentiable function between normed vector spaces](../../../analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 
 ## Sources
 

@@ -33,15 +33,15 @@ second_derivative_symmetric.{u_1, u_2, u_3} {𝕜 : Type u_1} [NontriviallyNorme
 
 ## Proof depends on
 
-- [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Convex function](../../../overview/analysis/convexity/convex-function.md)
+- [Convex subsets](../../affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
-- [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
+- [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

@@ -33,8 +33,8 @@ Theorems100.quartic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d e : K) {
 
 ## Proof depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [List](../../overview/data-structures/list-like-structures/list.md)
 - [Local ring](../../overview/general-algebra/rings/local-ring.md)
 
 ## Sources

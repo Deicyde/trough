@@ -28,20 +28,8 @@ CategoryTheory.finrank_endomorphism_simple_eq_one.{v_1, u_1, u_2} {C : Type u_1}
 
 ## Proof depends on
 
-- [Aleph numbers](../../../../overview/logic-and-computation/set-theory/cardinals/aleph-numbers.md)
-- [Cayley-Hamilton theorem](../../../../overview/linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Fundamental sequences](../../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Hilbert basis theorem](../../../../overview/general-algebra/polynomials-and-power-series/hilbert-basis-theorem.md)
-- [Isomorphism](../../../../overview/general-algebra/category-theory/isomorphism.md)
-- [Isomorphism with $K^n$](../../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
+- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Local ring](../../../../overview/general-algebra/rings/local-ring.md)
-- [Polynomial in several indeterminates](../../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Roots of a polynomial](../../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
-- [Subring](../../../../overview/general-algebra/rings/subring.md)
-- [The Factor and Remainder Theorems](../../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
-- [The Fundamental Theorem of Arithmetic](../../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [Well-ordering theorem](../../../general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
 
 ## Sources
 

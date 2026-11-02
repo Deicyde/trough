@@ -36,11 +36,15 @@ ProbabilityTheory.strong_law_ae.{u_1, u_2} {Ω : Type u_1} {mΩ : MeasurableSpac
 
 ## Proof depends on
 
-- [Borel-Cantelli lemma (easy direction)](../../../undergraduate/probability-theory/definitions-of-a-probability-space/borel-cantelli-lemma-easy-direction.md)
 - [Chebyshev inequality](chebyshev-inequality.md)
+- [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
-- [Mean of product of independent random variables](../random-variables-and-their-laws/mean-of-product-of-independent-random-variables.md)
-- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
+- [Order topology](../../topology/topological-algebra/order-topology.md)
+- [Probability measure](../definitions-in-probability-theory/probability-measure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Topological module](../../topology/topological-algebra/topological-module.md)
+- [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

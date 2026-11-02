@@ -30,11 +30,6 @@ Finset.mem_powersetCard.{u_1} {α : Type u_1} {n : ℕ} {s t : Finset α} :
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 - [Set](../../overview/data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-- [Integer](../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Finset.card_powersetCard`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Finset/Powerset.html#Finset.card_powersetCard)

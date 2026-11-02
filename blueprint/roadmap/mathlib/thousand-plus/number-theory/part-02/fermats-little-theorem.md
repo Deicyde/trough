@@ -24,19 +24,9 @@ ZMod.pow_card_sub_one_eq_one {p : ℕ} [Fact (Nat.Prime p)] {a : ZMod p} (ha : a
 
 ## Proof depends on
 
-- [Bezout’s Theorem](../../../hundred-theorems/part-03/bezouts-theorem.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Group action](../../../overview/general-algebra/group-theory/part-01/group-action.md)
-- [Orbit](../../../undergraduate/group-theory/basic-definitions/orbit.md)
-- [Order of an element](../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Ring morphism](../../../overview/general-algebra/rings/ring-morphism.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Subgroup](../../../overview/general-algebra/group-theory/part-01/subgroup.md)
+- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

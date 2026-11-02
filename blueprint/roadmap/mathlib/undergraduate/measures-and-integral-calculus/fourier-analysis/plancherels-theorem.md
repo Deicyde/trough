@@ -25,6 +25,7 @@ SchwartzMap.integral_inner_fourier_fourier.{u_3, u_4} {V : Type u_3} [NormedAddC
 ## Proof depends on
 
 - [Fourier theorem](../../../thousand-plus/analysis/43-abstract-harmonic-analysis/fourier-theorem.md)
+- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
 
 ## Sources
 

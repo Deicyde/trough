@@ -24,8 +24,6 @@ isCompact_pi_infinite.{u_1, u_2} {ι : Type u_1} {X : ι → Type u_2}
 ## Proof depends on
 
 - [Limit of a map with respect to filters](../../../../overview/topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
-- [List](../../../../overview/data-structures/list-like-structures/list.md)
-- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

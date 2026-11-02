@@ -23,12 +23,6 @@ Polynomial.coeff_eq_esymm_roots_of_card.{u_1} {R : Type u_1} [CommRing R] [IsDom
 
 ## Proof depends on
 
-- [Coprime element](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
-- [Field of fractions of an integral domain](../../../overview/general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Localization](../../../overview/general-algebra/rings/localization.md)
-- [Prime numbers](../divisibility-in-integral-domains/prime-numbers.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
 - [Vieta's formulas](../../../thousand-plus/algebra/13-commutative-algebra/vietas-formulas.md)
 
 ## Sources

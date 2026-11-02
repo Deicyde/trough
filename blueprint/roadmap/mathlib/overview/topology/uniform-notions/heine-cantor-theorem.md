@@ -25,9 +25,7 @@ CompactSpace.uniformContinuous_of_continuous.{u_1, u_2} {α : Type u_1} {β : Ty
 
 ## Proof depends on
 
-- [Finite set](../../data-structures/sets/finite-set.md)
 - [Induced topology](../general-topology/part-01/induced-topology.md)
-- [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources
 

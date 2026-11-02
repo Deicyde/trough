@@ -29,9 +29,8 @@ LinearMap.continuous_of_isClosed_graph.{u_1, u_3, u_5} {𝕜 : Type u_1} [Nontri
 
 ## Proof depends on
 
-- [Banach open mapping theorem](../../../../overview/analysis/normed-vector-spaces-banach-spaces/banach-open-mapping-theorem.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 - [Range of a linear map](../../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Topology on a normed vector space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
 
 ## Sources
 

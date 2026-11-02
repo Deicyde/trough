@@ -61,20 +61,10 @@ Algebra.HasGoingDown.of_comap_localRingHom_surjective.{u_3, u_4} {R : Type u_3} 
 
 ## Proof depends on
 
-- [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

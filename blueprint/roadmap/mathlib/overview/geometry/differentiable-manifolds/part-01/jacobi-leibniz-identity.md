@@ -36,16 +36,10 @@ VectorField.leibniz_identity_mlieBracket.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1}
 
 ## Proof depends on
 
-- [(smooth) vector bundle](../../smooth-vector-and-fiber-bundles/smooth-vector-bundle.md)
-- [Affine function](../../affine-and-euclidean-geometry/affine-function.md)
-- [Algebra of endomorphisms of a vector space](../../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Convex function](../../../analysis/convexity/convex-function.md)
-- [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions (Analysis)](../../../analysis/differentiability/derivative-of-a-composition-of-functions.md)
-- [Differentiable functions](../../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Euclidean affine space](../../affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Product of manifolds](product-of-manifolds.md)
+- [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
+- [Closure](../../../topology/general-topology/part-01/closure.md)
+- [Cluster point](../../../topology/general-topology/part-01/cluster-point.md)
+- [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 
 ## Sources
 

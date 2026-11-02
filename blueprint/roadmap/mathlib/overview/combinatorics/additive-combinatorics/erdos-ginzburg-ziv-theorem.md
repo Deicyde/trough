@@ -26,10 +26,14 @@ ZMod.erdos_ginzburg_ziv.{u_1} {ι : Type u_1} {n : ℕ} {s : Finset ι} (a : ι 
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Chevalley–Warning theorem](../../../thousand-plus/algebra/12-field-theory-and-polynomials/chevalley-warning-theorem.md)
-- [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Euclid's' algorithm](../../general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
+- [Field](../../general-algebra/field-theory/field.md)
+- [Irreducible element](../../general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Linear map](../../linear-algebra/fundamentals/linear-map.md)
+- [Polynomial in several indeterminates](../../general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 
 ## Sources
 

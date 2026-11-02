@@ -28,15 +28,8 @@ continuous_tsum.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {F : Type u_3} [
 ## Proof depends on
 
 - [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

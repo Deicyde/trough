@@ -28,13 +28,9 @@ FirstOrder.Language.exists_elementaryEmbedding_card_eq.{u, v, w, w'} (L : FirstO
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Compactness theorem](compactness-theorem.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Ordinal](../set-theory/ordinals/ordinal.md)
 - [Substructure](substructure.md)
-- [Well-ordering theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
 
 ## Sources
 

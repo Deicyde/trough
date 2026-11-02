@@ -28,10 +28,12 @@ lp.completeSpace.{u_3, u_4} {α : Type u_3} {E : α → Type u_4} {p : ENNReal}
 
 ## Proof depends on
 
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Complete metric spaces](../topology-and-metric-spaces/complete-metric-spaces.md)
+- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
+- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

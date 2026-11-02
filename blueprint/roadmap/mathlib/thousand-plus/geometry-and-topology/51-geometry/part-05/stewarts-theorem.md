@@ -25,7 +25,6 @@ EuclideanGeometry.dist_sq_mul_dist_add_dist_sq_mul_dist.{u_1, u_2} {V : Type u_1
 
 ## Proof depends on
 
-- [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [The Law of Cosines](../../../../hundred-theorems/part-05/the-law-of-cosines.md)
 
 ## Sources

@@ -32,19 +32,8 @@ CategoryTheory.Abelian.freyd_mitchell.{v, u} (C : Type u) [CategoryTheory.Catego
 ## Proof depends on
 
 - [Adjunction](../../../overview/general-algebra/category-theory/adjunction.md)
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Comma category](../../../overview/general-algebra/category-theory/comma-category.md)
-- [Fundamental sequences](../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Monoidal category](../../../overview/general-algebra/category-theory/monoidal-category.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
-- [Well-ordering theorem](../../general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
 - [Yoneda embedding](../../../overview/general-algebra/category-theory/yoneda-embedding.md)
 
 ## Sources

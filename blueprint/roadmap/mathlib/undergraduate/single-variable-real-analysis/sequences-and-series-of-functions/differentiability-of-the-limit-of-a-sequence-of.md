@@ -34,25 +34,12 @@ hasFDerivAt_of_tendstoUniformly.{u_1, u_2, u_3, u_4} {ι : Type u_1} {l : Filter
 
 ## Proof depends on
 
-- [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Completeness of R](../topology-of-r/completeness-of-r.md)
-- [Convex function](../../../overview/analysis/convexity/convex-function.md)
-- [Derivative at a point](../differentiability/derivative-at-a-point.md)
+- [Ball](../../../overview/topology/metric-spaces/ball.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Convex subsets](../../affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [List](../../../overview/data-structures/list-like-structures/list.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

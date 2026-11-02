@@ -29,24 +29,8 @@ IntervalIntegrable.ae_hasDerivAt_integral.{u_1} {E : Type u_1} [NormedAddCommGro
 ## Proof depends on
 
 - [Affine space](../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Complementary subspaces](../../linear-algebra/fundamentals/complementary-subspaces.md)
-- [Determinant of endomorphisms](../../linear-algebra/multilinearity/determinant-of-endomorphisms.md)
-- [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Dimension theorem for vector spaces](../../../thousand-plus/algebra/15-linear-and-multilinear-algebra-matrix-theory/dimension-theorem-for-vector-spaces.md)
-- [Gaussian elimination](../../linear-algebra/matrices/gaussian-elimination.md)
-- [Giry monad](../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Lebesgue's decomposition theorem](../../../thousand-plus/geometry-and-topology/54-general-topology/part-01/lebesgues-decomposition-theorem.md)
-- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
-- [Orthogonal projection](../../../overview/analysis/hilbert-spaces/orthogonal-projection.md)
-- [Probability measure](../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Product of finitely many measures](../../../overview/analysis/measures-and-integral-calculus/part-02/product-of-finitely-many-measures.md)
-- [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Self-adjoint operator](../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Stieltjes measure](../../../overview/analysis/measures-and-integral-calculus/part-01/stieltjes-measure.md)
-- [Vitali covering theorem](../../../thousand-plus/analysis/28-measure-and-integration/part-02/vitali-covering-theorem.md)
+- [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources
 

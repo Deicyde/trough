@@ -69,18 +69,13 @@ isCompact_closure_of_isTightMeasureSet.{u_1} {E : Type u_1} [MeasurableSpace E] 
 
 ## Proof depends on
 
-- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
 - [Bochner integral](../../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Heine-Borel theorem (proper metric space version)](../../../../overview/topology/metric-spaces/heine-borel-theorem-proper-metric-space-version.md)
+- [Carathéodory's theorem (measure theory)](caratheodorys-theorem-measure-theory.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Urysohn's lemma](../../../../overview/topology/general-topology/part-02/urysohns-lemma.md)
-- [Weak-* topology for dualities](../../../../overview/analysis/topological-vector-spaces/weak-topology-for-dualities.md)
+- [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

@@ -24,12 +24,10 @@ BoundedContinuousFunction.instCompleteSpace.{u, v} {α : Type u} {β : Type v} [
 
 ## Proof depends on
 
-- [Closure](../../topology/general-topology/part-01/closure.md)
 - [Complete metric spaces](../../../undergraduate/topology/topology-and-metric-spaces/complete-metric-spaces.md)
-- [Limits of sequences](../../../undergraduate/topology/topology-and-metric-spaces/limits-of-sequences.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
+- [Order topology](../../topology/topological-algebra/order-topology.md)
 - [Uniform convergence](../../topology/uniform-notions/uniform-convergence.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

@@ -31,7 +31,8 @@ Pell.matiyasevic {a k x y : ℕ} :
 
 ## Proof depends on
 
-- [Bezout’s Theorem](../../../hundred-theorems/part-03/bezouts-theorem.md)
+- [Euclid's' algorithm](../divisibility-in-integral-domains/euclids-algorithm.md)
+- [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
 - [Solutions to Pell’s Equation](../../../hundred-theorems/part-02/solutions-to-pells-equation.md)
 
 ## Sources

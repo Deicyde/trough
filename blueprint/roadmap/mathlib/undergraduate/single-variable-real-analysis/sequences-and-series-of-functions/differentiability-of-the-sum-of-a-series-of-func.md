@@ -34,30 +34,12 @@ differentiable_tsum.{u_1, u_2, u_3, u_4} {α : Type u_1} {𝕜 : Type u_2} {E : 
 
 ## Proof depends on
 
-- [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
+- [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Connected components](../../topology/topology-and-metric-spaces/connected-components.md)
 - [Connectedness](../../../overview/topology/general-topology/part-01/connectedness.md)
-- [Convex function](../../../overview/analysis/convexity/convex-function.md)
-- [Derivative at a point](../differentiability/derivative-at-a-point.md)
-- [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Existence of bases](../../linear-algebra/fundamentals/existence-of-bases.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Kernel of a linear map](../../linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
-- [Path connectedness](../../topology/topology-and-metric-spaces/path-connectedness.md)
-- [Product of vector spaces](../../linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 - [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [Sum of subspaces](../../linear-algebra/fundamentals/sum-of-subspaces.md)
-- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Sources
 

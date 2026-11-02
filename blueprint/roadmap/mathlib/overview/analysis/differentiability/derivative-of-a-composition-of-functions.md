@@ -26,18 +26,7 @@ HasFDerivAt.comp.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNormedField
 
 ## Proof depends on
 
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological ring](../../topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
 
 ## Sources
 

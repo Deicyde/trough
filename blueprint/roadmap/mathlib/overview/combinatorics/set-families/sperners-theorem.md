@@ -25,9 +25,8 @@ IsAntichain.sperner.{u_2} {α : Type u_2} [Fintype α] {𝒜 : Finset (Finset α
 
 ## Proof depends on
 
-- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [LYM inequality](lym-inequality.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Ring](../../general-algebra/rings/ring.md)
 
 ## Sources
 

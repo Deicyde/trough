@@ -41,18 +41,11 @@ hasSum_fourier_series_L2 {T : ℝ} [hT : Fact (0 < T)]
 
 ## Proof depends on
 
-- [Cauchy-Schwarz inequality](../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
 - [Completeness of $L^2$](../../undergraduate/topology/hilbert-spaces/completeness-of-l-2-2.md)
-- [Completeness of $l^2$](../../undergraduate/topology/hilbert-spaces/completeness-of-l-2.md)
 - [Example, the Hilbert basis of trigonometric polynomials](../../undergraduate/topology/hilbert-spaces/example-the-hilbert-basis-of-trigonometric-polyn.md)
-- [Fatou's lemma](../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Inner product space $l^2$](../../undergraduate/topology/hilbert-spaces/inner-product-space-l-2.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Finite-dimensionality](../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Probability measure](../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Product of sigma-algebras](../../undergraduate/measures-and-integral-calculus/measure-theory/product-of-sigma-algebras.md)
-- [Self-adjoint operator](../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Urysohn's lemma](../../overview/topology/general-topology/part-02/urysohns-lemma.md)
+- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
 - [Weierstrass trigonometric approximation theorem](../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/weierstrass-trigonometric-approximation-theorem.md)
 
 ## Sources

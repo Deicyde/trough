@@ -24,17 +24,9 @@ Hindman.FP_partition_regular.{u_1} {M : Type u_1} [Semigroup M] (a : Stream' M) 
 
 ## Proof depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
-- [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Integer](../../../../overview/general-algebra/numbers/integer.md)
-- [Limit of a map with respect to filters](../../../../overview/topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
-- [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
 
 ## Sources
 

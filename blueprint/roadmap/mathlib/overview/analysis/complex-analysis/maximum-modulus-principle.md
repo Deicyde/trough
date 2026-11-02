@@ -30,7 +30,12 @@ Complex.eventually_eq_of_isLocalMax_norm.{u, v} {E : Type u} [NormedAddCommGroup
 
 ## Proof depends on
 
+- [Affine function](../../geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Cauchy integral formula](cauchy-integral-formula.md)
+- [Completion of an abelian topological group](../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
+- [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
+- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

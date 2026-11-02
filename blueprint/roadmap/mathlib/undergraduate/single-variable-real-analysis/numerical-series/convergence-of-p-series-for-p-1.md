@@ -24,25 +24,12 @@ Real.summable_one_div_nat_rpow {p : ℝ} : (Summable fun n => 1 / ↑n ^ p) ↔ 
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Completeness of R](../topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Intermediate value theorem](../../../overview/topology/topological-algebra/intermediate-value-theorem.md)
-- [Limit point](../sequences-of-real-numbers/limit-point.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
+- [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Metric structure](../topology-of-r/metric-structure.md)
-- [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Module](../../../overview/linear-algebra/fundamentals/module.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources
 

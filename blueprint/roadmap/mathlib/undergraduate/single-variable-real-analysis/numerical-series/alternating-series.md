@@ -26,15 +26,9 @@ Antitone.tendsto_alternating_series_of_tendsto_zero {f : ℕ → ℝ} (hfa : Ant
 ## Proof depends on
 
 - [Completeness of R](../topology-of-r/completeness-of-r.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Metric structure](../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

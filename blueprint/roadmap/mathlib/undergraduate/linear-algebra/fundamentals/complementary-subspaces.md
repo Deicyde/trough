@@ -23,9 +23,7 @@ Submodule.exists_isCompl.{u_3, u_4} {K : Type u_3} {V : Type u_4} [DivisionRing 
 
 ## Proof depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Existence of bases](existence-of-bases.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Kernel of a linear map](kernel-of-a-linear-map.md)
 
 ## Sources

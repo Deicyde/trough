@@ -36,7 +36,12 @@ Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip.{u_1} 
 
 ## Proof depends on
 
-- [Phragmen-Lindelöf principle](../../../../overview/analysis/complex-analysis/phragmen-lindelof-principle.md)
+- [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Differentiable functions](../../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

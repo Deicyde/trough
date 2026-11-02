@@ -38,19 +38,9 @@ ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub.{u_1, u_2} {Ω : Ty
 
 ## Proof depends on
 
-- [Change of variables to polar co-ordinates](../../../undergraduate/measures-and-integral-calculus/integration/change-of-variables-to-polar-co-ordinates.md)
-- [Connected components](../../../undergraduate/topology/topology-and-metric-spaces/connected-components.md)
-- [Connectedness](../../topology/general-topology/part-01/connectedness.md)
-- [Continuity of the sum of a series of functions](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/continuity-of-the-sum-of-a-series-of-functions.md)
+- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Continuous mapping theorem](../../../thousand-plus/probability-and-statistics/60-probability-theory-and-stochastic-processes/part-01/continuous-mapping-theorem.md)
-- [Determinant of vectors](../../../undergraduate/linear-algebra/multilinearity/determinant-of-vectors.md)
-- [Divergence theorem](../../analysis/measures-and-integral-calculus/part-02/divergence-theorem.md)
-- [Higher-order derivatives of functions](../../../undergraduate/single-variable-real-analysis/differentiability/higher-order-derivatives-of-functions.md)
-- [Independent sigma-algebras](../definitions-in-probability-theory/independent-sigma-algebras.md)
 - [Lévy continuity theorem](../../../thousand-plus/probability-and-statistics/60-probability-theory-and-stochastic-processes/part-02/levy-continuity-theorem.md)
-- [Orientation of a $\R$-vector space](../../../undergraduate/linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
-- [Path connectedness](../../../undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
-- [Unitary group](../../../undergraduate/group-theory/classical-automorphism-groups/unitary-group.md)
 
 ## Sources
 

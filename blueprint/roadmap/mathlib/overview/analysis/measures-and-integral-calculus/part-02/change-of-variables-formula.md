@@ -33,27 +33,18 @@ MeasureTheory.integral_image_eq_integral_abs_det_fderiv_smul.{u_1, u_2} {E : Typ
 
 ## Proof depends on
 
-- [Complementary subspaces](../../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Dimension theorem for vector spaces](../../../../thousand-plus/algebra/15-linear-and-multilinear-algebra-matrix-theory/dimension-theorem-for-vector-spaces.md)
+- [Cardinal](../../../logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Equivalence of norms in finite dimension](../../normed-vector-spaces-banach-spaces/equivalence-of-norms-in-finite-dimension.md)
 - [Euclidean affine space](../../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Extreme value theorem](../../../topology/topological-algebra/extreme-value-theorem.md)
-- [Finite-dimensional normed spaces over complete normed fields are complete](../../normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
-- [Gaussian elimination](../../../../undergraduate/linear-algebra/matrices/gaussian-elimination.md)
-- [Giry monad](../part-01/giry-monad.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
+- [Euclidean domain](../../../general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Invertibility](../../../linear-algebra/matrices/invertibility.md)
-- [Lebesgue measure (Measures and integral calculus)](../part-01/lebesgue-measure.md)
 - [Lebesgue's density theorem](../../../../thousand-plus/geometry-and-topology/54-general-topology/part-01/lebesgues-density-theorem.md)
-- [Maximal ideal](../../../general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
-- [Orthogonal projection](../../hilbert-spaces/orthogonal-projection.md)
-- [Probability measure](../../../probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Product of finitely many measures](product-of-finitely-many-measures.md)
-- [Quotient ring](../../../general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Self-adjoint operator](../../hilbert-spaces/self-adjoint-operator.md)
-- [Stieltjes measure](../part-01/stieltjes-measure.md)
+- [Linear independence](../../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
+- [Order topology](../../../topology/topological-algebra/order-topology.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Topological ring](../../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

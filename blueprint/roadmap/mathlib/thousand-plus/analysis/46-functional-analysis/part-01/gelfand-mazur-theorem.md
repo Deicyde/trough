@@ -58,18 +58,13 @@ The first two are over the complex numbers (with different assumptions), the thi
 
 ## Proof depends on
 
-- [$K\[X\]$ is Euclidean](../../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
 - [Algebraic extension](../../../../overview/general-algebra/field-theory/algebraic-extension.md)
-- [Cayley-Hamilton theorem](../../../../overview/linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Connected components](../../../../undergraduate/topology/topology-and-metric-spaces/connected-components.md)
+- [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Connectedness](../../../../overview/topology/general-topology/part-01/connectedness.md)
-- [Field of fractions of an integral domain](../../../../overview/general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
-- [Fundamental theorem of algebra](../../../../overview/analysis/complex-analysis/fundamental-theorem-of-algebra.md)
-- [Localization](../../../../overview/general-algebra/rings/localization.md)
-- [Minimal polynomial](../../../../overview/linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
-- [Path connectedness](../../../../undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
-- [Rupture field](../../../../overview/general-algebra/field-theory/rupture-field.md)
-- [Subfield](../../../../overview/general-algebra/field-theory/subfield.md)
+- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

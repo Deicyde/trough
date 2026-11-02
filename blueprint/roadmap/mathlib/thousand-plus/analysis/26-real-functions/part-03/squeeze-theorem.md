@@ -26,8 +26,7 @@ tendsto_of_tendsto_of_tendsto_of_le_of_le'.{u, v} {α : Type u} {β : Type v}
 
 ## Proof depends on
 
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
-- [Integer](../../../../overview/general-algebra/numbers/integer.md)
+- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

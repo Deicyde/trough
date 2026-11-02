@@ -35,10 +35,8 @@ BaireSpace.of_t2Space_locallyCompactSpace.{u_1} {X : Type u_1} [TopologicalSpace
 ## Proof depends on
 
 - [Cauchy sequence](../uniform-notions/cauchy-sequence.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Open map](../general-topology/part-01/open-map.md)
-- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [Topological module](../topological-algebra/topological-module.md)
+- [Induced topology](../general-topology/part-01/induced-topology.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

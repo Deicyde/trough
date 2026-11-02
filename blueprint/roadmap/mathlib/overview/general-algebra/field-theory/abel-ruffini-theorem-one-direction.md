@@ -24,35 +24,11 @@ isSolvable_gal_minpoly.{u_1, u_2} {F : Type u_1} {E : Type u_2} [Field F] [Field
 
 ## Proof depends on
 
-- [$A\[X\]$ has gcd and lcm if $A$ does](../polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
-- [$K\[X\]$ is Euclidean](../polynomials-and-power-series/k-x-is-euclidean.md)
-- [Aleph numbers](../../logic-and-computation/set-theory/cardinals/aleph-numbers.md)
 - [Algebraic extension](algebraic-extension.md)
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Cayley-Hamilton theorem](../../linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Characteristic p](characteristic-p.md)
-- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
-- [Coprime element](../divisibility-in-integral-domains/coprime-element.md)
-- [Cyclic group](../group-theory/part-01/cyclic-group.md)
 - [Direct product of groups](../../../undergraduate/group-theory/basic-definitions/direct-product-of-groups.md)
-- [Euler's totient function ($\varphi$)](../divisibility-in-integral-domains/eulers-totient-function-varphi.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Field of fractions of an integral domain](field-of-fractions-of-an-integral-domain.md)
-- [Finite-dimensionality](../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Fundamental sequences](../../logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Local ring](../rings/local-ring.md)
-- [Localization](../rings/localization.md)
-- [Noetherian ring](../rings/noetherian-ring.md)
-- [Order of an element](../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Quotient group](../group-theory/part-01/quotient-group.md)
-- [Quotient space (Basic definitions)](../../../undergraduate/group-theory/basic-definitions/quotient-space.md)
+- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Roots of a polynomial](../polynomials-and-power-series/roots-of-a-polynomial.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [Well-ordering theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
 
 ## Sources
 

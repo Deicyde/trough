@@ -57,8 +57,13 @@ MeasureTheory.tendsto_lintegral_nn_filter_of_le_const.{u_1, u_2} {Ω : Type u_1}
 
 ## Proof depends on
 
-- [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
+- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
+- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
+- [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
+- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 
 ## Sources
 

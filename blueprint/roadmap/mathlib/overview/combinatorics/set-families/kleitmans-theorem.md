@@ -26,9 +26,8 @@ Finset.card_biUnion_le_of_intersecting.{u_1, u_2} {ι : Type u_1} {α : Type u_2
 
 ## Proof depends on
 
-- [Harris-Kleitman inequality](harris-kleitman-inequality.md)
 - [Maximum size of an intersecting family](maximum-size-of-an-intersecting-family.md)
-- [The Number of Subsets of a Set](../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
+- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

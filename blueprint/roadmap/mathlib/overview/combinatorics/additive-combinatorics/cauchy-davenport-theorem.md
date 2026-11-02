@@ -25,16 +25,11 @@ ZMod.cauchy_davenport {p : ℕ} (hp : Nat.Prime p) {s t : Finset (ZMod p)} (hs :
 
 ## Proof depends on
 
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Characteristic of a ring](../../general-algebra/field-theory/characteristic-of-a-ring.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Periodic points](../../dynamics/general-theory/periodic-points.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Ring morphism](../../general-algebra/rings/ring-morphism.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 
 ## Sources
 

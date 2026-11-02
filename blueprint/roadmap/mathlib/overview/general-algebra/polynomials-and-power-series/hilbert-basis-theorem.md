@@ -23,14 +23,9 @@ Polynomial.isNoetherianRing.{u} {R : Type u} [CommRing R] [inst : IsNoetherianRi
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Basis](../../linear-algebra/fundamentals/basis.md)
 - [Characteristic zero](../field-theory/characteristic-zero.md)
 - [Ideal of a commutative ring](../ideals-and-quotients/ideal-of-a-commutative-ring.md)
 - [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources
 

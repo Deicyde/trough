@@ -32,26 +32,8 @@ EuclideanSpace.instIsManifoldSphere.{u_1} {E : Type u_1} [NormedAddCommGroup E]
 ## Proof depends on
 
 - [$C^k$ function](../../../analysis/differentiability/c-k-function.md)
-- [Absolutely convergent series in Banach spaces](../../../analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Algebra of endomorphisms of a vector space](../../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Cauchy-Schwarz inequality](../../../analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Characteristic p](../../../general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../topology/general-topology/part-01/closed-map.md)
-- [Complementary subspaces](../../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Completion of an abelian topological group](../../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Dual of a normed space](../../../analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
-- [Euclidean affine space](../../affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Quotient space (Fundamentals)](../../../linear-algebra/fundamentals/quotient-space.md)
-- [Self-adjoint operator](../../../analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Sequential space](../../../topology/general-topology/part-01/sequential-space.md)
-- [Sum of a Geometric Series](../../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [The Number of Subsets of a Set](../../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
+- [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
+- [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 
 ## Sources
 

@@ -23,13 +23,9 @@ ZMod.wilsons_lemma (p : ℕ) [Fact (Nat.Prime p)] : ↑(p - 1).factorial = -1
 
 ## Proof depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-- [Bezout’s Theorem](bezouts-theorem.md)
-- [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Group](../../overview/general-algebra/group-theory/part-01/group.md)
-- [Ring morphism](../../overview/general-algebra/rings/ring-morphism.md)
+- [Group morphism](../../overview/general-algebra/group-theory/part-01/group-morphism.md)
 - [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources

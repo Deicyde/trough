@@ -26,14 +26,11 @@ AnalyticAt.eventually_eq_zero_or_eventually_ne_zero.{u_1, u_2} {𝕜 : Type u_1}
 ## Proof depends on
 
 - [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Continuity (Complex-valued series)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/continuity.md)
-- [Derivative at a point](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Differentiable function between normed vector spaces](../differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
-- [Limit point](../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
+- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Norm of a continuous linear map](../normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

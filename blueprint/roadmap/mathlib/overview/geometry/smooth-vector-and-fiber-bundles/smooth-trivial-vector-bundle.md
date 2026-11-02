@@ -24,27 +24,7 @@ Bundle.Trivial.contMDiffVectorBundle.{u_1, u_2, u_3, u_6, u_7} {n : WithTop â„•â
 
 ## Proof depends on
 
-- [$C^k$ function](../../analysis/differentiability/c-k-function.md)
-- [Absolutely convergent series in Banach spaces](../../analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
-- [Completion of an abelian topological group](../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Euclidean affine space](../affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Limit point](../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Sequential space](../../topology/general-topology/part-01/sequential-space.md)
 - [Smooth map between manifolds](../differentiable-manifolds/part-01/smooth-map-between-manifolds.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
-- [The Number of Subsets of a Set](../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

@@ -33,7 +33,6 @@ Polynomial.mod_X_sub_C_eq_C_eval.{u} {R : Type u} [Field R] (p : Polynomial R) (
 ## Proof depends on
 
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

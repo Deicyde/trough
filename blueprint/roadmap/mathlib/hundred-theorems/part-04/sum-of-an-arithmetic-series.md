@@ -21,7 +21,6 @@ Finset.sum_range_id (n : ℕ) : ∑ i ∈ Finset.range n, i = n * (n - 1) / 2
 
 ## Proof depends on
 
-- [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources

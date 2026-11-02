@@ -27,16 +27,9 @@ riesz_extension.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.Module ℝ E] (s :
 
 ## Proof depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
-- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
-- [Group](../../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Invertible elements](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Sum of subspaces](../../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

@@ -27,15 +27,8 @@ MonoidAlgebra.Submodule.exists_isCompl.{u_1, u_2, u_3} {k : Type u_1} [Field k] 
 
 ## Proof depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Existence of bases](../../linear-algebra/fundamentals/existence-of-bases.md)
 - [Kernel of a linear map](../../linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 
 ## Sources
 

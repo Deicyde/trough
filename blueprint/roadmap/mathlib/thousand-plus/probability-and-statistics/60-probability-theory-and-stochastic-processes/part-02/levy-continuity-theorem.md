@@ -32,26 +32,14 @@ MeasureTheory.ProbabilityMeasure.tendsto_iff_tendsto_charFun.{u_1} {E : Type u_1
 
 ## Proof depends on
 
-- [$C^k$ function](../../../../overview/analysis/differentiability/c-k-function.md)
-- [Absolutely convergent series in Banach spaces](../../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Bounded convergence theorem](../../../analysis/28-measure-and-integration/part-01/bounded-convergence-theorem.md)
-- [Cauchy-Schwarz inequality](../../../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Change of variable](../../../../undergraduate/single-variable-real-analysis/integration/change-of-variable.md)
-- [Completion of an abelian topological group](../../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Derivative of a composition of functions (Analysis)](../../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
-- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
-- [Differentiable functions](../../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Dominated convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/dominated-convergence-theorem.md)
-- [Dual vector space](../../../../overview/linear-algebra/duality/dual-vector-space.md)
-- [Fubini's theorem](../../../../overview/analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
-- [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Matrix exponential](../../../../undergraduate/linear-algebra/exponential/matrix-exponential.md)
+- [Group](../../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Limits of sequences](../../../../undergraduate/topology/topology-and-metric-spaces/limits-of-sequences.md)
+- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Prokhorov's theorem](../../../analysis/28-measure-and-integration/part-01/prokhorovs-theorem.md)
-- [Sequential space](../../../../overview/topology/general-topology/part-01/sequential-space.md)
-- [Stone-Weierstrass theorem](../../../../overview/topology/general-topology/part-02/stone-weierstrass-theorem.md)
-- [Sum of a Geometric Series](../../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [The Number of Subsets of a Set](../../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)
+- [Squeeze theorem](../../../analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Sources
 

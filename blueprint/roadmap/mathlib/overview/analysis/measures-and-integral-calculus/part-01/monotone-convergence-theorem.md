@@ -25,25 +25,8 @@ MeasureTheory.lintegral_iInf_ae.{u_1} {α : Type u_1} [MeasurableSpace α]
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](borel-sigma-algebra.md)
-- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Cardinal](../../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Closure](../../../topology/general-topology/part-01/closure.md)
-- [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of inverse functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-inverse-functions.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
-- [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Linear map](../../../linear-algebra/fundamentals/linear-map.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Open map](../../../topology/general-topology/part-01/open-map.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Topological module](../../../topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../topology/topological-algebra/topological-ring.md)
-- [Uniformly continuous function](../../../topology/uniform-notions/uniformly-continuous-function.md)
+- [Order topology](../../../topology/topological-algebra/order-topology.md)
 
 ## Sources
 

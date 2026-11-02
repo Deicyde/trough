@@ -23,20 +23,13 @@ Nat.Partition.card_restricted_eq_card_countRestricted (n : ℕ) {m : ℕ} (hm : 
 
 ## Proof depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
-- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Power series](../../../overview/general-algebra/polynomials-and-power-series/power-series.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)

@@ -28,10 +28,6 @@ Submodule.isPrimary_decomposition_pairwise_ne_radical.{u_1, u_2} {R : Type u_1} 
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
-## Proof depends on
-
-- [Integer](../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Submodule.isPrimary_decomposition_pairwise_ne_radical`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Lasker.html#Submodule.isPrimary_decomposition_pairwise_ne_radical)

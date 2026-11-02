@@ -28,17 +28,8 @@ Theorems100.«82».cannot_cube_a_cube {n : ℕ} :
 
 ## Proof depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Finite set](../../overview/data-structures/sets/finite-set.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
-- [Group morphism](../../overview/general-algebra/group-theory/part-01/group-morphism.md)
-- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

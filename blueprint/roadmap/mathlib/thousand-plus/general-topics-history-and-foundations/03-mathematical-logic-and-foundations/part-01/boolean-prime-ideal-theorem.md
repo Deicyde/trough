@@ -22,11 +22,6 @@ This is the prime ideal separation theorem for (bounded) distributive lattices, 
 
 - [Set](../../../../overview/data-structures/sets/set.md)
 
-## Proof depends on
-
-- [List](../../../../overview/data-structures/list-like-structures/list.md)
-- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
-
 ## Sources
 
 - [Mathlib documentation: `DistribLattice.prime_ideal_of_disjoint_filter_ideal`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/PrimeSeparator.html#DistribLattice.prime_ideal_of_disjoint_filter_ideal)

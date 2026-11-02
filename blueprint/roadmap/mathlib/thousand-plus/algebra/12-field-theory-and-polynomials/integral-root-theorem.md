@@ -28,7 +28,6 @@ isInteger_of_is_root_of_monic.{u_1, u_2} {A : Type u_1} {K : Type u_2} [CommRing
 
 ## Proof depends on
 
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Rational root theorem](rational-root-theorem.md)
 
 ## Sources

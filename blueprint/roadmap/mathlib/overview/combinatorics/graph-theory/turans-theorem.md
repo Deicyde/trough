@@ -26,8 +26,8 @@ SimpleGraph.isTuranMaximal_iff_nonempty_iso_turanGraph.{u_1} {V : Type u_1} [Fin
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Finite](../pigeonhole-principles/finite.md)
+- [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources
 

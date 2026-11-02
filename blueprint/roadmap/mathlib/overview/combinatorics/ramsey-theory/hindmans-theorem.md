@@ -24,17 +24,9 @@ Hindman.FS_partition_regular.{u_1} {M : Type u_1} [AddSemigroup M] (a : Stream' 
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
-- [Closure](../../topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
-- [Finite set](../../data-structures/sets/finite-set.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
-- [Integer](../../general-algebra/numbers/integer.md)
-- [Limit of a map with respect to filters](../../topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
-- [Limit point](../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
 
 ## Sources
 

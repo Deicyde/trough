@@ -29,9 +29,13 @@ ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints.{u_1} {X :
 
 ## Proof depends on
 
-- [Extreme value theorem](../../topological-algebra/extreme-value-theorem.md)
+- [Ball](../../metric-spaces/ball.md)
+- [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Linear map](../../../linear-algebra/fundamentals/linear-map.md)
+- [Order topology](../../topological-algebra/order-topology.md)
+- [Polynomial functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Subring](../../../general-algebra/rings/subring.md)
-- [Weierstrass polynomial approximation theorem](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/weierstrass-polynomial-approximation-theorem.md)
 
 ## Sources
 

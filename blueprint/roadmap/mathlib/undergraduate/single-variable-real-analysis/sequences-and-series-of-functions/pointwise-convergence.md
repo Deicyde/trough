@@ -22,11 +22,6 @@ tendsto_pi_nhds.{v, u_2, u_3} {Y : Type v} {ι : Type u_2} {A : ι → Type u_3}
 - [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Limit of a map with respect to filters](../../../overview/topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
 
-## Proof depends on
-
-- [List](../../../overview/data-structures/list-like-structures/list.md)
-- [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
-
 ## Sources
 
 - [Mathlib documentation: `tendsto_pi_nhds`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Constructions.html#tendsto_pi_nhds)

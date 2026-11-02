@@ -36,25 +36,13 @@ exists_ratio_deriv_eq_ratio_slope (f : ℝ → ℝ) {a b : ℝ} (hab : a < b)
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Closure](../../overview/topology/general-topology/part-01/closure.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Derivative at a point](../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Differentiable function between normed vector spaces](../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Dual of a normed space](../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
-- [Extreme value theorem](../../overview/topology/topological-algebra/extreme-value-theorem.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Norm of a continuous linear map](../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
+- [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Open map](../../overview/topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../part-05/the-triangle-inequality.md)
+- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

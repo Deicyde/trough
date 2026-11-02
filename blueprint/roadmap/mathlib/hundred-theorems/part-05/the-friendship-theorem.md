@@ -30,28 +30,12 @@ Theorems100.friendship_theorem.{u} {V : Type u} [Fintype V] {G : SimpleGraph V}
 ## Proof depends on
 
 - [Adjacency matrix](../../overview/combinatorics/graph-theory/adjacency-matrix.md)
-- [Algebra of endomorphisms of a vector space](../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-- [Bezout’s Theorem](../part-03/bezouts-theorem.md)
-- [Cantor’s Theorem](../part-04/cantors-theorem.md)
-- [Cardinal](../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Characteristic polynomial](../../overview/linear-algebra/endomorphism-polynomials/characteristic-polynomial.md)
-- [Congruence in $\Z$](../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
-- [Existence of bases](../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
+- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Euclid's' algorithm](../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
 - [Field](../../overview/general-algebra/field-theory/field.md)
-- [Frobenius morphism](../../overview/general-algebra/field-theory/frobenius-morphism.md)
-- [Isomorphism with $K^n$](../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
-- [Kernel of a linear map](../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Local ring](../../overview/general-algebra/rings/local-ring.md)
-- [Orbit](../../undergraduate/group-theory/basic-definitions/orbit.md)
-- [Order of an element](../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
+- [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
-- [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Schroeder-Bernstein Theorem](../part-02/schroeder-bernstein-theorem.md)
-- [Subgroup](../../overview/general-algebra/group-theory/part-01/subgroup.md)
-- [Sum of subspaces](../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
-- [Tensor product of algebras](../../overview/general-algebra/algebras-over-a-ring/tensor-product-of-algebras.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

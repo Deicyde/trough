@@ -24,10 +24,6 @@ FirstOrder.Language.Ultraproduct.sentence_realize.{u, v, u_1, u_2} {α : Type u_
 - [First-order formula](../../../../overview/logic-and-computation/model-theory/first-order-formula.md)
 - [First-order structure](../../../../overview/logic-and-computation/model-theory/first-order-structure.md)
 
-## Proof depends on
-
-- [Integer](../../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `FirstOrder.Language.Ultraproduct.sentence_realize`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/Ultraproducts.html#FirstOrder.Language.Ultraproduct.sentence_realize)

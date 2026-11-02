@@ -24,12 +24,6 @@ LinearMap.rank_range_add_rank_ker.{u, u_1} {R : Type u_1} {M M₁ : Type u} [Rin
 - [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 
-## Proof depends on
-
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
-
 ## Sources
 
 - [Mathlib documentation: `LinearMap.rank_range_add_rank_ker`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Dimension/RankNullity.html#LinearMap.rank_range_add_rank_ker)

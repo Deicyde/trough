@@ -22,7 +22,7 @@ Complex.isAlgClosed : IsAlgClosed ℂ
 ## Proof depends on
 
 - [$\C$ is algebraically closed](../../general-algebra/field-theory/c-is-algebraically-closed.md)
-- [$A\[X\]$ has gcd and lcm if $A$ does](../../general-algebra/polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
+- [Irreducible element](../../general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 
 ## Sources
 

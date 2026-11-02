@@ -26,9 +26,9 @@ corners_theorem_nat {n : ℕ} {ε : ℝ} (hε : 0 < ε) (hn : cornersTheoremBoun
 ## Proof depends on
 
 - [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Freiman homomorphisms](freiman-homomorphisms.md)
-- [Regularity lemma](../graph-theory/regularity-lemma.md)
-- [Triangle counting lemma](../graph-theory/triangle-counting-lemma.md)
+- [Simple graph](../graph-theory/simple-graph.md)
 
 ## Sources
 

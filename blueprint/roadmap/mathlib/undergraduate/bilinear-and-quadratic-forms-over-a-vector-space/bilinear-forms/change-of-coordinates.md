@@ -26,10 +26,6 @@ LinearMap.BilinForm.toMatrix_comp.{u_1, u_2, u_5, u_6, u_7} {R₁ : Type u_1} {M
 - [Matrix representation](../../../overview/linear-algebra/bilinear-and-quadratic-forms/matrix-representation.md)
 - [Matrix representation of a linear map](../../../overview/linear-algebra/matrices/matrix-representation-of-a-linear-map.md)
 
-## Proof depends on
-
-- [Integer](../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `LinearMap.BilinForm.toMatrix_comp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/BilinearForm.html#LinearMap.BilinForm.toMatrix_comp)

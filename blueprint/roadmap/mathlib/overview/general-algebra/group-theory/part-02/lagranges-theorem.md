@@ -25,13 +25,8 @@ Subgroup.card_subgroup_dvd_card.{u_1} {α : Type u_1} [Group α] (s : Subgroup �
 
 ## Proof depends on
 
-- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Characteristic zero](../../field-theory/characteristic-zero.md)
-- [Finite set](../../../data-structures/sets/finite-set.md)
 - [Group action](../part-01/group-action.md)
 - [Orbit](../../../../undergraduate/group-theory/basic-definitions/orbit.md)
-- [Ordered ring](../../rings/ordered-ring.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 
 ## Sources
 

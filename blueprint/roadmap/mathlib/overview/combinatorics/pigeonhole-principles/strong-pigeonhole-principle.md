@@ -29,10 +29,6 @@ Fintype.exists_lt_card_fiber_of_mul_lt_card.{u, v} {α : Type u} {β : Type v} [
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Integer](../../general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Fintype.exists_lt_card_fiber_of_mul_lt_card`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Pigeonhole.html#Fintype.exists_lt_card_fiber_of_mul_lt_card)

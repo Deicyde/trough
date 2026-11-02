@@ -28,17 +28,6 @@ MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto.{u_1, u_2} 
 - [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
 
-## Proof depends on
-
-- [Approximation by step functions](../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
-- [Fatou's lemma](../../analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Weak-* topology for dualities](../../analysis/topological-vector-spaces/weak-topology-for-dualities.md)
-
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/ProbabilityMeasure.html#MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto)

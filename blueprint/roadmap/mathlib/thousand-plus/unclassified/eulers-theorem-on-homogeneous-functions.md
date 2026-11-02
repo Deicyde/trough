@@ -60,22 +60,6 @@ The converse stated in the English Wikipedia article is not yet formalized.
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Closure](../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Generating sets](../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Norm of a continuous linear map](../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Open map](../../overview/topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

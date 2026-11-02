@@ -27,15 +27,8 @@ Monotone.tendstoLocallyUniformly_of_forall_tendsto.{u_1, u_2, u_3} {ι : Type u_
 
 ## Proof depends on
 
-- [Ball](../../../../overview/topology/metric-spaces/ball.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Ring morphism](../../../../overview/general-algebra/rings/ring-morphism.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

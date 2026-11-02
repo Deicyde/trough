@@ -35,10 +35,6 @@ EuclideanDomain.dvd_gcd.{u} {R : Type u} [EuclideanDomain R] [DecidableEq R] {a 
 
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
 
-## Proof depends on
-
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-
 ## Sources
 
 - [Mathlib documentation: `EuclideanDomain.gcd`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Defs.html#EuclideanDomain.gcd)

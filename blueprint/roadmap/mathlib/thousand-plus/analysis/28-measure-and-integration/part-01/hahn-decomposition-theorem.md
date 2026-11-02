@@ -32,16 +32,12 @@ MeasureTheory.SignedMeasure.exists_isCompl_positive_negative.{u_1} {α : Type u_
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Module](../../../../overview/linear-algebra/fundamentals/module.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

@@ -26,11 +26,12 @@ LinearIsometryEquiv.reflections_generate.{u_3} {F : Type u_3} [NormedAddCommGrou
 
 ## Proof depends on
 
-- [Complementary subspaces](../../linear-algebra/fundamentals/complementary-subspaces.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
-- [Self-adjoint operator](../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
+- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Kernel of a linear map](../../linear-algebra/fundamentals/kernel-of-a-linear-map.md)
+- [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
+- [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 
 ## Sources
 

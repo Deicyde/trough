@@ -22,7 +22,6 @@ Finset.ruzsa_triangle_inequality_sub_sub_sub.{u_1} {G : Type u_1} [DecidableEq G
 
 ## Proof depends on
 
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Set](../../data-structures/sets/set.md)
 
 ## Sources

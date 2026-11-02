@@ -31,18 +31,7 @@ HasStrictDerivAt.of_local_left_inverse.{u} {𝕜 : Type u} [NontriviallyNormedFi
 
 ## Proof depends on
 
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../topology-of-r/metric-structure.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

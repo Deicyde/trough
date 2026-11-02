@@ -39,14 +39,7 @@ tendsto_subseq_of_bounded.{u_1} {X : Type u_1} [PseudoMetricSpace X] [ProperSpac
 
 ## Proof depends on
 
-- [Ball](../../../../overview/topology/metric-spaces/ball.md)
-- [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
-- [Induced topology](../../../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [Ring morphism](../../../../overview/general-algebra/rings/ring-morphism.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

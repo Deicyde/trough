@@ -38,17 +38,12 @@ MeasureTheory.tendstoInMeasure_iff_tendsto_Lp.{u_1, u_2} {α : Type u_1} {β : T
 
 ## Proof depends on
 
-- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Borel-Cantelli lemma (easy direction)](../../../../undergraduate/probability-theory/definitions-of-a-probability-space/borel-cantelli-lemma-easy-direction.md)
-- [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Sum of a Geometric Series](../../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [Uniform convergence norm (sup-norm)](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/uniform-convergence-norm-sup-norm.md)
-- [Vector-valued integrable function (Bochner integral)](../../../../overview/analysis/measures-and-integral-calculus/part-01/vector-valued-integrable-function-bochner-integr.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
+- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
+- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

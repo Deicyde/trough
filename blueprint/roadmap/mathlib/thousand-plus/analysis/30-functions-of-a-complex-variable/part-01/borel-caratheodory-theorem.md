@@ -28,9 +28,10 @@ Complex.borelCaratheodory {f : ℂ → ℂ} {M R : ℝ} {z : ℂ} (hM : 0 < M)
 
 ## Proof depends on
 
-- [Cauchy integral formula](../../../../overview/analysis/complex-analysis/cauchy-integral-formula.md)
-- [Hahn-Banach theorem](../../../../overview/analysis/normed-vector-spaces-banach-spaces/hahn-banach-theorem.md)
-- [Removable singularity](../../../../overview/analysis/complex-analysis/removable-singularity.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
+- [List](../../../../overview/data-structures/list-like-structures/list.md)
 
 ## Sources
 

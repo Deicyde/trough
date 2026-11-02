@@ -20,15 +20,6 @@ norm_add_le.{u_4} {E : Type u_4} [SeminormedAddGroup E] (a b : E) : ‖a + b‖ 
 - [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
-## Proof depends on
-
-- [Array](../../overview/data-structures/list-like-structures/array.md)
-- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-
 ## Sources
 
 - [Mathlib documentation: `norm_add_le`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Group/Basic.html#norm_add_le)

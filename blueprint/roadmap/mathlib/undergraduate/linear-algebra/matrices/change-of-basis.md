@@ -24,10 +24,6 @@ basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix.{u_1, u_2, u_3, u_4, u_
 
 - [Matrix representation of a linear map](../../../overview/linear-algebra/matrices/matrix-representation-of-a-linear-map.md)
 
-## Proof depends on
-
-- [Integer](../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Basis.html#basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix)

@@ -24,27 +24,14 @@ ProbabilityTheory.IsGaussian.exists_integrable_exp_sq.{u_1} {E : Type u_1} [Norm
 
 ## Proof depends on
 
-- [Bounded convergence theorem](bounded-convergence-theorem.md)
-- [Cauchy-Schwarz inequality](../../../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Change of variables to polar co-ordinates](../../../../undergraduate/measures-and-integral-calculus/integration/change-of-variables-to-polar-co-ordinates.md)
-- [Characteristic function](../../../../overview/probability-theory/definitions-in-probability-theory/characteristic-function.md)
-- [Conditional probability](../../../../overview/probability-theory/definitions-in-probability-theory/conditional-probability.md)
-- [Connected components](../../../../undergraduate/topology/topology-and-metric-spaces/connected-components.md)
-- [Connectedness](../../../../overview/topology/general-topology/part-01/connectedness.md)
-- [Continuity of the sum of a series of functions](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/continuity-of-the-sum-of-a-series-of-functions.md)
-- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
-- [Determinant of vectors](../../../../undergraduate/linear-algebra/multilinearity/determinant-of-vectors.md)
-- [Differentiable functions](../../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Divergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-02/divergence-theorem.md)
-- [Dominated convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/dominated-convergence-theorem.md)
-- [Dual vector space](../../../../overview/linear-algebra/duality/dual-vector-space.md)
-- [Fubini's theorem](../../../../overview/analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
-- [Fundamental Theorem of Integral Calculus](../../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
-- [Higher-order derivatives of functions](../../../../undergraduate/single-variable-real-analysis/differentiability/higher-order-derivatives-of-functions.md)
-- [Orientation of a $\R$-vector space](../../../../undergraduate/linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
-- [Path connectedness](../../../../undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
-- [Stone-Weierstrass theorem](../../../../overview/topology/general-topology/part-02/stone-weierstrass-theorem.md)
-- [Unitary group](../../../../undergraduate/group-theory/classical-automorphism-groups/unitary-group.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Giry monad](../../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
+- [Group](../../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
+- [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

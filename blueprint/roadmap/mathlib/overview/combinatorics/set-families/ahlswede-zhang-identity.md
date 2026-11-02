@@ -26,7 +26,6 @@ AhlswedeZhang.infSum_eq_one.{u_1} {α : Type u_1} [Fintype α] [DecidableEq α] 
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Formula for the Number of Combinations](../../../hundred-theorems/part-03/formula-for-the-number-of-combinations.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

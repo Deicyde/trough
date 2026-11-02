@@ -21,14 +21,11 @@ lucas_lehmer_sufficiency (p : ℕ) (w : 1 < p) : LucasLehmerTest p → Nat.Prime
 
 ## Proof depends on
 
-- [Characteristic p](../field-theory/characteristic-p.md)
 - [Characteristic zero](../field-theory/characteristic-zero.md)
-- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Group morphism](../group-theory/part-01/group-morphism.md)
 - [Order of an element](../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
 - [Ordered ring](../rings/ordered-ring.md)
-- [Prime numbers](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 
 ## Sources
 

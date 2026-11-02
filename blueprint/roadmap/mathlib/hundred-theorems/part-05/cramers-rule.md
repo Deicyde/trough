@@ -21,10 +21,6 @@ Matrix.mulVec_cramer.{v, w} {n : Type v} {α : Type w} [DecidableEq n] [Fintype 
 
 - [Determinant](../../overview/linear-algebra/matrices/determinant.md)
 
-## Proof depends on
-
-- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-
 ## Sources
 
 - [Mathlib documentation: `Matrix.mulVec_cramer`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Adjugate.html#Matrix.mulVec_cramer)

@@ -23,10 +23,6 @@ SimpleGraph.sum_degrees_eq_twice_card_edges.{u} {V : Type u} (G : SimpleGraph V)
 - [Set](../../data-structures/sets/set.md)
 - [Simple graph](simple-graph.md)
 
-## Proof depends on
-
-- [Integer](../../general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `SimpleGraph.sum_degrees_eq_twice_card_edges`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/DegreeSum.html#SimpleGraph.sum_degrees_eq_twice_card_edges)

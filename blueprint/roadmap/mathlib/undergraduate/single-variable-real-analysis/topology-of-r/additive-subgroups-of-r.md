@@ -23,13 +23,6 @@ AddSubgroup.dense_or_isCyclic.{u_1} {G : Type u_1} [AddCommGroup G] [LinearOrder
 - [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 
-## Proof depends on
-
-- [Filter](../../../overview/topology/general-topology/part-01/filter.md)
-- [List](../../../overview/data-structures/list-like-structures/list.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
-
 ## Sources
 
 - [Mathlib documentation: `AddSubgroup.dense_or_isCyclic`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/Order/ArchimedeanDiscrete.html#AddSubgroup.dense_or_isCyclic)

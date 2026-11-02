@@ -29,35 +29,10 @@ Theorems100.cubic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d : K) {ω p
 
 ## Proof depends on
 
-- [Bezout’s Theorem](../part-03/bezouts-theorem.md)
-- [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Coprime element](../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
 - [Cyclotomic polynomials in $\Q\[X\]$](../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
-- [Field of fractions of an integral domain](../../overview/general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Intermediate value theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)
-- [Inverse trigonometric functions](../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Lipschitz continuity](../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Local ring](../../overview/general-algebra/rings/local-ring.md)
-- [Localization](../../overview/general-algebra/rings/localization.md)
-- [Logarithm](../../overview/analysis/special-functions/logarithm.md)
-- [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Norm of a continuous linear map](../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Order of an element](../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
-- [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Squeeze theorem](../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
-- [The Factor and Remainder Theorems](../part-05/the-factor-and-remainder-theorems.md)
-- [The Triangle Inequality](../part-05/the-triangle-inequality.md)
-- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 
 ## Sources
 

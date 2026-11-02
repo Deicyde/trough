@@ -26,7 +26,6 @@ convexHull_eq_union.{u, u_1} {𝕜 : Type u_1} {E : Type u} [Field 𝕜] [Linear
 
 ## Proof depends on
 
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources

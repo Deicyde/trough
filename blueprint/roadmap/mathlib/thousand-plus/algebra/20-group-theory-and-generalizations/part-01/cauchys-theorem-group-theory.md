@@ -25,12 +25,9 @@ exists_prime_orderOf_dvd_card.{u_3} {G : Type u_3} [Group G] [Fintype G] (p : â„
 
 ## Proof depends on
 
-- [Array](../../../../overview/data-structures/list-like-structures/array.md)
 - [Decomposition into cycles with disjoint support](../../../../undergraduate/group-theory/permutation-group/decomposition-into-cycles-with-disjoint-support.md)
 - [Greatest common divisor](../../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Least common multiple](../../../../overview/general-algebra/divisibility-in-integral-domains/least-common-multiple.md)
-- [Prime numbers](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Subgroup](../../../../overview/general-algebra/group-theory/part-01/subgroup.md)
 
 ## Sources
 

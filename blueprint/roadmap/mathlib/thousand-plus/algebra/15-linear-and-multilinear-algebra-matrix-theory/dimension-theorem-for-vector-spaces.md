@@ -25,15 +25,9 @@ mk_eq_mk_of_basis.{u, v, w, w'} {R : Type u} {M : Type v} [Semiring R] [AddCommM
 
 ## Proof depends on
 
-- [Aleph numbers](../../../overview/logic-and-computation/set-theory/cardinals/aleph-numbers.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Fundamental sequences](../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
-- [Well-ordering theorem](../../general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
 
 ## Sources
 

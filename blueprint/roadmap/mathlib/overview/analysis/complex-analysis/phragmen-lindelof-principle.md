@@ -44,7 +44,13 @@ PhragmenLindelof.horizontal_strip.{u_1} {E : Type u_1} [NormedAddCommGroup E] [N
 
 ## Proof depends on
 
-- [Cauchy integral formula](cauchy-integral-formula.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
+- [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
+- [Differentiable functions](../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
+- [Logarithm](../special-functions/logarithm.md)
+- [Order topology](../../topology/topological-algebra/order-topology.md)
+- [Topological module](../../topology/topological-algebra/topological-module.md)
+- [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

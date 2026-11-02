@@ -33,13 +33,9 @@ intervalIntegral.continuous_of_dominated_interval.{u_2, u_3} {E : Type u_2} [Nor
 
 ## Proof depends on
 
-- [Approximation by step functions](../measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Fatou's lemma](../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
+- [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
+- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Sources
 

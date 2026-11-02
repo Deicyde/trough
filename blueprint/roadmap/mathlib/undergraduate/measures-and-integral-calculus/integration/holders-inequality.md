@@ -29,21 +29,6 @@ NNReal.lintegral_mul_le_Lp_mul_Lq.{u_1} {α : Type u_1} [MeasurableSpace α]
 - [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
-## Proof depends on
-
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Continuity of inverse functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-inverse-functions.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Limit point](../../single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-
 ## Sources
 
 - [Mathlib documentation: `NNReal.lintegral_mul_le_Lp_mul_Lq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/MeanInequalities.html#NNReal.lintegral_mul_le_Lp_mul_Lq)

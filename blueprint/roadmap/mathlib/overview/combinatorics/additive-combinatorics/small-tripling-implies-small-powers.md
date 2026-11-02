@@ -29,14 +29,9 @@ Finset.small_pow_of_small_tripling.{u_1} {G : Type u_1} [DecidableEq G] [Group G
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Group morphism](../../general-algebra/group-theory/part-01/group-morphism.md)
-- [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources

@@ -37,22 +37,9 @@ tendsto_integral_exp_inner_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_
 
 ## Proof depends on
 
-- [Approximation by step functions](../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Cauchy-Schwarz inequality](../hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../topology/general-topology/part-01/closed-map.md)
-- [Complementary subspaces](../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Fatou's lemma](../measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
-- [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
-- [Orthogonal projection](../hilbert-spaces/orthogonal-projection.md)
-- [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
-- [Self-adjoint operator](../hilbert-spaces/self-adjoint-operator.md)
-- [Urysohn's lemma](../../topology/general-topology/part-02/urysohns-lemma.md)
+- [Measurable function](../measures-and-integral-calculus/part-01/measurable-function.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

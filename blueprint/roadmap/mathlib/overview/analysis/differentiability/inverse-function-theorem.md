@@ -29,28 +29,6 @@ HasStrictFDerivAt.to_localInverse.{u_1, u_2, u_3} {𝕜 : Type u_1} [Nontriviall
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
-## Proof depends on
-
-- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Cauchy sequence](../../topology/uniform-notions/cauchy-sequence.md)
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
-- [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
-- [Topological ring](../../topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Topology on a normed vector space](../normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
-
 ## Sources
 
 - [Mathlib documentation: `HasStrictFDerivAt.to_localInverse`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/InverseFunctionTheorem/FDeriv.html#HasStrictFDerivAt.to_localInverse)

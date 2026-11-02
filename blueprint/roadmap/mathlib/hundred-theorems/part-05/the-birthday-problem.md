@@ -33,21 +33,7 @@ Theorems100.birthday_measure : MeasureTheory.volume {f | Function.Injective f} <
 
 ## Proof depends on
 
-- [Almost sure convergence](../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
-- [Cantor’s Theorem](../part-04/cantors-theorem.md)
-- [Cardinal](../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Closure](../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Measurable function](../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Open map](../../overview/topology/general-topology/part-01/open-map.md)
-- [Schroeder-Bernstein Theorem](../part-02/schroeder-bernstein-theorem.md)
-- [Topological module](../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
-- [Uniformly continuous function](../../overview/topology/uniform-notions/uniformly-continuous-function.md)
+- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 
 ## Sources
 

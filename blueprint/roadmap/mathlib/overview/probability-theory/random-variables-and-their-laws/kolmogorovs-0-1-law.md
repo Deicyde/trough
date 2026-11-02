@@ -26,25 +26,10 @@ ProbabilityTheory.measure_zero_or_one_of_measurableSet_limsup_atTop.{u_2, u_3} {
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](../../analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
-- [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Completeness](../../topology/uniform-notions/completeness.md)
 - [Metric space](../../topology/metric-spaces/metric-space.md)
-- [Module](../../linear-algebra/fundamentals/module.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
-- [Topological ring](../../topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

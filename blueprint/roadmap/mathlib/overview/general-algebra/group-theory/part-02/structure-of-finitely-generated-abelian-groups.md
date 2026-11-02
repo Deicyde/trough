@@ -28,7 +28,6 @@ AddCommGroup.equiv_free_prod_directSum_zmod.{u} (G : Type u) [AddCommGroup G] [h
 
 ## Proof depends on
 
-- [Congruence in $\Z$](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Structure theorem](../../../linear-algebra/finitely-generated-modules-over-a-pid/structure-theorem.md)
 
 ## Sources

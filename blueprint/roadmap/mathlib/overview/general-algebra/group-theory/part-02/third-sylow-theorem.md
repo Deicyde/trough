@@ -25,17 +25,8 @@ card_sylow_modEq_one.{u_1} (p : ℕ) (G : Type u_1) [Group G] [Fact (Nat.Prime p
 
 ## Proof depends on
 
-- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cauchy's theorem (group theory)](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md)
-- [Characteristic p](../../field-theory/characteristic-p.md)
-- [Congruence in $\Z$](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
-- [Finitely supported function](../../../data-structures/maps/finitely-supported-function.md)
-- [First isomorphism theorem](../part-01/first-isomorphism-theorem.md)
-- [Index of a subgroup](../part-01/index-of-a-subgroup.md)
-- [Ordered ring](../../rings/ordered-ring.md)
-- [Quotient space (Basic definitions)](../../../../undergraduate/group-theory/basic-definitions/quotient-space.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [The Fundamental Theorem of Arithmetic](../../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Finite set](../../../data-structures/sets/finite-set.md)
+- [Group action](../part-01/group-action.md)
 
 ## Sources
 

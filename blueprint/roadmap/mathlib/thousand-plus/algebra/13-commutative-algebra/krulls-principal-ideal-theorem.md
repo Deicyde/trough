@@ -27,23 +27,15 @@ Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes.{u_1} {R : Type u_1} [Co
 
 ## Proof depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
-- [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Cayley-Hamilton theorem](../../../overview/linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Chinese remainder theorem](../../../overview/general-algebra/ideals-and-quotients/chinese-remainder-theorem.md)
-- [Field](../../../overview/general-algebra/field-theory/field.md)
-- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
+- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Localization](../../../overview/general-algebra/rings/localization.md)
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Subring](../../../overview/general-algebra/rings/subring.md)
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
+- [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
+- [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
+- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
+- [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources
 

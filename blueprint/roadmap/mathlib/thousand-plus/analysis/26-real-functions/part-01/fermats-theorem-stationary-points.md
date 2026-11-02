@@ -34,6 +34,7 @@ IsLocalExtr.fderiv_eq_zero.{u} {E : Type u} [NormedAddCommGroup E] [NormedSpace 
 
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Local extrema](../../../../overview/analysis/differentiability/local-extrema.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

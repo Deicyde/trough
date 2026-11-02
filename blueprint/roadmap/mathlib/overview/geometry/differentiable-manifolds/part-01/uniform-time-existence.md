@@ -35,6 +35,7 @@ exists_isMIntegralCurve_of_isMIntegralCurveOn.{u_1, u_2, u_3} {E : Type u_1} [No
 
 ## Proof depends on
 
+- [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
 - [Uniqueness of integral curves](uniqueness-of-integral-curves.md)
 
 ## Sources

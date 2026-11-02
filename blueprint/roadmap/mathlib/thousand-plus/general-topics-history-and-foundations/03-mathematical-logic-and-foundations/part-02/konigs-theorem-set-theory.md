@@ -21,7 +21,7 @@ Cardinal.sum_lt_prod.{u_1, u_2} {ι : Type u_1} (f g : ι → Cardinal.{u_2})
 
 ## Proof depends on
 
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
+- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

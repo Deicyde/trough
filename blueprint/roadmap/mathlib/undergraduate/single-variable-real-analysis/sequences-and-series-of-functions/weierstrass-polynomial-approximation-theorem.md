@@ -35,26 +35,13 @@ polynomialFunctions_closure_eq_top (a b : ℝ) :
 
 ## Proof depends on
 
-- [Completeness of R](../topology-of-r/completeness-of-r.md)
-- [Convex function](../../../overview/analysis/convexity/convex-function.md)
-- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Heine-Cantor theorem](../../../overview/topology/uniform-notions/heine-cantor-theorem.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Limit point](../sequences-of-real-numbers/limit-point.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
 - [Local convexity](../../../overview/analysis/topological-vector-spaces/local-convexity.md)
 - [Metric structure](../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
-- [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Product of vector spaces](../../linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
-- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniform convergence](../../../overview/topology/uniform-notions/uniform-convergence.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

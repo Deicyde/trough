@@ -31,20 +31,7 @@ norm_inner_le_norm.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RCLike 𝕜] [Se
 
 ## Proof depends on
 
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Ball](../../topology/metric-spaces/ball.md)
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Finite set](../../data-structures/sets/finite-set.md)
-- [Group](../../general-algebra/group-theory/part-01/group.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Norm](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/euclidean-and-hermitian-spaces/norm.md)
-- [Order topology](../../topology/topological-algebra/order-topology.md)
-- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Topological module](../../topology/topological-algebra/topological-module.md)
-- [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

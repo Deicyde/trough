@@ -27,7 +27,6 @@ Matrix.aeval_self_charpoly.{u_1, u_4} {R : Type u_1} [CommRing R] {n : Type u_4}
 ## Proof depends on
 
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Tensor product of algebras](../../general-algebra/algebras-over-a-ring/tensor-product-of-algebras.md)
 

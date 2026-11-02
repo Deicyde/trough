@@ -32,15 +32,6 @@ PowerSeries.exists_isWeierstrassFactorization.{u_1} {A : Type u_1} [CommRing A] 
 
 ## Proof depends on
 
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

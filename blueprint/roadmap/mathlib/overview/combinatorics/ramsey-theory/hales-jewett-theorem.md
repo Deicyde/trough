@@ -23,10 +23,6 @@ Combinatorics.Line.exists_mono_in_high_dimension.{u, v} (α : Type u) [Finite α
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Set](../../data-structures/sets/set.md)
 
-## Proof depends on
-
-- [Integer](../../general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Combinatorics.Line.exists_mono_in_high_dimension`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/HalesJewett.html#Combinatorics.Line.exists_mono_in_high_dimension)

@@ -29,26 +29,8 @@ Module.End.exists_isNilpotent_isSemisimple.{u_1, u_2} {K : Type u_1} {V : Type u
 
 ## Proof depends on
 
-- [$A\[X\]$ has gcd and lcm if $A$ does](../../../overview/general-algebra/polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
-- [$K\[X\]$ is Euclidean](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
-- [Algebraic elements](../../ring-theory/field-theory/part-01/algebraic-elements.md)
-- [Array](../../../overview/data-structures/list-like-structures/array.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Cayley-Hamilton theorem](../../../overview/linear-algebra/endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Chinese remainder theorem](../../../overview/general-algebra/ideals-and-quotients/chinese-remainder-theorem.md)
-- [Existence of bases](../fundamentals/existence-of-bases.md)
-- [Kernel of a linear map](../fundamentals/kernel-of-a-linear-map.md)
-- [Local ring](../../../overview/general-algebra/rings/local-ring.md)
-- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
+- [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
 - [Minimal polynomial](../../../overview/linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
-- [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
-- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Prime spectrum](../../../overview/geometry/algebraic-geometry/prime-spectrum.md)
-- [Product of rings](../../ring-theory/fundamentals/product-of-rings.md)
-- [Product of vector spaces](../fundamentals/product-of-vector-spaces.md)
-- [Rupture field](../../../overview/general-algebra/field-theory/rupture-field.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 

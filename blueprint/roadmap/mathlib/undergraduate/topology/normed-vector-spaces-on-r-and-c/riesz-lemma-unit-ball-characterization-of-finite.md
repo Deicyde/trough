@@ -27,9 +27,8 @@ FiniteDimensional.of_isCompact_closedBall.{u, u_1} (𝕜 : Type u) [Nontrivially
 
 ## Proof depends on
 
-- [Affine space](../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Finite-dimensional normed spaces over complete normed fields are complete](../../../overview/analysis/normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
-- [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
+- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources
 

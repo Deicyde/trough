@@ -39,24 +39,12 @@ Vitali.exists_disjoint_covering_ae.{u_1, u_2} {α : Type u_1} {ι : Type u_2} [P
 
 ## Proof depends on
 
-- [Almost sure convergence](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
-- [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Ball](../../../../overview/topology/metric-spaces/ball.md)
+- [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
-- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
-- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Module](../../../../overview/linear-algebra/fundamentals/module.md)
-- [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
-- [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 - [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

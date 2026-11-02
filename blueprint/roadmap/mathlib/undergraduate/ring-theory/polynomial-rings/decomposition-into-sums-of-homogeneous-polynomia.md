@@ -21,10 +21,6 @@ MvPolynomial.sum_homogeneousComponent.{u_1, u_3} {σ : Type u_1} {R : Type u_3} 
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 
-## Proof depends on
-
-- [Integer](../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `MvPolynomial.sum_homogeneousComponent`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/MvPolynomial/Homogeneous.html#MvPolynomial.sum_homogeneousComponent)

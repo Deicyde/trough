@@ -25,9 +25,6 @@ isCompact_iff_isSeqCompact.{u_1} {X : Type u_1} [TopologicalSpace X]
 ## Proof depends on
 
 - [Cauchy sequence](../uniform-notions/cauchy-sequence.md)
-- [Finite set](../../data-structures/sets/finite-set.md)
-- [Induced topology](../general-topology/part-01/induced-topology.md)
-- [Integer](../../general-algebra/numbers/integer.md)
 - [Limit point](../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
 
 ## Sources

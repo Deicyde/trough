@@ -24,9 +24,12 @@ Differentiable.apply_eq_apply_of_bounded.{u, v} {E : Type u} [NormedAddCommGroup
 
 ## Proof depends on
 
-- [Cauchy formulas](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/cauchy-formulas.md)
-- [Dual vector space](../../linear-algebra/duality/dual-vector-space.md)
+- [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Completion of an abelian topological group](../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
+- [Derivative at a point](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Higher-order derivatives of functions](../../../undergraduate/single-variable-real-analysis/differentiability/higher-order-derivatives-of-functions.md)
+- [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
+- [Lebesgue measure (Measures and integral calculus)](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Sources
 

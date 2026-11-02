@@ -4,7 +4,7 @@ Mathlib's maintainers keep four curated lists of what the library contains: an o
 
 Items that name the same declarations in several lists, or name none and share a title, are one article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, with their documentation and source. One that Mathlib lacks is marked not ready: its statement and prerequisites are still to be written.
 
-An article's *Depends on* list names the nearest concepts on these lists that its statement uses, and *Proof depends on* those its proof uses, where a lemma from another file counts by its statement and a helper lemma from the same file by its proof too. Both are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a dependency already reached through another is left out. This leaves 2,942 statement and 4,178 proof edges, from 14,172 and 17,784 nearest-concept edges.
+An article's *Depends on* list names the nearest concepts on these lists that its statement uses, and *Proof depends on* those its proof uses, where a lemma from another file counts by its statement and a helper lemma from the same file by its proof too. Both are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a dependency already reached through another is left out. This leaves 2,942 statement and 1,458 proof edges, from 14,172 and 3,608 nearest-concept edges.
 
 - [Mathlib overview](overview/README.md)
 - [Undergraduate mathematics](undergraduate/README.md)

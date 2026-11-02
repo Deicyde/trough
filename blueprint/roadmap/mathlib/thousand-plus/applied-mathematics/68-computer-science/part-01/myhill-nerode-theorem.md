@@ -20,10 +20,6 @@ Language.isRegular_iff_finite_range_leftQuotient.{u} {α : Type u} {L : Language
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Regular language](../../../../overview/logic-and-computation/formal-languages/regular-language.md)
 
-## Proof depends on
-
-- [Integer](../../../../overview/general-algebra/numbers/integer.md)
-
 ## Sources
 
 - [Mathlib documentation: `Language.isRegular_iff_finite_range_leftQuotient`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/MyhillNerode.html#Language.isRegular_iff_finite_range_leftQuotient)

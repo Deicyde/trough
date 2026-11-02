@@ -22,20 +22,11 @@ tsum_geometric_of_norm_lt_one.{u_4} {K : Type u_4} [NormedDivisionRing K] {ξ : 
 
 ## Proof depends on
 
-- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Completeness of R](../topology-of-r/completeness-of-r.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Limit point](../sequences-of-real-numbers/limit-point.md)
-- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
-- [Metric structure](../topology-of-r/metric-structure.md)
-- [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../../overview/topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 

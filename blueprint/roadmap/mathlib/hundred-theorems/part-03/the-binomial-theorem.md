@@ -22,7 +22,6 @@ add_pow.{u_1} {R : Type u_1} [CommSemiring R] (x y : R) (n : ℕ) :
 
 ## Proof depends on
 
-- [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources

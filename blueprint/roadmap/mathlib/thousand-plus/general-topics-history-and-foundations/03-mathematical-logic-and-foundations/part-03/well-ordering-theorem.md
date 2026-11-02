@@ -20,11 +20,7 @@ Its statement uses no other concept on these lists.
 
 ## Proof depends on
 
-- [Cantor’s Theorem](../../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Finite set](../../../../overview/data-structures/sets/finite-set.md)
-- [Integer](../../../../overview/general-algebra/numbers/integer.md)
-- [Schroeder-Bernstein Theorem](../../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 
 ## Sources
 

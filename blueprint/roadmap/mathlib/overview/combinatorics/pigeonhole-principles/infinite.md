@@ -28,7 +28,6 @@ Finite.exists_infinite_fiber.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Infinit
 ## Proof depends on
 
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources
 

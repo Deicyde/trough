@@ -28,10 +28,9 @@ fderiv_mul.{u_1, u_2, u_5} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] {E :
 ## Proof depends on
 
 - [Derivative of a composition of functions (Analysis)](derivative-of-a-composition-of-functions.md)
-- [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Norm of a continuous linear map](../normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Topology on a normed vector space](../normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
+- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

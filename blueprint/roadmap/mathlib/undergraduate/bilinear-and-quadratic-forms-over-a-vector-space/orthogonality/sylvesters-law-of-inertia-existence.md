@@ -30,28 +30,12 @@ QuadraticForm.equivalent_one_zero_neg_one_weighted_sum_squared.{u_2} {M : Type u
 
 ## Proof depends on
 
-- [Aleph numbers](../../../overview/logic-and-computation/set-theory/cardinals/aleph-numbers.md)
-- [Ball](../../../overview/topology/metric-spaces/ball.md)
-- [Bilinear form](../../../overview/linear-algebra/bilinear-and-quadratic-forms/bilinear-form.md)
-- [Closure](../../../overview/topology/general-topology/part-01/closure.md)
-- [Complementary subspaces](../../linear-algebra/fundamentals/complementary-subspaces.md)
-- [Fundamental sequences](../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
-- [Hilbert basis theorem](../../../overview/general-algebra/polynomials-and-power-series/hilbert-basis-theorem.md)
-- [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
+- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Invertible elements](../../ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Isomorphism with $K^n$](../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
-- [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
+- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Polar form of a quadratic](../../../overview/linear-algebra/bilinear-and-quadratic-forms/polar-form-of-a-quadratic.md)
-- [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Product of rings](../../ring-theory/fundamentals/product-of-rings.md)
-- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
-- [Subring](../../../overview/general-algebra/rings/subring.md)
-- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
-- [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Well-ordering theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)
+- [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Sources
 

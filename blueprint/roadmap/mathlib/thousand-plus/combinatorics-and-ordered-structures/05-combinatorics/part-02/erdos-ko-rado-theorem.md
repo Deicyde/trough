@@ -27,6 +27,7 @@ Finset.erdos_ko_rado {n : ℕ} {𝒜 : Finset (Finset (Fin n))} {r : ℕ} (h𝒜
 ## Proof depends on
 
 - [Formula for the Number of Combinations](../../../../hundred-theorems/part-03/formula-for-the-number-of-combinations.md)
+- [Integer](../../../../overview/general-algebra/numbers/integer.md)
 - [Kruskal-Katona theorem](../../../../overview/combinatorics/set-families/kruskal-katona-theorem.md)
 
 ## Sources

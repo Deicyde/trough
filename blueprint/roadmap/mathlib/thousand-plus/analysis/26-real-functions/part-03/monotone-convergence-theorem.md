@@ -38,13 +38,14 @@ MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone.{u_1} {α : Type u_1} {m 
 
 ## Proof depends on
 
-- [Approximation by step functions](../../../../undergraduate/measures-and-integral-calculus/measure-theory/approximation-by-step-functions.md)
-- [Arithmetic Mean/Geometric Mean](../../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
-- [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
+- [Borel sigma-algebra](../../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
+- [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
+- [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
+- [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
 

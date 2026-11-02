@@ -44,20 +44,8 @@ SimpleGraph.exists_isPerfectMatching_of_forall_ncard_le.{u_1} {V : Type u_1} {G 
 
 ## Proof depends on
 
-- [Adjunction](../../general-algebra/category-theory/adjunction.md)
-- [Array](../../data-structures/list-like-structures/array.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
-- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
-- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Integer](../../general-algebra/numbers/integer.md)
-- [Isomorphism](../../general-algebra/category-theory/isomorphism.md)
-- [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
+- [Functor](../../general-algebra/category-theory/functor.md)
 - [Small category](../../general-algebra/category-theory/small-category.md)
-- [The category of topological spaces](../../topology/general-topology/part-01/the-category-of-topological-spaces.md)
-- [Tychonoff's theorem](../../../thousand-plus/geometry-and-topology/54-general-topology/part-02/tychonoffs-theorem.md)
 
 ## Sources
 

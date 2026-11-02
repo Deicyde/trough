@@ -27,14 +27,13 @@ span_fourier_closure_eq_top {T : ℝ} [hT : Fact (0 < T)] :
 
 ## Proof depends on
 
-- [Dual of a normed space](../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
-- [Intermediate value theorem](../../../overview/topology/topological-algebra/intermediate-value-theorem.md)
-- [Inverse trigonometric functions](../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
-- [Logarithm](../../../overview/analysis/special-functions/logarithm.md)
-- [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Stone-Weierstrass theorem](../../../overview/topology/general-topology/part-02/stone-weierstrass-theorem.md)
-- [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
+- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Completeness of R](../topology-of-r/completeness-of-r.md)
+- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Lipschitz continuity](../../../overview/topology/metric-spaces/lipschitz-continuity.md)
+- [Metric structure](../topology-of-r/metric-structure.md)
+- [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

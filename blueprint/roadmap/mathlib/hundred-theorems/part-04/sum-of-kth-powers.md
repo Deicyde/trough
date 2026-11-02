@@ -38,23 +38,15 @@ sum_Ico_pow (n p : ℕ) :
 
 ## Proof depends on
 
-- [Array](../../overview/data-structures/list-like-structures/array.md)
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
 - [Induced topology](../../overview/topology/general-topology/part-01/induced-topology.md)
-- [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Linear map](../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Power series](../../overview/general-algebra/polynomials-and-power-series/power-series.md)
-- [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [The Binomial Theorem](../part-03/the-binomial-theorem.md)
 
 ## Sources
 

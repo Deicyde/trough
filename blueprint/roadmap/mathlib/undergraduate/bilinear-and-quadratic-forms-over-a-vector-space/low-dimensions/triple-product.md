@@ -21,11 +21,6 @@ triple_product_eq_det.{u_1} {R : Type u_1} [CommRing R] (u v w : Fin 3 → R) :
 - [Cross product](cross-product.md)
 - [Determinant](../../../overview/linear-algebra/matrices/determinant.md)
 
-## Proof depends on
-
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Decomposition into transpositions](../../group-theory/permutation-group/decomposition-into-transpositions.md)
-
 ## Sources
 
 - [Mathlib documentation: `triple_product_eq_det`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/CrossProduct.html#triple_product_eq_det)

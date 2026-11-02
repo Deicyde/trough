@@ -24,21 +24,13 @@ IsLocalMin.fderiv_eq_zero.{u} {E : Type u} [NormedAddCommGroup E] [NormedSpace â
 
 ## Proof depends on
 
-- [Closure](../../topology/general-topology/part-01/closure.md)
 - [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
 - [Differentiable function between normed vector spaces](differentiable-function-between-normed-vector-sp.md)
 - [Dual of a normed space](../normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
-- [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
-- [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
-- [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Order topology](../../topology/topological-algebra/order-topology.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
-- [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
-- [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources
 
