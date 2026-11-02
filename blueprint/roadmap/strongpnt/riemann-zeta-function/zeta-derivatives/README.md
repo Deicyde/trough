@@ -1,0 +1,33 @@
+# Zeta derivatives
+
+## [Diff off pole to Log expansion](part-01/README.md)
+
+- [Diff off pole](part-01/lem-zetadiffatnot1.md)
+- [At to within](part-01/lem-diffatwithinat.md)
+- [Within to on](part-01/lem-diffwithinatallon.md)
+- [At to on](part-01/lem-diffaton.md)
+- [Diff to anal](part-01/lem-diffonanalonnhd.md)
+- [At gives anal](part-01/lem-diffatallanalonnhd.md)
+- [Analytic off](part-01/lem-zetaanalonnot1.md)
+- [Disk avoid](part-01/lem-d1cintt-pre.md)
+- [Disk subset](part-01/lem-d1cintt.md)
+- [Disk analytic](part-01/lem-zetaanalond1c.md)
+- [Zero free](part-01/lem-sigmageq1.md)
+- [Point nonzero](part-01/lem-zetacnot0.md)
+- [Normalize analytic](part-01/lem-fc-analytic-normalized.md)
+- [Log derivative](part-01/lem-fc-log-deriv.md)
+- [Shift bound](part-01/lem-fc-bound.md)
+- [Zero shift](part-01/lem-fc-zeros.md)
+- [Order shift](part-01/lem-fc-m-order.md)
+- [Disk minus K](part-01/lem-dminusk.md)
+- [Final bound](part-01/lem-final-ineq2.md)
+- [Log expansion](part-01/lem-log-deriv-expansion-zeta.md)
+
+## [Lower shift to Final expansion](part-02/README.md)
+
+- [Lower shift](part-02/lem-zeta32lower.md)
+- [Log lower](part-02/lem-zeta32lower-log.md)
+- [Upper pre](part-02/lem-zeta32upper-pre.md)
+- [Upper disk](part-02/lem-zeta32upper.md)
+- [Expand bound](part-02/lem-zeta1-zeta-expand.md)
+- [Final expansion](part-02/lem-zeta1-zeta-expansion.md)

@@ -11,6 +11,9 @@ hooks:
   # Material builds its search index eagerly in every browser tab. Keep one
   # title-only record per page so a site of a few thousand pages stays light.
   - hooks/title_only_search.py
+  # The blueprint libraries' Lean names live in their own repositories: link
+  # them to their documentation instead of calling them missing.
+  - hooks/lean_links.py
 
 # The nav is not listed here. `autoform render` writes it to SUMMARY.md from
 # the vault's own page order, which mkdocs-literate-nav reads, so a project's

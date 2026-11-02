@@ -77,9 +77,9 @@ mathlib = "56a005855ea1"
 lean_files = 271
 head = "a3210204ad88"
 head_date = "2026-10-22"
-map_status = "planned"
+map_status = "live"
 map_unit = "blueprint node"
-map_plan = "Import the leanblueprint (277 nodes, 187 with Lean names) and the Verso blueprint."
+map_plan = "One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses; the Verso blueprint (3 chapters) is left for later."
 
 [[library]]
 id = "pnt-plus"
@@ -115,9 +115,9 @@ mathlib = "8fe7ce475b05"
 lean_files = 76
 head = "7e7fadf0c4d0"
 head_date = "2026-10-29"
-map_status = "planned"
+map_status = "live"
 map_unit = "blueprint node"
-map_plan = "Import the leanblueprint (219 nodes) and the six formalization.yaml main results."
+map_plan = "One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses."
 
 [[library]]
 id = "equational-theories"
@@ -134,9 +134,9 @@ mathlib = "5e932f97dd25"
 lean_files = 1347
 head = "2ddb16c4c4c0"
 head_date = "2026-11-01"
-map_status = "planned"
+map_status = "live"
 map_unit = "blueprint node"
-map_plan = "Import the leanblueprint (215 nodes); equations and implication classes from the project's data files."
+map_plan = "One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses; the equations and implication classes in the project's data files are left for later."
 
 [[library]]
 id = "strongpnt"
@@ -153,9 +153,9 @@ mathlib = "308445d79850"
 lean_files = 8
 head = "2f5835c32231"
 head_date = "2025-09-11"
-map_status = "planned"
+map_status = "live"
 map_unit = "blueprint node"
-map_plan = "Import the leanblueprint (621 nodes, 615 with Lean names)."
+map_plan = "One article per node of its leanblueprint, with statuses from the blueprint's marks and dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them."
 
 [[library]]
 id = "formal-conjectures"

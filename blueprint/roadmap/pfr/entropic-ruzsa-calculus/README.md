@@ -1,0 +1,35 @@
+# Entropic Ruzsa calculus
+
+In this section $G$ will be a finite additive group. (May eventually want to generalize to infinite $G$.)
+
+## [Negation preserves entropy to Alternate form of distance](part-01/README.md)
+
+- [Negation preserves entropy](part-01/neg-ent.md)
+- [Shearing preserves entropy](part-01/shear-ent.md)
+- [Lower bound of sumset](part-01/sumset-lower-gen.md)
+- [Conditional lower bound on sumset](part-01/sumset-lower-gen-cond.md)
+- [Independent lower bound on sumset](part-01/sumset-lower.md)
+- [Copy preserves entropy](part-01/copy-ent.md)
+- [Existence of independent copies](part-01/independent-exist.md)
+- [Ruzsa distance](part-01/ruz-dist-def.md)
+- [Distance from zero](part-01/dist-zero.md)
+- [Copy preserves Ruzsa distance](part-01/ruz-copy.md)
+- [Ruzsa distance in independent case](part-01/ruz-indep.md)
+- [Distance symmetric](part-01/ruzsa-symm.md)
+- [Distance controls entropy difference](part-01/ruzsa-diff.md)
+- [Distance controls entropy growth](part-01/ruzsa-growth.md)
+- [Distance nonnegative](part-01/ruzsa-nonneg.md)
+- [Projection entropy and distance](part-01/dist-projection.md)
+- [Improved Ruzsa triangle inequality](part-01/ruzsa-triangle-improved.md)
+- [Ruzsa triangle inequality](part-01/ruzsa-triangle.md)
+- [Conditioned Ruzsa distance](part-01/cond-dist-def.md)
+- [Alternate form of distance](part-01/cond-dist-alt.md)
+
+## [Kaimanovich-Vershik-Madiman… to Comparison of Ruzsa distances…](part-02/README.md)
+
+- [Kaimanovich-Vershik-Madiman inequality](part-02/kv.md)
+- [Existence of conditional independent trials](part-02/cond-indep-exist.md)
+- [Balog-Szemerédi-Gowers](part-02/entropic-bsg.md)
+- [Upper bound on conditioned Ruzsa distance](part-02/cond-dist-fact.md)
+- [Comparison of Ruzsa distances, I](part-02/first-useful.md)
+- [Comparison of Ruzsa distances, II](part-02/second-useful.md)

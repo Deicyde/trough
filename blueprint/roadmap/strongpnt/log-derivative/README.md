@@ -1,0 +1,17 @@
+# Log Derivative
+
+- [Disk inclusion](lem-drind1.md)
+- [Zero set](def-zerosetkfr.md)
+- [Zero containment](lem-kindr.md)
+- [Zero in disk](lem-krink1.md)
+- [Accumulation point](lem-bolzano-weierstrass.md)
+- [Zeros accumulate](lem-zeros-have-limit-point.md)
+- [Identity theorem](lem-identity-theorem.md)
+- [Identity theorem R](lem-identity-theoremr.md)
+- [Identity on K](lem-identity-theoremkr.md)
+- [Infinite zeros imply](lem-identity-infinitekr.md)
+- [Finite zeros](lem-contra-finitekr.md)
+- [$B_f$ analytic and never zero](b-f-analytic-and-never-zero/README.md)
+- [Bounding $K\le 3\log B$](bounding-k-le-3-log-b/README.md)
+- [Log $L_f$](log-l-f/README.md)
+- [Log derivative $L_f'$ expansion](log-derivative-l-f-expansion/README.md)

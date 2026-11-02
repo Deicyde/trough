@@ -1,0 +1,28 @@
+---
+declaration: lemma
+origin: cited
+lean: sum_rearranged
+statement: formalized
+proof: formalized
+---
+
+# Sum rearranged
+
+The blueprint of Strong PNT (Math Inc) states this lemma at [PNT/PNT2_LogDerivative.tex, line 1513](https://github.com/math-inc/strongpnt/blob/2f5835c322314f55f1026ec2f139d704b7c45c69/blueprint/src/PNT/PNT2_LogDerivative.tex#L1513). The project gives no license, so trough does not reproduce its text.
+
+## Depends on
+
+Its statement uses no other node of the blueprint.
+
+## Proof depends on
+
+- [Sum difference](lem-sum-of-diff.md)
+- [Finite zeros](../../lem-contra-finitekr.md)
+
+## Lean
+
+Formalized as [`sum_rearranged`](https://math-inc.github.io/strongpnt/docs/find/#doc/sum_rearranged).
+
+## Sources
+
+- [Strong PNT (Math Inc) blueprint: PNT/PNT2_LogDerivative.tex, line 1513](https://github.com/math-inc/strongpnt/blob/2f5835c322314f55f1026ec2f139d704b7c45c69/blueprint/src/PNT/PNT2_LogDerivative.tex#L1513)

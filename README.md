@@ -11,7 +11,8 @@ Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
 Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
 gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
-Mathlib's map is the first one built.
+Mathlib is mapped from its curated lists, and four research projects from
+their leanblueprints: Imperial's FLT, PFR, Equational Theories and Strong PNT.
 
 ## The Mathlib map
 
@@ -46,6 +47,34 @@ the same title in another list.
    daily run tries Autoform's newest main commit and pins it once the site
    builds.
 
+## The blueprint chapters
+
+A library with a leanblueprint becomes a chapter with one article per node,
+following the blueprint's chapters and sections.
+
+1. `data/blueprints/<id>/source.json` pins the library's commit and names its
+   web entry file. `src/` holds the TeX files that entry reads, with the
+   repository's `LICENSE`. Strong PNT gives no license, so it has
+   `structure.json` instead: titles, labels, Lean names, marks and places,
+   but no text.
+2. `tools/trough/leanblueprint.py` reads a blueprint the way leanblueprint
+   does: the nodes are the theorem-like environments of the kinds in its
+   `thms=` option, a node's id is its last `\label`, and a proof belongs to
+   the node its `\proves` names or else to the nearest one before it.
+   `tools/trough/tex.py` writes the statements and proofs as Markdown, with
+   each library's macros expanded in its own formulas.
+3. A node's status follows its marks: `\leanok` makes its statement, or its
+   proof, formalized, `\mathlibok` puts it in Mathlib, and `\notready` marks
+   it not ready. A Mathlib node whose first Lean name heads a Mathlib-chapter
+   article is that article. `\uses` in a statement go under "Depends on",
+   and in a proof under "Proof depends on".
+4. AutoformBot looks Lean names up only in this repository, which holds none
+   of these libraries' Lean, so `hooks/lean_links.py` links each one to the
+   library's documentation instead.
+5. The **Blueprint data** workflow refreshes the sources weekly from each
+   library's newest commit; `tools/refresh_blueprints.py ID CHECKOUT` does the
+   same from a local checkout.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -59,7 +88,9 @@ data or the catalog instead. `tools/refresh_thousand_plus.py` refreshes the
 
 ## Licenses
 
-Trough is Apache-2.0 (`LICENSE`). `data/mathlib/yaml/` comes from
+Trough is Apache-2.0 (`LICENSE`). Each `data/blueprints/<id>/src/` is
+that library's blueprint, under its own license, copied beside it; the
+chapters quote it. `data/mathlib/yaml/` comes from
 [Mathlib](https://github.com/leanprover-community/mathlib4) (Apache-2.0), and
 `data/thousand-plus.json` from
 [1000-plus](https://github.com/1000-plus/1000-plus.github.io), which is in the

@@ -103,7 +103,9 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None) -> str:
+def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
+                   blueprints: list[tuple[str, str, str, str | None, bool]] = ()) -> str:
+    """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library."""
     lines = [
         "# Sources",
         "",
@@ -124,6 +126,16 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             f"from [{source.get('repo', '1000-plus')}](https://github.com/{source.get('repo', '')}) at "
             f"{str(source.get('rev', ''))[:8]}, released into the public domain."
         )
+    if blueprints:
+        lines += ["", "## Blueprints", ""]
+        for project_id, name, repo, license_name, text in blueprints:
+            if text:
+                lines.append(f"- `data/blueprints/{project_id}/`: the TeX of [{name}'s blueprint](https://github.com/{repo}), "
+                             f"pinned in its source.json, {license_name}; the license is copied beside it.")
+            else:
+                lines.append(f"- `data/blueprints/{project_id}/structure.json`: the titles, labels, Lean names, marks and "
+                             f"places of [{name}'s blueprint](https://github.com/{repo}); it gives no license, so its text "
+                             "is not copied.")
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:
         members = [library for library in libraries if library["group"] == group]

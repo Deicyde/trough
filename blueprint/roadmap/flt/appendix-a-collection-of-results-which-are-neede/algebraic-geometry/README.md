@@ -1,0 +1,8 @@
+# Algebraic geometry
+
+We have already mentioned Mazur's Theorem on torsion subgroups of elliptic curves (theorem mazur). The proof of this is the main theorem of \[mazur-torsion\], 150 pages of subtle arithmetic geometry involving the bad reduction of modular curves, exotic cohomology theories (etale and more), and the consequences of this for the Neron models of their Jacobians. After a beautiful introductory chapter containing a history and examples, the convention is established that throughout the paper, $N$ will denote a prime number which is at least 5. And then the first sentence of chapter 1 of the paper proper is “Consider quasi-finite separated commutative group schemes of finite presentation over the base $S:=\operatorname{Spec}{\mathbb{Z}}$ which are finite flat group schemes over $S':=\operatorname{Spec}(Z[1/N]).$”. At the time of writing (May 2024), Lean's algebraic geometry cannot get us through *the first sentence of Mazur's proof*, which occupies pages 43 to 172 of the paper (not including the appendix or references, that's just the proof). Anyone interested in formalising Mazur's paper should make a formalisation of its first sentence their first milestone.
+
+Talking of modular curves, we also need the existence of Shimura curves and surfaces over totally real fields $F$ (of degree greater than 2, so always compact). The curves are "modeles étranges" in the sense of Deligne, so we also need moduli spaces of unitary Shimura varieties over CM extensions. We need to decompose the first and second etale cohomology groups of these varieties into Galois representations, by understanding them in terms of automorphic representations.
+
+- [Shimura\_varieties](shimura-varieties.md)
+- [moret-bailly](moret-bailly.md)

@@ -114,6 +114,8 @@ def main() -> int:
     pages = sorted(site.rglob("*.html"))
     links = 0
     for page in pages:
+        if 'class="bp-missing"' in page.read_text(encoding="utf-8", errors="replace"):
+            issues.append(f"{page.relative_to(site)}: a Lean name is shown as missing (see hooks/lean_links.py)")
         for href in parse(page).hrefs:
             resolved = resolve_link(page, href, site)
             if resolved is None:

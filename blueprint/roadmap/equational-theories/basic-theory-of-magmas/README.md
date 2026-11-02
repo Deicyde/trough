@@ -1,0 +1,16 @@
+# Basic theory of magmas
+
+- [Magma](magma-def.md)
+- [Free Magma](free-magma-def.md)
+- [lemma-intro-1](lemma-intro-1.md)
+- [Induced homomorphism](induced-def.md)
+- [Law](law-def.md)
+- [Models](models-def.md)
+- [Derivation](derivation-def.md)
+- [Birkhoff's completeness theorem](sound-complete.md)
+- [Compactness theorem](compactness-thm.md)
+- [Pushforward](push.md)
+- [Equivalence](equiv.md)
+- [Counting laws up to relabeling](law-count.md)
+- [Counting laws up to relabeling and symmetry](law-count-sym.md)
+- [Counting laws up to relabeling, symmetry, and triviality](law-count-triv.md)

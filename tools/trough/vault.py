@@ -33,6 +33,7 @@ class Leaf:
     proof_depends: list[Leaf] = field(default_factory=list)
     informal: list[Leaf] = field(default_factory=list)
     no_depends: str = "This node has no prerequisites."
+    notes: list[tuple[str, str]] = field(default_factory=list)  # (heading, Markdown) sections before Sources
     path: Path = Path()
 
 
@@ -192,6 +193,8 @@ def render_leaf(leaf: Leaf, vault: Path, previous: str | None) -> str:
         lines += ["", "## Proof depends on", "", *links(leaf.proof_depends)]
     if leaf.informal:
         lines += ["", "## Informally uses", "", *links(leaf.informal)]
+    for heading, text in leaf.notes:
+        lines += ["", f"## {heading}", "", text.strip()]
     if leaf.sources:
         lines += ["", "## Sources", ""]
         lines += [f"- [{link_text(label)}]({url})" for label, url in leaf.sources]

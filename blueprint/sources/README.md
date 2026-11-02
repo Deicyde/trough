@@ -8,6 +8,13 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - `data/mathlib/concept-deps.json`: each listed declaration's kind, docstring, signature and nearest listed dependencies, written by `lean/ConceptDeps.lean` in GitHub Actions.
 - `data/thousand-plus.json`: subject classification and Wikipedia pages of the 1000+ theorems, from [1000-plus/1000-plus.github.io](https://github.com/1000-plus/1000-plus.github.io) at 8e04b97d, released into the public domain.
 
+## Blueprints
+
+- `data/blueprints/flt/`: the TeX of [Fermat's Last Theorem (Imperial)'s blueprint](https://github.com/ImperialCollegeLondon/FLT), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/pfr/`: the TeX of [Polynomial Freiman-Ruzsa's blueprint](https://github.com/teorth/pfr), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/equational-theories/`: the TeX of [Equational Theories's blueprint](https://github.com/teorth/equational_theories), pinned in its source.json, Apache-2.0; the license is copied beside it.
+- `data/blueprints/strongpnt/structure.json`: the titles, labels, Lean names, marks and places of [Strong PNT (Math Inc)'s blueprint](https://github.com/math-inc/strongpnt); it gives no license, so its text is not copied.
+
 ## Libraries
 
 ### Core library

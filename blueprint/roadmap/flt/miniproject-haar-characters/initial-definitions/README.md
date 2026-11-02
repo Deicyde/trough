@@ -1,0 +1,15 @@
+# Initial definitions
+
+- [MeasureTheory.addEquivAddHaarChar](measuretheory-addequivaddhaarchar.md)
+- [MeasureTheory.addEquivAddHaarChar\_eq](measuretheory-addequivaddhaarchar-eq.md)
+- [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md)
+- [MeasureTheory.addEquivAddHaarChar\_comap](measuretheory-addequivaddhaarchar-comap.md)
+- [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md)
+- [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map](measuretheory-addequivaddhaarchar-smul-integral.md)
+- [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_comap](measuretheory-addequivaddhaarchar-smul-integral-2.md)
+- [MeasureTheory.addEquivAddHaarChar\_refl](measuretheory-addequivaddhaarchar-refl.md)
+- [MeasureTheory.addEquivAddHaarChar\_trans](measuretheory-addequivaddhaarchar-trans.md)
+- [MeasureTheory.ringHaarChar](measuretheory-ringhaarchar.md)
+- [MeasureTheory.ringHaarChar\_mul\_integral](measuretheory-ringhaarchar-mul-integral.md)
+- [MeasureTheory.ringHaarChar\_mul\_volume](measuretheory-ringhaarchar-mul-volume.md)
+- [MeasureTheory.ringHaarChar\_continuous](measuretheory-ringhaarchar-continuous.md)

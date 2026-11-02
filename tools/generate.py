@@ -7,18 +7,19 @@
                                         write the Lean dump's inputs and stop
 
 Everything under blueprint/roadmap/ is generated, and so are
-blueprint/coverage/README.md and blueprint/sources/README.md; a stale page
-under blueprint/roadmap/ is deleted.
+blueprint/coverage/README.md, blueprint/sources/README.md and
+hooks/lean-links.json; a stale page under blueprint/roadmap/ is deleted.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
-from trough import catalog, mathlib
-from trough.vault import assign_paths, render_tree
+from trough import blueprints, catalog, mathlib
+from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
 VAULT = ROOT / "blueprint"
@@ -32,9 +33,38 @@ def generate() -> dict[Path, str]:
     chapter, stats = mathlib.chapter(sources)
     assign_paths(chapter, ROADMAP / "mathlib")
     files = render_tree(chapter, VAULT)
+    chapters = {"mathlib": "mathlib/README.md"}
+    # A blueprint node in Mathlib is the Mathlib-chapter article its first declaration heads.
+    heads = {}
+    for node in walk(chapter):
+        if isinstance(node, Leaf):
+            first = dict(node.fields).get("mathlib_declaration", "").split(", ")[0]
+            if first:
+                heads.setdefault(first, node)
+    blueprint_rows, lean_links = [], {}
+    projects = blueprints.load_projects(DATA, libraries)
+    for project in projects:
+        built = blueprints.chapter(project, blueprints.load_blueprint(project), heads)
+        assign_paths(built.root, ROADMAP / project.id)
+        blueprints.resolve(built, VAULT)
+        files.update(render_tree(built.root, VAULT))
+        chapters[project.id] = f"{project.id}/README.md"
+        lean_links[project.id] = dict(sorted(built.lean_links.items()))
+        count = built.stats["nodes"]
+        blueprint_rows.append((project.name, "DECOMPOSED",
+                               f"[{count} blueprint nodes](../roadmap/{project.id}/README.md), one article per node."))
+        unknown = ", ".join(f"\\{name}" for name, _ in built.unknown.most_common(8))
+        print(
+            f"{project.id}: {count} nodes, {built.stats.get('statements_formalized', 0)} formalized statements and "
+            f"{built.stats.get('proofs_formalized', 0)} proofs, {built.stats.get('statement_edges', 0)} statement and "
+            f"{built.stats.get('proof_edges', 0)} proof edges, {built.stats.get('problems', 0)} problems"
+            + (f"; unknown TeX: {unknown}" if unknown else ""),
+            file=sys.stderr,
+        )
+    files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
-    files[root] = catalog.roadmap_root(libraries, {"mathlib": "mathlib/README.md"}, previous)
+    files[root] = catalog.roadmap_root(libraries, chapters, previous)
     rows = []
     for entry in chapter.entries:
         node = entry.node
@@ -46,8 +76,11 @@ def generate() -> dict[Path, str]:
                 f"[{count} list items](../roadmap/mathlib/{node.slug}/README.md), one article per concept.",
             )
         )
-    files[VAULT / "coverage" / "README.md"] = catalog.coverage(libraries, rows)
-    files[VAULT / "sources" / "README.md"] = catalog.sources_readme(libraries, sources.rev, sources.thousand_plus)
+    files[VAULT / "coverage" / "README.md"] = catalog.coverage(libraries, rows + blueprint_rows)
+    files[VAULT / "sources" / "README.md"] = catalog.sources_readme(
+        libraries, sources.rev, sources.thousand_plus,
+        [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
+    )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['wanted']} not yet), "
         f"{stats['statement']} statement and {stats['proof']} proof edges, {stats['informal']} informal",
