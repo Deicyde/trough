@@ -1,0 +1,68 @@
+# Builds the blueprints that a Lean build writes. PrimeNumberTheoremAnd's
+# blueprint is LeanArchitect output: `lake build :blueprint` turns each
+# declaration's @[blueprint] attribute into TeX under .lake/build/blueprint,
+# which the TeX in blueprint/src inputs. This job builds it at the library's
+# newest commit and keeps the TeX as an artifact.
+
+name: Blueprint build
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/blueprint-build.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blueprint-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Free disk space for Mathlib
+        uses: jlumbroso/free-disk-space@36e9a5af4eddb91fc11aec4c6f6f79b3cc0cb523 # main, 2026-09-17
+        with:
+          tool-cache: false
+          android: true
+          dotnet: false
+          haskell: false
+          large-packages: false
+          docker-images: false
+          swap-storage: false
+
+      - name: Check out PrimeNumberTheoremAnd
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: AlexKontorovich/PrimeNumberTheoremAnd
+          path: library
+          persist-credentials: false
+
+      # LeanCert has no olean cache, unlike Mathlib; keep its build between runs.
+      - name: Restore LeanCert
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: library/.lake/packages/leancert
+          key: leancert-${{ hashFiles('library/lake-manifest.json', 'library/lean-toolchain') }}
+
+      - name: Build the blueprint's TeX
+        uses: leanprover/lean-action@50fcf42d2e460296f1a34b402e990d1b24f8b596 # v1.6.0
+        with:
+          lake-package-directory: library
+          auto-config: false
+          build: true
+          build-args: ":blueprint"
+          use-github-cache: false
+
+      - name: Keep the TeX
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: pnt-plus-blueprint
+          path: |
+            library/.lake/build/blueprint/
+            library/blueprint/src/
+          retention-days: 14
