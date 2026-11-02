@@ -10,7 +10,7 @@ mathlib_file: Mathlib/LinearAlgebra/Eigenspace/Basic.lean
 
 The submodule `genEigenspace f μ k` for a linear map `f`, a scalar `μ`,
 and a number `k : ℕ∞` is the kernel of `(f - μ • id) ^ k` if `k` is a natural number,
-or the union of all these kernels if `k = ∞`. (`k = ∞` corresponds to Def 8.19 of [axler2024].)
+or the union of all these kernels if `k = ∞`. (`k = ∞` corresponds to Def 8.19 of [axler2024](https://leanprover-community.github.io/mathlib4_docs/references.html#ref_axler2024).)
 A generalized eigenspace for some exponent `k` is contained in
 the generalized eigenspace for exponents larger than `k`.
 

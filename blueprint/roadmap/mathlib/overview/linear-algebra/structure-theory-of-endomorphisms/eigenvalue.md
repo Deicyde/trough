@@ -9,7 +9,7 @@ mathlib_file: Mathlib/LinearAlgebra/Eigenspace/Basic.lean
 # Eigenvalue
 
 A scalar `μ` is an eigenvalue for a linear map `f` if there are nonzero vectors `x`
-such that `f x = μ • x`. (Def 5.5 of [axler2024]).
+such that `f x = μ • x`. (Def 5.5 of [axler2024](https://leanprover-community.github.io/mathlib4_docs/references.html#ref_axler2024)).
 
 ```lean
 Module.End.HasEigenvalue.{v, w} {R : Type v} {M : Type w} [CommRing R] [AddCommGroup M]

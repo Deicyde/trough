@@ -173,3 +173,10 @@ def test_shared_titles_get_the_nearest_section_that_differs():
     root, _ = mathlib.chapter(sources)
     titles = sorted(node.title for node in walk(root) if not hasattr(node, "entries"))
     assert titles == ["Chain rule (1000+ theorems)", "Chain rule (Analysis)", "Chain rule (Real analysis)"]
+
+
+def test_citation_keys_link_to_the_bibliography():
+    doc = mathlib.clean_doc("See [Zwillinger](zwillinger2003) and [axler2024], not [x](https://a.org) or `l[i]`.")
+    assert f"[Zwillinger]({mathlib.DOCS}/references.html#ref_zwillinger2003)" in doc
+    assert f"[axler2024]({mathlib.DOCS}/references.html#ref_axler2024)" in doc
+    assert "[x](https://a.org)" in doc and "`l[i]`" in doc

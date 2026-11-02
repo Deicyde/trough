@@ -29,9 +29,11 @@ the same title in another list.
    Mathlib's build cache and runs `lean/ConceptDeps.lean` over the whole
    library. For each listed declaration it writes the kind, docstring,
    signature, and the nearest listed declarations its statement and its proof
-   use, walking through declarations on no list, to
-   `data/mathlib/concept-deps.json`. A weekly run moves the pin to Mathlib's
-   newest master commit whose CI passed.
+   use to `data/mathlib/concept-deps.json`. The walk goes through declarations
+   on no list by their statements; a proof also takes in the proofs of
+   unlisted lemmas from its own file, but not proofs elsewhere, which would
+   reach most of the library. A weekly run moves the pin to Mathlib's newest
+   master commit whose CI passed.
 3. `tools/generate.py` writes the vault, `blueprint/`, from those files,
    `data/thousand-plus.json` (subject classes and Wikipedia pages from the
    [1000+ theorems project](https://1000-plus.github.io/)) and the catalog.

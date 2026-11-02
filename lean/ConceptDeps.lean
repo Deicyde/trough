@@ -13,10 +13,12 @@ through declarations that are not listed. For each listed module it records the
 module docstring and the documented declarations, in source order.
 
 A definition's body counts as part of its statement, and a structure's fields
-(its constructor's type) do too. Walking through an unlisted declaration
-follows its type, and also its body when it is data; walking for a proof
-follows types and bodies alike. The walk leaves out tactic scripts and does not
-go through tactic machinery (see `withoutTactics` and `isTactic`).
+(its constructor's type) do too. A statement reaches listed declarations
+through the statements of unlisted ones. A proof reaches what the statements of
+the declarations it uses reach, and the proofs of unlisted declarations from
+its own module count as part of it; proofs elsewhere do not, since following
+them reaches most of the library. The walk leaves out tactic scripts and does
+not go through tactic machinery (see `withoutTactics` and `isTactic`).
 
 This is a plain file, not a `module`: a plain importer sees each module's
 private part, which is where Mathlib's theorem proofs live under the module
@@ -80,21 +82,37 @@ def kindOf (env : Environment) (info : ConstantInfo) : String :=
   | .recInfo _ => "recursor"
   | .quotInfo _ => "quot"
 
-/-- A constant waiting on the walk's stack, with its uses once it is expanded. -/
+/-- The declarations `name`'s proof uses, the proofs of unlisted declarations from `name`'s
+own module counted as part of it. -/
+def proofReach (env : Environment) (index : Std.HashMap Name Nat) (name : Name) (uses : Array Name) :
+    Array Name := Id.run do
+  let home := (env.getModuleIdxFor? name).map (·.toNat)
+  let mut seen : Std.HashSet Name := {}
+  let mut stack := uses
+  while !stack.isEmpty do
+    let u := stack.back!
+    stack := stack.pop
+    if seen.contains u || isTactic u then continue
+    seen := seen.insert u
+    if index.contains u || (env.getModuleIdxFor? u).map (·.toNat) != home then continue
+    if let some info := env.find? u then
+      stack := stack ++ (directUses env info).2
+  return seen.toArray
+
+/-- A constant waiting on the walk's stack, with its statement's uses once it is expanded. -/
 structure Frame where
   name : Name
-  uses : Option (Array Name × Array Name) := none
+  uses : Option (Array Name) := none
 deriving Inhabited
 
-/-- For every unlisted constant reachable from `starts`, the listed constants it reaches
-without passing another listed one: through statements only, and through statements and
-proofs. Bit `i` stands for the `i`th listed declaration. The walk keeps its own stack, since
-Mathlib's dependency chains run deeper than Lean's call stack. A constant met again while it
-is still being walked contributes what is known of it so far. -/
+/-- For every unlisted constant whose statement is reachable from `starts`, the listed
+constants its statement reaches without passing another listed one. Bit `i` stands for the
+`i`th listed declaration. The walk keeps its own stack, since Mathlib's dependency chains run
+deeper than Lean's call stack. A constant met again while it is still being walked
+contributes what is known of it so far. -/
 def fronts (env : Environment) (index : Std.HashMap Name Nat) (starts : Array Name) :
-    Std.HashMap Name Nat × Std.HashMap Name Nat := Id.run do
+    Std.HashMap Name Nat := Id.run do
   let mut stmt : Std.HashMap Name Nat := {}
-  let mut all : Std.HashMap Name Nat := {}
   let mut active : Std.HashSet Name := {}
   for start in starts do
     if index.contains start || stmt.contains start || isTactic start then continue
@@ -109,32 +127,20 @@ def fronts (env : Environment) (index : Std.HashMap Name Nat) (starts : Array Na
           match env.find? frame.name with
           | none => stack := stack.pop
           | some info =>
-            let uses := directUses env info
+            let uses := (directUses env info).1
             stack := stack.set! (stack.size - 1) { frame with uses := some uses }
             active := active.insert frame.name
-            for u in uses.1 ++ uses.2 do
+            for u in uses do
               unless index.contains u || stmt.contains u || active.contains u || isTactic u do
                 stack := stack.push { name := u }
-      | some (statementUses, proofUses) =>
+      | some uses =>
         stack := stack.pop
         active := active.erase frame.name
         let mut s := 0
-        let mut a := 0
-        for u in statementUses do
-          match index[u]? with
-          | some i =>
-            s := s ||| (1 <<< i)
-            a := a ||| (1 <<< i)
-          | none =>
-            s := s ||| stmt.getD u 0
-            a := a ||| all.getD u 0
-        for u in proofUses do
-          match index[u]? with
-          | some i => a := a ||| (1 <<< i)
-          | none => a := a ||| all.getD u 0
+        for u in uses do
+          s := s ||| (match index[u]? with | some i => 1 <<< i | none => stmt.getD u 0)
         stmt := stmt.insert frame.name s
-        all := all.insert frame.name a
-  return (stmt, all)
+  return stmt
 
 def names (listed : Array Name) (bits exclude : Nat) : Json := Id.run do
   let mut out : Array Json := #[]
@@ -166,6 +172,7 @@ def run : MetaM Unit := do
   -- `moduleNames` builds a fresh array on every call; take it once.
   let moduleNames := env.header.moduleNames
   let mut starts : Array Name := #[]
+  let mut proofs : Std.HashMap Name (Array Name) := {}
   let mut missing : Array Json := #[]
   let mut theorems := 0
   let mut withProof := 0
@@ -174,22 +181,23 @@ def run : MetaM Unit := do
     | none => missing := missing.push (Json.str name.toString)
     | some info =>
       let (statementUses, proofUses) := directUses env info
-      starts := starts ++ (statementUses ++ proofUses).filter (!index.contains ·)
+      let reached := proofReach env index name proofUses
+      proofs := proofs.insert name reached
+      starts := starts ++ (statementUses ++ reached).filter (!index.contains ·)
       if info matches .thmInfo _ then
         theorems := theorems + 1
         unless proofUses.isEmpty do withProof := withProof + 1
   if theorems > 0 && withProof == 0 then
     throwError "none of the {theorems} listed theorems has a readable proof; private module data is missing"
-  let (stmtFront, allFront) := fronts env index starts
+  let stmtFront := fronts env index starts
   let mut concepts : Array (String × Json) := #[]
   for i in [0:listed.size] do
     let name := listed[i]!
     let some info := env.find? name | continue
-    let (statementUses, proofUses) := directUses env info
-    let s := statementUses.foldl (init := 0) fun acc u =>
+    let front (acc : Nat) (u : Name) : Nat :=
       acc ||| (match index[u]? with | some j => 1 <<< j | none => stmtFront.getD u 0)
-    let p := proofUses.foldl (init := 0) fun acc u =>
-      acc ||| (match index[u]? with | some j => 1 <<< j | none => allFront.getD u 0)
+    let s := (directUses env info).1.foldl front 0
+    let p := (proofs.getD name #[]).foldl front 0
     let self := 1 <<< i
     let module := (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!.toString
     let doc ← findDocString? env name

@@ -8,7 +8,7 @@ mathlib_file: Mathlib/LinearAlgebra/Eigenspace/Basic.lean
 
 # Eigenvector
 
-A nonzero element of an eigenspace is an eigenvector. (Def 5.8 of [axler2024])
+A nonzero element of an eigenspace is an eigenvector. (Def 5.8 of [axler2024](https://leanprover-community.github.io/mathlib4_docs/references.html#ref_axler2024))
 
 ```lean
 Module.End.HasEigenvector.{v, w} {R : Type v} {M : Type w} [CommRing R] [AddCommGroup M]

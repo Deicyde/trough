@@ -9,7 +9,7 @@ mathlib_file: Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean
 # The Solution of the General Quartic Equation
 
 **The Solution of Quartic**.
-The roots of a quartic polynomial when `q` is nonzero. See [Zwillinger](zwillinger2003).
+The roots of a quartic polynomial when `q` is nonzero. See [Zwillinger](https://leanprover-community.github.io/mathlib4_docs/references.html#ref_zwillinger2003).
 Here, `u` needs to satisfy the cubic resolvent. An explicit expression of `u` is possible using
 the cubic formula, but would be too long.
 

@@ -316,12 +316,18 @@ def note_text(note: str) -> str:
 
 
 def clean_doc(doc: str) -> str:
-    """A docstring as statement prose: headings become bold lines, math stays safe."""
+    """A docstring as statement prose: headings become bold lines, citations link to
+    Mathlib's bibliography, math stays safe."""
     lines = []
     for line in doc.strip().splitlines():
         heading = re.match(r"^\s*#+\s+(.*)$", line)
         lines.append(f"**{heading.group(1).strip()}**" if heading else line.rstrip())
-    return safe_math_markdown("\n".join(lines).strip())
+    text = "\n".join(lines).strip()
+    # doc-gen4 reads a link to a bare key, [Zwillinger](zwillinger2003), and a bracketed
+    # key, [axler2024], as citations of Mathlib's docs/references.bib.
+    text = re.sub(r"\]\(([A-Za-z][\w-]*)\)", rf"]({DOCS}/references.html#ref_\1)", text)
+    text = re.sub(r"(?<![\]\w])\[([A-Za-z]+\d{4}[a-z]?)\](?![(\[])", rf"[\1]({DOCS}/references.html#ref_\1)", text)
+    return safe_math_markdown(text)
 
 
 def fence(code: str) -> str:
@@ -679,9 +685,10 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
     if sources.deps:
         edges = (
             f"An article's *Depends on* list names the nearest concepts on these lists that its "
-            f"statement uses, and *Proof depends on* those its proof uses, read from Mathlib's "
-            f"declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a dependency already "
-            f"reached through another is left out. This leaves {edge_stats['statement']:,} statement and "
+            f"statement uses, and *Proof depends on* those its proof uses, where a lemma from another "
+            f"file counts by its statement and a helper lemma from the same file by its proof too. Both "
+            f"are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a "
+            f"dependency already reached through another is left out. This leaves {edge_stats['statement']:,} statement and "
             f"{edge_stats['proof']:,} proof edges, from {edge_stats['statement_raw']:,} and "
             f"{edge_stats['proof_raw']:,} nearest-concept edges"
             + (f"; {edge_stats['informal']} edges that would close a cycle are listed as *Informally uses*." if edge_stats["informal"] else ".")
