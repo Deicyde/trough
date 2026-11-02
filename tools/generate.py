@@ -3,7 +3,7 @@
 
     python tools/generate.py            write the pages
     python tools/generate.py --check    fail if a page differs from what would be written
-    python tools/generate.py --concepts lean/concepts.txt --modules lean/modules.txt
+    python tools/generate.py --concepts lean/concepts.txt --modules lean/modules.txt --cited lean/cited.txt
                                         write the Lean dump's inputs and stop
 
 Everything under blueprint/roadmap/ is generated, and so are
@@ -18,20 +18,24 @@ import json
 import sys
 from pathlib import Path
 
-from trough import blueprints, catalog, mathlib
+from collections import Counter
+
+from trough import blueprints, catalog, mathlib, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
 VAULT = ROOT / "blueprint"
 ROADMAP = VAULT / "roadmap"
 DATA = ROOT / "data"
+WIKI = ROOT / "wiki" / "mathlib"
 
 
 def generate() -> dict[Path, str]:
     libraries = catalog.load(ROOT / "catalog" / "libraries.toml")
     sources = mathlib.load_sources(DATA)
-    chapter, stats = mathlib.chapter(sources)
+    chapter, stats, targets = mathlib.chapter(sources, wiki.load(WIKI))
     assign_paths(chapter, ROADMAP / "mathlib")
+    blueprints.resolve(blueprints.Built(chapter, targets, {}, {}, Counter()), VAULT)
     files = render_tree(chapter, VAULT)
     chapters = {"mathlib": "mathlib/README.md"}
     # A blueprint node in Mathlib is the Mathlib-chapter article its first declaration heads.
@@ -82,8 +86,9 @@ def generate() -> dict[Path, str]:
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
     )
     print(
-        f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['wanted']} not yet), "
-        f"{stats['statement']} statement and {stats['proof']} proof edges, {stats['informal']} informal",
+        f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['wanted']} not yet, "
+        f"{stats['authored']} authored), {stats['statement']} statement and {stats['proof']} proof edges, "
+        f"{stats['informal']} informal",
         file=sys.stderr,
     )
     return files
@@ -102,7 +107,10 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="fail if any generated page is stale")
     parser.add_argument("--concepts", type=Path, help="write the listed declaration names here and stop")
     parser.add_argument("--modules", type=Path, help="write the listed module names here and stop")
+    parser.add_argument("--cited", type=Path, help="write the names the wiki's articles cite here and stop")
     args = parser.parse_args()
+    if args.cited:
+        args.cited.write_text("".join(f"{name}\n" for name in wiki.cited(wiki.load(WIKI))), encoding="utf-8")
     if args.concepts or args.modules:
         # Listing needs only the lists: the dump may be of the previous pin.
         articles = mathlib.merge(mathlib.load_sources(DATA, deps=False).lists)
@@ -112,6 +120,7 @@ def main() -> int:
             args.concepts.write_text("".join(f"{name}\n" for name in names), encoding="utf-8")
         if args.modules:
             args.modules.write_text("".join(f"{name}\n" for name in mathlib.module_names(articles)), encoding="utf-8")
+    if args.concepts or args.modules or args.cited:
         return 0
     files = generate()
     stale = sorted(owned() - set(files))

@@ -16,12 +16,14 @@ on:
     paths:
       - "lean/**"
       - "tools/**"
+      - "wiki/**"
       - "data/thousand-plus.json"
       - ".github/workflows/mathlib-data.yml"
   pull_request:
     paths:
       - "lean/**"
       - "tools/**"
+      - "wiki/**"
       - "data/thousand-plus.json"
       - ".github/workflows/mathlib-data.yml"
   workflow_dispatch:
@@ -157,13 +159,14 @@ jobs:
       - name: List the declarations and modules to read
         run: >-
           uv run --no-dev python tools/generate.py
-          --concepts lean/concepts.txt --modules lean/modules.txt
+          --concepts lean/concepts.txt --modules lean/modules.txt --cited lean/cited.txt
 
       - name: Read the declaration graph
         working-directory: lean
         env:
           TROUGH_CONCEPTS: concepts.txt
           TROUGH_MODULES: modules.txt
+          TROUGH_CITED: cited.txt
           TROUGH_OUT: ../data/mathlib/concept-deps.json
           TROUGH_MATHLIB_REV: ${{ steps.pin.outputs.rev }}
         run: /usr/bin/time -v lake env lean ConceptDeps.lean

@@ -14,6 +14,11 @@ module docstring, Markdown or Verso, and the documented declarations, in source
 order. A listed name that does not resolve, or listed theorems whose proofs
 cannot be read, stop the run rather than give partial data.
 
+The names the wiki's articles cite, one per line in `$TROUGH_CITED` if it is set,
+get the same description (module, kind, line and signature) but are not walked,
+so citing a lemma changes no edge. A cited name that does not resolve, or that
+Mathlib deprecates, stops the run.
+
 A definition's body counts as part of its statement, and a structure's fields
 (its constructor's type) do too. A statement reaches listed declarations
 through the statements of unlisted ones, where an unlisted instance's statement
@@ -30,7 +35,7 @@ This is a plain file, not a `module`: a plain importer sees each module's
 private part, which is where Mathlib's theorem proofs live under the module
 system.
 
-    TROUGH_CONCEPTS=concepts.txt TROUGH_MODULES=modules.txt TROUGH_OUT=out.json \
+    TROUGH_CONCEPTS=concepts.txt TROUGH_MODULES=modules.txt TROUGH_CITED=cited.txt TROUGH_OUT=out.json \
       lake env lean ConceptDeps.lean
 -/
 
@@ -240,6 +245,33 @@ def run : MetaM Unit := do
       ("signature", optionalJson signature),
       ("statement", names listed s self),
       ("proof", names listed p (s ||| self))])
+  let mut cited : Array (String × Json) := #[]
+  let mut unresolved : Array String := #[]
+  let mut deprecations : Array String := #[]
+  if let some citedPath := (← IO.getEnv "TROUGH_CITED") then
+    for name in ← readNames citedPath do
+      match env.find? name with
+      | none => unresolved := unresolved.push name.toString
+      | some info =>
+        if Linter.isDeprecated env name then
+          let replacement := ((Linter.getDeprecatedNewName env name).map fun n => s!" (use {n})").getD ""
+          deprecations := deprecations.push s!"{name}{replacement}"
+        let module := (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!.toString
+        let line := (← findDeclarationRanges? name).map (·.range.pos.line)
+        let mut signature : Option String := none
+        try
+          signature := some ((← PrettyPrinter.ppSignature name).fmt.pretty 100)
+        catch _ =>
+          pure ()
+        cited := cited.push (name.toString, Json.mkObj [
+          ("module", optionalJson module),
+          ("kind", Json.str (kindOf env info)),
+          ("line", match line with | some l => toJson l | none => Json.null),
+          ("signature", optionalJson signature)])
+  unless unresolved.isEmpty do
+    throwError "cited names that do not resolve: {unresolved.toList}"
+  unless deprecations.isEmpty do
+    throwError "cited names that Mathlib deprecates: {deprecations.toList}"
   let mut modules : Array (String × Json) := #[]
   for module in ← readNames modulesPath do
     match env.getModuleIdx? module with
@@ -273,10 +305,12 @@ def run : MetaM Unit := do
     ("schema", "trough-concept-deps/v1"),
     ("mathlib_rev", rev),
     ("concepts", Json.mkObj concepts.toList),
+    ("cited", Json.mkObj cited.toList),
     ("missing", Json.arr missing),
     ("modules", Json.mkObj modules.toList),
     ("stats", Json.mkObj [
       ("listed", toJson listed.size),
+      ("cited", toJson cited.size),
       ("theorems", toJson theorems),
       ("theorems_with_proof", toJson withProof),
       ("walked", toJson stmtFront.size)])]

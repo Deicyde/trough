@@ -106,7 +106,7 @@ def record(statement=(), proof=(), kind="theorem"):
 
 
 def edges(sources):
-    root, stats = mathlib.chapter(sources)
+    root, stats, _ = mathlib.chapter(sources)
     assign_paths(root, Path("blueprint/roadmap/mathlib"))
     leaves = {node.title: node for node in walk(root) if not hasattr(node, "entries")}
     return leaves, stats
@@ -136,7 +136,7 @@ def test_edges_that_close_a_cycle_become_informal():
 
 def test_real_lists_give_one_home_per_article_and_unique_first_declarations():
     sources = mathlib.load_sources(DATA)
-    root, stats = mathlib.chapter(sources)
+    root, stats, _ = mathlib.chapter(sources)
     assign_paths(root, Path("blueprint/roadmap/mathlib"))
     leaves = [node for node in walk(root) if not hasattr(node, "entries")]
     assert len(leaves) == stats["articles"]
@@ -170,7 +170,7 @@ def test_shared_titles_get_the_nearest_section_that_differs():
         "1000": [mathlib.Item("1000", "Q1", (), "Chain rule", 3, decls=("C",))],
     }
     sources = mathlib.Sources("r", "", lists, None, None)
-    root, _ = mathlib.chapter(sources)
+    root, _, _ = mathlib.chapter(sources)
     titles = sorted(node.title for node in walk(root) if not hasattr(node, "entries"))
     assert titles == ["Chain rule (1000+ theorems)", "Chain rule (Analysis)", "Chain rule (Real analysis)"]
 
@@ -192,7 +192,7 @@ def test_a_shared_declaration_links_to_the_article_it_heads():
     }
     deps = {"mathlib_rev": "r", "modules": {},
             "concepts": {"A": record(kind="def"), "B": record(), "C": record(statement=["A"])}}
-    root, _ = mathlib.chapter(mathlib.Sources("r", "", lists, deps, None))
+    root, _, _ = mathlib.chapter(mathlib.Sources("r", "", lists, deps, None))
     leaves = {node.title: node for node in walk(root) if not hasattr(node, "entries")}
     assert [leaf.title for leaf in leaves["Gamma"].depends] == ["Alpha"]
 
