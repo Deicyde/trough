@@ -29,7 +29,7 @@ ContDiff.{u, uE, uF} (𝕜 : Type u) [NontriviallyNormedField 𝕜] {E : Type uE
 - [Analytic function](analytic-function.md)
 - [Differentiable function between normed vector spaces](differentiable-function-between-normed-vector-sp.md)
 - [Norm of a continuous linear map](../normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

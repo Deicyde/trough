@@ -31,7 +31,7 @@ EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero.{u_1, u_2
 - [Cauchy-Schwarz inequality](../../../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
 - [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Existence of bases](../../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Fundamental sequences](../../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Ideal of a commutative ring](../../../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)

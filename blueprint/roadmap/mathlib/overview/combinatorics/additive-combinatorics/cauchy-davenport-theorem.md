@@ -20,7 +20,7 @@ ZMod.cauchy_davenport {p : ℕ} (hp : Nat.Prime p) {s t : Finset (ZMod p)} (hs :
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Irreducible element](../../general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
@@ -29,7 +29,7 @@ ZMod.cauchy_davenport {p : ℕ} (hp : Nat.Prime p) {s t : Finset (ZMod p)} (hs :
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic of a ring](../../general-algebra/field-theory/characteristic-of-a-ring.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Periodic points](../../dynamics/general-theory/periodic-points.md)
 - [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)

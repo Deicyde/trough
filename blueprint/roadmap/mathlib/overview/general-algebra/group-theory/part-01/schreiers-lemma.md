@@ -28,7 +28,7 @@ Subgroup.closure_mul_image_eq.{u_1} {G : Type u_1} [Group G] {H : Subgroup G} {R
 
 - [Group morphism](group-morphism.md)
 - [Permutation group of a type](../part-02/permutation-group-of-a-type.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

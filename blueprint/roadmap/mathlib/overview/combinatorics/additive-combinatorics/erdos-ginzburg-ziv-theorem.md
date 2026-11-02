@@ -21,7 +21,7 @@ ZMod.erdos_ginzburg_ziv.{u_1} {ι : Type u_1} {n : ℕ} {s : Finset ι} (a : ι 
 ## Depends on
 
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on

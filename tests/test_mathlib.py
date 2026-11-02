@@ -144,3 +144,32 @@ def test_real_lists_give_one_home_per_article_and_unique_first_declarations():
     firsts = [name for name in firsts if name]
     assert len(firsts) == len(set(firsts))
     assert all(dict(leaf.fields).get("not_ready") == "true" or dict(leaf.fields).get("mathlib") == "true" for leaf in leaves)
+
+
+def test_items_naming_nothing_merge_by_title_across_lists_only():
+    lists = {
+        "overview": [],
+        "undergrad": [
+            mathlib.Item("undergrad", "u1", ("Analysis", "Series"), "error estimation", 1),
+            mathlib.Item("undergrad", "u2", ("Numerics", "Integration"), "error estimation", 2),
+        ],
+        "100": [mathlib.Item("100", "5", (), "Prime Number Theorem", 3)],
+        "1000": [mathlib.Item("1000", "Q386292", (), "Prime number theorem", 4)],
+    }
+    articles = mathlib.merge(lists)
+    assert sorted(len(article.items) for article in articles) == [1, 1, 2]
+    pnt = next(article for article in articles if len(article.items) == 2)
+    assert pnt.home.list == "100"
+
+
+def test_shared_titles_get_the_nearest_section_that_differs():
+    lists = {
+        "overview": [mathlib.Item("overview", "a", ("Analysis", "Differentiability"), "chain rule", 1, decls=("A",))],
+        "undergrad": [mathlib.Item("undergrad", "b", ("Real analysis", "Differentiability"), "chain rule", 2, decls=("B",))],
+        "100": [],
+        "1000": [mathlib.Item("1000", "Q1", (), "chain rule", 3, decls=("C",))],
+    }
+    sources = mathlib.Sources("r", "", lists, None, None)
+    root, _ = mathlib.chapter(sources)
+    titles = sorted(node.title for node in walk(root) if not hasattr(node, "entries"))
+    assert titles == ["Chain rule (1000+ theorems)", "Chain rule (Analysis)", "Chain rule (Real analysis)"]

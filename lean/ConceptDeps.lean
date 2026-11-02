@@ -15,7 +15,8 @@ module docstring and the documented declarations, in source order.
 A definition's body counts as part of its statement, and a structure's fields
 (its constructor's type) do too. Walking through an unlisted declaration
 follows its type, and also its body when it is data; walking for a proof
-follows types and bodies alike.
+follows types and bodies alike. The walk leaves out tactic scripts and does not
+go through tactic machinery (see `withoutTactics` and `isTactic`).
 
 This is a plain file, not a `module`: a plain importer sees each module's
 private part, which is where Mathlib's theorem proofs live under the module
@@ -29,17 +30,35 @@ open Lean Meta
 
 namespace TroughDump
 
+/-- `e` without the tactic scripts of its `autoParam`s. A structure field with a `by ...`
+default carries that script as `Lean.Syntax` in its type, and the script's constants
+(`Array`, `List`, `Lean.Name`, ...) are not part of the mathematics. -/
+partial def withoutTactics (e : Expr) : Expr :=
+  e.replace fun t =>
+    if t.isAppOfArity ``autoParam 2 then some (withoutTactics t.appFn!.appArg!) else none
+
+/-- The constants an expression uses, its tactic scripts left out. -/
+def usedConstants (e : Expr) : Array Name :=
+  (withoutTactics e).getUsedConstants
+
+/-- Constants of tactic machinery: the walk does not go through them. Their certificates
+(`omega`'s linear combinations, `ring`'s normal forms) would otherwise make a proof
+depend on `List` or `Array`. -/
+def isTactic (name : Name) : Bool :=
+  [`Lean, `Mathlib.Tactic, `Mathlib.Meta, `Aesop, `Qq, `Batteries.Tactic, `Std.Tactic, `Linarith,
+    `Polyrith].any (·.isPrefixOf name)
+
 /-- What a constant's statement uses, and what its proof uses. -/
 def directUses (env : Environment) (info : ConstantInfo) : Array Name × Array Name :=
-  let type := info.type.getUsedConstants
+  let type := usedConstants info.type
   match info with
-  | .thmInfo val => (type, val.value.getUsedConstants)
-  | .defnInfo val => (type ++ val.value.getUsedConstants, #[])
-  | .opaqueInfo val => (type ++ val.value.getUsedConstants, #[])
+  | .thmInfo val => (type, usedConstants val.value)
+  | .defnInfo val => (type ++ usedConstants val.value, #[])
+  | .opaqueInfo val => (type ++ usedConstants val.value, #[])
   | .inductInfo val =>
     let fields := val.ctors.foldl (init := type) fun acc ctor =>
       match env.find? ctor with
-      | some c => acc ++ c.type.getUsedConstants
+      | some c => acc ++ usedConstants c.type
       | none => acc
     (fields, #[])
   | _ => (type, #[])
@@ -78,7 +97,7 @@ def fronts (env : Environment) (index : Std.HashMap Name Nat) (starts : Array Na
   let mut all : Std.HashMap Name Nat := {}
   let mut active : Std.HashSet Name := {}
   for start in starts do
-    if index.contains start || stmt.contains start then continue
+    if index.contains start || stmt.contains start || isTactic start then continue
     let mut stack : Array Frame := #[{ name := start }]
     while !stack.isEmpty do
       let frame := stack.back!
@@ -94,7 +113,7 @@ def fronts (env : Environment) (index : Std.HashMap Name Nat) (starts : Array Na
             stack := stack.set! (stack.size - 1) { frame with uses := some uses }
             active := active.insert frame.name
             for u in uses.1 ++ uses.2 do
-              unless index.contains u || stmt.contains u || active.contains u do
+              unless index.contains u || stmt.contains u || active.contains u || isTactic u do
                 stack := stack.push { name := u }
       | some (statementUses, proofUses) =>
         stack := stack.pop

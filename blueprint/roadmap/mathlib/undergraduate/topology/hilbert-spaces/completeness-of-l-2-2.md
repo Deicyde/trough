@@ -31,7 +31,7 @@ MeasureTheory.Lp.instCompleteSpace.{u_1, u_3} {α : Type u_1} {m : MeasurableSpa
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
 - [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)

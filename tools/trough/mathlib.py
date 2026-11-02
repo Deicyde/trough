@@ -227,12 +227,14 @@ def load_sources(data: Path) -> Sources:
 
 
 def merge(lists: dict[str, list[Item]]) -> list[Article]:
-    """One article per concept; one per item that names nothing.
+    """One article per concept.
 
     Items naming the same set of declarations, or the same first declaration, are
     one concept: an article's first declaration is the one that takes its credit.
     Sharing only a later declaration does not merge two items, since a common
-    lemma does not make two results the same.
+    lemma does not make two results the same. An item naming nothing is known by
+    its title alone: the same title in another list is the same concept, a second
+    one in the same list is not.
     """
     articles: dict[object, Article] = {}
     for name in LISTS:
@@ -252,7 +254,9 @@ def merge(lists: dict[str, list[Item]]) -> list[Article]:
             elif item.module:
                 key = ("module", item.module)
             else:
-                key = ("item", item.list, item.key)
+                key = ("wanted", item.title.casefold())
+                if key in articles and any(other.list == item.list for other in articles[key].items):
+                    key = ("item", item.list, item.key)
             if key in articles:
                 articles[key].items.append(item)
             else:
@@ -308,7 +312,7 @@ def link_url(url: str) -> str:
 def note_text(note: str) -> str:
     """A list's note as a sentence, with bare URLs made links."""
     note = re.sub(r"(?<![(<\[])\bhttps?://[^\s)>\]]+?(?=[.,;:]?(?:\s|$))", lambda url: f"<{url.group()}>", note.strip())
-    return note if note.endswith((".", "!", "?", ">", ")")) else note + "."
+    return note if note.endswith((".", "!", "?")) else note + "."
 
 
 def clean_doc(doc: str) -> str:
@@ -371,7 +375,7 @@ def external_lines(sources: Sources, article: Article) -> tuple[list[str], list[
     return list(dict.fromkeys(prose)), list(dict.fromkeys(links))
 
 
-def build_leaf(sources: Sources, article: Article) -> Leaf:
+def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = frozenset()) -> Leaf:
     home = article.home
     title = capitalize(home.title)
     concepts = (sources.deps or {}).get("concepts", {})
@@ -428,14 +432,16 @@ def build_leaf(sources: Sources, article: Article) -> Leaf:
         body += prose
         fields = [("declaration", default_kind(article)), ("origin", "cited"), ("mathlib", "true")]
         # autoform credits a Mathlib article to its declarations; a module's are its
-        # documented ones, in source order, the first MODULE_DECLARATIONS of them.
-        declared = (modules.get(module) or {}).get("decls") or []
+        # documented ones that no other article claims, in source order, the first
+        # MODULE_DECLARATIONS of them.
+        documented = (modules.get(module) or {}).get("decls") or []
+        declared = [name for name in documented if name not in claimed][:MODULE_DECLARATIONS]
         if declared:
-            fields.append(("mathlib_declaration", ", ".join(declared[:MODULE_DECLARATIONS])))
-            more = len(declared) - MODULE_DECLARATIONS
+            fields.append(("mathlib_declaration", ", ".join(declared)))
+            more = len(documented) - len(declared)
             body.append(
-                f"Its {len(declared)} documented declarations include "
-                + ", ".join(f"`{name}`" for name in declared[:MODULE_DECLARATIONS])
+                f"Its {len(documented)} documented declarations include "
+                + ", ".join(f"`{name}`" for name in declared)
                 + (f", and {more} more." if more > 0 else ".")
             )
         fields.append(("mathlib_file", module_path(module)))
@@ -633,18 +639,37 @@ def link_edges(sources: Sources, articles: list[Article]) -> dict[str, int]:
             child for child in proof[node]
             if not any(other is not child and reach_all[other] >> index[child] & 1 for other in both)
         }
-        node.leaf.depends = sorted((child.leaf for child in keep_stmt), key=lambda leaf: leaf.title.casefold())
-        node.leaf.proof_depends = sorted((child.leaf for child in keep_proof), key=lambda leaf: leaf.title.casefold())
-        node.leaf.informal = sorted((child.leaf for child in informal[node]), key=lambda leaf: leaf.title.casefold())
+        node.leaf.depends = [child.leaf for child in sorted(keep_stmt, key=sort_key)]
+        node.leaf.proof_depends = [child.leaf for child in sorted(keep_proof, key=sort_key)]
+        node.leaf.informal = [child.leaf for child in sorted(informal[node], key=sort_key)]
         stats["statement"] += len(keep_stmt)
         stats["proof"] += len(keep_proof)
     return stats
 
 
+def disambiguate(articles: list[Article]) -> None:
+    """Add to each shared title the nearest section that tells its articles apart."""
+    groups: dict[str, list[Article]] = defaultdict(list)
+    for article in articles:
+        groups[article.leaf.title.casefold()].append(article)
+    for group in groups.values():
+        if len(group) < 2:
+            continue
+        contexts = [(LIST_TITLES[article.home.list], *article.home.path) for article in group]
+        for depth in range(1, max(map(len, contexts)) + 1):
+            names = [context[-min(depth, len(context))] for context in contexts]
+            if len(set(names)) == len(names):
+                for article, name in zip(group, names):
+                    article.leaf.title = f"{article.leaf.title} ({name})"
+                break
+
+
 def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
     articles = merge(sources.lists)
+    claimed = frozenset(concept_names(articles))
     for article in articles:
-        article.leaf = build_leaf(sources, article)
+        article.leaf = build_leaf(sources, article, claimed)
+    disambiguate(articles)
     articles_by_item = {id(item): article for article in articles for item in article.items}
     edge_stats = link_edges(sources, articles)
     formalized = sum(article.kind != "wanted" for article in articles)
@@ -670,8 +695,8 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
             "the 1000+ theorems project. This chapter has one article per concept on those lists, read at "
             f"Mathlib commit {rev_link}{date}: {len(articles):,} articles, {formalized:,} of them in Mathlib "
             f"and {wanted:,} not yet.",
-            "An item that names the same declarations in several lists is one article, placed in the first "
-            "list that has it; the other lists link to it. An article in Mathlib names its declarations, "
+            "Items that name the same declarations in several lists, or name none and share a title, are one "
+            "article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, "
             "with their documentation and source. One that Mathlib lacks is marked not ready: its statement "
             "and prerequisites are still to be written.",
             edges,

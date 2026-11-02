@@ -19,14 +19,14 @@ Real.summable_one_div_nat_rpow {p : ℝ} : (Summable fun n => 1 / ↑n ^ p) ↔ 
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
-- [Power functions](../elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../elementary-functions-trigonometric-rational-exp/power-functions.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness of R](../topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Intermediate value theorem](../../../overview/topology/topological-algebra/intermediate-value-theorem.md)

@@ -22,7 +22,7 @@ TendstoLocallyUniformlyOn.differentiableOn.{u_1, u_2} {E : Type u_1} {ι : Type 
 ## Depends on
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Holomorphic functions](holomorphic-functions.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 

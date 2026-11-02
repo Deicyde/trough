@@ -64,7 +64,12 @@ class Container:
 
 
 def slugify(text: str, limit: int = 48) -> str:
-    text = re.sub(r"\$[^$]*\$", lambda math: re.sub(r"\\[A-Za-z]+", " ", math.group()), text)
+    # In math, font commands go and other commands keep their names: $\C$ reads "C".
+    text = re.sub(
+        r"\$[^$]*\$",
+        lambda math: re.sub(r"\\([A-Za-z]+)", r" \1 ", re.sub(r"\\(?:math[a-z]*|operatorname|text)\b", " ", math.group())),
+        text,
+    )
     text = re.sub(r"[\u2010-\u2015\u2212]", "-", text)
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     slug = re.sub(r"[^a-z0-9]+", "-", re.sub(r"['’]", "", text.lower())).strip("-")

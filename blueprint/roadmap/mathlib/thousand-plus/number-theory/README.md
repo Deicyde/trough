@@ -106,7 +106,7 @@
 - [Niven's theorem](part-05/nivens-theorem.md)
 - [Ostrowski's theorem](part-05/ostrowskis-theorem.md)
 - [Pentagonal number theorem](part-05/pentagonal-number-theorem.md)
-- [Prime number theorem](part-05/prime-number-theorem.md)
+- [Prime number theorem](../../hundred-theorems/part-01/prime-number-theorem.md)
 - [Principal ideal theorem](part-05/principal-ideal-theorem.md)
 - [Proth's theorem](part-05/proths-theorem.md)
 - [Quadratic reciprocity theorem](../../overview/general-algebra/number-theory/quadratic-reciprocity.md)

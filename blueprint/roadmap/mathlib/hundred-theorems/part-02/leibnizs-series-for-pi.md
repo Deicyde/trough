@@ -20,7 +20,7 @@ Real.tendsto_sum_pi_div_four :
 ## Depends on
 
 - [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Cos](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on

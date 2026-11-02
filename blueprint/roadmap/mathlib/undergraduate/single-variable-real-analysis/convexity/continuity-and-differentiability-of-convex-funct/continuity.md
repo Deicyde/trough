@@ -6,7 +6,7 @@ mathlib_declaration: ConvexOn.continuousOn
 mathlib_file: Mathlib/Analysis/Convex/Continuous.lean
 ---
 
-# Continuity
+# Continuity (continuity and differentiability of convex functions)
 
 Mathlib states this as `ConvexOn.continuousOn`.
 
@@ -18,7 +18,7 @@ ConvexOn.continuousOn.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace â
 ## Depends on
 
 - [Convex function](../../../../overview/analysis/convexity/convex-function.md)
-- [Field $\R$ of real numbers](../../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite-dimensionality](../../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Metric structure](../../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
@@ -47,7 +47,7 @@ ConvexOn.continuousOn.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace â
 - [Local ring](../../../../overview/general-algebra/rings/local-ring.md)
 - [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)
 - [Polynomial in several indeterminates](../../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Quotient space](../../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Squeeze theorem](../../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
 - [Subring](../../../../overview/general-algebra/rings/subring.md)
 - [The Fundamental Theorem of Arithmetic](../../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)

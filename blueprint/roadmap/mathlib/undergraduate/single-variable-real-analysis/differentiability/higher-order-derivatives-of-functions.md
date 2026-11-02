@@ -22,7 +22,7 @@ iteratedDeriv.{u_1, u_2} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] {F : T
 - [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Multilinear map](../../../overview/linear-algebra/fundamentals/multilinear-map.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

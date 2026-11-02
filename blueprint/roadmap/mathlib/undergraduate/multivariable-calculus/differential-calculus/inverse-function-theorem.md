@@ -6,7 +6,7 @@ mathlib_declaration: HasStrictDerivAt.to_localInverse
 mathlib_file: Mathlib/Analysis/Calculus/InverseFunctionTheorem/Deriv.lean
 ---
 
-# Inverse function theorem
+# Inverse function theorem (Differential calculus)
 
 Mathlib states this as `HasStrictDerivAt.to_localInverse`.
 
@@ -20,17 +20,17 @@ HasStrictDerivAt.to_localInverse.{u_1} {𝕜 : Type u_1} [NontriviallyNormedFiel
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Proof depends on
 
-- [Inverse function theorem](../../../overview/analysis/differentiability/inverse-function-theorem.md)
+- [Inverse function theorem (Differentiability)](../../../overview/analysis/differentiability/inverse-function-theorem.md)
 
 ## Sources
 

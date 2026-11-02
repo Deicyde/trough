@@ -32,13 +32,13 @@ Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line.{u_1, u_2, u_3
 
 - [Barycenter](../../overview/geometry/affine-and-euclidean-geometry/barycenter.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Group](../../overview/general-algebra/group-theory/part-01/group.md)
 - [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

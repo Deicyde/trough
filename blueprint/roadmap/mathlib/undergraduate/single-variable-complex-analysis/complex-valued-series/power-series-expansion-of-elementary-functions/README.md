@@ -1,5 +1,5 @@
 # Power series expansion of elementary functions
 
-- [Cos](cos.md)
-- [Sin](sin.md)
+- [Cos (power series expansion of elementary functions)](cos.md)
+- [Sin (power series expansion of elementary functions)](sin.md)
 - [Log](log.md)

@@ -24,7 +24,7 @@ Complex.differentiableOn_update_limUnder_insert_of_isLittleO.{u} {E : Type u} [N
 
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 

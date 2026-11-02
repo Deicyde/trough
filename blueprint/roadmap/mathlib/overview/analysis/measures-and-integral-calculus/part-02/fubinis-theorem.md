@@ -40,7 +40,7 @@ MeasureTheory.integral_prod.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {E :
 - [Fatou's lemma](../part-01/fatous-lemma.md)
 - [Finite-dimensional normed spaces over complete normed fields are complete](../../normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
 - [Inner product space, over $R$ or $C$](../../hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Monotone convergence theorem](../part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../part-01/monotone-convergence-theorem.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources

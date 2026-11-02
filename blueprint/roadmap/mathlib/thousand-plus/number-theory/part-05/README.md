@@ -16,7 +16,7 @@ navigation: transparent
 - [Niven's theorem](nivens-theorem.md)
 - [Ostrowski's theorem](ostrowskis-theorem.md)
 - [Pentagonal number theorem](pentagonal-number-theorem.md)
-- [Prime number theorem](prime-number-theorem.md)
+- [Prime number theorem](../../../hundred-theorems/part-01/prime-number-theorem.md)
 - [Principal ideal theorem](principal-ideal-theorem.md)
 - [Proth's theorem](proths-theorem.md)
 - [Quadratic reciprocity theorem](../../../overview/general-algebra/number-theory/quadratic-reciprocity.md)

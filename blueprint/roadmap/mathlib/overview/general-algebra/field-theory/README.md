@@ -8,7 +8,7 @@
 - [Frobenius morphism](frobenius-morphism.md)
 - [Algebraically closed field](algebraically-closed-field.md)
 - [Existence of algebraic closure of a field](existence-of-algebraic-closure-of-a-field.md)
-- [$\C$ is algebraically closed](is-algebraically-closed.md)
+- [$\C$ is algebraically closed](c-is-algebraically-closed.md)
 - [Field of fractions of an integral domain](field-of-fractions-of-an-integral-domain.md)
 - [Algebraic extension](algebraic-extension.md)
 - [Rupture field](rupture-field.md)

@@ -29,7 +29,7 @@ MeasureTheory.Measure.haveLebesgueDecomposition_of_sigmaFinite.{u_1} {α : Type 
 
 ## Proof depends on
 
-- [Monotone convergence theorem](../../../analysis/26-real-functions/part-03/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (1000+ theorems)](../../../analysis/26-real-functions/part-03/monotone-convergence-theorem.md)
 
 ## Sources
 

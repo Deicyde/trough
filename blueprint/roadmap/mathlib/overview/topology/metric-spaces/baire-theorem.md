@@ -30,7 +30,7 @@ BaireSpace.of_t2Space_locallyCompactSpace.{u_1} {X : Type u_1} [TopologicalSpace
 - [Closure](../general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Completeness](../uniform-notions/completeness.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 

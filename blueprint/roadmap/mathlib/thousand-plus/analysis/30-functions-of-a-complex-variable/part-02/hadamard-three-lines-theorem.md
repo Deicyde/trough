@@ -28,7 +28,7 @@ Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip.{u_1} 
 
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Inverse trigonometric functions](../../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)

@@ -41,7 +41,7 @@ den_dvd_of_is_root.{u_1, u_2} {A : Type u_1} {K : Type u_2} [CommRing A] [IsDoma
 ## Proof depends on
 
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 
 ## Sources
 

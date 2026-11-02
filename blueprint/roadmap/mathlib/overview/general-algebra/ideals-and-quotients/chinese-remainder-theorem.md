@@ -37,7 +37,7 @@ ZMod.chineseRemainder {m n : ℕ} (h : m.Coprime n) : ZMod (m * n) ≃+* ZMod m 
 - [Euclid's' algorithm](../divisibility-in-integral-domains/euclids-algorithm.md)
 - [Quotient ring](quotient-ring.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

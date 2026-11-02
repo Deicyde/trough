@@ -4,4 +4,4 @@
 - [Determinant of vectors](determinant-of-vectors.md)
 - [Determinant of endomorphisms](determinant-of-endomorphisms.md)
 - [Special linear group](special-linear-group.md)
-- [Orientation of a $\R$-vector space](orientation-of-a-vector-space.md)
+- [Orientation of a $\R$-vector space](orientation-of-a-r-vector-space.md)

@@ -39,7 +39,7 @@ ConvexOn.map_integral_le.{u_1, u_2} {α : Type u_1} {E : Type u_2} {m0 : Measura
 - [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Closed map](../../topology/general-topology/part-01/closed-map.md)
 - [Fatou's lemma](../measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem](../measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 - [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources

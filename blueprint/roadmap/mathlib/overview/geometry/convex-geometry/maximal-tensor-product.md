@@ -23,7 +23,7 @@ PointedCone.maxTensorProduct.{u_1, u_2, u_3} {R : Type u_1} [CommRing R] [Linear
 - [Dual cone](dual-cone.md)
 - [Dual vector space](../../linear-algebra/duality/dual-vector-space.md)
 - [Minimal tensor product](minimal-tensor-product.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

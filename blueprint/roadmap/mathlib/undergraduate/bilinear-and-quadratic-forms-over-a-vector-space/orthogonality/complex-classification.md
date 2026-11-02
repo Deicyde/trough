@@ -29,7 +29,7 @@ QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed.{u_2, u_3} {K : Type 
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Polar form of a quadratic](../../../overview/linear-algebra/bilinear-and-quadratic-forms/polar-form-of-a-quadratic.md)
 - [Quadratic form](../../../overview/linear-algebra/bilinear-and-quadratic-forms/quadratic-form.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
@@ -42,9 +42,9 @@ QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed.{u_2, u_3} {K : Type 
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Polynomial functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 - [Well-ordering theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/well-ordering-theorem.md)

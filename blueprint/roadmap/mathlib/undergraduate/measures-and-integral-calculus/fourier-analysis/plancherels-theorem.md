@@ -20,7 +20,7 @@ SchwartzMap.integral_inner_fourier_fourier.{u_3, u_4} {V : Type u_3} [NormedAddC
 
 ## Depends on
 
-- [Fourier transforms on $\mathcal{S}(\R^d)$](../../distribution-calculus/spaces-s-d/fourier-transforms-on-s-d.md)
+- [Fourier transforms on $\mathcal{S}(\R^d)$](../../distribution-calculus/spaces-s-r-d/fourier-transforms-on-s-r-d.md)
 
 ## Proof depends on
 

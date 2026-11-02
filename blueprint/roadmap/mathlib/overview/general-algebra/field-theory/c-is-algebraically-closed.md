@@ -18,7 +18,7 @@ Complex.exists_root {f : Polynomial ℂ} (hf : 0 < f.degree) : ∃ z, f.IsRoot z
 ## Depends on
 
 - [Complex number](../numbers/complex-number.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 
 ## Proof depends on
 

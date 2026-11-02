@@ -71,9 +71,9 @@ Algebra.HasGoingDown.of_comap_localRingHom_surjective.{u_3, u_4} {R : Type u_3} 
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

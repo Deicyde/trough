@@ -71,10 +71,10 @@ map_add_eq_sum_add_integral_iteratedFDeriv.{u_2, u_3} {E : Type u_2} {F : Type u
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Differentials (linear tangent functions)](../../multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Holomorphic functions](../../single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Radius of convergence](../../single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
@@ -83,10 +83,10 @@ map_add_eq_sum_add_integral_iteratedFDeriv.{u_2, u_3} {E : Type u_2} {F : Type u
 - [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Derivative at a point](../differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Differentiable functions](../../multivariable-calculus/differential-calculus/differentiable-functions.md)
 - [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
-- [Polynomial functions](../elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
 - [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
 - [The Number of Subsets of a Set](../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)

@@ -24,9 +24,9 @@ DiffContOnCl.circleIntegral_sub_inv_smul.{u} {E : Type u} [NormedAddCommGroup E]
 - [Ball](../../topology/metric-spaces/ball.md)
 - [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Holomorphic functions](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Lebesgue measure](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 

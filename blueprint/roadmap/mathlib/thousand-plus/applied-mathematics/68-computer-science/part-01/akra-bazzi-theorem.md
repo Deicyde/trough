@@ -19,7 +19,7 @@ AkraBazziRecurrence.isBigO_asympBound.{u_1} {α : Type u_1} [Fintype α] {T : �
 ## Depends on
 
 - [Filter](../../../../overview/topology/general-topology/part-01/filter.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Proof depends on
 
@@ -31,16 +31,16 @@ AkraBazziRecurrence.isBigO_asympBound.{u_1} {α : Type u_1} [Fintype α] {T : �
 - [Completion of an abelian topological group](../../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Connected components](../../../../undergraduate/topology/topology-and-metric-spaces/connected-components.md)
 - [Connectedness](../../../../overview/topology/general-topology/part-01/connectedness.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Convex function](../../../../overview/analysis/convexity/convex-function.md)
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions](../../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
-- [Derivative of the inverse of a function](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
+- [Derivative of a composition of functions (Analysis)](../../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
 - [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Dual of a normed space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Existence of bases](../../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Intermediate value theorem](../../../../overview/topology/topological-algebra/intermediate-value-theorem.md)
 - [Kernel of a linear map](../../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)

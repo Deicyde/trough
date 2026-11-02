@@ -6,7 +6,7 @@ mathlib_declaration: MeasureTheory.lintegral_iInf_ae
 mathlib_file: Mathlib/MeasureTheory/Integral/Lebesgue/Sub.lean
 ---
 
-# Monotone convergence theorem
+# Monotone convergence theorem (Measures and integral calculus)
 
 **Monotone convergence theorem** for nonincreasing sequences of functions.
 
@@ -33,8 +33,8 @@ MeasureTheory.lintegral_iInf_ae.{u_1} {α : Type u_1} [MeasurableSpace α]
 - [Closure](../../../topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of inverse functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-inverse-functions.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of inverse functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-inverse-functions.md)
+- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Hausdorff space](../../../topology/general-topology/part-01/hausdorff-space.md)
 - [Limit point](../../../../undergraduate/single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
 - [Linear map](../../../linear-algebra/fundamentals/linear-map.md)

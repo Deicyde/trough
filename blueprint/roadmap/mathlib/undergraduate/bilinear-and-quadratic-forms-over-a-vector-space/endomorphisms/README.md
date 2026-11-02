@@ -10,5 +10,5 @@
 - [Diagonalization of normal endomorphisms](diagonalization-of-normal-endomorphisms.md)
 - [Simultaneous diagonalization of two real quadratic forms, with one positive-definite](simultaneous-diagonalization-of-two-real-quadrat.md)
 - [Decomposition of an orthogonal transformation as a product of reflections](decomposition-of-an-orthogonal-transformation-as.md)
-- [Polar decompositions in $\mathrm{GL}(n, \R)$](polar-decompositions-in-gl-n.md)
-- [Polar decompositions in $\mathrm{GL}(n, \C)$](polar-decompositions-in-gl-n-2.md)
+- [Polar decompositions in $\mathrm{GL}(n, \R)$](polar-decompositions-in-gl-n-r.md)
+- [Polar decompositions in $\mathrm{GL}(n, \C)$](polar-decompositions-in-gl-n-c.md)

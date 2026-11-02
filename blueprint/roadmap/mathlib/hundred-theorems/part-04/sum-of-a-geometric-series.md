@@ -26,9 +26,9 @@ NNReal.hasSum_geometric {r : NNReal} (hr : r < 1) : HasSum (fun n => r ^ n) (1 -
 ## Depends on
 
 - [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
-- [Order](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
@@ -47,7 +47,7 @@ NNReal.hasSum_geometric {r : NNReal} (hr : r < 1) : HasSum (fun n => r ^ n) (1 -
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
 - [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

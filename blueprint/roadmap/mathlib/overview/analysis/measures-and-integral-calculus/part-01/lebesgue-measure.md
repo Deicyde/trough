@@ -6,7 +6,7 @@ mathlib_declaration: Real.measureSpace
 mathlib_file: Mathlib/MeasureTheory/Measure/Haar/OfBasis.lean
 ---
 
-# Lebesgue measure
+# Lebesgue measure (Measures and integral calculus)
 
 Mathlib states this as `Real.measureSpace`.
 
@@ -26,7 +26,7 @@ Real.measureSpace : MeasureTheory.MeasureSpace ℝ
 - [Continuous function](../../../topology/general-topology/part-01/continuous-function.md)
 - [Existence of orthonormal basis](../../../linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
 - [Finite-dimensionality](../../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Lebesgue measure](../../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
+- [Lebesgue measure (Measure theory)](../../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Linear independence](../../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 
 ## Sources

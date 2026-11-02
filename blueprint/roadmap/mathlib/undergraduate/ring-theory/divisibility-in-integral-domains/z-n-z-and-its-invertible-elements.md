@@ -18,7 +18,7 @@ ZMod.unitOfCoprime {n : ℕ} (x : ℕ) (h : x.Coprime n) : (ZMod n)ˣ
 ## Depends on
 
 - [Euclid's' algorithm](../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
-- [Ring structure $\Z$](../fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../fundamentals/ring-structure-z.md)
 
 ## Sources
 

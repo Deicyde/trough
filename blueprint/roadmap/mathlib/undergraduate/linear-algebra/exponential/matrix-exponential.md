@@ -26,7 +26,7 @@ NormedSpace.exp.{u_2} {𝔸 : Type u_2} [Ring 𝔸] [TopologicalSpace 𝔸] [IsT
 ## Depends on
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Field $\Q$ of rational numbers](../../ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [Field $\Q$ of rational numbers](../../ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Multilinear map](../../../overview/linear-algebra/fundamentals/multilinear-map.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)

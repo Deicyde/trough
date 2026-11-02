@@ -30,7 +30,7 @@ eigenvalue_mem_ball.{u_1, u_2} {K : Type u_1} {n : Type u_2} [NormedField K] [Fi
 
 - [Basis](../../../overview/linear-algebra/fundamentals/basis.md)
 - [Eigenvector](../../../overview/linear-algebra/structure-theory-of-endomorphisms/eigenvector.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)

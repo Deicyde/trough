@@ -18,7 +18,7 @@ exists_deriv_eq_zero {f : ℝ → ℝ} {a b : ℝ} (hab : a < b) (hfc : Continuo
 ## Depends on
 
 - [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 
 ## Proof depends on

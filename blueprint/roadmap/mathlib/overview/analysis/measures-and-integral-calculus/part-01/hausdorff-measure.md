@@ -21,7 +21,7 @@ MeasureTheory.Measure.hausdorffMeasure.{u_2} {X : Type u_2} [EMetricSpace X] [Me
 - [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
 - [Positive measure](positive-measure.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 - [Uniform space](../../../topology/uniform-notions/uniform-space.md)
 
 ## Sources

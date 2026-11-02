@@ -26,7 +26,7 @@ differentiable_tsum.{u_1, u_2, u_3, u_4} {α : Type u_1} {𝕜 : Type u_2} {E : 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Differentiable functions](../../multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric structure](../topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)

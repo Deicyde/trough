@@ -23,9 +23,9 @@ SimpleGraph.triangle_counting.{u_1} {α : Type u_1} (G : SimpleGraph α) [Decida
 
 ## Depends on
 
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Set](../../data-structures/sets/set.md)
 - [Simple graph](simple-graph.md)
 
@@ -38,7 +38,7 @@ SimpleGraph.triangle_counting.{u_1} {α : Type u_1} (G : SimpleGraph α) [Decida
 - [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
 - [Ring morphism](../../general-algebra/rings/ring-morphism.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

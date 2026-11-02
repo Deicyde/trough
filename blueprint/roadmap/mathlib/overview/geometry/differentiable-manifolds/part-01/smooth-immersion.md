@@ -34,7 +34,7 @@ Manifold.IsImmersion.{u, u_1, u_2, u_7, u_9, u_11, u_13} {𝕜 : Type u_1} [Nont
 - [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../topology/uniform-notions/completeness.md)
 - [Convex subsets](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Infinite sum](../../../topology/topological-algebra/infinite-sum.md)
 - [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
@@ -43,7 +43,7 @@ Manifold.IsImmersion.{u, u_1, u_2, u_7, u_9, u_11, u_13} {𝕜 : Type u_1} [Nont
 - [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Radius of convergence](../../../../undergraduate/single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

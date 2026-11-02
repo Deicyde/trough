@@ -6,7 +6,7 @@ mathlib_declaration: map_add_eq_sum_add_integral_iteratedFDeriv
 mathlib_file: Mathlib/Analysis/Calculus/TaylorIntegral.lean
 ---
 
-# Taylor's theorem with integral form for remainder
+# Taylor's theorem with integral form for remainder (Differential calculus)
 
 *Taylor's theorem with remainder in integral form*. If `f` is `n + 1` times continuously
 differentiable, then `f (x + y)` is given by
@@ -31,9 +31,9 @@ map_add_eq_sum_add_integral_iteratedFDeriv.{u_2, u_3} {E : Type u_2} {F : Type u
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Differentials (linear tangent functions)](differentials-linear-tangent-functions.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Radius of convergence](../../single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
@@ -41,7 +41,7 @@ map_add_eq_sum_add_integral_iteratedFDeriv.{u_2, u_3} {E : Type u_2} {F : Type u
 - [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Differentiable functions](differentiable-functions.md)
 - [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
 - [Holomorphic functions](../../single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)

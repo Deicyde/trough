@@ -48,7 +48,7 @@ ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub.{u_1, u_2} {Ω : Ty
 - [Higher-order derivatives of functions](../../../undergraduate/single-variable-real-analysis/differentiability/higher-order-derivatives-of-functions.md)
 - [Independent sigma-algebras](../definitions-in-probability-theory/independent-sigma-algebras.md)
 - [Lévy continuity theorem](../../../thousand-plus/probability-and-statistics/60-probability-theory-and-stochastic-processes/part-02/levy-continuity-theorem.md)
-- [Orientation of a $\R$-vector space](../../../undergraduate/linear-algebra/multilinearity/orientation-of-a-vector-space.md)
+- [Orientation of a $\R$-vector space](../../../undergraduate/linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
 - [Path connectedness](../../../undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
 - [Unitary group](../../../undergraduate/group-theory/classical-automorphism-groups/unitary-group.md)
 

@@ -6,7 +6,7 @@ mathlib_declaration: MulAction.orbitEquivQuotientStabilizer
 mathlib_file: Mathlib/GroupTheory/GroupAction/Quotient.lean
 ---
 
-# Quotient space
+# Quotient space (Basic definitions)
 
 **Orbit-stabilizer theorem**.
 

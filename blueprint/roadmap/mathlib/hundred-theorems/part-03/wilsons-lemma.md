@@ -19,7 +19,7 @@ ZMod.wilsons_lemma (p : ℕ) [Fact (Nat.Prime p)] : ↑(p - 1).factorial = -1
 - [Euclid's' algorithm](../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
 - [Field](../../overview/general-algebra/field-theory/field.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

@@ -45,7 +45,7 @@ MeasureTheory.integral_divergence_of_hasFDerivAt_off_countable.{u} {E : Type u}
 
 - [Bochner integral](../part-01/bochner-integral.md)
 - [Differentiable function between normed vector spaces](../../differentiability/differentiable-function-between-normed-vector-sp.md)
-- [Lebesgue measure](../part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../part-01/lebesgue-measure.md)
 - [Product of finitely many measures](product-of-finitely-many-measures.md)
 
 ## Proof depends on
@@ -62,12 +62,12 @@ MeasureTheory.integral_divergence_of_hasFDerivAt_off_countable.{u} {E : Type u}
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Heine-Cantor theorem](../../../topology/uniform-notions/heine-cantor-theorem.md)
 - [Hilbert projection theorem](../../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem](../part-01/monotone-convergence-theorem.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../part-01/monotone-convergence-theorem.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Orthogonal projection](../../hilbert-spaces/orthogonal-projection.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Probability measure](../../../probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Quotient space](../../../linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../linear-algebra/fundamentals/quotient-space.md)
 - [Riemann sums](../../../../undergraduate/single-variable-real-analysis/integration/riemann-sums.md)
 - [Self-adjoint operator](../../hilbert-spaces/self-adjoint-operator.md)
 - [Stieltjes measure](../part-01/stieltjes-measure.md)

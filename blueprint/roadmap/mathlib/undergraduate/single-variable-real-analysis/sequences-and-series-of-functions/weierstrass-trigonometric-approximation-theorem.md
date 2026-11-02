@@ -19,8 +19,8 @@ span_fourier_closure_eq_top {T : ℝ} [hT : Fact (0 < T)] :
 
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Compact open topology](../../../overview/topology/general-topology/part-01/compact-open-topology.md)
-- [Cos](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Generating sets](../../linear-algebra/fundamentals/generating-sets.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)

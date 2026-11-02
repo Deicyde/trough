@@ -17,7 +17,7 @@ ProbabilityTheory.gaussianReal (μ : ℝ) (v : NNReal) : MeasureTheory.Measure �
 ## Depends on
 
 - [Integral of positive measurable functions](../../analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
-- [Lebesgue measure](../../analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Sources
 

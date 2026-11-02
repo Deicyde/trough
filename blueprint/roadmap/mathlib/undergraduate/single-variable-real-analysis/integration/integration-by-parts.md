@@ -29,7 +29,7 @@ intervalIntegral.integral_mul_deriv_eq_deriv_mul.{u_1} {a b : ℝ} {A : Type u_1
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Derivative at a point](../differentiability/derivative-at-a-point.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 

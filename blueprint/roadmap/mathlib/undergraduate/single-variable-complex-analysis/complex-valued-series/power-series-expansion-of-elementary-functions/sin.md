@@ -6,7 +6,7 @@ mathlib_declaration: Complex.hasSum_sin
 mathlib_file: Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.lean
 ---
 
-# Sin
+# Sin (power series expansion of elementary functions)
 
 The power series expansion of `Complex.sin`.
 
@@ -17,10 +17,10 @@ Complex.hasSum_sin (z : ℂ) :
 
 ## Depends on
 
-- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
-- [Sin](../extension-of-trigonometric-functions-to-the-comp/sin.md)
+- [Sin (extension of trigonometric functions to the complex plane)](../extension-of-trigonometric-functions-to-the-comp/sin.md)
 
 ## Proof depends on
 

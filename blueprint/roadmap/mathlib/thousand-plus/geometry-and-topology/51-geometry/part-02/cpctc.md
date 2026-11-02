@@ -39,7 +39,7 @@ EuclideanGeometry.angle_eq_of_congruent.{u_1, u_2, u_3, u_4, u_5} {ι : Type u_1
 
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)

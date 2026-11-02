@@ -34,7 +34,7 @@ tendsto_subseq_of_bounded.{u_1} {X : Type u_1} [PseudoMetricSpace X] [ProperSpac
 - [Bornology](../../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Order](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on

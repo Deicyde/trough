@@ -6,7 +6,7 @@ mathlib_declaration: Hindman.FS_partition_regular
 mathlib_file: Mathlib/Combinatorics/Hindman.lean
 ---
 
-# Hindman's theorem
+# Hindman's theorem (Ramsey theory)
 
 The strong form of **Hindman's theorem**: in any finite
 cover of an FS-set, one the parts contains an FS-set.

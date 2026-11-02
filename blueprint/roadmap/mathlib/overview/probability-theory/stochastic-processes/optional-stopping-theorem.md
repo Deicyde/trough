@@ -44,7 +44,7 @@ MeasureTheory.submartingale_iff_expected_stoppedValue_mono.{u_1} {Ω : Type u_1}
 - [Finite-dimensional normed spaces over complete normed fields are complete](../../analysis/normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
 - [Hahn-Banach theorem](../../analysis/normed-vector-spaces-banach-spaces/hahn-banach-theorem.md)
 - [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem](../../analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 - [Self-adjoint operator](../../analysis/hilbert-spaces/self-adjoint-operator.md)
 - [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
 

@@ -6,7 +6,7 @@ mathlib_declaration: MeasureTheory.convolution
 mathlib_file: Mathlib/Analysis/Convolution.lean
 ---
 
-# Convolution
+# Convolution (Measures and integral calculus)
 
 The convolution of two functions `f` and `g` with respect to a continuous bilinear map `L` and
 measure `μ`. It is defined to be `(f ⋆[L, μ] g) x = ∫ t, L (f t) (g (x - t)) ∂μ`.

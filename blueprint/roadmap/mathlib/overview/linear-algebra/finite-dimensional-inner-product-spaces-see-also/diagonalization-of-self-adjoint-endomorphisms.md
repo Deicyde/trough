@@ -30,7 +30,7 @@ LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply.{u_1, u_2} {𝕜 : Type 
 - [Finite-dimensionality](../finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Isomorphism with $K^n$](../finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Proof depends on

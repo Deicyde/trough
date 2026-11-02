@@ -36,7 +36,7 @@ MeasureTheory.tendsto_integral_of_dominated_convergence.{u_1, u_3} {α : Type u_
 - [Characteristic p](../../../general-algebra/field-theory/characteristic-p.md)
 - [Closed map](../../../topology/general-topology/part-01/closed-map.md)
 - [Fatou's lemma](fatous-lemma.md)
-- [Monotone convergence theorem](monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](monotone-convergence-theorem.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources

@@ -58,7 +58,7 @@ MeasureTheory.tendsto_lintegral_nn_filter_of_le_const.{u_1, u_2} {Ω : Type u_1}
 ## Proof depends on
 
 - [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 
 ## Sources
 

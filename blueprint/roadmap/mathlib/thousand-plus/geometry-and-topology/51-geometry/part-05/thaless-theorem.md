@@ -28,12 +28,12 @@ EuclideanGeometry.Sphere.thales_theorem.{u_1, u_2} {V : Type u_1} {P : Type u_2}
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Invertible elements](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
 - [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Intermediate value theorem](../../../../overview/topology/topological-algebra/intermediate-value-theorem.md)

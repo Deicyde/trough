@@ -18,7 +18,7 @@ Complex.hasSum_taylorSeries_log {z : ℂ} (hz : ‖z‖ < 1) :
 
 ## Depends on
 
-- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Inverse trigonometric functions](../../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
 - [Logarithm](../../../../overview/analysis/special-functions/logarithm.md)
@@ -31,7 +31,7 @@ Complex.hasSum_taylorSeries_log {z : ℂ} (hz : ‖z‖ < 1) :
 - [Affine function](../../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Completion of an abelian topological group](../../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Derivative at a point](../../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of the inverse of a function](../../../single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
+- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../../single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
 - [Differentials (linear tangent functions)](../../../multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Fundamental Theorem of Integral Calculus](../../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)

@@ -33,7 +33,7 @@ NumberField.Units.exist_unique_eq_mul_prod.{u_1} (K : Type u_1) [Field K] [Numbe
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Euclidean domain](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
@@ -41,7 +41,7 @@ NumberField.Units.exist_unique_eq_mul_prod.{u_1} (K : Type u_1) [Field K] [Numbe
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Periodic points](../../../overview/dynamics/general-theory/periodic-points.md)
 - [Quotient group](../../../overview/general-algebra/group-theory/part-01/quotient-group.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 

@@ -21,12 +21,12 @@ LinearMap.rank_range_add_rank_ker.{u, u_1} {R : Type u_1} {M M₁ : Type u} [Rin
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Proof depends on
 
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 

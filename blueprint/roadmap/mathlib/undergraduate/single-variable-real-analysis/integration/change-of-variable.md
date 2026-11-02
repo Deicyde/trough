@@ -26,13 +26,13 @@ intervalIntegral.integral_deriv_smul_comp.{u_1} {a b : ℝ} {E : Type u_1} [Norm
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Derivative at a point](../differentiability/derivative-at-a-point.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Proof depends on
 
 - [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)
-- [Image of a segment](../real-valued-functions-defined-on-a-subset-of/image-of-a-segment.md)
+- [Image of a segment](../real-valued-functions-defined-on-a-subset-of-r/image-of-a-segment.md)
 
 ## Sources
 

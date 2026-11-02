@@ -25,7 +25,7 @@ InnerProductSpace.{u_4, u_5} (𝕜 : Type u_4) (E : Type u_5) [RCLike 𝕜] [Sem
 
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)

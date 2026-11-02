@@ -20,7 +20,7 @@ integral_comp_polarCoord_symm.{u_1} {E : Type u_1} [NormedAddCommGroup E] [Norme
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Giry monad](../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 
 ## Proof depends on
@@ -32,7 +32,7 @@ integral_comp_polarCoord_symm.{u_1} {E : Type u_1} [NormedAddCommGroup E] [Norme
 - [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Decomposition into transpositions](../../group-theory/permutation-group/decomposition-into-transpositions.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Matrix exponential](../../linear-algebra/exponential/matrix-exponential.md)
 - [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
 - [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)

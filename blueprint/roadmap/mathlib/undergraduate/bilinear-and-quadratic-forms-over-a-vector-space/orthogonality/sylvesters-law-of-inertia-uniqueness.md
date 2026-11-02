@@ -39,7 +39,7 @@ QuadraticForm.sigPos_of_equiv_weightedSumSquares.{u_2, u_4, u_5} {M : Type u_2} 
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 - [Vector subspace](../../linear-algebra/fundamentals/vector-subspace.md)

@@ -66,7 +66,7 @@ Finset.inclusion_exclusion_card_inf_compl.{u_1, u_2} {ι : Type u_1} {α : Type 
 
 - [Module](../../overview/linear-algebra/fundamentals/module.md)
 - [Ring morphism](../../overview/general-algebra/rings/ring-morphism.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

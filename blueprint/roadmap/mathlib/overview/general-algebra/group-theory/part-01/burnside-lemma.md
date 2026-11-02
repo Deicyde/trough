@@ -32,7 +32,7 @@ MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group.{u, v} (G : Type u) (X 
 
 - [Group morphism](group-morphism.md)
 - [Permutation group of a type](../part-02/permutation-group-of-a-type.md)
-- [Quotient space](../../../../undergraduate/group-theory/basic-definitions/quotient-space.md)
+- [Quotient space (Basic definitions)](../../../../undergraduate/group-theory/basic-definitions/quotient-space.md)
 
 ## Sources
 

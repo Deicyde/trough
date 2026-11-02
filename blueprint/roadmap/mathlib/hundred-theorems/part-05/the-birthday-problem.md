@@ -28,7 +28,7 @@ Theorems100.birthday_measure : MeasureTheory.volume {f | Function.Injective f} <
 
 - [Conditional probability](../../overview/probability-theory/definitions-in-probability-theory/conditional-probability.md)
 - [Counting measure](../../undergraduate/measures-and-integral-calculus/measure-theory/counting-measure.md)
-- [Lebesgue measure](../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
+- [Lebesgue measure (Measure theory)](../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Product of sigma-algebras](../../undergraduate/measures-and-integral-calculus/measure-theory/product-of-sigma-algebras.md)
 
 ## Proof depends on
@@ -39,7 +39,7 @@ Theorems100.birthday_measure : MeasureTheory.volume {f | Function.Injective f} <
 - [Closure](../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Measurable function](../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)

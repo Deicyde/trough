@@ -19,11 +19,11 @@ MeasureTheory.Lp.fourierTransformₗᵢ.{u_1, u_2} (E : Type u_1) (F : Type u_2)
 
 ## Depends on
 
-- [Fourier transforms on $\mathcal{S}(\R^d)$](../../distribution-calculus/spaces-s-d/fourier-transforms-on-s-d.md)
+- [Fourier transforms on $\mathcal{S}(\R^d)$](../../distribution-calculus/spaces-s-r-d/fourier-transforms-on-s-r-d.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Kernel of a linear map](../../linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 

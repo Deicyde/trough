@@ -19,7 +19,7 @@ NormSMulClass.toIsBoundedSMul.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Semino
 
 - [Bornology](../topological-vector-spaces/bornology.md)
 - [Module](../../linear-algebra/fundamentals/module.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
@@ -28,7 +28,7 @@ NormSMulClass.toIsBoundedSMul.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Semino
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

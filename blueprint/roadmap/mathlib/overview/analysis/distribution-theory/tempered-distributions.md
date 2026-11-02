@@ -19,7 +19,7 @@ TemperedDistribution.{u_3, u_4} (E : Type u_3) (F : Type u_4) [NormedAddCommGrou
 ## Depends on
 
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Inner product space, over $R$ or $C$](../hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Schwartz space](schwartz-space.md)
 

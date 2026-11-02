@@ -17,11 +17,11 @@ Complex.isAlgClosed : IsAlgClosed ℂ
 ## Depends on
 
 - [Algebraically closed field](../../general-algebra/field-theory/algebraically-closed-field.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 
 ## Proof depends on
 
-- [$\C$ is algebraically closed](../../general-algebra/field-theory/is-algebraically-closed.md)
+- [$\C$ is algebraically closed](../../general-algebra/field-theory/c-is-algebraically-closed.md)
 - [$A\[X\]$ has gcd and lcm if $A$ does](../../general-algebra/polynomials-and-power-series/a-x-has-gcd-and-lcm-if-a-does.md)
 
 ## Sources

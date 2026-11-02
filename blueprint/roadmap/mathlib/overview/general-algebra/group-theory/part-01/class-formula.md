@@ -18,7 +18,7 @@ MulAction.selfEquivSigmaOrbitsQuotientStabilizer.{u, v} (G : Type u) (X : Type v
 
 ## Depends on
 
-- [Quotient space](../../../../undergraduate/group-theory/basic-definitions/quotient-space.md)
+- [Quotient space (Basic definitions)](../../../../undergraduate/group-theory/basic-definitions/quotient-space.md)
 
 ## Sources
 

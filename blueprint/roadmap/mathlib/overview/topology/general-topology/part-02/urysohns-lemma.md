@@ -25,7 +25,7 @@ exists_continuous_zero_one_of_isClosed.{u_1} {X : Type u_1} [TopologicalSpace X]
 
 - [Bornology](../../../analysis/topological-vector-spaces/bornology.md)
 - [Continuous function](../part-01/continuous-function.md)
-- [Order](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../uniform-notions/uniform-space.md)
 
 ## Proof depends on
@@ -35,7 +35,7 @@ exists_continuous_zero_one_of_isClosed.{u_1} {X : Type u_1} [TopologicalSpace X]
 - [Closure](../part-01/closure.md)
 - [Cluster point](../part-01/cluster-point.md)
 - [Euclidean affine space](../../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../../data-structures/sets/finite-set.md)
 - [Group](../../../general-algebra/group-theory/part-01/group.md)
 - [Hausdorff space](../part-01/hausdorff-space.md)

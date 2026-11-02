@@ -33,7 +33,7 @@ ProbabilityTheory.measure_zero_or_one_of_measurableSet_limsup_atTop.{u_2, u_3} {
 - [Closure](../../topology/general-topology/part-01/closure.md)
 - [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Metric space](../../topology/metric-spaces/metric-space.md)

@@ -27,12 +27,12 @@ Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq.{u_1} {V : T
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Determinant of vectors](../../linear-algebra/multilinearity/determinant-of-vectors.md)
 - [Existence of orthonormal basis](../../../overview/linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Isomorphism with $K^n$](../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
-- [Orientation of a $\R$-vector space](../../linear-algebra/multilinearity/orientation-of-a-vector-space.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
+- [Orientation of a $\R$-vector space](../../linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Proof depends on
@@ -49,7 +49,7 @@ Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq.{u_1} {V : T
 - [Gram-Schmidt orthogonalisation](../../bilinear-and-quadratic-forms-over-a-vector-space/orthogonality/gram-schmidt-orthogonalisation.md)
 - [Invertibility](../../../overview/linear-algebra/matrices/invertibility.md)
 - [Matrix representation of a linear map](../../../overview/linear-algebra/matrices/matrix-representation-of-a-linear-map.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Subgroup](../../../overview/general-algebra/group-theory/part-01/subgroup.md)
 - [Unitary group](../../group-theory/classical-automorphism-groups/unitary-group.md)
 

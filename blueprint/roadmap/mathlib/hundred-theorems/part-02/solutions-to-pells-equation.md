@@ -36,7 +36,7 @@ In `pell.eq_pell`, `d` is defined to be `a*a - 1` for an arbitrary `a > 1`.
 
 ## Proof depends on
 
-- [Congruence in $\Z$](../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Congruence in $\Z$](../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Dirichlet's approximation theorem](../../thousand-plus/number-theory/part-02/dirichlets-approximation-theorem.md)
 
 ## Sources

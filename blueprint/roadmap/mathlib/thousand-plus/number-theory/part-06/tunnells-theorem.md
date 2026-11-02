@@ -8,7 +8,7 @@ not_ready: true
 
 Not yet in Mathlib: its 1000+ list names no declaration for this theorem.
 
-The statement of this theorem is formalised without proof in the formal-conjectures repo: <https://github.com/google-deepmind/formal-conjectures/blob/71c4d02865a4b34c00912ece730b717612fff002/FormalConjectures/Wikipedia/CongruentNumber.lean#L89-L109>
+The statement of this theorem is formalised without proof in the formal-conjectures repo: <https://github.com/google-deepmind/formal-conjectures/blob/71c4d02865a4b34c00912ece730b717612fff002/FormalConjectures/Wikipedia/CongruentNumber.lean#L89-L109>.
 
 ## Depends on
 

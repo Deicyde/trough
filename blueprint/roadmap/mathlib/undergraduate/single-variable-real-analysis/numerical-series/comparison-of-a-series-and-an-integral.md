@@ -19,7 +19,7 @@ AntitoneOn.tsum_le_integral {f : ℝ → ℝ} (anti : AntitoneOn f (Set.Ici 0))
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 
@@ -33,11 +33,11 @@ AntitoneOn.tsum_le_integral {f : ℝ → ℝ} (anti : AntitoneOn f (Set.Ici 0))
 - [Giry monad](../../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Hilbert projection theorem](../../topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem](../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Orthogonal projection](../../../overview/analysis/hilbert-spaces/orthogonal-projection.md)
 - [Pointwise convergence](../sequences-and-series-of-functions/pointwise-convergence.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Self-adjoint operator](../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
 - [Stieltjes measure](../../../overview/analysis/measures-and-integral-calculus/part-01/stieltjes-measure.md)
 

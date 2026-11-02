@@ -77,7 +77,7 @@ isCompact_closure_of_isTightMeasureSet.{u_1} {E : Type u_1} [MeasurableSpace E] 
 - [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
 - [Heine-Borel theorem (proper metric space version)](../../../../overview/topology/metric-spaces/heine-borel-theorem-proper-metric-space-version.md)
 - [Inner product space, over $R$ or $C$](../../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Monotone convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Urysohn's lemma](../../../../overview/topology/general-topology/part-02/urysohns-lemma.md)
 - [Weak-* topology for dualities](../../../../overview/analysis/topological-vector-spaces/weak-topology-for-dualities.md)

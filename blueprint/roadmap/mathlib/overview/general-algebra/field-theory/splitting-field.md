@@ -23,7 +23,7 @@ Polynomial.SplittingField.{v} {K : Type v} [Field K] (f : Polynomial K) : Type v
 - [Maximal ideal](../ideals-and-quotients/maximal-ideal.md)
 - [Polynomial in several indeterminates](../polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 - [Quotient ring](../ideals-and-quotients/quotient-ring.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Rupture field](rupture-field.md)
 
 ## Sources

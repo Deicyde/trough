@@ -17,7 +17,7 @@ Int.euclideanDomain : EuclideanDomain ℤ
 ## Depends on
 
 - [Euclidean domain](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Ring structure $\Z$](../fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../fundamentals/ring-structure-z.md)
 
 ## Sources
 

@@ -27,7 +27,7 @@ closure_convexHull_extremePoints.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.M
 - [Extreme point](../../../undergraduate/affine-and-euclidean-geometry/convexity/extreme-point.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Local convexity](../../../overview/analysis/topological-vector-spaces/local-convexity.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
@@ -54,7 +54,7 @@ closure_convexHull_extremePoints.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.M
 - [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)

@@ -30,10 +30,10 @@ SchwartzMap.fourierTransformCLM.{u_1, u_2, u_3} (𝕜 : Type u_1) [RCLike 𝕜] 
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Existence of orthonormal basis](../../../overview/linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Lebesgue measure](../../measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
+- [Lebesgue measure (Measure theory)](../../measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Schwartz space](../../../overview/analysis/distribution-theory/schwartz-space.md)
 

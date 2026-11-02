@@ -25,7 +25,7 @@ MeasureTheory.SimpleFunc.tendsto_approxOn.{u_1, u_2} {α : Type u_1} {β : Type 
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Order](../../single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
@@ -35,8 +35,8 @@ MeasureTheory.SimpleFunc.tendsto_approxOn.{u_1, u_2} {α : Type u_1} {β : Type 
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Continuity of inverse functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-inverse-functions.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Continuity of inverse functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-inverse-functions.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Invertible elements](../../ring-theory/divisibility-in-integral-domains/invertible-elements.md)
@@ -44,7 +44,7 @@ MeasureTheory.SimpleFunc.tendsto_approxOn.{u_1, u_2} {α : Type u_1} {β : Type 
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../ring-theory/fundamentals/product-of-rings.md)
 - [Ring morphism](../../../overview/general-algebra/rings/ring-morphism.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

@@ -28,7 +28,7 @@ ProbabilityTheory.cond_eq_inv_mul_cond_mul.{u_1} {Ω : Type u_1} {m : Measurable
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)

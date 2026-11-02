@@ -6,7 +6,7 @@ mathlib_declaration: MeasureTheory.integral_tendsto_of_tendsto_of_antitone, Meas
 mathlib_file: Mathlib/MeasureTheory/Integral/Bochner/Basic.lean
 ---
 
-# Monotone convergence theorem
+# Monotone convergence theorem (1000+ theorems)
 
 Mathlib records this with 2 declarations.
 
@@ -43,7 +43,7 @@ MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone.{u_1} {α : Type u_1} {m 
 - [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
 - [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources

@@ -24,7 +24,7 @@ IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt.{u_1} {E : Type u_1}
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Continuous linear map](../../../overview/topology/topological-algebra/continuous-linear-map.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
@@ -40,7 +40,7 @@ IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt.{u_1} {E : Type u_1}
 - [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Contraction mapping theorem](../../../overview/topology/metric-spaces/contraction-mapping-theorem.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of the inverse of a function](../../single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
+- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
 - [Differentials (linear tangent functions)](../differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)

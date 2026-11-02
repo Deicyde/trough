@@ -16,7 +16,7 @@ Real.sin (x : ℝ) : ℝ
 
 ## Depends on
 
-- [Sin](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/sin.md)
+- [Sin (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/sin.md)
 
 ## Sources
 

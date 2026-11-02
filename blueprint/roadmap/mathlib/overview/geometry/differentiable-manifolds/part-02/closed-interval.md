@@ -19,7 +19,7 @@ instIsManifoldIcc (x y : ℝ) [Fact (x < y)] {n : WithTop ℕ∞} :
 
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Inner product space, over $R$ or $C$](../../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Smooth or analytic manifold (with boundary and corners)](../part-01/smooth-or-analytic-manifold-with-boundary-and-co.md)
 
 ## Proof depends on

@@ -58,7 +58,7 @@
 - [Phragmén–Lindelöf theorem](../../../overview/analysis/complex-analysis/phragmen-lindelof-principle.md)
 - [Picard theorem](part-03/picard-theorem.md)
 - [Remmert–Stein theorem](part-03/remmert-stein-theorem.md)
-- [Residue theorem](part-03/residue-theorem.md)
+- [Residue theorem](../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/residue-theorem.md)
 - [Riemann mapping theorem](part-03/riemann-mapping-theorem.md)
 - [Riemann's theorem on removable singularities](part-03/riemanns-theorem-on-removable-singularities.md)
 - [Rouché's theorem](part-03/rouches-theorem.md)

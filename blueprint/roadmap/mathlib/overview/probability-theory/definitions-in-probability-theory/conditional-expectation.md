@@ -27,7 +27,7 @@ MeasureTheory.condExp.{u_1, u_3} {α : Type u_1} {E : Type u_3} (m : MeasurableS
 - [Inner product space $L^2$](../../../undergraduate/topology/hilbert-spaces/inner-product-space-l-2-2.md)
 - [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
 - [Orthogonal projection](../../analysis/hilbert-spaces/orthogonal-projection.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 
 ## Sources

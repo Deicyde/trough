@@ -20,7 +20,7 @@ AdjoinRoot.{u_1} {R : Type u_1} [CommRing R] (f : Polynomial R) : Type u_1
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Ideal of a commutative ring](../ideals-and-quotients/ideal-of-a-commutative-ring.md)
 - [Polynomial in one indeterminate](../polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Quotient space](../../linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
 
 ## Sources
 

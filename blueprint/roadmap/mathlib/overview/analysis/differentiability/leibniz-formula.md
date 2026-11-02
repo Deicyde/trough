@@ -6,7 +6,7 @@ mathlib_declaration: fderiv_mul
 mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Mul.lean
 ---
 
-# Leibniz formula
+# Leibniz formula (Analysis)
 
 Mathlib states this as `fderiv_mul`.
 
@@ -27,7 +27,7 @@ fderiv_mul.{u_1, u_2, u_5} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] {E :
 
 ## Proof depends on
 
-- [Derivative of a composition of functions](derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](derivative-of-a-composition-of-functions.md)
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Norm of a continuous linear map](../normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)

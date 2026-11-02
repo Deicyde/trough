@@ -6,7 +6,7 @@ mathlib_declaration: Matrix.GeneralLinearGroup
 mathlib_file: Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.lean
 ---
 
-# General linear group
+# General linear group (Classical automorphism groups)
 
 `GL n R` is the group of `n` by `n` `R`-matrices with unit determinant.
 Defined as a subtype of matrices

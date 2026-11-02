@@ -6,7 +6,7 @@ mathlib_declaration: Hindman.FP_partition_regular
 mathlib_file: Mathlib/Combinatorics/Hindman.lean
 ---
 
-# Hindman's theorem
+# Hindman's theorem (1000+ theorems)
 
 The strong form of **Hindman's theorem**: in any finite cover of an FP-set, one the parts
 contains an FP-set.

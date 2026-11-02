@@ -41,7 +41,7 @@ VectorField.leibniz_identity_mlieBracket.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1}
 - [Algebra of endomorphisms of a vector space](../../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
 - [Convex function](../../../analysis/convexity/convex-function.md)
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions](../../../analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](../../../analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Differentiable functions](../../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
 - [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean affine space](../../affine-and-euclidean-geometry/euclidean-affine-space.md)

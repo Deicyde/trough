@@ -4,7 +4,7 @@
 - [Equivalent norms](equivalent-norms.md)
 - [Banach open mapping theorem](../../../overview/analysis/normed-vector-spaces-banach-spaces/banach-open-mapping-theorem.md)
 - [Equivalence of norms in finite dimension](../../../overview/analysis/normed-vector-spaces-banach-spaces/equivalence-of-norms-in-finite-dimension.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](norms-p-on-n-and-n.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Continuous linear maps](../../../overview/topology/topological-algebra/continuous-linear-map.md)
 - [Norm of a continuous linear map](../../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)

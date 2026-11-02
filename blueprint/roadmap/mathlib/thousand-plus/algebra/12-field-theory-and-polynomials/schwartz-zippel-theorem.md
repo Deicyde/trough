@@ -32,9 +32,9 @@ MvPolynomial.schwartz_zippel_sup_sum.{u_1} {R : Type u_1} [CommRing R] [IsDomain
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Prime numbers](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
 - [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
 

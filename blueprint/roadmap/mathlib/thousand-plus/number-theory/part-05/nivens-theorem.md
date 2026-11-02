@@ -18,7 +18,7 @@ niven {θ : ℝ} (hθ : ∃ r, θ = ↑r * Real.pi) (hcos : ∃ q, Real.cos θ =
 
 ## Depends on
 
-- [Cos](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 
 ## Proof depends on
 
@@ -30,7 +30,7 @@ niven {θ : ℝ} (hθ : ∃ r, θ = ↑r * Real.pi) (hcos : ∃ q, Real.cos θ =
 - [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)

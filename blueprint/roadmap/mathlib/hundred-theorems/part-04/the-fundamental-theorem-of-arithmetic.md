@@ -67,7 +67,7 @@ it also has a generalized version, by showing that every Euclidean domain is a u
 - [Multiset](../../overview/data-structures/sets/multiset.md)
 - [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 - [Principal ideal domain](../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

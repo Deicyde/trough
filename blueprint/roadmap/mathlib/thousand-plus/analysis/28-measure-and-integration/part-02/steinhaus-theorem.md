@@ -38,7 +38,7 @@ MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos.{u_1} {G : Type u_1} [Group G
 - [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Closure](../../../../overview/topology/general-topology/part-01/closure.md)
 - [Completeness of R](../../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../../../undergraduate/single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Open map](../../../../overview/topology/general-topology/part-01/open-map.md)

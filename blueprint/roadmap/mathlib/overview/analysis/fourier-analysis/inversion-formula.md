@@ -31,12 +31,12 @@ Continuous.fourierInv_fourier_eq.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Norme
 - [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Existence of orthonormal basis](../../linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Group](../../general-algebra/group-theory/part-01/group.md)
-- [Lebesgue measure](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
+- [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

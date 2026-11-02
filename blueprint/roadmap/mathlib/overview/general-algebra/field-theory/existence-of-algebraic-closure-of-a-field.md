@@ -24,7 +24,7 @@ AlgebraicClosure.{u} (k : Type u) [Field k] : Type u
 - [Maximal ideal](../ideals-and-quotients/maximal-ideal.md)
 - [Polynomial in one indeterminate](../polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Polynomial in several indeterminates](../polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Quotient space](../../linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
 
 ## Sources
 

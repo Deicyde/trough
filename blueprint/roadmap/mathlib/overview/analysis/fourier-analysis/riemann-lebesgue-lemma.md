@@ -6,7 +6,7 @@ mathlib_declaration: tendsto_integral_exp_inner_smul_cocompact
 mathlib_file: Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean
 ---
 
-# Riemann-Lebesgue lemma
+# Riemann-Lebesgue lemma (Analysis)
 
 Riemann-Lebesgue lemma for functions on a real inner-product space: the integral
 `∫ v, exp (-2 * π * ⟪w, v⟫ * I) • f v` tends to 0 as `w → ∞`.
@@ -29,10 +29,10 @@ tendsto_integral_exp_inner_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_
 - [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Existence of orthonormal basis](../../linear-algebra/finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Group](../../general-algebra/group-theory/part-01/group.md)
-- [Lebesgue measure](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
+- [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 
 ## Proof depends on
@@ -46,11 +46,11 @@ tendsto_integral_exp_inner_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_
 - [Fatou's lemma](../measures-and-integral-calculus/part-01/fatous-lemma.md)
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Monotone convergence theorem](../measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Orthogonal projection](../hilbert-spaces/orthogonal-projection.md)
 - [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Quotient space](../../linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
 - [Self-adjoint operator](../hilbert-spaces/self-adjoint-operator.md)
 - [Urysohn's lemma](../../topology/general-topology/part-02/urysohns-lemma.md)
 

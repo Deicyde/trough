@@ -29,20 +29,20 @@ compl_beattySeq {r s : ℝ} (hrs : r.HolderConjugate s) :
 
 ## Depends on
 
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Group morphism](../../../overview/general-algebra/group-theory/part-01/group-morphism.md)
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

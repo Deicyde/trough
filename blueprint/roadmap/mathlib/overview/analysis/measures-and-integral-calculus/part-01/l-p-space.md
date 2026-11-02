@@ -23,7 +23,7 @@ MeasureTheory.Lp.{u_6, u_7} {α : Type u_7} (E : Type u_6) {m : MeasurableSpace 
 - [Induced topology](../../../topology/general-topology/part-01/induced-topology.md)
 - [Integral of positive measurable functions](integral-of-positive-measurable-functions.md)
 - [Metric space](../../../topology/metric-spaces/metric-space.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Sources
 

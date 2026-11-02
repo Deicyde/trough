@@ -4,7 +4,7 @@ origin: cited
 not_ready: true
 ---
 
-# Taylor's theorem with little-o remainder
+# Taylor's theorem with little-o remainder (Differential calculus)
 
 Not yet in Mathlib: its undergraduate list names no declaration for this topic.
 

@@ -24,11 +24,11 @@ AddCommGroup.equiv_free_prod_directSum_zmod.{u} (G : Type u) [AddCommGroup G] [h
 - [Finitely supported function](../../../data-structures/maps/finitely-supported-function.md)
 - [Irreducible element](../../divisibility-in-integral-domains/irreducible-element.md)
 - [Module](../../../linear-algebra/fundamentals/module.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
-- [Congruence in $\Z$](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Congruence in $\Z$](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Structure theorem](../../../linear-algebra/finitely-generated-modules-over-a-pid/structure-theorem.md)
 
 ## Sources

@@ -31,7 +31,7 @@ EuclideanGeometry.Sphere.dist_sq_eq_mul_dist_of_tangent_and_secant.{u_1, u_2} {V
 - [Affine function](../../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Angle](../../../../overview/geometry/affine-and-euclidean-geometry/angle.md)
 - [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Intermediate value theorem](../../../../overview/topology/topological-algebra/intermediate-value-theorem.md)

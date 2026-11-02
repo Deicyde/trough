@@ -25,7 +25,7 @@ Real.tendsto_sum_range_one_div_nat_succ_atTop :
 
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
@@ -35,7 +35,7 @@ Real.tendsto_sum_range_one_div_nat_succ_atTop :
 - [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Norm of a continuous linear map](../../overview/analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Power functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 - [Squeeze theorem](../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
 - [The Binomial Theorem](../part-03/the-binomial-theorem.md)
 - [The Triangle Inequality](../part-05/the-triangle-inequality.md)

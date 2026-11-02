@@ -10,7 +10,7 @@ Mathlib's 1000+ list marks this formalized by Shogo Saito, Mashu Noguchi, withou
 
 Formalized in Lean outside Mathlib.
 
-See details for <https://formalizedformallogic.github.io/Catalogue/Arithmetic/L___b___s-Theorem/#l___b-theorem>
+See details for <https://formalizedformallogic.github.io/Catalogue/Arithmetic/L___b___s-Theorem/#l___b-theorem>.
 
 ## Depends on
 

@@ -41,7 +41,7 @@ norm_inner_le_norm.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RCLike 𝕜] [Se
 - [Norm](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/euclidean-and-hermitian-spaces/norm.md)
 - [Order topology](../../topology/topological-algebra/order-topology.md)
 - [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 

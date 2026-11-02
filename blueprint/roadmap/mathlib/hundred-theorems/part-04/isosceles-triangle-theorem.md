@@ -26,7 +26,7 @@ EuclideanGeometry.angle_eq_angle_of_dist_eq.{u_1, u_2} {V : Type u_1} {P : Type 
 
 - [Cauchy-Schwarz inequality](../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
 - [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Intermediate value theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)
 - [Lipschitz continuity](../../overview/topology/metric-spaces/lipschitz-continuity.md)

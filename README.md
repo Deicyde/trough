@@ -20,7 +20,8 @@ Mathlib's maintainers keep four curated lists: `docs/overview.yaml`,
 article per concept on them. Items naming the same declarations, or the same
 first declaration, are one article, placed in the first list that has it
 (overview, undergraduate, 100, 1000+); the other lists link to it. An item
-naming no declaration is an article marked not ready.
+naming no declaration is an article marked not ready, shared with any item of
+the same title in another list.
 
 1. `data/mathlib/yaml/` holds the four lists at the Mathlib commit pinned in
    `lean/lakefile.toml`, and `data/mathlib/source.json` records that commit.

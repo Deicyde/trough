@@ -26,7 +26,7 @@ Polynomial.roots_countP_pos_le_signVariations.{u_1} {R : Type u_1} [CommRing R] 
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [The Factor and Remainder Theorems](the-factor-and-remainder-theorems.md)
 
 ## Sources

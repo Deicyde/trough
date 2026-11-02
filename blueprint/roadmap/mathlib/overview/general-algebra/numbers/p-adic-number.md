@@ -16,7 +16,7 @@ Padic (p : ℕ) [Fact (Nat.Prime p)] : Type
 
 ## Depends on
 
-- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
 
 ## Sources

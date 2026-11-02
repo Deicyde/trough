@@ -32,7 +32,7 @@ LieModule.exists_nontrivial_weightSpace_of_isSolvable.{u_1, u_2, u_3} (k : Type 
 - [Generalized eigenspaces](../../../undergraduate/linear-algebra/structure-theory-of-endomorphisms/generalized-eigenspaces.md)
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Lie algebra](../../../overview/general-algebra/algebras-over-a-ring/lie-algebra.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

@@ -6,7 +6,7 @@ mathlib_declaration: MeasureTheory.MeasureSpace
 mathlib_file: Mathlib/MeasureTheory/Measure/MeasureSpaceDef.lean
 ---
 
-# Lebesgue measure
+# Lebesgue measure (Measure theory)
 
 A measure space is a measurable space equipped with a
 measure, referred to as `volume`.

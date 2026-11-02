@@ -29,7 +29,7 @@ LinearIsometryEquiv.reflections_generate.{u_3} {F : Type u_3} [NormedAddCommGrou
 - [Complementary subspaces](../../linear-algebra/fundamentals/complementary-subspaces.md)
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Hilbert projection theorem](../../topology/hilbert-spaces/hilbert-projection-theorem.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Self-adjoint operator](../../../overview/analysis/hilbert-spaces/self-adjoint-operator.md)
 
 ## Sources

@@ -26,7 +26,7 @@ BoundedContinuousFunction.arzela_ascoli.{u, v} {α : Type u} {β : Type v} [Topo
 - [Compactness in terms of filters](../general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Continuous function](../general-topology/part-01/continuous-function.md)
 - [Hausdorff space](../general-topology/part-01/hausdorff-space.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Proof depends on

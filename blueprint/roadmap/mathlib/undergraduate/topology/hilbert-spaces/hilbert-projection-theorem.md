@@ -29,7 +29,7 @@ exists_norm_eq_iInf_of_complete_convex.{u_3} {F : Type u_3} [NormedAddCommGroup 
 
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../topology-and-metric-spaces/homeomorphisms.md)
 - [Limits of sequences](../topology-and-metric-spaces/limits-of-sequences.md)

@@ -2,7 +2,7 @@
 
 - [Definition](../../../overview/analysis/distribution-theory/tempered-distributions.md)
 - [Derivation of tempered distributions](derivation-of-tempered-distributions.md)
-- [Multiplication by a function $C^\infty$ of slow growth](multiplication-by-a-function-c-of-slow-growth.md)
+- [Multiplication by a function $C^\infty$ of slow growth](multiplication-by-a-function-c-infty-of-slow-gro.md)
 - [$L^2$ functions and Riesz representation](l-2-functions-and-riesz-representation.md)
 - [$L^p$ functions](l-p-functions.md)
 - [Periodic functions](periodic-functions.md)

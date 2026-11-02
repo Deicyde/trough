@@ -19,7 +19,7 @@ HolderWith.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [PseudoEMetricSpace X] [Pseu
 ## Depends on
 
 - [Induced topology](../general-topology/part-01/induced-topology.md)
-- [Power functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 - [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources

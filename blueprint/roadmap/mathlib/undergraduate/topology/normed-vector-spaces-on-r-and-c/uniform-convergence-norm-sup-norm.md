@@ -27,14 +27,14 @@ EMetric.tendstoUniformlyOn_iff.{u, v, u_2} {γ : Type u} {β : Type v} [PseudoEM
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Invertible elements](../../ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Order](../../single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../ring-theory/fundamentals/product-of-rings.md)
 - [Ring morphism](../../../overview/general-algebra/rings/ring-morphism.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

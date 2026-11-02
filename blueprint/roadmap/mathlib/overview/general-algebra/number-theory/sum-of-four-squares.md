@@ -26,7 +26,7 @@ Nat.sum_four_squares (n : ℕ) : ∃ a b c d, a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 = n
 - [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic p](../field-theory/characteristic-p.md)
-- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Orbit](../../../undergraduate/group-theory/basic-definitions/orbit.md)
 - [Order of an element](../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
 - [Permutation group of a type](../group-theory/part-02/permutation-group-of-a-type.md)

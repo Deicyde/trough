@@ -26,7 +26,7 @@ EuclideanGeometry.dist_sq_eq_dist_sq_add_dist_sq_iff_angle_eq_pi_div_two.{u_1, u
 ## Proof depends on
 
 - [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Intermediate value theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)

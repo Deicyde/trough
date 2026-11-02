@@ -33,7 +33,7 @@ Theorems100.cubic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d : K) {ω p
 - [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Coprime element](../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
-- [Cyclotomic polynomials in $\Q\[X\]$](../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-x.md)
+- [Cyclotomic polynomials in $\Q\[X\]$](../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
 - [Field of fractions of an integral domain](../../overview/general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)

@@ -18,7 +18,7 @@ Turing.TM2ComputableInPolyTime {α β αΓ βΓ : Type} (ea : α → List αΓ) 
 
 ## Depends on
 
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ CircleDeg1Lift.translationNumber (f : CircleDeg1Lift) : ℝ
 ## Depends on
 
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../topology/uniform-notions/uniform-space.md)
 
 ## Sources

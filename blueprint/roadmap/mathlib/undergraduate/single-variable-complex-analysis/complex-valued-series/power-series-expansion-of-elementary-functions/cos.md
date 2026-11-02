@@ -6,7 +6,7 @@ mathlib_declaration: Complex.hasSum_cos
 mathlib_file: Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.lean
 ---
 
-# Cos
+# Cos (power series expansion of elementary functions)
 
 The power series expansion of `Complex.cos`.
 
@@ -17,8 +17,8 @@ Complex.hasSum_cos (z : ℂ) :
 
 ## Depends on
 
-- [Cos](../extension-of-trigonometric-functions-to-the-comp/cos.md)
-- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 

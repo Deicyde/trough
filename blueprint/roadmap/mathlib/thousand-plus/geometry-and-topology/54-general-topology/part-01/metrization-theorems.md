@@ -17,7 +17,7 @@ TopologicalSpace.metrizableSpace_of_t3_secondCountable.{u_1} (X : Type u_1) [Top
   [T3Space X] [SecondCountableTopology X] : TopologicalSpace.MetrizableSpace X
 ```
 
-Urysohn's metrization theorem (only)
+Urysohn's metrization theorem (only).
 
 ## Depends on
 

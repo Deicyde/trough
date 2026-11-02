@@ -6,7 +6,7 @@ mathlib_declaration: tendsto_integral_exp_smul_cocompact
 mathlib_file: Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean
 ---
 
-# Riemann-Lebesgue lemma
+# Riemann-Lebesgue lemma (Measures and integral calculus)
 
 Riemann-Lebesgue lemma for functions on a finite-dimensional real vector space, formulated via
 dual space.
@@ -29,7 +29,7 @@ tendsto_integral_exp_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_2} [No
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Dual of a normed space](../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
@@ -43,7 +43,7 @@ tendsto_integral_exp_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_2} [No
 - [Dominated convergence theorem](../../../overview/analysis/measures-and-integral-calculus/part-01/dominated-convergence-theorem.md)
 - [Fréchet-Riesz representation of the dual of a Hilbert space](../../../overview/analysis/hilbert-spaces/frechet-riesz-representation-of-the-dual-of-a-hi.md)
 - [Fubini's theorem](../../../overview/analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
-- [Riemann-Lebesgue lemma](../../../overview/analysis/fourier-analysis/riemann-lebesgue-lemma.md)
+- [Riemann-Lebesgue lemma (Analysis)](../../../overview/analysis/fourier-analysis/riemann-lebesgue-lemma.md)
 
 ## Sources
 

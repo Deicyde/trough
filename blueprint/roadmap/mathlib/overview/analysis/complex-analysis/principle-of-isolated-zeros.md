@@ -26,7 +26,7 @@ AnalyticAt.eventually_eq_zero_or_eventually_ne_zero.{u_1, u_2} {𝕜 : Type u_1}
 ## Proof depends on
 
 - [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Continuity](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/continuity.md)
+- [Continuity (Complex-valued series)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/continuity.md)
 - [Derivative at a point](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Differentiable function between normed vector spaces](../differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)

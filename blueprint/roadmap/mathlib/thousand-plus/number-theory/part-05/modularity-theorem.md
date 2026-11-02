@@ -8,7 +8,7 @@ not_ready: true
 
 Not yet in Mathlib: its 1000+ list names no declaration for this theorem.
 
-Variously known as the Taniyama–Shimura conjecture, Taniyama–Shimura–Weil conjecture, or modularity conjecture for elliptic curves prior to its proof. <https://imperialcollegelondon.github.io/FLT> is proving a special case. The statement of this theorem is also formalised without proof in the formal-conjectures repo: <https://github.com/google-deepmind/formal-conjectures/blob/448f15c51a9e89aced922f36259dd8ddc0c1bd20/FormalConjectures/Wikipedia/ModularityConjecture.lean#L85-L87>
+Variously known as the Taniyama–Shimura conjecture, Taniyama–Shimura–Weil conjecture, or modularity conjecture for elliptic curves prior to its proof. <https://imperialcollegelondon.github.io/FLT> is proving a special case. The statement of this theorem is also formalised without proof in the formal-conjectures repo: <https://github.com/google-deepmind/formal-conjectures/blob/448f15c51a9e89aced922f36259dd8ddc0c1bd20/FormalConjectures/Wikipedia/ModularityConjecture.lean#L85-L87>.
 
 ## Depends on
 

@@ -18,7 +18,7 @@ Stirling.tendsto_stirlingSeq_sqrt_pi :
 ## Depends on
 
 - [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Cos](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Exponential](../../overview/analysis/special-functions/exponential.md)
 - [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
@@ -28,8 +28,8 @@ Stirling.tendsto_stirlingSeq_sqrt_pi :
 - [Absolutely convergent series in Banach spaces](../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Affine function](../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Completion of an abelian topological group](../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Derivative of a composition of functions](../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
-- [Derivative of the inverse of a function](../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
+- [Derivative of a composition of functions (Analysis)](../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
 - [Differentiable functions](../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
 - [Differentials (linear tangent functions)](../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean affine space](../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)

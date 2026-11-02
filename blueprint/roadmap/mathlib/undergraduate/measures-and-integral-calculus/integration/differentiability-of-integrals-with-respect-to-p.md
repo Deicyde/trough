@@ -24,7 +24,7 @@ IntervalIntegrable.ae_hasDerivAt_integral.{u_1} {E : Type u_1} [NormedAddCommGro
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 
@@ -39,7 +39,7 @@ IntervalIntegrable.ae_hasDerivAt_integral.{u_1} {E : Type u_1} [NormedAddCommGro
 - [Hilbert projection theorem](../../topology/hilbert-spaces/hilbert-projection-theorem.md)
 - [Lebesgue's decomposition theorem](../../../thousand-plus/geometry-and-topology/54-general-topology/part-01/lebesgues-decomposition-theorem.md)
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-and/norms-p-on-n-and-n.md)
+- [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Orthogonal projection](../../../overview/analysis/hilbert-spaces/orthogonal-projection.md)
 - [Probability measure](../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 - [Product of finitely many measures](../../../overview/analysis/measures-and-integral-calculus/part-02/product-of-finitely-many-measures.md)

@@ -6,7 +6,7 @@ mathlib_declaration: Real.linearOrder
 mathlib_file: Mathlib/Basic/Real/Basic.lean
 ---
 
-# Order
+# Order (Real numbers)
 
 Mathlib states this as `Real.linearOrder`.
 

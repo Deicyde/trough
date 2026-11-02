@@ -18,7 +18,7 @@ Complex.isPrimitiveRoot_iff (ζ : ℂ) (n : ℕ) (hn : n ≠ 0) :
 
 ## Depends on
 
-- [Cos](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 
 ## Proof depends on
 
@@ -30,7 +30,7 @@ Complex.isPrimitiveRoot_iff (ζ : ℂ) (n : ℕ) (hn : n ≠ 0) :
 - [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Coprime element](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Intermediate value theorem](../../../overview/topology/topological-algebra/intermediate-value-theorem.md)

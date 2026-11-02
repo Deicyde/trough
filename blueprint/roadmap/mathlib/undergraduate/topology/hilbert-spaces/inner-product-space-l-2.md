@@ -21,8 +21,8 @@ lp.instInnerProductSpace.{u_1, u_2, u_4} {ι : Type u_1} {𝕜 : Type u_2} [RCLi
 - [Induced topology](../../../overview/topology/general-topology/part-01/induced-topology.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
-- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

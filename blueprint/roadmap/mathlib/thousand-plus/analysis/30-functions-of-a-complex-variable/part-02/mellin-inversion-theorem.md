@@ -20,8 +20,8 @@ mellinInv_mellin_eq.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ
 ## Depends on
 
 - [Bochner integral](../../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
-- [Lebesgue measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on
 

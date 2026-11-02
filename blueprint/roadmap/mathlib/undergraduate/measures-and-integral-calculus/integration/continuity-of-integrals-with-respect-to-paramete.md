@@ -38,7 +38,7 @@ intervalIntegral.continuous_of_dominated_interval.{u_2, u_3} {E : Type u_2} [Nor
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
 - [Fatou's lemma](../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem](../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 - [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources

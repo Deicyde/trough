@@ -6,7 +6,7 @@ mathlib_declaration: deriv_mul
 mathlib_file: Mathlib/Analysis/Calculus/Deriv/Mul.lean
 ---
 
-# Leibniz formula
+# Leibniz formula (Single Variable Real Analysis)
 
 Mathlib states this as `deriv_mul`.
 

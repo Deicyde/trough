@@ -27,8 +27,8 @@ PythagoreanTriple.classification {x y z : ℤ} :
 ## Proof depends on
 
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Congruence in $\Z$](../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
-- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [Congruence in $\Z$](../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
+- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Group](../../overview/general-algebra/group-theory/part-01/group.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)

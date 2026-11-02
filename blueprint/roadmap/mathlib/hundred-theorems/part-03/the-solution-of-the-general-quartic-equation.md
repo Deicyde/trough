@@ -36,7 +36,7 @@ Theorems100.quartic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d e : K) {
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Group morphism](../../overview/general-algebra/group-theory/part-01/group-morphism.md)
 - [Local ring](../../overview/general-algebra/rings/local-ring.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

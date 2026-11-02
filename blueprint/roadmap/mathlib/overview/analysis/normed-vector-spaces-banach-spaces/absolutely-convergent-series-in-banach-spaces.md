@@ -20,7 +20,7 @@ Summable.of_norm.{u_1, u_3} {ι : Type u_1} {E : Type u_3} [SeminormedAddCommGro
 - [Bornology](../topological-vector-spaces/bornology.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 

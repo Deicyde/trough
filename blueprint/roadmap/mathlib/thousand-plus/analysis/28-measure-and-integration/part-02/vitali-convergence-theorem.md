@@ -34,7 +34,7 @@ MeasureTheory.tendstoInMeasure_iff_tendsto_Lp.{u_1, u_2} {α : Type u_1} {β : T
 - [Integral of positive measurable functions](../../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
 - [Linear map](../../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
-- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Proof depends on
 
@@ -44,10 +44,10 @@ MeasureTheory.tendstoInMeasure_iff_tendsto_Lp.{u_1, u_2} {α : Type u_1} {β : T
 - [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Closed map](../../../../overview/topology/general-topology/part-01/closed-map.md)
 - [Fatou's lemma](../../../../overview/analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../../../overview/analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Sum of a Geometric Series](../../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
-- [Uniform convergence norm (sup-norm)](../../../../undergraduate/topology/normed-vector-spaces-on-and/uniform-convergence-norm-sup-norm.md)
+- [Uniform convergence norm (sup-norm)](../../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/uniform-convergence-norm-sup-norm.md)
 - [Vector-valued integrable function (Bochner integral)](../../../../overview/analysis/measures-and-integral-calculus/part-01/vector-valued-integrable-function-bochner-integr.md)
 
 ## Sources

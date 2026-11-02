@@ -40,7 +40,7 @@ BuffonsNeedle.buffon_long.{u_1} {Ω : Type u_1} [MeasureTheory.MeasureSpace Ω] 
 - [Bochner integral](../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Conditional probability](../../overview/probability-theory/definitions-in-probability-theory/conditional-probability.md)
 - [Giry monad](../../overview/analysis/measures-and-integral-calculus/part-01/giry-monad.md)
-- [Lebesgue measure](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Measurable function](../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 
 ## Proof depends on
@@ -50,7 +50,7 @@ BuffonsNeedle.buffon_long.{u_1} {Ω : Type u_1} [MeasureTheory.MeasureSpace Ω] 
 - [Affine function](../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Completion of an abelian topological group](../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Derivative at a point](../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of a composition of functions](../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Differentiable functions](../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
 - [Differentials (linear tangent functions)](../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean affine space](../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)

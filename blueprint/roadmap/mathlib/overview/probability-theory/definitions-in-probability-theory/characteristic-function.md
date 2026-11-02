@@ -19,7 +19,7 @@ MeasureTheory.charFun.{u_2} {E : Type u_2} {mE : MeasurableSpace E} [Inner ℝ E
 
 - [Bochner integral](../../analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 
 ## Sources

@@ -17,7 +17,7 @@ Metric.ball.{u} {α : Type u} [PseudoMetricSpace α] (x : α) (ε : ℝ) : Set �
 ## Depends on
 
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources

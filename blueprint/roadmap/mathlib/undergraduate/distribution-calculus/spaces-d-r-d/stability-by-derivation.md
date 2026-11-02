@@ -4,7 +4,7 @@ origin: cited
 not_ready: true
 ---
 
-# Stability by derivation
+# Stability by derivation (Spaces $\mathcal{D}(\R^d)$)
 
 Not yet in Mathlib: its undergraduate list names no declaration for this topic.
 

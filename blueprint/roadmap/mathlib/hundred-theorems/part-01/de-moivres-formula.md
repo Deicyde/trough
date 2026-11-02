@@ -18,14 +18,14 @@ Complex.cos_add_sin_mul_I_pow (n : ℕ) (z : ℂ) :
 
 ## Depends on
 
-- [Cos](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
-- [Sin](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/sin.md)
+- [Cos (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
+- [Sin (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/sin.md)
 
 ## Proof depends on
 
 - [Ball](../../overview/topology/metric-spaces/ball.md)
 - [Closure](../../overview/topology/general-topology/part-01/closure.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Group](../../overview/general-algebra/group-theory/part-01/group.md)
 - [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)

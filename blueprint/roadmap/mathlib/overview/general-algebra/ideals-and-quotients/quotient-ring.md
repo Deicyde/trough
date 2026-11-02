@@ -17,7 +17,7 @@ Ideal.Quotient.ring.{u} {R : Type u} [Ring R] (I : Ideal R) [I.IsTwoSided] : Rin
 ## Depends on
 
 - [Ideal of a commutative ring](ideal-of-a-commutative-ring.md)
-- [Quotient space](../../linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
 
 ## Sources
 

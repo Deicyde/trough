@@ -6,7 +6,7 @@ mathlib_declaration: FDRep.finrank_hom_simple_simple
 mathlib_file: Mathlib/RepresentationTheory/FDRep.lean
 ---
 
-# Schur's lemma
+# Schur's lemma (Linear representations)
 
 Schur's Lemma: the dimension of the `Hom`-space between two irreducible representation is `0` if
 they are not isomorphic, and `1` if they are.
@@ -26,14 +26,14 @@ FDRep.finrank_hom_simple_simple.{u, v} {k : Type u} {G : Type v} [Field k] [Mono
 - [Functor](../../../overview/general-algebra/category-theory/functor.md)
 - [Isomorphism](../../../overview/general-algebra/category-theory/isomorphism.md)
 - [Linear independence](../fundamentals/linear-independence.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
 - [Adjunction](../../../overview/general-algebra/category-theory/adjunction.md)
 - [Existence of bases](../fundamentals/existence-of-bases.md)
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Schur's lemma](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-03/schurs-lemma.md)
+- [Schur's lemma (1000+ theorems)](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-03/schurs-lemma.md)
 
 ## Sources
 

@@ -42,7 +42,7 @@ ax_grothendieck_zeroLocus.{u_1, u_2} {K : Type u_1} {ι : Type u_2} [Field K] [I
 - [Definable set](../../../../overview/logic-and-computation/model-theory/definable-set.md)
 - [Existence of algebraic closure of a field](../../../../overview/general-algebra/field-theory/existence-of-algebraic-closure-of-a-field.md)
 - [Existence of bases](../../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Field $\Q$ of rational numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [Field $\Q$ of rational numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Field of fractions of an integral domain](../../../../overview/general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
 - [Finite-dimensionality](../../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Fundamental sequences](../../../../overview/logic-and-computation/set-theory/ordinals/fundamental-sequences.md)

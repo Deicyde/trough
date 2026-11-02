@@ -25,7 +25,7 @@ MvPolynomial.uniqueFactorizationMonoid.{u, v} (σ : Type v) {D : Type u} [CommRi
 - [$A\[X\]$ has gcd and lcm if $A$ does](a-x-has-gcd-and-lcm-if-a-does.md)
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Group](../group-theory/part-01/group.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Prime ideal](../ideals-and-quotients/prime-ideal.md)
 
 ## Sources

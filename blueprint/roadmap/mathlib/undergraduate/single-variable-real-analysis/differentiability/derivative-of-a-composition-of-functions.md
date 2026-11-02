@@ -6,7 +6,7 @@ mathlib_declaration: deriv_comp
 mathlib_file: Mathlib/Analysis/Calculus/Deriv/Comp.lean
 ---
 
-# Derivative of a composition of functions
+# Derivative of a composition of functions (Single Variable Real Analysis)
 
 Mathlib states this as `deriv_comp`.
 

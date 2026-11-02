@@ -1,7 +1,7 @@
 # Complex-valued series
 
 - [Radius of convergence](radius-of-convergence.md)
-- [Continuity](continuity.md)
+- [Continuity (Complex-valued series)](continuity.md)
 - [Differentiability with respect to the complex variable](differentiability-with-respect-to-the-complex-va.md)
 - [Antiderivative](antiderivative.md)
 - [Complex exponential](complex-exponential.md)

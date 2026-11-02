@@ -2,7 +2,7 @@
 
 - [$K\[X\]$ is a Euclidean ring when $K$ is a field](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
 - [Irreducible polynomial](../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Cyclotomic polynomials in $\Q\[X\]$](cyclotomic-polynomials-in-x.md)
+- [Cyclotomic polynomials in $\Q\[X\]$](cyclotomic-polynomials-in-q-x.md)
 - [Eisenstein's criterion](../../../overview/general-algebra/polynomials-and-power-series/eisensteins-criterion.md)
 - [Polynomial algebra in one or several indeterminates over a commutative ring](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 - [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)

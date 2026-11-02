@@ -23,9 +23,9 @@ ValueDistribution.characteristic_sub_characteristic_inv_le {f : ℂ → ℂ} {R 
 
 - [Analytic function](../differentiability/analytic-function.md)
 - [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
-- [Lebesgue measure](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Lebesgue measure (Measures and integral calculus)](../measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

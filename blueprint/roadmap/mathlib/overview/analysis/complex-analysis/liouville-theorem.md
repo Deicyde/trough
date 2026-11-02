@@ -19,7 +19,7 @@ Differentiable.apply_eq_apply_of_bounded.{u, v} {E : Type u} [NormedAddCommGroup
 ## Depends on
 
 - [Differentiable functions](../../../undergraduate/multivariable-calculus/differential-calculus/differentiable-functions.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 
 ## Proof depends on

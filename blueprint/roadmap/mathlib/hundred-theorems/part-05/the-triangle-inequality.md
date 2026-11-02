@@ -17,7 +17,7 @@ norm_add_le.{u_4} {E : Type u_4} [SeminormedAddGroup E] (a b : E) : ‖a + b‖ 
 ## Depends on
 
 - [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Order](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
@@ -26,7 +26,7 @@ norm_add_le.{u_4} {E : Type u_4} [SeminormedAddGroup E] (a b : E) : ‖a + b‖ 
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

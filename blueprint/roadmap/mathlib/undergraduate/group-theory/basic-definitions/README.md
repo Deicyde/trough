@@ -11,6 +11,6 @@
 - [Group action](../../../overview/general-algebra/group-theory/part-01/group-action.md)
 - [Stabilizer of a point](stabilizer-of-a-point.md)
 - [Orbit](orbit.md)
-- [Quotient space](quotient-space.md)
+- [Quotient space (Basic definitions)](quotient-space.md)
 - [Class formula](../../../overview/general-algebra/group-theory/part-01/class-formula.md)
 - [Conjugacy classes](conjugacy-classes.md)

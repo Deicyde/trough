@@ -26,7 +26,7 @@ NNReal.lintegral_mul_le_Lp_mul_Lq.{u_1} {α : Type u_1} [MeasurableSpace α]
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Integral of positive measurable functions](../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
@@ -38,8 +38,8 @@ NNReal.lintegral_mul_le_Lp_mul_Lq.{u_1} {α : Type u_1} [MeasurableSpace α]
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Closed map](../../../overview/topology/general-topology/part-01/closed-map.md)
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Continuity of inverse functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-inverse-functions.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of inverse functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-inverse-functions.md)
+- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Limit point](../../single-variable-real-analysis/sequences-of-real-numbers/limit-point.md)
 - [Open map](../../../overview/topology/general-topology/part-01/open-map.md)
 - [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)

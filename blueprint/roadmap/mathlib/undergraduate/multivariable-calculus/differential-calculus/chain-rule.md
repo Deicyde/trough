@@ -28,7 +28,7 @@ fderiv_comp.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜
 
 ## Proof depends on
 
-- [Derivative of a composition of functions](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Generating sets](../../linear-algebra/fundamentals/generating-sets.md)
 
 ## Sources

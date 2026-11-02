@@ -10,7 +10,7 @@ Mathlib's 1000+ list marks this formalized by Ching-Tsun Chou, without naming a 
 
 Formalized in Lean outside Mathlib.
 
-mathlib4 pull request at <https://github.com/leanprover-community/mathlib4/pull/20722>
+mathlib4 pull request at <https://github.com/leanprover-community/mathlib4/pull/20722>.
 
 ## Depends on
 

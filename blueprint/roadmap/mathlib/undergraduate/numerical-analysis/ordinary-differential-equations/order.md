@@ -4,7 +4,7 @@ origin: cited
 not_ready: true
 ---
 
-# Order
+# Order (Ordinary differential equations)
 
 Not yet in Mathlib: its undergraduate list names no declaration for this topic.
 

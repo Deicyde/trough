@@ -24,7 +24,7 @@ PadicInt.hasSum_mahler.{u_1} {p : ℕ} [hp : Fact (Nat.Prime p)] {E : Type u_1} 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Proof depends on
@@ -34,7 +34,7 @@ PadicInt.hasSum_mahler.{u_1} {p : ℕ} [hp : Fact (Nat.Prime p)] {E : Type u_1} 
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Complete metric spaces](../../../undergraduate/topology/topology-and-metric-spaces/complete-metric-spaces.md)
-- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Heine-Cantor theorem](../../../overview/topology/uniform-notions/heine-cantor-theorem.md)

@@ -6,7 +6,7 @@ mathlib_declaration: taylor_integral_remainder_of_absolutelyContinuous
 mathlib_file: Mathlib/Analysis/Calculus/Taylor.lean
 ---
 
-# Taylor's theorem with integral form for remainder
+# Taylor's theorem with integral form for remainder (Taylor-like theorems)
 
 **Taylor's theorem** with the Integral form of the remainder.
 
@@ -28,10 +28,10 @@ taylor_integral_remainder_of_absolutelyContinuous {f : ℝ → ℝ} {x x₀ : �
 
 - [Algebra of endomorphisms of a vector space](../../linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Lebesgue measure](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
+- [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Radius of convergence](../../single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
@@ -39,13 +39,13 @@ taylor_integral_remainder_of_absolutelyContinuous {f : ℝ → ℝ} {x x₀ : �
 - [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
 - [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
-- [Derivative of a composition of functions](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
+- [Derivative of a composition of functions (Analysis)](../../../overview/analysis/differentiability/derivative-of-a-composition-of-functions.md)
 - [Differentiability of integrals with respect to parameters](../../measures-and-integral-calculus/integration/differentiability-of-integrals-with-respect-to-p.md)
 - [Differentiable functions](../../multivariable-calculus/differential-calculus/differentiable-functions.md)
 - [Differentials (linear tangent functions)](../../multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Holomorphic functions](../../single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Polynomial functions](../elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
 - [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
 - [The Number of Subsets of a Set](../../../hundred-theorems/part-03/the-number-of-subsets-of-a-set.md)

@@ -6,7 +6,7 @@ mathlib_declaration: HasStrictDerivAt.of_local_left_inverse
 mathlib_file: Mathlib/Analysis/Calculus/Deriv/Inverse.lean
 ---
 
-# Derivative of the inverse of a function
+# Derivative of the inverse of a function (Single Variable Real Analysis)
 
 If `f (g y) = y` for `y` in some neighborhood of `a`, `g` is continuous at `a`, and `f` has an
 invertible derivative `f'` at `g a` in the strict sense, then `g` has the derivative `f'⁻¹` at `a`

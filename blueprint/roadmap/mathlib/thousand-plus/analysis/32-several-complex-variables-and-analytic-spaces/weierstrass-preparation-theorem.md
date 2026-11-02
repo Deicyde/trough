@@ -38,7 +38,7 @@ PowerSeries.exists_isWeierstrassFactorization.{u_1} {A : Type u_1} [CommRing A] 
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Schroeder-Bernstein Theorem](../../../hundred-theorems/part-02/schroeder-bernstein-theorem.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 

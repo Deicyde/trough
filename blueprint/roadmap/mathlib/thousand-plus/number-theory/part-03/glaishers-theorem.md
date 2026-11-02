@@ -38,7 +38,7 @@ Nat.Partition.card_restricted_eq_card_countRestricted (n : ℕ) {m : ℕ} (hm : 
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Power series](../../../overview/general-algebra/polynomials-and-power-series/power-series.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

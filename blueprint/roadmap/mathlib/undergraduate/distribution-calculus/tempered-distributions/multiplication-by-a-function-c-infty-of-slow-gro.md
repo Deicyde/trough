@@ -20,7 +20,7 @@ TemperedDistribution.smulLeftCLM.{u_3, u_4} {E : Type u_3} (F : Type u_4) [Norme
 ## Depends on
 
 - [Algebra of endomorphisms of a vector space](../../linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Stability by multiplication by a slowly growing smooth function](../spaces-s-d/stability-by-multiplication-by-a-slowly-growing.md)
+- [Stability by multiplication by a slowly growing smooth function](../spaces-s-r-d/stability-by-multiplication-by-a-slowly-growing.md)
 - [Tempered distributions](../../../overview/analysis/distribution-theory/tempered-distributions.md)
 
 ## Sources

@@ -28,7 +28,7 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 - [Linear map](../fundamentals/linear-map.md)
 - [Principal ideal domain](../../general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
 - [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Quotient space](../fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../fundamentals/quotient-space.md)
 
 ## Proof depends on
 

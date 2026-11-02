@@ -8,5 +8,5 @@
 - [Principal ideal domain](principal-ideal-domain.md)
 - [Euclidean domain](euclidean-domain.md)
 - [Euclid's' algorithm](euclids-algorithm.md)
-- [Euler's totient function ($\varphi$)](eulers-totient-function.md)
+- [Euler's totient function ($\varphi$)](eulers-totient-function-varphi.md)
 - [Lucas-Lehmer primality test](lucas-lehmer-primality-test.md)

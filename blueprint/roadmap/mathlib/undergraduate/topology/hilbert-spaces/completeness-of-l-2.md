@@ -23,14 +23,14 @@ lp.completeSpace.{u_3, u_4} {α : Type u_3} {E : α → Type u_4} {p : ENNReal}
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Power functions](../../single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
 - [Arithmetic Mean/Geometric Mean](../../../hundred-theorems/part-02/arithmetic-mean-geometric-mean.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of/continuity-of-monotone-functions.md)
+- [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
 - [Pointwise convergence](../../single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 
 ## Sources

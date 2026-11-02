@@ -38,7 +38,7 @@ ProbabilityTheory.strong_law_ae.{u_1, u_2} {Ω : Type u_1} {mΩ : MeasurableSpac
 
 - [Borel-Cantelli lemma (easy direction)](../../../undergraduate/probability-theory/definitions-of-a-probability-space/borel-cantelli-lemma-easy-direction.md)
 - [Chebyshev inequality](chebyshev-inequality.md)
-- [Lebesgue measure](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
+- [Lebesgue measure (Measure theory)](../../../undergraduate/measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Mean of product of independent random variables](../random-variables-and-their-laws/mean-of-product-of-independent-random-variables.md)
 - [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
 

@@ -31,7 +31,7 @@ Real.tendsto_tsum_powerSeries_nhdsWithin_lt {f : ℕ → ℝ} {l : ℝ}
 
 ## Depends on
 
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Infinite sum](../../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 - [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)

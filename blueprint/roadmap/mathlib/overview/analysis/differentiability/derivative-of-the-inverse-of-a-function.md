@@ -6,7 +6,7 @@ mathlib_declaration: HasFDerivAt.of_local_left_inverse
 mathlib_file: Mathlib/Analysis/Calculus/FDeriv/OfCompLeft.lean
 ---
 
-# Derivative of the inverse of a function
+# Derivative of the inverse of a function (Analysis)
 
 If `f (g x) = x` for `x` in some neighborhood of `a`, `g` is continuous at `a`,
 and `f` has an invertible derivative `f'` at `g a`, then `g` has the derivative `f'⁻¹` at `a`.

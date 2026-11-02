@@ -21,8 +21,8 @@ GromovHausdorff.GHSpace : Type
 - [Infinite sum](../topological-algebra/infinite-sum.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Module](../../linear-algebra/fundamentals/module.md)
-- [Power functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Power functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Subring](../../general-algebra/rings/subring.md)
 
 ## Sources

@@ -5,7 +5,7 @@ navigation: transparent
 # Theorems 1 to 20
 
 - [1. The Irrationality of the Square Root of 2](the-irrationality-of-the-square-root-of-2.md)
-- [2. Fundamental Theorem of Algebra](../../overview/general-algebra/field-theory/is-algebraically-closed.md)
+- [2. Fundamental Theorem of Algebra](../../overview/general-algebra/field-theory/c-is-algebraically-closed.md)
 - [3. The Denumerability of the Rational Numbers](the-denumerability-of-the-rational-numbers.md)
 - [4. Pythagorean Theorem](pythagorean-theorem.md)
 - [5. Prime Number Theorem](prime-number-theorem.md)

@@ -4,7 +4,7 @@ origin: cited
 not_ready: true
 ---
 
-# Error estimation
+# Error estimation (Numerical integration)
 
 Not yet in Mathlib: its undergraduate list names no declaration for this topic.
 

@@ -27,9 +27,9 @@ polynomialFunctions_closure_eq_top (a b : ℝ) :
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Compact open topology](../../../overview/topology/general-topology/part-01/compact-open-topology.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Order](../real-numbers/order.md)
+- [Order (Real numbers)](../real-numbers/order.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [Polynomial functions](../elementary-functions-trigonometric-rational-etc/polynomial-functions.md)
+- [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 

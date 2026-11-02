@@ -20,7 +20,7 @@ BoundedContinuousFunction.instCompleteSpace.{u, v} {α : Type u} {β : Type v} [
 - [Bornology](../topological-vector-spaces/bornology.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 

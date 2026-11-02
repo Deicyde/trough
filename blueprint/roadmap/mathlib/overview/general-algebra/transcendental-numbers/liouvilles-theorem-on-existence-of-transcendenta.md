@@ -18,8 +18,8 @@ transcendental_liouvilleNumber {m : ℕ} (hm : 2 ≤ m) : Transcendental ℤ (li
 
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
-- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Transcendental elements](../../../undergraduate/ring-theory/field-theory/part-01/transcendental-elements.md)
 - [Uniform space](../../topology/uniform-notions/uniform-space.md)
 

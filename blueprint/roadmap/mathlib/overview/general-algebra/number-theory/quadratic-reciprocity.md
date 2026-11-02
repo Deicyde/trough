@@ -32,7 +32,7 @@ jacobiSym.quadratic_reciprocity {a b : ℕ} (ha : Odd a) (hb : Odd b) :
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Group morphism](../group-theory/part-01/group-morphism.md)
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
@@ -46,7 +46,7 @@ jacobiSym.quadratic_reciprocity {a b : ℕ} (ha : Odd a) (hb : Odd b) :
 - [Cluster point](../../topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Cramer’s Rule](../../../hundred-theorems/part-05/cramers-rule.md)
-- [Cyclotomic polynomials in $\Q\[X\]$](../../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-x.md)
+- [Cyclotomic polynomials in $\Q\[X\]$](../../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
 - [Decomposition into transpositions](../../../undergraduate/group-theory/permutation-group/decomposition-into-transpositions.md)
 - [Determinant of endomorphisms](../../../undergraduate/linear-algebra/multilinearity/determinant-of-endomorphisms.md)
 - [Dimension theorem for vector spaces](../../../thousand-plus/algebra/15-linear-and-multilinear-algebra-matrix-theory/dimension-theorem-for-vector-spaces.md)

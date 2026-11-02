@@ -19,21 +19,21 @@ Metric.tendsto_atTop.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpace α] [
 ## Depends on
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Order](../../single-variable-real-analysis/real-numbers/order.md)
+- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Group morphism](../../../overview/general-algebra/group-theory/part-01/group-morphism.md)
 - [Invertible elements](../../ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of rings](../../ring-theory/fundamentals/product-of-rings.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

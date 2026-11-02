@@ -17,7 +17,7 @@ Real : Type
 
 ## Depends on
 
-- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-rational-numbers.md)
+- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 
 ## Sources
 

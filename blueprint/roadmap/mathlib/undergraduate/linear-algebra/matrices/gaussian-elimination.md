@@ -30,7 +30,7 @@ Matrix.Pivot.exists_list_transvec_mul_mul_list_transvec_eq_diagonal.{u_1, u_3} {
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources
 

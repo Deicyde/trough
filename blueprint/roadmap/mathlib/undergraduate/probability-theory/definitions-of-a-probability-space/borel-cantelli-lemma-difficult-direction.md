@@ -35,7 +35,7 @@ ProbabilityTheory.measure_limsup_eq_one.{u_1} {Ω : Type u_1} {m0 : MeasurableSp
 - [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
 - [Optional stopping theorem](../../../overview/probability-theory/stochastic-processes/optional-stopping-theorem.md)
 - [Probability measure](../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Sequential space](../../../overview/topology/general-topology/part-01/sequential-space.md)
 
 ## Sources

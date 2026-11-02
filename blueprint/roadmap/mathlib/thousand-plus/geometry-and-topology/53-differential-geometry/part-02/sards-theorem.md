@@ -10,7 +10,7 @@ Mathlib's 1000+ list marks this formalized by Yury Kudryashov, without naming a 
 
 Formalized in Lean outside Mathlib.
 
-the manifold version is in progress by Michael Rothgang at <https://github.com/fpvandoorn/sard>
+the manifold version is in progress by Michael Rothgang at <https://github.com/fpvandoorn/sard>.
 
 ## Depends on
 

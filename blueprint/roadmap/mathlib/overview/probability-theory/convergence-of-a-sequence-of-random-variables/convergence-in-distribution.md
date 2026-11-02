@@ -35,7 +35,7 @@ MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto.{u_1, u_2} 
 - [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
 - [Closed map](../../topology/general-topology/part-01/closed-map.md)
 - [Fatou's lemma](../../analysis/measures-and-integral-calculus/part-01/fatous-lemma.md)
-- [Monotone convergence theorem](../../analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
+- [Monotone convergence theorem (Measures and integral calculus)](../../analysis/measures-and-integral-calculus/part-01/monotone-convergence-theorem.md)
 - [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Weak-* topology for dualities](../../analysis/topological-vector-spaces/weak-topology-for-dualities.md)
 

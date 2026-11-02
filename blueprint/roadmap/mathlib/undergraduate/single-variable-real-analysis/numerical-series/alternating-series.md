@@ -20,7 +20,7 @@ Antitone.tendsto_alternating_series_of_tendsto_zero {f : ℕ → ℝ} (hfa : Ant
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Order](../real-numbers/order.md)
+- [Order (Real numbers)](../real-numbers/order.md)
 - [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on

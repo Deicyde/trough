@@ -19,14 +19,14 @@ Real.geom_mean_le_arith_mean_weighted.{u} {ι : Type u} (s : Finset ι) (w z : �
 
 ## Depends on
 
-- [Power functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-etc/power-functions.md)
+- [Power functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/power-functions.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Cluster point](../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Homeomorphisms](../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Intermediate value theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)

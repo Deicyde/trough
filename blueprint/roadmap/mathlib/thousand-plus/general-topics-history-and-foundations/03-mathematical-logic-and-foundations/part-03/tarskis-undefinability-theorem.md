@@ -10,7 +10,7 @@ Mathlib's 1000+ list marks this formalized by Shogo Saito, Mashu Noguchi, withou
 
 Formalized in Lean outside Mathlib.
 
-See details for <https://formalizedformallogic.github.io/Catalogue/Arithmetic/Tarski___s-Undefinability-Theorem/#tarski-undefinability>
+See details for <https://formalizedformallogic.github.io/Catalogue/Arithmetic/Tarski___s-Undefinability-Theorem/#tarski-undefinability>.
 
 ## Depends on
 

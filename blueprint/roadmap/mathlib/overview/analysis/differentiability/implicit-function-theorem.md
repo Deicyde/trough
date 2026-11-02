@@ -25,14 +25,14 @@ ImplicitFunctionData.implicitFunction.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1}
 
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
 - [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

@@ -1,6 +1,6 @@
 # Classical automorphism groups
 
-- [General linear group](general-linear-group.md)
+- [General linear group (Classical automorphism groups)](general-linear-group.md)
 - [Special linear group](../../linear-algebra/multilinearity/special-linear-group.md)
 - [Orthogonal group](orthogonal-group.md)
 - [Special orthogonal group](special-orthogonal-group.md)

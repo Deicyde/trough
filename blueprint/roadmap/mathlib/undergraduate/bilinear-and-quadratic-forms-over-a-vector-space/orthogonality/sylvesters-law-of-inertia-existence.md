@@ -23,7 +23,7 @@ QuadraticForm.equivalent_one_zero_neg_one_weighted_sum_squared.{u_2} {M : Type u
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Quadratic form](../../../overview/linear-algebra/bilinear-and-quadratic-forms/quadratic-form.md)
@@ -46,7 +46,7 @@ QuadraticForm.equivalent_one_zero_neg_one_weighted_sum_squared.{u_2} {M : Type u
 - [Polar form of a quadratic](../../../overview/linear-algebra/bilinear-and-quadratic-forms/polar-form-of-a-quadratic.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 - [Product of rings](../../ring-theory/fundamentals/product-of-rings.md)
-- [Quotient space](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)

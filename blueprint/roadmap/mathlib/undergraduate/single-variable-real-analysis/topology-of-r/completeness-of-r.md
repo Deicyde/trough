@@ -18,7 +18,7 @@ Real.instCompleteSpace : CompleteSpace ℝ
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
-- [Order](../real-numbers/order.md)
+- [Order (Real numbers)](../real-numbers/order.md)
 
 ## Proof depends on
 

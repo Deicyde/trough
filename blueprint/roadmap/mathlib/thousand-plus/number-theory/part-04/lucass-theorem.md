@@ -22,7 +22,7 @@ Choose.lucas_theorem {n k p : ℕ} [Fact (Nat.Prime p)] {a : ℕ} (ha₁ : n < p
 
 ## Depends on
 
-- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in.md)
+- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Irreducible element](../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 
@@ -33,7 +33,7 @@ Choose.lucas_theorem {n k p : ℕ} [Fact (Nat.Prime p)] {a : ℕ} (ha₁ : n < p
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Prime numbers](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
 
 ## Sources

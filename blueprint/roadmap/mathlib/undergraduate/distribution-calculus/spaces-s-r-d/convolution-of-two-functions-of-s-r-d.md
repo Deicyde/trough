@@ -25,7 +25,7 @@ SchwartzMap.convolution.{u_1, u_3, u_5, u_6, u_7} {𝕜 : Type u_1} {E : Type u_
 ## Depends on
 
 - [Fourier transforms](../tempered-distributions/fourier-transforms.md)
-- [Fourier transforms on $\mathcal{S}(\R^d)$](fourier-transforms-on-s-d.md)
+- [Fourier transforms on $\mathcal{S}(\R^d)$](fourier-transforms-on-s-r-d.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Inverse Fourier transform](../tempered-distributions/inverse-fourier-transform.md)
 - [Stability by multiplication by a slowly growing smooth function](stability-by-multiplication-by-a-slowly-growing.md)

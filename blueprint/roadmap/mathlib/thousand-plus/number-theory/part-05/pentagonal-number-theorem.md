@@ -37,7 +37,7 @@ hasProd_eulerFunction.{u_1} {R : Type u_1} [NormedCommRing R] [NormOneClass R] [
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Power series](../../../overview/general-algebra/polynomials-and-power-series/power-series.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
@@ -46,7 +46,7 @@ hasProd_eulerFunction.{u_1} {R : Type u_1} [NormedCommRing R] [NormOneClass R] [
 - [Affine function](../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Completion of an abelian topological group](../../../overview/topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Derivative at a point](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
-- [Derivative of the inverse of a function](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
+- [Derivative of the inverse of a function (Single Variable Real Analysis)](../../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
 - [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Fundamental Theorem of Integral Calculus](../../../hundred-theorems/part-01/fundamental-theorem-of-integral-calculus.md)

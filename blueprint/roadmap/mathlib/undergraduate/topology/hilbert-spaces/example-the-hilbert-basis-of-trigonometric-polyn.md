@@ -21,7 +21,7 @@ fourierBasis {T : ℝ} [hT : Fact (0 < T)] :
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
 - [Compact open topology](../../../overview/topology/general-topology/part-01/compact-open-topology.md)
-- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Generating sets](../../linear-algebra/fundamentals/generating-sets.md)
 - [Hilbert bases](hilbert-bases.md)
 - [Homeomorphisms](../topology-and-metric-spaces/homeomorphisms.md)

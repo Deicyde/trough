@@ -17,7 +17,7 @@ Liouville.transcendental {x : ℝ} (lx : Liouville x) : Transcendental ℤ x
 ## Depends on
 
 - [Real number](../../overview/general-algebra/numbers/real-number.md)
-- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Transcendental elements](../../undergraduate/ring-theory/field-theory/part-01/transcendental-elements.md)
 
 ## Proof depends on

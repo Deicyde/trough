@@ -26,7 +26,7 @@ Bundle.RiemannianMetric.{u_4, u_6} {B : Type u_4} (E : B → Type u_6)
 
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)

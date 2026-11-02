@@ -26,13 +26,13 @@ EuclideanGeometry.dist_sq_eq_dist_mul_dist_of_angle_eq_pi_div_two.{u_1, u_2} {V 
 - [Affine function](../../../../overview/geometry/affine-and-euclidean-geometry/affine-function.md)
 - [Angle](../../../../overview/geometry/affine-and-euclidean-geometry/angle.md)
 - [Euclidean affine space](../../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 
 - [Cauchy-Schwarz inequality](../../../../overview/analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
 - [Cluster point](../../../../overview/topology/general-topology/part-01/cluster-point.md)
-- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Hausdorff space](../../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Intermediate value theorem](../../../../overview/topology/topological-algebra/intermediate-value-theorem.md)

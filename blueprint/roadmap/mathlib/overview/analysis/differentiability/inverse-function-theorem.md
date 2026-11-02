@@ -6,7 +6,7 @@ mathlib_declaration: HasStrictFDerivAt.to_localInverse
 mathlib_file: Mathlib/Analysis/Calculus/InverseFunctionTheorem/FDeriv.lean
 ---
 
-# Inverse function theorem
+# Inverse function theorem (Differentiability)
 
 If `f` has an invertible derivative `f'` at `a` in the sense of strict differentiability `(hf)`,
 then the inverse function `hf.localInverse f` has derivative `f'.symm` at `f a`.
@@ -23,11 +23,11 @@ HasStrictFDerivAt.to_localInverse.{u_1, u_2, u_3} {𝕜 : Type u_1} [Nontriviall
 
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
 

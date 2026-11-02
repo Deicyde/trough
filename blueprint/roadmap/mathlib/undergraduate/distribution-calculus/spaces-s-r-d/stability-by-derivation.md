@@ -6,7 +6,7 @@ mathlib_declaration: SchwartzMap.fderivCLM
 mathlib_file: Mathlib/Analysis/Distribution/SchwartzSpace/Deriv.lean
 ---
 
-# Stability by derivation
+# Stability by derivation (Spaces $\mathcal{S}(\R^d)$)
 
 The Fréchet derivative on Schwartz space as a continuous `𝕜`-linear map.
 

@@ -6,7 +6,7 @@ mathlib_declaration: Complex.sin
 mathlib_file: Mathlib/Analysis/Complex/Trigonometric.lean
 ---
 
-# Sin
+# Sin (extension of trigonometric functions to the complex plane)
 
 The complex sine function, defined via `exp`
 
