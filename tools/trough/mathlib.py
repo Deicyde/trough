@@ -764,7 +764,33 @@ def apply_authored(articles: list[Article], authored: dict[str, Authored], urls:
         leaf.informal = []
         leaf.no_depends = "Its article names no prerequisites."
         count += 1
+    if count:
+        check_acyclic([article.leaf for article in articles])
     return count
+
+
+def check_acyclic(leaves: list[Leaf]) -> None:
+    """Stop if prerequisites close a cycle. Lean's edges alone close none (link_edges), so an
+    authored article's list is in any cycle found."""
+    state: dict[int, int] = {}
+    for root in leaves:
+        if id(root) in state:
+            continue
+        state[id(root)] = 1
+        path = [root]
+        stack = [iter(root.depends + root.proof_depends)]
+        while stack:
+            child = next(stack[-1], None)
+            if child is None:
+                state[id(path.pop())] = 2
+                stack.pop()
+            elif state.get(id(child)) == 1:
+                cycle = path[path.index(child):] + [child]
+                raise ValueError("prerequisites close a cycle: " + " -> ".join(leaf.title for leaf in cycle))
+            elif id(child) not in state:
+                state[id(child)] = 1
+                path.append(child)
+                stack.append(iter(child.depends + child.proof_depends))
 
 
 def chapter(sources: Sources, authored: dict[str, Authored] | None = None
@@ -820,6 +846,9 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
             "project has formalized it.",
             edges,
         ]
+        + ([f"{written:,} {'article is' if written == 1 else 'articles are'} written for this wiki: original text, "
+            "whose citations link to Mathlib's documentation, and prerequisites chosen for the reader."]
+           if written else [])
     )
     root = Container("Mathlib", "mathlib", prose=prose)
     root.entries = [

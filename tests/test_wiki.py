@@ -113,6 +113,13 @@ def test_an_article_about_no_concept_or_naming_none_stops_the_chapter(tmp_path):
         mathlib.chapter(fake_sources(), write(tmp_path, area=AREA.replace("area:Area/Sub", "area:Area/None")))
 
 
+def test_prerequisites_that_close_a_cycle_stop_the_chapter(tmp_path):
+    beta = ARTICLE.replace("concept: A", "concept: B").replace("0001", "0004").replace("(trough:B)", "(trough:A)")
+    beta = beta.replace("- [Gamma](trough:C)", "- [Alpha](trough:A)")
+    with pytest.raises(ValueError, match="cycle"):
+        mathlib.chapter(fake_sources(), write(tmp_path, alpha=ARTICLE, beta=beta))
+
+
 def test_the_wikis_articles_are_valid():
     """Every committed article reads, and names concepts and prerequisites that exist."""
     data = Path(__file__).resolve().parent.parent / "data"
