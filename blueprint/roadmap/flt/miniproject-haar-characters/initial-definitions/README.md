@@ -10,7 +10,7 @@ Now $\phi_*\mu$ is a translation-invariant and regular measure, and hence also a
 
 To give an example, if $\phi$ is multiplication by $2$ on the real numbers, if $X=[0,1]$, and if $\mu$ is Lebesgue measure on the Borel subsets of $\mathbb{R}$, we have that $\phi_*\mu(X)=\mu(\phi^{-1}(X))=\mu([0,1/2])=1/2$, so $1=d_A(\phi)/2$ meaning that $d_A(\phi)=2$. Similarly if $\phi$ is multiplication by $-2$ and $X=[0,1]$ then $\phi^{-1}(X)=[-1/2,0]$ which again has measure $1/2$, so $d_A(\phi)$ is 2 again.
 
-Strictly speaking our definition of $d_A(\phi)$ depends on the choice of regular Haar measure $\mu$. Note that mathlib offers a fixed Borel regular Haar measure MeasureTheory.Measure.haar on any locally compact topological group and the actual definition of $d_A$ in the code uses this definition. Note also that the code defines everything for multiplicative groups and uses @\[to\_additive\] to deduce the corresponding results for additive groups.
+Strictly speaking our definition of $d_A(\phi)$ depends on the choice of regular Haar measure $\mu$. Note that mathlib offers a fixed Borel regular Haar measure MeasureTheory.Measure.haar on any locally compact topological group and the actual definition of $d_A$ in the code uses this definition. Note also that the code defines everything for multiplicative groups and uses @[to\_additive] to deduce the corresponding results for additive groups.
 
 Here are some basic results about this construction. In all of them, $A$ is a locally compact topological group and $\phi:A\to A$ is a group isomorphism and a homeomorphism. The first lemma shows that the definition of $d_A(\phi)$ is indeed independent of the choice of Haar measure.
 

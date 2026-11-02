@@ -32,6 +32,7 @@ from pathlib import Path
 
 from trough.tex import (
     CONTROL,
+    FLOATS,
     LISTS,
     argument,
     bracket_end,
@@ -51,6 +52,7 @@ INPUT = re.compile(r"\\(input|include|inputleanmodule|inputleannode)\s*\{([^}]*)
 VERBATIM = re.compile(r"\\begin\s*\{(verbatim\*?|Verbatim|lstlisting|minted)\}")
 ARCHITECT = "leanarchitect"  # where a copy of LeanArchitect's .lake/build/blueprint sits, beside the TeX
 ARCHITECT_PATH = re.compile(r"(?:^|/)\.lake/build/blueprint/(.+)$")
+UNREAD = re.compile(r" names no (?:file|module|node)$| nests too deep$")  # problems that leave text unread
 SECTION = re.compile(r"\\(part|chapter|section|subsection|subsubsection)(\*?)(?![A-Za-z])")
 MATH = re.compile(
     r"(?s)\$\$.*?\$\$|(?<!\\)\$.*?(?<!\\)\$|\\\[.*?\\\]|\\\(.*?\\\)"
@@ -119,6 +121,7 @@ class Node:
     equations: list[str] = field(default_factory=list)
     id: str = ""
     offset: int = 0  # where in the document it starts
+    end: int = 0  # and where its statement ends
     floats: list[tuple[str, str]] = field(default_factory=list)  # (label, "figure" or "table")
 
     @property
@@ -308,10 +311,10 @@ def macro_args(body: str, name: str) -> list[str]:
 def floats_in(text: str) -> list[tuple[str, str]]:
     """The labels of the figures and tables in text, with which each is."""
     found = []
-    for match in re.finditer(r"\\begin\s*\{(figure|table)(\*?)\}", text):
-        body_end, _ = environment_end(text, match.end(), match.group(1) + match.group(2))
+    for match in re.finditer(r"\\begin\s*\{(" + "|".join(re.escape(env) for env in FLOATS) + r")\}", text):
+        body_end, _ = environment_end(text, match.end(), match.group(1))
         for label in macro_args(text[match.end() : body_end], "label"):
-            found.append((squeeze(label), match.group(1)))
+            found.append((squeeze(label), FLOATS[match.group(1)].lower()))
     return found
 
 
@@ -398,12 +401,19 @@ def read(root: Path, entry: str, architect: Path | None = None) -> Blueprint:
     }
     inner = [k for k in range(len(blocks)) if enclosing[k] is not None and k not in absorbed]
 
+    def holder(j: int) -> int | None:
+        """The block whose text holds block j: the one enclosing it, past any absorbed proof."""
+        k = enclosing[j]
+        while k in absorbed:
+            k = enclosing[k]
+        return k
+
     def own(k: int, body: str, pointer: bool = False) -> str:
         """Block k's body without the blocks nested in it that stand on their own: blanked, or
         with *pointer* a marker where each theorem-like one was, for a reference to it."""
         result = body
         for j in inner:
-            if enclosing[j] == k:
+            if holder(j) == k:
                 nested = text[blocks[j][0] : blocks[j][1]]
                 stand_in = " " * len(nested) if not pointer else ("" if blocks[j][2] == "proof" else f"\x00{j}\x00")
                 result = result.replace(nested, stand_in, 1)
@@ -475,6 +485,7 @@ def read(root: Path, entry: str, architect: Path | None = None) -> Blueprint:
             graph=env in thms,
             equations=equations,
             offset=start,
+            end=end,
             floats=float_labels,
         )
         for label in own_labels:

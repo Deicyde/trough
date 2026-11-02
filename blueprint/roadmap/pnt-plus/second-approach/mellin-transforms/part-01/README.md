@@ -14,7 +14,7 @@ $$
 \mathcal{M}(f)(s) = \int_0^\infty f(x)x^{s-1}dx.
 $$
 
-\[Note: My preferred way to think about this is that we are integrating over the multiplicative group $\mathbb{R}_{>0}$, multiplying by a (not necessarily unitary!) character $|\cdot|^s$, and integrating with respect to the invariant Haar measure $dx/x$. This is very useful in the kinds of calculations carried out below. But may be more difficult to formalize as things now stand. So we might have clunkier calculations, which “magically” turn out just right - of course they're explained by the aforementioned structure...\]
+[Note: My preferred way to think about this is that we are integrating over the multiplicative group $\mathbb{R}_{>0}$, multiplying by a (not necessarily unitary!) character $|\cdot|^s$, and integrating with respect to the invariant Haar measure $dx/x$. This is very useful in the kinds of calculations carried out below. But may be more difficult to formalize as things now stand. So we might have clunkier calculations, which “magically” turn out just right - of course they're explained by the aforementioned structure...]
 
 Finally, we need Mellin Convolutions and properties thereof.
 
@@ -30,7 +30,7 @@ The Mellin transform of a convolution is the product of the Mellin transforms.
 
 The $\nu$ function has Mellin transform $\mathcal{M}(\nu)(s)$ which is entire and decays (at least) like $1/|s|$.
 
-\[Of course it decays faster than any power of $|s|$, but it turns out that we will just need one power.\]
+[Of course it decays faster than any power of $|s|$, but it turns out that we will just need one power.]
 
 - [MellinOfPsi](mellinofpsi.md)
 
@@ -60,7 +60,7 @@ $$
 \end{cases}.
 $$
 
-This has Mellin transform: \[Note: this already exists in mathlib\]
+This has Mellin transform: [Note: this already exists in mathlib]
 
 - [MellinOf1](mellinof1.md)
 

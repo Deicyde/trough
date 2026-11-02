@@ -105,7 +105,7 @@ def main() -> int:
     blueprint = leanblueprint.read(root, entry.rsplit("/", 1)[-1], architect)
     built = any(name.startswith(f"{leanblueprint.ARCHITECT}/") for name in blueprint.files)
     graph = blueprint.graph
-    missing = [problem for problem in blueprint.problems if "names no file" in problem]
+    missing = [problem for problem in blueprint.problems if leanblueprint.UNREAD.search(problem)]
     if missing or not graph:
         for problem in missing or [f"{entry} has no nodes"]:
             print(f"error: {args.id}: {problem}", file=sys.stderr)

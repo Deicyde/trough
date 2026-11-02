@@ -8,7 +8,7 @@ proof: formalized
 
 # Bijectivity of Fourier transform
 
-The Fourier transform is a bijection on the Schwartz class. \[Note: only surjectivity is actually used.\]
+The Fourier transform is a bijection on the Schwartz class. [Note: only surjectivity is actually used.]
 
 ## Depends on
 

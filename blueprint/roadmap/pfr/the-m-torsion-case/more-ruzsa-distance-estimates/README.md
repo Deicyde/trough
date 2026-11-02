@@ -10,7 +10,7 @@ Let $G$ be an additive group.
 - [Sums of dilates I](sum-dilate-i.md)
 - [Sums of dilates II](sum-dilate-ii.md)
 
-We remark that in the paper \[GGMT2024\] the variant estimate
+We remark that in the paper [GGMT2024] the variant estimate
 
 $$
 \mathbb{H}[X-aY] - \mathbb{H}[X] \leq (4 + 10 \lfloor \log_2 |a| \rfloor) d[X;Y]

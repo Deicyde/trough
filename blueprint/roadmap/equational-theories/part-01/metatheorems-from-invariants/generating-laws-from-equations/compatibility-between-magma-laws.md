@@ -7,7 +7,7 @@ statement: formalized
 
 # compatibility-between-magma-laws
 
-\[Compatibility between magma laws over finite sets and the natural numbers\] Let $E$ be a magma law defined over $n$ variables and let $\tilde{E}$ be the same equation with variables ranging over the natural numbers (formally, $\tilde{E}$ is the image of $E$ under the canonical map from the finite set with $n$ elements to the natural numbers). Then any magma $M$ satisfies $E$ if and only if it satisfies $\tilde{E}$.
+[Compatibility between magma laws over finite sets and the natural numbers] Let $E$ be a magma law defined over $n$ variables and let $\tilde{E}$ be the same equation with variables ranging over the natural numbers (formally, $\tilde{E}$ is the image of $E$ under the canonical map from the finite set with $n$ elements to the natural numbers). Then any magma $M$ satisfies $E$ if and only if it satisfies $\tilde{E}$.
 
 ## Depends on
 

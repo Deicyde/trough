@@ -1,6 +1,6 @@
 # Proof of Medium PNT
 
-The approach here is completely standard. We follow the use of $\mathcal{M}(\widetilde{1_{\epsilon}})$ as in \[Kontorovich 2015\].
+The approach here is completely standard. We follow the use of $\mathcal{M}(\widetilde{1_{\epsilon}})$ as in [Kontorovich 2015].
 
 ## [ChebyshevPsi to SmoothedChebyshevPull1-aux-integ…](part-01/README.md)
 

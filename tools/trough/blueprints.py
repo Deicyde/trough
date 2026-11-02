@@ -241,7 +241,8 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         cut = 1
         while cut < len(words) and len(" ".join(words[:cut])) < 40:
             cut += 1
-        return f"{caption(node)}: {' '.join(words[:cut])}" + ("…" if cut < len(words) else "")
+        ended = words[cut - 1].endswith((".", "!", "?"))
+        return f"{caption(node)}: {' '.join(words[:cut])}" + ("…" if cut < len(words) and not ended else "")
 
     leaf_of: dict[Node, Leaf] = {}
     owned: set[Node] = set()
@@ -264,14 +265,16 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
                     events.append(Event(node.proof.offset, "aside proof", node, node.proof.unit))
         between = sorted(event.offset for event in events)
         for node in nodes:
-            if node in owned and node.proof is not None and any(node.offset < at < node.proof.offset for at in between):
+            if node in owned and node.proof is not None and any(node.end <= at < node.proof.offset for at in between):
                 events.append(Event(node.proof.offset, "proof pointer", node, node.proof.unit))
     events.sort(key=lambda event: event.offset)
     shown = {id(unit) for event in events for unit in ancestors(event.unit) if unit.level <= 2}
 
-    texts = [text for event in events if event.kind != "proof pointer"
+    texts = [text or "" for event in events if event.kind != "proof pointer"
              for text in ([event.item.text] if isinstance(event.item, Prose)
-                          else [event.item.body, event.item.proof.body if event.item.proof else ""])]
+                          else [event.item.title, event.item.body, *([event.item.proof.title, event.item.proof.body]
+                                                                     if event.item.proof else [])])]
+    texts += [unit.title for unit in blueprint.units]
     bib = bibtex.bibliography([project.directory / "src" / name for name in blueprint.bibliography],
                               [key for text in texts for key in cited(text)]) if project.text else {}
 

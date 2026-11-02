@@ -33,7 +33,7 @@ The strategy is therefore, for a given $\approx$ to find an $R$ which is (strong
 
 The task is helped by the following facts, which we state here also without proof.
 
-- [Theorem: $R$ is Church-Rosser iff it is confluent.…](theorem-rewriting-1.md)
+- [Theorem: $R$ is Church-Rosser iff it is confluent.](theorem-rewriting-1.md)
 
 This can be leveraged by looking at the particulars of the equivalence relation of interest, namely quantified equations over syntactic trees as in [Some abstract nonsense](../some-abstract-nonsense/README.md), and a theory $\Gamma$, which we will usually take to be finite (usually it will have a single equation!).
 

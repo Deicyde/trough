@@ -8,14 +8,14 @@ Instead of the “slick” identity $3+4\cos\theta+\cos2\theta=2(\cos\theta+1)^2
 
 - [HLineq](thm-hlineq.md)
 
-\[Note: identities of this type will work in much greater generality, especially for higher degree $L$-functions.\]
+[Note: identities of this type will work in much greater generality, especially for higher degree $L$-functions.]
 
 This means that, for fixed $t$, we define the following alternate function.
 
 - [FsigmaDef](fsigmadef.md)
 - [FsigmaThm](fsigmathm.md)
 
-\[Note: I often prefer to avoid taking logs of functions that, even if real-valued, have to be justified as being such. Instead, I like to start with “logF” as a convergent Dirichlet series, show that it is real-valued and non-negative, and then exponentiate...\]
+[Note: I often prefer to avoid taking logs of functions that, even if real-valued, have to be justified as being such. Instead, I like to start with “logF” as a convergent Dirichlet series, show that it is real-valued and non-negative, and then exponentiate...]
 
 From this and Hadamard factorization, we deduce the following.
 

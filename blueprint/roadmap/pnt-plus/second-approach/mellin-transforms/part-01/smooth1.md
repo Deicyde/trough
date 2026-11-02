@@ -37,7 +37,7 @@ $$
 \frac {d}{dx}f(x) = \log x > 0 ,
 $$
 
-$f$ is monotone increasing on \[1, $\infty$), and we are done.
+$f$ is monotone increasing on [1, $\infty$), and we are done.
 
 ## Lean
 

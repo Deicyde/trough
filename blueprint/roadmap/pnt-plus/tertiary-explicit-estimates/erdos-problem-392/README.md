@@ -1,6 +1,6 @@
 # Erdos problem 392
 
-The proof here is adapted from <https://www.erdosproblems.com/forum/thread/392\#post-2696> which in turn is inspired by the arguments in <https://arxiv.org/abs/2503.20170>.
+The proof here is adapted from <https://www.erdosproblems.com/forum/thread/392#post-2696> which in turn is inspired by the arguments in <https://arxiv.org/abs/2503.20170>.
 
 ## [factorization-def to initial-factorization-medium-pri…](part-01/README.md)
 

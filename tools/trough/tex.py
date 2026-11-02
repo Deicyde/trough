@@ -21,6 +21,7 @@ from trough.vault import MATH_SPAN, safe_math_markdown
 
 CONTROL = re.compile(r"\\(?:[A-Za-z@]+|.)", re.S)
 PARBREAK = re.compile(r"\n[ \t]*\n\s*")
+CODE_ENV = re.compile(r"\s*\{\s*([^{}]*?)\s*\}")  # the environment a \begin opens
 EXPANSION_DEPTH = 24
 
 
@@ -216,6 +217,12 @@ def expand(text: str, macros: dict[str, Macro], depth: int = 0) -> str:
         j = match.end()
         if name == "expandafter":
             i = j
+            continue
+        code = CODE_ENV.match(text, j) if name == "begin" else None
+        if code and code.group(1) in CODE_BLOCKS:  # a listing keeps every character
+            stop = re.compile(r"\\end\s*\{" + re.escape(code.group(1)) + r"\}").search(text, code.end())
+            out.append(text[i : stop.start() if stop else len(text)])
+            i = stop.start() if stop else len(text)
             continue
         if name in ("gdef", "def", "xdef", "edef") and text.startswith("\\csname", skip_space(text, j)):
             start = skip_space(text, j) + len("\\csname")
@@ -476,8 +483,10 @@ class Writer:
             flush()
             stop = re.match(r"\s*([.,;:])(?=\s|$)", tex[end:])
             if stop:
-                number = re.search(r"\\qquad\\text\{[^{}]*\}\s*$", formula)
-                cut = number.start() if number else len(formula.rstrip())
+                # On the last row: before its number, inside the rows' environment.
+                tail = re.search(r"(?:\\qquad\\text\{[^{}]*\}\s*)?(?:\\end\{(?:aligned|gathered|alignedat|split)\}\s*)?$",
+                                 formula)
+                cut = tail.start() if tail.group() else len(formula.rstrip())
                 formula = formula[:cut].rstrip() + stop.group(1) + formula[cut:]
             out.append(Display(math_text(formula.rstrip(), True)))
             return end + stop.end() if stop else end
@@ -509,7 +518,7 @@ class Writer:
                     continue
                 elif env in LISTS:
                     flush()
-                    out.append(self.list_block(env, body))
+                    out.extend(self.list_block(env, body))
                 elif env in QUOTES:
                     flush()
                     out.append(Quote(self.blocks(body)))
@@ -606,7 +615,8 @@ class Writer:
             end = group_end(body, caption.end())
             text = body[caption.end() + 1 : end - 1]
             body = body[: caption.start()] + "\x00" + body[end:]
-        numbers = [number for label in re.findall(r"\\label\s*\{([^{}]*)\}", body) if (number := self.tag(squeeze(label)))]
+        numbers = [number for label in re.findall(r"\\label\s*\{([^{}]*)\}", body + (text or ""))
+                   if (number := self.tag(squeeze(label)))]
         head = f"**{numbers[0] if numbers else FLOATS[env]}.**"
         before, _, after = body.partition("\x00")
         above = [block for block in self.blocks(before) if not isinstance(block, Omitted)]
@@ -629,7 +639,9 @@ class Writer:
                 body = body[arg[1]:] if arg else body
         return body
 
-    def list_block(self, env: str, body: str) -> ListBlock:
+    def list_block(self, env: str, body: str) -> list:
+        """The list, after any text before its first \\item: where a theorem-like environment
+        cut a list in two, the second half opens with the rest of the item it was in."""
         block = ListBlock(LISTS[env])
         starts = []
         depth = 0
@@ -649,7 +661,8 @@ class Writer:
             if opt:
                 label, item = self.inline(opt[0]), item[opt[1]:]
             block.items.append((label, self.blocks(item)))
-        return block
+        lead = self.blocks(body[: starts[0].start()] if starts else body)
+        return lead + [block] if block.items else lead
 
     # ---- inline level
 
@@ -734,7 +747,10 @@ class Writer:
         run = run.replace("``", "“").replace("''", "”").replace("`", "‘")
         if not self.markdown:
             return run
-        run = re.sub(r"([*_\[\]#])", r"\\\1", run)
+        # A bracket is escaped only where it would close a link: an escaped \[ that opens a
+        # paragraph ending in \] reads as display math.
+        run = re.sub(r"([*_#])", r"\\\1", run)
+        run = re.sub(r"\](?=[(\[:])", r"\\]", run)
         return run.replace("<", "$<$").replace(">", "$>$")
 
     def command(self, tex: str, i: int, para: list[str]) -> int:
@@ -819,14 +835,14 @@ class Writer:
             if not label:
                 return j
             text = self.inline(label[0]).strip()
-            target = url[0].strip().replace("\\#", "#").replace("\\%", "%").replace("\\_", "_").replace("\\&", "&")
+            target = tex_url(url[0])
             para.append(f"[{text}]({link_url(target)})" if self.markdown and is_web(target) else text)
             return label[1]
         if name == "url":
             url = argument(tex, j)
             if not url:
                 return j
-            target = url[0].strip()
+            target = tex_url(url[0])
             para.append(f"<{target}>" if self.markdown and is_web(target) else target)
             return url[1]
         if name == "footnote":
@@ -912,12 +928,26 @@ def cited(text: str) -> list[str]:
 
 
 def unlinked(markdown: str) -> str:
-    """The words of the Markdown links in markdown, without their targets."""
-    return re.sub(r"\[((?:\\.|[^\]\\])*)\]\([^)\s]*\)", lambda link: re.sub(r"\\(.)", r"\1", link.group(1)), markdown)
+    """markdown as plain text: each link's words without its target, and the escapes undone
+    outside formulas."""
+    words = re.sub(r"\[((?:\\.|[^\]\\])*)\]\([^)\s]*\)", lambda link: link.group(1), markdown)
+    out, last = [], 0
+    for match in MATH_SPAN.finditer(words):
+        out.append(re.sub(r"\\([\\`*_\[\]#])", r"\1", words[last : match.start()]))
+        out.append(match.group())
+        last = match.end()
+    out.append(re.sub(r"\\([\\`*_\[\]#])", r"\1", words[last:]))
+    return "".join(out)
 
 
 def is_web(url: str) -> bool:
     return url.startswith(("http://", "https://", "mailto:"))
+
+
+def tex_url(url: str) -> str:
+    """A URL as its TeX spells it, the escapes undone: \\# is #, and $\\sim$ or \\~{} is ~."""
+    url = re.sub(r"\$\\sim\$|\\~\{\}|\\textasciitilde(?:\{\})?", "~", url.strip())
+    return re.sub(r"\\([#%_&~])", r"\1", url)
 
 
 def link_url(url: str) -> str:

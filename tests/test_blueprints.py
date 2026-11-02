@@ -52,7 +52,7 @@ def test_text_lists_and_formulas_become_markdown():
 
 def test_text_that_reads_as_markdown_is_escaped():
     md = writer().statement("1. first, a_b * c [d] < e")
-    assert md == r"1\. first, a\_b \* c \[d\] $<$ e"
+    assert md == r"1\. first, a\_b \* c [d] $<$ e"
     assert writer().plain(r"Balog--Szemer\'edi--Gowers for $\tau$") == r"Balog–Szemerédi–Gowers for $\tau$"
 
 
@@ -203,7 +203,7 @@ def test_vendored_blueprints_read_as_refreshed(library):
     source = json.loads((project.directory / "source.json").read_text(encoding="utf-8"))
     blueprint = blueprints.load_blueprint(project)
     assert len(blueprint.graph) == source["nodes"] > 0
-    assert not [problem for problem in blueprint.problems if "names no file" in problem]
+    assert not [problem for problem in blueprint.problems if leanblueprint.UNREAD.search(problem)]
     built = blueprints.chapter(project, blueprint, {})
     assign_paths(built.root, Path("blueprint/roadmap") / library)
     blueprints.resolve(built, Path("blueprint"))
@@ -228,8 +228,10 @@ def test_lists_stay_lists():
 
 
 def test_missing_files_are_problems(tmp_path):
-    (tmp_path / "web.tex").write_text("\\begin{document}\\input{gone}\\end{document}\n")
-    assert leanblueprint.read(tmp_path, "web.tex").problems == ["web.tex:1: \\input{gone} names no file"]
+    (tmp_path / "web.tex").write_text("\\begin{document}\\input{gone}\\inputleanmodule{Demo.Gone}\\end{document}\n")
+    problems = leanblueprint.read(tmp_path, "web.tex").problems
+    assert problems == ["web.tex:1: \\input{gone} names no file", "web.tex:1: \\inputleanmodule{Demo.Gone} names no module"]
+    assert all(leanblueprint.UNREAD.search(problem) for problem in problems)  # so a refresh refuses
     with pytest.raises(FileNotFoundError):
         leanblueprint.read(tmp_path, "renamed.tex")
 
@@ -403,3 +405,63 @@ def test_bibliography_labels(tmp_path):
     from trough import bibtex
     assert bibtex.bibliography([bib], ["a2", "b"]) == {"a2": ("Mazur 1977", None), "b": ("de la Vallée Poussin et al. 1896", None)}
     assert bibtex.bibliography([bib], ["a2", "a1"])["a1"] == ("Mazur 1977b", None)
+
+
+def test_round_three_text():
+    w = writer()
+    # Brackets stay as typed unless they would close a link: an escaped \[ opening a
+    # paragraph that ends in \] reads as display math.
+    assert w.statement("[Note: true for $L$-functions.]") == "[Note: true for $L$-functions.]"
+    assert w.statement("[a](b), [c][d] and [e]: f") == r"[a\](b), [c\][d] and [e\]: f"
+    assert w.statement(r"\url{https://a.org/$\sim$jrh/x.html}") == "<https://a.org/~jrh/x.html>"
+    numbered = tex.Writer({}, tag={"e": "1", "f": "2"}.get)
+    assert numbered.statement(r"Thus \begin{align} a&=b \label{e}\\ c&=d\label{f} \end{align}, next.") == (
+        "Thus\n\n$$\n\\begin{aligned} a&=b\\qquad\\text{(1)}\\\\ c&=d,\\qquad\\text{(2)}\\end{aligned}\n$$\n\nnext."
+    )
+    figure = tex.Writer({}, tag={"fig:a": "Figure 1"}.get)
+    assert figure.statement(r"\begin{figure}\caption{A pic.\label{fig:a}}\end{figure}").startswith("**Figure 1.** A pic.")
+    listing = tex.Writer({"op": tex.Macro(body="\\diamond")})
+    assert "```\nx \\op y\n```" in listing.statement("\\begin{verbatim}\nx \\op y\n\\end{verbatim}")
+    # The second half of a list that a lemma cut in two keeps the rest of the item it was in.
+    assert w.statement(r"\begin{enumerate} which is useful. \item Last.\end{enumerate} After.") == (
+        "which is useful.\n\n1. Last.\n\nAfter."
+    )
+    assert tex.unlinked(r"[$\zeta$ has no\_zeros](trough:x) and no\_such") == r"$\zeta$ has no_zeros and no_such"
+
+
+ROUND_THREE = r"""
+\documentclass{report}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+\begin{document}
+\chapter{S \cite{knuth}}
+\begin{lemma}\label{a} A. \end{lemma}
+\begin{proof} Outer. \begin{proof} Inner. \begin{lemma}\label{c} Claim C. \end{lemma} done. \end{proof} \end{proof}
+\begin{theorem}[Knuth \cite{knuth}]\label{thm:t}\uses{a} The theorem.
+\begin{proof} By a claim. \begin{lemma}\label{lem:d}\uses{c} A claim. \end{lemma} \end{proof}
+\end{theorem}
+\begin{lemma}\label{e} E. \begin{remark} Remark R. \end{remark} \end{lemma}
+\begin{proof} P. \end{proof}
+\begin{theorem} $R$ is Church-Rosser iff it is confluent. \begin{enumerate}\item one \item two \end{enumerate} \end{theorem}
+\bibliography{refs}
+\end{document}
+"""
+
+
+def test_round_three_pages(tmp_path):
+    (tmp_path / "src").mkdir()
+    (tmp_path / "src" / "web.tex").write_text(ROUND_THREE)
+    (tmp_path / "src" / "refs.bib").write_text("@book{knuth, author = {Knuth, Donald E.}, title = {Art}, year = 1968}\n")
+    blueprint = leanblueprint.read(tmp_path / "src", "web.tex")
+    nodes = {node.id: node for node in blueprint.nodes}
+    # A lemma inside a proof is its own node, whether the proof is nested in a proof or in a statement.
+    assert {"a", "c", "thm:t", "lem:d", "e"} <= set(nodes) and len(blueprint.graph) == 6
+    assert nodes["a"].labels == ["a"] and "(\\cref{c})" in nodes["a"].proof.body
+    assert nodes["thm:t"].labels == ["thm:t"] and nodes["thm:t"].uses == ["a"]
+    built, leaves = build(blueprint, tmp_path)
+    page = built.root.entries[0].node
+    assert page.title == "S (Knuth 1968)" and "Knuth (Knuth 1968)" in leaves  # a citation in a title
+    assert "Theorem: $R$ is Church-Rosser iff it is confluent." in leaves  # no … after a full stop
+    text = " ".join([page.prose, page.tail, *(entry.before for entry in page.entries)])
+    assert "Remark R." in text and "shown with its statement" not in text  # the remark is inside lemma e
