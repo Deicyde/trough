@@ -1,0 +1,9525 @@
+{
+ "entries": {
+  "Q1008566": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Gauss–Lucas theorem"
+   ]
+  },
+  "Q1032886": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hales–Jewett theorem"
+   ]
+  },
+  "Q1033910": {
+   "msc": "03",
+   "others": {
+    "hol_light": [
+     "formalized"
+    ],
+    "isabelle": [
+     "formalized"
+    ],
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ],
+    "mizar": [
+     "formalized"
+    ],
+    "rocq": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cantor–Bernstein–Schroeder theorem"
+   ]
+  },
+  "Q10369454": {
+   "msc": "49",
+   "others": {},
+   "wikipedia": [
+    "Noether's second theorem"
+   ]
+  },
+  "Q1037559": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Pólya enumeration theorem"
+   ]
+  },
+  "Q10380294": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Lamé’s theorem",
+    "Euclidean_algorithm#Algorithmic_efficiency"
+   ]
+  },
+  "Q1038716": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Identity theorem"
+   ]
+  },
+  "Q1046232": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Szemerédi's theorem"
+   ]
+  },
+  "Q1047749": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Turán's theorem"
+   ]
+  },
+  "Q104841721": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Jacobson–Morozov theorem"
+   ]
+  },
+  "Q1048589": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Hohenberg–Kohn theorems"
+   ]
+  },
+  "Q104871594": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Joubert's theorem"
+   ]
+  },
+  "Q1048874": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Gauss's Theorema Egregium"
+   ]
+  },
+  "Q1050037": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Coase theorem"
+   ]
+  },
+  "Q1050203": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cantor's intersection theorem"
+   ]
+  },
+  "Q1050932": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hartogs's theorem"
+   ]
+  },
+  "Q1051404": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Cesàro's theorem"
+   ]
+  },
+  "Q1052021": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Craig's interpolation theorem"
+   ]
+  },
+  "Q105222412": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Five color theorem"
+   ]
+  },
+  "Q1052678": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Baire category theorem"
+   ]
+  },
+  "Q1052752": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Stolz–Cesàro theorem"
+   ]
+  },
+  "Q1054106": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Cox's theorem"
+   ]
+  },
+  "Q1056283": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "May's theorem"
+   ]
+  },
+  "Q1057919": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Sylow theorems"
+   ]
+  },
+  "Q1058662": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Darboux's theorem"
+   ]
+  },
+  "Q1059151": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "FWL theorem"
+   ]
+  },
+  "Q1064471": {
+   "msc": "78",
+   "others": {},
+   "wikipedia": [
+    "Earnshaw's theorem"
+   ]
+  },
+  "Q1065257": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Squeeze theorem"
+   ]
+  },
+  "Q1065966": {
+   "msc": "16",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Isomorphism theorem"
+   ]
+  },
+  "Q1067156": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Dominated convergence theorem"
+   ]
+  },
+  "Q1067156X": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Bounded convergence theorem"
+   ]
+  },
+  "Q1068085": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Closed graph theorem"
+   ]
+  },
+  "Q1068283": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Löwenheim–Skolem theorem"
+   ]
+  },
+  "Q1068385": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Clairaut's theorem"
+   ]
+  },
+  "Q1068976": {
+   "msc": "14",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hilbert's Nullstellensatz]] (theorem of zeroes)"
+   ]
+  },
+  "Q107535899": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Bochner's tube theorem"
+   ]
+  },
+  "Q1075398": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Jung's theorem"
+   ]
+  },
+  "Q107547910": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Malgrange–Zerner theorem"
+   ]
+  },
+  "Q1076274": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Choquet–Bishop–de Leeuw theorem"
+   ]
+  },
+  "Q107709489": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Büchi-Elgot-Trakhtenbrot theorem"
+   ]
+  },
+  "Q107710112": {
+   "msc": "06",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cantor's isomorphism theorem"
+   ]
+  },
+  "Q1077462": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "König's theorem (set theory)"
+   ]
+  },
+  "Q1077741": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Hairy ball theorem"
+   ]
+  },
+  "Q1082910": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Integer partition#Odd parts and distinct parts"
+   ]
+  },
+  "Q10859514": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Vafa–Witten theorem"
+   ]
+  },
+  "Q10942247": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Hironaka theorem"
+   ]
+  },
+  "Q1095330": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Apéry's theorem"
+   ]
+  },
+  "Q1097021": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Minkowski's theorem"
+   ]
+  },
+  "Q1103054": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Lions–Lax–Milgram theorem"
+   ]
+  },
+  "Q110921617": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Feferman–Vaught theorem"
+   ]
+  },
+  "Q1119094": {
+   "msc": "42",
+   "others": {},
+   "wikipedia": [
+    "Paley–Wiener theorem"
+   ]
+  },
+  "Q111982312": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Friedberg–Muchnik theorem"
+   ]
+  },
+  "Q1121027": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Krylov–Bogolyubov theorem"
+   ]
+  },
+  "Q1125462": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Dinostratus' theorem"
+   ]
+  },
+  "Q112659261": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Gamas's Theorem"
+   ]
+  },
+  "Q112740521": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Netto's theorem"
+   ]
+  },
+  "Q1129636": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Lehmann–Scheffé theorem"
+   ]
+  },
+  "Q1130846": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Ladner's theorem"
+   ]
+  },
+  "Q1131601": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Sklar's theorem"
+   ]
+  },
+  "Q1132952": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Euler's theorem on homogeneous functions"
+   ]
+  },
+  "Q1134296": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Supporting hyperplane theorem"
+   ]
+  },
+  "Q1134776": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Dilworth's theorem"
+   ]
+  },
+  "Q11352023": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Vitali convergence theorem"
+   ]
+  },
+  "Q1135706": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Harnack's theorem"
+   ]
+  },
+  "Q1136043": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Hurwitz's theorem (complex analysis)"
+   ]
+  },
+  "Q1136262": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Optical theorem"
+   ]
+  },
+  "Q1137014": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Tychonoff's theorem"
+   ]
+  },
+  "Q1137206": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Taylor's theorem"
+   ]
+  },
+  "Q1139041": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cauchy's theorem (group theory)"
+   ]
+  },
+  "Q1139430": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Hurwitz's theorem (normed division algebras)"
+   ]
+  },
+  "Q1139524": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Rationality theorem"
+   ]
+  },
+  "Q1140119": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Morera's theorem"
+   ]
+  },
+  "Q1140200": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "PCP theorem"
+   ]
+  },
+  "Q1141747": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Carnot's theorem (inradius, circumradius)"
+   ]
+  },
+  "Q1143540": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Heckscher–Ohlin theorem"
+   ]
+  },
+  "Q1144897": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Brouwer fixed-point theorem"
+   ]
+  },
+  "Q1146791": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Fermat polygonal number theorem"
+   ]
+  },
+  "Q1148215": {
+   "msc": "18",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Mitchell's embedding theorem"
+   ]
+  },
+  "Q1149022": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fubini's theorem"
+   ]
+  },
+  "Q1149185": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Goodstein's theorem"
+   ]
+  },
+  "Q1149185X": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Kirby–Paris theorem"
+   ]
+  },
+  "Q1149458": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Compactness theorem"
+   ]
+  },
+  "Q1149522": {
+   "msc": "70",
+   "others": {},
+   "wikipedia": [
+    "Lami's theorem"
+   ]
+  },
+  "Q11518": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Pythagorean theorem"
+   ]
+  },
+  "Q1152521": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Mohr–Mascheroni theorem"
+   ]
+  },
+  "Q1153441": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Goldstone's theorem"
+   ]
+  },
+  "Q1153584": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Monotone convergence theorem"
+   ]
+  },
+  "Q11573495": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Plancherel theorem for spherical functions"
+   ]
+  },
+  "Q1166774": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Stone's representation theorem for Boolean algebras"
+   ]
+  },
+  "Q11704319": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Chern–Gauss–Bonnet theorem"
+   ]
+  },
+  "Q11722674": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Takens's theorem"
+   ]
+  },
+  "Q117553": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Modigliani–Miller theorem"
+   ]
+  },
+  "Q1177508": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Rédei's theorem"
+   ]
+  },
+  "Q1179446": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "De Rham's theorem"
+   ]
+  },
+  "Q1182249": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Deduction theorem"
+   ]
+  },
+  "Q1186134": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Poncelet–Steiner theorem"
+   ]
+  },
+  "Q1186808": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lucas's theorem"
+   ]
+  },
+  "Q1187646": {
+   "msc": "16",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fundamental theorem on homomorphisms"
+   ]
+  },
+  "Q1188048": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Barbier's theorem"
+   ]
+  },
+  "Q11883897": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Nagata's compactification theorem"
+   ]
+  },
+  "Q1188392": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Zeckendorf's theorem"
+   ]
+  },
+  "Q1188504": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Pitman–Koopman–Darmois theorem"
+   ]
+  },
+  "Q1191319": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Radon–Nikodym theorem"
+   ]
+  },
+  "Q1191709": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Egorov's theorem"
+   ]
+  },
+  "Q1191862": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Rouché's theorem"
+   ]
+  },
+  "Q1194053": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Metrization theorems"
+   ]
+  },
+  "Q119450": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Brianchon's theorem"
+   ]
+  },
+  "Q1196538": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Descartes's theorem"
+   ]
+  },
+  "Q1196729": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Mertens's theorems"
+   ]
+  },
+  "Q1202608": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "De Gua's theorem"
+   ]
+  },
+  "Q1209546": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Kaplansky density theorem"
+   ]
+  },
+  "Q1217677": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fundamental theorem of calculus"
+   ]
+  },
+  "Q1227061": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Khinchin's theorem on Diophantine approximations"
+   ]
+  },
+  "Q1227702": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Dirichlet's unit theorem"
+   ]
+  },
+  "Q1227703": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Dirichlet's approximation theorem"
+   ]
+  },
+  "Q1242398": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Doob decomposition theorem"
+   ]
+  },
+  "Q1243340": {
+   "msc": "15",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Birkhoff–Von Neumann theorem"
+   ]
+  },
+  "Q1249069": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Richardson's theorem"
+   ]
+  },
+  "Q12524": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Schwenk's theorem"
+   ]
+  },
+  "Q1259814": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Nielsen–Schreier theorem"
+   ]
+  },
+  "Q1276318": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Schwartz kernel theorem"
+   ]
+  },
+  "Q1305766": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Poincaré–Hopf theorem"
+   ]
+  },
+  "Q1306092": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Nash embedding theorem"
+   ]
+  },
+  "Q1306095": {
+   "msc": "57",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Whitney embedding theorem"
+   ]
+  },
+  "Q1307676": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Künneth theorem"
+   ]
+  },
+  "Q1308502": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Church–Rosser theorem"
+   ]
+  },
+  "Q1315949": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Mittag-Leffler's theorem"
+   ]
+  },
+  "Q1317350": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Chen's theorem"
+   ]
+  },
+  "Q1317367": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Japanese theorem for concyclic polygons"
+   ]
+  },
+  "Q1322892": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Dirac's theorem on chordal graphs"
+   ]
+  },
+  "Q132427": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Rademacher's theorem"
+   ]
+  },
+  "Q132469": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "statement"
+    ]
+   },
+   "wikipedia": [
+    "Fermat's Last Theorem"
+   ]
+  },
+  "Q1330788": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Weierstrass factorization theorem"
+   ]
+  },
+  "Q1340623": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Classification of finite simple groups"
+   ]
+  },
+  "Q1346677": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Tietze extension theorem"
+   ]
+  },
+  "Q1347094": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Alternate Interior Angles Theorem"
+   ]
+  },
+  "Q1348736": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Rybczynski theorem"
+   ]
+  },
+  "Q1349282": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Eilenberg–Zilber theorem"
+   ]
+  },
+  "Q1357684": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Riesz representation theorem"
+   ]
+  },
+  "Q1361031": {
+   "msc": "16",
+   "others": {},
+   "wikipedia": [
+    "Frobenius theorem (real division algebras)"
+   ]
+  },
+  "Q1361393": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Luzin's theorem"
+   ]
+  },
+  "Q1366581": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Rado theorem"
+   ]
+  },
+  "Q1369453": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Kronecker–Weber theorem"
+   ]
+  },
+  "Q1370316": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Casey's theorem"
+   ]
+  },
+  "Q137164": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Besicovitch covering theorem"
+   ]
+  },
+  "Q1376515": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "No-hair theorem"
+   ]
+  },
+  "Q1396592": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Farey sequence#Riemann hypothesis"
+   ]
+  },
+  "Q1420905": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hilbert's theorem 90"
+   ]
+  },
+  "Q1422083": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Ryll-Nardzewski fixed-point theorem"
+   ]
+  },
+  "Q1423818": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Euler's theorem in geometry"
+   ]
+  },
+  "Q1424481": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Frucht's theorem"
+   ]
+  },
+  "Q1425077": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Spectral theorem"
+   ]
+  },
+  "Q1425308": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Brahmagupta theorem"
+   ]
+  },
+  "Q1425529": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Chebotarev's density theorem"
+   ]
+  },
+  "Q1426292": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Banach–Steinhaus theorem"
+   ]
+  },
+  "Q1427965": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "rocq": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Busy beaver#Exact values and lower and upper bounds"
+   ]
+  },
+  "Q1434158": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Fluctuation dissipation theorem"
+   ]
+  },
+  "Q1434805": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Algebraic surface"
+   ]
+  },
+  "Q1443036": {
+   "msc": "42",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Parseval's theorem"
+   ]
+  },
+  "Q1452678": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Penrose–Hawking singularity theorems"
+   ]
+  },
+  "Q1455794": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Freudenthal suspension theorem"
+   ]
+  },
+  "Q1457052": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Well-ordering theorem"
+   ]
+  },
+  "Q1471282": {
+   "msc": "52",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Radon's theorem"
+   ]
+  },
+  "Q1472120": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hellinger–Toeplitz theorem"
+   ]
+  },
+  "Q1477053": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Arzelà–Ascoli theorem"
+   ]
+  },
+  "Q1505529": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Runge's theorem"
+   ]
+  },
+  "Q1506253": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Euclid's theorem"
+   ]
+  },
+  "Q15080987": {
+   "msc": "22",
+   "others": {},
+   "wikipedia": [
+    "Lie's third theorem"
+   ]
+  },
+  "Q1529941": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Peter–Weyl theorem"
+   ]
+  },
+  "Q1530275": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Dunford–Pettis theorem"
+   ]
+  },
+  "Q1535225": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Łoś' theorem"
+   ]
+  },
+  "Q154210": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "CPCTC"
+   ]
+  },
+  "Q1542114": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Bézout's theorem"
+   ]
+  },
+  "Q1543149": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Sokhotski–Plemelj theorem"
+   ]
+  },
+  "Q1547975": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Mermin–Wagner theorem"
+   ]
+  },
+  "Q1551745": {
+   "msc": "15",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Binomial inverse theorem"
+   ]
+  },
+  "Q1555342": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Reeh–Schlieder theorem"
+   ]
+  },
+  "Q1564541": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Perron–Frobenius theorem"
+   ]
+  },
+  "Q1566341": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hindman's theorem"
+   ]
+  },
+  "Q1566372": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Haag's theorem"
+   ]
+  },
+  "Q1568612": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Marden's theorem"
+   ]
+  },
+  "Q1568811": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hahn decomposition theorem"
+   ]
+  },
+  "Q1572474": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Lindemann–Weierstrass theorem"
+   ]
+  },
+  "Q1576235": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Lochs's theorem"
+   ]
+  },
+  "Q15813392": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Barban–Davenport–Halberstam theorem"
+   ]
+  },
+  "Q15830473": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Morley's categoricity theorem"
+   ]
+  },
+  "Q15844093": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Van Schooten's theorem"
+   ]
+  },
+  "Q15859323": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Anne's theorem"
+   ]
+  },
+  "Q15872491": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Newton's theorem (quadrilateral)"
+   ]
+  },
+  "Q15895894": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Finsler–Hadwiger theorem"
+   ]
+  },
+  "Q1602819": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Lumer–Phillips theorem"
+   ]
+  },
+  "Q1614464": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Cauchy–Kowalevski theorem"
+   ]
+  },
+  "Q1621180": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Orlicz–Pettis theorem"
+   ]
+  },
+  "Q16251580": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Matiyasevich's theorem"
+   ]
+  },
+  "Q1630588": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hurwitz's theorem (number theory)"
+   ]
+  },
+  "Q1631749": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Lester's theorem"
+   ]
+  },
+  "Q1631992": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Steiner–Lehmus theorem"
+   ]
+  },
+  "Q1632301": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Sturm's theorem"
+   ]
+  },
+  "Q1632433": {
+   "msc": "52",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Helly's theorem"
+   ]
+  },
+  "Q1637085": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Poynting's theorem"
+   ]
+  },
+  "Q164262": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Lebesgue covering dimension"
+   ]
+  },
+  "Q1660147": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Mazur–Ulam theorem"
+   ]
+  },
+  "Q16680059": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Strong perfect graph theorem"
+   ]
+  },
+  "Q1668861": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Picard theorem"
+   ]
+  },
+  "Q1683356": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Japanese theorem for concyclic quadrilaterals"
+   ]
+  },
+  "Q1687147": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Sprague–Grundy theorem"
+   ]
+  },
+  "Q1694565": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Vinogradov's theorem"
+   ]
+  },
+  "Q16978447": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Grauert–Riemenschneider vanishing theorem"
+   ]
+  },
+  "Q1699024": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "John ellipsoid"
+   ]
+  },
+  "Q17001601": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "2-factor theorem"
+   ]
+  },
+  "Q17002391": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Arrow-Lind principle"
+   ]
+  },
+  "Q17003552": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Alexandrov's uniqueness theorem"
+   ]
+  },
+  "Q17005116": {
+   "msc": "06",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Birkhoff's representation theorem"
+   ]
+  },
+  "Q17008559": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Davenport–Schmidt theorem"
+   ]
+  },
+  "Q17017973": {
+   "msc": "65",
+   "others": {},
+   "wikipedia": [
+    "Godunov's theorem"
+   ]
+  },
+  "Q17018210": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Golod–Shafarevich theorem"
+   ]
+  },
+  "Q17019684": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Grushko theorem"
+   ]
+  },
+  "Q17029787": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Higman's embedding theorem"
+   ]
+  },
+  "Q1704878": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Appell–Humbert theorem"
+   ]
+  },
+  "Q17080564": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Zariski's connectedness theorem"
+   ]
+  },
+  "Q17081508": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Bing metrization theorem"
+   ]
+  },
+  "Q17082552": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Mutual fund separation theorem"
+   ]
+  },
+  "Q17089994": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Fixed-point theorems in infinite-dimensional spaces"
+   ]
+  },
+  "Q17089994X": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Tikhonov fixed-point theorem"
+   ]
+  },
+  "Q17098075": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Jurkat–Richert theorem"
+   ]
+  },
+  "Q17098298": {
+   "msc": "13",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Jacobson density theorem"
+   ]
+  },
+  "Q17098379": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Kaplansky's theorem on quadratic forms"
+   ]
+  },
+  "Q17101806": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Intersection theorem"
+   ]
+  },
+  "Q17102744": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Riemann–Roch theorem for smooth manifolds"
+   ]
+  },
+  "Q17103352": {
+   "msc": "78",
+   "others": {},
+   "wikipedia": [
+    "Maximum power theorem"
+   ]
+  },
+  "Q17104025": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Riemann singularity theorem"
+   ]
+  },
+  "Q17104863": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Nielsen–Ninomiya theorem"
+   ]
+  },
+  "Q17125544": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Lickorish–Wallace theorem"
+   ]
+  },
+  "Q1716166": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Mercer's theorem"
+   ]
+  },
+  "Q1720410": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Hjelmslev's theorem"
+   ]
+  },
+  "Q172298": {
+   "msc": "13",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lasker–Noether theorem"
+   ]
+  },
+  "Q1724049": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Wolstenholme's theorem"
+   ]
+  },
+  "Q1727461": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Intersecting secants theorem"
+   ]
+  },
+  "Q1739994": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Brauer–Suzuki theorem"
+   ]
+  },
+  "Q174955": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Mihăilescu's theorem"
+   ]
+  },
+  "Q1751105": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Blum's speedup theorem"
+   ]
+  },
+  "Q1751823": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "No-cloning theorem"
+   ]
+  },
+  "Q1752516": {
+   "msc": "40",
+   "others": {},
+   "wikipedia": [
+    "Riemann series theorem"
+   ]
+  },
+  "Q1752621": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Sylvester's law of inertia"
+   ]
+  },
+  "Q1752988": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Kutta–Joukowski theorem"
+   ]
+  },
+  "Q1756194": {
+   "msc": "94",
+   "others": {},
+   "wikipedia": [
+    "Shannon–Hartley theorem"
+   ]
+  },
+  "Q1765521": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Doob's martingale convergence theorems"
+   ]
+  },
+  "Q1766814": {
+   "msc": "68",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Smn theorem"
+   ]
+  },
+  "Q1785610": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Poncelet's closure theorem"
+   ]
+  },
+  "Q1785872": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Berry–Esséen theorem"
+   ]
+  },
+  "Q1786292": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Schur's theorem"
+   ]
+  },
+  "Q1786419": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Kramers' theorem"
+   ]
+  },
+  "Q1789863": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Routh's theorem"
+   ]
+  },
+  "Q179208": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cayley's theorem"
+   ]
+  },
+  "Q179467": {
+   "msc": "43",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fourier theorem"
+   ]
+  },
+  "Q179692": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Independence of the axiom of choice"
+   ]
+  },
+  "Q180345": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Rational root theorem"
+   ]
+  },
+  "Q180345X": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Integral root theorem"
+   ]
+  },
+  "Q1809539": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pizza theorem"
+   ]
+  },
+  "Q1816952": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Schur's lemma"
+   ]
+  },
+  "Q18205730": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Byers–Yang theorem"
+   ]
+  },
+  "Q18206032": {
+   "msc": "22",
+   "others": {},
+   "wikipedia": [
+    "Closed subgroup theorem"
+   ]
+  },
+  "Q18206266": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Euclid–Euler theorem"
+   ]
+  },
+  "Q182505": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Bayes' theorem"
+   ]
+  },
+  "Q1841237": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Fubini's theorem on differentiation"
+   ]
+  },
+  "Q184410": {
+   "msc": "05",
+   "others": {
+    "rocq": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Four color theorem"
+   ]
+  },
+  "Q1855610": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Theorem of de Moivre–Laplace"
+   ]
+  },
+  "Q18630480": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Euler's quadrilateral theorem"
+   ]
+  },
+  "Q188295": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fermat's little theorem"
+   ]
+  },
+  "Q188745": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Platonic solid#Classification"
+   ]
+  },
+  "Q1888583": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Holditch's theorem"
+   ]
+  },
+  "Q189136": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Mean value theorem"
+   ]
+  },
+  "Q1893717": {
+   "msc": "68",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Rice's theorem"
+   ]
+  },
+  "Q1896455": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Varignon's theorem"
+   ]
+  },
+  "Q1899432": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Grothendieck–Hirzebruch–Riemann–Roch theorem"
+   ]
+  },
+  "Q190026": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Euler's totient function#Ford's theorem"
+   ]
+  },
+  "Q190391": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Central limit theorem"
+   ]
+  },
+  "Q190391X": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Lyapunov's central limit theorem"
+   ]
+  },
+  "Q190556": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "De Moivre's formula"
+   ]
+  },
+  "Q1914905": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Ramanujan–Skolem's theorem"
+   ]
+  },
+  "Q191693": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lebesgue's decomposition theorem"
+   ]
+  },
+  "Q192760": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fundamental theorem of algebra"
+   ]
+  },
+  "Q1930577": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Herbrand's theorem"
+   ]
+  },
+  "Q19323571": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Chomsky–Schützenberger enumeration theorem"
+   ]
+  },
+  "Q193286": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Rolle's theorem"
+   ]
+  },
+  "Q1933521": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Kleene's recursion theorem"
+   ]
+  },
+  "Q1938251": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hasse–Minkowski theorem"
+   ]
+  },
+  "Q193878": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Chinese remainder theorem",
+    "Linear congruence theorem"
+   ]
+  },
+  "Q193882": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Menelaus's theorem"
+   ]
+  },
+  "Q193910": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Euler's theorem"
+   ]
+  },
+  "Q1946642": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "H-cobordism theorem"
+   ]
+  },
+  "Q1946642X": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "S-cobordism theorem#The s-cobordism theorem"
+   ]
+  },
+  "Q194919": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Inverse eigenvalues theorem"
+   ]
+  },
+  "Q195133": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Wigner–Eckart theorem"
+   ]
+  },
+  "Q1964537": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Mergelyan's theorem"
+   ]
+  },
+  "Q1966978": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lévy continuity theorem"
+   ]
+  },
+  "Q1974087": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Riemann's theorem on removable singularities"
+   ]
+  },
+  "Q19779530": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Thomsen's theorem"
+   ]
+  },
+  "Q1995468": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Hölder's theorem"
+   ]
+  },
+  "Q1996305": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Burnside's theorem"
+   ]
+  },
+  "Q2000090": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Art gallery theorem"
+   ]
+  },
+  "Q200787": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Gödel's incompleteness theorem"
+   ]
+  },
+  "Q2008549": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Hilbert's theorem (differential geometry)"
+   ]
+  },
+  "Q2013213": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Reuschle's theorem"
+   ]
+  },
+  "Q2022775": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Hilbert–Schmidt theorem"
+   ]
+  },
+  "Q2027347": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Optional stopping theorem"
+   ]
+  },
+  "Q20278711": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Cramer's theorem (algebraic curves)"
+   ]
+  },
+  "Q2028341": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Ado's theorem"
+   ]
+  },
+  "Q203565": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cubic equation"
+   ]
+  },
+  "Q2046647": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Karhunen–Loève theorem"
+   ]
+  },
+  "Q204884": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Löb's theorem"
+   ]
+  },
+  "Q205966": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Critical line theorem"
+   ]
+  },
+  "Q2063099": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Poincaré duality theorem"
+   ]
+  },
+  "Q2068227": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Artin–Schreier theorem"
+   ]
+  },
+  "Q207014": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Parallel postulate#History"
+   ]
+  },
+  "Q2071632": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Rouché–Capelli theorem"
+   ]
+  },
+  "Q207244": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Zlil Sela#Mathematical contributions"
+   ]
+  },
+  "Q208416": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Continuum hypothesis#Independence from ZFC"
+   ]
+  },
+  "Q208756": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Castelnuovo theorem"
+   ]
+  },
+  "Q2093886": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Primitive element theorem"
+   ]
+  },
+  "Q2094241": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Hopf–Rinow theorem"
+   ]
+  },
+  "Q2096184": {
+   "msc": "42",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Plancherel theorem"
+   ]
+  },
+  "Q20971632": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Lie's theorem"
+   ]
+  },
+  "Q2109761": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Uniformization theorem"
+   ]
+  },
+  "Q211981": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Hartman–Grobman theorem"
+   ]
+  },
+  "Q2120067": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Diller–Dress theorem"
+   ]
+  },
+  "Q213603": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Ceva's theorem"
+   ]
+  },
+  "Q2190744": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Feuerbach's theorem"
+   ]
+  },
+  "Q2197859": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Nicomachus's theorem"
+   ]
+  },
+  "Q220680": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Banach fixed-point theorem"
+   ]
+  },
+  "Q2222575": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Shell theorem"
+   ]
+  },
+  "Q2226602": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Bauer–Fike theorem"
+   ]
+  },
+  "Q2226606": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Beckman–Quarles theorem"
+   ]
+  },
+  "Q2226610": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Banach–Mazur theorem"
+   ]
+  },
+  "Q2226624": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Bruck–Chowla–Ryser theorem"
+   ]
+  },
+  "Q2226625": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Commandino's theorem"
+   ]
+  },
+  "Q2226640": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Cramér’s decomposition theorem"
+   ]
+  },
+  "Q2226644": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Easton's theorem"
+   ]
+  },
+  "Q2226650": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Eberlein–Šmulian theorem"
+   ]
+  },
+  "Q2226677": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Gelfand–Mazur theorem"
+   ]
+  },
+  "Q2226682": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Gelfand–Naimark theorem"
+   ]
+  },
+  "Q2226691": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Kirchhoff's theorem"
+   ]
+  },
+  "Q2226695": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Hurwitz's automorphisms theorem"
+   ]
+  },
+  "Q2226698": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Kantorovich theorem"
+   ]
+  },
+  "Q2226709": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Krull–Schmidt theorem"
+   ]
+  },
+  "Q2226750": {
+   "msc": "34",
+   "others": {},
+   "wikipedia": [
+    "Malgrange–Ehrenpreis theorem"
+   ]
+  },
+  "Q2226774": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "König's theorem (kinetics)"
+   ]
+  },
+  "Q2226786": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Sperner's theorem"
+   ]
+  },
+  "Q2226800": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Schur–Zassenhaus theorem"
+   ]
+  },
+  "Q2226803": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Tennenbaum's theorem"
+   ]
+  },
+  "Q2226807": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Vantieghems theorem"
+   ]
+  },
+  "Q2226855": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Sarkovskii's theorem"
+   ]
+  },
+  "Q2226868": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Geometric mean theorem"
+   ]
+  },
+  "Q2226962": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Weierstrass–Casorati theorem"
+   ]
+  },
+  "Q2253746": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Bertrand's ballot theorem"
+   ]
+  },
+  "Q225973": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Ore's theorem"
+   ]
+  },
+  "Q226014": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Poincaré recurrence theorem"
+   ]
+  },
+  "Q2266397": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Intersecting chords theorem"
+   ]
+  },
+  "Q2267175": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Tangent-secant theorem"
+   ]
+  },
+  "Q2269888": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Cohn's irreducibility criterion"
+   ]
+  },
+  "Q2270905": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Poincaré–Birkhoff–Witt theorem"
+   ]
+  },
+  "Q2275191": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lebesgue differentiation theorem"
+   ]
+  },
+  "Q2277040": {
+   "msc": "06",
+   "others": {},
+   "wikipedia": [
+    "Shannon's expansion theorem"
+   ]
+  },
+  "Q2287393": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Caristi fixed-point theorem"
+   ]
+  },
+  "Q22952648": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cardinality of the continuum#Uncountability"
+   ]
+  },
+  "Q2309682": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Sphere theorem"
+   ]
+  },
+  "Q2309760": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Looman–Menchoff theorem"
+   ]
+  },
+  "Q2310718": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pitot theorem"
+   ]
+  },
+  "Q2338929": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Exchange theorem"
+   ]
+  },
+  "Q2345282": {
+   "msc": "94",
+   "others": {},
+   "wikipedia": [
+    "Shannon's theorem"
+   ]
+  },
+  "Q2347139": {
+   "msc": "80",
+   "others": {},
+   "wikipedia": [
+    "Carnot's theorem (thermodynamics)"
+   ]
+  },
+  "Q2360531": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Jordan–Schur theorem"
+   ]
+  },
+  "Q2374733": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Skolem–Mahler–Lech theorem"
+   ]
+  },
+  "Q2376918": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Abelian and Tauberian theorems"
+   ]
+  },
+  "Q2378270": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Thue equation"
+   ]
+  },
+  "Q2379128": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Lindström's theorem"
+   ]
+  },
+  "Q2379132": {
+   "msc": "13",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Going up and going down"
+   ]
+  },
+  "Q2394548": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Hurewicz theorem"
+   ]
+  },
+  "Q240950": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Faltings's theorem"
+   ]
+  },
+  "Q2411312": {
+   "msc": "94",
+   "others": {},
+   "wikipedia": [
+    "Shannon's source coding theorem"
+   ]
+  },
+  "Q241868": {
+   "msc": "78",
+   "others": {},
+   "wikipedia": [
+    "Thévenin's theorem"
+   ]
+  },
+  "Q242045": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Monotone class theorem"
+   ]
+  },
+  "Q2428364": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Clausius theorem"
+   ]
+  },
+  "Q2449984": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Miquel's theorem"
+   ]
+  },
+  "Q2449984X": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pivot theorem"
+   ]
+  },
+  "Q245098": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Intermediate value theorem"
+   ]
+  },
+  "Q245098X": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Bolzano's theorem"
+   ]
+  },
+  "Q245902": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Riesz–Thorin theorem"
+   ]
+  },
+  "Q2471737": {
+   "msc": "52",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Carathéodory's theorem (convex hull)"
+   ]
+  },
+  "Q2473965": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Ugly duckling theorem"
+   ]
+  },
+  "Q2478371": {
+   "msc": "49",
+   "others": {},
+   "wikipedia": [
+    "Envelope theorem"
+   ]
+  },
+  "Q2482753": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Mann's theorem"
+   ]
+  },
+  "Q248931": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Poincaré–Bendixson theorem"
+   ]
+  },
+  "Q2495664": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Universal coefficient theorem"
+   ]
+  },
+  "Q2500406": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Liénard's theorem"
+   ]
+  },
+  "Q2500408": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Thébault's theorem"
+   ]
+  },
+  "Q25099402": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Kolmogorov–Arnold representation theorem"
+   ]
+  },
+  "Q2518048": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Kodaira vanishing theorem"
+   ]
+  },
+  "Q2524990": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Jackson's theorem (queueing theory)"
+   ]
+  },
+  "Q2525646": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Jordan–Hölder theorem"
+   ]
+  },
+  "Q25303622": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Browder–Minty theorem"
+   ]
+  },
+  "Q25304227": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Arakelyan's theorem"
+   ]
+  },
+  "Q25304301": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Bregman–Minc inequality"
+   ]
+  },
+  "Q253214": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Heine–Borel theorem"
+   ]
+  },
+  "Q2533936": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Defect (geometry)#Descartes.27s theorem"
+   ]
+  },
+  "Q25345219": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Decomposition theorem of Beilinson, Bernstein and Deligne"
+   ]
+  },
+  "Q25378690": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Ionescu-Tulcea theorem"
+   ]
+  },
+  "Q2540738": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Cartan–Dieudonné theorem"
+   ]
+  },
+  "Q2558669": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Artin–Zorn theorem"
+   ]
+  },
+  "Q255996": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Equipartition theorem"
+   ]
+  },
+  "Q256303": {
+   "msc": "65",
+   "others": {},
+   "wikipedia": [
+    "Lax–Richtmyer theorem"
+   ]
+  },
+  "Q257387": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Vitali set"
+   ]
+  },
+  "Q258374": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Carathéodory's theorem (measure theory)"
+   ]
+  },
+  "Q2588432": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Wold's theorem"
+   ]
+  },
+  "Q2600653": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Taylor–Proudman theorem"
+   ]
+  },
+  "Q2607007": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Hinge theorem"
+   ]
+  },
+  "Q260928": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Jordan curve theorem"
+   ]
+  },
+  "Q2621667": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Nagata–Smirnov metrization theorem"
+   ]
+  },
+  "Q2631152": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Carathéodory's extension theorem",
+    "Hahn–Kolmogorov theorem"
+   ]
+  },
+  "Q2635326": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Structured program theorem"
+   ]
+  },
+  "Q2638931": {
+   "msc": "42",
+   "others": {},
+   "wikipedia": [
+    "Convolution theorem"
+   ]
+  },
+  "Q266291": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Bloch's theorem (complex variables)"
+   ]
+  },
+  "Q26708": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Binomial theorem"
+   ]
+  },
+  "Q268031": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Abel's binomial theorem"
+   ]
+  },
+  "Q268132": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Gauss–Wantzel theorem"
+   ]
+  },
+  "Q26877569": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Furry's theorem"
+   ]
+  },
+  "Q2703389": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Linnik's theorem"
+   ]
+  },
+  "Q273037": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Bondy–Chvátal theorem"
+   ]
+  },
+  "Q2733672": {
+   "msc": "83",
+   "others": {},
+   "wikipedia": [
+    "Richard H. Price"
+   ]
+  },
+  "Q2734084": {
+   "msc": "33",
+   "others": {},
+   "wikipedia": [
+    "Bohr–Mollerup theorem"
+   ]
+  },
+  "Q276082": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Wilson's theorem"
+   ]
+  },
+  "Q2793600": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Stark–Heegner theorem"
+   ]
+  },
+  "Q2799491": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Ringel–Youngs theorem"
+   ]
+  },
+  "Q2800071": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Perfect graph theorem"
+   ]
+  },
+  "Q280116": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Odd number theorem"
+   ]
+  },
+  "Q28194853": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Lovelock's theorem"
+   ]
+  },
+  "Q282331": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Addition theorem"
+   ]
+  },
+  "Q282649": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Pentagonal number theorem"
+   ]
+  },
+  "Q283690": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Arrival theorem"
+   ]
+  },
+  "Q28458131": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Glivenko's theorem (probability theory)"
+   ]
+  },
+  "Q284960": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Mordell–Weil theorem"
+   ]
+  },
+  "Q285719": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Thales's theorem"
+   ]
+  },
+  "Q2862403": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Schneider–Lang theorem"
+   ]
+  },
+  "Q287347": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Gradient theorem"
+   ]
+  },
+  "Q288465": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Orbit-stabilizer theorem"
+   ]
+  },
+  "Q2893695": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Unmixedness theorem"
+   ]
+  },
+  "Q2916568": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Gomory's theorem"
+   ]
+  },
+  "Q2919401": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Ostrowski's theorem"
+   ]
+  },
+  "Q2981012": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Monge's theorem"
+   ]
+  },
+  "Q2984415": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Hajnal–Szemerédi theorem"
+   ]
+  },
+  "Q2993026": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Ankeny–Artin–Chowla theorem"
+   ]
+  },
+  "Q2993308": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Cameron–Erdős conjecture"
+   ]
+  },
+  "Q2993319": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Mirsky–Newman theorem"
+   ]
+  },
+  "Q2995691": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Newlander–Niremberg theorem"
+   ]
+  },
+  "Q3001796": {
+   "msc": "16",
+   "others": {},
+   "wikipedia": [
+    "Skolem–Noether theorem"
+   ]
+  },
+  "Q3007384": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Post's theorem"
+   ]
+  },
+  "Q303402": {
+   "msc": "15",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Rank–nullity theorem"
+   ]
+  },
+  "Q3075250": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Hardy–Littlewood maximal theorem"
+   ]
+  },
+  "Q3077634": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Sahlqvist correspondence theorem"
+   ]
+  },
+  "Q3088644": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Goldstine theorem"
+   ]
+  },
+  "Q3154003": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Le Cam's theorem"
+   ]
+  },
+  "Q3180727": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Perlis theorem"
+   ]
+  },
+  "Q31838822": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Kirchberger's theorem"
+   ]
+  },
+  "Q318767": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Abel's theorem"
+   ]
+  },
+  "Q321237": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Green's theorem"
+   ]
+  },
+  "Q32182": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Balinski's theorem"
+   ]
+  },
+  "Q3229335": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Borel–Carathéodory theorem"
+   ]
+  },
+  "Q3229352": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Vitali covering theorem"
+   ]
+  },
+  "Q332465": {
+   "msc": "40",
+   "others": {},
+   "wikipedia": [
+    "Absolute convergence theorem"
+   ]
+  },
+  "Q3345678": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Moore–Aronszajn theorem"
+   ]
+  },
+  "Q33481": {
+   "msc": "91",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Arrow's impossibility theorem"
+   ]
+  },
+  "Q338886": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Divergence theorem",
+    "Gauss theorem"
+   ]
+  },
+  "Q339495": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Altitude (triangle)"
+   ]
+  },
+  "Q3424029": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Chasles's theorem (disambiguation)"
+   ]
+  },
+  "Q3443426": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Bondy's theorem"
+   ]
+  },
+  "Q3458641": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Szegő limit theorems"
+   ]
+  },
+  "Q3502015": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hasse's theorem on elliptic curves"
+   ]
+  },
+  "Q3505260": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Cayley–Salmon theorem"
+   ]
+  },
+  "Q3526969": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "AF+BG theorem"
+   ]
+  },
+  "Q3526976": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Ax–Kochen theorem"
+   ]
+  },
+  "Q3526982": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Anning theorem"
+   ]
+  },
+  "Q3526990": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Euler's theorem (differential geometry)"
+   ]
+  },
+  "Q3526993": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Takagi existence theorem"
+   ]
+  },
+  "Q3526996": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Kolmogorov extension theorem"
+   ]
+  },
+  "Q3526998": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Excision theorem"
+   ]
+  },
+  "Q3527004": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "BEST theorem"
+   ]
+  },
+  "Q3527008": {
+   "msc": "42",
+   "others": {},
+   "wikipedia": [
+    "Balian–Low theorem"
+   ]
+  },
+  "Q3527009": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Baker's theorem"
+   ]
+  },
+  "Q3527011": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Beck's theorem (geometry)"
+   ]
+  },
+  "Q3527015": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Bernstein's theorem on monotone functions"
+   ]
+  },
+  "Q3527017": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Beurling–Lax theorem"
+   ]
+  },
+  "Q3527019": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Birch's theorem"
+   ]
+  },
+  "Q3527034": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Cauchy's theorem (geometry)"
+   ]
+  },
+  "Q3527040": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Chomsky–Schützenberger representation theorem"
+   ]
+  },
+  "Q3527044": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pappus's area theorem"
+   ]
+  },
+  "Q3527054": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "De Bruijn–Erdős theorem (graph theory)"
+   ]
+  },
+  "Q3527056": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "De Bruijn–Erdős theorem (incidence geometry)"
+   ]
+  },
+  "Q3527064": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Donsker's theorem"
+   ]
+  },
+  "Q3527067": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "F. and M. Riesz theorem"
+   ]
+  },
+  "Q3527071": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Fáry–Milnor theorem"
+   ]
+  },
+  "Q3527079": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Freiman's theorem"
+   ]
+  },
+  "Q3527088": {
+   "msc": "22",
+   "others": {},
+   "wikipedia": [
+    "Haboush's theorem"
+   ]
+  },
+  "Q3527091": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Gromov's theorem on groups of polynomial growth",
+    "Bass's theorem"
+   ]
+  },
+  "Q3527093": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hilbert–Speiser theorem"
+   ]
+  },
+  "Q3527095": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Jacobi's four-square theorem"
+   ]
+  },
+  "Q3527100": {
+   "msc": "06",
+   "others": {},
+   "wikipedia": [
+    "Kruskal's tree theorem"
+   ]
+  },
+  "Q3527102": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Kruskal–Katona theorem"
+   ]
+  },
+  "Q3527110": {
+   "msc": "65",
+   "others": {},
+   "wikipedia": [
+    "Lax–Wendroff theorem"
+   ]
+  },
+  "Q3527113": {
+   "msc": "22",
+   "others": {},
+   "wikipedia": [
+    "Lie–Kolchin theorem"
+   ]
+  },
+  "Q3527118": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Mahler's theorem"
+   ]
+  },
+  "Q3527125": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Monsky's theorem"
+   ]
+  },
+  "Q3527129": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Müntz–Szász theorem"
+   ]
+  },
+  "Q3527132": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Nagell–Lutz theorem"
+   ]
+  },
+  "Q3527155": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Robertson–Seymour theorem"
+   ]
+  },
+  "Q3527162": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Sophie Germain's theorem"
+   ]
+  },
+  "Q3527166": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Steinhaus theorem"
+   ]
+  },
+  "Q3527171": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Synge's theorem"
+   ]
+  },
+  "Q3527185": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Whitehead theorem"
+   ]
+  },
+  "Q3527189": {
+   "msc": "16",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lattice theorem"
+   ]
+  },
+  "Q3527196": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Principal ideal theorem"
+   ]
+  },
+  "Q3527205": {
+   "msc": "15",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Dimension theorem for vector spaces"
+   ]
+  },
+  "Q3527209": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hasse norm theorem"
+   ]
+  },
+  "Q3527214": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Non-squeezing theorem"
+   ]
+  },
+  "Q3527215": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hilbert projection theorem"
+   ]
+  },
+  "Q3527217": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "M. Riesz extension theorem"
+   ]
+  },
+  "Q3527219": {
+   "msc": "32",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Weierstrass preparation theorem"
+   ]
+  },
+  "Q3527223": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Crystallographic restriction theorem"
+   ]
+  },
+  "Q3527226": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Linear speedup theorem",
+    "Linear speedup theorem"
+   ]
+  },
+  "Q3527230": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Von Staudt–Clausen theorem"
+   ]
+  },
+  "Q3527233": {
+   "msc": "40",
+   "others": {},
+   "wikipedia": [
+    "Kolmogorov's three-series theorem"
+   ]
+  },
+  "Q3527241": {
+   "msc": "13",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Krull's principal ideal theorem"
+   ]
+  },
+  "Q3527245": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Six exponentials theorem"
+   ]
+  },
+  "Q3527247": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Six circles theorem"
+   ]
+  },
+  "Q3527250": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hadamard three-lines theorem"
+   ]
+  },
+  "Q3527263": {
+   "msc": "06",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Kleene fixed-point theorem"
+   ]
+  },
+  "Q3527279": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Wiener's tauberian theorem"
+   ]
+  },
+  "Q3534036": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pompeiu's theorem"
+   ]
+  },
+  "Q356895": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Adiabatic theorem"
+   ]
+  },
+  "Q357192": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Holland's schema theorem"
+   ]
+  },
+  "Q357858": {
+   "msc": "18",
+   "others": {},
+   "wikipedia": [
+    "Freyd's adjoint functor theorem"
+   ]
+  },
+  "Q3613173": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Tits alternative"
+   ]
+  },
+  "Q3661294": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Kelvin's circulation theorem"
+   ]
+  },
+  "Q3699212": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Saint-Venant's theorem"
+   ]
+  },
+  "Q3711848": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Sobolev embedding theorem"
+   ]
+  },
+  "Q371685": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Kraft–McMillan theorem"
+   ]
+  },
+  "Q372037": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Seifert–van Kampen theorem"
+   ]
+  },
+  "Q3757563": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Intercept theorem"
+   ]
+  },
+  "Q376166": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Cut-elimination theorem"
+   ]
+  },
+  "Q377047": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Butterfly theorem"
+   ]
+  },
+  "Q3771212": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Proth's theorem"
+   ]
+  },
+  "Q377276": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Cook's theorem"
+   ]
+  },
+  "Q379048": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Riemann–Roch theorem"
+   ]
+  },
+  "Q380576": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Quasiconformal mapping#Measurable Riemann mapping theorem"
+   ]
+  },
+  "Q383238": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Hartogs's extension theorem"
+   ]
+  },
+  "Q384142": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Herbrand–Ribet theorem"
+   ]
+  },
+  "Q386292": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Prime number theorem"
+   ]
+  },
+  "Q388525": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Bell's theorem"
+   ]
+  },
+  "Q3889376": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Carmichael's theorem"
+   ]
+  },
+  "Q3893473": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Tameness theorem"
+   ]
+  },
+  "Q3915398": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Brunn–Minkowski theorem"
+   ]
+  },
+  "Q3983968": {
+   "msc": "34",
+   "others": {},
+   "wikipedia": [
+    "Sturm–Picone comparison theorem"
+   ]
+  },
+  "Q3983972": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Simplicial approximation theorem"
+   ]
+  },
+  "Q3984011": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Duggan–Schwartz theorem"
+   ]
+  },
+  "Q3984017": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Helly's selection theorem"
+   ]
+  },
+  "Q3984020": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Holmström's theorem"
+   ]
+  },
+  "Q3984052": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Equidistribution theorem"
+   ]
+  },
+  "Q3984053": {
+   "msc": "43",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fourier inversion theorem"
+   ]
+  },
+  "Q3984056": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "No-communication theorem"
+   ]
+  },
+  "Q3984063": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Mostow rigidity theorem"
+   ]
+  },
+  "Q3984069": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Fredholm's theorem"
+   ]
+  },
+  "Q401319": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Puiseux series#Newton–Puiseux theorem"
+   ]
+  },
+  "Q401905": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Skorokhod's representation theorem"
+   ]
+  },
+  "Q4054114": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "ATS theorem"
+   ]
+  },
+  "Q4116459": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Niven's theorem"
+   ]
+  },
+  "Q4171386": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Soul theorem"
+   ]
+  },
+  "Q4179283": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Positive energy theorem"
+   ]
+  },
+  "Q420714": {
+   "msc": "68",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Akra–Bazzi theorem"
+   ]
+  },
+  "Q422187": {
+   "msc": "68",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Myhill–Nerode theorem"
+   ]
+  },
+  "Q425432": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Laurent expansion theorem"
+   ]
+  },
+  "Q4272300": {
+   "msc": "44",
+   "others": {},
+   "wikipedia": [
+    "Initial value theorem"
+   ]
+  },
+  "Q4272645": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Final value theorem"
+   ]
+  },
+  "Q428134": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Gauss–Markov theorem"
+   ]
+  },
+  "Q4378868": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Phragmén–Lindelöf theorem"
+   ]
+  },
+  "Q4378889": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Carathéodory's theorem (conformal mapping)"
+   ]
+  },
+  "Q4408070": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "De Finetti's theorem"
+   ]
+  },
+  "Q4454910": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Ostrowski–Hadamard gap theorem"
+   ]
+  },
+  "Q4454919": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Aumann's agreement theorem"
+   ]
+  },
+  "Q4454925": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Edge-of-the-wedge theorem"
+   ]
+  },
+  "Q4454954": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Kirszbraun theorem"
+   ]
+  },
+  "Q4454958": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Min-max theorem"
+   ]
+  },
+  "Q4454973": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Lindelöf's theorem"
+   ]
+  },
+  "Q4454976": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Liouville's theorem (conformal mappings)"
+   ]
+  },
+  "Q4454989": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Meusnier's theorem"
+   ]
+  },
+  "Q4454996": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Novikov's compact leaf theorem"
+   ]
+  },
+  "Q4455003": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Pomeranchuk's theorem"
+   ]
+  },
+  "Q4455015": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Routh–Hurwitz theorem"
+   ]
+  },
+  "Q4455016": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Reeb sphere theorem"
+   ]
+  },
+  "Q4455023": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Sazonov's theorem"
+   ]
+  },
+  "Q4455025": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "No wandering domain theorem"
+   ]
+  },
+  "Q4455030": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Stone's theorem on one-parameter unitary groups"
+   ]
+  },
+  "Q4455031": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Fáry's theorem"
+   ]
+  },
+  "Q4455033": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Fatou's theorem"
+   ]
+  },
+  "Q4455037": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Hardy's theorem"
+   ]
+  },
+  "Q4455043": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Cayley–Bacharach theorem"
+   ]
+  },
+  "Q4455046": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Monodromy theorem"
+   ]
+  },
+  "Q459547": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Ptolemy's theorem"
+   ]
+  },
+  "Q4634017": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "2π theorem"
+   ]
+  },
+  "Q4663326": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Hirzebruch–Riemann–Roch theorem"
+   ]
+  },
+  "Q4666729": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Abel–Jacobi theorem"
+   ]
+  },
+  "Q4666729X": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Abel's curve theorem"
+   ]
+  },
+  "Q4667501": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Abhyankar–Moh theorem"
+   ]
+  },
+  "Q467205": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Fundamental theorems of welfare economics"
+   ]
+  },
+  "Q467756": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Stokes's theorem"
+   ]
+  },
+  "Q4677985": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Acyclic models theorem"
+   ]
+  },
+  "Q468391": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Bolzano–Weierstrass theorem"
+   ]
+  },
+  "Q4695203": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Four functions theorem"
+   ]
+  },
+  "Q4700718": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Akhiezer's theorem"
+   ]
+  },
+  "Q470877": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Stirling's theorem"
+   ]
+  },
+  "Q4712316": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Albert–Brauer–Hasse–Noether theorem"
+   ]
+  },
+  "Q4713046": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Alchian–Allen theorem"
+   ]
+  },
+  "Q4724004A": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Algebraic geometry and analytic geometry#Chow.27s theorem"
+   ]
+  },
+  "Q4724004B": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Riemann's existence theorem"
+   ]
+  },
+  "Q472883": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Quadratic reciprocity theorem"
+   ]
+  },
+  "Q4734002": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Gromov–Ruh theorem"
+   ]
+  },
+  "Q4734844": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Alperin–Brauer–Gorenstein theorem"
+   ]
+  },
+  "Q4736422": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Denjoy–Luzin theorem"
+   ]
+  },
+  "Q4746948": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Amitsur–Levitzki theorem"
+   ]
+  },
+  "Q474881": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cantor's theorem"
+   ]
+  },
+  "Q4751110": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Analyst's traveling salesman theorem"
+   ]
+  },
+  "Q4751118": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Analytic Fredholm theorem"
+   ]
+  },
+  "Q4753992": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Anderson's theorem"
+   ]
+  },
+  "Q4756099": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Andreotti–Frankel theorem"
+   ]
+  },
+  "Q476776": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Quartic equation"
+   ]
+  },
+  "Q4783822": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Arithmetic Riemann–Roch theorem"
+   ]
+  },
+  "Q4788680": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Area theorem (conformal mapping)"
+   ]
+  },
+  "Q4801169": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Artin approximation theorem"
+   ]
+  },
+  "Q4801183": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Artin–Verdier duality"
+   ]
+  },
+  "Q4801563": {
+   "msc": "93",
+   "others": {},
+   "wikipedia": [
+    "Artstein's theorem"
+   ]
+  },
+  "Q4815879": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Atiyah–Segal completion theorem"
+   ]
+  },
+  "Q4815899": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Atkinson's theorem"
+   ]
+  },
+  "Q4826848": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Autonomous convergence theorem"
+   ]
+  },
+  "Q4827308": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Auxiliary polynomial theorem"
+   ]
+  },
+  "Q4830725": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Ax–Grothendieck theorem"
+   ]
+  },
+  "Q4832965": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Aztec diamond theorem"
+   ]
+  },
+  "Q4838119": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Babuška–Lax–Milgram theorem"
+   ]
+  },
+  "Q4848497": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Baily–Borel theorem"
+   ]
+  },
+  "Q4853767": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Banach–Stone theorem"
+   ]
+  },
+  "Q4857506": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Bapat–Beg theorem"
+   ]
+  },
+  "Q4865980": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Barwise compactness theorem"
+   ]
+  },
+  "Q4866385": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Base change theorems"
+   ]
+  },
+  "Q4866385X": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Proper base change theorem"
+   ]
+  },
+  "Q487132": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Infinite monkey theorem"
+   ]
+  },
+  "Q4877965": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Beauville–Laszlo theorem"
+   ]
+  },
+  "Q4878586": {
+   "msc": "18",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Beck's monadicity theorem"
+   ]
+  },
+  "Q4880958": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Behnke–Stein theorem"
+   ]
+  },
+  "Q4884789": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Beltrami's theorem"
+   ]
+  },
+  "Q4884950": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Belyi's theorem"
+   ]
+  },
+  "Q488541": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Fisher separation theorem"
+   ]
+  },
+  "Q4891633": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Berger–Kazdan comparison theorem"
+   ]
+  },
+  "Q4894565": {
+   "msc": "41",
+   "others": {},
+   "wikipedia": [
+    "Bernstein's theorem (approximation theory)"
+   ]
+  },
+  "Q48996535": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Solèr's theorem"
+   ]
+  },
+  "Q48998319": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Frobenius reciprocity theorem"
+   ]
+  },
+  "Q4914101": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Bing's recognition theorem"
+   ]
+  },
+  "Q4916483": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Birkhoff–Grothendieck theorem"
+   ]
+  },
+  "Q4918128": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Bishop–Cannings theorem"
+   ]
+  },
+  "Q4927458": {
+   "msc": "78",
+   "others": {},
+   "wikipedia": [
+    "Blondel's theorem"
+   ]
+  },
+  "Q4937691": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Bogoliubov–Parasyuk theorem"
+   ]
+  },
+  "Q4941364": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Bondareva–Shapley theorem"
+   ]
+  },
+  "Q4942215": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Bonnet theorem"
+   ]
+  },
+  "Q4944906": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Borel determinacy theorem"
+   ]
+  },
+  "Q4944908": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Borel fixed-point theorem"
+   ]
+  },
+  "Q4944923": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Borel–Bott–Weil theorem"
+   ]
+  },
+  "Q4944923X": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Borel–Weil theorem"
+   ]
+  },
+  "Q4948983": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Bott periodicity theorem"
+   ]
+  },
+  "Q4949984": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Bounded inverse theorem"
+   ]
+  },
+  "Q4950096": {
+   "msc": "06",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Bourbaki–Witt theorem"
+   ]
+  },
+  "Q495412": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Jordan–Schönflies theorem"
+   ]
+  },
+  "Q4956438": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Branching theorem"
+   ]
+  },
+  "Q4958218": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Brauer's theorem on induced characters"
+   ]
+  },
+  "Q4958221": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Brauer's three main theorems",
+    "Brauer's main theorem"
+   ]
+  },
+  "Q4958227": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Brauer–Nesbitt theorem"
+   ]
+  },
+  "Q4958230": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Brauer–Siegel theorem"
+   ]
+  },
+  "Q4958233": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Brauer–Suzuki–Wall theorem"
+   ]
+  },
+  "Q4971339": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "British flag theorem"
+   ]
+  },
+  "Q4975963": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Brown's representability theorem"
+   ]
+  },
+  "Q4979609": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Brun–Titchmarsh theorem"
+   ]
+  },
+  "Q4991415": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Chowla–Mordell theorem"
+   ]
+  },
+  "Q4998912": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Burke's theorem"
+   ]
+  },
+  "Q5001327": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Busemann's theorem"
+   ]
+  },
+  "Q5005143": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Bôcher's theorem"
+   ]
+  },
+  "Q5005965": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "C-theorem"
+   ]
+  },
+  "Q5026435": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Cameron–Martin theorem"
+   ]
+  },
+  "Q5037752": {
+   "msc": "34",
+   "others": {},
+   "wikipedia": [
+    "Carathéodory's existence theorem"
+   ]
+  },
+  "Q5041175": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Carleson–Jacobs theorem"
+   ]
+  },
+  "Q5042898": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Carlson's theorem"
+   ]
+  },
+  "Q5047043": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Cartan's theorems A and B"
+   ]
+  },
+  "Q5047046": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Brauer–Cartan–Hua theorem"
+   ]
+  },
+  "Q5047048": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Cartan–Hadamard theorem"
+   ]
+  },
+  "Q5047051": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Cartan–Kuranishi prolongation theorem"
+   ]
+  },
+  "Q5047052": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Cartan–Kähler theorem"
+   ]
+  },
+  "Q504843": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Mycielski's theorem"
+   ]
+  },
+  "Q5049717": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Castelnuovo–de Franchis theorem"
+   ]
+  },
+  "Q505798": {
+   "msc": "20",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lagrange's theorem (group theory)"
+   ]
+  },
+  "Q5091194": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Cheng's eigenvalue comparison theorem"
+   ]
+  },
+  "Q5094298": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Chevalley's structure theorem"
+   ]
+  },
+  "Q5094305": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Chevalley–Shephard–Todd theorem"
+   ]
+  },
+  "Q510197": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Tutte theorem"
+   ]
+  },
+  "Q5103861": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Choi's theorem on completely positive maps"
+   ]
+  },
+  "Q5125859": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Clapeyron's theorem"
+   ]
+  },
+  "Q5127710": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Clark–Ocone theorem"
+   ]
+  },
+  "Q512897": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Brooks's theorem"
+   ]
+  },
+  "Q5132839": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Clifford's circle theorems"
+   ]
+  },
+  "Q5132840": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Clifford's theorem on special divisors"
+   ]
+  },
+  "Q5136698": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Cluster decomposition theorem"
+   ]
+  },
+  "Q5139948": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Codd's theorem"
+   ]
+  },
+  "Q5141331": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Cohen structure theorem"
+   ]
+  },
+  "Q5155090": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Commutation theorem"
+   ]
+  },
+  "Q5157054": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Compression theorem"
+   ]
+  },
+  "Q5161245": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Conley–Zehnder theorem"
+   ]
+  },
+  "Q5163116": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Conservativity theorem"
+   ]
+  },
+  "Q5165492": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Continuous mapping theorem"
+   ]
+  },
+  "Q5166389": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Convergence problem#Van Vleck.27s theorem"
+   ]
+  },
+  "Q5171652": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Corners theorem"
+   ]
+  },
+  "Q5172143": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Corona theorem"
+   ]
+  },
+  "Q5178114": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Courcelle's theorem"
+   ]
+  },
+  "Q5180651": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Craig's theorem"
+   ]
+  },
+  "Q5187911": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Crooks fluctuation theorem"
+   ]
+  },
+  "Q5188510": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Crossbar theorem"
+   ]
+  },
+  "Q5195996": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Curtis–Hedlund–Lyndon theorem"
+   ]
+  },
+  "Q5221089": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Danskin's theorem"
+   ]
+  },
+  "Q523832": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Carathéodory–Jacobi–Lie theorem"
+   ]
+  },
+  "Q523876": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Spin–statistics theorem"
+   ]
+  },
+  "Q5242704": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Dawson–Gärtner theorem"
+   ]
+  },
+  "Q5244285": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "de Bruijn's theorem"
+   ]
+  },
+  "Q5244361": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "De Franchis theorem"
+   ]
+  },
+  "Q5251122": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Time hierarchy theorem"
+   ]
+  },
+  "Q5252320": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Lickorish twist theorem"
+   ]
+  },
+  "Q5278348": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Dinitz conjecture"
+   ]
+  },
+  "Q5282059": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Discrete series representation"
+   ]
+  },
+  "Q5282247": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Disintegration theorem"
+   ]
+  },
+  "Q528955": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Kochen–Specker theorem"
+   ]
+  },
+  "Q528987": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Von Neumann bicommutant theorem"
+   ]
+  },
+  "Q5295351": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Donaldson's theorem"
+   ]
+  },
+  "Q5296972": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Doob–Meyer decomposition theorem"
+   ]
+  },
+  "Q5299605": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Double-negation translation#Propositional logic"
+   ]
+  },
+  "Q530152": {
+   "msc": "34",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Picard–Lindelöf theorem"
+   ]
+  },
+  "Q5311783": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Dudley's theorem"
+   ]
+  },
+  "Q5315060": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Dunford–Schwartz theorem"
+   ]
+  },
+  "Q5319505": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Zeilberger–Bressoud theorem"
+   ]
+  },
+  "Q5337931": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Edgeworth's limit theorem"
+   ]
+  },
+  "Q535366": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Montel's theorem"
+   ]
+  },
+  "Q5362000": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Elitzur's theorem"
+   ]
+  },
+  "Q536640": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hall's marriage theorem"
+   ]
+  },
+  "Q537618": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Banach–Alaoglu theorem"
+   ]
+  },
+  "Q5384150": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Equal incircles theorem"
+   ]
+  },
+  "Q5385323": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Gallai theorem"
+   ]
+  },
+  "Q5385324": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Nagy theorem"
+   ]
+  },
+  "Q5385325": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Pósa theorem"
+   ]
+  },
+  "Q5385326": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Stone theorem"
+   ]
+  },
+  "Q5421989": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Exterior angle theorem"
+   ]
+  },
+  "Q5436274": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Farrell–Markushevich theorem"
+   ]
+  },
+  "Q5437947": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fatou–Lebesgue theorem"
+   ]
+  },
+  "Q5438320": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Faustman–Ohlin theorem"
+   ]
+  },
+  "Q544292": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Lagrange inversion theorem"
+   ]
+  },
+  "Q5443003": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Fenchel's duality theorem"
+   ]
+  },
+  "Q5443004": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Fenchel's theorem"
+   ]
+  },
+  "Q5443005": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Fenchel–Moreau theorem"
+   ]
+  },
+  "Q544369": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Glivenko–Cantelli theorem"
+   ]
+  },
+  "Q5445112": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fernique's theorem"
+   ]
+  },
+  "Q5445311": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Ferrero–Washington theorem"
+   ]
+  },
+  "Q5447238": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Fieller's theorem"
+   ]
+  },
+  "Q5454965": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Fisher–Tippett–Gnedenko theorem"
+   ]
+  },
+  "Q5455495": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Fitting's theorem"
+   ]
+  },
+  "Q5456213": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Five circles theorem"
+   ]
+  },
+  "Q5463860": {
+   "msc": "16",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Focal subgroup theorem"
+   ]
+  },
+  "Q5473576": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Foster's theorem"
+   ]
+  },
+  "Q5494134": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Fraňková–Helly selection theorem"
+   ]
+  },
+  "Q5498822": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Birkhoff's ergodic theorem"
+   ]
+  },
+  "Q5499906": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Shirshov–Witt theorem"
+   ]
+  },
+  "Q5501344": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Freidlin–Wentzell theorem"
+   ]
+  },
+  "Q5503689": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Bombieri–Friedlander–Iwaniec theorem"
+   ]
+  },
+  "Q550402": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Dirichlet's theorem on arithmetic progressions"
+   ]
+  },
+  "Q5504427": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Friendship theorem"
+   ]
+  },
+  "Q5505098": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Frobenius determinant theorem"
+   ]
+  },
+  "Q5505114": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Froda's theorem"
+   ]
+  },
+  "Q5506929": {
+   "msc": "34",
+   "others": {},
+   "wikipedia": [
+    "Fuchs's theorem"
+   ]
+  },
+  "Q5507285": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Fuglede's theorem"
+   ]
+  },
+  "Q5508180": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Full employment theorem"
+   ]
+  },
+  "Q5508482": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Fulton–Hansen connectedness theorem"
+   ]
+  },
+  "Q5508973": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Fundamental theorem of arbitrage-free pricing"
+   ]
+  },
+  "Q552367": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Berge's theorem"
+   ]
+  },
+  "Q5530454": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Gell-Mann and Low theorem"
+   ]
+  },
+  "Q5533794": {
+   "msc": "03",
+   "others": {
+    "rocq": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Gentzen's consistency proof"
+   ]
+  },
+  "Q5552370": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Geroch's splitting theorem"
+   ]
+  },
+  "Q55647729": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Cramér's theorem (large deviations)"
+   ]
+  },
+  "Q5566491": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Glaisher's theorem"
+   ]
+  },
+  "Q5567394": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Gleason's theorem"
+   ]
+  },
+  "Q5576268": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Goddard–Thorn theorem"
+   ]
+  },
+  "Q5579030": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Goldberg–Sachs theorem"
+   ]
+  },
+  "Q5580171": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Goldie's theorem"
+   ]
+  },
+  "Q5586067": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Gordon–Newell theorem"
+   ]
+  },
+  "Q5588002": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Gottesman–Knill theorem"
+   ]
+  },
+  "Q5597098": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Graph structure theorem"
+   ]
+  },
+  "Q5609384": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Grinberg's theorem"
+   ]
+  },
+  "Q5610188": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Gromov's compactness theorem (geometry)"
+   ]
+  },
+  "Q5610190": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Gromov's compactness theorem (topology)"
+   ]
+  },
+  "Q5610718": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Grothendieck's connectedness theorem"
+   ]
+  },
+  "Q5612131": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Grunsky's theorem"
+   ]
+  },
+  "Q5612159": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Grunwald–Wang theorem"
+   ]
+  },
+  "Q5612871": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Grötzsch's theorem"
+   ]
+  },
+  "Q56291669": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Alspach's conjecture"
+   ]
+  },
+  "Q5638112": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Hadwiger's theorem"
+   ]
+  },
+  "Q5638886": {
+   "msc": "06",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hahn embedding theorem"
+   ]
+  },
+  "Q5643485": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Halpern–Läuchli theorem"
+   ]
+  },
+  "Q5645731": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Hammersley–Clifford theorem"
+   ]
+  },
+  "Q5656673": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Hardy–Littlewood tauberian theorem"
+   ]
+  },
+  "Q5656674": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hardy–Ramanujan theorem"
+   ]
+  },
+  "Q5657833": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Harish–Chandra's regularity theorem"
+   ]
+  },
+  "Q5659675": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Harnack's curve theorem"
+   ]
+  },
+  "Q5675112": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Hartogs–Rosenthal theorem"
+   ]
+  },
+  "Q567843": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Hahn–Mazurkiewicz theorem"
+   ]
+  },
+  "Q5680041": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hasse–Arf theorem"
+   ]
+  },
+  "Q5697916A": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Heegaard splitting"
+   ]
+  },
+  "Q5697916B": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Heegaard splitting"
+   ]
+  },
+  "Q5697927": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Gross–Zagier theorem"
+   ]
+  },
+  "Q570779": {
+   "msc": "13",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Vieta's formulas"
+   ]
+  },
+  "Q5709171": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Helly–Bray theorem"
+   ]
+  },
+  "Q5709377": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Helmholtz theorem (classical mechanics)"
+   ]
+  },
+  "Q574902": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Tarski's undefinability theorem"
+   ]
+  },
+  "Q5761142": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hilbert's irreducibility theorem"
+   ]
+  },
+  "Q576478": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Liouville's theorem (complex analysis)"
+   ]
+  },
+  "Q578555": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Noether's theorem"
+   ]
+  },
+  "Q579515": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Rao–Blackwell theorem"
+   ]
+  },
+  "Q583147": {
+   "msc": "53",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Sard's theorem"
+   ]
+  },
+  "Q586051": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Haag–Łopuszański–Sohnius theorem"
+   ]
+  },
+  "Q587081": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Kolmogorov–Arnold–Moser theorem"
+   ]
+  },
+  "Q5874979": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Hobby–Rice theorem"
+   ]
+  },
+  "Q5876058": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Hodge index theorem"
+   ]
+  },
+  "Q588218": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Koebe 1/4 theorem"
+   ]
+  },
+  "Q594571": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Van Aubel's theorem"
+   ]
+  },
+  "Q595466": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Dini's theorem"
+   ]
+  },
+  "Q5988409": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Identity theorem for Riemann surfaces"
+   ]
+  },
+  "Q599876": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Cochran's theorem"
+   ]
+  },
+  "Q6015420": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Increment theorem"
+   ]
+  },
+  "Q6059532": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Aronszajn–Smith theorem"
+   ]
+  },
+  "Q60681777": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Constant chord theorem"
+   ]
+  },
+  "Q608294": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Max flow min cut theorem"
+   ]
+  },
+  "Q6086104": {
+   "msc": "16",
+   "others": {},
+   "wikipedia": [
+    "Isomorphism extension theorem"
+   ]
+  },
+  "Q609612": {
+   "msc": "06",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Knaster–Tarski theorem"
+   ]
+  },
+  "Q61163749": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Theorem of the gnomon"
+   ]
+  },
+  "Q6119825": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Jacobson–Bourbaki theorem"
+   ]
+  },
+  "Q612021": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Gibbard–Satterthwaite theorem"
+   ]
+  },
+  "Q617417": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Isoperimetric theorem"
+   ]
+  },
+  "Q619985": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Multinomial theorem"
+   ]
+  },
+  "Q62051012": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Behrend's theorem"
+   ]
+  },
+  "Q620602": {
+   "msc": "70",
+   "others": {},
+   "wikipedia": [
+    "Virial theorem"
+   ]
+  },
+  "Q6276298": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Jordan's theorem (multiply transitive groups)"
+   ]
+  },
+  "Q631561": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Closed range theorem"
+   ]
+  },
+  "Q632546": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Bertrand's postulate"
+   ]
+  },
+  "Q632546X": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Bertrand's postulate#Sylvester.27s theorem"
+   ]
+  },
+  "Q6344729": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Kachurovskii's theorem"
+   ]
+  },
+  "Q6360586": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Kanamori–McAloon theorem"
+   ]
+  },
+  "Q6373327": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Karp–Lipton theorem"
+   ]
+  },
+  "Q637418": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Napoleon's theorem"
+   ]
+  },
+  "Q6378596": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Katz–Lang finiteness theorem"
+   ]
+  },
+  "Q6379606": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Kawamata–Viehweg vanishing theorem"
+   ]
+  },
+  "Q6379715": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Kawasaki's theorem"
+   ]
+  },
+  "Q6387087": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Kempf–Ness theorem"
+   ]
+  },
+  "Q6400676": {
+   "msc": "93",
+   "others": {},
+   "wikipedia": [
+    "Kharitonov's theorem"
+   ]
+  },
+  "Q6402928": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Lagrange reversion theorem"
+   ]
+  },
+  "Q6403282": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Lagrange's theorem (number theory)"
+   ]
+  },
+  "Q6407842": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Killing–Hopf theorem"
+   ]
+  },
+  "Q6414200": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Kinoshita–Lee–Nauenberg theorem"
+   ]
+  },
+  "Q6421981": {
+   "msc": "34",
+   "others": {},
+   "wikipedia": [
+    "Kneser's theorem (differential equations)"
+   ]
+  },
+  "Q6425088": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Kodaira embedding theorem"
+   ]
+  },
+  "Q642620": {
+   "msc": "52",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Krein–Milman theorem"
+   ]
+  },
+  "Q643513": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Riesz–Fischer theorem"
+   ]
+  },
+  "Q6436753": {
+   "msc": "93",
+   "others": {},
+   "wikipedia": [
+    "Krener's theorem"
+   ]
+  },
+  "Q643826": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Slutsky's theorem"
+   ]
+  },
+  "Q6442276": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Kuiper's theorem"
+   ]
+  },
+  "Q6446396": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Kurosh subgroup theorem"
+   ]
+  },
+  "Q6455211": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Kōmura's theorem"
+   ]
+  },
+  "Q6456122": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "L-balance theorem"
+   ]
+  },
+  "Q646523": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pick's theorem"
+   ]
+  },
+  "Q6471668": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Lafforgue's theorem"
+   ]
+  },
+  "Q6481192": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Lambek–Moser theorem"
+   ]
+  },
+  "Q6484331": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Landau prime ideal theorem"
+   ]
+  },
+  "Q649469": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Modularity theorem"
+   ]
+  },
+  "Q649977": {
+   "msc": "17",
+   "others": {},
+   "wikipedia": [
+    "Shirshov–Cohn theorem"
+   ]
+  },
+  "Q6501470": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Lauricella's theorem"
+   ]
+  },
+  "Q650738": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Folk theorem (game theory)"
+   ]
+  },
+  "Q6513990": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Lee Hwa Chung theorem"
+   ]
+  },
+  "Q651593": {
+   "msc": "78",
+   "others": {},
+   "wikipedia": [
+    "Norton's theorem"
+   ]
+  },
+  "Q6516611": {
+   "msc": "82",
+   "others": {},
+   "wikipedia": [
+    "Lee–Yang theorem"
+   ]
+  },
+  "Q6516731": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Lefschetz hyperplane theorem"
+   ]
+  },
+  "Q6516736": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Lefschetz theorem on (1,1)-classes"
+   ]
+  },
+  "Q6528747": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Leray's theorem"
+   ]
+  },
+  "Q6528751": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Leray–Hirsch theorem"
+   ]
+  },
+  "Q6528849": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Lerner symmetry theorem"
+   ]
+  },
+  "Q6535568": {
+   "msc": "22",
+   "others": {},
+   "wikipedia": [
+    "Levi's theorem"
+   ]
+  },
+  "Q6535741": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Levitzky's theorem"
+   ]
+  },
+  "Q6544508": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Lie–Palais theorem"
+   ]
+  },
+  "Q656176": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Schauder fixed-point theorem"
+   ]
+  },
+  "Q656198": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Maschke's theorem"
+   ]
+  },
+  "Q656645": {
+   "msc": "13",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hilbert's basis theorem"
+   ]
+  },
+  "Q656772": {
+   "msc": "15",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cayley–Hamilton theorem"
+   ]
+  },
+  "Q657469": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Lefschetz fixed-point theorem"
+   ]
+  },
+  "Q657469X": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Lefschetz–Hopf theorem"
+   ]
+  },
+  "Q657482": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Abel–Ruffini theorem"
+   ]
+  },
+  "Q657903": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Hilbert–Waring theorem"
+   ]
+  },
+  "Q660799": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Darboux's theorem (analysis)"
+   ]
+  },
+  "Q6701653": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Lukacs's proportion-sum independence theorem"
+   ]
+  },
+  "Q670235": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fundamental theorem of arithmetic"
+   ]
+  },
+  "Q6707093": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Lyapunov–Malkin theorem"
+   ]
+  },
+  "Q6711207": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Lévy's modulus of continuity theorem"
+   ]
+  },
+  "Q671663": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Coleman–Mandula theorem"
+   ]
+  },
+  "Q6722024": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "MacMahon Master theorem"
+   ]
+  },
+  "Q6733278": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Maharam's theorem"
+   ]
+  },
+  "Q6734194": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Mahler's compactness theorem"
+   ]
+  },
+  "Q6735549": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Maier's theorem"
+   ]
+  },
+  "Q6743217": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Malgrange preparation theorem"
+   ]
+  },
+  "Q6749789": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Manin–Drinfeld theorem"
+   ]
+  },
+  "Q6757284": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Marcinkiewicz theorem"
+   ]
+  },
+  "Q6760432": {
+   "msc": "92",
+   "others": {},
+   "wikipedia": [
+    "Marginal value theorem"
+   ]
+  },
+  "Q676413": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Dandelin's theorem"
+   ]
+  },
+  "Q6771536": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Markus−Yamabe theorem"
+   ]
+  },
+  "Q6777133": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Martingale representation theorem",
+    "Integral representation theorem for classical Wiener space"
+   ]
+  },
+  "Q6783821": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Mason–Stothers theorem"
+   ]
+  },
+  "Q6795637": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Maximal ergodic theorem"
+   ]
+  },
+  "Q6795830": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Separating axis theorem"
+   ]
+  },
+  "Q6796056": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Maxwell's theorem"
+   ]
+  },
+  "Q679800": {
+   "msc": "94",
+   "others": {},
+   "wikipedia": [
+    "Nyquist–Shannon sampling theorem"
+   ]
+  },
+  "Q6799039": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Mazur's control theorem"
+   ]
+  },
+  "Q6813106": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Mellin inversion theorem"
+   ]
+  },
+  "Q681406": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Euler's rotation theorem"
+   ]
+  },
+  "Q685437": {
+   "msc": "44",
+   "others": {},
+   "wikipedia": [
+    "Hilbert transform#Titchmarsh's theorem"
+   ]
+  },
+  "Q6859627": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Milliken's tree theorem"
+   ]
+  },
+  "Q6859648": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Milliken–Taylor theorem"
+   ]
+  },
+  "Q6860180": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Milman–Pettis theorem"
+   ]
+  },
+  "Q6867853": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Minkowski's second theorem"
+   ]
+  },
+  "Q6867867": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Minkowski–Hlawka theorem"
+   ]
+  },
+  "Q6867878": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Minlos's theorem"
+   ]
+  },
+  "Q6911202": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Moreau's theorem"
+   ]
+  },
+  "Q6914794": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Morton's theorem"
+   ]
+  },
+  "Q6925496": {
+   "msc": "49",
+   "others": {},
+   "wikipedia": [
+    "Mountain pass theorem"
+   ]
+  },
+  "Q6927135": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Moving equilibrium theorem"
+   ]
+  },
+  "Q693083": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Soundness theorem"
+   ]
+  },
+  "Q6935007": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Multiplicity-one theorem"
+   ]
+  },
+  "Q6935403": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Mumford vanishing theorem"
+   ]
+  },
+  "Q6957141": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Nachbin's theorem"
+   ]
+  },
+  "Q6967039": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Nash–Moser theorem"
+   ]
+  },
+  "Q7020025": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Newton's theorem about ovals"
+   ]
+  },
+  "Q7031618": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Nielsen realization problem"
+   ]
+  },
+  "Q7031621": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Nielsen fixed-point theorem"
+   ]
+  },
+  "Q7042768": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "No-broadcasting theorem"
+   ]
+  },
+  "Q7042801": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "No-trade theorem"
+   ]
+  },
+  "Q7043732": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Kuhn's theorem"
+   ]
+  },
+  "Q7045226": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "No free lunch theorem"
+   ]
+  },
+  "Q7047379": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Noether's theorem on rationality for surfaces"
+   ]
+  },
+  "Q7098850": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Optical equivalence theorem"
+   ]
+  },
+  "Q7100033A": {
+   "msc": "93",
+   "others": {},
+   "wikipedia": [
+    "Orbit (control theory)#Orbit theorem (Nagano–Sussmann)"
+   ]
+  },
+  "Q7100033B": {
+   "msc": "93",
+   "others": {},
+   "wikipedia": [
+    "Orbit (control theory)#Corollary (Rashevsky–Chow theorem)"
+   ]
+  },
+  "Q7103669": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Ornstein theorem"
+   ]
+  },
+  "Q7106480": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Oseledec theorem"
+   ]
+  },
+  "Q7127466": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Paley's theorem"
+   ]
+  },
+  "Q7130794": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Pandya theorem"
+   ]
+  },
+  "Q7137494": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Paris–Harrington theorem"
+   ]
+  },
+  "Q7139570": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Parovicenko's theorem"
+   ]
+  },
+  "Q7140218": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Parthasarathy's theorem"
+   ]
+  },
+  "Q7160302": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Peeling theorem"
+   ]
+  },
+  "Q7160489": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Peetre theorem"
+   ]
+  },
+  "Q7160983": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Peixoto's theorem"
+   ]
+  },
+  "Q716171": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Erdős–Ginzburg–Ziv theorem"
+   ]
+  },
+  "Q718875": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Erdős–Ko–Rado theorem"
+   ]
+  },
+  "Q7190748": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Pickands–Balkema–de Haan theorem"
+   ]
+  },
+  "Q719966": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Toda's theorem"
+   ]
+  },
+  "Q7200963": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Planar separator theorem"
+   ]
+  },
+  "Q720469": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Chevalley–Warning theorem"
+   ]
+  },
+  "Q7208500": {
+   "msc": "60",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Poisson limit theorem"
+   ]
+  },
+  "Q721695": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Szemerédi–Trotter theorem"
+   ]
+  },
+  "Q7239984": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Preimage theorem"
+   ]
+  },
+  "Q7245073": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Principal axis theorem"
+   ]
+  },
+  "Q7249519": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Prokhorov's theorem"
+   ]
+  },
+  "Q7255475": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Pseudorandom generator theorem"
+   ]
+  },
+  "Q7269076": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "No-deleting theorem"
+   ]
+  },
+  "Q7269106": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Quantum threshold theorem"
+   ]
+  },
+  "Q7269437": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Denjoy–Carleman theorem"
+   ]
+  },
+  "Q7269559": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Sylvester pentahedral theorem"
+   ]
+  },
+  "Q727102": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fermat's theorem (stationary points)"
+   ]
+  },
+  "Q7272004": {
+   "msc": "16",
+   "others": {},
+   "wikipedia": [
+    "Quillen–Suslin theorem"
+   ]
+  },
+  "Q7272898": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Quotient of subspace theorem"
+   ]
+  },
+  "Q7283856": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Raikov's theorem"
+   ]
+  },
+  "Q7288988": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Ramanujam vanishing theorem"
+   ]
+  },
+  "Q729359": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Hadamard three-circle theorem"
+   ]
+  },
+  "Q7295875": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Ratner's theorems"
+   ]
+  },
+  "Q7296106": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Rauch comparison theorem"
+   ]
+  },
+  "Q730222": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Ham sandwich theorem",
+    "Stone–Tukey theorem"
+   ]
+  },
+  "Q7307252": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Reflection theorem"
+   ]
+  },
+  "Q7308146": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Regev's theorem"
+   ]
+  },
+  "Q7309601": {
+   "msc": "55",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Regular homotopy"
+   ]
+  },
+  "Q7310041": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Reider's theorem"
+   ]
+  },
+  "Q7312009": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Remmert–Stein theorem"
+   ]
+  },
+  "Q7318284": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Reversed compound agent theorem"
+   ]
+  },
+  "Q7322366": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Ribet's theorem"
+   ]
+  },
+  "Q7323144": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Rice–Shapiro theorem"
+   ]
+  },
+  "Q733081": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Angle trisection#Proof of impossibility"
+   ]
+  },
+  "Q7333126": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Riemann–Roch theorem for surfaces"
+   ]
+  },
+  "Q7341043": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Robbins theorem"
+   ]
+  },
+  "Q7352955": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Robinson's joint consistency theorem"
+   ]
+  },
+  "Q7359997": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Rokhlin's theorem"
+   ]
+  },
+  "Q737851": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Banach–Tarski theorem"
+   ]
+  },
+  "Q737892": {
+   "msc": "37",
+   "others": {},
+   "wikipedia": [
+    "Bendixson–Dulac theorem"
+   ]
+  },
+  "Q739403": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Stewart's theorem"
+   ]
+  },
+  "Q7396621": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Saccheri–Legendre theorem"
+   ]
+  },
+  "Q740093": {
+   "msc": "34",
+   "others": {},
+   "wikipedia": [
+    "Peano existence theorem"
+   ]
+  },
+  "Q742833": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Gauss–Bonnet theorem"
+   ]
+  },
+  "Q7430892": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Schaefer's dichotomy theorem"
+   ]
+  },
+  "Q7431298": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Schilder's theorem"
+   ]
+  },
+  "Q7431925": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Schnyder's theorem"
+   ]
+  },
+  "Q7432872": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Schreier refinement theorem"
+   ]
+  },
+  "Q7432915": {
+   "msc": "28",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Schroeder–Bernstein theorem for measurable spaces"
+   ]
+  },
+  "Q7432918": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Schröder–Bernstein theorems for operator algebras"
+   ]
+  },
+  "Q7433034": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Great orthogonality theorem"
+   ]
+  },
+  "Q7433182": {
+   "msc": "12",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Schwartz–Zippel theorem"
+   ]
+  },
+  "Q7433295": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Osterwalder–Schrader theorem"
+   ]
+  },
+  "Q7437564": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Scott core theorem"
+   ]
+  },
+  "Q744440": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Immerman–Szelepcsényi theorem"
+   ]
+  },
+  "Q7455422": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Swan's theorem"
+   ]
+  },
+  "Q748233": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Sylvester–Gallai theorem"
+   ]
+  },
+  "Q7496252": {
+   "msc": "16",
+   "others": {},
+   "wikipedia": [
+    "Shift theorem"
+   ]
+  },
+  "Q7510574": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Siegel–Walfisz theorem"
+   ]
+  },
+  "Q751120": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Thue–Siegel–Roth theorem"
+   ]
+  },
+  "Q7512855": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Hirzebruch signature theorem"
+   ]
+  },
+  "Q7516736": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Silverman–Toeplitz theorem"
+   ]
+  },
+  "Q752375": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Extreme value theorem"
+   ]
+  },
+  "Q7524563": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Sinkhorn's theorem"
+   ]
+  },
+  "Q7525341": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Sion's minimax theorem"
+   ]
+  },
+  "Q7525845": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Sipser–Lautemann theorem"
+   ]
+  },
+  "Q7532192": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Siu's semicontinuity theorem"
+   ]
+  },
+  "Q7536097": {
+   "msc": "32",
+   "others": {},
+   "wikipedia": [
+    "Skoda–El Mir theorem"
+   ]
+  },
+  "Q7536350": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Skorokhod's embedding theorem"
+   ]
+  },
+  "Q755986": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Atiyah–Bott fixed-point theorem"
+   ]
+  },
+  "Q755991": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Atiyah–Singer index theorem"
+   ]
+  },
+  "Q756946": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lagrange's four-square theorem"
+   ]
+  },
+  "Q7572588": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Space hierarchy theorem"
+   ]
+  },
+  "Q7574438": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Specht's theorem"
+   ]
+  },
+  "Q7597316": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Stallings theorem about ends of groups"
+   ]
+  },
+  "Q7597317": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Stallings–Zeeman theorem"
+   ]
+  },
+  "Q7599389": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Stanley's reciprocity theorem"
+   ]
+  },
+  "Q7601243": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Star of David theorem"
+   ]
+  },
+  "Q7606897": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Steinitz theorem"
+   ]
+  },
+  "Q7606940": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Stein–Strömberg theorem"
+   ]
+  },
+  "Q7617407": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Stinespring factorization theorem"
+   ]
+  },
+  "Q7619060": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Stone duality#The duality theorem"
+   ]
+  },
+  "Q7619449": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Stone–von Neumann theorem"
+   ]
+  },
+  "Q7621715": {
+   "msc": "12",
+   "others": {},
+   "wikipedia": [
+    "Strassmann's theorem"
+   ]
+  },
+  "Q7625164": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Structure theorem for Gaussian measures"
+   ]
+  },
+  "Q7632041": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Subspace theorem"
+   ]
+  },
+  "Q764287": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Van der Waerden's theorem"
+   ]
+  },
+  "Q7644264": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Supersymmetry nonrenormalization theorems"
+   ]
+  },
+  "Q765987": {
+   "msc": "51",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Heine–Cantor theorem"
+   ]
+  },
+  "Q7660749": {
+   "msc": "15",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Sylvester's determinant theorem"
+   ]
+  },
+  "Q7661308": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Symmetric hypergraph theorem"
+   ]
+  },
+  "Q7664013": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Sz.-Nagy's dilation theorem"
+   ]
+  },
+  "Q766722": {
+   "msc": "70",
+   "others": {},
+   "wikipedia": [
+    "Liouville's theorem (Hamiltonian)"
+   ]
+  },
+  "Q7686760": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Tarski's plank problem"
+   ]
+  },
+  "Q776578": {
+   "msc": "16",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Artin–Wedderburn theorem",
+    "Artin–Wedderburn theorem"
+   ]
+  },
+  "Q777924": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Tijdeman's theorem"
+   ]
+  },
+  "Q7782345": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Bertini's theorem"
+   ]
+  },
+  "Q7782346": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Theorem of the cube"
+   ]
+  },
+  "Q7782348": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Theorem of three moments"
+   ]
+  },
+  "Q779220": {
+   "msc": "13",
+   "others": {},
+   "wikipedia": [
+    "Hilbert's syzygy theorem"
+   ]
+  },
+  "Q7795825": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Thompson transitivity theorem"
+   ]
+  },
+  "Q7795828": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Thompson uniqueness theorem"
+   ]
+  },
+  "Q780763": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "15 and 290 theorems"
+   ]
+  },
+  "Q7809920": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Titchmarsh convolution theorem"
+   ]
+  },
+  "Q7818977": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Tomita's theorem"
+   ]
+  },
+  "Q7820874": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Tonelli's theorem (functional analysis)"
+   ]
+  },
+  "Q7824894": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Topkis's theorem"
+   ]
+  },
+  "Q7825061": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Toponogov's theorem"
+   ]
+  },
+  "Q7825663": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Torelli theorem"
+   ]
+  },
+  "Q7827204": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Mazur's torsion theorem"
+   ]
+  },
+  "Q784049": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Blaschke selection theorem"
+   ]
+  },
+  "Q7841060": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Trichotomy theorem"
+   ]
+  },
+  "Q7845353": {
+   "msc": "22",
+   "others": {},
+   "wikipedia": [
+    "Trombi–Varadarajan theorem"
+   ]
+  },
+  "Q7847268": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Trudinger's theorem"
+   ]
+  },
+  "Q7849521": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Tsen's theorem"
+   ]
+  },
+  "Q7853325": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Tunnell's theorem"
+   ]
+  },
+  "Q7856599": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Turán–Kubilius inequality"
+   ]
+  },
+  "Q7857350": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Tverberg's theorem"
+   ]
+  },
+  "Q7888360": {
+   "msc": "16",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Structure theorem for finitely generated modules over a principal ideal domain"
+   ]
+  },
+  "Q7894110": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Universal approximation theorem"
+   ]
+  },
+  "Q790236": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Baranyai's theorem"
+   ]
+  },
+  "Q7911648": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Valiant–Vazirani theorem"
+   ]
+  },
+  "Q791258": {
+   "msc": "62",
+   "others": {},
+   "wikipedia": [
+    "Basu's theorem"
+   ]
+  },
+  "Q791663": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Beatty's theorem"
+   ]
+  },
+  "Q7928688": {
+   "msc": "55",
+   "others": {},
+   "wikipedia": [
+    "Vietoris–Begle mapping theorem"
+   ]
+  },
+  "Q7936914": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Vitali–Hahn–Saks theorem"
+   ]
+  },
+  "Q7941491": {
+   "msc": "47",
+   "others": {},
+   "wikipedia": [
+    "Von Neumann's theorem"
+   ]
+  },
+  "Q794269": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Betti's theorem"
+   ]
+  },
+  "Q7959587": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Wagner's theorem"
+   ]
+  },
+  "Q7966545": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Walter theorem"
+   ]
+  },
+  "Q7978735": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Weber's theorem (Algebraic curves)"
+   ]
+  },
+  "Q7980241": {
+   "msc": "81",
+   "others": {},
+   "wikipedia": [
+    "Weinberg–Witten theorem"
+   ]
+  },
+  "Q7996766": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Whitney extension theorem"
+   ]
+  },
+  "Q7996769": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Whitney immersion theorem"
+   ]
+  },
+  "Q7999144": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Wiener–Ikehara theorem"
+   ]
+  },
+  "Q7999797": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Beer's theorem"
+   ]
+  },
+  "Q8002487": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Wilkie's theorem"
+   ]
+  },
+  "Q8028529": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Witt's theorem"
+   ]
+  },
+  "Q8062800": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Z* theorem"
+   ]
+  },
+  "Q8063120": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "ZJ theorem"
+   ]
+  },
+  "Q8064722": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Zahorski theorem"
+   ]
+  },
+  "Q8066611": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Kövari–Sós–Turán theorem"
+   ]
+  },
+  "Q8066795": {
+   "msc": "14",
+   "others": {},
+   "wikipedia": [
+    "Zariski's main theorem"
+   ]
+  },
+  "Q8074796": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Zsigmondy's theorem"
+   ]
+  },
+  "Q8081891": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Śleszyński–Pringsheim theorem"
+   ]
+  },
+  "Q810431": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Basel problem"
+   ]
+  },
+  "Q828284": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Parallel axis theorem"
+   ]
+  },
+  "Q830124": {
+   "msc": "60",
+   "others": {},
+   "wikipedia": [
+    "Girsanov's theorem"
+   ]
+  },
+  "Q830513": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "Residue theorem"
+   ]
+  },
+  "Q834025": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cauchy integral theorem"
+   ]
+  },
+  "Q834211": {
+   "msc": "52",
+   "others": {},
+   "wikipedia": [
+    "Wallace–Bolyai–Gerwien theorem",
+    "Bolyai–Gerwien theorem"
+   ]
+  },
+  "Q837506": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Theorem on friends and strangers"
+   ]
+  },
+  "Q837551": {
+   "msc": "35",
+   "others": {},
+   "wikipedia": [
+    "Frobenius theorem (differential topology)"
+   ]
+  },
+  "Q841893": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Desargues's theorem"
+   ]
+  },
+  "Q842953": {
+   "msc": "54",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lebesgue's density theorem"
+   ]
+  },
+  "Q844612": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Brun's theorem"
+   ]
+  },
+  "Q845088": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pappus's centroid theorem"
+   ]
+  },
+  "Q846840": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Kac theorem"
+   ]
+  },
+  "Q848092": {
+   "msc": "54",
+   "others": {},
+   "wikipedia": [
+    "Borsuk–Ulam theorem"
+   ]
+  },
+  "Q848375": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Implicit function theorem"
+   ]
+  },
+  "Q848810": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Kronecker's theorem"
+   ]
+  },
+  "Q850495": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Wick's theorem"
+   ]
+  },
+  "Q851166": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pappus's hexagon theorem"
+   ]
+  },
+  "Q852183": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Viviani's theorem"
+   ]
+  },
+  "Q852973": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Euler's polyhedron theorem"
+   ]
+  },
+  "Q853067": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Pell's equation"
+   ]
+  },
+  "Q856032": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "CAP theorem"
+   ]
+  },
+  "Q856158": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Midy's theorem"
+   ]
+  },
+  "Q857089": {
+   "msc": "30",
+   "others": {},
+   "wikipedia": [
+    "de Branges's theorem"
+   ]
+  },
+  "Q858978": {
+   "msc": "70",
+   "others": {},
+   "wikipedia": [
+    "Castigliano's method"
+   ]
+  },
+  "Q859122": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Cauchy–Hadamard theorem"
+   ]
+  },
+  "Q865665": {
+   "msc": "83",
+   "others": {},
+   "wikipedia": [
+    "Birkhoff's theorem (relativity)"
+   ]
+  },
+  "Q866116": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Hahn–Banach theorem"
+   ]
+  },
+  "Q867141": {
+   "msc": "57",
+   "others": {},
+   "wikipedia": [
+    "Ehresmann's theorem"
+   ]
+  },
+  "Q867839": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Rosser's theorem"
+   ]
+  },
+  "Q869647": {
+   "msc": "03",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Szpilrajn extension theorem"
+   ]
+  },
+  "Q872088": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Boolean prime ideal theorem"
+   ]
+  },
+  "Q877489": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Apollonius's theorem"
+   ]
+  },
+  "Q890875": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Bohr–van Leeuwen theorem"
+   ]
+  },
+  "Q897769": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Kőnig's theorem (graph theory)"
+   ]
+  },
+  "Q899002": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Pascal's theorem"
+   ]
+  },
+  "Q899853": {
+   "msc": "80",
+   "others": {},
+   "wikipedia": [
+    "H-theorem"
+   ]
+  },
+  "Q900831": {
+   "msc": "82",
+   "others": {},
+   "wikipedia": [
+    "Fluctuation theorem"
+   ]
+  },
+  "Q902052": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Gödel's completeness theorem"
+   ]
+  },
+  "Q902618": {
+   "msc": "34",
+   "others": {},
+   "wikipedia": [
+    "Floquet theory#Floquet theorem"
+   ]
+  },
+  "Q906809": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Hellmann–Feynman theorem"
+   ]
+  },
+  "Q909517": {
+   "msc": "20",
+   "others": {},
+   "wikipedia": [
+    "Feit–Thompson theorem"
+   ]
+  },
+  "Q913447": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Morley's trisector theorem"
+   ]
+  },
+  "Q913849": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Minimax theorem"
+   ]
+  },
+  "Q914517": {
+   "msc": "11",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Fermat's theorem on sums of two squares"
+   ]
+  },
+  "Q915474": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Robin's theorem"
+   ]
+  },
+  "Q918099": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Ramsey's theorem"
+   ]
+  },
+  "Q922012": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Green–Tao theorem"
+   ]
+  },
+  "Q922367": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Master theorem (analysis of algorithms)"
+   ]
+  },
+  "Q925224": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Sonnenschein–Mantel–Debreu Theorem"
+   ]
+  },
+  "Q925854": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Angle bisector theorem"
+   ]
+  },
+  "Q927051": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Riemann mapping theorem"
+   ]
+  },
+  "Q928813": {
+   "msc": "05",
+   "others": {},
+   "wikipedia": [
+    "Menger's theorem"
+   ]
+  },
+  "Q929547": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Myers theorem"
+   ]
+  },
+  "Q931001": {
+   "msc": "26",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Inverse function theorem"
+   ]
+  },
+  "Q931001X": {
+   "msc": "26",
+   "others": {},
+   "wikipedia": [
+    "Constant rank theorem"
+   ]
+  },
+  "Q931404": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Bertrand–Diquet–Puiseux theorem"
+   ]
+  },
+  "Q939927": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Stone–Weierstrass theorem"
+   ]
+  },
+  "Q942046": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Schwarz–Ahlfors–Pick theorem"
+   ]
+  },
+  "Q943246": {
+   "msc": "13",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Wedderburn's little theorem"
+   ]
+  },
+  "Q944297": {
+   "msc": "46",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Open mapping theorem (functional analysis)"
+   ]
+  },
+  "Q948664": {
+   "msc": "05",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Kneser's theorem (combinatorics)"
+   ]
+  },
+  "Q951327": {
+   "msc": "06",
+   "others": {},
+   "wikipedia": [
+    "Pasch's theorem"
+   ]
+  },
+  "Q953062": {
+   "msc": "76",
+   "others": {},
+   "wikipedia": [
+    "Reynolds transport theorem"
+   ]
+  },
+  "Q954210": {
+   "msc": "68",
+   "others": {},
+   "wikipedia": [
+    "Savitch's theorem"
+   ]
+  },
+  "Q96375449": {
+   "msc": "51",
+   "others": {},
+   "wikipedia": [
+    "Conway circle theorem"
+   ]
+  },
+  "Q96377355": {
+   "msc": "03",
+   "others": {},
+   "wikipedia": [
+    "Erdős–Dushnik–Miller theorem"
+   ]
+  },
+  "Q965294": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Thabit number"
+   ]
+  },
+  "Q966837": {
+   "msc": "28",
+   "others": {},
+   "wikipedia": [
+    "Cramér–Wold theorem"
+   ]
+  },
+  "Q967972": {
+   "msc": "30",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Open mapping theorem (complex analysis)"
+   ]
+  },
+  "Q973359": {
+   "msc": "43",
+   "others": {},
+   "wikipedia": [
+    "Radó's theorem (harmonic functions)"
+   ]
+  },
+  "Q97359729": {
+   "msc": "15",
+   "others": {},
+   "wikipedia": [
+    "Stahl's theorem"
+   ]
+  },
+  "Q974405": {
+   "msc": "46",
+   "others": {},
+   "wikipedia": [
+    "Hille–Yosida theorem"
+   ]
+  },
+  "Q976033": {
+   "msc": "11",
+   "others": {},
+   "wikipedia": [
+    "Gelfond–Schneider theorem"
+   ]
+  },
+  "Q976607": {
+   "msc": "52",
+   "others": {
+    "lean": [
+     "formalized"
+    ],
+    "metamath": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Erdős–Szekeres theorem"
+   ]
+  },
+  "Q977912": {
+   "msc": "91",
+   "others": {},
+   "wikipedia": [
+    "Stolper–Samuelson theorem"
+   ]
+  },
+  "Q978688": {
+   "msc": "15",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Gershgorin circle theorem"
+   ]
+  },
+  "Q985009": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Helmholtz's theorems"
+   ]
+  },
+  "Q98831": {
+   "msc": "33",
+   "others": {},
+   "wikipedia": [
+    "Multiplication theorem"
+   ]
+  },
+  "Q994401": {
+   "msc": "53",
+   "others": {},
+   "wikipedia": [
+    "Four-vertex theorem"
+   ]
+  },
+  "Q995926": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Perpendicular axis theorem"
+   ]
+  },
+  "Q9993851": {
+   "msc": "35",
+   "others": {
+    "lean": [
+     "formalized"
+    ]
+   },
+   "wikipedia": [
+    "Lax–Milgram theorem"
+   ]
+  },
+  "Q999783": {
+   "msc": "00",
+   "others": {},
+   "wikipedia": [
+    "Buckingham π theorem"
+   ]
+  }
+ },
+ "msc_names": {
+  "00": "General and overarching topics; collections",
+  "01": "History and biography",
+  "03": "Mathematical logic and foundations",
+  "05": "Combinatorics",
+  "06": "Order, lattices, ordered algebraic structures",
+  "08": "General algebraic systems",
+  "11": "Number theory",
+  "12": "Field theory and polynomials",
+  "13": "Commutative algebra",
+  "14": "Algebraic geometry",
+  "15": "Linear and multilinear algebra; matrix theory",
+  "16": "Associative rings and algebras",
+  "17": "Nonassociative rings and algebras",
+  "18": "Category theory; homological algebra",
+  "19": "K-theory",
+  "20": "Group theory and generalizations",
+  "22": "Topological groups, Lie groups",
+  "26": "Real functions",
+  "28": "Measure and integration",
+  "30": "Functions of a complex variable",
+  "31": "Potential theory",
+  "32": "Several complex variables and analytic spaces",
+  "33": "Special functions",
+  "34": "Ordinary differential equations",
+  "35": "Partial differential equations",
+  "37": "Dynamical systems and ergodic theory",
+  "39": "Difference and functional equations",
+  "40": "Sequences, series, summability",
+  "41": "Approximations and expansions",
+  "42": "Harmonic analysis on Euclidean spaces",
+  "43": "Abstract harmonic analysis",
+  "44": "Integral transforms, operational calculus",
+  "45": "Integral equations",
+  "46": "Functional analysis",
+  "47": "Operator theory",
+  "49": "Calculus of variations and optimal control; optimization",
+  "51": "Geometry",
+  "52": "Convex and discrete geometry",
+  "53": "Differential geometry",
+  "54": "General topology",
+  "55": "Algebraic topology",
+  "57": "Manifolds and cell complexes",
+  "58": "Global analysis, analysis on manifolds",
+  "60": "Probability theory and stochastic processes",
+  "62": "Statistics",
+  "65": "Numerical analysis",
+  "68": "Computer science",
+  "70": "Mechanics of particles and systems",
+  "74": "Mechanics of deformable solids",
+  "76": "Fluid mechanics",
+  "78": "Optics, electromagnetic theory",
+  "80": "Classical thermodynamics, heat transfer",
+  "81": "Quantum theory",
+  "82": "Statistical mechanics, structure of matter",
+  "83": "Relativity and gravitational theory",
+  "85": "Astronomy and astrophysics",
+  "86": "Geophysics",
+  "90": "Operations research, mathematical programming",
+  "91": "Game theory, economics, social and behavioral sciences",
+  "92": "Biology and other natural sciences",
+  "93": "Systems theory; control",
+  "94": "Information and communication, circuits",
+  "97": "Mathematics education"
+ },
+ "source": {
+  "repo": "1000-plus/1000-plus.github.io",
+  "rev": "8e04b97dd24adc6e931be78a884da7e935bc8780"
+ }
+}

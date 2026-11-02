@@ -1,0 +1,146 @@
+import io
+from pathlib import Path
+
+import yaml
+
+from trough import mathlib
+from trough.vault import assign_paths, walk
+
+DATA = Path(__file__).resolve().parent.parent / "data"
+
+
+def compose(text: str) -> yaml.MappingNode:
+    return yaml.compose(io.StringIO(text), Loader=yaml.SafeLoader)
+
+
+TREE = """\
+Algebra:
+  Groups:
+    group: 'Group'
+    Sylow theorems: 'Sylow.exists_subgroup_card_pow_prime'
+  Fields:
+    finite fields: 'Mathlib/FieldTheory/Finite/Basic.html'
+    row reduction: 'https://en.wikipedia.org/wiki/Row_echelon_form'
+    Galois theory: ''
+"""
+
+RECORDS = """\
+1:
+  title  : Irrationality of $\\sqrt 2$
+  decl   : irrational_sqrt_two
+  authors: mathlib
+2:
+  title  : Sylow's theorem
+  decls  :
+    - Sylow.exists_subgroup_card_pow_prime
+    - Sylow.isPretransitive_of_finite
+3:
+  title  : Fermat's Last Theorem
+  statement: FermatLastTheorem
+  links  :
+    result: https://example.org/flt
+  note   : "Done elsewhere, see https://example.org/notes"
+"""
+
+
+def test_tree_items_classify_leaves():
+    items = mathlib.tree_items("overview", compose(TREE))
+    by_title = {item.title: item for item in items}
+    assert by_title["group"].decls == ("Group",)
+    assert by_title["group"].path == ("Algebra", "Groups")
+    assert by_title["group"].line == 3
+    assert by_title["finite fields"].module == "Mathlib.FieldTheory.Finite.Basic"
+    assert by_title["row reduction"].url.startswith("https://")
+    assert by_title["Galois theory"].decls == () and not by_title["Galois theory"].module
+
+
+def test_record_items_read_every_field():
+    items = mathlib.record_items("100", compose(RECORDS))
+    assert items[0].decls == ("irrational_sqrt_two",)
+    assert items[1].decls == ("Sylow.exists_subgroup_card_pow_prime", "Sylow.isPretransitive_of_finite")
+    assert items[2].statement == "FermatLastTheorem"
+    assert items[2].links == {"result": "https://example.org/flt"}
+    assert items[2].label == "3. Fermat's Last Theorem"
+
+
+def test_merge_on_declaration_set_or_first_declaration():
+    lists = {
+        "overview": mathlib.tree_items("overview", compose(TREE)),
+        "undergrad": [],
+        "100": mathlib.record_items("100", compose(RECORDS)),
+        "1000": [],
+    }
+    articles = mathlib.merge(lists)
+    sylow = [article for article in articles if "Sylow.exists_subgroup_card_pow_prime" in article.decls]
+    assert len(sylow) == 1
+    assert sylow[0].home.list == "overview"
+    assert sylow[0].decls == ("Sylow.exists_subgroup_card_pow_prime", "Sylow.isPretransitive_of_finite")
+    kinds = sorted(article.kind for article in articles)
+    assert kinds.count("module") == 1
+    assert kinds.count("wanted") == 3  # row reduction, Galois theory, Fermat's Last Theorem
+
+
+def test_note_text_links_bare_urls_only():
+    assert mathlib.note_text("see https://a.org/x") == "see <https://a.org/x>."
+    assert mathlib.note_text("see the [repo](https://a.org/x).") == "see the [repo](https://a.org/x)."
+
+
+def fake_sources(concepts: dict) -> mathlib.Sources:
+    lists = {
+        "overview": [
+            mathlib.Item("overview", "a", ("Area", "Sub"), "alpha", 1, decls=("A",)),
+            mathlib.Item("overview", "b", ("Area", "Sub"), "beta", 2, decls=("B",)),
+            mathlib.Item("overview", "c", ("Area", "Sub"), "gamma", 3, decls=("C",)),
+        ],
+        "undergrad": [],
+        "100": [],
+        "1000": [],
+    }
+    deps = {"mathlib_rev": "r", "concepts": concepts, "modules": {}}
+    return mathlib.Sources("r", "", lists, deps, None)
+
+
+def record(statement=(), proof=(), kind="theorem"):
+    return {"module": "Mathlib.X", "kind": kind, "line": 1, "doc": "Doc.", "signature": "theorem x : True",
+            "statement": list(statement), "proof": list(proof)}
+
+
+def edges(sources):
+    root, stats = mathlib.chapter(sources)
+    assign_paths(root, Path("blueprint/roadmap/mathlib"))
+    leaves = {node.title: node for node in walk(root) if not hasattr(node, "entries")}
+    return leaves, stats
+
+
+def test_edges_drop_what_another_dependency_implies():
+    leaves, stats = edges(fake_sources({
+        "A": record(statement=["B", "C"]),
+        "B": record(statement=["C"]),
+        "C": record(kind="def"),
+    }))
+    assert [leaf.title for leaf in leaves["Alpha"].depends] == ["Beta"]
+    assert [leaf.title for leaf in leaves["Beta"].depends] == ["Gamma"]
+    assert stats["statement_raw"] == 3 and stats["statement"] == 2
+
+
+def test_edges_that_close_a_cycle_become_informal():
+    leaves, stats = edges(fake_sources({
+        "A": record(statement=["B"]),
+        "B": record(proof=["A"]),
+        "C": record(),
+    }))
+    assert stats["informal"] == 1
+    graph = {title: {d.title for d in leaf.depends + leaf.proof_depends} for title, leaf in leaves.items()}
+    assert not ("Beta" in graph["Alpha"] and "Alpha" in graph["Beta"])
+
+
+def test_real_lists_give_one_home_per_article_and_unique_first_declarations():
+    sources = mathlib.load_sources(DATA)
+    root, stats = mathlib.chapter(sources)
+    assign_paths(root, Path("blueprint/roadmap/mathlib"))
+    leaves = [node for node in walk(root) if not hasattr(node, "entries")]
+    assert len(leaves) == stats["articles"]
+    firsts = [dict(leaf.fields).get("mathlib_declaration", "").split(", ")[0] for leaf in leaves]
+    firsts = [name for name in firsts if name]
+    assert len(firsts) == len(set(firsts))
+    assert all(dict(leaf.fields).get("not_ready") == "true" or dict(leaf.fields).get("mathlib") == "true" for leaf in leaves)

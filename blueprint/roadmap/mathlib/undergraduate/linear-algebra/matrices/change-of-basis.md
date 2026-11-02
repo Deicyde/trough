@@ -1,0 +1,19 @@
+---
+declaration: definition
+origin: cited
+mathlib: true
+mathlib_declaration: basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix
+---
+
+# Change of basis
+
+Mathlib states this as `basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix`.
+
+## Depends on
+
+Dependencies are computed by the Mathlib data workflow and are not in yet.
+
+## Sources
+
+- [Mathlib documentation: `basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix`](https://leanprover-community.github.io/mathlib4_docs/find?pattern=basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix#doc)
+- [Mathlib undergraduate list: Linear algebra › Matrices](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L45)

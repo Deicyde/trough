@@ -1,0 +1,18 @@
+# Divisibility in integral domains
+
+- [Irreducible elements](../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Invertible elements](invertible-elements.md)
+- [Coprime elements](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
+- [Unique factorisation domain (UFD)](../../../overview/general-algebra/divisibility-in-integral-domains/unique-factorisation-domain.md)
+- [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
+- [Least common multiple](../../../overview/general-algebra/divisibility-in-integral-domains/least-common-multiple.md)
+- [$A\[{X_i}\]$ is a UFD when $A$ is a UFD](../../../overview/general-algebra/polynomials-and-power-series/a-x-i-is-a-ufd-when-a-is-a-ufd.md)
+- [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
+- [Euclidean rings](../../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Euclid's' algorithm](../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
+- [$\Z$ is a Euclidean ring](is-a-euclidean-ring.md)
+- [Congruence in $\Z$](congruence-in.md)
+- [Prime numbers](prime-numbers.md)
+- [Bézout's identity](bezouts-identity.md)
+- [$\Z/n\Z$ and its invertible elements](n-and-its-invertible-elements.md)
+- [Euler's totient function ($\varphi$)](../../../overview/general-algebra/divisibility-in-integral-domains/eulers-totient-function.md)

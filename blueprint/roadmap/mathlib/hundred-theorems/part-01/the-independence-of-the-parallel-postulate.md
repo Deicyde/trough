@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+not_ready: true
+---
+
+# The Independence of the Parallel Postulate
+
+Not in Mathlib.
+
+Formalized outside Mathlib; the 100 theorems list links the formalization.
+
+## Depends on
+
+Its prerequisites are not mapped yet.
+
+## Sources
+
+- [Freek Wiedijk's 100 theorems, no. 12](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L62)
+- [Outside Mathlib: result](https://github.com/Richiesutie/ParallelPostulate/blob/8ee502804263194ae40babeca9773127f1e0a085/ParallelPostulate/Hilbert/Independence.lean#L80-L85)

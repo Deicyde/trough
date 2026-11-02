@@ -1,0 +1,16 @@
+# General algebra
+
+- [Category theory](category-theory/README.md)
+- [Numbers](numbers/README.md)
+- [Group theory](group-theory/README.md)
+- [Rings](rings/README.md)
+- [Ideals and quotients](ideals-and-quotients/README.md)
+- [Divisibility in integral domains](divisibility-in-integral-domains/README.md)
+- [Polynomials and power series](polynomials-and-power-series/README.md)
+- [Algebras over a ring](algebras-over-a-ring/README.md)
+- [Field theory](field-theory/README.md)
+- [Homological algebra](homological-algebra/README.md)
+- [Number theory](number-theory/README.md)
+- [Transcendental numbers](transcendental-numbers/README.md)
+- [Algebraic Number Theory](algebraic-number-theory/README.md)
+- [Representation theory](representation-theory/README.md)

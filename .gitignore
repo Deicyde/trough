@@ -1,0 +1,8 @@
+.lake/
+.venv/
+__pycache__/
+site/
+site-src/
+.autoform-publication-*/
+*.log
+.claude/worktrees/

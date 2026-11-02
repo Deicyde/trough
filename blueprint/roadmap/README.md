@@ -1,0 +1,41 @@
+# Trough
+
+Trough maps Lean formalization libraries: what each one formalizes, how its results depend on one another, and what is still missing. Each library gets the article unit that suits it, such as curated concepts for Mathlib, roadmaps for Tau Ceti and blueprint nodes for the research projects. The maps are rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot).
+
+## Chapters
+
+- [Mathlib](mathlib/README.md): One article per concept on Mathlib's four curated lists (overview, undergraduate, Freek's 100, 1000+), linked to its declarations, with edges collapsed from Mathlib's declaration graph.
+
+## Libraries still to map
+
+### AI-written libraries
+
+- [Tau Ceti](https://github.com/TauCetiProject/TauCeti) (23,408 Lean files): One article per TauCetiRoadmap roadmap (124 active, 30 completed), its Suggested.lean signatures as statements, and the named results in STATUS.md linked to Tau Ceti declarations.
+- [ATLAS](https://github.com/facebookresearch/atlas-lean) (17,683 Lean files): Mapped separately: one article per documented public declaration, at https://deicyde.github.io/atlas-lean/.
+
+### Research projects with blueprints
+
+- [Fermat's Last Theorem (Imperial)](https://github.com/ImperialCollegeLondon/FLT) (271 Lean files): Import the leanblueprint (277 nodes, 187 with Lean names) and the Verso blueprint.
+- [PNT+](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) (235 Lean files): Import the LeanArchitect blueprint (997 @[blueprint] nodes) from `lake build :blueprintJson`.
+- [Polynomial Freiman-Ruzsa](https://github.com/teorth/pfr) (76 Lean files): Import the leanblueprint (219 nodes) and the six formalization.yaml main results.
+- [Equational Theories](https://github.com/teorth/equational_theories) (1,347 Lean files): Import the leanblueprint (215 nodes); equations and implication classes from the project's data files.
+- [Strong PNT (Math Inc)](https://github.com/math-inc/strongpnt) (8 Lean files): Import the leanblueprint (621 nodes, 615 with Lean names).
+
+### Libraries
+
+- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (1,999 Lean files): One article per problem file (about 2,000), grouped by source; most are stated without a proof.
+- [Physlib](https://github.com/leanprover-community/physlib) (1,520 Lean files): One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count.
+- [CSLib](https://github.com/leanprover/cslib) (341 Lean files): One article per documented public declaration.
+- [Foundation](https://github.com/FormalizedFormalLogic/Foundation) (320 Lean files): One article per documented declaration; the Zoo's inclusion diagrams between logics as edges.
+- [Analysis I companion](https://github.com/teorth/analysis) (109 Lean files): One article per textbook section (the Section_X_Y modules).
+
+### Large corpora
+
+- [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) (60,478 Lean files): One article per step of PROOF-PATH.md, linked to the Lean theorem it names.
+- [OpenAI Math](https://github.com/openai/math) (163,097 Lean files): One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results.
+- [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) (229,089 Lean files): Milestones from the in-Lean CFSG/Blueprint catalog and the formalization.yaml main results.
+- [Lean Pool](https://github.com/LeanPool/lean-pool) (22,324 Lean files): One article per project in LeanPool/projects (317), with its main_results as statements.
+
+### Formal Frontier libraries
+
+Formal Frontier, a Mathlib Initiative program, publishes 44 agent-written libraries that fill gaps around Mathlib. Each will be mapped by its headline results: [adic-modules](https://github.com/FormalFrontier/adic-modules), [algebraic-direct-limits](https://github.com/FormalFrontier/algebraic-direct-limits), [algebraic-groups](https://github.com/FormalFrontier/algebraic-groups), [coherent-modules](https://github.com/FormalFrontier/coherent-modules), [complex-analysis](https://github.com/FormalFrontier/complex-analysis), [continuous-group-cohomology](https://github.com/FormalFrontier/continuous-group-cohomology), [dedekind-ideal-arithmetic](https://github.com/FormalFrontier/dedekind-ideal-arithmetic), [finite-etale-algebras](https://github.com/FormalFrontier/finite-etale-algebras), [finite-group-tate-cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology), [formal-power-series](https://github.com/FormalFrontier/formal-power-series), [fundamental-groupoids](https://github.com/FormalFrontier/fundamental-groupoids), [general-linear-groups](https://github.com/FormalFrontier/general-linear-groups), [graded-rings](https://github.com/FormalFrontier/graded-rings), [group-rings](https://github.com/FormalFrontier/group-rings), [group-theory](https://github.com/FormalFrontier/group-theory), [homological-algebra](https://github.com/FormalFrontier/homological-algebra), [ideal-completion](https://github.com/FormalFrontier/ideal-completion), [integral-closure](https://github.com/FormalFrontier/integral-closure), [iwasawa-modules](https://github.com/FormalFrontier/iwasawa-modules), [metrization](https://github.com/FormalFrontier/metrization), [minimal-primes](https://github.com/FormalFrontier/minimal-primes), [morphism-properties](https://github.com/FormalFrontier/morphism-properties), [multivariate-polynomials](https://github.com/FormalFrontier/multivariate-polynomials), [norm-forms](https://github.com/FormalFrontier/norm-forms), [polynomial-root-stability](https://github.com/FormalFrontier/polynomial-root-stability), [profinite-groups](https://github.com/FormalFrontier/profinite-groups), [projective-modules](https://github.com/FormalFrontier/projective-modules), [projective-space](https://github.com/FormalFrontier/projective-space), [quadratic-algebras](https://github.com/FormalFrontier/quadratic-algebras), [restricted-product-duality](https://github.com/FormalFrontier/restricted-product-duality), [ringed-spaces](https://github.com/FormalFrontier/ringed-spaces), [scheme-properties](https://github.com/FormalFrontier/scheme-properties), [sequence-growth](https://github.com/FormalFrontier/sequence-growth), [sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology), [simplicial-objects](https://github.com/FormalFrontier/simplicial-objects), [simplicial-rings](https://github.com/FormalFrontier/simplicial-rings), [smooth-regularity](https://github.com/FormalFrontier/smooth-regularity), [spectral-stone-duality](https://github.com/FormalFrontier/spectral-stone-duality), [sphere-topology](https://github.com/FormalFrontier/sphere-topology), [stable-range](https://github.com/FormalFrontier/stable-range), [supernatural-numbers](https://github.com/FormalFrontier/supernatural-numbers), [toric-ideals](https://github.com/FormalFrontier/toric-ideals), [valuation-integers](https://github.com/FormalFrontier/valuation-integers), [vector-bundles](https://github.com/FormalFrontier/vector-bundles).

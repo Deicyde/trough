@@ -1,0 +1,246 @@
+# Reads Mathlib's curated lists at the pinned Mathlib commit, and computes from
+# Mathlib's declaration graph each listed declaration's kind, docstring,
+# signature and the nearest listed declarations its statement and proof use
+# (lean/ConceptDeps.lean). The pages are then regenerated from that data.
+#
+# On main, a dispatch or the weekly run, the commit job records the data and
+# the pages, then starts the Pages workflow. On a pull request the run fails
+# when the committed data differ from what this Lean gives, and keeps a patch.
+
+name: Mathlib data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "lean/**"
+      - "tools/**"
+      - "data/thousand-plus.json"
+      - ".github/workflows/mathlib-data.yml"
+  pull_request:
+    paths:
+      - "lean/**"
+      - "tools/**"
+      - "data/thousand-plus.json"
+      - ".github/workflows/mathlib-data.yml"
+  workflow_dispatch:
+    inputs:
+      mathlib_rev:
+        description: Mathlib commit to pin (empty keeps the current pin)
+        type: string
+        default: ""
+      newest:
+        description: Pin the newest Mathlib master commit whose CI passed
+        type: boolean
+        default: false
+  schedule:
+    - cron: "41 5 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mathlib-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  dump:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      rev: ${{ steps.pin.outputs.rev }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Free disk space for Mathlib
+        run: |
+          set -euo pipefail
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc
+          df -h /
+
+      - name: Add swap for importing all of Mathlib
+        run: |
+          set -euo pipefail
+          sudo fallocate -l 16G /mnt/lean-swap
+          sudo chmod 600 /mnt/lean-swap
+          sudo mkswap /mnt/lean-swap
+          sudo swapon /mnt/lean-swap
+          free -h
+
+      - name: Install elan v4.2.4
+        run: |
+          set -euo pipefail
+          installer_dir="${RUNNER_TEMP}/elan-installer"
+          archive="${installer_dir}/elan-x86_64-unknown-linux-gnu.tar.gz"
+          mkdir -p "$installer_dir"
+          curl --fail --silent --show-error --location \
+            --proto '=https' --tlsv1.2 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$archive"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $archive" \
+            | sha256sum --check --strict
+          tar xzf "$archive" -C "$installer_dir"
+          "$installer_dir/elan-init" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      # The weekly run and a "newest" dispatch move the pin to the newest master
+      # commit whose continuous integration run passed, so its cache exists.
+      # Moving the pin moves lean-toolchain with it and drops the manifest.
+      - name: Choose the Mathlib commit
+        id: pin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED: ${{ inputs.mathlib_rev }}
+          NEWEST: ${{ github.event_name == 'schedule' || inputs.newest }}
+        run: |
+          set -euo pipefail
+          current=$(sed -n 's/^rev = "\([0-9a-f]\{40\}\)"$/\1/p' lean/lakefile.toml)
+          rev=$current
+          if [ -n "$REQUESTED" ]; then
+            rev=$(gh api "repos/leanprover-community/mathlib4/commits/$REQUESTED" --jq .sha)
+          elif [ "$NEWEST" = true ]; then
+            rev=$(gh api "repos/leanprover-community/mathlib4/actions/workflows/build.yml/runs?branch=master&event=push&status=success&per_page=1" \
+              --jq '.workflow_runs[0].head_sha')
+          fi
+          if [ "$rev" != "$current" ]; then
+            sed -i "s/^rev = \"$current\"$/rev = \"$rev\"/" lean/lakefile.toml
+            gh api "repos/leanprover-community/mathlib4/contents/lean-toolchain?ref=$rev" \
+              -H "Accept: application/vnd.github.raw" > lean/lean-toolchain
+            rm -f lean/lake-manifest.json
+          fi
+          echo "Mathlib $rev on $(cat lean/lean-toolchain)"
+          echo "rev=$rev" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch Mathlib and its build cache
+        working-directory: lean
+        run: lake exe cache get
+
+      # 100.yaml names a few declarations from Archive and Counterexamples.
+      - name: Build Archive and Counterexamples
+        working-directory: lean
+        run: |
+          if ! lake build @mathlib/Archive @mathlib/Counterexamples; then
+            echo "::warning::Archive and Counterexamples did not build; their declarations stay unresolved."
+            sed -i '/^import \(Archive\|Counterexamples\)$/d' ConceptDeps.lean
+          fi
+
+      - name: Copy Mathlib's curated lists at this commit
+        env:
+          REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          mathlib=lean/.lake/packages/mathlib
+          [ "$(git -C "$mathlib" rev-parse HEAD)" = "$REV" ]
+          for list in overview undergrad 100 1000; do
+            cp "$mathlib/docs/$list.yaml" "data/mathlib/yaml/$list.yaml"
+          done
+          date=$(git -C "$mathlib" log -1 --format=%cI HEAD)
+          printf '{\n "date": "%s",\n "rev": "%s",\n "toolchain": "%s"\n}\n' "$date" "$REV" "$(cat lean/lean-toolchain)" \
+            > data/mathlib/source.json
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: List the declarations and modules to read
+        run: >-
+          uv run --no-dev python tools/generate.py
+          --concepts lean/concepts.txt --modules lean/modules.txt
+
+      - name: Read the declaration graph
+        working-directory: lean
+        env:
+          TROUGH_CONCEPTS: concepts.txt
+          TROUGH_MODULES: modules.txt
+          TROUGH_OUT: ../data/mathlib/concept-deps.json
+          TROUGH_MATHLIB_REV: ${{ steps.pin.outputs.rev }}
+        run: /usr/bin/time -v lake env lean ConceptDeps.lean
+
+      - name: Regenerate the pages
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Compare with the committed data
+        id: compare
+        run: |
+          git restore lean/ConceptDeps.lean
+          git add -A data blueprint lean/lakefile.toml lean/lean-toolchain lean/lake-manifest.json
+          if git diff --cached --quiet; then
+            echo "The committed data are this Mathlib's."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git diff --cached --stat | tail -n 20
+          git diff --cached --binary > mathlib-data.patch
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            echo "::error::The committed data differ from this Lean's. Apply the patch: gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n mathlib-data && git apply mathlib-data.patch"
+            exit 1
+          fi
+
+      - name: Keep the patch
+        if: always() && steps.compare.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: mathlib-data
+          path: mathlib-data.patch
+          retention-days: 14
+
+      - name: Keep the dump
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: concept-deps
+          path: |
+            data/mathlib/concept-deps.json
+            lean/concepts.txt
+            lean/modules.txt
+            lean/lake-manifest.json
+          retention-days: 14
+
+  # Runs no Lean or Python: it applies the dump job's patch after checking that
+  # it touches only data, pages and the Mathlib pin. A push made with this
+  # token starts no workflow, so it starts the Pages workflow itself.
+  commit:
+    needs: dump
+    if: >-
+      needs.dump.outputs.changed == 'true' &&
+      github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Fetch the patch
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: mathlib-data
+          path: ${{ runner.temp }}/patch
+
+      - name: Commit the data and pages
+        env:
+          REV: ${{ needs.dump.outputs.rev }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          git apply --index "$RUNNER_TEMP/patch/mathlib-data.patch"
+          if git diff --cached --no-renames --name-only \
+            | grep -vE '^(data/|blueprint/|lean/(lakefile\.toml|lean-toolchain|lake-manifest\.json)$)'; then
+            echo "::error::The patch changes the files listed above."
+            exit 1
+          fi
+          git commit --quiet -m "Mathlib data at ${REV:0:8}"
+          git push --quiet origin HEAD:main
+
+      - name: Rebuild the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"

@@ -1,0 +1,11 @@
+# Elementary functions (trigonometric, rational, $\exp$, $\log$, etc)
+
+- [Polynomial functions](polynomial-functions.md)
+- [Rational functions](rational-functions.md)
+- [Logarithms](../../../overview/analysis/special-functions/logarithm.md)
+- [Exponential](../../../overview/analysis/special-functions/exponential.md)
+- [Power functions](power-functions.md)
+- [Trigonometric functions](../../../overview/analysis/special-functions/trigonometric-functions.md)
+- [Hyperbolic trigonometric functions](../../../overview/analysis/special-functions/hyperbolic-trigonometric-functions.md)
+- [Inverse trigonometric functions](../../../overview/analysis/special-functions/inverse-trigonometric-functions.md)
+- [Inverse hyperbolic trigonometric functions](../../../overview/analysis/special-functions/inverse-hyperbolic-trigonometric-functions.md)

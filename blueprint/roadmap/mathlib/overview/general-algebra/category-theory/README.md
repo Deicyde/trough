@@ -1,0 +1,18 @@
+# Category theory
+
+- [Category](category.md)
+- [Small category](small-category.md)
+- [Functor](functor.md)
+- [Natural transformation](natural-transformation.md)
+- [Yoneda embedding](yoneda-embedding.md)
+- [Isomorphism](isomorphism.md)
+- [Adjunction](adjunction.md)
+- [Monad](monad.md)
+- [Comma category](comma-category.md)
+- [Limits](limits.md)
+- [Presheafed space](presheafed-space.md)
+- [Sheafed space](sheafed-space.md)
+- [Monoidal category](monoidal-category.md)
+- [Cartesian closed](cartesian-closed.md)
+- [Abelian category](abelian-category.md)
+- [Grothendieck topology](grothendieck-topology.md)

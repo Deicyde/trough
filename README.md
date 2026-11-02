@@ -1,0 +1,62 @@
+# Trough
+
+Maps of Lean formalization libraries: what each one formalizes, how its results
+depend on one another, and what is still missing. The maps are AutoformBot
+vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot)
+and published at https://deicyde.github.io/trough/.
+
+`catalog/libraries.toml` lists the 61 libraries trough targets: Mathlib, Tau
+Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
+Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
+Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
+Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
+gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
+Mathlib's map is the first one built.
+
+## The Mathlib map
+
+Mathlib's maintainers keep four curated lists: `docs/overview.yaml`,
+`docs/undergrad.yaml`, `docs/100.yaml` and `docs/1000.yaml`. The map has one
+article per concept on them. Items naming the same declarations, or the same
+first declaration, are one article, placed in the first list that has it
+(overview, undergraduate, 100, 1000+); the other lists link to it. An item
+naming no declaration is an article marked not ready.
+
+1. `data/mathlib/yaml/` holds the four lists at the Mathlib commit pinned in
+   `lean/lakefile.toml`, and `data/mathlib/source.json` records that commit.
+2. The **Mathlib data** workflow (`.github/workflows/mathlib-data.yml`) fetches
+   Mathlib's build cache and runs `lean/ConceptDeps.lean` over the whole
+   library. For each listed declaration it writes the kind, docstring,
+   signature, and the nearest listed declarations its statement and its proof
+   use, walking through declarations on no list, to
+   `data/mathlib/concept-deps.json`. A weekly run moves the pin to Mathlib's
+   newest master commit whose CI passed.
+3. `tools/generate.py` writes the vault, `blueprint/`, from those files,
+   `data/thousand-plus.json` (subject classes and Wikipedia pages from the
+   [1000+ theorems project](https://1000-plus.github.io/)) and the catalog.
+   Edges that would close a cycle become "Informally uses", and a dependency
+   already reached through another is left out.
+4. The **Pages** workflow checks that the committed pages are what the
+   generator writes, runs `autoform check` and `autoform audit`, renders the
+   site with the Autoform commit in `.github/autoform-ref`, and deploys it. A
+   daily run tries Autoform's newest main commit and pins it once the site
+   builds.
+
+## Working on it
+
+    uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
+    uv run python tools/generate.py --check   # fail if blueprint/ is stale
+    uv run pytest
+    uvx --from "git+https://github.com/facebookresearch/autoform-bot.git@$(cat .github/autoform-ref)" autoform check blueprint
+
+Everything under `blueprint/roadmap/` is generated; edit the generator, the
+data or the catalog instead. `tools/refresh_thousand_plus.py` refreshes the
+1000+ data from a checkout of `1000-plus/1000-plus.github.io`.
+
+## Licenses
+
+Trough is Apache-2.0 (`LICENSE`). `data/mathlib/yaml/` comes from
+[Mathlib](https://github.com/leanprover-community/mathlib4) (Apache-2.0), and
+`data/thousand-plus.json` from
+[1000-plus](https://github.com/1000-plus/1000-plus.github.io), which is in the
+public domain.
