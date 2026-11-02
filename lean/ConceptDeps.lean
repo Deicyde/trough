@@ -14,11 +14,15 @@ module docstring and the documented declarations, in source order.
 
 A definition's body counts as part of its statement, and a structure's fields
 (its constructor's type) do too. A statement reaches listed declarations
-through the statements of unlisted ones. A proof reaches what the statements of
-the declarations it uses reach, and the proofs of unlisted declarations from
-its own module count as part of it; proofs elsewhere do not, since following
-them reaches most of the library. The walk leaves out tactic scripts and does
-not go through tactic machinery (see `withoutTactics` and `isTactic`).
+through the statements of unlisted ones, where an unlisted instance's statement
+is its type alone: how a structure is built is not what a result about it uses.
+A proof reaches what the statements of the declarations it uses reach, and the
+proofs of unlisted declarations from its own module count as part of it. A
+lemma from another module also brings the listed theorems its proof cites,
+through its own module's helpers, since a lemma proved from a listed theorem is
+a form of it. Proofs further away do not count: following them reaches most of
+the library. The walk leaves out tactic scripts and does not go through tactic
+machinery (see `withoutTactics` and `isTactic`).
 
 This is a plain file, not a `module`: a plain importer sees each module's
 private part, which is where Mathlib's theorem proofs live under the module
@@ -82,11 +86,16 @@ def kindOf (env : Environment) (info : ConstantInfo) : String :=
   | .recInfo _ => "recursor"
   | .quotInfo _ => "quot"
 
-/-- The declarations `name`'s proof uses, the proofs of unlisted declarations from `name`'s
-own module counted as part of it. -/
-def proofReach (env : Environment) (index : Std.HashMap Name Nat) (name : Name) (uses : Array Name) :
-    Array Name := Id.run do
-  let home := (env.getModuleIdxFor? name).map (·.toNat)
+def moduleOf (env : Environment) (name : Name) : Option Nat :=
+  (env.getModuleIdxFor? name).map (·.toNat)
+
+def isTheorem (env : Environment) (name : Name) : Bool :=
+  env.find? name matches some (.thmInfo _)
+
+/-- What a proof from module `home` uses, starting from `uses`, the proofs of unlisted
+declarations from `home` counted as part of it. -/
+def localClosure (env : Environment) (index : Std.HashMap Name Nat) (home : Option Nat)
+    (uses : Array Name) : Array Name := Id.run do
   let mut seen : Std.HashSet Name := {}
   let mut stack := uses
   while !stack.isEmpty do
@@ -94,7 +103,7 @@ def proofReach (env : Environment) (index : Std.HashMap Name Nat) (name : Name) 
     stack := stack.pop
     if seen.contains u || isTactic u then continue
     seen := seen.insert u
-    if index.contains u || (env.getModuleIdxFor? u).map (·.toNat) != home then continue
+    if index.contains u || moduleOf env u != home then continue
     if let some info := env.find? u then
       stack := stack ++ (directUses env info).2
   return seen.toArray
@@ -127,7 +136,8 @@ def fronts (env : Environment) (index : Std.HashMap Name Nat) (starts : Array Na
           match env.find? frame.name with
           | none => stack := stack.pop
           | some info =>
-            let uses := (directUses env info).1
+            let uses :=
+              if Meta.isInstanceCore env frame.name then usedConstants info.type else (directUses env info).1
             stack := stack.set! (stack.size - 1) { frame with uses := some uses }
             active := active.insert frame.name
             for u in uses do
@@ -173,6 +183,7 @@ def run : MetaM Unit := do
   let moduleNames := env.header.moduleNames
   let mut starts : Array Name := #[]
   let mut proofs : Std.HashMap Name (Array Name) := {}
+  let mut cites : Std.HashMap Name (Array Name) := {}
   let mut missing : Array Json := #[]
   let mut theorems := 0
   let mut withProof := 0
@@ -181,8 +192,17 @@ def run : MetaM Unit := do
     | none => missing := missing.push (Json.str name.toString)
     | some info =>
       let (statementUses, proofUses) := directUses env info
-      let reached := proofReach env index name proofUses
-      proofs := proofs.insert name reached
+      let home := moduleOf env name
+      let reached := localClosure env index home proofUses
+      let mut cited : Array Name := #[]
+      for u in reached do
+        if index.contains u || moduleOf env u == home || !isTheorem env u then continue
+        unless cites.contains u do
+          let some lemma := env.find? u | continue
+          cites := cites.insert u <| (localClosure env index (moduleOf env u) (directUses env lemma).2).filter
+            fun v => index.contains v && isTheorem env v
+        cited := cited ++ cites.getD u #[]
+      proofs := proofs.insert name (reached ++ cited)
       starts := starts ++ (statementUses ++ reached).filter (!index.contains ·)
       if info matches .thmInfo _ then
         theorems := theorems + 1

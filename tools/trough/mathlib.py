@@ -685,9 +685,9 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int]]:
     if sources.deps:
         edges = (
             f"An article's *Depends on* list names the nearest concepts on these lists that its "
-            f"statement uses, and *Proof depends on* those its proof uses, where a lemma from another "
-            f"file counts by its statement and a helper lemma from the same file by its proof too. Both "
-            f"are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a "
+            f"statement uses, and *Proof depends on* those its proof uses, counting its helper lemmas in "
+            f"the same Mathlib file and, for a lemma from another file, the listed theorems it is proved "
+            f"from there. Both are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a "
             f"dependency already reached through another is left out. This leaves {edge_stats['statement']:,} statement and "
             f"{edge_stats['proof']:,} proof edges, from {edge_stats['statement_raw']:,} and "
             f"{edge_stats['proof_raw']:,} nearest-concept edges"
