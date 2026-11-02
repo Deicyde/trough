@@ -423,11 +423,12 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     for label, (number, article) in numbers.items():
         if article.startswith("#"):
             home = targets[article]
-            shown_as = f"**{kinds[label]} {number}.**" if label in kinds else f"({number})"
+            shown_as = re.compile(re.escape(f"**{kinds[label]} {number}.**") if label in kinds
+                                  else r"\\text\{[^{}]*\(" + number + r"\)[^{}]*\}")
             targets[f"#label:{label}"] = next(
                 (part for part in walk(home)
                  if isinstance(part, Container) and (part is home or part.navigation == "transparent")
-                 and any(shown_as in text for text in [part.prose, part.tail, *(e.before for e in part.entries)])),
+                 and any(shown_as.search(text) for text in [part.prose, part.tail, *(e.before for e in part.entries)])),
                 home)
     stats["containers"] = len(pages)
     stats["problems"] = len(blueprint.problems)
