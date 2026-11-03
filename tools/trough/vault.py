@@ -156,7 +156,9 @@ def safe_math_markdown(text: str) -> str:
 
 
 def frontmatter(fields: list[tuple[str, str]], previous: str | None) -> str:
-    match = ARTICLE_ID.search(previous or "")
+    """The page's front matter, keeping the article_id it had unless fields give one (an authored
+    article's, which wins)."""
+    match = None if any(key == "article_id" for key, _ in fields) else ARTICLE_ID.search(previous or "")
     lines = ([f"article_id: {match.group(1)}"] if match else []) + [f"{key}: {value}" for key, value in fields]
     return "---\n" + "\n".join(lines) + "\n---\n\n" if lines else ""
 

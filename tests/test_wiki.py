@@ -120,6 +120,33 @@ def test_prerequisites_that_close_a_cycle_stop_the_chapter(tmp_path):
         mathlib.chapter(fake_sources(), write(tmp_path, alpha=ARTICLE, beta=beta))
 
 
+def test_generating_twice_writes_the_same_bytes_with_one_article_id(tmp_path):
+    authored = write(tmp_path, alpha=ARTICLE, area=AREA)
+    vault = tmp_path / "blueprint"
+    outputs = []
+    for _ in range(2):
+        root, _, targets = mathlib.chapter(fake_sources(), authored)
+        assign_paths(root, vault / "roadmap" / "mathlib")
+        blueprints.resolve(blueprints.Built(root, targets, {}, {}, {}), vault)
+        files = render_tree(root, vault)
+        for path, text in files.items():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(text, encoding="utf-8")
+        outputs.append(files)
+    assert outputs[0] == outputs[1]
+    page = outputs[1][targets["A"].path]
+    assert page.count("article_id:") == 1 and page.startswith("---\narticle_id: af_000000000000000000000001\n")
+
+
+def test_link_words_join_onto_one_line_and_reference_definitions_are_refused(tmp_path):
+    wrapped = ARTICLE.replace("[beta](trough:B)", "[the\nsecond $[G :\n H]$ thing](trough:B)")
+    articles = write(tmp_path, alpha=wrapped)
+    assert "[the second $[G : H]$ thing](trough:B)" in articles["A"].body
+    (tmp_path / "alpha.md").unlink()
+    with pytest.raises(ValueError, match="reference-style"):
+        write(tmp_path, alpha=ARTICLE + "\n[beta]: trough:B\n")
+
+
 def test_the_wikis_articles_are_valid():
     """Every committed article reads, and names concepts and prerequisites that exist."""
     data = Path(__file__).resolve().parent.parent / "data"

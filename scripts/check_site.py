@@ -114,9 +114,16 @@ def main() -> int:
     pages = sorted(site.rglob("*.html"))
     links = 0
     for page in pages:
-        if 'class="bp-missing"' in page.read_text(encoding="utf-8", errors="replace"):
+        text = page.read_text(encoding="utf-8", errors="replace")
+        if 'class="bp-missing"' in text:
             issues.append(f"{page.relative_to(site)}: a Lean name is shown as missing (see hooks/lean_links.py)")
+        if 'class="bp-as-typed"' in text:
+            issues.append(f"{page.relative_to(site)}: an article is shown as typed, so AutoformBot could not read "
+                          "something in it, such as a lean: or trough: link generate.py left unresolved")
         for href in parse(page).hrefs:
+            if href.startswith(("lean:", "trough:")):
+                issues.append(f"{page.relative_to(site)}: {href!r} was never resolved (see tools/trough/wiki.py)")
+                continue
             resolved = resolve_link(page, href, site)
             if resolved is None:
                 continue

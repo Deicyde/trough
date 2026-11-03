@@ -13,6 +13,7 @@ on:
       - "mkdocs.yml"
       - "theme/**"
       - "hooks/**"
+      - "wiki/**"
       - "pyproject.toml"
       - "uv.lock"
       - ".github/autoform-ref"
@@ -80,7 +81,7 @@ jobs:
           git fetch --quiet --depth=1 origin "$BASE"
           git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
           if grep -qE \
-            -e '^(blueprint|catalog|data|tools|scripts|theme|hooks)/' \
+            -e '^(blueprint|catalog|data|tools|scripts|theme|hooks|wiki)/' \
             -e '^(mkdocs\.yml|pyproject\.toml|uv\.lock)$' \
             -e '^\.github/(autoform-ref|workflows/pages\.yml)$' \
             "$RUNNER_TEMP/changed"; then
@@ -153,6 +154,15 @@ jobs:
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site
+
+      # A pull request's site, to read before it merges.
+      - name: Keep the built site
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: site
+          path: site
+          retention-days: 14
 
   # The check to require before merging. A skipped job counts as passing, so
   # the build alone would pass when the pick job failed and skipped it.
