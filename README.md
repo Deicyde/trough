@@ -93,8 +93,20 @@ page, and references print it; tables, listings and figure captions are kept.
     uv run pytest
     uvx --from "git+https://github.com/facebookresearch/autoform-bot.git@$(cat .github/autoform-ref)" autoform check blueprint
 
+A concept can have an authored article in `wiki/mathlib/`: original text in
+Markdown and TeX that takes the place of its docstring. Its front matter names
+the concept (`concept:`, the article's first declaration, or
+`<list>:<item key>` for one Mathlib lacks; `area:<headings>` gives a section of
+the overview its prose) and a durable `article_id`. In the text,
+`[words](lean:Full.Name)` cites a Mathlib declaration and becomes a link to its
+documentation, and `[words](trough:key)` links another concept's article. Its
+`## Depends on` and `## Proof depends on` lists take the place of the edges
+from Mathlib's declaration graph. The Mathlib data workflow reads every cited
+name in Mathlib's environment and fails on one that does not resolve or that
+Mathlib deprecates.
+
 Everything under `blueprint/roadmap/` is generated; edit the generator, the
-data or the catalog instead. `tools/refresh_thousand_plus.py` refreshes the
+data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes the
 1000+ data from a checkout of `1000-plus/1000-plus.github.io`.
 
 ## Licenses
@@ -102,7 +114,9 @@ data or the catalog instead. `tools/refresh_thousand_plus.py` refreshes the
 Trough is Apache-2.0 (`LICENSE`). Each `data/blueprints/<id>/src/` is
 that library's blueprint, under its own license, copied beside it; the
 chapters quote it. `data/mathlib/yaml/` comes from
-[Mathlib](https://github.com/leanprover-community/mathlib4) (Apache-2.0), and
+[Mathlib](https://github.com/leanprover-community/mathlib4) (Apache-2.0), and so
+do the docstrings and signatures in `data/mathlib/concept-deps.json`, which a
+concept with no authored article shows; and
 `data/thousand-plus.json` from
 [1000-plus](https://github.com/1000-plus/1000-plus.github.io), which is in the
 public domain.

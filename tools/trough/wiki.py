@@ -43,8 +43,36 @@ class Authored:
     proof_depends: list[str] = field(default_factory=list)
 
 
+def joined(text: str) -> str:
+    """text with the words of every lean: and trough: link on one line. AutoformBot reads a link
+    line by line, so a link whose words wrap would lose its target."""
+    out, last = [], 0
+    for match in re.finditer(r"\]\((?:<lean:|lean:|trough:)", text):
+        depth, start = 0, match.start()
+        while start > 0:
+            start -= 1
+            if text[start - 1 : start] == "\\":
+                continue
+            if text[start] == "]":
+                depth += 1
+            elif text[start] == "[":
+                if depth == 0:
+                    break
+                depth -= 1
+        if start < last:
+            continue
+        out.append(text[last:start])
+        out.append(re.sub(r"\s*\n\s*", " ", text[start : match.start()]))
+        last = match.start()
+    out.append(text[last:])
+    return "".join(out)
+
+
 def parse(path: Path) -> Authored:
     text = path.read_text(encoding="utf-8")
+    definition = re.search(r"(?m)^\s{0,3}\[[^\]]+\]:\s*<?(?:lean|trough):", text)
+    if definition:
+        raise ValueError(f"{path}: {definition.group().strip()!r} is a reference-style definition; write the link inline")
     match = re.match(r"---\n(.*?)\n---\n", text, re.S)
     fields = dict(line.split(":", 1) for line in match.group(1).splitlines() if ":" in line) if match else {}
     fields = {key.strip(): value.strip() for key, value in fields.items()}
@@ -66,7 +94,7 @@ def parse(path: Path) -> Authored:
                 raise ValueError(f"{path}: under ## Depends on or ## Proof depends on, {line.strip()!r} is not "
                                  "a '- [Title](trough:key)' line")
             getattr(article, section).append(unquote(dependency.group(1)))
-    article.body = "\n".join(body).strip()
+    article.body = joined("\n".join(body).strip())
     return article
 
 
