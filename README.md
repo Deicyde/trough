@@ -102,8 +102,10 @@ the overview its prose) and a durable `article_id`. In the text,
 documentation, and `[words](trough:key)` links another concept's article. Its
 `## Depends on` and `## Proof depends on` lists take the place of the edges
 from Mathlib's declaration graph. The Mathlib data workflow reads every cited
-name in Mathlib's environment and fails on one that does not resolve or that
-Mathlib deprecates.
+name in Mathlib's environment, and the generator stops on a citation it has no
+record of or that Mathlib deprecates, on a `trough:` key with no article, and on
+a `lean:` or `trough:` link in any other shape (with a title, a capital scheme or
+spaces).
 
 Everything under `blueprint/roadmap/` is generated; edit the generator, the
 data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes the
@@ -111,7 +113,8 @@ data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes
 
 ## Licenses
 
-Trough is Apache-2.0 (`LICENSE`). Each `data/blueprints/<id>/src/` is
+Trough is Apache-2.0 (`LICENSE`). The wiki's articles in `wiki/` are
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Each `data/blueprints/<id>/src/` is
 that library's blueprint, under its own license, copied beside it; the
 chapters quote it. `data/mathlib/yaml/` comes from
 [Mathlib](https://github.com/leanprover-community/mathlib4) (Apache-2.0), and so

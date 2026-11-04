@@ -19,12 +19,12 @@ import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 import yaml
 
 from .vault import Container, Entry, Leaf, chunk, safe_math_markdown, slugify
-from .wiki import Authored, cited, link_citations
+from .wiki import LEAN_LINK, Authored, link_citations, linked
 
 LISTS = ("overview", "undergrad", "100", "1000")
 LIST_TITLES = {
@@ -737,11 +737,31 @@ def disambiguate(articles: list[Article]) -> None:
                 break
 
 
-def citation_urls(sources: Sources, names: list[str]) -> dict[str, str]:
-    """Each cited name's documentation page, from the module the dump gives it. A name the dump
-    has not read yet (CI reads it once the article is pushed) goes to the documentation's search."""
-    records = {**((sources.deps or {}).get("cited") or {}), **((sources.deps or {}).get("concepts") or {})}
-    return {name: doc_url(name, (records.get(name) or {}).get("module")) for name in names}
+def citation_urls(sources: Sources, authored: dict[str, Authored]) -> dict[str, str]:
+    """Each cited name's documentation page, from the module the dump's cited section gives it.
+    A name with no record there, or one Mathlib deprecates, stops the chapter rather than publish
+    a citation that leads nowhere: the Mathlib data workflow reads every cited name, and on a pull
+    request its patch brings the records of new ones."""
+    deps = sources.deps or {}
+    records, unresolved = deps.get("cited") or {}, set(deps.get("unresolved") or [])
+    urls, problems = {}, []
+    for article in authored.values():
+        for match in LEAN_LINK.finditer(article.body):
+            name = unquote(match.group(1) or match.group(2))
+            record = records.get(name)
+            if record is None:
+                problems.append(f"{article.path} cites {name}, which "
+                                + ("Mathlib does not have at this pin" if name in unresolved else
+                                   "the Mathlib data have no record of yet: apply the Mathlib data workflow's patch"))
+            elif record.get("deprecated") is not None:
+                replacement = record["deprecated"].get("replacement")
+                problems.append(f"{article.path} cites {name}, which Mathlib deprecates"
+                                + (f"; cite {replacement}" if replacement else ""))
+            else:
+                urls[name] = doc_url(name, record.get("module"))
+    if problems:
+        raise ValueError("citations that cannot be linked:\n" + "\n".join(dict.fromkeys(problems)))
+    return urls
 
 
 def apply_authored(articles: list[Article], authored: dict[str, Authored], urls: dict[str, str],
@@ -811,7 +831,7 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
     if stray:
         raise ValueError(f"authored articles about no concept of this chapter: "
                          f"{', '.join(str(authored[key].path) for key in stray)}")
-    urls = citation_urls(sources, cited(authored))
+    urls = citation_urls(sources, authored)
     written = apply_authored(articles, authored, urls, targets)
     areas = {tuple(key.removeprefix("area:").split("/")): link_citations(article.body, urls)
              for key, article in authored.items() if key.startswith("area:")}
@@ -860,5 +880,9 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
     unplaced = sorted(f"area:{'/'.join(path)}" for path in areas if "area:" + "/".join(path) not in targets)
     if unplaced:
         raise ValueError(f"authored area pages for no section of the overview: {', '.join(unplaced)}")
+    for article in authored.values():
+        unknown = [key for key in linked(article) if key not in targets]
+        if unknown:
+            raise ValueError(f"{article.path}: no article for {', '.join(dict.fromkeys(unknown))}")
     stats = dict(edge_stats, articles=len(articles), formalized=formalized, wanted=wanted, authored=written)
     return root, stats, targets
