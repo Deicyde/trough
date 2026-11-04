@@ -14,11 +14,15 @@ is the overview page of a section of Mathlib's overview, such as
 "area:General algebra/Group theory". The file's name is for people only.
 
 The body is Markdown and TeX. [words](lean:Full.Name) cites a Mathlib declaration,
-and becomes a link to its documentation; CI resolves every cited name in Mathlib's
-environment (lean/ConceptDeps.lean). [words](trough:key) links another concept's
-article, and becomes a relative link once pages have paths. "## Depends on" and
-"## Proof depends on" list the concepts a reader needs, as "- [Title](trough:key)"
-lines; they take the place of the edges Mathlib's declaration graph gives.
+and becomes a link to its documentation; a name with spaces or parentheses goes in
+angle brackets, [words](<lean:Foo.«bar baz»>). CI reads every cited name in
+Mathlib's environment (lean/ConceptDeps.lean), and the chapter stops on one with no
+record or one Mathlib deprecates. [words](trough:key) links another concept's
+article, and becomes a relative link once pages have paths. A lean: or trough:
+link in any other shape (a title, a capital scheme, spaces) is refused rather than
+left unlinked. "## Depends on" and "## Proof depends on" list the concepts a reader
+needs, as "- [Title](trough:key)" lines; they take the place of the edges Mathlib's
+declaration graph gives.
 """
 
 from __future__ import annotations
@@ -29,6 +33,8 @@ from pathlib import Path
 from urllib.parse import unquote
 
 LEAN_LINK = re.compile(r"\]\((?:<lean:([^>]+)>|lean:([^)\s]+))\)")
+TROUGH_LINK = re.compile(r"\]\(trough:([^)\s]+)\)")
+SCHEME = re.compile(r"\]\(\s*<?\s*(?:lean|trough):", re.I)
 DEPENDENCY = re.compile(r"^- \[[^\]]*\]\(trough:([^)\s]+)\)")
 SECTIONS = {"## Depends on": "depends", "## Proof depends on": "proof_depends"}
 
@@ -73,6 +79,12 @@ def parse(path: Path) -> Authored:
     definition = re.search(r"(?m)^\s{0,3}\[[^\]]+\]:\s*<?(?:lean|trough):", text)
     if definition:
         raise ValueError(f"{path}: {definition.group().strip()!r} is a reference-style definition; write the link inline")
+    for link in SCHEME.finditer(text):
+        if not (LEAN_LINK.match(text, link.start()) or TROUGH_LINK.match(text, link.start())):
+            line = text.count("\n", 0, link.start()) + 1
+            shown = text[link.start():].split("\n", 1)[0][:60]
+            raise ValueError(f"{path}:{line}: {shown!r} is not (lean:Name), (<lean:Name>) or (trough:key); "
+                             "write the link without a title or spaces")
     match = re.match(r"---\n(.*?)\n---\n", text, re.S)
     fields = dict(line.split(":", 1) for line in match.group(1).splitlines() if ":" in line) if match else {}
     fields = {key.strip(): value.strip() for key, value in fields.items()}
@@ -116,6 +128,11 @@ def cited(articles: dict[str, Authored]) -> list[str]:
     """Every declaration the articles cite."""
     return sorted({unquote(match.group(1) or match.group(2)) for article in articles.values()
                    for match in LEAN_LINK.finditer(article.body)})
+
+
+def linked(article: Authored) -> list[str]:
+    """The keys of the concepts the article's text links."""
+    return [unquote(match.group(1)) for match in TROUGH_LINK.finditer(article.body)]
 
 
 def link_citations(text: str, url: dict[str, str]) -> str:

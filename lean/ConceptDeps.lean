@@ -16,8 +16,9 @@ cannot be read, stop the run rather than give partial data.
 
 The names the wiki's articles cite, one per line in `$TROUGH_CITED` if it is set,
 get the same description (module, kind, line and signature) but are not walked,
-so citing a lemma changes no edge. A cited name that does not resolve, or that
-Mathlib deprecates, stops the run.
+so citing a lemma changes no edge. Each also records whether Mathlib deprecates it,
+and what replaces it. A cited name that does not resolve is listed under
+`unresolved`. Neither stops the run: the generator refuses to link such a citation.
 
 A definition's body counts as part of its statement, and a structure's fields
 (its constructor's type) do too. A statement reaches listed declarations
@@ -246,16 +247,15 @@ def run : MetaM Unit := do
       ("statement", names listed s self),
       ("proof", names listed p (s ||| self))])
   let mut cited : Array (String × Json) := #[]
-  let mut unresolved : Array String := #[]
-  let mut deprecations : Array String := #[]
+  let mut unresolved : Array Json := #[]
   if let some citedPath := (← IO.getEnv "TROUGH_CITED") then
     for name in ← readNames citedPath do
       match env.find? name with
-      | none => unresolved := unresolved.push name.toString
+      | none => unresolved := unresolved.push (Json.str name.toString)
       | some info =>
-        if Linter.isDeprecated env name then
-          let replacement := ((Linter.getDeprecatedNewName env name).map fun n => s!" (use {n})").getD ""
-          deprecations := deprecations.push s!"{name}{replacement}"
+        let deprecation := if Linter.isDeprecated env name then
+            Json.mkObj [("replacement", optionalJson ((Linter.getDeprecatedNewName env name).map (·.toString)))]
+          else Json.null
         let module := (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!.toString
         let line := (← findDeclarationRanges? name).map (·.range.pos.line)
         let mut signature : Option String := none
@@ -267,11 +267,8 @@ def run : MetaM Unit := do
           ("module", optionalJson module),
           ("kind", Json.str (kindOf env info)),
           ("line", match line with | some l => toJson l | none => Json.null),
-          ("signature", optionalJson signature)])
-  unless unresolved.isEmpty do
-    throwError "cited names that do not resolve: {unresolved.toList}"
-  unless deprecations.isEmpty do
-    throwError "cited names that Mathlib deprecates: {deprecations.toList}"
+          ("signature", optionalJson signature),
+          ("deprecated", deprecation)])
   let mut modules : Array (String × Json) := #[]
   for module in ← readNames modulesPath do
     match env.getModuleIdx? module with
@@ -306,6 +303,7 @@ def run : MetaM Unit := do
     ("mathlib_rev", rev),
     ("concepts", Json.mkObj concepts.toList),
     ("cited", Json.mkObj cited.toList),
+    ("unresolved", Json.arr unresolved),
     ("missing", Json.arr missing),
     ("modules", Json.mkObj modules.toList),
     ("stats", Json.mkObj [

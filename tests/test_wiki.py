@@ -37,7 +37,14 @@ def concepts() -> dict:
     return {name: dict(record, module=f"Mathlib.{name}") for name in "ABC"}
 
 
-def fake_sources(cited: dict | None = None) -> mathlib.Sources:
+def cited_records() -> dict:
+    """What the dump's cited section gives for every name ARTICLE and AREA cite."""
+    record = {"kind": "theorem", "line": 1, "signature": "theorem x : True", "deprecated": None}
+    modules = {"A": "Mathlib.A", "A.«two words»": "Mathlib.Two", "C": "Mathlib.C"}
+    return {name: dict(record, module=module) for name, module in modules.items()}
+
+
+def fake_sources(cited: dict | None = None, unresolved: tuple[str, ...] = ()) -> mathlib.Sources:
     lists = {
         "overview": [mathlib.Item("overview", key, ("Area", "Sub"), title, line, decls=(name,))
                      for line, (key, title, name) in enumerate([("a", "alpha", "A"), ("b", "beta", "B"),
@@ -46,7 +53,8 @@ def fake_sources(cited: dict | None = None) -> mathlib.Sources:
         "100": [],
         "1000": [],
     }
-    deps = {"mathlib_rev": "r", "concepts": concepts(), "modules": {}, "cited": cited or {}}
+    deps = {"mathlib_rev": "r", "concepts": concepts(), "modules": {},
+            "cited": cited_records() if cited is None else cited, "unresolved": list(unresolved)}
     return mathlib.Sources("r", "", lists, deps, None)
 
 
@@ -77,7 +85,7 @@ def test_an_article_that_breaks_the_format_is_refused(tmp_path):
 
 def test_an_authored_article_takes_the_place_of_the_generated_text(tmp_path):
     authored = write(tmp_path, alpha=ARTICLE, area=AREA)
-    root, stats, targets = mathlib.chapter(fake_sources({"A.«two words»": {"module": "Mathlib.Two"}}), authored)
+    root, stats, targets = mathlib.chapter(fake_sources(), authored)
     assign_paths(root, Path("blueprint/roadmap/mathlib"))
     blueprints.resolve(blueprints.Built(root, targets, {}, {}, {}), Path("blueprint"))
     alpha, beta, gamma = (targets[key] for key in "ABC")
@@ -95,11 +103,20 @@ def test_an_authored_article_takes_the_place_of_the_generated_text(tmp_path):
     render_tree(root, Path("blueprint"))  # the vault writer takes the authored pages
 
 
-def test_a_name_the_dump_has_not_read_links_to_the_documentation_search(tmp_path):
+def test_a_citation_that_cannot_be_linked_stops_the_chapter(tmp_path):
     authored = write(tmp_path, alpha=ARTICLE)
-    _, _, targets = mathlib.chapter(fake_sources(), authored)
-    assert "[a lemma](https://leanprover-community.github.io/mathlib4_docs/find?pattern=A.%C2%ABtwo%20words%C2%BB#doc)" \
-        in targets["A"].body
+    unread = {name: record for name, record in cited_records().items() if name != "A.«two words»"}
+    with pytest.raises(ValueError, match="cites A.«two words», which the Mathlib data have no record of yet"):
+        mathlib.chapter(fake_sources(unread), authored)
+    with pytest.raises(ValueError, match="cites A.«two words», which Mathlib does not have at this pin"):
+        mathlib.chapter(fake_sources(unread, unresolved=("A.«two words»",)), authored)
+    deprecated = cited_records()
+    deprecated["A"]["deprecated"] = {"replacement": "A.new"}
+    with pytest.raises(ValueError, match="cites A, which Mathlib deprecates; cite A.new"):
+        mathlib.chapter(fake_sources(deprecated), authored)
+    deprecated["A"]["deprecated"] = {"replacement": None}
+    with pytest.raises(ValueError, match="cites A, which Mathlib deprecates$"):
+        mathlib.chapter(fake_sources(deprecated), authored)
 
 
 def test_an_article_about_no_concept_or_naming_none_stops_the_chapter(tmp_path):
@@ -108,6 +125,9 @@ def test_an_article_about_no_concept_or_naming_none_stops_the_chapter(tmp_path):
     (tmp_path / "stray.md").unlink()
     with pytest.raises(ValueError, match="no article for Q"):
         mathlib.chapter(fake_sources(), write(tmp_path, alpha=ARTICLE.replace("(trough:C)", "(trough:Q)")))
+    (tmp_path / "alpha.md").unlink()
+    with pytest.raises(ValueError, match="alpha.md: no article for Q"):
+        mathlib.chapter(fake_sources(), write(tmp_path, alpha=ARTICLE.replace("[beta](trough:B)", "[beta](trough:Q)")))
     (tmp_path / "alpha.md").unlink()
     with pytest.raises(ValueError, match="no section"):
         mathlib.chapter(fake_sources(), write(tmp_path, area=AREA.replace("area:Area/Sub", "area:Area/None")))
@@ -145,6 +165,16 @@ def test_link_words_join_onto_one_line_and_reference_definitions_are_refused(tmp
     (tmp_path / "alpha.md").unlink()
     with pytest.raises(ValueError, match="reference-style"):
         write(tmp_path, alpha=ARTICLE + "\n[beta]: trough:B\n")
+
+
+@pytest.mark.parametrize("link", ['[x](lean:A "a title")', "[x](LEAN:A)", "[x]( lean:A)", "[x](<lean:A> 'a title')",
+                                  "[x](< lean:A>)", "[x](lean:A\n)", '[x](trough:B "a title")', "[x](Trough:B)",
+                                  "[x](trough:)"])
+def test_a_link_the_generator_would_not_read_is_refused(tmp_path, link):
+    """AutoformBot reads titles and capital schemes that trough's patterns skip: such a link would
+    reach the site unchecked, or not at all."""
+    with pytest.raises(ValueError, match=r"alpha.md:6: .* is not \(lean:Name\), \(<lean:Name>\) or \(trough:key\)"):
+        write(tmp_path, alpha=ARTICLE.replace("[the first thing](lean:A)", link))
 
 
 def test_the_wikis_articles_are_valid():
