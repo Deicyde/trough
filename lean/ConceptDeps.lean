@@ -14,11 +14,13 @@ module docstring, Markdown or Verso, and the documented declarations, in source
 order. A listed name that does not resolve, or listed theorems whose proofs
 cannot be read, stop the run rather than give partial data.
 
-The names the wiki's articles cite, one per line in `$TROUGH_CITED` if it is set,
-get the same description (module, kind, line and signature) but are not walked,
-so citing a lemma changes no edge. Each also records whether Mathlib deprecates it,
-and what replaces it. A cited name that does not resolve is listed under
-`unresolved`. Neither stops the run: the generator refuses to link such a citation.
+The names the wiki's articles cite or are keyed on, one per line in `$TROUGH_CITED`
+if it is set, get the same description (module, kind, line and signature) but are
+not walked, so citing a lemma changes no edge. Each also records whether Mathlib
+deprecates it, and what replaces it, which is then described as well. A cited name
+that does not resolve is listed under `unresolved`. Neither stops the run: on a
+pull request the generator refuses such a citation, and a run on main renames or
+unlinks it (`tools/generate.py --follow-pin`).
 
 A definition's body counts as part of its statement, and a structure's fields
 (its constructor's type) do too. A statement reaches listed declarations
@@ -176,6 +178,27 @@ def optionalJson (value : Option String) : Json :=
   | some text => Json.str text
   | none => Json.null
 
+/-- A cited name's record: its module, kind, line and signature, and whether Mathlib
+deprecates it and in favour of what. -/
+def describe (env : Environment) (moduleNames : Array Name) (name : Name) (info : ConstantInfo) :
+    MetaM Json := do
+  let module := (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!.toString
+  let line := (← findDeclarationRanges? name).map (·.range.pos.line)
+  let mut signature : Option String := none
+  try
+    signature := some ((← PrettyPrinter.ppSignature name).fmt.pretty 100)
+  catch _ =>
+    pure ()
+  let deprecation := if Linter.isDeprecated env name then
+      Json.mkObj [("replacement", optionalJson ((Linter.getDeprecatedNewName env name).map (·.toString)))]
+    else Json.null
+  return Json.mkObj [
+    ("module", optionalJson module),
+    ("kind", Json.str (kindOf env info)),
+    ("line", match line with | some l => toJson l | none => Json.null),
+    ("signature", optionalJson signature),
+    ("deprecated", deprecation)]
+
 def run : MetaM Unit := do
   let env ← getEnv
   let some conceptsPath ← IO.getEnv "TROUGH_CONCEPTS" | throwError "TROUGH_CONCEPTS is not set"
@@ -249,26 +272,24 @@ def run : MetaM Unit := do
   let mut cited : Array (String × Json) := #[]
   let mut unresolved : Array Json := #[]
   if let some citedPath := (← IO.getEnv "TROUGH_CITED") then
+    let mut described : Std.HashSet Name := {}
+    let mut replacements : Array Name := #[]
     for name in ← readNames citedPath do
+      described := described.insert name
       match env.find? name with
       | none => unresolved := unresolved.push (Json.str name.toString)
       | some info =>
-        let deprecation := if Linter.isDeprecated env name then
-            Json.mkObj [("replacement", optionalJson ((Linter.getDeprecatedNewName env name).map (·.toString)))]
-          else Json.null
-        let module := (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!.toString
-        let line := (← findDeclarationRanges? name).map (·.range.pos.line)
-        let mut signature : Option String := none
-        try
-          signature := some ((← PrettyPrinter.ppSignature name).fmt.pretty 100)
-        catch _ =>
-          pure ()
-        cited := cited.push (name.toString, Json.mkObj [
-          ("module", optionalJson module),
-          ("kind", Json.str (kindOf env info)),
-          ("line", match line with | some l => toJson l | none => Json.null),
-          ("signature", optionalJson signature),
-          ("deprecated", deprecation)])
+        let record ← describe env moduleNames name info
+        cited := cited.push (name.toString, record)
+        if let some replacement := Linter.getDeprecatedNewName env name then
+          replacements := replacements.push replacement
+    -- What replaces a deprecated name is described too, so a run at a new pin can rename the citation.
+    for name in replacements do
+      if described.contains name then continue
+      described := described.insert name
+      if let some info := env.find? name then
+        let record ← describe env moduleNames name info
+        cited := cited.push (name.toString, record)
   let mut modules : Array (String × Json) := #[]
   for module in ← readNames modulesPath do
     match env.getModuleIdx? module with

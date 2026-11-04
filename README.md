@@ -107,7 +107,11 @@ from Mathlib's declaration graph. The Mathlib data workflow reads every cited
 name in Mathlib's environment, and the generator stops on a citation it has no
 record of or that Mathlib deprecates, on a `trough:` key with no article, and on
 a `lean:` or `trough:` link in any other shape (with a title, a capital scheme, or
-spaces outside angle brackets).
+spaces outside angle brackets). When the workflow moves the Mathlib pin on main,
+it repairs instead (`tools/generate.py --follow-pin`): a deprecated citation or
+concept is renamed to its replacement, one with none is unlinked, an article
+whose concept has no page moves to `wiki/unplaced/`, and `wiki/pin-changes.json`
+lists each change so the articles can be checked again.
 
 Everything under `blueprint/roadmap/` is generated; edit the generator, the
 data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes the

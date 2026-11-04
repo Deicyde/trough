@@ -24,6 +24,7 @@ from urllib.parse import quote, unquote
 import yaml
 
 from .vault import Container, Entry, Leaf, chunk, safe_math_markdown, slugify
+from . import wiki
 from .wiki import LEAN_LINK, Authored, link_citations, linked
 
 LISTS = ("overview", "undergrad", "100", "1000")
@@ -781,6 +782,122 @@ def citation_urls(sources: Sources, authored: dict[str, Authored]) -> dict[str, 
     if problems:
         raise ValueError("citations that cannot be linked:\n" + "\n".join(dict.fromkeys(problems)))
     return urls
+
+
+def page_keys(sources: Sources) -> set[str]:
+    """Every key a trough: link can name: each concept's, and "area:<headings>" for each
+    section of the overview (chapter's targets, without building the chapter)."""
+    keys = {concept_key(article) for article in merge(sources.lists)}
+    for item in sources.lists["overview"]:
+        keys.update("area:" + "/".join(item.path[:depth]) for depth in range(1, len(item.path) + 1))
+    return keys
+
+
+def follow_pin(sources: Sources, directory: Path, parking: Path) -> list[dict]:
+    """Rewrite the articles under directory so the chapter builds at a new Mathlib pin, and say
+    what changed, so those articles can be checked again. The data workflow does this on main
+    only: a pull request still stops on what this repairs.
+
+    - A cited name Mathlib deprecates is renamed to its replacement when the dump describes one
+      that is not deprecated itself; a cited name with no record, or no such replacement, is
+      unlinked and its words kept.
+    - A concept key that names no page is re-keyed the same way, in front matter, links and
+      prerequisite lists. Failing that, a link to it is unlinked, a prerequisite line dropped,
+      and an article about it moved to parking, out of the chapter.
+    """
+    records = (sources.deps or {}).get("cited") or {}
+    keys = page_keys(sources)
+
+    def usable(name: str) -> bool:
+        return name in records and records[name].get("deprecated") is None
+
+    def replacement(name: str) -> str | None:
+        new = ((records.get(name) or {}).get("deprecated") or {}).get("replacement")
+        return new if new and usable(new) else None
+
+    def page(key: str) -> str | None:
+        if key in keys:
+            return key
+        new = replacement(key)
+        return new if new in keys else None
+
+    paths = sorted(directory.glob("*.md")) if directory.is_dir() else []
+    articles = {path: wiki.parse(path) for path in paths}
+    taken = {article.concept for article in articles.values()}
+    changes = []
+    for path, article in articles.items():
+        text = path.read_text(encoding="utf-8")
+        notes = []
+        concept = page(article.concept)
+        if concept != article.concept and concept in taken:
+            concept = None  # another article already has that page
+
+        def linkable(key: str) -> str | None:
+            """The page a link to key goes to now; never the article's own."""
+            new = page(key)
+            return None if new == concept else new
+
+        def cite(match: re.Match) -> str:
+            name = unquote(match.group(1) or match.group(2))
+            new = None if usable(name) else replacement(name)
+            if new:
+                notes.append(f"lean:{name} is deprecated: it now cites lean:{new}")
+                return f"]({wiki.lean_target(new)})"
+            return match.group()
+
+        def gone(match: re.Match) -> bool:
+            name = unquote(match.group(1) or match.group(2))
+            if usable(name):
+                return False
+            notes.append(f"lean:{name} has no usable record at this pin: unlinked")
+            return True
+
+        text = wiki.unlink(LEAN_LINK.sub(cite, text), LEAN_LINK, gone)
+
+        def rekey(match: re.Match) -> str:
+            key = unquote(match.group(1))
+            new = linkable(key)
+            if new and new != key:
+                notes.append(f"trough:{key} is now trough:{new}")
+                return f"](trough:{quote(new, safe='')})"
+            return match.group()
+
+        text = wiki.TROUGH_LINK.sub(rekey, text)
+        lines, section = [], None
+        for line in text.split("\n"):
+            if line.startswith("## "):
+                section = wiki.SECTIONS.get(line.strip())
+            dependency = wiki.DEPENDENCY.match(line.strip()) if section else None
+            if dependency and linkable(unquote(dependency.group(1))) is None:
+                notes.append(f"prerequisite trough:{unquote(dependency.group(1))} names no other page: dropped")
+                continue
+            lines.append(line)
+        text = "\n".join(lines)
+
+        def lost(match: re.Match) -> bool:
+            key = unquote(match.group(1))
+            if linkable(key) is not None:
+                return False
+            notes.append(f"trough:{key} names no other page: unlinked")
+            return True
+
+        text = wiki.unlink(text, wiki.TROUGH_LINK, lost)
+        target = path
+        if concept is None:
+            target = parking / path.name
+            notes.append(f"its concept {article.concept} names no page at this pin: moved out of the chapter")
+        elif concept != article.concept:
+            text = re.sub(r"(?m)^concept:.*$", lambda _: f"concept: {concept}", text, count=1)
+            taken.add(concept)
+            notes.append(f"its concept {article.concept} is now {concept}")
+        if notes or target != path:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(text, encoding="utf-8")
+            if target != path:
+                path.unlink()
+            changes += [{"file": target.name, "article_id": article.article_id, "mathlib_rev": sources.rev,
+                         "change": note} for note in dict.fromkeys(notes)]
+    return changes
 
 
 def chosen_edges(articles: list[Article], authored: dict[str, Authored]) -> dict[Article, tuple[list[Article], list[Article]]]:

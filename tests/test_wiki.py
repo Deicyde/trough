@@ -239,3 +239,41 @@ def test_the_wikis_articles_are_valid():
     authored = wiki.load(data.parent / "wiki" / "mathlib")
     _, stats, _ = mathlib.chapter(mathlib.load_sources(data), authored)
     assert stats["authored"] == sum(1 for key in authored if not key.startswith("area:"))
+
+
+def test_a_new_pin_renames_unlinks_and_rekeys_instead_of_stopping(tmp_path):
+    """What a pull request stops on, the data run on main repairs at a new pin, and logs."""
+    directory = tmp_path / "mathlib"
+    directory.mkdir()
+    moved = ARTICLE.replace("- [Gamma](trough:C)", "- [Gamma](trough:C)\n- [Old](trough:Old)\n- [Gone](trough:Gone)")
+    moved = moved.replace("unlike [beta](trough:B)", "unlike [beta](trough:B) or [the lost one](trough:Gone)")
+    renamed = ARTICLE.replace("concept: A", "concept: Old").replace("0001", "0005").replace("(lean:A)", "(lean:C)")
+    renamed = renamed.replace("unlike [beta](trough:B)", "unlike [alpha](trough:A)")
+    stranded = ARTICLE.replace("concept: A", "concept: Nowhere").replace("0001", "0006").replace("(lean:A)", "(lean:C)")
+    stranded = stranded.replace("unlike [beta](trough:B)", "unlike [alpha](trough:A)")
+    write(directory, alpha=moved, renamed=renamed, stranded=stranded.replace("<lean:A.«two words»>", "lean:C"))
+    records = cited_records()
+    del records["A.«two words»"]  # gone at the new pin
+    records["A"]["deprecated"] = {"replacement": "A.new"}
+    records["A.new"] = dict(records["C"], module="Mathlib.A")
+    records["Old"] = dict(records["C"], deprecated={"replacement": "C"})
+    sources = fake_sources(records)
+
+    changes = mathlib.follow_pin(sources, directory, tmp_path / "unplaced")
+
+    alpha = (directory / "alpha.md").read_text(encoding="utf-8")
+    assert "[the first thing](lean:A.new)" in alpha and "as a lemma says." in alpha
+    assert "or the lost one, as" in alpha and "trough:Gone" not in alpha
+    assert "- [Old](trough:C)" in alpha
+    assert "concept: C" in (directory / "renamed.md").read_text(encoding="utf-8")
+    assert not (directory / "stranded.md").exists() and (tmp_path / "unplaced" / "stranded.md").is_file()
+    assert {change["change"] for change in changes} >= {
+        "lean:A is deprecated: it now cites lean:A.new", "lean:A.«two words» has no usable record at this pin: unlinked",
+        "trough:Old is now trough:C", "prerequisite trough:Gone names no other page: dropped",
+        "trough:Gone names no other page: unlinked", "prerequisite trough:C names no other page: dropped",
+        "its concept Old is now C", "its concept Nowhere names no page at this pin: moved out of the chapter"}
+    assert {change["article_id"] for change in changes} == {"af_000000000000000000000001", "af_000000000000000000000005",
+                                                           "af_000000000000000000000006"}
+    _, stats, _ = mathlib.chapter(sources, wiki.load(directory))  # the repaired articles build
+    assert stats["authored"] == 2
+    assert mathlib.follow_pin(sources, directory, tmp_path / "unplaced") == []  # and a second run changes nothing
