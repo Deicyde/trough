@@ -6,6 +6,8 @@ Items that name the same declarations in several lists, or name none and share a
 
 An article's *Depends on* list names the nearest concepts on these lists that its statement uses, and *Proof depends on* those its proof uses, counting its helper lemmas in the same Mathlib file and, for a lemma from another file, the listed theorems it is proved from there. Both are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a dependency already reached through another is left out. This leaves 2,611 statement and 1,508 proof edges, from 11,230 and 4,180 nearest-concept edges.
 
+1 article is written for this wiki: original text, whose citations link to Mathlib's documentation, and prerequisites chosen for the reader.
+
 - [Mathlib overview](overview/README.md)
 - [Undergraduate mathematics](undergraduate/README.md)
 - [Freek Wiedijk's 100 theorems](hundred-theorems/README.md)
