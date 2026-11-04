@@ -1,7 +1,8 @@
 # Reads Mathlib's curated lists at the pinned Mathlib commit, and computes from
 # Mathlib's declaration graph each listed declaration's kind, docstring,
 # signature and the nearest listed declarations its statement and proof use
-# (lean/ConceptDeps.lean). The pages are then regenerated from that data.
+# (lean/ConceptDeps.lean). The pages are then regenerated from that data, after
+# the wiki's articles follow the pin (main only).
 #
 # On main, a dispatch or the weekly run, the commit job records the data and
 # the pages, then starts the Pages and Tests workflows. On a pull request the
@@ -171,6 +172,13 @@ jobs:
           TROUGH_MATHLIB_REV: ${{ steps.pin.outputs.rev }}
         run: /usr/bin/time -v lake env lean ConceptDeps.lean
 
+      # Outside pull requests, a cited name or concept that the new pin deprecates or
+      # drops is renamed or unlinked, and wiki/pin-changes.json lists what changed. A
+      # pull request stays strict: generating stops on it instead.
+      - name: Follow the new pin in the wiki's articles
+        if: github.event_name != 'pull_request'
+        run: uv run --no-dev python tools/generate.py --follow-pin
+
       - name: Regenerate the pages
         run: uv run --no-dev python tools/generate.py
 
@@ -180,7 +188,7 @@ jobs:
       - name: Compare with the committed data
         id: compare
         run: |
-          git add -A data blueprint lean/lakefile.toml lean/lean-toolchain lean/lake-manifest.json
+          git add -A data blueprint wiki lean/lakefile.toml lean/lean-toolchain lean/lake-manifest.json
           if git diff --cached --quiet; then
             echo "The committed data are this Mathlib's."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -286,8 +294,9 @@ jobs:
               exit 0
             fi
             cp -R "$src/." .
+            uv run --no-dev python tools/generate.py --follow-pin
             uv run --no-dev python tools/generate.py
-            git add -A data/mathlib blueprint lean/lakefile.toml lean/lean-toolchain lean/lake-manifest.json
+            git add -A data/mathlib blueprint wiki lean/lakefile.toml lean/lean-toolchain lean/lake-manifest.json
             if git diff --cached --quiet; then
               echo "main already has this data."
               exit 0

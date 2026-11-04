@@ -88,6 +88,27 @@ def joined(text: str) -> str:
     return "".join(out)
 
 
+def unlink(text: str, pattern: re.Pattern, drop) -> str:
+    """text with each link whose destination pattern matches and drop(match) accepts replaced
+    by its words."""
+    out, last = [], 0
+    for match in pattern.finditer(text):
+        if not drop(match):
+            continue
+        start = opening(text, match.start())
+        if start < last:
+            continue
+        out += [text[last:start], text[start + 1 : match.start()]]
+        last = match.end()
+    out.append(text[last:])
+    return "".join(out)
+
+
+def lean_target(name: str) -> str:
+    """The destination that cites name: in angle brackets when it holds a space or parenthesis."""
+    return f"<lean:{name}>" if re.search(r"[\s()<>]", name) else f"lean:{name}"
+
+
 def parse(path: Path) -> Authored:
     text = path.read_text(encoding="utf-8")
     definition = re.search(r"(?mi)^\s{0,3}\[[^\]]+\]:\s*<?\s*(?:lean|trough):", text)

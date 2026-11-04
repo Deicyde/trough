@@ -5,6 +5,10 @@
     python tools/generate.py --check    fail if a page differs from what would be written
     python tools/generate.py --concepts lean/concepts.txt --modules lean/modules.txt --cited lean/cited.txt
                                         write the Lean dump's inputs and stop
+    python tools/generate.py --follow-pin
+                                        rewrite wiki/ articles for a new Mathlib pin and log
+                                        the changes in wiki/pin-changes.json (the data
+                                        workflow does this on main, before generating)
 
 Everything under blueprint/roadmap/ is generated, and so are
 blueprint/coverage/README.md, blueprint/sources/README.md and
@@ -15,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -28,6 +33,8 @@ VAULT = ROOT / "blueprint"
 ROADMAP = VAULT / "roadmap"
 DATA = ROOT / "data"
 WIKI = ROOT / "wiki" / "mathlib"
+PARKING = ROOT / "wiki" / "unplaced"
+PIN_CHANGES = ROOT / "wiki" / "pin-changes.json"
 
 
 def generate() -> dict[Path, str]:
@@ -107,10 +114,25 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="fail if any generated page is stale")
     parser.add_argument("--concepts", type=Path, help="write the listed declaration names here and stop")
     parser.add_argument("--modules", type=Path, help="write the listed module names here and stop")
-    parser.add_argument("--cited", type=Path, help="write the names the wiki's articles cite here and stop")
+    parser.add_argument("--cited", type=Path,
+                        help="write the names the wiki's articles cite or are keyed on here and stop")
+    parser.add_argument("--follow-pin", action="store_true",
+                        help="rewrite the wiki's articles for the data's Mathlib pin and stop")
     args = parser.parse_args()
+    if args.follow_pin:
+        changes = mathlib.follow_pin(mathlib.load_sources(DATA), WIKI, PARKING)
+        if changes:
+            logged = json.loads(PIN_CHANGES.read_text(encoding="utf-8")) if PIN_CHANGES.is_file() else []
+            PIN_CHANGES.write_text(json.dumps(logged + changes, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"{len(changes)} changes to the wiki's articles for this pin", file=sys.stderr)
+        return 0
     if args.cited:
-        args.cited.write_text("".join(f"{name}\n" for name in wiki.cited(wiki.load(WIKI))), encoding="utf-8")
+        articles = wiki.load(WIKI)
+        # Keys too, so the dump says what replaces a concept's declaration when Mathlib renames it.
+        keys = {key for article in articles.values()
+                for key in [article.concept, *article.depends, *article.proof_depends, *wiki.linked(article)]}
+        names = sorted(set(wiki.cited(articles)) | {key for key in keys if not re.match(r"[^.:]*:", key)})
+        args.cited.write_text("".join(f"{name}\n" for name in names), encoding="utf-8")
     if args.concepts or args.modules:
         # Listing needs only the lists: the dump may be of the previous pin.
         articles = mathlib.merge(mathlib.load_sources(DATA, deps=False).lists)
