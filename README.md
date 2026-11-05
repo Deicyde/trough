@@ -99,13 +99,15 @@ the concept (`concept:`, the article's first declaration, or
 `<list>:<item key>` for one Mathlib lacks; `area:<headings>` gives a section of
 the overview its prose) and a durable `article_id`. In the text,
 `[words](lean:Full.Name)` cites a Mathlib declaration and becomes a link to its
-documentation, and `[words](trough:key)` links another concept's article. Its
+documentation (a name with spaces goes in angle brackets,
+`[words](<lean:Name with spaces>)`), and `[words](trough:key)` links another
+concept's article. Its
 `## Depends on` and `## Proof depends on` lists take the place of the edges
 from Mathlib's declaration graph. The Mathlib data workflow reads every cited
 name in Mathlib's environment, and the generator stops on a citation it has no
 record of or that Mathlib deprecates, on a `trough:` key with no article, and on
-a `lean:` or `trough:` link in any other shape (with a title, a capital scheme or
-spaces).
+a `lean:` or `trough:` link in any other shape (with a title, a capital scheme, or
+spaces outside angle brackets).
 
 Everything under `blueprint/roadmap/` is generated; edit the generator, the
 data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes the
@@ -113,8 +115,10 @@ data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes
 
 ## Licenses
 
-Trough is Apache-2.0 (`LICENSE`). The wiki's articles in `wiki/` are
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Each `data/blueprints/<id>/src/` is
+Trough is Apache-2.0 (`LICENSE`). The articles in `wiki/`, by trough's
+contributors, are [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
+and so is their text wherever it appears: the generated pages under
+`blueprint/roadmap/` and the site, which marks it. Each `data/blueprints/<id>/src/` is
 that library's blueprint, under its own license, copied beside it; the
 chapters quote it. `data/mathlib/yaml/` comes from
 [Mathlib](https://github.com/leanprover-community/mathlib4) (Apache-2.0), and so

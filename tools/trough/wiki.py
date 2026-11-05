@@ -35,7 +35,8 @@ from urllib.parse import unquote
 LEAN_LINK = re.compile(r"\]\((?:<lean:([^>]+)>|lean:([^)\s]+))\)")
 TROUGH_LINK = re.compile(r"\]\(trough:([^)\s]+)\)")
 SCHEME = re.compile(r"\]\(\s*<?\s*(?:lean|trough):", re.I)
-DEPENDENCY = re.compile(r"^- \[[^\]]*\]\(trough:([^)\s]+)\)")
+BLANK_LINE = re.compile(r"\n[ \t]*\n")
+DEPENDENCY = re.compile(r"^- \[[^\]]*\]\(trough:([^)\s]+)\)$")
 SECTIONS = {"## Depends on": "depends", "## Proof depends on": "proof_depends"}
 
 
@@ -49,22 +50,35 @@ class Authored:
     proof_depends: list[str] = field(default_factory=list)
 
 
+def opening(text: str, end: int) -> int:
+    """Where the [ is that opens the link words closed by the ] at text[end], or -1. Link words
+    stay within a paragraph, and brackets in TeX or after a backslash don't count, since a
+    half-open interval such as $(0, 1]$ leaves them unbalanced."""
+    i = max((blank.end() for blank in BLANK_LINE.finditer(text, 0, end)), default=0)
+    stack, math = [], None
+    while i < end:
+        if text[i] == "\\":
+            i += 2
+            continue
+        if text[i] == "$":
+            delimiter = "$$" if text.startswith("$$", i) else "$"
+            math = delimiter if math is None else None if math == delimiter else math
+            i += len(delimiter)
+            continue
+        if math is None and text[i] == "[":
+            stack.append(i)
+        elif math is None and text[i] == "]" and stack:
+            stack.pop()
+        i += 1
+    return stack[-1] if stack else -1
+
+
 def joined(text: str) -> str:
     """text with the words of every lean: and trough: link on one line. AutoformBot reads a link
     line by line, so a link whose words wrap would lose its target."""
     out, last = [], 0
     for match in re.finditer(r"\]\((?:<lean:|lean:|trough:)", text):
-        depth, start = 0, match.start()
-        while start > 0:
-            start -= 1
-            if text[start - 1 : start] == "\\":
-                continue
-            if text[start] == "]":
-                depth += 1
-            elif text[start] == "[":
-                if depth == 0:
-                    break
-                depth -= 1
+        start = opening(text, match.start())
         if start < last:
             continue
         out.append(text[last:start])
@@ -76,7 +90,7 @@ def joined(text: str) -> str:
 
 def parse(path: Path) -> Authored:
     text = path.read_text(encoding="utf-8")
-    definition = re.search(r"(?m)^\s{0,3}\[[^\]]+\]:\s*<?(?:lean|trough):", text)
+    definition = re.search(r"(?mi)^\s{0,3}\[[^\]]+\]:\s*<?\s*(?:lean|trough):", text)
     if definition:
         raise ValueError(f"{path}: {definition.group().strip()!r} is a reference-style definition; write the link inline")
     for link in SCHEME.finditer(text):

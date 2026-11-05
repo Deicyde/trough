@@ -27,6 +27,8 @@ from .vault import Container, Entry, Leaf, chunk, safe_math_markdown, slugify
 from .wiki import LEAN_LINK, Authored, link_citations, linked
 
 LISTS = ("overview", "undergrad", "100", "1000")
+# Marks an authored article's text on its page, which also shows Mathlib's Apache-2.0 material.
+WRITTEN = "*Written for Trough, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*"
 LIST_TITLES = {
     "overview": "Mathlib overview",
     "undergrad": "Undergraduate mathematics",
@@ -538,10 +540,10 @@ def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = fro
 
 
 def tree_container(sources: Sources, name: str, articles_by_item: dict[int, Article],
-                   areas: dict[tuple[str, ...], str] | None = None,
+                   areas: dict[str, tuple[str, str]] | None = None,
                    targets: dict[str, Leaf | Container] | None = None) -> Container:
     """overview and undergrad: the list's own headings, in its order. An overview section with an
-    authored page (areas) opens with its text."""
+    authored page (areas: its text and article_id, by its headings joined with "/") opens with it."""
     yaml_url = f"{MATHLIB_REPO}/blob/{sources.rev}/docs/{name}.yaml"
     root = Container(LIST_TITLES[name], LIST_SLUGS[name], prose=LIST_PROSE[name].format(yaml=yaml_url))
     by_path: dict[tuple[str, ...], Container] = {(): root}
@@ -550,8 +552,8 @@ def tree_container(sources: Sources, name: str, articles_by_item: dict[int, Arti
             path = item.path[:depth]
             if path not in by_path:
                 node = Container(capitalize(path[-1]), slugify(path[-1]))
-                if name == "overview" and areas and path in areas:
-                    node.prose = areas[path]
+                if name == "overview" and areas and "/".join(path) in areas:
+                    node.prose, node.article_id = areas["/".join(path)]
                 if name == "overview" and targets is not None:
                     targets["area:" + "/".join(path)] = node
                 by_path[path[:-1]].entries.append(Entry(node))
@@ -622,26 +624,29 @@ def sort_key(article: Article) -> tuple[str, str]:
     return (article.leaf.title.casefold() if article.leaf else "", ",".join(article.decls))
 
 
-def link_edges(sources: Sources, articles: list[Article]) -> dict[str, int]:
+def link_edges(sources: Sources, articles: list[Article],
+               chosen: dict[Article, tuple[list[Article], list[Article]]] | None = None) -> dict[str, int]:
     """Article edges from the declaration-level fronts, acyclic and transitively reduced.
 
     The dump gives, for each list declaration, the nearest list declarations its
     statement and its proof reach through declarations on no list. Merging
     declarations into articles can close a cycle; a depth-first search in title
-    order moves each edge that closes one to "Informally uses". A statement
-    dependency already reached through another statement dependency, or a proof
-    dependency reached through any other dependency, is then left out.
+    order moves each edge that closes one to "Informally uses". An authored
+    article's own prerequisites (chosen) then take the place of its concept's edges,
+    as they stand; a cycle through them stops the chapter. In every other article, a
+    statement dependency already reached through another statement dependency, or
+    a proof dependency reached through any other dependency, is left out.
     """
-    stats = {"statement_raw": 0, "proof_raw": 0, "informal": 0, "statement": 0, "proof": 0}
-    concepts = (sources.deps or {}).get("concepts")
-    if not concepts:
-        return stats
+    chosen = chosen or {}
+    stats = dict.fromkeys(("statement_raw", "proof_raw", "informal", "statement", "proof",
+                           "lean_statement", "lean_proof", "authored_statement", "authored_proof"), 0)
+    concepts = (sources.deps or {}).get("concepts") or {}
     # A declaration in two articles stands for the one whose first declaration it is.
     by_decl = {article.decls[0]: article for article in articles if article.decls}
     for article in articles:
         for name in article.decls:
             by_decl.setdefault(name, article)
-    nodes = sorted((article for article in articles if article.decls), key=sort_key)
+    nodes = sorted((article for article in articles if article.decls or article in chosen), key=sort_key)
     stmt: dict[Article, set[Article]] = {article: set() for article in nodes}
     proof: dict[Article, set[Article]] = {article: set() for article in nodes}
     for article in nodes:
@@ -652,8 +657,9 @@ def link_edges(sources: Sources, articles: list[Article]) -> dict[str, int]:
         stmt[article].discard(article)
         proof[article].discard(article)
         proof[article] -= stmt[article]
-        stats["statement_raw"] += len(stmt[article])
-        stats["proof_raw"] += len(proof[article])
+        raw = ("lean_statement", "lean_proof") if article in chosen else ("statement_raw", "proof_raw")
+        stats[raw[0]] += len(stmt[article])
+        stats[raw[1]] += len(proof[article])
 
     informal: dict[Article, set[Article]] = defaultdict(set)
     state: dict[Article, int] = {}
@@ -673,10 +679,13 @@ def link_edges(sources: Sources, articles: list[Article]) -> dict[str, int]:
                 stmt[node].discard(child)
                 proof[node].discard(child)
                 informal[node].add(child)
-                stats["informal"] += 1
             elif child not in state:
                 state[child] = 1
                 stack.append((child, iter(sorted(stmt[child] | proof[child], key=sort_key))))
+
+    for article, (depends, proof_depends) in chosen.items():
+        stmt[article], proof[article] = set(depends), set(proof_depends)
+    check_acyclic(nodes, stmt, proof)
 
     index = {article: number for number, article in enumerate(nodes)}
     reach_stmt: dict[Article, int] = {}
@@ -703,6 +712,13 @@ def link_edges(sources: Sources, articles: list[Article]) -> dict[str, int]:
             all_bits |= (1 << index[child]) | reach_all[child]
         reach_stmt[node], reach_all[node] = statement_bits, all_bits
     for node in nodes:
+        if node in chosen:
+            depends, proof_depends = chosen[node]
+            node.leaf.depends = [child.leaf for child in depends]
+            node.leaf.proof_depends = [child.leaf for child in proof_depends]
+            stats["authored_statement"] += len(depends)
+            stats["authored_proof"] += len(proof_depends)
+            continue
         keep_stmt = {
             child for child in stmt[node]
             if not any(other is not child and reach_stmt[other] >> index[child] & 1 for other in stmt[node])
@@ -717,6 +733,7 @@ def link_edges(sources: Sources, articles: list[Article]) -> dict[str, int]:
         node.leaf.informal = [child.leaf for child in sorted(informal[node], key=sort_key)]
         stats["statement"] += len(keep_stmt)
         stats["proof"] += len(keep_proof)
+        stats["informal"] += len(informal[node])
     return stats
 
 
@@ -764,53 +781,61 @@ def citation_urls(sources: Sources, authored: dict[str, Authored]) -> dict[str, 
     return urls
 
 
-def apply_authored(articles: list[Article], authored: dict[str, Authored], urls: dict[str, str],
-                   targets: dict[str, Leaf | Container]) -> int:
-    """Put each authored article in place of its concept's generated text and dependencies."""
+def chosen_edges(articles: list[Article], authored: dict[str, Authored]) -> dict[Article, tuple[list[Article], list[Article]]]:
+    """Each authored article's own prerequisites, by concept."""
+    by_key = {concept_key(article): article for article in articles}
+    chosen = {}
+    for article in articles:
+        written = authored.get(concept_key(article))
+        if written is None:
+            continue
+        lists = []
+        for keys in (written.depends, written.proof_depends):
+            unknown = [key for key in keys if key not in by_key]
+            if unknown:
+                raise ValueError(f"{written.path}: no article for {', '.join(unknown)}")
+            lists.append([by_key[key] for key in keys])
+        chosen[article] = (lists[0], lists[1])
+    return chosen
+
+
+def apply_authored(articles: list[Article], authored: dict[str, Authored], urls: dict[str, str]) -> int:
+    """Put each authored article's text in place of its concept's generated text; link_edges
+    has given it its prerequisites."""
     count = 0
     for article in articles:
         written = authored.get(concept_key(article))
         if written is None:
             continue
-        leaf = article.leaf
-        leaf.body = link_citations(written.body, urls)
-        leaf.fields = [("article_id", written.article_id), *leaf.fields]
-        for attribute in ("depends", "proof_depends"):
-            keys = getattr(written, attribute)
-            unknown = [key for key in keys if not isinstance(targets.get(key), Leaf)]
-            if unknown:
-                raise ValueError(f"{written.path}: no article for {', '.join(unknown)}")
-            setattr(leaf, attribute, [targets[key] for key in keys])
-        leaf.informal = []
-        leaf.no_depends = "Its article names no prerequisites."
+        article.leaf.body = link_citations(written.body, urls) + "\n\n" + WRITTEN
+        article.leaf.fields = [("article_id", written.article_id), *article.leaf.fields]
+        article.leaf.no_depends = "Its article names no prerequisites."
         count += 1
-    if count:
-        check_acyclic([article.leaf for article in articles])
     return count
 
 
-def check_acyclic(leaves: list[Leaf]) -> None:
-    """Stop if prerequisites close a cycle. Lean's edges alone close none (link_edges), so an
-    authored article's list is in any cycle found."""
-    state: dict[int, int] = {}
-    for root in leaves:
-        if id(root) in state:
+def check_acyclic(nodes: list[Article], stmt: dict[Article, set[Article]], proof: dict[Article, set[Article]]) -> None:
+    """Stop if the edges close a cycle. Lean's edges alone close none once link_edges has moved
+    some to "Informally uses", so an authored article's prerequisites are in any cycle found."""
+    state: dict[Article, int] = {}
+    for root in nodes:
+        if root in state:
             continue
-        state[id(root)] = 1
+        state[root] = 1
         path = [root]
-        stack = [iter(root.depends + root.proof_depends)]
+        stack = [iter(sorted(stmt[root] | proof[root], key=sort_key))]
         while stack:
             child = next(stack[-1], None)
             if child is None:
-                state[id(path.pop())] = 2
+                state[path.pop()] = 2
                 stack.pop()
-            elif state.get(id(child)) == 1:
+            elif state.get(child) == 1:
                 cycle = path[path.index(child):] + [child]
-                raise ValueError("prerequisites close a cycle: " + " -> ".join(leaf.title for leaf in cycle))
-            elif id(child) not in state:
-                state[id(child)] = 1
+                raise ValueError("prerequisites close a cycle: " + " -> ".join(node.leaf.title for node in cycle))
+            elif child not in state:
+                state[child] = 1
                 path.append(child)
-                stack.append(iter(child.depends + child.proof_depends))
+                stack.append(iter(sorted(stmt[child] | proof[child], key=sort_key)))
 
 
 def chapter(sources: Sources, authored: dict[str, Authored] | None = None
@@ -824,17 +849,23 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
         article.leaf = build_leaf(sources, article, claimed)
     disambiguate(articles)
     articles_by_item = {id(item): article for article in articles for item in article.items}
-    edge_stats = link_edges(sources, articles)
     targets: dict[str, Leaf | Container] = {concept_key(article): article.leaf for article in articles}
     known = set(targets) | {key for key in authored if key.startswith("area:")}
     stray = sorted(key for key in authored if key not in known)
     if stray:
         raise ValueError(f"authored articles about no concept of this chapter: "
                          f"{', '.join(str(authored[key].path) for key in stray)}")
+    edge_stats = link_edges(sources, articles, chosen_edges(articles, authored))
     urls = citation_urls(sources, authored)
-    written = apply_authored(articles, authored, urls, targets)
-    areas = {tuple(key.removeprefix("area:").split("/")): link_citations(article.body, urls)
+    written = apply_authored(articles, authored, urls)
+    # By the joined headings: a heading such as "Normed vector spaces/Banach spaces" holds a "/".
+    areas = {key.removeprefix("area:"): (link_citations(article.body, urls) + "\n\n" + WRITTEN, article.article_id)
              for key, article in authored.items() if key.startswith("area:")}
+    listing = [article.path for key, article in authored.items()
+               if key.startswith("area:") and (article.depends or article.proof_depends)]
+    if listing:
+        raise ValueError(f"an area page names no prerequisites; drop the dependency sections of "
+                         f"{', '.join(map(str, listing))}")
     formalized = sum(article.kind != "wanted" for article in articles)
     wanted = len(articles) - formalized
     rev_link = f"[{sources.rev[:8]}]({MATHLIB_REPO}/tree/{sources.rev})"
@@ -861,14 +892,19 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
             f"and {wanted:,} not yet.",
             "Items that name the same declarations in several lists, or name none and share a title, are one "
             "article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, "
-            "with their documentation and source. One that Mathlib lacks is marked not ready, since its "
+            "with their documentation and source; the docstrings and signatures it shows are Mathlib's, under "
+            "Apache-2.0. One that Mathlib lacks is marked not ready, since its "
             "prerequisites are not mapped; its page says when Mathlib states it without a proof or another "
             "project has formalized it.",
             edges,
         ]
-        + ([f"{written:,} {'article is' if written == 1 else 'articles are'} written for this wiki: original text, "
-            "whose citations link to Mathlib's documentation, and prerequisites chosen for the reader."]
-           if written else [])
+        + ([f"{len(authored):,} {'article is' if len(authored) == 1 else 'articles are'} written for Trough, under "
+            "CC BY-SA 4.0: original text, whose citations link to Mathlib's documentation"
+            + (f", and prerequisites chosen for the reader: {edge_stats['authored_statement']:,} statement and "
+               f"{edge_stats['authored_proof']:,} proof edges, in place of the {edge_stats['lean_statement']:,} and "
+               f"{edge_stats['lean_proof']:,} nearest-concept edges Mathlib's graph gives "
+               + ("that concept." if written == 1 else "those concepts.") if written else ".")]
+           if authored else [])
     )
     root = Container("Mathlib", "mathlib", prose=prose)
     root.entries = [
@@ -877,7 +913,7 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
         Entry(hundred_container(sources, articles_by_item)),
         Entry(thousand_container(sources, articles_by_item)),
     ]
-    unplaced = sorted(f"area:{'/'.join(path)}" for path in areas if "area:" + "/".join(path) not in targets)
+    unplaced = sorted(f"area:{path}" for path in areas if f"area:{path}" not in targets)
     if unplaced:
         raise ValueError(f"authored area pages for no section of the overview: {', '.join(unplaced)}")
     for article in authored.values():
