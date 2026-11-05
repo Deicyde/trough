@@ -19,7 +19,7 @@ exists_prime_orderOf_dvd_card.{u_3} {G : Type u_3} [Group G] [Fintype G] (p : â„
 ## Depends on
 
 - [Finite set](../../../../overview/data-structures/sets/finite-set.md)
-- [Group](../../../../overview/general-algebra/group-theory/part-01/group.md)
+- [Integer](../../../../overview/general-algebra/numbers/integer.md)
 - [Irreducible element](../../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Order of an element](../../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md)
 

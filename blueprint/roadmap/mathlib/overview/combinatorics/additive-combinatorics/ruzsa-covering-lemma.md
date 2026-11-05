@@ -21,7 +21,6 @@ Set.ruzsa_covering_add.{u_1} {G : Type u_1} [AddGroup G] {K : ℝ} {A B : Set G}
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Real number](../../general-algebra/numbers/real-number.md)
 - [Ring morphism](../../general-algebra/rings/ring-morphism.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
 

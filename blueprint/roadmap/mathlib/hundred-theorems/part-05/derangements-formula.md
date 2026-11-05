@@ -29,7 +29,6 @@ numDerangements_sum (n : ℕ) :
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

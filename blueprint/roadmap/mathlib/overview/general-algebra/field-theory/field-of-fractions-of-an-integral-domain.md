@@ -18,7 +18,6 @@ IsFractionRing.{u_6, u_7} (R : Type u_6) [CommSemiring R] (K : Type u_7) [CommSe
 ## Depends on
 
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 
