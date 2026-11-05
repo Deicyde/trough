@@ -25,7 +25,6 @@ Finset.small_pow_of_small_tripling.{u_1} {G : Type u_1} [DecidableEq G] [Group G
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Group](../../general-algebra/group-theory/part-01/group.md)
 - [Real number](../../general-algebra/numbers/real-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
 

@@ -17,6 +17,7 @@ Localization.{u_1} {M : Type u_1} [CommMonoid M] (S : Submonoid M) : Type u_1
 ## Depends on
 
 - [Group action](../group-theory/part-01/group-action.md)
+- [Natural number](../numbers/natural-number.md)
 
 ## Sources
 

@@ -23,6 +23,7 @@ IsTopologicalGroup.{u_4} (G : Type u_4) [TopologicalSpace G] [Group G] : Prop
 
 - [Continuous function](../general-topology/part-01/continuous-function.md)
 - [Group](../../general-algebra/group-theory/part-01/group.md)
+- [Integer](../../general-algebra/numbers/integer.md)
 
 ## Sources
 

@@ -21,6 +21,7 @@ Subgroup.exists_left_complement'_of_coprime.{u} {G : Type u} [Group G] {N : Subg
 
 - [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Index of a subgroup](../../../../overview/general-algebra/group-theory/part-01/index-of-a-subgroup.md)
+- [Integer](../../../../overview/general-algebra/numbers/integer.md)
 - [Normal subgroup](../../../../overview/general-algebra/group-theory/part-01/normal-subgroup.md)
 - [Ring morphism](../../../../overview/general-algebra/rings/ring-morphism.md)
 

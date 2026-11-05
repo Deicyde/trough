@@ -21,6 +21,7 @@ _root_.Module.{u, v} (R : Type u) (M : Type v) [Semiring R] [AddCommMonoid M] : 
 ## Depends on
 
 - [Group action](../../general-algebra/group-theory/part-01/group-action.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 
 ## Sources
 

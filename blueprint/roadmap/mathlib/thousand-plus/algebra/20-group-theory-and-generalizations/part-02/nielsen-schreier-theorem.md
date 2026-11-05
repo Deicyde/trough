@@ -18,6 +18,7 @@ Subgroup.isFreeGroupOfIsFreeGroup.{u} {G : Type u} [Group G] [IsFreeGroup G] (H 
 ## Depends on
 
 - [Free group](../../../../overview/general-algebra/group-theory/part-01/free-group.md)
+- [Integer](../../../../overview/general-algebra/numbers/integer.md)
 - [Subgroup](../../../../overview/general-algebra/group-theory/part-01/subgroup.md)
 
 ## Proof depends on
@@ -27,7 +28,6 @@ Subgroup.isFreeGroupOfIsFreeGroup.{u} {G : Type u} [Group G] [IsFreeGroup G] (H 
 - [Natural transformation](../../../../overview/general-algebra/category-theory/natural-transformation.md)
 - [Orbit](../../../../undergraduate/group-theory/basic-definitions/orbit.md)
 - [Small category](../../../../overview/general-algebra/category-theory/small-category.md)
-- [Stabilizer of a point](../../../../undergraduate/group-theory/basic-definitions/stabilizer-of-a-point.md)
 
 ## Sources
 

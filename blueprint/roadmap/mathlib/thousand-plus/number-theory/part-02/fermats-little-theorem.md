@@ -24,7 +24,6 @@ ZMod.pow_card_sub_one_eq_one {p : ℕ} [Fact (Nat.Prime p)] {a : ZMod p} (ha : a
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 
