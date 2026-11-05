@@ -1,6 +1,6 @@
 {"unresolved": [],
  "stats":
- {"walked": 30503, "theorems_with_proof": 450, "theorems": 450, "listed": 934, "cited": 29},
+ {"walked": 30503, "theorems_with_proof": 450, "theorems": 450, "listed": 934, "cited": 50},
  "schema": "trough-concept-deps/v1",
  "modules":
  {"Mathlib.Order.LiminfLimsup":
@@ -23149,6 +23149,12 @@
    "line": 1184,
    "kind": "theorem",
    "deprecated": null},
+  "orderOf":
+  {"signature": "orderOf.{u_1} {G : Type u_1} [Monoid G] (x : G) : ℕ",
+   "module": "Mathlib.GroupTheory.OrderOfElement",
+   "line": 174,
+   "kind": "def",
+   "deprecated": null},
   "isCyclic_of_prime_card":
   {"signature":
    "isCyclic_of_prime_card.{u_1} {α : Type u_1} [Group α] {p : ℕ} [hp : Fact (Nat.Prime p)]\n  (h : Nat.card α = p) : IsCyclic α",
@@ -23175,6 +23181,20 @@
    "alternatingGroup.isSimpleGroup.{u_1} {α : Type u_1} [DecidableEq α] [Fintype α]\n  (hα : 5 ≤ Nat.card α) : IsSimpleGroup ↥(alternatingGroup α)",
    "module": "Mathlib.GroupTheory.SpecificGroups.Alternating.Simple",
    "line": 200,
+   "kind": "theorem",
+   "deprecated": null},
+  "alternatingGroup":
+  {"signature":
+   "alternatingGroup.{u_1} (α : Type u_1) [Fintype α] [DecidableEq α] : Subgroup (Equiv.Perm α)",
+   "module": "Mathlib.GroupTheory.SpecificGroups.Alternating",
+   "line": 70,
+   "kind": "def",
+   "deprecated": null},
+  "ZMod.pow_card_sub_one_eq_one":
+  {"signature":
+   "ZMod.pow_card_sub_one_eq_one {p : ℕ} [Fact (Nat.Prime p)] {a : ZMod p} (ha : a ≠ 0) :\n  a ^ (p - 1) = 1",
+   "module": "Mathlib.FieldTheory.Finite.Basic",
+   "line": 579,
    "kind": "theorem",
    "deprecated": null},
   "Sylow.isPretransitive_of_finite":
@@ -23205,6 +23225,12 @@
    "line": 372,
    "kind": "theorem",
    "deprecated": null},
+  "Subgroup.index":
+  {"signature": "Subgroup.index.{u_1} {G : Type u_1} [Group G] (H : Subgroup G) : ℕ",
+   "module": "Mathlib.GroupTheory.Index",
+   "line": 52,
+   "kind": "def",
+   "deprecated": null},
   "Subgroup.fg_of_index_ne_zero":
   {"signature":
    "Subgroup.fg_of_index_ne_zero.{u_1} {G : Type u_1} [Group G] (H : Subgroup G) [hG : Group.FG G]\n  [H.FiniteIndex] : Group.FG ↥H",
@@ -23218,6 +23244,12 @@
    "module": "Mathlib.GroupTheory.Schreier",
    "line": 91,
    "kind": "theorem",
+   "deprecated": null},
+  "Subgroup.closure":
+  {"signature": "Subgroup.closure.{u_1} {G : Type u_1} [Group G] (k : Set G) : Subgroup G",
+   "module": "Mathlib.Algebra.Group.Subgroup.Lattice",
+   "line": 327,
+   "kind": "def",
    "deprecated": null},
   "Subgroup.card_subgroup_dvd_card":
   {"signature":
@@ -23246,11 +23278,50 @@
    "line": 605,
    "kind": "class",
    "deprecated": null},
+  "Subgroup":
+  {"signature": "Subgroup.{u_3} (G : Type u_3) [Group G] : Type u_3",
+   "module": "Mathlib.Algebra.Group.Subgroup.Defs",
+   "line": 294,
+   "kind": "structure",
+   "deprecated": null},
+  "QuotientGroup.quotientQuotientEquivQuotient":
+  {"signature":
+   "QuotientGroup.quotientQuotientEquivQuotient.{u} {G : Type u} [Group G] (N : Subgroup G)\n  [nN : N.Normal] (M : Subgroup G) [nM : M.Normal] (h : N ≤ M) :\n  (G ⧸ N) ⧸ Subgroup.map (QuotientGroup.mk' N) M ≃* G ⧸ M",
+   "module": "Mathlib.GroupTheory.QuotientGroup.Basic",
+   "line": 342,
+   "kind": "def",
+   "deprecated": null},
   "QuotientGroup.quotientKerEquivRange":
   {"signature":
    "QuotientGroup.quotientKerEquivRange.{u, v} {G : Type u} [Group G] {H : Type v} [Group H]\n  (φ : G →* H) : G ⧸ φ.ker ≃* ↥φ.range",
    "module": "Mathlib.GroupTheory.QuotientGroup.Basic",
    "line": 130,
+   "kind": "def",
+   "deprecated": null},
+  "QuotientGroup.quotientInfEquivProdNormalQuotient":
+  {"signature":
+   "QuotientGroup.quotientInfEquivProdNormalQuotient.{u} {G : Type u} [Group G] (H N : Subgroup G)\n  [hN : N.Normal] : ↥H ⧸ N.subgroupOf H ≃* ↥(H ⊔ N) ⧸ N.subgroupOf (H ⊔ N)",
+   "module": "Mathlib.GroupTheory.QuotientGroup.Basic",
+   "line": 302,
+   "kind": "def",
+   "deprecated": null},
+  "QuotientGroup.Quotient.group":
+  {"signature":
+   "QuotientGroup.Quotient.group.{u_1} {G : Type u_1} [Group G] (N : Subgroup G) [nN : N.Normal] :\n  Group (G ⧸ N)",
+   "module": "Mathlib.GroupTheory.QuotientGroup.Defs",
+   "line": 71,
+   "kind": "instance",
+   "deprecated": null},
+  "PresentedGroup":
+  {"signature": "PresentedGroup.{u_1} {α : Type u_1} (rels : Set (FreeGroup α)) : Type u_1",
+   "module": "Mathlib.GroupTheory.PresentedGroup",
+   "line": 37,
+   "kind": "def",
+   "deprecated": null},
+  "Nat.totient":
+  {"signature": "Nat.totient (n : ℕ) : ℕ",
+   "module": "Mathlib.Data.Nat.Totient",
+   "line": 35,
    "kind": "def",
    "deprecated": null},
   "Nat.ModEq.pow_totient":
@@ -23266,12 +23337,39 @@
    "line": 260,
    "kind": "theorem",
    "deprecated": null},
+  "MulAction.selfEquivSigmaOrbitsQuotientStabilizer":
+  {"signature":
+   "MulAction.selfEquivSigmaOrbitsQuotientStabilizer.{u, v} (G : Type u) (X : Type v) [Group G]\n  [MulAction G X] : X ≃ (ω : Quotient (MulAction.orbitRel G X)) × G ⧸ MulAction.stabilizer G ω.out",
+   "module": "Mathlib.GroupTheory.GroupAction.Quotient",
+   "line": 226,
+   "kind": "def",
+   "deprecated": null},
   "MulAction.card_orbit_mul_card_stabilizer_eq_card_group":
   {"signature":
    "MulAction.card_orbit_mul_card_stabilizer_eq_card_group.{u, v} (G : Type u) {X : Type v} [Group G]\n  [MulAction G X] (b : X) [Fintype G] [Fintype ↑(MulAction.orbit G b)]\n  [Fintype ↥(MulAction.stabilizer G b)] :\n  Fintype.card ↑(MulAction.orbit G b) * Fintype.card ↥(MulAction.stabilizer G b) = Fintype.card G",
    "module": "Mathlib.GroupTheory.GroupAction.Quotient",
    "line": 181,
    "kind": "theorem",
+   "deprecated": null},
+  "MulAction":
+  {"signature":
+   "MulAction.{u_9, u_10} (α : Type u_9) (β : Type u_10) [Monoid α] : Type (max u_10 u_9)",
+   "module": "Mathlib.Algebra.Group.Action.Defs",
+   "line": 121,
+   "kind": "class",
+   "deprecated": null},
+  "MonoidHom":
+  {"signature":
+   "MonoidHom.{u_10, u_11} (M : Type u_10) (N : Type u_11) [MulOne M] [MulOne N] : Type (max u_10 u_11)",
+   "module": "Mathlib.Algebra.Group.Hom.Defs",
+   "line": 357,
+   "kind": "structure",
+   "deprecated": null},
+  "IsSimpleGroup":
+  {"signature": "IsSimpleGroup.{u_1} (G : Type u_1) [Group G] : Prop",
+   "module": "Mathlib.GroupTheory.Subgroup.Simple",
+   "line": 36,
+   "kind": "class",
    "deprecated": null},
   "IsPGroup.isNilpotent":
   {"signature":
@@ -23287,12 +23385,30 @@
    "line": 378,
    "kind": "theorem",
    "deprecated": null},
+  "IsCyclic":
+  {"signature": "IsCyclic.{u_2} (G : Type u_2) [Pow G ℤ] : Prop",
+   "module": "Mathlib.Algebra.Group.DivInvMonoid",
+   "line": 191,
+   "kind": "class",
+   "deprecated": null},
   "Int.ModEq.pow_card_sub_one_eq_one":
   {"signature":
    "Int.ModEq.pow_card_sub_one_eq_one {p : ℕ} (hp : Nat.Prime p) {n : ℤ} (hpn : IsCoprime n ↑p) :\n  n ^ (p - 1) ≡ 1 [ZMOD ↑p]",
    "module": "Mathlib.FieldTheory.Finite.Basic",
    "line": 607,
    "kind": "theorem",
+   "deprecated": null},
+  "Group.IsNilpotent":
+  {"signature": "Group.IsNilpotent.{u_2} (G : Type u_2) [Group G] : Prop",
+   "module": "Mathlib.GroupTheory.Nilpotent",
+   "line": 230,
+   "kind": "class",
+   "deprecated": null},
+  "Group":
+  {"signature": "Group.{u_2} (G : Type u_2) : Type u_2",
+   "module": "Mathlib.Algebra.Group.Defs",
+   "line": 25,
+   "kind": "class",
    "deprecated": null},
   "FreeGroup.lift":
   {"signature":
@@ -23301,12 +23417,24 @@
    "line": 661,
    "kind": "def",
    "deprecated": null},
+  "FreeGroup":
+  {"signature": "FreeGroup.{u} (α : Type u) : Type u",
+   "module": "Mathlib.GroupTheory.FreeGroup.Basic",
+   "line": 430,
+   "kind": "def",
+   "deprecated": null},
   "Equiv.Perm.subgroupOfMulAction":
   {"signature":
    "Equiv.Perm.subgroupOfMulAction.{u_1, u_2} (G : Type u_1) (H : Type u_2) [Group G] [MulAction G H]\n  [FaithfulSMul G H] : G ≃* ↥(MulAction.toPermHom G H).range",
    "module": "Mathlib.GroupTheory.Perm.Subgroup",
    "line": 68,
    "kind": "def",
+   "deprecated": null},
+  "Equiv.Perm":
+  {"signature": "Equiv.Perm.{u_1} (α : Sort u_1) : Sort (max 1 u_1)",
+   "module": "Mathlib.Logic.Equiv.Defs",
+   "line": 93,
+   "kind": "abbrev",
    "deprecated": null},
   "CommGroup.is_simple_iff_prime_card":
   {"signature":
@@ -23327,5 +23455,11 @@
    "Abelianization.lift.{u, v} {G : Type u} [Group G] {A : Type v} [Group A] [IsMulCommutative A] :\n  (G →* A) ≃ (Abelianization G →* A)",
    "module": "Mathlib.GroupTheory.Abelianization.Defs",
    "line": 80,
+   "kind": "def",
+   "deprecated": null},
+  "Abelianization":
+  {"signature": "Abelianization.{u} (G : Type u) [Group G] : Type u",
+   "module": "Mathlib.GroupTheory.Abelianization.Defs",
+   "line": 38,
    "kind": "def",
    "deprecated": null}}}
