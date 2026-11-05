@@ -497,10 +497,12 @@ def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = fro
         body += prose
         fields = [("declaration", default_kind(article)), ("origin", "cited"), ("mathlib", "true")]
         # autoform credits a Mathlib article to its declarations; a module's are its
-        # documented ones that no other article claims, in source order, the first
-        # MODULE_DECLARATIONS of them.
+        # documented ones that no other article claims and Mathlib does not deprecate,
+        # in source order, the first MODULE_DECLARATIONS of them.
         documented = (modules.get(module) or {}).get("decls") or []
-        declared = [name for name in documented if name not in claimed][:MODULE_DECLARATIONS]
+        cited = (sources.deps or {}).get("cited") or {}
+        declared = [name for name in documented
+                    if name not in claimed and not (cited.get(name) or {}).get("deprecated")][:MODULE_DECLARATIONS]
         if declared:
             fields.append(("mathlib_declaration", ", ".join(declared)))
             more = len(documented) - len(declared)
