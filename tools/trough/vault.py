@@ -62,6 +62,7 @@ class Container:
     navigation: str | None = None
     path: Path = Path()
     tail: str = ""  # Markdown after the last entry
+    article_id: str | None = None  # an authored page's, which wins over the one the page had
 
     @property
     def children(self) -> list[Leaf | Container]:
@@ -190,7 +191,8 @@ def render_container(node: Container, vault: Path, previous: str | None) -> str:
             lines.append(link(entry))
     if node.tail:
         lines += ["", node.tail.strip()]
-    fields = [("navigation", node.navigation)] if node.navigation else []
+    fields = ([("article_id", node.article_id)] if node.article_id else []) + (
+        [("navigation", node.navigation)] if node.navigation else [])
     return frontmatter(fields, previous) + "\n".join(lines).rstrip() + "\n"
 
 

@@ -10,7 +10,7 @@ mathlib_file: Mathlib/GroupTheory/Coset/Card.lean
 # Lagrange's theorem
 
 **Lagrange's theorem** says that in a finite [group](../part-01/group.md) the order (number of elements) of every
-[subgroup](../part-01/subgroup.md) divides the order of the group. It is one of the first structural results of
+[subgroup](../part-01/subgroup.md) divides the order of the group. It is a basic structural result of
 group theory: it places an arithmetic restriction on the possible orders of
 subgroups, and several classical facts, [Fermat's little theorem](../../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md) among them, follow from it in a line.
 
@@ -49,7 +49,7 @@ elements of $G$ coset by coset gives $|G| = [G : H]\,|H|$.
   [$a^{p-1} \equiv 1 \pmod p$ for every integer $a$ with $p \nmid a$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#Int.ModEq.pow_card_sub_one_eq_one).
 - **[Euler's theorem](../../../../hundred-theorems/part-01/eulers-generalization-of-fermats-little-theorem.md).** For $n \ge 1$, the units modulo $n$ form a group of order
   [$\varphi(n)$](../../divisibility-in-integral-domains/eulers-totient-function-varphi.md), the number of integers in $1, \dots, n$ coprime to $n$, so
-  [$a^{\varphi(n)} \equiv 1 \pmod n$ whenever $\gcd(a, n) = 1$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#Nat.ModEq.pow_totient).
+  [$a^{\varphi(n)} \equiv 1 \pmod n$ for every natural number $a$ with $\gcd(a, n) = 1$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#Nat.ModEq.pow_totient).
 - **Chains of subgroups.** If $H \le K \le G$, then
   [the order of $H$ divides the order of $K$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Coset/Card.html#Subgroup.card_dvd_of_le).
 
@@ -76,16 +76,15 @@ and [an element of infinite order has order $0$](https://leanprover-community.gi
 these conventions the counting formula, the divisibility of the order by the index
 and by element orders, and the statement about chains of subgroups hold for every
 group. The statement about groups of prime order needs no convention, since its
-hypothesis already makes the group finite. Mathlib's Cauchy and Sylow statements
-assume the group is finite.
+hypothesis already makes the group finite. Mathlib's statements of Cauchy's theorem
+and of the first Sylow theorem assume the group is finite.
+
+*Written for Trough, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## Depends on
 
 - [Group](../part-01/group.md)
 - [Subgroup](../part-01/subgroup.md)
-
-## Proof depends on
-
 - [Index of a subgroup](../part-01/index-of-a-subgroup.md)
 
 ## Sources

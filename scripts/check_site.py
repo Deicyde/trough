@@ -121,7 +121,7 @@ def main() -> int:
             issues.append(f"{page.relative_to(site)}: an article is shown as typed, so AutoformBot could not read "
                           "something in it, such as a lean: or trough: link generate.py left unresolved")
         for href in parse(page).hrefs:
-            if href.startswith(("lean:", "trough:")):
+            if href.lower().startswith(("lean:", "trough:")):
                 issues.append(f"{page.relative_to(site)}: {href!r} was never resolved (see tools/trough/wiki.py)")
                 continue
             resolved = resolve_link(page, href, site)

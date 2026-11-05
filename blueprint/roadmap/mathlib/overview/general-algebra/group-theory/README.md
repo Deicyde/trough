@@ -1,3 +1,7 @@
+---
+article_id: af_e620bc4c5ed6c6bf13b0d972
+---
+
 # Group theory
 
 **Group theory** is the study of [groups](part-01/group.md): sets with an associative
@@ -136,6 +140,8 @@ are more general than in textbooks: Cayley's theorem is stated for any
 faithful action, and the second and third Sylow theorems need only that there be
 finitely many Sylow subgroups, not that the group be finite. The first Sylow theorem is
 stated for every prime power dividing the order, not only the largest one.
+
+*Written for Trough, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## [Group to Nilpotent group](part-01/README.md)
 

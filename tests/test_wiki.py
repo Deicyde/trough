@@ -32,9 +32,9 @@ The section's own text, about [alpha](trough:A) and [the third](lean:C).
 """
 
 
-def concepts() -> dict:
+def concepts(statements: dict[str, list[str]] | None = None) -> dict:
     record = {"kind": "theorem", "line": 1, "doc": "Doc.", "signature": "theorem x : True", "statement": [], "proof": []}
-    return {name: dict(record, module=f"Mathlib.{name}") for name in "ABC"}
+    return {name: dict(record, module=f"Mathlib.{name}", statement=(statements or {}).get(name, [])) for name in "ABC"}
 
 
 def cited_records() -> dict:
@@ -44,7 +44,8 @@ def cited_records() -> dict:
     return {name: dict(record, module=module) for name, module in modules.items()}
 
 
-def fake_sources(cited: dict | None = None, unresolved: tuple[str, ...] = ()) -> mathlib.Sources:
+def fake_sources(cited: dict | None = None, unresolved: tuple[str, ...] = (),
+                 statements: dict[str, list[str]] | None = None) -> mathlib.Sources:
     lists = {
         "overview": [mathlib.Item("overview", key, ("Area", "Sub"), title, line, decls=(name,))
                      for line, (key, title, name) in enumerate([("a", "alpha", "A"), ("b", "beta", "B"),
@@ -53,7 +54,7 @@ def fake_sources(cited: dict | None = None, unresolved: tuple[str, ...] = ()) ->
         "100": [],
         "1000": [],
     }
-    deps = {"mathlib_rev": "r", "concepts": concepts(), "modules": {},
+    deps = {"mathlib_rev": "r", "concepts": concepts(statements), "modules": {},
             "cited": cited_records() if cited is None else cited, "unresolved": list(unresolved)}
     return mathlib.Sources("r", "", lists, deps, None)
 
@@ -70,6 +71,7 @@ def test_an_article_gives_its_concept_citations_and_prerequisites(tmp_path):
     assert (article.article_id, article.depends, article.proof_depends) == ("af_000000000000000000000001", ["C"], ["B"])
     assert "## Depends on" not in article.body and article.body.endswith("as [a lemma](<lean:A.«two words»>) says.")
     assert wiki.cited(articles) == ["A", "A.«two words»"]
+    assert wiki.cited(write(tmp_path, area=AREA)) == ["A", "A.«two words»", "C"]  # area pages' citations too
 
 
 def test_an_article_that_breaks_the_format_is_refused(tmp_path):
@@ -79,8 +81,14 @@ def test_an_article_that_breaks_the_format_is_refused(tmp_path):
     with pytest.raises(ValueError, match="not a"):
         write(tmp_path, alpha=ARTICLE.replace("- [Gamma](trough:C)", "Gamma, mostly."))
     (tmp_path / "alpha.md").unlink()
+    with pytest.raises(ValueError, match="not a"):  # a second prerequisite on the same line would be lost
+        write(tmp_path, alpha=ARTICLE.replace("- [Gamma](trough:C)", "- [Gamma](trough:C) and [Beta](trough:B)"))
+    (tmp_path / "alpha.md").unlink()
     with pytest.raises(ValueError, match="both about A"):
         write(tmp_path, alpha=ARTICLE, again=ARTICLE.replace("0001", "0003"))
+    (tmp_path / "again.md").unlink()
+    with pytest.raises(ValueError, match="share an article_id"):
+        write(tmp_path, alpha=ARTICLE, again=ARTICLE.replace("concept: A", "concept: B"))
 
 
 def test_an_authored_article_takes_the_place_of_the_generated_text(tmp_path):
@@ -99,6 +107,8 @@ def test_an_authored_article_takes_the_place_of_the_generated_text(tmp_path):
     assert alpha.depends == [gamma] and alpha.proof_depends == [beta] and not alpha.informal
     area = targets["area:Area/Sub"]
     assert area.prose.startswith("The section's own text, about [alpha](alpha.md)")
+    assert alpha.body.endswith(mathlib.WRITTEN) and area.prose.endswith(mathlib.WRITTEN)  # marked as CC BY-SA text
+    assert area.article_id == "af_000000000000000000000002"
     assert "mathlib4_docs/Mathlib/C.html#C" in area.prose
     render_tree(root, Path("blueprint"))  # the vault writer takes the authored pages
 
@@ -133,6 +143,36 @@ def test_an_article_about_no_concept_or_naming_none_stops_the_chapter(tmp_path):
         mathlib.chapter(fake_sources(), write(tmp_path, area=AREA.replace("area:Area/Sub", "area:Area/None")))
 
 
+def test_an_area_whose_heading_holds_a_slash_gets_its_text(tmp_path):
+    sources = fake_sources()
+    for item in sources.lists["overview"]:
+        item.path = ("Area", "Normed spaces/Banach spaces")
+    authored = write(tmp_path, area=AREA.replace("area:Area/Sub", "area:Area/Normed spaces/Banach spaces"))
+    _, _, targets = mathlib.chapter(sources, authored)
+    assert targets["area:Area/Normed spaces/Banach spaces"].prose.startswith("The section's own text")
+
+
+def test_an_authored_articles_own_prerequisites_reshape_the_graph_around_it(tmp_path):
+    """Lean says B uses A and C, and A uses C, so B's page shows only A. With an article for A
+    that lists no prerequisites, A no longer leads to C, and B's page shows C again."""
+    bare = ARTICLE.split("\n## Depends on")[0] + "\n"
+    sources = fake_sources(statements={"B": ["A", "C"], "A": ["C"]})
+    _, _, targets = mathlib.chapter(sources, {})
+    assert [leaf.title for leaf in targets["B"].depends] == ["Alpha"]
+    _, stats, targets = mathlib.chapter(sources, write(tmp_path, alpha=bare))
+    assert [leaf.title for leaf in targets["B"].depends] == ["Alpha", "Gamma"] and targets["A"].depends == []
+    assert (stats["lean_statement"], stats["authored_statement"]) == (1, 0)
+
+
+def test_an_authored_article_drops_its_concepts_informal_edges(tmp_path):
+    sources = fake_sources(statements={"A": ["B"], "B": ["A"]})  # merged, Lean's edges close a cycle
+    _, stats, targets = mathlib.chapter(sources, {})
+    assert [leaf.title for leaf in targets["B"].informal] == ["Alpha"] and stats["informal"] == 1
+    beta = ARTICLE.replace("concept: A", "concept: B").replace("(trough:B)", "(trough:C)").split("\n## Depends on")[0]
+    _, stats, targets = mathlib.chapter(sources, write(tmp_path, beta=beta + "\n"))
+    assert targets["B"].informal == [] and stats["informal"] == 0
+
+
 def test_prerequisites_that_close_a_cycle_stop_the_chapter(tmp_path):
     beta = ARTICLE.replace("concept: A", "concept: B").replace("0001", "0004").replace("(trough:B)", "(trough:A)")
     beta = beta.replace("- [Gamma](trough:C)", "- [Alpha](trough:A)")
@@ -162,9 +202,16 @@ def test_link_words_join_onto_one_line_and_reference_definitions_are_refused(tmp
     wrapped = ARTICLE.replace("[beta](trough:B)", "[the\nsecond $[G :\n H]$ thing](trough:B)")
     articles = write(tmp_path, alpha=wrapped)
     assert "[the second $[G : H]$ thing](trough:B)" in articles["A"].body
+    # A half-open interval leaves the brackets unbalanced; the link's words still join, and nothing before them.
+    interval = ARTICLE.replace("[beta](trough:B)", "[the interval $(0,\n1]$](trough:B)")
+    body = write(tmp_path, alpha="\n\n## Notes\n\nA list:\n\n- one\n- two\n\n".join(interval.split("\n\n", 1)))["A"].body
+    assert body.startswith("## Notes\n\nA list:\n\n- one\n- two\n\n**Alpha**")
+    assert "[the interval $(0, 1]$](trough:B)" in body
     (tmp_path / "alpha.md").unlink()
-    with pytest.raises(ValueError, match="reference-style"):
-        write(tmp_path, alpha=ARTICLE + "\n[beta]: trough:B\n")
+    for definition in ("[beta]: trough:B", "[beta]: Lean:A", "  [beta]: < lean:A>"):
+        with pytest.raises(ValueError, match="reference-style"):
+            write(tmp_path, alpha=ARTICLE + f"\n{definition}\n")
+        (tmp_path / "alpha.md").unlink()
 
 
 @pytest.mark.parametrize("link", ['[x](lean:A "a title")', "[x](LEAN:A)", "[x]( lean:A)", "[x](<lean:A> 'a title')",

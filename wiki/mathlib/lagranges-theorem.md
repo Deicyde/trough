@@ -4,7 +4,7 @@ concept: Subgroup.card_subgroup_dvd_card
 ---
 
 **Lagrange's theorem** says that in a finite [group](trough:Group) the order (number of elements) of every
-[subgroup](trough:Subgroup) divides the order of the group. It is one of the first structural results of
+[subgroup](trough:Subgroup) divides the order of the group. It is a basic structural result of
 group theory: it places an arithmetic restriction on the possible orders of
 subgroups, and several classical facts, [Fermat's little
 theorem](trough:ZMod.pow_card_sub_one_eq_one) among them, follow from it in a line.
@@ -44,7 +44,7 @@ elements of $G$ coset by coset gives $|G| = [G : H]\,|H|$.
   [$a^{p-1} \equiv 1 \pmod p$ for every integer $a$ with $p \nmid a$](lean:Int.ModEq.pow_card_sub_one_eq_one).
 - **[Euler's theorem](trough:Nat.ModEq.pow_totient).** For $n \ge 1$, the units modulo $n$ form a group of order
   [$\varphi(n)$](trough:Nat.totient), the number of integers in $1, \dots, n$ coprime to $n$, so
-  [$a^{\varphi(n)} \equiv 1 \pmod n$ whenever $\gcd(a, n) = 1$](lean:Nat.ModEq.pow_totient).
+  [$a^{\varphi(n)} \equiv 1 \pmod n$ for every natural number $a$ with $\gcd(a, n) = 1$](lean:Nat.ModEq.pow_totient).
 - **Chains of subgroups.** If $H \le K \le G$, then
   [the order of $H$ divides the order of $K$](lean:Subgroup.card_dvd_of_le).
 
@@ -71,14 +71,11 @@ and [an element of infinite order has order $0$](lean:orderOf_eq_zero_iff). With
 these conventions the counting formula, the divisibility of the order by the index
 and by element orders, and the statement about chains of subgroups hold for every
 group. The statement about groups of prime order needs no convention, since its
-hypothesis already makes the group finite. Mathlib's Cauchy and Sylow statements
-assume the group is finite.
+hypothesis already makes the group finite. Mathlib's statements of Cauchy's theorem
+and of the first Sylow theorem assume the group is finite.
 
 ## Depends on
 
 - [Group](trough:Group)
 - [Subgroup](trough:Subgroup)
-
-## Proof depends on
-
 - [Index of a subgroup](trough:Subgroup.index)
