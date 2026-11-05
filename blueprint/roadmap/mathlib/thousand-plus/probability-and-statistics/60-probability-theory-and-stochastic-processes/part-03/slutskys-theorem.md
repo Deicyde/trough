@@ -43,7 +43,6 @@ MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_c
 - [Measurable function](../../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 - [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
-- [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

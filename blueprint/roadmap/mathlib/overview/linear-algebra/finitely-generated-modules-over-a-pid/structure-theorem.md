@@ -36,7 +36,6 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 - [Direct sum](../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
 - [Isomorphism](../../general-algebra/category-theory/isomorphism.md)
 - [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Limits](../../general-algebra/category-theory/limits.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Localization](../../general-algebra/rings/localization.md)
 - [Maximal ideal](../../general-algebra/ideals-and-quotients/maximal-ideal.md)

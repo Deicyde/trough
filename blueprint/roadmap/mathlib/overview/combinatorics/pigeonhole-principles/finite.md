@@ -20,7 +20,6 @@ Fintype.exists_ne_map_eq_of_card_lt.{u_1, u_2} {α : Type u_1} {β : Type u_2} [
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

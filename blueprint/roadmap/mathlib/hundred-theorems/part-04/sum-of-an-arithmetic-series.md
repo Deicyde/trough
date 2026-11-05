@@ -19,10 +19,6 @@ Finset.sum_range_id (n : ℕ) : ∑ i ∈ Finset.range n, i = n * (n - 1) / 2
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 
-## Proof depends on
-
-- [Set](../../overview/data-structures/sets/set.md)
-
 ## Sources
 
 - [Mathlib documentation: `Finset.sum_range_id`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/BigOperators/Intervals.html#Finset.sum_range_id)

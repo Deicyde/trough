@@ -25,7 +25,6 @@ StieltjesFunction.measure.{u_1} {R : Type u_1} [LinearOrder R] [TopologicalSpace
 - [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Order topology](../../../topology/topological-algebra/order-topology.md)
 - [Positive measure](positive-measure.md)
-- [Uniform space](../../../topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

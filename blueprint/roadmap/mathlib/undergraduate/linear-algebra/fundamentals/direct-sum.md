@@ -24,7 +24,6 @@ DirectSum.IsInternal.{v, u_1, u_2} {ι : Type v} {M : Type u_1} {S : Type u_2} [
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

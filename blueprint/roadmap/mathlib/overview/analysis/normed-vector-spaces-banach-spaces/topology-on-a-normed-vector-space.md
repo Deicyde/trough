@@ -20,7 +20,6 @@ NormSMulClass.toIsBoundedSMul.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Semino
 - [Bornology](../topological-vector-spaces/bornology.md)
 - [Module](../../linear-algebra/fundamentals/module.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

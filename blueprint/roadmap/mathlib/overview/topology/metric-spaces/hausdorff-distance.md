@@ -18,7 +18,6 @@ Metric.hausdorffEDist.{u} {α : Type u} [PseudoEMetricSpace α] (s t : Set α) :
 ## Depends on
 
 - [Real number](../../general-algebra/numbers/real-number.md)
-- [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources
 

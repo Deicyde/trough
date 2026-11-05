@@ -54,7 +54,6 @@ MeasureTheory.tendsto_lintegral_nn_filter_of_le_const.{u_1, u_2} {Ω : Type u_1}
 - [Continuous function](../../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Integral of positive measurable functions](../../../../overview/analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
 - [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

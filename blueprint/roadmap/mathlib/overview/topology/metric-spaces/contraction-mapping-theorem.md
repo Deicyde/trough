@@ -31,7 +31,6 @@ ContractingWith.exists_fixedPoint.{u_1} {α : Type u_1} [EMetricSpace α] {K : N
 
 ## Proof depends on
 
-- [Cauchy sequence](../uniform-notions/cauchy-sequence.md)
 - [Hausdorff space](../general-topology/part-01/hausdorff-space.md)
 - [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
 

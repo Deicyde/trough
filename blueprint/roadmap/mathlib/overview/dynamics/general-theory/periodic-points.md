@@ -17,7 +17,6 @@ Function.periodicPts.{u_1} {α : Type u_1} (f : α → α) : Set α
 ## Depends on
 
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

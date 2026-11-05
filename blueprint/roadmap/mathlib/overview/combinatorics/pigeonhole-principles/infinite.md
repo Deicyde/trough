@@ -23,7 +23,6 @@ Finite.exists_infinite_fiber.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Infinit
 ## Depends on
 
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
 

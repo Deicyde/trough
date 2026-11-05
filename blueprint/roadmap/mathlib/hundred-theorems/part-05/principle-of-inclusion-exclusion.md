@@ -59,7 +59,6 @@ Finset.inclusion_exclusion_card_inf_compl.{u_1, u_2} {ι : Type u_1} {α : Type 
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Integer](../../overview/general-algebra/numbers/integer.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

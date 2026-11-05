@@ -19,7 +19,6 @@ hasSum_zeta_two : HasSum (fun n => 1 / ↑n ^ 2) (Real.pi ^ 2 / 6)
 - [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Cos (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
-- [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

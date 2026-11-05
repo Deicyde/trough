@@ -26,9 +26,9 @@ exists_norm_eq_iInf_of_complete_convex.{u_3} {F : Type u_3} [NormedAddCommGroup 
 
 ## Proof depends on
 
-- [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Continuity of monotone functions](../../single-variable-real-analysis/real-valued-functions-defined-on-a-subset-of-r/continuity-of-monotone-functions.md)
+- [Field $\Q$ of rational numbers](../../ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Limits of sequences](../topology-and-metric-spaces/limits-of-sequences.md)
 - [Metric structure](../../single-variable-real-analysis/topology-of-r/metric-structure.md)

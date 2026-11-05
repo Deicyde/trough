@@ -32,7 +32,6 @@ MetricSpace.{u} (α : Type u) : Type u
 
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources
 

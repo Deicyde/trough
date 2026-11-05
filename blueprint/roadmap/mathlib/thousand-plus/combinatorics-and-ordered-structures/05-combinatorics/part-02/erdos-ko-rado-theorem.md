@@ -22,7 +22,6 @@ Finset.erdos_ko_rado {n : ℕ} {𝒜 : Finset (Finset (Fin n))} {r : ℕ} (h𝒜
 
 - [Finite set](../../../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

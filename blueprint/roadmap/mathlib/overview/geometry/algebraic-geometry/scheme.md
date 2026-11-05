@@ -21,12 +21,13 @@ AlgebraicGeometry.Scheme.{u_1} : Type (u_1 + 1)
 ## Depends on
 
 - [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
+- [Grothendieck topology](../../general-algebra/category-theory/grothendieck-topology.md)
 - [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 - [Isomorphism](../../general-algebra/category-theory/isomorphism.md)
 - [Locally ringed space](locally-ringed-space.md)
 - [Open map](../../topology/general-topology/part-01/open-map.md)
+- [Yoneda embedding](../../general-algebra/category-theory/yoneda-embedding.md)
 - [Zariski topology](zariski-topology.md)
 
 ## Sources

@@ -21,10 +21,6 @@ Finset.pluennecke_petridis_inequality_add.{u_1} {G : Type u_1} [DecidableEq G] [
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 
-## Proof depends on
-
-- [Set](../../data-structures/sets/set.md)
-
 ## Sources
 
 - [Mathlib documentation: `Finset.pluennecke_petridis_inequality_add`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/PluenneckeRuzsa.html#Finset.pluennecke_petridis_inequality_add)

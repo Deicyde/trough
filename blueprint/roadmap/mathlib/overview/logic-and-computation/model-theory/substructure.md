@@ -18,7 +18,6 @@ FirstOrder.Language.Substructure.{u, v, w} (L : FirstOrder.Language) (M : Type w
 ## Depends on
 
 - [First-order structure](first-order-structure.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

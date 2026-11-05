@@ -30,11 +30,9 @@ The 1000+ list (Q536640) also cites `SimpleGraph.exists_isPerfectMatching_of_for
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
 
-- [Functor](../../general-algebra/category-theory/functor.md)
 - [Small category](../../general-algebra/category-theory/small-category.md)
 
 ## Sources

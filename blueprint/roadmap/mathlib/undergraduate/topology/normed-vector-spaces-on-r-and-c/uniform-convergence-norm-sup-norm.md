@@ -19,7 +19,6 @@ EMetric.tendstoUniformlyOn_iff.{u, v, u_2} {γ : Type u} {β : Type v} [PseudoEM
 ## Depends on
 
 - [Real number](../../../overview/general-algebra/numbers/real-number.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

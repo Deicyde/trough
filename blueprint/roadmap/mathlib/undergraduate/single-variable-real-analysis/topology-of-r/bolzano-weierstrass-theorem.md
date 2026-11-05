@@ -23,7 +23,6 @@ tendsto_subseq_of_bounded.{u_1} {X : Type u_1} [PseudoMetricSpace X] [ProperSpac
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Order (Real numbers)](../real-numbers/order.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

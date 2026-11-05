@@ -27,7 +27,6 @@ BoundedContinuousFunction.arzela_ascoli.{u, v} {α : Type u} {β : Type v} [Topo
 - [Continuous function](../general-topology/part-01/continuous-function.md)
 - [Hausdorff space](../general-topology/part-01/hausdorff-space.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

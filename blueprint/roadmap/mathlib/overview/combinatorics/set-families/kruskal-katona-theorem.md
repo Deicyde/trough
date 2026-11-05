@@ -23,7 +23,6 @@ Finset.kruskal_katona {n r : ℕ} {𝒜 𝒞 : Finset (Finset (Fin n))} (h𝒜r 
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

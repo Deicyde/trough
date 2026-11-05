@@ -19,7 +19,6 @@ Finsupp.{u_8, u_9} (α : Type u_8) (M : Type u_9) [Zero M] : Type (max u_8 u_9)
 
 - [Finite set](../sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../sets/set.md)
 
 ## Sources
 

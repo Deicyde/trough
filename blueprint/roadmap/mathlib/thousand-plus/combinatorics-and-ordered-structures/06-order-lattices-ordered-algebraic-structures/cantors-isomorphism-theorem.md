@@ -24,7 +24,6 @@ Order.iso_of_countable_dense.{u_1, u_2} (α : Type u_1) (β : Type u_2) [LinearO
 ## Proof depends on
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

@@ -21,7 +21,6 @@ Finset.sum_pow_eq_sum_piAntidiag_of_commute.{u_1, u_2} {α : Type u_1} {R : Type
 
 - [Finite set](../../../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

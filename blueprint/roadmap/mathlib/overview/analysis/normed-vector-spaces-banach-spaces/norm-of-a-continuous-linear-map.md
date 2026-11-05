@@ -24,7 +24,6 @@ LinearMap.mkContinuous.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {𝕜₂ : Type u_
 - [Bornology](../topological-vector-spaces/bornology.md)
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

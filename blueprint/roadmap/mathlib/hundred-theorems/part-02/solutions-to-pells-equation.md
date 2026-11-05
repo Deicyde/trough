@@ -32,13 +32,13 @@ The 1000+ list (Q853067): In `pell.eq_pell`, `d` is defined to be `a*a - 1` for 
 
 ## Depends on
 
-- [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Solutions to Pell's equation (Number theory)](../../overview/general-algebra/number-theory/solutions-to-pells-equation.md)
 
 ## Proof depends on
 
 - [Dirichlet's approximation theorem](../../thousand-plus/number-theory/part-02/dirichlets-approximation-theorem.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 
 ## Sources
 

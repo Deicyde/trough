@@ -18,7 +18,6 @@ norm_add_le.{u_4} {E : Type u_4} [SeminormedAddGroup E] (a b : E) : ‖a + b‖ 
 
 - [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

@@ -30,7 +30,6 @@ MeasureTheory.tendstoUniformlyOn_of_ae_tendsto.{u_1, u_2, u_3} {α : Type u_1} {
 
 - [Almost sure convergence](../../../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
 - [Positive measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
-- [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

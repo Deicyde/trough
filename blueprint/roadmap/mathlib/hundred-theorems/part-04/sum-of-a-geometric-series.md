@@ -37,7 +37,6 @@ NNReal.hasSum_geometric {r : NNReal} (hr : r < 1) : HasSum (fun n => r ^ n) (1 -
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
-- [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

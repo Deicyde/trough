@@ -34,7 +34,6 @@ Nat.infinite_setOfPred_prime_and_eq_mod {q : ℕ} [NeZero q] {a : ZMod q} (ha : 
 - [Extended real number](../../overview/general-algebra/numbers/extended-real-number.md)
 - [Fundamental theorem of algebra](../../overview/analysis/complex-analysis/fundamental-theorem-of-algebra.md)
 - [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 - [Separable polynomial](../../overview/general-algebra/polynomials-and-power-series/separable-polynomial.md)
 
 ## Sources

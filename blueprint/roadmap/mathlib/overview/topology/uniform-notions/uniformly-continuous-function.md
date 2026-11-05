@@ -20,7 +20,6 @@ Metric.uniformContinuous_iff.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpa
 
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](uniform-space.md)
 
 ## Proof depends on
 

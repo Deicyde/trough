@@ -24,7 +24,6 @@ Ordinal.epsilon.{u_1} : Ordinal.{u_1} → Ordinal.{u_1}
 - [List](../../../data-structures/list-like-structures/list.md)
 - [Natural number](../../../general-algebra/numbers/natural-number.md)
 - [Ordinal](ordinal.md)
-- [Set](../../../data-structures/sets/set.md)
 
 ## Sources
 

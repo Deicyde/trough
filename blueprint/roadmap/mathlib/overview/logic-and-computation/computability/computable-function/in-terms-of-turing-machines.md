@@ -18,7 +18,6 @@ Turing.TM2Computable {α β αΓ βΓ : Type} (ea : α → List αΓ) (eb : β �
 
 - [Finite set](../../../data-structures/sets/finite-set.md)
 - [Natural number](../../../general-algebra/numbers/natural-number.md)
-- [Set](../../../data-structures/sets/set.md)
 
 ## Sources
 

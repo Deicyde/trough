@@ -27,7 +27,6 @@ MeasureTheory.Measure.haarMeasure.{u_1} {G : Type u_1} [Group G] [TopologicalSpa
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Positive measure](../../analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 - [Topological group](topological-group.md)
-- [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources
 

@@ -26,7 +26,6 @@ MeasureTheory.SimpleFunc.tendsto_approxOn.{u_1, u_2} {α : Type u_1} {β : Type 
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Real number](../../../overview/general-algebra/numbers/real-number.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

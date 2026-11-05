@@ -19,7 +19,6 @@ Hindman.FP_partition_regular.{u_1} {M : Type u_1} [Semigroup M] (a : Stream' M) 
 
 ## Depends on
 
-- [Set](../../../../overview/data-structures/sets/set.md)
 - [Stream](../../../../overview/data-structures/list-like-structures/stream.md)
 
 ## Proof depends on

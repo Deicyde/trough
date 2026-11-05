@@ -19,7 +19,6 @@ AhlswedeZhang.infSum_eq_one.{u_1} {α : Type u_1} [Fintype α] [DecidableEq α] 
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Rational number](../../general-algebra/numbers/rational-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
 

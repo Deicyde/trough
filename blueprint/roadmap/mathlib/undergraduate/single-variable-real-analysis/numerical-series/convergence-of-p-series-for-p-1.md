@@ -20,7 +20,6 @@ Real.summable_one_div_nat_rpow {p : ℝ} : (Summable fun n => 1 / ↑n ^ p) ↔ 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Order (Real numbers)](../real-numbers/order.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

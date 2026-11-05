@@ -22,13 +22,13 @@ ProbabilityTheory.tendsto_choose_mul_pow_of_tendsto_mul_atTop {p : ℕ → ℝ} 
 
 - [Bornology](../../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Exponential](../../../../overview/analysis/special-functions/exponential.md)
-- [Uniform space](../../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness](../../../../overview/topology/uniform-notions/completeness.md)
+- [Field $\Q$ of rational numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 - [The Binomial Theorem](../../../../hundred-theorems/part-03/the-binomial-theorem.md)

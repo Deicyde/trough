@@ -25,6 +25,7 @@ CategoryTheory.Abelian.freyd_mitchell.{v, u} (C : Type u) [CategoryTheory.Catego
 
 - [Abelian category](../../../overview/general-algebra/category-theory/abelian-category.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Small category](../../../overview/general-algebra/category-theory/small-category.md)
 - [The category of modules over a ring](../../../overview/linear-algebra/fundamentals/the-category-of-modules-over-a-ring.md)
 
 ## Proof depends on

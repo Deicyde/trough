@@ -28,7 +28,6 @@ Theorems100.erdos_szekeres.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Fintype �
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources
 
