@@ -115,7 +115,8 @@ def main() -> int:
     parser.add_argument("--concepts", type=Path, help="write the listed declaration names here and stop")
     parser.add_argument("--modules", type=Path, help="write the listed module names here and stop")
     parser.add_argument("--cited", type=Path,
-                        help="write the names the wiki's articles cite or are keyed on here and stop")
+                        help="write the names the wiki's articles cite or are keyed on, and those blueprints "
+                             "credit to Mathlib, here and stop")
     parser.add_argument("--follow-pin", action="store_true",
                         help="rewrite the wiki's articles for the data's Mathlib pin and stop")
     args = parser.parse_args()
@@ -131,7 +132,11 @@ def main() -> int:
         # Keys too, so the dump says what replaces a concept's declaration when Mathlib renames it.
         keys = {key for article in articles.values()
                 for key in [article.concept, *article.depends, *article.proof_depends, *wiki.linked(article)]}
-        names = sorted(set(wiki.cited(articles)) | {key for key in keys if not re.match(r"[^.:]*:", key)})
+        # And the names a blueprint page credits to Mathlib, so each of those has a record too.
+        libraries = catalog.load(ROOT / "catalog" / "libraries.toml")
+        credited = {name for project in blueprints.load_projects(DATA, libraries)
+                    for node in blueprints.load_blueprint(project).graph if node.mathlibok for name in node.lean}
+        names = sorted(set(wiki.cited(articles)) | credited | {key for key in keys if not re.match(r"[^.:]*:", key)})
         args.cited.write_text("".join(f"{name}\n" for name in names), encoding="utf-8")
     if args.concepts or args.modules:
         # Listing needs only the lists: the dump may be of the previous pin.
