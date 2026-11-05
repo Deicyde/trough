@@ -2,7 +2,7 @@
 declaration: theorem
 origin: cited
 mathlib: true
-mathlib_declaration: Real.geom_mean_le_arith_mean, Real.geom_mean_eq_arith_mean_weighted_iff_of_pos', Real.geom_mean_eq_arith_mean_weighted_iff', Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_eq_arith_mean_weighted_iff, Real.geom_mean_eq_arith_mean_weighted_iff_of_pos, Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg, Real.geom_mean_lt_arith_mean_weighted_iff_of_pos', Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_lt_arith_mean_weighted_iff_of_pos, Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg, NNReal.geom_mean_le_arith_mean_weighted
+mathlib_declaration: Real.geom_mean_le_arith_mean, Real.geom_mean_eq_arith_mean_weighted_iff_of_pos', Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_eq_arith_mean_weighted_iff_of_pos, Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg, Real.geom_mean_lt_arith_mean_weighted_iff_of_pos', Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_lt_arith_mean_weighted_iff_of_pos, Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg, NNReal.geom_mean_le_arith_mean_weighted, NNReal.geom_mean_le_arith_mean2_weighted, ENNReal.geom_mean_le_arith_mean_weighted
 mathlib_file: Mathlib/Analysis/MeanInequalities.lean
 ---
 
@@ -15,7 +15,7 @@ integrals of some of these inequalities are available in
 
 Mathlib covers this with the module `Mathlib.Analysis.MeanInequalities` rather than a single declaration.
 
-Its 58 documented declarations include `Real.geom_mean_le_arith_mean`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_pos'`, `Real.geom_mean_eq_arith_mean_weighted_iff'`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg'`, `Real.geom_mean_eq_arith_mean_weighted_iff`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_pos`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_pos'`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg'`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_pos`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg`, `NNReal.geom_mean_le_arith_mean_weighted`, and 46 more.
+Its 58 documented declarations include `Real.geom_mean_le_arith_mean`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_pos'`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg'`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_pos`, `Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_pos'`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg'`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_pos`, `Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg`, `NNReal.geom_mean_le_arith_mean_weighted`, `NNReal.geom_mean_le_arith_mean2_weighted`, `ENNReal.geom_mean_le_arith_mean_weighted`, and 46 more.
 
 ## Depends on
 

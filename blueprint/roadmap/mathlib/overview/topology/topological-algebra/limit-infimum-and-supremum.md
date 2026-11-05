@@ -2,7 +2,7 @@
 declaration: definition
 origin: cited
 mathlib: true
-mathlib_declaration: Filter.limsSup, Filter.limsInf, Filter.limsup, Filter.liminf, Filter.blimsup, Filter.bliminf, Filter.limsInf_principal_eq_csSup, Filter.limsup_const_bot, Filter.liminf_const_top, Filter.limsup_eq_iInf_iSup, Filter.liminf_eq_iSup_iInf, CompleteLatticeHom.apply_limsup_iterate
+mathlib_declaration: Filter.limsSup, Filter.limsInf, Filter.limsup, Filter.liminf, Filter.blimsup, Filter.bliminf, Filter.limsup_const_bot, Filter.liminf_const_top, Filter.limsup_eq_iInf_iSup, Filter.liminf_eq_iSup_iInf, CompleteLatticeHom.apply_limsup_iterate, CompleteLatticeHom.apply_liminf_iterate
 mathlib_file: Mathlib/Order/LiminfLimsup.lean
 ---
 
@@ -13,7 +13,7 @@ respect to an arbitrary filter.
 
 Mathlib covers this with the module `Mathlib.Order.LiminfLimsup` rather than a single declaration.
 
-Its 34 documented declarations include `Filter.limsSup`, `Filter.limsInf`, `Filter.limsup`, `Filter.liminf`, `Filter.blimsup`, `Filter.bliminf`, `Filter.limsInf_principal_eq_csSup`, `Filter.limsup_const_bot`, `Filter.liminf_const_top`, `Filter.limsup_eq_iInf_iSup`, `Filter.liminf_eq_iSup_iInf`, `CompleteLatticeHom.apply_limsup_iterate`, and 22 more.
+Its 34 documented declarations include `Filter.limsSup`, `Filter.limsInf`, `Filter.limsup`, `Filter.liminf`, `Filter.blimsup`, `Filter.bliminf`, `Filter.limsup_const_bot`, `Filter.liminf_const_top`, `Filter.limsup_eq_iInf_iSup`, `Filter.liminf_eq_iSup_iInf`, `CompleteLatticeHom.apply_limsup_iterate`, `CompleteLatticeHom.apply_liminf_iterate`, and 22 more.
 
 ## Depends on
 
