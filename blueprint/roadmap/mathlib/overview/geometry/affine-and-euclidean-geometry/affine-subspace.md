@@ -21,7 +21,6 @@ AffineSubspace.{u_1, u_2, u_3} (k : Type u_1) {V : Type u_2} (P : Type u_3) [Rin
 - [Affine space](affine-space.md)
 - [Module](../../linear-algebra/fundamentals/module.md)
 - [Ring](../../general-algebra/rings/ring.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

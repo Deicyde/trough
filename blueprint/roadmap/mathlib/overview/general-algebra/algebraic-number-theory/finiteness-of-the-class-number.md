@@ -34,6 +34,7 @@ NumberField.RingOfIntegers.instFintypeClassGroup.{u_1} (K : Type u_1) [Field K] 
 - [Minimal polynomial](../../linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
 - [Noetherian module](../../linear-algebra/fundamentals/noetherian-module.md)
 - [Nondegenerate forms](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/bilinear-forms/nondegenerate-forms.md)
+- [Orbit](../../../undergraduate/group-theory/basic-definitions/orbit.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Prime ideal](../ideals-and-quotients/prime-ideal.md)
 - [Quotient group](../group-theory/part-01/quotient-group.md)

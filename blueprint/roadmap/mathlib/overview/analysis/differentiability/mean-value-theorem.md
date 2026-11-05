@@ -30,7 +30,6 @@ exists_ratio_deriv_eq_ratio_slope (f : ℝ → ℝ) {a b : ℝ} (hab : a < b)
 - [Differentiable function between normed vector spaces](differentiable-function-between-normed-vector-sp.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources

@@ -26,7 +26,6 @@ InnerProductSpace.{u_4, u_5} (𝕜 : Type u_4) (E : Type u_5) [RCLike 𝕜] [Sem
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Normed vector space over a normed field](../normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Sources
 

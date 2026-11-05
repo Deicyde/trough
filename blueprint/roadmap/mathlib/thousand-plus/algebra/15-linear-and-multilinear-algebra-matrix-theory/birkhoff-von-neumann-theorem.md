@@ -25,7 +25,6 @@ doublyStochastic_eq_convexHull_permMatrix.{u_1, u_2} {R : Type u_1} {n : Type u_
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Ring-valued matrix](../../../overview/linear-algebra/matrices/ring-valued-matrix.md)
 
 ## Proof depends on

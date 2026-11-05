@@ -29,7 +29,6 @@ CovariantDerivative.{u_1, u_2, u_3, u_4, u_5, u_6} {𝕜 : Type u_1} [Nontrivial
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
 - [Convex subsets](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Normed vector space over a normed field](../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Topological fiber bundle](../../topology/general-topology/part-01/topological-fiber-bundle.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 

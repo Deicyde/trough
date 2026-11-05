@@ -20,7 +20,6 @@ LinearMap.ker.{u_1, u_2, u_5, u_6} {R : Type u_1} {R₂ : Type u_2} {M : Type u_
 ## Depends on
 
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

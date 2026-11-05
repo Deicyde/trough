@@ -22,7 +22,6 @@ ZMod.wilsons_lemma (p : ℕ) [Fact (Nat.Prime p)] : ↑(p - 1).factorial = -1
 ## Proof depends on
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
 - [Group morphism](../../overview/general-algebra/group-theory/part-01/group-morphism.md)
 - [Set](../../overview/data-structures/sets/set.md)
 

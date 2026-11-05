@@ -21,7 +21,6 @@ MonoidAlgebra.Submodule.exists_isCompl.{u_1, u_2, u_3} {k : Type u_1} [Field k] 
 - [Cardinal](../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Finitely supported function](../../../overview/data-structures/maps/finitely-supported-function.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Ring morphism](../../../overview/general-algebra/rings/ring-morphism.md)
 - [Sum of subspaces](../../linear-algebra/fundamentals/sum-of-subspaces.md)
 

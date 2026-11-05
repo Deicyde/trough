@@ -24,7 +24,6 @@ FractionalIdeal.{u_1, u_2} {R : Type u_1} [CommRing R] (S : Submonoid R) (P : Ty
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Module](../../linear-algebra/fundamentals/module.md)
 - [Ring](../rings/ring.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

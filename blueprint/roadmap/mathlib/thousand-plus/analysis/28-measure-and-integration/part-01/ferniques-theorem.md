@@ -27,7 +27,6 @@ ProbabilityTheory.IsGaussian.exists_integrable_exp_sq.{u_1} {E : Type u_1} [Norm
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Fubini's theorem](../../../../overview/analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
-- [Group](../../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Probability measure](../../../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 - [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [The Binomial Theorem](../../../../hundred-theorems/part-03/the-binomial-theorem.md)

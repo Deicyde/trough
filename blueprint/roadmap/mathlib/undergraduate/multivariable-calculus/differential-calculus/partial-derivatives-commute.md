@@ -25,7 +25,6 @@ second_derivative_symmetric.{u_1, u_2, u_3} {𝕜 : Type u_1} [NontriviallyNorme
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 

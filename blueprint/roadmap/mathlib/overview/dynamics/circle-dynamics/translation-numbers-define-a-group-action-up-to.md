@@ -25,7 +25,6 @@ CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq.{u_1} {G 
 
 ## Depends on
 
-- [Group](../../general-algebra/group-theory/part-01/group.md)
 - [Group morphism](../../general-algebra/group-theory/part-01/group-morphism.md)
 - [Translation number](translation-number.md)
 
@@ -38,7 +37,6 @@ CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq.{u_1} {G 
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Module](../../linear-algebra/fundamentals/module.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)

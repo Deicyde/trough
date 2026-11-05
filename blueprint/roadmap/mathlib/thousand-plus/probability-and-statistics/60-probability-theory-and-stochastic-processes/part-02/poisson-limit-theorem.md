@@ -31,7 +31,6 @@ ProbabilityTheory.tendsto_choose_mul_pow_of_tendsto_mul_atTop {p : ℕ → ℝ} 
 - [Completeness](../../../../overview/topology/uniform-notions/completeness.md)
 - [Normed vector space over a normed field](../../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [The Binomial Theorem](../../../../hundred-theorems/part-03/the-binomial-theorem.md)
 - [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 - [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)

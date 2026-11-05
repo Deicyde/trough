@@ -56,7 +56,6 @@ The wikipedia page is really vague; it's not clear what is meant here. While mat
 - [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Exponential](../../../overview/analysis/special-functions/exponential.md)
 - [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 - [Squeeze theorem](../26-real-functions/part-03/squeeze-theorem.md)

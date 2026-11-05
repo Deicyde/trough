@@ -28,7 +28,6 @@ differentiable_tsum.{u_1, u_2, u_3, u_4} {α : Type u_1} {𝕜 : Type u_2} {E : 
 - [Differentiable functions](../../multivariable-calculus/differential-calculus/differentiable-functions.md)
 - [Infinite sum](../../../overview/topology/topological-algebra/infinite-sum.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 

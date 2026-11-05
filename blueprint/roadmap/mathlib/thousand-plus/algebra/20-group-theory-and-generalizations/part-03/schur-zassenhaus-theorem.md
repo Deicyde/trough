@@ -19,16 +19,14 @@ Subgroup.exists_left_complement'_of_coprime.{u} {G : Type u} [Group G] {N : Subg
 
 ## Depends on
 
+- [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Index of a subgroup](../../../../overview/general-algebra/group-theory/part-01/index-of-a-subgroup.md)
 - [Normal subgroup](../../../../overview/general-algebra/group-theory/part-01/normal-subgroup.md)
+- [Ring morphism](../../../../overview/general-algebra/rings/ring-morphism.md)
 
 ## Proof depends on
 
 - [Euclid's' algorithm](../../../../overview/general-algebra/divisibility-in-integral-domains/euclids-algorithm.md)
-- [Lagrange's theorem](../../../../overview/general-algebra/group-theory/part-02/lagranges-theorem.md)
-- [Quotient group](../../../../overview/general-algebra/group-theory/part-01/quotient-group.md)
-- [Second Sylow theorem](../../../../overview/general-algebra/group-theory/part-02/second-sylow-theorem.md)
-- [Stabilizer of a point](../../../../undergraduate/group-theory/basic-definitions/stabilizer-of-a-point.md)
 - [Third Sylow theorem](../../../../overview/general-algebra/group-theory/part-02/third-sylow-theorem.md)
 
 ## Sources

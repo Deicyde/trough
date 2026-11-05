@@ -29,7 +29,6 @@ HasCompactSupport.contDiff_convolution_left.{u𝕜, uG, uE, uE', uF} {𝕜 : Typ
 - [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Convolution (Measures and integral calculus)](convolution.md)
 - [Measurable function](../part-01/measurable-function.md)
-- [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 

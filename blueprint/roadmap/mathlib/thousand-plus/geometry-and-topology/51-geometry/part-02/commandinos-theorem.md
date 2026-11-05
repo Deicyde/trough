@@ -23,7 +23,6 @@ Affine.Simplex.point_vsub_centroid_eq_smul_vsub.{u_1, u_2, u_3} {k : Type u_1} {
 - [Barycenter](../../../../overview/geometry/affine-and-euclidean-geometry/barycenter.md)
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Rational number](../../../../overview/general-algebra/numbers/rational-number.md)
-- [Set](../../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

@@ -19,7 +19,6 @@ Equiv.Perm.sign.{u} {α : Type u} [DecidableEq α] [Fintype α] : Equiv.Perm α 
 ## Depends on
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Group morphism](../../../overview/general-algebra/group-theory/part-01/group-morphism.md)
 - [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Ring structure $\Z$](../../ring-theory/fundamentals/ring-structure-z.md)

@@ -32,7 +32,6 @@ Field.exists_primitive_element.{u_1, u_2} (F : Type u_1) (E : Type u_2) [Field F
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
 - [Splitting field](../../../overview/general-algebra/field-theory/splitting-field.md)
-- [Subgroup](../../../overview/general-algebra/group-theory/part-01/subgroup.md)
 - [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
 
 ## Sources

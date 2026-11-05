@@ -29,7 +29,6 @@ IsManifold.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜]
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Infinite sum](../../../topology/topological-algebra/infinite-sum.md)
 - [Norm of a continuous linear map](../../../analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Radius of convergence](../../../../undergraduate/single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
 
 ## Sources

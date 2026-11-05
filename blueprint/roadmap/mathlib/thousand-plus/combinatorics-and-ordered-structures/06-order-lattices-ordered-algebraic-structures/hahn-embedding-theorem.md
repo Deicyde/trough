@@ -36,7 +36,6 @@ hahnEmbedding_isOrderedAddMonoid.{u_1} (M : Type u_1) [AddCommGroup M] [LinearOr
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

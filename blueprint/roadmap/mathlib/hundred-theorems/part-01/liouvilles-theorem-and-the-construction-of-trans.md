@@ -33,7 +33,6 @@ Liouville.transcendental {x : ℝ} (lx : Liouville x) : Transcendental ℤ x
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Polynomial derivative](../../undergraduate/ring-theory/polynomial-rings/polynomial-derivative.md)
 - [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Roots of a polynomial](../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)

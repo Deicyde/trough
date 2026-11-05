@@ -30,7 +30,6 @@ ContMDiffVectorBundle.{u_1, u_2, u_3, u_5, u_6, u_7} (n : WithTop ℕ∞) {𝕜 
 - [Convex subsets](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
 - [Norm of a continuous linear map](../../analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Radius of convergence](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
 - [Topological vector bundle](../../topology/general-topology/part-01/topological-vector-bundle.md)
 
