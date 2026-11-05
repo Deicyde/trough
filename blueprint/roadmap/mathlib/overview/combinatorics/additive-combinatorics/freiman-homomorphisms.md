@@ -20,7 +20,6 @@ IsAddFreimanHom.{u_2, u_3} {α : Type u_2} {β : Type u_3} [AddCommMonoid α] [A
 
 - [Multiset](../../data-structures/sets/multiset.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

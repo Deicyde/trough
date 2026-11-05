@@ -24,6 +24,7 @@ FDRep.finrank_hom_simple_simple.{u, v} {k : Type u} {G : Type v} [Field k] [Mono
 - [Category of finite-dimensional representations](../../../overview/general-algebra/representation-theory/category-of-finite-dimensional-representations.md)
 - [Isomorphism](../../../overview/general-algebra/category-theory/isomorphism.md)
 - [Linear independence](../fundamentals/linear-independence.md)
+- [The category of modules over a ring](../../../overview/linear-algebra/fundamentals/the-category-of-modules-over-a-ring.md)
 
 ## Proof depends on
 

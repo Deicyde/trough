@@ -19,7 +19,6 @@ Nat.Partition.card_restricted_eq_card_countRestricted (n : ℕ) {m : ℕ} (hm : 
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

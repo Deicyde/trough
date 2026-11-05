@@ -29,7 +29,6 @@ closure_convexHull_extremePoints.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.M
 - [Local convexity](../../../overview/analysis/topological-vector-spaces/local-convexity.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

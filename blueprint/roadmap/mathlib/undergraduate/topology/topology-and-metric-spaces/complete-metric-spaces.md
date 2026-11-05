@@ -18,7 +18,6 @@ Metric.complete_of_cauchySeq_tendsto.{u} {α : Type u} [PseudoMetricSpace α] :
 ## Depends on
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Cauchy sequence](../../../overview/topology/uniform-notions/cauchy-sequence.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
 

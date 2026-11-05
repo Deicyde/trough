@@ -25,7 +25,6 @@ Subgroup.isFreeGroupOfIsFreeGroup.{u} {G : Type u} [Group G] [IsFreeGroup G] (H 
 
 - [Isomorphism](../../../../overview/general-algebra/category-theory/isomorphism.md)
 - [List](../../../../overview/data-structures/list-like-structures/list.md)
-- [Natural transformation](../../../../overview/general-algebra/category-theory/natural-transformation.md)
 - [Orbit](../../../../undergraduate/group-theory/basic-definitions/orbit.md)
 - [Small category](../../../../overview/general-algebra/category-theory/small-category.md)
 

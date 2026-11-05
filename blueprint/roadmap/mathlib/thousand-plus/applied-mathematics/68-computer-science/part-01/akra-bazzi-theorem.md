@@ -18,7 +18,6 @@ AkraBazziRecurrence.isBigO_asympBound.{u_1} {α : Type u_1} [Fintype α] {T : �
 
 ## Depends on
 
-- [Filter](../../../../overview/topology/general-topology/part-01/filter.md)
 - [Logarithm](../../../../overview/analysis/special-functions/logarithm.md)
 
 ## Proof depends on

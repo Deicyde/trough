@@ -26,7 +26,6 @@ exists_continuous_zero_one_of_isClosed.{u_1} {X : Type u_1} [TopologicalSpace X]
 - [Bornology](../../../analysis/topological-vector-spaces/bornology.md)
 - [Continuous function](../part-01/continuous-function.md)
 - [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

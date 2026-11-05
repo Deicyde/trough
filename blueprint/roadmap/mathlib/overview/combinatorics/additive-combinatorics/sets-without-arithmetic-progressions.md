@@ -20,7 +20,6 @@ ThreeAPFree.{u_2} {α : Type u_2} [AddMonoid α] (s : Set α) : Prop
 ## Depends on
 
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

@@ -23,6 +23,7 @@ Cardinal.not_countable_real : ¬Set.univ.Countable
 - [Cardinal](../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
+- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)

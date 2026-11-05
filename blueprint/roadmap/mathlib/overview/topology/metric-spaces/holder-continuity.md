@@ -19,7 +19,6 @@ HolderWith.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [PseudoEMetricSpace X] [Pseu
 ## Depends on
 
 - [Real number](../../general-algebra/numbers/real-number.md)
-- [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources
 

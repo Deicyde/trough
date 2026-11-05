@@ -27,7 +27,6 @@ Fintype.exists_lt_card_fiber_of_mul_lt_card.{u, v} {α : Type u} {β : Type v} [
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

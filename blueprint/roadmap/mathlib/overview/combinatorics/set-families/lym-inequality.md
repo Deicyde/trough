@@ -24,7 +24,6 @@ Finset.lubell_yamamoto_meshalkin_inequality_sum_card_div_choose.{u_1, u_2} {𝕜
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Rational number](../../general-algebra/numbers/rational-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
 

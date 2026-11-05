@@ -4,9 +4,9 @@ Mathlib's maintainers keep four curated lists of what the library contains: an o
 
 Items that name the same declarations in several lists, or name none and share a title, are one article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, with their documentation and source; the docstrings and signatures it shows are Mathlib's, under Apache-2.0. One that Mathlib lacks is marked not ready, since its prerequisites are not mapped; its page says when Mathlib states it without a proof or another project has formalized it.
 
-An article's *Depends on* list names the nearest concepts on these lists that its statement uses, and *Proof depends on* those its proof uses, counting its helper lemmas in the same Mathlib file and, for a lemma from another file, the listed theorems it is proved from there. Both are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a dependency already reached through another is left out. This leaves 2,333 statement and 1,406 proof edges, from 10,570 and 4,003 nearest-concept edges.
+An article's *Depends on* list names the nearest concepts on these lists that its statement uses, and *Proof depends on* those its proof uses, counting its helper lemmas in the same Mathlib file and, for a lemma from another file, the listed theorems it is proved from there. Both are read from Mathlib's declaration graph by `lean/ConceptDeps.lean` in GitHub Actions; a dependency already reached through another is left out. This leaves 2,129 statement and 1,366 proof edges, from 10,188 and 3,908 nearest-concept edges.
 
-117 articles are written for Trough, under CC BY-SA 4.0: original text, whose citations link to Mathlib's documentation, and prerequisites chosen for the reader: 377 statement and 103 proof edges, in place of the 660 and 177 nearest-concept edges Mathlib's graph gives those concepts.
+164 articles are written for Trough, under CC BY-SA 4.0: original text, whose citations link to Mathlib's documentation, and prerequisites chosen for the reader: 532 statement and 137 proof edges, in place of the 1,042 and 272 nearest-concept edges Mathlib's graph gives those concepts.
 
 - [Mathlib overview](overview/README.md)
 - [Undergraduate mathematics](undergraduate/README.md)

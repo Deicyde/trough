@@ -24,7 +24,6 @@ Theorems100.friendship_theorem.{u} {V : Type u} [Fintype V] {G : SimpleGraph V}
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../overview/data-structures/sets/set.md)
 - [Simple graph](../../overview/combinatorics/graph-theory/simple-graph.md)
 
 ## Proof depends on

@@ -19,7 +19,6 @@ Konigsberg.not_isEulerian {u v : Konigsberg.Verts} (p : Konigsberg.graph.Walk u 
 
 - [List](../../overview/data-structures/list-like-structures/list.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../overview/data-structures/sets/set.md)
 - [Simple graph](../../overview/combinatorics/graph-theory/simple-graph.md)
 
 ## Proof depends on

@@ -18,7 +18,6 @@ Real.tendsto_sum_range_one_div_nat_succ_atTop :
 ## Depends on
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
-- [Limit of a map with respect to filters](../../overview/topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
 - [Real number](../../overview/general-algebra/numbers/real-number.md)
 
 ## Proof depends on

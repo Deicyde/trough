@@ -20,7 +20,6 @@ SimpleGraph.sum_degrees_eq_twice_card_edges.{u} {V : Type u} (G : SimpleGraph V)
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 - [Simple graph](simple-graph.md)
 
 ## Sources

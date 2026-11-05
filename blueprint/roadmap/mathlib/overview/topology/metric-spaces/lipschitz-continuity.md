@@ -19,7 +19,6 @@ LipschitzWith.{u, v} {α : Type u} {β : Type v} [PseudoEMetricSpace α] [Pseudo
 ## Depends on
 
 - [Real number](../../general-algebra/numbers/real-number.md)
-- [Uniform space](../uniform-notions/uniform-space.md)
 
 ## Sources
 

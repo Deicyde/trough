@@ -21,7 +21,6 @@ Combinatorics.Line.exists_mono_in_high_dimension.{u, v} (α : Type u) [Finite α
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

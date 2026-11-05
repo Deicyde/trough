@@ -18,7 +18,6 @@ FirstOrder.Language.Theory.IsSatisfiable.{u, v} {L : FirstOrder.Language} (T : L
 
 - [First-order formula](first-order-formula.md)
 - [First-order structure](first-order-structure.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

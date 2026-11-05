@@ -20,7 +20,6 @@ IsLowerSet.le_card_inter_finset.{u_1} {α : Type u_1} [DecidableEq α] {𝒜 ℬ
 
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Proof depends on
 

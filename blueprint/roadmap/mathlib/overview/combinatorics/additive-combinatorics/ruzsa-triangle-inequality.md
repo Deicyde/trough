@@ -20,10 +20,6 @@ Finset.ruzsa_triangle_inequality_sub_sub_sub.{u_1} {G : Type u_1} [DecidableEq G
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Integer](../../general-algebra/numbers/integer.md)
 
-## Proof depends on
-
-- [Set](../../data-structures/sets/set.md)
-
 ## Sources
 
 - [Mathlib documentation: `Finset.ruzsa_triangle_inequality_sub_sub_sub`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/PluenneckeRuzsa.html#Finset.ruzsa_triangle_inequality_sub_sub_sub)

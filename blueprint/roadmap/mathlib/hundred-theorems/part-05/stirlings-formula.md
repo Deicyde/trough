@@ -20,7 +20,6 @@ Stirling.tendsto_stirlingSeq_sqrt_pi :
 - [Bornology](../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Cos (extension of trigonometric functions to the complex plane)](../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Exponential](../../overview/analysis/special-functions/exponential.md)
-- [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 
@@ -29,6 +28,7 @@ Stirling.tendsto_stirlingSeq_sqrt_pi :
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Derivative of the inverse of a function (Single Variable Real Analysis)](../../undergraduate/single-variable-real-analysis/differentiability/derivative-of-the-inverse-of-a-function.md)
+- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Hausdorff space](../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
 - [Logarithm](../../overview/analysis/special-functions/logarithm.md)

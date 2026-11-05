@@ -18,7 +18,6 @@ Convex.{u_1, u_2} (𝕜 : Type u_1) {E : Type u_2} [Semiring 𝕜] [PartialOrder
 ## Depends on
 
 - [Natural number](../../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

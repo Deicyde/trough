@@ -20,7 +20,6 @@ Metric.tendsto_atTop.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpace α] [
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

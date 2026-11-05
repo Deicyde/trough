@@ -19,7 +19,6 @@ IsPathConnected.{u_1} {X : Type u_1} [TopologicalSpace X] (F : Set X) : Prop
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Continuous function](../../../overview/topology/general-topology/part-01/continuous-function.md)
 - [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Sources
 

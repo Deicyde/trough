@@ -30,7 +30,6 @@ polynomialFunctions_closure_eq_top (a b : ℝ) :
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
-- [Uniform space](../../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

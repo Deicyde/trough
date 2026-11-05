@@ -28,7 +28,6 @@ Finset.mem_powersetCard.{u_1} {α : Type u_1} {n : ℕ} {s t : Finset α} :
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources
 

@@ -29,7 +29,6 @@ not_summable_one_div_on_primes : ¬Summable ({p | Nat.Prime p}.indicator fun n =
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Uniform space](../../overview/topology/uniform-notions/uniform-space.md)
 
 ## Proof depends on
 

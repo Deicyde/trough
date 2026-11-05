@@ -51,6 +51,7 @@ RatFunc.valuation_isEquiv_infty_or_adic.{u_1, u_2} {K : Type u_1} {Γ : Type u_2
 - [Array](../../../overview/data-structures/list-like-structures/array.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Coprime element](../../../overview/general-algebra/divisibility-in-integral-domains/coprime-element.md)
+- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Logarithm](../../../overview/analysis/special-functions/logarithm.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)

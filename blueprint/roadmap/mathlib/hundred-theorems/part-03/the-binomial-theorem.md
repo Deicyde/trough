@@ -20,10 +20,6 @@ add_pow.{u_1} {R : Type u_1} [CommSemiring R] (x y : R) (n : ℕ) :
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 
-## Proof depends on
-
-- [Set](../../overview/data-structures/sets/set.md)
-
 ## Sources
 
 - [Mathlib documentation: `add_pow`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/Choose/Sum.html#add_pow)

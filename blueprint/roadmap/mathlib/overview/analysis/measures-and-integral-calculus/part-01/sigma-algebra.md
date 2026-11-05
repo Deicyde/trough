@@ -17,7 +17,6 @@ MeasurableSpace.{u_6} (α : Type u_6) : Type u_6
 ## Depends on
 
 - [Natural number](../../../general-algebra/numbers/natural-number.md)
-- [Set](../../../data-structures/sets/set.md)
 
 ## Sources
 

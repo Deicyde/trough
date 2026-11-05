@@ -17,7 +17,6 @@ TuringDegree : Type
 ## Depends on
 
 - [Natural number](../../general-algebra/numbers/natural-number.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 
