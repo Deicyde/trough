@@ -1,0 +1,121 @@
+---
+article_id: af_00d9a184e57872eb4ed35d62
+concept: CategoryTheory.MonoidalCategory
+---
+
+A **monoidal category** is a [category](trough:CategoryTheory.Category) equipped with a way of
+multiplying objects, a tensor product $X \otimes Y$, together with a unit object $I$, such that
+the product is associative and unital up to specified, well-behaved
+[isomorphisms](trough:CategoryTheory.Iso). The notion abstracts the cartesian product of sets,
+the tensor product of vector spaces and the composition of functors, and it is the setting in
+which one can speak of monoids and algebras inside a category rather than only among sets.
+
+## Definition
+
+A [monoidal structure](lean:CategoryTheory.MonoidalCategory) on a category $\mathcal{C}$ consists of
+
+- a tensor product, which assigns to objects $X, Y$ an object $X \otimes Y$ and to morphisms
+  $f \colon X \to X'$ and $g \colon Y \to Y'$ a morphism $f \otimes g \colon X \otimes Y \to X' \otimes Y'$;
+- a unit object $I$;
+- an associator, an isomorphism $\alpha_{X,Y,Z} \colon (X \otimes Y) \otimes Z \to X \otimes (Y \otimes Z)$ for all objects $X, Y, Z$;
+- left and right unitors, isomorphisms $\lambda_X \colon I \otimes X \to X$ and $\rho_X \colon X \otimes I \to X$.
+
+The tensor product must respect identities and composition,
+[$1_X \otimes 1_Y = 1_{X \otimes Y}$](lean:CategoryTheory.MonoidalCategory.id_tensorHom_id) and
+[$(g_1 \circ f_1) \otimes (g_2 \circ f_2) = (g_1 \otimes g_2) \circ (f_1 \otimes f_2)$](lean:CategoryTheory.MonoidalCategory.tensorHom_comp_tensorHom),
+so that it is [a functor from $\mathcal{C} \times \mathcal{C}$ to $\mathcal{C}$](lean:CategoryTheory.MonoidalCategory.tensor)
+(here $\mathcal{C} \times \mathcal{C}$ is the product category, whose objects and morphisms are pairs).
+The associator and unitors must be [natural transformations](trough:CategoryTheory.NatTrans); for the associator this means
+[$\alpha_{X',Y',Z'} \circ ((f \otimes g) \otimes h) = (f \otimes (g \otimes h)) \circ \alpha_{X,Y,Z}$](lean:CategoryTheory.MonoidalCategory.associator_naturality)
+for all morphisms $f \colon X \to X'$, $g \colon Y \to Y'$, $h \colon Z \to Z'$. Finally, two coherence
+conditions must hold. The [pentagon identity](lean:CategoryTheory.MonoidalCategory.pentagon) says that
+the two ways of rebracketing $((W \otimes X) \otimes Y) \otimes Z$ into $W \otimes (X \otimes (Y \otimes Z))$ agree:
+
+$$(1_W \otimes \alpha_{X,Y,Z}) \circ \alpha_{W,X \otimes Y,Z} \circ (\alpha_{W,X,Y} \otimes 1_Z) = \alpha_{W,X,Y \otimes Z} \circ \alpha_{W \otimes X,Y,Z}.$$
+
+The [triangle identity](lean:CategoryTheory.MonoidalCategory.triangle) says that the two ways of
+removing the unit from $(X \otimes I) \otimes Y$ agree:
+
+$$(1_X \otimes \lambda_Y) \circ \alpha_{X,I,Y} = \rho_X \otimes 1_Y.$$
+
+## Examples
+
+- **Sets.** The [category of types](lean:CategoryTheory.typesCartesianMonoidalCategory), which plays the
+  role of sets, is monoidal with the cartesian product $X \times Y$ as tensor product and a one-element
+  set as unit.
+- **Finite products.** More generally, [every category with finite products is monoidal](lean:CategoryTheory.CartesianMonoidalCategory.ofHasFiniteProducts),
+  with the binary product as tensor product and a terminal object as unit. Dually, finite coproducts
+  and an initial object give a monoidal structure.
+- **Modules.** For a commutative ring $R$, the [category of $R$-modules](trough:ModuleCat) is
+  [monoidal under the tensor product over $R$, with unit $R$](lean:ModuleCat.monoidalCategory)
+  (see [tensor product](trough:TensorProduct)). Vector spaces over a field $K$ are the case $R = K$.
+- **Monoids.** A monoid $M$ can be read as a [discrete monoidal category](lean:CategoryTheory.Discrete.monoidal):
+  the objects are the elements of $M$, the only morphisms are identities, the tensor product is the
+  multiplication and the unit is $1$.
+- **Endofunctors.** For any category $\mathcal{C}$, the [functors](trough:CategoryTheory.Functor) from $\mathcal{C}$ to itself form a
+  [monoidal category under composition](lean:CategoryTheory.endofunctorMonoidalCategory), with the identity
+  functor as unit. This tensor product is in general not commutative, even up to isomorphism.
+
+## Properties
+
+The left and right unitors of the unit object
+coincide, [$\lambda_I = \rho_I$ as maps $I \otimes I \to I$](lean:CategoryTheory.MonoidalCategory.unitors_equal).
+Tensoring with identities on either side commutes: for $f \colon W \to X$ and $g \colon Y \to Z$,
+[the two orders agree](lean:CategoryTheory.MonoidalCategory.whisker_exchange),
+
+$$(f \otimes 1_Z) \circ (1_W \otimes g) = (1_X \otimes g) \circ (f \otimes 1_Y),$$
+
+and both equal $f \otimes g$. The endomorphisms of the unit object form a commutative monoid under
+composition. Transported along $\lambda_I = \rho_I$, the tensor product of two such endomorphisms
+is a second multiplication with the same unit $1_I$ that satisfies the interchange law with
+composition, and an Eckmann–Hilton argument shows that the two multiplications agree and are commutative.
+
+The central structural fact is the coherence theorem. Its formal version says that in the free
+monoidal category generated by a collection of objects,
+[any two morphisms with the same source and target are equal](lean:CategoryTheory.FreeMonoidalCategory.subsingleton_hom).
+Consequently, in any monoidal category, two morphisms built from associators, unitors, their inverses and identities by
+composition and tensor product agree whenever they relate the same two formal bracketed words. This
+licenses the common practice of omitting brackets and units from tensor products. Every monoidal
+category is also equivalent, through monoidal functors, to a strict one, in which the associators and unitors are identities.
+
+## Related concepts
+
+- A [monoid object](lean:CategoryTheory.MonObj) is an object $M$ with a multiplication
+  $M \otimes M \to M$ and a unit $I \to M$ satisfying associativity and unit laws. Monoid objects in
+  sets under the cartesian product are monoids, in abelian groups under the tensor product they are
+  [rings](trough:Ring), in $R$-modules under the tensor product over $R$ they are
+  [$R$-algebras](trough:Algebra), and among endofunctors they are [monads](trough:CategoryTheory.Monad).
+- A [monoidal functor](lean:CategoryTheory.Functor.Monoidal) preserves the tensor product and unit up
+  to coherent isomorphism; a [lax monoidal functor](lean:CategoryTheory.Functor.LaxMonoidal) comes only
+  with comparison maps $F(X) \otimes F(Y) \to F(X \otimes Y)$ and $I \to F(I)$, natural and compatible
+  with the associators and unitors, which need not be invertible.
+- A [braided monoidal category](lean:CategoryTheory.BraidedCategory) adds a natural isomorphism
+  $X \otimes Y \cong Y \otimes X$ satisfying two hexagon identities, and a
+  [symmetric monoidal category](lean:CategoryTheory.SymmetricCategory) is a braided one in which
+  swapping twice is the identity. Sets and modules over a commutative ring are symmetric.
+- A monoidal category is [monoidal closed](lean:CategoryTheory.MonoidalClosed) when each functor
+  $X \otimes -$ has a right [adjoint](trough:CategoryTheory.Adjunction), an internal hom. For the monoidal
+  structure given by finite products this is a [cartesian closed category](trough:CategoryTheory.MonoidalClosed).
+
+## In Mathlib
+
+Mathlib treats a monoidal structure as data on a category, not as a property: the tensor product,
+the unit object, the associator and both unitors are specified, and a category may carry several
+monoidal structures. Alongside the tensor product of morphisms, Mathlib takes as basic the two
+whiskerings, tensoring a morphism with an identity on the left or on the right, and requires the
+tensor product of two morphisms to equal a whiskering on the right followed by one on the left; most
+of the axioms are stated in terms of whiskerings.
+The category of types stands in for the category of sets, and its cartesian structure, like that of
+any category with finite products, comes with a chosen product and terminal object. Mathlib writes
+composition of functors in diagrammatic order, so in its monoidal category of endofunctors the
+tensor product of $F$ and $G$ applies $F$ first; this is the reverse of the usual convention, and
+Mathlib's structure is the monoidal opposite of the one common in the literature. The coherence
+theorem is formalized as the statement that the free monoidal category on any type has at most one
+morphism between any two objects; the strictification theorem is not formalized.
+
+## Depends on
+
+- [Category](trough:CategoryTheory.Category)
+- [Functor](trough:CategoryTheory.Functor)
+- [Natural transformation](trough:CategoryTheory.NatTrans)
+- [Isomorphism](trough:CategoryTheory.Iso)
