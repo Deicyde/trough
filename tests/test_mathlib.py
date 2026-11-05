@@ -197,6 +197,22 @@ def test_a_shared_declaration_links_to_the_article_it_heads():
     assert [leaf.title for leaf in leaves["Gamma"].depends] == ["Alpha"]
 
 
+def test_a_module_page_credits_no_declaration_mathlib_deprecates():
+    lists = {
+        "overview": [mathlib.Item("overview", "a", ("S",), "alpha", 1, decls=("A",)),
+                     mathlib.Item("overview", "m", ("S",), "a module", 2, module="Mathlib.M")],
+        "undergrad": [],
+        "100": [],
+        "1000": [],
+    }
+    deps = {"mathlib_rev": "r", "concepts": {"A": record()},
+            "modules": {"Mathlib.M": {"found": True, "doc": None, "decls": ["A", "Old", "New"]}},
+            "cited": {"Old": {"deprecated": {"replacement": "New"}}, "New": {"deprecated": None}}}
+    root, _, _ = mathlib.chapter(mathlib.Sources("r", "", lists, deps, None))
+    leaves = {node.title: node for node in walk(root) if not hasattr(node, "entries")}
+    assert dict(leaves["A module"].fields)["mathlib_declaration"] == "New"
+
+
 def test_titles_match_across_typography_and_keys_the_project_replaced():
     lists = {
         "overview": [], "undergrad": [],
