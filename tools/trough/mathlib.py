@@ -799,24 +799,31 @@ def follow_pin(sources: Sources, directory: Path, parking: Path) -> list[dict]:
     only: a pull request still stops on what this repairs.
 
     - A cited name Mathlib deprecates is renamed to its replacement when the dump describes one
-      that is not deprecated itself; a cited name with no record, or no such replacement, is
-      unlinked and its words kept.
+      that is not deprecated itself; a cited name Mathlib does not have at this pin, or one with
+      no such replacement, is unlinked and its words kept.
     - A concept key that names no page is re-keyed the same way, in front matter, links and
       prerequisite lists. Failing that, a link to it is unlinked, a prerequisite line dropped,
       and an article about it moved to parking, out of the chapter.
+    - A name the dump did not read, from an article merged while it ran, is left as it is: the
+      chapter then stops on it, as on a pull request, and the next run reads it.
     """
     records = (sources.deps or {}).get("cited") or {}
+    unresolved = set((sources.deps or {}).get("unresolved") or [])
     keys = page_keys(sources)
 
     def usable(name: str) -> bool:
         return name in records and records[name].get("deprecated") is None
+
+    def unread(name: str) -> bool:
+        # The cited list leaves out keys with a "<list>:" or "area:" prefix; their pages decide.
+        return name not in records and name not in unresolved and not re.match(r"[^.:]*:", name)
 
     def replacement(name: str) -> str | None:
         new = ((records.get(name) or {}).get("deprecated") or {}).get("replacement")
         return new if new and usable(new) else None
 
     def page(key: str) -> str | None:
-        if key in keys:
+        if key in keys or unread(key):
             return key
         new = replacement(key)
         return new if new in keys else None
@@ -829,13 +836,15 @@ def follow_pin(sources: Sources, directory: Path, parking: Path) -> list[dict]:
         text = path.read_text(encoding="utf-8")
         notes = []
         concept = page(article.concept)
+        lost_concept = f"its concept {article.concept} names no page at this pin"
         if concept != article.concept and concept in taken:
-            concept = None  # another article already has that page
+            lost_concept = f"its concept {article.concept} is now {concept}, which another article has"
+            concept = None
 
         def linkable(key: str) -> str | None:
-            """The page a link to key goes to now; never the article's own."""
+            """The page a link to key goes to now; the article's own only if it was already."""
             new = page(key)
-            return None if new == concept else new
+            return None if new == concept and key != article.concept else new
 
         def cite(match: re.Match) -> str:
             name = unquote(match.group(1) or match.group(2))
@@ -847,7 +856,7 @@ def follow_pin(sources: Sources, directory: Path, parking: Path) -> list[dict]:
 
         def gone(match: re.Match) -> bool:
             name = unquote(match.group(1) or match.group(2))
-            if usable(name):
+            if usable(name) or unread(name):
                 return False
             notes.append(f"lean:{name} has no usable record at this pin: unlinked")
             return True
@@ -885,7 +894,9 @@ def follow_pin(sources: Sources, directory: Path, parking: Path) -> list[dict]:
         target = path
         if concept is None:
             target = parking / path.name
-            notes.append(f"its concept {article.concept} names no page at this pin: moved out of the chapter")
+            if target.exists():  # an article parked earlier under the same file name
+                target = parking / f"{path.stem}-{article.article_id}.md"
+            notes.append(f"{lost_concept}: moved out of the chapter")
         elif concept != article.concept:
             text = re.sub(r"(?m)^concept:.*$", lambda _: f"concept: {concept}", text, count=1)
             taken.add(concept)

@@ -223,6 +223,38 @@ def test_link_words_join_onto_one_line_and_reference_definitions_are_refused(tmp
         (tmp_path / "alpha.md").unlink()
 
 
+def test_a_new_pin_leaves_what_its_data_did_not_read(tmp_path):
+    """An article merged while the data run read Mathlib names what that run never read: left
+    as it is, the chapter stops on it as on a pull request. A link to the article's own page
+    stays too."""
+    directory = tmp_path / "mathlib"
+    directory.mkdir()
+    alpha = ARTICLE.replace("(lean:A)", "(lean:Unread)").replace("- [Gamma](trough:C)", "- [Gamma](trough:Unseen)")
+    write(directory, alpha=alpha.replace("unlike [beta](trough:B)", "unlike [itself](trough:A)"))
+    before = (directory / "alpha.md").read_text(encoding="utf-8")
+    assert mathlib.follow_pin(fake_sources(), directory, tmp_path / "unplaced") == []
+    assert (directory / "alpha.md").read_text(encoding="utf-8") == before
+    with pytest.raises(ValueError, match="no article for Unseen"):
+        mathlib.chapter(fake_sources(), wiki.load(directory))
+
+
+def test_a_new_pin_gives_a_page_one_article_and_parks_without_overwriting(tmp_path):
+    directory = tmp_path / "mathlib"
+    directory.mkdir()
+    old = ARTICLE.replace("concept: A", "concept: Old").replace("0001", "0005").split("\n## Depends on")[0] + "\n"
+    write(directory, alpha=ARTICLE, old=old)
+    parked = tmp_path / "unplaced" / "old.md"
+    parked.parent.mkdir()
+    parked.write_text("parked earlier\n", encoding="utf-8")
+    records = cited_records()
+    records["Old"] = dict(records["C"], deprecated={"replacement": "A"})
+    changes = mathlib.follow_pin(fake_sources(records), directory, tmp_path / "unplaced")
+    assert parked.read_text(encoding="utf-8") == "parked earlier\n"
+    assert (tmp_path / "unplaced" / "old-af_000000000000000000000005.md").is_file()
+    assert {change["change"] for change in changes} == {
+        "its concept Old is now A, which another article has: moved out of the chapter"}
+
+
 @pytest.mark.parametrize("link", ['[x](lean:A "a title")', "[x](LEAN:A)", "[x]( lean:A)", "[x](<lean:A> 'a title')",
                                   "[x](< lean:A>)", "[x](lean:A\n)", '[x](trough:B "a title")', "[x](Trough:B)",
                                   "[x](trough:)"])
@@ -257,7 +289,7 @@ def test_a_new_pin_renames_unlinks_and_rekeys_instead_of_stopping(tmp_path):
     records["A"]["deprecated"] = {"replacement": "A.new"}
     records["A.new"] = dict(records["C"], module="Mathlib.A")
     records["Old"] = dict(records["C"], deprecated={"replacement": "C"})
-    sources = fake_sources(records)
+    sources = fake_sources(records, unresolved=("A.«two words»", "Gone", "Nowhere"))
 
     changes = mathlib.follow_pin(sources, directory, tmp_path / "unplaced")
 
