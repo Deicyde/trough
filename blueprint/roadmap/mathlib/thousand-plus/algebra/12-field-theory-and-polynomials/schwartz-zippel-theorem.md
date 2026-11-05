@@ -25,16 +25,13 @@ MvPolynomial.schwartz_zippel_sup_sum.{u_1} {R : Type u_1} [CommRing R] [IsDomain
 
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 - [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 - [Ring morphism](../../../overview/general-algebra/rings/ring-morphism.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
-- [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
 
 ## Sources

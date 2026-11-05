@@ -1,4 +1,5 @@
 ---
+article_id: af_a4a3125832e544c81e987af6
 declaration: class
 origin: cited
 mathlib: true
@@ -8,22 +9,46 @@ mathlib_file: Mathlib/Algebra/CharZero/Defs.lean
 
 # Characteristic zero
 
-Typeclass for monoids with characteristic zero.
-  (This is usually stated on fields but it makes sense for any additive monoid with 1.)
+A [ring](../rings/ring.md) has **characteristic zero** when no positive multiple of its identity element vanishes: $1 + 1 + \cdots + 1 \neq 0$ however many terms are added. The rational, real and complex numbers all have this property, while the integers modulo $n$ for $n \geq 1$ and every [finite field](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) do not. Characteristic zero is the setting in which the familiar arithmetic of the integers and the rationals survives inside a ring, so that distinct integers remain distinct in the ring and, in a field, one may divide by nonzero integers. It is one of the two cases in the classification of fields by their [characteristic](characteristic-of-a-ring.md), the other being [characteristic $p$](characteristic-p.md) for a prime $p$.
 
-*Warning*: for a semiring `R`, `CharZero R` and `CharP R 0` need not coincide.
-* `CharZero R` requires an injection `ℕ ↪ R`;
-* `CharP R 0` asks that only `0 : ℕ` maps to `0 : R` under the map `ℕ → R`.
-  For instance, endowing `{0, 1}` with addition given by `max` (i.e. `1` is absorbing), shows that
-  `CharZero {0, 1}` does not hold and yet `CharP {0, 1} 0` does.
-  This example is formalized in `Counterexamples/CharPZeroNeCharZero.lean`.
+## Definition
 
-```lean
-CharZero.{u_1} (R : Type u_1) [AddMonoidWithOne R] : Prop
-```
+For a ring $R$ and a [natural number](../numbers/natural-number.md) $n$, write $n \cdot 1$ for the sum of $n$ copies of the identity $1$ of $R$. The ring $R$ has characteristic zero if [the map $n \mapsto n \cdot 1$ from the natural numbers to $R$ is injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharZero/Defs.html#CharZero). In a ring this is the same as asking that $n \cdot 1 \neq 0$ for every $n \geq 1$: injectivity gives [$n \cdot 1 = 0$ exactly when $n = 0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharZero/Defs.html#Nat.cast_eq_zero), and conversely, since $m \cdot 1 = n \cdot 1$ with $m \le n$ forces $(n - m) \cdot 1 = 0$ after subtracting, [the condition $n \cdot 1 \neq 0$ for all $n \geq 1$ implies injectivity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharZero/Defs.html#charZero_of_inj_zero).
+
+The characteristic of a ring is the least $n \geq 1$ with $n \cdot 1 = 0$, or $0$ if there is no such $n$. Thus [a ring has characteristic zero exactly when its characteristic is $0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Defs.html#CharP.ringChar_zero_iff_CharZero).
+
+## Examples
+
+- The [integers](../numbers/integer.md), the [rational numbers](../numbers/rational-number.md), the [real numbers](../numbers/real-number.md) and the [complex numbers](../numbers/complex-number.md) have characteristic zero; for instance [$\mathbb{Z}$ does](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Ring/Int/Defs.html#Int.instCharZero), [$\mathbb{Q}$ does](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Ring/Rat.html#Rat.instCharZero) and [$\mathbb{C}$ does](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Basic/Complex/Basic.html#Complex.instCharZero).
+- Every nontrivial [ordered ring](../rings/ordered-ring.md) [has characteristic zero](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Ring/Defs.html#IsOrderedRing.toCharZero), since $0 < 1 < 1 + 1 < \cdots$ is a strictly increasing sequence. This covers $\mathbb{R}$ and all its subrings.
+- If $R$ has characteristic zero, [so does the polynomial ring $R[X]$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Coeff.html#Polynomial.charZero) (see [polynomial](../polynomials-and-power-series/polynomial-in-one-indeterminate.md)).
+- If $R$ has characteristic zero, [so does the product $R \times S$ for any ring $S$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Basic.html#Prod.charZero_of_left). For example $\mathbb{Q} \times \mathbb{Z}/2\mathbb{Z}$ has characteristic zero although it contains a nonzero element $a$ with $a + a = 0$.
+- The ring $\mathbb{Z}/n\mathbb{Z}$ with $n \geq 1$ does not have characteristic zero, since $n \cdot 1 = 0$ there. More generally, [a ring of characteristic zero is infinite](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharZero/Infinite.html#CharZero.infinite), because the elements $n \cdot 1$ are pairwise distinct, so no finite ring has characteristic zero. The converse fails: the polynomial ring over $\mathbb{Z}/p\mathbb{Z}$ is infinite and has characteristic $p$.
+
+## Properties
+
+- **Transfer along homomorphisms.** A [ring homomorphism](../rings/ring-morphism.md) sends $n \cdot 1$ to $n \cdot 1$. Hence, [if some ring homomorphism maps $R$ into a ring of characteristic zero, then $R$ has characteristic zero](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Ring/CharZero.html#RingHom.charZero), and [a ring containing a copy of a characteristic zero ring, via an injective homomorphism, has characteristic zero](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Algebra.html#charZero_of_injective_ringHom). In particular every [subring](../rings/subring.md) of $\mathbb{C}$ has characteristic zero.
+- **The integers inside $R$.** In a ring of characteristic zero, [the map $k \mapsto k \cdot 1$ from $\mathbb{Z}$ to $R$ is injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Int/Cast/Lemmas.html#Int.cast_injective), so $R$ contains a copy of $\mathbb{Z}$.
+- **The rationals inside a field.** In a [field](field.md), or more generally a division ring, of characteristic zero, every nonzero integer has an inverse, and [the resulting map from $\mathbb{Q}$ is injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Rat/Cast/CharZero.html#Rat.cast_injective). For a field $K$ of characteristic zero, [the smallest subfield of $K$ is the image of $\mathbb{Q}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/PrimeField.html#Subfield.bot_eq_of_charZero), and [$K$ is an algebra over $\mathbb{Q}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Algebra/Rat.html#DivisionRing.toRatAlgebra) (see [associative algebra](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)). Conversely, [every nontrivial ring that is an algebra over $\mathbb{Q}$ has characteristic zero](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Algebra.html#algebraRat.charZero).
+- **Domains.** The [characteristic of a nontrivial ring without zero divisors is either zero or a prime](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Defs.html#CharP.char_is_prime_or_zero). So a field has characteristic zero exactly when its characteristic is not a prime.
+- **No elements of order two.** In a ring without zero divisors and of characteristic zero, [$a + a = 0$ holds exactly when $a = 0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Ring/CharZero.html#add_self_eq_zero), since $a + a = 2a$ and $2 \neq 0$. In characteristic $2$, by contrast, $a + a = 0$ for every $a$.
+- **Separability.** Over a field of characteristic zero the [derivative](../../../undergraduate/ring-theory/polynomial-rings/polynomial-derivative.md) of a polynomial of degree $d \geq 1$ has degree $d - 1$, so it is not zero, and it follows that [every irreducible polynomial is separable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Separable.html#Irreducible.separable) (see [separable polynomial](../polynomials-and-power-series/separable-polynomial.md)). Consequently [every field of characteristic zero is perfect](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Perfect.html#PerfectField.ofCharZero), and every algebraic extension of such a field is separable. Over the field $\mathbb{F}_p(t)$ of rational functions in $t$ over $\mathbb{Z}/p\mathbb{Z}$, the polynomial $X^p - t$ is irreducible yet has zero derivative, which is why the two cases are treated separately in Galois theory.
+
+## Related concepts
+
+- [Characteristic of a ring](characteristic-of-a-ring.md): the natural number attached to every ring, which is $0$ exactly in the present case.
+- [Characteristic $p$](characteristic-p.md): the condition that $n \cdot 1 = 0$ exactly when $p$ divides $n$. For rings, [having characteristic zero is the same as having characteristic $p$ with $p = 0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Defs.html#CharP.charP_zero_iff_charZero).
+- Mixed characteristic: a commutative ring of characteristic zero is said to have [mixed characteristic $(0, p)$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/MixedCharZero.html#MixedCharZero) when it has a proper ideal whose [quotient](../ideals-and-quotients/quotient-ring.md) has characteristic $p$; the integers and the $p$-adic integers are examples.
+
+## In Mathlib
+
+Mathlib defines characteristic zero as a property of any additive monoid with a distinguished element $1$, not only of rings, and takes injectivity of the map from the natural numbers as the definition. For rings, and more generally whenever subtraction is available, this agrees with the condition that $n \cdot 1 \neq 0$ for $n \geq 1$, but without subtraction the two can differ. Take the two-element set $\{0, 1\}$, with the maximum as addition and the minimum as multiplication. Every positive multiple of $1$ equals $1$, so $0$ is the only natural number sent to $0$, but distinct positive numbers have the same image; this semiring has characteristic $0$ in the sense of the characteristic-$p$ condition without having characteristic zero in Mathlib's sense. Characteristic zero is recorded as a class that the library finds automatically, so the facts above about $\mathbb{Q}$-algebras, separability and perfection apply to a field as soon as its characteristic is known to be zero. The integers modulo $0$ are the integers themselves, and [they have characteristic zero](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/Basic.html#ZMod.charZero).
+
+*Written for Trough, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## Depends on
 
+- [Ring](../rings/ring.md)
 - [Natural number](../numbers/natural-number.md)
 
 ## Sources

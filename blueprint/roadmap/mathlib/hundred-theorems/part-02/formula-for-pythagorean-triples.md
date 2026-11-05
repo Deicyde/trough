@@ -32,7 +32,6 @@ PythagoreanTriple.classification {x y z : ℤ} :
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Sources
 

@@ -26,7 +26,6 @@ minpoly.{u_1, u_2} (A : Type u_1) {B : Type u_2} [CommRing A] [Ring B] [Algebra 
 
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Polynomial in one indeterminate](../../general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Ring](../../general-algebra/rings/ring.md)
 
 ## Sources
 

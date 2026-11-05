@@ -19,9 +19,8 @@ Nat.infinite_setOfPred_prime_and_eq_mod {q : ℕ} [NeZero q] {a : ZMod q} (ha : 
 
 ## Depends on
 
+- [Integer](../../overview/general-algebra/numbers/integer.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Ring](../../overview/general-algebra/rings/ring.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

@@ -32,12 +32,12 @@ ax_grothendieck_zeroLocus.{u_1, u_2} {K : Type u_1} {ι : Type u_2} [Field K] [I
 
 ## Proof depends on
 
-- [Algebraic extension](../../../../overview/general-algebra/field-theory/algebraic-extension.md)
 - [Characteristic of a ring](../../../../overview/general-algebra/field-theory/characteristic-of-a-ring.md)
+- [Characteristic p](../../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Definable set](../../../../overview/logic-and-computation/model-theory/definable-set.md)
 - [Existence of algebraic closure of a field](../../../../overview/general-algebra/field-theory/existence-of-algebraic-closure-of-a-field.md)
-- [Irreducible element](../../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Local ring](../../../../overview/general-algebra/rings/local-ring.md)
+- [Noetherian module](../../../../overview/linear-algebra/fundamentals/noetherian-module.md)
 - [Noetherian ring](../../../../overview/general-algebra/rings/noetherian-ring.md)
 - [Satisfiability](../../../../overview/logic-and-computation/model-theory/satisfiability.md)
 - [Sum of subspaces](../../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)

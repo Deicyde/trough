@@ -56,15 +56,13 @@ Algebra.HasGoingDown.of_comap_localRingHom_surjective.{u_3, u_4} {R : Type u_3} 
 - [Filter](../../../overview/topology/general-topology/part-01/filter.md)
 - [Localization](../../../overview/general-algebra/rings/localization.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 - [Zariski topology](../../../overview/geometry/algebraic-geometry/zariski-topology.md)
 
 ## Proof depends on
 
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
-- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

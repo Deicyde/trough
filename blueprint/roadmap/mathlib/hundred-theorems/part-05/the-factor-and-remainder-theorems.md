@@ -29,6 +29,7 @@ Polynomial.mod_X_sub_C_eq_C_eval.{u} {R : Type u} [Field R] (p : Polynomial R) (
 - [Field](../../overview/general-algebra/field-theory/field.md)
 - [Linear map](../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
+- [Rational number](../../overview/general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 

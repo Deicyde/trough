@@ -20,6 +20,7 @@ PrimeSpectrum.{u_1} (R : Type u_1) [CommSemiring R] : Type u_1
 
 ## Depends on
 
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Prime ideal](../../general-algebra/ideals-and-quotients/prime-ideal.md)
 
 ## Sources

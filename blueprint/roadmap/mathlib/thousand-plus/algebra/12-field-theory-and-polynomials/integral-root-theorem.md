@@ -20,10 +20,11 @@ isInteger_of_is_root_of_monic.{u_1, u_2} {A : Type u_1} {K : Type u_2} [CommRing
 
 ## Depends on
 
-- [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Field of fractions of an integral domain](../../../overview/general-algebra/field-theory/field-of-fractions-of-an-integral-domain.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 - [Unique factorisation domain](../../../overview/general-algebra/divisibility-in-integral-domains/unique-factorisation-domain.md)
 
 ## Proof depends on

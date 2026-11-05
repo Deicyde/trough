@@ -22,7 +22,6 @@ Complex.isAlgClosed : IsAlgClosed ℂ
 ## Proof depends on
 
 - [$\C$ is algebraically closed](../../general-algebra/field-theory/c-is-algebraically-closed.md)
-- [Irreducible element](../../general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 
 ## Sources
 

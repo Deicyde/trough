@@ -26,7 +26,6 @@ hahnEmbedding_isOrderedAddMonoid.{u_1} (M : Type u_1) [AddCommGroup M] [LinearOr
 ## Depends on
 
 - [Real number](../../../overview/general-algebra/numbers/real-number.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

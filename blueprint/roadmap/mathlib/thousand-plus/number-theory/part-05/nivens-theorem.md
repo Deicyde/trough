@@ -19,7 +19,6 @@ niven {θ : ℝ} (hθ : ∃ r, θ = ↑r * Real.pi) (hcos : ∃ q, Real.cos θ =
 ## Depends on
 
 - [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

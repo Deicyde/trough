@@ -17,7 +17,6 @@ Cardinal.not_countable_real : ¬Set.univ.Countable
 ## Depends on
 
 - [Real number](../../overview/general-algebra/numbers/real-number.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

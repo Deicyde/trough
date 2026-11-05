@@ -53,13 +53,13 @@ The first two are over the complex numbers (with different assumptions), the thi
 - [Completeness](../../../../overview/topology/uniform-notions/completeness.md)
 - [Complex number](../../../../overview/general-algebra/numbers/complex-number.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
-- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 
 - [Algebraic extension](../../../../overview/general-algebra/field-theory/algebraic-extension.md)
 - [Connectedness](../../../../overview/topology/general-topology/part-01/connectedness.md)
 - [Fundamental theorem of algebra](../../../../overview/analysis/complex-analysis/fundamental-theorem-of-algebra.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
 
 ## Sources
 

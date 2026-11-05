@@ -36,7 +36,6 @@ CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq.{u_1} {G 
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Module](../../linear-algebra/fundamentals/module.md)
 - [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)

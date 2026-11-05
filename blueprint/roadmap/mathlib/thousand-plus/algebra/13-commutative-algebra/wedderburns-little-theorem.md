@@ -19,6 +19,7 @@ littleWedderburn.{u_1} (D : Type u_1) [DivisionRing D] [Finite D] : Field D
 ## Depends on
 
 - [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Sources
 

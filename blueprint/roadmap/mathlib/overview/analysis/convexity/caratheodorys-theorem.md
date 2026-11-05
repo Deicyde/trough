@@ -23,6 +23,7 @@ convexHull_eq_union.{u, u_1} {𝕜 : Type u_1} {E : Type u} [Field 𝕜] [Linear
 - [Field](../../general-algebra/field-theory/field.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
+- [Rational number](../../general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 

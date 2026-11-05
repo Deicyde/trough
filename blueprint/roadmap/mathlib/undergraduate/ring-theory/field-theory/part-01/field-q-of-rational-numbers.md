@@ -17,6 +17,7 @@ Rat.instField : Field ℚ
 ## Depends on
 
 - [Field](../../../../overview/general-algebra/field-theory/field.md)
+- [Rational number](../../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ Theorems100.Nat.eq_two_pow_mul_prime_mersenne_of_even_perfect {n : ℕ} (ev : Ev
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
-- [Set](../../overview/data-structures/sets/set.md)
+- [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 
 ## Proof depends on
 

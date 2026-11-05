@@ -46,6 +46,7 @@ baby version: for compact manifolds; embedding into some *n*.
 - [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
+- [Noetherian module](../../../overview/linear-algebra/fundamentals/noetherian-module.md)
 - [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
 - [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)

@@ -21,8 +21,8 @@ Module.End.genEigenspace.{v, w} {R : Type v} {M : Type w} [CommRing R] [AddCommG
 
 ## Depends on
 
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Kernel of a linear map](../fundamentals/kernel-of-a-linear-map.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 - [Sum of subspaces](../fundamentals/sum-of-subspaces.md)
 
 ## Sources

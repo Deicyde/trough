@@ -16,6 +16,7 @@ Int.instCommRing : CommRing ℤ
 
 ## Depends on
 
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Sources

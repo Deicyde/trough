@@ -28,6 +28,7 @@ Nat.sum_four_squares (n : ℕ) : ∃ a b c d, a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 = n
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
 - [Ordered ring](../rings/ordered-ring.md)
 - [Permutation group of a type](../group-theory/part-02/permutation-group-of-a-type.md)
+- [Rational number](../numbers/rational-number.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources

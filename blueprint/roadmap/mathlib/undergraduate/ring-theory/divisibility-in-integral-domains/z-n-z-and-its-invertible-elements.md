@@ -17,6 +17,7 @@ ZMod.unitOfCoprime {n : ℕ} (x : ℕ) (h : x.Coprime n) : (ZMod n)ˣ
 
 ## Depends on
 
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Sources

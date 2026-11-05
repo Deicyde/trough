@@ -26,6 +26,7 @@ char_dvd_card_solutions.{u_1, u_2} {K : Type u_1} {σ : Type u_2} [Fintype K] [F
 - [Characteristic p](../field-theory/characteristic-p.md)
 - [Field](../field-theory/field.md)
 - [Polynomial in several indeterminates](../polynomials-and-power-series/polynomial-in-several-indeterminates.md)
+- [Rational number](../numbers/rational-number.md)
 - [Ring morphism](../rings/ring-morphism.md)
 
 ## Proof depends on

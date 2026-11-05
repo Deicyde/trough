@@ -21,7 +21,6 @@ AffineMap.{u_1, u_2, u_3, u_4, u_5} (k : Type u_1) {V1 : Type u_2} (P1 : Type u_
 
 - [Affine space](affine-space.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
-- [Ring](../../general-algebra/rings/ring.md)
 
 ## Sources
 

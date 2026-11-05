@@ -27,6 +27,7 @@ FDRep.finrank_hom_simple_simple.{u, v} {k : Type u} {G : Type v} [Field k] [Mono
 
 ## Proof depends on
 
+- [Noetherian module](../../../overview/linear-algebra/fundamentals/noetherian-module.md)
 - [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
 - [Schur's lemma (1000+ theorems)](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-03/schurs-lemma.md)
 - [Sum of subspaces](../fundamentals/sum-of-subspaces.md)

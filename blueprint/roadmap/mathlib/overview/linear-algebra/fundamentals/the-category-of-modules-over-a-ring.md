@@ -21,6 +21,7 @@ ModuleCat.{v, u} (R : Type u) [Ring R] : Type (max u (v + 1))
 
 ## Depends on
 
+- [Integer](../../general-algebra/numbers/integer.md)
 - [Module](module.md)
 - [Ring](../../general-algebra/rings/ring.md)
 

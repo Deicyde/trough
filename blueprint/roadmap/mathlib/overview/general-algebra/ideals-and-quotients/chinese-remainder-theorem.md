@@ -1,4 +1,5 @@
 ---
+article_id: af_1911102e03c53d3528cda58e
 declaration: def
 origin: cited
 mathlib: true
@@ -8,22 +9,139 @@ mathlib_file: Mathlib/RingTheory/Ideal/Quotient/Operations.lean
 
 # Chinese remainder theorem
 
-**Chinese Remainder Theorem**. Eisenbud Ex.2.6.
-Similar to Atiyah-Macdonald 1.10 and Stacks 00DT
+The **Chinese remainder theorem** says that a finite system of congruences
+with pairwise coprime moduli always has a solution, and that the solution is unique
+modulo the product of the moduli. In the language of rings it says that the
+[quotient](quotient-ring.md) of a commutative [ring](../rings/ring.md) by
+the intersection of finitely many pairwise coprime [ideals](ideal-of-a-commutative-ring.md) splits as a
+[product](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md) of the separate quotients. It is the standard tool for
+reducing a question modulo a composite number to questions modulo prime powers,
+and it reappears in algebraic number theory, in polynomial interpolation and in
+computer arithmetic.
 
-```lean
-Ideal.quotientInfRingEquivPiQuotient.{u_2, u_3} {R : Type u_2} [CommRing R] {ι : Type u_3}
-  [Finite ι] (f : ι → Ideal R) (hf : Pairwise (Function.onFun IsCoprime f)) :
-  R ⧸ ⨅ i, f i ≃+* ((i : ι) → R ⧸ f i)
-```
+## Statement
 
-The 1000+ list (Q193878) also cites `ZMod.chineseRemainder`.
+Let $R$ be a commutative ring. Two ideals $I$ and $J$ of $R$ are
+[coprime](../divisibility-in-integral-domains/coprime-element.md) when
+[$I + J = R$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Operations.html#Ideal.isCoprime_iff_sup_eq), that is, when $i + j = 1$ for
+some $i \in I$ and $j \in J$. Let $I_1, \dots, I_k$ be finitely many ideals that
+are pairwise coprime, meaning $I_i$ and $I_j$ are coprime whenever $i \neq j$.
+Then the map sending the class of $x$ modulo $I_1 \cap \dots \cap I_k$ to the
+tuple of its classes modulo each $I_i$ is
+[an isomorphism of rings](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient/Operations.html#Ideal.quotientInfRingEquivPiQuotient)
+
+$$R/(I_1 \cap \dots \cap I_k) \;\cong\; R/I_1 \times \dots \times R/I_k.$$
+
+Equivalently, for any elements $x_1, \dots, x_k$ of $R$ there is
+[an $r \in R$ with $r - x_i \in I_i$ for every $i$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient/Operations.html#Ideal.exists_forall_sub_mem_ideal),
+and $r$ is unique modulo the intersection. For pairwise coprime ideals the
+intersection equals the product:
+[$I_1 \cdots I_k = I_1 \cap \dots \cap I_k$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Operations.html#Ideal.prod_eq_iInf_of_pairwise_isCoprime),
+so the left-hand side may also be written $R/(I_1 \cdots I_k)$; for two ideals,
+[$R/IJ \cong R/I \times R/J$ when $I$ and $J$ are coprime](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient/Operations.html#Ideal.quotientMulEquivQuotientProd).
+
+## The integers
+
+In the ring of [integers](../numbers/integer.md) the ideals $m\mathbb{Z}$ and $n\mathbb{Z}$ are
+coprime exactly when $\gcd(m, n) = 1$. For coprime natural numbers $m$ and $n$
+the theorem gives
+[$\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/Basic.html#ZMod.chineseRemainder),
+and more generally, for pairwise coprime natural numbers $n_1, \dots, n_k$,
+[$\mathbb{Z}/(n_1 \cdots n_k)\mathbb{Z} \cong \prod_i \mathbb{Z}/n_i\mathbb{Z}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/QuotientRing.html#ZMod.prodEquivPi).
+In terms of [congruences](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md): if $\gcd(m, n) = 1$, then for any
+natural numbers $a$ and $b$ there is
+[a natural number $k$ with $k \equiv a \pmod m$ and $k \equiv b \pmod n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/ModEq.html#Nat.chineseRemainder),
+and when $m, n \ge 1$ it can be chosen
+[with $k < mn$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/ModEq.html#Nat.chineseRemainder_lt_mul). Uniqueness says that, for
+natural numbers $x$ and $y$,
+[$x \equiv y$ modulo both $m$ and $n$ if and only if $x \equiv y \pmod{mn}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/ModEq.html#Nat.modEq_and_modEq_iff_modEq_mul).
+
+## Examples
+
+- The system $x \equiv 2 \pmod 3$, $x \equiv 3 \pmod 5$, $x \equiv 2 \pmod 7$
+  has the solution $x = 23$, and its solutions are exactly the integers
+  congruent to $23$ modulo $105$.
+- Coprimality cannot be dropped. For the non-coprime ideals
+  $I_1 = I_2 = 2\mathbb{Z}$, the ring
+  $\mathbb{Z}/(2 \cdot 2)\mathbb{Z} = \mathbb{Z}/4\mathbb{Z}$ is not
+  isomorphic to $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$: in the
+  first, $1 + 1 \neq 0$, while in the second every element $y$ satisfies
+  $y + y = 0$. The intersection form fails as well, since
+  $2\mathbb{Z} \cap 2\mathbb{Z} = 2\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z}$
+  has two elements while the product has four.
+- If $a_1, \dots, a_k$ are distinct elements of a field $K$, the ideals
+  generated by $X - a_i$ in the [polynomial](../polynomials-and-power-series/polynomial-in-one-indeterminate.md) ring $K[X]$ are
+  pairwise coprime, and $K[X]/(X - a_i) \cong K$ by evaluation at $a_i$. The
+  theorem then says that any values $b_1, \dots, b_k$ are taken at
+  $a_1, \dots, a_k$ by some polynomial, unique modulo $(X - a_1) \cdots (X - a_k)$.
+  Choosing the representative of degree less than $k$ gives the polynomial of
+  [Lagrange interpolation](../../../undergraduate/numerical-analysis/approximation-of-numerical-functions/lagrange-interpolation.md).
+
+## Proof
+
+The map $R \to \prod_i R/I_i$, $x \mapsto (x + I_i)_i$, is a ring homomorphism
+whose kernel is $I_1 \cap \dots \cap I_k$, so it induces an injective
+homomorphism from $R/(I_1 \cap \dots \cap I_k)$; by the
+[first isomorphism theorem](first-isomorphism-theorem-for-commutative-rings.md) it remains
+to show surjectivity. Fix $i$. For each $j \neq i$ write $1 = u_j + v_j$ with
+$u_j \in I_i$ and $v_j \in I_j$. Multiplying these equations over all $j \neq i$
+gives $1 = u + e_i$, where $u \in I_i$ and $e_i = \prod_{j \neq i} v_j$ lies in
+every $I_j$ with $j \neq i$. So $e_i \equiv 1 \pmod{I_i}$ and
+$e_i \equiv 0 \pmod{I_j}$ for $j \neq i$. Given targets $x_1, \dots, x_k$, the
+element $r = x_1 e_1 + \dots + x_k e_k$ satisfies $r \equiv x_i \pmod{I_i}$ for
+each $i$.
+
+## Consequences
+
+- **Euler's totient function is multiplicative.** Restricting the isomorphism
+  $\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$
+  to [invertible residues](../../../undergraduate/ring-theory/divisibility-in-integral-domains/z-n-z-and-its-invertible-elements.md) shows that
+  [$\varphi(mn) = \varphi(m)\,\varphi(n)$ for coprime $m$ and $n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/Totient.html#Nat.totient_mul),
+  where $\varphi$ is [Euler's totient function](../divisibility-in-integral-domains/eulers-totient-function-varphi.md).
+- **Prime power decomposition.** For $n \ge 1$ with prime factorization
+  $n = p_1^{e_1} \cdots p_s^{e_s}$,
+  [$\mathbb{Z}/n\mathbb{Z} \cong \prod_i \mathbb{Z}/p_i^{e_i}\mathbb{Z}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/QuotientRing.html#ZMod.equivPi),
+  so arithmetic modulo $n$ reduces to arithmetic modulo prime powers.
+- **Distinct maximal ideals.** Two distinct
+  [maximal ideals](maximal-ideal.md)
+  [are always coprime](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Operations.html#Ideal.isCoprime_of_isMaximal), so the theorem applies
+  to any finite set of distinct maximal ideals and gives a product of fields.
+
+## Generalizations
+
+In a Dedekind domain, such as the ring of integers of a number field, every
+nonzero ideal $I$ factors as a product of powers $P_1^{e_1} \cdots P_s^{e_s}$ of
+distinct prime ideals, and the theorem gives
+[$R/I \cong \prod_i R/P_i^{e_i}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/DedekindDomain/Ideal/Lemmas.html#IsDedekindDomain.quotientEquivPiFactors),
+which generalizes the prime power decomposition of $\mathbb{Z}/n\mathbb{Z}$.
+
+## In Mathlib
+
+Mathlib states the theorem for a commutative ring and a family of ideals indexed
+by an arbitrary finite type, with pairwise coprimality taken in the sense of
+coprime elements of the semiring of ideals, which is equivalent to $I + J = R$.
+The isomorphism is the canonical map, not merely an abstract isomorphism, and
+its value on the class of $x$ is the family of classes of $x$. Half of the
+statement holds with no hypotheses: for any family of two-sided ideals in any
+ring, finite or infinite,
+[the canonical map from the quotient by the intersection to the product of the quotients is injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient/Operations.html#Ideal.quotientInfToPiQuotient_inj);
+coprimality and finiteness are needed only for surjectivity. The integer
+versions are stated for natural-number moduli, and Mathlib's ring of integers
+modulo $0$ is the integers themselves, so the two-modulus version is a true
+statement for every coprime pair, including the degenerate pair $0$ and $1$.
+
+*Written for Trough, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## Depends on
 
-- [Coprime element](../divisibility-in-integral-domains/coprime-element.md)
+- [Ideal of a commutative ring](ideal-of-a-commutative-ring.md)
 - [Quotient ring](quotient-ring.md)
-- [Ring morphism](../rings/ring-morphism.md)
+- [Coprime element](../divisibility-in-integral-domains/coprime-element.md)
+- [Product of rings](../../../undergraduate/ring-theory/fundamentals/product-of-rings.md)
+
+## Proof depends on
+
+- [First isomorphism theorem for commutative rings](first-isomorphism-theorem-for-commutative-rings.md)
 
 ## Sources
 

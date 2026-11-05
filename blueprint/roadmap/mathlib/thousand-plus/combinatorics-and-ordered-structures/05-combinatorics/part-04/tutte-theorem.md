@@ -23,6 +23,7 @@ SimpleGraph.tutte.{u_1} {V : Type u_1} {G : SimpleGraph V} [Finite V] :
 
 - [Cardinal](../../../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Matching](../../../../overview/combinatorics/graph-theory/matching.md)
+- [Natural number](../../../../overview/general-algebra/numbers/natural-number.md)
 - [Ring morphism](../../../../overview/general-algebra/rings/ring-morphism.md)
 
 ## Proof depends on

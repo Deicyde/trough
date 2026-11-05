@@ -23,13 +23,12 @@ Matrix.Pivot.exists_list_transvec_mul_mul_list_transvec_eq_diagonal.{u_1, u_3} {
 
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 - [Ring-valued matrix](../../../overview/linear-algebra/matrices/ring-valued-matrix.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Module](../../../overview/linear-algebra/fundamentals/module.md)
 
 ## Sources
 

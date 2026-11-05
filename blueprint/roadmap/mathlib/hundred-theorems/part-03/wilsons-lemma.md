@@ -18,6 +18,7 @@ ZMod.wilsons_lemma (p : ℕ) [Fact (Nat.Prime p)] : ↑(p - 1).factorial = -1
 
 - [Field](../../overview/general-algebra/field-theory/field.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Rational number](../../overview/general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 

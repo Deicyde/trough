@@ -21,7 +21,6 @@ Real.geom_mean_le_arith_mean_weighted.{u} {ι : Type u} (s : Finset ι) (w z : �
 
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Real number](../../overview/general-algebra/numbers/real-number.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

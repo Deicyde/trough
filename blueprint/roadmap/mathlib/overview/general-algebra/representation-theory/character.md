@@ -20,6 +20,7 @@ FDRep.character.{u, v} {k : Type u} [Field k] {G : Type v} [Monoid G] (V : FDRep
 - [Category of finite-dimensional representations](category-of-finite-dimensional-representations.md)
 - [Field](../field-theory/field.md)
 - [Matrix representation of a linear map](../../linear-algebra/matrices/matrix-representation-of-a-linear-map.md)
+- [Rational number](../numbers/rational-number.md)
 
 ## Sources
 
