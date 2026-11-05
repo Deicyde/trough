@@ -14,13 +14,17 @@ module docstring, Markdown or Verso, and the documented declarations, in source
 order. A listed name that does not resolve, or listed theorems whose proofs
 cannot be read, stop the run rather than give partial data.
 
-The names the wiki's articles cite or are keyed on, one per line in `$TROUGH_CITED`
-if it is set, get the same description (module, kind, line and signature) but are
-not walked, so citing a lemma changes no edge. Each also records whether Mathlib
-deprecates it, and what replaces it, which is then described as well. A cited name
-that does not resolve is listed under `unresolved`. Neither stops the run: on a
-pull request the generator refuses such a citation, and a run on main renames or
-unlinks it (`tools/generate.py --follow-pin`).
+Every record also says whether Mathlib deprecates the name, and what replaces it.
+The names the wiki's articles cite or are keyed on, and those a blueprint page
+credits to Mathlib, one per line in `$TROUGH_CITED` if it is set, get the same
+description (module, kind, line, signature and deprecation) but are not walked, so
+citing a lemma changes no edge. What replaces a deprecated cited name is described
+as well. A cited name that does not resolve is listed under `unresolved`. Neither
+stops the run: on a pull request the generator refuses such a citation, and a run
+on main renames or unlinks it (`tools/generate.py --follow-pin`). A listed
+module's documented declarations that are not listed themselves are described the
+same way, since the module's page credits them. The dump also records the Lean
+commit (`Lean.githash`), which is the revision of core's sources.
 
 A definition's body counts as part of its statement, and a structure's fields
 (its constructor's type) do too. A statement reaches listed declarations
@@ -178,10 +182,10 @@ def optionalJson (value : Option String) : Json :=
   | some text => Json.str text
   | none => Json.null
 
-/-- A cited name's record: its module, kind, line and signature, and whether Mathlib
+/-- A name's description: its module, kind, line and signature, and whether Mathlib
 deprecates it and in favour of what. -/
 def describe (env : Environment) (moduleNames : Array Name) (name : Name) (info : ConstantInfo) :
-    MetaM Json := do
+    MetaM (List (String × Json)) := do
   let module := (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!.toString
   let line := (← findDeclarationRanges? name).map (·.range.pos.line)
   let mut signature : Option String := none
@@ -192,7 +196,7 @@ def describe (env : Environment) (moduleNames : Array Name) (name : Name) (info 
   let deprecation := if Linter.isDeprecated env name then
       Json.mkObj [("replacement", optionalJson ((Linter.getDeprecatedNewName env name).map (·.toString)))]
     else Json.null
-  return Json.mkObj [
+  return [
     ("module", optionalJson module),
     ("kind", Json.str (kindOf env info)),
     ("line", match line with | some l => toJson l | none => Json.null),
@@ -253,34 +257,22 @@ def run : MetaM Unit := do
     let s := (directUses env info).1.foldl front 0
     let p := (proofs.getD name #[]).foldl front 0
     let self := 1 <<< i
-    let module := (env.getModuleIdxFor? name).map fun idx => moduleNames[idx.toNat]!.toString
     let doc ← findDocString? env name
-    let line := (← findDeclarationRanges? name).map (·.range.pos.line)
-    let mut signature : Option String := none
-    try
-      signature := some ((← PrettyPrinter.ppSignature name).fmt.pretty 100)
-    catch _ =>
-      pure ()
-    concepts := concepts.push (name.toString, Json.mkObj [
-      ("module", optionalJson module),
-      ("kind", Json.str (kindOf env info)),
-      ("line", match line with | some l => toJson l | none => Json.null),
+    concepts := concepts.push (name.toString, Json.mkObj ((← describe env moduleNames name info) ++ [
       ("doc", optionalJson doc),
-      ("signature", optionalJson signature),
       ("statement", names listed s self),
-      ("proof", names listed p (s ||| self))])
+      ("proof", names listed p (s ||| self))]))
   let mut cited : Array (String × Json) := #[]
+  let mut described : Std.HashSet Name := {}
   let mut unresolved : Array Json := #[]
   if let some citedPath := (← IO.getEnv "TROUGH_CITED") then
-    let mut described : Std.HashSet Name := {}
     let mut replacements : Array Name := #[]
     for name in ← readNames citedPath do
       described := described.insert name
       match env.find? name with
       | none => unresolved := unresolved.push (Json.str name.toString)
       | some info =>
-        let record ← describe env moduleNames name info
-        cited := cited.push (name.toString, record)
+        cited := cited.push (name.toString, Json.mkObj (← describe env moduleNames name info))
         if let some replacement := Linter.getDeprecatedNewName env name then
           replacements := replacements.push replacement
     -- What replaces a deprecated name is described too, so a run at a new pin can rename the citation.
@@ -288,8 +280,7 @@ def run : MetaM Unit := do
       if described.contains name then continue
       described := described.insert name
       if let some info := env.find? name then
-        let record ← describe env moduleNames name info
-        cited := cited.push (name.toString, record)
+        cited := cited.push (name.toString, Json.mkObj (← describe env moduleNames name info))
   let mut modules : Array (String × Json) := #[]
   for module in ← readNames modulesPath do
     match env.getModuleIdx? module with
@@ -314,6 +305,13 @@ def run : MetaM Unit := do
         let line := ((← findDeclarationRanges? constant).map (·.range.pos.line)).getD 0
         documented := documented.push (line, constant)
       let ordered := documented.qsort (fun a b => a.1 < b.1 || (a.1 == b.1 && a.2.toString < b.2.toString))
+      -- A module's page credits its documented declarations, so the unlisted ones are described too.
+      for entry in ordered do
+        let constant := entry.2
+        if index.contains constant || described.contains constant then continue
+        described := described.insert constant
+        if let some info := env.find? constant then
+          cited := cited.push (constant.toString, Json.mkObj (← describe env moduleNames constant info))
       modules := modules.push (module.toString, Json.mkObj [
         ("found", true),
         ("doc", optionalJson doc),
@@ -322,6 +320,7 @@ def run : MetaM Unit := do
   let out := Json.mkObj [
     ("schema", "trough-concept-deps/v1"),
     ("mathlib_rev", rev),
+    ("lean_githash", Json.str Lean.githash),
     ("concepts", Json.mkObj concepts.toList),
     ("cited", Json.mkObj cited.toList),
     ("unresolved", Json.arr unresolved),
