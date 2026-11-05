@@ -18,6 +18,7 @@ PrimeSpectrum.zariskiTopology.{u} {R : Type u} [CommSemiring R] : TopologicalSpa
 
 ## Depends on
 
+- [Module](../../linear-algebra/fundamentals/module.md)
 - [Prime spectrum](prime-spectrum.md)
 - [Topological space](../../topology/general-topology/part-01/topological-space.md)
 

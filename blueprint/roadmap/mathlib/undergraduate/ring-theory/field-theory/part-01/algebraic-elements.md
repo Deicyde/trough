@@ -20,7 +20,6 @@ IsAlgebraic.{u, v} (R : Type u) {A : Type v} [CommRing R] [Ring A] [Algebra R A]
 - [Associative algebra over a commutative ring](../../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Linear map](../../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](../../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Ring](../../../../overview/general-algebra/rings/ring.md)
 
 ## Sources
 

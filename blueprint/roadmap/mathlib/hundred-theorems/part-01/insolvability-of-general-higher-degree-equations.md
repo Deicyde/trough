@@ -28,6 +28,7 @@ AbelRuffini.exists_not_solvable_by_rad : ∃ x, IsAlgebraic ℚ x ∧ x ∉ solv
 - [Intermediate value theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)
 - [Rolle's theorem](../../overview/analysis/differentiability/rolles-theorem.md)
 - [Separable polynomial](../../overview/general-algebra/polynomials-and-power-series/separable-polynomial.md)
+- [The Fundamental Theorem of Arithmetic](../part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources
 

@@ -24,6 +24,7 @@ Freek Wiedijk's list (no. 7) and the 1000+ list (Q472883) also cite `jacobiSym.q
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Group morphism](../group-theory/part-01/group-morphism.md)
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
+- [Rational number](../numbers/rational-number.md)
 
 ## Proof depends on
 

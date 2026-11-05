@@ -21,7 +21,7 @@ AlgebraicGeometry.LocallyRingedSpace.{u} : Type (u + 1)
 ## Depends on
 
 - [Local ring](../../general-algebra/rings/local-ring.md)
-- [Ring](../../general-algebra/rings/ring.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Ring morphism](../../general-algebra/rings/ring-morphism.md)
 - [Sheafed space](../../general-algebra/category-theory/sheafed-space.md)
 

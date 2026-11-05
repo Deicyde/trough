@@ -23,8 +23,8 @@ Matrix.det.{v, u_2} {n : Type u_2} [DecidableEq n] [Fintype n] {R : Type v} [Com
 
 - [Alternating map](../fundamentals/alternating-map.md)
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Integer](../../general-algebra/numbers/integer.md)
 - [Linear map](../fundamentals/linear-map.md)
-- [Ring](../../general-algebra/rings/ring.md)
 - [Ring-valued matrix](ring-valued-matrix.md)
 - [Signature](../../../undergraduate/group-theory/permutation-group/signature.md)
 

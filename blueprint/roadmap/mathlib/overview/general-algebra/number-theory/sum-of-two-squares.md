@@ -18,6 +18,7 @@ Nat.Prime.sq_add_sq {p : ℕ} [Fact (Nat.Prime p)] (hp : p % 4 ≠ 3) : ∃ a b,
 ## Depends on
 
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)
+- [Natural number](../numbers/natural-number.md)
 
 ## Proof depends on
 

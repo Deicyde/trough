@@ -18,7 +18,6 @@ Field.exists_primitive_element.{u_1, u_2} (F : Type u_1) (E : Type u_2) [Field F
 
 ## Depends on
 
-- [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Minimal polynomial](../../../overview/linear-algebra/endomorphism-polynomials/minimal-polynomial.md)
 - [Separable polynomial](../../../overview/general-algebra/polynomials-and-power-series/separable-polynomial.md)
@@ -30,9 +29,7 @@ Field.exists_primitive_element.{u_1, u_2} (F : Type u_1) (E : Type u_2) [Field F
 - [Cyclic group](../../../overview/general-algebra/group-theory/part-01/cyclic-group.md)
 - [Greatest Common Divisor Algorithm](../../../hundred-theorems/part-04/greatest-common-divisor-algorithm.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
-- [Roots of a polynomial](../../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
 - [Splitting field](../../../overview/general-algebra/field-theory/splitting-field.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
 
 ## Sources
 

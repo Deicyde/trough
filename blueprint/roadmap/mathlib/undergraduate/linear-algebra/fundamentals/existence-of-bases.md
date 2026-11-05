@@ -22,7 +22,6 @@ Module.Basis.ofVectorSpace.{u_3, u_4} (K : Type u_3) (V : Type u_4) [DivisionRin
 - [Linear independence](linear-independence.md)
 - [Range of a linear map](range-of-a-linear-map.md)
 - [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Sources
 

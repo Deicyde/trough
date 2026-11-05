@@ -19,8 +19,8 @@ jacobson_density.{u_2, u_4} {R : Type u_2} [Ring R] {M : Type u_4} [AddCommGroup
 ## Depends on
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Proof depends on

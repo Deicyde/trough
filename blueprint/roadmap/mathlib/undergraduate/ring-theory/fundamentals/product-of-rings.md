@@ -16,6 +16,7 @@ Pi.ring.{u, v} {I : Type u} {f : I → Type v} [(i : I) → Ring (f i)] : Ring (
 
 ## Depends on
 
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Sources

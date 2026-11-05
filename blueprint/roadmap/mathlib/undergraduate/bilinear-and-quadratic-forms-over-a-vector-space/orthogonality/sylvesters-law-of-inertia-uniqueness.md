@@ -27,6 +27,7 @@ QuadraticForm.sigPos_of_equiv_weightedSumSquares.{u_2, u_4, u_5} {M : Type u_2} 
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Linear independence](../../linear-algebra/fundamentals/linear-independence.md)
 - [Quadratic form](../../../overview/linear-algebra/bilinear-and-quadratic-forms/quadratic-form.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 

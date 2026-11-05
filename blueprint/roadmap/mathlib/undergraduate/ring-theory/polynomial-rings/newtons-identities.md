@@ -22,9 +22,9 @@ MvPolynomial.mul_esymm_eq_sum.{u_1, u_2} (σ : Type u_1) [Fintype σ] (R : Type 
 
 ## Depends on
 
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Proof depends on
 

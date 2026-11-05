@@ -26,6 +26,7 @@ char_dvd_card_solutions_of_sum_lt.{u_1, u_2, u_3} {K : Type u_1} {σ : Type u_2}
 - [Characteristic p](../../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Polynomial in several indeterminates](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-several-indeterminates.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 - [Ring morphism](../../../overview/general-algebra/rings/ring-morphism.md)
 
 ## Sources

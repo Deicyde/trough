@@ -22,7 +22,6 @@ Liouville.transcendental {x : ℝ} (lx : Liouville x) : Transcendental ℤ x
 
 ## Proof depends on
 
-- [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../../overview/topology/general-topology/part-01/closure.md)
 - [Completeness](../../overview/topology/uniform-notions/completeness.md)
 - [Convex subsets](../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
@@ -33,8 +32,6 @@ Liouville.transcendental {x : ℝ} (lx : Liouville x) : Transcendental ℤ x
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [Polynomial derivative](../../undergraduate/ring-theory/polynomial-rings/polynomial-derivative.md)
-- [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Roots of a polynomial](../../overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 

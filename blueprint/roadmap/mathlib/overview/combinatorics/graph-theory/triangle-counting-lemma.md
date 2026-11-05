@@ -26,7 +26,6 @@ SimpleGraph.triangle_counting.{u_1} {α : Type u_1} (G : SimpleGraph α) [Decida
 - [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Set](../../data-structures/sets/set.md)
 - [Simple graph](simple-graph.md)
 
 ## Proof depends on

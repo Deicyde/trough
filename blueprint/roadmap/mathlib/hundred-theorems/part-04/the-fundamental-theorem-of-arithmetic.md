@@ -64,7 +64,6 @@ The 1000+ list (Q670235): it also has a generalized version, by showing that eve
 ## Depends on
 
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Ideal of a commutative ring](../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
 - [Multiset](../../overview/data-structures/sets/multiset.md)
 - [Principal ideal domain](../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)

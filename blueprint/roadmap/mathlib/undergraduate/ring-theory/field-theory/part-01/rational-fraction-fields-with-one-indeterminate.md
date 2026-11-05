@@ -22,7 +22,6 @@ RatFunc.{u} (K : Type u) [CommRing K] : Type u
 
 - [Localization](../../../../overview/general-algebra/rings/localization.md)
 - [Polynomial in one indeterminate](../../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Ring](../../../../overview/general-algebra/rings/ring.md)
 
 ## Sources
 

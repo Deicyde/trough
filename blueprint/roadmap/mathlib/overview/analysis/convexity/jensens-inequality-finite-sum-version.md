@@ -25,6 +25,7 @@ ConvexOn.map_sum_le.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {E : Type u_2} {β : 
 - [Field](../../general-algebra/field-theory/field.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Module](../../linear-algebra/fundamentals/module.md)
+- [Rational number](../../general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 

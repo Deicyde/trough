@@ -21,7 +21,6 @@ Module.End.exists_isNilpotent_isSemisimple.{u_1, u_2} {K : Type u_1} {V : Type u
 ## Depends on
 
 - [Algebra of endomorphisms of a vector space](../fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Irreducible element](../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Separable polynomial](../../../overview/general-algebra/polynomials-and-power-series/separable-polynomial.md)

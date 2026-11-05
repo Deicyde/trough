@@ -21,8 +21,7 @@ Nat.ModEq.pow_totient {x n : ℕ} (h : x.Coprime n) : x ^ n.totient ≡ 1 [MOD n
 
 ## Proof depends on
 
-- [$\Z/n\Z$ and its invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/z-n-z-and-its-invertible-elements.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
+- [Finite set](../../overview/data-structures/sets/finite-set.md)
 
 ## Sources
 

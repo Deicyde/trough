@@ -32,6 +32,7 @@ LieModule.exists_nontrivial_weightSpace_of_isSolvable.{u_1, u_2, u_3} (k : Type 
 - [Generalized eigenspaces](../../../undergraduate/linear-algebra/structure-theory-of-endomorphisms/generalized-eigenspaces.md)
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Lie algebra](../../../overview/general-algebra/algebras-over-a-ring/lie-algebra.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Proof depends on
@@ -41,8 +42,8 @@ LieModule.exists_nontrivial_weightSpace_of_isSolvable.{u_1, u_2, u_3} (k : Type 
 - [Eigenvalue](../../../overview/linear-algebra/structure-theory-of-endomorphisms/eigenvalue.md)
 - [Eigenvector](../../../overview/linear-algebra/structure-theory-of-endomorphisms/eigenvector.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Ideal of a commutative ring](../../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
+- [Noetherian module](../../../overview/linear-algebra/fundamentals/noetherian-module.md)
 - [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
 - [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
 - [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)

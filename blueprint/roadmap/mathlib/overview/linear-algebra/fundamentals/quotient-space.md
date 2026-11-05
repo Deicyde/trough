@@ -17,6 +17,7 @@ Submodule.hasQuotient.{u_1, u_2} {R : Type u_1} {M : Type u_2} [Ring R] [AddComm
 
 ## Depends on
 
+- [Integer](../../general-algebra/numbers/integer.md)
 - [Module](module.md)
 - [Ring](../../general-algebra/rings/ring.md)
 

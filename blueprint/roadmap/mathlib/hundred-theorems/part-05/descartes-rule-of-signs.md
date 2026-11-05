@@ -24,7 +24,6 @@ Polynomial.roots_countP_pos_le_signVariations.{u_1} {R : Type u_1} [CommRing R] 
 ## Proof depends on
 
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
-- [The Factor and Remainder Theorems](the-factor-and-remainder-theorems.md)
 
 ## Sources
 

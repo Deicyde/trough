@@ -23,10 +23,10 @@ Matrix.invOf_add_mul_mul'.{u_1, u_2, u_3} {m : Type u_1} {n : Type u_2} {α : Ty
 ## Depends on
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Ring](../../../overview/general-algebra/rings/ring.md)
 - [Ring-valued matrix](../../../overview/linear-algebra/matrices/ring-valued-matrix.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

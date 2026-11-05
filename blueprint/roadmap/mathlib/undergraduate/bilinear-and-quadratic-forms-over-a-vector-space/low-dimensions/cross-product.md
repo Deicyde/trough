@@ -17,8 +17,8 @@ crossProduct.{u_1} {R : Type u_1} [CommRing R] : (Fin 3 → R) →ₗ[R] (Fin 3 
 ## Depends on
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Sources
 

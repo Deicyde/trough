@@ -35,7 +35,6 @@ IsSemisimpleRing.exists_algEquiv_pi_matrix_divisionRing.{u, u_1} (R₀ : Type u_
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 - [Ring-valued matrix](../../../overview/linear-algebra/matrices/ring-valued-matrix.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 

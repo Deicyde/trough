@@ -30,7 +30,6 @@ compl_beattySeq {r s : ℝ} (hrs : r.HolderConjugate s) :
 ## Depends on
 
 - [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

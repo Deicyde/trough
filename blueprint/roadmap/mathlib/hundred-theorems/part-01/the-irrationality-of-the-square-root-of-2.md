@@ -17,7 +17,6 @@ irrational_sqrt_two : Irrational √2
 ## Depends on
 
 - [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
-- [Set](../../overview/data-structures/sets/set.md)
 
 ## Proof depends on
 

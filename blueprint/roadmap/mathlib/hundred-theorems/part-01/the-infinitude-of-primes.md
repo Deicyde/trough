@@ -18,6 +18,7 @@ Nat.exists_infinite_primes (n : ℕ) : ∃ p, n ≤ p ∧ Nat.Prime p
 ## Depends on
 
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 
 ## Sources
 

@@ -23,7 +23,6 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 ## Depends on
 
 - [Finitely supported function](../../data-structures/maps/finitely-supported-function.md)
-- [Ideal of a commutative ring](../../general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
 - [Irreducible element](../../general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Linear map](../fundamentals/linear-map.md)
 - [Principal ideal domain](../../general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
@@ -41,10 +40,10 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Localization](../../general-algebra/rings/localization.md)
 - [Maximal ideal](../../general-algebra/ideals-and-quotients/maximal-ideal.md)
+- [Noetherian module](../fundamentals/noetherian-module.md)
 - [Noetherian ring](../../general-algebra/rings/noetherian-ring.md)
 - [Polynomial in one indeterminate](../../general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Prime ideal](../../general-algebra/ideals-and-quotients/prime-ideal.md)
-- [Quotient ring](../../general-algebra/ideals-and-quotients/quotient-ring.md)
 - [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
 - [Small category](../../general-algebra/category-theory/small-category.md)
 - [The category of modules over a ring](../fundamentals/the-category-of-modules-over-a-ring.md)

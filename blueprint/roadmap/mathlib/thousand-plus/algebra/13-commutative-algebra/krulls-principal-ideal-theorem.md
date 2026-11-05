@@ -23,7 +23,6 @@ Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes.{u_1} {R : Type u_1} [Co
 - [Noetherian ring](../../../overview/general-algebra/rings/noetherian-ring.md)
 - [Prime spectrum](../../../overview/geometry/algebraic-geometry/prime-spectrum.md)
 - [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Proof depends on
 
@@ -31,9 +30,9 @@ Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes.{u_1} {R : Type u_1} [Co
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Localization](../../../overview/general-algebra/rings/localization.md)
-- [Maximal ideal](../../../overview/general-algebra/ideals-and-quotients/maximal-ideal.md)
+- [Noetherian module](../../../overview/linear-algebra/fundamentals/noetherian-module.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

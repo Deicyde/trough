@@ -26,13 +26,13 @@ Theorems100.cubic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d : K) {ω p
 
 - [Field](../../overview/general-algebra/field-theory/field.md)
 - [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
+- [Rational number](../../overview/general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 
 - [Cyclotomic polynomials in $\Q\[X\]$](../../undergraduate/ring-theory/polynomial-rings/cyclotomic-polynomials-in-q-x.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Local ring](../../overview/general-algebra/rings/local-ring.md)
-- [Polynomial functions](../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 
 ## Sources
 

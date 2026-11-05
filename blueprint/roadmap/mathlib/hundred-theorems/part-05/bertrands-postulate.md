@@ -22,6 +22,7 @@ Nat.bertrand (n : ℕ) (hn0 : n ≠ 0) : ∃ p, Nat.Prime p ∧ n < p ∧ p ≤ 
 ## Depends on
 
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Natural number](../../overview/general-algebra/numbers/natural-number.md)
 
 ## Proof depends on
 

@@ -19,11 +19,11 @@ ZMod.pow_card_sub_one_eq_one {p : ℕ} [Fact (Nat.Prime p)] {a : ZMod p} (ha : a
 
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Irreducible element](../../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 
 ## Sources
 

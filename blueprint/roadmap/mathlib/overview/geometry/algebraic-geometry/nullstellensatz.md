@@ -31,9 +31,8 @@ MvPolynomial.vanishingIdeal_zeroLocus_eq_radical.{u_1, u_2, u_3} {k : Type u_1} 
 - [Finite-dimensionality](../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
 - [Local ring](../../general-algebra/rings/local-ring.md)
 - [Localization](../../general-algebra/rings/localization.md)
-- [Maximal ideal](../../general-algebra/ideals-and-quotients/maximal-ideal.md)
 - [Prime ideal](../../general-algebra/ideals-and-quotients/prime-ideal.md)
-- [Quotient ring](../../general-algebra/ideals-and-quotients/quotient-ring.md)
+- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
 - [Sum of subspaces](../../../undergraduate/linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources

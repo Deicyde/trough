@@ -28,6 +28,7 @@ Convex.radon_partition.{u_1, u_2, u_3} {ι : Type u_1} {𝕜 : Type u_2} {E : Ty
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Proof depends on
 

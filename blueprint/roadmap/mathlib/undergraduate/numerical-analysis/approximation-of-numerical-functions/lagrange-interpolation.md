@@ -22,6 +22,7 @@ Lagrange.interpolate.{u_1, u_2} {F : Type u_1} [Field F] {ι : Type u_2} [Decida
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Sources
 

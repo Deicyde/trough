@@ -21,8 +21,8 @@ PointedCone.minTensorProduct.{u_1, u_2, u_3} {R : Type u_1} [CommRing R] [Linear
 ## Depends on
 
 - [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
+- [Integer](../../general-algebra/numbers/integer.md)
 - [Pointed cone](pointed-cone.md)
-- [Ring](../../general-algebra/rings/ring.md)
 - [Tensor product](../../linear-algebra/fundamentals/tensor-product.md)
 
 ## Sources

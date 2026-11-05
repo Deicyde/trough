@@ -25,9 +25,10 @@ PowerSeries.exists_isWeierstrassFactorization.{u_1} {A : Type u_1} [CommRing A] 
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
-- [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Power series](../../../overview/general-algebra/polynomials-and-power-series/power-series.md)
 - [Quotient ring](../../../overview/general-algebra/ideals-and-quotients/quotient-ring.md)
+- [Quotient space (Fundamentals)](../../../overview/linear-algebra/fundamentals/quotient-space.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Sources
 

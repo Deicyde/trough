@@ -19,6 +19,7 @@ Representation.IsIrreducible.{u_1, u_2, u_3} {G : Type u_1} {k : Type u_2} {V : 
 ## Depends on
 
 - [Field](../../../overview/general-algebra/field-theory/field.md)
+- [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 - [Representation](../../../overview/general-algebra/representation-theory/representation.md)
 
 ## Sources

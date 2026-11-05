@@ -21,7 +21,6 @@ InnerProductSpace.Core.toNorm.{u_1, u_3} {𝕜 : Type u_1} {F : Type u_3} [RCLik
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
-- [Module](../../../overview/linear-algebra/fundamentals/module.md)
 
 ## Sources
 

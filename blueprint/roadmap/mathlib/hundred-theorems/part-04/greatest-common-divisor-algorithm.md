@@ -34,6 +34,7 @@ EuclideanDomain.dvd_gcd.{u} {R : Type u} [EuclideanDomain R] [DecidableEq R] {a 
 ## Depends on
 
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Integer](../../overview/general-algebra/numbers/integer.md)
 
 ## Sources
 

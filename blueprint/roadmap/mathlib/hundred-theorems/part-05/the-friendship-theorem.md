@@ -34,6 +34,7 @@ Theorems100.friendship_theorem.{u} {V : Type u} [Fintype V] {G : SimpleGraph V}
 - [Field](../../overview/general-algebra/field-theory/field.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
+- [Rational number](../../overview/general-algebra/numbers/rational-number.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 
 ## Sources

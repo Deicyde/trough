@@ -26,7 +26,6 @@ four_functions_theorem.{u_1, u_2} {α : Type u_1} {β : Type u_2} [DistribLattic
 ## Proof depends on
 
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

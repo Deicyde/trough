@@ -19,12 +19,11 @@ exists_gcd_eq_mul_add_mul.{u} {R : Type u} [CommRing R] [IsBezout R] [IsDomain R
 
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
-- [Ideal of a commutative ring](../../../overview/general-algebra/ideals-and-quotients/ideal-of-a-commutative-ring.md)
 - [Principal ideal domain](../../../overview/general-algebra/divisibility-in-integral-domains/principal-ideal-domain.md)
-- [Ring](../../../overview/general-algebra/rings/ring.md)
 
 ## Proof depends on
 
+- [Integer](../../../overview/general-algebra/numbers/integer.md)
 - [Sum of subspaces](../../linear-algebra/fundamentals/sum-of-subspaces.md)
 
 ## Sources
