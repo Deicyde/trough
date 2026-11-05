@@ -19,6 +19,7 @@ on:
       - "tools/**"
       - "wiki/**"
       - "data/thousand-plus.json"
+      - "data/blueprints/**"
       - ".github/workflows/mathlib-data.yml"
   pull_request:
     paths:
@@ -26,6 +27,7 @@ on:
       - "tools/**"
       - "wiki/**"
       - "data/thousand-plus.json"
+      - "data/blueprints/**"
       - ".github/workflows/mathlib-data.yml"
   workflow_dispatch:
     inputs:

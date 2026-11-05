@@ -129,11 +129,13 @@ jobs:
           for attempt in 1 2 3; do
             git fetch --quiet origin main
             git reset --quiet --hard origin/main
+            uv run --no-dev python tools/generate.py --cited "$RUNNER_TEMP/cited-before.txt"
             for id in $LIBRARIES; do
               case "$id" in *[!a-z0-9-]*|"") echo "::error::Bad library id: $id"; exit 1;; esac
               rm -rf "data/blueprints/$id"
               cp -R "$src/$id" "data/blueprints/$id"
             done
+            uv run --no-dev python tools/generate.py --cited "$RUNNER_TEMP/cited-after.txt"
             uv run --no-dev python tools/generate.py
             git add -A data/blueprints blueprint hooks/lean-links.json
             if git diff --cached --quiet; then
@@ -151,5 +153,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # The names blueprint pages credit to Mathlib are in the Mathlib data's cited
+          # list; when they change, the Mathlib data run describes them (at the same pin).
+          if ! cmp -s "$RUNNER_TEMP/cited-before.txt" "$RUNNER_TEMP/cited-after.txt"; then
+            gh workflow run mathlib-data.yml --ref main -R "$GITHUB_REPOSITORY"
+          fi
           gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
           gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"
