@@ -173,6 +173,15 @@ def test_an_authored_article_drops_its_concepts_informal_edges(tmp_path):
     assert targets["B"].informal == [] and stats["informal"] == 0
 
 
+def test_a_prerequisite_may_be_a_concept_with_no_declarations(tmp_path):
+    sources = fake_sources()
+    sources.lists["overview"] += [mathlib.Item("overview", "w", ("Area", "Sub"), "wanted thing", 4),
+                                  mathlib.Item("overview", "m", ("Area", "Sub"), "a module", 5, module="Mathlib.Mod")]
+    alpha = ARTICLE.replace("- [Gamma](trough:C)", "- [Wanted](trough:overview:w)\n- [Module](trough:Mathlib.Mod)")
+    _, _, targets = mathlib.chapter(sources, write(tmp_path, alpha=alpha))
+    assert [leaf.title for leaf in targets["A"].depends] == ["Wanted thing", "A module"]
+
+
 def test_prerequisites_that_close_a_cycle_stop_the_chapter(tmp_path):
     beta = ARTICLE.replace("concept: A", "concept: B").replace("0001", "0004").replace("(trough:B)", "(trough:A)")
     beta = beta.replace("- [Gamma](trough:C)", "- [Alpha](trough:A)")

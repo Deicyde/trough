@@ -646,7 +646,9 @@ def link_edges(sources: Sources, articles: list[Article],
     for article in articles:
         for name in article.decls:
             by_decl.setdefault(name, article)
-    nodes = sorted((article for article in articles if article.decls or article in chosen), key=sort_key)
+    # An authored article's prerequisites may be concepts with no declarations.
+    wanted = set(chosen).union(*(depends + proof_depends for depends, proof_depends in chosen.values()))
+    nodes = sorted((article for article in articles if article.decls or article in wanted), key=sort_key)
     stmt: dict[Article, set[Article]] = {article: set() for article in nodes}
     proof: dict[Article, set[Article]] = {article: set() for article in nodes}
     for article in nodes:
