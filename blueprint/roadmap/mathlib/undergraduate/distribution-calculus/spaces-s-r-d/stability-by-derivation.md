@@ -20,7 +20,6 @@ SchwartzMap.fderivCLM.{u_2, u_4, u_7} (𝕜 : Type u_2) (E : Type u_4) (F : Type
 
 - [Associative algebra over a commutative ring](../../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Schwartz space](../../../overview/analysis/distribution-theory/schwartz-space.md)
 
 ## Sources

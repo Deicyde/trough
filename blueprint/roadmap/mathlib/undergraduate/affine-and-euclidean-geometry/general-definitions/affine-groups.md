@@ -18,7 +18,6 @@ AffineEquiv.group.{u_1, u_2, u_6} {k : Type u_1} {P₁ : Type u_2} {V₁ : Type 
 ## Depends on
 
 - [Affine space](../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
 - [Ring](../../../overview/general-algebra/rings/ring.md)
 

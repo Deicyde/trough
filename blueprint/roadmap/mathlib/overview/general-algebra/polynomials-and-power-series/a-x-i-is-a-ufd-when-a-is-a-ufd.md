@@ -26,7 +26,6 @@ MvPolynomial.uniqueFactorizationMonoid.{u, v} (σ : Type v) {D : Type u} [CommRi
 - [Associative algebra over a commutative ring](../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic zero](../field-theory/characteristic-zero.md)
 - [Greatest common divisor](../divisibility-in-integral-domains/greatest-common-divisor.md)
-- [Group](../group-theory/part-01/group.md)
 - [Least common multiple](../divisibility-in-integral-domains/least-common-multiple.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Polynomial in one indeterminate](polynomial-in-one-indeterminate.md)

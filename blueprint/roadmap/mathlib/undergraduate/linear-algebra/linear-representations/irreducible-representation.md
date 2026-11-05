@@ -20,7 +20,6 @@ Representation.IsIrreducible.{u_1, u_2, u_3} {G : Type u_1} {k : Type u_2} {V : 
 
 - [Field](../../../overview/general-algebra/field-theory/field.md)
 - [Representation](../../../overview/general-algebra/representation-theory/representation.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

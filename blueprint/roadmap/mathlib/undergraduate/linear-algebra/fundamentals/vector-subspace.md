@@ -20,7 +20,6 @@ Subspace.{u, v} (R : Type u) (M : Type v) [DivisionRing R] [AddCommGroup M] [_ro
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
 - [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 - [Ring](../../../overview/general-algebra/rings/ring.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

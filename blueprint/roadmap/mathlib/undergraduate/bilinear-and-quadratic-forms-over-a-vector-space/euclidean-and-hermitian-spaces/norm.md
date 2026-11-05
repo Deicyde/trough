@@ -22,7 +22,6 @@ InnerProductSpace.Core.toNorm.{u_1, u_3} {𝕜 : Type u_1} {F : Type u_3} [RCLik
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Sources
 

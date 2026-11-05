@@ -18,7 +18,6 @@ Ideal.{u} (R : Type u) [Semiring R] : Type u
 ## Depends on
 
 - [Module](../../linear-algebra/fundamentals/module.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

@@ -18,7 +18,6 @@ Submodule.completeLattice.{u_1, u_3} {R : Type u_1} {M : Type u_3} [Semiring R] 
 ## Depends on
 
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

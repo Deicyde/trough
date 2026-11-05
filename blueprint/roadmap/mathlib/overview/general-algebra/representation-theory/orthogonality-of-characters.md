@@ -23,7 +23,6 @@ FDRep.char_orthonormal.{u, v} {k : Type u} [Field k] {G : Type v} [Group G] [IsA
 - [Algebraically closed field](../field-theory/algebraically-closed-field.md)
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Character](character.md)
-- [Group](../group-theory/part-01/group.md)
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Isomorphism](../category-theory/isomorphism.md)
 

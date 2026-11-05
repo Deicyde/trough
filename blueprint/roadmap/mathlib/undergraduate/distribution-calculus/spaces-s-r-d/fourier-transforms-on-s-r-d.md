@@ -26,7 +26,6 @@ SchwartzMap.fourierTransformCLM.{u_1, u_2, u_3} (𝕜 : Type u_1) [RCLike 𝕜] 
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Cos (extension of trigonometric functions to the complex plane)](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Finite-dimensionality](../../../overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Inner product space, over $R$ or $C$](../../../overview/analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Lebesgue measure (Measure theory)](../../measures-and-integral-calculus/measure-theory/lebesgue-measure.md)
 - [Schwartz space](../../../overview/analysis/distribution-theory/schwartz-space.md)

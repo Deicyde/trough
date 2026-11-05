@@ -1,4 +1,5 @@
 ---
+article_id: af_4c425b4601e73e5607189d1b
 declaration: def
 origin: cited
 mathlib: true
@@ -8,17 +9,112 @@ mathlib_file: Mathlib/GroupTheory/SpecificGroups/Alternating.lean
 
 # Alternating group
 
-The alternating group on a finite type, realized as a subgroup of `Equiv.Perm`.
-For $A_n$, use `alternatingGroup (Fin n)`.
+The **alternating group** $A_n$ is the group of even permutations of $n$ letters,
+a [subgroup](../part-01/subgroup.md) of index two in the symmetric group $S_n$ when
+$n \ge 2$. The alternating groups $A_n$ with $n \ge 5$ form the most elementary
+infinite family of nonabelian [simple groups](../part-01/simple-group.md): each has no
+normal subgroups other than the trivial group and itself. This fact is the group-theoretic reason why the general polynomial equation
+of degree five or more cannot be solved by radicals, and the alternating groups form
+one of the infinite families in the [classification of finite simple groups](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/classification-of-finite-simple-groups.md).
 
-```lean
-alternatingGroup.{u_1} (α : Type u_1) [Fintype α] [DecidableEq α] : Subgroup (Equiv.Perm α)
-```
+## Definition
+
+A transposition is a permutation that exchanges two letters and fixes the rest.
+[Every permutation of a finite set can be written as a product of transpositions](../../../../undergraduate/group-theory/permutation-group/decomposition-into-transpositions.md), and although such a product is not unique, the parity of the number of transpositions is.
+The [sign](../../../../undergraduate/group-theory/permutation-group/signature.md) of a permutation is $+1$ if this number is even
+and $-1$ if it is odd, and it defines a [group morphism](../part-01/group-morphism.md) from the
+[permutation group](permutation-group-of-a-type.md) $S_n$ to the two-element group $\{+1, -1\}$.
+
+The alternating group on a finite set $X$ is
+[the kernel of the sign morphism](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#alternatingGroup), so that
+[a permutation belongs to it exactly when its sign is $+1$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#Equiv.Perm.mem_alternatingGroup).
+Equivalently, [a product of transpositions lies in the alternating group if and only if the number of factors is even](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#Equiv.Perm.prod_list_swap_mem_alternatingGroup_iff_even_length).
+The group $A_n$ is the alternating group on $\{1, \dots, n\}$; a bijection between
+two finite sets [induces an isomorphism between their alternating groups](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#Equiv.altCongrHom), so only the number of letters matters.
+
+## Examples
+
+- For $n \le 1$ the symmetric group is trivial, and so is $A_n$. For $n = 2$ the only
+  nontrivial permutation is a transposition, which is odd, so $A_2$ is again trivial.
+- $A_3$ consists of the identity and the two 3-cycles, the permutations that send
+  one letter $a$ to $b$, $b$ to $c$ and $c$ back to $a$; it is cyclic of order $3$.
+- $A_4$ has order $12$. It contains the identity, eight 3-cycles and the three
+  products of two disjoint transpositions; those three products together with the
+  identity form a copy of the Klein four-group $\mathbb{Z}/2 \times \mathbb{Z}/2$, which is
+  [a normal subgroup of $A_4$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.html#alternatingGroup.normal_kleinFour). The group $A_4$
+  is a standard example showing that the converse of [Lagrange's theorem](lagranges-theorem.md) fails: it has no subgroup of order $6$.
+- $A_5$ has order $60$ and is the smallest nonabelian simple group. It is isomorphic to
+  the group of rotations of a regular icosahedron.
+
+## Properties
+
+- **Order and index.** For $n \ge 2$, $A_n$ has [index](../part-01/index-of-a-subgroup.md)
+  [two in $S_n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#alternatingGroup.index_eq_two), so
+  [its order is $n!/2$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#card_alternatingGroup). Being of index two, it is
+  [a normal subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#alternatingGroup.normal) of $S_n$ (see [normal subgroup](../part-01/normal-subgroup.md)), and it is
+  [the only subgroup of index two](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#Equiv.Perm.eq_alternatingGroup_of_index_eq_two).
+- **Generators.** [Every 3-cycle is even](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#Equiv.Perm.IsThreeCycle.mem_alternatingGroup),
+  since it is the product of two transpositions, and moreover [the 3-cycles generate $A_n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#Equiv.Perm.closure_three_cycles_eq_alternating)
+  (see [subgroup generated by a subset](../part-01/subgroup-generated-by-a-subset.md)): any product of two
+  transpositions can be rewritten as a product of 3-cycles.
+- **Small cases.** [$A_n$ is abelian if and only if $n \le 3$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#alternatingGroup.isMulCommutative_iff_card_le_three),
+  and for $n \ge 4$ [its center is trivial](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#alternatingGroup.center_eq_bot): only the identity
+  commutes with every element. For $n \le 4$ the group
+  [is solvable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating/Simple.html#alternatingGroup.isSolvable), meaning that it has a chain of
+  subgroups, each normal in the next, whose successive quotients are abelian.
+- **Simplicity.** For $n \ge 5$, [$A_n$ is a simple group](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating/Simple.html#alternatingGroup.isSimpleGroup);
+  this theorem has [its own article](alternating-groups-on-5-letters-or-more-are-simp.md). For $A_5$ a
+  short argument uses [conjugacy classes](../../../../undergraduate/group-theory/basic-definitions/conjugacy-classes.md): their sizes are $1$, $15$,
+  $20$, $12$ and $12$, a normal subgroup is a union of classes containing the identity,
+  and no such union other than $\{e\}$ and the whole group has an order dividing $60$, as Lagrange's theorem requires.
+  The case $n = 4$ shows that the bound is sharp, because of the normal Klein four-group.
+- **Commutators.** For $n \ge 5$, $A_n$ is [equal to its own commutator subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating/Centralizer.html#commutator_alternatingGroup_eq_top), the subgroup generated by all
+  commutators $ghg^{-1}h^{-1}$, and
+  [it is the commutator subgroup of $S_n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating/Centralizer.html#alternatingGroup.commutator_perm_eq).
+  The second statement holds for every $n$, since $S_n / A_n$ is abelian and the
+  commutators of transpositions produce all 3-cycles. In particular the
+  [abelianization](../part-01/abelianization.md) of $S_n$ is $S_n / A_n$, of order two
+  when $n \ge 2$.
+- **Transitivity.** The action of $A_n$ on the $n$ letters
+  [is $(n - 2)$-fold transitive](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/MultipleTransitivity.html#alternatingGroup.isMultiplyPretransitive): any
+  ordered list of $n - 2$ distinct letters can be carried to any other.
+
+## Related concepts
+
+Since $S_n$ is not solvable for $n \ge 5$ (its normal subgroup $A_n$ is simple and
+nonabelian), Galois theory shows that a polynomial of degree $n \ge 5$ over a field
+of characteristic zero whose Galois group is the full symmetric group $S_n$ cannot be
+solved by radicals (see [solvability by radicals implies a solvable Galois group](../../field-theory/abel-ruffini-theorem-one-direction.md)); applying this to a suitable quintic over the
+rationals gives the [Abel–Ruffini theorem](../../../../hundred-theorems/part-01/insolvability-of-general-higher-degree-equations.md). Through
+[Cayley's theorem](cayleys-theorem.md) every finite group
+embeds in some symmetric group, and composing with the embedding of $S_n$ into
+$A_{n+2}$ shows that every finite group also embeds in an alternating group. The
+quotient $S_n / A_n$ is the [quotient group](../part-01/quotient-group.md)
+that the [first isomorphism theorem](../part-01/first-isomorphism-theorem.md)
+identifies, for $n \ge 2$, with the image $\{+1, -1\}$ of the sign morphism.
+
+## In Mathlib
+
+Mathlib defines the alternating group for any finite type with decidable equality,
+as a subgroup of the full permutation group of that type, namely the kernel of the
+sign morphism; the textbook $A_n$ is the case of a type with exactly $n$ elements.
+Statements that depend on $n$ are phrased through the number of elements of the type.
+The formulas for the index and the order assume at least two elements: with fewer,
+[the index is $1$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating.html#alternatingGroup.index_eq_one), and the order formula would
+fail, since $1/2$ rounds down to $0$ in the division of natural numbers. Mathlib proves simplicity for $n \ge 5$ through Iwasawa's
+criterion, applied to the action on three-element subsets, with the action on
+four-element subsets covering the case of six letters. Its statement that $A_n$ is
+the commutator subgroup of $S_n$ carries the hypothesis $n \ge 5$, while the
+inclusion of the commutator subgroup in $A_n$ is proved for every $n$.
+
+*Written for Trough, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## Depends on
 
+- [Permutation group of a type](permutation-group-of-a-type.md)
 - [Signature](../../../../undergraduate/group-theory/permutation-group/signature.md)
 - [Subgroup](../part-01/subgroup.md)
+- [Group morphism](../part-01/group-morphism.md)
 
 ## Sources
 

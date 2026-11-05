@@ -31,7 +31,6 @@ The 1000+ list (Q189136) also cites `exists_ratio_deriv_eq_ratio_slope`.
 - [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
 - [Finite set](../../overview/data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Topological ring](../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources

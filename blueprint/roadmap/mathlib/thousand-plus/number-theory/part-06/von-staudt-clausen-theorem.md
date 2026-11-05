@@ -24,7 +24,6 @@ Bernoulli.vonStaudt_clausen (k : ℕ) :
 
 ## Proof depends on
 
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 - [Subring](../../../overview/general-algebra/rings/subring.md)
 - [Sum of kth powers](../../../hundred-theorems/part-04/sum-of-kth-powers.md)

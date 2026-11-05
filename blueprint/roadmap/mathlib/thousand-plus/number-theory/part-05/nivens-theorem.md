@@ -30,7 +30,6 @@ niven {θ : ℝ} (hθ : ∃ r, θ = ↑r * Real.pi) (hcos : ∃ q, Real.cos θ =
 - [Integral root theorem](../../algebra/12-field-theory-and-polynomials/integral-root-theorem.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
 
 ## Sources

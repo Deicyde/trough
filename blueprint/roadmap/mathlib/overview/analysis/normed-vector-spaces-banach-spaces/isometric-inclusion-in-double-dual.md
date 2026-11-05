@@ -22,7 +22,6 @@ NormedSpace.inclusionInDoubleDualLi.{u, v} (𝕜 : Type v) [RCLike 𝕜] {E : Ty
 - [Dual of a normed space](dual-of-a-normed-space.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
 - [Normed vector space over a normed field](normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 

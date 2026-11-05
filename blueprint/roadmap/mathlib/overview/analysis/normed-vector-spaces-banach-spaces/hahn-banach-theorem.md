@@ -23,7 +23,6 @@ exists_extension_norm_eq.{u_1, u_2} {ğ•œ : Type u_1} [NontriviallyNormedField ğ
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Dual of a normed space](dual-of-a-normed-space.md)
 - [Normed vector space over a normed field](normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Vector subspace](../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
 
 ## Proof depends on

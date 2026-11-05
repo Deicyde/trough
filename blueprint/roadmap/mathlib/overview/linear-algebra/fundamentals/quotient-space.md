@@ -19,7 +19,6 @@ Submodule.hasQuotient.{u_1, u_2} {R : Type u_1} {M : Type u_2} [Ring R] [AddComm
 
 - [Module](module.md)
 - [Ring](../../general-algebra/rings/ring.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

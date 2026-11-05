@@ -26,7 +26,6 @@ hasFDerivAt_of_tendstoUniformly.{u_1, u_2, u_3, u_4} {ι : Type u_1} {l : Filter
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
 - [Differentiable function between normed vector spaces](../../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Normed vector space over a normed field](../../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Uniform convergence](../../../overview/topology/uniform-notions/uniform-convergence.md)
 
 ## Proof depends on

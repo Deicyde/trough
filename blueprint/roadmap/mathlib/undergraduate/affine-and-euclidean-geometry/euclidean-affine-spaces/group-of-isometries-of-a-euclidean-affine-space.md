@@ -18,7 +18,6 @@ AffineIsometryEquiv.instGroup.{u_1, u_2, u_7} {𝕜 : Type u_1} {V : Type u_2} {
 
 ## Depends on
 
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Isometries of a Euclidean affine space](isometries-of-a-euclidean-affine-space.md)
 
 ## Sources

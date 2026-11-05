@@ -37,7 +37,6 @@ Manifold.IsImmersion.{u, u_1, u_2, u_7, u_9, u_11, u_13} {𝕜 : Type u_1} [Nont
 - [Homeomorphisms](../../../../undergraduate/topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Infinite sum](../../../topology/topological-algebra/infinite-sum.md)
 - [Norm of a continuous linear map](../../../analysis/normed-vector-spaces-banach-spaces/norm-of-a-continuous-linear-map.md)
-- [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
 - [Radius of convergence](../../../../undergraduate/single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)
 

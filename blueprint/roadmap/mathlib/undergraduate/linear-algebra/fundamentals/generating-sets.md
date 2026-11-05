@@ -18,7 +18,6 @@ Submodule.span.{u_1, u_2} (R : Type u_1) {M : Type u_2} [Semiring R] [AddCommMon
 ## Depends on
 
 - [Module](../../../overview/linear-algebra/fundamentals/module.md)
-- [Set](../../../overview/data-structures/sets/set.md)
 
 ## Sources
 

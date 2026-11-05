@@ -34,7 +34,6 @@ numDerangements_sum (n : ℕ) :
 ## Proof depends on
 
 - [Fixed points](../../overview/dynamics/general-theory/fixed-points.md)
-- [Group](../../overview/general-algebra/group-theory/part-01/group.md)
 - [Group morphism](../../overview/general-algebra/group-theory/part-01/group-morphism.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 

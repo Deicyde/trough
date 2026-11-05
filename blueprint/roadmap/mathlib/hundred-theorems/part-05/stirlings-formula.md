@@ -34,7 +34,6 @@ Stirling.tendsto_stirlingSeq_sqrt_pi :
 - [Logarithm](../../overview/analysis/special-functions/logarithm.md)
 - [Metric structure](../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
-- [Permutation group of a type](../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [The Binomial Theorem](../part-03/the-binomial-theorem.md)
 
 ## Sources

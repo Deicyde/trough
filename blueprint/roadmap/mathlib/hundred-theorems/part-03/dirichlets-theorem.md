@@ -37,7 +37,6 @@ Nat.infinite_setOfPred_prime_and_eq_mod {q : ℕ} [NeZero q] {a : ZMod q} (ha : 
 - [Invertible elements](../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Prime numbers](../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
 - [Separable polynomial](../../overview/general-algebra/polynomials-and-power-series/separable-polynomial.md)
-- [Subgroup](../../overview/general-algebra/group-theory/part-01/subgroup.md)
 
 ## Sources
 

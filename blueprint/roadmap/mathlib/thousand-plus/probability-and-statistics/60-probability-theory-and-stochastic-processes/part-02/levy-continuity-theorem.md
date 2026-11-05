@@ -34,7 +34,6 @@ MeasureTheory.ProbabilityMeasure.tendsto_iff_tendsto_charFun.{u_1} {E : Type u_1
 - [Change of variable](../../../../undergraduate/single-variable-real-analysis/integration/change-of-variable.md)
 - [Dominated convergence theorem](../../../../overview/analysis/measures-and-integral-calculus/part-01/dominated-convergence-theorem.md)
 - [Field $\C$ of complex numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
-- [Group](../../../../overview/general-algebra/group-theory/part-01/group.md)
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Limits of sequences](../../../../undergraduate/topology/topology-and-metric-spaces/limits-of-sequences.md)
 - [Lipschitz continuity](../../../../overview/topology/metric-spaces/lipschitz-continuity.md)

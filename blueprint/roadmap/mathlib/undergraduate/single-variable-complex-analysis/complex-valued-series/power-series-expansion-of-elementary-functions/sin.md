@@ -27,7 +27,6 @@ Complex.hasSum_sin (z : ℂ) :
 - [Completeness of R](../../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
 - [Matrix exponential](../../../linear-algebra/exponential/matrix-exponential.md)
-- [Permutation group of a type](../../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Sources
 

@@ -28,8 +28,6 @@ span_fourier_closure_eq_top {T : ℝ} [hT : Fact (0 < T)] :
 ## Proof depends on
 
 - [Completeness](../../../overview/topology/uniform-notions/completeness.md)
-- [Group](../../../overview/general-algebra/group-theory/part-01/group.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Stone-Weierstrass theorem](../../../overview/topology/general-topology/part-02/stone-weierstrass-theorem.md)
 
 ## Sources

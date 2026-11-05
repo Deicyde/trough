@@ -1,4 +1,5 @@
 ---
+article_id: af_bd9ac717a66a662b21be44fe
 declaration: instance
 origin: cited
 mathlib: true
@@ -8,18 +9,125 @@ mathlib_file: Mathlib/GroupTheory/QuotientGroup/Defs.lean
 
 # Quotient group
 
-Mathlib states this as `QuotientGroup.Quotient.group`.
+A **quotient group** is the group obtained from a [group](group.md) $G$ by
+collapsing a [normal subgroup](normal-subgroup.md) $N$ to the identity: its
+elements are the cosets of $N$, multiplied by multiplying representatives. The
+construction is the standard way to discard information in a controlled manner,
+as when the integers are reduced modulo $n$. Every surjective homomorphism of
+groups is, up to isomorphism, the projection onto a quotient group, which makes
+quotients one of the main tools for studying a group through its images.
 
-```lean
-QuotientGroup.Quotient.group.{u_1} {G : Type u_1} [Group G] (N : Subgroup G) [nN : N.Normal] :
-  Group (G ⧸ N)
-```
+## Definition
+
+Let $G$ be a group and $N$ a normal subgroup of $G$, written $N \trianglelefteq G$.
+The left cosets $gN$ partition $G$, and two elements $a, b$ lie in the same coset
+exactly when [$a^{-1}b \in N$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Coset/Defs.html#QuotientGroup.eq). The set of cosets is
+written $G/N$. Its multiplication is
+
+$$(aN)(bN) = (ab)N,$$
+
+and with this operation [$G/N$ is a group](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.Quotient.group):
+[the coset of a product is the product of the cosets](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.mk_mul),
+the identity is the coset $N$ itself, and the inverse of $aN$ is $a^{-1}N$.
+
+The one point to check is that the product does not depend on the chosen
+representatives. If $a' = an$ and $b' = bm$ with $n, m \in N$, then
+$a'b' = ab\,(b^{-1}nb)\,m$, and $b^{-1}nb$ lies in $N$ because $N$ is normal, so
+$a'b'N = abN$. Normality cannot be dropped: if the cosets of a subgroup $H$ carry
+a group structure for which $g \mapsto gH$ is a homomorphism, then $H$ is the
+kernel of that homomorphism, and kernels are always normal.
+
+The map $\pi \colon G \to G/N$, $g \mapsto gN$, is a homomorphism, the
+[canonical projection](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.mk'). It is
+[surjective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.mk'_surjective), and
+[its kernel is exactly $N$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.ker_mk'); equivalently,
+[$gN$ is the identity of $G/N$ if and only if $g \in N$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.eq_one_iff).
+So the normal subgroups of $G$ are precisely the kernels of homomorphisms out
+of $G$.
+
+## Examples
+
+- **Integers modulo $n$.** In the additive group $\mathbb{Z}$ every subgroup is
+  normal, and the quotient $\mathbb{Z}/n\mathbb{Z}$ by the multiples of $n$ is
+  [the group of residues modulo $n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/QuotientGroup.html#Int.quotientZMultiplesNatEquivZMod),
+  a cyclic group of order $n$ for $n \geq 1$.
+- **The circle.** The quotient $\mathbb{R}/\mathbb{Z}$ identifies real numbers
+  that differ by an integer; it is the
+  [additive circle](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Instances/AddCircle/Defs.html#AddCircle) of period $1$, a group isomorphic to the rotations of the
+  plane about the origin.
+- **Sign of a permutation.** The [alternating group](../part-02/alternating-group.md)
+  $A_n$ is the kernel of the [signature](../../../../undergraduate/group-theory/permutation-group/signature.md), so for
+  $n \geq 2$ the quotient $S_n / A_n$ is a group of order $2$.
+- **Abelianization.** The [abelianization](abelianization.md) of $G$ is
+  [the quotient of $G$ by its commutator subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization), the
+  largest abelian quotient of $G$.
+- **Trivial cases.** [Dividing by the trivial subgroup gives back $G$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Basic.html#QuotientGroup.quotientBot),
+  and [$G/N$ is trivial exactly when $N = G$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.subsingleton_iff).
+
+## Properties
+
+- **Universal property.** If $\varphi \colon G \to M$ is a homomorphism whose
+  kernel contains $N$, then
+  [$\varphi$ factors through $G/N$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.lift): there is a
+  homomorphism $\bar\varphi \colon G/N \to M$ with $\bar\varphi(gN) = \varphi(g)$.
+  It is unique, since
+  [two homomorphisms out of $G/N$ that agree after composing with $\pi$ are equal](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.monoidHom_ext).
+- **First isomorphism theorem.** For any homomorphism $\varphi \colon G \to H$,
+  [$G/\ker\varphi$ is isomorphic to the image of $\varphi$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Basic.html#QuotientGroup.quotientKerEquivRange);
+  see [first isomorphism theorem](first-isomorphism-theorem.md).
+  For a subgroup $H$ and a normal subgroup $N$, the
+  [second isomorphism theorem](second-isomorphism-theorem.md)
+  identifies $H/(H \cap N)$ with $HN/N$; for normal subgroups $N \le M$, the
+  [third isomorphism theorem](third-isomorphism-theorem.md)
+  identifies $(G/N)/(M/N)$ with $G/M$.
+- **Order.** The order of $G/N$ is the [index](index-of-a-subgroup.md) $[G : N]$,
+  and [$|G| = |G/N|\,|N|$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Coset/Card.html#Subgroup.card_eq_card_quotient_mul_card_subgroup),
+  the counting identity behind [Lagrange's theorem](../part-02/lagranges-theorem.md).
+  For finite $G$ this gives $|G/N| = |G|/|N|$.
+- **Commutativity passes to quotients.** Every quotient of an abelian group is
+  abelian. Since every subgroup of an abelian group is normal,
+  [the quotient of an abelian group by any subgroup is an abelian group](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.Quotient.commGroup).
+- **Simple groups.** A group $G$ is [simple](simple-group.md) when it is
+  nontrivial and its only normal subgroups are the trivial subgroup and $G$
+  itself, so that its only quotients are $G/\{1\} \cong G$ and the trivial
+  group $G/G$.
+
+## Related concepts
+
+The same construction applies to other algebraic structures: a ring modulo an
+[ideal](../../ideals-and-quotients/ideal-of-a-commutative-ring.md) gives a [quotient ring](../../ideals-and-quotients/quotient-ring.md), and
+a module modulo a submodule gives a [quotient module](../../../linear-algebra/fundamentals/quotient-space.md).
+When $N$ is not normal the cosets still form a set on which $G$
+[acts](group-action.md) by left multiplication, but the rule
+$(aN)(bN) = (ab)N$ is no longer well defined, so they do not form a quotient group. A
+[presented group](presented-group.md) is a quotient of a
+[free group](free-group.md) by the normal subgroup generated by the relations.
+
+## In Mathlib
+
+Mathlib defines the set of left cosets $G/H$ for every subgroup $H$, normal or
+not, as the quotient of $G$ by the relation "$a^{-1}b \in H$". The group
+structure is attached to this type as an instance whenever Mathlib knows that
+$H$ is normal, so the same notation serves both for the coset space of an
+arbitrary subgroup and for the quotient group. For commutative groups a
+separate instance supplies the abelian group structure with no normality
+hypothesis. The construction passes through congruence relations: a normal
+subgroup determines the congruence "$a$ and $b$ lie in the same coset", and the
+group structure is the one carried by the quotient by that congruence. The
+universal property allows the target to be any monoid, not only a group.
+Additive versions, such as $\mathbb{Z}/n\mathbb{Z}$, are generated automatically
+from the multiplicative ones, and the additive circle is defined for any
+period in any additive commutative group. Orders are counted with a cardinality that gives
+$0$ for an infinite set, so the counting identity above holds for all groups.
+
+*Written for Trough, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ## Depends on
 
-- [Group action](group-action.md)
+- [Group](group.md)
+- [Subgroup](subgroup.md)
 - [Normal subgroup](normal-subgroup.md)
-- [Orbit](../../../../undergraduate/group-theory/basic-definitions/orbit.md)
+- [Group morphism](group-morphism.md)
 
 ## Sources
 

@@ -19,7 +19,6 @@ PointedCone.{u_5, u_6} (R : Type u_5) (E : Type u_6) [Semiring R] [PartialOrder 
 
 - [Module](../../linear-algebra/fundamentals/module.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [Set](../../data-structures/sets/set.md)
 
 ## Sources
 

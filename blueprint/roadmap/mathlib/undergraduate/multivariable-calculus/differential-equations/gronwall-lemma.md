@@ -37,7 +37,6 @@ norm_le_gronwallBound_of_norm_deriv_right_le.{u_1} {E : Type u_1} [NormedAddComm
 - [Euclidean affine space](../../../overview/geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
-- [Permutation group of a type](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Sources
