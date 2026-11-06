@@ -20,13 +20,13 @@ BoundedContinuousFunction.instCompleteSpace.{u, v} {α : Type u} {β : Type v} [
 - [Bornology](../topological-vector-spaces/bornology.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 
 - [Complete metric spaces](../../../undergraduate/topology/topology-and-metric-spaces/complete-metric-spaces.md)
 - [Limits of sequences](../../../undergraduate/topology/topology-and-metric-spaces/limits-of-sequences.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-02/squeeze-theorem.md)
 - [Uniform convergence](../../topology/uniform-notions/uniform-convergence.md)
 - [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 

@@ -98,7 +98,7 @@ contained in $H$, and the quotient by it embeds in $S_n$, so
 Combining the left regular representation with the [signature](../../../../undergraduate/group-theory/permutation-group/signature.md) of
 a permutation gives another classical consequence: a group of order $2m$ with
 $m$ odd has a normal subgroup of index $2$. An element of order $2$, which
-exists by [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md), has no
+exists by [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md), has no
 fixed points under left multiplication, so it permutes $G$ as a product of $m$
 disjoint transpositions, an odd permutation. The elements of $G$ that act by even
 permutations then form a normal subgroup of index $2$.

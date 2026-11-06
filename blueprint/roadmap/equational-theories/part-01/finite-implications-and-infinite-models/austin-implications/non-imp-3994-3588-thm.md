@@ -12,7 +12,6 @@ There exists a magma which satisfies [E3994](https://teorth.github.io/equational
 
 ## Depends on
 
-- [Equation 3994](../../selected-laws/part-03/eq3994.md)
 - [Equation 3588](../../selected-laws/part-03/eq3588.md)
 - [Models](../../basic-theory-of-magmas/models-def.md)
 

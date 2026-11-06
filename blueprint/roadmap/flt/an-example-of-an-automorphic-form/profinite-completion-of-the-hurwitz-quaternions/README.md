@@ -2,8 +2,6 @@
 
 We define $\widehat{\mathcal{O}}$ to be $\mathcal{O}\otimes\widehat{\mathbb{Z}}$, so it's elements $a+bi+cj+d\omega$ with $a,b,c,d\in\widehat{\mathbb{Z}}$. The basic thing we need is this:
 
-- [Hurwitz.surjective\_pnat\_quotient](hurwitz-surjective-pnat-quotient.md)
-
 We define $D:=\mathbb{Q}\otimes\mathcal{O}=\mathbb{Q}\oplus\mathbb{Q} i\oplus\mathbb{Q} j\oplus\mathbb{Q}\omega=\mathbb{Q}\oplus\mathbb{Q} i\oplus\mathbb{Q} j\oplus\mathbb{Q} k$. Finally, we define $\widehat{D}:=D\otimes\widehat{\mathbb{Z}}$. Just as with $\widehat{\mathbb{Q}}$ we have
 
 - [HurwitzRatHat.canonicalForm](hurwitzrathat-canonicalform.md)

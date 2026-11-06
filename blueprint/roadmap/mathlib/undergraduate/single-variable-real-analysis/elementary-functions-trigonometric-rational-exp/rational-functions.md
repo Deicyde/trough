@@ -25,7 +25,7 @@ RatFunc.eval.{u} {K : Type u} [Field K] {L : Type u} [Field L] (f : K →+* L) (
 - [Greatest common divisor](../../../overview/general-algebra/divisibility-in-integral-domains/greatest-common-divisor.md)
 - [Least common multiple](../../../overview/general-algebra/divisibility-in-integral-domains/least-common-multiple.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)
-- [Rational fraction fields with one indeterminate over a field](../../ring-theory/field-theory/part-01/rational-fraction-fields-with-one-indeterminate.md)
+- [Rational fraction fields with one indeterminate over a field](../../ring-theory/field-theory/rational-fraction-fields-with-one-indeterminate.md)
 - [Rational number](../../../overview/general-algebra/numbers/rational-number.md)
 
 ## Sources

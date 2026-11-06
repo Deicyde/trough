@@ -31,12 +31,12 @@ tendsto_integral_exp_inner_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_
 
 ## Proof depends on
 
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md)
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Measurable function](../measures-and-integral-calculus/part-01/measurable-function.md)
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md)
 - [Uniformly continuous function](../../topology/uniform-notions/uniformly-continuous-function.md)
 - [Urysohn's lemma](../../topology/general-topology/part-02/urysohns-lemma.md)
 

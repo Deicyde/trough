@@ -2,10 +2,8 @@
 navigation: transparent
 ---
 
-# ZerosBound to ZeroInequality
+# JBlaschkeDerivBound to DeltaRange
 
-- [ZerosBound](zerosbound.md)
-- [JBlaschke](jblaschke.md)
 - [JBlaschkeDerivBound](jblaschkederivbound.md)
 - [FinalBound](finalbound.md)
 - [ZetaFixedLowerBound](zetafixedlowerbound.md)
@@ -24,3 +22,5 @@ navigation: transparent
 - [vonMangoldtLSeriesSummable](vonmangoldtlseriessummable.md)
 - [ZeroWindowFinite](zerowindowfinite.md)
 - [ZeroInequality](zeroinequality.md)
+- [DeltaT](deltat.md)
+- [DeltaRange](deltarange.md)

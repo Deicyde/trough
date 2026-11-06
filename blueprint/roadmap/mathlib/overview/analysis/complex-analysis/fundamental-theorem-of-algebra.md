@@ -17,7 +17,7 @@ Complex.isAlgClosed : IsAlgClosed ℂ
 ## Depends on
 
 - [Algebraically closed field](../../general-algebra/field-theory/algebraically-closed-field.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md)
 
 ## Proof depends on
 

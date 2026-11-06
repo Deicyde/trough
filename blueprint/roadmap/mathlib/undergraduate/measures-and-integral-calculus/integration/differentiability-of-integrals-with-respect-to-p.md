@@ -23,7 +23,7 @@ IntervalIntegrable.ae_hasDerivAt_integral.{u_1} {E : Type u_1} [NormedAddCommGro
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Derivative at a point](../../single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
@@ -31,7 +31,7 @@ IntervalIntegrable.ae_hasDerivAt_integral.{u_1} {E : Type u_1} [NormedAddCommGro
 
 - [Affine space](../../../overview/geometry/affine-and-euclidean-geometry/affine-space.md)
 - [Compactness in terms of filters](../../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Lebesgue's decomposition theorem](../../../thousand-plus/geometry-and-topology/54-general-topology/part-01/lebesgues-decomposition-theorem.md)
+- [Lebesgue's decomposition theorem](../../../thousand-plus/geometry-and-topology/54-general-topology/lebesgues-decomposition-theorem.md)
 
 ## Sources
 

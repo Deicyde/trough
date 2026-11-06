@@ -92,7 +92,7 @@ reciprocal of a nonzero infinitesimal is infinite.
   [$(a_n)$ tends to $+\infty$ along $\mathcal U$ exactly when $[a_n]$ is positive and infinite](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Real/Hyperreal.html#Hyperreal.tendsto_atTop_iff).
 - **Continuity.** For a real function $f$ that is [continuous](../../topology/general-topology/part-01/continuous-function.md) at the point $r$,
   [if $(a_n)$ tends to $r$ along $\mathcal U$, then $(f(a_n))$ tends to $f(r)$ along $\mathcal U$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Real/Hyperreal.html#Hyperreal.stdPart_map).
-- **Transfer.** Because $^*\mathbb R$ is an ultrapower, [Łoś' theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/os-theorem.md)
+- **Transfer.** Because $^*\mathbb R$ is an ultrapower, [Łoś' theorem](../../../thousand-plus/general-topics-history-and-foundations/os-theorem.md)
   applies: [a first-order sentence holds in an ultraproduct of nonempty structures exactly when the set of indices whose factor satisfies it belongs to the ultrafilter](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/Ultraproducts.html#FirstOrder.Language.Ultraproduct.sentence_realize).
   Every factor here is $\mathbb R$, so a first-order sentence in a language with a symbol for each
   real function and relation holds in $^*\mathbb R$ exactly when it holds in $\mathbb R$, where

@@ -34,7 +34,7 @@ second_derivative_symmetric.{u_1, u_2, u_3} {𝕜 : Type u_1} [NontriviallyNorme
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 - [Topology of a metric space](../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 - [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)

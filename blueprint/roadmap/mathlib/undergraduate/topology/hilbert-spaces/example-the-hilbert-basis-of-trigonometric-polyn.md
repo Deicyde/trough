@@ -19,7 +19,7 @@ fourierBasis {T : ℝ} [hT : Fact (0 < T)] :
 ## Depends on
 
 - [Borel sigma-algebra](../../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Compact open topology](../../../overview/topology/general-topology/part-01/compact-open-topology.md)
 - [Cos (extension of trigonometric functions to the complex plane)](../../single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)

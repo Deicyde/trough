@@ -21,7 +21,7 @@ ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral.{u_1, u_2} {Ω : Type u_
 ## Depends on
 
 - [Bochner integral](../../analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Giry monad](../../analysis/measures-and-integral-calculus/part-01/giry-monad.md)
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Measurable function](../../analysis/measures-and-integral-calculus/part-01/measurable-function.md)

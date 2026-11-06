@@ -23,7 +23,7 @@ ValueDistribution.characteristic_sub_characteristic_inv_le {f : ℂ → ℂ} {R 
 
 - [Analytic function](../differentiability/analytic-function.md)
 - [Bochner integral](../measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Lebesgue measure (Measures and integral calculus)](../measures-and-integral-calculus/part-01/lebesgue-measure.md)

@@ -16,7 +16,6 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [Log function](def-lf.md)
 - [Logarithm of an analytic function](../../complex-analysis/part-05/complex-logarithm/lem-log-of-analytic.md)
 - [Real logarithm of modulus difference](../../complex-analysis/part-05/complex-logarithm/lem-real-log-of-modulus-difference.md)
 

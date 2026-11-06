@@ -16,7 +16,7 @@ $$
 
 ## Depends on
 
-- [DeltaT](deltat.md)
+- [DeltaT](../part-02/deltat.md)
 - [ZeroWindow](../part-02/zerowindow.md)
 
 ## Proof depends on

@@ -4,11 +4,9 @@ Let $G$ be an additive group, and let $A$ be a non-empty subset of $G$.
 
 - [Rho minus](rhominus-def.md)
 - [Rho plus](rhoplus-def.md)
-- [Rho minus non-negative](rhominus-nonneg.md)
 - [Rho minus of subgroup](rhominus-subgroup.md)
 - [Rho plus of subgroup](rhoplus-subgroup.md)
 - [Rho functional](rho-def.md)
-- [rho\_of\_uniform](rho-of-uniform.md)
 - [Rho of subgroup](rho-subgroup.md)
 - [Rho invariant](rho-invariant.md)
 - [Rho continuous](rho-cts.md)

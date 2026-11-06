@@ -19,11 +19,11 @@ Metric.uniformContinuous_iff.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpa
 ## Depends on
 
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources

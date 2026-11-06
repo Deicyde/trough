@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Real sum to Positive sum
+# Series real to Inequality
 
-- [Real sum](lem-sumreallambda.md)
 - [Series real](lem-sumrealz.md)
 - [Real factor](lem-reallambdaxy.md)
 - [Real series](lem-rezseriesren.md)
@@ -24,3 +23,4 @@ navigation: transparent
 - [Term nonneg](lem-lambpostriglogn.md)
 - [Series nonneg](lem-seriespos.md)
 - [Positive sum](lem-341zpos.md)
+- [Inequality](lem-341tsc.md)

@@ -67,7 +67,7 @@ Throughout, $x$, $y$, $z$ are elements of a commutative ring.
 - **Euclidean steps.** For every $z$,
   [$x + yz$ is coprime to $y$ if and only if $x$ is](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Coprime/Basic.html#IsCoprime.add_mul_left_left_iff), so in a
   [Euclidean domain](euclidean-domain.md) the steps of the
-  [Euclidean algorithm](../../../hundred-theorems/part-04/greatest-common-divisor-algorithm.md) do not change whether two elements are coprime.
+  [Euclidean algorithm](../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md) do not change whether two elements are coprime.
 - **Ring morphisms.** If $x$ and $y$ are coprime and $f$ is a
   [ring morphism](../rings/ring-morphism.md), then [$f(x)$ and $f(y)$ are coprime](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Coprime/Basic.html#IsCoprime.map),
   since $f(a)f(x) + f(b)f(y) = f(1) = 1$.

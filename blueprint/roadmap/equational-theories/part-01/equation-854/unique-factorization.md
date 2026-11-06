@@ -14,13 +14,9 @@ Two irreducible words $w, w'$ are equivalent if and only if they are either the 
 
 Its statement uses no other node of the blueprint.
 
-## Proof depends on
-
-- [Description of equivalence](irred-desc.md)
-
 ## Proof
 
-Immediate from [Description of equivalence](irred-desc.md).
+Immediate from Description of equivalence.
 
 ## Lean
 

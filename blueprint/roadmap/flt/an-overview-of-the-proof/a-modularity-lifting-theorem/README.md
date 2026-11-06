@@ -15,12 +15,8 @@ In the last bullet point, “flat” means “projective limit of representation
 
 Say $k$ is a finite extension of $\mathbb{Z}/\ell\mathbb{Z}$ and $\overline{\rho}:G_F\to\operatorname{GL}_2(k)$ is continuous, absolutely irreducible when restricted to $F(\zeta_\ell)$, and $S$-good. One can check that the functor representing $S$-good lifts of $\overline{\rho}$ is representable.
 
-- [modularity\_lifting\_theorem](modularity-lifting-theorem.md)
-
 Right now we are very far from even stating this theorem in Lean.
 
 I am not entirely sure where to find a proof of this in the literature, although it has certainly been known to the experts for some time. Theorem 3.3 of (Taylor 2006) comes close, although it assumes that $\ell$ is totally split in $F$ rather than just unramified. Another near-reference is Theorem 5.2 of ([Gee 2022](https://doi.org/10.2140/ent.2022.1.73)), although this assumes the slightly stronger assumption that the image of $\rho$ contains $\operatorname{SL}_2(\mathbb{Z}/p\mathbb{Z})$ (however it is well-known to the experts that this can be weakened to give the result we need). One reference for the proof is [Richard Taylor's 2018 Stanford course](https://math.berkeley.edu/~fengt/249A_2018.pdf).
-
-*The proof of [Theorem modularity\_lifting\_theorem](modularity-lifting-theorem.md) is shown with its statement.*
 
 Given this modularity lifting theorem, the strategy to show potential modularity of $\rho$ is to use Moret–Bailly to find an appropriate totally real field $F$, an auxiliary prime $p$, and an auxiliary elliptic curve over $F$ whose mod $\ell$ Galois representation is $\rho$ and whose mod $p$ Galois representation is induced from a character. By converse theorems (for example) the mod $p$ Galois representation is associated to an automorphic representation of $\operatorname{GL}_2/F$ and hence by Jacquet–Langlands it is modular. Now we use the modularity lifting theorem to deduce the modularity of the curve over $F$ and hence the modularity of the $\ell$-torsion.

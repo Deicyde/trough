@@ -26,7 +26,7 @@ MeasureTheory.integral_prod.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {E :
 
 - [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Bochner integral](../part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Giry monad](../part-01/giry-monad.md)
 - [Measurable function](../part-01/measurable-function.md)
 
@@ -38,7 +38,7 @@ MeasureTheory.integral_prod.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {E :
 - [Inner product space, over $R$ or $C$](../../hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [Squeeze theorem](../../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Squeeze theorem](../../../../thousand-plus/analysis/26-real-functions/part-02/squeeze-theorem.md)
 - [Topological module](../../../topology/topological-algebra/topological-module.md)
 
 ## Sources

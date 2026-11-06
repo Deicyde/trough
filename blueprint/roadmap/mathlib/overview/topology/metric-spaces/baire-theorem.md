@@ -22,11 +22,11 @@ The 1000+ list (Q1052678) also cites `BaireSpace.of_t2Space_locallyCompactSpace`
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
 - [Closure](../general-topology/part-01/closure.md)
 - [Completeness](../uniform-notions/completeness.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 
-- [Sum of a Geometric Series](../../../hundred-theorems/part-04/sum-of-a-geometric-series.md)
+- [Sum of a Geometric Series](../../../hundred-theorems/part-03/sum-of-a-geometric-series.md)
 
 ## Sources
 

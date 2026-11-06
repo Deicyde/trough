@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [Inequality](lem-341tsc.md)
+- [Inequality](../part-04/lem-341tsc.md)
 
 ## Lean
 

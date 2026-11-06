@@ -25,7 +25,7 @@ Set.ruzsa_covering_add.{u_1} {G : Type u_1} [AddGroup G] {K : ℝ} {A B : Set G}
 ## Proof depends on
 
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Sources
 

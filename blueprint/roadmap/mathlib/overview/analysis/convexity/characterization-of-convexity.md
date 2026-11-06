@@ -25,7 +25,7 @@ convexOn_of_deriv2_nonneg {D : Set ℝ} (hD : Convex ℝ D) {f : ℝ → ℝ} (h
 
 ## Proof depends on
 
-- [The Mean Value Theorem (Freek Wiedijk's 100 theorems)](../../../hundred-theorems/part-04/the-mean-value-theorem.md)
+- [The Mean Value Theorem (Freek Wiedijk's 100 theorems)](../../../hundred-theorems/part-03/the-mean-value-theorem.md)
 
 ## Sources
 

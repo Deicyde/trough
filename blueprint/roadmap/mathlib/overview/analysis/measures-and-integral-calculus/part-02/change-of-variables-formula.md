@@ -25,7 +25,7 @@ MeasureTheory.integral_image_eq_integral_abs_det_fderiv_smul.{u_1, u_2} {E : Typ
 
 - [Bochner integral](../part-01/bochner-integral.md)
 - [Borel sigma-algebra](../part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Determinant of endomorphisms](../../../../undergraduate/linear-algebra/multilinearity/determinant-of-endomorphisms.md)
 - [Finite-dimensionality](../../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
@@ -39,9 +39,9 @@ MeasureTheory.integral_image_eq_integral_abs_det_fderiv_smul.{u_1, u_2} {E : Typ
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
 - [Invertibility](../../../linear-algebra/matrices/invertibility.md)
-- [Lebesgue's density theorem](../../../../thousand-plus/geometry-and-topology/54-general-topology/part-01/lebesgues-density-theorem.md)
+- [Lebesgue's density theorem](../../../../thousand-plus/geometry-and-topology/54-general-topology/lebesgues-density-theorem.md)
 - [Pointwise convergence](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Uniformly continuous function](../../../topology/uniform-notions/uniformly-continuous-function.md)
 
 ## Sources

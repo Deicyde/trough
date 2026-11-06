@@ -28,7 +28,7 @@ intervalIntegral.integral_mul_deriv_eq_deriv_mul.{u_1} {a b : ℝ} {A : Type u_1
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Derivative at a point](../differentiability/derivative-at-a-point.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 

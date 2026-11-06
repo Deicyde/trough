@@ -36,9 +36,9 @@ The 1000+ list (Q853067): In `pell.eq_pell`, `d` is defined to be `a*a - 1` for 
 
 ## Proof depends on
 
-- [Dirichlet's approximation theorem](../../thousand-plus/number-theory/part-02/dirichlets-approximation-theorem.md)
+- [Dirichlet's approximation theorem](../../thousand-plus/number-theory/part-01/dirichlets-approximation-theorem.md)
 - [Euclidean domain](../../overview/general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)
+- [Field $\Q$ of rational numbers](../../undergraduate/ring-theory/field-theory/field-q-of-rational-numbers.md)
 
 ## Sources
 

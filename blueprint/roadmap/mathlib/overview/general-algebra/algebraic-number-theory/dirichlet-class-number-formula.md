@@ -17,7 +17,7 @@ complex places. It ties an analytic quantity to algebraic ones, and is the main
 route by which the class number, which is defined algebraically, can be computed
 or estimated with analysis. Through it, the positivity of these invariants yields
 the nonvanishing of Dirichlet $L$-functions at $s = 1$, the key input to
-[Dirichlet's theorem](../../../hundred-theorems/part-03/dirichlets-theorem.md) on primes in
+[Dirichlet's theorem](../../../hundred-theorems/part-02/dirichlets-theorem.md) on primes in
 arithmetic progressions.
 
 ## Statement

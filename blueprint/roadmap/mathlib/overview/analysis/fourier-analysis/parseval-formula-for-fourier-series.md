@@ -18,7 +18,7 @@ tsum_sq_fourierCoeff {T : ℝ} [hT : Fact (0 < T)]
 
 ## Depends on
 
-- [Fourier Series](../../../hundred-theorems/part-04/fourier-series.md)
+- [Fourier Series](../../../hundred-theorems/part-03/fourier-series.md)
 
 ## Sources
 

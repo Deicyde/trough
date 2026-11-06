@@ -31,10 +31,10 @@ QuadraticForm.equivalent_one_zero_neg_one_weighted_sum_squared.{u_2} {M : Type u
 ## Proof depends on
 
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Invertible elements](../../ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Isomorphism with $K^n$](../../../overview/linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
-- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../single-variable-real-analysis/real-numbers/order.md)
 - [Range of a linear map](../../linear-algebra/fundamentals/range-of-a-linear-map.md)
 
 ## Sources

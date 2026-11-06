@@ -51,7 +51,7 @@ The extension $L$ is a [splitting field of $f$](https://leanprover-community.git
 
 ## Finite fields
 
-For a prime $p$ and a positive integer $n$, the splitting field of $X^{p^n} - X$ over $\mathbb{Z}/p\mathbb{Z}$ is a [finite field](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) that
+For a prime $p$ and a positive integer $n$, the splitting field of $X^{p^n} - X$ over $\mathbb{Z}/p\mathbb{Z}$ is a [finite field](../../../undergraduate/ring-theory/field-theory/finite-fields.md) that
 [has exactly $p^n$ elements](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/GaloisField.html#GaloisField.card): the polynomial has derivative $-1$, so its $p^n$ roots are distinct, and they already form a field. Conversely, a field $K$ with $p^n$ elements, regarded as an algebra over $\mathbb{Z}/p\mathbb{Z}$ (as every field of characteristic $p$ is), is
 [a splitting field of $X^{p^n} - X$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/GaloisField.html#FiniteField.isSplittingField_of_nat_card_eq), so by uniqueness
 [it is isomorphic to the splitting field constructed above](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/GaloisField.html#GaloisField.algEquivGaloisField). Hence any two fields with $p^n$ elements are isomorphic.

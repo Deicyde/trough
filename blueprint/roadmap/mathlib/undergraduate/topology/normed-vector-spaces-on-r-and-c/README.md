@@ -1,7 +1,6 @@
 # Normed vector spaces on $\R$ and $\C$
 
 - [Topology on a normed vector space](../../../overview/analysis/normed-vector-spaces-banach-spaces/topology-on-a-normed-vector-space.md)
-- [Equivalent norms](equivalent-norms.md)
 - [Banach open mapping theorem](../../../overview/analysis/normed-vector-spaces-banach-spaces/banach-open-mapping-theorem.md)
 - [Equivalence of norms in finite dimension](../../../overview/analysis/normed-vector-spaces-banach-spaces/equivalence-of-norms-in-finite-dimension.md)
 - [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)

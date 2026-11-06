@@ -26,8 +26,8 @@ Ballot.ballot_problem (q p : ℕ) :
 
 - [Characteristic p](../../overview/general-algebra/field-theory/characteristic-p.md)
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
-- [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
+- [Order](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 - [Probability measure](../../overview/probability-theory/definitions-in-probability-theory/probability-measure.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)

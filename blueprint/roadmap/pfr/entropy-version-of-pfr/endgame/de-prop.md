@@ -21,7 +21,6 @@ Its statement uses no other node of the blueprint.
 - [Bound on conditional mutual informations](uvw-s.md)
 - [Bound on distance increments](total-dist.md)
 - [First estimate](../first-estimate/first-estimate.md)
-- [eta-def](../eta-def.md)
 
 ## Proof
 
@@ -59,7 +58,7 @@ k &\leq \Bigl(1+\frac{\eta}{3}\Bigr)\Bigl(6\eta k-\frac{1-5\eta}{1-\eta}(2\eta k
 \end{aligned}
 $$
 
-since the quantity $2 \eta k - I_1$ is non-negative (by [First estimate](../first-estimate/first-estimate.md)), and its coefficient in the above expression is non-positive provided that $\eta(2\eta + 17) \le 3$, which is certainly the case with [Definition eta-def](../eta-def.md). Moreover, from [Definition eta-def](../eta-def.md) we have $8 \eta + \eta^2 < 1$. It follows that $k=0$, as desired.
+since the quantity $2 \eta k - I_1$ is non-negative (by [First estimate](../first-estimate/first-estimate.md)), and its coefficient in the above expression is non-positive provided that $\eta(2\eta + 17) \le 3$, which is certainly the case with Definition eta-def. Moreover, from Definition eta-def we have $8 \eta + \eta^2 < 1$. It follows that $k=0$, as desired.
 
 ## Lean
 

@@ -85,16 +85,15 @@
 - [Factor power](part-04/lem-ordernatcast.md)
 - [Factor linear](part-04/lem-ordernatcast1.md)
 - [Divide zero](part-04/lem-ordernatcast2.md)
-- [Inverse analytic](part-04/lem-1zanal.md)
 - [Analytic mono](part-04/lem-analmono.md)
 - [Nonzero subset](part-04/lem-not0mono.md)
 - [Inverse analytic](part-04/lem-1zanaldr.md)
 - [Product analytic](part-04/lem-analprod.md)
 - [Product analytic](part-04/lem-analprodst.md)
+- [Product analytic](part-04/lem-analprodtdr.md)
 
-## [Product analytic to Complex logarithm](part-05/README.md)
+## [Quotient analytic to Complex logarithm](part-05/README.md)
 
-- [Product analytic](part-05/lem-analprodtdr.md)
 - [Quotient analytic](part-05/lem-fzztanal.md)
 - [On implies within](part-05/lem-analontowithin.md)
 - [Within implies on](part-05/lem-analwithintoon.md)

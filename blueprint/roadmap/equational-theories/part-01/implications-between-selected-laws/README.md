@@ -33,5 +33,3 @@ $$
 $$
 
 These are examples of central groupoids, [E168](https://teorth.github.io/equational_theories/implications/?168) $({x = (y \diamond x) \diamond (x \diamond z)})$.
-
-- [Natural central groupoid axiom](natural-central-groupoid.md)

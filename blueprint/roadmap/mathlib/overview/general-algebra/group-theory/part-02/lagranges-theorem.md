@@ -12,7 +12,7 @@ mathlib_file: Mathlib/GroupTheory/Coset/Card.lean
 **Lagrange's theorem** says that in a finite [group](../part-01/group.md) the order (number of elements) of every
 [subgroup](../part-01/subgroup.md) divides the order of the group. It is a basic structural result of
 group theory: it places an arithmetic restriction on the possible orders of
-subgroups, and several classical facts, [Fermat's little theorem](../../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md) among them, follow from it in a line.
+subgroups, and several classical facts, [Fermat's little theorem](../../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md) among them, follow from it in a line.
 
 ## Statement
 
@@ -44,7 +44,7 @@ elements of $G$ coset by coset gives $|G| = [G : H]\,|H|$.
   generates a subgroup whose order divides $p$ and exceeds $1$, so that subgroup
   is all of $G$: [every group of prime order is cyclic](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Cyclic/Subgroup.html#isCyclic_of_prime_card)
   (see [cyclic group](../part-01/cyclic-group.md)).
-- **[Fermat's little theorem](../../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md).** The nonzero residues modulo a prime $p$ form a
+- **[Fermat's little theorem](../../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md).** The nonzero residues modulo a prime $p$ form a
   group of order $p - 1$ under multiplication, so
   [$a^{p-1} \equiv 1 \pmod p$ for every integer $a$ with $p \nmid a$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#Int.ModEq.pow_card_sub_one_eq_one).
 - **[Euler's theorem](../../../../hundred-theorems/part-01/eulers-generalization-of-fermats-little-theorem.md).** For $n \ge 1$, the units modulo $n$ form a group of order
@@ -58,7 +58,7 @@ elements of $G$ coset by coset gives $|G| = [G : H]\,|H|$.
 A divisor of $|G|$ need not be the order of any subgroup: the [alternating group](alternating-group.md)
 $A_4$ has order $12$ but no subgroup of order $6$. Two partial converses hold.
 
-- [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md): if a prime $p$ divides
+- [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md): if a prime $p$ divides
   $|G|$, then [$G$ has an element of order $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Perm/Cycle/Type.html#exists_prime_orderOf_dvd_card).
 - For prime powers the [first Sylow theorem](first-sylow-theorem.md), in its strong form, gives the full converse: whenever $p^n$
   divides $|G|$ for a prime $p$,

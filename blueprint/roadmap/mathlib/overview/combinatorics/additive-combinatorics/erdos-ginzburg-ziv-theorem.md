@@ -29,7 +29,7 @@ ZMod.erdos_ginzburg_ziv.{u_1} {ι : Type u_1} {n : ℕ} {s : Finset ι} (a : ι 
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 - [Chevalley–Warning theorem (1000+ theorems)](../../../thousand-plus/algebra/12-field-theory-and-polynomials/chevalley-warning-theorem.md)
-- [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
+- [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
 

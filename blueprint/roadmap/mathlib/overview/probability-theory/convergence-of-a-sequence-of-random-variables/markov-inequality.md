@@ -27,7 +27,7 @@ MeasureTheory.mul_meas_ge_le_lintegral.{u_1} {α : Type u_1} {mα : MeasurableSp
 - [Almost sure convergence](almost-sure-convergence.md)
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](../../analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Order topology](../../topology/topological-algebra/order-topology.md)

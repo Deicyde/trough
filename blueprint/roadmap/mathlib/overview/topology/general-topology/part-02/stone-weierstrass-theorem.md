@@ -30,7 +30,7 @@ ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints.{u_1} {X :
 
 - [Ball](../../metric-spaces/ball.md)
 - [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Weierstrass polynomial approximation theorem](../../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/weierstrass-polynomial-approximation-theorem.md)
 
 ## Sources

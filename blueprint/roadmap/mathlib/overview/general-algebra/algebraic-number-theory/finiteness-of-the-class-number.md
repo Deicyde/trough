@@ -105,7 +105,7 @@ ideals, so there are finitely many classes.
   $h_K$, the regulator, the number of roots of unity, $r_1$, $r_2$ and $d_K$.
 - **Function fields.** The same finiteness holds for the integral closure of
   $\mathbb{F}_q[t]$ in a finite separable extension $F$ of the
-  [rational function field](../../../undergraduate/ring-theory/field-theory/part-01/rational-fraction-fields-with-one-indeterminate.md) $\mathbb{F}_q(t)$, and Mathlib defines
+  [rational function field](../../../undergraduate/ring-theory/field-theory/rational-fraction-fields-with-one-indeterminate.md) $\mathbb{F}_q(t)$, and Mathlib defines
   [the class number of such a function field](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/ClassNumber/FunctionField.html#FunctionField.classNumber)
   as the order of that class group. This number depends on the choice of $t$,
   and in general differs from the class number of $F$ defined through divisor

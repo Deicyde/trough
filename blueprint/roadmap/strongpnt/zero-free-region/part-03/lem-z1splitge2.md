@@ -17,7 +17,7 @@ Its statement uses no other node of the blueprint.
 ## Proof depends on
 
 - [Split bound](../part-02/lem-z1splitge.md)
-- [Real inverse](lem-1delsigreal3.md)
+- [Real inverse](../part-02/lem-1delsigreal3.md)
 
 ## Lean
 

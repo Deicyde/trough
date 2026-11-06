@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Product analytic to Complex logarithm
+# Quotient analytic to Complex logarithm
 
-- [Product analytic](lem-analprodtdr.md)
 - [Quotient analytic](lem-fzztanal.md)
 - [On implies within](lem-analontowithin.md)
 - [Within implies on](lem-analwithintoon.md)

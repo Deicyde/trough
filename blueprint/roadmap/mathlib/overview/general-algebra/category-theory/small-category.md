@@ -82,7 +82,7 @@ universe, so this category is large.
   Morphisms from $X$ to the product of $\kappa$ copies of $Y$ correspond to
   $\kappa$-tuples of morphisms from $X$ to $Y$, so there would be at least
   $2^\kappa$ of them, more than $\kappa$ by
-  [Cantor's theorem](../../../hundred-theorems/part-04/cantors-theorem.md), although all of
+  [Cantor's theorem](../../../hundred-theorems/part-03/cantors-theorem.md), although all of
   them are among the $\kappa$ morphisms of $C$.
   Completeness is therefore a severe restriction on small categories, and the
   interesting complete categories are large.
@@ -133,7 +133,7 @@ concludes this about the hom-sets rather than producing a preorder.
 ## Proof depends on
 
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Cantor’s Theorem](../../../hundred-theorems/part-04/cantors-theorem.md)
+- [Cantor’s Theorem](../../../hundred-theorems/part-03/cantors-theorem.md)
 - [Limits](limits.md)
 
 ## Sources

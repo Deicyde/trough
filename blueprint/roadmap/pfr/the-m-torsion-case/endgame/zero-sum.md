@@ -11,16 +11,12 @@ proof: formalized
 We have
 
 $$
-Z_1+Z_2+Z_3= 0\qquad\text{(2)}
+Z_1+Z_2+Z_3= 0\qquad\text{(1)}
 $$
 
 ## Depends on
 
 Its statement uses no other node of the blueprint.
-
-## Proof depends on
-
-- [Additional random variables](more-random.md)
 
 ## Proof
 

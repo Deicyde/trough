@@ -27,7 +27,7 @@ taylor_integral_remainder_of_absolutelyContinuous {f : ℝ → ℝ} {x x₀ : �
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Polynomial in one indeterminate](../../../overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Radius of convergence](../../single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)

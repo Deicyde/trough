@@ -22,8 +22,6 @@ for all $y \in SM$.
 
 We have the following procedure for extending a small magma $SM$ satisfying (1) to a larger one $M$:
 
-- [Extending a 1729 magma](mag.md)
-
 To build a magma satisfying 1729 but not 817, it thus suffices to produce
 
 - a 1729 magma $SM$;
@@ -74,8 +72,6 @@ We now write the other remaining axioms in terms of $L'_0$ rather than $L'_a$ us
 - (v) For all $x \in N$, we have $x \diamond' x = S'x$.
 - (vi') For all $y \in N$ and $a \in SM$, we have $e_a y \diamond' y = a - S'y$.
 - (vii') For all $x,y \in N$ with $x \diamond' y$ not already covered by rules (v) or (v'), we have $x \diamond' y = z$ for some $z \in N$. Furthermore, $z \diamond' x = (R'_{2S'x})^{-1} L'_0 e_0 e_{S'x} y$.
-
-- [Reduction to new axioms](eq1729-reduce-to-new-axioms.md)
 
 Our task is now to find a function $S': N \to SM$, a bijection $L'_0: N \to N$, and an operation $\diamond': N \times N \to M$ satisfying axioms (i'), (iii'), (iv'), (v), (vi'), (vii').
 

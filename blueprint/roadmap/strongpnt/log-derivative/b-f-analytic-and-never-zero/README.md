@@ -1,15 +1,13 @@
 # $B_f$ analytic and never zero
 
-## [Zero order to f nonzero off K](part-01/README.md)
+## [Order is integer to C nonzero on K](part-01/README.md)
 
-- [Zero order](part-01/def-m-rho-order.md)
 - [Order is integer](part-01/lem-m-rho-is-nat.md)
 - [Order at least one](part-01/lem-m-rho-ge-1.md)
 - [Analytic division](part-01/lem-analdiv.md)
 - [Denominator analytic](part-01/lem-denomanalat.md)
 - [Ratio analytic](part-01/lem-ratioanalat.md)
 - [Zero factorization](part-01/lem-analytic-zero-factor.md)
-- [C function](part-01/def-c-function.md)
 - [C analytic off K](part-01/lem-c-analytic-off-k.md)
 - [C at zero](part-01/lem-c-at-sigma-onk.md)
 - [Zeros isolated](part-01/lem-k-isolated.md)
@@ -22,11 +20,11 @@
 - [C analytic at K](part-01/lem-c-analytic-at-k.md)
 - [C is analytic](part-01/lem-c-is-analytic.md)
 - [f nonzero off K](part-01/lem-f-nonzero-off-k.md)
+- [C nonzero off K](part-01/lem-c-nonzero-off-k.md)
+- [C nonzero on K](part-01/lem-c-nonzero-on-k.md)
 
-## [C nonzero off K to B off K](part-02/README.md)
+## [C never zero to B off K](part-02/README.md)
 
-- [C nonzero off K](part-02/lem-c-nonzero-off-k.md)
-- [C nonzero on K](part-02/lem-c-nonzero-on-k.md)
 - [C never zero](part-02/lem-c-never-zero.md)
 - [Blaschke diff](part-02/lem-bl-num-diff.md)
 - [Blaschke nonzero](part-02/lem-bl-num-nonzero.md)

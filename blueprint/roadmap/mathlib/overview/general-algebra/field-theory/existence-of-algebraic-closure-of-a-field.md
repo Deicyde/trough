@@ -45,7 +45,7 @@ for every field $k$.
   $x^2 - 2ax + a^2 + b^2$, so $\mathbb{C}$ is algebraic over $\mathbb{R}$ and is an
   algebraic closure of the [real numbers](../numbers/real-number.md).
 - $\mathbb{C}$ is not algebraic over the [rational numbers](../numbers/rational-number.md), since it contains
-  [transcendental](../../../undergraduate/ring-theory/field-theory/part-01/transcendental-elements.md) numbers. But whenever $E$ is an algebraically closed field
+  [transcendental](../../../undergraduate/ring-theory/field-theory/transcendental-elements.md) numbers. But whenever $E$ is an algebraically closed field
   containing a field $F$,
   [the elements of $E$ algebraic over $F$ form an algebraic closure of $F$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/AlgebraicClosure.html#algebraicClosure.isAlgClosure).
   So the algebraic numbers, the complex numbers that are roots of nonzero

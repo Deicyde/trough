@@ -17,7 +17,7 @@ ProbabilityTheory.poissonMeasure (r : NNReal) : MeasureTheory.Measure ℕ
 ## Depends on
 
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Exponential](../../analysis/special-functions/exponential.md)
 - [Positive measure](../../analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 

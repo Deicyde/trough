@@ -16,12 +16,12 @@ irrational_sqrt_two : Irrational √2
 
 ## Depends on
 
-- [Order (Real numbers)](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Irreducible element](../../overview/general-algebra/divisibility-in-integral-domains/irreducible-element.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)
 

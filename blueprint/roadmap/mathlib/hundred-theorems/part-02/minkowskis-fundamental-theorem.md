@@ -25,7 +25,7 @@ MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure.{u_1}
 - [Almost sure convergence](../../overview/probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
 - [Associative algebra over a commutative ring](../../overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](../../overview/analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Cardinal](../../overview/logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Compactness in terms of filters](../../overview/topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Convex subsets](../../undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)

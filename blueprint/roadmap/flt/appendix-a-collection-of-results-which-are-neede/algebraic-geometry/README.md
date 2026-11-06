@@ -4,10 +4,6 @@ We have already mentioned Mazur's Theorem on torsion subgroups of elliptic curve
 
 Talking of modular curves, we also need the existence of Shimura curves and surfaces over totally real fields $F$ (of degree greater than 2, so always compact). The curves are "modeles étranges" in the sense of Deligne, so we also need moduli spaces of unitary Shimura varieties over CM extensions. We need to decompose the first and second etale cohomology groups of these varieties into Galois representations, by understanding them in terms of automorphic representations.
 
-- [Shimura\_varieties](shimura-varieties.md)
-
 We also need Moret-Bailly's theorem from ([Moret-Bailly 1989](http://www.numdam.org/item?id=ASENS_1989_4_22_2_161_0)):
-
-- [moret-bailly](moret-bailly.md)
 
 Note that we do not even have the definition of a curve over a field in Lean.

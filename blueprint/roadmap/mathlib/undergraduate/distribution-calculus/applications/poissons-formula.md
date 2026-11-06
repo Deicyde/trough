@@ -26,7 +26,7 @@ SchwartzMap.tsum_eq_tsum_fourier (f : SchwartzMap ℝ ℂ) (x : ℝ) :
 ## Proof depends on
 
 - [Absolutely convergent series in Banach spaces](../../../overview/analysis/normed-vector-spaces-banach-spaces/absolutely-convergent-series-in-banach-spaces.md)
-- [Fourier Series](../../../hundred-theorems/part-04/fourier-series.md)
+- [Fourier Series](../../../hundred-theorems/part-03/fourier-series.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Sources

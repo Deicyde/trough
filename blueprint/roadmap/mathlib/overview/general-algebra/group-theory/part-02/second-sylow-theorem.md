@@ -23,7 +23,7 @@ $p$-subgroup of $G$ is a [subgroup](../part-01/subgroup.md) of order $p^n$, the 
 dividing $|G|$. Equivalently, it is a subgroup in which every element has [order](../../../../undergraduate/group-theory/basic-definitions/order-of-an-element.md) a
 power of $p$ and which is maximal with that property. For a finite group,
 [every element has $p$-power order exactly when the group has $p$-power order](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/PGroup.html#IsPGroup.iff_card)
-(one direction uses [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md)), so a maximal such
+(one direction uses [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md)), so a maximal such
 subgroup has order $p^k$ for some $k \le n$. That $k = n$ takes more work. A subgroup of order $p^n$
 exists by the first Sylow theorem, and the fixed-point argument in the proof below shows that every
 subgroup of $p$-power order lies in a conjugate of it; so

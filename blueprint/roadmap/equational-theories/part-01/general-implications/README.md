@@ -2,12 +2,7 @@
 
 We will be interested in seeing which laws imply which other laws, in the sense that magmas satisfying the former law automatically satisfy the latter. We will also be interested in *anti-implications* showing that one law does *not* imply another, by producing examples of magmas that satisfy the former law but not the latter. Here is a formal definition.
 
-- [Implication](impl.md)
-- [Pre-order](pre-order.md)
-
 Note that we view the stronger law as less than or equal to the weaker law. This is because the class of magmas that satisfy the stronger law is a subset of the class of magmas that satisfy the weaker law. It is also consistent with the conventions of Lean's Mathlib.
-
-*The proof of [Pre-order](pre-order.md) is shown with its statement.*
 
 Implications between the laws from [Selected laws](../selected-laws/README.md) are depicted in Figure 1.
 
@@ -26,9 +21,6 @@ The pre-ordering on laws has a duality symmetry:
 
 Some equational laws can be “diagonalized”:
 
-- [Diagonalization](diag.md)
-
 Thus for instance, [E7](https://teorth.github.io/equational_theories/implications/?7) $({x = y \diamond z})$ is equivalent to [E2](https://teorth.github.io/equational_theories/implications/?2) $({x = y})$.
 
-- [Laws implied by the constant law](constant-impl.md)
 - [Criterion for implication](variable-impl.md)

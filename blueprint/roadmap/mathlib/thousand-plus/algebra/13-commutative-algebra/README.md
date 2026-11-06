@@ -1,17 +1,9 @@
 # 13 Commutative algebra
 
-- [Artin approximation theorem](artin-approximation-theorem.md)
-- [Brauer–Cartan–Hua theorem](brauer-cartan-hua-theorem.md)
-- [Cohen structure theorem](cohen-structure-theorem.md)
 - [Going-up and going-down theorems](going-up-and-going-down-theorems.md)
-- [Goldie's theorem](goldies-theorem.md)
 - [Hilbert's basis theorem](../../../overview/general-algebra/polynomials-and-power-series/hilbert-basis-theorem.md)
-- [Hilbert's syzygy theorem](hilberts-syzygy-theorem.md)
 - [Jacobson density theorem](jacobson-density-theorem.md)
 - [Krull's principal ideal theorem](krulls-principal-ideal-theorem.md)
 - [Lasker–Noether theorem](lasker-noether-theorem.md)
-- [Levitzky's theorem](levitzkys-theorem.md)
-- [Regev's theorem](regevs-theorem.md)
-- [Swan's theorem](swans-theorem.md)
 - [Vieta's formulas](vietas-formulas.md)
 - [Wedderburn's little theorem](wedderburns-little-theorem.md)

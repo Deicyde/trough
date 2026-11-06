@@ -6,4 +6,3 @@
 - [Nondegenerate forms](nondegenerate-forms.md)
 - [Matrix representation](../../../overview/linear-algebra/bilinear-and-quadratic-forms/matrix-representation.md)
 - [Change of coordinates](change-of-coordinates.md)
-- [Rank of a bilinear form](rank-of-a-bilinear-form.md)

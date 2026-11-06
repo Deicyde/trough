@@ -38,7 +38,7 @@ $b = \operatorname{Im} z$, and products are computed by expanding and replacing
 $i^2$ by $-1$.
 
 With these operations $\mathbb{C}$ is
-[a field](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Basic/Complex/Basic.html#Complex.instField) (see [the field of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)).
+[a field](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Basic/Complex/Basic.html#Complex.instField) (see [the field of complex numbers](../../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md)).
 The inverse of a nonzero $z = a + bi$ is
 
 $$z^{-1} = \frac{a - bi}{a^2 + b^2}.$$

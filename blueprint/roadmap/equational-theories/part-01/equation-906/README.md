@@ -18,8 +18,6 @@ $$
 L_y x \diamond Sx = L_y^{-1} x.\qquad\text{(3)}
 $$
 
-- [Edge disjointness of left cycles](edge-disjoint.md)
-
 Setting $n = N-2$ for $N>2$ a common period of $L_y,L_z$ (which exists by finiteness) we conclude that
 
 $$

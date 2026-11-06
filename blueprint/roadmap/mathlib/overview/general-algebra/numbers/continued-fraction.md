@@ -110,7 +110,7 @@ with integer coefficients.
 ## Related concepts
 
 For $n \ge 1$ the denominators strictly increase, so for an irrational real number $v$ the error
-bound gives infinitely many rationals $x/y$ with $|v - x/y| < 1/y^2$, an explicit form of [Dirichlet's approximation theorem](../../../thousand-plus/number-theory/part-02/dirichlets-approximation-theorem.md). Generalized continued fractions with
+bound gives infinitely many rationals $x/y$ with $|v - x/y| < 1/y^2$, an explicit form of [Dirichlet's approximation theorem](../../../thousand-plus/number-theory/part-01/dirichlets-approximation-theorem.md). Generalized continued fractions with
 arbitrary partial numerators appear in analysis as expansions of functions, and for a positive integer $d$
 that is not a square, the periodic expansion of $\sqrt d$ yields the fundamental solution of
 Pell's equation $x^2 - d y^2 = 1$.

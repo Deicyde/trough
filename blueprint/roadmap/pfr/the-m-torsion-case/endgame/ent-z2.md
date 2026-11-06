@@ -12,7 +12,7 @@ We have $\mathbb{H}[Z_2] \leq (8m^2-16m+1) k + \frac{1}{m} \sum_{i=1}^m \mathbb{
 
 ## Depends on
 
-- [Additional random variables](more-random.md)
+Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
@@ -35,7 +35,7 @@ $$
 \end{aligned}
 $$
 
-Using [Sums of dilates II](../more-ruzsa-distance-estimates/sum-dilate-ii.md) and [(4)](ent-w.md) we get
+Using [Sums of dilates II](../more-ruzsa-distance-estimates/sum-dilate-ii.md) and [(3)](ent-w.md) we get
 
 $$
 \begin{aligned}
@@ -45,7 +45,7 @@ $$
 \end{aligned}
 $$
 
-Applying [(5)](ent-w.md) gives the claim.
+Applying [(4)](ent-w.md) gives the claim.
 
 ## Lean
 

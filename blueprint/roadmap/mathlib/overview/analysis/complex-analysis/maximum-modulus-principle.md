@@ -32,7 +32,7 @@ Complex.eventually_eq_of_isLocalMax_norm.{u, v} {E : Type u} [NormedAddCommGroup
 - [Completion of an abelian topological group](../../topology/topological-algebra/completion-of-an-abelian-topological-group.md)
 - [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Lipschitz continuity](../../topology/metric-spaces/lipschitz-continuity.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 
 ## Sources
 

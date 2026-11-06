@@ -13,7 +13,7 @@ An **algebraic extension** is a [field](field.md) extension $L/K$ in which every
 
 ## Definition
 
-Let $K$ be a field and $L$ an extension field of $K$. An element $\alpha \in L$ is [algebraic over $K$](../../../undergraduate/ring-theory/field-theory/part-01/algebraic-elements.md) if it is a [root of a nonzero polynomial with coefficients in $K$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Algebraic/Defs.html#IsAlgebraic), and [transcendental](../../../undergraduate/ring-theory/field-theory/part-01/transcendental-elements.md) otherwise. The extension $L/K$ is algebraic when [every element of $L$ is algebraic over $K$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Algebraic/Defs.html#Algebra.IsAlgebraic).
+Let $K$ be a field and $L$ an extension field of $K$. An element $\alpha \in L$ is [algebraic over $K$](../../../undergraduate/ring-theory/field-theory/algebraic-elements.md) if it is a [root of a nonzero polynomial with coefficients in $K$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Algebraic/Defs.html#IsAlgebraic), and [transcendental](../../../undergraduate/ring-theory/field-theory/transcendental-elements.md) otherwise. The extension $L/K$ is algebraic when [every element of $L$ is algebraic over $K$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Algebraic/Defs.html#Algebra.IsAlgebraic).
 
 Since $K$ is a field, a nonzero polynomial can be divided by its leading coefficient, so an element is algebraic exactly when it is a root of a monic polynomial over $K$, that is, when it is integral over $K$. Hence [an extension of a field is algebraic if and only if it is integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Algebraic/Integral.html#Algebra.isAlgebraic_iff_isIntegral). For an algebraic element $\alpha$, the monic polynomial of least degree with root $\alpha$ is its [minimal polynomial](../../linear-algebra/endomorphism-polynomials/minimal-polynomial.md).
 
@@ -22,7 +22,7 @@ Since $K$ is a field, a nonzero polynomial can be divided by its leading coeffic
 - The extension $\mathbb{Q}(\sqrt 2)/\mathbb{Q}$ is algebraic: it has dimension $2$ over $\mathbb{Q}$, and finite extensions are algebraic (see below). Directly, $a + b\sqrt 2$ is a root of $x^2 - 2ax + a^2 - 2b^2$.
 - The extension $\mathbb{C}/\mathbb{R}$ is algebraic, since $a + bi$ is a root of the real polynomial $x^2 - 2ax + a^2 + b^2$.
 - The complex numbers that are algebraic over $\mathbb{Q}$ form a field, and it is algebraic over $\mathbb{Q}$ of infinite degree: it contains $\sqrt[n]{2}$, whose minimal polynomial $x^n - 2$ has degree $n$, for every $n \ge 1$. So an algebraic extension need not be finite.
-- The [real numbers](../numbers/real-number.md) are not algebraic over the [rational numbers](../numbers/rational-number.md). An algebraic extension of a countable field is countable (see the cardinality bound below), while $\mathbb{R}$ is [uncountable](../../../hundred-theorems/part-02/the-non-denumerability-of-the-continuum.md).
+- The [real numbers](../numbers/real-number.md) are not algebraic over the [rational numbers](../numbers/rational-number.md). An algebraic extension of a countable field is countable (see the cardinality bound below), while $\mathbb{R}$ is [uncountable](../../../hundred-theorems/part-01/the-non-denumerability-of-the-continuum.md).
 - The field $K(x)$ of rational functions in one variable is not algebraic over $K$: no nonzero polynomial over $K$ vanishes at $x$.
 
 ## Properties
@@ -49,7 +49,7 @@ Mathlib defines algebraicity for an arbitrary algebra $A$ over a commutative rin
 
 - [Field](field.md)
 - [Polynomial in one indeterminate](../polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Algebraic elements](../../../undergraduate/ring-theory/field-theory/part-01/algebraic-elements.md)
+- [Algebraic elements](../../../undergraduate/ring-theory/field-theory/algebraic-elements.md)
 
 ## Sources
 

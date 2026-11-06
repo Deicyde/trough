@@ -15,7 +15,6 @@ $$
 
 ## Depends on
 
-- [eta-def](eta-def.md)
 - [Ruzsa distance](../entropic-ruzsa-calculus/part-01/ruz-dist-def.md)
 
 ## Lean

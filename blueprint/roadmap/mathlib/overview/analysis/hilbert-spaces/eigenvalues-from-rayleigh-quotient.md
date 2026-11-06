@@ -32,7 +32,7 @@ IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn.{u_1, u_2} {𝕜 : Type u_1} [RCLi
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Dual of a normed space](../normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [Hellinger–Toeplitz theorem](../../../thousand-plus/analysis/46-functional-analysis/part-02/hellinger-toeplitz-theorem.md)
+- [Hellinger–Toeplitz theorem](../../../thousand-plus/analysis/46-functional-analysis/hellinger-toeplitz-theorem.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 

@@ -98,7 +98,7 @@ The algorithm uses only division with remainder, so it runs in every
 [Euclidean domain](euclidean-domain.md), where a size function replaces the usual order
 on remainders. Examples are the integers ([a Euclidean domain](../../../undergraduate/ring-theory/divisibility-in-integral-domains/z-is-a-euclidean-ring.md)) and
 [polynomials in one variable over a field](../polynomials-and-power-series/k-x-is-euclidean.md). The
-[general version](../../../hundred-theorems/part-04/greatest-common-divisor-algorithm.md) rests on the same step,
+[general version](../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md) rests on the same step,
 [$\gcd(a, b) = \gcd(b \bmod a, a)$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.gcd_val); its output
 [divides both inputs](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.gcd_dvd) and
 [is divisible by every common divisor](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.dvd_gcd). The

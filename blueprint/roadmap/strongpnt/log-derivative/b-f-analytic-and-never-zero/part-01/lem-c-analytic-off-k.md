@@ -16,7 +16,6 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [C function](def-c-function.md)
 - [Ratio analytic](lem-ratioanalat.md)
 - [Finite zeros](../../lem-contra-finitekr.md)
 - [Order at least one](lem-m-rho-ge-1.md)

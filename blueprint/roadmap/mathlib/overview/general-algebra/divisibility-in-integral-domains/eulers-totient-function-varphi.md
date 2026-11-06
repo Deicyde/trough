@@ -96,7 +96,7 @@ over the divisors of $n$ so does $n/d$.
   [Lagrange's theorem](../group-theory/part-02/lagranges-theorem.md) applied to the units
   modulo $n$,
   [$a^{\varphi(n)} \equiv 1 \pmod n$ for every natural number $a$ coprime to $n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#Nat.ModEq.pow_totient).
-  For a prime modulus this is [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md).
+  For a prime modulus this is [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md).
   For example $3^{\varphi(10)} = 3^4 = 81 \equiv 1 \pmod{10}$.
 - **Cyclic groups.** In a finite cyclic group of order $n$, for each divisor $d$
   of $n$, [exactly $\varphi(d)$ elements have order $d$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Cyclic.html#IsCyclic.card_orderOf_eq_totient)

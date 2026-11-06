@@ -12,7 +12,7 @@ mathlib_file: Mathlib/NumberTheory/Transcendental/Liouville/LiouvilleNumber.lean
 **Liouville's theorem on existence of transcendental numbers** says that explicit
 real numbers such as
 $$\sum_{k=1}^{\infty} 10^{-k!} = 0.110001000000000000000001000\ldots$$
-are [transcendental](../../../undergraduate/ring-theory/field-theory/part-01/transcendental-elements.md): they are not roots of any nonzero
+are [transcendental](../../../undergraduate/ring-theory/field-theory/transcendental-elements.md): they are not roots of any nonzero
 [polynomial](../polynomials-and-power-series/polynomial-in-one-indeterminate.md) with integer coefficients. The theorem names
 specific transcendental numbers instead of only proving that some exist. The
 method behind it is a lower bound on how well an algebraic number can be
@@ -62,7 +62,7 @@ polynomial $f$ of degree $d$. The key estimate is that
 For $a/q$ near $x$ this comes from two facts. The number $q^d f(a/q)$ is an integer;
 since $f$ has only finitely many roots, it is nonzero for $a/q$ close enough to $x$
 but different from $x$, so $|f(a/q)| \ge q^{-d}$. On the other hand, the
-[mean value theorem](../../../hundred-theorems/part-04/the-mean-value-theorem.md), in its inequality form, gives
+[mean value theorem](../../../hundred-theorems/part-03/the-mean-value-theorem.md), in its inequality form, gives
 $|f(a/q)| = |f(x) - f(a/q)| \le M\,|x - a/q|$, where $M$ bounds $|f'|$ near $x$.
 Fractions far from $x$ are covered by enlarging $A$. Finally choose $n \ge d$ with
 $2^{\,n-d} > A$. The Liouville property provides $a/b$ with $b \ge 2$ and
@@ -75,7 +75,7 @@ $|x - a/b| < b^{-n} \le b^{-d}/2^{\,n-d} < 1/(A\,b^d)$, contradicting the estima
   Mathlib proves this for any countable integral domain of coefficients and any
   integral domain that is a torsion-free algebra over it. Since
   [the real numbers are uncountable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Real/Cardinality.html#Cardinal.not_countable_real)
-  (see [uncountability of the continuum](../../../hundred-theorems/part-02/the-non-denumerability-of-the-continuum.md)), all
+  (see [uncountability of the continuum](../../../hundred-theorems/part-01/the-non-denumerability-of-the-continuum.md)), all
   but countably many real numbers are transcendental. This argument shows that
   transcendental numbers exist but names none; the construction of $L_m$ names them.
 - **Size of the set of Liouville numbers.** In the sense of Baire category the Liouville
@@ -110,7 +110,7 @@ equivalent condition.
 
 ## Depends on
 
-- [Transcendental elements](../../../undergraduate/ring-theory/field-theory/part-01/transcendental-elements.md)
+- [Transcendental elements](../../../undergraduate/ring-theory/field-theory/transcendental-elements.md)
 - [Polynomial in one indeterminate](../polynomials-and-power-series/polynomial-in-one-indeterminate.md)
 - [Real number](../numbers/real-number.md)
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
@@ -118,7 +118,7 @@ equivalent condition.
 ## Proof depends on
 
 - [Liouville’s Theorem and the Construction of Transcendental Numbers](../../../hundred-theorems/part-01/liouvilles-theorem-and-the-construction-of-trans.md)
-- [The Mean Value Theorem (Freek Wiedijk's 100 theorems)](../../../hundred-theorems/part-04/the-mean-value-theorem.md)
+- [The Mean Value Theorem (Freek Wiedijk's 100 theorems)](../../../hundred-theorems/part-03/the-mean-value-theorem.md)
 - [Geometric series](../../../undergraduate/single-variable-real-analysis/numerical-series/geometric-series.md)
 
 ## Sources

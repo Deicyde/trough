@@ -1,8 +1,7 @@
 # Zeta lower bound
 
-## [Prime set to Triangle abs](part-01/README.md)
+## [Prime decay to Prime power](part-01/README.md)
 
-- [Prime set](part-01/def-natprimes.md)
 - [Prime decay](part-01/lem-p-s-abs-1.md)
 - [Euler product](part-01/lem-zetaeulerprod.md)
 - [Abs product](part-01/lem-abs-of-tprod.md)
@@ -22,10 +21,10 @@
 - [Ratio identity](part-01/thm-zeta-ratio-identity.md)
 - [Three halves](part-01/lem-zeta-ratio-at-3-2.md)
 - [Triangle abs](part-01/lem-triangle-inequality-specific.md)
+- [Prime power](part-01/lem-abs-p-pow-s.md)
 
-## [Prime power to Fixed lower](part-02/README.md)
+## [Term bound to Fixed lower](part-02/README.md)
 
-- [Prime power](part-02/lem-abs-p-pow-s.md)
 - [Term bound](part-02/lem-abs-term-bound.md)
 - [Inv order](part-02/lem-inv-inequality.md)
 - [Nonzero term](part-02/lem-condp32.md)

@@ -40,7 +40,7 @@ VectorField.leibniz_identity_mlieBracket.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1}
 - [Cluster point](../../../topology/general-topology/part-01/cluster-point.md)
 - [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 - [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-04/the-triangle-inequality.md)
 
 ## Sources
 

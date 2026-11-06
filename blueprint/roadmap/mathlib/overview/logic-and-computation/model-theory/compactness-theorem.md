@@ -23,7 +23,7 @@ FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable.{u, v} {L : F
 
 ## Proof depends on
 
-- [Łoś' theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-03/os-theorem.md)
+- [Łoś' theorem](../../../thousand-plus/general-topics-history-and-foundations/os-theorem.md)
 
 ## Sources
 

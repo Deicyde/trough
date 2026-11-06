@@ -57,7 +57,7 @@ B_{10} = \tfrac5{66},\quad B_{12} = -\tfrac{691}{2730},\quad B_{14} = \tfrac76.$
   [$B_n = 0$ for every odd $n > 1$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Bernoulli.html#bernoulli_eq_zero_of_odd).
 - **Sums of powers.** For natural numbers $n$ and $p$,
   [Faulhaber's formula](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Bernoulli.html#sum_range_pow) expresses the
-  [sum of $p$th powers](../../../hundred-theorems/part-04/sum-of-kth-powers.md) as a
+  [sum of $p$th powers](../../../hundred-theorems/part-03/sum-of-kth-powers.md) as a
   polynomial in $n$ of degree $p + 1$ (with the convention $0^0 = 1$):
 
   $$\sum_{k=0}^{n-1} k^p = \frac{1}{p+1}\sum_{i=0}^{p} \binom{p+1}{i} B_i\, n^{p+1-i}.$$
@@ -79,7 +79,7 @@ B_{10} = \tfrac5{66},\quad B_{12} = -\tfrac{691}{2730},\quad B_{14} = \tfrac76.$
   example $\zeta(0) = -\tfrac12$ and $\zeta(-1) = -\tfrac1{12}$, while
   $\zeta(-2k) = 0$ for $k \ge 1$ because $B_{2k+1} = 0$.
 - **Denominators.** The
-  [von Staudt–Clausen theorem](../../../thousand-plus/number-theory/part-06/von-staudt-clausen-theorem.md) states that for
+  [von Staudt–Clausen theorem](../../../thousand-plus/number-theory/part-02/von-staudt-clausen-theorem.md) states that for
   every $k \ge 1$
   [the following number is an integer](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Bernoulli.html#Bernoulli.vonStaudt_clausen):
 

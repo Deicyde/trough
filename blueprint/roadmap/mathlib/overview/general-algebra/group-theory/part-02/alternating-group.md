@@ -15,7 +15,8 @@ $n \ge 2$. The alternating groups $A_n$ with $n \ge 5$ form the most elementary
 infinite family of nonabelian [simple groups](../part-01/simple-group.md): each has no
 normal subgroups other than the trivial group and itself. This fact is the group-theoretic reason why the general polynomial equation
 of degree five or more cannot be solved by radicals, and the alternating groups form
-one of the infinite families in the [classification of finite simple groups](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/classification-of-finite-simple-groups.md).
+one of the infinite families in the classification of finite simple
+groups.
 
 ## Definition
 

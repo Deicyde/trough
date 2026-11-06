@@ -4,15 +4,15 @@ Each library is a row. A mapped library has one row per source it is mapped from
 
 | Area | Coverage | Evidence |
 | --- | --- | --- |
-| Mathlib / Mathlib overview | `DECOMPOSED` | [512 list items](../roadmap/mathlib/overview/README.md), one article per concept. |
-| Mathlib / Undergraduate mathematics | `DECOMPOSED` | [566 list items](../roadmap/mathlib/undergraduate/README.md), one article per concept. |
-| Mathlib / Freek Wiedijk's 100 theorems | `DECOMPOSED` | [100 list items](../roadmap/mathlib/hundred-theorems/README.md), one article per concept. |
-| Mathlib / 1000+ theorems | `DECOMPOSED` | [1199 list items](../roadmap/mathlib/thousand-plus/README.md), one article per concept. |
-| Fermat's Last Theorem (Imperial) | `DECOMPOSED` | [241 blueprint nodes](../roadmap/flt/README.md), one article per node. |
-| PNT+ | `DECOMPOSED` | [403 blueprint nodes](../roadmap/pnt-plus/README.md), one article per node. |
-| Polynomial Freiman-Ruzsa | `DECOMPOSED` | [219 blueprint nodes](../roadmap/pfr/README.md), one article per node. |
-| Equational Theories | `DECOMPOSED` | [214 blueprint nodes](../roadmap/equational-theories/README.md), one article per node. |
-| Strong PNT (Math Inc) | `DECOMPOSED` | [621 blueprint nodes](../roadmap/strongpnt/README.md), one article per node. |
+| Mathlib / Mathlib overview | `DECOMPOSED` | [512 list items](../roadmap/mathlib/overview/README.md), one article per concept Mathlib has. |
+| Mathlib / Undergraduate mathematics | `DECOMPOSED` | [566 list items](../roadmap/mathlib/undergraduate/README.md), one article per concept Mathlib has. |
+| Mathlib / Freek Wiedijk's 100 theorems | `DECOMPOSED` | [100 list items](../roadmap/mathlib/hundred-theorems/README.md), one article per concept Mathlib has. |
+| Mathlib / 1000+ theorems | `DECOMPOSED` | [1199 list items](../roadmap/mathlib/thousand-plus/README.md), one article per concept Mathlib has. |
+| Fermat's Last Theorem (Imperial) | `DECOMPOSED` | [172 blueprint nodes in Lean](../roadmap/flt/README.md), one article per node. |
+| PNT+ | `DECOMPOSED` | [383 blueprint nodes in Lean](../roadmap/pnt-plus/README.md), one article per node. |
+| Polynomial Freiman-Ruzsa | `DECOMPOSED` | [213 blueprint nodes in Lean](../roadmap/pfr/README.md), one article per node. |
+| Equational Theories | `DECOMPOSED` | [137 blueprint nodes in Lean](../roadmap/equational-theories/README.md), one article per node. |
+| Strong PNT (Math Inc) | `DECOMPOSED` | [615 blueprint nodes in Lean](../roadmap/strongpnt/README.md), one article per node. |
 | Tau Ceti | `DEFERRED` | Planned map, by roadmap: One article per TauCetiRoadmap roadmap (124 active, 30 completed), its Suggested.lean signatures as statements, and the named results in STATUS.md linked to Tau Ceti declarations. |
 | ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>. |
 | Formal Conjectures | `DEFERRED` | Planned map, by problem: One article per problem file (about 2,000), grouped by source; most are stated without a proof. |

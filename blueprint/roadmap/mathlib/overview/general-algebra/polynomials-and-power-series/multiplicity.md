@@ -17,7 +17,7 @@ Let $R$ be a commutative [ring](../rings/ring.md), $p$ a nonzero polynomial with
 [the largest natural number $m$ such that $(X - a)^m$ divides $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.rootMultiplicity).
 Such a largest $m$ exists because $X - a$ is monic, so a power of it that divides $p$ cannot have degree larger than that of $p$. Equivalently, for a nonzero $p$ and every $n$,
 [$(X - a)^n$ divides $p$ exactly when $n$ is at most the multiplicity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.le_rootMultiplicity_iff).
-In particular, if $m$ is the multiplicity of $a$ in a nonzero $p$, then [$p = (X - a)^m q$ for a polynomial $q$ not divisible by $X - a$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.exists_eq_pow_rootMultiplicity_mul_and_not_dvd). By the [factor theorem](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md), [$X - a$ divides $q$ exactly when $q(a) = 0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.dvd_iff_isRoot), so the condition on $q$ says $q(a) \neq 0$.
+In particular, if $m$ is the multiplicity of $a$ in a nonzero $p$, then [$p = (X - a)^m q$ for a polynomial $q$ not divisible by $X - a$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.exists_eq_pow_rootMultiplicity_mul_and_not_dvd). By the [factor theorem](../../../hundred-theorems/part-04/the-factor-and-remainder-theorems.md), [$X - a$ divides $q$ exactly when $q(a) = 0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.dvd_iff_isRoot), so the condition on $q$ says $q(a) \neq 0$.
 
 For a nonzero $p$, [the multiplicity of $a$ is positive exactly when $a$ is a root of $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.rootMultiplicity_pos), so elements that are not roots have multiplicity $0$. A root of multiplicity $1$ is called simple, and a root of multiplicity at least $2$ is called a multiple (double, triple, ...) root. The zero polynomial is divisible by every power of $X - a$; by convention its multiplicity at every point is [$0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.rootMultiplicity_zero).
 
@@ -69,7 +69,7 @@ Mathlib defines the multiplicity for polynomials over an arbitrary ring, commuta
 - [Polynomial in one indeterminate](polynomial-in-one-indeterminate.md)
 - [Ring](../rings/ring.md)
 - [Polynomial functions](../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
+- [The Factor and Remainder Theorems](../../../hundred-theorems/part-04/the-factor-and-remainder-theorems.md)
 
 ## Proof depends on
 

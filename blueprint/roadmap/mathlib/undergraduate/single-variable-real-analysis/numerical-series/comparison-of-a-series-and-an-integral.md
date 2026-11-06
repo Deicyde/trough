@@ -19,7 +19,7 @@ AntitoneOn.tsum_le_integral {f : ℝ → ℝ} (anti : AntitoneOn f (Set.Ici 0))
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 
 ## Proof depends on

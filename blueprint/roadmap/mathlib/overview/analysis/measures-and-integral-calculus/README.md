@@ -27,7 +27,7 @@
 
 - [Fubini's theorem](part-02/fubinis-theorem.md)
 - [Product of finitely many measures](part-02/product-of-finitely-many-measures.md)
-- [Convolution (Measures and integral calculus)](part-02/convolution.md)
+- [Convolution](part-02/convolution.md)
 - [Approximation by convolution](part-02/approximation-by-convolution.md)
 - [Regularization by convolution](part-02/regularization-by-convolution.md)
 - [Change of variables formula](part-02/change-of-variables-formula.md)

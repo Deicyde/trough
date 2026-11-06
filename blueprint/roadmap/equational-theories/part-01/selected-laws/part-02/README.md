@@ -32,7 +32,7 @@ Introduced in [MathOverflow](https://mathoverflow.net/a/450905/766). See [387 im
 
 - [Equation 477](eq477.md)
 
-An example of a confluent law; see [477 confluent](../../some-abstract-nonsense/confluent-theories/477-confl.md).
+An example of a confluent law; see 477 confluent.
 
 - [Equation 854](eq854.md)
 

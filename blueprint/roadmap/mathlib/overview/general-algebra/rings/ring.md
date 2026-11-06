@@ -52,8 +52,8 @@ under addition, negation and multiplication is a [subring](subring.md).
 - For every natural number $n$, the integers modulo $n$
   [form a commutative ring](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/Defs.html#ZMod.commRing); for $n = 0$ this is the ring of
   integers itself.
-- The [rational](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md), [real](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md) and
-  [complex](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md) numbers are commutative rings, and in fact
+- The [rational](../../../undergraduate/ring-theory/field-theory/field-q-of-rational-numbers.md), [real](../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md) and
+  [complex](../../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md) numbers are commutative rings, and in fact
   [fields](../field-theory/field.md): every nonzero element has a multiplicative inverse.
 - If $R$ is a ring, the polynomials in one indeterminate with coefficients in $R$
   [form a ring](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Basic.html#Polynomial.ring), which is

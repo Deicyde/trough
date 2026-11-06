@@ -55,7 +55,6 @@ Selected laws of interest are listed below, as well as in [this file](https://gi
 - [Equation 3588](part-03/eq3588.md)
 - [Equation 3722](part-03/eq3722.md)
 - [Equation 3744](part-03/eq3744.md)
-- [Equation 3994](part-03/eq3994.md)
 - [Equation 4315](part-03/eq4315.md)
 - [Equation 4512](part-03/eq4512.md)
 - [Equation 4513](part-03/eq4513.md)

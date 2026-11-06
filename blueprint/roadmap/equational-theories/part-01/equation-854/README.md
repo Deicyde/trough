@@ -53,12 +53,9 @@ Call a word $w$ *irreducible* if it is not of the form $w = w_1 \diamond w_2$ wi
 
 We can describe the words equivalent to an irreducible word as follows.
 
-- [Description of equivalence](irred-desc.md)
-
 We have two useful corollaries:
 
 - [Unique factorization](unique-factorization.md)
-- [Description of graph](graph-desc.md)
 
 We can now prove some anti-implications.
 

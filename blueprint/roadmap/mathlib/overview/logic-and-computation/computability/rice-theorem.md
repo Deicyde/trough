@@ -21,7 +21,7 @@ ComputablePred.rice (C : Set (ℕ →. ℕ)) (h : ComputablePred fun c => c.eval
 
 ## Proof depends on
 
-- [Kleene's recursion theorem](../../../thousand-plus/general-topics-history-and-foundations/03-mathematical-logic-and-foundations/part-02/kleenes-recursion-theorem.md)
+- [Kleene's recursion theorem](../../../thousand-plus/general-topics-history-and-foundations/kleenes-recursion-theorem.md)
 
 ## Sources
 

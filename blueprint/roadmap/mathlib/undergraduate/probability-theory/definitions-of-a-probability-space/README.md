@@ -9,4 +9,3 @@
 - [Borel-Cantelli lemma (easy direction)](borel-cantelli-lemma-easy-direction.md)
 - [Borel-Cantelli lemma (difficult direction)](borel-cantelli-lemma-difficult-direction.md)
 - [Conditional probability](../../../overview/probability-theory/definitions-in-probability-theory/conditional-probability.md)
-- [Law of total probability](law-of-total-probability.md)

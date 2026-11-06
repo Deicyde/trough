@@ -19,7 +19,7 @@ MeasureTheory.Measure.pi.{u_1, u_3} {ι : Type u_1} {α : ι → Type u_3} [Fint
 
 ## Depends on
 
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Positive measure](../part-01/positive-measure.md)
 - [Product of sigma-algebras](../../../../undergraduate/measures-and-integral-calculus/measure-theory/product-of-sigma-algebras.md)
 

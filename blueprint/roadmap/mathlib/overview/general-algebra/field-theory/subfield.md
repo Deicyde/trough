@@ -48,7 +48,7 @@ In particular $\mathbb{Q}$ and $\mathbb{Z}/p\mathbb{Z}$ have no subfields other 
 
 ## Related concepts
 
-A subfield of $K$ is the field analogue of a [subgroup](../group-theory/part-01/subgroup.md) of a group or a [subring](../rings/subring.md) of a ring. When a field $L$ is an extension of a field $K$, the subfields of $L$ that contain the image of $K$ are called [intermediate fields](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IntermediateField/Basic.html#IntermediateField); they are the objects of the Galois correspondence, and they appear throughout the theory of [algebraic extensions](algebraic-extension.md) and [splitting fields](splitting-field.md). The [finite fields](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) give a clean picture: a field with $p^n$ elements has exactly one subfield with $p^m$ elements for each divisor $m$ of $n$, and no others.
+A subfield of $K$ is the field analogue of a [subgroup](../group-theory/part-01/subgroup.md) of a group or a [subring](../rings/subring.md) of a ring. When a field $L$ is an extension of a field $K$, the subfields of $L$ that contain the image of $K$ are called [intermediate fields](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IntermediateField/Basic.html#IntermediateField); they are the objects of the Galois correspondence, and they appear throughout the theory of [algebraic extensions](algebraic-extension.md) and [splitting fields](splitting-field.md). The [finite fields](../../../undergraduate/ring-theory/field-theory/finite-fields.md) give a clean picture: a field with $p^n$ elements has exactly one subfield with $p^m$ elements for each divisor $m$ of $n$, and no others.
 
 ## In Mathlib
 

@@ -41,8 +41,6 @@ $$
 
 ([OEIS A000108](https://oeis.org/A000108)).
 
-- [Induced homomorphism](induced-def.md)
-
 For instance, if $f : \{0,1\} \to G$ maps $0,1$ to $x,y$ respectively, then
 
 $$
@@ -87,8 +85,6 @@ for all $x, y \in G$. We refer to (2) as the *equation* associated to the law (1
 This definition is useful because of the following theorem:
 
 - [Birkhoff's completeness theorem](sound-complete.md)
-- [Compactness theorem](compactness-thm.md)
-- [Pushforward](push.md)
 
 If $\pi$ is a bijection, we will call $\pi_*(w) \simeq \pi_*(w')$ a *relabeling* of the law $w \simeq w'$. Thus for instance
 
@@ -98,11 +94,7 @@ $$
 
 is a relabeling of the commutative law (1). By the above lemma, relabeling does not affect whether a given magma satisfies a given law.
 
-- [Equivalence](equiv.md)
-
 Define the total order of a law $w \simeq w'$ to be the sum of the orders of $w$ and $w'$.
-
-- [Counting laws up to relabeling](law-count.md)
 
 The first few Bell numbers are
 
@@ -112,7 +104,7 @@ $$
 
 ([OEIS A000110](https://oeis.org/A000110)).
 
-The sequence in [Counting laws up to relabeling](law-count.md) is
+The sequence in Counting laws up to relabeling is
 
 $$
 2, 10, 75, 728, 8526, 115764, \dots
@@ -122,15 +114,13 @@ $$
 
 Now we would also like to count laws up to relabeling and symmetry.
 
-- [Counting laws up to relabeling and symmetry](law-count-sym.md)
-
 The sequence $D_n$ is
 
 $$
 1, 1, 2, 4, 11, 32, 117, \dots
 $$
 
-([OEIS A103293](https://oeis.org/A103293)), and the sequence in [Counting laws up to relabeling and symmetry](law-count-sym.md) is
+([OEIS A103293](https://oeis.org/A103293)), and the sequence in Counting laws up to relabeling and symmetry is
 
 $$
 2, 5, 41, 364, 4294, 57882, 888440, \dots
@@ -139,8 +129,6 @@ $$
 ([OEIS A376620](https://oeis.org/A376620)).
 
 We can also identify all laws of the form $w \simeq w$ with the trivial law $0 \simeq 0$. The number of such laws of total order $n$ is zero if $n$ is odd, and $C_{n/2} B_{n/2+1}$ if $n$ is even. We conclude:
-
-- [Counting laws up to relabeling, symmetry, and triviality](law-count-triv.md)
 
 This sequence is
 

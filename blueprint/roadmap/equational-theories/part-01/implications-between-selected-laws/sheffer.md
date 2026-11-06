@@ -8,11 +8,11 @@ proof: formalized
 
 # Sheffer stroke axiom
 
-Definition [E345169](https://teorth.github.io/equational_theories/implications/?345169) $({x = (y \diamond ((x \diamond y) \diamond y)) \diamond (x \diamond (z \diamond y))})$ axiomatizes the Sheffer stroke operation $x \diamond y = \overline{xy}$ in a Boolean algebra.
+Definition [E345169](https://teorth.github.io/equational_theories/implications/?345169) $()$ axiomatizes the Sheffer stroke operation $x \diamond y = \overline{xy}$ in a Boolean algebra.
 
 ## Depends on
 
-- [Equation 345169](../selected-laws/part-03/equations-of-order-greater-than-4/eq345169.md)
+Its statement uses no other node of the blueprint.
 
 ## Proof
 

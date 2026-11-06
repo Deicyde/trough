@@ -21,7 +21,7 @@ Metric.isOpen_iff.{u} {α : Type u} [PseudoMetricSpace α] {s : Set α} :
 
 ## Proof depends on
 
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources

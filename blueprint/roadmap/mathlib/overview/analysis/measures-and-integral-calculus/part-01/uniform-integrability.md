@@ -21,7 +21,7 @@ MeasureTheory.UniformIntegrable.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} 
 
 - [Almost sure convergence](../../../probability-theory/convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
 - [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Continuous function](../../../topology/general-topology/part-01/continuous-function.md)
 - [Integral of positive measurable functions](integral-of-positive-measurable-functions.md)
 - [Linear map](../../../linear-algebra/fundamentals/linear-map.md)

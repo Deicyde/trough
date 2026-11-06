@@ -106,7 +106,7 @@ while [$r_1 + 2r_2$ is the degree](https://leanprover-community.github.io/mathli
 The logarithmic embedding in the proof drops one distinguished place, so it lands in
 $\mathbb{R}^r$ rather than in a hyperplane of $\mathbb{R}^{r_1 + r_2}$. The quotient of the units by
 the roots of unity is treated as a module over the integers; Mathlib picks a
-[basis of it](../../../thousand-plus/number-theory/part-02/dirichlets-unit-theorem.md), and its fundamental
+[basis of it](../../../thousand-plus/number-theory/part-01/dirichlets-unit-theorem.md), and its fundamental
 system consists of arbitrary lifts of the basis elements. The uniqueness statement refers to that
 chosen system, not to every fundamental system.
 

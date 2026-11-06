@@ -17,7 +17,7 @@ Its statement uses no other node of the blueprint.
 ## Proof depends on
 
 - [Inverse analytic](../part-04/lem-1zanaldr.md)
-- [Product analytic](lem-analprodtdr.md)
+- [Product analytic](../part-04/lem-analprodtdr.md)
 
 ## Lean
 

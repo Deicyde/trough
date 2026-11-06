@@ -1,6 +1,6 @@
 # Zero Free Region
 
-## [Log derivative to Delta bound](part-01/README.md)
+## [Log derivative to Real delta](part-01/README.md)
 
 - [Log derivative](part-01/def-logderivzeta.md)
 - [Zero set](part-01/def-zeroz.md)
@@ -13,7 +13,6 @@
 - [Outside zeros](part-01/lem-s-notin-zt.md)
 - [Half disk](part-01/lem-s-in-d12.md)
 - [Sum bound](part-01/lem-explicit1deltat.md)
-- [Real bound](part-01/lem-explicit1real.md)
 - [Split real](part-01/lem-explicit1realreal.md)
 - [Double real](part-01/lem-explicit2real.md)
 - [Real sum](part-01/lem-realsum.md)
@@ -22,10 +21,10 @@
 - [Difference form](part-01/lem-1deltatrho1.md)
 - [Real part](part-01/lem-re1deltatrho1.md)
 - [Delta bound](part-01/lem-re1delta1.md)
+- [Real delta](part-01/lem-re1deltatge.md)
 
-## [Real delta to Real inverse](part-02/README.md)
+## [Positive real to Real inverse](part-02/README.md)
 
-- [Real delta](part-02/lem-re1deltatge.md)
 - [Positive real](part-02/lem-re1deltatneq0.md)
 - [Inverse real](part-02/lem-re1deltatge0.md)
 - [Scaled real](part-02/lem-re1deltatge0m.md)
@@ -45,10 +44,10 @@
 - [Inverse real](part-02/lem-11delsiginr2.md)
 - [Real part](part-02/lem-rereal.md)
 - [Real inverse](part-02/lem-1delsigreal2.md)
+- [Real inverse](part-02/lem-1delsigreal3.md)
 
-## [Real inverse to Real terms](part-03/README.md)
+## [Sum bound to Real sum](part-03/README.md)
 
-- [Real inverse](part-03/lem-1delsigreal3.md)
 - [Sum bound](part-03/lem-z1splitge2.md)
 - [Real bound](part-03/lem-z1splitge3.md)
 - [In set](part-03/lem-rhoinzt.md)
@@ -68,10 +67,10 @@
 - [Series split](part-03/lem-zeta1zetaseriesxy2.md)
 - [Series converges](part-03/lem-zseriesconverges1.md)
 - [Real terms](part-03/lem-realnx.md)
+- [Real sum](part-03/lem-sumreallambda.md)
 
-## [Real sum to Positive sum](part-04/README.md)
+## [Series real to Inequality](part-04/README.md)
 
-- [Real sum](part-04/lem-sumreallambda.md)
 - [Series real](part-04/lem-sumrealz.md)
 - [Real factor](part-04/lem-reallambdaxy.md)
 - [Real series](part-04/lem-rezseriesren.md)
@@ -91,10 +90,10 @@
 - [Term nonneg](part-04/lem-lambpostriglogn.md)
 - [Series nonneg](part-04/lem-seriespos.md)
 - [Positive sum](part-04/lem-341zpos.md)
+- [Inequality](part-04/lem-341tsc.md)
 
-## [Inequality to Bound on $\zeta'/\zeta$](part-05/README.md)
+## [Rearranged to Bound on $\zeta'/\zeta$](part-05/README.md)
 
-- [Inequality](part-05/lem-341tsc.md)
 - [Rearranged](part-05/lem-341tsc2.md)
 - [Final bound](part-05/lem-341tsc3.md)
 - [Zero free](part-05/lem-zerofree.md)

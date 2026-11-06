@@ -25,7 +25,7 @@ HasFPowerSeriesOnBall.continuousOn.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u
 ## Proof depends on
 
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)

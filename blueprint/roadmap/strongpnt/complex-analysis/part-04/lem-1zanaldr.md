@@ -17,7 +17,6 @@ Its statement uses no other node of the blueprint.
 ## Proof depends on
 
 - [Nonzero subset](lem-not0mono.md)
-- [Inverse analytic](lem-1zanal.md)
 - [Analytic mono](lem-analmono.md)
 
 ## Lean

@@ -24,19 +24,11 @@ $$
 x = (Sx \diamond x) \diamond x.
 $$
 
-- [Basic properties of 677 magma](677-basic.md)
-
 We have the following equivalent characterizations of 255:
-
-- [255-equiv](255-equiv.md)
 
 This for instance gives the implication for linear magmas:
 
-- [No linear counterexamples](linear-obstruction.md)
-
 In fact the argument gives a stronger obstruction to refuting 255:
-
-- [No counterexamples via linear extension](linear-2.md)
 
 Linear models $x \diamond y = \alpha x + \beta y + c$ on the finite field $F_p$ turn out to be classified into two types:
 

@@ -15,7 +15,7 @@ letters, has no [normal subgroups](../part-01/normal-subgroup.md) other than the
 and itself. It gives an infinite family of [simple groups](../part-01/simple-group.md) that are not
 abelian, it is the group-theoretic reason why the general equation of degree
 five or more cannot be solved by radicals, and the alternating groups form one of the
-families in the [classification of finite simple groups](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/classification-of-finite-simple-groups.md).
+families in the classification of finite simple groups.
 
 ## Statement
 

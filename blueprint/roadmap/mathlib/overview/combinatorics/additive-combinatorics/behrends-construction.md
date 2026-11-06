@@ -29,7 +29,7 @@ Behrend.roth_lower_bound {N : ℕ} : ↑N * Real.exp (-4 * √(Real.log ↑N)) �
 - [Inner product space, over $R$ or $C$](../../analysis/hilbert-spaces/inner-product-space-over-r-or-c.md)
 - [Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$](../../../undergraduate/topology/normed-vector-spaces-on-r-and-c/norms-lvert-cdot-rvert-p-on-r-n-and-c-n.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md)
 
 ## Sources
 

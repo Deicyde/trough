@@ -7,7 +7,4 @@
 - [Rank of a matrix](rank-of-a-matrix.md)
 - [Determinant](../../../overview/linear-algebra/matrices/determinant.md)
 - [Invertibility](../../../overview/linear-algebra/matrices/invertibility.md)
-- [Elementary row operations](elementary-row-operations.md)
-- [Elementary column operations](elementary-column-operations.md)
 - [Gaussian elimination](gaussian-elimination.md)
-- [Row-reduced matrices](row-reduced-matrices.md)

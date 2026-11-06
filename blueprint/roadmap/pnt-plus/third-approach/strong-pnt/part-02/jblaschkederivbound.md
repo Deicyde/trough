@@ -17,7 +17,7 @@ $$
 ## Depends on
 
 - [SetOfZeros](../part-01/setofzeros.md)
-- [JBlaschke](jblaschke.md)
+- [JBlaschke](../part-01/jblaschke.md)
 
 ## Proof depends on
 
@@ -31,7 +31,7 @@ $$
 
 ## Proof
 
-By Lemma [DiskBound](../part-01/diskbound.md) we immediately know that $|B_f(z)|\leq B$ for all $|z|\leq R$. Now since $L_f=J_{B_f}$ by Definition [JBlaschke](jblaschke.md), by Theorem [LogOfAnalyticFunction](../part-01/logofanalyticfunction.md) we know that
+By Lemma [DiskBound](../part-01/diskbound.md) we immediately know that $|B_f(z)|\leq B$ for all $|z|\leq R$. Now since $L_f=J_{B_f}$ by Definition [JBlaschke](../part-01/jblaschke.md), by Theorem [LogOfAnalyticFunction](../part-01/logofanalyticfunction.md) we know that
 
 $$
 L_f(0)=0\qquad\text{and}\qquad

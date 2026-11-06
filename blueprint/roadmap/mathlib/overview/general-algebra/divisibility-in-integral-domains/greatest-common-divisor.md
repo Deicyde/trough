@@ -74,7 +74,7 @@ pair.
 - In a commutative ring with normalized greatest common divisors,
   [if $a$ divides $b - c$ then $\gcd(a, b) = \gcd(a, c)$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/GCDMonoid/Basic.html#gcd_eq_of_dvd_sub_right).
   Taking $c$ to be the remainder of $b$ on division by $a$ gives the step of the
-  [Euclidean algorithm](../../../hundred-theorems/part-04/greatest-common-divisor-algorithm.md): for example
+  [Euclidean algorithm](../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md): for example
   $\gcd(252, 198) = \gcd(198, 54) = \gcd(54, 36) = \gcd(36, 18) = 18$.
 
 ## Bézout's identity

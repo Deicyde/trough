@@ -49,7 +49,7 @@ the same coefficients is [injective](https://leanprover-community.github.io/math
 - **Generating functions.** The series $C(X) = \sum_{n \ge 0} C_n X^n$ whose coefficients are
   the [Catalan numbers](../../combinatorics/enumerative-combinatorics/catalan-numbers.md) satisfies
   [$C(X) = 1 + X\,C(X)^2$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/PowerSeries/Catalan.html#PowerSeries.catalanSeries_sq_mul_X_add_one), the identity that
-  encodes their recursion. Euler's [pentagonal number theorem](../../../thousand-plus/number-theory/part-05/pentagonal-number-theorem.md)
+  encodes their recursion. Euler's [pentagonal number theorem](../../../thousand-plus/number-theory/part-02/pentagonal-number-theorem.md)
   is likewise an identity between an infinite product and an infinite sum of power series.
 
 ## Properties

@@ -25,7 +25,7 @@ ProbabilityTheory.meas_ge_le_variance_div_sq.{u_1} {Ω : Type u_1} {mΩ : Measur
 ## Proof depends on
 
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 
 ## Sources
 

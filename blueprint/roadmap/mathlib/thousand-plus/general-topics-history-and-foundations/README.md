@@ -1,4 +1,15 @@
 # General topics, history and foundations
 
-- [00 General and overarching topics; collections](00-general-and-overarching-topics-collections/README.md)
-- [03 Mathematical logic and foundations](03-mathematical-logic-and-foundations/README.md)
+- [Ax–Grothendieck theorem](ax-grothendieck-theorem.md)
+- [Boolean prime ideal theorem](boolean-prime-ideal-theorem.md)
+- [Cantor's theorem](../../hundred-theorems/part-03/cantors-theorem.md)
+- [Cantor–Bernstein–Schroeder theorem](../../hundred-theorems/part-01/schroeder-bernstein-theorem.md)
+- [Compactness theorem](../../overview/logic-and-computation/model-theory/compactness-theorem.md)
+- [Kleene's recursion theorem](kleenes-recursion-theorem.md)
+- [König's theorem (set theory)](konigs-theorem-set-theory.md)
+- [Löwenheim–Skolem theorem](../../overview/logic-and-computation/model-theory/lowenheim-skolem.md)
+- [Matiyasevich's theorem](../../overview/general-algebra/number-theory/matiyasevics-theorem.md)
+- [Szpilrajn extension theorem](szpilrajn-extension-theorem.md)
+- [Uncountability of the continuum](../../hundred-theorems/part-01/the-non-denumerability-of-the-continuum.md)
+- [Well-ordering theorem](well-ordering-theorem.md)
+- [Łoś' theorem](os-theorem.md)

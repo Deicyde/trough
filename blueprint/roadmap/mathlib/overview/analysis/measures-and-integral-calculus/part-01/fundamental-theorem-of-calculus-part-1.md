@@ -28,7 +28,7 @@ intervalIntegral.integral_hasFDerivAt_of_tendsto_ae.{u_3} {E : Type u_3} [Normed
 ## Depends on
 
 - [Bochner integral](bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Differentiable function between normed vector spaces](../../differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Lebesgue measure (Measures and integral calculus)](lebesgue-measure.md)
 - [Product of vector spaces](../../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)

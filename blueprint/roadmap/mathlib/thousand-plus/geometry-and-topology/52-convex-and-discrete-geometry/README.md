@@ -1,17 +1,7 @@
 # 52 Convex and discrete geometry
 
-- [Alexandrov's uniqueness theorem](alexandrovs-uniqueness-theorem.md)
 - [Carathéodory's theorem (convex hull)](../../../overview/analysis/convexity/caratheodorys-theorem.md)
-- [de Bruijn's theorem](de-bruijns-theorem.md)
-- [Erdős–Anning theorem](erdos-anning-theorem.md)
-- [Erdős–Nagy theorem](erdos-nagy-theorem.md)
-- [Erdős–Szekeres theorem](../../../hundred-theorems/part-04/ascending-or-descending-sequences-erdos-szekeres.md)
+- [Erdős–Szekeres theorem](../../../hundred-theorems/part-03/ascending-or-descending-sequences-erdos-szekeres.md)
 - [Helly's theorem](hellys-theorem.md)
-- [Kirchberger's theorem](kirchbergers-theorem.md)
 - [Krein–Milman theorem](krein-milman-theorem.md)
-- [Monsky's theorem](monskys-theorem.md)
 - [Radon's theorem](radons-theorem.md)
-- [Separating axis theorem](separating-axis-theorem.md)
-- [Supporting hyperplane theorem](supporting-hyperplane-theorem.md)
-- [Tverberg's theorem](tverbergs-theorem.md)
-- [Wallace–Bolyai–Gerwien theorem](wallace-bolyai-gerwien-theorem.md)

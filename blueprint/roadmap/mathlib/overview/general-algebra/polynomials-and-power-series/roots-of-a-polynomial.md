@@ -24,7 +24,7 @@ degree is determined by few of its values.
 Let $R$ be an integral domain: a commutative ring with $1 \neq 0$ in which a
 product of nonzero elements is nonzero. An element $a \in R$ is a
 [root of $p \in R[X]$ when $p(a) = 0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Eval/Defs.html#Polynomial.IsRoot). By the
-[factor theorem](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md),
+[factor theorem](../../../hundred-theorems/part-04/the-factor-and-remainder-theorems.md),
 [$a$ is a root of $p$ if and only if $X - a$ divides $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.dvd_iff_isRoot).
 For $p \neq 0$, the multiplicity of $a$ is the largest $m$ such that $(X - a)^m$
 divides $p$; it is positive exactly when $a$ is a root.
@@ -48,10 +48,10 @@ induction on the degree that finishes the argument.
 - [The polynomial $X - a$ has the single root $a$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Roots.html#Polynomial.roots_X_sub_C),
   and for $n \ge 1$ [$X^n$ has the root $0$ with multiplicity $n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Roots.html#Polynomial.roots_X_pow).
 - The polynomial $X^2 + 1$ has no root in the real numbers. Over the
-  [complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md) it factors as $(X - i)(X + i)$, with
+  [complex numbers](../../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md) it factors as $(X - i)(X + i)$, with
   roots $i$ and $-i$. Over the integers modulo $2$ it equals $(X + 1)^2$, so $1$ is
   its only root, with multiplicity $2$.
-- In a [finite field](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) $F$ with $q$
+- In a [finite field](../../../undergraduate/ring-theory/field-theory/finite-fields.md) $F$ with $q$
   elements, [the roots of $X^q - X$ are all the elements of $F$, each with multiplicity one](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#FiniteField.roots_X_pow_card_sub_X).
 - Without the integral domain hypothesis the bound fails. In the ring of integers
   modulo $8$ the polynomial $X^2 - 1$ has the four roots $1, 3, 5, 7$, and it
@@ -96,9 +96,9 @@ polynomial without roots in its coefficient field acquires them in a larger fiel
 [splitting field](../field-theory/splitting-field.md) it splits completely. A nonzero
 polynomial over a field is [separable](separable-polynomial.md) exactly when it
 has no repeated roots in such a field. For real polynomials,
-[Descartes' rule of signs](../../../hundred-theorems/part-05/descartes-rule-of-signs.md)
+[Descartes' rule of signs](../../../hundred-theorems/part-04/descartes-rule-of-signs.md)
 bounds the number of positive roots. For nonconstant complex polynomials, the
-[Gauss–Lucas theorem](../../../thousand-plus/analysis/30-functions-of-a-complex-variable/part-02/gauss-lucas-theorem.md)
+[Gauss–Lucas theorem](../../../thousand-plus/analysis/30-functions-of-a-complex-variable/gauss-lucas-theorem.md)
 places the roots of the derivative in the convex hull of the roots.
 
 ## In Mathlib
@@ -131,7 +131,7 @@ product of constants and monic linear factors.
 
 ## Proof depends on
 
-- [The Factor and Remainder Theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)
+- [The Factor and Remainder Theorems](../../../hundred-theorems/part-04/the-factor-and-remainder-theorems.md)
 
 ## Sources
 

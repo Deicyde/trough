@@ -50,17 +50,17 @@ The wikipedia page is really vague; it's not clear what is meant here. While mat
 ## Proof depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Characteristic zero](../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Cos (extension of trigonometric functions to the complex plane)](../../../undergraduate/single-variable-complex-analysis/complex-valued-series/extension-of-trigonometric-functions-to-the-comp/cos.md)
 - [Exponential](../../../overview/analysis/special-functions/exponential.md)
-- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md)
 - [Heine-Borel theorem (finite-dimensional normed spaces are proper)](../../../overview/analysis/normed-vector-spaces-banach-spaces/heine-borel-theorem-finite-dimensional-normed-sp.md)
 - [Measurable function](../../../overview/analysis/measures-and-integral-calculus/part-01/measurable-function.md)
-- [Squeeze theorem](../26-real-functions/part-03/squeeze-theorem.md)
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [Squeeze theorem](../26-real-functions/part-02/squeeze-theorem.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources

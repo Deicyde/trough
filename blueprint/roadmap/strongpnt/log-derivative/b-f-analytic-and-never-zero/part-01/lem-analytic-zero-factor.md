@@ -14,10 +14,6 @@ The blueprint of Strong PNT (Math Inc) states this lemma at [PNT/PNT2_LogDerivat
 
 Its statement uses no other node of the blueprint.
 
-## Proof depends on
-
-- [Zero order](def-m-rho-order.md)
-
 ## Lean
 
 Formalized as [`lem_analytic_zero_factor`](https://math-inc.github.io/strongpnt/docs/find/#doc/lem_analytic_zero_factor).

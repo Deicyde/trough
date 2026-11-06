@@ -8,4 +8,3 @@
 - [17 Nonassociative rings and algebras](17-nonassociative-rings-and-algebras/README.md)
 - [18 Category theory; homological algebra](18-category-theory-homological-algebra/README.md)
 - [20 Group theory and generalizations](20-group-theory-and-generalizations/README.md)
-- [22 Topological groups, Lie groups](22-topological-groups-lie-groups/README.md)

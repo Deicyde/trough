@@ -24,7 +24,7 @@ Complex.cos_add_sin_mul_I_pow (n : ℕ) (z : ℂ) :
 ## Proof depends on
 
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
-- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md)
 
 ## Sources
 

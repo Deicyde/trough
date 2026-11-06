@@ -12,7 +12,7 @@ The quotient $\mathbb{A}_K/K$ is compact.
 ## Depends on
 
 - [Rat.AdeleRing.cocompact](rat-adelering-cocompact.md)
-- [NumberField.AdeleRing.baseChangeEquiv](../base-change/part-03/numberfield-adelering-basechangeequiv.md)
+- [NumberField.AdeleRing.baseChangeEquiv](../base-change/part-02/numberfield-adelering-basechangeequiv.md)
 
 ## Proof
 

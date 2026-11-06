@@ -68,7 +68,7 @@ A ring with $\operatorname{char} R = p$ is said to have [characteristic $p$](cha
   injective, so
   [a finite ring has nonzero characteristic](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Lemmas.html#CharP.ringChar_ne_zero_of_finite), and
   [a finite nonzero ring without zero divisors has prime characteristic](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Lemmas.html#CharP.prime_ringChar).
-  A [finite field](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) $K$ of characteristic $p$
+  A [finite field](../../../undergraduate/ring-theory/field-theory/finite-fields.md) $K$ of characteristic $p$
   is a vector space over $\mathbb{Z}/p\mathbb{Z}$, so
   [$K$ has $p^n$ elements for some positive integer $n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#FiniteField.card).
 - **Homomorphisms.** If $f \colon R \to S$ is a ring homomorphism, then
@@ -87,7 +87,7 @@ A ring with $\operatorname{char} R = p$ is said to have [characteristic $p$](cha
   characteristic $p$ contains a copy of $\mathbb{Z}/p\mathbb{Z}$.
 - **Freshman's dream.** In a commutative ring of prime characteristic $p$, every
   binomial coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$, so the
-  [binomial theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md) collapses to
+  [binomial theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md) collapses to
   [$(x + y)^p = x^p + y^p$ for all $x$ and $y$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Lemmas.html#add_pow_char).
   Hence $x \mapsto x^p$ is a ring homomorphism, the
   [Frobenius morphism](frobenius-morphism.md).

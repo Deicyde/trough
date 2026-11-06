@@ -83,7 +83,7 @@ function with values in the natural numbers.
   computed by setting $\gcd(0, b) = b$ and, for $a \neq 0$,
   [$\gcd(a, b) = \gcd(b \bmod a,\ a)$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.gcd_val); the recursion
   ends because the first argument decreases for $\prec$ (see
-  [the article on the algorithm](../../../hundred-theorems/part-04/greatest-common-divisor-algorithm.md)). The result
+  [the article on the algorithm](../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md)). The result
   [divides both $a$ and $b$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.gcd_dvd), and
   [every common divisor of $a$ and $b$ divides it](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.dvd_gcd).
 - **[Bézout's identity](../../../undergraduate/ring-theory/divisibility-in-integral-domains/bezouts-identity.md).** Keeping track of the quotients along the way, the extended

@@ -18,7 +18,7 @@ Liouville.transcendental {x : ℝ} (lx : Liouville x) : Transcendental ℤ x
 
 - [Real number](../../overview/general-algebra/numbers/real-number.md)
 - [Ring structure $\Z$](../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Transcendental elements](../../undergraduate/ring-theory/field-theory/part-01/transcendental-elements.md)
+- [Transcendental elements](../../undergraduate/ring-theory/field-theory/transcendental-elements.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ Liouville.transcendental {x : ℝ} (lx : Liouville x) : Transcendental ℤ x
 - [Differentiable function between normed vector spaces](../../overview/analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Differentials (linear tangent functions)](../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Extreme value theorem](../../overview/topology/topological-algebra/extreme-value-theorem.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Normed vector space over a normed field](../../overview/analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Order topology](../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../overview/general-algebra/rings/ordered-ring.md)

@@ -64,7 +64,7 @@ $\det A = 1$ says that it also preserves orientation.
   [complex numbers](../../../overview/general-algebra/numbers/complex-number.md) of modulus $1$, the rotation by $\theta$
   corresponding to $e^{i\theta}$. Over the field with three elements the equation
   $a^2 + b^2 = 1$ has four solutions, and $\mathrm{SO}_2$ is cyclic of order $4$.
-- **Dimension three.** By [Euler's rotation theorem](../../../thousand-plus/geometry-and-topology/51-geometry/part-02/eulers-rotation-theorem.md), every
+- **Dimension three.** By Euler's rotation theorem, every
   element of $\mathrm{SO}(3)$ is a rotation about some axis through the origin.
   The group is not abelian: quarter turns about two perpendicular axes do not
   commute.
