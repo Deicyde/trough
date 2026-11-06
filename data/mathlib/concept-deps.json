@@ -1,6 +1,6 @@
 {"unresolved": ["Mathlib.FieldTheory.Finite.Basic", "Mathlib.Order.LiminfLimsup"],
  "stats":
- {"walked": 30503, "theorems_with_proof": 450, "theorems": 450, "listed": 934, "cited": 2830},
+ {"walked": 30503, "theorems_with_proof": 450, "theorems": 450, "listed": 934, "cited": 2752},
  "schema": "trough-concept-deps/v1",
  "modules":
  {"Mathlib.Order.LiminfLimsup":
@@ -24242,13 +24242,6 @@
    "line": 291,
    "kind": "theorem",
    "deprecated": null},
-  "sum_hom_units":
-  {"signature":
-   "sum_hom_units.{u_1, u_2} {R : Type u_1} {G : Type u_2} [CommRing R] [IsDomain R] [Group G]\n  [Fintype G] (f : G →* R) [Decidable (f = 1)] : ∑ g, f g = ↑(if f = 1 then Fintype.card G else 0)",
-   "module": "Mathlib.RingTheory.IntegralDomain",
-   "line": 223,
-   "kind": "theorem",
-   "deprecated": null},
   "sum_bernoulli":
   {"signature":
    "sum_bernoulli (n : ℕ) : ∑ k ∈ Finset.range n, ↑(n.choose k) * bernoulli k = if n = 1 then 1 else 0",
@@ -24666,13 +24659,6 @@
    "line": 65,
    "kind": "theorem",
    "deprecated": null},
-  "not_isCyclic_iff_exponent_eq_prime":
-  {"signature":
-   "not_isCyclic_iff_exponent_eq_prime.{u_1} {α : Type u_1} [Group α] {p : ℕ} (hp : Nat.Prime p)\n  (hα : Nat.card α = p ^ 2) : ¬IsCyclic α ↔ Monoid.exponent α = p",
-   "module": "Mathlib.GroupTheory.SpecificGroups.Cyclic",
-   "line": 370,
-   "kind": "theorem",
-   "deprecated": null},
   "not_irreducible_pow":
   {"signature":
    "not_irreducible_pow.{u_2} {M : Type u_2} [Monoid M] {x : M} {n : ℕ} : n ≠ 1 → ¬Irreducible (x ^ n)",
@@ -24776,20 +24762,6 @@
    "line": 61,
    "kind": "theorem",
    "deprecated": null},
-  "mul_comm_of_exponent_two":
-  {"signature":
-   "mul_comm_of_exponent_two.{u} {G : Type u} [Monoid G] [IsCancelMul G] (hG : Monoid.exponent G = 2)\n  (a b : G) : a * b = b * a",
-   "module": "Mathlib.GroupTheory.Exponent",
-   "line": 644,
-   "kind": "theorem",
-   "deprecated": null},
-  "mulEquivOfPrimeCardEq":
-  {"signature":
-   "mulEquivOfPrimeCardEq.{u_2, u_3} {G : Type u_2} {G' : Type u_3} {p : ℕ} [Group G] [Group G']\n  [Fact (Nat.Prime p)] (hG : Nat.card G = p) (hH : Nat.card G' = p) : G ≃* G'",
-   "module": "Mathlib.GroupTheory.SpecificGroups.Cyclic",
-   "line": 603,
-   "kind": "def",
-   "deprecated": null},
   "mulEquivOfCyclicCardEq":
   {"signature":
    "mulEquivOfCyclicCardEq.{u_2, u_3} {G : Type u_2} {G' : Type u_3} [Group G] [Group G']\n  [hG : IsCyclic G] [hH : IsCyclic G'] (hcard : Nat.card G = Nat.card G') : G ≃* G'",
@@ -24870,13 +24842,6 @@
    "mem_algebraicClosure_iff.{u_1, u_2} {F : Type u_1} {E : Type u_2} [Field F] [Field E] [Algebra F E]\n  {x : E} : x ∈ algebraicClosure F E ↔ IsAlgebraic F x",
    "module": "Mathlib.FieldTheory.AlgebraicClosure",
    "line": 52,
-   "kind": "theorem",
-   "deprecated": null},
-  "maximal_orthonormal_iff_basis_of_finiteDimensional":
-  {"signature":
-   "maximal_orthonormal_iff_basis_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2}\n  [RCLike 𝕜] [NormedAddCommGroup E] [InnerProductSpace 𝕜 E] {v : Set E} [FiniteDimensional 𝕜 E]\n  (hv : Orthonormal 𝕜 Subtype.val) :\n  (∀ u ⊇ v, Orthonormal 𝕜 Subtype.val → u = v) ↔ ∃ b, ⇑b = Subtype.val",
-   "module": "Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional",
-   "line": 402,
    "kind": "theorem",
    "deprecated": null},
   "matrixEquivTensor":
@@ -25536,13 +25501,6 @@
    "line": 324,
    "kind": "def",
    "deprecated": null},
-  "fourierCoeff":
-  {"signature":
-   "fourierCoeff.{u_1} {T : ℝ} [hT : Fact (0 < T)] {E : Type u_1} [NormedAddCommGroup E]\n  [NormedSpace ℂ E] (f : AddCircle T → E) (n : ℤ) : E",
-   "module": "Mathlib.Analysis.Fourier.AddCircle",
-   "line": 295,
-   "kind": "def",
-   "deprecated": null},
   "forall_liouvilleWith_iff":
   {"signature": "forall_liouvilleWith_iff {x : ℝ} : (∀ (p : ℝ), LiouvilleWith p x) ↔ Liouville x",
    "module": "Mathlib.NumberTheory.Transcendental.Liouville.LiouvilleWith",
@@ -26148,13 +26106,6 @@
    "line": 331,
    "kind": "theorem",
    "deprecated": null},
-  "ZMod.invDFT_apply":
-  {"signature":
-   "ZMod.invDFT_apply.{u_1} {N : ℕ} [NeZero N] {E : Type u_1} [AddCommGroup E] [_root_.Module ℂ E]\n  (Ψ : ZMod N → E) (k : ZMod N) : ZMod.dft.symm Ψ k = (↑N)⁻¹ • ∑ j, ZMod.stdAddChar (j * k) • Ψ j",
-   "module": "Mathlib.Analysis.Fourier.ZMod",
-   "line": 114,
-   "kind": "theorem",
-   "deprecated": null},
   "ZMod.instIsSimpleAddGroup":
   {"signature":
    "ZMod.instIsSimpleAddGroup {p : ℕ} [hp : Fact (Nat.Prime p)] : IsSimpleAddGroup (ZMod p)",
@@ -26230,34 +26181,6 @@
    "module": "Mathlib.NumberTheory.LegendreSymbol.GaussEisensteinLemmas",
    "line": 208,
    "kind": "theorem",
-   "deprecated": null},
-  "ZMod.dft_eq_fourier":
-  {"signature":
-   "ZMod.dft_eq_fourier.{u_2} {N : ℕ} [NeZero N] {E : Type u_2} [NormedAddCommGroup E] [NormedSpace ℂ E]\n  [CompleteSpace E] (Φ : ZMod N → E) (k : ZMod N) :\n  ZMod.dft Φ k = Fourier.fourierIntegral ZMod.toCircle MeasureTheory.Measure.count Φ k",
-   "module": "Mathlib.Analysis.Fourier.ZMod",
-   "line": 131,
-   "kind": "theorem",
-   "deprecated": null},
-  "ZMod.dft_dft":
-  {"signature":
-   "ZMod.dft_dft.{u_1} {N : ℕ} [NeZero N] {E : Type u_1} [AddCommGroup E] [_root_.Module ℂ E]\n  (Φ : ZMod N → E) : ZMod.dft (ZMod.dft Φ) = fun j => ↑N • Φ (-j)",
-   "module": "Mathlib.Analysis.Fourier.ZMod",
-   "line": 175,
-   "kind": "theorem",
-   "deprecated": null},
-  "ZMod.dft_apply":
-  {"signature":
-   "ZMod.dft_apply.{u_1} {N : ℕ} [NeZero N] {E : Type u_1} [AddCommGroup E] [_root_.Module ℂ E]\n  (Φ : ZMod N → E) (k : ZMod N) : ZMod.dft Φ k = ∑ j, ZMod.stdAddChar (-(j * k)) • Φ j",
-   "module": "Mathlib.Analysis.Fourier.ZMod",
-   "line": 106,
-   "kind": "theorem",
-   "deprecated": null},
-  "ZMod.dft":
-  {"signature":
-   "ZMod.dft.{u_1} {N : ℕ} [NeZero N] {E : Type u_1} [AddCommGroup E] [_root_.Module ℂ E] :\n  (ZMod N → E) ≃ₗ[ℂ] ZMod N → E",
-   "module": "Mathlib.Analysis.Fourier.ZMod",
-   "line": 83,
-   "kind": "def",
    "deprecated": null},
   "ZMod.commRing":
   {"signature": "ZMod.commRing (n : ℕ) : CommRing (ZMod n)",
@@ -27621,20 +27544,6 @@
    "line": 429,
    "kind": "theorem",
    "deprecated": null},
-  "Subgroup.exists_right_complement'_of_coprime":
-  {"signature":
-   "Subgroup.exists_right_complement'_of_coprime.{u} {G : Type u} [Group G] {N : Subgroup G} [N.Normal]\n  (hN : (Nat.card ↥N).Coprime N.index) : ∃ H, N.IsComplement' H",
-   "module": "Mathlib.GroupTheory.SchurZassenhaus",
-   "line": 274,
-   "kind": "theorem",
-   "deprecated": null},
-  "Subgroup.exists_left_complement'_of_coprime":
-  {"signature":
-   "Subgroup.exists_left_complement'_of_coprime.{u} {G : Type u} [Group G] {N : Subgroup G} [N.Normal]\n  (hN : (Nat.card ↥N).Coprime N.index) : ∃ H, H.IsComplement' N",
-   "module": "Mathlib.GroupTheory.SchurZassenhaus",
-   "line": 294,
-   "kind": "theorem",
-   "deprecated": null},
   "Subgroup.exists_isComplement_right":
   {"signature":
    "Subgroup.exists_isComplement_right.{u_1} {G : Type u_1} [Group G] (H : Subgroup G) (g : G) :\n  ∃ T, Subgroup.IsComplement (↑H) T ∧ g ∈ T",
@@ -27669,12 +27578,6 @@
    "module": "Mathlib.GroupTheory.Nilpotent.LowerCentralSeries",
    "line": 187,
    "kind": "theorem",
-   "deprecated": null},
-  "Subgroup.derivedSeries":
-  {"signature": "Subgroup.derivedSeries.{u_1} (G : Type u_1) [Group G] : ℕ → Subgroup G",
-   "module": "Mathlib.GroupTheory.Solvable",
-   "line": 49,
-   "kind": "def",
    "deprecated": null},
   "Subgroup.commutator_normal":
   {"signature":
@@ -28539,13 +28442,6 @@
    "line": 142,
    "kind": "theorem",
    "deprecated": null},
-  "Representation.card_inv_mul_sum_char_mul_char_eq_finrank":
-  {"signature":
-   "Representation.card_inv_mul_sum_char_mul_char_eq_finrank.{u_1, u_2, u_3, u_4} {G : Type u_1}\n  {k : Type u_2} {V : Type u_3} {W : Type u_4} [Group G] [Field k] [AddCommGroup V]\n  [_root_.Module k V] [FiniteDimensional k V] [AddCommGroup W] [_root_.Module k W]\n  [FiniteDimensional k W] (ρ : Representation k G V) (σ : Representation k G W) [Fintype G]\n  [Invertible ↑(Nat.card G)] :\n  (↑(Nat.card G))⁻¹ * ∑ g, σ.character g * ρ.character g⁻¹ =\n    ↑(Module.finrank k (ρ.IntertwiningMap σ))",
-   "module": "Mathlib.RepresentationTheory.Character",
-   "line": 120,
-   "kind": "theorem",
-   "deprecated": null},
   "Representation.asGroupHom":
   {"signature":
    "Representation.asGroupHom.{u_1, u_2, u_3} {k : Type u_1} {G : Type u_2} {V : Type u_3}\n  [CommSemiring k] [Group G] [AddCommMonoid V] [_root_.Module k V] (ρ : Representation k G V) :\n  G →* (V →ₗ[k] V)ˣ",
@@ -28588,13 +28484,6 @@
    "line": 65,
    "kind": "theorem",
    "deprecated": null},
-  "Representation.IsIrreducible.algebraMap_intertwiningMap_bijective_of_isAlgClosed":
-  {"signature":
-   "Representation.IsIrreducible.algebraMap_intertwiningMap_bijective_of_isAlgClosed.{u_1, u_2, u_3}\n  {G : Type u_1} {k : Type u_2} {V : Type u_3} [Monoid G] [Field k] [AddCommGroup V]\n  [_root_.Module k V] {ρ : Representation k G V} [ρ.IsIrreducible] [FiniteDimensional k V]\n  [IsAlgClosed k] : Function.Bijective ⇑(algebraMap k (ρ.IntertwiningMap ρ))",
-   "module": "Mathlib.RepresentationTheory.Irreducible",
-   "line": 76,
-   "kind": "theorem",
-   "deprecated": null},
   "Representation.IsIrreducible":
   {"signature":
    "Representation.IsIrreducible.{u_1, u_2, u_3} {G : Type u_1} {k : Type u_2} {V : Type u_3} [Monoid G]\n  [Field k] [AddCommGroup V] [_root_.Module k V] (ρ : Representation k G V) : Prop",
@@ -28622,13 +28511,6 @@
    "module": "Mathlib.RepresentationTheory.Basic",
    "line": 46,
    "kind": "abbrev",
-   "deprecated": null},
-  "Rep.applyAsHom":
-  {"signature":
-   "Rep.applyAsHom.{u, v, u_1} {k : Type u} [Semiring k] {G : Type v} [CommMonoid G]\n  (A : Rep.{u_1, u, v} k G) (g : G) : A ⟶ A",
-   "module": "Mathlib.RepresentationTheory.Rep.Basic",
-   "line": 307,
-   "kind": "def",
    "deprecated": null},
   "Real.young_inequality_of_nonneg":
   {"signature":
@@ -29299,13 +29181,6 @@
    "line": 27,
    "kind": "class",
    "deprecated": null},
-  "QuaternionGroup.card":
-  {"signature":
-   "QuaternionGroup.card {n : ℕ} [NeZero n] : Fintype.card (QuaternionGroup n) = 4 * n",
-   "module": "Mathlib.GroupTheory.SpecificGroups.Quaternion",
-   "line": 172,
-   "kind": "theorem",
-   "deprecated": null},
   "Quaternion.normSq_def'":
   {"signature":
    "Quaternion.normSq_def'.{u_3} {R : Type u_3} [CommRing R] (a : Quaternion R) :\n  Quaternion.normSq a = a.re ^ 2 + a.imI ^ 2 + a.imJ ^ 2 + a.imK ^ 2",
@@ -29670,12 +29545,6 @@
    "module": "Mathlib.RingTheory.PowerSeries.Basic",
    "line": 55,
    "kind": "abbrev",
-   "deprecated": null},
-  "PontryaginDual":
-  {"signature": "PontryaginDual.{u_1} (A : Type u_1) [Monoid A] [TopologicalSpace A] : Type u_1",
-   "module": "Mathlib.Topology.Algebra.PontryaginDual",
-   "line": 39,
-   "kind": "def",
    "deprecated": null},
   "Polynomial.zero_of_eval_zero":
   {"signature":
@@ -30707,13 +30576,6 @@
    "module": "Mathlib.Algebra.Ring.Pi",
    "line": 89,
    "kind": "instance",
-   "deprecated": null},
-  "Pi.monoidHomMulEquiv":
-  {"signature":
-   "Pi.monoidHomMulEquiv.{u_7, u_8, u_9} {ι : Type u_7} [Fintype ι] [DecidableEq ι] (M : ι → Type u_8)\n  [(i : ι) → CommMonoid (M i)] (M' : Type u_9) [CommMonoid M'] :\n  (((i : ι) → M i) →* M') ≃* ((i : ι) → M i →* M')",
-   "module": "Mathlib.Algebra.BigOperators.Pi",
-   "line": 166,
-   "kind": "def",
    "deprecated": null},
   "Pi.mem_unitary_iff":
   {"signature":
@@ -33082,13 +32944,6 @@
    "line": 577,
    "kind": "theorem",
    "deprecated": null},
-  "MonoidHom.ker_transferSylow_isComplement'":
-  {"signature":
-   "MonoidHom.ker_transferSylow_isComplement'.{u_1} {G : Type u_1} [Group G] {p : ℕ} (P : Sylow p G)\n  (hP : Subgroup.normalizer ↑P ≤ Subgroup.centralizer ↑P) [Fact (Nat.Prime p)] [Finite (Sylow p G)]\n  [(↑P).FiniteIndex] : (MonoidHom.transferSylow P hP).ker.IsComplement' ↑P",
-   "module": "Mathlib.GroupTheory.Transfer",
-   "line": 277,
-   "kind": "theorem",
-   "deprecated": null},
   "MonoidHom.ker_fst":
   {"signature":
    "MonoidHom.ker_fst.{u_1, u_2} {G : Type u_1} {G' : Type u_2} [Group G] [Group G'] :\n  (MonoidHom.fst G G').ker = ⊥.prod ⊤",
@@ -33110,13 +32965,6 @@
    "line": 233,
    "kind": "def",
    "deprecated": null},
-  "MonoidHom.instCommGroup":
-  {"signature":
-   "MonoidHom.instCommGroup.{uM, uN} {M : Type uM} {N : Type uN} [MulOneClass M] [CommGroup N] :\n  CommGroup (M →* N)",
-   "module": "Mathlib.Algebra.Group.Hom.Instances",
-   "line": 113,
-   "kind": "instance",
-   "deprecated": null},
   "MonoidHom.id":
   {"signature": "MonoidHom.id.{u_10} (M : Type u_10) [MulOne M] : M →* M",
    "module": "Mathlib.Algebra.Group.Hom.Defs",
@@ -33128,13 +32976,6 @@
    "MonoidHom.fst_comp_prod.{u_3, u_4, u_5} {M : Type u_3} {N : Type u_4} {P : Type u_5} [MulOneClass M]\n  [MulOneClass N] [MulOneClass P] (f : M →* N) (g : M →* P) :\n  (MonoidHom.fst N P).comp (f.prod g) = f",
    "module": "Mathlib.Algebra.Group.Prod",
    "line": 422,
-   "kind": "theorem",
-   "deprecated": null},
-  "MonoidHom.domRestrict_surjective":
-  {"signature":
-   "MonoidHom.domRestrict_surjective.{u_1, u_2} {G : Type u_1} (M : Type u_2) [CommGroup G] [Finite G]\n  [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)] (H : Subgroup G) :\n  Function.Surjective ⇑(MonoidHom.domRestrictHom H Mˣ)",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 101,
    "kind": "theorem",
    "deprecated": null},
   "MonoidHom.coprod":
@@ -33158,67 +32999,11 @@
    "line": 357,
    "kind": "structure",
    "deprecated": null},
-  "MonoidAlgebra.single_mul_single":
-  {"signature":
-   "MonoidAlgebra.single_mul_single.{u_1, u_4} {R : Type u_1} {M : Type u_4} [Semiring R] [Mul M]\n  (m₁ m₂ : M) (r₁ r₂ : R) :\n  MonoidAlgebra.single m₁ r₁ * MonoidAlgebra.single m₂ r₂ = MonoidAlgebra.single (m₁ * m₂) (r₁ * r₂)",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 544,
-   "kind": "theorem",
-   "deprecated": null},
-  "MonoidAlgebra.ring":
-  {"signature":
-   "MonoidAlgebra.ring.{u_1, u_4} {R : Type u_1} {M : Type u_4} [Ring R] [Monoid M] :\n  Ring (MonoidAlgebra R M)",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 919,
-   "kind": "instance",
-   "deprecated": null},
-  "MonoidAlgebra.one_def":
-  {"signature":
-   "MonoidAlgebra.one_def.{u_1, u_4} {R : Type u_1} {M : Type u_4} [Semiring R] [One M] :\n  1 = MonoidAlgebra.single 1 1",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 468,
-   "kind": "theorem",
-   "deprecated": null},
-  "MonoidAlgebra.mul_def":
-  {"signature":
-   "MonoidAlgebra.mul_def.{u_1, u_4} {R : Type u_1} {M : Type u_4} [Semiring R] [Mul M]\n  (x y : MonoidAlgebra R M) :\n  x * y = x.coeff.sum fun m₁ r₁ => y.coeff.sum fun m₂ r₂ => MonoidAlgebra.single (m₁ * m₂) (r₁ * r₂)",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 499,
-   "kind": "theorem",
-   "deprecated": null},
   "MonoidAlgebra.exists_leftInverse_of_injective":
   {"signature":
    "MonoidAlgebra.exists_leftInverse_of_injective.{u_1, u_2, u_3, u_4} {k : Type u_1} [Field k]\n  {G : Type u_2} [Finite G] [NeZero ↑(Nat.card G)] [Group G] {V : Type u_3} [AddCommGroup V]\n  [_root_.Module (MonoidAlgebra k G) V] {W : Type u_4} [AddCommGroup W]\n  [_root_.Module (MonoidAlgebra k G) W] (f : V →ₗ[MonoidAlgebra k G] W) (hf : f.ker = ⊥) :\n  ∃ g, g ∘ₗ f = LinearMap.id",
    "module": "Mathlib.RepresentationTheory.Maschke",
    "line": 142,
-   "kind": "theorem",
-   "deprecated": null},
-  "MonoidAlgebra.commRing":
-  {"signature":
-   "MonoidAlgebra.commRing.{u_1, u_4} {R : Type u_1} {M : Type u_4} [CommRing R] [CommMonoid M] :\n  CommRing (MonoidAlgebra R M)",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 933,
-   "kind": "instance",
-   "deprecated": null},
-  "MonoidAlgebra.coeff_single_mul_apply":
-  {"signature":
-   "MonoidAlgebra.coeff_single_mul_apply.{u_1, u_3} {R : Type u_1} {G : Type u_3} [Semiring R] [Group G]\n  (x : MonoidAlgebra R G) (r : R) (g h : G) :\n  (MonoidAlgebra.single g r * x).coeff h = r * x.coeff (g⁻¹ * h)",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 823,
-   "kind": "theorem",
-   "deprecated": null},
-  "MonoidAlgebra.coeff_mul_apply_right":
-  {"signature":
-   "MonoidAlgebra.coeff_mul_apply_right.{u_1, u_3} {R : Type u_1} {G : Type u_3} [Semiring R] [Group G]\n  (x y : MonoidAlgebra R G) (g : G) : (x * y).coeff g = y.coeff.sum fun h r => x.coeff (g * h⁻¹) * r",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 837,
-   "kind": "theorem",
-   "deprecated": null},
-  "MonoidAlgebra.coeff_mul_apply_left":
-  {"signature":
-   "MonoidAlgebra.coeff_mul_apply_left.{u_1, u_3} {R : Type u_1} {G : Type u_3} [Semiring R] [Group G]\n  (x y : MonoidAlgebra R G) (g : G) : (x * y).coeff g = x.coeff.sum fun h r => r * y.coeff (h⁻¹ * g)",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 830,
    "kind": "theorem",
    "deprecated": null},
   "MonoidAlgebra.Submodule.exists_isCompl":
@@ -33227,13 +33012,6 @@
    "module": "Mathlib.RepresentationTheory.Maschke",
    "line": 159,
    "kind": "theorem",
-   "deprecated": null},
-  "MonoidAlgebra":
-  {"signature":
-   "MonoidAlgebra.{u_8, u_9} (R : Type u_8) (M : Type u_9) [Semiring R] : Type (max u_8 u_9)",
-   "module": "Mathlib.Algebra.MonoidAlgebra.Defs",
-   "line": 71,
-   "kind": "structure",
    "deprecated": null},
   "Monoid.toMulAction":
   {"signature": "Monoid.toMulAction.{u_1} (M : Type u_1) [Monoid M] : MulAction M M",
@@ -33316,13 +33094,6 @@
    "line": 370,
    "kind": "theorem",
    "deprecated": null},
-  "Module.evalEquiv":
-  {"signature":
-   "Module.evalEquiv.{u_1, u_2} (R : Type u_1) (M : Type u_2) [CommSemiring R] [AddCommMonoid M]\n  [_root_.Module R M] [Module.IsReflexive R M] : M ≃ₗ[R] Module.Dual R (Module.Dual R M)",
-   "module": "Mathlib.LinearAlgebra.Dual.Defs",
-   "line": 215,
-   "kind": "def",
-   "deprecated": null},
   "Module.equiv_free_prod_directSum":
   {"signature":
    "Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalIdealRing R]\n  (M : Type v) [AddCommGroup M] [_root_.Module R M] [IsDomain R] [h' : Module.Finite R M] :\n  ∃ n ι x p,\n    ∃ (_ : ∀ (i : ι), Irreducible (p i)),\n      ∃ e, Nonempty (M ≃ₗ[R] (Fin n →₀ R) × DirectSum ι fun i => R ⧸ R ∙ p i ^ e i)",
@@ -33343,13 +33114,6 @@
    "module": "Mathlib.Algebra.Algebra.Basic",
    "line": 204,
    "kind": "instance",
-   "deprecated": null},
-  "Module.End.iSup_iInf_maxGenEigenspace_eq_top_of_iSup_maxGenEigenspace_eq_top_of_commute":
-  {"signature":
-   "Module.End.iSup_iInf_maxGenEigenspace_eq_top_of_iSup_maxGenEigenspace_eq_top_of_commute.{u_1, u_3,\n    u_4}\n  {ι : Type u_1} {K : Type u_3} {M : Type u_4} [Field K] [AddCommGroup M] [_root_.Module K M]\n  [FiniteDimensional K M] (f : ι → Module.End K M) (h : Pairwise fun i j => Commute (f i) (f j))\n  (h' : ∀ (i : ι), ⨆ μ, (f i).maxGenEigenspace μ = ⊤) : ⨆ χ, ⨅ i, (f i).maxGenEigenspace (χ i) = ⊤",
-   "module": "Mathlib.LinearAlgebra.Eigenspace.Pi",
-   "line": 193,
-   "kind": "theorem",
    "deprecated": null},
   "Module.End.exists_eigenvalue":
   {"signature":
@@ -33447,13 +33211,6 @@
    "line": 63,
    "kind": "theorem",
    "deprecated": null},
-  "MeasureTheory.convolution":
-  {"signature":
-   "MeasureTheory.convolution.{u𝕜, uG, uE, uE', uF} {𝕜 : Type u𝕜} {G : Type uG} {E : Type uE}\n  {E' : Type uE'} {F : Type uF} [NormedAddCommGroup E] [NormedAddCommGroup E']\n  [NormedAddCommGroup F] [NontriviallyNormedField 𝕜] [NormedSpace 𝕜 E] [NormedSpace 𝕜 E']\n  [NormedSpace 𝕜 F] [MeasurableSpace G] [NormedSpace ℝ F] [Sub G] (f : G → E) (g : G → E')\n  (L : E →L[𝕜] E' →L[𝕜] F) (μ : MeasureTheory.Measure G := by volume_tac) : G → F",
-   "module": "Mathlib.Analysis.Convolution",
-   "line": 399,
-   "kind": "def",
-   "deprecated": null},
   "MeasureTheory.Measure.instMeasurableSpace":
   {"signature":
    "MeasureTheory.Measure.instMeasurableSpace.{u_1} {α : Type u_1} {mα : MeasurableSpace α} :\n  MeasurableSpace (MeasureTheory.Measure α)",
@@ -33479,13 +33236,6 @@
    "Matrix.transpose_mem_unitaryGroup_iff.{u, v} {n : Type u} [DecidableEq n] [Fintype n] {α : Type v}\n  [CommRing α] [StarRing α] {U : Matrix n n α} :\n  U.transpose ∈ Matrix.unitaryGroup n α ↔ U ∈ Matrix.unitaryGroup n α",
    "module": "Mathlib.LinearAlgebra.UnitaryGroup",
    "line": 244,
-   "kind": "theorem",
-   "deprecated": null},
-  "Matrix.trace_conj":
-  {"signature":
-   "Matrix.trace_conj.{u, v} {m : Type u} {α : Type v} [CommRing α] [Fintype m] [DecidableEq m]\n  {M : Matrix m m α} (h : IsUnit M) (N : Matrix m m α) : (M * N * M⁻¹).trace = N.trace",
-   "module": "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
-   "line": 797,
    "kind": "theorem",
    "deprecated": null},
   "Matrix.star_eq_inv":
@@ -33677,20 +33427,6 @@
    "line": 56,
    "kind": "def",
    "deprecated": null},
-  "Matrix.charpoly_units_conj":
-  {"signature":
-   "Matrix.charpoly_units_conj.{u_1, u_4} {R : Type u_1} [CommRing R] {n : Type u_4} [DecidableEq n]\n  [Fintype n] (M : (Matrix n n R)ˣ) (N : Matrix n n R) : (↑M * N * (↑M)⁻¹).charpoly = N.charpoly",
-   "module": "Mathlib.LinearAlgebra.Matrix.Charpoly.Basic",
-   "line": 290,
-   "kind": "theorem",
-   "deprecated": null},
-  "Matrix.charpoly":
-  {"signature":
-   "Matrix.charpoly.{u_1, u_4} {R : Type u_1} [CommRing R] {n : Type u_4} [DecidableEq n] [Fintype n]\n  (M : Matrix n n R) : Polynomial R",
-   "module": "Mathlib.LinearAlgebra.Matrix.Charpoly.Basic",
-   "line": 138,
-   "kind": "def",
-   "deprecated": null},
   "Matrix.card_SL_mul_card_units":
   {"signature":
    "Matrix.card_SL_mul_card_units.{u_1, u_2} {n : Type u_1} [Fintype n] [DecidableEq n] [Nonempty n]\n  {R : Type u_2} [CommRing R] :\n  Nat.card (Matrix.SpecialLinearGroup n R) * Nat.card Rˣ = Nat.card (GL n R)",
@@ -33731,13 +33467,6 @@
    "Matrix.ProjectiveSpecialLinearGroup.rank_two_simple'.{u_2} {F : Type u_2} [Field F]\n  (hF : ∃ a, a ≠ 0 ∧ a ^ 2 ≠ 1) : IsSimpleGroup (Matrix.ProjectiveSpecialLinearGroup (Fin 2) F)",
    "module": "Mathlib.LinearAlgebra.Projectivization.PSL.PSL2",
    "line": 124,
-   "kind": "theorem",
-   "deprecated": null},
-  "Matrix.ProjectiveSpecialLinearGroup.rank_two_simple":
-  {"signature":
-   "Matrix.ProjectiveSpecialLinearGroup.rank_two_simple.{u_2} {F : Type u_2} [Field F]\n  (hF : 4 ≤ Nat.card F) : IsSimpleGroup (Matrix.ProjectiveSpecialLinearGroup (Fin 2) F)",
-   "module": "Mathlib.LinearAlgebra.Projectivization.PSL.PSL2",
-   "line": 139,
    "kind": "theorem",
    "deprecated": null},
   "Matrix.IsHermitian.spectral_theorem":
@@ -34252,19 +33981,6 @@
    "module": "Mathlib.NumberTheory.LSeries.Convolution",
    "line": 147,
    "kind": "theorem",
-   "deprecated": null},
-  "IsZGroup.of_squarefree":
-  {"signature":
-   "IsZGroup.of_squarefree.{u_1} {G : Type u_1} [Group G] (hG : Squarefree (Nat.card G)) : IsZGroup G",
-   "module": "Mathlib.GroupTheory.SpecificGroups.ZGroup",
-   "line": 58,
-   "kind": "theorem",
-   "deprecated": null},
-  "IsZGroup":
-  {"signature": "IsZGroup.{u_1} (G : Type u_1) [Group G] : Prop",
-   "module": "Mathlib.GroupTheory.SpecificGroups.ZGroup",
-   "line": 39,
-   "kind": "class",
    "deprecated": null},
   "IsUnit.map":
   {"signature":
@@ -34879,26 +34595,6 @@
    "line": 55,
    "kind": "abbrev",
    "deprecated": null},
-  "IsKleinFour.not_isCyclic":
-  {"signature":
-   "IsKleinFour.not_isCyclic.{u_1} {G : Type u_1} [Group G] [IsKleinFour G] : ¬IsCyclic G",
-   "module": "Mathlib.GroupTheory.SpecificGroups.KleinFour",
-   "line": 97,
-   "kind": "theorem",
-   "deprecated": null},
-  "IsKleinFour.nonempty_mulEquiv":
-  {"signature":
-   "IsKleinFour.nonempty_mulEquiv.{u_2, u_3} {G₁ : Type u_2} {G₂ : Type u_3} [Group G₁] [Group G₂]\n  [IsKleinFour G₁] [IsKleinFour G₂] : Nonempty (G₁ ≃* G₂)",
-   "module": "Mathlib.GroupTheory.SpecificGroups.KleinFour",
-   "line": 164,
-   "kind": "theorem",
-   "deprecated": null},
-  "IsKleinFour":
-  {"signature": "IsKleinFour.{u_1} (G : Type u_1) [Group G] : Prop",
-   "module": "Mathlib.GroupTheory.SpecificGroups.KleinFour",
-   "line": 53,
-   "kind": "class",
-   "deprecated": null},
   "IsIntegrallyClosed":
   {"signature": "IsIntegrallyClosed.{u_1} (R : Type u_1) [CommRing R] : Prop",
    "module": "Mathlib.RingTheory.IntegralClosure.IntegrallyClosed",
@@ -35192,13 +34888,6 @@
    "IsCyclic.subgroup_eq_iff_card_eq.{u_2} {G : Type u_2} [Group G] [IsCyclic G] {H K : Subgroup G}\n  [Finite ↥H] [Finite ↥K] : H = K ↔ Nat.card ↥H = Nat.card ↥K",
    "module": "Mathlib.GroupTheory.SpecificGroups.Cyclic",
    "line": 989,
-   "kind": "theorem",
-   "deprecated": null},
-  "IsCyclic.monoidHom_mulEquiv_rootsOfUnity":
-  {"signature":
-   "IsCyclic.monoidHom_mulEquiv_rootsOfUnity.{u_7, u_8} (G : Type u_7) [CommGroup G] [IsCyclic G]\n  (G' : Type u_8) [CommGroup G'] : Nonempty ((G →* G') ≃* ↥(rootsOfUnity (Nat.card G) G'))",
-   "module": "Mathlib.RingTheory.RootsOfUnity.Basic",
-   "line": 331,
    "kind": "theorem",
    "deprecated": null},
   "IsCyclic.isMulCommutative":
@@ -36782,13 +36471,6 @@
    "line": 159,
    "kind": "theorem",
    "deprecated": null},
-  "Group.isSolvable_iff_subgroup_quotient":
-  {"signature":
-   "Group.isSolvable_iff_subgroup_quotient.{u_1} {G : Type u_1} [Group G] (H : Subgroup G) [H.Normal] :\n  Group.IsSolvable G ↔ Group.IsSolvable ↥H ∧ Group.IsSolvable (G ⧸ H)",
-   "module": "Mathlib.GroupTheory.Solvable",
-   "line": 223,
-   "kind": "theorem",
-   "deprecated": null},
   "Group.isSimpleGroup_of_isCoatom":
   {"signature":
    "Group.isSimpleGroup_of_isCoatom.{u_1} {G : Type u_1} [Group G] {M : Subgroup G} [M.Normal]\n  (h : IsCoatom M) : IsSimpleGroup (G ⧸ M)",
@@ -37457,13 +37139,6 @@
    "line": 737,
    "kind": "abbrev",
    "deprecated": null},
-  "FourierTransform.fourierCLM":
-  {"signature":
-   "FourierTransform.fourierCLM.{u_2, u_3, u_4} (R : Type u_2) (E : Type u_3) {F : Type u_4}\n  [Semiring R] [AddCommMonoid E] [AddCommMonoid F] [_root_.Module R E] [_root_.Module R F]\n  [FourierTransform E F] [FourierAdd E F] [FourierSMul R E F] [TopologicalSpace E]\n  [TopologicalSpace F] [ContinuousFourier E F] : E →L[R] F",
-   "module": "Mathlib.Analysis.Fourier.Notation",
-   "line": 164,
-   "kind": "def",
-   "deprecated": null},
   "FormalMultilinearSeries.radius":
   {"signature":
    "FormalMultilinearSeries.radius.{u_1, u_3, u_4} {𝕜 : Type u_1} {E : Type u_3} {F : Type u_4}\n  [NontriviallyNormedField 𝕜] [NormedAddCommGroup E] [NormedSpace 𝕜 E] [NormedAddCommGroup F]\n  [NormedSpace 𝕜 F] (p : FormalMultilinearSeries 𝕜 E F) : ENNReal",
@@ -37504,13 +37179,6 @@
    "module": "Mathlib.Algebra.GCDMonoid.Finset",
    "line": 60,
    "kind": "theorem",
-   "deprecated": null},
-  "Finset.convolution":
-  {"signature":
-   "Finset.convolution.{u_1} {G : Type u_1} [Group G] [DecidableEq G] (A B : Finset G) : G → ℕ",
-   "module": "Mathlib.Combinatorics.Additive.Convolution",
-   "line": 27,
-   "kind": "def",
    "deprecated": null},
   "Finset":
   {"signature": "Finset.{u_3} (α : Type u_3) : Type u_3",
@@ -37987,13 +37655,6 @@
    "FDRep.simple_iff_end_is_rank_one.{u} {k : Type u} [Field k] {G : Type u} [Finite G] [Group G]\n  [IsAlgClosed k] [NeZero ↑(Nat.card G)] (V : FDRep k G) :\n  CategoryTheory.Simple V ↔ Module.finrank k (V ⟶ V) = 1",
    "module": "Mathlib.RepresentationTheory.FinGroupCharZero",
    "line": 85,
-   "kind": "theorem",
-   "deprecated": null},
-  "FDRep.simple_iff_char_is_norm_one":
-  {"signature":
-   "FDRep.simple_iff_char_is_norm_one.{u} {k : Type u} [Field k] {G : Type u} [Group G] [IsAlgClosed k]\n  [CharZero k] [Fintype G] (V : FDRep k G) :\n  CategoryTheory.Simple V ↔ ∑ g, V.character g * V.character g⁻¹ = ↑(Nat.card G)",
-   "module": "Mathlib.RepresentationTheory.FinGroupCharZero",
-   "line": 117,
    "kind": "theorem",
    "deprecated": null},
   "FDRep.scalar_product_char_eq_finrank_equivariant":
@@ -38566,13 +38227,6 @@
    "line": 247,
    "kind": "theorem",
    "deprecated": null},
-  "Equiv.Perm.isMulCommutative_iff_card_le_two":
-  {"signature":
-   "Equiv.Perm.isMulCommutative_iff_card_le_two.{u_1} {α : Type u_1} [Finite α] :\n  IsMulCommutative (Equiv.Perm α) ↔ Nat.card α ≤ 2",
-   "module": "Mathlib.Data.Finite.Perm",
-   "line": 51,
-   "kind": "theorem",
-   "deprecated": null},
   "Equiv.Perm.isCycle_cycleOf":
   {"signature":
    "Equiv.Perm.isCycle_cycleOf.{u_1} {α : Type u_1} {x : α} (f : Equiv.Perm α)\n  [DecidableRel f.SameCycle] (hx : f x ≠ x) : (f.cycleOf x).IsCycle",
@@ -39046,55 +38700,6 @@
    "line": 61,
    "kind": "instance",
    "deprecated": null},
-  "DiscreteConvolution.single_ringConvolution":
-  {"signature":
-   "DiscreteConvolution.single_ringConvolution.{u_1, u_7} {M : Type u_1} {R : Type u_7} [Monoid M]\n  [NonAssocSemiring R] [TopologicalSpace R] [DecidableEq M] (f : M → R) :\n  DiscreteConvolution.ringConvolution (Pi.single 1 1) f = f",
-   "module": "Mathlib.Topology.Algebra.InfiniteSum.DiscreteConvolution",
-   "line": 336,
-   "kind": "theorem",
-   "deprecated": null},
-  "DiscreteConvolution.ringConvolution_single":
-  {"signature":
-   "DiscreteConvolution.ringConvolution_single.{u_1, u_7} {M : Type u_1} {R : Type u_7} [Monoid M]\n  [NonAssocSemiring R] [TopologicalSpace R] [DecidableEq M] (f : M → R) :\n  DiscreteConvolution.ringConvolution f (Pi.single 1 1) = f",
-   "module": "Mathlib.Topology.Algebra.InfiniteSum.DiscreteConvolution",
-   "line": 341,
-   "kind": "theorem",
-   "deprecated": null},
-  "DiscreteConvolution.ringConvolution_comm":
-  {"signature":
-   "DiscreteConvolution.ringConvolution_comm.{u_1, u_7} {M : Type u_1} {R : Type u_7} [CommMonoid M]\n  [NonUnitalNonAssocCommSemiring R] [TopologicalSpace R] (f g : M → R) :\n  DiscreteConvolution.ringConvolution f g = DiscreteConvolution.ringConvolution g f",
-   "module": "Mathlib.Topology.Algebra.InfiniteSum.DiscreteConvolution",
-   "line": 392,
-   "kind": "theorem",
-   "deprecated": null},
-  "DiscreteConvolution.ringConvolution_add":
-  {"signature":
-   "DiscreteConvolution.ringConvolution_add.{u_1, u_7} {M : Type u_1} {R : Type u_7} [Monoid M]\n  [NonUnitalNonAssocSemiring R] [TopologicalSpace R] [T2Space R] [ContinuousAdd R] (f g h : M → R)\n  (hfg : DiscreteConvolution.ConvolutionExists (LinearMap.mul ℕ R) f g)\n  (hfh : DiscreteConvolution.ConvolutionExists (LinearMap.mul ℕ R) f h) :\n  DiscreteConvolution.ringConvolution f (g + h) =\n    DiscreteConvolution.ringConvolution f g + DiscreteConvolution.ringConvolution f h",
-   "module": "Mathlib.Topology.Algebra.InfiniteSum.DiscreteConvolution",
-   "line": 353,
-   "kind": "theorem",
-   "deprecated": null},
-  "DiscreteConvolution.ringConvolution":
-  {"signature":
-   "DiscreteConvolution.ringConvolution.{u_1, u_7} {M : Type u_1} {R : Type u_7}\n  [NonUnitalNonAssocSemiring R] [Monoid M] [TopologicalSpace R] (f g : M → R) : M → R",
-   "module": "Mathlib.Topology.Algebra.InfiniteSum.DiscreteConvolution",
-   "line": 304,
-   "kind": "def",
-   "deprecated": null},
-  "DiscreteConvolution.add_ringConvolution":
-  {"signature":
-   "DiscreteConvolution.add_ringConvolution.{u_1, u_7} {M : Type u_1} {R : Type u_7} [Monoid M]\n  [NonUnitalNonAssocSemiring R] [TopologicalSpace R] [T2Space R] [ContinuousAdd R] (f g h : M → R)\n  (hfh : DiscreteConvolution.ConvolutionExists (LinearMap.mul ℕ R) f h)\n  (hgh : DiscreteConvolution.ConvolutionExists (LinearMap.mul ℕ R) g h) :\n  DiscreteConvolution.ringConvolution (f + g) h =\n    DiscreteConvolution.ringConvolution f h + DiscreteConvolution.ringConvolution g h",
-   "module": "Mathlib.Topology.Algebra.InfiniteSum.DiscreteConvolution",
-   "line": 359,
-   "kind": "theorem",
-   "deprecated": null},
-  "DirichletCharacter.IsPrimitive.fourierTransform_eq_inv_mul_gaussSum":
-  {"signature":
-   "DirichletCharacter.IsPrimitive.fourierTransform_eq_inv_mul_gaussSum {N : ℕ} [NeZero N]\n  {χ : DirichletCharacter ℂ N} (hχ : χ.IsPrimitive) (k : ZMod N) :\n  ZMod.dft (⇑χ) k = χ⁻¹ (-k) * gaussSum χ ZMod.stdAddChar",
-   "module": "Mathlib.Analysis.Fourier.ZMod",
-   "line": 217,
-   "kind": "theorem",
-   "deprecated": null},
   "DirectSum.IsInternal":
   {"signature":
    "DirectSum.IsInternal.{v, u_1, u_2} {ι : Type v} {M : Type u_1} {S : Type u_2} [DecidableEq ι]\n  [AddCommMonoid M] [SetLike S M] [AddSubmonoidClass S M] (A : ι → S) : Prop",
@@ -39155,19 +38760,6 @@
    "module": "Mathlib.NumberTheory.Dioph",
    "line": 243,
    "kind": "def",
-   "deprecated": null},
-  "DihedralGroup.nat_card":
-  {"signature": "DihedralGroup.nat_card {n : ℕ} : Nat.card (DihedralGroup n) = 2 * n",
-   "module": "Mathlib.GroupTheory.SpecificGroups.Dihedral",
-   "line": 159,
-   "kind": "theorem",
-   "deprecated": null},
-  "DihedralGroup.commutative_iff":
-  {"signature":
-   "DihedralGroup.commutative_iff {n : ℕ} : IsMulCommutative (DihedralGroup n) ↔ n = 1 ∨ n = 2",
-   "module": "Mathlib.GroupTheory.SpecificGroups.Dihedral",
-   "line": 234,
-   "kind": "theorem",
    "deprecated": null},
   "DihedralGroup.card_conjClasses_odd":
   {"signature":
@@ -39710,33 +39302,12 @@
    "line": 411,
    "kind": "class",
    "deprecated": null},
-  "CommGroup.subgroupOrderIsoSubgroupMonoidHom":
-  {"signature":
-   "CommGroup.subgroupOrderIsoSubgroupMonoidHom.{u_1, u_2} (G : Type u_1) (M : Type u_2) [CommGroup G]\n  [Finite G] [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)] :\n  Subgroup G ≃o (Subgroup (G →* Mˣ))ᵒᵈ",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 171,
-   "kind": "def",
-   "deprecated": null},
   "CommGroup.nilpotencyClass_le_one":
   {"signature":
    "CommGroup.nilpotencyClass_le_one.{u_2} {G : Type u_2} [CommGroup G] : Group.nilpotencyClass G ≤ 1",
    "module": "Mathlib.GroupTheory.Nilpotent",
    "line": 792,
    "kind": "theorem",
-   "deprecated": null},
-  "CommGroup.monoidHom_mulEquiv_of_hasEnoughRootsOfUnity":
-  {"signature":
-   "CommGroup.monoidHom_mulEquiv_of_hasEnoughRootsOfUnity.{u_1, u_2} (G : Type u_1) (M : Type u_2)\n  [CommGroup G] [Finite G] [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)] :\n  Nonempty ((G →* Mˣ) ≃* G)",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 78,
-   "kind": "theorem",
-   "deprecated": null},
-  "CommGroup.monoidHomMonoidHomEquiv":
-  {"signature":
-   "CommGroup.monoidHomMonoidHomEquiv.{u_1, u_2} (G : Type u_1) (M : Type u_2) [CommGroup G] [Finite G]\n  [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)] : ((G →* Mˣ) →* Mˣ) ≃* G",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 143,
-   "kind": "def",
    "deprecated": null},
   "CommGroup.is_simple_iff_prime_card":
   {"signature":
@@ -39752,46 +39323,11 @@
    "line": 784,
    "kind": "theorem",
    "deprecated": null},
-  "CommGroup.forall_monoidHom_apply_eq_one_iff":
-  {"signature":
-   "CommGroup.forall_monoidHom_apply_eq_one_iff.{u_1, u_2} {G : Type u_1} (M : Type u_2) [CommGroup G]\n  [Finite G] [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)] (H : Subgroup G)\n  (x : G) : (∀ (φ : G →* Mˣ), (∀ y ∈ H, φ y = 1) → φ x = 1) ↔ x ∈ H",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 124,
-   "kind": "theorem",
-   "deprecated": null},
-  "CommGroup.exists_apply_ne_one_of_hasEnoughRootsOfUnity":
-  {"signature":
-   "CommGroup.exists_apply_ne_one_of_hasEnoughRootsOfUnity.{u_1, u_2} (G : Type u_1) (M : Type u_2)\n  [CommGroup G] [Finite G] [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)] {a : G}\n  (ha : a ≠ 1) : ∃ φ, φ a ≠ 1",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 60,
-   "kind": "theorem",
-   "deprecated": null},
-  "CommGroup.equiv_prod_multiplicative_zmod_of_finite":
-  {"signature":
-   "CommGroup.equiv_prod_multiplicative_zmod_of_finite.{u_1} (G : Type u_1) [CommGroup G] [Finite G] :\n  ∃ ι x n, (∀ (i : ι), 1 < n i) ∧ Nonempty (G ≃* ((i : ι) → Multiplicative (ZMod (n i))))",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Basic",
-   "line": 177,
-   "kind": "theorem",
-   "deprecated": null},
   "CommGroup.equiv_free_prod_prod_multiplicative_zmod":
   {"signature":
    "CommGroup.equiv_free_prod_prod_multiplicative_zmod.{u_1} (G : Type u_1) [CommGroup G]\n  [hG : Group.FG G] :\n  ∃ ι j x x p,\n    ∃ (_ : ∀ (i : ι), Nat.Prime (p i)),\n      ∃ e, Nonempty (G ≃* (j → Multiplicative ℤ) × ((i : ι) → Multiplicative (ZMod (p i ^ e i))))",
    "module": "Mathlib.GroupTheory.FiniteAbelian.Basic",
    "line": 186,
-   "kind": "theorem",
-   "deprecated": null},
-  "CommGroup.card_subgroupOrderIsoSubgroupMonoidHom":
-  {"signature":
-   "CommGroup.card_subgroupOrderIsoSubgroupMonoidHom.{u_1, u_2} {G : Type u_1} (M : Type u_2)\n  [CommGroup G] [Finite G] [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)]\n  (H : Subgroup G) :\n  Nat.card ↥(OrderDual.ofDual ((CommGroup.subgroupOrderIsoSubgroupMonoidHom G M) H)) =\n    Nat.card (G ⧸ H)",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 208,
-   "kind": "theorem",
-   "deprecated": null},
-  "CommGroup.card_monoidHom_of_hasEnoughRootsOfUnity":
-  {"signature":
-   "CommGroup.card_monoidHom_of_hasEnoughRootsOfUnity.{u_1, u_2} (G : Type u_1) (M : Type u_2)\n  [CommGroup G] [Finite G] [CommMonoid M] [hM : HasEnoughRootsOfUnity M (Monoid.exponent G)] :\n  Nat.card (G →* Mˣ) = Nat.card G",
-   "module": "Mathlib.GroupTheory.FiniteAbelian.Duality",
-   "line": 95,
    "kind": "theorem",
    "deprecated": null},
   "CommGroup":
@@ -43248,82 +42784,6 @@
    "module": "Mathlib.Topology.Instances.AddCircle.Defs",
    "line": 189,
    "kind": "abbrev",
-   "deprecated": null},
-  "AddChar.zmodAddEquiv":
-  {"signature": "AddChar.zmodAddEquiv {n : ℕ} [NeZero n] : ZMod n ≃+ AddChar (ZMod n) ℂ",
-   "module": "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
-   "line": 115,
-   "kind": "def",
-   "deprecated": null},
-  "AddChar.wInner_cWeight_eq_boole":
-  {"signature":
-   "AddChar.wInner_cWeight_eq_boole.{u_1, u_2} {G : Type u_1} {R : Type u_2} [AddCommGroup G] [RCLike R]\n  [Fintype G] (ψ₁ ψ₂ : AddChar G R) : ⟪⇑ψ₁, ⇑ψ₂⟫ₙ_[R] = if ψ₁ = ψ₂ then 1 else 0",
-   "module": "Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality",
-   "line": 58,
-   "kind": "theorem",
-   "deprecated": null},
-  "AddChar.sum_eq_ite":
-  {"signature":
-   "AddChar.sum_eq_ite.{u_1, u_2} {A : Type u_1} {R : Type u_2} [AddGroup A] [Fintype A]\n  [CommSemiring R] [IsDomain R] (ψ : AddChar A R) [Decidable (ψ = 0)] :\n  ∑ a, ψ a = if ψ = 0 then ↑(Fintype.card A) else 0",
-   "module": "Mathlib.Algebra.Group.AddChar",
-   "line": 354,
-   "kind": "theorem",
-   "deprecated": null},
-  "AddChar.sum_apply_eq_ite":
-  {"signature":
-   "AddChar.sum_apply_eq_ite.{u_1} {α : Type u_1} [AddCommGroup α] [Fintype α] [DecidableEq α] (a : α) :\n  ∑ ψ, ψ a = if a = 0 then ↑(Fintype.card α) else 0",
-   "module": "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
-   "line": 192,
-   "kind": "theorem",
-   "deprecated": null},
-  "AddChar.norm_apply":
-  {"signature":
-   "AddChar.norm_apply.{u_1, u_3} {α : Type u_1} [NormedRing α] [NormMulClass α] [NormOneClass α]\n  {G : Type u_3} [AddLeftCancelMonoid G] [Finite G] (ψ : AddChar G α) (x : G) : ‖ψ x‖ = 1",
-   "module": "Mathlib.Analysis.Normed.Ring.Finite",
-   "line": 36,
-   "kind": "theorem",
-   "deprecated": null},
-  "AddChar.map_neg_eq_conj":
-  {"signature":
-   "AddChar.map_neg_eq_conj.{u_1, u_3} {K : Type u_1} [RCLike K] {G : Type u_3} [Finite G]\n  [AddCommGroup G] (ψ : AddChar G K) (x : G) : ψ (-x) = (starRingEnd K) (ψ x)",
-   "module": "Mathlib.Analysis.RCLike.Basic",
-   "line": 1292,
-   "kind": "theorem",
-   "deprecated": null},
-  "AddChar.doubleDualEquiv":
-  {"signature":
-   "AddChar.doubleDualEquiv.{u_1} {α : Type u_1} [AddCommGroup α] [Finite α] :\n  α ≃+ AddChar (AddChar α ℂ) ℂ",
-   "module": "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
-   "line": 177,
-   "kind": "def",
-   "deprecated": null},
-  "AddChar.complexBasis":
-  {"signature":
-   "AddChar.complexBasis.{u_1} (α : Type u_1) [AddCommGroup α] [Finite α] :\n  Module.Basis (AddChar α ℂ) ℂ (α → ℂ)",
-   "module": "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
-   "line": 128,
-   "kind": "def",
-   "deprecated": null},
-  "AddChar.coe_complexBasis":
-  {"signature":
-   "AddChar.coe_complexBasis.{u_1} (α : Type u_1) [AddCommGroup α] [Finite α] :\n  ⇑(AddChar.complexBasis α) = DFunLike.coe",
-   "module": "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
-   "line": 133,
-   "kind": "theorem",
-   "deprecated": null},
-  "AddChar.card_eq":
-  {"signature":
-   "AddChar.card_eq.{u_1} {α : Type u_1} [AddCommGroup α] [Fintype α] :\n  Fintype.card (AddChar α ℂ) = Fintype.card α",
-   "module": "Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality",
-   "line": 105,
-   "kind": "theorem",
-   "deprecated": null},
-  "AddChar":
-  {"signature":
-   "AddChar.{u_1, u_2} (A : Type u_1) [AddMonoid A] (M : Type u_2) [Monoid M] : Type (max u_1 u_2)",
-   "module": "Mathlib.Algebra.Group.AddChar",
-   "line": 66,
-   "kind": "structure",
    "deprecated": null},
   "Abelianization.of":
   {"signature": "Abelianization.of.{u} {G : Type u} [Group G] : G →* Abelianization G",
