@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.SimpleFunc.tendsto_approxOn
-mathlib_file: Mathlib/MeasureTheory/Function/SimpleFuncDense.lean
----
-
 # Approximation by step functions
 
 Mathlib states this as `MeasureTheory.SimpleFunc.tendsto_approxOn`.

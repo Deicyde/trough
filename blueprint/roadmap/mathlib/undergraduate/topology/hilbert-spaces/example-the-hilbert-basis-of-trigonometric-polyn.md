@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: fourierBasis
-mathlib_file: Mathlib/Analysis/Fourier/AddCircle.lean
----
-
 # Example, the Hilbert basis of trigonometric polynomials
 
 We define `fourierBasis` to be a `ℤ`-indexed Hilbert basis for `Lp ℂ 2 haarAddCircle`,

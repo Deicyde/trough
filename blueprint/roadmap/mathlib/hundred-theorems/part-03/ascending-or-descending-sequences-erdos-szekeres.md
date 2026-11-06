@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.erdos_szekeres
-mathlib_file: Archive/Wiedijk100Theorems/AscendingDescendingSequences.lean
----
-
 # Ascending or Descending Sequences (Erdős–Szekeres Theorem)
 
 **Erdős–Szekeres Theorem**: Given a sequence of more than `r * s` distinct values, there is an

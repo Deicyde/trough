@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.tendsto_integral_of_dominated_convergence
-mathlib_file: Mathlib/MeasureTheory/Integral/DominatedConvergence.lean
----
-
 # Dominated convergence theorem
 
 **Lebesgue dominated convergence theorem** provides sufficient conditions under which almost

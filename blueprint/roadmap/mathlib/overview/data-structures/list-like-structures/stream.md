@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Stream'
-mathlib_file: Mathlib/Data/Stream/Defs.lean
----
-
 # Stream
 
 A stream `Stream' α` is an infinite sequence of elements of `α`.

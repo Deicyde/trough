@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Set.extremePoints
-mathlib_file: Mathlib/Analysis/Convex/Extreme.lean
----
-
 # Extreme point
 
 A point `x` is an extreme point of a set `A` if `x` belongs to no open segment with ends in

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_gcd_eq_mul_add_mul
-mathlib_file: Mathlib/RingTheory/PrincipalIdealDomain.lean
----
-
 # Bézout's identity
 
 **Bézout's lemma**

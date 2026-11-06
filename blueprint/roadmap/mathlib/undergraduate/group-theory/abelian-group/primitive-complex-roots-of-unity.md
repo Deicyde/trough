@@ -1,12 +1,3 @@
----
-article_id: af_849285d1717f7195381a22d5
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.isPrimitiveRoot_iff
-mathlib_file: Mathlib/RingTheory/RootsOfUnity/Complex.lean
----
-
 # Primitive complex roots of unity
 
 For a positive integer $n$, a **primitive $n$-th root of unity** is a [complex number](../../../overview/general-algebra/numbers/complex-number.md) $\zeta$ with

@@ -1,12 +1,3 @@
----
-article_id: af_6a2b17ff706487ccb8968c21
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: alternatingGroup.isSimpleGroup
-mathlib_file: Mathlib/GroupTheory/SpecificGroups/Alternating/Simple.lean
----
-
 # Alternating groups on 5 letters or more are simple
 
 The **simplicity of the alternating groups** is the theorem that for $n \ge 5$ the

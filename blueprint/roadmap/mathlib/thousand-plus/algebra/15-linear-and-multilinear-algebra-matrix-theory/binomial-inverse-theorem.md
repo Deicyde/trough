@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.invOf_add_mul_mul'
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Invertible.lean
----
-
 # Binomial inverse theorem
 
 The **Binomial Inverse Theorem** (`⅟` version).

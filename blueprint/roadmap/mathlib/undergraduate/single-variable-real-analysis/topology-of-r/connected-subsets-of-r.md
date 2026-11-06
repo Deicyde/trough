@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: setOfPred_isPreconnected_eq_of_ordered
-mathlib_file: Mathlib/Topology/Order/IntermediateValue.lean
----
-
 # Connected subsets of $\R$
 
 In a dense conditionally complete linear order, the set of preconnected sets is exactly

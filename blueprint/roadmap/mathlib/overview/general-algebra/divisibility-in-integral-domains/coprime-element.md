@@ -1,12 +1,3 @@
----
-article_id: af_3adf43eb3d34f5f0fb8dbebc
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsCoprime
-mathlib_file: Mathlib/RingTheory/Coprime/Basic.lean
----
-
 # Coprime element
 
 Two elements $x$ and $y$ of a commutative [ring](../rings/ring.md) are **coprime** when $1$ can be

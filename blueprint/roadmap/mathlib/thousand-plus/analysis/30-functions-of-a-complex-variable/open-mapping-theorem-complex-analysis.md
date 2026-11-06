@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AnalyticOnNhd.is_constant_or_isOpen
-mathlib_file: Mathlib/Analysis/Complex/OpenMapping.lean
----
-
 # Open mapping theorem (complex analysis)
 
 The *open mapping theorem* for holomorphic functions, global version: if a function `g : E → ℂ`

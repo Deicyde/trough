@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: instIsManifoldIcc
-mathlib_file: Mathlib/Geometry/Manifold/Instances/Real.lean
----
-
 # Closed interval
 
 The manifold structure on `[x, y]` is smooth.

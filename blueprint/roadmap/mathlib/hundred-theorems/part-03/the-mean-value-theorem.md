@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_deriv_eq_slope
-mathlib_file: Mathlib/Analysis/Calculus/Deriv/MeanValue.lean
----
-
 # The Mean Value Theorem (Freek Wiedijk's 100 theorems)
 
 Lagrange's **Mean Value Theorem**, `deriv` version.

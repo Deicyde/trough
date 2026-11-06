@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AnalyticAt.eventually_eq_zero_or_eventually_ne_zero
-mathlib_file: Mathlib/Analysis/Analytic/IsolatedZeros.lean
----
-
 # Principle of isolated zeros
 
 The *principle of isolated zeros* for an analytic function, local version: if a function is

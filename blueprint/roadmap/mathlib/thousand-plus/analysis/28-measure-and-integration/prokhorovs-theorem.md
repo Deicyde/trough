@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: isCompact_setOfPred_finiteMeasure_mass_le_compl_isCompact_le, isCompact_setOfPred_finiteMeasure_mass_eq_compl_isCompact_le, isCompact_setOfPred_probabilityMeasure_mass_eq_compl_isCompact_le, isCompact_closure_of_isTightMeasureSet
-mathlib_file: Mathlib/MeasureTheory/Measure/Prokhorov.lean
----
-
 # Prokhorov's theorem
 
 Mathlib records this with 4 declarations.

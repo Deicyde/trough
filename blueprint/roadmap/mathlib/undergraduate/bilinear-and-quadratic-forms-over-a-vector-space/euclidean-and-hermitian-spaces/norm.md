@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: InnerProductSpace.Core.toNorm
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Defs.lean
----
-
 # Norm
 
 (Semi)norm constructed from a `PreInnerProductSpace.Core` structure, defined to be the square

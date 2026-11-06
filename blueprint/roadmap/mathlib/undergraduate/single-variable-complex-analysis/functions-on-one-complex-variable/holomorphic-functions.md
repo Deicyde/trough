@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: DifferentiableOn
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Defs.lean
----
-
 # Holomorphic functions
 
 `DifferentiableOn 𝕜 f s` means that `f` is differentiable within `s` at any point of `s`.

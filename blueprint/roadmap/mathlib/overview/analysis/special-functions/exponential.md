@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Real.exp
-mathlib_file: Mathlib/Analysis/Complex/Exponential.lean
----
-
 # Exponential
 
 The real exponential function, defined as the real part of the complex exponential

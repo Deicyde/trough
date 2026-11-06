@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AffineIsometryEquiv
-mathlib_file: Mathlib/Analysis/Normed/Affine/Isometry.lean
----
-
 # Isometries of a Euclidean affine space
 
 An affine isometric equivalence between two normed vector spaces,

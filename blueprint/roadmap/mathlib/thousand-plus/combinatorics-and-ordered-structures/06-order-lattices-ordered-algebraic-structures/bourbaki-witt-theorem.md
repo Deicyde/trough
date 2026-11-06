@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ChainCompletePartialOrder.nonempty_fixedPoints_of_inflationary
-mathlib_file: Mathlib/Order/BourbakiWitt.lean
----
-
 # Bourbaki–Witt theorem
 
 **The Bourbaki-Witt Theorem**: If `α` is a chain complete partial order and `f : α → α` is

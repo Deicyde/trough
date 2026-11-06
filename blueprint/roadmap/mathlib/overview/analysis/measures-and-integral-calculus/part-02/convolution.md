@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.convolution
-mathlib_file: Mathlib/Analysis/Convolution.lean
----
-
 # Convolution
 
 The convolution of two functions `f` and `g` with respect to a continuous bilinear map `L` and

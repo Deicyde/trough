@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Choose.lucas_theorem
-mathlib_file: Mathlib/Data/Nat/Choose/Lucas.lean
----
-
 # Lucas's theorem
 
 **Alias** of `Choose.choose_modEq_prod_range_choose`.

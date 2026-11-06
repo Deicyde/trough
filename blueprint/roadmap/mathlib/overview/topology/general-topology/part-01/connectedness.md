@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: ConnectedSpace
-mathlib_file: Mathlib/Topology/Connected/Basic.lean
----
-
 # Connectedness
 
 A connected space is a nonempty one where there is no non-trivial open partition.

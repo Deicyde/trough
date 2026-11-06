@@ -1,12 +1,3 @@
----
-article_id: af_0badd595deb39739c17abd65
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Comma
-mathlib_file: Mathlib/CategoryTheory/Comma/Basic.lean
----
-
 # Comma category
 
 A **comma category** is a [category](category.md) built from two

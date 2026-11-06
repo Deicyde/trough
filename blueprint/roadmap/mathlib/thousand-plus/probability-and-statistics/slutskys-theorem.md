@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const
-mathlib_file: Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean
----
-
 # Slutsky's theorem
 
 **Slutsky's theorem** for a continuous function: if `X n` converges in distribution to `Z`,

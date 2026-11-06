@@ -1,11 +1,3 @@
----
-declaration: definition
-origin: cited
-mathlib: true
-mathlib_declaration: FiniteField.card_image_polynomial_eval, FiniteField.exists_root_sum_quadratic, FiniteField.sum_subgroup_units_eq_zero, FiniteField.sum_subgroup_units, FiniteField.card, FiniteField.sum_pow_units, FiniteField.sum_pow_lt_card_sub_one, FiniteField.frobeniusAlgHom, FiniteField.frobeniusAlgEquiv, FiniteField.frobeniusAlgEquivOfAlgebraic, Nat.sq_add_sq_zmodEq, Nat.sq_add_sq_modEq
-mathlib_file: Mathlib/FieldTheory/Finite/Basic.lean
----
-
 # Finite fields
 
 This file contains basic results about finite fields.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: SchwartzMap.fourierTransformCLM
-mathlib_file: Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean
----
-
 # Fourier transforms on $\mathcal{S}(\R^d)$
 
 The Fourier transform on a real inner product space, as a continuous linear map on the

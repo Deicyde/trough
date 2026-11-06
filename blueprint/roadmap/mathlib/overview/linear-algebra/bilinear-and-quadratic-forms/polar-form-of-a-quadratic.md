@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: QuadraticMap.polar
-mathlib_file: Mathlib/LinearAlgebra/QuadraticForm/Basic.lean
----
-
 # Polar form of a quadratic
 
 Up to a factor 2, `Q.polar` is the associated bilinear map for a quadratic map `Q`.

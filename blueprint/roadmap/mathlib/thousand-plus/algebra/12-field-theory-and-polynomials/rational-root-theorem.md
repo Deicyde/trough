@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: num_dvd_of_is_root, den_dvd_of_is_root
-mathlib_file: Mathlib/RingTheory/Polynomial/RationalRoot.lean
----
-
 # Rational root theorem
 
 Mathlib records this with 2 declarations.

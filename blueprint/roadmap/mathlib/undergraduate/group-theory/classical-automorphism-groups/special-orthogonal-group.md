@@ -1,12 +1,3 @@
----
-article_id: af_4b0611227895fd885c6bd71c
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.specialOrthogonalGroup
-mathlib_file: Mathlib/LinearAlgebra/UnitaryGroup.lean
----
-
 # Special orthogonal group
 
 The **special orthogonal group** $\mathrm{SO}_n(R)$ is the group of $n \times n$

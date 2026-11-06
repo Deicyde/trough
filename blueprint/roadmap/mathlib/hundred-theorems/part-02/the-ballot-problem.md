@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Ballot.ballot_problem
-mathlib_file: Archive/Wiedijk100Theorems/BallotProblem.lean
----
-
 # The Ballot Problem
 
 The ballot problem.

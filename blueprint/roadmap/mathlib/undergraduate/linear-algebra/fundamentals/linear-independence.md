@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearIndependent
-mathlib_file: Mathlib/LinearAlgebra/LinearIndependent/Defs.lean
----
-
 # Linear independence
 
 `LinearIndependent R v` states the family of vectors `v` is linearly independent over `R`.

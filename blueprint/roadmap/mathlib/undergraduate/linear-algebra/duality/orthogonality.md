@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.dualAnnihilator
-mathlib_file: Mathlib/LinearAlgebra/Dual/Defs.lean
----
-
 # Orthogonality
 
 The `dualAnnihilator` of a submodule `W` is the set of linear maps `φ` such

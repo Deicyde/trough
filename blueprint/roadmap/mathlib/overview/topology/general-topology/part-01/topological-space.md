@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: TopologicalSpace
-mathlib_file: Mathlib/Topology/Defs/Basic.lean
----
-
 # Topological space
 
 A topology on `X`.

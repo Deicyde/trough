@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: intervalIntegral.integral_deriv_smul_comp
-mathlib_file: Mathlib/MeasureTheory/Integral/IntervalIntegral/IntegrationByParts.lean
----
-
 # Change of variable
 
 Change of variables, most common version. If `f` has continuous derivative `f'` on `[a, b]`,

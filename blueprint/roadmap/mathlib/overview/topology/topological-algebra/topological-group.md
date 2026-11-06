@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsTopologicalGroup
-mathlib_file: Mathlib/Topology/Algebra/Group/Defs.lean
----
-
 # Topological group
 
 A topological group is a group in which the multiplication and inversion operations are

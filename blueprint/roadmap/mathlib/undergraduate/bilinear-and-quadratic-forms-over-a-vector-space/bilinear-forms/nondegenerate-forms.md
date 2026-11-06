@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm.Nondegenerate
-mathlib_file: Mathlib/LinearAlgebra/BilinearForm/Properties.lean
----
-
 # Nondegenerate forms
 
 A nondegenerate bilinear form is a bilinear form that is both left-separating and

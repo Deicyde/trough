@@ -1,12 +1,3 @@
----
-article_id: af_605818d7f2d83f6fbf04c2d4
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Prod.instGroup
-mathlib_file: Mathlib/Algebra/Group/Prod.lean
----
-
 # Direct product of groups
 
 The **direct product** of two [groups](../../../overview/general-algebra/group-theory/part-01/group.md) $G$ and $H$ is the group

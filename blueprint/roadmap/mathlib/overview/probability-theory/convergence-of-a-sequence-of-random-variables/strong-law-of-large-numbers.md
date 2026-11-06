@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.strong_law_ae
-mathlib_file: Mathlib/Probability/StrongLaw.lean
----
-
 # Strong law of large numbers
 
 **Strong law of large numbers**, almost sure version: if `X n` is a sequence of independent

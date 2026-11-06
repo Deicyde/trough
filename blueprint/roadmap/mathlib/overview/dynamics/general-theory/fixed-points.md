@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Function.fixedPoints
-mathlib_file: Mathlib/Dynamics/FixedPoints/Defs.lean
----
-
 # Fixed points
 
 The set of fixed points of a map `f : α → α`.

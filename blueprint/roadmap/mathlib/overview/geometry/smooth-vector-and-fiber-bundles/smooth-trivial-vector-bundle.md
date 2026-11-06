@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Bundle.Trivial.contMDiffVectorBundle
-mathlib_file: Mathlib/Geometry/Manifold/VectorBundle/Basic.lean
----
-
 # (smooth) trivial vector bundle
 
 A trivial vector bundle over a manifold is a `C^n` vector bundle.

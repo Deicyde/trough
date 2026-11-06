@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AhlswedeZhang.infSum_eq_one
-mathlib_file: Mathlib/Combinatorics/SetFamily/AhlswedeZhang.lean
----
-
 # Ahlswede-Zhang identity
 
 The **Ahlswede-Zhang Identity**.

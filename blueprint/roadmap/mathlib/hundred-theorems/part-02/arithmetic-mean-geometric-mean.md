@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Real.geom_mean_le_arith_mean_weighted
-mathlib_file: Mathlib/Analysis/MeanInequalities.lean
----
-
 # Arithmetic Mean/Geometric Mean
 
 **AM-GM inequality**: The geometric mean is less than or equal to the arithmetic mean, weighted

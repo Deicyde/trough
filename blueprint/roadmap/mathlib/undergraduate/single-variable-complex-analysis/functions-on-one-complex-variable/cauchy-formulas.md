@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.two_pi_I_inv_smul_circleIntegral_sub_inv_smul_of_differentiable_on_off_countable
-mathlib_file: Mathlib/Analysis/Complex/CauchyIntegral.lean
----
-
 # Cauchy formulas
 
 **Cauchy integral formula**: if `f : ℂ → E` is continuous on a closed disc of radius `R` and is

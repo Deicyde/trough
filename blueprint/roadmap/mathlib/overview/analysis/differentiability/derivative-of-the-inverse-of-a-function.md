@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasFDerivAt.of_local_left_inverse
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/OfCompLeft.lean
----
-
 # Derivative of the inverse of a function (Analysis)
 
 If `f (g x) = x` for `x` in some neighborhood of `a`, `g` is continuous at `a`,

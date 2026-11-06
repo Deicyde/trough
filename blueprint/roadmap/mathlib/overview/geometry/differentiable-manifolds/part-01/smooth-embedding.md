@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Manifold.IsSmoothEmbedding
-mathlib_file: Mathlib/Geometry/Manifold/SmoothEmbedding.lean
----
-
 # Smooth embedding
 
 A `C^n` map `f : M → M'` is a smooth `C^n` embedding if it is a topological embedding

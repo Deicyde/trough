@@ -1,12 +1,3 @@
----
-article_id: af_354d02f4121d440086f0aef7
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.SmallCategory
-mathlib_file: Mathlib/CategoryTheory/Category/Basic.lean
----
-
 # Small category
 
 A **small category** is a [category](category.md) whose objects form a set and whose

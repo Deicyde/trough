@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ConvexCone.Salient
-mathlib_file: Mathlib/Geometry/Convex/Cone/Basic.lean
----
-
 # Salient cone
 
 A convex cone is salient if it doesn't include `x` and `-x` for any nonzero `x`.

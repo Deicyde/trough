@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.IsGaussian.exists_integrable_exp_sq
-mathlib_file: Mathlib/Probability/Distributions/Gaussian/Fernique.lean
----
-
 # Fernique's theorem
 
 **Fernique's theorem**: for a Gaussian measure, there exists `C > 0` such that the function

@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Structomorph
-mathlib_file: Mathlib/Geometry/Manifold/HasGroupoid.lean
----
-
 # Diffeomorphisms
 
 A `G`-diffeomorphism between two charted spaces is a homeomorphism which, when read in the

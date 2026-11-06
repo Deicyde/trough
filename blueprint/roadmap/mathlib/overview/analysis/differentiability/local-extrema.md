@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsLocalMin.fderiv_eq_zero
-mathlib_file: Mathlib/Analysis/Calculus/LocalExtr/Basic.lean
----
-
 # Local extrema
 
 **Fermat's Theorem**: the derivative of a function at a local minimum equals zero.

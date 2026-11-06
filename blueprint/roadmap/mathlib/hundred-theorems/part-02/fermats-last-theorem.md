@@ -1,9 +1,3 @@
----
-declaration: theorem
-origin: cited
-not_ready: true
----
-
 # Fermat’s Last Theorem
 
 Mathlib states this as `FermatLastTheorem` but does not prove it.

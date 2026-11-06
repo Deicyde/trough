@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Fintype.exists_ne_map_eq_of_card_lt
-mathlib_file: Mathlib/Data/Fintype/Pigeonhole.lean
----
-
 # Finite
 
 The pigeonhole principle for finitely many pigeons and pigeonholes.

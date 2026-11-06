@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.evalEquiv
-mathlib_file: Mathlib/LinearAlgebra/Dual/Defs.lean
----
-
 # Isomorphism with bidual
 
 The bijection between a reflexive module and its double dual, bundled as a `LinearEquiv`.

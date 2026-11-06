@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ChartedSpace.discreteTopology
-mathlib_file: Mathlib/Geometry/Manifold/ChartedSpace.lean
----
-
 # 0-manifolds are discrete spaces
 
 A charted space over a discrete space is discrete.

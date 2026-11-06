@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: polynomialFunctions_closure_eq_top
-mathlib_file: Mathlib/Topology/ContinuousMap/Weierstrass.lean
----
-
 # Weierstrass polynomial approximation theorem
 
 The **Weierstrass Approximation Theorem**:

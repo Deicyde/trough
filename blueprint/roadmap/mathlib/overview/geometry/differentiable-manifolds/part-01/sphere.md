@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanSpace.instIsManifoldSphere
-mathlib_file: Mathlib/Geometry/Manifold/Instances/Sphere.lean
----
-
 # Sphere
 
 The unit sphere in an `n + 1`-dimensional inner product space `E` is an analytic manifold,

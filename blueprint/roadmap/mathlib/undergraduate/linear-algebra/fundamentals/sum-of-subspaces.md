@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.completeLattice
-mathlib_file: Mathlib/Algebra/Module/Submodule/Lattice.lean
----
-
 # Sum of subspaces
 
 Mathlib states this as `Submodule.completeLattice`.

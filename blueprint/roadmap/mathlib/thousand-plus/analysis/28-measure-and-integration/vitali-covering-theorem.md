@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Vitali.exists_disjoint_covering_ae
-mathlib_file: Mathlib/MeasureTheory/Covering/Vitali.lean
----
-
 # Vitali covering theorem
 
 The measurable **Vitali covering theorem**.

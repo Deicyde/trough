@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Theorems 1 to 27
 
 - [1. The Irrationality of the Square Root of 2](the-irrationality-of-the-square-root-of-2.md)

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Module.End.exists_eigenvalue
-mathlib_file: Mathlib/LinearAlgebra/Eigenspace/Triangularizable.lean
----
-
 # Existence of an eigenvalue
 
 In finite dimensions, over an algebraically closed field, every linear endomorphism has an

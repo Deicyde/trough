@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: CircleDeg1Lift.semiconj_of_group_action_of_forall_translationNumber_eq
-mathlib_file: Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean
----
-
 # Translation numbers define a group action up to semiconjugacy
 
 Consider two actions `f₁ f₂ : G →* CircleDeg1Lift` of a group on the real line by lifts of

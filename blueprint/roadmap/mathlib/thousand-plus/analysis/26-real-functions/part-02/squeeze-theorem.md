@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: tendsto_of_tendsto_of_tendsto_of_le_of_le'
-mathlib_file: Mathlib/Topology/Order/Basic.lean
----
-
 # Squeeze theorem
 
 **Squeeze theorem** (also known as **sandwich theorem**). This version assumes that inequalities

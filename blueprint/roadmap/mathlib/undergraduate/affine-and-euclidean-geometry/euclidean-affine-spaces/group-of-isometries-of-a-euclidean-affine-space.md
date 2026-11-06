@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: AffineIsometryEquiv.instGroup
-mathlib_file: Mathlib/Analysis/Normed/Affine/Isometry.lean
----
-
 # Group of isometries of a Euclidean affine space
 
 The group of affine isometries of a `NormedAddTorsor`, `P`.

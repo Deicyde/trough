@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ax_grothendieck_zeroLocus
-mathlib_file: Mathlib/FieldTheory/AxGrothendieck.lean
----
-
 # Ax–Grothendieck theorem
 
 The **Ax-Grothendieck** theorem

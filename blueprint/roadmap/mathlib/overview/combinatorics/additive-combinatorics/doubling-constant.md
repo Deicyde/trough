@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.addConst
-mathlib_file: Mathlib/Combinatorics/Additive/DoublingConst.lean
----
-
 # Doubling constant
 
 The doubling constant `σ[A, B]` of two finsets `A` and `B` in a group is `|A + B| / |A|`.

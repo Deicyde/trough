@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure
-mathlib_file: Mathlib/MeasureTheory/Group/GeometryOfNumbers.lean
----
-
 # Minkowski’s Fundamental Theorem
 
 The **Minkowski Convex Body Theorem**. If `s` is a convex symmetric domain of `E` whose volume

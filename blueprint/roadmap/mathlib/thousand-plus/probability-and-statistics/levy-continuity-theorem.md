@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.ProbabilityMeasure.tendsto_iff_tendsto_charFun
-mathlib_file: Mathlib/MeasureTheory/Measure/LevyConvergence.lean
----
-
 # Lévy continuity theorem
 
 The **Lévy convergence theorem**: the weak convergence of probability measures is equivalent

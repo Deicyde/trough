@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.toMatrix
-mathlib_file: Mathlib/LinearAlgebra/Matrix/ToLin.lean
----
-
 # Matrix representation of a linear map
 
 Given bases of two modules `M₁` and `M₂` over a commutative ring `R`, we get a linear

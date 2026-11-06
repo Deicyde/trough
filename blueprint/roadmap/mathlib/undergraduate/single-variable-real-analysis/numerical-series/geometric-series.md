@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: tsum_geometric_of_norm_lt_one
-mathlib_file: Mathlib/Analysis/SpecificLimits/Normed.lean
----
-
 # Geometric series
 
 Mathlib states this as `tsum_geometric_of_norm_lt_one`.

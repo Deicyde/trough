@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ContDiff
-mathlib_file: Mathlib/Analysis/Calculus/ContDiff/Defs.lean
----
-
 # $C^k$ function
 
 A function is continuously differentiable up to `n` if it admits derivatives up to

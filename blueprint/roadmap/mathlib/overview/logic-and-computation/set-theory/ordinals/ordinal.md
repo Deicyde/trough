@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Ordinal
-mathlib_file: Mathlib/SetTheory/Ordinal/Basic.lean
----
-
 # Ordinal
 
 `Ordinal.{u}` is the type of well orders in `Type u`, up to order isomorphism.

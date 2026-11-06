@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Metric.uniformContinuous_iff
-mathlib_file: Mathlib/Topology/MetricSpace/Pseudo/Defs.lean
----
-
 # Uniformly continuous function
 
 Mathlib states this as `Metric.uniformContinuous_iff`.

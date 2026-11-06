@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: PointedCone.maxTensorProduct
-mathlib_file: Mathlib/Geometry/Convex/Cone/TensorProduct.lean
----
-
 # Maximal tensor product
 
 The maximal tensor product of two cones is the dual (pointed cone) of the minimal tensor product

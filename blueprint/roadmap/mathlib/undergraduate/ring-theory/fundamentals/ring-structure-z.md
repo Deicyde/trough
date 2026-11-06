@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Int.instCommRing
-mathlib_file: Mathlib/Algebra/Ring/Int/Defs.lean
----
-
 # Ring structure $\Z$
 
 Mathlib states this as `Int.instCommRing`.

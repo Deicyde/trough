@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Language.isRegular_iff_finite_range_leftQuotient
-mathlib_file: Mathlib/Computability/MyhillNerode.lean
----
-
 # Myhill–Nerode theorem
 
 **Myhill–Nerode theorem**. A language is regular if and only if the set of left quotients is finite.

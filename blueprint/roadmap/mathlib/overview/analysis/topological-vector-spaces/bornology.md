@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Bornology
-mathlib_file: Mathlib/Topology/Bornology/Basic.lean
----
-
 # Bornology
 
 A **bornology** on a type `α` is a filter of cobounded sets which contains the cofinite filter.

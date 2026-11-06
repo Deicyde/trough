@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt
-mathlib_file: Mathlib/Analysis/ODE/ExistUnique.lean
----
-
 # Cauchy-Lipschitz Theorem
 
 **Picard-Lindelöf (Cauchy-Lipschitz) theorem**, differential form. This version shows the

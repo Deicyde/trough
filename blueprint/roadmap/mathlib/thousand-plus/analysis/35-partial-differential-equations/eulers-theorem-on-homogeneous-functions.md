@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasFDerivAt.apply_self_eq_smul_of_eventuallyEq, HasFDerivAt.apply_self_eq_smul_of_homogeneous, HasFDerivAt.apply_self_eq_nsmul_of_homogeneous
-mathlib_file: Mathlib/Analysis/Calculus/LineDeriv/Basic.lean
----
-
 # Euler's theorem on homogeneous functions
 
 Mathlib records this with 3 declarations.

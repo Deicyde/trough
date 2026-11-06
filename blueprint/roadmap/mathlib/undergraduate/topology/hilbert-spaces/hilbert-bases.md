@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: HilbertBasis
-mathlib_file: Mathlib/Analysis/InnerProductSpace/l2Space.lean
----
-
 # Hilbert bases
 
 A Hilbert basis on `ι` for an inner product space `E` is an identification of `E` with the `lp`

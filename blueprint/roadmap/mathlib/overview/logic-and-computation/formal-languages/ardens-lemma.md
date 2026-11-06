@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Language.self_eq_mul_add_iff
-mathlib_file: Mathlib/Computability/Language.lean
----
-
 # Arden's lemma
 
 **Arden's lemma**

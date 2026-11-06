@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: UniformSpace.Completion.ring
-mathlib_file: Mathlib/Topology/Algebra/UniformRing.lean
----
-
 # Completion of a topological ring
 
 Mathlib states this as `UniformSpace.Completion.ring`.

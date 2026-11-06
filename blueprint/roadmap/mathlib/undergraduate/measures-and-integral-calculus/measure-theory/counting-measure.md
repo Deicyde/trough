@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.count
-mathlib_file: Mathlib/MeasureTheory/Measure/Count.lean
----
-
 # Counting measure
 
 Counting measure on any measurable space.

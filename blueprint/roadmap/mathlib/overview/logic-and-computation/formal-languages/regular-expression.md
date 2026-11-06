@@ -1,11 +1,3 @@
----
-declaration: inductive
-origin: cited
-mathlib: true
-mathlib_declaration: RegularExpression
-mathlib_file: Mathlib/Computability/RegularExpressions.lean
----
-
 # Regular expression
 
 This is the definition of regular expressions. The names used here are meant to mirror the

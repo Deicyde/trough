@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: QuadraticForm.sigPos_of_equiv_weightedSumSquares
-mathlib_file: Mathlib/LinearAlgebra/QuadraticForm/Signature.lean
----
-
 # Sylvester's law of inertia (uniqueness)
 
 Uniqueness part of **Sylvester's law of inertia** (positive part):

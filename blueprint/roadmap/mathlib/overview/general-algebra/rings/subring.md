@@ -1,12 +1,3 @@
----
-article_id: af_5b14784e765422bcc29ab348
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Subring
-mathlib_file: Mathlib/Algebra/Ring/Subring/Defs.lean
----
-
 # Subring
 
 A **subring** of a [ring](ring.md) $R$ is a subset of $R$ that contains the identity

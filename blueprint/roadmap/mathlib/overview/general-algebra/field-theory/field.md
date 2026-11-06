@@ -1,12 +1,3 @@
----
-article_id: af_640fc2315f148082203c1440
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Field
-mathlib_file: Mathlib/Algebra/Field/Defs.lean
----
-
 # Field
 
 A **field** is a set with an addition and a multiplication in which the usual

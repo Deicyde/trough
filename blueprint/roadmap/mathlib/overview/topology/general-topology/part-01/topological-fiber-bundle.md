@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: FiberBundle
-mathlib_file: Mathlib/Topology/FiberBundle/Basic.lean
----
-
 # Topological fiber bundle
 
 A (topological) fiber bundle with fiber `F` over a base `B` is a space projecting on `B`

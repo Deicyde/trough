@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: HasFDerivAt
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Defs.lean
----
-
 # Differentiable function between normed vector spaces
 
 A function `f` has the continuous linear map `f'` as derivative at `x` if

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.mul_dist_add_mul_dist_eq_mul_dist_of_cospherical
-mathlib_file: Mathlib/Geometry/Euclidean/Sphere/Ptolemy.lean
----
-
 # Ptolemy’s Theorem
 
 **Ptolemy’s Theorem**.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ClusterPt
-mathlib_file: Mathlib/Topology/Defs/Filter.lean
----
-
 # Cluster point
 
 A point `x` is a cluster point of a filter `F` if `𝓝 x ⊓ F ≠ ⊥`.

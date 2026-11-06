@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: CompleteSpace
-mathlib_file: Mathlib/Topology/UniformSpace/Cauchy.lean
----
-
 # Completeness
 
 A complete space is defined here using uniformities. A uniform space

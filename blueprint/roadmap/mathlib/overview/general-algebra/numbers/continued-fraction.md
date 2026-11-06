@@ -1,12 +1,3 @@
----
-article_id: af_16d5ca3b019cb4f3ee1c0553
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ContFract
-mathlib_file: Mathlib/Algebra/ContinuedFractions/Basic.lean
----
-
 # Continued fraction
 
 A **continued fraction** is an expression of the form

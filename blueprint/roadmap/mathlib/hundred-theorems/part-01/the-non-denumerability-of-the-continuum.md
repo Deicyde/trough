@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Cardinal.not_countable_real
-mathlib_file: Mathlib/Analysis/Real/Cardinality.lean
----
-
 # The Non-Denumerability of the Continuum
 
 Mathlib states this as `Cardinal.not_countable_real`.

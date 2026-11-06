@@ -1,12 +1,3 @@
----
-article_id: af_480c30ffdbb44ef7116b32ed
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.MonoidalClosed
-mathlib_file: Mathlib/CategoryTheory/Monoidal/Closed/Basic.lean
----
-
 # Cartesian closed
 
 A **cartesian closed category** is a [category](category.md) with finite products in which, for any two objects $A$ and $B$, there is an object $B^A$ of "morphisms from $A$ to $B$" that behaves like a function space: morphisms $A \times Y \to B$ correspond exactly to morphisms $Y \to B^A$. The category of sets is the basic example, with $B^A$ the set of all functions. Cartesian closed categories are a natural setting for currying functions of several variables, which is why they serve as models of the simply typed lambda calculus, and every topos is one.

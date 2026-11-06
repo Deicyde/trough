@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: HasSum
-mathlib_file: Mathlib/Topology/Algebra/InfiniteSum/Defs.lean
----
-
 # Infinite sum
 
 `HasSum f a L` means that the (potentially infinite) sum of the `f b` for `b : β`

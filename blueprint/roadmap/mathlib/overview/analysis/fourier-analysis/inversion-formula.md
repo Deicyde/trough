@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Continuous.fourierInv_fourier_eq
-mathlib_file: Mathlib/Analysis/Fourier/Inversion.lean
----
-
 # Inversion formula
 
 **Fourier inversion formula**: If a function `f` on a finite-dimensional real inner product

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ZFSet
-mathlib_file: Mathlib/SetTheory/ZFC/Basic.lean
----
-
 # Model of ZFC
 
 The ZFC universe of sets consists of the type of pre-sets,

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.lintegral_iInf_ae
-mathlib_file: Mathlib/MeasureTheory/Integral/Lebesgue/Sub.lean
----
-
 # Monotone convergence theorem (Measures and integral calculus)
 
 **Monotone convergence theorem** for nonincreasing sequences of functions.

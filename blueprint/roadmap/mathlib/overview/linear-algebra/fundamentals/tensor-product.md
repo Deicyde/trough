@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: TensorProduct
-mathlib_file: Mathlib/LinearAlgebra/TensorProduct/Defs.lean
----
-
 # Tensor product
 
 The tensor product of two modules `M` and `N` over the same commutative semiring `R`.

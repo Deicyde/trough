@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: PMF
-mathlib_file: Mathlib/Probability/ProbabilityMassFunction/Basic.lean
----
-
 # Discrete law
 
 A probability mass function, or discrete probability measures is a function `α → ℝ≥0∞` such

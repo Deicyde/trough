@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.Partition.card_restricted_eq_card_countRestricted
-mathlib_file: Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean
----
-
 # Glaisher's theorem
 
 Mathlib states this as `Nat.Partition.card_restricted_eq_card_countRestricted`.

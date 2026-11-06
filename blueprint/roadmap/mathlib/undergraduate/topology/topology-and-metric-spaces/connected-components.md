@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: connectedComponent
-mathlib_file: Mathlib/Topology/Connected/Basic.lean
----
-
 # Connected components
 
 The connected component of a point is the maximal connected set

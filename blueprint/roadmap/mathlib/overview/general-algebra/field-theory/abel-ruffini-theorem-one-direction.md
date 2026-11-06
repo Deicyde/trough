@@ -1,12 +1,3 @@
----
-article_id: af_53871c0c294a909286a7657b
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: isSolvable_gal_minpoly
-mathlib_file: Mathlib/FieldTheory/AbelRuffini.lean
----
-
 # Abel-Ruffini theorem (one direction)
 
 The **Abel–Ruffini theorem**, in the direction treated here, says that if an

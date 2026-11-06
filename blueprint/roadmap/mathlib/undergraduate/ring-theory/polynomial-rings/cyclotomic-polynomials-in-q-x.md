@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.cyclotomic
-mathlib_file: Mathlib/RingTheory/Polynomial/Cyclotomic/Basic.lean
----
-
 # Cyclotomic polynomials in $\Q[X]$
 
 The `n`-th cyclotomic polynomial with coefficients in `R`.

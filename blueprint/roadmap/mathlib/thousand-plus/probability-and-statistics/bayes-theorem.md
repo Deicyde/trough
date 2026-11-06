@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.cond_eq_inv_mul_cond_mul
-mathlib_file: Mathlib/Probability/ConditionalProbability.lean
----
-
 # Bayes' theorem
 
 **Bayes' Theorem**

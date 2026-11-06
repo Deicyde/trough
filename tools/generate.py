@@ -10,9 +10,10 @@
                                         the changes in wiki/pin-changes.json (the data
                                         workflow does this on main, before generating)
 
-Everything under blueprint/roadmap/ is generated, and so are
+Everything under blueprint/roadmap/ and blueprint/links/ is generated, and so are
 blueprint/coverage/README.md, blueprint/sources/README.md and
-hooks/lean-links.json; a stale page under blueprint/roadmap/ is deleted.
+hooks/lean-links.json; a stale file under blueprint/roadmap/ or blueprint/links/
+is deleted.
 """
 
 from __future__ import annotations
@@ -25,12 +26,13 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import blueprints, catalog, mathlib, wiki
+from trough import blueprints, catalog, links, mathlib, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
 VAULT = ROOT / "blueprint"
 ROADMAP = VAULT / "roadmap"
+LINKS = VAULT / "links"
 DATA = ROOT / "data"
 WIKI = ROOT / "wiki" / "mathlib"
 PARKING = ROOT / "wiki" / "unplaced"
@@ -43,7 +45,8 @@ def generate() -> dict[Path, str]:
     chapter, stats, targets = mathlib.chapter(sources, wiki.load(WIKI))
     assign_paths(chapter, ROADMAP / "mathlib")
     blueprints.resolve(blueprints.Built(chapter, targets, {}, {}, Counter()), VAULT)
-    files = render_tree(chapter, VAULT)
+    files = render_tree(chapter, VAULT, annotated=True)
+    files.update(links.files(chapter, LINKS / "mathlib", sources.rev))
     chapters = {"mathlib": "mathlib/README.md"}
     # A blueprint node in Mathlib is the Mathlib-chapter article its first declaration heads.
     heads = {}
@@ -107,7 +110,7 @@ def _list_of(slug: str) -> str:
 
 
 def owned() -> set[Path]:
-    return set(ROADMAP.rglob("*.md")) if ROADMAP.is_dir() else set()
+    return set(ROADMAP.rglob("*.md")) | {path for path in LINKS.rglob("*") if path.is_file()}
 
 
 def main() -> int:

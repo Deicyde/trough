@@ -1,12 +1,3 @@
----
-article_id: af_68c2aa70e2727097e1be889e
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Representation
-mathlib_file: Mathlib/RepresentationTheory/Basic.lean
----
-
 # Representation
 
 A **representation** of a [group](../group-theory/part-01/group.md) $G$ is a way of letting $G$ act on a

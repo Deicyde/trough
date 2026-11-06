@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: taylor_integral_remainder_of_absolutelyContinuous
-mathlib_file: Mathlib/Analysis/Calculus/Taylor.lean
----
-
 # Taylor's theorem with integral form for remainder (Taylor-like theorems)
 
 **Taylor's theorem** with the Integral form of the remainder.

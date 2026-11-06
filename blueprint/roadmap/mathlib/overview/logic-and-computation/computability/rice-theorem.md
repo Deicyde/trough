@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ComputablePred.rice
-mathlib_file: Mathlib/Computability/Halting.lean
----
-
 # Rice theorem
 
 **Rice's Theorem**

@@ -1,12 +1,3 @@
----
-article_id: af_4775e19724e957cc9b222c51
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Equiv.Perm.subgroupOfMulAction
-mathlib_file: Mathlib/GroupTheory/Perm/Subgroup.lean
----
-
 # Cayley's theorem
 
 **Cayley's theorem** says that every [group](../part-01/group.md) is isomorphic to a

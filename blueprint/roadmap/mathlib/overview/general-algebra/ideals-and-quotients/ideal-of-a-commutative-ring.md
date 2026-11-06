@@ -1,12 +1,3 @@
----
-article_id: af_97e4e487471dfe128dfa3742
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Ideal
-mathlib_file: Mathlib/RingTheory/Ideal/Defs.lean
----
-
 # Ideal of a commutative ring
 
 An **ideal** of a commutative [ring](../rings/ring.md) $R$ is a nonempty subset of $R$ that

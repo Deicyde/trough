@@ -1,12 +1,3 @@
----
-article_id: af_7f065cd384924b6ceb4e75d5
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: LieAlgebra
-mathlib_file: Mathlib/Algebra/Lie/Basic.lean
----
-
 # Lie algebra
 
 A **Lie algebra** is a [module](../../linear-algebra/fundamentals/module.md) over a commutative ring, typically a

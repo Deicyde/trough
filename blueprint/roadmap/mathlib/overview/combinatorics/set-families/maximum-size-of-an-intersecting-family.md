@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Set.Intersecting.is_max_iff_card_eq
-mathlib_file: Mathlib/Combinatorics/SetFamily/Intersecting.lean
----
-
 # Maximum size of an intersecting family
 
 Mathlib states this as `Set.Intersecting.is_max_iff_card_eq`.

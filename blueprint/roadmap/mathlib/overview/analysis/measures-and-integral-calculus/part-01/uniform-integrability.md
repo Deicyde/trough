@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.UniformIntegrable
-mathlib_file: Mathlib/MeasureTheory/Function/UniformIntegrable.lean
----
-
 # Uniform integrability
 
 In probability theory, a family of measurable functions is uniformly integrable if it is

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ModelWithCorners.boundary
-mathlib_file: Mathlib/Geometry/Manifold/IsManifold/InteriorBoundary.lean
----
-
 # Boundary of a manifold
 
 The **boundary** of a manifold `M` is the set of its boundary points.

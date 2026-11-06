@@ -1,12 +1,3 @@
----
-article_id: af_7585ca74e19183f1586b9c27
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MvPolynomial.uniqueFactorizationMonoid
-mathlib_file: Mathlib/RingTheory/Polynomial/UniqueFactorization.lean
----
-
 # $A[{X_i}]$ is a UFD when $A$ is a UFD
 
 **Polynomial rings over a unique factorisation domain are unique factorisation domains**: if $A$ is a

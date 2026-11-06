@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.roots_countP_pos_le_signVariations
-mathlib_file: Mathlib/Algebra/Polynomial/RuleOfSigns.lean
----
-
 # Descartes Rule of Signs
 
 **Descartes' Rule of Signs**: the number of positive roots is at most the number of sign

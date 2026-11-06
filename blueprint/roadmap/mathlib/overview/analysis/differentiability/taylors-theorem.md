@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: taylorCoeffWithin, taylorWithin, taylorWithinEval, taylor_within_zero_eval, taylorWithinEval_self, continuousOn_taylorWithinEval, monomial_has_deriv_aux, hasDerivWithinAt_taylorWithinEval, taylorWithinEval_hasDerivAt_Ioo, hasDerivWithinAt_taylorWithinEval_at_Icc, hasDerivAt_taylorWithinEval_succ, taylor_isLittleO
-mathlib_file: Mathlib/Analysis/Calculus/Taylor.lean
----
-
 # Taylor's theorem
 
 This file defines the Taylor polynomial of a real function `f : ℝ → E`,

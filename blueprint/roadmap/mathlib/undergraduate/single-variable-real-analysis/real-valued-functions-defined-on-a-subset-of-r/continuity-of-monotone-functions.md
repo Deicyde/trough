@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: OrderIso.continuous
-mathlib_file: Mathlib/Topology/Order/MonotoneContinuity.lean
----
-
 # Continuity of monotone functions
 
 Mathlib states this as `OrderIso.continuous`.

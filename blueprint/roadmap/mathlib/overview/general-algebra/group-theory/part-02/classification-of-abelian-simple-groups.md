@@ -1,12 +1,3 @@
----
-article_id: af_3d092e401f76df3264e4bbba
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: CommGroup.is_simple_iff_prime_card
-mathlib_file: Mathlib/GroupTheory/SpecificGroups/Cyclic.lean
----
-
 # Classification of abelian simple groups
 
 The **classification of abelian simple groups** says that an abelian

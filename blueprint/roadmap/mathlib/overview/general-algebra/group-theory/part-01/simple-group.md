@@ -1,12 +1,3 @@
----
-article_id: af_c4ba73c73fb294ea62b53b18
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsSimpleGroup
-mathlib_file: Mathlib/GroupTheory/Subgroup/Simple.lean
----
-
 # Simple group
 
 A **simple group** is a nontrivial [group](group.md) with no

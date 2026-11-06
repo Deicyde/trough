@@ -1,12 +1,3 @@
----
-article_id: af_6107975d7e43b72d778c3cc8
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Pell.matiyasevic
-mathlib_file: Mathlib/NumberTheory/PellMatiyasevic.lean
----
-
 # Matiyasevič's theorem
 
 **Matiyasevič's theorem**, also called the MRDP theorem (after Matiyasevič, Robinson, Davis and

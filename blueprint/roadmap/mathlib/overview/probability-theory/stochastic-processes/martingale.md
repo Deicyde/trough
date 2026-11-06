@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Martingale
-mathlib_file: Mathlib/Probability/Martingale/Basic.lean
----
-
 # Martingale
 
 A family of functions `f : ι → Ω → E` is a martingale with respect to a filtration `ℱ` if `f`

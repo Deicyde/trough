@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.eval
-mathlib_file: Mathlib/Algebra/Polynomial/Eval/Defs.lean
----
-
 # Polynomial functions
 
 `eval x p` is the evaluation of the polynomial `p` at `x`

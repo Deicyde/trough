@@ -43,7 +43,10 @@ may add.
    `data/thousand-plus.json` (subject classes and Wikipedia pages from the
    [1000+ theorems project](https://1000-plus.github.io/)) and the catalog.
    Edges that would close a cycle become "Informally uses", and a dependency
-   already reached through another is left out.
+   already reached through another is left out. Each article's facts (its
+   declarations, kind and identity) go in a
+   [literature-links](https://github.com/mathlib-initiative/literature-links)
+   annotation in `blueprint/links/mathlib/`, not in the page's front matter.
 4. The **Pages** workflow checks that the committed pages are what the
    generator writes, runs `autoform check` and `autoform audit`, renders the
    site with the Autoform commit in `.github/autoform-ref`, and deploys it. A
@@ -119,7 +122,7 @@ article whose concept has no page moves to `wiki/unplaced/`; and
 A name the run's data did not read, from an article merged meanwhile, is left
 for the next run.
 
-Everything under `blueprint/roadmap/` is generated; edit the generator, the
+Everything under `blueprint/roadmap/` and `blueprint/links/` is generated; edit the generator, the
 data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes the
 1000+ data from a checkout of `1000-plus/1000-plus.github.io`.
 

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Ordset
-mathlib_file: Mathlib/Data/Ordmap/Ordset.lean
----
-
 # Ordered set
 
 An `Ordset α` is a finite set of values, represented as a tree. The operations on this type

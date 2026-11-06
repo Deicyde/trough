@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_hilbertBasis
-mathlib_file: Mathlib/Analysis/InnerProductSpace/l2Space.lean
----
-
 # Existence of Hilbert basis
 
 A Hilbert space admits a Hilbert basis.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.norm_le_norm_of_mapsTo_ball
-mathlib_file: Mathlib/Analysis/Complex/Schwarz.lean
----
-
 # Schwarz lemma
 
 The **Schwarz Lemma**.

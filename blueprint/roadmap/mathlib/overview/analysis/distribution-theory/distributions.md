@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Distribution
-mathlib_file: Mathlib/Analysis/Distribution/Distribution.lean
----
-
 # Distributions
 
 `𝓓'^{n}(Ω, F) = Distribution Ω F n` is the space of `F`-valued distributions on `Ω` with

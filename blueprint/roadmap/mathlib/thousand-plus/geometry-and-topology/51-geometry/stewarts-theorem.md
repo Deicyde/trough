@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.dist_sq_mul_dist_add_dist_sq_mul_dist
-mathlib_file: Mathlib/Geometry/Euclidean/Triangle.lean
----
-
 # Stewart's theorem
 
 **Stewart's Theorem**.

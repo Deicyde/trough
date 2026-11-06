@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsDenseInducing.extend
-mathlib_file: Mathlib/Topology/DenseEmbedding.lean
----
-
 # Extension by continuity
 
 If `i : α → β` is a dense inducing, then any function `f : α → γ` "extends" to a function `g =

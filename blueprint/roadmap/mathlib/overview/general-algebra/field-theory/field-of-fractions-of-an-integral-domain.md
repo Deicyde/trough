@@ -1,12 +1,3 @@
----
-article_id: af_b29f5e299e9da2b40ea78a7c
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: IsFractionRing
-mathlib_file: Mathlib/RingTheory/Localization/FractionRing.lean
----
-
 # Field of fractions of an integral domain
 
 The **field of fractions** of an integral domain $A$ is the smallest

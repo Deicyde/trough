@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: NormedSpace.exp
-mathlib_file: Mathlib/Analysis/Normed/Algebra/Exponential.lean
----
-
 # Matrix exponential
 
 `NormedSpace.exp : 𝔸 → 𝔸` is the exponential map. It is defined as the sum of the

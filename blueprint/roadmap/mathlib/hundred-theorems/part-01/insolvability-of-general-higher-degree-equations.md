@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AbelRuffini.exists_not_solvable_by_rad
-mathlib_file: Archive/Wiedijk100Theorems/AbelRuffini.lean
----
-
 # Insolvability of General Higher Degree Equations (Abel-Ruffini Theorem)
 
 **Abel-Ruffini Theorem**

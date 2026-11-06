@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.dist_sq_eq_dist_sq_add_dist_sq_sub_two_mul_dist_mul_dist_mul_cos_angle
-mathlib_file: Mathlib/Geometry/Euclidean/Triangle.lean
----
-
 # The Law of Cosines
 
 **Law of cosines** (cosine rule), angle-at-point form.

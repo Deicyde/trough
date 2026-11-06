@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Real.sin
-mathlib_file: Mathlib/Analysis/Complex/Trigonometric.lean
----
-
 # Trigonometric functions
 
 The real sine function, defined as the real part of the complex sine

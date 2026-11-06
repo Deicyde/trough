@@ -1,12 +1,3 @@
----
-article_id: af_cb63d88b6bd739be9381737f
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup
-mathlib_file: Mathlib/Algebra/Group/Subgroup/Defs.lean
----
-
 # Subgroup
 
 A **subgroup** of a [group](group.md) $G$ is a subset of $G$ that is itself a group under

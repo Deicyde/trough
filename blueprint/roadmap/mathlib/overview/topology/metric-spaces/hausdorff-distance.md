@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Metric.hausdorffEDist
-mathlib_file: Mathlib/Topology/MetricSpace/HausdorffDistance.lean
----
-
 # Hausdorff distance
 
 The Hausdorff edistance between two sets is the smallest `r` such that each set

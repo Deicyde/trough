@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ZMod.pow_card_sub_one_eq_one
-mathlib_file: Mathlib/FieldTheory/Finite/Basic.lean
----
-
 # Fermat's little theorem
 
 **Fermat's Little Theorem**: for all nonzero `a : ZMod p`, we have `a ^ (p - 1) = 1`.

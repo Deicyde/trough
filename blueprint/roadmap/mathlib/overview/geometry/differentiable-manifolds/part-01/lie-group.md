@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: LieGroup
-mathlib_file: Mathlib/Geometry/Manifold/Algebra/LieGroup.lean
----
-
 # Lie group
 
 A (multiplicative) Lie group is a group and a `C^n` manifold at the same time in which

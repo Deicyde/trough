@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.poissonMeasure
-mathlib_file: Mathlib/Probability/Distributions/Poisson/Basic.lean
----
-
 # Poisson law
 
 The poisson measure with rate `r : ℝ≥0` as a measure over `ℕ`.

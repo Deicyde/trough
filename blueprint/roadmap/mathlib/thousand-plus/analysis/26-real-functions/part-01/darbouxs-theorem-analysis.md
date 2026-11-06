@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_hasDerivWithinAt_eq_of_gt_of_lt, exists_hasDerivWithinAt_eq_of_lt_of_gt, Set.OrdConnected.image_hasDerivWithinAt, Set.OrdConnected.image_derivWithin, Set.OrdConnected.image_deriv, Convex.image_hasDerivWithinAt, Convex.image_derivWithin, Convex.image_deriv, exists_hasDerivWithinAt_eq_of_ge_of_le, exists_hasDerivWithinAt_eq_of_le_of_ge
-mathlib_file: Mathlib/Analysis/Calculus/Darboux.lean
----
-
 # Darboux's theorem (analysis)
 
 Mathlib records this with 10 declarations.

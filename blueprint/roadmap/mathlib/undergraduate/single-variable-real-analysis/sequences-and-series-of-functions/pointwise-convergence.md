@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: tendsto_pi_nhds
-mathlib_file: Mathlib/Topology/Constructions.lean
----
-
 # Pointwise convergence
 
 Mathlib states this as `tendsto_pi_nhds`.

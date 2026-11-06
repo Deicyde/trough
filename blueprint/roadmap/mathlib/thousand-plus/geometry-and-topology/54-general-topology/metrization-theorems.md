@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: TopologicalSpace.metrizableSpace_of_t3_secondCountable
-mathlib_file: Mathlib/Topology/Metrizable/Urysohn.lean
----
-
 # Metrization theorems
 
 *Urysohn's metrization theorem* (Tychonoff's version): a T₃ topological space with second

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.triangle_counting
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/Triangle/Counting.lean
----
-
 # Triangle counting lemma
 
 The **Triangle Counting Lemma**. If `G` is a graph and `s`, `t`, `u` are disjoint sets of

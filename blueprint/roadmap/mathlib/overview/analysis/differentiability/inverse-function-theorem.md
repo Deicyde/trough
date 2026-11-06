@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasStrictFDerivAt.to_localInverse
-mathlib_file: Mathlib/Analysis/Calculus/InverseFunctionTheorem/FDeriv.lean
----
-
 # Inverse function theorem (Differentiability)
 
 If `f` has an invertible derivative `f'` at `a` in the sense of strict differentiability `(hf)`,

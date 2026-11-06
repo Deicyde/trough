@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: TuringDegree
-mathlib_file: Mathlib/Computability/TuringDegree.lean
----
-
 # Turing degrees
 
 Turing degrees are the equivalence classes of partial functions under Turing equivalence.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: QuadraticForm.equivalent_one_zero_neg_one_weighted_sum_squared
-mathlib_file: Mathlib/LinearAlgebra/QuadraticForm/Real.lean
----
-
 # Sylvester's law of inertia (existence)
 
 **Sylvester's law of inertia**: A real quadratic form is equivalent to a weighted

@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.Formula
-mathlib_file: Mathlib/ModelTheory/Syntax.lean
----
-
 # First-order formula
 
 `Formula α` is the type of formulas with free variables indexed by `α` and no bound variables in

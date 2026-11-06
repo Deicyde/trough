@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.det_one_add_mul_comm
-mathlib_file: Mathlib/LinearAlgebra/Matrix/SchurComplement.lean
----
-
 # Sylvester's determinant theorem
 
 The **Weinstein–Aronszajn identity**. Note the `1` on the LHS is of shape m×m, while the `1` on

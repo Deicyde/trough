@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Rat.instField
-mathlib_file: Mathlib/Algebra/Field/Rat.lean
----
-
 # Field $\Q$ of rational numbers
 
 Mathlib states this as `Rat.instField`.

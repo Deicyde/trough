@@ -1,12 +1,3 @@
----
-article_id: af_b3d492ecae122dca76c7baa7
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: AlgebraicClosure
-mathlib_file: Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean
----
-
 # Existence of algebraic closure of a field
 
 The **existence of an algebraic closure** is the theorem that every [field](field.md) $k$ has an [algebraic extension](algebraic-extension.md)

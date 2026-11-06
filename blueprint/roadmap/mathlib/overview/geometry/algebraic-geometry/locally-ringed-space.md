@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AlgebraicGeometry.LocallyRingedSpace
-mathlib_file: Mathlib/Geometry/RingedSpace/LocallyRingedSpace.lean
----
-
 # Locally ringed space
 
 A `LocallyRingedSpace` is a topological space equipped with a sheaf of commutative rings

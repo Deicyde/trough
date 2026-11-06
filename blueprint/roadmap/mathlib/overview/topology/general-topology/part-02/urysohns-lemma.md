@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_continuous_zero_one_of_isClosed
-mathlib_file: Mathlib/Topology/UrysohnsLemma.lean
----
-
 # Urysohn's lemma
 
 Urysohn's lemma: if `s` and `t` are two disjoint closed sets in a normal topological space `X`,

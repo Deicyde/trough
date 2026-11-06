@@ -1,12 +1,3 @@
----
-article_id: af_d4e6d698b50a28f3d811370f
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AddCommGroup.equiv_free_prod_directSum_zmod
-mathlib_file: Mathlib/GroupTheory/FiniteAbelian/Basic.lean
----
-
 # Structure of finitely generated abelian groups
 
 The **structure theorem for finitely generated abelian groups** says that every

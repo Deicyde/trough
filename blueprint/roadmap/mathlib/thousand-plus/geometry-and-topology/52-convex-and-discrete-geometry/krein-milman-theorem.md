@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: closure_convexHull_extremePoints
-mathlib_file: Mathlib/Analysis/Convex/KreinMilman.lean
----
-
 # Krein–Milman theorem
 
 **Krein-Milman theorem**: In an LCTVS, any compact convex set is the closure of the convex hull

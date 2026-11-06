@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/Basic.lean
----
-
 # Simple graph
 
 A simple graph is an irreflexive symmetric relation `Adj` on a vertex type `V`.

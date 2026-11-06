@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: TopCat
-mathlib_file: Mathlib/Topology/Category/TopCat/Basic.lean
----
-
 # The category of topological spaces
 
 The category of topological spaces.

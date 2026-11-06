@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.small_pow_of_small_tripling
-mathlib_file: Mathlib/Combinatorics/Additive/SmallTripling.lean
----
-
 # Small tripling implies small powers
 
 If `A` is symmetric \(`A⁻¹ = A`\) and has small tripling, then `A` has small powers,

@@ -1,12 +1,3 @@
----
-article_id: af_3cee2a7176fb61b34adb90e3
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup.Normal
-mathlib_file: Mathlib/Algebra/Group/Subgroup/Defs.lean
----
-
 # Normal subgroup
 
 A **normal subgroup** of a [group](group.md) is a [subgroup](subgroup.md) that is carried

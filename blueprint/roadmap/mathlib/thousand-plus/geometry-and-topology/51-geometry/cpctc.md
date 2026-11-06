@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.triangle_congruent_iff_dist_eq, EuclideanGeometry.angle_eq_of_congruent
-mathlib_file: Mathlib/Geometry/Euclidean/Congruence.lean
----
-
 # CPCTC
 
 Mathlib records this with 2 declarations.

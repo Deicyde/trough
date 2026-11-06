@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.MeasureSpace
-mathlib_file: Mathlib/MeasureTheory/Measure/MeasureSpaceDef.lean
----
-
 # Lebesgue measure (Measure theory)
 
 A measure space is a measurable space equipped with a

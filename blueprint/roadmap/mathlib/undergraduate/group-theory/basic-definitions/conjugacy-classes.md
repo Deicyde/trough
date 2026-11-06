@@ -1,12 +1,3 @@
----
-article_id: af_275f8bb2e365635ee25e5b8c
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ConjClasses
-mathlib_file: Mathlib/Algebra/Group/Conj.lean
----
-
 # Conjugacy classes
 
 The **conjugacy classes** of a [group](../../../overview/general-algebra/group-theory/part-01/group.md) are the pieces into which the

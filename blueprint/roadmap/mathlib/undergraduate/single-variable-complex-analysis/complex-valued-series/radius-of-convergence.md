@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FormalMultilinearSeries.radius
-mathlib_file: Mathlib/Analysis/Analytic/ConvergenceRadius.lean
----
-
 # Radius of convergence
 
 The radius of a formal multilinear series is the largest `r` such that the sum `Σ ‖pₙ‖ ‖y‖ⁿ`

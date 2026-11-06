@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ConvexOn
-mathlib_file: Mathlib/Analysis/Convex/Function.lean
----
-
 # Convex function
 
 Convexity of functions

@@ -1,10 +1,3 @@
----
-declaration: inductive
-origin: cited
-mathlib: true
-mathlib_declaration: List
----
-
 # List
 
 Linked lists: ordered lists, in which each element has a reference to the next element.

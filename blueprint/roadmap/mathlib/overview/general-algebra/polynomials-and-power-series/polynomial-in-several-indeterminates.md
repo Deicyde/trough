@@ -1,12 +1,3 @@
----
-article_id: af_8e6c83f35d6727013a83d4f8
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: MvPolynomial
-mathlib_file: Mathlib/Algebra/MvPolynomial/Basic.lean
----
-
 # Polynomial in several indeterminates
 
 A **polynomial in several indeterminates** over a commutative [ring](../rings/ring.md) $R$ is a

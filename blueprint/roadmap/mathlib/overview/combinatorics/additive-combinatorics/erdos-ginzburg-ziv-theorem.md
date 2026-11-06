@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ZMod.erdos_ginzburg_ziv
-mathlib_file: Mathlib/Combinatorics/Additive/ErdosGinzburgZiv.lean
----
-
 # Erdős–Ginzburg–Ziv theorem
 
 The **Erdős–Ginzburg–Ziv theorem** for `ℤ/nℤ`.

@@ -1,12 +1,3 @@
----
-article_id: af_0ef0fe0ceff1f71e74bc198a
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: orderOf
-mathlib_file: Mathlib/GroupTheory/OrderOfElement.lean
----
-
 # Order of an element
 
 The **order of an element** $g$ of a [group](../../../overview/general-algebra/group-theory/part-01/group.md) is the smallest positive

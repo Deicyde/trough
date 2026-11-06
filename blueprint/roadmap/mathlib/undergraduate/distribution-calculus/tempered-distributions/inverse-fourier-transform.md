@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FourierTransform.fourierInvCLM
-mathlib_file: Mathlib/Analysis/Fourier/Notation.lean
----
-
 # Inverse Fourier transform
 
 The inverse Fourier transform as a continuous linear map.

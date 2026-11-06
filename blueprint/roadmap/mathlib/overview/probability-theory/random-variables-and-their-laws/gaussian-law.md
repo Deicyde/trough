@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.gaussianReal
-mathlib_file: Mathlib/Probability/Distributions/Gaussian/Real.lean
----
-
 # Gaussian law
 
 A Gaussian distribution on `ℝ` with mean `μ` and variance `v`.

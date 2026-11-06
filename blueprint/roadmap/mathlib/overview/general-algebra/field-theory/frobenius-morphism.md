@@ -1,12 +1,3 @@
----
-article_id: af_bd72f317431e43d7be44183f
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: frobenius
-mathlib_file: Mathlib/Algebra/CharP/Lemmas.lean
----
-
 # Frobenius morphism
 
 The **Frobenius morphism** (or Frobenius endomorphism) of a commutative ring of

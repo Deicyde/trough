@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Language
-mathlib_file: Mathlib/Computability/Language.lean
----
-
 # Language
 
 A language is a set of strings over an alphabet.

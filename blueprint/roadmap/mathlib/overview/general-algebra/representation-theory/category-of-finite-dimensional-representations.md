@@ -1,12 +1,3 @@
----
-article_id: af_569296c9931c573d2508ce31
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: FDRep
-mathlib_file: Mathlib/RepresentationTheory/FDRep.lean
----
-
 # Category of finite-dimensional representations
 
 The **category of finite-dimensional representations** of a [group](../group-theory/part-01/group.md) $G$ over a

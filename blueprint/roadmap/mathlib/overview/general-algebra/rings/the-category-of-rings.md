@@ -1,12 +1,3 @@
----
-article_id: af_288a0cfb1ac4ffbf4e589673
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: RingCat
-mathlib_file: Mathlib/Algebra/Category/Ring/Basic.lean
----
-
 # The category of rings
 
 The **category of rings**, usually written $\mathbf{Ring}$, is the

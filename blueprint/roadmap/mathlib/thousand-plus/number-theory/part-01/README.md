@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Beatty's theorem to Mahler's theorem
 
 - [Beatty's theorem](beattys-theorem.md)

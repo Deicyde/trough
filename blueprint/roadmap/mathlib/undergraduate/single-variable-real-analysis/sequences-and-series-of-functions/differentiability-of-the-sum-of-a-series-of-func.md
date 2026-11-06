@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: differentiable_tsum
-mathlib_file: Mathlib/Analysis/Calculus/SmoothSeries.lean
----
-
 # Differentiability of the sum of a series of functions
 
 Consider a series of functions `∑' n, f n x`. If all functions in the series are differentiable

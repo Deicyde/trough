@@ -1,12 +1,3 @@
----
-article_id: af_187106b5b15350d2a064b0a5
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: QuotientGroup.quotientKerEquivRange
-mathlib_file: Mathlib/GroupTheory/QuotientGroup/Basic.lean
----
-
 # First isomorphism theorem
 
 The **first isomorphism theorem** says that a [group homomorphism](group-morphism.md)

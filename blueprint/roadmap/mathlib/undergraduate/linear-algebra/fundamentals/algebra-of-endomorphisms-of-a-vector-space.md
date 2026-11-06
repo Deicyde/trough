@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Module.End.instAlgebra
-mathlib_file: Mathlib/Algebra/Algebra/Basic.lean
----
-
 # Algebra of endomorphisms of a vector space
 
 Mathlib states this as `Module.End.instAlgebra`.

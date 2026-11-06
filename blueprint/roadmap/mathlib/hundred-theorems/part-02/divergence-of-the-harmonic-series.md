@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Real.tendsto_sum_range_one_div_nat_succ_atTop
-mathlib_file: Mathlib/Analysis/PSeries.lean
----
-
 # Divergence of the Harmonic Series
 
 **Divergence of the Harmonic Series**

@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: BoundedContinuousFunction.instNormedSpace
-mathlib_file: Mathlib/Topology/ContinuousMap/Bounded/Normed.lean
----
-
 # Normed space of bounded continuous functions
 
 Mathlib states this as `BoundedContinuousFunction.instNormedSpace`.

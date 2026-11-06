@@ -1,12 +1,3 @@
----
-article_id: af_c6d7a343db2cae2aab699c17
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FreeAlgebra
-mathlib_file: Mathlib/Algebra/FreeAlgebra.lean
----
-
 # Free algebra of a commutative ring
 
 The **free algebra** on a set $X$ over a commutative ring $R$, written $R\langle X\rangle$, is the

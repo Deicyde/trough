@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Order.cof
-mathlib_file: Mathlib/SetTheory/Cardinal/Cofinality/Basic.lean
----
-
 # Cofinality
 
 The cofinality of a preorder is the smallest cardinality of a cofinal subset.

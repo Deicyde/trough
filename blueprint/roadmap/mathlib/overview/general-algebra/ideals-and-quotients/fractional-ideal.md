@@ -1,12 +1,3 @@
----
-article_id: af_94bb4a7c4fee6279703f2510
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FractionalIdeal
-mathlib_file: Mathlib/RingTheory/FractionalIdeal/Basic.lean
----
-
 # Fractional ideal
 
 A **fractional ideal** of an integral domain $R$ is an $R$-submodule of the

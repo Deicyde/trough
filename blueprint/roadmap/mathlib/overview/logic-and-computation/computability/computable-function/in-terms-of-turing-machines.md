@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Turing.TM2Computable
-mathlib_file: Mathlib/Computability/TuringMachine/Computable.lean
----
-
 # In terms of Turing machines
 
 A Turing machine + a proof it outputs `f`.

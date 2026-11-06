@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Multiset
-mathlib_file: Mathlib/Data/Multiset/Defs.lean
----
-
 # Multiset
 
 `Multiset α` is the quotient of `List α` by list permutation. The result

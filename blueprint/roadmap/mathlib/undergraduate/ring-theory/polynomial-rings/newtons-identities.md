@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MvPolynomial.mul_esymm_eq_sum
-mathlib_file: Mathlib/RingTheory/MvPolynomial/Symmetric/NewtonIdentities.lean
----
-
 # Newton's identities
 
 **Newton's identities** give a recurrence relation for the kth elementary symmetric polynomial

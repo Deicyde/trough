@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.AddContent.measure, MeasureTheory.AddContent.measure_eq
-mathlib_file: Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean
----
-
 # Carathéodory's extension theorem
 
 Mathlib records this with 2 declarations.

@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: OrthonormalBasis
-mathlib_file: Mathlib/Analysis/InnerProductSpace/PiL2.lean
----
-
 # Existence of orthonormal basis
 
 An orthonormal basis on E is an identification of `E` with its dimensional-matching

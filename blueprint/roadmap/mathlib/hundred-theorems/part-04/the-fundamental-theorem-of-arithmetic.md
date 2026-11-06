@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.primeFactorsList_unique, Int.euclideanDomain, EuclideanDomain.instIsPrincipalIdealRing, UniqueFactorizationMonoid, UniqueFactorizationMonoid.factors_unique
-mathlib_file: Mathlib/Data/Nat/Factors.lean
----
-
 # The Fundamental Theorem of Arithmetic
 
 Mathlib records this with 5 declarations.

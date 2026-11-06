@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsNoetherian
-mathlib_file: Mathlib/RingTheory/Noetherian/Defs.lean
----
-
 # Noetherian module
 
 `IsNoetherian R M` is the proposition that `M` is a Noetherian `R`-module,

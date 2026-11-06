@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_wellFoundedLT
-mathlib_file: Mathlib/SetTheory/Cardinal/Order.lean
----
-
 # Well-ordering theorem
 
 The **well-ordering theorem** (or **Zermelo's theorem**): every type can be well-ordered.

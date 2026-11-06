@@ -1,12 +1,3 @@
----
-article_id: af_7103ec351338d590278cb5bc
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Ring
-mathlib_file: Mathlib/Algebra/Ring/Defs.lean
----
-
 # Ring
 
 A **ring** is a set with two binary operations, addition and multiplication,

@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: AddTorsor
-mathlib_file: Mathlib/Algebra/Torsor/Defs.lean
----
-
 # Affine space
 
 An `AddTorsor G P` gives a structure to the nonempty type `P`,

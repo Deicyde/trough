@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanDomain.gcd, EuclideanDomain.gcd_dvd, EuclideanDomain.dvd_gcd
-mathlib_file: Mathlib/Algebra/EuclideanDomain/Defs.lean
----
-
 # Greatest Common Divisor Algorithm
 
 Mathlib records this with 3 declarations.

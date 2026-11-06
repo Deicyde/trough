@@ -1,12 +1,3 @@
----
-article_id: af_1911102e03c53d3528cda58e
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Ideal.quotientInfRingEquivPiQuotient
-mathlib_file: Mathlib/RingTheory/Ideal/Quotient/Operations.lean
----
-
 # Chinese remainder theorem
 
 The **Chinese remainder theorem** says that a finite system of congruences

@@ -1,12 +1,3 @@
----
-article_id: af_faa8ecf56833d1577fef0763
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Limits.IsLimit
-mathlib_file: Mathlib/CategoryTheory/Limits/IsLimit.lean
----
-
 # Limits
 
 A **limit** of a diagram in a [category](category.md) is an object

@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: RatFunc
-mathlib_file: Mathlib/FieldTheory/RatFunc/Defs.lean
----
-
 # Rational fraction fields with one indeterminate over a field
 
 `RatFunc K` is `K(X)`, the field of rational functions over `K`.

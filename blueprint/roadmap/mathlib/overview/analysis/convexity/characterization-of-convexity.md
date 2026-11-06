@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: convexOn_of_deriv2_nonneg
-mathlib_file: Mathlib/Analysis/Convex/Deriv.lean
----
-
 # Characterization of convexity
 
 If a function `f` is continuous on a convex set `D ⊆ ℝ`, is twice differentiable on its

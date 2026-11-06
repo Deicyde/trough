@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.ae
-mathlib_file: Mathlib/MeasureTheory/OuterMeasure/AE.lean
----
-
 # Almost sure convergence
 
 The “almost everywhere” filter of co-null sets.

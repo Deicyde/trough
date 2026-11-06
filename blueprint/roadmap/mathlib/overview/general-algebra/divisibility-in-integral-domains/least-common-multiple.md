@@ -1,12 +1,3 @@
----
-article_id: af_51c0803a52c2315685918c31
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: GCDMonoid.lcm
-mathlib_file: Mathlib/Algebra/GCDMonoid/Basic.lean
----
-
 # Least common multiple
 
 The **least common multiple** of two elements $a$ and $b$ is a common multiple of both that divides every other common multiple. For nonzero [natural numbers](../numbers/natural-number.md) it is the smallest positive integer divisible by both, written $\operatorname{lcm}(a, b)$, while $\operatorname{lcm}(a, 0) = 0$; the same idea makes sense in any commutative ring, where it is defined purely in terms of divisibility. It is the counterpart of the [greatest common divisor](greatest-common-divisor.md), and for nonzero $a$ and $b$ their product is $ab$ up to a unit, so each determines the other. Least common multiples appear whenever periodic conditions are combined, as in adding fractions over a common denominator or solving simultaneous congruences.

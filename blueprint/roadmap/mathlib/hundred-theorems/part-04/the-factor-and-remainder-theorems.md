@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.dvd_iff_isRoot, Polynomial.mod_X_sub_C_eq_C_eval
-mathlib_file: Mathlib/Algebra/Polynomial/Div.lean
----
-
 # The Factor and Remainder Theorems
 
 Mathlib records this with 2 declarations.

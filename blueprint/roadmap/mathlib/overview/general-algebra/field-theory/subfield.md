@@ -1,12 +1,3 @@
----
-article_id: af_bacc5c4e79992bba7111de4a
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Subfield
-mathlib_file: Mathlib/Algebra/Field/Subfield/Defs.lean
----
-
 # Subfield
 
 A **subfield** of a [field](field.md) $K$ is a subset of $K$ that contains $0$ and $1$ and is closed under addition, negation, multiplication and taking inverses of nonzero elements, so that it is itself a field under the operations of $K$. Subfields are central to field theory: a field extension $L/K$ can be viewed as a field $L$ together with a subfield isomorphic to $K$, and for a finite Galois extension the [Galois correspondence](galois-correspondence.md) describes the fields lying in between by means of subgroups of the Galois group.

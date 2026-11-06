@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.exp
-mathlib_file: Mathlib/Analysis/Complex/Exponential.lean
----
-
 # Complex exponential
 
 The complex exponential function, defined via its Taylor series

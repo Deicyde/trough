@@ -1,12 +1,3 @@
----
-article_id: af_624714303dbab73d4633bb5c
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: MonoidHom
-mathlib_file: Mathlib/Algebra/Group/Hom/Defs.lean
----
-
 # Group morphism
 
 A **group morphism**, or group homomorphism, is a map between two [groups](group.md) that

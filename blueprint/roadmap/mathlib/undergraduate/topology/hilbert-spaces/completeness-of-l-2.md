@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: lp.completeSpace
-mathlib_file: Mathlib/Analysis/Normed/Lp/lpSpace.lean
----
-
 # Completeness of $l^2$
 
 Mathlib states this as `lp.completeSpace`.

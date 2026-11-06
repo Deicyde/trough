@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.gcd_eq_gcd_ab
-mathlib_file: Mathlib/Data/Int/GCD.lean
----
-
 # Bezout’s Theorem
 
 **Bézout's lemma**: given `x y : ℕ`, `gcd x y = x * a + y * b`, where `a = gcd_a x y` and

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearPMap.adjoint
-mathlib_file: Mathlib/Analysis/InnerProductSpace/LinearPMap.lean
----
-
 # Adjoint operator
 
 The adjoint operator as a partially defined linear operator, denoted as `T†`.

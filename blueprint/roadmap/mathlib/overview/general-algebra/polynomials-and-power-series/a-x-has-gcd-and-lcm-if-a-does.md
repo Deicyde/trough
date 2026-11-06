@@ -1,12 +1,3 @@
----
-article_id: af_10bab5b26b02ca304d99d4bf
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.normalizedGcdMonoid
-mathlib_file: Mathlib/RingTheory/Polynomial/Content.lean
----
-
 # $A[X]$ has gcd and lcm if $A$ does
 
 The statement that **$A[X]$ has gcd and lcm if $A$ does** says that if every two

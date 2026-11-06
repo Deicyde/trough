@@ -1,12 +1,3 @@
----
-article_id: af_1e3f73181b63e297db8b7276
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Ideal.IsMaximal
-mathlib_file: Mathlib/RingTheory/Ideal/Maximal.lean
----
-
 # Maximal ideal
 
 A **maximal ideal** of a commutative [ring](../rings/ring.md) is a proper [ideal](ideal-of-a-commutative-ring.md) that is not contained in any larger proper ideal. Maximal ideals are exactly the ideals whose [quotient ring](quotient-ring.md) is a [field](../field-theory/field.md), which makes them the standard way to produce fields from rings: the integers modulo a prime, finite fields, and fields obtained by adjoining a root of a polynomial all arise this way. They correspond to the closed points of the prime spectrum, which makes them central in commutative algebra and algebraic geometry, and every nonzero commutative ring has at least one.

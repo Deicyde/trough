@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap
-mathlib_file: Mathlib/Algebra/Module/LinearMap/Defs.lean
----
-
 # Linear map
 
 A map `f` between an `R`-module and an `S`-module over a ring homomorphism `σ : R →+* S`

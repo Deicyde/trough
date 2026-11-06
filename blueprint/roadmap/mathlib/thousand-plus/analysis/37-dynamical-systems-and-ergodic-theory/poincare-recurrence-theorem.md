@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem
-mathlib_file: Mathlib/Dynamics/Ergodic/Conservative.lean
----
-
 # Poincaré recurrence theorem
 
 Poincaré recurrence theorem: given a conservative map `f` and a measurable set `s`,

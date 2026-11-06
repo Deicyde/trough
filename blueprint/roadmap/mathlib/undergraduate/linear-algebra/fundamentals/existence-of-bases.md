@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.Basis.ofVectorSpace
-mathlib_file: Mathlib/LinearAlgebra/Basis/VectorSpace.lean
----
-
 # Existence of bases
 
 Each vector space has a basis.

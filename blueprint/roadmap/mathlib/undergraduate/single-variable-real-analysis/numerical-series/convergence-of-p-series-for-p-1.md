@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Real.summable_one_div_nat_rpow
-mathlib_file: Mathlib/Analysis/PSeries.lean
----
-
 # Convergence of $p$-series for $p>1$
 
 Test for convergence of the `p`-series: the real-valued series `∑' n : ℕ, 1 / n ^ p` converges

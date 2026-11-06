@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.«82».cannot_cube_a_cube
-mathlib_file: Archive/Wiedijk100Theorems/CubingACube.lean
----
-
 # Dissection of Cubes (J.E. Littlewood’s ‘elegant’ proof)
 
 **Dissection of Cubes**: A cube cannot be cubed.

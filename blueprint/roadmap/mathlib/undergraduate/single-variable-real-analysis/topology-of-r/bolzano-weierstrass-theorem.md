@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: tendsto_subseq_of_bounded
-mathlib_file: Mathlib/Topology/MetricSpace/Sequences.lean
----
-
 # Bolzano-Weierstrass theorem (Topology of R)
 
 A version of **Bolzano-Weierstrass**: in a proper metric space (e.g. $ℝ^n$),

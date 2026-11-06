@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.geometricMeasure
-mathlib_file: Mathlib/Probability/Distributions/Geometric.lean
----
-
 # Geometric law
 
 The geometric measure with success probability `p` as a measure over `ℕ`.

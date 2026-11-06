@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: minpoly
-mathlib_file: Mathlib/FieldTheory/Minpoly/Basic.lean
----
-
 # Minimal polynomial
 
 Suppose `x : B`, where `B` is an `A`-algebra.

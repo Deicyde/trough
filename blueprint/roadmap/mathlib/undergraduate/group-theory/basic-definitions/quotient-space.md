@@ -1,12 +1,3 @@
----
-article_id: af_e7b04b03907aaeea7998e11a
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MulAction.orbitEquivQuotientStabilizer
-mathlib_file: Mathlib/GroupTheory/GroupAction/Quotient.lean
----
-
 # Quotient space (Basic definitions)
 
 The **quotient space** $G/H$ of a [group](../../../overview/general-algebra/group-theory/part-01/group.md) $G$ by a

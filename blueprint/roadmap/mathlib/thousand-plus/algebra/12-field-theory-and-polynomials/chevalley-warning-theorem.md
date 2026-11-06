@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: char_dvd_card_solutions_of_sum_lt
-mathlib_file: Mathlib/FieldTheory/ChevalleyWarning.lean
----
-
 # Chevalley–Warning theorem (1000+ theorems)
 
 The **Chevalley–Warning theorem**, finitary version.

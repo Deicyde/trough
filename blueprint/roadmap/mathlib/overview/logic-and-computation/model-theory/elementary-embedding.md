@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.ElementaryEmbedding
-mathlib_file: Mathlib/ModelTheory/ElementaryMaps.lean
----
-
 # Elementary embedding
 
 An elementary embedding of first-order structures is an embedding that commutes with the

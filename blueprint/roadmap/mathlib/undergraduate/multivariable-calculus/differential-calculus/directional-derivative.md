@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: lineDeriv
-mathlib_file: Mathlib/Analysis/Calculus/LineDeriv/Basic.lean
----
-
 # Directional derivative
 
 Line derivative of `f` at the point `x` in the direction `v`, if it exists.  Zero otherwise.

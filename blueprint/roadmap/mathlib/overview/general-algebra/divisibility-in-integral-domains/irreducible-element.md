@@ -1,12 +1,3 @@
----
-article_id: af_cb60ae3629bbcc5e2ee06c20
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Irreducible
-mathlib_file: Mathlib/Algebra/Group/Irreducible/Defs.lean
----
-
 # Irreducible element
 
 An **irreducible element** of a commutative [ring](../rings/ring.md) or monoid is a

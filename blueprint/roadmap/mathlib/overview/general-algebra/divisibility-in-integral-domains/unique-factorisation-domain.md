@@ -1,12 +1,3 @@
----
-article_id: af_4b729714cc43a24e116b2d25
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: UniqueFactorizationMonoid
-mathlib_file: Mathlib/RingTheory/UniqueFactorizationDomain/Defs.lean
----
-
 # Unique factorisation domain
 
 A **unique factorisation domain** (UFD) is an integral domain in which every

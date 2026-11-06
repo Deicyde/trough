@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Invertible
-mathlib_file: Mathlib/Algebra/Group/Invertible/Defs.lean
----
-
 # Invertible elements
 
 `Invertible a` gives a two-sided multiplicative inverse of `a`.

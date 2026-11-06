@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.hittingBtwn
-mathlib_file: Mathlib/Probability/Process/HittingTime.lean
----
-
 # Hitting time
 
 Hitting time: given a stochastic process `u` and a set `s`, `hittingBtwn u s n m` is

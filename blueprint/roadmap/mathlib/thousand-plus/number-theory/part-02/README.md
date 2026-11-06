@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Minkowski's theorem to Zeckendorf's theorem
 
 - [Minkowski's theorem](../../../hundred-theorems/part-02/minkowskis-fundamental-theorem.md)

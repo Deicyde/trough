@@ -1,12 +1,3 @@
----
-article_id: af_ad0ab8b98adc751567e3dbc5
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: hensels_lemma
-mathlib_file: Mathlib/NumberTheory/Padics/Hensel.lean
----
-
 # Hensel's lemma (for $\mathbb{Z}_p$)
 
 **Hensel's lemma** for the [$p$-adic integers](../numbers/p-adic-integer.md) $\mathbb{Z}_p$ says that an

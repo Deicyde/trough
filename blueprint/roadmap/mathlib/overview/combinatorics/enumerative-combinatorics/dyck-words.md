@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: DyckWord
-mathlib_file: Mathlib/Combinatorics/Enumerative/DyckWord.lean
----
-
 # Dyck words
 
 A Dyck word is a list of `DyckStep`s with as many `U`s as `D`s and with every prefix having

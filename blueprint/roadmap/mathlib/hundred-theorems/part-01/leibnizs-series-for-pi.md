@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Real.tendsto_sum_pi_div_four
-mathlib_file: Mathlib/Analysis/Real/Pi/Leibniz.lean
----
-
 # Leibniz’s Series for Pi
 
 **Leibniz's series for `π`**. The alternating sum of odd number reciprocals is `π / 4`,

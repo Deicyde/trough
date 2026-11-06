@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: fixedPoints.completeLattice
-mathlib_file: Mathlib/Order/FixedPoints.lean
----
-
 # Knaster–Tarski theorem
 
 **Knaster-Tarski Theorem**: The fixed points of `f` form a complete lattice.

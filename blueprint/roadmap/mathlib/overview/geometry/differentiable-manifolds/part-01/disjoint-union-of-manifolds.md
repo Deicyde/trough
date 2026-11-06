@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsManifold.disjointUnion
-mathlib_file: Mathlib/Geometry/Manifold/IsManifold/Basic.lean
----
-
 # Disjoint union of manifolds
 
 The disjoint union of two `C^n` manifolds modelled on `(E, H)`

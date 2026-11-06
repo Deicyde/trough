@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.IsSymmetric.continuous
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Symmetric.lean
----
-
 # Hellinger–Toeplitz theorem
 
 The **Hellinger--Toeplitz theorem**: if a symmetric operator is defined on a complete space,

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Manifold.IsImmersion
-mathlib_file: Mathlib/Geometry/Manifold/Immersion.lean
----
-
 # Smooth immersion
 
 `f : M → N` is a `C^n` immersion if around each point `x ∈ M`,

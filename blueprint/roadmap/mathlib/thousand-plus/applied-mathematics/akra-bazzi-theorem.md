@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AkraBazziRecurrence.isBigO_asympBound
-mathlib_file: Mathlib/Computability/AkraBazzi/AkraBazzi.lean
----
-
 # Akra–Bazzi theorem
 
 The **Akra-Bazzi theorem**: `T ∈ O(n^p (1 + ∑_u^n g(u) / u^{p+1}))`

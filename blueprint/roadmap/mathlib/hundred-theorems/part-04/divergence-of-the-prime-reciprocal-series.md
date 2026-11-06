@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.Real.tendsto_sum_one_div_prime_atTop, not_summable_one_div_on_primes
-mathlib_file: Archive/Wiedijk100Theorems/SumOfPrimeReciprocalsDiverges.lean
----
-
 # Divergence of the Prime Reciprocal Series
 
 Mathlib records this with 2 declarations.

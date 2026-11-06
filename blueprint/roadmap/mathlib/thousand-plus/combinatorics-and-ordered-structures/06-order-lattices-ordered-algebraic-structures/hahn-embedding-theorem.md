@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: hahnEmbedding_isOrderedAddMonoid
-mathlib_file: Mathlib/RingTheory/HahnSeries/HahnEmbedding.lean
----
-
 # Hahn embedding theorem
 
 **Hahn embedding theorem**

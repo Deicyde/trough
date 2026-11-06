@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Metric.complete_of_cauchySeq_tendsto
-mathlib_file: Mathlib/Topology/MetricSpace/Cauchy.lean
----
-
 # Complete metric spaces
 
 A pseudo-metric space is complete iff every Cauchy sequence converges.

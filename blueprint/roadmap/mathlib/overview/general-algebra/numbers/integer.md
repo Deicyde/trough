@@ -1,11 +1,3 @@
----
-article_id: af_08b417b0a8587925234844a3
-declaration: inductive
-origin: cited
-mathlib: true
-mathlib_declaration: Int
----
-
 # Integer
 
 The **integers** are the whole numbers $\dots, -2, -1, 0, 1, 2, \dots$: the

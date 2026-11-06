@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.iIndepSet
-mathlib_file: Mathlib/Probability/Independence/Basic.lean
----
-
 # Independent events
 
 A family of sets is independent if the family of measurable space structures they generate is

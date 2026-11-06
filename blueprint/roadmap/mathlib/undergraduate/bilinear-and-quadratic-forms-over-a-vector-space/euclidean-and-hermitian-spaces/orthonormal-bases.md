@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: maximal_orthonormal_iff_basis_of_finiteDimensional
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Projection/FiniteDimensional.lean
----
-
 # Orthonormal bases
 
 An orthonormal set in a finite-dimensional `InnerProductSpace` is maximal, if and only if it

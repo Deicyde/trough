@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: hasFDerivAt_of_tendstoUniformly
-mathlib_file: Mathlib/Analysis/Calculus/UniformLimitsDeriv.lean
----
-
 # Differentiability of the limit of a sequence of functions
 
 `(d/dx) lim_{n → ∞} f n x = lim_{n → ∞} f' n x` when the `f' n` converge

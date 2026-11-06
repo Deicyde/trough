@@ -1,12 +1,3 @@
----
-article_id: af_94f01aed030c1c91061c89e0
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: PerfectClosure
-mathlib_file: Mathlib/FieldTheory/PerfectClosure.lean
----
-
 # Perfect closure
 
 The **perfect closure** of a commutative ring $K$ of prime [characteristic](characteristic-p.md) $p$ is the

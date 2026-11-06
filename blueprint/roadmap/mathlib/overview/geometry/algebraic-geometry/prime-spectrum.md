@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: PrimeSpectrum
-mathlib_file: Mathlib/RingTheory/Spectrum/Prime/Defs.lean
----
-
 # Prime spectrum
 
 The prime spectrum of a commutative (semi)ring `R` is the type of all prime ideals of `R`.

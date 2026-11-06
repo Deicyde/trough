@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: SchwartzMap.bilinLeftCLM
-mathlib_file: Mathlib/Analysis/Distribution/SchwartzSpace/Basic.lean
----
-
 # Stability by multiplication by a slowly growing smooth function
 
 The map `f ↦ (x ↦ B (f x) (g x))` as a continuous `𝕜`-linear map on Schwartz space,

@@ -1,12 +1,3 @@
----
-article_id: af_4c73928b4b50eba70a72e20b
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: RingHom.quotientKerEquivOfSurjective
-mathlib_file: Mathlib/RingTheory/Ideal/Quotient/Operations.lean
----
-
 # First isomorphism theorem for commutative rings
 
 The **first isomorphism theorem for commutative rings** says that a surjective

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Affine.Simplex.point_vsub_centroid_eq_smul_vsub
-mathlib_file: Mathlib/LinearAlgebra/AffineSpace/Simplex/Centroid.lean
----
-
 # Commandino's theorem
 
 *Commandino's theorem* : For n-simplex, the vector from a vertex to the `centroid`

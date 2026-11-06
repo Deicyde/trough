@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsLowerSet.le_card_inter_finset
-mathlib_file: Mathlib/Combinatorics/SetFamily/HarrisKleitman.lean
----
-
 # Harris-Kleitman inequality
 
 **Harris-Kleitman inequality**: Any two lower sets of finsets correlate.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Real.geom_mean_le_arith_mean, Real.geom_mean_eq_arith_mean_weighted_iff_of_pos', Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_eq_arith_mean_weighted_iff_of_pos, Real.geom_mean_eq_arith_mean_weighted_iff_of_nonneg, Real.geom_mean_lt_arith_mean_weighted_iff_of_pos', Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg', Real.geom_mean_lt_arith_mean_weighted_iff_of_pos, Real.geom_mean_lt_arith_mean_weighted_iff_of_nonneg, NNReal.geom_mean_le_arith_mean_weighted, NNReal.geom_mean_le_arith_mean2_weighted, ENNReal.geom_mean_le_arith_mean_weighted
-mathlib_file: Mathlib/Analysis/MeanInequalities.lean
----
-
 # Convexity inequalities
 
 In this file we prove several inequalities for finite sums, including AM-GM inequality,

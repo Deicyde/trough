@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Theorems 30 to 57
 
 - [30. The Ballot Problem](the-ballot-problem.md)

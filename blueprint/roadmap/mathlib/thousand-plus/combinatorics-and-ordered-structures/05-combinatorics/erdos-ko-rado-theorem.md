@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.erdos_ko_rado
-mathlib_file: Mathlib/Combinatorics/SetFamily/KruskalKatona.lean
----
-
 # Erdős–Ko–Rado theorem
 
 The **Erdős–Ko–Rado theorem**.

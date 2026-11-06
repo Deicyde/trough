@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.exists_infinite_primes
-mathlib_file: Mathlib/Data/Nat/Prime/Infinite.lean
----
-
 # The Infinitude of Primes
 
 Euclid's theorem on the **infinitude of primes**.

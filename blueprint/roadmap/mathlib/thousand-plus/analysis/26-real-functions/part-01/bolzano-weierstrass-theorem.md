@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: tendsto_subseq_of_frequently_bounded, tendsto_subseq_of_bounded
-mathlib_file: Mathlib/Topology/MetricSpace/Sequences.lean
----
-
 # Bolzano–Weierstrass theorem (1000+ theorems)
 
 Mathlib records this with 2 declarations.

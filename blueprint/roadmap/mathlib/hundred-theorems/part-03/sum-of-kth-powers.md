@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: sum_range_pow, sum_Ico_pow
-mathlib_file: Mathlib/NumberTheory/Bernoulli.lean
----
-
 # Sum of kth powers
 
 Mathlib records this with 2 declarations.

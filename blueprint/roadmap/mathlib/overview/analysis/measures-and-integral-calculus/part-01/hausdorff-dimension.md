@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: dimH
-mathlib_file: Mathlib/Topology/MetricSpace/HausdorffDimension.lean
----
-
 # Hausdorff dimension
 
 Hausdorff dimension of a set in an (e)metric space.

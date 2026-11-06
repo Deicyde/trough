@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.range
-mathlib_file: Mathlib/Algebra/Module/Submodule/Range.lean
----
-
 # Range of a linear map
 
 The range of a linear map `f : M → M₂` is a submodule of `M₂`.

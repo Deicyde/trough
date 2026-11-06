@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: SequentialSpace
-mathlib_file: Mathlib/Topology/Defs/Sequences.lean
----
-
 # Sequential space
 
 A topological space is said to be a *sequential space* if any sequentially closed set in this

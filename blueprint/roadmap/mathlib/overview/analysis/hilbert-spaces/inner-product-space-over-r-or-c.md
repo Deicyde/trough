@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: InnerProductSpace
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Defs.lean
----
-
 # Inner product space, over $R$ or $C$
 
 A (pre) inner product space is a vector space with an additional operation called inner product.

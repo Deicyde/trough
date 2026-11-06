@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ZMod.unitOfCoprime
-mathlib_file: Mathlib/Data/ZMod/Basic.lean
----
-
 # $\Z/n\Z$ and its invertible elements
 
 `unitOfCoprime` makes an element of `(ZMod n)ˣ` given

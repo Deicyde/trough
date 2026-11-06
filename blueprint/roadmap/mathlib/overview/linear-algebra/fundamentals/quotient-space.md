@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.hasQuotient
-mathlib_file: Mathlib/LinearAlgebra/Quotient/Defs.lean
----
-
 # Quotient space (Fundamentals)
 
 The quotient of a module `M` by a submodule `p ⊆ M`.

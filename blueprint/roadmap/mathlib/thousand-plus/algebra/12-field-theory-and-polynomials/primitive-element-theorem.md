@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Field.exists_primitive_element
-mathlib_file: Mathlib/FieldTheory/PrimitiveElement.lean
----
-
 # Primitive element theorem
 
 **Primitive element theorem**: a finite separable field extension `E` of `F` has a

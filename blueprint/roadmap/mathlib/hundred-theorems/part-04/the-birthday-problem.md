@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.birthday, Theorems100.birthday_measure
-mathlib_file: Archive/Wiedijk100Theorems/BirthdayProblem.lean
----
-
 # The Birthday Problem
 
 Mathlib records this with 2 declarations.

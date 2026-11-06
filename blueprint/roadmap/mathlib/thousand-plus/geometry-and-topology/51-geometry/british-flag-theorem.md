@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.dist_sq_add_dist_sq_eq_dist_sq_add_dist_sq_of_angle_eq_pi_div_two
-mathlib_file: Mathlib/Geometry/Euclidean/BritishFlag.lean
----
-
 # British flag theorem
 
 **British flag theorem**: for a rectangle `a b c d` and any point `p` (not necessarily in

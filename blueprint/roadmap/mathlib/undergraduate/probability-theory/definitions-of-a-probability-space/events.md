@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasurableSet
-mathlib_file: Mathlib/MeasureTheory/MeasurableSpace/Defs.lean
----
-
 # Events
 
 `MeasurableSet s` means that `s` is measurable (in the ambient measure space on `α`)

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.isTuranMaximal_iff_nonempty_iso_turanGraph
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/Extremal/Turan.lean
----
-
 # Turán's theorem
 
 **Turán's theorem**. `turanGraph n r` is, up to isomorphism, the unique

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Orientation.two_zsmul_oangle_sub_eq_two_zsmul_oangle_sub_of_norm_eq
-mathlib_file: Mathlib/Geometry/Euclidean/Angle/Sphere.lean
----
-
 # Inscribed angle theorem
 
 Oriented vector angle version of "angles in same segment are equal" and "opposite angles of

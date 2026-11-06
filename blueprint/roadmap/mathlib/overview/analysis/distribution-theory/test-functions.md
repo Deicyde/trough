@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: TestFunction
-mathlib_file: Mathlib/Analysis/Distribution/TestFunction.lean
----
-
 # Test functions
 
 The type of bundled `n`-times continuously differentiable maps with compact support

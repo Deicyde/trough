@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: DistribLattice.prime_ideal_of_disjoint_filter_ideal
-mathlib_file: Mathlib/Order/PrimeSeparator.lean
----
-
 # Boolean prime ideal theorem
 
 Mathlib states this as `DistribLattice.prime_ideal_of_disjoint_filter_ideal`.

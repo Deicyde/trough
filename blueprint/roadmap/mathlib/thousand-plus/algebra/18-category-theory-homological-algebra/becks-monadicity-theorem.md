@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Monad.monadicOfCreatesGSplitCoequalizers
-mathlib_file: Mathlib/CategoryTheory/Monad/Monadicity.lean
----
-
 # Beck's monadicity theorem
 
 **Beck's monadicity theorem**: if `G` has a left adjoint and creates coequalizers of `G`-split

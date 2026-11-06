@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Finset
-mathlib_file: Mathlib/Data/Finset/Defs.lean
----
-
 # Finite set
 
 `Finset α` is the type of finite sets of elements of `α`. It is implemented

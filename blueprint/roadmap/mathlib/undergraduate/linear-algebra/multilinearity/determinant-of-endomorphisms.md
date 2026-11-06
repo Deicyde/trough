@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.det
-mathlib_file: Mathlib/LinearAlgebra/Determinant.lean
----
-
 # Determinant of endomorphisms
 
 The determinant of an endomorphism independent of basis.

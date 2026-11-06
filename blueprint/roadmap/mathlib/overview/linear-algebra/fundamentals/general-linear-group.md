@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.GeneralLinearGroup
-mathlib_file: Mathlib/LinearAlgebra/GeneralLinearGroup/Basic.lean
----
-
 # General linear group (Fundamentals)
 
 The group of invertible linear maps from `M` to itself

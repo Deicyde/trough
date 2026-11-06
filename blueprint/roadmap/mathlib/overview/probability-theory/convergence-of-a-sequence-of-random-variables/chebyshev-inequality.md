@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.meas_ge_le_variance_div_sq
-mathlib_file: Mathlib/Probability/Moments/Variance.lean
----
-
 # Chebyshev inequality
 
 **Chebyshev's inequality**: one can control the deviation probability of a real random variable

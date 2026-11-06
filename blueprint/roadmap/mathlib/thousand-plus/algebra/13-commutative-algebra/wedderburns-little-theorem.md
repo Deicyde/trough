@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: littleWedderburn
-mathlib_file: Mathlib/RingTheory/LittleWedderburn.lean
----
-
 # Wedderburn's little theorem
 
 A finite division ring is a field. See `Finite.isDomain_to_isField` and

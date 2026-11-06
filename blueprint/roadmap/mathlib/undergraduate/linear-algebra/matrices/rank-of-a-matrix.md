@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.rank
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Rank.lean
----
-
 # Rank of a matrix
 
 The rank of a matrix is the rank of its image.

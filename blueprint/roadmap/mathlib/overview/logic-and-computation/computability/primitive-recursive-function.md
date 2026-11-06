@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Primrec
-mathlib_file: Mathlib/Computability/Primrec/Basic.lean
----
-
 # Primitive recursive function
 
 `Primrec f` means `f` is primitive recursive (after

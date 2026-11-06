@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: LipschitzOnWith.ae_differentiableWithinAt
-mathlib_file: Mathlib/Analysis/Calculus/Rademacher.lean
----
-
 # Rademacher's theorem
 
 *Rademacher's theorem*: a function between finite-dimensional real vector spaces which is

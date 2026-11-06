@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.absolutelyContinuous_iff_withDensity_rnDeriv_eq
-mathlib_file: Mathlib/MeasureTheory/Measure/Decomposition/RadonNikodym.lean
----
-
 # Radon–Nikodym theorem
 
 **The Radon-Nikodym theorem**: Given two measures `μ` and `ν`, if

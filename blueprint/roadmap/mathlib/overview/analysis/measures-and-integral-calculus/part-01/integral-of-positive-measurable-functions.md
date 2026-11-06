@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.lintegral
-mathlib_file: Mathlib/MeasureTheory/Integral/Lebesgue/Basic.lean
----
-
 # Integral of positive measurable functions
 
 The **lower Lebesgue integral** of a function `f` with respect to a measure `μ`.

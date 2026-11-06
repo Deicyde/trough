@@ -1,12 +1,3 @@
----
-article_id: af_8ec1e80bab443b4219660c45
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.Prime.sq_add_sq
-mathlib_file: Mathlib/NumberTheory/SumTwoSquares.lean
----
-
 # Sum of two squares
 
 **Fermat's theorem on sums of two squares** says that an odd [prime number](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)

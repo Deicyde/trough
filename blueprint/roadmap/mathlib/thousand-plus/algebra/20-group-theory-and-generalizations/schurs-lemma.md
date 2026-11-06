@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.finrank_endomorphism_simple_eq_one
-mathlib_file: Mathlib/CategoryTheory/Preadditive/Schur.lean
----
-
 # Schur's lemma (1000+ theorems)
 
 **Schur's lemma** for endomorphisms in `𝕜`-linear categories.

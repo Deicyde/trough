@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: ConvexCone
-mathlib_file: Mathlib/Geometry/Convex/Cone/Basic.lean
----
-
 # Convex cone
 
 A convex cone is a subset `s` of an `R`-module such that `a • x + b • y ∈ s` whenever `a, b > 0`

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Besicovitch.ae_tendsto_measure_inter_div
-mathlib_file: Mathlib/MeasureTheory/Covering/Besicovitch.lean
----
-
 # Lebesgue's density theorem
 
 Given an arbitrary set `s`, then `μ (s ∩ closedBall x r) / μ (closedBall x r)` converges

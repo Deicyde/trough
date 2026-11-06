@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.affineCombination
-mathlib_file: Mathlib/LinearAlgebra/AffineSpace/Combination.lean
----
-
 # Barycenter
 
 A weighted sum of the results of subtracting a default base point

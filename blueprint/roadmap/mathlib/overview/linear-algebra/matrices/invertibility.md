@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.inv
-mathlib_file: Mathlib/LinearAlgebra/Matrix/NonsingularInverse.lean
----
-
 # Invertibility
 
 The inverse of a square matrix, when it is invertible (and zero otherwise).

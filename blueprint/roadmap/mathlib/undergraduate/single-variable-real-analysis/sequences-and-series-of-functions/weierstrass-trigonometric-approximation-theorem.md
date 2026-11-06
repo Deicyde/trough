@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: span_fourier_closure_eq_top
-mathlib_file: Mathlib/Analysis/Fourier/AddCircle.lean
----
-
 # Weierstrass trigonometric approximation theorem
 
 The linear span of the monomials `fourier n` is dense in `C(AddCircle T, ℂ)`.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsAlgebraic
-mathlib_file: Mathlib/RingTheory/Algebraic/Defs.lean
----
-
 # Algebraic elements
 
 An element of an R-algebra is algebraic over R if it is a root of a nonzero polynomial

@@ -1,12 +1,3 @@
----
-article_id: af_5e72b2353ae36b3fb6570c1d
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: PresentedGroup
-mathlib_file: Mathlib/GroupTheory/PresentedGroup.lean
----
-
 # Presented group
 
 A **presented group** is a [group](group.md) described by a set of generators together with a set of relations that those generators must satisfy, and by nothing else. Writing $\langle S \mid R \rangle$ for the group with generators $S$ and relations $R$ gives a compact, finite description of many infinite groups, and it is the standard way groups arise in combinatorial group theory and topology, for instance as fundamental groups of spaces built from cells. Every group has a presentation, so the notion is fully general; the price is that a presentation can hide basic facts about its group, such as whether two words name the same element.

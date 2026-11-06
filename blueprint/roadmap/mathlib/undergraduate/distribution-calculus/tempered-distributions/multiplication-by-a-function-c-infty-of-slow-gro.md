@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: TemperedDistribution.smulLeftCLM
-mathlib_file: Mathlib/Analysis/Distribution/TemperedDistribution.lean
----
-
 # Multiplication by a function $C^\infty$ of slow growth
 
 Multiplication with a temperate growth function as a continuous linear map on `𝓢'(E, F)`.

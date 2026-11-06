@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: MeasurableSpace.pi
-mathlib_file: Mathlib/MeasureTheory/MeasurableSpace/Constructions.lean
----
-
 # Product of sigma-algebras
 
 Mathlib states this as `MeasurableSpace.pi`.

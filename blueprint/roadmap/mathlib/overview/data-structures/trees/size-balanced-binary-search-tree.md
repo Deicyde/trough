@@ -1,11 +1,3 @@
----
-declaration: inductive
-origin: cited
-mathlib: true
-mathlib_declaration: Ordnode
-mathlib_file: Mathlib/Data/Ordmap/Ordnode.lean
----
-
 # Size-balanced binary search tree
 
 An `Ordnode α` is a finite set of values, represented as a tree.

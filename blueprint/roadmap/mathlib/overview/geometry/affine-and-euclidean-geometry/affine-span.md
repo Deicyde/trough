@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: affineSpan
-mathlib_file: Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.lean
----
-
 # Affine span
 
 The affine span of a set of points is the smallest affine subspace containing those points.

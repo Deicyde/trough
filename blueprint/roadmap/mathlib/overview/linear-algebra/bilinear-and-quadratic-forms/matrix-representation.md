@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm.toMatrix
-mathlib_file: Mathlib/LinearAlgebra/Matrix/BilinearForm.lean
----
-
 # Matrix representation
 
 `BilinForm.toMatrix b` is the equivalence between `R`-bilinear forms on `M` and

@@ -1,12 +1,3 @@
----
-article_id: af_064ef7e0970e39cb57a15219
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup.card_subgroup_dvd_card
-mathlib_file: Mathlib/GroupTheory/Coset/Card.lean
----
-
 # Lagrange's theorem
 
 **Lagrange's theorem** says that in a finite [group](../part-01/group.md) the order (number of elements) of every

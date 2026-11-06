@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Stream'.WSeq
-mathlib_file: Mathlib/Data/WSeq/Basic.lean
----
-
 # Weak sequence
 
 Weak sequences.

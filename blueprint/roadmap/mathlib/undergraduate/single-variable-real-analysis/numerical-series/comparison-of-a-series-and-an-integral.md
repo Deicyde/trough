@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AntitoneOn.tsum_le_integral
-mathlib_file: Mathlib/Analysis/SumIntegralComparisons.lean
----
-
 # Comparison of a series and an integral
 
 **Integral test**: bounds the sum of a nonnegative antitone function by an integral.

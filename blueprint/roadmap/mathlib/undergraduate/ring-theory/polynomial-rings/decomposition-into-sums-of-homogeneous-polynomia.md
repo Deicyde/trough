@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MvPolynomial.sum_homogeneousComponent
-mathlib_file: Mathlib/RingTheory/MvPolynomial/Homogeneous.lean
----
-
 # Decomposition into sums of homogeneous polynomials
 
 Mathlib states this as `MvPolynomial.sum_homogeneousComponent`.

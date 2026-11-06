@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.FiniteMeasure.tendsto_lintegral_nn_of_le_const, MeasureTheory.tendsto_lintegral_nn_filter_of_le_const
-mathlib_file: Mathlib/MeasureTheory/Measure/FiniteMeasure.lean
----
-
 # Bounded convergence theorem
 
 Mathlib records this with 2 declarations.

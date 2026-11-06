@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.rootSet_derivative_subset_convexHull_rootSet, Polynomial.eq_centerMass_of_eval_derivative_eq_zero
-mathlib_file: Mathlib/Analysis/Complex/Polynomial/GaussLucas.lean
----
-
 # Gauss–Lucas theorem
 
 Mathlib records this with 2 declarations.

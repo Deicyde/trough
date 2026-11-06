@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Lp.fourierTransformₗᵢ
-mathlib_file: Mathlib/Analysis/Fourier/LpSpace.lean
----
-
 # Fourier transform on $\mathrm{L}^2(\R^d)$
 
 The Fourier transform on `L2` as a linear isometry equivalence.

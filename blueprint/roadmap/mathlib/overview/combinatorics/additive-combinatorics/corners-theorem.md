@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: corners_theorem_nat
-mathlib_file: Mathlib/Combinatorics/Additive/Corner/Roth.lean
----
-
 # Corners theorem
 
 The **corners theorem** for `ℕ`.

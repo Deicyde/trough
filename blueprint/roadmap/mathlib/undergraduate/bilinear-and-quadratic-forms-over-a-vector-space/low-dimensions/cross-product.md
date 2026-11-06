@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: crossProduct
-mathlib_file: Mathlib/LinearAlgebra/CrossProduct.lean
----
-
 # Cross product
 
 The cross product of two vectors in $R^3$ for $R$ a commutative ring.

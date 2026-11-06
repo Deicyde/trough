@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: InnerProductSpace.toDual
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Dual.lean
----
-
 # Fréchet-Riesz representation of the dual of a Hilbert space
 
 **Fréchet-Riesz representation**: any `ℓ` in the dual of a Hilbert space `E` is of the form

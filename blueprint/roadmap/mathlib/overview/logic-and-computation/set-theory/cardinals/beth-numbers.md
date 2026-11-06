@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Cardinal.beth
-mathlib_file: Mathlib/SetTheory/Cardinal/Aleph.lean
----
-
 # Beth numbers
 
 The Beth function is defined so that `beth 0 = ℵ₀`, `beth (succ o) = 2 ^ beth o`, and that for a

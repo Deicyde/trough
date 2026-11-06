@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.Partrec.Code.fixed_point₂
-mathlib_file: Mathlib/Computability/PartrecCode.lean
----
-
 # Kleene's recursion theorem
 
 **Kleene's second recursion theorem**

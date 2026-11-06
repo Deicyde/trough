@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ConvexOn.map_sum_le
-mathlib_file: Mathlib/Analysis/Convex/Jensen.lean
----
-
 # Jensen's inequality (finite sum version)
 
 Convex **Jensen's inequality**, `Finset.sum` version.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral
-mathlib_file: Mathlib/Probability/Independence/Integration.lean
----
-
 # Mean of product of independent random variables
 
 Mathlib states this as `ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral`.

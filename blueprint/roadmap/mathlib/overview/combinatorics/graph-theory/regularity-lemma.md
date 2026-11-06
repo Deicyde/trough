@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: szemeredi_regularity
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/Regularity/Lemma.lean
----
-
 # Regularity lemma
 
 Effective **Szemerédi Regularity Lemma**: For any sufficiently large graph, there is an

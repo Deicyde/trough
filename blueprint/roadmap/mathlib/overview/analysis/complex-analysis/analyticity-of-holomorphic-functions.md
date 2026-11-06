@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: DifferentiableOn.analyticAt
-mathlib_file: Mathlib/Analysis/Complex/CauchyIntegral.lean
----
-
 # Analyticity of holomorphic functions
 
 If `f : ℂ → E` is complex differentiable on some set `s`, then it is analytic at any point `z`

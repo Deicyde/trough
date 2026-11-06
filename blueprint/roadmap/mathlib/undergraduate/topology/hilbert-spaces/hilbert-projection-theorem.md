@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_norm_eq_iInf_of_complete_convex
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Projection/Minimal.lean
----
-
 # Hilbert projection theorem
 
 **Existence of minimizers**, aka the **Hilbert projection theorem**.

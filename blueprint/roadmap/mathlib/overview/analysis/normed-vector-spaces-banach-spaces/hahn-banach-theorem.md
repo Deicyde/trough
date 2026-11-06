@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_extension_norm_eq
-mathlib_file: Mathlib/Analysis/Normed/Module/HahnBanach.lean
----
-
 # Hahn-Banach theorem
 
 **Hahn-Banach theorem** for continuous linear functions over `𝕜`

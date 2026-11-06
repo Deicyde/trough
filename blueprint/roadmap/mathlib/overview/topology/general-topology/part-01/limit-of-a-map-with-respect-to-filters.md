@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Filter.Tendsto
-mathlib_file: Mathlib/Order/Filter/Defs.lean
----
-
 # Limit of a map with respect to filters
 
 `Filter.Tendsto` is the generic "limit of a function" predicate.

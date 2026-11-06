@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: extend_partialOrder
-mathlib_file: Mathlib/Order/Extension/Linear.lean
----
-
 # Szpilrajn extension theorem
 
 **Szpilrajn extension theorem**: any partial order can be extended to a linear order.

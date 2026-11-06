@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.IsGaussian
-mathlib_file: Mathlib/Probability/Distributions/Gaussian/Basic.lean
----
-
 # Gaussian measures
 
 A measure is Gaussian if its map by every continuous linear form is a real Gaussian measure.

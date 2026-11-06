@@ -1,12 +1,3 @@
----
-article_id: af_c97d7348ab1cd7e8b028837b
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Equiv.Perm.sign
-mathlib_file: Mathlib/GroupTheory/Perm/Sign.lean
----
-
 # Signature
 
 The **signature** (also called the **sign**) of a permutation $\sigma$ of a finite set is the number $\operatorname{sgn}(\sigma) \in \{1, -1\}$ that records whether $\sigma$ is a product of an even or an odd number of transpositions. Permutations of signature $1$ are called even and those of signature $-1$ odd. The signature is a [group homomorphism](../../../overview/general-algebra/group-theory/part-01/group-morphism.md) from the [symmetric group](../../../overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md) to the two-element group $\{1, -1\}$. It supplies the signs in the Leibniz formula for the [determinant](../../../overview/linear-algebra/matrices/determinant.md), and its kernel, the set of even permutations, is the [alternating group](../../../overview/general-algebra/group-theory/part-02/alternating-group.md).

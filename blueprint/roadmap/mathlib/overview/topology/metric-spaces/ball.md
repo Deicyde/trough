@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Metric.ball
-mathlib_file: Mathlib/Topology/MetricSpace/Pseudo/Defs.lean
----
-
 # Ball
 
 `ball x ε` is the set of all points `y` with `dist y x < ε`

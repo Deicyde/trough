@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ImplicitFunctionData.implicitFunction
-mathlib_file: Mathlib/Analysis/Calculus/Implicit.lean
----
-
 # Implicit function theorem
 
 Implicit function theorem. If `f : E → F` and `g : E → G` are two maps strictly differentiable

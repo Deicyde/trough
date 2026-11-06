@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: convexHull
-mathlib_file: Mathlib/Analysis/Convex/Hull.lean
----
-
 # Convex hull of a subset of an affine real space
 
 The convex hull of a set `s` is the minimal convex set that includes `s`.

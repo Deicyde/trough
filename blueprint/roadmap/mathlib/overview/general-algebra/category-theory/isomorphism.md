@@ -1,12 +1,3 @@
----
-article_id: af_f5880a97e21f478109c1f58e
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Iso
-mathlib_file: Mathlib/CategoryTheory/Iso.lean
----
-
 # Isomorphism
 
 An **isomorphism** in a [category](category.md) is a morphism that can be

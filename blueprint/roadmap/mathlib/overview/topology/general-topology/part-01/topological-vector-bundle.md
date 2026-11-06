@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: VectorBundle
-mathlib_file: Mathlib/Topology/VectorBundle/Basic.lean
----
-
 # Topological vector bundle
 
 The space `Bundle.TotalSpace F E` (for `E : B → Type*` such that each `E x` is a topological

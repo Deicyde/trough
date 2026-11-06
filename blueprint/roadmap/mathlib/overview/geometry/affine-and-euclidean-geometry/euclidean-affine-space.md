@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: NormedAddTorsor
-mathlib_file: Mathlib/Analysis/Normed/Group/AddTorsor.lean
----
-
 # Euclidean affine space
 
 A `NormedAddTorsor V P` is a torsor of an additive seminormed group

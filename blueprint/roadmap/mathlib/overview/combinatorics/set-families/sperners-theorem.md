@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsAntichain.sperner
-mathlib_file: Mathlib/Combinatorics/SetFamily/LYM.lean
----
-
 # Sperner's theorem
 
 **Sperner's theorem**. The size of an antichain in `Finset α` is bounded by the size of the

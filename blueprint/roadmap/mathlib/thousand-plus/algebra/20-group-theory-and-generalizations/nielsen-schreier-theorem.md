@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup.isFreeGroupOfIsFreeGroup
-mathlib_file: Mathlib/GroupTheory/FreeGroup/NielsenSchreier.lean
----
-
 # Nielsen–Schreier theorem
 
 The Nielsen-Schreier theorem: a subgroup of a free group is free.

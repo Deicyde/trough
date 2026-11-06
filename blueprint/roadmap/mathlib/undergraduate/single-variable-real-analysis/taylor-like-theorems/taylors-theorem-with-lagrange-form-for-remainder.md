@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: taylor_mean_remainder_lagrange
-mathlib_file: Mathlib/Analysis/Calculus/Taylor.lean
----
-
 # Taylor's theorem with Lagrange form for remainder
 
 **Taylor's theorem** with the Lagrange form of the remainder.

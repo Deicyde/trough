@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.bertrand
-mathlib_file: Mathlib/NumberTheory/Bertrand.lean
----
-
 # Bertrand’s Postulate
 
 **Alias** of `Nat.exists_prime_lt_and_le_two_mul`.

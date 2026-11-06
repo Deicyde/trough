@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.card_powersetCard, Finset.mem_powersetCard
-mathlib_file: Mathlib/Data/Finset/Powerset.lean
----
-
 # Formula for the Number of Combinations
 
 Mathlib records this with 2 declarations.

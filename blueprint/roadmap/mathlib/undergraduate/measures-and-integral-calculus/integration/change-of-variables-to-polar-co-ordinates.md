@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: integral_comp_polarCoord_symm
-mathlib_file: Mathlib/Analysis/SpecialFunctions/PolarCoord.lean
----
-
 # Change of variables to polar co-ordinates
 
 Mathlib states this as `integral_comp_polarCoord_symm`.

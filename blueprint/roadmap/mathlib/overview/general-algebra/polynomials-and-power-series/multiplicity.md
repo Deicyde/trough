@@ -1,12 +1,3 @@
----
-article_id: af_68e1ab5432b474b960705a24
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.rootMultiplicity
-mathlib_file: Mathlib/Algebra/Polynomial/Div.lean
----
-
 # Multiplicity
 
 The **multiplicity** of a root $a$ of a [polynomial](polynomial-in-one-indeterminate.md) $p$ is the number of times the linear factor $X - a$ occurs in $p$: the largest $m$ such that $(X - a)^m$ divides $p$. It refines the yes-or-no question "is $a$ a root?" into a count, distinguishing simple roots from double and higher roots. Counting roots with multiplicity is what makes statements such as "a polynomial of degree $n$ over the complex numbers has exactly $n$ roots" true, and multiplicity is closely tied to the [derivative](../../../undergraduate/ring-theory/polynomial-rings/polynomial-derivative.md) of a polynomial and to separability.

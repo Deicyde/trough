@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: StoneCech
-mathlib_file: Mathlib/Topology/Compactification/StoneCech.lean
----
-
 # Stone-Cech compactification
 
 The Stone-Čech compactification of a topological space.

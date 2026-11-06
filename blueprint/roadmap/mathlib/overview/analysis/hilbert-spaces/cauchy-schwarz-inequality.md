@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: inner_mul_inner_self_le
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Basic.lean
----
-
 # Cauchy-Schwarz inequality
 
 **Cauchy–Schwarz inequality**.

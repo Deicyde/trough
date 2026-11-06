@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Real.instField
-mathlib_file: Mathlib/Basic/Real/Basic.lean
----
-
 # Field $\R$ of real numbers
 
 Mathlib states this as `Real.instField`.

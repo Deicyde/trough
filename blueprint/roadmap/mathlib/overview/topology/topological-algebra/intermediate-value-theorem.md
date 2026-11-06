@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: intermediate_value_Icc
-mathlib_file: Mathlib/Topology/Order/IntermediateValue.lean
----
-
 # Intermediate value theorem
 
 **Intermediate Value Theorem** for continuous functions on closed intervals, case

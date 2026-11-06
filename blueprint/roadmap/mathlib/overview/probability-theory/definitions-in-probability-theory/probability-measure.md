@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.IsProbabilityMeasure
-mathlib_file: Mathlib/MeasureTheory/Measure/Typeclasses/Probability.lean
----
-
 # Probability measure
 
 A measure `μ` is called a probability measure if `μ univ = 1`.

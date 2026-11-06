@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm.leftAdjointOfNondegenerate
-mathlib_file: Mathlib/LinearAlgebra/BilinearForm/Properties.lean
----
-
 # Adjoint endomorphism
 
 Given the nondegenerate bilinear form `B` and the linear map `φ`,

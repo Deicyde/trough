@@ -1,12 +1,3 @@
----
-article_id: af_222b23db214606a5c411f6a0
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.mem_rootsOfUnity
-mathlib_file: Mathlib/RingTheory/RootsOfUnity/Complex.lean
----
-
 # Complex roots of unity
 
 The **complex roots of unity** are the [complex numbers](../../../overview/general-algebra/numbers/complex-number.md) $z$ that satisfy

@@ -1,12 +1,3 @@
----
-article_id: af_f3e1b61e5577621a224cb0bc
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: lucas_lehmer_sufficiency
-mathlib_file: Mathlib/NumberTheory/LucasLehmer.lean
----
-
 # Lucas-Lehmer primality test
 
 The **Lucas-Lehmer primality test** decides whether a Mersenne number $2^p - 1$

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: PointedCone.dual
-mathlib_file: Mathlib/Geometry/Convex/Cone/Dual.lean
----
-
 # Dual cone
 
 The dual cone of a set `s` with respect to a bilinear pairing `p` is the cone consisting of all

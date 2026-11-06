@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.Basis.det
-mathlib_file: Mathlib/LinearAlgebra/Determinant.lean
----
-
 # Determinant of vectors
 
 The determinant of a family of vectors with respect to some basis, as an alternating

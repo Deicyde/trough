@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: RatFunc.eval
-mathlib_file: Mathlib/FieldTheory/RatFunc/AsPolynomial.lean
----
-
 # Rational functions
 
 Evaluate a rational function `p` given a ring hom `f` from the scalar field

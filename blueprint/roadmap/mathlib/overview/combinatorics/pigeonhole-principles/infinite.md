@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finite.exists_infinite_fiber
-mathlib_file: Mathlib/Data/Fintype/Pigeonhole.lean
----
-
 # Infinite
 
 The strong pigeonhole principle for infinitely many pigeons in

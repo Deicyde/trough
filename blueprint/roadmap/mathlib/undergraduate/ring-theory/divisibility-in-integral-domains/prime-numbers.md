@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Prime
-mathlib_file: Mathlib/Algebra/Prime/Defs.lean
----
-
 # Prime numbers
 
 An element `p` of a commutative monoid with zero (e.g., a ring) is called *prime*,

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ContinuousOn.image_Icc
-mathlib_file: Mathlib/Topology/Order/Compact.lean
----
-
 # Image of a segment
 
 Mathlib states this as `ContinuousOn.image_Icc`.

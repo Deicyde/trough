@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.tendsto_choose_mul_pow_of_tendsto_mul_atTop
-mathlib_file: Mathlib/Probability/Distributions/Poisson/PoissonLimitThm.lean
----
-
 # Poisson limit theorem
 
 **Poisson limit Theorem**: If `n * p n → r` as `n → ∞`. Then

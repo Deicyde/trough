@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: SchwartzMap.tsum_eq_tsum_fourier
-mathlib_file: Mathlib/Analysis/Fourier/PoissonSummation.lean
----
-
 # Poisson’s formula
 
 **Poisson's summation formula** for Schwartz functions.

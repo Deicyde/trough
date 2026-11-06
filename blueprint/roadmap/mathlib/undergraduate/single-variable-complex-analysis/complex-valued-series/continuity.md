@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasFPowerSeriesOnBall.continuousOn
-mathlib_file: Mathlib/Analysis/Analytic/Basic.lean
----
-
 # Continuity (Complex-valued series)
 
 If a function admits a power series expansion on a ball, then it is continuous there.

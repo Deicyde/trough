@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: omegaLimit
-mathlib_file: Mathlib/Dynamics/OmegaLimit.lean
----
-
 # Omega-limit sets
 
 The ω-limit of a set `s` under `ϕ` with respect to a filter `f` is `⋂ u ∈ f, cl (ϕ u s)`.

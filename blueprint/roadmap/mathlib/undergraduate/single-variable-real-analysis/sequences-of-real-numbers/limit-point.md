@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MapClusterPt
-mathlib_file: Mathlib/Topology/Defs/Filter.lean
----
-
 # Limit point
 
 A point `x` is a cluster point of a sequence `u` along a filter `F` if it is a cluster point

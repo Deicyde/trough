@@ -1,12 +1,3 @@
----
-article_id: af_da76bb334cf24625cba4ead2
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.SplittingField
-mathlib_file: Mathlib/FieldTheory/SplittingField/Construction.lean
----
-
 # Splitting field
 
 A **splitting field** of a [polynomial](../polynomials-and-power-series/polynomial-in-one-indeterminate.md) $f$ over a [field](field.md) $K$ is a field extension of $K$ in which $f$ factors completely into linear factors and which is generated over $K$ by the roots of $f$. Every polynomial has one, and any two are isomorphic over $K$, so one may speak of "the" splitting field. Splitting fields are the extensions in which the [roots](../polynomials-and-power-series/roots-of-a-polynomial.md) of a polynomial can all be handled at once, which makes them the basic objects of Galois theory: the finite normal extensions are exactly the splitting fields, and the Galois group of a polynomial is the group of automorphisms of its splitting field over $K$.

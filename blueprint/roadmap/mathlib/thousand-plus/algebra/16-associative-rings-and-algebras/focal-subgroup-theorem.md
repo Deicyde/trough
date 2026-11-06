@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup.commutator_inf_eq_focalSubgroup
-mathlib_file: Mathlib/GroupTheory/Focal.lean
----
-
 # Focal subgroup theorem
 
 **The Focal Subgroup Theorem**

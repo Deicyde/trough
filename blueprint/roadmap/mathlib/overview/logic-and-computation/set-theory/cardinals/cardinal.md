@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Cardinal
-mathlib_file: Mathlib/SetTheory/Cardinal/Defs.lean
----
-
 # Cardinal
 
 `Cardinal.{u}` is the type of cardinal numbers in `Type u`,

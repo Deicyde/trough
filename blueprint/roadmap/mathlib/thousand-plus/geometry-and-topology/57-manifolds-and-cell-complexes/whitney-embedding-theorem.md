@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_embedding_euclidean_of_compact
-mathlib_file: Mathlib/Geometry/Manifold/WhitneyEmbedding.lean
----
-
 # Whitney embedding theorem
 
 Baby version of the Whitney weak embedding theorem: if `M` admits a finite covering by

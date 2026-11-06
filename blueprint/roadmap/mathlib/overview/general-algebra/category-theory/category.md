@@ -1,12 +1,3 @@
----
-article_id: af_5e9fb86d7d574907765f43e5
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Category
-mathlib_file: Mathlib/CategoryTheory/Category/Basic.lean
----
-
 # Category
 
 A **category** consists of objects and of arrows, called morphisms, between them, together with

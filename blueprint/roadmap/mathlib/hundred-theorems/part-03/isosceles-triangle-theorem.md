@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.angle_eq_angle_of_dist_eq
-mathlib_file: Mathlib/Geometry/Euclidean/Triangle.lean
----
-
 # Isosceles Triangle Theorem
 
 **Isosceles Triangle Theorem**: Pons asinorum, angle-at-point form.

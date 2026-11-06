@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.submartingale_iff_expected_stoppedValue_mono
-mathlib_file: Mathlib/Probability/Martingale/OptionalStopping.lean
----
-
 # Optional stopping theorem
 
 **The optional stopping theorem** (fair game theorem): a strongly adapted integrable process `f`

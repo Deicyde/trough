@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Function.periodicPts
-mathlib_file: Mathlib/Dynamics/PeriodicPts/Defs.lean
----
-
 # Periodic points
 
 The set of periodic points of a map `f : α → α`.

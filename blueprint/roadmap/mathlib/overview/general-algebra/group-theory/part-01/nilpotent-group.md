@@ -1,12 +1,3 @@
----
-article_id: af_73b67c95c71ead4d84062de6
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Group.IsNilpotent
-mathlib_file: Mathlib/GroupTheory/Nilpotent.lean
----
-
 # Nilpotent group
 
 A **nilpotent group** is a [group](group.md) that can be built from abelian

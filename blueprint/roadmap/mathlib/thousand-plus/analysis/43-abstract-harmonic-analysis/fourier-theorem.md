@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Integrable.fourierInv_fourier_eq, Continuous.fourierInv_fourier_eq
-mathlib_file: Mathlib/Analysis/Fourier/Inversion.lean
----
-
 # Fourier theorem
 
 Mathlib records this with 2 declarations.

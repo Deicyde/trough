@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AffineSubspace
-mathlib_file: Mathlib/LinearAlgebra/AffineSpace/AffineSubspace/Defs.lean
----
-
 # Affine subspace
 
 An `AffineSubspace k P` is a subset of an `AffineSpace V P` that, if not empty, has an affine

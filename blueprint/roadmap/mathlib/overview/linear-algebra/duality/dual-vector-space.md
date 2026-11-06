@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Module.Dual
-mathlib_file: Mathlib/LinearAlgebra/Dual/Defs.lean
----
-
 # Dual vector space
 
 The left dual space of an R-module M is the R-module of linear maps `M → R`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Convex.helly_theorem
-mathlib_file: Mathlib/Analysis/Convex/Radon.lean
----
-
 # Helly's theorem
 
 **Helly's theorem** for finite families of convex sets in its classical form.

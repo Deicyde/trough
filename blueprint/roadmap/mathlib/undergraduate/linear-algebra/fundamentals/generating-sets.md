@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.span
-mathlib_file: Mathlib/LinearAlgebra/Span/Defs.lean
----
-
 # Generating sets
 
 The span of a set `s ⊆ M` is the smallest submodule of M that contains `s`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.Sphere.dist_sq_eq_mul_dist_of_tangent_and_secant
-mathlib_file: Mathlib/Geometry/Euclidean/Sphere/Power.lean
----
-
 # Tangent-secant theorem
 
 **Tangent-Secant Theorem**. The square of the tangent length equals

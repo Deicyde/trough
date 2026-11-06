@@ -1,12 +1,3 @@
----
-article_id: af_366af83a8c5493f62d4e3810
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Algebra.IsAlgebraic
-mathlib_file: Mathlib/RingTheory/Algebraic/Defs.lean
----
-
 # Algebraic extension
 
 An **algebraic extension** is a [field](field.md) extension $L/K$ in which every element of $L$ is a root of some nonzero [polynomial](../polynomials-and-power-series/polynomial-in-one-indeterminate.md) with coefficients in $K$. Algebraic extensions are the setting of most of classical field theory: finite extensions, splitting fields and Galois extensions are all algebraic, and every algebraic extension of a field embeds into its [algebraic closure](existence-of-algebraic-closure-of-a-field.md), which is thus the largest algebraic extension up to isomorphism. The opposite behaviour, an element satisfying no nonzero polynomial relation over $K$, is called transcendence.

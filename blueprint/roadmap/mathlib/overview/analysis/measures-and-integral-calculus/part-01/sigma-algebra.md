@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: MeasurableSpace
-mathlib_file: Mathlib/MeasureTheory/MeasurableSpace/Defs.lean
----
-
 # Sigma-algebra
 
 A measurable space is a space equipped with a σ-algebra.

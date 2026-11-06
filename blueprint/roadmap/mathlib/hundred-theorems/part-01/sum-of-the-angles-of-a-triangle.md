@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.angle_add_angle_add_angle_eq_pi
-mathlib_file: Mathlib/Geometry/Euclidean/Triangle.lean
----
-
 # Sum of the Angles of a Triangle
 
 The **sum of the angles of a triangle** (possibly degenerate, where two

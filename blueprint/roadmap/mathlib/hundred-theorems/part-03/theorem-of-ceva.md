@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line
-mathlib_file: Mathlib/Analysis/Normed/Affine/Ceva.lean
----
-
 # Theorem of Ceva
 
 **Ceva's theorem** for a triangle, expressed using division of distances.

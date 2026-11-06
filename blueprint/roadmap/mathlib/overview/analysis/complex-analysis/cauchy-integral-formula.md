@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: DiffContOnCl.circleIntegral_sub_inv_smul
-mathlib_file: Mathlib/Analysis/Complex/CauchyIntegral.lean
----
-
 # Cauchy integral formula
 
 **Cauchy integral formula**: if `f : ℂ → E` is complex differentiable on an open disc and is

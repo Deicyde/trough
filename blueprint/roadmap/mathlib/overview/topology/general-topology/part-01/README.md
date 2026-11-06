@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Filter to Topological vector bundle
 
 - [Filter](filter.md)

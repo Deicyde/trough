@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: ModuleCat
-mathlib_file: Mathlib/Algebra/Category/ModuleCat/Basic.lean
----
-
 # The category of modules over a ring
 
 The category of R-modules and their morphisms.

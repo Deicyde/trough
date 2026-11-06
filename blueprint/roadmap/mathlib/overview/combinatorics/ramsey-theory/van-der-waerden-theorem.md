@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Combinatorics.exists_mono_homothetic_copy
-mathlib_file: Mathlib/Combinatorics/HalesJewett.lean
----
-
 # Van der Waerden theorem
 
 A generalization of Van der Waerden's theorem: if `M` is a finitely colored commutative

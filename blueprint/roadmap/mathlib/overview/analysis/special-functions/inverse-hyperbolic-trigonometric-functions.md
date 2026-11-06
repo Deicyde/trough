@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Real.arsinh
-mathlib_file: Mathlib/Analysis/SpecialFunctions/Arsinh.lean
----
-
 # Inverse hyperbolic trigonometric functions
 
 `arsinh` is defined using a logarithm, `arsinh x = log (x + √(1 + x^2))`.

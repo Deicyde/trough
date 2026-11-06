@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ConvexOn.continuousOn
-mathlib_file: Mathlib/Analysis/Convex/Continuous.lean
----
-
 # Continuity (continuity and differentiability of convex functions)
 
 Mathlib states this as `ConvexOn.continuousOn`.

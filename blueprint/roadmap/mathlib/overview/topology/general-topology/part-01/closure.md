@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: closure
-mathlib_file: Mathlib/Topology/Defs/Basic.lean
----
-
 # Closure
 
 The closure of `s` is the smallest closed set containing `s`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding
-mathlib_file: Mathlib/Topology/TietzeExtension.lean
----
-
 # Tietze extension theorem
 
 **Tietze extension theorem** for real-valued bounded continuous maps, a version with a closed

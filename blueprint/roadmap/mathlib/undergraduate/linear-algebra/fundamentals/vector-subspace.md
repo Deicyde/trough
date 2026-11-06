@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Subspace
-mathlib_file: Mathlib/Algebra/Module/Submodule/Basic.lean
----
-
 # Vector subspace
 
 Subspace of a vector space. Defined to equal `Submodule`.

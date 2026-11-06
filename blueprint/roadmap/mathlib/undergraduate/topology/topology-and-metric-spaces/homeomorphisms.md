@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Homeomorph
-mathlib_file: Mathlib/Topology/Homeomorph/Defs.lean
----
-
 # Homeomorphisms
 
 Homeomorphism between `X` and `Y`, also called topological isomorphism

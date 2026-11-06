@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: VectorField.mpullback
-mathlib_file: Mathlib/Geometry/Manifold/VectorField/Pullback.lean
----
-
 # Pullback of vector fields
 
 The pullback of a vector field under a map between manifolds. If the derivative of the map is

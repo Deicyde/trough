@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: fderiv_comp
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Comp.lean
----
-
 # Chain rule
 
 Mathlib states this as `fderiv_comp`.

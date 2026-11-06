@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FormalMultilinearSeries.radius_inv_eq_limsup
-mathlib_file: Mathlib/Analysis/Analytic/RadiusLiminf.lean
----
-
 # Cauchy–Hadamard theorem
 
 The **Cauchy-Hadamard theorem** for formal multilinear series: The inverse of the radius

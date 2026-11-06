@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: ContinuousLinearMap
-mathlib_file: Mathlib/Topology/Algebra/Module/ContinuousLinearMap/Basic.lean
----
-
 # Continuous linear map
 
 Continuous linear maps between modules. We only put the type classes that are necessary for the

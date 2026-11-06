@@ -1,12 +1,3 @@
----
-article_id: af_65dae603bcad3a51819a6860
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.sum_four_squares
-mathlib_file: Mathlib/NumberTheory/SumFourSquares.lean
----
-
 # Sum of four squares
 
 **Lagrange's four-square theorem** says that every [natural number](../numbers/natural-number.md) is a sum

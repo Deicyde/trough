@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.End.genEigenspace
-mathlib_file: Mathlib/LinearAlgebra/Eigenspace/Basic.lean
----
-
 # Generalized eigenspaces
 
 The submodule `genEigenspace f μ k` for a linear map `f`, a scalar `μ`,

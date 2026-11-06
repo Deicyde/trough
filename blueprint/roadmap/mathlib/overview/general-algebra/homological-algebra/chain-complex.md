@@ -1,12 +1,3 @@
----
-article_id: af_260fd7910c094a15c3962ac8
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: ChainComplex
-mathlib_file: Mathlib/Algebra/Homology/HomologicalComplex.lean
----
-
 # Chain complex
 
 A **chain complex** is a sequence of objects, such as abelian groups or [modules](../../linear-algebra/fundamentals/module.md) over a [ring](../rings/ring.md), joined by maps that lower the degree by one, in which any two consecutive maps compose to zero. It is the basic object of homological algebra. The vanishing of these composites says that the image of each map lies inside the kernel of the next, and the failure of the two to coincide is measured by the [homology](functorial-homology.md) of the complex. Chain complexes arise from topological spaces, from resolutions of modules and from many other structures, and homology turns them into invariants that can be computed.

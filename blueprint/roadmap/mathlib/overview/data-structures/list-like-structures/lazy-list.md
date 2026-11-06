@@ -1,10 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MLList
----
-
 # Lazy list
 
 A monadic lazy list, controlled by an arbitrary monad.

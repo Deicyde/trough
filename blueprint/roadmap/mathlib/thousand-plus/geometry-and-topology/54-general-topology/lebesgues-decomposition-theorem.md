@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.haveLebesgueDecomposition_of_sigmaFinite
-mathlib_file: Mathlib/MeasureTheory/Measure/Decomposition/Lebesgue.lean
----
-
 # Lebesgue's decomposition theorem
 
 **The Lebesgue decomposition theorem**:

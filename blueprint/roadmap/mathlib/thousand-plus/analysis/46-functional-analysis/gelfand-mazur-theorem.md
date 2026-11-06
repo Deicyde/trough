@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: NormedRing.algEquivComplexOfComplete, NormedAlgebra.Complex.algEquivOfNormMul, NormedAlgebra.Real.nonempty_algEquiv_or
-mathlib_file: Mathlib/Analysis/Normed/Algebra/GelfandFormula.lean
----
-
 # Gelfand–Mazur theorem
 
 Mathlib records this with 3 declarations.

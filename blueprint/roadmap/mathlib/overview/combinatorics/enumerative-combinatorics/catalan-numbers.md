@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: catalan
-mathlib_file: Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean
----
-
 # Catalan numbers
 
 The recursive definition of the sequence of Catalan numbers:

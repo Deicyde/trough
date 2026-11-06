@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Orientation
-mathlib_file: Mathlib/LinearAlgebra/Orientation.lean
----
-
 # Orientation of a $\R$-vector space
 
 An orientation of a module, intended to be used when `ι` is a `Fintype` with the same

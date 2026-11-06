@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless
-mathlib_file: Mathlib/Geometry/Manifold/IntegralCurve/ExistUnique.lean
----
-
 # Local existence of integral curves
 
 Existence of local integral curves for a $C^1$ vector field on a `C^1` manifold without

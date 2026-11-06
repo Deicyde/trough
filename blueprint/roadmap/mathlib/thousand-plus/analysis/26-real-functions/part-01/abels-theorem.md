@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.tendsto_tsum_powerSeries_nhdsWithin_stolzCone, Real.tendsto_tsum_powerSeries_nhdsWithin_lt
-mathlib_file: Mathlib/Analysis/Complex/AbelLimit.lean
----
-
 # Abel's theorem
 
 Mathlib records this with 2 declarations.

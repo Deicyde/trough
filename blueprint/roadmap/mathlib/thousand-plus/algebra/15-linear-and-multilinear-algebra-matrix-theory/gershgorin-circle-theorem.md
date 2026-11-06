@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: eigenvalue_mem_ball
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Gershgorin.lean
----
-
 # Gershgorin circle theorem
 
 **Gershgorin's circle theorem**: for any eigenvalue `μ` of a square matrix `A`, there exists an

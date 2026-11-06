@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MvPolynomial.schwartz_zippel_sup_sum
-mathlib_file: Mathlib/Algebra/MvPolynomial/SchwartzZippel.lean
----
-
 # Schwartz–Zippel theorem
 
 The **Schwartz-Zippel lemma**

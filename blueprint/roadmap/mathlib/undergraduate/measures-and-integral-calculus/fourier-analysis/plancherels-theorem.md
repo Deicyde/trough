@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: SchwartzMap.integral_inner_fourier_fourier
-mathlib_file: Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean
----
-
 # Plancherel’s theorem
 
 Plancherel's theorem for Schwartz functions.

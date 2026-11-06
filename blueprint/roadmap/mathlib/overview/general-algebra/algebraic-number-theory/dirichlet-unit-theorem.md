@@ -1,12 +1,3 @@
----
-article_id: af_7be2f4b964ca6f85c5b23855
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: NumberField.Units.exist_unique_eq_mul_prod
-mathlib_file: Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean
----
-
 # Dirichlet unit theorem
 
 The **Dirichlet unit theorem** describes the group of units of the ring of integers of a

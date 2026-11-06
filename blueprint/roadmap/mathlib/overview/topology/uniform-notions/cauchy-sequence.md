@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: CauchySeq
-mathlib_file: Mathlib/Topology/UniformSpace/Cauchy.lean
----
-
 # Cauchy sequence
 
 Cauchy sequences. Usually defined on ℕ, but often it is also useful to say that a function

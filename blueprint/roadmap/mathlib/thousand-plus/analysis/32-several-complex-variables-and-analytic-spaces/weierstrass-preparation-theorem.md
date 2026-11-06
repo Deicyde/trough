@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: PowerSeries.exists_isWeierstrassFactorization
-mathlib_file: Mathlib/RingTheory/PowerSeries/WeierstrassPreparation.lean
----
-
 # Weierstrass preparation theorem
 
 **Weierstrass preparation theorem** ([washington_cyclotomic], Theorem 7.3):

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: VectorField.mlieBracket
-mathlib_file: Mathlib/Geometry/Manifold/VectorField/LieBracket.lean
----
-
 # Lie bracket of vector field
 
 The Lie bracket of two vector fields in a manifold.

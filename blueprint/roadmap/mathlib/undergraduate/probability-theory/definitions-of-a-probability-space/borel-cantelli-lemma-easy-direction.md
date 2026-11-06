@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.measure_limsup_atTop_eq_zero
-mathlib_file: Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean
----
-
 # Borel-Cantelli lemma (easy direction)
 
 One direction of the **Borel-Cantelli lemma**

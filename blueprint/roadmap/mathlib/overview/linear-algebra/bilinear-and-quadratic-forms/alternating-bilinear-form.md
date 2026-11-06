@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm.IsAlt
-mathlib_file: Mathlib/LinearAlgebra/BilinearForm/Properties.lean
----
-
 # Alternating bilinear form
 
 The proposition that a bilinear form is alternating

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.Nat.eq_two_pow_mul_prime_mersenne_of_even_perfect
-mathlib_file: Archive/Wiedijk100Theorems/PerfectNumbers.lean
----
-
 # The Perfect Number Theorem
 
 **Perfect Number Theorem**: Euler's theorem that even perfect numbers can be factored as a

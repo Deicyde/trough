@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: NFA
-mathlib_file: Mathlib/Computability/NFA.lean
----
-
 # NFA
 
 An NFA is a set of states (`σ`), a transition function from state to state labelled by the

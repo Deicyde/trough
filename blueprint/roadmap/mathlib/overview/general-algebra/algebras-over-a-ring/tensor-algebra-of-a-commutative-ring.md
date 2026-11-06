@@ -1,12 +1,3 @@
----
-article_id: af_85feffbcde1253493441d046
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: TensorAlgebra
-mathlib_file: Mathlib/LinearAlgebra/TensorAlgebra/Basic.lean
----
-
 # Tensor algebra of a commutative ring
 
 The **tensor algebra** of a [module](../../linear-algebra/fundamentals/module.md) $M$ over a commutative ring $R$, written $T(M)$, is

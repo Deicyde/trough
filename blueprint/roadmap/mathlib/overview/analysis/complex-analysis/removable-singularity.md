@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.differentiableOn_update_limUnder_insert_of_isLittleO
-mathlib_file: Mathlib/Analysis/Complex/RemovableSingularity.lean
----
-
 # Removable singularity
 
 **Removable singularity** theorem: if `s` is a punctured neighborhood of `c : ℂ`, a function

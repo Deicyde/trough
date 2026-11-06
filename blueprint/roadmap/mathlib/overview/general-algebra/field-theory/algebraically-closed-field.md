@@ -1,12 +1,3 @@
----
-article_id: af_52c3ef79ca58e1d6f9e42655
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsAlgClosed
-mathlib_file: Mathlib/FieldTheory/IsAlgClosed/Basic.lean
----
-
 # Algebraically closed field
 
 An **algebraically closed field** is a [field](field.md) in which every

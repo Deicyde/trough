@@ -1,12 +1,3 @@
----
-article_id: af_dc282c2cb02c23ce9c386ba7
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: HomologicalComplex.homology
-mathlib_file: Mathlib/Algebra/Homology/ShortComplex/HomologicalComplex.lean
----
-
 # Functorial homology
 
 **Functorial homology** is the construction that assigns to a complex $K$ and a degree $i$ the homology object $H_i(K)$, the cycles in degree $i$ modulo the boundaries, together with the morphism $H_i(K) \to H_i(L)$ that every chain map $K \to L$ induces. The assignment respects identities and composition, so homology in each degree is a [functor](../category-theory/functor.md) from complexes to the underlying [category](../category-theory/category.md). It measures how far a complex is from being exact, and it is a principal source of invariants in algebraic topology, homological algebra and sheaf theory.

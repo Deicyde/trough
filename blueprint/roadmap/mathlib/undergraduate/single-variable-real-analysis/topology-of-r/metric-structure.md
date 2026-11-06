@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Real.metricSpace
-mathlib_file: Mathlib/Topology/MetricSpace/Basic.lean
----
-
 # Metric structure
 
 Instantiate the reals as a metric space.

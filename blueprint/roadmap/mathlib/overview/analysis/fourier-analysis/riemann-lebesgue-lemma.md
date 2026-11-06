@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: tendsto_integral_exp_inner_smul_cocompact
-mathlib_file: Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean
----
-
 # Riemann-Lebesgue lemma (Analysis)
 
 Riemann-Lebesgue lemma for functions on a real inner-product space: the integral

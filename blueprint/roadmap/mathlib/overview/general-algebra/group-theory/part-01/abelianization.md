@@ -1,12 +1,3 @@
----
-article_id: af_fa41078caa33967da7b2e81a
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Abelianization
-mathlib_file: Mathlib/GroupTheory/Abelianization/Defs.lean
----
-
 # Abelianization
 
 The **abelianization** of a [group](group.md) $G$ is the largest abelian quotient of

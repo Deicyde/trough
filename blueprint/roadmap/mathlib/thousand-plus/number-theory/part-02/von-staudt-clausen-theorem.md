@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Bernoulli.vonStaudt_clausen
-mathlib_file: Mathlib/NumberTheory/Bernoulli.lean
----
-
 # Von Staudt–Clausen theorem
 
 **von Staudt-Clausen theorem:** For any natural number $k$, the sum

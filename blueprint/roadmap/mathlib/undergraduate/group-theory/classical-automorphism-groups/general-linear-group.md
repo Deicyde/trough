@@ -1,12 +1,3 @@
----
-article_id: af_27978b6720bf5b67e58c0cef
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.GeneralLinearGroup
-mathlib_file: Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.lean
----
-
 # General linear group (Classical automorphism groups)
 
 The **general linear group** $\mathrm{GL}_n(R)$ is the [group](../../../overview/general-algebra/group-theory/part-01/group.md) of invertible

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.moment
-mathlib_file: Mathlib/Probability/Moments/Basic.lean
----
-
 # Moment of a random variable
 
 Moment of a real random variable, `μ[X ^ p]`.

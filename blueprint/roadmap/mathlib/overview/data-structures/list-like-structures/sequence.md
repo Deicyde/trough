@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Stream'.Seq
-mathlib_file: Mathlib/Data/Seq/Defs.lean
----
-
 # Sequence
 
 `Seq α` is the type of possibly infinite lists (referred here as sequences).

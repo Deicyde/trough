@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.Subgraph.IsMatching
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/Matching.lean
----
-
 # Matching
 
 The subgraph `M` of `G` is a matching if every vertex of `M` is incident to exactly one edge in `M`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub
-mathlib_file: Mathlib/Probability/CentralLimitTheorem.lean
----
-
 # Central limit theorem
 
 **Central Limit Theorem:** Given a sequence of random variables `X : ℕ → Ω → ℝ` that are

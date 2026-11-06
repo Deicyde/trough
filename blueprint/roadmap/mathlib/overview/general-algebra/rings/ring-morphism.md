@@ -1,12 +1,3 @@
----
-article_id: af_609f19bb24bc6b6b3ccd7e4d
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: RingHom
-mathlib_file: Mathlib/Algebra/Ring/Hom/Defs.lean
----
-
 # Ring morphism
 
 A **ring morphism**, or ring homomorphism, is a map between two [rings](ring.md)

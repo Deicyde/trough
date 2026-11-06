@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.charFun
-mathlib_file: Mathlib/MeasureTheory/Measure/CharacteristicFunction/Basic.lean
----
-
 # Characteristic function
 
 The characteristic function of a measure in an inner product space.

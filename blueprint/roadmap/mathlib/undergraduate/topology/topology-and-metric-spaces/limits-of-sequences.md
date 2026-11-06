@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Metric.tendsto_atTop
-mathlib_file: Mathlib/Topology/MetricSpace/Pseudo/Defs.lean
----
-
 # Limits of sequences
 
 Mathlib states this as `Metric.tendsto_atTop`.

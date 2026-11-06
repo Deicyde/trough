@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: fourierCoeff, hasSum_fourier_series_L2
-mathlib_file: Mathlib/Analysis/Fourier/AddCircle.lean
----
-
 # Fourier Series
 
 Mathlib records this with 2 declarations.

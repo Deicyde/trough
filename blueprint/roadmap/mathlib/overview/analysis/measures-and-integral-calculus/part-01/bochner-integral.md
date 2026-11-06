@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.integral
-mathlib_file: Mathlib/MeasureTheory/Integral/Bochner/Basic.lean
----
-
 # Bochner integral
 
 The Bochner integral

@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.instField
-mathlib_file: Mathlib/Basic/Complex/Basic.lean
----
-
 # Field $\C$ of complex numbers
 
 Mathlib states this as `Complex.instField`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.dist_sq_add_dist_sq_eq_two_mul_dist_midpoint_sq_add_half_dist_sq
-mathlib_file: Mathlib/Geometry/Euclidean/Triangle.lean
----
-
 # Apollonius's theorem
 
 **Apollonius's Theorem**.

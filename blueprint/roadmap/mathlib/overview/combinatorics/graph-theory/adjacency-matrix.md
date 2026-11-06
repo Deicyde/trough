@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.adjMatrix
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/AdjMatrix.lean
----
-
 # Adjacency matrix
 
 `adjMatrix G α` is the matrix `A` such that `A i j = (1 : α)` if `i` and `j` are

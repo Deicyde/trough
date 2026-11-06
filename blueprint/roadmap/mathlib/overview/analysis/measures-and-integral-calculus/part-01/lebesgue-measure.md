@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Real.measureSpace
-mathlib_file: Mathlib/MeasureTheory/Measure/Haar/OfBasis.lean
----
-
 # Lebesgue measure (Measures and integral calculus)
 
 Mathlib states this as `Real.measureSpace`.

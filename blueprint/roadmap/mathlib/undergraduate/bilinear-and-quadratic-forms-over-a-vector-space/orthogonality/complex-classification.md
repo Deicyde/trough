@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed
-mathlib_file: Mathlib/LinearAlgebra/QuadraticForm/AlgClosed.lean
----
-
 # Complex classification
 
 A nondegenerate quadratic form on an algebraically closed field of characteristic not equal to 2

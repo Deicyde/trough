@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.ker
-mathlib_file: Mathlib/Algebra/Module/Submodule/Ker.lean
----
-
 # Kernel of a linear map
 
 The kernel of a linear map `f : M → M₂` is defined to be `comap f ⊥`. This is equivalent to the

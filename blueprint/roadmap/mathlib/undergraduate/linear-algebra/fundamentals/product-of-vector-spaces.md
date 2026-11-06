@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Prod.instModule
-mathlib_file: Mathlib/Algebra/Module/Prod.lean
----
-
 # Product of vector spaces
 
 Mathlib states this as `Prod.instModule`.

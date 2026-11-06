@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.hasSum_taylorSeries_log
-mathlib_file: Mathlib/Analysis/SpecialFunctions/Complex/LogBounds.lean
----
-
 # Log
 
 The Taylor series of the complex logarithm at `1` converges to the logarithm in the

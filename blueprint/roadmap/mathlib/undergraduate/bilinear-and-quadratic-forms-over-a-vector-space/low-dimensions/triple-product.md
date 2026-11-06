@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: triple_product_eq_det
-mathlib_file: Mathlib/LinearAlgebra/CrossProduct.lean
----
-
 # Triple product
 
 The triple product of `u`, `v`, and `w` is equal to the determinant of the matrix

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Transcendental
-mathlib_file: Mathlib/RingTheory/Algebraic/Defs.lean
----
-
 # Transcendental elements
 
 An element of an R-algebra is transcendental over R if it is not algebraic over R.

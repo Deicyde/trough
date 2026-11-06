@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Metric.isOpen_iff
-mathlib_file: Mathlib/Topology/MetricSpace/Pseudo/Defs.lean
----
-
 # Topology of a metric space
 
 Mathlib states this as `Metric.isOpen_iff`.
