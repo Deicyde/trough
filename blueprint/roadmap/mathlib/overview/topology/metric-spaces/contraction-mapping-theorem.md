@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ContractingWith.exists_fixedPoint
-mathlib_file: Mathlib/Topology/MetricSpace/Contracting.lean
----
-
 # Contraction mapping theorem
 
 Banach fixed-point theorem, contraction mapping theorem, `EMetricSpace` version.

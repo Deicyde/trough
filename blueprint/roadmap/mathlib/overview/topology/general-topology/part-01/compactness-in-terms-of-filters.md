@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsCompact
-mathlib_file: Mathlib/Topology/Defs/Filter.lean
----
-
 # Compactness in terms of filters
 
 A set `s` is compact if for every nontrivial filter `f` that contains `s`,

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.pi
-mathlib_file: Mathlib/MeasureTheory/Constructions/Pi.lean
----
-
 # Product of finitely many measures
 
 `Measure.pi μ` is the finite product of the measures `{μ i | i : ι}`.

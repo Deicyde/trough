@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm.IsSymm
-mathlib_file: Mathlib/LinearAlgebra/BilinearForm/Properties.lean
----
-
 # Symmetric bilinear form
 
 The proposition that a bilinear form is symmetric

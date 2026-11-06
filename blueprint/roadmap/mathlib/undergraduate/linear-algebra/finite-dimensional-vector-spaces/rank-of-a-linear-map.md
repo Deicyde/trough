@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.rank
-mathlib_file: Mathlib/LinearAlgebra/Dimension/LinearMap.lean
----
-
 # Rank of a linear map
 
 `rank f` is the rank of a `LinearMap` `f`, defined as the dimension of `f.range`.

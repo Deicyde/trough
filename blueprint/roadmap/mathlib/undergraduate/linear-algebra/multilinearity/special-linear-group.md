@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.SpecialLinearGroup
-mathlib_file: Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean
----
-
 # Special linear group
 
 `SpecialLinearGroup n R` is the group of `n` by `n` `R`-matrices with determinant equal to 1.

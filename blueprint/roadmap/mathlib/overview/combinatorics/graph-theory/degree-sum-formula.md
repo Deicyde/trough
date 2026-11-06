@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.sum_degrees_eq_twice_card_edges
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/DegreeSum.lean
----
-
 # Degree-sum formula
 
 The degree-sum formula.  This is also known as the handshaking lemma, which might

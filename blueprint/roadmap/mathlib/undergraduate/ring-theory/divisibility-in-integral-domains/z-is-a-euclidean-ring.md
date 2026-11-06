@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Int.euclideanDomain
-mathlib_file: Mathlib/Algebra/EuclideanDomain/Int.lean
----
-
 # $\Z$ is a Euclidean ring
 
 Mathlib states this as `Int.euclideanDomain`.

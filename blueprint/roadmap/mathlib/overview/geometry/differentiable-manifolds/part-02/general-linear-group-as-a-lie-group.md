@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Units.instLieGroupModelWithCornersSelf
-mathlib_file: Mathlib/Geometry/Manifold/Instances/UnitsOfNormedAlgebra.lean
----
-
 # General linear group as a Lie group
 
 The units of a complete normed ring form a Lie group.

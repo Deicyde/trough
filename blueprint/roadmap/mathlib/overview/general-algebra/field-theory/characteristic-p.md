@@ -1,12 +1,3 @@
----
-article_id: af_51ae08814d5821a27e42384a
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: CharP
-mathlib_file: Mathlib/Algebra/CharP/Defs.lean
----
-
 # Characteristic p
 
 A [ring](../rings/ring.md) $R$ has **characteristic $p$** when adding the identity element $1$ to itself $n$ times gives $0$ exactly for the multiples $n$ of $p$. The characteristic measures how the [integers](../numbers/integer.md) sit inside a ring: in characteristic $0$ they embed faithfully, while in a positive characteristic $p$ the ring arithmetic of whole numbers wraps around modulo $p$. Commutative rings and [fields](field.md) of prime characteristic have an algebra of their own, governed by the identity $(x + y)^p = x^p + y^p$, and they appear throughout number theory, algebraic geometry and coding theory.

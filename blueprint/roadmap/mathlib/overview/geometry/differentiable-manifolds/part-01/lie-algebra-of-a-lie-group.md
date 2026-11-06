@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: GroupLieAlgebra
-mathlib_file: Mathlib/Geometry/Manifold/GroupLieAlgebra.lean
----
-
 # Lie algebra of a Lie group
 
 The Lie algebra of a Lie group, i.e., its tangent space at the identity. We use the word

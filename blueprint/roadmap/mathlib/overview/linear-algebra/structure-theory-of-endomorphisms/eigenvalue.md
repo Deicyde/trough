@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Module.End.HasEigenvalue
-mathlib_file: Mathlib/LinearAlgebra/Eigenspace/Basic.lean
----
-
 # Eigenvalue
 
 A scalar `μ` is an eigenvalue for a linear map `f` if there are nonzero vectors `x`

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: isCompact_iff_finite_subcover
-mathlib_file: Mathlib/Topology/Compactness/Compact.lean
----
-
 # Compactness in terms of open covers (Borel-Lebesgue)
 
 A set `s` is compact if and only if

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ack
-mathlib_file: Mathlib/Computability/Ackermann.lean
----
-
 # Ackermann function
 
 The two-argument Ackermann function, defined so that

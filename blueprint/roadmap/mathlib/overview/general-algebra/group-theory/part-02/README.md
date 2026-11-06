@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Permutation group of a type to Third Sylow theorem
 
 - [Permutation group of a type](permutation-group-of-a-type.md)

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm.toMatrix_comp
-mathlib_file: Mathlib/LinearAlgebra/Matrix/BilinearForm.lean
----
-
 # Change of coordinates
 
 Mathlib states this as `LinearMap.BilinForm.toMatrix_comp`.

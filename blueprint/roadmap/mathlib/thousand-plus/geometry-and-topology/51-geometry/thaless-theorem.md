@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.Sphere.thales_theorem
-mathlib_file: Mathlib/Geometry/Euclidean/Angle/Sphere.lean
----
-
 # Thales's theorem
 
 **Alias** of `EuclideanGeometry.Sphere.angle_eq_pi_div_two_iff_mem_sphere_of_isDiameter`.

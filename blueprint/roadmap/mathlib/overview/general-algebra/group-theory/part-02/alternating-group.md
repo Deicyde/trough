@@ -1,12 +1,3 @@
----
-article_id: af_4c425b4601e73e5607189d1b
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: alternatingGroup
-mathlib_file: Mathlib/GroupTheory/SpecificGroups/Alternating.lean
----
-
 # Alternating group
 
 The **alternating group** $A_n$ is the group of even permutations of $n$ letters,

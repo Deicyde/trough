@@ -1,12 +1,3 @@
----
-article_id: af_3bfce7d60faebc3908af3218
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: GCDMonoid.gcd
-mathlib_file: Mathlib/Algebra/GCDMonoid/Basic.lean
----
-
 # Greatest common divisor
 
 The **greatest common divisor** of two elements $a$ and $b$ is a common divisor

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ConvexOn.map_integral_le
-mathlib_file: Mathlib/Analysis/Convex/Integral.lean
----
-
 # Jensen's inequality (integral version)
 
 **Jensen's inequality**: if a function `g : E → ℝ` is convex and continuous on a convex closed

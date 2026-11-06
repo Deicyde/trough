@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: εNFA
-mathlib_file: Mathlib/Computability/EpsilonNFA.lean
----
-
 # $\varepsilon$-NFA
 
 An `εNFA` is a set of states (`σ`), a transition function from state to state labelled by the

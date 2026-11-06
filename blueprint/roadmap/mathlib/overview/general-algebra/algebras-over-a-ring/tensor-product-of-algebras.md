@@ -1,12 +1,3 @@
----
-article_id: af_2a3fe4abee3d84ed99cfa2e0
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Algebra.TensorProduct.instAlgebra
-mathlib_file: Mathlib/RingTheory/TensorProduct/Basic.lean
----
-
 # Tensor product of algebras
 
 The **tensor product of algebras** $A \otimes_R B$ of two [associative algebras](associative-algebra-over-a-commutative-ring.md) $A$ and $B$ over a commutative ring $R$ is the [tensor product](../../linear-algebra/fundamentals/tensor-product.md) of their underlying [modules](../../linear-algebra/fundamentals/module.md), made into an $R$-algebra by multiplying factor by factor. It is the standard way to combine two algebras into one in which each acts on its own side: it changes the base ring of an algebra (base change), it builds polynomial and matrix algebras over an $R$-algebra $A$ from those over $R$, and for commutative algebras it is the coproduct, the algebraic counterpart of the fibre product of affine schemes.

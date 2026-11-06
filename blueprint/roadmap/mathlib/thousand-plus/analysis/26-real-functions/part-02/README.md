@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Rolle's theorem to Taylor's theorem
 
 - [Rolle's theorem](../../../../overview/analysis/differentiability/rolles-theorem.md)

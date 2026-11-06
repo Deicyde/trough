@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: CompositionSeries.jordan_holder
-mathlib_file: Mathlib/Order/JordanHolder.lean
----
-
 # Jordan–Hölder theorem
 
 The **Jordan-Hölder** theorem, stated for any `JordanHolderLattice`.

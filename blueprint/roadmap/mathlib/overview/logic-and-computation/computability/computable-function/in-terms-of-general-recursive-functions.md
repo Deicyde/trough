@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Computable
-mathlib_file: Mathlib/Computability/Partrec.lean
----
-
 # In terms of general recursive functions
 
 Computable functions `α → σ` between `Primcodable` types:

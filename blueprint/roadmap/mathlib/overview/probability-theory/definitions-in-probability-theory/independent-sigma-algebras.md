@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.iIndep
-mathlib_file: Mathlib/Probability/Independence/Basic.lean
----
-
 # Independent sigma-algebras
 
 A family of measurable space structures (i.e. of σ-algebras) is independent with respect to a

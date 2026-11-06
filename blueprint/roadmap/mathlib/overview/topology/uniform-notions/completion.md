@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: UniformSpace.Completion
-mathlib_file: Mathlib/Topology/UniformSpace/Completion.lean
----
-
 # Completion
 
 Hausdorff completion of `α`

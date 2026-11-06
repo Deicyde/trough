@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: BuffonsNeedle.buffon_short, BuffonsNeedle.buffon_long
-mathlib_file: Archive/Wiedijk100Theorems/BuffonsNeedle.lean
----
-
 # Buffon Needle Problem
 
 Mathlib records this with 2 declarations.

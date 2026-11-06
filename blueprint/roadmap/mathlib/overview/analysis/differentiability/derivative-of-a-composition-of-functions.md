@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasFDerivAt.comp
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Comp.lean
----
-
 # Derivative of a composition of functions (Analysis)
 
 The chain rule.

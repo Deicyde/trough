@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.Pivot.exists_list_transvec_mul_mul_list_transvec_eq_diagonal
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Transvection.lean
----
-
 # Gaussian elimination
 
 Any matrix can be reduced to diagonal form by elementary operations.

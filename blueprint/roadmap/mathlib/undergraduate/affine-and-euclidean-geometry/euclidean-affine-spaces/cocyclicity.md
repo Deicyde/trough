@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.Concyclic
-mathlib_file: Mathlib/Geometry/Euclidean/Sphere/Basic.lean
----
-
 # Cocyclicity
 
 A set of points is concyclic if it is cospherical and coplanar. (Most results are stated

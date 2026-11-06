@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: LieModule.exists_nontrivial_weightSpace_of_isSolvable
-mathlib_file: Mathlib/Algebra/Lie/LieTheorem.lean
----
-
 # Lie's theorem
 
 **Lie's theorem**: Lie modules of solvable Lie algebras over fields of characteristic 0

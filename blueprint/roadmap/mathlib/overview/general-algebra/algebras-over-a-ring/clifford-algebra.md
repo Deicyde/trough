@@ -1,12 +1,3 @@
----
-article_id: af_2475847242db32beb7d5027e
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: CliffordAlgebra
-mathlib_file: Mathlib/LinearAlgebra/CliffordAlgebra/Basic.lean
----
-
 # Clifford algebra
 
 The **Clifford algebra** of a [module](../../linear-algebra/fundamentals/module.md) $M$ over a commutative [ring](../rings/ring.md) $R$, equipped with a

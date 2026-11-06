@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Set
-mathlib_file: Mathlib/Data/Set/Defs.lean
----
-
 # Set
 
 A set is a collection of elements of some type `α`.

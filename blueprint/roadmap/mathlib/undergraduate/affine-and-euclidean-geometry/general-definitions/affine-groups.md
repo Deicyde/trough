@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: AffineEquiv.group
-mathlib_file: Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.lean
----
-
 # Affine groups
 
 Mathlib states this as `AffineEquiv.group`.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Real.log
-mathlib_file: Mathlib/Analysis/SpecialFunctions/Log/Basic.lean
----
-
 # Logarithm
 
 The real logarithm function, equal to the inverse of the exponential for `x > 0`,

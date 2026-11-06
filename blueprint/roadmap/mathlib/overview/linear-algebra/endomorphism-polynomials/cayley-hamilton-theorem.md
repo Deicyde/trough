@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.aeval_self_charpoly
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.lean
----
-
 # Cayley-Hamilton theorem
 
 The **Cayley-Hamilton Theorem**, that the characteristic polynomial of a matrix,

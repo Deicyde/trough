@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.sum_pow_eq_sum_piAntidiag_of_commute
-mathlib_file: Mathlib/Data/Nat/Choose/Multinomial.lean
----
-
 # Multinomial theorem
 
 The **multinomial theorem**.

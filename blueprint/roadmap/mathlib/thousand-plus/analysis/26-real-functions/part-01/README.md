@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Abel's theorem to Rademacher's theorem
 
 - [Abel's theorem](abels-theorem.md)

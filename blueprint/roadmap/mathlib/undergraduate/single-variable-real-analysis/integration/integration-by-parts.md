@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: intervalIntegral.integral_mul_deriv_eq_deriv_mul
-mathlib_file: Mathlib/MeasureTheory/Integral/IntervalIntegral/IntegrationByParts.lean
----
-
 # Integration by parts
 
 **Integration by parts**. Special case of

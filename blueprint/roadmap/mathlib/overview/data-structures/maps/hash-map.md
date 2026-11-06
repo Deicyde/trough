@@ -1,10 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Std.HashMap
----
-
 # Hash map
 
 Hash maps.

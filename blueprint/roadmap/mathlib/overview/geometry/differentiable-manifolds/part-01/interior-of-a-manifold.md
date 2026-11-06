@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ModelWithCorners.interior
-mathlib_file: Mathlib/Geometry/Manifold/IsManifold/InteriorBoundary.lean
----
-
 # Interior of a manifold
 
 The **interior** of a manifold `M` is the set of its interior points.

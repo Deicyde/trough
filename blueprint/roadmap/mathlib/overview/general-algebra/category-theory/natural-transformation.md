@@ -1,12 +1,3 @@
----
-article_id: af_a2e92639b38f504473e7b17f
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.NatTrans
-mathlib_file: Mathlib/CategoryTheory/NatTrans.lean
----
-
 # Natural transformation
 
 A **natural transformation** is a morphism between two [functors](functor.md)

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ContMDiffVectorBundle.pullback
-mathlib_file: Mathlib/Geometry/Manifold/VectorBundle/Pullback.lean
----
-
 # (smooth) pullback vector bundle
 
 For a `C^n` vector bundle `E` over a manifold `B` and a `C^n` map `f : B' → B`, the pullback

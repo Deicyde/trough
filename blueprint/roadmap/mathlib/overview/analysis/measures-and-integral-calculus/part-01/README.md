@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Sigma-algebra to Fundamental theorem of…
 
 - [Sigma-algebra](sigma-algebra.md)

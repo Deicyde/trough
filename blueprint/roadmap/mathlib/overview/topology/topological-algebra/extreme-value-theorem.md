@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsCompact.exists_isMinOn
-mathlib_file: Mathlib/Topology/Order/Compact.lean
----
-
 # Extreme value theorem
 
 The **extreme value theorem**: a continuous function realizes its minimum on a compact set.

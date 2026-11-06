@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: isMIntegralCurveOn_Ioo_eqOn_of_contMDiff_boundaryless
-mathlib_file: Mathlib/Geometry/Manifold/IntegralCurve/ExistUnique.lean
----
-
 # Uniqueness of integral curves
 
 Mathlib states this as `isMIntegralCurveOn_Ioo_eqOn_of_contMDiff_boundaryless`.

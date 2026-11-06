@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ContinuousLinearMap.isOpenMap
-mathlib_file: Mathlib/Analysis/Normed/Operator/Banach.lean
----
-
 # Banach open mapping theorem
 
 The Banach open mapping theorem: a surjective bounded linear map between Banach spaces is

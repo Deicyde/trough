@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: SchwartzMap
-mathlib_file: Mathlib/Analysis/Distribution/SchwartzSpace/Basic.lean
----
-
 # Schwartz space
 
 A function is a Schwartz function if it is smooth and all derivatives decay faster than

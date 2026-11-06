@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: PointedCone.minTensorProduct
-mathlib_file: Mathlib/Geometry/Convex/Cone/TensorProduct.lean
----
-
 # Minimal tensor product
 
 The minimal tensor product of two cones is given by all conical combinations of elementary

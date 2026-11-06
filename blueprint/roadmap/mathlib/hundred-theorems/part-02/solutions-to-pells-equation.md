@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Pell.eq_pell, Pell.exists_of_not_isSquare
-mathlib_file: Mathlib/NumberTheory/PellMatiyasevic.lean
----
-
 # Solutions to Pell’s Equation (Freek Wiedijk's 100 theorems)
 
 Mathlib records this with 2 declarations.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_ratio_deriv_eq_ratio_slope
-mathlib_file: Mathlib/Analysis/Calculus/Deriv/MeanValue.lean
----
-
 # Mean value theorem (Differentiability)
 
 Cauchy's Mean Value Theorem, `deriv` version.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.heron
-mathlib_file: Archive/Wiedijk100Theorems/HeronsFormula.lean
----
-
 # Heron’s Formula
 
 **Heron's formula**: The area of a triangle with side lengths `a`, `b`, and `c` is

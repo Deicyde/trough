@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: TangentBundle
-mathlib_file: Mathlib/Geometry/Manifold/IsManifold/Basic.lean
----
-
 # Tangent bundle
 
 The tangent bundle to a manifold, as a Sigma type. Defined in terms of

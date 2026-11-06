@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CovariantDerivative
-mathlib_file: Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Basic.lean
----
-
 # Covariant derivatives
 
 Bundled global covariant derivative on a vector bundle.

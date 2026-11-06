@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: add_pow
-mathlib_file: Mathlib/Data/Nat/Choose/Sum.lean
----
-
 # The Binomial Theorem
 
 The **binomial theorem**

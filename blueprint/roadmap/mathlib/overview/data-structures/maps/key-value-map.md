@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AList
-mathlib_file: Mathlib/Data/List/AList.lean
----
-
 # Key-value map
 
 `AList β` is a key-value map stored as a `List` (i.e. a linked list).

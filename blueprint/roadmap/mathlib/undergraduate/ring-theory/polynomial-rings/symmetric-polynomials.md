@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MvPolynomial.IsSymmetric
-mathlib_file: Mathlib/RingTheory/MvPolynomial/Symmetric/Defs.lean
----
-
 # Symmetric polynomials
 
 A `MvPolynomial φ` is symmetric if it is invariant under

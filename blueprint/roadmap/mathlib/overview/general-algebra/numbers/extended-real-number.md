@@ -1,12 +1,3 @@
----
-article_id: af_12cec79e6efdb97abfd045ce
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: EReal
-mathlib_file: Mathlib/Data/EReal/Basic.lean
----
-
 # Extended real number
 
 The **extended real numbers** are the [real numbers](real-number.md) together with

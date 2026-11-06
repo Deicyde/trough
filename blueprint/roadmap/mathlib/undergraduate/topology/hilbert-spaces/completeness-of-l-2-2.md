@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Lp.instCompleteSpace
-mathlib_file: Mathlib/MeasureTheory/Function/LpSpace/Complete.lean
----
-
 # Completeness of $L^2$
 
 `Lp` is complete for `1 ≤ p`.

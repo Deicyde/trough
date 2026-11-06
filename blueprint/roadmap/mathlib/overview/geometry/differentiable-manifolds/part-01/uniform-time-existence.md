@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_isMIntegralCurve_of_isMIntegralCurveOn
-mathlib_file: Mathlib/Geometry/Manifold/IntegralCurve/UniformTime.lean
----
-
 # Uniform time existence
 
 If there exists `ε > 0` such that the local integral curve at each point `x : M` is defined at

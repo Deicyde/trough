@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.Ultraproduct.sentence_realize
-mathlib_file: Mathlib/ModelTheory/Ultraproducts.lean
----
-
 # Łoś' theorem
 
 **Łoś's Theorem**: A sentence is true in an ultraproduct if and only if the set of structures

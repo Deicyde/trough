@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.Substructure
-mathlib_file: Mathlib/ModelTheory/Substructures.lean
----
-
 # Substructure
 
 A substructure of a structure `M` is a set closed under application of function symbols.

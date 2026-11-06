@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.annIdeal
-mathlib_file: Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean
----
-
 # Annihilating polynomials
 
 `annIdeal R a` is the *annihilating ideal* of all `p : R[X]` such that `p(a) = 0`.

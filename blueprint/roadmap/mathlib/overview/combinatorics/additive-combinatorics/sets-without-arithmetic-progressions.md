@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ThreeAPFree
-mathlib_file: Mathlib/Combinatorics/Additive/AP/Three/Defs.lean
----
-
 # Sets without arithmetic progressions
 
 A set is **3AP-free** if it does not contain any non-trivial arithmetic

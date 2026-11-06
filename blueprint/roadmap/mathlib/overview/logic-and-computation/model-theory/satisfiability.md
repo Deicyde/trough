@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.Theory.IsSatisfiable
-mathlib_file: Mathlib/ModelTheory/Satisfiability.lean
----
-
 # Satisfiability
 
 A theory is satisfiable if a structure models it.

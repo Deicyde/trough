@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasCompactSupport.contDiff_convolution_left
-mathlib_file: Mathlib/Analysis/Calculus/ContDiff/Convolution.lean
----
-
 # Regularization by convolution
 
 Mathlib states this as `HasCompactSupport.contDiff_convolution_left`.

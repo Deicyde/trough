@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: isInteger_of_is_root_of_monic
-mathlib_file: Mathlib/RingTheory/Polynomial/RationalRoot.lean
----
-
 # Integral root theorem
 
 **Integral root theorem**:

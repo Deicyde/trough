@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Module.equiv_free_prod_directSum
-mathlib_file: Mathlib/Algebra/Module/PID.lean
----
-
 # Structure theorem
 
 **Structure theorem of finitely generated modules over a PID** : A finitely generated

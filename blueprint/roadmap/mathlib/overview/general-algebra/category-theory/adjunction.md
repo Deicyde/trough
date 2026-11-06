@@ -1,12 +1,3 @@
----
-article_id: af_9061363e737f06b93109d976
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Adjunction
-mathlib_file: Mathlib/CategoryTheory/Adjunction/Basic.lean
----
-
 # Adjunction
 
 An **adjunction** is a relationship between two [functors](functor.md)

@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Group to Nilpotent group
 
 - [Group](group.md)

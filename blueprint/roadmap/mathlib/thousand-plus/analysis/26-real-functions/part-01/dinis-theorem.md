@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Monotone.tendstoLocallyUniformly_of_forall_tendsto
-mathlib_file: Mathlib/Topology/UniformSpace/Dini.lean
----
-
 # Dini's theorem
 
 **Dini's theorem**: if `F n` is a monotone increasing collection of continuous functions

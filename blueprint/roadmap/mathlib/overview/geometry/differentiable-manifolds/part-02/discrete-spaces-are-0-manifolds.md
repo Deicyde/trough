@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsManifold.of_discreteTopology
-mathlib_file: Mathlib/Geometry/Manifold/IsManifold/Basic.lean
----
-
 # Discrete spaces are 0-manifolds
 
 A discrete space `M` is a smooth manifold over the trivial model on a trivial normed space.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.triangle_removal
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/Triangle/Removal.lean
----
-
 # Triangle removal lemma
 
 **Triangle Removal Lemma**. If there are not too many triangles (on the order of `(card α)^3`)

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.ProbabilityMeasure.tendsto_iff_forall_integral_tendsto
-mathlib_file: Mathlib/MeasureTheory/Measure/ProbabilityMeasure.lean
----
-
 # Convergence in distribution
 
 The characterization of weak convergence of probability measures by the usual (defining)

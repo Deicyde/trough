@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.friendship_theorem
-mathlib_file: Archive/Wiedijk100Theorems/FriendshipGraphs.lean
----
-
 # The Friendship Theorem
 
 **Friendship theorem**: We wish to show that a friendship graph has a politician (a vertex

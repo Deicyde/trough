@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Real.instCompleteSpace
-mathlib_file: Mathlib/Topology/UniformSpace/Real.lean
----
-
 # Completeness of R
 
 Mathlib states this as `Real.instCompleteSpace`.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.binomial
-mathlib_file: Mathlib/Probability/Distributions/Binomial.lean
----
-
 # Binomial law
 
 The binomial probability distribution with parameter `p`.

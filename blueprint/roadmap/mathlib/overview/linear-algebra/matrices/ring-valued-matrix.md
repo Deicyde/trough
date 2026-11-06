@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Defs.lean
----
-
 # Ring-valued matrix
 
 `Matrix m n R` is the type of matrices with entries in `R`, whose rows are indexed by `m`

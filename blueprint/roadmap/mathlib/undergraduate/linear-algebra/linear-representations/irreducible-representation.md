@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Representation.IsIrreducible
-mathlib_file: Mathlib/RepresentationTheory/Irreducible.lean
----
-
 # Irreducible representation
 
 A representation `ρ` is irreducible if it is non-trivial and has no proper non-trivial

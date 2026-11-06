@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.integral_divergence_of_hasFDerivAt_off_countable
-mathlib_file: Mathlib/MeasureTheory/Integral/DivergenceTheorem.lean
----
-
 # Divergence theorem
 
 **Divergence theorem** for Bochner integral. If `f : ℝⁿ⁺¹ → Eⁿ⁺¹` is continuous on a rectangular

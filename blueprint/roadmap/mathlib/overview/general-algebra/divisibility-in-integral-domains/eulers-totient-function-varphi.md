@@ -1,12 +1,3 @@
----
-article_id: af_e68bb2f066366e6348974b7c
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.totient
-mathlib_file: Mathlib/Data/Nat/Totient.lean
----
-
 # Euler's totient function ($\varphi$)
 
 **Euler's totient function**, written $\varphi$, assigns to each positive

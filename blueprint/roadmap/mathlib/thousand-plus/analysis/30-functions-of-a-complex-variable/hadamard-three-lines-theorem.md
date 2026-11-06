@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.HadamardThreeLines.norm_le_interpStrip_of_mem_verticalClosedStrip
-mathlib_file: Mathlib/Analysis/Complex/Hadamard.lean
----
-
 # Hadamard three-lines theorem
 
 **Hadamard three-line theorem**: If `f` is a bounded function, continuous on the

@@ -1,12 +1,3 @@
----
-article_id: af_4ee71ddd9be39056abe10431
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.orthogonalGroup
-mathlib_file: Mathlib/LinearAlgebra/UnitaryGroup.lean
----
-
 # Orthogonal group
 
 The **orthogonal group** $\mathrm{O}(n)$ is the group of $n \times n$ matrices whose transpose is their inverse. Over the real numbers these are exactly the matrices of the linear maps of $\mathbb{R}^n$ that preserve lengths and angles: the rotations, the reflections and their composites. It is one of the classical groups, it is the symmetry group of Euclidean geometry with a fixed origin, and it serves as a basic example of a compact [Lie group](../../../overview/geometry/differentiable-manifolds/part-01/lie-group.md).

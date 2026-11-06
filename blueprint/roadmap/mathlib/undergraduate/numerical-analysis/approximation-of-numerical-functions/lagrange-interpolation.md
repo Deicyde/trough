@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Lagrange.interpolate
-mathlib_file: Mathlib/LinearAlgebra/Lagrange.lean
----
-
 # Lagrange interpolation
 
 Lagrange interpolation: given a finset `s : Finset ι`, a nodal map `v : ι → F` injective on

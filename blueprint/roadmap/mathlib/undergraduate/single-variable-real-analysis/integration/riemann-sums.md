@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: BoxIntegral.integralSum
-mathlib_file: Mathlib/Analysis/BoxIntegral/Basic.lean
----
-
 # Riemann sums
 
 The integral sum of `f : ℝⁿ → E` over a tagged prepartition `π` w.r.t. box-additive volume `vol`

@@ -1,12 +1,3 @@
----
-article_id: af_86d5ec0a5d38cf05d1997a86
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsOrderedRing
-mathlib_file: Mathlib/Algebra/Order/Ring/Defs.lean
----
-
 # Ordered ring
 
 An **ordered ring** is a [ring](ring.md) equipped with an order that is compatible with its

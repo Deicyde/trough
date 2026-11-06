@@ -1,12 +1,3 @@
----
-article_id: af_994534450cf20554d7e27814
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Group
-mathlib_file: Mathlib/Algebra/Group/Defs.lean
----
-
 # Group
 
 A **group** is a [set](../../../data-structures/sets/set.md) equipped with an associative binary operation that has an

@@ -1,12 +1,3 @@
----
-article_id: af_3b9bf4ffe681f50a269fc85f
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.Separable
-mathlib_file: Mathlib/FieldTheory/Separable.lean
----
-
 # Separable polynomial
 
 A **separable polynomial** over a [field](../field-theory/field.md) is a nonzero [polynomial](polynomial-in-one-indeterminate.md) without

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: intervalIntegral.continuous_of_dominated_interval
-mathlib_file: Mathlib/MeasureTheory/Integral/DominatedConvergence.lean
----
-
 # Continuity of integrals with respect to parameters
 
 Continuity of interval integral with respect to a parameter.

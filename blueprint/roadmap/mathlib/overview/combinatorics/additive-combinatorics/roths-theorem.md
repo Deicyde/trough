@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: roth_3ap_theorem_nat
-mathlib_file: Mathlib/Combinatorics/Additive/Corner/Roth.lean
----
-
 # Roth's theorem
 
 **Roth's theorem** for `ℕ`.

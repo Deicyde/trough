@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: convexHull_eq_union
-mathlib_file: Mathlib/Analysis/Convex/Caratheodory.lean
----
-
 # Carathéodory's theorem
 
 **Carathéodory's convexity theorem**

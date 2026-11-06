@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: metricSpacePi
-mathlib_file: Mathlib/Topology/MetricSpace/Basic.lean
----
-
 # Finite product of metric spaces
 
 A finite product of metric spaces is a metric space, with the sup distance.

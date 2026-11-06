@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: PadicInt.hasSum_mahler
-mathlib_file: Mathlib/NumberTheory/Padics/MahlerBasis.lean
----
-
 # Mahler's theorem
 
 **Mahler's theorem**: for any continuous function `f` from `ℤ_[p]` to a `p`-adic Banach space, the

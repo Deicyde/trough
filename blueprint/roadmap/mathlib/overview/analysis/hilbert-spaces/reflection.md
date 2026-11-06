@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.reflection
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Projection/Reflection.lean
----
-
 # Reflection
 
 Reflection in a complete subspace of an inner product space.  The word "reflection" is

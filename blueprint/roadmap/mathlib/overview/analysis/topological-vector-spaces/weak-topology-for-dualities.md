@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: WeakBilin.instTopologicalSpace
-mathlib_file: Mathlib/Topology/Algebra/Module/Spaces/WeakBilin.lean
----
-
 # Weak-* topology for dualities
 
 Mathlib states this as `WeakBilin.instTopologicalSpace`.

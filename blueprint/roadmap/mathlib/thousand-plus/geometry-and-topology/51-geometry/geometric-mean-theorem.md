@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.dist_sq_eq_dist_mul_dist_of_angle_eq_pi_div_two
-mathlib_file: Mathlib/Geometry/Euclidean/Angle/Unoriented/RightAngle.lean
----
-
 # Geometric mean theorem
 
 **Geometric mean theorem** (or right triangle altitude theorem): in a right-angled triangle

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.borelCaratheodory
-mathlib_file: Mathlib/Analysis/Complex/BorelCaratheodory.lean
----
-
 # Borel–Carathéodory theorem
 
 **Borel-Carathéodory theorem**.

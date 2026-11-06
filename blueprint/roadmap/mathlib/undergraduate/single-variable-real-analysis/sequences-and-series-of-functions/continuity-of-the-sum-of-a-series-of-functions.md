@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: continuous_tsum
-mathlib_file: Mathlib/Analysis/Normed/Group/FunctionSeries.lean
----
-
 # Continuity of the sum of a series of functions
 
 An infinite sum of functions with summable sup norm is continuous if each individual

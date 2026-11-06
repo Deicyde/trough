@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ConvexCone.positive
-mathlib_file: Mathlib/Geometry/Convex/Cone/Basic.lean
----
-
 # Positive cone
 
 The positive cone is the convex cone formed by the set of nonnegative elements in an ordered

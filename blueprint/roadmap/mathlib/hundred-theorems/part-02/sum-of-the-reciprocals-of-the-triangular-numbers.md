@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.inverse_triangle_sum
-mathlib_file: Archive/Wiedijk100Theorems/InverseTriangleSum.lean
----
-
 # Sum of the Reciprocals of the Triangular Numbers
 
 **Sum of the Reciprocals of the Triangular Numbers**

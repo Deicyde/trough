@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.Basis.dualBasis
-mathlib_file: Mathlib/LinearAlgebra/Dual/Basis.lean
----
-
 # Dual basis
 
 Maps a basis for `V` to a basis for the dual space.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.rank_range_add_rank_ker
-mathlib_file: Mathlib/LinearAlgebra/Dimension/RankNullity.lean
----
-
 # Rank–nullity theorem
 
 The **rank-nullity theorem**

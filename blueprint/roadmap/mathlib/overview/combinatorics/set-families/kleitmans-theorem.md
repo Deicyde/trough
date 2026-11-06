@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.card_biUnion_le_of_intersecting
-mathlib_file: Mathlib/Combinatorics/SetFamily/Kleitman.lean
----
-
 # Kleitman's theorem
 
 **Kleitman's theorem**. An intersecting family on `n` elements contains at most `2ⁿ⁻¹` sets, and

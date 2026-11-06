@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Function.cantor_surjective
-mathlib_file: Mathlib/Logic/Function/Basic.lean
----
-
 # Cantor’s Theorem
 
 **Cantor's diagonal argument** implies that there are no surjective functions from `α`

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.cos_add_sin_mul_I_pow
-mathlib_file: Mathlib/Analysis/Complex/Trigonometric.lean
----
-
 # De Moivre’s Formula
 
 **De Moivre's formula**

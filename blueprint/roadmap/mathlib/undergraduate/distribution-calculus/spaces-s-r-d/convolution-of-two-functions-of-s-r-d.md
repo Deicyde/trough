@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: SchwartzMap.convolution
-mathlib_file: Mathlib/Analysis/Fourier/Convolution.lean
----
-
 # Convolution of two functions of $\mathcal{S}(\R^d)$
 
 The bilinear convolution of Schwartz functions.

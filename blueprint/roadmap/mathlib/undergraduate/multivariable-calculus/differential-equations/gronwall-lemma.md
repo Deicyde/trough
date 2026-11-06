@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: norm_le_gronwallBound_of_norm_deriv_right_le
-mathlib_file: Mathlib/Analysis/ODE/Gronwall.lean
----
-
 # Grönwall lemma
 
 A Grönwall-like inequality: if `f : ℝ → E` is continuous on `[a, b]`, has right derivative

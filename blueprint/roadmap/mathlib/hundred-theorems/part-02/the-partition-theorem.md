@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.Partition.card_odds_eq_card_distincts
-mathlib_file: Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean
----
-
 # The Partition Theorem
 
 Mathlib states this as `Nat.Partition.card_odds_eq_card_distincts`.

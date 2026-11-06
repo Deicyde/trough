@@ -1,10 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Batteries.DList
----
-
 # Difference list
 
 A difference List is a Function that, given a List, returns the original

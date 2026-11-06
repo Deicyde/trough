@@ -1,11 +1,3 @@
----
-declaration: inductive
-origin: cited
-mathlib: true
-mathlib_declaration: WType
-mathlib_file: Mathlib/Data/W/Basic.lean
----
-
 # W type
 
 Given `β : α → Type*`, `WType β` is the type of finitely branching trees where nodes are labeled by

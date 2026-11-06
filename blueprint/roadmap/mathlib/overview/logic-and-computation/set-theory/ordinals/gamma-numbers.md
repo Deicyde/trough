@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Ordinal.gamma
-mathlib_file: Mathlib/SetTheory/Ordinal/Veblen.lean
----
-
 # Gamma numbers
 
 The gamma function enumerates the fixed points of `veblen · 0`.

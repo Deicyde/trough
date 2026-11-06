@@ -1,12 +1,3 @@
----
-article_id: af_026a7af788fe8665aeb5655c
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AlgebraicGeometry.SheafedSpace
-mathlib_file: Mathlib/Geometry/RingedSpace/SheafedSpace.lean
----
-
 # Sheafed space
 
 A **sheafed space** is a [topological space](../../topology/general-topology/part-01/topological-space.md) together with a sheaf on it with values in a fixed [category](category.md) $\mathcal{C}$: an object of $\mathcal{C}$ for each open set, with restriction maps, such that data given locally on an open cover and agreeing on overlaps glue uniquely. It is the common frame for spaces described by their local functions. Smooth manifolds with their smooth functions, and spectra of commutative rings with their structure sheaves, are sheafed spaces over commutative rings. The sheafed spaces over commutative rings are the ringed spaces, and [locally ringed spaces](../../geometry/algebraic-geometry/locally-ringed-space.md) and [schemes](../../geometry/algebraic-geometry/scheme.md) are ringed spaces with further conditions.

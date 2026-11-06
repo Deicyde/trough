@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: UniformSpace
-mathlib_file: Mathlib/Topology/UniformSpace/Defs.lean
----
-
 # Uniform space
 
 A uniform space is a generalization of the "uniform" topological aspects of a

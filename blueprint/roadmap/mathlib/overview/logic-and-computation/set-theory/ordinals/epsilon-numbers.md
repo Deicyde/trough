@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Ordinal.epsilon
-mathlib_file: Mathlib/SetTheory/Ordinal/Veblen.lean
----
-
 # Epsilon numbers
 
 The epsilon function enumerates the fixed points of `ω ^ ⬝`.

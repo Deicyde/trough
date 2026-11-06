@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsStarNormal
-mathlib_file: Mathlib/Algebra/Star/SelfAdjoint.lean
----
-
 # Normal endomorphism
 
 An element of a star monoid is normal if it commutes with its adjoint.

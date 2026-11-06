@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: niven
-mathlib_file: Mathlib/NumberTheory/Niven.lean
----
-
 # Niven's theorem
 
 **Niven's theorem**: The only rational values of `cos` that occur at rational multiples of π

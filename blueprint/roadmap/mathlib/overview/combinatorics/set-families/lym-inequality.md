@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.lubell_yamamoto_meshalkin_inequality_sum_card_div_choose
-mathlib_file: Mathlib/Combinatorics/SetFamily/LYM.lean
----
-
 # LYM inequality
 
 The **Lubell-Yamamoto-Meshalkin inequality**, also known as the **LYM inequality**.

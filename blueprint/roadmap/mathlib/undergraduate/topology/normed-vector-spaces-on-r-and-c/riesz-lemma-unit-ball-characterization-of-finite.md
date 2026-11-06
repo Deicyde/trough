@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FiniteDimensional.of_isCompact_closedBall
-mathlib_file: Mathlib/Analysis/Normed/Module/FiniteDimension.lean
----
-
 # Riesz' lemma (unit-ball characterization of finite dimension)
 
 **Riesz's theorem**: if a closed ball of positive radius is compact in a vector space, then the

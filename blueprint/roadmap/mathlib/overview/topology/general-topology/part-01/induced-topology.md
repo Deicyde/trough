@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: TopologicalSpace.induced
-mathlib_file: Mathlib/Topology/Defs/Induced.lean
----
-
 # Induced topology
 
 Given `f : X → Y` and a topology on `Y`,

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: PowerSeries.WithPiTopology.hasProd_one_sub_X_pow, hasProd_eulerFunction
-mathlib_file: Mathlib/Combinatorics/Enumerative/Pentagonal/PowerSeries.lean
----
-
 # Pentagonal number theorem
 
 Mathlib records this with 2 declarations.

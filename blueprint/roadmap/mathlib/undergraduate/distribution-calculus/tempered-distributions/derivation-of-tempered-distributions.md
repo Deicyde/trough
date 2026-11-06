@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: TemperedDistribution.instLineDeriv
-mathlib_file: Mathlib/Analysis/Distribution/TemperedDistribution.lean
----
-
 # Derivation of tempered distributions
 
 The partial derivative (or directional derivative) in the direction `m : E` as a

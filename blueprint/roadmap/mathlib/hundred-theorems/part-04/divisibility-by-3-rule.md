@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.three_dvd_iff
-mathlib_file: Mathlib/Data/Nat/Digits/Div.lean
----
-
 # Divisibility by 3 Rule
 
 **Divisibility by 3 Rule**

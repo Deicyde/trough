@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AlgebraicGeometry.Scheme
-mathlib_file: Mathlib/AlgebraicGeometry/Scheme.lean
----
-
 # Scheme
 
 We define `Scheme` as an `X : LocallyRingedSpace`,

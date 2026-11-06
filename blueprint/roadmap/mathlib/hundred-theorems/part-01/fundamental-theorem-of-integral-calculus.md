@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: intervalIntegral.integral_hasStrictDerivAt_of_tendsto_ae_right, intervalIntegral.integral_eq_sub_of_hasDeriv_right_of_le
-mathlib_file: Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean
----
-
 # Fundamental Theorem of Integral Calculus
 
 Mathlib records this with 2 declarations.

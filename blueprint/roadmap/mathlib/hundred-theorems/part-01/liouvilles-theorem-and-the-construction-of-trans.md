@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Liouville.transcendental
-mathlib_file: Mathlib/NumberTheory/Transcendental/Liouville/Basic.lean
----
-
 # Liouville’s Theorem and the Construction of Transcendental Numbers
 
 **Liouville's Theorem**

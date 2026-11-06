@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: TendstoLocallyUniformlyOn.differentiableOn
-mathlib_file: Mathlib/Analysis/Complex/LocallyUniformLimit.lean
----
-
 # Holomorphic stability under uniform convergence
 
 A locally uniform limit of holomorphic functions on an open domain of the complex plane is

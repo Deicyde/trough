@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Convex
-mathlib_file: Mathlib/Analysis/Convex/Basic.lean
----
-
 # Convex subsets
 
 Convexity of sets.

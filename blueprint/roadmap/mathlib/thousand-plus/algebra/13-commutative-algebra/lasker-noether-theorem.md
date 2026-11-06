@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.isPrimary_decomposition_pairwise_ne_radical
-mathlib_file: Mathlib/RingTheory/Lasker.lean
----
-
 # Lasker–Noether theorem
 
 Mathlib states this as `Submodule.isPrimary_decomposition_pairwise_ne_radical`.

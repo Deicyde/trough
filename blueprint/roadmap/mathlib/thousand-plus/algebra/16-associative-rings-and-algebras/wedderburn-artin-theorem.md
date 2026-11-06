@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsSimpleRing.exists_algEquiv_matrix_divisionRing, IsSemisimpleRing.exists_algEquiv_pi_matrix_divisionRing
-mathlib_file: Mathlib/RingTheory/SimpleModule/WedderburnArtin.lean
----
-
 # Wedderburn–Artin theorem
 
 Mathlib records this with 2 declarations.

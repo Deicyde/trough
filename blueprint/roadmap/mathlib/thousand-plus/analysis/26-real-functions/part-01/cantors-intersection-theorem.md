@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsCompact.nonempty_sInter_of_directed_nonempty_isCompact_isClosed
-mathlib_file: Mathlib/Topology/Compactness/Compact.lean
----
-
 # Cantor's intersection theorem
 
 Cantor's intersection theorem for `sInter`:

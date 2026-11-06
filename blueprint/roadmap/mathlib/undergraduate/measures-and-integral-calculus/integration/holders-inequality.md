@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: NNReal.lintegral_mul_le_Lp_mul_Lq
-mathlib_file: Mathlib/MeasureTheory/Integral/MeanInequalities.lean
----
-
 # Hölder's inequality
 
 Hölder's inequality for functions `α → ℝ≥0`. The integral of the product of two functions

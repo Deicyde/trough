@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: fderiv
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Defs.lean
----
-
 # Differentials (linear tangent functions)
 
 If `f` has a derivative at `x`, then `fderiv 𝕜 f x` is such a derivative. Otherwise, it is

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Rayleigh.lean
----
-
 # Eigenvalues from Rayleigh quotient
 
 For a self-adjoint operator `T`, a local extremum of the Rayleigh quotient of `T` on a sphere

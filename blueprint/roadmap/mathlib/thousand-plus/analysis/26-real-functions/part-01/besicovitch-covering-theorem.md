@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Besicovitch.exists_disjoint_closedBall_covering_ae
-mathlib_file: Mathlib/MeasureTheory/Covering/Besicovitch.lean
----
-
 # Besicovitch covering theorem
 
 The measurable **Besicovitch covering theorem**.

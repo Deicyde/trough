@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasFPowerSeriesOnBall.differentiableOn
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Analytic.lean
----
-
 # Differentiability with respect to the complex variable
 
 Mathlib states this as `HasFPowerSeriesOnBall.differentiableOn`.

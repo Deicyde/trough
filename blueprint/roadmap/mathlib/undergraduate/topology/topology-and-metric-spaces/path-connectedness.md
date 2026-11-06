@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsPathConnected
-mathlib_file: Mathlib/Topology/Connected/PathConnected.lean
----
-
 # Path connectedness
 
 A set `F` is path connected if it contains a point that can be joined to all other in `F`.

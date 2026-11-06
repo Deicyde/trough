@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Order.iso_of_countable_dense
-mathlib_file: Mathlib/Order/CountableDenseLinearOrder.lean
----
-
 # Cantor's isomorphism theorem
 
 Any two countable dense, nonempty linear orders without endpoints are order isomorphic. This is

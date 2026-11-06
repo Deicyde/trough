@@ -1,12 +1,3 @@
----
-article_id: af_1eab6da043d49505fc946702
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Equiv.Perm.truncSwapFactors
-mathlib_file: Mathlib/GroupTheory/Perm/Sign.lean
----
-
 # Decomposition into transpositions
 
 The **decomposition into transpositions** expresses every permutation of a finite set as a

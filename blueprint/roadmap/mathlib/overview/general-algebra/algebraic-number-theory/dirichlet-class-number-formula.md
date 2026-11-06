@@ -1,12 +1,3 @@
----
-article_id: af_5613a68680892121d5be3db0
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT
-mathlib_file: Mathlib/NumberTheory/NumberField/DedekindZeta.lean
----
-
 # Dirichlet class number formula
 
 The **Dirichlet class number formula**, also called the analytic class number

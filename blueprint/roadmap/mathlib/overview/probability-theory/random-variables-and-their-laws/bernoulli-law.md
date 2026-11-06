@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.bernoulliMeasure
-mathlib_file: Mathlib/Probability/Distributions/Bernoulli.lean
----
-
 # Bernoulli law
 
 The **Bernoulli distribution** over an arbitrary measurable space `X`.

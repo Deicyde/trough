@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Ordinal.IsFundamentalSeq
-mathlib_file: Mathlib/SetTheory/Ordinal/FundamentalSequence.lean
----
-
 # Fundamental sequences
 
 A fundamental sequence for `o` is a strictly monotonic function `Iio o.cof.ord → Iio o` with

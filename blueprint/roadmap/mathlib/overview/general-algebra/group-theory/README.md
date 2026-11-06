@@ -1,7 +1,3 @@
----
-article_id: af_e620bc4c5ed6c6bf13b0d972
----
-
 # Group theory
 
 **Group theory** is the study of [groups](part-01/group.md): sets with an associative

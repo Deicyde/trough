@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: T2Space
-mathlib_file: Mathlib/Topology/Separation/Hausdorff.lean
----
-
 # Hausdorff space
 
 A T₂ space, also known as a Hausdorff space, is one in which for every

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsMIntegralCurve
-mathlib_file: Mathlib/Geometry/Manifold/IntegralCurve/Basic.lean
----
-
 # Integral curves
 
 If `v : M → TM` is a vector field on `M`, `IsMIntegralCurve γ v` means `γ : ℝ → M` is a global

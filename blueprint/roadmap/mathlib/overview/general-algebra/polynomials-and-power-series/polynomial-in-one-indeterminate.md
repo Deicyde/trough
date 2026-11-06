@@ -1,12 +1,3 @@
----
-article_id: af_09c6cb356916e6eac6c46ed8
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial
-mathlib_file: Mathlib/Algebra/Polynomial/Basic.lean
----
-
 # Polynomial in one indeterminate
 
 A **polynomial in one indeterminate** over a [ring](../rings/ring.md) $R$ is a formal expression

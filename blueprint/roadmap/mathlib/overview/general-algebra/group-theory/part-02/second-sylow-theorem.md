@@ -1,12 +1,3 @@
----
-article_id: af_7d8d25ac4e777bdd74493fbd
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Sylow.isPretransitive_of_finite
-mathlib_file: Mathlib/GroupTheory/Sylow.lean
----
-
 # Second Sylow theorem
 
 The **second Sylow theorem** says that in a finite [group](../part-01/group.md), for each prime $p$, any two

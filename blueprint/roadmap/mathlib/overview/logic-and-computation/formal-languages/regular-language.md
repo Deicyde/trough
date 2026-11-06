@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Language.IsRegular
-mathlib_file: Mathlib/Computability/DFA.lean
----
-
 # Regular language
 
 A regular language is a language that is defined by a DFA with finite states.

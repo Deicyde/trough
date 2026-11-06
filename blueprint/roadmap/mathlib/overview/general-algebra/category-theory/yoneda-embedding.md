@@ -1,12 +1,3 @@
----
-article_id: af_9e71b1a1074d4ee4bc1b96e3
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.yoneda
-mathlib_file: Mathlib/CategoryTheory/Yoneda.lean
----
-
 # Yoneda embedding
 
 The **Yoneda embedding** of a [category](category.md) $\mathcal{C}$

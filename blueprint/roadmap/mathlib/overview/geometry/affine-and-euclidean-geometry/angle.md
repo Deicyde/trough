@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: InnerProductGeometry.angle
-mathlib_file: Mathlib/Geometry/Euclidean/Angle/Unoriented/Basic.lean
----
-
 # Angle
 
 The undirected angle between two vectors. If either vector is 0,

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.eventually_eq_of_isLocalMax_norm
-mathlib_file: Mathlib/Analysis/Complex/AbsMax.lean
----
-
 # Maximum modulus principle
 
 **Maximum modulus principle**: if `f : E → F` is complex differentiable in a neighborhood of `c`

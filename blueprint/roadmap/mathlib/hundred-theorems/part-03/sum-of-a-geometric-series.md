@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: geom_sum_Ico, NNReal.hasSum_geometric
-mathlib_file: Mathlib/Algebra/Field/GeomSum.lean
----
-
 # Sum of a Geometric Series
 
 Mathlib records this with 2 declarations.

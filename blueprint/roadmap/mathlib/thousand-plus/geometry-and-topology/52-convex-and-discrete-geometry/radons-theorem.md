@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Convex.radon_partition
-mathlib_file: Mathlib/Analysis/Convex/Radon.lean
----
-
 # Radon's theorem
 
 **Radon's theorem on convex sets**.

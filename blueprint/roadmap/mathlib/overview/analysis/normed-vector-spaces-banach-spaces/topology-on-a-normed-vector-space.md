@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: NormSMulClass.toIsBoundedSMul
-mathlib_file: Mathlib/Analysis/Normed/MulAction.lean
----
-
 # Topology on a normed vector space
 
 Mathlib states this as `NormSMulClass.toIsBoundedSMul`.

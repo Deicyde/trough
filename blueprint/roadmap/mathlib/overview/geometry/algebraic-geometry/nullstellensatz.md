@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MvPolynomial.vanishingIdeal_zeroLocus_eq_radical
-mathlib_file: Mathlib/RingTheory/Nullstellensatz.lean
----
-
 # Nullstellensatz
 
 Main statement of the Nullstellensatz

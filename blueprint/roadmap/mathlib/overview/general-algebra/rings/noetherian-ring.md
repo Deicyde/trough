@@ -1,12 +1,3 @@
----
-article_id: af_3422bf5c36dfe2e67077a907
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: IsNoetherianRing
-mathlib_file: Mathlib/RingTheory/Noetherian/Defs.lean
----
-
 # Noetherian ring
 
 A **Noetherian ring** is a [ring](ring.md) in which every [ideal](../ideals-and-quotients/ideal-of-a-commutative-ring.md) is finitely generated; equivalently, every increasing chain of ideals eventually stops growing. The condition is a finiteness hypothesis that covers most rings met in number theory and algebraic geometry, including the integers, fields, and polynomial rings in finitely many variables over them. It is preserved by the usual constructions of commutative algebra, and it is the standing assumption under which much of the subject's structure theory holds: primary decomposition, finiteness of minimal primes, and the dimension theory of rings.

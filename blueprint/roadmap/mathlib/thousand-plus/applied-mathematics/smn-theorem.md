@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.Partrec.Code.smn
-mathlib_file: Mathlib/Computability/PartrecCode.lean
----
-
 # Smn theorem
 
 The $S_n^m$ theorem: There is a computable function, namely `Nat.Partrec.Code.curry`, that takes a

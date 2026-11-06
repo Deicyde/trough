@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.mulVec_cramer
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Adjugate.lean
----
-
 # Cramer’s Rule
 
 A stronger form of **Cramer's rule** that allows us to solve some instances of `A * x = b` even

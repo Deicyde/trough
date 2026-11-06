@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Real.rpow
-mathlib_file: Mathlib/Analysis/SpecialFunctions/Pow/Real.lean
----
-
 # Power functions
 
 The real power function `x ^ y`, defined as the real part of the complex power function.

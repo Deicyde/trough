@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: PhragmenLindelof.horizontal_strip
-mathlib_file: Mathlib/Analysis/Complex/PhragmenLindelof.lean
----
-
 # Phragmen-Lindelöf principle
 
 **Phragmen-Lindelöf principle** in a strip `U = {z : ℂ | a < im z < b}`.

@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: DFA
-mathlib_file: Mathlib/Computability/DFA.lean
----
-
 # DFA
 
 A DFA is a set of states (`σ`), a transition function from state to state labelled by the

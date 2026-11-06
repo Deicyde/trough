@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Function.Embedding.schroeder_bernstein
-mathlib_file: Mathlib/SetTheory/Cardinal/SchroederBernstein.lean
----
-
 # Schroeder-Bernstein Theorem
 
 **The Schröder-Bernstein Theorem**:

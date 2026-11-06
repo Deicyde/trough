@@ -1,12 +1,3 @@
----
-article_id: af_823659e3d5770f80e200b4b4
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FreeGroup
-mathlib_file: Mathlib/GroupTheory/FreeGroup/Basic.lean
----
-
 # Free group
 
 The **free group** on a set $S$ is the [group](group.md) whose elements are

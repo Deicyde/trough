@@ -1,12 +1,3 @@
----
-article_id: af_8bdaa7d3a0c7c84e48fe8b8a
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.unitaryGroup
-mathlib_file: Mathlib/LinearAlgebra/UnitaryGroup.lean
----
-
 # Unitary group
 
 The **unitary group** $U(n)$ is the [group](../../../overview/general-algebra/group-theory/part-01/group.md) of $n \times n$ complex

@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Pi.ring
-mathlib_file: Mathlib/Algebra/Ring/Pi.lean
----
-
 # Product of rings
 
 Mathlib states this as `Pi.ring`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AddSubgroup.dense_or_isCyclic
-mathlib_file: Mathlib/Topology/Algebra/Order/ArchimedeanDiscrete.lean
----
-
 # Additive subgroups of $\R$
 
 An additive subgroup of an archimedean linear ordered additive commutative group `G`

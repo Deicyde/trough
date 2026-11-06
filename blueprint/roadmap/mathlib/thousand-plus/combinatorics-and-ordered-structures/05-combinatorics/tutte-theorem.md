@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.tutte
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/Tutte.lean
----
-
 # Tutte theorem
 
 **Tutte's theorem**

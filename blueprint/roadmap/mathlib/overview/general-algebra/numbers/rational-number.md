@@ -1,11 +1,3 @@
----
-article_id: af_551c22dd902e09be1722fac3
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Rat
----
-
 # Rational number
 
 A **rational number** is a number that can be written as a quotient $a/b$ of two

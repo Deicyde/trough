@@ -1,12 +1,3 @@
----
-article_id: af_5d01f9a34ac41574f021dab9
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.IsPrincipal
-mathlib_file: Mathlib/LinearAlgebra/Span/Defs.lean
----
-
 # Principal ideal domain
 
 A **principal ideal domain**, or PID, is an integral domain in which every

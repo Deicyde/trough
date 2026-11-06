@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.continuous_of_isClosed_graph
-mathlib_file: Mathlib/Analysis/Normed/Operator/Banach.lean
----
-
 # Closed graph theorem
 
 The **closed graph theorem** : a linear map between two Banach spaces whose graph is closed

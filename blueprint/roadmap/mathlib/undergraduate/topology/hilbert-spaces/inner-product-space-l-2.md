@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: lp.instInnerProductSpace
-mathlib_file: Mathlib/Analysis/InnerProductSpace/l2Space.lean
----
-
 # Inner product space $l^2$
 
 Mathlib states this as `lp.instInnerProductSpace`.

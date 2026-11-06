@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.integral_tendsto_of_tendsto_of_antitone, MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone
-mathlib_file: Mathlib/MeasureTheory/Integral/Bochner/Basic.lean
----
-
 # Monotone convergence theorem (1000+ theorems)
 
 Mathlib records this with 2 declarations.

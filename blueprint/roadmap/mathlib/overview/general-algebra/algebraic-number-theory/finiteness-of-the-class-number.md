@@ -1,12 +1,3 @@
----
-article_id: af_a069927a04ef2f6fdbc5c5d3
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: NumberField.RingOfIntegers.instFintypeClassGroup
-mathlib_file: Mathlib/NumberTheory/NumberField/ClassNumber.lean
----
-
 # Finiteness of the class number
 
 **Finiteness of the class number** is the theorem that the ideal class group of

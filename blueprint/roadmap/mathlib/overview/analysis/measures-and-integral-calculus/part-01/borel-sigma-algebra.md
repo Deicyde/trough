@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: BorelSpace
-mathlib_file: Mathlib/MeasureTheory/Constructions/BorelSpace/Basic.lean
----
-
 # Borel sigma-algebra
 
 A space with `MeasurableSpace` and `TopologicalSpace` structures such that

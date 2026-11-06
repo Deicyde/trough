@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.End.invtSubmodule
-mathlib_file: Mathlib/Algebra/Module/Submodule/Invariant.lean
----
-
 # Invariant subspaces of an endomorphism
 
 Given an endomorphism, `f` of some module, this is the sublattice of all `f`-invariant

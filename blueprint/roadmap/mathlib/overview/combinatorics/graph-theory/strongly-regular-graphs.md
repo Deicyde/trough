@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: SimpleGraph.IsSRGWith
-mathlib_file: Mathlib/Combinatorics/SimpleGraph/StronglyRegular.lean
----
-
 # Strongly regular graphs
 
 A graph is strongly regular with parameters `n k ℓ μ` if

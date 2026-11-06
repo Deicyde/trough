@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm
-mathlib_file: Mathlib/LinearAlgebra/BilinearMap.lean
----
-
 # Bilinear form
 
 For convenience, a shorthand for the type of bilinear forms from `M` to `R`.

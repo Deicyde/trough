@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Bundle.ContMDiffRiemannianMetric
-mathlib_file: Mathlib/Geometry/Manifold/VectorBundle/Riemannian.lean
----
-
 # Smooth bundle metric
 
 A family of inner product space structures on the fibers of a fiber bundle, defining the same

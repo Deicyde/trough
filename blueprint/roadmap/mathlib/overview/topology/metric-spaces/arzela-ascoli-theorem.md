@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: BoundedContinuousFunction.arzela_ascoli
-mathlib_file: Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean
----
-
 # Arzela-Ascoli theorem
 
 Third \(main\) version, with pointwise equicontinuity and range in a compact subset, but

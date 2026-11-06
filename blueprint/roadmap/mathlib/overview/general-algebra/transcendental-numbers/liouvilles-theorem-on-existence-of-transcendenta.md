@@ -1,12 +1,3 @@
----
-article_id: af_d70cc073cf61f67ea872505a
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: transcendental_liouvilleNumber
-mathlib_file: Mathlib/NumberTheory/Transcendental/Liouville/LiouvilleNumber.lean
----
-
 # Liouville's theorem on existence of transcendental numbers
 
 **Liouville's theorem on existence of transcendental numbers** says that explicit

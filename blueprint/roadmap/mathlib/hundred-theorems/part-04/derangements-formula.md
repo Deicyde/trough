@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: card_derangements_eq_numDerangements, numDerangements_sum
-mathlib_file: Mathlib/Combinatorics/Derangements/Finite.lean
----
-
 # Derangements Formula
 
 Mathlib records this with 2 declarations.

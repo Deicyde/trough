@@ -1,12 +1,3 @@
----
-article_id: af_d58f772452df65dcf9e1959e
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ArithmeticFunction
-mathlib_file: Mathlib/NumberTheory/ArithmeticFunction/Defs.lean
----
-
 # Arithmetic functions
 
 An **arithmetic function** is a function defined on the positive integers, usually

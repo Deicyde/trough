@@ -1,12 +1,3 @@
----
-article_id: af_62f527ae379e0a4790678e35
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: WittVector
-mathlib_file: Mathlib/RingTheory/WittVector/Defs.lean
----
-
 # Ring of Witt vectors
 
 For a prime number $p$ and a commutative [ring](../rings/ring.md) $R$, the **ring of ($p$-typical) Witt vectors** $W(R)$ is a ring whose elements are infinite sequences $(a_0, a_1, a_2, \dots)$ of elements of $R$, added and multiplied by universal polynomial rules that imitate carrying digits. Its basic use is to produce rings of [characteristic zero](../field-theory/characteristic-zero.md) out of rings of [characteristic $p$](../field-theory/characteristic-p.md): applied to the field with $p$ elements it gives the [$p$-adic integers](../numbers/p-adic-integer.md), and applied to any perfect field $k$ of characteristic $p$ it gives a complete discrete valuation ring with residue field $k$ in which $p$ generates the maximal ideal. Witt vectors are a standard tool in number theory, algebraic geometry in characteristic $p$, and $p$-adic Hodge theory.

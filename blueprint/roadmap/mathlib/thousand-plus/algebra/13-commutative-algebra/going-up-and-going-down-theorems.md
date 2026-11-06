@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Ideal.exists_ideal_over_prime_of_isIntegral_of_isDomain, Ideal.exists_ideal_over_prime_of_isIntegral_of_isPrime, Algebra.HasGoingDown.iff_generalizingMap_primeSpectrumComap, Algebra.HasGoingDown.of_comap_localRingHom_surjective
-mathlib_file: Mathlib/RingTheory/Ideal/GoingUp.lean
----
-
 # Going-up and going-down theorems
 
 Mathlib records this with 4 declarations.

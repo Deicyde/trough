@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: NormedSpace.inclusionInDoubleDualLi
-mathlib_file: Mathlib/Analysis/Normed/Module/DoubleDual.lean
----
-
 # Isometric inclusion in double dual
 
 The inclusion of a normed space in its double strong dual is an isometry onto its image.

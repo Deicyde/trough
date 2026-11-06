@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.orthogonal
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Orthogonal.lean
----
-
 # Orthogonal complement
 
 The subspace of vectors orthogonal to a given subspace, denoted `Kᗮ`.

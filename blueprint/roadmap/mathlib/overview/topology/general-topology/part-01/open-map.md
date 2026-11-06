@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsOpenMap
-mathlib_file: Mathlib/Topology/Defs/Basic.lean
----
-
 # Open map
 
 A map `f : X → Y` is said to be an *open map*,

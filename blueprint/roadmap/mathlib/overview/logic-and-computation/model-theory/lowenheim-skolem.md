@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.exists_elementaryEmbedding_card_eq
-mathlib_file: Mathlib/ModelTheory/Satisfiability.lean
----
-
 # Löwenheim-Skolem
 
 The Löwenheim–Skolem Theorem: If `κ` is a cardinal greater than the cardinalities of `L`

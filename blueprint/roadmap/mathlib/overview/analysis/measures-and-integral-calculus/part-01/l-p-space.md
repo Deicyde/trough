@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Lp
-mathlib_file: Mathlib/MeasureTheory/Function/LpSpace/Basic.lean
----
-
 # $L^p$ space
 
 Lp space

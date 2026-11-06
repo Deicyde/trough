@@ -1,12 +1,3 @@
----
-article_id: af_19ff2674a262075c58eed914
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: legendreSym.quadratic_reciprocity
-mathlib_file: Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean
----
-
 # Quadratic reciprocity
 
 **Quadratic reciprocity** is a theorem of elementary number theory relating two

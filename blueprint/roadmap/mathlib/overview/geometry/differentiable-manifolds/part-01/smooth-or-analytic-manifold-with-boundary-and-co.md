@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsManifold
-mathlib_file: Mathlib/Geometry/Manifold/IsManifold/Basic.lean
----
-
 # Smooth or analytic manifold (with boundary and corners)
 
 Typeclass defining manifolds with respect to a model with corners, over a

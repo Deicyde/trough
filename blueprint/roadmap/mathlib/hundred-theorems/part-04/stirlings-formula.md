@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Stirling.tendsto_stirlingSeq_sqrt_pi
-mathlib_file: Mathlib/Analysis/SpecialFunctions/Stirling.lean
----
-
 # Stirling’s Formula
 
 **Stirling's Formula**

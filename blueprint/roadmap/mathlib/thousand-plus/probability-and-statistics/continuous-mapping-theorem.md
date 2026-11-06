@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.TendstoInDistribution.continuous_comp
-mathlib_file: Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean
----
-
 # Continuous mapping theorem
 
 **Continuous mapping theorem**: if `X n` tends to `Z` in distribution and `g` is continuous,

@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: FiniteDimensional
-mathlib_file: Mathlib/LinearAlgebra/FiniteDimensional/Defs.lean
----
-
 # Finite-dimensionality
 
 `FiniteDimensional` vector spaces are defined to be finite modules.

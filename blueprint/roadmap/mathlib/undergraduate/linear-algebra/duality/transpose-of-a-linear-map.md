@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.Dual.transpose
-mathlib_file: Mathlib/LinearAlgebra/Dual/Defs.lean
----
-
 # Transpose of a linear map
 
 The transposition of linear maps, as a linear map from `M →ₗ[R] M'` to

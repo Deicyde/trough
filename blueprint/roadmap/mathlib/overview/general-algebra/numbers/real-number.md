@@ -1,12 +1,3 @@
----
-article_id: af_976b44bde6657b6d86344fdd
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Real
-mathlib_file: Mathlib/Basic/Real/Basic.lean
----
-
 # Real number
 
 The **real numbers** are the numbers used to measure continuous quantities such as

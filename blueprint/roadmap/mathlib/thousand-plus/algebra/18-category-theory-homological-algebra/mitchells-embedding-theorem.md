@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Abelian.freyd_mitchell
-mathlib_file: Mathlib/CategoryTheory/Abelian/FreydMitchell.lean
----
-
 # Mitchell's embedding theorem
 
 The Freyd-Mitchell embedding theorem. See also `FreydMitchell.functor` for a functor which

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Basis.lean
----
-
 # Change of basis
 
 Mathlib states this as `basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix`.

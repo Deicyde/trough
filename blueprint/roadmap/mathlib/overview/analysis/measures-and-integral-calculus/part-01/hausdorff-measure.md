@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.hausdorffMeasure
-mathlib_file: Mathlib/MeasureTheory/Measure/Hausdorff.lean
----
-
 # Hausdorff measure
 
 Hausdorff measure on an (e)metric space.

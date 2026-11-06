@@ -1,12 +1,3 @@
----
-article_id: af_f84cfd15d7f6f9abac705c5c
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsCyclic
-mathlib_file: Mathlib/Algebra/Group/DivInvMonoid.lean
----
-
 # Cyclic group
 
 A **cyclic group** is a [group](group.md) in which every element is a power of

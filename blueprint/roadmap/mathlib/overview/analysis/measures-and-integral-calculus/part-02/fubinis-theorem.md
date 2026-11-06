@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.integral_prod
-mathlib_file: Mathlib/MeasureTheory/Integral/Prod.lean
----
-
 # Fubini's theorem
 
 **Fubini's Theorem**: For integrable functions on `α × β`,

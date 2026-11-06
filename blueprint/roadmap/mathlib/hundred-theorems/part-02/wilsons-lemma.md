@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ZMod.wilsons_lemma
-mathlib_file: Mathlib/NumberTheory/Wilson.lean
----
-
 # Wilson’s Lemma
 
 **Wilson's Lemma**: the product of `1`, ..., `p-1` is `-1` modulo `p`.

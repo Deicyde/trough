@@ -1,12 +1,3 @@
----
-article_id: af_281edb8a9563a76a0586e4ec
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Padic
-mathlib_file: Mathlib/NumberTheory/Padics/PadicNumbers.lean
----
-
 # $p$-adic number
 
 For a [prime number](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md) $p$, the **$p$-adic numbers** form a [field](../field-theory/field.md) $\mathbb{Q}_p$ that

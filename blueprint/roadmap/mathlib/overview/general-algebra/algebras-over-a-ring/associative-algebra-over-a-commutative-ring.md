@@ -1,12 +1,3 @@
----
-article_id: af_a7323adfbb834937f0549d54
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Algebra
-mathlib_file: Mathlib/Algebra/Algebra/Defs.lean
----
-
 # Associative algebra over a commutative ring
 
 An **associative algebra over a commutative ring** $R$, or **$R$-algebra**, is a

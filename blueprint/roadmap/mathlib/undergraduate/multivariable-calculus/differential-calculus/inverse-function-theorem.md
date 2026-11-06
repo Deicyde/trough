@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: HasStrictDerivAt.to_localInverse
-mathlib_file: Mathlib/Analysis/Calculus/InverseFunctionTheorem/Deriv.lean
----
-
 # Inverse function theorem (Differential calculus)
 
 Mathlib states this as `HasStrictDerivAt.to_localInverse`.

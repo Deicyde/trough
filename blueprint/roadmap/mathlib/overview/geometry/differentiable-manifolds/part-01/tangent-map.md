@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: tangentMap
-mathlib_file: Mathlib/Geometry/Manifold/MFDeriv/Defs.lean
----
-
 # Tangent map
 
 `tangentMap I I' f` is the derivative of `f : M → M'` as a map between the tangent bundles

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Cauchy
-mathlib_file: Mathlib/Topology/UniformSpace/Cauchy.lean
----
-
 # Cauchy filter
 
 A filter `f` is Cauchy if for every entourage `r`, there exists an

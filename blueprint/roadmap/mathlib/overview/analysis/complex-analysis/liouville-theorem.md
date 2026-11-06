@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Differentiable.apply_eq_apply_of_bounded
-mathlib_file: Mathlib/Analysis/Complex/Liouville.lean
----
-
 # Liouville theorem
 
 **Liouville's theorem**: a complex differentiable bounded function `f : E → F` is a constant.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: CircleDeg1Lift.semiconj_of_bijective_of_translationNumber_eq
-mathlib_file: Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean
----
-
 # Translation number defines a homeomorphism up to semiconjugacy
 
 If two lifts of circle homeomorphisms have the same translation number, then they are

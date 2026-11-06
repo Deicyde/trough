@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: BoundedContinuousFunction.instCompleteSpace
-mathlib_file: Mathlib/Topology/ContinuousMap/Bounded/Basic.lean
----
-
 # Completeness of spaces of bounded continuous functions
 
 Bounded continuous functions taking values in a complete space form a complete space.

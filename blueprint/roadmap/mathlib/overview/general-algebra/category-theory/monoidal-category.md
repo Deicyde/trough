@@ -1,12 +1,3 @@
----
-article_id: af_00d9a184e57872eb4ed35d62
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.MonoidalCategory
-mathlib_file: Mathlib/CategoryTheory/Monoidal/Category.lean
----
-
 # Monoidal category
 
 A **monoidal category** is a [category](category.md) equipped with a way of

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.hasSum_cos
-mathlib_file: Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.lean
----
-
 # Cos (power series expansion of elementary functions)
 
 The power series expansion of `Complex.cos`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: map_add_eq_sum_add_integral_iteratedFDeriv
-mathlib_file: Mathlib/Analysis/Calculus/TaylorIntegral.lean
----
-
 # Taylor's theorem with integral form for remainder (Differential calculus)
 
 *Taylor's theorem with remainder in integral form*. If `f` is `n + 1` times continuously

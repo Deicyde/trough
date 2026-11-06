@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.card_powerset
-mathlib_file: Mathlib/Data/Finset/Powerset.lean
----
-
 # The Number of Subsets of a Set
 
 **Number of Subsets of a Set**

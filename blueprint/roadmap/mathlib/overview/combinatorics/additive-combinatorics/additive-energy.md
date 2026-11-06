@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.addEnergy
-mathlib_file: Mathlib/Combinatorics/Additive/Energy.lean
----
-
 # Additive energy
 
 The additive energy `E[s, t]` of two finsets `s` and `t` in a group is the number of quadruples

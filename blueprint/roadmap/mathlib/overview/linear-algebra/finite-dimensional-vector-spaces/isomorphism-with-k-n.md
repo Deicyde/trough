@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Module.Basis.equivFun
-mathlib_file: Mathlib/LinearAlgebra/Basis/Defs.lean
----
-
 # Isomorphism with $K^n$
 
 A module over `R` with a finite basis is linearly equivalent to functions from its basis to `R`.

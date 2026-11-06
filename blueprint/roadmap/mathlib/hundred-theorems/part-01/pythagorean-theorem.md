@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.dist_sq_eq_dist_sq_add_dist_sq_iff_angle_eq_pi_div_two
-mathlib_file: Mathlib/Geometry/Euclidean/Angle/Unoriented/RightAngle.lean
----
-
 # Pythagorean Theorem
 
 **Pythagorean theorem**, if-and-only-if angle-at-point form.

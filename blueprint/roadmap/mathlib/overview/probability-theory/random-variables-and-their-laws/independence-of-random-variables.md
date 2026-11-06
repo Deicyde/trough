@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.iIndepFun
-mathlib_file: Mathlib/Probability/Independence/Basic.lean
----
-
 # Independence of random variables
 
 A family of functions defined on the same space `Ω` and taking values in possibly different

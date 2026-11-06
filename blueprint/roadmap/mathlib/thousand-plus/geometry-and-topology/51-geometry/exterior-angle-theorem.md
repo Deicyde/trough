@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.exterior_angle_eq_angle_add_angle
-mathlib_file: Mathlib/Geometry/Euclidean/Triangle.lean
----
-
 # Exterior angle theorem
 
 The **Exterior angle theorem**. an exterior angle of a triangle is equal to the sum of the

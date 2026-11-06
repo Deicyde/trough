@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: tsum_sq_fourierCoeff
-mathlib_file: Mathlib/Analysis/Fourier/AddCircle.lean
----
-
 # Parseval formula for Fourier series
 
 Mathlib states this as `tsum_sq_fourierCoeff`.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.charpoly
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.lean
----
-
 # Characteristic polynomial
 
 The characteristic polynomial of a matrix `M` is given by $\det (t I - M)$.

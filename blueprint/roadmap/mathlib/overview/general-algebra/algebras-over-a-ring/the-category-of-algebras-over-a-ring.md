@@ -1,12 +1,3 @@
----
-article_id: af_ff7eff5ff8552d023cd927e2
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AlgCat
-mathlib_file: Mathlib/Algebra/Category/AlgCat/Basic.lean
----
-
 # The category of algebras over a ring
 
 For a commutative ring $R$, the **category of algebras over $R$** has as its

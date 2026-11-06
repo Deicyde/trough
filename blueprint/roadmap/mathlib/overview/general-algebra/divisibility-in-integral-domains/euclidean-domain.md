@@ -1,12 +1,3 @@
----
-article_id: af_79357b10507c88c794242a5f
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanDomain
-mathlib_file: Mathlib/Algebra/EuclideanDomain/Defs.lean
----
-
 # Euclidean domain
 
 A **Euclidean domain** is an integral domain in which one can divide with

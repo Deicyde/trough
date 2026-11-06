@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.abc
-mathlib_file: Mathlib/NumberTheory/FLT/MasonStothers.lean
----
-
 # Mason–Stothers theorem
 
 **Polynomial ABC theorem.**

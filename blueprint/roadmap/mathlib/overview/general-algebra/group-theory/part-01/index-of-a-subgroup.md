@@ -1,12 +1,3 @@
----
-article_id: af_e1ccf2ab17dc9efc444f18bd
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup.index
-mathlib_file: Mathlib/GroupTheory/Index.lean
----
-
 # Index of a subgroup
 
 The **index of a subgroup** $H$ of a [group](group.md) $G$ is the number of cosets of $H$ in

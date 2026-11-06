@@ -164,7 +164,15 @@ def frontmatter(fields: list[tuple[str, str]], previous: str | None) -> str:
     return "---\n" + "\n".join(lines) + "\n---\n\n" if lines else ""
 
 
-def render_container(node: Container, vault: Path, previous: str | None) -> str:
+def facts(node: Leaf | Container) -> list[tuple[str, str]]:
+    """What AutoformBot reads about the page, from its front matter or its annotation."""
+    if isinstance(node, Leaf):
+        return node.fields
+    return ([("article_id", node.article_id)] if node.article_id else []) + (
+        [("navigation", node.navigation)] if node.navigation else [])
+
+
+def render_container(node: Container, vault: Path, previous: str | None, front: bool = True) -> str:
     here = node.path.relative_to(vault)
     lines = [f"# {node.title}", ""]
     if node.prose:
@@ -191,12 +199,10 @@ def render_container(node: Container, vault: Path, previous: str | None) -> str:
             lines.append(link(entry))
     if node.tail:
         lines += ["", node.tail.strip()]
-    fields = ([("article_id", node.article_id)] if node.article_id else []) + (
-        [("navigation", node.navigation)] if node.navigation else [])
-    return frontmatter(fields, previous) + "\n".join(lines).rstrip() + "\n"
+    return (frontmatter(facts(node), previous) if front else "") + "\n".join(lines).rstrip() + "\n"
 
 
-def render_leaf(leaf: Leaf, vault: Path, previous: str | None) -> str:
+def render_leaf(leaf: Leaf, vault: Path, previous: str | None, front: bool = True) -> str:
     here = leaf.path.relative_to(vault)
 
     def links(nodes: list[Leaf]) -> list[str]:
@@ -213,18 +219,19 @@ def render_leaf(leaf: Leaf, vault: Path, previous: str | None) -> str:
     if leaf.sources:
         lines += ["", "## Sources", ""]
         lines += [f"- [{link_text(label)}]({url})" for label, url in leaf.sources]
-    return frontmatter(leaf.fields, previous) + "\n".join(lines) + "\n"
+    return (frontmatter(leaf.fields, previous) if front else "") + "\n".join(lines) + "\n"
 
 
-def render_tree(root: Container, vault: Path, *, include_root: bool = True) -> dict[Path, str]:
-    """Every page under *root*, keeping each existing page's article_id."""
+def render_tree(root: Container, vault: Path, *, include_root: bool = True, annotated: bool = False) -> dict[Path, str]:
+    """Every page under *root*, keeping each existing page's article_id; with *annotated*, the facts
+    go in annotations (links.py) and the pages have no front matter."""
     files: dict[Path, str] = {}
     for node in walk(root):
         if node is root and not include_root:
             continue
         previous = node.path.read_text(encoding="utf-8") if node.path.is_file() else None
         if isinstance(node, Container):
-            files[node.path] = render_container(node, vault, previous)
+            files[node.path] = render_container(node, vault, previous, not annotated)
         else:
-            files[node.path] = render_leaf(node, vault, previous)
+            files[node.path] = render_leaf(node, vault, previous, not annotated)
     return files

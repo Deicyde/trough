@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsManifold.prod
-mathlib_file: Mathlib/Geometry/Manifold/IsManifold/Basic.lean
----
-
 # Product of manifolds
 
 The product of two `C^n` manifolds is naturally a `C^n` manifold.

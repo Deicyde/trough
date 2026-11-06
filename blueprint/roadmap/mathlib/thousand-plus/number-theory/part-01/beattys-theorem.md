@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Irrational.beattySeq_symmDiff_beattySeq_pos, compl_beattySeq
-mathlib_file: Mathlib/NumberTheory/Rayleigh.lean
----
-
 # Beatty's theorem
 
 Mathlib records this with 2 declarations.

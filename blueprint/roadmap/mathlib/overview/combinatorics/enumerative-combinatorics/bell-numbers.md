@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Multiset.bell
-mathlib_file: Mathlib/Combinatorics/Enumerative/Bell.lean
----
-
 # Bell numbers
 
 Number of partitions of a set of cardinality `m.sum`

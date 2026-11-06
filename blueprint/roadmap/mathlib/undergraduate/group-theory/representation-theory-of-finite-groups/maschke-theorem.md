@@ -1,12 +1,3 @@
----
-article_id: af_782a38fbe61e0a072ccfd3e6
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MonoidAlgebra.Submodule.exists_isCompl
-mathlib_file: Mathlib/RepresentationTheory/Maschke.lean
----
-
 # Maschke theorem
 
 **Maschke's theorem** says that a [representation](../../../overview/general-algebra/representation-theory/representation.md) of a finite

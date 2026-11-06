@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.instMeasurableSpace
-mathlib_file: Mathlib/MeasureTheory/Measure/GiryMonad.lean
----
-
 # Giry monad
 
 Measurability structure on `Measure`: Measures are measurable w.r.t. all projections

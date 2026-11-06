@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: MetricSpace
-mathlib_file: Mathlib/Topology/MetricSpace/Defs.lean
----
-
 # Metric space
 
 A metric space is a type endowed with a `ℝ`-valued distance `dist` satisfying

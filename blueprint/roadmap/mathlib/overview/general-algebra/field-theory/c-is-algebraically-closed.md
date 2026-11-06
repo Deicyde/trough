@@ -1,12 +1,3 @@
----
-article_id: af_52e16a51ff726bc547f335f5
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.exists_root
-mathlib_file: Mathlib/Analysis/Complex/Polynomial/Basic.lean
----
-
 # $\C$ is algebraically closed
 
 The statement that **$\mathbb{C}$ is algebraically closed**, usually called the

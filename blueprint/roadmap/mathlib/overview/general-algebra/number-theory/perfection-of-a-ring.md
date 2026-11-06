@@ -1,12 +1,3 @@
----
-article_id: af_a13c7aa18b29a759dac4e574
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Perfection
-mathlib_file: Mathlib/RingTheory/Perfection.lean
----
-
 # Perfection of a ring
 
 The **perfection** of a commutative ring $R$ of prime [characteristic](../field-theory/characteristic-p.md) $p$ is the ring of sequences $(x_0, x_1, x_2, \dots)$ of elements of $R$ in which each term is a $p$-th root of the one before it. On this ring the [Frobenius map](../field-theory/frobenius-morphism.md) $x \mapsto x^p$ is bijective, and it is the universal perfect commutative ring of characteristic $p$ mapping to $R$: every homomorphism to $R$ from a perfect commutative ring of characteristic $p$ passes through it in exactly one way. The construction is basic in $p$-adic geometry, where the perfection of a quotient $\mathcal{O}/p\mathcal{O}$ produces the ring whose field of fractions is the tilt of a valued field.

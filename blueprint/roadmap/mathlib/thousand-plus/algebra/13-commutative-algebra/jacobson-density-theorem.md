@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: jacobson_density
-mathlib_file: Mathlib/RingTheory/SimpleModule/Basic.lean
----
-
 # Jacobson density theorem
 
 Mathlib states this as `jacobson_density`.

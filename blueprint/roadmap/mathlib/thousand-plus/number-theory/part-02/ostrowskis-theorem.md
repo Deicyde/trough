@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Rat.AbsoluteValue.equiv_real_or_padic, RatFunc.valuation_isEquiv_infty_or_adic
-mathlib_file: Mathlib/NumberTheory/Ostrowski.lean
----
-
 # Ostrowski's theorem
 
 Mathlib records this with 2 declarations.

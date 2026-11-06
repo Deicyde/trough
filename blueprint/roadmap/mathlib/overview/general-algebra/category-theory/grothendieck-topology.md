@@ -1,12 +1,3 @@
----
-article_id: af_1c2e024c28249926a5f60add
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.GrothendieckTopology
-mathlib_file: Mathlib/CategoryTheory/Sites/Grothendieck.lean
----
-
 # Grothendieck topology
 
 A **Grothendieck topology** on a [category](category.md) specifies, for each

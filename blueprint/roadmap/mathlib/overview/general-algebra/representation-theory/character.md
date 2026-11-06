@@ -1,12 +1,3 @@
----
-article_id: af_2e4012c2c940f210fbc866c1
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FDRep.character
-mathlib_file: Mathlib/RepresentationTheory/Character.lean
----
-
 # Character
 
 The **character** of a finite-dimensional [representation](representation.md) of a group is the

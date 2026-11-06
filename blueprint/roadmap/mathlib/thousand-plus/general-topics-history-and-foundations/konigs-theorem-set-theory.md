@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Cardinal.sum_lt_prod
-mathlib_file: Mathlib/SetTheory/Cardinal/Order.lean
----
-
 # König's theorem (set theory)
 
 **König's theorem**

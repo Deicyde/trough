@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints
-mathlib_file: Mathlib/Topology/ContinuousMap/StoneWeierstrass.lean
----
-
 # Stone-Weierstrass theorem
 
 The **Stone-Weierstrass Approximation Theorem**,

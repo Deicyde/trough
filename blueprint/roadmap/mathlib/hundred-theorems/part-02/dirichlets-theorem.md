@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.infinite_setOfPred_prime_and_eq_mod
-mathlib_file: Mathlib/NumberTheory/LSeries/PrimesInAP.lean
----
-
 # Dirichlet’s Theorem
 
 **Dirichlet's Theorem** on primes in arithmetic progression: if `q` is a positive

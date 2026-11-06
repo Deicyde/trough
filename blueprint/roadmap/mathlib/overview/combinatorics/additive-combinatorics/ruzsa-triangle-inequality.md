@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.ruzsa_triangle_inequality_sub_sub_sub
-mathlib_file: Mathlib/Combinatorics/Additive/PluenneckeRuzsa.lean
----
-
 # Ruzsa triangle inequality
 
 **Ruzsa's triangle inequality**. Subtraction version.

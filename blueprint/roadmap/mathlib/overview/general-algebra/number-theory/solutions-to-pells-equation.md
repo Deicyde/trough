@@ -1,12 +1,3 @@
----
-article_id: af_76c2a85474a62ae4524d1644
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Pell.pell
-mathlib_file: Mathlib/NumberTheory/PellMatiyasevic.lean
----
-
 # Solutions to Pell's equation (Number theory)
 
 The **solutions to Pell's equation** $x^2 - dy^2 = 1$ in the special case $d = a^2 - 1$,

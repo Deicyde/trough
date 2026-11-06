@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: CircleDeg1Lift.translationNumber
-mathlib_file: Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean
----
-
 # Translation number
 
 The translation number of a `CircleDeg1Lift`, $τ(f)=\lim_{n→∞}\frac{f^n(x)-x}{n}$. We use

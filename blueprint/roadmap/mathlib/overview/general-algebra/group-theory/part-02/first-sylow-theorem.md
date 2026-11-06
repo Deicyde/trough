@@ -1,12 +1,3 @@
----
-article_id: af_40423cdd7a33e06b2f128541
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Sylow.exists_subgroup_card_pow_prime
-mathlib_file: Mathlib/GroupTheory/Sylow.lean
----
-
 # First Sylow theorem
 
 The **first Sylow theorem** says that a finite [group](../part-01/group.md) has a

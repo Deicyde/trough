@@ -1,12 +1,3 @@
----
-article_id: af_d7433cb8762cb553fbefdc31
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MulAction.selfEquivSigmaOrbitsQuotientStabilizer
-mathlib_file: Mathlib/GroupTheory/GroupAction/Quotient.lean
----
-
 # Class formula
 
 The **class formula** describes how a set on which a [group](group.md) acts

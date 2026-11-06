@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: StrongDual
-mathlib_file: Mathlib/Topology/Algebra/Module/ContinuousLinearMap/Basic.lean
----
-
 # Dual of a normed space
 
 The *strong dual* of a topological vector space `M` over a ring `R`. This is the space of

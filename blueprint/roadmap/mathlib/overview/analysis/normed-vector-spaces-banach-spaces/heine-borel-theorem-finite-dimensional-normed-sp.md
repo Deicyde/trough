@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FiniteDimensional.proper
-mathlib_file: Mathlib/Analysis/Normed/Module/FiniteDimension.lean
----
-
 # Heine-Borel theorem (finite-dimensional normed spaces are proper)
 
 Any finite-dimensional vector space over a locally compact field is proper.

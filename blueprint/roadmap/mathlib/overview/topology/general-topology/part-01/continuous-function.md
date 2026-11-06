@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Continuous
-mathlib_file: Mathlib/Topology/Defs/Basic.lean
----
-
 # Continuous function
 
 A function between topological spaces is continuous if the preimage

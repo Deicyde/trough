@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: PiLp.normedSpace
-mathlib_file: Mathlib/Analysis/Normed/Lp/PiLp.lean
----
-
 # Norms $\lVert\cdot\rVert_p$ on $\R^n$ and $\C^n$
 
 The product of finitely many normed spaces is a normed space, with the `L^p` norm.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: fixedPoints.lfp_eq_sSup_iterate
-mathlib_file: Mathlib/Order/FixedPoints.lean
----
-
 # Kleene fixed-point theorem
 
 **Kleene's fixed point Theorem**: The least fixed point in a complete lattice is

@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: QuadraticForm
-mathlib_file: Mathlib/LinearAlgebra/QuadraticForm/Basic.lean
----
-
 # Quadratic form
 
 A quadratic form on a module.

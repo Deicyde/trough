@@ -1,12 +1,3 @@
----
-article_id: af_714377bb7665902543fcc564
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Equiv.Perm.truncCycleFactors
-mathlib_file: Mathlib/GroupTheory/Perm/Cycle/Factors.lean
----
-
 # Decomposition into cycles with disjoint support
 
 The **decomposition into cycles with disjoint support** says that every

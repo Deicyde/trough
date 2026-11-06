@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: IsLocalExtr.deriv_eq_zero, IsLocalExtr.fderiv_eq_zero
-mathlib_file: Mathlib/Analysis/Calculus/LocalExtr/Basic.lean
----
-
 # Fermat's theorem (stationary points)
 
 Mathlib records this with 2 declarations.

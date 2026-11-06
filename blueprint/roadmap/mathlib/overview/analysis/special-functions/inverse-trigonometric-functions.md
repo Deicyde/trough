@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Real.arcsin
-mathlib_file: Mathlib/Analysis/SpecialFunctions/Trigonometric/Inverse.lean
----
-
 # Inverse trigonometric functions
 
 Inverse of the `sin` function, returns values in the range `-π / 2 ≤ arcsin x ≤ π / 2`.

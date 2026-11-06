@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LatticeHom.birkhoffSet
-mathlib_file: Mathlib/Order/Birkhoff.lean
----
-
 # Birkhoff's representation theorem
 
 **Birkhoff's Representation Theorem**. Any finite distributive lattice can be embedded in a

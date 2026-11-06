@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: iteratedDeriv
-mathlib_file: Mathlib/Analysis/Calculus/IteratedDeriv/Defs.lean
----
-
 # Higher-order derivatives of functions
 
 The `n`-th iterated derivative of a function from `𝕜` to `F`, as a function from `𝕜` to `F`.

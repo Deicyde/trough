@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: isCompact_iff_isSeqCompact
-mathlib_file: Mathlib/Topology/Sequences.lean
----
-
 # Sequential compactness is equivalent to compactness (Bolzano-Weierstrass)
 
 A version of **Bolzano-Weierstrass**: in a (pseudo)metrizable space, a set is compact if and

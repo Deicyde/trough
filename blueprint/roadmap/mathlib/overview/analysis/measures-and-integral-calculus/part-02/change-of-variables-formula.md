@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.integral_image_eq_integral_abs_det_fderiv_smul
-mathlib_file: Mathlib/MeasureTheory/Function/Jacobian.lean
----
-
 # Change of variables formula
 
 Change of variable formula for differentiable functions: if a function `f` is

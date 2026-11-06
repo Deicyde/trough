@@ -1,12 +1,3 @@
----
-article_id: af_7ecd3e6d935204e7ed439c1a
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: QuotientGroup.quotientQuotientEquivQuotient
-mathlib_file: Mathlib/GroupTheory/QuotientGroup/Basic.lean
----
-
 # Third isomorphism theorem
 
 The **third isomorphism theorem** says that taking a quotient of a quotient

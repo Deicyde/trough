@@ -1,12 +1,3 @@
----
-article_id: af_c67a0a9b35918cb8b77925b8
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Functor
-mathlib_file: Mathlib/CategoryTheory/Functor/Basic.lean
----
-
 # Functor
 
 A **functor** is a structure-preserving map between two

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasurableEmbedding.schroederBernstein
-mathlib_file: Mathlib/MeasureTheory/MeasurableSpace/Embedding.lean
----
-
 # Schroeder–Bernstein theorem for measurable spaces
 
 The **measurable Schröder-Bernstein Theorem**: given measurable embeddings

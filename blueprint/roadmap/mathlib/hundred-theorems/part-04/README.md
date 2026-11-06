@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Theorems 79 to 100
 
 - [79. The Intermediate Value Theorem](../../overview/topology/topological-algebra/intermediate-value-theorem.md)

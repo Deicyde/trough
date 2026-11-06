@@ -1,12 +1,3 @@
----
-article_id: af_1d2c3e9fdbc5a193ec465fd0
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.irreducible_of_eisenstein_criterion
-mathlib_file: Mathlib/RingTheory/Polynomial/Eisenstein/Criterion.lean
----
-
 # Eisenstein's criterion
 
 **Eisenstein's criterion** is a sufficient condition for a [polynomial](polynomial-in-one-indeterminate.md) to be

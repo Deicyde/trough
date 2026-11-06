@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Bundle.Prod.contMDiffVectorBundle
-mathlib_file: Mathlib/Geometry/Manifold/VectorBundle/Basic.lean
----
-
 # (smooth) direct sum of vector bundles
 
 The direct sum of two `C^n` vector bundles over the same base is a `C^n` vector bundle.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Turing.TM0.Machine
-mathlib_file: Mathlib/Computability/TuringMachine/PostTuringMachine.lean
----
-
 # Turing machine
 
 A Post-Turing machine with symbol type `Γ` and label type `Λ`

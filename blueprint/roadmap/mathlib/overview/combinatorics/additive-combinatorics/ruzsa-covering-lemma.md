@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Set.ruzsa_covering_add
-mathlib_file: Mathlib/Combinatorics/Additive/RuzsaCovering.lean
----
-
 # Ruzsa covering lemma
 
 **Ruzsa's covering lemma** for sets. See also `Finset.ruzsa_covering_add`.

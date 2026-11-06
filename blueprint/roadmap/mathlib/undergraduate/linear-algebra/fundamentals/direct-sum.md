@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: DirectSum.IsInternal
-mathlib_file: Mathlib/Algebra/DirectSum/Basic.lean
----
-
 # Direct sum
 
 The `DirectSum` formed by a collection of additive submonoids (or subgroups, or submodules) of

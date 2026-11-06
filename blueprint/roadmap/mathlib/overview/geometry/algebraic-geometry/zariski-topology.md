@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: PrimeSpectrum.zariskiTopology
-mathlib_file: Mathlib/RingTheory/Spectrum/Prime/Topology.lean
----
-
 # Zariski topology
 
 The Zariski topology on the prime spectrum of a commutative (semi)ring is defined

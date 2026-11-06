@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: MultilinearMap
-mathlib_file: Mathlib/LinearAlgebra/Multilinear/Basic.lean
----
-
 # Multilinear map
 
 Multilinear maps over the ring `R`, from `∀ i, M₁ i` to `M₂` where `M₁ i` and `M₂` are modules

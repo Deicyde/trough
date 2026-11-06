@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Behrend.roth_lower_bound
-mathlib_file: Mathlib/Combinatorics/Additive/AP/Three/Behrend.lean
----
-
 # Behrend's construction
 
 Mathlib states this as `Behrend.roth_lower_bound`.

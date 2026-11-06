@@ -1,12 +1,3 @@
----
-article_id: af_dc2891843930468e0cd51155
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Ideal.Quotient.ring
-mathlib_file: Mathlib/RingTheory/Ideal/Quotient/Defs.lean
----
-
 # Quotient ring
 
 A **quotient ring** is the ring obtained from a [ring](../rings/ring.md) $R$ by

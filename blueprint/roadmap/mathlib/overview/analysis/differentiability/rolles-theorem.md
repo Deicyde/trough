@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_deriv_eq_zero
-mathlib_file: Mathlib/Analysis/Calculus/LocalExtr/Rolle.lean
----
-
 # Rolle's theorem
 
 **Rolle's Theorem** `deriv` version

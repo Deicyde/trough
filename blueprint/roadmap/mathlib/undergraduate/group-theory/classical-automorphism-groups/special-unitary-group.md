@@ -1,12 +1,3 @@
----
-article_id: af_7ff9b4311d7f771e3e92033e
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.specialUnitaryGroup
-mathlib_file: Mathlib/LinearAlgebra/UnitaryGroup.lean
----
-
 # Special unitary group
 
 The **special unitary group** $\mathrm{SU}(n)$ is the group of complex

@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Smooth or analytic manifold… to Sphere
 
 - [Smooth or analytic manifold (with boundary and corners)](smooth-or-analytic-manifold-with-boundary-and-co.md)

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.measure_limsup_eq_one
-mathlib_file: Mathlib/Probability/BorelCantelli.lean
----
-
 # Borel-Cantelli lemma (difficult direction)
 
 **The second Borel-Cantelli lemma**: Given a sequence of independent sets `(sₙ)` such that

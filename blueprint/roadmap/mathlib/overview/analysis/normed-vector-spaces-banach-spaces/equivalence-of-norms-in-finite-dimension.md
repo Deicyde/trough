@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearEquiv.toContinuousLinearEquiv
-mathlib_file: Mathlib/Topology/Algebra/Module/FiniteDimension.lean
----
-
 # Equivalence of norms in finite dimension
 
 The continuous linear equivalence induced by a linear equivalence on a finite-dimensional

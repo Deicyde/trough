@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Real.sinh
-mathlib_file: Mathlib/Analysis/Complex/Trigonometric.lean
----
-
 # Hyperbolic trigonometric functions
 
 The real hyperbolic sine function, defined as the real part of the complex hyperbolic sine

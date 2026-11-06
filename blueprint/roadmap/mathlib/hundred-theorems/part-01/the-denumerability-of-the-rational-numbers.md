@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Rat.instDenumerable
-mathlib_file: Mathlib/Data/Rat/Denumerable.lean
----
-
 # The Denumerability of the Rational Numbers
 
 **Denumerability of the Rational Numbers**

@@ -1,12 +1,3 @@
----
-article_id: af_022510b4bc250b1c63fd6518
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group
-mathlib_file: Mathlib/GroupTheory/GroupAction/Quotient.lean
----
-
 # Burnside lemma
 
 **Burnside's lemma**, also called the Cauchy–Frobenius lemma or the orbit-counting

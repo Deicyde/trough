@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Matrix.det
-mathlib_file: Mathlib/LinearAlgebra/Matrix/Determinant/Basic.lean
----
-
 # Determinant
 
 The determinant of a matrix given by the Leibniz formula.

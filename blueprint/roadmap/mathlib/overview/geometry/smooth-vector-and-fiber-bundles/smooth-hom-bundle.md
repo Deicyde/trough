@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ContMDiffVectorBundle.continuousLinearMap
-mathlib_file: Mathlib/Geometry/Manifold/VectorBundle/Hom.lean
----
-
 # (smooth) Hom bundle
 
 Mathlib states this as `ContMDiffVectorBundle.continuousLinearMap`.

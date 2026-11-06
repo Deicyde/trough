@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: TemperedDistribution
-mathlib_file: Mathlib/Analysis/Distribution/TemperedDistribution.lean
----
-
 # Tempered distributions
 
 The space of tempered distribution is the space of continuous linear maps from the Schwartz to

@@ -1,12 +1,3 @@
----
-article_id: af_cd135a0a900dd3b8a61d34a4
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AlgebraicGeometry.PresheafedSpace
-mathlib_file: Mathlib/Geometry/RingedSpace/PresheafedSpace.lean
----
-
 # Presheafed space
 
 A **presheafed space** is a [topological space](../../topology/general-topology/part-01/topological-space.md) together with a presheaf on it, an assignment of an object of a fixed [category](category.md) $\mathcal{C}$ to each open set, with restriction maps between them. It is a very general setting for "a space with functions on it", with the functions replaced by objects of an arbitrary category, and the structures of geometry are built from it by adding conditions: a [sheafed space](sheafed-space.md) asks the presheaf to be a sheaf, a [locally ringed space](../../geometry/algebraic-geometry/locally-ringed-space.md) further asks for commutative rings with local stalks and for morphisms inducing local homomorphisms on stalks, and a [scheme](../../geometry/algebraic-geometry/scheme.md) is a locally ringed space that is locally isomorphic to the spectrum of a commutative ring. Many constructions, such as gluing, colimits and restriction to open subsets, are simplest at the level of presheafed spaces, and the richer notions are often built from them by checking that the extra conditions survive.

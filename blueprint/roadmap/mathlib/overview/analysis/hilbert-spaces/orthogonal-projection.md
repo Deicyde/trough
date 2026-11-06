@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.orthogonalProjectionOnto
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Projection/Basic.lean
----
-
 # Orthogonal projection
 
 The orthogonal projection onto a subspace.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ZMod.cauchy_davenport
-mathlib_file: Mathlib/Combinatorics/Additive/CauchyDavenport.lean
----
-
 # Cauchy-Davenport theorem
 
 The **Cauchy-Davenport Theorem**. If `s`, `t` are nonempty sets in `ℤ/pℤ`, then the size of

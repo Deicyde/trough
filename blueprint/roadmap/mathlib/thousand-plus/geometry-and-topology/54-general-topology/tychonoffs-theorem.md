@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: isCompact_pi_infinite
-mathlib_file: Mathlib/Topology/Compactness/Compact.lean
----
-
 # Tychonoff's theorem
 
 **Tychonoff's theorem**: product of compact sets is compact.

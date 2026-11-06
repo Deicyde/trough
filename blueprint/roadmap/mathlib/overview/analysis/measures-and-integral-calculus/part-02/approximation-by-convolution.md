@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ContDiffBump.convolution_tendsto_right
-mathlib_file: Mathlib/Analysis/Calculus/BumpFunction/Convolution.lean
----
-
 # Approximation by convolution
 
 `(φ i ⋆ g i) (k i)` tends to `z₀` as `i` tends to some filter `l` if

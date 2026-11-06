@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.inclusion_exclusion_sum_biUnion, Finset.inclusion_exclusion_card_biUnion, Finset.inclusion_exclusion_sum_inf_compl, Finset.inclusion_exclusion_card_inf_compl
-mathlib_file: Mathlib/Combinatorics/Enumerative/InclusionExclusion.lean
----
-
 # Principle of Inclusion/Exclusion
 
 Mathlib records this with 4 declarations.

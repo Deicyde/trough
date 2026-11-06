@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: VectorField.leibniz_identity_mlieBracket
-mathlib_file: Mathlib/Geometry/Manifold/VectorField/LieBracket.lean
----
-
 # Jacobi/Leibniz identity
 
 The Lie bracket of vector fields in manifolds satisfies the Leibniz identity

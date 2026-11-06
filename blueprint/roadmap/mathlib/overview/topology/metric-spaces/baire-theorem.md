@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: BaireSpace.of_completelyPseudoMetrizable
-mathlib_file: Mathlib/Topology/Baire/CompleteMetrizable.lean
----
-
 # Baire theorem
 
 **First Baire theorem**: a completely pseudometrizable topological space has Baire property.

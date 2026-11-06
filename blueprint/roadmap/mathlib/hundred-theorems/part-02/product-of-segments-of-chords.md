@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_pi
-mathlib_file: Mathlib/Geometry/Euclidean/Sphere/Power.lean
----
-
 # Product of Segments of Chords
 
 **Intersecting Chords Theorem**.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Ideal.height_le_one_of_isPrincipal_of_mem_minimalPrimes
-mathlib_file: Mathlib/RingTheory/Ideal/KrullsHeightTheorem.lean
----
-
 # Krull's principal ideal theorem
 
 **Krull's principal ideal theorem** (also known as **Krullscher Hauptidealsatz**) :

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: NumberField.Units.basisModTorsion, NumberField.Units.exist_unique_eq_mul_prod
-mathlib_file: Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean
----
-
 # Dirichlet's unit theorem
 
 Mathlib records this with 2 declarations.

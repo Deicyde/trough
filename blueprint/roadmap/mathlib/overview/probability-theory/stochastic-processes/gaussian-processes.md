@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.IsGaussianProcess
-mathlib_file: Mathlib/Probability/Distributions/Gaussian/IsGaussianProcess/Def.lean
----
-
 # Gaussian processes
 
 A stochastic process is a Gaussian process if all its finite dimensional distributions are

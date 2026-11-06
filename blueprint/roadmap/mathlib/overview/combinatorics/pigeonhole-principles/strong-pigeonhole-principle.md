@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Fintype.exists_lt_card_fiber_of_mul_lt_card
-mathlib_file: Mathlib/Combinatorics/Pigeonhole.lean
----
-
 # Strong pigeonhole principle
 
 The strong pigeonhole principle for finitely many pigeons and pigeonholes.

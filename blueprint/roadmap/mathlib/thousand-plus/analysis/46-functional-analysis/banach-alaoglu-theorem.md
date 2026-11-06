@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: WeakDual.isCompact_polar
-mathlib_file: Mathlib/Analysis/Normed/Module/WeakDual.lean
----
-
 # Banach–Alaoglu theorem
 
 The **Banach-Alaoglu theorem**: the polar set of a neighborhood `s` of the origin in a

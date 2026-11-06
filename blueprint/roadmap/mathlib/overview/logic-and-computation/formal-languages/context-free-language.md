@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Language.IsContextFree
-mathlib_file: Mathlib/Computability/ContextFreeGrammar.lean
----
-
 # Context-free language
 
 Context-free languages are defined by context-free grammars.

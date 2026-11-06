@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.BilinForm.iIsOrtho
-mathlib_file: Mathlib/LinearAlgebra/BilinearForm/Orthogonal.lean
----
-
 # Orthogonal elements
 
 A set of vectors `v` is orthogonal with respect to some bilinear form `B` if and only

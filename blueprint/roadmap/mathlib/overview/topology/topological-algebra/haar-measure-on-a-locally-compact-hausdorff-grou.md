@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.haarMeasure
-mathlib_file: Mathlib/MeasureTheory/Measure/Haar/Basic.lean
----
-
 # Haar measure on a locally compact Hausdorff group
 
 The Haar measure on the locally compact group `G`, scaled so that `haarMeasure K₀ K₀ = 1`.

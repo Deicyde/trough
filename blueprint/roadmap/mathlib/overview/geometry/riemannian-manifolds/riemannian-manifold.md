@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsRiemannianManifold
-mathlib_file: Mathlib/Geometry/Manifold/Riemannian/Basic.lean
----
-
 # Riemannian manifold
 
 Consider a manifold in which the tangent spaces are already endowed with an inner product, and

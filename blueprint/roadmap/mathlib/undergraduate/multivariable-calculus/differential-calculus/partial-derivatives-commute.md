@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: second_derivative_symmetric
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Symmetric.lean
----
-
 # Partial derivatives commute
 
 If a function is differentiable, and has two derivatives at `x`, then the second

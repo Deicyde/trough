@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Lp.toTemperedDistributionCLM
-mathlib_file: Mathlib/Analysis/Distribution/TemperedDistribution.lean
----
-
 # $L^p$ functions
 
 The natural embedding of L^p into tempered distributions.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.addDysonETransform
-mathlib_file: Mathlib/Combinatorics/Additive/ETransform.lean
----
-
 # Dyson transform
 
 The **Dyson e-transform**.

@@ -1,12 +1,3 @@
----
-article_id: af_5aa4e75cab828ea3f9dafa8b
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: card_sylow_modEq_one
-mathlib_file: Mathlib/GroupTheory/Sylow.lean
----
-
 # Third Sylow theorem
 
 The **third Sylow theorem** says that in a finite [group](../part-01/group.md) $G$ the number of Sylow

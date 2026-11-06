@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Differentiable
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Defs.lean
----
-
 # Differentiable functions
 
 `Differentiable 𝕜 f` means that `f` is differentiable at any point.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure.div_mem_nhds_one_of_haar_pos
-mathlib_file: Mathlib/MeasureTheory/Measure/Haar/Basic.lean
----
-
 # Steinhaus theorem
 
 **Steinhaus Theorem**.

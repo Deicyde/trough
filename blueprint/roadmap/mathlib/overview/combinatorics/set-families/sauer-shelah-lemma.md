@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.card_shatterer_le_sum_vcDim
-mathlib_file: Mathlib/Combinatorics/SetFamily/Shatter.lean
----
-
 # Sauer-Shelah lemma
 
 The **Sauer-Shelah lemma**.

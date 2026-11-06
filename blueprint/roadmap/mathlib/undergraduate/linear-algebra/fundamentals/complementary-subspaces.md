@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.exists_isCompl
-mathlib_file: Mathlib/LinearAlgebra/Basis/VectorSpace.lean
----
-
 # Complementary subspaces
 
 Mathlib states this as `Submodule.exists_isCompl`.

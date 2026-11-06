@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: CompactSpace.uniformContinuous_of_continuous
-mathlib_file: Mathlib/Topology/UniformSpace/HeineCantor.lean
----
-
 # Heine-Cantor theorem
 
 Heine-Cantor: a continuous function on a compact uniform space is uniformly

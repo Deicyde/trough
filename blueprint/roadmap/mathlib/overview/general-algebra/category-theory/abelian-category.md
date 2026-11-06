@@ -1,12 +1,3 @@
----
-article_id: af_787412bba144712cecfc2ab8
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Abelian
-mathlib_file: Mathlib/CategoryTheory/Abelian/Basic.lean
----
-
 # Abelian category
 
 An **abelian category** is a [category](category.md) whose morphisms can be added and in which kernels, cokernels, images and exact sequences behave as they do for [modules](../../linear-algebra/fundamentals/module.md) over a [ring](../rings/ring.md). The notion isolates the formal properties of abelian groups and modules that homological algebra actually uses, so that constructions such as [chain complexes](../homological-algebra/chain-complex.md), [homology](../homological-algebra/functorial-homology.md) and derived functors can be carried out once, uniformly, for modules, sheaves, representations and many other settings.

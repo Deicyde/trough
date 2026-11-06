@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: gradient
-mathlib_file: Mathlib/Analysis/Calculus/Gradient/Basic.lean
----
-
 # Gradient vector
 
 Gradient of `f` at the point `x`, if it exists.  Zero otherwise.

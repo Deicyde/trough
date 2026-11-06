@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.variance
-mathlib_file: Mathlib/Probability/Moments/Variance.lean
----
-
 # Variance of a real-valued random variable
 
 The `ℝ`-valued variance of a real-valued random variable defined by applying `ENNReal.toReal`

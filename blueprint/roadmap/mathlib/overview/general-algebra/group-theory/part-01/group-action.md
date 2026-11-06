@@ -1,12 +1,3 @@
----
-article_id: af_462c8297900707cfbe86ff5d
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: MulAction
-mathlib_file: Mathlib/Algebra/Group/Action/Defs.lean
----
-
 # Group action
 
 A **group action** of a [group](group.md) $G$ on a set $X$ lets each element of $G$

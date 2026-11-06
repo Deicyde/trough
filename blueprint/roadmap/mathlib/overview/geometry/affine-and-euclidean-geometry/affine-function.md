@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AffineMap
-mathlib_file: Mathlib/LinearAlgebra/AffineSpace/AffineMap.lean
----
-
 # Affine function
 
 An `AffineMap k P1 P2` (notation: `P1 →ᵃ[k] P2`) is a map from `P1` to `P2` that

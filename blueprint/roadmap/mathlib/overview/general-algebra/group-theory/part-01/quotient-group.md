@@ -1,12 +1,3 @@
----
-article_id: af_bd9ac717a66a662b21be44fe
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: QuotientGroup.Quotient.group
-mathlib_file: Mathlib/GroupTheory/QuotientGroup/Defs.lean
----
-
 # Quotient group
 
 A **quotient group** is the group obtained from a [group](group.md) $G$ by

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: GromovHausdorff.GHSpace
-mathlib_file: Mathlib/Topology/MetricSpace/GromovHausdorff.lean
----
-
 # Gromov-Hausdorff space
 
 The Gromov-Hausdorff space

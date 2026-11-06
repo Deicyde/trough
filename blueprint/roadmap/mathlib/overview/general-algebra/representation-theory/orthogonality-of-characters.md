@@ -1,12 +1,3 @@
----
-article_id: af_9445789111bab43843bd1ec0
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FDRep.char_orthonormal
-mathlib_file: Mathlib/RepresentationTheory/Character.lean
----
-
 # Orthogonality of characters
 
 The **orthogonality of characters** is the theorem that the

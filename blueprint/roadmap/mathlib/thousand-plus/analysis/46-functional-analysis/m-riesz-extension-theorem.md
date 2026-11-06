@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: riesz_extension
-mathlib_file: Mathlib/Analysis/Convex/Cone/Extension.lean
----
-
 # M. Riesz extension theorem
 
 M. **Riesz extension theorem**: given a convex cone `s` in a vector space `E`, a submodule `p`,

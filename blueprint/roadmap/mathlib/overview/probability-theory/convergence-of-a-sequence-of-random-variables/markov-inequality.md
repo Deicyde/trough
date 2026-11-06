@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.mul_meas_ge_le_lintegral
-mathlib_file: Mathlib/MeasureTheory/Integral/Lebesgue/Markov.lean
----
-
 # Markov inequality
 
 **Markov's inequality** also known as **Chebyshev's first inequality**. For a version assuming

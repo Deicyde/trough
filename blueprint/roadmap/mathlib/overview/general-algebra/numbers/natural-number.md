@@ -1,11 +1,3 @@
----
-article_id: af_d770d3a20a29208e1fd7e528
-declaration: inductive
-origin: cited
-mathlib: true
-mathlib_declaration: Nat
----
-
 # Natural number
 
 The **natural numbers** are the numbers $0, 1, 2, 3, \dots$ used to count the

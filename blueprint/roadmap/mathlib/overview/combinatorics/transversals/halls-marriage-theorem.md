@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.all_card_le_biUnion_card_iff_exists_injective
-mathlib_file: Mathlib/Combinatorics/Hall/Basic.lean
----
-
 # Hall's marriage theorem
 
 This is the version of **Hall's Marriage Theorem** in terms of indexed

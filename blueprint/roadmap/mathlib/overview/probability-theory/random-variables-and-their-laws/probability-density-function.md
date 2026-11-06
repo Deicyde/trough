@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.HasPDF
-mathlib_file: Mathlib/Probability/Density.lean
----
-
 # Probability density function
 
 A random variable `X : Ω → E` is said to have a probability density function (`HasPDF`)

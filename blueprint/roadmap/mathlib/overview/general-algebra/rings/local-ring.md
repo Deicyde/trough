@@ -1,12 +1,3 @@
----
-article_id: af_d40f22fe9b16d4fafe7e6922
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsLocalRing
-mathlib_file: Mathlib/RingTheory/LocalRing/Defs.lean
----
-
 # Local ring
 
 A **local ring** is a commutative [ring](ring.md) with exactly one [maximal ideal](../ideals-and-quotients/maximal-ideal.md). Equivalently, it is a nonzero ring in which the elements that are not units are closed under addition. Local rings are the algebraic counterpart of looking at a geometric object near a single point: the ring of germs of functions at a point (functions defined near it, identified when they agree near it), with the germs vanishing at the point as the maximal ideal, is the model case. Through [localization](localization.md) many questions about arbitrary commutative rings reduce to questions about local rings, which is why they are central in commutative algebra and algebraic geometry.

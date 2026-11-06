@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: four_functions_theorem
-mathlib_file: Mathlib/Combinatorics/SetFamily/FourFunctions.lean
----
-
 # Four functions theorem
 
 The **Four Functions Theorem**, aka **Ahlswede-Daykin Inequality**.

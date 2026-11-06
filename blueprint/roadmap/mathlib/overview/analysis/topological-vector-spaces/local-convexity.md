@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: LocallyConvexSpace
-mathlib_file: Mathlib/Topology/Algebra/Module/LocallyConvex.lean
----
-
 # Local convexity
 
 A `LocallyConvexSpace` is a topological semimodule over an ordered semiring in which convex

@@ -1,12 +1,3 @@
----
-article_id: af_bb311594e153167b22dd7d08
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: ExteriorAlgebra
-mathlib_file: Mathlib/LinearAlgebra/ExteriorAlgebra/Basic.lean
----
-
 # Exterior algebra
 
 The **exterior algebra** of a [module](../../linear-algebra/fundamentals/module.md) $M$ over a commutative ring $R$, written

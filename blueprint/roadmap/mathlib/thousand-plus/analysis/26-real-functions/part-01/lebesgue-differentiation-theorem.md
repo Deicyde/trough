@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: VitaliFamily.ae_tendsto_lintegral_div
-mathlib_file: Mathlib/MeasureTheory/Covering/Differentiation.lean
----
-
 # Lebesgue differentiation theorem
 
 Mathlib states this as `VitaliFamily.ae_tendsto_lintegral_div`.

@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.Structure
-mathlib_file: Mathlib/ModelTheory/Basic.lean
----
-
 # First-order structure
 
 A first-order structure on a type `M` consists of interpretations of all the symbols in a given

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LipschitzWith
-mathlib_file: Mathlib/Topology/EMetricSpace/Lipschitz.lean
----
-
 # Lipschitz continuity
 
 A function `f` is **Lipschitz continuous** with constant `K ≥ 0` if for all `x, y`

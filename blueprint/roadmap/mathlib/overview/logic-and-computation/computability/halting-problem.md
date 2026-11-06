@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ComputablePred.halting_problem
-mathlib_file: Mathlib/Computability/Halting.lean
----
-
 # Halting problem
 
 The **Halting problem** is not computable

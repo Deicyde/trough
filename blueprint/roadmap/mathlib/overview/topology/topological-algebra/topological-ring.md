@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: IsTopologicalRing
-mathlib_file: Mathlib/Topology/Algebra/Ring/Basic.lean
----
-
 # Topological ring
 
 A topological ring is a ring `R` where addition, multiplication and negation are continuous.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Combinatorics.Line.exists_mono_in_high_dimension
-mathlib_file: Mathlib/Combinatorics/HalesJewett.lean
----
-
 # Hales-Jewett theorem
 
 The **Hales-Jewett theorem**: For any finite types `α` and `κ`, there exists a finite type `ι`

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: hasSum_zeta_two
-mathlib_file: Mathlib/NumberTheory/ZetaValues.lean
----
-
 # Euler’s Summation of 1 + (1/2)^2 + (1/3)^2 + ….
 
 Mathlib states this as `hasSum_zeta_two`.

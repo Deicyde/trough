@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.isAlgClosed
-mathlib_file: Mathlib/Analysis/Complex/Polynomial/Basic.lean
----
-
 # Fundamental theorem of algebra
 
 **Fundamental theorem of algebra**: the field `ℂ` of complex numbers is algebraically closed.

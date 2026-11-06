@@ -1,12 +1,3 @@
----
-article_id: af_ef0679783f8802be4f017db9
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: char_dvd_card_solutions
-mathlib_file: Mathlib/FieldTheory/ChevalleyWarning.lean
----
-
 # Chevalley-Warning theorem (Number theory)
 
 The **Chevalley–Warning theorem** says that a polynomial equation over a

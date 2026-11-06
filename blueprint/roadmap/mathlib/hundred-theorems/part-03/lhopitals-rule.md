@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: deriv.lhopital_zero_nhds
-mathlib_file: Mathlib/Analysis/Calculus/LHopital.lean
----
-
 # L’Hopital’s Rule
 
 **L'Hôpital's rule** for approaching a real, `deriv` version

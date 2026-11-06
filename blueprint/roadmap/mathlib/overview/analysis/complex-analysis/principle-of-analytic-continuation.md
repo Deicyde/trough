@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AnalyticOnNhd.eqOn_of_preconnected_of_frequently_eq
-mathlib_file: Mathlib/Analysis/Analytic/IsolatedZeros.lean
----
-
 # Principle of analytic continuation
 
 The *identity principle* for analytic functions, global version: if two functions are

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: continuous_of_uniform_approx_of_continuous
-mathlib_file: Mathlib/Topology/UniformSpace/UniformApproximation.lean
----
-
 # Continuity of the limit of a sequence of functions
 
 A function which can be uniformly approximated by continuous functions is continuous.

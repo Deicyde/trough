@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: banach_steinhaus
-mathlib_file: Mathlib/Analysis/Normed/Operator/BanachSteinhaus.lean
----
-
 # Banach-Steinhaus theorem
 
 This is the standard Banach-Steinhaus theorem, or Uniform Boundedness Principle.

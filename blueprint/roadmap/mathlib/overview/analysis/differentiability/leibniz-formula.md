@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: fderiv_mul
-mathlib_file: Mathlib/Analysis/Calculus/FDeriv/Mul.lean
----
-
 # Leibniz formula (Analysis)
 
 Mathlib states this as `fderiv_mul`.

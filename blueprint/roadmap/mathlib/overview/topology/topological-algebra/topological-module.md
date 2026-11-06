@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: ContinuousSMul
-mathlib_file: Mathlib/Topology/Algebra/MulAction.lean
----
-
 # Topological module
 
 Class `ContinuousSMul M X` says that the scalar multiplication `(•) : M → X → X`

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsCoercive.continuousLinearEquivOfBilin
-mathlib_file: Mathlib/Analysis/InnerProductSpace/LaxMilgram.lean
----
-
 # Lax-Milgram theorem
 
 The Lax-Milgram equivalence of a coercive bounded bilinear operator:

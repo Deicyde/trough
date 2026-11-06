@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: StieltjesFunction.measure
-mathlib_file: Mathlib/MeasureTheory/Measure/Stieltjes.lean
----
-
 # Stieltjes measure
 
 The measure associated to a Stieltjes function, giving mass `f b - f a` to the

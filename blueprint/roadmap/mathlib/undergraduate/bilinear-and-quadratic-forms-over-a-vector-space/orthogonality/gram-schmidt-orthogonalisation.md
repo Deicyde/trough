@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: InnerProductSpace.gramSchmidt_orthogonal
-mathlib_file: Mathlib/Analysis/InnerProductSpace/GramSchmidtOrtho.lean
----
-
 # Gram-Schmidt orthogonalisation
 
 **Gram-Schmidt Orthogonalisation**:

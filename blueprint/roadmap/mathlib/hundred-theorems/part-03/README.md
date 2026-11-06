@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Theorems 58 to 78
 
 - [58. Formula for the Number of Combinations](formula-for-the-number-of-combinations.md)

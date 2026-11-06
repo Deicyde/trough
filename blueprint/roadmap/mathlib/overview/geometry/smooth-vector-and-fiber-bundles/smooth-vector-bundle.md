@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: ContMDiffVectorBundle
-mathlib_file: Mathlib/Geometry/Manifold/VectorBundle/Basic.lean
----
-
 # (smooth) vector bundle
 
 When `B` is a manifold with respect to a model `IB` and `E` is a

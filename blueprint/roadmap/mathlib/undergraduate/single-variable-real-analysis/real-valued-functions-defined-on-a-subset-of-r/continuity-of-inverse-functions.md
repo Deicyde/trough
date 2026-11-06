@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: OrderIso.toHomeomorph
-mathlib_file: Mathlib/Topology/Order/MonotoneContinuity.lean
----
-
 # Continuity of inverse functions
 
 An order isomorphism between two linear order `OrderTopology` spaces is a homeomorphism.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.OuterMeasure.caratheodory
-mathlib_file: Mathlib/MeasureTheory/OuterMeasure/Caratheodory.lean
----
-
 # Carathéodory's theorem (measure theory)
 
 Given an outer measure `μ`, the Carathéodory-measurable space is

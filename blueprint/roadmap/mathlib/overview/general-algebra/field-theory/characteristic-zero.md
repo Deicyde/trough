@@ -1,12 +1,3 @@
----
-article_id: af_a4a3125832e544c81e987af6
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: CharZero
-mathlib_file: Mathlib/Algebra/CharZero/Defs.lean
----
-
 # Characteristic zero
 
 A [ring](../rings/ring.md) has **characteristic zero** when no positive multiple of its identity element vanishes: $1 + 1 + \cdots + 1 \neq 0$ however many terms are added. The rational, real and complex numbers all have this property, while the integers modulo $n$ for $n \geq 1$ and every [finite field](../../../undergraduate/ring-theory/field-theory/finite-fields.md) do not. Characteristic zero is the setting in which the familiar arithmetic of the integers and the rationals survives inside a ring, so that distinct integers remain distinct in the ring and, in a field, one may divide by nonzero integers. It is one of the two cases in the classification of fields by their [characteristic](characteristic-of-a-ring.md), the other being [characteristic $p$](characteristic-p.md) for a prime $p$.

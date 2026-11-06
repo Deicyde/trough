@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.cubic_eq_zero_iff
-mathlib_file: Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean
----
-
 # The Solution of a Cubic
 
 **The Solution of Cubic**.

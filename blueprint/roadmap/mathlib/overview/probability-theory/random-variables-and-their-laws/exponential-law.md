@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.expMeasure
-mathlib_file: Mathlib/Probability/Distributions/Exponential.lean
----
-
 # Exponential law
 
 Measure defined by the exponential distribution

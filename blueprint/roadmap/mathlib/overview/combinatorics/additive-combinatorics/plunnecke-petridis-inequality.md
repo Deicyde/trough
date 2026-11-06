@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.pluennecke_petridis_inequality_add
-mathlib_file: Mathlib/Combinatorics/Additive/PluenneckeRuzsa.lean
----
-
 # Plünnecke-Petridis inequality
 
 Mathlib states this as `Finset.pluennecke_petridis_inequality_add`.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: mellinInv_mellin_eq
-mathlib_file: Mathlib/Analysis/MellinInversion.lean
----
-
 # Mellin inversion theorem
 
 The inverse Mellin transform of the Mellin transform applied to `x > 0` is x.

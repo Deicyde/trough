@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: ContinuousMap.compactOpen
-mathlib_file: Mathlib/Topology/CompactOpen.lean
----
-
 # Compact open topology
 
 The compact-open topology on the space of continuous maps `C(X, Y)`.

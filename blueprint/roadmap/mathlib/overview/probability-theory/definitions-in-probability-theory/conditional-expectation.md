@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.condExp
-mathlib_file: Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean
----
-
 # Conditional expectation
 
 Conditional expectation of a function, with notation `μ[f | m]`.

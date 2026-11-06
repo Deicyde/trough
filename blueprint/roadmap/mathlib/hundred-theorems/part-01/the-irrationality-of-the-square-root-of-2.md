@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: irrational_sqrt_two
-mathlib_file: Mathlib/NumberTheory/Real/Irrational.lean
----
-
 # The Irrationality of the Square Root of 2
 
 **Irrationality of the Square Root of 2**

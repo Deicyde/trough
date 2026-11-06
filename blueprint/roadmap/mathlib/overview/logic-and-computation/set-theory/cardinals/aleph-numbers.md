@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Cardinal.aleph
-mathlib_file: Mathlib/SetTheory/Cardinal/Aleph.lean
----
-
 # Aleph numbers
 
 The `aleph` function gives the infinite cardinals listed by their ordinal index. `aleph 0 = ℵ₀`,

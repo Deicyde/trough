@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.vcDim
-mathlib_file: Mathlib/Combinatorics/SetFamily/Shatter.lean
----
-
 # VC dimension
 
 The Vapnik-Chervonenkis dimension of a set family is the maximal size of a set it shatters.

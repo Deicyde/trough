@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: HasDerivAt
-mathlib_file: Mathlib/Analysis/Calculus/Deriv/Basic.lean
----
-
 # Derivative at a point
 
 `f` has the derivative `f'` at the point `x`.

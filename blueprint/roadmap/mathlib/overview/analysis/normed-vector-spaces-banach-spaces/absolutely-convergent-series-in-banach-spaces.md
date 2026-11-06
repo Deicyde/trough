@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Summable.of_norm
-mathlib_file: Mathlib/Analysis/Normed/Group/InfiniteSum.lean
----
-
 # Absolutely convergent series in Banach spaces
 
 Mathlib states this as `Summable.of_norm`.

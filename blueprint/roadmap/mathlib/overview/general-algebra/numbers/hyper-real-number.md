@@ -1,12 +1,3 @@
----
-article_id: af_134479273ab6c3f42eb412b0
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Hyperreal
-mathlib_file: Mathlib/Analysis/Real/Hyperreal.lean
----
-
 # Hyper-real number
 
 The **hyper-real numbers**, or hyperreals, form an ordered [field](../field-theory/field.md) $^*\mathbb R$

@@ -1,12 +1,3 @@
----
-article_id: af_a113280fbdbd62c64363467b
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.roots
-mathlib_file: Mathlib/Algebra/Polynomial/Roots.lean
----
-
 # Roots of a polynomial
 
 The **roots of a polynomial** $p$ are the values $a$ at which the

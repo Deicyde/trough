@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Module.End.exists_isNilpotent_isSemisimple
-mathlib_file: Mathlib/LinearAlgebra/JordanChevalley.lean
----
-
 # Jordan-Chevalley-Dunford decomposition
 
 **Jordan-Chevalley-Dunford decomposition**: an endomorphism of a finite-dimensional vector space

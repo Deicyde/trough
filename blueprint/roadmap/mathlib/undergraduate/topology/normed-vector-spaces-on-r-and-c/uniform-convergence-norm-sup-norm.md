@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: EMetric.tendstoUniformlyOn_iff
-mathlib_file: Mathlib/Topology/EMetricSpace/Basic.lean
----
-
 # Uniform convergence norm (sup-norm)
 
 Expressing uniform convergence on a set using `edist`.

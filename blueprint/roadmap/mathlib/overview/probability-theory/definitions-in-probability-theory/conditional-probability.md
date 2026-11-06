@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.cond
-mathlib_file: Mathlib/Probability/ConditionalProbability.lean
----
-
 # Conditional probability
 
 The conditional probability measure of measure `μ` on set `s` is `μ` restricted to `s`

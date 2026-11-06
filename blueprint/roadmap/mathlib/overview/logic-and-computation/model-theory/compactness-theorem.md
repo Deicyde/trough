@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable
-mathlib_file: Mathlib/ModelTheory/Satisfiability.lean
----
-
 # Compactness theorem
 
 The **Compactness Theorem of first-order logic**: A theory is satisfiable if and only if it is

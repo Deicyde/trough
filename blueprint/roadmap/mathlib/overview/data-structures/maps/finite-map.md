@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Finmap
-mathlib_file: Mathlib/Data/Finmap.lean
----
-
 # Finite map
 
 `Finmap β` is the type of finite maps over a multiset. It is effectively

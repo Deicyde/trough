@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: MeasCat
-mathlib_file: Mathlib/MeasureTheory/Category/MeasCat.lean
----
-
 # The category of measurable spaces
 
 The category of measurable spaces and measurable functions.

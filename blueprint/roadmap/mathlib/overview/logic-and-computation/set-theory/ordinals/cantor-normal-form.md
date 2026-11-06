@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Ordinal.CNF
-mathlib_file: Mathlib/SetTheory/Ordinal/CantorNormalForm.lean
----
-
 # Cantor normal form
 
 The Cantor normal form of an ordinal `o` is the list of coefficients and exponents in the

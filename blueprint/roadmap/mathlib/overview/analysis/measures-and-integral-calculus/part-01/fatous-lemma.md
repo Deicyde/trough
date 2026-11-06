@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.lintegral_liminf_le
-mathlib_file: Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean
----
-
 # Fatou's lemma
 
 **Fatou's lemma**, version with `Measurable` functions.

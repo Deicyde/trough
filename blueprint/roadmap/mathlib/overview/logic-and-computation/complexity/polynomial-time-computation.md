@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Turing.TM2ComputableInPolyTime
-mathlib_file: Mathlib/Computability/TuringMachine/Computable.lean
----
-
 # Polynomial-time computation
 
 A Turing machine + a polynomial time function +

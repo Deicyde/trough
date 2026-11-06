@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Fubini's theorem to Divergence theorem
 
 - [Fubini's theorem](fubinis-theorem.md)

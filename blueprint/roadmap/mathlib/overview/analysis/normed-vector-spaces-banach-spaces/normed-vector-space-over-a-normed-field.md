@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: NormedSpace
-mathlib_file: Mathlib/Analysis/Normed/Module/Basic.lean
----
-
 # Normed vector space over a normed field
 
 A normed space over a normed field is a vector space endowed with a norm which satisfies the

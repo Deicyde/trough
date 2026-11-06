@@ -1,12 +1,3 @@
----
-article_id: af_cc983ae2de53d398f5bf9a36
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.instEuclideanDomain
-mathlib_file: Mathlib/Algebra/Polynomial/FieldDivision.lean
----
-
 # $K[X]$ is Euclidean
 
 For a [field](../field-theory/field.md) $K$, the ring $K[X]$ of [polynomials in one indeterminate](polynomial-in-one-indeterminate.md) over $K$

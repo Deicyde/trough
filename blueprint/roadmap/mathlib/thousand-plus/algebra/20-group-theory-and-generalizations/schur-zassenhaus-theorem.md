@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup.exists_left_complement'_of_coprime
-mathlib_file: Mathlib/GroupTheory/SchurZassenhaus.lean
----
-
 # Schur–Zassenhaus theorem
 
 **Schur-Zassenhaus** for normal subgroups:

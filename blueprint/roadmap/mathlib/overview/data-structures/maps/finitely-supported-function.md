@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Finsupp
-mathlib_file: Mathlib/Data/Finsupp/Defs.lean
----
-
 # Finitely supported function
 
 `Finsupp α M`, denoted `α →₀ M`, is the type of functions `f : α → M` such that

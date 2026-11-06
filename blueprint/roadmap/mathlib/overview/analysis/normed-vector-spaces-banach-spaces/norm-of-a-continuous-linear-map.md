@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.mkContinuous
-mathlib_file: Mathlib/Analysis/Normed/Operator/ContinuousLinearMap.lean
----
-
 # Norm of a continuous linear map
 
 Construct a continuous linear map from a linear map and a bound on this linear map.

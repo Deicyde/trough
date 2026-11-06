@@ -1,12 +1,3 @@
----
-article_id: af_e6af3be790aba497fc374b53
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: QuotientGroup.quotientInfEquivProdNormalQuotient
-mathlib_file: Mathlib/GroupTheory/QuotientGroup/Basic.lean
----
-
 # Second isomorphism theorem
 
 The **second isomorphism theorem** describes what happens when a

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.TendstoInMeasure
-mathlib_file: Mathlib/MeasureTheory/Function/ConvergenceInMeasure.lean
----
-
 # Convergence in probability
 
 A sequence of functions `f` is said to converge in measure to some function `g` if for all

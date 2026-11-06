@@ -1,12 +1,3 @@
----
-article_id: af_0fccc98e5e9bdab0a2823341
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MulAction.orbit
-mathlib_file: Mathlib/GroupTheory/GroupAction/Defs.lean
----
-
 # Orbit
 
 The **orbit** of a point under a [group action](../../../overview/general-algebra/group-theory/part-01/group-action.md) is the set of all

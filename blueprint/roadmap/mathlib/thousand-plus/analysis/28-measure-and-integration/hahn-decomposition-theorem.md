@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.SignedMeasure.exists_isCompl_positive_negative
-mathlib_file: Mathlib/MeasureTheory/VectorMeasure/Decomposition/Hahn.lean
----
-
 # Hahn decomposition theorem
 
 **The Hahn decomposition theorem**: Given a signed measure `s`, there exist

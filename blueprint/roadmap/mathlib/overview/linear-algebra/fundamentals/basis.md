@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Module.Basis
-mathlib_file: Mathlib/LinearAlgebra/Basis/Defs.lean
----
-
 # Basis
 
 A `Basis ι R M` for a module `M` is the type of `ι`-indexed `R`-bases of `M`.

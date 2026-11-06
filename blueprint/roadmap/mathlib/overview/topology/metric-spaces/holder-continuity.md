@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: HolderWith
-mathlib_file: Mathlib/Topology/MetricSpace/Holder.lean
----
-
 # Hölder continuity
 
 A function `f : X → Y` between two `PseudoEMetricSpace`s is Hölder continuous with constant

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Submodule.complete_of_finiteDimensional
-mathlib_file: Mathlib/Topology/Algebra/Module/FiniteDimension.lean
----
-
 # Finite-dimensional normed spaces over complete normed fields are complete
 
 A finite-dimensional subspace is complete.

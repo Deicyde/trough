@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.IsStoppingTime
-mathlib_file: Mathlib/Probability/Process/Stopping.lean
----
-
 # Stopping time
 
 A stopping time with respect to some filtration `f` is a function

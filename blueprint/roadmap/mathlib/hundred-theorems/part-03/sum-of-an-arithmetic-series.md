@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.sum_range_id
-mathlib_file: Mathlib/Algebra/BigOperators/Intervals.lean
----
-
 # Sum of an arithmetic series
 
 Gauss' summation formula

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: FDRep.finrank_hom_simple_simple
-mathlib_file: Mathlib/RepresentationTheory/FDRep.lean
----
-
 # Schur's lemma (Linear representations)
 
 Schur's Lemma: the dimension of the `Hom`-space between two irreducible representation is `0` if

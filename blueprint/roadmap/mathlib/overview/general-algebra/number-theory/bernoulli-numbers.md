@@ -1,12 +1,3 @@
----
-article_id: af_70826eb9ef43a33808106beb
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: bernoulli
-mathlib_file: Mathlib/NumberTheory/Bernoulli.lean
----
-
 # Bernoulli numbers
 
 The **Bernoulli numbers** $B_0, B_1, B_2, \dots$ are a sequence of

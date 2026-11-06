@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.Kernel.traj
-mathlib_file: Mathlib/Probability/Kernel/IonescuTulcea/Traj.lean
----
-
 # Ionescu-Tulcea theorem
 
 *Ionescu-Tulcea Theorem* : Given a family of kernels `κ n` taking variables in `Iic n` with

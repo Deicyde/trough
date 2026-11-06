@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.L2.innerProductSpace
-mathlib_file: Mathlib/MeasureTheory/Function/L2Space.lean
----
-
 # Inner product space $L^2$
 
 Mathlib states this as `MeasureTheory.L2.innerProductSpace`.

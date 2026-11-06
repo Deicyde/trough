@@ -1,12 +1,3 @@
----
-article_id: af_714e0da6589ec6693a6ae524
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsGalois.intermediateFieldEquivSubgroup
-mathlib_file: Mathlib/FieldTheory/Galois/Basic.lean
----
-
 # Galois correspondence
 
 The **Galois correspondence**, also called the fundamental theorem of Galois theory,

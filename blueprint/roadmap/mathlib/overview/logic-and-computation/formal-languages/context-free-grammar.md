@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: ContextFreeGrammar
-mathlib_file: Mathlib/Computability/ContextFreeGrammar.lean
----
-
 # Context-free grammar
 
 Context-free grammar that generates words over the alphabet `T` (a type of terminals).

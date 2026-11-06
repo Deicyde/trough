@@ -1,12 +1,3 @@
----
-article_id: af_001686a4d244fd8b16827fd2
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ringChar
-mathlib_file: Mathlib/Algebra/CharP/Defs.lean
----
-
 # Characteristic of a ring
 
 The **characteristic** of a [ring](../rings/ring.md) is the least positive integer $n$ for which

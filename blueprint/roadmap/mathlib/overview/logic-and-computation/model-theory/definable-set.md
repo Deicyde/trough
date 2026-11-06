@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Set.Definable
-mathlib_file: Mathlib/ModelTheory/Definability.lean
----
-
 # Definable set
 
 A subset of a finite Cartesian product of a structure is definable over a set `A` when

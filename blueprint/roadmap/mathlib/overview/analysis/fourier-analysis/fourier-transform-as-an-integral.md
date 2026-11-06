@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Real.fourier_eq
-mathlib_file: Mathlib/Analysis/Fourier/FourierTransform.lean
----
-
 # Fourier transform as an integral
 
 Mathlib states this as `Real.fourier_eq`.

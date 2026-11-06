@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.derivative
-mathlib_file: Mathlib/Algebra/Polynomial/Derivative.lean
----
-
 # Polynomial derivative
 
 `derivative p` is the formal derivative of the polynomial `p`

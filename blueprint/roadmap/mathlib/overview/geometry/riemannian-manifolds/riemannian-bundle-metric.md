@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Bundle.RiemannianMetric
-mathlib_file: Mathlib/Topology/VectorBundle/Riemannian.lean
----
-
 # Riemannian/bundle metric
 
 A family of inner product space structures on the fibers of a fiber bundle, defining the same

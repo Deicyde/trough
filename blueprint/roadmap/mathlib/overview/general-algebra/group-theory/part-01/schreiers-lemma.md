@@ -1,12 +1,3 @@
----
-article_id: af_c55cb4aa0ba8e30f0e353d6f
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Subgroup.closure_mul_image_eq
-mathlib_file: Mathlib/GroupTheory/Schreier.lean
----
-
 # Schreier's lemma
 
 **Schreier's lemma** gives an explicit set of generators for a [subgroup](subgroup.md) of a

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.ModEq.pow_totient
-mathlib_file: Mathlib/FieldTheory/Finite/Basic.lean
----
-
 # Euler’s Generalization of Fermat’s Little Theorem
 
 The **Fermat-Euler totient theorem**. `ZMod.pow_totient` is an alternative statement

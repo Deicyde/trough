@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Integrable
-mathlib_file: Mathlib/MeasureTheory/Function/L1Space/Integrable.lean
----
-
 # Vector-valued integrable function (Bochner integral)
 
 `Integrable f μ` means that `f` is measurable and that the integral `∫⁻ a, ‖f a‖ ∂μ` is finite.

@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.Measure
-mathlib_file: Mathlib/MeasureTheory/Measure/MeasureSpaceDef.lean
----
-
 # Positive measure
 
 A measure is defined to be an outer measure that is countably additive on

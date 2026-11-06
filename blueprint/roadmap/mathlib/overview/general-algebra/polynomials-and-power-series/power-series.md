@@ -1,12 +1,3 @@
----
-article_id: af_f5919d26b748960d5f1abbc1
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: PowerSeries
-mathlib_file: Mathlib/RingTheory/PowerSeries/Basic.lean
----
-
 # Power series
 
 A **formal power series** in one indeterminate $X$ over a [ring](../rings/ring.md) $R$ is an

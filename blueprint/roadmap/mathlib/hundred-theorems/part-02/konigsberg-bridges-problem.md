@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Konigsberg.not_isEulerian
-mathlib_file: Archive/Wiedijk100Theorems/Konigsberg.lean
----
-
 # Königsberg Bridges Problem
 
 The Königsberg graph is not Eulerian.

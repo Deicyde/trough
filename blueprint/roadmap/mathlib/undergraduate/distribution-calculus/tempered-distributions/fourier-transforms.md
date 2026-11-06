@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: FourierTransform.fourierCLM
-mathlib_file: Mathlib/Analysis/Fourier/Notation.lean
----
-
 # Fourier transforms
 
 The Fourier transform as a continuous linear map.

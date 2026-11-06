@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.zeckendorfEquiv
-mathlib_file: Mathlib/Data/Nat/Fib/Zeckendorf.lean
----
-
 # Zeckendorf's theorem
 
 **Zeckendorf's Theorem** as an equivalence between natural numbers and Zeckendorf

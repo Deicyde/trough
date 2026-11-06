@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Multiset.prod_X_add_C_eq_sum_esymm
-mathlib_file: Mathlib/RingTheory/Polynomial/Vieta.lean
----
-
 # Vieta's formulas
 
 A sum version of **Vieta's formula** for `Multiset`: the product of the linear terms `X + λ`

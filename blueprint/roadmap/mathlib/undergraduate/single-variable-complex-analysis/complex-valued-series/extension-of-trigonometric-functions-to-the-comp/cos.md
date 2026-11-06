@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.cos
-mathlib_file: Mathlib/Analysis/Complex/Trigonometric.lean
----
-
 # Cos (extension of trigonometric functions to the complex plane)
 
 The complex cosine function, defined via `exp`

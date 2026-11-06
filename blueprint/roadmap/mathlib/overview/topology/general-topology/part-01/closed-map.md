@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsClosedMap
-mathlib_file: Mathlib/Topology/Defs/Basic.lean
----
-
 # Closed map
 
 A map `f : X → Y` is said to be a *closed map*,

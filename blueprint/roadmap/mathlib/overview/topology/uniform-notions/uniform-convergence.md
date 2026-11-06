@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: TendstoUniformly
-mathlib_file: Mathlib/Topology/UniformSpace/UniformConvergence.lean
----
-
 # Uniform convergence
 
 A sequence of functions `Fₙ` converges uniformly to a limiting function `f` with respect to a

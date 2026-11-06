@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Theorems100.area_disc
-mathlib_file: Archive/Wiedijk100Theorems/AreaOfACircle.lean
----
-
 # The Area of a Circle
 
 **Area of a Circle**: The area of a disc with radius `r` is `π * r ^ 2`.

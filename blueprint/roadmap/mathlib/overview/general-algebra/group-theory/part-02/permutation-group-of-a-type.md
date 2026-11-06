@@ -1,12 +1,3 @@
----
-article_id: af_b82a1b7d69dad83d13e374ce
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Equiv.Perm
-mathlib_file: Mathlib/Logic/Equiv/Defs.lean
----
-
 # Permutation group of a type
 
 The **permutation group** of a set $X$, also called the **symmetric group** on $X$, is the

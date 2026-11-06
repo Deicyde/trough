@@ -1,11 +1,3 @@
----
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Module
-mathlib_file: Mathlib/Algebra/Module/Defs.lean
----
-
 # Module
 
 A module is a generalization of vector spaces to a scalar semiring.

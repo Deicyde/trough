@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: ContMDiff
-mathlib_file: Mathlib/Geometry/Manifold/ContMDiff/Defs.lean
----
-
 # Smooth map between manifolds
 
 `ContMDiff I I' n f` indicates that the function `f : M → M'` between manifolds

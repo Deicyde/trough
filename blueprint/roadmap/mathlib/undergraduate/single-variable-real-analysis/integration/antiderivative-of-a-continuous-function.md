@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Continuous.deriv_integral
-mathlib_file: Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean
----
-
 # Antiderivative of a continuous function
 
 **Fundamental theorem of calculus-1**, derivative in the right endpoint.

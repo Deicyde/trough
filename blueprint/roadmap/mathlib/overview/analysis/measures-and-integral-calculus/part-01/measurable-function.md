@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Measurable
-mathlib_file: Mathlib/MeasureTheory/MeasurableSpace/Defs.lean
----
-
 # Measurable function
 
 A function `f` between measurable spaces is measurable if the preimage of every

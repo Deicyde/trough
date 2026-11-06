@@ -1,11 +1,3 @@
----
-declaration: inductive
-origin: cited
-mathlib: true
-mathlib_declaration: BinaryTree
-mathlib_file: Mathlib/Data/Tree/Basic.lean
----
-
 # Tree
 
 A binary tree with values stored in non-leaf nodes.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Antitone.tendsto_alternating_series_of_tendsto_zero
-mathlib_file: Mathlib/Analysis/SpecificLimits/Normed.lean
----
-
 # Alternating series
 
 The **alternating series test** for antitone sequences.

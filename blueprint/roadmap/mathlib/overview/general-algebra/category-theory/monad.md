@@ -1,12 +1,3 @@
----
-article_id: af_f7bf5dd9d39806db34239583
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: CategoryTheory.Monad
-mathlib_file: Mathlib/CategoryTheory/Monad/Basic.lean
----
-
 # Monad
 
 A **monad** on a [category](category.md) $\mathcal{C}$ is an endofunctor $T$ of $\mathcal{C}$ together with two [natural transformations](natural-transformation.md), a unit $\eta \colon 1_{\mathcal{C}} \to T$ and a multiplication $\mu \colon T T \to T$, subject to associativity and unit laws that mirror those of a monoid. Monads arise from every [adjunction](adjunction.md), and conversely every monad arises from one. They give a uniform language for algebraic structure: groups, monoids, modules and compact Hausdorff spaces can all be described as algebras for a suitable monad. In computer science, monads model computational effects such as failure, nondeterminism and state.

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Finset.kruskal_katona
-mathlib_file: Mathlib/Combinatorics/SetFamily/KruskalKatona.lean
----
-
 # Kruskal-Katona theorem
 
 The **Kruskal-Katona theorem**.

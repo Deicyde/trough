@@ -1,12 +1,3 @@
----
-article_id: af_a797589fc5552e55da1054cb
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Nat.xgcd
-mathlib_file: Mathlib/Data/Int/GCD.lean
----
-
 # Euclid's' algorithm
 
 **Euclid's algorithm** computes the [greatest common divisor](greatest-common-divisor.md) of two

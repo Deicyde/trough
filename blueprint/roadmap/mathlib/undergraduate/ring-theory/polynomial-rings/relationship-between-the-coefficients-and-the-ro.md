@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Polynomial.coeff_eq_esymm_roots_of_card
-mathlib_file: Mathlib/RingTheory/Polynomial/Vieta.lean
----
-
 # Relationship between the coefficients and the roots of a split polynomial
 
 Vieta's formula for the coefficients and the roots of a polynomial over an integral domain

@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Metric.isCompact_iff_isClosed_bounded
-mathlib_file: Mathlib/Topology/MetricSpace/Bounded.lean
----
-
 # Heine-Borel theorem (proper metric space version)
 
 The **Heine–Borel theorem**:

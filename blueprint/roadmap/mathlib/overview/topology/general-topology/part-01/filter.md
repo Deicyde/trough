@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Filter
-mathlib_file: Mathlib/Order/Filter/Defs.lean
----
-
 # Filter
 
 A filter `F` on a type `α` is a collection of sets of `α` which contains the whole `α`,

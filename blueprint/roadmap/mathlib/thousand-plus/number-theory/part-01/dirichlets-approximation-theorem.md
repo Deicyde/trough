@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: AddCircle.exists_norm_nsmul_le, Real.exists_int_int_abs_mul_sub_le, Real.exists_nat_abs_mul_sub_round_le, Real.exists_rat_abs_sub_le_and_den_le
-mathlib_file: Mathlib/NumberTheory/WellApproximable.lean
----
-
 # Dirichlet's approximation theorem
 
 Mathlib records this with 4 declarations.

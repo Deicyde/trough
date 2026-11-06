@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: norm_add_le
-mathlib_file: Mathlib/Analysis/Normed/Group/Basic.lean
----
-
 # The Triangle Inequality
 
 **Triangle inequality** for the norm.

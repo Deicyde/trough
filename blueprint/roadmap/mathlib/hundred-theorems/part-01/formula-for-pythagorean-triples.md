@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: PythagoreanTriple.classification
-mathlib_file: Mathlib/NumberTheory/PythagoreanTriples.lean
----
-
 # Formula for Pythagorean Triples
 
 **Formula for Pythagorean Triples**

@@ -1,12 +1,3 @@
----
-article_id: af_7f595dfcee0d488048e4e51f
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: Localization
-mathlib_file: Mathlib/GroupTheory/MonoidLocalization/Basic.lean
----
-
 # Localization
 
 **Localization** is the construction that adjoins inverses to a chosen set of

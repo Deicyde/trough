@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.tendstoUniformlyOn_of_ae_tendsto
-mathlib_file: Mathlib/MeasureTheory/Function/Egorov.lean
----
-
 # Egorov's theorem
 
 **Egorov's theorem**: If `f : ι → α → β` is a sequence of strongly measurable functions that

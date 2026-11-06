@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: IsSelfAdjoint
-mathlib_file: Mathlib/Algebra/Star/SelfAdjoint.lean
----
-
 # Self-adjoint operator
 
 An element is self-adjoint if it is equal to its star.

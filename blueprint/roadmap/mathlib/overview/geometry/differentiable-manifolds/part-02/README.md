@@ -1,7 +1,3 @@
----
-navigation: transparent
----
-
 # Closed interval to 0-manifolds are discrete spaces
 
 - [Closed interval](closed-interval.md)

@@ -1,11 +1,3 @@
----
-declaration: abbrev
-origin: cited
-mathlib: true
-mathlib_declaration: PointedCone
-mathlib_file: Mathlib/Geometry/Convex/Cone/Pointed.lean
----
-
 # Pointed cone
 
 A pointed cone is a submodule of a module with scalars restricted to being nonnegative.

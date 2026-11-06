@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: Complex.isConservativeOn_and_continuousOn_iff_isDifferentiableOn
-mathlib_file: Mathlib/Analysis/Complex/HasPrimitives.lean
----
-
 # Morera's theorem
 
 Mathlib states this as `Complex.isConservativeOn_and_continuousOn_iff_isDifferentiableOn`.

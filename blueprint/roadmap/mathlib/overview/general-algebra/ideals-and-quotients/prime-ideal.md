@@ -1,12 +1,3 @@
----
-article_id: af_640b330a32a3d615794ae436
-declaration: class
-origin: cited
-mathlib: true
-mathlib_declaration: Ideal.IsPrime
-mathlib_file: Mathlib/RingTheory/Ideal/Prime.lean
----
-
 # Prime ideal
 
 A **prime ideal** of a commutative [ring](../rings/ring.md) is a proper

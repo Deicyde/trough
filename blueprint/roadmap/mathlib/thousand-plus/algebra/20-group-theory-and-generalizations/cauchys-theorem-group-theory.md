@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: exists_prime_orderOf_dvd_card
-mathlib_file: Mathlib/GroupTheory/Perm/Cycle/Type.lean
----
-
 # Cauchy's theorem (group theory)
 
 For every prime `p` dividing the order of a finite group `G` there exists an element of order

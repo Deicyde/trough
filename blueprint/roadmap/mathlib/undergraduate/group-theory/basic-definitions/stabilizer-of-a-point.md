@@ -1,12 +1,3 @@
----
-article_id: af_66092e339ecf428031e450ec
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: MulAction.stabilizer
-mathlib_file: Mathlib/GroupTheory/GroupAction/Defs.lean
----
-
 # Stabilizer of a point
 
 The **stabilizer** of a point under a [group action](../../../overview/general-algebra/group-theory/part-01/group-action.md) is the set of group

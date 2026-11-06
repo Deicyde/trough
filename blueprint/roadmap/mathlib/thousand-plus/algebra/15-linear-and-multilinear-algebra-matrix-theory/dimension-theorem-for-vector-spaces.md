@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: mk_eq_mk_of_basis
-mathlib_file: Mathlib/LinearAlgebra/Dimension/StrongRankCondition.lean
----
-
 # Dimension theorem for vector spaces
 
 The dimension theorem: if `v` and `v'` are two bases, their index types

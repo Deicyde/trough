@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ProbabilityTheory.measure_zero_or_one_of_measurableSet_limsup_atTop
-mathlib_file: Mathlib/Probability/Independence/ZeroOne.lean
----
-
 # Kolmogorov's $0$-$1$ law
 
 **Kolmogorov's 0-1 law** : any event in the tail σ-algebra of an independent sequence of

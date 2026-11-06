@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: AnalyticAt
-mathlib_file: Mathlib/Analysis/Analytic/Basic.lean
----
-
 # Analytic function
 
 Given a function `f : E → F`, we say that `f` is analytic at `x` if it admits a convergent power

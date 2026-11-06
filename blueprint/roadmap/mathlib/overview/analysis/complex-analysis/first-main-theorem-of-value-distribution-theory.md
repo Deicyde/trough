@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: ValueDistribution.characteristic_sub_characteristic_inv_le
-mathlib_file: Mathlib/Analysis/Complex/ValueDistribution/FirstMainTheorem.lean
----
-
 # First Main Theorem of Value Distribution Theory
 
 First part of the First Main Theorem, quantitative version: If `f` is meromorphic on the complex

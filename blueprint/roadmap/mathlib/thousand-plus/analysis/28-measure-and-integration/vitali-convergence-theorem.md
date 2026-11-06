@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: MeasureTheory.tendstoInMeasure_iff_tendsto_Lp
-mathlib_file: Mathlib/MeasureTheory/Function/UnifTight.lean
----
-
 # Vitali convergence theorem
 
 **Vitali's convergence theorem** (non-finite measure version).

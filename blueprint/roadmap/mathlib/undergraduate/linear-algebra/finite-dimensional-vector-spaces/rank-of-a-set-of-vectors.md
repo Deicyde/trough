@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Set.finrank
-mathlib_file: Mathlib/LinearAlgebra/Dimension/Constructions.lean
----
-
 # Rank of a set of vectors
 
 The rank of a set of vectors as a natural number.

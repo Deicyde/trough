@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply
-mathlib_file: Mathlib/Analysis/InnerProductSpace/Spectrum.lean
----
-
 # Diagonalization of self-adjoint endomorphisms
 
 *Diagonalization theorem*, *spectral theorem*; version 2: A self-adjoint operator `T` on a

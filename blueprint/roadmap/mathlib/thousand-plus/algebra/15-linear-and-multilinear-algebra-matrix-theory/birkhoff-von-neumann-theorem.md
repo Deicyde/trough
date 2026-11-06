@@ -1,11 +1,3 @@
----
-declaration: theorem
-origin: cited
-mathlib: true
-mathlib_declaration: doublyStochastic_eq_convexHull_permMatrix
-mathlib_file: Mathlib/Analysis/Convex/Birkhoff.lean
----
-
 # Birkhoff–Von Neumann theorem
 
 **Birkhoff's theorem**

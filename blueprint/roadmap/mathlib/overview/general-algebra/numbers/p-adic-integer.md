@@ -1,12 +1,3 @@
----
-article_id: af_cad44dd2e7ddd2c98b155a26
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: PadicInt
-mathlib_file: Mathlib/NumberTheory/Padics/PadicIntegers.lean
----
-
 # $p$-adic integer
 
 For a [prime number](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md) $p$, the **$p$-adic integers** form the ring $\mathbb{Z}_p$ of

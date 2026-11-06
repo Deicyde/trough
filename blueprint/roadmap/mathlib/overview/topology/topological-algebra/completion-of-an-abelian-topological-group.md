@@ -1,11 +1,3 @@
----
-declaration: instance
-origin: cited
-mathlib: true
-mathlib_declaration: UniformSpace.Completion.instAddCommGroup
-mathlib_file: Mathlib/Topology/Algebra/GroupCompletion.lean
----
-
 # Completion of an abelian topological group
 
 Mathlib states this as `UniformSpace.Completion.instAddCommGroup`.

@@ -1,11 +1,3 @@
----
-declaration: def
-origin: cited
-mathlib: true
-mathlib_declaration: Int.ModEq
-mathlib_file: Mathlib/Data/Int/ModEq.lean
----
-
 # Congruence in $\Z$
 
 `a ≡ b [ZMOD n]` when `a % n = b % n`.

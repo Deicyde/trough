@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: AlternatingMap
-mathlib_file: Mathlib/LinearAlgebra/Alternating/Basic.lean
----
-
 # Alternating map
 
 An alternating map from `ι → M` to `N`, denoted `M [⋀^ι]→ₗ[R] N`,

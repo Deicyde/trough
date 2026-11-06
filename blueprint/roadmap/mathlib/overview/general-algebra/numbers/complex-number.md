@@ -1,12 +1,3 @@
----
-article_id: af_9bbe3a6855d39ce7c10bf75d
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: Complex
-mathlib_file: Mathlib/Basic/Complex/Basic.lean
----
-
 # Complex number
 
 A **complex number** is an expression $a + bi$ in which $a$ and $b$ are

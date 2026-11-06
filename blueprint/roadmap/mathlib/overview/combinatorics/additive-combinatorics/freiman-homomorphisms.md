@@ -1,11 +1,3 @@
----
-declaration: structure
-origin: cited
-mathlib: true
-mathlib_declaration: IsAddFreimanHom
-mathlib_file: Mathlib/Combinatorics/Additive/FreimanHom.lean
----
-
 # Freiman homomorphisms
 
 An additive `n`-Freiman homomorphism from a set `A` to a set `B` is a map which preserves sums
