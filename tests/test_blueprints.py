@@ -158,10 +158,9 @@ def test_articles_carry_the_blueprints_marks(blueprint, tmp_path):
     lemma = dict(leaves["a-proof-label"].fields)
     assert lemma["lean"] == "A.one, A.two" and lemma["statement"] == "formalized" and "proof" not in lemma
     assert dict(leaves["Main"].fields)["mathlib_declaration"] == "Mathlib.main"
-    assert "mathlib" not in dict(leaves["noname"].fields)
-    unlabelled = leaves["Lemma: Unlabelled and not ready."]  # a node with no label or title is headed by its text
-    assert dict(unlabelled.fields)["not_ready"] == "true"
-    assert [leaf.title for leaf in unlabelled.depends] == ["a-proof-label"]
+    # Not ready, in Mathlib under no name, and formalized under no name: no article for any of them.
+    assert {"Lemma: Unlabelled and not ready.", "noname", "late"}.isdisjoint(leaves)
+    assert built.stats["left_out"] == 3 and "Its other 3 nodes have no article" in built.root.prose
     assert [leaf.title for leaf in leaves["a-proof-label"].proof_depends] == ["Main"]
     assert "[Definition Thing]" not in leaves["a-proof-label"].body
     assert "By [Thing](def-thing.md), things exist." == leaves["a-proof-label"].body
@@ -170,8 +169,8 @@ def test_articles_carry_the_blueprints_marks(blueprint, tmp_path):
     assert first.title == "First" and first.prose == "Some prose about $\\mathbb{R}$."
     basics = first.entries[0].node
     # The remark and its proof sit between the cards of the nodes around them.
-    assert [entry.node.title for entry in basics.entries] == ["Thing", "a-proof-label", "Lemma: Unlabelled and not ready."]
-    assert basics.entries[2].before == "**Remark.** A remark.\n\n*Proof.* Proves the remark, not the lemma."
+    assert [entry.node.title for entry in basics.entries] == ["Thing", "a-proof-label"]
+    assert basics.tail == "**Remark.** A remark.\n\n*Proof.* Proves the remark, not the lemma."
 
 
 def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
@@ -191,8 +190,26 @@ def test_a_library_without_a_license_shows_structure_only(blueprint, tmp_path):
     built = blueprints.chapter(project(tmp_path, text=False), again, {})
     assign_paths(built.root, Path("blueprint/roadmap/demo"))
     leaves = [node for node in walk(built.root) if not hasattr(node, "entries")]
-    assert len(leaves) == 6
+    assert len(leaves) == 3
     assert all("does not reproduce its text" in leaf.body for leaf in leaves)
+
+
+def test_only_named_formalized_nodes_have_articles(tmp_path):
+    """The map records what a project contains: a node whose Lean declaration the blueprint does
+    not name as formalized has no article, and text about it is left unlinked."""
+    (tmp_path / "web.tex").write_text(
+        "\\begin{document}\\chapter{C}\n"
+        "\\begin{lemma}\\label{plan}\\lean{Later}\\uses{done} Planned. \\end{lemma}\n"
+        "\\begin{lemma}\\label{done}\\lean{Done}\\leanok Done, unlike \\cref{plan}. \\end{lemma}\n"
+        "\\begin{proof}\\leanok\\uses{plan} By \\cref{plan}. \\end{proof}\n"
+        "\\end{document}\n"
+    )
+    built, leaves = build(leanblueprint.read(tmp_path, "web.tex"), tmp_path)
+    assert list(leaves) == ["done"] and built.stats["left_out"] == 1
+    done = leaves["done"]
+    assert done.body == "Done, unlike Lemma plan." and dict(done.notes)["Proof"] == "By Lemma plan."
+    assert done.depends == [] and done.proof_depends == []
+    assert "plan" not in built.targets
 
 
 @pytest.mark.parametrize("library", sorted(path.name for path in DATA.iterdir() if (path / "source.json").is_file()))
@@ -207,7 +224,7 @@ def test_vendored_blueprints_read_as_refreshed(library):
     built = blueprints.chapter(project, blueprint, {})
     assign_paths(built.root, Path("blueprint/roadmap") / library)
     blueprints.resolve(built, Path("blueprint"))
-    assert built.stats["nodes"] == source["nodes"]
+    assert built.stats["nodes"] + built.stats["left_out"] == source["nodes"]
 
 
 def test_formulas_keep_dollars_inside_braces_and_let_copies_a_meaning():
@@ -256,7 +273,7 @@ PAGES = r"""
 \chapter{Eq}
 Consider
 \begin{equation}\label{eq:a} a = b \end{equation}
-\begin{lemma}\label{lem:e}By \eqref{eq:a}, and
+\begin{lemma}\label{lem:e}\lean{E}\leanok By \eqref{eq:a}, and
 \begin{align} c &= d \label{eq:c} \\ e &= f \end{align}
 so \eqref{eq:c} and \ref{eq:c}.
 \end{lemma}
@@ -265,7 +282,7 @@ so \eqref{eq:c} and \ref{eq:c}.
 See \cref{lem:e}, Lemma~\ref{lem:e}, \eqref{eq:c}, \cref{rem:x} and \cite[p.~1]{knuth}.
 \subsection{Deeper}
 Text here.
-\begin{theorem}\label{my thm} T. \end{theorem}
+\begin{theorem}\label{my thm}\lean{T}\leanok T. \end{theorem}
 After, by \cref{my thm}.
 \section{Words}
 Only words, in a section with no nodes.
@@ -340,18 +357,18 @@ ROUND_TWO = r"""
 \begin{document}
 Opening words before any chapter.
 \chapter{Main}
-\begin{theorem}\label{thm:t} The theorem. \end{theorem}
+\begin{theorem}\label{thm:t}\lean{T}\leanok The theorem. \end{theorem}
 Some lemmas first, as Table~\ref{tab:laws} and \cref{tab:laws} list.
 \begin{table}[h]\begin{tabular}{cc} law & order \\ \hline $x = x$ & 1 \end{tabular}\caption{Laws.}\label{tab:laws}\end{table}
 \begin{remark}\label{rem:r} A remark. \end{remark}
 More words, then \cref{rem:r}.
 \begin{proof}[Note for readers] Not a proof. \end{proof}
 \begin{itemize}\item first
-\begin{lemma}\label{lem:inside} Inside a list. \end{lemma}
+\begin{lemma}\label{lem:inside}\lean{I}\leanok Inside a list. \end{lemma}
 \item second \end{itemize}
 \begin{proof}[Proof of the theorem]\proves{thm:t}
 We first show a claim.
-\begin{lemma}\label{lem:claim} A claim. \end{lemma}
+\begin{lemma}\label{lem:claim}\lean{C}\leanok A claim. \end{lemma}
 \begin{proof}\leanok Proof of the claim. \end{proof}
 Then the theorem follows, so
 \[ a = b \label{eq:ab} \].
@@ -436,14 +453,14 @@ ROUND_THREE = r"""
 \newtheorem{remark}{Remark}
 \begin{document}
 \chapter{S \cite{knuth}}
-\begin{lemma}\label{a} A. \end{lemma}
-\begin{proof} Outer. \begin{proof} Inner. \begin{lemma}\label{c} Claim C. \end{lemma} done. \end{proof} \end{proof}
-\begin{theorem}[Knuth \cite{knuth}]\label{thm:t}\uses{a} The theorem.
-\begin{proof} By a claim. \begin{lemma}\label{lem:d}\uses{c} A claim. \end{lemma} \end{proof}
+\begin{lemma}\label{a}\lean{A}\leanok A. \end{lemma}
+\begin{proof} Outer. \begin{proof} Inner. \begin{lemma}\label{c}\lean{C}\leanok Claim C. \end{lemma} done. \end{proof} \end{proof}
+\begin{theorem}[Knuth \cite{knuth}]\label{thm:t}\uses{a}\lean{T}\leanok The theorem.
+\begin{proof} By a claim. \begin{lemma}\label{lem:d}\uses{c}\lean{D}\leanok A claim. \end{lemma} \end{proof}
 \end{theorem}
-\begin{lemma}\label{e} E. \begin{remark} Remark R. \end{remark} \end{lemma}
+\begin{lemma}\label{e}\lean{E}\leanok E. \begin{remark} Remark R. \end{remark} \end{lemma}
 \begin{proof} P. \end{proof}
-\begin{theorem} $R$ is Church-Rosser iff it is confluent. \begin{enumerate}\item one \item two \end{enumerate} \end{theorem}
+\begin{theorem}\lean{R}\leanok $R$ is Church-Rosser iff it is confluent. \begin{enumerate}\item one \item two \end{enumerate} \end{theorem}
 \bibliography{refs}
 \end{document}
 """

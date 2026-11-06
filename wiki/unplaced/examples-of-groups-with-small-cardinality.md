@@ -95,7 +95,7 @@ group of order $12$. Every group of order $15$ is cyclic.
 
 These groups are the usual first examples of character tables. A finite abelian group of order
 $n$ has exactly $n$ irreducible complex representations up to isomorphism, all of dimension one (see
-[representations of abelian groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/representations%20of%20abelian%20groups)).
+representations of abelian groups).
 The group $S_3$ has three: the trivial and sign representations and a two-dimensional one, and
 $1^2 + 1^2 + 2^2 = 6$. The groups $D_4$ and $Q_8$ each have four one-dimensional irreducible
 representations and one of dimension two, and they have the same character table although they

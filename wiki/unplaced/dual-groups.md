@@ -7,10 +7,10 @@ The **dual group** of a finite abelian [group](trough:Group) $G$ is the group $\
 its characters: the [homomorphisms](trough:MonoidHom) from $G$ to the multiplicative group
 $\mathbb{C}^\times$ of nonzero complex numbers, multiplied pointwise. A finite abelian group has
 exactly as many characters as elements, and it can be recovered from its dual. The dual group is
-the setting for [Fourier analysis on finite abelian
-groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/Fourier%20transform%20for%20finite%20abelian%20groups),
-for Dirichlet characters in number theory, and for the [representations of abelian
-groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/representations%20of%20abelian%20groups),
+the setting for Fourier analysis on finite abelian
+groups,
+for Dirichlet characters in number theory, and for the representations of abelian
+groups,
 whose irreducible complex representations correspond to the characters.
 
 ## Definition

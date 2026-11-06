@@ -27,14 +27,14 @@ For each $s \in G$ let $\delta_s$ be the function equal to $1$ at $s$ and $0$ el
 
 - **Ring structure.** Expanding both sides, $((f * g) * h)(x)$ and $(f * (g * h))(x)$ both equal the sum of $f(a)\,g(b)\,h(c)$ over all triples with $abc = x$. Hence convolution is associative. It is also bilinear, so it distributes over addition, and [the group algebra $R[G]$ is a ring](lean:MonoidAlgebra.ring) whose [identity is $\delta_e$](lean:MonoidAlgebra.one_def).
 - **Commutativity.** [If $G$ is abelian, $R[G]$ is a commutative ring](lean:MonoidAlgebra.commRing). Conversely, if $st \neq ts$ and $R$ is not the zero ring, then $\delta_s * \delta_t = \delta_{st}$ differs from $\delta_t * \delta_s = \delta_{ts}$.
-- **The centre.** A function $f$ commutes with every function under convolution exactly when it commutes with each $\delta_s$, which says $f(sxs^{-1}) = f(x)$ for all $s$ and $x$. So the centre of $R[G]$ consists of the [class functions](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/class%20function%20over%20a%20group), those constant on each [conjugacy class](trough:ConjClasses).
+- **The centre.** A function $f$ commutes with every function under convolution exactly when it commutes with each $\delta_s$, which says $f(sxs^{-1}) = f(x)$ for all $s$ and $x$. So the centre of $R[G]$ consists of the class functions, those constant on each [conjugacy class](trough:ConjClasses).
 - **Representations.** A [representation](trough:Representation) of $G$ on a vector space $V$ over a field $k$ extends linearly to an action of $k[G]$ on $V$, and conversely; representations of $G$ are the same thing as $k[G]$-modules. In this language [Maschke's theorem](trough:MonoidAlgebra.Submodule.exists_isCompl) says that when the characteristic of $k$ does not divide $|G|$, every submodule of a $k[G]$-module has a complementary submodule.
-- **Characters.** For irreducible complex [characters](trough:FDRep.character) $\chi$ and $\psi$ of $G$, one has $\chi * \psi = 0$ when $\chi \neq \psi$, and $\chi * \chi = (|G|/\chi(e))\,\chi$. This refines the [orthogonality of irreducible characters](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/orthonormal%20basis%20of%20irreducible%20characters), which is its value at $x = e$.
+- **Characters.** For irreducible complex [characters](trough:FDRep.character) $\chi$ and $\psi$ of $G$, one has $\chi * \psi = 0$ when $\chi \neq \psi$, and $\chi * \chi = (|G|/\chi(e))\,\chi$. This refines the orthogonality of irreducible characters, which is its value at $x = e$.
 - **Fourier transform.** Let $G$ be a finite abelian group, and for a character $\chi \colon G \to \mathbb{C}^\times$ put $\hat f(\chi) = \sum_{x} f(x)\,\overline{\chi(x)}$. Substituting $x = yz$ gives
 
 $$\widehat{f * g}(\chi) = \hat f(\chi)\,\hat g(\chi),$$
 
-so the [Fourier transform](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/Fourier%20transform%20for%20finite%20abelian%20groups) turns convolution into pointwise multiplication of functions on the [dual group](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/dual%20groups).
+so the Fourier transform turns convolution into pointwise multiplication of functions on the dual group.
 
 ## Related concepts
 

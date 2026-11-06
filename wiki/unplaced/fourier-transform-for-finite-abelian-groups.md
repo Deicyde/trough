@@ -24,7 +24,7 @@ the values of a character are [roots of unity](trough:Complex.mem_rootsOfUnity);
 particular [$|\chi(x)| = 1$ for every $x$](lean:AddChar.norm_apply) and
 [$\chi(-x) = \overline{\chi(x)}$](lean:AddChar.map_neg_eq_conj). Under pointwise
 multiplication the characters form a group $\widehat{G}$, the
-[dual group](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/dual%20groups)
+dual group
 of $G$.
 
 The Fourier transform of a function $f : G \to \mathbb{C}$ is the function
@@ -53,7 +53,7 @@ Let $f, g : G \to \mathbb{C}$.
   $$\sum_{x \in G} f(x)\,\overline{g(x)} = \frac{1}{n} \sum_{\chi \in \widehat{G}} \widehat{f}(\chi)\,\overline{\widehat{g}(\chi)}.$$
   With $g = f$ this says $\sum_x |f(x)|^2 = \frac{1}{n}\sum_\chi |\widehat{f}(\chi)|^2$.
 - **Convolution.** The
-  [convolution](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/convolution)
+  convolution
   $(f * g)(x) = \sum_{y \in G} f(y)\,g(x - y)$
   satisfies $\widehat{f * g} = \widehat{f}\,\widehat{g}$.
 - **Translation.** If $f_a(x) = f(x - a)$, then
@@ -109,16 +109,16 @@ $z = x - y$ in the double sum defining $\widehat{f * g}$.
 Every irreducible complex representation of a finite abelian group is
 one-dimensional and is given by a character, so the expansion above is the abelian
 case of the expansion of class functions in the
-[orthonormal basis of irreducible characters](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/orthonormal%20basis%20of%20irreducible%20characters);
+orthonormal basis of irreducible characters;
 see also
-[representations of abelian groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/representations%20of%20abelian%20groups).
+representations of abelian groups.
 Fourier series on the circle and the Fourier transform on the real line are the
 analogous theories for other locally compact abelian groups. The finite form of
 Pontryagin duality says that
 [the map sending $x$ to the character $\chi \mapsto \chi(x)$ of $\widehat{G}$ is an isomorphism from $G$ onto the dual of $\widehat{G}$](lean:AddChar.doubleDualEquiv).
 The computational side is treated in
-[discrete Fourier transform on a finite abelian group](trough:undergrad:Numerical%20Analysis/Fourier%20transform/discrete%20Fourier%20transform%20on%20a%20finite%20abelian%20group)
-and [fast Fourier transform](trough:undergrad:Numerical%20Analysis/Fourier%20transform/fast%20Fourier%20transform).
+discrete Fourier transform on a finite abelian group
+and fast Fourier transform.
 
 ## In Mathlib
 
@@ -150,7 +150,6 @@ and it has no Plancherel identity or convolution theorem in this finite setting.
 - [Group](trough:Group)
 - [Group morphism](trough:MonoidHom)
 - [Complex number](trough:Complex)
-- [Dual groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/dual%20groups)
 
 ## Proof depends on
 

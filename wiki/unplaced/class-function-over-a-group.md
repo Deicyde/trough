@@ -93,12 +93,12 @@ conjugacy classes.
 - **Basis of irreducible characters.** Over the complex numbers the irreducible
   characters of a finite group are not only orthonormal but span the space of
   class functions, so they form an
-  [orthonormal basis](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/orthonormal%20basis%20of%20irreducible%20characters),
+  orthonormal basis,
   and the number of irreducible representations up to isomorphism equals the
   number of conjugacy classes.
 - **Centre of the group algebra.** Identify a function $f$ on a finite group
   with the element $\sum_g f(g)\, g$ of the group algebra $k[G]$, whose
-  multiplication corresponds to [convolution](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/convolution)
+  multiplication corresponds to convolution
   of functions. This element is central exactly when $f$ is a class function, so
   the class functions form the centre of the group algebra.
 - **Counting classes.** The dimension $r$ of the space of class functions can be
@@ -110,9 +110,9 @@ conjugacy classes.
 For a finite abelian group every function is a class function, and the
 irreducible complex characters are the homomorphisms to the nonzero complex
 numbers (equivalently, to the unit circle), which form the
-[dual group](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/dual%20groups).
+dual group.
 Expanding a function in this basis is the
-[Fourier transform for finite abelian groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/Fourier%20transform%20for%20finite%20abelian%20groups);
+Fourier transform for finite abelian groups;
 expansion of class functions in irreducible characters extends it to finite
 groups that are not abelian.
 

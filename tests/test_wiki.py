@@ -176,10 +176,20 @@ def test_an_authored_article_drops_its_concepts_informal_edges(tmp_path):
 def test_a_prerequisite_may_be_a_concept_with_no_declarations(tmp_path):
     sources = fake_sources()
     sources.lists["overview"] += [mathlib.Item("overview", "w", ("Area", "Sub"), "wanted thing", 4),
-                                  mathlib.Item("overview", "m", ("Area", "Sub"), "a module", 5, module="Mathlib.Mod")]
-    alpha = ARTICLE.replace("- [Gamma](trough:C)", "- [Wanted](trough:overview:w)\n- [Module](trough:Mathlib.Mod)")
-    _, _, targets = mathlib.chapter(sources, write(tmp_path, alpha=alpha))
-    assert [leaf.title for leaf in targets["A"].depends] == ["Wanted thing", "A module"]
+                                  mathlib.Item("overview", "m", ("Area", "Sub"), "a module", 5, module="Mathlib.Mod"),
+                                  mathlib.Item("overview", "s", ("Area", "Sub"), "stated thing", 6)]
+    sources.lists["overview"][-1].statement = "Stated"
+    alpha = ARTICLE.replace("- [Gamma](trough:C)", "- [Module](trough:Mathlib.Mod)")
+    root, stats, targets = mathlib.chapter(sources, write(tmp_path, alpha=alpha))
+    assert [leaf.title for leaf in targets["A"].depends] == ["A module"]
+    # A concept Mathlib lacks has no page; its list page counts it, and a link to it stops the chapter.
+    # One Mathlib states without a proof keeps its page: the statement is in the library.
+    assert "overview:w" not in targets and stats["left_out"] == 1
+    assert "does not prove it" in targets["Stated"].body
+    assert "Mathlib does not have 1 of its 6 items yet" in root.entries[0].node.prose
+    wanted = ARTICLE.replace("- [Gamma](trough:C)", "- [Wanted](trough:overview:w)")
+    with pytest.raises(ValueError, match="no article for overview:w"):
+        mathlib.chapter(sources, write(tmp_path, alpha=wanted))
 
 
 def test_prerequisites_that_close_a_cycle_stop_the_chapter(tmp_path):

@@ -1,11 +1,12 @@
-"""Chapters for the libraries mapped from their leanblueprints: one article per node.
+"""Chapters for the libraries mapped from their leanblueprints: one article per node in Lean.
 
 Each library's chapter follows its blueprint's chapters and sections. A node
-becomes an article whose status follows the blueprint's marks: \\leanok on a
-statement or a proof makes it formalized, \\mathlibok puts it in Mathlib, and
-\\notready marks it not ready. A Mathlib node whose first Lean name heads an
-article of the Mathlib chapter is that article. Dependencies are the \\uses:
-a statement's under "Depends on", a proof's under "Proof depends on".
+whose Lean declarations the blueprint names becomes an article when \\leanok on
+its statement or proof makes it formalized or \\mathlibok puts it in Mathlib;
+any other node only plans a declaration and has none. A Mathlib node whose
+first Lean name heads an article of the Mathlib chapter is that article.
+Dependencies are the \\uses: a statement's under "Depends on", a proof's
+under "Proof depends on".
 
 A library's sources live in data/blueprints/<id>/: source.json pins the
 commit, and src/ holds the TeX files the blueprint reads. A library whose
@@ -190,6 +191,13 @@ class Event:
     unit: Unit | None
 
 
+def in_lean(node: Node) -> bool:
+    """Whether the blueprint names the node's Lean declarations and marks them formalized, the
+    statement at least, or in Mathlib. The map records what the project contains, not what it
+    plans, so any other node has no article: AutoformBot could only show it as work to do."""
+    return bool(node.lean) and (node.leanok or node.mathlibok or bool(node.proof and node.proof.leanok))
+
+
 def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Leaf]) -> Built:
     """The chapter for *project*. *mathlib_heads* maps a Mathlib declaration to the
     Mathlib-chapter article it heads, for nodes in Mathlib.
@@ -201,9 +209,10 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     references print."""
     captions = {**{kind: kind.capitalize() for kind in KINDS}, **blueprint.captions}
     dochome = blueprint.links.get("dochome", "https://leanprover-community.github.io/mathlib4_docs")
-    nodes = blueprint.graph
+    nodes = [node for node in blueprint.graph if in_lean(node)]
+    present = set(nodes)
     unit_index = {id(unit): k for k, unit in enumerate(blueprint.units)}
-    stats = Counter(nodes=len(nodes))
+    stats = Counter(nodes=len(nodes), left_out=len(blueprint.graph) - len(nodes))
 
     def caption(node: Node) -> str:
         return captions.get(node.env, node.env.capitalize())
@@ -305,6 +314,9 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             text = display(target)
             if command in NUMBER_ONLY:
                 text = writer.plain(target.title) if target.title else short_id(target.id)
+            if target.graph and target not in present:
+                stats["refs_to_left_out"] += 1
+                return escape(text)
             return placeholder(text, target.id if target.graph else key(target.unit))
         if isinstance(target, Unit):
             home = page_unit(target)
@@ -342,8 +354,10 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         if node not in owned:
             continue
         mine = leaf_of[node]
-        statement = unique(leaf_of[target] for target in targets_of(node.uses, blueprint) if target is not node)
-        proof = unique(leaf_of[target] for target in targets_of(node.proof_uses, blueprint) if target is not node)
+        statement = unique(leaf_of[target] for target in targets_of(node.uses, blueprint)
+                           if target is not node and target in present)
+        proof = unique(leaf_of[target] for target in targets_of(node.proof_uses, blueprint)
+                       if target is not node and target in present)
         mine.depends = statement
         mine.proof_depends = [item for item in proof if item not in statement]
         stats["statement_edges"] += len(mine.depends)
@@ -468,13 +482,10 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
     lean_lines = [f"[`{name}`]({dochome}/find/#doc/{name})" for name in node.lean]
     statement_ok = node.leanok or bool(node.proof and node.proof.leanok)
     proof_ok = bool(node.proof and node.proof.leanok)
-    if node.mathlibok and node.lean:
+    if node.mathlibok:
         fields += [("mathlib", "true"), ("mathlib_declaration", ", ".join(node.lean))]
         stats["mathlib"] += 1
-    elif node.mathlibok:
-        notes.append(("Lean", "The blueprint marks this as in Mathlib but names no declaration."))
-        stats["mathlib_without_name"] += 1
-    elif statement_ok and node.lean:
+    else:
         fields += [("lean", ", ".join(node.lean)), ("statement", "formalized")]
         if proof_ok:
             fields.append(("proof", "formalized"))
@@ -482,14 +493,9 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
         stats["statements_formalized"] += 1
         for name in node.lean:
             lean_links[name] = f"{dochome}/find/#doc/{name}"
-    elif statement_ok:
-        notes.append(("Lean", "The blueprint marks this formalized but names no Lean declaration."))
-        stats["formalized_without_name"] += 1
-    if node.notready and not statement_ok:
-        fields.append(("not_ready", "true"))
     if node.discussion and blueprint.links.get("github"):
         fields.append(("discussion", f"{blueprint.links['github']}/issues/{node.discussion.strip().lstrip('#')}"))
-    if lean_lines and not any(heading == "Lean" for heading, _ in notes):
+    if lean_lines:
         lead = "Formalized as" if statement_ok else "The blueprint names"
         notes.append(("Lean", f"{lead} " + ", ".join(lean_lines) + "."))
     place, source = project.source(node.where)
@@ -554,9 +560,13 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
     date = f" ({project.date[:10]})" if project.date else ""
     nodes = stats["nodes"]
     lines = [
-        f"The blueprint of {project.name}, read at commit {rev}{date}: {nodes:,} nodes, one article each. A node the "
-        "blueprint marks `\\leanok` is formalized here, its proof too when that is marked, and `\\mathlibok` "
-        "puts it in Mathlib. Dependencies are the blueprint's `\\uses`: a statement's under *Depends on*, a "
+        f"The blueprint of {project.name}, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
+        "that the project has in Lean or Mathlib has"
+        + (f". Its other {stats['left_out']:,} nodes have no article, since the blueprint names no formalized "
+           "Lean declaration for them: the map records what the project contains, not what it plans"
+           if stats["left_out"] else "")
+        + ". A node the blueprint marks `\\leanok` is formalized here, its proof too when that is marked, and "
+        "`\\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\\uses`: a statement's under *Depends on*, a "
         "proof's under *Proof depends on*.",
     ]
     if project.text:

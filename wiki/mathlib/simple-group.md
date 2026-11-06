@@ -10,7 +10,7 @@ simple group has no quotient other than itself and the trivial group: every
 homomorphism out of it is either injective or sends everything to the identity.
 Simple groups play the role for finite groups that prime numbers play for
 integers. Every finite group is assembled from simple pieces, and the
-[classification of finite simple groups](trough:1000:Q1340623) determines all
+classification of finite simple groups determines all
 the finite ones.
 
 ## Definition
@@ -94,7 +94,7 @@ with the same composition factors need not be isomorphic: the cyclic group of
 order $4$ and the Klein four-group both have two factors of order $2$.
 
 A finite group is solvable precisely when all of its composition factors are
-cyclic of prime order. The [Feit–Thompson theorem](trough:1000:Q909517), that
+cyclic of prime order. The Feit–Thompson theorem, that
 every finite group of odd order is solvable, is equivalent to the statement that
 every nonabelian finite simple group has even order.
 

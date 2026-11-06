@@ -55,7 +55,7 @@ Throughout, $V$ and $W$ are finite-dimensional representations of $G$ over $k$.
   an element of $k$.
 - **Class function.** [$\chi_V(gh) = \chi_V(hg)$ for all $g, h$](lean:FDRep.char_mul_comm), and
   hence [$\chi_V(hgh^{-1}) = \chi_V(g)$](lean:FDRep.char_conj): the character is a
-  [class function](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/class%20function%20over%20a%20group),
+  class function,
   constant on each [conjugacy class](trough:ConjClasses).
 - **Invariance.** [Isomorphic representations have the same character](lean:FDRep.char_iso). The
   converse holds for finite groups over the complex numbers but fails in positive characteristic:
@@ -92,14 +92,14 @@ gives the [orthogonality of characters](trough:FDRep.char_orthonormal):
 ## Related concepts
 
 Over the complex numbers, the irreducible characters of a finite group form an
-[orthonormal basis of the space of class functions](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/orthonormal%20basis%20of%20irreducible%20characters),
+orthonormal basis of the space of class functions,
 so their number equals the number of conjugacy classes. Their orthonormality, together with
 [Maschke's theorem](trough:MonoidAlgebra.Submodule.exists_isCompl), is what makes the
 character determine the representation over the complex numbers. The [irreducible representations](trough:Representation.IsIrreducible)
 and their characters are recorded in the character table of the group. The one-dimensional
 characters of any group are its homomorphisms to the multiplicative group of the field. For a
 finite abelian group, the one-dimensional complex characters take values in the unit circle and
-form the [dual group](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/dual%20groups)
+form the dual group
 of harmonic analysis.
 
 ## In Mathlib

@@ -1,7 +1,7 @@
 # Trough
 
-Maps of Lean formalization libraries: what each one formalizes, how its results
-depend on one another, and what is still missing. The maps are AutoformBot
+Maps of Lean formalization libraries: what each one formalizes and how its
+results depend on one another, not what the library may add. The maps are AutoformBot
 vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot)
 and published at https://deicyde.github.io/trough/.
 
@@ -19,11 +19,13 @@ PNT+.
 
 Mathlib's maintainers keep four curated lists: `docs/overview.yaml`,
 `docs/undergrad.yaml`, `docs/100.yaml` and `docs/1000.yaml`. The map has one
-article per concept on them. Items naming the same declarations, or the same
-first declaration, are one article, placed in the first list that has it
-(overview, undergraduate, 100, 1000+); the other lists link to it. An item
-naming no declaration is an article marked not ready, shared with any item of
-the same title in another list.
+article per concept on them that Mathlib has: its declarations, a module, or a
+statement Mathlib states without a proof, which is marked not ready. Items
+naming the same declarations, or the same first declaration, are one article,
+placed in the first list that has it (overview, undergraduate, 100, 1000+); the
+other lists link to it. An item naming none of these has no article, and its
+list's page counts it: the map records what the library contains, not what it
+may add.
 
 1. `data/mathlib/yaml/` holds the four lists at the Mathlib commit pinned in
    `lean/lakefile.toml`, and `data/mathlib/source.json` records that commit.
@@ -50,8 +52,11 @@ the same title in another list.
 
 ## The blueprint chapters
 
-A library with a leanblueprint becomes a chapter with one article per node,
-following the blueprint's chapters and sections. Each part, chapter and
+A library with a leanblueprint becomes a chapter with one article per node
+that the project has in Lean, following the blueprint's chapters and sections.
+A node has an article when the blueprint names its Lean declarations and marks
+them formalized, the statement at least, or in Mathlib; any other node only
+plans a declaration and has none, and text that refers to it is left unlinked. Each part, chapter and
 section is a page that reads in the blueprint's order: its prose, remarks and
 examples, smaller units as headings, and each node's card where the node
 stands. A labelled display, figure or table shows a number, counted on its
@@ -70,8 +75,7 @@ page, and references print it; tables, listings and figure captions are kept.
    macros expanded in its own formulas; `tools/trough/bibtex.py` turns its
    citations into author-year labels linked to each work.
 3. A node's status follows its marks: `\leanok` makes its statement, or its
-   proof, formalized, `\mathlibok` puts it in Mathlib, and `\notready` marks
-   it not ready. A Mathlib node whose first Lean name heads a Mathlib-chapter
+   proof, formalized, and `\mathlibok` puts it in Mathlib. A Mathlib node whose first Lean name heads a Mathlib-chapter
    article is that article. `\uses` in a statement go under "Depends on",
    and in a proof under "Proof depends on".
 4. AutoformBot looks Lean names up only in this repository, which holds none
@@ -95,9 +99,8 @@ page, and references print it; tables, listings and figure captions are kept.
 
 A concept can have an authored article in `wiki/mathlib/`: original text in
 Markdown and TeX that takes the place of its docstring. Its front matter names
-the concept (`concept:`, the article's first declaration, or
-`<list>:<item key>` for one Mathlib lacks; `area:<headings>` gives a section of
-the overview its prose) and a durable `article_id`. In the text,
+the concept (`concept:`, the article's first declaration, statement or module;
+`area:<headings>` gives a section of the overview its prose) and a durable `article_id`. In the text,
 `[words](lean:Full.Name)` cites a Mathlib declaration and becomes a link to its
 documentation (a name with spaces goes in angle brackets,
 `[words](<lean:Name with spaces>)`), and `[words](trough:key)` links another

@@ -9,7 +9,7 @@ of [orbits](trough:MulAction.orbit) equals the average number of points fixed by
 element of the group. It is the basic tool for counting objects up to symmetry:
 colourings of a necklace up to rotation, of a cube up to rigid motion, or graphs up
 to relabelling of their vertices. It is also the first step towards the
-[Pólya enumeration theorem](trough:1000:Q1037559).
+Pólya enumeration theorem.
 
 ## Statement
 
@@ -73,7 +73,7 @@ Burnside's lemma is the comparison of the sizes of the two sides.
   [$|X|$ is congruent modulo $p$ to the number of points fixed by all of $G$](lean:IsPGroup.card_modEq_card_fixedPoints).
   Mathlib states this for any group in which every element has order a power of
   $p$, acting on a finite set.
-- The [Pólya enumeration theorem](trough:1000:Q1037559) refines Burnside's lemma for
+- The Pólya enumeration theorem refines Burnside's lemma for
   colourings, recording in a polynomial how many colourings of each type there are
   up to symmetry.
 

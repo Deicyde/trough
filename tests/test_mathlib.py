@@ -144,6 +144,9 @@ def test_real_lists_give_one_home_per_article_and_unique_first_declarations():
     firsts = [name for name in firsts if name]
     assert len(firsts) == len(set(firsts))
     assert all(dict(leaf.fields).get("not_ready") == "true" or dict(leaf.fields).get("mathlib") == "true" for leaf in leaves)
+    # Only what Mathlib has: declarations or a module, or a statement it states without a proof.
+    assert all("does not prove it" in leaf.body for leaf in leaves if dict(leaf.fields).get("not_ready"))
+    assert stats["articles"] + stats["left_out"] == len(mathlib.merge(sources.lists))
 
 
 def test_items_naming_nothing_merge_by_title_across_lists_only():

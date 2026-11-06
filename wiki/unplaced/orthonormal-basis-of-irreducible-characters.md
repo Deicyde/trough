@@ -8,7 +8,7 @@ theorem of the character theory of finite groups: for a finite [group](trough:Gr
 [characters](trough:FDRep.character) of the
 [irreducible](trough:Representation.IsIrreducible) complex representations of $G$,
 one for each isomorphism class, form an orthonormal basis of the space of
-[class functions](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/class%20function%20over%20a%20group)
+class functions
 on $G$. Orthonormality means that irreducible representations can be told apart,
 and multiplicities computed, by evaluating sums over the group; completeness means
 that they span the class functions. Together the two parts show that there are
@@ -56,7 +56,7 @@ and $0$ otherwise](lean:FDRep.char_orthonormal). These are the
   one-dimensional](lean:Representation.IsIrreducible.finrank_eq_one_of_isMulCommutative),
   so the irreducible characters of a finite abelian group are its homomorphisms
   to the nonzero complex numbers, which make up the
-  [dual group](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/dual%20groups).
+  dual group.
   Every function is a class function here, and the theorem says these characters
   form an orthonormal basis of all functions $G \to \mathbb{C}$. For a finite abelian
   group written additively,
@@ -122,7 +122,7 @@ gives $\sum_g \overline{f(g)}\, g = 0$, so $f = 0$.
 ## Related concepts
 
 For abelian groups, expanding a function in the basis of characters is the
-[Fourier transform for finite abelian groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/Fourier%20transform%20for%20finite%20abelian%20groups);
+Fourier transform for finite abelian groups;
 the expansion of class functions in irreducible characters extends it to all
 finite groups. Under the identification of functions with elements of the group
 algebra, class functions are its centre, so the number of irreducible
@@ -153,7 +153,6 @@ $\chi(g)$.
 
 - [Character](trough:FDRep.character)
 - [Irreducible representation](trough:Representation.IsIrreducible)
-- [Class function over a group](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/class%20function%20over%20a%20group)
 - [Orthonormal bases](trough:maximal_orthonormal_iff_basis_of_finiteDimensional)
 
 ## Proof depends on
