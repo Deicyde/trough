@@ -1,6 +1,6 @@
 # Polynomial Freiman-Ruzsa
 
-The blueprint of Polynomial Freiman-Ruzsa, read at commit [7e7fadf0](https://github.com/teorth/pfr/tree/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f) (2026-10-29): one article for each of its 213 nodes that the project has in Lean or Mathlib has. Its other 6 nodes have no article, since the blueprint names no formalized Lean declaration for them: the map records what the project contains, not what it plans. A node the blueprint marks `\leanok` is formalized here, its proof too when that is marked, and `\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+The blueprint of Polynomial Freiman-Ruzsa, read at commit [7e7fadf0](https://github.com/teorth/pfr/tree/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f) (2026-10-29): one article for each of its 213 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 6 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A node the blueprint marks `\leanok` is formalized here, its proof too when that is marked, and `\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

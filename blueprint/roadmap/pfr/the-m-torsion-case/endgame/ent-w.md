@@ -12,7 +12,7 @@ We have $\mathbb{H}[W] \leq (2m-1)k + \frac1m \sum_{i=1}^m \mathbb{H}[X_i]$.
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Proof depends on
 
@@ -22,7 +22,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Without loss of generality, we may take $X_1,\dots,X_m$ to be independent. Write $S = \sum_{i=1}^m X_i$. Note that for each $j \in \mathbb{Z}/m\mathbb{Z}$, the sum $Q_j$ from (pqr-defs) above has the same distribution as $S$. By [Kaimonovich–Vershik–Madiman inequality](../more-ruzsa-distance-estimates/klm-1.md) we have
+Without loss of generality, we may take $X_1,\dots,X_m$ to be independent. Write $S = \sum_{i=1}^m X_i$. Note that for each $j \in \mathbb{Z}/m\mathbb{Z}$, the sum $Q_j$ from [Additional random variables](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/torsion.tex#L594) above has the same distribution as $S$. By [Kaimonovich–Vershik–Madiman inequality](../more-ruzsa-distance-estimates/klm-1.md) we have
 
 $$
 \begin{aligned}

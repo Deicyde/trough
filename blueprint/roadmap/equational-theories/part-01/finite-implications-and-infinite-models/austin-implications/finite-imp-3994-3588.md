@@ -8,7 +8,7 @@ proof: formalized
 
 # 3994 implies 3588 for finite models
 
-All finite magmas which satisfy [E3994](https://teorth.github.io/equational_theories/implications/?3994) $()$ also satisfy [E3588](https://teorth.github.io/equational_theories/implications/?3588) $({x \diamond y = z \diamond ((x \diamond y) \diamond z)})$.
+All finite magmas which satisfy [E3994](https://teorth.github.io/equational_theories/implications/?3994) $({x \diamond y = (z \diamond (x \diamond y)) \diamond z})$ also satisfy [E3588](https://teorth.github.io/equational_theories/implications/?3588) $({x \diamond y = z \diamond ((x \diamond y) \diamond z)})$.
 
 ## Depends on
 

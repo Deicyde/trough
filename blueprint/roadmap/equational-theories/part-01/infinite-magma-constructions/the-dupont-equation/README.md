@@ -1,6 +1,6 @@
 # The Dupont equation
 
-Now we consider the Dupont equation, [E63](https://teorth.github.io/equational_theories/implications/?63) $({x = y \diamond (x \diamond (x \diamond y))})$, which can be treated by a greedy translation invariant construction that is more complicated than the one considered for the Asterix law in [The Asterix equation](../the-asterix-equation/README.md).
+Now we consider the Dupont equation, [E63](https://teorth.github.io/equational_theories/implications/?63) $({x = y \diamond (x \diamond (x \diamond y))})$, which can be treated by a greedy translation invariant construction that is more complicated than the one considered for the Asterix law in The Asterix equation.
 
 If we adopt a translation-invariant model
 

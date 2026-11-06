@@ -21,7 +21,7 @@ If $H$ is a finite subgroup of $G$, and $\rho(U_H) \leq r$, then there exists $t
 
 ## Proof
 
-The first claim is a direct corollary of [Rho minus of subgroup](rhominus-subgroup.md) and [Rho plus of subgroup](rhoplus-subgroup.md). To see the second claim, observe that Rho minus non-negative and [Rho plus of subgroup](rhoplus-subgroup.md) imply $\rho^-(U_H),\rho^+(U_H)\ge 0$. Therefore
+The first claim is a direct corollary of [Rho minus of subgroup](rhominus-subgroup.md) and [Rho plus of subgroup](rhoplus-subgroup.md). To see the second claim, observe that [Rho minus non-negative](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/further_improvement.tex#L94) and [Rho plus of subgroup](rhoplus-subgroup.md) imply $\rho^-(U_H),\rho^+(U_H)\ge 0$. Therefore
 
 $$
 |H(U_A)-H(U_H)|=|\rho^+(U_H)-\rho^-(U_H)|\le \rho^-(U_H)+\rho^+(U_H)= 2\rho(U_H)\le 2r,

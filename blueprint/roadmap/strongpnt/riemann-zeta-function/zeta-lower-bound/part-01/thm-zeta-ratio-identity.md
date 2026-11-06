@@ -12,7 +12,7 @@ The blueprint of Strong PNT (Math Inc) states this theorem at [PNT/PNT3_RiemannZ
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Proof depends on
 

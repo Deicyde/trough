@@ -11,7 +11,7 @@ If $w \simeq w'$ is such that every variable appears the same number of times in
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Proof
 

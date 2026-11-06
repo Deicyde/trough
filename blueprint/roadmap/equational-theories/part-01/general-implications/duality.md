@@ -11,7 +11,7 @@ The law $w \simeq w'$ implies $w''\simeq w'''$, if and only if $w^{\mathrm{op}} 
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Proof
 

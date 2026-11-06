@@ -11,7 +11,7 @@ If $\diamond$ is defined by a partial solution, and $(x,a) \diamond (y,b)$ is un
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Proof
 

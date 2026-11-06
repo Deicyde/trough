@@ -20,7 +20,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Clear from Definition Conditional Kullback–Leibler divergence and Lemma [Gibbs inequality](gibbs.md).
+Clear from Definition [Conditional Kullback–Leibler divergence](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/further_improvement.tex#L65) and Lemma [Gibbs inequality](gibbs.md).
 
 ## Lean
 

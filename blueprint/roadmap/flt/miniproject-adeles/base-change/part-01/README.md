@@ -81,7 +81,7 @@ We still need to talk about topologies though, so let's finish by doing this. Le
 
 We now allow a slight change of index set. Unfortunately I don't think that we can deduce the results just stated above from this one, in Lean, because the product of $Y_w$ over a set of size 1 is not definitionally equal to $Y_w$.
 
-Recall definition RestrictedProduct.relabelIso, giving us a bijection between two restricted products.
+Recall definition [RestrictedProduct.relabelIso](https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/blueprint/src/chapter/AdeleMiniproject.tex#L556), giving us a bijection between two restricted products.
 
 Recall that if
 
@@ -128,10 +128,6 @@ The overall strategy is to first establish, for each infinite place $v$ of $K$, 
 First, we require a preliminary result that $K$ is dense inside any product of completions $\prod_{v\in S} K_v$ of $K$ at infinite places.
 
 - [NumberField.InfinitePlace.Completion.denseRange\_algebraMap\_subtype\_pi](numberfield-infiniteplace-completion-denserange.md)
-
-### Dimensionality of $\prod_{w\mid v}L_w$ as a $K_v$-vector space
-
-This subsection contains a result that the $K_v$-dimension of $L \otimes_K K_v$ is equal to the $K_v$-dimension of $\prod_{w\mid v}L_w$.
 
 ### Base change at infinite places
 

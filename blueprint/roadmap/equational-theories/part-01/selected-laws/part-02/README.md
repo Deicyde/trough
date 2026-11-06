@@ -12,7 +12,7 @@ The “Dupont” law, studied further in [The Dupont equation](../../infinite-ma
 
 - [Equation 65](eq65.md)
 
-The “Asterix” law, studied further in [The Asterix equation](../../infinite-magma-constructions/the-asterix-equation/README.md).
+The “Asterix” law, studied further in The Asterix equation.
 
 - [Equation 168](eq168.md)
 
@@ -32,7 +32,7 @@ Introduced in [MathOverflow](https://mathoverflow.net/a/450905/766). See [387 im
 
 - [Equation 477](eq477.md)
 
-An example of a confluent law; see 477 confluent.
+An example of a confluent law; see [477 confluent](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/abstract_nonsense.tex#L136).
 
 - [Equation 854](eq854.md)
 
@@ -48,7 +48,7 @@ The weak central groupoid law, implied by the central groupoid law [E168](https:
 
 - [Equation 1491](eq1491.md)
 
-The “Obelix” law, studied further in [The Asterix equation](../../infinite-magma-constructions/the-asterix-equation/README.md).
+The “Obelix” law, studied further in The Asterix equation.
 
 - [Equation 1571](eq1571.md)
 

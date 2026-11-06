@@ -12,7 +12,7 @@ The blueprint of Strong PNT (Math Inc) states this lemma at [PNT/PNT3_RiemannZet
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Lean
 
