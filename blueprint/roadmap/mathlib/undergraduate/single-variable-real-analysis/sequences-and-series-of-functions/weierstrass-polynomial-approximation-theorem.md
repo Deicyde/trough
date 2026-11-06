@@ -26,14 +26,14 @@ polynomialFunctions_closure_eq_top (a b : ℝ) :
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Compact open topology](../../../overview/topology/general-topology/part-01/compact-open-topology.md)
-- [Order (Real numbers)](../real-numbers/order.md)
+- [Order](../real-numbers/order.md)
 - [Order topology](../../../overview/topology/topological-algebra/order-topology.md)
 - [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)
 - [Topological ring](../../../overview/topology/topological-algebra/topological-ring.md)
 
 ## Proof depends on
 
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Heine-Cantor theorem](../../../overview/topology/uniform-notions/heine-cantor-theorem.md)
 - [Homeomorphisms](../../topology/topology-and-metric-spaces/homeomorphisms.md)
 - [Linear map](../../../overview/linear-algebra/fundamentals/linear-map.md)

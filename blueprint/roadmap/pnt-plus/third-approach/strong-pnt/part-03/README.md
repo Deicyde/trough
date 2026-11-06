@@ -2,10 +2,8 @@
 navigation: transparent
 ---
 
-# DeltaT to StrongPNT
+# SumBoundII to StrongPNT
 
-- [DeltaT](deltat.md)
-- [DeltaRange](deltarange.md)
 - [SumBoundII](sumboundii.md)
 - [GapSize](gapsize.md)
 - [LogDerivZetaUniformLogSquaredBoundStrip](logderivzetauniformlogsquaredboundstrip.md)

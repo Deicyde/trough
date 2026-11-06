@@ -17,9 +17,9 @@ Complex.exp (z : ℂ) : ℂ
 ## Depends on
 
 - [Complex number](../../../overview/general-algebra/numbers/complex-number.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Finite set](../../../overview/data-structures/sets/finite-set.md)
-- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../single-variable-real-analysis/real-numbers/order.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ Real.tendsto_sum_range_one_div_nat_succ_atTop :
 
 - [Characteristic zero](../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Continuous function](../../overview/topology/general-topology/part-01/continuous-function.md)
-- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Infinite sum](../../overview/topology/topological-algebra/infinite-sum.md)
 - [Metric space](../../overview/topology/metric-spaces/metric-space.md)
 - [Module](../../overview/linear-algebra/fundamentals/module.md)

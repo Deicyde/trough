@@ -48,7 +48,7 @@ $k \ge 1$, all congruent to $a$ modulo $p$.
   $a = 1$, then $|F(1)| = |1 - u| \le 1/8 < 1/4 = |2|^2$, so $u$ has a square root $z$ in
   $\mathbb{Z}_2$ with $z \equiv 1 \pmod 4$.
 - **Roots of unity.** Take $F = X^{p-1} - 1$ and $a \in \{1, \dots, p-1\}$. By
-  [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md) $F(a) \equiv 0 \pmod p$, while
+  [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md) $F(a) \equiv 0 \pmod p$, while
   $F'(a) = (p-1)a^{p-2}$ is not divisible by $p$. Each $a$ therefore lifts to a root of $F$, and the
   $p - 1$ lifts lie in different residue classes. So $\mathbb{Z}_p$ contains $p - 1$ distinct
   $(p-1)$-th roots of unity, one in each nonzero residue class modulo $p$.

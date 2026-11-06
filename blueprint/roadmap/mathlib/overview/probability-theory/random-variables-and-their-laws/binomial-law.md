@@ -18,7 +18,7 @@ ProbabilityTheory.binomial (n : ℕ) (p : ↑unitInterval) : MeasureTheory.Measu
 
 - [Almost sure convergence](../convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
 - [Bernoulli law](bernoulli-law.md)
-- [Carathéodory's extension theorem](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-extension-theorem.md)
+- [Carathéodory's extension theorem](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-extension-theorem.md)
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Measurable function](../../analysis/measures-and-integral-calculus/part-01/measurable-function.md)

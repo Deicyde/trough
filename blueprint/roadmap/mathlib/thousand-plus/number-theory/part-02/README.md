@@ -2,25 +2,15 @@
 navigation: transparent
 ---
 
-# Chen's theorem to Ferrero–Washington theorem
+# Minkowski's theorem to Zeckendorf's theorem
 
-- [Chen's theorem](chens-theorem.md)
-- [Chinese remainder theorem](../../../overview/general-algebra/ideals-and-quotients/chinese-remainder-theorem.md)
-- [Chowla–Mordell theorem](chowla-mordell-theorem.md)
-- [Corners theorem](../../../overview/combinatorics/additive-combinatorics/corners-theorem.md)
-- [Critical line theorem](critical-line-theorem.md)
-- [Davenport–Schmidt theorem](davenport-schmidt-theorem.md)
-- [Dirichlet's approximation theorem](dirichlets-approximation-theorem.md)
-- [Dirichlet's theorem on arithmetic progressions](../../../hundred-theorems/part-03/dirichlets-theorem.md)
-- [Dirichlet's unit theorem](dirichlets-unit-theorem.md)
-- [Erdős–Ginzburg–Ziv theorem](../../../overview/combinatorics/additive-combinatorics/erdos-ginzburg-ziv-theorem.md)
-- [Erdős–Kac theorem](erdos-kac-theorem.md)
-- [Euclid's theorem](../../../hundred-theorems/part-01/the-infinitude-of-primes.md)
-- [Euclid–Euler theorem](../../../hundred-theorems/part-04/the-perfect-number-theorem.md)
-- [Euler's partition theorem](../../../hundred-theorems/part-03/the-partition-theorem.md)
-- [Euler's theorem](../../../hundred-theorems/part-01/eulers-generalization-of-fermats-little-theorem.md)
-- [Fermat polygonal number theorem](fermat-polygonal-number-theorem.md)
-- [Fermat's Last Theorem](../../../hundred-theorems/part-02/fermats-last-theorem.md)
-- [Fermat's little theorem](fermats-little-theorem.md)
-- [Fermat's theorem on sums of two squares](../../../overview/general-algebra/number-theory/sum-of-two-squares.md)
-- [Ferrero–Washington theorem](ferrero-washington-theorem.md)
+- [Minkowski's theorem](../../../hundred-theorems/part-02/minkowskis-fundamental-theorem.md)
+- [Niven's theorem](nivens-theorem.md)
+- [Ostrowski's theorem](ostrowskis-theorem.md)
+- [Pentagonal number theorem](pentagonal-number-theorem.md)
+- [Quadratic reciprocity theorem](../../../overview/general-algebra/number-theory/quadratic-reciprocity.md)
+- [Solutions to Pell's equation](../../../hundred-theorems/part-02/solutions-to-pells-equation.md)
+- [Sylvester's law of inertia](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/orthogonality/sylvesters-law-of-inertia-existence.md)
+- [Von Staudt–Clausen theorem](von-staudt-clausen-theorem.md)
+- [Wilson's theorem](../../../hundred-theorems/part-02/wilsons-lemma.md)
+- [Zeckendorf's theorem](zeckendorfs-theorem.md)

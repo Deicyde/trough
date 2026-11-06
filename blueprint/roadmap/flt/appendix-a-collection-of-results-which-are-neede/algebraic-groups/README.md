@@ -1,5 +1,3 @@
 # Algebraic groups.
 
 The concept of an affine algebraic group over a field $K$ can be implemented in Lean as a commutative Hopf algebra over $K$, as a group object in the category of affine schemes over $K$, as a representable group functor on the category of affine schemes over $K$, or as a representable group functor on the category of schemes over $K$ which is represented by an affine scheme. All of these are the same to mathematicians but different to Lean and some thought should go into which of these should be the actual definition, and which should be proved to be the same thing as the definition.
-
-- [connected\_reductive\_group](connected-reductive-group.md)

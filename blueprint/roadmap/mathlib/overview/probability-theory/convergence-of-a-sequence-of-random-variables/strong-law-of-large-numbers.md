@@ -30,7 +30,7 @@ ProbabilityTheory.strong_law_ae.{u_1, u_2} {Ω : Type u_1} {mΩ : MeasurableSpac
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Bochner integral](../../analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
 - [Borel sigma-algebra](../../analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Giry monad](../../analysis/measures-and-integral-calculus/part-01/giry-monad.md)
 - [Measurable function](../../analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 
@@ -46,7 +46,7 @@ ProbabilityTheory.strong_law_ae.{u_1, u_2} {Ω : Type u_1} {mΩ : MeasurableSpac
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Probability measure](../definitions-in-probability-theory/probability-measure.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 

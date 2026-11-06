@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Prime power to Fixed lower
+# Term bound to Fixed lower
 
-- [Prime power](lem-abs-p-pow-s.md)
 - [Term bound](lem-abs-term-bound.md)
 - [Inv order](lem-inv-inequality.md)
 - [Nonzero term](lem-condp32.md)

@@ -28,7 +28,7 @@ Finset.small_pow_of_small_tripling.{u_1} {G : Type u_1} [DecidableEq G] [Group G
 ## Proof depends on
 
 - [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Ordered ring](../../general-algebra/rings/ordered-ring.md)
 
 ## Sources

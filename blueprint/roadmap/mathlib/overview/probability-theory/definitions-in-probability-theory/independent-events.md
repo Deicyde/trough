@@ -19,7 +19,7 @@ ProbabilityTheory.iIndepSet.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} {_mΩ : M
 ## Depends on
 
 - [Almost sure convergence](../convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Giry monad](../../analysis/measures-and-integral-calculus/part-01/giry-monad.md)
 - [Measurable function](../../analysis/measures-and-integral-calculus/part-01/measurable-function.md)
 

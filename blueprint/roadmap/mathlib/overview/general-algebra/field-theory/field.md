@@ -46,8 +46,8 @@ unique, and division is defined by $a / b = a\,b^{-1}$ for $b \neq 0$.
   (see [maximal ideal](../ideals-and-quotients/maximal-ideal.md)).
 - Every integral domain [embeds in](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Localization/FractionRing.html#IsFractionRing.injective) its [field of fractions](field-of-fractions-of-an-integral-domain.md),
   as $\mathbb{Z}$ embeds in $\mathbb{Q}$. Applied to the polynomial ring $K[X]$, this
-  gives the field $K(X)$ of [rational functions](../../../undergraduate/ring-theory/field-theory/part-01/rational-fraction-fields-with-one-indeterminate.md) in one variable.
-- [Finite fields](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) exist beyond the integers
+  gives the field $K(X)$ of [rational functions](../../../undergraduate/ring-theory/field-theory/rational-fraction-fields-with-one-indeterminate.md) in one variable.
+- [Finite fields](../../../undergraduate/ring-theory/field-theory/finite-fields.md) exist beyond the integers
   modulo a prime: for example, adjoining a root of $X^2 + X + 1$ to the field with two
   elements gives a field with four elements.
 

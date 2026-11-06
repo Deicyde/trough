@@ -14,7 +14,6 @@
 - [Fubini's theorem](../../../overview/analysis/measures-and-integral-calculus/part-02/fubinis-theorem.md)
 - [Change of variables for multiple integrals](../../../overview/analysis/measures-and-integral-calculus/part-02/change-of-variables-formula.md)
 - [Change of variables to polar co-ordinates](change-of-variables-to-polar-co-ordinates.md)
-- [Change of variables to spherical co-ordinates](change-of-variables-to-spherical-co-ordinates.md)
 - [Convolution](../../../overview/analysis/measures-and-integral-calculus/part-02/convolution.md)
 - [Approximation by convolution](../../../overview/analysis/measures-and-integral-calculus/part-02/approximation-by-convolution.md)
 - [Regularization by convolution](../../../overview/analysis/measures-and-integral-calculus/part-02/regularization-by-convolution.md)

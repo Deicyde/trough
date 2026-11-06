@@ -1,17 +1,15 @@
 # Strong PNT
 
-## [AnalyticOn.norm-le-of-norm-le-on… to BlaschkeNonZero](part-01/README.md)
+## [AnalyticOn.norm-le-of-norm-le-on… to JBlaschke](part-01/README.md)
 
 - [AnalyticOn.norm-le-of-norm-le-on-sphere](part-01/analyticon-norm-le-of-norm-le-on-sphere.md)
 - [borelCaratheodory'](part-01/borelcaratheodory.md)
 - [cauchy-formula-deriv](part-01/cauchy-formula-deriv.md)
 - [DerivativeBound](part-01/derivativebound.md)
 - [BorelCaratheodoryDeriv](part-01/borelcaratheodoryderiv.md)
-- [TaxicabIntegral](part-01/taxicabintegral.md)
 - [LogOfAnalyticFunction](part-01/logofanalyticfunction.md)
 - [LogOfAnalyticFunction'](part-01/logofanalyticfunction-2.md)
 - [SetOfZeros](part-01/setofzeros.md)
-- [ZeroOrder](part-01/zeroorder.md)
 - [ZeroFactor](part-01/zerofactor.md)
 - [ZeroFactorization](part-01/zerofactorization.md)
 - [CFunction](part-01/cfunction.md)
@@ -22,11 +20,11 @@
 - [norm-fOfZero-le-norm-BlaschkeOfZero](part-01/norm-fofzero-le-norm-blaschkeofzero.md)
 - [DiskBound](part-01/diskbound.md)
 - [BlaschkeNonZero](part-01/blaschkenonzero.md)
+- [ZerosBound](part-01/zerosbound.md)
+- [JBlaschke](part-01/jblaschke.md)
 
-## [ZerosBound to ZeroInequality](part-02/README.md)
+## [JBlaschkeDerivBound to DeltaRange](part-02/README.md)
 
-- [ZerosBound](part-02/zerosbound.md)
-- [JBlaschke](part-02/jblaschke.md)
 - [JBlaschkeDerivBound](part-02/jblaschkederivbound.md)
 - [FinalBound](part-02/finalbound.md)
 - [ZetaFixedLowerBound](part-02/zetafixedlowerbound.md)
@@ -45,11 +43,11 @@
 - [vonMangoldtLSeriesSummable](part-02/vonmangoldtlseriessummable.md)
 - [ZeroWindowFinite](part-02/zerowindowfinite.md)
 - [ZeroInequality](part-02/zeroinequality.md)
+- [DeltaT](part-02/deltat.md)
+- [DeltaRange](part-02/deltarange.md)
 
-## [DeltaT to StrongPNT](part-03/README.md)
+## [SumBoundII to StrongPNT](part-03/README.md)
 
-- [DeltaT](part-03/deltat.md)
-- [DeltaRange](part-03/deltarange.md)
 - [SumBoundII](part-03/sumboundii.md)
 - [GapSize](part-03/gapsize.md)
 - [LogDerivZetaUniformLogSquaredBoundStrip](part-03/logderivzetauniformlogsquaredboundstrip.md)

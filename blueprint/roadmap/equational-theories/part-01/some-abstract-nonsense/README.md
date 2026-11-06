@@ -22,17 +22,13 @@ We remark that the ordinary free magma $M_X$ corresponds to the case when $\Gamm
 
 Free magmas can be used to characterize entailment by $\Gamma$ in terms of a canonical invariant.
 
-- [Canonical invariant](canonical-invariant.md)
-
 Every theory $\Gamma$ then gives a metatheorem about anti-implication:
-
-- [Criterion for anti-implication](anti-impl.md)
 
 **Example.** Let $\Gamma$ be the associative and commutative law, so that we can take $M_{X,\Gamma} = \mathbb{N}_0^X \backslash 0$ as in Free associative commutative magma. One can then check that for any word $w \in M_X$, that $\varphi_{\iota_{X,\Gamma}}(w)$ is the tuple that assigns to each letter $x$ of the alphabet, the number of times $x$ appears in $w$. We conclude that if $w,w'$ have the same number of occurrences of each letter of the alphabet, but $w'', w'''$ do not, then $w \simeq w'$ cannot imply $w'' \simeq w'''$. This recovers [Criterion for implication](../general-implications/variable-impl.md).
 
 **Example.** Let $\Gamma$ consist of the left absorption law, so we can take $M_{X,\Gamma} = X$ as in Free left absorptive magma. Then $\varphi_{\iota_{X,\Gamma}}(w)$ is the first letter of $w$. We conclude that if $w,w'$ have the same first letter, but $w'', w'''$ do not, then $w \simeq w'$ cannot imply $w'' \simeq w'''$.
 
-**Example.** Let $\Gamma$ consist of the constant law, so we can take $M_{X,\Gamma} = X \uplus \{0\}$ as in Free constant magma. Then $\varphi_{\iota_{X,\Gamma}}(w)$ is $x$ if $w$ is just a letter $x$ of the alphabet, and $0$ otherwise. We conclude that if $w,w', w'''$ have order at least one, but $w''$ has order zero, then $w \simeq w'$ cannot imply $w'' \simeq w'''$; this is basically [Laws implied by the constant law](../general-implications/constant-impl.md).
+**Example.** Let $\Gamma$ consist of the constant law, so we can take $M_{X,\Gamma} = X \uplus \{0\}$ as in Free constant magma. Then $\varphi_{\iota_{X,\Gamma}}(w)$ is $x$ if $w$ is just a letter $x$ of the alphabet, and $0$ otherwise. We conclude that if $w,w', w'''$ have order at least one, but $w''$ has order zero, then $w \simeq w'$ cannot imply $w'' \simeq w'''$; this is basically Laws implied by the constant law.
 
 **Example.** Let $\Gamma$ be the theory consisting of the commutative and associative laws, and an additional law $x^n \simeq y^n$ for a fixed $n$, where $x^n$ denotes the magma operation applied to $n$ copies of $x$ (the order is irrelevant thanks to associativity), then one can check (for finite $X$) that the free magma $M_{X,\Gamma}$ can be taken to be $(\mathbb{Z}/n\mathbb{Z})^X$ with the addition operation, and $\iota_{X,\Gamma}(x)$ being the standard generator associated to $x$. Then for any word $w$, $\varphi_{\iota_{X,\Gamma}}(w)$ corresponds to a tuple that assigns to each letter $x$ of the alphabet, the number of times $x$ occurs in $w$ modulo $n$. We conclude that if $w,w'$ have the same number of occurrences modulo $n$ of each letter of the alphabet, but $w'', w'''$ do not, then $w \simeq w'$ cannot imply $w'' \simeq w'''$. This is a stronger version of [Criterion for implication](../general-implications/variable-impl.md).
 

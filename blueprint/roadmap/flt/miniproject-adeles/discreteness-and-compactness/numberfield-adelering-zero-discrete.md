@@ -12,7 +12,7 @@ There's an open subset of $\mathbb{A}_{K}$ whose intersection with $K$ is $\{0\}
 ## Depends on
 
 - [Rat.AdeleRing.zero\_discrete](rat-adelering-zero-discrete.md)
-- [NumberField.AdeleRing.baseChangeEquiv](../base-change/part-03/numberfield-adelering-basechangeequiv.md)
+- [NumberField.AdeleRing.baseChangeEquiv](../base-change/part-02/numberfield-adelering-basechangeequiv.md)
 
 ## Proof
 

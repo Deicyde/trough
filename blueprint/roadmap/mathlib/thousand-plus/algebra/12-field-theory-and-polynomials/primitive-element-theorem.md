@@ -27,7 +27,7 @@ Field.exists_primitive_element.{u_1, u_2} (F : Type u_1) (E : Type u_2) [Field F
 
 - [$K\[X\]$ is Euclidean](../../../overview/general-algebra/polynomials-and-power-series/k-x-is-euclidean.md)
 - [Cyclic group](../../../overview/general-algebra/group-theory/part-01/cyclic-group.md)
-- [Greatest Common Divisor Algorithm](../../../hundred-theorems/part-04/greatest-common-divisor-algorithm.md)
+- [Greatest Common Divisor Algorithm](../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md)
 - [Local ring](../../../overview/general-algebra/rings/local-ring.md)
 - [Splitting field](../../../overview/general-algebra/field-theory/splitting-field.md)
 

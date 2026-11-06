@@ -69,7 +69,7 @@ for instance it shows that
 ## Finite groups and Sylow theory
 
 The converse of Lagrange's theorem fails in general, but primes rescue part of it. By
-[Cauchy's theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md), if a prime $p$ divides the
+[Cauchy's theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md), if a prime $p$ divides the
 order of a finite group, then
 [the group has an element of order $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Perm/Cycle/Type.html#exists_prime_orderOf_dvd_card). The
 [first Sylow theorem](part-02/first-sylow-theorem.md) goes further: for
@@ -97,8 +97,8 @@ The most familiar infinite family of nonabelian simple groups comes from the
 [alternating group](part-02/alternating-group.md) $A_n$ of even permutations, since
 [alternating groups on 5 letters or more are simple](part-02/alternating-groups-on-5-letters-or-more-are-simp.md)
 ([Mathlib's statement](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Alternating/Simple.html#alternatingGroup.isSimpleGroup)). The
-[Feit–Thompson theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/feit-thompson-theorem.md), that every finite group of odd order is
-solvable, and the [classification of finite simple groups](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/classification-of-finite-simple-groups.md) are two
+Feit–Thompson theorem, that every finite group of odd order is
+solvable, and the classification of finite simple groups are two
 landmarks of finite group theory that Mathlib does not yet contain.
 
 For abelian groups a full description exists in the finitely generated case: by the

@@ -23,9 +23,9 @@ where the implied constant is uniform in $\sigma$.
 
 ## Proof depends on
 
-- [DeltaT](deltat.md)
+- [DeltaT](../part-02/deltat.md)
 - [ZetaShiftFiniteZeros](../part-02/zetashiftfinitezeros.md)
-- [ZerosBound](../part-02/zerosbound.md)
+- [ZerosBound](../part-01/zerosbound.md)
 - [norm-zeta-strict-mono-ofReal](../part-02/norm-zeta-strict-mono-ofreal.md)
 - [GlobalBound](../part-02/globalbound.md)
 - [SetOfZeros](../part-01/setofzeros.md)
@@ -84,7 +84,7 @@ $$
 \leq\frac{\zeta(3/2)}{\zeta(3)}\cdot(7+2\,|t|)\leq\frac{13\,\zeta(3/2)}{3\,\zeta(3)}\,|t|
 $$
 
-by Theorems [ZetaFixedLowerBound](../part-02/zetafixedlowerbound.md) and [GlobalBound](../part-02/globalbound.md). Thus by Theorem [ZerosBound](../part-02/zerosbound.md) we have that
+by Theorems [ZetaFixedLowerBound](../part-02/zetafixedlowerbound.md) and [GlobalBound](../part-02/globalbound.md). Thus by Theorem [ZerosBound](../part-01/zerosbound.md) we have that
 
 $$
 \sum_{\rho'\in\mathcal{K}_f(3/4)}m_f(\rho')

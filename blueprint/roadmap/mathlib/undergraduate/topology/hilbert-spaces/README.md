@@ -10,6 +10,4 @@
 - [Completeness of $L^2$](completeness-of-l-2-2.md)
 - [Hilbert bases](hilbert-bases.md)
 - [Example, the Hilbert basis of trigonometric polynomials](example-the-hilbert-basis-of-trigonometric-polyn.md)
-- [Example, classical Hilbert bases of orthogonal polynomials](example-classical-hilbert-bases-of-orthogonal-po.md)
 - [Lax-Milgram theorem](../../../overview/analysis/hilbert-spaces/lax-milgram-theorem.md)
-- [$H^1_0(\[0,1\])$ and its application to the one-dimensional Dirichlet problem](h-1-0-0-1-and-its-application-to-the-one-dimensi.md)

@@ -15,7 +15,7 @@ power. In characteristic $p$ this map preserves sums as well as products, so it 
 [ring homomorphism](../rings/ring-morphism.md) from the ring to itself. In characteristic zero no power
 map $x \mapsto x^n$ with $n > 1$ is additive, since $(1+1)^n = 2^n$ differs from
 $1^n + 1^n = 2$. It is the basic tool for studying
-[finite fields](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md), whose Galois groups it generates,
+[finite fields](../../../undergraduate/ring-theory/field-theory/finite-fields.md), whose Galois groups it generates,
 and it underlies the notion of a perfect field and much of arithmetic geometry in
 positive characteristic.
 
@@ -25,7 +25,7 @@ Let $R$ be a commutative ring whose characteristic is a [prime](../../../undergr
 Frobenius morphism is the map $F \colon R \to R$ given by $F(x) = x^p$, and
 [this map is a ring homomorphism](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Lemmas.html#frobenius). It sends $1$ to $1$ and, because $R$ is
 commutative, satisfies $(xy)^p = x^p y^p$. Additivity is the key point: the
-[binomial theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md) gives
+[binomial theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md) gives
 
 $$(x+y)^p = \sum_{k=0}^{p} \binom{p}{k} x^k y^{p-k},$$
 
@@ -41,7 +41,7 @@ which is again a ring homomorphism.
 
 - **The field with $p$ elements.** On $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$,
   [the Frobenius morphism is the identity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#ZMod.frobenius_zmod). This is a restatement of
-  [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md) in the form $a^p \equiv a \pmod p$.
+  [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md) in the form $a^p \equiv a \pmod p$.
 - **Finite fields.** If $K$ is a finite field of characteristic $p$ with $p^n$ elements, then
   [$F^n$ is the identity of $K$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#FiniteField.frobenius_pow), because every element $a$ of
   $K$ satisfies $a^{p^n} = a$.
@@ -129,7 +129,7 @@ finite field.
 
 ## Proof depends on
 
-- [The Binomial Theorem](../../../hundred-theorems/part-03/the-binomial-theorem.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md)
 
 ## Sources
 

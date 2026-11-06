@@ -74,7 +74,7 @@ applied entry by entry,
 [gives a group homomorphism from $\mathrm{GL}_n(R)$ to $\mathrm{GL}_n(S)$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.html#Matrix.GeneralLinearGroup.map). Reduction modulo a prime
 $p$, from $\mathrm{GL}_n(\mathbb{Z})$ to $\mathrm{GL}_n(\mathbb{F}_p)$, is an instance.
 
-**Order over a finite field.** If $\mathbb{F}$ is a [finite field](../../ring-theory/field-theory/part-01/finite-fields.md)
+**Order over a finite field.** If $\mathbb{F}$ is a [finite field](../../ring-theory/field-theory/finite-fields.md)
 with $q$ elements, then
 
 $$|\mathrm{GL}_n(\mathbb{F})| = (q^n - 1)(q^n - q)(q^n - q^2) \cdots (q^n - q^{n-1}),$$

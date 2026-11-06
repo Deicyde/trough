@@ -34,7 +34,7 @@ Besicovitch.exists_disjoint_closedBall_covering_ae.{u_1} {α : Type u_1} [Metric
 
 ## Depends on
 
-- [Carathéodory's theorem (measure theory)](../../28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Metric space](../../../../overview/topology/metric-spaces/metric-space.md)
 - [Positive measure](../../../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 

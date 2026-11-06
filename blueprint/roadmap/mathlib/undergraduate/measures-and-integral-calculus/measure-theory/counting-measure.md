@@ -16,7 +16,7 @@ MeasureTheory.Measure.count.{u_1} {α : Type u_1} [MeasurableSpace α] : Measure
 
 ## Depends on
 
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Positive measure](../../../overview/analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 
 ## Sources

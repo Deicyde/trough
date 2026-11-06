@@ -22,7 +22,7 @@ StieltjesFunction.measure.{u_1} {R : Type u_1} [LinearOrder R] [TopologicalSpace
 - [Borel sigma-algebra](borel-sigma-algebra.md)
 - [Bornology](../../topological-vector-spaces/bornology.md)
 - [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Order topology](../../../topology/topological-algebra/order-topology.md)
 - [Positive measure](positive-measure.md)
 

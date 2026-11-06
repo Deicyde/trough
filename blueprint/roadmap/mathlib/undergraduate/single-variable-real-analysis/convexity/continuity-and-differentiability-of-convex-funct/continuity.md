@@ -31,7 +31,7 @@ ConvexOn.continuousOn.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace â
 - [Linear independence](../../../linear-algebra/fundamentals/linear-independence.md)
 - [Metric structure](../../topology-of-r/metric-structure.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topological module](../../../../overview/topology/topological-algebra/topological-module.md)
 - [Topological ring](../../../../overview/topology/topological-algebra/topological-ring.md)
 - [Topology of a metric space](../../../topology/topology-and-metric-spaces/topology-of-a-metric-space.md)

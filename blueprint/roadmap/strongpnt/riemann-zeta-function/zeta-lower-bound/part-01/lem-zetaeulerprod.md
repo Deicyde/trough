@@ -12,7 +12,7 @@ The blueprint of Strong PNT (Math Inc) states this lemma at [PNT/PNT3_RiemannZet
 
 ## Depends on
 
-- [Prime set](def-natprimes.md)
+Its statement uses no other node of the blueprint.
 
 ## Lean
 

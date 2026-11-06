@@ -44,7 +44,7 @@ MeasureTheory.integral_divergence_of_hasFDerivAt_off_countable.{u} {E : Type u}
 ## Depends on
 
 - [Bochner integral](../part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Differentiable function between normed vector spaces](../../differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Lebesgue measure (Measures and integral calculus)](../part-01/lebesgue-measure.md)
 

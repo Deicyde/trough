@@ -18,7 +18,7 @@ MeasureTheory.Measure.hausdorffMeasure.{u_2} {X : Type u_2} [EMetricSpace X] [Me
 ## Depends on
 
 - [Borel sigma-algebra](borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Positive measure](positive-measure.md)
 
 ## Sources

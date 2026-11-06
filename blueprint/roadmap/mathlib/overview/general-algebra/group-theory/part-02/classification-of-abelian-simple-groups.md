@@ -17,7 +17,7 @@ building blocks from which every finite group is assembled by successive
 extensions, as the factors of a composition series, and this theorem
 settles the commutative case completely: every other simple group is
 nonabelian, which is where the difficulty of the
-[classification of finite simple groups](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/classification-of-finite-simple-groups.md) lies.
+classification of finite simple groups lies.
 
 ## Statement
 
@@ -73,13 +73,13 @@ particular [it is finite](https://leanprover-community.github.io/mathlib4_docs/M
   prime order is simple and
   [cyclic](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Cyclic/Subgroup.html#isCyclic_of_prime_card), hence abelian, so the groups of prime
   order are precisely the abelian simple groups.
-- **Composition factors.** By the [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-02/jordan-holder-theorem.md)
+- **Composition factors.** By the [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/jordan-holder-theorem.md)
   every finite group has simple composition factors that are determined by the
   group up to isomorphism and order. The
   theorem identifies which of them can be abelian: exactly the cyclic groups of
   prime order. A finite group is solvable precisely when all of its composition
   factors are of this kind.
-- **Odd order.** The [Feit–Thompson theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/feit-thompson-theorem.md) says that every finite
+- **Odd order.** The Feit–Thompson theorem says that every finite
   group of odd order is solvable. Together with this classification, it implies
   that a finite simple group of odd order is cyclic of prime order.
 

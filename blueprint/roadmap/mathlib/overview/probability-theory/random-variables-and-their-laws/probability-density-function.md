@@ -23,7 +23,7 @@ MeasureTheory.HasPDF.{u_1, u_2} {Ω : Type u_1} {E : Type u_2} [MeasurableSpace 
 
 - [Almost sure convergence](../convergence-of-a-sequence-of-random-variables/almost-sure-convergence.md)
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Integral of positive measurable functions](../../analysis/measures-and-integral-calculus/part-01/integral-of-positive-measurable-functions.md)
 - [Linear map](../../linear-algebra/fundamentals/linear-map.md)
 - [Measurable function](../../analysis/measures-and-integral-calculus/part-01/measurable-function.md)

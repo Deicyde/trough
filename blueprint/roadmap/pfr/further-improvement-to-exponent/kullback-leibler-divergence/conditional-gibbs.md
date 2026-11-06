@@ -17,11 +17,10 @@ Its statement uses no other node of the blueprint.
 ## Proof depends on
 
 - [Gibbs inequality](gibbs.md)
-- [Conditional Kullback–Leibler divergence](ckl-div.md)
 
 ## Proof
 
-Clear from Definition [Conditional Kullback–Leibler divergence](ckl-div.md) and Lemma [Gibbs inequality](gibbs.md).
+Clear from Definition Conditional Kullback–Leibler divergence and Lemma [Gibbs inequality](gibbs.md).
 
 ## Lean
 

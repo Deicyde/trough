@@ -38,8 +38,8 @@ ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub.{u_1, u_2} {Ω : Ty
 ## Proof depends on
 
 - [Characteristic p](../../general-algebra/field-theory/characteristic-p.md)
-- [Continuous mapping theorem](../../../thousand-plus/probability-and-statistics/60-probability-theory-and-stochastic-processes/part-01/continuous-mapping-theorem.md)
-- [Lévy continuity theorem](../../../thousand-plus/probability-and-statistics/60-probability-theory-and-stochastic-processes/part-02/levy-continuity-theorem.md)
+- [Continuous mapping theorem](../../../thousand-plus/probability-and-statistics/continuous-mapping-theorem.md)
+- [Lévy continuity theorem](../../../thousand-plus/probability-and-statistics/levy-continuity-theorem.md)
 
 ## Sources
 

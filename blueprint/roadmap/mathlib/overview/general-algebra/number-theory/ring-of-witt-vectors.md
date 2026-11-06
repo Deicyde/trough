@@ -33,7 +33,7 @@ With these operations the set of sequences becomes a commutative ring, [the ring
 
 - **$p$ invertible.** If $p$ is invertible in $R$ (for instance if $R$ contains the rationals), then [the ghost map is a ring isomorphism from $W(R)$ onto the product of countably many copies of $R$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/WittVector/Basic.html#WittVector.ghostEquiv), so nothing new appears.
 - **The prime field.** [$W(\mathbb{F}_p)$ is isomorphic to the ring $\mathbb{Z}_p$ of $p$-adic integers](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/WittVector/Compare.html#WittVector.equiv). At finite level, [the Witt vectors of length $n$ over $\mathbb{F}_p$ form a ring isomorphic to $\mathbb{Z}/p^n\mathbb{Z}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/WittVector/Compare.html#TruncatedWittVector.zmodEquivTrunc). For $p = 2$ the formulas for $S_0$ and $S_1$ give the first two coordinates of $(1, 0, 0, \dots) + (1, 0, 0, \dots)$ in $W(\mathbb{F}_2)$ as $0$ and $1$; in fact the whole sum is $2 = (0, 1, 0, \dots)$ (see the Properties section), mirroring $1 + 1 = 2$ in $\mathbb{Z}_2$.
-- **Finite fields.** For the [finite field](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) with $p^f$ elements, the Witt vectors form the ring of integers of the unramified extension of degree $f$ of the [$p$-adic numbers](../numbers/p-adic-number.md).
+- **Finite fields.** For the [finite field](../../../undergraduate/ring-theory/field-theory/finite-fields.md) with $p^f$ elements, the Witt vectors form the ring of integers of the unramified extension of degree $f$ of the [$p$-adic numbers](../numbers/p-adic-number.md).
 
 ## Properties
 

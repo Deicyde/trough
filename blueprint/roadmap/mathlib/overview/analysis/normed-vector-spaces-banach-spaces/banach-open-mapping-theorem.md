@@ -34,7 +34,7 @@ ContinuousLinearMap.isOpenMap.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {𝕜' : Ty
 - [Euclidean affine space](../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
 - [Hausdorff space](../../topology/general-topology/part-01/hausdorff-space.md)
 - [Metric structure](../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
-- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-03/squeeze-theorem.md)
+- [Squeeze theorem](../../../thousand-plus/analysis/26-real-functions/part-02/squeeze-theorem.md)
 - [Topology of a metric space](../../../undergraduate/topology/topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources

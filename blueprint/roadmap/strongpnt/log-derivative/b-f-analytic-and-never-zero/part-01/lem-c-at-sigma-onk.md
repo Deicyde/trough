@@ -14,10 +14,6 @@ The blueprint of Strong PNT (Math Inc) states this lemma at [PNT/PNT2_LogDerivat
 
 Its statement uses no other node of the blueprint.
 
-## Proof depends on
-
-- [C function](def-c-function.md)
-
 ## Lean
 
 Formalized as [`lem_Cf_at_sigma_onK`](https://math-inc.github.io/strongpnt/docs/find/#doc/lem_Cf_at_sigma_onK).

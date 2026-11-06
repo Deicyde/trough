@@ -97,9 +97,9 @@ of subgroups and of quotients.
 A group with exactly two normal subgroups, the trivial one and itself, is called
 [simple](simple-group.md). Every finite group is assembled from simple groups by
 repeated extensions; these composition factors are unique by the
-[Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-02/jordan-holder-theorem.md), and the finite simple
+[Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/jordan-holder-theorem.md), and the finite simple
 groups themselves are listed by the
-[classification of finite simple groups](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/classification-of-finite-simple-groups.md). Chains of subgroups, each normal
+classification of finite simple groups. Chains of subgroups, each normal
 in the next, underlie the definitions of solvable and
 [nilpotent groups](nilpotent-group.md). The analogous notion for rings is a two-sided
 ideal, the kernel of a ring homomorphism.

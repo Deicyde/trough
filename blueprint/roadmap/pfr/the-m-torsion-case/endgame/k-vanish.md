@@ -45,37 +45,37 @@ for this choice, and note that
 
 $$
 \begin{aligned}
-\delta_\ast := \sum_w p_W(w) \delta_w &= \mathbb{I}[Z_1 : Z_2 \,|\, W] + \mathbb{I}[Z_1 : Z_3 \,|\, W] + \mathbb{I}[Z_2 : Z_3 \,|\, W]\qquad\text{(9)}\\
+\delta_\ast := \sum_w p_W(w) \delta_w &= \mathbb{I}[Z_1 : Z_2 \,|\, W] + \mathbb{I}[Z_1 : Z_3 \,|\, W] + \mathbb{I}[Z_2 : Z_3 \,|\, W]\qquad\text{(8)}\\
 & \leq 3 m (4m+1) \eta k
 \end{aligned}
 $$
 
-by [Mutual information bound](prop-52.md). Write $U_w$ for the random variable guaranteed to exist by [Application of BSG](lem-get-better.md), so that [(7)](lem-get-better.md) gives
+by [Mutual information bound](prop-52.md). Write $U_w$ for the random variable guaranteed to exist by [Application of BSG](lem-get-better.md), so that [(6)](lem-get-better.md) gives
 
 $$
-d[U_w; U_w] \leq \Bigl( 2 + \frac{\alpha m}{2} \Bigr) \delta_w + \alpha \sum_{i=1}^m \bigl( d[X_i; T_2] - d[X_i; U_w] \bigr).\qquad\text{(10)}
+d[U_w; U_w] \leq \Bigl( 2 + \frac{\alpha m}{2} \Bigr) \delta_w + \alpha \sum_{i=1}^m \bigl( d[X_i; T_2] - d[X_i; U_w] \bigr).\qquad\text{(9)}
 $$
 
 Let $(U_w)_I$ denote the tuple consisting of the same variable $U_w$ repeated $m$ times. By [Multidistance and Ruzsa distance, III](../multidistance/multidist-ruzsa-iii.md)
 
 $$
-D[(U_w)_I] \leq m d[U_w; U_w].\qquad\text{(11)}
+D[(U_w)_I] \leq m d[U_w; U_w].\qquad\text{(10)}
 $$
 
 On the other hand, from [Lower bound on multidistance](../the-tau-functional/multidist-lower.md) one has
 
 $$
-D[(U_w)_I] \geq k - \eta \sum_{i=1}^m d[X_i;U_w].\qquad\text{(12)}
+D[(U_w)_I] \geq k - \eta \sum_{i=1}^m d[X_i;U_w].\qquad\text{(11)}
 $$
 
-Combining (10), (11) and (12) and averaging over $w$ (with weight $p_W(w)$), and recalling the value $\alpha=\eta/m$, gives
+Combining (9), (10) and (11) and averaging over $w$ (with weight $p_W(w)$), and recalling the value $\alpha=\eta/m$, gives
 
 $$
 m \Bigl( 2 + \frac{\eta}{2} \Bigr) \delta_\ast + \eta \sum_{i=1}^m d[X_i; Z_2 | W]
 \geq k
 $$
 
-since the terms $d[X_i; U_w]$ cancel by our choice of $\alpha$. Substituting in [Distance bound](xi-z2-w-dist.md) and (9), and using the fact that $2 + \frac{\eta}{2} < 3$, we have
+since the terms $d[X_i; U_w]$ cancel by our choice of $\alpha$. Substituting in [Distance bound](xi-z2-w-dist.md) and (8), and using the fact that $2 + \frac{\eta}{2} < 3$, we have
 
 $$
 3 m^2 (4m+1) (2+\frac{\eta}{2}) \eta k + \eta 8(m^3-m^2) k \geq k.

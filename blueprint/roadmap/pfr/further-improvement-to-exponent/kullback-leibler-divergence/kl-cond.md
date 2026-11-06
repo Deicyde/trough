@@ -18,10 +18,6 @@ $$
 
 Its statement uses no other node of the blueprint.
 
-## Proof depends on
-
-- [Conditional Kullback–Leibler divergence](ckl-div.md)
-
 ## Proof
 
 Compare the terms correspond to each $x\in G$ on both sides.

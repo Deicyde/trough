@@ -90,7 +90,7 @@ That coset meets $R$ only in $1$, so $r = 1$ and $h = k \in K$. Hence $K = H$.
 
 ## Related concepts
 
-The [Nielsen–Schreier theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-02/nielsen-schreier-theorem.md) states that
+The [Nielsen–Schreier theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/nielsen-schreier-theorem.md) states that
 [every subgroup of a free group is free](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/NielsenSchreier.html#Subgroup.isFreeGroupOfIsFreeGroup). When $G$ is
 free on $S$ and the transversal is chosen more carefully, as a so-called Schreier transversal,
 the nontrivial Schreier generators form a free basis of $H$. This leads to the Schreier index formula: a

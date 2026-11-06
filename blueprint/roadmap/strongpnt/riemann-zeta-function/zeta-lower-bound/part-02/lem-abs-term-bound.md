@@ -12,12 +12,12 @@ The blueprint of Strong PNT (Math Inc) states this lemma at [PNT/PNT3_RiemannZet
 
 ## Depends on
 
-- [Prime set](../part-01/def-natprimes.md)
+Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
 - [Triangle abs](../part-01/lem-triangle-inequality-specific.md)
-- [Prime power](lem-abs-p-pow-s.md)
+- [Prime power](../part-01/lem-abs-p-pow-s.md)
 
 ## Lean
 

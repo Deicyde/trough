@@ -64,10 +64,10 @@ If $K$ has no nonzero nilpotent elements, the Frobenius morphism of $K$ is injec
 
 ## Examples
 
-- If $K$ is already perfect, for instance a [finite field](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md),
+- If $K$ is already perfect, for instance a [finite field](../../../undergraduate/ring-theory/field-theory/finite-fields.md),
   the map $K \to K^{\mathrm{perf}}$ is an isomorphism: the class of $(n, x)$ equals the image of
   the $p^n$-th root of $x$ in $K$.
-- For the field of [rational functions](../../../undergraduate/ring-theory/field-theory/part-01/rational-fraction-fields-with-one-indeterminate.md) $\mathbb{F}_p(t)$, which is not perfect
+- For the field of [rational functions](../../../undergraduate/ring-theory/field-theory/rational-fraction-fields-with-one-indeterminate.md) $\mathbb{F}_p(t)$, which is not perfect
   because $t$ has no $p$-th root, the perfect closure is the union, inside an algebraic closure of
   $\mathbb{F}_p(t)$, of the increasing chain of fields $\mathbb{F}_p(t^{1/p^n})$ for $n \ge 0$.
 - For the [polynomial ring](../polynomials-and-power-series/polynomial-in-one-indeterminate.md) $\mathbb{F}_p[t]$, the perfect closure is the ring of

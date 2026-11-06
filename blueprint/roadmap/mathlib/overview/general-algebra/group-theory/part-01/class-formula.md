@@ -101,7 +101,7 @@ cosets into $|G|/|G_x|$.
   [Burnside lemma](burnside-lemma.md),
   which counts the orbits of a finite group action by averaging numbers of fixed
   points. Arguments of the same kind drive the proofs of
-  [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md), the
+  [Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md), the
   [first Sylow theorem](../part-02/first-sylow-theorem.md) and the
   [third](../part-02/third-sylow-theorem.md).
 

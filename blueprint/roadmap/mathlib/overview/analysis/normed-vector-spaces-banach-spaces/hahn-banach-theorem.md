@@ -29,7 +29,7 @@ exists_extension_norm_eq.{u_1, u_2} {ğ•œ : Type u_1} [NontriviallyNormedField ğ
 
 - [Dual vector space](../../linear-algebra/duality/dual-vector-space.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources

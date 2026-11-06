@@ -19,12 +19,12 @@ Metric.tendsto_atTop.{u, v} {α : Type u} {β : Type v} [PseudoMetricSpace α] [
 ## Depends on
 
 - [Bornology](../../../overview/analysis/topological-vector-spaces/bornology.md)
-- [Order (Real numbers)](../../single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 
 - [Ball](../../../overview/topology/metric-spaces/ball.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 
 ## Sources

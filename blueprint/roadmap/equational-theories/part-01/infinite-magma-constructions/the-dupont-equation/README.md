@@ -54,9 +54,6 @@ Informally, $E_1$ represents the portion of $\mathbb{Z}^3 \times \mathbb{Z}$ whe
 
 The key lemmas are then
 
-- [Promoting to $E_1$](add-e1.md)
-- [Promoting to $E_2$](add-e2.md)
-
 Iterating these lemmas in the usual fashion, we can conclude that any partial solution can be completed to a global model of [E63](https://teorth.github.io/equational_theories/implications/?63).
 
 Among other things, this permits one to generate models in which the function $f$ is not injective. To see this, let $a$ be a non-zero element of $\mathbb{Z}^3$, let $x$ be an element of $\mathbb{Z}^3 \times \mathbb{Z}$ outside of $\mathbb{Z}^3$, and consider the partial solution $(\mathbb{Z}^3, \mathbb{Z}^3 \cup \{x\}, f)$ where $f(h) = Th$ for $h \in \mathbb{Z}^3$ and $f(x) = a$. One can check that this is a partial solution and is not injective, since $f(x) = f(T^{-1} a)$. This non-injectivity implies in particular that the model is not left-cancellative, and hence does not satisfy the law
@@ -87,7 +84,6 @@ In this construction, we define a partial solution to be a function $f: E \to \m
 
 We say that a partial solution $f': E' \to \mathbb{Z}$ *extends* another $f: E \to \mathbb{Z}$ if $E'$ contains $E$ and $f'$ agrees with $f$ on $E$.
 
-- [Seed solution](finite-check.md)
 - [Extension](extension-lemma.md)
 
 Iterating this lemma, we conclude

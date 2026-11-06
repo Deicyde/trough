@@ -25,7 +25,7 @@ instIsManifoldIcc (x y : ℝ) [Fact (x < y)] {n : WithTop ℕ∞} :
 
 - [$C^k$ function](../../../analysis/differentiability/c-k-function.md)
 - [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topological ring](../../../topology/topological-algebra/topological-ring.md)
 
 ## Sources

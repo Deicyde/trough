@@ -10,4 +10,3 @@ Here we survey techniques for constructing infinite magmas that serve as counter
 - [Greedy algorithm constructions](greedy-algorithm-constructions/README.md)
 - [A survey of examples](a-survey-of-examples/README.md)
 - [The Dupont equation](the-dupont-equation/README.md)
-- [An ad hoc model](an-ad-hoc-model/README.md)

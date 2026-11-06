@@ -8,5 +8,4 @@
 - [Mean value theorem](../../../overview/analysis/differentiability/mean-value-theorem.md)
 - [Higher-order derivatives of functions](higher-order-derivatives-of-functions.md)
 - [$C^k$ functions](../../../overview/analysis/differentiability/c-k-function.md)
-- [Piecewise $C^k$ functions](piecewise-c-k-functions.md)
 - [Leibniz formula (Single Variable Real Analysis)](leibniz-formula.md)

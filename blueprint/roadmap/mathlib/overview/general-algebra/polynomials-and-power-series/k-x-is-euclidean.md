@@ -39,7 +39,7 @@ every Euclidean domain, and the bound
 - Dividing by a linear polynomial $X - a$ leaves a constant remainder, and that
   constant is the value of the polynomial at $a$: [the remainder of $f$ on division by $X - a$ is $f(a)$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/FieldDivision.html#Polynomial.mod_X_sub_C_eq_C_eval).
   Hence [$X - a$ divides $f$ if and only if $a$ is a root of $f$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.dvd_iff_isRoot),
-  the content of the [factor and remainder theorems](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md).
+  the content of the [factor and remainder theorems](../../../hundred-theorems/part-04/the-factor-and-remainder-theorems.md).
 - The Euclidean algorithm applied to $X^2 - 1$ and $X^2 - 3X + 2$ over the rationals
   runs $X^2 - 1 = (X^2 - 3X + 2) \cdot 1 + (3X - 3)$ and then
   $X^2 - 3X + 2 = (3X - 3)\,\tfrac{1}{3}(X - 2)$, so the last nonzero remainder
@@ -60,7 +60,7 @@ every Euclidean domain, and the bound
   polynomial is a nonzero constant times a product of irreducible polynomials,
   uniquely up to order and constant factors.
 - **Greatest common divisors and Bézout's identity.** The
-  [Euclidean algorithm](../../../hundred-theorems/part-04/greatest-common-divisor-algorithm.md) produces a polynomial $d$ that
+  [Euclidean algorithm](../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md) produces a polynomial $d$ that
   [divides both $f$ and $g$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.gcd_dvd) and is
   [divisible by every common divisor of $f$ and $g$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.dvd_gcd);
   running it backwards gives

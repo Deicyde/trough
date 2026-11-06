@@ -14,13 +14,9 @@ Suppose that one has a sequence $(L'_{0,n}, \diamond'_{n}, S'_{n}, {\mathcal I}_
 
 - [Partial solution](part-sol.md)
 
-## Proof depends on
-
-- [Reduction to new axioms](eq1729-reduce-to-new-axioms.md)
-
 ## Proof
 
-Take the direct limit of the chain to obtain total functions $L'_0, \diamond', S'$. The axioms (i'), (iii'), (iv”), (v”), (vi”), (vii”) of the partial solutions then easily imply that the direct limit satisfies the axioms (i'), (iii'), (iv'), (v), (vi'), (vii') (one also uses axiom (P) to note that all pending identities disappear in the direct limit). The claim now follows from [Reduction to new axioms](eq1729-reduce-to-new-axioms.md).
+Take the direct limit of the chain to obtain total functions $L'_0, \diamond', S'$. The axioms (i'), (iii'), (iv”), (v”), (vi”), (vii”) of the partial solutions then easily imply that the direct limit satisfies the axioms (i'), (iii'), (iv'), (v), (vi'), (vii') (one also uses axiom (P) to note that all pending identities disappear in the direct limit). The claim now follows from Reduction to new axioms.
 
 ## Lean
 

@@ -79,7 +79,7 @@ their difference tends to $0$. Sums and products are taken term by term.
 
 ## Related concepts
 
-- [Ostrowski's theorem](../../../thousand-plus/number-theory/part-05/ostrowskis-theorem.md) explains why the $p$-adic
+- [Ostrowski's theorem](../../../thousand-plus/number-theory/part-02/ostrowskis-theorem.md) explains why the $p$-adic
   fields and $\mathbb{R}$ are the natural completions of $\mathbb{Q}$:
   [every nontrivial real-valued absolute value on $\mathbb{Q}$ is equivalent either to the ordinary absolute value or to the $p$-adic absolute value for exactly one prime $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Ostrowski.html#Rat.AbsoluteValue.equiv_real_or_padic).
 - [Hensel's lemma](../number-theory/hensels-lemma-for-z-p.md) turns approximate roots into exact ones: for a polynomial $F$

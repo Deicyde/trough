@@ -14,7 +14,7 @@ The **field of fractions** of an integral domain $A$ is the smallest
 $a/b$ of elements of $A$ with $b \neq 0$, added and multiplied by the rules of
 school arithmetic. The passage from the [integers](../numbers/integer.md) to the
 [rational numbers](../numbers/rational-number.md) is the model case, and the passage from polynomials
-to [rational functions](../../../undergraduate/ring-theory/field-theory/part-01/rational-fraction-fields-with-one-indeterminate.md) is another. The construction lets questions
+to [rational functions](../../../undergraduate/ring-theory/field-theory/rational-fraction-fields-with-one-indeterminate.md) is another. The construction lets questions
 about a domain be asked inside a field, where linear algebra and the theory of field
 extensions are available, and it is the special case of
 [localization](../rings/localization.md) in which every nonzero element is inverted.

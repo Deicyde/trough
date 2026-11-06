@@ -25,9 +25,9 @@ HasCompactSupport.contDiff_convolution_left.{u𝕜, uG, uE, uE', uF} {𝕜 : Typ
 - [$C^k$ function](../../differentiability/c-k-function.md)
 - [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](../part-01/borel-sigma-algebra.md)
-- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Convolution (Measures and integral calculus)](convolution.md)
+- [Convolution](convolution.md)
 - [Measurable function](../part-01/measurable-function.md)
 
 ## Proof depends on

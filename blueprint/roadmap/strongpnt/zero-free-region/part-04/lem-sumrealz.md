@@ -17,7 +17,7 @@ Its statement uses no other node of the blueprint.
 ## Proof depends on
 
 - [Series split](../part-03/lem-zeta1zetaseriesxy2.md)
-- [Real sum](lem-sumreallambda.md)
+- [Real sum](../part-03/lem-sumreallambda.md)
 
 ## Lean
 

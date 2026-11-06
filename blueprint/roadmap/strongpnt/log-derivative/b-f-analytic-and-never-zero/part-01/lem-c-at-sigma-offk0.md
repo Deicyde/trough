@@ -18,7 +18,6 @@ Its statement uses no other node of the blueprint.
 
 - [Finite zeros](../../lem-contra-finitekr.md)
 - [Zeros isolated](lem-k-isolated.md)
-- [C function](def-c-function.md)
 - [Zero factorization](lem-analytic-zero-factor.md)
 
 ## Lean

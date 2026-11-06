@@ -17,7 +17,7 @@ $$
 
 ## Depends on
 
-- [DeltaT](deltat.md)
+- [DeltaT](../part-02/deltat.md)
 - [ZeroWindow](../part-02/zerowindow.md)
 
 ## Proof depends on
@@ -25,12 +25,12 @@ $$
 - [ZeroInequality](../part-02/zeroinequality.md)
 - [ZetaShiftFiniteZeros](../part-02/zetashiftfinitezeros.md)
 - [SetOfZeros](../part-01/setofzeros.md)
-- [DeltaRange](deltarange.md)
+- [DeltaRange](../part-02/deltarange.md)
 - [LogDerivZetaFinalBound](../part-02/logderivzetafinalbound.md)
 
 ## Proof
 
-By Lemma [DeltaRange](deltarange.md) we have that
+By Lemma [DeltaRange](../part-02/deltarange.md) we have that
 
 $$
 -29/54<-1/2-\delta_t/3\leq\sigma-3/2\leq0.

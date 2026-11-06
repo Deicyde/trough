@@ -75,7 +75,7 @@ $\varphi$ into the isomorphism $(G/N)/(M/N) \cong G/M$.
 - **Simple quotients.** By the correspondence, $G/M$ is a
   [simple group](simple-group.md) exactly when $M$ is a maximal proper
   normal subgroup of $G$. This is how composition series are built and compared,
-  as in the [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-02/jordan-holder-theorem.md).
+  as in the [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/jordan-holder-theorem.md).
 - **Indices multiply.** For finite quotients, counting elements in the
   isomorphism gives $|G/N| = |G/M|\,|M/N|$. The underlying identity holds for any
   subgroups $N \le M$, normal or not:

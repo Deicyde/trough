@@ -45,7 +45,7 @@ The 1000+ list (Q1137206) also cites `taylor_mean_remainder_cauchy`.
 - [Closure](../../../overview/topology/general-topology/part-01/closure.md)
 - [Cluster point](../../../overview/topology/general-topology/part-01/cluster-point.md)
 - [Derivative at a point](../differentiability/derivative-at-a-point.md)
-- [Field $\R$ of real numbers](../../ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Generating sets](../../linear-algebra/fundamentals/generating-sets.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 - [Polynomial functions](../elementary-functions-trigonometric-rational-exp/polynomial-functions.md)

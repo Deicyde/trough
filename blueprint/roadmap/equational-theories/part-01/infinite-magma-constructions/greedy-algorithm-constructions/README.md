@@ -84,7 +84,7 @@ $$
 R(y,x,z) \hbox{ and } R(y,x',z) \implies x=x'\qquad\text{(1)}
 $$
 
-simply by starting with a partial solution, say on the natural numbers in which (e.g.) $R(1,2,0)$, $R(1,3,0)$ are the only situations in which $R$ holds. One can easily verify that this satisfies (VLT) and (65), (65'), but not (1), and so any magma constructed by the above greedy construction will not be left-cancellative. Since the Obelix law [E1491](https://teorth.github.io/equational_theories/implications/?1491) forces left-cancellativity, this gives an alternate proof of [Asterix does not imply Obelix](../the-asterix-equation/asterix-obelix.md).
+simply by starting with a partial solution, say on the natural numbers in which (e.g.) $R(1,2,0)$, $R(1,3,0)$ are the only situations in which $R$ holds. One can easily verify that this satisfies (VLT) and (65), (65'), but not (1), and so any magma constructed by the above greedy construction will not be left-cancellative. Since the Obelix law [E1491](https://teorth.github.io/equational_theories/implications/?1491) forces left-cancellativity, this gives an alternate proof of Asterix does not imply Obelix.
 
 ## Equation 1722
 
@@ -207,8 +207,6 @@ For $x = y \diamond (y \diamond (x \diamond y))$ (73), we argue similarly, now w
 - Law 2. $R_y$ is injective for all $y$ currently in the table.
 - Law 3. $x \diamond y \neq y$ for all $x,y$ currently in the table.
 
-- [73 extension](73-extension.md)
-
 One can obtain various refutations by using the countermodels [here](https://leanprover.zulipchat.com/#narrow/channel/458659-Equational/topic/713.2C.201289.2C.201447/near/483735768).
 
 ## Equation 63
@@ -219,8 +217,6 @@ For $x = y \diamond (x \diamond (x \diamond y))$ (63), we argue similarly, now w
 - Law 2. If $x \diamond y = x \diamond z$ with $y,z$ distinct, then $y \diamond x$ (if defined) is not equal to $z$ or to $z \diamond x$ (if defined).
 - Law 3: If $x \diamond x$ is defined, it is equal to $x$.
 - Law 4: If $x \neq y$, then $x \diamond y$ is not equal to $x$.
-
-- [63 extension](63-extension.md)
 
 One can obtain various refutations by using the countermodels [here](https://leanprover.zulipchat.com/#narrow/channel/458659-Equational/topic/713.2C.201289.2C.201447/near/483735768).
 

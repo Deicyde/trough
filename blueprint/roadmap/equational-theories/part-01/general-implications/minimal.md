@@ -11,7 +11,7 @@ The law $0 \simeq 1$ is the minimal element in this pre-order.
 
 ## Depends on
 
-- [Pre-order](pre-order.md)
+Its statement uses no other node of the blueprint.
 
 ## Proof
 

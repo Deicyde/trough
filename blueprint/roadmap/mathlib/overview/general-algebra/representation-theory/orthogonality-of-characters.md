@@ -77,7 +77,7 @@ $\frac{1}{|G|}\sum_g \varphi(g)\overline{\psi(g)}$, which explains the name.
   $\chi_1, \dots, \chi_r$ are the characters of pairwise non-isomorphic
   irreducible representations and $\sum_i a_i \chi_i = 0$, pairing with $\chi_j$
   gives $a_j = 0$. So these characters are linearly independent in the space of
-  [class functions](../../../undergraduate/group-theory/representation-theory-of-finite-groups/class-function-over-a-group.md),
+  class functions,
   whose dimension is the number of conjugacy classes, and $G$ has at most that
   many irreducible representations up to isomorphism.
 - **Multiplicities.** Assume moreover that $k$ has characteristic $0$. By
@@ -116,7 +116,7 @@ is $1$ if $W \cong V$, equivalently $V \cong W$, and $0$ otherwise.
 
 The irreducible characters are not only orthonormal but span the space of class
 functions, so they form an
-[orthonormal basis of the class functions](../../../undergraduate/group-theory/representation-theory-of-finite-groups/orthonormal-basis-of-irreducible-characters.md),
+orthonormal basis of the class functions,
 and the number of irreducible representations equals the number of conjugacy
 classes. Reading the character table by columns instead of rows gives the second
 orthogonality relation: over $\mathbb{C}$, the sum of

@@ -27,14 +27,14 @@ closure_convexHull_extremePoints.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.M
 - [Extreme point](../../../undergraduate/affine-and-euclidean-geometry/convexity/extreme-point.md)
 - [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Local convexity](../../../overview/analysis/topological-vector-spaces/local-convexity.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Topological module](../../../overview/topology/topological-algebra/topological-module.md)
 
 ## Proof depends on
 
 - [Dual of a normed space](../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Extreme value theorem](../../../overview/topology/topological-algebra/extreme-value-theorem.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Metric space](../../../overview/topology/metric-spaces/metric-space.md)
 - [Ordered ring](../../../overview/general-algebra/rings/ordered-ring.md)
 

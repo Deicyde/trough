@@ -38,7 +38,7 @@ and $x < y$ means that $y - x$ is positive. A Cauchy sequence that does not tend
 is eventually bounded away from $0$, so its terms can be inverted from some point on; this
 gives inverses of nonzero classes, and with these operations
 [$\mathbb{R}$ is a field](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Basic/Real/Basic.html#Real.instField) (see
-[the field of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)).
+[the field of real numbers](../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)).
 
 Other constructions use Dedekind cuts (splittings of $\mathbb{Q}$ into a nonempty lower
 part with no greatest element and a nonempty upper part lying entirely above it) or infinite decimal expansions. One can also take $\mathbb{R}$ to be any
@@ -57,7 +57,7 @@ approaches give the same structure.
 - The rationals form a countable set, while the set of real numbers
   [has the cardinality of the continuum, $2^{\aleph_0}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Real/Cardinality.html#Cardinal.mk_real), and so
   [is not countable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Real/Cardinality.html#Cardinal.not_countable_real) (see
-  [the non-denumerability of the continuum](../../../hundred-theorems/part-02/the-non-denumerability-of-the-continuum.md)). In
+  [the non-denumerability of the continuum](../../../hundred-theorems/part-01/the-non-denumerability-of-the-continuum.md)). In
   particular the irrational numbers far outnumber the rational ones.
 
 ## Properties

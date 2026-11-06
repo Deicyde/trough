@@ -14,7 +14,7 @@ is [prime](../../../undergraduate/ring-theory/divisibility-in-integral-domains/p
 It needs only $p - 2$ squarings of numbers smaller than $2^p - 1$, far fewer
 operations than trial division, so that primality is far cheaper to decide for
 Mersenne numbers than for general numbers of the same size. Mersenne primes
-are also of independent interest: by the [perfect number theorem](../../../hundred-theorems/part-04/the-perfect-number-theorem.md)
+are also of independent interest: by the [perfect number theorem](../../../hundred-theorems/part-03/the-perfect-number-theorem.md)
 they correspond to the even perfect numbers.
 
 ## Statement

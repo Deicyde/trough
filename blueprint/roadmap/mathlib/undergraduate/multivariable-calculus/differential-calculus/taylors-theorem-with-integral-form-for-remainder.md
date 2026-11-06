@@ -30,7 +30,7 @@ map_add_eq_sum_add_integral_iteratedFDeriv.{u_2, u_3} {E : Type u_2} {F : Type u
 ## Depends on
 
 - [Bochner integral](../../../overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Differentials (linear tangent functions)](differentials-linear-tangent-functions.md)
 - [Lebesgue measure (Measures and integral calculus)](../../../overview/analysis/measures-and-integral-calculus/part-01/lebesgue-measure.md)
 - [Radius of convergence](../../single-variable-complex-analysis/complex-valued-series/radius-of-convergence.md)

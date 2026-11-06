@@ -109,7 +109,7 @@ exists_hasDerivWithinAt_eq_of_le_of_ge {a b : ℝ} {f f' : ℝ → ℝ} (hab : a
 - [Derivative at a point](../../../../undergraduate/single-variable-real-analysis/differentiability/derivative-at-a-point.md)
 - [Dual of a normed space](../../../../overview/analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
 - [Extreme value theorem](../../../../overview/topology/topological-algebra/extreme-value-theorem.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Order topology](../../../../overview/topology/topological-algebra/order-topology.md)
 - [Ordered ring](../../../../overview/general-algebra/rings/ordered-ring.md)
 

@@ -2,9 +2,7 @@
 
 The arguments here are due to Jyun-Jie Liao.
 
-- [New definition of $\eta$](eta-def-new.md)
-
-Previously in [Definition eta-def](../entropy-version-of-pfr/eta-def.md) we had set $\eta=1/9$. To implement this chapter, one should refactor the previous arguments so that $\eta$ is now free to be a positive number, though the specific hypothesis $\eta=1/9$ would now need to be added to [$\tau$-decrement](../entropy-version-of-pfr/endgame/de-prop.md).
+Previously in Definition eta-def we had set $\eta=1/9$. To implement this chapter, one should refactor the previous arguments so that $\eta$ is now free to be a positive number, though the specific hypothesis $\eta=1/9$ would now need to be added to [$\tau$-decrement](../entropy-version-of-pfr/endgame/de-prop.md).
 
 Let $X^0_1, X^0_2$ be $G$-valued random variables, and let $X_1, X_2$ be $\tau$-minimizers as defined in [$\tau$-minimizer](../entropy-version-of-pfr/tau-min-def.md).
 

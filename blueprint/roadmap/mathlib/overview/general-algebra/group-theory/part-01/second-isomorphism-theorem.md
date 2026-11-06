@@ -70,7 +70,7 @@ $$[HN : N] = [H : H \cap N].$$
 - **Composition series.** If $N_1$ and $N_2$ are distinct maximal normal subgroups
   of $G$, then $N_1 N_2 = G$ and the theorem gives
   $G/N_1 \cong N_2/(N_1 \cap N_2)$. This step drives the usual inductive proof of
-  the [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-02/jordan-holder-theorem.md).
+  the [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/jordan-holder-theorem.md).
 
 ## Proof
 

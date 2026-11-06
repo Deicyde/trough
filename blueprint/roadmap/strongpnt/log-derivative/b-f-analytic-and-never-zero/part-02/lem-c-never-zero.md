@@ -16,8 +16,8 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [C nonzero off K](lem-c-nonzero-off-k.md)
-- [C nonzero on K](lem-c-nonzero-on-k.md)
+- [C nonzero off K](../part-01/lem-c-nonzero-off-k.md)
+- [C nonzero on K](../part-01/lem-c-nonzero-on-k.md)
 
 ## Lean
 

@@ -25,7 +25,7 @@ Complex.hasSum_sin (z : ℂ) :
 
 - [Characteristic zero](../../../../overview/general-algebra/field-theory/characteristic-zero.md)
 - [Completeness of R](../../../single-variable-real-analysis/topology-of-r/completeness-of-r.md)
-- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/part-01/field-c-of-complex-numbers.md)
+- [Field $\C$ of complex numbers](../../../ring-theory/field-theory/field-c-of-complex-numbers.md)
 - [Matrix exponential](../../../linear-algebra/exponential/matrix-exponential.md)
 
 ## Sources

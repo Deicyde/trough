@@ -16,7 +16,7 @@ simple group has no quotient other than itself and the trivial group: every
 homomorphism out of it is either injective or sends everything to the identity.
 Simple groups play the role for finite groups that prime numbers play for
 integers. Every finite group is assembled from simple pieces, and the
-[classification of finite simple groups](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/classification-of-finite-simple-groups.md) determines all
+classification of finite simple groups determines all
 the finite ones.
 
 ## Definition
@@ -92,7 +92,7 @@ A composition series of a group $G$ is a chain of subgroups
 $$\{e\} = G_0 \le G_1 \le \cdots \le G_k = G$$
 in which each $G_{i-1}$ is normal in $G_i$ and each quotient $G_i / G_{i-1}$ is
 simple. Every finite group has one, obtained by repeatedly choosing maximal
-normal subgroups. The [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-02/jordan-holder-theorem.md)
+normal subgroups. The [Jordan–Hölder theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/jordan-holder-theorem.md)
 says that the list of quotients, called the composition factors, does not
 depend on the series up to order and isomorphism. In this sense the finite
 simple groups are the building blocks of all finite groups, although groups
@@ -100,7 +100,7 @@ with the same composition factors need not be isomorphic: the cyclic group of
 order $4$ and the Klein four-group both have two factors of order $2$.
 
 A finite group is solvable precisely when all of its composition factors are
-cyclic of prime order. The [Feit–Thompson theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/feit-thompson-theorem.md), that
+cyclic of prime order. The Feit–Thompson theorem, that
 every finite group of odd order is solvable, is equivalent to the statement that
 every nonabelian finite simple group has even order.
 

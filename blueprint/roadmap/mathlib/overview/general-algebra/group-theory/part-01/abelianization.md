@@ -99,7 +99,7 @@ to compute with it.
 
 In topology, the first homology group of a path-connected space is the
 abelianization of its fundamental group; this is the first case of the
-[Hurewicz theorem](../../../../thousand-plus/geometry-and-topology/55-algebraic-topology/hurewicz-theorem.md). In number theory, a topological
+Hurewicz theorem. In number theory, a topological
 variant matters: the quotient of the absolute Galois group of a field by the
 closure of its commutator subgroup is the Galois group of the maximal abelian
 extension of the field inside a fixed separable closure, the object described by class field theory. Abelianization

@@ -1,6 +1,5 @@
 # Log $L_f$
 
-- [Log function](def-lf.md)
 - [Disk analytic](lem-bf-is-analytic-on-disk.md)
 - [Never zero](lem-bf-never-zero.md)
 - [B zero](lem-bf0-not-zero.md)

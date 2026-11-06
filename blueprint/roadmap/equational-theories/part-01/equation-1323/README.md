@@ -20,8 +20,6 @@ So now we would like to construct magmas satisfying [(2)](1323-construct.md) and
 
 - [Bijections](bij.md)
 - [Building a magma](build-magma.md)
-- [Partial solution](partial-1323.md)
-- [Soundness](partial-1323-sound.md)
 - [Greedy extension](greedy-1323.md)
 - [Iterated greedy extension](greedy-iterate.md)
 - [1323 does not imply 2744](1323-refute-2744.md)

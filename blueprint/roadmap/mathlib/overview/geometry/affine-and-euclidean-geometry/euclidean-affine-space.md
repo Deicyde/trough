@@ -24,7 +24,7 @@ NormedAddTorsor.{u_1, u_2} (V : outParam (Type u_1)) (P : Type u_2) [SeminormedA
 
 - [Affine space](affine-space.md)
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Sources
 

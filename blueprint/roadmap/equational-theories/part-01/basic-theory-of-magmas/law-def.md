@@ -11,7 +11,7 @@ Let $X$ be a set. A *law* with alphabet $X$ is a formal expression of the form $
 
 ## Depends on
 
-- [Induced homomorphism](induced-def.md)
+Its statement uses no other node of the blueprint.
 
 ## Lean
 

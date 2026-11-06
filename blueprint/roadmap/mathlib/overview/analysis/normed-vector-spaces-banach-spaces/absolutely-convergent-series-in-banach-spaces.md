@@ -20,13 +20,13 @@ Summable.of_norm.{u_1, u_3} {ι : Type u_1} {E : Type u_3} [SeminormedAddCommGro
 - [Bornology](../topological-vector-spaces/bornology.md)
 - [Completeness](../../topology/uniform-notions/completeness.md)
 - [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Metric space](../../topology/metric-spaces/metric-space.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 
 ## Sources
 

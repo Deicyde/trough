@@ -29,7 +29,7 @@ Such a subgroup is called a **Sylow $p$-subgroup** of $G$. A subgroup whose orde
 a power of $p$ is a **$p$-subgroup**.
 
 The case $n = 1$ is
-[Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md): if $p$ divides $|G|$, then
+[Cauchy's theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md): if $p$ divides $|G|$, then
 [$G$ has an element of order $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Perm/Cycle/Type.html#exists_prime_orderOf_dvd_card), whose
 powers form a subgroup of order $p$.
 
@@ -134,7 +134,7 @@ has order $p^k$, and conversely
 - [Index of a subgroup](../part-01/index-of-a-subgroup.md)
 - [Normal subgroup](../part-01/normal-subgroup.md)
 - [Quotient group](../part-01/quotient-group.md)
-- [Cauchy's theorem (group theory)](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md)
+- [Cauchy's theorem (group theory)](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md)
 
 ## Sources
 

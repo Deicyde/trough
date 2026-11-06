@@ -13,4 +13,3 @@
 - [lambda-pnt](lambda-pnt.md)
 - [Alternate Möbius form of prime number theorem](mu-pnt-alt.md)
 - [Consequences of the PNT in arithmetic progressions](consequences-of-the-pnt-in-arithmetic-progressio/README.md)
-- [Consequences of the Chebotarev density theorem](consequences-of-the-chebotarev-density-theorem/README.md)

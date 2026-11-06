@@ -14,10 +14,6 @@ The blueprint of Strong PNT (Math Inc) states this lemma at [PNT/PNT4_ZeroFreeRe
 
 Its statement uses no other node of the blueprint.
 
-## Proof depends on
-
-- [Real bound](lem-explicit1real.md)
-
 ## Lean
 
 Formalized as [`lem_explicit2Real`](https://math-inc.github.io/strongpnt/docs/find/#doc/lem_explicit2Real).

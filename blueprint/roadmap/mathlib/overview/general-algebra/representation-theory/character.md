@@ -61,7 +61,7 @@ Throughout, $V$ and $W$ are finite-dimensional representations of $G$ over $k$.
   an element of $k$.
 - **Class function.** [$\chi_V(gh) = \chi_V(hg)$ for all $g, h$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RepresentationTheory/Character.html#FDRep.char_mul_comm), and
   hence [$\chi_V(hgh^{-1}) = \chi_V(g)$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RepresentationTheory/Character.html#FDRep.char_conj): the character is a
-  [class function](../../../undergraduate/group-theory/representation-theory-of-finite-groups/class-function-over-a-group.md),
+  class function,
   constant on each [conjugacy class](../../../undergraduate/group-theory/basic-definitions/conjugacy-classes.md).
 - **Invariance.** [Isomorphic representations have the same character](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RepresentationTheory/Character.html#FDRep.char_iso). The
   converse holds for finite groups over the complex numbers but fails in positive characteristic:
@@ -98,14 +98,14 @@ gives the [orthogonality of characters](orthogonality-of-characters.md):
 ## Related concepts
 
 Over the complex numbers, the irreducible characters of a finite group form an
-[orthonormal basis of the space of class functions](../../../undergraduate/group-theory/representation-theory-of-finite-groups/orthonormal-basis-of-irreducible-characters.md),
+orthonormal basis of the space of class functions,
 so their number equals the number of conjugacy classes. Their orthonormality, together with
 [Maschke's theorem](../../../undergraduate/group-theory/representation-theory-of-finite-groups/maschke-theorem.md), is what makes the
 character determine the representation over the complex numbers. The [irreducible representations](../../../undergraduate/linear-algebra/linear-representations/irreducible-representation.md)
 and their characters are recorded in the character table of the group. The one-dimensional
 characters of any group are its homomorphisms to the multiplicative group of the field. For a
 finite abelian group, the one-dimensional complex characters take values in the unit circle and
-form the [dual group](../../../undergraduate/group-theory/representation-theory-of-finite-groups/dual-groups.md)
+form the dual group
 of harmonic analysis.
 
 ## In Mathlib

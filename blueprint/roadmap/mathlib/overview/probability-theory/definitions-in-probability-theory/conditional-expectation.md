@@ -23,7 +23,7 @@ MeasureTheory.condExp.{u_1, u_3} {α : Type u_1} {E : Type u_3} (m : MeasurableS
 
 ## Depends on
 
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Completeness of R](../../../undergraduate/single-variable-real-analysis/topology-of-r/completeness-of-r.md)
 - [Extension by continuity](../../topology/general-topology/part-01/extension-by-continuity.md)
 - [Inner product space $L^2$](../../../undergraduate/topology/hilbert-spaces/inner-product-space-l-2-2.md)

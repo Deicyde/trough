@@ -52,7 +52,7 @@ Several conditions are equivalent to this.
   The algebraic closure of $\mathbb{Q}$ can be taken to be the field of complex numbers
   that are roots of nonzero polynomials with rational coefficients. The algebraic
   closure of the field with $p$ elements is the union of its
-  [finite subfields](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md), one of order $p^n$ for each $n \ge 1$.
+  [finite subfields](../../../undergraduate/ring-theory/field-theory/finite-fields.md), one of order $p^n$ for each $n \ge 1$.
 - **Non-examples.** The [real numbers](../numbers/real-number.md) are not algebraically closed,
   since $x^2 + 1$ has no real root; neither are the rationals. No finite field is
   algebraically closed: if its elements are $a_1, \dots, a_q$, then the polynomial

@@ -17,7 +17,6 @@ Its statement uses no other node of the blueprint.
 ## Proof depends on
 
 - [Blaschke B](def-bf.md)
-- [C function](../part-01/def-c-function.md)
 
 ## Lean
 

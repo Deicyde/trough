@@ -25,7 +25,7 @@ exists_continuous_zero_one_of_isClosed.{u_1} {X : Type u_1} [TopologicalSpace X]
 
 - [Bornology](../../../analysis/topological-vector-spaces/bornology.md)
 - [Continuous function](../part-01/continuous-function.md)
-- [Order (Real numbers)](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 
 ## Proof depends on
 
@@ -33,14 +33,14 @@ exists_continuous_zero_one_of_isClosed.{u_1} {X : Type u_1} [TopologicalSpace X]
 - [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
 - [Closure](../part-01/closure.md)
 - [Euclidean affine space](../../../geometry/affine-and-euclidean-geometry/euclidean-affine-space.md)
-- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Hausdorff space](../part-01/hausdorff-space.md)
 - [Invertible elements](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
 - [Metric structure](../../../../undergraduate/single-variable-real-analysis/topology-of-r/metric-structure.md)
 - [Normed vector space over a normed field](../../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Order topology](../../topological-algebra/order-topology.md)
 - [Ordered ring](../../../general-algebra/rings/ordered-ring.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topological module](../../topological-algebra/topological-module.md)
 - [Topological ring](../../topological-algebra/topological-ring.md)
 

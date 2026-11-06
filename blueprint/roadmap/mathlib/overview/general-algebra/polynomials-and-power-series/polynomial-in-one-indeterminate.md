@@ -49,7 +49,7 @@ and $x$ is [a root of $f$ when $f(x) = 0$](https://leanprover-community.github.i
   factors as $(X - \sqrt 2)(X + \sqrt 2)$.
 - A polynomial is not the same thing as the function it defines. Over the field
   $\mathbb{Z}/p\mathbb{Z}$ with $p$ prime, [the polynomial $X^p - X$ is nonzero](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Degree/Operations.html#Polynomial.X_pow_sub_X_ne_zero),
-  since its degree $p$ exceeds $1$, yet by [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
+  since its degree $p$ exceeds $1$, yet by [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md)
   [$a^p = a$ for every $a$ in $\mathbb{Z}/p\mathbb{Z}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#ZMod.pow_card), so it vanishes at every point.
 - Over $\mathbb{Z}/4\mathbb{Z}$ the polynomial $1 + 2X$ is invertible, because
   $(1 + 2X)^2 = 1 + 4X + 4X^2 = 1$. Here the coefficient $2$ is nilpotent, since $2^2 = 0$.
@@ -76,7 +76,7 @@ and $x$ is [a root of $f$ when $f(x) = 0$](https://leanprover-community.github.i
   [$K[X]$ is Euclidean](k-x-is-euclidean.md)).
 - **Roots.** For a commutative ring $R$ and $a$ in $R$,
   [$X - a$ divides $f$ if and only if $f(a) = 0$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Div.html#Polynomial.dvd_iff_isRoot) (the
-  [factor theorem](../../../hundred-theorems/part-05/the-factor-and-remainder-theorems.md)). If moreover $R$ is an integral domain,
+  [factor theorem](../../../hundred-theorems/part-04/the-factor-and-remainder-theorems.md)). If moreover $R$ is an integral domain,
   [a nonzero polynomial $f$ has at most $\deg f$ roots, counted with multiplicity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Roots.html#Polynomial.card_roots');
   see [roots of a polynomial](roots-of-a-polynomial.md). Hence over an infinite integral domain
   [two polynomials that take the same value at every point are equal](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Roots.html#Polynomial.funext).

@@ -95,7 +95,7 @@ Every orbit of size greater than $1$ therefore contributes a multiple of $p$, so
 an action on a finite set
 [$|X|$ is congruent modulo $p$ to the number of fixed points](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/PGroup.html#IsPGroup.card_modEq_card_fixedPoints).
 This congruence drives standard proofs of
-[Cauchy's theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md) and of the
+[Cauchy's theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md) and of the
 [first](../../../overview/general-algebra/group-theory/part-02/first-sylow-theorem.md),
 [second](../../../overview/general-algebra/group-theory/part-02/second-sylow-theorem.md) and
 [third](../../../overview/general-algebra/group-theory/part-02/third-sylow-theorem.md) Sylow theorems.

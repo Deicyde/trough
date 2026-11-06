@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Real inverse to Real terms
+# Sum bound to Real sum
 
-- [Real inverse](lem-1delsigreal3.md)
 - [Sum bound](lem-z1splitge2.md)
 - [Real bound](lem-z1splitge3.md)
 - [In set](lem-rhoinzt.md)
@@ -24,3 +23,4 @@ navigation: transparent
 - [Series split](lem-zeta1zetaseriesxy2.md)
 - [Series converges](lem-zseriesconverges1.md)
 - [Real terms](lem-realnx.md)
+- [Real sum](lem-sumreallambda.md)

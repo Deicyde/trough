@@ -108,7 +108,7 @@ $\mathbb{Z}_p$.
 
 The field $\mathbb{Q}_p$ of [$p$-adic numbers](p-adic-number.md) is obtained from
 $\mathbb{Z}_p$ by inverting $p$. Continuous functions on $\mathbb{Z}_p$ are described by
-[Mahler's theorem](../../../thousand-plus/number-theory/part-04/mahlers-theorem.md), which expands them in binomial
+[Mahler's theorem](../../../thousand-plus/number-theory/part-01/mahlers-theorem.md), which expands them in binomial
 coefficients. The [ring of Witt vectors](../number-theory/ring-of-witt-vectors.md) of the field with $p$
 elements is isomorphic to $\mathbb{Z}_p$, and the Witt vector construction generalizes
 $\mathbb{Z}_p$ to other perfect fields of characteristic $p$. The ring of integers of a

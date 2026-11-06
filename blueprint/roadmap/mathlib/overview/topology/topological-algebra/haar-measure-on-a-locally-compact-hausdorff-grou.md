@@ -21,10 +21,10 @@ MeasureTheory.Measure.haarMeasure.{u_1} {G : Type u_1} [Group G] [TopologicalSpa
 - [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
 - [Borel sigma-algebra](../../analysis/measures-and-integral-calculus/part-01/borel-sigma-algebra.md)
 - [Bornology](../../analysis/topological-vector-spaces/bornology.md)
-- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/part-01/caratheodorys-theorem-measure-theory.md)
+- [Carathéodory's theorem (measure theory)](../../../thousand-plus/analysis/28-measure-and-integration/caratheodorys-theorem-measure-theory.md)
 - [Closure](../general-topology/part-01/closure.md)
 - [Compactness in terms of filters](../general-topology/part-01/compactness-in-terms-of-filters.md)
-- [Order (Real numbers)](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
+- [Order](../../../undergraduate/single-variable-real-analysis/real-numbers/order.md)
 - [Positive measure](../../analysis/measures-and-integral-calculus/part-01/positive-measure.md)
 - [Topological group](topological-group.md)
 

@@ -58,7 +58,7 @@ $f'$ has smaller degree than $f$:
 - **Finite fields.** Over a commutative ring of characteristic $p$,
   [$X^q - X$ is separable whenever $p$ divides $q$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/GaloisField.html#galois_poly_separable), since its derivative
   is $qX^{q-1} - 1 = -1$. When $p$ is prime and $q = p^n$ with $n \ge 1$, the roots of this polynomial in
-  a splitting field over $\mathbb{F}_p$ form the field with $q$ elements (see [finite fields](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md)).
+  a splitting field over $\mathbb{F}_p$ form the field with $q$ elements (see [finite fields](../../../undergraduate/ring-theory/field-theory/finite-fields.md)).
 - **An inseparable irreducible polynomial.** Let $F = \mathbb{F}_p(t)$ be the field of rational
   functions over the field with $p$ elements, and $f = X^p - t$. It is irreducible in
   $\mathbb{F}_p[t][X]$ by [Eisenstein's criterion](eisensteins-criterion.md)

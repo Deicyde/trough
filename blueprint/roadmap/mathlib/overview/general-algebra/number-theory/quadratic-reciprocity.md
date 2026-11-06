@@ -86,7 +86,7 @@ $1, \dots, \frac{p-1}{2}$ for which the remainder of $ax$ on division by $p$
 exceeds $p/2$. Gauss's lemma in turn compares the product of the numbers $ax$
 with $\left(\frac{p-1}{2}\right)!$ and uses Euler's criterion,
 [$\left(\frac{a}{p}\right) \equiv a^{(p-1)/2} \pmod p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LegendreSymbol/Basic.html#legendreSym.eq_pow),
-which is proved from [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
+which is proved from [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md)
 and the fact that a polynomial of degree $d$ has at most $d$ roots modulo $p$.
 
 Now let $p$ and $q$ be distinct odd primes. The sum $S(q,p)$ counts the lattice
@@ -144,7 +144,7 @@ $a$ and $b$ share a factor.
 
 ## Proof depends on
 
-- [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
+- [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md)
 - [Field](../field-theory/field.md)
 - [Characteristic of a ring](../field-theory/characteristic-of-a-ring.md)
 - [Frobenius morphism](../field-theory/frobenius-morphism.md)

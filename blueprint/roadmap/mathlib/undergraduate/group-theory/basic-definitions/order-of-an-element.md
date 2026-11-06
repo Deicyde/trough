@@ -86,7 +86,7 @@ Let $g$ be an element of a group $G$ with finite order $n$.
 
 - **[Cyclic groups](../../../overview/general-algebra/group-theory/part-01/cyclic-group.md).**
   [A finite group is cyclic exactly when it has an element whose order equals the order of the group](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SpecificGroups/Cyclic/Subgroup.html#isCyclic_iff_exists_orderOf_eq_natCard).
-- **[Cauchy's theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-01/cauchys-theorem-group-theory.md).** Lagrange's theorem has
+- **[Cauchy's theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/cauchys-theorem-group-theory.md).** Lagrange's theorem has
   a partial converse for element orders:
   [every prime dividing the order of a finite group is the order of some element](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Perm/Cycle/Type.html#exists_prime_orderOf_dvd_card).
 - **Exponent.** [The exponent of $G$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Exponent.html#Monoid.exponent) is the least positive

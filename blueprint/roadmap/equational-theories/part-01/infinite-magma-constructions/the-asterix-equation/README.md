@@ -26,17 +26,8 @@ for $h \in G$.
 
 This equation has some degenerate solutions, for instance we can take $f(h) = c$ for any constant $c$ of order $3$ in $G$. It is challenging to construct more interesting solutions to this equation; however, we can do this if $G=\mathbb{Z}$ by a greedy algorithm. We need the following technical definition.
 
-- [partial-solution](partial-solution.md)
-
 We have the following iterative construction, that lets us add arbitrary elements to the core domain $E_0$:
 
-- [Enlarging a partial solution](iteration.md)
-- [extend](extend.md)
-- [no-inject](no-inject.md)
-- [Asterix does not imply Obelix](asterix-obelix.md)
-
 On the other hand, for finite magmas the situation is different:
-
-- [Asterix implies Obelix for finite magmas](asterix-obelix-finite.md)
 
 A very similar argument shows that a finite magma that satisfies the Obelix law has $z \mapsto y \diamond z$ injective, hence surjective, and then satisfies the Asterix law.

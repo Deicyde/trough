@@ -4,17 +4,11 @@ We start with the local case. In fact we restrict to the $p$-adic case, but only
 
 Let $K$ be a finite extension of $\mathbb{Q}_p$. We write $\widehat{\mathbb{Z}}$ for the profinite completion of $\mathbb{Z}$; it is isomorphic to $\prod_p\mathbb{Z}_p$ where $\mathbb{Z}_p$ is the $p$-adic integers and the product is over all primes.
 
-- [maximal\_unramified\_extension\_of\_p-adic\_field](maximal-unramified-extension-of-p-adic-field.md)
-
 It is impossible to say which of the two canonical isomorphisms is “the most canonical”; people working in different areas make different choices in order to locally minimise the number of minus signs in their results.
 
 As a result, the absolute Galois group of $K$ surjects onto $\widehat{\mathbb{Z}}$; its kernel is said to be the *inertia subgroup* of this Galois group. Now pull back this surjection along the continuous map from $\mathbb{Z}$ (with its discrete topology) to $\widehat{\mathbb{Z}}$, in the category of topological groups. We end up with a group containing the inertia group as an open normal subgroup, and with quotient isomorphic to the integers.
 
-- [local\_Weil\_group](local-weil-group.md)
-
 The following theorem is nontrivial.
-
-- [local\_class\_field\_theory](local-class-field-theory.md)
 
 Note that María Inés de Frutos Fernández and Filippo Nuccio are working on a formalisation of the proof of this using Lubin–Tate formal groups.
 
@@ -22,19 +16,8 @@ Now let $M$ be an abelian group (with the discrete topology) equipped with a con
 
 Continuous group cohomology $H^i(G_K,M)$ in this setting can be defined using continuous cocycles and continuous coboundaries, or just as a colimit of usual group cohomology over the finite quotients of this absolute Galois group (or as etale cohomology, if you prefer). Here are some of the facts we will need about cohomology in this situation. A nice summary is that cohomology of a local Galois group behaves like the cohomology of a compact connected 2-manifold. All the theorems below will need extensive planning.
 
-- [local\_galois\_coh\_finite](local-galois-coh-finite.md)
-- ["the dimension is 2"](local-galois-coh-dim-two.md)
-- ["top degree"](local-galois-coh-top-degree.md)
-- [Theorem: There is a “canonical” isomorphism $H^2(K,\mu_\infty)=\mathbb{Q}/\mathbb{Z}$.](theorem-chtopbestiary-1.md)
-- ["Poincaré duality"](local-galois-coh-poincare.md)
-- ["Euler-Poincaré characteristic"](local-galois-coh-euler-poincare.md)
-
 We now move onto the global case. If $N$ is a number field, that is, a finite extension of $\mathbb{Q}$, then let $\mathbb{A}_N^f:= N\otimes_{\mathbb{Z}}\widehat{\mathbb{Z}}$ denote the finite adeles of $N$ and let $N_\infty := N\otimes_{\mathbb{Q}}\mathbb{R}$ denote the product of the completions of $N$ at the infinite places, so $\mathbb{A}_N:=\mathbb{A}_N^f\times N_\infty$ is the ring of adeles of $N$.
 
-- [global\_class\_field\_theory](global-class-field-theory.md)
-
 We need the following consequence:
-
-- [Skinner\_Wiles\_CFT\_trick](skinner-wiles-cft-trick.md)
 
 We also need Poitou-Tate duality; I'll refrain from writing it down for now, because we don't even have Galois cohomology in Lean yet (although we are very close to it).

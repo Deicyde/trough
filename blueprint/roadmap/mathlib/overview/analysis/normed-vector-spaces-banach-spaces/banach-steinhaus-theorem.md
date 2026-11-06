@@ -31,7 +31,7 @@ banach_steinhaus.{u_1, u_2, u_3, u_4, u_5} {E : Type u_1} {F : Type u_2} {𝕜 :
 ## Proof depends on
 
 - [Baire theorem](../../topology/metric-spaces/baire-theorem.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-05/the-triangle-inequality.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [Topological module](../../topology/topological-algebra/topological-module.md)
 - [Topology on a normed vector space](topology-on-a-normed-vector-space.md)
 

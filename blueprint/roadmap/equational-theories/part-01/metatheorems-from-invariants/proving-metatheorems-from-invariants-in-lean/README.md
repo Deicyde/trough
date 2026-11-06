@@ -13,7 +13,6 @@ An invariant is generally a *syntactic* property of an expression. However, inva
 The key consequence of the [Lifting Magma Family](lifting-magma-family.md) is that it is significantly easier to check whether an equation is satisfied in a lifting magma family.
 
 - [Evaluation theorem for lifting magma families](lifting-magma-basis-evaluation.md)
-- [The fundamental property of invariants](fundamental-property-of-invariants.md)
 
 **Remark.** The result of evaluating an expression along the function $\iota_X : X \to G_X$ *is* the invariant.
 

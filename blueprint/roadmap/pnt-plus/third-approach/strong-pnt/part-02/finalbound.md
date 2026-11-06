@@ -23,9 +23,9 @@ $$
 
 - [BlaschkeNonZero](../part-01/blaschkenonzero.md)
 - [BlaschkeB](../part-01/blaschkeb.md)
-- [ZerosBound](zerosbound.md)
+- [ZerosBound](../part-01/zerosbound.md)
 - [CFunction](../part-01/cfunction.md)
-- [JBlaschke](jblaschke.md)
+- [JBlaschke](../part-01/jblaschke.md)
 - [ZeroFactor](../part-01/zerofactor.md)
 - [JBlaschkeDerivBound](jblaschkederivbound.md)
 - [BlaschkeAnalytic](../part-01/blaschkeanalytic.md)
@@ -62,7 +62,7 @@ $$
 -\sum_{\rho\in\mathcal{K}_f(r)}\frac{m_f(\rho)}{z-\rho}.
 $$
 
-By Definition [JBlaschke](jblaschke.md) and Theorem [LogOfAnalyticFunction](../part-01/logofanalyticfunction.md), since $L_f(z)=J_{B_f}(z)$ we have $L_f'(z)=J'_{B_f}(z)=(B_f'/B_f)(z)$. Thus,
+By Definition [JBlaschke](../part-01/jblaschke.md) and Theorem [LogOfAnalyticFunction](../part-01/logofanalyticfunction.md), since $L_f(z)=J_{B_f}(z)$ we have $L_f'(z)=J'_{B_f}(z)=(B_f'/B_f)(z)$. Thus,
 
 $$
 \frac{f'}{f}(z)-\sum_{\rho\in\mathcal{K}_f(r)}\frac{m_f(\rho)}{z-\rho}
@@ -76,7 +76,7 @@ $$
 \leq|L_f'(z)|+\left(\frac{1}{R^2/R'-R'}\right)\sum_{\rho\in\mathcal{K}_f(r)}m_f(\rho).
 $$
 
-Now by Theorem [ZerosBound](zerosbound.md) and [JBlaschkeDerivBound](jblaschkederivbound.md) we get our desired result with a little algebraic manipulation.
+Now by Theorem [ZerosBound](../part-01/zerosbound.md) and [JBlaschkeDerivBound](jblaschkederivbound.md) we get our desired result with a little algebraic manipulation.
 
 ## Lean
 

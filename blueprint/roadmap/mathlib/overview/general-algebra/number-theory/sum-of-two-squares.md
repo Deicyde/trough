@@ -49,7 +49,7 @@ The case $p = 2$ is $1^2 + 1^2$, so let $p \equiv 1 \pmod 4$.
 
 **Step 1: $-1$ is a square modulo $p$.** For a prime $p$,
 [$-1$ is a square modulo $p$ if and only if $p$ is not congruent to $3$ modulo $4$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LegendreSymbol/Basic.html#ZMod.exists_sq_eq_neg_one_iff).
-The direction needed here follows from [Wilson's theorem](../../../hundred-theorems/part-03/wilsons-lemma.md),
+The direction needed here follows from [Wilson's theorem](../../../hundred-theorems/part-02/wilsons-lemma.md),
 $(p-1)! \equiv -1 \pmod p$. Pairing each factor $j \le (p-1)/2$ with
 $p - j \equiv -j$ gives
 
@@ -104,7 +104,7 @@ writing $\alpha = a + bi$ gives $a^2 + b^2 = p$. This step is the statement that
 - [Quadratic reciprocity](quadratic-reciprocity.md): the criterion
   in Step 1 for $-1$ to be a square modulo $p$ is the first supplementary law of
   quadratic reciprocity.
-- [Pythagorean triples](../../../hundred-theorems/part-02/formula-for-pythagorean-triples.md): the hypotenuse
+- [Pythagorean triples](../../../hundred-theorems/part-01/formula-for-pythagorean-triples.md): the hypotenuse
   of a primitive Pythagorean triple is odd and is a sum of two coprime squares, so
   $-1$ is a square modulo it and hence modulo each of its prime factors $q$. By the
   criterion quoted in Step 1, $q$ is not congruent to $3$ modulo $4$, and since $q$
@@ -137,7 +137,7 @@ criterion to decide by computation whether a given number is a sum of two square
 
 ## Proof depends on
 
-- [Wilson’s Lemma](../../../hundred-theorems/part-03/wilsons-lemma.md)
+- [Wilson’s Lemma](../../../hundred-theorems/part-02/wilsons-lemma.md)
 - [Euclidean domain](../divisibility-in-integral-domains/euclidean-domain.md)
 - [Principal ideal domain](../divisibility-in-integral-domains/principal-ideal-domain.md)
 - [Irreducible element](../divisibility-in-integral-domains/irreducible-element.md)

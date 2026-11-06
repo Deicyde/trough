@@ -17,7 +17,6 @@ Its statement uses no other node of the blueprint.
 
 - [Greedy extension](greedy-1323.md)
 - [Building a magma](build-magma.md)
-- [Soundness](partial-1323-sound.md)
 
 ## Proof
 

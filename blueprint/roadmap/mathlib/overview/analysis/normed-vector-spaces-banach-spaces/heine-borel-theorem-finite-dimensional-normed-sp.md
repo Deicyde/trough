@@ -31,7 +31,7 @@ FiniteDimensional.proper.{u, v} (𝕜 : Type u) [NontriviallyNormedField 𝕜] (
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
 - [Continuous linear map](../../topology/topological-algebra/continuous-linear-map.md)
 - [Equivalence of norms in finite dimension](equivalence-of-norms-in-finite-dimension.md)
-- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-r-of-real-numbers.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
 - [Heine-Borel theorem (proper metric space version)](../../topology/metric-spaces/heine-borel-theorem-proper-metric-space-version.md)
 - [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Local ring](../../general-algebra/rings/local-ring.md)

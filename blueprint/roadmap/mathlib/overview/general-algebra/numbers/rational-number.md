@@ -58,7 +58,7 @@ and, for positive denominators $b$ and $d$, $a/b \le c/d$ exactly when $ad \le c
 ## Properties
 
 - **Field.** With these operations [$\mathbb{Q}$ is a field](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Field/Rat.html#Rat.instField)
-  (see [field of rational numbers](../../../undergraduate/ring-theory/field-theory/part-01/field-q-of-rational-numbers.md)): every nonzero
+  (see [field of rational numbers](../../../undergraduate/ring-theory/field-theory/field-q-of-rational-numbers.md)): every nonzero
   $a/b$ has the inverse $b/a$.
 - **Field of fractions of $\mathbb{Z}$.** Every rational number is a quotient of
   integers, the map from $\mathbb{Z}$ to $\mathbb{Q}$ is injective, and every nonzero integer is invertible in $\mathbb{Q}$, so
@@ -99,7 +99,7 @@ and, for positive denominators $b$ and $d$, $a/b \le c/d$ exactly when $ad \le c
 
 Besides the usual absolute value $|x|$, the rationals carry the $p$-adic absolute
 value for each prime $p$, which is small on numbers divisible by a high power of
-$p$. [Ostrowski's theorem](../../../thousand-plus/number-theory/part-05/ostrowskis-theorem.md) says these are all: [every nontrivial real-valued absolute value on $\mathbb{Q}$ is equivalent either to the usual one or to the $p$-adic one for a unique prime $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Ostrowski.html#Rat.AbsoluteValue.equiv_real_or_padic).
+$p$. [Ostrowski's theorem](../../../thousand-plus/number-theory/part-02/ostrowskis-theorem.md) says these are all: [every nontrivial real-valued absolute value on $\mathbb{Q}$ is equivalent either to the usual one or to the $p$-adic one for a unique prime $p$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Ostrowski.html#Rat.AbsoluteValue.equiv_real_or_padic).
 Completing $\mathbb{Q}$ with respect to the usual absolute value gives
 $\mathbb{R}$; completing with respect to the $p$-adic one gives the field of
 $p$-adic numbers.

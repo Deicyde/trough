@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [Real delta](lem-re1deltatge.md)
+- [Real delta](../part-01/lem-re1deltatge.md)
 
 ## Lean
 

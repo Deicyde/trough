@@ -81,7 +81,7 @@ basis of $G$.
   $F(S)$, which is the free abelian group on $S$, and uses the invariance of
   the rank of a free abelian group. The common cardinality is the rank of the
   free group.
-- **Subgroups are free.** The [Nielsen–Schreier theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/part-02/nielsen-schreier-theorem.md) states that
+- **Subgroups are free.** The [Nielsen–Schreier theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/nielsen-schreier-theorem.md) states that
   [every subgroup of a free group is free](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/NielsenSchreier.html#Subgroup.isFreeGroupOfIsFreeGroup). The subgroup can have larger
   rank than the group: a subgroup of index $k$ in a free group of finite rank
   $n$ is free of rank $k(n - 1) + 1$, and the commutator subgroup of $F_2$ is

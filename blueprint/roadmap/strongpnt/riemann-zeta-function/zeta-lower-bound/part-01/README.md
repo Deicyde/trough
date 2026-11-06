@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Prime set to Triangle abs
+# Prime decay to Prime power
 
-- [Prime set](def-natprimes.md)
 - [Prime decay](lem-p-s-abs-1.md)
 - [Euler product](lem-zetaeulerprod.md)
 - [Abs product](lem-abs-of-tprod.md)
@@ -24,3 +23,4 @@ navigation: transparent
 - [Ratio identity](thm-zeta-ratio-identity.md)
 - [Three halves](lem-zeta-ratio-at-3-2.md)
 - [Triangle abs](lem-triangle-inequality-specific.md)
+- [Prime power](lem-abs-p-pow-s.md)

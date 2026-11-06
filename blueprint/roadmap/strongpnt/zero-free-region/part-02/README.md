@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Real delta to Real inverse
+# Positive real to Real inverse
 
-- [Real delta](lem-re1deltatge.md)
 - [Positive real](lem-re1deltatneq0.md)
 - [Inverse real](lem-re1deltatge0.md)
 - [Scaled real](lem-re1deltatge0m.md)
@@ -24,3 +23,4 @@ navigation: transparent
 - [Inverse real](lem-11delsiginr2.md)
 - [Real part](lem-rereal.md)
 - [Real inverse](lem-1delsigreal2.md)
+- [Real inverse](lem-1delsigreal3.md)

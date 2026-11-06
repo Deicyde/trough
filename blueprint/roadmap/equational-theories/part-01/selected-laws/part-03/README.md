@@ -16,8 +16,6 @@ Appears in Putnam 1978, Problem A4, part (a). It is self-dual.
 
 This law is called a “bypass operation” in Putnam 1978, Problem A4. It is self-dual. See [3744 implies 3722, 381](../../implications-between-selected-laws/3744-implies-3722-381.md).
 
-- [Equation 3994](eq3994.md)
-
 Our project located this law as one member of an “Austin pair”; see [Finite implications and infinite models](../../finite-implications-and-infinite-models/README.md).
 
 - [Equation 4315](eq4315.md)

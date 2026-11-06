@@ -13,13 +13,11 @@ This natural map $L\otimes_K\mathbb{A}_{A,K}^\infty\to\mathbb{A}_{B,L}^\infty$ i
 ## Depends on
 
 - [IsDedekindDomain.HeightOneSpectrum.range\_baseChange\_comp\_tensorAdicCompletionTo\_eq\_pi](isdedekinddomain-heightonespectrum-range-basecha.md)
-- [RestrictedProduct.relabelIso](../part-02/restrictedproduct-relabeliso.md)
-- [IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](../part-02/isdedekinddomain-finiteadelering-basechangeinteg.md)
 - [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md)
 
 ## Proof
 
-Follows immediately from theorem [IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](../part-02/isdedekinddomain-finiteadelering-basechangeinteg.md) and theorem [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
+Follows immediately from theorem IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv and theorem [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
 
 ## Lean
 

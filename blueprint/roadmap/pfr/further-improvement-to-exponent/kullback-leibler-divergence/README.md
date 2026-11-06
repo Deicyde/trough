@@ -12,6 +12,5 @@ In the definitions below, $G$ is a set.
 Now let $G$ be an additive group.
 
 - [Kullback–Leibler and sums](kl-sums.md)
-- [Conditional Kullback–Leibler divergence](ckl-div.md)
 - [Kullback–Leibler and conditioning](kl-cond.md)
 - [Conditional Gibbs inequality](conditional-gibbs.md)

@@ -10,7 +10,7 @@ mathlib_file: Mathlib/FieldTheory/ChevalleyWarning.lean
 # Chevalley-Warning theorem (Number theory)
 
 The **Chevalley–Warning theorem** says that a polynomial equation over a
-[finite field](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md) whose degree is smaller
+[finite field](../../../undergraduate/ring-theory/field-theory/finite-fields.md) whose degree is smaller
 than its number of variables has a number of solutions divisible by the
 [characteristic](../field-theory/characteristic-p.md) of the field. It turns a bound on degrees into a
 congruence on a count, and so yields existence results directly: if such an
@@ -62,7 +62,7 @@ The argument works with values in $K$ and compares them with the count at the en
 
 **An indicator polynomial.** For every nonzero $a \in K$,
 [$a^{q-1} = 1$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Finite/Basic.html#FiniteField.pow_card_sub_one_eq_one), the finite-field form of
-[Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md). So $1 - a^{q-1}$
+[Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md). So $1 - a^{q-1}$
 equals $1$ when $a = 0$ and $0$ otherwise. Hence the polynomial
 
 $$F = \prod_{i=1}^{r} \bigl(1 - f_i^{\,q-1}\bigr)$$
@@ -120,13 +120,13 @@ proof of the Erdős–Ginzburg–Ziv theorem uses.
 
 ## Depends on
 
-- [Finite fields](../../../undergraduate/ring-theory/field-theory/part-01/finite-fields.md)
+- [Finite fields](../../../undergraduate/ring-theory/field-theory/finite-fields.md)
 - [Characteristic p](../field-theory/characteristic-p.md)
 - [Polynomial in several indeterminates](../polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 
 ## Proof depends on
 
-- [Fermat's little theorem](../../../thousand-plus/number-theory/part-02/fermats-little-theorem.md)
+- [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md)
 
 ## Sources
 

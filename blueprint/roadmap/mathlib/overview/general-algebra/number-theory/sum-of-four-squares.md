@@ -85,15 +85,15 @@ So $m = 1$, and [every prime is a sum of four squares](https://leanprover-commun
 - **Three squares.** Legendre's three-square theorem states that a natural number is a sum of
   three squares if and only if it is not of the form $4^a(8b+7)$ with natural numbers $a, b$.
   Numbers of that form, such as $7$, $15$, $23$ and $28$, need four nonzero squares.
-- **[Jacobi's four-square theorem](../../../thousand-plus/number-theory/part-04/jacobis-four-square-theorem.md)** counts the representations: for
+- **Jacobi's four-square theorem** counts the representations: for
   $n \ge 1$, the number of ordered quadruples of integers $(a, b, c, d)$ with
   $a^2+b^2+c^2+d^2 = n$ is eight times the sum of the divisors of $n$ that are not divisible
   by $4$.
 - **Waring's problem** asks, for each exponent $k$, for a number of $k$-th powers that
-  suffices to write every natural number. The [Hilbert–Waring theorem](../../../thousand-plus/number-theory/part-03/hilbert-waring-theorem.md)
+  suffices to write every natural number. The Hilbert–Waring theorem
   says that such a number exists for every $k$, and the four-square theorem answers the case
   $k = 2$ with the optimal value $4$.
-- **[Fermat polygonal number theorem](../../../thousand-plus/number-theory/part-02/fermat-polygonal-number-theorem.md).** For each $s \ge 3$, every natural number is a sum
+- **Fermat polygonal number theorem.** For each $s \ge 3$, every natural number is a sum
   of at most $s$ $s$-gonal numbers; the case $s = 4$ is the four-square theorem.
 - **Quaternions.** Euler's identity expresses that [the norm of Hamilton's quaternions is multiplicative](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Quaternion.html#Quaternion.normSq), where for coefficients in a commutative ring the
   norm of $a + bi + cj + dk$ is [$a^2+b^2+c^2+d^2$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Quaternion.html#Quaternion.normSq_def'). The theorem says that the
