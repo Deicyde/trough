@@ -79,12 +79,13 @@ def generate() -> dict[Path, str]:
     rows = []
     for entry in chapter.entries:
         node = entry.node
-        count = sum(1 for item in sources.lists[_list_of(node.slug)])
+        total, present = stats["in_lists"][_list_of(node.slug)]
         rows.append(
             (
                 f"Mathlib / {node.title}",
                 "DECOMPOSED",
-                f"[{count} list items](../roadmap/mathlib/{node.slug}/README.md), one article per concept Mathlib has.",
+                f"[{present:,} of {total:,} list items](../roadmap/mathlib/{node.slug}/README.md) in Mathlib, "
+                "one article per concept.",
             )
         )
     files[VAULT / "coverage" / "README.md"] = catalog.coverage(libraries, rows + blueprint_rows)

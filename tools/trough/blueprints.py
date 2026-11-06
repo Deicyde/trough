@@ -211,6 +211,13 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     dochome = blueprint.links.get("dochome", "https://leanprover-community.github.io/mathlib4_docs")
     nodes = [node for node in blueprint.graph if in_lean(node)]
     present = set(nodes)
+    # A section whose every node is left out goes with its prose, which is about those results; one
+    # that never had a node, such as an introduction, stays.
+    with_nodes = {id(unit) for node in blueprint.graph for unit in ancestors(node.unit)}
+    dead = with_nodes - {id(unit) for node in nodes for unit in ancestors(node.unit)}
+
+    def gone(unit: Unit | None) -> bool:
+        return any(id(sub) in dead for sub in ancestors(unit))
     unit_index = {id(unit): k for k, unit in enumerate(blueprint.units)}
     stats = Counter(nodes=len(nodes), left_out=len(blueprint.graph) - len(nodes))
 
@@ -277,6 +284,9 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             if node in owned and node.proof is not None and any(node.end <= at < node.proof.offset for at in between):
                 events.append(Event(node.proof.offset, "proof pointer", node, node.proof.unit))
     events.sort(key=lambda event: event.offset)
+    hidden = [event for event in events if gone(event.unit)]
+    read_only = {id(event) for event in hidden}
+    every_event, events = events, [event for event in events if id(event) not in read_only]
     shown = {id(unit) for event in events for unit in ancestors(event.unit) if unit.level <= 2}
 
     texts = [text or "" for event in events if event.kind != "proof pointer"
@@ -308,20 +318,35 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     stats["equations"] = len(numbers) - len(kinds)
     current = ["#root"]  # the article whose text is being written
 
+    # What a reference to text that is left out points to: the place in the project's TeX.
+    left_out_labels: dict[str, Node | Prose] = {}
+    for item in [*(node for node in blueprint.graph if node not in present),
+                 *(event.item for event in hidden if event.kind in ("prose", "aside"))]:
+        for label in [*item.equations, *(label for label, _ in item.floats)]:
+            left_out_labels.setdefault(label, item)
+
+    def source_link(text: str, item: Node | Prose) -> str:
+        stats["refs_to_left_out"] += 1
+        return f"[{escape(text)}]({project.source(item.where)[1]})"
+
     def ref(label: str, command: str) -> str:
         target = blueprint.labels.get(label)
         if isinstance(target, Node):
             text = display(target)
             if command in NUMBER_ONLY:
                 text = writer.plain(target.title) if target.title else short_id(target.id)
-            if target.graph and target not in present:
-                stats["refs_to_left_out"] += 1
-                return escape(text)
+            if target.graph and target not in present or not target.graph and gone(target.unit):
+                return source_link(text, target)
             return placeholder(text, target.id if target.graph else key(target.unit))
         if isinstance(target, Unit):
             home = page_unit(target)
             title = writer.plain(target.title)
             return placeholder(title, key(target)) if home is None or id(home) in shown else escape(title)
+        if label in left_out_labels:
+            item = left_out_labels[label]
+            if isinstance(item, Node):
+                return source_link(display(item), item)
+            return source_link(writer.plain(item.unit.title) if item.unit else project.name, item)
         if isinstance(target, tuple) and label in numbers:
             number, article = numbers[label]
             if label in kinds:
@@ -343,11 +368,16 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     writer = Writer(blueprint.macros, ref, bib, tag=tag)
 
     lean_links: dict[str, str] = {}
-    for node in nodes:
+    for node in blueprint.graph:
+        current[0] = node.id
         if node in owned:
-            current[0] = node.id
             leaf_of[node] = leaf(project, node, caption(node), heading(node), writer, dochome, blueprint, lean_links,
                                  stats)
+        elif node not in present and project.text:
+            # Read but not shown: its TeX may define macros that later text uses.
+            writer.statement(node.body)
+            if node.proof is not None:
+                writer.statement(node.proof.body)
 
     # Dependencies: a node's \uses that name nodes, a proof's apart from its statement's.
     for node in nodes:
@@ -360,6 +390,8 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
                        if target is not node and target in present)
         mine.depends = statement
         mine.proof_depends = [item for item in proof if item not in statement]
+        if not statement and any(target is not node for target in targets_of(node.uses, blueprint)):
+            mine.no_depends = "Its statement uses no other node that has an article here."
         stats["statement_edges"] += len(mine.depends)
         stats["proof_edges"] += len(mine.proof_depends)
     stats["informal"] = break_cycles([leaf_of[node] for node in nodes if node in owned])
@@ -405,9 +437,18 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             write(home, f"{'#' * min(6, depth + 2)} {escape(writer.plain(sub.title) or 'Untitled')}")
         opened[id(home)] = chain
 
-    for event in events:
-        home = page(event.unit)
+    for event in every_event:
         node = event.item
+        if id(event) in read_only:
+            # Left out with its section, but read: its TeX may define macros that later text uses.
+            if event.kind == "prose":
+                writer.statement(node.text)
+            elif event.kind == "aside":
+                writer.statement(node.body)
+            elif event.kind == "aside proof":
+                writer.statement(node.proof.body)
+            continue
+        home = page(event.unit)
         if event.kind == "card":
             open_headings(home, event.unit)
             add(home, Entry(leaf_of[node], node in owned))
@@ -561,10 +602,9 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
     nodes = stats["nodes"]
     lines = [
         f"The blueprint of {project.name}, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
-        "that the project has in Lean or Mathlib has"
-        + (f". Its other {stats['left_out']:,} nodes have no article, since the blueprint names no formalized "
-           "Lean declaration for them: the map records what the project contains, not what it plans"
-           if stats["left_out"] else "")
+        "whose Lean declarations it names and marks formalized, or in Mathlib"
+        + (f". Its other {stats['left_out']:,} nodes have no article, and a section of only those is left out: "
+           "the map records what the project contains, not what it plans" if stats["left_out"] else "")
         + ". A node the blueprint marks `\\leanok` is formalized here, its proof too when that is marked, and "
         "`\\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\\uses`: a statement's under *Depends on*, a "
         "proof's under *Proof depends on*.",
