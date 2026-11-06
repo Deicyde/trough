@@ -572,7 +572,7 @@ def list_root(sources: Sources, name: str, articles_by_item: dict[int, Article])
     prose = LIST_PROSE[name].format(yaml=yaml_url)
     lacking = sum(id(item) not in articles_by_item for item in sources.lists[name])
     if lacking:
-        prose += (f" Mathlib does not have {lacking:,} of its {len(sources.lists[name]):,} items yet; "
+        prose += (f" Mathlib does not have {lacking:,} of its {len(sources.lists[name]):,} items; "
                   "they have no article here.")
     return Container(LIST_TITLES[name], LIST_SLUGS[name], prose=prose)
 
@@ -1032,7 +1032,7 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
             "the 1000+ theorems project. This chapter has one article per concept on those lists that "
             f"Mathlib has, read at Mathlib commit {rev_link}{date}: {len(articles):,} articles"
             + (f", {stated:,} of them stated in Mathlib without a proof" if stated else "")
-            + f". The {left_out:,} concepts on the lists that Mathlib does not have yet have no article: the "
+            + f". Concepts on the lists that are not in Mathlib, {left_out:,} of them, have no article: the "
             "map records what the library contains, not what it may add.",
             "Items that name the same declarations in several lists, or name none and share a title, are one "
             "article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, "
@@ -1063,6 +1063,8 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
         unknown = [key for key in linked(article) if key not in targets]
         if unknown:
             raise ValueError(f"{article.path}: no article for {', '.join(dict.fromkeys(unknown))}")
+    in_lists = {name: (len(items), sum(id(item) in articles_by_item for item in items))
+                for name, items in sources.lists.items()}
     stats = dict(edge_stats, articles=len(articles), formalized=formalized, stated=stated, left_out=left_out,
-                 authored=written)
+                 authored=written, in_lists=in_lists)
     return root, stats, targets

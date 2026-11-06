@@ -196,20 +196,36 @@ def test_a_library_without_a_license_shows_structure_only(blueprint, tmp_path):
 
 def test_only_named_formalized_nodes_have_articles(tmp_path):
     """The map records what a project contains: a node whose Lean declaration the blueprint does
-    not name as formalized has no article, and text about it is left unlinked."""
+    not name as formalized has no article, a section of only such nodes goes with its prose, and
+    a reference to one links to its place in the project's TeX."""
     (tmp_path / "web.tex").write_text(
-        "\\begin{document}\\chapter{C}\n"
-        "\\begin{lemma}\\label{plan}\\lean{Later}\\uses{done} Planned. \\end{lemma}\n"
-        "\\begin{lemma}\\label{done}\\lean{Done}\\leanok Done, unlike \\cref{plan}. \\end{lemma}\n"
-        "\\begin{proof}\\leanok\\uses{plan} By \\cref{plan}. \\end{proof}\n"
+        "\\newcommand{\\Def}[2]{\\expandafter\\gdef\\csname Thing#1\\endcsname{#2}}\n"
+        "\\begin{document}\\chapter{C}\\section{Intro}Words only.\n"
+        "\\section{Main}\n"
+        "\\begin{definition}\\label{plan}\\lean{Later}\\uses{done} \\Def{1}{\\star}"
+        "\\begin{equation}\\label{eq:p} x = y \\end{equation} \\end{definition}\n"
+        "\\begin{lemma}\\label{done}\\lean{Done}\\leanok Done, unlike \\cref{plan}; $\\csname Thing1\\endcsname$. \\end{lemma}\n"
+        "\\begin{proof}\\leanok\\uses{plan} By \\eqref{eq:p}. \\end{proof}\n"
+        "\\begin{lemma}\\label{proved}\\lean{Proved}\\uses{plan} Stated in Lean through its proof. \\end{lemma}\n"
+        "\\begin{proof}\\leanok Easy. \\end{proof}\n"
+        "\\section{Later}The result below is the goal.\n"
+        "\\begin{lemma}\\label{goal}\\lean{Goal} Not formalized. \\end{lemma}\n"
         "\\end{document}\n"
     )
     built, leaves = build(leanblueprint.read(tmp_path, "web.tex"), tmp_path)
-    assert list(leaves) == ["done"] and built.stats["left_out"] == 1
+    assert sorted(leaves) == ["done", "proved"] and built.stats["left_out"] == 2
+    source = "https://github.com/o/p/blob/0123456789abcdef/blueprint/src/web.tex#L4"
     done = leaves["done"]
-    assert done.body == "Done, unlike Lemma plan." and dict(done.notes)["Proof"] == "By Lemma plan."
+    # The macro the left-out definition defines still expands.
+    assert done.body == f"Done, unlike [Definition plan]({source}); $\\star$."
+    assert dict(done.notes)["Proof"] == f"By [Definition plan]({source})."
     assert done.depends == [] and done.proof_depends == []
-    assert "plan" not in built.targets
+    assert done.no_depends == "Its statement uses no other node of the blueprint."
+    assert leaves["proved"].no_depends == "Its statement uses no other node that has an article here."
+    assert "plan" not in built.targets and "goal" not in built.targets
+    chapter = built.root.entries[0].node
+    assert [entry.node.title for entry in chapter.entries] == ["Intro", "Main"]  # "Later" had only "goal"
+    assert "below" not in str([page.prose for page in walk(built.root) if hasattr(page, "entries")])
 
 
 @pytest.mark.parametrize("library", sorted(path.name for path in DATA.iterdir() if (path / "source.json").is_file()))

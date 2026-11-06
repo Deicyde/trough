@@ -186,7 +186,8 @@ def test_a_prerequisite_may_be_a_concept_with_no_declarations(tmp_path):
     # One Mathlib states without a proof keeps its page: the statement is in the library.
     assert "overview:w" not in targets and stats["left_out"] == 1
     assert "does not prove it" in targets["Stated"].body
-    assert "Mathlib does not have 1 of its 6 items yet" in root.entries[0].node.prose
+    assert "Mathlib does not have 1 of its 6 items;" in root.entries[0].node.prose
+    assert "Concepts on the lists that are not in Mathlib, 1 of them, have no article" in root.prose
     wanted = ARTICLE.replace("- [Gamma](trough:C)", "- [Wanted](trough:overview:w)")
     with pytest.raises(ValueError, match="no article for overview:w"):
         mathlib.chapter(sources, write(tmp_path, alpha=wanted))
@@ -263,6 +264,22 @@ def test_a_new_pin_gives_a_page_one_article_and_parks_without_overwriting(tmp_pa
     assert (tmp_path / "unplaced" / "old-af_000000000000000000000005.md").is_file()
     assert {change["change"] for change in changes} == {
         "its concept Old is now A, which another article has: moved out of the chapter"}
+
+
+def test_a_new_pin_parks_an_article_about_a_concept_mathlib_lacks(tmp_path):
+    """Such a concept has no page, so the data run on main moves its article out of the chapter and
+    unlinks links to it, as when a concept loses its declarations at a new pin."""
+    directory = tmp_path / "mathlib"
+    directory.mkdir()
+    sources = fake_sources()
+    sources.lists["overview"].append(mathlib.Item("overview", "w", ("Area", "Sub"), "wanted thing", 4))
+    wanted = ARTICLE.replace("concept: A", "concept: overview:w").replace("0001", "0006").split("\n## Depends on")[0] + "\n"
+    alpha = ARTICLE.replace("- [Gamma](trough:C)", "- [Gamma](trough:C)\n- [Wanted](trough:overview:w)")
+    write(directory, alpha=alpha, wanted=wanted)
+    changes = mathlib.follow_pin(sources, directory, tmp_path / "unplaced")
+    assert (tmp_path / "unplaced" / "wanted.md").is_file() and not (directory / "wanted.md").exists()
+    assert "trough:overview:w" not in (directory / "alpha.md").read_text(encoding="utf-8")
+    assert "its concept overview:w names no page at this pin: moved out of the chapter" in {c["change"] for c in changes}
 
 
 @pytest.mark.parametrize("link", ['[x](lean:A "a title")', "[x](LEAN:A)", "[x]( lean:A)", "[x](<lean:A> 'a title')",
