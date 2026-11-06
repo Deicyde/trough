@@ -57,21 +57,17 @@ As usual we are in the AKLB set-up, so in particular $K$ is the field of fractio
 
 We start with the following observation. If $M$ is a $K$-module then there's a canonical map $B\otimes_AM\to L\otimes_KM$ sending $b\otimes m$ to $b\otimes m$ (this follows from the universal property of the tensor product). Our first goal is to show that this map is an isomorphism. Let us establish some lemmas first.
 
-**Remark.** Is this already in mathlib?
-
-*Proof.* Let $a=N_{L/K}(b)$, the norm. This is known to take nonzero elements of $L$ to nonzero elements of $K$ (because the norm is the determinant of an invertible linear map) and integral elements to integral elements. Furthermore $a/b\in L$ is the the product of the conjugates of $b$ in some normal closure of $L$, and hence it is integral, and thus in $B$.
-
 - [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md)
 
-We now need to explain how tensor products sometimes commute with restricted products. Something we will need along the way is
+We now need to explain how tensor products sometimes commute with restricted products.
 
-The reason we care about this is the following.
+
 
 Recall that $\mathbb{A}_K^\infty$ is the finite adeles of $K$, defined as the restricted product of the $K_v$ with respect to the $A_v$, where $v$ runs through the nonzero primes of $A$. Let $R$ denote the restricted product of the $B\otimes_A K_v$ with respect to the $B\otimes_A A_v$.
 
 Recall from earlier in this section that if $v$ is a finite place of $A$ then the natural map from $B\otimes_A K_v$ to $L\otimes_KK_v$ is an isomorphism, and recall from the previous section that the natural map from $L\otimes_KK_v$ to $\prod_{w|v}L_w$ was also an isomorphism. This isomorphism sends $B\otimes_A A_v$ to $\prod_{w|v}B_w$ (I thank Matthew Jasper for pointing out to me that this statement was true at all primes, not just at unramified primes). Finally, the set of $w$ of $B$ dividing a fixed place $v$ of $A$ is finite. Let's now formalize the abstract statement which we need. Rather than following the notation for restricted product in the literature and writing $\mathbb{A}_K^\infty=\prod'_vK_v$ with the $\mathcal{O}_v$ implicit, we will write $\prod'_v(K_v,\mathcal{O}_v)$ in the below.
 
-From this, we can deduce the theorem we claimed earlier:
+
 
 Because this map factors through the isomorphism $B\otimes_A\mathbb{A}_K^\infty\to L\otimes_K\mathbb{A}_K^\infty$ we can finally deduce that the natural map $L\otimes_K\mathbb{A}_K^\infty\to\mathbb{A}_L^\infty$ is an algebraic isomorphism.
 

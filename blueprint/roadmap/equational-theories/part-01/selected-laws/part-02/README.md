@@ -12,7 +12,7 @@ The “Dupont” law, studied further in [The Dupont equation](../../infinite-ma
 
 - [Equation 65](eq65.md)
 
-The “Asterix” law, studied further in The Asterix equation.
+The “Asterix” law, studied further in [The Asterix equation](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L33).
 
 - [Equation 168](eq168.md)
 
@@ -48,7 +48,7 @@ The weak central groupoid law, implied by the central groupoid law [E168](https:
 
 - [Equation 1491](eq1491.md)
 
-The “Obelix” law, studied further in The Asterix equation.
+The “Obelix” law, studied further in [The Asterix equation](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L33).
 
 - [Equation 1571](eq1571.md)
 

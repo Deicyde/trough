@@ -1,6 +1,6 @@
 # Greedy algorithm constructions
 
-In The Asterix equation a magma satisfying one law and refuting another was obtained by using the fact that over translation-invariant magmas, equational laws simplify to univariate functional equations, and solving the resulting equation using a greedy algorithm.
+In [The Asterix equation](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L33) a magma satisfying one law and refuting another was obtained by using the fact that over translation-invariant magmas, equational laws simplify to univariate functional equations, and solving the resulting equation using a greedy algorithm.
 
 One way to construct infinite magmas satisfying specific laws is via a greedy algorithm construction not on a one-variable functional equation, but on the operation table of the magma itself.
 

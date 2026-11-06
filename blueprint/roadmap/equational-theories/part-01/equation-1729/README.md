@@ -20,8 +20,6 @@ $$
 
 for all $y \in SM$.
 
-We have the following procedure for extending a small magma $SM$ satisfying (1) to a larger one $M$:
-
 To build a magma satisfying 1729 but not 817, it thus suffices to produce
 
 - a 1729 magma $SM$;

@@ -19,8 +19,6 @@ The pre-ordering on laws has a duality symmetry:
 
 - [Duality of laws](duality.md)
 
-Some equational laws can be “diagonalized”:
-
 Thus for instance, [E7](https://teorth.github.io/equational_theories/implications/?7) $({x = y \diamond z})$ is equivalent to [E2](https://teorth.github.io/equational_theories/implications/?2) $({x = y})$.
 
 - [Criterion for implication](variable-impl.md)
