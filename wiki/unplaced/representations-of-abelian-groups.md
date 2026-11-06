@@ -11,8 +11,8 @@ to be one-dimensional, and for a finite group whose order is not divisible by th
 of the field (as over $\mathbb{C}$) it forces every finite-dimensional representation to split
 into invariant lines. The representation theory of a finite abelian group is therefore the
 study of its characters: it amounts to the simultaneous diagonalization of commuting matrices, and
-it is the setting of the [Fourier transform for finite abelian
-groups](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/Fourier%20transform%20for%20finite%20abelian%20groups).
+it is the setting of the Fourier transform for finite abelian
+groups.
 
 ## Definition
 
@@ -65,7 +65,7 @@ irreducibility leaves only a line.
 For finite $G$ with $|G|$ nonzero in $k$, [Maschke's theorem](trough:MonoidAlgebra.Submodule.exists_isCompl) gives every
 invariant subspace an invariant complement, and induction on the dimension splits $V$ into
 irreducible pieces, which are lines. A nonzero vector from each line gives the diagonalizing
-basis. Alternatively, each $\rho(g)$ is annihilated by $x^{|G|} - 1$, which has distinct roots, so it is [diagonalizable](trough:undergrad:Linear%20algebra/Structure%20theory%20of%20endomorphisms/diagonalization),
+basis. Alternatively, each $\rho(g)$ is annihilated by $x^{|G|} - 1$, which has distinct roots, so it is diagonalizable,
 and commuting diagonalizable maps can be diagonalized in a common basis. For the count, $G$ is a
 product of cyclic groups by the [structure
 theorem](trough:AddCommGroup.equiv_free_prod_directSum_zmod); a character of a [cyclic
@@ -113,8 +113,8 @@ unity, and a character of a product is a product of characters of the factors.
 
 ## Related concepts
 
-The characters of a finite abelian group form its [dual
-group](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/dual%20groups),
+The characters of a finite abelian group form its dual
+group,
 and the [orthogonality of characters](trough:FDRep.char_orthonormal), together with their count,
 makes them an orthonormal basis of the space of complex functions on $G$. For nonabelian groups irreducible
 representations of higher dimension appear: the symmetric group on three letters has one of

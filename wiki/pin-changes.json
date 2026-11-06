@@ -1,0 +1,398 @@
+[
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q2394548 names no other page: unlinked"
+ },
+ {
+  "file": "alternating-group.md",
+  "article_id": "af_4c425b4601e73e5607189d1b",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1340623 names no other page: unlinked"
+ },
+ {
+  "file": "alternating-groups-on-5-letters-or-more-are-simple.md",
+  "article_id": "af_6a2b17ff706487ccb8968c21",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1340623 names no other page: unlinked"
+ },
+ {
+  "file": "area-group-theory.md",
+  "article_id": "af_e620bc4c5ed6c6bf13b0d972",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q909517 names no other page: unlinked"
+ },
+ {
+  "file": "area-group-theory.md",
+  "article_id": "af_e620bc4c5ed6c6bf13b0d972",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1340623 names no other page: unlinked"
+ },
+ {
+  "file": "burnside-lemma.md",
+  "article_id": "af_022510b4bc250b1c63fd6518",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1037559 names no other page: unlinked"
+ },
+ {
+  "file": "character.md",
+  "article_id": "af_2e4012c2c940f210fbc866c1",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/class function over a group names no other page: unlinked"
+ },
+ {
+  "file": "character.md",
+  "article_id": "af_2e4012c2c940f210fbc866c1",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters names no other page: unlinked"
+ },
+ {
+  "file": "character.md",
+  "article_id": "af_2e4012c2c940f210fbc866c1",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: unlinked"
+ },
+ {
+  "file": "class-function-over-a-group.md",
+  "article_id": "af_f03e5f7719969665d0235ac2",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters names no other page: unlinked"
+ },
+ {
+  "file": "class-function-over-a-group.md",
+  "article_id": "af_f03e5f7719969665d0235ac2",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/convolution names no other page: unlinked"
+ },
+ {
+  "file": "class-function-over-a-group.md",
+  "article_id": "af_f03e5f7719969665d0235ac2",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: unlinked"
+ },
+ {
+  "file": "class-function-over-a-group.md",
+  "article_id": "af_f03e5f7719969665d0235ac2",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "class-function-over-a-group.md",
+  "article_id": "af_f03e5f7719969665d0235ac2",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept undergrad:Group Theory/Representation theory of finite groups/class function over a group names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "classification-of-abelian-simple-groups.md",
+  "article_id": "af_3d092e401f76df3264e4bbba",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1340623 names no other page: unlinked"
+ },
+ {
+  "file": "classification-of-abelian-simple-groups.md",
+  "article_id": "af_3d092e401f76df3264e4bbba",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q909517 names no other page: unlinked"
+ },
+ {
+  "file": "classification-of-finite-simple-groups.md",
+  "article_id": "af_a9d2672d3ecc556269ffce58",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "prerequisite trough:1000:Q909517 names no other page: dropped"
+ },
+ {
+  "file": "classification-of-finite-simple-groups.md",
+  "article_id": "af_a9d2672d3ecc556269ffce58",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "prerequisite trough:1000:Q1996305 names no other page: dropped"
+ },
+ {
+  "file": "classification-of-finite-simple-groups.md",
+  "article_id": "af_a9d2672d3ecc556269ffce58",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1996305 names no other page: unlinked"
+ },
+ {
+  "file": "classification-of-finite-simple-groups.md",
+  "article_id": "af_a9d2672d3ecc556269ffce58",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q909517 names no other page: unlinked"
+ },
+ {
+  "file": "classification-of-finite-simple-groups.md",
+  "article_id": "af_a9d2672d3ecc556269ffce58",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept 1000:Q1340623 names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "complex-roots-of-unity.md",
+  "article_id": "af_222b23db214606a5c411f6a0",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: unlinked"
+ },
+ {
+  "file": "complex-roots-of-unity.md",
+  "article_id": "af_222b23db214606a5c411f6a0",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "conjugacy-classes.md",
+  "article_id": "af_275f8bb2e365635ee25e5b8c",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Linear algebra/Structure theory of endomorphisms/Jordan normal form names no other page: unlinked"
+ },
+ {
+  "file": "conjugacy-classes.md",
+  "article_id": "af_275f8bb2e365635ee25e5b8c",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/class function over a group names no other page: unlinked"
+ },
+ {
+  "file": "conjugacy-classes.md",
+  "article_id": "af_275f8bb2e365635ee25e5b8c",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters names no other page: unlinked"
+ },
+ {
+  "file": "convolution.md",
+  "article_id": "af_aaf0b86c11ee877cfc107d5a",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/class function over a group names no other page: unlinked"
+ },
+ {
+  "file": "convolution.md",
+  "article_id": "af_aaf0b86c11ee877cfc107d5a",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters names no other page: unlinked"
+ },
+ {
+  "file": "convolution.md",
+  "article_id": "af_aaf0b86c11ee877cfc107d5a",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "convolution.md",
+  "article_id": "af_aaf0b86c11ee877cfc107d5a",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: unlinked"
+ },
+ {
+  "file": "convolution.md",
+  "article_id": "af_aaf0b86c11ee877cfc107d5a",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept undergrad:Group Theory/Representation theory of finite groups/convolution names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "dual-groups.md",
+  "article_id": "af_c822a925bd9b15894ec09a65",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "dual-groups.md",
+  "article_id": "af_c822a925bd9b15894ec09a65",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/representations of abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "dual-groups.md",
+  "article_id": "af_c822a925bd9b15894ec09a65",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept undergrad:Group Theory/Representation theory of finite groups/dual groups names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "examples-of-groups-with-small-cardinality.md",
+  "article_id": "af_32493a698f39193e61a10413",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/representations of abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "examples-of-groups-with-small-cardinality.md",
+  "article_id": "af_32493a698f39193e61a10413",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept undergrad:Group Theory/Representation theory of finite groups/examples of groups with small cardinality names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "feit-thompson-theorem.md",
+  "article_id": "af_a2dc53437d42295eff959609",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1340623 names no other page: unlinked"
+ },
+ {
+  "file": "feit-thompson-theorem.md",
+  "article_id": "af_a2dc53437d42295eff959609",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1996305 names no other page: unlinked"
+ },
+ {
+  "file": "feit-thompson-theorem.md",
+  "article_id": "af_a2dc53437d42295eff959609",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept 1000:Q909517 names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "prerequisite trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: dropped"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: unlinked"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/convolution names no other page: unlinked"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters names no other page: unlinked"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/representations of abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Numerical Analysis/Fourier transform/discrete Fourier transform on a finite abelian group names no other page: unlinked"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Numerical Analysis/Fourier transform/fast Fourier transform names no other page: unlinked"
+ },
+ {
+  "file": "fourier-transform-for-finite-abelian-groups.md",
+  "article_id": "af_111e78458bc90b0ad55478bd",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "nilpotent-group.md",
+  "article_id": "af_73b67c95c71ead4d84062de6",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q3527091 names no other page: unlinked"
+ },
+ {
+  "file": "normal-subgroup.md",
+  "article_id": "af_3cee2a7176fb61b34adb90e3",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1340623 names no other page: unlinked"
+ },
+ {
+  "file": "orthogonality-of-characters.md",
+  "article_id": "af_9445789111bab43843bd1ec0",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/class function over a group names no other page: unlinked"
+ },
+ {
+  "file": "orthogonality-of-characters.md",
+  "article_id": "af_9445789111bab43843bd1ec0",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters names no other page: unlinked"
+ },
+ {
+  "file": "orthonormal-basis-of-irreducible-characters.md",
+  "article_id": "af_63d547bb6f68bcfc3a25d5e3",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "prerequisite trough:undergrad:Group Theory/Representation theory of finite groups/class function over a group names no other page: dropped"
+ },
+ {
+  "file": "orthonormal-basis-of-irreducible-characters.md",
+  "article_id": "af_63d547bb6f68bcfc3a25d5e3",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/class function over a group names no other page: unlinked"
+ },
+ {
+  "file": "orthonormal-basis-of-irreducible-characters.md",
+  "article_id": "af_63d547bb6f68bcfc3a25d5e3",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: unlinked"
+ },
+ {
+  "file": "orthonormal-basis-of-irreducible-characters.md",
+  "article_id": "af_63d547bb6f68bcfc3a25d5e3",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "orthonormal-basis-of-irreducible-characters.md",
+  "article_id": "af_63d547bb6f68bcfc3a25d5e3",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "representations-of-abelian-groups.md",
+  "article_id": "af_9933b1afe52466d680bc8704",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups names no other page: unlinked"
+ },
+ {
+  "file": "representations-of-abelian-groups.md",
+  "article_id": "af_9933b1afe52466d680bc8704",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Linear algebra/Structure theory of endomorphisms/diagonalization names no other page: unlinked"
+ },
+ {
+  "file": "representations-of-abelian-groups.md",
+  "article_id": "af_9933b1afe52466d680bc8704",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:undergrad:Group Theory/Representation theory of finite groups/dual groups names no other page: unlinked"
+ },
+ {
+  "file": "representations-of-abelian-groups.md",
+  "article_id": "af_9933b1afe52466d680bc8704",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "its concept undergrad:Group Theory/Representation theory of finite groups/representations of abelian groups names no page at this pin: moved out of the chapter"
+ },
+ {
+  "file": "simple-group.md",
+  "article_id": "af_c4ba73c73fb294ea62b53b18",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1340623 names no other page: unlinked"
+ },
+ {
+  "file": "simple-group.md",
+  "article_id": "af_c4ba73c73fb294ea62b53b18",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q909517 names no other page: unlinked"
+ },
+ {
+  "file": "special-orthogonal-group.md",
+  "article_id": "af_4b0611227895fd885c6bd71c",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q681406 names no other page: unlinked"
+ },
+ {
+  "file": "sum-of-four-squares.md",
+  "article_id": "af_65dae603bcad3a51819a6860",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q3527095 names no other page: unlinked"
+ },
+ {
+  "file": "sum-of-four-squares.md",
+  "article_id": "af_65dae603bcad3a51819a6860",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q657903 names no other page: unlinked"
+ },
+ {
+  "file": "sum-of-four-squares.md",
+  "article_id": "af_65dae603bcad3a51819a6860",
+  "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "change": "trough:1000:Q1146791 names no other page: unlinked"
+ }
+]

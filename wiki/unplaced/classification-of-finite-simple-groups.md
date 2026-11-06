@@ -83,9 +83,9 @@ and [a commutative simple group has prime order](lean:CommGroup.is_simple_iff_pr
 Only an outline can be given. A non-abelian finite simple group is not a
 $p$-group, since [a finite $p$-group is simple only when it has
 order $p$](lean:IsPGroup.isSimpleGroup_iff_card_eq); by
-[Burnside's theorem](trough:1000:Q1996305) its order even has at least three
+Burnside's theorem its order even has at least three
 distinct prime factors. The starting point is the
-[Feit–Thompson theorem](trough:1000:Q909517), that every finite group of odd order is solvable; hence every
+Feit–Thompson theorem, that every finite group of odd order is solvable; hence every
 non-abelian finite simple group has even order and contains an involution, an
 element of order $2$. The Brauer–Fowler theorem shows that only finitely many
 simple groups can have a given group as the centralizer of an involution, so a
@@ -125,6 +125,4 @@ this structure for the lattice of subgroups of a group is still to be done.
 
 ## Proof depends on
 
-- [Feit–Thompson theorem](trough:1000:Q909517)
 - [First Sylow theorem](trough:Sylow.exists_subgroup_card_pow_prime)
-- [Burnside's theorem](trough:1000:Q1996305)

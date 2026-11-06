@@ -63,7 +63,7 @@ def generate() -> dict[Path, str]:
         lean_links[project.id] = dict(sorted(built.lean_links.items()))
         count = built.stats["nodes"]
         blueprint_rows.append((project.name, "DECOMPOSED",
-                               f"[{count} blueprint nodes](../roadmap/{project.id}/README.md), one article per node."))
+                               f"[{count} blueprint nodes in Lean](../roadmap/{project.id}/README.md), one article per node."))
         unknown = ", ".join(f"\\{name}" for name, _ in built.unknown.most_common(8))
         print(
             f"{project.id}: {count} nodes, {built.stats.get('statements_formalized', 0)} formalized statements and "
@@ -84,7 +84,7 @@ def generate() -> dict[Path, str]:
             (
                 f"Mathlib / {node.title}",
                 "DECOMPOSED",
-                f"[{count} list items](../roadmap/mathlib/{node.slug}/README.md), one article per concept.",
+                f"[{count} list items](../roadmap/mathlib/{node.slug}/README.md), one article per concept Mathlib has.",
             )
         )
     files[VAULT / "coverage" / "README.md"] = catalog.coverage(libraries, rows + blueprint_rows)
@@ -93,8 +93,8 @@ def generate() -> dict[Path, str]:
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
     )
     print(
-        f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['wanted']} not yet, "
-        f"{stats['authored']} authored), {stats['statement']} statement and {stats['proof']} proof edges, "
+        f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "
+        f"{stats['authored']} authored; {stats['left_out']} concepts Mathlib lacks left out), {stats['statement']} statement and {stats['proof']} proof edges, "
         f"{stats['informal']} informal",
         file=sys.stderr,
     )

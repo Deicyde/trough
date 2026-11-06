@@ -94,7 +94,7 @@ A group with exactly two normal subgroups, the trivial one and itself, is called
 repeated extensions; these composition factors are unique by the
 [Jordan–Hölder theorem](trough:CompositionSeries.jordan_holder), and the finite simple
 groups themselves are listed by the
-[classification of finite simple groups](trough:1000:Q1340623). Chains of subgroups, each normal
+classification of finite simple groups. Chains of subgroups, each normal
 in the next, underlie the definitions of solvable and
 [nilpotent groups](trough:Group.IsNilpotent). The analogous notion for rings is a two-sided
 ideal, the kernel of a ring homomorphism.

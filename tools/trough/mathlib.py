@@ -43,12 +43,11 @@ LIST_PROSE = {
         "([docs/overview.yaml]({yaml}))."
     ),
     "undergrad": (
-        "The undergraduate curriculum Mathlib tracks, with the topics it does not cover yet "
-        "([docs/undergrad.yaml]({yaml}))."
+        "The undergraduate curriculum Mathlib tracks ([docs/undergrad.yaml]({yaml}))."
     ),
     "100": (
-        "Freek Wiedijk's list of 100 famous theorems, with Mathlib's formalizations and the "
-        "ones done elsewhere ([docs/100.yaml]({yaml}))."
+        "Freek Wiedijk's list of 100 famous theorems, with Mathlib's formalizations "
+        "([docs/100.yaml]({yaml}))."
     ),
     "1000": (
         "The theorems of Wikipedia's list of theorems, as collected by the "
@@ -58,7 +57,7 @@ LIST_PROSE = {
 }
 DOCS = "https://leanprover-community.github.io/mathlib4_docs"
 MATHLIB_REPO = "https://github.com/leanprover-community/mathlib4"
-# Wanted items carry no Lean kind; a title naming a result is read as a theorem.
+# Items Mathlib states without a proof carry no Lean kind; a title naming a result is read as a theorem.
 THEOREM_TITLE = re.compile(
     r"(?i)\b(theorem|lemma|formula|inequalit|identit|law|criteri|conjecture|principle|test|rule|"
     r"paradox|bound|estimate|equality|reciprocity|classification|expansion|decomposition)"
@@ -290,6 +289,13 @@ def module_names(articles: list[Article]) -> list[str]:
     return sorted({article.module for article in articles if article.module})
 
 
+def declared(article: Article) -> bool:
+    """Whether Mathlib has the concept: declarations, a module, or a statement it states without a
+    proof. The map records what the library contains, not what it may add, so an item naming none
+    of these has no article."""
+    return article.kind != "wanted" or any(item.statement for item in article.items)
+
+
 def concept_key(article: Article) -> str:
     """What an authored article names its concept by: the first declaration, the statement or
     module, or for one Mathlib lacks "<list>:<item key>"."""
@@ -519,22 +525,11 @@ def build_leaf(sources: Sources, article: Article, claimed: frozenset[str] = fro
         leaf = Leaf(title, slugify(title), fields, "\n\n".join(body), links + item_links + external)
         leaf.no_depends = "Dependencies are tracked for single declarations only."
         return leaf
-    statements = [item.statement for item in article.items if item.statement]
-    body = []
-    if statements:
-        record = concepts.get(statements[0]) or {}
-        body.append(f"Mathlib states this as `{statements[0]}` but does not prove it.")
-        if record.get("signature"):
-            body.append(fence(record["signature"]))
-    elif any(item.authors and item.list == "1000" for item in article.items):
-        authors = next(item.authors for item in article.items if item.authors)
-        body.append(f"Mathlib's 1000+ list marks this formalized by {authors}, without naming a declaration.")
-    elif home.list == "undergrad":
-        body.append("Not yet in Mathlib: its undergraduate list names no declaration for this topic.")
-    elif home.list == "100":
-        body.append("Not in Mathlib.")
-    else:
-        body.append("Not yet in Mathlib: its 1000+ list names no declaration for this theorem.")
+    statement = next(item.statement for item in article.items if item.statement)
+    record = concepts.get(statement) or {}
+    body = [f"Mathlib states this as `{statement}` but does not prove it."]
+    if record.get("signature"):
+        body.append(fence(record["signature"]))
     body += prose
     fields = [("declaration", default_kind(article)), ("origin", "cited"), ("not_ready", "true")]
     leaf = Leaf(title, slugify(title), fields, "\n\n".join(body), item_links + external)
@@ -547,10 +542,11 @@ def tree_container(sources: Sources, name: str, articles_by_item: dict[int, Arti
                    targets: dict[str, Leaf | Container] | None = None) -> Container:
     """overview and undergrad: the list's own headings, in its order. An overview section with an
     authored page (areas: its text and article_id, by its headings joined with "/") opens with it."""
-    yaml_url = f"{MATHLIB_REPO}/blob/{sources.rev}/docs/{name}.yaml"
-    root = Container(LIST_TITLES[name], LIST_SLUGS[name], prose=LIST_PROSE[name].format(yaml=yaml_url))
+    root = list_root(sources, name, articles_by_item)
     by_path: dict[tuple[str, ...], Container] = {(): root}
     for item in sources.lists[name]:
+        if id(item) not in articles_by_item:
+            continue
         for depth in range(1, len(item.path) + 1):
             path = item.path[:depth]
             if path not in by_path:
@@ -570,10 +566,21 @@ def tree_container(sources: Sources, name: str, articles_by_item: dict[int, Arti
     return root
 
 
+def list_root(sources: Sources, name: str, articles_by_item: dict[int, Article]) -> Container:
+    """A list's page, saying how many of its items Mathlib lacks."""
+    yaml_url = f"{MATHLIB_REPO}/blob/{sources.rev}/docs/{name}.yaml"
+    prose = LIST_PROSE[name].format(yaml=yaml_url)
+    lacking = sum(id(item) not in articles_by_item for item in sources.lists[name])
+    if lacking:
+        prose += (f" Mathlib does not have {lacking:,} of its {len(sources.lists[name]):,} items yet; "
+                  "they have no article here.")
+    return Container(LIST_TITLES[name], LIST_SLUGS[name], prose=prose)
+
+
 def hundred_container(sources: Sources, articles_by_item: dict[int, Article]) -> Container:
-    yaml_url = f"{MATHLIB_REPO}/blob/{sources.rev}/docs/100.yaml"
-    root = Container(LIST_TITLES["100"], LIST_SLUGS["100"], prose=LIST_PROSE["100"].format(yaml=yaml_url))
-    items = sorted(sources.lists["100"], key=lambda item: int(item.key) if item.key.isdigit() else 10**9)
+    root = list_root(sources, "100", articles_by_item)
+    items = sorted((item for item in sources.lists["100"] if id(item) in articles_by_item),
+                   key=lambda item: int(item.key) if item.key.isdigit() else 10**9)
     for item in items:
         article = articles_by_item[id(item)]
         owned = article.home is item
@@ -587,11 +594,12 @@ def hundred_container(sources: Sources, articles_by_item: dict[int, Article]) ->
 
 
 def thousand_container(sources: Sources, articles_by_item: dict[int, Article]) -> Container:
-    yaml_url = f"{MATHLIB_REPO}/blob/{sources.rev}/docs/1000.yaml"
-    root = Container(LIST_TITLES["1000"], LIST_SLUGS["1000"], prose=LIST_PROSE["1000"].format(yaml=yaml_url))
+    root = list_root(sources, "1000", articles_by_item)
     names = (sources.thousand_plus or {}).get("msc_names", {})
     by_code: dict[str, list[Item]] = defaultdict(list)
     for item in sources.lists["1000"]:
+        if id(item) not in articles_by_item:
+            continue
         by_code[thousand_entry(sources, item)[1].get("msc", "")].append(item)
 
     def code_container(code: str) -> Container:
@@ -789,7 +797,7 @@ def citation_urls(sources: Sources, authored: dict[str, Authored]) -> dict[str, 
 def page_keys(sources: Sources) -> set[str]:
     """Every key a trough: link can name: each concept's, and "area:<headings>" for each
     section of the overview (chapter's targets, without building the chapter)."""
-    keys = {concept_key(article) for article in merge(sources.lists)}
+    keys = {concept_key(article) for article in merge(sources.lists) if declared(article)}
     for item in sources.lists["overview"]:
         keys.update("area:" + "/".join(item.path[:depth]) for depth in range(1, len(item.path) + 1))
     return keys
@@ -975,7 +983,9 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
     """The chapter, its numbers, and the pages a trough: link can name: every concept by its
     key, and each overview section as "area:<headings>"."""
     authored = authored or {}
-    articles = merge(sources.lists)
+    merged = merge(sources.lists)
+    articles = [article for article in merged if declared(article)]
+    left_out = len(merged) - len(articles)
     claimed = frozenset(concept_names(articles))
     for article in articles:
         article.leaf = build_leaf(sources, article, claimed)
@@ -999,7 +1009,7 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
         raise ValueError(f"an area page names no prerequisites; drop the dependency sections of "
                          f"{', '.join(map(str, listing))}")
     formalized = sum(article.kind != "wanted" for article in articles)
-    wanted = len(articles) - formalized
+    stated = len(articles) - formalized
     rev_link = f"[{sources.rev[:8]}]({MATHLIB_REPO}/tree/{sources.rev})"
     date = f" ({sources.date[:10]})" if sources.date else ""
     if sources.deps:
@@ -1019,15 +1029,16 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
         [
             "Mathlib's maintainers keep four curated lists of what the library contains: an overview of its "
             "main concepts, an undergraduate curriculum, Freek Wiedijk's 100 theorems, and the theorems of "
-            "the 1000+ theorems project. This chapter has one article per concept on those lists, read at "
-            f"Mathlib commit {rev_link}{date}: {len(articles):,} articles, {formalized:,} of them in Mathlib "
-            f"and {wanted:,} not yet.",
+            "the 1000+ theorems project. This chapter has one article per concept on those lists that "
+            f"Mathlib has, read at Mathlib commit {rev_link}{date}: {len(articles):,} articles"
+            + (f", {stated:,} of them stated in Mathlib without a proof" if stated else "")
+            + f". The {left_out:,} concepts on the lists that Mathlib does not have yet have no article: the "
+            "map records what the library contains, not what it may add.",
             "Items that name the same declarations in several lists, or name none and share a title, are one "
             "article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, "
             "with their documentation and source; the docstrings and signatures it shows are Mathlib's, under "
-            "Apache-2.0. One that Mathlib lacks is marked not ready, since its "
-            "prerequisites are not mapped; its page says when Mathlib states it without a proof or another "
-            "project has formalized it.",
+            "Apache-2.0. One that Mathlib states without a proof is marked not ready, since its "
+            "prerequisites are not mapped.",
             edges,
         ]
         + ([f"{len(authored):,} {'article is' if len(authored) == 1 else 'articles are'} written for Trough, under "
@@ -1052,5 +1063,6 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
         unknown = [key for key in linked(article) if key not in targets]
         if unknown:
             raise ValueError(f"{article.path}: no article for {', '.join(dict.fromkeys(unknown))}")
-    stats = dict(edge_stats, articles=len(articles), formalized=formalized, wanted=wanted, authored=written)
+    stats = dict(edge_stats, articles=len(articles), formalized=formalized, stated=stated, left_out=left_out,
+                 authored=written)
     return root, stats, targets

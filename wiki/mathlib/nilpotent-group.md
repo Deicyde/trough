@@ -121,7 +121,7 @@ Lie bracket in place of the group commutator; a connected Lie group is nilpotent
 exactly when its Lie algebra is. A group is called
 [virtually nilpotent](lean:Group.IsVirtuallyNilpotent) if it has a nilpotent
 subgroup of finite index. By
-[Gromov's theorem](trough:1000:Q3527091), a finitely generated group of
+Gromov's theorem, a finitely generated group of
 polynomial growth is virtually nilpotent; polynomial growth means that the number
 of elements expressible as words of length at most $n$ in a fixed finite
 generating set is bounded by a polynomial in $n$. Conversely, every finitely generated

@@ -96,8 +96,8 @@ The most familiar infinite family of nonabelian simple groups comes from the
 [alternating group](trough:alternatingGroup) $A_n$ of even permutations, since
 [alternating groups on 5 letters or more are simple](trough:alternatingGroup.isSimpleGroup)
 ([Mathlib's statement](lean:alternatingGroup.isSimpleGroup)). The
-[Feit–Thompson theorem](trough:1000:Q909517), that every finite group of odd order is
-solvable, and the [classification of finite simple groups](trough:1000:Q1340623) are two
+Feit–Thompson theorem, that every finite group of odd order is
+solvable, and the classification of finite simple groups are two
 landmarks of finite group theory that Mathlib does not yet contain.
 
 For abelian groups a full description exists in the finitely generated case: by the

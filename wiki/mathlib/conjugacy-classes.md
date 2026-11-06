@@ -50,7 +50,7 @@ Equivalently, $G$ [acts](trough:MulAction) on itself by $g \cdot x = gxg^{-1}$, 
 - **Matrix groups.** In the [general linear group](trough:Matrix.GeneralLinearGroup)
   over a field, conjugacy is similarity of invertible matrices. Over an
   algebraically closed field, two invertible matrices are conjugate exactly when
-  they have the same [Jordan normal form](trough:undergrad:Linear%20algebra/Structure%20theory%20of%20endomorphisms/Jordan%20normal%20form)
+  they have the same Jordan normal form
   up to the order of the blocks.
 
 ## Properties
@@ -94,10 +94,10 @@ Equivalently, $G$ [acts](trough:MulAction) on itself by $g \cdot x = gxg^{-1}$, 
 
 ## Related concepts
 
-A [class function](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/class%20function%20over%20a%20group)
+A class function
 is a function on $G$ that is constant on each conjugacy class. The characters of
 the irreducible complex representations of a finite group form an
-[orthonormal basis](trough:undergrad:Group%20Theory/Representation%20theory%20of%20finite%20groups/orthonormal%20basis%20of%20irreducible%20characters)
+orthonormal basis
 of the space of class functions, so their number equals the number of conjugacy
 classes. Conjugation also acts on subgroups, sending $H$ to $gHg^{-1}$; the
 [second Sylow theorem](trough:Sylow.isPretransitive_of_finite) says that the Sylow

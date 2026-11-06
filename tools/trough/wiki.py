@@ -8,8 +8,8 @@ about and gives the article a durable identity:
     concept: Subgroup.card_subgroup_dvd_card
     ---
 
-A concept's key is its article's first declaration, its statement or module, or
-"<list>:<item key>" for one Mathlib lacks (mathlib.concept_key); "area:<headings>"
+A concept's key is its article's first declaration, its statement or module
+(mathlib.concept_key; a concept Mathlib lacks has no page); "area:<headings>"
 is the overview page of a section of Mathlib's overview, such as
 "area:General algebra/Group theory". The file's name is for people only.
 

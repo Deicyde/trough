@@ -6,7 +6,7 @@ concept: 1000:Q909517
 The **Feit–Thompson theorem**, also called the odd order theorem, says that every
 finite [group](trough:Group) of odd order is solvable. Equivalently, every
 non-abelian finite [simple group](trough:IsSimpleGroup) has even order. It is a
-cornerstone of the [classification of finite simple groups](trough:1000:Q1340623):
+cornerstone of the classification of finite simple groups:
 it guarantees that every non-abelian finite simple group contains an element of
 order $2$, so that such groups can be studied through these elements and their
 centralizers.
@@ -103,7 +103,7 @@ a proof of this would shorten the final stage considerably. The conjecture is op
 
 ## Related concepts
 
-- [Burnside's theorem](trough:1000:Q1996305), that every group of order $p^a q^b$ with
+- Burnside's theorem, that every group of order $p^a q^b$ with
   $p$ and $q$ prime is solvable, is another solvability criterion from order alone,
   with a classical proof by character theory.
 - Finite groups whose Sylow subgroups are all cyclic are solvable; in particular every
