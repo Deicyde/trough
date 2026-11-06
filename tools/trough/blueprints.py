@@ -459,7 +459,9 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             write(home, f"{'#' * min(6, depth + 2)} {escape(writer.plain(sub.title) or 'Untitled')}")
         opened[id(home)] = chain
 
-    trailing: set[int] = set()  # pages whose last text was a left-out node, so its remarks go with it
+    # Pages whose last text was a left-out node. A remark there that carries a proof goes with the node:
+    # leanblueprint gives a proof to the nearest environment before it, so that proof is often the node's.
+    trailing: set[int] = set()
     for event in every_event:
         node = event.item
         if event.kind == "left out":
@@ -474,7 +476,7 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             continue
         if id(event) not in read_only:
             home = page(event.unit)
-            if event.kind in ("aside", "aside proof") and id(home) in trailing:
+            if event.kind in ("aside", "aside proof") and id(home) in trailing and node.proof is not None:
                 read_only.add(id(event))
             elif event.kind != "proof pointer":
                 trailing.discard(id(home))

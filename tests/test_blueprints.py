@@ -204,17 +204,19 @@ def test_only_named_formalized_nodes_have_articles(tmp_path):
         "\\section{Main}We study it. We first need:\n"
         "\\begin{definition}\\label{plan}\\lean{Later}\\uses{done} \\Def{1}{\\star}"
         "\\begin{equation}\\label{eq:p} x = y \\end{equation} \\end{definition}\n"
-        "\\begin{remark} About the plan. \\end{remark}\n"
+        "\\begin{remark} Is this known? \\end{remark}\n\\begin{proof} The plan's proof. \\end{proof}\n"
         "\\begin{lemma}\\label{done}\\lean{Done}\\leanok Done, unlike \\cref{plan}; $\\csname Thing1\\endcsname$. \\end{lemma}\n"
         "\\begin{proof}\\leanok\\uses{plan} By \\eqref{eq:p}. \\end{proof}\n"
         "\\begin{lemma}\\label{proved}\\lean{Proved}\\uses{plan} Stated in Lean through its proof. \\end{lemma}\n"
         "\\begin{proof}\\leanok Easy. \\end{proof}\n"
+        "\\begin{lemma}\\label{plan2}\\lean{Later2} Planned too. \\end{lemma}\n"
+        "\\begin{remark} A general remark. \\end{remark}\n"
         "\\section{Later}\\label{sec:later}The result below is the goal.\n"
         "\\begin{lemma}\\label{goal}\\lean{Goal} Not formalized. \\end{lemma}\n"
         "\\end{document}\n"
     )
     built, leaves = build(leanblueprint.read(tmp_path, "web.tex"), tmp_path)
-    assert sorted(leaves) == ["done", "proved"] and built.stats["left_out"] == 2
+    assert sorted(leaves) == ["done", "proved"] and built.stats["left_out"] == 3
     source = "https://github.com/o/p/blob/0123456789abcdef/blueprint/src/web.tex#L4"
     done = leaves["done"]
     # The macro the left-out definition defines still expands.
@@ -227,9 +229,12 @@ def test_only_named_formalized_nodes_have_articles(tmp_path):
     chapter = built.root.entries[0].node
     assert [entry.node.title for entry in chapter.entries] == ["Intro", "Main"]  # "Later" had only "goal"
     pages = {page.title: page for page in walk(built.root) if hasattr(page, "entries")}
-    # The sentence leading into the left-out definition, and the remark on it, go with it.
-    assert pages["Main"].prose == "We study it." and "About the plan" not in str(pages["Main"].entries[0].before)
-    later = "https://github.com/o/p/blob/0123456789abcdef/blueprint/src/web.tex#L10"
+    # The sentence leading into the left-out definition goes with it, and so does a remark carrying a
+    # proof right after it, which leanblueprint gives the remark; a remark with no proof stays.
+    assert pages["Main"].prose == "We study it."
+    text = str([pages["Main"].prose, pages["Main"].tail, *(entry.before for entry in pages["Main"].entries)])
+    assert "Is this known" not in text and "The plan's proof" not in text and "A general remark." in text
+    later = "https://github.com/o/p/blob/0123456789abcdef/blueprint/src/web.tex#L13"
     assert pages["Intro"].prose == f"Words only, before [Later]({later})."
     assert "below" not in str([page.prose for page in pages.values()])
 
