@@ -1,6 +1,6 @@
 # Greedy algorithm constructions
 
-In [The Asterix equation](../the-asterix-equation/README.md) a magma satisfying one law and refuting another was obtained by using the fact that over translation-invariant magmas, equational laws simplify to univariate functional equations, and solving the resulting equation using a greedy algorithm.
+In The Asterix equation a magma satisfying one law and refuting another was obtained by using the fact that over translation-invariant magmas, equational laws simplify to univariate functional equations, and solving the resulting equation using a greedy algorithm.
 
 One way to construct infinite magmas satisfying specific laws is via a greedy algorithm construction not on a one-variable functional equation, but on the operation table of the magma itself.
 
@@ -84,7 +84,7 @@ $$
 R(y,x,z) \hbox{ and } R(y,x',z) \implies x=x'\qquad\text{(1)}
 $$
 
-simply by starting with a partial solution, say on the natural numbers in which (e.g.) $R(1,2,0)$, $R(1,3,0)$ are the only situations in which $R$ holds. One can easily verify that this satisfies (VLT) and (65), (65'), but not (1), and so any magma constructed by the above greedy construction will not be left-cancellative. Since the Obelix law [E1491](https://teorth.github.io/equational_theories/implications/?1491) forces left-cancellativity, this gives an alternate proof of Asterix does not imply Obelix.
+simply by starting with a partial solution, say on the natural numbers in which (e.g.) $R(1,2,0)$, $R(1,3,0)$ are the only situations in which $R$ holds. One can easily verify that this satisfies (VLT) and (65), (65'), but not (1), and so any magma constructed by the above greedy construction will not be left-cancellative. Since the Obelix law [E1491](https://teorth.github.io/equational_theories/implications/?1491) forces left-cancellativity, this gives an alternate proof of [Asterix does not imply Obelix](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L180).
 
 ## Equation 1722
 
@@ -198,27 +198,6 @@ $$
 $$
 
 which violates 4435 at $(x,y)=(0,1)$ and 3116 at $(x,y)=(2,0).$
-
-## Equation 73
-
-For $x = y \diamond (y \diamond (x \diamond y))$ (73), we argue similarly, now with laws
-
-- Law 1. If $y \diamond (x \diamond y)$ is defined, then $y \diamond (y \diamond (x \diamond y))$ is defined and equal to $x$.
-- Law 2. $R_y$ is injective for all $y$ currently in the table.
-- Law 3. $x \diamond y \neq y$ for all $x,y$ currently in the table.
-
-One can obtain various refutations by using the countermodels [here](https://leanprover.zulipchat.com/#narrow/channel/458659-Equational/topic/713.2C.201289.2C.201447/near/483735768).
-
-## Equation 63
-
-For $x = y \diamond (x \diamond (x \diamond y))$ (63), we argue similarly, now with laws
-
-- Law 1. If $x \diamond (x \diamond y)$ is defined, then $y \diamond (x \diamond (x \diamond y))$ is defined and equal to $x$.
-- Law 2. If $x \diamond y = x \diamond z$ with $y,z$ distinct, then $y \diamond x$ (if defined) is not equal to $z$ or to $z \diamond x$ (if defined).
-- Law 3: If $x \diamond x$ is defined, it is equal to $x$.
-- Law 4: If $x \neq y$, then $x \diamond y$ is not equal to $x$.
-
-One can obtain various refutations by using the countermodels [here](https://leanprover.zulipchat.com/#narrow/channel/458659-Equational/topic/713.2C.201289.2C.201447/near/483735768).
 
 ## Equation 1076
 

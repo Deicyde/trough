@@ -60,6 +60,4 @@ We have two useful corollaries:
 We can now prove some anti-implications.
 
 - [854 does not imply 3316, 3925](854-anti.md)
-- [Some further properties of 854 magmas](some-further-properties-of-854-magmas/README.md)
 - [Running a greedy algorithm](running-a-greedy-algorithm/README.md)
-- [The free 854 magma](the-free-854-magma/README.md)

@@ -1,6 +1,6 @@
 # Freek Wiedijk's 100 theorems
 
-Freek Wiedijk's list of 100 famous theorems, with Mathlib's formalizations ([docs/100.yaml](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml)). Mathlib does not have 21 of its 100 items yet; they have no article here.
+Freek Wiedijk's list of 100 famous theorems, with Mathlib's formalizations ([docs/100.yaml](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml)). Mathlib does not have 21 of its 100 items; they have no article here.
 
 ## [Theorems 1 to 27](part-01/README.md)
 

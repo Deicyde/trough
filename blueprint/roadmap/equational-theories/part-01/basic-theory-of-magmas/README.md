@@ -104,7 +104,7 @@ $$
 
 ([OEIS A000110](https://oeis.org/A000110)).
 
-The sequence in Counting laws up to relabeling is
+The sequence in [Counting laws up to relabeling](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/intro.tex#L153) is
 
 $$
 2, 10, 75, 728, 8526, 115764, \dots
@@ -120,7 +120,7 @@ $$
 1, 1, 2, 4, 11, 32, 117, \dots
 $$
 
-([OEIS A103293](https://oeis.org/A103293)), and the sequence in Counting laws up to relabeling and symmetry is
+([OEIS A103293](https://oeis.org/A103293)), and the sequence in [Counting laws up to relabeling and symmetry](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/intro.tex#L171) is
 
 $$
 2, 5, 41, 364, 4294, 57882, 888440, \dots

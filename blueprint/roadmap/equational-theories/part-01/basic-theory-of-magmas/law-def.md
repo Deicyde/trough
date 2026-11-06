@@ -11,7 +11,7 @@ Let $X$ be a set. A *law* with alphabet $X$ is a formal expression of the form $
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Lean
 

@@ -7,5 +7,3 @@
 - [Some local theory](some-local-theory/README.md)
 - [Adelic groups](adelic-groups/README.md)
 - [Automorphic forms](automorphic-forms/README.md)
-- [Concrete Hecke operators](concrete-hecke-operators/README.md)
-- [Analysis of the Hecke algebra](analysis-of-the-hecke-algebra/README.md)

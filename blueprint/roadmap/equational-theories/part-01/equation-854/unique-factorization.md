@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Immediate from Description of equivalence.
+Immediate from [Description of equivalence](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/854.tex#L38).
 
 ## Lean
 

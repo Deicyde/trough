@@ -12,7 +12,7 @@ We have $\mathbb{H}[Z_2] \leq (8m^2-16m+1) k + \frac{1}{m} \sum_{i=1}^m \mathbb{
 
 ## Depends on
 
-Its statement uses no other node of the blueprint.
+Its statement uses no other node that has an article here.
 
 ## Proof depends on
 
