@@ -198,6 +198,23 @@ def in_lean(node: Node) -> bool:
     return bool(node.lean) and (node.leanok or node.mathlibok or bool(node.proof and node.proof.leanok))
 
 
+# The last sentence of a paragraph that leads into what follows: it ends in a colon or "the
+# following", or stops at a word or comma.
+LEAD_IN = re.compile(r"(?:^|(?<=[.!?])\s+)(?=[^.!?]*[.!?]?\s*\Z)(?:[^\n]*:|[^\n]*\b(?:the following|as follows)\.|[^\n]*[A-Za-z0-9,])\s*\Z")
+
+
+def without_lead_in(markdown: str) -> str:
+    """*markdown* without its closing sentence when that sentence leads into a result left out."""
+    head, _, last = markdown.rpartition("\n\n")
+    if last.startswith(("#", "$$", "|", "- ", "* ", "```")) or re.match(r"\d+\. ", last):
+        return markdown
+    match = LEAD_IN.search(last)
+    if not match:
+        return markdown
+    kept = last[:match.start()].rstrip()
+    return "\n\n".join(part for part in (head, kept) if part)
+
+
 def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Leaf]) -> Built:
     """The chapter for *project*. *mathlib_heads* maps a Mathlib declaration to the
     Mathlib-chapter article it heads, for nodes in Mathlib.
@@ -283,13 +300,16 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         for node in nodes:
             if node in owned and node.proof is not None and any(node.end <= at < node.proof.offset for at in between):
                 events.append(Event(node.proof.offset, "proof pointer", node, node.proof.unit))
+    if project.text:
+        events += [Event(node.offset, "left out", node, node.unit) for node in blueprint.graph
+                   if node not in present and not gone(node.unit)]
     events.sort(key=lambda event: event.offset)
     hidden = [event for event in events if gone(event.unit)]
     read_only = {id(event) for event in hidden}
     every_event, events = events, [event for event in events if id(event) not in read_only]
     shown = {id(unit) for event in events for unit in ancestors(event.unit) if unit.level <= 2}
 
-    texts = [text or "" for event in events if event.kind != "proof pointer"
+    texts = [text or "" for event in events if event.kind not in ("proof pointer", "left out")
              for text in ([event.item.text] if isinstance(event.item, Prose)
                           else [event.item.title, event.item.body, *([event.item.proof.title, event.item.proof.body]
                                                                      if event.item.proof else [])])]
@@ -325,7 +345,7 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         for label in [*item.equations, *(label for label, _ in item.floats)]:
             left_out_labels.setdefault(label, item)
 
-    def source_link(text: str, item: Node | Prose) -> str:
+    def source_link(text: str, item: Node | Prose | Unit) -> str:
         stats["refs_to_left_out"] += 1
         return f"[{escape(text)}]({project.source(item.where)[1]})"
 
@@ -341,6 +361,8 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
         if isinstance(target, Unit):
             home = page_unit(target)
             title = writer.plain(target.title)
+            if gone(target):
+                return source_link(title, target)
             return placeholder(title, key(target)) if home is None or id(home) in shown else escape(title)
         if label in left_out_labels:
             item = left_out_labels[label]
@@ -437,8 +459,25 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
             write(home, f"{'#' * min(6, depth + 2)} {escape(writer.plain(sub.title) or 'Untitled')}")
         opened[id(home)] = chain
 
+    trailing: set[int] = set()  # pages whose last text was a left-out node, so its remarks go with it
     for event in every_event:
         node = event.item
+        if event.kind == "left out":
+            home = page(event.unit)
+            if pending.get(id(home)):
+                if not pending[id(home)][-1].startswith("#"):
+                    pending[id(home)][-1] = without_lead_in(pending[id(home)][-1])
+            elif not home.entries:
+                home.prose = without_lead_in(home.prose)
+            trailing.add(id(home))
+            stats["left_out_shown_at"] += 1
+            continue
+        if id(event) not in read_only:
+            home = page(event.unit)
+            if event.kind in ("aside", "aside proof") and id(home) in trailing:
+                read_only.add(id(event))
+            elif event.kind != "proof pointer":
+                trailing.discard(id(home))
         if id(event) in read_only:
             # Left out with its section, but read: its TeX may define macros that later text uses.
             if event.kind == "prose":
