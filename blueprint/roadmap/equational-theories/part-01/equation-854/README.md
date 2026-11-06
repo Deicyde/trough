@@ -51,8 +51,6 @@ Now let $X$ be an alphabet, and $M_X$ the free magma. We let $\Gamma$ be the the
 
 Call a word $w$ *irreducible* if it is not of the form $w = w_1 \diamond w_2$ with $w_2 \to w_1$, and *reducible* otherwise. Clearly if a word $w = w_1 \diamond w_2$ is reducible, then it is equivalent to the shorter word $w_1$. Iterating, we conclude that every word is equivalent to an irreducible word. Such a word is either a generator in $X$, or else a product $w_1 \to w_2$ with $w_2 \not \to w_1$.
 
-We can describe the words equivalent to an irreducible word as follows.
-
 We have two useful corollaries:
 
 - [Unique factorization](unique-factorization.md)

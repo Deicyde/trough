@@ -1,6 +1,6 @@
 # The Dupont equation
 
-Now we consider the Dupont equation, [E63](https://teorth.github.io/equational_theories/implications/?63) $({x = y \diamond (x \diamond (x \diamond y))})$, which can be treated by a greedy translation invariant construction that is more complicated than the one considered for the Asterix law in The Asterix equation.
+Now we consider the Dupont equation, [E63](https://teorth.github.io/equational_theories/implications/?63) $({x = y \diamond (x \diamond (x \diamond y))})$, which can be treated by a greedy translation invariant construction that is more complicated than the one considered for the Asterix law in [The Asterix equation](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L33).
 
 If we adopt a translation-invariant model
 
@@ -51,8 +51,6 @@ We now extend this greedily to $\mathbb{Z}^3 \times \mathbb{Z}$ as follows. Defi
 Thus for instance one can take $(\mathbb{Z}^3,\mathbb{Z}^3,T)$ as a partial solution. We say that a partial solution $(E'_1, E'_2, f')$ is an *extension* of $(E_1,E_2,f)$ if $E_1 \subseteq E'_1$, $E'_2 \subseteq E_2$, and $f'$ agrees with $f$ on $E_2$.
 
 Informally, $E_1$ represents the portion of $\mathbb{Z}^3 \times \mathbb{Z}$ where we have completely resolved the Dupont equation; the set $E_2 \backslash E_1$ represents the portion for which $f$ (and all forward iterates of $f$) have been defined, but the Dupont equation has not yet been verified; and the elements $-h$, $h - f^2(h)$, and $f^2(h) - h$ for $h \in E_2 \backslash E_1$ are the portion where $f$ is not yet defined, but for which one is ready to “promote” these elements to $E_2$ or $E_1$ by defining $f$ appropriately.
-
-The key lemmas are then
 
 Iterating these lemmas in the usual fashion, we can conclude that any partial solution can be completed to a global model of [E63](https://teorth.github.io/equational_theories/implications/?63).
 
