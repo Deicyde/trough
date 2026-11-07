@@ -1,8 +1,3 @@
----
-article_id: af_022510b4bc250b1c63fd6518
-concept: MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group
----
-
 **Burnside's lemma**, also called the Cauchy–Frobenius lemma or the orbit-counting
 lemma, says that when a finite [group](trough:Group) acts on a finite set, the number
 of [orbits](trough:MulAction.orbit) equals the average number of points fixed by an
@@ -18,11 +13,11 @@ For $g \in G$ write
 
 $$X^g = \{\, x \in X : g \cdot x = x \,\}$$
 
-for [the set of points fixed by $g$](lean:MulAction.fixedBy). Two points lie in the
+for the set of points fixed by $g$. Two points lie in the
 same orbit when one is carried to the other by some element of $G$; this
-[relation of lying in a common orbit](lean:MulAction.orbitRel) is an equivalence
+relation of lying in a common orbit is an equivalence
 relation, and $X/G$ denotes its set of classes, the orbits. Then
-[the fixed-point counts sum to the number of orbits times the order of $G$](lean:MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group):
+the fixed-point counts sum to the number of orbits times the order of $G$:
 
 $$\sum_{g \in G} |X^g| = |X/G| \cdot |G|, \qquad\text{equivalently}\qquad |X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|.$$
 
@@ -41,7 +36,7 @@ $$\sum_{g \in G} |X^g| = |X/G| \cdot |G|, \qquad\text{equivalently}\qquad |X/G| 
 - **Conjugation.** Let $G$ act on itself by conjugation. The orbits are the
   [conjugacy classes](trough:ConjClasses), and the points fixed by $g$ are the elements
   commuting with $g$. Summing over $g$ counts commuting ordered pairs, so
-  [the number of commuting pairs equals the number of conjugacy classes times $|G|$](lean:card_comm_eq_card_conjClasses_mul_card).
+  the number of commuting pairs equals the number of conjugacy classes times $|G|$.
   Equivalently, two elements chosen independently and uniformly from $G$ commute
   with probability $k(G)/|G|$, where $k(G)$ is the number of conjugacy classes.
 
@@ -51,26 +46,26 @@ Count the set of pairs $(g, x) \in G \times X$ with $g \cdot x = x$ in two ways.
 Grouping the pairs by $g$ gives $\sum_{g} |X^g|$. Grouping them by $x$ gives
 $\sum_{x} |G_x|$, where the [stabilizer](trough:MulAction.stabilizer)
 $G_x = \{\, g : g \cdot x = x \,\}$ is
-[a subgroup of $G$](lean:MulAction.stabilizer). By the orbit-stabilizer theorem,
-[the size of the orbit of $x$ times the order of $G_x$ is $|G|$](lean:MulAction.card_orbit_mul_card_stabilizer_eq_card_group),
+a subgroup of $G$. By the orbit-stabilizer theorem,
+the size of the orbit of $x$ times the order of $G_x$ is $|G|$,
 so $|G_x| = |G| / |G \cdot x|$. The points of a single orbit $O$ therefore
 contribute $|O| \cdot |G|/|O| = |G|$ to the second sum, and the total is
 $|X/G| \cdot |G|$.
 
 The same argument can be phrased without arithmetic. Points in one orbit have
-[isomorphic stabilizers](lean:MulAction.stabilizerEquivStabilizerOfOrbitRel), and
+isomorphic stabilizers, and
 assembling these identifications with the orbit-stabilizer correspondence yields
-[a bijection between the set of fixed pairs and the product of $X/G$ with $G$](lean:MulAction.sigmaFixedByEquivOrbitsProdGroup).
+a bijection between the set of fixed pairs and the product of $X/G$ with $G$.
 Burnside's lemma is the comparison of the sizes of the two sides.
 
 ## Related concepts
 
 - The [class formula](trough:MulAction.selfEquivSigmaOrbitsQuotientStabilizer) uses the
   same orbit-stabilizer counting to write
-  [$|X|$ as a sum, over the orbits, of $|G|$ divided by the order of a stabilizer](lean:MulAction.card_eq_sum_card_group_div_card_stabilizer).
+  $|X|$ as a sum, over the orbits, of $|G|$ divided by the order of a stabilizer.
 - When $G$ is a $p$-group for a prime $p$, every orbit with more than one point
   has size a positive power of $p$, so
-  [$|X|$ is congruent modulo $p$ to the number of points fixed by all of $G$](lean:IsPGroup.card_modEq_card_fixedPoints).
+  $|X|$ is congruent modulo $p$ to the number of points fixed by all of $G$.
   Mathlib states this for any group in which every element has order a power of
   $p$, acting on a finite set.
 - The Pólya enumeration theorem refines Burnside's lemma for

@@ -1,8 +1,3 @@
----
-article_id: af_e7b04b03907aaeea7998e11a
-concept: MulAction.orbitEquivQuotientStabilizer
----
-
 The **quotient space** $G/H$ of a [group](trough:Group) $G$ by a
 [subgroup](trough:Subgroup) $H$ is the set of left cosets $aH$ of $H$ in $G$.
 It is not a group in general, but $G$ acts on it by left multiplication, and
@@ -20,18 +15,18 @@ identification.
 Let $H$ be a subgroup of a group $G$. Call $a, b \in G$ equivalent when
 $a^{-1}b \in H$; this is an equivalence relation whose classes are the left
 cosets $aH = \{ah : h \in H\}$. The quotient space $G/H$ is the set of these
-classes, so that [$aH = bH$ exactly when $a^{-1}b \in H$](lean:QuotientGroup.eq).
+classes, so that $aH = bH$ exactly when $a^{-1}b \in H$.
 Its number of elements is the [index](trough:Subgroup.index) $[G : H]$.
 
 The group $G$ acts on $G/H$ by
-[$g \cdot (aH) = (ga)H$](lean:MulAction.Quotient.smul_coe). This action is
-[transitive](lean:MulAction.isPretransitive_quotient), since $(ba^{-1}) \cdot
-(aH) = bH$, and [the stabilizer of the coset $H$ itself is
-$H$](lean:MulAction.stabilizer_quotient).
+$g \cdot (aH) = (ga)H$. This action is
+transitive, since $(ba^{-1}) \cdot
+(aH) = bH$, and the stabilizer of the coset $H$ itself is
+$H$.
 
 The right cosets $Ha$ form a second quotient space, but nothing new arises in
 counting: $Ha \mapsto a^{-1}H$ is a well-defined
-[bijection from right cosets to left cosets](lean:QuotientGroup.quotientRightRelEquivQuotientLeftRel).
+bijection from right cosets to left cosets.
 
 ## Orbit-stabilizer theorem
 
@@ -40,17 +35,17 @@ stabilizer $G_x = \{g \in G : g \cdot x = x\}$. The theorem states that
 
 $$G/G_x \to G \cdot x, \qquad gG_x \mapsto g \cdot x$$
 
-is well defined and [a bijection](lean:MulAction.orbitEquivQuotientStabilizer).
+is well defined and a bijection.
 Mathlib states the bijection from the orbit to $G/G_x$, and its inverse
-[sends $gG_x$ to $g \cdot x$](lean:MulAction.orbitEquivQuotientStabilizer_symm_apply).
+sends $gG_x$ to $g \cdot x$.
 The map is compatible with the actions:
-[the image of $g \cdot c$ is $g$ applied to the image of $c$](lean:MulAction.ofQuotientStabilizer_smul)
+the image of $g \cdot c$ is $g$ applied to the image of $c$
 for every coset $c$. Thus every transitive action of $G$ on a nonempty set is, up
 to relabelling the points, the action of $G$ on some quotient space $G/K$.
 
-In terms of size, [the index of $G_x$ equals the number of points of the orbit
-of $x$](lean:MulAction.index_stabilizer). When $G$ is finite,
-[$|G \cdot x| \cdot |G_x| = |G|$](lean:MulAction.card_orbit_mul_card_stabilizer_eq_card_group),
+In terms of size, the index of $G_x$ equals the number of points of the orbit
+of $x$. When $G$ is finite,
+$|G \cdot x| \cdot |G_x| = |G|$,
 so the size of every orbit divides the order of $G$.
 
 ## Proof
@@ -86,11 +81,11 @@ $(g'g) \cdot x = g' \cdot (g \cdot x)$.
 
 - **Lagrange's theorem.** Since the cosets of $H$ all have $|H|$ elements and
   partition $G$,
-  [$|G| = |G/H| \cdot |H|$](lean:Subgroup.card_eq_card_quotient_mul_card_subgroup).
+  $|G| = |G/H| \cdot |H|$.
 - **Class formula.** Splitting a finite set $X$ into orbits and applying the
   theorem to each orbit writes $|X|$ as a sum of indices $[G : G_x]$, one for
   each orbit; in Mathlib this is
-  [a bijection between $X$ and the disjoint union of the quotients $G/G_x$](lean:MulAction.selfEquivSigmaOrbitsQuotientStabilizer),
+  a bijection between $X$ and the disjoint union of the quotients $G/G_x$,
   one $x$ chosen in each orbit.
 - **[Burnside's lemma](trough:MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group).**
   For a finite group acting on a finite set, the average number of points fixed

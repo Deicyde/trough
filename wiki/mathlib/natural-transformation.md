@@ -1,8 +1,3 @@
----
-article_id: af_a2e92639b38f504473e7b17f
-concept: CategoryTheory.NatTrans
----
-
 A **natural transformation** is a morphism between two [functors](trough:CategoryTheory.Functor)
 with the same source and target [categories](trough:CategoryTheory.Category). It assigns to each
 object of the source a morphism in the target, and these morphisms are compatible with every
@@ -14,7 +9,7 @@ functor categories, [adjunctions](trough:CategoryTheory.Adjunction),
 ## Definition
 
 Let $C$ and $D$ be categories and $F, G : C \to D$ functors. A
-[natural transformation $\alpha : F \Rightarrow G$](lean:CategoryTheory.NatTrans) consists of a
+natural transformation $\alpha : F \Rightarrow G$ consists of a
 morphism $\alpha_X : F(X) \to G(X)$ in $D$ for every object $X$ of $C$, called the component of
 $\alpha$ at $X$, such that for every morphism $f : X \to Y$ of $C$ the naturality square commutes:
 
@@ -23,7 +18,7 @@ $$G(f) \circ \alpha_X = \alpha_Y \circ F(f).$$
 Both sides are morphisms $F(X) \to G(Y)$, so the condition says that applying $F$ and then the
 component at $Y$ gives the same result as applying the component at $X$ and then $G$. A natural
 transformation is determined by its components:
-[two natural transformations with the same components are equal](lean:CategoryTheory.NatTrans.ext').
+two natural transformations with the same components are equal.
 
 ## Examples
 
@@ -46,57 +41,57 @@ transformation is determined by its components:
   abelianization.
 - **Cones.** A cone over a diagram $F : J \to C$ with apex $X$ is a family of morphisms from $X$ to
   the objects $F(j)$, compatible with the morphisms of $J$. This is exactly
-  [a natural transformation from the constant functor at $X$ to $F$](lean:CategoryTheory.Limits.Cone)
+  a natural transformation from the constant functor at $X$ to $F$
   (the functor sending every object of $J$ to $X$ and every morphism to $\mathrm{id}_X$), and limits are defined as universal cones.
 
 ## Properties
 
 - **The functor category.** Natural transformations can be composed componentwise: for
   $\alpha : F \Rightarrow G$ and $\beta : G \Rightarrow H$,
-  [the vertical composite](lean:CategoryTheory.NatTrans.vcomp) has components
+  the vertical composite has components
   $(\beta \circ \alpha)_X = \beta_X \circ \alpha_X$, and
-  [the identity transformation](lean:CategoryTheory.NatTrans.id) of $F$ has components the
+  the identity transformation of $F$ has components the
   identities of the objects $F(X)$. With these operations,
-  [functors from $C$ to $D$ and the natural transformations between them form a category](lean:CategoryTheory.Functor.category).
+  functors from $C$ to $D$ and the natural transformations between them form a category.
 - **Natural isomorphisms.** A natural isomorphism is an [isomorphism](trough:CategoryTheory.Iso) in
-  the functor category. [A natural transformation is an isomorphism if and only if each of its components is an isomorphism](lean:CategoryTheory.NatTrans.isIso_iff_isIso_app):
+  the functor category. A natural transformation is an isomorphism if and only if each of its components is an isomorphism:
   the inverses of the components are automatically natural. Similarly,
-  [if every component is an epimorphism, the transformation is an epimorphism](lean:CategoryTheory.NatTrans.epi_of_epi_app)
+  if every component is an epimorphism, the transformation is an epimorphism
   of the functor category, where a morphism $e$ is an epimorphism when $g \circ e = h \circ e$
   implies $g = h$.
 - **Whiskering.** Given $\alpha : G \Rightarrow H$ between functors $D \to E$ and a functor
-  $F : C \to D$, [the transformation with components $\alpha_{F(X)}$](lean:CategoryTheory.Functor.whiskerLeft)
+  $F : C \to D$, the transformation with components $\alpha_{F(X)}$
   goes from $GF$ to $HF$. Given instead $\alpha : G \Rightarrow H$ between functors $C \to D$ and
-  $F : D \to E$, [the components $F(\alpha_X)$](lean:CategoryTheory.Functor.whiskerRight) give a
+  $F : D \to E$, the components $F(\alpha_X)$ give a
   natural transformation from $FG$ to $FH$.
 - **Horizontal composition.** For $\alpha : F \Rightarrow G$ between functors $C \to D$ and
   $\gamma : I \Rightarrow J$ between functors $D \to E$,
-  [the horizontal composite](lean:CategoryTheory.NatTrans.hcomp) $\gamma * \alpha : IF \Rightarrow JG$
+  the horizontal composite $\gamma * \alpha : IF \Rightarrow JG$
   has components $J(\alpha_X) \circ \gamma_{F(X)}$, which by naturality of $\gamma$ also equal
   $\gamma_{G(X)} \circ I(\alpha_X)$. For further transformations $\beta : G \Rightarrow H$ and
   $\delta : J \Rightarrow K$, the two compositions satisfy
-  [the interchange law](lean:CategoryTheory.NatTrans.exchange)
+  the interchange law
 
 $$(\delta \circ \gamma) * (\beta \circ \alpha) = (\delta * \beta) \circ (\gamma * \alpha).$$
 
 - **Transformations of the identity functor.** If $\alpha$ and $\beta$ are natural transformations
   from the identity functor of $C$ to itself, the naturality of $\alpha$ at the morphism $\beta_X$
   gives $\alpha_X \circ \beta_X = \beta_X \circ \alpha_X$, so
-  [such transformations commute](lean:CategoryTheory.NatTrans.id_comm). On abelian groups,
+  such transformations commute. On abelian groups,
   multiplication by a fixed integer is an example.
 - **The Yoneda lemma.** The opposite category of $C$ has the same objects as $C$ and every morphism
   reversed, so a functor $F$ from it to sets assigns a set $F(X)$ to each object $X$ of $C$ and a
   map $F(Y) \to F(X)$ to each morphism $X \to Y$. For such $F$ and an object $X$, sending a
   natural transformation $\eta$ from the represented functor $\mathrm{Hom}(-, X)$ to $F$ to the
   element $\eta_X(\mathrm{id}_X)$ is
-  [a bijection onto $F(X)$](lean:CategoryTheory.yonedaEquiv).
+  a bijection onto $F(X)$.
 
 ## Related concepts
 
 The unit and counit of an [adjunction](trough:CategoryTheory.Adjunction) and the unit and
 multiplication of a [monad](trough:CategoryTheory.Monad) are natural transformations. Two
 categories are equivalent when
-[there are functors in both directions whose composites are naturally isomorphic to the identity functors](lean:CategoryTheory.Equivalence.mk). Categories, functors and natural transformations
+there are functors in both directions whose composites are naturally isomorphic to the identity functors. Categories, functors and natural transformations
 together form the prototypical 2-category, in which natural transformations are the 2-morphisms.
 
 ## In Mathlib

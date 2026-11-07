@@ -1,8 +1,3 @@
----
-article_id: af_1d2c3e9fdbc5a193ec465fd0
-concept: Polynomial.irreducible_of_eisenstein_criterion
----
-
 **Eisenstein's criterion** is a sufficient condition for a [polynomial](trough:Polynomial) to be
 [irreducible](trough:Irreducible), read off from its coefficients alone. In its best-known form it
 says that an integer polynomial whose leading coefficient is not divisible by a prime $p$, whose
@@ -19,20 +14,20 @@ Let $R$ be an integral domain, let $P$ be a [prime ideal](trough:Ideal.IsPrime) 
 $$f = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 \in R[x]$$
 
 have degree $n \ge 1$. Suppose that $f$ is
-[primitive](lean:Polynomial.IsPrimitive), meaning that the only constant polynomials dividing $f$
+primitive, meaning that the only constant polynomials dividing $f$
 are units of $R$. If
 
 - the leading coefficient $a_n$ does not lie in $P$,
 - the coefficients $a_0, a_1, \dots, a_{n-1}$ all lie in $P$, and
 - the constant term $a_0$ does not lie in $P^2$,
 
-then [$f$ is irreducible in $R[x]$](lean:Polynomial.irreducible_of_eisenstein_criterion). A
+then $f$ is irreducible in $R[x]$. A
 polynomial satisfying the three coefficient conditions is said to be
-[Eisenstein at $P$](lean:Polynomial.IsEisensteinAt).
+Eisenstein at $P$.
 
 For $R = \mathbb{Z}$ and $P = (p)$ with $p$ a prime number, the conditions read $p \nmid a_n$,
 $p \mid a_i$ for $i < n$, and $p^2 \nmid a_0$. Primitivity is automatic for a
-[monic polynomial](lean:Polynomial.Monic.isPrimitive), and in general it is needed only for
+monic polynomial, and in general it is needed only for
 irreducibility in $R[x]$ itself: when $R$ is a GCD domain such as $\mathbb{Z}$, it can be dropped
 for irreducibility over the field of fractions (see below). Over an arbitrary integral domain the
 coefficient conditions do not guarantee irreducibility over the field of fractions: in
@@ -51,7 +46,7 @@ it equals $(x - t)(x + t)$.
   $$\Phi_p(x+1) = \frac{(x+1)^p - 1}{x} = \sum_{k=1}^{p} \binom{p}{k} x^{k-1}.$$
   Its leading coefficient is $1$, the binomial coefficients $\binom{p}{k}$ with $1 \le k \le p-1$
   are divisible by $p$, and the constant term is $p$, so
-  [$\Phi_p(x+1)$ is Eisenstein at $p$](lean:cyclotomic_comp_X_add_one_isEisensteinAt).
+  $\Phi_p(x+1)$ is Eisenstein at $p$.
   Substitution of $x + 1$ for $x$ is a ring automorphism of $\mathbb{Z}[x]$, so $\Phi_p$ is
   irreducible.
 - **Shifting.** The same device handles $x^2 + 1$, which is Eisenstein at no prime: replacing $x$
@@ -89,8 +84,8 @@ $a_0 = g(0)\,h(0) \in P^2$, a contradiction.
 Over a GCD domain $R$ (an integral domain in which any two elements have a
 [greatest common divisor](trough:GCDMonoid.gcd); every [unique factorisation
 domain](trough:UniqueFactorizationMonoid), such as $\mathbb{Z}$, is one) with field of fractions
-$K$, [a primitive polynomial is irreducible in $R[x]$ exactly when it is irreducible in
-$K[x]$](lean:Polynomial.IsPrimitive.irreducible_iff_irreducible_map_fraction_map) (Gauss's lemma).
+$K$, a primitive polynomial is irreducible in $R[x]$ exactly when it is irreducible in
+$K[x]$ (Gauss's lemma).
 So a primitive polynomial of positive degree that is Eisenstein at a prime ideal of $R$ is irreducible in $K[x]$.
 Primitivity is not needed for this conclusion: writing $f = c f_1$ with $c \in R$ and $f_1$
 primitive, the element $c$ is not in $P$ because $a_n \notin P$, so $f_1$ is again Eisenstein at
@@ -104,9 +99,9 @@ Eisenstein's criterion is one of several coefficient tests for irreducibility; t
 [rational root theorem](trough:num_dvd_of_is_root) reduces the search for a linear factor over
 $\mathbb{Q}$ to finitely many candidates, which settles irreducibility over $\mathbb{Q}$ in degrees
 $2$ and $3$. The shift used for $\Phi_p$ also works for prime powers: for a prime $p$ and $k \ge 1$,
-[$\Phi_{p^k}(x+1)$ is Eisenstein at $p$](lean:cyclotomic_prime_pow_comp_X_add_one_isEisensteinAt).
+$\Phi_{p^k}(x+1)$ is Eisenstein at $p$.
 Irreducibility of every cyclotomic polynomial needs a different argument:
-[$\Phi_n$ is irreducible over $\mathbb{Z}$ for every $n \ge 1$](lean:Polynomial.cyclotomic.irreducible).
+$\Phi_n$ is irreducible over $\mathbb{Z}$ for every $n \ge 1$.
 
 ## In Mathlib
 
@@ -114,9 +109,9 @@ Mathlib states the criterion for an arbitrary integral domain and an arbitrary p
 ideal, and its conclusion is irreducibility in $R[x]$ itself, which is why primitivity appears as
 a hypothesis; passing to the field of fractions is left to Gauss's lemma. The three coefficient
 conditions are also packaged as a predicate, being Eisenstein at an ideal, which does not include
-positive degree; [a primitive polynomial of positive degree that is Eisenstein at a prime ideal is
-irreducible](lean:Polynomial.IsEisensteinAt.irreducible). The classical criterion is derived as a
-special case of a [more general one](lean:Polynomial.generalizedEisenstein): for an $R$-algebra
+positive degree; a primitive polynomial of positive degree that is Eisenstein at a prime ideal is
+irreducible. The classical criterion is derived as a
+special case of a more general one: for an $R$-algebra
 $K$ that is a field and a monic $q \in R[x]$ whose image in $K[x]$ is irreducible, a primitive
 $f$ of positive degree is irreducible when its leading coefficient is nonzero in $K$, its image in
 $K[x]$ is that leading coefficient times a power of the image of $q$, and the remainder of $f$ on

@@ -1,8 +1,3 @@
----
-article_id: af_cc983ae2de53d398f5bf9a36
-concept: Polynomial.instEuclideanDomain
----
-
 For a [field](trough:Field) $K$, the ring $K[X]$ of [polynomials in one indeterminate](trough:Polynomial) over $K$
 is a [Euclidean domain](trough:EuclideanDomain): any polynomial can be divided by a nonzero
 polynomial, leaving a remainder of smaller degree. This fact, **$K[X]$ is
@@ -14,7 +9,7 @@ adjoining roots.
 
 ## Statement
 
-Let $K$ be a field. [The polynomial ring $K[X]$ is a Euclidean domain](lean:Polynomial.instEuclideanDomain),
+Let $K$ be a field. The polynomial ring $K[X]$ is a Euclidean domain,
 with the degree as its size function. Concretely, for polynomials $f$ and $g$ with
 $g \neq 0$ there are polynomials $q$ (the quotient) and $r$ (the remainder) with
 
@@ -22,17 +17,17 @@ $$f = g\,q + r, \qquad \deg r < \deg g,$$
 
 where the zero polynomial is taken to have degree smaller than every natural number.
 The pair $(q, r)$ is unique, as shown in the Proof section. In Mathlib's notation the
-existence part consists of the identity [$f = g\,(f / g) + f \bmod g$](lean:EuclideanDomain.div_add_mod), valid in
+existence part consists of the identity $f = g\,(f / g) + f \bmod g$, valid in
 every Euclidean domain, and the bound
-[$\deg (f \bmod g) < \deg g$ for $g \neq 0$](lean:Polynomial.degree_mod_lt).
+$\deg (f \bmod g) < \deg g$ for $g \neq 0$.
 
 ## Examples
 
 - Over the rationals, dividing $X^3 + 2X + 1$ by $X^2 + 1$ gives
   $X^3 + 2X + 1 = (X^2 + 1)\,X + (X + 1)$, with remainder of degree $1 < 2$.
 - Dividing by a linear polynomial $X - a$ leaves a constant remainder, and that
-  constant is the value of the polynomial at $a$: [the remainder of $f$ on division by $X - a$ is $f(a)$](lean:Polynomial.mod_X_sub_C_eq_C_eval).
-  Hence [$X - a$ divides $f$ if and only if $a$ is a root of $f$](lean:Polynomial.dvd_iff_isRoot),
+  constant is the value of the polynomial at $a$: the remainder of $f$ on division by $X - a$ is $f(a)$.
+  Hence $X - a$ divides $f$ if and only if $a$ is a root of $f$,
   the content of the [factor and remainder theorems](trough:Polynomial.dvd_iff_isRoot).
 - The Euclidean algorithm applied to $X^2 - 1$ and $X^2 - 3X + 2$ over the rationals
   runs $X^2 - 1 = (X^2 - 3X + 2) \cdot 1 + (3X - 3)$ and then
@@ -46,7 +41,7 @@ every Euclidean domain, and the bound
 
 ## Consequences
 
-- **Principal ideals.** [Every Euclidean domain is a principal ideal domain](lean:EuclideanDomain.instIsPrincipalIdealRing),
+- **Principal ideals.** Every Euclidean domain is a principal ideal domain,
   so every ideal of $K[X]$ consists of the multiples of a single polynomial; see
   [principal ideal domain](trough:Submodule.IsPrincipal).
 - **Unique factorization.** Being a principal ideal domain, $K[X]$ is a
@@ -55,16 +50,16 @@ every Euclidean domain, and the bound
   uniquely up to order and constant factors.
 - **Greatest common divisors and Bézout's identity.** The
   [Euclidean algorithm](trough:EuclideanDomain.gcd) produces a polynomial $d$ that
-  [divides both $f$ and $g$](lean:EuclideanDomain.gcd_dvd) and is
-  [divisible by every common divisor of $f$ and $g$](lean:EuclideanDomain.dvd_gcd);
+  divides both $f$ and $g$ and is
+  divisible by every common divisor of $f$ and $g$;
   running it backwards gives
-  [polynomials $a$ and $b$ with $d = f a + g b$](lean:EuclideanDomain.gcd_eq_gcd_ab).
-- **Units.** [A polynomial is a unit exactly when it has degree $0$](lean:Polynomial.isUnit_iff_degree_eq_zero),
+  polynomials $a$ and $b$ with $d = f a + g b$.
+- **Units.** A polynomial is a unit exactly when it has degree $0$,
   that is, when it is a nonzero constant.
 - **Maximal ideals and field extensions.** For a nonzero polynomial $f$,
-  [$f$ is irreducible if and only if the ideal it generates is maximal](lean:Ideal.irreducible_iff_isMaximal_span_singleton)
+  $f$ is irreducible if and only if the ideal it generates is maximal
   (see [irreducible element](trough:Irreducible) and [maximal ideal](trough:Ideal.IsMaximal)).
-  Hence [the quotient $K[X]/(f)$ by an irreducible $f$ is a field](lean:AdjoinRoot.instField),
+  Hence the quotient $K[X]/(f)$ by an irreducible $f$ is a field,
   the [rupture field](trough:AdjoinRoot) of $f$, in which the class of $X$ is a root of $f$.
 
 ## Proof
@@ -77,24 +72,24 @@ $\deg r < m$, so $f = g\,(q' + a c^{-1} X^{n-m}) + r$. For uniqueness, if
 $g q + r = g q' + r'$ then $g\,(q - q') = r' - r$; the right side has degree less
 than $m$. If $h = q - q'$ were nonzero, then $c$ times the leading coefficient of $h$
 would be nonzero, because $c$ is invertible, and
-[when the product of the leading coefficients is nonzero, the degree of a product is the sum of the degrees](lean:Polynomial.degree_mul'),
+when the product of the leading coefficients is nonzero, the degree of a product is the sum of the degrees,
 so $g h$ would have degree at least $m$. Hence $q = q'$ and $r = r'$. Finally, $K[X]$
 is an integral domain, as a Euclidean domain must be: over a field
-[the degree of a product is the sum of the degrees](lean:Polynomial.degree_mul), so a
+the degree of a product is the sum of the degrees, so a
 product of nonzero polynomials is nonzero.
 
 In the division argument the only use of the field hypothesis is to invert the
 leading coefficient of $g$.
 Over any commutative ring the same argument divides by a polynomial whose leading
 coefficient is $1$, and for such a monic divisor
-[the quotient and remainder are again unique](lean:Polynomial.div_modByMonic_unique).
+the quotient and remainder are again unique.
 
 ## Related concepts
 
 The integers are the other basic Euclidean domain, with the absolute value as size
 function ([$\mathbb{Z}$ is a Euclidean ring](trough:Int.euclideanDomain)). For an
 integral domain $R$ the property singles out fields:
-[if $R[X]$ is a principal ideal domain, then $R$ is a field](lean:Ideal.IsField.of_isPrincipalIdealRing_polynomial),
+if $R[X]$ is a principal ideal domain, then $R$ is a field,
 so $R[X]$ is Euclidean only when $R$ is a field. Rings such as $\mathbb{Z}[X]$ and
 the [polynomial rings](trough:MvPolynomial) in two or more indeterminates over a field
 are not principal ideal domains, but they keep unique factorization

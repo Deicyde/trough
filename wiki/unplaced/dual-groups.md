@@ -1,8 +1,3 @@
----
-article_id: af_c822a925bd9b15894ec09a65
-concept: undergrad:Group Theory/Representation theory of finite groups/dual groups
----
-
 The **dual group** of a finite abelian [group](trough:Group) $G$ is the group $\widehat{G}$ of
 its characters: the [homomorphisms](trough:MonoidHom) from $G$ to the multiplicative group
 $\mathbb{C}^\times$ of nonzero complex numbers, multiplied pointwise. A finite abelian group has
@@ -23,23 +18,23 @@ $\chi(g)^{-1} = \overline{\chi(g)}$.
 
 The product of two characters is $(\chi\psi)(g) = \chi(g)\psi(g)$, the identity is the trivial
 character $g \mapsto 1$, and the inverse of $\chi$ is $g \mapsto \overline{\chi(g)}$. In general,
-[the homomorphisms from a group into a commutative group form a commutative group under pointwise
-multiplication](lean:MonoidHom.instCommGroup); the dual group $\widehat{G}$ is this group for the
+the homomorphisms from a group into a commutative group form a commutative group under pointwise
+multiplication; the dual group $\widehat{G}$ is this group for the
 target $\mathbb{C}^\times$.
 
 ## Examples
 
 - **Cyclic groups.** If $G$ is cyclic of order $n$ with generator $g$, a character is fixed by
   $\chi(g)$, which may be any $n$-th root of unity. Thus
-  [the dual of a cyclic group of order $n$ is isomorphic to the group of $n$-th roots of
-  unity](lean:IsCyclic.monoidHom_mulEquiv_rootsOfUnity), itself cyclic of order $n$. Writing
+  the dual of a cyclic group of order $n$ is isomorphic to the group of $n$-th roots of
+  unity, itself cyclic of order $n$. Writing
   $\zeta = e^{2\pi i/n}$, the characters are $\chi_k(g^j) = \zeta^{jk}$ for $k = 0, \dots, n-1$.
 - **The Klein four-group.** For $V = \{e, a, b, c\}$ with $a^2 = b^2 = e$ and $ab = c$, each
   character takes values $\pm 1$. Besides the trivial character there are three, one for each
   element $x \in \{a, b, c\}$, sending $x$ to $1$ and the other two non-identity elements to $-1$.
 - **Products.** A character of $G_1 \times \dots \times G_k$ is a product of characters of the
-  factors, so [the dual of a finite product is the product of the
-  duals](lean:Pi.monoidHomMulEquiv) (see [direct product of groups](trough:Prod.instGroup)).
+  factors, so the dual of a finite product is the product of the
+  duals (see [direct product of groups](trough:Prod.instGroup)).
 - **Dirichlet characters.** The characters of the group of units modulo $m$ correspond to the
   Dirichlet characters modulo $m$: extend each by zero to the residues not coprime to $m$.
 
@@ -47,33 +42,33 @@ target $\mathbb{C}^\times$.
 
 Let $G$ be a finite abelian group.
 
-- **Size and shape.** [$\widehat{G}$ has the same order as
-  $G$](lean:CommGroup.card_monoidHom_of_hasEnoughRootsOfUnity); indeed
-  [$\widehat{G}$ is isomorphic to $G$](lean:CommGroup.monoidHom_mulEquiv_of_hasEnoughRootsOfUnity),
+- **Size and shape.** $\widehat{G}$ has the same order as
+  $G$; indeed
+  $\widehat{G}$ is isomorphic to $G$,
   though no isomorphism is canonical: one depends on choices of generators.
-- **Separation.** [If $g \neq e$, some character $\chi$ has
-  $\chi(g) \neq 1$](lean:CommGroup.exists_apply_ne_one_of_hasEnoughRootsOfUnity).
+- **Separation.** If $g \neq e$, some character $\chi$ has
+  $\chi(g) \neq 1$.
 - **Double duality.** Each $g \in G$ defines a character of $\widehat{G}$ by
-  $\chi \mapsto \chi(g)$, and [this evaluation map is an isomorphism from $G$ onto the dual of
-  $\widehat{G}$](lean:CommGroup.monoidHomMonoidHomEquiv); Mathlib states it as the inverse
+  $\chi \mapsto \chi(g)$, and this evaluation map is an isomorphism from $G$ onto the dual of
+  $\widehat{G}$; Mathlib states it as the inverse
   isomorphism, from the double dual to $G$. Unlike the isomorphism
   $G \cong \widehat{G}$, it involves no choices.
 - **Orthogonality.** For a character $\chi$,
   $$\sum_{g \in G} \chi(g) = \begin{cases} |G| & \text{if } \chi \text{ is trivial,} \\ 0 & \text{otherwise}\end{cases}$$
-  ([the character sum formula](lean:sum_hom_units)), and dually $\sum_{\chi} \chi(g)$ is $|G|$
+  (the character sum formula), and dually $\sum_{\chi} \chi(g)$ is $|G|$
   for $g = e$ and $0$ otherwise. Hence for the inner product
   $\langle f_1, f_2 \rangle = |G|^{-1} \sum_g f_1(g)\overline{f_2(g)}$ distinct characters are
   orthogonal and each has norm $1$; as there are $|G|$ of them, they form an orthonormal basis of
   the space of complex functions on $G$.
 - **Subgroups.** For a subgroup $H$, its annihilator $H^\perp$ is the subgroup of characters
   trivial on $H$. It is the dual of $G/H$, so
-  [$|H^\perp|$ equals the index $[G : H]$](lean:CommGroup.card_subgroupOrderIsoSubgroupMonoidHom)
+  $|H^\perp|$ equals the index $[G : H]$
   (see [index](trough:Subgroup.index)), and
-  [$H \mapsto H^\perp$ is an inclusion-reversing bijection between the subgroups of $G$ and those
-  of $\widehat{G}$](lean:CommGroup.subgroupOrderIsoSubgroupMonoidHom). An element lies in $H$
-  [exactly when every character trivial on $H$ is trivial at
-  it](lean:CommGroup.forall_monoidHom_apply_eq_one_iff), and
-  [every character of $H$ extends to a character of $G$](lean:MonoidHom.domRestrict_surjective).
+  $H \mapsto H^\perp$ is an inclusion-reversing bijection between the subgroups of $G$ and those
+  of $\widehat{G}$. An element lies in $H$
+  exactly when every character trivial on $H$ is trivial at
+  it, and
+  every character of $H$ extends to a character of $G$.
 
 ## Proof
 
@@ -118,11 +113,11 @@ the statements here. The character sum formula is stated more generally, for
 homomorphisms from any finite group into the multiplicative monoid of an integral domain such as
 $\mathbb{C}$; a character as defined here becomes one after composing with the inclusion of
 $\mathbb{C}^\times$ in $\mathbb{C}$. The additive form takes characters of a finite additive abelian group with
-complex values: [the number of characters equals the order of the group](lean:AddChar.card_eq),
-[the group is isomorphic to its double dual](lean:AddChar.doubleDualEquiv), and [the characters
-form a basis of the complex functions on the group](lean:AddChar.complexBasis). The two forms are
-developed separately. For topological groups Mathlib defines [the Pontryagin
-dual](lean:PontryaginDual) as the continuous homomorphisms into the circle with the compact-open
+complex values: the number of characters equals the order of the group,
+the group is isomorphic to its double dual, and the characters
+form a basis of the complex functions on the group. The two forms are
+developed separately. For topological groups Mathlib defines the Pontryagin
+dual as the continuous homomorphisms into the circle with the compact-open
 topology, but it does not prove the Pontryagin duality theorem.
 
 ## Depends on

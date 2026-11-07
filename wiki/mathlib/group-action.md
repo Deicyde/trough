@@ -1,8 +1,3 @@
----
-article_id: af_462c8297900707cfbe86ff5d
-concept: MulAction
----
-
 A **group action** of a [group](trough:Group) $G$ on a set $X$ lets each element of $G$
 move the points of $X$, in a way that respects the group law: acting by a product is the
 same as acting by the factors one after the other. Groups usually arise as groups of
@@ -21,18 +16,18 @@ such that for all $g, h \in G$ and $x \in X$
 $$e \cdot x = x, \qquad (gh) \cdot x = g \cdot (h \cdot x),$$
 
 where $e$ is the identity element. These two axioms are
-[the definition of an action](lean:MulAction). A set with an action of $G$ is called a
+the definition of an action. A set with an action of $G$ is called a
 $G$-set.
 
 Equivalently, an action is a [homomorphism](trough:MonoidHom) from $G$ to the
 [group of permutations](trough:Equiv.Perm) of $X$. Each $g$ gives a bijection
 $x \mapsto g \cdot x$, whose inverse is the action of $g^{-1}$, so
-[each element acts as a permutation of $X$](lean:MulAction.toPerm), and the two axioms say
-precisely that [the assignment of $g$ to its permutation is a group homomorphism](lean:MulAction.toPermHom).
+each element acts as a permutation of $X$, and the two axioms say
+precisely that the assignment of $g$ to its permutation is a group homomorphism.
 Conversely, a homomorphism from $G$ into the monoid of all maps $X \to X$ under composition
-(its image then consists of permutations) [defines an action](lean:MulAction.ofEndHom).
+(its image then consists of permutations) defines an action.
 Composing an action with a homomorphism $H \to G$
-[gives an action of $H$](lean:MulAction.compHom); in particular every
+gives an action of $H$; in particular every
 [subgroup](trough:Subgroup) of $G$ acts on every $G$-set by restriction.
 
 Right actions, written $x \cdot g$ with $x \cdot (gh) = (x \cdot g) \cdot h$, are defined
@@ -41,12 +36,12 @@ symmetrically; setting $g \cdot x = x \cdot g^{-1}$ turns a right action into a 
 ## Examples
 
 - The permutation group of a set $X$
-  [acts on $X$ by evaluation](lean:Equiv.Perm.applyMulAction), $\sigma \cdot x = \sigma(x)$.
-- Every group [acts on itself by left multiplication](lean:Monoid.toMulAction),
+  acts on $X$ by evaluation, $\sigma \cdot x = \sigma(x)$.
+- Every group acts on itself by left multiplication,
   $g \cdot h = gh$. Since $gh = h$ forces $g = e$, the corresponding homomorphism into the
   permutations of $G$ is injective, which is [Cayley's theorem](trough:Equiv.Perm.subgroupOfMulAction).
 - A group acts on itself by conjugation,
-  [$g \cdot h = ghg^{-1}$](lean:ConjAct.toConjAct_smul). Its orbits are the
+  $g \cdot h = ghg^{-1}$. Its orbits are the
   [conjugacy classes](trough:ConjClasses), and the stabilizer of $h$ is its centralizer.
 - For a subgroup $H$ of $G$, left multiplication $g \cdot xH = gxH$ is an action of $G$ on the
   set of left cosets of $H$.
@@ -56,33 +51,33 @@ symmetrically; setting $g \cdot x = x \cdot g^{-1}$ turns a right action into a 
 ## Orbits, stabilizers and kinds of action
 
 The [orbit](trough:MulAction.orbit) of a point $x$ is
-[the set $G \cdot x = \{ g \cdot x : g \in G \}$](lean:MulAction.orbit). Lying in the same
-orbit [is an equivalence relation](lean:MulAction.orbitRel), so the orbits partition $X$;
+the set $G \cdot x = \{ g \cdot x : g \in G \}$. Lying in the same
+orbit is an equivalence relation, so the orbits partition $X$;
 the set of orbits is written $X/G$.
 
 The [stabilizer](trough:MulAction.stabilizer) of $x$ is
-[the subgroup $G_x = \{ g \in G : g \cdot x = x \}$](lean:MulAction.stabilizer). Points in one
+the subgroup $G_x = \{ g \in G : g \cdot x = x \}$. Points in one
 orbit have conjugate stabilizers:
-[$G_{g \cdot x} = g\,G_x\,g^{-1}$](lean:MulAction.stabilizer_smul_eq_stabilizer_map_conj).
-The [points fixed by every element of $G$](lean:MulAction.fixedPoints) are those whose orbit is
+$G_{g \cdot x} = g\,G_x\,g^{-1}$.
+The points fixed by every element of $G$ are those whose orbit is
 a single point.
 
 An action is **transitive** if it has exactly one orbit, that is, $X$ is nonempty and
-[any point can be carried to any other](lean:MulAction.IsPretransitive). It is **faithful**
-if [distinct elements of $G$ act differently](lean:FaithfulSMul), which for a group means that
+any point can be carried to any other. It is **faithful**
+if distinct elements of $G$ act differently, which for a group means that
 only the identity fixes every point; a faithful action then makes the homomorphism to the
-permutations of $X$ [injective](lean:MulAction.toPerm_injective), and conversely. For nonempty
+permutations of $X$ injective, and conversely. For nonempty
 $X$, the action of the permutation group of $X$ on $X$ is both transitive and faithful.
 
 ## Orbit–stabilizer theorem
 
 For each point $x$, the map $gG_x \mapsto g \cdot x$ is
-[a bijection from the left cosets of $G_x$ onto the orbit of $x$](lean:MulAction.orbitEquivQuotientStabilizer).
+a bijection from the left cosets of $G_x$ onto the orbit of $x$.
 It is well defined and injective because $g \cdot x = h \cdot x$ holds exactly when
 $g^{-1}h \in G_x$, and it is surjective by the definition of the orbit. Hence the size of
-the orbit is [the index of the stabilizer](lean:MulAction.index_stabilizer) (see
+the orbit is the index of the stabilizer (see
 [index of a subgroup](trough:Subgroup.index)), and for a finite
-group [the size of the orbit times the order of the stabilizer is the order of the group](lean:MulAction.card_orbit_mul_card_stabilizer_eq_card_group):
+group the size of the orbit times the order of the stabilizer is the order of the group:
 
 $$|G \cdot x|\,|G_x| = |G|.$$
 

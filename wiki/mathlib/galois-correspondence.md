@@ -1,8 +1,3 @@
----
-article_id: af_714e0da6589ec6693a6ae524
-concept: IsGalois.intermediateFieldEquivSubgroup
----
-
 The **Galois correspondence**, also called the fundamental theorem of Galois theory,
 says that for a finite Galois extension of [fields](trough:Field) $E/F$ the intermediate
 fields of the extension are in one-to-one, inclusion-reversing correspondence with the
@@ -15,37 +10,37 @@ basis of the classical applications of Galois theory, such as the
 
 Let $E/F$ be a field extension. Its Galois group $\mathrm{Gal}(E/F)$ is the group of
 field automorphisms of $E$ that fix every element of $F$. The extension is Galois if it is
-[normal and separable](lean:isGalois_iff): every element of $E$ is algebraic over $F$, and its
+normal and separable: every element of $E$ is algebraic over $F$, and its
 minimal polynomial over $F$ splits into linear factors in $E$ and has no repeated roots. For an extension of
-finite degree, [being Galois is equivalent](lean:IsGalois.tfae) to each of: the elements of
+finite degree, being Galois is equivalent to each of: the elements of
 $E$ fixed by all of $\mathrm{Gal}(E/F)$ are exactly those of $F$; the group has exactly
 $[E:F]$ elements, where the degree $[E:F]$ is the dimension of $E$ as a vector space over $F$; $E$ is the [splitting field](trough:Polynomial.SplittingField) of a
 [separable polynomial](trough:Polynomial.Separable) over $F$.
 
 To a subgroup $H$ of $\mathrm{Gal}(E/F)$ attach its
-[fixed field](lean:IntermediateField.fixedField)
+fixed field
 $E^H = \{x \in E : \sigma(x) = x \text{ for all } \sigma \in H\}$, and to an intermediate
 field $F \subseteq K \subseteq E$ attach the
-[subgroup of automorphisms fixing $K$ pointwise](lean:IntermediateField.fixingSubgroup),
-which is [isomorphic to $\mathrm{Gal}(E/K)$](lean:IntermediateField.fixingSubgroupEquiv)
+subgroup of automorphisms fixing $K$ pointwise,
+which is isomorphic to $\mathrm{Gal}(E/K)$
 and is denoted that way. For any extension, $K \subseteq E^H$ holds
-[exactly when $H \subseteq \mathrm{Gal}(E/K)$](lean:IntermediateField.le_fixedField_iff_le_fixingSubgroup),
+exactly when $H \subseteq \mathrm{Gal}(E/K)$,
 so both maps reverse inclusions.
 
 **Theorem.** If $E/F$ is a finite Galois extension, then $K \mapsto \mathrm{Gal}(E/K)$ and
 $H \mapsto E^H$ are mutually inverse,
-[inclusion-reversing bijections](lean:IsGalois.intermediateFieldEquivSubgroup) between the
+inclusion-reversing bijections between the
 intermediate fields of $E/F$ and the subgroups of $\mathrm{Gal}(E/F)$. Moreover, if $K$
 corresponds to $H$, then
 
 $$|H| = [E:K], \qquad [K:F] = [\mathrm{Gal}(E/F) : H].$$
 
-Both formulas are in Mathlib ([the first](lean:IsGalois.card_fixingSubgroup_eq_finrank),
-[the second](lean:IntermediateField.finrank_eq_fixingSubgroup_index)); the right-hand
+Both formulas are in Mathlib (the first,
+the second); the right-hand
 side of the second is the [index](trough:Subgroup.index) of $H$. Finally, $K$ is Galois over
-$F$ [if and only if $H$ is a normal subgroup](lean:InfiniteGalois.normal_iff_isGalois) of
+$F$ if and only if $H$ is a normal subgroup of
 $\mathrm{Gal}(E/F)$, and in that case
-[restriction to $K$ induces an isomorphism](lean:IsGalois.normalAutEquivQuotient) from the
+restriction to $K$ induces an isomorphism from the
 [quotient group](trough:QuotientGroup.Quotient.group) $\mathrm{Gal}(E/F)/H$ onto $\mathrm{Gal}(K/F)$.
 
 ## Examples
@@ -69,43 +64,43 @@ $\mathrm{Gal}(E/F)$, and in that case
 ## Properties
 
 - **Extreme cases.** The whole field $E$ corresponds to the
-  [trivial subgroup](lean:IntermediateField.fixingSubgroup_top) and $F$ to the
-  [whole group](lean:IntermediateField.fixingSubgroup_bot); for a finite Galois extension the
-  [fixed field of the whole group is $F$](lean:IsGalois.fixedField_top).
+  trivial subgroup and $F$ to the
+  whole group; for a finite Galois extension the
+  fixed field of the whole group is $F$.
 - **Lattice operations.** Since the bijection reverses order, it exchanges joins and meets:
   the subgroup fixing the compositum $KL$ is
-  [the intersection of the subgroups fixing $K$ and $L$](lean:IntermediateField.fixingSubgroup_sup).
+  the intersection of the subgroups fixing $K$ and $L$.
 - **Conjugation.** For $\sigma$ in the Galois group, the subgroup fixing $\sigma(K)$ is
-  [the conjugate $\sigma\,\mathrm{Gal}(E/K)\,\sigma^{-1}$](lean:IsGalois.map_fixingSubgroup),
+  the conjugate $\sigma\,\mathrm{Gal}(E/K)\,\sigma^{-1}$,
   so conjugate subgroups correspond to conjugate fields, as in the cubic example.
 
 ## Proof
 
 The two halves use different hypotheses. Let $H$ be a subgroup of $\mathrm{Gal}(E/F)$ with
 $E/F$ finite. Every element of $H$ fixes $E^H$, so $H \subseteq \mathrm{Gal}(E/E^H)$. A finite
-extension has [at most as many automorphisms as its degree](lean:AlgEquiv.card_le); applied to
+extension has at most as many automorphisms as its degree; applied to
 $E/E^H$, which is finite because $E/F$ is, this bounds $|\mathrm{Gal}(E/E^H)|$ by $[E:E^H]$.
-Artin's theorem gives [$[E:E^H] = |H|$](lean:IntermediateField.finrank_fixedField_eq_card),
+Artin's theorem gives $[E:E^H] = |H|$,
 so $\mathrm{Gal}(E/E^H)$ has at most $|H|$ elements and
-[equals $H$](lean:IntermediateField.fixingSubgroup_fixedField). This half needs no Galois
+equals $H$. This half needs no Galois
 hypothesis.
 
 Conversely, let $K$ be an intermediate field. Clearly $K \subseteq E^{\mathrm{Gal}(E/K)}$.
 Since $E$ is Galois over $F$, it is
-[also Galois over $K$](lean:IsGalois.tower_top_of_isGalois), so
-$|\mathrm{Gal}(E/K)| = [E:K]$ ([the count for Galois extensions](lean:IsGalois.card_aut_eq_finrank)).
+also Galois over $K$, so
+$|\mathrm{Gal}(E/K)| = [E:K]$ (the count for Galois extensions).
 By Artin's theorem $E$ has the same degree $[E:K]$ over the larger field
 $E^{\mathrm{Gal}(E/K)}$, and the tower law forces the two fields to be equal:
-[$K$ is the fixed field of $\mathrm{Gal}(E/K)$](lean:IsGalois.fixedField_fixingSubgroup).
+$K$ is the fixed field of $\mathrm{Gal}(E/K)$.
 The two maps are therefore inverse, and they reverse inclusions.
 
 ## Generalizations
 
 For a Galois extension of infinite degree, every intermediate field is still
-[the fixed field of its subgroup](lean:InfiniteGalois.fixedField_fixingSubgroup), but in general
+the fixed field of its subgroup, but in general
 not every subgroup arises this way. The Galois group carries a natural profinite topology, the
 Krull topology, and intermediate fields correspond
-[bijectively to the closed subgroups](lean:InfiniteGalois.IntermediateFieldEquivClosedSubgroup).
+bijectively to the closed subgroups.
 
 For an arbitrary extension the two maps still form a Galois connection between ordered sets,
 as the inclusion criterion in the statement shows; for an extension of finite degree, the

@@ -1,8 +1,3 @@
----
-article_id: af_9445789111bab43843bd1ec0
-concept: FDRep.char_orthonormal
----
-
 The **orthogonality of characters** is the theorem that the
 [characters](trough:FDRep.character) of the
 [irreducible representations](trough:Representation.IsIrreducible) of a finite
@@ -27,7 +22,7 @@ The substitution $g \mapsto g^{-1}$ shows that this pairing is symmetric. If $V$
 and $W$ are irreducible finite-dimensional
 [representations](trough:Representation) of $G$ over $k$, with characters
 $\chi_V$ and $\chi_W$, then
-[$\langle \chi_V, \chi_W \rangle$ equals $1$ if $V$ and $W$ are isomorphic and $0$ otherwise](lean:FDRep.char_orthonormal).
+$\langle \chi_V, \chi_W \rangle$ equals $1$ if $V$ and $W$ are isomorphic and $0$ otherwise.
 
 Over the complex numbers the pairing can be written with complex conjugation.
 Each $\rho(g)$ has finite order, so its eigenvalues are roots of unity, and the
@@ -59,15 +54,15 @@ $\frac{1}{|G|}\sum_g \varphi(g)\overline{\psi(g)}$, which explains the name.
 
 - **The general formula.** For finite-dimensional representations $V$ and $W$,
   not necessarily irreducible, and any field $k$ in which $|G|$ is invertible,
-  [$\langle \chi_W, \chi_V \rangle$ is the dimension of the space of $G$-equivariant linear maps from $V$ to $W$, read as an element of $k$](lean:FDRep.scalar_product_char_eq_finrank_equivariant).
+  $\langle \chi_W, \chi_V \rangle$ is the dimension of the space of $G$-equivariant linear maps from $V$ to $W$, read as an element of $k$.
   Taking $V$ to be the trivial one-dimensional representation, whose character
   is constantly $1$, the average of $\chi_W$ over $G$ is
-  [the dimension of the subspace of vectors fixed by $G$](lean:FDRep.average_char_eq_finrank_invariants),
+  the dimension of the subspace of vectors fixed by $G$,
   again read in $k$.
 - **Linear independence.** Under the hypotheses of the statement, characters
   are constant on
   [conjugacy classes](trough:ConjClasses), since
-  [$\chi_V(hgh^{-1}) = \chi_V(g)$ for all $g, h$](lean:FDRep.char_conj). If
+  $\chi_V(hgh^{-1}) = \chi_V(g)$ for all $g, h$. If
   $\chi_1, \dots, \chi_r$ are the characters of pairwise non-isomorphic
   irreducible representations and $\sum_i a_i \chi_i = 0$, pairing with $\chi_j$
   gives $a_j = 0$. So these characters are linearly independent in the space of
@@ -96,13 +91,13 @@ dimension of its image (read in $k$), so the average of $\chi_U$ equals $\dim U^
 
 Second, the space of all linear maps from $W$ to $V$ is a representation, with
 $g$ acting by $f \mapsto \rho_V(g) \circ f \circ \rho_W(g)^{-1}$. Its
-[character at $g$ is $\chi_W(g^{-1})\,\chi_V(g)$](lean:FDRep.char_linHom), and its
+character at $g$ is $\chi_W(g^{-1})\,\chi_V(g)$, and its
 fixed vectors are exactly the $G$-equivariant maps. The first step therefore
 gives $\langle \chi_V, \chi_W \rangle = \dim \operatorname{Hom}_G(W, V)$.
 
 Third, [Schur's lemma](trough:FDRep.finrank_hom_simple_simple) over an
 algebraically closed field says that for irreducible $V$ and $W$
-[the space of $G$-equivariant maps between them has dimension $1$ if they are isomorphic and $0$ otherwise](lean:FDRep.finrank_hom_simple_simple).
+the space of $G$-equivariant maps between them has dimension $1$ if they are isomorphic and $0$ otherwise.
 Combining the second and third steps, $\langle \chi_V, \chi_W \rangle = \dim \operatorname{Hom}_G(W, V)$
 is $1$ if $W \cong V$, equivalently $V \cong W$, and $0$ otherwise.
 
@@ -127,7 +122,7 @@ characteristic is an assumption that the order of the group is invertible in
 the field. The pairing is the one above with $g^{-1}$, with no complex
 conjugation, so it makes sense over any field, and the two sides are equal as
 elements of the field, the right side being its $1$ or $0$. Mathlib also has
-[a version for irreducible representations on modules that are not bundled into a category](lean:Representation.char_orthonormal),
+a version for irreducible representations on modules that are not bundled into a category,
 where finite-dimensionality is not assumed but follows from irreducibility. The
 general formula and the fixed-vector formula do not need the field to be
 algebraically closed; their right sides are dimensions cast into the field, so

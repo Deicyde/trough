@@ -1,8 +1,3 @@
----
-article_id: af_a2dc53437d42295eff959609
-concept: 1000:Q909517
----
-
 The **Feit–Thompson theorem**, also called the odd order theorem, says that every
 finite [group](trough:Group) of odd order is solvable. Equivalently, every
 non-abelian finite [simple group](trough:IsSimpleGroup) has even order. It is a
@@ -16,8 +11,8 @@ centralizers.
 A group $G$ is solvable if its derived series
 $$G = G^{(0)} \supseteq G^{(1)} \supseteq G^{(2)} \supseteq \cdots, \qquad G^{(k+1)} = [G^{(k)}, G^{(k)}],$$
 in which each term is the commutator subgroup of the one before, reaches the trivial
-subgroup after finitely many steps ([solvable group](lean:Group.IsSolvable),
-[derived series](lean:Subgroup.derivedSeries)). Equivalently, $G$ has a finite chain
+subgroup after finitely many steps (solvable group,
+derived series). Equivalently, $G$ has a finite chain
 of subgroups $1 = G_0 \le G_1 \le \cdots \le G_n = G$, each
 [normal](trough:Subgroup.Normal) in the next, whose successive
 [quotients](trough:QuotientGroup.Quotient.group) $G_{i+1}/G_i$ are abelian.
@@ -26,22 +21,22 @@ of subgroups $1 = G_0 \le G_1 \le \cdots \le G_n = G$, each
 solvable.
 
 The two formulations are equivalent. A finite simple group is solvable exactly when
-it is abelian, since [a simple group is solvable if and only if it is
-commutative](lean:IsSimpleGroup.comm_iff_isSolvable), and [an abelian group is
-simple if and only if its order is prime](lean:CommGroup.is_simple_iff_prime_card).
+it is abelian, since a simple group is solvable if and only if it is
+commutative, and an abelian group is
+simple if and only if its order is prime.
 So the theorem says that the only simple groups of odd order are the cyclic groups
 of odd prime order. Conversely, if every simple group of odd order is cyclic of
 prime order, then a finite group of odd order is solvable by induction on its order,
-because [a group is solvable exactly when a normal subgroup and the corresponding
-quotient both are](lean:Group.isSolvable_iff_subgroup_quotient), and by
+because a group is solvable exactly when a normal subgroup and the corresponding
+quotient both are, and by
 [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card) every subgroup and
 quotient of a group of odd order again has odd order.
 
 ## Examples
 
-- [Abelian groups are solvable](lean:Group.isSolvable_of_comm), and so are groups of
-  prime power order, since [every finite $p$-group is
-  nilpotent](lean:IsPGroup.isNilpotent) and [nilpotent groups](trough:Group.IsNilpotent)
+- Abelian groups are solvable, and so are groups of
+  prime power order, since every finite $p$-group is
+  nilpotent and [nilpotent groups](trough:Group.IsNilpotent)
   are solvable. For these groups the theorem has nothing new to say.
 - The smallest non-abelian group of odd order has order $21$: it is a semidirect
   product of a cyclic group of order $7$ by a cyclic group of order $3$ acting
@@ -49,15 +44,15 @@ quotient of a group of odd order again has odd order.
   [third Sylow theorem](trough:card_sylow_modEq_one) forces the number of subgroups
   of order $7$ to be $1$, so that subgroup is normal, with abelian quotient.
 - The hypothesis of odd order cannot be dropped. The [alternating group](trough:alternatingGroup)
-  $A_5$ of order $60$ is [simple](lean:alternatingGroup.isSimpleGroup) and
-  non-abelian, so not solvable; more generally the [symmetric group on five or more
-  letters is not solvable](lean:Equiv.Perm.not_isSolvable).
+  $A_5$ of order $60$ is simple and
+  non-abelian, so not solvable; more generally the symmetric group on five or more
+  letters is not solvable.
 
 ## Consequences
 
 - **Involutions in simple groups.** A non-abelian finite simple group has even
   order, so by [Cauchy's theorem](trough:exists_prime_orderOf_dvd_card) it
-  [contains an element of order $2$](lean:exists_prime_orderOf_dvd_card). The
+  contains an element of order $2$. The
   Brauer–Fowler theorem bounds the order of a finite simple group in terms of the
   order of the centralizer of such an involution, so a given group can occur as
   such a centralizer in only finitely many simple groups. This makes the
@@ -67,8 +62,8 @@ quotient of a group of odd order again has odd order.
   the [Jordan–Hölder theorem](trough:CompositionSeries.jordan_holder) shows are
   determined by the group.
 - **Simple groups of odd order.** A finite group of odd order is simple if and only
-  if its order is prime. One direction is the theorem; the other holds because [a
-  group of prime order is simple](lean:isSimpleGroup_of_prime_card).
+  if its order is prime. One direction is the theorem; the other holds because a
+  group of prime order is simple.
 
 ## Proof
 
@@ -114,16 +109,16 @@ a proof of this would shorten the final stage considerably. The conjecture is op
 ## In Mathlib
 
 Mathlib does not contain the Feit–Thompson theorem. The notions in its statement are
-all there: [solvability](lean:Group.IsSolvable), defined through the derived series
-for arbitrary groups, finite or not, and [simple groups](lean:IsSimpleGroup),
+all there: solvability, defined through the derived series
+for arbitrary groups, finite or not, and simple groups,
 defined as nontrivial groups whose only normal subgroups are the trivial subgroup and
 the whole group. Mathlib proves solvability for several of the classes mentioned above:
 abelian groups, nilpotent groups and so finite $p$-groups, and
-finite [Z-groups](lean:IsZGroup), the groups whose Sylow subgroups are all cyclic,
-which include [every group of squarefree order](lean:IsZGroup.of_squarefree). It also has
-standard tools from the local analysis, such as [Burnside's normal $p$-complement
-theorem](lean:MonoidHom.ker_transferSylow_isComplement') and [the Schur–Zassenhaus
-theorem](lean:Subgroup.exists_right_complement'_of_coprime). The character theory
+finite Z-groups, the groups whose Sylow subgroups are all cyclic,
+which include every group of squarefree order. It also has
+standard tools from the local analysis, such as Burnside's normal $p$-complement
+theorem and the Schur–Zassenhaus
+theorem. The character theory
 that the proof needs is only partly developed.
 
 ## Depends on

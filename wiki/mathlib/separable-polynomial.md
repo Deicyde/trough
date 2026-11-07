@@ -1,8 +1,3 @@
----
-article_id: af_3b9bf4ffe681f50a269fc85f
-concept: Polynomial.Separable
----
-
 A **separable polynomial** over a [field](trough:Field) is a nonzero [polynomial](trough:Polynomial) without
 repeated roots: in any field over which it factors into linear factors, its roots are pairwise
 distinct. Separability can be decided inside the base field, without finding a single root, by
@@ -15,13 +10,13 @@ separable, so the subtleties live in [characteristic $p$](trough:CharP).
 ## Definition
 
 Let $R$ be a commutative ring, $f \in R[X]$, and $f'$ its formal derivative. The polynomial $f$ is
-[separable](lean:Polynomial.Separable) when $f$ and $f'$ are [coprime](trough:IsCoprime) in the sense
-of Bézout: [$f$ is separable exactly when there are polynomials $a, b \in R[X]$ with $af + bf' = 1$](lean:Polynomial.separable_def').
+separable when $f$ and $f'$ are [coprime](trough:IsCoprime) in the sense
+of Bézout: $f$ is separable exactly when there are polynomials $a, b \in R[X]$ with $af + bf' = 1$.
 
 Over a field $F$ the ring $F[X]$ is a Euclidean domain, so the condition says that $f$ and $f'$ have
 no common factor of positive degree, which the Euclidean algorithm decides. The connection with
 [roots](trough:Polynomial.roots) is the following:
-[if a nonzero polynomial $f$ over $F$ splits into linear factors over an extension field $K$, then $f$ is separable if and only if its roots in $K$ are pairwise distinct](lean:Polynomial.nodup_aroots_iff_of_splits),
+if a nonzero polynomial $f$ over $F$ splits into linear factors over an extension field $K$, then $f$ is separable if and only if its roots in $K$ are pairwise distinct,
 that is, each root has [multiplicity](trough:Polynomial.rootMultiplicity) one. Taking $K$ to be a
 [splitting field](trough:Polynomial.SplittingField) of $f$ gives the definition by roots. The reason
 is the product rule: if $(X - \alpha)^2$ divides $f$, then $X - \alpha$ divides $f'$; conversely, if
@@ -31,26 +26,26 @@ positive degree of $f$ and $f'$ has a root in $K$, which is then a common root o
 For an [irreducible](trough:Irreducible) polynomial the test is simpler, since the only candidate for a
 common factor of $f$ and $f'$ is $f$ itself, up to a nonzero constant factor, which can divide $f'$ only if $f' = 0$, because
 $f'$ has smaller degree than $f$:
-[an irreducible polynomial $f$ over a field is separable if and only if $f' \neq 0$](lean:Polynomial.separable_iff_derivative_ne_zero).
+an irreducible polynomial $f$ over a field is separable if and only if $f' \neq 0$.
 
 ## Examples
 
 - **Linear and constant polynomials.** Over a commutative ring,
-  [$X - c$ is separable for every $c$](lean:Polynomial.separable_X_sub_C), its derivative being $1$.
-  [A constant polynomial $c$ is separable if and only if $c$ is a unit](lean:Polynomial.separable_C),
+  $X - c$ is separable for every $c$, its derivative being $1$.
+  A constant polynomial $c$ is separable if and only if $c$ is a unit,
   so over any ring other than the zero ring
-  [the zero polynomial is not separable](lean:Polynomial.not_separable_zero).
+  the zero polynomial is not separable.
 - **A repeated factor.** The polynomial $(X - 1)^2 = X^2 - 2X + 1$ has derivative $2(X - 1)$, and the
   two share the factor $X - 1$. In general
-  [a separable polynomial is squarefree](lean:Polynomial.Separable.squarefree): if $g^2$ divides it,
+  a separable polynomial is squarefree: if $g^2$ divides it,
   then $g$ is a unit.
 - **Binomials.** Over a field $F$,
-  [$X^n - a$ is separable whenever $a \neq 0$ and the natural number $n$ is nonzero in $F$](lean:Polynomial.separable_X_pow_sub_C),
-  and [$X^n - 1$ is separable if and only if $n$ is nonzero in $F$](lean:Polynomial.X_pow_sub_one_separable_iff).
+  $X^n - a$ is separable whenever $a \neq 0$ and the natural number $n$ is nonzero in $F$,
+  and $X^n - 1$ is separable if and only if $n$ is nonzero in $F$.
   Over the complex numbers, for $n \ge 1$, $X^n - 1$ has $n$ distinct roots, the $n$th roots of unity; over a field of characteristic
   $p$, the polynomial $X^p - 1$ equals $(X - 1)^p$.
 - **Finite fields.** Over a commutative ring of characteristic $p$,
-  [$X^q - X$ is separable whenever $p$ divides $q$](lean:galois_poly_separable), since its derivative
+  $X^q - X$ is separable whenever $p$ divides $q$, since its derivative
   is $qX^{q-1} - 1 = -1$. When $p$ is prime and $q = p^n$ with $n \ge 1$, the roots of this polynomial in
   a splitting field over $\mathbb{F}_p$ form the field with $q$ elements (see [finite fields](trough:Mathlib.FieldTheory.Finite.Basic)).
 - **An inseparable irreducible polynomial.** Let $F = \mathbb{F}_p(t)$ be the field of rational
@@ -60,46 +55,46 @@ $f'$ has smaller degree than $f$:
   $X^p - t = (X - s)^p$, so $f$ has one root, of multiplicity $p$.
 - **Dependence on the coefficient ring.** Over $\mathbb{Q}$, $X^2 + 1$ is separable, because
   $(X^2 + 1) - \tfrac{X}{2}\cdot 2X = 1$. Over $\mathbb{Z}$ it is not:
-  [separability is preserved by every ring homomorphism](lean:Polynomial.Separable.map), and modulo
+  separability is preserved by every ring homomorphism, and modulo
   $2$ the polynomial becomes $(X + 1)^2$, which is not separable over $\mathbb{F}_2$.
 
 ## Properties
 
 - **Base change over a field.** For a polynomial $f$ over a field $F$ and a
   [ring homomorphism](trough:RingHom) $F \to S$ into a nonzero commutative ring,
-  [the image of $f$ is separable if and only if $f$ is](lean:Polynomial.separable_map). In
+  the image of $f$ is separable if and only if $f$ is. In
   particular, enlarging the field does not change whether $f$ is separable.
 - **Roots.** Over an integral domain,
-  [a separable polynomial has no repeated roots in that domain](lean:Polynomial.nodup_roots). If a separable
+  a separable polynomial has no repeated roots in that domain. If a separable
   polynomial over $F$ splits over an extension field $K$, then
-  [its number of distinct roots in $K$ equals its degree](lean:Polynomial.card_rootSet_eq_natDegree).
-- **Factors.** [A divisor of a separable polynomial is separable](lean:Polynomial.Separable.of_dvd),
-  and [if $fg$ is separable then $f$ and $g$ are coprime](lean:Polynomial.Separable.isCoprime).
+  its number of distinct roots in $K$ equals its degree.
+- **Factors.** A divisor of a separable polynomial is separable,
+  and if $fg$ is separable then $f$ and $g$ are coprime.
   Conversely, over a commutative ring,
-  [the product of two coprime separable polynomials is separable](lean:Polynomial.Separable.mul).
+  the product of two coprime separable polynomials is separable.
 - **Characteristic zero.** A nonconstant polynomial has nonzero derivative in characteristic zero,
-  so [every irreducible polynomial over a field of characteristic zero is separable](lean:Irreducible.separable).
+  so every irreducible polynomial over a field of characteristic zero is separable.
 - **Characteristic $p$.** Here $f' = 0$ exactly when $f$ is a polynomial in $X^p$. Over a field of
   characteristic $p > 0$,
-  [every irreducible $f$ can be written as $f(X) = g(X^{p^n})$ with $n \ge 0$ and $g$ separable](lean:Polynomial.exists_separable_of_irreducible),
-  and [$n$ and $g$ are uniquely determined by $f$](lean:Polynomial.unique_separable_of_irreducible).
+  every irreducible $f$ can be written as $f(X) = g(X^{p^n})$ with $n \ge 0$ and $g$ separable,
+  and $n$ and $g$ are uniquely determined by $f$.
 
 ## Related concepts
 
 - **Separable elements and extensions.** For an algebra over $F$,
-  [an element is separable when its minimal polynomial over $F$ is separable](lean:IsSeparable)
+  an element is separable when its minimal polynomial over $F$ is separable
   (see [minimal polynomial](trough:minpoly)), and
-  [the algebra is separable over $F$ when all of its elements are](lean:Algebra.IsSeparable). By the
+  the algebra is separable over $F$ when all of its elements are. By the
   primitive element theorem,
-  [every finite separable field extension is generated by a single element](lean:Field.exists_primitive_element).
+  every finite separable field extension is generated by a single element.
   Galois extensions are the separable normal ones, the setting of the
   [Galois correspondence](trough:IsGalois.intermediateFieldEquivSubgroup).
-- **Perfect fields.** [A field is perfect when every irreducible polynomial over it is separable](lean:PerfectField);
+- **Perfect fields.** A field is perfect when every irreducible polynomial over it is separable;
   in characteristic $p$ this amounts to surjectivity of the [Frobenius](trough:frobenius) map.
-  [Every field of characteristic zero is perfect](lean:PerfectField.ofCharZero), as is
-  [every finite field](lean:PerfectField.ofFinite), while $\mathbb{F}_p(t)$ is not, by the example
-  above. [Over a perfect field a polynomial is separable if and only if it is squarefree](lean:PerfectField.separable_iff_squarefree),
-  and [every algebraic extension of a perfect field is separable](lean:Algebra.IsAlgebraic.isSeparable_of_perfectField).
+  Every field of characteristic zero is perfect, as is
+  every finite field, while $\mathbb{F}_p(t)$ is not, by the example
+  above. Over a perfect field a polynomial is separable if and only if it is squarefree,
+  and every algebraic extension of a perfect field is separable.
   See also [perfect closure](trough:PerfectClosure).
 
 ## In Mathlib
@@ -114,7 +109,7 @@ not separable; some texts instead call a polynomial separable when each of its i
 has distinct roots, and under that convention $(X - 1)^2$ would count as separable. Separable
 elements are defined for algebras over a commutative ring through the minimal polynomial. Since
 Mathlib gives a non-integral element the minimal polynomial $0$,
-[a separable element is automatically integral](lean:IsSeparable.isIntegral), and separable
+a separable element is automatically integral, and separable
 extensions are algebraic.
 
 ## Depends on

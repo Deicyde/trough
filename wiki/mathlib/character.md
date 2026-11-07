@@ -1,8 +1,3 @@
----
-article_id: af_2e4012c2c940f210fbc866c1
-concept: FDRep.character
----
-
 The **character** of a finite-dimensional [representation](trough:Representation) of a group is the
 function that assigns to each group element the trace of the linear map by which it acts. It
 compresses a representation, a family of matrices, into a single scalar-valued function on the
@@ -17,7 +12,7 @@ Let $G$ be a [group](trough:Group), $k$ a [field](trough:Field), and $V$ a finit
 vector space over $k$ on which $G$ acts through a homomorphism $\rho$ from $G$ to the invertible
 [linear maps](trough:LinearMap) of $V$. The character of $V$ is the function
 $\chi_V \colon G \to k$ given by
-[$\chi_V(g) = \operatorname{tr} \rho(g)$, the trace of the linear map $\rho(g)$](lean:FDRep.character).
+$\chi_V(g) = \operatorname{tr} \rho(g)$, the trace of the linear map $\rho(g)$.
 After choosing a basis of $V$, $\chi_V(g)$ is the sum of the diagonal entries of the matrix of
 $\rho(g)$; since similar matrices have the same trace, the result does not depend on the basis.
 The definition uses only the multiplication of $G$, so it applies equally to a monoid acting by
@@ -51,27 +46,27 @@ trivial and standard characters, matching its decomposition into those two piece
 
 Throughout, $V$ and $W$ are finite-dimensional representations of $G$ over $k$.
 
-- **Value at the identity.** [$\chi_V(1)$ is the dimension of $V$](lean:FDRep.char_one), read as
+- **Value at the identity.** $\chi_V(1)$ is the dimension of $V$, read as
   an element of $k$.
-- **Class function.** [$\chi_V(gh) = \chi_V(hg)$ for all $g, h$](lean:FDRep.char_mul_comm), and
-  hence [$\chi_V(hgh^{-1}) = \chi_V(g)$](lean:FDRep.char_conj): the character is a
+- **Class function.** $\chi_V(gh) = \chi_V(hg)$ for all $g, h$, and
+  hence $\chi_V(hgh^{-1}) = \chi_V(g)$: the character is a
   class function,
   constant on each [conjugacy class](trough:ConjClasses).
-- **Invariance.** [Isomorphic representations have the same character](lean:FDRep.char_iso). The
+- **Invariance.** Isomorphic representations have the same character. The
   converse holds for finite groups over the complex numbers but fails in positive characteristic:
   over a field of characteristic $p$, the direct sum of $p$ copies of the trivial representation
   has the same character as the zero representation.
 - **Operations.** Write $\sigma$ for the action on $W$. The character of a direct sum
   $V \oplus W$ is $\chi_V + \chi_W$, and
-  [the character of the tensor product $V \otimes W$, where $g$ acts by $\rho(g) \otimes \sigma(g)$, is the product $\chi_V \chi_W$](lean:FDRep.char_tensor).
+  the character of the tensor product $V \otimes W$, where $g$ acts by $\rho(g) \otimes \sigma(g)$, is the product $\chi_V \chi_W$.
   For the dual representation on the [dual space](trough:Module.Dual) $V^*$, where $g$ acts by
   the transpose of $\rho(g^{-1})$,
-  [$\chi_{V^*}(g) = \chi_V(g^{-1})$](lean:FDRep.char_dual), and for the representation on the
+  $\chi_{V^*}(g) = \chi_V(g^{-1})$, and for the representation on the
   space of linear maps from $V$ to $W$, where $g$ sends $f$ to $\sigma(g) \circ f \circ \rho(g^{-1})$,
-  [the character at $g$ is $\chi_V(g^{-1})\,\chi_W(g)$](lean:FDRep.char_linHom).
+  the character at $g$ is $\chi_V(g^{-1})\,\chi_W(g)$.
 - **Integrality.** If $G$ is finite, each eigenvalue of $\rho(g)$ in an algebraic closure of $k$
   is a root of unity, so
-  [each value $\chi_V(g)$ is integral over the integers](lean:FDRep.isIntegral_character).
+  each value $\chi_V(g)$ is integral over the integers.
   Over the complex numbers these eigenvalues lie on the unit circle, which gives
   $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 
@@ -80,14 +75,14 @@ Throughout, $V$ and $W$ are finite-dimensional representations of $G$ over $k$.
 Suppose now that $G$ is finite and that its order $|G|$ is invertible in $k$, that is, the
 characteristic of $k$ does not divide $|G|$. Averaging a character over the group gives
 the dimension of the space of invariant vectors:
-[$\frac{1}{|G|} \sum_{g \in G} \chi_V(g)$ equals the dimension of the subspace of vectors fixed by all of $G$](lean:FDRep.average_char_eq_finrank_invariants).
+$\frac{1}{|G|} \sum_{g \in G} \chi_V(g)$ equals the dimension of the subspace of vectors fixed by all of $G$.
 Applied to the space of linear maps from $V$ to $W$, this shows that
-[$\frac{1}{|G|} \sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1})$ is the dimension of the space of $G$-equivariant linear maps from $V$ to $W$](lean:FDRep.scalar_product_char_eq_finrank_equivariant),
+$\frac{1}{|G|} \sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1})$ is the dimension of the space of $G$-equivariant linear maps from $V$ to $W$,
 both dimensions read in $k$. If in addition $k$ is
 [algebraically closed](trough:IsAlgClosed) and $V$ and $W$ are irreducible, then
 [Schur's lemma](trough:FDRep.finrank_hom_simple_simple) makes this dimension $1$ or $0$, which
 gives the [orthogonality of characters](trough:FDRep.char_orthonormal):
-[$\frac{1}{|G|} \sum_{g \in G} \chi_V(g)\,\chi_W(g^{-1})$ is $1$ if $V$ and $W$ are isomorphic and $0$ otherwise](lean:FDRep.char_orthonormal).
+$\frac{1}{|G|} \sum_{g \in G} \chi_V(g)\,\chi_W(g^{-1})$ is $1$ if $V$ and $W$ are isomorphic and $0$ otherwise.
 
 ## Related concepts
 
@@ -113,7 +108,7 @@ dimensions appear as their images in the field: in positive characteristic they 
 modulo the characteristic. Irreducible representations are the simple objects of the category,
 and orthogonality is stated with $g^{-1}$ in place of complex conjugation, which makes it valid
 over every algebraically closed field whose characteristic does not divide the order of the
-group. A parallel version, [the character of a representation given as a homomorphism into the linear maps of a vector space](lean:Representation.character),
+group. A parallel version, the character of a representation given as a homomorphism into the linear maps of a vector space,
 carries the same basic results.
 
 ## Depends on

@@ -25,3 +25,7 @@ jobs:
 
       - name: Run the tests
         run: uv run pytest -q
+
+      # The wiki's links to Mathlib are literature-links annotations; check them with its own tool.
+      - name: Check the wiki's annotations
+        run: uvx --from "git+https://github.com/mathlib-initiative/literature-links@v1.0.2" literature-links scan wiki/mathlib wiki/unplaced

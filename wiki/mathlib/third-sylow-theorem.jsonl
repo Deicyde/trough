@@ -1,0 +1,11 @@
+{"id": "af_5aa4e75cab828ea3f9dafa8b", "subject": [{"type": "generic", "uri": "third-sylow-theorem.md"}], "object": [{"location": {"declaration": "card_sylow_modEq_one"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "every Sylow $p$-subgroup has order $p^n$"}}}], "object": [{"location": {"declaration": "Sylow.card_eq_multiplicity"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "congruence $n_p \\equiv 1 \\pmod p$"}}}], "object": [{"location": {"declaration": "card_sylow_modEq_one"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "$p$ does not divide $n_p$"}}}], "object": [{"location": {"declaration": "not_dvd_card_sylow"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "the number of Sylow $p$-subgroups equals the index of $N_G(P)$"}}}], "object": [{"location": {"declaration": "Sylow.card_eq_index_normalizer"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "$n_p$ divides the index of $P$"}}}], "object": [{"location": {"declaration": "Sylow.card_dvd_index"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "a normal Sylow $p$-subgroup is unique"}}}], "object": [{"location": {"declaration": "Sylow.unique_of_normal"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "a unique Sylow $p$-subgroup is normal"}}}], "object": [{"location": {"declaration": "Sylow.normal_of_subsingleton"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "the size of the set is congruent modulo $p$ to the number of fixed points"}}}], "object": [{"location": {"declaration": "IsPGroup.card_modEq_card_fixedPoints"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "$Q$ is fixed by $P$ exactly when $P \\le Q$"}}}], "object": [{"location": {"declaration": "IsPGroup.sylow_mem_fixedPoints_iff"}}]}
+{"subject": [{"type": "generic", "uri": "third-sylow-theorem.md", "location": {"quote": {"exact": "its normalizer"}}}], "object": [{"location": {"declaration": "Sylow.stabilizer_eq_normalizer"}}]}

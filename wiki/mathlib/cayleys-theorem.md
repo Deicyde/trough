@@ -1,8 +1,3 @@
----
-article_id: af_4775e19724e957cc9b222c51
-concept: Equiv.Perm.subgroupOfMulAction
----
-
 **Cayley's theorem** says that every [group](trough:Group) is isomorphic to a
 group of permutations: a group $G$ can be realized inside the
 [permutation group](trough:Equiv.Perm) of the set $G$ itself, by letting each
@@ -15,7 +10,7 @@ groups, in principle, to subgroups of the symmetric groups $S_n$.
 
 For a set $X$, write $\operatorname{Sym}(X)$ for the group of all bijections
 $X \to X$ under composition. Every group $G$ is
-[isomorphic to a subgroup of $\operatorname{Sym}(G)$](lean:Equiv.Perm.subgroupOfMulAction).
+isomorphic to a subgroup of $\operatorname{Sym}(G)$.
 The subgroup is the image of the map $g \mapsto \lambda_g$, where
 $\lambda_g(x) = gx$ is left multiplication by $g$. This embedding is called the
 left regular representation of $G$.
@@ -23,7 +18,7 @@ left regular representation of $G$.
 If $G$ is finite of order $n$, then numbering its elements makes
 $\operatorname{Sym}(G)$ a copy of the symmetric group
 $S_n = \operatorname{Sym}(\{1, \dots, n\})$, which
-[has $n!$ elements](lean:Nat.card_perm). So every group of order $n$ is
+has $n!$ elements. So every group of order $n$ is
 isomorphic to a subgroup of $S_n$. In particular there are only finitely many
 groups of order $n$ up to isomorphism, since $S_n$ has only finitely many
 subgroups.
@@ -35,15 +30,15 @@ associative law gives $\lambda_{gh}(x) = ghx = \lambda_g(\lambda_h(x))$, so
 $g \mapsto \lambda_g$ is a [group homomorphism](trough:MonoidHom) from $G$ to
 $\operatorname{Sym}(G)$. It is injective, because $\lambda_g(e) = g$ recovers
 $g$ from $\lambda_g$, where $e$ is the identity. An injective homomorphism
-[maps its domain isomorphically onto its image](lean:MonoidHom.ofInjective),
+maps its domain isomorphically onto its image,
 and the image of a homomorphism is a [subgroup](trough:Subgroup).
 
 The same argument works for any [group action](trough:MulAction) of $G$ on a
 set $X$. Each element $g$ moves the points of $X$ by a permutation, and
-[these permutations multiply as the elements of $G$ do](lean:MulAction.toPermHom).
+these permutations multiply as the elements of $G$ do.
 The action is called faithful when only the identity fixes every point, that
 is, when distinct elements act differently; for a faithful action
-[the map from $G$ to $\operatorname{Sym}(X)$ is injective](lean:MulAction.toPerm_injective),
+the map from $G$ to $\operatorname{Sym}(X)$ is injective,
 so $G$ is isomorphic to its image. Left multiplication is a faithful action of
 $G$ on itself.
 
@@ -72,16 +67,16 @@ Letting $G$ act on the left cosets of a subgroup, rather than on its elements,
 gives a refinement. Let $H$ be a subgroup of finite [index](trough:Subgroup.index)
 $n$. The action of $G$ on the $n$ cosets $gH$ gives a homomorphism
 $G \to \operatorname{Sym}(G/H) \cong S_n$, usually not injective, whose kernel is
-[the normal core of $H$](lean:Subgroup.normalCore_eq_ker): the elements of $G$ all
+the normal core of $H$: the elements of $G$ all
 of whose conjugates lie in $H$. The kernel is a [normal subgroup](trough:Subgroup.Normal)
 contained in $H$, and the quotient by it embeds in $S_n$, so
-[the index of the normal core divides $n!$](lean:Subgroup.index_normalCore_dvd_factorial_index).
+the index of the normal core divides $n!$.
 
 - For $n = 2$ the index of the normal core is a multiple of $2$ (the core lies
   in $H$) and divides $2! = 2$,
-  so $H$ equals its core: [every subgroup of index $2$ is normal](lean:Subgroup.normal_of_index_eq_two).
+  so $H$ equals its core: every subgroup of index $2$ is normal.
 - More generally, in a finite group,
-  [a subgroup whose index is the smallest prime $p$ dividing $|G|$ is normal](lean:Subgroup.normal_of_index_eq_minFac_card):
+  a subgroup whose index is the smallest prime $p$ dividing $|G|$ is normal:
   the index of the normal core divides both $|G|$ and $p!$; since no prime
   smaller than $p$ divides $|G|$ and $p^2$ does not divide $p!$, it divides $p$.
   It is also a multiple of $p$, because the core lies in $H$, so it equals $p$

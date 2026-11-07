@@ -1,0 +1,10 @@
+{"id": "af_4775e19724e957cc9b222c51", "subject": [{"type": "generic", "uri": "cayleys-theorem.md"}], "object": [{"location": {"declaration": "Equiv.Perm.subgroupOfMulAction"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "isomorphic to a subgroup of $\\operatorname{Sym}(G)$"}}}], "object": [{"location": {"declaration": "Equiv.Perm.subgroupOfMulAction"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "has $n!$ elements"}}}], "object": [{"location": {"declaration": "Nat.card_perm"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "maps its domain isomorphically onto its image"}}}], "object": [{"location": {"declaration": "MonoidHom.ofInjective"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "these permutations multiply as the elements of $G$ do"}}}], "object": [{"location": {"declaration": "MulAction.toPermHom"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "the map from $G$ to $\\operatorname{Sym}(X)$ is injective"}}}], "object": [{"location": {"declaration": "MulAction.toPerm_injective"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "the normal core of $H$"}}}], "object": [{"location": {"declaration": "Subgroup.normalCore_eq_ker"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "the index of the normal core divides $n!$"}}}], "object": [{"location": {"declaration": "Subgroup.index_normalCore_dvd_factorial_index"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "every subgroup of index $2$ is normal"}}}], "object": [{"location": {"declaration": "Subgroup.normal_of_index_eq_two"}}]}
+{"subject": [{"type": "generic", "uri": "cayleys-theorem.md", "location": {"quote": {"exact": "a subgroup whose index is the smallest prime $p$ dividing $|G|$ is normal"}}}], "object": [{"location": {"declaration": "Subgroup.normal_of_index_eq_minFac_card"}}]}

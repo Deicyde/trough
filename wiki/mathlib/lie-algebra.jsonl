@@ -1,0 +1,30 @@
+{"id": "af_7f065cd384924b6ceb4e75d5", "subject": [{"type": "generic", "uri": "lie-algebra.md"}], "object": [{"location": {"declaration": "LieAlgebra"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "$[x, y] = -[y, x]$ in every Lie algebra"}}}], "object": [{"location": {"declaration": "lie_skew"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "that every element has bracket zero with itself"}}}], "object": [{"location": {"declaration": "lie_self"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "the Jacobi identity in the cyclic form above"}}}], "object": [{"location": {"declaration": "lie_jacobi"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "the first argument", "prefix": "of "}}}], "object": [{"location": {"declaration": "smul_lie"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "the second"}}}], "object": [{"location": {"declaration": "lie_smul"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "Lie algebra homomorphism", "prefix": "A "}}}], "object": [{"location": {"declaration": "LieHom"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "Lie subalgebra", "prefix": "A "}}}], "object": [{"location": {"declaration": "LieSubalgebra"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "ideal", "prefix": "an "}}}], "object": [{"location": {"declaration": "LieIdeal"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "becomes a Lie algebra"}}}], "object": [{"location": {"declaration": "LieAlgebra.ofAssociativeAlgebra"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "$[x, y] = xy - yx$"}}}], "object": [{"location": {"declaration": "LieRing.of_associative_ring_bracket"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "abelian", "prefix": "is "}}}], "object": [{"location": {"declaration": "IsLieAbelian"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "two elements of a ring commute exactly when their commutator vanishes"}}}], "object": [{"location": {"declaration": "commute_iff_lie_eq"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "the trace of a commutator of square matrices is zero"}}}], "object": [{"location": {"declaration": "LieAlgebra.matrix_trace_commutator_zero"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "a Lie subalgebra $\\mathfrak{sl}_n(R)$"}}}], "object": [{"location": {"declaration": "LieAlgebra.SpecialLinear.sl"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "consists of the matrices $A$ with $A^{\\mathsf T} = -A$"}}}], "object": [{"location": {"declaration": "LieAlgebra.Orthogonal.mem_so"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "satisfies $v \\times v = 0$"}}}], "object": [{"location": {"declaration": "cross_self"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "antisymmetric", "prefix": "(hence is "}}}], "object": [{"location": {"declaration": "cross_anticomm"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "satisfies the Jacobi identity", "prefix": "antisymmetric) and "}}}], "object": [{"location": {"declaration": "jacobi_cross"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "the derivations of $A$ form a Lie algebra over $R$"}}}], "object": [{"location": {"declaration": "Derivation.instLieAlgebra"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "$\\operatorname{ad} x\\,(y) = [x, y]$"}}}], "object": [{"location": {"declaration": "LieAlgebra.ad_apply"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "$\\operatorname{ad}$ is a Lie algebra homomorphism from $L$ to $\\mathfrak{gl}(L)$"}}}], "object": [{"location": {"declaration": "LieAlgebra.ad"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "solvable Lie algebras"}}}], "object": [{"location": {"declaration": "LieAlgebra.IsSolvable"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "nilpotent Lie algebras", "prefix": "defines "}}}], "object": [{"location": {"declaration": "LieRing.IsNilpotent"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "if and only if $\\operatorname{ad} x$ is a nilpotent linear map for every $x \\in L$"}}}], "object": [{"location": {"declaration": "LieAlgebra.isNilpotent_iff_forall"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "simple", "prefix": "algebra is "}}}], "object": [{"location": {"declaration": "LieAlgebra.IsSimple"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "universal enveloping algebra", "prefix": "a "}}}], "object": [{"location": {"declaration": "UniversalEnvelopingAlgebra"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "composition with $\\iota$ is a bijection between these two sets of homomorphisms"}}}], "object": [{"location": {"declaration": "UniversalEnvelopingAlgebra.lift"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "Lie ring", "prefix": "A "}}}], "object": [{"location": {"declaration": "LieRing"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "Lie algebra", "prefix": "bracket. A "}}}], "object": [{"location": {"declaration": "LieAlgebra"}}]}

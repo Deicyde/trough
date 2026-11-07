@@ -1,8 +1,3 @@
----
-article_id: af_b82a1b7d69dad83d13e374ce
-concept: Equiv.Perm
----
-
 The **permutation group** of a set $X$, also called the **symmetric group** on $X$, is the
 set of all bijections from $X$ to itself, with composition of maps as the group operation.
 It is the group of all symmetries of a set with no further structure. By
@@ -13,19 +8,19 @@ group is written $S_n$ and is a basic object of combinatorics and algebra.
 
 ## Definition
 
-A permutation of a set $X$ is a [bijection from $X$ to itself](lean:Equiv.Perm), that is, a map
+A permutation of a set $X$ is a bijection from $X$ to itself, that is, a map
 $\sigma \colon X \to X$ that has an inverse map $\sigma^{-1}$ with
 $\sigma \circ \sigma^{-1} = \sigma^{-1} \circ \sigma = \mathrm{id}_X$. The permutations of $X$
-[form a group](lean:Equiv.Perm.permGroup), written $\mathrm{Sym}(X)$, in which the product
+form a group, written $\mathrm{Sym}(X)$, in which the product
 $\sigma\tau$ is the composite that applies $\tau$ first, so that
-[$(\sigma\tau)(x) = \sigma(\tau(x))$](lean:Equiv.Perm.mul_apply). The identity map is the
+$(\sigma\tau)(x) = \sigma(\tau(x))$. The identity map is the
 identity element and the inverse map is the group inverse. Equivalently,
-$\mathrm{Sym}(X)$ is [the group of invertible elements of the monoid of all maps from $X$ to
-itself](lean:Equiv.Perm.equivUnitsEnd), where a monoid is a set with an associative operation
+$\mathrm{Sym}(X)$ is the group of invertible elements of the monoid of all maps from $X$ to
+itself, where a monoid is a set with an associative operation
 and an identity element, here composition of maps and the identity map.
 
 Up to isomorphism, the group depends only on the size of $X$: a bijection $e \colon X \to Y$
-[induces an isomorphism](lean:Equiv.permCongrHom) from $\mathrm{Sym}(X)$ to
+induces an isomorphism from $\mathrm{Sym}(X)$ to
 $\mathrm{Sym}(Y)$, sending $\sigma$ to $e \circ \sigma \circ e^{-1}$. For this reason one writes
 $S_n$ for the permutation group of $\{1, \dots, n\}$, or of any set with $n$ elements.
 
@@ -45,11 +40,11 @@ $S_n$ for the permutation group of $\{1, \dots, n\}$, or of any set with $n$ ele
 ## Properties
 
 - **Order.** A set with $n$ elements has $n!$ permutations:
-  [the order of $S_n$ is $n!$](lean:Fintype.card_perm), since there are $n$ choices for the image of
+  the order of $S_n$ is $n!$, since there are $n$ choices for the image of
   the first element, $n - 1$ for the second, and so on.
 - **Transpositions.** A transposition exchanges two distinct points and fixes every other point.
-  For a finite set, [the transpositions generate the permutation
-  group](lean:Equiv.Perm.closure_isSwap). Since a transposition is its own inverse, this means
+  For a finite set, the transpositions generate the permutation
+  group. Since a transposition is its own inverse, this means
   every permutation is a [product of transpositions](trough:Equiv.Perm.truncSwapFactors), the
   identity being the empty product.
 - **Cycles.** The support of a permutation is the set of points it moves. A cycle is a
@@ -57,29 +52,29 @@ $S_n$ for the permutation group of $\{1, \dots, n\}$, or of any set with $n$ ele
   $a \mapsto \sigma(a) \mapsto \sigma^2(a) \mapsto \dots \mapsto a$, and fixes every other point;
   it is nontrivial if it moves at least two points. Two permutations are disjoint when their
   supports are disjoint, that is, when no point is moved by both;
-  [disjoint permutations commute](lean:Equiv.Perm.Disjoint.commute). Every permutation of a finite
+  disjoint permutations commute. Every permutation of a finite
   set is a product of nontrivial cycles with disjoint supports
   (its [cycle decomposition](trough:Equiv.Perm.truncCycleFactors)), and the factors are
-  [unique up to order](lean:Equiv.Perm.cycleFactorsFinset_eq_finset). The lengths of these
+  unique up to order. The lengths of these
   cycles make up the cycle type. Two permutations $\sigma$ and $\tau$ are conjugate if
   $\tau = \rho\sigma\rho^{-1}$ for some permutation $\rho$, and
-  [two permutations of a finite set are conjugate exactly when they have the same cycle
-  type](lean:Equiv.Perm.isConj_iff_cycleType_eq), which describes the
+  two permutations of a finite set are conjugate exactly when they have the same cycle
+  type, which describes the
   [conjugacy classes](trough:ConjClasses) of $S_n$.
 - **Sign.** The [signature](trough:Equiv.Perm.sign) is the
-  [homomorphism from $S_n$ to $\{\pm 1\}$](lean:Equiv.Perm.sign) that
-  [sends every transposition to $-1$](lean:Equiv.Perm.sign_swap). Its kernel is the
+  homomorphism from $S_n$ to $\{\pm 1\}$ that
+  sends every transposition to $-1$. Its kernel is the
   [alternating group](trough:alternatingGroup) $A_n$, a [normal subgroup](trough:Subgroup.Normal) of index $2$ for $n \ge 2$.
 
 ## Group actions and Cayley's theorem
 
-The permutation group of $X$ [acts on $X$](lean:Equiv.Perm.applyMulAction) by evaluation,
+The permutation group of $X$ acts on $X$ by evaluation,
 $\sigma \cdot x = \sigma(x)$. Conversely, any [action](trough:MulAction) of a group $G$ on $X$
 gives a [group morphism](trough:MonoidHom)
-[from $G$ to $\mathrm{Sym}(X)$](lean:MulAction.toPermHom), sending $g$ to the permutation
+from $G$ to $\mathrm{Sym}(X)$, sending $g$ to the permutation
 $x \mapsto g \cdot x$. When the action is faithful, that is, when only the identity acts as the
 identity map, this morphism is injective and
-[$G$ is isomorphic to its image in $\mathrm{Sym}(X)$](lean:Equiv.Perm.subgroupOfMulAction).
+$G$ is isomorphic to its image in $\mathrm{Sym}(X)$.
 Applied to the action of $G$ on itself by left multiplication, this is Cayley's theorem.
 
 ## In Mathlib

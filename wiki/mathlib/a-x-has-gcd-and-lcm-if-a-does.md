@@ -1,8 +1,3 @@
----
-article_id: af_10bab5b26b02ca304d99d4bf
-concept: Polynomial.normalizedGcdMonoid
----
-
 The statement that **$A[X]$ has gcd and lcm if $A$ does** says that if every two
 elements of an integral domain $A$ have a [greatest common divisor](trough:GCDMonoid.gcd)
 and a [least common multiple](trough:GCDMonoid.lcm), then the same holds in the
@@ -17,20 +12,20 @@ Gauss's lemma.
 
 Let $A$ be an integral domain. An element $d$ is a greatest common divisor of $a$
 and $b$ if $d$ divides both and every common divisor of $a$ and $b$ divides $d$;
-equivalently, [an element divides $\gcd(a,b)$ exactly when it divides both $a$ and $b$](lean:dvd_gcd_iff).
-Dually, [$\operatorname{lcm}(a,b)$ divides an element exactly when $a$ and $b$ both divide it](lean:lcm_dvd_iff).
+equivalently, an element divides $\gcd(a,b)$ exactly when it divides both $a$ and $b$.
+Dually, $\operatorname{lcm}(a,b)$ divides an element exactly when $a$ and $b$ both divide it.
 These are determined only up to multiplication by a unit, so one fixes a
 normalization: a rule choosing one representative in each class of associated
 elements, such as the nonnegative integer in $\mathbb{Z}$.
 
 **Theorem.** If $A$ is an integral domain equipped with a normalization in which
 every pair of elements has a normalized gcd and lcm, then
-[$A[X]$ carries the same structure](lean:Polynomial.normalizedGcdMonoid). The
+$A[X]$ carries the same structure. The
 normalization on $A[X]$ is induced from $A$:
-[a polynomial $p$ is normalized by multiplying it by the constant unit that normalizes its leading coefficient](lean:Polynomial.coe_normUnit),
+a polynomial $p$ is normalized by multiplying it by the constant unit that normalizes its leading coefficient,
 so a polynomial counts as normalized exactly when its leading coefficient is
 normalized in $A$. In particular,
-[the leading coefficient of the normalization of $p$ is the normalization of the leading coefficient of $p$](lean:Polynomial.leadingCoeff_normalize).
+the leading coefficient of the normalization of $p$ is the normalization of the leading coefficient of $p$.
 
 When $A$ is a [field](trough:Field), every nonzero element normalizes to $1$, so the
 gcd of two polynomials, not both zero, is the monic gcd familiar from the
@@ -47,28 +42,28 @@ gcd of two polynomials, not both zero, is the monic gcd familiar from the
   So [Bézout's identity](trough:exists_gcd_eq_mul_add_mul) fails, so gcds in
   $A[X]$ cannot be produced by a Euclidean algorithm that tracks Bézout coefficients.
 - **Beyond unique factorisation.** Every unique factorisation domain
-  [with a chosen normalization is a GCD domain](lean:UniqueFactorizationMonoid.toNormalizedGCDMonoid),
+  with a chosen normalization is a GCD domain,
   but not conversely: the ring of all algebraic integers is a GCD domain with no
   irreducible elements at all. The theorem applies to such rings as well.
 
 ## Content and primitive polynomials
 
-Over a GCD domain $A$, the [content](lean:Polynomial.content) of a polynomial $p$ is
+Over a GCD domain $A$, the content of a polynomial $p$ is
 the gcd of its coefficients. A polynomial is
-[primitive](lean:Polynomial.IsPrimitive) when the only constants dividing it are
+primitive when the only constants dividing it are
 units, which over a GCD domain means that
-[its content is $1$](lean:Polynomial.isPrimitive_iff_content_eq_one). Every polynomial
-[factors as its content times a primitive part](lean:Polynomial.eq_C_content_mul_primPart),
-and [the primitive part is primitive](lean:Polynomial.isPrimitive_primPart). The key
+its content is $1$. Every polynomial
+factors as its content times a primitive part,
+and the primitive part is primitive. The key
 facts are the forms of Gauss's lemma:
 
-- [a product of primitive polynomials is primitive](lean:Polynomial.IsPrimitive.mul);
-- [the content of $pq$ is associated to the product of the contents](lean:Polynomial.associated_content_mul),
-  and [it equals that product](lean:Polynomial.content_mul) when the normalization of
+- a product of primitive polynomials is primitive;
+- the content of $pq$ is associated to the product of the contents,
+  and it equals that product when the normalization of
   $A$ is multiplicative, as it is for $\mathbb{Z}$.
 
 From these one obtains a divisibility test: for $q \neq 0$,
-[$p$ divides $q$ if and only if the content of $p$ divides that of $q$ and the primitive part of $p$ divides that of $q$](lean:Polynomial.dvd_iff_content_dvd_content_and_primPart_dvd_primPart).
+$p$ divides $q$ if and only if the content of $p$ divides that of $q$ and the primitive part of $p$ divides that of $q$.
 
 ## Proof
 
@@ -76,7 +71,7 @@ It suffices to construct least common multiples; in a cancellative commutative m
 in which every pair has an lcm, the gcd of two nonzero elements is their product divided by
 their lcm.
 
-First, [any two primitive polynomials $p$ and $q$ have a primitive lcm](lean:Polynomial.exists_primitive_lcm_of_isPrimitive).
+First, any two primitive polynomials $p$ and $q$ have a primitive lcm.
 Among the primitive common multiples of $p$ and $q$ (the product $pq$ is one), choose
 $r$ of least degree. Let $s$ be any nonzero common multiple; replacing $s$ by its
 primitive part, one may assume $s$ primitive, so $\deg r \le \deg s$. If $s$ is
@@ -101,7 +96,7 @@ primitive parts.
 - By induction on the number of variables, $A[X_1, \dots, X_n]$ is a GCD domain
   whenever $A$ is; for instance $\mathbb{Z}[X,Y]$ and $K[X,Y]$ over a field $K$.
 - For $p \neq 0$,
-  [the gcd of $p$ and $q$ has degree at most that of $p$](lean:Polynomial.degree_gcd_le_left).
+  the gcd of $p$ and $q$ has degree at most that of $p$.
 - The parallel statement for factorisation, that a polynomial ring over a unique
   factorisation domain is again one, is the companion
   [theorem on polynomial rings over UFDs](trough:MvPolynomial.uniqueFactorizationMonoid);

@@ -1,54 +1,49 @@
----
-article_id: af_da76bb334cf24625cba4ead2
-concept: Polynomial.SplittingField
----
-
 A **splitting field** of a [polynomial](trough:Polynomial) $f$ over a [field](trough:Field) $K$ is a field extension of $K$ in which $f$ factors completely into linear factors and which is generated over $K$ by the roots of $f$. Every polynomial has one, and any two are isomorphic over $K$, so one may speak of "the" splitting field. Splitting fields are the extensions in which the [roots](trough:Polynomial.roots) of a polynomial can all be handled at once, which makes them the basic objects of Galois theory: the finite normal extensions are exactly the splitting fields, and the Galois group of a polynomial is the group of automorphisms of its splitting field over $K$.
 
 ## Definition
 
 Let $L$ be a field extension of $K$. A polynomial $f \in K[X]$ *splits* over $L$ if, viewed in $L[X]$, it is a constant times a product of linear factors; equivalently,
-[$f$ equals its leading coefficient times a product of factors $X - a_i$](lean:Polynomial.splits_iff_exists_multiset), and also equivalently, for nonzero $f$,
-[the number of roots of $f$ in $L$, counted with multiplicity, equals its degree](lean:Polynomial.splits_iff_card_roots). Separately, the zero polynomial counts as split over every field.
+$f$ equals its leading coefficient times a product of factors $X - a_i$, and also equivalently, for nonzero $f$,
+the number of roots of $f$ in $L$, counted with multiplicity, equals its degree. Separately, the zero polynomial counts as split over every field.
 
-The extension $L$ is a [splitting field of $f$](lean:Polynomial.IsSplittingField) if $f$ splits over $L$ and $L$ is generated over $K$ by the roots of $f$. If $f$ has roots $a_1, \dots, a_n$ in $L$, the second condition says $L = K(a_1, \dots, a_n)$; no proper subfield of $L$ containing $K$ is a field over which $f$ splits. Starting from any extension $M$ over which $f$ splits, the
-[subfield of $M$ generated over $K$ by the roots of $f$ is a splitting field of $f$](lean:IntermediateField.adjoin_rootSet_isSplittingField).
+The extension $L$ is a splitting field of $f$ if $f$ splits over $L$ and $L$ is generated over $K$ by the roots of $f$. If $f$ has roots $a_1, \dots, a_n$ in $L$, the second condition says $L = K(a_1, \dots, a_n)$; no proper subfield of $L$ containing $K$ is a field over which $f$ splits. Starting from any extension $M$ over which $f$ splits, the
+subfield of $M$ generated over $K$ by the roots of $f$ is a splitting field of $f$.
 
 ## Existence
 
-[A splitting field of $f$ can always be constructed](lean:Polynomial.SplittingField), by induction on the degree. If $f$ has positive degree, choose an [irreducible](trough:Irreducible) factor $g$ of $f$ and pass to the [rupture field](trough:AdjoinRoot) $K[X]/(g)$, in which the class of $X$ is a root of $g$ and hence of $f$. Over this larger field, $f$ has a linear factor; dividing it out leaves a polynomial of smaller degree, to which the induction applies. After at most $\deg f$ steps one reaches an extension over which $f$ splits, and
-[the field built this way is a splitting field of $f$](lean:Polynomial.IsSplittingField.splittingField). Since each step has degree at most the current degree of the polynomial, a splitting field of a polynomial of degree $n \ge 1$ has degree at most $n!$ over $K$.
+A splitting field of $f$ can always be constructed, by induction on the degree. If $f$ has positive degree, choose an [irreducible](trough:Irreducible) factor $g$ of $f$ and pass to the [rupture field](trough:AdjoinRoot) $K[X]/(g)$, in which the class of $X$ is a root of $g$ and hence of $f$. Over this larger field, $f$ has a linear factor; dividing it out leaves a polynomial of smaller degree, to which the induction applies. After at most $\deg f$ steps one reaches an extension over which $f$ splits, and
+the field built this way is a splitting field of $f$. Since each step has degree at most the current degree of the polynomial, a splitting field of a polynomial of degree $n \ge 1$ has degree at most $n!$ over $K$.
 
 ## Examples
 
 - Over $\mathbb{Q}$, the polynomial $X^2 - 2$ has splitting field $\mathbb{Q}(\sqrt 2)$, of degree $2$. Over $\mathbb{R}$, the polynomial $X^2 + 1$ has splitting field $\mathbb{C}$.
 - The roots of $X^3 - 2$ over $\mathbb{Q}$ are $\sqrt[3]{2}$, $\omega\sqrt[3]{2}$ and $\omega^2\sqrt[3]{2}$, where $\omega$ is a primitive cube root of unity. The splitting field is $\mathbb{Q}(\sqrt[3]{2}, \omega)$, of degree $6 = 3!$, so the bound above can be attained. The field $\mathbb{Q}(\sqrt[3]{2})$, of degree $3$, contains one root but is not a splitting field, since it lies inside $\mathbb{R}$ and the other two roots do not.
 - Let $n \ge 1$. If an extension $L$ of $K$ contains a primitive $n$-th root of unity $\zeta$ and $L = K(\zeta)$ (equivalently, $L$ is generated over $K$ by the $n$-th roots of unity, which is how Mathlib phrases the hypothesis), then
-  [$L$ is a splitting field of $X^n - 1$](lean:IsCyclotomicExtension.isSplittingField_X_pow_sub_one), since the roots of $X^n - 1$ are the powers of $\zeta$.
+  $L$ is a splitting field of $X^n - 1$, since the roots of $X^n - 1$ are the powers of $\zeta$.
 - If $K$ is a finite field with $q$ elements and $F$ is a subfield of $K$, then
-  [$K$ is a splitting field of $X^q - X$ over $F$](lean:FiniteField.isSplittingField_sub), because every element of $K$ is a root of this polynomial and it has no other roots.
+  $K$ is a splitting field of $X^q - X$ over $F$, because every element of $K$ is a root of this polynomial and it has no other roots.
 
 ## Properties
 
 - **Uniqueness.** If $L$ is any splitting field of $f$ over $K$, then
-  [$L$ is isomorphic over $K$ to the constructed splitting field](lean:Polynomial.IsSplittingField.algEquiv). The isomorphism is not unique in general: two such isomorphisms differ by an automorphism of $L$ over $K$, and these automorphisms form the Galois group of $f$.
+  $L$ is isomorphic over $K$ to the constructed splitting field. The isomorphism is not unique in general: two such isomorphisms differ by an automorphism of $L$ over $K$, and these automorphisms form the Galois group of $f$.
 - **Universal property.** If $f$ splits over a field extension $M$ of $K$, then a splitting field $L$ of $f$
-  [embeds into $M$ by a homomorphism that is the identity on $K$](lean:Polynomial.IsSplittingField.lift).
+  embeds into $M$ by a homomorphism that is the identity on $K$.
 - **Finiteness.** A splitting field
-  [is a finite-dimensional extension of $K$](lean:Polynomial.IsSplittingField.finiteDimensional), and hence an [algebraic extension](trough:Algebra.IsAlgebraic).
+  is a finite-dimensional extension of $K$, and hence an [algebraic extension](trough:Algebra.IsAlgebraic).
 - **Normality.** A splitting field of a polynomial
-  [is a normal extension of $K$](lean:Normal.of_isSplittingField): every irreducible polynomial over $K$ with one root in $L$ splits over $L$. Conversely, a
-  [finite normal extension is a splitting field of some polynomial](lean:Normal.exists_isSplittingField).
+  is a normal extension of $K$: every irreducible polynomial over $K$ with one root in $L$ splits over $L$. Conversely, a
+  finite normal extension is a splitting field of some polynomial.
 - **Galois extensions.** The splitting field of a [separable polynomial](trough:Polynomial.Separable)
-  [is a Galois extension of $K$](lean:IsGalois.of_separable_splitting_field), and conversely
-  [every finite Galois extension is a splitting field of a separable polynomial](lean:IsGalois.is_separable_splitting_field). The [Galois correspondence](trough:IsGalois.intermediateFieldEquivSubgroup) then applies to such splitting fields.
+  is a Galois extension of $K$, and conversely
+  every finite Galois extension is a splitting field of a separable polynomial. The [Galois correspondence](trough:IsGalois.intermediateFieldEquivSubgroup) then applies to such splitting fields.
 
 ## Finite fields
 
 For a prime $p$ and a positive integer $n$, the splitting field of $X^{p^n} - X$ over $\mathbb{Z}/p\mathbb{Z}$ is a [finite field](trough:Mathlib.FieldTheory.Finite.Basic) that
-[has exactly $p^n$ elements](lean:GaloisField.card): the polynomial has derivative $-1$, so its $p^n$ roots are distinct, and they already form a field. Conversely, a field $K$ with $p^n$ elements, regarded as an algebra over $\mathbb{Z}/p\mathbb{Z}$ (as every field of characteristic $p$ is), is
-[a splitting field of $X^{p^n} - X$](lean:FiniteField.isSplittingField_of_nat_card_eq), so by uniqueness
-[it is isomorphic to the splitting field constructed above](lean:GaloisField.algEquivGaloisField). Hence any two fields with $p^n$ elements are isomorphic.
+has exactly $p^n$ elements: the polynomial has derivative $-1$, so its $p^n$ roots are distinct, and they already form a field. Conversely, a field $K$ with $p^n$ elements, regarded as an algebra over $\mathbb{Z}/p\mathbb{Z}$ (as every field of characteristic $p$ is), is
+a splitting field of $X^{p^n} - X$, so by uniqueness
+it is isomorphic to the splitting field constructed above. Hence any two fields with $p^n$ elements are isomorphic.
 
 ## Related concepts
 
@@ -57,7 +52,7 @@ An [algebraic closure](trough:AlgebraicClosure) of $K$ is an [algebraically clos
 ## In Mathlib
 
 Mathlib separates the property from the construction. Being a splitting field is a predicate on a field extension $L$ of $K$: the polynomial splits over $L$, and $L$ is generated by the roots as a $K$-algebra, which is the same as being generated as a field because the roots are algebraic; an
-[equivalent form uses the subfield generated by the roots](lean:isSplittingField_iff_intermediateField). Splitting is defined for polynomials over any semiring, as being a product of constants and monic linear polynomials, so the zero polynomial splits and its splitting field is $K$ itself. The construction is a specific field, built by repeatedly adjoining a root of an irreducible factor and then rewritten as a quotient of a multivariate polynomial ring over $K$, so that it carries well-behaved algebraic structure. Results are mostly stated for an arbitrary field satisfying the predicate, and the constructed field supplies existence. The field with $p^n$ elements is defined in this way, as the constructed splitting field of $X^{p^n} - X$ over $\mathbb{Z}/p\mathbb{Z}$.
+equivalent form uses the subfield generated by the roots. Splitting is defined for polynomials over any semiring, as being a product of constants and monic linear polynomials, so the zero polynomial splits and its splitting field is $K$ itself. The construction is a specific field, built by repeatedly adjoining a root of an irreducible factor and then rewritten as a quotient of a multivariate polynomial ring over $K$, so that it carries well-behaved algebraic structure. Results are mostly stated for an arbitrary field satisfying the predicate, and the constructed field supplies existence. The field with $p^n$ elements is defined in this way, as the constructed splitting field of $X^{p^n} - X$ over $\mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

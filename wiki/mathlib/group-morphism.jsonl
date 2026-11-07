@@ -1,0 +1,24 @@
+{"id": "af_624714303dbab73d4633bb5c", "subject": [{"type": "generic", "uri": "group-morphism.md"}], "object": [{"location": {"declaration": "MonoidHom"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "morphism of monoids"}}}], "object": [{"location": {"declaration": "MonoidHom"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "a product-preserving map into a group already preserves the identity"}}}], "object": [{"location": {"declaration": "MonoidHom.mk'"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "every bijective morphism is an isomorphism"}}}], "object": [{"location": {"declaration": "MulEquiv.ofBijective"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "map sending $g$ to its coset $gN$"}}}], "object": [{"location": {"declaration": "QuotientGroup.mk'"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "is a morphism to the group $\\{1, -1\\}$"}}}], "object": [{"location": {"declaration": "Equiv.Perm.sign"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "determinant as a monoid morphism"}}}], "object": [{"location": {"declaration": "Matrix.detMonoidHom"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "sends the identity to the identity"}}}], "object": [{"location": {"declaration": "map_one"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "sends inverses to inverses"}}}], "object": [{"location": {"declaration": "map_inv"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "it commutes with integer powers"}}}], "object": [{"location": {"declaration": "map_zpow"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "composite of two morphisms is a morphism"}}}], "object": [{"location": {"declaration": "MonoidHom.comp"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "identity map is a morphism"}}}], "object": [{"location": {"declaration": "MonoidHom.id"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "a subgroup of $G$", "prefix": "It is "}}}], "object": [{"location": {"declaration": "MonoidHom.ker"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "a normal subgroup", "prefix": "fact "}}}], "object": [{"location": {"declaration": "MonoidHom.normal_ker"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "$f$ is injective exactly when its kernel is trivial"}}}], "object": [{"location": {"declaration": "MonoidHom.ker_eq_bot_iff"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "a subgroup of $H$", "prefix": "$f(G)$ is "}}}], "object": [{"location": {"declaration": "MonoidHom.range"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "precisely when $f$ is surjective"}}}], "object": [{"location": {"declaration": "MonoidHom.range_eq_top"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "the image of a subgroup of $G$ is a subgroup of $H$"}}}], "object": [{"location": {"declaration": "Subgroup.map"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "the preimage of a subgroup of $H$ is a subgroup of $G$"}}}], "object": [{"location": {"declaration": "Subgroup.comap"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "the preimage of a normal subgroup is normal"}}}], "object": [{"location": {"declaration": "Subgroup.Normal.comap"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "$G / \\ker f$ is isomorphic to the image of $f$"}}}], "object": [{"location": {"declaration": "QuotientGroup.quotientKerEquivRange"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "is the kernel of the quotient map $G \\to G/N$"}}}], "object": [{"location": {"declaration": "QuotientGroup.ker_mk'"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "morphisms from the abelianization of $G$ to an abelian group $A$ correspond to morphisms $G \\to A$"}}}], "object": [{"location": {"declaration": "Abelianization.lift"}}]}
+{"subject": [{"type": "generic", "uri": "group-morphism.md", "location": {"quote": {"exact": "morphisms from the free group on a set $S$ to a group $H$ correspond to arbitrary maps $S \\to H$"}}}], "object": [{"location": {"declaration": "FreeGroup.lift"}}]}

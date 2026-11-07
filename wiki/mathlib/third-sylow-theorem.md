@@ -1,8 +1,3 @@
----
-article_id: af_5aa4e75cab828ea3f9dafa8b
-concept: card_sylow_modEq_one
----
-
 The **third Sylow theorem** says that in a finite [group](trough:Group) $G$ the number of Sylow
 $p$-subgroups, for a [prime](trough:Prime) $p$, is congruent to $1$ modulo $p$ and divides the
 order of $G$. Together with the [first](trough:Sylow.exists_subgroup_card_pow_prime) and
@@ -17,16 +12,16 @@ Let $G$ be a finite group of order $p^n m$, where $p$ is prime and $p \nmid m$. 
 group in which every element has order a power of $p$. A Sylow $p$-subgroup of $G$ is a maximal
 $p$-subgroup: a [subgroup](trough:Subgroup) that is a $p$-group and is contained in no larger
 such subgroup. In a finite group these are exactly the subgroups of order $p^n$; in particular
-[every Sylow $p$-subgroup has order $p^n$](lean:Sylow.card_eq_multiplicity), and the first Sylow
+every Sylow $p$-subgroup has order $p^n$, and the first Sylow
 theorem shows that they exist. Write $n_p$ for the number of Sylow $p$-subgroups. Then
 
 $$n_p \equiv 1 \pmod p \qquad \text{and} \qquad n_p \mid m.$$
 
-The [congruence $n_p \equiv 1 \pmod p$](lean:card_sylow_modEq_one) (see [congruence](trough:Int.ModEq))
-implies at once that [$p$ does not divide $n_p$](lean:not_dvd_card_sylow). For any Sylow
+The congruence $n_p \equiv 1 \pmod p$ (see [congruence](trough:Int.ModEq))
+implies at once that $p$ does not divide $n_p$. For any Sylow
 $p$-subgroup $P$, with normalizer $N_G(P)$ (the set of elements $g$ with $gPg^{-1} = P$),
-[the number of Sylow $p$-subgroups equals the index of $N_G(P)$](lean:Sylow.card_eq_index_normalizer),
-and [$n_p$ divides the index of $P$](lean:Sylow.card_dvd_index), which is $m$ by
+the number of Sylow $p$-subgroups equals the index of $N_G(P)$,
+and $n_p$ divides the index of $P$, which is $m$ by
 [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card) (see [index](trough:Subgroup.index)).
 
 ## Examples
@@ -45,8 +40,8 @@ and [$n_p$ divides the index of $P$](lean:Sylow.card_dvd_index), which is $m$ by
 
 - **Uniqueness and normality.** By the second Sylow theorem all Sylow $p$-subgroups are
   conjugate, so a Sylow $p$-subgroup is normal exactly when it is the only one:
-  [a normal Sylow $p$-subgroup is unique](lean:Sylow.unique_of_normal), and
-  [a unique Sylow $p$-subgroup is normal](lean:Sylow.normal_of_subsingleton).
+  a normal Sylow $p$-subgroup is unique, and
+  a unique Sylow $p$-subgroup is normal.
 - **Simplicity tests.** If the two conditions force $n_p = 1$ for some prime $p$ dividing $|G|$
   with $p^n < |G|$, then $G$ is not [simple](trough:IsSimpleGroup). For instance, in a group of
   order $20$, $n_5$ divides $4$ and is $1$ modulo $5$, so $n_5 = 1$ and no group of order $20$ is
@@ -59,18 +54,18 @@ Let $P$ be a Sylow $p$-subgroup and let $P$ act on the set of all Sylow $p$-subg
 conjugation, a [group action](trough:MulAction). When a $p$-group acts on a finite set, every
 [orbit](trough:MulAction.orbit) has size a power of $p$, by the orbit–stabilizer relation, so the
 orbits of size greater than $1$ contribute multiples of $p$, and
-[the size of the set is congruent modulo $p$ to the number of fixed points](lean:IsPGroup.card_modEq_card_fixedPoints).
+the size of the set is congruent modulo $p$ to the number of fixed points.
 It remains to show that $P$ is the only fixed point.
 
 A Sylow subgroup $Q$ is fixed when $P$ normalizes $Q$. In that case $PQ$ is a subgroup in which
 $Q$ is normal, and its order $|P|\,|Q| / |P \cap Q|$ is a power of $p$. Maximality of $Q$ gives
 $PQ = Q$, so $P \le Q$; in other words,
-[$Q$ is fixed by $P$ exactly when $P \le Q$](lean:IsPGroup.sylow_mem_fixedPoints_iff). Since $P$
+$Q$ is fixed by $P$ exactly when $P \le Q$. Since $P$
 and $Q$ have the same order, $Q = P$. Hence $n_p \equiv 1 \pmod p$.
 
 For the divisibility, let all of $G$ act by conjugation instead. By the second Sylow theorem this
 action has a single orbit, and the [stabilizer](trough:MulAction.stabilizer) of $P$ is
-[its normalizer](lean:Sylow.stabilizer_eq_normalizer), so the orbit–stabilizer theorem gives
+its normalizer, so the orbit–stabilizer theorem gives
 $n_p = [G : N_G(P)]$. Since $P \le N_G(P)$, this index divides $[G : P] = m$.
 
 ## In Mathlib

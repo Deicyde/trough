@@ -1,8 +1,3 @@
----
-article_id: af_4b0611227895fd885c6bd71c
-concept: Matrix.specialOrthogonalGroup
----
-
 The **special orthogonal group** $\mathrm{SO}_n(R)$ is the group of $n \times n$
 [orthogonal matrices](trough:Matrix.orthogonalGroup) over a commutative
 [ring](trough:Ring) $R$ whose [determinant](trough:Matrix.det) equals $1$. Over the
@@ -21,20 +16,20 @@ Let $R$ be a commutative ring and $n \ge 0$. A square [matrix](trough:Matrix) $A
 (an $n \times n$ matrix over $R$) is orthogonal when its transpose is its inverse, that is,
 $A^{\mathsf{T}} A = I$ and $A A^{\mathsf{T}} = I$. For square matrices over a
 commutative ring one of the two equations implies the other:
-[$A$ is orthogonal exactly when $A A^{\mathsf{T}} = I$](lean:Matrix.mem_orthogonalGroup_iff),
-and [exactly when $A^{\mathsf{T}} A = I$](lean:Matrix.mem_orthogonalGroup_iff').
-The [special orthogonal group](lean:Matrix.specialOrthogonalGroup) is
+$A$ is orthogonal exactly when $A A^{\mathsf{T}} = I$,
+and exactly when $A^{\mathsf{T}} A = I$.
+The special orthogonal group is
 
 $$\mathrm{SO}_n(R) = \{\, A \in M_n(R) : A^{\mathsf{T}} A = I \text{ and } \det A = 1 \,\},$$
 
-so [a matrix lies in $\mathrm{SO}_n(R)$ exactly when it is orthogonal and has determinant $1$](lean:Matrix.mem_specialOrthogonalGroup_iff).
+so a matrix lies in $\mathrm{SO}_n(R)$ exactly when it is orthogonal and has determinant $1$.
 Over $\mathbb{R}$ one writes $\mathrm{SO}(n)$.
 
 It is a [subgroup](trough:Subgroup) of the orthogonal group $\mathrm{O}_n(R)$. If
 $A$ and $B$ lie in $\mathrm{SO}_n(R)$, then $(AB)^{\mathsf{T}} AB = B^{\mathsf{T}} A^{\mathsf{T}} A B = I$
-and [$\det(AB) = \det A \det B$](lean:Matrix.det_mul) $= 1$, so products stay in the
+and $\det(AB) = \det A \det B$ $= 1$, so products stay in the
 group; it contains $I$, and the inverse of $A$ is $A^{\mathsf{T}}$, which is orthogonal and
-[has the same determinant as $A$](lean:Matrix.det_transpose). Equivalently,
+has the same determinant as $A$. Equivalently,
 $\mathrm{SO}_n(R)$ is the intersection of $\mathrm{O}_n(R)$ with the special linear
 group, and it is the kernel of the determinant restricted to $\mathrm{O}_n(R)$, hence
 a [normal subgroup](trough:Subgroup.Normal) of $\mathrm{O}_n(R)$.
@@ -48,7 +43,7 @@ $\det A = 1$ says that it also preserves orientation.
 - **Dimension one.** The only $1 \times 1$ matrix of determinant $1$ is $(1)$, so
   $\mathrm{SO}_1(R)$ is trivial.
 - **Dimension two.** Over any commutative ring,
-  [a $2 \times 2$ matrix lies in $\mathrm{SO}_2(R)$ exactly when it has the form below with $a^2 + b^2 = 1$](lean:Matrix.mem_specialOrthogonalGroup_fin_two_iff):
+  a $2 \times 2$ matrix lies in $\mathrm{SO}_2(R)$ exactly when it has the form below with $a^2 + b^2 = 1$:
 
   $$\begin{pmatrix} a & b \\ -b & a \end{pmatrix}.$$
 
@@ -66,7 +61,7 @@ $\det A = 1$ says that it also preserves orientation.
 ## Properties
 
 - **Determinant.** For every orthogonal matrix $A$,
-  [$(\det A)^2 = 1$](lean:Matrix.det_of_mem_unitary). (Mathlib proves this for
+  $(\det A)^2 = 1$. (Mathlib proves this for
   unitary matrices over a commutative ring with an involution, as the statement that
   $\det A$ is a unitary element, meaning that $\det A$ times its image under the
   involution is $1$; the orthogonal case is the trivial involution, see below, where
@@ -89,9 +84,9 @@ $\det A = 1$ says that it also preserves orientation.
 - **Orthonormal bases.** In a finite-dimensional real
   [inner product space](trough:InnerProductSpace), the matrix expressing one
   orthonormal basis in terms of another
-  [is orthogonal](lean:OrthonormalBasis.toMatrix_orthonormalBasis_mem_orthogonal);
-  [its determinant is $1$ when the two bases have the same orientation](lean:OrthonormalBasis.det_to_matrix_orthonormalBasis_of_same_orientation)
-  and [$-1$ when they have opposite orientations](lean:OrthonormalBasis.det_to_matrix_orthonormalBasis_of_opposite_orientation).
+  is orthogonal;
+  its determinant is $1$ when the two bases have the same orientation
+  and $-1$ when they have opposite orientations.
   Hence the columns of a matrix in $\mathrm{SO}(n)$ form an orthonormal basis of
   $\mathbb{R}^n$ that is positively oriented, that is, has the same
   [orientation](trough:Orientation) as the standard basis, and each such basis

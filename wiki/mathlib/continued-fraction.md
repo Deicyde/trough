@@ -1,8 +1,3 @@
----
-article_id: af_16d5ca3b019cb4f3ee1c0553
-concept: ContFract
----
-
 A **continued fraction** is an expression of the form
 
 $$a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cdots}}}$$
@@ -17,14 +12,14 @@ of the arithmetic of quadratic irrationals.
 
 ## Definition
 
-A [generalized continued fraction](lean:GenContFract) consists of a head term $h$ and a finite
+A generalized continued fraction consists of a head term $h$ and a finite
 or infinite [sequence](trough:Stream'.Seq) of pairs $(c_i, d_i)$ of partial numerators and
 partial denominators, and stands for
 
 $$h + \cfrac{c_0}{d_0 + \cfrac{c_1}{d_1 + \cfrac{c_2}{d_2 + \cdots}}}$$
 
-It is [simple](lean:SimpContFract) when every partial numerator equals $1$, and a
-[regular continued fraction](lean:ContFract) is a simple one whose partial denominators are all
+It is simple when every partial numerator equals $1$, and a
+regular continued fraction is a simple one whose partial denominators are all
 positive. In this general sense a regular continued fraction need not have integer terms; the
 classical regular continued fraction above is the case where the head term and the partial
 denominators are integers, with $h = a_0$ and $d_i = a_{i+1}$, and one writes it
@@ -37,7 +32,7 @@ $$p_n = a_n p_{n-1} + p_{n-2}, \qquad q_n = a_n q_{n-1} + q_{n-2},$$
 
 starting from $p_{-1} = 1$, $q_{-1} = 0$, $p_0 = a_0$, $q_0 = 1$. For a regular continued
 fraction with terms in a linearly ordered [field](trough:Field),
-[the convergents given by the recurrence equal the values of the truncated fractions](lean:ContFract.convs_eq_convs').
+the convergents given by the recurrence equal the values of the truncated fractions.
 
 ## The expansion of a number
 
@@ -52,11 +47,11 @@ $$\frac{415}{93} = [4; 2, 6, 7],$$
 with convergents $4$, $9/2$, $58/13$ and $415/93$.
 
 The algorithm works in any linearly ordered field with a floor function. Its head term is
-[the floor of $v$](lean:GenContFract.of_h_eq_floor), its partial numerators are
-[all equal to $1$](lean:GenContFract.of_partNum_eq_one), and its partial denominators are
-[integers](lean:GenContFract.exists_int_eq_of_partDen) that are
-[at least $1$](<lean:GenContFract.of_one_le_get?_partDen>), so the result is
-[a regular continued fraction](lean:ContFract.of).
+the floor of $v$, its partial numerators are
+all equal to $1$, and its partial denominators are
+integers that are
+at least $1$, so the result is
+a regular continued fraction.
 
 ## Examples
 
@@ -73,25 +68,25 @@ The algorithm works in any linearly ordered field with a floor function. Its hea
 Let $v$ lie in a linearly ordered field with a floor function, such as the real numbers, and
 let $p_n/q_n$ be the convergents of its expansion.
 
-- **Termination.** [The expansion of $v$ terminates if and only if $v$ is rational](lean:GenContFract.terminates_iff_rat).
+- **Termination.** The expansion of $v$ terminates if and only if $v$ is rational.
   If the expansion has no term $a_{n+1}$, then
-  [the $n$-th convergent equals $v$](lean:GenContFract.of_correctness_of_terminatedAt).
+  the $n$-th convergent equals $v$.
 - **Determinant formula.** For a simple continued fraction with terms in any field, whenever
   the term $a_{n+1}$ exists,
-  [$p_n q_{n+1} - q_n p_{n+1} = (-1)^{n+1}$](lean:SimpContFract.determinant). With integer terms
+  $p_n q_{n+1} - q_n p_{n+1} = (-1)^{n+1}$. With integer terms
   this shows that $p_n$ and $q_n$ are coprime, so each convergent is in lowest terms.
 - **Growth of denominators.** Whenever the expansion has a term $a_n$, the denominator
-  [$q_n$ is at least the Fibonacci number $F_{n+1}$](lean:GenContFract.succ_nth_fib_le_of_nth_den), with $F_0 = 0$ and
+  $q_n$ is at least the Fibonacci number $F_{n+1}$, with $F_0 = 0$ and
   $F_1 = 1$;
   the golden ratio shows that this bound is attained.
 - **Error bound.** Whenever the expansion has a term $a_{n+1}$,
-  [$|v - p_n/q_n| \le 1/(q_n q_{n+1})$](lean:GenContFract.abs_sub_convs_le). Since the
-  denominators [never decrease](lean:GenContFract.of_den_mono), this is at most $1/q_n^2$.
+  $|v - p_n/q_n| \le 1/(q_n q_{n+1})$. Since the
+  denominators never decrease, this is at most $1/q_n^2$.
 - **Convergence.** When the field carries its order topology,
-  [the convergents tend to $v$](lean:GenContFract.of_convergence).
+  the convergents tend to $v$.
 - **Legendre's theorem.** If $v$ is real and a rational number $x/y$ in lowest terms with
   $y \ge 1$ satisfies $|v - x/y| < 1/(2y^2)$, then
-  [$x/y$ is one of the convergents of $v$](lean:Real.exists_convs_eq_rat).
+  $x/y$ is one of the convergents of $v$.
 
 Among classical regular continued fractions, every irrational real number has exactly one
 infinite expansion, and every infinite one converges to an irrational number. A rational number
@@ -120,9 +115,9 @@ $a_1, a_2, \dots$, and a finite continued fraction is a sequence that terminates
 are defined for every index $n$ and take values in the field (more generally, division ring) of
 the terms; once a continued
 fraction has no term $a_{n+1}$,
-[every later convergent equals the $n$-th](lean:GenContFract.convs_stable_of_terminated). For
+every later convergent equals the $n$-th. For
 real numbers there is also a direct recursive definition of the convergents as rational
-numbers, which [agrees with the general one](lean:Real.convs_eq_convergent).
+numbers, which agrees with the general one.
 
 ## Depends on
 

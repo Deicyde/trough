@@ -1,8 +1,3 @@
----
-article_id: af_7d8d25ac4e777bdd74493fbd
-concept: Sylow.isPretransitive_of_finite
----
-
 The **second Sylow theorem** says that in a finite [group](trough:Group), for each prime $p$, any two
 Sylow $p$-subgroups are conjugate. The [first Sylow theorem](trough:Sylow.exists_subgroup_card_pow_prime)
 guarantees that Sylow subgroups exist; the second says that, up to conjugation, there is only one of
@@ -16,28 +11,28 @@ Let $G$ be a finite group and $p$ a prime, and write $|G| = p^n m$ with $p \nmid
 $p$-subgroup of $G$ is a [subgroup](trough:Subgroup) of order $p^n$, the largest power of $p$
 dividing $|G|$. Equivalently, it is a subgroup in which every element has [order](trough:orderOf) a
 power of $p$ and which is maximal with that property. For a finite group,
-[every element has $p$-power order exactly when the group has $p$-power order](lean:IsPGroup.iff_card)
+every element has $p$-power order exactly when the group has $p$-power order
 (one direction uses [Cauchy's theorem](trough:exists_prime_orderOf_dvd_card)), so a maximal such
 subgroup has order $p^k$ for some $k \le n$. That $k = n$ takes more work. A subgroup of order $p^n$
 exists by the first Sylow theorem, and the fixed-point argument in the proof below shows that every
 subgroup of $p$-power order lies in a conjugate of it; so
-[a maximal one has order exactly $p^n$](lean:Sylow.card_eq_multiplicity). Conversely, by
+a maximal one has order exactly $p^n$. Conversely, by
 [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card) no subgroup of $p$-power order properly
-contains one of order $p^n$, so [a subgroup of order $p^n$ is a Sylow $p$-subgroup](lean:Sylow.ofCard).
+contains one of order $p^n$, so a subgroup of order $p^n$ is a Sylow $p$-subgroup.
 
 The group $G$ acts on the set of its Sylow $p$-subgroups by conjugation, $g \cdot P = gPg^{-1}$. The
-theorem says that [this action is transitive](lean:Sylow.isPretransitive_of_finite): for any two
+theorem says that this action is transitive: for any two
 Sylow $p$-subgroups $P$ and $Q$ there is some $g \in G$ with
 
 $$Q = gPg^{-1}.$$
 
 Since conjugation by $g$ is an automorphism of $G$, it follows that
-[any two Sylow $p$-subgroups are isomorphic](lean:Sylow.equiv).
+any two Sylow $p$-subgroups are isomorphic.
 
 Textbooks number the Sylow theorems differently. Many include in the second theorem the stronger
 assertion that every subgroup of $p$-power order lies in some conjugate of a given Sylow
 $p$-subgroup; this follows by combining the statement above with the fact that
-[every such subgroup lies in some Sylow $p$-subgroup](lean:IsPGroup.exists_le_sylow).
+every such subgroup lies in some Sylow $p$-subgroup.
 
 ## Examples
 
@@ -57,17 +52,17 @@ $p$-subgroup; this follows by combining the statement above with the fact that
   relation $n_p$ equals the [index](trough:Subgroup.index) of the
   [stabilizer](trough:MulAction.stabilizer) of $P$. That stabilizer is the normalizer
   $N_G(P) = \{g \in G : gPg^{-1} = P\}$ of $P$
-  ([the stabilizer is the normalizer](lean:Sylow.stabilizer_eq_normalizer)), so $n_p = [G : N_G(P)]$
-  ([the number of Sylow subgroups is the index of the normalizer](lean:Sylow.card_eq_index_normalizer)).
-  Since $P \le N_G(P)$, [$n_p$ divides the index of $P$](lean:Sylow.card_dvd_index), which is
+  (the stabilizer is the normalizer), so $n_p = [G : N_G(P)]$
+  (the number of Sylow subgroups is the index of the normalizer).
+  Since $P \le N_G(P)$, $n_p$ divides the index of $P$, which is
   $[G : P] = m$.
 - **Normality.** A Sylow $p$-subgroup is normal exactly when it is the only one. If $P$ is normal,
   conjugation fixes it, and transitivity shows that
-  [no other Sylow $p$-subgroup exists](lean:Sylow.unique_of_normal); conversely,
-  [a Sylow $p$-subgroup that is the only one is normal](lean:Sylow.normal_of_subsingleton), since
+  no other Sylow $p$-subgroup exists; conversely,
+  a Sylow $p$-subgroup that is the only one is normal, since
   each conjugate of it is again a Sylow $p$-subgroup.
 - **Frattini's argument.** If $N$ is a normal subgroup of $G$ and $P$ is a Sylow $p$-subgroup of $N$,
-  then [$G = N_G(P)\,N$](lean:Sylow.normalizer_sup_eq_top): for $g \in G$, the subgroup $gPg^{-1}$ is
+  then $G = N_G(P)\,N$: for $g \in G$, the subgroup $gPg^{-1}$ is
   again a Sylow $p$-subgroup of $N$, so some $n \in N$ conjugates it back to $P$, and then $ng$
   normalizes $P$.
 
@@ -75,15 +70,15 @@ $p$-subgroup; this follows by combining the statement above with the fact that
 
 The proof uses one fact about [group actions](trough:MulAction) of $p$-groups: if a group of
 $p$-power order acts on a finite set $X$, then
-[$|X|$ is congruent modulo $p$ to the number of fixed points](lean:IsPGroup.card_modEq_card_fixedPoints),
+$|X|$ is congruent modulo $p$ to the number of fixed points,
 because by orbit–stabilizer each orbit has size equal to the index of a stabilizer, which divides the
 order of the acting group, so every orbit that is not a single point has size a positive power of $p$. In particular,
-if $p \nmid |X|$ then [the action has a fixed point](lean:IsPGroup.nonempty_fixed_point_of_prime_not_dvd_card).
+if $p \nmid |X|$ then the action has a fixed point.
 
 Let $P$ and $Q$ be Sylow $p$-subgroups and let $X$ be the [orbit](trough:MulAction.orbit) of $P$ under
 conjugation by $G$. A subgroup $H$ of $p$-power order fixes a Sylow $p$-subgroup $S$ under conjugation
 exactly when $H$ normalizes $S$, and then $HS$ is a subgroup of $p$-power order containing $S$; by
-maximality, [$H$ fixes $S$ if and only if $H \le S$](lean:IsPGroup.sylow_mem_fixedPoints_iff).
+maximality, $H$ fixes $S$ if and only if $H \le S$.
 
 Restrict the action to $P$. A fixed point $S \in X$ satisfies $P \le S$, and since both have the same
 order, $S = P$. So $P$ has exactly one fixed point on $X$, and $|X| \equiv 1 \pmod p$. Now restrict

@@ -1,8 +1,3 @@
----
-article_id: af_1911102e03c53d3528cda58e
-concept: Ideal.quotientInfRingEquivPiQuotient
----
-
 The **Chinese remainder theorem** says that a finite system of congruences
 with pairwise coprime moduli always has a solution, and that the solution is unique
 modulo the product of the moduli. In the language of rings it says that the
@@ -17,38 +12,38 @@ computer arithmetic.
 
 Let $R$ be a commutative ring. Two ideals $I$ and $J$ of $R$ are
 [coprime](trough:IsCoprime) when
-[$I + J = R$](lean:Ideal.isCoprime_iff_sup_eq), that is, when $i + j = 1$ for
+$I + J = R$, that is, when $i + j = 1$ for
 some $i \in I$ and $j \in J$. Let $I_1, \dots, I_k$ be finitely many ideals that
 are pairwise coprime, meaning $I_i$ and $I_j$ are coprime whenever $i \neq j$.
 Then the map sending the class of $x$ modulo $I_1 \cap \dots \cap I_k$ to the
 tuple of its classes modulo each $I_i$ is
-[an isomorphism of rings](lean:Ideal.quotientInfRingEquivPiQuotient)
+an isomorphism of rings
 
 $$R/(I_1 \cap \dots \cap I_k) \;\cong\; R/I_1 \times \dots \times R/I_k.$$
 
 Equivalently, for any elements $x_1, \dots, x_k$ of $R$ there is
-[an $r \in R$ with $r - x_i \in I_i$ for every $i$](lean:Ideal.exists_forall_sub_mem_ideal),
+an $r \in R$ with $r - x_i \in I_i$ for every $i$,
 and $r$ is unique modulo the intersection. For pairwise coprime ideals the
 intersection equals the product:
-[$I_1 \cdots I_k = I_1 \cap \dots \cap I_k$](lean:Ideal.prod_eq_iInf_of_pairwise_isCoprime),
+$I_1 \cdots I_k = I_1 \cap \dots \cap I_k$,
 so the left-hand side may also be written $R/(I_1 \cdots I_k)$; for two ideals,
-[$R/IJ \cong R/I \times R/J$ when $I$ and $J$ are coprime](lean:Ideal.quotientMulEquivQuotientProd).
+$R/IJ \cong R/I \times R/J$ when $I$ and $J$ are coprime.
 
 ## The integers
 
 In the ring of [integers](trough:Int) the ideals $m\mathbb{Z}$ and $n\mathbb{Z}$ are
 coprime exactly when $\gcd(m, n) = 1$. For coprime natural numbers $m$ and $n$
 the theorem gives
-[$\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$](lean:ZMod.chineseRemainder),
+$\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$,
 and more generally, for pairwise coprime natural numbers $n_1, \dots, n_k$,
-[$\mathbb{Z}/(n_1 \cdots n_k)\mathbb{Z} \cong \prod_i \mathbb{Z}/n_i\mathbb{Z}$](lean:ZMod.prodEquivPi).
+$\mathbb{Z}/(n_1 \cdots n_k)\mathbb{Z} \cong \prod_i \mathbb{Z}/n_i\mathbb{Z}$.
 In terms of [congruences](trough:Int.ModEq): if $\gcd(m, n) = 1$, then for any
 natural numbers $a$ and $b$ there is
-[a natural number $k$ with $k \equiv a \pmod m$ and $k \equiv b \pmod n$](lean:Nat.chineseRemainder),
+a natural number $k$ with $k \equiv a \pmod m$ and $k \equiv b \pmod n$,
 and when $m, n \ge 1$ it can be chosen
-[with $k < mn$](lean:Nat.chineseRemainder_lt_mul). Uniqueness says that, for
+with $k < mn$. Uniqueness says that, for
 natural numbers $x$ and $y$,
-[$x \equiv y$ modulo both $m$ and $n$ if and only if $x \equiv y \pmod{mn}$](lean:Nat.modEq_and_modEq_iff_modEq_mul).
+$x \equiv y$ modulo both $m$ and $n$ if and only if $x \equiv y \pmod{mn}$.
 
 ## Examples
 
@@ -90,15 +85,15 @@ each $i$.
 - **Euler's totient function is multiplicative.** Restricting the isomorphism
   $\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$
   to [invertible residues](trough:ZMod.unitOfCoprime) shows that
-  [$\varphi(mn) = \varphi(m)\,\varphi(n)$ for coprime $m$ and $n$](lean:Nat.totient_mul),
+  $\varphi(mn) = \varphi(m)\,\varphi(n)$ for coprime $m$ and $n$,
   where $\varphi$ is [Euler's totient function](trough:Nat.totient).
 - **Prime power decomposition.** For $n \ge 1$ with prime factorization
   $n = p_1^{e_1} \cdots p_s^{e_s}$,
-  [$\mathbb{Z}/n\mathbb{Z} \cong \prod_i \mathbb{Z}/p_i^{e_i}\mathbb{Z}$](lean:ZMod.equivPi),
+  $\mathbb{Z}/n\mathbb{Z} \cong \prod_i \mathbb{Z}/p_i^{e_i}\mathbb{Z}$,
   so arithmetic modulo $n$ reduces to arithmetic modulo prime powers.
 - **Distinct maximal ideals.** Two distinct
   [maximal ideals](trough:Ideal.IsMaximal)
-  [are always coprime](lean:Ideal.isCoprime_of_isMaximal), so the theorem applies
+  are always coprime, so the theorem applies
   to any finite set of distinct maximal ideals and gives a product of fields.
 
 ## Generalizations
@@ -106,7 +101,7 @@ each $i$.
 In a Dedekind domain, such as the ring of integers of a number field, every
 nonzero ideal $I$ factors as a product of powers $P_1^{e_1} \cdots P_s^{e_s}$ of
 distinct prime ideals, and the theorem gives
-[$R/I \cong \prod_i R/P_i^{e_i}$](lean:IsDedekindDomain.quotientEquivPiFactors),
+$R/I \cong \prod_i R/P_i^{e_i}$,
 which generalizes the prime power decomposition of $\mathbb{Z}/n\mathbb{Z}$.
 
 ## In Mathlib
@@ -118,7 +113,7 @@ The isomorphism is the canonical map, not merely an abstract isomorphism, and
 its value on the class of $x$ is the family of classes of $x$. Half of the
 statement holds with no hypotheses: for any family of two-sided ideals in any
 ring, finite or infinite,
-[the canonical map from the quotient by the intersection to the product of the quotients is injective](lean:Ideal.quotientInfToPiQuotient_inj);
+the canonical map from the quotient by the intersection to the product of the quotients is injective;
 coprimality and finiteness are needed only for surjectivity. The integer
 versions are stated for natural-number moduli, and Mathlib's ring of integers
 modulo $0$ is the integers themselves, so the two-modulus version is a true

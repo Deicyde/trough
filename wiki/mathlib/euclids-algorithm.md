@@ -1,8 +1,3 @@
----
-article_id: af_a797589fc5552e55da1054cb
-concept: Nat.xgcd
----
-
 **Euclid's algorithm** computes the [greatest common divisor](trough:GCDMonoid.gcd) of two
 [natural numbers](trough:Nat) by repeated division with remainder. Its refinement, the
 **extended Euclidean algorithm**, also produces [integers](trough:Int) $x$ and $y$ with
@@ -35,8 +30,8 @@ $$s_{k+1} = s_{k-1} - q_k s_k, \qquad t_{k+1} = t_{k-1} - q_k t_k.$$
 By induction $r_k = a s_k + b t_k$ for every $k$, since the same linear recurrence holds for
 all three sequences. At the last nonzero remainder this reads $\gcd(a, b) = a s_n + b t_n$.
 In Mathlib the extended algorithm on natural numbers is
-[a function returning a pair of integer coefficients](lean:Nat.xgcd), and its two components
-$x$ and $y$ satisfy [$\gcd(a, b) = ax + by$](lean:Nat.gcd_eq_gcd_ab).
+a function returning a pair of integer coefficients, and its two components
+$x$ and $y$ satisfy $\gcd(a, b) = ax + by$.
 
 ## Examples
 
@@ -69,18 +64,18 @@ and $23$, the residue of $-17$, is the inverse of $7$ modulo $40$.
   Fibonacci numbers, whose quotients are all $1$ except the last, attain this bound.
 - **Linear combinations.** For integers $a$ and $b$, a natural number $n$ can be written as
   $ax + by$ with integers $x, y$
-  [exactly when $\gcd(a, b)$ divides $n$](lean:Int.gcd_dvd_iff), and when $a \neq 0$
-  [$\gcd(a, b)$ is the least positive number of this form](lean:Int.gcd_least_linear).
+  exactly when $\gcd(a, b)$ divides $n$, and when $a \neq 0$
+  $\gcd(a, b)$ is the least positive number of this form.
   Running the extended algorithm on $|a|$ and $|b|$, changing the signs of the two
   coefficients to match those of $a$ and $b$, and multiplying them by $n/\gcd(a, b)$ solves
   $ax + by = n$ whenever a solution exists.
 - **Modular inverses.** If $n$ and $k$ are coprime and $k > 1$, the coefficient of $n$ in
   $1 = nx + ky$ reduced modulo $k$ is an inverse of $n$: there is
-  [an $m$ with $0 \le m < k$ and $nm \equiv 1 \pmod k$](lean:Nat.exists_mul_mod_eq_one_of_coprime).
+  an $m$ with $0 \le m < k$ and $nm \equiv 1 \pmod k$.
   This is how inverses are computed in practice, and it underlies the constructive proof of
   the [Chinese remainder theorem](trough:Ideal.quotientInfRingEquivPiQuotient).
 - **Euclid's lemma.** For integers $a$, $b$, $c$, multiplying $1 = ax + cy$ by $b$ shows that
-  [if $a$ divides $bc$ and $\gcd(a, c) = 1$, then $a$ divides $b$](lean:Int.dvd_of_dvd_mul_left_of_gcd_one),
+  if $a$ divides $bc$ and $\gcd(a, c) = 1$, then $a$ divides $b$,
   the key step towards the uniqueness of prime factorizations.
 - **Continued fractions.** For $a, b > 0$ the quotients $q_1, \dots, q_n$ are the partial
   quotients of the [continued fraction](trough:ContFract) of $a/b$; for the example above,
@@ -93,14 +88,14 @@ The algorithm uses only division with remainder, so it runs in every
 on remainders. Examples are the integers ([a Euclidean domain](trough:Int.euclideanDomain)) and
 [polynomials in one variable over a field](trough:Polynomial.instEuclideanDomain). The
 [general version](trough:EuclideanDomain.gcd) rests on the same step,
-[$\gcd(a, b) = \gcd(b \bmod a, a)$](lean:EuclideanDomain.gcd_val); its output
-[divides both inputs](lean:EuclideanDomain.gcd_dvd) and
-[is divisible by every common divisor](lean:EuclideanDomain.dvd_gcd). The
-[extended version](lean:EuclideanDomain.xgcd) again returns coefficients with
-[$\gcd(a, b) = a x + b y$](lean:EuclideanDomain.gcd_eq_gcd_ab). In such a ring the greatest
+$\gcd(a, b) = \gcd(b \bmod a, a)$; its output
+divides both inputs and
+is divisible by every common divisor. The
+extended version again returns coefficients with
+$\gcd(a, b) = a x + b y$. In such a ring the greatest
 common divisor is determined only up to a unit factor, and the algorithm picks one. For the
 integers, the coefficients can be read off from those for the absolute values, giving
-[Bézout's identity over the integers](lean:Int.gcd_eq_gcd_ab). In rings that are not
+Bézout's identity over the integers. In rings that are not
 Euclidean, such as polynomials in two variables, a greatest common divisor may exist without
 being a combination $ax + by$.
 
@@ -111,15 +106,15 @@ as integers, since one of them is usually negative. The recursion keeps two trip
 remainder with its two coefficients; each step forms a new triple from the two and drops the
 older one; the first division divides the second input by the first, so when the first input is
 the larger one the opening step merely swaps the two. Whatever coefficients the recursion starts
-from, [its final remainder is the greatest common divisor](lean:Nat.xgcdAux_fst), and started
+from, its final remainder is the greatest common divisor, and started
 from the triples for the two inputs it
-[returns that divisor together with the coefficient pair](lean:Nat.xgcdAux_val). The greatest
+returns that divisor together with the coefficient pair. The greatest
 common divisor of natural numbers comes from Lean's core library, which computes it by the
 same recursion and sets $\gcd(0, b) = b$. Accordingly, when the first input is $0$
-[the first coefficient is $0$](lean:Nat.gcdA_zero_left) and
-[the second is $1$](lean:Nat.gcdB_zero_left), while for a nonzero first input and second input
-$0$ [the first coefficient is $1$](lean:Nat.gcdA_zero_right) and
-[the second is $0$](lean:Nat.gcdB_zero_right). The integer versions reduce to the natural ones
+the first coefficient is $0$ and
+the second is $1$, while for a nonzero first input and second input
+$0$ the first coefficient is $1$ and
+the second is $0$. The integer versions reduce to the natural ones
 by adjusting signs, and the Euclidean-domain versions are separate definitions written for
 any such ring with decidable equality.
 

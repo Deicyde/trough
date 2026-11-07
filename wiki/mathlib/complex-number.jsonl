@@ -1,0 +1,36 @@
+{"id": "af_9bbe3a6855d39ce7c10bf75d", "subject": [{"type": "generic", "uri": "complex-number.md"}], "object": [{"location": {"declaration": "Complex"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "complex number", "prefix": "A "}}}], "object": [{"location": {"declaration": "Complex"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "are equal when their real parts agree and their imaginary parts agree"}}}], "object": [{"location": {"declaration": "Complex.ext"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$ac - bd$"}}}], "object": [{"location": {"declaration": "Complex.mul_re"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$ad + bc$"}}}], "object": [{"location": {"declaration": "Complex.mul_im"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "is injective"}}}], "object": [{"location": {"declaration": "Complex.ofReal_injective"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "imaginary unit"}}}], "object": [{"location": {"declaration": "Complex.I"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$i^2 = -1$"}}}], "object": [{"location": {"declaration": "Complex.I_sq"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "as $z = a + bi$"}}}], "object": [{"location": {"declaration": "Complex.re_add_im"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "a field", "prefix": "is "}}}], "object": [{"location": {"declaration": "Complex.instField"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "has the same real part"}}}], "object": [{"location": {"declaration": "Complex.conj_re"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "the negated imaginary part"}}}], "object": [{"location": {"declaration": "Complex.conj_im"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$\\bar z = z$ exactly when $z$ is real"}}}], "object": [{"location": {"declaration": "Complex.conj_eq_iff_real"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$z \\bar z = a^2 + b^2$"}}}], "object": [{"location": {"declaration": "Complex.mul_conj"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$|z|^2 = a^2 + b^2$"}}}], "object": [{"location": {"declaration": "Complex.sq_norm"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$|zw| = |z|\\,|w|$"}}}], "object": [{"location": {"declaration": "Complex.norm_mul"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "triangle inequality $|z + w| \\le |z| + |w|$"}}}], "object": [{"location": {"declaration": "Complex.norm_add_le'"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "its dimension is $2$"}}}], "object": [{"location": {"declaration": "Complex.finrank_real_complex"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "every polynomial of positive degree with complex coefficients has a complex root"}}}], "object": [{"location": {"declaration": "Complex.exists_root"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$\\mathbb{C}$ is algebraically closed"}}}], "object": [{"location": {"declaration": "Complex.isAlgClosed"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "has characteristic zero"}}}], "object": [{"location": {"declaration": "Complex.instCharZero"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$\\mathbb{R}$-algebra homomorphisms, are the identity and conjugation"}}}], "object": [{"location": {"declaration": "Complex.real_algHom_eq_id_or_conj"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "the only continuous ring homomorphisms from $\\mathbb{C}$ to itself"}}}], "object": [{"location": {"declaration": "Complex.ringHom_eq_id_or_conj_of_continuous"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$e^{z + w} = e^z e^w$ for all complex $z$ and $w$"}}}], "object": [{"location": {"declaration": "Complex.exp_add"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$e^{ix} = \\cos x + i \\sin x$ for every complex $x$"}}}], "object": [{"location": {"declaration": "Complex.exp_mul_I"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "has absolute value $1$"}}}], "object": [{"location": {"declaration": "Complex.norm_exp_ofReal_mul_I"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$e^{i\\pi} = -1$"}}}], "object": [{"location": {"declaration": "Complex.exp_pi_mul_I"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$z = |z|\\,e^{i \\arg z}$"}}}], "object": [{"location": {"declaration": "Complex.norm_mul_exp_arg_mul_I"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "argument", "prefix": "where the "}}}], "object": [{"location": {"declaration": "Complex.arg"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "taken to be $0$"}}}], "object": [{"location": {"declaration": "Complex.arg_zero"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "$(\\cos x + i \\sin x)^n = \\cos nx + i \\sin nx$ for every complex $x$ and natural number $n$"}}}], "object": [{"location": {"declaration": "Complex.cos_add_sin_mul_I_pow"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "the numbers $e^{2\\pi i k/n}$ with $0 \\le k < n$"}}}], "object": [{"location": {"declaration": "Complex.mem_rootsOfUnity"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "there are exactly $n$ of them"}}}], "object": [{"location": {"declaration": "Complex.card_rootsOfUnity"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "the formula $z^{-1} = \\bar z / (a^2 + b^2)$ holds for every $z$"}}}], "object": [{"location": {"declaration": "Complex.inv_def"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "defined as $(\\operatorname{Re} z)^2 + (\\operatorname{Im} z)^2$"}}}], "object": [{"location": {"declaration": "Complex.normSq_apply"}}]}
+{"subject": [{"type": "generic", "uri": "complex-number.md", "location": {"quote": {"exact": "a partial order on $\\mathbb{C}$"}}}], "object": [{"location": {"declaration": "Complex.partialOrder"}}]}

@@ -1,8 +1,3 @@
----
-article_id: af_7ff9b4311d7f771e3e92033e
-concept: Matrix.specialUnitaryGroup
----
-
 The **special unitary group** $\mathrm{SU}(n)$ is the group of complex
 $n \times n$ unitary matrices whose [determinant](trough:Matrix.det) equals $1$.
 It is the subgroup of the [unitary group](trough:Matrix.unitaryGroup) $\mathrm{U}(n)$
@@ -18,23 +13,23 @@ For a complex [matrix](trough:Matrix) $A$, write $A^* = \overline{A}^{\mathsf T}
 conjugate transpose. A square matrix $A$ is unitary when $A^*A = AA^* = I$, that is,
 when its inverse is $A^*$. For square matrices over a commutative
 [ring](trough:Ring) with an involution either equation alone suffices:
-[$A$ is unitary as soon as $AA^* = I$](lean:Matrix.mem_unitaryGroup_iff), and
-[likewise as soon as $A^*A = I$](lean:Matrix.mem_unitaryGroup_iff').
+$A$ is unitary as soon as $AA^* = I$, and
+likewise as soon as $A^*A = I$.
 Throughout, $n \ge 1$, and the
-[special unitary group](lean:Matrix.specialUnitaryGroup) is
+special unitary group is
 
 $$\mathrm{SU}(n) = \{ A \in \mathrm{U}(n) : \det A = 1 \},$$
 
-so [a matrix lies in $\mathrm{SU}(n)$ exactly when it is unitary and has determinant $1$](lean:Matrix.mem_specialUnitaryGroup_iff).
-In particular [$\mathrm{SU}(n)$ is contained in $\mathrm{U}(n)$](lean:Matrix.specialUnitaryGroup_le_unitaryGroup).
+so a matrix lies in $\mathrm{SU}(n)$ exactly when it is unitary and has determinant $1$.
+In particular $\mathrm{SU}(n)$ is contained in $\mathrm{U}(n)$.
 Equivalently, $\mathrm{SU}(n)$ is the intersection of $\mathrm{U}(n)$ with the
 [special linear group](trough:Matrix.SpecialLinearGroup) $\mathrm{SL}_n(\mathbb C)$.
 
 It is a [subgroup](trough:Subgroup) of $\mathrm{U}(n)$. Since
-[$\det(AB) = \det A \det B$](lean:Matrix.det_mul), a product of two matrices of
+$\det(AB) = \det A \det B$, a product of two matrices of
 determinant $1$ again has determinant $1$. The inverse of a unitary matrix is its
 conjugate transpose, and $\det A^* = \overline{\det A}$, so
-[the inverse of an element of $\mathrm{SU}(n)$ is its conjugate transpose](lean:Matrix.star_eq_inv)
+the inverse of an element of $\mathrm{SU}(n)$ is its conjugate transpose
 and again lies in $\mathrm{SU}(n)$.
 
 ## Examples
@@ -60,7 +55,7 @@ and again lies in $\mathrm{SU}(n)$.
 ## Properties
 
 - **The determinant of a unitary matrix.** For $A$ unitary,
-  [$\det A$ is unitary as an element of the ring, that is, $\overline{\det A}\,\det A = \det A\,\overline{\det A} = 1$](lean:Matrix.det_of_mem_unitary);
+  $\det A$ is unitary as an element of the ring, that is, $\overline{\det A}\,\det A = \det A\,\overline{\det A} = 1$;
   over $\mathbb C$ this says $|\det A| = 1$. The determinant is therefore a group
   homomorphism from $\mathrm{U}(n)$ onto $\mathrm{U}(1)$, surjective because
   $\operatorname{diag}(z, 1, \dots, 1)$ has determinant $z$. Its kernel is
@@ -100,11 +95,11 @@ group](trough:Matrix.orthogonalGroup).
 Mathlib defines the special unitary group in this general form: for any finite
 index type and any commutative ring with an involution, it is the set of square
 matrices that are unitary and have determinant $1$. On matrices the involution is
-[the conjugate transpose](lean:Matrix.star_eq_conjTranspose), and unitary means
+the conjugate transpose, and unitary means
 that both products with the conjugate transpose are the identity. The set is
 built as a submonoid of all square matrices, namely the intersection of the
 unitary group with the kernel of
-[the determinant, viewed as a homomorphism of multiplicative monoids](lean:Matrix.detMonoidHom);
+the determinant, viewed as a homomorphism of multiplicative monoids;
 the group structure is then added, with the conjugate transpose as inverse. The
 special orthogonal group is the same construction with the trivial involution.
 The documentation of the definition notes that it is only correct when $2$ is

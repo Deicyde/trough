@@ -1,8 +1,3 @@
----
-article_id: af_27978b6720bf5b67e58c0cef
-concept: Matrix.GeneralLinearGroup
----
-
 The **general linear group** $\mathrm{GL}_n(R)$ is the [group](trough:Group) of invertible
 $n \times n$ [matrices](trough:Matrix) with entries in a ring $R$, under matrix
 multiplication. Over a [field](trough:Field) $K$ it is the group of all invertible
@@ -15,7 +10,7 @@ finite groups.
 ## Definition
 
 Let $R$ be a ring and $n \ge 0$. The
-[general linear group $\mathrm{GL}_n(R)$](lean:Matrix.GeneralLinearGroup) consists of
+general linear group $\mathrm{GL}_n(R)$ consists of
 the $n \times n$ matrices $A$ over $R$ that have a two-sided inverse, a matrix $B$
 with $AB = BA = I$, where $I$ is the identity matrix. Products and inverses of
 invertible matrices are invertible, and matrix multiplication is associative, so
@@ -23,8 +18,8 @@ these matrices form a group with identity $I$. Equivalently, $\mathrm{GL}_n(R)$ 
 the group of units of the matrix ring of $n \times n$ matrices over $R$.
 
 When $R$ is commutative, the [determinant](trough:Matrix.det) gives a practical test:
-[a square matrix is invertible exactly when its determinant is a unit of
-$R$](lean:Matrix.isUnit_iff_isUnit_det). Over a field this means $\det A \neq 0$;
+a square matrix is invertible exactly when its determinant is a unit of
+$R$. Over a field this means $\det A \neq 0$;
 over the integers it means $\det A = \pm 1$.
 
 ## Examples
@@ -46,34 +41,34 @@ over the integers it means $\det A = \pm 1$.
 
 **Linear automorphisms.** For a commutative ring $R$, an invertible matrix acts
 on column vectors by multiplication, and this identifies
-[$\mathrm{GL}_n(R)$ with the group of invertible linear maps of
-$R^n$ to itself](lean:Matrix.GeneralLinearGroup.toLin). More generally, a choice of
+$\mathrm{GL}_n(R)$ with the group of invertible linear maps of
+$R^n$ to itself. More generally, a choice of
 [basis](trough:Module.Basis) of a module $V$ with $n$ elements
-[identifies $\mathrm{GL}_n(R)$ with the group of invertible linear maps of
-$V$](lean:Matrix.GeneralLinearGroup.toLin'); a different basis changes this
+identifies $\mathrm{GL}_n(R)$ with the group of invertible linear maps of
+$V$; a different basis changes this
 identification by conjugation.
 
 **The determinant.** For a commutative ring $R$,
-[the determinant is a group homomorphism from $\mathrm{GL}_n(R)$ to
-$R^\times$](lean:Matrix.GeneralLinearGroup.det), and for $n \ge 1$
-[it is surjective](lean:Matrix.GeneralLinearGroup.det_surjective): the diagonal
+the determinant is a group homomorphism from $\mathrm{GL}_n(R)$ to
+$R^\times$, and for $n \ge 1$
+it is surjective: the diagonal
 matrix with entries $u, 1, \dots, 1$ has determinant $u$. Its kernel is the
-[special linear group](trough:Matrix.SpecialLinearGroup): [the matrices of
+[special linear group](trough:Matrix.SpecialLinearGroup): the matrices of
 determinant $1$ are exactly the kernel of the
-determinant](lean:Matrix.SpecialLinearGroup.range_toGL_eq_ker_det). Hence
+determinant. Hence
 $\mathrm{SL}_n(R)$ is a [normal subgroup](trough:Subgroup.Normal), and by the
 [first isomorphism theorem](trough:QuotientGroup.quotientKerEquivRange)
 $\mathrm{GL}_n(R) / \mathrm{SL}_n(R) \cong R^\times$ when $n \ge 1$.
 
 **The center.** For a commutative ring $R$,
-[the center of $\mathrm{GL}_n(R)$ consists of the scalar matrices $uI$ with $u$ a
-unit of $R$](lean:Matrix.GeneralLinearGroup.center_eq_range_scalar): a matrix that
+the center of $\mathrm{GL}_n(R)$ consists of the scalar matrices $uI$ with $u$ a
+unit of $R$: a matrix that
 commutes with every invertible matrix must be a multiple of the identity.
 
 **Change of ring.** A homomorphism $f \colon R \to S$ of commutative rings,
 applied entry by entry,
-[gives a group homomorphism from $\mathrm{GL}_n(R)$ to
-$\mathrm{GL}_n(S)$](lean:Matrix.GeneralLinearGroup.map). Reduction modulo a prime
+gives a group homomorphism from $\mathrm{GL}_n(R)$ to
+$\mathrm{GL}_n(S)$. Reduction modulo a prime
 $p$, from $\mathrm{GL}_n(\mathbb{Z})$ to $\mathrm{GL}_n(\mathbb{F}_p)$, is an instance.
 
 **Order over a finite field.** If $\mathbb{F}$ is a [finite field](trough:Mathlib.FieldTheory.Finite.Basic)
@@ -81,7 +76,7 @@ with $q$ elements, then
 
 $$|\mathrm{GL}_n(\mathbb{F})| = (q^n - 1)(q^n - q)(q^n - q^2) \cdots (q^n - q^{n-1}),$$
 
-[the product of $q^n - q^i$ over $0 \le i < n$](lean:Matrix.card_GL_field). A
+the product of $q^n - q^i$ over $0 \le i < n$. A
 square matrix over a field is invertible exactly when its columns are
 [linearly independent](trough:LinearIndependent), so $|\mathrm{GL}_n(\mathbb{F})|$
 counts the ordered bases of $\mathbb{F}^n$: the first column can be any nonzero
@@ -91,19 +86,19 @@ $\mathrm{GL}_n(\mathbb{F})$ onto $\mathbb{F}^\times$ for $n \ge 1$, the first
 isomorphism theorem makes the index of $\mathrm{SL}_n(\mathbb{F})$ equal to
 $|\mathbb{F}^\times| = q - 1$, and [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card)
 in the form $|G| = [G : H]\,|H|$ gives
-[$|\mathrm{SL}_n(\mathbb{F})| \cdot |\mathbb{F}^\times| = |\mathrm{GL}_n(\mathbb{F})|$](lean:Matrix.card_SL_mul_card_units),
+$|\mathrm{SL}_n(\mathbb{F})| \cdot |\mathbb{F}^\times| = |\mathrm{GL}_n(\mathbb{F})|$,
 so $|\mathrm{SL}_n(\mathbb{F})| = |\mathrm{GL}_n(\mathbb{F})| / (q - 1)$.
 
 ## Related concepts
 
 The [general linear group of a module](trough:LinearMap.GeneralLinearGroup) is the
 coordinate-free version: the invertible linear maps of a module to itself, which
-[are the same as its linear automorphisms](lean:LinearMap.GeneralLinearGroup.generalLinearEquiv).
+are the same as its linear automorphisms.
 Its important subgroups include the [special linear group](trough:Matrix.SpecialLinearGroup),
 the [orthogonal group](trough:Matrix.orthogonalGroup) and the
 [unitary group](trough:Matrix.unitaryGroup). Over a linearly ordered commutative ring such as
-the real numbers, [the matrices of positive determinant form a
-subgroup](lean:Matrix.GLPos); over the reals it has index $2$ when $n \ge 1$. The real and
+the real numbers, the matrices of positive determinant form a
+subgroup; over the reals it has index $2$ when $n \ge 1$. The real and
 complex general linear groups are Lie groups (see
 [general linear group as a Lie group](trough:Units.instLieGroupModelWithCornersSelf)),
 and once a basis is chosen, a representation of a group on an $n$-dimensional

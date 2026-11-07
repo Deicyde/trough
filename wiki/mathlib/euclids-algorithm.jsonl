@@ -1,0 +1,19 @@
+{"id": "af_a797589fc5552e55da1054cb", "subject": [{"type": "generic", "uri": "euclids-algorithm.md"}], "object": [{"location": {"declaration": "Nat.xgcd"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "a function returning a pair of integer coefficients"}}}], "object": [{"location": {"declaration": "Nat.xgcd"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "$\\gcd(a, b) = ax + by$", "prefix": "satisfy "}}}], "object": [{"location": {"declaration": "Nat.gcd_eq_gcd_ab"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "exactly when $\\gcd(a, b)$ divides $n$"}}}], "object": [{"location": {"declaration": "Int.gcd_dvd_iff"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "$\\gcd(a, b)$ is the least positive number of this form"}}}], "object": [{"location": {"declaration": "Int.gcd_least_linear"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "an $m$ with $0 \\le m < k$ and $nm \\equiv 1 \\pmod k$"}}}], "object": [{"location": {"declaration": "Nat.exists_mul_mod_eq_one_of_coprime"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "if $a$ divides $bc$ and $\\gcd(a, c) = 1$, then $a$ divides $b$"}}}], "object": [{"location": {"declaration": "Int.dvd_of_dvd_mul_left_of_gcd_one"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "$\\gcd(a, b) = \\gcd(b \\bmod a, a)$"}}}], "object": [{"location": {"declaration": "EuclideanDomain.gcd_val"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "divides both inputs"}}}], "object": [{"location": {"declaration": "EuclideanDomain.gcd_dvd"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "is divisible by every common divisor"}}}], "object": [{"location": {"declaration": "EuclideanDomain.dvd_gcd"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "extended version"}}}], "object": [{"location": {"declaration": "EuclideanDomain.xgcd"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "$\\gcd(a, b) = a x + b y$"}}}], "object": [{"location": {"declaration": "EuclideanDomain.gcd_eq_gcd_ab"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "Bézout's identity over the integers"}}}], "object": [{"location": {"declaration": "Int.gcd_eq_gcd_ab"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "its final remainder is the greatest common divisor"}}}], "object": [{"location": {"declaration": "Nat.xgcdAux_fst"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "returns that divisor together with the coefficient pair"}}}], "object": [{"location": {"declaration": "Nat.xgcdAux_val"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "the first coefficient is $0$"}}}], "object": [{"location": {"declaration": "Nat.gcdA_zero_left"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "the second is $1$"}}}], "object": [{"location": {"declaration": "Nat.gcdB_zero_left"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "the first coefficient is $1$"}}}], "object": [{"location": {"declaration": "Nat.gcdA_zero_right"}}]}
+{"subject": [{"type": "generic", "uri": "euclids-algorithm.md", "location": {"quote": {"exact": "the second is $0$"}}}], "object": [{"location": {"declaration": "Nat.gcdB_zero_right"}}]}

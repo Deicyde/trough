@@ -1,8 +1,3 @@
----
-article_id: af_40423cdd7a33e06b2f128541
-concept: Sylow.exists_subgroup_card_pow_prime
----
-
 The **first Sylow theorem** says that a finite [group](trough:Group) has a
 [subgroup](trough:Subgroup) of every prime-power order that divides the order of
 the group. It is a partial converse to [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card),
@@ -15,7 +10,7 @@ Sylow theorems, it is the basic tool for analysing finite groups of a given orde
 ## Statement
 
 Let $G$ be a finite group and $p$ a prime. If $p^n$ divides $|G|$, then
-[$G$ has a subgroup of order $p^n$](lean:Sylow.exists_subgroup_card_pow_prime).
+$G$ has a subgroup of order $p^n$.
 
 Write $|G| = p^k m$ with $p \nmid m$. The case $n = k$ is the usual form of the
 theorem: $G$ has a subgroup of order $p^k$, the largest power of $p$ dividing $|G|$.
@@ -24,7 +19,7 @@ a power of $p$ is a **$p$-subgroup**.
 
 The case $n = 1$ is
 [Cauchy's theorem](trough:exists_prime_orderOf_dvd_card): if $p$ divides $|G|$, then
-[$G$ has an element of order $p$](lean:exists_prime_orderOf_dvd_card), whose
+$G$ has an element of order $p$, whose
 powers form a subgroup of order $p$.
 
 ## Examples
@@ -48,18 +43,18 @@ powers form a subgroup of order $p$.
 
 - **Towers of subgroups.** If $p^n$ divides $|G|$, there is a chain of subgroups
   $H_0 \le H_1 \le \dots \le H_n$ with $|H_i| = p^i$ for each $i$
-  ([towers of $p$-subgroups](lean:Sylow.exists_orderEmbedding)). In particular a
+  (towers of $p$-subgroups). In particular a
   group of order $p^n$ has subgroups of every order $p^i$ with $i \le n$.
 - **Extending a $p$-subgroup.** A subgroup of order $p^m$ is contained in a
   subgroup of order $p^n$ whenever $m \le n$ and $p^n$ divides $|G|$
-  ([the extension statement](lean:Sylow.exists_subgroup_card_pow_prime_ge)). Taking
+  (the extension statement). Taking
   $n = k$ shows that every $p$-subgroup lies in some Sylow $p$-subgroup.
 - **Maximal $p$-subgroups.** In a finite group, a $p$-subgroup $P$ contained in no
   larger $p$-subgroup
-  [has order $p^k$, the full power of $p$ in $|G|$](lean:Sylow.card_eq_multiplicity),
+  has order $p^k$, the full power of $p$ in $|G|$,
   so it is a Sylow $p$-subgroup in the sense above. (Mathlib takes maximality among
   $p$-subgroups as the definition; see In Mathlib.) Moreover,
-  [its index $[G : P]$ is not divisible by $p$](lean:Sylow.not_dvd_index);
+  its index $[G : P]$ is not divisible by $p$;
   Mathlib proves the index statement for any Sylow subgroup of finite index, in
   any group.
 - **The other Sylow theorems.** Once Sylow subgroups exist, one can ask how many
@@ -70,7 +65,7 @@ powers form a subgroup of order $p$.
 
 The theorem follows by induction on $n$ from the following step: if $H$ is a
 subgroup of order $p^n$ and $p^{n+1}$ divides $|G|$, then
-[$H$ lies in a subgroup of order $p^{n+1}$](lean:Sylow.exists_subgroup_card_pow_succ).
+$H$ lies in a subgroup of order $p^{n+1}$.
 Starting from the trivial subgroup, of order $p^0 = 1$, the step is applied $n$
 times.
 
@@ -78,7 +73,7 @@ For the step, let $H$ act on the set of left cosets $G/H$ by left multiplication
 (see [group action](trough:MulAction)). Every [orbit](trough:MulAction.orbit) of a
 group of order $p^n$ has size a power of $p$, so only the fixed points
 contribute an orbit of size not divisible by $p$; hence
-[the number of fixed points is congruent to $|G/H|$ modulo $p$](lean:IsPGroup.card_modEq_card_fixedPoints).
+the number of fixed points is congruent to $|G/H|$ modulo $p$.
 Since $|G| = p^n\,[G : H]$ and $p^{n+1}$ divides $|G|$, the
 [index](trough:Subgroup.index) $[G : H]$ is divisible by $p$, so the number of
 fixed points is too.
@@ -107,10 +102,10 @@ with $m \le n$, is the statement the proof actually establishes. Mathlib defines
 Sylow $p$-subgroup not by its order but as a maximal $p$-subgroup, where a
 $p$-group is a group in which each element $g$ satisfies $g^{p^i} = e$ for some $i$. This makes
 sense in every group, finite or not, and Zorn's lemma then shows that
-[every subgroup that is a $p$-group is contained in a Sylow $p$-subgroup](lean:IsPGroup.exists_le_sylow)
+every subgroup that is a $p$-group is contained in a Sylow $p$-subgroup
 in any group. For a finite group the two definitions agree: a maximal $p$-subgroup
 has order $p^k$, and conversely
-[a subgroup of order $p^k$ is a Sylow subgroup](lean:Sylow.ofCard).
+a subgroup of order $p^k$ is a Sylow subgroup.
 
 ## Depends on
 

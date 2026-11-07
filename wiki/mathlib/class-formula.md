@@ -1,8 +1,3 @@
----
-article_id: af_d7433cb8762cb553fbefdc31
-concept: MulAction.selfEquivSigmaOrbitsQuotientStabilizer
----
-
 The **class formula** describes how a set on which a [group](trough:Group) acts
 breaks up into pieces. The set is the disjoint union of its
 [orbits](trough:MulAction.orbit), and each orbit is a copy of the set of cosets of
@@ -19,13 +14,13 @@ Let $G$ be a group acting on a set $X$ (see [group action](trough:MulAction)).
 The orbits $G \cdot x = \{ g \cdot x : g \in G \}$ partition $X$; write $X/G$
 for the set of orbits and choose one point $x_\omega$ in each orbit $\omega$.
 Let $G_x = \{ g \in G : g \cdot x = x \}$ be the stabilizer of $x$. Then
-[there is a bijection](lean:MulAction.selfEquivSigmaOrbitsQuotientStabilizer)
+there is a bijection
 
 $$X \;\cong\; \coprod_{\omega \in X/G} G / G_{x_\omega},$$
 
 between $X$ and the disjoint union, over all orbits, of the sets of left cosets
 of the chosen stabilizers. If $G$ and $X$ are finite, counting both sides
-[gives the class formula](lean:MulAction.card_eq_sum_card_group_div_card_stabilizer)
+gives the class formula
 
 $$|X| \;=\; \sum_{\omega \in X/G} \frac{|G|}{|G_{x_\omega}|} \;=\; \sum_{\omega \in X/G} [G : G_{x_\omega}].$$
 
@@ -35,14 +30,14 @@ conjugate stabilizers, which have the same index.
 ## Proof
 
 Sending each point to its orbit shows that $X$ is
-[the disjoint union of its orbits](lean:MulAction.selfEquivSigmaOrbits). It
+the disjoint union of its orbits. It
 remains to identify a single orbit $G \cdot x$ with $G/G_x$. The map
 $gG_x \mapsto g \cdot x$ is well defined and injective, because
 $g \cdot x = h \cdot x$ holds exactly when $g^{-1}h \in G_x$, that is, when
 $gG_x = hG_x$; it is surjective by the definition of the orbit. This is the
-[orbit–stabilizer theorem](lean:MulAction.orbitEquivQuotientStabilizer), and in
+orbit–stabilizer theorem, and in
 the finite case it reads
-[$|G \cdot x| \, |G_x| = |G|$](lean:MulAction.card_orbit_mul_card_stabilizer_eq_card_group).
+$|G \cdot x| \, |G_x| = |G|$.
 Assembling these bijections orbit by orbit gives the statement, and
 [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card) turns the number of
 cosets into $|G|/|G_x|$.
@@ -59,18 +54,18 @@ cosets into $|G|/|G_x|$.
   checks out as $16 = 1 + 1 + 2 + 4 + 4 + 4$.
 - **Transitive actions.** If there is a single orbit, the formula says that
   $X$ is a copy of $G/G_x$ for any $x$, so the
-  [index of a stabilizer is the size of the set](lean:MulAction.index_stabilizer_of_transitive).
+  index of a stabilizer is the size of the set.
 - **Conjugation.** A group acts on itself by $g \cdot h = ghg^{-1}$. The orbits
   are the [conjugacy classes](trough:ConjClasses) and the stabilizer of $h$ is its
   centralizer $C_G(h)$, so in a finite group
-  [the class of $h$ has $|G|/|C_G(h)|$ elements](lean:ConjClasses.card_carrier).
+  the class of $h$ has $|G|/|C_G(h)|$ elements.
 
 ## Consequences
 
 - **The class equation.** For a finite group $G$ with centre $Z(G)$, the
   conjugacy classes with one element are exactly the elements of the centre, and
   collecting them gives
-  [the class equation](lean:Group.nat_card_center_add_sum_card_noncenter_eq_card)
+  the class equation
   $$|G| \;=\; |Z(G)| + \sum_{i} |\mathrm{cl}(h_i)| \;=\; |Z(G)| + \sum_{i} [G : C_G(h_i)],$$
   where $h_i$ runs over representatives of the conjugacy classes with more than
   one element, $\mathrm{cl}(h_i)$ is the class of $h_i$, and the second equality
@@ -81,16 +76,16 @@ cosets into $|G|/|G_x|$.
   $X$ is finite, every orbit has size a power of $p$, being the index of a
   subgroup of $G$, and only the fixed points give
   orbits of size $1$. Hence
-  [$|X|$ is congruent modulo $p$ to the number of fixed points](lean:IsPGroup.card_modEq_card_fixedPoints).
+  $|X|$ is congruent modulo $p$ to the number of fixed points.
   In particular,
-  [if $p$ does not divide $|X|$, the action has a fixed point](lean:IsPGroup.nonempty_fixed_point_of_prime_not_dvd_card).
+  if $p$ does not divide $|X|$, the action has a fixed point.
 - **Centres of $p$-groups.** Applying the previous point to conjugation shows
-  that [a nontrivial finite $p$-group has a nontrivial centre](lean:IsPGroup.center_nontrivial).
+  that a nontrivial finite $p$-group has a nontrivial centre.
   If $|G| = p^2$, the quotient $G/Z(G)$ then has order $1$ or $p$, so it is
   cyclic, and
-  [a group whose quotient by its centre is cyclic is commutative](lean:isMulCommutative_of_isCyclic_quotient_center_self).
+  a group whose quotient by its centre is cyclic is commutative.
   Hence
-  [every group of order $p^2$ is commutative](lean:IsPGroup.isMulCommutative_of_card_eq_prime_sq).
+  every group of order $p^2$ is commutative.
 - **Counting orbits.** Summing the orders of the stabilizers over all points leads to the
   [Burnside lemma](trough:MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group),
   which counts the orbits of a finite group action by averaging numbers of fixed

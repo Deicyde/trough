@@ -1,0 +1,20 @@
+{"id": "af_462c8297900707cfbe86ff5d", "subject": [{"type": "generic", "uri": "group-action.md"}], "object": [{"location": {"declaration": "MulAction"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "the definition of an action"}}}], "object": [{"location": {"declaration": "MulAction"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "each element acts as a permutation of $X$"}}}], "object": [{"location": {"declaration": "MulAction.toPerm"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "the assignment of $g$ to its permutation is a group homomorphism"}}}], "object": [{"location": {"declaration": "MulAction.toPermHom"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "defines an action"}}}], "object": [{"location": {"declaration": "MulAction.ofEndHom"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "gives an action of $H$"}}}], "object": [{"location": {"declaration": "MulAction.compHom"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "acts on $X$ by evaluation"}}}], "object": [{"location": {"declaration": "Equiv.Perm.applyMulAction"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "acts on itself by left multiplication", "prefix": "group "}}}], "object": [{"location": {"declaration": "Monoid.toMulAction"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "$g \\cdot h = ghg^{-1}$"}}}], "object": [{"location": {"declaration": "ConjAct.toConjAct_smul"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "the set $G \\cdot x = \\{ g \\cdot x : g \\in G \\}$"}}}], "object": [{"location": {"declaration": "MulAction.orbit"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "is an equivalence relation"}}}], "object": [{"location": {"declaration": "MulAction.orbitRel"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "the subgroup $G_x = \\{ g \\in G : g \\cdot x = x \\}$"}}}], "object": [{"location": {"declaration": "MulAction.stabilizer"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "$G_{g \\cdot x} = g\\,G_x\\,g^{-1}$"}}}], "object": [{"location": {"declaration": "MulAction.stabilizer_smul_eq_stabilizer_map_conj"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "points fixed by every element of $G$"}}}], "object": [{"location": {"declaration": "MulAction.fixedPoints"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "any point can be carried to any other"}}}], "object": [{"location": {"declaration": "MulAction.IsPretransitive"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "distinct elements of $G$ act differently"}}}], "object": [{"location": {"declaration": "FaithfulSMul"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "injective", "prefix": "$X$ "}}}], "object": [{"location": {"declaration": "MulAction.toPerm_injective"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "a bijection from the left cosets of $G_x$ onto the orbit of $x$"}}}], "object": [{"location": {"declaration": "MulAction.orbitEquivQuotientStabilizer"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "the index of the stabilizer", "prefix": "is "}}}], "object": [{"location": {"declaration": "MulAction.index_stabilizer"}}]}
+{"subject": [{"type": "generic", "uri": "group-action.md", "location": {"quote": {"exact": "the size of the orbit times the order of the stabilizer is the order of the group"}}}], "object": [{"location": {"declaration": "MulAction.card_orbit_mul_card_stabilizer_eq_card_group"}}]}

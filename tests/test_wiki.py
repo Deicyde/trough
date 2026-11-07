@@ -1,3 +1,5 @@
+import re
+import json
 from pathlib import Path
 
 import pytest
@@ -60,9 +62,21 @@ def fake_sources(cited: dict | None = None, unresolved: tuple[str, ...] = (),
 
 
 def write(directory: Path, **files: str) -> dict[str, wiki.Authored]:
+    """Write each article as the pipeline publishes one: drafted in one file, then split into its
+    Markdown and its annotations."""
     for name, text in files.items():
-        (directory / f"{name}.md").write_text(text, encoding="utf-8")
+        path = directory / f"{name}.md"
+        path.write_text(text, encoding="utf-8")
+        markdown, rows = wiki.split(text, name)
+        path.write_text(markdown, encoding="utf-8")
+        path.with_suffix(".jsonl").write_text(wiki.jsonl(rows), encoding="utf-8")
+        (directory / "_defaults.json").write_text(json.dumps(wiki.DEFAULTS) + "\n", encoding="utf-8")
     return wiki.load(directory)
+
+
+def remove(directory: Path, name: str) -> None:
+    for suffix in (".md", ".jsonl"):
+        (directory / f"{name}{suffix}").unlink(missing_ok=True)
 
 
 def test_an_article_gives_its_concept_citations_and_prerequisites(tmp_path):
@@ -77,16 +91,16 @@ def test_an_article_gives_its_concept_citations_and_prerequisites(tmp_path):
 def test_an_article_that_breaks_the_format_is_refused(tmp_path):
     with pytest.raises(ValueError, match="article_id and concept"):
         write(tmp_path, bare="No front matter.\n")
-    (tmp_path / "bare.md").unlink()
+    remove(tmp_path, "bare")
     with pytest.raises(ValueError, match="not a"):
         write(tmp_path, alpha=ARTICLE.replace("- [Gamma](trough:C)", "Gamma, mostly."))
-    (tmp_path / "alpha.md").unlink()
+    remove(tmp_path, "alpha")
     with pytest.raises(ValueError, match="not a"):  # a second prerequisite on the same line would be lost
         write(tmp_path, alpha=ARTICLE.replace("- [Gamma](trough:C)", "- [Gamma](trough:C) and [Beta](trough:B)"))
-    (tmp_path / "alpha.md").unlink()
+    remove(tmp_path, "alpha")
     with pytest.raises(ValueError, match="both about A"):
         write(tmp_path, alpha=ARTICLE, again=ARTICLE.replace("0001", "0003"))
-    (tmp_path / "again.md").unlink()
+    remove(tmp_path, "again")
     with pytest.raises(ValueError, match="share an article_id"):
         write(tmp_path, alpha=ARTICLE, again=ARTICLE.replace("concept: A", "concept: B"))
 
@@ -132,13 +146,13 @@ def test_a_citation_that_cannot_be_linked_stops_the_chapter(tmp_path):
 def test_an_article_about_no_concept_or_naming_none_stops_the_chapter(tmp_path):
     with pytest.raises(ValueError, match="no concept"):
         mathlib.chapter(fake_sources(), write(tmp_path, stray=ARTICLE.replace("concept: A", "concept: Z")))
-    (tmp_path / "stray.md").unlink()
+    remove(tmp_path, "stray")
     with pytest.raises(ValueError, match="no article for Q"):
         mathlib.chapter(fake_sources(), write(tmp_path, alpha=ARTICLE.replace("(trough:C)", "(trough:Q)")))
-    (tmp_path / "alpha.md").unlink()
+    remove(tmp_path, "alpha")
     with pytest.raises(ValueError, match="alpha.md: no article for Q"):
         mathlib.chapter(fake_sources(), write(tmp_path, alpha=ARTICLE.replace("[beta](trough:B)", "[beta](trough:Q)")))
-    (tmp_path / "alpha.md").unlink()
+    remove(tmp_path, "alpha")
     with pytest.raises(ValueError, match="no section"):
         mathlib.chapter(fake_sources(), write(tmp_path, area=AREA.replace("area:Area/Sub", "area:Area/None")))
 
@@ -227,11 +241,11 @@ def test_link_words_join_onto_one_line_and_reference_definitions_are_refused(tmp
     body = write(tmp_path, alpha="\n\n## Notes\n\nA list:\n\n- one\n- two\n\n".join(interval.split("\n\n", 1)))["A"].body
     assert body.startswith("## Notes\n\nA list:\n\n- one\n- two\n\n**Alpha**")
     assert "[the interval $(0, 1]$](trough:B)" in body
-    (tmp_path / "alpha.md").unlink()
+    remove(tmp_path, "alpha")
     for definition in ("[beta]: trough:B", "[beta]: Lean:A", "  [beta]: < lean:A>"):
         with pytest.raises(ValueError, match="reference-style"):
             write(tmp_path, alpha=ARTICLE + f"\n{definition}\n")
-        (tmp_path / "alpha.md").unlink()
+        remove(tmp_path, "alpha")
 
 
 def test_a_new_pin_leaves_what_its_data_did_not_read(tmp_path):
@@ -320,12 +334,17 @@ def test_a_new_pin_renames_unlinks_and_rekeys_instead_of_stopping(tmp_path):
 
     changes = mathlib.follow_pin(sources, directory, tmp_path / "unplaced")
 
-    alpha = (directory / "alpha.md").read_text(encoding="utf-8")
+    alpha = wiki.combined(directory / "alpha.md")
     assert "[the first thing](lean:A.new)" in alpha and "as a lemma says." in alpha
     assert "or the lost one, as" in alpha and "trough:Gone" not in alpha
     assert "- [Old](trough:C)" in alpha
-    assert "concept: C" in (directory / "renamed.md").read_text(encoding="utf-8")
-    assert not (directory / "stranded.md").exists() and (tmp_path / "unplaced" / "stranded.md").is_file()
+    assert "concept: C" in wiki.combined(directory / "renamed.md")
+    assert not (directory / "stranded.md").exists() and not (directory / "stranded.jsonl").exists()
+    assert wiki.combined(tmp_path / "unplaced" / "stranded.md").startswith("---\narticle_id: af_000000000000000000000006\n")
+    # The renamed citation is in the annotations, and the unlinked one is gone from them.
+    rows = [json.loads(line) for line in (directory / "alpha.jsonl").read_text(encoding="utf-8").splitlines()]
+    cited = [row["object"][0]["location"]["declaration"] for row in rows[1:]]
+    assert "A.new" in cited and "A" not in cited and "A.«two words»" not in cited
     assert {change["change"] for change in changes} >= {
         "lean:A is deprecated: it now cites lean:A.new", "lean:A.«two words» has no usable record at this pin: unlinked",
         "trough:Old is now trough:C", "prerequisite trough:Gone names no other page: dropped",
@@ -336,3 +355,87 @@ def test_a_new_pin_renames_unlinks_and_rekeys_instead_of_stopping(tmp_path):
     _, stats, _ = mathlib.chapter(sources, wiki.load(directory))  # the repaired articles build
     assert stats["authored"] == 2
     assert mathlib.follow_pin(sources, directory, tmp_path / "unplaced") == []  # and a second run changes nothing
+
+
+def annotations(path: Path) -> list[dict]:
+    return [json.loads(line) for line in path.with_suffix(".jsonl").read_text(encoding="utf-8").splitlines()]
+
+
+def test_an_articles_links_to_mathlib_live_in_its_annotations(tmp_path):
+    write(tmp_path, alpha=ARTICLE)
+    markdown = (tmp_path / "alpha.md").read_text(encoding="utf-8")
+    assert not markdown.startswith("---") and "lean:" not in markdown
+    assert "**Alpha** is the first thing, unlike [beta](trough:B), as a lemma says." in markdown
+    own, *citations = annotations(tmp_path / "alpha.md")
+    assert own == {"id": "af_000000000000000000000001", "subject": [{"type": "generic", "uri": "alpha.md"}],
+                   "object": [{"location": {"declaration": "A"}}]}
+    assert [(row["subject"][0]["location"]["quote"], row["object"][0]["location"]["declaration"]) for row in citations] == [
+        ({"exact": "the first thing"}, "A"), ({"exact": "a lemma"}, "A.«two words»")]
+    assert json.loads((tmp_path / "_defaults.json").read_text(encoding="utf-8")) == {
+        "object": {"type": "lean", "uri": "https://github.com/leanprover-community/mathlib4"}}
+
+
+def test_words_cited_twice_are_told_apart_by_the_words_before_them(tmp_path):
+    twice = ARTICLE.replace("unlike [beta](trough:B)", "unlike [beta](trough:B) and unlike [the first thing](lean:C)")
+    article = write(tmp_path, alpha=twice)["A"]
+    quotes = [row["subject"][0]["location"]["quote"] for row in annotations(tmp_path / "alpha.md")[1:]]
+    assert quotes == [{"exact": "the first thing", "prefix": "is "}, {"exact": "the first thing", "prefix": "unlike "},
+                      {"exact": "a lemma"}]
+    assert "is [the first thing](lean:A), unlike [beta](trough:B) and unlike [the first thing](lean:C)" in article.body
+
+
+def test_an_area_or_module_concept_is_kept(tmp_path):
+    write(tmp_path, area=AREA)
+    own = annotations(tmp_path / "area.md")[0]
+    assert own["object"] == [] and own["extensions"] == {"org.trough": {"concept": "area:Area/Sub"}}
+    markdown, rows = wiki.split(ARTICLE.replace("concept: A", "concept: Mathlib.A"), "alpha", {"Mathlib.A"})
+    assert rows[0]["object"] == [{"location": {"module": "Mathlib.A"}}]
+
+
+def test_a_quote_that_no_longer_matches_its_words_stops_loading(tmp_path):
+    write(tmp_path, alpha=ARTICLE)
+    path = tmp_path / "alpha.md"
+    text = path.read_text(encoding="utf-8")
+    path.write_text(text.replace("the first thing", "the very first thing"), encoding="utf-8")
+    with pytest.raises(ValueError, match="'the first thing' matches 0 places in alpha.md"):
+        wiki.load(tmp_path)
+    path.write_text(text.replace("unlike [beta]", "unlike the first thing or [beta]"), encoding="utf-8")
+    with pytest.raises(ValueError, match="'the first thing' matches 2 places"):
+        wiki.load(tmp_path)
+    # Rewrapping the words is no change: a quote reads each run of white space as one space.
+    path.write_text(text.replace("the first thing", "the first\nthing"), encoding="utf-8")
+    assert "[the first\nthing](lean:A)".replace("\n", " ") in wiki.load(tmp_path)["A"].body
+
+
+def test_the_markdown_holds_no_front_matter_or_citation_and_quotes_do_not_overlap(tmp_path):
+    write(tmp_path, alpha=ARTICLE)
+    path = tmp_path / "alpha.md"
+    text = path.read_text(encoding="utf-8")
+    path.write_text("---\nconcept: A\n---\n" + text, encoding="utf-8")
+    with pytest.raises(ValueError, match="has front matter"):
+        wiki.load(tmp_path)
+    path.write_text(text.replace("a lemma says", "[a lemma](lean:A) says"), encoding="utf-8")
+    with pytest.raises(ValueError, match="alpha.md:1: a citation goes in alpha.jsonl"):
+        wiki.load(tmp_path)
+    path.write_text(text, encoding="utf-8")
+    rows = annotations(path)
+    for exact, problem in [("first thing, unlike", "quotes overlap"), ("thing, unlike beta", "matches 0"),
+                           ("unlike [beta]", "overlaps a trough: link")]:
+        extra = {"subject": [{"type": "generic", "uri": "alpha.md", "location": {"quote": {"exact": exact}}}],
+                 "object": [{"location": {"declaration": "C"}}]}
+        path.with_suffix(".jsonl").write_text(wiki.jsonl(rows + [extra]), encoding="utf-8")
+        with pytest.raises(ValueError, match=re.escape(problem)):
+            wiki.load(tmp_path)
+
+
+def test_the_committed_articles_are_as_the_splitter_writes_them():
+    """Each article's two files are what tools/split_wiki.py writes for it, so its quotes are the
+    shortest that work; after editing an article's text, run that script on it."""
+    root = Path(__file__).resolve().parent.parent
+    modules = set(json.loads((root / "data" / "mathlib" / "concept-deps.json").read_text(encoding="utf-8"))["modules"])
+    paths = sorted((root / "wiki" / "mathlib").glob("*.md")) + sorted((root / "wiki" / "unplaced").glob("*.md"))
+    assert paths
+    for path in paths:
+        markdown, rows = wiki.split(wiki.combined(path), path.stem, modules)
+        assert markdown == path.read_text(encoding="utf-8"), path
+        assert wiki.jsonl(rows) == path.with_suffix(".jsonl").read_text(encoding="utf-8"), path

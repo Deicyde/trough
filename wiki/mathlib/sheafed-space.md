@@ -1,8 +1,3 @@
----
-article_id: af_026a7af788fe8665aeb5655c
-concept: AlgebraicGeometry.SheafedSpace
----
-
 A **sheafed space** is a [topological space](trough:TopologicalSpace) together with a sheaf on it with values in a fixed [category](trough:CategoryTheory.Category) $\mathcal{C}$: an object of $\mathcal{C}$ for each open set, with restriction maps, such that data given locally on an open cover and agreeing on overlaps glue uniquely. It is the common frame for spaces described by their local functions. Smooth manifolds with their smooth functions, and spectra of commutative rings with their structure sheaves, are sheafed spaces over commutative rings. The sheafed spaces over commutative rings are the ringed spaces, and [locally ringed spaces](trough:AlgebraicGeometry.LocallyRingedSpace) and [schemes](trough:AlgebraicGeometry.Scheme) are ringed spaces with further conditions.
 
 ## Definition
@@ -14,45 +9,45 @@ Such a presheaf is a sheaf if, for every open set $U$ and every cover $U = \bigc
 $$s_i|_{U_i \cap U_j} = s_j|_{U_i \cap U_j} \quad \text{for all } i, j,$$
 
 comes from exactly one section $s \in \mathcal{F}(U)$ with $s|_{U_i} = s_i$ for every $i$. For presheaves of sets, Mathlib's sheaf condition is
-[equivalent to this unique gluing condition](lean:TopCat.Presheaf.isSheaf_iff_isSheafUniqueGluing_types). For a general category $\mathcal{C}$ there are no elements to glue, and the condition is imposed on morphisms instead: for every object $A$ of $\mathcal{C}$, the presheaf of sets $U \mapsto \mathrm{Hom}(A, \mathcal{F}(U))$ must satisfy unique gluing. When $\mathcal{C}$ has products, this says that
-[$\mathcal{F}(U)$ is the equalizer of the two restriction maps](lean:TopCat.Presheaf.isSheaf_iff_isSheafEqualizerProducts) from $\prod_i \mathcal{F}(U_i)$ to $\prod_{i,j} \mathcal{F}(U_i \cap U_j)$.
+equivalent to this unique gluing condition. For a general category $\mathcal{C}$ there are no elements to glue, and the condition is imposed on morphisms instead: for every object $A$ of $\mathcal{C}$, the presheaf of sets $U \mapsto \mathrm{Hom}(A, \mathcal{F}(U))$ must satisfy unique gluing. When $\mathcal{C}$ has products, this says that
+$\mathcal{F}(U)$ is the equalizer of the two restriction maps from $\prod_i \mathcal{F}(U_i)$ to $\prod_{i,j} \mathcal{F}(U_i \cap U_j)$.
 
-A [sheafed space over $\mathcal{C}$](lean:AlgebraicGeometry.SheafedSpace) is a [presheafed space](trough:AlgebraicGeometry.PresheafedSpace) $(X, \mathcal{O}_X)$ whose presheaf $\mathcal{O}_X$ is a sheaf. A morphism $(X, \mathcal{O}_X) \to (Y, \mathcal{O}_Y)$ is a pair $(f, f^\#)$ of a [continuous map](trough:Continuous) $f \colon X \to Y$ and a morphism of presheaves
+A sheafed space over $\mathcal{C}$ is a [presheafed space](trough:AlgebraicGeometry.PresheafedSpace) $(X, \mathcal{O}_X)$ whose presheaf $\mathcal{O}_X$ is a sheaf. A morphism $(X, \mathcal{O}_X) \to (Y, \mathcal{O}_Y)$ is a pair $(f, f^\#)$ of a [continuous map](trough:Continuous) $f \colon X \to Y$ and a morphism of presheaves
 
 $$f^\# \colon \mathcal{O}_Y \to f_*\mathcal{O}_X, \qquad (f_*\mathcal{O}_X)(V) = \mathcal{O}_X(f^{-1}(V)),$$
 
 so no condition is added to morphisms: forgetting the sheaf condition is
-[a fully faithful functor from sheafed spaces to presheafed spaces](lean:AlgebraicGeometry.SheafedSpace.fullyFaithfulForgetToPresheafedSpace). The sheafed spaces over commutative rings are [called ringed spaces](lean:AlgebraicGeometry.RingedSpace).
+a fully faithful functor from sheafed spaces to presheafed spaces. The sheafed spaces over commutative rings are called ringed spaces.
 
 ## Examples
 
 - **Continuous functions.** For spaces $X$ and $T$, sending an open set $U \subseteq X$ to the set of continuous maps $U \to T$ gives
-  [a sheaf of sets on $X$](lean:TopCat.sheafToTop): continuous maps that agree on overlaps glue to a unique continuous map, because continuity is a local property.
+  a sheaf of sets on $X$: continuous maps that agree on overlaps glue to a unique continuous map, because continuity is a local property.
 - **Smooth manifolds.** On a smooth [manifold](trough:IsManifold) $M$, the smooth functions on open subsets with values in a fixed smooth commutative ring, such as $\mathbb{R}$, form
-  [a sheaf of commutative rings](lean:smoothSheafCommRing), which makes $M$ a ringed space.
+  a sheaf of commutative rings, which makes $M$ a ringed space.
 - **Spectra of rings.** The [prime spectrum](trough:PrimeSpectrum) of a commutative ring $R$, with its [Zariski topology](trough:PrimeSpectrum.zariskiTopology) and structure sheaf, is
-  [a sheafed space over commutative rings](lean:AlgebraicGeometry.Spec.sheafedSpaceObj). A ring homomorphism $R \to S$ induces a morphism in the opposite direction, from the spectrum of $S$ to that of $R$, and this makes the spectrum
-  [a contravariant functor from commutative rings to sheafed spaces](lean:AlgebraicGeometry.Spec.toSheafedSpace).
+  a sheafed space over commutative rings. A ring homomorphism $R \to S$ induces a morphism in the opposite direction, from the spectrum of $S$ to that of $R$, and this makes the spectrum
+  a contravariant functor from commutative rings to sheafed spaces.
 - **The trivial sheaf.** Over the category with one object and one morphism,
-  [every presheaf is a sheaf](lean:TopCat.Presheaf.isSheaf_unit), so any topological space becomes
-  [a sheafed space over that category](lean:AlgebraicGeometry.SheafedSpace.unit).
+  every presheaf is a sheaf, so any topological space becomes
+  a sheafed space over that category.
 
 The empty set is covered by the empty family, and gluing the empty family uniquely forces
-[the value of a sheaf on the empty set to be a terminal object](lean:TopCat.Sheaf.isTerminalOfEmpty). So a presheaf whose value on the empty set is not terminal, such as a constant presheaf with value a nonzero ring, is not a sheaf.
+the value of a sheaf on the empty set to be a terminal object. So a presheaf whose value on the empty set is not terminal, such as a constant presheaf with value a nonzero ring, is not a sheaf.
 
 ## Properties
 
 - **Underlying space and global sections.** Forgetting the sheaf gives
-  [a functor to the category of topological spaces](lean:AlgebraicGeometry.SheafedSpace.forget) (see [the category of topological spaces](trough:TopCat)), and taking sections over the whole space gives
-  [a contravariant functor to $\mathcal{C}$](lean:AlgebraicGeometry.SheafedSpace.Γ).
+  a functor to the category of topological spaces (see [the category of topological spaces](trough:TopCat)), and taking sections over the whole space gives
+  a contravariant functor to $\mathcal{C}$.
 - **Restriction.** The restriction of a sheaf to an open subset is again a sheaf, so for an open embedding $j \colon U \to X$ the presheafed space restriction is
-  [a sheafed space on $U$](lean:AlgebraicGeometry.SheafedSpace.restrict), and
-  [restricting to all of $X$ gives back $(X, \mathcal{O}_X)$ up to isomorphism](lean:AlgebraicGeometry.SheafedSpace.restrictTopIso).
+  a sheafed space on $U$, and
+  restricting to all of $X$ gives back $(X, \mathcal{O}_X)$ up to isomorphism.
 - **Stalks determine sections and morphisms.** Suppose $\mathcal{C}$ is a category of algebraic structures such as sets, abelian groups or commutative rings; precisely, a concrete category with all limits and colimits whose forgetful functor to sets preserves limits and filtered colimits and reflects isomorphisms. Then two sections of a sheaf over $U$
-  [are equal if their germs agree at every point of $U$](lean:TopCat.Presheaf.section_ext). Consequently,
-  [two morphisms of sheafed spaces are equal](lean:AlgebraicGeometry.SheafedSpace.hom_stalk_ext) if they have the same continuous map and induce the same maps on all stalks. Under the same hypotheses, a morphism whose continuous map is injective and whose maps on stalks are epimorphisms
-  [is a monomorphism](lean:AlgebraicGeometry.SheafedSpace.mono_of_base_injective_of_stalk_epi), and a morphism whose continuous map is surjective and whose maps on stalks are monomorphisms
-  [is an epimorphism](lean:AlgebraicGeometry.SheafedSpace.epi_of_base_surjective_of_stalk_mono).
+  are equal if their germs agree at every point of $U$. Consequently,
+  two morphisms of sheafed spaces are equal if they have the same continuous map and induce the same maps on all stalks. Under the same hypotheses, a morphism whose continuous map is injective and whose maps on stalks are epimorphisms
+  is a monomorphism, and a morphism whose continuous map is surjective and whose maps on stalks are monomorphisms
+  is an epimorphism.
 - **Colimits.** When $\mathcal{C}$ has all limits, colimits of sheafed spaces exist and are formed as for presheafed spaces, since a limit of sheaves is a sheaf; gluing sheafed spaces along open subsets is a special case.
 
 ## Related concepts

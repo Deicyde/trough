@@ -1,8 +1,3 @@
----
-article_id: af_19ff2674a262075c58eed914
-concept: legendreSym.quadratic_reciprocity
----
-
 **Quadratic reciprocity** is a theorem of elementary number theory relating two
 questions that look unrelated: whether an odd [prime](trough:Prime) $q$ is a square modulo a
 different odd prime $p$, and whether $p$ is a square modulo $q$. It says the two answers
@@ -15,27 +10,27 @@ case of the reciprocity laws of algebraic number theory.
 ## Statement
 
 Let $p$ be a prime and $a$ an [integer](trough:Int). The
-[Legendre symbol](lean:legendreSym) $\left(\frac{a}{p}\right)$ is $0$ if $p$
+Legendre symbol $\left(\frac{a}{p}\right)$ is $0$ if $p$
 divides $a$, $1$ if $a$ is congruent modulo $p$ to the square of an integer not
 divisible by $p$, and $-1$ otherwise. In the last two cases $a$ is called a
 quadratic residue or a quadratic nonresidue modulo $p$. For fixed $p$ the symbol
-is [multiplicative in $a$](lean:legendreSym.mul).
+is multiplicative in $a$.
 
 The law of quadratic reciprocity: if $p$ and $q$ are distinct odd primes, then
-[$\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}$](lean:legendreSym.quadratic_reciprocity).
+$\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}$.
 The exponent is even unless $p \equiv q \equiv 3 \pmod 4$. Equivalently, for odd
 primes $p$ and $q$,
-[$\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\left(\frac{p}{q}\right)$](lean:legendreSym.quadratic_reciprocity'),
+$\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\left(\frac{p}{q}\right)$,
 a form that also holds trivially when $p = q$, since both sides are $0$. Stated
 without symbols: if $p \equiv 1 \pmod 4$ and $q$ is an odd prime, then
-[$q$ is a square modulo $p$ if and only if $p$ is a square modulo $q$](lean:ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one);
+$q$ is a square modulo $p$ if and only if $p$ is a square modulo $q$;
 if $p$ and $q$ are distinct primes both congruent to $3$ modulo $4$, then
-[$q$ is a square modulo $p$ if and only if $p$ is not a square modulo $q$](lean:ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three).
+$q$ is a square modulo $p$ if and only if $p$ is not a square modulo $q$.
 
 The supplementary laws treat $-1$ and $2$:
-[$-1$ is a square modulo a prime $p$ exactly when $p$ is not congruent to $3$ modulo $4$](lean:ZMod.exists_sq_eq_neg_one_iff),
+$-1$ is a square modulo a prime $p$ exactly when $p$ is not congruent to $3$ modulo $4$,
 and for an odd prime $p$,
-[$2$ is a square modulo $p$ exactly when $p \equiv 1$ or $p \equiv 7 \pmod 8$](lean:ZMod.exists_sq_eq_two_iff).
+$2$ is a square modulo $p$ exactly when $p \equiv 1$ or $p \equiv 7 \pmod 8$.
 
 ## Examples
 
@@ -70,16 +65,16 @@ point of several proofs of the theorem that a prime $p \equiv 1 \pmod 4$ is a
 A short proof goes through Gauss's lemma and a refinement of it known as
 Eisenstein's lemma. Let
 $p$ be an odd prime. For an odd natural number $a$ not divisible by $p$,
-[Eisenstein's lemma](lean:ZMod.eisenstein_lemma) gives
+Eisenstein's lemma gives
 
 $$\left(\frac{a}{p}\right) = (-1)^{S(a,p)}, \qquad S(a,p) = \sum_{x=1}^{(p-1)/2} \left\lfloor \frac{xa}{p} \right\rfloor .$$
 
-It follows from [Gauss's lemma](lean:ZMod.gauss_lemma), which expresses
+It follows from Gauss's lemma, which expresses
 $\left(\frac{a}{p}\right)$ as $(-1)^{\mu}$, where $\mu$ counts the $x$ among
 $1, \dots, \frac{p-1}{2}$ for which the remainder of $ax$ on division by $p$
 exceeds $p/2$. Gauss's lemma in turn compares the product of the numbers $ax$
 with $\left(\frac{p-1}{2}\right)!$ and uses Euler's criterion,
-[$\left(\frac{a}{p}\right) \equiv a^{(p-1)/2} \pmod p$](lean:legendreSym.eq_pow),
+$\left(\frac{a}{p}\right) \equiv a^{(p-1)/2} \pmod p$,
 which is proved from [Fermat's little theorem](trough:ZMod.pow_card_sub_one_eq_one)
 and the fact that a polynomial of degree $d$ has at most $d$ roots modulo $p$.
 
@@ -87,7 +82,7 @@ Now let $p$ and $q$ be distinct odd primes. The sum $S(q,p)$ counts the lattice
 points $(x, y)$ with $1 \le x \le \frac{p-1}{2}$ and $1 \le y \le \frac{q-1}{2}$
 lying below the line $py = qx$, and $S(p,q)$ counts those above it. No lattice
 point of the rectangle lies on the line, since $qx = py$ would force $p$ to divide $x$. Hence
-[$S(q,p) + S(p,q) = \frac{p-1}{2}\cdot\frac{q-1}{2}$](lean:ZMod.sum_mul_div_add_sum_mul_div_eq_mul),
+$S(q,p) + S(p,q) = \frac{p-1}{2}\cdot\frac{q-1}{2}$,
 and multiplying the two instances of Eisenstein's lemma proves the theorem.
 
 A second proof works in a [field](trough:Field) of [characteristic](trough:ringChar) $q$ containing a primitive
@@ -107,7 +102,7 @@ $q$ and the fact that $1 \ne -1$ in characteristic $q$, yields the law.
 The Jacobi symbol extends the Legendre symbol to an odd positive modulus $b$ by
 multiplying the Legendre symbols over the prime factors of $b$, counted with
 multiplicity. Reciprocity carries over: for odd natural numbers $a$ and $b$,
-[the Jacobi symbols satisfy $\left(\frac{a}{b}\right) = (-1)^{\frac{a-1}{2}\cdot\frac{b-1}{2}}\left(\frac{b}{a}\right)$](lean:jacobiSym.quadratic_reciprocity).
+the Jacobi symbols satisfy $\left(\frac{a}{b}\right) = (-1)^{\frac{a-1}{2}\cdot\frac{b-1}{2}}\left(\frac{b}{a}\right)$.
 This allows symbols to be computed without factoring. Further generalizations
 include cubic and biquadratic reciprocity, the Hilbert reciprocity law for
 Hilbert symbols over the rationals, and the Artin reciprocity law of class field theory.
@@ -122,7 +117,7 @@ $\lfloor p/2 \rfloor$ and $\lfloor q/2 \rfloor$; for odd primes this equals
 $\frac{p-1}{2}\cdot\frac{q-1}{2}$. The proof does not use lattice points. It
 derives the law from a statement about arbitrary finite fields: for two finite
 fields $F$ and $F'$ of distinct odd characteristics,
-[the quadratic character of $F$ at the number of elements of $F'$ equals the quadratic character of $F'$ at $\chi_F(-1)$ times the number of elements of $F$](lean:quadraticChar_card_card),
+the quadratic character of $F$ at the number of elements of $F'$ equals the quadratic character of $F'$ at $\chi_F(-1)$ times the number of elements of $F$,
 where $\chi_F$ is the quadratic character of $F$; this rests on quadratic Gauss
 sums. Gauss's and Eisenstein's lemmas are proved separately. The Jacobi symbol is
 defined for every natural number modulus, taking value $1$ at modulus $0$, and

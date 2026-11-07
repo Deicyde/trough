@@ -1,0 +1,16 @@
+{"id": "af_994534450cf20554d7e27814", "subject": [{"type": "generic", "uri": "group.md"}], "object": [{"location": {"declaration": "Group"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "group", "prefix": "Definition A "}}}], "object": [{"location": {"declaration": "Group"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "determine a group structure"}}}], "object": [{"location": {"declaration": "Group.ofLeftAxioms"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "the right-handed version"}}}], "object": [{"location": {"declaration": "Group.ofRightAxioms"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "commutative or abelian"}}}], "object": [{"location": {"declaration": "CommGroup"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "form an abelian group under addition", "prefix": "[integers](trough:Int) "}}}], "object": [{"location": {"declaration": "Int.instAddCommGroup"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "form a group under composition"}}}], "object": [{"location": {"declaration": "Equiv.Perm.permGroup"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "form a group", "prefix": "elements "}}}], "object": [{"location": {"declaration": "Units.instGroup"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "$aa^{-1} = e$ for every $a$"}}}], "object": [{"location": {"declaration": "mul_inv_cancel"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "if $ab = e$, then $a^{-1} = b$"}}}], "object": [{"location": {"declaration": "inv_eq_of_mul_eq_one_right"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "$(a^{-1})^{-1} = a$"}}}], "object": [{"location": {"declaration": "inv_inv"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "$(ab)^{-1} = b^{-1}a^{-1}$"}}}], "object": [{"location": {"declaration": "mul_inv_rev"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "$ab = ac$ implies $b = c$"}}}], "object": [{"location": {"declaration": "mul_left_cancel"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "$ba = ca$ implies $b = c$"}}}], "object": [{"location": {"declaration": "mul_right_cancel"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "$x = a^{-1}b$ if and only if $ax = b$"}}}], "object": [{"location": {"declaration": "eq_inv_mul_iff_mul_eq"}}]}
+{"subject": [{"type": "generic", "uri": "group.md", "location": {"quote": {"exact": "$a^{m+n} = a^m a^n$"}}}], "object": [{"location": {"declaration": "zpow_add"}}]}

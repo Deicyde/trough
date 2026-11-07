@@ -1,8 +1,3 @@
----
-article_id: af_0fccc98e5e9bdab0a2823341
-concept: MulAction.orbit
----
-
 The **orbit** of a point under a [group action](trough:MulAction) is the set of all
 points the group can move it to. When a group acts on a set, the orbits cut the set
 into disjoint pieces, and the size of each piece is tied to the structure of the
@@ -14,13 +9,13 @@ Sylow theorems.
 
 Let a [group](trough:Group) $G$ act on a [set](trough:Set) $X$, and write $g \cdot x$
 for the action of $g \in G$ on $x \in X$. The
-[orbit of $x$ is the set](lean:MulAction.orbit)
+orbit of $x$ is the set
 
 $$G \cdot x = \{\, g \cdot x : g \in G \,\}.$$
 
-Thus [a point $y$ lies in the orbit of $x$ exactly when $y = g \cdot x$ for some $g$ in $G$](lean:MulAction.mem_orbit_iff).
+Thus a point $y$ lies in the orbit of $x$ exactly when $y = g \cdot x$ for some $g$ in $G$.
 Taking $g$ to be the identity shows that
-[every point lies in its own orbit](lean:MulAction.mem_orbit_self).
+every point lies in its own orbit.
 
 ## Examples
 
@@ -34,42 +29,42 @@ Taking $g$ to be the identity shows that
   $\sigma = (1\,2\,3)(4\,5)$ acting on $\{1, \dots, 6\}$, the orbits are
   $\{1, 2, 3\}$, $\{4, 5\}$ and $\{6\}$.
 - **Conjugation.** A group acts on itself by conjugation, $g \cdot h = g h g^{-1}$.
-  [The orbit of $h$ under this action is its conjugacy class](lean:ConjAct.orbit_eq_carrier_conjClasses)
+  The orbit of $h$ under this action is its conjugacy class
   (see [conjugacy classes](trough:ConjClasses)).
 - **Cosets.** A [subgroup](trough:Subgroup) $H$ of $G$ acts on $G$ by left
-  multiplication. [The orbit of $a$ under this action is the right coset $Ha$](lean:orbit_subgroup_eq_rightCoset).
+  multiplication. The orbit of $a$ under this action is the right coset $Ha$.
 - **Transitive actions.** An action is transitive if any point can be moved to any
   other by some group element. On a nonempty set this means there is exactly one
   orbit: for any point $x$,
-  [the action is transitive if and only if the orbit of $x$ is all of $X$](lean:MulAction.isPretransitive_iff_orbit_eq_univ).
+  the action is transitive if and only if the orbit of $x$ is all of $X$.
 
 ## Properties
 
 **Orbits partition the set.** For a group action,
-[the orbit of $g \cdot x$ equals the orbit of $x$](lean:MulAction.orbit_smul), and
-[two orbits $G \cdot x$ and $G \cdot y$ are equal exactly when $x$ lies in $G \cdot y$](lean:MulAction.orbit_eq_iff).
+the orbit of $g \cdot x$ equals the orbit of $x$, and
+two orbits $G \cdot x$ and $G \cdot y$ are equal exactly when $x$ lies in $G \cdot y$.
 So two orbits are either equal or disjoint, and
-[the relation of lying in a common orbit is an equivalence relation](lean:MulAction.orbitRel)
+the relation of lying in a common orbit is an equivalence relation
 whose classes are the orbits.
-[The orbits together cover $X$](lean:MulAction.univ_eq_iUnion_orbit), and
-[$X$ is in bijection with the disjoint union of its orbits](lean:MulAction.selfEquivSigmaOrbits).
+The orbits together cover $X$, and
+$X$ is in bijection with the disjoint union of its orbits.
 The set of orbits is often written $X/G$.
 
 **Orbit–stabilizer theorem.** Let $G_x = \{\, g \in G : g \cdot x = x \,\}$ be the
 [stabilizer](trough:MulAction.stabilizer) of $x$. Two elements $g$ and $h$ send $x$
 to the same point exactly when $g^{-1}h \in G_x$, that is, when they lie in the same
 left coset of $G_x$. Hence the rule $g G_x \mapsto g \cdot x$ gives
-[a bijection between the orbit of $x$ and the set of left cosets of $G_x$](lean:MulAction.orbitEquivQuotientStabilizer).
-In particular [the index of $G_x$ equals the size of the orbit](lean:MulAction.index_stabilizer),
+a bijection between the orbit of $x$ and the set of left cosets of $G_x$.
+In particular the index of $G_x$ equals the size of the orbit,
 and for a finite group
 
 $$|G \cdot x| \cdot |G_x| = |G|$$
 
-([the counting form](lean:MulAction.card_orbit_mul_card_stabilizer_eq_card_group)).
+(the counting form).
 So the size of every orbit of a finite group divides the order of the group.
 
 **Fixed points.** A point is fixed by every element of $G$ exactly when
-[its orbit has at most one element](lean:MulAction.subsingleton_orbit_iff_mem_fixedPoints),
+its orbit has at most one element,
 which, since the orbit contains the point, means the orbit is the point alone.
 
 **Counting.** Summing the orbit–stabilizer formula over the orbits of a finite group
@@ -84,10 +79,10 @@ which counts orbits as the average number of fixed points.
 
 **Actions of $p$-groups.** Let $p$ be a prime and let $G$ be a group in which every
 element has order a power of $p$. Then
-[every finite orbit of $G$ has a power of $p$ as its size](lean:IsPGroup.card_orbit).
+every finite orbit of $G$ has a power of $p$ as its size.
 Every orbit of size greater than $1$ therefore contributes a multiple of $p$, so for
 an action on a finite set
-[$|X|$ is congruent modulo $p$ to the number of fixed points](lean:IsPGroup.card_modEq_card_fixedPoints).
+$|X|$ is congruent modulo $p$ to the number of fixed points.
 This congruence drives standard proofs of
 [Cauchy's theorem](trough:exists_prime_orderOf_dvd_card) and of the
 [first](trough:Sylow.exists_subgroup_card_pow_prime),

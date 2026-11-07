@@ -1,8 +1,3 @@
----
-article_id: af_ad0ab8b98adc751567e3dbc5
-concept: hensels_lemma
----
-
 **Hensel's lemma** for the [$p$-adic integers](trough:PadicInt) $\mathbb{Z}_p$ says that an
 approximate root of a [polynomial](trough:Polynomial) can be refined to an exact root,
 provided the approximation is good compared with the size of the
@@ -15,16 +10,16 @@ model for the notion of a Henselian ring.
 ## Statement
 
 Let $p$ be a prime, let $|\cdot|$ be the $p$-adic norm on $\mathbb{Z}_p$, normalized so that
-[$|p| = 1/p$](lean:PadicInt.norm_p), and let $F$ be a polynomial with coefficients in
+$|p| = 1/p$, and let $F$ be a polynomial with coefficients in
 $\mathbb{Z}_p$, with derivative $F'$. Suppose $a \in \mathbb{Z}_p$ satisfies
 
 $$|F(a)| < |F'(a)|^2.$$
 
-Then [there is a $z \in \mathbb{Z}_p$ with $F(z) = 0$, $|z - a| < |F'(a)|$ and $|F'(z)| = |F'(a)|$, and $z$ is the only root of $F$ with $|z - a| < |F'(a)|$](lean:hensels_lemma).
+Then there is a $z \in \mathbb{Z}_p$ with $F(z) = 0$, $|z - a| < |F'(a)|$ and $|F'(z)| = |F'(a)|$, and $z$ is the only root of $F$ with $|z - a| < |F'(a)|$.
 The hypothesis forces $F'(a) \neq 0$. A sharper bound also holds: $|z - a| = |F(a)|/|F'(a)|$.
 
-**Simple roots modulo $p$.** [Every $p$-adic integer has norm at most $1$](lean:PadicInt.norm_le_one),
-and [an element of $\mathbb{Z}_p$ has norm less than $1$ exactly when it is divisible by $p$](lean:PadicInt.norm_lt_one_iff_dvd).
+**Simple roots modulo $p$.** Every $p$-adic integer has norm at most $1$,
+and an element of $\mathbb{Z}_p$ has norm less than $1$ exactly when it is divisible by $p$.
 So if $F(a) \equiv 0 \pmod p$ and $F'(a) \not\equiv 0 \pmod p$, then $|F(a)| < 1 = |F'(a)|^2$,
 and the theorem gives a unique root $z$ of $F$ with $z \equiv a \pmod p$. When $F$ has integer
 coefficients, reducing $z$ modulo $p^k$ gives a solution of $F(x) \equiv 0 \pmod{p^k}$ for every
@@ -61,16 +56,16 @@ $$a_{n+1} = a_n - \frac{F(a_n)}{F'(a_n)}.$$
 Expanding $F$ around $x$ gives $F(x + h) = F(x) + F'(x)h + h^2 G(x, h)$, where $G$ is a polynomial
 with coefficients in $\mathbb{Z}_p$, so $|G(x, h)| \le 1$ for $x, h \in \mathbb{Z}_p$. Likewise
 $|F'(x) - F'(y)| \le |x - y|$, an instance of the fact that
-[a polynomial over $\mathbb{Z}_p$ does not increase $p$-adic distances](lean:padic_polynomial_dist).
+a polynomial over $\mathbb{Z}_p$ does not increase $p$-adic distances.
 By induction on $n$ one shows that $a_n \in \mathbb{Z}_p$, that $|F'(a_n)| = |F'(a)|$, and that
 $|F(a_n)| \le |F'(a)|^2 t^{2^n}$: the step $h = -F(a_n)/F'(a_n)$ kills the linear term, leaving
 $|F(a_{n+1})| \le |h|^2$, and the derivative keeps its norm because it moves by less than its own
-size, by the [ultrametric inequality](lean:PadicInt.nonarchimedean)
+size, by the ultrametric inequality
 $|x + y| \le \max(|x|, |y|)$, which gives $|x + y| = |x|$ whenever $|y| < |x|$.
 
 The steps satisfy $|a_{n+1} - a_n| \le |F'(a)|\, t^{2^n}$, which tends to $0$. In an ultrametric
 space this makes $(a_n)$ a [Cauchy sequence](trough:CauchySeq), and since
-[$\mathbb{Z}_p$ is complete](lean:PadicInt.completeSpace) it converges to some $z$. By continuity
+$\mathbb{Z}_p$ is complete it converges to some $z$. By continuity
 $F(z) = 0$ and $|F'(z)| = |F'(a)|$, and the ultrametric inequality bounds $|z - a|$ by the first
 step $|F(a)|/|F'(a)|$, which is less than $|F'(a)|$.
 
@@ -83,11 +78,11 @@ nonzero because $|h\,G(z, h)| \le |h| < |F'(z)|$. Hence $h = 0$.
 The same argument works over the valuation ring $\{x : |x| \le 1\}$ of any field complete for a
 nonarchimedean absolute value. Abstracting the simple-root form leads to Henselian rings.
 A commutative ring $R$ is
-[Henselian at an ideal $I$](lean:HenselianRing) if $I$ is contained in the Jacobson radical of $R$
+Henselian at an ideal $I$ if $I$ is contained in the Jacobson radical of $R$
 and, for every monic polynomial $f$ over $R$ and every $a_0 \in R$ with $f(a_0) \in I$ and
 $f'(a_0)$ invertible modulo $I$, there is a root $a$ of $f$ with $a - a_0 \in I$. A
 [local ring](trough:IsLocalRing) is
-[a Henselian local ring](lean:HenselianLocalRing) when this holds for its maximal ideal.
+a Henselian local ring when this holds for its maximal ideal.
 Every ring that is complete and Hausdorff for the $I$-adic topology is Henselian at $I$; in
 particular $\mathbb{Z}_p$, complete for the $p\mathbb{Z}_p$-adic topology, is a Henselian local
 ring. Stronger versions of the lemma lift factorizations of monic polynomials into coprime factors, not

@@ -1,8 +1,3 @@
----
-article_id: af_63d547bb6f68bcfc3a25d5e3
-concept: undergrad:Group Theory/Representation theory of finite groups/orthonormal basis of irreducible characters
----
-
 The theorem on the **orthonormal basis of irreducible characters** is the central
 theorem of the character theory of finite groups: for a finite [group](trough:Group) $G$, the
 [characters](trough:FDRep.character) of the
@@ -26,7 +21,7 @@ $$\langle f_1, f_2 \rangle = \frac{1}{|G|} \sum_{g \in G} f_1(g)\,\overline{f_2(
 
 The character of a finite-dimensional representation $\rho \colon G \to \mathrm{GL}(V)$
 is $\chi_V(g) = \operatorname{tr} \rho(g)$, and it
-[is a class function](lean:FDRep.char_conj). Let $V_1, \dots, V_r$ be a set of
+is a class function. Let $V_1, \dots, V_r$ be a set of
 representatives of the isomorphism classes of irreducible complex representations
 of $G$, with characters $\chi_1, \dots, \chi_r$. The theorem has two parts.
 
@@ -38,8 +33,8 @@ Since the eigenvalues of each $\rho(g)$ are roots of unity, $\overline{\chi(g)} 
 and the first part can be written without complex conjugation. In that form it
 holds over any algebraically closed field $k$ in which $|G|$ is invertible: for
 irreducible finite-dimensional representations $V$ and $W$ of $G$ over $k$,
-[the sum $\frac{1}{|G|}\sum_{g} \chi_V(g)\,\chi_W(g^{-1})$ is $1$ if $V \cong W$
-and $0$ otherwise](lean:FDRep.char_orthonormal). These are the
+the sum $\frac{1}{|G|}\sum_{g} \chi_V(g)\,\chi_W(g^{-1})$ is $1$ if $V \cong W$
+and $0$ otherwise. These are the
 [orthogonality relations](trough:FDRep.char_orthonormal).
 
 ## Examples
@@ -52,20 +47,20 @@ and $0$ otherwise](lean:FDRep.char_orthonormal). These are the
   $\langle \chi, \chi \rangle = \frac{1}{6}(4 + 3 \cdot 0 + 2 \cdot 1) = 1$, and
   its inner product with the trivial character is $\frac{1}{6}(2 + 0 - 2) = 0$.
 - **Abelian groups.** Over an algebraically closed field,
-  [every irreducible finite-dimensional representation of a commutative group is
-  one-dimensional](lean:Representation.IsIrreducible.finrank_eq_one_of_isMulCommutative),
+  every irreducible finite-dimensional representation of a commutative group is
+  one-dimensional,
   so the irreducible characters of a finite abelian group are its homomorphisms
   to the nonzero complex numbers, which make up the
   dual group.
   Every function is a class function here, and the theorem says these characters
   form an orthonormal basis of all functions $G \to \mathbb{C}$. For a finite abelian
   group written additively,
-  [two characters have normalized inner product $1$ if they are equal and $0$
-  otherwise](lean:AddChar.wInner_cWeight_eq_boole),
-  [the complex characters form a basis of the functions on the
-  group](lean:AddChar.complexBasis), whose
-  [vectors are the characters themselves](lean:AddChar.coe_complexBasis), and
-  [there are exactly as many characters as elements](lean:AddChar.card_eq).
+  two characters have normalized inner product $1$ if they are equal and $0$
+  otherwise,
+  the complex characters form a basis of the functions on the
+  group, whose
+  vectors are the characters themselves, and
+  there are exactly as many characters as elements.
 
 ## Consequences
 
@@ -76,12 +71,12 @@ and $0$ otherwise](lean:FDRep.char_orthonormal). These are the
   $V \cong V_1^{m_1} \oplus \dots \oplus V_r^{m_r}$, so $\chi_V = \sum_i m_i \chi_i$ and
   $m_i = \langle \chi_V, \chi_i \rangle$. Hence a representation is determined up to
   isomorphism by its character; the converse, that
-  [isomorphic representations have the same character](lean:FDRep.char_iso), holds
+  isomorphic representations have the same character, holds
   over any field.
 - **Irreducibility test.** $\langle \chi_V, \chi_V \rangle = \sum_i m_i^2$, so $V$ is
   irreducible exactly when this number is $1$. Over an algebraically closed field of
   characteristic zero,
-  [$V$ is irreducible if and only if $\sum_g \chi_V(g)\,\chi_V(g^{-1}) = |G|$](lean:FDRep.simple_iff_char_is_norm_one).
+  $V$ is irreducible if and only if $\sum_g \chi_V(g)\,\chi_V(g^{-1}) = |G|$.
 - **Sum of squares.** The regular representation has character $|G|$ at the
   identity and $0$ elsewhere, so $V_i$ occurs in it $\dim V_i$ times, and
   $|G| = \sum_i (\dim V_i)^2$.
@@ -96,17 +91,17 @@ and $0$ otherwise](lean:FDRep.char_orthonormal). These are the
 
 For a finite-dimensional representation over a field $k$ in which $|G|$ is
 invertible, the average of its character over $G$
-[equals the dimension of the subspace of invariant vectors](lean:FDRep.average_char_eq_finrank_invariants),
+equals the dimension of the subspace of invariant vectors,
 read as an element of $k$ (in positive characteristic, only its residue modulo the
 characteristic), because $\frac{1}{|G|}\sum_g \rho(g)$ is a projection onto that
 subspace. For finite-dimensional representations $V$ and $W$, apply this to the
 representation on linear maps from $V$ to $W$, whose character is
 $\chi_V(g^{-1})\chi_W(g)$ and whose invariants are the maps commuting with $G$. The
 result, again as an element of $k$, is
-[$\frac{1}{|G|}\sum_g \chi_W(g)\,\chi_V(g^{-1}) = \dim \operatorname{Hom}_G(V, W)$](lean:FDRep.scalar_product_char_eq_finrank_equivariant).
+$\frac{1}{|G|}\sum_g \chi_W(g)\,\chi_V(g^{-1}) = \dim \operatorname{Hom}_G(V, W)$.
 For irreducible $V$ and $W$ over an algebraically closed field,
 [Schur's lemma](trough:FDRep.finrank_hom_simple_simple) says that
-[this dimension is $1$ if $V \cong W$ and $0$ otherwise](lean:FDRep.finrank_hom_simple_simple),
+this dimension is $1$ if $V \cong W$ and $0$ otherwise,
 which proves orthonormality.
 
 For completeness, let $f$ be a class function orthogonal to every $\chi_i$. On an
