@@ -3,7 +3,7 @@
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/BanachSpaceTheory/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Pietsch domination theorem](pietsch-domination-theorem.md)
-- [Pietsch factorization](pietsch-factorization.md)
+- [ContinuousLinearMap.summingENorm\_le\_ofReal\_iff\_exists\_eq\_comp\_codRestrict\_topologicalClosure](continuouslinearmap-summingenorm-le-ofreal-iff-e.md)
 - [Closed-range theorem](closed-range-theorem.md)
 - [The Bishop–Phelps theorem](the-bishop-phelps-theorem.md)
 - [Milman–Pettis theorem](milman-pettis-theorem.md)

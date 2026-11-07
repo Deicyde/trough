@@ -26,7 +26,7 @@ TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlge
 
 ## Depends on
 
-- [Adic spaces](adic-spaces.md)
+- [TauCeti.PreAdicSpace.isAdic](tauceti-preadicspace-isadic.md)
 
 ## Proof depends on
 

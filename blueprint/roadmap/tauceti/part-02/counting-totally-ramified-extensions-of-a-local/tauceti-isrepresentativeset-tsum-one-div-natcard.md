@@ -37,8 +37,8 @@ TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueFie
 
 ## Proof depends on
 
-- [The orbit count](the-orbit-count.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.ncard\_isomorphic\_mul\_natCard\_algEquiv](tauceti-ncard-isomorphic-mul-natcard-algequiv.md)
 - [TauCeti.relDiscr](../../part-05/number-fields-ramification-frobenius-and-the-lmf/tauceti-reldiscr.md)
 
 ## Lean

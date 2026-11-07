@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The kernel of the level coordinate](the-kernel-of-the-level-coordinate.md)
+- [TauCeti.Iwasawa.ker\_levelCoordinate](tauceti-iwasawa-ker-levelcoordinate.md)
 
 ## Lean
 
@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.Iwasawa.iwasawaCoordinate_injective`](https:
 
 - [Tau Ceti documentation: `TauCeti.Iwasawa.iwasawaCoordinate_injective`](https://taucetiproject.org/docs/TauCeti/RingTheory/Iwasawa/LevelCoordinate.html#TauCeti.Iwasawa.iwasawaCoordinate_injective)
 - [Source of `TauCeti.Iwasawa.iwasawaCoordinate_injective` in TauCeti/RingTheory/Iwasawa/LevelCoordinate.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/RingTheory/Iwasawa/LevelCoordinate.lean#L364)
-- [Tau Ceti roadmap status: P-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

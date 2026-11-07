@@ -6,6 +6,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.SeibergWitten.trace\_quadraticEndPolar\_mul\_of\_mem\_traceFreeSelfAdjoint](tauceti-seibergwitten-trace-quadraticendpolar-mu.md)
 - [Frame independence of the chirality element](frame-independence-of-the-chirality-element.md)
 - [The self-duality relation](the-self-duality-relation.md)
-- [The anticommutator of two two-forms](the-anticommutator-of-two-two-forms.md)
+- [CliffordAlgebra.bivectorExterior\_mul\_bivectorExterior\_add\_swap](cliffordalgebra-bivectorexterior-mul-bivectorext.md)
 - [Orientation.hodgeStar](orientation-hodgestar.md)
 - [TauCeti.traceFreeSelfAdjoint](tauceti-tracefreeselfadjoint.md)

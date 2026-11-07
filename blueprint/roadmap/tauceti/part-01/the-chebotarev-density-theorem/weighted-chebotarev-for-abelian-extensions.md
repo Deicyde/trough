@@ -28,13 +28,13 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The analytic Euler product](../arithmetic-dirichlet-series-and-tauberian-method/the-analytic-euler-product.md)
-- [The continued L-function of a unitary weight](../arithmetic-dirichlet-series-and-tauberian-method/the-continued-l-function-of-a-unitary-weight.md)
 - [The crossing constant](the-crossing-constant.md)
 - [The crossing constant approaches `1 / #Aut_K(L)`](the-crossing-constant-approaches-1-aut-k-l.md)
 - [The Dedekind zeta function has no zeros on the line `Re s = 1` away from its pole](../arithmetic-dirichlet-series-and-tauberian-method/the-dedekind-zeta-function-has-no-zeros-on-the-l.md)
 - [The fixed-field Frobenius fiber count](the-fixed-field-frobenius-fiber-count.md)
 - [The ideal-theoretic Artin map](../../part-05/number-fields-ramification-frobenius-and-the-lmf/the-ideal-theoretic-artin-map.md)
 - [The primes of `K` with Artin class `C` in `L`](the-primes-of-k-with-artin-class-c-in-l.md)
+- [TauCeti.continuedLFunctionOfWeight](../arithmetic-dirichlet-series-and-tauberian-method/tauceti-continuedlfunctionofweight.md)
 - [The Wiener--Ikehara theorem](../arithmetic-dirichlet-series-and-tauberian-method/the-wiener-ikehara-theorem.md)
 
 ## Lean

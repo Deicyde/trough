@@ -21,13 +21,13 @@ TauCeti.ClassFieldTheory.localWeilArtinEquiv (K : Type) [Field K] [ValuativeRel 
 
 - [The Galois group of the maximal unramified extension is the profinite integers](../../part-04/local-fields-and-ramification/the-galois-group-of-the-maximal-unramified-exten.md)
 - [The local class formation](the-local-class-formation.md)
-- [Tate's theorem for a class formation](tates-theorem-for-a-class-formation.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.ClassFieldTheory.ClassFormation.tateIso](tauceti-classfieldtheory-classformation-tateiso.md)
 
 ## Proof depends on
 
-- [The Kummer isomorphism](../../part-02/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The local invariant](the-local-invariant.md)
+- [TauCeti.ClassFieldTheory.invMap](tauceti-classfieldtheory-invmap.md)
+- [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
 
 ## Lean
 

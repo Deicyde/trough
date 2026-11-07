@@ -40,7 +40,7 @@ TauCeti.HasNodalReduction.of_genus_eq_zero_of_divisor_degree_eq_one.{u} {R K : T
 
 ## Proof depends on
 
-- [The Riemann–Roch theorem](../../part-01/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem.md)
+- [TauCeti.isRiemannRochDivisor\_weilDifferentialDivisor](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-isriemannrochdivisor-weildifferentialdiv.md)
 - [TauCeti.Ring.IsJapanese](../scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

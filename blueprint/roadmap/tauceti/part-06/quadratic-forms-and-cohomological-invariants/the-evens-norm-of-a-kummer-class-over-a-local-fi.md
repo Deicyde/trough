@@ -32,14 +32,14 @@ TauCeti.galoisEvens_kummerClass_eq_hilbertSymbol_smul.{u} {K L : Type u} [Field 
 
 ## Depends on
 
-- [The index-two degree-one Evens norm](../../part-02/continuous-cohomology-of-profinite-groups/the-index-two-degree-one-evens-norm.md)
+- [TauCeti.ContCohomology.evensNormIndexTwo](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-contcohomology-evensnormindextwo.md)
 
 ## Proof depends on
 
 - [A Kummer cup over a local field is its Hilbert symbol times a fixed nonzero cup](a-kummer-cup-over-a-local-field-is-its-hilbert-s.md)
-- [The comparison isomorphism](the-comparison-isomorphism.md)
-- [The Kummer isomorphism](../../part-02/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
+- [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
+- [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

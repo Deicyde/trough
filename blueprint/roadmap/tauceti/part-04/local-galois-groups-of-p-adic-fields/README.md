@@ -2,7 +2,7 @@
 
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/LocalGaloisGroups/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [The generator rank of a local absolute Galois group](the-generator-rank-of-a-local-absolute-galois-gr.md)
+- [TauCeti.topologicalGeneratorRankNat\_absoluteGaloisGroup](tauceti-topologicalgeneratorranknat-absolutegalo.md)
 - [Demushkin's theorem](demushkins-theorem.md)
 - [The marked presentation of `G_{ℚ₂}(2)`](the-marked-presentation-of-g-q2-2.md)
 - [The marked presentation of `G_{ℚ₂(√-2)}(2)`](the-marked-presentation-of-g-q2-2-2.md)
@@ -12,6 +12,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The image of the cyclotomic character is an invariant of the field](the-image-of-the-cyclotomic-character-is-an-inva.md)
 - [The cyclotomic normalization of the local Artin map of a finite extension of `ℚ_p`](the-cyclotomic-normalization-of-the-local-artin.md)
 - [Local reciprocity for `A(L)`](local-reciprocity-for-a-l.md)
-- [The cokernel of the completed norm](the-cokernel-of-the-completed-norm.md)
-- [Existence of the Tate module of a finite layer](existence-of-the-tate-module-of-a-finite-layer.md)
-- [Swan's theorem for `ℤ_p\[G\]`](swans-theorem-for-z-p-g.md)
+- [TauCeti.padicCompletionUnitsNormCokernelEquiv](tauceti-padiccompletionunitsnormcokernelequiv.md)
+- [TauCeti.nonempty\_layerTateModule](tauceti-nonempty-layertatemodule.md)
+- [TauCeti.nonempty\_linearEquiv\_of\_projective\_of\_tensorRat](tauceti-nonempty-linearequiv-of-projective-of-te.md)

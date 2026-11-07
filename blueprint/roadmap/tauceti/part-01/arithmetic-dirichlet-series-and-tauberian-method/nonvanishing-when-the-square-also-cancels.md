@@ -21,7 +21,7 @@ TauCeti.continuedLFunctionOfWeight_ne_zero_of_hasCancellation_sq.{u_1} {K : Type
 
 ## Depends on
 
-- [The continued L-function of a unitary weight](the-continued-l-function-of-a-unitary-weight.md)
+- [TauCeti.continuedLFunctionOfWeight](tauceti-continuedlfunctionofweight.md)
 
 ## Proof depends on
 

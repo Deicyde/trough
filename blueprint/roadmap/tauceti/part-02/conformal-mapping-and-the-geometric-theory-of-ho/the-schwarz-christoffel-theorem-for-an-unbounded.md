@@ -56,11 +56,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Generalized winding number](../contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number.md)
-- [The homology Cauchy theorem](../contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem.md)
 - [The Jordan–Brouwer separation theorem](the-jordan-brouwer-separation-theorem.md)
 - [Rigidity of the pre-Schwarzian derivative](rigidity-of-the-pre-schwarzian-derivative.md)
 - [Schwarz reflection principle (real axis)](schwarz-reflection-principle-real-axis.md)
+- [TauCeti.Contour.homologyCauchyTheorem](../contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-homologycauchytheorem.md)
+- [TauCeti.Contour.windingNumber](../contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-windingnumber.md)
 
 ## Lean
 

@@ -59,7 +59,7 @@ TauCeti.cartan_poincare_of_bigradedExtPoincareMatrix_isDiagonal_of_semisimple.{u
 
 ## Depends on
 
-- [The graded Cartan matrix](the-graded-cartan-matrix.md)
+- [TauCeti.gradedCartanMatrix](tauceti-gradedcartanmatrix.md)
 
 ## Proof depends on
 

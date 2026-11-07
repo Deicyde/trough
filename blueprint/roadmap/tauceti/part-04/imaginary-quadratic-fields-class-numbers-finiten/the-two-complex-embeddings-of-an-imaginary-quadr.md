@@ -21,7 +21,7 @@ QuadraticAlgebra.ringHom_eq_or_eq_conjugate {a : ℚ} [Fact ¬IsSquare a] (ha : 
 
 ## Depends on
 
-- [The distinguished complex embedding of `ℚ(√a)`](the-distinguished-complex-embedding-of-q-a.md)
+- [QuadraticAlgebra.complexEmbedding](quadraticalgebra-complexembedding.md)
 
 ## Lean
 

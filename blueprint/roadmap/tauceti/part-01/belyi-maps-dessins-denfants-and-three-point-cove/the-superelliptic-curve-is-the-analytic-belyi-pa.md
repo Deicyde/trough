@@ -27,8 +27,8 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Analytic Belyi pairs are classified by finite covers of the thrice-punctured sphere](analytic-belyi-pairs-are-classified-by-finite-co.md)
-- [Circle.fundamentalGroupMulEquiv\_fromPath](../../part-07/universal-covers/circle-fundamentalgroupmulequiv-frompath.md)
-- [TauCeti.ConnectedCoverClass.isoClassEquiv](tauceti-connectedcoverclass-isoclassequiv.md)
+- [Connected covers of `ℂ ∖ {0, 1}` of degree `n` up to isomorphism are classified by the isomorphism classes of connected triples of degree `n`](connected-covers-of-c-0-1-of-degree-n-up-to-isom.md)
+- [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../../part-07/universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 - [TauCeti.CoveringSpace](../../part-07/universal-covers/tauceti-coveringspace.md)
 
 ## Lean

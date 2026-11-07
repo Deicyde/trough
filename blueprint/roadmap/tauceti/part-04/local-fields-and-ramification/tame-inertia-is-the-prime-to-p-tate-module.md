@@ -22,7 +22,7 @@ TauCeti.quotientWildInertiaSubgroupEquiv.{u_1} (K : Type u_1) [Field K] [Valuati
 
 ## Depends on
 
-- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
+- [TauCeti.wildInertiaSubgroup](tauceti-wildinertiasubgroup.md)
 
 ## Proof depends on
 

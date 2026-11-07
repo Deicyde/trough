@@ -29,7 +29,7 @@ TauCeti.FarguesFontaine.spaXAdicSpaceCongr.{v} {p : ℕ} [Fact (Nat.Prime p)] {R
 
 ## Depends on
 
-- [Adic spaces](adic-spaces.md)
+- [TauCeti.PreAdicSpace.isAdic](tauceti-preadicspace-isadic.md)
 
 ## Lean
 

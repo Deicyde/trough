@@ -11,4 +11,4 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.totalVariationOn](tauceti-totalvariationon.md)
 - [TauCeti.perimeter](tauceti-perimeter.md)
 - [BoundedVariationOn.exists\_arclength\_factorization](boundedvariationon-exists-arclength-factorizatio.md)
-- [TauCeti.exists\_regular\_lineDeriv\_ofFun\_apply\_eq](tauceti-exists-regular-linederiv-offun-apply-eq.md)
+- [The directional derivatives of a function of locally finite variation are signed Radon measures](the-directional-derivatives-of-a-function-of-loc.md)

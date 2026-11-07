@@ -14,13 +14,13 @@ TauCeti.isEven_leechLattice : TauCeti.leechLattice.IsEven
 
 ## Depends on
 
-- [The Leech lattice](the-leech-lattice.md)
 - [TauCeti.IntegralLattice](../../part-04/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
+- [TauCeti.leechLattice](tauceti-leechlattice.md)
 
 ## Proof depends on
 
-- [Construction B](construction-b.md)
 - [TauCeti.ConstructionA.lattice](../../part-01/algebraic-codes-and-code-lattice-constructions/tauceti-constructiona-lattice.md)
+- [TauCeti.ConstructionB.integralLattice](tauceti-constructionb-integrallattice.md)
 - [TauCeti.FiniteQuadraticModule](../../part-04/integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
 - [TauCeti.IntegralLattice.discriminantQuadraticModule](../../part-04/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-discriminantquadraticmod.md)
 

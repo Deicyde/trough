@@ -4,7 +4,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [TauCeti.NovikovSeries.completionPkg](tauceti-novikovseries-completionpkg.md)
 - [TauCeti.NovikovSeries.isDomain\_of\_fg](tauceti-novikovseries-isdomain-of-fg.md)
-- [Exponential and logarithm](exponential-and-logarithm.md)
+- [TauCeti.NovikovSeries.expMulEquiv](tauceti-novikovseries-expmulequiv.md)
 - [Multiplicativity of the torsion](multiplicativity-of-the-torsion.md)
 - [HomologicalComplex.reidemeisterTorsion\_eq\_zero\_iff](homologicalcomplex-reidemeistertorsion-eq-zero-i.md)
 - [HomologicalComplex.reidemeisterTorsion\_eq\_mul\_finprod\_det](homologicalcomplex-reidemeistertorsion-eq-mul-fi.md)

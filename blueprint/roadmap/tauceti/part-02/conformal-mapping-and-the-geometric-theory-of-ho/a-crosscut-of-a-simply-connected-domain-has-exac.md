@@ -23,8 +23,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Generalized winding number](../contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number.md)
-- [The homology Cauchy theorem](../contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem.md)
+- [TauCeti.Contour.homologyCauchyTheorem](../contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-homologycauchytheorem.md)
+- [TauCeti.Contour.windingNumber](../contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-windingnumber.md)
 
 ## Lean
 

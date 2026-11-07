@@ -4,7 +4,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Brenier's theorem](breniers-theorem.md)
 - [The Benamou–Brenier formula](the-benamou-brenier-formula.md)
-- [Lisini's superposition principle](lisinis-superposition-principle.md)
+- [TauCeti.exists\_map\_IccExtend\_eq\_lintegral\_curveAction\_eq](tauceti-exists-map-iccextend-eq-lintegral-curvea.md)
 - [Uniqueness of Wasserstein geodesics](uniqueness-of-wasserstein-geodesics.md)
 - [McCann's displacement convexity of internal energies](mccanns-displacement-convexity-of-internal-energ.md)
 - [TauCeti.convexSection](tauceti-convexsection.md)

@@ -1,4 +1,4 @@
-# P-adic measures, completed group algebras, and characteristic ideals
+# p-adic measures, completed group algebras, and characteristic ideals
 
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
@@ -7,7 +7,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Integral measures on `ℤ_pˣ` from unit coordinates](integral-measures-on-z-px-from-unit-coordinates.md)
 - [AbstractMeasure.amiceTransform\_weight\_id](abstractmeasure-amicetransform-weight-id.md)
 - [The height-one primes of `O⟦X⟧`](the-height-one-primes-of-ox.md)
-- [The kernel of the level coordinate](the-kernel-of-the-level-coordinate.md)
+- [TauCeti.Iwasawa.ker\_levelCoordinate](tauceti-iwasawa-ker-levelcoordinate.md)
 - [The level coordinates separate points](the-level-coordinates-separate-points.md)
 - [TauCeti.FiniteQuotientTower](tauceti-finitequotienttower.md)
 - [TauCeti.FiniteQuotientTower.compatibleFamilies](tauceti-finitequotienttower-compatiblefamilies.md)

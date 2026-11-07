@@ -34,7 +34,7 @@ TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition {γ : ℝ → ℂ
 
 ## Depends on
 
-- [Generalized winding number](generalized-winding-number.md)
+- [TauCeti.Contour.windingNumber](tauceti-contour-windingnumber.md)
 
 ## Proof depends on
 

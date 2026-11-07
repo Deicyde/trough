@@ -19,14 +19,14 @@ TauCeti.nonempty_continuousMulEquiv_iwasawaGroup.{u} (K : Type u) [Field K] [Val
 
 ## Depends on
 
-- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
+- [TauCeti.wildInertiaSubgroup](tauceti-wildinertiasubgroup.md)
 
 ## Proof depends on
 
 - [The Galois group of the maximal unramified extension is the profinite integers](the-galois-group-of-the-maximal-unramified-exten.md)
-- [The profinite power](../../part-05/profinite-integers-profinite-powers-and-continuo/the-profinite-power.md)
 - [Tame inertia is the prime-to-`p` Tate module](tame-inertia-is-the-prime-to-p-tate-module.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.zpowHat](../../part-05/profinite-integers-profinite-powers-and-continuo/tauceti-zpowhat.md)
 
 ## Lean
 

@@ -1,8 +1,8 @@
 # Tau Ceti
 
-[Tau Ceti](https://taucetiproject.org/), read at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145) (2026-11-07), with its roadmaps at [eaf17b10](https://github.com/TauCetiProject/TauCetiRoadmap/tree/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d): one article for each of the 1,377 declarations that a roadmap's status names as a result or a notable definition, in a section for each of the 126 roadmaps that name one. The 11 names the statuses give that Tau Ceti does not have at this commit have no article. A roadmap's plan, its suggested signatures and its frontier say what Tau Ceti may add, so they are left out, and so is the statuses' prose: a model writes it, and Tau Ceti does not check it.
+[Tau Ceti](https://taucetiproject.org/), read at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145) (2026-11-07), with its roadmaps at [eaf17b10](https://github.com/TauCetiProject/TauCetiRoadmap/tree/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d): one article for each of the 1,377 declarations that a roadmap's status names as a result or a notable definition, in a section for each of the 126 roadmaps whose status names one. The 11 names the statuses give that Tau Ceti does not have at this commit have no article. A roadmap's plan, its suggested signatures and its frontier say what Tau Ceti may add, so they are left out, and so is the statuses' prose: a model writes it, and Tau Ceti does not check it.
 
-Each article's text is its declaration's docstring and signature, under Tau Ceti's Apache-2.0 license; a docstring that opens with a bold title gives the article its title. Dependencies come from Tau Ceti's declarations (`lean/tauceti/TauCetiDeps.lean`): under *Depends on*, the declarations mapped here that a statement reaches through the statements of declarations not mapped here, and under *Proof depends on*, those a proof reaches through any chain of Tau Ceti declarations not mapped here. A theorem whose proof reaches `sorry` is shown as stated, not proved.
+Each article's text is its declaration's docstring and signature, under Tau Ceti's Apache-2.0 license; a docstring that opens with a bold title gives the article its title. Dependencies come from Tau Ceti's declarations (`lean/tauceti/TauCetiDeps.lean`): under *Depends on*, the declarations mapped here that a statement reaches through the statements of declarations not mapped here, and under *Proof depends on*, those a proof reaches through any chain of Tau Ceti declarations not mapped here. A theorem whose proof reaches `sorry`, itself or through a declaration mapped here, is shown as stated, not proved, and a definition that reaches it says so.
 
 ## [Affine Lie algebras, smooth… to Clifford bundles, spin…](part-01/README.md)
 
@@ -111,7 +111,7 @@ Each article's text is its declaration's docstring and signature, under Tau Ceti
 - [Optimal transport and Wasserstein geometry](part-05/optimal-transport-and-wasserstein-geometry/README.md)
 - [Orthogonal and spin groups](part-05/orthogonal-and-spin-groups/README.md)
 - [P-adic functional analysis](part-05/p-adic-functional-analysis/README.md)
-- [P-adic measures, completed group algebras, and characteristic ideals](part-05/p-adic-measures-completed-group-algebras-and-cha/README.md)
+- [p-adic measures, completed group algebras, and characteristic ideals](part-05/p-adic-measures-completed-group-algebras-and-cha/README.md)
 - [Partial differential equations](part-05/partial-differential-equations/README.md)
 - [Peripheral actions on free pro-`p` groups](part-05/peripheral-actions-on-free-pro-p-groups/README.md)
 - [Pivotal and spherical categories](part-05/pivotal-and-spherical-categories/README.md)

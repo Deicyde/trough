@@ -3,7 +3,7 @@
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ConformalMapping/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Riemann mapping theorem](the-riemann-mapping-theorem.md)
-- [TauCeti.exists\_homeomorph\_closedBall\_closure\_of\_isJordanCurve\_frontier](tauceti-exists-homeomorph-closedball-closure-of.md)
+- [The Riemann map of a Jordan domain extends to a homeomorphism of the closures](the-riemann-map-of-a-jordan-domain-extends-to-a.md)
 - [Carathéodory's continuity theorem, as a characterization](caratheodorys-continuity-theorem-as-a-characteri.md)
 - [The Schwarz--Christoffel theorem for a bounded polygonal Jordan domain](the-schwarz-christoffel-theorem-for-a-bounded-po.md)
 - [The Schwarz--Christoffel theorem for an unbounded polygonal Jordan domain](the-schwarz-christoffel-theorem-for-an-unbounded.md)

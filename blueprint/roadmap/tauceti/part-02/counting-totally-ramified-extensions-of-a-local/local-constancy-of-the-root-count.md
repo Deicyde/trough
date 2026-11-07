@@ -38,7 +38,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hensel's lemma with an estimate](hensels-lemma-with-an-estimate.md)
+- [Polynomial.exists\_isRoot\_addVal\_eval\_eq](polynomial-exists-isroot-addval-eval-eq.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

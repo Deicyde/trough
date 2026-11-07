@@ -23,8 +23,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The `n`-torsion of an elliptic curve is étale where `n` is invertible](the-n-torsion-of-an-elliptic-curve-is-etale-wher.md)
 - [`Y₁(N)` is a fine moduli scheme for `N ≥ 4`](y1-n-is-a-fine-moduli-scheme-for-n-4.md)
+- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale\_torsion\_hom\_of\_forall\_intCast\_ne\_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
 
 ## Lean
 

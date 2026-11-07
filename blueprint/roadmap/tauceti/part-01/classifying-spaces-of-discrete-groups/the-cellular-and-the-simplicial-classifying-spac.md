@@ -25,14 +25,14 @@ TauCeti.cellularHomotopyEquivClassifyingSpace.{u} {S : Type u} (R : Set (FreeGro
 
 ## Depends on
 
-- [Whitehead's theorem](../algebraic-topology-of-spaces-and-manifolds/whiteheads-theorem.md)
+- [ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv](../algebraic-topology-of-spaces-and-manifolds/continuousmap-isweakhomotopyequivalence-homotopy.md)
 
 ## Proof depends on
 
 - [The cellular classifying space is a CW complex](the-cellular-classifying-space-is-a-cw-complex.md)
-- [Circle.fundamentalGroupMulEquiv\_fromPath](../../part-07/universal-covers/circle-fundamentalgroupmulequiv-frompath.md)
-- [The fundamental group at `x` acts on every homotopy group based at `x`](../../part-07/universal-covers/the-fundamental-group-at-x-acts-on-every-homotop.md)
+- [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../../part-07/universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 - [The orbit space of a free cellular action is a CW complex](the-orbit-space-of-a-free-cellular-action-is-a-c.md)
+- [TauCeti.homotopyGroupMulAction](../../part-07/universal-covers/tauceti-homotopygroupmulaction.md)
 
 ## Lean
 

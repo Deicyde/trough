@@ -35,7 +35,7 @@ Representation.mk_finrank_symmetricAlgebraInvariants_inf_homogeneousSubmodule_eq
 
 ## Proof depends on
 
-- [The graded trace formula for an endomorphism of finite order](the-graded-trace-formula-for-an-endomorphism-of.md)
+- [Module.End.mk\_trace\_homogeneousSubmoduleMapₛₗ\_mul\_reverse\_charpoly\_of\_pow\_eq\_one](module-end-mk-trace-homogeneoussubmodulemapsl-mu.md)
 
 ## Lean
 

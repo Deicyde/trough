@@ -22,7 +22,7 @@ TauCeti.brauer2EquivH2_baseChange.{u} {K L : Type u} [Field K] [Field L] [Algebr
 
 ## Depends on
 
-- [The comparison isomorphism](the-comparison-isomorphism.md)
+- [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
 
 ## Lean
 

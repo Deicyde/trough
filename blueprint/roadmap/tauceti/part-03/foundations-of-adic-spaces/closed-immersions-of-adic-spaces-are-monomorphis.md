@@ -18,7 +18,7 @@ TauCeti.AdicSpace.mono_of_isClosedImmersion.{u} {X Y : TauCeti.AdicSpace} (f : X
 
 ## Depends on
 
-- [Adic spaces](adic-spaces.md)
+- [TauCeti.PreAdicSpace.isAdic](tauceti-preadicspace-isadic.md)
 
 ## Lean
 

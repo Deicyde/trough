@@ -11,5 +11,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Tame inertia is procyclic](tame-inertia-is-procyclic.md)
 - [The Galois group of the maximal unramified extension is the profinite integers](the-galois-group-of-the-maximal-unramified-exten.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
-- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
+- [TauCeti.wildInertiaSubgroup](tauceti-wildinertiasubgroup.md)
 - [The prime-to-`p` Tate module is the product of its `ℓ`-adic components](the-prime-to-p-tate-module-is-the-product-of-its.md)

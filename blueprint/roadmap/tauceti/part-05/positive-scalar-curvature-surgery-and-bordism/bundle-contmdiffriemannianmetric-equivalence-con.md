@@ -24,7 +24,7 @@ Bundle.ContMDiffRiemannianMetric.equivalence_concordant.{u_1, u_2, u_3} {E : Typ
 
 ## Proof depends on
 
-- [The scalar curvature of a product metric](the-scalar-curvature-of-a-product-metric.md)
+- [Bundle.ContMDiffRiemannianMetric.scalarCurvature\_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
 
 ## Lean
 

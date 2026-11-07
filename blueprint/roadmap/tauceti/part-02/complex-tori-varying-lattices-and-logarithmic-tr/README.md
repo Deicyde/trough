@@ -8,7 +8,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Odd-degree classes of the cyclic representation](odd-degree-classes-of-the-cyclic-representation.md)
 - [Odd-degree cohomology of the trivial action](odd-degree-cohomology-of-the-trivial-action.md)
 - [Uniform bound for inverse period maps](uniform-bound-for-inverse-period-maps.md)
-- [The global trivialization](the-global-trivialization.md)
+- [TauCeti.torusFamilyHomeomorphProd](tauceti-torusfamilyhomeomorphprod.md)
 - [AddEquiv.cyclicRep](addequiv-cyclicrep.md)
 - [TauCeti.torusFamilyProjection](tauceti-torusfamilyprojection.md)
 - [TauCeti.torusFamilyFiberHomeomorph](tauceti-torusfamilyfiberhomeomorph.md)

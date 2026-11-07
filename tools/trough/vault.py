@@ -94,7 +94,10 @@ def range_title(group: list[Entry], number: int, total: int) -> str:
 
 
 def link_text(text: str) -> str:
-    return text.replace("[", "\\[").replace("]", "\\]")
+    """Text for a link label, its brackets escaped outside code spans, which show a backslash as is."""
+    parts = re.split(r"(`+[^`]*`+)", text)
+    return "".join(part if index % 2 else part.replace("[", "\\[").replace("]", "\\]")
+                   for index, part in enumerate(parts))
 
 
 def chunk(container: Container, title: Callable[[list[Entry], int, int], str] = range_title) -> Container:

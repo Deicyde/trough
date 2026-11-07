@@ -19,7 +19,7 @@ TauCeti.ClassFieldTheory.localClassFormation (K : Type) [Field K] [ValuativeRel 
 
 ## Depends on
 
-- [The local invariant](the-local-invariant.md)
+- [TauCeti.ClassFieldTheory.invMap](tauceti-classfieldtheory-invmap.md)
 
 ## Proof depends on
 

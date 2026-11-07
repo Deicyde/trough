@@ -23,7 +23,7 @@ TauCeti.AlgebraicGeometry.abelJacobiMapToPicZeroFppf.{u} {S X : AlgebraicGeometr
 
 ## Depends on
 
-- [The degree-zero Picard functor `Pic⁰_{X/S}`](the-degree-zero-picard-functor-pic0-x-s.md)
+- [TauCeti.AlgebraicGeometry.relativePicardDegreeZeroFunctor](tauceti-algebraicgeometry-relativepicarddegreeze.md)
 
 ## Proof depends on
 

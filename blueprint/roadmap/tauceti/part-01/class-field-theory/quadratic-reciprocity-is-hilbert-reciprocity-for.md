@@ -26,14 +26,14 @@ TauCeti.ClassFieldTheory.sum_finiteHilbertInvariantAt_add_sum_infiniteHilbertInv
 
 ## Depends on
 
-- [The Kummer isomorphism](../../part-02/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The local invariant](the-local-invariant.md)
+- [TauCeti.ClassFieldTheory.invMap](tauceti-classfieldtheory-invmap.md)
+- [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
 
 ## Proof depends on
 
-- [The comparison isomorphism](../../part-06/quadratic-forms-and-cohomological-invariants/the-comparison-isomorphism.md)
-- [The splitting criterion for quaternion algebras](../../part-06/quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.brauerCohomologyEquiv](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-brauercohomologyequiv.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

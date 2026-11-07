@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import json
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import quote, unquote
@@ -47,7 +47,8 @@ def roadmap_title(readme: str, fallback: str) -> str:
     if not match:
         return fallback
     title = match.group(1)
-    return title[:1].upper() + title[1:]
+    # A title opening on a variable, "p-adic measures", keeps its case.
+    return title if re.match(r"[a-z](?![a-z])", title) else title[:1].upper() + title[1:]
 
 
 def read_roadmaps(checkout: Path) -> list[dict]:
@@ -72,7 +73,9 @@ def read_roadmaps(checkout: Path) -> list[dict]:
 TAUCETI_REPO = "https://github.com/TauCetiProject/TauCeti"
 DOCS = "https://taucetiproject.org/docs"
 KIND_COMMANDS = {"constructor": "def", "recursor": "def", "quot": "def"}
-LEAD = re.compile(r"^\s*\*\*(?P<title>[^*\n]+?)[.:]?\*\*[.:]?\s*")
+# A bold opening is a title when it is a whole sentence: a period or colon ends it, inside the bold
+# or just after. It may wrap a line, and hold a lone "*" ("Weak-* compactness").
+LEAD = re.compile(r"^\s*\*\*(?P<title>(?:[^*\n]|\n(?!\s*\n)|\*(?!\*))+?)(?:[.:]\*\*|\*\*[.:])\s*")
 
 
 @dataclass
@@ -124,25 +127,28 @@ def title_and_text(name: str, doc: str | None) -> tuple[str, str]:
     doc = (doc or "").strip()
     lead = LEAD.match(doc)
     if lead:
-        return lead.group("title").strip(), doc[lead.end():].strip()
+        return " ".join(lead.group("title").split()), doc[lead.end():].strip()
     return name, doc
 
 
-def build_leaf(sources: Sources, name: str, record: dict, homes: list[dict]) -> Leaf:
-    title, text = title_and_text(name, record.get("doc"))
+def build_leaf(sources: Sources, name: str, record: dict, homes: list[dict], title: str, text: str,
+               uses_sorry: bool) -> Leaf:
+    """*title* is Markdown; *uses_sorry* says whether the declaration reaches `sorry`, itself or
+    through a declaration mapped here."""
     kind = KIND_COMMANDS.get(record["kind"], record["kind"])
     fields = [("declaration", kind), ("origin", "cited"), ("lean", name), ("statement", "formalized")]
-    if kind == "theorem" and not record.get("sorry"):
+    if kind == "theorem" and not uses_sorry:
         fields.append(("proof", "formalized"))
     body = [clean_doc(text)] if text else []
     if record.get("signature"):
         body.append(fence(record["signature"]))
     url = doc_url(name, record["module"])
-    if kind == "theorem" and record.get("sorry"):
-        lean = f"Tau Ceti states this as [`{name}`]({url}); its proof uses `sorry`."
+    if uses_sorry:
+        what = "proof" if kind == "theorem" else "definition"
+        lean = f"Tau Ceti states this as [`{name}`]({url}); its {what} reaches `sorry`."
     else:
         lean = f"Formalized in Tau Ceti as [`{name}`]({url})."
-    leaf = Leaf(escape(title) if title == name else safe_math_markdown(title), slugify(title), fields,
+    leaf = Leaf(title, slugify(title), fields,
                 "\n\n".join(body) or f"Tau Ceti gives `{name}` no docstring.", notes=[("Lean", lean)])
     leaf.sources = [
         (f"Tau Ceti documentation: `{name}`", url),
@@ -159,7 +165,11 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
     """The chapter's root, its counts, and each mapped name's documentation page (for
     hooks/lean-links.json). A declaration named by several roadmaps lives in the first by title
     and is listed in the others."""
-    records = (sources.deps or {}).get("declarations", {})
+    # Only declarations in Tau Ceti's own modules: a status may link a name that now lives in Mathlib.
+    records = {name: record for name, record in (sources.deps or {}).get("declarations", {}).items()
+               if (record.get("module") or "").split(".")[0] == "TauCeti"}
+    incomplete = reaching_sorry(records)
+    titles = display_titles(records, {name for roadmap in sources.roadmaps for name in roadmap["names"]})
     homes: dict[str, list[dict]] = defaultdict(list)
     for roadmap in sources.roadmaps:
         for name in roadmap["names"]:
@@ -183,21 +193,21 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
             if name in leaves:
                 section.entries.append(Entry(leaves[name], owned=False))
                 continue
-            leaves[name] = build_leaf(sources, name, records[name], homes[name])
+            title, text = titles[name]
+            leaves[name] = build_leaf(sources, name, records[name], homes[name], title, text, name in incomplete)
             section.entries.append(Entry(leaves[name]))
         sections.append(Entry(chunk(section)))
     for name, leaf in leaves.items():
         record = records[name]
-        leaf.depends = sorted({leaves[other] for other in record.get("statement", []) if other in leaves and other != name},
-                              key=lambda node: title_key(node.title))
-        leaf.proof_depends = sorted({leaves[other] for other in record.get("proof", [])
-                                     if other in leaves and other != name and leaves[other] not in leaf.depends},
-                                    key=lambda node: title_key(node.title))
+        statement = {other for other in record.get("statement", []) if other in leaves and other != name}
+        proof = {other for other in record.get("proof", []) if other in leaves and other != name} - statement
+        leaf.depends = [leaves[other] for other in sorted(statement, key=lambda other: (title_key(leaves[other].title), other))]
+        leaf.proof_depends = [leaves[other] for other in sorted(proof, key=lambda other: (title_key(leaves[other].title), other))]
         stats["statement_edges"] += len(leaf.depends)
         stats["proof_edges"] += len(leaf.proof_depends)
         kind = dict(leaf.fields)["declaration"]
         stats["theorems" if kind == "theorem" else "definitions"] += 1
-        stats["sorry"] += bool(kind == "theorem" and record.get("sorry"))
+        stats["sorry"] += name in incomplete
     stats["cycles"] = break_cycles(list(leaves.values()))
     stats["articles"] = len(leaves)
     stats["roadmaps"] = len(sections)
@@ -209,6 +219,36 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
     return root, dict(stats), links
 
 
+def reaching_sorry(records: dict[str, dict]) -> set[str]:
+    """The declarations that reach `sorry`: the dump's own mark stops at the next declaration mapped
+    here, so a mark passes along the edges to what uses it."""
+    marked = {name for name, record in records.items() if record.get("sorry")}
+    changed = True
+    while changed:
+        changed = False
+        for name, record in records.items():
+            if name not in marked and marked & set(record.get("statement", []) + record.get("proof", [])):
+                marked.add(name)
+                changed = True
+    return marked
+
+
+def display_titles(records: dict[str, dict], named: set[str]) -> dict[str, tuple[str, str]]:
+    """Each mapped declaration's title as Markdown, and the rest of its docstring. A docstring's bold
+    lead that two declarations share is followed by each one's name."""
+    raw = {name: title_and_text(name, records[name].get("doc")) for name in sorted(named & records.keys())}
+    counts = Counter(title for title, _ in raw.values())
+    out = {}
+    for name, (title, text) in raw.items():
+        if title == name:
+            out[name] = (escape(name), text)
+        elif counts[title] > 1:
+            out[name] = (f"{safe_math_markdown(title)} (`{name}`)", text)
+        else:
+            out[name] = (safe_math_markdown(title), text)
+    return out
+
+
 def intro(sources: Sources, stats: dict[str, int]) -> str:
     rev = f"[{sources.rev[:8]}]({TAUCETI_REPO}/tree/{sources.rev})"
     date = f" ({sources.date[:10]})" if sources.date else ""
@@ -217,7 +257,7 @@ def intro(sources: Sources, stats: dict[str, int]) -> str:
     return "\n\n".join([
         f"[Tau Ceti](https://taucetiproject.org/), read at commit {rev}{date}, with its roadmaps at {roadmaps}: one "
         f"article for each of the {stats['articles']:,} declarations that a roadmap's status names as a result or a "
-        f"notable definition, in a section for each of the {stats['roadmaps']} roadmaps that name one. "
+        f"notable definition, in a section for each of the {stats['roadmaps']} roadmaps whose status names one. "
         + ("The one name the statuses give that Tau Ceti does not have at this commit has no article. " if missing == 1
            else f"The {missing} names the statuses give that Tau Ceti does not have at this commit have no article. "
            if missing else "")
@@ -228,5 +268,6 @@ def intro(sources: Sources, stats: dict[str, int]) -> str:
         "declarations (`lean/tauceti/TauCetiDeps.lean`): under *Depends on*, the declarations mapped here that a "
         "statement reaches through the statements of declarations not mapped here, and under *Proof depends on*, "
         "those a proof reaches through any chain of Tau Ceti declarations not mapped here. A theorem whose proof "
-        "reaches `sorry` is shown as stated, not proved.",
+        "reaches `sorry`, itself or through a declaration mapped here, is shown as stated, not proved, and a "
+        "definition that reaches it says so.",
     ])

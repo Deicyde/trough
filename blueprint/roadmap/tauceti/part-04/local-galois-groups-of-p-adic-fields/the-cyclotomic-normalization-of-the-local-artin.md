@@ -30,13 +30,13 @@ TauCeti.ClassFieldTheory.localCyclotomicCharacter_artinMap_unit (p : ℕ) [Fact 
 ## Depends on
 
 - [The local class formation](../../part-01/class-field-theory/the-local-class-formation.md)
-- [Tate's theorem for a class formation](../../part-01/class-field-theory/tates-theorem-for-a-class-formation.md)
+- [TauCeti.ClassFieldTheory.ClassFormation.tateIso](../../part-01/class-field-theory/tauceti-classfieldtheory-classformation-tateiso.md)
 
 ## Proof depends on
 
 - [The Galois group of the maximal unramified extension is the profinite integers](../local-fields-and-ramification/the-galois-group-of-the-maximal-unramified-exten.md)
-- [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.ClassFieldTheory.invMap](../../part-01/class-field-theory/tauceti-classfieldtheory-invmap.md)
 
 ## Lean
 

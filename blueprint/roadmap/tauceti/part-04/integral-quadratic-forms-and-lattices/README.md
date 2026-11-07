@@ -6,7 +6,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [A positive definite genus contains finitely many classes](a-positive-definite-genus-contains-finitely-many.md)
 - [`E₈ ⊕ E₈ ⊕ U ≅ D₁₆⁺ ⊕ U`](e8-e8-u-d16-u.md)
 - [Indefinite lattices have infinite isometry groups](indefinite-lattices-have-infinite-isometry-group.md)
-- [Classification of odd unimodular forms over `ℤ_\[2\]`](classification-of-odd-unimodular-forms-over-z-2.md)
+- [Classification of odd unimodular forms over `ℤ_[2]`](classification-of-odd-unimodular-forms-over-z-2.md)
 - [TauCeti.IntegralLattice](../integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
 - [TauCeti.FiniteQuadraticModule](tauceti-finitequadraticmodule.md)
 - [Even overlattices correspond to quadratic-isotropic subgroups](../integral-lattices-discriminant-forms-and-overlat/even-overlattices-correspond-to-quadratic-isotro.md)

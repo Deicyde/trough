@@ -32,7 +32,7 @@ TauCeti.exists_bijective_primeEnd_map_unitDiscPrimeEnd_of_isJordanCurve_frontier
 ## Proof depends on
 
 - [The Jordan–Brouwer separation theorem](the-jordan-brouwer-separation-theorem.md)
-- [TauCeti.exists\_homeomorph\_closedBall\_closure\_of\_isJordanCurve\_frontier](tauceti-exists-homeomorph-closedball-closure-of.md)
+- [The Riemann map of a Jordan domain extends to a homeomorphism of the closures](the-riemann-map-of-a-jordan-domain-extends-to-a.md)
 
 ## Lean
 

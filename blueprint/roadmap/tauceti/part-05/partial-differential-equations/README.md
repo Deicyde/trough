@@ -9,5 +9,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The Calderón–Zygmund estimate `‖D²u‖_p ≤ C ‖Δu‖_p`](the-calderon-zygmund-estimate-d2u-p-c-u-p.md)
 - [Existence of weak solutions for linear parabolic equations](existence-of-weak-solutions-for-linear-parabolic.md)
 - [TauCeti.Wkp](tauceti-wkp.md)
-- [The trace operator of a bounded Lipschitz domain](the-trace-operator-of-a-bounded-lipschitz-domain.md)
+- [TauCeti.W1p.frontierTrace](tauceti-w1p-frontiertrace.md)
 - [TauCeti.CkHolderSpace](tauceti-ckholderspace.md)

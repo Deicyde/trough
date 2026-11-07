@@ -32,7 +32,7 @@ TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_nullHomologous {f : ℂ → 
 
 ## Depends on
 
-- [Generalized winding number](generalized-winding-number.md)
+- [TauCeti.Contour.windingNumber](tauceti-contour-windingnumber.md)
 
 ## Proof depends on
 
