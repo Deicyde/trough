@@ -27,9 +27,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Finite global reciprocity](finite-global-reciprocity.md)
-- [The semi-local decomposition](../../part-05/number-fields-ramification-frobenius-and-the-lmf/the-semi-local-decomposition.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.ClassFieldTheory.globalArtinEquiv](tauceti-classfieldtheory-globalartinequiv.md)
+- [TauCeti.semilocalEquiv](../../part-05/number-fields-ramification-frobenius-and-the-lmf/tauceti-semilocalequiv.md)
 
 ## Lean
 

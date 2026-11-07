@@ -10,5 +10,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.ModularSymbols](tauceti-modularsymbols.md)
 - [TauCeti.ModularSymbols.periodMap](tauceti-modularsymbols-periodmap.md)
 - [Periods determine a cusp form](periods-determine-a-cusp-form.md)
-- [The Atkin–Li pseudo-eigenvalue](the-atkin-li-pseudo-eigenvalue.md)
-- [The cusps of `Γ₀(N)`](the-cusps-of-0-n.md)
+- [HeckeRing.GL2.Newform.atkinLehnerPseudoEigenvalue](heckering-gl2-newform-atkinlehnerpseudoeigenvalu.md)
+- [TauCeti.gamma0CuspOrbitEquiv](tauceti-gamma0cusporbitequiv.md)

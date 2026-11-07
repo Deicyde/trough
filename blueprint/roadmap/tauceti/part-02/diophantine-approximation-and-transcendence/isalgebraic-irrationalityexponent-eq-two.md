@@ -21,7 +21,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Roth's theorem](roths-theorem.md)
+- [IsAlgebraic.finite\_setOfPred\_abs\_sub\_le\_mulHeight₁\_rpow\_neg](isalgebraic-finite-setofpred-abs-sub-le-mulheigh.md)
 
 ## Lean
 

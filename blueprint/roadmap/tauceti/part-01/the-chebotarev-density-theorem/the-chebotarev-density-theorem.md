@@ -27,11 +27,11 @@ NumberField.Chebotarev.hasDirichletDensity_frobeniusPrimeSet.{u_1, u_2} (K : Typ
 ## Proof depends on
 
 - [The analytic Euler product](../arithmetic-dirichlet-series-and-tauberian-method/the-analytic-euler-product.md)
-- [The continued L-function of a unitary weight](../arithmetic-dirichlet-series-and-tauberian-method/the-continued-l-function-of-a-unitary-weight.md)
 - [The crossing constant](the-crossing-constant.md)
 - [The crossing constant approaches `1 / #Aut_K(L)`](the-crossing-constant-approaches-1-aut-k-l.md)
 - [The fixed-field Frobenius fiber count](the-fixed-field-frobenius-fiber-count.md)
 - [The ideal-theoretic Artin map](../../part-05/number-fields-ramification-frobenius-and-the-lmf/the-ideal-theoretic-artin-map.md)
+- [TauCeti.continuedLFunctionOfWeight](../arithmetic-dirichlet-series-and-tauberian-method/tauceti-continuedlfunctionofweight.md)
 
 ## Lean
 

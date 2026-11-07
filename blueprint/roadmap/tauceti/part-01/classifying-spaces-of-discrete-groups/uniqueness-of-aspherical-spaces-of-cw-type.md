@@ -34,8 +34,8 @@ Its statement uses no other declaration mapped here.
 
 - [The cellular and the simplicial classifying spaces agree](the-cellular-and-the-simplicial-classifying-spac.md)
 - [The cellular classifying space is a CW complex](the-cellular-classifying-space-is-a-cw-complex.md)
-- [Circle.fundamentalGroupMulEquiv\_fromPath](../../part-07/universal-covers/circle-fundamentalgroupmulequiv-frompath.md)
-- [Whitehead's theorem](../algebraic-topology-of-spaces-and-manifolds/whiteheads-theorem.md)
+- [ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv](../algebraic-topology-of-spaces-and-manifolds/continuousmap-isweakhomotopyequivalence-homotopy.md)
+- [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../../part-07/universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 
 ## Lean
 

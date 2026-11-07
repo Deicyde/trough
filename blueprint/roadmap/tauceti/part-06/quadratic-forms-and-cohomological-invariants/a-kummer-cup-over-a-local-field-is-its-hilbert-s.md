@@ -30,9 +30,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The comparison isomorphism](the-comparison-isomorphism.md)
-- [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

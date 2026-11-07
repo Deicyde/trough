@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`AbstractMeasure.towerCoordinatesEquiv`](https://tauc
 
 - [Tau Ceti documentation: `AbstractMeasure.towerCoordinatesEquiv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Padics/Measure/TowerCoordinates.html#AbstractMeasure.towerCoordinatesEquiv)
 - [Source of `AbstractMeasure.towerCoordinatesEquiv` in TauCeti/NumberTheory/Padics/Measure/TowerCoordinates.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/NumberTheory/Padics/Measure/TowerCoordinates.lean#L156)
-- [Tau Ceti roadmap status: P-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

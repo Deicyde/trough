@@ -36,8 +36,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The splitting criterion for quaternion algebras](../../part-06/quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

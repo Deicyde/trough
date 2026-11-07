@@ -25,8 +25,8 @@ TauCeti.Contour.Cycle.homologyCauchyTheorem.{u_1} {E : Type u_1} [NormedAddCommG
 
 ## Depends on
 
-- [Generalized winding number](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number.md)
 - [TauCeti.Contour.Cycle](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-cycle.md)
+- [TauCeti.Contour.windingNumber](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-windingnumber.md)
 
 ## Lean
 

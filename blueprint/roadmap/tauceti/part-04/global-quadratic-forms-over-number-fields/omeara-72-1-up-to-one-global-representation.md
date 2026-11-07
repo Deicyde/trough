@@ -37,14 +37,14 @@ TauCeti.NumberField.QuadraticForm.GlobalFormInvariants.IsLocalRealization.exists
 ## Depends on
 
 - [A system of local invariants of a quadratic form over a number field `K`](a-system-of-local-invariants-of-a-quadratic-form.md)
-- [The system of local invariants of a regular quadratic form](the-system-of-local-invariants-of-a-regular-quad.md)
+- [QuadraticForm.globalInvariants](quadraticform-globalinvariants.md)
 
 ## Proof depends on
 
 - [The Hasse product formula](the-hasse-product-formula.md)
-- [Hilbert sign prescription](hilbert-sign-prescription.md)
-- [The splitting criterion for quaternion algebras](../../part-06/quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.NumberField.QuadraticForm.exists\_hilbertSymbol\_eq\_ite](tauceti-numberfield-quadraticform-exists-hilbert.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

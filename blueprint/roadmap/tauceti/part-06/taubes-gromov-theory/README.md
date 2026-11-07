@@ -4,8 +4,8 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [The good-curve component inequality](the-good-curve-component-inequality.md)
 - [TauCeti.IsGoodCycle.apply\_self\_eq\_zero\_of\_one\_lt\_mult](tauceti-isgoodcycle-apply-self-eq-zero-of-one-lt.md)
-- [Independent-component expansion](independent-component-expansion.md)
-- [The Weitzenböck identity at the vacuum](the-weitzenbock-identity-at-the-vacuum.md)
+- [TauCeti.coeff\_rayTorusWeightSeries](tauceti-coeff-raytorusweightseries.md)
+- [TauCeti.Vortex.temperedVacuumAdjoint\_temperedVacuumOperator](tauceti-vortex-temperedvacuumadjoint-temperedvac.md)
 - [The vacuum operator is invertible on tempered fields](the-vacuum-operator-is-invertible-on-tempered-fi.md)
 - [The vacuum operator restricts to a bijection `H^s → H^{s-1}`](the-vacuum-operator-restricts-to-a-bijection-h-s.md)
 - [The integral Wang torsion order](the-integral-wang-torsion-order.md)

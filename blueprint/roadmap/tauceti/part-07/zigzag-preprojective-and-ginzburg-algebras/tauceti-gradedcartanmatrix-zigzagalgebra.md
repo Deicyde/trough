@@ -23,7 +23,7 @@ TauCeti.gradedCartanMatrix_zigzagAlgebra.{u, w} (k : Type w) [Field k] {V : Type
 
 ## Depends on
 
-- [The graded Cartan matrix](../../part-04/grothendieck-groups-cartan-maps-and-euler-forms/the-graded-cartan-matrix.md)
+- [TauCeti.gradedCartanMatrix](../../part-04/grothendieck-groups-cartan-maps-and-euler-forms/tauceti-gradedcartanmatrix.md)
 
 ## Lean
 

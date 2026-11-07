@@ -27,8 +27,8 @@ TauCeti.totallyRamifiedOfDegree_two_eq_padicTwo {x₁ x₂ x₃ x₄ x₅ x₆ :
 ## Proof depends on
 
 - [IntermediateField.wildExponent](intermediatefield-wildexponent.md)
-- [The splitting criterion for quaternion algebras](../../part-06/quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 - [TauCeti.relDiscr](../../part-05/number-fields-ramification-frobenius-and-the-lmf/tauceti-reldiscr.md)
 
 ## Lean

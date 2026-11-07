@@ -5,7 +5,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.AInfinityAlgebra.minimalModel](tauceti-ainfinityalgebra-minimalmodel.md)
 - [Kadeishvili's intrinsic formality criterion](kadeishvilis-intrinsic-formality-criterion.md)
 - [The triple Massey product is a coset of the minimal-model ternary operation](the-triple-massey-product-is-a-coset-of-the-mini.md)
-- [The transferred ternary operation on `(\[a\], \[a\], \[b\])`](the-transferred-ternary-operation-on-a-a-b.md)
+- [The transferred ternary operation on `([a], [a], [b])`](the-transferred-ternary-operation-on-a-a-b.md)
 - [TauCeti.AInfinityAlgebra.transfer](tauceti-ainfinityalgebra-transfer.md)
 - [TauCeti.AInfinityAlgebra.transferHomotopy](tauceti-ainfinityalgebra-transferhomotopy.md)
 - [TauCeti.AInfinityCategory.transfer](tauceti-ainfinitycategory-transfer.md)

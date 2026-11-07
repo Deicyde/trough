@@ -54,10 +54,10 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Demushkin predicate](../../part-05/profinite-and-pro-p-groups/the-demushkin-predicate.md)
 - [Demushkin's theorem](demushkins-theorem.md)
-- [The Kummer isomorphism](../../part-02/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.IsDemushkin](../../part-05/profinite-and-pro-p-groups/tauceti-isdemushkin.md)
+- [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
 
 ## Lean
 

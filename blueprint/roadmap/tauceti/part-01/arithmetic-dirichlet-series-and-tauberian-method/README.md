@@ -11,6 +11,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.EulerProductData.hasProd\_eulerFactor\_convolution](tauceti-eulerproductdata-hasprod-eulerfactor-con.md)
 - [Boundary data for the prime Dirichlet series of `S`](boundary-data-for-the-prime-dirichlet-series-of.md)
 - [Boundary data for all primes of a number field](boundary-data-for-all-primes-of-a-number-field.md)
-- [The continued L-function of a unitary weight](the-continued-l-function-of-a-unitary-weight.md)
+- [TauCeti.continuedLFunctionOfWeight](tauceti-continuedlfunctionofweight.md)
 - [TauCeti.EulerProductData.convolution](tauceti-eulerproductdata-convolution.md)
 - [TauCeti.MultiplicativeIdealWeight.instStarMul](tauceti-multiplicativeidealweight-inststarmul.md)

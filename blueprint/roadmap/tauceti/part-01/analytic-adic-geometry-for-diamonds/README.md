@@ -9,4 +9,4 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Henselian pairs are stable under directed colimits](henselian-pairs-are-stable-under-directed-colimi.md)
 - [TauCeti.IsFiniteEtaleSplit](tauceti-isfiniteetalesplit.md)
 - [TauCeti.Huber.IsPseudoCoherentOver](tauceti-huber-ispseudocoherentover.md)
-- [Analytic points of a pre-adic space](analytic-points-of-a-pre-adic-space.md)
+- [TauCeti.PreAdicSpace.analyticPoints](tauceti-preadicspace-analyticpoints.md)

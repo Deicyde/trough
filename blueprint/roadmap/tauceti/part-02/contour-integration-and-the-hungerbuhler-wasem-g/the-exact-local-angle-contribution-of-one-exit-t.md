@@ -38,7 +38,7 @@ TauCeti.Contour.windingNumber_sub_cap_exitCapWindow_eq_crossingAngle_div_two_pi 
 ## Depends on
 
 - [First exit time at radius `ε` (left side)](first-exit-time-at-radius-left-side.md)
-- [Generalized winding number](generalized-winding-number.md)
+- [TauCeti.Contour.windingNumber](tauceti-contour-windingnumber.md)
 
 ## Lean
 

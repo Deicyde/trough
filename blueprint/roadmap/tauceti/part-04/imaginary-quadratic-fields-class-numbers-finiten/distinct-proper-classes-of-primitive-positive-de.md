@@ -19,7 +19,7 @@ TauCeti.BinaryQuadraticForm.posDefProperClassToPic_injective (n : ℕ) [NeZero n
 
 ## Depends on
 
-- [The Picard class of a proper class of primitive positive definite forms](the-picard-class-of-a-proper-class-of-primitive.md)
+- [TauCeti.BinaryQuadraticForm.posDefProperClassToPic](tauceti-binaryquadraticform-posdefproperclasstop.md)
 
 ## Lean
 

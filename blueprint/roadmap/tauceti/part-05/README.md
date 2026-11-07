@@ -17,7 +17,7 @@ navigation: transparent
 - [Optimal transport and Wasserstein geometry](optimal-transport-and-wasserstein-geometry/README.md)
 - [Orthogonal and spin groups](orthogonal-and-spin-groups/README.md)
 - [P-adic functional analysis](p-adic-functional-analysis/README.md)
-- [P-adic measures, completed group algebras, and characteristic ideals](p-adic-measures-completed-group-algebras-and-cha/README.md)
+- [p-adic measures, completed group algebras, and characteristic ideals](p-adic-measures-completed-group-algebras-and-cha/README.md)
 - [Partial differential equations](partial-differential-equations/README.md)
 - [Peripheral actions on free pro-`p` groups](peripheral-actions-on-free-pro-p-groups/README.md)
 - [Pivotal and spherical categories](pivotal-and-spherical-categories/README.md)

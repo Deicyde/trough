@@ -39,7 +39,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Riemann–Roch theorem](../../part-01/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem.md)
+- [TauCeti.isRiemannRochDivisor\_weilDifferentialDivisor](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-isriemannrochdivisor-weildifferentialdiv.md)
 
 ## Lean
 

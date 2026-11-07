@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`PowerSeries.height_eq_one_iff_of_isDiscreteValuation
 
 - [Tau Ceti documentation: `PowerSeries.height_eq_one_iff_of_isDiscreteValuationRing`](https://taucetiproject.org/docs/TauCeti/RingTheory/PowerSeries/Weierstrass/HeightOne.html#PowerSeries.height_eq_one_iff_of_isDiscreteValuationRing)
 - [Source of `PowerSeries.height_eq_one_iff_of_isDiscreteValuationRing` in TauCeti/RingTheory/PowerSeries/Weierstrass/HeightOne.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/RingTheory/PowerSeries/Weierstrass/HeightOne.lean#L108)
-- [Tau Ceti roadmap status: P-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

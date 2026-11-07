@@ -5,7 +5,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Bundle.ContMDiffRiemannianMetric.equivalence\_concordant](bundle-contmdiffriemannianmetric-equivalence-con.md)
 - [Bundle.ContMDiffRiemannianMetric.concordant\_iff\_exists\_isCollaredConcordance](bundle-contmdiffriemannianmetric-concordant-iff.md)
 - [Compact families of metrics of positive scalar curvature have a uniform scalar gap](compact-families-of-metrics-of-positive-scalar-c.md)
-- [The scalar curvature of a product metric](the-scalar-curvature-of-a-product-metric.md)
+- [Bundle.ContMDiffRiemannianMetric.scalarCurvature\_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
 - [Shrinking a compact factor of positive scalar curvature](shrinking-a-compact-factor-of-positive-scalar-cu.md)
 - [Scalar curvature of the round sphere](scalar-curvature-of-the-round-sphere.md)
 - [Bundle.ContMDiffRiemannianMetric.HasPositiveScalarCurvature](bundle-contmdiffriemannianmetric-haspositivescal.md)

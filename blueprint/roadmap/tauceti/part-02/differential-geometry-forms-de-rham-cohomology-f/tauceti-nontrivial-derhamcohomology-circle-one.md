@@ -21,8 +21,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The fundamental theorem of calculus for line integrals](the-fundamental-theorem-of-calculus-for-line-int.md)
 - [TauCeti.pathIntegral](tauceti-pathintegral.md)
+- [TauCeti.pathIntegral\_mextDeriv](tauceti-pathintegral-mextderiv.md)
 
 ## Lean
 

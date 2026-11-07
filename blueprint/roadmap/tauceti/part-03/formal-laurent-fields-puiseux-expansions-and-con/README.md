@@ -9,7 +9,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.puiseuxField.levelGalEquivRootsOfUnity](tauceti-puiseuxfield-levelgalequivrootsofunity.md)
 - [Faithfulness](faithfulness.md)
 - [Finite-map residue formula for Laurent series substitution](finite-map-residue-formula-for-laurent-series-su.md)
-- [The continuous derivations of `K⸨X⸩` form a free module of rank one](the-continuous-derivations-of-kx-form-a-free-mod.md)
+- [TauCeti.continuousDerivationsEquiv](tauceti-continuousderivationsequiv.md)
 - [Formal coordinate changes act invertibly on one-forms](formal-coordinate-changes-act-invertibly-on-one.md)
 - [TauCeti.puiseuxField.levelCoconeIsColimit](tauceti-puiseuxfield-levelcoconeiscolimit.md)
 - [The Puiseux field is not complete](the-puiseux-field-is-not-complete.md)

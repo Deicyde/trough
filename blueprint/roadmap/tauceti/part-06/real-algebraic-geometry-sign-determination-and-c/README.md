@@ -7,7 +7,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Recursive sign-invariant McCallum correctness](recursive-sign-invariant-mccallum-correctness.md)
 - [Existence of adapted cylindrical algebraic decompositions](existence-of-adapted-cylindrical-algebraic-decom.md)
 - [The Tarski–Seidenberg theorem](the-tarski-seidenberg-theorem.md)
-- [Quantifier elimination](quantifier-elimination.md)
+- [TauCeti.exists\_isQF\_realize\_iff](tauceti-exists-isqf-realize-iff.md)
 - [Tarski's theorem for the real field](tarskis-theorem-for-the-real-field.md)
 - [Analytic delineability from constant discriminant order](analytic-delineability-from-constant-discriminan.md)
 - [Finset.IsSquarefreeBasis](finset-issquarefreebasis.md)

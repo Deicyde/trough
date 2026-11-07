@@ -42,6 +42,7 @@ def test_a_roadmap_title_drops_the_roadmap_prefix():
     assert tauceti.roadmap_title("# Roadmap: local fields and ramification\n\ntext", "X") == "Local fields and ramification"
     assert tauceti.roadmap_title("# Real algebraic geometry\n", "X") == "Real algebraic geometry"
     assert tauceti.roadmap_title("no heading", "Fallback") == "Fallback"
+    assert tauceti.roadmap_title("# Roadmap: p-adic measures\n", "X") == "p-adic measures"
 
 
 def test_read_roadmaps_keeps_roadmaps_whose_status_names_a_declaration(tmp_path):
@@ -57,10 +58,17 @@ def test_read_roadmaps_keeps_roadmaps_whose_status_names_a_declaration(tmp_path)
     ]
 
 
-def test_a_docstrings_bold_lead_is_the_title():
+def test_a_docstrings_bold_lead_is_the_title_when_it_is_a_sentence():
     assert tauceti.title_and_text("X.y", "**The density theorem.** For a field `K`, ...") == (
         "The density theorem", "For a field `K`, ...")
     assert tauceti.title_and_text("X.y", "**Weighted form**: if `G` is abelian") == ("Weighted form", "if `G` is abelian")
+    assert tauceti.title_and_text("X.y", "**A long title that wraps\nonto a second line.** Text") == (
+        "A long title that wraps onto a second line", "Text")
+    assert tauceti.title_and_text("X.y", "**Weak-* compactness of `K_β`.** Text") == ("Weak-* compactness of `K_β`", "Text")
+    # A bold phrase that opens a sentence is not a title: cutting it would leave ", in Baker's form."
+    lindemann = "**The Lindemann–Weierstrass theorem**, in Baker's form. The exponentials ..."
+    assert tauceti.title_and_text("X.y", lindemann) == ("X.y", lindemann)
+    assert tauceti.title_and_text("X.y", "**Bold**\n\nnot a title.") == ("X.y", "**Bold**\n\nnot a title.")
     assert tauceti.title_and_text("X.y", "The `K`-points, with **bold** later.") == ("X.y", "The `K`-points, with **bold** later.")
     assert tauceti.title_and_text("X.y", None) == ("X.y", "")
 
@@ -122,12 +130,36 @@ def test_edges_link_mapped_declarations_and_a_sorry_proof_reads_as_stated():
     thm = by_name["Ex.thm"]
     assert [node.title for node in thm.depends] == ["A thing"]
     assert [node.title for node in thm.proof_depends] == ["Ex.lemma"]
-    assert dict(thm.fields)["proof"] == "formalized"
+    # Its proof goes through a mapped lemma whose proof reaches sorry, so it is stated, not proved.
+    assert "proof" not in dict(thm.fields)
+    assert "its proof reaches `sorry`" in dict(thm.notes)["Lean"]
     lemma = dict(by_name["Ex.lemma"].fields)
     assert lemma["statement"] == "formalized" and "proof" not in lemma
-    assert "its proof uses `sorry`" in dict(by_name["Ex.lemma"].notes)["Lean"]
+    assert "its proof reaches `sorry`" in dict(by_name["Ex.lemma"].notes)["Lean"]
     assert "proof" not in dict(by_name["Ex.def"].fields)
-    assert stats["sorry"] == 1 and stats["statement_edges"] == 1 and stats["proof_edges"] == 1
+    assert "Formalized in Tau Ceti" in dict(by_name["Ex.def"].notes)["Lean"]
+    assert stats["sorry"] == 2 and stats["statement_edges"] == 1 and stats["proof_edges"] == 1
+
+
+def test_a_definition_reaching_sorry_says_so():
+    roadmaps = [{"id": "A", "path": "TauCetiRoadmap/A", "title": "Alpha", "names": ["Ex.def"]}]
+    root, stats, _ = build(roadmaps, {"Ex.def": record(kind="def", sorry=True)})
+    assert "its definition reaches `sorry`" in dict(leaves(root)["Ex.def"].notes)["Lean"]
+    assert stats["sorry"] == 1
+
+
+def test_a_name_that_resolves_outside_tau_ceti_has_no_article():
+    roadmaps = [{"id": "A", "path": "TauCetiRoadmap/A", "title": "Alpha", "names": ["Ex.thm", "Polynomial.moved"]}]
+    root, stats, links = build(roadmaps, {"Ex.thm": record(), "Polynomial.moved": record(module="Mathlib.RingTheory.X")})
+    assert list(links) == ["Ex.thm"] and stats["missing"] == 1
+
+
+def test_a_shared_bold_title_is_followed_by_each_name():
+    roadmaps = [{"id": "A", "path": "TauCetiRoadmap/A", "title": "Alpha", "names": ["Ex.b", "Ex.a"]}]
+    doc = "**The Riemann–Roch theorem.** For a curve ..."
+    root, _, _ = build(roadmaps, {"Ex.a": record(doc=doc), "Ex.b": record(doc=doc)})
+    assert [entry.node.title for entry in root.entries[0].node.entries] == [
+        "The Riemann–Roch theorem (`Ex.b`)", "The Riemann–Roch theorem (`Ex.a`)"]
 
 
 def test_an_article_shows_the_docstring_signature_and_where_it_comes_from():
@@ -150,6 +182,10 @@ def test_the_committed_data_build_a_chapter():
     assert roadmaps["schema"] == tauceti.ROADMAPS_SCHEMA and roadmaps["roadmaps"]
     if data.deps is None:
         return
+    # The dump was made from these pins: the Tau Ceti commit, and exactly the names the roadmaps give.
+    assert data.deps["tauceti_rev"] == data.rev
+    names = {name for roadmap in roadmaps["roadmaps"] for name in roadmap["names"]}
+    assert names == set(data.deps["declarations"]) | set(data.deps["missing"])
     root, stats, links = tauceti.chapter(data)
     assert stats["articles"] == len(links) > 0
     assert set(links) <= set(data.deps["declarations"])

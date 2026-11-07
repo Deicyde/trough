@@ -26,7 +26,7 @@ TauCeti.Green.green_ac_winding {γ : ℝ → ℂ} {a b : ℝ} {U : Set ℂ} {P Q
 
 ## Depends on
 
-- [Generalized winding number](../contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number.md)
+- [TauCeti.Contour.windingNumber](../contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-windingnumber.md)
 
 ## Lean
 

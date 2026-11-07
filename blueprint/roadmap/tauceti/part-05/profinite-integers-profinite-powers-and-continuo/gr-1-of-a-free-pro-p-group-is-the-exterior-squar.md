@@ -20,7 +20,7 @@ TauCeti.freeProP.exteriorSquareEquivLcsGradedPieceOne.{u} (p : ℕ) [Fact (Nat.P
 
 ## Depends on
 
-- [The `ℤ_p`-basis of `gr_1` of a free pro-`p` group of finite rank](the-z-p-basis-of-gr-1-of-a-free-pro-p-group-of-f.md)
+- [TauCeti.freeProP.lcsDegreeOneBasis](tauceti-freeprop-lcsdegreeonebasis.md)
 
 ## Lean
 

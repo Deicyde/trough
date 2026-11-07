@@ -9,7 +9,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Acyclic flows](acyclic-flows.md)
 - [The poset of minimum cuts](the-poset-of-minimum-cuts.md)
 - [Multi-cut non-crossing lemma](multi-cut-non-crossing-lemma.md)
-- [Ultrametric inequality](ultrametric-inequality.md)
+- [TauCeti.TerminalCut.min\_pairMinimumValue\_le](tauceti-terminalcut-min-pairminimumvalue-le.md)
 - [Graph.isBridge\_iff\_forall\_cycle\_notMem](graph-isbridge-iff-forall-cycle-notmem.md)
 - [Bridges by component counts](bridges-by-component-counts.md)
 - [TauCeti.residualUpdate](tauceti-residualupdate.md)

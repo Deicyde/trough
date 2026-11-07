@@ -20,7 +20,7 @@ TauCeti.zpowHat_eq_padicPow_component.{u, v} {G : Type v} [Group G] [Topological
 
 ## Depends on
 
-- [The profinite power](the-profinite-power.md)
+- [TauCeti.zpowHat](tauceti-zpowhat.md)
 
 ## Lean
 

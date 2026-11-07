@@ -4,8 +4,10 @@
 # the pinned Tau Ceti commit (lean/tauceti/TauCetiDeps.lean). The pages are
 # then regenerated from that data.
 #
-# On main, a dispatch or the weekly run, the commit job records the data and
-# the pages, then starts the Pages and Tests workflows. On a pull request the
+# A push that moves a pin, data/tauceti/source.json or roadmaps.json, runs it
+# too, so the dump always matches the pins. On main, a dispatch or the weekly
+# run, the commit job records the data and the pages, then starts the Pages and
+# Tests workflows. On a pull request the
 # run fails when the committed data differ from what this Lean gives, and keeps
 # a patch.
 
@@ -18,12 +20,16 @@ on:
       - "lean/tauceti/**"
       - "tools/refresh_tauceti.py"
       - "tools/trough/tauceti.py"
+      - "data/tauceti/source.json"
+      - "data/tauceti/roadmaps.json"
       - ".github/workflows/tauceti-data.yml"
   pull_request:
     paths:
       - "lean/tauceti/**"
       - "tools/refresh_tauceti.py"
       - "tools/trough/tauceti.py"
+      - "data/tauceti/source.json"
+      - "data/tauceti/roadmaps.json"
       - ".github/workflows/tauceti-data.yml"
   workflow_dispatch:
     inputs:

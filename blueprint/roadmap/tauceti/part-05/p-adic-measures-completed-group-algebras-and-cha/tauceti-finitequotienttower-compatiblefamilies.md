@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.FiniteQuotientTower.compatibleFamilies`](htt
 
 - [Tau Ceti documentation: `TauCeti.FiniteQuotientTower.compatibleFamilies`](https://taucetiproject.org/docs/TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.html#TauCeti.FiniteQuotientTower.compatibleFamilies)
 - [Source of `TauCeti.FiniteQuotientTower.compatibleFamilies` in TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/Topology/Algebra/Group/Profinite/QuotientTower.lean#L341)
-- [Tau Ceti roadmap status: P-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

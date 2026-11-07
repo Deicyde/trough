@@ -35,11 +35,11 @@ what = "An AI-written library downstream of Mathlib covering all areas. Humans w
 informal_layer = "Roadmaps live in the separate TauCetiRoadmap repo: 154 roadmaps (124 active under TauCetiRoadmap/, 30 under Completed/). Each roadmap has README.md (the spec), Suggested.lean (sorry-allowed target signatures, 123/124 active), metadata.toml (always the single line topic = \"math.XX\", an arXiv category; all 154 are 18 bytes), and generated STATUS.md and PROGRESS.md (96 active, 30 completed). STATUS.md carries <!--tauceti-status:v1 ...--> and <!--tauceti-coverage:v1 {layers:[{id,state,remaining}]}--> JSON comments plus named results linked to TauCeti docs. PROGRESS.md carries <!--tauceti-progress:v1 {from_sha,prs,to_sha}-->. TauCetiRoadmap@fa41b3747f56 uses toolchain v4.35.0-rc3, mathlib f6090c70 (master), libs TauCetiRoadmap and Completed, 196 lean files."
 formalization_yaml = "v0.2; no main_results (open-ended library); sources point to TauCetiRoadmap; sorry_count 0"
 license = "Apache-2.0"
-toolchain = "v4.36.0-rc1"
-mathlib = "2cabef97b63d"
-lean_files = 23408
-head = "36bbd8632db6"
-head_date = "2026-11-02"
+toolchain = "v4.36.0-rc2"
+mathlib = "1b1ccf4b088b"
+lean_files = 27084
+head = "ace60277c4c5"
+head_date = "2026-11-07"
 map_status = "live"
 map_unit = "named declaration"
 map_plan = "One article per declaration a roadmap's status names as a result or notable definition, as Tau Ceti has it: its docstring, signature and dependencies, in a section per roadmap."

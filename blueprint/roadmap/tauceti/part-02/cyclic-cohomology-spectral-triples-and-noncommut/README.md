@@ -6,7 +6,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.cyclicCohomology.selfEquiv](tauceti-cycliccohomology-selfequiv.md)
 - [TauCeti.isZero\_cyclicCohomology\_self\_of\_odd](tauceti-iszero-cycliccohomology-self-of-odd.md)
 - [Conjugation invariance of the even pairing](conjugation-invariance-of-the-even-pairing.md)
-- [Connes' odd pairing](connes-odd-pairing.md)
+- [TauCeti.cyclicCohomology.oddPairing](tauceti-cycliccohomology-oddpairing.md)
 - [Stabilization of the odd pairing](stabilization-of-the-odd-pairing.md)
 - [TauCeti.cycleCocycle](tauceti-cyclecocycle.md)
 - [TauCeti.relativeCyclicCohomology](tauceti-relativecycliccohomology.md)

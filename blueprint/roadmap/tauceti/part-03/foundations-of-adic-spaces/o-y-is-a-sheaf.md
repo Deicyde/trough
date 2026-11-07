@@ -33,8 +33,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Adic spaces](adic-spaces.md)
-- [The interval ring `B^I` is strongly noetherian](the-interval-ring-b-i-is-strongly-noetherian.md)
+- [TauCeti.PreAdicSpace.isAdic](tauceti-preadicspace-isadic.md)
+- [TauCeti.WittVector.isStronglyNoetherian\_intervalRing](tauceti-wittvector-isstronglynoetherian-interval.md)
 
 ## Lean
 

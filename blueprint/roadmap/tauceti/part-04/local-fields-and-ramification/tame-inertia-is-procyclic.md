@@ -20,7 +20,7 @@ TauCeti.exists_topologicalClosure_zpowers_eq_tameInertia.{u} (K : Type u) [Field
 
 ## Depends on
 
-- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
+- [TauCeti.wildInertiaSubgroup](tauceti-wildinertiasubgroup.md)
 
 ## Proof depends on
 

@@ -23,7 +23,7 @@ TauCeti.AlgebraicGeometry.ModuliProblem.gammaOneRepresentableBy.{u} {B : Algebra
 
 ## Proof depends on
 
-- [The `n`-torsion of an elliptic curve is étale where `n` is invertible](the-n-torsion-of-an-elliptic-curve-is-etale-wher.md)
+- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale\_torsion\_hom\_of\_forall\_intCast\_ne\_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
 
 ## Lean
 

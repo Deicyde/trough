@@ -6,7 +6,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The Black–Scholes put formula](the-black-scholes-put-formula.md)
 - [The Black–Scholes equation for the call](the-black-scholes-equation-for-the-call.md)
 - [The Black–Scholes equation for the put](the-black-scholes-equation-for-the-put.md)
-- [Put–call parity](put-call-parity.md)
+- [TauCeti.BlackScholes.callPrice\_sub\_putPrice](tauceti-blackscholes-callprice-sub-putprice.md)
 - [TauCeti.BlackScholes.deriv\_callPrice\_spot\_mem\_Ioo](tauceti-blackscholes-deriv-callprice-spot-mem-io.md)
 - [TauCeti.BlackScholes.riskNeutralPrice](tauceti-blackscholes-riskneutralprice.md)
 - [TauCeti.Probability.setIntegral\_exp\_mul\_gaussianReal](tauceti-probability-setintegral-exp-mul-gaussian.md)

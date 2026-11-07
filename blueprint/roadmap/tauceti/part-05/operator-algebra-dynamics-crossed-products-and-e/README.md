@@ -5,7 +5,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Dense analytic KMS criterion](dense-analytic-kms-criterion.md)
 - [KMS states are invariant](kms-states-are-invariant.md)
 - [Convexity of `K_β`](convexity-of-k.md)
-- [TauCeti.CStarAction.isCompact\_kmsStates](tauceti-cstaraction-iscompact-kmsstates.md)
+- [Weak-* compactness of `K_β`](weak-compactness-of-k.md)
 - [Pointwise limits of KMS states](pointwise-limits-of-kms-states.md)
 - [TauCeti.CStarAction.CovariantRepresentation.integratedOperator\_convolution](tauceti-cstaraction-covariantrepresentation-inte.md)
 - [TauCeti.CStarAction.CovariantRepresentation.norm\_integratedOperator\_le](tauceti-cstaraction-covariantrepresentation-norm.md)

@@ -34,9 +34,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Hilbert's product formula](../../part-06/quadratic-forms-and-cohomological-invariants/hilberts-product-formula.md)
-- [The semi-local decomposition](../../part-05/number-fields-ramification-frobenius-and-the-lmf/the-semi-local-decomposition.md)
-- [The splitting criterion for quaternion algebras](../../part-06/quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.semilocalEquiv](../../part-05/number-fields-ramification-frobenius-and-the-lmf/tauceti-semilocalequiv.md)
 
 ## Lean
 

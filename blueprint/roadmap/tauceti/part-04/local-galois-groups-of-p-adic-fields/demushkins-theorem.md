@@ -19,13 +19,13 @@ TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu (p : ℕ) [Fact (Nat.Prime p)]
 
 ## Depends on
 
-- [The Demushkin predicate](../../part-05/profinite-and-pro-p-groups/the-demushkin-predicate.md)
+- [TauCeti.IsDemushkin](../../part-05/profinite-and-pro-p-groups/tauceti-isdemushkin.md)
 
 ## Proof depends on
 
-- [The Kummer isomorphism](../../part-02/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.ClassFieldTheory.invMap](../../part-01/class-field-theory/tauceti-classfieldtheory-invmap.md)
+- [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
 
 ## Lean
 

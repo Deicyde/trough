@@ -95,11 +95,12 @@ page, and references print it; tables, listings and figure captions are kept.
 
 ## The Tau Ceti chapter
 
-Tau Ceti's human-written roadmaps live in TauCetiRoadmap, and each carries a
+Tau Ceti's human-written roadmaps live in TauCetiRoadmap, and most carry a
 generated `STATUS.md` whose "Named results" and "Notable definitions and
 infrastructure" link declarations in Tau Ceti's documentation. Those links pick
 the chapter's articles, one per declaration Tau Ceti has at the pinned commit,
-in a section per roadmap titled from its README. The rest of a roadmap, its
+in a section per roadmap titled from its README; a roadmap without a status, or
+whose status names nothing Tau Ceti has, has no section. The rest of a roadmap, its
 plan, its `Suggested.lean` signatures and its frontier, says what Tau Ceti may
 add and is left out, and so is the status files' prose, which a model writes
 and Tau Ceti does not check. An article's text is its declaration's docstring
@@ -115,9 +116,11 @@ and signature, titled by the docstring's bold lead when it has one.
    whether the proof reaches `sorry`, and the nearest named declarations the
    statement reaches through unnamed statements and the proof through any
    chain of unnamed Tau Ceti declarations; a name that does not resolve is
-   listed as missing and has no article. A theorem whose proof reaches `sorry`
-   is shown as stated, not proved.
-3. The weekly run, or a dispatch with `newest`, moves both pins: Tau Ceti to
+   listed as missing and has no article, as is one that now resolves outside
+   Tau Ceti. A theorem whose proof reaches `sorry`, itself or through another
+   named declaration, is shown as stated, not proved.
+3. A change to either pin file runs the workflow too, so the committed dump
+   always matches the pins. The weekly run, or a dispatch with `newest`, moves both pins: Tau Ceti to
    its newest main commit whose CI passed, so its cache exists, and the
    roadmaps to their newest commit.
 

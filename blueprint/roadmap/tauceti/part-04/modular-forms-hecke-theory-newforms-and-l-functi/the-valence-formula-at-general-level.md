@@ -40,8 +40,8 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [First exit time at radius `ε` (left side)](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/first-exit-time-at-radius-left-side.md)
-- [Generalized winding number](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number.md)
-- [The homology Cauchy theorem](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem.md)
+- [TauCeti.Contour.homologyCauchyTheorem](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-homologycauchytheorem.md)
+- [TauCeti.Contour.windingNumber](../../part-02/contour-integration-and-the-hungerbuhler-wasem-g/tauceti-contour-windingnumber.md)
 
 ## Lean
 

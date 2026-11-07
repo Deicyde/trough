@@ -11,5 +11,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Finiteness of the coinvariant algebra](finiteness-of-the-coinvariant-algebra.md)
 - [Representation.symmetricAlgebraInvariants](representation-symmetricalgebrainvariants.md)
 - [Representation.symmetricAlgebraReynolds](representation-symmetricalgebrareynolds.md)
-- [The graded trace formula for an endomorphism of finite order](the-graded-trace-formula-for-an-endomorphism-of.md)
+- [Module.End.mk\_trace\_homogeneousSubmoduleMapₛₗ\_mul\_reverse\_charpoly\_of\_pow\_eq\_one](module-end-mk-trace-homogeneoussubmodulemapsl-mu.md)
 - [SymmetricAlgebra.dividedDifference](symmetricalgebra-divideddifference.md)

@@ -12,7 +12,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The glued space](the-glued-space.md)
 - [TauCeti.holomorphicStructureSheaf.quotientSheaf](tauceti-holomorphicstructuresheaf-quotientsheaf.md)
 - [An isomorphism of nodal curves presented by flag-pair data](an-isomorphism-of-nodal-curves-presented-by-flag.md)
-- [The automorphism group](the-automorphism-group.md)
+- [TauCeti.NodalGluing.Aut](tauceti-nodalgluing-aut.md)
 - [The groupoid of curves with unordered auxiliary marks](the-groupoid-of-curves-with-unordered-auxiliary.md)
 - [The groupoid of curves with partitioned auxiliary marks](the-groupoid-of-curves-with-partitioned-auxiliar.md)
 - [TauCeti.CircleSobolev.mulFourierSeriesEquiv](tauceti-circlesobolev-mulfourierseriesequiv.md)

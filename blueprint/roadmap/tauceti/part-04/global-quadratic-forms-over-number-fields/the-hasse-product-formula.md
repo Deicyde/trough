@@ -21,13 +21,13 @@ QuadraticForm.globalInvariants_hasseProduct_eq_one.{u_1, u_2} {K : Type u_1} [Fi
 ## Depends on
 
 - [A system of local invariants of a quadratic form over a number field `K`](a-system-of-local-invariants-of-a-quadratic-form.md)
-- [The system of local invariants of a regular quadratic form](the-system-of-local-invariants-of-a-regular-quad.md)
+- [QuadraticForm.globalInvariants](quadraticform-globalinvariants.md)
 
 ## Proof depends on
 
 - [Hilbert's product formula](../../part-06/quadratic-forms-and-cohomological-invariants/hilberts-product-formula.md)
-- [The splitting criterion for quaternion algebras](../../part-06/quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

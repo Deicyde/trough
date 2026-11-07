@@ -2,7 +2,7 @@
 
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/KhovanovHomology/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [TauCeti.OrientedPDCode.enhancedStateSum\_eq\_mul\_eval₂\_jonesPolynomial](tauceti-orientedpdcode-enhancedstatesum-eq-mul-e.md)
+- [The enhanced state sum of a nonempty diagram is `(q + q⁻¹)` times its Jones polynomial at `t ^ (1/2) = -q`](the-enhanced-state-sum-of-a-nonempty-diagram-is.md)
 - [Two states differing exactly at a crossing do not both have two circles through it](two-states-differing-exactly-at-a-crossing-do-no.md)
 - [The boundary-count criterion for noninterleaving](the-boundary-count-criterion-for-noninterleaving.md)
 - [TauCeti.Khovanov.isFrobenius](tauceti-khovanov-isfrobenius.md)

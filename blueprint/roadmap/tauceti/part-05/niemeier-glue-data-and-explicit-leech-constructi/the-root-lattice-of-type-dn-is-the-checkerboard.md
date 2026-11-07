@@ -19,7 +19,7 @@ TauCeti.DynkinType.rootLatticeIsometryCheckerboard (n : ℕ) (hn : 4 ≤ n)
 
 ## Depends on
 
-- [The positive root lattice of a simply-laced Dynkin type](the-positive-root-lattice-of-a-simply-laced-dynk.md)
+- [TauCeti.DynkinType.rootLattice](tauceti-dynkintype-rootlattice.md)
 - [TauCeti.IntegralLattice](../../part-04/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
 
 ## Lean

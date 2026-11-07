@@ -21,9 +21,9 @@ TauCeti.mem_leechLattice_carrier_iff (x : Fin 24 → ℚ) :
 
 ## Depends on
 
-- [Construction B](construction-b.md)
-- [The Leech lattice](the-leech-lattice.md)
+- [TauCeti.ConstructionB.integralLattice](tauceti-constructionb-integrallattice.md)
 - [TauCeti.IntegralLattice](../../part-04/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
+- [TauCeti.leechLattice](tauceti-leechlattice.md)
 
 ## Proof depends on
 

@@ -33,8 +33,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Circle.fundamentalGroupMulEquiv\_fromPath](../../part-07/universal-covers/circle-fundamentalgroupmulequiv-frompath.md)
 - [Finset.IsSquarefreeBasis](finset-issquarefreebasis.md)
+- [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../../part-07/universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 
 ## Lean
 

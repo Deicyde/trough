@@ -8,7 +8,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.Compactification.hom\_unique](tauceti-compactification-hom-unique.md)
 - [TauCeti.FiniteEtaleScheme.exists\_isColimit\_binaryCofanMk\_of\_mono](tauceti-finiteetalescheme-exists-iscolimit-binar.md)
 - [TauCeti.FiniteEtaleScheme.epi\_iff\_surjective](tauceti-finiteetalescheme-epi-iff-surjective.md)
-- [TauCeti.FixedPoints.etale\_subalgebra](tauceti-fixedpoints-etale-subalgebra.md)
+- [The invariants of a finite étale algebra under a finite monoid of algebra endomorphisms form an étale algebra](the-invariants-of-a-finite-etale-algebra-under-a.md)
 - [TauCeti.Compactification](tauceti-compactification.md)
 - [TauCeti.DenseCompactification](tauceti-densecompactification.md)
 - [TauCeti.FiniteEtaleScheme.fiber](tauceti-finiteetalescheme-fiber.md)

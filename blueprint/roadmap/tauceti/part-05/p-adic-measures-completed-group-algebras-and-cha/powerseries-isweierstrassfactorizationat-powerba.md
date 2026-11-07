@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`PowerSeries.IsWeierstrassFactorizationAt.powerBasis`
 
 - [Tau Ceti documentation: `PowerSeries.IsWeierstrassFactorizationAt.powerBasis`](https://taucetiproject.org/docs/TauCeti/RingTheory/PowerSeries/Weierstrass/Charpoly.html#PowerSeries.IsWeierstrassFactorizationAt.powerBasis)
 - [Source of `PowerSeries.IsWeierstrassFactorizationAt.powerBasis` in TauCeti/RingTheory/PowerSeries/Weierstrass/Charpoly.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/RingTheory/PowerSeries/Weierstrass/Charpoly.lean#L84)
-- [Tau Ceti roadmap status: P-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)
+- [Tau Ceti roadmap status: p-adic measures, completed group algebras, and characteristic ideals](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/STATUS.md)

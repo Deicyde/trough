@@ -22,7 +22,7 @@ TauCeti.Vortex.temperedVacuumOperatorEquiv :
 
 ## Proof depends on
 
-- [The Weitzenböck identity at the vacuum](the-weitzenbock-identity-at-the-vacuum.md)
+- [TauCeti.Vortex.temperedVacuumAdjoint\_temperedVacuumOperator](tauceti-vortex-temperedvacuumadjoint-temperedvac.md)
 
 ## Lean
 

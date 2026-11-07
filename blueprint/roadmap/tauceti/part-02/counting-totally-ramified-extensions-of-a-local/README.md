@@ -2,12 +2,12 @@
 
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/MassFormula/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [The orbit count](the-orbit-count.md)
+- [TauCeti.ncard\_isomorphic\_mul\_natCard\_algEquiv](tauceti-ncard-isomorphic-mul-natcard-algequiv.md)
 - [TauCeti.IsRepresentativeSet.tsum\_one\_div\_natCard\_algEquiv\_mul\_natCard\_residueField\_pow\_wildExponent\_eq\_one\_iff](tauceti-isrepresentativeset-tsum-one-div-natcard.md)
 - [The totally ramified quadratic extensions of `ℚ_2`](the-totally-ramified-quadratic-extensions-of-q-2.md)
 - [Serre's mass formula for the quadratic extensions of `ℚ_2`](serres-mass-formula-for-the-quadratic-extensions.md)
 - [Serre's mass formula for quadratic extensions in odd residue characteristic](serres-mass-formula-for-quadratic-extensions-in.md)
-- [Hensel's lemma with an estimate](hensels-lemma-with-an-estimate.md)
+- [Polynomial.exists\_isRoot\_addVal\_eval\_eq](polynomial-exists-isroot-addval-eval-eq.md)
 - [Local constancy of the root count](local-constancy-of-the-root-count.md)
 - [The scaling law for Haar measure](the-scaling-law-for-haar-measure.md)
 - [Infinitely many totally ramified extensions in equal characteristic](infinitely-many-totally-ramified-extensions-in-e.md)

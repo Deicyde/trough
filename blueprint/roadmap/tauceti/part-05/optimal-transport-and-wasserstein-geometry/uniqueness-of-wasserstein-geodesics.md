@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Lisini's superposition principle](lisinis-superposition-principle.md)
+- [TauCeti.exists\_map\_IccExtend\_eq\_lintegral\_curveAction\_eq](tauceti-exists-map-iccextend-eq-lintegral-curvea.md)
 
 ## Lean
 

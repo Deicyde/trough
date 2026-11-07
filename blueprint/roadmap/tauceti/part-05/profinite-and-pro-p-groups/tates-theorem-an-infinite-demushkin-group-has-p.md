@@ -20,11 +20,11 @@ TauCeti.IsDemushkin.cohomologicalDimensionAt_eq_two.{u} {p : ℕ} [Fact (Nat.Pri
 
 ## Depends on
 
-- [The Demushkin predicate](the-demushkin-predicate.md)
+- [TauCeti.IsDemushkin](tauceti-isdemushkin.md)
 
 ## Proof depends on
 
-- [Dimension shifting in every positive degree](../../part-02/continuous-cohomology-of-profinite-groups/dimension-shifting-in-every-positive-degree.md)
+- [TauCeti.ContCohomology.dimensionShiftIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-contcohomology-dimensionshiftiso.md)
 
 ## Lean
 

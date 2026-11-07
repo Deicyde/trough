@@ -21,12 +21,12 @@ TauCeti.classifyingSpaceSingularHomologyIsoGroupHomology.{u} (k : Type u) [CommR
 
 ## Depends on
 
-- [The singular chains of a contractible free `G`-space are a projective resolution](the-singular-chains-of-a-contractible-free-g-spa.md)
+- [TauCeti.singularChainsResolution](tauceti-singularchainsresolution.md)
 
 ## Proof depends on
 
-- [The fundamental group at `x` acts on every homotopy group based at `x`](../../part-07/universal-covers/the-fundamental-group-at-x-acts-on-every-homotop.md)
-- [Whitehead's theorem](../algebraic-topology-of-spaces-and-manifolds/whiteheads-theorem.md)
+- [ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv](../algebraic-topology-of-spaces-and-manifolds/continuousmap-isweakhomotopyequivalence-homotopy.md)
+- [TauCeti.homotopyGroupMulAction](../../part-07/universal-covers/tauceti-homotopygroupmulaction.md)
 
 ## Lean
 

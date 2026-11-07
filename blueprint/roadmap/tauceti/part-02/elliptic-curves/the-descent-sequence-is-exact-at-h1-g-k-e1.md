@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Hurwitz genus formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/the-hurwitz-genus-formula.md)
+- [TauCeti.hurwitz\_genus\_formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-hurwitz-genus-formula.md)
 - [TauCeti.Ring.IsJapanese](../../part-06/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

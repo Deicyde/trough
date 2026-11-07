@@ -29,7 +29,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ### AI-written libraries
 
-- [Tau Ceti](https://github.com/TauCetiProject/TauCeti) at 36bbd8632db6: An AI-written library downstream of Mathlib covering all areas. Humans write the roadmaps and review rubrics (TauCetiReview repo).
+- [Tau Ceti](https://github.com/TauCetiProject/TauCeti) at ace60277c4c5: An AI-written library downstream of Mathlib covering all areas. Humans write the roadmaps and review rubrics (TauCetiReview repo).
 - [ATLAS](https://github.com/facebookresearch/atlas-lean) at c905cd2490ed: Autoformalized textbook mathematics. v2 root: MathlibExt (reusable Mathlib extensions), CSLibExt, WantedExt (established results with deferred proofs). Archived v1/ (2653 files, own lakefile) and Atlas/ developments (StatisticalMechanics 6971, CPythonListsort, FC) are outside the root build.
 
 ### Research projects with blueprints

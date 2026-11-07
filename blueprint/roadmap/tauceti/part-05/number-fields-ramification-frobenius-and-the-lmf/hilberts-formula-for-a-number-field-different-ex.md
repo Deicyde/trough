@@ -28,8 +28,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The semi-local decomposition](the-semi-local-decomposition.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.semilocalEquiv](tauceti-semilocalequiv.md)
 
 ## Lean
 

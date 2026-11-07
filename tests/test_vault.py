@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from trough.vault import Container, Entry, Leaf, assign_paths, chunk, frontmatter, rel, render_container, slugify
+from trough.vault import Container, Entry, Leaf, assign_paths, chunk, frontmatter, link_text, rel, render_container, slugify
 
 
 def leaf(title: str) -> Leaf:
@@ -46,3 +46,7 @@ def test_rel_and_frontmatter():
     previous = "---\narticle_id: af_0123456789abcdef01234567\n---\n"
     assert frontmatter([("declaration", "def")], previous).startswith("---\narticle_id: af_0123456789abcdef01234567\n")
     assert frontmatter([], None) == ""
+
+
+def test_link_text_escapes_brackets_outside_code_spans_only():
+    assert link_text("A [b] and `[Γ(N)]` over `k[X]`") == "A \\[b\\] and `[Γ(N)]` over `k[X]`"

@@ -1773,7 +1773,7 @@
   {
    "id": "PadicMeasuresIwasawaAlgebras",
    "path": "TauCetiRoadmap/PadicMeasuresIwasawaAlgebras",
-   "title": "P-adic measures, completed group algebras, and characteristic ideals",
+   "title": "p-adic measures, completed group algebras, and characteristic ideals",
    "names": [
     "AbstractMeasure.completedGroupAlgebraEquiv",
     "AbstractMeasure.towerCoordinatesEquiv",

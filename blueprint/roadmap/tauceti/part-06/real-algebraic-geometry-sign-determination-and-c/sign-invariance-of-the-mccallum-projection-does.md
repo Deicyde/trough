@@ -55,7 +55,7 @@ TauCeti.exists_signInvariant_mcCallumProjection_stackCells_not_signInvariant
 
 ## Proof depends on
 
-- [Circle.fundamentalGroupMulEquiv\_fromPath](../../part-07/universal-covers/circle-fundamentalgroupmulequiv-frompath.md)
+- [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../../part-07/universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 
 ## Lean
 

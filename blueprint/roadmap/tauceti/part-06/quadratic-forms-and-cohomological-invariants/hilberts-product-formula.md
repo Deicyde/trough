@@ -26,12 +26,12 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The comparison isomorphism](the-comparison-isomorphism.md)
 - [Hilbert reciprocity](../../part-01/class-field-theory/hilbert-reciprocity.md)
-- [The Kummer isomorphism](../../part-02/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
-- [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
+- [TauCeti.ClassFieldTheory.invMap](../../part-01/class-field-theory/tauceti-classfieldtheory-invmap.md)
+- [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
+- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

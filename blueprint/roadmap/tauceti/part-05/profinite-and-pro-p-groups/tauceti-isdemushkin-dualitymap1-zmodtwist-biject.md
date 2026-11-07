@@ -24,7 +24,7 @@ TauCeti.IsDemushkin.dualityMap1_zModTwist_bijective.{u} {p : ℕ} [Fact (Nat.Pri
 
 ## Depends on
 
-- [The Demushkin predicate](the-demushkin-predicate.md)
+- [TauCeti.IsDemushkin](tauceti-isdemushkin.md)
 
 ## Proof depends on
 

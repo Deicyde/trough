@@ -25,8 +25,8 @@ TauCeti.cyclicCohomology.oddPairing_matrixExtension_of_val_eq_fromBlocks_one.{u_
 
 ## Depends on
 
-- [Connes' odd pairing](connes-odd-pairing.md)
 - [TauCeti.cyclicCohomology.matrixExtension](tauceti-cycliccohomology-matrixextension.md)
+- [TauCeti.cyclicCohomology.oddPairing](tauceti-cycliccohomology-oddpairing.md)
 
 ## Lean
 

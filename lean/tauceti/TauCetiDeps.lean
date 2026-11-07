@@ -10,8 +10,9 @@ Reads the declaration names in `$TROUGH_NAMES`, one per line, and writes
 `$TROUGH_OUT`. For each listed declaration that resolves it records the module,
 kind, line, docstring and signature, the nearest listed declarations that its
 statement and its proof use, and whether its proof reaches `sorryAx`. A listed
-name that does not resolve is listed under `missing`: the map has only what Tau
-Ceti has at this commit. Listed theorems whose proofs cannot be read stop the run
+name that does not resolve to a declaration in a Tau Ceti module, which includes
+one that now lives in Mathlib, is listed under `missing`: the map has only what
+Tau Ceti has at this commit. Listed theorems whose proofs cannot be read stop the run
 rather than give partial data.
 
 The walk goes through Tau Ceti's declarations only: nothing outside Tau Ceti uses
@@ -146,8 +147,8 @@ def run : MetaM Unit := do
     match env.getModuleIdxFor? name with
     | some idx => (`TauCeti).isPrefixOf moduleNames[idx.toNat]!
     | none => false
-  let listed := requested.filter (env.contains ·)
-  let missing := requested.filter (!env.contains ·)
+  let listed := requested.filter fun name => env.contains name && inTauCeti name
+  let missing := requested.filter fun name => !(env.contains name && inTauCeti name)
   -- `sorryAx` gets the bit after the listed declarations', so a proof's front says whether it
   -- reaches one. It is never walked, being core's.
   let sorryBit := 1 <<< listed.size
