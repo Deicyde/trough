@@ -16,6 +16,11 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - `data/blueprints/equational-theories/`: the TeX of [Equational Theories's blueprint](https://github.com/teorth/equational_theories), pinned in its source.json, Apache-2.0; the license is copied beside it.
 - `data/blueprints/strongpnt/structure.json`: the titles, labels, Lean names, marks and places of [Strong PNT (Math Inc)'s blueprint](https://github.com/math-inc/strongpnt); it gives no license, so its text is not copied.
 
+## Tau Ceti
+
+- `data/tauceti/roadmaps.json`: each roadmap's title and the declarations its STATUS.md names under its named results and notable definitions, from [TauCetiProject/TauCetiRoadmap at eaf17b10](https://github.com/TauCetiProject/TauCetiRoadmap/tree/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d), Apache-2.0.
+- `data/tauceti/deps.json`: each named declaration's kind, docstring, signature and nearest named dependencies in [TauCetiProject/TauCeti at ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145), Apache-2.0, written by `lean/tauceti/TauCetiDeps.lean` in GitHub Actions.
+
 ## Libraries
 
 ### Core library

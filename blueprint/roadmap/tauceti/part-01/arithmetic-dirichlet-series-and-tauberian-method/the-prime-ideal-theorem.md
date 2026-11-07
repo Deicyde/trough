@@ -1,0 +1,40 @@
+---
+declaration: theorem
+origin: cited
+lean: TauCeti.primeIdealTheorem
+statement: formalized
+proof: formalized
+---
+
+# The prime ideal theorem
+
+For a number field `K`, Chebyshev's functions satisfy
+`ψ_K(x) ~ x` and `ϑ_K(x) ~ x`, and the number `π_K(x)` of prime ideals of norm at most `x`
+satisfies `π_K(x) ~ Li(x)`.
+
+```lean
+TauCeti.primeIdealTheorem.{u_1} (K : Type u_1) [Field K] [NumberField K] :
+  (Asymptotics.IsEquivalent Filter.atTop (TauCeti.primePsi K Set.univ) fun x => x) ∧
+    (Asymptotics.IsEquivalent Filter.atTop (TauCeti.primeTheta K Set.univ) fun x => x) ∧
+      Asymptotics.IsEquivalent Filter.atTop (TauCeti.primeCount K Set.univ) TauCeti.Real.logIntegral
+```
+
+## Depends on
+
+Its statement uses no other declaration mapped here.
+
+## Proof depends on
+
+- [Boundary data for all primes of a number field](boundary-data-for-all-primes-of-a-number-field.md)
+- [Boundary data for the prime Dirichlet series of `S`](boundary-data-for-the-prime-dirichlet-series-of.md)
+- [Prime-number-theorem transfer from exact boundary data](prime-number-theorem-transfer-from-exact-boundar.md)
+
+## Lean
+
+Formalized in Tau Ceti as [`TauCeti.primeIdealTheorem`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.html#TauCeti.primeIdealTheorem).
+
+## Sources
+
+- [Tau Ceti documentation: `TauCeti.primeIdealTheorem`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.html#TauCeti.primeIdealTheorem)
+- [Source of `TauCeti.primeIdealTheorem` in TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/NumberTheory/ArithmeticDirichletSeries/Prime/PrimeIdealTheorem.lean#L36)
+- [Tau Ceti roadmap status: Arithmetic Dirichlet series and Tauberian methods](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ArithmeticDirichletSeries/STATUS.md)

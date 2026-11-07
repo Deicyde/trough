@@ -1,0 +1,45 @@
+---
+declaration: theorem
+origin: cited
+lean: TauCeti.cartanMatrix_det_eq_one_or_neg_one
+statement: formalized
+proof: formalized
+---
+
+# Cartan-matrix unimodularity
+
+If every finitely generated module admits a finite resolution
+by finitely generated projectives, the Cartan determinant is `1` or `-1`. No positivity of its
+sign is asserted.
+
+```lean
+TauCeti.cartanMatrix_det_eq_one_or_neg_one.{u, v} {R : Type u} [Ring R] [IsArtinianRing R]
+  {I : Type v} [Fintype I] [DecidableEq I]
+  (P : I → (TauCeti.finiteProjectiveModules R).FullSubcategory) (S : I → FGModuleCat R)
+  [∀ (i : I), IsSimpleModule R ↑(S i)]
+  (hind : ∀ (i : I), TauCeti.IsIndecomposableModule R ↑(P i).obj)
+  (hPnoniso : Pairwise fun i j => IsEmpty (↑(P i).obj ≃ₗ[R] ↑(P j).obj))
+  (hPexhaustive : TauCeti.IsExhaustiveIndecomposableProjectiveFamily P)
+  (hSnoniso : Pairwise fun i j => IsEmpty (↑(S i) ≃ₗ[R] ↑(S j)))
+  (hSexhaustive : TauCeti.IsExhaustiveSimpleFamily S)
+  (h :
+    ModuleCat.isFG R ≤
+      (TauCeti.ExactStructure.abelian (ModuleCat R)).admitsFiniteResolution
+        (TauCeti.finiteProjectiveModules R)) :
+  (TauCeti.cartanMatrix P S hind hPnoniso hPexhaustive hSnoniso hSexhaustive).det = 1 ∨
+    (TauCeti.cartanMatrix P S hind hPnoniso hPexhaustive hSnoniso hSexhaustive).det = -1
+```
+
+## Depends on
+
+Its statement uses no other declaration mapped here.
+
+## Lean
+
+Formalized in Tau Ceti as [`TauCeti.cartanMatrix_det_eq_one_or_neg_one`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.html#TauCeti.cartanMatrix_det_eq_one_or_neg_one).
+
+## Sources
+
+- [Tau Ceti documentation: `TauCeti.cartanMatrix_det_eq_one_or_neg_one`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.html#TauCeti.cartanMatrix_det_eq_one_or_neg_one)
+- [Source of `TauCeti.cartanMatrix_det_eq_one_or_neg_one` in TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.lean#L149)
+- [Tau Ceti roadmap status: Grothendieck groups, Cartan maps, and Euler forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GrothendieckEulerForms/STATUS.md)
