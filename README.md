@@ -11,9 +11,9 @@ Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
 Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
 gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
-Mathlib is mapped from its curated lists, and five research projects from
-their leanblueprints: Imperial's FLT, PFR, Equational Theories, Strong PNT and
-PNT+.
+Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
+roadmaps' status files name, and five research projects from their
+leanblueprints: Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+.
 
 ## The Mathlib map
 
@@ -93,6 +93,34 @@ page, and references print it; tables, listings and figure captions are kept.
    nodes or to under half the last count, or when a library whose text is
    shown loses its license or changes it.
 
+## The Tau Ceti chapter
+
+Tau Ceti's human-written roadmaps live in TauCetiRoadmap, and each carries a
+generated `STATUS.md` whose "Named results" and "Notable definitions and
+infrastructure" link declarations in Tau Ceti's documentation. Those links pick
+the chapter's articles, one per declaration Tau Ceti has at the pinned commit,
+in a section per roadmap titled from its README. The rest of a roadmap, its
+plan, its `Suggested.lean` signatures and its frontier, says what Tau Ceti may
+add and is left out, and so is the status files' prose, which a model writes
+and Tau Ceti does not check. An article's text is its declaration's docstring
+and signature, titled by the docstring's bold lead when it has one.
+
+1. `tools/refresh_tauceti.py CHECKOUT` writes `data/tauceti/roadmaps.json`
+   from a TauCetiRoadmap checkout: each roadmap's title and the names its
+   status links in those two sections, nothing else.
+2. The **Tau Ceti data** workflow fetches Tau Ceti at the commit
+   `data/tauceti/source.json` pins, with its build cache, and runs
+   `lean/tauceti/TauCetiDeps.lean` over every Tau Ceti module. For each name
+   that resolves it writes the module, kind, line, docstring, signature,
+   whether the proof reaches `sorry`, and the nearest named declarations the
+   statement reaches through unnamed statements and the proof through any
+   chain of unnamed Tau Ceti declarations; a name that does not resolve is
+   listed as missing and has no article. A theorem whose proof reaches `sorry`
+   is shown as stated, not proved.
+3. The weekly run, or a dispatch with `newest`, moves both pins: Tau Ceti to
+   its newest main commit whose CI passed, so its cache exists, and the
+   roadmaps to their newest commit.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -139,4 +167,7 @@ do the docstrings and signatures in `data/mathlib/concept-deps.json`, which a
 concept with no authored article shows; and
 `data/thousand-plus.json` from
 [1000-plus](https://github.com/1000-plus/1000-plus.github.io), which is in the
-public domain.
+public domain. `data/tauceti/roadmaps.json` comes from
+[TauCetiRoadmap](https://github.com/TauCetiProject/TauCetiRoadmap) and the
+docstrings and signatures in `data/tauceti/deps.json` from
+[Tau Ceti](https://github.com/TauCetiProject/TauCeti), both Apache-2.0.
