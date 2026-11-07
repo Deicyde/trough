@@ -11,7 +11,7 @@
 {"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "are isomorphic as $R$-algebras"}}}], "object": [{"location": {"declaration": "IsLocalization.algEquiv"}}]}
 {"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "The rationals are the localization of the integers at the nonzero integers"}}}], "object": [{"location": {"declaration": "Rat.isFractionRing"}}]}
 {"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "is a field", "prefix": "which "}}}], "object": [{"location": {"declaration": "FractionRing.field"}}]}
-{"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "localization at it", "prefix": "and the "}}}], "object": [{"location": {"declaration": "Localization.AtPrime"}}]}
+{"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "localization at it"}}}], "object": [{"location": {"declaration": "Localization.AtPrime"}}]}
 {"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "localization at the powers of $f$"}}}], "object": [{"location": {"declaration": "Localization.Away"}}]}
 {"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "is the zero ring"}}}], "object": [{"location": {"declaration": "IsLocalization.uniqueOfZeroMem"}}]}
 {"subject": [{"type": "generic", "uri": "localization.md", "location": {"quote": {"exact": "$r/1 = 0$ exactly when $ur = 0$ for some $u \\in S$"}}}], "object": [{"location": {"declaration": "IsLocalization.map_eq_zero_iff"}}]}

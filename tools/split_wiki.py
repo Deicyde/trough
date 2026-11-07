@@ -35,21 +35,29 @@ def main() -> int:
     deps = ROOT / "data" / "mathlib" / "concept-deps.json"
     modules = frozenset(json.loads(deps.read_text(encoding="utf-8")).get("modules", {})) if deps.is_file() else frozenset()
     for path in args.files:
-        text = path.read_text(encoding="utf-8")
-        if not text.startswith("---\n") and path.with_suffix(".jsonl").is_file():
+        jsonl_path = path.with_suffix(".jsonl")
+        saved = (path.read_text(encoding="utf-8"), jsonl_path.read_text(encoding="utf-8") if jsonl_path.is_file() else None)
+        text = saved[0]
+        if not text.startswith("---\n") and saved[1] is not None:
             text = wiki.combined(path)  # split already: write its quotes again
         before = wiki.parse_text(path, text)
         markdown, rows = wiki.split(text, path.stem, modules)
         path.write_text(markdown, encoding="utf-8")
-        path.with_suffix(".jsonl").write_text(wiki.jsonl(rows), encoding="utf-8")
+        jsonl_path.write_text(wiki.jsonl(rows), encoding="utf-8")
         (path.parent / "_defaults.json").write_text(json.dumps(wiki.DEFAULTS) + "\n", encoding="utf-8")
         # The two files must read back as the article did, up to how a citation's name is spelled.
-        if canonical(wiki.parse(path)) != canonical(before):
-            original = text if text.startswith("---\n") else None
-            if original is not None:
-                path.write_text(original, encoding="utf-8")
-                path.with_suffix(".jsonl").unlink()
-            raise SystemExit(f"{path}: the split article does not read back as it was; left as it was")
+        try:
+            same = canonical(wiki.parse(path)) == canonical(before)
+            problem = "does not read back as it was"
+        except ValueError as error:
+            same, problem = False, f"does not read back ({error})"
+        if not same:
+            path.write_text(saved[0], encoding="utf-8")
+            if saved[1] is None:
+                jsonl_path.unlink()
+            else:
+                jsonl_path.write_text(saved[1], encoding="utf-8")
+            raise SystemExit(f"{path}: the split article {problem}; left as it was")
         print(f"{path}: {len(rows) - 1} citations", file=sys.stderr)
     return 0
 

@@ -1,6 +1,6 @@
 {"id": "af_cd135a0a900dd3b8a61d34a4", "subject": [{"type": "generic", "uri": "presheafed-space.md"}], "object": [{"location": {"declaration": "AlgebraicGeometry.PresheafedSpace"}}]}
 {"subject": [{"type": "generic", "uri": "presheafed-space.md", "location": {"quote": {"exact": "presheafed space over $\\mathcal{C}$"}}}], "object": [{"location": {"declaration": "AlgebraicGeometry.PresheafedSpace"}}]}
-{"subject": [{"type": "generic", "uri": "presheafed-space.md", "location": {"quote": {"exact": "morphism of presheafed spaces", "prefix": "A "}}}], "object": [{"location": {"declaration": "AlgebraicGeometry.PresheafedSpace.Hom"}}]}
+{"subject": [{"type": "generic", "uri": "presheafed-space.md", "location": {"quote": {"exact": "morphism of presheafed spaces"}}}], "object": [{"location": {"declaration": "AlgebraicGeometry.PresheafedSpace.Hom"}}]}
 {"subject": [{"type": "generic", "uri": "presheafed-space.md", "location": {"quote": {"exact": "presheafed spaces over $\\mathcal{C}$ form a category"}}}], "object": [{"location": {"declaration": "AlgebraicGeometry.PresheafedSpace.categoryOfPresheafedSpaces"}}]}
 {"subject": [{"type": "generic", "uri": "presheafed-space.md", "location": {"quote": {"exact": "a presheafed space", "prefix": "gives "}}}], "object": [{"location": {"declaration": "AlgebraicGeometry.PresheafedSpace.const"}}]}
 {"subject": [{"type": "generic", "uri": "presheafed-space.md", "location": {"quote": {"exact": "a functor to the category of topological spaces"}}}], "object": [{"location": {"declaration": "AlgebraicGeometry.PresheafedSpace.forget"}}]}

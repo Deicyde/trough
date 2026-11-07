@@ -14,4 +14,4 @@
 {"subject": [{"type": "generic", "uri": "dual-groups.md", "location": {"quote": {"exact": "the number of characters equals the order of the group"}}}], "object": [{"location": {"declaration": "AddChar.card_eq"}}]}
 {"subject": [{"type": "generic", "uri": "dual-groups.md", "location": {"quote": {"exact": "the group is isomorphic to its double dual"}}}], "object": [{"location": {"declaration": "AddChar.doubleDualEquiv"}}]}
 {"subject": [{"type": "generic", "uri": "dual-groups.md", "location": {"quote": {"exact": "the characters form a basis of the complex functions on the group"}}}], "object": [{"location": {"declaration": "AddChar.complexBasis"}}]}
-{"subject": [{"type": "generic", "uri": "dual-groups.md", "location": {"quote": {"exact": "the Pontryagin dual", "prefix": "defines "}}}], "object": [{"location": {"declaration": "PontryaginDual"}}]}
+{"subject": [{"type": "generic", "uri": "dual-groups.md", "location": {"quote": {"exact": "the Pontryagin dual"}}}], "object": [{"location": {"declaration": "PontryaginDual"}}]}
