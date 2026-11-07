@@ -40,9 +40,9 @@ mathlib = "2cabef97b63d"
 lean_files = 23408
 head = "36bbd8632db6"
 head_date = "2026-11-02"
-map_status = "planned"
-map_unit = "roadmap"
-map_plan = "One article per TauCetiRoadmap roadmap (124 active, 30 completed), its Suggested.lean signatures as statements, and the named results in STATUS.md linked to Tau Ceti declarations."
+map_status = "live"
+map_unit = "named declaration"
+map_plan = "One article per declaration a roadmap's status names as a result or notable definition, as Tau Ceti has it: its docstring, signature and dependencies, in a section per roadmap."
 
 [[library]]
 id = "atlas-lean"

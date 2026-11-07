@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import blueprints, catalog, links, mathlib, wiki
+from trough import blueprints, catalog, links, mathlib, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -75,6 +75,23 @@ def generate() -> dict[Path, str]:
             + (f"; unknown TeX: {unknown}" if unknown else ""),
             file=sys.stderr,
         )
+    tau = tauceti.load_sources(DATA)
+    if tau and tau.deps:
+        tau_root, tau_stats, tau_links = tauceti.chapter(tau)
+        assign_paths(tau_root, ROADMAP / "tauceti")
+        files.update(render_tree(tau_root, VAULT))
+        chapters["tauceti"] = "tauceti/README.md"
+        lean_links["tauceti"] = dict(sorted(tau_links.items()))
+        blueprint_rows.append(("Tau Ceti", "DECOMPOSED",
+                               f"[{tau_stats['articles']:,} declarations its roadmaps name](../roadmap/tauceti/README.md), "
+                               "one article per declaration."))
+        print(
+            f"tauceti: {tau_stats['articles']} articles ({tau_stats.get('theorems', 0)} theorems, "
+            f"{tau_stats.get('definitions', 0)} definitions, {tau_stats.get('sorry', 0)} reaching sorry) in "
+            f"{tau_stats['roadmaps']} roadmaps; {tau_stats['missing']} names missing at the pin; "
+            f"{tau_stats.get('statement_edges', 0)} statement and {tau_stats.get('proof_edges', 0)} proof edges",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -95,6 +112,7 @@ def generate() -> dict[Path, str]:
     files[VAULT / "sources" / "README.md"] = catalog.sources_readme(
         libraries, sources.rev, sources.thousand_plus,
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
+        (tau.rev, tau.roadmap_rev) if tau and tau.deps else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

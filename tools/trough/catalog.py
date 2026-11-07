@@ -50,8 +50,8 @@ def roadmap_root(libraries: list[dict], chapters: dict[str, str], previous: str 
         "",
         "Trough maps Lean formalization libraries: what each one formalizes and how its results depend "
         "on one another, not what the library may add. Each library gets the article unit that suits it, "
-        "such as curated concepts for Mathlib, roadmaps for Tau Ceti and blueprint nodes for the "
-        "research projects. The maps are rendered with "
+        "such as curated concepts for Mathlib, the declarations its roadmaps name for Tau Ceti and blueprint "
+        "nodes for the research projects. The maps are rendered with "
         "[AutoformBot](https://github.com/facebookresearch/autoform-bot).",
         "",
         "## Chapters",
@@ -104,8 +104,10 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 
 
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
-                   blueprints: list[tuple[str, str, str, str | None, bool]] = ()) -> str:
-    """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library."""
+                   blueprints: list[tuple[str, str, str, str | None, bool]] = (),
+                   tauceti: tuple[str, str] | None = None) -> str:
+    """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
+    *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built."""
     lines = [
         "# Sources",
         "",
@@ -136,6 +138,19 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                 lines.append(f"- `data/blueprints/{project_id}/structure.json`: the titles, labels, Lean names, marks and "
                              f"places of [{name}'s blueprint](https://github.com/{repo}); it gives no license, so its text "
                              "is not copied.")
+    if tauceti:
+        rev, roadmap_rev = tauceti
+        lines += [
+            "",
+            "## Tau Ceti",
+            "",
+            f"- `data/tauceti/roadmaps.json`: each roadmap's title and the declarations its STATUS.md names under "
+            f"its named results and notable definitions, from [TauCetiProject/TauCetiRoadmap at {roadmap_rev[:8]}]"
+            f"(https://github.com/TauCetiProject/TauCetiRoadmap/tree/{roadmap_rev}), Apache-2.0.",
+            f"- `data/tauceti/deps.json`: each named declaration's kind, docstring, signature and nearest named "
+            f"dependencies in [TauCetiProject/TauCeti at {rev[:8]}](https://github.com/TauCetiProject/TauCeti/tree/{rev}), "
+            "Apache-2.0, written by `lean/tauceti/TauCetiDeps.lean` in GitHub Actions.",
+        ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:
         members = [library for library in libraries if library["group"] == group]
