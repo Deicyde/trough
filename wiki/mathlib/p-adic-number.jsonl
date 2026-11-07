@@ -8,7 +8,7 @@
 {"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "$|k|_p \\le 1$"}}}], "object": [{"location": {"declaration": "Padic.norm_int_le_one"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "$|k|_p < 1$ if and only if $p$ divides $k$"}}}], "object": [{"location": {"declaration": "Padic.norm_intCast_lt_one_iff"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "extended norm restricts to $|\\cdot|_p$ on the rationals"}}}], "object": [{"location": {"declaration": "Padic.eq_padicNorm"}}]}
-{"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "normed field", "prefix": "a "}}}], "object": [{"location": {"declaration": "Padic.normedField"}}]}
+{"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "normed field"}}}], "object": [{"location": {"declaration": "Padic.normedField"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "Every Cauchy sequence in $\\mathbb{Q}_p$ converges"}}}], "object": [{"location": {"declaration": "Padic.complete"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "the rationals are dense in $\\mathbb{Q}_p$"}}}], "object": [{"location": {"declaration": "Padic.denseRange_ratCast"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-number.md", "location": {"quote": {"exact": "$|x + y|_p \\le \\max(|x|_p, |y|_p)$", "prefix": "\\mathbb{Q}_p$, "}}}], "object": [{"location": {"declaration": "Padic.nonarchimedean"}}]}

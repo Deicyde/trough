@@ -6,7 +6,7 @@
 {"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "the second"}}}], "object": [{"location": {"declaration": "lie_smul"}}]}
 {"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "Lie algebra homomorphism", "prefix": "A "}}}], "object": [{"location": {"declaration": "LieHom"}}]}
 {"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "Lie subalgebra", "prefix": "A "}}}], "object": [{"location": {"declaration": "LieSubalgebra"}}]}
-{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "ideal", "prefix": "an "}}}], "object": [{"location": {"declaration": "LieIdeal"}}]}
+{"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "ideal"}}}], "object": [{"location": {"declaration": "LieIdeal"}}]}
 {"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "becomes a Lie algebra"}}}], "object": [{"location": {"declaration": "LieAlgebra.ofAssociativeAlgebra"}}]}
 {"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "$[x, y] = xy - yx$"}}}], "object": [{"location": {"declaration": "LieRing.of_associative_ring_bracket"}}]}
 {"subject": [{"type": "generic", "uri": "lie-algebra.md", "location": {"quote": {"exact": "abelian", "prefix": "is "}}}], "object": [{"location": {"declaration": "IsLieAbelian"}}]}

@@ -1,4 +1,5 @@
 import re
+import sys
 import json
 from pathlib import Path
 
@@ -439,3 +440,64 @@ def test_the_committed_articles_are_as_the_splitter_writes_them():
         markdown, rows = wiki.split(wiki.combined(path), path.stem, modules)
         assert markdown == path.read_text(encoding="utf-8"), path
         assert wiki.jsonl(rows) == path.with_suffix(".jsonl").read_text(encoding="utf-8"), path
+
+
+def citation(exact: str, name: str = "C", **context: str) -> dict:
+    return {"subject": [{"type": "generic", "uri": "alpha.md", "location": {"quote": {"exact": exact, **context}}}],
+            "object": [{"location": {"declaration": name}}]}
+
+
+def test_a_quote_is_refused_inside_any_link_across_blocks_and_inside_a_word(tmp_path):
+    body = ARTICLE.replace("unlike [beta](trough:B)", "unlike [the ring $K[X]$ of\npolynomials](trough:B)")
+    body = body.replace("says.", "says.\n- a list item\n- another item")
+    write(tmp_path, alpha=body)
+    path = tmp_path / "alpha.md"
+    rows = annotations(path)
+    for extra, problem in [(citation("polynomials"), "overlaps a trough: link"),
+                           (citation("item - another"), "across paragraphs, headings or list items"),
+                           (citation("thin"), "matches 0 places")]:  # "thin" only inside "thing"
+        path.with_suffix(".jsonl").write_text(wiki.jsonl(rows + [extra]), encoding="utf-8")
+        with pytest.raises(ValueError, match=re.escape(problem)):
+            wiki.load(tmp_path)
+    # Blank lines between annotations are allowed, as literature-links reads them.
+    path.with_suffix(".jsonl").write_text(wiki.jsonl(rows).replace("\n", "\n\n", 1), encoding="utf-8")
+    assert "A" in wiki.load(tmp_path)
+
+
+def test_words_cited_inside_a_longer_word_need_no_context(tmp_path):
+    article = ARTICLE.replace("**Alpha** is", "A subthing of **Alpha** is")
+    write(tmp_path, alpha=article.replace("[the first thing](lean:A)", "[thing](lean:A)"))
+    assert annotations(tmp_path / "alpha.md")[1]["subject"][0]["location"]["quote"] == {"exact": "thing"}
+
+
+@pytest.mark.parametrize("draft, problem", [
+    ("[ the first thing](lean:A)", "start or end with white space"),
+    ("[the [beta](trough:B) thing](lean:A)", "inside or around a trough: link"),
+    ("[the [first](lean:A) thing](trough:B)", "inside or around a trough: link"),
+])
+def test_a_draft_the_two_files_could_not_hold_is_refused(draft, problem):
+    with pytest.raises(ValueError, match=re.escape(problem)):
+        wiki.split(ARTICLE.replace("[the first thing](lean:A)", draft), "alpha")
+
+
+def test_annotations_the_generator_would_not_read_are_refused(tmp_path):
+    write(tmp_path, alpha=ARTICLE)
+    (tmp_path / "alpha.ndjson").write_text("{}\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="does not read.*alpha.ndjson"):
+        wiki.load(tmp_path)
+
+
+def test_the_splitter_leaves_a_draft_as_it_was_when_the_split_would_not_load(tmp_path, monkeypatch):
+    import split_wiki
+
+    path = tmp_path / "alpha.md"
+    path.write_text(ARTICLE, encoding="utf-8")
+
+    def broken(path_: Path) -> wiki.Authored:
+        raise ValueError("cannot read it back")
+
+    monkeypatch.setattr(wiki, "parse", broken)
+    monkeypatch.setattr(sys, "argv", ["split_wiki.py", str(path)])
+    with pytest.raises(SystemExit, match="does not read back"):
+        split_wiki.main()
+    assert path.read_text(encoding="utf-8") == ARTICLE and not path.with_suffix(".jsonl").exists()

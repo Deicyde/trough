@@ -5,7 +5,7 @@ wiki/mathlib/lagranges-theorem.jsonl. The .md file is its text, Markdown and TeX
 matter. The .jsonl file is its links to Mathlib, as literature-links annotations, one per line.
 The folder's _defaults.json makes each object end Mathlib, so an annotation names only the
 declaration. Subject ends name the article's .md file and are `generic`, as Markdown is. The
-file names are for people only.
+names are for people, but each annotation names its .md file, so a rename changes both files.
 
 The first annotation is about the whole article. Its `id` is the article's durable identity, and
 its object is the concept it is about: the concept's first declaration, its statement or its module
@@ -25,9 +25,11 @@ declaration they cite:
                   "location": {"quote": {"exact": "the order of a subgroup divides the order of the group"}}}],
      "object": [{"location": {"declaration": "Subgroup.card_subgroup_dvd_card"}}]}
 
-A quote matches the Markdown as written, each run of white space read as one space, and stays
-within a paragraph. `prefix` and `suffix`, the text just before and after the words, are given
-only when the words occur more than once. The words become a link to the declaration's
+A quote matches the Markdown as written, each run of white space read as one space. Words that
+begin or end with a letter or digit match only where that is the edge of a word, so "group" does
+not match inside "subgroup". A quote stays within one paragraph, heading or list item.
+`prefix` and `suffix`, the text just before and after the words, are given only when the words
+occur more than once. The words become a link to the declaration's
 documentation. Loading stops when a quote matches nowhere or more than once, or overlaps another
 quote or a link. CI reads every cited name in Mathlib's environment (lean/ConceptDeps.lean), and
 the chapter stops on one with no record or one Mathlib deprecates.
@@ -59,6 +61,9 @@ LEAN_LINK = re.compile(r"\]\((?:<lean:([^>]+)>|lean:([^)\s]+))\)")
 TROUGH_LINK = re.compile(r"\]\(trough:([^)\s]+)\)")
 SCHEME = re.compile(r"\]\(\s*<?\s*(?:lean|trough):", re.I)
 LEAN_SCHEME = re.compile(r"\]\(\s*<?\s*lean:", re.I)
+# A line that starts a heading, a list item or a block quote.
+BLOCK_START = re.compile(r"\n[ \t]*(?:#{1,6}[ \t]|[-*+][ \t]|\d+[.)][ \t]|>)")
+HEADING = re.compile(r"[ \t]{0,3}#{1,6}[ \t]")
 WHITE = re.compile(r"\s+")
 BLANK_LINE = re.compile(r"\n[ \t]*\n")
 DEPENDENCY = re.compile(r"^- \[[^\]]*\]\(trough:([^)\s]+)\)$")
@@ -185,9 +190,12 @@ def load(directory: Path) -> dict[str, Authored]:
     articles: dict[str, Authored] = {}
     if directory.is_dir():
         texts = {path.stem for path in directory.glob("*.md")}
-        stray = sorted(path.name for path in directory.glob("*.jsonl") if path.stem not in texts)
+        stray = sorted(path.name for path in directory.iterdir()
+                       if path.suffix.lower() in (".json", ".jsonl", ".ndjson") and path.name != "_defaults.json"
+                       and not (path.suffix == ".jsonl" and path.stem in texts))
         if stray:
-            raise ValueError(f"{directory}: annotations with no article beside them: {', '.join(stray)}")
+            raise ValueError(f"{directory}: annotation files the generator does not read, with no article or in "
+                             f"another format than .jsonl: {', '.join(stray)}")
     for path in sorted(directory.glob("*.md")) if directory.is_dir() else []:
         article = parse(path)
         if article.concept in articles:
@@ -220,6 +228,11 @@ def link_citations(text: str, url: dict[str, str]) -> str:
     return LEAN_LINK.sub(link, text)
 
 
+def link_spans(text: str, pattern: re.Pattern) -> list[tuple[int, int]]:
+    """Where each link whose destination pattern matches runs, from its [ to its )."""
+    return [(start, match.end()) for match in pattern.finditer(text) if (start := opening(text, match.start())) >= 0]
+
+
 def collapsed(text: str) -> tuple[str, list[int]]:
     """text with each run of white space as one space, and where each of its characters, and its end,
     are in text."""
@@ -247,7 +260,11 @@ def spans(text: str, quote_: dict) -> list[tuple[int, int]]:
     while exact and at >= 0:
         start = at + len(prefix)
         end = start + len(exact)
-        found.append((where[start], where[end - 1] + 1))
+        # A quote's own edge is a word's edge: without context, "group" is not the end of "subgroup".
+        inside_before = not prefix and exact[0].isalnum() and start > 0 and flat[start - 1].isalnum()
+        inside_after = not suffix and exact[-1].isalnum() and end < len(flat) and flat[end].isalnum()
+        if not (inside_before or inside_after):
+            found.append((where[start], where[end - 1] + 1))
         at = flat.find(prefix + exact + suffix, at + 1)
     return found
 
@@ -291,14 +308,22 @@ def split(text: str, name: str, modules: frozenset[str] | set[str] = frozenset()
     if set(fields) != {"article_id", "concept"} or not all(fields.values()):
         raise ValueError(f"{name}: front matter needs article_id and concept, and nothing else")
     body = text[match.end():]
+    if body.startswith("---\n"):
+        raise ValueError(f"{name}: the text opens with ---, which would read as front matter")
+    trough_links = link_spans(body, TROUGH_LINK)
     pieces, cited, last = [], [], 0
     for link in LEAN_LINK.finditer(body):
         start = opening(body, link.start())
         if start < last:
             raise ValueError(f"{name}: a lean: link inside another link")
+        if any(start < end and begin < link.end() for begin, end in trough_links):
+            raise ValueError(f"{name}: a lean: link inside or around a trough: link")
         pieces.append(body[last:start])
         at = sum(len(piece) for piece in pieces)
         words = body[start + 1 : link.start()]
+        if not words.strip() or words != words.strip():
+            raise ValueError(f"{name}: the cited words {words!r} are empty or start or end with white space; "
+                             "put the spaces outside the [ ]")
         pieces.append(words)
         cited.append((at, at + len(words), unquote(link.group(1) or link.group(2))))
         last = link.end()
@@ -328,6 +353,7 @@ def combined(path: Path) -> str:
     for link in LEAN_SCHEME.finditer(markdown):
         line = markdown.count("\n", 0, link.start()) + 1
         raise ValueError(f"{path}:{line}: a citation goes in {annotations.name}, not in a lean: link")
+    check_links(str(path), markdown)  # line numbers in the .md itself
     if not annotations.is_file():
         raise ValueError(f"{path}: {annotations.name}, its id, concept and citations, is missing")
     defaults_path = path.parent / "_defaults.json"
@@ -338,6 +364,8 @@ def combined(path: Path) -> str:
     own, citations, problems = None, [], []
     for number, line in enumerate(annotations.read_text(encoding="utf-8").splitlines(), 1):
         where = f"{annotations}:{number}"
+        if not line.strip():
+            continue
         try:
             row = json.loads(line)
         except json.JSONDecodeError as error:
@@ -369,8 +397,11 @@ def combined(path: Path) -> str:
             problems.append(f"{where}: the quote {words['exact']!r} matches {len(found)} places in {path.name}")
             continue
         start, end = found[0]
-        if BLANK_LINE.search(markdown, start, end):
-            problems.append(f"{where}: the quote {words['exact']!r} runs across paragraphs")
+        line_start = markdown.rfind("\n", 0, start) + 1
+        if BLANK_LINE.search(markdown, start, end) or BLOCK_START.search(markdown, start, end) \
+                or HEADING.match(markdown, line_start):
+            problems.append(f"{where}: the quote {words['exact']!r} runs across paragraphs, headings or list items, "
+                            "or sits in a heading")
             continue
         citations.append((start, end, names[0], where))
     if own is None:
@@ -384,7 +415,7 @@ def combined(path: Path) -> str:
     if not article_id or not concept or (targets and extension):
         raise ValueError(f"{annotations}: the article's own annotation needs an id and one concept: "
                          "one declaration or module, or extensions.org.trough.concept with an empty object")
-    taken = [(match.start(), match.end()) for match in re.finditer(r"\[[^\]\n]*\]\(trough:[^)\s]+\)", markdown)]
+    taken = link_spans(markdown, TROUGH_LINK)
     citations.sort()
     for (start, end, _, where), following in zip(citations, citations[1:] + [None]):
         if following and following[0] < end:

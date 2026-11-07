@@ -18,7 +18,7 @@
 {"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "it is the only such homomorphism"}}}], "object": [{"location": {"declaration": "PadicInt.lift_unique"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "the ultrametric inequality"}}}], "object": [{"location": {"declaration": "PadicInt.nonarchimedean"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "complete", "prefix": "is "}}}], "object": [{"location": {"declaration": "PadicInt.completeSpace"}}]}
-{"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "compact", "prefix": "[completeness](trough:CompleteSpace)) and "}}}], "object": [{"location": {"declaration": "PadicInt.compactSpace"}}]}
+{"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "compact"}}}], "object": [{"location": {"declaration": "PadicInt.compactSpace"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "the integers are dense in it"}}}], "object": [{"location": {"declaration": "PadicInt.denseRange_intCast"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "there is a unique root $z$ of $F$ with $|z - a|_p < |F'(a)|_p$, and it satisfies $|F'(z)|_p = |F'(a)|_p$"}}}], "object": [{"location": {"declaration": "hensels_lemma"}}]}
 {"subject": [{"type": "generic", "uri": "p-adic-integer.md", "location": {"quote": {"exact": "the valuation of $0$ is $0$"}}}], "object": [{"location": {"declaration": "PadicInt.valuation_zero"}}]}

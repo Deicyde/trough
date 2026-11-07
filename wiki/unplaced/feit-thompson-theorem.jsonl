@@ -1,5 +1,5 @@
 {"id": "af_a2dc53437d42295eff959609", "subject": [{"type": "generic", "uri": "feit-thompson-theorem.md"}], "object": [], "extensions": {"org.trough": {"concept": "1000:Q909517"}}}
-{"subject": [{"type": "generic", "uri": "feit-thompson-theorem.md", "location": {"quote": {"exact": "solvable group", "prefix": "("}}}], "object": [{"location": {"declaration": "Group.IsSolvable"}}]}
+{"subject": [{"type": "generic", "uri": "feit-thompson-theorem.md", "location": {"quote": {"exact": "solvable group"}}}], "object": [{"location": {"declaration": "Group.IsSolvable"}}]}
 {"subject": [{"type": "generic", "uri": "feit-thompson-theorem.md", "location": {"quote": {"exact": "derived series", "prefix": "group, "}}}], "object": [{"location": {"declaration": "Subgroup.derivedSeries"}}]}
 {"subject": [{"type": "generic", "uri": "feit-thompson-theorem.md", "location": {"quote": {"exact": "a simple group is solvable if and only if it is commutative"}}}], "object": [{"location": {"declaration": "IsSimpleGroup.comm_iff_isSolvable"}}]}
 {"subject": [{"type": "generic", "uri": "feit-thompson-theorem.md", "location": {"quote": {"exact": "an abelian group is simple if and only if its order is prime"}}}], "object": [{"location": {"declaration": "CommGroup.is_simple_iff_prime_card"}}]}
