@@ -1,8 +1,3 @@
----
-article_id: af_68c2aa70e2727097e1be889e
-concept: Representation
----
-
 A **representation** of a [group](trough:Group) $G$ is a way of letting $G$ act on a
 vector space by linear maps, compatibly with the group multiplication. It turns
 questions about an abstract group into questions of linear algebra, where matrices,
@@ -12,7 +7,7 @@ finite groups and for the symmetry arguments of number theory, geometry and phys
 ## Definition
 
 Let $k$ be a [field](trough:Field), $G$ a group and $V$ a vector space over $k$. A
-[representation of $G$ on $V$](lean:Representation) is a map $\rho$ assigning to each
+representation of $G$ on $V$ is a map $\rho$ assigning to each
 $g \in G$ a [linear map](trough:LinearMap) $\rho(g) \colon V \to V$ such that
 
 $$\rho(gh) = \rho(g)\,\rho(h) \quad \text{for all } g, h \in G, \qquad \rho(e) = \mathrm{id}_V,$$
@@ -20,9 +15,9 @@ $$\rho(gh) = \rho(g)\,\rho(h) \quad \text{for all } g, h \in G, \qquad \rho(e) =
 where $e$ is the identity of $G$. In other words, $\rho$ is a
 [homomorphism](trough:MonoidHom) from $G$ to the linear maps of $V$ under composition.
 Since $\rho(g)\rho(g^{-1}) = \rho(g^{-1})\rho(g) = \mathrm{id}_V$,
-[each $\rho(g)$ is a bijection](lean:Representation.apply_bijective), so $\rho$ can be
-regarded as [a homomorphism from $G$ to the group of invertible linear maps of
-$V$](lean:Representation.asGroupHom); conversely, any such homomorphism is a
+each $\rho(g)$ is a bijection, so $\rho$ can be
+regarded as a homomorphism from $G$ to the group of invertible linear maps of
+$V$; conversely, any such homomorphism is a
 representation. One often writes $g \cdot v$ for $\rho(g)v$, and calls
 $V$ itself the representation when $\rho$ is understood. The dimension of $V$ is the
 degree of the representation. If $V$ has finite dimension $n$, a choice of basis turns
@@ -30,14 +25,14 @@ each $\rho(g)$ into an invertible matrix, and $\rho$ into a homomorphism from $G
 [general linear group](trough:Matrix.GeneralLinearGroup) of $n \times n$ matrices over $k$.
 
 If $\sigma$ is a representation of $G$ on $W$, a linear map $f \colon V \to W$ is an
-[intertwining map](lean:Representation.IntertwiningMap) when
+intertwining map when
 $f(\rho(g)v) = \sigma(g)f(v)$ for all $g$ and $v$. Two representations are
-[equivalent](lean:Representation.Equiv) when a bijective intertwining map joins them;
+equivalent when a bijective intertwining map joins them;
 equivalent representations are regarded as the same.
 
 ## Examples
 
-- **The trivial representation.** [Every $g$ acts as the identity](lean:Representation.trivial).
+- **The trivial representation.** Every $g$ acts as the identity.
 - **One-dimensional representations.** A representation on $k$ itself is a homomorphism
   from $G$ to the nonzero elements of $k$ under multiplication. The
   [signature](trough:Equiv.Perm.sign) of a permutation gives such a representation of
@@ -47,38 +42,38 @@ equivalent representations are regarded as the same.
   representation on $\mathbb{C}$.
 - **Permutation representations.** If $G$ [acts](trough:MulAction) on a set $X$, let
   $k[X]$ be the vector space with basis $\{e_x : x \in X\}$. This gives a
-  [permutation representation](lean:Representation.ofMulAction), in which
-  [$g$ sends $e_x$ to $e_{gx}$](lean:Representation.ofMulAction_single).
+  permutation representation, in which
+  $g$ sends $e_x$ to $e_{gx}$.
   The case $X = G$, with $G$ acting on itself by left multiplication, is the
-  [regular representation](lean:Representation.leftRegular) on the group algebra $k[G]$.
+  regular representation on the group algebra $k[G]$.
 
 ## Constructions
 
 A subspace $W \subseteq V$ with $\rho(g)W \subseteq W$ for all $g$ is a
-[subrepresentation](lean:Subrepresentation), and
-[restricting each $\rho(g)$ to $W$ gives a representation of $G$ on $W$](lean:Representation.subrepresentation).
+subrepresentation, and
+restricting each $\rho(g)$ to $W$ gives a representation of $G$ on $W$.
 Representations of $G$ can be combined: there are
-[direct sums](lean:Representation.directSum), on which $G$ acts in each summand;
-[tensor products](lean:Representation.tprod), on which $g$ acts by
+direct sums, on which $G$ acts in each summand;
+tensor products, on which $g$ acts by
 $\rho(g) \otimes \sigma(g)$ (see [tensor product](trough:TensorProduct)); and
-[duals](lean:Representation.dual), on which $g$ acts on the
+duals, on which $g$ acts on the
 [dual space](trough:Module.Dual) by the transpose of $\rho(g^{-1})$.
 
 ## Irreducible representations
 
 A representation is [irreducible](trough:Representation.IsIrreducible) when
-[it is nonzero and its only subrepresentations are $0$ and the whole space](lean:Representation.IsIrreducible).
+it is nonzero and its only subrepresentations are $0$ and the whole space.
 Irreducible representations are the building blocks of the theory.
 
-- **Schur's lemma.** [An intertwining map between irreducible representations is either
-  zero or bijective](lean:Representation.IsIrreducible.bijective_or_eq_zero). If $k$ is
+- **Schur's lemma.** An intertwining map between irreducible representations is either
+  zero or bijective. If $k$ is
   [algebraically closed](trough:IsAlgClosed) and $V$ is irreducible and
-  finite-dimensional, then [the intertwining maps from $V$ to itself form a
-  one-dimensional space](lean:Representation.IsIrreducible.finrank_intertwiningMap_self),
+  finite-dimensional, then the intertwining maps from $V$ to itself form a
+  one-dimensional space,
   so each is a scalar multiple of the identity (see [Schur's lemma](trough:FDRep.finrank_hom_simple_simple)).
 - **Commutative groups.** Over an algebraically closed field,
-  [every finite-dimensional irreducible representation of a commutative group is
-  one-dimensional](lean:Representation.IsIrreducible.finrank_eq_one_of_isMulCommutative).
+  every finite-dimensional irreducible representation of a commutative group is
+  one-dimensional.
 - **[Maschke's theorem](trough:MonoidAlgebra.Submodule.exists_isCompl).** If $G$ is finite
   and $|G| \neq 0$ in $k$, every subrepresentation has a complementary subrepresentation,
   so every finite-dimensional representation is a direct sum of irreducible ones.
@@ -92,14 +87,14 @@ integers on $\mathbb{C}^2$ with the same defect.
 ## Modules over the group algebra
 
 A representation $\rho$ extends linearly to
-[an algebra homomorphism from the group algebra $k[G]$ to the linear maps of $V$](lean:Representation.asAlgebraHom),
+an algebra homomorphism from the group algebra $k[G]$ to the linear maps of $V$,
 which makes $V$ a module over $k[G]$. Conversely,
-[a $k[G]$-module $M$ is a representation of $G$, with $g$ acting as multiplication by the basis element $g$](lean:Representation.ofModule).
-Under this dictionary [subrepresentations are submodules](lean:Subrepresentation.subrepresentationSubmoduleOrderIso), and
-[a representation is irreducible exactly when its module is simple](lean:Representation.irreducible_iff_isSimpleModule_asModule),
+a $k[G]$-module $M$ is a representation of $G$, with $g$ acting as multiplication by the basis element $g$.
+Under this dictionary subrepresentations are submodules, and
+a representation is irreducible exactly when its module is simple,
 so representation theory becomes part of [module](trough:Module) theory. In the module
 form, Maschke's theorem says that
-[every submodule of a $k[G]$-module has a complementary submodule](lean:MonoidAlgebra.Submodule.exists_isCompl),
+every submodule of a $k[G]$-module has a complementary submodule,
 for $G$ finite and $|G| \neq 0$ in $k$.
 
 ## Related concepts

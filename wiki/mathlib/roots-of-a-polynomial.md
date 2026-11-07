@@ -1,8 +1,3 @@
----
-article_id: af_a113280fbdbd62c64363467b
-concept: Polynomial.roots
----
-
 The **roots of a polynomial** $p$ are the values $a$ at which the
 [polynomial](trough:Polynomial) [vanishes](trough:Polynomial.eval), that is, $p(a) = 0$. Over an integral
 domain, the roots of a nonzero polynomial, each counted as often as its
@@ -17,19 +12,19 @@ degree is determined by few of its values.
 
 Let $R$ be an integral domain: a commutative ring with $1 \neq 0$ in which a
 product of nonzero elements is nonzero. An element $a \in R$ is a
-[root of $p \in R[X]$ when $p(a) = 0$](lean:Polynomial.IsRoot). By the
+root of $p \in R[X]$ when $p(a) = 0$. By the
 [factor theorem](trough:Polynomial.dvd_iff_isRoot),
-[$a$ is a root of $p$ if and only if $X - a$ divides $p$](lean:Polynomial.dvd_iff_isRoot).
+$a$ is a root of $p$ if and only if $X - a$ divides $p$.
 For $p \neq 0$, the multiplicity of $a$ is the largest $m$ such that $(X - a)^m$
 divides $p$; it is positive exactly when $a$ is a root.
 
 The **roots** of $p$ are collected into
-[a multiset, the multiset of roots of $p$](lean:Polynomial.roots), in which
-[each element $a$ occurs as many times as its multiplicity as a root of $p$](lean:Polynomial.count_roots).
+a multiset, the multiset of roots of $p$, in which
+each element $a$ occurs as many times as its multiplicity as a root of $p$.
 For nonzero $p$,
-[an element lies in this multiset exactly when it is a root of $p$](lean:Polynomial.mem_roots).
+an element lies in this multiset exactly when it is a root of $p$.
 Counting multiplicity, a nonzero polynomial has
-[at most as many roots as its degree](lean:Polynomial.card_roots).
+at most as many roots as its degree.
 
 The bound comes from the factor theorem and the absence of zero divisors. If $a$
 is a root of a nonzero $p$, then $p = (X - a)\,q$ with $\deg q = \deg p - 1$. Any
@@ -39,14 +34,14 @@ induction on the degree that finishes the argument.
 
 ## Examples
 
-- [The polynomial $X - a$ has the single root $a$](lean:Polynomial.roots_X_sub_C),
-  and for $n \ge 1$ [$X^n$ has the root $0$ with multiplicity $n$](lean:Polynomial.roots_X_pow).
+- The polynomial $X - a$ has the single root $a$,
+  and for $n \ge 1$ $X^n$ has the root $0$ with multiplicity $n$.
 - The polynomial $X^2 + 1$ has no root in the real numbers. Over the
   [complex numbers](trough:Complex.instField) it factors as $(X - i)(X + i)$, with
   roots $i$ and $-i$. Over the integers modulo $2$ it equals $(X + 1)^2$, so $1$ is
   its only root, with multiplicity $2$.
 - In a [finite field](trough:Mathlib.FieldTheory.Finite.Basic) $F$ with $q$
-  elements, [the roots of $X^q - X$ are all the elements of $F$, each with multiplicity one](lean:FiniteField.roots_X_pow_card_sub_X).
+  elements, the roots of $X^q - X$ are all the elements of $F$, each with multiplicity one.
 - Without the integral domain hypothesis the bound fails. In the ring of integers
   modulo $8$ the polynomial $X^2 - 1$ has the four roots $1, 3, 5, 7$, and it
   factors in two different ways as $(X - 1)(X + 1)$ and $(X - 3)(X + 3)$.
@@ -55,29 +50,29 @@ induction on the degree that finishes the argument.
 
 - **Products.** If $pq \neq 0$ (in an integral domain, this says that neither
   factor is zero), then
-  [the roots of $pq$ are the roots of $p$ together with the roots of $q$](lean:Polynomial.roots_mul),
+  the roots of $pq$ are the roots of $p$ together with the roots of $q$,
   multiplicities adding.
 - **Constant factors.** For $c \neq 0$,
-  [the polynomials $cp$ and $p$ have the same roots](lean:Polynomial.roots_C_mul).
+  the polynomials $cp$ and $p$ have the same roots.
 - **Every multiset occurs.** For a finite multiset $s$ of elements of $R$,
-  [the roots of $\prod_{a \in s} (X - a)$ are exactly $s$](lean:Polynomial.roots_multiset_prod_X_sub_C).
+  the roots of $\prod_{a \in s} (X - a)$ are exactly $s$.
 - **Linear factors.** For every $p$,
-  [the product of $X - a$ over the roots $a$ of $p$, with multiplicity, divides $p$](lean:Polynomial.prod_multiset_X_sub_C_dvd).
+  the product of $X - a$ over the roots $a$ of $p$, with multiplicity, divides $p$.
   If the number of roots of $p$ equals its degree, then
-  [$p$ is its leading coefficient times this product](lean:Polynomial.C_leadingCoeff_mul_prod_multiset_X_sub_C).
+  $p$ is its leading coefficient times this product.
   Accordingly, a nonzero polynomial splits over $R$, meaning it is a constant
   times a product of factors $X - a$ with $a \in R$,
-  [if and only if its number of roots equals its degree](lean:Polynomial.splits_iff_card_roots).
+  if and only if its number of roots equals its degree.
 - **Algebraically closed fields.** Over an
   [algebraically closed field](trough:IsAlgClosed), such as $\mathbb{C}$ by the
   [fundamental theorem of algebra](trough:Complex.isAlgClosed),
-  [every nonzero polynomial has exactly as many roots as its degree](lean:IsAlgClosed.card_roots_eq_natDegree),
+  every nonzero polynomial has exactly as many roots as its degree,
   counted with multiplicity.
 - **Polynomials and their values.** A polynomial over $R$ that
-  [vanishes at more distinct points than its degree is the zero polynomial](lean:Polynomial.eq_zero_of_natDegree_lt_card_of_eval_eq_zero').
+  vanishes at more distinct points than its degree is the zero polynomial.
   When $R$ is infinite,
-  [a polynomial vanishing at every element of $R$ is zero](lean:Polynomial.zero_of_eval_zero),
-  so [two polynomials with the same values everywhere are equal](lean:Polynomial.funext).
+  a polynomial vanishing at every element of $R$ is zero,
+  so two polynomials with the same values everywhere are equal.
   Over a finite field this fails: $X^q - X$ is nonzero but vanishes everywhere.
 
 ## Related concepts
@@ -100,17 +95,17 @@ places the roots of the derivative in the convex hull of the roots.
 Mathlib defines the roots for polynomials over any commutative ring that is an
 integral domain, as a multiset, so that multiplicities are part of the data. The
 zero polynomial, at which every element vanishes, is
-[assigned the empty multiset](lean:Polynomial.roots_zero) by convention; for this
+assigned the empty multiset by convention; for this
 reason membership in the multiset is equivalent to being a root only for nonzero
 polynomials. Because Mathlib also gives the zero polynomial degree $0$ in its
 natural-number version of the degree,
-[the number of roots is at most that degree for every polynomial](lean:Polynomial.card_roots'),
+the number of roots is at most that degree for every polynomial,
 with no nonzero hypothesis, and the statement about algebraically closed fields
 likewise holds for every polynomial. The roots of a polynomial in an algebra
 $S$ over its coefficient ring, where $S$ is an integral domain (for instance a
 larger field), are obtained by mapping its coefficients into $S$ and taking
-[the roots of the image](lean:Polynomial.aroots); the
-[set of distinct roots in $S$](lean:Polynomial.rootSet) forgets multiplicities.
+the roots of the image; the
+set of distinct roots in $S$ forgets multiplicities.
 Mathlib's notion of splitting is defined over the coefficient ring itself, as a
 product of constants and monic linear factors.
 

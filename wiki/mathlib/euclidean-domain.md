@@ -1,8 +1,3 @@
----
-article_id: af_79357b10507c88c794242a5f
-concept: EuclideanDomain
----
-
 A **Euclidean domain** is an integral domain in which one can divide with
 remainder, the remainder being smaller than the divisor for some measure of
 size. The [integers](trough:Int), every [field](trough:Field) and the
@@ -26,15 +21,15 @@ require $f(a) \le f(ab)$ for all nonzero $a$ and $b$. This changes nothing about
 which rings are Euclidean, since a Euclidean function $f$ can always be replaced by
 $a \mapsto \min_{c \neq 0} f(ac)$, which has the extra property.
 
-Mathlib's [definition of a Euclidean domain](lean:EuclideanDomain) is more general
+Mathlib's definition of a Euclidean domain is more general
 in one respect. Instead of a function to the natural numbers it asks for a
 well-founded relation $\prec$ on $R$, one with no infinite descending chain
 $\cdots \prec x_2 \prec x_1$. A function $f$ gives such a relation by declaring
 $x \prec y$ when $f(x) < f(y)$, with $0$ placed below every nonzero element. The
 structure also carries chosen quotient and remainder operations, written $a / b$
 and $a \bmod b$, which satisfy
-[$b\,(a/b) + (a \bmod b) = a$ for all $a$ and $b$](lean:EuclideanDomain.div_add_mod)
-and [$(a \bmod b) \prec b$ whenever $b \neq 0$](lean:EuclideanDomain.mod_lt), together
+$b\,(a/b) + (a \bmod b) = a$ for all $a$ and $b$
+and $(a \bmod b) \prec b$ whenever $b \neq 0$, together
 with $a/0 = 0$ and the analogue of $f(a) \le f(ab)$: for $b \neq 0$, never
 $ab \prec a$. Rings that are Euclidean in this wider sense are sometimes called
 transfinite Euclidean domains, and there are such rings that admit no Euclidean
@@ -42,49 +37,49 @@ function with values in the natural numbers.
 
 ## Examples
 
-- **The integers.** [The integers form a Euclidean domain](lean:Int.euclideanDomain)
+- **The integers.** The integers form a Euclidean domain
   with size the absolute value: dividing $a$ by $b \neq 0$ leaves a remainder $r$
   with $0 \le r < |b|$. For instance $-7 = 2 \cdot (-4) + 1$.
-- **Fields.** [Every field is a Euclidean domain](lean:Field.toEuclideanDomain):
+- **Fields.** Every field is a Euclidean domain:
   division by a nonzero element is exact, so the remainder on division by any
   nonzero element is $0$.
 - **Polynomials over a field.** For a field $K$,
-  [the polynomial ring $K[X]$ is a Euclidean domain](lean:Polynomial.instEuclideanDomain),
+  the polynomial ring $K[X]$ is a Euclidean domain,
   with size the degree; this is polynomial long division.
 - **Gaussian integers.** The ring $\mathbb{Z}[i]$ is Euclidean for the norm
   $N(a + bi) = a^2 + b^2$: given $\alpha$ and $\beta \neq 0$, round each coordinate of
   $\alpha / \beta \in \mathbb{Q}(i)$ to a nearest integer to get a quotient, and
-  the remainder [has norm less than $N(\beta)$](lean:GaussianInt.norm_mod_lt),
+  the remainder has norm less than $N(\beta)$,
   in fact at most $N(\beta)/2$.
 - **Discrete valuation rings.**
-  [Every discrete valuation ring can be made a Euclidean domain](lean:IsDiscreteValuationRing.toEuclideanDomain),
+  Every discrete valuation ring can be made a Euclidean domain,
   with size measured by the valuation.
-- **Isomorphic copies.** [A commutative ring isomorphic to a Euclidean domain is again one](lean:RingEquiv.euclideanDomain).
+- **Isomorphic copies.** A commutative ring isomorphic to a Euclidean domain is again one.
 
 ## Properties
 
-- **Principal ideals.** [Every ideal of a Euclidean domain is principal](lean:EuclideanDomain.instIsPrincipalIdealRing),
+- **Principal ideals.** Every ideal of a Euclidean domain is principal,
   so a Euclidean domain is a [principal ideal domain](trough:Submodule.IsPrincipal).
   The zero ideal is $(0)$. If $I$ is a nonzero [ideal](trough:Ideal), well-foundedness gives a nonzero
   $m \in I$ that is minimal for $\prec$ among the nonzero elements of $I$. For
   $x \in I$ the remainder $x \bmod m = x - m(x/m)$ lies in $I$ and is smaller than
   $m$, so it is $0$; hence $m$ divides $x$ and $I = (m)$.
 - **Unique factorization.** Since
-  [every principal ideal domain is a unique factorization domain](lean:PrincipalIdealRing.to_uniqueFactorizationMonoid),
+  every principal ideal domain is a unique factorization domain,
   every Euclidean domain is a [unique factorization domain](trough:UniqueFactorizationMonoid).
-- **Divisibility by remainders.** [The remainder of $a$ on division by $b$ is $0$ exactly when $b$ divides $a$](lean:EuclideanDomain.mod_eq_zero).
+- **Divisibility by remainders.** The remainder of $a$ on division by $b$ is $0$ exactly when $b$ divides $a$.
 - **The Euclidean algorithm.** A [greatest common divisor](trough:GCDMonoid.gcd) is
   computed by setting $\gcd(0, b) = b$ and, for $a \neq 0$,
-  [$\gcd(a, b) = \gcd(b \bmod a,\ a)$](lean:EuclideanDomain.gcd_val); the recursion
+  $\gcd(a, b) = \gcd(b \bmod a,\ a)$; the recursion
   ends because the first argument decreases for $\prec$ (see
   [the article on the algorithm](trough:EuclideanDomain.gcd)). The result
-  [divides both $a$ and $b$](lean:EuclideanDomain.gcd_dvd), and
-  [every common divisor of $a$ and $b$ divides it](lean:EuclideanDomain.dvd_gcd).
+  divides both $a$ and $b$, and
+  every common divisor of $a$ and $b$ divides it.
 - **[Bézout's identity](trough:exists_gcd_eq_mul_add_mul).** Keeping track of the quotients along the way, the extended
   Euclidean algorithm produces $s$ and $t$ with
-  [$\gcd(a, b) = as + bt$](lean:EuclideanDomain.gcd_eq_gcd_ab).
+  $\gcd(a, b) = as + bt$.
 - **Irreducible elements.** If $x$ is [irreducible](trough:Irreducible), then for
-  every $y$ [either $x$ divides $y$ or $x$ and $y$ are coprime](lean:EuclideanDomain.dvd_or_coprime),
+  every $y$ either $x$ divides $y$ or $x$ and $y$ are coprime,
   in the sense that $ux + vy = 1$ for some $u$ and $v$ (see
   [coprime element](trough:IsCoprime)).
 

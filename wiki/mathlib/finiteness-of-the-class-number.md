@@ -1,8 +1,3 @@
----
-article_id: af_a069927a04ef2f6fdbc5c5d3
-concept: NumberField.RingOfIntegers.instFintypeClassGroup
----
-
 **Finiteness of the class number** is the theorem that the ideal class group of
 the ring of integers of a number field is finite. Its order, the class number,
 measures how far that ring is from being a [principal ideal
@@ -22,21 +17,21 @@ ideals](trough:Ideal.IsPrime). Its nonzero [fractional
 ideals](trough:FractionalIdeal) form an abelian group under multiplication, the
 principal fractional ideals form a subgroup, and the [quotient
 group](trough:QuotientGroup.Quotient.group) is
-[the ideal class group](lean:ClassGroup) $\mathrm{Cl}(K)$. Two nonzero ideals
+the ideal class group $\mathrm{Cl}(K)$. Two nonzero ideals
 $I$ and $J$ of $\mathcal{O}_K$ lie in the same class exactly when
-[there are nonzero $x, y \in \mathcal{O}_K$ with $(x)I = (y)J$](lean:ClassGroup.mk0_eq_mk0_iff),
-and [the class of a nonzero ideal is trivial exactly when the ideal is principal](lean:ClassGroup.mk0_eq_one_iff).
+there are nonzero $x, y \in \mathcal{O}_K$ with $(x)I = (y)J$,
+and the class of a nonzero ideal is trivial exactly when the ideal is principal.
 
 The theorem states that
-[the class group $\mathrm{Cl}(K)$ is finite](lean:NumberField.RingOfIntegers.instFintypeClassGroup).
-Its order is [the class number $h_K$](lean:NumberField.classNumber), which is
-therefore [a positive integer](lean:NumberField.classNumber_pos).
+the class group $\mathrm{Cl}(K)$ is finite.
+Its order is the class number $h_K$, which is
+therefore a positive integer.
 
 A quantitative form gives a bound. Write $n = [K : \mathbb{Q}]$, let $r_2$ be the
 number of pairs of complex conjugate embeddings of $K$ into $\mathbb{C}$, let
 $d_K$ be the discriminant of $K$, and let the norm $N(I)$ of a nonzero ideal be
 the number of elements of $\mathcal{O}_K / I$. Then
-[every ideal class contains a nonzero ideal $I$ with $N(I) \le M_K$](lean:NumberField.exists_ideal_in_class_of_norm_le),
+every ideal class contains a nonzero ideal $I$ with $N(I) \le M_K$,
 where $M_K$ is the Minkowski bound
 
 $$M_K = \left(\frac{4}{\pi}\right)^{r_2} \frac{n!}{n^n} \sqrt{|d_K|}.$$
@@ -44,7 +39,7 @@ $$M_K = \left(\frac{4}{\pi}\right)^{r_2} \frac{n!}{n^n} \sqrt{|d_K|}.$$
 ## Examples
 
 - **The rationals.** Here $\mathcal{O}_K = \mathbb{Z}$ is a principal ideal
-  domain, and [the class number of $\mathbb{Q}$ is $1$](lean:Rat.classNumber_eq).
+  domain, and the class number of $\mathbb{Q}$ is $1$.
 - **The Gaussian integers.** For $K = \mathbb{Q}(i)$ one has
   $\mathcal{O}_K = \mathbb{Z}[i]$, $n = 2$, $r_2 = 1$ and $d_K = -4$, so
   $M_K = 4/\pi < 2$. Every class then contains an ideal of norm $1$, which is
@@ -57,24 +52,24 @@ $$M_K = \left(\frac{4}{\pi}\right)^{r_2} \frac{n!}{n^n} \sqrt{|d_K|}.$$
   $\mathrm{Cl}(K)$ has order $2$. The two factorizations
   $6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})$ into irreducibles reflect this.
 - **Cyclotomic fields.** The Minkowski bound shows that
-  [the ring of integers of the field generated over $\mathbb{Q}$ by a primitive cube root of unity is a principal ideal domain](lean:IsCyclotomicExtension.Rat.three_pid),
+  the ring of integers of the field generated over $\mathbb{Q}$ by a primitive cube root of unity is a principal ideal domain,
   and that
-  [the same holds for a primitive fifth root of unity](lean:IsCyclotomicExtension.Rat.five_pid).
+  the same holds for a primitive fifth root of unity.
 
 ## Consequences
 
 - **Principal ideal domains.**
-  [The class number $h_K$ equals $1$ exactly when $\mathcal{O}_K$ is a principal ideal domain](lean:NumberField.classNumber_eq_one_iff).
+  The class number $h_K$ equals $1$ exactly when $\mathcal{O}_K$ is a principal ideal domain.
   A Dedekind domain is a [unique factorization domain](trough:UniqueFactorizationMonoid)
   exactly when it is a principal ideal domain, so $h_K = 1$ also characterizes
   unique factorization of elements in $\mathcal{O}_K$.
 - **A discriminant criterion.**
-  [If $|d_K| < \left(2 (\pi/4)^{r_2} n^n / n!\right)^2$, then $\mathcal{O}_K$ is a principal ideal domain](lean:RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt).
+  If $|d_K| < \left(2 (\pi/4)^{r_2} n^n / n!\right)^2$, then $\mathcal{O}_K$ is a principal ideal domain.
   The condition says $M_K < 2$, so every class contains an ideal of norm $1$.
 - **Powers of ideals.** By [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card)
   in $\mathrm{Cl}(K)$, the power $I^{h_K}$ of every nonzero ideal $I$ is principal.
   In the other direction, if $m$ is a positive integer coprime to $h_K$ and
-  [$I^m$ is principal, then $I$ is principal](lean:Ideal.IsPrincipal.of_isPrincipal_pow_of_coprime).
+  $I^m$ is principal, then $I$ is principal.
 
 ## Proof
 
@@ -83,7 +78,7 @@ $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$, where $r_1$ counts the real embeddin
 a nonzero ideal becomes a lattice whose covolume is proportional to its norm.
 [Minkowski's theorem](trough:MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure)
 applied to a suitable convex body shows that
-[every nonzero ideal $I$ contains a nonzero $a$ with $|N_{K/\mathbb{Q}}(a)| \le M_K\,N(I)$](lean:NumberField.exists_ne_zero_mem_ideal_of_norm_le_mul_sqrt_discr).
+every nonzero ideal $I$ contains a nonzero $a$ with $|N_{K/\mathbb{Q}}(a)| \le M_K\,N(I)$.
 
 Given a class $C$, pick a nonzero ideal $I$ in the inverse class $C^{-1}$ and such
 an element $a \in I$. In a Dedekind domain an ideal containing $(a)$ divides it,
@@ -93,7 +88,7 @@ and $N((a)) = |N_{K/\mathbb{Q}}(a)|$, so $N(J) \le M_K$.
 It remains to see that only finitely many ideals have norm at most $M_K$. An
 ideal of norm $m$ contains $m$, so it divides $(m)$, which has only finitely many
 ideal divisors. In general,
-[a Dedekind domain whose quotients by nonzero ideals are all finite has only finitely many ideals of norm at most a given integer](lean:Ring.HasFiniteQuotients.finite_absNorm_le),
+a Dedekind domain whose quotients by nonzero ideals are all finite has only finitely many ideals of norm at most a given integer,
 and $\mathcal{O}_K$ is such a ring. Every class contains one of these finitely many
 ideals, so there are finitely many classes.
 
@@ -105,7 +100,7 @@ ideals, so there are finitely many classes.
 - **Function fields.** The same finiteness holds for the integral closure of
   $\mathbb{F}_q[t]$ in a finite separable extension $F$ of the
   [rational function field](trough:RatFunc) $\mathbb{F}_q(t)$, and Mathlib defines
-  [the class number of such a function field](lean:FunctionField.classNumber)
+  the class number of such a function field
   as the order of that class group. This number depends on the choice of $t$,
   and in general differs from the class number of $F$ defined through divisor
   classes of degree zero.

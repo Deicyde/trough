@@ -1,8 +1,3 @@
----
-article_id: af_6107975d7e43b72d778c3cc8
-concept: Pell.matiyasevic
----
-
 **Matiyasevič's theorem**, also called the MRDP theorem (after Matiyasevič, Robinson, Davis and
 Putnam), says that every recursively enumerable set of [natural numbers](trough:Nat) (one whose
 members some algorithm can list) is Diophantine: it is the set of parameter values for which some polynomial equation with integer
@@ -18,9 +13,9 @@ solutions.
 ## Statement
 
 A set $S$ of $n$-tuples of natural numbers is
-[Diophantine](lean:Dioph) if there is a polynomial $P(x_1, \dots, x_n, y_1, \dots, y_m)$ with
+Diophantine if there is a polynomial $P(x_1, \dots, x_n, y_1, \dots, y_m)$ with
 integer coefficients such that a tuple $x$ lies in $S$ exactly when $P(x, y) = 0$ for some natural
-numbers $y_1, \dots, y_m$. A function is [Diophantine](lean:Dioph.DiophFn) when its graph is a
+numbers $y_1, \dots, y_m$. A function is Diophantine when its graph is a
 Diophantine set. The full theorem says that the Diophantine sets are exactly the recursively
 enumerable sets, those whose members some algorithm lists. One direction is easy: an algorithm can
 search through all candidate witnesses $y$.
@@ -31,14 +26,14 @@ $x_0 = 1$, $y_0 = 0$ and
 $$x_{n+1} = a x_n + (a^2 - 1) y_n, \qquad y_{n+1} = x_n + a y_n,$$
 
 so that $x_n + y_n \sqrt{a^2 - 1} = (a + \sqrt{a^2 - 1})^n$; this is
-[the recursive definition](lean:Pell.pell). [Each pair $(x_n, y_n)$ satisfies
-$x_n^2 - (a^2 - 1) y_n^2 = 1$](lean:Pell.pell_eq), and
-[every solution of $x^2 - (a^2 - 1)y^2 = 1$ in natural numbers is one of these pairs](lean:Pell.eq_pell).
+the recursive definition. Each pair $(x_n, y_n)$ satisfies
+$x_n^2 - (a^2 - 1) y_n^2 = 1$, and
+every solution of $x^2 - (a^2 - 1)y^2 = 1$ in natural numbers is one of these pairs.
 
 The theorem states that, for natural numbers $a, k, x, y$,
-[$a > 1$ with $x = x_k$ and $y = y_k$ holds if and only if $a > 1$, $k \le y$, and either $x = 1$
+$a > 1$ with $x = x_k$ and $y = y_k$ holds if and only if $a > 1$, $k \le y$, and either $x = 1$
 and $y = 0$, or there are natural numbers $u, v, s, t, b$
-with](lean:Pell.matiyasevic)
+with
 
 $$x^2 - (a^2 - 1) y^2 = 1, \qquad u^2 - (a^2 - 1) v^2 = 1, \qquad s^2 - (b^2 - 1) t^2 = 1,$$
 
@@ -49,10 +44,10 @@ $$b \equiv 1 \pmod{4y}, \qquad b \equiv a \pmod{u}, \qquad s \equiv x \pmod{u}, 
 Each condition is a polynomial equation, an inequality, a divisibility or a
 [congruence](trough:Int.ModEq), and each of these can be written as a polynomial equation after
 adding a variable. Since Diophantine sets are closed under
-[intersection](lean:Dioph.inter), [union](lean:Dioph.union) and
-[existential quantification over some of the variables](lean:Dioph.ex_dioph), it follows that
-[the set of quadruples $(a, k, x, y)$ with $a > 1$, $x = x_k$ and $y = y_k$ is
-Diophantine](lean:Dioph.pell_dioph).
+intersection, union and
+existential quantification over some of the variables, it follows that
+the set of quadruples $(a, k, x, y)$ with $a > 1$, $x = x_k$ and $y = y_k$ is
+Diophantine.
 
 ## Examples
 
@@ -66,18 +61,18 @@ $0, 1, 6, 35, 204$: here $y_2 = 6$ divides $y_4 = 204$, while $y_3 = 35$ does no
 The proof rests on properties of the sequences, each proved by induction or from the addition
 formulas:
 
-- [$y_m$ divides $y_n$ if and only if $m$ divides $n$](lean:Pell.y_dvd_iff), and
-  [$y_n^2$ divides $y_{n y_n}$](lean:Pell.ysq_dvd_yy); conversely,
-  [if $y_n^2$ divides $y_t$, then $y_n$ divides $t$](lean:Pell.dvd_of_ysq_dvd).
-- [$n \le y_n$](lean:Pell.yn_ge_n), and [$y_n \equiv n \pmod{a - 1}$](lean:Pell.yn_modEq_a_sub_one).
-- [If $a \equiv b \pmod c$ with $a, b > 1$, the sequences built from $a$ and from $b$ agree
-  term by term modulo $c$](lean:Pell.xy_modEq_of_modEq).
-- [If $0 < i \le n$ and $x_j \equiv x_i \pmod{x_n}$, then $j \equiv i \pmod{4n}$ or
-  $j + i \equiv 0 \pmod{4n}$](lean:Pell.modEq_of_xn_modEq).
+- $y_m$ divides $y_n$ if and only if $m$ divides $n$, and
+  $y_n^2$ divides $y_{n y_n}$; conversely,
+  if $y_n^2$ divides $y_t$, then $y_n$ divides $t$.
+- $n \le y_n$, and $y_n \equiv n \pmod{a - 1}$.
+- If $a \equiv b \pmod c$ with $a, b > 1$, the sequences built from $a$ and from $b$ agree
+  term by term modulo $c$.
+- If $0 < i \le n$ and $x_j \equiv x_i \pmod{x_n}$, then $j \equiv i \pmod{4n}$ or
+  $j + i \equiv 0 \pmod{4n}$.
 
 Suppose $x = x_k$ and $y = y_k$ with $k > 0$ (the case $k = 0$ is the alternative $x = 1$,
 $y = 0$). Put $m = 2ky$, $u = x_m$ and $v = y_m$. Then $y^2$ divides $y_{ky}$, which divides $v$.
-Here $k \le y_k = y$, and $v > 0$ because $m > 0$. Because $m$ is even, $v$ is even, and [$x_m$ is coprime to $y_m$](lean:Pell.xy_coprime), so $u$
+Here $k \le y_k = y$, and $v > 0$ because $m > 0$. Because $m$ is even, $v$ is even, and $x_m$ is coprime to $y_m$, so $u$
 is coprime to $4y$. The [Chinese remainder theorem](trough:Ideal.quotientInfRingEquivPiQuotient)
 gives $b$ with $b \equiv a \pmod u$ and $b \equiv 1 \pmod{4y}$, and $b > 1$ because $a < u$. Take
 $s$ and $t$ to be the $k$-th terms of the sequences built from $b$; all three Pell equations hold
@@ -96,20 +91,20 @@ minus sign, and $k \equiv i \pmod{4y}$ then forces $k = i$.
 ## Consequences
 
 - **Exponentiation is Diophantine.** The sequences grow exponentially:
-  [$x_k \ge a^k$](lean:Pell.xn_ge_a_pow). Moreover,
-  [for every natural number $n$, $x_k \equiv (a - n) y_k + n^k \pmod{2an - n^2 - 1}$ as a
-  congruence of integers](lean:Pell.x_sub_y_dvd_pow). For $a = 10$, $n = 2$ and $k = 3$ the
+  $x_k \ge a^k$. Moreover,
+  for every natural number $n$, $x_k \equiv (a - n) y_k + n^k \pmod{2an - n^2 - 1}$ as a
+  congruence of integers. For $a = 10$, $n = 2$ and $k = 3$ the
   modulus is $35$, and $x_3 - 8 y_3 = 3970 - 3192 = 778$ leaves remainder $8 = 2^3$. Once $a$ is
   large enough that the modulus exceeds $n^k$, the power is this remainder, which leads to
-  [a description of $m = n^k$ in terms of the Pell sequences for an auxiliary $a$, a Pell
-  equation, a congruence, a linear equation and inequalities](lean:Pell.eq_pow_of_pell).
-  In Diophantine terms, [if $f$ and $g$ are Diophantine functions, then so is
-  $v \mapsto f(v)^{g(v)}$](lean:Dioph.pow_dioph).
+  a description of $m = n^k$ in terms of the Pell sequences for an auxiliary $a$, a Pell
+  equation, a congruence, a linear equation and inequalities.
+  In Diophantine terms, if $f$ and $g$ are Diophantine functions, then so is
+  $v \mapsto f(v)^{g(v)}$.
 - **Hilbert's tenth problem.** Combined with the separate fact that every recursively enumerable
   set is defined by equations that may also use exponentiation, this yields the full theorem. The
   set of programs that halt on a given input
-  [is recursively enumerable](lean:ComputablePred.halting_problem_re) but
-  [not computable](lean:ComputablePred.halting_problem) (the
+  is recursively enumerable but
+  not computable (the
   [halting problem](trough:ComputablePred.halting_problem)), so some Diophantine set is undecidable.
   Solvability in integers is no easier, since
   [every natural number is a sum of four squares](trough:Nat.sum_four_squares).
@@ -130,7 +125,7 @@ an arbitrary type as well, defined with Mathlib's own
 type of integer polynomial functions rather than its general
 [multivariate polynomials](trough:MvPolynomial). Diophantine functions and partial functions are
 those with Diophantine graphs, and
-[the partial map sending $(a, k)$ with $a > 1$ to $x_k$ is Diophantine](lean:Dioph.xn_dioph).
+the partial map sending $(a, k)$ with $a > 1$ to $x_k$ is Diophantine.
 Mathlib stops at exponentiation: it contains neither the theorem that every recursively enumerable
 set is Diophantine nor the negative solution of Hilbert's tenth problem.
 

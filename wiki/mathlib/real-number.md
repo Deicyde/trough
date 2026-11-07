@@ -1,8 +1,3 @@
----
-article_id: af_976b44bde6657b6d86344fdd
-concept: Real
----
-
 The **real numbers** are the numbers used to measure continuous quantities such as
 length, time and mass; together they make up the real line $\mathbb{R}$. They extend
 the [rational numbers](trough:Rat) by filling the gaps between them, so that
@@ -21,17 +16,17 @@ to one another: for every rational $\varepsilon > 0$ there is an index $N$ with
 $|q_m - q_n| < \varepsilon$ for all $m, n \ge N$. Two Cauchy sequences $(p_n)$ and
 $(q_n)$ are called equivalent if $p_n - q_n$ tends to $0$. A real number is an
 equivalence class of Cauchy sequences of rationals; this is
-[how Mathlib defines the real numbers](lean:Real), and
-[two Cauchy sequences give the same real number exactly when they are equivalent](lean:Real.mk_eq).
+how Mathlib defines the real numbers, and
+two Cauchy sequences give the same real number exactly when they are equivalent.
 A rational number $q$ is identified with the class of the constant sequence
 $q, q, q, \dots$
 
 Sums and products of classes are computed term by term. A class is positive when
-[its sequences are eventually at least some fixed positive rational](lean:Real.mk_pos),
+its sequences are eventually at least some fixed positive rational,
 and $x < y$ means that $y - x$ is positive. A Cauchy sequence that does not tend to $0$
 is eventually bounded away from $0$, so its terms can be inverted from some point on; this
 gives inverses of nonzero classes, and with these operations
-[$\mathbb{R}$ is a field](lean:Real.instField) (see
+$\mathbb{R}$ is a field (see
 [the field of real numbers](trough:Real.instField)).
 
 Other constructions use Dedekind cuts (splittings of $\mathbb{Q}$ into a nonempty lower
@@ -43,40 +38,40 @@ approaches give the same structure.
 
 - Every [natural number](trough:Nat), [integer](trough:Int) and rational number is a
   real number.
-- [A real number is a square exactly when it is nonnegative](lean:Real.isSquare_iff). In
-  particular $2$ has a square root, and $\sqrt 2$ [is irrational](lean:irrational_sqrt_two),
+- A real number is a square exactly when it is nonnegative. In
+  particular $2$ has a square root, and $\sqrt 2$ is irrational,
   that is, not equal to any rational number (see
   [the irrationality of the square root of 2](trough:irrational_sqrt_two)).
-- The circle constant $\pi$ [is also irrational](lean:irrational_pi).
+- The circle constant $\pi$ is also irrational.
 - The rationals form a countable set, while the set of real numbers
-  [has the cardinality of the continuum, $2^{\aleph_0}$](lean:Cardinal.mk_real), and so
-  [is not countable](lean:Cardinal.not_countable_real) (see
+  has the cardinality of the continuum, $2^{\aleph_0}$, and so
+  is not countable (see
   [the non-denumerability of the continuum](trough:Cardinal.not_countable_real)). In
   particular the irrational numbers far outnumber the rational ones.
 
 ## Properties
 
-- **Ordered field.** [The order on $\mathbb{R}$ is total](lean:Real.linearOrder) (see
+- **Ordered field.** The order on $\mathbb{R}$ is total (see
   [order](trough:Real.linearOrder)), and
-  [it is compatible with the field operations](lean:Real.instIsStrictOrderedRing):
+  it is compatible with the field operations:
   adding the same number to both sides of an inequality preserves it, $0 < 1$, and
   multiplying both sides of a strict inequality by a positive number preserves it.
 - **Least upper bounds.**
-  [Every nonempty set of real numbers that is bounded above has a least upper bound](lean:Real.exists_isLUB),
+  Every nonempty set of real numbers that is bounded above has a least upper bound,
   its supremum. This fails in $\mathbb{Q}$: the rationals $q$ with $q^2 < 2$ have no
   rational least upper bound.
 - **Cauchy completeness.**
-  [Every Cauchy sequence of real numbers converges to a real number](lean:Real.cauSeq_converges).
-  With the distance [$d(x, y) = |x - y|$](lean:Real.dist_eq), $\mathbb{R}$ is therefore a
+  Every Cauchy sequence of real numbers converges to a real number.
+  With the distance $d(x, y) = |x - y|$, $\mathbb{R}$ is therefore a
   [complete](trough:Real.instCompleteSpace) [metric space](trough:MetricSpace) (see
 [the metric structure on $\mathbb{R}$](trough:Real.metricSpace)).
 - **Archimedean property.** For every real $x$ and every real $y > 0$,
-  [some natural multiple $ny$ is at least $x$](lean:Real.instArchimedean). In particular
+  some natural multiple $ny$ is at least $x$. In particular
   no real number exceeds every natural number.
 - **Density of the rationals.** If $x < y$ are real numbers,
-  [there is a rational $q$ with $x < q < y$](lean:exists_rat_btwn); Mathlib proves this
+  there is a rational $q$ with $x < q < y$; Mathlib proves this
   for every Archimedean ordered field.
-- **Rigidity.** [Every ring homomorphism from $\mathbb{R}$ to itself is the identity](lean:Real.ringHom_apply).
+- **Rigidity.** Every ring homomorphism from $\mathbb{R}$ to itself is the identity.
   Such a map sends squares to squares, hence preserves the order, and it fixes every
   rational number, so density of the rationals forces it to fix everything.
 
@@ -89,10 +84,10 @@ Completeness is the source of the basic theorems of real analysis, among them th
 An ordered field is complete if every nonempty subset that is bounded above has a least
 upper bound. The real numbers are, up to isomorphism, the only complete ordered field:
 for any two complete ordered fields
-[there is an isomorphism between them that preserves addition, multiplication and order](lean:ConditionallyCompleteLinearOrderedField.inducedOrderRingIso),
-and [such an isomorphism is unique](lean:ConditionallyCompleteLinearOrderedField.uniqueOrderRingIso).
+there is an isomorphism between them that preserves addition, multiplication and order,
+and such an isomorphism is unique.
 Along the way one shows that
-[every complete ordered field is Archimedean](lean:ConditionallyCompleteLinearOrderedField.to_archimedean).
+every complete ordered field is Archimedean.
 So any construction of $\mathbb{R}$ that yields a complete ordered field gives the same
 object, and results about $\mathbb{R}$ do not depend on the construction chosen.
 
@@ -117,10 +112,10 @@ with a fixed earlier one, which is equivalent to the usual one. The construction
 only to set up the field, order and completeness; later results rely on those
 properties rather than on representing sequences. Equality and order of real numbers are
 not computable, so they are decided by classical logic. Operations are made total by
-convention: [the inverse of $0$ is $0$](lean:inv_zero) (stated for every group with
-zero), so division by $0$ gives $0$; [the supremum of the empty set is $0$](lean:Real.sSup_empty),
-as is [the supremum of a set that is not bounded above](lean:Real.sSup_of_not_bddAbove);
-and [the square root of $x$ is $0$ exactly when $x \le 0$](lean:Real.sqrt_eq_zero'). The
+convention: the inverse of $0$ is $0$ (stated for every group with
+zero), so division by $0$ gives $0$; the supremum of the empty set is $0$,
+as is the supremum of a set that is not bounded above;
+and the square root of $x$ is $0$ exactly when $x \le 0$. The
 least upper bound property appears as the statement that $\mathbb{R}$ is a conditionally
 complete linear order, and the uniqueness theorem is stated for arbitrary conditionally
 complete linearly ordered fields.

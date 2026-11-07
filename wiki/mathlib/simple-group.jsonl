@@ -1,0 +1,15 @@
+{"id": "af_c4ba73c73fb294ea62b53b18", "subject": [{"type": "generic", "uri": "simple-group.md"}], "object": [{"location": {"declaration": "IsSimpleGroup"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "the definition in Mathlib"}}}], "object": [{"location": {"declaration": "IsSimpleGroup"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "isomorphic to a simple group is simple"}}}], "object": [{"location": {"declaration": "MulEquiv.isSimpleGroup_congr"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "every group of prime order is simple"}}}], "object": [{"location": {"declaration": "isSimpleGroup_of_prime_card"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "is simple when $n \\ge 5$"}}}], "object": [{"location": {"declaration": "alternatingGroup.isSimpleGroup"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "under that condition $\\mathrm{PSL}_2(F)$ is simple"}}}], "object": [{"location": {"declaration": "Matrix.ProjectiveSpecialLinearGroup.rank_two_simple'"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "an abelian group is simple exactly when its order is a prime"}}}], "object": [{"location": {"declaration": "CommGroup.is_simple_iff_prime_card"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "an abelian simple group is finite"}}}], "object": [{"location": {"declaration": "IsSimpleGroup.finite"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "its order is prime"}}}], "object": [{"location": {"declaration": "IsSimpleGroup.prime_card"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "$H$ is simple"}}}], "object": [{"location": {"declaration": "IsSimpleGroup.isSimpleGroup_of_surjective"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "a simple group is solvable if and only if it is abelian"}}}], "object": [{"location": {"declaration": "IsSimpleGroup.comm_iff_isSolvable"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "simple only when its order is $p$ itself"}}}], "object": [{"location": {"declaration": "IsPGroup.isSimpleGroup_iff_card_eq"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "the quotient by such a normal subgroup is simple"}}}], "object": [{"location": {"declaration": "Group.isSimpleGroup_of_isCoatom"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "each of its normal subgroups is trivial or the whole group"}}}], "object": [{"location": {"declaration": "Subgroup.Normal.eq_bot_or_eq_top"}}]}
+{"subject": [{"type": "generic", "uri": "simple-group.md", "location": {"quote": {"exact": "Iwasawa's criterion"}}}], "object": [{"location": {"declaration": "MulAction.IwasawaStructure.isSimpleGroup"}}]}

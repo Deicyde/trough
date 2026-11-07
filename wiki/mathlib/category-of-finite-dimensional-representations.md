@@ -1,8 +1,3 @@
----
-article_id: af_569296c9931c573d2508ce31
-concept: FDRep
----
-
 The **category of finite-dimensional representations** of a [group](trough:Group) $G$ over a
 [field](trough:Field) $k$ has as objects the finite-dimensional
 [representations](trough:Representation) of $G$ over $k$, and as morphisms the linear maps that
@@ -15,7 +10,7 @@ representations make it a rigid monoidal category.
 ## Definition
 
 Let $k$ be a field and $G$ a group. An object of the
-[category of finite-dimensional representations](lean:FDRep), often written
+category of finite-dimensional representations, often written
 $\mathrm{FDRep}_k(G)$, is a pair $(V, \rho_V)$ where $V$ is a
 [finite-dimensional](trough:FiniteDimensional) vector space over $k$ and
 $\rho_V \colon G \to \mathrm{GL}(V)$ is a group homomorphism. A morphism
@@ -56,29 +51,29 @@ $g \mapsto \rho_V(g) \otimes \rho_W(g)$, which makes the category a
 unit. The [dual space](trough:Module.Dual) $V^*$ is a representation with $g$ acting by the
 transpose of $\rho_V(g^{-1})$, and the space of all linear maps from $V$ to $W$, with $g$ acting by
 $\varphi \mapsto \rho_W(g) \circ \varphi \circ \rho_V(g)^{-1}$,
-[is isomorphic as a representation to $V^* \otimes W$](lean:FDRep.dualTensorIsoLinHom).
+is isomorphic as a representation to $V^* \otimes W$.
 The vectors of this space fixed by $G$ are exactly the morphisms from $V$ to $W$.
 
 **Simple objects.** The simple objects of the category are the
 [irreducible representations](trough:Representation.IsIrreducible). When $k$ is
 [algebraically closed](trough:IsAlgClosed), [Schur's lemma](trough:FDRep.finrank_hom_simple_simple)
 says that for simple objects $V$ and $W$
-[the space of morphisms from $V$ to $W$ has dimension $1$ if $V \cong W$ and $0$ otherwise](lean:FDRep.finrank_hom_simple_simple).
+the space of morphisms from $V$ to $W$ has dimension $1$ if $V \cong W$ and $0$ otherwise.
 
 **Semisimplicity.** Suppose now that $G$ is finite and that the characteristic of $k$ does not
 divide $|G|$, so that $|G|$ is invertible in $k$. [Maschke's theorem](trough:MonoidAlgebra.Submodule.exists_isCompl)
-says that [every submodule of a module over the group algebra $k[G]$ has a complementary submodule](lean:MonoidAlgebra.Submodule.exists_isCompl).
+says that every submodule of a module over the group algebra $k[G]$ has a complementary submodule.
 Applied to representations, it shows that every invariant subspace has an invariant complement,
 so every object of the category is a direct sum of simple objects and every short exact sequence
 splits. If $k$ is moreover algebraically closed, then
-[a representation $V$ is simple exactly when its endomorphisms form a one-dimensional space](lean:FDRep.simple_iff_end_is_rank_one).
+a representation $V$ is simple exactly when its endomorphisms form a one-dimensional space.
 
 **Characters.** The [character](trough:FDRep.character) of $V$ is the function
-[$\chi_V(g) = \operatorname{tr} \rho_V(g)$](lean:FDRep.character) on $G$.
-[Isomorphic representations have the same character](lean:FDRep.char_iso), and
-[the character of $V \otimes W$ is the product $\chi_V \chi_W$](lean:FDRep.char_tensor). For a
+$\chi_V(g) = \operatorname{tr} \rho_V(g)$ on $G$.
+Isomorphic representations have the same character, and
+the character of $V \otimes W$ is the product $\chi_V \chi_W$. For a
 finite group whose order is invertible in $k$,
-[averaging characters computes dimensions of morphism spaces](lean:FDRep.scalar_product_char_eq_finrank_equivariant):
+averaging characters computes dimensions of morphism spaces:
 
 $$\frac{1}{|G|} \sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1}) = \dim_k \operatorname{Hom}_G(V, W),$$
 
@@ -86,7 +81,7 @@ where $\operatorname{Hom}_G(V, W)$ is the space of morphisms from $V$ to $W$ in 
 that is, the equivariant linear maps, and the right side is read as an element of $k$. Combined with Schur's lemma over an
 algebraically closed field, this gives the
 [orthogonality of characters](trough:FDRep.char_orthonormal):
-[for simple $V$ and $W$ the average of $\chi_V(g)\chi_W(g^{-1})$ over $G$ is $1$ if $V \cong W$ and $0$ otherwise](lean:FDRep.char_orthonormal).
+for simple $V$ and $W$ the average of $\chi_V(g)\chi_W(g^{-1})$ over $G$ is $1$ if $V \cong W$ and $0$ otherwise.
 
 ## Related concepts
 
@@ -105,8 +100,8 @@ of $G$ on finitely generated $R$-modules; over a field, finitely generated modul
 finite-dimensional vector spaces. An object is bundled: it carries its module and the monoid
 homomorphism from $G$ to the endomorphisms of that module, which can be recovered from it, and over
 a commutative ring a representation on a finitely generated module
-[can be packaged as an object](lean:FDRep.of). Over a commutative ring the
-[morphisms between two objects are, as a module, the same as the morphisms between them in the category of all representations](lean:FDRep.forget₂HomLinearEquiv).
+can be packaged as an object. Over a commutative ring the
+morphisms between two objects are, as a module, the same as the morphisms between them in the category of all representations.
 Irreducible representations are the simple objects in the categorical sense, and the hypothesis
 on the characteristic is stated as invertibility (or nonvanishing) of $|G|$ in $k$. When $R$ is a
 field and $G$ a group, Mathlib records that every object has a dual through a right rigid

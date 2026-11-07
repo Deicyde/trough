@@ -1,0 +1,22 @@
+{"id": "af_640fc2315f148082203c1440", "subject": [{"type": "generic", "uri": "field.md"}], "object": [{"location": {"declaration": "Field"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "field", "prefix": "Definition A "}}}], "object": [{"location": {"declaration": "Field"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "The rational numbers $\\mathbb{Q}$ form a field"}}}], "object": [{"location": {"declaration": "Rat.instField"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "the real numbers $\\mathbb{R}$"}}}], "object": [{"location": {"declaration": "Real.instField"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "the complex numbers $\\mathbb{C}$"}}}], "object": [{"location": {"declaration": "Complex.instField"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "is a field exactly when $I$ is a maximal ideal"}}}], "object": [{"location": {"declaration": "Ideal.Quotient.maximal_ideal_iff_isField_quotient"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "embeds in", "prefix": "domain "}}}], "object": [{"location": {"declaration": "IsFractionRing.injective"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "every field is an integral domain"}}}], "object": [{"location": {"declaration": "IsField.isDomain"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "the only ideals of a field are $\\{0\\}$ and the field itself"}}}], "object": [{"location": {"declaration": "Ideal.eq_bot_or_top"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "every ring homomorphism from a field to a nonzero ring is injective"}}}], "object": [{"location": {"declaration": "RingHom.injective"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "is either $0$ or a prime number"}}}], "object": [{"location": {"declaration": "CharP.char_is_prime_or_zero"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "it has exactly $p^n$ elements, with $p$ prime"}}}], "object": [{"location": {"declaration": "FiniteField.card"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "has at most $n$ roots, counted with multiplicity"}}}], "object": [{"location": {"declaration": "Polynomial.card_roots'"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "is algebraically closed"}}}], "object": [{"location": {"declaration": "AlgebraicClosure.isAlgClosed"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "every finite commutative integral domain is a field"}}}], "object": [{"location": {"declaration": "Finite.isField_of_domain"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "every finite division ring is a field"}}}], "object": [{"location": {"declaration": "littleWedderburn"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "the inverse of $0$ is $0$"}}}], "object": [{"location": {"declaration": "inv_zero"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "$a / 0 = 0$ for every $a$"}}}], "object": [{"location": {"declaration": "div_zero"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "$a\\,a^{-1} = 1$ holds for every $a \\neq 0$"}}}], "object": [{"location": {"declaration": "mul_inv_cancel₀"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "a property of a ring saying that it is a field"}}}], "object": [{"location": {"declaration": "IsField"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "every field has this property"}}}], "object": [{"location": {"declaration": "Field.toIsField"}}]}
+{"subject": [{"type": "generic", "uri": "field.md", "location": {"quote": {"exact": "a ring with it can be given a field structure"}}}], "object": [{"location": {"declaration": "IsField.toField"}}]}

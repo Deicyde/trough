@@ -1,8 +1,3 @@
----
-article_id: af_275f8bb2e365635ee25e5b8c
-concept: ConjClasses
----
-
 The **conjugacy classes** of a [group](trough:Group) are the pieces into which the
 group splits when elements that differ only by a change of viewpoint, $a$ and
 $gag^{-1}$, are counted as the same. They are the orbits of the group acting on
@@ -15,36 +10,36 @@ equals the number of irreducible complex characters.
 ## Definition
 
 Let $G$ be a group with identity $e$. Two elements $a, b \in G$ are *conjugate* when
-[$b = gag^{-1}$ for some $g \in G$](lean:isConj_iff). Conjugacy
-[is an equivalence relation](lean:IsConj.setoid): $a = eae^{-1}$, if $b = gag^{-1}$
+$b = gag^{-1}$ for some $g \in G$. Conjugacy
+is an equivalence relation: $a = eae^{-1}$, if $b = gag^{-1}$
 then $a = g^{-1}bg$, and if moreover $c = hbh^{-1}$ then $c = (hg)a(hg)^{-1}$. Its
 equivalence classes are the conjugacy classes of $G$. The class of $a$ is
 
 $$\operatorname{Cl}(a) = \{\, gag^{-1} : g \in G \,\},$$
 
-and the set of all classes is the [quotient of $G$ by conjugacy](lean:ConjClasses), so
-that [two elements have the same class exactly when they are conjugate](lean:ConjClasses.mk_eq_mk_iff_isConj).
+and the set of all classes is the quotient of $G$ by conjugacy, so
+that two elements have the same class exactly when they are conjugate.
 Equivalently, $G$ [acts](trough:MulAction) on itself by $g \cdot x = gxg^{-1}$, and
-[the class of $a$ is the orbit of $a$ under this action](lean:ConjAct.orbit_eq_carrier_conjClasses)
+the class of $a$ is the orbit of $a$ under this action
 (see [orbit](trough:MulAction.orbit)).
 
 ## Examples
 
 - **Abelian groups.** In a commutative group, $gag^{-1} = a$ for all $g$, so
-  [conjugacy is equality](lean:isConj_iff_eq): every class has one element and
-  [the classes correspond one to one with the elements](lean:ConjClasses.mkEquiv).
-- **The identity.** In any group, [the identity is conjugate only to itself](lean:isConj_one_right),
+  conjugacy is equality: every class has one element and
+  the classes correspond one to one with the elements.
+- **The identity.** In any group, the identity is conjugate only to itself,
   so $\{e\}$ is always a class.
 - **Symmetric groups.** In the [symmetric group](trough:Equiv.Perm) on a finite set,
-  [two permutations are conjugate exactly when they have the same cycle type](lean:Equiv.Perm.isConj_iff_cycleType_eq),
+  two permutations are conjugate exactly when they have the same cycle type,
   that is, the same multiset of cycle lengths in their
   [decomposition into disjoint cycles](trough:Equiv.Perm.truncCycleFactors). For $S_n$,
-  [conjugacy amounts to equality of the partitions of $n$ the permutations determine](lean:Equiv.Perm.partition_eq_of_isConj),
+  conjugacy amounts to equality of the partitions of $n$ the permutations determine,
   and every partition occurs, so $S_n$ has as many classes as $n$ has partitions. In
   $S_3$ the classes are the identity, the three transpositions and the two
   $3$-cycles, of sizes $1 + 3 + 2 = 6$.
 - **Dihedral groups.** For odd $n$ the dihedral group of order $2n$
-  [has $(n+3)/2$ conjugacy classes](lean:DihedralGroup.card_conjClasses_odd): the
+  has $(n+3)/2$ conjugacy classes: the
   identity, the $(n-1)/2$ pairs of mutually inverse nontrivial rotations, and one
   class containing all $n$ reflections.
 - **Matrix groups.** In the [general linear group](trough:Matrix.GeneralLinearGroup)
@@ -57,16 +52,16 @@ Equivalently, $G$ [acts](trough:MulAction) on itself by $g \cdot x = gxg^{-1}$, 
 
 - **Size of a class.** The *centralizer* $C_G(a) = \{ g \in G : ga = ag \}$ is the
   [stabilizer](trough:MulAction.stabilizer) of $a$ under conjugation, and
-  [the size of the class of $a$ equals the index of $C_G(a)$](lean:Subgroup.index_centralizer_eq_ncard)
+  the size of the class of $a$ equals the index of $C_G(a)$
   (see [index of a subgroup](trough:Subgroup.index)).
   For a finite group, [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card)
   then shows that the size of every class divides $|G|$.
 - **Central elements.** The *center* $Z(G)$ consists of the elements that commute
   with every element of $G$. An element is central exactly when its class has a
-  single element: [sending each element to its class is a bijection from $Z(G)$ onto the one-element classes](lean:ConjClasses.mk_bijOn).
+  single element: sending each element to its class is a bijection from $Z(G)$ onto the one-element classes.
 - **The class equation.** For a finite group the classes partition $G$, so
-  [their sizes add up to $|G|$](lean:Group.sum_card_conj_classes_eq_card). Separating
-  the one-element classes gives the [class equation](lean:Group.nat_card_center_add_sum_card_noncenter_eq_card)
+  their sizes add up to $|G|$. Separating
+  the one-element classes gives the class equation
 
   $$|G| = |Z(G)| + \sum_{i=1}^{r} |\operatorname{Cl}(a_i)|,$$
 
@@ -74,14 +69,14 @@ Equivalently, $G$ [acts](trough:MulAction) on itself by $g \cdot x = gxg^{-1}$, 
   the [class formula](trough:MulAction.selfEquivSigmaOrbitsQuotientStabilizer) for
   the conjugation action. If $|G| = p^n$ with $p$ prime and $n \ge 1$, each
   $|\operatorname{Cl}(a_i)|$ is a power of $p$ greater than $1$ and $p$ divides
-  $|G|$, so $p$ divides $|Z(G)|$: [every nontrivial finite group of prime-power order has a nontrivial center](lean:IsPGroup.center_nontrivial).
+  $|G|$, so $p$ divides $|Z(G)|$: every nontrivial finite group of prime-power order has a nontrivial center.
 - **Invariants of a class.** If $y = axa^{-1}$, then $x$ and $y$
-  [have the same order](lean:SemiconjBy.orderOf_eq) (see
+  have the same order (see
   [order of an element](trough:orderOf)), and
-  [a homomorphism sends conjugate elements to conjugate elements](lean:MonoidHom.map_isConj)
+  a homomorphism sends conjugate elements to conjugate elements
   (see [group morphism](trough:MonoidHom)).
 - **Normal subgroups.** A normal subgroup
-  [contains the whole class of each of its elements](lean:Group.conjugates_subset_normal),
+  contains the whole class of each of its elements,
   so it is a union of conjugacy classes; conversely, a subgroup that is a union of
   classes is normal. Since a normal subgroup contains the class $\{e\}$ and its order
   divides $|G|$, class sizes limit the possible normal subgroups. The
@@ -89,7 +84,7 @@ Equivalently, $G$ [acts](trough:MulAction) on itself by $g \cdot x = gxg^{-1}$, 
   $1, 12, 12, 15, 20$, and no sum of these that includes $1$ divides $60$ except
   $1$ and $60$, so $A_5$ is [simple](trough:IsSimpleGroup).
 - **Commuting pairs.** For a finite group with $k$ conjugacy classes,
-  [the number of ordered pairs of commuting elements is $k\,|G|$](lean:card_comm_eq_card_conjClasses_mul_card),
+  the number of ordered pairs of commuting elements is $k\,|G|$,
   so two elements chosen uniformly at random commute with probability $k/|G|$.
 
 ## Related concepts

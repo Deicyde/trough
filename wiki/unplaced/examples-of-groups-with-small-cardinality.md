@@ -1,8 +1,3 @@
----
-article_id: af_32493a698f39193e61a10413
-concept: undergrad:Group Theory/Representation theory of finite groups/examples of groups with small cardinality
----
-
 The **groups of small cardinality** are the finite [groups](trough:Group) with few elements,
 listed up to isomorphism. For each order $n \le 8$ the list is short and can be
 derived by hand from [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card),
@@ -14,30 +9,30 @@ usually first worked out.
 
 ## Groups of prime order
 
-If $|G| = p$ is prime, then [$G$ is cyclic](lean:isCyclic_of_prime_card), since any
+If $|G| = p$ is prime, then $G$ is cyclic, since any
 element other than the identity $e$ generates a subgroup whose order divides $p$ and exceeds
-$1$. As [two cyclic groups of the same order are isomorphic](lean:mulEquivOfCyclicCardEq),
-[any two groups of the same prime order are isomorphic](lean:mulEquivOfPrimeCardEq): up to
+$1$. As two cyclic groups of the same order are isomorphic,
+any two groups of the same prime order are isomorphic: up to
 isomorphism the only group of order $p$ is the [cyclic group](trough:IsCyclic)
 $\mathbb{Z}/p\mathbb{Z}$. This settles the orders $2$, $3$, $5$ and $7$; the order $1$
 belongs to the trivial group alone.
 
 ## Order four
 
-For a prime $p$, [every group of order $p^2$ is abelian](lean:IsPGroup.isMulCommutative_of_card_eq_prime_sq),
-and such a group [fails to be cyclic exactly when its exponent is $p$](lean:not_isCyclic_iff_exponent_eq_prime),
+For a prime $p$, every group of order $p^2$ is abelian,
+and such a group fails to be cyclic exactly when its exponent is $p$,
 that is, when $g^p = e$ for every element $g$. For $p = 2$ a group of order four is therefore either cyclic or of exponent two,
 and each kind is unique up to isomorphism.
 
 - The cyclic group $\mathbb{Z}/4\mathbb{Z}$, which has an element of order $4$.
-- The **Klein four-group** $V$, [a group of order four and exponent two](lean:IsKleinFour), so
+- The **Klein four-group** $V$, a group of order four and exponent two, so
   that every element is its own inverse. It can be realised as
   $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, or as the symmetries of a
-  non-square rectangle, and [it is not cyclic](lean:IsKleinFour.not_isCyclic).
-  [Any two Klein four-groups are isomorphic](lean:IsKleinFour.nonempty_mulEquiv).
+  non-square rectangle, and it is not cyclic.
+  Any two Klein four-groups are isomorphic.
 
 More generally,
-[a group of exponent two is abelian](lean:mul_comm_of_exponent_two): from $(ab)^2 = e$ one gets
+a group of exponent two is abelian: from $(ab)^2 = e$ one gets
 $ab = b^{-1}a^{-1} = ba$. Together with the prime case, this shows that every group of order
 less than $6$ is abelian.
 
@@ -45,8 +40,8 @@ less than $6$ is abelian.
 
 The order six is the first at which a non-abelian group appears. The
 [symmetric group](trough:Equiv.Perm) $S_3$ of all permutations of three letters
-[has $3! = 6$ elements](lean:Nat.card_perm), and the symmetric group on a finite set
-[is abelian exactly when the set has at most two elements](lean:Equiv.Perm.isMulCommutative_iff_card_le_two).
+has $3! = 6$ elements, and the symmetric group on a finite set
+is abelian exactly when the set has at most two elements.
 The group $S_3$ is also the dihedral group $D_3$ of symmetries of an equilateral triangle.
 
 Every group of order six is isomorphic to $\mathbb{Z}/6\mathbb{Z}$ or to $S_3$. By
@@ -62,21 +57,21 @@ There are five groups of order eight. Three are abelian: $\mathbb{Z}/8\mathbb{Z}
 $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and $(\mathbb{Z}/2\mathbb{Z})^3$. They
 are pairwise non-isomorphic, as the largest order of an element is $8$, $4$ and $2$
 respectively. This matches two general facts: every
-[finite abelian group is isomorphic to a direct product of finitely many cyclic groups](lean:CommGroup.equiv_prod_multiplicative_zmod_of_finite)
+finite abelian group is isomorphic to a direct product of finitely many cyclic groups
 (the [structure theorem](trough:AddCommGroup.equiv_free_prod_directSum_zmod)), and for finite cyclic groups
 $A$ and $B$ the [direct product](trough:Prod.instGroup) $A \times B$
-[is cyclic exactly when the orders of $A$ and $B$ are coprime](lean:Group.isCyclic_prod_iff).
+is cyclic exactly when the orders of $A$ and $B$ are coprime.
 
 Two are non-abelian.
 
 - The dihedral group $D_4$ of symmetries of a square. For $n \ge 3$ the dihedral group $D_n$ is
   the symmetry group of a regular $n$-gon; for every $n \ge 1$ the group $D_n$, defined by the
-  same generators and relations, [has $2n$ elements](lean:DihedralGroup.nat_card) (some texts
+  same generators and relations, has $2n$ elements (some texts
   write $D_{2n}$ for it), and it
-  [is abelian exactly when $n$ is $1$ or $2$](lean:DihedralGroup.commutative_iff).
+  is abelian exactly when $n$ is $1$ or $2$.
 - The quaternion group $Q_8 = \{\pm 1, \pm i, \pm j, \pm k\}$, with $i^2 = j^2 = k^2 = ijk = -1$.
   It is the case $n = 2$ of the dicyclic groups, which for $n \ge 1$
-  [have $4n$ elements](lean:QuaternionGroup.card).
+  have $4n$ elements.
 
 The two are told apart by their elements of order $2$: $D_4$ has five (four reflections and
 the rotation by a half turn), while $Q_8$ has only $-1$.

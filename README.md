@@ -132,26 +132,40 @@ and signature, titled by the docstring's bold lead when it has one.
     uvx --from "git+https://github.com/facebookresearch/autoform-bot.git@$(cat .github/autoform-ref)" autoform check blueprint
 
 A concept can have an authored article in `wiki/mathlib/`: original text in
-Markdown and TeX that takes the place of its docstring. Its front matter names
-the concept (`concept:`, the article's first declaration, statement or module;
-`area:<headings>` gives a section of the overview its prose) and a durable `article_id`. In the text,
-`[words](lean:Full.Name)` cites a Mathlib declaration and becomes a link to its
-documentation (a name with spaces goes in angle brackets,
-`[words](<lean:Name with spaces>)`), and `[words](trough:key)` links another
-concept's article. Its
-`## Depends on` and `## Proof depends on` lists take the place of the edges
-from Mathlib's declaration graph. The Mathlib data workflow reads every cited
-name in Mathlib's environment, and the generator stops on a citation it has no
-record of or that Mathlib deprecates, on a `trough:` key with no article, and on
-a `lean:` or `trough:` link in any other shape (with a title, a capital scheme, or
-spaces outside angle brackets). A run on main, which may move the Mathlib pin,
-repairs instead (`tools/generate.py --follow-pin`): a deprecated citation is
+Markdown and TeX that takes the place of its docstring. An article is two files.
+`<name>.md` is the text alone, with no front matter. `<name>.jsonl` holds its
+links to Mathlib as [literature-links](https://github.com/mathlib-initiative/literature-links)
+annotations, which the folder's `_defaults.json` points at Mathlib:
+
+- The first annotation is about the whole article. Its `id` is the article's
+  durable identity, and its object is the concept: the article's first
+  declaration, statement or module. An overview section's prose
+  (`area:<headings>`) has an empty object and the key in
+  `extensions["org.trough"]["concept"]`.
+- Every other annotation is a citation. Its subject quotes the cited words in the
+  `.md` file (a `generic` end whose location is `{"quote": {"exact": ...}}`, with
+  a `prefix` only when the words occur more than once), and its object is the
+  declaration they cite. The generator links the words to its documentation.
+
+`tools/split_wiki.py FILE...` writes the two files from an article drafted in one
+file, with front matter (`article_id`, `concept`) and `[words](lean:Name)`
+citations; run it again after editing an article's text, so its quotes stay the
+shortest that work (a test checks this). In the text, `[words](trough:key)` links
+another concept's article. Its `## Depends on` and `## Proof depends on` lists take
+the place of the edges from Mathlib's declaration graph. The Mathlib data workflow
+reads every cited name in Mathlib's environment. The generator stops on a citation
+it has no record of or that Mathlib deprecates; on a quote that matches nowhere,
+more than once, across paragraphs or over a link; on a `trough:` key with no
+article; and on a `lean:` link in the Markdown or a `trough:` link in any other
+shape (with a title, a capital scheme, or spaces). The Tests workflow checks the
+annotations with `literature-links scan`. A run on main, which may move the Mathlib
+pin, repairs instead (`tools/generate.py --follow-pin`): a deprecated citation is
 renamed to its replacement, and so is a concept key that no longer has a page; a
-citation Mathlib no longer has, or one with no replacement, is unlinked; an
-article whose concept has no page moves to `wiki/unplaced/`; and
-`wiki/pin-changes.json` lists each change so the articles can be checked again.
-A name the run's data did not read, from an article merged meanwhile, is left
-for the next run.
+citation Mathlib no longer has, or one with no replacement, is dropped and its
+words stay plain text; an article whose concept has no page moves, with its
+annotations, to `wiki/unplaced/`; and `wiki/pin-changes.json` lists each change so
+the articles can be checked again. A name the run's data did not read, from an
+article merged meanwhile, is left for the next run.
 
 Everything under `blueprint/roadmap/` and `blueprint/links/` is generated; edit the generator, the
 data, the catalog or `wiki/` instead. `tools/refresh_thousand_plus.py` refreshes the

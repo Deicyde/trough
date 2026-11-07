@@ -1,0 +1,25 @@
+{"id": "af_7103ec351338d590278cb5bc", "subject": [{"type": "generic", "uri": "ring.md"}], "object": [{"location": {"declaration": "Ring"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "ring", "prefix": "Definition A "}}}], "object": [{"location": {"declaration": "Ring"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "$a(b + c) = ab + ac$"}}}], "object": [{"location": {"declaration": "left_distrib"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "$(a + b)c = ac + bc$"}}}], "object": [{"location": {"declaration": "right_distrib"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "commutative ring", "prefix": "is a "}}}], "object": [{"location": {"declaration": "CommRing"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "already determine a ring"}}}], "object": [{"location": {"declaration": "Ring.ofMinimalAxioms"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a commutative ring", "prefix": "integers "}}}], "object": [{"location": {"declaration": "Int.instCommRing"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a commutative ring", "prefix": "$n$ "}}}], "object": [{"location": {"declaration": "ZMod.commRing"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a ring", "prefix": "coefficients in $R$ "}}}], "object": [{"location": {"declaration": "Polynomial.ring"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "commutative when $R$ is"}}}], "object": [{"location": {"declaration": "Polynomial.commRing"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a ring", "prefix": "entries in $R$ "}}}], "object": [{"location": {"declaration": "Matrix.instRing"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a ring", "prefix": "f(y)$, "}}}], "object": [{"location": {"declaration": "AddMonoid.End.instRing"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "componentwise operations"}}}], "object": [{"location": {"declaration": "Pi.ring"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a division ring"}}}], "object": [{"location": {"declaration": "Quaternion.instDivisionRing"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "$(-a)b = -(ab)$"}}}], "object": [{"location": {"declaration": "neg_mul"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "$(-a)(-b) = ab$"}}}], "object": [{"location": {"declaration": "neg_mul_neg"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "$(-1)a = -a$"}}}], "object": [{"location": {"declaration": "neg_one_mul"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "$a(b - c) = ab - ac$"}}}], "object": [{"location": {"declaration": "mul_sub_left_distrib"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "$0 = 1$ holds exactly when $R$ has at most one element"}}}], "object": [{"location": {"declaration": "subsingleton_iff_zero_eq_one"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a group under multiplication"}}}], "object": [{"location": {"declaration": "Units.instGroup"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "a ring morphism from the integers to $R$"}}}], "object": [{"location": {"declaration": "Int.castRingHom"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "it is the only ring morphism from the integers to $R$"}}}], "object": [{"location": {"declaration": "RingHom.eq_intCast'"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "for all $x$, $y$ and every natural number $n$"}}}], "object": [{"location": {"declaration": "add_pow"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "whenever $xy = yx$"}}}], "object": [{"location": {"declaration": "Commute.add_pow"}}]}
+{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "domain", "prefix": "a "}}}], "object": [{"location": {"declaration": "IsDomain"}}]}

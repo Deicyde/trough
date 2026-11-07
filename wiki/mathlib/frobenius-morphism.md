@@ -1,8 +1,3 @@
----
-article_id: af_bd72f317431e43d7be44183f
-concept: frobenius
----
-
 The **Frobenius morphism** (or Frobenius endomorphism) of a commutative ring of
 prime [characteristic](trough:CharP) $p$ is the map that raises every element to its $p$-th
 power. In characteristic $p$ this map preserves sums as well as products, so it is a
@@ -17,7 +12,7 @@ positive characteristic.
 
 Let $R$ be a commutative ring whose characteristic is a [prime](trough:Prime) $p$. The
 Frobenius morphism is the map $F \colon R \to R$ given by $F(x) = x^p$, and
-[this map is a ring homomorphism](lean:frobenius). It sends $1$ to $1$ and, because $R$ is
+this map is a ring homomorphism. It sends $1$ to $1$ and, because $R$ is
 commutative, satisfies $(xy)^p = x^p y^p$. Additivity is the key point: the
 [binomial theorem](trough:add_pow) gives
 
@@ -25,23 +20,23 @@ $$(x+y)^p = \sum_{k=0}^{p} \binom{p}{k} x^k y^{p-k},$$
 
 and for $0 < k < p$ the prime $p$ divides $\binom{p}{k} = \frac{p!}{k!\,(p-k)!}$, since it
 divides the numerator but not the denominator. Those terms vanish in $R$, leaving
-[$(x+y)^p = x^p + y^p$](lean:add_pow_char), sometimes called the freshman's dream. Applying
-additivity to $(x-y) + y$ gives [$(x-y)^p = x^p - y^p$](lean:sub_pow_char).
+$(x+y)^p = x^p + y^p$, sometimes called the freshman's dream. Applying
+additivity to $(x-y) + y$ gives $(x-y)^p = x^p - y^p$.
 
-Iterating, [the $n$-fold composite of $F$ with itself is the map $x \mapsto x^{p^n}$](lean:iterate_frobenius),
+Iterating, the $n$-fold composite of $F$ with itself is the map $x \mapsto x^{p^n}$,
 which is again a ring homomorphism.
 
 ## Examples
 
 - **The field with $p$ elements.** On $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$,
-  [the Frobenius morphism is the identity](lean:ZMod.frobenius_zmod). This is a restatement of
+  the Frobenius morphism is the identity. This is a restatement of
   [Fermat's little theorem](trough:ZMod.pow_card_sub_one_eq_one) in the form $a^p \equiv a \pmod p$.
 - **Finite fields.** If $K$ is a finite field of characteristic $p$ with $p^n$ elements, then
-  [$F^n$ is the identity of $K$](lean:FiniteField.frobenius_pow), because every element $a$ of
+  $F^n$ is the identity of $K$, because every element $a$ of
   $K$ satisfies $a^{p^n} = a$.
 - **Polynomials.** On the [polynomial ring](trough:Polynomial) $\mathbb{F}_p[t]$ the coefficients
   are fixed, so $F$ sends $f(t)$ to $f(t^p)$. More generally, if $K$ is a finite field with
-  $q$ elements, then [$f(X)^q = f(X^q)$ for every polynomial $f$ over $K$](lean:FiniteField.Polynomial.expand_card).
+  $q$ elements, then $f(X)^q = f(X^q)$ for every polynomial $f$ over $K$.
   On $\mathbb{F}_p[t]$, $F$ is injective, since $\mathbb{F}_p[t]$ is an integral domain, but not
   surjective: its image consists of the polynomials in $t^p$.
 - **A non-injective case.** In $\mathbb{F}_p[x]/(x^p)$ the class of $x$ is nonzero but its
@@ -50,27 +45,27 @@ which is again a ring homomorphism.
 ## Properties
 
 - **Naturality.** Every ring homomorphism $g \colon R \to S$ between rings of characteristic $p$
-  [commutes with Frobenius: $g(x^p) = g(x)^p$](lean:RingHom.map_frobenius).
+  commutes with Frobenius: $g(x^p) = g(x)^p$.
 - **Injectivity.** The kernel of $F$ consists of the elements $x$ with $x^p = 0$, which are
-  nilpotent. Hence, [if $R$ has no nonzero nilpotent elements, $F$ is injective](lean:frobenius_inj).
+  nilpotent. Hence, if $R$ has no nonzero nilpotent elements, $F$ is injective.
   In particular the Frobenius of a [field](trough:Field) or of an integral domain is injective.
 - **Perfect rings.** A ring of characteristic $p$ on which $F$ is bijective is called perfect,
-  and then $F$ is an automorphism, [the Frobenius automorphism](lean:frobeniusEquiv). An
+  and then $F$ is an automorphism, the Frobenius automorphism. An
   injective map from a finite set to itself is bijective, so
-  [every finite commutative ring of characteristic $p$ without nonzero nilpotents is perfect](lean:PerfectRing.ofFiniteOfIsReduced);
+  every finite commutative ring of characteristic $p$ without nonzero nilpotents is perfect;
   this covers all finite fields.
 - **Perfect fields.** For a field $K$ of characteristic $p$,
-  [bijectivity of $F$ makes $K$ a perfect field](lean:PerfectRing.toPerfectField), meaning that
+  bijectivity of $F$ makes $K$ a perfect field, meaning that
   every irreducible polynomial over $K$ is [separable](trough:Polynomial.Separable), and
-  [every perfect field has bijective Frobenius](lean:PerfectField.toPerfectRing). Since $F$ is
-  injective on a field, $K$ is perfect exactly when every element has a $p$-th root. [Finite
-  fields are perfect](lean:PerfectField.ofFinite), and so are
+  every perfect field has bijective Frobenius. Since $F$ is
+  injective on a field, $K$ is perfect exactly when every element has a $p$-th root. Finite
+  fields are perfect, and so are
   [algebraically closed fields](trough:IsAlgClosed); the rational function field
   $\mathbb{F}_p(t)$ is not, since $t$ has no $p$-th root.
 - **Fixed points.** In a field of characteristic $p$ the elements fixed by $F$ are the roots of
   $X^p - X$. There are at most $p$ of them, and the $p$ elements of the prime subfield (the
   subfield generated by $1$, a copy of $\mathbb{Z}/p\mathbb{Z}$) are among them, so
-  [an element is fixed by $F$ exactly when it lies in the prime subfield](lean:Subfield.mem_bot_iff_pow_eq_self).
+  an element is fixed by $F$ exactly when it lies in the prime subfield.
 
 ## Galois groups of finite fields
 
@@ -78,9 +73,9 @@ Let $L$ be a finite field and $K$ a subfield with $q$ elements, and let $n = [L 
 degree of the extension. The map $\sigma(x) = x^q$ is a power of the Frobenius morphism of $L$ and
 fixes $K$ pointwise. As a power of the injective Frobenius of a field it is injective, and an
 injective map from the finite set $L$ to itself is bijective, so it is
-[an automorphism of $L$ over $K$](lean:FiniteField.frobeniusAlgEquivOfAlgebraic). Its
-[order in the Galois group is $n$](lean:FiniteField.orderOf_frobeniusAlgEquivOfAlgebraic), and
-[every element of the Galois group equals $\sigma^i$ for exactly one $i$ with $0 \le i < n$](lean:FiniteField.bijective_frobeniusAlgEquivOfAlgebraic_pow).
+an automorphism of $L$ over $K$. Its
+order in the Galois group is $n$, and
+every element of the Galois group equals $\sigma^i$ for exactly one $i$ with $0 \le i < n$.
 So the Galois group of $L$ over $K$ is a [cyclic group](trough:IsCyclic) of order $n$ generated
 by $\sigma$. Since the Galois group has order $n = [L : K]$, the extension is Galois, and the
 [Galois correspondence](trough:IsGalois.intermediateFieldEquivSubgroup) gives exactly one

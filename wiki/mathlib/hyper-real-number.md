@@ -1,8 +1,3 @@
----
-article_id: af_134479273ab6c3f42eb412b0
-concept: Hyperreal
----
-
 The **hyper-real numbers**, or hyperreals, form an ordered [field](trough:Field) $^*\mathbb R$
 that contains the [real numbers](trough:Real) together with positive infinitesimals, numbers
 greater than $0$ but smaller than every positive real, and infinite elements, numbers larger than
@@ -19,40 +14,40 @@ $\mathbb N$, not containing the empty set, such that for every $A \subseteq \mat
 or its complement belongs to $\mathcal U$. It is nonprincipal if it contains no finite set, or
 equivalently every set with finite complement. Nonprincipal ultrafilters exist by the axiom of
 choice; Mathlib fixes one, its hyperfilter, which
-[contains every set with finite complement](lean:Filter.hyperfilter_le_cofinite). A set in
+contains every set with finite complement. A set in
 $\mathcal U$ is thought of as containing almost all indices.
 
 Two real sequences $(a_n)$ and $(b_n)$ are identified when $\{n : a_n = b_n\} \in \mathcal U$. A
 hyper-real number is an equivalence class $[a_n]$, and
-[the hyper-real numbers](lean:Hyperreal) are the set of all such classes:
-[each sequence defines one](lean:Hyperreal.ofSeq) and
-[every hyper-real number comes from a sequence](lean:Hyperreal.ofSeq_surjective). Arithmetic is
+the hyper-real numbers are the set of all such classes:
+each sequence defines one and
+every hyper-real number comes from a sequence. Arithmetic is
 termwise,
 
 $$[a_n] + [b_n] = [a_n + b_n], \qquad [a_n]\,[b_n] = [a_n b_n],$$
 
-and [$[a_n] < [b_n]$ exactly when $\{n : a_n < b_n\} \in \mathcal U$](lean:Hyperreal.ofSeq_lt_ofSeq).
+and $[a_n] < [b_n]$ exactly when $\{n : a_n < b_n\} \in \mathcal U$.
 The order is total because the three sets where $a_n < b_n$, $a_n = b_n$ and $a_n > b_n$
 partition $\mathbb N$, so exactly one of them lies in $\mathcal U$. If $[a_n] \neq 0$ then
 $a_n \neq 0$ for almost all $n$, and inverting those terms gives the inverse. With these
 operations $^*\mathbb R$ is an ordered field.
 
 A real number $r$ is sent to the class of the constant sequence $(r, r, r, \dots)$.
-[This embedding](lean:Hyperreal.ofReal) is
-[an order-preserving ring homomorphism](lean:Hyperreal.coeRingHom), it is
-[injective](lean:Hyperreal.coe_eq_coe), and
-[$r < s$ holds in $^*\mathbb R$ exactly when it holds in $\mathbb R$](lean:Hyperreal.coe_lt_coe).
+This embedding is
+an order-preserving ring homomorphism, it is
+injective, and
+$r < s$ holds in $^*\mathbb R$ exactly when it holds in $\mathbb R$.
 
 ## Examples
 
-Let $\omega = [0, 1, 2, 3, \dots]$ be [the class of the sequence $(n)$](lean:Hyperreal.omega).
+Let $\omega = [0, 1, 2, 3, \dots]$ be the class of the sequence $(n)$.
 For a real $r$, all but finitely many $n$ satisfy $n > r$, and that set lies in $\mathcal U$, so
-[$r < \omega$ for every real $r$](lean:Hyperreal.coe_lt_omega). Its reciprocal $\varepsilon$ is
-[the class of the sequence $(1/n)$](lean:Hyperreal.epsilon); changing finitely many terms never
+$r < \omega$ for every real $r$. Its reciprocal $\varepsilon$ is
+the class of the sequence $(1/n)$; changing finitely many terms never
 changes a class, so the term at $n = 0$ does not matter. Indeed
-[the reciprocal of $\omega$ is $\varepsilon$](lean:Hyperreal.inv_omega), and $\varepsilon$
-[is positive](lean:Hyperreal.epsilon_pos) and
-[smaller than every positive real](lean:Hyperreal.epsilon_lt_of_pos). Further examples are
+the reciprocal of $\omega$ is $\varepsilon$, and $\varepsilon$
+is positive and
+smaller than every positive real. Further examples are
 $\omega + 1$, $\omega^2$ and $[\sqrt n]$, all infinite, and $\varepsilon^2$, an infinitesimal
 smaller than $\varepsilon$; the numbers $r + \varepsilon$ and $r - \varepsilon$ differ from the
 real $r$ by an infinitesimal.
@@ -72,27 +67,27 @@ reciprocal of a nonzero infinitesimal is infinite.
   $2s$ would then be a larger infinitesimal. So $s \ge r$ for some positive real $r$, and then
   $s/2$ is a smaller upper bound.
 - **Standard part.** Every finite $x$ is infinitely close to exactly one real number, its standard
-  part $\operatorname{st}(x)$: [for finite $x$ and real $r$, the difference $x - r$ is
-  infinitesimal exactly when $r = \operatorname{st}(x)$](lean:ArchimedeanClass.mk_sub_pos_iff).
+  part $\operatorname{st}(x)$: for finite $x$ and real $r$, the difference $x - r$ is
+  infinitesimal exactly when $r = \operatorname{st}(x)$.
   The completeness of $\mathbb R$ supplies it:
-  [$\operatorname{st}(x)$ is the supremum of the reals below $x$](lean:ArchimedeanClass.stdPart_eq_sSup).
+  $\operatorname{st}(x)$ is the supremum of the reals below $x$.
   For finite $x$ and $y$,
-  [$\operatorname{st}(x + y) = \operatorname{st}(x) + \operatorname{st}(y)$](lean:ArchimedeanClass.stdPart_add)
-  and [$\operatorname{st}(xy) = \operatorname{st}(x)\operatorname{st}(y)$](lean:ArchimedeanClass.stdPart_mul),
-  and [$\operatorname{st}(r) = r$ for real $r$](lean:Hyperreal.stdPart_coe).
+  $\operatorname{st}(x + y) = \operatorname{st}(x) + \operatorname{st}(y)$
+  and $\operatorname{st}(xy) = \operatorname{st}(x)\operatorname{st}(y)$,
+  and $\operatorname{st}(r) = r$ for real $r$.
 - **Limits.** A sequence tends to $L$ along $\mathcal U$ if, for every neighbourhood $V$ of $L$,
-  the set of $n$ with $a_n \in V$ lies in $\mathcal U$. [If $(a_n)$ tends to $L$ along
-  $\mathcal U$, then $\operatorname{st}([a_n]) = L$](lean:Hyperreal.stdPart_of_tendsto). Since
+  the set of $n$ with $a_n \in V$ lies in $\mathcal U$. If $(a_n)$ tends to $L$ along
+  $\mathcal U$, then $\operatorname{st}([a_n]) = L$. Since
   $\mathcal U$ contains every set with finite complement, this covers every sequence with
   [limit](trough:Metric.tendsto_atTop) $L$ in the usual sense. Likewise
-  [$(a_n)$ tends to $+\infty$ along $\mathcal U$ exactly when $[a_n]$ is positive and
-  infinite](lean:Hyperreal.tendsto_atTop_iff).
+  $(a_n)$ tends to $+\infty$ along $\mathcal U$ exactly when $[a_n]$ is positive and
+  infinite.
 - **Continuity.** For a real function $f$ that is [continuous](trough:Continuous) at the point $r$,
-  [if $(a_n)$ tends to $r$ along $\mathcal U$, then $(f(a_n))$ tends to $f(r)$ along
-  $\mathcal U$](lean:Hyperreal.stdPart_map).
+  if $(a_n)$ tends to $r$ along $\mathcal U$, then $(f(a_n))$ tends to $f(r)$ along
+  $\mathcal U$.
 - **Transfer.** Because $^*\mathbb R$ is an ultrapower, [Łoś' theorem](trough:FirstOrder.Language.Ultraproduct.sentence_realize)
-  applies: [a first-order sentence holds in an ultraproduct of nonempty structures exactly when
-  the set of indices whose factor satisfies it belongs to the ultrafilter](lean:FirstOrder.Language.Ultraproduct.sentence_realize).
+  applies: a first-order sentence holds in an ultraproduct of nonempty structures exactly when
+  the set of indices whose factor satisfies it belongs to the ultrafilter.
   Every factor here is $\mathbb R$, so a first-order sentence in a language with a symbol for each
   real function and relation holds in $^*\mathbb R$ exactly when it holds in $\mathbb R$, where
   each function $f$ is read as its termwise extension $f^*[a_n] = [f(a_n)]$ and each relation $P$
@@ -124,7 +119,7 @@ standard part are not special to the hyperreals: Mathlib treats them in every or
 through the Archimedean class of an element, ordered so that smaller elements have larger
 classes; an element is infinitesimal when its class is above that of $1$ and infinite when it is
 below. The standard part is defined for every element, with value $0$ at infinite elements, so
-[the standard part of $\omega$ is $0$](lean:Hyperreal.stdPart_omega). The sum and product rules
+the standard part of $\omega$ is $0$. The sum and product rules
 above hold in every ordered field, and the uniqueness statement and the supremum formula in every
 ordered field that receives an order-preserving ring homomorphism from the reals. The transfer
 principle is not yet formalized for the hyperreals, though Łoś' theorem is available for

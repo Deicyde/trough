@@ -1,8 +1,3 @@
----
-article_id: af_782a38fbe61e0a072ccfd3e6
-concept: MonoidAlgebra.Submodule.exists_isCompl
----
-
 **Maschke's theorem** says that a [representation](trough:Representation) of a finite
 [group](trough:Group) $G$ over a [field](trough:Field) $k$ whose
 [characteristic](trough:ringChar) does not divide the order of $G$ splits along every
@@ -26,14 +21,14 @@ In the language of modules: a representation of $G$ over $k$ is the same thing a
 [module](trough:Module) over the group algebra $k[G]$, the vector space with basis $G$ and
 multiplication extending that of $G$, and invariant subspaces are its submodules. Under the
 same hypotheses on $G$ and $k$, the theorem says that
-[every submodule of a $k[G]$-module has a complementary submodule](lean:MonoidAlgebra.Submodule.exists_isCompl):
+every submodule of a $k[G]$-module has a complementary submodule:
 a submodule meeting it only in $0$ and spanning the whole module together with it. A module
 with this property is called semisimple.
 
 ## Proof
 
 Choose any complementary subspace $U_0$ of $W$, ignoring the group action; this is possible
-because [every subspace of a vector space has a complement](lean:Submodule.exists_isCompl).
+because every subspace of a vector space has a complement.
 Let $\pi \colon V \to W$ be the projection onto $W$ along $U_0$. It is linear and fixes $W$
 pointwise, but need not commute with the action of $G$. Average it over the group:
 
@@ -47,9 +42,9 @@ $U = \ker \pi'$ is an invariant complement of $W$.
 
 The same computation works over any commutative ring $k$ in which $|G|$ is invertible: if a
 $k[G]$-linear map has a $k$-linear left inverse, then
-[averaging that left inverse over $G$ gives a $k[G]$-linear left inverse](lean:LinearMap.equivariantProjection_condition).
+averaging that left inverse over $G$ gives a $k[G]$-linear left inverse.
 Over a field, where $k$-linear left inverses of injective maps always exist, it follows that
-[every injective homomorphism of $k[G]$-modules has a left inverse that is itself a homomorphism of $k[G]$-modules](lean:MonoidAlgebra.exists_leftInverse_of_injective).
+every injective homomorphism of $k[G]$-modules has a left inverse that is itself a homomorphism of $k[G]$-modules.
 
 ## Examples
 
@@ -70,15 +65,15 @@ Over a field, where $k$-linear left inverses of injective maps always exist, it 
 
 - **Complete reducibility.** Under the hypotheses of the theorem every $k[G]$-module is
   semisimple, and a semisimple module is
-  [the sum of an independent family of simple submodules](lean:IsSemisimpleModule.exists_sSupIndep_sSup_simples_eq_top)
+  the sum of an independent family of simple submodules
   (nonzero submodules whose only submodules are $0$ and themselves), that is, their [direct sum](trough:DirectSum.IsInternal). Since
-  [a representation is irreducible exactly when the corresponding $k[G]$-module is simple](lean:Representation.irreducible_iff_isSimpleModule_asModule),
+  a representation is irreducible exactly when the corresponding $k[G]$-module is simple,
   every finite-dimensional representation of $G$ is a direct sum of finitely many
   irreducible representations.
 - **Structure of the group algebra.** Taking $V = k[G]$ shows that $k[G]$ is a semisimple
   ring. When $k$ is moreover algebraically closed, the
   [Wedderburn–Artin theorem](trough:IsSimpleRing.exists_algEquiv_matrix_divisionRing) shows that
-  [this finite-dimensional semisimple algebra is isomorphic to a product of full matrix algebras over $k$](lean:IsSemisimpleRing.exists_algEquiv_pi_matrix_of_isAlgClosed).
+  this finite-dimensional semisimple algebra is isomorphic to a product of full matrix algebras over $k$.
   Comparing dimensions writes $|G|$ as a sum of squares of the sizes of these matrix
   algebras, which are the dimensions of the irreducible representations.
 - **Converse.** If the characteristic of $k$ divides $|G|$, then $k[G]$ is not semisimple:

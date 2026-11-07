@@ -1,8 +1,3 @@
----
-article_id: af_8e6c83f35d6727013a83d4f8
-concept: MvPolynomial
----
-
 A **polynomial in several indeterminates** over a commutative [ring](trough:Ring) $R$ is a
 finite sum of terms $c\,X_1^{a_1}X_2^{a_2}\cdots X_n^{a_n}$ with coefficients $c$ in $R$,
 such as $x^2 + y^2 - 1$ or $xyz - 2$. These polynomials form a commutative ring,
@@ -25,18 +20,18 @@ a finite product since almost all exponents vanish. A polynomial is a formal fin
 $p = \sum_\alpha p_\alpha X^\alpha$, that is, a function $\alpha \mapsto p_\alpha$ from
 exponent vectors to $R$ with only finitely many nonzero values. Polynomials are added
 coefficientwise, and multiplied by extending the rule
-[$X^\alpha \cdot X^\beta = X^{\alpha + \beta}$](lean:MvPolynomial.monomial_mul_monomial)
+$X^\alpha \cdot X^\beta = X^{\alpha + \beta}$
 bilinearly, so that
 
 $$(pq)_\gamma = \sum_{\alpha + \beta = \gamma} p_\alpha\, q_\beta.$$
 
-The result is the [polynomial ring in the indeterminates $X_i$ with coefficients in $R$](lean:MvPolynomial).
-By construction, [two polynomials with the same coefficient at every monomial are equal](lean:MvPolynomial.ext),
-and [every polynomial is the sum of its finitely many nonzero terms](lean:MvPolynomial.as_sum).
+The result is the polynomial ring in the indeterminates $X_i$ with coefficients in $R$.
+By construction, two polynomials with the same coefficient at every monomial are equal,
+and every polynomial is the sum of its finitely many nonzero terms.
 Each term is a constant times a product of powers of indeterminates:
-[$c\,X^\alpha$ is the constant $c$ times $\prod_i X_i^{\alpha(i)}$](lean:MvPolynomial.monomial_eq).
+$c\,X^\alpha$ is the constant $c$ times $\prod_i X_i^{\alpha(i)}$.
 The map sending $c$ to the constant polynomial $c$ is
-[injective](lean:MvPolynomial.C_injective), so $R$ sits inside the polynomial ring.
+injective, so $R$ sits inside the polynomial ring.
 
 The total degree of a nonzero polynomial is the largest value of
 $\sum_i \alpha(i)$ over the exponent vectors $\alpha$ with $p_\alpha \neq 0$; for
@@ -45,12 +40,12 @@ example $x^3 y + y^2$ has total degree $4$.
 ## Examples
 
 - With no indeterminates, the polynomial ring is
-  [$R$ itself](lean:MvPolynomial.isEmptyAlgEquiv); with exactly one, it is
-  [the ring $R[X]$ of polynomials in one indeterminate](lean:MvPolynomial.uniqueAlgEquiv).
+  $R$ itself; with exactly one, it is
+  the ring $R[X]$ of polynomials in one indeterminate.
 - Polynomials in $n + 1$ indeterminates are the same as
-  [polynomials in one indeterminate whose coefficients are polynomials in the other $n$](lean:MvPolynomial.finSuccEquiv);
+  polynomials in one indeterminate whose coefficients are polynomials in the other $n$;
   more generally, splitting the indeterminates into two sets $I$ and $J$ identifies
-  $R[X_i, Y_j]$ with [$(R[Y_j])[X_i]$](lean:MvPolynomial.sumAlgEquiv). This identification
+  $R[X_i, Y_j]$ with $(R[Y_j])[X_i]$. This identification
   lets many properties pass from one indeterminate to finitely many by induction.
 - In three indeterminates, $X_1X_2 + X_1X_3 + X_2X_3$ is unchanged by any permutation
   of the indeterminates; it is one of the elementary
@@ -63,13 +58,13 @@ example $x^3 y + y^2$ has total degree $4$.
 **Universal property.** For every commutative $R$-algebra $A$ (see
 [associative algebra](trough:Algebra)) and every family $(a_i)_{i \in I}$ of elements of
 $A$, there is an $R$-algebra homomorphism from $R[X_i : i \in I]$ to $A$
-[sending each $X_i$ to $a_i$](lean:MvPolynomial.aeval_X), and
-[it is the only $R$-algebra homomorphism that agrees with it on every $X_i$](lean:MvPolynomial.algHom_ext).
+sending each $X_i$ to $a_i$, and
+it is the only $R$-algebra homomorphism that agrees with it on every $X_i$.
 This homomorphism is evaluation, or substitution, at the point $(a_i)$. In this sense
 the polynomial ring is the free commutative $R$-algebra on the set $I$; dropping
 commutativity gives the [free algebra](trough:FreeAlgebra). Polynomials also admit
-induction: [a statement that holds for constants, is preserved by sums, and is
-preserved by multiplication by an indeterminate holds for every polynomial](lean:MvPolynomial.induction_on).
+induction: a statement that holds for constants, is preserved by sums, and is
+preserved by multiplication by an indeterminate holds for every polynomial.
 
 **Ring-theoretic properties.**
 
@@ -78,22 +73,22 @@ preserved by multiplication by an indeterminate holds for every polynomial](lean
   lexicographic order: a total order on monomials, compatible with multiplication, in
   which $1$ is the smallest monomial. The leading coefficient of a nonzero polynomial is
   its coefficient at its largest monomial, so it is nonzero. If $R$ has no zero divisors,
-  [the leading coefficient of $pq$ is the product of the leading coefficients of $p$ and $q$](lean:MonomialOrder.leadingCoeff_mul),
+  the leading coefficient of $pq$ is the product of the leading coefficients of $p$ and $q$,
   so for nonzero $p$ and $q$ it is nonzero, and hence $pq \neq 0$. Comparing leading
   monomials under an order that ranks monomials first by degree shows, in the same way,
-  that [for nonzero $p$ and $q$ the total degree of $pq$ is the sum of the total degrees of $p$ and $q$](lean:MvPolynomial.totalDegree_mul_of_isDomain).
+  that for nonzero $p$ and $q$ the total degree of $pq$ is the sum of the total degrees of $p$ and $q$.
 - If $R$ is a [unique factorisation domain](trough:UniqueFactorizationMonoid), so is the
   polynomial ring in any set of indeterminates
   (see [unique factorisation in polynomial rings](trough:MvPolynomial.uniqueFactorizationMonoid)).
 - By the [Hilbert basis theorem](trough:Polynomial.isNoetherianRing) and induction on the
   number of indeterminates, if $R$ is a [Noetherian ring](trough:IsNoetherianRing) then
-  [so is the polynomial ring in finitely many indeterminates over $R$](lean:MvPolynomial.isNoetherianRing).
+  so is the polynomial ring in finitely many indeterminates over $R$.
   With infinitely many indeterminates over a nonzero ring this fails: the ideal generated
   by all the $X_i$ is not finitely generated.
 
 **Polynomials and functions.** Each polynomial $p$ over $R$ defines a function
-$R^I \to R$ by [evaluation](lean:MvPolynomial.eval). If $R$ is an infinite integral domain,
-[two polynomials that agree at every point of $R^I$ are equal](lean:MvPolynomial.funext),
+$R^I \to R$ by evaluation. If $R$ is an infinite integral domain,
+two polynomials that agree at every point of $R^I$ are equal,
 so polynomials may be identified with the functions they define. Over a finite field
 this fails: over a field with $q$ elements, $X_1^q - X_1$ is a nonzero polynomial that
 vanishes at every point.

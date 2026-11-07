@@ -1,8 +1,3 @@
----
-article_id: af_849285d1717f7195381a22d5
-concept: Complex.isPrimitiveRoot_iff
----
-
 For a positive integer $n$, a **primitive $n$-th root of unity** is a [complex number](trough:Complex) $\zeta$ with
 $\zeta^n = 1$ whose powers $\zeta, \zeta^2, \dots, \zeta^{n-1}$ all differ from $1$. The
 primitive $n$-th roots are the generators of the cyclic group of
@@ -15,33 +10,33 @@ Fourier analysis on them.
 ## Definition
 
 Let $n \ge 1$. A complex number $\zeta$ is a primitive $n$-th root of unity when
-[$\zeta^n = 1$ and $\zeta^m \neq 1$ for every $m$ with $0 < m < n$](lean:IsPrimitiveRoot.iff).
+$\zeta^n = 1$ and $\zeta^m \neq 1$ for every $m$ with $0 < m < n$.
 Equivalently, $\zeta$ has [order](trough:orderOf) exactly $n$ in the multiplicative group of
-nonzero complex numbers: [$\zeta$ is a primitive $n$-th root precisely when its order is
-$n$](lean:IsPrimitiveRoot.iff_orderOf).
+nonzero complex numbers: $\zeta$ is a primitive $n$-th root precisely when its order is
+$n$.
 
 ## Statement
 
 For $n \ge 1$, the primitive $n$-th roots of unity in $\mathbb{C}$ are
-[exactly the numbers
-$e^{2\pi i k/n}$ with $0 \le k < n$ and $\gcd(k, n) = 1$](lean:Complex.isPrimitiveRoot_iff).
+exactly the numbers
+$e^{2\pi i k/n}$ with $0 \le k < n$ and $\gcd(k, n) = 1$.
 These numbers lie on the unit circle at the angles $2\pi k/n$, and distinct values of $k$ in
 this range give distinct numbers, so
-[there are exactly $\varphi(n)$ primitive $n$-th roots of unity](lean:Complex.card_primitiveRoots),
+there are exactly $\varphi(n)$ primitive $n$-th roots of unity,
 where $\varphi$ is [Euler's totient function](trough:Nat.totient).
 
 ## Examples
 
 - For $n = 1$ the only primitive root is $1$ itself, and for $n = 2$ it is $-1$.
-- For $n = 4$ the primitive roots are $i$ and $-i$: [$i$ is a primitive fourth root of
-  unity](lean:Complex.isPrimitiveRoot_I), and so is
-  [$-i$](lean:Complex.isPrimitiveRoot_neg_I), while $-1$ is not, since $(-1)^2 = 1$.
+- For $n = 4$ the primitive roots are $i$ and $-i$: $i$ is a primitive fourth root of
+  unity, and so is
+  $-i$, while $-1$ is not, since $(-1)^2 = 1$.
 - For $n = 3$ the primitive roots are $\tfrac{-1 \pm i\sqrt{3}}{2}$, and for $n = 6$ they are
   $\tfrac{1 \pm i\sqrt{3}}{2}$.
-- For every $n \ge 1$, [the number $e^{2\pi i/n}$ is a primitive $n$-th
-  root of unity](lean:Complex.isPrimitiveRoot_exp).
+- For every $n \ge 1$, the number $e^{2\pi i/n}$ is a primitive $n$-th
+  root of unity.
 - More generally, if $q = a/b$ is a rational number in lowest terms with $b \ge 1$, then
-  [$e^{2\pi i q}$ is a primitive $b$-th root of unity](lean:Complex.isPrimitiveRoot_exp_rat).
+  $e^{2\pi i q}$ is a primitive $b$-th root of unity.
 
 ## Proof
 
@@ -57,37 +52,37 @@ $\omega^k$ is $n/\gcd(k, n)$, which equals $n$ exactly when $\gcd(k, n) = 1$.
 Throughout, $n \ge 1$ and $\zeta$ is a primitive $n$-th root of unity.
 
 - **Generators.** Every $n$-th root of unity is a power of $\zeta$:
-  [each $\xi$ with $\xi^n = 1$ equals $\zeta^k$ for some $k$ with $0 \le k < n$](lean:IsPrimitiveRoot.eq_pow_of_pow_eq_one).
+  each $\xi$ with $\xi^n = 1$ equals $\zeta^k$ for some $k$ with $0 \le k < n$.
   So the $n$-th roots of unity form a [cyclic group](trough:IsCyclic) of order $n$, and its
   generators are exactly the primitive $n$-th roots of unity.
-- **Powers.** [The power $\zeta^k$ is a primitive $n$-th root exactly when
-  $\gcd(k, n) = 1$](lean:IsPrimitiveRoot.pow_iff_coprime), and in general
-  [$\zeta^k$ is a primitive $(n/\gcd(n, k))$-th root of unity](lean:IsPrimitiveRoot.pow_div_gcd).
+- **Powers.** The power $\zeta^k$ is a primitive $n$-th root exactly when
+  $\gcd(k, n) = 1$, and in general
+  $\zeta^k$ is a primitive $(n/\gcd(n, k))$-th root of unity.
   Thus the primitive $n$-th roots correspond to the
   [invertible residues modulo $n$](trough:ZMod.unitOfCoprime).
-- **Absolute value.** [Every primitive $n$-th root has absolute value
-  $1$](lean:IsPrimitiveRoot.norm'_eq_one).
+- **Absolute value.** Every primitive $n$-th root has absolute value
+  $1$.
 - **Vanishing sum.** For $n \ge 2$,
-  [$1 + \zeta + \zeta^2 + \cdots + \zeta^{n-1} = 0$](lean:IsPrimitiveRoot.geom_sum_eq_zero),
+  $1 + \zeta + \zeta^2 + \cdots + \zeta^{n-1} = 0$,
   because the sum is a geometric series and $\zeta^n = 1$ while $\zeta \neq 1$.
 - **Sorting the roots of unity by order.** A complex number is a primitive root of unity for
-  at most one exponent: [if $\zeta$ is a primitive $k$-th root and a primitive $l$-th root,
-  then $k = l$](lean:IsPrimitiveRoot.unique). Each $n$-th root of unity has some order $d$
-  dividing $n$, so [the $n$-th roots of unity are the union, over the divisors $d$ of $n$, of
-  the primitive $d$-th roots](lean:IsPrimitiveRoot.nthRoots_one_eq_biUnion_primitiveRoots).
+  at most one exponent: if $\zeta$ is a primitive $k$-th root and a primitive $l$-th root,
+  then $k = l$. Each $n$-th root of unity has some order $d$
+  dividing $n$, so the $n$-th roots of unity are the union, over the divisors $d$ of $n$, of
+  the primitive $d$-th roots.
   Counting both sides gives the identity
-  [$\sum_{d \mid n} \varphi(d) = n$](lean:Nat.sum_totient).
+  $\sum_{d \mid n} \varphi(d) = n$.
 
 ## Cyclotomic polynomials
 
 The $n$-th cyclotomic polynomial $\Phi_n$ collects the primitive $n$-th roots. In any integral domain
 that contains a primitive $n$-th root of unity, such as $\mathbb{C}$,
-[the polynomial $\Phi_n$ is the product of $x - \zeta$ over the primitive $n$-th
-roots $\zeta$](lean:Polynomial.cyclotomic_eq_prod_X_sub_primitiveRoots), and for $n \ge 1$
-[a complex number is a root of $\Phi_n$ exactly when it is a primitive $n$-th
-root of unity](lean:Polynomial.isRoot_cyclotomic_iff). Its
-[degree is $\varphi(n)$](lean:Polynomial.natDegree_cyclotomic). [Its coefficients are integers: over any ring, $\Phi_n$ is the image of the integer
-polynomial $\Phi_n$](lean:Polynomial.map_cyclotomic_int), and for $n \ge 1$ [it is irreducible over the rationals](lean:Polynomial.cyclotomic.irreducible_rat),
+the polynomial $\Phi_n$ is the product of $x - \zeta$ over the primitive $n$-th
+roots $\zeta$, and for $n \ge 1$
+a complex number is a root of $\Phi_n$ exactly when it is a primitive $n$-th
+root of unity. Its
+degree is $\varphi(n)$. Its coefficients are integers: over any ring, $\Phi_n$ is the image of the integer
+polynomial $\Phi_n$, and for $n \ge 1$ it is irreducible over the rationals,
 so all primitive $n$-th roots are conjugate algebraic numbers.
 
 ## In Mathlib

@@ -1,8 +1,3 @@
----
-article_id: af_609f19bb24bc6b6b3ccd7e4d
-concept: RingHom
----
-
 A **ring morphism**, or ring homomorphism, is a map between two [rings](trough:Ring)
 that respects addition, multiplication and the multiplicative identity. Ring
 morphisms are the means of comparing rings: reduction of integers modulo $n$,
@@ -14,7 +9,7 @@ organized around them.
 ## Definition
 
 Let $R$ and $S$ be rings with identity. A map $f \colon R \to S$ is a
-[ring morphism](lean:RingHom) if, for all $x, y \in R$,
+ring morphism if, for all $x, y \in R$,
 
 $$f(x + y) = f(x) + f(y), \qquad f(xy) = f(x)\,f(y), \qquad f(1) = 1.$$
 
@@ -26,57 +21,57 @@ $\mathbb{Z} \to \mathbb{Z}$ preserves sums and products but sends $1$ to $0$,
 and the map $x \mapsto (x, 0)$ from $\mathbb{Z}$ to $\mathbb{Z} \times \mathbb{Z}$
 preserves sums and products but sends $1$ to $(1, 0)$, which is not the identity
 $(1, 1)$. A map that preserves only sums and products is called a morphism of
-[rings without identity](lean:NonUnitalRingHom).
+rings without identity.
 
 An isomorphism of rings is a ring morphism with an inverse ring morphism. As for
 groups, the inverse map of a bijective ring morphism automatically preserves the
-operations, so [every bijective ring morphism is an isomorphism](lean:RingEquiv.ofBijective).
+operations, so every bijective ring morphism is an isomorphism.
 
 ## Examples
 
-- The [identity map of a ring is a ring morphism](lean:RingHom.id), and
-  [the composite of two ring morphisms is a ring morphism](lean:RingHom.comp),
+- The identity map of a ring is a ring morphism, and
+  the composite of two ring morphisms is a ring morphism,
   so rings and their morphisms form a [category](trough:RingCat).
 - For every ring $R$ there is a ring morphism from the
-  [integers](trough:Int) to $R$, [sending $n$ to $n \cdot 1$](lean:Int.castRingHom),
-  and [any two ring morphisms from $\mathbb{Z}$ to $R$ are equal](lean:RingHom.ext_int).
+  [integers](trough:Int) to $R$, sending $n$ to $n \cdot 1$,
+  and any two ring morphisms from $\mathbb{Z}$ to $R$ are equal.
   Its image is the smallest subring of $R$, and for $R = \mathbb{Z}/n\mathbb{Z}$ this
   morphism is reduction modulo $n$.
 - For an ideal $I$ of a commutative ring $R$, the
-  [map sending $x$ to its class $x + I$](lean:Ideal.Quotient.mk) is a
-  [surjective](lean:Ideal.Quotient.mk_surjective) ring morphism from $R$ onto the quotient ring $R/I$, and
-  [its kernel is $I$](lean:Ideal.mk_ker).
+  map sending $x$ to its class $x + I$ is a
+  surjective ring morphism from $R$ onto the quotient ring $R/I$, and
+  its kernel is $I$.
 - For a commutative ring $R$ and an element $a \in R$,
-  [evaluation at $a$ is a ring morphism](lean:Polynomial.evalRingHom) from the
+  evaluation at $a$ is a ring morphism from the
   [polynomial ring](trough:Polynomial) $R[X]$ to $R$, sending $p$ to the
   [value](trough:Polynomial.eval) $p(a)$.
 - For rings $R$ and $S$, the
-  [projection from the product ring $R \times S$ to $R$](lean:RingHom.fst) is a
+  projection from the product ring $R \times S$ to $R$ is a
   ring morphism (see [product of rings](trough:Pi.ring), of which $R \times S$ is
   the case of two factors).
 - If $R$ is a commutative ring of prime [characteristic](trough:CharP) $p$, the
   binomial coefficients $\binom{p}{k}$ with $0 < k < p$ vanish in $R$, so
   $(x + y)^p = x^p + y^p$ and the
-  [map $x \mapsto x^p$ is a ring morphism](lean:frobenius) of $R$ to itself, the
+  map $x \mapsto x^p$ is a ring morphism of $R$ to itself, the
   [Frobenius morphism](trough:frobenius).
-- [Complex conjugation is a ring isomorphism](lean:Complex.conjAe) of the complex
+- Complex conjugation is a ring isomorphism of the complex
   numbers to themselves; it fixes every real number, so it is even an isomorphism
   of algebras over the real numbers.
 
 ## Properties
 
 Let $f \colon R \to S$ be a ring morphism. Besides $f(0) = 0$ and $f(1) = 1$, it
-[preserves negatives](lean:RingHom.map_neg) and
-[differences](lean:RingHom.map_sub), $f(x - y) = f(x) - f(y)$, and
-[natural-number powers](lean:RingHom.map_pow), $f(x^n) = f(x)^n$. Since
+preserves negatives and
+differences, $f(x - y) = f(x) - f(y)$, and
+natural-number powers, $f(x^n) = f(x)^n$. Since
 $f(u)f(u^{-1}) = f(u^{-1})f(u) = f(1) = 1$, it
-[sends units to units](lean:IsUnit.map), with $f(u)^{-1} = f(u^{-1})$.
+sends units to units, with $f(u)^{-1} = f(u^{-1})$.
 
 If $S$ is not the zero ring then neither is $R$, because $f(1) = 1 \neq 0 = f(0)$
 forces $1 \neq 0$ in $R$; equivalently,
-[a ring with a morphism to a nonzero ring is nonzero](lean:RingHom.domain_nontrivial).
+a ring with a morphism to a nonzero ring is nonzero.
 A ring morphism from a [field](trough:Field) $K$ to a nonzero ring is
-[injective](lean:RingHom.injective): its kernel is an ideal of $K$ not
+injective: its kernel is an ideal of $K$ not
 containing $1$, hence zero. Mathlib proves this for every simple ring, a nonzero
 ring whose only two-sided ideals are $0$ and the whole ring, which includes all
 fields and division rings.
@@ -85,21 +80,21 @@ For the rest of this section $R$ and $S$ are commutative. Two sets are
 attached to $f$: an ideal of $R$ and a subring of $S$.
 
 - The **kernel** $\ker f = \{ x \in R : f(x) = 0 \}$ is
-  [an ideal of $R$](lean:RingHom.ker), and
-  [$f$ is injective exactly when its kernel is zero](lean:RingHom.injective_iff_ker_eq_bot),
+  an ideal of $R$, and
+  $f$ is injective exactly when its kernel is zero,
   since $f(x) = f(y)$ if and only if $x - y \in \ker f$. If $S$ is nonzero and has
   no zero divisors, for instance if $S$ is a field, then
-  [the kernel is a prime ideal](lean:RingHom.ker_isPrime).
-- The **image** $f(R)$ is [a subring of $S$](lean:RingHom.range) (see
+  the kernel is a prime ideal.
+- The **image** $f(R)$ is a subring of $S$ (see
   [subring](trough:Subring)).
 
-More generally, [the preimage of an ideal of $S$ is an ideal of $R$](lean:Ideal.comap), and
-[the preimage of a prime ideal is a prime ideal](lean:Ideal.comap_isPrime) (see
+More generally, the preimage of an ideal of $S$ is an ideal of $R$, and
+the preimage of a prime ideal is a prime ideal (see
 [prime ideal](trough:Ideal.IsPrime)). The image of an ideal need not be an
 ideal: the image of $\mathbb{Z}$ under the inclusion into $\mathbb{Q}$ is not
 an ideal of $\mathbb{Q}$. The
 [first isomorphism theorem](trough:RingHom.quotientKerEquivOfSurjective) joins
-kernel and image: [$R / \ker f$ is isomorphic to the image of $f$](lean:RingHom.quotientKerEquivRange).
+kernel and image: $R / \ker f$ is isomorphic to the image of $f$.
 Since every ideal is the kernel of its quotient map, the ideals of $R$ are
 exactly the kernels of ring morphisms out of $R$.
 
@@ -107,7 +102,7 @@ exactly the kernels of ring morphisms out of $R$.
 
 A ring morphism $i \colon R \to S$ from a commutative ring $R$ whose image
 commutes with every element of $S$
-[makes $S$ an algebra over $R$](<lean:RingHom.toAlgebra'>), with $r \cdot s = i(r)\,s$;
+makes $S$ an algebra over $R$, with $r \cdot s = i(r)\,s$;
 see [associative algebra](trough:Algebra). Ring morphisms are in particular
 [monoid morphisms](trough:MonoidHom) for multiplication and group morphisms for
 addition, and the kernel, image and first isomorphism theorem above parallel

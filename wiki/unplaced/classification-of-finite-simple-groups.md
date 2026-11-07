@@ -1,8 +1,3 @@
----
-article_id: af_a9d2672d3ecc556269ffce58
-concept: 1000:Q1340623
----
-
 The **classification of finite simple groups** is the theorem that every finite
 [simple group](trough:IsSimpleGroup) belongs to one of a few explicitly described infinite families or
 is one of 26 sporadic groups. Since every finite [group](trough:Group) is assembled from simple
@@ -12,7 +7,7 @@ blocks of finite group theory. Its proof is among the longest in mathematics.
 ## Statement
 
 A group is simple if it is nontrivial and its only [normal subgroups](trough:Subgroup.Normal) are the trivial
-subgroup and the whole group ([the definition](lean:IsSimpleGroup)). The classification
+subgroup and the whole group (the definition). The classification
 states that every finite simple group is isomorphic to a group in one of the
 following four classes:
 
@@ -33,17 +28,17 @@ of Lie type.
 
 - Every group of prime order is simple, since by
   [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card) its only subgroups are the trivial one and the whole
-  group ([groups of prime order are simple](lean:isSimpleGroup_of_prime_card)).
-  Conversely, [an abelian group is simple exactly when its order is prime](lean:CommGroup.is_simple_iff_prime_card),
+  group (groups of prime order are simple).
+  Conversely, an abelian group is simple exactly when its order is prime,
   which settles the abelian case of the classification (see
   [classification of abelian simple groups](trough:CommGroup.is_simple_iff_prime_card)).
-- [The alternating group on at least five letters is simple](lean:alternatingGroup.isSimpleGroup)
+- The alternating group on at least five letters is simple
   (see [alternating groups on 5 letters or more are simple](trough:alternatingGroup.isSimpleGroup)). The smallest
   non-abelian simple group is $A_5$, of order $60$.
 - For a prime power $q$, the projective special linear group $\mathrm{PSL}_2(q)$
   has order $q(q^2 - 1)/\gcd(2, q - 1)$ and is simple when $q \ge 4$:
-  [over a finite field with at least four elements, the projective special linear group of
-  $2 \times 2$ matrices is simple](lean:Matrix.ProjectiveSpecialLinearGroup.rank_two_simple).
+  over a finite field with at least four elements, the projective special linear group of
+  $2 \times 2$ matrices is simple.
   The group $\mathrm{PSL}_2(7)$, of order $168$, is the second smallest
   non-abelian simple group.
 - The sporadic groups include the five Mathieu groups $M_{11}$, $M_{12}$, $M_{22}$,
@@ -70,19 +65,19 @@ elements; and the classification of the finite doubly transitive permutation
 groups.
 
 Composition factors also detect solvability. A group
-is [solvable](lean:Group.IsSolvable) when its derived series reaches the trivial
+is solvable when its derived series reaches the trivial
 group, and solvability passes to and from extensions:
-[a group is solvable exactly when a normal subgroup and the corresponding quotient
-are](lean:Group.isSolvable_iff_subgroup_quotient). A finite group is thus solvable
+a group is solvable exactly when a normal subgroup and the corresponding quotient
+are. A finite group is thus solvable
 exactly when all its composition factors are cyclic of prime order, because
-[a simple group is solvable if and only if it is commutative](lean:IsSimpleGroup.comm_iff_isSolvable),
-and [a commutative simple group has prime order](lean:CommGroup.is_simple_iff_prime_card), hence is cyclic.
+a simple group is solvable if and only if it is commutative,
+and a commutative simple group has prime order, hence is cyclic.
 
 ## Proof
 
 Only an outline can be given. A non-abelian finite simple group is not a
-$p$-group, since [a finite $p$-group is simple only when it has
-order $p$](lean:IsPGroup.isSimpleGroup_iff_card_eq); by
+$p$-group, since a finite $p$-group is simple only when it has
+order $p$; by
 Burnside's theorem its order even has at least three
 distinct prime factors. The starting point is the
 Feit–Thompson theorem, that every finite group of odd order is solvable; hence every
@@ -102,15 +97,15 @@ identify the group with a known simple group.
 
 Mathlib does not contain the classification, nor the Feit–Thompson theorem it
 relies on. It has the basic notions the statement uses:
-[simple groups](lean:IsSimpleGroup), with no finiteness assumed, and
-[solvable groups](lean:Group.IsSolvable), defined through the derived series. It
+simple groups, with no finiteness assumed, and
+solvable groups, defined through the derived series. It
 proves the abelian case for groups of any size, measuring cardinality so that an
 infinite group counts as having order $0$, which is not prime; the simplicity of
 the alternating groups on five or more letters; and the simplicity of the
 projective special linear groups of $2 \times 2$ matrices, in a version that
-[covers every field other than those with two or three elements](lean:Matrix.ProjectiveSpecialLinearGroup.rank_two_simple'),
+covers every field other than those with two or three elements,
 infinite fields included. Its
-[Jordan–Hölder theorem](lean:CompositionSeries.jordan_holder) is proved for an
+Jordan–Hölder theorem is proved for an
 abstract lattice with a notion of maximality, and the source notes that providing
 this structure for the lattice of subgroups of a group is still to be done.
 

@@ -1,8 +1,3 @@
----
-article_id: af_b3d492ecae122dca76c7baa7
-concept: AlgebraicClosure
----
-
 The **existence of an algebraic closure** is the theorem that every [field](trough:Field) $k$ has an [algebraic extension](trough:Algebra.IsAlgebraic)
 $\bar k$ that is [algebraically closed](trough:IsAlgClosed). Such a field $\bar k$ is called an
 algebraic closure of $k$; it is unique up to isomorphism over $k$. The theorem
@@ -16,32 +11,32 @@ A field is algebraically closed when every nonconstant polynomial over it has a
 root; equivalently, every nonzero polynomial over it is a constant times a
 product of linear factors.
 Over an algebraically closed field,
-[every polynomial of nonzero degree has a root](lean:IsAlgClosed.exists_root).
+every polynomial of nonzero degree has a root.
 An extension $K$ of a field $k$ is an algebraic closure of $k$ when
-[$K$ is algebraically closed and algebraic over $k$](lean:isAlgClosure_iff),
+$K$ is algebraically closed and algebraic over $k$,
 that is, every element of $K$ is a root of a nonzero polynomial with
 coefficients in $k$.
 
 **Theorem.** Every field $k$ has an algebraic closure: there is a field
 $\bar k$ containing $k$ such that
-[$\bar k$ is algebraic over $k$](lean:AlgebraicClosure.isAlgebraic) and
-[$\bar k$ is algebraically closed](lean:AlgebraicClosure.isAlgClosed).
-Mathlib constructs such a field, [the algebraic closure of $k$](lean:AlgebraicClosure),
+$\bar k$ is algebraic over $k$ and
+$\bar k$ is algebraically closed.
+Mathlib constructs such a field, the algebraic closure of $k$,
 for every field $k$.
 
 ## Examples
 
 - An algebraically closed field is
-  [an algebraic closure of itself](lean:IsAlgClosed.instIsAlgClosure).
+  an algebraic closure of itself.
 - By the [fundamental theorem of algebra](trough:Complex.isAlgClosed),
-  [the complex numbers form an algebraically closed field](lean:Complex.isAlgClosed).
+  the complex numbers form an algebraically closed field.
   Every complex number $a + bi$ is a root of the real polynomial
   $x^2 - 2ax + a^2 + b^2$, so $\mathbb{C}$ is algebraic over $\mathbb{R}$ and is an
   algebraic closure of the [real numbers](trough:Real).
 - $\mathbb{C}$ is not algebraic over the [rational numbers](trough:Rat), since it contains
   [transcendental](trough:Transcendental) numbers. But whenever $E$ is an algebraically closed field
   containing a field $F$,
-  [the elements of $E$ algebraic over $F$ form an algebraic closure of $F$](lean:algebraicClosure.isAlgClosure).
+  the elements of $E$ algebraic over $F$ form an algebraic closure of $F$.
   So the algebraic numbers, the complex numbers that are roots of nonzero
   rational polynomials, form an algebraic closure of $\mathbb{Q}$; it is a
   countable field.
@@ -52,18 +47,18 @@ for every field $k$.
 
 ## Properties
 
-- **Uniqueness.** [Any two algebraic closures of $k$ are isomorphic as extensions of $k$](lean:IsAlgClosure.equiv).
+- **Uniqueness.** Any two algebraic closures of $k$ are isomorphic as extensions of $k$.
   The isomorphism is not unique in general: complex conjugation is a nontrivial
   automorphism of $\mathbb{C}$ over $\mathbb{R}$.
 - **Embedding.** If $L$ is an algebraic extension of $k$ and $\Omega$ is an
   algebraically closed field containing $k$, then
-  [there is a homomorphism from $L$ to $\Omega$ fixing $k$](lean:IsAlgClosed.lift);
+  there is a homomorphism from $L$ to $\Omega$ fixing $k$;
   it is injective, as is every homomorphism out of a field. In particular every
   algebraic extension of $k$, such as the splitting field of a polynomial,
   is isomorphic to a subfield of $\bar k$ containing $k$.
-- **Normality and separability.** [An algebraic closure is a normal extension](lean:IsAlgClosure.normal),
+- **Normality and separability.** An algebraic closure is a normal extension,
   since every polynomial over $k$ splits in it. When $k$ has [characteristic zero](trough:CharZero),
-  [an algebraic closure of $k$ is a separable extension](lean:IsAlgClosure.separable).
+  an algebraic closure of $k$ is a separable extension.
 - **Size.** Every element of $\bar k$ is one of the finitely many roots of a
   polynomial over $k$, so $\bar k$ has at most as many elements as the set of
   polynomials over $k$. Since $k$ embeds in $\bar k$, an infinite field has an
@@ -85,7 +80,7 @@ $$f(x) - (x - X_{f,1})(x - X_{f,2})\cdots(x - X_{f,n})$$
 for every monic $f$. The quotient of $A$ by an ideal containing $I$ is a ring in
 which each such $f$ factors as the product of the linear factors $x - X_{f,i}$.
 
-First, [$I$ is a proper ideal](lean:AlgebraicClosure.spanCoeffs_ne_top). If $1$ lay in $I$, it would be a finite
+First, $I$ is a proper ideal. If $1$ lay in $I$, it would be a finite
 combination of the generators, involving only finitely many polynomials
 $f_1, \dots, f_m$. In a splitting field of the product $f_1 \cdots f_m$, each
 $f_j$ factors into linear factors; sending the variables $X_{f_j,i}$ to the
@@ -93,16 +88,16 @@ roots of $f_j$, listed with multiplicity, and the remaining variables to any
 value gives a homomorphism from $A$ that kills every generator involved, yet
 sends $1$ to $1$, a contradiction.
 
-Next, [every proper ideal lies in a maximal ideal](lean:Ideal.exists_le_maximal), so $I$ lies in a
+Next, every proper ideal lies in a maximal ideal, so $I$ lies in a
 [maximal ideal](trough:Ideal.IsMaximal) $M$. Since
-[an ideal is maximal exactly when the quotient by it is a field](lean:Ideal.Quotient.maximal_ideal_iff_isField_quotient),
+an ideal is maximal exactly when the quotient by it is a field,
 the [quotient ring](trough:Ideal.Quotient.ring) $\bar k = A/M$ is a field. It contains a copy of $k$, and in it every
 monic polynomial over $k$ splits. It is generated over $k$ by the images of the
 variables, each a root of some polynomial over $k$, so $\bar k$ is algebraic
 over $k$.
 
 Finally, $\bar k$ is algebraically closed. By a general criterion,
-[a field in which every monic irreducible polynomial has a root is algebraically closed](lean:IsAlgClosed.of_exists_root).
+a field in which every monic irreducible polynomial has a root is algebraically closed.
 Let $g$ be such a polynomial over $\bar k$ and $\alpha$ a root of $g$ in some extension
 field. Then $\alpha$ is algebraic over $\bar k$, which is algebraic over $k$,
 so $\alpha$ is algebraic over $k$. Its minimal polynomial over $k$ splits in

@@ -1,8 +1,3 @@
----
-article_id: af_8bdaa7d3a0c7c84e48fe8b8a
-concept: Matrix.unitaryGroup
----
-
 The **unitary group** $U(n)$ is the [group](trough:Group) of $n \times n$ complex
 [matrices](trough:Matrix) $U$ satisfying $U^*U = I$, where $U^*$ is the conjugate
 transpose of $U$. These are exactly the matrices of the linear maps of $\mathbb{C}^n$
@@ -21,13 +16,13 @@ $(A^*)_{ij} = \overline{A_{ji}}$, where the bar denotes conjugation of
 $$U^*U = UU^* = I,$$
 
 that is, if $U$ is invertible with inverse $U^*$. The
-[set $U(n)$ of unitary $n \times n$ matrices](lean:Matrix.unitaryGroup) is closed under
+set $U(n)$ of unitary $n \times n$ matrices is closed under
 products, since $(UV)^*(UV) = V^*U^*UV = I$ and likewise
 $(UV)(UV)^* = UVV^*U^* = I$, and under inverses, so it is a
 [subgroup](trough:Subgroup) of the [general linear group](trough:Matrix.GeneralLinearGroup)
 $GL_n(\mathbb{C})$. For square matrices either equation alone suffices:
-[$U$ is unitary exactly when $U^*U = I$](lean:Matrix.mem_unitaryGroup_iff'), and
-[exactly when $UU^* = I$](lean:Matrix.mem_unitaryGroup_iff).
+$U$ is unitary exactly when $U^*U = I$, and
+exactly when $UU^* = I$.
 
 With the inner product $\langle x, y \rangle = \sum_k \overline{x_k}\, y_k$ on
 $\mathbb{C}^n$, the $(i, j)$ entry of $U^*U$ is the inner product of the $i$-th and
@@ -35,9 +30,9 @@ $j$-th columns of $U$. So $U$ is unitary if and only if its columns form an
 orthonormal basis of $\mathbb{C}^n$, and likewise for its rows. Equivalently,
 $\langle Ux, Uy \rangle = \langle x, y \rangle$ for all vectors $x$ and $y$. In the
 language of [inner product spaces](trough:InnerProductSpace),
-[the matrix of a linear isometric equivalence with respect to orthonormal bases is unitary](lean:LinearIsometryEquiv.toMatrix_mem_unitaryGroup),
+the matrix of a linear isometric equivalence with respect to orthonormal bases is unitary,
 and in particular
-[the change-of-basis matrix between two orthonormal bases is unitary](lean:OrthonormalBasis.toMatrix_orthonormalBasis_mem_unitary).
+the change-of-basis matrix between two orthonormal bases is unitary.
 Mathlib states both facts for finite-dimensional real or complex inner product spaces.
 
 ## Examples
@@ -46,8 +41,8 @@ Mathlib states both facts for finite-dimensional real or complex inner product s
   is, $|z| = 1$. So $U(1)$ is the group of complex numbers $e^{i\theta}$ of absolute
   value $1$ under multiplication.
 - **Diagonal matrices.**
-  [A diagonal matrix is unitary exactly when its tuple of diagonal entries is unitary in the product ring](lean:Matrix.diagonal_mem_unitary),
-  [that is, when every diagonal entry is unitary](lean:Pi.mem_unitary_iff); over
+  A diagonal matrix is unitary exactly when its tuple of diagonal entries is unitary in the product ring,
+  that is, when every diagonal entry is unitary; over
   $\mathbb{C}$ this means every diagonal entry has absolute value $1$.
 - **Real matrices.** A real matrix is unitary exactly when it is orthogonal, so
   $U(n)$ contains the orthogonal group $O(n)$, including all $n \times n$ permutation
@@ -61,8 +56,8 @@ Mathlib states both facts for finite-dimensional real or complex inner product s
 
 ## Properties
 
-- **Inverse.** [The inverse of $U$ in the group is $U^*$](lean:Matrix.UnitaryGroup.inv_val).
-- **Determinant.** [The determinant of a unitary matrix satisfies $\overline{\det U}\,\det U = 1$](lean:Matrix.det_of_mem_unitary),
+- **Inverse.** The inverse of $U$ in the group is $U^*$.
+- **Determinant.** The determinant of a unitary matrix satisfies $\overline{\det U}\,\det U = 1$,
   so $|\det U| = 1$. The [determinant](trough:Matrix.det) is therefore a
   homomorphism from $U(n)$ to $U(1)$. For $n \ge 1$ it is onto, since
   $\operatorname{diag}(\lambda, 1, \dots, 1)$ is unitary with determinant $\lambda$
@@ -70,19 +65,19 @@ Mathlib states both facts for finite-dimensional real or complex inner product s
   [special unitary group](trough:Matrix.specialUnitaryGroup) $SU(n)$.
 - **Eigenvalues and diagonalization.** If $Ux = \lambda x$ with $x \neq 0$, then
   $\|x\| = \|Ux\| = |\lambda|\,\|x\|$, so every eigenvalue has absolute value $1$.
-  A unitary matrix [commutes with its conjugate transpose](lean:isStarNormal_of_mem_unitary),
+  A unitary matrix commutes with its conjugate transpose,
   so it is [normal](trough:IsStarNormal), and by the spectral theorem for normal
   matrices it can be written $VDV^*$ with $V$ unitary and $D$ diagonal with
   entries on the unit circle.
 - **Unitary diagonalization.** For a Hermitian matrix $A$ (one with $A^* = A$) with
   real or complex entries,
-  [there is a unitary $U$ and a real diagonal matrix $D$ with $A = UDU^*$](lean:Matrix.IsHermitian.spectral_theorem),
+  there is a unitary $U$ and a real diagonal matrix $D$ with $A = UDU^*$,
   the matrix form of the
   [diagonalization of self-adjoint endomorphisms](trough:LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply).
-- **Bounded entries.** [Every entry of a real or complex unitary matrix has absolute value at most $1$](lean:entry_norm_bound_of_unitary).
-- **Closure properties.** [The transpose of $U$ is unitary exactly when $U$ is](lean:Matrix.transpose_mem_unitaryGroup_iff),
-  and so is [the entrywise conjugate of $U$](lean:Matrix.map_star_mem_unitaryGroup_iff).
-  [The Kronecker product of two unitary matrices is unitary](lean:Matrix.kronecker_mem_unitary).
+- **Bounded entries.** Every entry of a real or complex unitary matrix has absolute value at most $1$.
+- **Closure properties.** The transpose of $U$ is unitary exactly when $U$ is,
+  and so is the entrywise conjugate of $U$.
+  The Kronecker product of two unitary matrices is unitary.
 - **Topology.** $U(n)$ is a closed and bounded subset of the space of complex
   $n \times n$ matrices, hence compact. It is connected, has real dimension $n^2$,
   and its center consists of the scalar matrices $\lambda I$ with $|\lambda| = 1$.
@@ -91,14 +86,14 @@ Mathlib states both facts for finite-dimensional real or complex inner product s
 
 Unitarity makes sense in any ring or monoid with a star operation, an involution
 that reverses products:
-[an element $u$ is unitary when $u^*u = uu^* = 1$](lean:unitary), and
-[the unitary elements embed injectively into the group of invertible elements](lean:Unitary.toUnits_injective).
+an element $u$ is unitary when $u^*u = uu^* = 1$, and
+the unitary elements embed injectively into the group of invertible elements.
 For bounded operators on a Hilbert space, the adjoint plays the role of the
 conjugate transpose:
-[a unitary operator preserves inner products](lean:ContinuousLinearMap.inner_map_map_of_mem_unitary),
-and [the unitary operators form a group isomorphic to the group of linear isometric automorphisms of the space](lean:Unitary.linearIsometryEquiv).
+a unitary operator preserves inner products,
+and the unitary operators form a group isomorphic to the group of linear isometric automorphisms of the space.
 In a C*-algebra,
-[every point of the spectrum of a unitary element has absolute value $1$](lean:spectrum.norm_eq_one_of_unitary).
+every point of the spectrum of a unitary element has absolute value $1$.
 Other generalizations include the indefinite unitary groups $U(p, q)$, which
 preserve a Hermitian form of signature $(p, q)$, and unitary groups over other
 fields with an involution, such as a finite field of order $q^2$ with the map
@@ -109,15 +104,15 @@ $x \mapsto x^q$.
 Mathlib defines the unitary group for square matrices indexed by any finite type,
 with entries in any commutative ring carrying a star operation, an involution of
 the ring. The conjugate transpose is the
-[star operation on matrices](lean:Matrix.star_eq_conjTranspose), and over the
-complex numbers [the star operation is complex conjugation](lean:Complex.star_def),
+star operation on matrices, and over the
+complex numbers the star operation is complex conjugation,
 so the classical $U(n)$ is the case of complex entries indexed by $n$ elements. The
 unitary group is not built separately: it is the set of unitary elements of the
 matrix ring, packaged as a submonoid of matrices, and its group structure, with
 inverse given by the star operation, comes from the general construction. The
 definition asks for both $U^*U = I$ and $UU^* = I$, and the one-sided criteria above
 show either suffices.
-[The orthogonal group is defined as the unitary group for the trivial star operation](lean:Matrix.orthogonalGroup),
+The orthogonal group is defined as the unitary group for the trivial star operation,
 and the special unitary group as the unitary matrices of determinant $1$.
 
 ## Depends on

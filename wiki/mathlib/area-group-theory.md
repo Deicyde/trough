@@ -1,8 +1,3 @@
----
-article_id: af_e620bc4c5ed6c6bf13b0d972
-concept: area:General algebra/Group theory
----
-
 **Group theory** is the study of [groups](trough:Group): sets with an associative
 multiplication, an identity element and inverses. Groups record the symmetries of an
 object, whether the rotations of a polyhedron, the permutations of the roots of a
@@ -18,7 +13,7 @@ multiplication; a bijective morphism is an isomorphism. The first examples are t
 [symmetric groups](trough:Equiv.Perm) $\operatorname{Sym}(X)$ of all bijections of a
 set $X$ (in Mathlib, the permutation group of a type). Symmetric groups are universal: [Cayley's theorem](trough:Equiv.Perm.subgroupOfMulAction) says that
 every group is isomorphic to a group of permutations, namely
-[the image of any faithful action in the permutations of the set acted on](lean:Equiv.Perm.subgroupOfMulAction),
+the image of any faithful action in the permutations of the set acted on,
 for instance the action of the group on itself by multiplication.
 
 ## Subgroups, cosets and quotients
@@ -28,28 +23,28 @@ subset lies in a smallest one, the [subgroup it generates](trough:Subgroup.closu
 left cosets $gH$ of a subgroup $H$ partition $G$, and their number is the
 [index](trough:Subgroup.index) $[G : H]$. Since all cosets have the same size,
 [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card) follows: in a finite group,
-[the order of a subgroup divides the order of the group](lean:Subgroup.card_subgroup_dvd_card).
+the order of a subgroup divides the order of the group.
 
 The cosets of $H$ form a group under the multiplication $(aH)(bH) = abH$ exactly when
 $H$ is a [normal subgroup](trough:Subgroup.Normal), one that
-[contains every conjugate $gng^{-1}$ of each of its elements $n$](lean:Subgroup.Normal);
+contains every conjugate $gng^{-1}$ of each of its elements $n$;
 the result is the [quotient group](trough:QuotientGroup.Quotient.group) $G/H$. The
 kernel of a morphism is always normal, and the
 [first isomorphism theorem](trough:QuotientGroup.quotientKerEquivRange) identifies
-[the quotient by the kernel with the image](lean:QuotientGroup.quotientKerEquivRange).
+the quotient by the kernel with the image.
 The [second isomorphism theorem](trough:QuotientGroup.quotientInfEquivProdNormalQuotient)
 gives $H/(H \cap N) \cong HN/N$ for a subgroup $H$ and a normal subgroup $N$, and the
 [third](trough:QuotientGroup.quotientQuotientEquivQuotient) gives
 $(G/N)/(M/N) \cong G/M$ for normal subgroups $N \le M$. The largest abelian quotient of
 $G$ is its [abelianization](trough:Abelianization), the quotient by the commutator
-subgroup; [morphisms from $G$ to an abelian group correspond exactly to morphisms from the abelianization](lean:Abelianization.lift).
+subgroup; morphisms from $G$ to an abelian group correspond exactly to morphisms from the abelianization.
 
 ## Actions and counting
 
 A [group action](trough:MulAction) lets each element of $G$ move the points of a set $X$
 compatibly with multiplication. The points reachable from $x$ form its orbit, the
 elements fixing $x$ form its stabilizer $G_x$, and for a finite group
-[the size of the orbit times the order of the stabilizer is the order of the group](lean:MulAction.card_orbit_mul_card_stabilizer_eq_card_group).
+the size of the orbit times the order of the stabilizer is the order of the group.
 Splitting $X$ into orbits gives the [class formula](trough:MulAction.selfEquivSigmaOrbitsQuotientStabilizer),
 which writes $X$ as a disjoint union of the coset spaces $G/G_x$ over one representative $x$
 of each orbit. Averaging fixed points over the group gives the
@@ -59,28 +54,28 @@ finite group with finitely many orbits,
 $$\sum_{g \in G} |X^g| = |X/G| \cdot |G|,$$
 
 where $X^g$ is the set of points fixed by $g$
-([Mathlib's statement](lean:MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group)).
+(Mathlib's statement).
 Applied to a group acting on itself by conjugation, the orbits are the conjugacy classes
 and the orbit decomposition becomes the class equation, a basic tool for finite groups;
 for instance it shows that
-[a nontrivial finite $p$-group has nontrivial center](lean:IsPGroup.center_nontrivial).
+a nontrivial finite $p$-group has nontrivial center.
 
 ## Finite groups and Sylow theory
 
 The converse of Lagrange's theorem fails in general, but primes rescue part of it. By
 [Cauchy's theorem](trough:exists_prime_orderOf_dvd_card), if a prime $p$ divides the
 order of a finite group, then
-[the group has an element of order $p$](lean:exists_prime_orderOf_dvd_card). The
+the group has an element of order $p$. The
 [first Sylow theorem](trough:Sylow.exists_subgroup_card_pow_prime) goes further: for
 every power $p^n$ dividing the order of a finite group,
-[there is a subgroup of order $p^n$](lean:Sylow.exists_subgroup_card_pow_prime); the
+there is a subgroup of order $p^n$; the
 largest such subgroups are the Sylow $p$-subgroups. By the
 [second Sylow theorem](trough:Sylow.isPretransitive_of_finite)
-[all Sylow $p$-subgroups are conjugate](lean:Sylow.isPretransitive_of_finite), and by
+all Sylow $p$-subgroups are conjugate, and by
 the [third](trough:card_sylow_modEq_one)
-[their number is congruent to $1$ modulo $p$](lean:card_sylow_modEq_one). Groups whose
+their number is congruent to $1$ modulo $p$. Groups whose
 order is a power of a prime have a rich structure of their own: every
-[finite $p$-group is nilpotent](lean:IsPGroup.isNilpotent), in the sense of
+finite $p$-group is nilpotent, in the sense of
 [nilpotent groups](trough:Group.IsNilpotent), whose upper central series reaches the
 whole group after finitely many steps.
 
@@ -91,11 +86,11 @@ subgroups are itself and the trivial subgroup; simple groups cannot be broken in
 normal subgroup and a quotient, so they play the role of prime factors. Among abelian
 groups the question is settled by the
 [classification of abelian simple groups](trough:CommGroup.is_simple_iff_prime_card):
-[an abelian group is simple exactly when its order is prime](lean:CommGroup.is_simple_iff_prime_card).
+an abelian group is simple exactly when its order is prime.
 The most familiar infinite family of nonabelian simple groups comes from the
 [alternating group](trough:alternatingGroup) $A_n$ of even permutations, since
 [alternating groups on 5 letters or more are simple](trough:alternatingGroup.isSimpleGroup)
-([Mathlib's statement](lean:alternatingGroup.isSimpleGroup)). The
+(Mathlib's statement). The
 Feit–Thompson theorem, that every finite group of odd order is
 solvable, and the classification of finite simple groups are two
 landmarks of finite group theory that Mathlib does not yet contain.
@@ -103,22 +98,22 @@ landmarks of finite group theory that Mathlib does not yet contain.
 For abelian groups a full description exists in the finitely generated case: by the
 [structure theorem](trough:AddCommGroup.equiv_free_prod_directSum_zmod), every finitely
 generated abelian group is
-[isomorphic to the product of $\mathbb{Z}^n$ and a finite direct sum of cyclic groups of prime power order](lean:AddCommGroup.equiv_free_prod_directSum_zmod).
+isomorphic to the product of $\mathbb{Z}^n$ and a finite direct sum of cyclic groups of prime power order.
 
 ## Free groups and presentations
 
 The [free group](trough:FreeGroup) on a set $S$ consists of reduced words in the
 elements of $S$ and their inverses, and
-[each map from $S$ to a group $H$ extends to exactly one morphism from the free group to $H$](lean:FreeGroup.lift).
+each map from $S$ to a group $H$ extends to exactly one morphism from the free group to $H$.
 Every group is therefore a quotient of a free group, and a
 [presented group](trough:PresentedGroup) is the quotient of a free group by the normal
 subgroup generated by a set of relations, so that groups can be specified by generators
 and relations. Generators pass to subgroups through
 [Schreier's lemma](trough:Subgroup.closure_mul_image_eq): if $S$ generates $G$ and $R$
 is a set of representatives of the right cosets of a subgroup $H$ with $1 \in R$, then
-[$H$ is generated by the elements $rs\,\overline{rs}^{\,-1}$ with $r \in R$ and $s \in S$](lean:Subgroup.closure_mul_image_eq),
+$H$ is generated by the elements $rs\,\overline{rs}^{\,-1}$ with $r \in R$ and $s \in S$,
 where $\overline{g}$ is the representative of the coset $Hg$. In particular
-[a subgroup of finite index in a finitely generated group is finitely generated](lean:Subgroup.fg_of_index_ne_zero).
+a subgroup of finite index in a finitely generated group is finitely generated.
 
 ## In Mathlib
 

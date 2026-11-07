@@ -1,8 +1,3 @@
----
-article_id: af_5613a68680892121d5be3db0
-concept: NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT
----
-
 The **Dirichlet class number formula**, also called the analytic class number
 formula, expresses the behaviour of the Dedekind zeta function of a number field
 near $s = 1$ in terms of the field's basic arithmetic invariants: its class
@@ -19,7 +14,7 @@ arithmetic progressions.
 Let $K$ be a number field of degree $n$ over $\mathbb{Q}$ with ring of integers
 $\mathcal{O}_K$. The norm of a nonzero [ideal](trough:Ideal) $I$ of $\mathcal{O}_K$ is the
 size of the finite quotient ring $\mathcal{O}_K / I$. The
-[Dedekind zeta function of $K$ is the Dirichlet series $\zeta_K(s) = \sum_{m \ge 1} a_m m^{-s}$, where $a_m$ is the number of ideals of $\mathcal{O}_K$ of norm $m$](lean:NumberField.dedekindZeta).
+Dedekind zeta function of $K$ is the Dirichlet series $\zeta_K(s) = \sum_{m \ge 1} a_m m^{-s}$, where $a_m$ is the number of ideals of $\mathcal{O}_K$ of norm $m$.
 It converges for complex $s$ with real part greater than $1$; for $K = \mathbb{Q}$ it
 agrees there with the Riemann zeta function.
 
@@ -31,10 +26,10 @@ The formula involves the following invariants of $K$.
   arising in this way. An embedding and its complex conjugate give the same place;
   the place is real when $\sigma$ maps $K$ into $\mathbb{R}$ and complex otherwise, so
   complex places correspond to pairs of conjugate non-real embeddings and
-  [$r_1 + 2r_2 = n$](lean:NumberField.InfinitePlace.card_add_two_mul_card_eq_rank).
-- $h_K$ is the [class number](lean:NumberField.classNumber), the order of the ideal
+  $r_1 + 2r_2 = n$.
+- $h_K$ is the class number, the order of the ideal
   class group, which is [finite](trough:NumberField.RingOfIntegers.instFintypeClassGroup);
-  [$h_K = 1$ exactly when $\mathcal{O}_K$ is a principal ideal domain](lean:NumberField.classNumber_eq_one_iff).
+  $h_K = 1$ exactly when $\mathcal{O}_K$ is a principal ideal domain.
 - $R_K$ is the regulator. By the
   [Dirichlet unit theorem](trough:NumberField.Units.exist_unique_eq_mul_prod), there
   are units $\varepsilon_1, \dots, \varepsilon_r$ of $\mathcal{O}_K$, where
@@ -45,15 +40,15 @@ The formula involves the following invariants of $K$.
   $n_v \log |\varepsilon_i|_v$, where $v$ runs over the infinite places other than
   $v_0$, and $n_v$ is $1$ for a real place and $2$ for a complex place. The value
   depends neither on the system of fundamental units nor on the choice of $v_0$.
-- $w_K$ is [the number of roots of unity in $K$, that is, the order of the torsion subgroup of the unit group of $\mathcal{O}_K$](lean:NumberField.Units.torsionOrder).
-- $d_K$ is the [discriminant of $K$, the discriminant of an integral basis of $\mathcal{O}_K$](lean:NumberField.discr).
+- $w_K$ is the number of roots of unity in $K$, that is, the order of the torsion subgroup of the unit group of $\mathcal{O}_K$.
+- $d_K$ is the discriminant of $K$, the discriminant of an integral basis of $\mathcal{O}_K$.
 
-With these, [$(s - 1)\zeta_K(s)$ tends to the following constant as the real number $s$ decreases to $1$](lean:NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT):
+With these, $(s - 1)\zeta_K(s)$ tends to the following constant as the real number $s$ decreases to $1$:
 
 $$\lim_{s \to 1^+} (s - 1)\,\zeta_K(s) = \frac{2^{r_1} (2\pi)^{r_2}\, h_K\, R_K}{w_K \sqrt{|d_K|}}.$$
 
-[The constant on the right-hand side](lean:NumberField.dedekindZeta_residue) is
-[strictly positive](lean:NumberField.dedekindZeta_residue_pos), so $\zeta_K(s)$
+The constant on the right-hand side is
+strictly positive, so $\zeta_K(s)$
 tends to infinity as $s \to 1^+$.
 
 ## Examples
@@ -61,7 +56,7 @@ tends to infinity as $s \to 1^+$.
 - **The rational numbers.** Here $r_1 = 1$, $r_2 = 0$, $h_K = 1$, $R_K = 1$,
   $w_K = 2$ and $d_K = 1$, so the right-hand side is $1$. This matches the fact that
   the Riemann zeta function satisfies
-  [$(s - 1)\zeta(s) \to 1$ as $s \to 1$ in the complex plane](lean:riemannZeta_residue_one).
+  $(s - 1)\zeta(s) \to 1$ as $s \to 1$ in the complex plane.
 - **Quadratic fields.** If $K$ is quadratic with discriminant $d = d_K$, then
   $\zeta_K(s) = \zeta(s)\,L(s, \chi_d)$. Here, for a Dirichlet character $\chi$, the
   Dirichlet $L$-function is $L(s, \chi) = \sum_{m \ge 1} \chi(m) m^{-s}$, and
@@ -94,17 +89,17 @@ modulo roots of unity, so that each principal ideal has exactly $w_K$ generators
 in the cone. Counting lattice points in the part of this cone where the norm is
 at most $t$, a region that scales with $t$, and comparing with its volume shows
 that
-[the number of nonzero ideals in $C$ of norm at most $t$, divided by $t$, tends to $2^{r_1}(2\pi)^{r_2} R_K / (w_K \sqrt{|d_K|})$ as $t \to \infty$](lean:NumberField.Ideal.tendsto_norm_le_and_mk_eq_div_atTop).
+the number of nonzero ideals in $C$ of norm at most $t$, divided by $t$, tends to $2^{r_1}(2\pi)^{r_2} R_K / (w_K \sqrt{|d_K|})$ as $t \to \infty$.
 The limit does not depend on $C$, so ideals are equidistributed among the classes.
 Summing over the $h_K$ classes,
-[the number of nonzero ideals of norm at most $t$, divided by $t$, tends to the right-hand side of the formula](lean:NumberField.Ideal.tendsto_norm_le_div_atTop₀).
+the number of nonzero ideals of norm at most $t$, divided by $t$, tends to the right-hand side of the formula.
 
 **From counting to the zeta function.** Partial summation writes a Dirichlet
 series with partial sums $A(t) = \sum_{m \le t} a_m$ as
 $\sum a_m m^{-s} = s \int_1^\infty A(t)\, t^{-s-1}\, dt$ for real $s > 1$. If $A(t)$
 is close to $\ell t$, the integral is close to $\ell s / (s - 1)$. This gives the
 general fact that
-[if the coefficients are nonnegative real numbers and $(a_1 + \cdots + a_m)/m \to \ell$ as $m \to \infty$, then $(s - 1)\sum a_m m^{-s} \to \ell$ as the real number $s$ decreases to $1$](lean:LSeries_tendsto_sub_mul_nhds_one_of_tendsto_sum_div_and_nonneg).
+if the coefficients are nonnegative real numbers and $(a_1 + \cdots + a_m)/m \to \ell$ as $m \to \infty$, then $(s - 1)\sum a_m m^{-s} \to \ell$ as the real number $s$ decreases to $1$.
 Applied to the ideal counts, it yields the formula.
 
 ## Consequences and generalizations
@@ -134,9 +129,9 @@ For this reason the formula is phrased as a one-sided limit of $(s - 1)\zeta_K(s
 as the real number $s$ decreases to $1$, rather than as the residue of a
 meromorphic function. The limiting value is a separate definition written out in
 the six invariants above. The regulator is defined as
-[the covolume of the lattice of logarithms of units](lean:NumberField.Units.regulator).
+the covolume of the lattice of logarithms of units.
 Mathlib fixes one system of fundamental units, and
-[for that system and any choice of the omitted place $v_0$, the regulator is the absolute value of the determinant described above](lean:NumberField.Units.regulator_eq_det).
+for that system and any choice of the omitted place $v_0$, the regulator is the absolute value of the determinant described above.
 The class number is the cardinality of the class group, and $r_1$ and $r_2$ are
 defined as numbers of infinite places.
 

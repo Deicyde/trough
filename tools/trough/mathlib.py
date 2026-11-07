@@ -838,12 +838,13 @@ def follow_pin(sources: Sources, directory: Path, parking: Path) -> list[dict]:
         new = replacement(key)
         return new if new in keys else None
 
+    modules = set((sources.deps or {}).get("modules") or {})
     paths = sorted(directory.glob("*.md")) if directory.is_dir() else []
     articles = {path: wiki.parse(path) for path in paths}
     taken = {article.concept for article in articles.values()}
     changes = []
     for path, article in articles.items():
-        text = path.read_text(encoding="utf-8")
+        text = wiki.combined(path)
         notes = []
         concept = page(article.concept)
         lost_concept = f"its concept {article.concept} names no page at this pin"
@@ -913,9 +914,13 @@ def follow_pin(sources: Sources, directory: Path, parking: Path) -> list[dict]:
             notes.append(f"its concept {article.concept} is now {concept}")
         if notes or target != path:
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(text, encoding="utf-8")
+            markdown, rows = wiki.split(text, target.stem, modules)
             if target != path:
                 path.unlink()
+                path.with_suffix(".jsonl").unlink()
+            target.write_text(markdown, encoding="utf-8")
+            target.with_suffix(".jsonl").write_text(wiki.jsonl(rows), encoding="utf-8")
+            (target.parent / "_defaults.json").write_text(json.dumps(wiki.DEFAULTS) + "\n", encoding="utf-8")
             changes += [{"file": target.name, "article_id": article.article_id, "mathlib_rev": sources.rev,
                          "change": note} for note in dict.fromkeys(notes)]
     return changes

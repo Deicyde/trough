@@ -1,8 +1,3 @@
----
-article_id: af_994534450cf20554d7e27814
-concept: Group
----
-
 A **group** is a [set](trough:Set) equipped with an associative binary operation that has an
 identity element and in which every element has an inverse. Groups are the
 algebraic language of symmetry: the symmetries of any object, composed one after
@@ -15,7 +10,7 @@ operations.
 
 ## Definition
 
-A [group](lean:Group) is a set $G$ with a binary operation $(a, b) \mapsto ab$, an
+A group is a set $G$ with a binary operation $(a, b) \mapsto ab$, an
 element $e \in G$ and a map $a \mapsto a^{-1}$ from $G$ to itself, such that for
 all $a, b, c$ in $G$:
 
@@ -24,10 +19,10 @@ $$(ab)c = a(bc), \qquad ea = a = ae, \qquad a^{-1}a = e.$$
 The first axiom is associativity, the second says that $e$ is an identity
 element, and the third says that $a^{-1}$ is a left inverse of $a$. The axioms
 can be weakened further: associativity, a left identity and left inverses
-already [determine a group structure](lean:Group.ofLeftAxioms), and so do the
+already determine a group structure, and so do the
 corresponding right-handed axioms
-([the right-handed version](lean:Group.ofRightAxioms)). A group in which
-$ab = ba$ for all $a$ and $b$ is called [commutative or abelian](lean:CommGroup);
+(the right-handed version). A group in which
+$ab = ba$ for all $a$ and $b$ is called commutative or abelian;
 abelian groups are often written additively, with $a + b$, $0$ and $-a$ in place of
 $ab$, $e$ and $a^{-1}$.
 
@@ -38,7 +33,7 @@ that contains the identity and is closed under the operation and inverses is a
 
 ## Examples
 
-- The [integers](trough:Int) [form an abelian group under addition](lean:Int.instAddCommGroup),
+- The [integers](trough:Int) form an abelian group under addition,
   with identity $0$ and inverse $n \mapsto -n$. The [natural numbers](trough:Nat)
   do not, since $1$ has no additive inverse among them.
 - The nonzero elements of a [field](trough:Field), such as the nonzero real
@@ -47,12 +42,12 @@ that contains the identity and is closed under the operation and inverses is a
   under addition, the
   [cyclic group](trough:IsCyclic) of order $n$.
 - The bijections of a set $X$ onto itself
-  [form a group under composition](lean:Equiv.Perm.permGroup), the
+  form a group under composition, the
   [symmetric group](trough:Equiv.Perm) of $X$. When $X$ has at least three
   elements this group is not abelian. The even permutations of a finite set form
   the [alternating group](trough:alternatingGroup).
 - More generally, in any set with an associative operation and an identity, the
-  invertible elements [form a group](lean:Units.instGroup). Applied to square
+  invertible elements form a group. Applied to square
   matrices this gives the [general linear group](trough:Matrix.GeneralLinearGroup).
 - The rotations and reflections of a regular polygon with $n$ sides form a
   non-abelian group of order $2n$ when $n \ge 3$.
@@ -60,24 +55,24 @@ that contains the identity and is closed under the operation and inverses is a
 ## Basic properties
 
 The axioms ask only for a left inverse, but it is automatically a right inverse:
-[$aa^{-1} = e$ for every $a$](lean:mul_inv_cancel). The identity element is
-unique, and inverses are unique: [if $ab = e$, then $a^{-1} = b$](lean:inv_eq_of_mul_eq_one_right).
+$aa^{-1} = e$ for every $a$. The identity element is
+unique, and inverses are unique: if $ab = e$, then $a^{-1} = b$.
 Two consequences of uniqueness are that
-[$(a^{-1})^{-1} = a$](lean:inv_inv) and that
-[$(ab)^{-1} = b^{-1}a^{-1}$](lean:mul_inv_rev), with the order of the factors
+$(a^{-1})^{-1} = a$ and that
+$(ab)^{-1} = b^{-1}a^{-1}$, with the order of the factors
 reversed.
 
 Every element can be cancelled from either side of an equation:
-[$ab = ac$ implies $b = c$](lean:mul_left_cancel), and
-[$ba = ca$ implies $b = c$](lean:mul_right_cancel). Equations of the form $ax = b$
+$ab = ac$ implies $b = c$, and
+$ba = ca$ implies $b = c$. Equations of the form $ax = b$
 have exactly one solution, namely $x = a^{-1}b$, since
-[$x = a^{-1}b$ if and only if $ax = b$](lean:eq_inv_mul_iff_mul_eq); so left
+$x = a^{-1}b$ if and only if $ax = b$; so left
 multiplication by a fixed element is a bijection of $G$ onto itself. For a finite group this says
 that every row of the multiplication table lists each element exactly once.
 
 Powers $a^n$ are defined for every integer $n$: $a^0 = e$, $a^n$ is the product
 of $n$ copies of $a$ for $n > 0$, and $a^{-n} = (a^{-1})^n$. They satisfy
-[$a^{m+n} = a^m a^n$](lean:zpow_add). The least positive $n$ with $a^n = e$, if
+$a^{m+n} = a^m a^n$. The least positive $n$ with $a^n = e$, if
 there is one, is the [order of the element](trough:orderOf) $a$.
 
 ## Related concepts

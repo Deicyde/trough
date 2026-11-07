@@ -1,8 +1,3 @@
----
-article_id: af_111e78458bc90b0ad55478bd
-concept: undergrad:Group Theory/Representation theory of finite groups/Fourier transform for finite abelian groups
----
-
 The **Fourier transform for finite abelian groups** expresses a complex-valued
 function on a finite abelian [group](trough:Group) $G$ as a combination of the
 characters of $G$, the homomorphisms from $G$ to the nonzero complex numbers. It is
@@ -21,8 +16,8 @@ $G$ is a map $\chi : G \to \mathbb{C}^\times$ with $\chi(x + y) = \chi(x)\chi(y)
 all $x, y \in G$, that is, a [group morphism](trough:MonoidHom) into the
 multiplicative group of $\mathbb{C}$. Since every element of $G$ has finite order,
 the values of a character are [roots of unity](trough:Complex.mem_rootsOfUnity); in
-particular [$|\chi(x)| = 1$ for every $x$](lean:AddChar.norm_apply) and
-[$\chi(-x) = \overline{\chi(x)}$](lean:AddChar.map_neg_eq_conj). Under pointwise
+particular $|\chi(x)| = 1$ for every $x$ and
+$\chi(-x) = \overline{\chi(x)}$. Under pointwise
 multiplication the characters form a group $\widehat{G}$, the
 dual group
 of $G$.
@@ -40,13 +35,13 @@ relabel the characters, and change nothing else.
 
 Let $f, g : G \to \mathbb{C}$.
 
-- **Orthogonality.** [The sum of a character over $G$ is $n$ for the trivial
-  character and $0$ for every other character](lean:AddChar.sum_eq_ite). Applied to
+- **Orthogonality.** The sum of a character over $G$ is $n$ for the trivial
+  character and $0$ for every other character. Applied to
   the character $\overline{\chi}\psi$, this shows that
-  [characters $\chi, \psi$ satisfy $\frac{1}{n}\sum_{x \in G} \overline{\chi(x)}\,\psi(x) = 1$ if $\chi = \psi$ and $0$ otherwise](lean:AddChar.wInner_cWeight_eq_boole).
-- **Counting.** [$G$ has exactly $n$ characters](lean:AddChar.card_eq), and
-  [they form a basis of the space of functions from $G$ to $\mathbb{C}$](lean:AddChar.complexBasis).
-  Dually, [$\sum_{\chi \in \widehat{G}} \chi(x)$ equals $n$ if $x = 0$ and $0$ otherwise](lean:AddChar.sum_apply_eq_ite).
+  characters $\chi, \psi$ satisfy $\frac{1}{n}\sum_{x \in G} \overline{\chi(x)}\,\psi(x) = 1$ if $\chi = \psi$ and $0$ otherwise.
+- **Counting.** $G$ has exactly $n$ characters, and
+  they form a basis of the space of functions from $G$ to $\mathbb{C}$.
+  Dually, $\sum_{\chi \in \widehat{G}} \chi(x)$ equals $n$ if $x = 0$ and $0$ otherwise.
 - **Inversion.** Every function is recovered from its transform:
   $$f(x) = \frac{1}{n} \sum_{\chi \in \widehat{G}} \widehat{f}(\chi)\,\chi(x).$$
 - **Plancherel's identity.**
@@ -63,7 +58,7 @@ Let $f, g : G \to \mathbb{C}$.
 
 - **Cyclic groups.** For $N \ge 1$ and $k \in \mathbb{Z}/N\mathbb{Z}$, the map
   $\chi_k(j) = e^{2\pi i jk/N}$ is a character of $\mathbb{Z}/N\mathbb{Z}$, and
-  [$k \mapsto \chi_k$ is an isomorphism from $\mathbb{Z}/N\mathbb{Z}$ onto its group of characters](lean:AddChar.zmodAddEquiv).
+  $k \mapsto \chi_k$ is an isomorphism from $\mathbb{Z}/N\mathbb{Z}$ onto its group of characters.
   Labelling characters this way gives the discrete Fourier transform
   $$\widehat{f}(k) = \sum_{j \in \mathbb{Z}/N\mathbb{Z}} f(j)\, e^{-2\pi i jk/N},$$
   whose inverse is $f(j) = \frac{1}{N}\sum_k \widehat{f}(k)\, e^{2\pi i jk/N}$.
@@ -78,7 +73,7 @@ Let $f, g : G \to \mathbb{C}$.
   running over the characters trivial on $H$.
 - **Gauss sums.** If $\chi$ is a primitive Dirichlet character modulo $N$, viewed as
   a function on $\mathbb{Z}/N\mathbb{Z}$, then
-  [its discrete Fourier transform at $k$ is $\chi^{-1}(-k)\,\tau(\chi)$](lean:DirichletCharacter.IsPrimitive.fourierTransform_eq_inv_mul_gaussSum),
+  its discrete Fourier transform at $k$ is $\chi^{-1}(-k)\,\tau(\chi)$,
   where $\chi^{-1}$ is the inverse Dirichlet character and
   $\tau(\chi) = \sum_a \chi(a)\, e^{2\pi i a/N}$ is the Gauss sum.
 
@@ -115,14 +110,14 @@ representations of abelian groups.
 Fourier series on the circle and the Fourier transform on the real line are the
 analogous theories for other locally compact abelian groups. The finite form of
 Pontryagin duality says that
-[the map sending $x$ to the character $\chi \mapsto \chi(x)$ of $\widehat{G}$ is an isomorphism from $G$ onto the dual of $\widehat{G}$](lean:AddChar.doubleDualEquiv).
+the map sending $x$ to the character $\chi \mapsto \chi(x)$ of $\widehat{G}$ is an isomorphism from $G$ onto the dual of $\widehat{G}$.
 The computational side is treated in
 discrete Fourier transform on a finite abelian group
 and fast Fourier transform.
 
 ## In Mathlib
 
-Mathlib treats characters as [additive characters](lean:AddChar): maps from an
+Mathlib treats characters as additive characters: maps from an
 additive monoid to a multiplicative monoid that send $0$ to $1$ and sums to products.
 A character of $G$ in the sense above is an additive character with values in
 $\mathbb{C}$. The group of characters carries both a multiplicative and an additive
@@ -132,15 +127,15 @@ product and holds for values in the real or complex numbers; the sum formula hol
 for values in any integral domain. The count of characters, the basis of characters,
 the dual orthogonality relation and the double dual isomorphism are proved for every
 finite abelian group. The Fourier transform itself is defined only for
-$\mathbb{Z}/N\mathbb{Z}$ with $N \ge 1$: [the discrete Fourier transform](lean:ZMod.dft)
+$\mathbb{Z}/N\mathbb{Z}$ with $N \ge 1$: the discrete Fourier transform
 is bundled as a linear equivalence on functions with values in any complex vector
 space, with
-[the sign convention $\widehat{f}(k) = \sum_j e^{-2\pi i jk/N} f(j)$](lean:ZMod.dft_apply)
+the sign convention $\widehat{f}(k) = \sum_j e^{-2\pi i jk/N} f(j)$
 used above. Mathlib proves
-that [its inverse sends $g$ to $k \mapsto \frac{1}{N}\sum_j e^{2\pi i jk/N} g(j)$](lean:ZMod.invDFT_apply), that
-[applying the transform twice sends $f$ to $j \mapsto N f(-j)$](lean:ZMod.dft_dft),
+that its inverse sends $g$ to $k \mapsto \frac{1}{N}\sum_j e^{2\pi i jk/N} g(j)$, that
+applying the transform twice sends $f$ to $j \mapsto N f(-j)$,
 and that, for values in a complete normed complex vector space,
-[it agrees with Mathlib's general Fourier integral for the counting measure](lean:ZMod.dft_eq_fourier).
+it agrees with Mathlib's general Fourier integral for the counting measure.
 It has no Fourier transform indexed by the characters of an arbitrary finite abelian
 group (only the general Fourier integral, not specialized to this setting),
 and it has no Plancherel identity or convolution theorem in this finite setting.

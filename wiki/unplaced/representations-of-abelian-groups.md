@@ -1,8 +1,3 @@
----
-article_id: af_9933b1afe52466d680bc8704
-concept: undergrad:Group Theory/Representation theory of finite groups/representations of abelian groups
----
-
 **Representations of abelian groups** are the [representations](trough:Representation) of a
 [group](trough:Group) whose elements commute, so that the linear maps representing them commute
 with one another. Over an [algebraically closed field](trough:IsAlgClosed) such as $\mathbb{C}$,
@@ -16,11 +11,11 @@ groups.
 
 ## Definition
 
-Let $G$ be an abelian group and $k$ a field. A [representation of $G$ on a vector space $V$ over
-$k$](lean:Representation) is a homomorphism $\rho$ from $G$ to the group of invertible linear maps
+Let $G$ be an abelian group and $k$ a field. A representation of $G$ on a vector space $V$ over
+$k$ is a homomorphism $\rho$ from $G$ to the group of invertible linear maps
 of $V$; because $G$ is abelian, $\rho(g)\rho(h) = \rho(h)\rho(g)$ for all $g, h \in G$. A subspace
 $W$ is invariant if $\rho(g)W \subseteq W$ for every $g$, and $\rho$ is
-[irreducible](lean:Representation.IsIrreducible) when $V \neq 0$ and its only invariant subspaces
+irreducible when $V \neq 0$ and its only invariant subspaces
 are $0$ and $V$.
 
 An invertible linear map of a line is multiplication by a nonzero scalar, so a one-dimensional
@@ -32,7 +27,7 @@ same character. Every one-dimensional representation is irreducible.
 
 Let $G$ be an abelian group, $k$ an algebraically closed field, and $V$ a finite-dimensional
 irreducible representation of $G$ over $k$. Then
-[$V$ is one-dimensional](lean:Representation.IsIrreducible.finrank_eq_one_of_isMulCommutative).
+$V$ is one-dimensional.
 
 Now let $G$ be finite and suppose also that the characteristic of $k$ does not divide $|G|$, as
 for $k = \mathbb{C}$. Then:
@@ -45,19 +40,19 @@ for $k = \mathbb{C}$. Then:
   [complex roots of unity](trough:Complex.mem_rootsOfUnity).
 - $G$ has exactly $|G|$ characters, so exactly $|G|$ irreducible representations up to
   isomorphism. For $k = \mathbb{C}$,
-  [the number of homomorphisms from $G$ to $\mathbb{C}^\times$ equals
-  $|G|$](lean:CommGroup.card_monoidHom_of_hasEnoughRootsOfUnity); the count uses only that the
+  the number of homomorphisms from $G$ to $\mathbb{C}^\times$ equals
+  $|G|$; the count uses only that the
   field contains a primitive $m$-th root of unity for each $m$ dividing $|G|$, which every
   algebraically closed field of characteristic not dividing $|G|$ does.
 
 ## Proof
 
 Since $G$ is abelian, each $\rho(h)$ commutes with every $\rho(g)$, so
-[$\rho(h)$ is itself a morphism of representations from $V$ to $V$](lean:Rep.applyAsHom). By
+$\rho(h)$ is itself a morphism of representations from $V$ to $V$. By
 [Schur's lemma](trough:FDRep.finrank_hom_simple_simple), when $V$ is finite-dimensional and
 irreducible over an algebraically closed field,
-[every linear map of $V$ commuting with all $\rho(g)$ is multiplication by a unique
-scalar](lean:Representation.IsIrreducible.algebraMap_intertwiningMap_bijective_of_isAlgClosed):
+every linear map of $V$ commuting with all $\rho(g)$ is multiplication by a unique
+scalar:
 such a map $T$ has an eigenvalue $\lambda$, and the kernel of $T - \lambda$ is a nonzero invariant
 subspace, hence all of $V$. So every $\rho(h)$ is a scalar, every subspace of $V$ is invariant, and
 irreducibility leaves only a line.
@@ -96,9 +91,9 @@ unity, and a character of a product is a product of characters of the factors.
   least positive dimension is irreducible, hence a line: all $\rho(g)$ share an eigenvector.
   Repeating the argument on quotients puts all $\rho(g)$ in upper triangular form at once.
 - **Multiplicities.** For finite $G$ and $|G|$ invertible in $k$,
-  [the number $|G|^{-1} \sum_{g} \chi(g^{-1}) \operatorname{tr} \rho(g)$ equals, as an element of
+  the number $|G|^{-1} \sum_{g} \chi(g^{-1}) \operatorname{tr} \rho(g)$ equals, as an element of
   $k$, the dimension of the space of morphisms of representations from $\chi$ to
-  $V$](lean:Representation.card_inv_mul_sum_char_mul_char_eq_finrank); in characteristic $0$ it
+  $V$; in characteristic $0$ it
   is that dimension itself. When $k$ is also algebraically closed, so that $V$ decomposes as in
   the statement, that dimension is the number of times $\chi$ occurs among
   $\chi_1, \dots, \chi_n$. Here $g \mapsto \operatorname{tr}\rho(g)$ is the
@@ -129,14 +124,14 @@ group the images are invertible automatically. Irreducibility means that the lat
 subrepresentations has exactly two elements. The one-dimensionality theorem is stated for every
 commutative monoid, with no finiteness assumption on $G$, and assumes that $k$ is algebraically
 closed and $V$ finite-dimensional. Maschke's theorem is proved in the language of modules over
-the group algebra: [for a finite group whose order is nonzero in the field $k$, every submodule of
+the group algebra: for a finite group whose order is nonzero in the field $k$, every submodule of
 a module over $k[G]$ has a complementary
-submodule](lean:MonoidAlgebra.Submodule.exists_isCompl). The count of characters belongs to the
+submodule. The count of characters belongs to the
 duality theory of finite commutative groups, with values in the units of any commutative monoid
 containing enough roots of unity. For commuting linear maps, Mathlib proves that
-[if each of a commuting family of endomorphisms of a finite-dimensional space has generalized
+if each of a commuting family of endomorphisms of a finite-dimensional space has generalized
 eigenspaces spanning the space, then their simultaneous generalized eigenspaces span
-it](lean:Module.End.iSup_iInf_maxGenEigenspace_eq_top_of_iSup_maxGenEigenspace_eq_top_of_commute).
+it.
 Mathlib does not state that a representation of a finite abelian group splits into
 one-dimensional pieces or is diagonalizable in a single basis, does not identify the irreducible
 representations up to isomorphism with the characters, and does not prove the converse

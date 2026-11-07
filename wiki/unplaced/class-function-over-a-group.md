@@ -1,8 +1,3 @@
----
-article_id: af_f03e5f7719969665d0235ac2
-concept: undergrad:Group Theory/Representation theory of finite groups/class function over a group
----
-
 A **class function** on a [group](trough:Group) $G$ is a function on $G$ that
 takes the same value at any two conjugate elements, so that it is constant on
 each [conjugacy class](trough:ConjClasses). The
@@ -24,8 +19,8 @@ $gh$ for $g$ in the first condition gives $f(h(gh)h^{-1}) = f(gh)$, that
 is, $f(hg) = f(gh)$, and conversely $f(hgh^{-1}) = f(h^{-1} \cdot hg) = f(g)$.
 
 The conjugacy class of $g$ is the set $\{hgh^{-1} : h \in G\}$, and
-[two elements have the same conjugacy class exactly when they are
-conjugate](lean:ConjClasses.mk_eq_mk_iff_isConj). A class function is therefore
+two elements have the same conjugacy class exactly when they are
+conjugate. A class function is therefore
 the same thing as a function on the set of conjugacy classes of $G$, composed
 with the map sending each element to its class.
 
@@ -42,41 +37,41 @@ conjugacy classes.
   function, as is the indicator function of any conjugacy class, for instance
   the function equal to $1$ at the identity and $0$ elsewhere.
 - **Abelian groups.** In a commutative group
-  [two elements are conjugate exactly when they are equal](lean:isConj_iff_eq),
+  two elements are conjugate exactly when they are equal,
   so every function on an abelian group is a class function.
 - **Order of an element.** If $ax = ya$, then
-  [$x$ and $y$ have the same order](lean:SemiconjBy.orderOf_eq); taking
+  $x$ and $y$ have the same order; taking
   $y = axa^{-1}$ shows that conjugate elements have the same
   [order](trough:orderOf), so $g \mapsto \operatorname{ord}(g)$ is a class function.
 - **Homomorphisms to abelian groups.** A homomorphism
-  [carries conjugate elements to conjugate elements](lean:MonoidHom.map_isConj),
+  carries conjugate elements to conjugate elements,
   so a homomorphism $\varphi \colon G \to A$ into an abelian group $A$ is a class
   function. The [signature](trough:Equiv.Perm.sign) of a permutation and the
   [determinant](trough:Matrix.det) of an invertible matrix are examples.
-- **Symmetric groups.** [Two permutations of a finite set are conjugate exactly
-  when they have the same cycle type](lean:Equiv.Perm.isConj_iff_cycleType_eq),
+- **Symmetric groups.** Two permutations of a finite set are conjugate exactly
+  when they have the same cycle type,
   so the class functions on a symmetric group are the functions of the cycle
   type. The number of fixed points of a permutation is an example. In $S_3$ the classes are the identity,
   the three transpositions and the two $3$-cycles, so the class functions on
   $S_3$ with values in a field form a space of dimension $3$.
 - **Trace and characteristic polynomial.** For square matrices over a
   commutative ring and $M$ invertible,
-  [the trace of $MNM^{-1}$ equals the trace of $N$](lean:Matrix.trace_conj) and
-  [the characteristic polynomial of $MNM^{-1}$ equals that of
-  $N$](lean:Matrix.charpoly_units_conj). So the trace and the
+  the trace of $MNM^{-1}$ equals the trace of $N$ and
+  the characteristic polynomial of $MNM^{-1}$ equals that of
+  $N$. So the trace and the
   [characteristic polynomial](trough:Matrix.charpoly) are class functions on the
   [general linear group](trough:Matrix.GeneralLinearGroup).
 - **Characters.** If $\rho$ is a finite-dimensional
   [representation](trough:Representation) of $G$ over a field $k$, its character
   is $\chi(g) = \operatorname{tr} \rho(g)$, and
-  [$\chi(hgh^{-1}) = \chi(g)$ for all $g, h \in G$](lean:FDRep.char_conj).
+  $\chi(hgh^{-1}) = \chi(g)$ for all $g, h \in G$.
 
 ## Properties
 
 - **Products of characters.** Characters are closed under pointwise
   multiplication inside the algebra of class functions:
-  [the character of a tensor product of representations is the product of their
-  characters](lean:FDRep.char_tensor). The character of a direct sum is the sum
+  the character of a tensor product of representations is the product of their
+  characters. The character of a direct sum is the sum
   of the characters.
 - **Inner product.** For a finite group $G$, complex class functions carry the
   inner product
@@ -87,8 +82,8 @@ conjugacy classes.
   $|G|$ is invertible, the characters of
   [irreducible representations](trough:Representation.IsIrreducible) $V$ and $W$
   of a finite group satisfy
-  [$\frac{1}{|G|}\sum_{g} \chi_V(g)\,\chi_W(g^{-1})$ equals $1$ if $V \cong W$ and
-  $0$ otherwise](lean:FDRep.char_orthonormal): these are the
+  $\frac{1}{|G|}\sum_{g} \chi_V(g)\,\chi_W(g^{-1})$ equals $1$ if $V \cong W$ and
+  $0$ otherwise: these are the
   [orthogonality relations](trough:FDRep.char_orthonormal).
 - **Basis of irreducible characters.** Over the complex numbers the irreducible
   characters of a finite group are not only orthonormal but span the space of
@@ -103,7 +98,7 @@ conjugacy classes.
   the class functions form the centre of the group algebra.
 - **Counting classes.** The dimension $r$ of the space of class functions can be
   read off from commuting pairs: for a finite group,
-  [the number of pairs $(g, h)$ with $gh = hg$ equals $r\,|G|$](lean:card_comm_eq_card_conjClasses_mul_card).
+  the number of pairs $(g, h)$ with $gh = hg$ equals $r\,|G|$.
 
 ## Related concepts
 

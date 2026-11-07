@@ -1,8 +1,3 @@
----
-article_id: af_7585ca74e19183f1586b9c27
-concept: MvPolynomial.uniqueFactorizationMonoid
----
-
 **Polynomial rings over a unique factorisation domain are unique factorisation domains**: if $A$ is a
 [unique factorisation domain](trough:UniqueFactorizationMonoid) (UFD), then so is the
 [polynomial ring](trough:MvPolynomial) $A[X_i : i \in I]$ in any family of indeterminates, finite or
@@ -14,11 +9,11 @@ $\mathbb{Z}[X_1, \dots, X_n]$ have unique factorisation, although most of them a
 ## Statement
 
 Let $A$ be a UFD and $I$ any set. Then
-[the polynomial ring $A[X_i : i \in I]$ is a UFD](lean:MvPolynomial.uniqueFactorizationMonoid):
+the polynomial ring $A[X_i : i \in I]$ is a UFD:
 it is an integral domain, every nonzero polynomial that is not a unit is a product of
 [irreducible](trough:Irreducible) polynomials, and two such factorisations of the same polynomial
 have the same factors up to order and multiplication by units. The case of one variable reads:
-[if $A$ is a UFD, then so is $A[X]$](lean:Polynomial.uniqueFactorizationMonoid).
+if $A$ is a UFD, then so is $A[X]$.
 
 The converse also holds: if $A[X_i : i \in I]$ is a UFD, then so is $A$ (trivially so when $I$ is
 empty). Degrees add under multiplication over a domain, so a
@@ -35,13 +30,13 @@ $A[X_i]$ restricts to unique factorisation in $A$.
   factorisation into irreducibles, unique up to the order of the factors and nonzero rational
   constants.
 - **The variables themselves.** Over any integral domain,
-  [each variable $X_i$ is a prime element](lean:MvPolynomial.prime_X) of the polynomial ring, that
+  each variable $X_i$ is a prime element of the polynomial ring, that
   is, a nonzero nonunit $p$ such that whenever $p$ divides a product $ab$, it divides $a$ or $b$.
 - **Infinitely many variables.** $k[X_1, X_2, X_3, \dots]$ is a UFD that is not
   [Noetherian](trough:IsNoetherianRing): the ideals $(X_1) \subset (X_1, X_2) \subset \cdots$ form
   a strictly increasing chain. The [Hilbert basis theorem](trough:Polynomial.isNoetherianRing) gives
   Noetherianity only for
-  [finitely many variables over a Noetherian ring](lean:MvPolynomial.isNoetherianRing); this example
+  finitely many variables over a Noetherian ring; this example
   shows that unique factorisation does not need it.
 - **A failure.** $\mathbb{Z}[\sqrt{-5}]$ is not a UFD, since
   $6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})$, where $2$, $3$ and $1 \pm \sqrt{-5}$ are
@@ -55,10 +50,10 @@ $A[X_i]$ restricts to unique factorisation in $A$.
 polynomial in $A[X]$ primitive when its coefficients have no common divisor other than units. Every
 nonzero $f$ can be written as $f = c f_0$ with $c \in A$ (a [greatest common divisor](trough:GCDMonoid.gcd)
 of the coefficients) and $f_0$ primitive. Gauss's lemma has three parts, all valid over a UFD:
-[the product of two primitive polynomials is primitive](lean:Polynomial.IsPrimitive.mul) (Mathlib
+the product of two primitive polynomials is primitive (Mathlib
 assumes a normalised gcd function on $A$, which every UFD can be given);
-[a primitive polynomial is irreducible in $A[X]$ if and only if it is irreducible in $K[X]$](lean:Polynomial.IsPrimitive.irreducible_iff_irreducible_map_fraction_map);
-and [a primitive polynomial that divides another in $K[X]$ already divides it in $A[X]$](lean:Polynomial.IsPrimitive.dvd_of_fraction_map_dvd_fraction_map).
+a primitive polynomial is irreducible in $A[X]$ if and only if it is irreducible in $K[X]$;
+and a primitive polynomial that divides another in $K[X]$ already divides it in $A[X]$.
 
 For existence, factor $c$ in $A$, and factor $f_0$ in $K[X]$, a UFD because
 [$K[X]$ is a Euclidean domain](trough:Polynomial.instEuclideanDomain); clearing denominators
@@ -68,14 +63,14 @@ since both are primitive, comparing contents shows that this factor is a unit of
 element is prime. An irreducible constant is a prime of $A$ and stays prime in $A[X]$. An
 irreducible nonconstant polynomial is primitive and irreducible in $K[X]$, hence prime there, and
 the third part of the lemma brings divisibility back from $K[X]$ to $A[X]$. Finally,
-[a domain is a UFD exactly when every nonzero element is a unit times a product of primes](lean:UniqueFactorizationMonoid.iff_exists_prime_factors).
+a domain is a UFD exactly when every nonzero element is a unit times a product of primes.
 
 **Finitely many variables.** By induction on $n$, using that
-[the ring in $n + 1$ variables is isomorphic to the polynomials in one variable over the ring in $n$ variables](lean:MvPolynomial.finSuccEquiv),
-and that [a ring isomorphic to a UFD is a UFD](lean:MulEquiv.uniqueFactorizationMonoid).
+the ring in $n + 1$ variables is isomorphic to the polynomials in one variable over the ring in $n$ variables,
+and that a ring isomorphic to a UFD is a UFD.
 
-**Arbitrary variables.** [Every polynomial is the image of a polynomial in finitely many of the variables](lean:MvPolynomial.exists_finset_rename),
-and [for a subset $S$ of $I$, a polynomial in the variables indexed by $S$ is prime in $A[X_i : i \in S]$ if and only if it is prime in $A[X_i : i \in I]$](lean:MvPolynomial.prime_rename_iff).
+**Arbitrary variables.** Every polynomial is the image of a polynomial in finitely many of the variables,
+and for a subset $S$ of $I$, a polynomial in the variables indexed by $S$ is prime in $A[X_i : i \in S]$ if and only if it is prime in $A[X_i : i \in I]$.
 So a factorisation into primes in a finite polynomial ring stays a factorisation into primes in the
 large one, and the criterion above applies.
 

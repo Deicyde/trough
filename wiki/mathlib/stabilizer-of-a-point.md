@@ -1,8 +1,3 @@
----
-article_id: af_66092e339ecf428031e450ec
-concept: MulAction.stabilizer
----
-
 The **stabilizer** of a point under a [group action](trough:MulAction) is the set of group
 elements that leave the point where it is. It is always a [subgroup](trough:Subgroup) of the
 acting group, and it measures how much symmetry the point retains: the larger the
@@ -14,11 +9,11 @@ Burnside's lemma and the Sylow theorems.
 ## Definition
 
 Let a [group](trough:Group) $G$ act on a set $X$, and write $g \cdot x$ for the action of
-$g \in G$ on $x \in X$. The [stabilizer of $x$ is the subgroup](lean:MulAction.stabilizer)
+$g \in G$ on $x \in X$. The stabilizer of $x$ is the subgroup
 
 $$G_x = \{\, g \in G : g \cdot x = x \,\}.$$
 
-Thus [an element $g$ lies in $G_x$ exactly when $g \cdot x = x$](lean:MulAction.mem_stabilizer_iff).
+Thus an element $g$ lies in $G_x$ exactly when $g \cdot x = x$.
 Other common notations are $\operatorname{Stab}_G(x)$ and $\operatorname{Stab}(x)$; the
 stabilizer is also called the isotropy group of $x$.
 
@@ -40,10 +35,10 @@ $g \cdot x = x$ gives $g^{-1} \cdot x = x$.
   vertical axis, and the stabilizer of any other point is the group of rotations about the
   axis through it.
 - **Cosets.** A group $G$ acts on the set $G/H$ of left cosets of a subgroup $H$ by
-  $g \cdot aH = gaH$. [The stabilizer of the coset $H$ is $H$ itself](lean:MulAction.stabilizer_quotient),
+  $g \cdot aH = gaH$. The stabilizer of the coset $H$ is $H$ itself,
   and the stabilizer of a coset $aH$ is the conjugate $aHa^{-1}$.
 - **Conjugation.** A group acts on itself by conjugation, $g \cdot h = g h g^{-1}$, and
-  [the stabilizer of $h$ under this action is the centralizer of $h$](lean:ConjAct.stabilizer_eq_centralizer),
+  the stabilizer of $h$ under this action is the centralizer of $h$,
   the subgroup of elements that commute with $h$. The orbits of this action are the
   [conjugacy classes](trough:ConjClasses).
 - **Free actions.** When $G$ acts on itself by left multiplication, $gh = h$ forces $g$ to be the identity,
@@ -53,28 +48,28 @@ $g \cdot x = x$ gives $g^{-1} \cdot x = x$.
 
 **Stabilizers along an orbit.** Stabilizers of points in the same orbit are conjugate: for
 every $g$ in $G$,
-[the stabilizer of $g \cdot x$ is $g G_x g^{-1}$](lean:MulAction.stabilizer_smul_eq_stabilizer_map_conj).
+the stabilizer of $g \cdot x$ is $g G_x g^{-1}$.
 Indeed $h$ fixes $g \cdot x$ exactly when $g^{-1} h g$ fixes $x$. Consequently, if
 $y = g \cdot x$, then
-[conjugation by $g$](lean:MulAction.stabilizerEquivStabilizer_apply) is
-[an isomorphism from $G_x$ onto $G_y$](lean:MulAction.stabilizerEquivStabilizer).
+conjugation by $g$ is
+an isomorphism from $G_x$ onto $G_y$.
 A stabilizer need not be normal: for the action on $G/H$ the stabilizers are exactly the
 conjugates of $H$, and they all equal $H$ only when $H$ is normal.
 
 **Orbit–stabilizer theorem.** Two elements $g$ and $h$ send $x$ to the same point exactly
 when $g^{-1}h \in G_x$, that is, when they lie in the same left coset of $G_x$. So
 $g G_x \mapsto g \cdot x$ is
-[a bijection from the set of left cosets of $G_x$ onto the orbit of $x$](lean:MulAction.orbitEquivQuotientStabilizer),
-and [the index of $G_x$ equals the size of the orbit of $x$](lean:MulAction.index_stabilizer).
+a bijection from the set of left cosets of $G_x$ onto the orbit of $x$,
+and the index of $G_x$ equals the size of the orbit of $x$.
 For a finite group $G$,
-[the size of the orbit times the order of the stabilizer is the order of $G$](lean:MulAction.card_orbit_mul_card_stabilizer_eq_card_group):
+the size of the orbit times the order of the stabilizer is the order of $G$:
 
 $$|G \cdot x| \cdot |G_x| = |G|.$$
 
 In particular both factors divide $|G|$, in line with
 [Lagrange's theorem](trough:Subgroup.card_subgroup_dvd_card).
 For a transitive action, where the orbit is all of $X$,
-[the index of every stabilizer is the number of points of $X$](lean:MulAction.index_stabilizer_of_transitive).
+the index of every stabilizer is the number of points of $X$.
 Summing over the orbits of a finite set gives the
 [class formula](trough:MulAction.selfEquivSigmaOrbitsQuotientStabilizer), and counting the
 pairs $(g, x)$ with $g \cdot x = x$ in two ways, once by points and once by group elements,
@@ -82,22 +77,22 @@ gives [Burnside's lemma](trough:MulAction.sum_card_fixedBy_eq_card_orbits_mul_ca
 
 **Free actions.** Mathlib expresses freeness as a cancellation law: $g \cdot x = h \cdot x$
 implies $g = h$, and each $g$ acts injectively (which is automatic for a group action).
-[A group action satisfies this law exactly when every stabilizer is trivial](lean:isCancelSMul_iff_stabilizer_eq_bot).
+A group action satisfies this law exactly when every stabilizer is trivial.
 
 **Intersections of stabilizers.** For a subset $S$ of $X$,
-[an element lies in the pointwise stabilizer of $S$ exactly when it fixes every point of $S$](lean:mem_fixingSubgroup_iff),
+an element lies in the pointwise stabilizer of $S$ exactly when it fixes every point of $S$,
 so the pointwise stabilizer is the intersection of the stabilizers $G_x$ for $x$ in $S$.
 Taking $S = X$ gives the kernel of the action, the set of elements that act as the
 identity; it is a [normal subgroup](trough:Subgroup.Normal), and the action is faithful
 exactly when it is trivial. The setwise stabilizer of $S$ is the stabilizer of $S$ as a
 point of the induced action on subsets:
-[an element $g$ lies in it exactly when, for every $y$ in $X$, $g \cdot y$ lies in $S$ if and only if $y$ does](lean:MulAction.mem_stabilizer_set).
+an element $g$ lies in it exactly when, for every $y$ in $X$, $g \cdot y$ lies in $S$ if and only if $y$ does.
 
 ## Related concepts
 
 Applied to the action of a group on its subgroups by conjugation, the stabilizer of a
 subgroup is its normalizer. Mathlib states this for Sylow subgroups:
-[the stabilizer of a Sylow $p$-subgroup $P$ under conjugation is the normalizer of $P$](lean:Sylow.stabilizer_eq_normalizer).
+the stabilizer of a Sylow $p$-subgroup $P$ under conjugation is the normalizer of $P$.
 In a finite group the Sylow $p$-subgroups form a single orbit by the
 [second Sylow theorem](trough:Sylow.isPretransitive_of_finite), so by the orbit–stabilizer
 theorem their number is the index of the normalizer of any one of them. More generally,

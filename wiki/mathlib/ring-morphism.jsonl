@@ -1,0 +1,29 @@
+{"id": "af_609f19bb24bc6b6b3ccd7e4d", "subject": [{"type": "generic", "uri": "ring-morphism.md"}], "object": [{"location": {"declaration": "RingHom"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "ring morphism", "prefix": "S$ is a "}}}], "object": [{"location": {"declaration": "RingHom"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "rings without identity"}}}], "object": [{"location": {"declaration": "NonUnitalRingHom"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "every bijective ring morphism is an isomorphism"}}}], "object": [{"location": {"declaration": "RingEquiv.ofBijective"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "identity map of a ring is a ring morphism"}}}], "object": [{"location": {"declaration": "RingHom.id"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "the composite of two ring morphisms is a ring morphism"}}}], "object": [{"location": {"declaration": "RingHom.comp"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "sending $n$ to $n \\cdot 1$"}}}], "object": [{"location": {"declaration": "Int.castRingHom"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "any two ring morphisms from $\\mathbb{Z}$ to $R$ are equal"}}}], "object": [{"location": {"declaration": "RingHom.ext_int"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "map sending $x$ to its class $x + I$"}}}], "object": [{"location": {"declaration": "Ideal.Quotient.mk"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "surjective"}}}], "object": [{"location": {"declaration": "Ideal.Quotient.mk_surjective"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "its kernel is $I$"}}}], "object": [{"location": {"declaration": "Ideal.mk_ker"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "evaluation at $a$ is a ring morphism"}}}], "object": [{"location": {"declaration": "Polynomial.evalRingHom"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "projection from the product ring $R \\times S$ to $R$"}}}], "object": [{"location": {"declaration": "RingHom.fst"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "map $x \\mapsto x^p$ is a ring morphism"}}}], "object": [{"location": {"declaration": "frobenius"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "Complex conjugation is a ring isomorphism"}}}], "object": [{"location": {"declaration": "Complex.conjAe"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "preserves negatives"}}}], "object": [{"location": {"declaration": "RingHom.map_neg"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "differences"}}}], "object": [{"location": {"declaration": "RingHom.map_sub"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "natural-number powers"}}}], "object": [{"location": {"declaration": "RingHom.map_pow"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "sends units to units"}}}], "object": [{"location": {"declaration": "IsUnit.map"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "a ring with a morphism to a nonzero ring is nonzero"}}}], "object": [{"location": {"declaration": "RingHom.domain_nontrivial"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "injective", "prefix": "ring is "}}}], "object": [{"location": {"declaration": "RingHom.injective"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "an ideal of $R$", "prefix": "\\}$ is "}}}], "object": [{"location": {"declaration": "RingHom.ker"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "$f$ is injective exactly when its kernel is zero"}}}], "object": [{"location": {"declaration": "RingHom.injective_iff_ker_eq_bot"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "the kernel is a prime ideal"}}}], "object": [{"location": {"declaration": "RingHom.ker_isPrime"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "a subring of $S$", "prefix": "is "}}}], "object": [{"location": {"declaration": "RingHom.range"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "the preimage of an ideal of $S$ is an ideal of $R$"}}}], "object": [{"location": {"declaration": "Ideal.comap"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "the preimage of a prime ideal is a prime ideal"}}}], "object": [{"location": {"declaration": "Ideal.comap_isPrime"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "$R / \\ker f$ is isomorphic to the image of $f$"}}}], "object": [{"location": {"declaration": "RingHom.quotientKerEquivRange"}}]}
+{"subject": [{"type": "generic", "uri": "ring-morphism.md", "location": {"quote": {"exact": "makes $S$ an algebra over $R$"}}}], "object": [{"location": {"declaration": "RingHom.toAlgebra'"}}]}
