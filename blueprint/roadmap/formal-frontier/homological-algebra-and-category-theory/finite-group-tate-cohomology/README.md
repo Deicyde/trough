@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/formalization.yaml) of [FormalFrontier/finite-group-tate-cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology) at commit [c0c9d563](https://github.com/FormalFrontier/finite-group-tate-cohomology/tree/c0c9d563d45adfa81bff78821042089f750b1d44), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 5 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 5 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,16 +14,11 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “The mathematical development and checked-use clients underwent independent review on earlier pinned inputs; each release has separate exact-artifact acceptance. This metadata alone does not certify source-specific correspondence.”
+- Review status: “The mathematical development and checked-use clients underwent independent review on earlier pinned inputs; each release has separate exact-artifact acceptance. This metadata alone does not certify source-specific correspondence.”.
 - Review notes: “Earlier development review and later component review bind distinct inputs. Exact-artifact release approval and source-specific coverage remain separate decisions, not consequences of this catalogue or metadata.”
-- Automation: agent; framework “OpenAI Codex CLI with Lean verification”; tool setup “Lean 4.34.0-rc2 and pinned mathlib4 with cache-first Lake builds”
+- Reviewers: “Lattice”, “Formal Frontier agents”, “Formal Frontier independent norm-component reviewer”.
+- Automation: agent; framework “OpenAI Codex CLI with Lean verification”; tool setup “Lean 4.34.0-rc2 and pinned mathlib4 with cache-first Lake builds”; prompting notes “AI-assisted Formal Frontier agents and formalization workers contributed distinct mathematical modules, norm and NatIso component interfaces, checked examples, the original mixed-kind native catalogue and later documentation adaptations. The mathematical work was Lean-checked and independently reviewed; source-specific correspondence is separate.”
 - Automation notes: “Formal Frontier source maintainers retain mathematical acceptance and source correspondence responsibility; AI assistance alone establishes neither.”
-
-## Scope
-
-Finite-group norm and exceptional degrees, quotient-equivariant norm for finite normal subgroups, fixed-element cyclic model coefficient functors, and objectwise all-integer additive cyclic period two with chosen generator. Native public API documentation is a historical source-byte reference, not certification of all private/generated proofs or selected-source coverage. No natural Tate comparison, generator independence, full resolution comparison, cup products, integral degree-two class, coefficient exact hexagon, cohomological triviality, local duality or NSW coverage is claimed.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/formalization.yaml) of [FormalFrontier/finite-group-tate-cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology) at commit [c0c9d563](https://github.com/FormalFrontier/finite-group-tate-cohomology/tree/c0c9d563d45adfa81bff78821042089f750b1d44), Apache-2.0.*
 
 ## Literature
 
@@ -41,8 +36,9 @@ No other Formal Frontier library.
 - [Continuous group cohomology](../continuous-group-cohomology/README.md)
 - [Valuation integers](../../number-theory/valuation-integers/README.md)
 
-
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/README.md#headline-results) of [FormalFrontier/finite-group-tate-cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology) at commit [c0c9d563](https://github.com/FormalFrontier/finite-group-tate-cohomology/tree/c0c9d563d45adfa81bff78821042089f750b1d44), Apache-2.0.*
 
 **Natural norms.** For a commutative scalar ring and finite group, the
 [norm from coinvariants to invariants](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Norm.lean#L29)
@@ -84,11 +80,6 @@ assumption. It reuses Mathlib's cocycle theorem and finite-cyclic calculation.
 
 ## Main results
 
-The 4 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 4 main results, and the scan finds 4 of them declared in the file the yaml gives; they are on their own page, not made articles.
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `FiniteGroupTateCohomology.normSequence_exact` | lemma | [FiniteGroupTateCohomology/Basic.lean, line 285](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L285) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm` | def | [FiniteGroupTateCohomology/Basic.lean, line 352](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L352) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm` | def | [FiniteGroupTateCohomology/Basic.lean, line 407](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L407) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity` | def | [FiniteGroupTateCohomology/CyclicPeriodicity.lean, line 307](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L307) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+- [Main results](main-results/README.md)

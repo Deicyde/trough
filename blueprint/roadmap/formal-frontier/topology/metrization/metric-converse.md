@@ -8,7 +8,6 @@ proof: formalized
 
 # Metric converse
 
-([`TopologicalSpace.exists_sigmaLocallyFinite_isTopologicalBasis`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).
 Every metrizable space has an open basis in countably many locally finite
 levels, each indexed by the points of the space.
 

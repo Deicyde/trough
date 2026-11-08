@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/restricted-product-duality/blob/df6cc0bb4483970cf5eb7d668fc7cc6f2c8e581d/formalization.yaml) of [FormalFrontier/restricted-product-duality](https://github.com/FormalFrontier/restricted-product-duality) at commit [df6cc0bb](https://github.com/FormalFrontier/restricted-product-duality/tree/df6cc0bb4483970cf5eb7d668fc7cc6f2c8e581d), Apache-2.0.*
 
-1 article, for highlights of its formalization.yaml. The headline results in its README are quoted where they stand.
+1 article: 1 for highlights of its formalization.yaml whose declarations the scan finds. The headline results in its README are quoted where they stand.
 
 ## Facts
 
@@ -14,7 +14,7 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “mathematical content reviewed”
+- Review status: “mathematical content reviewed”.
 - Review notes: “The conditional statements for cofinite restricted products require their stated hypotheses. The general locally compact-coordinate proposition, source coverage, source-author endorsement and independent rights clearance are not claimed.”
 - Automation: agent; framework “Codex CLI with Hive Tasks”; tool setup “AI agents drafted and checked Lean implementations, examples and documentation with pinned Lean/mathlib builds and separate agent review.”
 - Automation notes: “AI agents developed the foundations, character reconstruction, symmetric duality, naturality and client examples with separate agent review.”
@@ -43,6 +43,8 @@ The sources its formalization.yaml names, with their relationship to it.
 - [Compact Pontryagin biduality](compact-pontryagin-biduality.md)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/restricted-product-duality/blob/df6cc0bb4483970cf5eb7d668fc7cc6f2c8e581d/README.md#headline-results) of [FormalFrontier/restricted-product-duality](https://github.com/FormalFrontier/restricted-product-duality) at commit [df6cc0bb](https://github.com/FormalFrontier/restricted-product-duality/tree/df6cc0bb4483970cf5eb7d668fc7cc6f2c8e581d), Apache-2.0.*
 
 **Evaluation with a compact open subgroup.** For a Hausdorff abelian topological
 group with a compact open subgroup, canonical Circle-valued compact-open

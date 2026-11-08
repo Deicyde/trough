@@ -4,6 +4,8 @@ navigation: transparent
 
 # Subfamily retractions and… to Covering-space lifts of…
 
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/README.md#headline-results) of [FormalFrontier/sphere-topology](https://github.com/FormalFrontier/sphere-topology) at commit [672d46f9](https://github.com/FormalFrontier/sphere-topology/tree/672d46f90cf51cdf3f933248b85c842990ead729), Apache-2.0.*
+
 - [Subfamily retractions and continuous factorization](subfamily-retractions-and-continuous-factorizati.md)
 - [Strict finite-stage factorization of compact homotopies](strict-finite-stage-factorization-of-compact-hom.md)
 - [Arbitrary-index circle bouquets](arbitrary-index-circle-bouquets.md)

@@ -6,6 +6,8 @@ navigation: transparent
 
 ## Headline results
 
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/multivariate-polynomials/blob/724d9804aa6e853d9fe34f6a35c5c0d35c7f8c6a/README.md#headline-results) of [FormalFrontier/multivariate-polynomials](https://github.com/FormalFrontier/multivariate-polynomials) at commit [724d9804](https://github.com/FormalFrontier/multivariate-polynomials/tree/724d9804aa6e853d9fe34f6a35c5c0d35c7f8c6a), Apache-2.0.*
+
 - [Heights of homogeneous polynomial evaluations](heights-of-homogeneous-polynomial-evaluations.md)
 - [Homogeneous polynomial maps on projective coordinate spaces](homogeneous-polynomial-maps-on-projective-coordi.md)
 

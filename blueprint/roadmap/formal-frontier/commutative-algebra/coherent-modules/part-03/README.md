@@ -4,6 +4,8 @@ navigation: transparent
 
 # Finite presentation from… to Faithfully flat tensor products
 
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/coherent-modules/blob/b670b34e8741624c22b88375b9086d6d393cbbc3/README.md#headline-results) of [FormalFrontier/coherent-modules](https://github.com/FormalFrontier/coherent-modules) at commit [b670b34e](https://github.com/FormalFrontier/coherent-modules/tree/b670b34e8741624c22b88375b9086d6d393cbbc3), Apache-2.0.*
+
 - [Finite presentation from cofinal ideal quotients](finite-presentation-from-cofinal-ideal-quotients.md)
 - [Essentially finite-type scalar extension](essentially-finite-type-scalar-extension.md)
 - [Coherent modules and kernels](coherent-modules-and-kernels.md)

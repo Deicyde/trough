@@ -8,7 +8,6 @@ proof: formalized
 
 # Polynomial boundary degree counts interior roots
 
-([`Polynomial.degree_normalizedCircleMap`](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/ComplexAnalysis/Analysis/Complex/PolynomialBoundary.lean)).
 A complex polynomial with no zeros on the unit circle gives an unbased continuous
 circle self-map by normalizing its values. Its degree equals the number of roots
 strictly inside the unit disk, counted with multiset multiplicity. Nonmonic

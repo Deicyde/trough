@@ -13,6 +13,8 @@ navigation: transparent
 
 ## Headline results
 
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/coherent-modules/blob/b670b34e8741624c22b88375b9086d6d393cbbc3/README.md#headline-results) of [FormalFrontier/coherent-modules](https://github.com/FormalFrontier/coherent-modules) at commit [b670b34e](https://github.com/FormalFrontier/coherent-modules/tree/b670b34e8741624c22b88375b9086d6d393cbbc3), Apache-2.0.*
+
 **Spans, kernels and coordinate faces.** For a linear map of semimodules over
 any possibly noncommutative semiring, if its target has no nonzero additive
 summands of zero and has no zero scalar divisors, then

@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/formalization.yaml) of [FormalFrontier/ideal-completion](https://github.com/FormalFrontier/ideal-completion) at commit [e316d02a](https://github.com/FormalFrontier/ideal-completion/tree/e316d02a1c0814b130a7085a112c142542b7019d), Apache-2.0.*
 
-2 articles, for headline results in its README whose declaration link names a declaration the linked file declares. Its other headline results are quoted where they stand.
+2 articles: 2 for headline results in its README whose declaration link names a declaration the scan finds in the linked file. Its other headline results are quoted where they stand.
 
 ## Facts
 
@@ -14,16 +14,10 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “other: independent AI-agent review”
+- Review status: “other: independent AI-agent review”.
 - Review notes: “Independent AI agents reviewed the mathematical core and module/example contributions.”
 - Automation: agent; tool setup “Formal Frontier AI agents using Lean, Lake and Git for formalization, documentation and maintenance, with separate independent agent review.”
 - Automation notes: “The mathematical core, reference adapter and packaging were prepared by the Anchor AI agent; another AI contributor prepared the modules and examples. Independent AI agents reviewed the formalization. No human peer review or source-author endorsement is implied.”
-
-## Scope
-
-For DistribLattice A and BoundedOrder A, reusable ideal completion with an injective principal bounded lattice homomorphism, finite-join witnesses for arbitrary suprema, frame structure, compact iff principal and compact generation. For Lattice A and BoundedOrder A, prime order ideals correspond to Boolean-valued bounded lattice homomorphisms. Does not include prime-ideal existence, spectra, Stone duality, universal extension or generic partial-order completion, and does not claim whole-source formalization.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/formalization.yaml) of [FormalFrontier/ideal-completion](https://github.com/FormalFrontier/ideal-completion) at commit [e316d02a](https://github.com/FormalFrontier/ideal-completion/tree/e316d02a1c0814b130a7085a112c142542b7019d), Apache-2.0.*
 
 ## Literature
 
@@ -41,6 +35,8 @@ No other Formal Frontier library.
 - [Spectral Stone duality](../spectral-stone-duality/README.md)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/README.md#headline-results) of [FormalFrontier/ideal-completion](https://github.com/FormalFrontier/ideal-completion) at commit [e316d02a](https://github.com/FormalFrontier/ideal-completion/tree/e316d02a1c0814b130a7085a112c142542b7019d), Apache-2.0.*
 
 - [Principal embedding](principal-embedding.md)
 

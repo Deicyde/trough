@@ -8,7 +8,6 @@ proof: formalized
 
 # Differentiability–analyticity equivalence
 
-([`analyticOnNhd_iff_differentiableOn_of_finiteDimensional`](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/ComplexAnalysis/Analysis/Complex/FiniteDimensional.lean)).
 On such an open set, analyticity near every point is equivalent to complex
 Fréchet differentiability, under the same source and target hypotheses.
 

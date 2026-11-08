@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/formalization.yaml) of [FormalFrontier/complex-analysis](https://github.com/FormalFrontier/complex-analysis) at commit [c22c803e](https://github.com/FormalFrontier/complex-analysis/tree/c22c803e257c294edf0528a584b66e2735316717), Apache-2.0.*
 
-7 articles, for headline results in its README whose declaration link names a declaration the linked file declares.
+7 articles: 7 for headline results in its README whose declaration link names a declaration the scan finds in the linked file.
 
 ## Facts
 
@@ -14,8 +14,8 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed”
-- Automation: agent; framework “Codex and Hive”
+- Review status: “agent-reviewed”.
+- Automation: agent; framework “Codex and Hive”; prompting notes “Agent-assisted mathematical formalization using Mathlib.”
 
 ## Literature
 
@@ -34,6 +34,8 @@ The sources its formalization.yaml names, with their relationship to it.
 - [Ringed spaces](../../algebraic-geometry/ringed-spaces/README.md)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/README.md#headline-results) of [FormalFrontier/complex-analysis](https://github.com/FormalFrontier/complex-analysis) at commit [c22c803e](https://github.com/FormalFrontier/complex-analysis/tree/c22c803e257c294edf0528a584b66e2735316717), Apache-2.0.*
 
 - [Finite-dimensional differentiability implies analyticity](finite-dimensional-differentiability-implies-ana.md)
 - [Differentiability–analyticity equivalence](differentiability-analyticity-equivalence.md)

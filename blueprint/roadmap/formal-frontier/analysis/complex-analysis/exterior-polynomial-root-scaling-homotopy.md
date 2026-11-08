@@ -7,7 +7,6 @@ statement: formalized
 
 # Exterior polynomial root-scaling homotopy
 
-([`Polynomial.normalizedCircleMapScaleRootsHomotopy`](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/ComplexAnalysis/Analysis/Complex/PolynomialExterior.lean)).
 If `p.eval w ≠ 0` whenever `1 ≤ ‖w‖`, root scaling over the real unit interval
 joins the normalized leading monomial to the canonical normalized boundary map.
 Its characteristic value is `normalize ((p.scaleRoots (t : ℂ)).eval z)`.

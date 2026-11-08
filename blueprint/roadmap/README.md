@@ -16,7 +16,7 @@ Trough maps Lean formalization libraries: what each one formalizes and how its r
 - [Polynomial Freiman-Ruzsa](pfr/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses.
 - [Equational Theories](equational-theories/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the equations and implication classes in the project's data files are left for later.
 - [Strong PNT (Math Inc)](strongpnt/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them.
-- [Formal Frontier](formal-frontier/README.md): 44 libraries, a part per subject. One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page.
+- [Formal Frontier](formal-frontier/README.md): 44 libraries, a part per subject. One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own.
 
 ## Libraries still to map
 

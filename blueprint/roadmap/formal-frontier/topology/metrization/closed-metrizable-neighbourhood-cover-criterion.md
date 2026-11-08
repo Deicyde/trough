@@ -8,7 +8,6 @@ proof: formalized
 
 # Closed metrizable neighbourhood-cover criterion
 
-([`TopologicalSpace.metrizableSpace_of_locallyFinite_isClosed_interior_cover`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).
 A space is metrizable if it has a locally finite family of closed subsets whose
 interiors cover the space and each of which is metrizable in its original
 subtype topology. No ambient separation assumption is required.

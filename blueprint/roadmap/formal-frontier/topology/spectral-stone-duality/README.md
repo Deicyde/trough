@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/spectral-stone-duality/blob/3d9e22b25e636e8c1303bb66b8902beb8c5f4b1f/formalization.yaml) of [FormalFrontier/spectral-stone-duality](https://github.com/FormalFrontier/spectral-stone-duality) at commit [3d9e22b2](https://github.com/FormalFrontier/spectral-stone-duality/tree/3d9e22b25e636e8c1303bb66b8902beb8c5f4b1f), Apache-2.0.*
 
-2 articles: 1 for highlights of its formalization.yaml and 1 for headline results in its README whose declaration link names a declaration the linked file declares. Its other headline results are quoted where they stand.
+2 articles: 1 for highlights of its formalization.yaml whose declarations the scan finds and 1 for headline results in its README whose declaration link names a declaration the scan finds in the linked file. Its other headline results are quoted where they stand.
 
 ## Facts
 
@@ -14,14 +14,8 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed”
+- Review status: “agent-reviewed”.
 - Automation: agent; tool setup “Formal Frontier AI agents use Lean, Lake and Git for formalization and maintenance.”
-
-## Scope
-
-Reusable bounded distributive-lattice Stone duality and the documented spectral-limit, cylinder and subspace topology, including retrocompactness and compact locally closed subspaces of prespectral quasi-separated spaces without ambient compactness or sobriety claims, together with general soberification and its reflective adjunction, plus universal finite coproducts and conditional disjointness in thin lattice categories. The original point is the unique closed point among its generizations in a T0 space. Finite-limit- and finite-colimit-preserving functors between thin bounded lattice categories correspond to bounded lattice homomorphisms; the binary preservation laws also hold for the corresponding semilattices. Cofinite topology is quasi-sober precisely on finite underlying types, with no nonemptiness assumption. Quasi-sober spaces have topological Krull dimension equal to the Krull dimension of their original-point specialization preorder. Soberification preserves topological Krull dimension for every topological space, with no quasi-sobriety or separation assumption on the input. Both results include empty spaces and unbounded finite chain lengths without an attainment assumption. Source-specific correspondence and coverage decisions are maintained separately.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/spectral-stone-duality/blob/3d9e22b25e636e8c1303bb66b8902beb8c5f4b1f/formalization.yaml) of [FormalFrontier/spectral-stone-duality](https://github.com/FormalFrontier/spectral-stone-duality) at commit [3d9e22b2](https://github.com/FormalFrontier/spectral-stone-duality/tree/3d9e22b25e636e8c1303bb66b8902beb8c5f4b1f), Apache-2.0.*
 
 ## Literature
 
@@ -47,6 +41,8 @@ The sources its formalization.yaml names, with their relationship to it.
 - [Specialization and soberification dimensions](specialization-and-soberification-dimensions.md)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/spectral-stone-duality/blob/3d9e22b25e636e8c1303bb66b8902beb8c5f4b1f/README.md#headline-results) of [FormalFrontier/spectral-stone-duality](https://github.com/FormalFrontier/spectral-stone-duality) at commit [3d9e22b2](https://github.com/FormalFrontier/spectral-stone-duality/tree/3d9e22b25e636e8c1303bb66b8902beb8c5f4b1f), Apache-2.0.*
 
 [Tube predicates](https://github.com/FormalFrontier/spectral-stone-duality/blob/3d9e22b25e636e8c1303bb66b8902beb8c5f4b1f/SpectralStoneDuality/Topology/Tube.lean) are defined for arbitrary topological spaces: a tube-closed set is the closure of a retrocompact open subset, and a tube-open set has tube-closed complement. The API provides witness and complement characterizations, ordinary closedness and openness, and empty-set and whole-space cases. Tube-closed sets are stable under finite unions, and tube-open sets under finite intersections, including empty families.
 

@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/formalization.yaml) of [FormalFrontier/morphism-properties](https://github.com/FormalFrontier/morphism-properties) at commit [1666ed81](https://github.com/FormalFrontier/morphism-properties/tree/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 13 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 13 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,15 +14,9 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “Under development”
+- Review status: “Under development”.
 - Review notes: “The library covers relative preservation, fixed-base-arrow structured-over transport and fixed-base pairing, not the full B1/B2 package, converse, adjunction or creation of structured pullbacks.”
 - Automation: agent; tool setup “Formal Frontier AI agents assisted with Lean formalization, examples, package configuration and documentation using Mathlib.”
-
-## Scope
-
-Four modules: generic relative pullback-map preservation and the either-leg criterion for existing squares; structured-over transport with projection, membership, extensionality, uniqueness and comparison APIs; and a fixed-base pullback pairing with independent object properties, selected-pair existence and relative horizontal preservation; and pointwise density under slicing, with a dense-functor instance under the hypothesis that the original functor is dense. Density examples use Yoneda over two-point and empty constant presheaves. Other constructed examples use three- and four-object chains, nonempty finite subsets and proper finite-type maps, including local existence boundaries and an asymmetric nonisomorphic pairing.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/formalization.yaml) of [FormalFrontier/morphism-properties](https://github.com/FormalFrontier/morphism-properties) at commit [1666ed81](https://github.com/FormalFrontier/morphism-properties/tree/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f), Apache-2.0.*
 
 ## Literature
 
@@ -35,8 +29,9 @@ The sources its formalization.yaml names, with their relationship to it.
 
 No other Formal Frontier library.
 
-
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/README.md#headline-results) of [FormalFrontier/morphism-properties](https://github.com/FormalFrontier/morphism-properties) at commit [1666ed81](https://github.com/FormalFrontier/morphism-properties/tree/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f), Apache-2.0.*
 
 The pullback declarations below lie in `CategoryTheory.MorphismProperty`.
 In the one-factor results, `f : S' ⟶ S` is a fixed base-change arrow.
@@ -144,13 +139,6 @@ Mathlib's ordinary over-category pullback comparison isomorphism.
 
 ## Main results
 
-The 6 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 6 main results, and the scan finds 6 of them declared in the file the yaml gives; they are on their own page, not made articles.
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `CategoryTheory.CostructuredArrow.isDenseAt_toOver` | theorem | [MorphismProperties/Density.lean, line 44](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/Density.lean#L44) |  |
-| `CategoryTheory.CostructuredArrow.isDense_toOver` | instance | [MorphismProperties/Density.lean, line 67](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/Density.lean#L67) |  |
-| `CategoryTheory.MorphismProperty.isStableUnderBaseChange_either_iff` | theorem | [MorphismProperties/RelativeBaseChange.lean, line 73](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean#L73) |  |
-| `CategoryTheory.MorphismProperty.pullbackLift_fst_snd_of_intersection_of_postcomp` | theorem | [MorphismProperties/RelativeBaseChange.lean, line 138](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean#L138) |  |
-| `CategoryTheory.MorphismProperty.Over.pullbackOfIntersectionOfPostcomp` | def | [MorphismProperties/OverPullback.lean, line 50](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/OverPullback.lean#L50) |  |
-| `CategoryTheory.MorphismProperty.Over.pullbackPairing_map_mem_of_relative` | theorem | [MorphismProperties/PullbackPairing.lean, line 294](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/PullbackPairing.lean#L294) |  |
+- [Main results](main-results/README.md)

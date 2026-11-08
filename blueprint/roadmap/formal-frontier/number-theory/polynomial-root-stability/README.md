@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/formalization.yaml) of [FormalFrontier/polynomial-root-stability](https://github.com/FormalFrontier/polynomial-root-stability) at commit [efade497](https://github.com/FormalFrontier/polynomial-root-stability/tree/efade497a4cf39e72a20ef94fe4028b82fcb5f80), Apache-2.0.*
 
-4 articles, for headline results in its README whose declaration link names a declaration the linked file declares. Its other headline results are quoted where they stand.
+4 articles: 4 for headline results in its README whose declaration link names a declaration the scan finds in the linked file. Its other headline results are quoted where they stand.
 
 ## Facts
 
@@ -14,15 +14,9 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “pending”
+- Review status: “pending”.
 - Automation: agent; framework “Codex CLI”; tool setup “AI-assisted Lean proof development, mathematical examples and documentation with repository-pinned Lean and mathlib compilation.”
 - Automation notes: “Automated assistance is not a substitute for proof-term validation, mathematical review or source-correspondence review.”
-
-## Scope
-
-Nonzero separable reference and same-degree splitting comparison polynomials in one IsKrasner normed extension; real/complex variants, varying degrees and canonical splitting-field objects excluded. Also a quantitative Newton lifting theorem for integral polynomials over complete ultrametric normed fields, and resultant-controlled two-factor lifting with degree and leading-coefficient preservation and quantitative correction bounds. Generic value-monoid estimates give anchored and two-point polynomial scaling and derivative-value constancy over commutative rings, with injectivity only for valuations of zero support; no arbitrary-rank root-existence theorem is asserted. Newton lifting retains its complete ultrametric normed-field hypotheses.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/formalization.yaml) of [FormalFrontier/polynomial-root-stability](https://github.com/FormalFrontier/polynomial-root-stability) at commit [efade497](https://github.com/FormalFrontier/polynomial-root-stability/tree/efade497a4cf39e72a20ef94fe4028b82fcb5f80), Apache-2.0.*
 
 ## Literature
 
@@ -41,6 +35,8 @@ No other Formal Frontier library.
 - [Complex analysis](../../analysis/complex-analysis/README.md)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/README.md#headline-results) of [FormalFrontier/polynomial-root-stability](https://github.com/FormalFrontier/polynomial-root-stability) at commit [efade497](https://github.com/FormalFrontier/polynomial-root-stability/tree/efade497a4cf39e72a20ef94fe4028b82fcb5f80), Apache-2.0.*
 
 **Root-generated fields are locally constant at fixed degree.** Fix normed
 fields `K`, `L` with a normed algebra structure `L / K` satisfying
@@ -170,16 +166,6 @@ calculation shows that uniqueness cannot use the closed derivative-radius ball.
 
 ## Main results
 
-The 9 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 9 main results, and the scan finds 9 of them declared in the file the yaml gives; they are on their own page, not made articles.
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `IsKrasner.exists_pos_adjoin_rootSet_eq_of_monic_separable` | theorem | [PolynomialRootStability/Krasner.lean, line 565](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Krasner.lean#L565) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `IsKrasner.exists_pos_adjoin_rootSet_eq_of_separable_normalized` | theorem | [PolynomialRootStability/Normalization.lean, line 45](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Normalization.lean#L45) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `IsKrasner.exists_pos_adjoin_rootSet_eq_of_separable` | theorem | [PolynomialRootStability/Normalization.lean, line 214](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Normalization.lean#L214) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Valuation.map_eval_sub_eq_of_mul_map_sub_lt_map_derivative` | theorem | [PolynomialRootStability/Valuation.lean, line 163](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean#L163) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Valuation.map_derivative_eval_eq_of_mul_map_sub_lt_map_derivative` | theorem | [PolynomialRootStability/Valuation.lean, line 209](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean#L209) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Valuation.map_eval_sub_eval_eq_of_mul_map_sub_lt_map_derivative` | theorem | [PolynomialRootStability/Valuation.lean, line 220](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean#L220) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Valuation.injOn_eval_of_mul_map_sub_lt_map_derivative` | theorem | [PolynomialRootStability/Valuation.lean, line 245](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean#L245) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Polynomial.exists_root_tendsto_iterate_newtonMap` | theorem | [PolynomialRootStability/Newton.lean, line 261](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Newton.lean#L261) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Polynomial.exists_factorization_of_supNorm_lt_resultant_sq` | theorem | [PolynomialRootStability/ResultantFactorization.lean, line 214](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/ResultantFactorization.lean#L214) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+- [Main results](main-results/README.md)

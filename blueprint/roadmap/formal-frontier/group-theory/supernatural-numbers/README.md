@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/formalization.yaml) of [FormalFrontier/supernatural-numbers](https://github.com/FormalFrontier/supernatural-numbers) at commit [cb444a40](https://github.com/FormalFrontier/supernatural-numbers/tree/cb444a4051e593328d3e99ad5ae5c8c56ca48099), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 3 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 3 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,16 +14,10 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “self-assessed”
+- Review status: “self-assessed”.
 - Review notes: “Compilation checks, including warning-fatal builds, are distinct from complete transitive standard-axiom verification, including private and generated declarations. Neither schema validation nor this self-assessment constitutes independent mathematical review, rights assessment or certification of a particular revision or its publication status.”
 - Automation: agent; framework “Codex CLI (Formal Frontier Hive), Lean 4 and mathlib”; tool setup “AI agents using Codex CLI, Lean 4 and mathlib developed the mathematical library, checked clients, metadata, bottom/simplification work and the doc-gen4 Markdown adapter. Beacon assembled the original modules, notices and corrections; Folio contributed headline exposition. Exact model versions and total costs were not recorded here.”
 - Automation notes: “Formal Frontier Agents is the collective formalization credit. Beacon is an AI-agent contributor, not a separately identified human author. Beacon's original modules, other AI-agent client/metadata/bottom and documentation contributions, Folio's headline exposition and the adapter's Root Stability/Anchor Ideal recipe lineage are credited in README.md and docs/README.md. Apache notices, collective credit and genuine third-party attribution are preserved; the collective author credit does not identify a copyright holder. The generated API includes displayed Lean signatures and project docstrings, not external book text.”
-
-## Scope
-
-Reusable supernatural-number arithmetic, finite-quotient profinite order and closed-subgroup index, their tower law, and torsion-character comparison under the hypotheses declared in Lean. This metadata does not assert complete source coverage or certify any particular release snapshot.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/formalization.yaml) of [FormalFrontier/supernatural-numbers](https://github.com/FormalFrontier/supernatural-numbers) at commit [cb444a40](https://github.com/FormalFrontier/supernatural-numbers/tree/cb444a4051e593328d3e99ad5ae5c8c56ca48099), Apache-2.0.*
 
 ## Literature
 
@@ -37,6 +31,8 @@ The sources its formalization.yaml names, with their relationship to it.
 
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/README.md#headline-results) of [FormalFrontier/supernatural-numbers](https://github.com/FormalFrontier/supernatural-numbers) at commit [cb444a40](https://github.com/FormalFrontier/supernatural-numbers/tree/cb444a4051e593328d3e99ad5ae5c8c56ca48099), Apache-2.0.*
 
 **Arithmetic with arbitrary prime exponents.** A supernatural number has an
 `ℕ∞` exponent at every prime, without a finite-support restriction.

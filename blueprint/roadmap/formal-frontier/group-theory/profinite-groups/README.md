@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/formalization.yaml) of [FormalFrontier/profinite-groups](https://github.com/FormalFrontier/profinite-groups) at commit [bf258c54](https://github.com/FormalFrontier/profinite-groups/tree/bf258c54ddbe2b2e96f59e1965e55688279b872f), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 8 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 8 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,22 +14,16 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “other”
+- Review status: “other”.
 - Review notes: “Read README.md for headline results and import examples, and docs/Mathematics.md for hypotheses, constructions and limitations.”
-- Automation: agent; framework “Codex CLI and Hive Tasks”; tool setup “AI agents developed code and documentation with a pinned Lean/mathlib Lake environment; independent agent executions reviewed mathematics.”
+- Automation: agent; framework “Codex CLI and Hive Tasks”; tool setup “AI agents developed code and documentation with a pinned Lean/mathlib Lake environment; independent agent executions reviewed mathematics.”; prompting notes “Mathematical assumptions, source boundaries and concrete declarations are explained in README.md, docs/Mathematics.md and docs/API.md.”
 - Automation notes: “Beacon contributed the initial implementation and API and regression-client repairs. Formal Frontier Agents contributed further mathematics, tests, reference documentation and independent reviews. The native reference adapter and catalogue follow the finite-group Tate cohomology, polynomial-root-stability and Anchor ideal-completion adaptation lineage; Folio contributed headline input.”
-
-## Scope
-
-Production modules and checked-use clients have separate import roots. For any small nonempty cofiltered diagram of finite discrete spaces and any limiting cone, stage maps to a finite target form a filtered colimit equivalent to continuous maps from its limit, naturally in the target. Empty stages, limits and targets are allowed, but not an empty index. For an arbitrary diagram of finite-space targets with a specified limiting profinite cone, continuous maps from a specified cofiltered finite-space limit correspond to compatible stage-map classes at the target objects; the target index need not be cofiltered, small or nonempty. This is a comparison of profinite spaces and continuous maps, not groups. For two small nonempty cofiltered diagrams in the finite-set skeleton, morphisms between their canonical dual ind-objects correspond to compatible finite-stage map classes, with representative, composition, identity and fixed-index naturality laws. Specified limiting cones identify these morphisms with continuous maps of profinite spaces; no presentation-independent pro-category equivalence is asserted. Compatible quotient images reconstruct closed subgroups, and arbitrary prescribed quotient-level Sylow coordinates extend to compatible families and closed subgroups with Sylow finite images. Maximality is conditional on every actual finite quotient image of a containing subgroup being a p-group; independently conjugate images of closed subgroups yield an ambient conjugator. Procyclic power images classify open subgroups, not all closed subgroups of an arbitrary procyclic group. The closed-subgroup classification is for the specific primewise p-adic product. Nevertheless, every closed subgroup of a procyclic profinite group inherits procyclicity.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/formalization.yaml) of [FormalFrontier/profinite-groups](https://github.com/FormalFrontier/profinite-groups) at commit [bf258c54](https://github.com/FormalFrontier/profinite-groups/tree/bf258c54ddbe2b2e96f59e1965e55688279b872f), Apache-2.0.*
 
 ## Literature
 
 The sources its formalization.yaml names, with their relationship to it.
 
-- *Cohomology of Number Fields (corrected second edition, electronic version 2.3, May 2020)*, Jürgen Neukirch, Alexander Schmidt, Kay Wingberg, Chapter I, section 1 (including exercises 1 and 3–5); section 6 (finite-quotient pro-p and Sylow arguments); section 7 (before proposition 1.7.7). (book; background).
+- *Cohomology of Number Fields (corrected second edition, electronic version 2.3, May 2020)*, Jürgen Neukirch, Alexander Schmidt, Kay Wingberg, Chapter I, section 1 (including exercises 1 and 3–5); section 6 (finite-quotient pro-p and Sylow arguments); section 7 (before proposition 1.7.7) (book; background).
 
 ## Builds on
 
@@ -41,6 +35,8 @@ The sources its formalization.yaml names, with their relationship to it.
 
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/README.md#headline-results) of [FormalFrontier/profinite-groups](https://github.com/FormalFrontier/profinite-groups) at commit [bf258c54](https://github.com/FormalFrontier/profinite-groups/tree/bf258c54ddbe2b2e96f59e1965e55688279b872f), Apache-2.0.*
 
 Explore [finite diagrams](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/README.md#finite-diagrams-and-inverse-limit-characterizations),
 [maps and constructions](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/README.md#maps-closed-subgroups-and-universal-constructions),

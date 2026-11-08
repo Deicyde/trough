@@ -7,7 +7,6 @@ statement: formalized
 
 # Compact scalar-kernel operators
 
-([`ContinuousMap.kernelOperator`](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/ComplexAnalysis/MeasureTheory/Integral/Kernel.lean)).
 A continuous scalar kernel on `X × Y`, with compact `Y` and a finite Borel
 measure, gives a compact complex-linear map from `L²(Y, μ)` to `C(X, ℂ)`.
 The parameter space `X` is arbitrary; compactness of `X` is needed only for

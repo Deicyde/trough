@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/formalization.yaml) of [FormalFrontier/vector-bundles](https://github.com/FormalFrontier/vector-bundles) at commit [e3fb9de3](https://github.com/FormalFrontier/vector-bundles/tree/e3fb9de334c8b60bdb707b3e48b2094b2202c725), Apache-2.0.*
 
-5 articles: 4 for highlights of its formalization.yaml and 1 for headline results in its README whose declaration link names a declaration the linked file declares. Its other headline results are quoted where they stand.
+5 articles: 4 for highlights of its formalization.yaml whose declarations the scan finds and 1 for headline results in its README whose declaration link names a declaration the scan finds in the linked file. Its other headline results are quoted where they stand.
 
 ## Facts
 
@@ -14,22 +14,16 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed”
+- Review status: “agent-reviewed”.
 - Automation: agent; tool setup “Lean 4 and Mathlib”
 - Automation notes: “AI agents contributed to the formalization and documentation.”
-
-## Scope
-
-Foundational metrics, supplied-metric orthogonal splitting and local coordinates, fiberwise isomorphisms, products, pullbacks, cylinder charts, frames, finite embeddings, ranges and finite complements, with full standard and boundary examples. Sigma-compactness of fiber-bundle total spaces over R₁ sigma-compact bases with sigma-compact models, reflection to models over pointed R₀ bases, and a factor characterization for nonempty R₁ bases and nonempty models.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/formalization.yaml) of [FormalFrontier/vector-bundles](https://github.com/FormalFrontier/vector-bundles) at commit [e3fb9de3](https://github.com/FormalFrontier/vector-bundles/tree/e3fb9de334c8b60bdb707b3e48b2094b2202c725), Apache-2.0.*
 
 ## Literature
 
 The sources its formalization.yaml names, with their relationship to it.
 
-- [Vector Bundles and K-Theory](https://pi.math.cornell.edu/~hatcher/VBKT/VBpage.html), Allen Hatcher, Version 2.2 (November 2017), section 1.1: Lemma 1.1, Proposition 1.2 and its Hermitian remark, supplied-metric ingredients of Proposition 1.3, finite complements in Proposition 1.4, pullbacks in Proposition 1.5, and the two preliminary cylinder facts used in Proposition 1.7. (book; adapts).
-- [Mathlib](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5), The Mathlib Community, Topology.VectorBundle; module topology and continuous linear maps; inner products and orthogonal complements; partitions of unity; continuous functional calculus; sigma-compact spaces, compact refinements of finite open covers and bundle trivialization homeomorphisms. (software; adapts).
+- [Vector Bundles and K-Theory](https://pi.math.cornell.edu/~hatcher/VBKT/VBpage.html), Allen Hatcher, Version 2.2 (November 2017), section 1.1: Lemma 1.1, Proposition 1.2 and its Hermitian remark, supplied-metric ingredients of Proposition 1.3, finite complements in Proposition 1.4, pullbacks in Proposition 1.5, and the two preliminary cylinder facts used in Proposition 1.7 (book; adapts).
+- [Mathlib](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5), The Mathlib Community, Topology.VectorBundle; module topology and continuous linear maps; inner products and orthogonal complements; partitions of unity; continuous functional calculus; sigma-compact spaces, compact refinements of finite open covers and bundle trivialization homeomorphisms (software; adapts).
 
 ## Builds on
 
@@ -51,6 +45,8 @@ The sources its formalization.yaml names, with their relationship to it.
 
 ## Headline results
 
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/README.md#headline-results) of [FormalFrontier/vector-bundles](https://github.com/FormalFrontier/vector-bundles) at commit [e3fb9de3](https://github.com/FormalFrontier/vector-bundles/tree/e3fb9de334c8b60bdb707b3e48b2094b2202c725), Apache-2.0.*
+
 **Semiring kernel projections and splitting compatibility.** The equivalence
 `ContinuousLinearMap.equivProdKerOfRightInverse` is provided by
 [ProjectiveModules](https://github.com/FormalFrontier/projective-modules/blob/77a601ffd885a18a7c0fd90e311b7f530ac4762b/ProjectiveModules/Topology/Splitting.lean).
@@ -67,7 +63,7 @@ continuous linear right inverse `s` gives `E ≃L[R] F × f.ker`, with coordinat
 and `F` an additive group, both bundled constructions agree with Mathlib's on the
 same data. No scalar topology, separation or completeness is assumed.
 
-**In a normed ring finite dimensional over an arbitrary field, every element `a` with `‖1 - a‖ < 1` is a unit, and the unit locus is open.** In a normed ring finite dimensional over an arbitrary field, every element `a`
+In a normed ring finite dimensional over an arbitrary field, every element `a`
 with `‖1 - a‖ < 1` is a unit, and the unit locus is open. No scalar norm or
 completeness is required. The same conclusions hold in left-Artinian normed
 rings ([module](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Analysis/Normed/Algebra/Units.lean)). A
@@ -76,7 +72,7 @@ normed space consequently has an open invertible locus, even over an incomplete
 nontrivially normed field
 ([module](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Analysis/Normed/Algebra/OperatorFamilies.lean)).
 
-**Over a possibly incomplete nontrivially normed field, a family of existing continuous linear maps between given seminormed norm-compatible ….** Over a possibly incomplete nontrivially normed field, a family of existing continuous linear
+Over a possibly incomplete nontrivially normed field, a family of existing continuous linear
 maps between given seminormed norm-compatible vector spaces, with finite-dimensional original
 domain, is continuous in the original operator-norm topology exactly when every original
 fixed-vector evaluation is continuous
@@ -397,21 +393,6 @@ Further compactness, separability and Lindelöf criteria are in the [detailed gu
 
 ## Main results
 
-The 14 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 14 main results, and the scan finds 14 of them declared in the file the yaml gives; they are on their own page, not made articles.
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `VectorBundle.continuousHermitianMetric` | def | [VectorBundles/Topology/VectorBundle/MetricExistence.lean, line 48](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/MetricExistence.lean#L48) |  |
-| `VectorBundle.continuousRiemannianMetric` | def | [VectorBundles/Topology/VectorBundle/Metric.lean, line 45](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/Metric.lean#L45) |  |
-| `Bundle.ContinuousHermitianMetric.orthogonalBundle` | def | [VectorBundles/Topology/VectorBundle/OrthogonalComplement.lean, line 505](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/OrthogonalComplement.lean#L505) |  |
-| `Bundle.ContinuousHermitianMetric.orthogonalAdditionHomeomorph` | def | [VectorBundles/Topology/VectorBundle/OrthogonalAddition.lean, line 147](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/OrthogonalAddition.lean#L147) |  |
-| `Bundle.ContinuousHermitianMetric.orthogonalProjectionTotal` | def | [VectorBundles/Topology/VectorBundle/OrthogonalProjection.lean, line 91](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/OrthogonalProjection.lean#L91) |  |
-| `Bundle.ContinuousHermitianMetric.orthogonalComplementProjectionTotal` | def | [VectorBundles/Topology/VectorBundle/OrthogonalProjection.lean, line 103](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/OrthogonalProjection.lean#L103) |  |
-| `Bundle.ContinuousHermitianMetric.orthonormalizeTrivialization` | def | [VectorBundles/Topology/VectorBundle/OrthonormalTrivialization.lean, line 396](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/OrthonormalTrivialization.lean#L396) |  |
-| `VectorBundle.homeomorphOfFiberwiseLinearEquivOfIsModuleTopology` | def | [VectorBundles/Topology/VectorBundle/Isomorphism.lean, line 212](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/Isomorphism.lean#L212) |  |
-| `VectorBundle.of_isLinear` | theorem | [VectorBundles/Topology/VectorBundle/CoordinateMap.lean, line 198](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/CoordinateMap.lean#L198) |  |
-| `VectorBundle.finiteComplement` | def | [VectorBundles/Topology/VectorBundle/FiniteComplement.lean, line 291](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/VectorBundle/FiniteComplement.lean#L291) |  |
-| `FiberBundle.sigmaCompactSpace` | instance | [VectorBundles/Topology/FiberBundle/SigmaCompact.lean, line 60](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/FiberBundle/SigmaCompact.lean#L60) |  |
-| `Bundle.Trivialization.sigmaCompactSpace_model_of_isClosed` | theorem | [VectorBundles/Topology/FiberBundle/SigmaCompact.lean, line 101](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/FiberBundle/SigmaCompact.lean#L101) |  |
-| `FiberBundle.sigmaCompactSpace_model` | theorem | [VectorBundles/Topology/FiberBundle/SigmaCompact.lean, line 124](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/FiberBundle/SigmaCompact.lean#L124) |  |
-| `FiberBundle.sigmaCompactSpace_totalSpace_iff` | theorem | [VectorBundles/Topology/FiberBundle/SigmaCompact.lean, line 140](https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/FiberBundle/SigmaCompact.lean#L140) |  |
+- [Main results](main-results/README.md)

@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/formalization.yaml) of [FormalFrontier/iwasawa-modules](https://github.com/FormalFrontier/iwasawa-modules) at commit [e71db96b](https://github.com/FormalFrontier/iwasawa-modules/tree/e71db96b779b35bb05bd64eec63393e57b8da691), Apache-2.0.*
 
-1 article, for headline results in its README whose declaration link names a declaration the linked file declares. Its other headline results are quoted where they stand.
+1 article: 1 for headline results in its README whose declaration link names a declaration the scan finds in the linked file. Its other headline results are quoted where they stand.
 
 ## Facts
 
@@ -14,16 +14,11 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [e37d88a2](https://github.com/leanprover-community/mathlib4/tree/e37d88a26f3791ed5a93daa1f949af1021b8d103).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “independently reviewed published foundation; successor candidates require exact review”
+- Review status: “independently reviewed published foundation; successor candidates require exact review”.
 - Review notes: “Prism, Atlas, Lattice and Anchor reviewed earlier original mathematical contributions. Separate independent reviews addressed the original development and subsequent published snapshots. Each successor requires its own exact-candidate review and applicable build and complete transitive standard-axiom evidence, including private and generated declarations. Schema validity or public API documentation alone is not acceptance.”
-- Automation: agent; framework “AI-assisted Lean authoring with pinned Lake and mathlib”; tool setup “Beacon's original bridges, native-module and lint contributions; independently contributed public clients and metadata. The default build checks production and test roots with pinned Lean/mathlib. Separately retained native doc-gen4 SQLite/raw-record runs supplied the eleven-module API catalogue, not a private-proof census.”
+- Reviewers: “Prism, Atlas, Lattice and Anchor (historical individual mathematical contributions)”, “Independent Formal Frontier reviewers (development and published-release candidates)”.
+- Automation: agent; framework “AI-assisted Lean authoring with pinned Lake and mathlib”; tool setup “Beacon's original bridges, native-module and lint contributions; independently contributed public clients and metadata. The default build checks production and test roots with pinned Lean/mathlib. Separately retained native doc-gen4 SQLite/raw-record runs supplied the eleven-module API catalogue, not a private-proof census.”; prompting notes “AI agents assisted with original construction, proof search, module migration, testing and documentation. Human/operator authorization for verified original project contributions does not assign copyright ownership or clear third-party reuse.”
 - Automation notes: “Mathematical and module/test contributions received independent review. The adapted native-documentation generator draws on the finite-group Tate cohomology, polynomial-root-stability and Anchor ideal-completion adapters; expression credit and the bounds of public API documentation are explained in docs/README.md. Exact release decisions are recorded separately.”
-
-## Scope
-
-Reusable generic foundation only, not the full Iwasawa-module roadmap or a source-formalization completion claim. The native API catalogue is bound to the unchanged mathematical and dependency inputs identified by deceb449133f8bcc7fb4829e4fc167b483eef3a2, not to this document's release status. Independent review and required build/standard-axiom evidence are tied to exact candidates in the separate release record.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/formalization.yaml) of [FormalFrontier/iwasawa-modules](https://github.com/FormalFrontier/iwasawa-modules) at commit [e71db96b](https://github.com/FormalFrontier/iwasawa-modules/tree/e71db96b779b35bb05bd64eec63393e57b8da691), Apache-2.0.*
 
 ## Literature
 
@@ -38,6 +33,8 @@ The sources its formalization.yaml names, with their relationship to it.
 No other Formal Frontier library.
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/README.md#headline-results) of [FormalFrontier/iwasawa-modules](https://github.com/FormalFrontier/iwasawa-modules) at commit [e71db96b](https://github.com/FormalFrontier/iwasawa-modules/tree/e71db96b779b35bb05bd64eec63393e57b8da691), Apache-2.0.*
 
 - [Pseudo-nullity and short exact sequences](pseudo-nullity-and-short-exact-sequences.md)
 
@@ -82,11 +79,6 @@ The [native API reference](https://github.com/FormalFrontier/iwasawa-modules/blo
 
 ## Main results
 
-The 4 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 4 main results, and the scan finds 4 of them declared in the file the yaml gives; they are on their own page, not made articles.
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `Module.isPseudoNull_iff_localizedModule_subsingleton` | theorem | [IwasawaModules/PseudoIsomorphism/Basic.lean, line 34](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/Basic.lean#L34) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `LinearMap.isPseudoIsomorphism_iff_localizedModule_map_bijective` | theorem | [IwasawaModules/PseudoIsomorphism/LinearMap.lean, line 67](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/LinearMap.lean#L67) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `CompletedGroupAlgebra.proj_ofMonoidAlgebra` | theorem | [IwasawaModules/CompletedGroupAlgebra/Basic.lean, line 103](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Basic.lean#L103) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `CompletedGroupAlgebra.continuous_iff_proj` | theorem | [IwasawaModules/CompletedGroupAlgebra/Topology.lean, line 224](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Topology.lean#L224) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+- [Main results](main-results/README.md)

@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/formalization.yaml) of [FormalFrontier/integral-closure](https://github.com/FormalFrontier/integral-closure) at commit [8f0b15a5](https://github.com/FormalFrontier/integral-closure/tree/8f0b15a513bbb22d6b51988f2b424cc407694390), Apache-2.0.*
 
-7 articles: 4 for highlights of its formalization.yaml and 3 for headline results in its README whose declaration link names a declaration the linked file declares. Its other headline results are quoted where they stand.
+7 articles: 4 for highlights of its formalization.yaml whose declarations the scan finds and 3 for headline results in its README whose declaration link names a declaration the scan finds in the linked file. Its other headline results are quoted where they stand.
 
 ## Facts
 
@@ -14,16 +14,10 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “other: independently reviewed”
+- Review status: “other: independently reviewed”.
 - Review notes: “Independent review covers the mathematical code, ordinary-import examples and documentation.”
 - Automation: agent; tool setup “Formal Frontier AI agents used Lean and mathlib with reviewed project contributions, ordinary imports and pinned toolchain/dependency revisions.”
 - Automation notes: “Atlas contributed the initial descent proofs; other Formal Frontier contributors developed the later mathematics, module interfaces and examples. Folio contributed the initial README headlines. No model, cost or performance measurements are reported here.”
-
-## Scope
-
-An A-linear retraction of an injective algebra map into an integrally closed domain descends integral closedness; domain and integral-closure descent from an arbitrary field extension are separate results. No ascent, converse, normalization or whole-source formalization is claimed. For a homomorphism of commutative semirings, positive powers in its image give a topological embedding on prime spectra, without requiring the homomorphism to be surjective. This extends the surjective criterion, not all localization embeddings; no closed-range or spectral-surjectivity assertion is made. A nonzero domain integral over a henselian local ring is local, without assuming the base is a domain, the structural map injective, or the extension finite as a module.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/formalization.yaml) of [FormalFrontier/integral-closure](https://github.com/FormalFrontier/integral-closure) at commit [8f0b15a5](https://github.com/FormalFrontier/integral-closure/tree/8f0b15a513bbb22d6b51988f2b424cc407694390), Apache-2.0.*
 
 ## Literature
 
@@ -50,6 +44,8 @@ The sources its formalization.yaml names, with their relationship to it.
 - [Prime-spectrum embeddings from powers in the image](prime-spectrum-embeddings-from-powers-in-the-ima.md)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/README.md#headline-results) of [FormalFrontier/integral-closure](https://github.com/FormalFrontier/integral-closure) at commit [8f0b15a5](https://github.com/FormalFrontier/integral-closure/tree/8f0b15a513bbb22d6b51988f2b424cc407694390), Apache-2.0.*
 
 **Local normal integral extensions of valuation domains are valuation domains.** For commutative domains `R` and `S` in independent universes, an integral
 homomorphism `f : R →+* S` from a valuation domain to a local integrally
@@ -78,7 +74,7 @@ The unital-homomorphism form
 `alpha : R →+* S` with `h : alpha.IsIntegral`, without a chosen algebra
 structure.
 
-**For a homomorphism `f : A →+* B` of commutative rings, if each target element has a positive power in the image, contraction is an order ….** For a homomorphism `f : A →+* B` of commutative rings, if each target element
+For a homomorphism `f : A →+* B` of commutative rings, if each target element
 has a positive power in the image, contraction is an order isomorphism from
 radical ideals of `B` to radical ideals of `A` containing `RingHom.ker f`.
 Its inverse is extension followed by radical. For any integral homomorphism
@@ -214,13 +210,13 @@ For arbitrary commutative rings `R` and `S` in independent universes and an
 integral ring homomorphism `f : R →+* S`,
 [`IntegralClosure.Jacobson`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Jacobson.lean) provides:
 
-**`Ideal.comap_jacobson_of_isIntegral`.** `Ideal.comap_jacobson_of_isIntegral`: for every target ideal `J : Ideal S`,
+`Ideal.comap_jacobson_of_isIntegral`: for every target ideal `J : Ideal S`,
 `J.jacobson.comap f = (J.comap f).jacobson`.
 
-**`Ideal.map_jacobson_le_of_isIntegral`.** `Ideal.map_jacobson_le_of_isIntegral`: for every source ideal `I : Ideal R`,
+`Ideal.map_jacobson_le_of_isIntegral`: for every source ideal `I : Ideal R`,
 `I.jacobson.map f ≤ (I.map f).jacobson`.
 
-**`Ideal.map_le_jacobson_bot_of_isIntegral`.** `Ideal.map_le_jacobson_bot_of_isIntegral`: for every source ideal `I`,
+`Ideal.map_le_jacobson_bot_of_isIntegral`: for every source ideal `I`,
 `I ≤ (⊥ : Ideal R).jacobson` implies
 `I.map f ≤ (⊥ : Ideal S).jacobson`.
 
@@ -230,17 +226,6 @@ rings; the integral formula here assumes commutativity.
 
 ## Main results
 
-The 10 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 10 main results, and the scan finds 10 of them declared in the file the yaml gives; they are on their own page, not made articles.
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `HenselianLocalRing.isLocalRing_of_isIntegral` | theorem | [IntegralClosure/Henselian.lean, line 141](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Henselian.lean#L141) | Sorry count 0. |
-| `RingHom.isLocalRing_of_henselian_of_isIntegral` | theorem | [IntegralClosure/Henselian.lean, line 237](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Henselian.lean#L237) | Sorry count 0. |
-| `PrimeSpectrum.comap_isInducing_of_forall_pow_mem_range` | theorem | [IntegralClosure/Spectrum/Topology.lean, line 70](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum/Topology.lean#L70) | Sorry count 0. |
-| `PrimeSpectrum.isEmbedding_comap_of_forall_pow_mem_range` | theorem | [IntegralClosure/Spectrum/Topology.lean, line 92](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum/Topology.lean#L92) | Sorry count 0. |
-| `PrimeSpectrum.comap_injective_of_forall_pow_mem_range` | theorem | [IntegralClosure/Spectrum.lean, line 51](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum.lean#L51) | Sorry count 0. |
-| `IsIntegrallyClosed.of_linearRetract` | theorem | [IntegralClosure/LinearRetract.lean, line 43](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/LinearRetract.lean#L43) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Algebra.TensorProduct.rightLinearMap` | def | [IntegralClosure/TensorProduct.lean, line 65](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L65) | Axioms: `propext`, `Quot.sound`. |
-| `Algebra.TensorProduct.rightLinearMap_includeLeft` | theorem | [IntegralClosure/TensorProduct.lean, line 74](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L74) | Sorry count 0. Axioms: `propext`, `Quot.sound`. |
-| `Algebra.TensorProduct.isDomain_left` | theorem | [IntegralClosure/TensorProduct.lean, line 81](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L81) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
-| `Algebra.TensorProduct.isIntegrallyClosed_left` | theorem | [IntegralClosure/TensorProduct.lean, line 91](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L91) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+- [Main results](main-results/README.md)

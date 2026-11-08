@@ -8,7 +8,6 @@ proof: formalized
 
 # Finite-dimensional differentiability implies analyticity
 
-([`DifferentiableOn.analyticOnNhd_of_finiteDimensional`](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/ComplexAnalysis/Analysis/Complex/FiniteDimensional.lean)).
 A complex Fréchet-differentiable map on an open subset of a finite-dimensional
 complex normed space is analytic near every point of that set, when its target
 is a complete complex normed space; dimension zero is included.

@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/ringed-spaces/blob/052015f070ef0b3e42c724eb9a8f9a1a1b916682/formalization.yaml) of [FormalFrontier/ringed-spaces](https://github.com/FormalFrontier/ringed-spaces) at commit [052015f0](https://github.com/FormalFrontier/ringed-spaces/tree/052015f070ef0b3e42c724eb9a8f9a1a1b916682), Apache-2.0.*
 
-2 articles, for headline results in its README whose declaration link names a declaration the linked file declares. Its other headline results are quoted where they stand.
+2 articles: 2 for headline results in its README whose declaration link names a declaration the scan finds in the linked file. Its other headline results are quoted where they stand.
 
 ## Facts
 
@@ -14,7 +14,7 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “self-assessed”
+- Review status: “self-assessed”.
 - Review notes: “This metadata describes the library and does not self-certify independent acceptance of any new release, rights clearance, proof integrity or source coverage. Revision-specific review and release evidence is recorded separately.”
 - Automation: agent; framework “Agent-assisted Lean development”; tool setup “Agent-assisted Lean development with the repository-pinned Lean and mathlib revisions and kernel checking. Mathematical statements, attribution and release acceptance require independent review.”
 
@@ -33,6 +33,8 @@ The sources its formalization.yaml names, with their relationship to it.
 - [Complex analysis](../../analysis/complex-analysis/README.md) (a Lake dependency, pinned at 2c0ad1d2)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/ringed-spaces/blob/052015f070ef0b3e42c724eb9a8f9a1a1b916682/README.md#headline-results) of [FormalFrontier/ringed-spaces](https://github.com/FormalFrontier/ringed-spaces) at commit [052015f0](https://github.com/FormalFrontier/ringed-spaces/tree/052015f070ef0b3e42c724eb9a8f9a1a1b916682), Apache-2.0.*
 
 **Restriction and indexed gluing.** For `X Y : RingedSpace.{u, u}`,
 [`RingedSpace.isPullback_restrictInf`](https://github.com/FormalFrontier/ringed-spaces/blob/052015f070ef0b3e42c724eb9a8f9a1a1b916682/RingedSpaces/Restriction.lean) identifies

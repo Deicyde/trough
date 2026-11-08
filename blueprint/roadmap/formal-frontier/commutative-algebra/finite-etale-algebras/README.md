@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/formalization.yaml) of [FormalFrontier/finite-etale-algebras](https://github.com/FormalFrontier/finite-etale-algebras) at commit [4627c3ab](https://github.com/FormalFrontier/finite-etale-algebras/tree/4627c3ab2479e331c889a374309e62ee1b64a8af), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 5 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 5 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,22 +14,16 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed”
+- Review status: “agent-reviewed”.
 - Review notes: “Mathematical code, public-module clients and later hypothesis generalization received independent non-author agent review. This is not human review, source-author endorsement or a source-coverage decision. Generated API documentation records historical source bindings, not proof certification.”
 - Automation: agent; tool setup “Formal Frontier AI agents used Lean and Lake with pinned mathlib, repository tools and independent non-author agent review.”
 - Automation notes: “AI-assisted development under human project direction. No model identity, expenditure, elapsed-time total or human mathematical review is asserted.”
-
-## Scope
-
-Reusable field-base commutative-algebra APIs and checked example clients; ambient algebras may be zero or nonreduced. Greatest finite etale subalgebras need a supplied uniform natural-number dimension bound. Spectrum dimension bounds need a separably closed base and finitely many source connected components. Finite-Galois and separable-closure descent require coefficientwise stability and their stated extension hypotheses; purely inseparable finite-etale reconstruction requires a separably closed larger field. Complete source formalization is not claimed.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/formalization.yaml) of [FormalFrontier/finite-etale-algebras](https://github.com/FormalFrontier/finite-etale-algebras) at commit [4627c3ab](https://github.com/FormalFrontier/finite-etale-algebras/tree/4627c3ab2479e331c889a374309e62ee1b64a8af), Apache-2.0.*
 
 ## Literature
 
 The sources its formalization.yaml names, with their relationship to it.
 
-- *Algebraic Groups*, James S. Milne, 2017 edition, Propositions 1.29 and 1.30; the separable-closure paragraph in the proof of Proposition 1.30(a) is on printed page 15. (book; background).
+- *Algebraic Groups*, James S. Milne, 2017 edition, Propositions 1.29 and 1.30; the separable-closure paragraph in the proof of Proposition 1.30(a) is on printed page 15 (book; background).
 - *Original finite-etale subalgebra and embedded descent APIs*, Formal Frontier Agents (original-proof; independently-proves).
 
 ## Builds on
@@ -38,10 +32,12 @@ No other Formal Frontier library.
 
 ## Used by
 
-- [Scheme properties](../scheme-properties/README.md)
+- [Scheme properties](../../algebraic-geometry/scheme-properties/README.md)
 
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/README.md#headline-results) of [FormalFrontier/finite-etale-algebras](https://github.com/FormalFrontier/finite-etale-algebras) at commit [4627c3ab](https://github.com/FormalFrontier/finite-etale-algebras/tree/4627c3ab2479e331c889a374309e62ee1b64a8af), Apache-2.0.*
 
 **Finite etale subalgebras, composites and idempotents.** Over a field `k`,
 [surjective images](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/MaximalSubalgebra.lean#L44) of finite

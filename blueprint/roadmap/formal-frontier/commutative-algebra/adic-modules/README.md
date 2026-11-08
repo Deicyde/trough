@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/adic-modules/blob/86f9b35ef35af4b77c0f31b148cc8e9685d831db/formalization.yaml) of [FormalFrontier/adic-modules](https://github.com/FormalFrontier/adic-modules) at commit [86f9b35e](https://github.com/FormalFrontier/adic-modules/tree/86f9b35ef35af4b77c0f31b148cc8e9685d831db), Apache-2.0.*
 
-1 article, for highlights of its formalization.yaml. The headline results in its README are quoted where they stand.
+1 article: 1 for highlights of its formalization.yaml whose declarations the scan finds. The headline results in its README are quoted where they stand.
 
 ## Facts
 
@@ -14,16 +14,10 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed”
+- Review status: “agent-reviewed”.
 - Review notes: “The Lean code has undergone independent review by Formal Frontier AI agents, not human peer review or source-author endorsement. This describes code review, not completeness of correspondence with the mathematical sources.”
 - Automation: agent; tool setup “Formal Frontier AI agents using Lean, Lake, Git and Hive for original development, independent agent review, assembly and maintenance.”
 - Automation notes: “Original project expression and earlier source-repository adaptations are credited in docs/CREDITS.md. Unverified model identities and costs are omitted.”
-
-## Scope
-
-Uniform ideal-power torsion and height-one primary-component exactness for torsion-source pairs over Dedekind domains; raw inverse-limit completions and scalar restriction along commutative algebras with compatible actions. Abstract uniform-completion comparisons require finitely generated ideals. An exact pair remains middle exact after completion under separate pointwise induced/intrinsic cofinality bounds on both ranges; for a right-surjective pair, the first range bound suffices. The tensor comparison is surjective for a finite first original quotient and injective for a projective completed scalar extension. For finitely presented original modules, bijectivity follows from finite-free cofinality. A completed coefficient ring is Noetherian exactly when an original power quotient at any chosen precision n >= 2 is Noetherian; equivalently, the first quotient is Noetherian and the cotangent module is finite. The raw-module flatness criterion assumes a Noetherian completed coefficient ring. Under flatness of the raw module completion, its finite presentation is detected by any positive original power quotient. Henselian-pair criteria and coprime monic factor lifting over adically complete commutative rings; irreducible reduction at a maximal ideal uses a global monic factor-lifting property. Directed limits preserve Henselian pairs for nonempty directed systems with compatible ideals. Separated principal-adic valuation-ring comparisons require a nonzero generator; local and localization results retain their maximal-ideal, radical-disjointness and nonzero-prime hypotheses. For ideals with finite-submodule adic cofinality, a relative-annihilator Jacobson bound separates finite original modules; over an intrinsically complete original base, every finite original module is intrinsically complete. A submodule with finite quotient is closed in the canonical adic module topology under the corresponding quotient-annihilator bound, without assuming that the ambient module or submodule is finite. A maximal ideal is closed in the ring-adic topology exactly when it contains the defining ideal; all maximal ideals are closed exactly when that ideal lies in the Jacobson radical, without an APf hypothesis on these ring-only criteria. Submodule closure uses a supplied compatible additive-group topology and continuous fixed-scalar actions. Dense-subsemiring span closure uses separately continuous addition and coefficient continuity at the generators. Left-ideal density uses a supplied ideal-power basis in a topological additive group, not an arbitrary filtration topology construction. Comaximal powers work for arbitrary semiring left ideals; Chinese remainders for finite ideal families in rings require pairwise comaximality and full two-sidedness. Detailed statements and applications are in docs/Guide.md, docs/Results.md and the module documentation. Book correspondence is partial: general nonseparated reduction, height/rational-rank additivity, isolated subgroups and value-group exact sequences are outside the stated scope.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/adic-modules/blob/86f9b35ef35af4b77c0f31b148cc8e9685d831db/formalization.yaml) of [FormalFrontier/adic-modules](https://github.com/FormalFrontier/adic-modules) at commit [86f9b35e](https://github.com/FormalFrontier/adic-modules/tree/86f9b35ef35af4b77c0f31b148cc8e9685d831db), Apache-2.0.*
 
 ## Literature
 
@@ -56,6 +50,8 @@ The sources its formalization.yaml names, with their relationship to it.
 - [Middle exactness of completion for a Noetherian middle module](middle-exactness-of-completion-for-a-noetherian.md)
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/adic-modules/blob/86f9b35ef35af4b77c0f31b148cc8e9685d831db/README.md#headline-results) of [FormalFrontier/adic-modules](https://github.com/FormalFrontier/adic-modules) at commit [86f9b35e](https://github.com/FormalFrontier/adic-modules/tree/86f9b35ef35af4b77c0f31b148cc8e9685d831db), Apache-2.0.*
 
 Unless stated otherwise, rings are commutative and modules are additive
 commutative groups. Write `C = AdicCompletion I R`, `H = AdicCompletion I M`

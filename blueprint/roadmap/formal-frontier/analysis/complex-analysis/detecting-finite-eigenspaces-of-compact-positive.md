@@ -8,7 +8,6 @@ proof: formalized
 
 # Detecting finite eigenspaces of compact positive squares
 
-([`ContinuousLinearMap.exists_eigenvector_comp_adjoint_detected`](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/ComplexAnalysis/Analysis/InnerProductSpace/CompactOperator.lean)).
 On an arbitrary complete real or complex Hilbert space, compact `T` and
 continuous linear `B` with `B.comp T ≠ 0` give a nonzero eigenvalue of
 `T.comp T.adjoint` whose finite-dimensional eigenspace contains a vector

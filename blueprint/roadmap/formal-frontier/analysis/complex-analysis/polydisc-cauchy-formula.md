@@ -8,7 +8,6 @@ proof: formalized
 
 # Polydisc Cauchy formula
 
-([`DifferentiableOn.torusIntegral_cauchy`](https://github.com/FormalFrontier/complex-analysis/blob/c22c803e257c294edf0528a584b66e2735316717/ComplexAnalysis/Analysis/Complex/TorusCauchy.lean)).
 A complex-differentiable map on a positive-radius closed coordinate polydisc,
 valued in a complete complex normed space, agrees at interior points with
 its normalized torus boundary integral.

@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/formalization.yaml) of [FormalFrontier/quadratic-algebras](https://github.com/FormalFrontier/quadratic-algebras) at commit [16a5b4c5](https://github.com/FormalFrontier/quadratic-algebras/tree/16a5b4c54c4586483cf53597a96eb91ecd5a3bca), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 7 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 7 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,16 +14,10 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed mathematical development”
+- Review status: “agent-reviewed mathematical development”.
 - Review notes: “The stated scope does not assert complete source correspondence.”
 - Automation: agent; tool setup “Formal Frontier AI agents used Lean and pinned Mathlib to develop proofs, documentation and downstream examples.”
 - Automation notes: “AI agents contributed mathematical proofs, module and client migration, and documentation.”
-
-## Scope
-
-The canonical quadratic-algebra quotient bridge, scalar-extension presentations and total fraction rings allow arbitrary commutative rings. Over a real-closed field, irreducibility of the defining quadratic gives a nonzero square root of its negative discriminant. For any field R with Mathlib's IsRealClosed R, QuadraticAlgebra R (-1) 0 is algebraically closed and every irreducible polynomial over R has natural degree at most two, without a chosen ordering or a separately supplied closure or degree bound. This does not assert algebraic closedness for arbitrary quadratic algebras or commutative rings. Over any field with nonzero two, a supplied nonzero element whose square is the negative discriminant gives chosen coordinates, with no preferred sign. The discriminant-coordinate AdjoinRoot equivalence additionally requires a monic polynomial of natural degree two. Separately, an irreducible degree-two polynomial over any field with a supplied root in the canonical quadratic algebra has an evaluation equivalence without monicity; over a real-closed field, every irreducible nonlinear polynomial has such an equivalence with a chosen root and no witness from the caller. Over the reals, the canonical quadratic algebra has complex coordinates with its generator mapping to the positive imaginary unit. Any supplied complex root of an irreducible quadratic induces an evaluation equivalence on every polynomial class, and irreducible nonlinear polynomials admit a selected-root equivalence with no caller-supplied root or monicity. Neither construction presents higher-degree quotients or works over arbitrary commutative rings. Integral-closure criteria retain the stated domain, UFD, invertible-two or integer congruence hypotheses. Diagonal irreducibility and squarefreeness retain field and nonzero-two assumptions. The concrete minus-five development proves nonunique factorization, the ring-of-integers identification, discriminant minus twenty and class number two. No general classification of quadratic forms or number fields, or complete formalization of a mathematical source, is asserted.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/formalization.yaml) of [FormalFrontier/quadratic-algebras](https://github.com/FormalFrontier/quadratic-algebras) at commit [16a5b4c5](https://github.com/FormalFrontier/quadratic-algebras/tree/16a5b4c54c4586483cf53597a96eb91ecd5a3bca), Apache-2.0.*
 
 ## Literature
 
@@ -35,8 +29,9 @@ The sources its formalization.yaml names, with their relationship to it.
 
 No other Formal Frontier library.
 
-
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/README.md#headline-results) of [FormalFrontier/quadratic-algebras](https://github.com/FormalFrontier/quadratic-algebras) at commit [16a5b4c5](https://github.com/FormalFrontier/quadratic-algebras/tree/16a5b4c54c4586483cf53597a96eb91ecd5a3bca), Apache-2.0.*
 
 The results below extend mathlib's quadratic-algebra, polynomial, localization
 and number-field infrastructure. They provide changes of presentation,
@@ -187,27 +182,6 @@ and the [class-number-two theorem](https://github.com/FormalFrontier/quadratic-a
 
 ## Main results
 
-The 19 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 19 main results, and the scan finds 18 of them declared in the file the yaml gives; they are on their own page, not made articles. The scan does not find `QuadraticAlgebra.instIsAlgClosedNegOfNat_quadraticAlgebras` ([QuadraticAlgebras/RealClosedClosure.lean](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedClosure.lean)).
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `QuadraticAlgebra.equivAdjoinRoot` | def | [QuadraticAlgebras/AdjoinRoot.lean, line 116](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/AdjoinRoot.lean#L116) |  |
-| `QuadraticAlgebra.exists_sq_eq_neg_discr_of_irreducible` | theorem | [QuadraticAlgebras/RealClosedCoordinates.lean, line 71](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedCoordinates.lean#L71) |  |
-| `QuadraticAlgebra.equivOfDiscrSqNeg` | def | [QuadraticAlgebras/RealClosedCoordinates.lean, line 96](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedCoordinates.lean#L96) |  |
-| `QuadraticAlgebra.adjoinRootEquivOfDiscrSqNeg` | def | [QuadraticAlgebras/RealClosedCoordinates.lean, line 148](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedCoordinates.lean#L148) |  |
-| `IsRealClosed.irreducible_natDegree_le_two` | theorem | [QuadraticAlgebras/RealClosedClosure.lean, line 315](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedClosure.lean#L315) |  |
-| `QuadraticAlgebra.adjoinRootEquivOfRoot` | def | [QuadraticAlgebras/RealClosedAdjoinRoot.lean, line 52](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedAdjoinRoot.lean#L52) |  |
-| `QuadraticAlgebra.adjoinRootEquivOfIrreducible` | def | [QuadraticAlgebras/RealClosedAdjoinRoot.lean, line 122](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedAdjoinRoot.lean#L122) |  |
-| `QuadraticAlgebra.realComplexEquiv` | def | [QuadraticAlgebras/RealComplexAdjoinRoot.lean, line 47](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealComplexAdjoinRoot.lean#L47) |  |
-| `QuadraticAlgebra.adjoinRootComplexEquivOfRoot` | def | [QuadraticAlgebras/RealComplexAdjoinRoot.lean, line 88](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealComplexAdjoinRoot.lean#L88) |  |
-| `QuadraticAlgebra.adjoinRootComplexEquivOfIrreducible` | def | [QuadraticAlgebras/RealComplexAdjoinRoot.lean, line 142](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealComplexAdjoinRoot.lean#L142) |  |
-| `QuadraticAlgebra.fractionRingEquivBaseChange` | def | [QuadraticAlgebras/FractionRing.lean, line 224](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/FractionRing.lean#L224) |  |
-| `IsFractionRing.isInteger_of_sq_mul_squarefree` | theorem | [QuadraticAlgebras/Squarefree.lean, line 44](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/Squarefree.lean#L44) |  |
-| `QuadraticAlgebra.isIntegrallyClosed_iff_squarefree` | theorem | [QuadraticAlgebras/IntegralClosureCriterion.lean, line 43](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/IntegralClosureCriterion.lean#L43) |  |
-| `QuadraticAlgebra.isIntegrallyClosed_int_of_squarefree_of_emod_four` | theorem | [QuadraticAlgebras/IntegralClosureInt.lean, line 138](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/IntegralClosureInt.lean#L138) |  |
-| `MvPolynomial.irreducible_sumSMulXSq` | theorem | [QuadraticAlgebras/Diagonal.lean, line 226](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/Diagonal.lean#L226) |  |
-| `MvPolynomial.squarefree_sumSMulXSq` | theorem | [QuadraticAlgebras/Diagonal.lean, line 441](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/Diagonal.lean#L441) |  |
-| `QuadraticAlgebra.not_uniqueFactorizationMonoid_int_negFive` | theorem | [QuadraticAlgebras/SqrtNegFive.lean, line 147](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/SqrtNegFive.lean#L147) |  |
-| `QuadraticAlgebra.classNumber_sqrtNegFiveField` | theorem | [QuadraticAlgebras/ClassNumberNegFive.lean, line 333](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/ClassNumberNegFive.lean#L333) |  |
-
-The scan does not find 1 of them declared in the file the yaml gives: `QuadraticAlgebra.instIsAlgClosedNegOfNat_quadraticAlgebras` ([QuadraticAlgebras/RealClosedClosure.lean](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealClosedClosure.lean)).
+- [Main results](main-results/README.md)

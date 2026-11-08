@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/formalization.yaml) of [FormalFrontier/sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology) at commit [85cf087f](https://github.com/FormalFrontier/sheaf-cohomology/tree/85cf087ff3e2311834bc8c16cb347f1a513d18e4), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 6 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 6 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,16 +14,10 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “other: historical mathematical review is distinct from revision-specific acceptance”
+- Review status: “other: historical mathematical review is distinct from revision-specific acceptance”.
 - Review notes: “The mathematical library had distinct-execution agent review before its prior private release. Build, complete standard-axiom and independent mathematical/API/rights decisions apply only to the exact revisions they assessed; this metadata is not itself an acceptance certificate for any successor. No human or source-author endorsement is asserted.”
 - Automation: agent; tool setup “Formal Frontier AI agents using Lean, Lake and Git for formalization, examples, documentation and distinct-execution independent review.”
 - Automation notes: “Contributor and adaptation credits are in docs/CREDITS.md and repository history. No human peer review, source-author approval, model-cost estimate or current-tree performance measurement is inferred.”
-
-## Scope
-
-A 103-module Lean library with compact-open filtered comparisons, quasi-flasque and derived-cohomological results, conditional constructed native limits and their forgetful comparisons, and spectral inverse-limit global and cylinder sections. Generic open-variable naturality and transition-pullback principal-tail comparisons are arrow-level results for actual diagrams and original cones; neither proves an all-open isomorphism, unconditional global limits nor source-level coverage. Examples include both public named examples and private clients. The historical generated docs/API.md covers 26 original modules only; consult the focused guides for later modules and exact hypotheses.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/formalization.yaml) of [FormalFrontier/sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology) at commit [85cf087f](https://github.com/FormalFrontier/sheaf-cohomology/tree/85cf087ff3e2311834bc8c16cb347f1a513d18e4), Apache-2.0.*
 
 ## Literature
 
@@ -36,8 +30,9 @@ The sources its formalization.yaml names, with their relationship to it.
 
 - [Spectral Stone duality](../../topology/spectral-stone-duality/README.md) (a Lake dependency, pinned at 452b7b7b)
 
-
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/README.md#headline-results) of [FormalFrontier/sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology) at commit [85cf087f](https://github.com/FormalFrontier/sheaf-cohomology/tree/85cf087ff3e2311834bc8c16cb347f1a513d18e4), Apache-2.0.*
 
 **Compact-open sections and acyclicity.** On a prespectral,
 quasi-separated space, evaluation of suitable concrete-category sheaves on
@@ -131,18 +126,6 @@ nontrivial-ring or transition-surjectivity premise is needed. See the
 
 ## Main results
 
-The 10 main results its formalization.yaml lists (`status.main_results`). They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API.
+Its formalization.yaml lists 10 main results, and the scan finds 9 of them declared in the file the yaml gives; they are on their own page, not made articles. The scan does not find `AlgebraicGeometry.SheafedSpace.isLimit_of_isLimit_forget_of_isColimit_conePullbackCocone` ([SheafCohomology/ConePullbackLimit.lean](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/ConePullbackLimit.lean)).
 
-| Declaration | Kind | Where | Note |
-| --- | --- | --- | --- |
-| `SheafCohomology.CompactOpenSections.preservesColimit_sections` | theorem | [SheafCohomology/CompactOpenSections.lean, line 783](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/CompactOpenSections.lean#L783) |  |
-| `TopCat.Sheaf.IsQuasiFlasque.subsingleton_H_succ` | theorem | [SheafCohomology/QuasiFlasqueAcyclicity.lean, line 260](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/QuasiFlasqueAcyclicity.lean#L260) |  |
-| `SheafCohomology.HigherDirectImageFilteredColimit.rightDerivedPushforward_colimitPost_isIso` | theorem | [SheafCohomology/HigherDirectImageFilteredColimit.lean, line 332](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/HigherDirectImageFilteredColimit.lean#L332) |  |
-| `AlgebraicGeometry.SheafedSpace.AbelianForget.preservesCofilteredLimit` | theorem | [SheafCohomology/AbelianForget/LimitPreservation.lean, line 103](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/AbelianForget/LimitPreservation.lean#L103) |  |
-| `AlgebraicGeometry.SheafedSpace.CommRingForget.preservesCofilteredLimit` | theorem | [SheafCohomology/CommRingForget/LimitPreservation.lean, line 112](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/CommRingForget/LimitPreservation.lean#L112) |  |
-| `AlgebraicGeometry.SheafedSpace.isIso_nativeCommRingGlobalSectionsComparison` | theorem | [SheafCohomology/NativeCommRingGlobalSections.lean, line 104](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCommRingGlobalSections.lean#L104) |  |
-| `AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.isIso_nativeCommRingCylinderSectionsComparison` | theorem | [SheafCohomology/NativeCommRingCylinderSections.lean, line 106](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCommRingCylinderSections.lean#L106) |  |
-| `AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.cylinderSectionsNaturality` | def | [SheafCohomology/NativeCylinderOpenNaturality.lean, line 331](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderOpenNaturality.lean#L331) |  |
-| `AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.cylinderSectionsComparison_betweenTail` | theorem | [SheafCohomology/NativeCylinderTailChange.lean, line 253](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderTailChange.lean#L253) |  |
-
-The scan does not find 1 of them declared in the file the yaml gives: `AlgebraicGeometry.SheafedSpace.isLimit_of_isLimit_forget_of_isColimit_conePullbackCocone` ([SheafCohomology/ConePullbackLimit.lean](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/ConePullbackLimit.lean)).
+- [Main results](main-results/README.md)

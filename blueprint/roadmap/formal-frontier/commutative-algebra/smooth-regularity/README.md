@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/smooth-regularity/blob/fbc0ee8256971d0527033b71ef3886e9f2428420/formalization.yaml) of [FormalFrontier/smooth-regularity](https://github.com/FormalFrontier/smooth-regularity) at commit [fbc0ee82](https://github.com/FormalFrontier/smooth-regularity/tree/fbc0ee8256971d0527033b71ef3886e9f2428420), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 5 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 5 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,16 +14,10 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed”
+- Review status: “agent-reviewed”.
 - Review notes: “Independent non-author agent review covers the Lean mathematics, module migration, ordinary-import clients and conormal evaluation API. External proofs using definitional reduction for conormal evaluation must migrate to the propositional theorems; backward definitional compatibility is not claimed. This review status does not assert human mathematical review or complete source coverage. Generated API signatures are documentation, not independent proof certification.”
 - Automation: agent; tool setup “Formal Frontier AI agents used Lean and Lake with pinned mathlib and independent non-author agent development review.”
 - Automation notes: “AI-assisted development under human project direction. No human mathematical review, model identity, total expenditure or elapsed-time total is asserted.”
-
-## Scope
-
-Canonical conormal injectivity from first-order sections, conormal equivalences for formally étale quotient targets, and local cotangent-space comparisons over commutative rings, without ambient smoothness or a residue section. Split-residue comparisons require only formal unramifiedness and a supplied section. Presentation-relation APIs, conditional local Jacobian criteria, smooth-to-regular implications over fields, and dimension-at-most-one Dedekind consequences. The general converse from regularity to smoothness is not included. Relation selection alone does not establish generation, quotient regularity or target smoothness. Affine Dedekind results retain integrality, affineness, smoothness and the topological dimension bound. Complete source formalization is not claimed.
-
-*Quoted from the status in [formalization.yaml](https://github.com/FormalFrontier/smooth-regularity/blob/fbc0ee8256971d0527033b71ef3886e9f2428420/formalization.yaml) of [FormalFrontier/smooth-regularity](https://github.com/FormalFrontier/smooth-regularity) at commit [fbc0ee82](https://github.com/FormalFrontier/smooth-regularity/tree/fbc0ee8256971d0527033b71ef3886e9f2428420), Apache-2.0.*
 
 ## Literature
 
@@ -42,6 +36,8 @@ No other Formal Frontier library.
 
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/smooth-regularity/blob/fbc0ee8256971d0527033b71ef3886e9f2428420/README.md#headline-results) of [FormalFrontier/smooth-regularity](https://github.com/FormalFrontier/smooth-regularity) at commit [fbc0ee82](https://github.com/FormalFrontier/smooth-regularity/tree/fbc0ee8256971d0527033b71ef3886e9f2428420), Apache-2.0.*
 
 **First-order conormal maps.** For an arbitrary extension `P → S` of
 commutative algebras over a commutative ring `K`, a `K`-algebra section of

@@ -4,6 +4,8 @@ navigation: transparent
 
 # Faithfully flat dependent… to Finite-type ideal/module…
 
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/coherent-modules/blob/b670b34e8741624c22b88375b9086d6d393cbbc3/README.md#headline-results) of [FormalFrontier/coherent-modules](https://github.com/FormalFrontier/coherent-modules) at commit [b670b34e](https://github.com/FormalFrontier/coherent-modules/tree/b670b34e8741624c22b88375b9086d6d393cbbc3), Apache-2.0.*
+
 - [Faithfully flat dependent direct sums](faithfully-flat-dependent-direct-sums.md)
 - [Finitely generated ideals and dependent products](finitely-generated-ideals-and-dependent-products.md)
 - [Faithful flatness after base change covering maximal ideals](faithful-flatness-after-base-change-covering-max.md)

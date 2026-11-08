@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/formalization.yaml) of [FormalFrontier/norm-forms](https://github.com/FormalFrontier/norm-forms) at commit [4b2893fb](https://github.com/FormalFrontier/norm-forms/tree/4b2893fb313bbd209a319dc920d49075d7e509a7), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 11 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 11 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,7 +14,7 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “agent-reviewed”
+- Review status: “agent-reviewed”.
 - Review notes: “The coordinate and universal norm results, polynomial-system common-zero theorems, field-extension transfer and positive-tensor-power annihilation results have been independently reviewed. Their material hypotheses and limitations are described in the README and mathematical guides. This status does not claim complete coverage of a selected source or settle unrelated third-party rights.”
 - Automation: agent; framework “Codex CLI and Formal Frontier Hive Tasks”; tool setup “AI-assisted formalization with repository-pinned Lean/mathlib and separate independent review.”
 
@@ -47,6 +47,8 @@ The sources its formalization.yaml names, with their relationship to it.
 
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/README.md#headline-results) of [FormalFrontier/norm-forms](https://github.com/FormalFrontier/norm-forms) at commit [4b2893fb](https://github.com/FormalFrontier/norm-forms/tree/4b2893fb313bbd209a319dc920d49075d7e509a7), Apache-2.0.*
 
 **First-order norm–trace congruence.** For commutative rings `R`, `S`, an
 `R`-algebra `S`, any ideal `I` of `R` and `x ∈ I.map (algebraMap R S)`,

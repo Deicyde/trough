@@ -7,7 +7,6 @@ statement: formalized
 
 # Compactly generated compact-open currying
 
-([`Homeomorph.compactlyGeneratedCurry`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/CompactOpen/CompactlyGeneratedCurryHomeomorph.lean)).
 For original `UCompactlyGeneratedSpace.{u}` spaces `P` and `A` and any
 topological space `Y`, currying is a homeomorphism
 `κ_u C_co(κ_u (P × A), Y) ≃ₜ κ_u C_co(P, κ_u C_co(A, Y))`.

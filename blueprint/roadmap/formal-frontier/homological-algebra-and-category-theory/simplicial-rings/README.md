@@ -4,7 +4,7 @@
 
 *Quoted from the project description in [formalization.yaml](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/formalization.yaml) of [FormalFrontier/simplicial-rings](https://github.com/FormalFrontier/simplicial-rings) at commit [72878574](https://github.com/FormalFrontier/simplicial-rings/tree/728785746bd0ddcca62c91cf3f50507ec71107ce), Apache-2.0.*
 
-No articles: its formalization.yaml lists no highlights, and none of the 3 headline results in its README names a declaration that the linked file declares at this commit, so they are quoted below.
+No articles: its formalization.yaml lists no highlights, and none of its 3 headline results links a declaration that the scan finds in the linked file at this commit, so they are quoted below.
 
 ## Facts
 
@@ -14,7 +14,7 @@ From the repository and its formalization.yaml; the review and automation statem
 - Lean toolchain v4.34.0-rc2, Mathlib at [83abb3e7](https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5).
 - License: Apache-2.0.
 - Authors: Formal Frontier Agents.
-- Review status: “self-assessed”
+- Review status: “self-assessed”.
 - Automation: agent; framework “Formal Frontier agents using Lean 4”; tool setup “AI-assisted proof development”
 
 ## Literature
@@ -29,6 +29,8 @@ No other Formal Frontier library.
 
 
 ## Headline results
+
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/README.md#headline-results) of [FormalFrontier/simplicial-rings](https://github.com/FormalFrontier/simplicial-rings) at commit [72878574](https://github.com/FormalFrontier/simplicial-rings/tree/728785746bd0ddcca62c91cf3f50507ec71107ce), Apache-2.0.*
 
 **`PolyRing R n`.** Has `n` central
 indeterminates over any `Ring R`; homogeneous

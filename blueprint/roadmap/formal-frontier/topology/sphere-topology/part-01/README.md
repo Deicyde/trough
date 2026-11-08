@@ -14,6 +14,8 @@ navigation: transparent
 
 ## Headline results
 
+*Quoted from the headline results in [README.md](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/README.md#headline-results) of [FormalFrontier/sphere-topology](https://github.com/FormalFrontier/sphere-topology) at commit [672d46f9](https://github.com/FormalFrontier/sphere-topology/tree/672d46f90cf51cdf3f933248b85c842990ead729), Apache-2.0.*
+
 - [H-space fundamental groups commute](h-space-fundamental-groups-commute.md)
 
 **Normalized circle fundamental groups and degree.** For real `T ≠ 0`,
