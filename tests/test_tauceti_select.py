@@ -15,11 +15,18 @@ def test_a_theorem_is_chosen_when_its_title_names_a_result():
         row("Ex.cellular", "**The cellular approximation theorem.** ..."),
         row("Ex.global", "**Global existence** (Milne VII, Theorem 9.5). For a number field ..."),
         row("Ex.morley", "**Morley's theorem (cardinal form).** ..."),
+        row("Ex.green", "**Green's second identity against a test function.** ..."),
+        row("Ex.couture", "**Couture's classification up to graph automorphisms.** ..."),
+        row("Ex.newton", "**Newton's identities express `eₖ` through the power sums.** ..."),
+        row("Ex.hille", "**Hille--Yosida for contraction semigroups.** ..."),
+        row("Ex.buzzard", "**Buzzard–Verberkmoes: stably uniform Tate pairs are sheafy.** ..."),
     ])
     assert chosen == {
         "Ex.burnside": "named theorem", "Ex.cellular": "the theorem", "Ex.global": "cited theorem",
         "Ex.jordan": "named theorem", "Ex.morley": "named theorem", "Ex.schur": "named result",
-        "Ex.serre": "named result", "Ex.serre2": "named theorem",
+        "Ex.serre": "named result", "Ex.serre2": "named theorem", "Ex.green": "named result",
+        "Ex.couture": "named result", "Ex.newton": "named result", "Ex.hille": "named result",
+        "Ex.buzzard": "named result",
     }
 
 
@@ -32,6 +39,16 @@ def test_ordinary_lemmas_and_citations_are_not_chosen():
         row("Ex.bare", "**Cauchy estimate** for a disc."),  # no title writes "Cauchy's"
         row("Ex.untitled", "Burnside's theorem, without a bold title."),
         row("Ex.def", "**Burnside's theorem.** As a definition.", kind="instance"),
+        # A result noun as a predicate or a modifier, or a named map's property.
+        row("Ex.predicate", "**The Künneth map is an isomorphism** for complexes with zero differentials."),
+        row("Ex.identity", "**The image of Spin is the identity component of `SO(Q)`.**"),
+        row("Ex.hyphen", "**The Euler characteristic is a quasi-isomorphism invariant.**"),
+        row("Ex.modifier", "**The Serre duality pairing** on a curve."),
+        row("Ex.property", "**Shapiro's isomorphism is natural in the coefficients.**"),
+        row("Ex.mathlib", "**Mathlib's doubling formula** in projective coordinates."),
+        # Joined names that cite a paper's numbered statement.
+        row("Ex.paper", "**Katz–Mazur, Lemma 5.3.4.** ..."),
+        row("Ex.paper2", "**Popa–Zagier, Proposition 2, on period polynomials.** ..."),
     ])
     assert chosen == {}
 
@@ -58,5 +75,12 @@ def test_forms_of_a_result_share_its_key():
     assert key("The Jordan–Brouwer separation theorem") == key("Jordan--Brouwer separation theorem, connected form")
     # A short key without a name keeps its whole head clause.
     assert key("The structure theorem for modules over a PID") != key("The structure theorem for finite abelian groups")
+    # A first word the library writes as a possessive is a name, and joined names are a key.
+    assert key("Serre duality for a curve", {"Serre"}) == key("Serre duality, Yoneda form", {"Serre"}) == "serre duality"
+    assert key("Hille--Yosida for contraction semigroups") == key("Hille–Yosida, quasi-contraction form") == "hille-yosida"
     assert tauceti_select.plain_title("Menger's theorem", "menger theorem")
     assert not tauceti_select.plain_title("Menger's theorem for curves", "menger theorem")
+
+
+def test_a_qualifier_inside_code_does_not_end_the_head():
+    assert tauceti_select.head("Young's inequality for `‖f, g‖`, sharp form") == "Young's inequality for `‖f, g‖`"

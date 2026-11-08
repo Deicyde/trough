@@ -10,7 +10,8 @@ and its frontier, is what the library may add, so it is left out. Each article's
 text is its declaration's docstring and signature, read at the pinned Tau Ceti
 commit by lean/tauceti/TauCetiDeps.lean, which also gives the edges. Parts follow
 the library's top-level areas; a roadmap's section holds what its status names
-and the named results in its modules, and an area's section the rest.
+and the named results in the modules it alone claims, and an area's section the
+rest.
 """
 
 from __future__ import annotations
@@ -81,14 +82,18 @@ KIND_COMMANDS = {"constructor": "def", "recursor": "def", "quot": "def"}
 # A bold opening is a title when it is a whole sentence: a period or colon ends it, inside the bold
 # or just after. It may wrap a line, and hold a lone "*" ("Weak-* compactness").
 LEAD = re.compile(r"^\s*\*\*(?P<title>(?:[^*\n]|\n(?!\s*\n)|\*(?!\*))+?)(?:[.:]\*\*|\*\*[.:])\s*")
-# How far past a bold opening the period or colon that ends its sentence may be.
+# How far past a bold opening the period or colon that ends its sentence may be, and how much of
+# that sentence a title takes.
 SENTENCE = 200
+CONTINUATION = 60
 
 
 # An area with fewer articles joins its part's "Other results", and a part with fewer joins
-# "Other Areas".
+# "Other Areas". A folder of modules below the areas goes to the one roadmap whose status names at
+# least FOLDER_MIN declarations there.
 AREA_MIN = 3
 PART_MIN = 10
+FOLDER_MIN = 2
 
 
 @dataclass
@@ -166,8 +171,9 @@ def sentence_end(doc: str, start: int) -> int | None:
 def title_and_text(name: str, doc: str | None) -> tuple[str, str]:
     """A declaration's title and the rest of its docstring. A docstring that opens with a bold
     sentence ("**The density theorem.**") is titled by it; one that opens with bold words the
-    sentence goes on from ("**Young's inequality** for an `L¹` kernel: ...") by the whole sentence;
-    any other by the declaration's name."""
+    sentence goes on from ("**Young's inequality** for an `L¹` kernel: ...") by the whole sentence,
+    or by the bold words alone, above the whole docstring, when the rest of the sentence is long or
+    holds a link; any other by the declaration's name."""
     doc = (doc or "").strip()
     lead = LEAD.match(doc)
     if lead:
@@ -175,7 +181,10 @@ def title_and_text(name: str, doc: str | None) -> tuple[str, str]:
     bold = tauceti_select.BOLD.match(doc)
     end = sentence_end(doc, bold.end()) if bold else None
     if bold and end is not None:
-        return " ".join((bold.group("title") + doc[bold.end():end]).split()), doc[end + 1:].strip()
+        rest = doc[bold.end():end]
+        if len(rest) > CONTINUATION or "](" in rest:
+            return " ".join(bold.group("title").split()).rstrip(".:,;"), doc
+        return " ".join((bold.group("title") + rest).split()), doc[end + 1:].strip()
     return name, doc
 
 
@@ -190,18 +199,26 @@ def top(module: str) -> str:
     return parts[1] if len(parts) > 1 else ""
 
 
+def area_of(module: str) -> tuple[str, str]:
+    """The area of a Tau Ceti module, its first two levels under TauCeti: ("NumberTheory",
+    "Chebotarev") for TauCeti.NumberTheory.Chebotarev.Density."""
+    parts = module.split(".")
+    return (top(module), parts[2] if len(parts) > 2 else "")
+
+
 def assumes(record: dict, statement: str) -> bool:
-    """Whether a declaration's binders, before its signature's first top-level colon, mention a
-    proposition."""
-    signature = record.get("signature") or ""
+    """Whether a declaration's binders, after its name and before its signature's first top-level
+    colon, mention a proposition by its full name or its last component."""
+    _, _, binders = (record.get("signature") or "").strip().partition(" ")
+    forms = "|".join(re.escape(form) for form in (statement, statement.rsplit(".", 1)[-1]))
     depth = 0
-    for i, char in enumerate(signature):
+    for i, char in enumerate(binders):
         if char in "([{⦃⟨":
             depth += 1
         elif char in ")]}⦄⟩":
             depth -= 1
-        elif char == ":" and depth == 0 and signature[i + 1:i + 2] != "=":
-            return re.search(rf"(?<![\w.]){re.escape(statement.rsplit('.', 1)[-1])}(?![\w])", signature[:i]) is not None
+        elif char == ":" and depth == 0 and binders[i + 1:i + 2] != "=":
+            return re.search(rf"(?<![\w.])(?:{forms})(?![\w.])", binders[:i]) is not None
     return False
 
 
@@ -261,16 +278,18 @@ def build_leaf(sources: Sources, members: list[str], records: dict[str, dict], h
 
 def gather(names: list[str], records: dict[str, dict], named: set[str]) -> list[list[str]]:
     """The articles, each a list of declarations with its lead first. Forms of one result in one
-    top-level area share an article (tauceti_select.group_key). A declaration a status names leads
-    its own, with the forms no status names; otherwise the lead is a form Tau Ceti's website shows,
-    else the form titled by the result's name alone, else the one with the shortest title. A
-    definition a status names stands alone."""
+    area share an article (tauceti_select.group_key, with the possessives the mapped docstrings
+    write). A declaration a status names leads its own, with the forms no status names; otherwise
+    the lead is a form Tau Ceti's website shows, else the form titled by the result's name alone,
+    else the one with the shortest title that is not a Lean name. A definition a status names
+    stands alone."""
     titles = {name: tauceti_select.title(records[name].get("doc")) for name in names}
-    groups: dict[tuple[str, str], list[str]] = defaultdict(list)
+    possessives = tauceti_select.possessive_names([{"d": records[name].get("doc")} for name in names])
+    groups: dict[tuple[str, tuple[str, str]], list[str]] = defaultdict(list)
     articles: list[list[str]] = []
     for name in names:
         if titles[name] and (records[name]["kind"] == "theorem" or name not in named):
-            groups[(tauceti_select.group_key(titles[name]), top(records[name]["module"]))].append(name)
+            groups[(tauceti_select.group_key(titles[name], possessives), area_of(records[name]["module"]))].append(name)
         else:
             articles.append([name])
     for (key, _), members in sorted(groups.items()):
@@ -283,7 +302,8 @@ def gather(names: list[str], records: dict[str, dict], named: set[str]) -> list[
         else:
             shown = {name: title_and_text(name, records[name].get("doc"))[0] for name in rest}
             lead = min(rest, key=lambda name: (name not in tauceti_select.SHOWCASE,
-                                               not tauceti_select.plain_title(shown[name], key), len(shown[name]), name))
+                                               not tauceti_select.plain_title(shown[name], key), shown[name] == name,
+                                               len(shown[name]), name))
             articles.append([lead, *(name for name in rest if name != lead)])
     return articles
 
@@ -304,15 +324,16 @@ def claims(roadmaps: list[dict], records: dict[str, dict]) -> tuple[dict[str, Co
 
 def place(module: str, modules: dict[str, Counter], folders: dict[str, Counter]) -> str | tuple[str, str]:
     """Where a result no status names goes: the roadmap whose status names a declaration in its
-    module, else in its folder of modules, when that is one roadmap; else its area, the module's
-    first two levels under TauCeti."""
-    for claim in (modules.get(module), folders.get(module.rsplit(".", 1)[0])):
-        if claim:
-            if len(claim) == 1:
-                return next(iter(claim))
-            break
-    parts = module.split(".")
-    return (top(module), parts[2] if len(parts) > 2 else "")
+    module, when that is one roadmap; else, for a folder of modules below the areas, the one
+    roadmap whose status names declarations there, at least FOLDER_MIN of them; else its area."""
+    claim = modules.get(module)
+    if claim:
+        return next(iter(claim)) if len(claim) == 1 else area_of(module)
+    folder = module.rsplit(".", 1)[0]
+    claim = folders.get(folder)
+    if claim and folder.count(".") >= 3 and len(claim) == 1 and sum(claim.values()) >= FOLDER_MIN:
+        return next(iter(claim))
+    return area_of(module)
 
 
 def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]]:
@@ -364,7 +385,8 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
         readme = f"https://github.com/{ROADMAP_REPO}/blob/{sources.roadmap_rev}/{roadmap['path']}/README.md"
         more = added.pop(roadmap["path"], [])
         section.prose = (f"The declarations the status of Tau Ceti's [roadmap]({readme}) names"
-                         + (", and the results named in the modules where they live," if more else "") + f" {at}.")
+                         + (", and the other results named in the modules, or folders of modules, where only this "
+                            "status names declarations," if more else "") + f" {at}.")
         areas: Counter = Counter()
         for name in names:
             owned = first[name] == roadmap["path"]
@@ -380,13 +402,12 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
             others[area] += leads
             continue
         section = Container(area_title(sub), slugify(area_title(sub)))
-        section.prose = f"Results named in Tau Ceti's `TauCeti.{area}.{sub}` modules that no roadmap's status reaches, {at}."
+        section.prose = f"Results named in Tau Ceti's `TauCeti.{area}.{sub}` modules and in no roadmap's section, {at}."
         section.entries = [Entry(leaves[lead]) for lead in leads]
         sections[area].append((section, Counter(area=1)))
     for area, leads in sorted(others.items()):
         section = Container("Other results", "other-results")
-        section.prose = (f"Results named in the rest of Tau Ceti's `TauCeti.{area}` modules that no roadmap's status "
-                         f"reaches, {at}.")
+        section.prose = f"Results named in the rest of Tau Ceti's `TauCeti.{area}` modules and in no roadmap's section, {at}."
         section.entries = [Entry(leaves[lead]) for lead in sorted(leads, key=lambda lead: (title_key(leaves[lead].title), lead))]
         sections[area].append((section, Counter(other=1)))
     small: list[tuple[Container, Counter]] = []
@@ -399,20 +420,22 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
             ordered = [item for item in ordered if not item[1]]
             if rest:
                 section = Container(area_title(area), slugify(area_title(area)))
-                section.prose = f"Results named in Tau Ceti's `TauCeti.{area}` modules that no roadmap's status reaches, {at}."
+                section.prose = f"Results named in Tau Ceti's `TauCeti.{area}` modules and in no roadmap's section, {at}."
                 section.entries = sorted(rest, key=lambda entry: (title_key(entry.node.title), entry.node.title))
                 ordered.append((section, Counter(area=1)))
             small += ordered
         else:
             part = Container(area_title(area), slugify(area_title(area)))
-            part.prose = f"Results in Tau Ceti's `TauCeti.{area}` modules: by roadmap, then by area."
+            part.prose = (f"Results in Tau Ceti's `TauCeti.{area}` modules, and the roadmaps whose articles are mostly "
+                          "there: by roadmap, then by area.")
             part.entries = [Entry(chunk(section)) for section, _ in ordered]
             parts.append(Entry(chunk(part)))
         stats["roadmaps"] += sum(1 for _, kind in ordered if not kind)
         stats["areas"] += sum(1 for _, kind in ordered if kind)
     if small:
         part = Container("Other Areas", "other-areas")
-        part.prose = "The areas of Tau Ceti with too few articles for a part of their own: by roadmap, then by area."
+        part.prose = ("The areas of Tau Ceti with too few articles for a part of their own"
+                      + (": by roadmap, then by area." if any(not kind for _, kind in small) else "."))
         part.entries = [Entry(chunk(section)) for section, kind in sorted(small, key=lambda item: (bool(item[1]),
                                                                                                    title_key(item[0].title)))]
         parts.append(Entry(chunk(part)))
@@ -482,11 +505,12 @@ def intro(sources: Sources, stats: dict[str, int]) -> str:
     missing = stats["missing"]
     return "\n\n".join([
         f"[Tau Ceti](https://taucetiproject.org/), read at commit {rev}{date}, with its roadmaps at {roadmaps}: "
-        f"{stats['articles']:,} articles on {stats['declarations']:,} of its declarations, in a part for each of the "
-        f"library's top-level areas. {stats['named']:,} are the declarations a roadmap's status names as a result or a "
+        f"{stats['articles']:,} articles on {stats['declarations']:,} of its declarations, in parts by the library's "
+        f"top-level areas. {stats['named']:,} are the declarations a roadmap's status names as a result or a "
         "notable definition. A model writes the statuses and names at most five results in each, so the other "
         f"{stats['chosen']:,} are results Tau Ceti's own docstrings name: a theorem whose docstring opens with a bold "
-        "title naming a result after a person (\"Burnside's pᵃqᵇ theorem\", \"Schur-Weyl duality\"), a title such as "
+        "title naming a result after a person (\"Burnside's pᵃqᵇ theorem\", \"Schur-Weyl duality\", \"Hille–Yosida\"), "
+        "a title such as "
         "\"The cellular approximation theorem\", or a short title pinned to a textbook theorem; a definition that "
         "carries such a theorem as data; and the four theorems Tau Ceti's website shows. The forms of one result share "
         "an article. "
@@ -496,10 +520,11 @@ def intro(sources: Sources, stats: dict[str, int]) -> str:
         + "A roadmap's plan, its suggested signatures and its frontier say what Tau Ceti may add, so they are left "
         "out, and so is the statuses' prose: a model writes it, and Tau Ceti does not check it.",
         f"Each of the {stats['roadmaps']} roadmaps whose status names a declaration has a section, in the part where "
-        "most of its articles are: what its status names, and the named results in a module, or else a folder of "
-        "modules, where only this roadmap's status names a declaration. The other named results are "
-        f"in {stats['areas']} sections by area of modules; an area with fewer than {AREA_MIN} of them joins its part's "
-        "*Other results*.",
+        "most of its articles are: what its status names, and the other named results in a module where only this "
+        "roadmap's status names declarations, or else in a folder of modules below the areas where only it names "
+        f"declarations, at least {FOLDER_MIN} of them. The other named results are in {stats['areas']} sections by "
+        f"area, a module's first two levels under `TauCeti`; an area with fewer than {AREA_MIN} of them joins its "
+        f"part's *Other results*, and a part with fewer than {PART_MIN} articles joins *Other Areas*.",
         "Each article's text is its declaration's docstring and signature, under Tau Ceti's Apache-2.0 license; a "
         "docstring that opens with a bold title, or with bold words its first sentence goes on from, gives the article "
         "its title. Dependencies come from Tau Ceti's declarations (`lean/tauceti/TauCetiDeps.lean`): under "

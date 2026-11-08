@@ -13,8 +13,9 @@ Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
 gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
-roadmaps' status files name, and five research projects from their
-leanblueprints: Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+.
+roadmaps' status files name and the results its docstrings name, and five
+research projects from their leanblueprints: Imperial's FLT, PFR, Equational
+Theories, Strong PNT and PNT+.
 
 ## The Mathlib map
 
@@ -104,27 +105,32 @@ kinds of declaration that Tau Ceti has at the pinned commit: those the statuses
 link, and those whose own docstrings name a result. A theorem's docstring names
 one when its bold title's head clause, the title before its first qualifier, is
 a result named after a person ("Burnside's pᵃqᵇ theorem", "Schur-Weyl duality",
-"Serre duality" when another title writes "Serre's"), a phrase of at most six
-words ending in "theorem", or at most three words pinned to a textbook theorem
-("Global existence (Milne VII, Theorem 9.5)"); a definition counts when its
-title names a theorem it carries as data. The four theorems Tau Ceti's website
+"Serre duality" when another title writes "Serre's", "Hille--Yosida for
+contraction semigroups"), has "theorem" within its first six words, or is at
+most three words pinned to a textbook theorem ("Global existence (Milne VII,
+Theorem 9.5)"). A result noun other than theorem, lemma or conjecture counts
+only where it ends its phrase and is not a predicate, so "the Serre duality
+pairing" and "The Künneth map is an isomorphism" do not. A definition counts
+when its title names a theorem it carries as data. The four theorems Tau Ceti's website
 shows are always in. The rest of a roadmap, its plan, its `Suggested.lean`
 signatures and its frontier, says what Tau Ceti may add and is left out, and so
 is the status files' prose, which a model writes and Tau Ceti does not check.
 
-The forms of one result in one top-level area, such as "Menger's theorem" and
-"Menger's theorem, predicate form", share an article: a declaration a status
-names leads its own, otherwise a form the website shows, the form titled by the
-result's name alone, or the one with the shortest title. The others are listed
-under *Other forms*. Parts follow the library's top-level areas, those with
-fewer than ten articles together as *Other Areas*. A roadmap whose status
-names a declaration has a section in the part with most of its articles,
-holding what the status names and the named results in a module, or else a
-folder of modules, where only its status names a declaration; the other named
-results have a section for each area of modules, the module's first two levels,
-and an area with fewer than three joins its part's *Other results*. An article's
-text is its lead's docstring and signature, titled by the docstring's bold
-opening, or by the sentence its bold words begin.
+The forms of one result in one area, a module's first two levels under
+`TauCeti`, such as "Menger's theorem" and "Menger's theorem, predicate form",
+share an article: a declaration a status names leads its own, otherwise a form
+the website shows, the form titled by the result's name alone, or the one with
+the shortest title that is not a Lean name. The others are listed under *Other
+forms*. Parts follow the library's top-level areas, those with fewer than ten
+articles together as *Other Areas*. A roadmap whose status names a declaration
+has a section in the part with most of its articles, holding what the status
+names and the named results in a module where only its status names
+declarations, or else in a folder of modules below the areas where only it
+names two or more; the other named results have a section for each area, and an
+area with fewer than three joins its part's *Other results*. An article's text
+is its lead's docstring and signature, titled by the docstring's bold opening,
+or by the sentence its bold words begin when the rest of that sentence is short
+and holds no link.
 
 1. `tools/refresh_tauceti.py CHECKOUT` writes `data/tauceti/roadmaps.json`
    from a TauCetiRoadmap checkout: each roadmap's title and the names its

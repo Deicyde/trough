@@ -50,8 +50,8 @@ def roadmap_root(libraries: list[dict], chapters: dict[str, str], previous: str 
         "",
         "Trough maps Lean formalization libraries: what each one formalizes and how its results depend "
         "on one another, not what the library may add. Each library gets the article unit that suits it, "
-        "such as curated concepts for Mathlib, the declarations its roadmaps name for Tau Ceti and blueprint "
-        "nodes for the research projects. The maps are rendered with "
+        "such as curated concepts for Mathlib, the declarations its roadmaps name and the results its docstrings "
+        "name for Tau Ceti, and blueprint nodes for the research projects. The maps are rendered with "
         "[AutoformBot](https://github.com/facebookresearch/autoform-bot).",
         "",
         "## Chapters",

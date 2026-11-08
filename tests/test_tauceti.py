@@ -72,6 +72,12 @@ def test_a_docstrings_bold_opening_titles_it_with_its_sentence():
         "Young's inequality for an `L¹` kernel", "`‖h ⋆ f‖ ≤ ‖h‖₁ ‖f‖`.")
     assert tauceti.title_and_text("X.y", "**Global existence** (Milne VII, Theorem 9.5). For a number field") == (
         "Global existence (Milne VII, Theorem 9.5)", "For a number field")
+    # A long rest of the sentence, or one holding a link, leaves the bold words as the title above the
+    # whole docstring.
+    long = "**Young's inequality** for an `L¹` kernel and an `Lᵖ` function on a group with Haar measure: text."
+    assert tauceti.title_and_text("X.y", long) == ("Young's inequality", long)
+    linked = "**Serre duality** following [Hartshorne](hartshorne1977): text."
+    assert tauceti.title_and_text("X.y", linked) == ("Serre duality", linked)
     # A sentence that runs on too long, or past a blank line, leaves the docstring untitled.
     assert tauceti.title_and_text("X.y", "**Long** " + "word " * 60 + ".")[0] == "X.y"
     assert tauceti.title_and_text("X.y", "**Bold**\n\nnot a title.") == ("X.y", "**Bold**\n\nnot a title.")
@@ -205,6 +211,9 @@ def test_the_committed_data_build_a_chapter():
     assert names == set(data.deps["declarations"]) | set(data.deps["missing"])
     root, stats, links = tauceti.chapter(data)
     assert stats["declarations"] == len(links) >= stats["articles"] > 0
+    if data.selection is not None and set(data.selection["assuming"]) & set(links):
+        # The results stated from a proposition Tau Ceti defines say so.
+        assert any("assuming [`" in text for leaf in walk(root) if isinstance(leaf, Leaf) for _, text in leaf.notes)
     assert set(links) <= set(data.deps["declarations"])
     assert not set(links) & set(data.deps["missing"])
 
@@ -212,11 +221,11 @@ def test_the_committed_data_build_a_chapter():
 def test_forms_of_one_result_share_an_article_led_by_its_plain_name():
     roadmaps = [{"id": "A", "path": "TauCetiRoadmap/A", "title": "Alpha", "names": ["Ex.status"]}]
     declarations = {
-        "Ex.status": record(module="TauCeti.Graph.Menger", doc="**Menger's theorem for adjacent vertices.** Text"),
-        "Ex.plain": record(module="TauCeti.Graph.Other", doc="**Menger's theorem.** Text", statement=["Ex.dep"]),
-        "Ex.form": record(module="TauCeti.Graph.Other", doc="**Menger's theorem, predicate form.** Text",
+        "Ex.status": record(module="TauCeti.Graph.Menger.Main", doc="**Menger's theorem for adjacent vertices.** Text"),
+        "Ex.plain": record(module="TauCeti.Graph.Menger.Other", doc="**Menger's theorem.** Text", statement=["Ex.dep"]),
+        "Ex.form": record(module="TauCeti.Graph.Menger.Other", doc="**Menger's theorem, predicate form.** Text",
                           statement=["Ex.plain", "Ex.dep"], proof=["Ex.dep2"]),
-        "Ex.else": record(module="TauCeti.Topo.Other", doc="**Menger's theorem for curves.** Text"),
+        "Ex.else": record(module="TauCeti.Graph.Curves", doc="**Menger's theorem for curves.** Text"),
         "Ex.dep": record(module="TauCeti.Graph.Other", doc="**Hall's marriage theorem.** Text"),
         "Ex.dep2": record(module="TauCeti.Graph.Other", doc="**König's theorem.** Text"),
     }
@@ -230,7 +239,7 @@ def test_forms_of_one_result_share_an_article_led_by_its_plain_name():
     assert dict(by_name["Ex.status"].fields)["lean"] == "Ex.status, Ex.plain, Ex.form"
     assert "Other forms" in dict(by_name["Ex.status"].notes)
     assert "**Menger's theorem.** Formalized in Tau Ceti as [`Ex.plain`]" in dict(by_name["Ex.status"].notes)["Other forms"]
-    # The same name in another top-level area is another result.
+    # The same name in another area is another result.
     assert dict(by_name["Ex.else"].fields)["lean"] == "Ex.else"
     # Edges join articles: the forms' uses count, and one form's use of another does not.
     assert [node.title for node in by_name["Ex.status"].depends] == ["Hall's marriage theorem"]
@@ -248,36 +257,51 @@ def test_a_group_no_status_names_is_led_by_its_plain_title():
     data.selection = {"chosen": {name: "named theorem" for name in declarations}, "assuming": {}}
     root, _, _ = tauceti.chapter(data)
     assert [dict(leaf.fields)["lean"] for leaf in walk(root) if isinstance(leaf, Leaf)] == ["Ex.plain, Ex.long"]
+    # Without a plain title, a form titled by its Lean name leads last, however short.
+    del declarations["Ex.plain"]
+    declarations["Ex.x"] = record(module="TauCeti.Graph.M", doc="**Menger's theorem**\n\nfor sets of vertices")
+    data.selection = {"chosen": {name: "named theorem" for name in declarations}, "assuming": {}}
+    root, _, _ = tauceti.chapter(data)
+    assert [dict(leaf.fields)["lean"] for leaf in walk(root) if isinstance(leaf, Leaf)] == ["Ex.long, Ex.x"]
 
 
 def test_added_results_go_to_the_roadmap_whose_status_alone_reaches_their_module():
     roadmaps = [
         {"id": "A", "path": "TauCetiRoadmap/A", "title": "Alpha", "names": ["Ex.a", "Ex.shared"]},
-        {"id": "B", "path": "TauCetiRoadmap/B", "title": "Beta", "names": ["Ex.b", "Ex.shared2"]},
+        {"id": "B", "path": "TauCetiRoadmap/B", "title": "Beta",
+         "names": ["Ex.b", "Ex.b2", "Ex.b3", "Ex.b4", "Ex.shared2"]},
     ]
     declarations = {
-        "Ex.a": record(module="TauCeti.Num.Alpha.Main"),
-        "Ex.b": record(module="TauCeti.Num.Beta.Main"),
+        "Ex.a": record(module="TauCeti.Num.Alpha.Deep.Main"),
+        "Ex.b": record(module="TauCeti.Num.Beta.Deep.Main"),
+        "Ex.b2": record(module="TauCeti.Num.Beta.Deep.Two"),
+        "Ex.b3": record(module="TauCeti.Num.Beta.Top"),
+        "Ex.b4": record(module="TauCeti.Num.Beta.Top2"),
         "Ex.shared": record(module="TauCeti.Num.Both"),
         "Ex.shared2": record(module="TauCeti.Num.Both"),
-        # The same module as a status's declaration, its folder, a module two statuses reach, none.
-        "Ex.same": record(module="TauCeti.Num.Alpha.Main", doc="**Abel's theorem.** Text"),
-        "Ex.folder": record(module="TauCeti.Num.Beta.Other", doc="**Bezout's theorem.** Text"),
+        # The same module as a status's declaration; a folder below the areas where one status names
+        # two declarations; one where it names only one; a folder that is an area; a module two
+        # statuses reach; and none.
+        "Ex.same": record(module="TauCeti.Num.Alpha.Deep.Main", doc="**Abel's theorem.** Text"),
+        "Ex.folder": record(module="TauCeti.Num.Beta.Deep.Other", doc="**Bezout's theorem.** Text"),
+        "Ex.lone": record(module="TauCeti.Num.Alpha.Deep.Other", doc="**Gauss's theorem.** Text"),
+        "Ex.shallow": record(module="TauCeti.Num.Beta.Other", doc="**Hardy's theorem.** Text"),
         "Ex.both": record(module="TauCeti.Num.Both", doc="**Cauchy's theorem.** Text"),
         "Ex.area1": record(module="TauCeti.Num.Free.X", doc="**Dirac's theorem.** Text"),
         "Ex.area2": record(module="TauCeti.Num.Free.Y", doc="**Euler's theorem.** Text"),
         "Ex.area3": record(module="TauCeti.Num.Free.Z", doc="**Fermat's theorem.** Text"),
     }
-    chosen = {name: "named theorem" for name in ("Ex.same", "Ex.folder", "Ex.both", "Ex.area1", "Ex.area2", "Ex.area3")}
+    chosen = {name: "named theorem" for name in ("Ex.same", "Ex.folder", "Ex.lone", "Ex.shallow", "Ex.both", "Ex.area1",
+                                                 "Ex.area2", "Ex.area3")}
     data = sources(roadmaps, declarations)
     data.selection = {"chosen": chosen, "assuming": {}}
     root, stats, _ = tauceti.chapter(data)
     found = {title: [entry.node.title for entry in section.entries] for title, section in sections(root).items()}
     assert found["Alpha"] == ["Ex.a", "Ex.shared", "Abel's theorem"]
-    assert found["Beta"] == ["Ex.b", "Ex.shared2", "Bezout's theorem"]
-    # An area with three results gets its own section; the one two statuses reach is left to its area's.
+    assert found["Beta"] == ["Ex.b", "Ex.b2", "Ex.b3", "Ex.b4", "Ex.shared2", "Bezout's theorem"]
+    # An area with three results gets its own section; the rest are left to their part's.
     assert found["Free"] == ["Dirac's theorem", "Euler's theorem", "Fermat's theorem"]
-    assert found["Other results"] == ["Cauchy's theorem"]
+    assert found["Other results"] == ["Cauchy's theorem", "Gauss's theorem", "Hardy's theorem"]
     assert stats["roadmaps"] == 2 and stats["areas"] == 2
 
 
@@ -301,8 +325,9 @@ def test_a_result_stated_from_a_defined_proposition_says_what_it_assumes():
         "Ex.Szpiro.frey": record(module="TauCeti.Num.Szpiro", doc="**Szpiro's conjecture for Frey curves.** Text"),
         "Ex.Szpiro.other": record(module="TauCeti.Num.Szpiro", doc="**Szpiro's bound.** Text"),
     }
-    declarations["Ex.Szpiro.frey"]["signature"] = "theorem Ex.Szpiro.frey (h : Szpiro) : FreyBound"
-    declarations["Ex.Szpiro.other"]["signature"] = "theorem Ex.Szpiro.other : Szpiro ↔ True"
+    # As the dump prints them: the name, then the binders, with names in full.
+    declarations["Ex.Szpiro.frey"]["signature"] = "Ex.Szpiro.frey (h : Ex.Szpiro) : FreyBound"
+    declarations["Ex.Szpiro.other"]["signature"] = "Ex.Szpiro.other : Ex.Szpiro ↔ True"
     assuming = {name: {"statement": "Ex.Szpiro", "module": "TauCeti.Num.Szpiro"} for name in declarations}
     data = sources([], declarations)
     data.selection = {"chosen": {name: "named theorem" for name in declarations}, "assuming": assuming}

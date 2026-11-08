@@ -176,6 +176,7 @@ jobs:
           wc -l < "$RUNNER_TEMP/imports.lean"
           cat "$RUNNER_TEMP/imports.lean" "$GITHUB_WORKSPACE/lean/tauceti/TauCetiSurvey.lean" > TroughTauCetiSurvey.lean
           /usr/bin/time -v lake env lean TroughTauCetiSurvey.lean
+          gzip -k "$RUNNER_TEMP/survey.jsonl"
 
       - name: Choose the results the docstrings name
         run: |
@@ -184,7 +185,6 @@ jobs:
           { jq -r '.roadmaps[].names[]' data/tauceti/roadmaps.json
             jq -r '.chosen | keys[]' data/tauceti/selection.json; } | LC_ALL=C sort -u > "$RUNNER_TEMP/names.txt"
           wc -l < "$RUNNER_TEMP/names.txt"
-          gzip -k "$RUNNER_TEMP/survey.jsonl"
 
       - name: Read the declarations
         working-directory: ${{ runner.temp }}/TauCeti

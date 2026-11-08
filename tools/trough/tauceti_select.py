@@ -6,10 +6,14 @@ qualifier ("Morley's theorem (cardinal form)" has head "Morley's theorem"), name
 
 - a person's name among its first three words, then a result noun: theorem, lemma or conjecture,
   or duality, formula, inequality, criterion and the like ("Schur-Weyl duality"); "law" counts
-  only after a possessive, so "the Wishart law", a distribution, does not;
+  only after a possessive, so "the Wishart law", a distribution, does not. Any result noun but
+  theorem, lemma and conjecture must end its noun phrase and not be a predicate, so "Serre
+  duality pairing" and "The Künneth map is an isomorphism" do not count;
 - a capitalized first word that the library also uses as a possessive ("Serre's"), then a result
   noun within three words ("Serre duality");
-- a phrase of at most six words ending in "theorem" ("The cellular approximation theorem");
+- names joined by dashes and nothing more ("Hille--Yosida for contraction semigroups"), unless the
+  title cites a paper's numbered statement ("Katz–Mazur, Lemma 5.3.4");
+- "theorem" within its first six words ("The cellular approximation theorem");
 - at most three words, pinned to a textbook theorem right after the title ("**Global existence**
   (Milne VII, Theorem 9.5)").
 
@@ -56,6 +60,7 @@ NOT_NAMES = frozenset({
     "Gaussian", "Hessian", "Polish", "Euclidean", "Open", "Mapping", "Limit", "Fundamental",
     "Strong", "Weak", "Laplacian", "Hamiltonian", "Lagrangian", "Abelian", "Archimedean",
     "Noetherian", "Artinian", "Hermitian", "Riemannian", "Cartesian",
+    "Gamma", "Beta", "Spin", "Koszulity", "Ext", "Tor", "Hom",
 })
 NAME_WORDS = 3  # the name is among the head's first three words, an article dropped
 CORE = r"(?:theorem|lemma|conjecture)s?"
@@ -68,6 +73,18 @@ NUMBERED = re.compile(r"\b(?:Theorem|Thm\.?|Lemma|Proposition|Prop\.?|Corollary|
                       r"\s+[\dIVX]+(?:\.[\dA-Za-z]+)+")
 NOT_HEADLINE = re.compile(r"^(?:Naturality|Step|Case|Part|Proof|Auxiliary|Helper|Lemma|Corollary|Technical|"
                           r"Preparation|Reduction|Ingredient)\b", re.I)
+# A result noun used as a predicate or a modifier names nothing: "is the identity", "up to
+# isomorphism", "quasi-isomorphism", "the identity component", "Dixon's size bound opens ...".
+PREDICATE = re.compile(r"(?:-|\b(?:is|are|be)\s+(?:an?|the)\s+(?:\S+\s+){0,2}|\b(?:to\s+the|under(?:\s+an?)?|up\s+to)\s+)$",
+                       re.I)
+PHRASE_END = re.compile(r"\s*(?:$|[,;:.()`]|(?:for|of|on|in|over|with|at|along|via|from|between|without|by|as|and|"
+                        r"under|to|modulo|after|beyond|near|inside|through|against|across|up\s+to|off|within|"
+                        r"into|outside|when|if|where|whenever|unless|except|using|holds?|express(?:es)?)\b)", re.I)
+# A head that is only names joined by dashes names its theorem: "Lumer--Phillips in duality-map form",
+# unless the title goes on to cite a paper's numbered statement ("Katz–Mazur, Lemma 5.3.4").
+JOINED = re.compile(rf"^{_NAME}(?:{_JOIN}{_NAME})+(?![\w`'’])")
+CITATION = re.compile(r"§|\(\d+(?:\.\d+)+\)|\b(?:Theorem|Thm\.?|Lemma|Proposition|Prop\.?|Corollary|Cor\.?|"
+                      r"Remark|Definition|Section|Chapter|Exercise)\s+[\dIVX]")
 # "(Author, Theorem N)" right after the title, not "(..., proof of Theorem N)".
 CITED = re.compile(r"^\s*[.:]?\s*\(([^()]{0,80}?)\b(?:Theorem|Thm\.?)\s+[\dIVX]+(?:\.[\dA-Za-z]+)*[^()]{0,40}\)")
 NOT_CITED = re.compile(r"\b(?:proof|step|after|of|by|see|cf\.?|from|in)\s*$", re.I)
@@ -86,7 +103,10 @@ def title(doc: str | None) -> str | None:
 
 
 def head(text: str) -> str:
-    return HEAD_SPLIT.split(text, 1)[0]
+    """The title before its first qualifier, which no code span holds."""
+    masked = re.sub(r"`[^`]*`", lambda span: "x" * len(span.group()), text)
+    match = HEAD_SPLIT.search(masked)
+    return text[:match.start()] if match else text
 
 
 def _plain(text: str) -> str:
@@ -103,8 +123,9 @@ def named_before(clause: str, end: int) -> bool:
     if clause.startswith("The "):
         plain = " " + plain  # a capital right after "The" may be a bare name
     for match in EPONYM.finditer(plain):
-        word = None if re.search(rf"['’]|{_JOIN}", match.group(0)) else match.group(0).split()[-1]
-        if word in NOT_NAMES:
+        # A possessive's stem, and a join whose parts are all excluded, are no name either.
+        words = re.split(rf"{_JOIN}|\s", re.sub(r"['’]s?$", "", match.group(0)))
+        if all(word in NOT_NAMES for word in words if word):
             continue
         if len(plain[:match.start()].split()) < NAME_WORDS:
             return True
@@ -120,15 +141,26 @@ def named_theorem(clause: str) -> bool:
 
 
 def named_result(clause: str) -> bool:
-    """A name, then any result noun: "Schur-Weyl duality", "Parseval's identity"."""
+    """A name, then a result noun that ends its noun phrase: "Schur-Weyl duality for the group
+    ranges", "Parseval's identity"."""
     if _excluded(clause):
         return False
-    match = re.search(rf"\b{RESULT}\b", clause, re.I)
-    if not match:
+    for match in re.finditer(rf"\b{RESULT}\b", clause, re.I):
+        before, after = clause[:match.start()], clause[match.end():]
+        if PREDICATE.search(before) or not PHRASE_END.match(after):
+            continue
+        if match.group(0).lower().startswith("law") and not re.search(r"['’]s?\s", _plain(before)):
+            continue
+        return named_before(clause, match.end())
+    return False
+
+
+def joined_names(clause: str, text: str) -> bool:
+    """Names joined by dashes and nothing more before a qualifier: "Lumer--Phillips in duality-map form"."""
+    match = JOINED.match(clause)
+    if not match or _excluded(clause) or not PHRASE_END.match(clause[match.end():]) or CITATION.search(text):
         return False
-    if match.group(0).lower().startswith("law") and not re.search(r"['’]s?\s", _plain(clause[:match.start()])):
-        return False
-    return named_before(clause, match.end())
+    return not all(word in NOT_NAMES for word in re.split(_JOIN, match.group(0)))
 
 
 def bare_named_result(clause: str, possessives: set[str]) -> bool:
@@ -140,7 +172,7 @@ def bare_named_result(clause: str, possessives: set[str]) -> bool:
 
 
 def the_theorem(clause: str) -> bool:
-    """At most six words ending in "theorem": "The prime number theorem"."""
+    """"theorem" within the first six words: "The prime number theorem"."""
     if NUMBERED.search(clause):
         return False
     plain = _plain(clause)
@@ -174,7 +206,7 @@ def theorem_test(row: dict, possessives: set[str]) -> str | None:
         return "named theorem"
     if named_result(clause):
         return "named result"
-    if bare_named_result(clause, possessives):
+    if bare_named_result(clause, possessives) or joined_names(clause, text):
         return "named result"
     if the_theorem(clause):
         return "the theorem"
@@ -231,13 +263,19 @@ def plain_title(text: str, key: str) -> bool:
     return _normal(text) == key
 
 
-def group_key(text: str) -> str:
+def group_key(text: str, possessives: set[str] | frozenset[str] = frozenset()) -> str:
     """The name of the result a title states, for gathering its forms: "Menger's theorem for
     adjacent vertices" and "Menger's theorem, predicate form" both give "menger theorem". A short
-    key without a name ("structure theorem") keeps the whole head clause."""
+    key without a name ("structure theorem") keeps the whole head clause; a first word in
+    *possessives* is a name ("Serre duality"), and names joined by dashes are the key themselves
+    ("Hille--Yosida for contraction semigroups" gives "hille-yosida")."""
     clause = head(text)
+    joined = JOINED.match(clause)
+    if joined and PHRASE_END.match(clause[joined.end():]):
+        return _normal(joined.group(0))
     match = re.search(rf"\b{RESULT}\b", clause, re.I)
     key = clause[:match.end()] if match else clause
-    if match and len(_plain(key).split()) <= 2 and not named_before(clause, match.end()):
+    named = named_before(clause, match.end()) if match else False
+    if match and len(_plain(key).split()) <= 2 and not named and _plain(clause).split()[0] not in possessives:
         key = clause
     return _normal(key)
