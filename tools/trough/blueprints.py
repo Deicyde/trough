@@ -31,9 +31,9 @@ from trough.vault import MATH_SPAN, Container, Entry, Leaf, chunk, rel, slugify,
 KINDS = {"theorem": "theorem", "lemma": "lemma", "proposition": "proposition", "corollary": "corollary",
          "definition": "definition", "sublemma": "lemma", "conjecture": "theorem", "claim": "lemma"}
 LINK = re.compile(r"\]\(trough:([^)\s]*)\)")  # a placeholder's target is percent-encoded
-# Characters Markdown can read as markup. Underscores between letters or digits, as in a Lean name, can't
-# start or end emphasis, so they stay bare.
-MARKUP = re.compile(r"(?<=[^\W_])_+(?=[^\W_])|(?P<markup>[*_\[\]\\`])")
+# Characters Markdown can read as markup. One or two underscores between letters or digits, as in a Lean
+# name, can't start or end emphasis, so they stay bare; Python-Markdown can read a longer run as emphasis.
+MARKUP = re.compile(r"(?<=[^\W_])_{1,2}(?=[^\W_])|(?P<markup>[*_\[\]\\`])")
 # References that print only a number in LaTeX, so the text before them names the kind.
 NUMBER_ONLY = {"ref", "pageref", "vref", "Vref", "labelcref", "cpageref", "Cpageref", "nameref", "hyperref"}
 PREFIX = re.compile(r"^[A-Za-z]{1,12}:(?=.)")
@@ -591,7 +591,7 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
             notes.append(("Lean", f"Formalized as {names}."))
         else:
             # The book shows no statuses, so an unproved statement says so here.
-            notes.append(("Lean", f"Stated as {names}; the blueprint does not mark its proof formalized."))
+            notes.append(("Lean", f"Stated as {names}; the blueprint marks no proof of it as formalized."))
     place, source = project.source(node.where)
     if project.text:
         body = writer.statement(node.body) or f"A {caption.lower()} of the blueprint of {project.name}, with no text."
@@ -658,7 +658,7 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
         "whose Lean declarations it names and marks formalized, or in Mathlib"
         + (f". Its other {stats['left_out']:,} nodes have no article, and a section of only those is left out: "
            "the map records what the project contains, not what it plans" if stats["left_out"] else "")
-        + ". A statement whose proof the blueprint does not mark `\\leanok` says so. Dependencies are the "
+        + ". A statement for which the blueprint marks no proof `\\leanok` says so. Dependencies are the "
         "blueprint's `\\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.",
     ]
     if project.text:
