@@ -83,13 +83,17 @@ def generate() -> dict[Path, str]:
         chapters["tauceti"] = "tauceti/README.md"
         lean_links["tauceti"] = dict(sorted(tau_links.items()))
         blueprint_rows.append(("Tau Ceti", "DECOMPOSED",
-                               f"[{tau_stats['articles']:,} declarations its roadmaps name](../roadmap/tauceti/README.md), "
-                               "one article per declaration."))
+                               f"[{tau_stats['articles']:,} articles on {tau_stats['declarations']:,} declarations]"
+                               "(../roadmap/tauceti/README.md) its roadmaps' statuses name or its docstrings name as "
+                               "results, the forms of one result in one article."))
         print(
-            f"tauceti: {tau_stats['articles']} articles ({tau_stats.get('theorems', 0)} theorems, "
-            f"{tau_stats.get('definitions', 0)} definitions, {tau_stats.get('sorry', 0)} reaching sorry) in "
-            f"{tau_stats['roadmaps']} roadmaps; {tau_stats['missing']} names missing at the pin; "
-            f"{tau_stats.get('statement_edges', 0)} statement and {tau_stats.get('proof_edges', 0)} proof edges",
+            f"tauceti: {tau_stats['articles']} articles on {tau_stats['declarations']} declarations "
+            f"({tau_stats.get('theorems', 0)} theorems, {tau_stats.get('definitions', 0)} definitions, "
+            f"{tau_stats.get('sorry', 0)} reaching sorry; {tau_stats['named']} named by statuses, {tau_stats['chosen']} "
+            f"more by docstrings; {tau_stats.get('forms', 0)} articles with several forms) in {tau_stats['parts']} parts, "
+            f"{tau_stats['roadmaps']} roadmap and {tau_stats.get('areas', 0)} area sections; {tau_stats['missing']} names "
+            f"missing at the pin; {tau_stats.get('statement_edges', 0)} statement and "
+            f"{tau_stats.get('proof_edges', 0)} proof edges",
             file=sys.stderr,
         )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"

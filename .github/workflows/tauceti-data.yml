@@ -1,8 +1,9 @@
 # Reads which declarations Tau Ceti's roadmaps name (tools/refresh_tauceti.py)
-# at the pinned TauCetiRoadmap commit, then each one's kind, docstring,
-# signature and the nearest named declarations its statement and proof use, at
-# the pinned Tau Ceti commit (lean/tauceti/TauCetiDeps.lean). The pages are
-# then regenerated from that data.
+# at the pinned TauCetiRoadmap commit, and which declarations' docstrings name a
+# result (lean/tauceti/TauCetiSurvey.lean, then tools/select_tauceti.py) at the
+# pinned Tau Ceti commit; then each one's kind, docstring, signature and the
+# nearest mapped declarations its statement and proof use
+# (lean/tauceti/TauCetiDeps.lean). The pages are then regenerated from that data.
 #
 # A push that moves a pin, data/tauceti/source.json or roadmaps.json, runs it
 # too, so the dump always matches the pins. On main, a dispatch or the weekly
@@ -19,7 +20,9 @@ on:
     paths:
       - "lean/tauceti/**"
       - "tools/refresh_tauceti.py"
+      - "tools/select_tauceti.py"
       - "tools/trough/tauceti.py"
+      - "tools/trough/tauceti_select.py"
       - "data/tauceti/source.json"
       - "data/tauceti/roadmaps.json"
       - ".github/workflows/tauceti-data.yml"
@@ -27,7 +30,9 @@ on:
     paths:
       - "lean/tauceti/**"
       - "tools/refresh_tauceti.py"
+      - "tools/select_tauceti.py"
       - "tools/trough/tauceti.py"
+      - "tools/trough/tauceti_select.py"
       - "data/tauceti/source.json"
       - "data/tauceti/roadmaps.json"
       - ".github/workflows/tauceti-data.yml"
@@ -145,11 +150,7 @@ jobs:
             "$date" "$REV" "$(cat "$tauceti/lean-toolchain")" > data/tauceti/source.json
 
       - name: Read which declarations the roadmaps name
-        run: |
-          set -euo pipefail
-          uv run --no-dev python tools/refresh_tauceti.py "$RUNNER_TEMP/TauCetiRoadmap"
-          jq -r '.roadmaps[].names[]' data/tauceti/roadmaps.json | LC_ALL=C sort -u > "$RUNNER_TEMP/names.txt"
-          wc -l < "$RUNNER_TEMP/names.txt"
+        run: uv run --no-dev python tools/refresh_tauceti.py "$RUNNER_TEMP/TauCetiRoadmap"
 
       # Tau Ceti's own oleans come from its public cache (scripts/lake-cache-get.sh),
       # Mathlib's from Mathlib's; `lake build` then compiles only what both miss.
@@ -163,6 +164,28 @@ jobs:
           du -sh .lake
           df -h /
 
+      # Each Lean script runs below an import of every Tau Ceti module: the
+      # root module imports nothing.
+      - name: Survey every declaration's docstring
+        working-directory: ${{ runner.temp }}/TauCeti
+        env:
+          TROUGH_OUT: ${{ runner.temp }}/survey.jsonl
+        run: |
+          set -euo pipefail
+          find TauCeti -name '*.lean' | LC_ALL=C sort | sed 's|\.lean$||; s|/|.|g; s|^|import |' > "$RUNNER_TEMP/imports.lean"
+          wc -l < "$RUNNER_TEMP/imports.lean"
+          cat "$RUNNER_TEMP/imports.lean" "$GITHUB_WORKSPACE/lean/tauceti/TauCetiSurvey.lean" > TroughTauCetiSurvey.lean
+          /usr/bin/time -v lake env lean TroughTauCetiSurvey.lean
+
+      - name: Choose the results the docstrings name
+        run: |
+          set -euo pipefail
+          uv run --no-dev python tools/select_tauceti.py "$RUNNER_TEMP/survey.jsonl"
+          { jq -r '.roadmaps[].names[]' data/tauceti/roadmaps.json
+            jq -r '.chosen | keys[]' data/tauceti/selection.json; } | LC_ALL=C sort -u > "$RUNNER_TEMP/names.txt"
+          wc -l < "$RUNNER_TEMP/names.txt"
+          gzip -k "$RUNNER_TEMP/survey.jsonl"
+
       - name: Read the declarations
         working-directory: ${{ runner.temp }}/TauCeti
         env:
@@ -171,9 +194,7 @@ jobs:
           TROUGH_TAUCETI_REV: ${{ steps.pin.outputs.rev }}
         run: |
           set -euo pipefail
-          { find TauCeti -name '*.lean' | LC_ALL=C sort | sed 's|\.lean$||; s|/|.|g; s|^|import |'
-            cat "$GITHUB_WORKSPACE/lean/tauceti/TauCetiDeps.lean"; } > TroughTauCetiDeps.lean
-          grep -c '^import TauCeti' TroughTauCetiDeps.lean
+          cat "$RUNNER_TEMP/imports.lean" "$GITHUB_WORKSPACE/lean/tauceti/TauCetiDeps.lean" > TroughTauCetiDeps.lean
           /usr/bin/time -v lake env lean TroughTauCetiDeps.lean
 
       - name: Regenerate the pages
@@ -216,6 +237,7 @@ jobs:
           path: |
             data/tauceti/deps.json
             data/tauceti/roadmaps.json
+            data/tauceti/selection.json
             data/tauceti/source.json
           retention-days: 14
 
@@ -227,6 +249,7 @@ jobs:
           path: |
             data/tauceti/
             ${{ runner.temp }}/names.txt
+            ${{ runner.temp }}/survey.jsonl.gz
           retention-days: 14
 
   # Records the data in the newest main, regenerating the pages with main's
@@ -269,7 +292,7 @@ jobs:
           set -euo pipefail
           # The artifact keeps the files without their common folder, data/tauceti.
           src="$RUNNER_TEMP/data"
-          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(deps|roadmaps|source)\.json$'; then
+          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(deps|roadmaps|selection|source)\.json$'; then
             echo "::error::The data artifact holds the files listed above."
             exit 1
           fi
