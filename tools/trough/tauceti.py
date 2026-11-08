@@ -520,9 +520,10 @@ def intro(sources: Sources, stats: dict[str, int]) -> str:
         + "A roadmap's plan, its suggested signatures and its frontier say what Tau Ceti may add, so they are left "
         "out, and so is the statuses' prose: a model writes it, and Tau Ceti does not check it.",
         f"Each of the {stats['roadmaps']} roadmaps whose status names a declaration has a section, in the part where "
-        "most of its articles are: what its status names, and the other named results in a module where only this "
-        "roadmap's status names declarations, or else in a folder of modules below the areas where only it names "
-        f"declarations, at least {FOLDER_MIN} of them. The other named results are in {stats['areas']} sections by "
+        "most of its articles are. It holds what the status names and the other named results near them: those in a "
+        "module where no other roadmap's status names a declaration, or else in a folder of modules below the areas "
+        f"where this status names at least {FOLDER_MIN} declarations and no other names any. The other named results "
+        f"are in {stats['areas']} sections by "
         f"area, a module's first two levels under `TauCeti`; an area with fewer than {AREA_MIN} of them joins its "
         f"part's *Other results*, and a part with fewer than {PART_MIN} articles joins *Other Areas*.",
         "Each article's text is its declaration's docstring and signature, under Tau Ceti's Apache-2.0 license; a "

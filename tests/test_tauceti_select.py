@@ -78,6 +78,7 @@ def test_forms_of_a_result_share_its_key():
     # A first word the library writes as a possessive is a name, and joined names are a key.
     assert key("Serre duality for a curve", {"Serre"}) == key("Serre duality, Yoneda form", {"Serre"}) == "serre duality"
     assert key("Hille--Yosida for contraction semigroups") == key("Hille–Yosida, quasi-contraction form") == "hille-yosida"
+    assert key("The Hille--Yosida generation theorem") == key("Hille–Yosida characterization") == "hille-yosida"
     assert tauceti_select.plain_title("Menger's theorem", "menger theorem")
     assert not tauceti_select.plain_title("Menger's theorem for curves", "menger theorem")
 

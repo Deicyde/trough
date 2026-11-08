@@ -267,11 +267,12 @@ def group_key(text: str, possessives: set[str] | frozenset[str] = frozenset()) -
     """The name of the result a title states, for gathering its forms: "Menger's theorem for
     adjacent vertices" and "Menger's theorem, predicate form" both give "menger theorem". A short
     key without a name ("structure theorem") keeps the whole head clause; a first word in
-    *possessives* is a name ("Serre duality"), and names joined by dashes are the key themselves
-    ("Hille--Yosida for contraction semigroups" gives "hille-yosida")."""
+    *possessives* is a name ("Serre duality"), and names joined by dashes that open the head are
+    the key themselves ("Hille--Yosida for contraction semigroups" and "The Hille–Yosida generation
+    theorem" give "hille-yosida")."""
     clause = head(text)
-    joined = JOINED.match(clause)
-    if joined and PHRASE_END.match(clause[joined.end():]):
+    joined = JOINED.match(ARTICLE.sub("", clause))
+    if joined:
         return _normal(joined.group(0))
     match = re.search(rf"\b{RESULT}\b", clause, re.I)
     key = clause[:match.end()] if match else clause
