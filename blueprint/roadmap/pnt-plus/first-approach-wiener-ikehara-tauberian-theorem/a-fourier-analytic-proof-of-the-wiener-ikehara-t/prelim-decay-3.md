@@ -30,7 +30,7 @@ Should follow from previous lemma.
 
 ## Lean
 
-Stated as [`prelim_decay_3`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/prelim_decay_3); the blueprint does not mark its proof formalized.
+Stated as [`prelim_decay_3`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/prelim_decay_3); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -15,7 +15,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Stated as [`Eq63.Greedy.exists_extension`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq63.Greedy.exists_extension); the blueprint does not mark its proof formalized.
+Stated as [`Eq63.Greedy.exists_extension`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq63.Greedy.exists_extension); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

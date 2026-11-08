@@ -19,7 +19,7 @@ If $x\in K$ and $U$ is the open subset in the previous lemma, then it's easily c
 
 ## Lean
 
-Stated as [`NumberField.AdeleRing.discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.discrete); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.AdeleRing.discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.discrete); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

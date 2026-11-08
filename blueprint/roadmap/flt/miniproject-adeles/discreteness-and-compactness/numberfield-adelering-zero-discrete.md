@@ -20,7 +20,7 @@ By a previous result, we have $\mathbb{A}_K=K\otimes_{\mathbb{Q}}\mathbb{A}_{\ma
 
 ## Lean
 
-Stated as [`NumberField.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.zero_discrete); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.zero_discrete); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

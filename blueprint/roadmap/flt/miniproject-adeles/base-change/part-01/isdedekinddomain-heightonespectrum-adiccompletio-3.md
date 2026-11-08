@@ -20,7 +20,7 @@ My current proposal to formalize this is as follows. The map is surjective becau
 
 ## Lean
 
-Stated as [`IsDedekindDomain.HeightOneSpectrum.adicCompletion.baseChangeAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.HeightOneSpectrum.adicCompletion.baseChangeAlgEquiv); the blueprint does not mark its proof formalized.
+Stated as [`IsDedekindDomain.HeightOneSpectrum.adicCompletion.baseChangeAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.HeightOneSpectrum.adicCompletion.baseChangeAlgEquiv); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

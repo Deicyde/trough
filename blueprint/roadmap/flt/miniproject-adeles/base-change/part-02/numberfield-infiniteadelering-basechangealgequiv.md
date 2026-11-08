@@ -26,7 +26,7 @@ The first isomorphism is the standard $L$-algebra isomorphism $L \otimes_K \prod
 
 ## Lean
 
-Stated as [`NumberField.InfiniteAdeleRing.baseChangeAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.baseChangeAlgEquiv); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfiniteAdeleRing.baseChangeAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.baseChangeAlgEquiv); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

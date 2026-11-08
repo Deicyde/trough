@@ -19,7 +19,7 @@ This was well-known in the 1980s. A proof sketch is as follows. First note that 
 
 ## Lean
 
-Stated as [`FreyCurve.torsion_isHardlyRamified`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyCurve.torsion_isHardlyRamified); the blueprint does not mark its proof formalized.
+Stated as [`FreyCurve.torsion_isHardlyRamified`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyCurve.torsion_isHardlyRamified); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

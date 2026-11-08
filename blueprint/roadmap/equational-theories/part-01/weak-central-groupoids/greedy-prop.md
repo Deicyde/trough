@@ -23,7 +23,7 @@ If Claim 1 is violated, then there is a pair $(a,n), (b,m)$ that currently has n
 
 ## Lean
 
-Stated as [`RelaxedVeryWeakCentralGroupoid.Greedy.exists_extension`](https://teorth.github.io/equational_theories/docs/find/#doc/RelaxedVeryWeakCentralGroupoid.Greedy.exists_extension); the blueprint does not mark its proof formalized.
+Stated as [`RelaxedVeryWeakCentralGroupoid.Greedy.exists_extension`](https://teorth.github.io/equational_theories/docs/find/#doc/RelaxedVeryWeakCentralGroupoid.Greedy.exists_extension); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

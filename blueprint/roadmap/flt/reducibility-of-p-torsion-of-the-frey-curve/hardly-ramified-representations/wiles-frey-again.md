@@ -24,7 +24,7 @@ Indeed, $\rho$ is hardly ramified by theorem [Frey_curve_hardly_ramified](frey-c
 
 ## Lean
 
-Stated as [`FLT.Bosses.B4_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B4_proof); the blueprint does not mark its proof formalized.
+Stated as [`FLT.Bosses.B4_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B4_proof); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

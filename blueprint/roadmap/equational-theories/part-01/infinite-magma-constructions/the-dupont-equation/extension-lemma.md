@@ -67,7 +67,7 @@ and define an extension $f': E' \to \mathbb{Z}$ by setting $f'(h_0) := c$. Axiom
 
 ## Lean
 
-Stated as [`Eq63.Greedy.Extension.next`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq63.Greedy.Extension.next); the blueprint does not mark its proof formalized.
+Stated as [`Eq63.Greedy.Extension.next`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq63.Greedy.Extension.next); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

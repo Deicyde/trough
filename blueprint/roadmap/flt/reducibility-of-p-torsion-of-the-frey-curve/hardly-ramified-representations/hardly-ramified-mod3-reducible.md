@@ -19,7 +19,7 @@ Omitted for now. **TODO**
 
 ## Lean
 
-Stated as [`GaloisRepresentation.IsHardlyRamified.mod_three`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mod_three); the blueprint does not mark its proof formalized.
+Stated as [`GaloisRepresentation.IsHardlyRamified.mod_three`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mod_three); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

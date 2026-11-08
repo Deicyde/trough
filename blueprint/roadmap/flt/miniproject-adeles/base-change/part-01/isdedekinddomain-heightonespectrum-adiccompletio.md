@@ -20,7 +20,7 @@ Any basis for $L$ as a $K$-vector space spans $L_w$ as a $K_v$-module, so $L_w$ 
 
 ## Lean
 
-Stated as [`IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology); the blueprint does not mark its proof formalized.
+Stated as [`IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

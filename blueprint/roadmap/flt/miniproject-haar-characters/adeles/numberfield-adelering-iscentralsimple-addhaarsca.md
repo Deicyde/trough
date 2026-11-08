@@ -24,7 +24,7 @@ We think of $B_{\mathbb{A}}$ as $B\otimes_K\mathbb{A}_K$. If $u=(u_v)$ as $v$ ru
 
 ## Lean
 
-Stated as [`NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

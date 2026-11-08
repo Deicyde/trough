@@ -33,7 +33,7 @@ for all natural numbers $n$. As the $a,b,c$ are distinct, the $\phi_a(b), \phi_b
 
 ## Lean
 
-Stated as [`Eq1323.extend`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.extend); the blueprint does not mark its proof formalized.
+Stated as [`Eq1323.extend`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.extend); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

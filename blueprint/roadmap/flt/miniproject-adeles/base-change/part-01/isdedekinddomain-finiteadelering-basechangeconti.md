@@ -15,7 +15,7 @@ The induced $L$-algebra morphism $L\otimes_K\mathbb{A}_{A,K}^\infty\to\mathbb{A}
 
 ## Lean
 
-Stated as [`IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv); the blueprint does not mark its proof formalized.
+Stated as [`IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

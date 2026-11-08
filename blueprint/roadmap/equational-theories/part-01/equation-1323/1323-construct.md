@@ -31,7 +31,7 @@ Trivial.
 
 ## Lean
 
-Stated as [`Eq1323.eq1323_if_conditions`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.eq1323_if_conditions); the blueprint does not mark its proof formalized.
+Stated as [`Eq1323.eq1323_if_conditions`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.eq1323_if_conditions); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

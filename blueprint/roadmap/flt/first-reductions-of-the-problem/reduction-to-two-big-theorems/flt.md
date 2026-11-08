@@ -25,7 +25,7 @@ Assume there is a there is a counterexample $a^n+b^n=c^n$. By Corollary [FermatL
 
 ## Lean
 
-Stated as [`flt`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/flt); the blueprint does not mark its proof formalized.
+Stated as [`flt`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/flt); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

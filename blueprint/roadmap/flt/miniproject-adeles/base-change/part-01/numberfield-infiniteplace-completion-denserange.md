@@ -19,7 +19,7 @@ Let $(K, v)$ denote $K$ equipped with the topology induced by the infinite place
 
 ## Lean
 
-Stated as [`NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

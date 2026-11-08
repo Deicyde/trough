@@ -19,7 +19,7 @@ Compose the $K_v$-linear isomorphism $K_v^{[L:K]} \cong \prod_{w\mid v}L_w$ with
 
 ## Lean
 
-Stated as [`NumberField.InfinitePlace.Completion.piEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.piEquiv); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfinitePlace.Completion.piEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.piEquiv); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

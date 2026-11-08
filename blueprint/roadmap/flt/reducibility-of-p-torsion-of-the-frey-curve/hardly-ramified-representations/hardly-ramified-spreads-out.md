@@ -22,7 +22,7 @@ Omitted for now **TODO**
 
 ## Lean
 
-Stated as [`GaloisRepresentation.IsHardlyRamified.mem_isCompatible`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mem_isCompatible); the blueprint does not mark its proof formalized.
+Stated as [`GaloisRepresentation.IsHardlyRamified.mem_isCompatible`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mem_isCompatible); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

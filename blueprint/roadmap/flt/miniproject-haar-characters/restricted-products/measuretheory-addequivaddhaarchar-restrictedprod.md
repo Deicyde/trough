@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Lean
 
-Stated as [`MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight); the blueprint does not mark its proof formalized.
+Stated as [`MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

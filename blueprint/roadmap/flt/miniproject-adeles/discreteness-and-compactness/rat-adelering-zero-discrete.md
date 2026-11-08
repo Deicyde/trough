@@ -19,7 +19,7 @@ Use $\prod_p{\mathbb{Z}_p}\times(-1,1)$. Any rational $q$ in this set is a $p$-a
 
 ## Lean
 
-Stated as [`Rat.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Rat.AdeleRing.zero_discrete); the blueprint does not mark its proof formalized.
+Stated as [`Rat.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Rat.AdeleRing.zero_discrete); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -19,7 +19,7 @@ Since $L_{\infty}$ is homeomorphic to a finite product of $K_{\infty}$ as a $K_{
 
 ## Lean
 
-Stated as [`NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

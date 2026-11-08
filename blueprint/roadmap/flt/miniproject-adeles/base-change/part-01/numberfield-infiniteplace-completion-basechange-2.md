@@ -19,7 +19,7 @@ Let $(x_i)_i$ be a $K_v$-basis of $\prod_{w\mid v}L_w$. By the density of $L$ in
 
 ## Lean
 
-Stated as [`NumberField.InfinitePlace.Completion.baseChange_surjective`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChange_surjective); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfinitePlace.Completion.baseChange_surjective`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChange_surjective); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

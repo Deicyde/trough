@@ -23,7 +23,7 @@ Since $m$ and $n$ are coprime, any element in the product of their divisors can 
 
 ## Lean
 
-Stated as [`ArithmeticFunction.divisors_mul_injective`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.divisors_mul_injective); the blueprint does not mark its proof formalized.
+Stated as [`ArithmeticFunction.divisors_mul_injective`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.divisors_mul_injective); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

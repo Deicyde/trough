@@ -19,7 +19,7 @@ Because $L_w$ is a finite-dimensional normed $K_v$ vector space, there exists a 
 
 ## Lean
 
-Stated as [`NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -19,7 +19,7 @@ Since both sides of the $L$-algebra isomorphism in [NumberField.InfiniteAdeleRin
 
 ## Lean
 
-Stated as [`NumberField.InfiniteAdeleRing.baseChangeEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.baseChangeEquiv), [`NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfiniteAdeleRing.baseChangeEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.baseChangeEquiv), [`NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

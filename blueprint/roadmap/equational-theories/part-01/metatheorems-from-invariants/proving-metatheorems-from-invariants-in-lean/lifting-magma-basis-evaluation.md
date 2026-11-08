@@ -23,7 +23,7 @@ For the reverse direction, suppose that $E$ is true when evaluated with the subs
 
 ## Lean
 
-Stated as [`MagmaLaw.models_iff_satisfies_ι`](https://teorth.github.io/equational_theories/docs/find/#doc/MagmaLaw.models_iff_satisfies_ι); the blueprint does not mark its proof formalized.
+Stated as [`MagmaLaw.models_iff_satisfies_ι`](https://teorth.github.io/equational_theories/docs/find/#doc/MagmaLaw.models_iff_satisfies_ι); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

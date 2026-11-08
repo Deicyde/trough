@@ -19,7 +19,7 @@ Trivial.
 
 ## Lean
 
-Stated as [`Law.MagmaLaw.Equation1_maximal`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.Equation1_maximal); the blueprint does not mark its proof formalized.
+Stated as [`Law.MagmaLaw.Equation1_maximal`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.Equation1_maximal); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

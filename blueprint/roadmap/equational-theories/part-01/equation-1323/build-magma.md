@@ -105,7 +105,7 @@ It remains to handle the case when $a,b$ are distinct elements of $G \backslash 
 
 ## Lean
 
-Stated as [`Eq1323.op_Ly_Ry_eq_LSy`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.op_Ly_Ry_eq_LSy); the blueprint does not mark its proof formalized.
+Stated as [`Eq1323.op_Ly_Ry_eq_LSy`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.op_Ly_Ry_eq_LSy); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

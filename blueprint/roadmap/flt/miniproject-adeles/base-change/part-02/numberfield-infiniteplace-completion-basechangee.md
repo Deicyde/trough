@@ -22,7 +22,7 @@ The map in [NumberField.InfinitePlace.Completion.baseChange](../part-01/numberfi
 
 ## Lean
 
-Stated as [`NumberField.InfinitePlace.Completion.baseChangeEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChangeEquiv); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfinitePlace.Completion.baseChangeEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChangeEquiv); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

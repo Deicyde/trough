@@ -19,7 +19,7 @@ The $L$-algebra map $L\otimes_K K_v \to\prod_{w\mid v}L_w$ can equivalently be t
 
 ## Lean
 
-Stated as [`NumberField.InfinitePlace.Completion.baseChange_injective`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChange_injective); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.InfinitePlace.Completion.baseChange_injective`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChange_injective); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

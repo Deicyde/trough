@@ -20,7 +20,7 @@ We proceed as in the discreteness proof above, by reducing to $\mathbb{Q}$. As b
 
 ## Lean
 
-Stated as [`NumberField.AdeleRing.cocompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.cocompact); the blueprint does not mark its proof formalized.
+Stated as [`NumberField.AdeleRing.cocompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.cocompact); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

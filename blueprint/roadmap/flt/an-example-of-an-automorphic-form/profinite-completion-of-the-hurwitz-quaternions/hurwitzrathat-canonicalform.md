@@ -21,7 +21,7 @@ Same as the proof for $\widehat{\mathbb{Q}}$.
 
 ## Lean
 
-Stated as [`HurwitzRatHat.canonicalForm`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/HurwitzRatHat.canonicalForm); the blueprint does not mark its proof formalized.
+Stated as [`HurwitzRatHat.canonicalForm`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/HurwitzRatHat.canonicalForm); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

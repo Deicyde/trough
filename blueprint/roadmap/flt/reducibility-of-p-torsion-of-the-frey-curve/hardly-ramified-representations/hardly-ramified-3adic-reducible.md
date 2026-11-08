@@ -20,7 +20,7 @@ Omitted for now **TODO**
 
 ## Lean
 
-Stated as [`GaloisRepresentation.IsHardlyRamified.three_adic`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.three_adic); the blueprint does not mark its proof formalized.
+Stated as [`GaloisRepresentation.IsHardlyRamified.three_adic`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.three_adic); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

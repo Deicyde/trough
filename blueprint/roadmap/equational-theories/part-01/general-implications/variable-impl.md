@@ -19,7 +19,7 @@ Consider the magma $\mathrm{MS}$ of multisets over an arbitrary set $A$ (which c
 
 ## Lean
 
-Stated as [`Law.MagmaLaw.SameCount.derive`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.SameCount.derive); the blueprint does not mark its proof formalized.
+Stated as [`Law.MagmaLaw.SameCount.derive`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.SameCount.derive); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

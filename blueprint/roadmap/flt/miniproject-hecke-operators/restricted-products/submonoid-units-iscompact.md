@@ -22,7 +22,7 @@ We have $U\times U$ is a compact subset of $M\times M$, and so $U^\times=M^\time
 
 ## Lean
 
-Stated as [`Submonoid.units_isCompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Submonoid.units_isCompact); the blueprint does not mark its proof formalized.
+Stated as [`Submonoid.units_isCompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Submonoid.units_isCompact); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

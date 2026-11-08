@@ -27,7 +27,7 @@ Let's define $T$ to be a positive integer which is both a left and right multipl
 
 ## Lean
 
-Stated as [`HurwitzRatHat.completed_units`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/HurwitzRatHat.completed_units); the blueprint does not mark its proof formalized.
+Stated as [`HurwitzRatHat.completed_units`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/HurwitzRatHat.completed_units); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -23,7 +23,7 @@ Let $a$ and $b$ be coprime natural numbers, and let $d$ be a divisor of $ab$. Si
 
 ## Lean
 
-Stated as [`ArithmeticFunction.unique_divisor_decomposition`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.unique_divisor_decomposition); the blueprint does not mark its proof formalized.
+Stated as [`ArithmeticFunction.unique_divisor_decomposition`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.unique_divisor_decomposition); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

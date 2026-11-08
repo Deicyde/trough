@@ -25,7 +25,7 @@ Assume for a contradiction that $\overline{\rho}$ is irreducible. By theorem [ha
 
 ## Lean
 
-Stated as [`FreyCurve.torsion_not_isIrreducible`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyCurve.torsion_not_isIrreducible); the blueprint does not mark its proof formalized.
+Stated as [`FreyCurve.torsion_not_isIrreducible`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyCurve.torsion_not_isIrreducible); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

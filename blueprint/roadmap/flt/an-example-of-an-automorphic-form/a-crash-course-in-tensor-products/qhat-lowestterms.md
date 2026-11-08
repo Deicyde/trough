@@ -21,7 +21,7 @@ Uniqueness: if $z/N=w/M$, we deduce $1\otimes_t Mz=1\otimes_t Nw$, and by inject
 
 ## Lean
 
-Stated as [`QHat.lowestTerms`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/QHat.lowestTerms); the blueprint does not mark its proof formalized.
+Stated as [`QHat.lowestTerms`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/QHat.lowestTerms); the blueprint marks no proof of it as formalized.
 
 ## Sources
 
