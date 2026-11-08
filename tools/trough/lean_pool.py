@@ -395,7 +395,8 @@ def article(source: dict, project: dict) -> tuple[Leaf, dict[str, str]]:
     fields = [("declaration", named[0]["kind"] if named else "theorem"), ("origin", "cited")]
     if named:
         fields += [("lean", ", ".join(result["declaration"] for result in named)), ("statement", "formalized")]
-        if all(result["kind"] in ("theorem", "lemma") and not result["sorry"] for result in named):
+        # An alias is of a declaration Lean Pool's CI builds without `sorry`, theorem or definition.
+        if all(result["kind"] in ("theorem", "lemma", "alias") and not result["sorry"] for result in named):
             fields.append(("proof", "formalized"))
     body = "\n\n".join([
         "\n>\n".join(f"> {paragraph}" for paragraph in text(project["summary"]).split("\n\n")),
