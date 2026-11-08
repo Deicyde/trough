@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Arithmetic Dirichlet series and… to Arithmetic Dirichlet Series
+# Arithmetic Dirichlet series and… to Theta series of lattices
 
 - [Arithmetic Dirichlet series and Tauberian methods](arithmetic-dirichlet-series-and-tauberian-method/README.md)
 - [Bounded Laplace and ordered Dirichlet boundary convergence](bounded-laplace-and-ordered-dirichlet-boundary-c/README.md)
@@ -15,6 +15,7 @@ navigation: transparent
 - [Global quadratic forms over number fields](global-quadratic-forms-over-number-fields/README.md)
 - [Heights, units and S-units of number fields](heights-units-and-s-units-of-number-fields/README.md)
 - [Imaginary quadratic fields: class numbers, finiteness and class number one](imaginary-quadratic-fields-class-numbers-finiten/README.md)
+- [Integral quadratic forms and lattices](integral-quadratic-forms-and-lattices/README.md)
 - [Local fields and ramification](local-fields-and-ramification/README.md)
 - [Local Galois groups of p-adic fields](local-galois-groups-of-p-adic-fields/README.md)
 - [Modular forms — Hecke theory, newforms, and L-functions](modular-forms-hecke-theory-newforms-and-l-functi/README.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [P-adic functional analysis](p-adic-functional-analysis/README.md)
 - [Quadratic forms and cohomological invariants](quadratic-forms-and-cohomological-invariants/README.md)
 - [Theta series of lattices](theta-series-of-lattices/README.md)
-- [Arithmetic Dirichlet Series](arithmetic-dirichlet-series/README.md)

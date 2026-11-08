@@ -1,6 +1,6 @@
 # Nilpotent orbits, Springer resolution and subregular geometry
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/NilpotentOrbits/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/NilpotentOrbits/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Jacobson–Morozov theorem](the-jacobson-morozov-theorem.md)
 - [The Jacobson–Morozov theorem for embeddings](the-jacobson-morozov-theorem-for-embeddings.md)
@@ -12,7 +12,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [LieAlgebra.IsCentralizerRegular](liealgebra-iscentralizerregular.md)
 - [The Slodowy slice `e + ker (ad f)`, as an affine subspace of `L`](the-slodowy-slice-e-ker-ad-f-as-an-affine-subspa.md)
 - [The contracting action of `Kˣ` on `L` attached to an `sl₂` triple `(h, e, f)`](the-contracting-action-of-kx-on-l-attached-to-an.md)
-- [The Frobenius commutator identity](the-frobenius-commutator-identity.md)
-- [Jacobson's lemma for the adjoint representation](jacobsons-lemma-for-the-adjoint-representation.md)
 - [Morozov's lemma](morozovs-lemma.md)
 - [The rank-one Kostant straightening formula](the-rank-one-kostant-straightening-formula.md)

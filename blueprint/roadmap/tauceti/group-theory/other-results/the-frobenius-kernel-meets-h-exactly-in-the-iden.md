@@ -6,7 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# The Frobenius kernel meets `H` exactly in the identity, the case `g = 1` of `TauCeti.frobeniusKernel_inter_conj_smul_eq_singleton`
+# The Frobenius kernel meets `H` exactly in the identity
+
+**The Frobenius kernel meets `H` exactly in the identity**, the case `g = 1` of
+`TauCeti.frobeniusKernel_inter_conj_smul_eq_singleton`.
 
 ```lean
 TauCeti.frobeniusKernel_inter_eq_singleton.{u_1} {G : Type u_1} [Group G] {H : Subgroup G} :

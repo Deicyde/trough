@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: WeierstrassCurve.Affine.isSingular_iff, WeierstrassCurve.Affine.isSingular_iff_equation_and_not_nonsingular
+lean: WeierstrassCurve.Affine.isSingular_iff
 statement: formalized
 proof: formalized
 ---
@@ -22,16 +22,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`WeierstrassCurve.Affine.isSingular_iff`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/Singular.html#WeierstrassCurve.Affine.isSingular_iff).
-
-## Other forms
-
-**The Jacobian criterion is Mathlib's singularity condition, `Nonsingular` being the conjunction of the equation with the negation of both partials vanishing.** Formalized in Tau Ceti as [`WeierstrassCurve.Affine.isSingular_iff_equation_and_not_nonsingular`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/Singular.html#WeierstrassCurve.Affine.isSingular_iff_equation_and_not_nonsingular).
-
-```lean
-WeierstrassCurve.Affine.isSingular_iff_equation_and_not_nonsingular.{u_1} {R : Type u_1}
-  [CommRing R] {W : WeierstrassCurve.Affine R} {x y : R} :
-  W.IsSingular x y ↔ W.Equation x y ∧ ¬W.Nonsingular x y
-```
 
 ## Sources
 

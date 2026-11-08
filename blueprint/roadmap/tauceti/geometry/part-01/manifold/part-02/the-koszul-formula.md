@@ -35,7 +35,7 @@ Formalized in Tau Ceti as [`CovariantDerivative.IsLeviCivitaConnection.two_inner
 
 ## Other forms
 
-**The Koszul formula for Mathlib's Levi-Civita connection `CovariantDerivative.leviCivitaConnection`, in terms of `TauCeti.Manifold.koszul`.** Formalized in Tau Ceti as [`CovariantDerivative.two_inner_leviCivitaConnection_eq_koszul`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/Basic.html#CovariantDerivative.two_inner_leviCivitaConnection_eq_koszul).
+**The Koszul formula.** Formalized in Tau Ceti as [`CovariantDerivative.two_inner_leviCivitaConnection_eq_koszul`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/Basic.html#CovariantDerivative.two_inner_leviCivitaConnection_eq_koszul).
 
 ```lean
 CovariantDerivative.two_inner_leviCivitaConnection_eq_koszul.{u_1, u_2, u_3} {E : Type u_1}

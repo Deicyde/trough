@@ -5,8 +5,12 @@ lean: TopCat.singularHomologyKunnethUnitSplitting
 statement: formalized
 ---
 
-# The Künneth short exact sequence over a hereditary commutative ring splits, so that `Hₘ₊₁(X × Y; k)` is the direct sum of `⨁_{p + q = m + 1} Hₚ(X; k) ⊗ H_q(Y; k)` and `⨁_{p + q = m} Tor₁(Hₚ(X; k), H_q(Y; k))` (`CategoryTheory.ShortComplex.Splitting.isoBinaryBiproduct`)
+# The Künneth short exact sequence over a hereditary commutative ring splits
 
+**The Künneth short exact sequence over a hereditary commutative ring splits**, so that
+`Hₘ₊₁(X × Y; k)` is the direct sum of `⨁_{p + q = m + 1} Hₚ(X; k) ⊗ H_q(Y; k)` and
+`⨁_{p + q = m} Tor₁(Hₚ(X; k), H_q(Y; k))`
+(`CategoryTheory.ShortComplex.Splitting.isoBinaryBiproduct`).
 The splitting depends on chosen splittings of the cycles of the singular chain complexes, and need
 not be natural in `X` and `Y`.
 
@@ -22,8 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Eilenberg–Zilber theorem](../other-results/the-eilenberg-zilber-theorem.md)
-- [The Künneth map is an isomorphism for complexes with zero differentials](../../algebra/homology/the-kunneth-map-is-an-isomorphism-for-complexes.md)
+- [The Eilenberg–Zilber theorem for singular chains](../singular/the-eilenberg-zilber-theorem-for-singular-chains.md)
 - [The Künneth theorem for split complexes](../../algebra/homology/the-kunneth-theorem-for-split-complexes.md)
 
 ## Lean

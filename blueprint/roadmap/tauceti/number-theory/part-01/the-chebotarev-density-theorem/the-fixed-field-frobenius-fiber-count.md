@@ -40,10 +40,6 @@ NumberField.Chebotarev.fixedField_frobenius_fiber_card.{u_1, u_2} {K : Type u_1}
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [The primes of `K` with Artin class `C` in `L`](the-primes-of-k-with-artin-class-c-in-l.md)
 
-## Proof depends on
-
-- [The Galois correspondence does not move points](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-galois-correspondence-does-not-move-points.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`NumberField.Chebotarev.fixedField_frobenius_fiber_card`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Chebotarev/FixedField/FiberCount.html#NumberField.Chebotarev.fixedField_frobenius_fiber_card).

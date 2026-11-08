@@ -21,11 +21,11 @@ TauCeti.finite_setOf_naiveHeight_le.{u_1} {F : Type u_1} [Field F] [CharZero F] 
 
 ## Depends on
 
-- [TauCeti.mahlerMeasure](../diophantine-approximation-and-transcendence/part-01/tauceti-mahlermeasure.md)
+- [TauCeti.mahlerMeasure](../diophantine-approximation-and-transcendence/tauceti-mahlermeasure.md)
 
 ## Proof depends on
 
-- [Gauss's lemma at a nonarchimedean absolute value](../../../geometry/part-01/real-algebraic-geometry-sign-determination-and-c/gausss-lemma-at-a-nonarchimedean-absolute-value.md)
+- [Gauss's lemma at a nonarchimedean absolute value](../../../ring-theory/part-01/polynomial/gausss-lemma-at-a-nonarchimedean-absolute-value.md)
 - [TauCeti.Polynomial.ncard_biUnion_roots_natDegree_le_abs_intCoeff_le](tauceti-polynomial-ncard-biunion-roots-natdegree.md)
 
 ## Lean

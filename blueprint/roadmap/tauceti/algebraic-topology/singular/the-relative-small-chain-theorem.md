@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TopPair.isIso_homologyMap_restrictι_smallSingularSubcomplex, TopPair.quasiIso_cochainComplexMap_restrictι_smallSingularSubcomplex
+lean: TopPair.isIso_homologyMap_restrictι_smallSingularSubcomplex
 statement: formalized
 proof: formalized
 ---
@@ -28,21 +28,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TopPair.isIso_homologyMap_restrictι_smallSingularSubcomplex`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.html#TopPair.isIso_homologyMap_restrict%CE%B9_smallSingularSubcomplex).
-
-## Other forms
-
-**The relative small-chain theorem for cochains.** Formalized in Tau Ceti as [`TopPair.quasiIso_cochainComplexMap_restrictι_smallSingularSubcomplex`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/Excision.html#TopPair.quasiIso_cochainComplexMap_restrict%CE%B9_smallSingularSubcomplex).
-
-```lean
-TopPair.quasiIso_cochainComplexMap_restrictι_smallSingularSubcomplex.{w, v, u, u_1, u_2}
-  {C : Type u} [CategoryTheory.Category.{v, u} C] [CategoryTheory.Limits.HasCoproducts C]
-  [CategoryTheory.Abelian C] {R : C} {k : Type u_1} [Ring k] [CategoryTheory.Linear k C] {M : C}
-  {ι : Type u_2} (P : TopPair) (U : ι → Set ↑TopPair.fst) (hU : ∀ (i : ι), IsOpen (U i))
-  (hcov : ⋃ i, U i = Set.univ) :
-  QuasiIso
-    (SSetPair.cochainComplexMap
-      ((TopPair.toSSetPair.obj P).restrictι (P.smallSingularSubcomplex U)))
-```
 
 ## Sources
 

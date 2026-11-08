@@ -46,7 +46,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [TauCeti.Wkp](../../../part-01/partial-differential-equations/tauceti-wkp.md)
-- [Young's inequality along a curve](../../gradient-flow/youngs-inequality-along-a-curve.md)
+- [Young's inequality for real inner products](../../inner-product-space/part-03/youngs-inequality-for-real-inner-products.md)
 - [The zero-forcing Caccioppoli inequality for a positive truncation of a weak subsolution](../part-02/the-zero-forcing-caccioppoli-inequality-for-a-po.md)
 
 ## Lean

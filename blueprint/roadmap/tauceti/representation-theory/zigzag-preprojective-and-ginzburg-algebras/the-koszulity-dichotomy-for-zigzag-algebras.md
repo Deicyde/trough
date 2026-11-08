@@ -21,11 +21,11 @@ TauCeti.forall_exists_isLinear_zigzagGradedSimple_iff.{u, w} (k : Type w) [Field
 
 ## Depends on
 
-- [TauCeti.GradedProjectiveResolution.IsLinear](../../algebra/grothendieck-groups-cartan-maps-and-euler-forms/part-01/tauceti-gradedprojectiveresolution-islinear.md)
+- [TauCeti.GradedProjectiveResolution.IsLinear](../../algebra/grothendieck-groups-cartan-maps-and-euler-forms/tauceti-gradedprojectiveresolution-islinear.md)
 
 ## Proof depends on
 
-- [The entrywise graded Cartan formula](the-entrywise-graded-cartan-formula.md)
+- [The entrywise graded Cartan formula](../quiver/the-entrywise-graded-cartan-formula.md)
 - [The Koszul defect formula](../quiver/the-koszul-defect-formula.md)
 
 ## Lean

@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Hoffman–Wielandt inequality](../inner-product-space/part-01/the-hoffman-wielandt-inequality.md)
+- [The Hoffman–Wielandt inequality for Hermitian matrices](the-hoffman-wielandt-inequality-for-hermitian-ma.md)
 
 ## Lean
 

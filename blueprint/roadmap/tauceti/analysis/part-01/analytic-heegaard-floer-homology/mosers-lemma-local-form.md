@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Moser's identity](../calculus/part-01/mosers-identity.md)
+- [Moser's identity](../../part-02/calculus/part-01/mosers-identity.md)
 
 ## Lean
 

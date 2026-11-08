@@ -5,7 +5,10 @@ lean: TauCeti.BinaryQuadraticForm.posDefProperClassToPic
 statement: formalized
 ---
 
-# The Picard class of a proper class of primitive positive definite forms, the class of `aℤ + ((-b + √(-n))/2)ℤ` in the Picard group of the quadratic order of discriminant `-n`
+# The Picard class of a proper class of primitive positive definite forms
+
+**The Picard class of a proper class of primitive positive definite forms**, the class of
+`aℤ + ((-b + √(-n))/2)ℤ` in the Picard group of the quadratic order of discriminant `-n`.
 
 ```lean
 TauCeti.BinaryQuadraticForm.posDefProperClassToPic (n : ℕ) [NeZero n]

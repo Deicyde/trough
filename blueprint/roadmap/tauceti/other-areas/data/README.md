@@ -1,6 +1,6 @@
 # Data
 
-Results named in Tau Ceti's `TauCeti.Data` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.Data` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Birkhoff's contraction theorem](birkhoffs-contraction-theorem.md)
 - [The Chinese remainder theorem for units](the-chinese-remainder-theorem-for-units.md)

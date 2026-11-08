@@ -33,7 +33,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue `a_p(f)` (Atkin–Lehner; Li; Diamond–Shurman, Theorem 5.8.2; Miyake, Theorem 4.6.13)](../../part-01/modular-forms-hecke-theory-newforms-and-l-functi/a-newform-is-an-eigenvector-of-u-p-at-every-prim.md)
+- [A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue `a_p(f)`](../../part-01/modular-forms-hecke-theory-newforms-and-l-functi/a-newform-is-an-eigenvector-of-u-p-at-every-prim.md)
+- [Cayley–Hamilton in size two](../../../linear-algebra/matrix/cayley-hamilton-in-size-two.md)
 - [Classical Sturm bound for finite-index subgroups of `SL(2, ℤ)`](classical-sturm-bound-for-finite-index-subgroups.md)
 - [The Main Lemma, per character (Miyake, Lemma 4.6.8; Diamond–Shurman, Theorem 5.7.1)](../../part-01/modular-forms-hecke-theory-newforms-and-l-functi/the-main-lemma-per-character-miyake-lemma-4-6-8.md)
 - [Manin's lemma](../../part-01/modular-forms-hecke-theory-newforms-and-l-functi/manins-lemma.md)

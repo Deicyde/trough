@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Krull-Schmidt theorem with no ambient object](../../category-theory/geometric-representation-categories-and-coherent/the-krull-schmidt-theorem-with-no-ambient-object.md)
+- [The Krull-Schmidt theorem with no ambient object](../../algebra/category/the-krull-schmidt-theorem-with-no-ambient-object.md)
 
 ## Lean
 

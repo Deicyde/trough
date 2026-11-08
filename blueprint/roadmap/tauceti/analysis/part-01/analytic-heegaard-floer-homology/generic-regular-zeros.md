@@ -72,7 +72,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Morse--Sard theorem](the-morse-sard-theorem.md)
+- [The Sard--Smale theorem](the-sard-smale-theorem.md)
 
 ## Lean
 

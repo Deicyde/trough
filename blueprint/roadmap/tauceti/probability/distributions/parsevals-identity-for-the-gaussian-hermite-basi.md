@@ -24,13 +24,13 @@ TauCeti.tsum_norm_sq_integral_hermite_mul_gaussianReal.{u_1} {𝕜 : Type u_1} [
 
 ## Depends on
 
-- [The weighted-measure basis](../weighted-orthogonal-l2-bases-completeness-hilber/part-01/the-weighted-measure-basis.md)
+- [The weighted-measure basis](../../analysis/part-01/weighted-orthogonal-l2-bases-completeness-hilber/the-weighted-measure-basis.md)
 
 ## Proof depends on
 
-- [The `Fintype`-indexed product Hilbert basis](../weighted-orthogonal-l2-bases-completeness-hilber/part-01/the-fintype-indexed-product-hilbert-basis.md)
-- [Moment determinacy, exponential-moment form (the roadmap's B1 hypothesis)](../weighted-orthogonal-l2-bases-completeness-hilber/part-01/moment-determinacy-exponential-moment-form-the-r.md)
-- [Parseval's identity for the Hermite basis (norm-square form)](../weighted-orthogonal-l2-bases-completeness-hilber/part-01/parsevals-identity-for-the-hermite-basis-norm-sq.md)
+- [The `Fintype`-indexed product Hilbert basis](../../analysis/part-01/weighted-orthogonal-l2-bases-completeness-hilber/the-fintype-indexed-product-hilbert-basis.md)
+- [Moment determinacy, exponential-moment form (the roadmap's B1 hypothesis)](../../analysis/part-01/weighted-orthogonal-l2-bases-completeness-hilber/moment-determinacy-exponential-moment-form-the-r.md)
+- [Parseval's identity for a functional](../../analysis/part-02/inner-product-space/part-02/parsevals-identity-for-a-functional.md)
 
 ## Lean
 

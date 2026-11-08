@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Vertex-capacitated Menger's theorem](../simple-graph/vertex-capacitated-mengers-theorem.md)
+- [Vertex-capacitated Menger's theorem for directed paths](../network/vertex-capacitated-mengers-theorem-for-directed.md)
 
 ## Lean
 

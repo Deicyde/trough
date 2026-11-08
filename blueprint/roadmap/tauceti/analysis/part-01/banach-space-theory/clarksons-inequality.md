@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The pointwise Clarkson inequality](../../part-02/inner-product-space/part-01/the-pointwise-clarkson-inequality.md)
+- [The pointwise Clarkson inequality](../../part-02/inner-product-space/part-02/the-pointwise-clarkson-inequality.md)
 
 ## Lean
 

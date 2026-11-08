@@ -25,9 +25,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hölder's inequality for weak norms](../../analysis/part-02/normed/part-01/holders-inequality-for-weak-norms.md)
+- [Hölder's inequality for unconditional sums in `ℝ≥0∞`](../../analysis/part-02/other-results/holders-inequality-for-unconditional-sums-in-r0.md)
 - [The product estimate in `H^s(A)`, `s > 1/2`](the-product-estimate-in-h-s-a-s-1-2.md)
-- [Young's inequality along a curve](../../analysis/part-02/gradient-flow/youngs-inequality-along-a-curve.md)
+- [Young's inequality](../../analysis/part-02/normed/part-02/youngs-inequality.md)
 
 ## Lean
 

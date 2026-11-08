@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Frobenius reciprocity in multiplicity form](frobenius-reciprocity-in-multiplicity-form.md)
+- [Frobenius reciprocity in multiplicity form](../other-results/frobenius-reciprocity-in-multiplicity-form.md)
 - [TauCeti.fusionCoeff](tauceti-fusioncoeff.md)
 - [TauCeti.SplitK0.simpleBasis](tauceti-splitk0-simplebasis.md)
 

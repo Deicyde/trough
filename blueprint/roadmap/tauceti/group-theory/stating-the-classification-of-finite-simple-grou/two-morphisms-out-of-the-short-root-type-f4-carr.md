@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Chevalley's rank-one identity `xᵢ(u) xⱼ(-u⁻¹) xᵢ(u) = h_c(u) n`, over every value ring and at every unit `u`](../../algebra/lie/chevalleys-rank-one-identity-xi-u-xj-u1-xi-u-h-c.md)
+- [Chevalley's rank-one identity](../../algebra/lie/part-01/chevalleys-rank-one-identity.md)
 
 ## Lean
 

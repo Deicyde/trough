@@ -33,10 +33,10 @@ TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlge
 - [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 - [Henkel's open mapping theorem](../../topology/algebra/part-01/henkels-open-mapping-theorem.md)
 - [Henkel's theorem in quotient form](../../topology/algebra/part-01/henkels-theorem-in-quotient-form.md)
-- [Kedlaya's Hilbert basis theorem for `A^r` (Kedlaya, Theorem 3.2)](../../ring-theory/mv-power-series/kedlayas-hilbert-basis-theorem-for-a-r-kedlaya-t.md)
-- [The open mapping theorem over a Tate ring](the-open-mapping-theorem-over-a-tate-ring.md)
-- [TauCeti.IsAffinoidAlgebra.continuous_algHom](../../ring-theory/rigid-analytic-geometry/tauceti-isaffinoidalgebra-continuous-alghom.md)
-- [Wedhorn's coordinatewise hypothesis gives the uniform bound](../../ring-theory/other-results/part-01/wedhorns-coordinatewise-hypothesis-gives-the-uni.md)
+- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/mv-power-series/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
+- [The open mapping theorem over a Tate ring](../../ring-theory/part-01/huber/the-open-mapping-theorem-over-a-tate-ring.md)
+- [TauCeti.IsAffinoidAlgebra.continuous_algHom](../../ring-theory/part-01/rigid-analytic-geometry/tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [Wedhorn's coordinatewise hypothesis gives the uniform bound](../../ring-theory/part-01/huber/wedhorns-coordinatewise-hypothesis-gives-the-uni.md)
 
 ## Lean
 

@@ -30,11 +30,11 @@ TauCeti.eLpNorm_le_inv_mul_totalVariationOn.{u_1} {E : Type u_1} [NormedAddCommG
 
 ## Proof depends on
 
+- [Brunn–Minkowski inequality](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/brunn-minkowski-inequality.md)
 - [The coarea formula for total variation](the-coarea-formula-for-total-variation.md)
-- [Minkowski's integral inequality](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/minkowskis-integral-inequality.md)
+- [Minkowski's integral inequality](../../../measure-theory/integral/part-01/minkowskis-integral-inequality.md)
 - [The Morse--Sard theorem](../analytic-heegaard-floer-homology/the-morse-sard-theorem.md)
-- [Rademacher's theorem for locally Lipschitz functions](../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
-- [TauCeti.hasPrekopaLeindler_volume](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-01/tauceti-hasprekopaleindler-volume.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../part-02/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 - [TauCeti.perimeter](tauceti-perimeter.md)
 
 ## Lean

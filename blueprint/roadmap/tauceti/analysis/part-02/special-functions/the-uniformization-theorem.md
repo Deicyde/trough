@@ -21,13 +21,13 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [A degree-one map is a biholomorphism](../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/part-01/a-degree-one-map-is-a-biholomorphism.md)
+- [A degree-one map is a biholomorphism](../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/a-degree-one-map-is-a-biholomorphism.md)
 - [Descent of an invariant map to the orbit space](../../../geometry/part-01/complex-manifolds-transport-quotients-bundles-an/descent-of-an-invariant-map-to-the-orbit-space.md)
-- [The identity theorem for Riemann surfaces](../complex/part-01/the-identity-theorem-for-riemann-surfaces.md)
+- [The identity theorem for Riemann surfaces](../complex/part-02/the-identity-theorem-for-riemann-surfaces.md)
 - [Rouché's theorem for a disc, classical form](../../part-01/conformal-mapping-and-the-geometric-theory-of-ho/part-02/rouches-theorem-for-a-disc-classical-form.md)
-- [Shimizu's inequality at two cusps](../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/part-02/shimizus-inequality-at-two-cusps.md)
-- [Subgroup.CompactifiedQuotient](../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/part-01/subgroup-compactifiedquotient.md)
-- [TauCeti.ModularGroup.jBiholomorph](../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/part-01/tauceti-modulargroup-jbiholomorph.md)
+- [Shimizu's inequality at two cusps](../complex/part-03/shimizus-inequality-at-two-cusps.md)
+- [Subgroup.CompactifiedQuotient](../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/subgroup-compactifiedquotient.md)
+- [TauCeti.ModularGroup.jBiholomorph](../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/tauceti-modulargroup-jbiholomorph.md)
 
 ## Lean
 

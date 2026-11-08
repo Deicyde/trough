@@ -1,6 +1,6 @@
 # ODE
 
-Results named in Tau Ceti's `TauCeti.Analysis.ODE` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.Analysis.ODE` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Carathéodory's existence theorem for linear equations](caratheodorys-existence-theorem-for-linear-equat.md)
 - [The Frobenius theorem for total differential equations](the-frobenius-theorem-for-total-differential-equ.md)

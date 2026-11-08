@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Sylvester's rank inequality](../../number-theory/part-01/heights-units-and-s-units-of-number-fields/part-02/sylvesters-rank-inequality.md)
+- [Sylvester's rank inequality](../../linear-algebra/matrix/sylvesters-rank-inequality.md)
 
 ## Lean
 

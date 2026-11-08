@@ -44,6 +44,7 @@ TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous {f : ℂ → ℂ} {
 ## Proof depends on
 
 - [The canonical Laurent decomposition](../../part-02/contour/the-canonical-laurent-decomposition.md)
+- [Cauchy–Goursat for a pole-free meromorphic function](../../part-02/contour/cauchy-goursat-for-a-pole-free-meromorphic-funct.md)
 - [The homology Cauchy theorem for contour cycles](../banach-algebras/the-homology-cauchy-theorem-for-contour-cycles.md)
 - [The residue theorem for a fixed polar-part decomposition](the-residue-theorem-for-a-fixed-polar-part-decom.md)
 

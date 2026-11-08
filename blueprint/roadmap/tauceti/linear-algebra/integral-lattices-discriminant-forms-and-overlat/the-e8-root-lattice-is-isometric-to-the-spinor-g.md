@@ -23,7 +23,7 @@ TauCeti.IntegralLattice.typeE₈IsometryD8Plus :
 
 ## Proof depends on
 
-- [TauCeti.FiniteQuadraticModule](../integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
+- [TauCeti.FiniteQuadraticModule](../../number-theory/part-01/integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
 - [TauCeti.IntegralLattice.discriminantQuadraticModule](tauceti-integrallattice-discriminantquadraticmod.md)
 
 ## Lean

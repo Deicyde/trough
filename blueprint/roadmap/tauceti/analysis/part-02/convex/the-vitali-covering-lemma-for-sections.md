@@ -55,13 +55,14 @@ TauCeti.exists_countable_pairwiseDisjoint_convexSection.{u_1, u_2} {E : Type u_1
 
 ## Depends on
 
-- [TauCeti.convexSection](../../../measure-theory/optimal-transport-and-wasserstein-geometry/part-01/tauceti-convexsection.md)
+- [TauCeti.convexSection](../../../measure-theory/optimal-transport-and-wasserstein-geometry/tauceti-convexsection.md)
 
 ## Proof depends on
 
 - [The Aleksandrov maximum principle](the-aleksandrov-maximum-principle.md)
-- [The Fenchel–Young inequality, in the form that holds with no hypothesis](the-fenchel-young-inequality-in-the-form-that-ho.md)
-- [Rademacher's theorem for locally Lipschitz functions](../../part-01/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [The Fenchel–Young inequality](the-fenchel-young-inequality.md)
+- [Rademacher's theorem for extended-real convex functions](rademachers-theorem-for-extended-real-convex-fun.md)
+- [Rademacher's theorem for locally Lipschitz functions](../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 

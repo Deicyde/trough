@@ -26,12 +26,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [An analytic Belyi pair is determined up to isomorphism by its permutation triple](an-analytic-belyi-pair-is-determined-up-to-isomo.md)
 - [Analytic Belyi pairs are classified by finite covers of the thrice-punctured sphere](analytic-belyi-pairs-are-classified-by-finite-co.md)
 - [The analytic implicit root theorem](../../analysis/part-01/analytic/the-analytic-implicit-root-theorem.md)
 - [The analytic inverse function theorem](../../analysis/part-01/analytic/the-analytic-inverse-function-theorem.md)
 - [Connected covers of `ℂ ∖ {0, 1}` of degree `n` up to isomorphism are classified by the isomorphism classes of connected triples of degree `n`](connected-covers-of-c-0-1-of-degree-n-up-to-isom.md)
-- [The identity theorem for Riemann surfaces](../../analysis/part-02/complex/part-01/the-identity-theorem-for-riemann-surfaces.md)
+- [The identity theorem for Riemann surfaces](../../analysis/part-02/complex/part-02/the-identity-theorem-for-riemann-surfaces.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 - [The open mapping theorem](../../analysis/part-02/complex/part-02/the-open-mapping-theorem.md)
 - [Osgood's lemma](../../geometry/part-01/complex-manifolds-dolbeault-theory-and-kahler-ge/osgoods-lemma.md)

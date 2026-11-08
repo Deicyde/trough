@@ -23,6 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
 - [The finite-field generation theorem](the-finite-field-generation-theorem.md)
 
 ## Lean

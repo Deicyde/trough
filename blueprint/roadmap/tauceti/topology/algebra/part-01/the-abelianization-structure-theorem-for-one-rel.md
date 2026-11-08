@@ -28,7 +28,7 @@ TauCeti.presentedProP.oneRelatorAbelianizationEquiv.{u} {p : ℕ} [Fact (Nat.Pri
 
 ## Depends on
 
-- [The Demushkin predicate (Labute, p. 106), for a prime `p` and a topological group `G`](../../profinite-and-pro-p-groups/part-01/the-demushkin-predicate-labute-p-106-for-a-prime.md)
+- [The Demushkin predicate](../../profinite-and-pro-p-groups/the-demushkin-predicate.md)
 
 ## Proof depends on
 

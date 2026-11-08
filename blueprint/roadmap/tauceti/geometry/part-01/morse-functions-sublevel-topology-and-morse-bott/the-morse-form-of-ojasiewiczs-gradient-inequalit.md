@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Morse form of Łojasiewicz's gradient inequality](../../../analysis/part-01/calculus/part-01/the-morse-form-of-ojasiewiczs-gradient-inequalit.md)
+- [The Morse form of Łojasiewicz's gradient inequality](../../../analysis/part-02/calculus/part-01/the-morse-form-of-ojasiewiczs-gradient-inequalit.md)
 
 ## Lean
 

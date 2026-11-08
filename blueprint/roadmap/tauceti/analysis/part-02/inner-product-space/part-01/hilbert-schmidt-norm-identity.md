@@ -24,7 +24,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Parseval's identity for the Hermite basis (norm-square form)](../../../../probability/weighted-orthogonal-l2-bases-completeness-hilber/part-01/parsevals-identity-for-the-hermite-basis-norm-sq.md)
+- [Cauchy–Schwarz for the column series](cauchy-schwarz-for-the-column-series.md)
+- [Parseval's identity for a functional](../part-02/parsevals-identity-for-a-functional.md)
 
 ## Lean
 

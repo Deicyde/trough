@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Borel fixed-point theorem, orbit form](../algebraic-group/borel-fixed-point-theorem-orbit-form.md)
-- [The Jacobian criterion for étaleness](../../ring-theory/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
+- [The Jacobian criterion for étaleness](../../ring-theory/part-02/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
 
 ## Lean
 

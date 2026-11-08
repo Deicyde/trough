@@ -1,6 +1,6 @@
 # Baire
 
-Results named in Tau Ceti's `TauCeti.Topology.Baire` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.Topology.Baire` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Kuratowski–Ulam theorem](the-kuratowski-ulam-theorem.md)
 - [Mycielski's theorem](mycielskis-theorem.md)

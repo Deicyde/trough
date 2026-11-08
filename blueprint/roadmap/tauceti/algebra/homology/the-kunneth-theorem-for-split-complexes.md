@@ -31,10 +31,6 @@ HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi.{u, u_3} {
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The Künneth map is an isomorphism for complexes with zero differentials](the-kunneth-map-is-an-isomorphism-for-complexes.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/Monoidal/Homology/Kunneth/Basic.html#HomologicalComplex.isIso_homologyKunneth_of_isSplitMono_of_isSplitEpi).

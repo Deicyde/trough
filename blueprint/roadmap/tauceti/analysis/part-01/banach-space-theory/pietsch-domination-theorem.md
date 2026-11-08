@@ -34,6 +34,10 @@ ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure.{u_1,
 
 Its statement uses no other declaration mapped here.
 
+## Proof depends on
+
+- [Riesz–Markov–Kakutani on a compact Hausdorff space](../../../measure-theory/integral/part-01/riesz-markov-kakutani-on-a-compact-hausdorff-spa.md)
+
 ## Lean
 
 Formalized in Tau Ceti as [`ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/AbsolutelySumming/Pietsch.html#ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure).

@@ -28,9 +28,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Linear Darboux theorem](../../../geometry/part-01/symplectic/linear-darboux-theorem.md)
+- [Linear Darboux theorem](../../../geometry/part-02/symplectic/linear-darboux-theorem.md)
 - [Moser's lemma, local form](mosers-lemma-local-form.md)
-- [The Poincaré lemma](../calculus/part-01/the-poincare-lemma.md)
+- [The Poincaré lemma](../../part-02/calculus/part-01/the-poincare-lemma.md)
 
 ## Lean
 

@@ -30,7 +30,7 @@ TauCeti.ringKrullDim_quotient_centralizerHopfIdeal_add_finrank_range_ad.{u} {k :
 ## Proof depends on
 
 - [Cartier's theorem](../algebraic-group/cartiers-theorem.md)
-- [The Jacobian criterion for étaleness](../../ring-theory/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
+- [The Jacobian criterion for étaleness](../../ring-theory/part-02/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
 
 ## Lean
 

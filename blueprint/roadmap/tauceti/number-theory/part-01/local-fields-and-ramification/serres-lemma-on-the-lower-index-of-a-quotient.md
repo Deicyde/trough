@@ -37,7 +37,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Serre's quotient formula for the lower index](serres-quotient-formula-for-the-lower-index.md)
+- [Serre's quotient formula for the lower index](../../part-02/local-field/serres-quotient-formula-for-the-lower-index.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

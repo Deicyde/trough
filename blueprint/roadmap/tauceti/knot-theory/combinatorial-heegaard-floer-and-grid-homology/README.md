@@ -1,6 +1,6 @@
 # Combinatorial Heegaard Floer and grid homology
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/CombinatorialHeegaardFloer/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/CombinatorialHeegaardFloer/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The commutation map is a chain map](the-commutation-map-is-a-chain-map.md)
 - [TauCeti.GridDiagram.unblockedDifferential_commutationHomotopy_add_eq](tauceti-griddiagram-unblockeddifferential-commut.md)
@@ -15,5 +15,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The commutation map on `GH⁻` preserves the class of the `X`-marking state](the-commutation-map-on-gh-preserves-the-class-of.md)
 - [TauCeti.HeegaardRegionSystem.hatDifferential](tauceti-heegaardregionsystem-hatdifferential.md)
 - [TauCeti.HeegaardRegionSystem.IsNice](tauceti-heegaardregionsystem-isnice.md)
-- [Li's theorem refutes Waldhausen's conjecture](lis-theorem-refutes-waldhausens-conjecture.md)
+- [Euler--Poincaré in one Alexander degree](euler-poincare-in-one-alexander-degree.md)
 - [The torsion part of the structure theorem](the-torsion-part-of-the-structure-theorem.md)

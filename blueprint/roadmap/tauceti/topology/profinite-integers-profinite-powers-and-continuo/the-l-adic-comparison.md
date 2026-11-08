@@ -20,7 +20,7 @@ TauCeti.zpowHat_eq_padicPow_component.{u, v} {G : Type v} [Group G] [Topological
 
 ## Depends on
 
-- [The profinite power `x ^ᶻ a` of an element `x` of a profinite group by a profinite integer `a`](the-profinite-power-x-z-a-of-an-element-x-of-a-p.md)
+- [The profinite power](the-profinite-power.md)
 
 ## Lean
 

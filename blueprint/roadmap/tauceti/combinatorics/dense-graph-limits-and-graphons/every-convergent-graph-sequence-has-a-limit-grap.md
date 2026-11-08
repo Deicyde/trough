@@ -6,9 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# Every convergent graph sequence has a limit graphon (Lovász--Szegedy), on every atomless standard Borel carrier `(Ω, μ)`, such as the unit interval
+# Every convergent graph sequence has a limit graphon
 
-A sequence of finite graphs on nonempty
+**Every convergent graph sequence has a limit graphon** (Lovász--Szegedy), on every atomless
+standard Borel carrier `(Ω, μ)`, such as the unit interval. A sequence of finite graphs on nonempty
 vertex sets converges in the cut distance of step graphons to some graphon on `(Ω, μ)` if and only
 if every finite homomorphism density `t(F, Gₙ)` is a Cauchy, hence convergent, sequence.
 
@@ -33,7 +34,7 @@ TauCeti.DenseGraphLimits.exists_graphon_tendsto_cutDist_finiteGraphGraphon_iff_f
 
 ## Proof depends on
 
-- [Cut-distance convergence is convergence of all homomorphism densities, for graphons on arbitrary, possibly different, probability carriers, indexed by any type and taken along any filter](cut-distance-convergence-is-convergence-of-all-h.md)
+- [Cut-distance convergence is convergence of all homomorphism densities](cut-distance-convergence-is-convergence-of-all-h.md)
 - [Frieze--Kannan weak regularity](frieze-kannan-weak-regularity.md)
 - [TauCeti.DenseGraphLimits.cutDist_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
 - [TauCeti.DenseGraphLimits.Graphon.unitIntervalRepr](tauceti-densegraphlimits-graphon-unitintervalrep.md)

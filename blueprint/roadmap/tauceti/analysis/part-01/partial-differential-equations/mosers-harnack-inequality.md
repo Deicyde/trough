@@ -46,7 +46,7 @@ Its statement uses no other declaration mapped here.
 
 - [The `L²` Leibniz estimate](../../part-02/sobolev/part-01/the-l2-leibniz-estimate.md)
 - [Moser's weak Harnack inequality](mosers-weak-harnack-inequality.md)
-- [The Sobolev inequality for functions of bounded variation](../geometric-measure-theory-rectifiability-bv-and-f/the-sobolev-inequality-for-functions-of-bounded.md)
+- [The Sobolev inequality on `W^{1,p}_0` of a ball](../../part-02/sobolev/part-02/the-sobolev-inequality-on-w-1-p-0-of-a-ball.md)
 - [TauCeti.Wkp](tauceti-wkp.md)
 - [The zero-forcing Caccioppoli inequality for a positive truncation of a weak subsolution](../../part-02/pde/part-02/the-zero-forcing-caccioppoli-inequality-for-a-po.md)
 

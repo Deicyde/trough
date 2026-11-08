@@ -29,10 +29,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
-- [The local invariant `inv_K : Br K ≃+ ℚ/ℤ` of a nonarchimedean local field `K`, normalized by arithmetic Frobenius](../../part-01/class-field-theory/the-local-invariant-inv-k-br-k-q-z-of-a-nonarchi.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
-- [Tate's duality map `α₀` on a module with trivial action](../../../representation-theory/homological/tates-duality-map-0-on-a-module-with-trivial-act.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
+- [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [Tate's duality on an open subgroup acting trivially on `μₙ`](tates-duality-on-an-open-subgroup-acting-trivial.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 

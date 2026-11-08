@@ -23,6 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Lusin–Souslin for vertical sections](lusin-souslin-for-vertical-sections.md)
 - [Souslin's theorem for graphs](souslins-theorem-for-graphs.md)
 
 ## Lean

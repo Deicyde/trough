@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Analytic Heegaard Floer homology to Calculus
+# Analytic Heegaard Floer homology to Bounded Variation
 
 - [Analytic Heegaard Floer homology](analytic-heegaard-floer-homology/README.md)
 - [Banach algebras](banach-algebras/README.md)
@@ -20,7 +20,7 @@ navigation: transparent
 - [Operator-algebra dynamics, crossed products, and equilibrium](operator-algebra-dynamics-crossed-products-and-e/README.md)
 - [Partial differential equations](partial-differential-equations/README.md)
 - [Real-analytic geometry and semianalytic triangulation](real-analytic-geometry-and-semianalytic-triangul/README.md)
-- [The Yamabe problem and conformal scalar curvature](the-yamabe-problem-and-conformal-scalar-curvatur/README.md)
+- [Weighted orthogonal L² bases — completeness, Hilbert-basis structure, and product bases of orthogonal systems](weighted-orthogonal-l2-bases-completeness-hilber/README.md)
 - [Analytic](analytic/README.md)
 - [Bochner](bochner/README.md)
-- [Calculus](calculus/README.md)
+- [Bounded Variation](bounded-variation/README.md)

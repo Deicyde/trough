@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The parabolic Hölder estimate of the Cauchy heat potential](../part-01/the-parabolic-holder-estimate-of-the-cauchy-heat.md)
+- [The parabolic Hölder estimate of the Cauchy heat potential](the-parabolic-holder-estimate-of-the-cauchy-heat.md)
 
 ## Lean
 

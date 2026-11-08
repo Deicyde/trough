@@ -32,7 +32,7 @@ TauCeti.Contour.homologyCauchyTheorem {f : ℂ → ℂ} {Ω : Set ℂ} (hΩ : Is
 
 ## Proof depends on
 
-- [The pointwise homology Cauchy theorem `∮_γ f = 0`](the-pointwise-homology-cauchy-theorem-f-0.md)
+- [The pointwise homology Cauchy theorem `∮_γ f = 0`](../../part-02/contour/the-pointwise-homology-cauchy-theorem-f-0.md)
 
 ## Lean
 

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: IntermediateField.finiteDimensional_fixedField, IntermediateField.isGalois_fixedField, TauCeti.galEquivOfInjective, IntermediateField.finrank_fixedField_eq_natCard
+lean: IntermediateField.finiteDimensional_fixedField, IntermediateField.isGalois_fixedField, IntermediateField.finrank_fixedField_eq_natCard
 statement: formalized
 proof: formalized
 ---
@@ -34,14 +34,6 @@ Formalized in Tau Ceti as [`IntermediateField.finiteDimensional_fixedField`](htt
 ```lean
 IntermediateField.isGalois_fixedField.{u_1, u_2} {K : Type u_1} {M : Type u_2} [Field K] [Field M]
   [Algebra K M] (H : Subgroup Gal(M/K)) [Finite ↥H] : IsGalois (↥(IntermediateField.fixedField H)) M
-```
-
-**Artin's theorem for a finite group of automorphisms.** Formalized in Tau Ceti as [`TauCeti.galEquivOfInjective`](https://taucetiproject.org/docs/TauCeti/FieldTheory/GaloisCohomology/Hilbert90.html#TauCeti.galEquivOfInjective).
-
-```lean
-TauCeti.galEquivOfInjective {K L : Type} [Field K] [Field L] [Algebra K L] {H : Type} [Group H]
-  [Finite H] {f : H →* Gal(L/K)} (hf : Function.Injective ⇑f) :
-  H ≃* Gal(L/↥(IntermediateField.fixedField f.range))
 ```
 
 **Artin's theorem, degree form.** Formalized in Tau Ceti as [`IntermediateField.finrank_fixedField_eq_natCard`](https://taucetiproject.org/docs/TauCeti/FieldTheory/Galois/FixedField.html#IntermediateField.finrank_fixedField_eq_natCard).

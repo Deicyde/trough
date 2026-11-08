@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Vieta's formulas on the symmetric power](../../geometry/part-01/real-algebraic-geometry-sign-determination-and-c/vietas-formulas-on-the-symmetric-power.md)
+- [Vieta's formulas on the symmetric power](../../ring-theory/part-01/polynomial/vietas-formulas-on-the-symmetric-power.md)
 
 ## Lean
 

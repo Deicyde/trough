@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Christoffel formula of the first kind](../manifold/part-01/the-christoffel-formula-of-the-first-kind.md)
-- [The inverse function theorem for manifolds](../manifold/part-01/the-inverse-function-theorem-for-manifolds.md)
+- [The inverse function theorem for manifolds](../manifold/part-02/the-inverse-function-theorem-for-manifolds.md)
 - [The Koszul formula](../manifold/part-02/the-koszul-formula.md)
 - [TauCeti.Manifold.riemannianExp](../geodesics-the-exponential-map-and-the-hopf-rinow/tauceti-manifold-riemannianexp.md)
 

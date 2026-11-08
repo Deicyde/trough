@@ -19,7 +19,7 @@ TauCeti.BinaryGolay.isUnimodular_ofIsotropicSubgroup_codeInZeroLatticeDiscrimina
 ## Depends on
 
 - [TauCeti.ConstructionA.lattice](tauceti-constructiona-lattice.md)
-- [TauCeti.FiniteQuadraticModule](../integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
+- [TauCeti.FiniteQuadraticModule](../../number-theory/part-01/integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
 - [TauCeti.IntegralLattice](../integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
 - [TauCeti.IntegralLattice.discriminantQuadraticModule](../integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice-discriminantquadraticmod.md)
 

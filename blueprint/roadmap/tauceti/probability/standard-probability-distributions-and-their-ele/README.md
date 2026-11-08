@@ -1,6 +1,6 @@
 # Standard probability distributions and their elementary theory
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/StandardDistributions/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/StandardDistributions/README.md) names as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Bartlett decomposition of the standard Wishart law](the-bartlett-decomposition-of-the-standard-wisha.md)
 - [The diagonal entries of an inverse-Wishart matrix are inverse gamma](the-diagonal-entries-of-an-inverse-wishart-matri.md)
@@ -11,4 +11,3 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The multivariate Gamma integral](the-multivariate-gamma-integral.md)
 - [TauCeti.inverseRegularizedGamma](tauceti-inverseregularizedgamma.md)
 - [TauCeti.Probability.vonMisesFisherNaturalMeasure](tauceti-probability-vonmisesfishernaturalmeasure.md)
-- [Helly–Bray theorem](helly-bray-theorem.md)

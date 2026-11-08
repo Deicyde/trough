@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The orbit count ([Serre 1978… to Serre's first mass formula
+# The orbit count ([Serre 1978… to Serre's second mass formula
 
 - [The orbit count (\[Serre 1978, Remarque 3°\])](the-orbit-count-serre-1978-remarque-3.md)
 - [TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueField_pow_wildExponent_eq_one_iff](tauceti-isrepresentativeset-tsum-one-div-natcard.md)
@@ -21,6 +21,6 @@ navigation: transparent
 - [IntermediateField.rootCount](intermediatefield-rootcount.md)
 - [The root counts over `σ_K(n)` sum to `n`](the-root-counts-over-k-n-sum-to-n.md)
 - [Polynomial.card_roots_eq_sum_ite_of_addVal_lt](polynomial-card-roots-eq-sum-ite-of-addval-lt.md)
-- [Minkowski's convex body theorem for the integer lattice](minkowskis-convex-body-theorem-for-the-integer-l.md)
 - [Serre's finiteness dichotomy](serres-finiteness-dichotomy.md)
 - [Serre's first mass formula](serres-first-mass-formula.md)
+- [Serre's second mass formula](serres-second-mass-formula.md)

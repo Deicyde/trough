@@ -76,7 +76,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hölder's bound on an average](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-bound-on-an-average.md)
+- [Hölder's bound on an average](../../../../measure-theory/integral/part-01/holders-bound-on-an-average.md)
 
 ## Informally uses
 

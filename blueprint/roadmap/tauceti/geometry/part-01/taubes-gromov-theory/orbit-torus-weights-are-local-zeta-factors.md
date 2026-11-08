@@ -29,6 +29,10 @@ TauCeti.X_mul_derivative_torusWeightSeries_of_det_eq_one.{u_1} {R : Type u_1} [C
 
 - [TauCeti.torusWeightSeries](tauceti-torusweightseries.md)
 
+## Proof depends on
+
+- [Cayley–Hamilton in size two](../../../linear-algebra/matrix/cayley-hamilton-in-size-two.md)
+
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.X_mul_derivative_torusWeightSeries_of_det_eq_one`](https://taucetiproject.org/docs/TauCeti/Geometry/Symplectic/JHolomorphic/OrbitTorus/Weight.html#TauCeti.X_mul_derivative_torusWeightSeries_of_det_eq_one).

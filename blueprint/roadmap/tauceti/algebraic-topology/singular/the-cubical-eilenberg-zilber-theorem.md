@@ -22,7 +22,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Eilenberg–Zilber theorem](../other-results/the-eilenberg-zilber-theorem.md)
+- [The Eilenberg–Zilber theorem for singular chains](the-eilenberg-zilber-theorem-for-singular-chains.md)
 
 ## Lean
 

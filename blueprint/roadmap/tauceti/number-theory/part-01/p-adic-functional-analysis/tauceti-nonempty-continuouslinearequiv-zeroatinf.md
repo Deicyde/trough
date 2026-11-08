@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Riesz's lemma, translated form](../../../analysis/part-01/one-parameter-semigroups-completely-monotone-and/part-02/rieszs-lemma-translated-form.md)
+- [Riesz's lemma, translated form](../../../analysis/part-02/normed/part-02/rieszs-lemma-translated-form.md)
 
 ## Lean
 

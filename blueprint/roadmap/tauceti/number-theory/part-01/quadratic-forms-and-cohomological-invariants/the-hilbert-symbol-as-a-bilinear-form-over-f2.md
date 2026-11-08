@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The splitting criterion for quaternion algebras (Lam III.2.7 and III.4.2, Serre III.1, Gille-Szamuely 1.1.9)](the-splitting-criterion-for-quaternion-algebras.md)
+- [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

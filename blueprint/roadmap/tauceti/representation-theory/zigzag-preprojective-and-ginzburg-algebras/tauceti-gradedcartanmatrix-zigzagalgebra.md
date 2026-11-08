@@ -23,7 +23,7 @@ TauCeti.gradedCartanMatrix_zigzagAlgebra.{u, w} (k : Type w) [Field k] {V : Type
 
 ## Depends on
 
-- [The graded Cartan matrix in a projective basis `bP` and a module basis `bM`](../../algebra/grothendieck-groups-cartan-maps-and-euler-forms/part-01/the-graded-cartan-matrix-in-a-projective-basis-b.md)
+- [The graded Cartan matrix in a projective basis `bP` and a module basis `bM`](../../algebra/grothendieck-groups-cartan-maps-and-euler-forms/the-graded-cartan-matrix-in-a-projective-basis-b.md)
 
 ## Proof depends on
 

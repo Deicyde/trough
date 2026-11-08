@@ -25,6 +25,10 @@ ContinuousLinearMap.mul_norm_le_norm_sylvester_apply_of_re_inner_le_of_le_re_inn
 
 Its statement uses no other declaration mapped here.
 
+## Proof depends on
+
+- [Cauchy–Schwarz for the column series](../part-01/cauchy-schwarz-for-the-column-series.md)
+
 ## Lean
 
 Formalized in Tau Ceti as [`ContinuousLinearMap.mul_norm_le_norm_sylvester_apply_of_re_inner_le_of_le_re_inner`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Sylvester.html#ContinuousLinearMap.mul_norm_le_norm_sylvester_apply_of_re_inner_le_of_le_re_inner).

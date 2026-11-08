@@ -5,7 +5,11 @@ lean: TauCeti.IntegralLattice.checkerboardDiscriminantQuadraticIsometry
 statement: formalized
 ---
 
-# The standard model is isometric to the discriminant quadratic module of an even-rank checkerboard lattice, by the identification carrying `(1, 0)` to the vector class and `(0, 1)` to the spinor class
+# The standard model is isometric to the discriminant quadratic module of an even-rank checkerboard lattice
+
+**The standard model is isometric to the discriminant quadratic module of an even-rank
+checkerboard lattice**, by the identification carrying `(1, 0)` to the vector class and `(0, 1)`
+to the spinor class.
 
 This is the `Dₙ` row of the ADE table for even `n`: not only is the discriminant group `(ℤ/2)²`,
 its quadratic form is the displayed one.
@@ -18,7 +22,7 @@ TauCeti.IntegralLattice.checkerboardDiscriminantQuadraticIsometry (n : ℕ) [NeZ
 
 ## Depends on
 
-- [TauCeti.FiniteQuadraticModule](../integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
+- [TauCeti.FiniteQuadraticModule](../../number-theory/part-01/integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
 - [TauCeti.IntegralLattice](tauceti-integrallattice.md)
 - [TauCeti.IntegralLattice.discriminantQuadraticModule](tauceti-integrallattice-discriminantquadraticmod.md)
 

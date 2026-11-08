@@ -18,7 +18,7 @@ TauCeti.IntegralLattice.discriminantQuadraticModule.{u} {V : Type u} [AddCommGro
 
 ## Depends on
 
-- [TauCeti.FiniteQuadraticModule](../integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
+- [TauCeti.FiniteQuadraticModule](../../number-theory/part-01/integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
 - [TauCeti.IntegralLattice](tauceti-integrallattice.md)
 
 ## Lean

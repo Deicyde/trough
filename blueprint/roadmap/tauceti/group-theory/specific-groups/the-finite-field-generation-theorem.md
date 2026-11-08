@@ -23,6 +23,10 @@ TauCeti.SuzukiLieIndex.finiteFixedSubgroup_le_suzukiGroup (m : ℕ)
 
 Its statement uses no other declaration mapped here.
 
+## Proof depends on
+
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
+
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.SuzukiLieIndex.finiteFixedSubgroup_le_suzukiGroup`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/CFSG/Suzuki/Generation.html#TauCeti.SuzukiLieIndex.finiteFixedSubgroup_le_suzukiGroup).

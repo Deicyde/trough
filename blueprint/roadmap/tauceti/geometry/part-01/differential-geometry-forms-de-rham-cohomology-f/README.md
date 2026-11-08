@@ -1,8 +1,8 @@
 # Differential geometry — forms, de Rham cohomology, flows, and degree
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/DifferentialGeometry/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/DifferentialGeometry/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-## [TauCeti.integralTopForm_mextDeri… to The fundamental theorem of…](part-01/README.md)
+## [TauCeti.integralTopForm_mextDeri… to Stokes' formula for a homotopy…](part-01/README.md)
 
 - [TauCeti.integralTopForm_mextDeriv](part-01/tauceti-integraltopform-mextderiv.md)
 - [TauCeti.Green.green_ac_winding](part-01/tauceti-green-green-ac-winding.md)
@@ -22,8 +22,8 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The fundamental theorem of calculus for line integrals, for a `C¹` form `ψ` of degree zero](part-01/the-fundamental-theorem-of-calculus-for-line-int.md)
 - [TauCeti.integralTopForm_mpullback_Icc_eq_pathIntegral](part-01/tauceti-integraltopform-mpullback-icc-eq-pathint.md)
 - [The compactly supported Poincaré lemma on the line](part-01/the-compactly-supported-poincare-lemma-on-the-li.md)
-- [Flux-divergence form of Green's theorem for a simple closed absolutely continuous curve](part-01/flux-divergence-form-of-greens-theorem-for-a-sim.md)
 - [The fundamental theorem of calculus for path classes](part-01/the-fundamental-theorem-of-calculus-for-path-cla.md)
+- [Stokes' formula for a homotopy of maps of a rectangle](part-01/stokes-formula-for-a-homotopy-of-maps-of-a-recta.md)
 
 ## [Part 2 of 2](part-02/README.md)
 

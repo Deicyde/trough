@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Jacobi identity, with the three terms transported to the degree `i + j + k + 2`](the-jacobi-identity-with-the-three-terms-transpo.md)
+- [The Jacobi identity](the-jacobi-identity.md)
 
 ## Lean
 

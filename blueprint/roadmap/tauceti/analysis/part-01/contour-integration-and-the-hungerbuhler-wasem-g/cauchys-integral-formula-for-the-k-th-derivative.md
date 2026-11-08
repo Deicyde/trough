@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_nullHomologous, DifferentiableOn.torusIntegral_prod_sub_inv_smul, ContinuousOn.torusIntegral_prod_sub_inv_smul, TauCeti.Contour.Cycle.cauchyIntegralFormula_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_deriv_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_deriv_smul_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_smul_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_iteratedDeriv_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_iteratedDeriv_smul_nullHomologous, TauCeti.Contour.cauchyIntegralFormula_deriv_nullHomologous, TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_dixonFunction_eq_zero, TauCeti.Contour.cauchyIntegralFormula_ball, TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_ball, TauCeti.Contour.cauchyIntegralFormula_starConvex, TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_starConvex, TauCeti.Contour.cauchyIntegralFormula_nullHomologous
+lean: TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_deriv_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_deriv_smul_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_smul_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_iteratedDeriv_nullHomologous, TauCeti.Contour.Cycle.cauchyIntegralFormula_iteratedDeriv_smul_nullHomologous, TauCeti.Contour.cauchyIntegralFormula_deriv_nullHomologous, TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_dixonFunction_eq_zero, TauCeti.Contour.cauchyIntegralFormula_ball, TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_ball, TauCeti.Contour.cauchyIntegralFormula_starConvex, TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_starConvex, TauCeti.Contour.cauchyIntegralFormula_nullHomologous
 statement: formalized
 proof: formalized
 ---
@@ -48,31 +48,6 @@ TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_nullHomologous {f : ℂ → 
 Formalized in Tau Ceti as [`TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_nullHomologous`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Cauchy/HomologyFormula.html#TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_nullHomologous).
 
 ## Other forms
-
-**The Cauchy integral formula on a polydisc.** Formalized in Tau Ceti as [`DifferentiableOn.torusIntegral_prod_sub_inv_smul`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/CauchyIntegralPolydisc.html#DifferentiableOn.torusIntegral_prod_sub_inv_smul).
-
-```lean
-DifferentiableOn.torusIntegral_prod_sub_inv_smul.{u_1} {E : Type u_1} [NormedAddCommGroup E]
-  [NormedSpace ℂ E] {n : ℕ} [CompleteSpace E] {f : (Fin n → ℂ) → E} {c w : Fin n → ℂ}
-  {R : Fin n → ℝ} (hd : DifferentiableOn ℂ f (Set.univ.pi fun i => Metric.closedBall (c i) (R i)))
-  (hw : w ∈ Set.univ.pi fun i => Metric.ball (c i) (R i)) :
-  (∯ (z : Fin n → ℂ) in T(c, R), (∏ i, (z i - w i))⁻¹ • f z) = (2 * ↑Real.pi * Complex.I) ^ n • f w
-```
-
-**The Cauchy integral formula on a polydisc, for separately holomorphic functions.** Formalized in Tau Ceti as [`ContinuousOn.torusIntegral_prod_sub_inv_smul`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/CauchyIntegralPolydisc.html#ContinuousOn.torusIntegral_prod_sub_inv_smul).
-
-```lean
-ContinuousOn.torusIntegral_prod_sub_inv_smul.{u_1} {E : Type u_1} [NormedAddCommGroup E]
-  [NormedSpace ℂ E] {n : ℕ} [CompleteSpace E] {f : (Fin n → ℂ) → E} {c w : Fin n → ℂ}
-  {R : Fin n → ℝ} (hc : ContinuousOn f (Set.univ.pi fun i => Metric.closedBall (c i) (R i)))
-  (hd :
-    ∀ z ∈ Set.univ.pi fun i => Metric.closedBall (c i) (R i),
-      ∀ (i : Fin n),
-        z i ∈ Metric.ball (c i) (R i) →
-          DifferentiableAt ℂ (fun x => f (Function.update z i x)) (z i))
-  (hw : w ∈ Set.univ.pi fun i => Metric.ball (c i) (R i)) :
-  (∯ (z : Fin n → ℂ) in T(c, R), (∏ i, (z i - w i))⁻¹ • f z) = (2 * ↑Real.pi * Complex.I) ^ n • f w
-```
 
 **Cauchy's integral formula for a cycle (roadmap Layer 3).** Formalized in Tau Ceti as [`TauCeti.Contour.Cycle.cauchyIntegralFormula_nullHomologous`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Cycle/Residue.html#TauCeti.Contour.Cycle.cauchyIntegralFormula_nullHomologous).
 
@@ -164,7 +139,7 @@ TauCeti.Contour.dixonH2_eq_windingNumber_mul_f_of_dixonFunction_eq_zero {f : ℂ
     2 * ↑Real.pi * Complex.I * TauCeti.Contour.windingNumber γ a b w * f w
 ```
 
-**Cauchy's integral formula on a disc — the `Metric.ball` case of `TauCeti.Contour.cauchyIntegralFormula_starConvex`.** Formalized in Tau Ceti as [`TauCeti.Contour.cauchyIntegralFormula_ball`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/StarConvex.html#TauCeti.Contour.cauchyIntegralFormula_ball).
+**Cauchy's integral formula on a disc.** Formalized in Tau Ceti as [`TauCeti.Contour.cauchyIntegralFormula_ball`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/StarConvex.html#TauCeti.Contour.cauchyIntegralFormula_ball).
 
 ```lean
 TauCeti.Contour.cauchyIntegralFormula_ball {f : ℂ → ℂ} {γ : ℝ → ℂ} {a b : ℝ} {c : ℂ} {r : ℝ} {z : ℂ}
@@ -175,7 +150,7 @@ TauCeti.Contour.cauchyIntegralFormula_ball {f : ℂ → ℂ} {γ : ℝ → ℂ} 
     2 * ↑Real.pi * Complex.I * TauCeti.Contour.windingNumber γ a b z * f z
 ```
 
-**Cauchy's integral formula on a disc, for the `k`-th derivative — the `Metric.ball` case of `TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_starConvex`.** Formalized in Tau Ceti as [`TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_ball`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/StarConvex.html#TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_ball).
+**Cauchy's integral formula on a disc, for the `k`-th derivative.** Formalized in Tau Ceti as [`TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_ball`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/StarConvex.html#TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_ball).
 
 ```lean
 TauCeti.Contour.cauchyIntegralFormula_iteratedDeriv_ball {f : ℂ → ℂ} {γ : ℝ → ℂ} {a b : ℝ} {c : ℂ}

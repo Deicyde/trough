@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Finite global reciprocity `C_K / N_{L/K}(C_L) ≃ Gal(L/K)^ab` for a finite Galois extension `L/K` of number fields, embedded in the separable closure of `K` by `ι`](finite-global-reciprocity-c-k-n-l-k-c-l-gal-l-k.md)
+- [Finite global reciprocity](finite-global-reciprocity.md)
 - [The semi-local decomposition `K_v ⊗[K] L ≃ₐ[K_v] ∏_{w ∣ v} L_w`](../number-fields-ramification-frobenius-and-the-lmf/the-semi-local-decomposition-k-v-k-l-a-k-v-w-v-l.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 

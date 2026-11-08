@@ -30,7 +30,7 @@ Orientation.existsUnique_eq_smul_integrationCurrent_of_finrank_eq_zero.{u_1} {E 
 - [A distribution has finite order on each compact set](../../part-01/integral-currents-geometric-homology-and-minimiz/a-distribution-has-finite-order-on-each-compact.md)
 - [The derivative of a regularization](../../part-01/integral-currents-geometric-homology-and-minimiz/the-derivative-of-a-regularization.md)
 - [Distributions with vanishing derivatives have locally constant regularizations](../../part-01/integral-currents-geometric-homology-and-minimiz/distributions-with-vanishing-derivatives-have-lo.md)
-- [Uniform first-order Taylor estimate in a parameter](../../part-01/calculus/part-02/uniform-first-order-taylor-estimate-in-a-paramet.md)
+- [Uniform first-order Taylor estimate in a parameter](../calculus/part-02/uniform-first-order-taylor-estimate-in-a-paramet.md)
 
 ## Lean
 

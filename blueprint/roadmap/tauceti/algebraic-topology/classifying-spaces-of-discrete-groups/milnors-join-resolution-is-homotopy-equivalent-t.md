@@ -5,9 +5,10 @@ lean: TauCeti.universalGSpaceStandardHomotopyEquiv
 statement: formalized
 ---
 
-# Milnor's join resolution is homotopy equivalent to the standard resolution, by a homotopy equivalence whose forward map is the explicit join-to-standard chain map
+# Milnor's join resolution is homotopy equivalent to the standard resolution
 
-Its homotopy inverse is
+**Milnor's join resolution is homotopy equivalent to the standard resolution**, by a homotopy
+equivalence whose forward map is the explicit join-to-standard chain map. Its homotopy inverse is
 the lift of the identity of the trivial representation from the standard resolution to the join
 resolution.
 

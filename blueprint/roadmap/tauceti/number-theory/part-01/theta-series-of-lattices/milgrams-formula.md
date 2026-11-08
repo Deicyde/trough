@@ -28,7 +28,7 @@ ZLattice.IsEven.dualGaussSum_one_one.{u_1} {E : Type u_1} [NormedAddCommGroup E]
 
 ## Proof depends on
 
-- [Poisson's summation formula over a full lattice `L` of a finite-dimensional real inner product space](poissons-summation-formula-over-a-full-lattice-l.md)
+- [Poisson's summation formula](poissons-summation-formula.md)
 - [ZLattice.IsIntegral.det_eq_card_discriminantGroup](zlattice-isintegral-det-eq-card-discriminantgrou.md)
 - [ZLattice.thetaCoset](zlattice-thetacoset.md)
 - [ZLattice.thetaSeries](zlattice-thetaseries.md)

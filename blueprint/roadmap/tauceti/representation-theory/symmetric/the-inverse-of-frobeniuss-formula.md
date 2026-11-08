@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jacobi's bialternant formula](../../ring-theory/mv-polynomial/jacobis-bialternant-formula.md)
+- [Jacobi's bialternant formula](../../ring-theory/part-01/mv-polynomial/jacobis-bialternant-formula.md)
 - [James's dominance lemma](jamess-dominance-lemma.md)
 - [James's submodule theorem](jamess-submodule-theorem.md)
 

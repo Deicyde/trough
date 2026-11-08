@@ -22,12 +22,14 @@ TauCeti.brauer2EquivH2_baseChange.{u} {K L : Type u} [Field K] [Field L] [Algebr
 
 ## Depends on
 
-- [The comparison isomorphism `Br(K) ≃ H²_cont(G_K, (Kˢ)ˣ)` with Mathlib's continuous cohomology, for `K` in any universe](the-comparison-isomorphism-br-k-h2-cont-g-k-ks-x.md)
+- [The comparison isomorphism](the-comparison-isomorphism.md)
 
 ## Proof depends on
 
+- [Artin--Wedderburn over a separably closed field](../../../algebra/central-simple/artin-wedderburn-over-a-separably-closed-field.md)
 - [The dimension count behind the centralizer theorem, asking only for what it uses](../../../algebra/central-simple/the-dimension-count-behind-the-centralizer-theor.md)
 - [The Skolem-Noether theorem](../../../algebra/central-simple/the-skolem-noether-theorem.md)
+- [Wedderburn-Artin for central simple algebras](../../../algebra/central-simple/wedderburn-artin-for-central-simple-algebras.md)
 
 ## Lean
 

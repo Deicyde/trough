@@ -25,14 +25,14 @@ TauCeti.exists_isDemushkin_range_demushkinCharacter_eq_iff_of_odd {n : ℕ} (hn 
 
 ## Depends on
 
-- [The Demushkin predicate (Labute, p. 106), for a prime `p` and a topological group `G`](../../profinite-and-pro-p-groups/part-01/the-demushkin-predicate-labute-p-106-for-a-prime.md)
+- [The Demushkin predicate](../../profinite-and-pro-p-groups/the-demushkin-predicate.md)
 
 ## Proof depends on
 
 - [Burnside's basis theorem, cardinal form](burnsides-basis-theorem-cardinal-form.md)
-- [The existence theorem of the classification of Demushkin groups, rank one (Labute, Remark 2 (iii); NSW (3.9.10))](../../profinite-and-pro-p-groups/part-01/the-existence-theorem-of-the-classification-of-d-2.md)
-- [Labute's Theorem 2](../../profinite-and-pro-p-groups/part-01/labutes-theorem-2.md)
-- [The necessity half of the existence theorem for `q ≠ 2` (Labute, Theorem 1)](../../profinite-and-pro-p-groups/part-01/the-necessity-half-of-the-existence-theorem-for.md)
+- [The existence theorem of the classification of Demushkin groups, rank one (Labute, Remark 2 (iii); NSW (3.9.10))](../../profinite-and-pro-p-groups/the-existence-theorem-of-the-classification-of-d.md)
+- [Labute's Theorem 2](../../profinite-and-pro-p-groups/labutes-theorem-2.md)
+- [The necessity half of the existence theorem for `q ≠ 2` (Labute, Theorem 1)](../../profinite-and-pro-p-groups/the-necessity-half-of-the-existence-theorem-for.md)
 
 ## Lean
 

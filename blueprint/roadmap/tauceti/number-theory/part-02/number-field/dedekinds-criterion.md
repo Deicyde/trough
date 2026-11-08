@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.NumberField.IntegralPrimitiveElement.not_dvd_index_iff, QuadraticAlgebra.span_two_omega_sub_one_sq_ne_span_two, QuadraticAlgebra.span_natCast_omega_sub_mul_span_natCast_omega_sub_eq_iff, TauCeti.NumberField.IntegralPrimitiveElement.dvd_index_of_ne_one_of_dvd_map, TauCeti.NumberField.IntegralPrimitiveElement.not_dvd_index_of_forall_eq_one_or_not_dvd_map
+lean: TauCeti.NumberField.IntegralPrimitiveElement.not_dvd_index_iff, TauCeti.NumberField.IntegralPrimitiveElement.dvd_index_of_ne_one_of_dvd_map, TauCeti.NumberField.IntegralPrimitiveElement.not_dvd_index_of_forall_eq_one_or_not_dvd_map
 statement: formalized
 proof: formalized
 ---
@@ -36,24 +36,6 @@ Its statement uses no other declaration mapped here.
 Formalized in Tau Ceti as [`TauCeti.NumberField.IntegralPrimitiveElement.not_dvd_index_iff`](https://taucetiproject.org/docs/TauCeti/NumberTheory/NumberField/Index/DedekindCriterion.html#TauCeti.NumberField.IntegralPrimitiveElement.not_dvd_index_iff).
 
 ## Other forms
-
-**Dedekind's criterion fails at the conductor.** Formalized in Tau Ceti as [`QuadraticAlgebra.span_two_omega_sub_one_sq_ne_span_two`](https://taucetiproject.org/docs/TauCeti/NumberTheory/QuadraticOrder/PrimeIdeal.html#QuadraticAlgebra.span_two_omega_sub_one_sq_ne_span_two).
-
-```lean
-QuadraticAlgebra.span_two_omega_sub_one_sq_ne_span_two {d : ℤ} (hd4 : d % 4 = 1) :
-  Ideal.span {2, QuadraticAlgebra.omega - 1} ^ 2 ≠ Ideal.span {2}
-```
-
-**Dedekind's criterion for a quadratic order.** Formalized in Tau Ceti as [`QuadraticAlgebra.span_natCast_omega_sub_mul_span_natCast_omega_sub_eq_iff`](https://taucetiproject.org/docs/TauCeti/NumberTheory/QuadraticOrder/PrimeIdeal.html#QuadraticAlgebra.span_natCast_omega_sub_mul_span_natCast_omega_sub_eq_iff).
-
-```lean
-QuadraticAlgebra.span_natCast_omega_sub_mul_span_natCast_omega_sub_eq_iff {a b : ℤ} {p : ℕ} {r : ℤ}
-  [Fact (Nat.Prime p)] (hr : ↑p ∣ r ^ 2 - b * r - a) :
-  Ideal.span {↑p, QuadraticAlgebra.omega - ↑r} *
-        Ideal.span {↑p, QuadraticAlgebra.omega - ↑(b - r)} =
-      Ideal.span {↑p} ↔
-    ¬(↑p ∣ 2 * r - b ∧ ↑p ^ 2 ∣ r ^ 2 - b * r - a)
-```
 
 **Dedekind's criterion, the necessary direction.** Formalized in Tau Ceti as [`TauCeti.NumberField.IntegralPrimitiveElement.dvd_index_of_ne_one_of_dvd_map`](https://taucetiproject.org/docs/TauCeti/NumberTheory/NumberField/Index/DedekindCriterion.html#TauCeti.NumberField.IntegralPrimitiveElement.dvd_index_of_ne_one_of_dvd_map).
 

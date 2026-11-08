@@ -1,6 +1,6 @@
 # Belyi maps, dessins d'enfants, and three-point covers
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/BelyiMaps/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/BelyiMaps/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Analytic Belyi pairs are classified by finite covers of the thrice-punctured sphere](analytic-belyi-pairs-are-classified-by-finite-co.md)
 - [Connected covers of `ℂ ∖ {0, 1}` of degree `n` up to isomorphism are classified by the isomorphism classes of connected triples of degree `n`](connected-covers-of-c-0-1-of-degree-n-up-to-isom.md)
@@ -12,7 +12,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The Galois conjugate of an algebraic Belyi pair is an algebraic Belyi pair](the-galois-conjugate-of-an-algebraic-belyi-pair.md)
 - [TauCeti.PermutationTriple.LMFDB.PassportRecord.IsValidAt](tauceti-permutationtriple-lmfdb-passportrecord-i.md)
 - [TauCeti.PermutationTriple.LMFDB.BelyiRecord.IsValidFor](tauceti-permutationtriple-lmfdb-belyirecord-isva.md)
-- [An analytic Belyi pair is determined up to isomorphism by its permutation triple](an-analytic-belyi-pair-is-determined-up-to-isomo.md)
 - [Belyi's theorem, existence direction](belyis-theorem-existence-direction.md)
 - [The Riemann–Hurwitz formula for a filled cover](the-riemann-hurwitz-formula-for-a-filled-cover.md)
-- [Taylor's estimate](taylors-estimate.md)

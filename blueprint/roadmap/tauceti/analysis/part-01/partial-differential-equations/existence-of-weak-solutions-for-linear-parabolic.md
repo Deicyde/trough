@@ -55,7 +55,7 @@ Its statement uses no other declaration mapped here.
 
 - [The fundamental theorem of calculus for a continuous representative](../../part-02/sobolev/part-01/the-fundamental-theorem-of-calculus-for-a-contin.md)
 - [The fundamental theorem of calculus for weak derivatives](../../part-02/sobolev/part-01/the-fundamental-theorem-of-calculus-for-weak-der.md)
-- [Lions' representation theorem](../../part-02/inner-product-space/part-01/lions-representation-theorem.md)
+- [Lions' representation theorem](../../part-02/inner-product-space/part-02/lions-representation-theorem.md)
 - [Pettis' theorem in a separable inner product space](../../../measure-theory/function/pettis-theorem-in-a-separable-inner-product-spac.md)
 
 ## Lean

@@ -31,9 +31,9 @@ TauCeti.SplitK0.spectralRadius_fusionMatrix.{w, w', v, u} (k : Type w') [Field k
 
 ## Proof depends on
 
-- [Collatz–Wielandt bound](collatz-wielandt-bound.md)
-- [Frobenius reciprocity in multiplicity form](frobenius-reciprocity-in-multiplicity-form.md)
+- [Frobenius reciprocity in multiplicity form](../other-results/frobenius-reciprocity-in-multiplicity-form.md)
 - [The Frobenius–Perron character](the-frobenius-perron-character.md)
+- [Perron–Frobenius](../../linear-algebra/matrix/perron-frobenius.md)
 
 ## Lean
 

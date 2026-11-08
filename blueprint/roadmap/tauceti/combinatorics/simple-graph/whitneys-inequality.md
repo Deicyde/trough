@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: SimpleGraph.vertexConnectivity_le_edgeConnectivity, SimpleGraph.IsVertexConnected.isEdgeConnected, Graph.IsVertexConnected.isEdgeConnected, Graph.vertexConnectivity_le_edgeConnectivity
+lean: SimpleGraph.vertexConnectivity_le_edgeConnectivity, SimpleGraph.IsVertexConnected.isEdgeConnected
 statement: formalized
 proof: formalized
 ---
@@ -18,7 +18,7 @@ SimpleGraph.vertexConnectivity_le_edgeConnectivity.{u} {V : Type u} {G : SimpleG
 
 ## Depends on
 
-- [Graph.Walk](../finite-graph-connectivity-and-network-flows/graph-walk.md)
+Its statement uses no other declaration mapped here.
 
 ## Lean
 
@@ -31,20 +31,6 @@ Formalized in Tau Ceti as [`SimpleGraph.vertexConnectivity_le_edgeConnectivity`]
 ```lean
 SimpleGraph.IsVertexConnected.isEdgeConnected.{u} {V : Type u} {G : SimpleGraph V} {k : ℕ∞}
   (h : G.IsVertexConnected k) : G.IsEdgeConnected k
-```
-
-**Whitney's inequality for multigraphs, predicate form.** Formalized in Tau Ceti as [`Graph.IsVertexConnected.isEdgeConnected`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Graph/Connectivity/Whitney.html#Graph.IsVertexConnected.isEdgeConnected).
-
-```lean
-Graph.IsVertexConnected.isEdgeConnected.{u, v} {α : Type u} {β : Type v} {G : Graph α β} {k : ℕ}
-  (h : G.IsVertexConnected k) : G.IsEdgeConnected k
-```
-
-**Whitney's inequality for multigraphs.** Formalized in Tau Ceti as [`Graph.vertexConnectivity_le_edgeConnectivity`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Graph/Connectivity/Whitney.html#Graph.vertexConnectivity_le_edgeConnectivity).
-
-```lean
-Graph.vertexConnectivity_le_edgeConnectivity.{u, v} {α : Type u} {β : Type v} {G : Graph α β} :
-  G.vertexConnectivity ≤ G.edgeConnectivity
 ```
 
 ## Sources

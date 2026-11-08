@@ -31,7 +31,7 @@ Formalized in Tau Ceti as [`TauCeti.ChainComplex.kronecker_bijective_of_projecti
 
 ## Other forms
 
-**The universal coefficient theorem above a projective homology object, when every object has projective dimension at most one, as for modules over a principal ideal domain.** Formalized in Tau Ceti as [`TauCeti.ChainComplex.kronecker_bijective_succ_of_projective_homology`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/UniversalCoefficient/Basic.html#TauCeti.ChainComplex.kronecker_bijective_succ_of_projective_homology).
+**The universal coefficient theorem above a projective homology object.** Formalized in Tau Ceti as [`TauCeti.ChainComplex.kronecker_bijective_succ_of_projective_homology`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/UniversalCoefficient/Basic.html#TauCeti.ChainComplex.kronecker_bijective_succ_of_projective_homology).
 
 ```lean
 TauCeti.ChainComplex.kronecker_bijective_succ_of_projective_homology.{v_1, u_1, u_3} {C : Type u_1}

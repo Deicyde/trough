@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jordan's integral bound](../../../number-theory/part-01/imaginary-quadratic-fields-class-numbers-finiten/jordans-integral-bound.md)
+- [Jordan's integral bound](../special-functions/jordans-integral-bound.md)
 
 ## Lean
 

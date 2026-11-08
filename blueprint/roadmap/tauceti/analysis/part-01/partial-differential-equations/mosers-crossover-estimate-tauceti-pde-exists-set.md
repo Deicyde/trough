@@ -52,7 +52,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The logarithmic Caccioppoli inequality](the-logarithmic-caccioppoli-inequality.md)
-- [Moser's crossover estimate (`TauCeti.exists_setLIntegral_exp_mul_mul_setLIntegral_exp_neg_mul_ball_le`)](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/mosers-crossover-estimate-tauceti-exists-setlint.md)
+- [Moser's crossover estimate (`TauCeti.exists_setLIntegral_exp_mul_mul_setLIntegral_exp_neg_mul_ball_le`)](../../../measure-theory/integral/part-01/mosers-crossover-estimate-tauceti-exists-setlint.md)
 - [The Poincaré–Wirtinger inequality on a ball](../../part-02/sobolev/part-02/the-poincare-wirtinger-inequality-on-a-ball.md)
 - [TauCeti.Wkp](tauceti-wkp.md)
 

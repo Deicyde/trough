@@ -6,9 +6,11 @@ statement: formalized
 proof: formalized
 ---
 
-# The quartic Hochschild cohomology `HH^{4, -2}` of a zigzag algebra is nonzero when four distinct darts of `G` have a common head, that is when some vertex has four distinct neighbours, over every nontrivial commutative ring
+# The quartic Hochschild cohomology `HH^{4, -2}` of a zigzag algebra is nonzero
 
-some Hochschild cocycle of the strict zigzag algebra of
+**The quartic Hochschild cohomology `HH^{4, -2}` of a zigzag algebra is nonzero** when four
+distinct darts of `G` have a common head, that is when some vertex has four distinct neighbours,
+over every nontrivial commutative ring: some Hochschild cocycle of the strict zigzag algebra of
 suspended degree one, concentrated on words of length four, is not the Hochschild differential of
 a cochain of degree zero.
 
@@ -24,10 +26,6 @@ TauCeti.not_hochschildVanishesAt_four_zigzagStrictAInfinityAlgebra.{u, w} {k : T
 ## Depends on
 
 Its statement uses no other declaration mapped here.
-
-## Proof depends on
-
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../../algebra/homology/the-suspended-stasheff-identity-free-of-the-stru.md)
 
 ## Lean
 

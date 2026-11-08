@@ -23,15 +23,15 @@ TauCeti.AlgebraicGeometry.abelJacobiMapToPicZeroFppf.{u} {S X : AlgebraicGeometr
 
 ## Depends on
 
-- [The degree-zero Picard functor `Pic⁰_{X/S}` of a smooth proper geometrically connected family of curves `f : X ⟶ S`, as a presheaf of commutative groups on schemes over `S`](the-degree-zero-picard-functor-pic0-x-s-of-a-smo.md)
+- [The degree-zero Picard functor `Pic⁰_{X/S}`](the-degree-zero-picard-functor-pic0-x-s.md)
 
 ## Proof depends on
 
-- [The Jacobian criterion for étaleness](../../ring-theory/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
-- [Riemann's theorem (Stichtenoth, Theorem 1.4.17)](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-02/riemanns-theorem-stichtenoth-theorem-1-4-17.md)
-- [Serre's vanishing theorem on affine schemes](../other-results/serres-vanishing-theorem-on-affine-schemes.md)
+- [The Jacobian criterion for étaleness](../../ring-theory/part-02/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
+- [Riemann's theorem](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
+- [Serre's vanishing theorem on affine opens](../other-results/serres-vanishing-theorem-on-affine-opens.md)
 - [TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf](../algebraic-vector-bundles/tauceti-algebraicgeometry-finitelocallyfreesheaf-3.md)
-- [The weak approximation theorem for the places of an algebraic function field (Stichtenoth, Theorem 1.3.1), in the equality form](../../field-theory/function-field/the-weak-approximation-theorem-for-the-places-of.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
 
 ## Lean
 

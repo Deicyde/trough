@@ -26,7 +26,7 @@ ContinuousLinearMap.isRowCompact_iff_isCompletelyContinuous.{u_1, u_2, u_4} {I :
 
 ## Proof depends on
 
-- [Quantitative Open Mapping Theorem](../../part-02/normed/part-01/quantitative-open-mapping-theorem.md)
+- [Quantitative Open Mapping Theorem](../../part-02/normed/part-02/quantitative-open-mapping-theorem.md)
 - [Serre's theorem (`TauCeti.ResidueModule.isOrthonormalBasis_iff`)](../../../number-theory/part-01/p-adic-functional-analysis/serres-theorem-tauceti-residuemodule-isorthonorm.md)
 
 ## Lean

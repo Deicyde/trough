@@ -41,7 +41,6 @@ TauCeti.NumberField.multiplicity_relDiscr_fixedField_eq_sum.{u_1, u_2} (K : Type
 ## Proof depends on
 
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
-- [The Galois correspondence does not move points](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-galois-correspondence-does-not-move-points.md)
 - [Hilbert's formula for a number-field different exponent](hilberts-formula-for-a-number-field-different-ex.md)
 
 ## Lean

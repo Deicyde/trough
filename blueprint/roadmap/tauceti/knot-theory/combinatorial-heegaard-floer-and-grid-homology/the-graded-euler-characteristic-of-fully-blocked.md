@@ -22,7 +22,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Euler–Poincaré theorem in abelian `K₀`](../../algebra/grothendieck-groups-cartan-maps-and-euler-forms/part-01/the-euler-poincare-theorem-in-abelian-k0.md)
+- [Euler--Poincaré in one Alexander degree](euler-poincare-in-one-alexander-degree.md)
 
 ## Lean
 

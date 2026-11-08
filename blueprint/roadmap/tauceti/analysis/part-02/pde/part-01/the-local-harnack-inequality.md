@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The du Bois-Reymond lemma](../../../part-01/integral-currents-geometric-homology-and-minimiz/the-du-bois-reymond-lemma.md)
+- [The du Bois-Reymond lemma](../../distribution/the-du-bois-reymond-lemma.md)
 - [Green's second identity against a test function](../../sobolev/part-01/greens-second-identity-against-a-test-function.md)
 
 ## Lean

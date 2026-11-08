@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The Riemann mapping theorem to Janiszewski's second theorem
+# The Riemann mapping theorem to Janiszewski's theorem
 
 - [The Riemann mapping theorem](the-riemann-mapping-theorem.md)
 - [The Riemann map of a Jordan domain extends to a homeomorphism of the closures](the-riemann-map-of-a-jordan-domain-extends-to-a.md)
@@ -19,8 +19,8 @@ navigation: transparent
 - [The Jordan–Brouwer separation theorem](the-jordan-brouwer-separation-theorem.md)
 - [The Borsuk criterion](the-borsuk-criterion.md)
 - [Borsuk's separation theorem](borsuks-separation-theorem.md)
-- [Carathéodory's theorem for the inside of a Jordan curve](caratheodorys-theorem-for-the-inside-of-a-jordan.md)
 - [The converse Schwarz--Christoffel theorem from the prevertex residues](the-converse-schwarz-christoffel-theorem-from-th.md)
 - [The equicontinuity half of Montel's theorem](the-equicontinuity-half-of-montels-theorem.md)
 - [Hurwitz's theorem](hurwitzs-theorem.md)
 - [Janiszewski's second theorem](janiszewskis-second-theorem.md)
+- [Janiszewski's theorem](janiszewskis-theorem.md)

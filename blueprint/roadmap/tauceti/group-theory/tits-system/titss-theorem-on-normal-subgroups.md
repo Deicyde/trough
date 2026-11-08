@@ -26,9 +26,6 @@ Its statement uses no other declaration mapped here.
 
 - [The Bruhat decomposition of a standard parabolic](the-bruhat-decomposition-of-a-standard-parabolic.md)
 - [The key step of Tits's theorem on normal subgroups](the-key-step-of-titss-theorem-on-normal-subgroup.md)
-
-## Informally uses
-
 - [Tits's simplicity theorem](titss-simplicity-theorem.md)
 
 ## Lean

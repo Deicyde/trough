@@ -1,6 +1,6 @@
 # Analytic Heegaard Floer homology
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/HeegaardFloer/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/HeegaardFloer/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Sard--Smale theorem](the-sard-smale-theorem.md)
 - [The Morse--Sard theorem](the-morse-sard-theorem.md)
@@ -12,6 +12,3 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Generic absence of negative-index zeros](generic-absence-of-negative-index-zeros.md)
 - [TauCeti.morseBoundary_comp_morseBoundary_eq_zero_iff](tauceti-morseboundary-comp-morseboundary-eq-zero.md)
 - [Moser's lemma, local form](mosers-lemma-local-form.md)
-- [The relative Darboux theorem in adapted coordinates](the-relative-darboux-theorem-in-adapted-coordina.md)
-- [Sard's lemma on the flat stratum](sards-lemma-on-the-flat-stratum.md)
-- [Sard's theorem on the locus where the derivative vanishes](sards-theorem-on-the-locus-where-the-derivative.md)

@@ -27,17 +27,16 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The analytic Euler product](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-analytic-euler-product.md)
+- [The analytic Euler product](../arithmetic-dirichlet-series-and-tauberian-method/the-analytic-euler-product.md)
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
-- [The continued L-function of a unitary weight, defined by partial summation](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-continued-l-function-of-a-unitary-weight-def.md)
+- [The continued L-function of a unitary weight, defined by partial summation](../arithmetic-dirichlet-series-and-tauberian-method/the-continued-l-function-of-a-unitary-weight-def.md)
 - [The crossing constant](the-crossing-constant.md)
 - [The crossing constant approaches `1 / #Aut_K(L)`](the-crossing-constant-approaches-1-aut-k-l.md)
-- [The Dedekind zeta function has no zeros on the line `Re s = 1` away from its pole](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-dedekind-zeta-function-has-no-zeros-on-the-l.md)
+- [The Dedekind zeta function has no zeros on the line `Re s = 1` away from its pole](../arithmetic-dirichlet-series-and-tauberian-method/the-dedekind-zeta-function-has-no-zeros-on-the-l.md)
 - [The fixed-field Frobenius fiber count](the-fixed-field-frobenius-fiber-count.md)
-- [The Galois correspondence does not move points](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-galois-correspondence-does-not-move-points.md)
 - [The ideal-theoretic Artin map](../number-fields-ramification-frobenius-and-the-lmf/the-ideal-theoretic-artin-map.md)
 - [The primes of `K` with Artin class `C` in `L`](the-primes-of-k-with-artin-class-c-in-l.md)
-- [The Wiener--Ikehara theorem](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-wiener-ikehara-theorem.md)
+- [The Wiener--Ikehara theorem](../arithmetic-dirichlet-series-and-tauberian-method/the-wiener-ikehara-theorem.md)
 
 ## Lean
 

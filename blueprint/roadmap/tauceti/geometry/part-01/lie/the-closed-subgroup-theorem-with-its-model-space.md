@@ -28,9 +28,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hadamard's identity in the algebra of smooth functions](../manifold/part-01/hadamards-identity-in-the-algebra-of-smooth-func.md)
-- [Hadamard's lemma in coordinates](../manifold/part-01/hadamards-lemma-in-coordinates.md)
-- [The inverse function theorem for manifolds](../manifold/part-01/the-inverse-function-theorem-for-manifolds.md)
+- [Hadamard's identity in the algebra of smooth functions](../manifold/part-02/hadamards-identity-in-the-algebra-of-smooth-func.md)
+- [Hadamard's lemma in coordinates](../manifold/part-02/hadamards-lemma-in-coordinates.md)
+- [The inverse function theorem for manifolds](../manifold/part-02/the-inverse-function-theorem-for-manifolds.md)
 
 ## Lean
 

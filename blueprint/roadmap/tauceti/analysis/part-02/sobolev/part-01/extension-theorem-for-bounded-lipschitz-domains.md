@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Rademacher's theorem for locally Lipschitz functions](../../../part-01/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 

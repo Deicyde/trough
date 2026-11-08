@@ -33,6 +33,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Deformation of sublevels across a band without critical points (Milnor, Theorem 3.1)](deformation-of-sublevels-across-a-band-without-c.md)
+- [Euler--Poincaré for cellular chains](../../../algebraic-topology/cellular/euler-poincare-for-cellular-chains.md)
 - [The Mayer–Vietoris isomorphism of a sphere](../../../algebraic-topology/singular/the-mayer-vietoris-isomorphism-of-a-sphere.md)
 - [Milnor's cell attachment theorem](../manifold/part-02/milnors-cell-attachment-theorem.md)
 - [The relative small-chain theorem](../../../algebraic-topology/singular/the-relative-small-chain-theorem.md)

@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Gelfand-Tsetlin dimension formula](the-gelfand-tsetlin-dimension-formula.md)
+- [The Gelfand–Tsetlin decomposition](the-gelfand-tsetlin-decomposition.md)
 - [The inverse of Frobenius's formula](../symmetric/the-inverse-of-frobeniuss-formula.md)
 - [James's submodule theorem](../symmetric/jamess-submodule-theorem.md)
 

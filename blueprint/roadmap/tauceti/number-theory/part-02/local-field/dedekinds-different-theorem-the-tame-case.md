@@ -25,7 +25,7 @@ TauCeti.differentExponent_eq_ramificationIndex_sub_one_iff.{u_1, u_2} (K : Type 
 
 ## Proof depends on
 
-- [Dedekind's different theorem, the tame case, as an exponent](../../../ring-theory/other-results/part-01/dedekinds-different-theorem-the-tame-case-as-an.md)
+- [Dedekind's different theorem, the tame case, as an exponent](../../../ring-theory/part-02/other-results/part-01/dedekinds-different-theorem-the-tame-case-as-an.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

@@ -25,8 +25,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The first isomorphism theorem for a surjective homomorphism of Lie algebras](../lie/the-first-isomorphism-theorem-for-a-surjective-h.md)
-- [Weyl's theorem as a decomposition](../representation-theory/part-02/weyls-theorem-as-a-decomposition.md)
+- [The first isomorphism theorem for a surjective homomorphism of Lie algebras](../lie/part-01/the-first-isomorphism-theorem-for-a-surjective-h.md)
+- [Weyl's theorem as a decomposition](../lie/part-02/weyls-theorem-as-a-decomposition.md)
 
 ## Lean
 

@@ -1,6 +1,6 @@
 # Finite graph connectivity and network flows
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GraphConnectivityAndFlows/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GraphConnectivityAndFlows/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Max-flow/min-cut theorem](max-flow-min-cut-theorem.md)
 - [Max-flow/min-cut theorem for bounded assignments](max-flow-min-cut-theorem-for-bounded-assignments.md)
@@ -17,8 +17,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.AuxTerminalHom](tauceti-auxterminalhom.md)
 - [Graph.Walk](graph-walk.md)
 - [SimpleGraph.walkEquivOfSimpleGraph](simplegraph-walkequivofsimplegraph.md)
-- [Generalized Hoffman's theorem](generalized-hoffmans-theorem.md)
 - [Gomory–Hu theorem](gomory-hu-theorem.md)
-- [Hoffman's circulation theorem](hoffmans-circulation-theorem.md)
-- [Max-flow/min-cut theorem between vertex sets](max-flow-min-cut-theorem-between-vertex-sets.md)
 - [Query theorem](query-theorem.md)

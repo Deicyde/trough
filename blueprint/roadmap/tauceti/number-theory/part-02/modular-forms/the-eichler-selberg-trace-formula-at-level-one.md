@@ -34,6 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Cayley–Hamilton in size two](../../../linear-algebra/matrix/cayley-hamilton-in-size-two.md)
 - [Popa–Zagier's ambient trace identity (Popa–Zagier, §2, Propositions 2 and 3)](popa-zagiers-ambient-trace-identity-popa-zagier.md)
 
 ## Lean

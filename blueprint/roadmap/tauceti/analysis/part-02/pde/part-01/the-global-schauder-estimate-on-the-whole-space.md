@@ -47,7 +47,7 @@ TauCeti.PDE.exists_holderWith_iteratedFDeriv_two_and_norm_le_of_sum_smul_fderiv_
 
 ## Proof depends on
 
-- [First-order Taylor bound for a Hölder derivative](../../../part-01/partial-differential-equations/first-order-taylor-bound-for-a-holder-derivative.md)
+- [First-order Taylor bound for a Hölder derivative](../../other-results/first-order-taylor-bound-for-a-holder-derivative.md)
 - [The interior Schauder estimate on small balls](the-interior-schauder-estimate-on-small-balls.md)
 
 ## Lean

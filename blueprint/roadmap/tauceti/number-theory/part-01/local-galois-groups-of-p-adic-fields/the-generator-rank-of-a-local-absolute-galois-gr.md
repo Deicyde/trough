@@ -28,12 +28,12 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Burnside's basis theorem, cardinal form](../../../topology/algebra/part-01/burnsides-basis-theorem-cardinal-form.md)
-- [The finite level of the generator theorem (NSW, proof of (7.4.1))](the-finite-level-of-the-generator-theorem-nsw-pr.md)
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
+- [The finite level of the generator theorem (NSW, proof of (7.4.1))](../../part-02/local-field/the-finite-level-of-the-generator-theorem-nsw-pr.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [The Schreier bound](../../../topology/algebra/part-01/the-schreier-bound.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
-- [The wild inertia subgroup `P_K` of the absolute Galois group of a nonarchimedean local field `K`](../local-fields-and-ramification/the-wild-inertia-subgroup-p-k-of-the-absolute-ga.md)
+- [The wild inertia subgroup](../local-fields-and-ramification/the-wild-inertia-subgroup.md)
 
 ## Lean
 

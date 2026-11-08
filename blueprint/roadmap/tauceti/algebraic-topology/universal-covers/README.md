@@ -11,6 +11,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.simplyConnectedSpace_sphere](tauceti-simplyconnectedspace-sphere.md)
 - [TauCeti.CoveringSpace](tauceti-coveringspace.md)
 - [TauCeti.CoveringSpace.mk](tauceti-coveringspace-mk.md)
-- [The fundamental group at `x` acts on every homotopy group based at `x`, an element of `π₁(X, x)` acting by transport around the loop it represents](the-fundamental-group-at-x-acts-on-every-homotop.md)
+- [The fundamental group at `x` acts on every homotopy group based at `x`](the-fundamental-group-at-x-acts-on-every-homotop.md)
 - [AddCircle.fundamentalGroupMulEquiv_eq_windingNumberIso](addcircle-fundamentalgroupmulequiv-eq-windingnum.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](the-isomorphism-1-s1-z-is-the-degree.md)

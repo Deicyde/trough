@@ -19,7 +19,7 @@ TauCeti.moduleResolutionEquiv.{u} (R : Type u) [Ring R] :
 
 ## Depends on
 
-- [The resolution theorem for finite projective resolutions](../grothendieck-groups-cartan-maps-and-euler-forms/part-02/the-resolution-theorem-for-finite-projective-res.md)
+- [The resolution theorem for finite projective resolutions](../../category-theory/grothendieck-group/the-resolution-theorem-for-finite-projective-res.md)
 
 ## Proof depends on
 

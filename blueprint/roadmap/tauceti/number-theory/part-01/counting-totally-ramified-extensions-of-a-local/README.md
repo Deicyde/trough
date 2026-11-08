@@ -1,8 +1,8 @@
 # Counting totally ramified extensions of a local field, and Serre's mass formula
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/MassFormula/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/MassFormula/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-## [The orbit count (\[Serre 1978… to Serre's first mass formula](part-01/README.md)
+## [The orbit count (\[Serre 1978… to Serre's second mass formula](part-01/README.md)
 
 - [The orbit count (\[Serre 1978, Remarque 3°\])](part-01/the-orbit-count-serre-1978-remarque-3.md)
 - [TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueField_pow_wildExponent_eq_one_iff](part-01/tauceti-isrepresentativeset-tsum-one-div-natcard.md)
@@ -21,12 +21,11 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [IntermediateField.rootCount](part-01/intermediatefield-rootcount.md)
 - [The root counts over `σ_K(n)` sum to `n`](part-01/the-root-counts-over-k-n-sum-to-n.md)
 - [Polynomial.card_roots_eq_sum_ite_of_addVal_lt](part-01/polynomial-card-roots-eq-sum-ite-of-addval-lt.md)
-- [Minkowski's convex body theorem for the integer lattice](part-01/minkowskis-convex-body-theorem-for-the-integer-l.md)
 - [Serre's finiteness dichotomy](part-01/serres-finiteness-dichotomy.md)
 - [Serre's first mass formula](part-01/serres-first-mass-formula.md)
+- [Serre's second mass formula](part-01/serres-second-mass-formula.md)
 
-## [Serre's second mass formula to Theorem 1 in integral form](part-02/README.md)
+## [Theorem 1 from the root-count… to Theorem 1 in integral form](part-02/README.md)
 
-- [Serre's second mass formula](part-02/serres-second-mass-formula.md)
 - [Theorem 1 from the root-count integrals](part-02/theorem-1-from-the-root-count-integrals.md)
 - [Theorem 1 in integral form](part-02/theorem-1-in-integral-form.md)

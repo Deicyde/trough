@@ -26,6 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Skolem–Noether for matrix algebras over a local semiring](../matrix/skolem-noether-for-matrix-algebras-over-a-local.md)
 - [Spin is the even unitary group in dimensions one to five](spin-is-the-even-unitary-group-in-dimensions-one.md)
 
 ## Lean

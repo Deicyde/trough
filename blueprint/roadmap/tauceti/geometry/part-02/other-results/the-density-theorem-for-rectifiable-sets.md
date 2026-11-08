@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Brunn–Minkowski inequality for nonempty Lebesgue-measurable sets in a positive-dimensional real inner product space](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-01/brunn-minkowski-inequality-for-nonempty-lebesgue.md)
+- [Brunn–Minkowski inequality](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/brunn-minkowski-inequality.md)
 - [Lebesgue's density theorem in a `k`-plane](lebesgues-density-theorem-in-a-k-plane.md)
 
 ## Lean

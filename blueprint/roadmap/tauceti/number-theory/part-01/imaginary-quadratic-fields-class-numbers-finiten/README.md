@@ -1,6 +1,6 @@
 # Imaginary quadratic fields: class numbers, finiteness and class number one
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/ImaginaryQuadraticClassNumber/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/ImaginaryQuadraticClassNumber/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The radicand classification of imaginary quadratic fields](the-radicand-classification-of-imaginary-quadrat.md)
 - [The squarefree radicand is an isomorphism invariant](the-squarefree-radicand-is-an-isomorphism-invari.md)
@@ -11,8 +11,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The distinguished complex embedding of `ℚ(√a)` for `a ≤ 0`](the-distinguished-complex-embedding-of-q-a-for-a.md)
 - [The Siegel function `g_r(τ)` attached to `r = (r₁, r₂) ∈ ℝ²`](the-siegel-function-g-r-attached-to-r-r1-r2-r2.md)
 - [TauCeti.qTheta](tauceti-qtheta.md)
-- [The Picard class of a proper class of primitive positive definite forms, the class of `aℤ + ((-b + √(-n))/2)ℤ` in the Picard group of the quadratic order of discriminant `-n`](the-picard-class-of-a-proper-class-of-primitive.md)
-- [Euler's identity `∏_{n ≥ 1} (1 + qⁿ) ∏_{n ≥ 0} (1 - q^{2n+1}) = 1` for `‖q‖ < 1`](eulers-identity-n-1-1-qn-n-0-1-q-2n-1-1-for-q-1.md)
-- [Euler's limit formula in ratio form](eulers-limit-formula-in-ratio-form.md)
-- [Jordan's integral bound](jordans-integral-bound.md)
-- [Weber's identity `g₀⁴ + g₁⁴ + g₂⁴ = 0` for the level-two Siegel functions `g₀ = g_{(0, 1/2)}`, `g₁ = g_{(1/2, 0)}` and `g₂ = g_{(1/2, 1/2)}`](webers-identity-g04-g14-g24-0-for-the-level-two.md)
+- [The Picard class of a proper class of primitive positive definite forms](the-picard-class-of-a-proper-class-of-primitive.md)
+- [Euler's identity (`TauCeti.tprod_one_add_pow_mul_tprod_one_sub_pow_odd`)](eulers-identity-tauceti-tprod-one-add-pow-mul-tp.md)

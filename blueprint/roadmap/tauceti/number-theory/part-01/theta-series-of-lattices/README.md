@@ -1,8 +1,8 @@
 # Theta series of lattices
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/ThetaSeries/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/ThetaSeries/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [Poisson's summation formula over a full lattice `L` of a finite-dimensional real inner product space](poissons-summation-formula-over-a-full-lattice-l.md)
+- [Poisson's summation formula](poissons-summation-formula.md)
 - [ZLattice.IsEven.qExpansion_thetaSeries_coeff](zlattice-iseven-qexpansion-thetaseries-coeff.md)
 - [ZLattice.IsEven.thetaSeries_slash_T](zlattice-iseven-thetaseries-slash-t.md)
 - [ZLattice.IsEven.thetaCoset_one_vadd](zlattice-iseven-thetacoset-one-vadd.md)

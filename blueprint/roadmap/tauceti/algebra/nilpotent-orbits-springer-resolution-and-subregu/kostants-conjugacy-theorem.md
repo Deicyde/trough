@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jacobson's lemma for the adjoint representation](jacobsons-lemma-for-the-adjoint-representation.md)
+- [Jacobson's lemma for the adjoint representation](../lie/part-01/jacobsons-lemma-for-the-adjoint-representation.md)
 - [Morozov's lemma](morozovs-lemma.md)
 
 ## Lean

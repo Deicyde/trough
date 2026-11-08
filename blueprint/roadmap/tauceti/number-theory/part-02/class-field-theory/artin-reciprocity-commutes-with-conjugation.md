@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_conj
+lean: TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_conj, TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom
 statement: formalized
 proof: formalized
 ---
@@ -28,14 +28,34 @@ TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_conj {G : Type} [Group G] [To
 
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
 - [Restriction through Shapiro's lemma](../../../representation-theory/homological/restriction-through-shapiros-lemma.md)
-- [Shapiro's isomorphism on an adjunct](../../../representation-theory/homological/shapiros-isomorphism-on-an-adjunct.md)
-- [Tate's isomorphism of a class formation commutes with conjugation](../../part-01/class-field-theory/tates-isomorphism-of-a-class-formation-commutes.md)
+- [Tate's isomorphism of a class formation commutes with conjugation](tates-isomorphism-of-a-class-formation-commutes.md)
 - [Tate's theorem](../../../representation-theory/homological/tates-theorem.md)
 - [TauCeti.ClassFieldTheory.tateTheorem](../../part-01/class-field-theory/tauceti-classfieldtheory-tatetheorem.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_conj`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Formation/ArtinMap.html#TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_conj).
+
+## Other forms
+
+**Artin reciprocity is carried along a layer morphism matching the fundamental classes.** Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Formation/Layer/Hom.html#TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom).
+
+```lean
+TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom {G : Type} [Group G]
+  [TopologicalSpace G] [IsTopologicalGroup G] [CompactSpace G] [TotallyDisconnectedSpace G]
+  {G' : Type} [Group G'] [TopologicalSpace G'] [IsTopologicalGroup G'] [CompactSpace G']
+  [TotallyDisconnectedSpace G'] {F : TauCeti.ClassFieldTheory.Formation G}
+  {L : TauCeti.ClassFieldTheory.NormalLayer G} {F' : TauCeti.ClassFieldTheory.Formation G'}
+  {L' : TauCeti.ClassFieldTheory.NormalLayer G'} (cf : TauCeti.ClassFieldTheory.ClassFormation F)
+  (cf' : TauCeti.ClassFieldTheory.ClassFormation F')
+  (E : TauCeti.ClassFieldTheory.LayerHom F L F' L')
+  (hu :
+    (CategoryTheory.ConcreteCategory.hom (E.cohomologyMap 2)) (cf.fundamentalClass L) =
+      cf'.fundamentalClass L')
+  (y : L.NormQuotient F) :
+  (cf'.artinEquiv L') (E.normQuotientMap y) =
+    (MulEquiv.toAdditive E.galEquiv.abelianizationCongr) ((cf.artinEquiv L) y)
+```
 
 ## Sources
 

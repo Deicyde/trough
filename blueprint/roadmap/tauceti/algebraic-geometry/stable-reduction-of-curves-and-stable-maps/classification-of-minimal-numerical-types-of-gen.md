@@ -6,9 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# Classification of minimal numerical types of genus one ([Stacks, Lemma 55.6.2](https://stacks.math.columbia.edu/tag/0C8T))
+# Classification of minimal numerical types of genus one
 
-Every minimal numerical type
+**Classification of minimal numerical types of genus one**
+([Stacks, Lemma 55.6.2](https://stacks.math.columbia.edu/tag/0C8T)). Every minimal numerical type
 of arithmetic genus one belongs to one of the shape families of
 `TauCeti.NumericalType.IsGenusOneMinimalShape`.
 

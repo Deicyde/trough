@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.mul_preprojectiveHilbertSeries_eq_one, TauCeti.mul_preprojectiveHilbertSeries_eq_one_iff, TauCeti.mul_preprojectiveHilbertSeries_ne_one, TauCeti.mul_preprojectiveHilbertSeries_eq_one_of_two_mul_le_sum
+lean: TauCeti.mul_preprojectiveHilbertSeries_eq_one, TauCeti.mul_preprojectiveHilbertSeries_eq_one_of_two_mul_le_sum
 statement: formalized
 proof: formalized
 ---
@@ -37,39 +37,6 @@ Its statement uses no other declaration mapped here.
 Formalized in Tau Ceti as [`TauCeti.mul_preprojectiveHilbertSeries_eq_one`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/ZigzagCartan.html#TauCeti.mul_preprojectiveHilbertSeries_eq_one).
 
 ## Other forms
-
-**The Hilbert series identity characterizes injectivity of the left Koszul map.** Formalized in Tau Ceti as [`TauCeti.mul_preprojectiveHilbertSeries_eq_one_iff`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/Basic.html#TauCeti.mul_preprojectiveHilbertSeries_eq_one_iff).
-
-```lean
-TauCeti.mul_preprojectiveHilbertSeries_eq_one_iff.{u, v, w} (k : Type w) (Q : Type u) [Field k]
-  [Quiver Q] [Fintype Q] [(i j : Q) → Fintype (i ⟶ j)] [DecidableEq Q] :
-  ((1 + PowerSeries.X ^ 2) • 1 -
-          PowerSeries.X •
-            Matrix.of fun v w =>
-              ↑(Fintype.card (Quiver.Symmetrify.of.obj w ⟶ Quiver.Symmetrify.of.obj v))) *
-        TauCeti.preprojectiveHilbertSeries k Q =
-      1 ↔
-    ∀ (v : Q) (y : TauCeti.preprojectiveAlgebra k Q),
-      (TauCeti.preprojectiveMk k Q) (TauCeti.doubledVertexIdempotent k v) * y = y →
-        (∀ (w : Quiver.Symmetrify Q) (b : w ⟶ Quiver.Symmetrify.of.obj v),
-            (TauCeti.preprojectiveMk k Q) (TauCeti.PathAlgebra.ofArrow (Quiver.reverse b)) * y =
-              0) →
-          y = 0
-```
-
-**The Hilbert series identity fails for a finite-dimensional preprojective algebra.** Formalized in Tau Ceti as [`TauCeti.mul_preprojectiveHilbertSeries_ne_one`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Preprojective/HilbertSeries/FiniteDimensional.html#TauCeti.mul_preprojectiveHilbertSeries_ne_one).
-
-```lean
-TauCeti.mul_preprojectiveHilbertSeries_ne_one.{u, v, w} (k : Type w) (Q : Type u) [Field k]
-  [Quiver Q] [Fintype Q] [(i j : Q) → Fintype (i ⟶ j)] [DecidableEq Q] [Nonempty Q]
-  [FiniteDimensional k (TauCeti.preprojectiveAlgebra k Q)] :
-  ((1 + PowerSeries.X ^ 2) • 1 -
-        PowerSeries.X •
-          Matrix.of fun v w =>
-            ↑(Fintype.card (Quiver.Symmetrify.of.obj w ⟶ Quiver.Symmetrify.of.obj v))) *
-      TauCeti.preprojectiveHilbertSeries k Q ≠
-    1
-```
 
 **The Hilbert series identity for a quiver with a superadditive weight.** Formalized in Tau Ceti as [`TauCeti.mul_preprojectiveHilbertSeries_eq_one_of_two_mul_le_sum`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Preprojective/Koszul/Superadditive.html#TauCeti.mul_preprojectiveHilbertSeries_eq_one_of_two_mul_le_sum).
 

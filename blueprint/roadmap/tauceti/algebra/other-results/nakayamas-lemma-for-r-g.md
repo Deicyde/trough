@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq, TauCeti.isSuperfluous_smul_top_of_isNilpotent
+lean: TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq
 statement: formalized
 proof: formalized
 ---
@@ -31,16 +31,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq`](https://taucetiproject.org/docs/TauCeti/Algebra/MonoidAlgebra/LocalRing.html#TauCeti.MonoidAlgebra.bijective_of_forall_exists_mapRingHom_residue_eq).
-
-## Other forms
-
-**Nakayama's lemma for a nilpotent ideal.** Formalized in Tau Ceti as [`TauCeti.isSuperfluous_smul_top_of_isNilpotent`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/Submodule/Superfluous.html#TauCeti.isSuperfluous_smul_top_of_isNilpotent).
-
-```lean
-TauCeti.isSuperfluous_smul_top_of_isNilpotent.{u, v} {R : Type u} {M : Type v} [Semiring R]
-  [AddCommMonoid M] [_root_.Module R M] {I : Ideal R} (hI : IsNilpotent I) :
-  TauCeti.IsSuperfluous (I • ⊤)
-```
 
 ## Sources
 

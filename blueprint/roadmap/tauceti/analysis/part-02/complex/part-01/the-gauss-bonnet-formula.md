@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.UpperHalfPlane.volume_triangle, TauCeti.UpperHalfPlane.CompactConvexPolygon.volume_carrier, TauCeti.UpperHalfPlane.ConvexPolygon.volume_carrier
+lean: TauCeti.UpperHalfPlane.volume_triangle, TauCeti.UpperHalfPlane.ConvexPolygon.volume_carrier_inter_strip, TauCeti.UpperHalfPlane.CompactConvexPolygon.volume_carrier, TauCeti.UpperHalfPlane.ConvexPolygon.volume_carrier
 statement: formalized
 proof: formalized
 ---
@@ -30,6 +30,24 @@ Its statement uses no other declaration mapped here.
 Formalized in Tau Ceti as [`TauCeti.UpperHalfPlane.volume_triangle`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/UpperHalfPlane/Triangle.html#TauCeti.UpperHalfPlane.volume_triangle).
 
 ## Other forms
+
+**Gauss–Bonnet for the triangles of the fan from `∞`.** Formalized in Tau Ceti as [`TauCeti.UpperHalfPlane.ConvexPolygon.volume_carrier_inter_strip`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/UpperHalfPlane/Polygon/Convex/NormalForm.html#TauCeti.UpperHalfPlane.ConvexPolygon.volume_carrier_inter_strip).
+
+```lean
+TauCeti.UpperHalfPlane.ConvexPolygon.volume_carrier_inter_strip {n : ℕ} [NeZero n]
+  (P : TauCeti.UpperHalfPlane.ConvexPolygon n) (h₀ : P.vertex 0 = Sum.inr OnePoint.infty)
+  {i : Fin n} (hi : i ≠ 0) (hi' : i + 1 ≠ 0) :
+  MeasureTheory.volume
+      (P.carrier ∩
+        {z |
+          (TauCeti.UpperHalfPlane.toComplex (P.vertex i)).re ≤ z.re ∧
+            z.re ≤ (TauCeti.UpperHalfPlane.toComplex (P.vertex (i + 1))).re}) =
+    ENNReal.ofReal
+      (Real.pi -
+          TauCeti.UpperHalfPlane.vertexAngle (P.vertex i) (Sum.inr OnePoint.infty)
+            (P.vertex (i + 1)) -
+        TauCeti.UpperHalfPlane.vertexAngle (P.vertex (i + 1)) (P.vertex i) (Sum.inr OnePoint.infty))
+```
 
 **The Gauss–Bonnet formula for compact convex hyperbolic polygons.** Formalized in Tau Ceti as [`TauCeti.UpperHalfPlane.CompactConvexPolygon.volume_carrier`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/UpperHalfPlane/Polygon/GaussBonnet.html#TauCeti.UpperHalfPlane.CompactConvexPolygon.volume_carrier).
 

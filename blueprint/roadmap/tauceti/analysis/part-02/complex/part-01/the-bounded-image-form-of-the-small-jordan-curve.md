@@ -39,7 +39,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Wolff's lemma (`TauCeti.exists_circleLIntegral_sq_lt`)](../../../../measure-theory/integral/wolffs-lemma-tauceti-exists-circlelintegral-sq-l.md)
+- [Wolff's lemma (`TauCeti.exists_circleLIntegral_sq_lt`)](../../../../measure-theory/integral/part-02/wolffs-lemma-tauceti-exists-circlelintegral-sq-l.md)
 
 ## Lean
 

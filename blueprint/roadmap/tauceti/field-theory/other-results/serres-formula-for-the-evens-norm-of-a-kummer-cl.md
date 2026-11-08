@@ -36,7 +36,7 @@ TauCeti.galoisEvens2_kummerClass_eq_cup_add_cup.{u} {K : Type u} [Field K] [Inve
 
 ## Depends on
 
-- [The index-two degree-one Evens norm `Nᴱᵛ : H¹(U, 𝔽₂) → H²(G, 𝔽₂)` for an open subgroup `U` of index two](../../representation-theory/continuous-cohomology-of-profinite-groups/the-index-two-degree-one-evens-norm-nev-h1-u-f2.md)
+- [The index-two degree-one Evens norm](../../representation-theory/continuous-cohomology-of-profinite-groups/the-index-two-degree-one-evens-norm.md)
 
 ## Lean
 

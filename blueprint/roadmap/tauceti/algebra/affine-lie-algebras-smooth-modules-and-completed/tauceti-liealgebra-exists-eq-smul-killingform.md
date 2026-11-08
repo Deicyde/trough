@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Schur's lemma for Lie modules](../lie/schurs-lemma-for-lie-modules.md)
+- [Schur's lemma for Lie modules](../lie/part-02/schurs-lemma-for-lie-modules.md)
 
 ## Lean
 

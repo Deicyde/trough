@@ -25,10 +25,6 @@ TauCeti.groupCohomology.map_unit_comp_coindIso_hom.{u} {k G : Type u} [CommRing 
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Shapiro's isomorphism on an adjunct](shapiros-isomorphism-on-an-adjunct.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.groupCohomology.map_unit_comp_coindIso_hom`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/GroupCohomology/Shapiro.html#TauCeti.groupCohomology.map_unit_comp_coindIso_hom).

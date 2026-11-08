@@ -30,8 +30,8 @@ TauCeti.totallyRamifiedOfDegree_two_eq_padicTwo {x₁ x₂ x₃ x₄ x₅ x₆ :
 - [Euler's theorem on an `n`-th root of unity](../../../../group-theory/other-results/eulers-theorem-on-an-n-th-root-of-unity.md)
 - [The first half of Dedekind's different theorem](../../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
 - [IntermediateField.wildExponent](intermediatefield-wildexponent.md)
-- [Serre's formula for the Hilbert symbol over `ℚ_2`](../../quadratic-forms-and-cohomological-invariants/serres-formula-for-the-hilbert-symbol-over-q-2.md)
-- [The splitting criterion for quaternion algebras (Lam III.2.7 and III.4.2, Serre III.1, Gille-Szamuely 1.1.9)](../../quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
+- [Serre's formula for the Artin conductor](../../local-fields-and-ramification/serres-formula-for-the-artin-conductor.md)
+- [The splitting criterion for quaternion algebras](../../quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 - [TauCeti.relDiscr](../../number-fields-ramification-frobenius-and-the-lmf/tauceti-reldiscr.md)
 

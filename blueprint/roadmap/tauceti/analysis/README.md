@@ -1,8 +1,8 @@
 # Analysis
 
-Results in Tau Ceti's `TauCeti.Analysis` modules: by roadmap, then by area.
+Results in Tau Ceti's `TauCeti.Analysis` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
-## [Analytic Heegaard Floer homology to Calculus](part-01/README.md)
+## [Analytic Heegaard Floer homology to Bounded Variation](part-01/README.md)
 
 - [Analytic Heegaard Floer homology](part-01/analytic-heegaard-floer-homology/README.md)
 - [Banach algebras](part-01/banach-algebras/README.md)
@@ -20,23 +20,27 @@ Results in Tau Ceti's `TauCeti.Analysis` modules: by roadmap, then by area.
 - [Operator-algebra dynamics, crossed products, and equilibrium](part-01/operator-algebra-dynamics-crossed-products-and-e/README.md)
 - [Partial differential equations](part-01/partial-differential-equations/README.md)
 - [Real-analytic geometry and semianalytic triangulation](part-01/real-analytic-geometry-and-semianalytic-triangul/README.md)
-- [The Yamabe problem and conformal scalar curvature](part-01/the-yamabe-problem-and-conformal-scalar-curvatur/README.md)
+- [Weighted orthogonal L² bases — completeness, Hilbert-basis structure, and product bases of orthogonal systems](part-01/weighted-orthogonal-l2-bases-completeness-hilber/README.md)
 - [Analytic](part-01/analytic/README.md)
 - [Bochner](part-01/bochner/README.md)
-- [Calculus](part-01/calculus/README.md)
+- [Bounded Variation](part-01/bounded-variation/README.md)
 
-## [Complex to Other results](part-02/README.md)
+## [Calculus to Other results](part-02/README.md)
 
+- [Calculus](part-02/calculus/README.md)
+- [Completely Monotone](part-02/completely-monotone/README.md)
 - [Complex](part-02/complex/README.md)
 - [Contour](part-02/contour/README.md)
 - [Convex](part-02/convex/README.md)
 - [Distribution](part-02/distribution/README.md)
 - [Fourier](part-02/fourier/README.md)
+- [Fredholm](part-02/fredholm/README.md)
 - [Gradient Flow](part-02/gradient-flow/README.md)
 - [Inner Product Space](part-02/inner-product-space/README.md)
 - [Matrix](part-02/matrix/README.md)
 - [Normed](part-02/normed/README.md)
 - [ODE](part-02/ode/README.md)
+- [Operator Ideal](part-02/operator-ideal/README.md)
 - [PDE](part-02/pde/README.md)
 - [Polynomial](part-02/polynomial/README.md)
 - [Semigroups](part-02/semigroups/README.md)

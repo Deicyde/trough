@@ -36,8 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hensel's lemma with an estimate over a Henselian discrete valuation ring](../../number-theory/part-01/counting-totally-ramified-extensions-of-a-local/part-01/hensels-lemma-with-an-estimate-over-a-henselian.md)
-- [The Jacobian criterion as two equalities, the form `Nonsingular` negates](../elliptic-curve/the-jacobian-criterion-as-two-equalities-the-for.md)
+- [Hensel's lemma without monicity](../../ring-theory/part-02/other-results/part-01/hensels-lemma-without-monicity.md)
 
 ## Lean
 

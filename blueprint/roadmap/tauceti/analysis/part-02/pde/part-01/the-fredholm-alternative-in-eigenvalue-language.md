@@ -32,9 +32,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Fréchet--Kolmogorov criterion for a family vanishing almost everywhere off a fixed bounded set, the form that Rellich--Kondrachov for `W^{1,p}_0(Ω)` consumes](../../../../measure-theory/function/the-frechet-kolmogorov-criterion-for-a-family-va.md)
-- [Hölder's inequality for Young's exponents](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
-- [The variational Fredholm alternative](../../inner-product-space/part-02/the-variational-fredholm-alternative.md)
+- [Rellich–Kondrachov on bounded Lipschitz domains](../../sobolev/part-02/rellich-kondrachov-on-bounded-lipschitz-domains.md)
+- [The variational Fredholm alternative](../../inner-product-space/part-03/the-variational-fredholm-alternative.md)
 
 ## Lean
 

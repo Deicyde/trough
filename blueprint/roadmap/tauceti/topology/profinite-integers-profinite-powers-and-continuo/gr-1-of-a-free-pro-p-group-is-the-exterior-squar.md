@@ -20,7 +20,7 @@ TauCeti.freeProP.exteriorSquareEquivLcsGradedPieceOne.{u} (p : ℕ) [Fact (Nat.P
 
 ## Depends on
 
-- [The `ℤ_p`-basis of `gr_1` of a free pro-`p` group of finite rank, formed by the brackets `[x_i, x_j]` of the generator classes for `i < j` (`TauCeti.lcsGradedPiece_one_freeProP_bijective`)](the-z-p-basis-of-gr-1-of-a-free-pro-p-group-of-f.md)
+- [The `ℤ_p`-basis of `gr_1` of a free pro-`p` group of finite rank](the-z-p-basis-of-gr-1-of-a-free-pro-p-group-of-f.md)
 
 ## Lean
 

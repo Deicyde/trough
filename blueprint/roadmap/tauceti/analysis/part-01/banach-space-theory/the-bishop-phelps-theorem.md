@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.dense_setOf_exists_norm_apply_eq_norm, Convex.dense_setOf_ne_zero_isMaxOn_re, Convex.mem_closure_setOf_ne_zero_isMaxOn_re_of_bddAbove, Convex.frontier_subset_closure_setOf_isMaxOn_re
+lean: TauCeti.dense_setOf_exists_norm_apply_eq_norm, StrongDual.exists_pos_norm_sub_ofReal_smul_le, Convex.exists_isMaxOn_re_of_bddAbove, Convex.dense_setOf_ne_zero_isMaxOn_re, Convex.mem_closure_setOf_ne_zero_isMaxOn_re_of_bddAbove, Convex.frontier_subset_closure_setOf_isMaxOn_re
 statement: formalized
 proof: formalized
 ---
@@ -23,14 +23,39 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Bishop–Phelps lemma](the-bishop-phelps-lemma.md)
-- [Bishop–Phelps support lemma](bishop-phelps-support-lemma.md)
+- [Ekeland's variational principle](../../../topology/metric-space/ekelands-variational-principle.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.dense_setOf_exists_norm_apply_eq_norm`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.html#TauCeti.dense_setOf_exists_norm_apply_eq_norm).
 
 ## Other forms
+
+**The Bishop–Phelps lemma.** Formalized in Tau Ceti as [`StrongDual.exists_pos_norm_sub_ofReal_smul_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.html#StrongDual.exists_pos_norm_sub_ofReal_smul_le).
+
+```lean
+StrongDual.exists_pos_norm_sub_ofReal_smul_le.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RCLike 𝕜]
+  [NormedAddCommGroup E] [NormedSpace 𝕜 E] (f h : StrongDual 𝕜 E) {k : ℝ} (hk₀ : 0 ≤ k)
+  (hk₁ : k < 1) (hf : f ≠ 0)
+  (hpos : ∀ (x : E), k * ‖f‖ * ‖x‖ < RCLike.re (f x) → 0 < RCLike.re (h x)) :
+  ∃ c, 0 < c ∧ ‖f - ↑c • h‖ ≤ k * ‖f‖
+```
+
+**Bishop–Phelps support lemma.** Formalized in Tau Ceti as [`Convex.exists_isMaxOn_re_of_bddAbove`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.html#Convex.exists_isMaxOn_re_of_bddAbove).
+
+```lean
+Convex.exists_isMaxOn_re_of_bddAbove.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2} [RCLike 𝕜]
+  [NormedAddCommGroup E] [NormedSpace 𝕜 E] [NormedSpace ℝ E] [IsScalarTower ℝ 𝕜 E] {C : Set E}
+  (hconv : Convex ℝ C) (hC : IsComplete C) {f : StrongDual 𝕜 E} (hf : f ≠ 0)
+  (hbdd : BddAbove ((fun y => RCLike.re (f y)) '' C)) {k : ℝ} (hk₀ : 0 < k) (hk₁ : k < 1) {z : E}
+  (hz : z ∈ C) :
+  ∃ x ∈ C,
+    k * ‖f‖ * ‖x - z‖ ≤ RCLike.re (f (x - z)) ∧
+      ∃ h,
+        h ≠ 0 ∧
+          IsMaxOn (fun y => RCLike.re (h y)) C x ∧
+            ∀ (w : E), k * ‖f‖ * ‖w‖ < RCLike.re (f w) → 0 < RCLike.re (h w)
+```
 
 **The Bishop–Phelps theorem for support functionals.** Formalized in Tau Ceti as [`Convex.dense_setOf_ne_zero_isMaxOn_re`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.html#Convex.dense_setOf_ne_zero_isMaxOn_re).
 

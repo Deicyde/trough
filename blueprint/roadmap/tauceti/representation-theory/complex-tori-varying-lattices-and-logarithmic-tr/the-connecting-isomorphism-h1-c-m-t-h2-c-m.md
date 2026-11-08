@@ -29,7 +29,6 @@ TauCeti.cyclicConnectingEquiv {Λ E T : Type} [AddCommGroup Λ] [AddCommGroup E]
 
 - [Corestriction through Shapiro's lemma](../homological/corestriction-through-shapiros-lemma.md)
 - [Restriction through Shapiro's lemma](../homological/restriction-through-shapiros-lemma.md)
-- [Shapiro's isomorphism on an adjunct](../homological/shapiros-isomorphism-on-an-adjunct.md)
 
 ## Lean
 

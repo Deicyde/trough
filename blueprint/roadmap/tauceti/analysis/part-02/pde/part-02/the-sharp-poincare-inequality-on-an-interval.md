@@ -30,12 +30,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Fréchet--Kolmogorov criterion for a family vanishing almost everywhere off a fixed bounded set, the form that Rellich--Kondrachov for `W^{1,p}_0(Ω)` consumes](../../../../measure-theory/function/the-frechet-kolmogorov-criterion-for-a-family-va.md)
 - [Green's first identity against `H¹₀(Ω)`](../part-01/greens-first-identity-against-h10.md)
 - [Gårding's inequality on `H¹(Ω)`](../part-01/gardings-inequality-on-h1.md)
-- [Hölder's inequality for Young's exponents](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
-- [The Poincaré inequality on a ball](../../sobolev/part-01/the-poincare-inequality-on-a-ball.md)
+- [The Poincaré inequality on a ball](../../sobolev/part-02/the-poincare-inequality-on-a-ball.md)
 - [The Rayleigh lower bound](../../inner-product-space/part-02/the-rayleigh-lower-bound.md)
+- [Rellich–Kondrachov on bounded Lipschitz domains](../../sobolev/part-02/rellich-kondrachov-on-bounded-lipschitz-domains.md)
 - [TauCeti.Wkp](../../../part-01/partial-differential-equations/tauceti-wkp.md)
 
 ## Lean

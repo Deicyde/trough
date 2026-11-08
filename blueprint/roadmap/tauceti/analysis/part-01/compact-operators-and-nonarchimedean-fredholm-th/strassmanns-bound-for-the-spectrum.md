@@ -32,7 +32,7 @@ ContinuousLinearMap.IsRowCompact.encard_setOf_mem_spectrum_mapCoeffs_le.{u_1, u_
 
 - [The Fredholm determinant is entire](the-fredholm-determinant-is-entire.md)
 - [The nonzero spectrum of a row-compact operator](the-nonzero-spectrum-of-a-row-compact-operator.md)
-- [Strassmann's theorem](../../../ring-theory/p-adic-measures-completed-group-algebras-and-cha/part-01/strassmanns-theorem.md)
+- [Strassmann's theorem](../../../ring-theory/part-01/p-adic-measures-completed-group-algebras-and-cha/part-01/strassmanns-theorem.md)
 
 ## Lean
 

@@ -39,7 +39,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Gauss lemma](the-gauss-lemma.md)
-- [The inverse function theorem for manifolds](../manifold/part-01/the-inverse-function-theorem-for-manifolds.md)
+- [The inverse function theorem for manifolds](../manifold/part-02/the-inverse-function-theorem-for-manifolds.md)
 - [The Koszul formula](../manifold/part-02/the-koszul-formula.md)
 - [TauCeti.Manifold.riemannianExp](tauceti-manifold-riemannianexp.md)
 

@@ -27,7 +27,7 @@ TauCeti.totalVariationOn_eq_lintegral_perimeter.{u_1} {E : Type u_1} [NormedAddC
 
 ## Proof depends on
 
-- [Rademacher's theorem for locally Lipschitz functions](../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../part-02/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 

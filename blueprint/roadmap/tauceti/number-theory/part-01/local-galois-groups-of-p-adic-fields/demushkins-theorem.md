@@ -19,13 +19,13 @@ TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu (p : ℕ) [Fact (Nat.Prime p)]
 
 ## Depends on
 
-- [The Demushkin predicate (Labute, p. 106), for a prime `p` and a topological group `G`](../../../topology/profinite-and-pro-p-groups/part-01/the-demushkin-predicate-labute-p-106-for-a-prime.md)
+- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/the-demushkin-predicate.md)
 
 ## Proof depends on
 
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
-- [The local invariant `inv_K : Br K ≃+ ℚ/ℤ` of a nonarchimedean local field `K`, normalized by arithmetic Frobenius](../class-field-theory/the-local-invariant-inv-k-br-k-q-z-of-a-nonarchi.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
+- [The local invariant](../class-field-theory/the-local-invariant.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

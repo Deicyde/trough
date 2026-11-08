@@ -6,9 +6,11 @@ statement: formalized
 proof: formalized
 ---
 
-# Cut-distance convergence is convergence of all homomorphism densities, for graphons on arbitrary, possibly different, probability carriers, indexed by any type and taken along any filter
+# Cut-distance convergence is convergence of all homomorphism densities
 
-`δ□(Wᵢ, W) → 0` if and only if `t(F, Wᵢ) → t(F, W)` for every finite simple graph `F`.
+**Cut-distance convergence is convergence of all homomorphism densities**, for graphons on
+arbitrary, possibly different, probability carriers, indexed by any type and taken along any
+filter: `δ□(Wᵢ, W) → 0` if and only if `t(F, Wᵢ) → t(F, W)` for every finite simple graph `F`.
 Sequences are the case of `atTop` on `ℕ`.
 
 ```lean

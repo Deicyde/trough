@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The factorisation theorem (Silverman, *The Arithmetic of Elliptic Curves*, III.4.11 in its separable form)](the-factorisation-theorem-silverman-the-arithmet.md)
+- [The factorisation theorem](the-factorisation-theorem.md)
 
 ## Lean
 

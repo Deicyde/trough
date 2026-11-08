@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hölder's inequality for Young's exponents](../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
+- [Hölder's inequality for the integral of a product](../../measure-theory/function/holders-inequality-for-the-integral-of-a-product.md)
 
 ## Lean
 

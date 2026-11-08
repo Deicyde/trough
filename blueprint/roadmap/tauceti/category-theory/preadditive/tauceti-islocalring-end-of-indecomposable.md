@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Fitting's lemma](../../ring-theory/krull-schmidt/fittings-lemma.md)
+- [Fitting's lemma](../../ring-theory/part-01/krull-schmidt/fittings-lemma.md)
 
 ## Lean
 

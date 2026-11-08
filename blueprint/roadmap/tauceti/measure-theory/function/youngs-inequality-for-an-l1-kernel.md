@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: MeasureTheory.Lp.norm_convolutionL_apply_le, TauCeti.norm_convolutionLp_le, TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq
+lean: MeasureTheory.Lp.norm_convolutionL_apply_le, TauCeti.norm_convolutionLp_le
 statement: formalized
 proof: formalized
 ---
@@ -24,10 +24,6 @@ MeasureTheory.Lp.norm_convolutionL_apply_le.{u_1, u_2, u_3} {G : Type u_1} {E : 
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Hölder's inequality for Young's exponents](../euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`MeasureTheory.Lp.norm_convolutionL_apply_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lp/GroupConvolution.html#MeasureTheory.Lp.norm_convolutionL_apply_le).
@@ -42,20 +38,6 @@ TauCeti.norm_convolutionLp_le.{u_1, u_2} {E : Type u_1} {F : Type u_2} [Measurab
   [NormedAddCommGroup F] [NormedSpace ℝ F] {μ : MeasureTheory.Measure E} [μ.IsAddHaarMeasure]
   {p : ENNReal} [Fact (1 ≤ p)] (hp : p ≠ ⊤) (k : E → ℝ) :
   ‖TauCeti.convolutionLp hp k μ‖ ≤ ∫ (y : E), ‖k y‖ ∂μ
-```
-
-**Young's inequality for integral kernels.** Formalized in Tau Ceti as [`TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/SchurTest.html#TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq).
-
-```lean
-TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq.{u_1, u_2} {α : Type u_1} {β : Type u_2}
-  [MeasurableSpace α] [MeasurableSpace β] {μ : MeasureTheory.Measure α}
-  {ν : MeasureTheory.Measure β} [MeasureTheory.SFinite μ] [MeasureTheory.SFinite ν]
-  {k : α → β → ENNReal} (hk : AEMeasurable (Function.uncurry k) (μ.prod ν)) {g : β → ENNReal}
-  (hg : AEMeasurable g ν) {p q r : ℝ} (hp : 1 ≤ p) (hpq : p ≤ q) (hr : p⁻¹ + r⁻¹ = 1 + q⁻¹)
-  {A B : ENNReal} (hA : ∀ᵐ (x : α) ∂μ, ∫⁻ (y : β), k x y ^ r ∂ν ≤ A)
-  (hB : ∀ᵐ (y : β) ∂ν, ∫⁻ (x : α), k x y ^ r ∂μ ≤ B) :
-  ∫⁻ (x : α), (∫⁻ (y : β), k x y * g y ∂ν) ^ q ∂μ ≤
-    A ^ (q * (1 - p⁻¹)) * B * (∫⁻ (y : β), g y ^ p ∂ν) ^ (q / p)
 ```
 
 ## Sources

@@ -19,7 +19,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Dimension shifting in every positive degree, `Hⁱ⁺¹(G, M) ≅ Hⁱ(G, Coind_1^G M ⧸ M)` for `i ≥ 1` and a compact group `G`, as an isomorphism of Mathlib's canonical continuous cohomology](dimension-shifting-in-every-positive-degree-hi-1.md)
+- [Dimension shifting in every positive degree](dimension-shifting-in-every-positive-degree.md)
 - [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 
 ## Lean

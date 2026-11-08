@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.frobenius_reciprocity_classFunction
+lean: TauCeti.frobenius_reciprocity_classFunction, TauCeti.frobenius_reciprocity, TauCeti.frobenius_reciprocity_resFDRep
 statement: formalized
 proof: formalized
 ---
@@ -33,6 +33,26 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.frobenius_reciprocity_classFunction`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.html#TauCeti.frobenius_reciprocity_classFunction).
+
+## Other forms
+
+**Frobenius reciprocity as a character identity.** Formalized in Tau Ceti as [`TauCeti.frobenius_reciprocity`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.html#TauCeti.frobenius_reciprocity).
+
+```lean
+TauCeti.frobenius_reciprocity.{u, v} {k : Type u} {G : Type v} [Field k] [Group G] {S : Subgroup G}
+  [Fintype G] (hG : IsUnit ↑(Nat.card G)) (A : FDRep k ↥S) (B : FDRep k G) :
+  (↑(Nat.card G))⁻¹ * ∑ g, (TauCeti.indFDRep A).character g * B.character g⁻¹ =
+    (↑(Nat.card ↥S))⁻¹ * ∑ s, A.character s * B.character (↑s)⁻¹
+```
+
+**Frobenius reciprocity in the other direction.** Formalized in Tau Ceti as [`TauCeti.frobenius_reciprocity_resFDRep`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.html#TauCeti.frobenius_reciprocity_resFDRep).
+
+```lean
+TauCeti.frobenius_reciprocity_resFDRep.{u, v} {k : Type u} {G : Type v} [Field k] [Group G]
+  {S : Subgroup G} [Fintype G] (hG : IsUnit ↑(Nat.card G)) (A : FDRep k ↥S) (B : FDRep k G) :
+  (↑(Nat.card ↥S))⁻¹ * ∑ s, B.character ↑s * A.character s⁻¹ =
+    (↑(Nat.card G))⁻¹ * ∑ g, B.character g * (TauCeti.indFDRep A).character g⁻¹
+```
 
 ## Sources
 

@@ -30,7 +30,7 @@ TauCeti.cartanEquiv.{u} (R : Type u) [Ring R]
 
 - [The dual Noether isomorphism](../../category-theory/exact/the-dual-noether-isomorphism.md)
 - [The Noether isomorphism for exact categories](../../category-theory/exact/the-noether-isomorphism-for-exact-categories.md)
-- [The resolution theorem for finite projective resolutions](../grothendieck-groups-cartan-maps-and-euler-forms/part-02/the-resolution-theorem-for-finite-projective-res.md)
+- [The resolution theorem for finite projective resolutions](../../category-theory/grothendieck-group/the-resolution-theorem-for-finite-projective-res.md)
 
 ## Lean
 

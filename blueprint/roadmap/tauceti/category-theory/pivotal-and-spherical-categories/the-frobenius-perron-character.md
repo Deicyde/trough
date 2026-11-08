@@ -24,8 +24,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Collatz–Wielandt bound](collatz-wielandt-bound.md)
-- [Perron–Frobenius theorem for nonnegative matrices](perron-frobenius-theorem-for-nonnegative-matrice.md)
+- [Collatz–Wielandt bound](../../linear-algebra/matrix/collatz-wielandt-bound.md)
+- [Perron–Frobenius](../../linear-algebra/matrix/perron-frobenius.md)
 
 ## Lean
 

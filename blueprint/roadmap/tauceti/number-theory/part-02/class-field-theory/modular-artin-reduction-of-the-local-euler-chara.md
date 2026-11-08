@@ -41,11 +41,11 @@ Its statement uses no other declaration mapped here.
 - [The dual Noether isomorphism](../../../category-theory/exact/the-dual-noether-isomorphism.md)
 - [The Euler characteristic formula and `G₀`](the-euler-characteristic-formula-and-g0.md)
 - [Kolchin's common fixed vector theorem](../../../linear-algebra/other-results/kolchins-common-fixed-vector-theorem.md)
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
-- [The local invariant `inv_K : Br K ≃+ ℚ/ℤ` of a nonarchimedean local field `K`, normalized by arithmetic Frobenius](../../part-01/class-field-theory/the-local-invariant-inv-k-br-k-q-z-of-a-nonarchi.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
+- [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [Local Tate duality in degree one](local-tate-duality-in-degree-one.md)
 - [The Noether isomorphism for exact categories](../../../category-theory/exact/the-noether-isomorphism-for-exact-categories.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

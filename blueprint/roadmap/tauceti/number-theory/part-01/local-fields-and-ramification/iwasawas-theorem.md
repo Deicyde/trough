@@ -19,7 +19,7 @@ TauCeti.nonempty_continuousMulEquiv_iwasawaGroup.{u} (K : Type u) [Field K] [Val
 
 ## Depends on
 
-- [The wild inertia subgroup `P_K` of the absolute Galois group of a nonarchimedean local field `K`](the-wild-inertia-subgroup-p-k-of-the-absolute-ga.md)
+- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
 
 ## Proof depends on
 
@@ -27,7 +27,7 @@ TauCeti.nonempty_continuousMulEquiv_iwasawaGroup.{u} (K : Type u) [Field K] [Val
 - [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/eulers-theorem-on-an-n-th-root-of-unity.md)
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
 - [The Galois group of the maximal unramified extension is the profinite integers](the-galois-group-of-the-maximal-unramified-exten.md)
-- [The profinite power `x ^ᶻ a` of an element `x` of a profinite group by a profinite integer `a`](../../../topology/profinite-integers-profinite-powers-and-continuo/the-profinite-power-x-z-a-of-an-element-x-of-a-p.md)
+- [The profinite power](../../../topology/profinite-integers-profinite-powers-and-continuo/the-profinite-power.md)
 - [Tame inertia is the prime-to-`p` Tate module](tame-inertia-is-the-prime-to-p-tate-module.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
 

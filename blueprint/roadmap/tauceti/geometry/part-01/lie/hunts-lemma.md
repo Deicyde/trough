@@ -25,8 +25,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hadamard's identity in the algebra of smooth functions](../manifold/part-01/hadamards-identity-in-the-algebra-of-smooth-func.md)
-- [Hadamard's lemma in coordinates](../manifold/part-01/hadamards-lemma-in-coordinates.md)
+- [Hadamard's identity in the algebra of smooth functions](../manifold/part-02/hadamards-identity-in-the-algebra-of-smooth-func.md)
+- [Hadamard's lemma in coordinates](../manifold/part-02/hadamards-lemma-in-coordinates.md)
 
 ## Lean
 

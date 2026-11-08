@@ -26,9 +26,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Kedlaya's Hilbert basis theorem for `A^r` (Kedlaya, Theorem 3.2)](../../ring-theory/mv-power-series/kedlayas-hilbert-basis-theorem-for-a-r-kedlaya-t.md)
-- [The open mapping theorem over a Tate ring](the-open-mapping-theorem-over-a-tate-ring.md)
-- [TauCeti.IsAffinoidAlgebra.continuous_algHom](../../ring-theory/rigid-analytic-geometry/tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/mv-power-series/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
+- [The open mapping theorem over a Tate ring](../../ring-theory/part-01/huber/the-open-mapping-theorem-over-a-tate-ring.md)
+- [TauCeti.IsAffinoidAlgebra.continuous_algHom](../../ring-theory/part-01/rigid-analytic-geometry/tauceti-isaffinoidalgebra-continuous-alghom.md)
 
 ## Lean
 

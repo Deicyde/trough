@@ -1,6 +1,6 @@
 # Geometric representation categories and coherent local transport
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GeometricRepresentationCategories/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GeometricRepresentationCategories/README.md) names as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [CategoryTheory.MonoidalCategory.MonoidalLeftAction.pseudofunctorEquiv](categorytheory-monoidalcategory-monoidalleftacti.md)
 - [CategoryTheory.MonoidalCategory.MonoidalLeftAction.strongTransEquiv](categorytheory-monoidalcategory-monoidalleftacti-2.md)
@@ -11,5 +11,3 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.isObjectwiseCongruenceInvariant_iff_of_equivalence](tauceti-isobjectwisecongruenceinvariant-iff-of-e.md)
 - [MonoidHom.restrictScalarsMonoidalLeftAction](monoidhom-restrictscalarsmonoidalleftaction.md)
 - [TauCeti.DerivationExtension](tauceti-derivationextension.md)
-- [Fitting's lemma, categorically](fittings-lemma-categorically.md)
-- [The Krull-Schmidt theorem with no ambient object](the-krull-schmidt-theorem-with-no-ambient-object.md)

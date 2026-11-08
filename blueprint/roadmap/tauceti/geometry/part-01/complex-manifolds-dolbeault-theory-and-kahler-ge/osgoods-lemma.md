@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cauchy's integral formula for the `k`-th derivative, homology form](../../../analysis/part-01/contour-integration-and-the-hungerbuhler-wasem-g/cauchys-integral-formula-for-the-k-th-derivative.md)
+- [The Cauchy integral formula on a polydisc](the-cauchy-integral-formula-on-a-polydisc.md)
 
 ## Lean
 

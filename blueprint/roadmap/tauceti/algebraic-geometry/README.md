@@ -1,6 +1,6 @@
 # Algebraic Geometry
 
-Results in Tau Ceti's `TauCeti.AlgebraicGeometry` modules: by roadmap, then by area.
+Results in Tau Ceti's `TauCeti.AlgebraicGeometry` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
 - [Algebraic vector bundles](algebraic-vector-bundles/README.md)
 - [Analytic families and moduli of complex curves](analytic-families-and-moduli-of-complex-curves/README.md)
@@ -10,5 +10,6 @@ Results in Tau Ceti's `TauCeti.AlgebraicGeometry` modules: by roadmap, then by a
 - [Modular curves, following Katz–Mazur](modular-curves-following-katz-mazur/README.md)
 - [Stable reduction of curves and stable maps](stable-reduction-of-curves-and-stable-maps/README.md)
 - [Étale cohomology foundations](etale-cohomology-foundations/README.md)
+- [Adic Space](adic-space/README.md)
 - [Elliptic Curve](elliptic-curve/README.md)
 - [Other results](other-results/README.md)

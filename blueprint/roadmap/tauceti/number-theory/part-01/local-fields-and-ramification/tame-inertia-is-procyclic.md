@@ -20,7 +20,7 @@ TauCeti.exists_topologicalClosure_zpowers_eq_tameInertia.{u} (K : Type u) [Field
 
 ## Depends on
 
-- [The wild inertia subgroup `P_K` of the absolute Galois group of a nonarchimedean local field `K`](the-wild-inertia-subgroup-p-k-of-the-absolute-ga.md)
+- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
 
 ## Proof depends on
 

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition
+lean: TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition, TauCeti.Contour.hungerbuhlerWasem_residueTheorem
 statement: formalized
 proof: formalized
 ---
@@ -38,12 +38,30 @@ TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition {γ : ℝ → ℂ
 
 ## Proof depends on
 
+- [The canonical Laurent decomposition](../../part-02/contour/the-canonical-laurent-decomposition.md)
 - [The exact local angle contribution of one exit-time cap window](the-exact-local-angle-contribution-of-one-exit-t.md)
 - [First exit time at radius `ε` (left side)](first-exit-time-at-radius-left-side.md)
+- [The homology Cauchy theorem (roadmap `homologyCauchyTheorem`, Layer 3)](the-homology-cauchy-theorem-roadmap-homologycauc.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Crossing/ImmersionDecomposition.html#TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition).
+
+## Other forms
+
+**The Hungerbühler–Wasem generalized residue theorem (HW Thm 3.3).** Formalized in Tau Ceti as [`TauCeti.Contour.hungerbuhlerWasem_residueTheorem`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/HungerbuhlerWasem.html#TauCeti.Contour.hungerbuhlerWasem_residueTheorem).
+
+```lean
+TauCeti.Contour.hungerbuhlerWasem_residueTheorem {f : ℂ → ℂ} {U : Set ℂ} (hU : IsOpen U)
+  (S : Finset ℂ) (γ : ℝ → ℂ) (a b : ℝ) (hγ_imm : TauCeti.Contour.IsPwC1ImmersionOn γ a b)
+  (hSU : ↑S ⊆ U) (hclosed : γ a = γ b) (hγa : γ a ∉ ↑S) (hγU : ∀ t ∈ Set.uIcc a b, γ t ∈ U)
+  (hf : DifferentiableOn ℂ f (U \ ↑S)) (hmero : ∀ s ∈ S, MeromorphicAt f s)
+  (hnull : TauCeti.Contour.IsNullHomologous γ a b U)
+  (hA : TauCeti.Contour.ConditionAprime γ a b f S) (hB : TauCeti.Contour.ConditionB γ a b f) :
+  TauCeti.Contour.HasCauchyPV γ a b f
+    (2 * ↑Real.pi * Complex.I *
+      ∑ s ∈ S, TauCeti.Contour.windingNumber γ a b s * TauCeti.Contour.residue f s)
+```
 
 ## Sources
 

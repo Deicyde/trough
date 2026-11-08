@@ -28,7 +28,6 @@ Its statement uses no other declaration mapped here.
 - [Generalized winding number (HW Def 2.1)](../../contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number-hw-def-2-1.md)
 - [The homology Cauchy theorem (roadmap `homologyCauchyTheorem`, Layer 3)](../../contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem-roadmap-homologycauc.md)
 - [The Mayer–Vietoris isomorphism of a sphere](../../../../algebraic-topology/singular/the-mayer-vietoris-isomorphism-of-a-sphere.md)
-- [The reduced Mayer–Vietoris connecting morphism is an isomorphism when both open sets are acyclic in the adjacent degrees](../../../../algebraic-topology/singular/the-reduced-mayer-vietoris-connecting-morphism-i.md)
 
 ## Lean
 

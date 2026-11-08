@@ -42,7 +42,7 @@ Its statement uses no other declaration mapped here.
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere`](https://taucetiproject.org/docs/TauCeti/KnotTheory/HomologyConcordance.html#TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere).
+Formalized in Tau Ceti as [`TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere`](https://taucetiproject.org/docs/TauCeti/KnotTheory/HomologyConcordance.html#TauCeti.LevineHomologyConcordanceTheorem.exists_isEmpty_diffeomorph_sphere), assuming [`TauCeti.LevineHomologyConcordanceTheorem`](https://taucetiproject.org/docs/TauCeti/KnotTheory/HomologyConcordance.html#TauCeti.LevineHomologyConcordanceTheorem), a proposition Tau Ceti defines.
 
 ## Sources
 

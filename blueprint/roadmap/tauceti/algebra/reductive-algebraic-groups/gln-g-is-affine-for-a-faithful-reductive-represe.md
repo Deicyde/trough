@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Matsushima's criterion, affine direction, in characteristic zero](matsushimas-criterion-affine-direction-in-charac.md)
+- [Matsushima's criterion, affine direction, in characteristic zero](../algebraic-group/matsushimas-criterion-affine-direction-in-charac.md)
 
 ## Lean
 

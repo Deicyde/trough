@@ -2,6 +2,7 @@
 navigation: transparent
 ---
 
-# Part 2 of 2
+# Symplectic to Other results
 
+- [Symplectic](symplectic/README.md)
 - [Other results](other-results/README.md)

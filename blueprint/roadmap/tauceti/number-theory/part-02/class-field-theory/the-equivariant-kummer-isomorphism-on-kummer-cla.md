@@ -37,11 +37,11 @@ TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv.{u_1} {F 
 
 ## Depends on
 
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 
 ## Proof depends on
 
-- [The Kummer isomorphism is Galois equivariant](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-is-galois-equivariant.md)
+- [The Kummer isomorphism on square classes is natural in field isomorphisms](../../../field-theory/galois-cohomology/the-kummer-isomorphism-on-square-classes-is-natu.md)
 
 ## Lean
 

@@ -28,17 +28,13 @@ TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le (h : TauCeti.AlgorithmicSzpiroC
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The Jacobian criterion as two equalities, the form `Nonsingular` negates](the-jacobian-criterion-as-two-equalities-the-for.md)
-
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.html#TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le).
+Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.html#TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le), assuming [`TauCeti.AlgorithmicSzpiroConjecture`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture), a proposition Tau Ceti defines.
 
 ## Other forms
 
-**Szpiro's conjecture for Frey curves.** Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le_mul_radical_rpow`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le_mul_radical_rpow).
+**Szpiro's conjecture for Frey curves.** Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le_mul_radical_rpow`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le_mul_radical_rpow), assuming [`TauCeti.AlgorithmicSzpiroConjecture`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture), a proposition Tau Ceti defines.
 
 ```lean
 TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le_mul_radical_rpow
@@ -53,14 +49,14 @@ TauCeti.AlgorithmicSzpiroConjecture.exists_sq_le_mul_radical_rpow
                 C * ↑(UniqueFactorizationMonoid.radical (A * B * (A + B))) ^ (6 + ε)
 ```
 
-**Szpiro's conjecture implies asymptotic Fermat.** Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.asymptoticFermat`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture.asymptoticFermat).
+**Szpiro's conjecture implies asymptotic Fermat.** Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.asymptoticFermat`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture.asymptoticFermat), assuming [`TauCeti.AlgorithmicSzpiroConjecture`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture), a proposition Tau Ceti defines.
 
 ```lean
 TauCeti.AlgorithmicSzpiroConjecture.asymptoticFermat (h : TauCeti.AlgorithmicSzpiroConjecture) :
   TauCeti.AsymptoticFermat
 ```
 
-**Szpiro's conjecture implies the abc conjecture with exponent `3 / 2`.** Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.abcConjectureWithExponent`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.html#TauCeti.AlgorithmicSzpiroConjecture.abcConjectureWithExponent).
+**Szpiro's conjecture implies the abc conjecture with exponent `3 / 2`.** Formalized in Tau Ceti as [`TauCeti.AlgorithmicSzpiroConjecture.abcConjectureWithExponent`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FreyCurve/Abc.html#TauCeti.AlgorithmicSzpiroConjecture.abcConjectureWithExponent), assuming [`TauCeti.AlgorithmicSzpiroConjecture`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Szpiro.html#TauCeti.AlgorithmicSzpiroConjecture), a proposition Tau Ceti defines.
 
 ```lean
 TauCeti.AlgorithmicSzpiroConjecture.abcConjectureWithExponent

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: PowerSeries.IsRestricted.norm_evalAt_le_gaussNorm_mul_norm_prod, PowerSeries.IsRestricted.norm_evalAt_le_gaussNorm_mul_norm_factorial, PowerSeries.IsRestricted.norm_evalAt_le_gaussNorm_mul_norm_factorial_pow, TauCeti.norm_schneider_auxiliary_le
+lean: PowerSeries.IsRestricted.norm_evalAt_le_gaussNorm_mul_norm_prod, PowerSeries.IsRestricted.norm_evalAt_le_gaussNorm_mul_norm_factorial, PowerSeries.IsRestricted.norm_evalAt_le_gaussNorm_mul_norm_factorial_pow
 statement: formalized
 proof: formalized
 ---
@@ -33,8 +33,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Schwarz lemma for restricted series](../../../ring-theory/p-adic-measures-completed-group-algebras-and-cha/part-01/the-schwarz-lemma-for-restricted-series.md)
-- [Schwarz's lemma with prescribed zeros](../../../analysis/part-02/complex/part-02/schwarzs-lemma-with-prescribed-zeros.md)
+- [The Schwarz lemma for restricted series](../../../ring-theory/part-01/p-adic-measures-completed-group-algebras-and-cha/part-01/the-schwarz-lemma-for-restricted-series.md)
 
 ## Lean
 
@@ -68,23 +67,6 @@ PowerSeries.IsRestricted.norm_evalAt_le_gaussNorm_mul_norm_factorial_pow.{u_1} {
   ‖f.evalAt ((algebraMap ℚ_[p] K) ↑x)‖ ≤
     PowerSeries.gaussNorm norm c f *
       (‖↑(N / q).factorial‖ ^ (q - 1) / c ^ {x ∈ Finset.range N | ¬q ∣ x}.card) ^ T
-```
-
-**Schwarz's lemma for Schneider's auxiliary function.** Formalized in Tau Ceti as [`TauCeti.norm_schneider_auxiliary_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Transcendental/GelfondSchneider/AnalyticBound.html#TauCeti.norm_schneider_auxiliary_le).
-
-```lean
-TauCeti.norm_schneider_auxiliary_le {β : ℂ} (hβ : ∀ (q : ℚ), ↑q ≠ β) {l : ℂ} {L D₁ D₂ : ℕ}
-  {a : Fin D₁ → Fin D₂ → ℂ} {A R T : ℝ} (ha : ∀ (i : Fin D₁) (j : Fin D₂), ‖a i j‖ ≤ A)
-  (hzero :
-    ∀ (u v : ℕ),
-      1 ≤ u →
-        u ≤ L →
-          1 ≤ v →
-            v ≤ L →
-              ∑ i, ∑ j, a i j * (↑u + ↑v * β) ^ ↑i * Complex.exp (↑↑j * l * (↑u + ↑v * β)) = 0)
-  (hR : ↑L * (1 + ‖β‖) ≤ R) (hRT : 3 * R ≤ T) (hT : 1 ≤ T) {z : ℂ} (hz : ‖z‖ ≤ R) :
-  ‖∑ i, ∑ j, a i j * z ^ ↑i * Complex.exp (↑↑j * l * z)‖ ≤
-    ↑D₁ * ↑D₂ * A * T ^ D₁ * Real.exp (↑D₂ * ‖l‖ * T) * (3 * R / T) ^ L ^ 2
 ```
 
 ## Sources

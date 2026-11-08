@@ -26,10 +26,6 @@ TauCeti.HeisenbergDGA.minimalModel_m_three.{u_1} (R : Type u_1) [CommRing R] :
 
 - [TauCeti.AInfinityAlgebra.transfer](tauceti-ainfinityalgebra-transfer.md)
 
-## Proof depends on
-
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../homology/the-suspended-stasheff-identity-free-of-the-stru.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.HeisenbergDGA.minimalModel_m_three`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/AInfinity/Algebra/Transfer/Heisenberg.html#TauCeti.HeisenbergDGA.minimalModel_m_three).

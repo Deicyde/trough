@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Serre's criterion](../../../ring-theory/ideal/serres-criterion.md)
+- [Serre's criterion](../../../ring-theory/part-01/ideal/serres-criterion.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

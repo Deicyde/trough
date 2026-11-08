@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hille–Yosida resolvent bound](hille-yosida-resolvent-bound.md)
+- [Hille--Yosida characterization](../../part-01/one-parameter-semigroups-completely-monotone-and/hille-yosida-characterization.md)
 
 ## Lean
 

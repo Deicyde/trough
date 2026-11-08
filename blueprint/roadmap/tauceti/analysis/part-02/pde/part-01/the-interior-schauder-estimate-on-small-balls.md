@@ -73,21 +73,22 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The du Bois-Reymond lemma](../../../part-01/integral-currents-geometric-homology-and-minimiz/the-du-bois-reymond-lemma.md)
+- [The du Bois-Reymond lemma](../../distribution/the-du-bois-reymond-lemma.md)
 - [Green's first identity against `H¹₀(Ω)`](greens-first-identity-against-h10.md)
 - [Green's second identity against a test function](../../sobolev/part-01/greens-second-identity-against-a-test-function.md)
 - [Gårding's inequality on `H¹(Ω)`](gardings-inequality-on-h1.md)
-- [Hölder's bound on an average](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-bound-on-an-average.md)
-- [Hölder's inequality for Young's exponents](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
-- [Jensen's inequality for the square of a mean](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/jensens-inequality-for-the-square-of-a-mean.md)
-- [The Lipschitz bound for bounded harmonic functions](../../inner-product-space/part-01/the-lipschitz-bound-for-bounded-harmonic-functio.md)
+- [Hölder's bound on an average](../../../../measure-theory/integral/part-01/holders-bound-on-an-average.md)
+- [Hölder's inequality for the integral of a product](../../../../measure-theory/function/holders-inequality-for-the-integral-of-a-product.md)
+- [Jensen's inequality for the square of a mean](../../../../measure-theory/integral/part-01/jensens-inequality-for-the-square-of-a-mean.md)
+- [The Lipschitz bound for bounded harmonic functions](../../inner-product-space/part-02/the-lipschitz-bound-for-bounded-harmonic-functio.md)
 - [The local Campanato estimate](../../../../measure-theory/function/the-local-campanato-estimate.md)
-- [Local Hölder bounds near a compact set are uniform on a thickening](../../../part-01/fuchsian-groups-and-orbifold-riemann-surfaces/part-02/local-holder-bounds-near-a-compact-set-are-unifo.md)
-- [The Poincaré inequality on a ball](../../sobolev/part-01/the-poincare-inequality-on-a-ball.md)
-- [Rademacher's theorem for locally Lipschitz functions](../../../part-01/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Local Hölder bounds near a compact set are uniform on a thickening](../../../../topology/metric-space/local-holder-bounds-near-a-compact-set-are-unifo.md)
+- [Meyers–Serrin: `H = W` in `W^{k,p}(Ω)`](../../sobolev/part-01/meyers-serrin-h-w-in-w-k-p.md)
+- [The Poincaré inequality on a ball](../../sobolev/part-02/the-poincare-inequality-on-a-ball.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 - [Schauder estimate for a Hessian supported in a ball](../part-02/schauder-estimate-for-a-hessian-supported-in-a-b.md)
 - [TauCeti.Wkp](../../../part-01/partial-differential-equations/tauceti-wkp.md)
-- [Weyl's lemma for `\bar∂`](../../complex/part-02/weyls-lemma-for-bar.md)
+- [Weyl's lemma for continuous functions](../../inner-product-space/part-03/weyls-lemma-for-continuous-functions.md)
 
 ## Lean
 

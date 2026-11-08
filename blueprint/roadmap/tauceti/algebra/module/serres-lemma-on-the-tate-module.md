@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Serre's lemma](../../number-theory/part-01/local-fields-and-ramification/serres-lemma.md)
+- [Serre's lemma](../../ring-theory/part-02/other-results/part-02/serres-lemma.md)
 
 ## Lean
 

@@ -26,7 +26,7 @@ TauCeti.frobeniusPerronDim.{w, w', v, u} (k : Type w') [Field k] [IsAlgClosed k]
 
 ## Proof depends on
 
-- [Frobenius reciprocity in multiplicity form](frobenius-reciprocity-in-multiplicity-form.md)
+- [Frobenius reciprocity in multiplicity form](../other-results/frobenius-reciprocity-in-multiplicity-form.md)
 - [The Frobenius–Perron character](the-frobenius-perron-character.md)
 - [TauCeti.fusionCoeff](tauceti-fusioncoeff.md)
 

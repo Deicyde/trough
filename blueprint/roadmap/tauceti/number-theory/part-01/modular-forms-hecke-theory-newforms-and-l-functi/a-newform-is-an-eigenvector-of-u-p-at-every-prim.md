@@ -6,9 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue `a_p(f)` (Atkin–Lehner; Li; Diamond–Shurman, Theorem 5.8.2; Miyake, Theorem 4.6.13)
+# A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue `a_p(f)`
 
-Together
+**A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue
+`a_p(f)`** (Atkin–Lehner; Li; Diamond–Shurman, Theorem 5.8.2; Miyake, Theorem 4.6.13). Together
 with the good eigensystem this makes a newform a full Hecke eigenform (`Newform.toEigenform`).
 The statement is on the bad-prime operator `heckeUCuspNat`, matching the `U_p`-spelled API of
 `HeckeSlash/BadPrime`; `Newform.heckeTCuspNat_eq_qExpansion_coeff_smul` is the statement at

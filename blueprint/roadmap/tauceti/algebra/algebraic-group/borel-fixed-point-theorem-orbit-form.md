@@ -37,7 +37,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Jacobian criterion for étaleness](../../ring-theory/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
+- [The Jacobian criterion for étaleness](../../ring-theory/part-02/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
 - [The Lie--Kolchin theorem](the-lie-kolchin-theorem.md)
 
 ## Lean

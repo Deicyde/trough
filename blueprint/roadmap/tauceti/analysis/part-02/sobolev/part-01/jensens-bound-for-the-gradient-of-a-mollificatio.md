@@ -37,7 +37,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jensen's inequality from below](../../complex/part-01/jensens-inequality-from-below.md)
+- [Jensen's inequality for convolution](../../other-results/jensens-inequality-for-convolution.md)
 
 ## Lean
 

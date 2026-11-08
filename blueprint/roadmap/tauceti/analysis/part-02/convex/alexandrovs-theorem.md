@@ -37,8 +37,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Rademacher's theorem for locally Lipschitz functions](../../part-01/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
-- [Sard's lemma on the flat stratum](../../part-01/analytic-heegaard-floer-homology/sards-lemma-on-the-flat-stratum.md)
+- [Rademacher's theorem for extended-real convex functions](rademachers-theorem-for-extended-real-convex-fun.md)
+- [Rademacher's theorem for locally Lipschitz functions](../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Sard's lemma on the flat stratum](../calculus/part-02/sards-lemma-on-the-flat-stratum.md)
 
 ## Lean
 

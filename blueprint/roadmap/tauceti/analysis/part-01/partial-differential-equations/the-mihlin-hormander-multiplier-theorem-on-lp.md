@@ -42,8 +42,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Calderón–Zygmund theorem, weak type `(1, 1)`](../../../measure-theory/integral/the-calderon-zygmund-theorem-weak-type-1-1.md)
-- [Hölder's inequality for Young's exponents](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
+- [The Calderón–Zygmund theorem](../../../measure-theory/integral/part-01/the-calderon-zygmund-theorem.md)
+- [Hölder's inequality for the integral of a product](../../../measure-theory/function/holders-inequality-for-the-integral-of-a-product.md)
 - [Plancherel bound for Fourier multipliers](../../part-02/fourier/plancherel-bound-for-fourier-multipliers.md)
 - [Plancherel's theorem for the inverse Fourier transform of Schwartz functions](../../part-02/distribution/plancherels-theorem-for-the-inverse-fourier-tran.md)
 - [The weighted Plancherel bound](../../part-02/distribution/the-weighted-plancherel-bound.md)

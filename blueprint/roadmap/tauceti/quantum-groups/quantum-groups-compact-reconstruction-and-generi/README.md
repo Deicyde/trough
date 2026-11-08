@@ -1,6 +1,6 @@
 # Quantum groups: compact reconstruction and generic rank-one representations
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/QuantumGroups/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/QuantumGroups/README.md) names as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Complete reducibility](complete-reducibility.md)
 - [TauCeti.UqSl2.isLocallyFiniteModule_iff_exists_linearEquiv_dfinsupp_ladderModule](tauceti-uqsl2-islocallyfinitemodule-iff-exists-l.md)
@@ -15,7 +15,3 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The simple quotient of `M(ε q^m)`](the-simple-quotient-of-m-q-m.md)
 - [The evaluation isomorphism](the-evaluation-isomorphism.md)
 - [The isotypic decomposition of a semisimple module](the-isotypic-decomposition-of-a-semisimple-modul.md)
-- [The double centralizer theorem](the-double-centralizer-theorem.md)
-- [The multiplicity theorem](the-multiplicity-theorem.md)
-- [The multiplicity theorem for a product of simple modules](the-multiplicity-theorem-for-a-product-of-simple.md)
-- [Schur's lemma, vanishing form](schurs-lemma-vanishing-form.md)

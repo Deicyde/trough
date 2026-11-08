@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top, TauCeti.GLSymplecticFin.isSimpleGroup_quotient_center
+lean: Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top
 statement: formalized
 proof: formalized
 ---
@@ -22,23 +22,9 @@ Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top.{u_1, u_2
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Iwasawa's criterion for a quotient](../../group-theory/group-action/iwasawas-criterion-for-a-quotient.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/Projectivization/PSL/Simple.html#Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_commutator_eq_top).
-
-## Other forms
-
-**Iwasawa's theorem for the projective symplectic group.** Formalized in Tau Ceti as [`TauCeti.GLSymplecticFin.isSimpleGroup_quotient_center`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/Matrix/GeneralLinearGroup/Symplectic/Simple.html#TauCeti.GLSymplecticFin.isSimpleGroup_quotient_center).
-
-```lean
-TauCeti.GLSymplecticFin.isSimpleGroup_quotient_center.{u} {K : Type u} [Field K] {m : ℕ} [NeZero m]
-  (h : commutator ↥(TauCeti.GLSymplecticFin m K) = ⊤) :
-  IsSimpleGroup (↥(TauCeti.GLSymplecticFin m K) ⧸ Subgroup.center ↥(TauCeti.GLSymplecticFin m K))
-```
 
 ## Sources
 

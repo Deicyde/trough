@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply, Matrix.IsHermitian.sum_sq_eigenvalues₀_sub_le_frobenius_norm_sub_sq
+lean: LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply
 statement: formalized
 proof: formalized
 ---
@@ -27,16 +27,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/HoffmanWielandt/Basic.html#LinearMap.IsSymmetric.sum_sq_eigenvalues_sub_le_sum_sq_norm_apply).
-
-## Other forms
-
-**The Hoffman–Wielandt inequality for Hermitian matrices.** Formalized in Tau Ceti as [`Matrix.IsHermitian.sum_sq_eigenvalues₀_sub_le_frobenius_norm_sub_sq`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/HoffmanWielandt.html#Matrix.IsHermitian.sum_sq_eigenvalues%E2%82%80_sub_le_frobenius_norm_sub_sq).
-
-```lean
-Matrix.IsHermitian.sum_sq_eigenvalues₀_sub_le_frobenius_norm_sub_sq.{u_1, u_2} {n : Type u_1}
-  {𝕜 : Type u_2} [Fintype n] [DecidableEq n] [RCLike 𝕜] {A B : Matrix n n 𝕜} (hA : A.IsHermitian)
-  (hB : B.IsHermitian) : ∑ i, (hA.eigenvalues₀ i - hB.eigenvalues₀ i) ^ 2 ≤ ‖A - B‖ ^ 2
-```
 
 ## Sources
 

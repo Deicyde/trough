@@ -42,7 +42,7 @@ AEMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn.{u_1, u_2} {X : Type 
   ∃ F ⊆ s, IsClosed F ∧ μ (s \ F) < ε ∧ ContinuousOn f F
 ```
 
-**Lusin's theorem for an almost-everywhere strongly measurable map into a pseudometrizable space.** Formalized in Tau Ceti as [`MeasureTheory.AEStronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lusin.html#MeasureTheory.AEStronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn).
+**Lusin's theorem.** Formalized in Tau Ceti as [`MeasureTheory.AEStronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lusin.html#MeasureTheory.AEStronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn).
 
 ```lean
 MeasureTheory.AEStronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn.{u_1, u_3}

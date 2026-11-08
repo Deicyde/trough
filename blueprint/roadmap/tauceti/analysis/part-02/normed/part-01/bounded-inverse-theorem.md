@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The open mapping theorem](../../complex/part-02/the-open-mapping-theorem.md)
+- [Open Mapping Theorem for normed modules over a Tate ring](../part-02/open-mapping-theorem-for-normed-modules-over-a-t.md)
 
 ## Lean
 

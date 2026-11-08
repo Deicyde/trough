@@ -29,6 +29,7 @@ TauCeti.rouche {f g : ℂ → ℂ} {c : ℂ} {R : ℝ} (hf : AnalyticOnNhd ℂ f
 
 ## Proof depends on
 
+- [Cauchy–Goursat for a pole-free meromorphic function](../../../part-02/contour/cauchy-goursat-for-a-pole-free-meromorphic-funct.md)
 - [The classical residue theorem for a null-homologous contour cycle](../../contour-integration-and-the-hungerbuhler-wasem-g/the-classical-residue-theorem-for-a-null-homolog.md)
 
 ## Lean

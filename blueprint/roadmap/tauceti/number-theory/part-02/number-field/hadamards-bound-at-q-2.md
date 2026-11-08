@@ -23,12 +23,12 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hadamard's bound, `ℓ¹` row form](../../part-01/heights-units-and-s-units-of-number-fields/part-01/hadamards-bound-l1-row-form.md)
+- [Hadamard's bound, `ℓ¹` row form](../../../linear-algebra/matrix/hadamards-bound-l1-row-form.md)
 - [Soundness of unit-candidate elimination](../../part-01/number-fields-ramification-frobenius-and-the-lmf/soundness-of-unit-candidate-elimination.md)
 
 ## Informally uses
 
-- [TauCeti.NumberField.Units.regulator_le_prod_absLogHeight₁](../../part-01/heights-units-and-s-units-of-number-fields/part-01/tauceti-numberfield-units-regulator-le-prod-absl.md)
+- [TauCeti.NumberField.Units.regulator_le_prod_absLogHeight₁](../../part-01/heights-units-and-s-units-of-number-fields/tauceti-numberfield-units-regulator-le-prod-absl.md)
 
 ## Lean
 

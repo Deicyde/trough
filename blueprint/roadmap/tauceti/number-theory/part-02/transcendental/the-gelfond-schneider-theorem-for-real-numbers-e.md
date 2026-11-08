@@ -22,10 +22,10 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Iterated Rolle's theorem](../../../analysis/part-01/calculus/part-01/iterated-rolles-theorem.md)
-- [Liouville's inequality](../../part-01/diophantine-approximation-and-transcendence/part-01/liouvilles-inequality.md)
-- [The Schwarz lemma on a grid of `p`-adic integers](../padics/the-schwarz-lemma-on-a-grid-of-p-adic-integers.md)
-- [Siegel's lemma for a rational subspace, in the sup norm](../../part-01/heights-units-and-s-units-of-number-fields/part-02/siegels-lemma-for-a-rational-subspace-in-the-sup.md)
+- [Iterated Rolle's theorem](../../../analysis/part-02/calculus/part-01/iterated-rolles-theorem.md)
+- [Liouville's inequality in exponential form](../height/liouvilles-inequality-in-exponential-form.md)
+- [Schwarz's lemma for Schneider's auxiliary function](schwarzs-lemma-for-schneiders-auxiliary-function.md)
+- [Siegel's lemma over a number field, with rational integer unknowns (Evertse, Theorem 3.20)](../number-field/siegels-lemma-over-a-number-field-with-rational.md)
 
 ## Lean
 

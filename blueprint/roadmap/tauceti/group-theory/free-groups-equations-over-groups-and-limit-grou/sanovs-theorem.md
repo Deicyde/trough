@@ -29,7 +29,7 @@ Formalized in Tau Ceti as [`TauCeti.injective_freeGroup_lift_transvection_two`](
 
 ## Other forms
 
-**Sanov's theorem, in the general form over a linearly ordered commutative ring `R`.** Formalized in Tau Ceti as [`TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs`](https://taucetiproject.org/docs/TauCeti/GroupTheory/FreeGroup/Linear.html#TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs).
+**Sanov's theorem.** Formalized in Tau Ceti as [`TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs`](https://taucetiproject.org/docs/TauCeti/GroupTheory/FreeGroup/Linear.html#TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs).
 
 ```lean
 TauCeti.injective_freeGroup_lift_transvection_of_two_le_abs.{u_1} {R : Type u_1} [CommRing R]

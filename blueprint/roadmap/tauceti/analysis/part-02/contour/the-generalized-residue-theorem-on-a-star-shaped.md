@@ -38,6 +38,7 @@ TauCeti.Contour.hungerbuhlerWasem_residueTheorem_of_simple_poles_starConvex {f :
 
 ## Proof depends on
 
+- [Hungerbühler--Wasem Proposition 2.2 (winding decomposition)](../../part-01/contour-integration-and-the-hungerbuhler-wasem-g/hungerbuhler-wasem-proposition-2-2-winding-decom.md)
 - [The Hungerbühler–Wasem generalized residue theorem for a contour cycle (HW Thm 3.3)](../../part-01/contour-integration-and-the-hungerbuhler-wasem-g/the-hungerbuhler-wasem-generalized-residue-theor.md)
 
 ## Lean

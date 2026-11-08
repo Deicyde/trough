@@ -30,7 +30,6 @@ Its statement uses no other declaration mapped here.
 
 - [Corestriction through Shapiro's lemma](corestriction-through-shapiros-lemma.md)
 - [Restriction through Shapiro's lemma](restriction-through-shapiros-lemma.md)
-- [Shapiro's isomorphism on an adjunct](shapiros-isomorphism-on-an-adjunct.md)
 
 ## Lean
 

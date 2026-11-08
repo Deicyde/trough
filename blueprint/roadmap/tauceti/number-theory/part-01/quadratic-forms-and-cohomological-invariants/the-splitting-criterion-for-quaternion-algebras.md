@@ -6,9 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# The splitting criterion for quaternion algebras (Lam III.2.7 and III.4.2, Serre III.1, Gille-Szamuely 1.1.9)
+# The splitting criterion for quaternion algebras
 
-For units `a` and `b` of a field in which `2` is invertible, the following
+**The splitting criterion for quaternion algebras** (Lam III.2.7 and III.4.2, Serre III.1,
+Gille-Szamuely 1.1.9). For units `a` and `b` of a field in which `2` is invertible, the following
 are equivalent:
 1. `ℍ[K,a,b]` is isomorphic to `M₂(K)`;
 2. `b` is a norm from `K[√a] = QuadraticAlgebra K a 0`;

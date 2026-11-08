@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.differentiableOn_schwarzReflection_of_symmetric, TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace, TauCeti.exists_differentiableOn_eqOn_conj_of_symmetric, TauCeti.differentiableOn_circleSchwarzReflection_of_symmetric, TauCeti.exists_differentiableOn_eqOn_lineReflection_of_symmetric, TauCeti.differentiableOn_lineSchwarzReflection_of_symmetric, TauCeti.WeaklyHarmonicOn.sub_comp_normalReflection
+lean: TauCeti.differentiableOn_schwarzReflection_of_symmetric, TauCeti.exists_differentiableOn_eqOn_conj_of_symmetric, TauCeti.differentiableOn_circleSchwarzReflection_of_symmetric, TauCeti.exists_differentiableOn_eqOn_lineReflection_of_symmetric, TauCeti.differentiableOn_lineSchwarzReflection_of_symmetric
 statement: formalized
 proof: formalized
 ---
@@ -28,40 +28,11 @@ TauCeti.differentiableOn_schwarzReflection_of_symmetric {f : ℂ → ℂ} {Ω : 
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Rademacher's theorem for locally Lipschitz functions](../../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
-- [Weyl's lemma for `\bar∂`](../../../part-02/complex/part-02/weyls-lemma-for-bar.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.differentiableOn_schwarzReflection_of_symmetric`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/Reflection/Principle.html#TauCeti.differentiableOn_schwarzReflection_of_symmetric).
 
 ## Other forms
-
-**The Schwarz reflection principle.** Formalized in Tau Ceti as [`TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Harmonic/Reflection.html#TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace).
-
-```lean
-TauCeti.WeaklyHarmonicOn.exists_harmonicOnNhd_ae_eq_of_inf_normalHalfSpace.{u_1} {E : Type u_1}
-  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E]
-  [BorelSpace E] {a : ℝ} {U : TopologicalSpace.Opens (WithLp 2 (ℝ × E))} {w : WithLp 2 (ℝ × E) → ℝ}
-  {G : WithLp 2 (ℝ × E) → WithLp 2 (ℝ × E)}
-  (hharm : TauCeti.WeaklyHarmonicOn MeasureTheory.volume (U ⊓ TauCeti.normalHalfSpace a) w)
-  (hU : Set.MapsTo ⇑(TauCeti.normalReflection E a) ↑U ↑U)
-  (hw : TauCeti.HasWeakFDerivOn MeasureTheory.volume U w fun x => (innerSL ℝ) (G x))
-  (hG0 :
-    ∀ᵐ (x : WithLp 2 (ℝ × E)) ∂MeasureTheory.volume.restrict ↑U,
-      x ∉ TauCeti.normalHalfSpace a → G x = 0)
-  (hw0 :
-    ∀ᵐ (x : WithLp 2 (ℝ × E)) ∂MeasureTheory.volume.restrict ↑U,
-      x ∉ TauCeti.normalHalfSpace a → w x = 0) :
-  ∃ h,
-    InnerProductSpace.HarmonicOnNhd h ↑U ∧
-      (∀ x ∈ U, h ((TauCeti.normalReflection E a) x) = -h x) ∧
-        w =ᵐ[MeasureTheory.volume.restrict ↑(U ⊓ TauCeti.normalHalfSpace a)] h ∧
-          (fun x => gradient h x) =ᵐ[MeasureTheory.volume.restrict ↑(U ⊓ TauCeti.normalHalfSpace a)]
-            G
-```
 
 **Schwarz reflection principle, packaged existential form.** Formalized in Tau Ceti as [`TauCeti.exists_differentiableOn_eqOn_conj_of_symmetric`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/Reflection/Principle.html#TauCeti.exists_differentiableOn_eqOn_conj_of_symmetric).
 
@@ -112,23 +83,6 @@ TauCeti.differentiableOn_lineSchwarzReflection_of_symmetric {Ω : Set ℂ} {p a 
   (hholo : DifferentiableOn ℂ f (Ω ∩ {z | 0 < ((z - p) / a).im}))
   (hline : ∀ z ∈ Ω, ((z - p) / a).im = 0 → ((f z - q) / b).im = 0) :
   DifferentiableOn ℂ (TauCeti.lineSchwarzReflection p a q b f) Ω
-```
-
-**The Schwarz reflection principle, weak form.** Formalized in Tau Ceti as [`TauCeti.WeaklyHarmonicOn.sub_comp_normalReflection`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Harmonic/Reflection.html#TauCeti.WeaklyHarmonicOn.sub_comp_normalReflection).
-
-```lean
-TauCeti.WeaklyHarmonicOn.sub_comp_normalReflection.{u_1} {E : Type u_1} [NormedAddCommGroup E]
-  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E] {a : ℝ}
-  {U : TopologicalSpace.Opens (WithLp 2 (ℝ × E))} {w : WithLp 2 (ℝ × E) → ℝ}
-  {G : WithLp 2 (ℝ × E) → WithLp 2 (ℝ × E)}
-  (hharm : TauCeti.WeaklyHarmonicOn MeasureTheory.volume (U ⊓ TauCeti.normalHalfSpace a) w)
-  (hU : Set.MapsTo ⇑(TauCeti.normalReflection E a) ↑U ↑U)
-  (hw : TauCeti.HasWeakFDerivOn MeasureTheory.volume U w fun x => (innerSL ℝ) (G x))
-  (hG0 :
-    ∀ᵐ (x : WithLp 2 (ℝ × E)) ∂MeasureTheory.volume.restrict ↑U,
-      x ∉ TauCeti.normalHalfSpace a → G x = 0) :
-  TauCeti.WeaklyHarmonicOn MeasureTheory.volume U fun x =>
-    w x - w ((TauCeti.normalReflection E a) x)
 ```
 
 ## Sources

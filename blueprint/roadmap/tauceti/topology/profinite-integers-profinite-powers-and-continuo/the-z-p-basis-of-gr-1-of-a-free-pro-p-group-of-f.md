@@ -5,7 +5,11 @@ lean: TauCeti.freeProP.lcsDegreeOneBasis
 statement: formalized
 ---
 
-# The `ℤ_p`-basis of `gr_1` of a free pro-`p` group of finite rank, formed by the brackets `[x_i, x_j]` of the generator classes for `i < j` (`TauCeti.lcsGradedPiece_one_freeProP_bijective`)
+# The `ℤ_p`-basis of `gr_1` of a free pro-`p` group of finite rank
+
+**The `ℤ_p`-basis of `gr_1` of a free pro-`p` group of finite rank**, formed by the brackets
+`[x_i, x_j]` of the generator classes for `i < j`
+(`TauCeti.lcsGradedPiece_one_freeProP_bijective`).
 
 ```lean
 TauCeti.freeProP.lcsDegreeOneBasis.{u} (p : ℕ) [Fact (Nat.Prime p)] (X : Type u) [Fintype X]

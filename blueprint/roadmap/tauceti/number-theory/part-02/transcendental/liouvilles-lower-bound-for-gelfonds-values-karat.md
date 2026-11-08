@@ -47,7 +47,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Liouville's inequality](../../part-01/diophantine-approximation-and-transcendence/part-01/liouvilles-inequality.md)
+- [Liouville's inequality in exponential form](../height/liouvilles-inequality-in-exponential-form.md)
 
 ## Lean
 

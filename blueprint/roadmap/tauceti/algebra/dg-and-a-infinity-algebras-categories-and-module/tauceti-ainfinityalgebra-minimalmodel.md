@@ -19,10 +19,6 @@ TauCeti.AInfinityAlgebra.minimalModel.{uK, uA} {K : Type uK} {A : Type uA} [Fiel
 
 - [TauCeti.AInfinityAlgebra.transfer](tauceti-ainfinityalgebra-transfer.md)
 
-## Proof depends on
-
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../homology/the-suspended-stasheff-identity-free-of-the-stru.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.AInfinityAlgebra.minimalModel`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/AInfinity/Algebra/Transfer/Cohomology.html#TauCeti.AInfinityAlgebra.minimalModel).

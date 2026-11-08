@@ -6,7 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# The bond of a cover of `W / W_λ` is a positive integer when the dominant weight `λ` is integral, that is when every simple coroot takes an integer value on `λ`
+# The bond of a cover of `W / W_λ` is a positive integer
+
+**The bond of a cover of `W / W_λ` is a positive integer** when the dominant weight `λ` is
+integral, that is when every simple coroot takes an integer value on `λ`.
 
 ```lean
 TauCeti.exists_nat_reflectionBond_eq_of_minimalCosetRepCovBy.{u, v, w, x} {ι : Type u} {R : Type v}

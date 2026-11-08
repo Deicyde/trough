@@ -38,7 +38,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Green's theorem on a rectangle](../../../analysis/part-01/calculus/part-01/greens-theorem-on-a-rectangle.md)
+- [Green's theorem on a rectangle](../../../analysis/part-02/calculus/part-01/greens-theorem-on-a-rectangle.md)
 
 ## Lean
 

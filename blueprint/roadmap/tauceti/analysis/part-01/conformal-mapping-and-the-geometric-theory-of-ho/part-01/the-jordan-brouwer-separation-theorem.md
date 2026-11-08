@@ -28,7 +28,6 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Mayer–Vietoris isomorphism of a sphere](../../../../algebraic-topology/singular/the-mayer-vietoris-isomorphism-of-a-sphere.md)
-- [The reduced Mayer–Vietoris connecting morphism is an isomorphism when both open sets are acyclic in the adjacent degrees](../../../../algebraic-topology/singular/the-reduced-mayer-vietoris-connecting-morphism-i.md)
 
 ## Lean
 

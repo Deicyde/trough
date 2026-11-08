@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self, TauCeti.ClassFieldTheory.dualityMap0_zmod_bijective_of_isPrimitiveRoot, TauCeti.ClassFieldTheory.dualityMap0_bijective_of_isPrimitiveRoot, TauCeti.ClassFieldTheory.dualityMap1_zmod_bijective_of_isPrimitiveRoot, TauCeti.ClassFieldTheory.dualityMap1_bijective_of_isPrimitiveRoot, TauCeti.ClassFieldTheory.dualityMap2_bijective_of_isPrimitiveRoot, TauCeti.ClassFieldTheory.dualityMap_bijective_discreteCoind_kummerCoeff
+lean: TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self, TauCeti.ClassFieldTheory.dualityMap_bijective_discreteCoind_kummerCoeff
 statement: formalized
 proof: formalized
 ---
@@ -32,13 +32,13 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
+- [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
 - [Dedekind's different theorem, the tame case](../local-field/dedekinds-different-theorem-the-tame-case.md)
 - [The first half of Dedekind's different theorem](../local-field/the-first-half-of-dedekinds-different-theorem.md)
-- [Hensel's lemma with an estimate over a Henselian discrete valuation ring](../../part-01/counting-totally-ramified-extensions-of-a-local/part-01/hensels-lemma-with-an-estimate-over-a-henselian.md)
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
-- [The local invariant `inv_K : Br K ≃+ ℚ/ℤ` of a nonarchimedean local field `K`, normalized by arithmetic Frobenius](../../part-01/class-field-theory/the-local-invariant-inv-k-br-k-q-z-of-a-nonarchi.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
-- [Tate's duality map `α₀` on a module with trivial action](../../../representation-theory/homological/tates-duality-map-0-on-a-module-with-trivial-act.md)
+- [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
+- [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean
@@ -46,70 +46,6 @@ Its statement uses no other declaration mapped here.
 Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.html#TauCeti.ClassFieldTheory.dualityMap_bijective_of_smul_kummerCoeff_eq_self).
 
 ## Other forms
-
-**Tate's duality map `α₀` at the trivial module `ℤ/n` is bijective for a topological group `H` isomorphic to `G_K`, when the local field `K` contains a primitive `n`th root of unity.** Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualityMap0_zmod_bijective_of_isPrimitiveRoot`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/TrivialZMod.html#TauCeti.ClassFieldTheory.dualityMap0_zmod_bijective_of_isPrimitiveRoot).
-
-```lean
-TauCeti.ClassFieldTheory.dualityMap0_zmod_bijective_of_isPrimitiveRoot {K : Type} [Field K]
-  [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] {n : ℕ} [NeZero n] {ζ : K}
-  (hζ : IsPrimitiveRoot ζ n) {H : Type} [Group H] [TopologicalSpace H] [IsTopologicalGroup H]
-  (φ : TauCeti.AbsoluteGaloisGroup K ≃ₜ* H) [DistribMulAction H (ZMod n)]
-  (htriv : ∀ (h : H) (m : ZMod n), h • m = m) (x✝ : ContinuousSMul H (ZMod n) := ⋯) :
-  Function.Bijective ⇑(TauCeti.ContCohomology.dualityMap0 H (ZMod n) (ZMod n))
-```
-
-**Tate's duality map `α₀` on a finite module with trivial action is bijective for a topological group `H` isomorphic to `G_K`, when the local field `K` contains a primitive `n`th root of unity.** Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualityMap0_bijective_of_isPrimitiveRoot`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/TrivialZMod.html#TauCeti.ClassFieldTheory.dualityMap0_bijective_of_isPrimitiveRoot).
-
-```lean
-TauCeti.ClassFieldTheory.dualityMap0_bijective_of_isPrimitiveRoot.{u_1} {K : Type} [Field K]
-  [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] {n : ℕ} [NeZero n] {ζ : K}
-  (hζ : IsPrimitiveRoot ζ n) {H : Type} [Group H] [TopologicalSpace H] [IsTopologicalGroup H]
-  (φ : TauCeti.AbsoluteGaloisGroup K ≃ₜ* H) [DistribMulAction H (ZMod n)]
-  (htriv : ∀ (h : H) (m : ZMod n), h • m = m) (A : Type u_1) [AddCommGroup A] [TopologicalSpace A]
-  [DiscreteTopology A] [DistribMulAction H A] [Finite A] (hA : ∀ (a : A), n • a = 0)
-  (hAtriv : ∀ (h : H) (a : A), h • a = a) (x✝ : ContinuousSMul H (ZMod n) := ⋯)
-  (x✝¹ : ContinuousSMul H A := ⋯) :
-  Function.Bijective ⇑(TauCeti.ContCohomology.dualityMap0 H A (ZMod n))
-```
-
-**Tate's duality map `α₁` at the trivial module `ℤ/n` is bijective for a topological group `H` isomorphic to `G_K`, when the local field `K` contains a primitive `n`th root of unity.** Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualityMap1_zmod_bijective_of_isPrimitiveRoot`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/TrivialZMod.html#TauCeti.ClassFieldTheory.dualityMap1_zmod_bijective_of_isPrimitiveRoot).
-
-```lean
-TauCeti.ClassFieldTheory.dualityMap1_zmod_bijective_of_isPrimitiveRoot {K : Type} [Field K]
-  [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] {n : ℕ} [NeZero n] {ζ : K}
-  (hζ : IsPrimitiveRoot ζ n) {H : Type} [Group H] [TopologicalSpace H] [IsTopologicalGroup H]
-  (φ : TauCeti.AbsoluteGaloisGroup K ≃ₜ* H) [DistribMulAction H (ZMod n)]
-  (htriv : ∀ (h : H) (m : ZMod n), h • m = m) (x✝ : ContinuousSMul H (ZMod n) := ⋯) :
-  Function.Bijective ⇑(TauCeti.ContCohomology.dualityMap1 H (ZMod n) (ZMod n))
-```
-
-**Tate's duality map `α₁` on a finite module with trivial action is bijective for a topological group `H` isomorphic to `G_K`, when the local field `K` contains a primitive `n`th root of unity.** Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualityMap1_bijective_of_isPrimitiveRoot`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/TrivialZMod.html#TauCeti.ClassFieldTheory.dualityMap1_bijective_of_isPrimitiveRoot).
-
-```lean
-TauCeti.ClassFieldTheory.dualityMap1_bijective_of_isPrimitiveRoot.{u_1} {K : Type} [Field K]
-  [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] {n : ℕ} [NeZero n] {ζ : K}
-  (hζ : IsPrimitiveRoot ζ n) {H : Type} [Group H] [TopologicalSpace H] [IsTopologicalGroup H]
-  (φ : TauCeti.AbsoluteGaloisGroup K ≃ₜ* H) [DistribMulAction H (ZMod n)]
-  (htriv : ∀ (h : H) (m : ZMod n), h • m = m) (A : Type u_1) [AddCommGroup A] [TopologicalSpace A]
-  [DiscreteTopology A] [DistribMulAction H A] [Finite A] (hA : ∀ (a : A), n • a = 0)
-  (hAtriv : ∀ (h : H) (a : A), h • a = a) (x✝ : ContinuousSMul H (ZMod n) := ⋯)
-  (x✝¹ : ContinuousSMul H A := ⋯) :
-  Function.Bijective ⇑(TauCeti.ContCohomology.dualityMap1 H A (ZMod n))
-```
-
-**Tate's duality map `α₂` on a finite module with trivial action is bijective for a topological group `H` isomorphic to `G_K`, when the local field `K` contains a primitive `n`th root of unity.** Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualityMap2_bijective_of_isPrimitiveRoot`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/TrivialZMod.html#TauCeti.ClassFieldTheory.dualityMap2_bijective_of_isPrimitiveRoot).
-
-```lean
-TauCeti.ClassFieldTheory.dualityMap2_bijective_of_isPrimitiveRoot.{u_1} {K : Type} [Field K]
-  [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K] {n : ℕ} [NeZero n] {ζ : K}
-  (hζ : IsPrimitiveRoot ζ n) {H : Type} [Group H] [TopologicalSpace H] [IsTopologicalGroup H]
-  (φ : TauCeti.AbsoluteGaloisGroup K ≃ₜ* H) [DistribMulAction H (ZMod n)]
-  (htriv : ∀ (h : H) (m : ZMod n), h • m = m) (A : Type u_1) [AddCommGroup A] [TopologicalSpace A]
-  [DiscreteTopology A] [DistribMulAction H A] [Finite A] (hA : ∀ (a : A), n • a = 0)
-  (hAtriv : ∀ (h : H) (a : A), h • a = a) (x✝ : ContinuousSMul H (ZMod n) := ⋯)
-  (x✝¹ : ContinuousSMul H A := ⋯) :
-  Function.Bijective ⇑(TauCeti.ContCohomology.dualityMap2 H A (ZMod n))
-```
 
 **Tate's duality on a module coinduced from an open subgroup acting trivially on `μₙ`.** Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualityMap_bijective_discreteCoind_kummerCoeff`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/Duality/FiniteModule.html#TauCeti.ClassFieldTheory.dualityMap_bijective_discreteCoind_kummerCoeff).
 

@@ -4,7 +4,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Classification of finite simple groups, statement only](classification-of-finite-simple-groups-statement.md)
 - [TauCeti.ValidLieTypeIndex.Group](tauceti-validlietypeindex-group.md)
-- [The Steinberg endomorphism is the graph automorphism composed with the Frobenius, uniformly in the thirteen ordinary and graph-twisted families](the-steinberg-endomorphism-is-the-graph-automorp.md)
+- [The Steinberg endomorphism is the graph automorphism composed with the Frobenius](the-steinberg-endomorphism-is-the-graph-automorp.md)
 - [TauCeti.F4ShortRoot.PrimeField.specialIsogeny_specialIsogeny](tauceti-f4shortroot-primefield-specialisogeny-sp.md)
 - [TauCeti.SporadicName.presentation](tauceti-sporadicname-presentation.md)
 - [The explicit type-A carrier is equivalent to the points of the pinned `SL_{r+1}/ℤ` group scheme](the-explicit-type-a-carrier-is-equivalent-to-the.md)

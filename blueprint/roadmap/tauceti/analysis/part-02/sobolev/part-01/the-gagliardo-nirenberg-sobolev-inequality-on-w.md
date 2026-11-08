@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.W1p.norm_sobolevEmbeddingTopL_le, TauCeti.norm_testFunctionLp_le_mul_norm_gradientTestFunctionLp, TauCeti.D1p0.norm_sobolevEmbeddingL_le, TauCeti.W1p.eLpNorm_value_le_mul_enorm_gradient, TauCeti.eLpNorm_le_eLpNorm_fderiv_one_of_integrable
+lean: TauCeti.W1p.norm_sobolevEmbeddingTopL_le, TauCeti.norm_testFunctionLp_le_mul_norm_gradientTestFunctionLp, TauCeti.D1p0.norm_sobolevEmbeddingL_le, TauCeti.W1p.eLpNorm_value_le_mul_enorm_gradient
 statement: formalized
 proof: formalized
 ---
@@ -69,18 +69,6 @@ TauCeti.W1p.eLpNorm_value_le_mul_enorm_gradient.{u_1} {E : Type u_1} [Measurable
   (hu : u ∈ TauCeti.w1p0Submodule mu Omega p) :
   MeasureTheory.eLpNorm (↑↑(TauCeti.W1p.value u)) pstar (mu.restrict ↑Omega) ≤
     ↑(MeasureTheory.SNormLESNormFDerivOfEqConst ℝ mu p.toReal) * ‖TauCeti.W1p.gradient u‖ₑ
-```
-
-**The Gagliardo–Nirenberg–Sobolev inequality for integrable functions.** Formalized in Tau Ceti as [`TauCeti.eLpNorm_le_eLpNorm_fderiv_one_of_integrable`](https://taucetiproject.org/docs/TauCeti/Analysis/FunctionalSpaces/SobolevInequality.html#TauCeti.eLpNorm_le_eLpNorm_fderiv_one_of_integrable).
-
-```lean
-TauCeti.eLpNorm_le_eLpNorm_fderiv_one_of_integrable.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E]
-  [NormedSpace ℝ E] [MeasurableSpace E] [BorelSpace E] [FiniteDimensional ℝ E]
-  (μ : MeasureTheory.Measure E) [μ.IsAddHaarMeasure] {F : Type u_2} [NormedAddCommGroup F]
-  [NormedSpace ℝ F] {u : E → F} (hu : ContDiff ℝ 1 u) (hi : MeasureTheory.Integrable u μ)
-  {p : NNReal} (hp : (↑(Module.finrank ℝ E)).HolderConjugate p) :
-  MeasureTheory.eLpNorm u (↑p) μ ≤
-    ↑(MeasureTheory.eLpNormLESNormFDerivOneConst μ ↑p) * MeasureTheory.eLpNorm (fderiv ℝ u) 1 μ
 ```
 
 ## Sources

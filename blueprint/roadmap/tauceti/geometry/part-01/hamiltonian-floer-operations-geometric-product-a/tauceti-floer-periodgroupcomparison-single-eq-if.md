@@ -26,7 +26,7 @@ TauCeti.Floer.periodGroupComparison_single_eq_iff.{u_1, u_2} {R : Type u_1} {S :
 
 ## Proof depends on
 
-- [TauCeti.NovikovSeries.mapRingHom](../../../ring-theory/morse-novikov-homology-and-dynamical-reidemeiste/tauceti-novikovseries-mapringhom.md)
+- [TauCeti.NovikovSeries.mapRingHom](../../../ring-theory/part-01/morse-novikov-homology-and-dynamical-reidemeiste/tauceti-novikovseries-mapringhom.md)
 
 ## Lean
 

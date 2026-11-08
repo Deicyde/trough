@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.AlgebraicGeometry.FiniteFlatCommGroupScheme.pow_eq_one_of_finrank, WeierstrassCurve.IsIntegralModularForm.mem_adjoin
+lean: TauCeti.AlgebraicGeometry.FiniteFlatCommGroupScheme.pow_eq_one_of_finrank
 statement: formalized
 proof: formalized
 ---
@@ -30,19 +30,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.AlgebraicGeometry.FiniteFlatCommGroupScheme.pow_eq_one_of_finrank`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/GroupScheme/KilledByRank.html#TauCeti.AlgebraicGeometry.FiniteFlatCommGroupScheme.pow_eq_one_of_finrank).
-
-## Other forms
-
-**Deligne's theorem.** Formalized in Tau Ceti as [`WeierstrassCurve.IsIntegralModularForm.mem_adjoin`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/ModularForm.html#WeierstrassCurve.IsIntegralModularForm.mem_adjoin).
-
-```lean
-WeierstrassCurve.IsIntegralModularForm.mem_adjoin {k : ℕ}
-  {f : MvPolynomial WeierstrassCurve.Coeff ℤ} (hf : WeierstrassCurve.IsIntegralModularForm k f) :
-  f ∈
-    ℤ[WeierstrassCurve.c₄ WeierstrassCurve.Universal.curve,
-      WeierstrassCurve.c₆ WeierstrassCurve.Universal.curve,
-      WeierstrassCurve.Δ WeierstrassCurve.Universal.curve]
-```
 
 ## Sources
 

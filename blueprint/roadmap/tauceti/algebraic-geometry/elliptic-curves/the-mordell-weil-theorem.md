@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: WeierstrassCurve.Affine.fg_point_of_numberField, WeierstrassCurve.Affine.fg_point, WeierstrassCurve.Affine.fg_point_of_variableChange, WeierstrassCurve.Affine.moduleFinite_point_of_numberField
+lean: WeierstrassCurve.Affine.fg_point_of_numberField
 statement: formalized
 proof: formalized
 ---
@@ -27,48 +27,15 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Dirichlet's unit theorem for the field factors of the étale algebra of a curve over a number field](dirichlets-unit-theorem-for-the-field-factors-of.md)
-- [The weak Mordell–Weil theorem](the-weak-mordell-weil-theorem.md)
+- [Dirichlet's unit theorem (`WeierstrassCurve.Affine.fg_units_ringOfIntegersFactor`)](dirichlets-unit-theorem-weierstrasscurve-affine.md)
+
+## Informally uses
+
+- [The Mordell–Weil group of `y² = x³ - x + 1` over `ℚ` is `ℤ`](the-mordell-weil-group-of-y2-x3-x-1-over-q-is-z.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`WeierstrassCurve.Affine.fg_point_of_numberField`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/FinitelyGenerated.html#WeierstrassCurve.Affine.fg_point_of_numberField).
-
-## Other forms
-
-**The Mordell–Weil theorem, general version.** Formalized in Tau Ceti as [`WeierstrassCurve.Affine.fg_point`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/FinitelyGenerated.html#WeierstrassCurve.Affine.fg_point).
-
-```lean
-WeierstrassCurve.Affine.fg_point.{u_1, u_2} {F : Type u_1} [Field F] {W : WeierstrassCurve.Affine F}
-  [Height.AdmissibleAbsValues F] [Northcott Height.logHeight₁] [DecidableEq F]
-  [WeierstrassCurve.IsElliptic (WeierstrassCurve.toAffine W)] (R : Type u_2) [CommRing R]
-  [IsDedekindDomain R] [Algebra R F] [IsFractionRing R F] [WeierstrassCurve.IsCharNeTwoNF W]
-  [∀ (p : W.f.Factors), Finite (ClassGroup (W.ringOfIntegersFactor R p))]
-  [∀ (p : W.f.Factors), Monoid.FG (W.ringOfIntegersFactor R p)ˣ] : AddGroup.FG W.Point
-```
-
-**The Mordell–Weil theorem for an arbitrary Weierstrass curve.** Formalized in Tau Ceti as [`WeierstrassCurve.Affine.fg_point_of_variableChange`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/FinitelyGenerated.html#WeierstrassCurve.Affine.fg_point_of_variableChange).
-
-```lean
-WeierstrassCurve.Affine.fg_point_of_variableChange.{u_1, u_2} {F : Type u_1} [Field F]
-  {W : WeierstrassCurve.Affine F} [Height.AdmissibleAbsValues F] [Northcott Height.logHeight₁]
-  [DecidableEq F] [WeierstrassCurve.IsElliptic (WeierstrassCurve.toAffine W)] (R : Type u_2)
-  [CommRing R] [IsDedekindDomain R] [Algebra R F] [IsFractionRing R F]
-  (C : WeierstrassCurve.VariableChange F) [WeierstrassCurve.IsCharNeTwoNF (C • W)]
-  [∀ (p : (WeierstrassCurve.toAffine (C • W)).f.Factors),
-      Finite (ClassGroup ((WeierstrassCurve.toAffine (C • W)).ringOfIntegersFactor R p))]
-  [∀ (p : (WeierstrassCurve.toAffine (C • W)).f.Factors),
-      Monoid.FG ((WeierstrassCurve.toAffine (C • W)).ringOfIntegersFactor R p)ˣ] :
-  AddGroup.FG W.Point
-```
-
-**The Mordell–Weil theorem as an instance.** Formalized in Tau Ceti as [`WeierstrassCurve.Affine.moduleFinite_point_of_numberField`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/FinitelyGenerated.html#WeierstrassCurve.Affine.moduleFinite_point_of_numberField).
-
-```lean
-WeierstrassCurve.Affine.moduleFinite_point_of_numberField.{u_2} {F : Type u_2} [Field F]
-  [NumberField F] [DecidableEq F] {W : WeierstrassCurve.Affine F}
-  [WeierstrassCurve.IsElliptic (WeierstrassCurve.toAffine W)] : Module.Finite ℤ W.Point
-```
 
 ## Sources
 

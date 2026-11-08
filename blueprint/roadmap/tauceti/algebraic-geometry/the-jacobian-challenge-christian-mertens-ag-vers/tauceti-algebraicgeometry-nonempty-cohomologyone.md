@@ -39,14 +39,14 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The abstract residue theorem (Stichtenoth, (1.45))](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-01/the-abstract-residue-theorem-stichtenoth-1-45.md)
-- [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-01/dedekinds-different-theorem-first-part-stichteno.md)
-- [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
-- [Riemann's theorem (Stichtenoth, Theorem 1.4.17)](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-02/riemanns-theorem-stichtenoth-theorem-1-4-17.md)
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-01/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
-- [Serre duality for line bundles](../other-results/serre-duality-for-line-bundles.md)
-- [Stichtenoth's transformation formula `res_{P,s}(z) = res_{P,t}(z · ds/dt)`](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-02/stichtenoths-transformation-formula-res-p-s-z-re.md)
-- [The weak approximation theorem for the places of an algebraic function field (Stichtenoth, Theorem 1.3.1), in the equality form](../../field-theory/function-field/the-weak-approximation-theorem-for-the-places-of.md)
+- [The abstract residue theorem (Stichtenoth, (1.45))](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-abstract-residue-theorem-stichtenoth-1-45.md)
+- [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](../../field-theory/function-field/part-01/dedekinds-different-theorem-first-part-stichteno.md)
+- [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../../field-theory/function-field/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
+- [Riemann's theorem](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [Serre duality in degree zero](../other-results/serre-duality-in-degree-zero.md)
+- [Stichtenoth's transformation formula](../../field-theory/function-field/part-01/stichtenoths-transformation-formula.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
 
 ## Lean
 

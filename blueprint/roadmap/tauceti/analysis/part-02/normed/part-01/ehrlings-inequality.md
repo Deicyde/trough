@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm, TauCeti.CircleSobolev.exists_norm_inclusion_le
+lean: IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm
 statement: formalized
 proof: formalized
 ---
@@ -28,20 +28,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Compact/Ehrling.html#IsCompactOperator.exists_norm_le_mul_norm_add_mul_norm).
-
-## Other forms
-
-**Ehrling's inequality on the circle.** Formalized in Tau Ceti as [`TauCeti.CircleSobolev.exists_norm_inclusion_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Sobolev/Circle/Basic.html#TauCeti.CircleSobolev.exists_norm_inclusion_le).
-
-```lean
-TauCeti.CircleSobolev.exists_norm_inclusion_le.{u_1} {s t : ℝ} {E : Type u_1} [NormedAddCommGroup E]
-  [NormedSpace ℂ E] {r : ℝ} (hrt : r ≤ t) (hts : t < s) {ε : ℝ} (hε : 0 < ε) :
-  ∃ C,
-    0 ≤ C ∧
-      ∀ (a : TauCeti.CircleSobolev s E),
-        ‖(TauCeti.CircleSobolev.inclusion ⋯) a‖ ≤
-          ε * ‖a‖ + C * ‖(TauCeti.CircleSobolev.inclusion ⋯) a‖
-```
 
 ## Sources
 

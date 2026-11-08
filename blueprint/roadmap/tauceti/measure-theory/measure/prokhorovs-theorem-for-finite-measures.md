@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.isCompact_closure_of_isTightMeasureSet_of_mass_le, TauCeti.exists_tendsto_finiteMeasure_of_eventually_measure_compl_eq_zero, TauCeti.isCompact_setOfPred_isMultiCoupling
+lean: TauCeti.isCompact_closure_of_isTightMeasureSet_of_mass_le, TauCeti.exists_tendsto_finiteMeasure_of_eventually_measure_compl_eq_zero
 statement: formalized
 proof: formalized
 ---
@@ -39,18 +39,6 @@ TauCeti.exists_tendsto_finiteMeasure_of_eventually_measure_compl_eq_zero.{u_1, u
   {U : Ultrafilter ι} {μs : ι → MeasureTheory.FiniteMeasure α} {K : Set α} (hK : IsCompact K)
   {C : ℝ} (h : ∀ᶠ (i : ι) in ↑U, ↑(μs i) Kᶜ = 0 ∧ (↑(μs i)).real Set.univ ≤ C) :
   ∃ μ, ↑μ Kᶜ = 0 ∧ Filter.Tendsto μs (↑U) (nhds μ)
-```
-
-**Prokhorov's theorem for multi-couplings.** Formalized in Tau Ceti as [`TauCeti.isCompact_setOfPred_isMultiCoupling`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/MultiMarginal/Existence.html#TauCeti.isCompact_setOfPred_isMultiCoupling).
-
-```lean
-TauCeti.isCompact_setOfPred_isMultiCoupling.{u_1, u_2} {ι : Type u_1} {X : ι → Type u_2}
-  [(i : ι) → TopologicalSpace (X i)] [(i : ι) → MeasurableSpace (X i)] [Finite ι]
-  [∀ (i : ι), OpensMeasurableSpace (X i)]
-  [∀ (i : ι), T1Space (MeasureTheory.ProbabilityMeasure (X i))] [BorelSpace ((i : ι) → X i)]
-  [T2Space ((i : ι) → X i)] {μ : (i : ι) → MeasureTheory.ProbabilityMeasure (X i)}
-  (hμ : ∀ (i : ι), MeasureTheory.IsTightMeasureSet {↑(μ i)}) :
-  IsCompact {π | TauCeti.Measure.IsMultiCoupling ↑π fun i => ↑(μ i)}
 ```
 
 ## Sources

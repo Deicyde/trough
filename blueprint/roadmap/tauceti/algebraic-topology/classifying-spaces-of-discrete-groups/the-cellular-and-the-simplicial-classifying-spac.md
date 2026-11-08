@@ -30,7 +30,7 @@ TauCeti.cellularHomotopyEquivClassifyingSpace.{u} {S : Type u} (R : Set (FreeGro
 ## Proof depends on
 
 - [The cellular classifying space is a CW complex](the-cellular-classifying-space-is-a-cw-complex.md)
-- [The fundamental group at `x` acts on every homotopy group based at `x`, an element of `π₁(X, x)` acting by transport around the loop it represents](../universal-covers/the-fundamental-group-at-x-acts-on-every-homotop.md)
+- [The fundamental group at `x` acts on every homotopy group based at `x`](../universal-covers/the-fundamental-group-at-x-acts-on-every-homotop.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 - [The orbit space of a free cellular action is a CW complex](the-orbit-space-of-a-free-cellular-action-is-a-c.md)
 - [The Seifert--van Kampen theorem for a family with a common pairwise intersection](../fundamental-group/the-seifert-van-kampen-theorem-for-a-family-with.md)

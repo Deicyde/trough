@@ -1,8 +1,8 @@
 # Conformal mapping and the geometric theory of holomorphic functions
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ConformalMapping/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ConformalMapping/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-## [The Riemann mapping theorem to Janiszewski's second theorem](part-01/README.md)
+## [The Riemann mapping theorem to Janiszewski's theorem](part-01/README.md)
 
 - [The Riemann mapping theorem](part-01/the-riemann-mapping-theorem.md)
 - [The Riemann map of a Jordan domain extends to a homeomorphism of the closures](part-01/the-riemann-map-of-a-jordan-domain-extends-to-a.md)
@@ -19,15 +19,14 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The Jordan–Brouwer separation theorem](part-01/the-jordan-brouwer-separation-theorem.md)
 - [The Borsuk criterion](part-01/the-borsuk-criterion.md)
 - [Borsuk's separation theorem](part-01/borsuks-separation-theorem.md)
-- [Carathéodory's theorem for the inside of a Jordan curve](part-01/caratheodorys-theorem-for-the-inside-of-a-jordan.md)
 - [The converse Schwarz--Christoffel theorem from the prevertex residues](part-01/the-converse-schwarz-christoffel-theorem-from-th.md)
 - [The equicontinuity half of Montel's theorem](part-01/the-equicontinuity-half-of-montels-theorem.md)
 - [Hurwitz's theorem](part-01/hurwitzs-theorem.md)
 - [Janiszewski's second theorem](part-01/janiszewskis-second-theorem.md)
+- [Janiszewski's theorem](part-01/janiszewskis-theorem.md)
 
-## [Janiszewski's theorem to Wolff's lemma…](part-02/README.md)
+## [The Jordan curve theorem to Wolff's lemma…](part-02/README.md)
 
-- [Janiszewski's theorem](part-02/janiszewskis-theorem.md)
 - [The Jordan curve theorem](part-02/the-jordan-curve-theorem.md)
 - [The monodromy theorem](part-02/the-monodromy-theorem.md)
 - [The monodromy theorem for a free homotopy of paths](part-02/the-monodromy-theorem-for-a-free-homotopy-of-pat.md)
@@ -35,10 +34,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Morera's theorem](part-02/moreras-theorem.md)
 - [Poincaré defect identity (norm form)](part-02/poincare-defect-identity-norm-form.md)
 - [Rouché's theorem for a disc, classical form](part-02/rouches-theorem-for-a-disc-classical-form.md)
-- [The Schoenflies theorem](part-02/the-schoenflies-theorem.md)
-- [The Schwarz--Christoffel formula](part-02/the-schwarz-christoffel-formula.md)
 - [Strict Schwarz lemma](part-02/strict-schwarz-lemma.md)
-- [Uniqueness in the Riemann mapping theorem, up to a disc automorphism](part-02/uniqueness-in-the-riemann-mapping-theorem-up-to.md)
 - [Vitali's convergence theorem](part-02/vitalis-convergence-theorem.md)
 - [Vitali's theorem with prescribed pointwise values](part-02/vitalis-theorem-with-prescribed-pointwise-values.md)
 - [Wolff's lemma (`TauCeti.exists_circleImageLength_sq_lt`)](part-02/wolffs-lemma-tauceti-exists-circleimagelength-sq.md)

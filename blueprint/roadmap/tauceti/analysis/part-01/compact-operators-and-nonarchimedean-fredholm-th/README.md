@@ -1,6 +1,6 @@
 # Compact operators and nonarchimedean Fredholm theory
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/CompactOperators/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/CompactOperators/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Serre's criterion over a field](serres-criterion-over-a-field.md)
 - [Row compactness is compactoid image](row-compactness-is-compactoid-image.md)
@@ -15,10 +15,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [ContinuousLinearMap.charPowerSeries](continuouslinearmap-charpowerseries.md)
 - [Independence of the presentation](independence-of-the-presentation.md)
 - [PowerSeries.IsGoodZero](powerseries-isgoodzero.md)
-- [The Bézout identity for the entire resultant](the-bezout-identity-for-the-entire-resultant.md)
-- [The Coleman majorant bounds the coefficients](the-coleman-majorant-bounds-the-coefficients.md)
-- [Factor theorem for entire series](factor-theorem-for-entire-series.md)
 - [The Riesz identity at a good zero](the-riesz-identity-at-a-good-zero.md)
 - [Row Hodge lower bound for a row-compact operator](row-hodge-lower-bound-for-a-row-compact-operator.md)
 - [Strassmann's bound for the spectrum](strassmanns-bound-for-the-spectrum.md)
-- [The Taylor identity](the-taylor-identity.md)

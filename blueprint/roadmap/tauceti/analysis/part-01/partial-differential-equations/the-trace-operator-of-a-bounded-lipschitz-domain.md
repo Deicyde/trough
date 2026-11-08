@@ -5,9 +5,10 @@ lean: TauCeti.W1p.frontierTrace
 statement: formalized
 ---
 
-# The trace operator of a bounded Lipschitz domain, `W^{1,p}(Ω) → Lᵖ(frontier Ω)` for `p < ∞` and normalized `dim E`-dimensional Euclidean Hausdorff measure on the frontier
+# The trace operator of a bounded Lipschitz domain
 
-It is
+**The trace operator of a bounded Lipschitz domain**, `W^{1,p}(Ω) → Lᵖ(frontier Ω)` for
+`p < ∞` and normalized `dim E`-dimensional Euclidean Hausdorff measure on the frontier. It is
 characterized by `TauCeti.W1p.frontierTrace_ae_eq_of_continuousOn` and
 `TauCeti.W1p.eq_frontierTrace`: it is the unique bounded linear operator sending every function
 continuous up to the boundary to its restriction to the frontier.
@@ -29,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Rademacher's theorem for locally Lipschitz functions](../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../part-02/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 

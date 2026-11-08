@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hoffman's circulation theorem](../finite-graph-connectivity-and-network-flows/hoffmans-circulation-theorem.md)
+- [Hoffman's circulation theorem](../network/hoffmans-circulation-theorem.md)
 - [Integrality of maximum flows](../finite-graph-connectivity-and-network-flows/integrality-of-maximum-flows.md)
 - [TauCeti.AuxTerminalHom](../finite-graph-connectivity-and-network-flows/tauceti-auxterminalhom.md)
 - [TauCeti.residualUpdate](../finite-graph-connectivity-and-network-flows/tauceti-residualupdate.md)

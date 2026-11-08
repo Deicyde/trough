@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 - [Montel's selection theorem](../../../part-02/complex/part-02/montels-selection-theorem.md)
 - [Rouché's theorem for a disc, classical form](../part-02/rouches-theorem-for-a-disc-classical-form.md)
 - [Strict Schwarz lemma](../part-02/strict-schwarz-lemma.md)
-- [Wolff's lemma (`TauCeti.exists_circleLIntegral_sq_lt`)](../../../../measure-theory/integral/wolffs-lemma-tauceti-exists-circlelintegral-sq-l.md)
+- [Wolff's lemma (`TauCeti.exists_circleLIntegral_sq_lt`)](../../../../measure-theory/integral/part-02/wolffs-lemma-tauceti-exists-circlelintegral-sq-l.md)
 
 ## Lean
 

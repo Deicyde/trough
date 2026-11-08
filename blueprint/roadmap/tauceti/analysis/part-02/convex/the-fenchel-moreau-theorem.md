@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Fenchel–Young inequality, in the form that holds with no hypothesis](the-fenchel-young-inequality-in-the-form-that-ho.md)
+- [The Fenchel–Young inequality](the-fenchel-young-inequality.md)
 
 ## Lean
 

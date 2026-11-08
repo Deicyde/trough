@@ -48,7 +48,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The local Campanato estimate](../../../../measure-theory/function/the-local-campanato-estimate.md)
-- [The Poincaré inequality on a ball](../part-01/the-poincare-inequality-on-a-ball.md)
+- [The Poincaré inequality on a ball](the-poincare-inequality-on-a-ball.md)
 
 ## Lean
 

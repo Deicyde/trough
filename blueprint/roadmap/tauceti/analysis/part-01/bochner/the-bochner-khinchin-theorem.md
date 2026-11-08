@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Bochner's theorem](../one-parameter-semigroups-completely-monotone-and/part-01/bochners-theorem.md)
+- [Bochner's theorem](../one-parameter-semigroups-completely-monotone-and/bochners-theorem.md)
 
 ## Lean
 

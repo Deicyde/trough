@@ -6,9 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# The graded trace formula for an endomorphism of finite order of a finite-dimensional vector space over an arbitrary field
+# The graded trace formula for an endomorphism of finite order
 
-if `f ^ n = 1` with `n` nonzero in `K`, then
+**The graded trace formula for an endomorphism of finite order** of a finite-dimensional
+vector space over an arbitrary field: if `f ^ n = 1` with `n` nonzero in `K`, then
 `(∑ₘ tr(f | Symᵐ V) tᵐ) * det(1 - t f) = 1`.
 
 No eigenvalue of `f` need lie in `K`: over an algebraic closure `f` becomes diagonalizable, and

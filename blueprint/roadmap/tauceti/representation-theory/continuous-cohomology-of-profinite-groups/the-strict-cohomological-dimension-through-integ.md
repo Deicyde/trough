@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Shapiro's lemma in every degree](../homological/shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](../homological/shapiros-lemma-in-degree-one.md)
 
 ## Lean
 

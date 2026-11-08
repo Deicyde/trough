@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Fenchel–Young inequality, in the form that holds with no hypothesis](../../analysis/part-02/convex/the-fenchel-young-inequality-in-the-form-that-ho.md)
+- [The Fenchel–Young inequality](../../analysis/part-02/convex/the-fenchel-young-inequality.md)
 - [The theorem of Rockafellar and Rüschendorf](the-theorem-of-rockafellar-and-ruschendorf.md)
 
 ## Lean

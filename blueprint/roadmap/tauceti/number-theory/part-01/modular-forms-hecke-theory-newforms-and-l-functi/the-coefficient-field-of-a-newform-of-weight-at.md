@@ -19,7 +19,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue `a_p(f)` (Atkin–Lehner; Li; Diamond–Shurman, Theorem 5.8.2; Miyake, Theorem 4.6.13)](a-newform-is-an-eigenvector-of-u-p-at-every-prim.md)
+- [A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue `a_p(f)`](a-newform-is-an-eigenvector-of-u-p-at-every-prim.md)
 - [Manin's lemma](manins-lemma.md)
 - [Periods determine a cusp form](periods-determine-a-cusp-form.md)
 - [Shimura's commutativity criterion (Proposition 3.8 of \[Shimura\]\[shimura1971\])](../../part-02/hecke-ring/shimuras-commutativity-criterion-proposition-3-8.md)

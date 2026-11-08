@@ -5,7 +5,10 @@ lean: TauCeti.homotopyGroupMulAction
 statement: formalized
 ---
 
-# The fundamental group at `x` acts on every homotopy group based at `x`, an element of `π₁(X, x)` acting by transport around the loop it represents
+# The fundamental group at `x` acts on every homotopy group based at `x`
+
+**The fundamental group at `x` acts on every homotopy group based at `x`**, an element of
+`π₁(X, x)` acting by transport around the loop it represents.
 
 The action is a left action: transport composes covariantly and `FundamentalGroup.mul_def`
 reverses the order of concatenation, so the two reversals cancel.

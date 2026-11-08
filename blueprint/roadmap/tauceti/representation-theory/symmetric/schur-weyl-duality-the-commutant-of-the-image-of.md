@@ -21,7 +21,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The double centralizer theorem](../../quantum-groups/quantum-groups-compact-reconstruction-and-generi/the-double-centralizer-theorem.md)
+- [The double centralizer theorem](../../ring-theory/part-02/semisimple/the-double-centralizer-theorem.md)
 
 ## Lean
 

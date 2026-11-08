@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Parseval's energy identity for an absolutely continuous closed complex curve with square-integrable derivative](parsevals-energy-identity-for-an-absolutely-cont.md)
+- [Parseval's energy identity](parsevals-energy-identity.md)
 
 ## Lean
 

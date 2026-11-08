@@ -23,10 +23,6 @@ TauCeti.isIso_reducedMayerVietorisδ_sphere.{w, v, u} {C : Type u} [CategoryTheo
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The reduced Mayer–Vietoris connecting morphism is an isomorphism when both open sets are acyclic in the adjacent degrees](the-reduced-mayer-vietoris-connecting-morphism-i.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.isIso_reducedMayerVietorisδ_sphere`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Sphere.html#TauCeti.isIso_reducedMayerVietoris%CE%B4_sphere).

@@ -25,7 +25,7 @@ TauCeti.YazdiEulerClassOneTheorem.not_eulerClassOneConjecture
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.YazdiEulerClassOneTheorem.not_eulerClassOneConjecture`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Foliation/EulerClass.html#TauCeti.YazdiEulerClassOneTheorem.not_eulerClassOneConjecture).
+Formalized in Tau Ceti as [`TauCeti.YazdiEulerClassOneTheorem.not_eulerClassOneConjecture`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Foliation/EulerClass.html#TauCeti.YazdiEulerClassOneTheorem.not_eulerClassOneConjecture), assuming [`TauCeti.YazdiEulerClassOneTheorem`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Foliation/EulerClass.html#TauCeti.YazdiEulerClassOneTheorem), a proposition Tau Ceti defines.
 
 ## Sources
 

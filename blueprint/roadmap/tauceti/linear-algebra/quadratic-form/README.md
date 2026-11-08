@@ -1,6 +1,6 @@
 # Quadratic Form
 
-Results named in Tau Ceti's `TauCeti.LinearAlgebra.QuadraticForm` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.LinearAlgebra.QuadraticForm` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Euler's four-square identity for a quadratic map](eulers-four-square-identity-for-a-quadratic-map.md)
 - [Frobenius reciprocity on regular-form classes](frobenius-reciprocity-on-regular-form-classes.md)

@@ -48,7 +48,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Burnside's basis theorem, cardinal form](../part-01/burnsides-basis-theorem-cardinal-form.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [The three-term Euler identity under `cd_p G ≤ 2`](the-three-term-euler-identity-under-cd-p-g-2.md)
 
 ## Lean

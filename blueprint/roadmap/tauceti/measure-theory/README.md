@@ -1,6 +1,6 @@
 # Measure Theory
 
-Results in Tau Ceti's `TauCeti.MeasureTheory` modules: by roadmap, then by area.
+Results in Tau Ceti's `TauCeti.MeasureTheory` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
 - [Euclidean isoperimetry, sharp inequalities, and rigidity](euclidean-isoperimetry-sharp-inequalities-and-ri/README.md)
 - [Optimal transport and Wasserstein geometry](optimal-transport-and-wasserstein-geometry/README.md)

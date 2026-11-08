@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.W1p.eLpNorm_value_sub_setAverage_le_of_eq_ball, TauCeti.setLIntegral_enorm_sub_setAverage_le_mul_measure_rpow_mul_totalVariationOn_of_convex, TauCeti.W1p.exists_eLpNorm_value_sub_setAverage_le_of_isCompactOperator, TauCeti.W1p.eLpNorm_value_sub_setAverage_le_of_convex, TauCeti.W1p.setIntegral_value_sub_setAverage_sq_le_of_ball_subset, TauCeti.W1p.setIntegral_abs_value_sub_setAverage_le_of_ball_subset, TauCeti.eLpNorm_sub_setAverage_le_of_convex, TauCeti.lintegral_enorm_sub_setAverage_rpow_le_of_convex, TauCeti.setLIntegral_enorm_sub_setAverage_le_mul_measure_rpow_mul_of_convex, TauCeti.W1p.exists_eLpNorm_value_sub_setAverage_le_of_isLipschitzDomainWith
+lean: TauCeti.W1p.eLpNorm_value_sub_setAverage_le_of_eq_ball, TauCeti.W1p.exists_eLpNorm_value_sub_setAverage_le_of_isCompactOperator, TauCeti.W1p.eLpNorm_value_sub_setAverage_le_of_convex, TauCeti.W1p.setIntegral_value_sub_setAverage_sq_le_of_ball_subset, TauCeti.W1p.setIntegral_abs_value_sub_setAverage_le_of_ball_subset, TauCeti.eLpNorm_sub_setAverage_le_of_convex, TauCeti.lintegral_enorm_sub_setAverage_rpow_le_of_convex, TauCeti.setLIntegral_enorm_sub_setAverage_le_mul_measure_rpow_mul_of_convex, TauCeti.W1p.exists_eLpNorm_value_sub_setAverage_le_of_isLipschitzDomainWith
 statement: formalized
 proof: formalized
 ---
@@ -28,41 +28,19 @@ TauCeti.W1p.eLpNorm_value_sub_setAverage_le_of_eq_ball.{u_1} {E : Type u_1} [Mea
 
 ## Depends on
 
-- [TauCeti.totalVariationOn](../../../part-01/geometric-measure-theory-rectifiability-bv-and-f/tauceti-totalvariationon.md)
+Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Extension theorem for bounded Lipschitz domains](../part-01/extension-theorem-for-bounded-lipschitz-domains.md)
-- [The Fréchet--Kolmogorov criterion for a family vanishing almost everywhere off a fixed bounded set, the form that Rellich--Kondrachov for `W^{1,p}_0(Ω)` consumes](../../../../measure-theory/function/the-frechet-kolmogorov-criterion-for-a-family-va.md)
-- [Hölder's inequality for Young's exponents](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
-- [The Poincaré inequality on a ball](../part-01/the-poincare-inequality-on-a-ball.md)
-- [Rademacher's theorem for locally Lipschitz functions](../../../part-01/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Rellich–Kondrachov on bounded Lipschitz domains](rellich-kondrachov-on-bounded-lipschitz-domains.md)
 - [TauCeti.Wkp](../../../part-01/partial-differential-equations/tauceti-wkp.md)
-- [Young's inequality for an `L¹` kernel](../../../../measure-theory/function/youngs-inequality-for-an-l1-kernel.md)
+- [Young's inequality for integral kernels](../../../../measure-theory/integral/part-02/youngs-inequality-for-integral-kernels.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.W1p.eLpNorm_value_sub_setAverage_le_of_eq_ball`](https://taucetiproject.org/docs/TauCeti/Analysis/Sobolev/Poincare/Wirtinger/W1p.html#TauCeti.W1p.eLpNorm_value_sub_setAverage_le_of_eq_ball).
 
 ## Other forms
-
-**The Poincaré–Wirtinger inequality for functions of bounded variation, localized to a subset.** Formalized in Tau Ceti as [`TauCeti.setLIntegral_enorm_sub_setAverage_le_mul_measure_rpow_mul_totalVariationOn_of_convex`](https://taucetiproject.org/docs/TauCeti/Analysis/BoundedVariation/Poincare.html#TauCeti.setLIntegral_enorm_sub_setAverage_le_mul_measure_rpow_mul_totalVariationOn_of_convex).
-
-```lean
-TauCeti.setLIntegral_enorm_sub_setAverage_le_mul_measure_rpow_mul_totalVariationOn_of_convex.{u_1}
-  {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
-  [MeasurableSpace E] [BorelSpace E] {μ : MeasureTheory.Measure E} [μ.IsAddHaarMeasure]
-  {Ω : TopologicalSpace.Opens E} {u : E → ℝ} {S A : Set E} (hΩc : Convex ℝ ↑Ω)
-  (hb : Bornology.IsBounded ↑Ω) (hu : MeasureTheory.LocallyIntegrableOn u (↑Ω) μ) (hS : S ⊆ ↑Ω)
-  (hS₀ : μ S ≠ 0) (hA : A ⊆ ↑Ω) :
-  ∫⁻ (x : E) in A, ‖u x - ⨍ (y : E) in S, u y ∂μ‖ₑ ∂μ ≤
-    ENNReal.ofReal
-          (μ.real (Metric.ball 0 1) ^ (1 - (↑(Module.finrank ℝ E))⁻¹) *
-              Metric.diam ↑Ω ^ Module.finrank ℝ E /
-            μ.real S) *
-        μ A ^ (↑(Module.finrank ℝ E))⁻¹ *
-      TauCeti.totalVariationOn μ Ω u
-```
 
 **The Poincaré–Wirtinger inequality from compactness.** Formalized in Tau Ceti as [`TauCeti.W1p.exists_eLpNorm_value_sub_setAverage_le_of_isCompactOperator`](https://taucetiproject.org/docs/TauCeti/Analysis/Sobolev/Poincare/Wirtinger/Compactness.html#TauCeti.W1p.exists_eLpNorm_value_sub_setAverage_le_of_isCompactOperator).
 

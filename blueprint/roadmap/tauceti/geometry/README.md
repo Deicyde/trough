@@ -1,8 +1,8 @@
 # Geometry
 
-Results in Tau Ceti's `TauCeti.Geometry` modules: by roadmap, then by area.
+Results in Tau Ceti's `TauCeti.Geometry` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
-## [Analytic toric geometry to Symplectic](part-01/README.md)
+## [Analytic toric geometry to Real Algebraic](part-01/README.md)
 
 - [Analytic toric geometry](part-01/analytic-toric-geometry/README.md)
 - [Complex manifolds, Dolbeault theory, and Kähler geometry](part-01/complex-manifolds-dolbeault-theory-and-kahler-ge/README.md)
@@ -19,12 +19,13 @@ Results in Tau Ceti's `TauCeti.Geometry` modules: by roadmap, then by area.
 - [Smooth orbifolds with finite isotropy](part-01/smooth-orbifolds-with-finite-isotropy/README.md)
 - [Symplectic geometry and Hamiltonian mechanics](part-01/symplectic-geometry-and-hamiltonian-mechanics/README.md)
 - [Taubes–Gromov theory](part-01/taubes-gromov-theory/README.md)
+- [The Yamabe problem and conformal scalar curvature](part-01/the-yamabe-problem-and-conformal-scalar-curvatur/README.md)
 - [Convex](part-01/convex/README.md)
 - [Lie](part-01/lie/README.md)
 - [Manifold](part-01/manifold/README.md)
 - [Real Algebraic](part-01/real-algebraic/README.md)
-- [Symplectic](part-01/symplectic/README.md)
 
-## [Part 2 of 2](part-02/README.md)
+## [Symplectic to Other results](part-02/README.md)
 
+- [Symplectic](part-02/symplectic/README.md)
 - [Other results](part-02/other-results/README.md)

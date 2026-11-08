@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# TauCeti.integralTopForm_mextDeri… to The fundamental theorem of…
+# TauCeti.integralTopForm_mextDeri… to Stokes' formula for a homotopy…
 
 - [TauCeti.integralTopForm_mextDeriv](tauceti-integraltopform-mextderiv.md)
 - [TauCeti.Green.green_ac_winding](tauceti-green-green-ac-winding.md)
@@ -22,5 +22,5 @@ navigation: transparent
 - [The fundamental theorem of calculus for line integrals, for a `C¹` form `ψ` of degree zero](the-fundamental-theorem-of-calculus-for-line-int.md)
 - [TauCeti.integralTopForm_mpullback_Icc_eq_pathIntegral](tauceti-integraltopform-mpullback-icc-eq-pathint.md)
 - [The compactly supported Poincaré lemma on the line](the-compactly-supported-poincare-lemma-on-the-li.md)
-- [Flux-divergence form of Green's theorem for a simple closed absolutely continuous curve](flux-divergence-form-of-greens-theorem-for-a-sim.md)
 - [The fundamental theorem of calculus for path classes](the-fundamental-theorem-of-calculus-for-path-cla.md)
+- [Stokes' formula for a homotopy of maps of a rectangle](stokes-formula-for-a-homotopy-of-maps-of-a-recta.md)

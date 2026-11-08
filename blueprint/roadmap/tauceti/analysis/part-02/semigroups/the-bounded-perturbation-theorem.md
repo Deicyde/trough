@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Converse of the Lumer--Phillips theorem](converse-of-the-lumer-phillips-theorem.md)
-- [The Lumer--Phillips generation theorem](the-lumer-phillips-generation-theorem.md)
+- [Lumer--Phillips in duality-map form](lumer-phillips-in-duality-map-form.md)
 
 ## Lean
 

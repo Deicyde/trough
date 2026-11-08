@@ -67,7 +67,7 @@ TauCeti.ContCohomology.explicitMap2_explicitCor2_eq_sum.{u, v, w, z} {G : Type u
           x)
 ```
 
-**The Mackey formula for the degree-two corestriction cochain, the degree-two counterpart of `TauCeti.ContCohomology.cochainsCor1_mackeyTransversal`.** Formalized in Tau Ceti as [`TauCeti.ContCohomology.cochainsCor2_mackeyTransversal`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/ContCohomology/Corestriction/Mackey/Basic.html#TauCeti.ContCohomology.cochainsCor2_mackeyTransversal).
+**The Mackey formula for the degree-two corestriction cochain.** Formalized in Tau Ceti as [`TauCeti.ContCohomology.cochainsCor2_mackeyTransversal`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/ContCohomology/Corestriction/Mackey/Basic.html#TauCeti.ContCohomology.cochainsCor2_mackeyTransversal).
 
 ```lean
 TauCeti.ContCohomology.cochainsCor2_mackeyTransversal.{u, v} (G : Type u) [Group G] (M : Type v)

@@ -23,11 +23,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Frobenius commutator identity](../../algebra/nilpotent-orbits-springer-resolution-and-subregu/the-frobenius-commutator-identity.md)
-- [The Krull intersection theorem for an extended ideal](../../ring-theory/ideal/the-krull-intersection-theorem-for-an-extended-i.md)
-- [Levi's theorem](../../algebra/lie/levis-theorem.md)
-- [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../algebra/lie/the-linear-independence-half-of-the-poincare-bir.md)
-- [The Poincaré--Birkhoff--Witt theorem](../../algebra/lie/the-poincare-birkhoff-witt-theorem.md)
+- [The Frobenius commutator identity](../../algebra/lie/part-01/the-frobenius-commutator-identity.md)
+- [The Krull intersection theorem for an extended ideal](../../ring-theory/part-01/ideal/the-krull-intersection-theorem-for-an-extended-i.md)
+- [Levi's theorem](../../algebra/lie/part-01/levis-theorem.md)
+- [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../algebra/lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)
+- [The Poincaré--Birkhoff--Witt theorem](../../algebra/lie/part-01/the-poincare-birkhoff-witt-theorem.md)
 
 ## Lean
 

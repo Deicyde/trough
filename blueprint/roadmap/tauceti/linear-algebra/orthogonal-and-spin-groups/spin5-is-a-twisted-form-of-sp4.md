@@ -34,6 +34,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Artin--Wedderburn over a separably closed field](../../algebra/central-simple/artin-wedderburn-over-a-separably-closed-field.md)
+- [Skolem–Noether for matrix algebras over a local semiring](../matrix/skolem-noether-for-matrix-algebras-over-a-local.md)
 - [Spin is the even unitary group in dimensions one to five](spin-is-the-even-unitary-group-in-dimensions-one.md)
 - [The structure theorem in operator form](../../representation-theory/spin/the-structure-theorem-in-operator-form.md)
 

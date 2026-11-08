@@ -31,8 +31,8 @@ TauCeti.IntegralLattice.IsPosDef.nonempty_isometry_of_isUnimodular_of_finrank_le
 
 - [The `E₈` root lattice is isometric to the spinor glue lattice `D₈⁺`](the-e8-root-lattice-is-isometric-to-the-spinor-g.md)
 - [A positive definite lattice is `I_k` plus a lattice without vectors of norm one](a-positive-definite-lattice-is-i-k-plus-a-lattic.md)
-- [Hermite's inequality for the minimum](../integral-quadratic-forms-and-lattices/hermites-inequality-for-the-minimum.md)
-- [TauCeti.FiniteQuadraticModule](../integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
+- [Hermite's inequality for the minimum](../../number-theory/part-01/integral-quadratic-forms-and-lattices/hermites-inequality-for-the-minimum.md)
+- [TauCeti.FiniteQuadraticModule](../../number-theory/part-01/integral-quadratic-forms-and-lattices/tauceti-finitequadraticmodule.md)
 - [TauCeti.IntegralLattice.discriminantQuadraticModule](tauceti-integrallattice-discriminantquadraticmod.md)
 
 ## Lean

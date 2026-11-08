@@ -4,7 +4,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [The `E₈` root lattice is isometric to the spinor glue lattice `D₈⁺`](the-e8-root-lattice-is-isometric-to-the-spinor-g.md)
 - [Even overlattices correspond to quadratic-isotropic subgroups](even-overlattices-correspond-to-quadratic-isotro.md)
-- [The standard model is isometric to the discriminant quadratic module of an even-rank checkerboard lattice, by the identification carrying `(1, 0)` to the vector class and `(0, 1)` to the spinor class](the-standard-model-is-isometric-to-the-discrimin.md)
+- [The standard model is isometric to the discriminant quadratic module of an even-rank checkerboard lattice](the-standard-model-is-isometric-to-the-discrimin.md)
 - [Positive definite unimodular lattices of rank at most nine](positive-definite-unimodular-lattices-of-rank-at.md)
 - [`E₈` is the unique even unimodular positive definite lattice of rank eight](e8-is-the-unique-even-unimodular-positive-defini.md)
 - [The reflections in the 240 roots generate the isometry group of the E₈ lattice](the-reflections-in-the-240-roots-generate-the-is.md)

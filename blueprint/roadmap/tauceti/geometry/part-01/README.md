@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Analytic toric geometry to Symplectic
+# Analytic toric geometry to Real Algebraic
 
 - [Analytic toric geometry](analytic-toric-geometry/README.md)
 - [Complex manifolds, Dolbeault theory, and Kähler geometry](complex-manifolds-dolbeault-theory-and-kahler-ge/README.md)
@@ -19,8 +19,8 @@ navigation: transparent
 - [Smooth orbifolds with finite isotropy](smooth-orbifolds-with-finite-isotropy/README.md)
 - [Symplectic geometry and Hamiltonian mechanics](symplectic-geometry-and-hamiltonian-mechanics/README.md)
 - [Taubes–Gromov theory](taubes-gromov-theory/README.md)
+- [The Yamabe problem and conformal scalar curvature](the-yamabe-problem-and-conformal-scalar-curvatur/README.md)
 - [Convex](convex/README.md)
 - [Lie](lie/README.md)
 - [Manifold](manifold/README.md)
 - [Real Algebraic](real-algebraic/README.md)
-- [Symplectic](symplectic/README.md)

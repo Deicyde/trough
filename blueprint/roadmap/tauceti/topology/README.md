@@ -1,6 +1,6 @@
 # Topology
 
-Results in Tau Ceti's `TauCeti.Topology` modules: by roadmap, then by area.
+Results in Tau Ceti's `TauCeti.Topology` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
 - [Peripheral actions on free pro-`p` groups](peripheral-actions-on-free-pro-p-groups/README.md)
 - [Profinite and pro-`p` groups](profinite-and-pro-p-groups/README.md)
@@ -10,4 +10,5 @@ Results in Tau Ceti's `TauCeti.Topology` modules: by roadmap, then by area.
 - [Algebra](algebra/README.md)
 - [Baire](baire/README.md)
 - [Homotopy](homotopy/README.md)
+- [Metric Space](metric-space/README.md)
 - [Other results](other-results/README.md)

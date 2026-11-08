@@ -22,6 +22,7 @@ TauCeti.ClassificationStatement.{u} : Prop
 ## Proof depends on
 
 - [The ambient group of a valid Lie-type index](the-ambient-group-of-a-valid-lie-type-index.md)
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
 
 ## Lean
 

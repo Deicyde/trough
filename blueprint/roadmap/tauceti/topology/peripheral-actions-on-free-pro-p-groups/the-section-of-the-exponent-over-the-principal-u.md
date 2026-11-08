@@ -31,11 +31,11 @@ TauCeti.Peripheral.exists_section_principalUnits.{u_1} {p r : ℕ} [Fact (Nat.Pr
 
 - [The `ℓ`-adic comparison](../profinite-integers-profinite-powers-and-continuo/the-l-adic-comparison.md)
 - [The exponent character is continuous](the-exponent-character-is-continuous.md)
-- [The peripheral automorphisms form a closed subgroup of `ContinuousAut F` for the congruence topology, when `F` is topologically finitely generated](the-peripheral-automorphisms-form-a-closed-subgr.md)
+- [The peripheral automorphisms form a closed subgroup](the-peripheral-automorphisms-form-a-closed-subgr.md)
 - [The peripheral-power theorem](the-peripheral-power-theorem.md)
 - [The principal units are a copy of `ℤ_p`](the-principal-units-are-a-copy-of-z-p.md)
 - [The product decomposition of the profinite integers](../profinite-integers-profinite-powers-and-continuo/the-product-decomposition-of-the-profinite-integ.md)
-- [The profinite power `x ^ᶻ a` of an element `x` of a profinite group by a profinite integer `a`](../profinite-integers-profinite-powers-and-continuo/the-profinite-power-x-z-a-of-an-element-x-of-a-p.md)
+- [The profinite power](../profinite-integers-profinite-powers-and-continuo/the-profinite-power.md)
 - [TauCeti.ContinuousAut.compactSpace](../profinite-integers-profinite-powers-and-continuo/tauceti-continuousaut-compactspace.md)
 
 ## Lean

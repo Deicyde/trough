@@ -21,7 +21,7 @@ OpenSubgroup.exact_cor_cup_of_index_two.{u} {G : Type u} [Group G] [TopologicalS
 
 ## Depends on
 
-- [Shapiro's lemma in every degree](../homological/shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](../homological/shapiros-lemma-in-degree-one.md)
 
 ## Lean
 

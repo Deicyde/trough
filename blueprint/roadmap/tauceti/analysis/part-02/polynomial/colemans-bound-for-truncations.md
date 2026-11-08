@@ -32,7 +32,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Coleman majorant bounds the coefficients](../../part-01/compact-operators-and-nonarchimedean-fredholm-th/the-coleman-majorant-bounds-the-coefficients.md)
 - [Coleman's coefficient bound](colemans-coefficient-bound.md)
 
 ## Lean

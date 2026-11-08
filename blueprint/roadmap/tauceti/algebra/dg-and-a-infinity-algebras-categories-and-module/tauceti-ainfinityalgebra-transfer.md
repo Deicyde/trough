@@ -25,10 +25,6 @@ TauCeti.AInfinityAlgebra.transfer.{uR, uA, uH} {R : Type uR} {A : Type uA} {H : 
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../homology/the-suspended-stasheff-identity-free-of-the-stru.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.AInfinityAlgebra.transfer`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/AInfinity/Algebra/Transfer/Basic.html#TauCeti.AInfinityAlgebra.transfer).

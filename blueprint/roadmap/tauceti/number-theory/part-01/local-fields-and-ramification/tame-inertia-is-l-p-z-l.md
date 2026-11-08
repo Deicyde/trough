@@ -30,7 +30,7 @@ TauCeti.nonempty_continuousMulEquiv_piPadicInt.{u_1} (K : Type u_1) [Field K] [V
 
 ## Depends on
 
-- [The wild inertia subgroup `P_K` of the absolute Galois group of a nonarchimedean local field `K`](the-wild-inertia-subgroup-p-k-of-the-absolute-ga.md)
+- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
 
 ## Proof depends on
 

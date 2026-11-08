@@ -40,7 +40,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The inverse function theorem for manifolds](../part-01/the-inverse-function-theorem-for-manifolds.md)
+- [The inverse function theorem for manifolds](the-inverse-function-theorem-for-manifolds.md)
 
 ## Informally uses
 

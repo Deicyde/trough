@@ -54,9 +54,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Moser's crossover estimate (`TauCeti.PDE.exists_setAverage_rpow_mul_setAverage_rpow_neg_le`)](mosers-crossover-estimate-tauceti-pde-exists-set.md)
-- [Moser's lower bound from small negative powers](../../part-02/pde/part-01/mosers-lower-bound-from-small-negative-powers.md)
+- [Moser's lower bound from small negative powers](../../part-02/pde/part-02/mosers-lower-bound-from-small-negative-powers.md)
 - [Moser's reverse Hölder inequality for powers of a positive supersolution](mosers-reverse-holder-inequality-for-powers-of-a.md)
-- [The Sobolev inequality for functions of bounded variation](../geometric-measure-theory-rectifiability-bv-and-f/the-sobolev-inequality-for-functions-of-bounded.md)
+- [The Sobolev inequality on `W^{1,p}_0` of a ball](../../part-02/sobolev/part-02/the-sobolev-inequality-on-w-1-p-0-of-a-ball.md)
 
 ## Lean
 

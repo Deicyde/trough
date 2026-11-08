@@ -56,9 +56,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Carathéodory's theorem for the inside of a Jordan curve](caratheodorys-theorem-for-the-inside-of-a-jordan.md)
+- [Carathéodory's theorem for the inside of a Jordan curve](../../../part-02/complex/part-01/caratheodorys-theorem-for-the-inside-of-a-jordan.md)
 - [Rouché's theorem for a disc, classical form](../part-02/rouches-theorem-for-a-disc-classical-form.md)
-- [The Schwarz--Christoffel formula](../part-02/the-schwarz-christoffel-formula.md)
+- [The Schwarz--Christoffel theorem for a bounded polygonal Jordan domain](the-schwarz-christoffel-theorem-for-a-bounded-po.md)
 
 ## Lean
 

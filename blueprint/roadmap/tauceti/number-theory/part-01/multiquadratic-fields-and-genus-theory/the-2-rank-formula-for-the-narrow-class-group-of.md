@@ -27,8 +27,8 @@ TauCeti.Multiquadratic.narrowTwoRank_eq_ncard_ramifiedPrimes_sub_one.{u_1} {K : 
 
 ## Proof depends on
 
-- [Dirichlet's theorem on primes in arithmetic progressions, with Dirichlet density](../the-chebotarev-density-theorem/dirichlets-theorem-on-primes-in-arithmetic-progr.md)
-- [Dirichlet's unit theorem, structural form](../heights-units-and-s-units-of-number-fields/part-01/dirichlets-unit-theorem-structural-form.md)
+- [Dirichlet's theorem for prime-discriminant characters](../../part-02/multiquadratic/dirichlets-theorem-for-prime-discriminant-charac.md)
+- [Dirichlet's unit theorem (`NumberField.fg_units_integralClosure`)](../../part-02/number-field/dirichlets-unit-theorem-numberfield-fg-units-int.md)
 - [The genus character on the narrow class group](the-genus-character-on-the-narrow-class-group.md)
 - [Hilbert's Theorem 90 for quadratic conjugation](../../part-02/number-field/hilberts-theorem-90-for-quadratic-conjugation.md)
 

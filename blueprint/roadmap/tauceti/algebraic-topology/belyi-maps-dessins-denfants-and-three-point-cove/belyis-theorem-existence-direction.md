@@ -26,10 +26,10 @@ TauCeti.IsFunctionField.exists_isAlgebraicBelyiPair.{u, v} {k : Type u} {F : Typ
 
 ## Proof depends on
 
-- [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-01/dedekinds-different-theorem-first-part-stichteno.md)
-- [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
+- [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](../../field-theory/function-field/part-01/dedekinds-different-theorem-first-part-stichteno.md)
+- [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../../field-theory/function-field/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [Polynomial Belyification of algebraic numbers](polynomial-belyification-of-algebraic-numbers.md)
-- [The weak approximation theorem for the places of an algebraic function field (Stichtenoth, Theorem 1.3.1), in the equality form](../../field-theory/function-field/the-weak-approximation-theorem-for-the-places-of.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
 
 ## Lean
 

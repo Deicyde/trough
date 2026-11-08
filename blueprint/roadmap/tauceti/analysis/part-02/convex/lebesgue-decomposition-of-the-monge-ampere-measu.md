@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.mongeAmpereMeasure_eq_singularPart_add_withDensity, TauCeti.exists_mongeAmpereMeasure_eq_singularPart_add_withDensity
+lean: TauCeti.mongeAmpereMeasure_eq_singularPart_add_withDensity, TauCeti.exists_mongeAmpereMeasure_eq_singularPart_add_withDensity, TauCeti.mongeAmpereMeasure_withDensity_eq_singularPart_add_withDensity
 statement: formalized
 proof: formalized
 ---
@@ -42,9 +42,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Alexandrov's theorem](alexandrovs-theorem.md)
-- [The Fenchel–Young inequality, in the form that holds with no hypothesis](the-fenchel-young-inequality-in-the-form-that-ho.md)
-- [Lebesgue decomposition of the weighted Monge–Ampère measure](lebesgue-decomposition-of-the-weighted-monge-amp.md)
-- [Rademacher's theorem for locally Lipschitz functions](../../part-01/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [The Fenchel–Young inequality](the-fenchel-young-inequality.md)
+- [Rademacher's theorem for extended-real convex functions](rademachers-theorem-for-extended-real-convex-fun.md)
+- [Rademacher's theorem for locally Lipschitz functions](../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 
@@ -70,6 +70,28 @@ TauCeti.exists_mongeAmpereMeasure_eq_singularPart_add_withDensity.{u_1} {E : Typ
       TauCeti.mongeAmpereMeasure μ f =
         (TauCeti.mongeAmpereMeasure μ f).singularPart μ +
           (μ.restrict (interior {x | f x ≠ ⊤})).withDensity fun x => ENNReal.ofReal (H x).det
+```
+
+**Lebesgue decomposition of the weighted Monge–Ampère measure.** Formalized in Tau Ceti as [`TauCeti.mongeAmpereMeasure_withDensity_eq_singularPart_add_withDensity`](https://taucetiproject.org/docs/TauCeti/Analysis/Convex/MongeAmpere/Decomposition.html#TauCeti.mongeAmpereMeasure_withDensity_eq_singularPart_add_withDensity).
+
+```lean
+TauCeti.mongeAmpereMeasure_withDensity_eq_singularPart_add_withDensity.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {f : E → EReal}
+  [MeasurableSpace E] [BorelSpace E] (μ : MeasureTheory.Measure E) [μ.IsAddHaarMeasure]
+  (hf : Convex ℝ {p | f p.1 ≤ ↑p.2}) (hbot : ∀ (x : E), f x ≠ ⊥) {H : E → E →L[ℝ] E}
+  (hH :
+    ∀ᵐ (x : E) ∂μ,
+      x ∈ interior {x | f x ≠ ⊤} →
+        ∃ y,
+          ∀ ε > 0,
+            ∀ᶠ (x' : E) in nhds x,
+              ∀ y' ∈ TauCeti.subdifferential (innerₗ E) f x',
+                ‖y' - y - (H x) (x' - x)‖ ≤ ε * ‖x' - x‖)
+  {g : E → ENNReal} (hg : Measurable g) :
+  TauCeti.mongeAmpereMeasure (μ.withDensity g) f =
+    (TauCeti.mongeAmpereMeasure (μ.withDensity g) f).singularPart μ +
+      (μ.restrict (interior {x | f x ≠ ⊤})).withDensity fun x =>
+        ENNReal.ofReal (H x).det * g (gradient (fun x' => (f x').toReal) x)
 ```
 
 ## Sources

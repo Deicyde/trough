@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The analytic inverse function theorem](../../analysis/part-01/analytic/the-analytic-inverse-function-theorem.md)
-- [The identity theorem for Riemann surfaces](../../analysis/part-02/complex/part-01/the-identity-theorem-for-riemann-surfaces.md)
+- [The identity theorem for Riemann surfaces](../../analysis/part-02/complex/part-02/the-identity-theorem-for-riemann-surfaces.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 - [The open mapping theorem](../../analysis/part-02/complex/part-02/the-open-mapping-theorem.md)
 - [Osgood's lemma](../../geometry/part-01/complex-manifolds-dolbeault-theory-and-kahler-ge/osgoods-lemma.md)

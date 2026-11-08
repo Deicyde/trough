@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 - [Montel's selection theorem](../../../part-02/complex/part-02/montels-selection-theorem.md)
 - [Rouché's theorem for a disc, classical form](../part-02/rouches-theorem-for-a-disc-classical-form.md)
 - [Strict Schwarz lemma](../part-02/strict-schwarz-lemma.md)
-- [Uniqueness in the Riemann mapping theorem, up to a disc automorphism](../part-02/uniqueness-in-the-riemann-mapping-theorem-up-to.md)
+- [Uniqueness in the Riemann mapping theorem, up to a disc automorphism](../../../part-02/complex/part-03/uniqueness-in-the-riemann-mapping-theorem-up-to.md)
 
 ## Lean
 

@@ -49,7 +49,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Evertse's lemma (Evertse; Bombieri–Gubler, Lemma 7.5.29), for a field `K` with a set `T` of absolute values at which a subset `R` approximates every family of targets simultaneously, `v (ξ + γ v) ≤ A v`](../../../analysis/part-02/other-results/evertses-lemma-evertse-bombieri-gubler-lemma-7-5.md)
+- [Evertse's lemma](../../../analysis/part-02/other-results/evertses-lemma.md)
 
 ## Lean
 

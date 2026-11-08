@@ -36,8 +36,8 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Bochner formula](../part-01/the-bochner-formula.md)
-- [The divergence theorem on a manifold without boundary](../../positive-scalar-curvature-surgery-and-bordism/the-divergence-theorem-on-a-manifold-without-bou.md)
-- [Green's first identity on a manifold without boundary](../../positive-scalar-curvature-surgery-and-bordism/greens-first-identity-on-a-manifold-without-boun.md)
+- [The divergence theorem on a manifold without boundary](../part-01/the-divergence-theorem-on-a-manifold-without-bou.md)
+- [Green's first identity on a manifold without boundary](../part-01/greens-first-identity-on-a-manifold-without-boun.md)
 - [The Koszul formula](the-koszul-formula.md)
 
 ## Lean

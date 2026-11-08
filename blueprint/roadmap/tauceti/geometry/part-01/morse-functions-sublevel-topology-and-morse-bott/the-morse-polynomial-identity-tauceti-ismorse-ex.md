@@ -49,6 +49,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Deformation of sublevels across a band without critical points (Milnor, Theorem 3.1)](deformation-of-sublevels-across-a-band-without-c.md)
+- [Euler--Poincaré for cellular chains](../../../algebraic-topology/cellular/euler-poincare-for-cellular-chains.md)
 - [The Mayer–Vietoris isomorphism of a sphere](../../../algebraic-topology/singular/the-mayer-vietoris-isomorphism-of-a-sphere.md)
 - [Milnor's cell attachment theorem](../manifold/part-02/milnors-cell-attachment-theorem.md)
 - [The Morse polynomial identity (`ChainComplex.sum_range_monomial_finrank_X_eq`)](../../../algebra/homology/the-morse-polynomial-identity-chaincomplex-sum-r.md)

@@ -27,7 +27,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../homology/the-suspended-stasheff-identity-free-of-the-stru.md)
 - [TauCeti.AInfinityAlgebra.minimalModel](tauceti-ainfinityalgebra-minimalmodel.md)
 - [TauCeti.AInfinityAlgebra.transfer](tauceti-ainfinityalgebra-transfer.md)
 

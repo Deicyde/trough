@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.totallyBounded_of_comp_add_sub_of_unifTight
+lean: TauCeti.totallyBounded_of_comp_add_sub_of_unifTight, TauCeti.totallyBounded_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl
 statement: formalized
 proof: formalized
 ---
@@ -39,11 +39,32 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Arzelà–Ascoli theorem in `C(X, Y)`](../../topology/other-results/the-arzela-ascoli-theorem-in-c-x-y.md)
-- [Hölder's bound on an average](../euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-bound-on-an-average.md)
+- [Hölder's bound on an average](../integral/part-01/holders-bound-on-an-average.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.totallyBounded_of_comp_add_sub_of_unifTight`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lp/FrechetKolmogorov.html#TauCeti.totallyBounded_of_comp_add_sub_of_unifTight).
+
+## Other forms
+
+**The Fréchet--Kolmogorov criterion for a family vanishing almost everywhere off a fixed bounded set.** Formalized in Tau Ceti as [`TauCeti.totallyBounded_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lp/FrechetKolmogorov.html#TauCeti.totallyBounded_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl).
+
+```lean
+TauCeti.totallyBounded_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [MeasurableSpace E] [BorelSpace E] [ProperSpace E]
+  [NormedAddCommGroup F] [NormedSpace ℝ F] [FiniteDimensional ℝ F] {mu : MeasureTheory.Measure E}
+  [mu.IsAddHaarMeasure] {p : ENNReal} [Fact (1 ≤ p)] (hp' : p ≠ ⊤)
+  {S : Set ↥(MeasureTheory.Lp F p mu)} {s : Set E} (hs : Bornology.IsBounded s)
+  (hsupp : ∀ f ∈ S, ∀ᵐ (x : E) ∂mu, x ∉ s → ↑↑f x = 0) {M : ENNReal} (hM : M ≠ ⊤)
+  (hbdd : ∀ f ∈ S, MeasureTheory.eLpNorm (↑↑f) p mu ≤ M)
+  (htrans :
+    ∀ (ε : ENNReal),
+      0 < ε →
+        ∃ δ > 0,
+          ∀ f ∈ S,
+            ∀ (h : E), ‖h‖ < δ → MeasureTheory.eLpNorm (fun x => ↑↑f (x + h) - ↑↑f x) p mu ≤ ε) :
+  TotallyBounded S
+```
 
 ## Sources
 

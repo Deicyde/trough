@@ -1,11 +1,11 @@
 # Schubert geometry, Demazure sections and flag K-theory
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/SchubertGeometry/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/SchubertGeometry/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [TauCeti.PLPath.lower_eq_some_iff](tauceti-plpath-lower-eq-some-iff.md)
 - [The stabilizer of a dominant weight is a standard parabolic subgroup](the-stabilizer-of-a-dominant-weight-is-a-standar.md)
 - [A cover of `W / W_λ` has a unique positive root label](a-cover-of-w-w-has-a-unique-positive-root-label.md)
-- [The bond of a cover of `W / W_λ` is a positive integer when the dominant weight `λ` is integral, that is when every simple coroot takes an integer value on `λ`](the-bond-of-a-cover-of-w-w-is-a-positive-integer.md)
+- [The bond of a cover of `W / W_λ` is a positive integer](the-bond-of-a-cover-of-w-w-is-a-positive-integer.md)
 - [The localization identity of the Demazure operator](the-localization-identity-of-the-demazure-operat.md)
 - [The Demazure operator is idempotent, `Dᵢ² = Dᵢ`](the-demazure-operator-is-idempotent-di2-di.md)
 - [TauCeti.NormalCrystal.tensor_ε_eq_max](tauceti-normalcrystal-tensor-eq-max.md)
@@ -16,8 +16,4 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [RootPairing.reflectionBond](rootpairing-reflectionbond.md)
 - [CoxeterSystem.MinimalCosetRepCovBy](coxetersystem-minimalcosetrepcovby.md)
 - [Demazure's formula on a basis element](demazures-formula-on-a-basis-element.md)
-- [Deodhar's lemma](deodhars-lemma.md)
-- [Matsumoto's theorem, relational form](matsumotos-theorem-relational-form.md)
-- [The Poincaré polynomial is invariant under transporting the Coxeter system along a group isomorphism, since the length function is (`TauCeti.length_map`)](the-poincare-polynomial-is-invariant-under-trans.md)
-- [Tits' lemma](tits-lemma.md)
 - [The Weyl dimension formula (`TauCeti.sum_coeff_mul_prod_coroot'_weylVector_eq`)](the-weyl-dimension-formula-tauceti-sum-coeff-mul.md)

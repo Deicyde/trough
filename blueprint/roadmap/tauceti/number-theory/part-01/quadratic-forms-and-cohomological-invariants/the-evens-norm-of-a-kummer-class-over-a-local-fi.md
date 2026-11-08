@@ -32,16 +32,18 @@ TauCeti.galoisEvens_kummerClass_eq_hilbertSymbol_smul.{u} {K L : Type u} [Field 
 
 ## Depends on
 
-- [The index-two degree-one Evens norm `Nᴱᵛ : H¹(U, 𝔽₂) → H²(G, 𝔽₂)` for an open subgroup `U` of index two](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-index-two-degree-one-evens-norm-nev-h1-u-f2.md)
+- [The index-two degree-one Evens norm](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-index-two-degree-one-evens-norm.md)
 
 ## Proof depends on
 
 - [A Kummer cup over a local field is its Hilbert symbol times a fixed nonzero cup](a-kummer-cup-over-a-local-field-is-its-hilbert-s.md)
-- [The comparison isomorphism `Br(K) ≃ H²_cont(G_K, (Kˢ)ˣ)` with Mathlib's continuous cohomology, for `K` in any universe](the-comparison-isomorphism-br-k-h2-cont-g-k-ks-x.md)
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
+- [Artin--Wedderburn over a separably closed field](../../../algebra/central-simple/artin-wedderburn-over-a-separably-closed-field.md)
+- [The comparison isomorphism](the-comparison-isomorphism.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [Serre's formula for the Evens norm of a Kummer class (Serre, Théorème 1′ at `n = 2`)](../../../field-theory/other-results/serres-formula-for-the-evens-norm-of-a-kummer-cl.md)
 - [The Skolem-Noether theorem](../../../algebra/central-simple/the-skolem-noether-theorem.md)
-- [The splitting criterion for quaternion algebras (Lam III.2.7 and III.4.2, Serre III.1, Gille-Szamuely 1.1.9)](the-splitting-criterion-for-quaternion-algebras.md)
+- [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
+- [Wedderburn-Artin for central simple algebras](../../../algebra/central-simple/wedderburn-artin-for-central-simple-algebras.md)
 
 ## Lean
 

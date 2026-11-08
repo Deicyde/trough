@@ -33,8 +33,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Poincaré lemma](../../../../analysis/part-01/calculus/part-01/the-poincare-lemma.md)
-- [The relative Poincaré lemma](../../../../analysis/part-01/calculus/part-01/the-relative-poincare-lemma.md)
+- [The Poincaré lemma](../../../../analysis/part-02/calculus/part-01/the-poincare-lemma.md)
+- [The relative Poincaré lemma](../../../../analysis/part-02/calculus/part-01/the-relative-poincare-lemma.md)
 
 ## Lean
 

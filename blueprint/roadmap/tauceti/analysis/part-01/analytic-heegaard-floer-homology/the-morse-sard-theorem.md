@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Sard's theorem on the locus where the derivative vanishes](sards-theorem-on-the-locus-where-the-derivative.md)
+- [Sard's theorem on the locus where the derivative vanishes](../../part-02/calculus/part-02/sards-theorem-on-the-locus-where-the-derivative.md)
 
 ## Lean
 

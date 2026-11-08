@@ -38,14 +38,14 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Jacobian criterion for étaleness](../../ring-theory/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
-- [Krull–Akizuki's length bound](../../ring-theory/other-results/part-01/krull-akizukis-length-bound.md)
-- [Riemann's theorem (Stichtenoth, Theorem 1.4.17)](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-02/riemanns-theorem-stichtenoth-theorem-1-4-17.md)
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/part-01/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
-- [Serre's vanishing theorem on affine schemes](../other-results/serres-vanishing-theorem-on-affine-schemes.md)
-- [TauCeti.Ring.IsJapanese](../../ring-theory/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
-- [The weak approximation theorem for the places of an algebraic function field (Stichtenoth, Theorem 1.3.1), in the equality form](../../field-theory/function-field/the-weak-approximation-theorem-for-the-places-of.md)
-- [Weierstrass gap theorem (Stichtenoth, Theorem 1.6.8)](../../field-theory/function-field/weierstrass-gap-theorem-stichtenoth-theorem-1-6.md)
+- [The Jacobian criterion for étaleness](../../ring-theory/part-02/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
+- [Krull–Akizuki](../../ring-theory/part-02/other-results/part-01/krull-akizuki.md)
+- [Riemann's theorem](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [Serre's vanishing theorem on affine opens](../other-results/serres-vanishing-theorem-on-affine-opens.md)
+- [TauCeti.Ring.IsJapanese](../../ring-theory/part-01/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
+- [Weierstrass gap theorem (Stichtenoth, Theorem 1.6.8)](../../field-theory/function-field/part-02/weierstrass-gap-theorem-stichtenoth-theorem-1-6.md)
 
 ## Lean
 

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Contour.Cycle.hungerbuhlerWasem_residueTheorem, TauCeti.Contour.hungerbuhlerWasem_residueTheorem
+lean: TauCeti.Contour.Cycle.hungerbuhlerWasem_residueTheorem
 statement: formalized
 proof: formalized
 ---
@@ -58,28 +58,11 @@ TauCeti.Contour.Cycle.hungerbuhlerWasem_residueTheorem {f : ℂ → ℂ} {U : Se
 
 - [The canonical Laurent decomposition](../../part-02/contour/the-canonical-laurent-decomposition.md)
 - [First exit time at radius `ε` (left side)](first-exit-time-at-radius-left-side.md)
-- [The homology Cauchy theorem (roadmap `homologyCauchyTheorem`, Layer 3)](the-homology-cauchy-theorem-roadmap-homologycauc.md)
 - [The homology Cauchy theorem for contour cycles](../banach-algebras/the-homology-cauchy-theorem-for-contour-cycles.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.Contour.Cycle.hungerbuhlerWasem_residueTheorem`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Cycle/HungerbuhlerWasem.html#TauCeti.Contour.Cycle.hungerbuhlerWasem_residueTheorem).
-
-## Other forms
-
-**The Hungerbühler–Wasem generalized residue theorem (HW Thm 3.3).** Formalized in Tau Ceti as [`TauCeti.Contour.hungerbuhlerWasem_residueTheorem`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/HungerbuhlerWasem.html#TauCeti.Contour.hungerbuhlerWasem_residueTheorem).
-
-```lean
-TauCeti.Contour.hungerbuhlerWasem_residueTheorem {f : ℂ → ℂ} {U : Set ℂ} (hU : IsOpen U)
-  (S : Finset ℂ) (γ : ℝ → ℂ) (a b : ℝ) (hγ_imm : TauCeti.Contour.IsPwC1ImmersionOn γ a b)
-  (hSU : ↑S ⊆ U) (hclosed : γ a = γ b) (hγa : γ a ∉ ↑S) (hγU : ∀ t ∈ Set.uIcc a b, γ t ∈ U)
-  (hf : DifferentiableOn ℂ f (U \ ↑S)) (hmero : ∀ s ∈ S, MeromorphicAt f s)
-  (hnull : TauCeti.Contour.IsNullHomologous γ a b U)
-  (hA : TauCeti.Contour.ConditionAprime γ a b f S) (hB : TauCeti.Contour.ConditionB γ a b f) :
-  TauCeti.Contour.HasCauchyPV γ a b f
-    (2 * ↑Real.pi * Complex.I *
-      ∑ s ∈ S, TauCeti.Contour.windingNumber γ a b s * TauCeti.Contour.residue f s)
-```
 
 ## Sources
 

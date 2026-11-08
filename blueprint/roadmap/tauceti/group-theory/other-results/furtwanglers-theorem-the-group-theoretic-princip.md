@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Nakayama's lemma over `ℤ`](../../ring-theory/other-results/part-01/nakayamas-lemma-over-z.md)
+- [Nakayama's lemma over `ℤ`](../../ring-theory/part-02/other-results/part-02/nakayamas-lemma-over-z.md)
 
 ## Lean
 

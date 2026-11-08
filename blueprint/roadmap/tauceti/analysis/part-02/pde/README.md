@@ -1,11 +1,13 @@
 # PDE
 
-Results named in Tau Ceti's `TauCeti.Analysis.PDE` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.Analysis.PDE` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-## [The Caccioppoli inequality to Perron's theorem](part-01/README.md)
+## [The Caccioppoli inequality to The local Harnack inequality](part-01/README.md)
 
 - [The Caccioppoli inequality](part-01/the-caccioppoli-inequality.md)
+- [Cauchy--Schwarz for jet fields](part-01/cauchy-schwarz-for-jet-fields.md)
 - [The centered Harnack inequality on a planar disk](part-01/the-centered-harnack-inequality-on-a-planar-disk.md)
+- [Duhamel's formula for the heat equation](part-01/duhamels-formula-for-the-heat-equation.md)
 - [Duhamel's identity in supremum norm](part-01/duhamels-identity-in-supremum-norm.md)
 - [Duhamel's principle in integrated form](part-01/duhamels-principle-in-integrated-form.md)
 - [The Fredholm alternative in eigenvalue language](part-01/the-fredholm-alternative-in-eigenvalue-language.md)
@@ -18,20 +20,24 @@ Results named in Tau Ceti's `TauCeti.Analysis.PDE` modules that no roadmap's sta
 - [Hölder bound on the Laplacian of a heat convolution](part-01/holder-bound-on-the-laplacian-of-a-heat-convolut.md)
 - [Hölder bounds on the derivatives of a heat convolution](part-01/holder-bounds-on-the-derivatives-of-a-heat-convo.md)
 - [The Hölder estimate for the Hessian of the Duhamel potential](part-01/the-holder-estimate-for-the-hessian-of-the-duham.md)
+- [The interior Calderón–Zygmund estimate for continuous coefficients](part-01/the-interior-calderon-zygmund-estimate-for-conti.md)
 - [The interior Schauder estimate on small balls](part-01/the-interior-schauder-estimate-on-small-balls.md)
 - [The limit in Harnack's convergence theorem is harmonic](part-01/the-limit-in-harnacks-convergence-theorem-is-har.md)
 - [The local Harnack inequality](part-01/the-local-harnack-inequality.md)
-- [Moser's lower bound from small negative powers](part-01/mosers-lower-bound-from-small-negative-powers.md)
-- [The parabolic Hölder estimate of the Cauchy heat potential](part-01/the-parabolic-holder-estimate-of-the-cauchy-heat.md)
-- [Perron's theorem](part-01/perrons-theorem.md)
 
-## [Pointwise Gårding inequality to The zero-forcing Caccioppoli…](part-02/README.md)
+## [The localized Calderón–Zygmund… to The zero-forcing Caccioppoli…](part-02/README.md)
 
+- [The localized Calderón–Zygmund estimate for coefficients of small oscillation](part-02/the-localized-calderon-zygmund-estimate-for-coef.md)
+- [Moser's lower bound from small negative powers](part-02/mosers-lower-bound-from-small-negative-powers.md)
+- [The parabolic Hölder estimate of the Cauchy heat potential](part-02/the-parabolic-holder-estimate-of-the-cauchy-heat.md)
+- [Perron's theorem](part-02/perrons-theorem.md)
 - [Pointwise Gårding inequality](part-02/pointwise-garding-inequality.md)
+- [The Rayleigh principle for the Dirichlet problem](part-02/the-rayleigh-principle-for-the-dirichlet-problem.md)
 - [Schauder estimate for a Hessian supported in a ball](part-02/schauder-estimate-for-a-hessian-supported-in-a-b.md)
 - [The sharp Poincaré inequality on an interval](part-02/the-sharp-poincare-inequality-on-an-interval.md)
 - [The spatial Hölder estimate of the Cauchy heat potential](part-02/the-spatial-holder-estimate-of-the-cauchy-heat-p.md)
 - [The spectral theorem for the Dirichlet problem](part-02/the-spectral-theorem-for-the-dirichlet-problem.md)
+- [Stampacchia's global bound](part-02/stampacchias-global-bound.md)
 - [The temporal Hölder estimate of the Cauchy heat potential](part-02/the-temporal-holder-estimate-of-the-cauchy-heat.md)
 - [The value-field parabolic Hölder estimate for the Duhamel potential](part-02/the-value-field-parabolic-holder-estimate-for-th.md)
 - [The Weitzenböck formula at a vortex](part-02/the-weitzenbock-formula-at-a-vortex.md)

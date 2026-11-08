@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Fundamental theorem for absolutely continuous curves, integrability](fundamental-theorem-for-absolutely-continuous-cu.md)
-- [Hölder's inequality for Young's exponents](../euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
+- [Hölder's inequality for the integral of a product](holders-inequality-for-the-integral-of-a-product.md)
 
 ## Lean
 

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv, TauCeti.SkewZigzagParameter.cohomologyClass_map_eq_iff_exists_vertexFixing_algEquiv, TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_algEquiv_mem_span, TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_vertexPermuting_algEquiv
+lean: TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv, TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_algEquiv_mem_span, TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_vertexPermuting_algEquiv
 statement: formalized
 proof: formalized
 ---
@@ -36,23 +36,6 @@ Its statement uses no other declaration mapped here.
 Formalized in Tau Ceti as [`TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/Cohomology.html#TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv).
 
 ## Other forms
-
-**Couture's classification is injective under a coefficient homomorphism that is injective on units.** Formalized in Tau Ceti as [`TauCeti.SkewZigzagParameter.cohomologyClass_map_eq_iff_exists_vertexFixing_algEquiv`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/Skew/Cohomology.html#TauCeti.SkewZigzagParameter.cohomologyClass_map_eq_iff_exists_vertexFixing_algEquiv).
-
-```lean
-TauCeti.SkewZigzagParameter.cohomologyClass_map_eq_iff_exists_vertexFixing_algEquiv.{u, w, z}
-  {k : Type w} {V : Type u} {G : SimpleGraph V} {l : Type z} [CommRing k] [CommMonoid l] [Finite V]
-  (f : k →* l) (hf : Function.Injective ⇑(Units.map f)) {c c' : TauCeti.SkewZigzagParameter k G} :
-  (TauCeti.SkewZigzagParameter.cohomologyClass l G) (TauCeti.SkewZigzagParameter.map f c) =
-      (TauCeti.SkewZigzagParameter.cohomologyClass l G) (TauCeti.SkewZigzagParameter.map f c') ↔
-    ∃ φ,
-      ∀ (i : V),
-        φ
-            ((TauCeti.skewZigzagMk k G c)
-              (TauCeti.PathAlgebra.vertexIdempotent k (TauCeti.DoubledQuiver.vertex G i))) =
-          (TauCeti.skewZigzagMk k G c')
-            (TauCeti.PathAlgebra.vertexIdempotent k (TauCeti.DoubledQuiver.vertex G i))
-```
 
 **Couture's classification up to graph automorphisms.** Formalized in Tau Ceti as [`TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_algEquiv_mem_span`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/Skew/Automorphism.html#TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_algEquiv_mem_span).
 

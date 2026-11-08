@@ -1,6 +1,6 @@
 # DG and A-infinity algebras, categories, and modules
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/DGAInfinity/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/DGAInfinity/README.md) names as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [TauCeti.AInfinityAlgebra.minimalModel](tauceti-ainfinityalgebra-minimalmodel.md)
 - [Kadeishvili's intrinsic formality criterion](kadeishvilis-intrinsic-formality-criterion.md)
@@ -15,4 +15,3 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The Hochschild differential squares to zero](the-hochschild-differential-squares-to-zero.md)
 - [TauCeti.DGTwistedObject](tauceti-dgtwistedobject.md)
 - [TauCeti.DGTwistedObject.cone](tauceti-dgtwistedobject-cone.md)
-- [The DG Yoneda lemma](the-dg-yoneda-lemma.md)

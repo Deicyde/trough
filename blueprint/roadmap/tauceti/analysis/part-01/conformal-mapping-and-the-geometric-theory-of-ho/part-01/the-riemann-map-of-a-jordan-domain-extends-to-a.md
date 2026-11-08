@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 - [Generalized winding number (HW Def 2.1)](../../contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number-hw-def-2-1.md)
 - [The homology Cauchy theorem (roadmap `homologyCauchyTheorem`, Layer 3)](../../contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem-roadmap-homologycauc.md)
 - [Hurwitz's theorem](hurwitzs-theorem.md)
-- [Janiszewski's theorem](../part-02/janiszewskis-theorem.md)
+- [Janiszewski's theorem](janiszewskis-theorem.md)
 - [Montel's selection theorem](../../../part-02/complex/part-02/montels-selection-theorem.md)
 - [The Riemann mapping theorem](the-riemann-mapping-theorem.md)
 - [Rouché's theorem for a disc, classical form](../part-02/rouches-theorem-for-a-disc-classical-form.md)

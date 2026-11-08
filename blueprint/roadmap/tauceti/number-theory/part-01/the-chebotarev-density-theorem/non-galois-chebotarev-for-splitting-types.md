@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The analytic Euler product](../arithmetic-dirichlet-series-and-tauberian-method/part-01/the-analytic-euler-product.md)
+- [The analytic Euler product](../arithmetic-dirichlet-series-and-tauberian-method/the-analytic-euler-product.md)
 - [The Chebotarev density theorem](the-chebotarev-density-theorem.md)
 - [The primes of `K` with Artin class `C` in `L`](the-primes-of-k-with-artin-class-c-in-l.md)
 

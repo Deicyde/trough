@@ -17,29 +17,28 @@ TauCeti.ClassFieldTheory.globalClassFormation (K : Type) [Field K] [NumberField 
 
 ## Depends on
 
-- [The local invariant `inv_K : Br K ≃+ ℚ/ℤ` of a nonarchimedean local field `K`, normalized by arithmetic Frobenius](the-local-invariant-inv-k-br-k-q-z-of-a-nonarchi.md)
+- [The local invariant](the-local-invariant.md)
 - [The semi-local decomposition `K_v ⊗[K] L ≃ₐ[K_v] ∏_{w ∣ v} L_w`](../number-fields-ramification-frobenius-and-the-lmf/the-semi-local-decomposition-k-v-k-l-a-k-v-w-v-l.md)
 
 ## Proof depends on
 
-- [A prime-degree Galois extension has a prime with full decomposition group](a-prime-degree-galois-extension-has-a-prime-with.md)
-- [The Artin map is transported by a layer isomorphism matching the invariant maps](../../part-02/class-field-theory/the-artin-map-is-transported-by-a-layer-isomorph.md)
+- [Artin reciprocity commutes with conjugation](../../part-02/class-field-theory/artin-reciprocity-commutes-with-conjugation.md)
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
+- [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
 - [Dedekind's different theorem, the tame case](../../part-02/local-field/dedekinds-different-theorem-the-tame-case.md)
 - [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/eulers-theorem-on-an-n-th-root-of-unity.md)
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
-- [The Galois action on the semi-local decomposition](../number-fields-ramification-frobenius-and-the-lmf/the-galois-action-on-the-semi-local-decompositio.md)
+- [The Galois action on the semi-local decomposition](../../part-02/number-field/the-galois-action-on-the-semi-local-decompositio.md)
 - [The Galois group of the maximal unramified extension is the profinite integers](../local-fields-and-ramification/the-galois-group-of-the-maximal-unramified-exten.md)
 - [The Hasse principle for Brauer classes, from idele-class `H¹`](../../part-02/class-field-theory/the-hasse-principle-for-brauer-classes-from-idel.md)
-- [Hensel's lemma with an estimate over a Henselian discrete valuation ring](../counting-totally-ramified-extensions-of-a-local/part-01/hensels-lemma-with-an-estimate-over-a-henselian.md)
-- [The inverse of Shapiro's isomorphism is natural in the coefficients](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-is-natural-i.md)
+- [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
+- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [The Kummer case of the second fundamental inequality](../../part-02/class-field-theory/the-kummer-case-of-the-second-fundamental-inequa.md)
 - [The local class formation](the-local-class-formation.md)
 - [The Mackey formula for the degree-one corestriction cochain](../../../representation-theory/homological/the-mackey-formula-for-the-degree-one-corestrict.md)
 - [Restriction through Shapiro's lemma](../../../representation-theory/homological/restriction-through-shapiros-lemma.md)
-- [Shapiro's isomorphism on an adjunct](../../../representation-theory/homological/shapiros-isomorphism-on-an-adjunct.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [The Sylow reduction of Tate's triviality criterion (Milne II 3.10, last paragraph)](../../../representation-theory/homological/the-sylow-reduction-of-tates-triviality-criterio.md)
 - [Tate's cohomological triviality criterion (Milne II 3.10)](../../../representation-theory/homological/tates-cohomological-triviality-criterion-milne-i.md)
 - [Tate's lattice lemma](../../../representation-theory/homological/tates-lattice-lemma.md)

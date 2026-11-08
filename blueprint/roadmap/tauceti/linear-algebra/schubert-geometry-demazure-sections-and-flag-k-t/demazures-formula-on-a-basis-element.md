@@ -38,7 +38,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The localization identity of the Demazure operator](the-localization-identity-of-the-demazure-operat.md)
-- [Matsumoto's theorem, relational form](matsumotos-theorem-relational-form.md)
+- [Matsumoto's theorem, relational form](../../group-theory/coxeter/matsumotos-theorem-relational-form.md)
 - [The Weyl denominator identity](../root-system/the-weyl-denominator-identity.md)
 
 ## Lean

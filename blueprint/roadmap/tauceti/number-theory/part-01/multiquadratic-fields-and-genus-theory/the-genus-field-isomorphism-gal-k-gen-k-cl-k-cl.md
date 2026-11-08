@@ -39,7 +39,7 @@ TauCeti.Multiquadratic.autCandidateGenusFieldEquivNarrowElementaryTwoQuotient {d
 
 - [The `2`-rank formula for the narrow class group of a quadratic field](the-2-rank-formula-for-the-narrow-class-group-of.md)
 - [Degree of a multiquadratic field over a finite index](degree-of-a-multiquadratic-field-over-a-finite-i.md)
-- [Dirichlet's theorem on primes in arithmetic progressions, with Dirichlet density](../the-chebotarev-density-theorem/dirichlets-theorem-on-primes-in-arithmetic-progr.md)
+- [Dirichlet's theorem for prime-discriminant characters](../../part-02/multiquadratic/dirichlets-theorem-for-prime-discriminant-charac.md)
 
 ## Lean
 

@@ -38,7 +38,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The multiplicity theorem](../../quantum-groups/quantum-groups-compact-reconstruction-and-generi/the-multiplicity-theorem.md)
+- [The multiplicity theorem](../../ring-theory/part-02/semisimple/the-multiplicity-theorem.md)
 
 ## Lean
 

@@ -29,11 +29,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Dimension shifting in every positive degree, `Hⁱ⁺¹(G, M) ≅ Hⁱ(G, Coind_1^G M ⧸ M)` for `i ≥ 1` and a compact group `G`, as an isomorphism of Mathlib's canonical continuous cohomology](../../representation-theory/continuous-cohomology-of-profinite-groups/dimension-shifting-in-every-positive-degree-hi-1.md)
+- [Dimension shifting in every positive degree](../../representation-theory/continuous-cohomology-of-profinite-groups/dimension-shifting-in-every-positive-degree.md)
 - [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 - [The Schreier index formula for open subgroups](the-schreier-index-formula-for-open-subgroups.md)
-- [Serre's theorem at arbitrary rank, as an equivalence](../profinite-and-pro-p-groups/part-01/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
-- [Shapiro's lemma in every degree](../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [Serre's theorem at arbitrary rank, as an equivalence](../profinite-and-pro-p-groups/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
+- [Shapiro's lemma in degree one](../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 
 ## Lean
 

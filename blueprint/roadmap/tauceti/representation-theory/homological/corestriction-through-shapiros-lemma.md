@@ -26,8 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The inverse of Shapiro's isomorphism is natural in the coefficients](the-inverse-of-shapiros-isomorphism-is-natural-i.md)
-- [Shapiro's isomorphism on an adjunct](shapiros-isomorphism-on-an-adjunct.md)
+- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](the-inverse-of-shapiros-isomorphism-in-homology.md)
 
 ## Lean
 

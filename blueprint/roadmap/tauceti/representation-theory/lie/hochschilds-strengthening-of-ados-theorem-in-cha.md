@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 - [Ado's theorem in characteristic zero](ados-theorem-in-characteristic-zero.md)
 - [Hochschild's nilpotence theorem in characteristic zero](hochschilds-nilpotence-theorem-in-characteristic.md)
-- [Levi's theorem](../../algebra/lie/levis-theorem.md)
+- [Levi's theorem](../../algebra/lie/part-01/levis-theorem.md)
 
 ## Lean
 

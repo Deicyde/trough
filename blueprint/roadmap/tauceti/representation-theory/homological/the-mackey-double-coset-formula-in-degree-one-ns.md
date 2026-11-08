@@ -26,7 +26,7 @@ TauCeti.ContCohomology.explicitCor1_mackey.{u, v} (G : Type u) [Group G] (M : Ty
 
 ## Depends on
 
-- [Shapiro's lemma in every degree](shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](shapiros-lemma-in-degree-one.md)
 
 ## Informally uses
 

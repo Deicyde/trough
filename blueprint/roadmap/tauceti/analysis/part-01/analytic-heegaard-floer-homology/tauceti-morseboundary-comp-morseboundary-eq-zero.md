@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Morse form of the convergence theorem](../calculus/part-01/the-morse-form-of-the-convergence-theorem.md)
+- [The Morse form of the convergence theorem](../../part-02/calculus/part-01/the-morse-form-of-the-convergence-theorem.md)
 
 ## Lean
 

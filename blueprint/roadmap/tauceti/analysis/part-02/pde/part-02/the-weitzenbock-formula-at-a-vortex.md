@@ -53,7 +53,7 @@ Formalized in Tau Ceti as [`TauCeti.Vortex.gaugeFixedOperator_gaugeFixedAdjoint_
 
 ## Other forms
 
-**The Weitzenböck formula for `L_x L_x*` at an arbitrary field, with the vortex defects `E = equation x z` displayed.** Formalized in Tau Ceti as [`TauCeti.Vortex.gaugeFixedOperator_gaugeFixedAdjoint`](https://taucetiproject.org/docs/TauCeti/Analysis/PDE/Vortex/GaugeFixed.html#TauCeti.Vortex.gaugeFixedOperator_gaugeFixedAdjoint).
+**The Weitzenböck formula for `L_x L_x*`.** Formalized in Tau Ceti as [`TauCeti.Vortex.gaugeFixedOperator_gaugeFixedAdjoint`](https://taucetiproject.org/docs/TauCeti/Analysis/PDE/Vortex/GaugeFixed.html#TauCeti.Vortex.gaugeFixedOperator_gaugeFixedAdjoint).
 
 ```lean
 TauCeti.Vortex.gaugeFixedOperator_gaugeFixedAdjoint {x η : ℂ → EuclideanSpace ℝ (Fin 4)} {z : ℂ}

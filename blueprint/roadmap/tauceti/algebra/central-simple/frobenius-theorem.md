@@ -27,6 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Artin--Wedderburn over a separably closed field](artin-wedderburn-over-a-separably-closed-field.md)
 - [The dimension count behind the centralizer theorem, asking only for what it uses](the-dimension-count-behind-the-centralizer-theor.md)
 
 ## Lean

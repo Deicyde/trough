@@ -1,10 +1,10 @@
 # Elliptic Curve
 
-Results named in Tau Ceti's `TauCeti.AlgebraicGeometry.EllipticCurve` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.AlgebraicGeometry.EllipticCurve` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [The `Z`-coordinate of Mathlib's Jacobian addition formula at `(φₘ, ωₘ, ψₘ)` and `(φₙ, ωₙ, ψₙ)` is `ψₙ₊ₘψₙ₋ₘ`, again already in the polynomial ring](the-z-coordinate-of-mathlibs-jacobian-addition-f.md)
-- [The `Z`-coordinate of Mathlib's Jacobian doubling formula at `(φₙ, ωₙ, ψₙ)` is `ψ₂ₙ` — already in the polynomial ring, with no reduction modulo the Weierstrass polynomial](the-z-coordinate-of-mathlibs-jacobian-doubling-f.md)
-- [The factorisation theorem (Silverman, *The Arithmetic of Elliptic Curves*, III.4.11 in its separable form)](the-factorisation-theorem-silverman-the-arithmet.md)
+- [The criterion behind the weak Mordell–Weil theorem](the-criterion-behind-the-weak-mordell-weil-theor.md)
+- [Deligne's theorem (`WeierstrassCurve.IsIntegralModularForm.mem_adjoin`)](delignes-theorem-weierstrasscurve-isintegralmodu.md)
+- [The factorisation theorem](the-factorisation-theorem.md)
 - [The factorisation theorem for isogenies (Silverman II.2.12)](the-factorisation-theorem-for-isogenies-silverma.md)
 - [The Galois cocycle carried by that isomorphism](the-galois-cocycle-carried-by-that-isomorphism.md)
 - [The Hurwitz genus formula for `y² = x³ - x` over `K(x)`, as a numerical identity](the-hurwitz-genus-formula-for-y2-x3-x-over-k-x-a.md)
@@ -13,11 +13,11 @@ Results named in Tau Ceti's `TauCeti.AlgebraicGeometry.EllipticCurve` modules th
 - [Kraus's global criterion](krauss-global-criterion.md)
 - [Kraus's local criterion](krauss-local-criterion.md)
 - [Mathlib's Jacobian addition formula at `(φₘ : ωₘ : ψₘ)` and `(φₙ : ωₙ : ψₙ)` returns `(φₙ₊ₘ : ωₙ₊ₘ : ψₙ₊ₘ)`, scaled by `ψₙ₋ₘ`](mathlibs-jacobian-addition-formula-at-m-m-m-and.md)
-- [Mathlib's Jacobian doubling formula sends `(φₙ : ωₙ : ψₙ)` to `(φ₂ₙ : ω₂ₙ : ψ₂ₙ)`, as an equality of triples and not merely of the points they represent](mathlibs-jacobian-doubling-formula-sends-n-n-n-t.md)
+- [The modified Szpiro conjecture implies Szpiro's conjecture, with the same constants](the-modified-szpiro-conjecture-implies-szpiros-c.md)
 - [The Nagell–Lutz theorem](the-nagell-lutz-theorem.md)
 - [Perfect local Tate duality for `E[m]`](perfect-local-tate-duality-for-e-m.md)
 - [Suyama's exact ellipticity criterion](suyamas-exact-ellipticity-criterion.md)
 - [Szpiro's conjecture for Frey curves](szpiros-conjecture-for-frey-curves.md)
-- [The Tate point near the identity lies on the Tate curve](the-tate-point-near-the-identity-lies-on-the-tat.md)
 - [Vieta's formula at a pair of parameters, cleared of the inverse of the cubic's leading coefficient](vietas-formula-at-a-pair-of-parameters-cleared-o.md)
+- [The weak Mordell–Weil theorem](the-weak-mordell-weil-theorem.md)
 - [The Wronskian identity of an isogeny](the-wronskian-identity-of-an-isogeny.md)

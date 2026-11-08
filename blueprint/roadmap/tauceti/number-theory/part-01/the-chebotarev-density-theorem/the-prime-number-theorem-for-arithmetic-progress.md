@@ -27,8 +27,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Boundary data for the prime Dirichlet series of `S`](../arithmetic-dirichlet-series-and-tauberian-method/part-01/boundary-data-for-the-prime-dirichlet-series-of.md)
-- [Prime-number-theorem transfer from exact boundary data](../arithmetic-dirichlet-series-and-tauberian-method/part-01/prime-number-theorem-transfer-from-exact-boundar.md)
+- [Boundary data for the prime Dirichlet series of `S`](../arithmetic-dirichlet-series-and-tauberian-method/boundary-data-for-the-prime-dirichlet-series-of.md)
+- [Prime-number-theorem transfer from exact boundary data](../arithmetic-dirichlet-series-and-tauberian-method/prime-number-theorem-transfer-from-exact-boundar.md)
 
 ## Lean
 

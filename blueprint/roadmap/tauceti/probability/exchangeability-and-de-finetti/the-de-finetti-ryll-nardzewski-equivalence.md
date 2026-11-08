@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Probability.deFinetti_RyllNardzewski_equivalence, TauCeti.Probability.contractable_iff_exchangeable_and_mixedIID
+lean: TauCeti.Probability.deFinetti_RyllNardzewski_equivalence, TauCeti.Probability.contractable_iff_exchangeable_and_mixedIID, TauCeti.Probability.contractable_iff_conditionallyIID, TauCeti.Probability.contractable_iff_mixedIID
 statement: formalized
 proof: formalized
 ---
@@ -46,6 +46,26 @@ TauCeti.Probability.contractable_iff_exchangeable_and_mixedIID.{u_1, u_2} {Ω : 
   (hX_meas : ∀ (n : ℕ), AEMeasurable (X n) μ) :
   TauCeti.Probability.Contractable μ X ↔
     TauCeti.Probability.Exchangeable μ X ∧ TauCeti.Probability.MixedIID μ X
+```
+
+**De Finetti–Ryll-Nardzewski, two-way conditional form.** Formalized in Tau Ceti as [`TauCeti.Probability.contractable_iff_conditionallyIID`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/Theorem.html#TauCeti.Probability.contractable_iff_conditionallyIID).
+
+```lean
+TauCeti.Probability.contractable_iff_conditionallyIID.{u_1, u_2} {Ω : Type u_1} {α : Type u_2}
+  {mΩ : MeasurableSpace Ω} [MeasurableSpace α] [StandardBorelSpace α] [Nonempty α]
+  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α}
+  (hX_meas : ∀ (n : ℕ), AEMeasurable (X n) μ) :
+  TauCeti.Probability.Contractable μ X ↔ TauCeti.Probability.ConditionallyIID μ X
+```
+
+**De Finetti–Ryll-Nardzewski, two-way mixture form.** Formalized in Tau Ceti as [`TauCeti.Probability.contractable_iff_mixedIID`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/Theorem.html#TauCeti.Probability.contractable_iff_mixedIID).
+
+```lean
+TauCeti.Probability.contractable_iff_mixedIID.{u_1, u_2} {Ω : Type u_1} {α : Type u_2}
+  {mΩ : MeasurableSpace Ω} [MeasurableSpace α] [StandardBorelSpace α] [Nonempty α]
+  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ] {X : ℕ → Ω → α}
+  (hX_meas : ∀ (n : ℕ), AEMeasurable (X n) μ) :
+  TauCeti.Probability.Contractable μ X ↔ TauCeti.Probability.MixedIID μ X
 ```
 
 ## Sources

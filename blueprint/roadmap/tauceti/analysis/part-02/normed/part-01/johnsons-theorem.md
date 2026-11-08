@@ -24,10 +24,10 @@ NonUnitalAlgHom.continuous_of_surjective_of_jacobson_eq_bot.{u_1, u_2} {A : Type
 
 ## Proof depends on
 
-- [Gelfand's formula in a nonunital complex Banach algebra](../../../part-01/banach-algebras/gelfands-formula-in-a-nonunital-complex-banach-a.md)
+- [Gelfand's formula in a nonunital complex Banach algebra](gelfands-formula-in-a-nonunital-complex-banach-a.md)
 - [LinearMap.continuous_iff_separatingSpace_eq_bot](../../../part-01/banach-algebras/linearmap-continuous-iff-separatingspace-eq-bot.md)
 - [LinearMap.separatingSpace](../../../part-01/banach-algebras/linearmap-separatingspace.md)
-- [Rickart's scalar-commutant theorem](../../../part-01/one-parameter-semigroups-completely-monotone-and/part-01/rickarts-scalar-commutant-theorem.md)
+- [Rickart's scalar-commutant theorem](../part-02/rickarts-scalar-commutant-theorem.md)
 - [Sinclair's stability lemma](../../../part-01/banach-algebras/sinclairs-stability-lemma.md)
 
 ## Lean

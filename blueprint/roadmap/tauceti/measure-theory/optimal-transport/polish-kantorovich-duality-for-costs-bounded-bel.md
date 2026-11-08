@@ -35,7 +35,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Strong Kantorovich duality against the integrable dual class](strong-kantorovich-duality-against-the-integrabl.md)
+- [Strong Kantorovich duality for probability measures](strong-kantorovich-duality-for-probability-measu.md)
 
 ## Lean
 

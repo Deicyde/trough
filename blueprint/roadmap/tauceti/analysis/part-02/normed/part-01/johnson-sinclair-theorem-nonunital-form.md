@@ -27,7 +27,7 @@ LinearMap.continuous_of_derivation_of_nonUnitalJacobson_eq_bot.{u_1} {B : Type u
 
 - [LinearMap.continuous_iff_separatingSpace_eq_bot](../../../part-01/banach-algebras/linearmap-continuous-iff-separatingspace-eq-bot.md)
 - [LinearMap.separatingSpace](../../../part-01/banach-algebras/linearmap-separatingspace.md)
-- [Rickart's scalar-commutant theorem](../../../part-01/one-parameter-semigroups-completely-monotone-and/part-01/rickarts-scalar-commutant-theorem.md)
+- [Rickart's scalar-commutant theorem](../part-02/rickarts-scalar-commutant-theorem.md)
 - [Sinclair's stability lemma](../../../part-01/banach-algebras/sinclairs-stability-lemma.md)
 
 ## Lean

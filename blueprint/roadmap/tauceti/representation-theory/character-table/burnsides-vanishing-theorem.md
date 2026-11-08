@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Schur's lemma, vanishing form](../../quantum-groups/quantum-groups-compact-reconstruction-and-generi/schurs-lemma-vanishing-form.md)
+- [Schur's lemma, vanishing form](../../ring-theory/part-02/semisimple/schurs-lemma-vanishing-form.md)
 
 ## Lean
 

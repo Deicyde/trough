@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Fatou's lemma on circles](../special-functions/fatous-lemma-on-circles.md)
-- [Jensen's inequality from below](../complex/part-01/jensens-inequality-from-below.md)
+- [Jensen's inequality from below](../complex/part-02/jensens-inequality-from-below.md)
 
 ## Lean
 

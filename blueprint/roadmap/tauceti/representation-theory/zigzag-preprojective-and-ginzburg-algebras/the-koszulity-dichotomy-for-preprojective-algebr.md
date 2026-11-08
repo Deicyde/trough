@@ -27,7 +27,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Hilbert series identity for a quiver without sinks](../quiver/the-hilbert-series-identity-for-a-quiver-without.md)
 - [The Koszul defect formula](../quiver/the-koszul-defect-formula.md)
 
 ## Lean

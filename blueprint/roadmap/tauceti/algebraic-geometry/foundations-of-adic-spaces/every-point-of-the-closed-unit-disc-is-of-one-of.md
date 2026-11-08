@@ -6,9 +6,10 @@ statement: formalized
 proof: formalized
 ---
 
-# Every point of the closed unit disc is of one of Wedhorn's five types, over an algebraically closed complete nonarchimedean field (Example 7.57)
+# Every point of the closed unit disc is of one of Wedhorn's five types
 
-a classical point `x_a`
+**Every point of the closed unit disc is of one of Wedhorn's five types**, over an
+algebraically closed complete nonarchimedean field (Example 7.57): a classical point `x_a`
 (type (1)), a point `η_{a,r}` (types (2) and (3)), the point attached to a decreasing sequence of
 discs `D(aₙ, |cₙ|)` with no common point in `K` (type (4)), or a rank-two point `η_{a,r⁺}` or
 `η_{a,r⁻}` with `r` the norm of an element of `K` (type (5)).
@@ -49,9 +50,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The remainder theorem in `K⟨T⟩`](the-remainder-theorem-in-kt.md)
-- [The Weierstrass division estimate in several variables](../../ring-theory/mv-power-series/the-weierstrass-division-estimate-in-several-var.md)
-- [Weierstrass preparation (Bosch–Güntzer–Remmert §5.2.2, Theorem 1)](../../ring-theory/p-adic-measures-completed-group-algebras-and-cha/part-02/weierstrass-preparation-bosch-guntzer-remmert-5.md)
+- [The remainder theorem in `K⟨T⟩`](../adic-space/the-remainder-theorem-in-kt.md)
+- [The Weierstrass division estimate (Bosch–Güntzer–Remmert §5.2.1, Theorem 2)](../../ring-theory/part-01/p-adic-measures-completed-group-algebras-and-cha/part-01/the-weierstrass-division-estimate-bosch-guntzer.md)
+- [Weierstrass preparation](../../ring-theory/part-01/p-adic-measures-completed-group-algebras-and-cha/part-01/weierstrass-preparation.md)
 
 ## Lean
 

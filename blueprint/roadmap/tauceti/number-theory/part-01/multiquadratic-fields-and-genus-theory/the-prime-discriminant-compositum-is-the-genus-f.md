@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The converse of the multiquadratic degree theorem](../../part-02/other-results/the-converse-of-the-multiquadratic-degree-theore.md)
+- [The converse of the multiquadratic degree theorem](../../part-02/multiquadratic/the-converse-of-the-multiquadratic-degree-theore.md)
 - [Degree of a multiquadratic field over a finite index](degree-of-a-multiquadratic-field-over-a-finite-i.md)
 
 ## Lean

@@ -46,7 +46,7 @@ TauCeti.SmoothEmbedding.exists_isClosedEmbedding_normalExp_norm_le_subset.{u_1, 
 
 ## Proof depends on
 
-- [The inverse function theorem for manifolds](the-inverse-function-theorem-for-manifolds.md)
+- [The inverse function theorem for manifolds](../part-02/the-inverse-function-theorem-for-manifolds.md)
 - [The Koszul formula](../part-02/the-koszul-formula.md)
 - [TauCeti.CotangentBundle](../../symplectic-geometry-and-hamiltonian-mechanics/tauceti-cotangentbundle.md)
 

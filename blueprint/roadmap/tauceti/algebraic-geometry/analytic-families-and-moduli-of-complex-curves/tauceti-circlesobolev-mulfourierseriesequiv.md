@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Peetre's inequality](peetres-inequality.md)
+- [Peetre's inequality (`TauCeti.CircleSobolev.weight_add_le`)](peetres-inequality-tauceti-circlesobolev-weight.md)
 
 ## Lean
 

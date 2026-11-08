@@ -27,7 +27,7 @@ Bundle.ContMDiffRiemannianMetric.concordant_iff_exists_isCollaredConcordance.{u_
 ## Proof depends on
 
 - [The Koszul formula](../manifold/part-02/the-koszul-formula.md)
-- [The scalar curvature of a product metric `g₁ × g₂` is the sum of the scalar curvatures of the factors](the-scalar-curvature-of-a-product-metric-g1-g2-i.md)
+- [The scalar curvature of a product metric](the-scalar-curvature-of-a-product-metric.md)
 
 ## Lean
 

@@ -26,15 +26,15 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The dual Noether isomorphism](../../../category-theory/exact/the-dual-noether-isomorphism.md)
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
-- [The Kummer isomorphism is Galois equivariant](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-is-galois-equivariant.md)
-- [The local invariant `inv_K : Br K ≃+ ℚ/ℤ` of a nonarchimedean local field `K`, normalized by arithmetic Frobenius](../../part-01/class-field-theory/the-local-invariant-inv-k-br-k-q-z-of-a-nonarchi.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
+- [The Kummer isomorphism on square classes is natural in field isomorphisms](../../../field-theory/galois-cohomology/the-kummer-isomorphism-on-square-classes-is-natu.md)
+- [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [Local Tate duality in degree one](local-tate-duality-in-degree-one.md)
 - [Modular-Artin reduction of the local Euler characteristic formula](modular-artin-reduction-of-the-local-euler-chara.md)
 - [The Noether isomorphism for exact categories](../../../category-theory/exact/the-noether-isomorphism-for-exact-categories.md)
 - [Perfect local Tate duality in mixed characteristic](perfect-local-tate-duality-in-mixed-characterist.md)
 - [Shapiro's lemma for the normalized order](shapiros-lemma-for-the-normalized-order.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

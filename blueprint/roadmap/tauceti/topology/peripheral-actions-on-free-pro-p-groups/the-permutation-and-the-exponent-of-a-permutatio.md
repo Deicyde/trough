@@ -5,7 +5,10 @@ lean: TauCeti.Peripheral.permData
 statement: formalized
 ---
 
-# The permutation and the exponent of a permutation-peripheral automorphism, for the basis of a free pro-`p` group of rank at least two, as a homomorphism
+# The permutation and the exponent of a permutation-peripheral automorphism
+
+**The permutation and the exponent of a permutation-peripheral automorphism**, for the basis
+of a free pro-`p` group of rank at least two, as a homomorphism.
 
 ```lean
 TauCeti.Peripheral.permData.{u_1} {p r : ℕ} [Fact (Nat.Prime p)] {F : Type u_1} [Group F]

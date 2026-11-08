@@ -25,10 +25,6 @@ TauCeti.AInfinityFunctor.{u₁, u₂, v₁, v₂, w} {R : Type w} [CommRing R] {
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../homology/the-suspended-stasheff-identity-free-of-the-stru.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.AInfinityFunctor`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/AInfinity/Functor/Basic.html#TauCeti.AInfinityFunctor).

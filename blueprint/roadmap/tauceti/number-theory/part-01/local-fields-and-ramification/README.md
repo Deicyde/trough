@@ -1,6 +1,6 @@
 # Local fields and ramification
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/LocalFieldsRamification/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/LocalFieldsRamification/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Iwasawa's theorem](iwasawas-theorem.md)
 - [TauCeti.LocalFieldsRamification.upperJump_iff_exists_isCyclic_intermediateField](tauceti-localfieldsramification-upperjump-iff-ex.md)
@@ -11,8 +11,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Tame inertia is procyclic](tame-inertia-is-procyclic.md)
 - [The Galois group of the maximal unramified extension is the profinite integers](the-galois-group-of-the-maximal-unramified-exten.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
-- [The wild inertia subgroup `P_K` of the absolute Galois group of a nonarchimedean local field `K`](the-wild-inertia-subgroup-p-k-of-the-absolute-ga.md)
+- [The wild inertia subgroup](the-wild-inertia-subgroup.md)
 - [The prime-to-`p` Tate module is the product of its `ℓ`-adic components](the-prime-to-p-tate-module-is-the-product-of-its.md)
-- [Serre's lemma](serres-lemma.md)
+- [Serre's formula for the Artin conductor](serres-formula-for-the-artin-conductor.md)
 - [Serre's lemma on the lower index of a quotient](serres-lemma-on-the-lower-index-of-a-quotient.md)
-- [Serre's quotient formula for the lower index](serres-quotient-formula-for-the-lower-index.md)

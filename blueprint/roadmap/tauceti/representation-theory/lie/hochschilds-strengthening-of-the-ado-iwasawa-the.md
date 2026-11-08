@@ -28,11 +28,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Frobenius commutator identity](../../algebra/nilpotent-orbits-springer-resolution-and-subregu/the-frobenius-commutator-identity.md)
+- [The Frobenius commutator identity](../../algebra/lie/part-01/the-frobenius-commutator-identity.md)
 - [Hochschild's strengthening of Ado's theorem in characteristic zero](hochschilds-strengthening-of-ados-theorem-in-cha.md)
-- [The Krull intersection theorem for an extended ideal](../../ring-theory/ideal/the-krull-intersection-theorem-for-an-extended-i.md)
-- [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../algebra/lie/the-linear-independence-half-of-the-poincare-bir.md)
-- [The Poincaré--Birkhoff--Witt theorem](../../algebra/lie/the-poincare-birkhoff-witt-theorem.md)
+- [The Krull intersection theorem for an extended ideal](../../ring-theory/part-01/ideal/the-krull-intersection-theorem-for-an-extended-i.md)
+- [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../algebra/lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)
+- [The Poincaré--Birkhoff--Witt theorem](../../algebra/lie/part-01/the-poincare-birkhoff-witt-theorem.md)
 
 ## Lean
 

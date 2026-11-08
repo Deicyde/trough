@@ -1,6 +1,6 @@
 # Hecke Ring
 
-Results named in Tau Ceti's `TauCeti.NumberTheory.HeckeRing` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.NumberTheory.HeckeRing` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The generators generate `R_p` (Shimura, Theorem 3.20)](the-generators-generate-r-p-shimura-theorem-3-20.md)
 - [The Hecke sum of a `Γ₁`-invariant map is the sum over any decomposition of the double coset into right cosets](the-hecke-sum-of-a-1-invariant-map-is-the-sum-ov.md)

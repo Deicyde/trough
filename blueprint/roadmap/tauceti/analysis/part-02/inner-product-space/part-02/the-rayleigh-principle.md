@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: IsCoercive.isLeast_rayleighQuotient, TauCeti.PDE.isLeast_rayleighQuotient_firstDirichletEigenvalue
+lean: IsCoercive.isLeast_rayleighQuotient
 statement: formalized
 proof: formalized
 ---
@@ -26,38 +26,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Fréchet--Kolmogorov criterion for a family vanishing almost everywhere off a fixed bounded set, the form that Rellich--Kondrachov for `W^{1,p}_0(Ω)` consumes](../../../../measure-theory/function/the-frechet-kolmogorov-criterion-for-a-family-va.md)
-- [Hölder's inequality for Young's exponents](../../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/part-02/holders-inequality-for-youngs-exponents.md)
 - [The Rayleigh lower bound](the-rayleigh-lower-bound.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`IsCoercive.isLeast_rayleighQuotient`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Variational/Rayleigh.html#IsCoercive.isLeast_rayleighQuotient).
-
-## Other forms
-
-**The Rayleigh principle for the Dirichlet problem.** Formalized in Tau Ceti as [`TauCeti.PDE.isLeast_rayleighQuotient_firstDirichletEigenvalue`](https://taucetiproject.org/docs/TauCeti/Analysis/PDE/Spectrum/Basic.html#TauCeti.PDE.isLeast_rayleighQuotient_firstDirichletEigenvalue).
-
-```lean
-TauCeti.PDE.isLeast_rayleighQuotient_firstDirichletEigenvalue.{u_1} {ι : Type u_1} [Fintype ι]
-  {mu : MeasureTheory.Measure (EuclideanSpace ℝ ι)} [mu.IsAddHaarMeasure]
-  {Omega : TopologicalSpace.Opens (EuclideanSpace ℝ ι)} {a : EuclideanSpace ℝ ι → Matrix ι ι ℝ}
-  {b : EuclideanSpace ℝ ι → EuclideanSpace ℝ ι} {c : EuclideanSpace ℝ ι → ℝ}
-  (hcoeff :
-    MeasureTheory.MemLp (fun x => TauCeti.PDE.energyIntegrand (a x) (b x) (c x)) ⊤
-      (mu.restrict ↑Omega))
-  (hcoercive : IsCoercive (TauCeti.PDE.energyFormH1L0 hcoeff)) (hOmega : Bornology.IsBounded ↑Omega)
-  (hsymm :
-    ∀ (u v : ↥(TauCeti.W1p0 mu Omega 2)),
-      TauCeti.PDE.energyFormH1 a b c ↑u ↑v = TauCeti.PDE.energyFormH1 a b c ↑v ↑u)
-  (hOmega_nonempty : (↑Omega).Nonempty) :
-  IsLeast
-    {r |
-      ∃ u,
-        TauCeti.W1p.value ↑u ≠ 0 ∧
-          TauCeti.PDE.energyFormH1 a b c ↑u ↑u / ‖TauCeti.W1p.value ↑u‖ ^ 2 = r}
-    (TauCeti.PDE.firstDirichletEigenvalue hcoeff hcoercive)
-```
 
 ## Sources
 

@@ -27,9 +27,9 @@ TauCeti.Semigroups.StronglyContinuousSemigroup.norm_generator_resolvent_pow_le.{
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
+## Informally uses
 
-- [Hille–Yosida resolvent bound](hille-yosida-resolvent-bound.md)
+- [Hille--Yosida characterization](../../part-01/one-parameter-semigroups-completely-monotone-and/hille-yosida-characterization.md)
 
 ## Lean
 

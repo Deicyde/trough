@@ -1,6 +1,6 @@
 # Generalized cohomology, spectra and orientations
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GeneralizedCohomology/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GeneralizedCohomology/README.md) names as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The homotopy fibre of the fibre inclusion is the loop space of the base](the-homotopy-fibre-of-the-fibre-inclusion-is-the.md)
 - [TauCeti.isHurewiczFibration_iff_nonempty_liftingFunction](tauceti-ishurewiczfibration-iff-nonempty-lifting.md)
@@ -13,5 +13,3 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.SymmetricSequence](tauceti-symmetricsequence.md)
 - [TauCeti.PointedSSet.instBraidedFiniteBijectionSmashPowFunctor](tauceti-pointedsset-instbraidedfinitebijectionsm.md)
 - [TauCeti.PointedSSet.monoidalClosed](tauceti-pointedsset-monoidalclosed.md)
-- [Dold's local-to-global homotopy lifting theorem](dolds-local-to-global-homotopy-lifting-theorem.md)
-- [Dold's local-to-global theorem for Hurewicz fibrations](dolds-local-to-global-theorem-for-hurewicz-fibra.md)

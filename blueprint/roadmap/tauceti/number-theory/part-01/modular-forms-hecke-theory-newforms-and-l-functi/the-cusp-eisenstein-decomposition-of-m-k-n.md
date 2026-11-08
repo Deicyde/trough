@@ -23,8 +23,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Lipschitz formula along residue classes](the-lipschitz-formula-along-residue-classes.md)
-- [Shimizu's inequality at two cusps](../../../analysis/part-01/fuchsian-groups-and-orbifold-riemann-surfaces/part-02/shimizus-inequality-at-two-cusps.md)
+- [The Lipschitz formula along residue classes](../../part-02/modular-forms/the-lipschitz-formula-along-residue-classes.md)
+- [Shimizu's inequality at two cusps](../../../analysis/part-02/complex/part-03/shimizus-inequality-at-two-cusps.md)
 - [Sturm bound for subgroups of `GL(2, ℝ)` of finite relative index in `SL(2, ℤ)` with discrete strict periods](../../part-02/modular-forms/sturm-bound-for-subgroups-of-gl-2-r-of-finite-re.md)
 
 ## Lean

@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Extension of coefficients from the unit ball](../../../ring-theory/p-adic-measures-completed-group-algebras-and-cha/part-01/extension-of-coefficients-from-the-unit-ball.md)
+- [Extension of coefficients from the unit ball](../../../ring-theory/part-01/p-adic-measures-completed-group-algebras-and-cha/part-01/extension-of-coefficients-from-the-unit-ball.md)
 
 ## Lean
 

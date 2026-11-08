@@ -25,11 +25,6 @@ WeierstrassCurve.Universal.Jacobian.addXYZ_smulField {m n : ℤ} :
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The `Z`-coordinate of Mathlib's Jacobian addition formula at `(φₘ, ωₘ, ψₘ)` and `(φₙ, ωₙ, ψₙ)` is `ψₙ₊ₘψₙ₋ₘ`, again already in the polynomial ring](the-z-coordinate-of-mathlibs-jacobian-addition-f.md)
-- [The `Z`-coordinate of Mathlib's Jacobian doubling formula at `(φₙ, ωₙ, ψₙ)` is `ψ₂ₙ` — already in the polynomial ring, with no reduction modulo the Weierstrass polynomial](the-z-coordinate-of-mathlibs-jacobian-doubling-f.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`WeierstrassCurve.Universal.Jacobian.addXYZ_smulField`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/ZSMul.html#WeierstrassCurve.Universal.Jacobian.addXYZ_smulField).

@@ -26,7 +26,7 @@ TauCeti.classifyingSpaceSingularCohomologyIsoGroupCohomology.{u} (k : Type u) [C
 
 ## Proof depends on
 
-- [The fundamental group at `x` acts on every homotopy group based at `x`, an element of `π₁(X, x)` acting by transport around the loop it represents](../universal-covers/the-fundamental-group-at-x-acts-on-every-homotop.md)
+- [The fundamental group at `x` acts on every homotopy group based at `x`](../universal-covers/the-fundamental-group-at-x-acts-on-every-homotop.md)
 - [Whitehead's theorem (Hatcher, Theorem 4.5)](../algebraic-topology-of-spaces-and-manifolds/whiteheads-theorem-hatcher-theorem-4-5.md)
 
 ## Lean

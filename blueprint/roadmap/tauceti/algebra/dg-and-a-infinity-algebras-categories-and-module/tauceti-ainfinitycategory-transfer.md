@@ -34,10 +34,6 @@ TauCeti.AInfinityCategory.transfer.{u₁, u₂, v₁, v₂, w} {R : Type w} [Com
 
 - [TauCeti.AInfinityAlgebra.transfer](tauceti-ainfinityalgebra-transfer.md)
 
-## Proof depends on
-
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../homology/the-suspended-stasheff-identity-free-of-the-stru.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.AInfinityCategory.transfer`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/AInfinity/Transfer/Basic.html#TauCeti.AInfinityCategory.transfer).

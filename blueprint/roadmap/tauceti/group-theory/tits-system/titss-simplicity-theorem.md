@@ -26,6 +26,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Bruhat decomposition of a standard parabolic](the-bruhat-decomposition-of-a-standard-parabolic.md)
+
+## Informally uses
+
 - [Tits's theorem on normal subgroups](titss-theorem-on-normal-subgroups.md)
 
 ## Lean

@@ -56,16 +56,16 @@ Its statement uses no other declaration mapped here.
 
 - [Burnside's basis theorem, cardinal form](../../../topology/algebra/part-01/burnsides-basis-theorem-cardinal-form.md)
 - [Burnside's criterion modulo `λ_1`](../../../topology/algebra/part-01/burnsides-criterion-modulo-1.md)
-- [The constrained successive-approximation theorem](../../../topology/profinite-and-pro-p-groups/part-01/the-constrained-successive-approximation-theorem.md)
+- [The constrained successive-approximation theorem](../../../topology/profinite-and-pro-p-groups/the-constrained-successive-approximation-theorem.md)
 - [Dedekind's modular law](../../../algebra/other-results/dedekinds-modular-law.md)
-- [The Demushkin predicate (Labute, p. 106), for a prime `p` and a topological group `G`](../../../topology/profinite-and-pro-p-groups/part-01/the-demushkin-predicate-labute-p-106-for-a-prime.md)
+- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/the-demushkin-predicate.md)
 - [Demushkin's theorem](demushkins-theorem.md)
 - [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
-- [The Kummer isomorphism `Kˣ ⧸ (Kˣ)ⁿ ≃* H¹(G_K, μₙ)` (NSW (6.2.1) and the display following it), for `n` invertible in `K`](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism-kx-kx-n-h1-g-k-n-nsw-6-2.md)
+- [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [Labute's classification of the closed subgroups of `ℤ_2ˣ`](../../part-02/padics/labutes-classification-of-the-closed-subgroups-o.md)
-- [Labute's criterion](../../../topology/profinite-and-pro-p-groups/part-01/labutes-criterion.md)
-- [Labute's Theorem 2](../../../topology/profinite-and-pro-p-groups/part-01/labutes-theorem-2.md)
-- [Shapiro's lemma in every degree](../../../representation-theory/homological/shapiros-lemma-in-every-degree.md)
+- [Labute's criterion](../../../topology/profinite-and-pro-p-groups/labutes-criterion.md)
+- [Labute's Theorem 2](../../../topology/profinite-and-pro-p-groups/labutes-theorem-2.md)
+- [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.range_brauerActionOrth_two_eq_centralizer_of_sq_add_sq_eq_one
+lean: TauCeti.range_brauerActionOrth_two_eq_centralizer_of_sq_add_sq_eq_one, TauCeti.range_brauerActionOrth_two_eq_centralizer_of_noZeroDivisors, TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer, TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer_of_charZero, TauCeti.range_brauerActionOrth_two_eq_centralizer
 statement: formalized
 proof: formalized
 ---
@@ -28,6 +28,44 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.range_brauerActionOrth_two_eq_centralizer_of_sq_add_sq_eq_one`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/Commutant.html#TauCeti.range_brauerActionOrth_two_eq_centralizer_of_sq_add_sq_eq_one).
+
+## Other forms
+
+**Brauer duality for the orthogonal group on two strands.** Formalized in Tau Ceti as [`TauCeti.range_brauerActionOrth_two_eq_centralizer_of_noZeroDivisors`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/TwoStrands.html#TauCeti.range_brauerActionOrth_two_eq_centralizer_of_noZeroDivisors).
+
+```lean
+TauCeti.range_brauerActionOrth_two_eq_centralizer_of_noZeroDivisors.{u} (R : Type u) [CommRing R]
+  (n : ℕ) [NoZeroDivisors R] (h2 : 2 ≠ 0) (hrot : ∃ c s, c ^ 2 + s ^ 2 = 1 ∧ c * s ≠ 0) :
+  (TauCeti.brauerActionOrth R n 2).range =
+    Subalgebra.centralizer R (Set.range ⇑((TauCeti.stdOrthogonalRep R n).tensorPower 2))
+```
+
+**Brauer duality for the symplectic group on two strands.** Formalized in Tau Ceti as [`TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Symplectic/TwoStrands.html#TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer).
+
+```lean
+TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer.{u_1} {K : Type u_1} [CommRing K]
+  {n : ℕ} [IsDomain K] (ht : ∃ t, ∀ (m : ℕ), 0 < m → m ≤ 4 → t ^ m ≠ 1) :
+  K[TauCeti.symplecticCrossing K n, TauCeti.symplecticCupCap K n] =
+    Subalgebra.centralizer K (Set.range ⇑((TauCeti.stdSymplecticRep K n).tensorPower 2))
+```
+
+**Brauer duality for the symplectic group on two strands in characteristic zero, for instance over `ℂ`.** Formalized in Tau Ceti as [`TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer_of_charZero`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Symplectic/TwoStrands.html#TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer_of_charZero).
+
+```lean
+TauCeti.adjoin_symplecticCrossing_symplecticCupCap_eq_centralizer_of_charZero.{u_1} {K : Type u_1}
+  [Field K] [CharZero K] {n : ℕ} :
+  K[TauCeti.symplecticCrossing K n, TauCeti.symplecticCupCap K n] =
+    Subalgebra.centralizer K (Set.range ⇑((TauCeti.stdSymplecticRep K n).tensorPower 2))
+```
+
+**Brauer duality on the tensor square in characteristic zero.** Formalized in Tau Ceti as [`TauCeti.range_brauerActionOrth_two_eq_centralizer`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ClassicalGroups/BrauerGenerators/Orthogonal/Commutant.html#TauCeti.range_brauerActionOrth_two_eq_centralizer).
+
+```lean
+TauCeti.range_brauerActionOrth_two_eq_centralizer.{u_1} (K : Type u_1) [Field K] [CharZero K]
+  (n : ℕ) :
+  (TauCeti.brauerActionOrth K n 2).range =
+    Subalgebra.centralizer K (Set.range ⇑((TauCeti.stdOrthogonalRep K n).tensorPower 2))
+```
 
 ## Sources
 

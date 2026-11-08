@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Hodge.HodgeStructureOn.isInternal_piece, TauCeti.Hodge.HodgeStructureOn.IsSubstructure.piece_eq_sup, TauCeti.Hodge.MixedHodgeStructure.isInternal_complexGradedHodgeStructure_piece
+lean: TauCeti.Hodge.HodgeStructureOn.isInternal_piece, TauCeti.Hodge.MixedHodgeStructure.isInternal_complexGradedHodgeStructure_piece
 statement: formalized
 proof: formalized
 ---
@@ -26,16 +26,6 @@ TauCeti.Hodge.HodgeStructureOn.isInternal_piece.{u} {W : Type u} [AddCommGroup W
 Formalized in Tau Ceti as [`TauCeti.Hodge.HodgeStructureOn.isInternal_piece`](https://taucetiproject.org/docs/TauCeti/Geometry/Hodge/Decomposition.html#TauCeti.Hodge.HodgeStructureOn.isInternal_piece).
 
 ## Other forms
-
-**The Hodge decomposition is compatible with a splitting into sub-Hodge structures.** Formalized in Tau Ceti as [`TauCeti.Hodge.HodgeStructureOn.IsSubstructure.piece_eq_sup`](https://taucetiproject.org/docs/TauCeti/Geometry/Hodge/Substructure.html#TauCeti.Hodge.HodgeStructureOn.IsSubstructure.piece_eq_sup).
-
-```lean
-TauCeti.Hodge.HodgeStructureOn.IsSubstructure.piece_eq_sup.{u} {W : Type u} [AddCommGroup W]
-  [_root_.Module ℂ W] {ω : TauCeti.Hodge.Conjugation W} {n : ℤ}
-  {hs : TauCeti.Hodge.HodgeStructureOn W ω n} {U U' : Submodule ℂ W} (hU : hs.IsSubstructure U)
-  (hU' : hs.IsSubstructure U') (h : IsCompl U U') (q : ℤ) :
-  hs.piece q = U ⊓ hs.piece q ⊔ U' ⊓ hs.piece q
-```
 
 **The Hodge decomposition of a complex graded piece.** Formalized in Tau Ceti as [`TauCeti.Hodge.MixedHodgeStructure.isInternal_complexGradedHodgeStructure_piece`](https://taucetiproject.org/docs/TauCeti/Geometry/Hodge/Mixed/Graded.html#TauCeti.Hodge.MixedHodgeStructure.isInternal_complexGradedHodgeStructure_piece).
 

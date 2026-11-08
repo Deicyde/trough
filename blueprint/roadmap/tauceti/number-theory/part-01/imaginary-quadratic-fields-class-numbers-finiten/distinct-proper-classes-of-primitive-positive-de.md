@@ -19,7 +19,7 @@ TauCeti.BinaryQuadraticForm.posDefProperClassToPic_injective (n : ℕ) [NeZero n
 
 ## Depends on
 
-- [The Picard class of a proper class of primitive positive definite forms, the class of `aℤ + ((-b + √(-n))/2)ℤ` in the Picard group of the quadratic order of discriminant `-n`](the-picard-class-of-a-proper-class-of-primitive.md)
+- [The Picard class of a proper class of primitive positive definite forms](the-picard-class-of-a-proper-class-of-primitive.md)
 
 ## Lean
 

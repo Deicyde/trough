@@ -30,12 +30,14 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The comparison isomorphism `Br(K) ≃ H²_cont(G_K, (Kˢ)ˣ)` with Mathlib's continuous cohomology, for `K` in any universe](the-comparison-isomorphism-br-k-h2-cont-g-k-ks-x.md)
-- [The cup-norm theorem](../../../field-theory/other-results/the-cup-norm-theorem.md)
-- [Hensel's lemma with an estimate over a Henselian discrete valuation ring](../counting-totally-ramified-extensions-of-a-local/part-01/hensels-lemma-with-an-estimate-over-a-henselian.md)
+- [Artin--Wedderburn over a separably closed field](../../../algebra/central-simple/artin-wedderburn-over-a-separably-closed-field.md)
+- [The comparison isomorphism](the-comparison-isomorphism.md)
+- [The cup-norm theorem](../../../field-theory/galois-cohomology/the-cup-norm-theorem.md)
+- [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The Skolem-Noether theorem](../../../algebra/central-simple/the-skolem-noether-theorem.md)
-- [The splitting criterion for quaternion algebras (Lam III.2.7 and III.4.2, Serre III.1, Gille-Szamuely 1.1.9)](the-splitting-criterion-for-quaternion-algebras.md)
+- [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
+- [Wedderburn-Artin for central simple algebras](../../../algebra/central-simple/wedderburn-artin-for-central-simple-algebras.md)
 - [Witt decomposition](../../../linear-algebra/quadratic-form/witt-decomposition.md)
 - [Witt's chain theorem in its nontrivial range](../../../linear-algebra/quadratic-form/witts-chain-theorem-in-its-nontrivial-range.md)
 

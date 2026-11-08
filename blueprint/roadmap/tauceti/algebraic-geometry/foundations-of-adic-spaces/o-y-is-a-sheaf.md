@@ -36,9 +36,9 @@ Its statement uses no other declaration mapped here.
 - [Adic spaces (Wedhorn, Definition 8.22)](adic-spaces-wedhorn-definition-8-22.md)
 - [Henkel's open mapping theorem](../../topology/algebra/part-01/henkels-open-mapping-theorem.md)
 - [Henkel's theorem in quotient form](../../topology/algebra/part-01/henkels-theorem-in-quotient-form.md)
-- [The interval ring `B^I` is strongly noetherian (Kedlaya, Theorem 4.10 and Remark 4.11), for all radii `ρ₁ ≤ ρ₂`](the-interval-ring-b-i-is-strongly-noetherian-ked.md)
-- [The open mapping theorem over a Tate ring](the-open-mapping-theorem-over-a-tate-ring.md)
-- [Wedhorn's coordinatewise hypothesis gives the uniform bound](../../ring-theory/other-results/part-01/wedhorns-coordinatewise-hypothesis-gives-the-uni.md)
+- [The interval ring `B^I` is strongly noetherian](the-interval-ring-b-i-is-strongly-noetherian.md)
+- [The open mapping theorem over a Tate ring](../../ring-theory/part-01/huber/the-open-mapping-theorem-over-a-tate-ring.md)
+- [Wedhorn's coordinatewise hypothesis gives the uniform bound](../../ring-theory/part-01/huber/wedhorns-coordinatewise-hypothesis-gives-the-uni.md)
 
 ## Lean
 

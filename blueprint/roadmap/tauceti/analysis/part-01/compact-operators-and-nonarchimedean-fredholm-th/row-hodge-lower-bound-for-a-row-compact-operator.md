@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries, Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries
+lean: ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries
 statement: formalized
 proof: formalized
 ---
@@ -28,21 +28,13 @@ ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPo
 
 - [ContinuousLinearMap.IsRowCompact](continuouslinearmap-isrowcompact.md)
 
+## Proof depends on
+
+- [Row Hodge lower bound for the principal-minor series](../../part-02/matrix/row-hodge-lower-bound-for-the-principal-minor-se.md)
+
 ## Lean
 
 Formalized in Tau Ceti as [`ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Nonarchimedean/RowHodge.html#ContinuousLinearMap.IsRowCompact.rowHodgePolygon_rowNorm_le_newtonPolygon_charPowerSeries).
-
-## Other forms
-
-**Row Hodge lower bound for the principal-minor series.** Formalized in Tau Ceti as [`Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/CharPowerSeries/RowHodge.html#Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries).
-
-```lean
-Matrix.rowHodgePolygon_le_newtonPolygon_charPowerSeries.{u_1, u_2} {ι : Type u_1} {K : Type u_2}
-  [DecidableEq ι] [NormedField K] [IsUltrametricDist K] {v : AddValuation K (WithTop ℝ)} {b : ℝ}
-  {A : Matrix ι ι K} {r : ι → ℝ} (hb : 1 < b) (hv : ∀ (x : K), x ≠ 0 → ‖x‖ = b ^ (-(v x).untop₀))
-  (hr : BddAbove (Set.range r)) (hA : ∀ (i j : ι), ‖A i j‖ ≤ r i) :
-  TauCeti.rowHodgePolygon b r ≤ A.charPowerSeries.newtonPolygon v
-```
 
 ## Sources
 

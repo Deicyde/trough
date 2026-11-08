@@ -21,10 +21,6 @@ TauCeti.isFormal_liuWangAffineD4AInfinityAlgebra.{w} {k : Type w} [CommRing k] (
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The suspended Stasheff identity free of the structural coefficient holds exactly when the unsuspended one does](../../algebra/homology/the-suspended-stasheff-identity-free-of-the-stru.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.isFormal_liuWangAffineD4AInfinityAlgebra`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/AInfinity/Affine/D/Four.html#TauCeti.isFormal_liuWangAffineD4AInfinityAlgebra).

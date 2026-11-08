@@ -33,9 +33,10 @@ TauCeti.exists_eLpNorm_iteratedFDeriv_two_le_eLpNorm_laplacian.{u_1, u_2} {F : T
 
 ## Proof depends on
 
-- [The Calderón–Zygmund theorem, weak type `(1, 1)`](../../../measure-theory/integral/the-calderon-zygmund-theorem-weak-type-1-1.md)
-- [The interior Calderón–Zygmund estimate for continuous coefficients](the-interior-calderon-zygmund-estimate-for-conti.md)
-- [Rademacher's theorem for locally Lipschitz functions](../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [The Calderón–Zygmund theorem](../../../measure-theory/integral/part-01/the-calderon-zygmund-theorem.md)
+- [The interior Calderón–Zygmund estimate for continuous coefficients](../../part-02/pde/part-01/the-interior-calderon-zygmund-estimate-for-conti.md)
+- [Meyers–Serrin: `H = W` in `W^{k,p}(Ω)`](../../part-02/sobolev/part-01/meyers-serrin-h-w-in-w-k-p.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../part-02/calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 - [Radial fundamental theorem of calculus](../../../measure-theory/constructions/radial-fundamental-theorem-of-calculus.md)
 
 ## Lean

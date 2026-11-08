@@ -38,7 +38,6 @@ Its statement uses no other declaration mapped here.
 
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
 - [Restriction through Shapiro's lemma](../../../representation-theory/homological/restriction-through-shapiros-lemma.md)
-- [Shapiro's isomorphism on an adjunct](../../../representation-theory/homological/shapiros-isomorphism-on-an-adjunct.md)
 - [Tate's theorem](../../../representation-theory/homological/tates-theorem.md)
 
 ## Lean

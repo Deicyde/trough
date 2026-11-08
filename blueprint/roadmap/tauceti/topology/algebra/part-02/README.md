@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# Structure theorem for… to The two-term Euler formula
+# Tate's criterion for the… to The two-term Euler formula
 
-- [Structure theorem for torsion-free topologically finitely generated abelian pro-`p` groups](structure-theorem-for-torsion-free-topologically.md)
 - [Tate's criterion for the cohomological dimension of a pro-`p` group](tates-criterion-for-the-cohomological-dimension.md)
 - [The three-term Euler formula](the-three-term-euler-formula.md)
 - [The three-term Euler identity under `cd_p G ≤ 2`](the-three-term-euler-identity-under-cd-p-g-2.md)

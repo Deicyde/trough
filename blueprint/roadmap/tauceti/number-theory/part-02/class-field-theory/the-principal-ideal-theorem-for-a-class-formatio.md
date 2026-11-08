@@ -32,9 +32,8 @@ Its statement uses no other declaration mapped here.
 
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
 - [Furtwängler's theorem, the group-theoretic principal ideal theorem](../../../group-theory/other-results/furtwanglers-theorem-the-group-theoretic-princip.md)
-- [The inverse of Shapiro's isomorphism is natural in the coefficients](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-is-natural-i.md)
+- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [Restriction through Shapiro's lemma](../../../representation-theory/homological/restriction-through-shapiros-lemma.md)
-- [Shapiro's isomorphism on an adjunct](../../../representation-theory/homological/shapiros-isomorphism-on-an-adjunct.md)
 - [Tate's theorem](../../../representation-theory/homological/tates-theorem.md)
 - [Tate's theorem for a class formation, in every integer degree](../../part-01/class-field-theory/tates-theorem-for-a-class-formation-in-every-int.md)
 - [TauCeti.ClassFieldTheory.tateTheorem](../../part-01/class-field-theory/tauceti-classfieldtheory-tatetheorem.md)

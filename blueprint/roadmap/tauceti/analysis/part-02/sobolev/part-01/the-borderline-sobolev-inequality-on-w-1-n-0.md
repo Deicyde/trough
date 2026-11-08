@@ -37,7 +37,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Sobolev inequality for functions of bounded variation](../../../part-01/geometric-measure-theory-rectifiability-bv-and-f/the-sobolev-inequality-for-functions-of-bounded.md)
+- [The Sobolev inequality on `W^{1,p}_0` of a ball](../part-02/the-sobolev-inequality-on-w-1-p-0-of-a-ball.md)
 
 ## Lean
 

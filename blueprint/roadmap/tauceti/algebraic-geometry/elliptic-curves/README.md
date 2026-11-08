@@ -1,6 +1,6 @@
 # Elliptic curves
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/EllipticCurves/README.md) names, and the results named in the modules where they live, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/EllipticCurves/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Hasse bound (Silverman V.1.1)](the-hasse-bound-silverman-v-1-1.md)
 - [Isogenous curves over a finite field have the same zeta function `Z(W/F, T) = exp (∑_{n ≥ 1} #W(𝔽_{qⁿ}) Tⁿ / n)`](isogenous-curves-over-a-finite-field-have-the-sa.md)
@@ -12,9 +12,5 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Pointed twists are classified by nonabelian Galois cohomology](pointed-twists-are-classified-by-nonabelian-galo.md)
 - [The `φ`-descent sequence is exact at `H¹(G_K, E₁[φ])`](the-descent-sequence-is-exact-at-h1-g-k-e1.md)
 - [Tate's local index is the point-group index (Silverman, *Advanced Topics*, IV.9, Table 4.1)](tates-local-index-is-the-point-group-index-silve.md)
-- [The criterion behind the weak Mordell–Weil theorem](the-criterion-behind-the-weak-mordell-weil-theor.md)
-- [Dirichlet's unit theorem for the field factors of the étale algebra of a curve over a number field](dirichlets-unit-theorem-for-the-field-factors-of.md)
-- [The modified Szpiro conjecture implies Szpiro's conjecture, with the same constants](the-modified-szpiro-conjecture-implies-szpiros-c.md)
-- [The Mordell–Weil rank bound from the 2-Selmer group](the-mordell-weil-rank-bound-from-the-2-selmer-gr.md)
+- [Dirichlet's unit theorem (`WeierstrassCurve.Affine.fg_units_ringOfIntegersFactor`)](dirichlets-unit-theorem-weierstrasscurve-affine.md)
 - [Serre's lemma for the `ℓ`-adic representation](serres-lemma-for-the-l-adic-representation.md)
-- [The weak Mordell–Weil theorem](the-weak-mordell-weil-theorem.md)

@@ -1,6 +1,6 @@
 # Simple Graph
 
-Results named in Tau Ceti's `TauCeti.Combinatorics.SimpleGraph` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+Results named in Tau Ceti's `TauCeti.Combinatorics.SimpleGraph` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Dirac's theorem](diracs-theorem.md)
 - [The global form of Menger's theorem](the-global-form-of-mengers-theorem.md)

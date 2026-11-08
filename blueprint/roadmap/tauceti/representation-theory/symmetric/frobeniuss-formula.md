@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly, TauCeti.card_productOneTriples_eq_sum_characterTable
+lean: TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly
 statement: formalized
 proof: formalized
 ---
@@ -25,30 +25,13 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jacobi's bialternant formula](../../ring-theory/mv-polynomial/jacobis-bialternant-formula.md)
+- [Jacobi's bialternant formula](../../ring-theory/part-01/mv-polynomial/jacobis-bialternant-formula.md)
 - [James's dominance lemma](jamess-dominance-lemma.md)
 - [James's submodule theorem](jamess-submodule-theorem.md)
-- [Schur's lemma, vanishing form](../../quantum-groups/quantum-groups-compact-reconstruction-and-generi/schurs-lemma-vanishing-form.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Symmetric/FrobeniusCharacteristic.html#TauCeti.psumPart_eq_sum_spechtCharValue_smul_schurPoly).
-
-## Other forms
-
-**The Frobenius formula.** Formalized in Tau Ceti as [`TauCeti.card_productOneTriples_eq_sum_characterTable`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/CharacterTable/ProductOne.html#TauCeti.card_productOneTriples_eq_sum_characterTable).
-
-```lean
-TauCeti.card_productOneTriples_eq_sum_characterTable.{u, v} {k : Type u} {G : Type v} [Field k]
-  [IsAlgClosed k] [CharZero k] [Group G] [Fintype G] [DecidableEq G] [Invertible ↑(Nat.card G)]
-  (C0 C1 Cinf : ConjClasses G) :
-  ↑(TauCeti.productOneTriples C0 C1 Cinf).card =
-    ↑(Nat.card ↑C0.carrier) * ↑(Nat.card ↑C1.carrier) * ↑(Nat.card ↑Cinf.carrier) / ↑(Nat.card G) *
-      ∑ l,
-        TauCeti.characterTable k G l C0 * TauCeti.characterTable k G l C1 *
-            TauCeti.characterTable k G l Cinf /
-          ↑(TauCeti.characterDegree k l)
-```
 
 ## Sources
 

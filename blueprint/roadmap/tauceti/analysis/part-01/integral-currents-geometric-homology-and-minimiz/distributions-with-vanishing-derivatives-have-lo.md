@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 - [A distribution has finite order on each compact set](a-distribution-has-finite-order-on-each-compact.md)
 - [The derivative of a regularization](the-derivative-of-a-regularization.md)
-- [Uniform first-order Taylor estimate in a parameter](../calculus/part-02/uniform-first-order-taylor-estimate-in-a-paramet.md)
+- [Uniform first-order Taylor estimate in a parameter](../../part-02/calculus/part-02/uniform-first-order-taylor-estimate-in-a-paramet.md)
 
 ## Lean
 

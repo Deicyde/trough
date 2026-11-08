@@ -21,10 +21,6 @@ Equiv.Perm.rsk_inv {n : ℕ} (σ : Equiv.Perm (Fin n)) :
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The Robinson--Schensted correspondence is injective](../../algebra/type-a-hecke-algebras-braid-traces-and-positive/the-robinson-schensted-correspondence-is-injecti.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`Equiv.Perm.rsk_inv`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Young/Schensted/Symmetry.html#Equiv.Perm.rsk_inv).

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.isMeagre_image_criticalPoints_of_isFredholm
+lean: TauCeti.isMeagre_image_criticalPoints_of_isFredholm, TauCeti.dense_compl_image_criticalPoints_of_isFredholm, TauCeti.exists_mem_nhds_isClosed_isNowhereDense_image_criticalPoints
 statement: formalized
 proof: formalized
 ---
@@ -44,6 +44,38 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.isMeagre_image_criticalPoints_of_isFredholm`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/SardSmale.html#TauCeti.isMeagre_image_criticalPoints_of_isFredholm).
+
+## Other forms
+
+**Sard--Smale, in the form transversality arguments consume.** Formalized in Tau Ceti as [`TauCeti.dense_compl_image_criticalPoints_of_isFredholm`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/SardSmale.html#TauCeti.dense_compl_image_criticalPoints_of_isFredholm).
+
+```lean
+TauCeti.dense_compl_image_criticalPoints_of_isFredholm.{u_1, u_2} {E : Type u_1} {F : Type u_2}
+  [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F]
+  [CompleteSpace E] [CompleteSpace F] {U : Set E} [LindelofSpace ↑U] {f : E → F} {n : WithTop ℕ∞}
+  (hf : ∀ x ∈ U, ContDiffAt ℝ n f x) (hFred : ∀ x ∈ U, (fderiv ℝ f x).IsFredholm)
+  (hn :
+    ∀ x ∈ U,
+      ↑(Module.finrank ℝ ↥(↑(fderiv ℝ f x)).ker * Module.finrank ℝ ↥(↑(fderiv ℝ f x)).ker + 1) ≤
+        n) :
+  Dense (f '' (U ∩ {x | ¬Function.Surjective ⇑(fderiv ℝ f x)}))ᶜ
+```
+
+**Sard--Smale, locally.** Formalized in Tau Ceti as [`TauCeti.exists_mem_nhds_isClosed_isNowhereDense_image_criticalPoints`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/SardSmale.html#TauCeti.exists_mem_nhds_isClosed_isNowhereDense_image_criticalPoints).
+
+```lean
+TauCeti.exists_mem_nhds_isClosed_isNowhereDense_image_criticalPoints.{u_1, u_2} {E : Type u_1}
+  {F : Type u_2} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F] [NormedSpace ℝ F]
+  [CompleteSpace E] [CompleteSpace F] {f : E → F} {a : E} {U : Set E} {n : WithTop ℕ∞}
+  (hf : ContDiffAt ℝ n f a) (hFred : (fderiv ℝ f a).IsFredholm)
+  (hn :
+    ↑(Module.finrank ℝ ↥(↑(fderiv ℝ f a)).ker * Module.finrank ℝ ↥(↑(fderiv ℝ f a)).ker + 1) ≤ n)
+  (hU : U ∈ nhds a) :
+  ∃ N ∈ nhds a,
+    N ⊆ U ∧
+      IsClosed (f '' (N ∩ {x | ¬Function.Surjective ⇑(fderiv ℝ f x)})) ∧
+        IsNowhereDense (f '' (N ∩ {x | ¬Function.Surjective ⇑(fderiv ℝ f x)}))
+```
 
 ## Sources
 

@@ -37,7 +37,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Fredholm alternative in eigenvalue language](../../part-02/pde/part-01/the-fredholm-alternative-in-eigenvalue-language.md)
-- [The Sobolev inequality for functions of bounded variation](../geometric-measure-theory-rectifiability-bv-and-f/the-sobolev-inequality-for-functions-of-bounded.md)
+- [The Sobolev inequality on `W^{1,p}_0` of a ball](../../part-02/sobolev/part-02/the-sobolev-inequality-on-w-1-p-0-of-a-ball.md)
 - [TauCeti.Wkp](tauceti-wkp.md)
 
 ## Lean

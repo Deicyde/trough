@@ -39,6 +39,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Cauchy–Goursat for a pole-free meromorphic function](../../../analysis/part-02/contour/cauchy-goursat-for-a-pole-free-meromorphic-funct.md)
 - [The generalized residue theorem on a star-shaped open set, simple-pole regime](../../../analysis/part-02/contour/the-generalized-residue-theorem-on-a-star-shaped.md)
 - [Generalized winding number (HW Def 2.1)](../../../analysis/part-01/contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number-hw-def-2-1.md)
 

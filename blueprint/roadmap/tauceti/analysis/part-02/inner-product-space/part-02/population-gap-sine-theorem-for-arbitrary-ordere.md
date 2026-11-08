@@ -37,8 +37,8 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Hoffman–Wielandt inequality](../part-01/the-hoffman-wielandt-inequality.md)
-- [Parseval's identity for the Hermite basis (norm-square form)](../../../../probability/weighted-orthogonal-l2-bases-completeness-hilber/part-01/parsevals-identity-for-the-hermite-basis-norm-sq.md)
-- [Weyl's inequality for symmetric operators on a finite-dimensional inner product space over `𝕜 = ℝ, ℂ`](weyls-inequality-for-symmetric-operators-on-a-fi.md)
+- [Parseval's identity for a functional](parsevals-identity-for-a-functional.md)
+- [Weyl's inequality](../part-03/weyls-inequality.md)
 
 ## Lean
 
