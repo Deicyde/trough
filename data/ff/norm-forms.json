@@ -1,0 +1,295 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-norm-forms",
+ "repo": "FormalFrontier/norm-forms",
+ "rev": "4b2893fb313bbd209a319dc920d49075d7e509a7",
+ "date": "2026-11-05T05:47:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Norm Forms",
+  "description": "Field-norm/spectral-norm comparison over complete ultrametric fields; coordinate norms over finite field extensions and universal finite-free norms under commutative base change; unbounded attained-degree anisotropic forms; polynomial padding and finite-system K-point zero-set compression; conditional homogeneous-system zeros and single-form zeros over algebraic, rational-function and finite-transcendence-degree extensions; finite-field common-zero theorems; and scalar sums annihilating positive tensor powers.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "agent-reviewed",
+  "notes": "The coordinate and universal norm results, polynomial-system common-zero theorems, field-extension transfer and positive-tensor-power annihilation results have been independently reviewed. Their material hypotheses and limitations are described in the README and mathematical guides. This status does not claim complete coverage of a selected source or settle unrelated third-party rights."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex CLI and Formal Frontier Hive Tasks",
+    "tool_setup": "AI-assisted formalization with repository-pinned Lean/mathlib and separate independent review."
+   }
+  ],
+  "notes": ""
+ },
+ "scope": "",
+ "sources": [
+  {
+   "title": "Local Fields and Their Extensions",
+   "authors": [
+    "Ivan Fesenko",
+    "Sergei Vostokov"
+   ],
+   "type": "book",
+   "relationship": "formalizes",
+   "location": "Second edition, Chapter II, §2"
+  },
+  {
+   "title": "Non-Archimedean Analysis",
+   "authors": [
+    "Siegfried Bosch",
+    "Ulrich Güntzer",
+    "Reinhold Remmert"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Sections 3.1–3.2"
+  },
+  {
+   "title": "Finite-basis field norm and coordinate norm-form constructions",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Finite-free universal coordinate norm under scalar extension",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Finite polynomial-system zero-set compression over non-algebraically-closed fields",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Equal-degree homogeneous-system nontrivial zeros from a uniform single-form bound",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Homogeneous-form nontrivial zeros over algebraic field extensions",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Homogeneous-form nontrivial zeros over rational-function fields",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Homogeneous-form nontrivial zeros over finite-transcendence-degree extensions",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Finite-field polynomial-system common zeros from Chevalley–Warning",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Finite-field scalar sums annihilating positive tensor powers",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Cohomology of Number Fields",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Chapter VI"
+  }
+ ],
+ "depends": [
+  {
+   "name": "algebraic-groups",
+   "rev": "6c7f4a5a38881573fd2bb735fc3dab1de53b83bf"
+  },
+  {
+   "name": "multivariate-polynomials",
+   "rev": "6a04276766ad82d60702b24deb9a559a30a80007"
+  },
+  {
+   "name": "sequence-growth",
+   "rev": "c5c4dbfafc3a6b3fdc8c6ab9f3d336ae893d4f79"
+  }
+ ],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "First-order norm–trace congruence",
+   "text": "For commutative rings `R`, `S`, an\n`R`-algebra `S`, any ideal `I` of `R` and `x ∈ I.map (algebraMap R S)`,\n`Algebra.norm_one_add_sub_one_sub_trace_mem_ideal_sq` proves\n`Algebra.norm R (1 + x) - 1 - Algebra.trace R S x ∈ I ^ 2`.\nOn finite-free algebras this is the usual first-order norm formula,\nincluding rank zero, characteristic two and nonreduced base rings.\nNo finite/free hypotheses are required: if there is no finite basis,\nMathlib's norm is constantly one and its trace is zero. This convention\nis not a new arithmetic norm theory for nonfree or infinite algebras.\nSee [`NormForms.TraceCongruence`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/TraceCongruence.lean).",
+   "link": {
+    "text": "NormForms.TraceCongruence",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/TraceCongruence.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.TraceCongruence",
+    "file": "NormForms/TraceCongruence.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Field norms and spectral norms",
+   "text": "For a finite field extension `L / K`\nof a complete ultrametric normed field,\n`Algebra.norm_norm_eq_spectralNorm_pow_finrank` proves\n`‖Algebra.norm K x‖ = spectralNorm K L x ^ Module.finrank K L`.\nThe base norm may be trivial, the extension may be inseparable, and no norm\nor topology on `L` is assumed. This is the exactly extending absolute-value\nformula with exponent `1/[L:K]`, not the discrete normalized-valuation\nformula with exponent `1/f`; it does not assert discreteness or `ef=[L:K]`.\nSee [`NormForms.SpectralNorm`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/SpectralNorm.lean) and the\n[ramified quadratic 5-adic example](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormFormsTests/SpectralNorm.lean).",
+   "link": {
+    "text": "NormForms.SpectralNorm",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/SpectralNorm.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.SpectralNorm",
+    "file": "NormForms/SpectralNorm.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Universal coordinate norms",
+   "text": "For a finite-free `R`-algebra `B` (which need\nnot be commutative), a commutative ring `R`, a commutative `R`-algebra `A` and\na finite basis `b`, `Algebra.norm_coordinates_baseChange b x` identifies the\nnative norm after base change with evaluation of the signed constant\ncharacteristic-coefficient polynomial. `Algebra.norm_universalCoordinates b`\ngives an **equality of polynomials** for the universal tensor, not just an\nequality of evaluations. These work over finite coefficient fields and even\ntrivial coefficient algebras. See\n[`NormForms.UniversalCoordinates`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/UniversalCoordinates.lean) and\nthe [universal-coordinate guide](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/UniversalCoordinateNorm.md).",
+   "link": {
+    "text": "NormForms.UniversalCoordinates",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/UniversalCoordinates.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.UniversalCoordinates",
+    "file": "NormForms/UniversalCoordinates.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Norm congruences",
+   "text": "For commutative rings `R` and `S` with a finite free\n`R`-algebra structure on `S`, `Algebra.norm_sub_norm_mem_ideal` states that\n`x - y ∈ I.map (algebraMap R S)` implies `Algebra.norm R x - Algebra.norm R y ∈ I`.\nThe ideal is arbitrary, and neither ring needs to be a domain or local.\nSee [`NormForms.IdealCongruence`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/IdealCongruence.lean).",
+   "link": {
+    "text": "NormForms.IdealCongruence",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/IdealCongruence.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.IdealCongruence",
+    "file": "NormForms/IdealCongruence.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Norm forms and basis changes",
+   "text": "For a finite field extension `L / K` with\nfinite `K`-basis `b` indexed by `ι`, `NormForms.coordinateNormPolynomial b`\nevaluates to the field norm, is homogeneous of **actual total degree**\n`Fintype.card ι`, and vanishes precisely at the zero coordinate vector.\n`NormForms.coordinateChange` converts *new* coordinates into *old* ones;\nchanging or reindexing the basis gives structural polynomial identities,\nincluding over finite fields where evaluation alone cannot establish\npolynomial equality. See [`NormForms.Coordinate`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/Coordinate.lean),\n[its clients](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormFormsTests/Coordinate.lean) and the\n[historical coordinate signatures](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/API.md).",
+   "link": {
+    "text": "NormForms.Coordinate",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/Coordinate.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.Coordinate",
+    "file": "NormForms/Coordinate.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Unbounded attained anisotropic degrees",
+   "text": "If `K` is not algebraically\nclosed, `MvPolynomial.exists_anisotropic_homogeneous_of_not_isAlgClosed`\nproduces, for every bound, a homogeneous anisotropic form whose *actual*\ndegree exceeds that bound. It does **not** produce a form in every prescribed\ndegree. See\n[`NormForms.CoordinateNormIteration`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/CoordinateNormIteration.lean)\nand the [iteration guide](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/CoordinateNormIteration.md).",
+   "link": {
+    "text": "NormForms.CoordinateNormIteration",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/CoordinateNormIteration.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.CoordinateNormIteration",
+    "file": "NormForms/CoordinateNormIteration.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Fixed-polynomial padding and system compression",
+   "text": "For a commutative\nsemiring, an embedding of index types and a fixed outer polynomial,\n[`NormForms.PaddedSubstitution`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/PaddedSubstitution.lean) transfers\nzero conditions and proves the homogeneous-substitution label law `d * e`\nwithout finiteness or field assumptions. Over any non-algebraically-closed\nfield, the public\n`MvPolynomial.exists_common_zero_polynomial` compresses a finite family's\n**K-point** common zeros to one equation. Its homogeneous variant takes a\ncommon degree label `d` and produces label `d * m` for some\n`m > Fintype.card ι`, not a claim about actual total degree. Neither\ntheorem asserts equality of ideals, radicals, schemes or zeros over every\nextension field. See\n[`NormForms.CommonZeroCompression`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/CommonZeroCompression.lean),\nthe [padding guide](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/PaddedSubstitution.md) and the\n[compression guide](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/PolynomialCommonZeroCompression.md).",
+   "link": {
+    "text": "NormForms.PaddedSubstitution",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/PaddedSubstitution.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.PaddedSubstitution",
+    "file": "NormForms/PaddedSubstitution.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Common zeros under a direct single-form hypothesis",
+   "text": "Over any field,\n`MvPolynomial.exists_nonzero_common_zero_of_single_form_bound` converts a\n**direct uniform all-positive-degree** single-form nontrivial-zero premise\ninto a nonzero common zero for `s` forms of the same positive homogeneous\nlabel `d` in `n` variables, provided `s * d ^ r < n`. Zero and repeated\nforms and `s = 0`, `r = 0`, `d = 1` are included. This conditional existence\ntheorem is distinct from K-point zero-set compression. See\n[`NormForms.HomogeneousSystemZeros`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/HomogeneousSystemZeros.lean)\nand the [system guide](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/HomogeneousSystemZeros.md).",
+   "link": {
+    "text": "NormForms.HomogeneousSystemZeros",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/HomogeneousSystemZeros.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.HomogeneousSystemZeros",
+    "file": "NormForms/HomogeneousSystemZeros.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Field-extension zeros",
+   "text": "With the same direct *base-field*\nall-positive-degree premise, a positive-degree `d`-homogeneous-labelled\nform has a nonzero zero over any algebraic extension if `d ^ r < n`;\nno finite, separable or perfect-extension hypothesis is needed. Over\n`RatFunc k` the strict bound becomes `d ^ (r + 1) < m`. For an extension\n`k → K` of transcendence degree `t` the bound is `d ^ (r + t) < m`,\nwithout finite-generation or separability assumptions. These are\nsingle-form theorems, not simultaneous-zero statements. See\n[`NormForms.AlgebraicExtensionFormZeros`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/AlgebraicExtensionFormZeros.lean),\n[`NormForms.RatFuncFormZeros`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/RatFuncFormZeros.lean),\n[`NormForms.FiniteTranscendenceFormZeros`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/FiniteTranscendenceFormZeros.lean)\nand their [algebraic](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/AlgebraicExtensionFormZeros.md),\n[rational-function](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/RatFuncFormZeros.md) and\n[finite-transcendence](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/FiniteTranscendenceFormZeros.md) guides.",
+   "link": {
+    "text": "NormForms.AlgebraicExtensionFormZeros",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/AlgebraicExtensionFormZeros.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.AlgebraicExtensionFormZeros",
+    "file": "NormForms/AlgebraicExtensionFormZeros.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite-field common zeros",
+   "text": "Over a finite field,\n`MvPolynomial.exists_ne_common_zero_of_sum_totalDegree_lt` returns a second\ncommon point distinct from a known one when the strict sum of **actual\ntotal degrees** is below the number of variables; homogeneity is not\nrequired. Positive, possibly different homogeneous *labels* with strict\nsum bound give a nonzero common point via\n`MvPolynomial.exists_nonzero_common_zero_of_sum_degrees_lt` and the\nsingle-form specialization\n`MvPolynomial.exists_nonzero_zero_of_isHomogeneous_of_degree_lt`.\nZero and repeated forms and the empty family are allowed. A finite-base-\nfield transcendence-degree example in the tests is **private**, not another\npublic extension theorem. See\n[`NormForms.FiniteFieldFormZeros`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/FiniteFieldFormZeros.lean)\nand the [finite-field guide](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/FiniteFieldFormZeros.md).",
+   "link": {
+    "text": "NormForms.FiniteFieldFormZeros",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/FiniteFieldFormZeros.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.FiniteFieldFormZeros",
+    "file": "NormForms/FiniteFieldFormZeros.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Tensor scalar-sum annihilation",
+   "text": "Over a finite field `K`, a nonzero\n`a : ι → K` makes `TensorPower.scalarSum (M := M) a` surjective. For `0 < s`,\narbitrary prescribed tensors indexed by finite `τ`, and a\nfinite-dimensional **target** `W = (TensorPower K s M) ⊗[K] N`,\n`TensorPower.exists_nonzero_scalarSumTensor_annihilates` finds one such `a`\nwhose **actual tensor map** annihilates every tensor when\n`s * Fintype.card τ * Module.finrank K W < Fintype.card ι`. The source\ntensor space need not be finite-dimensional; no surjectivity of the\ntensor map, `s = 0` case or actual-total-degree-`s` equality is claimed.\nSee [`NormForms.TensorScalarSumAnnihilation`](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/TensorScalarSumAnnihilation.lean),\n[five public checked-use clients](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormFormsTests/TensorScalarSumAnnihilation.lean)\nand the [tensor guide](https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/docs/TensorScalarShrinking.md).",
+   "link": {
+    "text": "NormForms.TensorScalarSumAnnihilation",
+    "url": "https://github.com/FormalFrontier/norm-forms/blob/4b2893fb313bbd209a319dc920d49075d7e509a7/NormForms/TensorScalarSumAnnihilation.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormForms.TensorScalarSumAnnihilation",
+    "file": "NormForms/TensorScalarSumAnnihilation.lean",
+    "found": null
+   }
+  }
+ ],
+ "main_results": []
+}

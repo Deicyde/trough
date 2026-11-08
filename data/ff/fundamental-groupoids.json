@@ -1,0 +1,1537 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-fundamental-groupoids",
+ "repo": "FormalFrontier/fundamental-groupoids",
+ "rev": "ce38a38faef1a147e75b68b78b02bbfd6ad82948",
+ "date": "2026-11-05T17:02:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Fundamental Groupoids",
+  "description": "Endomorphism transport, chosen-vertex equivalences and connectedness of fundamental groupoids, with small-path generation and constructed strict descent along arbitrary indexed open covers into arbitrary categories. Based van Kampen for two-open covers with a common basepoint and path-connected opens and intersection, as a unique-homomorphism universal property and a pushout of groups. A path-connected based open core and charts with that common pairwise overlap give a colimit of their inclusion star when the core and charts cover the space. The raw group colimit is multiplicatively equivalent to the ambient fundamental group, preserving every leg in both directions with independent space and index universes. Inclusion-directed covers by neighborhoods of a supplied basepoint give colimits without path connectedness or intersection closure, with a universal property for arbitrary target monoids in independent universes. Monotone neighborhood covers indexed by directed preorders give the same universal property with compatibility only along index inequalities, and colimit data for the canonical preorder diagram. Signed-period additive-circle and complex-circle fundamental groups have integer coordinates, with signed-loop, inverse, endpoint, nonidentity and homeomorphism-compatibility laws, using Mathlib's quotient coverings. Continuous maps act functorially on path components, with equal actions for homotopic maps, in independent space universes without separation assumptions. Based postcomposition on generalized loops and homotopy quotients for every cube-index type, with positive homomorphisms, based-homotopy invariance and fundamental-group compatibility. Homotopy quotients commute with arbitrary dependent products for all cube indices in independent universes, by coordinate evaluation and loop assembly; for nonempty cube indices with decidable equality this is a multiplicative equivalence for the existing group structures. Raw cubical homotopy quotients canonically identify with path components of the same compact-open generalized-loop spaces, naturally in based postcomposition and compatibly with the empty-index comparison. For singleton index types, the generalized-loop space is homeomorphic to the compact-open based path space through Mathlib's singleton-coordinate equivalence, with full forward and inverse evaluation, constant/reflexive-path laws and based-postcomposition naturality. Index and space universes are independent, without separation or local compactness assumptions on the target. The based homotopy-fiber point projection has class image equal to the preimage of the constant class for every cube index, with range–kernel form for the existing positive groups. On whole based quotient hom-sets [Z,-], the original fiber projection, forward-loop inclusion and loop map give three successive range–constant-class preimage identities for every original based source (Z,z0). Ordinary ULift handles independent Z,E,B universes; homotopy is relative to {z0}, with arbitrary ordinary topologies and no geometric hypotheses. The pointed homotopy-fiber chain complex has lifted cubical homotopy quotients of the base, total space and fiber in successive degrees, is exact in the pointed-set sense at every positive chain degree, and admits chain maps for strict based squares. Its incoming differential need not surject onto the terminal path-component term of the base. Equivalences of cube-index types induce quotient equivalences by reindexing representatives, with inverse, identity, composition and based-postcomposition laws in independent universes. For nonempty indices with decidable equality, the same maps are multiplicative for the existing group structures, without requiring corresponding selected axes. The continuous identity from Mathlib's CompHaus-test topology to the original target topology induces a natural equivalence on every cubical homotopy quotient, multiplicative for nonempty indices with decidable equality. Probe, cube-index and target universes are independent. Unchanged functions lift continuously from every universe-parameterized compactly generated source. Ordinary products preserve universe-parameterized compact generation when one factor is locally compact. For such a compactly generated factor P and any topological A, the refinement of P × A is homeomorphic to P times the refinement of A by the identity functions. Supplied relative homotopies from compactly generated sources lift with unchanged joint cylinder functions, endpoints and arbitrary fixed subsets, with counit inverse and naturality laws. Coverings induce canonical quotient-map injections for nonempty cube indices and bijections for nontrivial indices, without decidable equality. For nontrivial indices with decidable equality, the stock homotopy groups are multiplicatively equivalent, with forward postcomposition and inverse represented by a chosen based generalized-loop lift. Coordinate-face cube boundaries are path connected for nontrivial indices, including infinite ones. Finite cube boundaries are closed, including the empty-index case. For every index type, the boundary complement with its subtype topology is homeomorphic to the real product on that type; for finite indices it is locally compact. A Hausdorff space maps continuously to the one-point compactification of any open subspace by retaining that subspace and collapsing its complement to infinity, without a local compactness assumption. Adding a disjoint point gives a surjection, even for the whole space, and a quotient map when the ambient space is compact. For compact Hausdorff ambient spaces, collapse pullback is a homeomorphism between continuous maps based at infinity and ambient maps equal to the chosen point outside the open subspace, with ordinary compact-open/subtype topologies. Its finite-cube specialization identifies generalized loops with based maps from the one-point compactification of the cube-boundary complement, including empty indices and arbitrary topological targets in independent universes. Relative affine interpolation fixes any agreement subset for maps into real modules with continuous addition and scalar multiplication. Generalized loops in such modules are homotopic relative to the cube boundary to their constant loops, and all their homotopy quotients are subsingletons, including empty indices and arbitrary chosen points. Generic covering-map lifting and based equivalences, monodromy, equivariant fiber maps and deck-group centralizers. A covering map is proper exactly when every point fiber is finite, without separation, local compactness or uniform-degree assumptions. Fiber finiteness is locally constant, with clopen locus including empty fibers and excluding infinite ones. On a preconnected base, properness is equivalent to finiteness of the fiber at any given point. For preconnected total space and a supplied total-space point, finiteness of its fiber suffices without base connectedness or surjectivity. With path-connected total space, monodromy identifies the based fiber with left cosets of the induced image, and properness is equivalent to that subgroup having finite index. The canonical comparison from the categorical coproduct of fundamental groupoids to the fundamental groupoid of the topological coproduct is an equivalence, for arbitrary families without connectivity assumptions. Semilocal simple connectivity uses chosen-center loops contracting in the ambient space, with induced-map reflection, local-homeomorphism transport, covering consequences and a locally path-connected neighborhood refinement. Radial deformations of punctured closed and open balls onto spheres are available in arbitrary real normed spaces. Positive real scaling identifies Circle with each positive-radius complex sphere. Scaling and normalization give strict retractions and circle-fixing deformations of punctured balls. Ordered two-factor based wedges are strictly isomorphic to binary wedges, and both nested binary three-factor wedges flatten strictly to the finite wedge. Forward and inverse maps preserve the ordered factor inclusions and common point, for possibly different factors in an arbitrary common universe. In the named cartesian structure on the ordinary opposite based-homotopy category, the unop of the associator followed by left-nested flattening equals right-nested flattening after applying the quotient functor. Positive-radius inner circles classify punctured complex-ball fundamental groups by the integers, with normalization and scaling maps and a nontrivial positive generator. Compatible functions on a disk attachment descend uniquely to any target type, and continuous descent has the same underlying function. Removing the centres of an arbitrary family of attached closed complex unit disks gives a subspace that strongly deformation retracts onto the original space image, for arbitrary unbased circle maps and independent space and disk-index universes, without connectivity or separation assumptions. For a selected attaching map taking 1 to a chosen point, the punctured component has a path-connected thickened chart with contractible disk piece and punctured-open-disk overlap. Its positive half-radius generator retracts to the positive attaching loop class. For an entirely based family, these charts and the core form an Option-indexed open cover of the attachment component with path-connected members and pairwise intersections, including the empty disk family. Commuting squares of source and target homeomorphisms induce homeomorphisms of ordinary compact-open homotopy fibers at corresponding specified points, with point, full-path, inverse, identity, composition and projection laws. Fibers of product maps are homeomorphic to products of ordinary homotopy fibers, preserving both retained source points and full same-time paths, naturally for arbitrary continuous squares in independent universes. A free source factor splits from the fiber of f composed with first projection: the result is HomotopyFiber f b times the free factor, retaining both source coordinates and the entire original path. Whole continuous-map diagrams, inverse and constructor laws and same-time evaluation hold for arbitrary topologies in three independent universes; arbitrary-square naturality with a continuous free-factor map uses six independent universes. For f equal to identity, the full identity-fiber factor remains.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "unchecked",
+  "notes": ""
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Formal Frontier agents and Lean 4",
+    "tool_setup": "AI-assisted Lean formalization and mathematical documentation."
+   }
+  ],
+  "notes": ""
+ },
+ "scope": "Set-level descent uses arbitrary target types and agrees with continuous descent whenever the presenting maps are continuous. Disk centres form a closed set, and compatible functions or continuous maps descend from the original space and punctured disks to its complement. The normalized-direction retraction is a strict left inverse to the original-space map. The radial homotopy fixes its image throughout. In an arbitrary category, equality of isomorphism-induced endomorphism transports is characterized by centrality of the relative loop. In a groupoid, independence from every isomorphism to a fixed explicitly isomorphic target characterizes commutativity. A chosen vertex functor is full and faithful in any category and an equivalence in a preconnected groupoid. Path connectedness agrees with connectedness of the fundamental groupoid, including nonemptiness. Small-path generation needs only composition stability, and local naturality extends to a unique natural transformation. Strictly compatible chart functors descend uniquely by equality; characteristic object and morphism equations include equality transport. Space, index, target-object and target-hom universes are independent. Inclusion cocones are colimits in Grpd and Cat at their fixed bundled sizes. No connectedness, inhabited intersections, nonempty target or faithful inclusion is required for descent. For X : Type u, two opens U and V with U ⊔ V = ⊤, set path connectedness of U, V and their intersection, and a common point p, compatible homomorphisms from the two based fundamental groups into any G : Type v with Group G extend uniquely to the fundamental group of X at p. The extension satisfies both inclusion-composition equations; u and v are independent. The same four inclusion homomorphisms form an IsPushout square in GrpCat.{u}. These are two-open specializations of the based-group colimit theorem, obtained using strict groupoid descent. Neither global path connectedness nor local path connectedness is an extra hypothesis. For a based open core C contained in every chart U i, assume path connectedness of C and the charts, U i intersect U j equals C at distinct indices, and coverage by C together with all charts. Their core-to-chart star inclusion cocone is a colimit in GrpCat at the ambient group universe. Its raw quotient group is canonically multiplicatively equivalent to the ambient fundamental group, preserving every core and chart leg in both directions. Space and index universes are independent; the raw quotient lies in their maximum. Empty chart families and nontrivial core groups are allowed. This is a common-core re-presentation of the based all-inclusions cover theorem, not an arbitrary-cover based theorem or wedge calculation. For an inclusion-directed open cover by neighborhoods of a supplied basepoint, compatible homomorphisms from local fundamental groups into any monoid extend uniquely to the ambient fundamental group. Space, index and target universes are independent. The existing inclusion cocone is a colimit in GrpCat.{u}; repeated indices are retained, with no path connectedness, intersection closure, separation, local connectivity, finiteness or separate index nonemptiness premise. This version uses every inclusion between presented neighborhoods and the diagram inducedFunctor U ⋙ openNhdsFunctor p. For arbitrary topological X : Type u, a supplied p : X, J : Type v with Preorder J and IsDirectedOrder J, and a monotone open-neighborhood cover U with hU : Monotone U, compatibility only along i ≤ j suffices. Homomorphisms into any G : Type w with Monoid G extend uniquely along the canonical inclusion legs, with u, v and w independent. The noncomputable definition isColimitOfIsOpenCoverOfMonotone returns IsColimit ((openNhdsCocone p).whisker hU.functor) in GrpCat.{u} for the canonical preorder category on J, not the induced all-inclusions category. No path connectedness, intersection closure, separation, local connectivity, smallness, injectivity, order reflection or separate Nonempty J premise is required; the cover at p supplies an index. These forms generalize the compact finite-stage colimit step in May, Chapter 2, §7, printed p. 19 (PDF p. 27). No arbitrary-cover based-group theorem, wedge calculation or covering-space classification is asserted. For D : Fin 2 → BasedTopCat in an arbitrary common universe, the explicit basedWedgeFinTwoIso sends factor 0 to the left and factor 1 to the right. For D : Fin 3 → BasedTopCat, basedWedgeFinThreeLeftIso and basedWedgeFinThreeRightIso flatten the respective nested binary wedges to basedWedge D, with ordered leaves 0, 1, 2. The inverse maps have the corresponding inclusion equations, and both directions preserve the common point. These are strict isomorphisms of based spaces, with no separation, connectedness, local compactness or basepoint condition. Their images under homotopyQuotient.mapIso use the existing quotient functor. For the named homotopyOppositeCartesianMonoidalCategory, the theorem homotopyOpposite_associator_unop_comp_finThreeLeft identifies the unop of its associator followed by homotopyQuotient.map of left-nested flattening with homotopyQuotient.map of right-nested flattening. It holds for every D : Fin 3 → BasedTopCat in an arbitrary common universe, retaining leaf order 0, 1, 2 and allowing different factors without additional hypotheses. For continuous f and g in a commuting square with coordinate homeomorphisms eX and eY, HomotopyFiber.homeomorph eX eY w hy compares the ordinary product/subspace fibers over any y and y' with hy : eY y = y'. The forward function maps the retained point by eX and postcomposes the whole compact-open path by eY; the inverse uses their inverses. All four space universes and topologies are independent, without embedding, separation, compact-generation or nonemptiness hypotheses. The identity, inverse, composition and point-projection laws use the existing homotopy-fiber map API. The fundamental-group functor on based spaces preserves every existing indexed product, including the empty product, without index-smallness or connectedness. Space and index universes are independent. The stock product comparison has the projection-induced coordinate maps; under the canonical based-product identification its coordinate homomorphism is piMulEquiv. The raw realization lives in the larger ambient universe when necessary, separately from the unrestricted preservation statement. For every nonzero real period T, the fundamental group of AddCircle T at zero is multiplicatively equivalent to Multiplicative ℤ, sending the loop lifted from zero to T * n to n for all integers. The complex-circle coordinate at one is transported through the period-one homeomorphism and sends the counterclockwise full turn to positive one. Inverse-loop, lifted-endpoint, nonidentity and signed-period homeomorphism-compatibility laws are public. At zero period all prescribed loops are constant; no integer equivalence is asserted there. The coordinate module depends only on Mathlib. For arbitrary topological spaces in independent universes, supplied points x and y and a continuous map f with f x = y, GenLoop.map postcomposes based cube maps and HomotopyGroup.mapFun acts on the existing homotopy quotient for any cube-index type N in an independent universe, including an empty one. Representative, constant, identity, composition and homotopy-relative-to-{x} laws require no decidable equality or nonemptiness of N. With DecidableEq N and Nonempty N, HomotopyGroup.map is a homomorphism for the canonical group structures and has mapFun as its underlying function. It preserves Mathlib's reversed concatenation convention. Under pi1MulEquivFundamentalGroup the dimension-one action agrees with FundamentalGroup.mapOfEq. No separation, connectedness, local path connectedness, finiteness or well-pointedness is assumed. The module depends only on Mathlib and supplies no group structure for empty indices. The separate path-component module defines ZerothHomotopy.map on the existing quotient by Joined for arbitrary continuous maps, with representative, pointwise identity/composition and homotopy-invariance laws. Space universes are independent, with no separation or connectedness assumptions. For f : C(E, B), e0 : E, b : B and h : f e0 = b, base the ordinary homotopy fiber at HomotopyFiber.const e0 h. For every cube index N, the point-projection mapFun has range equal to the preimage of the constant class under mapFun N f h. No index instances are needed. With exactly DecidableEq N and Nonempty N, the existing map homomorphisms give range equal to kernel; these instances supply operation data, not geometric hypotheses. Index, source and base universes are independent, and all topologies arbitrary. Empty-index classes retain all path components; the zeroth projection theorem also allows empty E without e0 or h. Infinite-index quotients are already subsingletons. For every original based source (Z,z0), postcomposition by the original fiber projection p, forward-loop inclusion J and unsigned loop map Ωf satisfies range p_* = f_*⁻¹{c_B}, range J_* = p_*⁻¹{c_E} and range (Ωf)_* = J_*⁻¹{c_F}, where c_X is the constant class in [Z,X]_* and F is based at HomotopyFiber.const e0 h. These are whole hom-sets of the existing point-relative based-homotopy category. Independent Z,E,B universes are handled by ordinary ULift of the original models, with original-space representatives and equality exactly by homotopy relative to {z0}. No local compactness, separation, closed-basepoint or fibration assumptions are needed. For an original UCompactlyGeneratedSpace.{p} source Z and arbitrary target Y, BasedTopCat.compactlyGeneratedCounitEquiv identifies the whole point-relative based hom-sets [Z,k_p Y]_* and [Z,Y]_*. Its forward map is counit postcomposition on every class, and its inverse sends every original based continuous representative to its unchanged-function lift. Joint homotopy relative to the original source point is preserved and reflected. The forward comparison is natural under arbitrary based source and target maps, without generatedness; inverse naturality requires generatedness only of the original source spaces. Probe and original carrier universes are independent; refinement of the original target precedes ordinary ULift to a common level. No separation, closed-basepoint or local-compactness assumptions are needed. For an arbitrary topological space X and chosen x, the continuous identity from compactlyGenerated.{u} X to the original topology gives HomotopyGroup.compactlyGeneratedEquiv for every cube-index type N. Its forward function is the existing mapFun, and with DecidableEq N and Nonempty N the same map is a multiplicative equivalence for the existing groups. Both comparisons are natural in based continuous maps. Probe, cube-index and target universes are independent, with no target separation or compact-generation assumption. Finite raw cubes and joint cylinders use source compact-generation; infinite quotients use the existing subsingleton theorem. Empty-index quotients retain all path components. The supporting continuity iff and unchanged-function lift apply to any UCompactlyGeneratedSpace.{u} source. The ordinary product of two such spaces is again u-compactly generated when the first factor is locally compact. For a locally compact u-compactly generated P and arbitrary topological A, Homeomorph.compactlyGeneratedProd identifies k_u (P × A) with P × k_u A by identity functions, with the counit square. Probe and both space universes are independent, with no separation or smallness assumptions. For any u-compactly generated A, ContinuousMap.HomotopyRel.toCompactlyGenerated lifts each supplied relative homotopy to the refined target with the same joint cylinder function, endpoints and arbitrary fixed subset. Counit postcomposition is inverse in both directions; lifting is natural under target maps and gives the corresponding homotopy-existence equivalence. Source, target and probe universes are independent, with no target separation or compact-generation premise and no local compactness or first-countability premise on A. Neither a sphere-domain comparison, May's weak-Hausdorff category nor an arbitrary product formula is supplied. For compact Hausdorff K : Type u, any open s and any topological X : Type v with a chosen x : X, OnePoint.collapsePullbackHomeomorph s x identifies {F : C(OnePoint s, X) // F ∞ = x} with {f : C(K, X) // ∀ k, k ∉ s → f k = x} homeomorphically. Both sides have the ordinary compact-open/subtype topology. The forward map is precomposition by OnePoint.collapse s; the inverse is OnePoint.rec x applied to the restriction to s. Ambient and target universes are independent, with no target separation or local compactness assumption. The open subspace may be empty or all of K; neither nonemptiness nor properness is required. For N in an independent universe with Finite N, GenLoop.onePointHomeomorph N x identifies GenLoop N X x homeomorphically with {F : C(OnePoint ((Cube.boundary N)ᶜ : Set (I^N)), X) // F ∞ = x}. Its forward map retains loop values on the coordinate-face boundary complement and assigns x at infinity; its inverse precomposes with the cube-boundary collapse. The topology is the ordinary compact-open/subtype topology, not a refinement of it. Only a topology and chosen point are required on X, with no Fintype, DecidableEq N or Nonempty N premise. When N is empty, the cube is a singleton and its boundary is empty, but infinity remains distinct from the cube point; the based-map space need not be a singleton. Five underlying-map and evaluation laws for each homeomorphism characterize both directions, including values at infinity and points of the open subspace. The constructions use GroupTheory's compact-covering precomposition embedding API. For an arbitrary topological domain A and a real module E with AddCommGroup E, Module ℝ E, TopologicalSpace E, ContinuousAdd E and ContinuousSMul ℝ E, ContinuousMap.HomotopyRel.affine f g hfg constructs an affine homotopy fixed on any subset S where the continuous maps f and g agree. Domain and target universes are independent. Its evaluation is AffineMap.lineMap, and the underlying-homotopy equation compares it with ContinuousMap.Homotopy.affine under IsTopologicalAddGroup E. Continuous negation follows from scalar multiplication by negative one. No separation, norm, completeness or local convexity of E, and no closedness or nonemptiness of S, are assumed. For every N in an independent universe and every x in E, GenLoop.homotopic_const contracts each generalized loop to the constant loop relative to Cube.boundary N using this construction and GenLoop.boundary. HomotopyGroup.subsingleton N x identifies all classes in the existing boundary-relative homotopy quotient by passing through the constant loop. Neither result requires decidable equality, finiteness or nonemptiness of N, and no global subsingleton instance is registered. At empty indices the boundary condition is empty, but affine interpolation still joins any cube value to x. No group structure on the empty-index quotient is supplied. For every real normed space E and positive radius r, Metric.puncturedClosedBallRetraction projects the punctured metric closed ball radially onto Metric.sphere (0 : E) r. Its composite with Metric.sphereToPuncturedClosedBall is the identity on the sphere. Metric.puncturedClosedBallDeformation is a ContinuousMap.HomotopyRel from the identity to inclusion after projection, fixing the sphere throughout. Metric.puncturedClosedBallHomotopyEquivSphere packages the projection and inclusion as a homotopy equivalence. Evaluation, endpoint and boundary laws describe the maps without unfolding them. No nontriviality, completeness, finite-dimensionality or inhabitance assumption is required. For 0 < a < r, Metric.sphereToPuncturedBall includes the radius-a sphere into the punctured open radius-r ball, and Metric.puncturedBallDeformation strongly deforms that ball onto the inclusion range. The associated Metric.puncturedBallHomotopyEquivSphere has radial projection forward and inclusion inverse. Metric.puncturedBallRetraction itself needs only 0 < a, without requiring a < r. These constructions allow the zero space. In the complex plane, Complex.circleHomeomorphSphere identifies Circle with every positive-radius sphere by real scaling. The continuous maps Complex.circleToPuncturedBall and Complex.puncturedBallToCircle give scaling and normalization, with normalization z / ‖z‖ and a left-inverse law. For 0 < a < r, at the scaled image of 1 : Circle, Complex.puncturedBallFundamentalGroupEquivInt is a multiplicative equivalence with Multiplicative ℤ. Its forward homomorphism normalizes before taking the circle index; its inverse scales circle classes. Every scaled Circle.loop n has index n. The positive class is nontrivial and has index one, including for a = 1/2 and r = 1. For IsCoveringMap f and a supplied e : E, the same canonical mapFun with target point f e is injective for Nonempty N and bijective for Nontrivial N, without DecidableEq N. With DecidableEq N and Nontrivial N, homotopyGroupMulEquiv is a multiplicative equivalence for the stock group structures, whose forward homomorphism is HomotopyGroup.map. Its forward representative formula is GenLoop.map; its inverse sends a representative class to the class of liftGenLoop. The generic inverse formula also applies to any displayed based lift with the required GenLoop.map equality. The chosen lift exists uniquely for Nontrivial N, projects to the given generalized loop, takes zero to e, and returns any based loop when applied to its image. Cube.zero_mem_boundary requires only Nonempty N, while Cube.isPathConnected_boundary and the boundary subtype's path-connected instance require Nontrivial N. Index, total and base universes are independent; no connectedness, local path connectedness or separation of either space, global surjectivity, finiteness of the cube index or smallness is assumed. No injectivity for empty indices or surjectivity for singleton indices is asserted. For Fin n the covering equivalence applies when n is at least two; arbitrary indices use the coordinate-face boundary, not a topological frontier or a comparison with sphere-domain or U-topology homotopy groups. For a continuous map with path-connected, locally path-connected domain and a prescribed lift of its basepoint, unique based lifting is equivalent to containment of fundamental-group images, compared by the basepoint equality. Equal based images for two covers of a fixed base give a homeomorphism over that base when both total spaces are path connected and the source is locally path connected; no base connectedness or global surjectivity is required for these results. For a covering map p between arbitrary topological spaces in independent universes, IsProperMap p is equivalent to finiteness of every canonical point-fiber subtype. No separation, local compactness, connectedness, surjectivity, nonempty fiber or uniform-degree assumption is required. The predicate of canonical fiber finiteness is locally constant and its locus is clopen, including empty fibers and excluding infinite ones. On a preconnected base, properness is equivalent to finiteness at a given point; no additional nonemptiness premise is required. On a preconnected total space with a supplied point, properness is equivalent to finiteness over its image, without base connectedness or surjectivity. If the total space is path connected, the ordinary fiber is equivariantly equivalent to left cosets of the canonical based fundamental-group image; the coset of g maps to monodromy by g. The image need not be normal, and the group and fiber may lie in independent universes. Properness is then equivalent to finite index of that exact image subgroup. Compact inverse images then use Mathlib's existing proper-map API. Monodromy fixes a fiber point exactly on its based total-space fundamental-group image, and two fiber points share an orbit exactly when joined by a path, without connectivity or local path connectedness. Over a path-connected base, the total space is path connected exactly when it is nonempty and monodromy is pretransitive. Continuous over-maps restrict to equivariant fiber maps without connectivity hypotheses. Restriction is an equivalence of map spaces for path-connected base and locally path-connected source, including empty or disconnected source; alternatively, a path-connected, locally path-connected source and a supplied point suffice without base connectedness. Neither comparison requires connectivity or local path connectedness of the target, and individual fiber maps need not be bijective. The deck group acts on every point fiber. For a separated, locally injective map with preconnected total space, evaluation at a supplied point is injective. No codomain topology is needed, and surjectivity of evaluation is not asserted. Deck restriction to a chosen fiber is a homomorphism into the monodromy centralizer in that fiber's permutation group. It is injective over a path-connected base, without local path connectedness, and a multiplicative equivalence if the total space is also locally path connected, allowing empty or disconnected total spaces. The occupied-fiber equivalence instead needs path-connected, locally path-connected total space and a supplied point, without base connectedness. A point stabilizer is not generally the monodromy permutation kernel, and the centralizer is not a group structure on the fiber. For arbitrary independent universes, the canonical functor from the stock categorical sigma of the original fundamental groupoids to the fundamental groupoid of the original topological sigma is constructed by Sigma.desc of the inclusion-induced maps. Object and component-arrow equations, the restriction natural isomorphism and carrier-level object bijectivity are proved. No connectedness, nonemptiness, local path connectedness, finiteness, separation, compact-generation or basepoint assumptions are imposed on the summands. The ordinary theorem sigmaComparison_isEquivalence follows from full faithfulness on the original path-homotopy quotients and object surjectivity. Mathlib's connected-source sigma factorization applies to the interval and its square, with endpoint and relative-boundary equations recovered using injectivity of the summand inclusion. The theorem is not registered as an instance; Mathlib's Functor.asEquivalence supplies equivalence data after installing it locally. No coproduct naturality theorem is asserted. Semilocal simple connectivity at x means that x has an open neighborhood whose loops based at x are nullhomotopic in the ambient space, not necessarily in that neighborhood. The global Prop class quantifies separately over all centers, including vacuously on an empty space. It is equivalent to an open neighborhood inclusion having trivial based fundamental-group image, without connectedness of that neighborhood. Simply connected spaces satisfy it without local path connectedness. A continuous map reflects the pointwise property when its induced based fundamental-group homomorphism is injective; injectivity of the underlying map is not assumed. Local homeomorphisms preserve the pointwise property. A covering derives the required induced-map injectivity, giving pointwise equivalence and base-to-total global transport without surjectivity; global descent and global equivalence need surjectivity. Surjective local homeomorphisms also descend the global property. Under local path connectedness only, the chosen neighborhood can be open and path connected, with ambient nullhomotopies for loops at every basepoint in that one neighborhood. Intrinsic simple connectivity is not asserted. Source and target universes are independent; no separation, base path connectedness, extra nonemptiness or smallness assumption is imposed.",
+ "sources": [
+  {
+   "title": "A Concise Course in Algebraic Topology",
+   "authors": [
+    "J. Peter May"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Revised author PDF, Chapter 1 §§3, 5, 7 and Chapter 2 §§4–5, 7–8. Chapter 3 §§2–4, 7 for covering-space monodromy, lifting and maps of covers. Chapter 5 §§1–2, printed pp. 39–41, for compact-Hausdorff tests and kification. Chapter 8 §§5–6, printed pp. 61–62 (PDF pp. 69–70), for the homotopy-fiber model, arbitrary-based-source and finite-degree exactness, especially printed p. 62. Chapter 9 §§1, 4, printed pp. 65–67, for based homotopy groups and the classical finite-degree covering isomorphism.",
+   "url": "https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf"
+  }
+ ],
+ "depends": [
+  {
+   "name": "group-theory",
+   "rev": "da81dc691eabf38306f427465ea8a4af350f0aef"
+  }
+ ],
+ "related": [
+  {
+   "name": "group-theory",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "restricted-product-duality",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "vector-bundles",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "sphere-topology",
+   "relationship": "builds-on"
+  }
+ ],
+ "highlights": [
+  {
+   "title": "Based van Kampen for intersection-closed open covers",
+   "statement": "For an arbitrarily indexed, binary-intersection-closed open cover of X by path-connected neighborhoods of a common point x, homomorphisms from the local fundamental groups to any group, compatible along every inclusion, determine a unique homomorphism from π₁(X,x), and the inclusion cocone is a colimit in GrpCat at the space universe, with independent space, index and target-group universes.",
+   "declarations": [
+    {
+     "name": "FundamentalGroup.existsUnique_hom_of_isOpenCover_of_infClosed",
+     "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean",
+     "found": {
+      "line": 941,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "FundamentalGroup.isColimitOfIsOpenCover",
+     "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean",
+     "found": {
+      "line": 1183,
+      "kind": "def",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "The fundamental group of the circle is ℤ",
+   "statement": "The complex unit circle has π₁(Circle,1) ≃* Multiplicative ℤ with its counterclockwise generator sent to +1, while for every nonzero real period T the equivalence π₁(AddCircle T,0) ≃* Multiplicative ℤ sends the projected real segment from 0 to Tn to n for every integer n.",
+   "declarations": [
+    {
+     "name": "Circle.fundamentalGroupEquivInt",
+     "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean",
+     "found": {
+      "line": 264,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Circle.fundamentalGroupEquivInt_loop",
+     "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean",
+     "found": {
+      "line": 278,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "AddCircle.fundamentalGroupEquivInt",
+     "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean",
+     "found": {
+      "line": 132,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "AddCircle.fundamentalGroupEquivInt_loop",
+     "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean",
+     "found": {
+      "line": 165,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Covering fibers, cosets, properness and homotopy groups",
+   "statement": "For a covering p : E → B between arbitrary topological spaces in independent universes, properness is equivalent to finite point fibers and, when E is path connected with chosen e₀, monodromy identifies the fiber over p(e₀) with the left cosets of im(π₁(E,e₀) → π₁(B,p(e₀))) and properness is equivalent to finite index of that image subgroup, while for every e : E postcomposition on based homotopy classes of N-cubes relative to their coordinate-face boundary is injective for nonempty N and bijective for N with at least two elements in an independent cube universe, with a multiplicative equivalence HomotopyGroup N E e ≃* HomotopyGroup N B (p e) in the latter case when N has decidable equality.",
+   "declarations": [
+    {
+     "name": "IsCoveringMap.isProperMap_iff_finite_fibers",
+     "file": "FundamentalGroupoids/Topology/Covering/Proper.lean",
+     "found": {
+      "line": 64,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "IsCoveringMap.monodromyQuotientEquiv",
+     "file": "FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+     "found": {
+      "line": 205,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "IsCoveringMap.isProperMap_iff_finiteIndex",
+     "file": "FundamentalGroupoids/Topology/Covering/FiniteIndex.lean",
+     "found": {
+      "line": 47,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "IsCoveringMap.injective_homotopyGroup_mapFun",
+     "file": "FundamentalGroupoids/Topology/Covering/HomotopyGroup.lean",
+     "found": {
+      "line": 52,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "IsCoveringMap.bijective_homotopyGroup_mapFun",
+     "file": "FundamentalGroupoids/Topology/Covering/HomotopyGroup.lean",
+     "found": {
+      "line": 73,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "IsCoveringMap.homotopyGroupMulEquiv",
+     "file": "FundamentalGroupoids/Topology/Covering/HomotopyGroup.lean",
+     "found": {
+      "line": 96,
+      "kind": "def",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Fundamental groups of based disk attachments",
+   "statement": "For arbitrary based disk attachments, the fundamental group is the quotient by the normal closure of the positive attaching loop classes, compatibly with inclusion and with homomorphisms into every group.",
+   "declarations": [
+    {
+     "name": "FundamentalGroup.surjective_map_diskAttachmentInclusion",
+     "file": "FundamentalGroupoids/FundamentalGroup/DiskAttachment/Quotient.lean",
+     "found": {
+      "line": 107,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "FundamentalGroup.ker_map_diskAttachmentInclusion",
+     "file": "FundamentalGroupoids/FundamentalGroup/DiskAttachment/Quotient.lean",
+     "found": {
+      "line": 115,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "FundamentalGroup.diskAttachmentFundamentalGroupQuotientEquiv",
+     "file": "FundamentalGroupoids/FundamentalGroup/DiskAttachment/Quotient.lean",
+     "found": {
+      "line": 127,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "FundamentalGroup.diskAttachmentFundamentalGroupHomEquiv",
+     "file": "FundamentalGroupoids/FundamentalGroup/DiskAttachment/Homomorphisms.lean",
+     "found": {
+      "line": 178,
+      "kind": "def",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Based-source and positive-degree homotopy-fiber exactness",
+   "statement": "For every original based source (Z,z0), topological E,B in independent Z,E,B universes, f : C(E,B), e0 : E, b : B and h : f e0 = b, let F be the ordinary homotopy fiber, p its projection, J the forward-loop inclusion and Ωf the loop map; on whole based hom-sets [Z,-] relative to {z0}, transported by ordinary ULift, range p_* = f_*⁻¹{c_B}, range J_* = p_*⁻¹{c_E} and range (Ωf)_* = J_*⁻¹{c_F} for constant classes c_X without geometric hypotheses, while the pointed complex S = homotopyFiberSequence f b e0 h, functorial under strict based squares with lifted cubical quotients of B,E,F in degrees 3n,3n+1,3n+2, satisfies range (S.d (n+2) (n+1)).toFun = (S.d (n+1) n).toFun ⁻¹' {(S.X n).point} for every natural n, without asserting terminal π₀B surjectivity, and every nonempty cube index with decidable equality has a natural connecting group homomorphism whose kernel is the range of based postcomposition by f.",
+   "declarations": [
+    {
+     "name": "BasedTopCat.range_homotopyFiberProjection",
+     "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean",
+     "found": {
+      "line": 99,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "BasedTopCat.range_homotopyFiberLoopInclusion",
+     "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean",
+     "found": {
+      "line": 143,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "BasedTopCat.range_homotopyFiberLoopMap",
+     "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean",
+     "found": {
+      "line": 190,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "HomotopyGroup.homotopyFiberSequence",
+     "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence.lean",
+     "found": {
+      "line": 792,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "HomotopyGroup.homotopyFiberSequenceMap",
+     "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence.lean",
+     "found": {
+      "line": 805,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "HomotopyGroup.homotopyFiberSequence_exact",
+     "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence/Exact.lean",
+     "found": {
+      "line": 39,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "ContinuousMap.HomotopyFiber.loopInclusion",
+     "file": "FundamentalGroupoids/Topology/Homotopy/Fiber/Loop.lean",
+     "found": {
+      "line": 62,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "HomotopyGroup.homotopyFiberConnectingHom",
+     "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber.lean",
+     "found": {
+      "line": 392,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "HomotopyGroup.range_map_eq_ker_homotopyFiberConnectingHom",
+     "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber.lean",
+     "found": {
+      "line": 488,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "HomotopyGroup.homotopyFiberConnectingHom_naturality",
+     "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Naturality.lean",
+     "found": {
+      "line": 170,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "HomotopyGroup.homotopyFiberConnectingHom_fin_class",
+     "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence.lean",
+     "found": {
+      "line": 195,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  }
+ ],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Evaluation and target refinement of compact-open mapping spaces",
+   "text": "For\n`UCompactlyGeneratedSpace.{u} A` and arbitrary `Y`, the spaces\n`κ_u C(A, κ_u Y)` and `κ_u C(A, Y)` are canonically homeomorphic, with independent\nprobe and carrier universes. The forward map is refined counit postcomposition,\nthe inverse retains each function, and both maps are natural in the target;\nno local compactness of `A` or separation or generatedness of `Y` is assumed.\nFor arbitrary `A` and `Y`, point evaluation `κ_u (C(A, Y) × A) → Y` is continuous,\nwith ordinary compact-open and product topologies inside the refinement.\nSee [evaluation and the mapping-space comparison](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/CompactOpen/CompactlyGenerated.lean).",
+   "link": {
+    "text": "evaluation and the mapping-space comparison",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/CompactOpen/CompactlyGenerated.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Compactly generated compact-open currying",
+   "text": "([`Homeomorph.compactlyGeneratedCurry`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/CompactOpen/CompactlyGeneratedCurryHomeomorph.lean)).\nFor original `UCompactlyGeneratedSpace.{u}` spaces `P` and `A` and any\ntopological space `Y`, currying is a homeomorphism\n`κ_u C_co(κ_u (P × A), Y) ≃ₜ κ_u C_co(P, κ_u C_co(A, Y))`.\nHere `C_co` has the ordinary compact-open topology and `κ_u` denotes refinement\nby compact Hausdorff probes in universe `u`. The product uses the original\nfactor topologies, and the right-hand compact-open space uses the refined\ninner mapping space as target. The probe and all three carrier universes are\nindependent, with no local compactness or separation hypotheses. Its whole\nunderlying equivalence is\n[`ContinuousMap.compactlyGeneratedCurryEquiv`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/CompactOpen/CompactlyGeneratedCurry.lean).",
+   "link": {
+    "text": "Homeomorph.compactlyGeneratedCurry",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/CompactOpen/CompactlyGeneratedCurryHomeomorph.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Homeomorph.compactlyGeneratedCurry",
+    "file": "FundamentalGroupoids/Topology/CompactOpen/CompactlyGeneratedCurryHomeomorph.lean",
+    "found": {
+     "line": 70,
+     "kind": "def",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "The ordinary based loop functor and based homotopy",
+   "text": "The compact-open loop\nspace `Path x x`, based at its constant loop, is functorial for strict based maps.\nA homotopy relative to the selected point induces a jointly continuous homotopy\nof loop maps fixing the whole constant loop, with no local compactness or\nseparation assumptions on the original spaces. The loop functor descends uniquely\nto the category of based-homotopy classes, with a strict commuting triangle.\nBased homotopy inverses give an isomorphism there whose two arrows are the classes\nof the corresponding loop maps. See\n[`Based.Loop`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Loop.lean).",
+   "link": {
+    "text": "Based.Loop",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Loop.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Based.Loop",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/Loop.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Generated-by subspaces",
+   "text": "For any family of generating spaces and any subset\nof an arbitrary space, the generated-by refinement of the original subspace is\ncanonically homeomorphic to the generated-by refinement of the counit-preimage\ninside the refined ambient space. The comparison is natural for continuous\nambient maps preserving the subsets. For a closed subset, the outer refinement\ncan be omitted when closed subspaces of the generating spaces are generated by\nthe same family. The compact Hausdorff family recovers the existing\nfixed-universe compactly generated topology, with independent probe and carrier\nuniverses. See [the subspace comparison](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Convenient/GeneratedBy/Subtype.lean)\nand [the compact Hausdorff bridges](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Convenient/CompactlyGenerated.lean).",
+   "link": {
+    "text": "the compact Hausdorff bridges",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Convenient/CompactlyGenerated.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Components of a covering homotopy fiber",
+   "text": "For a covering map `f : C(E, B)`\nand `b : B`, `ContinuousMap.HomotopyFiber.zerothHomotopyHomeomorphFiber` identifies\n`ZerothHomotopy (HomotopyFiber f b)`, with its quotient topology, homeomorphically\nwith the strict subtype fiber `{e : E // f e = b}`. The comparison evaluates\npoint classes using the fiber retraction, and its inverse takes the class of the\nconstant-path inclusion. It is natural in continuous commuting squares between\ncoverings, including empty fibers, with independent universes and no covering\nassumptions on the horizontal maps. See [path components of covering fibers](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Covering/ZerothHomotopy.lean).",
+   "link": {
+    "text": "path components of covering fibers",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Covering/ZerothHomotopy.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Homotopy invariance of ordinary homotopy fibers",
+   "text": "For topological spaces `E` and\n`B`, continuous maps `f g : C(E, B)`, a specified homotopy\n`H : ContinuousMap.Homotopy f g`, and any `b : B`,\n`ContinuousMap.HomotopyFiber.homotopyEquiv H b` constructs an unbased\nhomotopy equivalence `HomotopyFiber f b ≃ₕ HomotopyFiber g b`. The forward map\nretains the `E`-point and appends the path traced by `H` after the whole supplied\npath; the inverse appends its reverse. The named inverse homotopies retain the\n`E`-point at every time. No separation or local-compactness assumptions on `E` or\n`B` are required. See [homotopy invariance](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Homotopy.lean).",
+   "link": {
+    "text": "homotopy invariance",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Homotopy.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Strict fibers of covering maps",
+   "text": "([`Fiber.Covering`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Covering.lean)).\nFor `f : C(E, B)` with `cov : IsCoveringMap f` and any `b : B`,\n`HomotopyFiber.fiberHomotopyEquiv cov` is the canonical homotopy equivalence\nfrom `{e : E // f e = b}` to `HomotopyFiber f b`. Its forward map uses the\nconstant path, its inverse lifts the reversed retained path, and the homotopy\nfixes every included strict-fiber point throughout. The source and target\nuniverses are independent; no separation, local compactness or surjectivity\nassumption is required.\nThe [naturality module](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Covering/Naturality.lean)\nintertwines the original inclusion, whole reverse-path lift, retraction and\nwhole fixing deformation under continuous commuting squares, preserving the\nstrict subtype fibers and the complete retained paths. Inclusion and reversed-path\nfamily naturality need no covering hypotheses; lift, retraction and deformation\nnaturality require only that the two vertical maps are coverings, not the horizontal\nmaps. The four space universes are independent, with no connectedness, local\ncompactness, separation or nonempty-fiber assumptions. The independent\n[homotopy-lift naturality module](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Lifting/Naturality.lean)\ngives postcomposition naturality of Mathlib's canonical lift for any topological\nparameter space, in a fifth independent universe, under the same covering floor.",
+   "link": {
+    "text": "Fiber.Covering",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Covering.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Fiber.Covering",
+    "file": "FundamentalGroupoids/Topology/Homotopy/Fiber/Covering.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Point-wide-pushout coproducts up to based homotopy",
+   "text": "([`Based.Coproducts`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Coproducts.lean)).\nA family `D : J → BasedTopCat.{max u w}`, indexed by `J : Type w`, has a\npoint-wide-pushout cofan with explicit descent and uniqueness, both in based\nspaces and after quotienting based maps by homotopies fixing the point at\nevery time. Two based maps from this wedge represent the same class exactly\nwhen all factor restrictions do. The colimit data retain the mapped composite\ndiagram; the binary specialization uses its explicit comparison isomorphism.\nEmpty families give initial objects. No separation, local compactness of the\nspaces, finiteness of the index, or condition on the basepoints is required.",
+   "link": {
+    "text": "Based.Coproducts",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Coproducts.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Based.Coproducts",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/Coproducts.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Strict ordered finite-wedge comparisons",
+   "text": "([`Based.FiniteWedge`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/FiniteWedge.lean)).\nFor `D : Fin 2 → BasedTopCat.{u}`, the finite wedge is isomorphic in based\nspaces to the binary wedge, sending `0` to the left and `1` to the right.\nFor `D : Fin 3 → BasedTopCat.{u}`, both nested binary wedges flatten\nisomorphically to the three-factor wedge, preserving leaf order `0`, `1`, `2`.\nForward and inverse leg equations and common-point preservation characterize\nthe comparisons. The factors may differ in an arbitrary common universe,\nwithout separation, connectedness, local compactness or basepoint conditions.\nThe existing `homotopyQuotient.mapIso` gives their based-homotopy images.",
+   "link": {
+    "text": "Based.FiniteWedge",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/FiniteWedge.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Based.FiniteWedge",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/FiniteWedge.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Chosen finite products in the opposite based-homotopy category",
+   "text": "([`Based.Cartesian`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Cartesian.lean)).\nThe ordinary opposite of `BasedTopCat.HomotopyCategory` has explicit terminal\nand binary limit cones, given by the opposite empty and ordered two-factor\nbased wedges. The named cartesian monoidal structure uses these choices;\nits unit, tensor, two projections and map to the unit have characteristic\nequations. The projections preserve the left/right order of the wedge\ninclusions. For `D : Fin 3 → BasedTopCat.{u}`, the unop of the associator\nfollowed by the quotient image of left-nested flattening equals the quotient\nimage of right-nested flattening, preserving the ordered leaves `0`, `1`, `2`.\nNo global cartesian or monoidal instance is installed.",
+   "link": {
+    "text": "Based.Cartesian",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Cartesian.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Based.Cartesian",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/Cartesian.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Point-family maps and universe lifting",
+   "text": "([`WidePushout.PointMap`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Limits/WidePushout/PointMap.lean),\n[`WidePushout.ULift`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Limits/WidePushout/ULift.lean),\n[`Based.ULift`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/ULift.lean)).\nPoint-preserving maps between independently sized families on the same index\ntype descend through their point-wide-pushouts, preserving identities and\ncomposition. For `J : Type w` and `X : J → TopCat.{max u w}` with chosen points,\nthe universe lift of its point-wide-pushout is homeomorphic to the\npoint-wide-pushout of its lifted factors, with head, factor and inverse\nevaluation laws. Based at the\nlifted head, this gives an isomorphism with the based wedge of the lifted\npointed factors. Empty families retain the head. No separation or local\ncompactness is needed; the point-family and homeomorphism modules are\nindependent of based-homotopy constructions.",
+   "link": {
+    "text": "WidePushout.PointMap",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Limits/WidePushout/PointMap.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "WidePushout.PointMap",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Limits/WidePushout/PointMap.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Wide-pushout continuity and homotopy descent",
+   "text": "([`Limits.Products`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Limits/Products.lean),\n[`Limits.WidePushout`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Limits/WidePushout.lean),\n[`Homotopy.WidePushout`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/WidePushout.lean)).\nA supplied topological colimit has its characteristic continuity criterion after\nproduct with `P` for maps to `Y` under `LocallyCompactPair P Y`, with independent\nindexing-object, indexing-morphism, diagram, parameter and target universes.\nWide pushouts of arbitrary continuous attaching maps have a quotient comparison\nand continuous descent to independently universed targets, with head, factor and\nuniqueness equations. Compatible jointly continuous families and `HomotopyLike`\ndata descend with their prescribed restrictions at every time. For a point head,\nchosen-point-relative factor homotopies and explicit equality of endpoint maps\nat the head give a unique head-relative homotopy. Empty index families are\nincluded; no separation or local compactness of the factors or target is required.",
+   "link": {
+    "text": "Limits.Products",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Limits/Products.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Limits.Products",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Limits/Products.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Unpointed disk attachments",
+   "text": "([`DiskAttachment`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment.lean)).\nArbitrary families of circle maps attach closed complex unit disks, with no\nconnectedness or separation assumptions. The continuous-map universal property\nallows independent universes. Continuity on an open or closed subset is tested\non its preimages in the original space and each disk, without continuity elsewhere.\nCompatible functions have a unique descent to any target type, without a\ncontinuity requirement; continuous descent has the same underlying function.\nEmpty attachments recover the original space; attaching along the identity of the\nboundary recovers the disk. The original inclusion is a closed embedding, and the\nopen-disk characteristic maps are open embeddings with mutually disjoint images\navoiding the original space. Every attaching\nboundary circle induces a trivial fundamental-group homomorphism at every basepoint.",
+   "link": {
+    "text": "DiskAttachment",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "DiskAttachment",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Punctured disk attachments",
+   "text": "([`Punctured`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment/Punctured.lean),\n[`PuncturedRetraction`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment/PuncturedRetraction.lean)).\nFor any topological space and arbitrary unbased attaching maps, the disk centres\nform a closed set. Their complement strongly deformation retracts onto the\noriginal-space image, fixing that image throughout. On each punctured disk,\nthe retraction follows its unit direction and the deformation is radial.\nSpace and disk-index universes are independent; no connectivity, separation\nor finiteness assumptions are needed.\nThe [punctured part of an attachment path component](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment/PuncturedComponent.lean)\nretracts to the corresponding original-space component through a relative\ndeformation. Its [fundamental group](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup/DiskAttachment/PuncturedComponent/Basic.lean)\nis isomorphic to that of the original space, with forward map induced by\nretraction followed by component inclusion. The inverse lifts to the\noriginal-space component and then includes it into the punctured component.\nNeither component is assumed open.\nFor a selected attaching map taking `1` to the chosen point, its\n[thickened chart](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment/PuncturedChart.lean)\nis path connected, with a contractible open-disk piece and punctured-open-disk\noverlap with the core. The positive radial-whiskered half-radius loop maps to\nthe positive attaching loop class under the retraction isomorphism\n([generator comparison](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup/DiskAttachment/PuncturedComponent.lean)).\n[Restriction to the core](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup/DiskAttachment/PuncturedChart.lean)\nidentifies homomorphisms from the chart fundamental group with core\nhomomorphisms killing that selected generator, for an arbitrary target group\nin an independent universe. Both directions restrict along the same inclusion\nat the component basepoint.\nWhen every attaching map takes `1` to the chosen point, the core and charts\ngive an [`Option`-indexed open cover](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment/OpenCover.lean)\nof the attachment component, with common core intersection, path-connected\nmembers and pairwise intersections. This includes the empty disk family.\n[Homomorphisms from the attachment fundamental group](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup/DiskAttachment/Homomorphisms.lean)\ncorrespond to homomorphisms from the original fundamental group killing all\npositive attaching loop classes, for any target group in an independent universe.\nThe forward map restricts along the original-space inclusion, and the inverse\nrestricts back to the supplied homomorphism along that same inclusion.\nThe [inclusion-induced homomorphism](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup/DiskAttachment/Quotient.lean)\nis surjective, with kernel the normal closure of the positive attaching loop\nclasses. Its induced quotient isomorphism commutes with the inclusion-induced\nhomomorphism and the quotient projection in both directions.",
+   "link": {
+    "text": "Punctured",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment/Punctured.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Punctured",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/DiskAttachment/Punctured.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Endomorphism transport",
+   "text": "([`Conjugation`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Endomorphism/Conjugation.lean)).\nIn any category, transports along `α β : X ≅ Y` agree iff\n`α.hom ≫ β.inv` is central in `End X`. Commutativity makes transport independent;\nin a groupoid the converse holds for a fixed explicitly isomorphic target.\nLoop transport agrees with Mathlib's `MulAut.conj`.",
+   "link": {
+    "text": "Conjugation",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Endomorphism/Conjugation.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Conjugation",
+    "file": "FundamentalGroupoids/CategoryTheory/Endomorphism/Conjugation.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Chosen vertex group",
+   "text": "([`SingleObj`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/SingleObj.lean)).\nFor a chosen object `x` in a preconnected groupoid,\n`SingleObj.functor (MonoidHom.id (End x))` is an equivalence; it is full and\nfaithful in every category, without preconnectedness.",
+   "link": {
+    "text": "SingleObj",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/SingleObj.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "SingleObj",
+    "file": "FundamentalGroupoids/CategoryTheory/SingleObj.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Categorical monodromy and preconnectedness",
+   "text": "([`Covering`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Groupoid/Covering.lean)).\nA quiver-covering functor `E ⥤ B` between categories gives a canonical left\n`Aut b`-action on its fiber. It is pretransitive if `E` is a preconnected\ngroupoid. Conversely, for preconnected groupoid base `B`, pretransitivity on\none specified fiber implies preconnectedness of the total category `E`.\nAll four universes are independent; no nonempty fiber or surjectivity is needed.",
+   "link": {
+    "text": "Covering",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Groupoid/Covering.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Covering",
+    "file": "FundamentalGroupoids/CategoryTheory/Groupoid/Covering.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Categories of elements",
+   "text": "([`Elements`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Groupoid/Elements.lean)).\nFor a type-valued functor on any category, strict object fibers recover its\nvalues. Given a covering proof, lift targets and monodromy agree with the\nfunctor action; for a groupoid base the projection is a quiver covering.\nThe three universes are independent, with no nonemptiness or connectedness.",
+   "link": {
+    "text": "Elements",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Groupoid/Elements.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Elements",
+    "file": "FundamentalGroupoids/CategoryTheory/Groupoid/Elements.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Components as type colimits",
+   "text": "([`ConnectedComponents`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Elements/ConnectedComponents.lean)).\nFor any `X : C ⥤ Type w`, `ConnectedComponents X.Elements ≃ X.ColimitType`,\nnaturally and on representatives, with independent object, morphism and value\nuniverses and no smallness, nonemptiness or connectivity assumptions. An individual\n`HasColimit X` instance gives the comparison with `Limits.colimit X` instead.",
+   "link": {
+    "text": "ConnectedComponents",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/CategoryTheory/Elements/ConnectedComponents.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ConnectedComponents",
+    "file": "FundamentalGroupoids/CategoryTheory/Elements/ConnectedComponents.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Path connectedness",
+   "text": "([`Connected`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Connected.lean)).\nA space is path connected iff its fundamental groupoid is connected, including\nnonemptiness on both sides; no local path connectedness or separation is needed.",
+   "link": {
+    "text": "Connected",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Connected.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Connected",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Connected.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Pointlike path components",
+   "text": "([`FundamentalGroupoid.Discrete`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Discrete.lean),\n[`Connected.ZerothHomotopy`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Connected/ZerothHomotopy.lean)).\nIf every path component is a subsingleton, the fundamental groupoid is canonically\nequivalent to the discrete category on the same points, and evaluation identifies\n`ZerothHomotopy X` homeomorphically with `X` in its original topology. The inverse\nmaps are the point inclusion and continuous class map. Both comparisons commute\nwith continuous maps and specialize to totally disconnected spaces, including\ndiscrete spaces. No basepoint or nonemptiness assumption is required; categorical\ndiscreteness does not assert that the topology on `X` is discrete.",
+   "link": {
+    "text": "FundamentalGroupoid.Discrete",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Discrete.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FundamentalGroupoid.Discrete",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Discrete.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Maps on path components",
+   "text": "([`PathConnected`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Connected/PathConnected.lean)).\nEvery continuous map induces `ZerothHomotopy.map`, preserving representatives,\nidentity and composition; homotopic maps induce equal functions. Space universes\nare independent, with no separation or connectedness assumptions.",
+   "link": {
+    "text": "PathConnected",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Connected/PathConnected.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PathConnected",
+    "file": "FundamentalGroupoids/Topology/Connected/PathConnected.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Cube boundaries",
+   "text": "([`Cube`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Cube.lean)).\nFor any index type `N` with at least two elements, the coordinate-face boundary of\n`N → I` is path connected, even for infinite `N`. The zero vertex lies in the\nboundary whenever `N` is nonempty. For finite `N`, the boundary is closed,\nincluding the empty-index cube.",
+   "link": {
+    "text": "Cube",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Cube.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Cube",
+    "file": "FundamentalGroupoids/Topology/Homotopy/Cube.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Real coordinates on cube-boundary complements",
+   "text": "([`Cube.Coordinates`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Cube/Coordinates.lean)).\nFor every index type `N` in any universe, `Cube.boundaryComplHomeomorphPi N`\nidentifies the boundary complement, with its subtype topology, with the product\n`N → ℝ`. Each coordinate is increasing, using `t ↦ 2 * t - 1` followed by the\ninverse of Mathlib's `orderIsoIooNegOneOne ℝ`; forward and inverse evaluation\nlaws are public. A theorem supplies local compactness for finite `N`.\nEmpty and infinite indices are allowed; for infinite cubes this is not an\nambient-interior description.",
+   "link": {
+    "text": "Cube.Coordinates",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Cube/Coordinates.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Cube.Coordinates",
+    "file": "FundamentalGroupoids/Topology/Homotopy/Cube/Coordinates.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Open-subspace collapse",
+   "text": "([`OnePoint.Collapse`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactification/OnePoint/Collapse.lean)).\nFor a Hausdorff space `K` and any open subspace `s`, `OnePoint.collapse s`\ncontinuously retains the points of `s` and sends its complement to infinity\nin `OnePoint s`, without local compactness of `K`. The extension\n`OnePoint.collapseWithPoint s` from `K ⊕ PUnit` is surjective even when `s` is\nthe whole space; for compact `K` it is a quotient map, giving continuous descent\nthrough Mathlib's quotient-map API to arbitrary topological targets. Neither\nnonemptiness nor properness of `s` is required.",
+   "link": {
+    "text": "OnePoint.Collapse",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactification/OnePoint/Collapse.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OnePoint.Collapse",
+    "file": "FundamentalGroupoids/Topology/Compactification/OnePoint/Collapse.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Based compact-open collapse comparison",
+   "text": "([`OnePoint.ContinuousMap`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactification/OnePoint/ContinuousMap.lean)).\nFor a compact Hausdorff space `K`, any open `s` and any topological space `X`\nwith a chosen `x : X`, `OnePoint.collapsePullbackHomeomorph s x` identifies\n`{F : C(OnePoint s, X) // F ∞ = x}` homeomorphically with continuous maps\n`K → X` equal to `x` outside `s`. The forward map precomposes with\n`OnePoint.collapse s`; the inverse is `OnePoint.rec x` applied to restriction\nto `s`. Both spaces carry the ordinary compact-open/subtype topology.\nAmbient and target universes are independent; `s` may be empty or all of `K`,\nand `X` needs neither separation nor local compactness. The construction uses\nGroupTheory's compact-covering precomposition embedding API.",
+   "link": {
+    "text": "OnePoint.ContinuousMap",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactification/OnePoint/ContinuousMap.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OnePoint.ContinuousMap",
+    "file": "FundamentalGroupoids/Topology/Compactification/OnePoint/ContinuousMap.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Ordinary compact-open paths and homotopy fibers",
+   "text": "([`RelativePathSpace`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/RelativePathSpace.lean),\n[`Fiber`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber.lean),\n[`Fiber.Const`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Const.lean),\n[`Fiber.Contractible`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Contractible.lean),\n[`Fiber.Homeomorph`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Homeomorph.lean),\n[`Fiber.PathComponent`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/PathComponent.lean),\n[`Fiber.Prod`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Prod.lean),\n[`RelativePathSpace.Contractible`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/RelativePathSpace/Contractible.lean)).\n`ContinuousMap.RelativePathSpace b A` consists of paths from an arbitrary `b`\nto any point of `A`; the paths need not stay in `A`, and `b` need not lie in `A`.\n`ContinuousMap.HomotopyFiber f b` retains both a source point `e` and a path\nfrom `b` to `f e`, with the ordinary product/subtype compact-open topology.\nIt is homeomorphic to the pullback of `f` along terminal evaluation. For an\nembedding, forgetting `e` identifies it with paths ending in `Set.range f`;\nfor the original subspace inclusion, the endpoint lies in `A` itself.\nMaps act on both point and path, with identity, composition, constant and\nnaturality laws. A commuting square of source and target homeomorphisms\ninduces `HomotopyFiber.homeomorph eX eY w hy` at specified points satisfying\n`hy : eY y = y'`. Its inverse uses the inverse coordinate homeomorphisms;\nits forward map sends the retained point through `eX` and postcomposes the\nwhole path by `eY`, with identity, composition and projection laws.\nAll four space universes are independent, without embedding, separation or\nnonemptiness assumptions.\n`HomotopyFiber.prodHomeomorph f g y z` splits the fiber of a product map\nover `(y, z)` into the product of the two fibers, retaining both source points\nand entire paths. Its inverse pairs paths at the same original time. The\ncomparison commutes with both projections and is natural for two arbitrary\ncontinuous squares, with eight independent universes and no separation or\nambient local-compactness assumptions.\n`HomotopyFiber.compFstHomeomorph (Z := Z) f b` identifies the fiber of\n`f.comp (ContinuousMap.fst : C(X × Z, X))` over `b` with\n`HomotopyFiber f b × Z`. It preserves both source coordinates and the full\noriginal path, with forward and inverse same-time evaluation and constructor\nlaws. Whole continuous-map diagrams describe the first-fiber, free-coordinate,\npoint and path projections. Naturality permits any continuous commuting square\nand any continuous map of the free factor, with six independent universes;\nthe comparison itself uses three independent universes and arbitrary topologies.\nEmpty spaces are allowed. For `f = id`, the full identity-fiber factor remains;\nthis is not a homeomorphism from the projection's fiber to `Z` alone.\nA constant fiber point needs a specified `e` with `f e = b`;\nbeing outside the image does not force the homotopy fiber to be empty.\nFor arbitrary `f`, nonemptiness is equivalent to `∃ e, Joined b (f e)`, or\nto membership of `ZerothHomotopy.mk b` in the range of `ZerothHomotopy.map f`.\nThe induced path-component map is therefore surjective exactly when every\nhomotopy fiber is nonempty. Source and target universes are independent,\nwithout connectivity assumptions. The retained-point projection has path-component\nimage equal to the preimage of `{ZerothHomotopy.mk b}` under\n`ZerothHomotopy.map f`; no injectivity of the component projection is asserted.\nFor a constant map with value `c`, `HomotopyFiber.constHomeomorph E b c`\nidentifies its fiber with `E × Path b c`, retaining the point and every path\nvalue, naturally in continuous source maps. The fiber is nonempty exactly when\nboth factors are nonempty; an empty source and the full loop factor for `b = c`\nare included, with independent source and target universes.\nFor every topological space `X` and chosen `b : X`,\n`RelativePathSpace.contraction b` sends `γ` to `t ↦ γ ((1 - s) * t)` at time\n`s`, fixes the constant path throughout, and gives a `ContractibleSpace`\ninstance on `RelativePathSpace b Set.univ`. Its endpoint is free to move.\n`HomotopyFiber.idContraction b` transports this to the identity map's homotopy\nfiber, giving a `ContractibleSpace` instance and fixing its constant-path point.\nAt time `s`, the retained source point is `γ (1 - s)` and the whole path is\n`t ↦ γ ((1 - s) * t)`, with its original direction and starting point.\nNo target separation or local compactness is required. These are ordinary,\nnon-kified spaces, not an identification with May's category `U`; this contracts\nneither loop spaces nor `X`.",
+   "link": {
+    "text": "RelativePathSpace",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/RelativePathSpace.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "RelativePathSpace",
+    "file": "FundamentalGroupoids/Topology/Homotopy/RelativePathSpace.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Homotopy-fiber exactness",
+   "text": "([`Based.HomotopyFiber.Exact`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean),\n[`Fiber.Exact`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Exact.lean)).\nFor `f : C(E, B)`, `e₀ : E`, `b : B` and `h : f e₀ = b`, base\n`HF = ContinuousMap.HomotopyFiber f b` at its constant-path point, and let\n`p` retain the source point.\n\nFor any original based source `(Z, z₀)`, write\n`[Z, X]_*` for the whole hom-set in `BasedTopCat.HomotopyCategory`:\n`Under(TopCat.of PUnit)` modulo homotopy relative to `{z₀}`, not the under\ncategory of an unbased homotopy category. Put `ΩE = Path e₀ e₀` and\n`ΩB = Path b b`, based at their constant loops; let `J : ΩB → HF` retain\n`e₀` and the whole forward loop, and let `Ωf : ΩE → ΩB` apply `f` pointwise.\nWith `k_*` denoting based postcomposition and `c_X` the constant class in\n`[Z, X]_*`, the three identities are\n```text\nrange p_*    = f_* ⁻¹' {c_B}     in [Z, E]_*,\nrange J_*    = p_* ⁻¹' {c_E}     in [Z, HF]_*,\nrange (Ωf)_* = J_* ⁻¹' {c_HF}    in [Z, ΩB]_*.\n```\n\nThey are\n[`BasedTopCat.range_homotopyFiberProjection`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean#L99),\n[`BasedTopCat.range_homotopyFiberLoopInclusion`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean#L143), and\n[`BasedTopCat.range_homotopyFiberLoopMap`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean#L190).\n\nThe original carriers `Z`, `E`, `B` have independent universes. Ordinary\n`ULift` puts the original source, fiber and loop-space models in the common\nuniverse `max uZ uE uB`, with their ordinary product/subtype/compact-open\ntopologies transported unchanged. In [`Based.Universe`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Universe.lean),\n`BasedTopCat.exists_homotopyQuotient_map_ofHomULift_eq` supplies original-space\nrepresentatives for every lifted quotient morphism, and\n`BasedTopCat.homotopyQuotient_map_ofHomULift_eq_iff` characterizes equality by\nhomotopy relative to `{z₀}`. No commutation of lifting with fibers or loops\nis used.\n\nNo local compactness, separation, closed-basepoint or fibration hypotheses\nare imposed. The displayed `Ωf` is unsigned, distinct from May's signed arrow.\nThese are pointed-set identities, not identifications with components of\narbitrary mapping spaces or a signed, kified or group-valued long exact sequence.\n\nFor every cube index `N`,\n`HomotopyGroup.range_mapFun_homotopyFiber_point` gives\n`range (π_N p) = (π_N f) ⁻¹' {constant class}`, where `π_N` denotes\n`HomotopyGroup.mapFun` with these point equations. No index instances are\nneeded. With `[DecidableEq N] [Nonempty N]`,\n`HomotopyGroup.range_map_homotopyFiber_point` gives the range–kernel form\nfor the existing groups and homomorphisms. These instances supply operation\ndata, not geometric assumptions. Index and space universes are independent,\nand all topologies are arbitrary.\n\nFor the adjacent cubical position, `J : C(Path b b, HF)` is the continuous\ncomposite through `HomotopyFiber.constHomeomorph Unit b b` and\n`HomotopyFiber.map`, retaining `e₀` and the whole forward loop `γ`.\nIt sends `Path.refl b` to `HomotopyFiber.const e₀ h`; only the pointwise\nequation `h` is required, not constancy of `f`.\n\n`HomotopyGroup.range_mapFun_homotopyFiber_loop` gives\n`range (π_N J) = (π_N p) ⁻¹' {constant class}` for every `N`, again without\nindex instances. This is exactness at\n`HomotopyGroup N HF (HomotopyFiber.const e₀ h)`.\nWith `[DecidableEq N] [Nonempty N]`,\n`HomotopyGroup.range_map_homotopyFiber_loop` gives the subgroup range–kernel\nform for the same maps. The empty-index consequence\n`ZerothHomotopy.range_map_homotopyFiber_loop` is\n`range (π₀ J) = (π₀ p) ⁻¹' {ZerothHomotopy.mk e₀}` on all path components\nof the ordinary topological loop space `Path b b`, not just the component\nof `Path.refl b`. The unpointed zeroth projection formula also allows\nempty `E`, without choosing `e₀` or `h`.\n\nAt the base-space position, [`HomotopyGroup.Fiber`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber.lean)\nidentifies the image of `π_(N ⊕ Unit) f` with the preimage of the constant\nclass under inverse loop iteration, the singleton-loop homeomorphism and `π_N J`.\nThis holds for every `N`, with the subgroup range–kernel form for\n`[DecidableEq N] [Nonempty N]`; the sum order is `N` followed by `Unit`,\nand the whole forward path is retained without reversal.\n\nFor continuous `g : C(E', B)` and `u : C(E', E)` with `f (u x) = g x`,\nthe induced fiber map `K` over `id B` satisfies\n`range (π₀ K) = (π₀ p) ⁻¹' range (π₀ u)`; `E'` may be empty.\n\nThe loop-class map `δ : π₁B → π₀HF` retains the whole forward loop at `e₀`,\nwith image `(π₀ p) ⁻¹' {ZerothHomotopy.mk e₀}` and\n`δ ⁻¹' {δ 1} = Set.range (FundamentalGroup.mapOfEq f h)`.\nThese are the positions at `π₀HF` and `π₁B`, distinct from projection\nexactness at `HomotopyGroup N E e₀`. No group structure on `π₀HF` is supplied.\n\nThe arbitrary-source based identities and finite-degree exactness formulas adapt\nMay, Chapter 8 §6, printed pp. 61–62; the all-index statements are ordinary-topology\ncubical extensions, without a sphere-domain comparison or identification with\nhis signed degree-indexed sequence or category `U`. See the\n[exactness guide](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/docs/mathematical-guide.md#path-component-exactness-for-homotopy-fibers).",
+   "link": {
+    "text": "Based.HomotopyFiber.Exact",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Based.HomotopyFiber.Exact",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/HomotopyFiber/Exact.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Pointed homotopy-fiber sequences and positive-degree exactness",
+   "text": "([`HomotopyGroup.Fiber.Sequence`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence.lean),\n[`Sequence.Exact`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence/Exact.lean)).\nFor arbitrary topological spaces `E`, `B`, `f : C(E, B)`, `b : B`, `e₀ : E`\nand `h : f e₀ = b`, let `HF = HomotopyFiber f b`, based at\n`HomotopyFiber.const e₀ h`. The construction\n`S = HomotopyGroup.homotopyFiberSequence f b e₀ h : ChainComplex Pointed ℕ`\nhas terms identified with `ULift`s of `πₙB`, `πₙE`, `πₙHF` in degrees\n`3n`, `3n + 1`, `3n + 2`, where `πₙ` uses `HomotopyGroup (Fin n)`.\nOnly quotient carriers are lifted into a common ambient universe; the spaces\nretain their independent universes. Zero morphisms are constant pointed maps.\nThe differentials are based postcomposition by `f`, fiber projection, and\nthe connecting function from `πₙ₊₁B` to `πₙHF`.\n`GenLoop.homotopyFiberConnecting n f b e₀ h p` retains `e₀` and the whole\nforward path `t ↦ p (Fin.snoc a t)` at each outer coordinate `a`.\nThe term isomorphisms `homotopyFiberSequenceBaseIso`,\n`homotopyFiberSequenceTotalIso`, `homotopyFiberSequenceFiberIso` and the\ndifferential laws `homotopyFiberSequence_d_base_apply`,\n`homotopyFiberSequence_d_total_apply`, `homotopyFiberSequence_d_fiber_class`\nexpose these descriptions without unfolding the complex; the first two\ndifferentials also have `_class` laws on representatives.\n`HomotopyGroup.homotopyFiberSequence_exact` states, for every `n : ℕ`,\n```lean\nSet.range (S.d (n + 2) (n + 1)).toFun =\n  (S.d (n + 1) n).toFun ⁻¹' {(S.X n).point}\n```\nThis is pointed-set exactness at all positive chain degrees. The lemmas\n`homotopyFiberSequence_exact_total`, `homotopyFiberSequence_exact_fiber`,\n`homotopyFiberSequence_exact_base` give the positions `3n + 1`, `3n + 2`,\n`3n + 3`, respectively. The incoming differential need not surject onto the\nterminal term `π₀B`.\nA strict continuous square preserving the specified points induces\n`HomotopyGroup.homotopyFiberSequenceMap`, with four independent space\nuniverses and a common ambient lift universe. Its `_base_apply`,\n`_total_apply`, `_fiber_apply` laws describe the components, and `_id`,\n`_comp` give identity and composition laws. The all-index connecting-map\nnaturality theorem is `HomotopyGroup.mapFun_homotopyFiber_loop_naturality`.\nFor an arbitrary index `I` with decidable equality and `Nonempty I`,\n`HomotopyGroup.homotopyFiberConnectingHom I f b e₀ h` is the connecting\nhomomorphism from `HomotopyGroup (I ⊕ Unit) B b` to\n`HomotopyGroup I HF (HomotopyFiber.const e₀ h)`.\nThe underlying `ContinuousMap.HomotopyFiber.loopInclusion` retains the specified\npoint and whole forward loop; `homotopyFiberConnectingHom_class_point_path`\ndescribes every point and time value of the connecting representative.\n`homotopyFiberConnectingHom_naturality` gives equality of homomorphisms for\nstrict based squares, and `range_map_eq_ker_homotopyFiberConnectingHom`\nidentifies its kernel with the range of based postcomposition by `f`.\nFor `I = Fin n` with `n ≥ 1`, `homotopyFiberConnectingHom_fin_class` identifies\nthis homomorphism with the finite connecting representative after canonical\nlast-coordinate reindexing; no group structure on path components is used.\n`Function.range_eq_preimage_singleton_of_coordinates` transports such\nrange–point-fiber equalities along commuting coordinates, requiring only\nsurjectivity in the first column and injectivity in the other two.\nThe ordinary compact-open model and finite-degree exactness adapt May,\nChapter 8 §§5–6, printed pp. 61–62; strict-square and all-index naturality\nare structural extensions, not statements quoted from May. This is not a\nsigned long exact sequence of groups or a comparison with his category `U`:\n`π₀` remains a pointed set, and `π₁` need not be abelian.",
+   "link": {
+    "text": "HomotopyGroup.Fiber.Sequence",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Fiber.Sequence",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Fiber/Sequence.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite generalized loops as based compact-open maps",
+   "text": "([`GenLoop.OnePoint`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/GenLoop/OnePoint.lean)).\nFor every finite index type `N` (`[Finite N]`) and every topological space `X`\nwith chosen `x`, `GenLoop.onePointHomeomorph N x` identifies `GenLoop N X x`\nwith continuous maps from `OnePoint ((Cube.boundary N)ᶜ)` taking infinity to\n`x`, with the ordinary compact-open/subtype topologies. It keeps the loop's\nvalues on the coordinate-face boundary complement and assigns `x` at infinity;\nits inverse precomposes with the boundary collapse. Underlying-map and\nevaluation laws characterize both directions of this and the open-subspace\ncomparison. Index and target universes are independent; no `Fintype`, decidable\nequality, index nonemptiness, target separation or target local compactness is\nrequired. For empty `N`, the cube is a singleton with empty boundary, but the\nadded infinity is distinct from its cube point, so the based-map space need\nnot be a singleton.",
+   "link": {
+    "text": "GenLoop.OnePoint",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/GenLoop/OnePoint.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "GenLoop.OnePoint",
+    "file": "FundamentalGroupoids/Topology/Homotopy/GenLoop/OnePoint.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Coverings on compact-open generalized-loop spaces",
+   "text": "([`GenLoop`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/GenLoop.lean)).\nFor a covering `p : E → X`, a chosen `e : E` and any index type `N` with at least\ntwo elements, `hp.genLoopHomeomorph N e` identifies `GenLoop N E e` with\n`GenLoop N X (p e)` in their ordinary compact-open/subtype topologies. Its forward\nmap is `GenLoop.map` and its inverse is the unique chosen based lift `hp.liftGenLoop e`.\nThe lift is natural in commuting squares with arbitrary continuous horizontal maps;\nthe forward map agrees with `HomotopyGroup.mapFun` on representative classes.\nCube, total and base universes are independent, without finiteness, decidable equality,\nconnectedness, local path connectedness, local compactness, separation or global\nsurjectivity assumptions.",
+   "link": {
+    "text": "GenLoop",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/GenLoop.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "GenLoop",
+    "file": "FundamentalGroupoids/Topology/Covering/GenLoop.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Coverings on positive homotopy groups",
+   "text": "([`Covering.HomotopyGroup`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/HomotopyGroup.lean)).\nA covering induces an injection on the cubical homotopy quotient for every nonempty\nindex type, and a bijection when the index has at least two elements. Neither needs\ndecidable equality. With supplied decidable equality, the latter is a multiplicative\nequivalence for the stock group structures: its forward map is `HomotopyGroup.map`,\nand its inverse sends a class to the class of its chosen based lift. The cube, total\nand base universes are independent, without connectedness, local path connectedness,\nseparation, finiteness or global surjectivity assumptions. For `Fin n` this gives\nthe covering isomorphism in degrees `n ≥ 2`; arbitrary indices use the coordinate-face\nboundary, without a sphere-domain comparison.",
+   "link": {
+    "text": "Covering.HomotopyGroup",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/HomotopyGroup.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Covering.HomotopyGroup",
+    "file": "FundamentalGroupoids/Topology/Covering/HomotopyGroup.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Sheaves of representation sections",
+   "text": "([`SectionsPresheaf`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/SectionsPresheaf.lean)).\nFor any topological space `X`, a representation `FundamentalGroupoid X ⥤ Type w`\ndetermines a presheaf of transport-invariant families, functorially in the representation.\nAt an open `U`, its values are canonically equivalent to sections of the representation\npulled back along `FundamentalGroupoid U → FundamentalGroupoid X`; the comparison\npreserves open restriction and natural transformations. Only paths in the open subspace\nenter the transport condition. Space and fiber universes are independent, with no\nsmallness, connectedness, local connectedness or inhabited-fiber assumption.\nThis presheaf is a sheaf: compatible families on every open cover glue uniquely.\nNo semilocal simple connectivity is needed, and no covering realization is asserted.\nThe [limits API](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/SectionsPresheafLimits.lean)\nsends pointwise limit cones to limit cones. For coefficients in `Type v`,\n`[LocallySmall.{v} (FundamentalGroupoid X)]` suffices for the sections-presheaf\nfunctor to preserve every existing limit, with arbitrary indexing universes and\nno shape-completeness assumption on `Type v`. This asserts sufficiency only,\nnot necessity or completeness. More generally, for any `C : Type u`\nwith `Category.{a} C`, the sections functor `(C ⥤ Type v) ⥤ Type (max u v)` is\ncorepresented by a constant singleton representation and preserves every existing\nlimit, without smallness or coefficient-completeness assumptions. The category,\ncoefficient and indexing universes remain independent.",
+   "link": {
+    "text": "SectionsPresheaf",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/SectionsPresheaf.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "SectionsPresheaf",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/SectionsPresheaf.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Arbitrary coproducts and products",
+   "text": "([`Coproduct`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Coproduct.lean),\n[`Product`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Product.lean)).\nThe inclusion-induced comparison `Σ i, FundamentalGroupoid (X i) →\nFundamentalGroupoid (Σ i, X i)` is an equivalence; the dependent-product\ncomparison is an isomorphism in `Grpd`, with coordinate projection and assembly.\nIndex and space universes are independent; no finiteness, connectedness, local\npath connectedness or nonemptiness is needed. The product comparison agrees\nwith Mathlib's when its universes coincide.",
+   "link": {
+    "text": "Coproduct",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Coproduct.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Coproduct",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/Coproduct.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Reindexing cube coordinates",
+   "text": "([`HomotopyGroup.Congr`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Congr.lean)).\nAn equivalence `e : N ≃ M` induces `HomotopyGroup.congr x e` on the existing\nboundary-relative quotients, sending `[p]` to `[t ↦ p (t ∘ e)]`.\nThe inverse uses `e.symm`; representative, constant, identity, composition\nand based-postcomposition laws are public. Index and space universes are\nindependent, and the indices may be empty or infinite. For nonempty indices\nwith supplied decidable equality, `HomotopyGroup.congrMulEquiv x e` uses the\nsame function with Mathlib's existing group structures. It commutes with\nconcatenation along corresponding coordinates, without requiring the two\ngroup structures to select corresponding axes. This is a cubical transport,\nnot a comparison with sphere-domain homotopy classes.",
+   "link": {
+    "text": "HomotopyGroup.Congr",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Congr.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Congr",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Congr.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Coherent loop iteration",
+   "text": "([`HomotopyGroup.Iteration`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Iteration.lean)).\nThe computed comparison `HomotopyGroup.genLoopEquiv N M x` flattens an\n`N`-cube of `M`-loops to an `(N ⊕ M)`-loop using Mathlib's sum-flattening\nhomeomorphism on representatives. Its inverse, constant and based-map laws\nare public. For nonempty `N`, with supplied decidable equality on `N` and\n`N ⊕ M`, `genLoopMulEquiv` preserves the existing group operations; `M` may\nbe empty. Associativity uses the ordered sum associator, and the two empty\nunits retain all inner-loop components or evaluate the empty inner loop.\n`genLoopFinEquiv n m x` orders the outer coordinates before the inner ones,\nwith associativity and zero-unit casts in every degree and a multiplicative\nrefinement when `n` is positive. Index and space universes are independent.\nThese are comparisons of the existing cubical homotopy quotients, not\nsphere-domain or kified mapping-space identifications.",
+   "link": {
+    "text": "HomotopyGroup.Iteration",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Iteration.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Iteration",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Iteration.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Generalized loops and homotopy quotients of dependent products",
+   "text": "([`HomotopyGroup.Product`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Product.lean),\n[`FundamentalGroup.Product`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Product.lean)).\nFor arbitrary spaces `X i`, points `p i` and cube index `N`,\n`GenLoop.piHomeomorph N p` is a homeomorphism from generalized loops in the\nordinary dependent product to the Pi product of coordinate generalized-loop\nspaces, using their inherited compact-open topologies. Its inverse is the\nexisting assembler `GenLoop.pi`.\n`HomotopyGroup.piEquiv N p` identifies `HomotopyGroup N (∀ i, X i) p` with\n`∀ i, HomotopyGroup N (X i) (p i)`. Its coordinates are induced by evaluation;\nits inverse assembles loop representatives with `GenLoop.pi`, naturally in\nbased coordinate maps. Cube, family and space universes are independent;\neither index may be empty or infinite, without finiteness or decidable-equality\nassumptions. No connectedness, separation or local-compactness hypotheses on\nthe spaces are needed; the cube's local compactness is internal to the construction.\nWith `[DecidableEq N] [Nonempty N]`,\n`HomotopyGroup.piMulEquiv N p` is multiplicative for Mathlib's existing group\nstructures. Under `pi1MulEquivFundamentalGroup`, the degree-one equivalence\nagrees with the existing `FundamentalGroup.piMulEquiv p`, identifying\n`π₁(∀ i, X i, p)` multiplicatively with `∀ i, π₁(X i, p i)`.\nThat FundamentalGroup API is natural in continuous coordinate maps and arbitrary\nreindexing. This generalizes May's binary finite-degree product statement\n(Chapter 9 §4, printed p. 67), without a sphere-domain or U-topology comparison.",
+   "link": {
+    "text": "HomotopyGroup.Product",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Product.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Product",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Product.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Categorical based products",
+   "text": "([`Products`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Products.lean),\n[`Based.Products`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/Products.lean)).\nThe fundamental-group functor preserves every existing indexed product,\nincluding the empty product, with independent index and space universes.\nThis is preservation, not a blanket large-product existence assertion.\nThe stock comparison acts by the based projections; after the canonical based\nproduct identification, its coordinate homomorphism is exactly `piMulEquiv`.\nNo connectedness, finiteness or index-smallness premise is needed.",
+   "link": {
+    "text": "Products",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Products.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Products",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Products.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Circle integer coordinates",
+   "text": "([`Circle`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean)).\nFor every nonzero real period `T`, `π₁(AddCircle T, 0) ≃* Multiplicative ℤ`,\nwith the loop lifted from `0` to `T * n` assigned `n`, including negative periods.\nThe induced period-one homeomorphism gives `π₁(Circle, 1) ≃* Multiplicative ℤ`,\nsending the counterclockwise full turn to `+1`. Signed-loop, inverse, endpoint,\nnonidentity and homeomorphism-compatibility laws are public; zero-period loops\nare constant. The coordinate core uses Mathlib alone.",
+   "link": {
+    "text": "Circle",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Circle",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Higher circle homotopy quotients",
+   "text": "([`HomotopyGroup.Circle`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Circle.lean)).\nAt every basepoint `z` and for every index type `N` with at least two elements,\n`HomotopyGroup N Circle z` is a subsingleton, using the coordinate-face boundary\neven for infinite `N`. For finite indices this gives `πₙ(Circle, z) = 0` for\n`n ≥ 2`; no decidable equality or group instance is required for the quotient result.",
+   "link": {
+    "text": "HomotopyGroup.Circle",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Circle.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Circle",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Circle.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Fundamental groups and based homotopy",
+   "text": "([`Based`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based.lean),\n[`Functor`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Functor.lean)).\nBased spaces form the under category of the one-point space. The fundamental\ngroup at the selected point and the induced homomorphism define a functor to\n`GrpCat`. It factors uniquely through the category of based-homotopy classes,\nwith object, representative-map and loop-class characteristics. The quotient\nidentifies exactly the based-homotopic maps and has Mathlib's categorical\nuniversal property and natural-transformation descent. Spaces and selected\npoints are arbitrary, without connectedness, separation or well-pointedness.",
+   "link": {
+    "text": "Based",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Based",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Based.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Based maps on homotopy groups",
+   "text": "([`HomotopyGroup.Map`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Map.lean)).\nA continuous map preserving supplied points acts on generalized loops and on\ntheir homotopy quotient for every cube-index type, including an empty one.\nFor nonempty indices with decidable equality, the same function is a group\nhomomorphism. Representative, constant, identity, composition and based-homotopy\nlaws are public; in dimension one the map agrees with `FundamentalGroup.mapOfEq`\nunder Mathlib's multiplicative comparison. Cube and space universes are\nindependent, with no separation, connectedness or finiteness assumptions.\nThe module uses Mathlib alone.",
+   "link": {
+    "text": "HomotopyGroup.Map",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Map.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Map",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Map.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Based-homotopy classes under refinement",
+   "text": "([`Based.CompactlyGenerated`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/CompactlyGenerated.lean)).\nFor an original `UCompactlyGeneratedSpace.{p}` source `Z` and arbitrary target\n`Y`, `BasedTopCat.compactlyGeneratedCounitEquiv` identifies the whole based\nhom-sets `[Z, κ_p Y]_*` and `[Z, Y]_*`. Its forward map is postcomposition by\nthe continuous identity, and its inverse sends every original continuous based\nrepresentative to its unchanged-function lift into `κ_p Y`. Joint homotopy\nrelative to the source point is preserved and reflected. The forward comparison\nis natural under arbitrary based source and target maps without generatedness;\ninverse naturality requires generatedness only of the original source spaces.\nThe fixed probe universe and both original carrier universes are independent.\nRefinement of the original target precedes ordinary `ULift` to a common carrier\nuniverse; no commutation of refinement with `ULift` is assumed. There are no\nseparation, closed-basepoint or local-compactness hypotheses.",
+   "link": {
+    "text": "Based.CompactlyGenerated",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Category/TopCat/Based/CompactlyGenerated.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Based.CompactlyGenerated",
+    "file": "FundamentalGroupoids/Topology/Category/TopCat/Based/CompactlyGenerated.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Locally compact products",
+   "text": "([`CompactlyGeneratedSpace`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactness/CompactlyGeneratedSpace.lean)).\nThe ordinary product of two `UCompactlyGeneratedSpace.{u}` spaces is again\n`u`-compactly generated when the first factor is locally compact. For such\na first factor `P` and an arbitrary topological `A`,\n`Homeomorph.compactlyGeneratedProd` identifies `k_u (P × A)` with `P × k_u A`\nby the identity function in both directions, compatibly with the counits.\nThe probe and both space universes are independent, without separation or\nsmallness assumptions. This is not an arbitrary-product formula.",
+   "link": {
+    "text": "CompactlyGeneratedSpace",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactness/CompactlyGeneratedSpace.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "CompactlyGeneratedSpace",
+    "file": "FundamentalGroupoids/Topology/Compactness/CompactlyGeneratedSpace.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Closed subspaces under refinement",
+   "text": "([`CompactlyGeneratedSpace`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactness/CompactlyGeneratedSpace.lean)).\nLet `κ_u Y` mean `Y` with Mathlib's `compactlyGenerated.{u} Y` topology,\nwith continuous identity `ε_u : κ_u Y → Y`. Closed subsets of a\n`UCompactlyGeneratedSpace.{u}` space are `u`-compactly generated in their original\nsubtype topology. For any ambient space and closed `s`,\n`Homeomorph.compactlyGeneratedSubtype` identifies `κ_u s` with the subtype `s`\nof `κ_u Y` by unchanged functions in both directions. This homeomorphism and\npreservation of closed embeddings require no ambient compact generation or\nseparation. The forward comparison and restricted counit exist for every subset;\nno such inheritance or homeomorphism is asserted for arbitrary subspaces,\nnor preservation of arbitrary embeddings.",
+   "link": {
+    "text": "CompactlyGeneratedSpace",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactness/CompactlyGeneratedSpace.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "CompactlyGeneratedSpace",
+    "file": "FundamentalGroupoids/Topology/Compactness/CompactlyGeneratedSpace.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Fixed-evaluation fibers under refinement",
+   "text": "([`Homotopy.CompactlyGenerated`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean)).\nFor arbitrary spaces `A`, `X` and points `a : A`, `x : X`, assume only\n`IsClosed ({x} : Set X)`. Give `M = C(A, X)` its original compact-open topology,\n`P = {F : M // F a = x}` its original subtype topology, and\n`Q = {F : κ_u M // (ε_u F) a = x}` the subtype topology inside `κ_u M`.\n`Homeomorph.compactlyGeneratedEvalFiber` gives `κ_u P ≃ₜ Q`, with unchanged\nevaluations in both directions and counit laws. It is separately natural under\n`f : C(A', A)` with `f a' = a` and `g : C(X, Y)` with `g x = y`.\nThe second homeomorphism for postcomposition needs `{y}` closed; these maps do not.\nProbe and all space universes are independent. No compact generation, local\ncompactness, separation, countability or smallness of the spaces is required.\nThis refines the function space, not the codomain as in `C(A, κ_u X)`;\nit asserts no `P ≃ₜ Q`, exponential law, joint composition continuity or\narbitrary-product closure.",
+   "link": {
+    "text": "Homotopy.CompactlyGenerated",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Homotopy.CompactlyGenerated",
+    "file": "FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Path components under refinement",
+   "text": "([`Homotopy.CompactlyGenerated`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean)).\n`ZerothHomotopy.bijective_map_compactlyGeneratedCounit` gives a bijection on\npath components for every topological space. Its subtype and fixed-evaluation-fiber\nversions hold for every subset and every pole, even a nonclosed one, without\ncompact-generation or separation assumptions. Interval paths lift with unchanged\nfunctions; this does not assert homeomorphisms or compact generation of arbitrary\nsubspaces.",
+   "link": {
+    "text": "Homotopy.CompactlyGenerated",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Homotopy.CompactlyGenerated",
+    "file": "FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Relative homotopies under refinement",
+   "text": "([`Homotopy.CompactlyGenerated`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean)).\nFrom any `UCompactlyGeneratedSpace.{u}` source, a supplied relative homotopy\nlifts to the CompHaus-test refinement of its target with its entire joint\ncylinder function unchanged. Endpoints and any fixed subset are preserved;\ncounit postcomposition is inverse to lifting, which is natural in target maps.\nSource, target and probe universes are independent. The target needs no\nseparation or compact-generation assumption, and the source needs no local\ncompactness or first-countability assumption.",
+   "link": {
+    "text": "Homotopy.CompactlyGenerated",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Homotopy.CompactlyGenerated",
+    "file": "FundamentalGroupoids/Topology/Homotopy/CompactlyGenerated.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "CompHaus-test topology comparisons",
+   "text": "([`HomotopyGroup.CompactlyGenerated`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/CompactlyGenerated.lean)).\nRefining the target topology to Mathlib's `compactlyGenerated.{u} X` leaves\nevery boundary-relative cubical homotopy quotient canonically equivalent to\nthe original-topology quotient. The forward function is the existing\n`HomotopyGroup.mapFun`; for nonempty indices with decidable equality the\ncomparison is multiplicative for the existing group structures, naturally\nin based maps. Probe, cube-index and target universes are independent, with\nno target separation or compact-generation hypothesis. Empty indices retain\nall path components; for infinite indices both quotients are subsingletons.\nThis compares two topologies in the same cubical model, not sphere-domain\nclasses or May's weak-Hausdorff category. The\n[continuous-map API](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Compactness/CompactlyGeneratedSpace.lean)\nlifts unchanged functions from any `UCompactlyGeneratedSpace.{u}` source,\nwith evaluation, inverse-composition and refinement-naturality laws.",
+   "link": {
+    "text": "HomotopyGroup.CompactlyGenerated",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/CompactlyGenerated.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.CompactlyGenerated",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/CompactlyGenerated.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Basepoint transport of generalized homotopy classes",
+   "text": "([`HomotopyGroup.BasepointEquiv`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/BasepointEquiv.lean)).\nA path `γ : Path x y` induces `HomotopyGroup.equivOfPath γ` for arbitrary\nindex types and topological targets, with independent universes. The\ncharacteristic theorem `HomotopyGroup.pathMap_mk_eq_iff` identifies transport\nof representatives with a homotopy having boundary trace exactly `γ`.\nWith the supplied `[DecidableEq N] [Nonempty N]`, `mulEquivOfPath γ` preserves\nthe existing multiplication; transport is natural and agrees with the\nfundamental-group construction in degree one. Empty indices preserve the\nrepresented component of the target; infinite-index quotients are\nsubsingletons. No separation or local compactness of the target is required,\nand no sphere or kification model comparison is asserted.",
+   "link": {
+    "text": "HomotopyGroup.BasepointEquiv",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/BasepointEquiv.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.BasepointEquiv",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/BasepointEquiv.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Generalized-loop spaces and components",
+   "text": "([`HomotopyGroup.LoopSpace`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/LoopSpace.lean)).\nFor a singleton index type `J`, `genLoopHomeoOfUnique J x` is a homeomorphism\nfrom `GenLoop J X x` to the compact-open based path space `Path x x`, with\nunderlying equivalence `genLoopEquivOfUnique J`. It evaluates a generalized\nloop on constant coordinates and its inverse evaluates a path at the unique\ncoordinate. Constant loops correspond to reflexive paths, and the comparison\ncommutes with based postcomposition, including endpoint casts. Index and target\nuniverses are independent; no separation or local compactness of `X` is needed.\n`HomotopyGroup.equivZerothHomotopy N x` identifies the raw quotient\n`HomotopyGroup N X x` with `ZerothHomotopy (GenLoop N X x)` by the identity\non representatives in both directions, preserving the chosen constant class.\nThe compact-open/subtype topology is unchanged. Index and space universes are\nindependent; only a topology and chosen `x` are required, with no finiteness,\nindex nonemptiness, decidable equality or separation assumptions.\nNaturality relates `HomotopyGroup.mapFun` to `ZerothHomotopy.map` of the same\ncontinuous `GenLoop.map`. For empty indices, the square with\n`genLoopHomeoOfIsEmpty` and `homotopyGroupEquivZerothHomotopyOfIsEmpty`\ncommutes, including arbitrary `y : X`, not just `x`. No group structure on\ncomponents is introduced. This is a raw cubical analogue of May, Chapter 8 §1's\nbased mapping-space observation; his sphere classes and kified weak-Hausdorff\ncategory `U` use a different model. No sphere-domain, interval-quotient,\nkification, `U`-category or finite iterated-loop comparison is asserted.\nBoundaries mean coordinate faces; for infinite indices these are not interpreted\nas ambient frontiers or infinite-dimensional spheres.",
+   "link": {
+    "text": "HomotopyGroup.LoopSpace",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/LoopSpace.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.LoopSpace",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/LoopSpace.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Fundamental-group actions on generalized homotopy quotients",
+   "text": "([`HomotopyGroup.Action`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Action.lean)).\nThe existing fundamental group acts on every generalized homotopy quotient by\npath-induced change of basepoint. Its reversed traversal product makes this a\nleft action. Representatives are related exactly by homotopies whose whole\ncube boundary follows the chosen loop. Based maps are equivariant for their\ninduced fundamental-group maps. With the given nonempty index and decidable\nequality, the same action preserves the existing group multiplication. Empty\nindices fix every free path component; in degree one Mathlib's comparison\ngives conjugation `g * a * g⁻¹`. Target and index universes are independent,\nand no separation or local-connectivity hypothesis is required.",
+   "link": {
+    "text": "HomotopyGroup.Action",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Action.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Action",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Action.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Point-local loop rigidity and totally disconnected targets",
+   "text": "([`HomotopyGroup.Discrete`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Discrete.lean)).\nAt any chosen point with a subsingleton path component, every generalized loop\nindexed by a nonempty type equals the constant loop, so its boundary-relative\nhomotopy quotient is a subsingleton. In particular this holds at every basepoint\nof a totally disconnected space, including discrete spaces. Cube and target\nuniverses are independent, and indices may be infinite. The nonempty-index\nhypothesis is essential in general: the empty-index quotient records all\npath components.",
+   "link": {
+    "text": "HomotopyGroup.Discrete",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Discrete.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HomotopyGroup.Discrete",
+    "file": "FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Discrete.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Relative affine homotopies and vector-space quotients",
+   "text": "([`Affine`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Affine.lean),\n[`HomotopyGroup.Affine`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/HomotopyGroup/Affine.lean)).\nContinuous maps from any space into a real vector space with continuous\naddition and scalar multiplication admit an affine homotopy fixed on any\nsubset where they agree. Every generalized loop in such a vector space is\nhomotopic to the constant loop relative to its cube boundary, so\n`HomotopyGroup N E x` is a subsingleton for every index type and every chosen\npoint. Cube and target universes are independent; empty and infinite indices\nare allowed. No separation, norm, completeness or positive-degree group\nstructure is required.",
+   "link": {
+    "text": "Affine",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Affine.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Affine",
+    "file": "FundamentalGroupoids/Topology/Homotopy/Affine.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Positive integer index in punctured complex balls",
+   "text": "([`FundamentalGroup.ComplexPuncturedBall`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup/ComplexPuncturedBall.lean)).\nFor `0 < a < r`, positive scaling embeds `Circle` as the radius-`a` circle\ninside the punctured radius-`r` ball, and normalization is `z / ‖z‖`.\nThe radial deformation fixes this circle pointwise. At the image of\n`1 : Circle`, normalization induces a multiplicative equivalence of the\nfundamental group with `Multiplicative ℤ`; its inverse scales circle classes.\nEvery scaled `Circle.loop n` has index `n`, so the positive loop is nontrivial\nand has index one, including on the half-radius circle in the unit ball.",
+   "link": {
+    "text": "FundamentalGroup.ComplexPuncturedBall",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup/ComplexPuncturedBall.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FundamentalGroup.ComplexPuncturedBall",
+    "file": "FundamentalGroupoids/FundamentalGroup/ComplexPuncturedBall.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Radial deformation of punctured closed balls",
+   "text": "([`Homotopy.Radial`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Radial.lean)).\nFor every real normed space and positive radius, radial projection retracts\nthe closed ball with its centre removed onto its metric sphere. The scalar\ninterpolation from the identity to inclusion after projection is a\n`ContinuousMap.HomotopyRel` fixing every boundary point. The projection and\ninclusion give a `ContinuousMap.HomotopyEquiv`, with evaluation, endpoint,\nboundary-fixing and retraction laws. No nontriviality, completeness or dimension\nassumption is required; empty punctured balls and spheres are allowed.\nFor an open ball of radius `r` and `0 < a < r`, the same construction\nretracts onto the radius-`a` inner sphere, with the deformation fixing the\nrange of its inclusion. Projection onto a positive-radius sphere requires\nonly `0 < a`, even when that sphere is not contained in the source ball.",
+   "link": {
+    "text": "Homotopy.Radial",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Radial.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Homotopy.Radial",
+    "file": "FundamentalGroupoids/Topology/Homotopy/Radial.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Homotopy-retraction splittings",
+   "text": "([`retractionOfHomotopy`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup.lean)).\nFor `g : C(X, Y)`, `f : C(Y, X)` and a homotopy from `f.comp g` to `id X`,\ntransport along its track at `x` gives an explicit left inverse of\n`π₁(X, x) → π₁(Y, g x)`, which is therefore injective. A nontrivial source\nvertex group and a subsingleton target vertex group obstruct such a homotopy.\nSpace universes are independent; no connectedness or fixed-basepoint condition is needed.",
+   "link": {
+    "text": "retractionOfHomotopy",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "retractionOfHomotopy",
+    "file": "FundamentalGroupoids/FundamentalGroup.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Small-path generation",
+   "text": "([`OpenCover`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCover.lean)).\nFor an indexed open cover, a composition-stable morphism property holding on\nevery local inclusion image holds globally. No separate identity/inverse\nstability or connectedness is needed. Naturality on local images determines\na unique natural transformation between global functors into any category.",
+   "link": {
+    "text": "OpenCover",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCover.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OpenCover",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCover.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Strict open-cover descent",
+   "text": "([`OpenCoverDescent`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCoverDescent.lean)).\nFor any indexed open cover, local functors into any category agreeing by\nequality on every ordered pairwise intersection extend uniquely by equality.\nNo connectivity is assumed. Inclusion cocones are colimits in `Grpd` and `Cat`.",
+   "link": {
+    "text": "OpenCoverDescent",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCoverDescent.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OpenCoverDescent",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCoverDescent.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Full-inclusion open-cover colimits",
+   "text": "([`OpenCoverInclusions`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCoverInclusions.lean)).\nFor an indexed open cover with `InfClosed (Set.range U)`, the diagram retaining\nevery index and every open inclusion has the ambient fundamental groupoid as\nits colimit in both `Grpd` and `Cat`. Chart functors into any category agreeing\nby equality along all inclusions extend uniquely by equality, with independent\nspace, index, target-object and target-morphism universes. No path connectedness,\ncommon point, finiteness, injective indexing or member equal to the whole space\nis required. This generalizes May's groupoid theorem on printed p. 17 by dropping\nits path-connected-member hypothesis; the based theorem on p. 18 remains separate.",
+   "link": {
+    "text": "OpenCoverInclusions",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCoverInclusions.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OpenCoverInclusions",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroupoid/OpenCoverInclusions.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Indexed based van Kampen",
+   "text": "([`isColimitOfIsOpenCover`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean)).\nFor an arbitrarily indexed open cover by path-connected neighborhoods of a\ncommon basepoint with `InfClosed (Set.range U)`, compatible homomorphisms to\nany group extend uniquely from the local fundamental groups. Compatibility is\nalong every inclusion, including repeated opens. Space, index and target-group\nuniverses are independent; the inclusion cocone is a colimit in `GrpCat.{u}`.\nBinary intersection closure does not require the whole space in the range.",
+   "link": {
+    "text": "isColimitOfIsOpenCover",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "isColimitOfIsOpenCover",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Common-overlap stars",
+   "text": "([`CommonOverlap`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/CommonOverlap.lean)).\nLet a based open core `C` lie in every chart `U i`, with `C` and the charts\npath connected, `U i ∩ U j = C` for distinct indices, and the core together\nwith the charts covering the space. The core-to-chart inclusion star has the\nambient fundamental group as its colimit. Its raw group colimit is canonically\nmultiplicatively equivalent to that group, preserving every core and chart\nleg in both directions. Space and index universes are independent; empty\nchart families and a nontrivial core fundamental group are allowed.",
+   "link": {
+    "text": "CommonOverlap",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/CommonOverlap.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "CommonOverlap",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/CommonOverlap.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Directed open-cover colimits",
+   "text": "([`DirectedOpenCover`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/DirectedOpenCover.lean)).\nFor any topological space with a supplied basepoint and an arbitrarily indexed,\ninclusion-directed open cover by its neighborhoods, compatible homomorphisms\nfrom the local fundamental groups to any monoid extend uniquely to a\nhomomorphism from the ambient group. Compatibility is along every inclusion\nbetween presented neighborhoods; the diagram uses `inducedFunctor U`.\nThe existing inclusion cocone is a colimit in `GrpCat.{u}`. All indices are\nretained, including repeated opens, and all maps are inclusion-induced.\nSpace, index and target-monoid universes are independent; no path connectedness,\nintersection closure, separation, local connectivity, finiteness, dimension or\nseparate index nonemptiness assumption is imposed.",
+   "link": {
+    "text": "DirectedOpenCover",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/DirectedOpenCover.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "DirectedOpenCover",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/DirectedOpenCover.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Directed-preorder neighborhood-cover colimits",
+   "text": "([`DirectedOpenCover`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/DirectedOpenCover.lean)).\nLet `X : Type u` be any topological space, `p : X`, and `J : Type v` have\n`[Preorder J] [IsDirectedOrder J]`. For a monotone open-neighborhood cover\n`U : J → OpenNhds p`,\n`FundamentalGroup.existsUnique_hom_of_isOpenCover_of_monotone` extends local\nhomomorphisms to any monoid `G : Type w` uniquely along the canonical inclusion\nlegs. Compatibility is required only for `i ≤ j`, not for every inclusion\n`U i ≤ U j`. For `hU : Monotone U`, the noncomputable definition\n`FundamentalGroup.isColimitOfIsOpenCoverOfMonotone` supplies\n`IsColimit ((openNhdsCocone p).whisker hU.functor)` in `GrpCat.{u}`.\nIts diagram uses the ordinary preorder category on `J`. The universes `u`, `v`\nand `w` are independent; no path connectedness, intersection closure, separation,\nlocal connectivity, smallness, injectivity, order reflection or separate\nnonemptiness assumption on `J` is required.",
+   "link": {
+    "text": "DirectedOpenCover",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/DirectedOpenCover.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "DirectedOpenCover",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/DirectedOpenCover.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Open-cover quotient presentations",
+   "text": "([`OpenCoverPresentation`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCoverPresentation.lean)).\nAn intersection-closed open cover by path-connected neighborhoods of a common\npoint presents the ambient fundamental group as the free product of the local\ngroups modulo the normal closure of all inclusion-arrow relators. The quotient\nequivalence preserves the inclusion legs in both directions; the canonical\nfree-product map is surjective with exactly this kernel. Arbitrary indices,\nrepeated presentations and independent index/space universes are allowed.",
+   "link": {
+    "text": "OpenCoverPresentation",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCoverPresentation.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OpenCoverPresentation",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCoverPresentation.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Two-open based van Kampen",
+   "text": "([`OpenCover`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean)).\nFor opens `U`, `V` with `U ∪ V = X`, all of `U`, `V`, `U ∩ V` path connected and a point\nin the intersection, compatible homomorphisms to any group extend uniquely,\nsatisfying both restriction equations; target and space universes are independent.\nThe inclusion square is a pushout in `GrpCat.{u}`. These specialize indexed\nvan Kampen; neither formulation adds ambient or local path connectedness.",
+   "link": {
+    "text": "OpenCover",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OpenCover",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Infinite cyclic intersections",
+   "text": "([`OpenCoverCyclicIntersection`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCoverCyclicIntersection.lean)).\nFor a path-connected two-open cover with path-connected intersection, suppose\nthe second open has trivial fundamental group and the intersection group is\nclassified by `Multiplicative ℤ`. A homomorphism on the first open extends\nuniquely exactly when it kills the inclusion image of the class corresponding\nto `Multiplicative.ofAdd (1 : ℤ)`. Restriction gives an equivalence with these\nhomomorphisms, with forward and inverse restriction laws. Restriction to the\nfirst open also determines ambient homomorphisms without any cyclicity\nassumption. Space and target-group universes are independent; no geometric\norientation is implicit in the supplied classification.",
+   "link": {
+    "text": "OpenCoverCyclicIntersection",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCoverCyclicIntersection.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "OpenCoverCyclicIntersection",
+    "file": "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCoverCyclicIntersection.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Path-component inclusion",
+   "text": "([`pathComponentInclusionMulEquiv`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup.lean)).\nInclusion of a path component induces an isomorphism on fundamental groups at\nany point of the component. The inverse is represented by corestricting loops;\nneither openness of the component nor connectedness of the ambient space is required.",
+   "link": {
+    "text": "pathComponentInclusionMulEquiv",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "pathComponentInclusionMulEquiv",
+    "file": "FundamentalGroupoids/FundamentalGroup.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Simple-connectivity criteria",
+   "text": "([`FundamentalGroup`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup.lean),\n[`OpenCover`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/OpenCover.lean)).\nSimple connectivity is characterized by path connectedness and a\nsubsingleton fundamental group at a given point. Two simply connected opens\ncovering a space make it simply connected when their intersection\nis path connected, including nonemptiness. A nonempty directed union of open simply\nconnected sets is simply connected. An arbitrarily indexed open cover also gives\nsimple connectivity when its members are simply connected, share one point, and\nhave path-connected pairwise intersections; connected triple intersections are not\nrequired. These criteria add no ambient or local path connectedness or separation\nassumption; overlaps need not be simply connected.",
+   "link": {
+    "text": "FundamentalGroup",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/FundamentalGroup.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FundamentalGroup",
+    "file": "FundamentalGroupoids/FundamentalGroup.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Semilocal simple connectivity",
+   "text": "([`Basic`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/SemilocallySimplyConnected/Basic.lean),\n[`Maps`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/SemilocallySimplyConnected/Maps.lean),\n[`LocallyPathConnected`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/SemilocallySimplyConnected/LocallyPathConnected.lean)).\nAt `x`, an open neighborhood's loops **based at `x`** contract in the **ambient\nspace**, not necessarily inside the neighborhood. The global class quantifies\nseparately over all centers and is vacuous on empty spaces. Simply connected\nspaces satisfy it. Continuous maps with injective induced based fundamental-group\nmaps reflect it; local homeomorphisms preserve it pointwise. For every covering,\nthe pointwise properties are equivalent and the base property implies the total\nproperty without surjectivity; global descent needs surjectivity, also for local\nhomeomorphisms. Only with local path connectedness do we obtain one open\npath-connected neighborhood controlling loops at all its basepoints in the ambient\nspace, not an intrinsically simply connected neighborhood. Space universes are\nindependent; no separation or extra connectedness/nonemptiness is assumed.",
+   "link": {
+    "text": "Basic",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/SemilocallySimplyConnected/Basic.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Basic",
+    "file": "FundamentalGroupoids/SemilocallySimplyConnected/Basic.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Cancellation of covering maps",
+   "text": "([`Composition`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Composition.lean)).\nIf `q ∘ g` and `q` are covering maps, `g` is continuous, and the target of `g` is\nlocally connected, then `g` is a covering map. The three space universes are independent;\nno surjectivity, nonempty-fiber, path-connectedness or separation assumption is needed.",
+   "link": {
+    "text": "Composition",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Composition.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Composition",
+    "file": "FundamentalGroupoids/Topology/Covering/Composition.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Based lifting and equivalence of covers",
+   "text": "([`Lifting`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Lifting.lean),\n[`Equivalence`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Equivalence.lean)).\nA continuous map from a path-connected, locally path-connected domain with\na prescribed lift of its basepoint has a unique based lift iff its induced\nfundamental-group image lies in the covering image, compared by basepoint equality.\nTwo covers with path-connected totals and equal based images at specified points\nover the same point are homeomorphic over the base, taking one point to the other;\nonly the source total must be locally path connected. No base connectedness or\nglobal surjectivity is required.",
+   "link": {
+    "text": "Lifting",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Lifting.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Lifting",
+    "file": "FundamentalGroupoids/Topology/Covering/Lifting.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Monodromy, cosets and path components",
+   "text": "([`Monodromy`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Monodromy.lean),\n[`Components`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Components.lean)).\nFiber-point stabilizers are the based fundamental-group images, and orbits are\njoinedness classes, without connectivity or local path connectedness. Orbit\nclasses identify with the fiber of the induced path-component map. Over a\npath-connected base they identify with all total-space components, allowing\nempty total spaces and independent total/base universes; total path connectedness\nis equivalent to nonemptiness and pretransitive monodromy. With path-connected total\nand a chosen fiber point, the fiber is equivariantly equivalent to left cosets of the\ninduced based fundamental-group image, by `[g] ↦ monodromy g`; normality is not needed.\nCommuting squares of continuous maps intertwine whole canonical path lifts and\nmonodromy across different bases; neither horizontal map need be a covering. Equivariant squares of quotient covers\nintertwine the canonical homomorphisms to opposite acting groups, without simple\nconnectivity. All space and acting-group universes are independent.",
+   "link": {
+    "text": "Monodromy",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Monodromy",
+    "file": "FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Pullbacks and double cosets",
+   "text": "([`Pullback`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Pullback.lean),\n[`PullbackDoubleCoset`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/PullbackDoubleCoset.lean)).\nFor a covering `p : T → B` and any continuous `a : X → B`, the second projection\n`p.Pullback a → X` is a covering. Its fiber over `x` is homeomorphic to `p ⁻¹' {b}`\nfor every equality `a x = b`. The fiber homeomorphism itself works for arbitrary maps,\nwith topologies only on `T` and `X`, not on `B`. Both projections of a lifted path are\ncomputed as whole continuous maps, and the fiber comparison intertwines all path-class\nmonodromy and the canonical left fundamental-group actions. The three space universes\nare independent.\nThe pullback of two covers is a cover whose fiber is the product with diagonal\nmonodromy. Over a path-connected base, diagonal orbits give its components,\nallowing empty/disconnected totals and independent universes. Alternatively,\nwith both totals path connected and specified fiber points, components are\n`H \\ G / K` for the based fundamental-group images; no base path connectedness is needed.",
+   "link": {
+    "text": "Pullback",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Pullback.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Pullback",
+    "file": "FundamentalGroupoids/Topology/Covering/Pullback.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Fiber cardinalities and finiteness",
+   "text": "([`Cardinality`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Cardinality.lean)).\nPoint-fiber cardinality and the predicate of fiber finiteness are locally\nconstant, with independent universes. The finite-fiber locus is clopen:\nempty fibers are included, infinite fibers excluded. No connectedness, local\npath connectedness, finiteness, surjectivity or nonempty total is needed.",
+   "link": {
+    "text": "Cardinality",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Cardinality.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Cardinality",
+    "file": "FundamentalGroupoids/Topology/Covering/Cardinality.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Proper covering maps",
+   "text": "([`Proper`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Proper.lean)).\nFor a covering map between arbitrary topological spaces, Mathlib's\n`IsProperMap` holds iff every point fiber is finite. Total and base universes\nare independent; no separation, local compactness, connectedness, surjectivity\nor uniform degree is required. Over a preconnected base, finiteness of the\nfiber at any given point suffices, without an extra nonemptiness premise.\nFor preconnected total and a supplied `e0`, properness instead means finiteness over\n`p e0`. With path-connected total, it means finite index of the canonical based\nfundamental-group image ([`FiniteIndex`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/FiniteIndex.lean));\nneither base connectedness nor surjectivity is required. Compact subsets have compact inverse images.",
+   "link": {
+    "text": "Proper",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/Proper.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Proper",
+    "file": "FundamentalGroupoids/Topology/Covering/Proper.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Maps of covers and deck centralizers",
+   "text": "([`DeckMonodromy`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/DeckMonodromy.lean)).\nOver-maps restrict to equivariant maps on a chosen fiber without connectivity\nassumptions. This is an equivalence of map spaces for path-connected base and\nlocally path-connected source, allowing empty/disconnected source and arbitrary target cover.\nAlternatively a supplied source point and path-connected, locally path-connected\nsource suffice without base connectedness. Deck restriction is a homomorphism\ninto the monodromy centralizer in the fiber permutation group; it is injective\nfor path-connected base and a multiplicative equivalence if the total is also\nlocally path connected, even empty/disconnected. The supplied-point alternative\nneeds only path-connected, locally path-connected total, not base connectedness.",
+   "link": {
+    "text": "DeckMonodromy",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/DeckMonodromy.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "DeckMonodromy",
+    "file": "FundamentalGroupoids/Topology/Covering/DeckMonodromy.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Normalizer quotients and regularity",
+   "text": "([`NormalizerQuotient`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/NormalizerQuotient.lean)).\nFor a covering map with path-connected, locally path-connected total space\nand a chosen point, the normalizer quotient of the based fundamental-group\nimage is canonically the deck group. A representative acts by monodromy of its inverse at the\nchosen point. The existing deck action on that fiber is pretransitive iff\nthe image subgroup is normal, without base connectedness or surjectivity.",
+   "link": {
+    "text": "NormalizerQuotient",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/NormalizerQuotient.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormalizerQuotient",
+    "file": "FundamentalGroupoids/Topology/Covering/NormalizerQuotient.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Deck fixed-point rigidity",
+   "text": "([`DeckGroup`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/DeckGroup.lean)).\nDeck groups act on point fibers. For a separated, locally injective map with\npreconnected total, evaluation at a supplied point is injective: fixing a point\nforces identity. No codomain topology is needed; surjectivity is not asserted.",
+   "link": {
+    "text": "DeckGroup",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Covering/DeckGroup.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "DeckGroup",
+    "file": "FundamentalGroupoids/Topology/Covering/DeckGroup.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Generalized loops and homotopy fibers",
+   "text": "For any cube index and based continuous map, generalized loops commute with its ordinary\nhomotopy fiber. The comparison preserves the retained point functions, complete paths and\nboth specified constant points, and is natural for based commuting squares.\n\nSee `ContinuousMap.HomotopyFiber.genLoopHomeomorph` and\n`ContinuousMap.HomotopyFiber.genLoopHomeomorph_naturality` in\n[`Topology/Homotopy/Fiber/GenLoop.lean`](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/GenLoop.lean).",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Dependent products of homotopy fibers",
+   "text": "For an arbitrary index type and topological families `E k` and `B k`, the\n[product-fiber module](https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Prod.lean)\nconstructs `ContinuousMap.HomotopyFiber.piHomeomorph f b`:\n\n```text\nHomotopyFiber (ContinuousMap.piMap f) b ≃ₜ (∀ k, HomotopyFiber (f k) (b k)).\n```\n\nThe comparison retains every original source point and the entire compact-open\npath at the same time. Its inverse transposes the whole family of paths; only\nthe interval needs local compactness. The index, source and target universes are\nindependent, with no finiteness, nonemptiness or separation assumptions.\nThe original constant `const e₀ (funext h)` corresponds in both directions to\n`fun k => const (e₀ k) (h k)`.\n\n`piHomeomorph_naturality` expresses naturality as equality of whole bundled\ncontinuous maps for arbitrary families of commuting squares. For `Fin 2`,\n`piHomeomorph_finTwo` identifies the composite homeomorphisms through\n`Homeomorph.piFinTwo`, the homotopy-fiber `homeomorph`, and `prodHomeomorph`.\nThis common-universe family diagram leaves the binary comparison's four\nindependent ambient universes and its eight-universe naturality law unchanged.",
+   "link": {
+    "text": "product-fiber module",
+    "url": "https://github.com/FormalFrontier/fundamental-groupoids/blob/ce38a38faef1a147e75b68b78b02bbfd6ad82948/FundamentalGroupoids/Topology/Homotopy/Fiber/Prod.lean",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": []
+}

@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import blueprints, catalog, links, mathlib, tauceti, wiki
+from trough import blueprints, catalog, ff, links, mathlib, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -92,6 +92,36 @@ def generate() -> dict[Path, str]:
             f"{tau_stats.get('statement_edges', 0)} statement and {tau_stats.get('proof_edges', 0)} proof edges",
             file=sys.stderr,
         )
+    ff_libraries = ff.load_libraries(DATA, libraries)
+    if ff_libraries:
+        ff_built, ff_sections = ff.chapter(ff_libraries)
+        assign_paths(ff_built.root, ROADMAP / "formal-frontier")
+        blueprints.resolve(ff_built, VAULT)
+        files.update(render_tree(ff_built.root, VAULT))
+        chapters["formal-frontier"] = "formal-frontier/README.md"
+        for section, names in ff_sections:
+            # Keyed by the library's directory: the hook takes the longest key a page's path starts with.
+            here = section.path.parent.relative_to(ROADMAP).as_posix()
+            lean_links[here] = dict(sorted(names.items()))
+            count = sum(isinstance(node, Leaf) for node in walk(section))
+            if count:
+                blueprint_rows.append((f"Formal Frontier / {section.title}", "DECOMPOSED",
+                                       f"[{count} headline {'result' if count == 1 else 'results'}](../roadmap/{here}/README.md) "
+                                       "that name a declaration its files have, one article each."))
+            else:
+                blueprint_rows.append((f"Formal Frontier / {section.title}", "OUT",
+                                       f"No headline result names a declaration its files have at the pinned commit; "
+                                       f"[its page](../roadmap/{here}/README.md) quotes them."))
+        ff_stats = ff_built.stats
+        print(
+            f"formal-frontier: {ff_stats['articles']} articles ({ff_stats['highlight_articles']} highlights, "
+            f"{ff_stats['headline_articles']} headline results) in {ff_stats['libraries']} libraries, "
+            f"{ff_stats['libraries_without_articles']} with none; of {ff_stats['headline_items']} headline results, "
+            f"{ff_stats['headline_unnamed']} link no declaration, {ff_stats['headline_not_found']} one not found, "
+            f"{ff_stats['headline_duplicates']} one with an article; {ff_stats['main_results_found']} of "
+            f"{ff_stats['main_results']} main results found",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -113,6 +143,7 @@ def generate() -> dict[Path, str]:
         libraries, sources.rev, sources.thousand_plus,
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
         (tau.rev, tau.roadmap_rev) if tau and tau.deps else None,
+        len(ff_libraries),
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

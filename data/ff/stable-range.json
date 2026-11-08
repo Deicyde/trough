@@ -1,0 +1,732 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-stable-range",
+ "repo": "FormalFrontier/stable-range",
+ "rev": "4d01f17954ba77e8ec53cf1524c9057e8f3d72e3",
+ "date": "2026-11-04T15:57:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "stable-range",
+  "description": "Bass stable-range conditions for finite right-unimodular rows, quotient and local-ring consequences, regular and unit-regular rings, categorical biproduct cancellation and module cancellation, division-ring matrix row rank and repeated blocks, commutative dimension bounds, kernel-product decompositions with specified sections over semirings, arbitrary-ring right-coefficient row splittings and rectangular completion from free right kernels, commutative free coefficient-row kernels, explicit two-element row completion and supplied-product cancellation, exact-size finite-free cancellation and first-row completion, and elementary diagonalization over commutative rings satisfying Bass S_1, with determinant-one generation and the stable elementary quotient. A commutative ring with finite maximal spectrum satisfies S_1. Idempotent corners of arbitrary rings satisfying S_1 also satisfy S_1. Division semirings are local and have zero nonunits additive submonoid. In a commutative local semiring, the additive view of the maximal ideal is the submonoid of nonunits. In a possibly noncommutative local ring, every proper left ideal lies in the Jacobson radical, which is the unique maximal left ideal. Conversely, a ring is local exactly when its canonical Jacobson radical is maximal among all left ideals; properness supplies nontriviality. General rings need not be commutative; commutative and division-ring results retain their separate hypotheses.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "author-verified",
+  "notes": "Metadata verification does not establish independent source correspondence, rights clearance or complete coverage of the book."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "AI agents using Lean and Lake",
+    "tool_setup": "Lean compiler feedback, mathlib APIs and tactics including simp, rw, ext, ring, noncomm_ring, abel and omega."
+   }
+  ],
+  "notes": "AI agents authored code, proofs, documentation and metadata. No human mathematical review or source-author endorsement is asserted. AI generation does not establish correctness, originality, copyright ownership or clearance."
+ },
+ "scope": "The aggregate root imports the mathematical leaves, including exact-size finite-free cancellation under a stable-range bound and coefficient-row completion with the original row in the first matrix position. It includes elementary unit pivots and diagonalization over commutative S_1 rings. Biproduct cancellation in a preadditive category assumes S_1 only for the canonical End of the cancelled object and requires only the two displayed biproducts. It imposes no commutativity, global-sum or remainder hypotheses; the local-End corollary uses the existing local-ring producer. Module cancellation specializes this result while retaining independent scalar and carrier universes. It also imports finite determinant-one generation, the stable determinant kernel theorem and the quotient-to-units equivalence under S_1. It also imports S_1 inheritance for the corner of any idempotent, without centrality or nontriviality. The aggregate root also re-exports kernel-product decompositions with a specified linear section over a semiring, with an additive-group source, additive-monoid target and independent scalar and carrier universes. Forward and inverse coordinates retain that section; splitting alone asserts neither finiteness nor freeness. The full injective-first-map comparison uses Mathlib's right-split-exact equivalence and the same section. The aggregate root also re-exports RowKernel's arbitrary-ring right-coefficient row section and kernel-product splitting, and RightRowCompletion's rectangular two-sided inverse criterion when that kernel is free. Splitting alone makes no freeness claim. Separately, its explicit two-element commutative supplied-witness completion gives scalar kernel coordinates and cancellation from a supplied rank-two product equivalence. The local-semiring interface supplies division-semiring locality and the zero nonunits additive submonoid without commutativity or additive inverses, and identifies the additive view of the existing maximal ideal with nonunits for commutative local semirings. For possibly noncommutative local rings, the Jacobson radical is the unique maximal left ideal; the classification ranges over all left ideals, not only two-sided ones. Conversely, maximality of the canonical radical among all left ideals recognizes unit-theoretic locality in any ring, without a locality or separate nontriviality premise. A separate test root imports PublicAPIClient, FiniteFreeClient, RowCompletionClient, ElementaryGenerationClient, SemilocalClient, CornerClient, RightCoefficientClient, RowCompletionTwoClient, RightRowCompletionClient, LocalIdealCommRingClient and ProductMaximalIdealClient. RightRowCompletionClient uses independent two-by-two integer-matrix fixtures, including a nonzero kernel column and noncentral multiplication. RowCompletionTwoClient uses independently checked integer fixtures, a nonidentity product equivalence and the zero ring; RightCoefficientClient imports integer and matrix right-coefficient fixtures with zero/empty-row boundaries. Other test-only fixtures include zero-ring, rank-one and noncentral matrix corners and a nonlocal product of fields. The commutative finite-maximal-spectrum S_1 theorem supplies shortening and stable quotient determinant clients. Bass S_1 need not mean least stable index one: the zero ring also has S_0. The remaining principal results below summarize proved mathematics rather than enumerate every declaration or claim full coverage of the source.",
+ "sources": [
+  {
+   "title": "The K-book: An Introduction to Algebraic K-theory",
+   "authors": [
+    "Charles A. Weibel"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Complete-book build dated 2013-08-29: Chapter I stable-range and module-theoretic material, including I.1.2.1 and Exercises I.1.12(v) and I.1.13.",
+   "url": "https://sites.math.rutgers.edu/~weibel/Kbook/Kbook.pdf"
+  }
+ ],
+ "depends": [
+  {
+   "name": "general-linear-groups",
+   "rev": "2683f75e2c5774ddd1295c46062035cb6afabb8a"
+  }
+ ],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "prose",
+   "text": "These results use Mathlib. The quasiregular-ideal predicate and unit characterization\ncome from pinned `general-linear-groups`; the stable-range consequences are proved\nhere. The [guide](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/docs/GUIDE.md#headline-results) retains detailed statements,\ncoordinate formulas, compatibility names and client inventories."
+  },
+  {
+   "kind": "item",
+   "title": "[Bass conditions](StableRange/Basic.lean)",
+   "text": "For arbitrary possibly noncommutative rings: right-unimodular\nrows, `(S_n)`, least stable index, monotonicity, ring-equivalence invariance and\n[surjective descent/quasiregular quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Quotient.lean).\n[Nontrivial local rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) have least stable range one.",
+   "link": {
+    "text": "Nontrivial local rings",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Local interfaces",
+   "text": "[Division semirings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) are local with\nzero nonunits submonoid; the maximal-ideal additive comparison requires a\ncommutative local semiring.\nFor rings, locality is equivalent to Jacobson-radical maximality among all left\nideals. In local rings the radical is the nonunits and contains every proper\nleft ideal; these statements do not assume two-sidedness of the left ideals.",
+   "link": {
+    "text": "Division semirings",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Preservation",
+   "text": "[Products](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Product.lean) preserve every `(S_n)`.\n[Semisimple rings and semisimple radical quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semisimple.lean)\nsatisfy `(S₁)` without radical nilpotence. [Finite matrix rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Matrix.lean),\n[idempotent corners](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Corner.lean) and [opposites](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Opposite.lean)\npreserve `(S₁)`; matrix reflection needs nonempty indices, corners neither\ncentrality nor fullness. [Commutative semilocal rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semilocal.lean)\nsatisfy `(S₁)` assuming only finite maximal spectrum, including the zero ring.",
+   "link": {
+    "text": "Commutative semilocal rings",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semilocal.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "[Retract endomorphisms](StableRange/CategoryTheory/EndRetract.lean)",
+   "text": "In any preadditive category, `i : X ⟶ Z`, `p : Z ⟶ X` and `i ≫ p = 𝟙 X`\ntransfer `Bass.StableRangeCondition (End Z) 1` to\n`Bass.StableRangeCondition (End X) 1` for the original canonical endomorphism\nrings. Object and morphism universes are independent; no complementary object,\nfinite-length or nonzero hypothesis is needed.",
+   "link": {
+    "text": "Retract endomorphisms",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/EndRetract.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "[Finite biproduct endomorphisms](StableRange/CategoryTheory/FiniteLocalEnd.lean)",
+   "text": "In any preadditive category, a displayed finite biproduct of objects with local\nendomorphism rings, and every displayed retract of that biproduct, have canonical\nendomorphism rings satisfying `(S₁)`. Only that biproduct and, for the retract,\nits supplied retraction are required, with independent index universe; empty\nfamilies and the zero biproduct are included. No vanishing of morphisms between\nsummands is assumed.",
+   "link": {
+    "text": "Finite biproduct endomorphisms",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/FiniteLocalEnd.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Regularity and cancellation",
+   "text": "[`(S₁)`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Regular.lean) implies direct\nfiniteness, is equivalent to unit-valued pair shortening, and under von Neumann\nregularity is equivalent to unit-regularity.\n[Biproduct cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/Cancellation.lean) in any\npreadditive category needs `(S₁)` for the canonical `End(X)` and only the two\ndisplayed biproducts. The remaining objects are unrestricted; local End is\nsufficient, and neither global sums nor commutativity is assumed.\n[Module cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Cancellation.lean) is a specialization,\nwith independent carrier universes and no finiteness or projectivity;\nregular right modules use the opposite ring. [Division-ring vector-space endomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DivisionRing.lean)\nhave inner inverses; finite dimension gives automorphic inner inverses and\nunit-regular finite matrix rings, including empty indices.",
+   "link": {
+    "text": "(S₁)",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Regular.lean",
+    "code": true
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Ranks and blocks",
+   "text": "[Division-ring row rank](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DivisionRingRank.lean)\nhas rectangular bounds, reindexing, realization and repeated-block laws;\nnormalized empty square rank is zero. [Repeated-block homomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RepeatedBlock.lean)\nwork over `NonAssocSemiring` coefficients, injectively for nonempty block families.",
+   "link": {
+    "text": "Repeated-block homomorphisms",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RepeatedBlock.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Commutative dimension bounds",
+   "text": "[Regularity](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Commutative.lean) is\nequivalent to reducedness and dimension at most zero; all modules over such\nregular rings are flat.\n[Dimension at most zero gives `(S₁)`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CommutativeStableRange.lean)\nwithout reducedness or nontriviality; commutative regular rings are unit-regular.\n[Noetherian dimension at most `d` gives `(S_(d+1))`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/BassDimension.lean),\nwith no infinite-residue-fields premise.",
+   "link": {
+    "text": "Noetherian dimension at most `d` gives `(S_(d+1))",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/BassDimension.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Specified splittings",
+   "text": "[A supplied linear right inverse of a linear map `f`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Module/SplitSurjective.lean)\ngives `ker f × N ≃ₗ[R] M` over a semiring, for an additive commutative group `M`\nand additive commutative monoid `N`, in independent universes. The prescribed\ncomplementary endomorphism `id - g.comp f` has range exactly `ker f`.\n[Complementary-range ranks](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Module/SplitSurjectiveRank.lean) over a\ndivision ring satisfy `finrank K (range (id - g.comp f)) = finrank K M - finrank K N`\nassuming only that `M` is finite-dimensional. A family with given equivalences\n`N b ≃ₗ[K] F` has this rank equal to `finrank K M - finrank K F` at every `b`,\nwithout a nonempty base or a finite-dimensionality assumption on `F`.\n[Right-unimodular\ncoefficient rows](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowKernel.lean) split over `Rᵐᵒᵖ` for any ring, including empty\nrows and the zero ring. Splitting alone does not give freeness.",
+   "link": {
+    "text": "Right-unimodular\ncoefficient rows",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowKernel.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Completion and IBN",
+   "text": "[Right-unimodularity and free right kernels](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RightRowCompletion.lean)\ncharacterize two-sided rectangular completion, preserving a supplied inverse\ncolumn. For successor-length rows, [square completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/SquareRightRowCompletionCriterion.lean)\nneeds IBN only to infer kernel size; supplied matching coordinates and the\nconverse need no IBN. The [countable endomorphism example](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CountableEndomorphism.lean)\nseparates rectangular from square completion for nontrivial underlying modules,\neven for a unary row.",
+   "link": {
+    "text": "countable endomorphism example",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CountableEndomorphism.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Commutative cancellation",
+   "text": "Under `(S_s)`, right-unimodular rows of length at\nleast `s + 1` have free kernels. [Finite-free cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/FiniteFree.lean) uses an\nexplicit `P × R^m ≃ R^(n+m)` and `s ≤ n`, without prior freeness of `P`;\n[completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletion.lean) preserves the literal first row.\nBoth allow zero rings; dimension-bound variants require Noetherianity.\n[Two-entry completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletionTwo.lean) retains supplied Bézout\ncoefficients over commutative rings, with explicit scalar kernel coordinates.",
+   "link": {
+    "text": "Two-entry completion",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletionTwo.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Elementary matrices and determinants",
+   "text": "For commutative rings satisfying `(S₁)`,\n[elementary diagonalization](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/ElementaryGeneration.lean) works in all\nfinite ranks, including zero. [Determinant generation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DeterminantGeneration.lean)\nidentifies invertible determinant-one matrices with elementary matrices, the stable\nelementary subgroup with the determinant kernel, and its quotient with units,\nwithout locality, nontriviality or positive-rank hypotheses.",
+   "link": {
+    "text": "Determinant generation",
+    "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DeterminantGeneration.lean",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": [
+  {
+   "name": "Bass.StableRangeCondition",
+   "file": "StableRange/Basic.lean",
+   "found": {
+    "line": 62,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Bass S_n uses finite right-unimodular rows with witness coefficients on the right; IsStableRange is a relational least natural index, not a default value when no finite bound exists."
+  },
+  {
+   "name": "Bass.stableRangeCondition_one_of_finite_maximalSpectrum",
+   "file": "StableRange/Semilocal.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under CommRing and finite maximal spectrum, the proved S_1 condition shortens the second entry of a right-unimodular pair by b - a*t, including the zero ring."
+  },
+  {
+   "name": "Bass.stableRangeCondition_one_corner",
+   "file": "StableRange/Corner.lean",
+   "found": {
+    "line": 35,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For any idempotent e in a possibly noncommutative ring satisfying S_1, Mathlib's corner eRe with identity e also satisfies S_1. Neither centrality, fullness nor nontriviality is required."
+  },
+  {
+   "name": "Bass.stableRangeCondition_mono",
+   "file": "StableRange/Basic.lean",
+   "found": {
+    "line": 150,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "S_m implies S_n for m <= n, over arbitrary possibly noncommutative rings."
+  },
+  {
+   "name": "Bass.stableRangeCondition_of_surjective",
+   "file": "StableRange/Quotient.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stable-range conditions descend along surjective ring homomorphisms."
+  },
+  {
+   "name": "Bass.stableRangeCondition_quotient_iff",
+   "file": "StableRange/Quotient.lean",
+   "found": {
+    "line": 135,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Quotienting by a quasiregular two-sided ideal preserves every S_n; reflection is not asserted for arbitrary quotient ideals."
+  },
+  {
+   "name": "Bass.stableRange_one_of_isLocalRing",
+   "file": "StableRange/Local.lean",
+   "found": {
+    "line": 252,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A native possibly noncommutative local ring has least stable range one. The native local-ring hypotheses exclude the zero ring."
+  },
+  {
+   "name": "IsLocalRing.le_ringJacobson",
+   "file": "StableRange/Local.lean",
+   "found": {
+    "line": 308,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Every proper left ideal of a possibly noncommutative local ring lies in its Jacobson radical, without a two-sidedness hypothesis. Locality includes nontriviality."
+  },
+  {
+   "name": "IsLocalRing.isMaximal_iff_eq_ringJacobson",
+   "file": "StableRange/Local.lean",
+   "found": {
+    "line": 332,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "In any possibly noncommutative local ring, a left ideal is maximal exactly when it is the Jacobson radical. The radical is maximal, and every maximal left ideal is identified with this same ideal; no two-sidedness hypothesis is imposed. Locality includes nontriviality."
+  },
+  {
+   "name": "IsLocalRing.of_ringJacobson_isMaximal",
+   "file": "StableRange/Local.lean",
+   "found": {
+    "line": 366,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For any possibly noncommutative ring, maximality of its canonical Jacobson radical among all left ideals supplies unit-theoretic locality. No locality or separate nontriviality premise is required; maximality includes properness."
+  },
+  {
+   "name": "IsLocalRing.iff_ringJacobson_isMaximal",
+   "file": "StableRange/Local.lean",
+   "found": {
+    "line": 398,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A ring is local exactly when its canonical Jacobson radical is maximal among all left ideals, not only two-sided ideals. This ring criterion does not subsume Mathlib's commutative-semiring unique-maximal-ideal provider."
+  },
+  {
+   "name": "Bass.stableRangeCondition_one_isDedekindFinite",
+   "file": "StableRange/Regular.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "S_1 makes every one-sided inverse two-sided."
+  },
+  {
+   "name": "Bass.isUnitRegular_iff_stableRangeCondition_one",
+   "file": "StableRange/Regular.lean",
+   "found": {
+    "line": 365,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a von Neumann-regular ring, unit-regularity is equivalent to S_1. Replacing S_1 by least stable range one additionally requires Nontrivial."
+  },
+  {
+   "name": "Bass.principalRightIdeals_isCompl_of_innerInverse",
+   "file": "StableRange/Regular.lean",
+   "found": {
+    "line": 185,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "An inner inverse x for a gives complementary aR and (1-a*x)R, represented as submodules over the opposite ring."
+  },
+  {
+   "name": "Bass.not_isUnitRegular_moduleEnd_finsupp_nat",
+   "file": "StableRange/Regular.lean",
+   "found": {
+    "line": 287,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The endomorphism ring of a countable direct sum of copies of any nonzero additive module is not unit-regular. Neither the coefficient module nor this direct sum is asserted to be free."
+  },
+  {
+   "name": "CategoryTheory.nonempty_iso_of_biprod_iso_of_end_stableRangeCondition_one",
+   "file": "StableRange/CategoryTheory/Cancellation.lean",
+   "found": {
+    "line": 101,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "In a preadditive category with independent object and Hom universes, S_1 for the canonical End(X) makes X cancel from X biprod Y isomorphic to X biprod Z. Only those two biproducts are required, with no restrictions on Y or Z. The End ring need not be commutative or nontrivial. This generalizes the existing module cancellation proof."
+  },
+  {
+   "name": "CategoryTheory.nonempty_iso_of_biprod_iso_of_isLocalRing_end",
+   "file": "StableRange/CategoryTheory/Cancellation.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A possibly noncommutative local endomorphism ring supplies S_1 and hence biproduct cancellation with the same two-sum floor."
+  },
+  {
+   "name": "Bass.exists_linearEquiv_of_prod_of_end_stableRangeCondition_one",
+   "file": "StableRange/Cancellation.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "If End_R(M) satisfies S_1, an equivalence M x A = M x B gives an equivalence A = B, with no finiteness or projectivity hypothesis. This is a specialization of categorical cancellation, retaining all independent scalar and carrier universes."
+  },
+  {
+   "name": "Bass.IsUnitRegular.subsingleton_of_fin_linearEquiv_fin_prod",
+   "file": "StableRange/Cancellation.lean",
+   "found": {
+    "line": 107,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Finite powers of the regular right module over a unit-regular ring cannot absorb a nontrivial complementary module, including power zero."
+  },
+  {
+   "name": "Bass.isVonNeumannRegular_moduleEnd",
+   "file": "StableRange/DivisionRing.lean",
+   "found": {
+    "line": 125,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The endomorphism ring of any vector space over a division ring is regular."
+  },
+  {
+   "name": "Bass.isUnitRegular_matrix",
+   "file": "StableRange/DivisionRing.lean",
+   "found": {
+    "line": 133,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Every finite square matrix ring over a division ring is unit-regular, including the empty index case; finite dimension supplies automorphic inner inverses, unlike the arbitrary-vector-space assertion."
+  },
+  {
+   "name": "Matrix.repeatBlockHom",
+   "file": "StableRange/RepeatedBlock.lean",
+   "found": {
+    "line": 59,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Repeating square matrices on finite diagonal blocks is a ring homomorphism at NonAssocSemiring generality. Its value is Kronecker product with an identity; injectivity needs a nonempty block family."
+  },
+  {
+   "name": "Matrix.rowRank",
+   "file": "StableRange/DivisionRingRank.lean",
+   "found": {
+    "line": 49,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Finrank of the range of the left-linear row-vector map given by right multiplication, over a possibly noncommutative division ring. The API includes multiplication bounds, reindex invariance and additivity on mutually orthogonal idempotents."
+  },
+  {
+   "name": "Matrix.exists_rowRank_eq",
+   "file": "StableRange/DivisionRingRank.lean",
+   "found": {
+    "line": 158,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Every natural rank bounded by the finite square size is realized."
+  },
+  {
+   "name": "Matrix.rowRank_repeatBlock",
+   "file": "StableRange/DivisionRingRank.lean",
+   "found": {
+    "line": 327,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Repeated blocks scale row rank by their number, including an empty block family."
+  },
+  {
+   "name": "Matrix.normalizedRowRank_repeatBlock",
+   "file": "StableRange/DivisionRingRank.lean",
+   "found": {
+    "line": 421,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Normalized real rank is preserved for nonempty square matrices and nonempty finite block families. Normalized rank of the identity is one only under the nonempty-size hypothesis; empty-size division is totalized in Lean and does not give that assertion."
+  },
+  {
+   "name": "Bass.isVonNeumannRegular_iff_isReduced_and_krullDimLE_zero",
+   "file": "StableRange/Commutative.lean",
+   "found": {
+    "line": 111,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Commutative regular rings are exactly reduced rings of Krull dimension at most zero."
+  },
+  {
+   "name": "Bass.IsVonNeumannRegular.flat",
+   "file": "StableRange/Commutative.lean",
+   "found": {
+    "line": 142,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Every module over a commutative regular ring is flat, with no finite-generation assumption."
+  },
+  {
+   "name": "Bass.stableRangeCondition_one_of_krullDimLE_zero",
+   "file": "StableRange/CommutativeStableRange.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Krull dimension at most zero implies S_1 for commutative rings, without reducedness or nontriviality. The separate least-index-one result requires Nontrivial; the zero ring satisfies S_0."
+  },
+  {
+   "name": "Bass.IsVonNeumannRegular.isUnitRegular",
+   "file": "StableRange/CommutativeStableRange.lean",
+   "found": {
+    "line": 50,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Every commutative regular ring is unit-regular."
+  },
+  {
+   "name": "Bass.stableRangeCondition_succ_of_krullDimLE",
+   "file": "StableRange/BassDimension.lean",
+   "found": {
+    "line": 561,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A commutative noetherian ring of Krull dimension at most d satisfies S_(d+1). No reducedness, nontriviality or infinite-residue-field assumption is imposed; the proof uses finite-prime avoidance and height."
+  },
+  {
+   "name": "LinearMap.kerProdEquivOfRightInverse",
+   "file": "StableRange/Module/SplitSurjective.lean",
+   "found": {
+    "line": 96,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Over a semiring, a specified linear right inverse gives ker(f) x N equivalent to the additive-group source M, with additive-monoid target N and independent universes. Forward coordinates add the kernel element to the section image; inverse coordinates are x - s(f(x)) and f(x). Neither finiteness, projectivity nor freeness is required."
+  },
+  {
+   "name": "LinearMap.kerProdEquivOfRightInverse_ofInjective",
+   "file": "StableRange/Module/SplitSurjective.lean",
+   "found": {
+    "line": 216,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under the ring hypotheses of Mathlib's right-split-exact equivalence, identifying any injective first map with the kernel transports the kernel-product equivalence to that construction using the same section."
+  },
+  {
+   "name": "LinearMap.isRightUnimodular_iff_surjective_dotProductBilin",
+   "file": "StableRange/RowKernel.lean",
+   "found": {
+    "line": 605,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For any ring R and finite row a, the right-linear map over Rᵐᵒᵖ evaluates to sum a_i*x_i. Right-unimodularity is equivalent to its surjectivity; companion section and right-span criteria include the empty row and the zero ring."
+  },
+  {
+   "name": "LinearEquiv.rightCoefficientKernelProd",
+   "file": "StableRange/RowKernel.lean",
+   "found": {
+    "line": 541,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A right-inverse column b gives the section y ↦ (b_i*y) and an explicit right-linear equivalence ker(σ) × R ≃ R^n whose inverse second coordinate is the original row σ. No free kernel or matrix completion follows from this arbitrary-ring splitting."
+  },
+  {
+   "name": "LinearEquiv.rightCoefficientRowCoordinates",
+   "file": "StableRange/RightRowCompletion.lean",
+   "found": {
+    "line": 44,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A chosen right-inverse column and finite coordinates of the right kernel give a right-linear equivalence whose first coordinate is the original row and whose tail is the chosen coordinate of its witness-dependent kernel projection."
+  },
+  {
+   "name": "Matrix.rightRowCompletion",
+   "file": "StableRange/RightRowCompletion.lean",
+   "found": {
+    "line": 131,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "The supplied witness and kernel coordinates yield a rectangular matrix with first row equal to the original row, paired with an explicit two-sided inverse that retains the supplied witness as its first column. Matrix actions agree with the coordinate maps."
+  },
+  {
+   "name": "LinearEquiv.rightCoefficientKernelEquivOfMatrixInverse",
+   "file": "StableRange/RightRowCompletion.lean",
+   "found": {
+    "line": 254,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A two-sided rectangular inverse with specified first row gives actual right-kernel coordinates by tail(A *ᵥ k), reconstructed by B *ᵥ Fin.cons 0 t; no prior freeness assumption is required."
+  },
+  {
+   "name": "Matrix.isRightUnimodular_and_free_kernel_iff_exists_rectangular_inverse",
+   "file": "StableRange/RightRowCompletion.lean",
+   "found": {
+    "line": 416,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any ring, right-unimodularity with a free right kernel is equivalent to some finite rectangular two-sided inverse pair retaining the row. Splitting derives finite generation of the kernel; no commutativity, stable-range or invariant-basis-number condition is imposed."
+  },
+  {
+   "name": "LinearEquiv.isRightUnimodular_iff_exists_kernelProdEquiv",
+   "file": "StableRange/RowKernel.lean",
+   "found": {
+    "line": 678,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A finite row is right-unimodular exactly when it has a kernel-product equivalence over the opposite ring with inverse second coordinate equal to the original row, not just an abstract product equivalence."
+  },
+  {
+   "name": "LinearEquiv.kernelProdEquivOfIsRightUnimodular_eq_rightCoefficientKernelProd",
+   "file": "StableRange/RowKernel.lean",
+   "found": {
+    "line": 760,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For commutative rings, kernel transport compares the scalar and right-linear splittings using the same chosen witness in both; the comparison does not identify that witness with a test fixture."
+  },
+  {
+   "name": "Bass.coefficientRowKernelEquivSuccOfStableRangeCondition",
+   "file": "StableRange/RowKernel.lean",
+   "found": {
+    "line": 448,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Over a commutative ring satisfying S_n, a right-unimodular row of length n+1 has kernel explicitly equivalent to the free module on Fin n. Monotonicity gives free kernels for lengths at least s+1 under S_s, without Noetherianity or a dimension bound."
+  },
+  {
+   "name": "Bass.coefficientRowKernelEquivOfMatrixInverse",
+   "file": "StableRange/RowKernel.lean",
+   "found": {
+    "line": 172,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Over a commutative ring, any chosen row i of a matrix with a specified two-sided inverse has kernel equivalent to functions on the other indices. No stable-range assumption is used; i : Fin n supplies nonemptiness and n=1 gives the empty complementary index type."
+  },
+  {
+   "name": "Matrix.coefficientRowCompletionTwo",
+   "file": "StableRange/RowCompletionTwo.lean",
+   "found": {
+    "line": 50,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Over any commutative ring, a specified witness a₀b₀+a₁b₁=1 completes the row (a₀,a₁) to a determinant-one matrix with second row (-b₁,b₀). Its inverse has rows (b₀,-a₁) and (b₁,a₀)."
+  },
+  {
+   "name": "Bass.coefficientRowKernelEquivTwo",
+   "file": "StableRange/RowCompletionTwo.lean",
+   "found": {
+    "line": 222,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "The supplied completion identifies the kernel of the original two-element coefficient functional with R, with coordinate -b₁x₀+b₀x₁ and inverse generator (-a₁t,a₀t)."
+  },
+  {
+   "name": "LinearEquiv.coefficientProductCancellationTwo",
+   "file": "StableRange/RowCompletionTwo.lean",
+   "found": {
+    "line": 343,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Any supplied (Fin 2 → R) ≃ₗ[R] (R × P) over a commutative ring identifies P ≃ₗ[R] R via its original first projection and kernel; no stable-range, freeness or nontriviality hypothesis is required."
+  },
+  {
+   "name": "Module.finLinearEquivOfStableRangeCondition",
+   "file": "StableRange/FiniteFree.lean",
+   "found": {
+    "line": 47,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For a commutative R satisfying S_s, an explicit equivalence P x R^m = R^(n+m) with s <= n yields P = R^n, with the exact coordinate count, independent module universe and zero ring allowed. The noetherian Krull-dimension-bound specialization has separate hypotheses."
+  },
+  {
+   "name": "LinearEquiv.coefficientRowCompletionOfStableRangeCondition",
+   "file": "StableRange/RowCompletion.lean",
+   "found": {
+    "line": 44,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A right-unimodular row of length n+1 over a commutative ring satisfying S_s with s <= n yields a self-equivalence whose first output coordinate is the original coefficient functional. Its matrix has that first row and the same specified inverse satisfies both inverse identities."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.exists_elementary_unit_pivot_of_stableRangeCondition_one",
+   "file": "StableRange/ElementaryGeneration.lean",
+   "found": {
+    "line": 40,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Bass S_1 over a commutative ring yields an elementary left factor with a unit leading entry for every invertible successor-rank matrix, including rank one and the zero ring; locality is not required."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.exists_elementary_diagonalization_of_stableRangeCondition_one",
+   "file": "StableRange/ElementaryGeneration.lean",
+   "found": {
+    "line": 93,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Two-sided elementary factors diagonalize every invertible Fin n matrix into units under commutative S_1, including the empty matrix. The generic all-rank unit-pivot induction comes from general-linear-groups."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.exists_elementary_diagonalization_finite_of_stableRangeCondition_one",
+   "file": "StableRange/ElementaryGeneration.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The same diagonalization transports along a finite equivalence to any finite decidable index type, without a chosen order or Nontrivial."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mem_elementarySubgroup_iff_det_eq_one_of_stableRangeCondition_one",
+   "file": "StableRange/DeterminantGeneration.lean",
+   "found": {
+    "line": 78,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over a commutative S_1 ring, an invertible matrix at any finite decidable index type is elementary exactly when its determinant is one; the empty index type and the zero ring are included."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.elementary_eq_ker_det_of_stableRangeCondition_one",
+   "file": "StableRange/DeterminantGeneration.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The stable elementary subgroup is the kernel of the stable determinant, by reducing a stable representative to a finite stage."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.quotientDetMulEquivOfStableRangeConditionOne",
+   "file": "StableRange/DeterminantGeneration.lean",
+   "found": {
+    "line": 142,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "The stable elementary quotient is equivalent to the coefficient units; the forward map is the quotient determinant and the inverse is the existing rank-one section."
+  }
+ ]
+}

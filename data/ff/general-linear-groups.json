@@ -1,0 +1,2793 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-general-linear-groups",
+ "repo": "FormalFrontier/general-linear-groups",
+ "rev": "a2199cf0d02b1e0775890a7ed09b709dfbfba74b",
+ "date": "2026-11-05T19:15:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "general-linear-groups",
+  "description": "Finite general linear groups over possibly noncommutative semirings and rings: Kronecker products of matrix units with reversed identity-factor inverse witnesses, elementary units, ordered commutators, relative normal closures inside elementary groups, finite stabilization, Whitehead block factorization and doubled relative membership and lifting; rectangular block units for independent finite indices with explicit diagonal units; reindexing, nil and quasiregular ideals, congruence subgroups and quotient lifting, nonunital unitization, and matrix trace modulo additive commutators. Scalar unit reflection for Ring-to-Semiring homomorphisms forces quasi-regularity of the canonical two-sided kernel without surjectivity; for surjective maps it is equivalent to this kernel condition. Source and target universes are independent, with no commutativity or local-ring hypothesis. A square-zero kernel of any Ring-to-Semiring homomorphism identifies units mapping to 1 with the additive kernel via u - 1 and 1 + x; the inverse unit has value 1 - x. All mixed kernel products must vanish, with no surjectivity assumption. For left ideals I, J with I^2 contained in J, original-ring principal units map to the additive layer I/(I intersect J); Jacobson containment of I makes the map surjective and identifies its kernel quotient with that layer. Neither two-sidedness nor J contained in I is required. Dual-number GL, SL and scalar-unit reduction kernels, determinant/trace, coefficient maps and the left-conjugation adjoint action use commutative rings. The trace quotient is an additive group, not a quotient ring; its corner inverse requires a chosen matrix index. A Steinberg presentation adds elementary-symbol relations, universal lifts and a finite map onto the elementary subgroup, without opposite-root or central-extension assertions. Over iterated dual numbers, Mathlib's GL units have an ordered commutator equal to the mixed lift of the associative matrix bracket; its outer reduction-kernel element has complete pure-inner readback. For trace-zero inputs, the refinement in Mathlib's SL group uses special-linear factors, identifies the ordered mixed commutator and reads back its pure-inner trace-zero coefficient in the outer SL kernel. Elementary unit-pivot diagonalization, product-one diagonal membership, continuous elementary paths and finite special-linear elementary neighborhoods add algebraic and topological interfaces with their respective unit-minor, path-connectedness and open-scalar-unit hypotheses. Zero-product rectangular blocks over any ring yield a unit 1 + AB whose stabilization is an elementary ordered commutator of block shears. Stable general linear groups form a direct limit over semirings; over rings their stable elementary subgroup is perfect and equals the commutator subgroup, with quotient canonically the abelianization. Over commutative rings the stable determinant and its quotient and abelianization factorizations admit rank-one sections; the elementary subgroup lies in the determinant kernel. Ordered products of matrices with entries in a left ideal I over a semiring have entries in I raised to the list length, for independent finite decidable indices, including empty lists and indices. Repeated factors recover the matrix-power bound. Any exponent annihilating the whole ideal also annihilates a matrix whose entries lie in it.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "independent agent review; no human mathematical review claimed",
+  "notes": "Reviews and build evidence concern specific revisions. No complete Weibel source correspondence or source formalization is asserted."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "AI agents using Lean and Lake",
+    "tool_setup": "Formal Frontier Agents developed Lean proofs and ordinary-import clients using mathlib APIs, compiler feedback and Lake. The clients exercise the public interfaces and degenerate examples; the historical API reference does not enumerate all present results."
+   }
+  ],
+  "notes": "AI agents produced code, proofs and documentation with compiler feedback; no human mathematical review or source-author endorsement is asserted. AI generation alone does not establish originality, copyright ownership or third-party redistribution rights."
+ },
+ "scope": "Reusable finite general-linear-group mathematics over rings, including elementary and relative groups, block factorizations, congruence and quasi-regular quotients, additive trace, a Steinberg presentation, and dual-number kernels in Mathlib's GL/SL groups and ordered mixed commutators. Core rings may be noncommutative; the dual-number layer requires CommRing. The additional elementary algebra/topology layer covers unit-pivot diagonalization, product-one diagonals, local-ring elementary generation, elementary paths and neighborhoods in Mathlib's SL group, each with its stated hypotheses. Scalar unit-reflecting Ring-to-Semiring homomorphisms have quasi-regular canonical two-sided kernels without surjectivity; for surjective maps, this kernel condition is also sufficient for unit reflection. Source and target universes are independent, with no commutativity, local-ring, nontriviality or nil-kernel assumption. Stable general linear groups over semirings have finite representatives, injective stages, compatible lifts and coefficient maps. Over rings the stable elementary subgroup is the commutator subgroup, is intrinsically perfect, and has abelian quotient canonically equivalent to the abelianization. Over commutative rings the stable determinant and its quotient and abelianization factorizations have rank-one sections; elementary matrices are contained in the determinant kernel. The abelian stable elementary quotient is the product of its determinant kernel and the unit group, compatibly with coefficient maps. Over commutative local rings, invertible matrices admit two-sided elementary diagonalization, finite elementary membership is equivalent to determinant one in every rank, stable elementary equals the stable determinant kernel, and the quotient determinant identifies the elementary quotient with the coefficient units via the rank-one section. Fintype and DecidableEq hypotheses apply to matrix index types where stated. The results do not establish stable K1 or K2, a source-complete K-theory formalization, or source-passage coverage.",
+ "sources": [
+  {
+   "title": "The K-book: An Introduction to Algebraic K-theory",
+   "authors": [
+    "Charles A. Weibel"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Complete-book edition (August 29, 2013): Exercises I.1.10-I.1.12; Chapter II, section 2, trace discussion on displayed page 73 (physical PDF page 81).",
+   "url": "https://sites.math.rutgers.edu/~weibel/Kbook/Kbook.pdf"
+  },
+  {
+   "title": "Local Fields and Their Extensions",
+   "authors": [
+    "I. B. Fesenko",
+    "S. V. Vostokov"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Second edition (2002), Chapter I, (5.3) and (5.4)(3).",
+   "url": "https://ivanfesenko.org/wp-content/uploads/2021/10/vol.pdf"
+  }
+ ],
+ "depends": [
+  {
+   "name": "adic-modules",
+   "rev": "d0ce9c7ea73e0f995d7318e448af3e14f2e473bd"
+  }
+ ],
+ "related": [],
+ "highlights": [
+  {
+   "title": "Principal-unit quotients and Jacobson lifting",
+   "statement": "For left ideals I, J in any ring R with I^2 ≤ J and I ≤ Ring.jacobson R, the subgroup U(I) = {u : Rˣ | u - 1 ∈ I} modulo the kernel of u ↦ [u - 1] is canonically isomorphic to the additive quotient I / (I ∩ J), with inverse [x] ↦ [1 + x], without two-sidedness or J ≤ I.",
+   "declarations": [
+    {
+     "name": "Ideal.principalUnitsQuotientEquiv",
+     "file": "GeneralLinearGroups/PrincipalUnits.lean",
+     "found": {
+      "line": 212,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsToQuotient_ker",
+     "file": "GeneralLinearGroups/PrincipalUnits.lean",
+     "found": {
+      "line": 175,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsQuotientEquiv_symm_mk",
+     "file": "GeneralLinearGroups/PrincipalUnits.lean",
+     "found": {
+      "line": 231,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Square-zero unit kernels and conjugation",
+   "statement": "For any ring homomorphism f : R →+* S from a possibly noncommutative ring to a semiring with (ker f)^2 = 0, the units mapping to 1 are isomorphic to the additive group ker f by u ↦ u - 1 and x ↦ 1 + x, and conjugation by any g : Rˣ corresponds to x ↦ g * x * g⁻¹, without a surjectivity hypothesis.",
+   "declarations": [
+    {
+     "name": "RingHom.unitsKerEquivOfSquareZero",
+     "file": "GeneralLinearGroups/SquareZeroUnits.lean",
+     "found": {
+      "line": 59,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "RingHom.unitsKerEquivOfSquareZero_conj_apply_coe",
+     "file": "GeneralLinearGroups/SquareZeroUnits.lean",
+     "found": {
+      "line": 118,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Nilpotent principal-unit groups",
+   "statement": "For any left ideal I of a possibly noncommutative ring R and any natural N with I^N = 0, the principal-unit subgroup {u : Rˣ | u - 1 ∈ I} is nilpotent of class at most N - 1, using natural subtraction and including the trivial-subgroup cases N = 0 and N = 1.",
+   "declarations": [
+    {
+     "name": "Ideal.isNilpotent_stabilizer_quotient_one_of_pow_eq_bot",
+     "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+     "found": {
+      "line": 267,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.nilpotencyClass_stabilizer_quotient_one_le_of_pow_eq_bot",
+     "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+     "found": {
+      "line": 278,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Positive principal-unit layer commutator pairings",
+   "statement": "For a left ideal I in any ring R and positive degrees a, b, the bracket xy - yx descends to an integer-bilinear pairing of successive ideal layers in degree a+b, and its restriction along the injective principal-unit symbols is the pairing represented by the ordered commutator of original-ring units, without two-sidedness, Jacobson containment or symbol surjectivity.",
+   "declarations": [
+    {
+     "name": "Ideal.powLayerCommutator",
+     "file": "GeneralLinearGroups/PrincipalUnits/Commutator.lean",
+     "found": {
+      "line": 150,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerCommutator",
+     "file": "GeneralLinearGroups/PrincipalUnits/Commutator.lean",
+     "found": {
+      "line": 304,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerCommutator_mk_mk",
+     "file": "GeneralLinearGroups/PrincipalUnits/Commutator.lean",
+     "found": {
+      "line": 324,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerSymbol_commutator",
+     "file": "GeneralLinearGroups/PrincipalUnits/Commutator.lean",
+     "found": {
+      "line": 315,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Functorial symbols and Jacobson equivalences",
+   "statement": "On positive layers, unital ring maps carrying left ideals into left ideals induce integer-linear maps preserving symbols and commutator pairings, while Jacobson-contained ideals have symbol equivalences with natural inverses when both ideals satisfy the radical condition, and pointwise-nil or power-nilpotent left ideals have surjective symbols.",
+   "declarations": [
+    {
+     "name": "Ideal.principalUnitsPowLayerSymbol_map",
+     "file": "GeneralLinearGroups/PrincipalUnits/Naturality.lean",
+     "found": {
+      "line": 120,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.powLayerMap_commutator",
+     "file": "GeneralLinearGroups/PrincipalUnits/Naturality.lean",
+     "found": {
+      "line": 134,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerMap_commutator",
+     "file": "GeneralLinearGroups/PrincipalUnits/Naturality.lean",
+     "found": {
+      "line": 149,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerEquiv",
+     "file": "GeneralLinearGroups/PrincipalUnits/LayerEquivalence.lean",
+     "found": {
+      "line": 61,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerEquiv_symm_map",
+     "file": "GeneralLinearGroups/PrincipalUnits/LayerEquivalence.lean",
+     "found": {
+      "line": 135,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerSymbol_surjective_of_forall_isNilpotent",
+     "file": "GeneralLinearGroups/PrincipalUnits/LayerEquivalence.lean",
+     "found": {
+      "line": 100,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.principalUnitsPowLayerSymbol_surjective_of_pow_eq_bot",
+     "file": "GeneralLinearGroups/PrincipalUnits/LayerEquivalence.lean",
+     "found": {
+      "line": 119,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  }
+ ],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Elementary generation over Euclidean domains",
+   "text": "For any `EuclideanDomain R`,\nan invertible finite matrix belongs to the elementary subgroup exactly when\nits determinant is one, including empty and singleton index types. The stable\nelementary quotient is multiplicatively equivalent to `Rˣ`, with the existing\nquotient determinant as forward map and the existing rank-one section as inverse.\nBoth directions commute with arbitrary ring homomorphisms between Euclidean\ndomains. [Euclidean elementary generation](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/EuclideanElementaryGeneration.lean).",
+   "link": {
+    "text": "Euclidean elementary generation",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/EuclideanElementaryGeneration.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Signed swaps and even permutation matrices",
+   "text": "Over any possibly noncommutative\n`Ring R`, the word `e_ij(1) e_ji(-1) e_ij(1)` gives the signed coordinate swap\nwith block `[0,1;-1,0]`. Every even permutation of a finite decidable basis gives\nan element of the original finite elementary subgroup, including ranks zero,\none and two and zero rings. The permutation unit sends `e_i` to `e_(σ i)`;\nno parity converse is asserted in characteristic two. The argument follows\nWeibel, *The K-book*, III.1.2.1, using Mathlib's permutation units and generation\nof the alternating group by three-cycles.\n[Signed coordinate swaps and even permutations](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/ElementaryPermutation.lean).",
+   "link": {
+    "text": "Signed coordinate swaps and even permutations",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/ElementaryPermutation.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Upper-triangular semiring nilpotence",
+   "text": "For an arbitrary, possibly\nnoncommutative `Semiring R` and an independently-universed finite linearly ordered\nindex type, an upper triangular matrix is nilpotent if and only if every diagonal\nentry is nilpotent. Given `e : ι → ℕ` killing the corresponding diagonal entries,\nthe bound is `A ^ (∑ i, e i) = 0`, including empty indices and zero exponents.\nThe strict `Fin n` predicate uses only `Zero`; its support bound holds over\n`NonUnitalNonAssocSemiring` and its nilpotence over `NonUnitalSemiring`.\nPositive-power index `n` means `n + 1` factors, not an exact `n`th-power bound.\nThe unitization and relative general linear constructions require\n`NonUnitalRing`.\n[Upper-triangular nilpotence](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/UpperTriangularNilpotent.lean),\n[nonunital powers and strict triangularity](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/NonUnitalNilpotent.lean).",
+   "link": {
+    "text": "nonunital powers and strict triangularity",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/NonUnitalNilpotent.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite block-triangular units",
+   "text": "Over any possibly noncommutative `Ring`,\na block-triangular matrix on a finite decidable index type is a unit if each\nequality-fiber diagonal block is a unit and its represented labels form a\nstrict chain in a `Preorder`. For a `PartialOrder`, a chain for `≤` suffices.\nThe index, label and coefficient universes are independent. Labels have\ndecidable equality but need not be finite or globally linearly ordered,\nand block sizes may differ. Empty indices, empty fibers and zero rings are\nincluded. Over a `Semiring`, the converse holds if each original\ndiagonal-block matrix monoid is Dedekind-finite: an ambient matrix unit\nthen has unit diagonal blocks. Separately, given `[Invertible M]` and unit\ndiagonal blocks, the given inverse `⅟M` is block triangular over a semiring,\nwith no direct-finiteness assumption. Both directions retain the same\nrepresented-chain hypotheses; neither asserts semiring sufficiency from\ndiagonal units or derives matrix direct finiteness from scalar direct\nfiniteness.\n[Block-unit criterion](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/BlockTriangularUnits.lean).",
+   "link": {
+    "text": "Block-unit criterion",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/BlockTriangularUnits.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Matrix ideal-power bounds and nilpotence",
+   "text": "For a `Semiring R` and a left\nideal `I : Ideal R`, an ordered list `As` of square matrices with entries in\n`I` has `(As.prod) i j ∈ I ^ As.length`. The finite decidable index type has\na universe independent of the coefficients. Repeated factors recover\n`(A ^ k) i j ∈ I ^ k`. Any exponent annihilating\nthe whole ideal also annihilates the matrix, so `IsNilpotent I` implies\n`IsNilpotent A`. Empty lists, empty indices and zero semirings are included,\nwithout two-sidedness or commutativity. Right-append induction matches\n`I ^ (k + 1) = I ^ k * I`, without a multiplicative monoid on arbitrary\nleft ideals; pointwise nilness of an arbitrary ideal does not give a\nuniform exponent. For a `CommSemiring R`, however, a finite\nsquare matrix with nilpotent entries is nilpotent: its finitely generated\nentry ideal is contained in the nilradical and is therefore nilpotent.\nThis needs no Noetherian hypothesis and includes empty indices and zero semirings.\n[Ordered-product bound and nilpotence](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/MatrixNilpotentIdeal.lean),\n[nilpotent entries](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/MatrixNilpotentEntries.lean),\n[nonzero dual-number diagonal](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/MatrixNilpotentIdeal.lean),\n[nonzero matrix over `ZMod 4`](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/MatrixNilpotentEntriesClient.lean).",
+   "link": {
+    "text": "nonzero matrix over `ZMod 4",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/MatrixNilpotentEntriesClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Kronecker products of matrix units",
+   "text": "Over any `Semiring`, the Kronecker\nproduct of two unit matrices is a unit, for independently-universed finite\ndecidable square indices, including empty indices and zero semirings. The\nordered factorization `(A ⊗ₖ 1) * (1 ⊗ₖ B)`, for chosen input units with\nstored inverse values `A'` and `B'`, supplies the reversed inverse witness\n`(1 ⊗ₖ B') * (A' ⊗ₖ 1)`; tensoring input inverses is not valid in general\nover noncommutative coefficients. The rectangular mixed identity\nneeds only a `NonAssocSemiring` and finite, decidable middle indices. Over\ncommutative coefficients, the extracted unit agrees with mathlib's general\nlinear Kronecker construction.\n[Unit preservation](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/KroneckerUnits.lean),\n[operational examples](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/KroneckerUnits.lean).",
+   "link": {
+    "text": "operational examples",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/KroneckerUnits.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Single-entry matrix corners",
+   "text": "For a `Semiring R`, finite decidable indices\nand a chosen index `i`, the corner of `Matrix ι ι R` at the diagonal matrix\nunit `single i i 1` is ring-equivalent to `R` by extracting the `(i,i)` entry;\nits inverse inserts a coefficient there. The corner identity is the matrix\nunit, which need not be the ambient matrix identity. The equivalence also\ncovers noncommutative and zero semirings.\n[Corner equivalence](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/MatrixCorner.lean),\n[concrete clients](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/MatrixCornerClient.lean).",
+   "link": {
+    "text": "concrete clients",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/MatrixCornerClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Whitehead factorization and doubled lifting",
+   "text": "Over any `Ring`, the\nblock diagonal `diag(g, g⁻¹)` of a unit is elementary. A surjective ring\nhomomorphism lifts this *doubled* block as a unit; it need not lift the\noriginal same-rank unit. For separately finite block indices, explicitly\nsupplied diagonal units also give rectangular upper-triangular units with\nordered inverse block `-(A⁻¹ * B * D⁻¹)`.\n[Factorization](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/Whitehead.lean),\n[doubled lift](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/Whitehead.lean#L164),\n[elementary membership](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/ElementaryWhitehead.lean#L117),\n[rectangular guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/RectangularBlockUnits.md).",
+   "link": {
+    "text": "rectangular guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/RectangularBlockUnits.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Stable general linear and elementary groups",
+   "text": "Initial-segment stabilization\ndefines a coherent system of finite general linear groups over any `Semiring`,\nwhose noncommutative direct limit has finite representatives, an eventual\nequality criterion, compatible lifts and coefficient maps. Over any `Ring`, the\ndirected union of finite elementary images is the stable commutator subgroup;\nit is perfect in its own right and normal in stable general linear groups.\nIts quotient is canonically the abelianization, naturally under coefficient\nmaps. No finite ambient elementary normality or commutativity hypothesis is needed.\n[Stable general linear group](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableGeneralLinear.lean),\n[stable elementary group](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableElementary.lean),\n[boundary and quotient clients](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/StableElementaryClient.lean).",
+   "link": {
+    "text": "boundary and quotient clients",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/StableElementaryClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Opposite coefficients",
+   "text": "Over any `Semiring R`, inverse-transpose gives\n`GL ι R ≃* GL ι Rᵐᵒᵖ` for finite decidable indices and an equivalence of the\noriginal stable groups. Its entries are `op ((g⁻¹) j i)`, using the unit inverse.\nBoth directions commute with stabilization and arbitrary unital coefficient maps;\ndouble application is canonical double-opposite coefficient transport. Over a\n`Ring R`, it identifies the original stable elementary subgroups and induces an\nequivalence of their quotients, with representative and coefficient-naturality\nformulas. Empty ranks and zero semirings are allowed.\n[Finite inverse-transpose](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/Opposite.lean),\n[stable inverse-transpose](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableOpposite.lean),\n[elementary quotients](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableElementaryOpposite.lean).",
+   "link": {
+    "text": "elementary quotients",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableElementaryOpposite.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite coefficient products of stable groups and elementary quotients",
+   "text": "For arbitrary `Semiring R` and `Semiring S` in independent universes,\ncoefficient projections give `StableGL (R × S) ≃* (StableGL R × StableGL S)`.\nFor `[Finite ι]` and a family of semirings `R i`, evaluation gives\n`StableGL (∀ i, R i) ≃* (∀ i, StableGL (R i))`, including the empty family.\nOver arbitrary rings these comparisons carry the stable elementary subgroup\nonto the product of the elementary subgroups and induce equivalences of the\nexisting elementary quotients. All comparisons commute with arbitrary\ncoefficient maps; inverse-stage computations allow unequal representative\nranks after passage to any common upper bound. Zero rings and rank zero are\nincluded; no unrestricted infinite-product stable-group equivalence is asserted.\nThese extend the binary ring example in Weibel, *The K-book*, Example III.1.1.3.\n[Finite coefficient products](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableProduct.lean).",
+   "link": {
+    "text": "Finite coefficient products",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableProduct.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Matrix invariance of stable groups and elementary quotients",
+   "text": "For `0 < n`,\nfixed row-major flattening gives\n`StableGL (Matrix (Fin n) (Fin n) R) ≃* StableGL R` over any `Semiring R`.\nOver a `Ring R`, it induces an equivalence of the existing stable elementary\nquotients. Over a `CommRing R`, the transported quotient determinant on a\nmatrix-ring unit is its ordinary finite determinant.\n[Matrix invariance](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableMatrix.lean).",
+   "link": {
+    "text": "Matrix invariance",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableMatrix.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Stable determinant",
+   "text": "Over a commutative ring, finite determinants induce\nhomomorphisms on stable general linear groups, their elementary quotient and\ntheir abelianization. Rank-one units provide determinant sections; the\nelementary subgroup lies in the determinant kernel. The abelian elementary quotient\nsplits as the product of its\ndeterminant kernel and the units, naturally under coefficient maps; this\ndoes not assert a product splitting of stable general linear groups.\nFor commutative local rings, elementary matrices equal the determinant kernel,\nand the existing quotient determinant is an equivalence with the units.\nThe rank-one map itself is defined over any semiring.\n[Determinant and rank-one maps](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableDeterminant.lean),\n[integer and boundary examples](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/StableDeterminantClient.lean).",
+   "link": {
+    "text": "integer and boundary examples",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/StableDeterminantClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Zero-product elementary stabilization",
+   "text": "For rectangular `A`, `B` over any\n`Ring` with `B * A = 0`, the unit `1 + A * B` has inverse `1 - A * B`.\nStabilizing by the identity on the other block gives exactly the ordered\ncommutator of the upper shear of `A` and lower shear of `B`, hence an\nelementary unit. Both index types may be empty.\n[Construction and factorization](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/ZeroProductStabilization.lean),\n[integer and boundary examples](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/ZeroProductStabilizationClient.lean).",
+   "link": {
+    "text": "integer and boundary examples",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/ZeroProductStabilizationClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Rectangular complement isomorphisms",
+   "text": "In any preadditive category\n`C : Type u` with `Category.{v} C`, for arbitrary objects `X`, `Y` and\nmorphisms `a : X ⟶ Y`, `b : Y ⟶ X`, the complements are simultaneously\nisomorphisms:\n`IsIso (𝟙 X - a ≫ b) ↔ IsIso (𝟙 Y - b ≫ a)`. Their canonical inverse is\n`inv (𝟙 X - a ≫ b) = 𝟙 X + a ≫ inv (𝟙 Y - b ≫ a) ≫ b` under only\n`IsIso (𝟙 Y - b ≫ a)`. The universes `u`, `v` are independent; no\nfiniteness, biproduct or nonzero-object hypothesis is imposed. The\nrectangular unit-switch inverse below is a finite-matrix specialization.\n[Criterion and inverse](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/RectangularIsomorphisms.lean).",
+   "link": {
+    "text": "Criterion and inverse",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/RectangularIsomorphisms.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Rectangular unit switch",
+   "text": "Over any `Ring`, for independently finite,\ndecidable index types, a unit `g = 1 + A * B` determines a unit\n`h = 1 + B * A` with inverse `1 - B * g⁻¹ * A`. Its diagonal pair\n`diag(g, h⁻¹)` is the ordered product\n`U(A) L(B) U(-(g⁻¹ * A)) L(-(B * g))`, hence elementary.\nEmpty blocks and the zero ring are allowed; `B * A = 0` recovers the\nzero-product stabilization commutator above.\n[Construction and factorization](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/RectangularUnitSwitch.lean),\n[integer and boundary examples](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/RectangularUnitSwitchClient.lean).",
+   "link": {
+    "text": "integer and boundary examples",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/RectangularUnitSwitchClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Ring Schur reduction",
+   "text": "For independently finite, decidable block indices\nover any `Ring`, an invertible northwest block `A` makes\n`[[A, B], [C, D]]` a unit exactly when the ordered residual\n`D - C * ⅟A * B` is a unit. Given a unit residual, the corresponding block\nunit has an explicit ordered inverse; homomorphisms killing the elementary\nsubgroup see only the diagonal pivot and residual, with no condition on\nthe target group. Empty blocks and the zero ring are included.\n[Construction and criterion](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/SchurReduction.lean),\n[noncommutative and boundary clients](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/SchurReductionClient.lean).",
+   "link": {
+    "text": "noncommutative and boundary clients",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/SchurReductionClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Unit-pivot reduction and elementary diagonals",
+   "text": "Over any `CommRing`,\nunit ordered leading minors permit two-sided elementary diagonalization;\na product-one diagonal is elementary, and the unit-pivot, determinant-one\ncriterion puts a finite GL unit in `E`. This is not a general `SL = E`\ntheorem; the minor hypothesis is stronger than nonvanishing. More generally,\nif an elementary left factor can produce a unit leading\nentry for every invertible matrix at every successor rank, the same\ntwo-sided reduction exists at every finite rank. The latter theorem is\nconditional on that all-rank pivot property; it does not assert an\nunconditional elementary generation theorem.\n[Unit-pivot guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/UnitPivotDiagonalization.md),\n[conditional pivot induction](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/UnitPivotInduction.lean),\n[diagonal guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/ElementaryDiagonal.md).",
+   "link": {
+    "text": "diagonal guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/ElementaryDiagonal.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Elementary generation over local rings",
+   "text": "Every invertible finite matrix\nover a commutative local ring has elementary left and right factors reducing\nit to a diagonal of units, without a leading-minor hypothesis. At every\nfinite rank, determinant one characterizes the elementary subgroup. The\nstable elementary subgroup is the determinant kernel, and the elementary\nquotient is canonically the coefficient units via the existing determinant\nand rank-one section. Over a field, Mathlib transvection lists give an\ninvertible diagonal factorization.\n[Local generation](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/LocalElementaryGeneration.lean),\n[nonfield and rank-boundary clients](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/LocalElementaryGenerationClient.lean).",
+   "link": {
+    "text": "nonfield and rank-boundary clients",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/LocalElementaryGenerationClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Elementary paths and SL neighborhoods",
+   "text": "Over a topological ring,\nelementary GL units vary continuously with coefficients, even when the\ncoefficient ring is noncommutative. Path-connected coefficients make the\nelementary subgroup path connected. For commutative coefficients, an open\nscalar-unit locus makes its comap in Mathlib's special linear group open\nand closed; additionally path-connected coefficients identify it with the\nidentity path component.\n[Paths guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/ElementaryPaths.md),\n[neighborhood guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/ElementaryNeighborhood.md).",
+   "link": {
+    "text": "neighborhood guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/ElementaryNeighborhood.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Scalar unit reflection and canonical quasi-regular kernels",
+   "text": "For\n`f : R →+* S` from a possibly noncommutative ring to a semiring,\n`IsLocalHom f` (reflection of units) makes the canonical two-sided kernel\n`TwoSidedIdeal.ker f` quasi-regular, **without surjectivity**, by\n[`RingHom.isQuasiregular_ker`](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/QuasiregularQuotient.lean).\nFor a **surjective** such map, unit reflection is equivalent to kernel\nquasi-regularity by\n[`RingHom.isLocalHom_iff_isQuasiregular_ker`](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/QuasiregularQuotient.lean);\nits reverse direction is also available through\n[`RingHom.isLocalHom_of_surjective_of_isQuasiregular_ker`](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/QuasiregularQuotient.lean).\nMathlib supplies `IsUnit (f a) ↔ IsUnit a` via `isUnit_map_iff`; under\nsurjectivity it also gives a surjective induced map on units. Source and\ntarget universes are independent; neither commutativity, local-ring\nstructure, nontriviality nor nilness of the kernel is assumed. Nil kernels\nspecialize through `TwoSidedIdeal.IsNil.isQuasiregular`.",
+   "link": {
+    "text": "RingHom.isQuasiregular_ker",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/QuasiregularQuotient.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "RingHom.isQuasiregular_ker",
+    "file": "GeneralLinearGroups/QuasiregularQuotient.lean",
+    "found": {
+     "line": 202,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Lifting modulo quasi-regular ideals",
+   "text": "For a two-sided ideal, its\nunitization general linear group identifies with the congruence kernel;\nquasi-regularity of *every* ideal element additionally makes the quotient\nGL map surjective. The Jacobson radical is the greatest quasi-regular\nideal, and pointwise nil ideals provide examples without a shared nilpotence\nexponent.\n[Kernel equivalence](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/CongruenceSubgroup.lean#L292),\n[quotient lifting](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/QuasiregularQuotient.lean#L139),\n[ideal characterization](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/QuasiregularIdeal.lean#L207).",
+   "link": {
+    "text": "ideal characterization",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/QuasiregularIdeal.lean#L207",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Trace modulo additive commutators",
+   "text": "For a chosen index `p : n`,\ntrace gives an additive equivalence from square matrices modulo additive\ncommutators to the coefficient ring modulo additive commutators; its inverse\ninserts a scalar in the `p,p` corner. The forward map also works at empty\nrank. These are *additive groups*, not quotient rings or a `K₀` descent.\n[Equivalence and forward map](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/MatrixTrace.lean).\nThe following characteristic laws use weaker hypotheses:\n[cyclic representatives and unit conjugation](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/AdditiveCommutator.lean)\nrequire `AddCommGroup` with `Mul`, respectively `Monoid`, without distributivity;\n[raw block trace](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/MatrixTrace.lean) requires only\n`AddCommMonoid` and two independently-universed finite index types, without\ndecidable equality or nonemptiness. The raw `Sum`-indexed block shape\ncomplements mathlib's dependent `trace_blockDiagonal'` formula.",
+   "link": {
+    "text": "raw block trace",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/MatrixTrace.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite elementary and relative structure",
+   "text": "Off-diagonal elementary\nunits generate `E`; ordered commutator laws prove that `E` is perfect at\nrank at least three. A two-sided ideal defines the relative normal closure\n*inside `E`*, not a claimed same-rank normal subgroup of ambient `GL`.\nCongruence units become relatively elementary after Whitehead doubling;\nstabilization preserves elementary, relative and congruence inclusions.\n[Perfectness](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/ElementaryCommutator.lean#L80),\n[relative subgroup](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/RelativeElementary.lean#L98),\n[relative Whitehead](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/RelativeWhitehead.lean#L134),\n[guides](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md).",
+   "link": {
+    "text": "guides",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "A Steinberg presentation and universal maps",
+   "text": "Over any `Ring`, for an\narbitrary index type, symbols satisfy precisely the additive, disjoint-root\nand ordered-composable-root relations, and compatible maps extend uniquely.\nFinite decidable indices additionally give a surjection onto `E`, not\nonto all of `GL`. The reverse relation has coefficient `-(b * a)`; no\nopposite-root, central-kernel or `K₂` theorem is claimed.\n[Universal lift](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/Steinberg.lean#L121),\n[onto-`E` map](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/Steinberg.lean#L206),\n[presentation guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/FiniteRankSteinberg.md).",
+   "link": {
+    "text": "presentation guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/FiniteRankSteinberg.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Units over square-zero kernels",
+   "text": "For a homomorphism from any `Ring` to\nany `Semiring`, a square-zero kernel identifies the units mapping to `1`\nwith the additive kernel, written multiplicatively. The coordinates are\n`u ↦ u - 1` and `x ↦ 1 + x`, with inverse unit `1 - x`. The hypothesis\nkills every mixed product of kernel elements; no commutativity or\nsurjectivity is needed. The scalar dual-number equivalence is a\nspecialization with its explicit lift and readback preserved. This is the\nalgebraic ingredient of Fesenko–Vostokov, Chapter I (5.4)(3), not a\nunit-lifting or valuation-layer quotient theorem.\n[Equivalence and coordinate API](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/SquareZeroUnits.lean),\n[dual-number comparison](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/DualNumberSquareZeroUnits.lean).",
+   "link": {
+    "text": "dual-number comparison",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/DualNumberSquareZeroUnits.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Principal-unit ideal layers on original-ring units",
+   "text": "For left ideals\n`I, J` in any `Ring`, with `I ^ 2 ≤ J`, the stock stabilizer of `[1]` in\nthe quotient left module `R / I` maps by `u ↦ [u - 1]` to the additive\nlayer `I / (I ∩ J)`, written multiplicatively. Its kernel is exactly the\nrelative stabilizer modulo `J`, which is therefore normal. If additionally\n`I ≤ Ring.jacobson R`, the map is surjective and its kernel quotient is\nisomorphic to that additive layer, with inverse `[x] ↦ [1 + x]` in the\noriginal ring. Neither ideal needs to be two-sided, and `J ≤ I` is not\nassumed. For two-sided `I`, the carrier agrees with the kernel of reduction\non units. The nonzero-denominator model uses `(3)/(9)` in `ZMod 27`;\nthe integer boundary explains the original-unit lifting hypothesis.\n[Equivalence and characteristic laws](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits.lean),\n[models and boundary](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/PrincipalUnitsClient.lean).\nFor a commutative domain `R`, a nonzero principal ideal\n`I = Ideal.span {π}` contained in `Ideal.jacobson ⊥`, and `n ≥ 1`,\nthe original-ring unit stabilizer at `I ^ n`, modulo its exact coordinate\nkernel (the relative deeper stabilizer at `I ^ (n + 1)`), is equivalent\nto `Multiplicative (R ⧸ I)`. It sends `[1 + a * π ^ n]` to `[a]`;\nthe inverse returns that original-ring unit class. The target is the additive\ncoefficient **ring**, not necessarily a field. Replacing `π` by `u * π`\nfor `u : Rˣ` with residue unit `ū` multiplies a fixed class's forward coefficient\nby `(ū⁻¹) ^ n`; the inverse at a fixed coefficient uses the old inverse\nwith parameter multiplied by `ū ^ n`. Normality and surjectivity are\nconclusions, not assumptions; exponent zero instead gives multiplicative\nreduction.\n[Coefficients and generator-change laws](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Powers.lean),\n[coefficient clients](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/PrincipalUnitsPowersClient.lean).",
+   "link": {
+    "text": "coefficient clients",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/tests/GeneralLinearGroupsTests/PrincipalUnitsPowersClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Principal-unit commutators and nilpotence",
+   "text": "Over any `Ring R`, including\nnoncommutative and zero rings, write `U(I)` for the stock `Rˣ`-stabilizer\nof `1` in the quotient left module `R ⧸ I`. For two-sided `I`, this is\nthe kernel of reduction on units to the quotient ring. Arbitrary left ideals\n`A, B` satisfy `[U(A), U(B)] ≤ U(A * B + B * A)`. For two-sided `I`,\n`[U(I ^ a), U(I ^ b)] ≤ U(I ^ (a + b))` for all `a, b : ℕ`, including\nzero, without a nilpotence assumption. For any left ideal `I`, the lower\ncentral series has `LCS(k) ≤ U(I ^ (k + 1))`, with zeroth term `U(I)`.\nIf `I ^ N = ⊥`, then `U(I)` is nilpotent of class at most `N - 1`\n(natural subtraction); `N = 0` and `N = 1` give the trivial subgroup.\nThis is not a nilpotence claim about the full unit group. Positive additive\nlayers use the preceding ideal-layer and power-coordinate API, not an\nadditive equivalence at exponent zero.\n[Commutator bounds and nilpotence](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Filtration.lean).",
+   "link": {
+    "text": "Commutator bounds and nilpotence",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Leading coordinates of principal-unit commutators",
+   "text": "For any left ideal\n`I` in any `Ring R` and positive `a, b`, let `x = u - 1 ∈ I ^ a` and\n`y = v - 1 ∈ I ^ b` for original-ring units `u, v`. Then\n`[u, v] - 1 - (x * y - y * x) ∈ I ^ (a + b + min a b)`.\nIn particular, `[u, v] - 1` and `x * y - y * x` have the same class\nin the quotient **left module** `R ⧸ I ^ (a + b + 1)`.\nNo two-sidedness, commutativity or nilpotence is needed; the commutator\nis `u * v * u⁻¹ * v⁻¹`, with no degree-dependent sign.\n[Coordinate estimate and quotient equality](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Filtration.lean),\n[API guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md#principal-unit-commutator-coordinates).",
+   "link": {
+    "text": "API guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md#principal-unit-commutator-coordinates",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Positive principal-unit layer pairings",
+   "text": "For any left ideal `I` in any\n`Ring R` and `a, b : ℕ+`, the bracket `xy - yx` descends to an\n**integer-bilinear** pairing of successive ideal layers in degrees\n`a`, `b` and `a + b`. The additive positive unit layers embed in these\nideal layers by the injective symbol `[u] ↦ [u - 1]`; their pairing is\nrepresented by the ordered commutator of original-ring units. Both pairings\nare alternating, with ordinary negation under swapping and the canonical\ndegree cast. No two-sidedness, Jacobson condition or symbol surjectivity\nis assumed, and no degree-zero additive layer is asserted.\n[Pairings and characteristic laws](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Commutator.lean),\n[API guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md#positive-principal-unit-layer-pairings).",
+   "link": {
+    "text": "API guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md#positive-principal-unit-layer-pairings",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Functorial symbols and Jacobson equivalences",
+   "text": "A unital ring map\ncarrying a left ideal `I` into `J` induces integer-linear maps on their\npositive ideal and unit layers, preserving symbols and both commutator\npairings. The maps respect identities and composition, without injectivity,\nsurjectivity or radical assumptions on the ring map. If\n`I ≤ Ring.jacobson R`, its symbol is an integer-linear equivalence, with\ninverse represented by the original-ring unit `1 + x`. Inverse naturality\nrequires the Jacobson condition on **both** source and target ideals.\nSymbols are also surjective when every element of the left ideal is\nnilpotent, or when `I ^ N = ⊥`, including `N = 0, 1`; no two-sidedness\nor common exponent is assumed for the pointwise-nil result.\n[Forward maps and naturality](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Naturality.lean),\n[Equivalences and nil lifting](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/LayerEquivalence.lean),\n[API guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md#functorial-symbols-and-jacobson-equivalences).",
+   "link": {
+    "text": "API guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/README.md#functorial-symbols-and-jacobson-equivalences",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Images of principal-unit subgroups",
+   "text": "For a ring homomorphism\n`f : R →+* S` with `Ring R` and `Ring S` in independent universes,\nand a left ideal `I ≤ Ideal.jacobson ⊥`, a unit `u : Sˣ` lies in the image\nunder `Units.map f.toMonoidHom` of the original `R`-unit stabilizer of\n`[1]` in the quotient left module `R ⧸ I` exactly when\n`∃ a ∈ I, f a = (u : S) - 1`.\nThis uses the set image of ideal elements, not the extended ideal\n`Ideal.map f I`. The map need not be injective, and neither ring needs\nto be commutative; no domain, local-ring or valuation hypothesis is needed.\n[Image membership criterion](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Images.lean).",
+   "link": {
+    "text": "Image membership criterion",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/Images.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite exponential and logarithm coordinates",
+   "text": "Over a possibly noncommutative\nor zero rational algebra, Mathlib's finite exponential, packaged as a unit,\nand a concrete logarithm give a plain equivalence between nilpotent elements\nand units `u` with nilpotent coordinate `u - 1`. This restricts to the elements\nof any pointwise-nil left ideal `I` and its principal-unit stabilizer of `1`\nin the quotient left module `R ⧸ I`; neither two-sidedness nor a uniform\nnilpotence exponent is required. Addition and product laws require commuting\ninputs; integer multiples correspond to integer powers in the unit group.\nThese are equivalences of types, not group equivalences.\n[Exponential units and logarithm](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/NilpotentExpLog.lean),\n[principal-unit restriction](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/ExpLog.lean).",
+   "link": {
+    "text": "principal-unit restriction",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/PrincipalUnits/ExpLog.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "First-order dual-number kernels and conjugation",
+   "text": "Over any `CommRing`,\nthe *multiplicative* reduction identity fibers of Mathlib's GL and SL groups\nand of scalar units identify with additive matrices, trace-zero matrices\nand scalars. The determinant corresponds to trace; arbitrary ring-hom\ncoefficient maps commute with these constructions without being implicitly\n`R`-linear. Unit **left conjugation** corresponds to `g * X * g⁻¹`,\neven for nonconstant dual-number units; the SL-kernel action uses SL\nconjugators. First-order fiber groups are abelian, so their commutator is\nnot the generally nonzero matrix Lie bracket.\n[Kernel equivalences](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/DualNumberKernels.lean#L145),\n[determinant/trace](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/DualNumberKernels.lean#L316),\n[adjoint guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/DualNumberKernelAdjoint.md).",
+   "link": {
+    "text": "adjoint guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/DualNumberKernelAdjoint.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Mixed dual-number GL and SL commutators",
+   "text": "For finite matrices over a\n`CommRing`, units over iterated dual numbers satisfy the ordered\nidentity `[1 + εX, 1 + ηY] = 1 + εη(XY - YX)` with full outer-kernel\nreadback. When *each input* is trace zero, special-linear factors\nyield the analogous identity in Mathlib's SL group and trace-zero readback.\nThe ε-factor reduces to the inner lift `liftGL X` (in SL, `liftSL X`), usually\nnot `1`: this is not a bracket of two elements of the abelian first-order\nouter kernel, nor a global Lie- or scheme-tangent theorem.\n[GL identity](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/DualNumberMixedCommutator.lean#L155),\n[SL identity](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/DualNumberMixedSLCommutator.lean#L93),\n[GL guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/DualNumberMixedCommutator.md),\n[SL guide](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/DualNumberMixedSLCommutator.md).",
+   "link": {
+    "text": "SL guide",
+    "url": "https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/docs/DualNumberMixedSLCommutator.md",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": [
+  {
+   "name": "CategoryTheory.isIso_id_sub_comp_iff",
+   "file": "GeneralLinearGroups/RectangularIsomorphisms.lean",
+   "found": {
+    "line": 71,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "In a preadditive category with independent object and morphism universes, for arbitrary objects X, Y and morphisms a:X->Y, b:Y->X, IsIso (𝟙 X - a ≫ b) iff IsIso (𝟙 Y - b ≫ a). No finiteness, biproduct or nonzero-object hypothesis is imposed."
+  },
+  {
+   "name": "CategoryTheory.inv_id_sub_comp",
+   "file": "GeneralLinearGroups/RectangularIsomorphisms.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Assuming only IsIso (𝟙 Y - b ≫ a), the canonical inverse of 𝟙 X - a ≫ b is 𝟙 X + a ≫ inv (𝟙 Y - b ≫ a) ≫ b. The left IsIso proof is derived from the criterion, not a second premise."
+  },
+  {
+   "name": "Matrix.list_prod_apply_mem_ideal_pow",
+   "file": "GeneralLinearGroups/MatrixNilpotentIdeal.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over a Semiring, an ordered list As of square matrices with entries in the same left ideal I has each product entry in I^As.length, for independently-universed finite decidable indices. Empty lists and indices are included. Right-append induction matches I^(k+1)=I^k*I; no commutativity, two-sidedness or monoid on left ideals is assumed."
+  },
+  {
+   "name": "Matrix.pow_apply_mem_ideal_pow",
+   "file": "GeneralLinearGroups/MatrixNilpotentIdeal.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The replicate specialization gives entries of A^k in I^k for every natural k, including zero, over a Semiring with finite decidable indices."
+  },
+  {
+   "name": "Matrix.isNilpotent_of_isNilpotent_ideal",
+   "file": "GeneralLinearGroups/MatrixNilpotentIdeal.lean",
+   "found": {
+    "line": 93,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Uniform nilpotence of the left ideal containing all matrix entries implies matrix nilpotence, with the same vanishing exponent, even when that exponent is zero. No two-sidedness, Nonempty, commutativity, additive inverses or nontriviality premise is imposed; pointwise nilness of an ideal is not asserted to suffice."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL",
+   "file": "GeneralLinearGroups/StableGeneralLinear.lean",
+   "found": {
+    "line": 193,
+    "kind": "abbrev",
+    "stated": false
+   },
+   "note": "Direct limit of finite GL groups under injective initial-segment stabilization over any Semiring, including the zero semiring and empty rank; finite representatives have an eventual equality criterion."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.map",
+   "file": "GeneralLinearGroups/StableGeneralLinear.lean",
+   "found": {
+    "line": 265,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Semiring-hom coefficient maps on stable GL commute with finite stages and respect identities and composition; compatible finite maps lift."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stableElementarySubgroup_eq_commutator",
+   "file": "GeneralLinearGroups/StableElementary.lean",
+   "found": {
+    "line": 200,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any Ring, the directed union of finite elementary images equals the commutator subgroup of stable GL. This does not assert same-rank ambient normality or commutator containment for finite GL."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stableElementarySubgroup_isPerfect",
+   "file": "GeneralLinearGroups/StableElementary.lean",
+   "found": {
+    "line": 256,
+    "kind": "instance",
+    "stated": false
+   },
+   "note": "The stable elementary subgroup is perfect as a group in its own right over any Ring, without a lower-rank restriction on stable GL."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stableElementaryAbelianizationEquiv",
+   "file": "GeneralLinearGroups/StableElementary.lean",
+   "found": {
+    "line": 340,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Over any Ring, the stable elementary quotient is an abelian group canonically equivalent to the abelianization; this equivalence is natural under ring-hom coefficient maps."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.rankOneUnits_injective",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 40,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Rank-one units inject into stable GL over any Semiring, including noncommutative coefficients; their map is natural under semiring homs."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.quotientRankOneUnits_map",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 235,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The rank-one map into the stable elementary quotient is natural over Rings; commutativity is needed only for its determinant retraction."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.abelianizationRankOneUnits_map",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 259,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The rank-one map into the stable abelianization is natural over Semirings; commutativity is needed only for its determinant retraction."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.det",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 71,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Compatible finite determinants define the stable determinant to units over any CommRing, including empty rank and the zero ring; it is natural under commutative-ring coefficient maps."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.det_comp_rankOneUnits",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 86,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any CommRing, rank-one units give a right inverse to the stable determinant, hence the determinant is surjective."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.elementary_le_ker_det",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 113,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any CommRing, stable elementary matrices lie in the determinant kernel; this is only an inclusion, not an equality."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.quotientDet_eq_abelianizationDet",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 192,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any CommRing, determinant factorizations through the stable elementary quotient and the abelianization agree under their canonical equivalence; neither factorization identifies the kernel."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.quotientDet_quotientRankOneUnits",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 141,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any CommRing, the ring-level quotient rank-one map is a section of the determinant induced on the stable elementary quotient."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.quotientDetKernelMulEquiv",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 267,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Over any CommRing, including the zero ring, the abelian stable elementary quotient splits as its quotient determinant kernel times the units via the rank-one section. Its coordinate and coefficient-map laws do not identify or trivialize the kernel."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.abelianizationDet_abelianizationRankOneUnits",
+   "file": "GeneralLinearGroups/StableDeterminant.lean",
+   "found": {
+    "line": 180,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any CommRing, the semiring-level abelianization rank-one map is a section of the determinant induced on the abelianization."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementaryUnit",
+   "file": "GeneralLinearGroups/Elementary.lean",
+   "found": {
+    "line": 42,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Off-diagonal unit 1 + single i j c over any Ring, with inverse, coefficient-addition product and a CommRing-only comparison with Mathlib transvections. It requires a finite decidable index type and i different from j, not a commutative coefficient ring."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementarySubgroup",
+   "file": "GeneralLinearGroups/Elementary.lean",
+   "found": {
+    "line": 74,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Closure of elementary units, including generator and ordered-list product membership. It is bottom for subsingleton indices without implying that the entire GL group is trivial."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.upperUnit_mem_elementarySubgroup",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 73,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Upper block units lie in the elementary subgroup by single-entry decomposition, including empty indices and noncommutative rings."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.lowerUnit_mem_elementarySubgroup",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 86,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Lower block units use the negative lower-left block over any Ring."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.blockDiagonalUnit_mem_elementarySubgroup",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 117,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Doubled diag(g, g⁻¹) lies in the elementary subgroup using the signed swap membership and the existing ordered Whitehead factorization."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.zeroProductUnit",
+   "file": "GeneralLinearGroups/ZeroProductStabilization.lean",
+   "found": {
+    "line": 31,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For independent finite index types and B * A = 0 over any Ring, constructs the unit 1 + A * B with inverse 1 - A * B."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.zeroProductUnit_val",
+   "file": "GeneralLinearGroups/ZeroProductStabilization.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Reads back the underlying matrix as 1 + A * B."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.zeroProductUnit_inv_val",
+   "file": "GeneralLinearGroups/ZeroProductStabilization.lean",
+   "found": {
+    "line": 47,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Reads back the inverse matrix as 1 - A * B."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_zeroProductUnit_eq",
+   "file": "GeneralLinearGroups/ZeroProductStabilization.lean",
+   "found": {
+    "line": 56,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization of the zero-product unit equals the ordered commutator of rectangular upper and lower block shears, including empty blocks."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_zeroProductUnit_mem_elementarySubgroup",
+   "file": "GeneralLinearGroups/ZeroProductStabilization.lean",
+   "found": {
+    "line": 70,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The stabilized unit lies in the existing elementary subgroup over any Ring, including noncommutative and zero rings."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapRingHom",
+   "file": "GeneralLinearGroups/Whitehead.lean",
+   "found": {
+    "line": 31,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Coefficient maps on finite general linear groups over arbitrary semirings."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.blockDiagonalUnit_eq",
+   "file": "GeneralLinearGroups/Whitehead.lean",
+   "found": {
+    "line": 115,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Signed four-factor decomposition of diag(g, inverse g) over arbitrary rings."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapRingHom_liftBlockDiagonal",
+   "file": "GeneralLinearGroups/Whitehead.lean",
+   "found": {
+    "line": 183,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A surjective ring homomorphism lifts this doubled block diagonal. It need not induce a surjection on the original finite GL."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.reindexEquiv",
+   "file": "GeneralLinearGroups/Reindex.lean",
+   "found": {
+    "line": 31,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Equivalence along a finite-index-type equivalence, with identity, composition, inverse and coefficient-map laws; not stabilization between unequal cardinalities."
+  },
+  {
+   "name": "TwoSidedIdeal.isQuasiregular_iff_isRightQuasiregular",
+   "file": "GeneralLinearGroups/QuasiregularIdeal.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The right-quasi-inverse condition is quantified over every element of the two-sided ideal. A single right inverse is not asserted to be two-sided in an arbitrary ring."
+  },
+  {
+   "name": "TwoSidedIdeal.ringJacobson_isGreatest_isQuasiregular",
+   "file": "GeneralLinearGroups/QuasiregularIdeal.lean",
+   "found": {
+    "line": 207,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The Jacobson radical is the greatest quasiregular two-sided ideal."
+  },
+  {
+   "name": "TwoSidedIdeal.IsNil.le_ringJacobson",
+   "file": "GeneralLinearGroups/NilIdeal.lean",
+   "found": {
+    "line": 55,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Pointwise nil ideals are quasiregular and contained in the Jacobson radical; no common exponent or nilpotence of the whole ideal is assumed."
+  },
+  {
+   "name": "TwoSidedIdeal.IsQuasiregular.matrix",
+   "file": "GeneralLinearGroups/MatrixQuasiregular.lean",
+   "found": {
+    "line": 30,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Entrywise finite matrix ideals preserve quasiregularity, including empty indices."
+  },
+  {
+   "name": "TwoSidedIdeal.quotientDivisionRing",
+   "file": "GeneralLinearGroups/LocalQuotient.lean",
+   "found": {
+    "line": 49,
+    "kind": "abbrev",
+    "stated": false
+   },
+   "note": "A proper two-sided ideal with unit complement gives a maximal left ideal and a division-ring quotient; commutativity and uniqueness of maximal ideals are not assumed."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.idealGeneralLinearGroupEquivCongruence",
+   "file": "GeneralLinearGroups/CongruenceSubgroup.lean",
+   "found": {
+    "line": 301,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "The ideal-unitization augmentation kernel is equivalent to the ambient congruence subgroup. Ambient injectivity and multiplicative exactness hold for every two-sided ideal, independently of quotient surjectivity."
+  },
+  {
+   "name": "RingHom.isQuasiregular_ker",
+   "file": "GeneralLinearGroups/QuasiregularQuotient.lean",
+   "found": {
+    "line": 202,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For R : Type u and S : Type v with Ring R and Semiring S, a map f : R →+* S with IsLocalHom f has quasi-regular canonical two-sided kernel TwoSidedIdeal.ker f, without surjectivity. The universes are independent; no commutativity, local-ring, nontriviality or nilness assumption is needed."
+  },
+  {
+   "name": "RingHom.isLocalHom_iff_isQuasiregular_ker",
+   "file": "GeneralLinearGroups/QuasiregularQuotient.lean",
+   "found": {
+    "line": 214,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a surjective f : R →+* S from a possibly noncommutative Ring to a Semiring, IsLocalHom f is equivalent to quasi-regularity of the canonical two-sided kernel TwoSidedIdeal.ker f. Source and target universes are independent; no local-ring or nontriviality hypothesis is imposed. Surjectivity is essential for this equivalence: the inclusion of integers into rationals has zero kernel but fails to reflect units."
+  },
+  {
+   "name": "RingHom.isLocalHom_of_surjective_of_isQuasiregular_ker",
+   "file": "GeneralLinearGroups/QuasiregularQuotient.lean",
+   "found": {
+    "line": 181,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A surjective homomorphism from a possibly noncommutative Ring to a Semiring with quasi-regular canonical two-sided kernel gives Mathlib's IsLocalHom, with independent source and target universes and no commutativity, locality or nontriviality assumption. Existing APIs give unit reflection and surjectivity of the induced units map; nil kernels specialize through TwoSidedIdeal.IsNil.isQuasiregular."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.isUnit_of_mapMatrix_quotient_isUnit",
+   "file": "GeneralLinearGroups/QuasiregularQuotient.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A specified finite square matrix is a unit if its image modulo a quasiregular two-sided ideal is a unit; empty indices are allowed."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.idealGeneralLinearGroupToRing_shortExact",
+   "file": "GeneralLinearGroups/QuasiregularQuotient.lean",
+   "found": {
+    "line": 147,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The three injective, multiplicatively exact and surjective assertions hold under quasiregularity. This is not arbitrary quotient GL surjectivity."
+  },
+  {
+   "name": "NonUnital.positivePow",
+   "file": "GeneralLinearGroups/NonUnitalNilpotent.lean",
+   "found": {
+    "line": 41,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "positivePow x k multiplies k+1 copies, without a multiplicative identity; NonUnital.IsNilpotent asks for such a positive power to vanish."
+  },
+  {
+   "name": "Matrix.IsStrictlyUpperTriangular.isNilpotent",
+   "file": "GeneralLinearGroups/NonUnitalNilpotent.lean",
+   "found": {
+    "line": 186,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Strictly upper triangular Fin n matrices over nonunital rings are nilpotent. The uniform n+1-copy witness includes the empty matrix."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.nilpotentMatrixElement",
+   "file": "GeneralLinearGroups/NonUnitalNilpotent.lean",
+   "found": {
+    "line": 293,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A vanishing power after entrywise unitization constructs a kernel element with value 1+x and an explicit finite alternating geometric inverse. The supplied exponent may be zero only when its power equation holds."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.isUnit_one_add_unitizationMatrix_iff_isQuasiregular",
+   "file": "GeneralLinearGroups/NonUnitalQuasiregular.lean",
+   "found": {
+    "line": 83,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Nonunital quasiregularity is equivalent to invertibility of 1+x after unitization, and to representability in the augmentation kernel. No coefficient commutativity or nontriviality is inserted."
+  },
+  {
+   "name": "Unitization.ringEquivProd",
+   "file": "GeneralLinearGroups/UnitalComparison.lean",
+   "found": {
+    "line": 36,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A unital algebra's unitization is the product of its commutative scalar ring and the algebra; the coefficient algebra need not be commutative."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.nonUnitalGeneralLinearGroupEquiv",
+   "file": "GeneralLinearGroups/UnitalComparison.lean",
+   "found": {
+    "line": 135,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For a unital ring, the augmentation-kernel group is the ordinary finite GL."
+  },
+  {
+   "name": "Ring.additiveCommutators",
+   "file": "GeneralLinearGroups/AdditiveCommutator.lean",
+   "found": {
+    "line": 50,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Additive-subgroup closure of a*b-b*a in a unital ring. It is not defined as a two-sided ideal."
+  },
+  {
+   "name": "Matrix.trace_mul_sub_trace_mul_commutators",
+   "file": "GeneralLinearGroups/MatrixTrace.lean",
+   "found": {
+    "line": 55,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A rectangular cyclic trace difference is a finite sum of scalar commutators, not generally zero in a noncommutative coefficient ring."
+  },
+  {
+   "name": "Matrix.traceOnCommutatorQuotient",
+   "file": "GeneralLinearGroups/MatrixTrace.lean",
+   "found": {
+    "line": 85,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Trace descends through the full additive commutator closure, even for empty indices."
+  },
+  {
+   "name": "Matrix.traceQuotientEquiv",
+   "file": "GeneralLinearGroups/MatrixTrace.lean",
+   "found": {
+    "line": 191,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For a chosen index p, trace is an additive equivalence with corner inverse r mapped to single p p r. Matrix-unit decomposition gives a membership criterion, inverse/representative laws and corner independence. No ring equivalence or empty-index inverse is asserted."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementaryUnit_commute_disjoint",
+   "file": "GeneralLinearGroups/ElementaryCommutator.lean",
+   "found": {
+    "line": 31,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Elementary units commute when neither off-diagonal position composes with the other."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementaryUnit_commutator",
+   "file": "GeneralLinearGroups/ElementaryCommutator.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The ordered elementary commutator relation, valid for noncommutative rings."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementaryUnit_eq_commutator",
+   "file": "GeneralLinearGroups/ElementaryCommutator.lean",
+   "found": {
+    "line": 72,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A third index expresses every elementary generator as a commutator of generators."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementarySubgroup_isPerfect_of_three_le_card",
+   "file": "GeneralLinearGroups/ElementaryCommutator.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The finite-rank elementary subgroup is perfect as soon as there are three indices."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapRingHom_elementaryUnit",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 32,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Entrywise coefficient mapping sends an elementary unit to an elementary unit."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapRingHom_elementarySubgroup_le",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Entrywise coefficient mapping preserves the absolute elementary subgroup."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 52,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "The restricted map on elementary subgroups."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapElementarySubgroup_coe",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 60,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The restricted coefficient map has the same ambient GL value as mapRingHom."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapElementarySubgroup_elementaryUnit",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 65,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The restricted coefficient map sends an elementary generator to its mapped-coefficient generator."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapElementarySubgroup_id",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 76,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Identity ring hom induces the identity restricted elementary map."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapElementarySubgroup_comp",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 83,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Composition of ring homs agrees with composition of restricted elementary maps."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.relativeElementaryGenerators",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 91,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Elementary generators with coefficients in `I`, viewed as members of `E(R)`."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.relativeElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 98,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "The normal closure of the ideal-coefficient generators **inside** `E(R)`."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementaryUnit_mem_relativeElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 103,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Every ideal-coefficient elementary unit belongs to the relative subgroup."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.relativeElementarySubgroup_normal",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 109,
+    "kind": "instance",
+    "stated": false
+   },
+   "note": "The relative subgroup is normal inside the absolute elementary group."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.relativeElementarySubgroup_mono",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 115,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Enlarging the ideal enlarges its relative elementary subgroup."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.relativeElementarySubgroup_bot",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 123,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The zero ideal has trivial relative elementary subgroup, including in rank zero or one."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.relativeElementarySubgroup_le_congruenceSubgroup",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 133,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Relative elementary elements reduce to the identity modulo their ideal."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.relativeElementarySubgroup_map_subtype_le_congruenceSubgroup",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 151,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The image of the relative group in the ambient GL lies in the existing congruence kernel. This is an image inclusion, not a claim of ambient normality."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapElementarySubgroup_relativeElementarySubgroup_le",
+   "file": "GeneralLinearGroups/RelativeElementary.lean",
+   "found": {
+    "line": 161,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Compatible coefficient maps carry relative elementary groups into relative elementary groups, without any surjectivity assumption."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.upperUnit_zero",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 30,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The upper block unit with zero off-diagonal block is the identity."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.lowerUnit_zero",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 36,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The lower block unit with zero off-diagonal block is the identity."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.upperUnit_add",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 42,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Upper block units turn matrix addition into group multiplication."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.lowerUnit_add",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 48,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Lower block units turn matrix addition into group multiplication."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.upperUnit_single",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A single upper-block entry is an off-block elementary unit."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.lowerUnit_single",
+   "file": "GeneralLinearGroups/ElementaryWhitehead.lean",
+   "found": {
+    "line": 63,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A single lower-block entry is elementary with coefficient `-c`."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.upperUnit_mem_relativeElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeWhitehead.lean",
+   "found": {
+    "line": 32,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "An ideal-valued upper block unit belongs to the doubled relative elementary subgroup; this also holds for an empty index type."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.lowerUnit_mem_relativeElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeWhitehead.lean",
+   "found": {
+    "line": 71,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "An ideal-valued lower block unit belongs to the doubled relative elementary subgroup. Its lower-left block is `-a`, so its elementary generators use `-a i j`."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.blockDiagonalUnit_eq_five",
+   "file": "GeneralLinearGroups/RelativeWhitehead.lean",
+   "found": {
+    "line": 110,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The five-factor block identity; `lowerUnit b` has lower-left block `-b`. No ideal hypothesis is needed."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.blockDiagonalUnit_mem_relativeElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeWhitehead.lean",
+   "found": {
+    "line": 137,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The Whitehead diagonal of a congruence unit is relative elementary after doubling, with conjugation only inside the existing elementary subgroup."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 36,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Extend an invertible matrix by an identity block, with no positivity assumption on the sizes of either block."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_apply_inl_inl",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 50,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization agrees with the original unit on the upper-left block."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_apply_inl_inr",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization has zero upper-right block."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_apply_inr_inl",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 58,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization has zero lower-left block."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_apply_inr_inr",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization has the identity lower-right block."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_injective",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 66,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The original matrix can be recovered from the upper-left block."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mapRingHom_stabilize",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization commutes with entrywise mapping of coefficients."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_elementaryUnit",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 97,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization sends an elementary generator exactly to the corresponding generator on the first summand."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_elementarySubgroup_le",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 107,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The image of the absolute elementary group under stabilization remains elementary."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilizeElementarySubgroup",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 121,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Stabilization restricted to the existing elementary subgroups."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilizeElementarySubgroup_coe",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 129,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Restricted stabilization has the same ambient value as the unit-group monoid hom."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilizeElementarySubgroup_elementaryUnit",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 134,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Restricted stabilization evaluates on existing elementary generators."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_relativeElementarySubgroup_le",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 148,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Relative elementary normal closures are preserved by stabilization as an image inclusion, without asserting surjectivity of the restricted map."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_congruenceSubgroup_le",
+   "file": "GeneralLinearGroups/ElementaryStabilization.lean",
+   "found": {
+    "line": 162,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilization preserves the existing quotient-reduction congruence kernel."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_conj_eq_blockDiagonalUnit_conj",
+   "file": "GeneralLinearGroups/RelativeWhiteheadConsequences.lean",
+   "found": {
+    "line": 31,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Stabilized conjugation by `g` is conjugation by its elementary Whitehead diagonal, with no congruence assumption on `g`."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_commutator_eq_blockDiagonalUnit_mul",
+   "file": "GeneralLinearGroups/RelativeWhiteheadConsequences.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The ordered commutator has a three-diagonal factorization after doubling. The final diagonal is indexed by `(h * g)⁻¹`, not `(g * h)⁻¹`."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_conj_mem_relativeElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeWhiteheadConsequences.lean",
+   "found": {
+    "line": 47,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "An arbitrary general linear conjugator preserves relative elementary membership after doubling, in the ambient general linear group."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.stabilize_commutator_mem_relativeElementarySubgroup",
+   "file": "GeneralLinearGroups/RelativeWhiteheadConsequences.lean",
+   "found": {
+    "line": 71,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The ordered commutator of two congruence units is relative elementary after doubling, with no original-rank commutator containment asserted."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.diagonalPairUnit",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 35,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Assembles explicit diagonal GL units over independent finite X and Y using existing stabilization and reindexing; works over Semiring and includes empty blocks."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.diagonalPairUnit_val",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The assembled unit is the diagonal block matrix with zero off-diagonal blocks."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.diagonalPairUnit_inv",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 56,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The inverse is the diagonal pair of the supplied inverse units."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.diagonalPairUnit_one_right",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 64,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "An identity right block recovers the existing stabilization map."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.diagonalPairUnit_one_left",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 70,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "An identity left block recovers reindexed stabilization of the right unit."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 82,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Upper off-block unipotent GL unit for rectangular C over any Ring; its inverse has block -C."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit_val",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 89,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Reads the upper off-diagonal C and identity diagonal blocks."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit_inv",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 113,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The inverse upper unit has off-block -C."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit_zero",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The zero rectangular block gives the identity unit."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit_add",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 125,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Addition of rectangular blocks becomes ordered multiplication of upper units."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit_single",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 131,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A single off-block entry is the existing elementary generator."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit_mem_elementarySubgroup",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Every upper rectangular unit lies in the existing finite elementary subgroup, including empty-block cases."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.triangularUnit",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 153,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Uses explicit diagonal units A and D and ordered B * D⁻¹ to assemble an upper triangular unit over any Ring."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.triangularUnit_eq_upper_mul_diagonal",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 158,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "First factorization is upper unit of B * D⁻¹ times the diagonal pair."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.triangularUnit_val",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 165,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Reads the upper triangular block matrix A, B, 0, D."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.triangularUnit_eq_diagonal_mul_upper",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 175,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Complementary ordered factorization is diagonal pair times upper unit of A⁻¹ * B."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.triangularUnit_inv_val",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 190,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Ordered inverse off-block is -(A⁻¹ * B * D⁻¹), not a reversed or unsigned product."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.map_triangularUnit_eq_diagonalPairUnit",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 205,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A group hom killing E forgets the off-block, with no abelian-target or ambient-normality hypothesis."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.rectangularUpperUnit_eq_upperUnit",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 217,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Equal-index rectangular upper units agree with existing Whitehead upperUnit."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.diagonalPairUnit_inv_pair",
+   "file": "GeneralLinearGroups/RectangularBlockUnits.lean",
+   "found": {
+    "line": 223,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Equal-index inverse diagonal pairs agree with existing blockDiagonalUnit."
+  },
+  {
+   "name": "Ideal.principalUnitsQuotientEquiv",
+   "file": "GeneralLinearGroups/PrincipalUnits.lean",
+   "found": {
+    "line": 212,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For arbitrary left ideals in a Ring with I^2 contained in J and I contained in the Jacobson radical, the quotient of original units principal modulo I by the coordinate kernel is the additive layer I/(I intersect J), written multiplicatively. The inverse on a representative is the original-ring unit with value 1+x."
+  },
+  {
+   "name": "Ideal.principalUnitsToQuotient_ker",
+   "file": "GeneralLinearGroups/PrincipalUnits.lean",
+   "found": {
+    "line": 175,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under I^2 contained in J alone, the coordinate kernel is the relative J-stabilizer inside the I-stabilizer. Its normality is derived, not assumed; no J contained in I or two-sidedness is needed."
+  },
+  {
+   "name": "Ideal.commutator_stabilizer_quotient_one_le",
+   "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+   "found": {
+    "line": 135,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For arbitrary left ideals A, B in any Ring, including noncommutative and zero rings, the commutator of their principal-unit subgroups lies in the principal units at A*B+B*A. Principal units use the stock R-unit stabilizer of 1 in the quotient left module R/I; for two-sided I this agrees with the kernel of reduction on units to the quotient ring. The commutator inclusion requires neither two-sidedness nor ambient normality."
+  },
+  {
+   "name": "Ideal.commutator_stabilizer_quotient_one_pow_le",
+   "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+   "found": {
+    "line": 215,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a two-sided ideal I in a Ring, the commutator of principal units at I^a and I^b lies in those at I^(a+b) for all natural indices a, b, including zero. No nilpotence assumption is imposed; two-sidedness is required for this all-index bound."
+  },
+  {
+   "name": "Ideal.stabilizer_quotient_one_lowerCentralSeries_le_pow",
+   "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+   "found": {
+    "line": 229,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For any left ideal I in a Ring and k a natural number, the kth lower central term of its principal-unit subgroup, computed in the ambient unit group, lies in the principal units at I^(k+1). The zeroth term is the principal-unit subgroup itself; no two-sidedness or ambient normality is assumed."
+  },
+  {
+   "name": "Ideal.stabilizer_quotient_one_lowerCentralSeries_eq_bot_of_pow_eq_bot",
+   "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+   "found": {
+    "line": 249,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "If a left ideal I in a Ring satisfies I^N=bot, the lower central series of its principal-unit subgroup is bot at index N-1, using natural subtraction. N=0 and N=1 are included and give a trivial zeroth term."
+  },
+  {
+   "name": "Ideal.isNilpotent_stabilizer_quotient_one_of_pow_eq_bot",
+   "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+   "found": {
+    "line": 267,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For any left ideal I in a Ring with I^N=bot, its principal-unit subgroup is a nilpotent group. This includes N=0 and N=1 and asserts no nilpotence of the full ambient unit group."
+  },
+  {
+   "name": "Ideal.nilpotencyClass_stabilizer_quotient_one_le_of_pow_eq_bot",
+   "file": "GeneralLinearGroups/PrincipalUnits/Filtration.lean",
+   "found": {
+    "line": 278,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For any left ideal I in a Ring with I^N=bot, the nilpotency class of its principal-unit subgroup is at most N-1, using natural subtraction. Nilpotence is supplied by isNilpotent_stabilizer_quotient_one_of_pow_eq_bot; N=0 and N=1 give the trivial subgroup and class zero."
+  },
+  {
+   "name": "Ideal.mem_map_stabilizer_quotient_one_iff",
+   "file": "GeneralLinearGroups/PrincipalUnits/Images.lean",
+   "found": {
+    "line": 45,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a ring homomorphism f from a Ring R to a Ring S in independent universes and a left ideal I contained in Ideal.jacobson bot, a unit u of S lies in the image under Units.map f.toMonoidHom of the original R-unit stabilizer of [1] in the quotient left module R/I if and only if there is a in I with f(a) = u - 1. This is the set image of ideal elements, not membership in Ideal.map f I; neither injectivity of f nor commutativity of either ring is required, and there is no domain, local-ring or valuation hypothesis."
+  },
+  {
+   "name": "RingHom.unitsKerEquivOfSquareZero",
+   "file": "GeneralLinearGroups/SquareZeroUnits.lean",
+   "found": {
+    "line": 59,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Square-zero kernel, Ring domain and Semiring codomain; algebraic unit coordinates, not a quotient-unit lifting theorem."
+  },
+  {
+   "name": "DualNumber.fstRingHom_ker_sq",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 38,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.unitsKerEquiv_eq_unitsKerEquivOfSquareZero_symm",
+   "file": "GeneralLinearGroups/DualNumberSquareZeroUnits.lean",
+   "found": {
+    "line": 36,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Pointwise comparison on every coefficient through the canonical inr inclusion."
+  },
+  {
+   "name": "DualNumber.mapRingHom",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 44,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.glKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 145,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.unitsKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 250,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.det_liftMatrix",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 291,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.detKer",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 305,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.detKer_glKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 316,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 374,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slToGL",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 337,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slToGL_slKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 409,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.glKernel_mul_comm",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 169,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slKernel_mul_comm",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 403,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.glKerMap",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 421,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slKerMap",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 445,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.unitsKerMap",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 433,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.glKerMap_glKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 489,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slKerMap_slKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 511,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.unitsKerMap_unitsKerEquiv",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 500,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.detKer_natural",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 522,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slToGL_natural",
+   "file": "GeneralLinearGroups/DualNumberKernels.lean",
+   "found": {
+    "line": 531,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slAdjoint",
+   "file": "GeneralLinearGroups/DualNumberKernelAdjoint.lean",
+   "found": {
+    "line": 29,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slAdjoint_val",
+   "file": "GeneralLinearGroups/DualNumberKernelAdjoint.lean",
+   "found": {
+    "line": 48,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.glKerEquiv_conj",
+   "file": "GeneralLinearGroups/DualNumberKernelAdjoint.lean",
+   "found": {
+    "line": 114,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.glReadback_conj",
+   "file": "GeneralLinearGroups/DualNumberKernelAdjoint.lean",
+   "found": {
+    "line": 136,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slToGL_conj",
+   "file": "GeneralLinearGroups/DualNumberKernelAdjoint.lean",
+   "found": {
+    "line": 147,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.slReadback_conj",
+   "file": "GeneralLinearGroups/DualNumberKernelAdjoint.lean",
+   "found": {
+    "line": 158,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberKernels.glKerMap_conj",
+   "file": "GeneralLinearGroups/DualNumberKernelAdjoint.lean",
+   "found": {
+    "line": 173,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.Presented",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 58,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.generator_add",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 65,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.generator_commutator_disjoint",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 91,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.generator_commutator",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 99,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.generator_commutator_reverse",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.lift",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 121,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.lift_generator",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 141,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.hom_ext",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 148,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.lift_unique",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 155,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.toElementary",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 174,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.toElementary_surjective",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 206,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Steinberg.toGL_range",
+   "file": "GeneralLinearGroups/Steinberg.lean",
+   "found": {
+    "line": 217,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.innerConstant",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 28,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.innerPure",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 32,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.epsilonLiftGL",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 36,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.etaLiftGL",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 46,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.epsilonLiftGL_val",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 51,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.epsilonLiftGL_inv_val",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 56,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.etaLiftGL_val",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.etaLiftGL_inv_val",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 67,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.epsilon_reduce",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.eta_reduce",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 148,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.epsilon_eta_commutator",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 154,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.mixedKernel",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 180,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.mixedKernel_val",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 184,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.mixedKernel_readback",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 190,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.mixedKernel_fst",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 198,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.mixedKernel_snd_fst",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 205,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedCommutator.mixedKernel_snd_snd",
+   "file": "GeneralLinearGroups/DualNumberMixedCommutator.lean",
+   "found": {
+    "line": 212,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.innerPureSL",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 29,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.epsilonLiftSL",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 38,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.etaLiftSL",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 44,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.epsilonLiftSL_val",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.etaLiftSL_val",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.epsilonLiftSL_toGL",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.etaLiftSL_toGL",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.epsilonLiftSL_reduce",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.etaLiftSL_reduce",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 87,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.epsilon_eta_SL_commutator",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 93,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.mixedSLKernel",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 108,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.mixedSLKernel_val",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 113,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.mixedSLKernel_readback",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DualNumberMixedSLCommutator.mixedSLKernel_snd_snd",
+   "file": "GeneralLinearGroups/DualNumberMixedSLCommutator.lean",
+   "found": {
+    "line": 126,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.reindexEquiv_mem_elementarySubgroup",
+   "file": "GeneralLinearGroups/UnitPivotDiagonalization.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Ring-level reindexing of the existing elementary subgroup."
+  },
+  {
+   "name": "Matrix.leadingPrincipalMinor",
+   "file": "GeneralLinearGroups/UnitPivotDiagonalization.lean",
+   "found": {
+    "line": 162,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Ordered Fin.castLE minor, including the empty minor."
+  },
+  {
+   "name": "Matrix.exists_elementary_diagonalization_of_unit_leadingPrincipalMinors",
+   "file": "GeneralLinearGroups/UnitPivotDiagonalization.lean",
+   "found": {
+    "line": 424,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Two-sided elementary reduction under all positive unit leading minors over a CommRing."
+  },
+  {
+   "name": "Matrix.exists_elementary_diagonalization_of_unit_pivot",
+   "file": "GeneralLinearGroups/UnitPivotDiagonalization.lean",
+   "found": {
+    "line": 311,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A unit first pivot lifts an elementary factorization of its Schur residual."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.exists_elementary_diagonalization_local",
+   "file": "GeneralLinearGroups/LocalElementaryGeneration.lean",
+   "found": {
+    "line": 92,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Invertible matrices over commutative local rings reduce to a unit diagonal without a minor condition, including in rank zero."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mem_elementarySubgroup_iff_det_eq_one_local",
+   "file": "GeneralLinearGroups/LocalElementaryGeneration.lean",
+   "found": {
+    "line": 106,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Finite elementary membership is equivalent to determinant one on any finite decidable index type."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.elementary_eq_ker_det_local",
+   "file": "GeneralLinearGroups/LocalElementaryGeneration.lean",
+   "found": {
+    "line": 130,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The stable elementary subgroup is the stable determinant kernel over commutative local rings."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.quotientDet_ker_eq_bot_local",
+   "file": "GeneralLinearGroups/LocalElementaryGeneration.lean",
+   "found": {
+    "line": 141,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The existing quotient determinant has trivial kernel under the local-ring hypothesis."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.StableGL.quotientDetMulEquiv",
+   "file": "GeneralLinearGroups/LocalElementaryGeneration.lean",
+   "found": {
+    "line": 154,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "The existing quotient determinant and rank-one section form a natural multiplicative equivalence with coefficient units over local rings."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.exists_elementary_transvection_diagonalization_field",
+   "file": "GeneralLinearGroups/LocalElementaryGeneration.lean",
+   "found": {
+    "line": 226,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Mathlib transvection lists yield elementary GL factors and a unit diagonal for invertible field matrices."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementaryUnitPathSubtype",
+   "file": "GeneralLinearGroups/ElementaryPaths.lean",
+   "found": {
+    "line": 74,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "Path within the elementary subgroup over a topological Ring."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.elementarySubgroup_pathConnectedSpace",
+   "file": "GeneralLinearGroups/ElementaryPaths.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Subgroup path-connectedness additionally requiring PathConnectedSpace R."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.diagonalUnit_mem_elementarySubgroup",
+   "file": "GeneralLinearGroups/ElementaryDiagonal.lean",
+   "found": {
+    "line": 186,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Product-one unit diagonal membership over a CommRing, including empty indices."
+  },
+  {
+   "name": "Matrix.GeneralLinearGroup.mem_elementarySubgroup_of_det_one_of_unit_leadingPrincipalMinors",
+   "file": "GeneralLinearGroups/ElementaryDiagonal.lean",
+   "found": {
+    "line": 252,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Determinant-one membership requiring separately all positive unit leading minors."
+  },
+  {
+   "name": "Matrix.SpecialLinearGroup.elementarySubgroup",
+   "file": "GeneralLinearGroups/ElementaryNeighborhood.lean",
+   "found": {
+    "line": 37,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "SL comap of the existing GL elementary subgroup, not the GL subgroup itself."
+  },
+  {
+   "name": "Matrix.SpecialLinearGroup.isOpen_elementarySubgroup",
+   "file": "GeneralLinearGroups/ElementaryNeighborhood.lean",
+   "found": {
+    "line": 87,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Openness requiring an open scalar unit locus, not coefficient path-connectedness."
+  },
+  {
+   "name": "Matrix.SpecialLinearGroup.elementarySubgroup_eq_pathComponentOne",
+   "file": "GeneralLinearGroups/ElementaryNeighborhood.lean",
+   "found": {
+    "line": 122,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Identity path-component equality requiring both open scalar units and PathConnectedSpace R."
+  }
+ ]
+}

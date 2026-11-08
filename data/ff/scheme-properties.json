@@ -1,0 +1,1791 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-scheme-properties",
+ "repo": "FormalFrontier/scheme-properties",
+ "rev": "09db7d881a2fab0967f5785b06c52aad22b45b39",
+ "date": "2026-11-05T12:48:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Scheme Properties",
+  "description": "Reusable Lean theory of ring-valued point criteria, affine density, dimension bounds, single-cover subfunctor and group-object extensions, local scheme properties, components, modules, native rational maps and ring-pullback open immersions. See README.md and docs/Guide.md for exact hypotheses.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "self-assessed",
+  "notes": "Self-assessment of this repository, not certification of each result or any selected-source correspondence."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Formal Frontier agent-assisted Lean development"
+   }
+  ],
+  "notes": ""
+ },
+ "scope": "Extension from one-cover dense subfunctors for morphism classes with relative pullbacks and base-change stability, assuming singleton descent only for the target; no identity or composition stability or source/subfunctor sheaf condition. Isomorphisms between two one-cover dense subfunctors extend uniquely when both ambient presheaves satisfy singleton descent, with prescribed restrictions and compatibility with identities, inverses and composition. A group law on a one-cover-dense subfunctor extends uniquely to a group-object law on the exact target presheaf, compatible with inclusion, when the cover class admits relative pullbacks and is stable under base change and composition and the target satisfies singleton descent. The proper dense two-point fixture tests the operations and recovery; no represented group scheme or source correspondence is asserted. The represented specialization concerns finite-type schemes over a field, tested on finitely generated algebras with faithfully flat covers, using Mathlib fpqc descent rather than a full induced-site equivalence or Milne's ring-level proof. Isomorphisms of two such dense restricted-points subfunctors extend uniquely to isomorphisms of finite-type schemes, without affine, separated or group hypotheses or a chosen-small-category identification. Unit-power images are one-cover dense over any commutative base ring for positive exponents; Laurent nonmembership and failure of singleton descent require a field and exponent at least two. The zero additive subfunctor is not one-cover dense over a field. Ring-pullback restricted Spec arrows over arbitrary commutative-ring maps, with exact opposite-kernel ranges forming a possibly empty disjoint cover of the common-kernel complement. No surjectivity, nontriviality, field or finite-type assumption; not unrestricted Spec-map immersions or connected components. Ring equivalences of independently universed commutative semirings preserve reducedness at corresponding prime localizations and openness of the full reduced-localization locus. For an injective family of points over an arbitrary field, that locus in the square-zero polynomial point quotient is open precisely when the family has finite image; no criterion for nonseparated families or identification with a particular source ring is asserted. Local algebra, finite presentations, components, tensors, dense-open rational maps, relative categories and function fields. Generic-point field maps need no finite-type premise; the chosen-base generic-point rational arrow is noninvertible for a nontrivial Jacobson integral target despite its reversed field-map isomorphism. Inverse reflection requires original-source local finite type, whereas reconstruction requires target-map local finite type. Exact rational inverses require independently dominant quotients; literal chosen-base overness needs the forward quotient base law. No total-scheme isomorphism, unrestricted category equivalence or source-coverage claim. Selected declaration pointers below are not a census; see docs/Guide.md.",
+ "sources": [
+  {
+   "title": "Original project proofs of reusable scheme-property and module interfaces",
+   "type": "original-proof",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Formal Frontier ring-pullback proof expression",
+   "type": "original-proof",
+   "relationship": "adapts"
+  },
+  {
+   "title": "The Rising Sea: Foundations of Algebraic Geometry",
+   "authors": [
+    "Ravi Vakil"
+   ],
+   "type": "book",
+   "relationship": "background"
+  },
+  {
+   "title": "Algebraic Groups: The Theory of Group Schemes of Finite Type over a Field",
+   "authors": [
+    "J. S. Milne"
+   ],
+   "type": "book",
+   "relationship": "adapts"
+  },
+  {
+   "title": "The K-book: An Introduction to Algebraic K-theory",
+   "authors": [
+    "Charles A. Weibel"
+   ],
+   "type": "book",
+   "relationship": "adapts"
+  },
+  {
+   "title": "mathlib: function-field stalk maps and native rational composition",
+   "type": "software",
+   "relationship": "adapts"
+  },
+  {
+   "title": "mathlib: birational, Jacobson and reduced-spectrum tools",
+   "type": "software",
+   "relationship": "adapts"
+  },
+  {
+   "title": "mathlib: generic stalks and native function-field maps",
+   "type": "software",
+   "relationship": "adapts"
+  },
+  {
+   "title": "mathlib: native partial and rational maps, composition, and topological density",
+   "type": "software",
+   "relationship": "adapts"
+  },
+  {
+   "title": "Multivariate Polynomials, Group Theory and Mathlib: polynomial closed-point orbit topology",
+   "type": "software",
+   "relationship": "adapts"
+  }
+ ],
+ "depends": [
+  {
+   "name": "coherent-modules",
+   "rev": "33941aae67dfb0df15b6e325dba9c86b9f649893"
+  },
+  {
+   "name": "finite-etale-algebras",
+   "rev": "79575f65c9edec560f27756917761eed78331a2a"
+  },
+  {
+   "name": "graded-rings",
+   "rev": "cb0f2e43578783e926fe8b216d103496d3d93313"
+  },
+  {
+   "name": "group-theory",
+   "rev": "9d82a1f4f48a5c75679b01a985274d3a27d1c54c"
+  },
+  {
+   "name": "homological-algebra",
+   "rev": "6c7f755cf87e91faff497a7da85e4ddfed431613"
+  },
+  {
+   "name": "minimal-primes",
+   "rev": "a82f15090015499bb5cd3c56f3944b46f7516d45"
+  },
+  {
+   "name": "multivariate-polynomials",
+   "rev": "9230f70aa26f680b291886ee1946210d65031cc5"
+  }
+ ],
+ "related": [],
+ "highlights": [
+  {
+   "title": "Finiteness near all component generic points",
+   "statement": "A locally finite type, quasi-compact morphism with finite ordinary fibres over every component generic point becomes finite on the whole preimage of a dense open containing all those points whenever their canonical subspace topology is discrete, in particular when the target has finitely many irreducible components.",
+   "declarations": [
+    {
+     "name": "AlgebraicGeometry.Scheme.Hom.exists_isFinite_morphismRestrict_of_discreteTopology_genericPoints",
+     "file": "SchemeProperties/GenericFiniteness/Components.lean",
+     "found": {
+      "line": 84,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "AlgebraicGeometry.Scheme.Hom.exists_isFinite_morphismRestrict_of_finite_irreducibleComponents",
+     "file": "SchemeProperties/GenericFiniteness/Components.lean",
+     "found": {
+      "line": 160,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  }
+ ],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Finiteness near all component generic points",
+   "text": "a locally finite type, quasi-compact morphism with finite ordinary point-fibres\nover every component generic point becomes finite on the whole preimage of a\ndense open containing all those points, provided their canonical inherited\nsubspace topology is discrete. In particular, this holds when the target has\nfinitely many irreducible components. No separatedness, quasi-separatedness,\nreducedness or Noetherian hypothesis is required; empty fibres are allowed.\nThe [single-point criterion](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/GenericFiniteness.lean) treats a\ngiven generic point of the whole target directly. The accompanying\n[openness theorem](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/GenericFiniteness/Openness.lean) makes a\nfinite morphism an open map after restricting around a given generic point,\nwithout assuming the target reduced or the fibre nonempty.",
+   "link": {
+    "text": "openness theorem",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/GenericFiniteness/Openness.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Ranges of finitely generated algebras",
+   "text": "over any commutative ring, taking the range of an algebra map with finitely\ngenerated domain is left adjoint to the inclusion of finitely generated\nsubalgebra stages. The stage functor is therefore final. The ambient algebra\nneed not be finitely generated, the base and carrier universes are independent,\nand neither the given map nor the scalar map need be injective.",
+   "link": {
+    "text": "Ranges of finitely generated algebras",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/Algebra/Category/FGAlgCat/Range.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Factorization on finite-type points",
+   "text": "over any commutative ring `K`, a morphism `f : X ⟶ Y` with `X` locally of\nfinite type over `Spec K` factors through a monomorphism `i : N ⟶ Y` if and\nonly if every point of `X` over a finitely generated `K`-algebra lifts through\n`i` after composition with `f`. The factorization is in schemes over the\nsame `Spec K`. No finiteness, affineness or separatedness condition is\nimposed on `N` or `Y`; the source's local finite-type hypothesis is needed.",
+   "link": {
+    "text": "Factorization on finite-type points",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/FiniteType/PointFactorization.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Points over finitely generated subalgebras",
+   "text": "for any given tower of commutative rings `K → R → S`, every `S`-point of a\nscheme locally of finite type over `Spec K` factors through a finitely\ngenerated `R`-subalgebra `A ⊆ S`. The forward map is the algebra-spectrum\nmap of the inclusion, and the composite equals the original point over the\noriginal `Spec K`. Two stage points agreeing over `S` agree over a common\nfinitely generated subalgebra. No affineness, quasi-compactness or separatedness\nof the tested scheme, injectivity of either tower map, or finite generation\nof `R` over `K` is required. These statements concern subalgebra inclusions,\nnot arbitrary filtered algebra colimits.",
+   "link": {
+    "text": "Points over finitely generated subalgebras",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/FinitePresentation/PointDescent.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Morphisms from dense affine-point subfunctors",
+   "text": "for arbitrary schemes `X` and `Y` over any base scheme `B`, let `N_B` be\nthe full affine-point functor over `B`. If `D ⊆ N_B(X)` is one-cover-dense\nfor flat, surjective morphisms of affine `B`-schemes, every natural\ntransformation `α : D ⟶ N_B(Y)` is induced by a unique morphism\n`f : X ⟶ Y` over the same base, with `D.ι ≫ N_B.map f = α`\n(`Scheme.existsUnique_hom_of_isOneCoverDense`). No sheaf condition on `X`\nor `D`, finite-product condition on `D`, or finiteness or separatedness\nhypothesis is required.",
+   "link": {
+    "text": "Morphisms from dense affine-point subfunctors",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/AffinePoints.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Faithful flatness of finite families",
+   "text": "a finite family of flat commutative-ring maps that is jointly surjective on\nprime spectra induces a faithfully flat map to the product. The spectrum\nimplication also holds for arbitrary families of commutative semirings,\nwithout flatness. Empty index types and zero rings are included.",
+   "link": {
+    "text": "Faithful flatness of finite families",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/RingTheory/FaithfullyFlatPi.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Flatness under source precomposition",
+   "text": "for arbitrary scheme morphisms `p : X ⟶ Y` and `f : Y ⟶ Z`, flatness and\npoint-surjectivity of `p`, together with flatness of `p ≫ f`, imply flatness\nof `f`, without quasi-compactness or finiteness assumptions. The\n[ring-tower theorem](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/RingTheory/FlatSourceCancellation.lean)\ncancels a faithfully flat second map from a flat composite of commutative\nring maps in independent universes; the composite need not be faithfully flat.",
+   "link": {
+    "text": "ring-tower theorem",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/RingTheory/FlatSourceCancellation.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Closed points of scheme pullbacks",
+   "text": "for specified locally finite-type arrows to the spectrum of any field, the\noriginal projections of any specified pullback give a surjection onto pairs\nof closed points. Over a separably closed field this is a canonical set\nequivalence, with pairing, projection, uniqueness, eta, diagonal and\nfixed-base naturality laws. No global finite-type, quasi-compactness,\nseparation or reducedness assumption is imposed. This does not identify the\nZariski closed-point topology with the ordinary product topology.",
+   "link": {
+    "text": "Closed points of scheme pullbacks",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/ClosedPointProducts.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Locally closed points in continuous preimages",
+   "text": "for arbitrary topological spaces and a continuous map, every nonempty preimage\nof a locally constructible set has a member at which that same preimage is\nlocally closed. No separation, compactness or Noetherian hypothesis is needed;\nthe result does not assert preservation of constructibility by continuous maps.\nA [dense-preimage application](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemePropertiesExamples/LocallyConstructiblePreimage.lean)\nshows that a dense such preimage in a nonempty source has nonempty interior.",
+   "link": {
+    "text": "dense-preimage application",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemePropertiesExamples/LocallyConstructiblePreimage.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Closedness through closed points",
+   "text": "in any Jacobson topological space, a locally closed subset is closed if and only\nif its trace in the closed-point subspace is closed. Local closedness is required\nfor the full subset, not just its trace; no separation or finiteness hypothesis\nis imposed.",
+   "link": {
+    "text": "Closedness through closed points",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/JacobsonClosedPoints.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Cofinite closed-point topology",
+   "text": "in any preirreducible Noetherian topological space of Krull dimension at most\none, a subset of the closed-point subspace is closed exactly when it is the\nwhole space or finite. Its given topology is therefore cofinite, without\nseparation, sobriety or Jacobson hypotheses. The Zariski closed-point topology\nof `Spec K[X]` and the Zariski topology of `MaximalSpectrum K[X]` are cofinite\nover every field `K`. For any algebraic closure `L` of `K`, the\n[automorphism-orbit homeomorphism](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/Topology/PolynomialClosedPointOrbits.lean)\nidentifies the existing `(L ≃ₐ[K] L)`-orbit quotient of cofinite `L` with this\nZariski maximal spectrum, retaining Multivariate Polynomials' underlying\nequivalence. The evaluation-kernel classifier from `L` is a quotient map.\nThe fields may have independent universes, using the given `K`-algebra\nstructure on `L`; no perfection, separability or infinitude assumption on\n`K` is required.",
+   "link": {
+    "text": "automorphism-orbit homeomorphism",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/Topology/PolynomialClosedPointOrbits.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Fibres of polynomial spectra under field extension",
+   "text": "for independently universed fields `K` and `L` with their given `K`-algebra,\nthe coefficient-extension spectrum map has finite fibre over a prime `p`\nexactly when `p` is nonzero or `L` is algebraic over `K`. All ordinary point\nfibres are finite exactly for algebraic extensions, and then the generic\nfibre consists precisely of the zero prime of `L[X]`. Infinite algebraic\nextensions and inseparable extensions are included; these are not geometric\nfield-valued lift fibres or a quasi-finiteness assertion.",
+   "link": {
+    "text": "Fibres of polynomial spectra under field extension",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/RingTheory/Spectrum/Prime/Polynomial.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Locally constructible closed-point traces",
+   "text": "in any Jacobson topological space, a subset satisfying Mathlib's\n`Topology.IsLocallyConstructible` has a dense closed-point trace, and is closed\nexactly when that trace is closed in the original closed-point subspace.\nClosed-point traces also detect inclusion and equality between such subsets,\nwith no separation or Noetherian hypothesis. The proofs use density after\nintersection with arbitrary locally closed subsets, without assuming those\nsubsets are locally constructible. A common density theorem for arbitrary\nunions of locally closed sets recovers Mathlib's locally closed density theorem\nby a singleton-index specialization; this union theorem does not assert trace\nconservativity.",
+   "link": {
+    "text": "Locally constructible closed-point traces",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/JacobsonClosedPoints.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Maximal-point locally ringed spaces",
+   "text": "for any commutative Jacobson ring `R`, construct a locally ringed space on the\nclosed-point subspace of `Spec R`. Its inclusion induces an isomorphism of\nfull sheaves after pushforward, principal-open rings are `R_f`, stalks are\n`R_m`, and global sections recover `R`, with nilpotents and supplied scalars.\n[Localization-basis recognition](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointSheaf.lean)\nidentifies any full sheaf with compatible coordinate actions and the same\nlocalization property. [Morphisms](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointMorphisms.lean)\nare contravariant for homomorphisms whose contractions preserve maximal\nideals; this preservation is derived for finite-type homomorphisms from a\nJacobson ring. [Full component uniqueness](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointSheafMaps.lean)\nidentifies a supplied sheaf component from its global coordinates, without\nassuming that component is already local. The inclusion need not be an\nisomorphism of spaces, and no general Scheme structure is asserted for the\nmaximal-point space.",
+   "link": {
+    "text": "Full component uniqueness",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointSheafMaps.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Lifts to closed-point targets",
+   "text": "for a Jacobson locally ringed target `Y` and an arbitrary locally ringed source\n`X`, `closedPointInclusionHomEquiv` identifies maps `X ⟶ C(Y)` with original\nmorphisms `X ⟶ Y` whose every image point is closed. The inverse is the unique\nfull locally ringed-space lift through the given inclusion. Its section,\nstalk and global-section maps read back the original maps through the given\ncomparisons. It is natural in every source morphism and in closed-point-preserving\nmorphisms between Jacobson targets, and retains supplied structure-map triangles.\nIts [affine specialization](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointLifts.lean)\nidentifies maps `X ⟶ C(R)` with original maps `X ⟶ Spec R` whose image ideals\nare all maximal, for any commutative Jacobson ring `R`, and reads back the\noriginal homomorphism `R → Γ(X)`. No Jacobson hypothesis is imposed on `X`\nor its global-section ring.",
+   "link": {
+    "text": "affine specialization",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointLifts.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Hom recovery for maximal-point spaces",
+   "text": "for commutative Jacobson rings `R` and `S`, `maximalPointHomEquiv` identifies\nring homomorphisms `R →+* S` preserving maximal ideals under contraction with\nall locally ringed space morphisms `C(S) ⟶ C(R)`, where\n`C(R) = Spec.maximalPointSpace R`. The inverse is\n`χS⁻¹ ∘ Γ(g) ∘ χR` for the original coordinate isomorphisms, so the full\nmorphism is recovered from its global-section map. This equivalence restricts\nto supplied scalar maps. For given `K`-algebra actions in a common universe,\nit identifies maximal-contraction-preserving algebra homomorphisms with\nmorphisms over `Spec K`; if `S` is finite type over `K`, every algebra\nhomomorphism corresponds, with no finite-type assumption on `R`.",
+   "link": {
+    "text": "Hom recovery for maximal-point spaces",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointHom.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Locality of full ringed morphisms",
+   "text": "for commutative Jacobson rings `R,S`, a ringed morphism `g : C(S) ⟶ C(R)`\nis local if and only if its original global-coordinate homomorphism\npreserves maximal ideals under contraction. Under this condition the entire\noriginal morphism is the forgotten `maximalPointMap`, and its unique locally\nringed lift retains all supplied components and respects composition.\nFor given `K`-algebra structures over any commutative ring `K`, scalar\ncompatibility and finite type of `S` over `K` imply locality, with no\nfinite-type hypothesis on `R`. The full sheaves retain nilpotents and the\nzero ring is included.",
+   "link": {
+    "text": "Locality of full ringed morphisms",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/MaximalPointRingedHom.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "The integers are Jacobson",
+   "text": "the canonical integer ring is a Jacobson ring. A\n[polynomial evaluation example](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemePropertiesExamples/IntegerMaximalPointEvaluation.lean)\nidentifies the maximal-point morphism over `Spec ℤ` induced by evaluation at\nzero, `ℤ[X] →ₐ[ℤ] ℤ`, together with its recovered ring map and the value `X ↦ 0`.",
+   "link": {
+    "text": "polynomial evaluation example",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemePropertiesExamples/IntegerMaximalPointEvaluation.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Reduced projective spectra",
+   "text": "for any\n`ℕ`-graded commutative ring `A` with grading `𝒜`, `Proj 𝒜` is reduced whenever\n`A` is reduced, with no nonemptiness or finiteness assumption.",
+   "link": {
+    "text": "Reduced projective spectra",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/ProjReduced.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Polynomial projective coordinate separation",
+   "text": "over any nontrivial commutative ring and any nontrivial variable type, the\ntotal-degree polynomial projective spectrum has at least two underlying points.\nCoordinate points over the same coefficient prime are distinct for distinct\nindices; each lies in exactly its own coordinate basic open. This includes the\nprojective line over the two-element field, without a domain or field-size bound.",
+   "link": {
+    "text": "Polynomial projective coordinate separation",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/PolynomialProjGeometry.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Local normality of polynomial rings",
+   "text": "over any commutative locally normal base ring, multivariate polynomial rings\nwith arbitrary variable types are locally normal.",
+   "link": {
+    "text": "Local normality of polynomial rings",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/NormalPolynomial.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Global sections under flat scalar extension",
+   "text": "for a quasicompact quasiseparated scheme over a commutative ring `k` and a flat\ncommutative `k`-algebra `K`, the canonical equivalence identifies the global\nsections of the base change with `K ⊗[k] Γ(X, ⊤)`. Its scalar, section and pure\ntensor formulas retain the two pullback projections. Identity and tower\ncoherence are also available for field extensions.",
+   "link": {
+    "text": "Global sections under flat scalar extension",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/GlobalSectionsBaseChange.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Global sections and affine targets",
+   "text": "if\n`p : X ⟶ S` induces an isomorphism on global sections and `T` is affine,\nprecomposition is a bijection `(S ⟶ T) → (X ⟶ T)`, for arbitrary `X` and\n`S`. A reduced connected scheme universally closed over a field has a\nfield of global sections. For a reduced preconnected scheme universally\nclosed over a field, a rational section identifies its global sections\nwith the base field, so every morphism to an affine scheme is constant at\nthat rational point. Direct import for the field criterion and the\ncanonical global-sections isomorphism: `SchemeProperties.GlobalSections.Field`.",
+   "link": {
+    "text": "Global sections and affine targets",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/GlobalSections.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Proper affine point criterion",
+   "text": "for any\nfield `K : Type u` and `X : Scheme.{u}`, a morphism\n`f : X ⟶ Spec (CommRingCat.of K)` with\n`[IsProper f] [IsAffine X] [PreconnectedSpace X]` gives `Subsingleton X`\n(`AlgebraicGeometry.Scheme.Hom.subsingleton_of_isProper_of_isAffine`).\nThe underlying point set has at most one point; `X` may be empty or nonreduced.\nThis does not assert a scheme isomorphism or uniqueness of scheme morphisms.\nDirect import: `SchemeProperties.ProperAffineField`.",
+   "link": {
+    "text": "Proper affine point criterion",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/ProperAffineField.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite-variable polynomial Proj",
+   "text": "is proper over the original `Spec R` for every commutative ring `R : Type (max u v)` and finite `σ : Type v`, including zero rings and empty `σ`; see the [guide](https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/docs/SpectraAndGlobalGeometry.md#polynomial-proj-properness).",
+   "link": {
+    "text": "guide",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/docs/SpectraAndGlobalGeometry.md#polynomial-proj-properness",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Rigidity from a collapsed fibre",
+   "text": "for a\nfield `K`, a proper integral `K`-scheme `X` whose structure map has a\n`K`-rational section, a preconnected `K`-scheme `Y` with an arbitrary chosen\npoint `y₀`, and a `K`-scheme `Z` separated over `K`, a compatible `K`-morphism\n`h : X ×[K] Y ⟶ Z` factors uniquely as `h = snd ≫ g` for a `K`-morphism\n`g : Y ⟶ Z` if the topological image under `h` of the projection fibre over\n`y₀` is subsingleton. The factorization is equality of scheme morphisms.\nThe parameter need not be reduced, and `y₀` need not be rational or closed.\nDirect import: `SchemeProperties.Rigidity`.",
+   "link": {
+    "text": "Rigidity from a collapsed fibre",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/Rigidity.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Real–complex residue degrees",
+   "text": "the coproduct `Spec ℝ ⨿ Spec ℂ`, over `Spec ℝ` by the identity and the\nstandard real-algebra map to `ℂ`, has two distinct closed points. Their\noriginal residue real algebras are canonically equivalent to `ℝ` and `ℂ`\nand have real dimensions one and two, respectively.",
+   "link": {
+    "text": "Real–complex residue degrees",
+    "url": "https://github.com/FormalFrontier/scheme-properties/blob/09db7d881a2fab0967f5785b06c52aad22b45b39/SchemeProperties/RealComplexSpectrum.lean",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": [
+  {
+   "name": "AlgebraicGeometry.Scheme.Hom.exists_isFinite_morphismRestrict_of_discreteTopology_genericPoints",
+   "file": "SchemeProperties/GenericFiniteness/Components.lean",
+   "found": {
+    "line": 84,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.Hom.exists_isFinite_morphismRestrict_of_finite_irreducibleComponents",
+   "file": "SchemeProperties/GenericFiniteness/Components.lean",
+   "found": {
+    "line": 160,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PrimeSpectrum.isReduced_atPrime_homeomorphOfRingEquiv_iff",
+   "file": "SchemeProperties/ReducedLocusEquiv.lean",
+   "found": {
+    "line": 34,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PrimeSpectrum.isOpen_isReduced_atPrime_iff_ringEquiv",
+   "file": "SchemeProperties/ReducedLocusEquiv.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.isOpen_reduced_atPrime_pointSquareZeroQuotient_iff_finite_range",
+   "file": "SchemeProperties/PolynomialPointSquareZeroReducedLocus.lean",
+   "found": {
+    "line": 45,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subfunctor.IsOneCoverDense",
+   "file": "SchemeProperties/SingleCoverExtension.lean",
+   "found": {
+    "line": 55,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subfunctor.oneCoverExtensionEquiv",
+   "file": "SchemeProperties/SingleCoverExtension.lean",
+   "found": {
+    "line": 252,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subfunctor.IsOneCoverDense.grpObj",
+   "file": "SchemeProperties/SingleCoverGroup.lean",
+   "found": {
+    "line": 404,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subfunctor.IsOneCoverDense.grpObj_isMonHom",
+   "file": "SchemeProperties/SingleCoverGroup.lean",
+   "found": {
+    "line": 635,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subfunctor.IsOneCoverDense.grpObj_unique",
+   "file": "SchemeProperties/SingleCoverGroup.lean",
+   "found": {
+    "line": 646,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subfunctor.extendOneCoverIso",
+   "file": "SchemeProperties/SingleCoverExtension.lean",
+   "found": {
+    "line": 365,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.algebraicOverPoints_isSheafFor_faithfullyFlat",
+   "file": "SchemeProperties/FiniteTypeSingleCover.lean",
+   "found": {
+    "line": 150,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.algebraicOverOneCoverEquiv",
+   "file": "SchemeProperties/FiniteTypeSingleCover.lean",
+   "found": {
+    "line": 216,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.extendAlgebraicOverIso",
+   "file": "SchemeProperties/FiniteTypeSingleCover.lean",
+   "found": {
+    "line": 275,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.powerImage_isOneCoverDense",
+   "file": "SchemeProperties/PowerImage.lean",
+   "found": {
+    "line": 191,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.laurentUnit_not_mem_powerImage",
+   "file": "SchemeProperties/PowerImage.lean",
+   "found": {
+    "line": 239,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.powerImage_not_isSheafFor_root",
+   "file": "SchemeProperties/PowerImage.lean",
+   "found": {
+    "line": 292,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.zeroAdditiveSubfunctor_not_oneCoverDense",
+   "file": "SchemeProperties/PowerImage.lean",
+   "found": {
+    "line": 309,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "SheafOfModules.Presentation.isFinite_map",
+   "file": "SchemeProperties/SheafFinitePresentationTransport.lean",
+   "found": {
+    "line": 43,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "SheafOfModules.Presentation.isFinitePresentation",
+   "file": "SchemeProperties/SheafFinitePresentationTransport.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.Modules.isFinite_presentationRestrict",
+   "file": "SchemeProperties/ModuleFinitePresentation.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.isFinitePresentation_tilde",
+   "file": "SchemeProperties/ModuleFinitePresentation.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.Modules.exists_isOpenCover_isFinite_presentation",
+   "file": "SchemeProperties/ModuleFinitePresentation.lean",
+   "found": {
+    "line": 96,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.isOver_comp_of_isDominant_first",
+   "file": "SchemeProperties/RationalMapComposition.lean",
+   "found": {
+    "line": 34,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.isOver_comp_of_isDominant_first",
+   "file": "SchemeProperties/RationalMapComposition.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.PullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 30,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_iff_of_equiv",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_restrict_iff",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 67,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_of_isOpenMap",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 73,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_of_isDominant",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 82,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.PullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 94,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_toRationalMap_iff",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 102,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.pullsDenseOpens_representative_iff",
+   "file": "SchemeProperties/DenseOpenPullback.lean",
+   "found": {
+    "line": 115,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 42,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 141,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.compOfPullsDenseOpens_equiv_of_equiv",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 108,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.toRationalMap_compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 157,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.compOfPullsDenseOpens_toPartialMap",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.compOfPullsDenseOpens_toRationalMap",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 169,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.compOfPullsDenseOpens_eq_comp",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 129,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.compOfPullsDenseOpens_eq_comp",
+   "file": "SchemeProperties/DenseOpenComposition.lean",
+   "found": {
+    "line": 177,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.isOver_compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenCompositionOver.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.isOver_compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenCompositionOver.lean",
+   "found": {
+    "line": 75,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenCompositionClosure.lean",
+   "found": {
+    "line": 51,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.pullsDenseOpens_compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenCompositionClosure.lean",
+   "found": {
+    "line": 63,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.compOfPullsDenseOpens_assoc",
+   "file": "SchemeProperties/DenseOpenCompositionAssociativity.lean",
+   "found": {
+    "line": 43,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.compOfPullsDenseOpens_assoc",
+   "file": "SchemeProperties/DenseOpenCompositionAssociativity.lean",
+   "found": {
+    "line": 65,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_id",
+   "file": "SchemeProperties/DenseOpenCompositionUnits.lean",
+   "found": {
+    "line": 43,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.id_compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenCompositionUnits.lean",
+   "found": {
+    "line": 52,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.compOfPullsDenseOpens_id",
+   "file": "SchemeProperties/DenseOpenCompositionUnits.lean",
+   "found": {
+    "line": 66,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.pullsDenseOpens_id",
+   "file": "SchemeProperties/DenseOpenCompositionUnits.lean",
+   "found": {
+    "line": 76,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.id_compOfPullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenCompositionUnits.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.compOfPullsDenseOpens_id",
+   "file": "SchemeProperties/DenseOpenCompositionUnits.lean",
+   "found": {
+    "line": 90,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.isDominant_of_pullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenPullbackDominance.lean",
+   "found": {
+    "line": 31,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialMap.pullsDenseOpens_iff_isDominant",
+   "file": "SchemeProperties/DenseOpenPullbackDominance.lean",
+   "found": {
+    "line": 43,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.isDominant_of_pullsDenseOpens",
+   "file": "SchemeProperties/DenseOpenPullbackDominance.lean",
+   "found": {
+    "line": 56,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.pullsDenseOpens_iff_isDominant",
+   "file": "SchemeProperties/DenseOpenPullbackDominance.lean",
+   "found": {
+    "line": 64,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 30,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.of",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 37,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.Hom",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 40,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.hom",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 46,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.toRationalMap_hom",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.hom_ext",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.toRationalMap_id",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 76,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.toRationalMap_comp",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 79,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.homEquivDominant",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 87,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalScheme.homEquivDominant_apply_val",
+   "file": "SchemeProperties/DenseOpenRationalCategory.lean",
+   "found": {
+    "line": 103,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalScheme",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 69,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalScheme.Hom",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 84,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalScheme.toRationalMap_id",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 120,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalScheme.toRationalMap_comp",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 123,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDenseOpenRationalScheme",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 36,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDenseOpenRationalScheme.toNative",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 145,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalScheme.toDenseOpen",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 186,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.integralDenseOpenEquivalence",
+   "file": "SchemeProperties/IntegralDominantRationalCategory.lean",
+   "found": {
+    "line": 235,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 30,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.of",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 39,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.Hom",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 50,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.hom",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 59,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.toRationalMap_hom",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 64,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.isOver_iff_compHom",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 73,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.hom_ext",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 87,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.toRationalMap_id",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 121,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.toRationalMap_comp",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 124,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.forget",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 131,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.forget_obj_toScheme",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 137,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.DenseOpenRationalSchemeOver.forget_map_toRationalMap",
+   "file": "SchemeProperties/DenseOpenRationalCategoryOver.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDenseOpenRationalSchemeOver",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 35,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 68,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver.Hom",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 86,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver.isOver_iff_compHom",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 116,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDenseOpenRationalSchemeOver.toNative",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 183,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver.toDenseOpen",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 222,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.integralDenseOpenEquivalenceOver",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 270,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDenseOpenRationalSchemeOver.forget",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 284,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver.forget",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 320,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDenseOpenRationalSchemeOver.forgetInclusionIso",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 346,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDenseOpenRationalSchemeOver.forgetNativeIso",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 359,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver.forgetDenseOpenIso",
+   "file": "SchemeProperties/IntegralDominantRationalCategoryOver.lean",
+   "found": {
+    "line": 386,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.fromFunctionField_closedPoint",
+   "file": "SchemeProperties/RationalFunctionFieldPullback.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.functionFieldMap",
+   "file": "SchemeProperties/RationalFunctionFieldPullback.lean",
+   "found": {
+    "line": 82,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.functionFieldMap_eq_of_fromFunctionField_eq",
+   "file": "SchemeProperties/RationalFunctionFieldPullback.lean",
+   "found": {
+    "line": 97,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.fromFunctionField_comp",
+   "file": "SchemeProperties/RationalFunctionFieldPullback.lean",
+   "found": {
+    "line": 165,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.functionFieldMap_id",
+   "file": "SchemeProperties/RationalFunctionFieldPullback.lean",
+   "found": {
+    "line": 197,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.functionFieldMap_comp",
+   "file": "SchemeProperties/RationalFunctionFieldPullback.lean",
+   "found": {
+    "line": 177,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalScheme.functionFieldFunctor",
+   "file": "SchemeProperties/RationalFunctionFieldPullback.lean",
+   "found": {
+    "line": 218,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.eq_of_functionFieldMap_eq",
+   "file": "SchemeProperties/RationalFunctionFieldFaithfulness.lean",
+   "found": {
+    "line": 57,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.ofFunctionFieldMap",
+   "file": "SchemeProperties/RationalFunctionFieldReconstruction.lean",
+   "found": {
+    "line": 47,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.ofFunctionFieldMap_compHom",
+   "file": "SchemeProperties/RationalFunctionFieldReconstruction.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.isDominant_ofFunctionFieldMap",
+   "file": "SchemeProperties/RationalFunctionFieldReconstruction.lean",
+   "found": {
+    "line": 84,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.ofFunctionFieldMap_isDominant",
+   "file": "SchemeProperties/RationalFunctionFieldReconstruction.lean",
+   "found": {
+    "line": 136,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.functionFieldMap_ofFunctionFieldMap",
+   "file": "SchemeProperties/RationalFunctionFieldReconstruction.lean",
+   "found": {
+    "line": 144,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.functionFieldMap_compatible",
+   "file": "SchemeProperties/RationalFunctionFieldReconstruction.lean",
+   "found": {
+    "line": 161,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.ofFunctionFieldMap_functionFieldMap",
+   "file": "SchemeProperties/RationalFunctionFieldReconstruction.lean",
+   "found": {
+    "line": 179,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver.isIso_functionFieldMap",
+   "file": "SchemeProperties/RationalFunctionFieldInverse.lean",
+   "found": {
+    "line": 82,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.IntegralDominantRationalSchemeOver.isIso_iff_isIso_functionFieldMap",
+   "file": "SchemeProperties/RationalFunctionFieldInverse.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.exists_partialIso_of_inverse",
+   "file": "SchemeProperties/RationalMapPartialIso.lean",
+   "found": {
+    "line": 248,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.exists_partialIso_of_inverse_over",
+   "file": "SchemeProperties/RationalMapPartialIso.lean",
+   "found": {
+    "line": 267,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialIso.toRationalMap_isDominant",
+   "file": "SchemeProperties/RationalMapPartialIso.lean",
+   "found": {
+    "line": 370,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialIso.toRationalMap_comp_symm",
+   "file": "SchemeProperties/RationalMapPartialIso.lean",
+   "found": {
+    "line": 375,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialIso.symm_toRationalMap_comp",
+   "file": "SchemeProperties/RationalMapPartialIso.lean",
+   "found": {
+    "line": 384,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialIso.toRationalMap_compHom_of_isOver",
+   "file": "SchemeProperties/RationalMapPartialIso.lean",
+   "found": {
+    "line": 398,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialIso.symm_toRationalMap_compHom_of_isOver",
+   "file": "SchemeProperties/RationalMapPartialIso.lean",
+   "found": {
+    "line": 408,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.PartialIso.subsingleton_target",
+   "file": "SchemeProperties/JacobsonBirationalObstruction.lean",
+   "found": {
+    "line": 33,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.not_birational_of_subsingleton_of_jacobson",
+   "file": "SchemeProperties/JacobsonBirationalObstruction.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.nontrivial_spec_polynomial",
+   "file": "SchemeProperties/JacobsonBirationalObstruction.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.not_birational_spec_field_spec_polynomial",
+   "file": "SchemeProperties/JacobsonBirationalObstruction.lean",
+   "found": {
+    "line": 69,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.fromSpecStalk_genericPoint_isDominant",
+   "file": "SchemeProperties/GenericPointFunctionField.lean",
+   "found": {
+    "line": 46,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.fromSpecStalk_genericPoint_toRationalMap_isDominant",
+   "file": "SchemeProperties/GenericPointFunctionField.lean",
+   "found": {
+    "line": 55,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.genericPoint_functionFieldMap_specMap",
+   "file": "SchemeProperties/GenericPointFunctionField.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.genericPoint_functionFieldMap_isIso",
+   "file": "SchemeProperties/GenericPointFunctionField.lean",
+   "found": {
+    "line": 81,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.not_locallyOfFiniteType_fromSpecStalk_genericPoint",
+   "file": "SchemeProperties/GenericPointFunctionField.lean",
+   "found": {
+    "line": 106,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.not_locallyOfFiniteType_fromSpecStalk_genericPoint_comp",
+   "file": "SchemeProperties/GenericPointFunctionField.lean",
+   "found": {
+    "line": 127,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.RationalMap.not_twoSidedInverse_of_subsingleton_of_jacobson",
+   "file": "SchemeProperties/GenericPointRationalNoninvertibility.lean",
+   "found": {
+    "line": 35,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.genericPointRationalHom",
+   "file": "SchemeProperties/GenericPointRationalNoninvertibility.lean",
+   "found": {
+    "line": 54,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.genericPointRationalHom_toRationalMap",
+   "file": "SchemeProperties/GenericPointRationalNoninvertibility.lean",
+   "found": {
+    "line": 69,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.Scheme.genericPointRationalHom_boundary",
+   "file": "SchemeProperties/GenericPointRationalNoninvertibility.lean",
+   "found": {
+    "line": 76,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.ker_fst_mul_ker_snd",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.ker_toBase",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 65,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.awayMap_fst_bijective",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.awayMap_snd_bijective",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 135,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.fstTarget_inf_sndTarget",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 216,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.fstTarget_sup_sndTarget",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 225,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.isOpenImmersion_fstOpenMap",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 288,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.isOpenImmersion_sndOpenMap",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 348,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.range_fstOpenMap",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 414,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.range_sndOpenMap",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 448,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.disjoint_ranges",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 482,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.PullbackOpenImmersion.union_ranges",
+   "file": "SchemeProperties/PullbackOpenImmersion.lean",
+   "found": {
+    "line": 491,
+    "kind": "theorem",
+    "stated": false
+   }
+  }
+ ]
+}

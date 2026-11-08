@@ -1,0 +1,127 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-ideal-completion",
+ "repo": "FormalFrontier/ideal-completion",
+ "rev": "e316d02a1c0814b130a7085a112c142542b7019d",
+ "date": "2026-11-04T14:30:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "ideal-completion",
+  "description": "Ideal completions of bounded distributive lattices: the injective principal bounded lattice homomorphism, finite-join witnesses for arbitrary suprema, frame structure, compact-principal characterization and compact generation, and a prime-order-ideal/Boolean-map equivalence for bounded lattices.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "other: independent AI-agent review",
+  "notes": "Independent AI agents reviewed the mathematical core and module/example contributions."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "tool_setup": "Formal Frontier AI agents using Lean, Lake and Git for formalization, documentation and maintenance, with separate independent agent review."
+   }
+  ],
+  "notes": "The mathematical core, reference adapter and packaging were prepared by the Anchor AI agent; another AI contributor prepared the modules and examples. Independent AI agents reviewed the formalization. No human peer review or source-author endorsement is implied."
+ },
+ "scope": "For DistribLattice A and BoundedOrder A, reusable ideal completion with an injective principal bounded lattice homomorphism, finite-join witnesses for arbitrary suprema, frame structure, compact iff principal and compact generation. For Lattice A and BoundedOrder A, prime order ideals correspond to Boolean-valued bounded lattice homomorphisms. Does not include prime-ideal existence, spectra, Stone duality, universal extension or generic partial-order completion, and does not claim whole-source formalization.",
+ "sources": [
+  {
+   "title": "Ideal completion of a bounded distributive lattice",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Foundations of Rigid Geometry I",
+   "authors": [
+    "Kazuhiro Fujiwara",
+    "Fumiharu Kato"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Chapter 0, section 2.2(b), paragraph after Definition 2.2.6, printed page 38",
+   "url": "https://arxiv.org/abs/1308.4734v5"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Principal embedding",
+   "text": "[`Order.Ideal.principalHom`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L29)\nsends `a` to its principal ideal as a bounded lattice homomorphism;\n[`principalHom_injective`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L47) shows it is\ninjective. Its operation laws are available through the bundled homomorphism.",
+   "link": {
+    "text": "Order.Ideal.principalHom",
+    "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L29",
+    "code": true
+   },
+   "declaration": {
+    "name": "Order.Ideal.principalHom",
+    "file": "IdealCompletion/OrderIdeal.lean",
+    "found": {
+     "line": 30,
+     "kind": "def",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Frame and arbitrary suprema",
+   "text": "The\n[`Order.Frame` instance](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L96) makes the ideal\ncompletion a complete Heyting algebra. The\n[`mem_sSup_iff` theorem](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L77) characterizes\n`x ∈ sSup S` by a finite set of elements, each in some ideal of the *arbitrary*\nfamily `S`, whose join is **at least** `x`. This includes the empty-family and\nbottom cases; it is not restricted to directed families.",
+   "link": {
+    "text": "mem_sSup_iff` theorem",
+    "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L77",
+    "code": true
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Compact generation",
+   "text": "Every principal ideal is\n[compact](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L116), and\n[`isCompactElement_iff_eq_principal`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L141)\nidentifies **all** compact ideals as principal. The\n[`IsCompactlyGenerated` instance](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L168)\nexpresses every ideal as a supremum of compact ideals. Compactness here is\norder-theoretic, not finiteness of the ideal's underlying set.",
+   "link": {
+    "text": "isCompactElement_iff_eq_principal",
+    "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L141",
+    "code": true
+   },
+   "declaration": {
+    "name": "isCompactElement_iff_eq_principal",
+    "file": "IdealCompletion/OrderIdeal.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Prime ideals and Boolean-valued maps",
+   "text": "For `[Lattice A]` and\n`[BoundedOrder A]`,\n[`Order.Ideal.primeEquivBoolHom`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean)\nidentifies prime order ideals with bounded lattice homomorphisms `A → Bool`.\nThe characteristic map sends precisely the ideal to `false`; conversely\n[`BoundedLatticeHom.falseIdeal`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean)\nis its prime false fiber. Every such map is surjective. This includes the\none-element lattice, for which both sides of the equivalence are empty.",
+   "link": {
+    "text": "Order.Ideal.primeEquivBoolHom",
+    "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Order.Ideal.primeEquivBoolHom",
+    "file": "IdealCompletion/PrimeIdeal.lean",
+    "found": {
+     "line": 131,
+     "kind": "def",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "These constructions and proofs build on mathlib's existing ideal, lattice and\ncompactness infrastructure. They do not establish prime-ideal existence,\nspectra, Stone duality, a universal extension property, or generic partial-order\ncompletion."
+  },
+  {
+   "kind": "prose",
+   "text": "The [generated API reference](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/docs/API.md) is bound to an earlier seven-declaration\nideal-completion revision and does **not** cover the new prime-ideal module or\nthe current aggregate import. See the [prime-ideal API guide](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/docs/PrimeIdeals.md)\nfor the new declarations, and [reference scope and generation](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/docs/README.md)\nfor the historical native signatures and exact source binding."
+  }
+ ],
+ "main_results": []
+}

@@ -1,0 +1,167 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-finite-group-tate-cohomology",
+ "repo": "FormalFrontier/finite-group-tate-cohomology",
+ "rev": "c0c9d563d45adfa81bff78821042089f750b1d44",
+ "date": "2026-11-05T12:59:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Finite-group Tate cohomology",
+  "description": "Reusable Lean norms, exceptional Tate degrees, and objectwise additive cyclic period-two comparisons for finite-group representations.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "The mathematical development and checked-use clients underwent independent review on earlier pinned inputs; each release has separate exact-artifact acceptance. This metadata alone does not certify source-specific correspondence.",
+  "notes": "Earlier development review and later component review bind distinct inputs. Exact-artifact release approval and source-specific coverage remain separate decisions, not consequences of this catalogue or metadata."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "OpenAI Codex CLI with Lean verification",
+    "tool_setup": "Lean 4.34.0-rc2 and pinned mathlib4 with cache-first Lake builds"
+   }
+  ],
+  "notes": "Formal Frontier source maintainers retain mathematical acceptance and source correspondence responsibility; AI assistance alone establishes neither."
+ },
+ "scope": "Finite-group norm and exceptional degrees, quotient-equivariant norm for finite normal subgroups, fixed-element cyclic model coefficient functors, and objectwise all-integer additive cyclic period two with chosen generator. Native public API documentation is a historical source-byte reference, not certification of all private/generated proofs or selected-source coverage. No natural Tate comparison, generator independence, full resolution comparison, cup products, integral degree-two class, coefficient exact hexagon, cohomological triviality, local duality or NSW coverage is claimed.",
+ "sources": [
+  {
+   "title": "Classical finite-group Tate cohomology, norm and additive cyclic periodicity",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "mathlib4 representation-theory Tate and finite-cyclic formal APIs",
+   "type": "software",
+   "relationship": "background",
+   "url": "https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5/Mathlib/RepresentationTheory/Homological"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Natural norms",
+   "text": "For a commutative scalar ring and finite group, the\n[norm from coinvariants to invariants](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Norm.lean#L29)\nis natural in the coefficient representation. For a finite normal subgroup\nof an arbitrary ambient group, the\n[residual-quotient-equivariant norm](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Norm.lean#L102)\nis natural as well; the ambient group need not be finite or commutative.\nThis module permits independent scalar, group and coefficient universes.",
+   "link": {
+    "text": "residual-quotient-equivariant norm",
+    "url": "https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Norm.lean#L102",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Exceptional degrees",
+   "text": "The\n[exact norm sequence](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L285)\n`Tate⁻¹ → M_G → M^G → Tate⁰` identifies degrees −1 and 0 naturally with\nthe norm's kernel and cokernel. Both\n[natural isomorphisms](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L352)\n(including their [component identities](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L452))\nare shipped, not proposed; this layer inherits the same-universe boundary\nof the pinned Tate-complex API.",
+   "link": {
+    "text": "component identities",
+    "url": "https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L452",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Fixed-element coefficient functors",
+   "text": "For an element `g` of a finite\ncommutative group, the [even](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L127)\nand [odd](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L133)\nalternating `N`/`g−1` homology models are functorial in coefficients.\nThis construction does not require `g` to generate the group.",
+   "link": {
+    "text": "odd",
+    "url": "https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L133",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Objectwise additive period two",
+   "text": "With a chosen element satisfying\n`∀ x, x ∈ Subgroup.zpowers g`, the\n[all-integer Tate comparisons](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L197)\ngive [period-two isomorphisms](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L305).\n[Same-parity comparisons](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L262)\nhave identity, inverse and telescoping laws; these Tate comparisons are\n**objectwise**, not claimed natural in the coefficient representation.",
+   "link": {
+    "text": "Same-parity comparisons",
+    "url": "https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L262",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Hilbert's theorem 90",
+   "text": "For a finite Galois extension `L/K` and a specified\nautomorphism generating the full Galois group, every norm-one element of `L`\nis `y / g(y)` for a unit `y` of the original field. The\n[field endpoint](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Hilbert90.lean) permits independent\nuniverses for `K` and `L`, with no characteristic or invertible-degree\nassumption. It reuses Mathlib's cocycle theorem and finite-cyclic calculation.",
+   "link": {
+    "text": "field endpoint",
+    "url": "https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Hilbert90.lean",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": [
+  {
+   "name": "FiniteGroupTateCohomology.normSequence_exact",
+   "file": "FiniteGroupTateCohomology/Basic.lean",
+   "found": {
+    "line": 285,
+    "kind": "lemma",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm",
+   "file": "FiniteGroupTateCohomology/Basic.lean",
+   "found": {
+    "line": 352,
+    "kind": "def",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm",
+   "file": "FiniteGroupTateCohomology/Basic.lean",
+   "found": {
+    "line": 407,
+    "kind": "def",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity",
+   "file": "FiniteGroupTateCohomology/CyclicPeriodicity.lean",
+   "found": {
+    "line": 307,
+    "kind": "def",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  }
+ ]
+}

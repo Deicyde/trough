@@ -1,0 +1,197 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-iwasawa-modules",
+ "repo": "FormalFrontier/iwasawa-modules",
+ "rev": "e71db96b779b35bb05bd64eec63393e57b8da691",
+ "date": "2026-11-04T14:30:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "e37d88a26f3791ed5a93daa1f949af1021b8d103",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Iwasawa modules",
+  "description": "Generic pseudo-null and directional pseudo-isomorphism calculus and the RingCat finite-quotient completed group algebra, topology, Hausdorffness, compactness and compact-route canonical-uniformity completeness.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "independently reviewed published foundation; successor candidates require exact review",
+  "notes": "Prism, Atlas, Lattice and Anchor reviewed earlier original mathematical contributions. Separate independent reviews addressed the original development and subsequent published snapshots. Each successor requires its own exact-candidate review and applicable build and complete transitive standard-axiom evidence, including private and generated declarations. Schema validity or public API documentation alone is not acceptance."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "AI-assisted Lean authoring with pinned Lake and mathlib",
+    "tool_setup": "Beacon's original bridges, native-module and lint contributions; independently contributed public clients and metadata. The default build checks production and test roots with pinned Lean/mathlib. Separately retained native doc-gen4 SQLite/raw-record runs supplied the eleven-module API catalogue, not a private-proof census."
+   }
+  ],
+  "notes": "Mathematical and module/test contributions received independent review. The adapted native-documentation generator draws on the finite-group Tate cohomology, polynomial-root-stability and Anchor ideal-completion adapters; expression credit and the bounds of public API documentation are explained in docs/README.md. Exact release decisions are recorded separately."
+ },
+ "scope": "Reusable generic foundation only, not the full Iwasawa-module roadmap or a source-formalization completion claim. The native API catalogue is bound to the unchanged mathematical and dependency inputs identified by deceb449133f8bcc7fb4829e4fc167b483eef3a2, not to this document's release status. Independent review and required build/standard-axiom evidence are tied to exact candidates in the separate release record.",
+ "sources": [
+  {
+   "title": "Original Formal Frontier bridge definitions and proofs for Iwasawa modules",
+   "authors": [
+    "Beacon"
+   ],
+   "type": "original-proof",
+   "relationship": "independently-proves",
+   "location": "IwasawaModules/PseudoIsomorphism and IwasawaModules/CompletedGroupAlgebra"
+  },
+  {
+   "title": "mathlib4",
+   "authors": [
+    "Lean community contributors"
+   ],
+   "type": "software library",
+   "relationship": "background",
+   "url": "https://github.com/leanprover-community/mathlib4/tree/e37d88a26f3791ed5a93daa1f949af1021b8d103"
+  },
+  {
+   "title": "Cohomology of Number Fields",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Chapter V, sections 1, 3 and 5"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Pseudo-nullity and short exact sequences",
+   "text": "Over any commutative ring,\n[`Module.IsPseudoNull`](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/Basic.lean#L30)\nsays a module's support avoids primes of height at most one; equivalently,\n[each such localization vanishes](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/Basic.lean#L34).\nSubmodules, quotients and extensions preserve pseudo-nullity, and in a short\nexact sequence the middle term is pseudo-null exactly when both endpoints\nare ([exact-sequence criterion](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/Basic.lean#L75)).\nThe predicate needs no finite-generation, Noetherianity or domain hypothesis.",
+   "link": {
+    "text": "Module.IsPseudoNull",
+    "url": "https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/Basic.lean#L30",
+    "code": true
+   },
+   "declaration": {
+    "name": "Module.IsPseudoNull",
+    "file": "IwasawaModules/PseudoIsomorphism/Basic.lean",
+    "found": {
+     "line": 30,
+     "kind": "def",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Directional map calculus",
+   "text": "A *specified* linear map has pseudo-null kernel\nand cokernel exactly when it is [bijective after localization](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/LinearMap.lean#L67)\nat every prime of height at most one. Identity and bijective maps qualify;\n[composition](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/LinearMap.lean#L106) preserves\nthe predicate, with independent scalar and module universes. This gives no\nunrestricted reverse arrow or symmetric relation.",
+   "link": {
+    "text": "composition",
+    "url": "https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/PseudoIsomorphism/LinearMap.lean#L106",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Completed group algebra",
+   "text": "For a commutative coefficient ring `R` and a\nprofinite group `G`, [`CompletedGroupAlgebra R G`](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Basic.lean#L60)\nis the finite-quotient group-algebra limit in `RingCat`, so `G` need not be\ncommutative. Its [coordinate projections](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Basic.lean#L65)\nare compatible and detect equality; the [canonical ring map](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Basic.lean#L98)\nfrom `R[G]` has a [coordinate formula](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Basic.lean#L103).\nNo injectivity or density of this map is asserted.",
+   "link": {
+    "text": "CompletedGroupAlgebra R G",
+    "url": "https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Basic.lean#L60",
+    "code": true
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Coefficientwise topology and separation",
+   "text": "For any finite index type,\neven an empty one, [coefficient extraction is a homeomorphism](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Topology.lean#L59)\nwith a finite product; this part needs no group structure. The completed\ntopology is induced by finite-quotient projections: a map into the completion\nis [continuous iff each coordinate is](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Topology.lean#L224).\nHausdorff coefficients give [finite-level](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Separation.lean#L33)\nand [completed](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Separation.lean#L40)\nHausdorff spaces. Multiplicative/topological-ring results retain their group\nand ring-continuity hypotheses.",
+   "link": {
+    "text": "completed",
+    "url": "https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Separation.lean#L40",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Compact-route completeness",
+   "text": "[Finite-index coefficient spaces](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Compactness.lean#L72)\nare compact over compact coefficients *without* a Hausdorff or topological-ring\nassumption. [Finite-level completeness](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Completeness.lean#L64)\nfor canonical additive-group uniformity additionally needs a topological ring.\n[Completed compactness](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Compactness.lean#L176)\nand [completed completeness](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Completeness.lean#L100)\nby this route need compact **and Hausdorff** topological-ring coefficients;\nmerely complete coefficients are not covered.",
+   "link": {
+    "text": "completed completeness",
+    "url": "https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/IwasawaModules/CompletedGroupAlgebra/Completeness.lean#L100",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "prose",
+   "text": "These noncomputable constructions also include the zero coefficient ring.\nCompact-module structure, `Z_p[[Gamma]]` comparisons, Iwasawa structure and\ninvariants, growth, adjoints and full source coverage remain outside this library.\nThe [native API reference](https://github.com/FormalFrontier/iwasawa-modules/blob/e71db96b779b35bb05bd64eec63393e57b8da691/docs/API.md) gives signatures and further declarations."
+  }
+ ],
+ "main_results": [
+  {
+   "name": "Module.isPseudoNull_iff_localizedModule_subsingleton",
+   "file": "IwasawaModules/PseudoIsomorphism/Basic.lean",
+   "found": {
+    "line": 34,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "LinearMap.isPseudoIsomorphism_iff_localizedModule_map_bijective",
+   "file": "IwasawaModules/PseudoIsomorphism/LinearMap.lean",
+   "found": {
+    "line": 67,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "CompletedGroupAlgebra.proj_ofMonoidAlgebra",
+   "file": "IwasawaModules/CompletedGroupAlgebra/Basic.lean",
+   "found": {
+    "line": 103,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "CompletedGroupAlgebra.continuous_iff_proj",
+   "file": "IwasawaModules/CompletedGroupAlgebra/Topology.lean",
+   "found": {
+    "line": 224,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  }
+ ]
+}

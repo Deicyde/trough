@@ -1,0 +1,94 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-simplicial-rings",
+ "repo": "FormalFrontier/simplicial-rings",
+ "rev": "728785746bd0ddcca62c91cf3f50507ec71107ce",
+ "date": "2026-11-04T15:46:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Simplicial Rings",
+  "description": "Central polynomial simplices over arbitrary unital rings, their coefficient-natural polynomial retraction and explicit algebraic simplicial homotopy on the polynomial extension.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "self-assessed",
+  "notes": ""
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Formal Frontier agents using Lean 4",
+    "tool_setup": "AI-assisted proof development"
+   }
+  ],
+  "notes": ""
+ },
+ "scope": "",
+ "sources": [
+  {
+   "title": "The K-book: An Introduction to Algebraic K-theory",
+   "authors": [
+    "Charles A. Weibel"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Chapter IV, section 11 (mathematical motivation)"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "`PolyRing R n`",
+   "text": "Has `n` central\nindeterminates over any `Ring R`; homogeneous\n[`coordinate`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) values sum to one.\n[`substitute`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) evaluates free\ngenerators at **whole-target-center** elements (a sufficient, not necessarily\nminimal, condition); [`hom_ext`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean)\ndetermines ring maps by coefficients and generators.",
+   "link": {
+    "text": "PolyRing R n",
+    "url": "https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean",
+    "code": true
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "`simplexFunctor`",
+   "text": "Sends a ring\nto an actual simplicial ring, with contravariant\n[`ordinalMap`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) for every ordinal\narrow, including empty fibres. Polynomial\n[`constantInclusion`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) followed\nby [`evalAtZero`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) is strictly\nthe identity on the unextended simplex; both maps are coefficient-natural.",
+   "link": {
+    "text": "simplexFunctor",
+    "url": "https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "simplexFunctor",
+    "file": "SimplicialRings/CentralPolynomialSimplex.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "`contraction`",
+   "text": "Is a\nnative seven-identity `SimplicialObject.Homotopy` from evaluation-then-inclusion\nto the identity on the polynomially extended simplex. Its first face is the\n**identity** endpoint and its last face is **evaluation-then-inclusion**;\n[`homotopyMap_natural`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex/Homotopy.lean)\nhandles every unital coefficient map. Whiskering along a supplied covariant\nfunctor uses mathlib's existing `Homotopy.whiskerRight`, not a new wrapper here.",
+   "link": {
+    "text": "contraction",
+    "url": "https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex/Homotopy.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "contraction",
+    "file": "SimplicialRings/CentralPolynomialSimplex/Homotopy.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "See the [simplex guide](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/docs/CentralPolynomialSimplex.md) and\n[homotopy guide](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/docs/CentralPolynomialSimplexHomotopy.md) for the precise\ncoordinate, degree, face, degeneracy and universe conventions."
+  }
+ ],
+ "main_results": []
+}

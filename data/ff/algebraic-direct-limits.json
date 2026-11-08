@@ -1,0 +1,232 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-algebraic-direct-limits",
+ "repo": "FormalFrontier/algebraic-direct-limits",
+ "rev": "e5d0dea1697c85da3aefbe23ec33c4da2d138a6c",
+ "date": "2026-11-05T07:50:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Algebraic Direct Limits",
+  "description": "Reusable Lean results for constant identity function and ring-homomorphism systems, varying-scalar directed limits, tensor products, countably cofinal inverse systems, simple filtered ring colimits, prime spectra of filtered commutative-ring colimits, Krull dimension under finite-subset capture, for directed colimits and for directed subsemiring unions, localization of countable products, cofinal group completions, monoidal-category object classes with actual-image cofinality, same-topology scalar restriction, linear continuity for coinduced topological modules, module topology under continuous linear injections into semisimple modules, module topology on finite-dimensional strong duals without complete scalars, continuous finite-basis coordinates and binary-product distribution for one-sided tensor products, continuous tensor universal properties, continuous dual tensor contraction and its finite-left equivalence with bounded-convergence Hom spaces, the scalar tensor unit, continuous associativity with whole continuous lift/curry compatibility, compactness for finitely generated tensor coefficients, noncompactness with infinite free coefficients, discreteness for tensors with a discrete right factor, arbitrary-basis and projective tensor Hausdorffness preservation, scalar extension by discrete coefficient algebras with separate base-linear and coefficient-linear views, a continuous unit and functorial continuous maps, and a rational-circle counterexample to flat-coefficient tensor Hausdorff preservation, with an algebraic quotient detector and dense rational-angle tensor-vanishing laws. The coefficient tensor–continuous Hom adjunction preserves existing colimits.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "unchecked",
+  "notes": "Independent agent reviews cover the existing direct-limit contributions, including the prime-spectrum comparison, the coinduced-module continuity criterion and the one-sided tensor-topology continuity and map API. Tensor universal-property and scalar-unit constructions have characteristic algebraic bridges, uniqueness and naturality laws, with integer-pair and boundary examples. Scalar restriction has characteristic action and forgetful agreements, natural identity and composition comparisons, and a semiring regular-action continuity criterion with Algebra agreement. Discrete scalar extension retains separate scalar views and has characteristic action, map, unit and underlying-module comparisons, with matrix/countable- product and same-ring swapping rank-one clients. The two complementary tensor-Hom naturality laws and nine example conclusions are included. This does not assert source-author endorsement or complete formal coverage of a source. API documentation is partial; see docs/CREDITS.md and docs/README.md."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex CLI and Formal Frontier agent workflows",
+    "tool_setup": "Pinned Lean 4, mathlib, Lake, and Git"
+   }
+  ],
+  "notes": "AI-assisted Formal Frontier agents developed and assembled this library. A complete list of models used in earlier contributions is unavailable. Independent review is distinct from authorship."
+ },
+ "scope": "A continuous injective linear map into a semisimple module with module topology gives the original source its module topology and is an embedding. The scalar ring has an arbitrary topology; the monoid source has continuous addition and scalar action, and the target is an additive group. Scalar and carrier universes are independent. Semisimple-ring corollaries retain both additive monoids and include division rings; real-axis and zero-dimensional applications are included. IsModuleTopology.strongDual gives the module topology on the existing bounded-convergence continuous dual of a finite-dimensional topological vector space with the module topology over a normed field, without a norm on the original space, complete scalars or a nontrivial-norm assumption. Rational-plane and dimension-zero applications and complete-field agreement are included. Tensor functoriality in both algebraic coefficients and topological right modules has standard curried, uncurried and flipped presentations, independent scalar and carrier universes and a weighted integer example with a nonzero image detected as six. The coefficient-tensor API includes characteristic identities for concrete Hom, tensor maps, currying, and naturality in algebraic coefficients and continuous targets. The rational-circle library modules are separate imports, reached by the circle clients rather than the public re-export. The examples cover prime spectra, finite-capture, directed-colimit and directed-union dimensions including proper subsemiring traces, coinduced modules, integer-pair tensors, tensor-Hom, the scalar unit, scalar restriction, discrete scalar extension, tensor separation and binary-product distribution with infinite integer coefficients and usual real right factors, infinite-basis and nonfree projective coefficients, tensor associativity with nonfree torsion and empty coefficients, continuous lift/curry compatibility with mixed coordinate detectors, infinite integer coefficients and usual real factors, and nonfree first-axis ideal coefficients, finite torsion tensor compactness, noncompact tensors with infinite free coefficients and a compact Hausdorff right factor, and rational coefficients with the usual real circle. The rational-circle model uses the algebraic integer module of rational numbers, flat by Mathlib's localization theorem, and the compact Hausdorff circle of period one with its jointly continuous integer action. The canonical one-sided tensor has continuous fixed-coefficient generators. Its integer-linear detector has the purely algebraic target of real numbers modulo the rational span of one and detects the nonzero pure tensor with coefficient one and circle class of the square root of two. All rational angles are dense in the usual circle, each has its positive denominator as an integer annihilator, and every rational coefficient tensored with any rational angle is zero. Integer balancing divides only the rational coefficient. The half-angle is nonzero in the circle but is killed by the generator at one; a twelve-conjunct theorem combines the fixed model's supporting properties without additional hypotheses. The circle tensor is not Hausdorff: otherwise the continuous generator at one and the zero map would agree everywhere by equality on dense rational angles, contradicting its nonzero value at the square root of two. This refutes Hausdorff preservation for flat coefficients even with a compact Hausdorff right factor and jointly continuous integer action. No rational action on the circle or topology or continuity for the detector target is asserted. Scalar restriction along a continuous ring homomorphism between arbitrary rings retains each topological module's topology, with functorial continuous-linear maps, natural identity/composition comparisons and both forgetful agreements. Carrier universes for continuous-linear maps are independent. Separately, over arbitrary semirings with supplied topologies, continuity of the scalar map is equivalent to joint continuity of its restricted regular action when target multiplication is continuous. The algebra-map multiplication formula agrees with Algebra scalar multiplication for any supplied topologies. A linear map out of the existing coinduced topological module is continuous exactly when all generating composites are continuous, over any ring with a supplied topology and with an independently leveled target. The one-sided tensor topology is constructed from fixed-coefficient generators, with their characteristic linear continuity criterion, canonical continuous tensor maps and continuous finite-basis coordinates with the product topology and finite-sum inverse. The tensor maps obey whole-map zero, addition, scalar and finite-sum laws in each variable. Infinite-rank integer coefficient projections on the usual real right module give distinct nonzero supported outputs and unequal-weight detectors. Continuous linear maps out of the tensor correspond to algebraic linear families of continuous linear maps on the right factor, with explicit lift/curry constructions and naturality. Two complementary whole-map naturality laws describe lift after both-input precomposition and curry after outgoing postcomposition, with six whole-map and three variable mixed-value example conclusions. Their input maps use complete existing constructors; three tuples retain existing nonzero, distinct, nonfinite, nondiscrete and nonfree control proof values. The lift-precomposition statement is the continuous representation of Mathlib's algebraic lift_comp_map law for the canonical one-sided topology. The scalar tensor unit equips Mathlib's algebraic left identity with continuity and the generator at one as inverse. Both constructions allow independent carrier universes over a commutative ring with a supplied topology and jointly continuous right-factor actions, without a topology on the coefficients or a finiteness hypothesis. Scalar tensor-unit examples on the usual reals give all-input action, two-way inverse recovery, a nonzero tensor at one, path-connectedness and nondiscreteness. They use the existing module, topology and jointly continuous integer action. The binary-product tensor equivalence distributes an algebraic coefficient module over two topological right factors, using their ordinary product topology over a commutative ring with a supplied topology. Its underlying equivalence is Mathlib's algebraic product equivalence; projection, inclusion, inverse reconstruction and naturality laws retain independent carrier universes without a finiteness or separation hypothesis. For a discrete right topological module, the scalar action on the algebraic tensor is jointly continuous at bottom topology, and the canonical one-sided tensor topology is discrete. The commutative ring has a supplied topology; scalar, coefficient and right-factor universes are independent. Neither discrete scalars nor a topology, finite generation, freeness or projectivity of the coefficient module is required. The examples retain mod-two integer coefficients that are not finitely generated, and the usual nondiscrete product ring of integers and reals, acting jointly on a discrete integer module through its first projection. Algebraic unitors detect nonzero, distinct and mixed tensors; continuity of those unitors is not asserted. The continuous dual tensor contraction maps the existing one-sided tensor of the algebraic coefficient module StrongDual κ E and G into bounded-convergence continuous linear maps E to G. The scalar field is nontrivially normed; E only has an additive group, a module structure and a topology, while G has continuous addition and jointly continuous scalar action. Scalar and carrier universes are independent. The rank-one formula and agreement with Mathlib's algebraic dualTensorHom hold without finiteness, completeness, separation or norms on the modules, and without continuity of the operations on E. When E is additionally finite-dimensional with its module topology, the same forward contraction is a continuous linear equivalence, with finite-basis inverse given by coordinate forms tensored with operator values. No further hypothesis on G is needed. Examples reconstruct an independently constructed real two-to-three operator from its column tensor, recover the tensor by the continuous inverse, evaluate the operator to a nonzero vector, and give the forward and inverse zero-dimensional left-source boundary for arbitrary topological right modules. The algebraic associator becomes a continuous linear equivalence between the supplied one-sided tensor topologies, with pure-tensor formulas, inverse identities, threefold extensionality and naturality in all three factors, without finiteness, freeness or separation assumptions. The flat continuous lift of any two-coefficient linear family agrees with its iterated lift after the canonical associator, and currying after reassociation is the algebraic lift of the twice-curried family. These whole map and family identities retain five independent carrier universes over a commutative ring with a supplied topology and jointly continuous right and target scalar actions, without a topology on coefficients or Hom modules. Mixed coordinate clients distinguish nonzero functionals and lifts and preserve boundary property values for infinite integer coefficients with usual real factors and nonfree first-axis ideal coefficients. Basis change remains a type contract without a proof or an exported construction of its realization. The arbitrary product-coordinate map is constructed from the continuous tensor lift and Pi construction. Its characteristic lemmas describe pure tensors and generators, support forgetting from algebraic Finsupp coordinates, injectivity and finite-coordinate agreement. The coordinate equivalences and finite-sum inverses remain finite-only. An arbitrary supplied coefficient basis or projective coefficient module preserves Hausdorffness of the right topological module. The projective case uses a section of the canonical free cover and the induced continuous split tensor maps. These results retain independent carrier and index universes over a commutative ring with a supplied topology and a jointly continuous right action, without a coefficient topology, continuity of ring multiplication, scalar separation, a field, Small or finite-generation hypotheses. Separation examples retain the nonfree right integer module ZMod 3, nonzero pure and mixed tensors, right doubling, the noncompact integer right factor, empty-basis and trivial-ring boundaries and nonreflection. Further examples construct the canonical infinite Finsupp integer coefficients with usual nondiscrete real right module, and the nonfree projective first-axis ideal over the discrete integer product ring, including model properties and explicit disjoint open pullbacks. These are forward Hausdorff preservation results; no Hausdorffness reflection or infinite-product surjectivity is asserted. Scalar extension by a discrete, possibly noncommutative coefficient algebra has separate base-linear and coefficient-linear views with the same primitive tensor topology. Fixed-coefficient continuity gives a jointly continuous coefficient action, a continuous base-linear unit and functorial coefficient-linear maps. For commutative coefficients the underlying module is naturally isomorphic to Mathlib's algebraic scalar extension. Matrix/countable-product examples have nonzero tensors, a tensor moved by extended doubling and an order-sensitive scalar action. A rank-one example uses the same scalar ring for base and coefficients, a swapping nonidentity algebra map, and a separately bundled regular input. Its coefficient-linear comparison detects a nonzero unit, differing base and coefficient scalar actions, and a nonzero nonidentity extended projection. Tensoring a compact topological module with a finitely generated algebraic coefficient module preserves compactness, over a commutative ring with a supplied topology and independent carrier universes. A finite spanning family gives a continuous surjection from a finite power of the right factor. This requires Module.Finite R C, not projectivity alone; neither coefficient freeness nor compactness of the scalar ring is required. The nonfree integer-module example uses ZMod 3 and multiplication to detect a nonzero pure tensor and instantiates this compactness result. Finite generation cannot in general be omitted, even for free/projective coefficients and a nontrivial compact Hausdorff right factor. Over R = ZMod 2, the algebraic coefficient module C = ℕ →₀ R is countably free and projective but not finitely generated. The discrete right self-module M = R is nontrivial, compact and Hausdorff, yet [TensorNoncompactness.not_compactSpace_tensor](AlgebraicDirectLimitsExamples/TensorNoncompactness.lean) shows that their one-sided tensor is not compact. The right unitor gives a homeomorphism with an infinite discrete comparison module D retaining C's algebraic module and action, not a coefficient-topology input. Compactness would make D finite, contradicting the injection from ℕ given by basis tensors. Finite-subset capture in one homomorphism range per finite subset bounds the Krull dimension of a commutative semiring by the supremum of the source dimensions, without injectivity or a directed-system assumption. The dimension values include bottom and top; subsemirings generated by finite subsets give a specialization. Under the same finite-subset capture hypothesis, the dimension of a target subsemiring is bounded by the supremum of the dimensions of its preimages in the stages. Finite-variable polynomial examples establish this hypothesis without any one stage surjecting onto the target or its proper even-variable subsemiring. Constant families with identity transition functions satisfy Mathlib's DirectedSystem laws over arbitrary preorders, with independent index and carrier universes and no directedness or nonemptiness assumption. The constant identity ring-homomorphism system specializes this same law witness for any nonassociative semiring, using Mathlib's identity-coercion API. The topology test client retains linear-continuity, tensor-map, finite-coordinate, basis-change and preservation type contracts without asserting proofs of the remaining realizations. The dimension of a directed colimit of commutative semirings over a nonempty directed preorder is bounded by the supremum of stage dimensions, without injective transitions and with independent index and stage universes. The dimension of the supremum of a nonempty inclusion-directed family of subsemirings of a commutative semiring is bounded by the supremum of stage dimensions. The index carries no order and has a universe independent of the ambient semiring; Noetherianity, domain, nontriviality and finite dimension are not required. A proper integer-to-rational family has stage-dimension supremum one and union dimension zero, so the bound need not be an equality. An empty-index example shows why nonemptiness is needed. Filtered commutative-ring colimits give limits of prime spectra in topological spaces, without injective transition maps or separation hypotheses. Monoidal group completion uses the skeleton and its actual image, with cofinal denominators, stabilization and an injective induced map under full faithfulness. Graded normalization is a type equivalence, not an additive equivalence; cancellation is required only for the degree target in its surjective/equivalence results. This is not a full theory or a source-coverage assessment. Full categorical tensor coherence, a pentagon construction and completed tensor products are outside this API. The underlying linear equivalence of TopModuleCat.tensorProdLeft is Mathlib's TensorProduct.prodLeft, without a topology on the coefficients. Its two continuity fields, all characteristic and naturality laws, and all coefficient-product client laws describe the projection product and inclusion coproduct, with characteristic formulas and naturality in both coefficient maps and the continuous right-factor map.",
+ "sources": [
+  {
+   "title": "Stacks Project, Algebra, Lemma 10.86.3: Mittag-Leffler systems",
+   "type": "web post",
+   "relationship": "background",
+   "url": "https://stacks.math.columbia.edu/tag/0597"
+  },
+  {
+   "title": "mathlib4 mathematical library",
+   "type": "software",
+   "relationship": "background",
+   "url": "https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Module direct limits as colimits of types",
+   "text": "For a semimodule system over\na semiring, indexed by a nonempty directed preorder with decidable equality,\nthe canonical maps into `Module.DirectLimit` form a colimiting cocone of types.\nTransition maps need not be injective, and the scalar, index and stage\nuniverses are independent. See\n[Module](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Algebra/Colimit/Module.lean).",
+   "link": {
+    "text": "Module",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Algebra/Colimit/Module.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Directed Grothendieck additive groups",
+   "text": "A coherent, jointly surjective\nfamily of additive maps over a binary-directed index relation induces a\njointly surjective family on the original Grothendieck additive groups;\ntransition identity and composition laws are not needed for this conclusion.\nOver a directed preorder, if the transitions form a directed system and raw\ncocone equality is witnessed at a common stage, equality of arbitrary\ncompleted images is equivalent to equality at a common completed stage.\nNo cancellation or injectivity of transitions, cocone maps, or canonical\ncompletion maps is assumed. See\n[DirectedGroupCompletion](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/DirectedGroupCompletion.lean).",
+   "link": {
+    "text": "DirectedGroupCompletion",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/DirectedGroupCompletion.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite matrix units",
+   "text": "Over a nonempty directed preorder of semirings\nwith bundled ring-hom transitions, `DirectLimit.matrixUnitsColimitEquiv`\nidentifies the limit of square-matrix unit groups with the matrix units\nover the coefficient limit. The dimension has `Fintype` and `DecidableEq`\nand may be empty; transitions need not be injective. See the\n[matrix-units guide](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/docs/MatrixUnits.md) and\n[source module](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Matrix/Units.lean).",
+   "link": {
+    "text": "source module",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Matrix/Units.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite dependent products and representatives",
+   "text": "For directed systems of\ntypes over a nonempty directed preorder, `DirectLimit.piEquiv` identifies the\nlimit of a finite dependent product with the product of the coordinate limits.\nIts forward map is the canonical coordinate comparison `DirectLimit.piMap`.\nTransition maps may be arbitrary function-like maps and coordinate carriers\nmay be empty; neither injectivity nor algebraic structure is needed. Every\nfinite dependent family of limit elements has representatives at one common\nstage. See [Pi](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Order/DirectLimit/Pi.lean).\n`DirectLimit.forall_mk_eq_iff_exists` characterizes equality of two finite\nfamilies of quotient classes by equality of their transported functions at\none common stage. Its `_of_fixed` variant bounds both supplied input stages,\nincluding for an empty family, without a separate nonempty-index assumption.\nSee [DirectedSystem](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Order/DirectedSystem.lean) and the\n[first-order and paired-matrix examples](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/FiniteRepresentatives.lean).",
+   "link": {
+    "text": "first-order and paired-matrix examples",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/FiniteRepresentatives.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite-support coefficient descent",
+   "text": "Over a nonempty directed preorder,\nfinitely supported functions commute with direct limits of types with zero\nwhose selected transition maps preserve zero. The coefficient index may be\narbitrary, and each function has a representative at one stage with exactly\nthe same support. Neither injective transitions nor additive structure are\nrequired. See [Finsupp](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Data/Finsupp.lean).",
+   "link": {
+    "text": "Finsupp",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Data/Finsupp.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Semilinear quotient descent",
+   "text": "A continuous semilinear map from a module\nover a ring to a module over a semiring descends through any submodule in\nits kernel, retaining the original module structures and quotient topology.\nThe codomain need only be an additive commutative monoid; continuity of\nmodule operations is not assumed. See\n[Quotient](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/Module/Quotient.lean).",
+   "link": {
+    "text": "Quotient",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/Module/Quotient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Varying scalars and tensor products",
+   "text": "For compatible semilinear module\nsystems over a nonempty directed preorder, the tensor product of the two\nmodule limits over the varying commutative-semiring limit is equivalent to\nthe limit of the stagewise tensor products. Transition maps need not be\ninjective. See [VaryingScalar](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/VaryingScalar.lean).",
+   "link": {
+    "text": "VaryingScalar",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/VaryingScalar.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Mittag--Leffler inverse systems",
+   "text": "A pointwise nonempty, Type-valued\nMittag--Leffler inverse system over a nonempty directed preorder with a\ncountable cofinal subset has a compatible section. Under the same index and\nMittag--Leffler conditions, each element of an eventual range lifts to a\nsection without a separate pointwise-nonemptiness assumption. See\n[MittagLeffler](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/MittagLeffler.lean).",
+   "link": {
+    "text": "MittagLeffler",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/MittagLeffler.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Prime spectra of filtered colimits",
+   "text": "For a small filtered category and\nany colimit cocone of commutative rings, its spectrum cone is a limit in\ntopological spaces. The chosen-limit homeomorphism identifies coordinates\nwith contraction along the cocone maps; no injectivity or nonzero-ring\nassumption is required. See\n[PrimeSpectrumFilteredColimits](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/PrimeSpectrumFilteredColimits.lean).",
+   "link": {
+    "text": "PrimeSpectrumFilteredColimits",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/PrimeSpectrumFilteredColimits.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Krull dimension under finite-subset capture",
+   "text": "For homomorphisms\n`φ i : A i →+* B` of commutative semirings, if every finite subset of `B`\nlies in the range of one `φ i`, then\n`ringKrullDim B ≤ ⨆ i, ringKrullDim (A i)`. The family need not be directed\nand the maps need not be injective; dimensions include `⊥` and `⊤`. See\n[FiniteCapture](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/RingTheory/KrullDimension/FiniteCapture.lean).",
+   "link": {
+    "text": "FiniteCapture",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/RingTheory/KrullDimension/FiniteCapture.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Module topology on finite-dimensional strong duals",
+   "text": "Over any normed\nfield, the continuous dual of a finite-dimensional topological vector space\nwith module topology also has module topology, retaining its topology of\nuniform convergence on bounded sets. Neither completeness nor a nontrivial\nnorm on the field is required. This is an explicit theorem, not a global\ninstance. See [StrongDual](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/StrongDual.lean).",
+   "link": {
+    "text": "StrongDual",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/StrongDual.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Flat-coefficient tensor monomorphisms",
+   "text": "Over a commutative ring with a\nsupplied topology, tensoring the topological module factor with a flat\nalgebraic coefficient module preserves injectivity of continuous linear\nmaps and categorical monomorphisms. No coefficient topology is required.\nSee [TensorFunctor](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorFunctor.lean).",
+   "link": {
+    "text": "TensorFunctor",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorFunctor.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Coefficient tensor–continuous Hom adjunction",
+   "text": "For a commutative ring\nwith a supplied topology and a topological module with jointly continuous\nscalar action, coefficient tensor is left adjoint to the algebraic\ncontinuous-Hom functor, in a common carrier universe independent of the\nscalar universe. It preserves existing colimits of arbitrary diagram size;\nneither coefficients nor the Hom module are given a topology. See\n[CoefficientTensor](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/CoefficientTensor.lean).",
+   "link": {
+    "text": "CoefficientTensor",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/CoefficientTensor.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Continuous tensor quotients",
+   "text": "For a commutative ring `R` with a supplied\ntopology, an algebraic coefficient module `C`, a topological module `M` with\njointly continuous scalar action and any submodule `P`, there is a continuous\nlinear equivalence `C ⊗[R] (M ⧸ P) ≃L[R] (C ⊗[R] M) ⧸ K`, where\n`K = LinearMap.range (TensorProduct.map LinearMap.id P.subtype)`.\nThis is the range, not its closure; no flatness or closedness assumption is\nrequired. See [Quotient](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorProduct/Quotient.lean).",
+   "link": {
+    "text": "Quotient",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorProduct/Quotient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Projective coefficients preserve tensor Hausdorffness",
+   "text": "Over a\ncommutative ring with a supplied topology, the one-sided tensor of a\nprojective algebraic coefficient module with a Hausdorff topological module\nwith jointly continuous scalar action is Hausdorff. No coefficient topology\nor finiteness assumption is required. See\n[TensorSeparation](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorSeparation.lean).",
+   "link": {
+    "text": "TensorSeparation",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorSeparation.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Flat coefficients need not preserve tensor Hausdorffness",
+   "text": "The one-sided\ntensor `ℚ ⊗[ℤ] AddCircle (1 : ℝ)` is not Hausdorff, although the rational\ncoefficient module is flat and the usual real circle is compact Hausdorff\nwith jointly continuous integer action. See the\n[rational-circle counterexample](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/TensorCircleClient.lean).",
+   "link": {
+    "text": "rational-circle counterexample",
+    "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/TensorCircleClient.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "prose",
+   "text": "For further results and characteristic formulas, see the\n[guide's headline results](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/GUIDE.md#headline-results) and the\n[coefficient tensor–Hom naturality guide](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/docs/coefficient-tensor-hom-naturality.md)."
+  }
+ ],
+ "main_results": []
+}

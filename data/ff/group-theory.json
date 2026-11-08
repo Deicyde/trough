@@ -1,0 +1,2538 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-group-theory",
+ "repo": "FormalFrontier/group-theory",
+ "rev": "cad97f1a1920e3c68d41ec2d689cde51231b5a31",
+ "date": "2026-11-05T17:13:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Group Theory",
+  "description": "For finite I and a commutative topological group E, ContinuousMonoidHom.intPiEvalEquiv I E identifies continuous homomorphisms from the original Multiplicative (I → ℤ) with I → E, with the compact-open topology. Evaluation uses the standard integer generators; reconstruction is the finite product of integer powers, including the empty index. Domain and coordinate transports assemble the existing finite-product, integer and type-tag equivalences, without local compactness, separation, nonemptiness or a discrete-target assumption. Fixed evaluation defines PontryaginDual.evalHom on every monoid with a topology, into its entire compact-open bidual. Canonical bidual equivalences of two factors, with their pointwise evaluation laws, give the explicit constructor PontryaginDual.prodEvalEquiv without additional source hypotheses. The additive real plane uses the two real factor equivalences and ContinuousMulEquiv.prodMultiplicative, which lifts Mathlib's algebraic tagged-product equivalence under addition and topologies alone. For finite dependent products, ContinuousMonoidHom.piEquiv and PontryaginDual.piEquiv restrict to the coordinates, and PontryaginDual.piEvalEquiv constructs canonical biduality from canonical factor equivalences. The arbitrary-index tag lift ContinuousMulEquiv.piMultiplicative gives PontryaginDual.realPiEvalEquiv on Multiplicative (I → ℝ) for finite I, including the empty index. All source topologies and algebraic structures are the original ones. Generator evaluation also identifies the compact-open space of continuous homomorphisms from Multiplicative ℤ with any topological group E via ContinuousMonoidHom.intEvalHomeomorph E. For commutative E, ContinuousMonoidHom.intEvalEquiv E is a continuous multiplicative equivalence with the same homeomorphism. Its Circle specialization identifies PontryaginDual (Multiplicative ℤ) with Circle, without local compactness or Hausdorff hypotheses in the generic result. Canonical evaluation sends a monoid A with a topology continuously into its compact-open Pontryagin bidual under LocallyCompactPair A Circle. Evaluation is natural under continuous monoid homomorphisms; evaluation on the dual is a section of the dual of evaluation when the dual also forms a locally compact pair with Circle. Every continuous character of the additive real line has a unique period-one Fourier frequency. The Fourier parametrization is an equivalence for the original compact-open topology, and canonical real bidual evaluation is a continuous multiplicative equivalence. No general locally compact abelian reflexivity theorem is asserted. Restriction identifies the compact-open circle dual of a binary product with the product of the factor duals, for arbitrary monoids with topologies. The inverse multiplies the factor character values; the equivalence is natural under product maps and needs no source-operation continuity, local compactness or separation. The generic continuous-hom coproduct equivalence uses a commutative topological-group target; its algebraic restriction universal property only needs a commutative monoid target with continuous multiplication. In a reduced monoid with zero, every nonzero natural exponent m satisfies a ^ m * b = 0 iff a * b = 0 and a * b ^ m = 0 iff a * b = 0. The lemmas pow_mul_eq_zero_iff and mul_pow_eq_zero_iff require only MonoidWithZero and IsReduced, without commutativity, cancellation, absence of zero divisors or nontriviality. The positive-exponent condition is essential. For monoids M and N, let S : Set M contain, for each x : M, a finite indexed family of powers x ^ (e i) with gcd one. In any common carrier F with FunLike F M N and MulHomClass F M N, fixed g h : F satisfy Set.EqOn g h S iff g = h whenever every g x is left-regular. The source, target, map-carrier and index universes are independent; both the finite index set and exponent function may depend on x. The additive form uses AddHomClass, additive monoids and natural multiples. No unit-preserving map class, regularity of h, algebra on S, global cancellation, commutativity, finite or nonempty index type, or positivity assumption is required. Zero and repeated exponents are allowed. The indexed image criterion is the range specialization, followed by the Nat/id criterion. For f : A →* M with only MulOne A and monoids M and N, suppose each x : M admits s : Finset ι and e : ι → ℕ with s.gcd e = 1 and x ^ (e i) in Set.range f for every i in s. For fixed g, h : M →* N, right-regularity of every g x gives g.comp f = h.comp f iff g = h. The four universes are independent, and both s and e may depend on x. No regularity of h, global cancellation, commutativity, surjectivity, finite or nonempty index type, or positivity assumption is required. The same proof gives the additive form with AddZero A, additive monoids and natural multiples. For f : A →* M with only MulOne A and monoids M and N, suppose each x : M admits s : Finset ι and e : ι → ℕ with s.gcd e = 1 and x ^ (e i) in Set.range f for every i in s. For fixed g, h : M →* N, left-regularity of every g x gives g.comp f = h.comp f iff g = h. The four universes are independent; both s and e may depend on x. No regularity of h, global cancellation, commutativity, surjectivity, finite or nonempty index type, decidable equality or positivity is needed. The same proof gives the additive form with AddZero A and natural multiples. The indexed image criterion specializes the set criterion to the range, and the finite-natural-exponent API is its Nat/id specialization. Zero and repeated exponents are allowed; singleton exponent one is legal, while empty or all-zero families cannot have gcd one. Coprime-pair and consecutive-power restriction, and the latter's left-cancellative injectivity form, are specializations. In any monoid, a left-regular element a and arbitrary b have equal powers at the gcd of a finite family of natural exponents if and only if their powers agree at every selected exponent. Gcd one gives a = b. The additive images require only an additive monoid and injective left addition by a. Neither statement requires regularity of b, global cancellation, commutativity, nonempty families or positive exponents. Every topological group has a Hausdorff, totally disconnected quotient by its identity component, without separation or local compactness of the original group. Continuous homomorphisms to totally disconnected groups equipped with a topology factor uniquely through this quotient; the target operations need not be continuous. Every identity neighborhood in a locally compact totally disconnected topological group contains a compact open subgroup. The open left-translation stabilizer of any compact open set provides the construction; compactness of that subgroup follows when the set contains the identity. For a continuous homomorphism from a nonarchimedean group, a subgroup-free target identity neighborhood forces an open kernel, without source compactness, commutativity or target separation. An open kernel makes a group homomorphism locally constant even without continuity or a target topology. With compact source, the image and kernel quotient are finite, the quotient is discrete, and Mathlib's canonical kernel lift uniquely factors the map. Circle's centered half-arc gives the character case. In a compact Hausdorff commutative topological group with an abstractly finitely generated dense subgroup, every positive-power range has finite index and is open. Every abstract finite-index subgroup is open without assuming it closed; the additive versions use natural-number scalars. In a locally compact topological group, the identity component is the intersection of all open subgroups. Under a continuous open surjective group homomorphism from a locally compact source, the closure of its identity-component image equals the target identity component. Neither result requires Hausdorffness of the original groups. An open quotient map from a compact Hausdorff totally disconnected space to a Hausdorff space has totally disconnected target, without group structure, injectivity or a local-compactness assumption on the target. An open quotient group homomorphism from a locally compact totally disconnected group to a Hausdorff group has the same conclusion. The compact-open space of continuous maps from any compact space to a discrete space is discrete, without Hausdorffness or nonemptiness. Every discrete-valued continuous map on a compact topological group descends through an open normal subgroup to its finite discrete quotient, without total disconnectedness, commutativity or a homomorphism condition. On an arbitrary power I → G of a compact topological group, every such map factors through s → G / N for a finite set s of coordinates and one open normal subgroup N of G. Only this selected stage is asserted to be finite and discrete, not the full quotient power over I. The index, group and target universes are independent. No finiteness of I or Y, algebraic structure on Y, additional nonemptiness, Hausdorffness or profinite hypothesis is needed. Every open normal subgroup of a dependent product of groups with arbitrary topologies contains a cylinder defined by open normal subgroups in finitely many factors. For a constant family, one subgroup controls all selected coordinates; the remaining coordinates are unrestricted. These containment statements need no continuity of operations, compactness, separation or finiteness of the index type. Every continuous group homomorphism from an arbitrary dependent product of groups equipped with topologies to a discrete group factors through open normal quotients of finitely many coordinates. Each selected canonical quotient and their product are discrete. Source operations need not be continuous; neither the index nor target needs to be finite. Compact factors make these selected quotients and their product finite. The canonical selected projection needs only normal subgroups and has an application, kernel, surjectivity and monoid-target unique descent API, the latter conditional on the projection being a quotient map. For any category and monoid-valued diagram with arbitrary stage topologies, compatible sections have continuous coordinate projections and an initial topology. Compatible continuous monoid homomorphisms from any monoid equipped with a topology lift uniquely to sections and form an equivalent family API; group diagrams have a continuous projection extending the algebraic one. An exactness criterion for the finite cyclic norm of an endomorphism of an additive commutative group, requiring a positive natural period m with sigma^m = 1 (not necessarily exact order), injective multiplication by that same m, and elementwise lifting of fixed classes modulo mA. For an arbitrary subgroup H of a group G with a supplied topology and continuous fixed left translations (ContinuousConstSMul G G), openness is equivalent to discreteness of the canonical left-coset quotient G / H, and closedness is equivalent to its T1 property. Clopenness is equivalent to openness without an index assumption. At finite index, openness, closedness and clopenness are equivalent, without compactness. Compactness is needed only to deduce finite index from openness. No normality, right continuity, joint multiplication, continuous inversion or ambient separation is required. The existing quotient and coinduced topology are unchanged. For any group G and arbitrary subgroups H and K, the canonical left-coset G-sets G / H and G / K are isomorphic exactly when H and K are conjugate. An equality H = gKg⁻¹ gives right translation [z] ↦ [z * g], with inverse [z] ↦ [z * g⁻¹]. No finiteness, normality or topological assumption is needed. For finitely generated abelian groups, surjectivity of the n-scalar map with n ≥ 2 forces finiteness and coprimality with Nat.card A and yields a uniform two-sided integer-scalar inverse; the converse characterizes surjectivity and bijectivity of that scalar map. For representations of a monoid over a semiring on their given additive commutative monoid modules, fixed submodules commute with binary and arbitrary indexed products, including infinite and empty index types. Canonical linear equivalences split coordinates and are natural in supplied intertwining maps. They use representation-independent submodule-product splittings; the indexed splitting linearly enriches Mathlib's subtype-Pi equivalence. For a group acting pretransitively on a finite nonempty set X, the fixed submodule of its permutation representation over any semiring R is linearly equivalent to R. The forward map has coefficient r at every point, and the inverse evaluates at any point. The group need not be finite; the semiring may be zero or noncommutative. A nonzero fixed vector forces the carrier to be finite, and the fixed submodule is bottom on infinite carriers. An element x of a commutative domain A integral over a commutative ring R has a finite orbit under any monoid M acting on A by semiring endomorphisms that commute with R-scalars. The three universes are independent; no action on R, injective scalar map, faithful action, integrality of all of A, or group or finiteness assumption on M is required.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "in-progress",
+  "notes": "The finite-coordinate homomorphism, finite-cylinder and compact/discrete map APIs have completed proofs. The subgroup characterizations use the canonical left-coset quotient, and their clients include strict left-translation boundary examples. Verification requires builds and transitive axiom checks for public and private declarations; the listed axiom policy alone is not a certificate. Review is by AI agents; no human review is claimed."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "tool_setup": "Formal Frontier AI agents using Lean 4 and mathlib."
+   }
+  ],
+  "notes": ""
+ },
+ "scope": "PontryaginDual.evalHom is the algebraic core of canonical evaluation; the existing continuous eval retains its locally compact pair hypothesis. PontryaginDual.prodEvalEquiv takes independently universed monoids A and B with topologies, supplied equivalences eA and eB to their original biduals, and the laws eA a chi = chi a and eB b psi = psi b. Its forward function is evalHom (A × B); its inverse uses eA.symm and eB.symm after the composition of mapEquiv (prodEquiv A B).symm with the product equivalence on the factor duals. No source group, continuous operations, separation, weak local compactness or locally compact pair premise is added. ContinuousMulEquiv.prodMultiplicative requires only addition and topologies on its independently universed factors, retaining MulEquiv.prodMultiplicative. PontryaginDual.realPlaneEvalEquiv has source Multiplicative (ℝ × ℝ), not the product of two tags; a genuine tagged-product equivalence relates them. Its forward map is evalHom and its inverse uses the tag inverse, the product bidual inverse and twice-contravariant transport. One-point factors are permitted. For a finite index I, arbitrary monoids A i with topologies and a commutative topological group E, ContinuousMonoidHom.piEquiv A E compares the entire compact-open hom space from the original dependent product with the product of the factor hom spaces. Its inverse uses MonoidHom.noncommPiCoprodEquiv and has value product_i c_i(a_i) in E. PontryaginDual.piEquiv is the Circle specialization, and PontryaginDual.piEvalEquiv uses supplied canonical factor bidual equivalences with their evaluation laws, with no additional source hypotheses. Its forward function is evalHom; its inverse applies the supplied factor inverses after the twice-contravariant finite dual comparison. ContinuousMulEquiv.piMultiplicative uses exactly MulEquiv.piMultiplicative for any index, needing only addition and topologies on the factors. PontryaginDual.realPiEvalEquiv has original source Multiplicative (I → ℝ) for finite I, not a product of tags or a definitionally identified EuclideanSpace. Its forward function is evalHom and its inverse returns through the genuine tag equivalence after using the finite-product bidual inverse. The empty index is included. No infinite-product or general LCA theorem is asserted. PontryaginDual.eval A sends a to the character chi ↦ chi a in the original compact-open bidual. Its application lemma, twice-contravariant naturality and triangular retraction law use only a monoid with a topology and LocallyCompactPair A Circle. Naturality uses an independently-universed target monoid with its own pair hypothesis; the triangle separately needs LocallyCompactPair (PontryaginDual A) Circle. Neither operation continuity, inverses, commutativity nor Hausdorffness of A is assumed. Evaluation on the dual is a section of the dual of evaluation, not a proof that evaluation on arbitrary A is injective, surjective or a topological isomorphism. For the additive real line, existsUnique_real classifies every continuous character by a unique period-one Fourier frequency r, with value Real.fourierChar (r * x). realEquiv uses the original real topology and the entire compact-open dual. realEvalEquiv has the canonical evaluation as its forward map and the iterated compact-open topology on its target. These real-case results assume no general locally compact abelian reflexivity. PontryaginDual.prodEquiv identifies all continuous circle characters of A × B with pairs of factor characters, using the original compact-open topologies. It restricts along the factor inclusions; its inverse has value chi a * psi b. Independent source universes, arbitrary monoids and arbitrary topologies are allowed, with no operation-continuity, local-compactness, separation or locally-compact-pair hypothesis. This binary universal property and its contravariant naturality assert neither infinite-product duality nor bidual reflexivity. The generic continuous-hom equivalence has a commutative topological-group target, while coprod_eq_iff retains the weaker commutative-monoid target with continuous multiplication. For monoids M and N, let S : Set M contain, for each x : M, a finite indexed family of powers x ^ (e i) with gcd one. In any common carrier F with FunLike F M N and MulHomClass F M N, fixed g h : F satisfy Set.EqOn g h S iff g = h whenever every g x is left-regular. The source, target, map-carrier and index universes are independent; both the finite index set and exponent function may depend on x. The additive form uses AddHomClass, additive monoids and natural multiples. No unit-preserving map class, regularity of h, algebra on S, global cancellation, commutativity, finite or nonempty index type, or positivity assumption is required. Zero and repeated exponents are allowed. The indexed image criterion is the range specialization, followed by the Nat/id criterion. For any topological group G, the ordinary quotient by its identity component is Hausdorff and totally disconnected. G need not be Hausdorff or locally compact. The canonical projection is continuous, and every continuous homomorphism from G to a totally disconnected group equipped with a topology factors uniquely through it, without continuity of the target operations. The API includes composition and hom-equivalence laws. Hausdorffness uses Mathlib's existing closed-normal quotient instances, not a separate library theorem. The locally compact identity-component characterization uses all open subgroups, not the false intersection of open normal subgroups. Under continuous open surjective homomorphisms from locally compact sources, the closure of the component image is the target component; the target need not be separately Hausdorff or locally compact. Every identity neighborhood W in a locally compact totally disconnected topological group contains a compact open subgroup lying in W, without assuming W is open or separately assuming the group is Hausdorff. Compact open subgroups form an identity-neighborhood basis. For any compact open set K, its open left-translation stabilizer consists precisely of the group elements g with g • K = K; when 1 ∈ K this stabilizer is compact and contained in K. The stabilizer construction does not need local compactness, total disconnectedness or identity membership in K. In a compact ambient group the compactness refinement is equivalent to the existing open-subgroup existence conclusion of Mathlib. This does not assert an open-normal-intersection characterization of the quotient. A continuous homomorphism from a nonarchimedean group to a group with an identity neighborhood containing no nontrivial subgroup has open kernel, without source compactness, commutativity or target Hausdorffness. Open kernels imply local constancy without homomorphism continuity or a target topology. Compact source gives finite image and a finite discrete quotient by the kernel. The canonical kernel lift factors the map uniquely; it is injective, not necessarily surjective onto the whole target. The centered half-circle yields circle-valued characters, including the locally compact totally disconnected case via compact-open subgroups. The cyclic group of order two supplies a nonconstant character client. A compact Hausdorff commutative group with an abstractly finitely generated dense subgroup has finite-index open positive-power ranges; all abstract finite-index subgroups are open, without a closedness hypothesis. The additive 2-adic integers provide a dense integer subgroup, an open finite-index doubling range and a proper finite-index reduction kernel. Their zero-scalar range has infinite index, so positivity is necessary. For an open quotient map f : X → Y, with X compact, Hausdorff and totally disconnected and Y Hausdorff, Y is totally disconnected. No group structure, injectivity or local-compactness assumption on Y is needed. The proof follows the existing Formal Frontier Profinite Groups formalization and uses Mathlib's clopen-basis and open-quotient APIs. For any compact space X and discrete space Y, the existing compact-open topology on C(X, Y) is discrete; this is a theorem, not a global instance. For any compact topological group G and f : C(G, Y), there exist an open normal subgroup N and a continuous map fbar on G / N with fbar(QuotientGroup.mk g) = f g for every g. Mathlib's open-subgroup quotient APIs make the quotient finite and discrete. Neither theorem requires a Hausdorff or nonempty space; factorization needs no total disconnectedness, commutativity or algebraic structure on Y. Clients derive right invariance and quotient-point separation and include a nonconstant Boolean-valued map. For arbitrary I, compact topological group G and discrete space Y, with their types in independent universes, every f : C(I → G, Y) admits s : Finset I, N : OpenNormalSubgroup G and fbar : C((s → G ⧸ N.toSubgroup), Y) satisfying the canonical triangle ∀ x : I → G, fbar (fun i : s => QuotientGroup.mk (x i)) = f x. The product and group-quotient topologies are canonical. The selected stage s → G ⧸ N.toSubgroup is finite and discrete; no such assertion is made for the full quotient power over an infinite I. The selected set may be empty, and neither I nor Y needs to be finite. No additional nonemptiness, Hausdorffness, total disconnectedness, commutativity or profinite hypothesis is required. Y has no algebraic-structure requirement and f need not be a homomorphism. The power clients include a two-coordinate Boolean observer that cannot be a homomorphism under any group structure on Bool, an infinite-index observer with an infinite discrete target, and empty-index, empty-target and constant-map boundaries. The finite-cylinder theorem applies to M : OpenNormalSubgroup (∀ i, A i) for arbitrary I and a family A with only [∀ i, Group (A i)] and [∀ i, TopologicalSpace (A i)]. It gives s : Finset I and N : ∀ i : s, OpenNormalSubgroup (A i) with ∀ x : (∀ i, A i), (∀ i : s, x i ∈ N i) → x ∈ M. For a constant family it gives one N : OpenNormalSubgroup G with ∀ x : I → G, (∀ i : s, x i ∈ N) → x ∈ M. Coordinates outside s are unrestricted. Neither containment statement assumes continuous group operations, compactness, separation or a finite index type. The power factorization reuses the unary factorization with this uniform cylinder and continuous quotient descent. For arbitrary dependent groups G i with topologies and a discrete group H, every continuous homomorphism from the product to H factors through quotients of finitely many coordinates by open normal subgroups. The factor is itself a continuous group homomorphism, with a bundled triangle through the canonical selected projection. Each selected quotient and the product stage are intrinsically discrete in their canonical topologies. Source operations need not be continuous, and no compactness, separation, commutativity, finite index or finite target is assumed. The descended homomorphism need not be injective, and the stage may be infinite. Compact factors give finite coordinate quotients and finite stage. The normality-only projection has application, kernel and surjectivity lemmas; its monoid-target universal property assumes it is a quotient map. Clients have genuinely essential and heterogeneous coordinates, noninjective factors, arbitrary ignored topologies and a surjective infinite integer observer ruling out a finite stage, together with empty, trivial and nonopen normal boundaries. For any category J and F : J ⥤ MonCat with arbitrary topologies on the stages, Mathlib's existing compatible-sections subtype has continuous coordinate projections and the initial topology induced by its coordinates. Continuous monoid homomorphisms from any monoid H equipped with an arbitrary topology lift uniquely from families compatible along every arrow; these families are equivalent to continuous homomorphisms into the sections. For group diagrams, the continuous monoid-homomorphism projection recovers Mathlib's algebraic projection on forgetting continuity. The topology is inherited from the product/subtype construction; no new sections carrier or group lift is defined. No continuity of operations or transitions, smallness, inhabitance, cofilteredness, separation, compactness or surjectivity of projections is assumed. This is not a TopCat limit, topological-group theorem or additive API, and makes no claim of formal coverage of an external source. For an endomorphism sigma of an additive commutative group, a natural m > 0 with sigma^m = 1 (not necessarily exact order), injective multiplication by the same m, and elementwise fixed-class lifting modulo mA imply ker(∑_{i<m} sigma^i) = range(1 - sigma). The lifting is elementwise, not a global section. Client examples include failure boundaries; no unconditional Tate or cohomology theorem is asserted. Subgroup.isClosed_iff_t1Space_quotient characterizes closed H by T1 of the canonical left-coset quotient, and Subgroup.isClopen_iff_isOpen characterizes clopen H by openness, with no index assumption. Subgroup.isOpen_iff_isClosed and Subgroup.isClopen_iff_isClosed require H.FiniteIndex and identify openness, closedness and clopenness. These and the open/discrete characterization use Group, a supplied topology and continuous fixed left translations (ContinuousConstSMul G G), without compactness. Only the separate open-to-finite-index corollary needs CompactSpace G. None imposes normality, right continuity, joint multiplication, inversion continuity or ambient separation. The canonical quotient and coinduced topology are unchanged. An arbitrary observer from the quotient of a closed finite-index subgroup to any space is continuous, with no explicit openness or compactness premise. The client module includes both a cofinite-integer times discrete-permutation example and a stricter example with partition-topologized permutations, induced from an explicitly discrete auxiliary left-coset target. The latter and its infinite compact product have continuous left translations but fail the all-right condition, separate continuity, inversion and T0/T1/T2; independent closedness and algebraic index-three witnesses supply the new API's premises. Action.nonempty_quotient_iso_iff_exists_eq_map_conj characterizes isomorphisms between Action.ofMulAction G (G ⧸ H) and Action.ofMulAction G (G ⧸ K) by an equality H = K.map (MulAut.conj g).toMonoidHom for some g : G. Only Group G and arbitrary subgroups H and K are required. The controlled constructor Action.quotientIsoOfEqMapConj has forward formula [z] ↦ [z * g] and inverse formula [z] ↦ [z * g⁻¹]; its hom_mk, inv_mk and hom_one lemmas characterize these maps. The identity coset maps to the coset of g, not a unique representative. Both maps use MulActionHom.quotientEquivFixedPoints; Mathlib's Action.mkIso supplies the categorical isomorphism. This criterion concerns the canonical left-coset actions, not merely equivariant maps in both directions or arbitrary infinite endomaps. For any group G and arbitrary subgroups H and K, the orbit quotient of the canonical single-G diagonal left action on (G / H) × (G / K) is equivalent to DoubleCoset.Quotient (H : Set G) (K : Set G). The forward formula is orbit(xH, yK) ↦ H (x⁻¹ * y) K; the inverse is H g K ↦ orbit(H, gK). Both have simp projection lemmas, and equality of pair orbits is equivalent to x'⁻¹ * y' = h * (x⁻¹ * y) * k for some h ∈ H and k ∈ K. No finiteness, normality or topological assumption is required. For [AddGroup.FG A] on an additive commutative group and natural n ≥ 2, surjectivity of the map x ↦ n • x implies finite A, coprimality of n with Nat.card A and a uniform two-sided integer-scalar inverse. Finiteness and coprimality also characterize scalar surjectivity and bijectivity. This is neither a K-theory theorem nor a theorem about arbitrary surjective endomorphisms or external-source coverage. Fixed submodules commute with the stock product representation over a semiring and a monoid, on the original additive commutative monoid modules. The literal submodule equality yields a linear equivalence by equality transport and the generic Submodule.prodEquiv. Coordinate and inverse formulas, inclusion and restricted-projection identities, and naturality for a pair of supplied intertwining maps characterize it. No product-intertwiner wrapper, alternate carrier or compatibility premise is introduced. In the commutative-ring, group, additive-group context, invariants_prod follows on the same data. For arbitrary indexed families, Representation.pi acts pointwise by the supplied original actions. Coordinate intertwining is equivalent to intertwining into the product, with existence and uniqueness supplied by the stock linear-product API. The equality fixedSubmodule_pi and equivalence fixedSubmodulePiEquiv use one generic Submodule.piEquiv, enriching Mathlib's subtype-Pi equivalence only with linear fields. Coordinate, inverse, inclusion and naturality laws retain all original module data and independent universes. Infinite and empty index types are allowed. The stronger invariants_pi identity follows on the same data in a separate commutative-ring/group/additive-group context. For pretransitive group actions, membership in the permutation representation's fixed submodule is equivalent to equality of every pair of coefficients, without finiteness or nonemptiness. On a finite nonempty carrier the constant coefficient construction is a linear equivalence from the coefficient semiring to that fixed submodule. Its coefficient and arbitrary-point inverse formulas characterize it. No coefficient commutativity, nontriviality or invertible-order assumption is required. Finite support of a nonzero fixed vector forces the carrier to be finite, so the fixed submodule is bottom for an infinite carrier. IsIntegral.finite_orbit takes R : Type u, A : Type v and M : Type w in independent universes, with CommRing R, CommRing A, IsDomain A, Algebra R A, Monoid M, MulSemiringAction M A and SMulCommClass M R A. For x : A and hx : IsIntegral R x it proves (MulAction.orbit M x).Finite. Only x is assumed integral; R need not be a field or domain, its scalar map need not be injective, and the action need not be faithful. The acting monoid need not be a group or finite. No action on R is required.",
+ "sources": [
+  {
+   "title": "Mathlib polynomial roots, integrality and monoid orbits",
+   "type": "software",
+   "location": "Mathlib/Algebra/Polynomial/Roots.lean, Mathlib/RingTheory/IntegralClosure/IsIntegral/Defs.lean and Mathlib/GroupTheory/GroupAction/Defs.lean"
+  },
+  {
+   "title": "Mathlib algebraic and topological congruences",
+   "authors": [
+    "Johannes Hölzl",
+    "Callum Sutton",
+    "Yury Kudryashov",
+    "Patrick Massot",
+    "Sébastien Gouëzel",
+    "Zhouhang Zhou",
+    "Reid Barton",
+    "Thomas Browning",
+    "Nailin Guan"
+   ],
+   "type": "software",
+   "location": "Mathlib/Algebra/Group/Equiv/Basic.lean, Mathlib/Topology/Homeomorph/Lemmas.lean and Mathlib/Topology/Algebra/Group/CompactOpen.lean"
+  },
+  {
+   "title": "Mathlib integer universal property and compact-open continuity",
+   "authors": [
+    "Mario Carneiro",
+    "Thomas Browning",
+    "Nailin Guan",
+    "Reid Barton",
+    "Sébastien Gouëzel",
+    "Johannes Hölzl",
+    "Patrick Massot"
+   ],
+   "type": "software",
+   "location": "Mathlib/Data/Int/Cast/Lemmas.lean, Mathlib/Topology/Algebra/ContinuousMonoidHom.lean, Mathlib/Topology/Algebra/Group/CompactOpen.lean, Mathlib/Topology/CompactOpen.lean, Mathlib/Topology/ContinuousOn.lean and Mathlib/Topology/Algebra/Group/ZPow.lean"
+  },
+  {
+   "title": "Mathlib finite dependent-product universal property",
+   "authors": [
+    "Joachim Breitner",
+    "Yakov Pechersky",
+    "Simon Hudon",
+    "Patrick Massot",
+    "Thomas Browning",
+    "Nailin Guan"
+   ],
+   "type": "software",
+   "location": "Mathlib/GroupTheory/NoncommPiCoprod.lean, Mathlib/Data/Finset/NoncommProd.lean, Mathlib/Algebra/Group/Pi/Lemmas.lean, Mathlib/Algebra/BigOperators/Pi.lean and Mathlib/Topology/Algebra/Group/CompactOpen.lean"
+  },
+  {
+   "title": "Mathlib tagged products and topological constructions",
+   "authors": [
+    "Johannes Hölzl",
+    "Callum Sutton",
+    "Yury Kudryashov",
+    "Mario Carneiro",
+    "Patrick Massot",
+    "Thomas Browning",
+    "Nailin Guan",
+    "Sébastien Gouëzel"
+   ],
+   "type": "software",
+   "location": "Mathlib/Algebra/Group/Equiv/TypeTags.lean, Mathlib/Topology/Constructions.lean, Mathlib/Topology/Constructions/SumProd.lean, Mathlib/Topology/Algebra/ContinuousMonoidHom.lean, Mathlib/Topology/MetricSpace/ProperSpace.lean and Mathlib/Topology/Compactness/LocallyCompact.lean"
+  },
+  {
+   "title": "Fixed vectors of pretransitive permutation representations",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/RepresentationOfMulAction.lean, Representation.ofMulActionFixedSubmoduleEquiv"
+  },
+  {
+   "title": "Positive-power annihilators in reduced monoids with zero",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/Algebra/GroupWithZero/Reduced.lean, pow_mul_eq_zero_iff and mul_pow_eq_zero_iff"
+  },
+  {
+   "title": "Equality of multiplicative maps on finite power-sampling sets",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/MonoidHom/PositivePower.lean, MulHomClass.eqOn_iff_eq_of_finite_powers_mem_of_isLeftRegular and AddHomClass.eqOn_iff_eq_of_finite_multiples_mem_of_isAddLeftRegular"
+  },
+  {
+   "title": "A Concise Course in Algebraic Topology",
+   "authors": [
+    "J. P. May"
+   ],
+   "type": "book",
+   "location": "Chapter 2, section 6, group colimits"
+  },
+  {
+   "title": "Cohomology of Number Fields",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "location": "Corrected second edition, electronic version 2.3, Chapter I, §1, (1.1.9)(i),(iii) and the preceding paragraph."
+  },
+  {
+   "title": "Cohomology of Number Fields, canonical bidual evaluation",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "location": "Corrected second edition, electronic version 2.3, Chapter I, §1, (1.1.10)–(1.1.11)."
+  },
+  {
+   "title": "Cohomology of Number Fields, compact totally disconnected characters",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "location": "Corrected second edition, Chapter I, §1, remarks following Theorem (1.1.11)."
+  },
+  {
+   "title": "Continuous compatible sections of monoid-valued diagrams",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/Topology/Sections.lean, MonCat.sectionsHomEquiv"
+  },
+  {
+   "title": "Products of fixed submodules on the original modules",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/LinearAlgebra/Prod.lean, Submodule.prodEquiv; GroupTheory/RepresentationInvariants.lean, Representation.fixedSubmodule_prod and Representation.fixedSubmoduleProdEquiv; GroupTheory/LinearAlgebra/Pi.lean, Submodule.piEquiv; GroupTheory/RepresentationPi.lean, Representation.fixedSubmodule_pi and Representation.fixedSubmodulePiEquiv"
+  },
+  {
+   "title": "Finite cyclic norm exactness from fixed-class lifting",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/CyclicNorm.lean, AddMonoid.End.cyclicNorm_ker_eq_one_sub_range"
+  },
+  {
+   "title": "Surjective natural scalars on finitely generated abelian groups",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/FGScalarSurjectivity.lean, AddCommGroup.finite_coprime_of_nsmul_surjective"
+  },
+  {
+   "title": "Compact-open discreteness and compact-group finite-quotient factorization",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/Topology/ContinuousMap/CompactDiscrete.lean, GroupTheory/Topology/Algebra/CompactGroup/DiscreteFactor.lean, GroupTheory/Topology/Algebra/OpenSubgroup/Pi.lean and GroupTheory/Topology/Algebra/CompactGroup/PiDiscreteFactor.lean"
+  },
+  {
+   "title": "Finite-coordinate factorization of continuous group homomorphisms",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/Topology/Algebra/Group/PiDiscreteFactor.lean"
+  },
+  {
+   "title": "Open, closed and clopen subgroups and canonical left-coset quotients",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "location": "GroupTheory/Topology/Algebra/Group/Quotient.lean"
+  }
+ ],
+ "depends": [
+  {
+   "name": "homological-algebra",
+   "rev": "1ecd25213926138278dbd661bd516de9135d944a"
+  }
+ ],
+ "related": [],
+ "highlights": [
+  {
+   "title": "Local compactness of homomorphism spaces",
+   "statement": "For every finitely generated discrete group G and locally compact Hausdorff topological group D, the space of continuous homomorphisms G → D with the compact-open topology is locally compact.",
+   "declarations": [
+    {
+     "name": "ContinuousMonoidHom.locallyCompactSpace_of_fg",
+     "file": "GroupTheory/Topology/FreeGroup.lean",
+     "found": {
+      "line": 290,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  }
+ ],
+ "headlines": [
+  {
+   "kind": "heading",
+   "title": "Circle-valued characters"
+  },
+  {
+   "kind": "prose",
+   "text": "Every abelian group has enough homomorphisms into the standard complex unit circle to separate distinct elements. A circle-valued homomorphism on any subgroup extends to the whole group. For a group with its given discrete topology, the same algebraic characters are continuous, and evaluation into the product indexed by all continuous circle characters is injective. This is a separation result, not surjectivity or a topological embedding into the compact-open bidual."
+  },
+  {
+   "kind": "prose",
+   "text": "See [subgroup extension](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Character/Extension.lean), [cyclic characters](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Character/Cyclic.lean), and [separation and evaluation](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Character/Separation.lean)."
+  },
+  {
+   "kind": "item",
+   "title": "Compact homomorphism loci for unital magmas",
+   "text": "For a discrete unital magma\n`M` and a compact Hausdorff unital magma `D` with continuous multiplication,\n`ContinuousMap.isCompact_mulOneHomLocus` proves compactness of the full locus\n`{f : C(M, D) | f 1 = 1 ∧ ∀ x y, f (x * y) = f x * f y}` in the compact-open\ntopology. No associativity or finite generation is needed. For monoids,\n`ContinuousMonoidHom.homeoMulOneHomLocus` identifies its canonical subspace\nwith `M →ₜ* D`, preserving the continuous-map data in both directions; this\nidentification needs only monoids with their given topologies. See\n[`ContinuousMonoidHom.Compact`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Compact.lean).",
+   "link": {
+    "text": "ContinuousMonoidHom.Compact",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Compact.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ContinuousMonoidHom.Compact",
+    "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Compact.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite-support product homomorphisms",
+   "text": "For arbitrary topologized groups `G i` and\na commutative group `D` with continuous multiplication and no small subgroups,\ncontinuous homomorphisms `(∀ i, G i) →ₜ* D` are canonically equivalent as commutative\nmonoids to finitely supported families of continuous coordinate homomorphisms.\n[Module](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/ProductDecomposition.lean)\n(`ContinuousMonoidHom.productDecomposition`).",
+   "link": {
+    "text": "Module",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/ProductDecomposition.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Groups with a given uniformity and no small subgroups pass this property to their full uniform function spaces, without continuous group …",
+   "text": "Groups with a given uniformity and no small subgroups pass this property to\ntheir full uniform function spaces, without continuous group operations.\nAn arbitrary family of ordinary homomorphisms from a product of groups into\nsuch a group, equicontinuous at the identity, kills one common\nfinite-coordinate subgroup, including all infinite off-coordinate tails.\nSee [`UniformFun`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/UniformFun.lean)\nand [`EquicontinuousFiniteCoordinates`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/EquicontinuousFiniteCoordinates.lean).",
+   "link": {
+    "text": "UniformFun",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/UniformFun.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "UniformFun",
+    "file": "GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/UniformFun.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite-coordinate factorization",
+   "text": "A homomorphism from an arbitrary product of\ngroups, continuous at the identity, into a group with no small subgroups kills\nevery element equal to the identity on a suitable finite set of coordinates.\nGlobally continuous homomorphisms factor continuously through that finite product,\nuniquely for the chosen finite set. No continuity of group operations is required.\nSee [`FiniteCoordinates`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/FiniteCoordinates.lean).",
+   "link": {
+    "text": "FiniteCoordinates",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/FiniteCoordinates.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FiniteCoordinates",
+    "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/FiniteCoordinates.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Real seminormed spaces and no small subgroups",
+   "text": "A real seminormed space's\nadditive group has no small subgroups if and only if its seminorm topology is\nHausdorff. In particular, every real normed space has no small subgroups, without\ncompleteness or finite-dimensionality hypotheses. See\n[`NormedSpace.lean`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/NormedSpace.lean).",
+   "link": {
+    "text": "NormedSpace.lean",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/NormedSpace.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NormedSpace.lean",
+    "file": "GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/NormedSpace.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "No small subgroups and compact-source hom spaces",
+   "text": "`NoSmallSubgroups G` means that some identity neighborhood contains no\nnontrivial subgroup. Its neighborhood and positive-powers APIs include an\nopen inversion-symmetric identity neighborhood when inversion is continuous.\nFor a compact monoid `M` with a topology and a commutative topological group\n`G` with no small subgroups,\n`ContinuousMonoidHom.discreteTopology_of_noSmallSubgroups` proves\n`DiscreteTopology (M →ₜ* G)` for the compact-open topology.\n`Circle.noSmallSubgroups` gives the canonical instance using Mathlib's arc\n`Circle.centeredArc (Real.pi / 2)` and its existing powers criterion. See\n[`Group.NoSmallSubgroups`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups.lean),\n[`ContinuousMonoidHom.NoSmallSubgroups`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/NoSmallSubgroups.lean)\nand [`Group.NoSmallSubgroups.Circle`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/Circle.lean).",
+   "link": {
+    "text": "Group.NoSmallSubgroups",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Group.NoSmallSubgroups",
+    "file": "GroupTheory/Topology/Algebra/Group/NoSmallSubgroups.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "No small subgroups is local under open embeddings",
+   "text": "For groups `G`, `H` with their original arbitrary topologies, an injective\nopen homomorphism `f : G →* H` sends `NoSmallSubgroups G` to\n`NoSmallSubgroups H`; neither operation continuity nor continuity of `f`\nis required. If `f` is continuous at one, the two properties are equivalent.\nIn particular they are equivalent under open embeddings and between an\nopen subgroup and its ambient group. The API uses this library's existing\ndefinition and reverse transport together with Mathlib's subgroup and\ntopological embedding APIs. See\n[`Group.NoSmallSubgroups.OpenMap`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/OpenMap.lean).",
+   "link": {
+    "text": "Group.NoSmallSubgroups.OpenMap",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/OpenMap.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Group.NoSmallSubgroups.OpenMap",
+    "file": "GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/OpenMap.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "No small subgroups under open homomorphisms",
+   "text": "Let `G` be a topological\ngroup, `H` a group with a topology, and `f : G →* H` an open homomorphism\nwhose kernel has the discrete topology induced from `G`. If `G` has no small\nsubgroups, then so does `H`; neither continuity of `f`, continuous operations\non `H`, nor surjectivity is required. If `f` is also continuous at the identity,\n`G` has no small subgroups if and only if `H` does. See\n[`NoSmallSubgroups.of_isOpenMap`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/OpenMap.lean)\nand [`MonoidHom.noSmallSubgroups_iff_of_isOpenMap`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/OpenMap.lean).",
+   "link": {
+    "text": "NoSmallSubgroups.of_isOpenMap",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/OpenMap.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NoSmallSubgroups.of_isOpenMap",
+    "file": "GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/OpenMap.lean",
+    "found": {
+     "line": 42,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "No small subgroups in totally disconnected groups",
+   "text": "For a totally\ndisconnected topological group `G` in which each point admits a compact\nneighborhood (`WeaklyLocallyCompactSpace G`),\n`noSmallSubgroups_iff_discreteTopology` states\n`NoSmallSubgroups G ↔ DiscreteTopology G`. For a compact totally disconnected\ntopological group, `noSmallSubgroups_iff_finite` states\n`NoSmallSubgroups G ↔ Finite G`. These criteria concern the given topology;\nno commutativity, nontriviality or separate Hausdorff hypothesis is required.\nThe open-subgroup argument is classical van Dantzig theory. See\n[`Group.NoSmallSubgroups.TotallyDisconnected`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/TotallyDisconnected.lean)\nand the [NSS and discreteness guide](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/NoSmallSubgroups.md) for the statements,\nproof ideas and formalization credits.",
+   "link": {
+    "text": "Group.NoSmallSubgroups.TotallyDisconnected",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/TotallyDisconnected.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Group.NoSmallSubgroups.TotallyDisconnected",
+    "file": "GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/TotallyDisconnected.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Locally compact homomorphism spaces",
+   "text": "Let `G` be a finitely generated\ndiscrete group and `D` a locally compact monoid with a topology and jointly\ncontinuous multiplication. If `IsClosed ({1} : Set D)`, then\n`ContinuousMonoidHom.locallyCompactSpace_of_fg_of_isClosed_one` proves\n`LocallyCompactSpace (G →ₜ* D)` for the original compact-open topology.\nNo group structure, commutativity, continuous inversion or separation axiom\nis assumed on `D`. The proof uses the canonical units lift and this library's\nexisting group-target local-compactness theorem. See\n[`ContinuousMonoidHom.LocallyCompact`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/LocallyCompact.lean)\nand [`ContinuousMonoidHom.Units`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Units.lean).",
+   "link": {
+    "text": "ContinuousMonoidHom.LocallyCompact",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/LocallyCompact.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ContinuousMonoidHom.LocallyCompact",
+    "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/LocallyCompact.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Pointwise products of dependent finitely supported functions",
+   "text": "`DFinsupp.pointwiseMul` gives a non-instance `Mul (Π₀ i, β i)` whenever\neach fibre is a `MulZeroClass`; evaluation multiplies the two coefficients.\nSingles at distinct indices have zero product, and product support is contained\nin the intersection of the supports. No associativity, unit or finite index is\nrequired. `Finsupp.toDFinsupp_mul` recovers the ordinary pointwise product\nwithout decidability assumptions. Independently,\n`Finsupp.toDFinsupp_pointwise_smul` compares function-valued scalar actions\nusing only a zero-preserving coefficient action. These data are selected\nexplicitly, without changing the graded multiplication on `DirectSum`.\nSee [`DFinsupp.Pointwise`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/DFinsupp/Pointwise.lean),\n[`Finsupp.Pointwise`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Finsupp/Pointwise.lean) and\n[`Finsupp.PointwiseScalar`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Finsupp/PointwiseScalar.lean).",
+   "link": {
+    "text": "DFinsupp.Pointwise",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/DFinsupp/Pointwise.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "DFinsupp.Pointwise",
+    "file": "GroupTheory/DFinsupp/Pointwise.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Surjectivity of bidual evaluation for discrete groups",
+   "text": "For every discrete\ngroup `A`, not necessarily commutative,\n`PontryaginDual.eval_surjective_of_discrete A` makes the canonical map\n`PontryaginDual.eval A : A →ₜ* PontryaginDual (PontryaginDual A)` surjective.\nThis does not assert injectivity or reflexivity for noncommutative groups. See\n[`PontryaginDual.Discrete.Surjective`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Discrete/Surjective.lean).",
+   "link": {
+    "text": "PontryaginDual.Discrete.Surjective",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Discrete/Surjective.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual.Discrete.Surjective",
+    "file": "GroupTheory/Topology/PontryaginDual/Discrete/Surjective.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Canonical biduality for discrete abelian groups",
+   "text": "For every `A : Type u`\nwith `[CommGroup A] [TopologicalSpace A] [DiscreteTopology A]`,\n`PontryaginDual.evalEquivOfDiscrete A` is a continuous multiplicative\nequivalence `A ≃ₜ* PontryaginDual (PontryaginDual A)` with the original\ncompact-open topologies. Its forward map is exactly `PontryaginDual.evalHom A`.\nThe inverse obeys both inverse laws and is characterized by\n`χ ((PontryaginDual.evalEquivOfDiscrete A).symm Φ) = Φ χ`.\nBoth directions are natural for continuous homomorphisms between discrete\nabelian groups in independent universes. No finiteness or countability\nassumption is needed, and the trivial group is included. See\n[`PontryaginDual.Discrete.Equivalence`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Discrete/Equivalence.lean).",
+   "link": {
+    "text": "PontryaginDual.Discrete.Equivalence",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Discrete/Equivalence.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual.Discrete.Equivalence",
+    "file": "GroupTheory/Topology/PontryaginDual/Discrete/Equivalence.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "For a finite index type `I` and a commutative topological group `E`,\n[`ContinuousMonoidHom.intPiEvalEquiv I E`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean)\nidentifies the compact-open space `Multiplicative (I → ℤ) →ₜ* E` with `I → E`\nby evaluation on the standard integer generators. Its inverse sends `c` to\n`ofAdd n ↦ ∏ i, c i ^ n i` and retains the existing finite coproduct of\ninteger-power homomorphisms. The source has its original product and type-tag\ntopologies. The empty index is included; no nonemptiness, source local\ncompactness, separation or discrete-target assumption is needed."
+  },
+  {
+   "kind": "item",
+   "title": "Characters of binary products",
+   "text": "Restriction gives\n`PontryaginDual.prodEquiv A B : PontryaginDual (A × B) ≃ₜ*\n(PontryaginDual A × PontryaginDual B)`; the inverse sends `(χ, ψ)` to\n`(a, b) ↦ χ a * ψ b`. The source monoids have their original, arbitrary\ntopologies, with no operation-continuity, local-compactness or separation\nassumption. The equivalence uses the entire compact-open character spaces\nand is natural under products of continuous monoid homomorphisms. More\ngenerally, the compact-open coproduct equivalence for continuous\nhomomorphisms has a commutative topological-group target; its algebraic\nrestriction universal property needs only a commutative-monoid target with\ncontinuous multiplication. See\n[`ContinuousMonoidHom`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom.lean)\nand [`PontryaginDual.Prod`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Prod.lean).\nThis binary result asserts neither infinite-product duality nor bidual reflexivity.",
+   "link": {
+    "text": "ContinuousMonoidHom",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ContinuousMonoidHom",
+    "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Canonical biduality of binary products and the real plane",
+   "text": "`PontryaginDual.evalHom A : A →* PontryaginDual (PontryaginDual A)` bundles\nfixed evaluation for any monoid with a topology. Given factor equivalences\n`eA : A ≃ₜ* PontryaginDual (PontryaginDual A)` and `eB` with the pointwise\nlaws `eA a χ = χ a` and `eB b ψ = ψ b`, `PontryaginDual.prodEvalEquiv`\nhas evaluation as its forward map and an explicit inverse using the two\nsupplied inverses and the product-dual comparison. No additional local\ncompactness, group, separation or operation-continuity hypotheses are needed.\n`ContinuousMulEquiv.prodMultiplicative` lifts Mathlib's algebraic\ntag-of-product equivalence under addition and topologies alone.\n`PontryaginDual.realPlaneEvalEquiv` applies the product construction to the\ntwo real factors and this tag equivalence, on `Multiplicative (ℝ × ℝ)` with\nits original topology. The binary construction allows one-point factors;\nno positive-dimension or nontriviality assumption is imposed.\nSee [`PontryaginDual.Prod`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Prod.lean),\n[`TypeTags`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/TypeTags.lean) and\n[`PontryaginDual.Real`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Real.lean).\nThis is not an assertion of infinite-product or\ngeneral locally compact abelian biduality.",
+   "link": {
+    "text": "PontryaginDual.Prod",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Prod.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual.Prod",
+    "file": "GroupTheory/Topology/PontryaginDual/Prod.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite dependent products and finite real function spaces",
+   "text": "For a finite index\n`I` and monoids `A i` with topologies, `PontryaginDual.piEquiv A` identifies\n`PontryaginDual (∀ i, A i)` with `∀ i, PontryaginDual (A i)`, using their entire\ncompact-open duals. Restriction uses the identity-supported coordinate\ninclusions; the inverse has value `∏ i, χ i (a i)`. The more general\n`ContinuousMonoidHom.piEquiv A E` has a commutative topological group target\n`E`; the source factors need no continuous operations, commutativity, local\ncompactness or separation. Supplied canonical factor bidual equivalences and\ntheir evaluation laws give `PontryaginDual.piEvalEquiv A e h`, with forward\nmap exactly evaluation and inverse given by the supplied coordinate inverses.\n`ContinuousMulEquiv.piMultiplicative A` lifts Mathlib's algebraic tag\nequivalence for any index under addition and topologies alone.\n`PontryaginDual.realPiEvalEquiv I` then gives canonical biduality on the original\n`Multiplicative (I → ℝ)` for every finite `I`, including the empty index and\nhence dimension zero. This real-case consequence is auxiliary to the duality\nsetting of Neukirch–Schmidt–Wingberg. No infinite-product or general locally\ncompact abelian duality theorem is asserted. See\n[`ContinuousMonoidHom.Pi`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean),\n[`PontryaginDual.Pi`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Pi.lean) and\n[`PontryaginDual.Real`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Real.lean).\nThe finite algebraic universal property reuses Mathlib's work of Joachim\nBreitner and Yakov Pechersky; the coordinate and tag equivalences reuse the\nMathlib formalizations credited in those modules.",
+   "link": {
+    "text": "ContinuousMonoidHom.Pi",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ContinuousMonoidHom.Pi",
+    "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Integer characters by generator evaluation",
+   "text": "For any topological group\n`E`, `ContinuousMonoidHom.intEvalHomeomorph E` identifies the compact-open\nspace `Multiplicative ℤ →ₜ* E` with `E`, by evaluation at\n`Multiplicative.ofAdd (1 : ℤ)`. The inverse sends `e` to the continuous\nhomomorphism with underlying map `zpowersHom E e`, taking `n` to\n`e ^ n.toAdd`. For commutative `E`, `ContinuousMonoidHom.intEvalEquiv E`\nis a continuous multiplicative equivalence with the same homeomorphism.\nNo local compactness or Hausdorff hypothesis is needed. Specializing to\n`Circle` identifies the whole `PontryaginDual (Multiplicative ℤ)` with\n`Circle`. The characteristic laws and target naturality are in\n[`ContinuousMonoidHom.Int`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean),\nwhich reuses Mathlib's integer universal property and compact-open continuity\nresults, with the formalization credits listed in its references.",
+   "link": {
+    "text": "ContinuousMonoidHom.Int",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ContinuousMonoidHom.Int",
+    "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "**[Complete headline catalogue: statements, hypotheses and module links](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md).**\nThe families below give an overview; the catalogue retains the full statements\nand qualifications. For API details and examples, see the\n[result guide](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/Results.md); for imports and applications, see the\n[usage guide](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/Usage.md)."
+  },
+  {
+   "kind": "item",
+   "title": "Zero-sum pairs and multiplicative images",
+   "text": "In a nonunital, nonassociative semiring, `a + b = 0` implies `a * a = b * b`.\nA multiplication-preserving function into any monoid sends `a` and `b` to\nunits simultaneously, without preserving addition, zero or one or requiring\ncommutativity of the target. See the\n[zero-sum API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/IsAddUnit.lean).",
+   "link": {
+    "text": "zero-sum API",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/IsAddUnit.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "heading",
+   "title": "Reduced powers and nilpotence"
+  },
+  {
+   "kind": "item",
+   "title": "Cyclic products in a monoid with zero satisfy `nilpotencyClass (a * b) ≤ nilpotencyClass (b * a) + 1`, and symmetrically",
+   "text": "Cyclic products in a monoid with zero satisfy\n`nilpotencyClass (a * b) ≤ nilpotencyClass (b * a) + 1`, and symmetrically; see\n[nilpotency classes](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/GroupWithZero/Nilpotent.lean).",
+   "link": {
+    "text": "nilpotency classes",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/GroupWithZero/Nilpotent.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "prose",
+   "text": "In a reduced ring, not necessarily commutative, equality at two coprime natural\npowers determines an element; equality at two exponents is equivalent to equality\nat their gcd. In a reduced monoid with zero, positive powers preserve left and\nright annihilators. Aligned lists of positive powers preserve product-zero, not\nproduct values. See the [complete statements](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results)\nand the [reduced-ring power API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Ring/Power.lean).\nOver a commutative ring, equality of two powers modulo a radical ideal is\nequivalent to equality at their gcd, including zero exponents; see the\n[radical-ideal API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Ring/Ideal/Power.lean)."
+  },
+  {
+   "kind": "prose",
+   "text": "In any monoid with zero, `nilpotencyClass_pow` gives\n`nilpotencyClass (a ^ n) = (nilpotencyClass a + n - 1) / n` for every natural\nexponent, using total natural-number division at zero. Unital monoid maps preserving and\nreflecting zero preserve the class; injectivity is not required. See\n[`Algebra.GroupWithZero.Nilpotent`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/GroupWithZero/Nilpotent.lean).\nSeparately, `SemiconjBy a x a` and nilpotence of `x` bound the\nnilpotency class of `a` by that of `x` plus one. Finite pairwise orthogonal sums\nover any semiring are nilpotent exactly when every supported summand is nilpotent,\nwith an explicit class bound. For finite pairwise commuting families with\n`f i ^ n i = 0`, the sum vanishes to the power `1 + ∑ i ∈ s, (n i - 1)`.\nNo commutativity or nontriviality of the semiring, positivity of the individual\nexponents, or finite index type is assumed. The\n[catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results) records\nempty-support cases and the class-zero convention for nonnilpotent elements;\nthese results use [`Ring.Nilpotent.Finset`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Ring/Nilpotent/Finset.lean)."
+  },
+  {
+   "kind": "prose",
+   "text": "For a semiring algebra over a commutative semiring, a finite sum of pairwise\ncommuting submodules has total nilpotency class at most one plus the sum of the\npredecessors of the summands' total classes. A finite span satisfies the corresponding\ngenerator-class bound when the generators' principal submodules pairwise commute;\nthe generators themselves need not commute. Neither bound assumes summand or\ngenerator nilpotence, and both include empty support and trivial carriers. See the\n[finite-submodule bounds](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Ring/Nilpotent/Submodule.lean)."
+  },
+  {
+   "kind": "prose",
+   "text": "Over a commutative semiring `R`, the finitely generated ideal criterion\n`Ideal.FG.isNilpotent_iff_le_nilradical` characterizes nilpotence by containment\nin the nilradical. The finite-span bound specializes to\n`nilpotencyClass (Ideal.span (↑s : Set R)) ≤ 1 + ∑ x ∈ s, (nilpotencyClass x - 1)`.\nNonnilpotent ideals have total class zero, so this upper bound alone is not a\nnilpotence criterion. See the [finite-ideal API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Ring/Nilpotent/Ideal.lean)."
+  },
+  {
+   "kind": "prose",
+   "text": "For commuting elements `a, c` in any monoid, `a ∣ c` implies\n`a ^ n ∣ c ^ n` for every natural `n`, including zero. In a monoid with zero,\nif `a` is nilpotent, the commuting multiple has nilpotency class at most that of\n`a`. In particular this bounds a product `a * b` when `a` commutes with `b`,\nand a list product when the nilpotent `a` occurs in the list and commutes with\nevery entry. Other entries need not be nilpotent or commute with one another.\nThese bounds retain the nilpotence premise: the total class is zero for\nnonnilpotent elements, so a class inequality alone is not a nilpotence criterion.\nSee the [commuting-divisor API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/Divisibility/Basic.lean),\n[list-product API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/BigOperators/GroupWithZero/List.lean) and\n[full statements](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results)."
+  },
+  {
+   "kind": "item",
+   "title": "Finite sums and product homomorphisms",
+   "text": "For submodules of a semiring equipped with a module structure over another\nsemiring, `Submodule.sum_eq_sup` identifies finite sums with finite suprema,\ncomplementing the zero/bottom and addition/supremum identities.\nNo scalar-tower, commutativity, or algebra hypothesis is required. See\n[`Algebra.Algebra.Operations`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/Algebra/Operations.lean).\n\nFinite families of nonunital ring homomorphisms whose distinct images annihilate\neach other in both orders have a sum homomorphism, even for nonunital,\nnonassociative source and target semirings. For a finite dependent product of\nunital nonassociative semirings, `Pi.liftRingHom` instead builds a **unital**\nhomomorphism into an associative semiring from nonunital component maps: their\nunit images must be pairwise orthogonal and sum to one. No commutativity, global\ncentrality or nontriviality is assumed. The empty-index case is included; its\ncover-one premise forces the target to satisfy `0 = 1`. See\n[`Ring.Hom.FiniteSum`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Ring/Hom/FiniteSum.lean) and the\n[catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results) for\napplication, zero-off extension and uniqueness laws, with their hypotheses.",
+   "link": {
+    "text": "Algebra.Algebra.Operations",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/Algebra/Operations.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Algebra.Algebra.Operations",
+    "file": "GroupTheory/Algebra/Algebra/Operations.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Power restrictions and order",
+   "text": "In any group, membership of every power in a finite family in a subgroup-like\nobject is equivalent to membership of the gcd power; gcd one detects the element.\nThe subgroup generated by the selected powers is the cyclic subgroup generated\nby that gcd power. Additive groups have the corresponding natural-multiple\nformulas. No commutativity or normality is needed; empty and all-zero families\ngenerate the trivial subgroup. See the\n[subgroup-power API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/Group/Subgroup/Power.lean).\n\nFor any group element `a` and natural exponents `m n`, the intersection of\n`Subgroup.zpowers (a ^ m)` and `Subgroup.zpowers (a ^ n)` is\n`Subgroup.zpowers (a ^ (Nat.lcm m n))`. The additive version uses the\ninteger-multiple subgroups of `m • a` and `n • a`. Zero exponents are included;\nno commutativity or order assumption is needed. See the same\n[subgroup-power API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/Group/Subgroup/Power.lean).\n\nFor a finite family of natural exponents, intersecting the cyclic power subgroups\nwith `Subgroup.zpowers a` gives the subgroup generated by the lcm power.\nNonempty families need no initial cyclic factor; for an empty family the plain\nintersection is top. Additive groups have the corresponding natural-multiple\nformula. See the [catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#power-restrictions-and-order).\n\nIn a monoid, let `a` have injective left multiplication (left regularity).\nEquality of its powers and those of arbitrary `b` at a finite family of natural\nexponents is equivalent to equality at their gcd;\na family with gcd one determines `a = b`. The same finite-family criterion\nholds separately when `a` has injective right multiplication (right regularity).\nNo regularity of `b` or global cancellation is needed; additive versions hold in\nadditive monoids. Empty families and zero exponents are included. See the\n[power-kernel API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/MonoidHom/PositivePower.lean).\n\nLet `f : M →* N`, where `N` is a monoid and `M` has only multiplication and a\nchosen one (`MulOne`). If the range of `f` contains a positive power of every\nelement of `N`, it detects equality of homomorphisms from `N` into any monoid\nwith unique positive roots.\n\nFor finite image detection, let `f : A →* M`, with only `MulOne A` and monoids\n`M, N`. Suppose each `x : M` admits `s : Finset ι` and `e : ι → ℕ` with\n`s.gcd e = 1` and `x ^ (e i) ∈ Set.range f` for every `i ∈ s`. For fixed\n`g h : M →* N`, left-regularity of every `g x` gives\n`g.comp f = h.comp f ↔ g = h`; a separate criterion uses right-regularity\ninstead. In both, `h` is arbitrary, the four universes are independent, and\n`s, e` may depend on `x`. Additive peers use `AddZero A`, additive monoids\nand natural multiples.\nNo global cancellation, commutativity, group structure, surjectivity, positivity,\nfinite or nonempty index type, or decidable equality is assumed. Zero and\nrepeated exponents are allowed; empty or all-zero families cannot have gcd one.\nThe natural-set left interface is the `ι = ℕ`, `e = id` specialization;\ncoprime and consecutive-power adapters remain available. Consecutive-power\nimages give precomposition injectivity into left-cancellative targets.\nThe [catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#power-restrictions-and-order) distinguishes\nthese fixed-pair image criteria from elementwise power kernels and injectivity\non all homomorphisms into an arbitrary monoid.\n\nMore generally, a set of a monoid that contains, for each element, a finite\nfamily of its powers with gcd-one exponents detects equality of fixed\nmultiplication-preserving maps into a monoid whenever the first map has\nleft-regular values. Unit preservation and regularity of the second map are not\nrequired. The [set criterion and additive form](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results)\nallow independent universes, element-dependent families and zero or repeated exponents.\n\nFor a multiplicatively Archimedean commutative monoid with a linear order,\nchosen `0`, `0 ≤ 1` and strictly monotone multiplication by positive elements,\na multiplication-closed set is bounded above exactly when all its members are\nat most `1`, even for empty sets. See the\n[power and order catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#power-restrictions-and-order)\nfor additive restriction, pointwise comparison and multiplicative-map versions.",
+   "link": {
+    "text": "subgroup-power API",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/Group/Subgroup/Power.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Group actions and presentations",
+   "text": "For a commutative ring `R`, a commutative domain `A` with an `R`-algebra\nstructure, and a monoid `M` acting on `A` by semiring endomorphisms,\n`IsIntegral.finite_orbit` proves that every element integral over `R` has\nfinite orbit, provided `[SMulCommClass M R A]`. The three types may lie in\nindependent universes. Scalar commutation fixes the image of `R`; no action\non `R`, injective scalar map, faithful action, integrality of all of `A`,\nor group or finiteness assumption on `M` is required. See\n[`GroupAction.Integral`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/GroupAction/Integral.lean) and the\n[finite-orbit API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/Results.md#finite-orbits-of-integral-elements).\n\nFor arbitrary subgroups `H, K` of a group `G`, equivariant maps `G/H → G/K`\nexist exactly when `H ≤ gKg⁻¹` for some `g`; the coset actions are isomorphic\nexactly when the subgroups are conjugate, not merely when maps exist both ways.\nGroup-valued diagrams have presentations by free products modulo the normal\nclosure of arrow relations. For a group homomorphism `f : A →* B`, a pushout\nalong `A → T` with `T` trivial is `B / normalClosure (range f)`.\nObjectwise-surjective compatible homomorphisms between two diagrams over the same\narbitrary indexing category induce a surjection of colimits; its kernel is the\nnormal closure of the component kernels' images. The object groups may have\nindependent universes.\nThe [actions and presentations catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#group-actions-and-presentations)\nalso gives coefficient-sum relations over semirings and the precise universal\nproperties, including their universe qualifications.",
+   "link": {
+    "text": "GroupAction.Integral",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/GroupAction/Integral.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "GroupAction.Integral",
+    "file": "GroupTheory/GroupAction/Integral.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Fixed vectors and averaging",
+   "text": "For monoid representations on additive commutative monoid modules over a\nsemiring, intertwiners `f, g` with injective `f` and `Function.Exact f g` remain\nexact on fixed submodules. Fixed vectors commute with arbitrary products and\nalgebraic direct sums, but do not in general preserve surjectivity.\n\n**[Noetherian monoid cohomology](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Cohomology/Noetherian.lean).**\nFor `A : Rep R G` over any ring `R` and monoid `G`,\n[inhomogeneous cochains](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Cohomology/Basic.lean) have degree `n`\nterm `(Fin n → G) → A` and differential using the given linear action.\nDegree zero is canonically `R`-linearly equivalent to `A.ρ.fixedSubmodule`.\nIf `IsNoetherian R A`, degree-zero cohomology is Noetherian for arbitrary `G`;\nif also `Finite G`, cohomology is Noetherian in every natural degree.\nNeither commutativity nor Noetherianity of `R`, finiteness of the underlying\n`A`, nor a trivial action is required. The [catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#fixed-vectors-and-averaging)\ngives the independent universes and the narrower Mathlib group-cohomology comparison.\n\nFor a finite group whose order is a unit in a possibly noncommutative semiring,\na given linear lift between intertwining maps can be replaced by an\nintertwining lift; no surjectivity of the map lifted through is required.\nSeparately, for a finite group acting by additive automorphisms on an additive\ncommutative group, bijective multiplication by the group order makes every\ncrossed map principal. The [fixed-vector and averaging catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#fixed-vectors-and-averaging)\nkeeps the representation and additive-action hypotheses distinct and gives the\nexplicit averaging formula and its naturality.\n\nA pretransitive group action on a finite nonempty set has permutation-fixed\nsubmodule linearly equivalent to the coefficient semiring; the acting group need\nnot be finite and no invertible order is needed. A nonzero fixed vector forces\nthe acted-on carrier to be finite; on an infinite pretransitive carrier the fixed\nsubmodule is bottom, still over any coefficient semiring. Separately, for a finite group\nwhose order is a unit in a possibly noncommutative semiring, the normalized norm\nis a natural idempotent self-intertwiner with range the fixed submodule, on\nadditive commutative monoid modules. Its narrower commutative-ring comparison\nwith Mathlib's `averageMap` is in the\n[catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results).",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Free groups, arithmetic and Grothendieck completions",
+   "text": "For any generator relabeling `σ : I → J`, the kernel of `FreeGroup.map σ` is\nthe **normal closure** of all `of i * (of k)⁻¹` with `σ i = σ k`. The label\ntypes may be empty and lie in independent universes; no injectivity, surjectivity\nor finiteness is needed. The induced homomorphism is injective or surjective\nexactly when `σ` is. See the [free-group map API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/FreeGroup/Map.lean).\n\nFor a finite-index subgroup `H` of a finitely generated free group `G`,\n`rank H + [G:H] = rank G * [G:H] + 1`, including ambient rank zero.\nMathlib supplies subgroup freeness and finite generation. Biadditive maps from\ntwo additive commutative monoids to an additive commutative group extend uniquely\nto both Grothendieck completions; a semiring's additive completion has a canonical\nring structure and universal ring lifts, without cancellation.\n\nFor a finitely generated additive commutative group `M`, a subgroup has finite\nindex exactly when its canonical integer-module finrank equals `Module.finrank ℤ M`.\nThe [finite-index criterion](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/FiniteIndex.lean) requires\n`[Module.Finite ℤ M]`, not freeness or torsion-freeness, and includes rank zero.\nThe span of a linearly independent family of `Module.finrank ℤ M` elements has\nfinite quotient and positive subgroup index.\n\nFor an additive commutative group `V`, subgroup `L` and natural `n`, bijective\nmultiplication by `n` on `V` gives `(V/L)[n] ≃+ L/nL`. If `L` is finitely generated,\nthis torsion subgroup is finite of cardinality `n ^ Module.finrank ℤ L`, without\nfreeness of `L` or ambient finite generation. The\n[free-group, arithmetic and completion catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#free-groups-arithmetic-and-grothendieck-completions)\nalso links the explicit index-two generators and nilpotence reflection on additive units.",
+   "link": {
+    "text": "free-group map API",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/FreeGroup/Map.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Topology and abstract homomorphisms",
+   "text": "**Continuous endomorphisms of additive circles.** For every nonzero real `T`,\n`AddCircle.continuousAddMonoidHomEquivInt` is an additive equivalence from\ncontinuous additive endomorphisms of `AddCircle T`, with pointwise addition,\nto `ℤ`. Its inverse sends `n` to `n • id`, pointwise `x ↦ n • x`;\nequivalently, every such `F` satisfies `F x = n • x` for all `x`, for a\nunique integer `n`. See the\n[endomorphism module](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/AddCircle/Endomorphisms.lean).\n\n**Compact subsemigroups and submonoids.** In a group with a given topology\nand continuous fixed left translations, a closed compact subsemigroup `S`\nsatisfies `x ∈ S → x⁻¹ ∈ S`. Every element of a closed compact submonoid is\na unit in that submonoid. In particular, a compact submonoid of a Hausdorff\ntopological group has the same carrier as a subgroup, since compact subsets\nare closed. The closed compact results require neither continuous right\ntranslations nor continuous inversion. The versions for closed subsemigroups\nand submonoids with Noetherian induced topology follow from compactness. See\nthe [subsemigroup module](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/Subsemigroup.lean).\n\nFor a subsemigroup `S` of a group with continuous fixed left translations,\nits topological closure is stable under inverses if that closure's induced\ntopology is Noetherian and each right translation by a member of `S` is\ncontinuous on the closure. No ambient Noetherianity or continuous inversion is\nassumed. See\n[`Subsemigroup.inv_mem_closure_of_noetherianSpace`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/Subsemigroup/Closure.lean)\nand the [precise inputs](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/Usage.md#inverses-in-a-subsemigroups-closure).\nAlternatively, with the same local right continuity, inverse stability follows\nif `S` is preirreducible and strict inclusion of nonempty irreducible closed\nsubsets of the ambient group is well-founded (`WellFoundedLT`). This applies to\nevery element of the closure, not just members of `S`.\n\nMore generally, a closed self-embedding of any topological space is surjective\nif the space has finitely many irreducible components and well-founded strict\ninclusion of nonempty irreducible closed subsets. No Noetherianity or separation is assumed;\nsee the [closed-embedding theorem](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/ClosedEmbedding.lean).\n\nIn a compact Hausdorff commutative topological group with a dense algebraically\nfinitely generated subgroup, every abstract finite-index subgroup is open.\nEvery abstract homomorphism from such a source to a compact nonarchimedean group\nis continuous, even with an infinite image; this does not assert local constancy.\nThe [topology catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#topology-and-abstract-homomorphisms)\nalso covers ultrafilter-limit counterexamples to continuity, cofinite groups and\nactions, locally constructible subgroups, identity components, compact open\nsubgroups and finite-coordinate factorizations.\n\nTwo continuity interfaces are separate: a pretransitive group action by continuous\nfixed-element maps on a finite T0 space makes its given topology discrete, with\nno topology or finiteness needed on the group. By contrast, for topological spaces\n`M, X` where every point of `X` has a finite neighborhood, a primitive scalar\noperation `M × X → X` is jointly continuous if **both** fixed-scalar maps and orbit\nmaps are continuous; no action laws or separation are required.\nThe catalogue includes the local finite-neighborhood criterion for arbitrary maps.",
+   "link": {
+    "text": "endomorphism module",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/AddCircle/Endomorphisms.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "heading",
+   "title": "Pontryagin characters and bidual evaluation"
+  },
+  {
+   "kind": "item",
+   "title": "Saturation of uniformly spanning character sets",
+   "text": "Let `K` be a compact\nmonoid with measurable opens and measurable fixed translations, and let `μ`\nbe a finite nonzero left-invariant measure. If the complex span of the scalar\ncharacters from a set `S` is uniformly dense in `C(K, ℂ)`, then `S` is the\nentire Pontryagin dual. In particular, every point-separating subgroup of\ncharacters is the whole dual. The measure need not be a probability measure;\nno group, Hausdorffness or countability assumption on `K` is required. See\n[`PontryaginDual.Saturation`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Saturation.lean).",
+   "link": {
+    "text": "PontryaginDual.Saturation",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Saturation.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual.Saturation",
+    "file": "GroupTheory/Topology/PontryaginDual/Saturation.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Uniform density of scalar characters",
+   "text": "Let `K` be a compact monoid with a\ntopology, and let `S` be a subgroup of its continuous `Circle`-valued\ncharacters that separates points of `K`. The complex linear span of\n`x ↦ (χ x : ℂ)`, for `χ ∈ S`, is dense in `C(K, ℂ)` for the uniform topology.\nNo measure, continuity of the monoid operations, or separation or countability\ntypeclass on `K` is required. This uses Mathlib's scalar Stone–Weierstrass theorem;\nsee [`GroupTheory.Topology.PontryaginDual.StoneWeierstrass`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/StoneWeierstrass.lean).",
+   "link": {
+    "text": "GroupTheory.Topology.PontryaginDual.StoneWeierstrass",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/StoneWeierstrass.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "GroupTheory.Topology.PontryaginDual.StoneWeierstrass",
+    "file": "GroupTheory/Topology/PontryaginDual/StoneWeierstrass.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Real characters and canonical biduality",
+   "text": "Every continuous circle-valued\ncharacter of the additive real line has a unique period-one Fourier frequency.\n`PontryaginDual.realEquiv` identifies the original real topology with the\ncompact-open topology on the entire real character space. The forward map of\n`PontryaginDual.realEvalEquiv` is canonical bidual evaluation, not a separately\nchosen algebraic identification. See\n[`PontryaginDual.Real`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Real.lean).",
+   "link": {
+    "text": "PontryaginDual.Real",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Real.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual.Real",
+    "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Transport of the whole Pontryagin dual",
+   "text": "A continuous multiplicative\nequivalence `A ≃ₜ* B` induces `PontryaginDual B ≃ₜ* PontryaginDual A` by\nprecomposition, with the original compact-open topologies. Only monoids with\ntopologies are needed: no local compactness, Hausdorffness or continuity of\ntheir operations is assumed. See `PontryaginDual.mapEquiv` in\n[`PontryaginDual`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual.lean).",
+   "link": {
+    "text": "PontryaginDual",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual",
+    "file": "GroupTheory/Topology/PontryaginDual.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Canonical Pontryagin bidual evaluation",
+   "text": "For a monoid `A` equipped with a\ntopology and `[LocallyCompactPair A Circle]`, `PontryaginDual.eval A` is the\ncontinuous homomorphism `a ↦ (χ ↦ χ a)` into the existing compact-open bidual.\nIt is natural under arbitrary continuous monoid homomorphisms. If the dual\nalso forms a locally compact pair with `Circle`, evaluation on the dual is\na section of the dual of evaluation. No group, commutativity, continuity of\nthe monoid operations or Hausdorff hypothesis on `A` is required. These\ngeneral monoid results alone do not assert injectivity, surjectivity or full Pontryagin reflexivity\nof the original evaluation. See\n[`GroupTheory.Topology.PontryaginDual`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual.lean).",
+   "link": {
+    "text": "GroupTheory.Topology.PontryaginDual",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "GroupTheory.Topology.PontryaginDual",
+    "file": "GroupTheory/Topology/PontryaginDual.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Bidual evaluation separates discrete abelian groups",
+   "text": "For a commutative\ngroup with its discrete topology, `PontryaginDual.eval_injective_of_discrete`\nproves that the canonical continuous bidual evaluation is injective. No\nfiniteness, finite generation or countability is required. The injectivity\ntheorem is available in\n[`PontryaginDual.Discrete`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Discrete.lean).\nFor full canonical continuous reflexivity, including the inverse, use\n`PontryaginDual.evalEquivOfDiscrete` in\n[`PontryaginDual.Discrete.Equivalence`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Discrete/Equivalence.lean).",
+   "link": {
+    "text": "PontryaginDual.Discrete",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Discrete.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual.Discrete",
+    "file": "GroupTheory/Topology/PontryaginDual/Discrete.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Integrals and orthogonality of characters",
+   "text": "For a monoid `K` with its original\ntopology and measurable space, measurable opens and `[MeasurableMul K]`,\na nontrivial continuous circle-valued character has complex Bochner integral zero\nagainst any left-invariant measure. Distinct characters have zero off-diagonal\nintegral `∫ x, χ x * conj (ψ x) ∂μ`.\nNo group, compactness, finiteness or normalization of the measure is assumed;\nfor a nonintegrable function the Bochner integral is zero by definition.\nSee `PontryaginDual.integral_eq_zero_of_ne_one` and `integral_mul_conj_eq_zero`\nin [`PontryaginDual.Integral`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Integral.lean).",
+   "link": {
+    "text": "PontryaginDual.Integral",
+    "url": "https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Integral.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "PontryaginDual.Integral",
+    "file": "GroupTheory/Topology/PontryaginDual/Integral.lean",
+    "found": null
+   }
+  }
+ ],
+ "main_results": [
+  {
+   "name": "ContinuousMonoidHom.intPiEvalEquiv",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean",
+   "found": {
+    "line": 88,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intPi_ext",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean",
+   "found": {
+    "line": 62,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intPiEvalEquiv_symm_toMonoidHom",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean",
+   "found": {
+    "line": 178,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intPiEvalEquiv_symm_apply_ofAdd",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean",
+   "found": {
+    "line": 194,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intPiEvalEquiv_symm_eq_iff",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean",
+   "found": {
+    "line": 121,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intPiEvalEquiv_naturality",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean",
+   "found": {
+    "line": 137,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intPiEvalEquiv_symm_naturality",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int/Pi.lean",
+   "found": {
+    "line": 141,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.continuousMonoidHomCongrLeftHomeomorph",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom.lean",
+   "found": {
+    "line": 311,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.continuousMonoidHomCongrLeft",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom.lean",
+   "found": {
+    "line": 369,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.piCongrRight",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom.lean",
+   "found": {
+    "line": 450,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.mapEquiv_eq_continuousMonoidHomCongrLeft",
+   "file": "GroupTheory/Topology/PontryaginDual.lean",
+   "found": {
+    "line": 177,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.evalHom",
+   "file": "GroupTheory/Topology/PontryaginDual.lean",
+   "found": {
+    "line": 123,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.evalHom_apply",
+   "file": "GroupTheory/Topology/PontryaginDual.lean",
+   "found": {
+    "line": 134,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.eval_toMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual.lean",
+   "found": {
+    "line": 147,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.prodEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Prod.lean",
+   "found": {
+    "line": 133,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.prodEvalEquiv_toMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Prod.lean",
+   "found": {
+    "line": 185,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.coe_prodEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Prod.lean",
+   "found": {
+    "line": 180,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.prodEvalEquiv_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Prod.lean",
+   "found": {
+    "line": 191,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.prodEvalEquiv_symm_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Prod.lean",
+   "found": {
+    "line": 196,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.prodEvalEquiv_toContinuousMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Prod.lean",
+   "found": {
+    "line": 205,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.prodMultiplicative",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 159,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.prodMultiplicative_toMulEquiv",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 184,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.coe_prodMultiplicative",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 179,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.prodMultiplicative_apply",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 188,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.prodMultiplicative_symm_apply",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 193,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPlaneEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 363,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPlaneEvalEquiv_toMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 403,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.coe_realPlaneEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 397,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPlaneEvalEquiv_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 409,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPlaneEvalEquiv_symm_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 415,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPlaneEvalEquiv_toContinuousMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 425,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.mulSingle",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+   "found": {
+    "line": 66,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Pi.evalContinuousMonoidHom",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+   "found": {
+    "line": 93,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Pi.coe_evalContinuousMonoidHom",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+   "found": {
+    "line": 102,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.piEquiv",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+   "found": {
+    "line": 150,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.piEquiv_symm_apply_apply",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+   "found": {
+    "line": 205,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.piEquiv_symm_eq_prod",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Pi.lean",
+   "found": {
+    "line": 211,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 67,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEquiv_symm_apply_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 90,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEquiv_naturality",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 103,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEquiv_mapEquiv_symm_evalHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 139,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 172,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEvalEquiv_toMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 214,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.coe_piEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 208,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEvalEquiv_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 220,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEvalEquiv_symm_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 225,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.piEvalEquiv_toContinuousMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Pi.lean",
+   "found": {
+    "line": 232,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.piMultiplicative",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 236,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.piMultiplicative_toMulEquiv",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 254,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.coe_piMultiplicative",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 249,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.piMultiplicative_apply",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 258,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.piMultiplicative_apply_ofAdd",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 262,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.piMultiplicative_symm_apply",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 266,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMulEquiv.piMultiplicative_symm_apply_toAdd",
+   "file": "GroupTheory/Topology/TypeTags.lean",
+   "found": {
+    "line": 270,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPiEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 467,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPiEvalEquiv_toMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 508,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.coe_realPiEvalEquiv",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 501,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPiEvalEquiv_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 514,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPiEvalEquiv_symm_apply",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 520,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "PontryaginDual.realPiEvalEquiv_toContinuousMonoidHom",
+   "file": "GroupTheory/Topology/PontryaginDual/Real.lean",
+   "found": {
+    "line": 531,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalHomeomorph",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 60,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalHomeomorph_apply",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalHomeomorph_symm_apply",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 82,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalHomeomorph_symm_toMonoidHom",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 87,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalHomeomorph_naturality",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 93,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalHomeomorph_symm_naturality",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 97,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 113,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_toHomeomorph",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 118,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_apply",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 123,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_symm_apply",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 128,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_symm_toMonoidHom",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 133,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_apply_eq_zpowersMulHom_symm",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 138,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_symm_toMonoidHom_eq_zpowersMulHom",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 143,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_naturality",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 149,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.intEvalEquiv_symm_naturality",
+   "file": "GroupTheory/Topology/Algebra/ContinuousMonoidHom/Int.lean",
+   "found": {
+    "line": 153,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.mem_fixedSubmodule_ofMulAction_iff",
+   "file": "GroupTheory/RepresentationOfMulAction.lean",
+   "found": {
+    "line": 51,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.ofMulActionFixedSubmoduleEquiv",
+   "file": "GroupTheory/RepresentationOfMulAction.lean",
+   "found": {
+    "line": 105,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.ofMulActionFixedSubmoduleEquiv_apply_coeff",
+   "file": "GroupTheory/RepresentationOfMulAction.lean",
+   "found": {
+    "line": 136,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.ofMulActionFixedSubmoduleEquiv_symm_apply",
+   "file": "GroupTheory/RepresentationOfMulAction.lean",
+   "found": {
+    "line": 146,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.finite_of_mem_fixedSubmodule_ofMulAction_ne_zero",
+   "file": "GroupTheory/RepresentationOfMulAction.lean",
+   "found": {
+    "line": 67,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmodule_ofMulAction_eq_bot_of_infinite",
+   "file": "GroupTheory/RepresentationOfMulAction.lean",
+   "found": {
+    "line": 89,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulHomClass.eqOn_iff_eq_of_finite_powers_mem_of_isLeftRegular",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 326,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddHomClass.eqOn_iff_eq_of_finite_multiples_mem_of_isAddLeftRegular",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": null
+  },
+  {
+   "name": "MonoidHom.cancel_right_of_finite_powers_mem_range_of_isRightRegular",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 495,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddMonoidHom.cancel_right_of_finite_multiples_mem_range_of_isAddRightRegular",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": null
+  },
+  {
+   "name": "MonoidHom.cancel_right_of_finite_powers_mem_range_of_isLeftRegular",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 370,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddMonoidHom.cancel_right_of_finite_multiples_mem_range_of_isAddLeftRegular",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": null
+  },
+  {
+   "name": "MonoidHom.cancel_right_of_finite_powers_mem_range",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 399,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddMonoidHom.cancel_right_of_finite_multiples_mem_range",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": null
+  },
+  {
+   "name": "MonoidHom.cancel_right_of_coprime_powers_mem_range",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 420,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddMonoidHom.cancel_right_of_coprime_multiples_mem_range",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": null
+  },
+  {
+   "name": "IsLeftRegular.pow_finset_gcd_eq_pow_finset_gcd_iff",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 237,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "IsLeftRegular.eq_of_forall_pow_eq_of_gcd_eq_one",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 252,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "IsAddLeftRegular.nsmul_finset_gcd_eq_nsmul_finset_gcd_iff",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": null
+  },
+  {
+   "name": "IsAddLeftRegular.eq_of_forall_nsmul_eq_of_gcd_eq_one",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": null
+  },
+  {
+   "name": "GrpCat.Colimits.homEquiv",
+   "file": "GroupTheory/Category/Grp/Colimits.lean",
+   "found": {
+    "line": 159,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "GrpCat.Colimits.iSup_range_ι",
+   "file": "GroupTheory/Category/Grp/Colimits.lean",
+   "found": {
+    "line": 192,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "GrpCat.Colimits.coconeIsColimit",
+   "file": "GroupTheory/Category/Grp/Colimits.lean",
+   "found": {
+    "line": 223,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "GrpCat.Colimits.colimitIso",
+   "file": "GroupTheory/Category/Grp/Colimits.lean",
+   "found": {
+    "line": 246,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Submodule.piEquiv",
+   "file": "GroupTheory/LinearAlgebra/Pi.lean",
+   "found": {
+    "line": 58,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Submodule.subtype_piMap_comp_piEquiv",
+   "file": "GroupTheory/LinearAlgebra/Pi.lean",
+   "found": {
+    "line": 87,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.pi",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 71,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.isIntertwiningMap_pi_iff",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.existsUnique_isIntertwiningMap_pi",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.mem_fixedSubmodule_pi",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 130,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmodule_pi",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 145,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmodulePiEquiv",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 152,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.subtype_piMap_comp_fixedSubmodulePiEquiv",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 172,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmodulePiEquiv_naturality",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 188,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.invariants_pi",
+   "file": "GroupTheory/RepresentationPi.lean",
+   "found": {
+    "line": 219,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Submodule.prodEquiv",
+   "file": "GroupTheory/LinearAlgebra/Prod.lean",
+   "found": {
+    "line": 36,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Submodule.subtype_prodMap_comp_prodEquiv",
+   "file": "GroupTheory/LinearAlgebra/Prod.lean",
+   "found": {
+    "line": 67,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.mem_fixedSubmodule_prod",
+   "file": "GroupTheory/RepresentationInvariants.lean",
+   "found": {
+    "line": 282,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmodule_prod",
+   "file": "GroupTheory/RepresentationInvariants.lean",
+   "found": {
+    "line": 290,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmoduleProdEquiv",
+   "file": "GroupTheory/RepresentationInvariants.lean",
+   "found": {
+    "line": 297,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmoduleProdEquiv_toLinearMap",
+   "file": "GroupTheory/RepresentationInvariants.lean",
+   "found": {
+    "line": 324,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.subtype_prodMap_comp_fixedSubmoduleProdEquiv",
+   "file": "GroupTheory/RepresentationInvariants.lean",
+   "found": {
+    "line": 344,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.fixedSubmoduleProdEquiv_naturality",
+   "file": "GroupTheory/RepresentationInvariants.lean",
+   "found": {
+    "line": 362,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.invariants_prod",
+   "file": "GroupTheory/RepresentationInvariants.lean",
+   "found": {
+    "line": 399,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.piQuotient",
+   "file": "GroupTheory/Topology/Algebra/Group/PiDiscreteFactor.lean",
+   "found": {
+    "line": 73,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.piQuotient_existsUnique_factor",
+   "file": "GroupTheory/Topology/Algebra/Group/PiDiscreteFactor.lean",
+   "found": {
+    "line": 128,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.exists_finset_openNormalSubgroup_pi_factor",
+   "file": "GroupTheory/Topology/Algebra/Group/PiDiscreteFactor.lean",
+   "found": {
+    "line": 192,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.exists_finset_openNormalSubgroup_pi_factor_finite",
+   "file": "GroupTheory/Topology/Algebra/Group/PiDiscreteFactor.lean",
+   "found": {
+    "line": 257,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.isOpen_iff_discreteTopology_quotient",
+   "file": "GroupTheory/Topology/Algebra/Group/Quotient.lean",
+   "found": {
+    "line": 107,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.finiteIndex_of_isOpen",
+   "file": "GroupTheory/Topology/Algebra/Group/Quotient.lean",
+   "found": {
+    "line": 128,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.isClosed_iff_t1Space_quotient",
+   "file": "GroupTheory/Topology/Algebra/Group/Quotient.lean",
+   "found": {
+    "line": 138,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.isClopen_iff_isOpen",
+   "file": "GroupTheory/Topology/Algebra/Group/Quotient.lean",
+   "found": {
+    "line": 161,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.isOpen_iff_isClosed",
+   "file": "GroupTheory/Topology/Algebra/Group/Quotient.lean",
+   "found": {
+    "line": 173,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.isClopen_iff_isClosed",
+   "file": "GroupTheory/Topology/Algebra/Group/Quotient.lean",
+   "found": {
+    "line": 187,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.discreteTopology_of_compactSpace",
+   "file": "GroupTheory/Topology/ContinuousMap/CompactDiscrete.lean",
+   "found": {
+    "line": 37,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.exists_openNormalSubgroup_factor",
+   "file": "GroupTheory/Topology/Algebra/CompactGroup/DiscreteFactor.lean",
+   "found": {
+    "line": 44,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenNormalSubgroup.exists_finset_pi_subset",
+   "file": "GroupTheory/Topology/Algebra/OpenSubgroup/Pi.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenNormalSubgroup.exists_finset_uniform_pi_subset",
+   "file": "GroupTheory/Topology/Algebra/OpenSubgroup/Pi.lean",
+   "found": {
+    "line": 84,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.exists_finset_openNormalSubgroup_pi_factor",
+   "file": "GroupTheory/Topology/Algebra/CompactGroup/PiDiscreteFactor.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenSubgroup.leftStabilizer",
+   "file": "GroupTheory/Topology/CompactOpenSubgroup.lean",
+   "found": {
+    "line": 51,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenSubgroup.mem_leftStabilizer_iff",
+   "file": "GroupTheory/Topology/CompactOpenSubgroup.lean",
+   "found": {
+    "line": 69,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenSubgroup.isCompact_leftStabilizer",
+   "file": "GroupTheory/Topology/CompactOpenSubgroup.lean",
+   "found": {
+    "line": 88,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenSubgroup.exists_compact_subset_iff_exists_subset",
+   "file": "GroupTheory/Topology/CompactOpenSubgroup.lean",
+   "found": {
+    "line": 110,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenSubgroup.exists_compact_subset_nhds_one",
+   "file": "GroupTheory/Topology/CompactOpenSubgroup.lean",
+   "found": {
+    "line": 127,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "OpenSubgroup.nhds_one_hasBasis_compact",
+   "file": "GroupTheory/Topology/CompactOpenSubgroup.lean",
+   "found": {
+    "line": 150,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonoidHom.isLocallyConstant_of_isOpen_ker",
+   "file": "GroupTheory/Topology/OpenKernel.lean",
+   "found": {
+    "line": 83,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.isOpen_ker_of_subgroup_free_nhds",
+   "file": "GroupTheory/Topology/OpenKernel.lean",
+   "found": {
+    "line": 170,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.finite_range_of_subgroup_free_nhds",
+   "file": "GroupTheory/Topology/OpenKernel.lean",
+   "found": {
+    "line": 191,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.finite_quotient_kerLift",
+   "file": "GroupTheory/Topology/OpenKernel.lean",
+   "found": {
+    "line": 204,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Circle.finite_range",
+   "file": "GroupTheory/Topology/CircleCharacter.lean",
+   "found": {
+    "line": 58,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.finiteIndex_range_powMonoidHom_of_dense_fg",
+   "file": "GroupTheory/Topology/FiniteIndex.lean",
+   "found": {
+    "line": 96,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.isOpen_range_powMonoidHom_of_dense_fg",
+   "file": "GroupTheory/Topology/FiniteIndex.lean",
+   "found": {
+    "line": 105,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.isOpen_of_finiteIndex_of_dense_fg",
+   "file": "GroupTheory/Topology/FiniteIndex.lean",
+   "found": {
+    "line": 117,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddSubgroup.finiteIndex_range_nsmulAddMonoidHom_of_dense_fg",
+   "file": "GroupTheory/Topology/FiniteIndex.lean",
+   "found": null
+  },
+  {
+   "name": "AddSubgroup.isOpen_range_nsmulAddMonoidHom_of_dense_fg",
+   "file": "GroupTheory/Topology/FiniteIndex.lean",
+   "found": null
+  },
+  {
+   "name": "AddSubgroup.isOpen_of_finiteIndex_of_dense_fg",
+   "file": "GroupTheory/Topology/FiniteIndex.lean",
+   "found": null
+  },
+  {
+   "name": "Topology.IsOpenQuotientMap.totallyDisconnectedSpace",
+   "file": "GroupTheory/Topology/OpenQuotient.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.totallyDisconnectedSpace_of_isOpenQuotientMap",
+   "file": "GroupTheory/Topology/OpenQuotient.lean",
+   "found": {
+    "line": 64,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.connectedComponentOfOne_eq_iInf_openSubgroup",
+   "file": "GroupTheory/Topology/ConnectedComponentOpenSubgroup.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.mem_connectedComponentOfOne_iff_forall_openSubgroup",
+   "file": "GroupTheory/Topology/ConnectedComponentOpenSubgroup.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subgroup.exists_openSubgroup_not_mem_of_not_mem_connectedComponentOfOne",
+   "file": "GroupTheory/Topology/ConnectedComponentOpenSubgroup.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMonoidHom.closure_image_connectedComponentOfOne",
+   "file": "GroupTheory/Topology/ConnectedComponentOpenSubgroup.lean",
+   "found": {
+    "line": 99,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "QuotientGroup.instTotallyDisconnectedSpaceConnectedComponentQuotient",
+   "file": "GroupTheory/Topology/ConnectedComponentQuotient.lean",
+   "found": {
+    "line": 95,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "QuotientGroup.connectedComponentQuotientMk",
+   "file": "GroupTheory/Topology/ConnectedComponentQuotient.lean",
+   "found": {
+    "line": 134,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "QuotientGroup.connectedComponentQuotientLift",
+   "file": "GroupTheory/Topology/ConnectedComponentQuotient.lean",
+   "found": {
+    "line": 151,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "QuotientGroup.connectedComponentQuotientLift_unique",
+   "file": "GroupTheory/Topology/ConnectedComponentQuotient.lean",
+   "found": {
+    "line": 176,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "QuotientGroup.connectedComponentQuotientHomEquiv",
+   "file": "GroupTheory/Topology/ConnectedComponentQuotient.lean",
+   "found": {
+    "line": 207,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonCat.sectionsπContinuousMonoidHom",
+   "file": "GroupTheory/Topology/Sections.lean",
+   "found": {
+    "line": 42,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonCat.sectionsLift",
+   "file": "GroupTheory/Topology/Sections.lean",
+   "found": {
+    "line": 64,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonCat.sectionsLift_unique",
+   "file": "GroupTheory/Topology/Sections.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonCat.sectionsHomEquiv",
+   "file": "GroupTheory/Topology/Sections.lean",
+   "found": {
+    "line": 122,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonCat.sections_topology",
+   "file": "GroupTheory/Topology/Sections.lean",
+   "found": {
+    "line": 154,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "GrpCat.sectionsπContinuousMonoidHom",
+   "file": "GroupTheory/Topology/Sections.lean",
+   "found": {
+    "line": 176,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "GrpCat.sectionsπContinuousMonoidHom_toMonoidHom",
+   "file": "GroupTheory/Topology/Sections.lean",
+   "found": {
+    "line": 187,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddMonoid.End.cyclicNorm_ker_eq_one_sub_range",
+   "file": "GroupTheory/CyclicNorm.lean",
+   "found": {
+    "line": 31,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddCommGroup.exists_zsmul_inverse_of_nsmul_surjective",
+   "file": "GroupTheory/FGScalarSurjectivity.lean",
+   "found": {
+    "line": 57,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddCommGroup.finite_coprime_of_nsmul_surjective",
+   "file": "GroupTheory/FGScalarSurjectivity.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddCommGroup.nsmul_surjective_iff_finite_coprime",
+   "file": "GroupTheory/FGScalarSurjectivity.lean",
+   "found": {
+    "line": 94,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AddCommGroup.nsmul_bijective_iff_finite_coprime",
+   "file": "GroupTheory/FGScalarSurjectivity.lean",
+   "found": {
+    "line": 103,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "IsIntegral.finite_orbit",
+   "file": "GroupTheory/GroupAction/Integral.lean",
+   "found": {
+    "line": 29,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulAction.mem_fixedPoints_subgroup_iff",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 117,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientEquivFixedPoints",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 153,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientEquivFixedPoints_apply",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 196,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientEquivFixedPoints_symm_apply_mk",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 202,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotient_ext",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 210,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotient_ext_iff",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 216,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientEquivFixedPoints_symm_eq_iff",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 223,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientEquivFixedPoints_comp",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 232,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientEquivFixedPoints_symm_stabilizer",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 246,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.nonempty_quotient_iff_exists_le_map_conj",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 258,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Action.nonempty_quotient_iso_iff_exists_eq_map_conj",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 377,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Action.quotientIsoOfEqMapConj",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 286,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Action.quotientIsoOfEqMapConj_hom_mk",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 334,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Action.quotientIsoOfEqMapConj_inv_mk",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 350,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Action.quotientIsoOfEqMapConj_hom_one",
+   "file": "GroupTheory/GroupAction/Quotient.lean",
+   "found": {
+    "line": 367,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulAction.orbitQuotientProdQuotientEquivDoubleCoset",
+   "file": "GroupTheory/GroupAction/DoubleCoset.lean",
+   "found": {
+    "line": 82,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulAction.orbitQuotientProdQuotientEquivDoubleCoset_apply_mk",
+   "file": "GroupTheory/GroupAction/DoubleCoset.lean",
+   "found": {
+    "line": 161,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulAction.orbitQuotientProdQuotientEquivDoubleCoset_symm_apply_mk",
+   "file": "GroupTheory/GroupAction/DoubleCoset.lean",
+   "found": {
+    "line": 170,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulAction.orbitRel_prod_quotient_mk_eq_mk_iff",
+   "file": "GroupTheory/GroupAction/DoubleCoset.lean",
+   "found": {
+    "line": 178,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientMapOfLE",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 42,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.coe_quotientMapOfLE",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 50,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientMapOfLE_apply_mk",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 55,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientMapOfLE_refl",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 60,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientMapOfLE_comp",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 69,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientMapOfLE_surjective",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 78,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientMapOfLE_comp_toQuotient",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MulActionHom.quotientMapOfLE_eq_quotientToQuotientOfLE",
+   "file": "GroupTheory/GroupAction/QuotientMap.lean",
+   "found": {
+    "line": 93,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Finset.pow_gcd_eq_pow_gcd_iff",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 301,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Finset.eq_of_forall_pow_eq_of_gcd_eq_one",
+   "file": "GroupTheory/MonoidHom/PositivePower.lean",
+   "found": {
+    "line": 307,
+    "kind": "theorem",
+    "stated": false
+   }
+  }
+ ]
+}

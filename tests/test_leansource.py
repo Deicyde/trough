@@ -1,0 +1,107 @@
+from trough import leansource
+
+SOURCE = '''/-
+Copyright: theorem inHeader : True
+-/
+module
+
+public import Mathlib.Order.Basic
+
+/-! # A module docstring naming `theorem inModuleDoc` -/
+
+@[expose] public section
+
+theorem A.b : True := trivial
+
+namespace A
+
+/-- A docstring: `theorem inDocstring : True := trivial`. -/
+@[simp,
+  reducible]
+lemma c : True := by
+  trivial
+
+-- theorem inLineComment : True
+/- nested /- theorem inNested -/ theorem stillInComment -/
+
+def quote : String := "theorem inString : True"
+def quoteChar : Char := '"'
+def afterChar : Nat := 1
+
+theorem _root_.Top.level : True := trivial
+
+open Classical in theorem opened : True := trivial
+
+instance : Inhabited Nat := ⟨0⟩
+instance (priority := 100) named : Inhabited Nat := ⟨1⟩
+private theorem hidden : True := trivial
+def universes.{u} (α : Sort u) : Sort u := α
+
+namespace B.C
+
+theorem stated : True := by
+  sorry
+
+theorem proved : True := by
+  exact trivial
+example : True := sorry
+
+end B.C
+
+noncomputable section Named
+
+protected theorem inSection : True := trivial
+
+end Named
+
+end A
+'''
+
+
+def test_the_scan_follows_namespaces_sections_and_root():
+    found = leansource.scan(SOURCE)
+    assert found is not None
+    assert set(found) == {"A.b", "A.c", "A.quote", "A.quoteChar", "A.afterChar", "Top.level", "A.opened", "A.named",
+                          "A.hidden", "A.universes", "A.B.C.stated", "A.B.C.proved", "A.inSection"}
+    assert found["A.b"].line == 12 and found["A.b"].kind == "theorem"
+    assert found["A.c"].kind == "lemma" and found["A.c"].line == 19
+    assert found["A.named"].kind == "instance"
+
+
+def test_names_in_comments_docstrings_and_strings_are_not_declarations():
+    found = leansource.scan(SOURCE)
+    for name in ("inHeader", "inModuleDoc", "inDocstring", "inLineComment", "inNested", "stillInComment", "inString"):
+        assert not any(full.endswith(name) for full in found)
+
+
+def test_a_declaration_whose_text_holds_sorry_is_flagged_and_the_next_is_not():
+    found = leansource.scan(SOURCE)
+    assert found["A.B.C.stated"].sorry
+    # The example after it holds a sorry too, but it is a command of its own.
+    assert not found["A.B.C.proved"].sorry
+    assert not found["A.c"].sorry
+
+
+def test_scopes_that_do_not_close_as_they_open_declare_nothing():
+    assert leansource.scan("namespace A\ntheorem x : True := trivial\nend B\n") is None
+    assert leansource.scan("namespace A\nend\n") is None
+    assert leansource.scan("end A\n") is None
+    # A scope left open at the end of the file is fine, as in Lean.
+    assert set(leansource.scan("namespace A\nsection\ntheorem x : True := trivial\n")) == {"A.x"}
+    # `end A.B` closes namespaces A and B opened one at a time.
+    assert set(leansource.scan("namespace A\nnamespace B\ntheorem x : True := trivial\nend A.B\ntheorem y : True := trivial\n")) == {
+        "A.B.x", "y"}
+
+
+def test_a_name_on_the_line_after_its_keyword_is_not_read():
+    assert leansource.scan("theorem\n  late : True := trivial\n") == {}
+
+
+def test_is_name_accepts_one_lean_name_only():
+    assert leansource.is_name("AdicCompletion.map_exact_of_isNoetherian_middle")
+    assert leansource.is_name("Nat.succ_le'")
+    assert leansource.is_name("«term_∘_»")
+    assert not leansource.is_name("A.b, A.c")
+    assert not leansource.is_name("f : X → Y")
+    assert not leansource.is_name("Order.height_pi and Order.coheight_pi")
+    assert not leansource.is_name(".b")

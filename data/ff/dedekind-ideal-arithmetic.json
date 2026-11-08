@@ -1,0 +1,925 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-dedekind-ideal-arithmetic",
+ "repo": "FormalFrontier/dedekind-ideal-arithmetic",
+ "rev": "c76307595a1151abc42eacc9a815cb2d1bba6dc8",
+ "date": "2026-11-05T17:24:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "dedekind-ideal-arithmetic",
+  "description": "Reusable ideal arithmetic, module indices and intrinsic heights of normed invertible modules over rings of integers. Ideal-norm comparisons, principal-prime extraction and class-group localization sit alongside finite section quotients, common scalar multiples, integral-section heights and normalized logarithmic heights, with tensor-product, positive metric-rescaling and equivalence-pullback formulas. Rational frames evaluate the same intrinsic height through coefficient-ideal norms and weighted archimedean products. Nonzero fractional-ideal norms factor as finite-support prime-norm products with signed exponents; over number fields, negative coefficient-ideal exponents give the finite-place numerator of height. Supplied frames extend to linear coordinates over semiring algebras. Over an infinite Dedekind domain with finite quotients, invertible modules have canonical definite ultrametric seminorms on their adic fibres, characterized in every rational frame by the residue cardinality raised to the signed coefficient-ideal count, times the coordinate norm. Principal fractional-ideal counts determine scalar adic valuations and residue-cardinality completion norms. Rank-one seminorm scalar extension, relative-degree formulas for weighted infinite-place products, fractional-ideal norm extension and isometric completion maps supply further interfaces.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "agent-reviewed",
+  "notes": "AI agents reviewed the ideal-norm, principal-prime and localization results; no human review is claimed."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "AI agents using Lean and Lake",
+    "tool_setup": "AI agents composed Lean proofs using mathlib APIs and ordinary tactics such as rw, simp, constructor, congr, by_cases and typeclass inference. Toolchain and dependency revisions are pinned by the repository's Lean/Lake files."
+   }
+  ],
+  "notes": "AI agents authored the Lean proofs and documentation. AI involvement does not itself establish origin, correctness or rights."
+ },
+ "scope": "Ideal arithmetic, generic quotient indices, intrinsic fixed-field heights and their tensor, positive-rescaling and equivalence-pullback laws are described below. Supplied rational frames evaluate height through their coefficient-ideal norms and weighted rational-fibre norm products, or through residue-cardinality products with negative coefficient-ideal exponents and the same archimedean denominator. These products have finite support. Generic semiring-algebra coordinates of supplied frames and principal-count/completion-norm bridges also support canonical definite ultrametric seminorms on adic fibres of invertible modules over infinite Dedekind domains with finite quotients. The supplied-frame construction needs only a finitely generated module and a rational frame. The plus sign on its coefficient-ideal count does not change the existing height factors. Independently of norms and arithmetic finiteness, the valuation-integer span of integral sections is the image of the integer tensor fibre and spans the whole field fibre; it is finite for finite modules, and flatness gives an equivalence onto the span. The scalar right-unit model identifies the whole span with the valuation-integer ring. Generic fractional-ideal norm/index comparisons include zero ideals and sections; prime-exponent norm factorization requires a nonzero ideal, as supplied automatically by a rational frame. Weighted infinite-place products, fractional-ideal norm extension formulas, seminorm scalar extension and isometric completion maps supply further interfaces, not finite-extension-height evaluations. Element-norm witnesses, class-number computations, injectivity of class extension and proofs of proposed class generators are not supplied. The adic fibres are algebraic tensor products, not completed tensor products. Completed-lattice constructions, identification of seminorm unit balls with those lattices, local tensor compatibility and finite-extension height transport remain open.",
+ "sources": [
+  {
+   "title": "The K-book: An Introduction to Algebraic K-theory",
+   "authors": [
+    "Charles A. Weibel"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Complete-book build dated 2013-08-29, Chapter I, section 3",
+   "url": "https://sites.math.rutgers.edu/~weibel/Kbook/Kbook.pdf"
+  },
+  {
+   "title": "Ideal class groups under localization of Dedekind domains",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Abelian Varieties",
+   "authors": [
+    "J. S. Milne"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "IV section 6, 6.2–6.3"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [
+  {
+   "title": "Ideal norms, factorization and principal primes",
+   "statement": "In an infinite commutative Dedekind domain with finite quotients, a nonzero smaller ideal has strictly larger absolute norm, and nested ideals of equal absolute norm coincide. Over a Dedekind domain finite free over the integers, each nonzero fractional-ideal norm is the finite-support product of height-one prime norms raised to signed integer exponents; the fraction field needs no number-field structure. In an infinite Dedekind domain finite free over the integers, a supplied element with prime absolute algebraic norm yields a principal prime above that rational prime. Over any Dedekind domain and fraction field, a nonzero fractional ideal contains a nonzero element whose principal ideal attains the same signed exponent at a fixed height-one prime; the ideal need not be principal.",
+   "declarations": [
+    {
+     "name": "Ideal.absNorm_lt_absNorm_of_lt",
+     "file": "DedekindIdealArithmetic/Ideal/AbsNorm.lean",
+     "found": {
+      "line": 29,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.eq_of_le_of_absNorm_eq",
+     "file": "DedekindIdealArithmetic/Ideal/AbsNorm.lean",
+     "found": {
+      "line": 42,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "FractionalIdeal.absNorm_eq_finprod_count",
+     "file": "DedekindIdealArithmetic/Ideal/FractionalNorm.lean",
+     "found": {
+      "line": 53,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "FractionalIdeal.exists_mem_count_spanSingleton_eq",
+     "file": "DedekindIdealArithmetic/Ideal/CountAttainment.lean",
+     "found": {
+      "line": 84,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Ideal.exists_principal_prime_over_of_norm_natAbs_eq",
+     "file": "DedekindIdealArithmetic/Ideal/PrincipalPrime.lean",
+     "found": {
+      "line": 27,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Class groups under localization",
+   "statement": "Class extension is surjective for torsion-free localizations of Dedekind domains, and a supplied class generator killed by extension makes the target a principal ideal ring and a unique factorization domain.",
+   "declarations": [
+    {
+     "name": "ClassGroup.extendedHom_surjective_of_isLocalization",
+     "file": "DedekindIdealArithmetic/ClassGroup/Localization.lean",
+     "found": {
+      "line": 37,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "ClassGroup.isPrincipalIdealRing_of_generator_of_isLocalization",
+     "file": "DedekindIdealArithmetic/ClassGroup/Localization.lean",
+     "found": {
+      "line": 59,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "ClassGroup.uniqueFactorizationMonoid_of_generator_of_isLocalization",
+     "file": "DedekindIdealArithmetic/ClassGroup/Localization.lean",
+     "found": {
+      "line": 81,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Section indices and rational-frame coordinates",
+   "statement": "Nonzero sections of invertible modules over commutative domains with finite quotients span finite-index submodules; any two nonzero sections of one invertible module over a commutative domain admit a common nonzero scalar multiple. A supplied frame on K tensor_R M extends to an F-linear coordinate on F tensor_R M through compatible algebras over commutative semirings R and K, with F not required commutative, without finiteness or norm hypotheses. A finitely generated module with a supplied frame over a fraction field has a nonzero coefficient fractional ideal; torsion-freeness makes the coefficient map injective, but is not required to construct the ideal.",
+   "declarations": [
+    {
+     "name": "Module.Invertible.finite_quotient_span_singleton",
+     "file": "DedekindIdealArithmetic/Module/Index.lean",
+     "found": {
+      "line": 101,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.Invertible.exists_nonzero_smul_eq",
+     "file": "DedekindIdealArithmetic/Module/Index.lean",
+     "found": {
+      "line": 122,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "LinearEquiv.fibreCoordinate",
+     "file": "DedekindIdealArithmetic/Module/CoefficientIdeal.lean",
+     "found": {
+      "line": 110,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "LinearEquiv.coefficientIdeal",
+     "file": "DedekindIdealArithmetic/Module/CoefficientIdeal.lean",
+     "found": {
+      "line": 251,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "LinearEquiv.coefficientMap_injective",
+     "file": "DedekindIdealArithmetic/Module/CoefficientIdeal.lean",
+     "found": {
+      "line": 236,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Intrinsic heights of normed invertible modules",
+   "statement": "For a number field K, definite seminorms on the archimedean completion fibres of an invertible module over its ring of integers define a positive height equal to the section index divided by the weighted norm product for every nonzero integral section. Ordinary norms have weight one at real places and two at complex places. The normalized logarithmic height is (log index minus the weighted log norm sum) divided by [K:Q]. Tensor metrics multiply heights and add logarithmic heights. Positive placewise rescaling divides height by the weighted factor and subtracts its degree-normalized logarithm; equivalence pullback preserves both heights. Every rational frame evaluates this same height as the reciprocal of the product of its coefficient-ideal norm and the weighted archimedean product at its unit vector. Equivalently, the numerator is the finite-support product of residue cardinalities with negative coefficient-ideal exponents, with no extra finite-place weights. No integral basis is assumed, and only logarithmic height is divided by [K:Q].",
+   "declarations": [
+    {
+     "name": "NumberField.ArchimedeanNorms.height_eq",
+     "file": "DedekindIdealArithmetic/NumberField/ModuleHeight.lean",
+     "found": {
+      "line": 141,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.height_pos",
+     "file": "DedekindIdealArithmetic/NumberField/ModuleHeight.lean",
+     "found": {
+      "line": 158,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.normalizedLogHeight_eq",
+     "file": "DedekindIdealArithmetic/NumberField/ModuleHeight.lean",
+     "found": {
+      "line": 170,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.height_tensor",
+     "file": "DedekindIdealArithmetic/NumberField/MetricTensorProduct.lean",
+     "found": {
+      "line": 203,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.height_rescale",
+     "file": "DedekindIdealArithmetic/NumberField/MetricRescaling.lean",
+     "found": {
+      "line": 126,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.height_comap",
+     "file": "DedekindIdealArithmetic/NumberField/MetricTransport.lean",
+     "found": {
+      "line": 119,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.height_eq_rationalFrame",
+     "file": "DedekindIdealArithmetic/NumberField/RationalFrameHeight.lean",
+     "found": {
+      "line": 74,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.normalizedLogHeight_eq_rationalFrame",
+     "file": "DedekindIdealArithmetic/NumberField/RationalFrameHeight.lean",
+     "found": {
+      "line": 100,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "NumberField.ArchimedeanNorms.height_eq_finitePlace",
+     "file": "DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean",
+     "found": {
+      "line": 72,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Adic fibre seminorms and integral spans",
+   "statement": "Let R be an infinite Dedekind domain with finite quotients, K its fraction field, p a height-one prime and F = p.adicCompletion K with its selected residue-cardinality norm. An invertible R-module M has a canonical definite ultrametric F-seminorm on F tensor_R M. For every rational frame e and every fibre vector x, its value is q raised to FractionalIdeal.count K p e.coefficientIdeal times the norm of e.fibreCoordinate F x, where q is the residue cardinality. The signed count appears with a plus sign, in contrast to the finite-place height factor. The seminorm is frame-independent and uniquely determined by this weight at the image of e.symm 1. On M = R the whole seminorm is the completion norm composed with the tensor right-unit equivalence; the same vector 1 tensor 1 has value one in every scalar frame. The supplied-frame constructor only needs a finitely generated module and a rational frame, not integral invertibility, freeness or torsion-freeness. No number-field structure, finite-free presentation over the integers, norm on K or norm or metric instance on a fibre is required. Over any Dedekind domain and fraction field, the valuation-integer span of integral sections is the image of the integer tensor fibre and spans the whole field fibre. It is finite for a finite module; flatness makes the image map an equivalence, and the scalar model identifies the whole span with the valuation-integer ring. These algebraic statements need no norm, infinite-ring or finite-quotient hypothesis.",
+   "declarations": [
+    {
+     "name": "Module.adicIntegralSpan",
+     "file": "DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
+     "found": {
+      "line": 49,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.adicIntegralSpanEquiv",
+     "file": "DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
+     "found": {
+      "line": 122,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.mem_adicIntegralSpan_self_iff",
+     "file": "DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
+     "found": {
+      "line": 140,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "LinearEquiv.adicSeminorm",
+     "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+     "found": {
+      "line": 73,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.adicSeminorm",
+     "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+     "found": {
+      "line": 205,
+      "kind": "def",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.adicSeminorm_apply",
+     "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+     "found": {
+      "line": 221,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.adicSeminorm_unique",
+     "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+     "found": {
+      "line": 264,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.adicSeminorm_add_le_max",
+     "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+     "found": {
+      "line": 282,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Module.adicSeminorm_self",
+     "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+     "found": {
+      "line": 304,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  }
+ ],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Norm detects strict ideal inclusion and equality",
+   "text": "In an infinite\ncommutative Dedekind domain with finite quotients, `I < J` and `I ≠ ⊥`\nimply `J.absNorm < I.absNorm`. If `I ≤ J` and the norms agree, `I = J`,\nincluding zero ideals. No finite-free presentation over `ℤ` is needed.\nSee [strict comparison](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L29)\nand [equality](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L42).",
+   "link": {
+    "text": "equality",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L42",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "A supplied prime-norm element yields a principal prime",
+   "text": "In an infinite\nDedekind domain finite free over `ℤ`, a natural prime `p` and a supplied\n`α` with `(Algebra.norm ℤ α).natAbs = p` give a principal prime above\n`(p)`. This is conditional existence, not a search for `α`, a class-number\ncomputation or a witness assertion for every prime. See\n[principal-prime extraction](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/PrincipalPrime.lean#L27).",
+   "link": {
+    "text": "principal-prime extraction",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/PrincipalPrime.lean#L27",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Localization can kill the class group and give a PID/UFD",
+   "text": "For Dedekind\ndomains `A, B` in possibly different universes, an `A`-algebra `B`\ntorsion-free over `A`, and\n`IsLocalization M B`, extension `Cl(A) → Cl(B)` is\n[surjective](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L37).\nIf every source class is an integral power of a supplied `g` and `g`\nextends to one, the library gives a\n[PID](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L59) and hence a\n[UFD](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L81).\nSurjectivity needs no generator; neither class group need be finite.",
+   "link": {
+    "text": "UFD",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L81",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Section indices and common multiples",
+   "text": "Over a domain, scaling a\nnonzero section of a torsion-free module multiplies its quotient index by\nthe principal left-ideal index, including zero scalars and infinite quotients.\nInvertible modules over commutative domains with finite quotients have finite\nquotients by nonzero sections; over any commutative domain their nonzero\nsections admit common nonzero scalar multiples. See\n[module indices](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/Index.lean).",
+   "link": {
+    "text": "module indices",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/Index.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Intrinsic heights of normed invertible modules",
+   "text": "Over `𝓞 K` for a number\nfield `K`, definite seminorms on all archimedean fibres give a positive,\nsection-independent height: quotient index divided by the weighted norm\nproduct. Invertibility, not integral freeness, is assumed. Tensor products,\npositive rescaling and integral-equivalence pullback obey the expected\nmultiplicative and logarithmic laws. The normalized logarithmic height can\nbe negative. See [module heights](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/ModuleHeight.lean)\nand the [height guide](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/docs/RationalFrameHeight.md#intrinsic-height-and-sections).",
+   "link": {
+    "text": "height guide",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/docs/RationalFrameHeight.md#intrinsic-height-and-sections",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Rational-frame and finite-place height formulas",
+   "text": "Every rational frame\nevaluates this same intrinsic height as `1 / (N(I) * archimedeanProduct)`.\nNonzero fractional-ideal norms factor into prime norms with signed exponents\nover Dedekind domains finite free over `ℤ`, without a number-field structure\non the fraction field. For number fields the height numerator uses residue\ncardinalities with **negative** coefficient-ideal counts. See\n[fractional norms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/FractionalNorm.lean) and\n[finite-place height factors](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean).",
+   "link": {
+    "text": "finite-place height factors",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Principal exponents determine scalar completion norms",
+   "text": "Over a Dedekind\ndomain and fraction field, a nonzero scalar has adic valuation equal to the\nexponential of its negative principal-ideal count. For an infinite base with\nfinite quotients, its completion norm is the residue cardinality to that\nnegative count. No norm on bare `K` is chosen. See\n[adic norms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AdicNorm.lean).",
+   "link": {
+    "text": "adic norms",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AdicNorm.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Sharp signed fractional-ideal exponents",
+   "text": "At each fixed height-one prime\nof any Dedekind domain, a nonzero fractional ideal contains a nonzero element\nattaining its signed count. Together with Mathlib's `count_mono`, this is an\nattained minimum. The witness may depend on the prime; no principality,\ninfinite-ring, finite-residue or `ℤ`-freeness hypothesis is needed. See\n[count attainment](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/CountAttainment.lean).",
+   "link": {
+    "text": "count attainment",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/CountAttainment.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Algebraic integral spans in adic fibres",
+   "text": "For any `R`-module `M` over a\nDedekind domain with fraction field `K` and height-one prime `p`, the span of\n`1 ⊗ m` over the valuation integers in `F ⊗[R] M`,\n`F = p.adicCompletion K`, is the image of\n`O ⊗[R] M`, `O = p.adicCompletionIntegers K`. It is finite over `O` if\n`M` is finite, and spans the whole fibre over `F`; flatness makes the image\nmap an equivalence onto the span. For `M = R`, the whole span corresponds\nexactly to `O`. No finite-residue or infinite-ring hypothesis is used. See\n[integral spans](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicIntegralSpan.lean).",
+   "link": {
+    "text": "integral spans",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Canonical ultrametric seminorms on adic fibres",
+   "text": "For an infinite Dedekind\ndomain `R` with finite quotients, fraction field `K`, height-one prime `p`\nand invertible `M`, the fibre `F ⊗[R] M` has a canonical definite\n`F`-seminorm. In every rational frame, on every vector, it is the coordinate\nnorm times the residue cardinality raised to the signed coefficient-ideal\ncount, with a **plus** sign; negative counts are included. It is\nframe-independent and characterized by its rational-unit-vector weight.\nThe supplied-frame constructor only needs finite `M` and a frame,\nallowing torsion. For `M = R` the whole seminorm is the completion norm\npulled back along tensor right-unit equivalence. See\n[adic seminorms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicSeminorm.lean).",
+   "link": {
+    "text": "adic seminorms",
+    "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": [
+  {
+   "name": "FractionalIdeal.exists_mem_count_spanSingleton_eq",
+   "file": "DedekindIdealArithmetic/Ideal/CountAttainment.lean",
+   "found": {
+    "line": 84,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over any Dedekind domain and fraction field, a nonzero fractional ideal has a nonzero member whose principal fractional ideal attains its signed exponent at a fixed height-one prime. The witness may depend on the prime; no principality, infinite-ring, finite-quotient or number-field hypothesis is required."
+  },
+  {
+   "name": "Module.adicIntegralSpan",
+   "file": "DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
+   "found": {
+    "line": 49,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For any module over a Dedekind domain and fraction field, the span over O = p.adicCompletionIntegers K of all sections in the algebraic adic fibre is the range of adicIntegralSpanMap. It is finite over O when M is finite over R, and its span over the completion field is the whole fibre. No norm or arithmetic-finiteness hypothesis is used."
+  },
+  {
+   "name": "Module.adicIntegralSpanEquiv",
+   "file": "DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
+   "found": {
+    "line": 122,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For a flat R-module M, the canonical map from O tensor_R M is an O-linear equivalence onto its integral span. Invertibility supplies flatness through Mathlib's projective-module instances."
+  },
+  {
+   "name": "Module.mem_adicIntegralSpan_self_iff",
+   "file": "DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "On every vector of the scalar fibre, membership in the integral span is exactly valuation-integrality of its coordinate under the tensor right-unit equivalence, not merely a statement at one pure tensor."
+  },
+  {
+   "name": "LinearEquiv.adicSeminorm",
+   "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+   "found": {
+    "line": 73,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For an infinite Dedekind domain R with finite quotients, fraction field K, height-one prime p and finitely generated R-module M with a supplied rational frame e, construct an F-seminorm on F tensor_R M, where F = p.adicCompletion K. It is definite, ultrametric and independent of the supplied frame. No integral invertibility, freeness or torsion-freeness of M, number-field structure on K or finite-free presentation over the integers is assumed."
+  },
+  {
+   "name": "Module.adicSeminorm",
+   "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+   "found": {
+    "line": 205,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For Module.Invertible R M under the same ring and field hypotheses, this is the canonical adic fibre seminorm, without a supplied frame or additional metric data. It agrees with the supplied-frame construction in every rational frame. The construction uses A = WithAbs (NumberField.HeightOneSpectrum.adicAbv K p), proves NormedAlgebra A F using the norm-preserving algebra map, and reuses Seminorm.extendScalarsRankOne followed by F-linear base-change cancellation. No norm or metric instance is installed on K or a fibre."
+  },
+  {
+   "name": "Module.adicSeminorm_apply",
+   "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+   "found": {
+    "line": 221,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For every rational frame e and every x in F tensor_R M, the value is (Ideal.absNorm p.asIdeal : ℝ) raised to FractionalIdeal.count K p e.coefficientIdeal, times the norm of e.fibreCoordinate F x. The count is signed and occurs with a plus sign. Pure-tensor, integral-section and rational-fibre evaluations are also provided; on the rational fibre the scalar factor is NumberField.HeightOneSpectrum.adicAbv K p (e x)."
+  },
+  {
+   "name": "Module.adicSeminorm_unique",
+   "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+   "found": {
+    "line": 264,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Among F-seminorms, the coefficient-ideal weight at the image of e.symm 1 uniquely determines the canonical seminorm. That image has value q raised to FractionalIdeal.count K p e.coefficientIdeal, where q is the residue cardinality."
+  },
+  {
+   "name": "Module.adicSeminorm_eq_zero_iff",
+   "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+   "found": {
+    "line": 275,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The canonical seminorm vanishes exactly at the zero fibre vector. Definiteness is a conclusion of the construction, not extra data."
+  },
+  {
+   "name": "Module.adicSeminorm_add_le_max",
+   "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+   "found": {
+    "line": 282,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "On all adic fibre vectors x and y, N(x + y) is at most max(N(x), N(y)). As an F-seminorm it also satisfies N(a smul x) = norm(a) * N(x) for every a in F."
+  },
+  {
+   "name": "Module.adicSeminorm_self",
+   "file": "DedekindIdealArithmetic/Module/AdicSeminorm.lean",
+   "found": {
+    "line": 304,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "On the scalar module M = R, the entire canonical seminorm is normSeminorm F F composed with the tensor right-unit equivalence, not merely an equality on integral pure tensors. The same integral vector 1 tensor 1 has value one in every rational frame; its coefficient-ideal weight cancels its coordinate norm."
+  },
+  {
+   "name": "IsDedekindDomain.HeightOneSpectrum.valuation_eq_exp_neg_count_spanSingleton",
+   "file": "DedekindIdealArithmetic/Ideal/AdicNorm.lean",
+   "found": {
+    "line": 42,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For any Dedekind domain R, fraction field K, height-one prime p and nonzero a, p.valuation K a is the exponential of the negative count of the principal fractional ideal generated by a. No finite-quotient or finite-free-over-integers assumption is required."
+  },
+  {
+   "name": "IsDedekindDomain.HeightOneSpectrum.norm_algebraMap_eq_zpow_neg_count_spanSingleton",
+   "file": "DedekindIdealArithmetic/Ideal/AdicNorm.lean",
+   "found": {
+    "line": 96,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "With R infinite and having finite quotients, the norm of a nonzero scalar in p.adicCompletion K is the residue cardinality raised to its negative principal fractional-ideal count. The positive count weight therefore cancels the norm; no norm on K is chosen."
+  },
+  {
+   "name": "LinearEquiv.scalarExtensionCoordinate",
+   "file": "DedekindIdealArithmetic/Module/TensorCoordinates.lean",
+   "found": {
+    "line": 33,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A supplied linear coordinate M equiv_R R extends to an F-linear coordinate on F tensor_R M over a semiring algebra. Its pure-tensor and inverse formulas hold without finiteness or norm hypotheses."
+  },
+  {
+   "name": "LinearEquiv.fibreCoordinate",
+   "file": "DedekindIdealArithmetic/Module/CoefficientIdeal.lean",
+   "found": {
+    "line": 110,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "A frame on K tensor_R M induces an F-linear coordinate on F tensor_R M through compatible scalar towers over commutative semirings R and K and a semiring F. Pure-tensor, rational-fibre, inverse, frame-change and whole-equivalence unit formulas require no arithmetic, module finiteness, torsion-free, invertibility or norm hypotheses."
+  },
+  {
+   "name": "Ideal.absNorm_lt_absNorm_of_lt",
+   "file": "DedekindIdealArithmetic/Ideal/AbsNorm.lean",
+   "found": {
+    "line": 29,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "In an infinite commutative Dedekind domain with finite quotients, strict inclusion with nonzero smaller ideal strictly reverses absolute norms. The nonzero hypothesis is not omitted."
+  },
+  {
+   "name": "Ideal.eq_of_le_of_absNorm_eq",
+   "file": "DedekindIdealArithmetic/Ideal/AbsNorm.lean",
+   "found": {
+    "line": 42,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under the same ambient hypotheses, nested ideals with equal absolute norm are equal, including the zero-ideal case."
+  },
+  {
+   "name": "Ideal.exists_principal_prime_over_of_norm_natAbs_eq",
+   "file": "DedekindIdealArithmetic/Ideal/PrincipalPrime.lean",
+   "found": {
+    "line": 27,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "In an infinite commutative Dedekind domain finite free over the integers, a supplied element with prime absolute algebraic norm yields a principal prime above that rational prime. The element and norm equality are hypotheses, not outputs."
+  },
+  {
+   "name": "ClassGroup.extendedHom_surjective_of_isLocalization",
+   "file": "DedekindIdealArithmetic/ClassGroup/Localization.lean",
+   "found": {
+    "line": 37,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For Dedekind domains A and B with B an A-algebra torsion-free as an A-module and a localization at M, class extension is onto. No injectivity or finiteness of either class group is asserted."
+  },
+  {
+   "name": "ClassGroup.isPrincipalIdealRing_of_generator_of_isLocalization",
+   "file": "DedekindIdealArithmetic/ClassGroup/Localization.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "With the same localization hypotheses, if every source class is an integral power of a supplied class g and g extends to one, then B is a principal ideal ring. Both generation and killing are inputs."
+  },
+  {
+   "name": "ClassGroup.uniqueFactorizationMonoid_of_generator_of_isLocalization",
+   "file": "DedekindIdealArithmetic/ClassGroup/Localization.lean",
+   "found": {
+    "line": 81,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "The same exact hypotheses imply unique factorization in B through the proved principal-ideal-ring criterion."
+  },
+  {
+   "name": "Submodule.cardQuot_map_of_injective",
+   "file": "DedekindIdealArithmetic/Module/Index.lean",
+   "found": {
+    "line": 44,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For an injective linear map f over a ring, the quotient index of p.map f equals p.cardQuot times the quotient index of the range of f, without assuming either quotient finite. For a nonzero section of a torsion-free module over a domain, scalar multiplication multiplies its index by the principal left-ideal index, including zero scalars and infinite quotients. Over an infinite commutative Dedekind domain, the scalar factor is the principal ideal's absolute norm."
+  },
+  {
+   "name": "Module.Invertible.finite_quotient_span_singleton",
+   "file": "DedekindIdealArithmetic/Module/Index.lean",
+   "found": {
+    "line": 101,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over a commutative domain with finite quotients, the quotient of an invertible module by the span of any nonzero section is finite."
+  },
+  {
+   "name": "Module.Invertible.exists_nonzero_smul_eq",
+   "file": "DedekindIdealArithmetic/Module/Index.lean",
+   "found": {
+    "line": 122,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Any two nonzero sections of an invertible module over a commutative domain admit a common nonzero scalar multiple. No finite-quotient hypothesis or principal presentation is required."
+  },
+  {
+   "name": "Module.Invertible.cardQuot_span_singleton_tmul",
+   "file": "DedekindIdealArithmetic/Module/Index.lean",
+   "found": {
+    "line": 149,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Over a commutative Dedekind domain with finite quotients, for two invertible modules and nonzero sections m and n, the index of the span of m tensor n is the product of their section indices. The ring may be finite and the modules need not be free."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.height_eq",
+   "file": "DedekindIdealArithmetic/NumberField/ModuleHeight.lean",
+   "found": {
+    "line": 141,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a number field K and Module.Invertible (O_K) M, definite seminorms on all vectors of each completion fibre give a positive height equal to cardQuot (span {m}) divided by the weighted norm product for every nonzero integral m. Ordinary unsquared completion norms carry weight one at real places and two at complex places. No integral freeness or stored section-independence premise is assumed."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.normalizedLogHeight_eq",
+   "file": "DedekindIdealArithmetic/NumberField/ModuleHeight.lean",
+   "found": {
+    "line": 170,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under the same height hypotheses, the normalized logarithmic height at every nonzero integral section is (log index minus the weighted logarithmic norm sum) divided by [K:Q] and may be negative. The standard metric on O_K has multiplicative height one and normalized logarithmic height zero."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.height_tensor",
+   "file": "DedekindIdealArithmetic/NumberField/MetricTensorProduct.lean",
+   "found": {
+    "line": 203,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a number field K and invertible O_K-modules M and N with archimedean norms P and Q, (P.tensor Q).height = P.height * Q.height. The tensor metric is defined on every fibre vector and multiplies norms on arbitrary pure tensors of completion-fibre vectors under the canonical base-change comparison. No integral basis is assumed."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.normalizedLogHeight_tensor",
+   "file": "DedekindIdealArithmetic/NumberField/MetricTensorProduct.lean",
+   "found": {
+    "line": 233,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under the same tensor hypotheses, the normalized logarithmic height of P.tensor Q equals the sum of those of P and Q."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.height_rescale",
+   "file": "DedekindIdealArithmetic/NumberField/MetricRescaling.lean",
+   "found": {
+    "line": 126,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a number field K, an invertible O_K-module and positive factors c : InfinitePlace K → ℝ≥0ˣ, rescale multiplies each ordinary fibre norm by c_v. Its height is the original height divided by the product of c_v raised to InfinitePlace.mult v. The multiplicities are one at real places and two at complex places."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.normalizedLogHeight_rescale",
+   "file": "DedekindIdealArithmetic/NumberField/MetricRescaling.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under the same rescaling hypotheses, normalized logarithmic height is the original value minus the sum of InfinitePlace.mult v times log c_v divided by [K:Q]. Height need not be at least one and logarithmic height need not be nonnegative."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.height_comap",
+   "file": "DedekindIdealArithmetic/NumberField/MetricTransport.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a number field K, invertible O_K-modules M and N, a metric Q on N and an equivalence e : M ≃ₗ[𝓞 K] N, (Q.comap e).height = Q.height. The source metric is the pullback on every completion fibre; no arbitrary metric change is permitted."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.normalizedLogHeight_comap",
+   "file": "DedekindIdealArithmetic/NumberField/MetricTransport.lean",
+   "found": {
+    "line": 135,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under the same pullback hypotheses, normalized logarithmic height is preserved. Metric pullback itself needs neither module invertible and satisfies the identity and contravariant composition laws."
+  },
+  {
+   "name": "FractionalIdeal.absNorm_spanSingleton_eq_cardQuot_mul",
+   "file": "DedekindIdealArithmetic/Ideal/FractionalNorm.lean",
+   "found": {
+    "line": 78,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a Dedekind domain finite free over the integers and a fraction field, the principal fractional ideal generated by any element x of a fractional ideal I has norm cardQuot (span {x}) times norm I. Zero ideals and elements are included; infinite indices are zero. No number-field structure on the fraction field is required."
+  },
+  {
+   "name": "FractionalIdeal.absNorm_eq_finprod_count",
+   "file": "DedekindIdealArithmetic/Ideal/FractionalNorm.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a Dedekind domain R finite free over the integers and a fraction field F, absNorm I equals the rational finite-support product of Ideal.absNorm p.asIdeal raised to FractionalIdeal.count F p I, over height-one primes p, provided I is nonzero. No NumberField F, Q-algebra structure on F or integral basis is required. At the zero ideal all counts vanish, giving product one rather than norm zero."
+  },
+  {
+   "name": "NumberField.FinitePlace.absNorm_eq_finprod_count",
+   "file": "DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean",
+   "found": {
+    "line": 44,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a number field K and a nonzero fractional ideal I, the real cast of absNorm I is the finite-support product over finite places w of q_w raised to FractionalIdeal.count K w.maximalIdeal I, where q_w = Ideal.absNorm w.maximalIdeal.asIdeal is the residue cardinality. The signed exponents use no extra finite-place weights."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.height_eq_finitePlace",
+   "file": "DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean",
+   "found": {
+    "line": 72,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a number field K, Module.Invertible (O_K) M, archimedean norms P and any rational frame e, P.height equals the finite-support product of residue cardinalities raised to the negatives of the counts of e.coefficientIdeal, divided by the product of P.rationalEval v (e.symm 1) raised to v.mult over infinite places v. Nonzeroness of the coefficient ideal follows from the frame. No integral section, integral basis, new height or further metric data are required. The denominator has weights one at real places and two at complex places; multiplicative height has no degree root."
+  },
+  {
+   "name": "LinearEquiv.cardQuot_span_singleton_mul_absNorm_coefficientIdeal",
+   "file": "DedekindIdealArithmetic/Module/CoefficientIdealNorm.lean",
+   "found": {
+    "line": 35,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "A supplied rational frame for a finite torsion-free module over a Dedekind domain finite free over the integers gives, for every section, its span index times the coefficient-ideal norm equal to the principal fractional norm of its coefficient. No invertibility or freeness over the Dedekind domain is assumed."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.normProduct_eq_rationalFrame",
+   "file": "DedekindIdealArithmetic/NumberField/RationalFrameHeight.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "In any supplied rational frame, the weighted norm product of every integral section equals the absolute field norm of its coefficient times the weighted rational norm product of the frame unit vector. This needs no finiteness, torsion-freeness or invertibility of the integral module and includes zero sections."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.height_eq_rationalFrame",
+   "file": "DedekindIdealArithmetic/NumberField/RationalFrameHeight.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For a number field and an invertible module over its ring of integers, every supplied rational frame evaluates the existing intrinsic height as the reciprocal of the product of the coefficient-ideal norm and the weighted archimedean norm product of its rational unit vector. No integral basis or second height definition is introduced."
+  },
+  {
+   "name": "NumberField.ArchimedeanNorms.normalizedLogHeight_eq_rationalFrame",
+   "file": "DedekindIdealArithmetic/NumberField/RationalFrameHeight.lean",
+   "found": {
+    "line": 100,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "Under the same height hypotheses, normalized logarithmic height is minus the logarithm of the coefficient-ideal norm and the weighted archimedean logarithmic sum, divided by [K:Q]. There is no degree root in multiplicative height and no nonnegativity assertion."
+  },
+  {
+   "name": "LinearEquiv.coefficientIdeal",
+   "file": "DedekindIdealArithmetic/Module/CoefficientIdeal.lean",
+   "found": {
+    "line": 251,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For a commutative ring R, a fraction field F, a finitely generated R-module M and a supplied frame e : F ⊗[R] M ≃ₗ[F] F, the coefficient ideal is the nonzero fractional ideal whose elements are exactly e (1 tensor m) for m in M. The scalar module in its multiplication frame gives the unit ideal. Neither injectivity of M into its rational fibre nor integral freeness is assumed; this construction does not define a frame-independent height."
+  },
+  {
+   "name": "Seminorm.extendScalarsRankOne",
+   "file": "DedekindIdealArithmetic/Module/RankOneSeminorm.lean",
+   "found": {
+    "line": 72,
+    "kind": "def",
+    "stated": false
+   },
+   "note": "For normed fields k and l with NormedAlgebra k l and an invertible k-vector space V, any seminorm p, possibly degenerate, extends uniquely to l tensor_k V with value norm(a) * p(x) on a tensor x. Restriction along 1 tensor x recovers p, definiteness is preserved when p is definite, and the unit line recovers the norm of l. No completeness or finite-extension hypothesis is imposed; this is not a height law."
+  },
+  {
+   "name": "NumberField.InfinitePlace.Completion.isometry_completionMap",
+   "file": "DedekindIdealArithmetic/NumberField/Completion/Extension.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   },
+   "note": "For fields K and L with Algebra K L and infinite places v and w satisfying w.LiesOver v, Mathlib's completionMap extends the field algebra map and preserves the ordinary norm. The identity field map gives the identity on the completion. No number-field, finite-extension or real-place hypothesis is needed; no extension-height law is asserted."
+  }
+ ]
+}

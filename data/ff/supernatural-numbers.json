@@ -1,0 +1,110 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-supernatural-numbers",
+ "repo": "FormalFrontier/supernatural-numbers",
+ "rev": "cb444a4051e593328d3e99ad5ae5c8c56ca48099",
+ "date": "2026-11-04T15:57:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Supernatural Numbers",
+  "description": "Prime-exponent supernatural arithmetic, finite-quotient profinite orders and indices of closed subgroups, a closed-subgroup tower law, and the torsion-order comparison with profinite rational-circle character groups.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "self-assessed",
+  "notes": "Compilation checks, including warning-fatal builds, are distinct from complete transitive standard-axiom verification, including private and generated declarations. Neither schema validation nor this self-assessment constitutes independent mathematical review, rights assessment or certification of a particular revision or its publication status."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex CLI (Formal Frontier Hive), Lean 4 and mathlib",
+    "tool_setup": "AI agents using Codex CLI, Lean 4 and mathlib developed the mathematical library, checked clients, metadata, bottom/simplification work and the doc-gen4 Markdown adapter. Beacon assembled the original modules, notices and corrections; Folio contributed headline exposition. Exact model versions and total costs were not recorded here."
+   }
+  ],
+  "notes": "Formal Frontier Agents is the collective formalization credit. Beacon is an AI-agent contributor, not a separately identified human author. Beacon's original modules, other AI-agent client/metadata/bottom and documentation contributions, Folio's headline exposition and the adapter's Root Stability/Anchor Ideal recipe lineage are credited in README.md and docs/README.md. Apache notices, collective credit and genuine third-party attribution are preserved; the collective author credit does not identify a copyright holder. The generated API includes displayed Lean signatures and project docstrings, not external book text."
+ },
+ "scope": "Reusable supernatural-number arithmetic, finite-quotient profinite order and closed-subgroup index, their tower law, and torsion-character comparison under the hypotheses declared in Lean. This metadata does not assert complete source coverage or certify any particular release snapshot.",
+ "sources": [
+  {
+   "title": "Cohomology of Number Fields",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Corrected second edition, version 2.3 (May 2020), Definitions (1.1.5)--(1.1.6) and the following consequences"
+  }
+ ],
+ "depends": [
+  {
+   "name": "group-theory",
+   "rev": "3e8a081e55131925882bf8e772f519664a403392"
+  }
+ ],
+ "related": [
+  {
+   "name": "group-theory",
+   "relationship": "builds-on"
+  }
+ ],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Arithmetic with arbitrary prime exponents",
+   "text": "A supernatural number has an\n`ℕ∞` exponent at every prime, without a finite-support restriction.\nMultiplication adds exponents and divisibility is pointwise order; the\ncomplete-lattice bottom is one. Infinite `iProd` uses suprema of exponent\nsums over finite subfamilies of a `Type`-indexed family, whereas `iSup` and\n`iInf` accept arbitrary `Sort` indices. The positive-natural `ofPNat` and\nexplicit all-natural `ofNat` preserve multiplication and reflect\ndivisibility; `ofNat 0 = ⊤` and neither map installs a numeral coercion.\n[`iSup_ofNat_dvd_iff`](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/NatEmbedding.lean#L129)\ncharacterizes the supernatural least common multiple of a `Sort`-indexed\nnatural-number family, including empty-family and zero cases. See\n[Basic](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Basic.lean) and\n[NatEmbedding](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/NatEmbedding.lean).",
+   "link": {
+    "text": "iSup_ofNat_dvd_iff",
+    "url": "https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/NatEmbedding.lean#L129",
+    "code": true
+   },
+   "declaration": {
+    "name": "iSup_ofNat_dvd_iff",
+    "file": "SupernaturalNumbers/NatEmbedding.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "The closed-subgroup index tower law",
+   "text": "The supernatural\n[`profiniteOrder`](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Order.lean#L34) and\n[`profiniteIndex`](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Order.lean#L43) use finite quotients\nof a profinite group. For closed subgroups `N ≤ H` of the **same** ambient\nprofinite group,\n[`profiniteIndex_tower`](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Tower.lean#L306) proves\n`[G : N] = [G : H] * [H : N]`, taking the relative index in `H` via\n`closedSubgroupWithin H N hNH`. Normality is not required, but closedness\nand the common profinite ambient group are.",
+   "link": {
+    "text": "profiniteOrder",
+    "url": "https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Order.lean#L34",
+    "code": true
+   },
+   "declaration": {
+    "name": "profiniteOrder",
+    "file": "SupernaturalNumbers/Order.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Torsion and character orders",
+   "text": "For an additive abelian group `A` with\n`IsAddTorsion A`,\n[`characterEquivProfiniteCharacter`](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Characters.lean#L355)\nidentifies its rational-circle-valued characters with the additive group\nunderlying its profinite character group; the\n[`torsionOrder_eq_profiniteOrder_character`](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Characters.lean#L404)\ntheorem equates their supernatural orders. The topology-free wrapper gives\n`A` the discrete topology; the lower-level Pontryagin interface requires\nexplicit topological assumptions. These noncomputable constructions make\nno nontorsion or general Pontryagin-duality claim.",
+   "link": {
+    "text": "characterEquivProfiniteCharacter",
+    "url": "https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbers/Characters.lean#L355",
+    "code": true
+   },
+   "declaration": {
+    "name": "characterEquivProfiniteCharacter",
+    "file": "SupernaturalNumbers/Characters.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "Mathlib supplies prime-factorization, finite/profinite-group and Pontryagin\ninfrastructure; this library supplies the supernatural arithmetic and bridges.\nThe released `groupTheory` library supplies the canonical rational-circle\ninclusions and finite-order preimages through\n`GroupTheory.Topology.RationalCircle`, following their original formalization\nin this library. Publicly importing `SupernaturalNumbers` also exposes these\ndeclarations. Use `AddCircle.rationalToReal`, `AddCircle.rationalToCircle`,\n`AddCircle.exists_rational_preimage_of_isOfFinAddOrder` and\n`Circle.exists_rational_preimage_of_isOfFinOrder` in new code. The seven former\n`Supernatural` names in `Characters` remain deprecated aliases from\nOctober 7, 2026, retained for at least three months. Group Theory's\nopen-kernel comparison for compact groups is distinct from this library's\ndiscrete torsion-group character equivalence.\nSee the [API reference](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/docs/API.md) and\n[checked finite and infinite examples](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbersTests/ReleaseClients.lean),\nas well as [rational-circle clients](https://github.com/FormalFrontier/supernatural-numbers/blob/cb444a4051e593328d3e99ad5ae5c8c56ca48099/SupernaturalNumbersTests/RationalCircle.lean)."
+  }
+ ],
+ "main_results": []
+}

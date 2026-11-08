@@ -1,0 +1,229 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-sheaf-cohomology",
+ "repo": "FormalFrontier/sheaf-cohomology",
+ "rev": "85cf087ff3e2311834bc8c16cb347f1a513d18e4",
+ "date": "2026-11-04T15:35:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "sheaf-cohomology",
+  "description": "Compact-open filtered section colimits, quasi-flasque acyclicity, sheaf cohomology and right-derived pushforward, native sheafed-space limits and pullback cocones, coefficient-forgetting comparisons, and global and compact-open cylinder sections of spectral inverse limits. Generic open-variable restrictions and principal-tail changes compare the actual section diagrams for arbitrary original cones; invertibility of the specialized comparisons has additional hypotheses.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "other: historical mathematical review is distinct from revision-specific acceptance",
+  "notes": "The mathematical library had distinct-execution agent review before its prior private release. Build, complete standard-axiom and independent mathematical/API/rights decisions apply only to the exact revisions they assessed; this metadata is not itself an acceptance certificate for any successor. No human or source-author endorsement is asserted."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "tool_setup": "Formal Frontier AI agents using Lean, Lake and Git for formalization, examples, documentation and distinct-execution independent review."
+   }
+  ],
+  "notes": "Contributor and adaptation credits are in docs/CREDITS.md and repository history. No human peer review, source-author approval, model-cost estimate or current-tree performance measurement is inferred."
+ },
+ "scope": "A 103-module Lean library with compact-open filtered comparisons, quasi-flasque and derived-cohomological results, conditional constructed native limits and their forgetful comparisons, and spectral inverse-limit global and cylinder sections. Generic open-variable naturality and transition-pullback principal-tail comparisons are arrow-level results for actual diagrams and original cones; neither proves an all-open isomorphism, unconditional global limits nor source-level coverage. Examples include both public named examples and private clients. The historical generated docs/API.md covers 26 original modules only; consult the focused guides for later modules and exact hypotheses.",
+ "sources": [
+  {
+   "title": "Sheaf cohomology, compact-open colimits, pullback and open base change",
+   "type": "folklore",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "Foundations of Rigid Geometry I",
+   "authors": [
+    "Kazuhiro Fujiwara",
+    "Fumiharu Kato"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "url": "https://arxiv.org/abs/1308.4734v5"
+  }
+ ],
+ "depends": [
+  {
+   "name": "spectral-stone-duality",
+   "rev": "452b7b7be1bea76434cd083b1019a26f96b4ab30"
+  }
+ ],
+ "related": [
+  {
+   "name": "spectral-stone-duality",
+   "relationship": "builds-on"
+  }
+ ],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Compact-open sections and acyclicity",
+   "text": "On a prespectral,\nquasi-separated space, evaluation of suitable concrete-category sheaves on\na compact open preserves small filtered colimits, subject to the explicit\nsheafification, concrete-category and universe assumptions. For abelian\nsheaves on a *compact* such space, quasi-flasqueness implies vanishing of\npositive-degree sheaf cohomology, using an injective-envelope dimension\nshift. See\n[`preservesColimit_sections`](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/CompactOpenSections.lean#L784),\n[`subsingleton_H_succ`](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/QuasiFlasqueAcyclicity.lean#L259),\nand the [mathematical guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/Guide.md).",
+   "link": {
+    "text": "preservesColimit_sections",
+    "url": "https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/CompactOpenSections.lean#L784",
+    "code": true
+   },
+   "declaration": {
+    "name": "preservesColimit_sections",
+    "file": "SheafCohomology/CompactOpenSections.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Higher direct images",
+   "text": "For a spectral map from a prespectral,\nquasi-separated source to a prespectral target, right-derived pushforward\nof abelian sheaves preserves filtered colimits in every natural degree. The\ntheorem identifies the *canonical* `colimit.post` comparison for a small,\nnonempty directed-preorder diagram, not an arbitrary isomorphism; this API\nhas universe-zero spaces, coefficients and Ext groups and requires its\nstated sheafification/Ext instances. See\n[`rightDerivedPushforward_colimitPost_isIso`](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/HigherDirectImageFilteredColimit.lean#L332)\nand the [mathematical guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/Guide.md).",
+   "link": {
+    "text": "rightDerivedPushforward_colimitPost_isIso",
+    "url": "https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/HigherDirectImageFilteredColimit.lean#L332",
+    "code": true
+   },
+   "declaration": {
+    "name": "rightDerivedPushforward_colimitPost_isIso",
+    "file": "SheafCohomology/HigherDirectImageFilteredColimit.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Native sheafed-space limits",
+   "text": "For an actual cone, a limiting underlying\nspace cone and a colimiting cocone of its projection-pullback sheaves imply\nthat the native cone is limiting; over that same limiting base, the converse\nrecovers the sheaf colimit. A separate construction builds such a native\nlimit when the required coefficient colimits and local weak sheafification\nexist. These are conditional results under the concrete-coefficient\nhypotheses, not a global limits instance. See the\n[limit criterion](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/ConePullbackLimit.lean#L222),\n[fixed-base converse](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/ConePullbackLimitConverse.lean#L170),\n[construction](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/LimitConstruction.lean#L62), and\n[limit guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/ConePullbackLimit.md).",
+   "link": {
+    "text": "limit guide",
+    "url": "https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/ConePullbackLimit.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Forgetting coefficients",
+   "text": "The native additive-to-Type and\ncommutative-ring-to-Type functors preserve same-universe cofiltered limits\nof sheafed spaces, using canonical pullback mates and filtered sheaf-colimit\ncomparisons. The ring pullback `canonicalComparison` is a *different* map\nfrom the filtered-diagram `colimit.post` comparison; neither preservation\ntheorem covers arbitrary diagram shapes. See the\n[additive theorem](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/AbelianForget/LimitPreservation.lean#L103),\n[ring theorem](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/CommRingForget/LimitPreservation.lean#L112),\nand [ring guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/CommRingForget.md).",
+   "link": {
+    "text": "ring guide",
+    "url": "https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/CommRingForget.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Global sections of spectral inverse limits",
+   "text": "Filtered colimits of\nnative stage sections recover the global sections of the constructed\nType-valued native limit, and of the *original actual limiting cone* for\nadditive or commutative-ring coefficients. All three isomorphisms require\nsmall filtered indexing, spectral original stages and spectral original\ntransition maps. In the ring case each limit section comes from\n*some* stage, not from every fixed stage. See the\n[Type comparison](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeLimitGlobalSections.lean#L181),\n[additive comparison](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeAdditiveGlobalSections.lean#L99),\n[ring comparison and stage theorem](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCommRingGlobalSections.lean#L105),\nand [ring sections guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/NativeCommRingGlobalSections.md).",
+   "link": {
+    "text": "ring sections guide",
+    "url": "https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/NativeCommRingGlobalSections.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Compact-open cylinders",
+   "text": "For a directed preorder and a selected index,\nrestricting an actual native limit to the inverse image of a compact stage\nopen gives filtered-colimit descriptions of sections over that open for\nType-valued, additive and commutative-ring sheafed spaces. For an arbitrary\noriginal cone, the actual restricted-stage section diagrams also vary\ncontravariantly with the stage open: their colimits form a presheaf under\nthe stated family of `HasColimit` assumptions, and the comparison to the\noriginal cone commutes with open restriction. Ring and additive restriction\nsquares identify their existing arrows with this generic comparison; none\nof these arrow laws asserts an all-open isomorphism. The\nchange-of-principal-tail result uses the actual transition-pullback open:\nthe later native and section diagrams are isomorphic to the earlier diagrams\nrestricted along the final tail inclusion. Colimit existence transfers both\nways; one local `HasColimit` at the earlier tail yields the canonical iso,\ncoprojection law and an arbitrary-original-cone comparison square with a\nforward target equality cast. This makes no all-open `IsIso` or identity/\ncomposition claim for tail changes. Separately, the conditional ring result\ncompares the literal restricted tail-stage rings with sections\non the *original* cone's inverse-image open: its original-stage law uses the\nactual projection and both equality transports in `CommRingCat`. For an actual\nlimiting cone, spectral original stages and transition maps, and a compact\npossibly-empty stage open, this comparison is an isomorphism, and each\nsection comes from *some* tail stage, not every fixed stage. No nonempty-open,\nnontrivial-ring or transition-surjectivity premise is needed. See the\n[Type theorem](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeSpectralCylinderSections.lean#L45),\n[additive theorem](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeAdditiveCylinderSections.lean#L101),\n[ring IsIso and some-stage declarations](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCommRingCylinderSections.lean),\n[additive cylinder guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/NativeAdditiveCylinderSections.md),\n[generic open-naturality guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/NativeCylinderOpenNaturality.md),\n[generic tail-change guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/NativeCylinderTailChange.md),\n[`betweenTailInclusion_final`](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderTailChange.lean),\n[`cylinderSectionsTailColimitIso`](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderTailChange.lean),\n[`cylinderSectionsComparison_betweenTail`](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderTailChange.lean), and\n[ring-cylinder guide](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/docs/NativeCommRingCylinderSections.md).",
+   "link": {
+    "text": "betweenTailInclusion_final",
+    "url": "https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderTailChange.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "betweenTailInclusion_final",
+    "file": "SheafCohomology/NativeCylinderTailChange.lean",
+    "found": null
+   }
+  }
+ ],
+ "main_results": [
+  {
+   "name": "SheafCohomology.CompactOpenSections.preservesColimit_sections",
+   "file": "SheafCohomology/CompactOpenSections.lean",
+   "found": {
+    "line": 783,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopCat.Sheaf.IsQuasiFlasque.subsingleton_H_succ",
+   "file": "SheafCohomology/QuasiFlasqueAcyclicity.lean",
+   "found": {
+    "line": 260,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "SheafCohomology.HigherDirectImageFilteredColimit.rightDerivedPushforward_colimitPost_isIso",
+   "file": "SheafCohomology/HigherDirectImageFilteredColimit.lean",
+   "found": {
+    "line": 332,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.SheafedSpace.isLimit_of_isLimit_forget_of_isColimit_conePullbackCocone",
+   "file": "SheafCohomology/ConePullbackLimit.lean",
+   "found": null
+  },
+  {
+   "name": "AlgebraicGeometry.SheafedSpace.AbelianForget.preservesCofilteredLimit",
+   "file": "SheafCohomology/AbelianForget/LimitPreservation.lean",
+   "found": {
+    "line": 103,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.SheafedSpace.CommRingForget.preservesCofilteredLimit",
+   "file": "SheafCohomology/CommRingForget/LimitPreservation.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.SheafedSpace.isIso_nativeCommRingGlobalSectionsComparison",
+   "file": "SheafCohomology/NativeCommRingGlobalSections.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.isIso_nativeCommRingCylinderSectionsComparison",
+   "file": "SheafCohomology/NativeCommRingCylinderSections.lean",
+   "found": {
+    "line": 106,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.cylinderSectionsNaturality",
+   "file": "SheafCohomology/NativeCylinderOpenNaturality.lean",
+   "found": {
+    "line": 331,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.cylinderSectionsComparison_betweenTail",
+   "file": "SheafCohomology/NativeCylinderTailChange.lean",
+   "found": {
+    "line": 253,
+    "kind": "theorem",
+    "stated": false
+   }
+  }
+ ]
+}

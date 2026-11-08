@@ -1,0 +1,205 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-profinite-groups",
+ "repo": "FormalFrontier/profinite-groups",
+ "rev": "bf258c54ddbe2b2e96f59e1965e55688279b872f",
+ "date": "2026-11-04T14:53:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Profinite Groups",
+  "description": "Reusable Lean APIs for finite-stage limits, finite-target map colimits, maps into limits of finite-space diagrams, profinite-group morphisms, finite-quotient Hom systems, compatible quotient-subgroup and Sylow families, closed subgroups with Sylow finite images, finite-quotient conjugacy, continuous sections, free profinite and pro-p constructions, primewise p-adic models, and procyclic invariants, power images, and closed-subgroup inheritance.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "other",
+  "notes": "Read README.md for headline results and import examples, and docs/Mathematics.md for hypotheses, constructions and limitations."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex CLI and Hive Tasks",
+    "tool_setup": "AI agents developed code and documentation with a pinned Lean/mathlib Lake environment; independent agent executions reviewed mathematics."
+   }
+  ],
+  "notes": "Beacon contributed the initial implementation and API and regression-client repairs. Formal Frontier Agents contributed further mathematics, tests, reference documentation and independent reviews. The native reference adapter and catalogue follow the finite-group Tate cohomology, polynomial-root-stability and Anchor ideal-completion adaptation lineage; Folio contributed headline input."
+ },
+ "scope": "Production modules and checked-use clients have separate import roots. For any small nonempty cofiltered diagram of finite discrete spaces and any limiting cone, stage maps to a finite target form a filtered colimit equivalent to continuous maps from its limit, naturally in the target. Empty stages, limits and targets are allowed, but not an empty index. For an arbitrary diagram of finite-space targets with a specified limiting profinite cone, continuous maps from a specified cofiltered finite-space limit correspond to compatible stage-map classes at the target objects; the target index need not be cofiltered, small or nonempty. This is a comparison of profinite spaces and continuous maps, not groups. For two small nonempty cofiltered diagrams in the finite-set skeleton, morphisms between their canonical dual ind-objects correspond to compatible finite-stage map classes, with representative, composition, identity and fixed-index naturality laws. Specified limiting cones identify these morphisms with continuous maps of profinite spaces; no presentation-independent pro-category equivalence is asserted. Compatible quotient images reconstruct closed subgroups, and arbitrary prescribed quotient-level Sylow coordinates extend to compatible families and closed subgroups with Sylow finite images. Maximality is conditional on every actual finite quotient image of a containing subgroup being a p-group; independently conjugate images of closed subgroups yield an ambient conjugator. Procyclic power images classify open subgroups, not all closed subgroups of an arbitrary procyclic group. The closed-subgroup classification is for the specific primewise p-adic product. Nevertheless, every closed subgroup of a procyclic profinite group inherits procyclicity.",
+ "sources": [
+  {
+   "title": "Cohomology of Number Fields (corrected second edition, electronic version 2.3, May 2020)",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Chapter I, section 1 (including exercises 1 and 3–5); section 6 (finite-quotient pro-p and Sylow arguments); section 7 (before proposition 1.7.7)."
+  }
+ ],
+ "depends": [
+  {
+   "name": "group-theory",
+   "rev": "77c1f2663514f8d43db606d3eb3409533a6e29a5"
+  }
+ ],
+ "related": [
+  {
+   "name": "group-theory",
+   "relationship": "builds-on"
+  }
+ ],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "prose",
+   "text": "Explore [finite diagrams](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/README.md#finite-diagrams-and-inverse-limit-characterizations),\n[maps and constructions](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/README.md#maps-closed-subgroups-and-universal-constructions),\n[product models and classification](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/README.md#primewise-models-product-ideals-and-procyclic-classification),\nand [homomorphisms, powers and coefficients](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/README.md#homomorphisms-powers-and-coefficients)."
+  },
+  {
+   "kind": "heading",
+   "title": "Finite diagrams and inverse-limit characterizations"
+  },
+  {
+   "kind": "item",
+   "title": "Skeletal finite quotients and equivalence",
+   "text": "Every profinite space in the\nsame universe is the limit of its included skeletal finite-quotient diagram.\nThe associated dual ind-object realizes to that space, giving an equivalence\nbetween dual ind-objects of finite sets and profinite spaces whose forward\nfunctor is the [profinite realization](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/IndDualRealization.lean).\nThe generic inverse's chosen object is compared with the skeletal presentation\nby an isomorphism. Empty spaces and\nfinite stages are allowed; no arbitrary diagram projection is assumed\nsurjective. See [`IndDualEquivalence`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/IndDualEquivalence.lean)\nand its [clients](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroupsTests/IndDualEquivalence.lean).",
+   "link": {
+    "text": "IndDualEquivalence",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/IndDualEquivalence.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "IndDualEquivalence",
+    "file": "ProfiniteGroups/IndDualEquivalence.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite-stage inverse-limit characterizations",
+   "text": "A Hausdorff space is an\ninverse limit of finite discrete spaces over a small, nonempty cofiltered\ncategory if and only if it is compact with a clopen basis, equivalently\ncompact and totally disconnected. A topological group is an inverse limit\nof finite groups over such a category if and only if it is compact and\ntotally disconnected (`FiniteGroupPresentation.nonempty_iff`). For a Hausdorff\ntopological group, this is also equivalent to compactness with an\nidentity-neighborhood basis of open normal subgroups. The presentations use the\nactual inverse-limit topology and include empty spaces and trivial groups;\narbitrary finite-stage projections need not be surjective. See\n[`FiniteDiscreteCharacterization`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/FiniteDiscreteCharacterization.lean)\nand [`FiniteGroupCharacterization`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/FiniteGroupCharacterization.lean).",
+   "link": {
+    "text": "FiniteDiscreteCharacterization",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/FiniteDiscreteCharacterization.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FiniteDiscreteCharacterization",
+    "file": "ProfiniteGroups/FiniteDiscreteCharacterization.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "heading",
+   "title": "Maps, closed subgroups and universal constructions"
+  },
+  {
+   "kind": "item",
+   "title": "Finite maps and morphisms",
+   "text": "In profinite groups, categorical monomorphisms\nare injective and epimorphisms are surjective. For groups in the *same\nuniverse*, continuous Hom is the limit over finite target quotients of the\ncolimits over finite source quotients. Separately, injective and surjective\nmaps of profinite **spaces** have finite-map limit presentations, not a\nfinite-presentation theorem for groups. See [`EpiMono`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/EpiMono.lean),\n[`FiniteQuotientHom`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/FiniteQuotientHom.lean),\n[`FinitePresentation`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/FinitePresentation.lean).",
+   "link": {
+    "text": "EpiMono",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/EpiMono.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "EpiMono",
+    "file": "ProfiniteGroups/EpiMono.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Closed-subgroup conjugacy",
+   "text": "Two closed subgroups of a profinite group\nare conjugate precisely when their images are conjugate in every finite\nopen-normal quotient. The quotient conjugators need not form a compatible\nfamily; no countability or openness assumption is used. See\n[`FiniteQuotientConjugacy`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/FiniteQuotientConjugacy.lean)\nand its [guide](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/docs/finite-quotient-conjugacy.md).",
+   "link": {
+    "text": "FiniteQuotientConjugacy",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/FiniteQuotientConjugacy.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FiniteQuotientConjugacy",
+    "file": "ProfiniteGroups/FiniteQuotientConjugacy.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Continuous sections",
+   "text": "For closed `K ≤ H` in a profinite group, the\nprojection `G/K → G/H` has a continuous right inverse; a supporting result\nsupplies sections of surjective local homeomorphisms over compact Hausdorff\ntotally disconnected spaces. For any closed `H`, a chosen bundled continuous\nmap `G/H → G` selects a representative of each coset. The choice is neither\nasserted to be homomorphic nor normalized at the identity; normality is not\nneeded. See [`ContinuousSection`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ContinuousSection.lean) and\n[`ContinuousCosetRepresentative`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ContinuousCosetRepresentative.lean).",
+   "link": {
+    "text": "ContinuousSection",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ContinuousSection.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ContinuousSection",
+    "file": "ProfiniteGroups/ContinuousSection.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "heading",
+   "title": "Primewise models, product ideals and procyclic classification"
+  },
+  {
+   "kind": "item",
+   "title": "Procyclic classification and realization",
+   "text": "Given proofs of procyclicity,\ngroups in independent universes are continuously equivalent exactly when\ntheir generator-independent primewise exponents agree. Every exponent\nfamily is realized by residue factors `ZMod (p^n)` and p-adic factors: zero\nexponent is trivial, infinity retains the full p-adic factor. With a\nsupplied generator, torsion-freeness means all exponents are zero or\ninfinity. For a torsion-free procyclic profinite group, its all-primes\nquotient model, and hence the group itself, is continuously equivalent to\nthe product of p-adic integer factors over the infinite-exponent primes,\nwith zero-exponent coordinates omitted. The support can be empty or infinite\nand is generator-independent; the group equivalence uses a chosen\ntopological generator. The invariant is noncomputable and *not* assigned to\narbitrary nonprocyclic groups; generator independence equates kernel ideals\nand exponents, not the associated maps. See\n[`ProcyclicInvariant`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicInvariant.lean),\n[`ProcyclicRealization`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicRealization.lean),\n[`ProcyclicTorsionFree`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicTorsionFree.lean) and\n[`ProcyclicTorsionFreeProduct`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicTorsionFreeProduct.lean).",
+   "link": {
+    "text": "ProcyclicInvariant",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicInvariant.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ProcyclicInvariant",
+    "file": "ProfiniteGroups/ProcyclicInvariant.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "heading",
+   "title": "Homomorphisms, powers and coefficients"
+  },
+  {
+   "kind": "item",
+   "title": "Power images and open subgroups",
+   "text": "For a procyclic group, positive `n`th\npowers form an open subgroup with cyclic finite quotient and index\n*dividing* `n`, not necessarily equal to `n`. Every open subgroup equals\nthe power image at its actual index. The zero-power image is trivial and\nneed not be open; no arbitrary-procyclic closed-subgroup classification is\nasserted. See [`ProcyclicPower`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicPower.lean).",
+   "link": {
+    "text": "ProcyclicPower",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicPower.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ProcyclicPower",
+    "file": "ProfiniteGroups/ProcyclicPower.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Closed subgroups of procyclic groups",
+   "text": "Every closed subgroup of an\narbitrary procyclic profinite group is procyclic in its inherited group and\ntopology, without an openness or finite-index assumption. It has a generator\ninside the subgroup whose integral powers are dense there. The result also\naccepts an ordinary subgroup with a closedness proof. It does not classify\narbitrary closed subgroups by exponents. See\n[`ProcyclicClosedSubgroup`](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicClosedSubgroup.lean).",
+   "link": {
+    "text": "ProcyclicClosedSubgroup",
+    "url": "https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/ProfiniteGroups/ProcyclicClosedSubgroup.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ProcyclicClosedSubgroup",
+    "file": "ProfiniteGroups/ProcyclicClosedSubgroup.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "[All results and their hypotheses](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/docs/Results.md) ·\n[Mathematical details, hypotheses and API limitations](https://github.com/FormalFrontier/profinite-groups/blob/bf258c54ddbe2b2e96f59e1965e55688279b872f/docs/Mathematics.md)."
+  }
+ ],
+ "main_results": []
+}

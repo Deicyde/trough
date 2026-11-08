@@ -1,0 +1,1981 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-continuous-group-cohomology",
+ "repo": "FormalFrontier/continuous-group-cohomology",
+ "rev": "4434e3f215302e5c9ac4214c27646d0d21884169",
+ "date": "2026-11-04T13:56:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Continuous group cohomology",
+  "description": "Native continuous group cohomology in low degrees; transfer and compact-group degree-one torsion; finite-level Tate deflation, compact exceptional Tate groups and diagrams, compact finite-bar homology and norm-limit sequences. For compact topological groups with discrete jointly continuous coefficients over a topologized ring, every continuous cohomology class lifts from a finite open-normal quotient with invariant coefficients. In positive degrees a class-dependent quotient order annihilates the class. The native open-normal inflation cocone is a filtered colimit in all degrees, including zero, with the actual cohomology topology and arbitrary topological-module targets. Its equality refinements depend on the classes; no fixed-stage injection, uniform bound or closed-boundary-range hypothesis is claimed. For arbitrary finite index types, finite functions are naturally equivalent to coefficient-left tensors over a commutative semiring; for finite groups, the twisted action agrees with the diagonal left-regular tensor action. This algebraic result gives no continuous or topological-representation equivalence. At each fixed acting group, the degree-zero coefficient functor is naturally isomorphic to invariants over a ring with its supplied topology.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "other",
+  "notes": "Scoped mathematical and API contributions received independent review; formal journal review and complete source coverage are not claimed."
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex CLI",
+    "tool_setup": "Codex CLI assisted Lean proof and documentation development using Lake, Lean and mathlib."
+   }
+  ],
+  "notes": "Proof development and documentation were AI-assisted using Codex CLI."
+ },
+ "scope": "Low-degree continuous cohomology, finite-index transfer, compact-group degree-one torsion, classwise finite-quotient lifts and positive-degree classwise torsion, and the all-degree native open-normal finite-stage colimit (including degree zero and arbitrary topological-module targets). The colimit assumes a compact topological group and discrete jointly continuous coefficients over a ring with a topology; generic algebraic boundaries and transition diagrams need fewer assumptions. Also includes finite-level Tate deflation, compact finite-bar homology, compact exceptional Tate stages and diagrams, coefficient naturality, norm rows, compact full-system limits and restricted universal-norm comparisons under the hypotheses of their respective declarations. The algebraic connecting sequence has a two-point integer coinduction/sign example with a nonzero degree-one connector and separate split degree-zero boundaries. Vanishing of middle-coefficient cohomology in adjacent degrees gives a connecting isomorphism on the underlying modules in every natural degree, including zero, with the existing connector as forward map; vanishing in either degree alone gives the corresponding mono or epi conclusion. No continuity or topological isomorphism of this general connector is asserted. There is no fixed-stage positive-degree injectivity, uniform refinement or bound, closed boundary range requirement for the native colimit, arbitrary-system inverse-limit exactness, general completed continuous Tate theory or source-coverage assertion. The initial invariant-coefficient sequence has a natural degree-zero cohomology comparison and is exact at its five internal underlying-module positions, with no surjectivity claim at the final degree-one term or continuity claim for the boundary. Generic invariant injection and left exactness live in TopRep with deprecated ContinuousCohomology aliases. The examples include a nonzero displayed inclusion, a nonsplit boundary and independent coefficient-level obstruction witnesses. For an arbitrary topological domain, continuous-map postcomposition preserves exactness of coefficient maps when the first map induces the source topology or when the middle space is discrete, and surjectivity when the target space is discrete. An exact coefficient row with a topological embedding as its first map induces an exact row of homogeneous invariant cochains in every natural degree, for any topological group, without coefficient discreteness or extra joint-action continuity. The discrete-middle injective case remains a corollary. This is underlying algebraic exactness, not topological strictness or exactness on cohomology; cochain surjectivity retains its locally compact group, discrete target and jointly continuous source hypotheses. Over any topological group, coinduction takes an injective, exact and surjective coefficient row with discrete middle and target to injective, exact and surjective underlying maps, not categorical TopRep exactness. See README.md and individual guides for precise boundaries.",
+ "sources": [
+  {
+   "title": "Native-core continuous group cohomology (original Formal Frontier development)",
+   "type": "original-development",
+   "relationship": "other"
+  },
+  {
+   "title": "Cohomology of Number Fields (corrected second edition)",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Chapter I, §3, Proposition 1.3.6(ii); Chapter I, §1, Exercise 4"
+  }
+ ],
+ "depends": [
+  {
+   "name": "finite-group-tate-cohomology",
+   "rev": "d17f93bbc5b934f8b9f3cf077769a706a901608d"
+  },
+  {
+   "name": "profinite-groups",
+   "rev": "5f11ef67fb23396b63a644a3713391e2b9300546"
+  }
+ ],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "prose",
+   "text": "These results are proved here for representations over a ring\n`k` equipped with a topology. The group, discreteness and action-continuity\nhypotheses are specified separately below; foundations come from Mathlib."
+  },
+  {
+   "kind": "item",
+   "title": "Finite-quotient descent, torsion and the topological colimit",
+   "text": "See [`CompactDiscreteTorsion`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CompactDiscreteTorsion.lean)\nand [`FiniteStageColimit`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/FiniteStageColimit.lean) for these APIs.\n\nFor a compact topological group `G` and discrete `X : TopRep k G` over a\nring with a supplied topology, the homogeneous cochain complex is the colimit\nof its open-normal finite-quotient cochain complexes, with coefficients in\n`X^U` at a stage `U`. This is a colimit in complexes of topological modules\nand separately in every degree. Joint continuity of the action is not needed.\nThe [quotient-stage diagram](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/OpenNormalDiagram.lean)\nand inflation cocone also have coefficient naturality without compactness or\ndiscreteness assumptions. The [integer sign example](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/examples/FiniteStageColimitNative.lean)\nuses a nonconstant cochain and checks the descendant equation, uniqueness of\nits lift at a chosen stage, and compatibility with every refinement.\n\nSeparately, for a compact topological group `G` and discrete\n`X : TopRep k G` with `[Ring k] [TopologicalSpace k]`, every continuous\ncohomology class lifts from an open-normal finite quotient with its\nquotient-invariant coefficients. In positive degrees a class-dependent quotient\norder annihilates the class; this gives additive torsion, not a uniform bound.\nJoint continuity of the action is not needed for these class-lift and torsion\nstatements, nor for the cohomology colimit. The open-normal cohomology inflation\ncocone is a filtered colimit in topological modules in **every degree, including\nzero**, with arbitrary topological-module targets.\nIt uses the cohomology topology, algebraic boundaries and class-dependent\neventual refinements, not fixed-stage positive-degree injectivity, a uniform\nrefinement or a closed-boundary-range assumption. The concrete sign-orbit\ncochain construction still uses joint continuity.",
+   "link": {
+    "text": "CompactDiscreteTorsion",
+    "url": "https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CompactDiscreteTorsion.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "CompactDiscreteTorsion",
+    "file": "ContinuousGroupCohomology/CompactDiscreteTorsion.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Additivity in coefficient maps in every degree",
+   "text": "For `[Ring k] [TopologicalSpace k]`, topological groups `H` and `G`, and a\ncontinuous homomorphism `φ : H →ₜ* G`, the\n[coefficient-map API](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/ContinuousCohomologyFunctor.lean)\nproves additivity and preservation of zero in the coefficient morphism in\n**every natural degree, including zero**. For a fixed acting group,\n`ContinuousCohomology.coefficientFunctor n` is an additive functor on topological\nrepresentations, using the existing continuous-cohomology objects and maps.\nIn degree zero, `ContinuousCohomology.zeroNatIso` naturally identifies this\nfixed-group functor with invariants; its forward and inverse components are\nthe canonical `ContinuousCohomology.zeroIso` maps. The same ring with its supplied\ntopology suffices: neither commutativity nor continuity of the ring operations,\ncompactness of the groups nor discreteness of the coefficients is required.\nThe [integer model](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/CoefficientAdditivity.lean) uses the one-element\ngroup `PUnit` acting trivially on `ℤ`: the sum of two identity coefficient\nmorphisms doubles every class in every degree. Its degree-zero calculation uses\n`zeroNatIso` naturality to send the class with invariant value `1` to a nonzero\nclass with invariant value `2`.",
+   "link": {
+    "text": "integer model",
+    "url": "https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/CoefficientAdditivity.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Positive coinduced cohomology after closed restriction",
+   "text": "For compact topological groups and discrete coefficients,\n[diagonal insertion](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CoinducedAcyclic.lean)\ngives a map on the recursively iterated coinduced homogeneous cochains with an\nexplicit evaluation law. This insertion contracts the cochain complex in every\npositive degree, so continuous cohomology with coinduced discrete coefficients\nvanishes there. Degree-zero vanishing is false even for the two-element group\nacting trivially on nonzero integers (see the\n[two-element-group client](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/CoinducedAcyclic.lean)).\nThe [coefficient functor](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/ContinuousCohomologyFunctor.lean)\nfor a fixed acting group and degree uses Mathlib's continuous-cohomology maps;\nits object and morphism laws transport positive vanishing across coefficient\nisomorphisms in the same group. For compact Hausdorff totally disconnected\n`G`, the [closed-subgroup positive-vanishing theorem](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/ProfiniteCoinducedAcyclic.lean)\nthen applies to every closed `H`, and also to restrictions of representations\nisomorphic to `TopRep.coind₁ B`. The restricted representation is `H`-coinduced\nfrom all of `C(G ⧸ H, B)` with its generally nontrivial pointwise `H`-action.\nOnly discrete `B` is needed; neither openness or normality of `H` nor joint\ncontinuity of the coefficient action is required. The finite signed\n[`S₃` clients](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/CoinducedRestriction.lean) instantiate positive\nvanishing at a nonnormal subgroup, not at a closed nonopen subgroup. These\nare strictly positive-degree conclusions, corresponding to the closed-subgroup\nclause of Neukirch–Schmidt–Wingberg, I §3, Proposition 1.3.7; they do not\nassert degree-zero vanishing or all-integer Tate acyclicity.",
+   "link": {
+    "text": "S₃` clients",
+    "url": "https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/CoinducedRestriction.lean",
+    "code": true
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Normal-quotient coinduction",
+   "text": "For `[Ring k] [TopologicalSpace k]`, a compact topological group `G`, any\nnormal subgroup `N` and a discrete, jointly continuous `B : TopRep k G`, the\n[normal-quotient coinduction equivalence](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CoinducedInvariants.lean)\nidentifies `TopRep.quotientInvariants N (TopRep.coind₁ B)` with\n`TopRep.coind₁ (TopRep.of (ContRepresentation.trivial k (G ⧸ N) B))`\nas representations of `G ⧸ N`. This is universe-polymorphic and requires no\nclosedness or openness of `N`, Hausdorff condition or choice of section. Its\nforward and inverse maps satisfy `(P f)(mk N t) = B.ρ t⁻¹ (f t)` and\n`(J F)(t) = B.ρ t (F (mk N t))`. The right-hand coefficient is the **whole**\n`B`, not `B^N`, and has trivial quotient action. The\n[sign-product and full-group clients](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/CoinducedInvariants.lean)\nexhibit `B^N = 0` with nonzero `B`, a quotient function moved by the residual\nquotient action, and an invariant function whose value at the identity is\nmoved by `N`.",
+   "link": {
+    "text": "sign-product and full-group clients",
+    "url": "https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/CoinducedInvariants.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Degreewise exactness under coefficient embeddings",
+   "text": "For any topological group `G` and `A B C : TopRep.{max v w} k G`,\n[`cochainsMap_exact_of_isEmbedding`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CochainExactness.lean)\nproves that an exact underlying coefficient row `A → B → C` whose first map is a\ntopological embedding induces an exact row of homogeneous invariant cochains in\nevery natural degree. No local compactness, coefficient discreteness or extra\njoint-action continuity is required. The original `cochainsMap_exact` is the\ndiscrete-middle, injective-first-map corollary. This is underlying algebraic\nexactness, not topological strictness or an exactness assertion on cohomology.\nThe separate cochain-surjectivity theorem still assumes locally compact `G`,\na discrete target and jointly continuous source coefficients.",
+   "link": {
+    "text": "cochainsMap_exact_of_isEmbedding",
+    "url": "https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CochainExactness.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "cochainsMap_exact_of_isEmbedding",
+    "file": "ContinuousGroupCohomology/CochainExactness.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Algebraic connecting maps, naturality and initial invariants",
+   "text": "The [algebraic connecting-map guide](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/docs/CohomologyExactSequence.md) describes\na connecting `k`-linear map in each natural degree and proves the three\nrecurring exactness assertions for the underlying modules of continuous cohomology.\nThey use locally compact `G`, discrete `B` and `C`, jointly continuous action\non `B`, injective `i`, exact `A → B → C`, and surjective `p`. The connecting\nconstruction uses the cochain short exact sequence and Mathlib's homology\nboundary; its representative formula and comparison with the\ntopologically split degree-zero map specify its sign. The algebraic assertions\nalso show that vanishing of the underlying `Hⁿ(G,B)` makes the connector mono,\nvanishing of `Hⁿ⁺¹(G,B)` makes it epi, and both together give an isomorphism\nwhose forward arrow is the existing connector, for every natural `n`, including\nzero. They do not establish continuity of this new map. For the integer sign action on\n`ℤ --×2→ ℤ → ZMod 2`, the quotient invariant `1` has a nonzero connecting\nclass; its lack of an invariant integer lift is independently verified.\nThe [coinduced two-point row](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/ConnectingIsomorphism.lean)\nembeds trivial integers as constant functions and projects to signed integers\nby subtracting the values at the two units. Its middle cohomology vanishes in\ndegrees one and two; the existing exactness statements show that its degree-one\nconnector has nonzero image and is surjective, without using a general\nconnecting-isomorphism result in these independent witness proofs. Separate\nprivate clients apply the general mono, epi and isomorphism APIs to this row.\nTwo split rows give complementary degree-zero boundaries: for\n`Multiplicative (ZMod 2)`, coinduced `B` has `H¹(G,B) = 0` but its degree-zero\nconnector is not mono; for the distinct group `ℤˣ`, the middle signed\ncoefficient `B` has `H⁰(G,B) = 0` but its degree-zero connector is not epi.\nIn that second row, the final coefficient `C` is the zero representation on `PUnit`.\n\nUnder the same short-exact-row and topological hypotheses, the\n[initial-invariants module](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/InitialInvariantsExactSequence.lean)\nproves exactness of the underlying-module segment\n`0 → Aᴳ → Bᴳ → Cᴳ → H¹(G,A) → H¹(G,B) → H¹(G,C)` at its five internal positions.\nIt uses Mathlib's invariant functor and natural degree-zero isomorphism and the\nexisting algebraic connector. The coefficient-level lemmas\n`TopRep.mapInvariants_injective` and `TopRep.exact_mapInvariants` have weaker\nhypotheses. Their earlier `ContinuousCohomology` names remain deprecated aliases. The\n[example](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/InitialInvariantsExactSequence.lean) checks a nonzero\ndisplayed invariant inclusion and a nonsplit sign-action boundary. Its\ncoefficient-level obstruction and existing nonzero connector are independent\nof the segment theorem. Neither surjectivity at `H¹(G,C)` nor continuity\nof the connector is claimed.\n\nFor a ring with a supplied topology and any monoid,\n[`TopRep.mono_iff_injective`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/TopRepMonomorphisms.lean)\ncharacterizes monomorphisms by injectivity, with independent ring, monoid and\ncarrier universes. The action operators are individually continuous; no jointly\ncontinuous action or topology on the monoid is assumed. For topological groups,\n`ContinuousCohomology.map_zero_mono` preserves monicity under any continuous\ngroup homomorphism, and the existing `coefficientFunctor 0` preserves\nmonomorphisms. No group-map surjectivity or all-degree preservation is asserted.\nThe [integer-doubling example](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomologyExamples/CoefficientMonicity.lean)\nuses a nonsurjective map of the two-element group and nonzero degree-zero classes.\n\nThe [coefficient-naturality theorem](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/ConnectingNaturality.lean)\nproves that, for two short exact coefficient sequences over the\nsame locally compact `G`, with the preceding discreteness and joint-continuity\nhypotheses in each row, commuting coefficient maps `(α, β, γ)`\ngive `δ ≫ Hⁿ⁺¹(α) = Hⁿ(γ) ≫ δ′` for every natural degree. This is an equality\nof underlying-module maps, not continuity of `δ`, change-of-group naturality,\nor a topological delta-functor. The\n[nonidentity sign-sequence client](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/ConnectingNaturality.lean)\nindependently verifies the coefficient squares and a nonzero boundary, then\napplies the naturality theorem.\n\nSee [Results and use](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/docs/Results.md) for the other constructions, full\nmodule boundaries, conventions and client map.",
+   "link": {
+    "text": "coinduced two-point row",
+    "url": "https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/CGCExamples/ConnectingIsomorphism.lean",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": [
+  {
+   "name": "ContinuousCohomology.openNormalInflationCoconeIsColimit_type",
+   "file": "ContinuousGroupCohomology/FiniteStageColimit.lean",
+   "found": null
+  },
+  {
+   "name": "ContinuousCohomology.openNormalInflationCoconeIsColimit",
+   "file": "ContinuousGroupCohomology/FiniteStageColimit.lean",
+   "found": {
+    "line": 199,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.discreteTopology_continuousCohomology",
+   "file": "ContinuousGroupCohomology/DiscreteCohomology.lean",
+   "found": {
+    "line": 58,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_quotient_cochain_lift_below",
+   "file": "ContinuousGroupCohomology/SeededCochains.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopModuleCat.shortComplex_homologyπ_eq_zero_iff",
+   "file": "ContinuousGroupCohomology/Algebra/Category/ModuleCat/Topology/HomologyBoundary.lean",
+   "found": {
+    "line": 31,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionHom",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 34,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionHom_mk",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionHom_surjective",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionHom_comp_quotient",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 52,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionHom_id",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 58,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionHom_comp",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 64,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionIncl",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 80,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionIncl_val",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 98,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionIncl_injective",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 102,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransitionIncl_inflate",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransition_cochainsMap_id",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransition_map_id",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 155,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransition_cochainsMap_comp",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 165,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransition_map_comp",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 185,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransition_cochainsMap_inflate",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 204,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.quotientTransition_map_inflate",
+   "file": "ContinuousGroupCohomology/QuotientTransitions.lean",
+   "found": {
+    "line": 217,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.class_eq_zero_of_inflation_zero_degree_zero",
+   "file": "ContinuousGroupCohomology/FiniteStageBoundary.lean",
+   "found": {
+    "line": 109,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_refinement_class_eq_zero",
+   "file": "ContinuousGroupCohomology/FiniteStageBoundary.lean",
+   "found": {
+    "line": 144,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_refinement_class_eq_of_inflation_eq",
+   "file": "ContinuousGroupCohomology/FiniteStageBoundary.lean",
+   "found": {
+    "line": 249,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.isFiltered_orderDual_openNormalSubgroup",
+   "file": "ContinuousGroupCohomology/OpenNormalDiagram.lean",
+   "found": {
+    "line": 45,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.openNormalCohomologyDiagram",
+   "file": "ContinuousGroupCohomology/OpenNormalDiagram.lean",
+   "found": {
+    "line": 312,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.openNormalInflationCocone",
+   "file": "ContinuousGroupCohomology/OpenNormalDiagram.lean",
+   "found": {
+    "line": 325,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.openNormalCohomologyDiagram_obj",
+   "file": "ContinuousGroupCohomology/OpenNormalDiagram.lean",
+   "found": {
+    "line": 335,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.openNormalCohomologyDiagram_map",
+   "file": "ContinuousGroupCohomology/OpenNormalDiagram.lean",
+   "found": {
+    "line": 339,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.openNormalInflationCocone_ι_app",
+   "file": "ContinuousGroupCohomology/OpenNormalDiagram.lean",
+   "found": {
+    "line": 345,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.isAddTorsion_degreeOne",
+   "file": "ContinuousGroupCohomology/Torsion.lean",
+   "found": {
+    "line": 94,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.finiteNegativeOneDeflation_comp",
+   "file": "ContinuousGroupCohomology/FiniteDeflationTransitivity.lean",
+   "found": {
+    "line": 474,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CompHausAddCommGrp.FiniteBar.groupHomologyAddEquivPositive_naturality",
+   "file": "ContinuousGroupCohomology/CompactBarFunctoriality.lean",
+   "found": {
+    "line": 162,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.tateCohomologyNegativeAddEquivFiniteTate",
+   "file": "ContinuousGroupCohomology/CompactNegativeTate.lean",
+   "found": {
+    "line": 439,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateNegOne",
+   "file": "ContinuousGroupCohomology/FiniteTateTopology.lean",
+   "found": {
+    "line": 46,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateZero",
+   "file": "ContinuousGroupCohomology/FiniteTateTopology.lean",
+   "found": {
+    "line": 53,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.tateCohomologyNegOneAddEquivFiniteTate",
+   "file": "ContinuousGroupCohomology/FiniteTateTopology.lean",
+   "found": {
+    "line": 278,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.tateCohomologyZeroAddEquivFiniteTate",
+   "file": "ContinuousGroupCohomology/FiniteTateTopology.lean",
+   "found": {
+    "line": 310,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteCoinvariantDeflation",
+   "file": "ContinuousGroupCohomology/FiniteCoinvariantDeflation.lean",
+   "found": {
+    "line": 44,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.normFromFiniteCoinvariants_finiteCoinvariantDeflation",
+   "file": "ContinuousGroupCohomology/FiniteCoinvariantDeflation.lean",
+   "found": {
+    "line": 147,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateNegOneDeflation",
+   "file": "ContinuousGroupCohomology/ExceptionalTateDeflationTopology.lean",
+   "found": {
+    "line": 40,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateZeroDeflation",
+   "file": "ContinuousGroupCohomology/ExceptionalTateDeflationTopology.lean",
+   "found": {
+    "line": 53,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.tateCohomologyNegOneAddEquivFiniteTate_finiteNegativeOneDeflation",
+   "file": "ContinuousGroupCohomology/ExceptionalTateDeflationTopology.lean",
+   "found": {
+    "line": 202,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.tateCohomologyZeroAddEquivFiniteTate_finiteZeroDeflation",
+   "file": "ContinuousGroupCohomology/ExceptionalTateDeflationTopology.lean",
+   "found": {
+    "line": 247,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteNegativeOneDeflationDiagram",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateDiagrams.lean",
+   "found": {
+    "line": 43,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteZeroDeflationDiagram",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateDiagrams.lean",
+   "found": {
+    "line": 64,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteNegativeOneDeflationAdditiveDiagramIso",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateDiagrams.lean",
+   "found": {
+    "line": 85,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteZeroDeflationAdditiveDiagramIso",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateDiagrams.lean",
+   "found": {
+    "line": 104,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactNegativeOneTateLimit",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 41,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactNegativeOneTateLimitπ",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 45,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactNegativeOneTateLimitπ_naturality",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 57,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactNegativeOneTateLimitπ_range_eq_eventualRange",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 65,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactZeroTateLimit",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 74,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactZeroTateLimitπ",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 78,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactZeroTateLimitπ_naturality",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 90,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactZeroTateLimitπ_range_eq_eventualRange",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimits.lean",
+   "found": {
+    "line": 98,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.normFromFiniteCoinvariants_naturality_hom",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateCoefficientMaps.lean",
+   "found": {
+    "line": 182,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.finiteTateNegOneMap_deflation",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateCoefficientMaps.lean",
+   "found": {
+    "line": 348,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.finiteTateZeroMap_deflation",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateCoefficientMaps.lean",
+   "found": {
+    "line": 366,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactNegativeOneTateLimitFunctor",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimitFunctoriality.lean",
+   "found": {
+    "line": 90,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactZeroTateLimitFunctor",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimitFunctoriality.lean",
+   "found": {
+    "line": 95,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactNegativeOneTateLimitFunctor_map_namedπ",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimitFunctoriality.lean",
+   "found": {
+    "line": 170,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactZeroTateLimitFunctor_map_namedπ",
+   "file": "ContinuousGroupCohomology/CompactExceptionalTateLimitFunctoriality.lean",
+   "found": {
+    "line": 182,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.universalNormFunctor",
+   "file": "ContinuousGroupCohomology/RestrictedLevelCompactFunctoriality.lean",
+   "found": {
+    "line": 165,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.groupMap_relativeNorm",
+   "file": "ContinuousGroupCohomology/RestrictedLevelCompactFunctoriality.lean",
+   "found": {
+    "line": 293,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.restrictedNormDiagramFunctor",
+   "file": "ContinuousGroupCohomology/RestrictedLevelCompactFunctoriality.lean",
+   "found": {
+    "line": 367,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteCoinvariantsDiagram",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 40,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsDiagram",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 61,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteTateNegOneInclusion",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 67,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteTateNorm",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 80,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteTateZeroProjection",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 93,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteCoinvariantsDiagram_obj",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 106,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsDiagram_obj",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 111,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteTateNegOneInclusion_app",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 116,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteTateNorm_app",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 121,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteTateZeroProjection_app",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 126,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateNorm_exact_left",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 131,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateNorm_exact_right",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 143,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateNegOneι_injective",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 157,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateZeroπ_surjective",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 163,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.finiteTateZeroDeflation_surjective",
+   "file": "ContinuousGroupCohomology/CompactFiniteTateNormSequence.lean",
+   "found": {
+    "line": 171,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.fullOpenNormalSubgroup",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 40,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.fullOpenNormalSubgroup_toOpenSubgroup",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 43,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.le_fullOpenNormalSubgroup",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.relativeNorm_fullOpenNormalSubgroup",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 52,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactFiniteCoinvariantsLimit",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 66,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsCone",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 70,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsCone_isLimit",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": null
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsLimitIso",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 83,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsLimitIso_hom",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 90,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitInclusion",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 99,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitNorm",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 104,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitProjection",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 110,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitInclusion_π",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 115,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitNorm_π",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 122,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitProjection_π",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 134,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimit_exact_left",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 148,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimit_exact_right",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 174,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitInclusion_injective",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 218,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitProjection_surjective",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 238,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactZeroTateLimitπ_surjective",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 254,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactUniversalNormSet",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 262,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.mem_finiteNorm_range_iff_relativeNorm_range",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 268,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.mem_compactUniversalNormSet_iff",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 284,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitProjection_eq_zero_iff",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 309,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitNorm_range_eq_universalNormSet",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 340,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitProjection_eq_zero_iff_universalNorm",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 347,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateLimitNorm_range_eq_universalNormSubmodule",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 355,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactUniversalNormClosedSubgroup",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 365,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactUniversalNormClosedSubgroup_eq_ker",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 376,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateUniversalNormQuotientEquiv",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 386,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateUniversalNormQuotientEquiv_mk",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 397,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateUniversalNormQuotientEquiv_continuous",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 408,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateUniversalNormQuotientIso",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 423,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompact.compactTateUniversalNormQuotientIso_mk",
+   "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
+   "found": {
+    "line": 446,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactFiniteCoinvariantsDiagramFunctor",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 44,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactFiniteCoinvariantsDiagramFunctor_obj",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 64,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactFiniteCoinvariantsDiagramFunctor_map_app",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 69,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactFiniteCoinvariantsLimitFunctor",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 76,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactFiniteCoinvariantsLimitFunctor_obj",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactFiniteCoinvariantsLimitFunctor_map_π",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 86,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTotalInvariantsFunctor",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 96,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateLimitInclusion_naturality",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateLimitNorm_naturality",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 132,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateLimitProjection_naturality",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 168,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateLimitInclusionNat",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 216,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateLimitNormNat",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 223,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateLimitProjectionNat",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 230,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.groupMap_mem_compactUniversalNormClosedSubgroup",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 238,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactUniversalNormQuotientMap",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 254,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactUniversalNormQuotientMap_mk",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 285,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactUniversalNormQuotientMap_id",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 292,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactUniversalNormQuotientMap_comp",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 304,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactUniversalNormQuotientFunctor",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 320,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateUniversalNormQuotientIso_naturality",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 331,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateUniversalNormQuotientNatIso",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 353,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateUniversalNormQuotientNatIso_hom_app",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 360,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.LevelCompactRep.compactTateUniversalNormQuotientNatIso_hom_app_mk",
+   "file": "ContinuousGroupCohomology/CompactTateNormNaturality.lean",
+   "found": {
+    "line": 366,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.fullNormLimit_projection_mem_iff",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 100,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.universalNorm_relativeNorm_surjective",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 121,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.fullInclusion",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 173,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.fullInclusion_apply",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 181,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.fullInclusion_limitMap_π",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 194,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.fullInclusion_limitMap_bijective",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 263,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.compactGroup_isIso_of_bijective",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 326,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.restrictedNormLimitIso",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 358,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.restrictedNormLimitIso_hom_π",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 367,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.restrictedNormLimitIso_inv_π",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 376,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.fullInclusion_naturality",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 395,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.restrictedNormLimitIso_naturality",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 407,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousGroupCohomology.RestrictedLevelCompactRep.universalNorm_limitIso_naturality",
+   "file": "ContinuousGroupCohomology/CompactUniversalNormLimits.lean",
+   "found": {
+    "line": 423,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.finiteSumCoind",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 33,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.finiteSumCoind_apply",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 48,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.coind₁ι_comp_finiteSumCoind",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.coind₁Map_comp_finiteSumCoind",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 65,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.finiteSumCoind_d_add_d_finiteSumCoind",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.finiteSumCochain",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 86,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.finiteSumCochain_comp_d_add_d_comp_finiteSumCochain",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 91,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopModuleCat.shortComplex_homologyπ_surjective",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 111,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.π_surjective",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 148,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.finiteGroup_card_nsmul_π",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 155,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.fintype_card_nsmul",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 197,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.finiteGroup_card_nsmul",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 214,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.finiteGroup_isAddTorsion",
+   "file": "ContinuousGroupCohomology/FiniteAveraging.lean",
+   "found": {
+    "line": 221,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariants_stable",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 37,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariantsAction",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 49,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariantsActionQuot",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 61,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariants",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 72,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariants_ρ_mk",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 76,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariantsIncl",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 83,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariantsMap",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 95,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariantsFunctor",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 109,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariantsFunctor_map_val",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 124,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.quotientInvariantsIncl_naturality",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 131,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.jointlyContinuous_quotientInvariants",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.jointlyContinuous_quotientInvariants_of_isOpen",
+   "file": "ContinuousGroupCohomology/QuotientInvariants.lean",
+   "found": {
+    "line": 169,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.discreteTopology_of_compactSpace",
+   "file": "ContinuousGroupCohomology/Topology/ContinuousMap/CompactDiscrete.lean",
+   "found": {
+    "line": 27,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.exists_openNormalSubgroup_factor",
+   "file": "ContinuousGroupCohomology/Topology/Algebra/CompactGroup/DiscreteFactor.lean",
+   "found": {
+    "line": 30,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.resolutionMap_injective",
+   "file": "ContinuousGroupCohomology/CochainInjectivity.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.cochainsMap_injective",
+   "file": "ContinuousGroupCohomology/CochainInjectivity.lean",
+   "found": {
+    "line": 55,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.cocyclesMap_injective",
+   "file": "ContinuousGroupCohomology/CochainInjectivity.lean",
+   "found": {
+    "line": 124,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.cochainsMap_d_eq_zero_iff",
+   "file": "ContinuousGroupCohomology/CochainInjectivity.lean",
+   "found": {
+    "line": 136,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.openNormalQuotientHom",
+   "file": "ContinuousGroupCohomology/ResolutionImage.lean",
+   "found": {
+    "line": 36,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.StageDescends",
+   "file": "ContinuousGroupCohomology/ResolutionImage.lean",
+   "found": {
+    "line": 42,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.stageDescends_zero",
+   "file": "ContinuousGroupCohomology/ResolutionImage.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.stageDescends_succ",
+   "file": "ContinuousGroupCohomology/ResolutionImage.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.stageDescends_antitone",
+   "file": "ContinuousGroupCohomology/ResolutionImage.lean",
+   "found": {
+    "line": 60,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.stageDescends_iff_exists_lift",
+   "file": "ContinuousGroupCohomology/ResolutionImage.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.discreteTopology_resolutionX",
+   "file": "ContinuousGroupCohomology/FiniteStageResolution.lean",
+   "found": {
+    "line": 37,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_common_stage_refinement",
+   "file": "ContinuousGroupCohomology/FiniteStageResolution.lean",
+   "found": {
+    "line": 69,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_openNormal_stage_descends",
+   "file": "ContinuousGroupCohomology/FiniteStageResolution.lean",
+   "found": {
+    "line": 181,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_openNormal_resolution_lift",
+   "file": "ContinuousGroupCohomology/FiniteStageResolution.lean",
+   "found": {
+    "line": 209,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_openNormal_quotient_cochain_lift",
+   "file": "ContinuousGroupCohomology/FiniteStageCochains.lean",
+   "found": {
+    "line": 36,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_openNormal_quotient_closed_cochain_lift",
+   "file": "ContinuousGroupCohomology/FiniteStageCochains.lean",
+   "found": {
+    "line": 75,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_openNormal_quotient_class_lift",
+   "file": "ContinuousGroupCohomology/CompactDiscreteTorsion.lean",
+   "found": {
+    "line": 42,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.exists_openNormal_quotient_card_nsmul_eq_zero",
+   "file": "ContinuousGroupCohomology/CompactDiscreteTorsion.lean",
+   "found": {
+    "line": 102,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.compactDiscrete_isAddTorsion",
+   "file": "ContinuousGroupCohomology/CompactDiscreteTorsion.lean",
+   "found": {
+    "line": 117,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousCohomology.cochainsMap_exact_of_isEmbedding",
+   "file": "ContinuousGroupCohomology/CochainExactness.lean",
+   "found": {
+    "line": 160,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.postcomp_exact_of_isInducing",
+   "file": "ContinuousGroupCohomology/Topology/ContinuousMap/Exact.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.postcomp_exact",
+   "file": "ContinuousGroupCohomology/Topology/ContinuousMap/Exact.lean",
+   "found": {
+    "line": 67,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ContinuousMap.postcomp_surjective",
+   "file": "ContinuousGroupCohomology/Topology/ContinuousMap/Exact.lean",
+   "found": {
+    "line": 91,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TopRep.coind₁Functor_shortExact",
+   "file": "ContinuousGroupCohomology/CoinductionExactness.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonoidAlgebra.finiteFunctionTensorLinearEquiv",
+   "file": "ContinuousGroupCohomology/FiniteFunctionTensor.lean",
+   "found": {
+    "line": 50,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonoidAlgebra.finiteFunctionTensorLinearEquiv_naturality",
+   "file": "ContinuousGroupCohomology/FiniteFunctionTensor.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Representation.finiteFunctionTensorLinearEquiv_twisted",
+   "file": "ContinuousGroupCohomology/FiniteFunctionTensor.lean",
+   "found": {
+    "line": 138,
+    "kind": "theorem",
+    "stated": false
+   }
+  }
+ ]
+}
