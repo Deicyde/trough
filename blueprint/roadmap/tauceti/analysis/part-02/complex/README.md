@@ -1,0 +1,43 @@
+# Complex
+
+Results named in Tau Ceti's `TauCeti.Analysis.Complex` modules that no roadmap's status reaches, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+
+## [The Apollonius identity for the… to Jensen's inequality from below](part-01/README.md)
+
+- [The Apollonius identity for the Moebius factor](part-01/the-apollonius-identity-for-the-moebius-factor.md)
+- [The bounded-image form of the small-Jordan-curve theorem](part-01/the-bounded-image-form-of-the-small-jordan-curve.md)
+- [The Calderón–Zygmund inequality for the Cauchy–Riemann operator](part-01/the-calderon-zygmund-inequality-for-the-cauchy-r.md)
+- [Cauchy estimate](part-01/cauchy-estimate.md)
+- [Cauchy-Laurent coefficient formula](part-01/cauchy-laurent-coefficient-formula.md)
+- [The Cauchy–Pompeiu formula for a compactly supported `C¹` map `u : ℂ → F`](part-01/the-cauchy-pompeiu-formula-for-a-compactly-suppo.md)
+- [Complex analytic Weierstrass division theorem](part-01/complex-analytic-weierstrass-division-theorem.md)
+- [Complex analytic Weierstrass preparation theorem](part-01/complex-analytic-weierstrass-preparation-theorem.md)
+- [The component mapping theorem from one boundary sheet](part-01/the-component-mapping-theorem-from-one-boundary.md)
+- [The disc Schwarz--Christoffel theorem for an unbounded polygonal Jordan domain](part-01/the-disc-schwarz-christoffel-theorem-for-an-unbo.md)
+- [The Dolbeault lemma on a disc](part-01/the-dolbeault-lemma-on-a-disc.md)
+- [The explicit Schwarz--Christoffel formula for a strip](part-01/the-explicit-schwarz-christoffel-formula-for-a-s.md)
+- [The Gauss–Bonnet formula](part-01/the-gauss-bonnet-formula.md)
+- [The Herglotz formula on a disc](part-01/the-herglotz-formula-on-a-disc.md)
+- [The Herglotz representation theorem](part-01/the-herglotz-representation-theorem.md)
+- [Identity theorem](part-01/identity-theorem.md)
+- [The identity theorem for Riemann surfaces](part-01/the-identity-theorem-for-riemann-surfaces.md)
+- [Identity theorem on a right half-plane](part-01/identity-theorem-on-a-right-half-plane.md)
+- [The infinitesimal Schwarz--Pick inequality](part-01/the-infinitesimal-schwarz-pick-inequality.md)
+- [Jensen's inequality from below](part-01/jensens-inequality-from-below.md)
+
+## [The joint holomorphic implicit… to Weyl's lemma for `\bar∂`](part-02/README.md)
+
+- [The joint holomorphic implicit function theorem](part-02/the-joint-holomorphic-implicit-function-theorem.md)
+- [Laurent's theorem on an open concentric annulus](part-02/laurents-theorem-on-an-open-concentric-annulus.md)
+- [Liouville's theorem for functions of negative order](part-02/liouvilles-theorem-for-functions-of-negative-ord.md)
+- [Montel's selection theorem](part-02/montels-selection-theorem.md)
+- [Montel's theorem as an equivalence](part-02/montels-theorem-as-an-equivalence.md)
+- [The Morse index bound `λ ≤ n`](part-02/the-morse-index-bound-n.md)
+- [The open mapping theorem](part-02/the-open-mapping-theorem.md)
+- [Phragmén–Lindelöf principle on the upper half-plane](part-02/phragmen-lindelof-principle-on-the-upper-half-pl.md)
+- [The Poisson lower bound of a Nevanlinna representation](part-02/the-poisson-lower-bound-of-a-nevanlinna-represen.md)
+- [The Riemann extension theorem across a coordinate hyperplane](part-02/the-riemann-extension-theorem-across-a-coordinat.md)
+- [Rigidity in the Schwarz--Pick theorem](part-02/rigidity-in-the-schwarz-pick-theorem.md)
+- [Schwarz's lemma with prescribed zeros](part-02/schwarzs-lemma-with-prescribed-zeros.md)
+- [The Stieltjes--Perron vanishing theorem](part-02/the-stieltjes-perron-vanishing-theorem.md)
+- [Weyl's lemma for `\bar∂`](part-02/weyls-lemma-for-bar.md)

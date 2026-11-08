@@ -1,0 +1,13 @@
+# Topology
+
+Results in Tau Ceti's `TauCeti.Topology` modules: by roadmap, then by area.
+
+- [Peripheral actions on free pro-`p` groups](peripheral-actions-on-free-pro-p-groups/README.md)
+- [Profinite and pro-`p` groups](profinite-and-pro-p-groups/README.md)
+- [Profinite integers, profinite powers, and continuous automorphisms](profinite-integers-profinite-powers-and-continuo/README.md)
+- [Restricted products of topological groups and rational diagonals](restricted-products-of-topological-groups-and-ra/README.md)
+- [Sato hyperfunctions and analytic generalized functions](sato-hyperfunctions-and-analytic-generalized-fun/README.md)
+- [Algebra](algebra/README.md)
+- [Baire](baire/README.md)
+- [Homotopy](homotopy/README.md)
+- [Other results](other-results/README.md)

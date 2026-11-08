@@ -1,0 +1,35 @@
+---
+declaration: theorem
+origin: cited
+lean: TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast
+statement: formalized
+proof: formalized
+---
+
+# Multiplication by a nonzero integer `n` is an isogeny of degree `n²`
+
+```lean
+TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast.{u}
+  {S : AlgebraicGeometry.Scheme} (E : TauCeti.AlgebraicGeometry.EllipticCurveGeom S) {n : ℤ}
+  (hn : n ≠ 0) : TauCeti.GroupScheme.IsogenyOfDegree (↑n).asHom.hom (n.natAbs ^ 2)
+```
+
+## Depends on
+
+Its statement uses no other declaration mapped here.
+
+## Proof depends on
+
+- [The Jacobian criterion for étaleness](../../ring-theory/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
+- [Mathlib's Jacobian addition formula at `(φₘ : ωₘ : ψₘ)` and `(φₙ : ωₙ : ψₙ)` returns `(φₙ₊ₘ : ωₙ₊ₘ : ψₙ₊ₘ)`, scaled by `ψₙ₋ₘ`](../elliptic-curve/mathlibs-jacobian-addition-formula-at-m-m-m-and.md)
+- [Mathlib's Jacobian doubling formula sends `(φₙ : ωₙ : ψₙ)` to `(φ₂ₙ : ω₂ₙ : ψ₂ₙ)`, as an equality of triples and not merely of the points they represent](../elliptic-curve/mathlibs-jacobian-doubling-formula-sends-n-n-n-t.md)
+
+## Lean
+
+Formalized in Tau Ceti as [`TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Scheme/Geom/Isogeny.html#TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast).
+
+## Sources
+
+- [Tau Ceti documentation: `TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Scheme/Geom/Isogeny.html#TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast)
+- [Source of `TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast` in TauCeti/AlgebraicGeometry/EllipticCurve/Scheme/Geom/Isogeny.lean](https://github.com/TauCetiProject/TauCeti/blob/ace60277c4c5ba2166795686bca1af4052290145/TauCeti/AlgebraicGeometry/EllipticCurve/Scheme/Geom/Isogeny.lean#L131)
+- [Tau Ceti roadmap status: Modular curves, following Katz–Mazur](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/ModularCurves/STATUS.md)

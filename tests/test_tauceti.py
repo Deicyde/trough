@@ -204,7 +204,7 @@ def test_the_committed_data_build_a_chapter():
         names |= set(data.selection["chosen"])
     assert names == set(data.deps["declarations"]) | set(data.deps["missing"])
     root, stats, links = tauceti.chapter(data)
-    assert stats["articles"] == len(links) > 0
+    assert stats["declarations"] == len(links) >= stats["articles"] > 0
     assert set(links) <= set(data.deps["declarations"])
     assert not set(links) & set(data.deps["missing"])
 
