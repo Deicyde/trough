@@ -445,7 +445,8 @@ def chapter(source: dict, record: dict) -> tuple[Container, Counter, list[tuple[
         if not members:
             continue
         members.sort(key=lambda pair: title_key(pair[0].title))
-        part = Container(name, f"{number}-{slugify(name)}", [Entry(leaf) for leaf, _ in members])
+        # The slug names the class by the words before its first comma or semicolon: 91-game-theory.
+        part = Container(name, f"{number}-{slugify(re.split(r'[,;]', name)[0])}", [Entry(leaf) for leaf, _ in members])
         part.prose = (f"The Lean Pool projects whose card's first MSC2020 code is in class {number}, {name}: "
                       f"{plural(len(members), 'article')}, one per card.")
         links: dict[str, str] = {}
