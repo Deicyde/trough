@@ -176,10 +176,13 @@ def test_a_repository_that_is_not_apache_licensed_is_refused(tmp_path):
 
 
 def test_card_text_keeps_its_code_and_escapes_the_rest():
-    assert lean_pool.text("`a * b` is 2 * c_d [0,1) <T> #1") == "`a * b` is 2 \\* c_d [0,1) &lt;T> \\#1"
+    assert lean_pool.text("`a * b` is 2 * c_d [0,1) #1 <= 2") == "`a * b` is 2 \\* c_d [0,1) \\#1 <= 2"
     assert lean_pool.text("One\n  line.\n\nTwo.") == "One line.\n\nTwo."
     # Brackets stay, as a backslash before one opens a formula, but none makes a link.
-    assert lean_pool.text("F_q[t] and [x](y)") == "F_q[t] and [x]&#40;y)"
+    assert lean_pool.text("F_q[t] and [x](y)") == "F_q[t] and [x\\](y)"
+    # The site publishes no HTML and no character references, and Markdown can't escape them.
+    assert lean_pool.text("[SL_2(Z) : <Gamma_1(N), -I>] and AT&amp; or `<b>`") == \
+        "[SL_2(Z) : `<`Gamma_1(N), -I>] and AT`&`amp; or `<b>`"
 
 
 def build(tmp_path):

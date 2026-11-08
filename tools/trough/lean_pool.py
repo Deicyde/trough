@@ -25,7 +25,7 @@ import yaml
 
 from . import leansource
 from .blueprints import escape
-from .ff import CODE, is_apache, plural, safe
+from .ff import CODE, is_apache, plural
 from .mathlib import title_key
 from .vault import Container, Entry, Leaf, chunk, slugify
 
@@ -271,8 +271,11 @@ def load(data: Path) -> tuple[dict, dict] | None:
 
 def plain(segment: str) -> str:
     """Text outside code spans with Markdown's marks escaped, but for brackets: a link to the page escapes them
-    itself, and `\\[` would open a formula. Only "](" could make a link, so its parenthesis is an entity."""
-    return escape(segment).replace("#", "\\#").replace("\\[", "[").replace("\\]", "]").replace("](", "]&#40;")
+    itself, and a backslash before one would open a formula, so only a "](", which could make a link, is
+    escaped. A "<" that could open HTML and an "&" that could start a character reference are shown in code,
+    as the site publishes neither and Markdown has no escape for them."""
+    out = escape(segment).replace("#", "\\#").replace("\\[", "[").replace("\\]", "]").replace("](", "\\](")
+    return re.sub(r"<(?=[A-Za-z/!?])|&(?=#|[A-Za-z][A-Za-z0-9]*;)", lambda mark: f"`{mark.group()}`", out)
 
 
 def text(value: str) -> str:
@@ -285,7 +288,7 @@ def text(value: str) -> str:
         for match in CODE.finditer(flat):
             out += [plain(flat[last:match.start()]), match.group()]
             last = match.end()
-        paragraphs.append(safe("".join(out) + plain(flat[last:])))
+        paragraphs.append("".join(out) + plain(flat[last:]))
     return "\n\n".join(paragraphs)
 
 
