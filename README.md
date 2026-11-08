@@ -15,7 +15,8 @@ gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
 roadmaps' status files name, five research projects from their
 leanblueprints (Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+),
-and the Formal Frontier libraries from their headline results.
+the Formal Frontier libraries from their headline results, and Lean Pool from
+its project cards.
 
 ## The Mathlib map
 
@@ -175,6 +176,47 @@ this chapter yet, so its articles have no edges.
    Apache-2.0 or its record finds under half the declarations the last one
    found.
 
+## The Lean Pool chapter
+
+[Lean Pool](https://github.com/LeanPool/lean-pool) keeps Lean projects outside
+Mathlib's scope, each in a directory of its own under `LeanPool/` with a card,
+`LeanPool/projects/<slug>.yaml`: its title, summary, authors, sources, license,
+provenance, MSC2020 codes and main results, each a declaration with an informal
+statement. The chapter has a part per top-level MSC2020 class, the class of
+the first code a card lists, titled by its MSC2020 name, and an article per
+card, titled by the card's title. An article quotes the card's summary, names
+the project's authors, links its sources (DOI, then arXiv, then URL) and its own
+repository at the commit the card gives, says who wrote its Lean proofs as the
+card's provenance does in Lean Pool's words, gives its license, with the
+copyright line Lean Pool keeps for a project published under MIT, and lists
+its main results: each informal statement quoted, with its declaration linked
+to Lean Pool's [documentation](https://leanpool.github.io/lean-pool/) and to
+its line at the pin when the scan below finds it. A main result the scan does
+not find keeps its statement and says so. The articles show no Lean signatures
+and have no edges: the projects do not import one another, and no Lean runs for
+this chapter.
+
+1. `tools/refresh_lean_pool.py CHECKOUT` reads a checkout of Lean Pool and
+   writes `data/lean-pool/source.json`, the commit with its Lean toolchain and
+   Mathlib, and `data/lean-pool/projects.json`, the cards with the copyright
+   lines from its `NOTICE.extra.yml`. For each main result it looks for the
+   declaration in the project's `.lean` files with `tools/trough/leansource.py`,
+   as the Formal Frontier chapter does, and records its module, line and kind
+   and whether its text holds `sorry`; a name declared in two of the project's
+   files is left out, since the project imports all of them together and Lean
+   would refuse it. Lean Pool's CI checks that each card's main declarations
+   exist, so a main declaration the scan misses is a gap in the scan.
+2. The **Lean Pool data** workflow (`.github/workflows/lean-pool-data.yml`)
+   fetches Lean Pool at the commit `data/lean-pool/source.json` pins, as a
+   blobless sparse checkout of the cards and the `.lean` files, runs the
+   refresh, regenerates the pages and runs the tests; on a pull request it
+   fails when the committed data differ from what the pin gives. The weekly
+   run, or a dispatch with `newest`, moves the pin to Lean Pool's newest main
+   commit whose Lean CI passed. A refresh writes nothing, and the workflow
+   fails, when Lean Pool is not Apache-2.0, a card lacks what the chapter reads
+   or has a license other than Apache-2.0 or MIT, or the scan places under half
+   the main results the last record placed.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -240,4 +282,7 @@ public domain. `data/tauceti/roadmaps.json` comes from
 docstrings and signatures in `data/tauceti/deps.json` from
 [Tau Ceti](https://github.com/TauCetiProject/TauCeti), both Apache-2.0. The
 text quoted in `data/ff/` comes from the formalization.yaml and README of each
-[Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0.
+[Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0, and
+the text in `data/lean-pool/` from the project cards and `NOTICE.extra.yml` of
+[Lean Pool](https://github.com/LeanPool/lean-pool), Apache-2.0; each article
+names its project's authors.

@@ -64,7 +64,8 @@ def roadmap_root(libraries: list[dict], chapters: dict[str, str], previous: str 
         "Trough maps Lean formalization libraries: what each one formalizes and how its results depend "
         "on one another, not what the library may add. Each library gets the article unit that suits it, "
         "such as curated concepts for Mathlib, the declarations its roadmaps name for Tau Ceti, blueprint "
-        "nodes for the research projects and headline results for Formal Frontier. The maps are rendered with "
+        "nodes for the research projects, headline results for Formal Frontier and project cards for Lean Pool. "
+        "The maps are rendered with "
         "[AutoformBot](https://github.com/facebookresearch/autoform-bot).",
         "",
         "## Chapters",
@@ -127,11 +128,13 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
-                   tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None) -> str:
+                   tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
+                   lean_pool: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
-    commit each Formal Frontier library's record pins, by library id."""
+    commit each Formal Frontier library's record pins, by library id; *lean_pool* the commit Lean Pool's does."""
     formal_frontier = formal_frontier or {}
+    pinned = formal_frontier | ({"lean-pool": lean_pool} if lean_pool else {})
     lines = [
         "# Sources",
         "",
@@ -186,6 +189,18 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "[FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source "
             "text, without Lean.",
         ]
+    if lean_pool:
+        lines += [
+            "",
+            "## Lean Pool",
+            "",
+            f"- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes "
+            f"and main results of each project card in [LeanPool/lean-pool at {lean_pool[:8]}]"
+            f"(https://github.com/LeanPool/lean-pool/tree/{lean_pool}), Apache-2.0, with the copyright line its "
+            "NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main "
+            "result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the "
+            "commit, its Lean toolchain and Mathlib.",
+        ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:
         members = [library for library in libraries if library["group"] == group]
@@ -193,7 +208,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             lines.append(f"### {heading}")
             lines.append("")
             for library in members:
-                head = formal_frontier[library["id"]][:12] if library["id"] in formal_frontier else library.get("head")
+                head = pinned[library["id"]][:12] if library["id"] in pinned else library.get("head")
                 snapshot = f" at {head}" if head else ""
                 lines.append(f"- [{library['name']}]({repo_url(library)}){snapshot}: {library.get('what', '')}")
             lines.append("")
