@@ -25,6 +25,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/ff/<name>.json`: for each of the 44 Formal Frontier libraries, the facts, highlights and main results of its formalization.yaml and the headline results of its README, read at the commit the file records, with the line and kind of each named declaration its file declares, from [FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source text, without Lean.
 
+## Lean Pool
+
+- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes and main results of each project card in [LeanPool/lean-pool at 2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0, with the copyright line its NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the commit, its Lean toolchain and Mathlib.
+
 ## Libraries
 
 ### Core library
@@ -57,7 +61,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) at 6e837e753555: A complete machine-checked proof of FLT via Frey-Serre-Ribet-Wiles-Taylor-Wiles, from the three standard axioms; checked by comparator and the nanoda kernel.
 - [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Lean proofs of results from about 721 model-generated research manuscripts (README says ~42% of top-line results are formalized). Includes Hodge for CM abelian varieties, BSD cases, and counterexamples (Hadwiger, Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
-- [Lean Pool](https://github.com/LeanPool/lean-pool) at edbe5bd56f47: A pool of 317 permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
+- [Lean Pool](https://github.com/LeanPool/lean-pool) at 2b205bf90401: A pool of 334 permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
 
 ### Formal Frontier libraries
 

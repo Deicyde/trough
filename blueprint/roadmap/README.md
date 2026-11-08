@@ -4,7 +4,7 @@ tracks_lean: false
 
 # Trough
 
-Trough maps Lean formalization libraries: what each one formalizes and how its results depend on one another, not what the library may add. Each library gets the article unit that suits it, such as curated concepts for Mathlib, the declarations its roadmaps name for Tau Ceti, blueprint nodes for the research projects and headline results for Formal Frontier. The maps are rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot).
+Trough maps Lean formalization libraries: what each one formalizes and how its results depend on one another, not what the library may add. Each library gets the article unit that suits it, such as curated concepts for Mathlib, the declarations its roadmaps name for Tau Ceti, blueprint nodes for the research projects, headline results for Formal Frontier and project cards for Lean Pool. The maps are rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot).
 
 ## Chapters
 
@@ -16,6 +16,7 @@ Trough maps Lean formalization libraries: what each one formalizes and how its r
 - [Polynomial Freiman-Ruzsa](pfr/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses.
 - [Equational Theories](equational-theories/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the equations and implication classes in the project's data files are left for later.
 - [Strong PNT (Math Inc)](strongpnt/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them.
+- [Lean Pool](lean-pool/README.md): One article per project card in LeanPool/projects, in a part per top-level MSC2020 class: the card's summary, authors, sources, provenance and license, and its main results' informal statements, each with its declaration where the scan finds it in the project's files.
 - [Formal Frontier](formal-frontier/README.md): 44 libraries, a part per subject. One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own.
 
 ## Libraries still to map
@@ -33,4 +34,3 @@ Trough maps Lean formalization libraries: what each one formalizes and how its r
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) (60,478 Lean files): One article per step of PROOF-PATH.md, linked to the Lean theorem it names.
 - [OpenAI Math](https://github.com/openai/math) (163,097 Lean files): One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results.
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) (229,089 Lean files): Milestones from the in-Lean CFSG/Blueprint catalog and the formalization.yaml main results.
-- [Lean Pool](https://github.com/LeanPool/lean-pool) (28,795 Lean files): One article per project in LeanPool/projects (317), with its main_results as statements.
