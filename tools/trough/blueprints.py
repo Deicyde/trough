@@ -31,6 +31,9 @@ from trough.vault import MATH_SPAN, Container, Entry, Leaf, chunk, rel, slugify,
 KINDS = {"theorem": "theorem", "lemma": "lemma", "proposition": "proposition", "corollary": "corollary",
          "definition": "definition", "sublemma": "lemma", "conjecture": "theorem", "claim": "lemma"}
 LINK = re.compile(r"\]\(trough:([^)\s]*)\)")  # a placeholder's target is percent-encoded
+# Characters Markdown can read as markup. Underscores between letters or digits, as in a Lean name, can't
+# start or end emphasis, so they stay bare.
+MARKUP = re.compile(r"(?<=[^\W_])_+(?=[^\W_])|(?P<markup>[*_\[\]\\`])")
 # References that print only a number in LaTeX, so the text before them names the kind.
 NUMBER_ONLY = {"ref", "pageref", "vref", "Vref", "labelcref", "cpageref", "Cpageref", "nameref", "hyperref"}
 PREFIX = re.compile(r"^[A-Za-z]{1,12}:(?=.)")
@@ -156,13 +159,16 @@ def from_structure(data: dict) -> Blueprint:
 
 def escape(text: str) -> str:
     """Markdown-escape text for a title or a link, leaving its formulas alone."""
+    def plain(segment: str) -> str:
+        return MARKUP.sub(lambda match: "\\" + match["markup"] if match["markup"] else match.group(), segment)
+
     parts = []
     last = 0
     for match in MATH_SPAN.finditer(text):
-        parts.append(re.sub(r"([*_\[\]\\`])", r"\\\1", text[last : match.start()]))
+        parts.append(plain(text[last : match.start()]))
         parts.append(match.group())
         last = match.end()
-    parts.append(re.sub(r"([*_\[\]\\`])", r"\\\1", text[last:]))
+    parts.append(plain(text[last:]))
     return "".join(parts)
 
 
@@ -578,8 +584,14 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
     if node.discussion and blueprint.links.get("github"):
         fields.append(("discussion", f"{blueprint.links['github']}/issues/{node.discussion.strip().lstrip('#')}"))
     if lean_lines:
-        lead = "Formalized as" if statement_ok else "The blueprint names"
-        notes.append(("Lean", f"{lead} " + ", ".join(lean_lines) + "."))
+        names = ", ".join(lean_lines)
+        if not statement_ok:
+            notes.append(("Lean", f"The blueprint names {names}."))
+        elif proof_ok or kind == "definition" or node.mathlibok:
+            notes.append(("Lean", f"Formalized as {names}."))
+        else:
+            # The book shows no statuses, so an unproved statement says so here.
+            notes.append(("Lean", f"Stated as {names}; the blueprint does not mark its proof formalized."))
     place, source = project.source(node.where)
     if project.text:
         body = writer.statement(node.body) or f"A {caption.lower()} of the blueprint of {project.name}, with no text."
@@ -646,9 +658,8 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
         "whose Lean declarations it names and marks formalized, or in Mathlib"
         + (f". Its other {stats['left_out']:,} nodes have no article, and a section of only those is left out: "
            "the map records what the project contains, not what it plans" if stats["left_out"] else "")
-        + ". A node the blueprint marks `\\leanok` is formalized here, its proof too when that is marked, and "
-        "`\\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\\uses`: a statement's under *Depends on*, a "
-        "proof's under *Proof depends on*.",
+        + ". A statement whose proof the blueprint does not mark `\\leanok` says so. Dependencies are the "
+        "blueprint's `\\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.",
     ]
     if project.text:
         lines.append(

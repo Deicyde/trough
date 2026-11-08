@@ -3,7 +3,8 @@
 Maps of Lean formalization libraries: what each one formalizes and how its
 results depend on one another, not what the library may add. The maps are AutoformBot
 vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot)
-and published at https://deicyde.github.io/trough/.
+and published at https://deicyde.github.io/trough/. The book shows no Lean
+progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
 `catalog/libraries.toml` lists the 61 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
@@ -118,7 +119,7 @@ and signature, titled by the docstring's bold lead when it has one.
    chain of unnamed Tau Ceti declarations; a name that does not resolve is
    listed as missing and has no article, as is one that now resolves outside
    Tau Ceti. A theorem whose proof reaches `sorry`, itself or through another
-   named declaration, is shown as stated, not proved.
+   named declaration, is marked stated, not proved, and says so.
 3. A change to either pin file runs the workflow too, so the committed dump
    always matches the pins. The weekly run, or a dispatch with `newest`, moves both pins: Tau Ceti to
    its newest main commit whose CI passed, so its cache exists, and the

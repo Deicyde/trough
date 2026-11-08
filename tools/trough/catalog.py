@@ -81,7 +81,8 @@ def roadmap_root(libraries: list[dict], chapters: dict[str, str], previous: str 
             plan = library["map_plan"]
             lines.append(f"- [{library['name']}]({repo_url(library)}){files_note(library)}: {plan}")
         lines.append("")
-    return frontmatter([], previous) + "\n".join(lines).rstrip() + "\n"
+    # A map records what each library has, not its progress, so the book shows no Lean progress.
+    return frontmatter([("tracks_lean", "false")], previous) + "\n".join(lines).rstrip() + "\n"
 
 
 def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:

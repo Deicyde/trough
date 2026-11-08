@@ -56,6 +56,12 @@ def test_text_that_reads_as_markdown_is_escaped():
     assert writer().plain(r"Balog--Szemer\'edi--Gowers for $\tau$") == r"Balog–Szemerédi–Gowers for $\tau$"
 
 
+def test_titles_keep_underscores_inside_words():
+    # Markdown can't read them as emphasis, and AutoformBot's explorer shows a title's escapes as typed.
+    assert blueprints.escape("TauCeti.integralTopForm_mextDeriv") == "TauCeti.integralTopForm_mextDeriv"
+    assert blueprints.escape("_root_.a__b_ *c* [d] $x_1$") == r"\_root\_.a__b\_ \*c\* \[d\] $x_1$"
+
+
 def test_unknown_commands_keep_their_text_and_are_counted():
     w = writer()
     assert w.statement(r"\mystery{kept} and \blah done") == "kept and done"
@@ -157,6 +163,9 @@ def test_articles_carry_the_blueprints_marks(blueprint, tmp_path):
     assert dict(leaves["Thing"].fields) == {"declaration": "definition", "origin": "cited", "lean": "Thing", "statement": "formalized"}
     lemma = dict(leaves["a-proof-label"].fields)
     assert lemma["lean"] == "A.one, A.two" and lemma["statement"] == "formalized" and "proof" not in lemma
+    # The book shows no statuses, so the Lean line says when a proof is not marked formalized.
+    assert dict(leaves["Thing"].notes)["Lean"].startswith("Formalized as [`Thing`]")
+    assert dict(leaves["a-proof-label"].notes)["Lean"].endswith("; the blueprint does not mark its proof formalized.")
     assert dict(leaves["Main"].fields)["mathlib_declaration"] == "Mathlib.main"
     # Not ready, in Mathlib under no name, and formalized under no name: no article for any of them.
     assert {"Lemma: Unlabelled and not ready.", "noname", "late"}.isdisjoint(leaves)

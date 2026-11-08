@@ -267,7 +267,6 @@ def intro(sources: Sources, stats: dict[str, int]) -> str:
         "docstring that opens with a bold title gives the article its title. Dependencies come from Tau Ceti's "
         "declarations (`lean/tauceti/TauCetiDeps.lean`): under *Depends on*, the declarations mapped here that a "
         "statement reaches through the statements of declarations not mapped here, and under *Proof depends on*, "
-        "those a proof reaches through any chain of Tau Ceti declarations not mapped here. A theorem whose proof "
-        "reaches `sorry`, itself or through a declaration mapped here, is shown as stated, not proved, and a "
-        "definition that reaches it says so.",
+        "those a proof reaches through any chain of Tau Ceti declarations not mapped here. A theorem or definition "
+        "that reaches `sorry`, itself or through a declaration mapped here, says so.",
     ])
