@@ -295,3 +295,8 @@ def test_the_committed_data_build_the_chapter():
         assert set(names) == set(dict(leaf.fields).get("lean", "").split(", ")) - {""}
         assert all(links[lean_pool.msc_class(project)][name] == url for name, url in names.items())
     assert all(isinstance(part, Container) and len(part.slug) > 3 for part, _ in parts)
+    # Lean Pool's CI checks that every main declaration exists, so the scan should place each one; the only
+    # names it can't read are those Lean gives anonymous instances.
+    missed = [result["declaration"] for project in record["projects"] for result in project["main_results"]
+              if result["main"] and not result["module"]]
+    assert all(name.split(".")[-1].startswith("inst") for name in missed), missed
