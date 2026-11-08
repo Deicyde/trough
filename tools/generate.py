@@ -102,12 +102,13 @@ def generate() -> dict[Path, str]:
         for section, names in ff_sections:
             # Keyed by the library's directory: the hook takes the longest key a page's path starts with.
             here = section.path.parent.relative_to(ROADMAP).as_posix()
-            lean_links[here] = dict(sorted(names.items()))
+            if names:
+                lean_links[here] = dict(sorted(names.items()))
             count = sum(isinstance(node, Leaf) for node in walk(section))
             if count:
                 blueprint_rows.append((f"Formal Frontier / {section.title}", "DECOMPOSED",
                                        f"[{count} headline {'result' if count == 1 else 'results'}](../roadmap/{here}/README.md) "
-                                       "that name a declaration its files have, one article each."))
+                                       f"that {'names' if count == 1 else 'name'} a declaration its files have, one article each."))
             else:
                 blueprint_rows.append((f"Formal Frontier / {section.title}", "OUT",
                                        f"No headline result names a declaration its files have at the pinned commit; "
