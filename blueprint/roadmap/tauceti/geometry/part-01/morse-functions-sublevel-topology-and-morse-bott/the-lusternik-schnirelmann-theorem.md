@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.lsCategoryCount_univ_le_totalCriticalCount, TauCeti.lsCategoryCount_univ_le_encard_criticalPoints_inter, TauCeti.lsCategoryCount_sublevel_le_encard, TauCeti.lsCategoryCount_univ_le_minCriticalCount
+lean: TauCeti.lsCategoryCount_univ_le_totalCriticalCount
 statement: formalized
 proof: formalized
 ---
@@ -28,46 +28,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Fermat's theorem on a manifold](fermats-theorem-on-a-manifold.md)
+- [The Lusternik–Schnirelmann bound on sublevels](the-lusternik-schnirelmann-bound-on-sublevels.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.lsCategoryCount_univ_le_totalCriticalCount`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/LusternikSchnirelmann.html#TauCeti.lsCategoryCount_univ_le_totalCriticalCount).
-
-## Other forms
-
-**The Lusternik–Schnirelmann bound on a compact open part.** Formalized in Tau Ceti as [`TauCeti.lsCategoryCount_univ_le_encard_criticalPoints_inter`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/LusternikSchnirelmann.html#TauCeti.lsCategoryCount_univ_le_encard_criticalPoints_inter).
-
-```lean
-TauCeti.lsCategoryCount_univ_le_encard_criticalPoints_inter.{u_1, u_2, u_3} {E : Type u_1}
-  [NormedAddCommGroup E] [NormedSpace ℝ E] {H : Type u_2} [TopologicalSpace H]
-  {I : ModelWithCorners ℝ E H} {M : Type u_3} [TopologicalSpace M] [ChartedSpace H M] {f : M → ℝ}
-  [FiniteDimensional ℝ E] [T2Space M] [I.Boundaryless] [IsManifold I (↑⊤) M] {C : Set M}
-  (hf : ContMDiffOn I (modelWithCornersSelf ℝ ℝ) (↑⊤) f C) (hCo : IsOpen C) (hCc : IsCompact C) :
-  TauCeti.lsCategoryCount (↑C) Set.univ ≤ (TauCeti.criticalPoints I f ∩ C).encard
-```
-
-**The Lusternik–Schnirelmann bound on sublevels.** Formalized in Tau Ceti as [`TauCeti.lsCategoryCount_sublevel_le_encard`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/LusternikSchnirelmann.html#TauCeti.lsCategoryCount_sublevel_le_encard).
-
-```lean
-TauCeti.lsCategoryCount_sublevel_le_encard.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup E]
-  [NormedSpace ℝ E] {H : Type u_2} [TopologicalSpace H] {I : ModelWithCorners ℝ E H} {M : Type u_3}
-  [TopologicalSpace M] [ChartedSpace H M] {f : M → ℝ} [FiniteDimensional ℝ E] [T2Space M]
-  [I.Boundaryless] [IsManifold I (↑⊤) M] (hf : ContMDiff I (modelWithCornersSelf ℝ ℝ) (↑⊤) f)
-  {t b : ℝ} (htb : t < b) (hb : IsCompact {x | f x ≤ b})
-  (hfin : (TauCeti.criticalPoints I f ∩ {x | f x ≤ b}).Finite) :
-  TauCeti.lsCategoryCount M {x | f x ≤ t} ≤ (TauCeti.criticalPoints I f ∩ {x | f x ≤ t}).encard
-```
-
-**The Lusternik–Schnirelmann lower bound for `c(M)`.** Formalized in Tau Ceti as [`TauCeti.lsCategoryCount_univ_le_minCriticalCount`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/MinCriticalCount.html#TauCeti.lsCategoryCount_univ_le_minCriticalCount).
-
-```lean
-TauCeti.lsCategoryCount_univ_le_minCriticalCount.{u_1, u_2, u_3} {E : Type u_1}
-  [NormedAddCommGroup E] [NormedSpace ℝ E] {H : Type u_2} [TopologicalSpace H]
-  {I : ModelWithCorners ℝ E H} {M : Type u_3} [TopologicalSpace M] [ChartedSpace H M]
-  [I.Boundaryless] [CompactSpace M] [FiniteDimensional ℝ E] [T2Space M] [IsManifold I (↑⊤) M] :
-  TauCeti.lsCategoryCount M Set.univ ≤ TauCeti.minCriticalCount I M
-```
 
 ## Sources
 

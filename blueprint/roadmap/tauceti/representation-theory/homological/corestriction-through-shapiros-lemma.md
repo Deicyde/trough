@@ -24,10 +24,6 @@ TauCeti.groupCohomology.coindIso_hom_comp_corestriction.{u} {k G : Type u} [Comm
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](the-inverse-of-shapiros-isomorphism-in-homology.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.groupCohomology.coindIso_hom_comp_corestriction`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/GroupCohomology/Corestriction.html#TauCeti.groupCohomology.coindIso_hom_comp_corestriction).

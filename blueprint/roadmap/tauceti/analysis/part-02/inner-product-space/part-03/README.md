@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The separated Sylvester bound to Yu–Wang–Samworth bound for left…
+# The separated Sylvester bound to The Yu–Wang–Samworth overlap…
 
 - [The separated Sylvester bound](the-separated-sylvester-bound.md)
 - [The singular-value Hoffman–Wielandt inequality](the-singular-value-hoffman-wielandt-inequality.md)
@@ -19,3 +19,4 @@ navigation: transparent
 - [Weyl's lemma for continuous functions](weyls-lemma-for-continuous-functions.md)
 - [Young's inequality for real inner products](youngs-inequality-for-real-inner-products.md)
 - [Yu–Wang–Samworth bound for left singular vectors](yu-wang-samworth-bound-for-left-singular-vectors.md)
+- [The Yu–Wang–Samworth overlap bound, Frobenius form](the-yu-wang-samworth-overlap-bound-frobenius-for.md)

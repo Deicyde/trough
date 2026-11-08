@@ -48,7 +48,7 @@ Results named in Tau Ceti's `TauCeti.Analysis.InnerProductSpace` modules and in 
 - [The Schur–Horn theorem (`LinearMap.IsSymmetric.range_re_inner_apply_self_eq_convexHull_eigenvalues_comp_perm`)](part-02/the-schur-horn-theorem-linearmap-issymmetric-ran.md)
 - [The Schwarz reflection principle](part-02/the-schwarz-reflection-principle.md)
 
-## [The separated Sylvester bound to Yu–Wang–Samworth bound for left…](part-03/README.md)
+## [The separated Sylvester bound to The Yu–Wang–Samworth overlap…](part-03/README.md)
 
 - [The separated Sylvester bound](part-03/the-separated-sylvester-bound.md)
 - [The singular-value Hoffman–Wielandt inequality](part-03/the-singular-value-hoffman-wielandt-inequality.md)
@@ -65,3 +65,4 @@ Results named in Tau Ceti's `TauCeti.Analysis.InnerProductSpace` modules and in 
 - [Weyl's lemma for continuous functions](part-03/weyls-lemma-for-continuous-functions.md)
 - [Young's inequality for real inner products](part-03/youngs-inequality-for-real-inner-products.md)
 - [Yu–Wang–Samworth bound for left singular vectors](part-03/yu-wang-samworth-bound-for-left-singular-vectors.md)
+- [The Yu–Wang–Samworth overlap bound, Frobenius form](part-03/the-yu-wang-samworth-overlap-bound-frobenius-for.md)

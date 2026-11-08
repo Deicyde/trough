@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The angle condition of… to The Herglotz representation…
+# The angle condition of… to The Herglotz formula on a disc
 
 - [The angle condition of Poincaré's theorem](the-angle-condition-of-poincares-theorem.md)
 - [The Apollonius identity for the Moebius factor](the-apollonius-identity-for-the-moebius-factor.md)
@@ -21,6 +21,6 @@ navigation: transparent
 - [The Dolbeault lemma on a disc](the-dolbeault-lemma-on-a-disc.md)
 - [The explicit Schwarz--Christoffel formula for a strip](the-explicit-schwarz-christoffel-formula-for-a-s.md)
 - [The fundamental-set part of Poincaré's polygon theorem](the-fundamental-set-part-of-poincares-polygon-th.md)
+- [Gauss–Bonnet for the triangles of the fan from `∞`](gauss-bonnet-for-the-triangles-of-the-fan-from.md)
 - [The Gauss–Bonnet formula](the-gauss-bonnet-formula.md)
 - [The Herglotz formula on a disc](the-herglotz-formula-on-a-disc.md)
-- [The Herglotz representation theorem](the-herglotz-representation-theorem.md)

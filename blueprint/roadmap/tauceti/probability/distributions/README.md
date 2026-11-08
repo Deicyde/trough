@@ -7,4 +7,3 @@ Results named in Tau Ceti's `TauCeti.Probability.Distributions` modules and in n
 - [The Maurey–Pisier inequality](the-maurey-pisier-inequality.md)
 - [Parseval's identity for the Gaussian Hermite basis](parsevals-identity-for-the-gaussian-hermite-basi.md)
 - [Rademacher convexity inequality](rademacher-convexity-inequality.md)
-- [Student's t law with one degree of freedom is the standard Cauchy law](students-t-law-with-one-degree-of-freedom-is-the.md)

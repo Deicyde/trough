@@ -1,6 +1,6 @@
 # Profinite integers, profinite powers, and continuous automorphisms
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ProfiniteArithmetic/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ProfiniteArithmetic/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The continuous automorphisms of a pro-`p` group acting trivially on its Frattini quotient form a pro-`p` group](the-continuous-automorphisms-of-a-pro-p-group-ac.md)
 - [TauCeti.ContinuousAut.isOpen_ker_mapQuotient_proPFrattini](tauceti-continuousaut-isopen-ker-mapquotient-pro.md)

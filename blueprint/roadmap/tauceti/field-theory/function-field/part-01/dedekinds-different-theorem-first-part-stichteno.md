@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 - [Dedekind's different theorem, the tame case, as an exponent](../../../ring-theory/part-02/other-results/part-01/dedekinds-different-theorem-the-tame-case-as-an.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
-- [The weak approximation theorem](the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

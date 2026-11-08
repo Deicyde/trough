@@ -1,6 +1,6 @@
 # Euclidean isoperimetry, sharp inequalities, and rigidity
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/Isoperimetry/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/Isoperimetry/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [TauCeti.hasPrekopaLeindler_volume](tauceti-hasprekopaleindler-volume.md)
 - [Brunn–Minkowski inequality](brunn-minkowski-inequality.md)
@@ -13,6 +13,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The isoperimetric inequality on the line](the-isoperimetric-inequality-on-the-line.md)
 - [Brunn's concavity principle](brunns-concavity-principle.md)
 - [Brunn's principle, in log-concave form](brunns-principle-in-log-concave-form.md)
+- [Brunn–Minkowski for a shell](brunn-minkowski-for-a-shell.md)
 - [De la Vallée Poussin's criterion](de-la-vallee-poussins-criterion.md)
 - [Hardy--Littlewood rearrangement inequality](hardy-littlewood-rearrangement-inequality.md)
 - [Prékopa–Leindler inequality for the minimum on `ℝ`](prekopa-leindler-inequality-for-the-minimum-on-r.md)

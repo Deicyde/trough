@@ -35,7 +35,7 @@ Its statement uses no other declaration mapped here.
 - [The Galois correspondence for the inertia field](the-galois-correspondence-for-the-inertia-field.md)
 - [Hilbert's counting identity](../../../ring-theory/part-01/local-ring/hilberts-counting-identity.md)
 - [The residue action, on residues (Stichtenoth, Theorem 3.8.2)](the-residue-action-on-residues-stichtenoth-theor.md)
-- [The weak approximation theorem](the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

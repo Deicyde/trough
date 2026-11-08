@@ -2,7 +2,7 @@
 
 Results named in the rest of Tau Ceti's `TauCeti.RingTheory` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-## [Algebraic Hartogs principle for… to Krull–Akizuki](part-01/README.md)
+## [Algebraic Hartogs principle for… to Krull–Akizuki for Mathlib's…](part-01/README.md)
 
 - [Algebraic Hartogs principle for fractions](part-01/algebraic-hartogs-principle-for-fractions.md)
 - [The Auslander–Buchsbaum formula](part-01/the-auslander-buchsbaum-formula.md)
@@ -23,9 +23,9 @@ Results named in the rest of Tau Ceti's `TauCeti.RingTheory` modules and in no r
 - [Jacobi's formula](part-01/jacobis-formula.md)
 - [The Jacobian criterion for étaleness](part-01/the-jacobian-criterion-for-etaleness.md)
 - [Kedlaya's estimate (4.9.1) in the normalisation `λ_ρ(p) = ρ`](part-01/kedlayas-estimate-4-9-1-in-the-normalisation-p.md)
-- [Krull–Akizuki](part-01/krull-akizuki.md)
+- [Krull–Akizuki for Mathlib's `integralClosure`](part-01/krull-akizuki-for-mathlibs-integralclosure.md)
 
-## [Krull–Akizuki's length bound to Universality of Hazewinkel's…](part-02/README.md)
+## [Krull–Akizuki's length bound to Wedhorn's degree decomposition…](part-02/README.md)
 
 - [Krull–Akizuki's length bound](part-02/krull-akizukis-length-bound.md)
 - [The Kummer–Dedekind irreducibility criterion](part-02/the-kummer-dedekind-irreducibility-criterion.md)
@@ -33,7 +33,9 @@ Results named in the rest of Tau Ceti's `TauCeti.RingTheory` modules and in no r
 - [Maschke's theorem after base change](part-02/maschkes-theorem-after-base-change.md)
 - [Nakayama's lemma for an idempotent](part-02/nakayamas-lemma-for-an-idempotent.md)
 - [Nakayama's lemma over `ℤ`](part-02/nakayamas-lemma-over-z.md)
+- [The open mapping theorem over a Tate ring](part-02/the-open-mapping-theorem-over-a-tate-ring.md)
 - [Serre's criterion for normality](part-02/serres-criterion-for-normality.md)
 - [Serre's lemma](part-02/serres-lemma.md)
 - [Taylor's formula for polynomials](part-02/taylors-formula-for-polynomials.md)
 - [Universality of Hazewinkel's formal group law over `ℚ`-algebras](part-02/universality-of-hazewinkels-formal-group-law-ove.md)
+- [Wedhorn's degree decomposition, Lemma 8.33(i)](part-02/wedhorns-degree-decomposition-lemma-8-33-i.md)

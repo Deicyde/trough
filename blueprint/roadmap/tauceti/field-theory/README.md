@@ -6,5 +6,4 @@ Results in Tau Ceti's `TauCeti.FieldTheory` modules, and the roadmaps whose arti
 - [Galois groups of polynomials](galois-groups-of-polynomials/README.md)
 - [Function Field](function-field/README.md)
 - [Galois](galois/README.md)
-- [Galois Cohomology](galois-cohomology/README.md)
 - [Other results](other-results/README.md)

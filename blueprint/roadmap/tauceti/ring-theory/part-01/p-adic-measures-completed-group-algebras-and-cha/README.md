@@ -1,6 +1,6 @@
 # p-adic measures, completed group algebras, and characteristic ideals
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/PadicMeasuresIwasawaAlgebras/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 ## [Integral measures are the… to The Weierstrass quotient bound…](part-01/README.md)
 
@@ -25,6 +25,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Weierstrass preparation](part-01/weierstrass-preparation.md)
 - [The Weierstrass quotient bound `‖q‖ ≤ ‖f‖ / ‖g‖`, for the Gauss norm at `c`](part-01/the-weierstrass-quotient-bound-q-f-g-for-the-gau.md)
 
-## [Part 2 of 2](part-02/README.md)
+## [The Weierstrass remainder bound…](part-02/README.md)
 
 - [The Weierstrass remainder bound `‖r‖ ≤ ‖f‖`, for the Gauss norm at `c`](part-02/the-weierstrass-remainder-bound-r-f-for-the-gaus.md)

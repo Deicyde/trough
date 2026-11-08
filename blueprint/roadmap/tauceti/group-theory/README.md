@@ -7,7 +7,7 @@ Results in Tau Ceti's `TauCeti.GroupTheory` modules, and the roadmaps whose arti
 - [Stating the classification of finite simple groups](stating-the-classification-of-finite-simple-grou/README.md)
 - [Coxeter](coxeter/README.md)
 - [Group Action](group-action/README.md)
-- [Perm](perm/README.md)
+- [Permutations](permutations/README.md)
 - [Specific Groups](specific-groups/README.md)
 - [Tits System](tits-system/README.md)
 - [Other results](other-results/README.md)

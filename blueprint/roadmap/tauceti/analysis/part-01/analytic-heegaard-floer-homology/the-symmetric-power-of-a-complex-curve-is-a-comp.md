@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Cauchy's bound on the symmetric power](../../part-02/polynomial/cauchys-bound-on-the-symmetric-power.md)
-- [Newton's identities for a multiset](../../../ring-theory/part-01/mv-polynomial/newtons-identities-for-a-multiset.md)
+- [Newton's identities for a multiset](../../../ring-theory/part-01/multivariate-polynomials/newtons-identities-for-a-multiset.md)
 - [Vieta's formulas on the symmetric power](../../../ring-theory/part-01/polynomial/vietas-formulas-on-the-symmetric-power.md)
 
 ## Lean

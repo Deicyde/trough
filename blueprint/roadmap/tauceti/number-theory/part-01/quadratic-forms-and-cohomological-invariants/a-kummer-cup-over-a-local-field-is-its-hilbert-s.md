@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 - [Artin--Wedderburn over a separably closed field](../../../algebra/central-simple/artin-wedderburn-over-a-separably-closed-field.md)
 - [The comparison isomorphism](the-comparison-isomorphism.md)
-- [The cup-norm theorem](../../../field-theory/galois-cohomology/the-cup-norm-theorem.md)
+- [The cup-norm theorem](../../../field-theory/other-results/the-cup-norm-theorem.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The Skolem-Noether theorem](../../../algebra/central-simple/the-skolem-noether-theorem.md)
 - [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)

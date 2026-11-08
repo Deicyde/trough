@@ -33,7 +33,7 @@ TauCeti.SplitK0.spectralRadius_fusionMatrix.{w, w', v, u} (k : Type w') [Field k
 
 - [Frobenius reciprocity in multiplicity form](../other-results/frobenius-reciprocity-in-multiplicity-form.md)
 - [The Frobenius–Perron character](the-frobenius-perron-character.md)
-- [Perron–Frobenius](../../linear-algebra/matrix/perron-frobenius.md)
+- [Perron–Frobenius theorem for nonnegative matrices](../../linear-algebra/matrix/perron-frobenius-theorem-for-nonnegative-matrice.md)
 
 ## Lean
 

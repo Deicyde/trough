@@ -28,7 +28,7 @@ TauCeti.presentedProP.oneRelatorAbelianizationEquiv.{u} {p : ℕ} [Fact (Nat.Pri
 
 ## Depends on
 
-- [The Demushkin predicate](../../profinite-and-pro-p-groups/the-demushkin-predicate.md)
+- [The Demushkin predicate](../../profinite-and-pro-p-groups/part-01/the-demushkin-predicate.md)
 
 ## Proof depends on
 

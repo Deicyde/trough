@@ -28,7 +28,6 @@ TauCeti.exists_generating_tuple_quotient (p : ℕ) [Fact (Nat.Prime p)] (K : Typ
 
 ## Proof depends on
 
-- [Artin reciprocity commutes with conjugation](../class-field-theory/artin-reciprocity-commutes-with-conjugation.md)
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
@@ -40,7 +39,6 @@ TauCeti.exists_generating_tuple_quotient (p : ℕ) [Fact (Nat.Prime p)] (K : Typ
 - [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 - [Fitting's lemma](../../../ring-theory/part-01/krull-schmidt/fittings-lemma.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
-- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [The local class formation](../../part-01/class-field-theory/the-local-class-formation.md)
 - [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)

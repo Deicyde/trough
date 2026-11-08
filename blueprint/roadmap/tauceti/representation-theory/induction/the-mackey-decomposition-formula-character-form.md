@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.character_resFDRep_indFDRep_mackey, Subgroup.indClassFun_mackey, Subgroup.comap_subtype_indClassFunction_mackey
+lean: TauCeti.character_resFDRep_indFDRep_mackey, Subgroup.indClassFun_mackey
 statement: formalized
 proof: formalized
 ---
@@ -44,17 +44,6 @@ Subgroup.indClassFun_mackey.{u_1, u_2} {k : Type u_1} [Semiring k] {G : Type u_2
     ∑ D,
       ((TauCeti.mackeySubgroup (Quotient.out D) H K).subgroupOf K).indClassFun
         (TauCeti.mackeyClassFun (Quotient.out D) H K f) x
-```
-
-**The Mackey decomposition of a restricted induced class function.** Formalized in Tau Ceti as [`Subgroup.comap_subtype_indClassFunction_mackey`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Mackey/Basic.html#Subgroup.comap_subtype_indClassFunction_mackey).
-
-```lean
-Subgroup.comap_subtype_indClassFunction_mackey.{u_1, u_2} {k : Type u_1} [Semiring k] {G : Type u_2}
-  [Group G] (K : Subgroup G) {H : Subgroup G} [H.FiniteIndex] (f : ↥(TauCeti.ClassFunction k ↥H)) :
-  (TauCeti.ClassFunction.comap K.subtype) (H.indClassFunction f) =
-    ∑ D,
-      ((TauCeti.mackeySubgroup (Quotient.out D) H K).subgroupOf K).indClassFunction
-        (TauCeti.mackeyClassFunction (Quotient.out D) H K f)
 ```
 
 ## Sources

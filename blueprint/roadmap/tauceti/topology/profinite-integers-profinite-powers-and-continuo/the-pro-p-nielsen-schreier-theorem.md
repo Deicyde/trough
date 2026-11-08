@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 - [Dimension shifting in every positive degree](../../representation-theory/continuous-cohomology-of-profinite-groups/dimension-shifting-in-every-positive-degree.md)
 - [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 - [The Schreier index formula for open subgroups](the-schreier-index-formula-for-open-subgroups.md)
-- [Serre's theorem at arbitrary rank, as an equivalence](../profinite-and-pro-p-groups/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
+- [Serre's theorem at arbitrary rank, as an equivalence](../profinite-and-pro-p-groups/part-01/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
 - [Shapiro's lemma in degree one](../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 
 ## Lean

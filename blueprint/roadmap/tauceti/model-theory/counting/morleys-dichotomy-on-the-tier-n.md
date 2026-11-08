@@ -28,7 +28,7 @@ TauCeti.mk_quotient_isoSetoidOn_nat_le_aleph_one_or_hasPerfectAntichainOn.{u, v,
 
 ## Proof depends on
 
-- [Silver's theorem](../../other-areas/set-theory/silvers-theorem.md)
+- [Silver's theorem relative to a Borel subset](../../other-areas/set-theory/silvers-theorem-relative-to-a-borel-subset.md)
 - [TauCeti.BFEquiv](../infinitary-syntax-back-and-forth-and-scott-analy/tauceti-bfequiv.md)
 - [TauCeti.exists_complete_self_stabilization](../infinitary-syntax-back-and-forth-and-scott-analy/tauceti-exists-complete-self-stabilization.md)
 - [TauCeti.PotentialIso](../infinitary-syntax-back-and-forth-and-scott-analy/tauceti-potentialiso.md)

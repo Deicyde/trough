@@ -27,8 +27,7 @@ Its statement uses no other declaration mapped here.
 
 - [Henkel's open mapping theorem](../../topology/algebra/part-01/henkels-open-mapping-theorem.md)
 - [Henkel's theorem in quotient form](../../topology/algebra/part-01/henkels-theorem-in-quotient-form.md)
-- [The open mapping theorem over a Tate ring](../../ring-theory/part-01/huber/the-open-mapping-theorem-over-a-tate-ring.md)
-- [Wedhorn's coordinatewise hypothesis gives the uniform bound](../../ring-theory/part-01/huber/wedhorns-coordinatewise-hypothesis-gives-the-uni.md)
+- [The open mapping theorem over a Tate ring](../../ring-theory/part-02/other-results/part-02/the-open-mapping-theorem-over-a-tate-ring.md)
 
 ## Lean
 

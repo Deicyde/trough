@@ -27,7 +27,6 @@ Its statement uses no other declaration mapped here.
 
 - [The dual Noether isomorphism](../../../category-theory/exact/the-dual-noether-isomorphism.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The Kummer isomorphism on square classes is natural in field isomorphisms](../../../field-theory/galois-cohomology/the-kummer-isomorphism-on-square-classes-is-natu.md)
 - [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [Local Tate duality in degree one](local-tate-duality-in-degree-one.md)
 - [Modular-Artin reduction of the local Euler characteristic formula](modular-artin-reduction-of-the-local-euler-chara.md)

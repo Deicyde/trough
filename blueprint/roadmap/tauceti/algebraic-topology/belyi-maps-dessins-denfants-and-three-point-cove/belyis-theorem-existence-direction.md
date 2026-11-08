@@ -29,7 +29,7 @@ TauCeti.IsFunctionField.exists_isAlgebraicBelyiPair.{u, v} {k : Type u} {F : Typ
 - [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](../../field-theory/function-field/part-01/dedekinds-different-theorem-first-part-stichteno.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../../field-theory/function-field/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [Polynomial Belyification of algebraic numbers](polynomial-belyification-of-algebraic-numbers.md)
-- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

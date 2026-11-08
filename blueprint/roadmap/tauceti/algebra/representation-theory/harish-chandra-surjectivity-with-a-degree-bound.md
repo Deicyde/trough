@@ -30,7 +30,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Cartan projection preserves a strict PBW degree bound](the-cartan-projection-preserves-a-strict-pbw-deg.md)
 - [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)
 - [The Poincaré--Birkhoff--Witt theorem](../lie/part-01/the-poincare-birkhoff-witt-theorem.md)
 - [Representation.symmetricAlgebraInvariants](../../representation-theory/finite-reflection-invariants-degrees-and-weyl-ex/representation-symmetricalgebrainvariants.md)

@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Extension theorem for bounded Lipschitz domains](../part-01/extension-theorem-for-bounded-lipschitz-domains.md)
-- [The Fréchet--Kolmogorov compactness criterion](../../../../measure-theory/function/the-frechet-kolmogorov-compactness-criterion.md)
+- [The Fréchet--Kolmogorov criterion for a family vanishing almost everywhere off a fixed bounded set](../../../../measure-theory/function/the-frechet-kolmogorov-criterion-for-a-family-va.md)
 - [Hölder's inequality for the integral of a product](../../../../measure-theory/function/holders-inequality-for-the-integral-of-a-product.md)
 
 ## Lean

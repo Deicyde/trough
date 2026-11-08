@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Semigroups.exists_contractionSemigroup_generator_eq_iff_forall_norm_resolvent_le
+lean: TauCeti.Semigroups.exists_contractionSemigroup_generator_eq_iff_forall_norm_resolvent_le, TauCeti.Semigroups.exists_generator_eq_and_hasGrowthBound_one_iff_forall_norm_resolvent_le, TauCeti.Semigroups.hilleYosida_generation
 statement: formalized
 proof: formalized
 ---
@@ -28,11 +28,39 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [The Duhamel identity for the exponential of a bounded operator](../../part-02/normed/part-01/the-duhamel-identity-for-the-exponential-of-a-bo.md)
+- [Hille--Yosida characterization](hille-yosida-characterization.md)
 - [Lumer--Phillips in duality-map form](../../part-02/semigroups/lumer-phillips-in-duality-map-form.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.Semigroups.exists_contractionSemigroup_generator_eq_iff_forall_norm_resolvent_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Semigroups/Generation/HilleYosida/Contraction.html#TauCeti.Semigroups.exists_contractionSemigroup_generator_eq_iff_forall_norm_resolvent_le).
+
+## Other forms
+
+**Hille--Yosida for quasi-contraction semigroups.** Formalized in Tau Ceti as [`TauCeti.Semigroups.exists_generator_eq_and_hasGrowthBound_one_iff_forall_norm_resolvent_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Semigroups/Generation/HilleYosida/Contraction.html#TauCeti.Semigroups.exists_generator_eq_and_hasGrowthBound_one_iff_forall_norm_resolvent_le).
+
+```lean
+TauCeti.Semigroups.exists_generator_eq_and_hasGrowthBound_one_iff_forall_norm_resolvent_le.{u_1}
+  {X : Type u_1} [NormedAddCommGroup X] [NormedSpace ℝ X] [CompleteSpace X] (A : X →ₗ.[ℝ] X)
+  (omega : ℝ) :
+  (∃ S, S.generator = A ∧ S.HasGrowthBound omega 1) ↔
+    Dense ↑A.domain ∧
+      (∀ (lambda : ℝ), omega < lambda → lambda ∈ A.resolventSet) ∧
+        ∀ (lambda : ℝ), omega < lambda → ‖A.resolvent lambda‖ ≤ (lambda - omega)⁻¹
+```
+
+**Hille--Yosida generation theorem.** Formalized in Tau Ceti as [`TauCeti.Semigroups.hilleYosida_generation`](https://taucetiproject.org/docs/TauCeti/Analysis/Semigroups/Generation/HilleYosida/Generation.html#TauCeti.Semigroups.hilleYosida_generation).
+
+```lean
+TauCeti.Semigroups.hilleYosida_generation.{u_1} {X : Type u_1} [NormedAddCommGroup X]
+  [NormedSpace ℝ X] [CompleteSpace X] {A : X →ₗ.[ℝ] X} {M omega : ℝ} (hM : 1 ≤ M)
+  (hres : ∀ (lambda : ℝ), omega < lambda → lambda ∈ A.resolventSet)
+  (hpow :
+    ∀ (n : ℕ),
+      1 ≤ n → ∀ (lambda : ℝ), omega < lambda → ‖A.resolvent lambda ^ n‖ ≤ M / (lambda - omega) ^ n)
+  (hdense : Dense ↑A.domain) : ∃ S, S.generator = A ∧ S.HasGrowthBound omega M
+```
 
 ## Sources
 

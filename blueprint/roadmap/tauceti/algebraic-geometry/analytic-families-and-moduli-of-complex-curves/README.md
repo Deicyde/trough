@@ -1,6 +1,6 @@
 # Analytic families and moduli of complex curves
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/ComplexCurveModuli/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/ComplexCurveModuli/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Wiener's lemma for `H^s(A)`, `s > 1/2`](wieners-lemma-for-h-s-a-s-1-2.md)
 - [The product estimate in `H^s(A)`, `s > 1/2`](the-product-estimate-in-h-s-a-s-1-2.md)

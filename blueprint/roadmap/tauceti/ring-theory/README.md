@@ -2,7 +2,7 @@
 
 Results in Tau Ceti's `TauCeti.RingTheory` modules, and the roadmaps whose articles are mostly there: by roadmap, then by area.
 
-## [Analytic adic geometry for… to Polynomial](part-01/README.md)
+## [Analytic adic geometry for… to Power Series](part-01/README.md)
 
 - [Analytic adic geometry for diamonds](part-01/analytic-adic-geometry-for-diamonds/README.md)
 - [Bordism, formal groups and chromatic operations](part-01/bordism-formal-groups-and-chromatic-operations/README.md)
@@ -16,18 +16,17 @@ Results in Tau Ceti's `TauCeti.RingTheory` modules, and the roadmaps whose artic
 - [p-adic measures, completed group algebras, and characteristic ideals](part-01/p-adic-measures-completed-group-algebras-and-cha/README.md)
 - [Rigid analytic geometry](part-01/rigid-analytic-geometry/README.md)
 - [Scheme, stack, cohomology and intersection foundations](part-01/scheme-stack-cohomology-and-intersection-foundat/README.md)
-- [Huber](part-01/huber/README.md)
 - [Ideal](part-01/ideal/README.md)
 - [Iwasawa](part-01/iwasawa/README.md)
-- [Krull Schmidt](part-01/krull-schmidt/README.md)
+- [Krull–Schmidt](part-01/krull-schmidt/README.md)
 - [Local Ring](part-01/local-ring/README.md)
-- [Mv Polynomial](part-01/mv-polynomial/README.md)
+- [Multivariate Polynomials](part-01/multivariate-polynomials/README.md)
 - [Mv Power Series](part-01/mv-power-series/README.md)
 - [Polynomial](part-01/polynomial/README.md)
+- [Power Series](part-01/power-series/README.md)
 
-## [Power Series to Other results](part-02/README.md)
+## [Regular Local Ring to Other results](part-02/README.md)
 
-- [Power Series](part-02/power-series/README.md)
 - [Regular Local Ring](part-02/regular-local-ring/README.md)
 - [Semisimple](part-02/semisimple/README.md)
 - [Other results](part-02/other-results/README.md)

@@ -27,7 +27,7 @@ TauCeti.morley_countableModelCount.{u, v, uι} {L : FirstOrder.Language} [L.IsRe
 ## Proof depends on
 
 - [Morley's dichotomy on the tier `ℕ`](morleys-dichotomy-on-the-tier-n.md)
-- [Silver's theorem](../../other-areas/set-theory/silvers-theorem.md)
+- [Silver's theorem relative to a Borel subset](../../other-areas/set-theory/silvers-theorem-relative-to-a-borel-subset.md)
 
 ## Lean
 

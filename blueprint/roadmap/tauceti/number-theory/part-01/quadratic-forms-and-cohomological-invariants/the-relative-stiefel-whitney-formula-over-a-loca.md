@@ -32,7 +32,7 @@ TauCeti.galoisEvens_kummerClass_eq_zero_iff_localHasse_eq.{u} {K L : Type u} [Fi
 
 - [Artin--Wedderburn over a separably closed field](../../../algebra/central-simple/artin-wedderburn-over-a-separably-closed-field.md)
 - [The comparison isomorphism](the-comparison-isomorphism.md)
-- [The cup-norm theorem](../../../field-theory/galois-cohomology/the-cup-norm-theorem.md)
+- [The cup-norm theorem](../../../field-theory/other-results/the-cup-norm-theorem.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [Serre's formula for the Evens norm of a Kummer class (Serre, Théorème 1′ at `n = 2`)](../../../field-theory/other-results/serres-formula-for-the-evens-norm-of-a-kummer-cl.md)

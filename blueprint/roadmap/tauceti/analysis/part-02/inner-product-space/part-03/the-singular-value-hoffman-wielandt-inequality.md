@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 - [Abel's inequality, comparison form](../../../../algebra/other-results/abels-inequality-comparison-form.md)
 - [ContinuousLinearMap.singularValue](../../../part-01/operator-theory/continuouslinearmap-singularvalue.md)
 - [Courant–Fischer, lower direction](../part-01/courant-fischer-lower-direction.md)
-- [Eckart–Young](../../operator-ideal/eckart-young.md)
+- [Eckart–Young for Ky Fan gauges](../../operator-ideal/eckart-young-for-ky-fan-gauges.md)
 - [Ky Fan's maximum principle, attainment](../part-02/ky-fans-maximum-principle-attainment.md)
 
 ## Lean

@@ -28,14 +28,14 @@ TauCeti.exists_isDemushkin_range_demushkinCharacter_eq_iff_of_even {p : ℕ} [hp
 
 ## Depends on
 
-- [The Demushkin predicate](../../profinite-and-pro-p-groups/the-demushkin-predicate.md)
+- [The Demushkin predicate](../../profinite-and-pro-p-groups/part-01/the-demushkin-predicate.md)
 
 ## Proof depends on
 
 - [Burnside's basis theorem, cardinal form](burnsides-basis-theorem-cardinal-form.md)
-- [The existence theorem of the classification of Demushkin groups, rank one (Labute, Remark 2 (iii); NSW (3.9.10))](../../profinite-and-pro-p-groups/the-existence-theorem-of-the-classification-of-d.md)
-- [Labute's Theorem 2](../../profinite-and-pro-p-groups/labutes-theorem-2.md)
-- [The necessity half of the existence theorem for `q ≠ 2` (Labute, Theorem 1)](../../profinite-and-pro-p-groups/the-necessity-half-of-the-existence-theorem-for.md)
+- [The existence theorem of the classification of Demushkin groups, rank one (Labute, Remark 2 (iii); NSW (3.9.10))](../../profinite-and-pro-p-groups/part-01/the-existence-theorem-of-the-classification-of-d.md)
+- [Labute's Theorem 4: a Demushkin group has exactly one continuous character with the prescription property](labutes-theorem-4-a-demushkin-group-has-exactly.md)
+- [The necessity half of the existence theorem for `q ≠ 2` (Labute, Theorem 1)](../../profinite-and-pro-p-groups/part-01/the-necessity-half-of-the-existence-theorem-for.md)
 
 ## Lean
 

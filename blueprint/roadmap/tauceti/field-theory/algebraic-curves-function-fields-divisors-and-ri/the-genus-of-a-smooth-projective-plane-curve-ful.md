@@ -34,13 +34,13 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The dimension theorem at the origin](../../ring-theory/part-01/mv-polynomial/the-dimension-theorem-at-the-origin.md)
+- [The dimension theorem at the origin](../../ring-theory/part-01/multivariate-polynomials/the-dimension-theorem-at-the-origin.md)
 - [The fundamental identity](../function-field/part-01/the-fundamental-identity.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../function-field/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [The Hurwitz genus formula (Stichtenoth, Theorem 3.4.13)](the-hurwitz-genus-formula-stichtenoth-theorem-3.md)
 - [The Jacobian criterion for a hypersurface](../../ring-theory/part-02/regular-local-ring/the-jacobian-criterion-for-a-hypersurface.md)
 - [Riemann's theorem](riemanns-theorem.md)
-- [The weak approximation theorem](../function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

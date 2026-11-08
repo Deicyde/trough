@@ -30,7 +30,7 @@ TauCeti.eLpNorm_le_inv_mul_totalVariationOn.{u_1} {E : Type u_1} [NormedAddCommG
 
 ## Proof depends on
 
-- [Brunn–Minkowski inequality](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/brunn-minkowski-inequality.md)
+- [Brunn–Minkowski for a shell](../../../measure-theory/euclidean-isoperimetry-sharp-inequalities-and-ri/brunn-minkowski-for-a-shell.md)
 - [The coarea formula for total variation](the-coarea-formula-for-total-variation.md)
 - [Minkowski's integral inequality](../../../measure-theory/integral/part-01/minkowskis-integral-inequality.md)
 - [The Morse--Sard theorem](../analytic-heegaard-floer-homology/the-morse-sard-theorem.md)

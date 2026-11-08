@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The Fenchel–Young inequality](../../analysis/part-02/convex/the-fenchel-young-inequality.md)
-- [Rockafellar's theorem](../optimal-transport/rockafellars-theorem.md)
+- [Rockafellar's theorem](../optimal-transport/part-01/rockafellars-theorem.md)
 
 ## Lean
 

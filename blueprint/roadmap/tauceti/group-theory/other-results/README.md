@@ -4,8 +4,6 @@ Results named in the rest of Tau Ceti's `TauCeti.GroupTheory` modules and in no 
 
 - [Artin's identity for fixed points](artins-identity-for-fixed-points.md)
 - [Euler's theorem on an `n`-th root of unity](eulers-theorem-on-an-n-th-root-of-unity.md)
-- [The Frobenius kernel meets `H` exactly in the identity](the-frobenius-kernel-meets-h-exactly-in-the-iden.md)
-- [The Frobenius kernel meets each conjugate of `H` exactly in the identity](the-frobenius-kernel-meets-each-conjugate-of-h-e.md)
 - [Furtwängler's theorem, the group-theoretic principal ideal theorem](furtwanglers-theorem-the-group-theoretic-princip.md)
 - [Gaschütz's counting lemma](gaschutzs-counting-lemma.md)
 - [Gaschütz's lemma](gaschutzs-lemma.md)

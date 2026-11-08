@@ -26,7 +26,6 @@ TauCeti.ClassFieldTheory.globalInv (K : Type) [Field K] [NumberField K]
 
 ## Proof depends on
 
-- [Artin reciprocity commutes with conjugation](../../part-02/class-field-theory/artin-reciprocity-commutes-with-conjugation.md)
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
@@ -37,7 +36,6 @@ TauCeti.ClassFieldTheory.globalInv (K : Type) [Field K] [NumberField K]
 - [The Galois group of the maximal unramified extension is the profinite integers](../local-fields-and-ramification/the-galois-group-of-the-maximal-unramified-exten.md)
 - [The Hasse principle for Brauer classes, from idele-class `H¹`](../../part-02/class-field-theory/the-hasse-principle-for-brauer-classes-from-idel.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
-- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [The Kummer case of the second fundamental inequality](../../part-02/class-field-theory/the-kummer-case-of-the-second-fundamental-inequa.md)
 - [The local class formation](the-local-class-formation.md)
 - [The Mackey formula for the degree-one corestriction cochain](../../../representation-theory/homological/the-mackey-formula-for-the-degree-one-corestrict.md)

@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Algebraic Hartogs principle for… to Krull–Akizuki
+# Algebraic Hartogs principle for… to Krull–Akizuki for Mathlib's…
 
 - [Algebraic Hartogs principle for fractions](algebraic-hartogs-principle-for-fractions.md)
 - [The Auslander–Buchsbaum formula](the-auslander-buchsbaum-formula.md)
@@ -23,4 +23,4 @@ navigation: transparent
 - [Jacobi's formula](jacobis-formula.md)
 - [The Jacobian criterion for étaleness](the-jacobian-criterion-for-etaleness.md)
 - [Kedlaya's estimate (4.9.1) in the normalisation `λ_ρ(p) = ρ`](kedlayas-estimate-4-9-1-in-the-normalisation-p.md)
-- [Krull–Akizuki](krull-akizuki.md)
+- [Krull–Akizuki for Mathlib's `integralClosure`](krull-akizuki-for-mathlibs-integralclosure.md)

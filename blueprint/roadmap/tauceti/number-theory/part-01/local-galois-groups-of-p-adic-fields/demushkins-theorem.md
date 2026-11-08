@@ -19,7 +19,7 @@ TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu (p : ℕ) [Fact (Nat.Prime p)]
 
 ## Depends on
 
-- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/the-demushkin-predicate.md)
+- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/part-01/the-demushkin-predicate.md)
 
 ## Proof depends on
 

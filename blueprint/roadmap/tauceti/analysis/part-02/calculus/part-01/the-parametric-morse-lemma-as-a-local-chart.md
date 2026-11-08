@@ -42,7 +42,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The inverse function theorem produces a `C^n` inverse](the-inverse-function-theorem-produces-a-c-n-inve.md)
+- [The inverse function theorem, with a `C^n` inverse on the whole target](the-inverse-function-theorem-with-a-c-n-inverse.md)
 - [Taylor's formula to second order](../part-02/taylors-formula-to-second-order.md)
 
 ## Lean

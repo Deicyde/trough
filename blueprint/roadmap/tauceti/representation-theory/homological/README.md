@@ -7,7 +7,6 @@ Results named in Tau Ceti's `TauCeti.RepresentationTheory.Homological` modules a
 - [The degree-two finite-quotient colimit theorem](the-degree-two-finite-quotient-colimit-theorem.md)
 - [The degree-zero finite-quotient colimit theorem](the-degree-zero-finite-quotient-colimit-theorem.md)
 - [The finite-quotient colimit theorem in every degree](the-finite-quotient-colimit-theorem-in-every-deg.md)
-- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [The Mackey double-coset formula in degree one (NSW (1.5.6))](the-mackey-double-coset-formula-in-degree-one-ns.md)
 - [The Mackey formula for the degree-one corestriction cochain](the-mackey-formula-for-the-degree-one-corestrict.md)
 - [Nakayama–Rim, Sylow form](nakayama-rim-sylow-form.md)

@@ -34,7 +34,6 @@ TauCeti.ClassFieldTheory.localCyclotomicCharacter_artinMap_unit (p : ℕ) [Fact 
 
 ## Proof depends on
 
-- [Artin reciprocity commutes with conjugation](../../part-02/class-field-theory/artin-reciprocity-commutes-with-conjugation.md)
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
@@ -42,7 +41,6 @@ TauCeti.ClassFieldTheory.localCyclotomicCharacter_artinMap_unit (p : ℕ) [Fact 
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
 - [The Galois group of the maximal unramified extension is the profinite integers](../local-fields-and-ramification/the-galois-group-of-the-maximal-unramified-exten.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
-- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [The local invariant](../class-field-theory/the-local-invariant.md)
 - [Restriction through Shapiro's lemma](../../../representation-theory/homological/restriction-through-shapiros-lemma.md)
 - [Tate's theorem](../../../representation-theory/homological/tates-theorem.md)

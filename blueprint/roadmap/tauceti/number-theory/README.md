@@ -28,7 +28,7 @@ Results in Tau Ceti's `TauCeti.NumberTheory` modules, and the roadmaps whose art
 ## [Arithmetic Dirichlet Series to Other results](part-02/README.md)
 
 - [Arithmetic Dirichlet Series](part-02/arithmetic-dirichlet-series/README.md)
-- [Class Field Theory](part-02/class-field-theory/README.md)
+- [Class Field Theory: other results](part-02/class-field-theory/README.md)
 - [Diophantine Approximation](part-02/diophantine-approximation/README.md)
 - [Hecke Ring](part-02/hecke-ring/README.md)
 - [Height](part-02/height/README.md)

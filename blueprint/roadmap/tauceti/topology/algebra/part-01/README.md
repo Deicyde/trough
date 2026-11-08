@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The abelianization structure… to The successive-approximation…
+# The abelianization structure… to Structure theorem for…
 
 - [The abelianization structure theorem for one-relator pro-`p` groups](the-abelianization-structure-theorem-for-one-rel.md)
 - [Burnside's basis theorem, cardinal form](burnsides-basis-theorem-cardinal-form.md)
@@ -15,6 +15,8 @@ navigation: transparent
 - [Gaschütz's lifting lemma for profinite groups](gaschutzs-lifting-lemma-for-profinite-groups.md)
 - [Henkel's open mapping theorem](henkels-open-mapping-theorem.md)
 - [Henkel's theorem in quotient form](henkels-theorem-in-quotient-form.md)
+- [Labute's Theorem 2 at the even-rank dyadic endpoint](labutes-theorem-2-at-the-even-rank-dyadic-endpoi.md)
+- [Labute's Theorem 4: a Demushkin group has exactly one continuous character with the prescription property](labutes-theorem-4-a-demushkin-group-has-exactly.md)
 - [Lagrange's theorem for profinite groups](lagranges-theorem-for-profinite-groups.md)
 - [Lyndon's theorem for the relation module (NSW (5.6.6))](lyndons-theorem-for-the-relation-module-nsw-5-6.md)
 - [Macbeath's theorem](macbeaths-theorem.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [The open Frattini criterion](the-open-frattini-criterion.md)
 - [The Schreier bound](the-schreier-bound.md)
 - [Structure theorem for topologically finitely generated abelian pro-`p` groups](structure-theorem-for-topologically-finitely-gen.md)
-- [Structure theorem for torsion-free topologically finitely generated abelian pro-`p` groups](structure-theorem-for-torsion-free-topologically.md)
-- [The successive-approximation theorem with tails](the-successive-approximation-theorem-with-tails.md)

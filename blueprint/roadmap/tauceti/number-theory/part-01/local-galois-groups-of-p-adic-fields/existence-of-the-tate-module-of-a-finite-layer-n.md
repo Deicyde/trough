@@ -25,7 +25,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Artin reciprocity commutes with conjugation](../../part-02/class-field-theory/artin-reciprocity-commutes-with-conjugation.md)
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
@@ -33,7 +32,6 @@ Its statement uses no other declaration mapped here.
 - [Dimension shifting in every positive degree](../../../representation-theory/continuous-cohomology-of-profinite-groups/dimension-shifting-in-every-positive-degree.md)
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
-- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [The local class formation](../class-field-theory/the-local-class-formation.md)
 - [The local invariant](../class-field-theory/the-local-invariant.md)

@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 - [The abstract residue theorem (Stichtenoth, (1.45))](../../algebraic-curves-function-fields-divisors-and-ri/the-abstract-residue-theorem-stichtenoth-1-45.md)
 - [Riemann's theorem](../../algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
 - [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
-- [The weak approximation theorem](the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

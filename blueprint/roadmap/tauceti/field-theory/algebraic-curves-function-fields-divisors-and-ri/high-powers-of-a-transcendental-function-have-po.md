@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 - [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [TauCeti.Divisor.sectionRing](tauceti-divisor-sectionring.md)
-- [The weak approximation theorem](../function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

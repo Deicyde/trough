@@ -24,7 +24,7 @@ TauCeti.Peripheral.peripheralAut_eq_top_rank_one.{u_1} {p : ℕ} {F : Type u_1} 
 
 ## Proof depends on
 
-- [TauCeti.profiniteFrattini](../profinite-and-pro-p-groups/tauceti-profinitefrattini.md)
+- [TauCeti.profiniteFrattini](../profinite-and-pro-p-groups/part-01/tauceti-profinitefrattini.md)
 
 ## Lean
 

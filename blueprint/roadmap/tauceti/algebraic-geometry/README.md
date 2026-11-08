@@ -11,5 +11,5 @@ Results in Tau Ceti's `TauCeti.AlgebraicGeometry` modules, and the roadmaps whos
 - [Stable reduction of curves and stable maps](stable-reduction-of-curves-and-stable-maps/README.md)
 - [Étale cohomology foundations](etale-cohomology-foundations/README.md)
 - [Adic Space](adic-space/README.md)
-- [Elliptic Curve](elliptic-curve/README.md)
+- [Elliptic Curve: other results](elliptic-curve/README.md)
 - [Other results](other-results/README.md)

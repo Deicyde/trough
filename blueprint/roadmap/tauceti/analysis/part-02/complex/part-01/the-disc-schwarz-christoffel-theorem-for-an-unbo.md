@@ -75,7 +75,7 @@ Its statement uses no other declaration mapped here.
 - [Rigidity of the pre-Schwarzian derivative](../../../part-01/conformal-mapping-and-the-geometric-theory-of-ho/part-01/rigidity-of-the-pre-schwarzian-derivative.md)
 - [Rouché's theorem for a disc, classical form](../../../part-01/conformal-mapping-and-the-geometric-theory-of-ho/part-02/rouches-theorem-for-a-disc-classical-form.md)
 - [Schwarz reflection principle (real axis)](../../../part-01/conformal-mapping-and-the-geometric-theory-of-ho/part-01/schwarz-reflection-principle-real-axis.md)
-- [The Schwarz--Christoffel theorem for a bounded polygonal Jordan domain](../../../part-01/conformal-mapping-and-the-geometric-theory-of-ho/part-01/the-schwarz-christoffel-theorem-for-a-bounded-po.md)
+- [The Schwarz--Christoffel formula](../../../part-01/conformal-mapping-and-the-geometric-theory-of-ho/part-02/the-schwarz-christoffel-formula.md)
 - [The Schwarz--Christoffel theorem for an unbounded polygonal Jordan domain](../../../part-01/conformal-mapping-and-the-geometric-theory-of-ho/part-01/the-schwarz-christoffel-theorem-for-an-unbounded.md)
 
 ## Lean

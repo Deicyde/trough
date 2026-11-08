@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: HasStrictFDerivAt.contDiffOn_toOpenPartialHomeomorph_symm, TauCeti.ContDiffOn.exists_openPartialHomeomorph
+lean: HasStrictFDerivAt.contDiffOn_toOpenPartialHomeomorph_symm
 statement: formalized
 proof: formalized
 ---
@@ -28,19 +28,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`HasStrictFDerivAt.contDiffOn_toOpenPartialHomeomorph_symm`](https://taucetiproject.org/docs/TauCeti/Analysis/Calculus/InverseFunctionTheorem.html#HasStrictFDerivAt.contDiffOn_toOpenPartialHomeomorph_symm).
-
-## Other forms
-
-**The inverse function theorem, with a `C^n` inverse on the whole target.** Formalized in Tau Ceti as [`TauCeti.ContDiffOn.exists_openPartialHomeomorph`](https://taucetiproject.org/docs/TauCeti/Analysis/Calculus/InverseFunctionTheorem.html#TauCeti.ContDiffOn.exists_openPartialHomeomorph).
-
-```lean
-TauCeti.ContDiffOn.exists_openPartialHomeomorph.{u_1, u_2, u_3} {𝕂 : Type u_1} [RCLike 𝕂]
-  {E : Type u_2} [NormedAddCommGroup E] [NormedSpace 𝕂 E] [CompleteSpace E] {F : Type u_3}
-  [NormedAddCommGroup F] [NormedSpace 𝕂 F] {n : WithTop ℕ∞} {g : E → F} {s : Set E} {a : E}
-  (hg : ContDiffOn 𝕂 n g s) (hs : IsOpen s) (ha : a ∈ s) (hn : 1 ≤ n) {e : E ≃L[𝕂] F}
-  (he : ↑e = fderiv 𝕂 g a) :
-  ∃ Θ, ↑Θ = g ∧ a ∈ Θ.source ∧ Θ.source ⊆ s ∧ ContDiffOn 𝕂 n (↑Θ.symm) Θ.target
-```
 
 ## Sources
 

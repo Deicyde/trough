@@ -24,7 +24,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Cartan projection preserves a strict PBW degree bound](the-cartan-projection-preserves-a-strict-pbw-deg.md)
 - [Chevalley's restriction theorem, image form](chevalleys-restriction-theorem-image-form.md)
 - [Harish-Chandra surjectivity with a degree bound](harish-chandra-surjectivity-with-a-degree-bound.md)
 - [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)

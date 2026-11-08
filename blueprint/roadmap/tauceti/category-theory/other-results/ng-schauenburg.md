@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.iterate_frobeniusSchurRotate_eq_id, TauCeti.frobeniusSchurIndicator_two_eq_one_or_eq_zero_or_eq_neg_one
+lean: TauCeti.iterate_frobeniusSchurRotate_eq_id
 statement: formalized
 proof: formalized
 ---
@@ -23,22 +23,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.iterate_frobeniusSchurRotate_eq_id`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Monoidal/Pivotal/FrobeniusSchur/Basic.html#TauCeti.iterate_frobeniusSchurRotate_eq_id).
-
-## Other forms
-
-**Ng–Schauenburg trichotomy.** Formalized in Tau Ceti as [`TauCeti.frobeniusSchurIndicator_two_eq_one_or_eq_zero_or_eq_neg_one`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/Monoidal/Pivotal/FrobeniusSchur/Simple.html#TauCeti.frobeniusSchurIndicator_two_eq_one_or_eq_zero_or_eq_neg_one).
-
-```lean
-TauCeti.frobeniusSchurIndicator_two_eq_one_or_eq_zero_or_eq_neg_one.{w, v, u} {C : Type u}
-  [CategoryTheory.Category.{v, u} C] [CategoryTheory.MonoidalCategory C]
-  [CategoryTheory.Preadditive C] [CategoryTheory.MonoidalPreadditive C]
-  [CategoryTheory.RigidCategory C] [TauCeti.PivotalCategory C] [CategoryTheory.Limits.HasKernels C]
-  (k : Type w) [Field k] [IsAlgClosed k] [CategoryTheory.Linear k C]
-  [CategoryTheory.MonoidalLinear k C] (V : C) [CategoryTheory.Simple V]
-  [FiniteDimensional k (V ⟶ V)] [CategoryTheory.Simple Vᘁ] :
-  TauCeti.frobeniusSchurIndicator k V 2 = 1 ∨
-    TauCeti.frobeniusSchurIndicator k V 2 = 0 ∨ TauCeti.frobeniusSchurIndicator k V 2 = -1
-```
 
 ## Sources
 

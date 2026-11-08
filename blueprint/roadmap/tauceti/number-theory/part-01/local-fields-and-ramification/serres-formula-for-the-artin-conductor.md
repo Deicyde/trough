@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hasse--Arf](../../part-02/local-field/hasse-arf.md)
+- [Hasse--Arf in prime degree](../../part-02/local-field/hasse-arf-in-prime-degree.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The splitting criterion for quaternion algebras](../quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)

@@ -15,6 +15,7 @@ Results named in Tau Ceti's `TauCeti.RepresentationTheory.Induction` modules and
 - [Frobenius reciprocity for class functions](frobenius-reciprocity-for-class-functions.md)
 - [The Mackey criterion for a linear character of an inverted subgroup of index two](the-mackey-criterion-for-a-linear-character-of-a.md)
 - [The Mackey decomposition formula, character form](the-mackey-decomposition-formula-character-form.md)
+- [The Mackey decomposition of a restricted induced class function](the-mackey-decomposition-of-a-restricted-induced.md)
 - [The Mackey irreducibility criterion](the-mackey-irreducibility-criterion.md)
 - [The modular Artin induction theorem (NSW (7.3.4), Milne ADT I Lemma 2.10)](the-modular-artin-induction-theorem-nsw-7-3-4-mi.md)
 - [The modular Artin theorem with multiplier `|G|`](the-modular-artin-theorem-with-multiplier-g.md)

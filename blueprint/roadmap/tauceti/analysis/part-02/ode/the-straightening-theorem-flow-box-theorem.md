@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The inverse function theorem produces a `C^n` inverse](../calculus/part-01/the-inverse-function-theorem-produces-a-c-n-inve.md)
+- [The inverse function theorem, with a `C^n` inverse on the whole target](../calculus/part-01/the-inverse-function-theorem-with-a-c-n-inverse.md)
 
 ## Lean
 

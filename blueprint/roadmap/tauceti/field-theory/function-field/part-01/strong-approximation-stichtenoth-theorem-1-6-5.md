@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Riemann's theorem](../../algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
-- [The weak approximation theorem](the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

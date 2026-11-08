@@ -26,7 +26,7 @@ ContinuousLinearMap.norm_sum_inner_le_kyFanGauge.{u_1, u_2, u_3, u_4} {𝕜 : Ty
 
 ## Proof depends on
 
-- [Eckart–Young](eckart-young.md)
+- [Eckart–Young for Ky Fan gauges](eckart-young-for-ky-fan-gauges.md)
 - [Ky Fan's maximum principle, attainment](../inner-product-space/part-02/ky-fans-maximum-principle-attainment.md)
 
 ## Lean

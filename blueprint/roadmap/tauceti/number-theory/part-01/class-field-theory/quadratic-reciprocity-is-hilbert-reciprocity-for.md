@@ -31,7 +31,7 @@ TauCeti.ClassFieldTheory.sum_finiteHilbertInvariantAt_add_sum_infiniteHilbertInv
 
 ## Proof depends on
 
-- [The cup-norm theorem](../../../field-theory/galois-cohomology/the-cup-norm-theorem.md)
+- [The cup-norm theorem](../../../field-theory/other-results/the-cup-norm-theorem.md)
 - [Dedekind's different theorem, the tame case](../../part-02/local-field/dedekinds-different-theorem-the-tame-case.md)
 - [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/eulers-theorem-on-an-n-th-root-of-unity.md)
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)

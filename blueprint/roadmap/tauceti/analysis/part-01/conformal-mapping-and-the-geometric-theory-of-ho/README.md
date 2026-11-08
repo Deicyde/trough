@@ -1,6 +1,6 @@
 # Conformal mapping and the geometric theory of holomorphic functions
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ConformalMapping/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ConformalMapping/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 ## [The Riemann mapping theorem to Janiszewski's theorem](part-01/README.md)
 
@@ -34,6 +34,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Morera's theorem](part-02/moreras-theorem.md)
 - [Poincaré defect identity (norm form)](part-02/poincare-defect-identity-norm-form.md)
 - [Rouché's theorem for a disc, classical form](part-02/rouches-theorem-for-a-disc-classical-form.md)
+- [The Schwarz--Christoffel formula](part-02/the-schwarz-christoffel-formula.md)
 - [Strict Schwarz lemma](part-02/strict-schwarz-lemma.md)
 - [Vitali's convergence theorem](part-02/vitalis-convergence-theorem.md)
 - [Vitali's theorem with prescribed pointwise values](part-02/vitalis-theorem-with-prescribed-pointwise-values.md)

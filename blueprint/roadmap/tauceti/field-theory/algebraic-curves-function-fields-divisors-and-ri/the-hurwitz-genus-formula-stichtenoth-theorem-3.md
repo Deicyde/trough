@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../function-field/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [Riemann's theorem](riemanns-theorem.md)
 - [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
-- [The weak approximation theorem](../function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

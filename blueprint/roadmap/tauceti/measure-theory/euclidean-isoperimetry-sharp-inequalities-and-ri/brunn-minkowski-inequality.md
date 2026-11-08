@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.volume_rpow_add_volume_rpow_le, TauCeti.finrank_mul_rpow_pow_mul_le_volume_real_sub
+lean: TauCeti.volume_rpow_add_volume_rpow_le
 statement: formalized
 proof: formalized
 ---
@@ -34,22 +34,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.volume_rpow_add_volume_rpow_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Measure/Lebesgue/BrunnMinkowski/Basic.html#TauCeti.volume_rpow_add_volume_rpow_le).
-
-## Other forms
-
-**Brunn–Minkowski for a shell.** Formalized in Tau Ceti as [`TauCeti.finrank_mul_rpow_pow_mul_le_volume_real_sub`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Measure/Lebesgue/BrunnMinkowski/Basic.html#TauCeti.finrank_mul_rpow_pow_mul_le_volume_real_sub).
-
-```lean
-TauCeti.finrank_mul_rpow_pow_mul_le_volume_real_sub.{u_1} {E : Type u_1} [NormedAddCommGroup E]
-  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E]
-  (hn : Module.finrank ℝ E ≠ 0) {G F : Set E}
-  (hG : MeasureTheory.NullMeasurableSet G MeasureTheory.volume) (hG0 : G.Nonempty)
-  (hF : MeasureTheory.volume F ≠ ⊤) {r : ℝ} (hr : 0 < r) (hsub : G + Metric.ball 0 r ⊆ F) :
-  ↑(Module.finrank ℝ E) *
-        (MeasureTheory.volume.real G ^ (↑(Module.finrank ℝ E))⁻¹) ^ (Module.finrank ℝ E - 1) *
-      (r * MeasureTheory.volume.real (Metric.ball 0 1) ^ (↑(Module.finrank ℝ E))⁻¹) ≤
-    MeasureTheory.volume.real F - MeasureTheory.volume.real G
-```
 
 ## Sources
 

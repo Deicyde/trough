@@ -45,7 +45,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.profiniteFrattini](../profinite-and-pro-p-groups/tauceti-profinitefrattini.md)
+- [TauCeti.profiniteFrattini](../profinite-and-pro-p-groups/part-01/tauceti-profinitefrattini.md)
 
 ## Lean
 

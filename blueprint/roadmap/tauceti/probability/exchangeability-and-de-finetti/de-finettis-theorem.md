@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Probability.deFinetti, TauCeti.Probability.deFinetti_equivalence, TauCeti.Probability.conditionallyIID_of_exchangeableFamily, TauCeti.Probability.deFinetti_tendsto_empiricalMeasure_apply, TauCeti.Probability.deFinetti_empiricalMeasure, TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat, TauCeti.Probability.deFinetti_viaL2, TauCeti.Probability.deFinetti_viaKoopman, TauCeti.Probability.conditionallyIID_of_exchangeable, TauCeti.Probability.mixedIIDWith_of_contractable, TauCeti.Probability.exchangeable_iff_mixedIID, TauCeti.Probability.mixedIID_of_contractable, TauCeti.Probability.mixedIID_of_exchangeable, TauCeti.Probability.deFinetti_mixture
+lean: TauCeti.Probability.deFinetti, TauCeti.Probability.deFinetti_equivalence, TauCeti.Probability.conditionallyIID_of_exchangeableFamily, TauCeti.Probability.deFinetti_tendsto_empiricalMeasure_apply, TauCeti.Probability.deFinetti_empiricalMeasure, TauCeti.Probability.deFinetti_viaL2, TauCeti.Probability.deFinetti_viaKoopman, TauCeti.Probability.conditionallyIID_of_exchangeable, TauCeti.Probability.mixedIIDWith_of_contractable, TauCeti.Probability.exchangeable_iff_mixedIID, TauCeti.Probability.mixedIID_of_contractable, TauCeti.Probability.mixedIID_of_exchangeable, TauCeti.Probability.deFinetti_mixture
 statement: formalized
 proof: formalized
 ---
@@ -26,6 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The contractable form of de Finetti's theorem via `L²` averaging](../other-results/the-contractable-form-of-de-finettis-theorem-via.md)
+- [De Finetti's theorem transported along an explicit enumeration](../other-results/de-finettis-theorem-transported-along-an-explici.md)
 - [The mean ergodic theorem for conditional expectations](../other-results/the-mean-ergodic-theorem-for-conditional-expecta.md)
 
 ## Lean
@@ -84,17 +85,6 @@ TauCeti.Probability.deFinetti_empiricalMeasure.{u_1, u_2} {Ω : Type u_1} {α : 
       ∀ᵐ (ω : Ω) ∂μ,
         Filter.Tendsto (fun n => TauCeti.Probability.empiricalMeasure (fun i => X i ω) n)
           Filter.atTop (nhds (ν ω))
-```
-
-**De Finetti's theorem transported along an explicit enumeration.** Formalized in Tau Ceti as [`TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/CountableIndex.html#TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat).
-
-```lean
-TauCeti.Probability.conditionallyIID_of_exchangeableFamily_of_equiv_nat.{u_1, u_2, u_3}
-  {Ω : Type u_1} {α : Type u_2} {ι : Type u_3} [MeasurableSpace Ω] [MeasurableSpace α]
-  [StandardBorelSpace α] [Nonempty α] {μ : MeasureTheory.Measure Ω}
-  [MeasureTheory.IsFiniteMeasure μ] {X : ι → Ω → α}
-  (hX : TauCeti.Probability.ExchangeableFamily μ X) (e : ι ≃ ℕ)
-  (hX_meas : ∀ (i : ι), Measurable (X i)) : TauCeti.Probability.ConditionallyIID μ X
 ```
 
 **De Finetti's theorem via `L²` averaging.** Formalized in Tau Ceti as [`TauCeti.Probability.deFinetti_viaL2`](https://taucetiproject.org/docs/TauCeti/Probability/DeFinetti/ViaL2/Theorem.html#TauCeti.Probability.deFinetti_viaL2).

@@ -29,15 +29,15 @@ Its statement uses no other declaration mapped here.
 
 - [The abelianization structure theorem for one-relator pro-`p` groups](../../../topology/algebra/part-01/the-abelianization-structure-theorem-for-one-rel.md)
 - [Burnside's basis theorem, cardinal form](../../../topology/algebra/part-01/burnsides-basis-theorem-cardinal-form.md)
-- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/the-demushkin-predicate.md)
+- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/part-01/the-demushkin-predicate.md)
 - [Demushkin's theorem](demushkins-theorem.md)
 - [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [Labute's criterion](../../../topology/profinite-and-pro-p-groups/labutes-criterion.md)
-- [Labute's Theorem 2](../../../topology/profinite-and-pro-p-groups/labutes-theorem-2.md)
-- [The relative successive-approximation theorem](../../../topology/profinite-and-pro-p-groups/the-relative-successive-approximation-theorem.md)
+- [Labute's criterion](../../../topology/profinite-and-pro-p-groups/part-01/labutes-criterion.md)
+- [Labute's Theorem 4: a Demushkin group has exactly one continuous character with the prescription property](../../../topology/algebra/part-01/labutes-theorem-4-a-demushkin-group-has-exactly.md)
+- [The relative successive-approximation theorem](../../../topology/profinite-and-pro-p-groups/part-02/the-relative-successive-approximation-theorem.md)
 - [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
-- [The successive-approximation theorem with tails](../../../topology/algebra/part-01/the-successive-approximation-theorem-with-tails.md)
+- [The successive-approximation theorem with tails](../../../topology/algebra/part-02/the-successive-approximation-theorem-with-tails.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean

@@ -52,7 +52,7 @@ Its statement uses no other declaration mapped here.
 
 - [The Fenchel–Young inequality](../../analysis/part-02/convex/the-fenchel-young-inequality.md)
 - [Rademacher's theorem for extended-real convex functions](../../analysis/part-02/convex/rademachers-theorem-for-extended-real-convex-fun.md)
-- [Rockafellar's theorem](../optimal-transport/rockafellars-theorem.md)
+- [Rockafellar's theorem](../optimal-transport/part-01/rockafellars-theorem.md)
 
 ## Lean
 

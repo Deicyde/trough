@@ -2,7 +2,7 @@
 
 Results named in Tau Ceti's `TauCeti.Analysis.Complex` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-## [The angle condition of… to The Herglotz representation…](part-01/README.md)
+## [The angle condition of… to The Herglotz formula on a disc](part-01/README.md)
 
 - [The angle condition of Poincaré's theorem](part-01/the-angle-condition-of-poincares-theorem.md)
 - [The Apollonius identity for the Moebius factor](part-01/the-apollonius-identity-for-the-moebius-factor.md)
@@ -21,12 +21,13 @@ Results named in Tau Ceti's `TauCeti.Analysis.Complex` modules and in no roadmap
 - [The Dolbeault lemma on a disc](part-01/the-dolbeault-lemma-on-a-disc.md)
 - [The explicit Schwarz--Christoffel formula for a strip](part-01/the-explicit-schwarz-christoffel-formula-for-a-s.md)
 - [The fundamental-set part of Poincaré's polygon theorem](part-01/the-fundamental-set-part-of-poincares-polygon-th.md)
+- [Gauss–Bonnet for the triangles of the fan from `∞`](part-01/gauss-bonnet-for-the-triangles-of-the-fan-from.md)
 - [The Gauss–Bonnet formula](part-01/the-gauss-bonnet-formula.md)
 - [The Herglotz formula on a disc](part-01/the-herglotz-formula-on-a-disc.md)
-- [The Herglotz representation theorem](part-01/the-herglotz-representation-theorem.md)
 
-## [Identity theorem to Schwarz–Pick, Lipschitz form](part-02/README.md)
+## [The Herglotz representation… to Schwarz's lemma with prescribed…](part-02/README.md)
 
+- [The Herglotz representation theorem](part-02/the-herglotz-representation-theorem.md)
 - [Identity theorem](part-02/identity-theorem.md)
 - [The identity theorem for Riemann surfaces](part-02/the-identity-theorem-for-riemann-surfaces.md)
 - [Identity theorem on a right half-plane](part-02/identity-theorem-on-a-right-half-plane.md)
@@ -46,10 +47,10 @@ Results named in Tau Ceti's `TauCeti.Analysis.Complex` modules and in no roadmap
 - [Rigidity in the Schwarz--Pick theorem](part-02/rigidity-in-the-schwarz-pick-theorem.md)
 - [The Schoenflies theorem](part-02/the-schoenflies-theorem.md)
 - [Schwarz's lemma with prescribed zeros](part-02/schwarzs-lemma-with-prescribed-zeros.md)
-- [Schwarz–Pick, Lipschitz form](part-02/schwarz-pick-lipschitz-form.md)
 
-## [Shimizu's inequality at two… to Weyl's lemma for `\bar∂`](part-03/README.md)
+## [Schwarz–Pick, Lipschitz form to Weyl's lemma for `\bar∂`](part-03/README.md)
 
+- [Schwarz–Pick, Lipschitz form](part-03/schwarz-pick-lipschitz-form.md)
 - [Shimizu's inequality at two cusps](part-03/shimizus-inequality-at-two-cusps.md)
 - [The Stieltjes--Perron vanishing theorem](part-03/the-stieltjes-perron-vanishing-theorem.md)
 - [Uniqueness in the Riemann mapping theorem, up to a disc automorphism](part-03/uniqueness-in-the-riemann-mapping-theorem-up-to.md)

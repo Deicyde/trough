@@ -31,7 +31,7 @@ TauCeti.AlgebraicGeometry.abelJacobiMapToPicZeroFppf.{u} {S X : AlgebraicGeometr
 - [Riemann's theorem](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
 - [Serre's vanishing theorem on affine opens](../other-results/serres-vanishing-theorem-on-affine-opens.md)
 - [TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf](../algebraic-vector-bundles/tauceti-algebraicgeometry-finitelocallyfreesheaf-3.md)
-- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

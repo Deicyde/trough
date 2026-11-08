@@ -11,6 +11,7 @@ navigation: transparent
 - [Morera's theorem](moreras-theorem.md)
 - [Poincaré defect identity (norm form)](poincare-defect-identity-norm-form.md)
 - [Rouché's theorem for a disc, classical form](rouches-theorem-for-a-disc-classical-form.md)
+- [The Schwarz--Christoffel formula](the-schwarz-christoffel-formula.md)
 - [Strict Schwarz lemma](strict-schwarz-lemma.md)
 - [Vitali's convergence theorem](vitalis-convergence-theorem.md)
 - [Vitali's theorem with prescribed pointwise values](vitalis-theorem-with-prescribed-pointwise-values.md)

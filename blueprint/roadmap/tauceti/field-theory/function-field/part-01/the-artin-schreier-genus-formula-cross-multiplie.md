@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 - [The fundamental identity](the-fundamental-identity.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [The Hurwitz genus formula (Stichtenoth, Theorem 3.4.13)](../../algebraic-curves-function-fields-divisors-and-ri/the-hurwitz-genus-formula-stichtenoth-theorem-3.md)
-- [The weak approximation theorem](the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

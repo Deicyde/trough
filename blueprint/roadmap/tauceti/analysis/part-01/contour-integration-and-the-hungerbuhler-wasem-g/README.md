@@ -1,6 +1,6 @@
 # Contour integration and the Hungerbühler–Wasem generalized residue theorem
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ContourIntegration/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ContourIntegration/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Hungerbühler–Wasem generalized residue theorem for a contour cycle (HW Thm 3.3)](the-hungerbuhler-wasem-generalized-residue-theor.md)
 - [Hungerbühler--Wasem Proposition 2.2 (winding decomposition)](hungerbuhler-wasem-proposition-2-2-winding-decom.md)

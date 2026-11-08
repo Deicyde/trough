@@ -1,6 +1,6 @@
 # Algebraic topology of spaces and manifolds
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/AlgebraicTopology/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/AlgebraicTopology/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The groupoid van Kampen theorem](the-groupoid-van-kampen-theorem.md)
 - [Excision of a set with closure in the interior of the subspace](excision-of-a-set-with-closure-in-the-interior-o.md)
@@ -13,3 +13,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The top homology of a compact manifold is the module of parallel families of local classes](the-top-homology-of-a-compact-manifold-is-the-mo.md)
 - [Exactness of the Milnor sequence at `Hⱼ(lim C)`](exactness-of-the-milnor-sequence-at-hj-lim-c.md)
 - [Inductive Hurewicz vanishing criterion (singular homology)](inductive-hurewicz-vanishing-criterion-singular.md)
+- [The relative universal coefficient theorem above a projective homology module, over a hereditary commutative ring](the-relative-universal-coefficient-theorem-above.md)
+- [The relative universal coefficient theorem below the first non-projective homology, over any commutative ring `k`](the-relative-universal-coefficient-theorem-below.md)
+- [The universal coefficient theorem above a projective homology module, over a hereditary commutative ring](the-universal-coefficient-theorem-above-a-projec.md)

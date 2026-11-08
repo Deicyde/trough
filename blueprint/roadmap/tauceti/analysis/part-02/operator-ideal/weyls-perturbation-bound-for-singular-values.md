@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [ContinuousLinearMap.singularValue](../../part-01/operator-theory/continuouslinearmap-singularvalue.md)
-- [Eckart–Young](eckart-young.md)
+- [Eckart–Young for Ky Fan gauges](eckart-young-for-ky-fan-gauges.md)
 
 ## Lean
 

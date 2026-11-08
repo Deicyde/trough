@@ -2,12 +2,13 @@
 navigation: transparent
 ---
 
-# Cartan's formula to Rolle's theorem for finitely…
+# Cartan's formula to The relative Poincaré lemma
 
 - [Cartan's formula](cartans-formula.md)
 - [Duhamel's formula at a small parameter](duhamels-formula-at-a-small-parameter.md)
 - [Green's theorem on a rectangle](greens-theorem-on-a-rectangle.md)
 - [The inverse function theorem produces a `C^n` inverse](the-inverse-function-theorem-produces-a-c-n-inve.md)
+- [The inverse function theorem, with a `C^n` inverse on the whole target](the-inverse-function-theorem-with-a-c-n-inverse.md)
 - [Iterated Rolle's theorem](iterated-rolles-theorem.md)
 - [Jacobi's adjugate formula, valid at singular as well as invertible matrices](jacobis-adjugate-formula-valid-at-singular-as-we.md)
 - [Jacobi's inverse formula](jacobis-inverse-formula.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [The Poincaré lemma](the-poincare-lemma.md)
 - [Rademacher's theorem for locally Lipschitz functions](rademachers-theorem-for-locally-lipschitz-functi.md)
 - [The relative Poincaré lemma](the-relative-poincare-lemma.md)
-- [Rolle's theorem for finitely many zeros](rolles-theorem-for-finitely-many-zeros.md)

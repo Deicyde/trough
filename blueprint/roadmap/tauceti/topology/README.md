@@ -10,5 +10,4 @@ Results in Tau Ceti's `TauCeti.Topology` modules, and the roadmaps whose article
 - [Algebra](algebra/README.md)
 - [Baire](baire/README.md)
 - [Homotopy](homotopy/README.md)
-- [Metric Space](metric-space/README.md)
 - [Other results](other-results/README.md)

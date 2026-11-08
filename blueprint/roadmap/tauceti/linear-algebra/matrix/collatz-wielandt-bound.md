@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Perron–Frobenius](perron-frobenius.md)
+- [Perron–Frobenius theorem for nonnegative matrices](perron-frobenius-theorem-for-nonnegative-matrice.md)
 
 ## Lean
 

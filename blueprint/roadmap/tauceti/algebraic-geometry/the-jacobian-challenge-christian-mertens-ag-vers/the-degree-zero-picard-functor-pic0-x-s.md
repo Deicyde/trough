@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 - [The Jacobian criterion for étaleness](../../ring-theory/part-02/other-results/part-01/the-jacobian-criterion-for-etaleness.md)
 - [Riemann's theorem](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
-- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

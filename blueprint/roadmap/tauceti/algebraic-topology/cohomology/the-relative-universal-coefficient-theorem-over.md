@@ -1,7 +1,7 @@
 ---
 declaration: def
 origin: cited
-lean: TopPair.singularCohomologyDualEquiv, TopPair.singularKronecker_bijective_succ_of_projective_homology, TopPair.singularKronecker_bijective_of_projective_homology_lt, TopPair.singularKronecker_bijective_of_projective_homology
+lean: TopPair.singularCohomologyDualEquiv, TopPair.singularKronecker_bijective_of_projective_homology
 statement: formalized
 ---
 
@@ -23,33 +23,13 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The universal coefficient theorem with projective homology](../../algebra/homology/the-universal-coefficient-theorem-with-projectiv.md)
+- [The relative universal coefficient theorem below the first non-projective homology, over any commutative ring `k`](../algebraic-topology-of-spaces-and-manifolds/the-relative-universal-coefficient-theorem-below.md)
 
 ## Lean
 
 Formalized in Tau Ceti as [`TopPair.singularCohomologyDualEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient/Field.html#TopPair.singularCohomologyDualEquiv).
 
 ## Other forms
-
-**The relative universal coefficient theorem above a projective homology module, over a hereditary commutative ring.** Formalized in Tau Ceti as [`TopPair.singularKronecker_bijective_succ_of_projective_homology`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.html#TopPair.singularKronecker_bijective_succ_of_projective_homology).
-
-```lean
-TopPair.singularKronecker_bijective_succ_of_projective_homology.{w, u_1} {k : Type u_1} [CommRing k]
-  (P : TopPair) (R M : ModuleCat k) [Module.Projective k ↑R]
-  [∀ (V : ModuleCat k), CategoryTheory.HasProjectiveDimensionLE V 1]
-  [CategoryTheory.Linear k (ModuleCat k)] (n : ℕ)
-  [CategoryTheory.Projective (P.singularHomology R n)] :
-  Function.Bijective ⇑(P.singularKronecker k (n + 1))
-```
-
-**The relative universal coefficient theorem below the first non-projective homology, over any commutative ring `k`.** Formalized in Tau Ceti as [`TopPair.singularKronecker_bijective_of_projective_homology_lt`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.html#TopPair.singularKronecker_bijective_of_projective_homology_lt).
-
-```lean
-TopPair.singularKronecker_bijective_of_projective_homology_lt.{w, u_1} {k : Type u_1} [CommRing k]
-  (P : TopPair) (R M : ModuleCat k) [Module.Projective k ↑R] [CategoryTheory.Linear k (ModuleCat k)]
-  (n : ℕ) (h : ∀ j < n, CategoryTheory.Projective (P.singularHomology R j)) :
-  Function.Bijective ⇑(P.singularKronecker k n)
-```
 
 **The relative universal coefficient theorem with projective homology, over any commutative ring `k`.** Formalized in Tau Ceti as [`TopPair.singularKronecker_bijective_of_projective_homology`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.html#TopPair.singularKronecker_bijective_of_projective_homology).
 

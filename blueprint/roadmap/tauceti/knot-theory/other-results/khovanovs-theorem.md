@@ -37,7 +37,7 @@ TauCeti.OrientedPDCode.khovanovEulerChar_eq_mul_eval₂_jonesPolynomial.{u} {n :
 - [The enhanced state sum of a nonempty diagram is `(q + q⁻¹)` times its Jones polynomial at `t ^ (1/2) = -q`](../khovanov-homology-of-classical-links/the-enhanced-state-sum-of-a-nonempty-diagram-is.md)
 - [Euler's formula for a PD-code](eulers-formula-for-a-pd-code.md)
 - [Euler–Poincaré for Khovanov homology](euler-poincare-for-khovanov-homology.md)
-- [Hurwitz's transposition bound](../../group-theory/perm/hurwitzs-transposition-bound.md)
+- [Hurwitz's transposition bound](../../group-theory/permutations/hurwitzs-transposition-bound.md)
 - [TauCeti.Khovanov.fiberwiseSplit](../khovanov-homology-of-classical-links/tauceti-khovanov-fiberwisesplit.md)
 - [Two states differing exactly at a crossing do not both have two circles through it](../khovanov-homology-of-classical-links/two-states-differing-exactly-at-a-crossing-do-no.md)
 

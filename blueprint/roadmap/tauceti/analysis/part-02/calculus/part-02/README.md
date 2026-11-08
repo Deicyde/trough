@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Sard's lemma on the flat stratum to Uniform first-order Taylor…
+# Rolle's theorem for finitely… to Uniform first-order Taylor…
 
+- [Rolle's theorem for finitely many zeros](rolles-theorem-for-finitely-many-zeros.md)
 - [Sard's lemma on the flat stratum](sards-lemma-on-the-flat-stratum.md)
 - [Sard's theorem on the locus where the derivative vanishes](sards-theorem-on-the-locus-where-the-derivative.md)
 - [Stokes' formula on the boundary of a cube for a closed two-form `ψ` that is C¹ on `(ℝ × ℝ) × ℝ`](stokes-formula-on-the-boundary-of-a-cube-for-a-c.md)

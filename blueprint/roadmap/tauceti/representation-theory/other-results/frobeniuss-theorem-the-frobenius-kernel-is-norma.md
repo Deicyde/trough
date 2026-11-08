@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.frobeniusKernelSubgroup_normal, TauCeti.frobeniusKernelSubgroup_eq_of_isComplement'
+lean: TauCeti.frobeniusKernelSubgroup_normal
 statement: formalized
 proof: formalized
 ---
@@ -24,16 +24,6 @@ Its statement uses no other declaration mapped here.
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.frobeniusKernelSubgroup_normal`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/FrobeniusGroup/Basic.html#TauCeti.frobeniusKernelSubgroup_normal).
-
-## Other forms
-
-**Frobenius's theorem returns the normal complement it was handed.** Formalized in Tau Ceti as [`TauCeti.frobeniusKernelSubgroup_eq_of_isComplement'`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/FrobeniusGroup/Basic.html#TauCeti.frobeniusKernelSubgroup_eq_of_isComplement').
-
-```lean
-TauCeti.frobeniusKernelSubgroup_eq_of_isComplement'.{u} {G : Type u} [Group G] [Finite G]
-  {H N : Subgroup G} [N.Normal] (hH : TauCeti.IsTISubgroup H) (hNH : N.IsComplement' H) :
-  TauCeti.frobeniusKernelSubgroup hH = N
-```
 
 ## Sources
 

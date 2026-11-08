@@ -36,10 +36,10 @@ Its statement uses no other declaration mapped here.
 - [Dedekind's different theorem, first part (Stichtenoth, Theorem 3.5.1(a))](dedekinds-different-theorem-first-part-stichteno.md)
 - [The fundamental identity](the-fundamental-identity.md)
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
-- [Kummer's theorem sees one factor per place](kummers-theorem-sees-one-factor-per-place.md)
+- [Kummer's theorem (Stichtenoth, Corollary 3.3.8)](kummers-theorem-stichtenoth-corollary-3-3-8.md)
 - [Riemann's theorem](../../algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
 - [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
-- [The weak approximation theorem](the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

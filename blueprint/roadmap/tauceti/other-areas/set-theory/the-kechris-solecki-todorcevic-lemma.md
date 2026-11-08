@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: SetRel.exists_measurableSet_isIndependent_superset, SimpleGraph.g0_dichotomy
+lean: SetRel.exists_measurableSet_isIndependent_superset
 statement: formalized
 proof: formalized
 ---
@@ -22,24 +22,9 @@ SetRel.exists_measurableSet_isIndependent_superset.{u_1} {X : Type u_1} {G : Set
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
-
-- [Miller's independence lemma](millers-independence-lemma.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`SetRel.exists_measurableSet_isIndependent_superset`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/BorelColoring.html#SetRel.exists_measurableSet_isIndependent_superset).
-
-## Other forms
-
-**The Kechris–Solecki–Todorcevic G₀ dichotomy.** Formalized in Tau Ceti as [`SimpleGraph.g0_dichotomy`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/GZeroDichotomy.html#SimpleGraph.g0_dichotomy).
-
-```lean
-SimpleGraph.g0_dichotomy.{u_1} {X : Type u_1} [TopologicalSpace X] [PolishSpace X]
-  [MeasurableSpace X] [BorelSpace X] (G : SimpleGraph X)
-  (hG : MeasureTheory.AnalyticSet {p | G.Adj p.1 p.2}) :
-  Xor (∃ c, Measurable ⇑c) (∃ φ, Continuous ⇑φ)
-```
 
 ## Sources
 

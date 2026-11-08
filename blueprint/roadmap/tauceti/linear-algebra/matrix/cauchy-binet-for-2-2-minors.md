@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: Matrix.pairMinor_mul, Matrix.pairMinor_mul_fin_four, Matrix.mulVec_cross_mulVec
+lean: Matrix.pairMinor_mul, Matrix.pairMinor_mul_fin_four
 statement: formalized
 proof: formalized
 ---
@@ -38,14 +38,6 @@ Matrix.pairMinor_mul_fin_four.{u, u_1, u_2} {m : Type u_1} {n : Type u_2} {R : T
           g.pairMinor p (1, 2) * h.pairMinor (1, 2) q +
         g.pairMinor p (1, 3) * h.pairMinor (1, 3) q +
       g.pairMinor p (2, 3) * h.pairMinor (2, 3) q
-```
-
-**The Cauchy--Binet identity for the cross product.** Formalized in Tau Ceti as [`Matrix.mulVec_cross_mulVec`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/Matrix/CrossProduct.html#Matrix.mulVec_cross_mulVec).
-
-```lean
-Matrix.mulVec_cross_mulVec.{u_1} {R : Type u_1} [CommRing R] (M : Matrix (Fin 3) (Fin 3) R)
-  (u w : Fin 3 → R) :
-  (crossProduct (M.mulVec u)) (M.mulVec w) = M.adjugate.transpose.mulVec ((crossProduct u) w)
 ```
 
 ## Sources

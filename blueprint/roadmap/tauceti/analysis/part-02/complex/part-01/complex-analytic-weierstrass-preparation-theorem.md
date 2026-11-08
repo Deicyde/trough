@@ -34,8 +34,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The classical residue theorem for a null-homologous contour cycle](../../../part-01/contour-integration-and-the-hungerbuhler-wasem-g/the-classical-residue-theorem-for-a-null-homolog.md)
-- [Newton's identities for a multiset](../../../../ring-theory/part-01/mv-polynomial/newtons-identities-for-a-multiset.md)
+- [The classical residue theorem on a circle](../../../part-01/contour-integration-and-the-hungerbuhler-wasem-g/the-classical-residue-theorem-on-a-circle.md)
+- [Newton's identities for a multiset](../../../../ring-theory/part-01/multivariate-polynomials/newtons-identities-for-a-multiset.md)
 - [Osgood's lemma](../../../../geometry/part-01/complex-manifolds-dolbeault-theory-and-kahler-ge/osgoods-lemma.md)
 
 ## Lean

@@ -39,7 +39,7 @@ Its statement uses no other declaration mapped here.
 - [Riemann's theorem](riemanns-theorem.md)
 - [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [Stichtenoth's transformation formula](../function-field/part-01/stichtenoths-transformation-formula.md)
-- [The weak approximation theorem](../function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

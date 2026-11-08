@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Krull–Akizuki](../../../ring-theory/part-02/other-results/part-01/krull-akizuki.md)
+- [Krull–Akizuki for Mathlib's `integralClosure`](../../../ring-theory/part-02/other-results/part-01/krull-akizuki-for-mathlibs-integralclosure.md)
 - [TauCeti.Ring.IsJapanese](../../../ring-theory/part-01/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

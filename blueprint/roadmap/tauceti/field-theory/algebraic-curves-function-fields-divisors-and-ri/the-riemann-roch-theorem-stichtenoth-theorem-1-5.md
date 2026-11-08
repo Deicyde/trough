@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.isRiemannRochDivisor_weilDifferentialDivisor, TauCeti.Divisor.dim_eq_degree_add_one_sub_genus_of_two_mul_genus_sub_one_le_degree, TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq, TauCeti.isRiemannRochDivisor_of_isGreatest_mem_weilDifferentialFiltration, TauCeti.exists_isRiemannRochDivisor
+lean: TauCeti.isRiemannRochDivisor_weilDifferentialDivisor, TauCeti.Divisor.dim_eq_degree_add_one_sub_genus_of_two_mul_genus_sub_one_le_degree, TauCeti.isRiemannRochDivisor_of_isGreatest_mem_weilDifferentialFiltration, TauCeti.exists_isRiemannRochDivisor
 statement: formalized
 proof: formalized
 ---
@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 - [The duality theorem, in dimensions](the-duality-theorem-in-dimensions.md)
 - [Riemann's theorem](riemanns-theorem.md)
-- [The weak approximation theorem](../function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 
@@ -42,15 +42,6 @@ TauCeti.Divisor.dim_eq_degree_add_one_sub_genus_of_two_mul_genus_sub_one_le_degr
   (hex : IsIntegrallyClosedIn k F) {D : TauCeti.Divisor k F}
   (hD : 2 * ↑(TauCeti.genus k F) - 1 ≤ TauCeti.Divisor.degree D) :
   ↑D.dim = TauCeti.Divisor.degree D + 1 - ↑(TauCeti.genus k F)
-```
-
-**The Riemann–Roch identity, read as duality.** Formalized in Tau Ceti as [`TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/RiemannRoch/Uniqueness.html#TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq).
-
-```lean
-TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq.{u_1, u_2} {k : Type u_1} {F : Type u_2}
-  [Field k] [Field F] [Algebra k F] {W : TauCeti.Divisor k F} {g₀ : ℕ}
-  (hF : TauCeti.IsFunctionField k F) (hex : IsIntegrallyClosedIn k F)
-  (hW : W.IsRiemannRochDivisor g₀) (D : TauCeti.Divisor k F) : D.indexOfSpecialty = ↑(W - D).dim
 ```
 
 **The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15).** Formalized in Tau Ceti as [`TauCeti.isRiemannRochDivisor_of_isGreatest_mem_weilDifferentialFiltration`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Differential/CanonicalDivisor.html#TauCeti.isRiemannRochDivisor_of_isGreatest_mem_weilDifferentialFiltration).

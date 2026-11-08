@@ -14,5 +14,7 @@ Results named in Tau Ceti's `TauCeti.Algebra.Homology` modules and in no roadmap
 - [The Morse polynomial identity (`ChainComplex.sum_range_monomial_finrank_X_eq`)](the-morse-polynomial-identity-chaincomplex-sum-r.md)
 - [The strong Morse inequalities (`ChainComplex.sum_range_neg_one_pow_mul_finrank_homology_le`)](the-strong-morse-inequalities-chaincomplex-sum-r.md)
 - [The truncated Morse polynomial identity](the-truncated-morse-polynomial-identity.md)
+- [The universal coefficient theorem above a projective homology object](the-universal-coefficient-theorem-above-a-projec.md)
+- [The universal coefficient theorem below the first non-projective homology](the-universal-coefficient-theorem-below-the-firs.md)
 - [The universal coefficient theorem with projective homology](the-universal-coefficient-theorem-with-projectiv.md)
 - [The weak Morse inequality](the-weak-morse-inequality.md)

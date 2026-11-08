@@ -1,6 +1,6 @@
 # Optimal transport and Wasserstein geometry
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/OptimalTransport/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/OptimalTransport/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [Brenier's theorem](breniers-theorem.md)
 - [The Benamou–Brenier formula](the-benamou-brenier-formula.md)
@@ -10,5 +10,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.convexSection](tauceti-convexsection.md)
 - [TauCeti.GromovWassersteinSpace](tauceti-gromovwassersteinspace.md)
 - [TauCeti.MetricMeasureSpace.MeasureContraction](tauceti-metricmeasurespace-measurecontraction.md)
+- [The Benamou–Brenier lower bound](the-benamou-brenier-lower-bound.md)
 - [The Bonnet–Myers diameter bound under `MCP(K, N)`](the-bonnet-myers-diameter-bound-under-mcp-k-n.md)
 - [The Knott–Smith optimality criterion](the-knott-smith-optimality-criterion.md)

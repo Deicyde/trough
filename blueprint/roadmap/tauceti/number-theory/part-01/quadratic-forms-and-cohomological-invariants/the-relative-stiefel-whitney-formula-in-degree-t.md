@@ -42,7 +42,7 @@ TauCeti.sw2Class_formClass_traceTransfer_smul_sq.{u} {K L : Type u} [Field K] [I
 
 - [Artin--Wedderburn over a separably closed field](../../../algebra/central-simple/artin-wedderburn-over-a-separably-closed-field.md)
 - [The comparison isomorphism](the-comparison-isomorphism.md)
-- [The cup-norm theorem](../../../field-theory/galois-cohomology/the-cup-norm-theorem.md)
+- [The cup-norm theorem](../../../field-theory/other-results/the-cup-norm-theorem.md)
 - [Serre's formula for the Evens norm of a Kummer class (Serre, Théorème 1′ at `n = 2`)](../../../field-theory/other-results/serres-formula-for-the-evens-norm-of-a-kummer-cl.md)
 - [The Skolem-Noether theorem](../../../algebra/central-simple/the-skolem-noether-theorem.md)
 - [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)

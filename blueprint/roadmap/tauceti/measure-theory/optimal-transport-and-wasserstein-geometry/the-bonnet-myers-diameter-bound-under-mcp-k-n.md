@@ -26,7 +26,7 @@ TauCeti.MetricMeasureSpace.MeasureContraction.dist_le.{u_1} {X : Type u_1} [Metr
 
 ## Proof depends on
 
-- [The generalised Bonnet–Myers theorem under `CD(K, N)`](../optimal-transport/the-generalised-bonnet-myers-theorem-under-cd-k.md)
+- [The generalised Bonnet–Myers theorem under `CD(K, N)`](../optimal-transport/part-01/the-generalised-bonnet-myers-theorem-under-cd-k.md)
 
 ## Lean
 

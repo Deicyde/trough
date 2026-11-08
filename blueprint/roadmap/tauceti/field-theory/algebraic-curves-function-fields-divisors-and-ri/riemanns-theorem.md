@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The weak approximation theorem](../function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

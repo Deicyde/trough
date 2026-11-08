@@ -4,7 +4,6 @@ Results named in the rest of Tau Ceti's `TauCeti.Algebra` modules and in no road
 
 - [Abel's inequality, comparison form](abels-inequality-comparison-form.md)
 - [The basis theorem](the-basis-theorem.md)
-- [The Brauer class of the real quaternions is not the identity](the-brauer-class-of-the-real-quaternions-is-not.md)
 - [The Conway–Sloane exponent identity](the-conway-sloane-exponent-identity.md)
 - [Dedekind's modular law](dedekinds-modular-law.md)
 - [Hermite's identity in truncated ceiling-division form](hermites-identity-in-truncated-ceiling-division.md)

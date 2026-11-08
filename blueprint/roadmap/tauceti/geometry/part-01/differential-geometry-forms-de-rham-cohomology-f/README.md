@@ -1,6 +1,6 @@
 # Differential geometry — forms, de Rham cohomology, flows, and degree
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/DifferentialGeometry/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/DifferentialGeometry/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 ## [TauCeti.integralTopForm_mextDeri… to Stokes' formula for a homotopy…](part-01/README.md)
 
@@ -25,6 +25,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The fundamental theorem of calculus for path classes](part-01/the-fundamental-theorem-of-calculus-for-path-cla.md)
 - [Stokes' formula for a homotopy of maps of a rectangle](part-01/stokes-formula-for-a-homotopy-of-maps-of-a-recta.md)
 
-## [Part 2 of 2](part-02/README.md)
+## [Stokes' theorem on singular…](part-02/README.md)
 
 - [Stokes' theorem on singular `1`-chains](part-02/stokes-theorem-on-singular-1-chains.md)

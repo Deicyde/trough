@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The Artin--Schreier genus… to The weak approximation theorem
+# The Artin--Schreier genus… to The tame different theorem…
 
 - [The Artin--Schreier genus formula, cross-multiplied for a possible constant-field extension](the-artin-schreier-genus-formula-cross-multiplie.md)
 - [Castelnuovo's inequality (Stichtenoth, Theorem 3.11.3)](castelnuovos-inequality-stichtenoth-theorem-3-11.md)
@@ -14,6 +14,7 @@ navigation: transparent
 - [The Galois correspondence for the inertia field](the-galois-correspondence-for-the-inertia-field.md)
 - [Hilbert's different formula](hilberts-different-formula.md)
 - [The Hurwitz bound (Stichtenoth, Exercise 3.18)](the-hurwitz-bound-stichtenoth-exercise-3-18.md)
+- [Kummer's theorem (Stichtenoth, Corollary 3.3.8)](kummers-theorem-stichtenoth-corollary-3-3-8.md)
 - [Kummer's theorem sees one factor per place](kummers-theorem-sees-one-factor-per-place.md)
 - [The relative degree bound of Kummer's theorem (Stichtenoth, Theorem 3.3.7)](the-relative-degree-bound-of-kummers-theorem-sti.md)
 - [The residue action, on residues (Stichtenoth, Theorem 3.8.2)](the-residue-action-on-residues-stichtenoth-theor.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Stichtenoth's transformation formula](stichtenoths-transformation-formula.md)
 - [Strong approximation (Stichtenoth, Theorem 1.6.5)](strong-approximation-stichtenoth-theorem-1-6-5.md)
 - [The tame different theorem fails at infinity](the-tame-different-theorem-fails-at-infinity.md)
-- [The weak approximation theorem](the-weak-approximation-theorem.md)

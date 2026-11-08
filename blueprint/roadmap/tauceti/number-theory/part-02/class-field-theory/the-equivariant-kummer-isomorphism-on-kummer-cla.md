@@ -39,10 +39,6 @@ TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv.{u_1} {F 
 
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 
-## Proof depends on
-
-- [The Kummer isomorphism on square classes is natural in field isomorphisms](../../../field-theory/galois-cohomology/the-kummer-isomorphism-on-square-classes-is-natu.md)
-
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/Kummer/Basic.html#TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv).

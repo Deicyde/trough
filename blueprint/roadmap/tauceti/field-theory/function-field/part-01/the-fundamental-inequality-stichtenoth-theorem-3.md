@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The weak approximation theorem](the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

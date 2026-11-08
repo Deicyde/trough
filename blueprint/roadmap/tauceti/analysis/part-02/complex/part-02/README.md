@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Identity theorem to Schwarz–Pick, Lipschitz form
+# The Herglotz representation… to Schwarz's lemma with prescribed…
 
+- [The Herglotz representation theorem](the-herglotz-representation-theorem.md)
 - [Identity theorem](identity-theorem.md)
 - [The identity theorem for Riemann surfaces](the-identity-theorem-for-riemann-surfaces.md)
 - [Identity theorem on a right half-plane](identity-theorem-on-a-right-half-plane.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Rigidity in the Schwarz--Pick theorem](rigidity-in-the-schwarz-pick-theorem.md)
 - [The Schoenflies theorem](the-schoenflies-theorem.md)
 - [Schwarz's lemma with prescribed zeros](schwarzs-lemma-with-prescribed-zeros.md)
-- [Schwarz–Pick, Lipschitz form](schwarz-pick-lipschitz-form.md)

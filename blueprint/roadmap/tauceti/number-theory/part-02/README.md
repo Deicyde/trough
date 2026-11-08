@@ -5,7 +5,7 @@ navigation: transparent
 # Arithmetic Dirichlet Series to Other results
 
 - [Arithmetic Dirichlet Series](arithmetic-dirichlet-series/README.md)
-- [Class Field Theory](class-field-theory/README.md)
+- [Class Field Theory: other results](class-field-theory/README.md)
 - [Diophantine Approximation](diophantine-approximation/README.md)
 - [Hecke Ring](hecke-ring/README.md)
 - [Height](height/README.md)

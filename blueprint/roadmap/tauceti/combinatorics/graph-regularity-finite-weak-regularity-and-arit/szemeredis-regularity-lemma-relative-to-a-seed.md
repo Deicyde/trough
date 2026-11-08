@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: SimpleGraph.exists_regular_equipartition_almost_refining, SimpleGraph.szemeredi_regularity_le, SimpleGraph.exists_regular_exact_refining_equipartition, SimpleGraph.exists_regular_almostRefines_le_card
+lean: SimpleGraph.exists_regular_equipartition_almost_refining, SimpleGraph.exists_regular_almostRefines_le_card
 statement: formalized
 proof: formalized
 ---
@@ -26,38 +26,16 @@ SimpleGraph.exists_regular_equipartition_almost_refining.{u_1} {α : Type u_1} [
 
 Its statement uses no other declaration mapped here.
 
+## Proof depends on
+
+- [Szemerédi's regularity lemma below a starting equipartition](szemeredis-regularity-lemma-below-a-starting-equ.md)
+- [Szemerédi's regularity lemma refining an equipartition exactly](szemeredis-regularity-lemma-refining-an-equipart.md)
+
 ## Lean
 
 Formalized in Tau Ceti as [`SimpleGraph.exists_regular_equipartition_almost_refining`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.html#SimpleGraph.exists_regular_equipartition_almost_refining).
 
 ## Other forms
-
-**Szemerédi's regularity lemma below a starting equipartition.** Formalized in Tau Ceti as [`SimpleGraph.szemeredi_regularity_le`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.html#SimpleGraph.szemeredi_regularity_le).
-
-```lean
-SimpleGraph.szemeredi_regularity_le.{u_1} {α : Type u_1} [Fintype α] [DecidableEq α]
-  (G : SimpleGraph α) [DecidableRel G.Adj] {ε : ℝ} {P₁ : Finpartition Finset.univ}
-  (hP₁ : P₁.IsEquipartition) (hP₇ : 7 ≤ P₁.parts.card) (hPε : 100 ≤ 4 ^ P₁.parts.card * ε ^ 5)
-  (hα :
-    SzemerediRegularity.stepBound^[⌊4 / ε ^ 5⌋₊] P₁.parts.card *
-        16 ^ SzemerediRegularity.stepBound^[⌊4 / ε ^ 5⌋₊] P₁.parts.card ≤
-      Fintype.card α) :
-  ∃ P ≤ P₁,
-    P.IsEquipartition ∧
-      P.IsUniform G ε ∧
-        P.parts.card ≤ SzemerediRegularity.stepBound^[⌊4 / ε ^ 5⌋₊ + 1] P₁.parts.card
-```
-
-**Szemerédi's regularity lemma refining an equipartition exactly.** Formalized in Tau Ceti as [`SimpleGraph.exists_regular_exact_refining_equipartition`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.html#SimpleGraph.exists_regular_exact_refining_equipartition).
-
-```lean
-SimpleGraph.exists_regular_exact_refining_equipartition.{u_1} {α : Type u_1} [Fintype α]
-  [DecidableEq α] (G : SimpleGraph α) [DecidableRel G.Adj] (P : Finpartition Finset.univ)
-  (hP : P.IsEquipartition) {δ : ℝ} (hδ : 0 < δ) :
-  ∃ Q ≤ P,
-    Q.IsEquipartition ∧
-      Q.IsUniform G δ ∧ Q.parts.card ≤ TauCeti.nestedRefinementBound δ P.parts.card
-```
 
 **Szemerédi's regularity lemma relative to a seed, with a minimum number of parts.** Formalized in Tau Ceti as [`SimpleGraph.exists_regular_almostRefines_le_card`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Regularity/Graph/SeededRegularity.html#SimpleGraph.exists_regular_almostRefines_le_card).
 

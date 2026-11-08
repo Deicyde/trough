@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Newton's identities for a multiset](../../ring-theory/part-01/mv-polynomial/newtons-identities-for-a-multiset.md)
+- [Newton's identities for a multiset](../../ring-theory/part-01/multivariate-polynomials/newtons-identities-for-a-multiset.md)
 
 ## Lean
 

@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Euler bound for a pair of permutations](../../group-theory/perm/the-euler-bound-for-a-pair-of-permutations.md)
+- [The Euler bound for a pair of permutations](../../group-theory/permutations/the-euler-bound-for-a-pair-of-permutations.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 
 ## Lean

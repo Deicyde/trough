@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous, TauCeti.Contour.Cycle.classicalResidueTheorem_starConvex, TauCeti.Contour.classicalResidueTheorem_nullHomologous, TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg, TauCeti.Contour.classicalResidueTheorem_starConvex
+lean: TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous, TauCeti.Contour.Cycle.classicalResidueTheorem_starConvex, TauCeti.Contour.classicalResidueTheorem_nullHomologous
 statement: formalized
 proof: formalized
 ---
@@ -44,7 +44,6 @@ TauCeti.Contour.Cycle.classicalResidueTheorem_nullHomologous {f : ℂ → ℂ} {
 ## Proof depends on
 
 - [The canonical Laurent decomposition](../../part-02/contour/the-canonical-laurent-decomposition.md)
-- [Cauchy–Goursat for a pole-free meromorphic function](../../part-02/contour/cauchy-goursat-for-a-pole-free-meromorphic-funct.md)
 - [The homology Cauchy theorem for contour cycles](../banach-algebras/the-homology-cauchy-theorem-for-contour-cycles.md)
 - [The residue theorem for a fixed polar-part decomposition](the-residue-theorem-for-a-fixed-polar-part-decom.md)
 
@@ -74,29 +73,6 @@ TauCeti.Contour.classicalResidueTheorem_nullHomologous {f : ℂ → ℂ} {S : Fi
   {γ : ℝ → ℂ} {a b : ℝ} (hγ : TauCeti.IsPiecewiseC1On γ a b) (hγU : ∀ t ∈ Set.uIcc a b, γ t ∈ U)
   (hclosed : γ a = γ b) (hoff : ∀ t ∈ Set.uIcc a b, γ t ∉ ↑S)
   (hnull : TauCeti.Contour.IsNullHomologous γ a b U) :
-  ∫ (t : ℝ) in a..b, deriv γ t • f (γ t) =
-    2 * ↑Real.pi * Complex.I *
-      ∑ s ∈ S, TauCeti.Contour.windingNumber γ a b s * TauCeti.Contour.residue f s
-```
-
-**The classical residue theorem on a circle (sharp support form).** Formalized in Tau Ceti as [`TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Residue/Theorem.html#TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg).
-
-```lean
-TauCeti.Contour.classicalResidueTheorem_circle_of_meromorphicOrderAt_neg {f : ℂ → ℂ} {c : ℂ} {R : ℝ}
-  (hR : 0 < R) (S : Finset ℂ) (hf : MeromorphicOn f (Metric.closedBall c R))
-  (hS : ↑S ⊆ Metric.ball c R)
-  (hsupp : ∀ z ∈ Metric.closedBall c R, meromorphicOrderAt f z < 0 → z ∈ S) :
-  circleIntegral f c R = 2 * ↑Real.pi * Complex.I * ∑ s ∈ S, TauCeti.Contour.residue f s
-```
-
-**The classical residue theorem on a star-shaped open set.** Formalized in Tau Ceti as [`TauCeti.Contour.classicalResidueTheorem_starConvex`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/StarConvex.html#TauCeti.Contour.classicalResidueTheorem_starConvex).
-
-```lean
-TauCeti.Contour.classicalResidueTheorem_starConvex {f : ℂ → ℂ} {Ω : Set ℂ} {γ : ℝ → ℂ} {a b : ℝ}
-  {x : ℂ} {S : Finset ℂ} (hstar : StarConvex ℝ x Ω) (hopen : IsOpen Ω)
-  (hf : DifferentiableOn ℂ f (Ω \ ↑S)) (hmero : ∀ s ∈ S, s ∈ Ω → MeromorphicAt f s)
-  (hγ : TauCeti.IsPiecewiseC1On γ a b) (hγΩ : ∀ t ∈ Set.uIcc a b, γ t ∈ Ω) (hclosed : γ a = γ b)
-  (hoff : ∀ t ∈ Set.uIcc a b, γ t ∉ ↑S) :
   ∫ (t : ℝ) in a..b, deriv γ t • f (γ t) =
     2 * ↑Real.pi * Complex.I *
       ∑ s ∈ S, TauCeti.Contour.windingNumber γ a b s * TauCeti.Contour.residue f s

@@ -82,7 +82,6 @@ Its statement uses no other declaration mapped here.
 - [Jensen's inequality for the square of a mean](../../../../measure-theory/integral/part-01/jensens-inequality-for-the-square-of-a-mean.md)
 - [The Lipschitz bound for bounded harmonic functions](../../inner-product-space/part-02/the-lipschitz-bound-for-bounded-harmonic-functio.md)
 - [The local Campanato estimate](../../../../measure-theory/function/the-local-campanato-estimate.md)
-- [Local Hölder bounds near a compact set are uniform on a thickening](../../../../topology/metric-space/local-holder-bounds-near-a-compact-set-are-unifo.md)
 - [Meyers–Serrin: `H = W` in `W^{k,p}(Ω)`](../../sobolev/part-01/meyers-serrin-h-w-in-w-k-p.md)
 - [The Poincaré inequality on a ball](../../sobolev/part-02/the-poincare-inequality-on-a-ball.md)
 - [Rademacher's theorem for locally Lipschitz functions](../../calculus/part-01/rademachers-theorem-for-locally-lipschitz-functi.md)

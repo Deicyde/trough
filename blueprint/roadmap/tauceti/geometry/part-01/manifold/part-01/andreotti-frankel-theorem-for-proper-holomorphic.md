@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 - [ContMDiff.restrictScalars](../../complex-manifolds-transport-quotients-bundles-an/contmdiff-restrictscalars.md)
 - [Deformation of sublevels across a band without critical points (Milnor, Theorem 3.1)](../../morse-functions-sublevel-topology-and-morse-bott/deformation-of-sublevels-across-a-band-without-c.md)
 - [The index bound for strongly `q`-pseudoconvex functions on a complex manifold](../../../../analysis/part-01/complex-morse-theory-affine-topology-and-weak-le/the-index-bound-for-strongly-q-pseudoconvex-func.md)
-- [The inverse function theorem produces a `C^n` inverse](../../../../analysis/part-02/calculus/part-01/the-inverse-function-theorem-produces-a-c-n-inve.md)
+- [The inverse function theorem, with a `C^n` inverse on the whole target](../../../../analysis/part-02/calculus/part-01/the-inverse-function-theorem-with-a-c-n-inverse.md)
 - [MDifferentiableAt.mfderiv_restrictScalars](../../complex-manifolds-transport-quotients-bundles-an/mdifferentiableat-mfderiv-restrictscalars.md)
 - [Sard's lemma on the flat stratum](../../../../analysis/part-02/calculus/part-02/sards-lemma-on-the-flat-stratum.md)
 - [TauCeti.criticalHessian](../../morse-functions-sublevel-topology-and-morse-bott/tauceti-criticalhessian.md)

@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
 - [The local invariant](../class-field-theory/the-local-invariant.md)
 - [Local Tate duality in degree one](../../part-02/class-field-theory/local-tate-duality-in-degree-one.md)
-- [Serre's theorem at arbitrary rank, as an equivalence](../../../topology/profinite-and-pro-p-groups/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
+- [Serre's theorem at arbitrary rank, as an equivalence](../../../topology/profinite-and-pro-p-groups/part-01/serres-theorem-at-arbitrary-rank-as-an-equivalen.md)
 - [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 

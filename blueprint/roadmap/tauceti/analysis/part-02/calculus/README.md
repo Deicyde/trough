@@ -2,12 +2,13 @@
 
 Results named in Tau Ceti's `TauCeti.Analysis.Calculus` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-## [Cartan's formula to Rolle's theorem for finitely…](part-01/README.md)
+## [Cartan's formula to The relative Poincaré lemma](part-01/README.md)
 
 - [Cartan's formula](part-01/cartans-formula.md)
 - [Duhamel's formula at a small parameter](part-01/duhamels-formula-at-a-small-parameter.md)
 - [Green's theorem on a rectangle](part-01/greens-theorem-on-a-rectangle.md)
 - [The inverse function theorem produces a `C^n` inverse](part-01/the-inverse-function-theorem-produces-a-c-n-inve.md)
+- [The inverse function theorem, with a `C^n` inverse on the whole target](part-01/the-inverse-function-theorem-with-a-c-n-inverse.md)
 - [Iterated Rolle's theorem](part-01/iterated-rolles-theorem.md)
 - [Jacobi's adjugate formula, valid at singular as well as invertible matrices](part-01/jacobis-adjugate-formula-valid-at-singular-as-we.md)
 - [Jacobi's inverse formula](part-01/jacobis-inverse-formula.md)
@@ -23,10 +24,10 @@ Results named in Tau Ceti's `TauCeti.Analysis.Calculus` modules and in no roadma
 - [The Poincaré lemma](part-01/the-poincare-lemma.md)
 - [Rademacher's theorem for locally Lipschitz functions](part-01/rademachers-theorem-for-locally-lipschitz-functi.md)
 - [The relative Poincaré lemma](part-01/the-relative-poincare-lemma.md)
-- [Rolle's theorem for finitely many zeros](part-01/rolles-theorem-for-finitely-many-zeros.md)
 
-## [Sard's lemma on the flat stratum to Uniform first-order Taylor…](part-02/README.md)
+## [Rolle's theorem for finitely… to Uniform first-order Taylor…](part-02/README.md)
 
+- [Rolle's theorem for finitely many zeros](part-02/rolles-theorem-for-finitely-many-zeros.md)
 - [Sard's lemma on the flat stratum](part-02/sards-lemma-on-the-flat-stratum.md)
 - [Sard's theorem on the locus where the derivative vanishes](part-02/sards-theorem-on-the-locus-where-the-derivative.md)
 - [Stokes' formula on the boundary of a cube for a closed two-form `ψ` that is C¹ on `(ℝ × ℝ) × ℝ`](part-02/stokes-formula-on-the-boundary-of-a-cube-for-a-c.md)

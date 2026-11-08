@@ -22,7 +22,6 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Artin reciprocity commutes with conjugation](artin-reciprocity-commutes-with-conjugation.md)
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
@@ -37,10 +36,8 @@ Its statement uses no other declaration mapped here.
 - [The Hasse principle for Brauer classes, from idele-class `H¹`](the-hasse-principle-for-brauer-classes-from-idel.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The ideal-theoretic Artin map](../../part-01/number-fields-ramification-frobenius-and-the-lmf/the-ideal-theoretic-artin-map.md)
-- [The inverse of Shapiro's isomorphism in homology is corestriction of the unit](../../../representation-theory/homological/the-inverse-of-shapiros-isomorphism-in-homology.md)
 - [IsDedekindDomain.FiniteAdeleRing.sIntegralAdeles](../../part-01/global-number-fields-ray-classes-adeles-and-heck/isdedekinddomain-finiteadelering-sintegraladeles.md)
 - [The Kummer case of the second fundamental inequality](the-kummer-case-of-the-second-fundamental-inequa.md)
-- [The local Artin symbol is finite local reciprocity at a place above `v`](the-local-artin-symbol-is-finite-local-reciproci.md)
 - [The local class formation](../../part-01/class-field-theory/the-local-class-formation.md)
 - [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [The Mackey formula for the degree-one corestriction cochain](../../../representation-theory/homological/the-mackey-formula-for-the-degree-one-corestrict.md)

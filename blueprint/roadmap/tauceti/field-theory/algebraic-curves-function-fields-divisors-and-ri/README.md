@@ -1,6 +1,6 @@
 # Algebraic curves — function fields, divisors, and Riemann–Roch
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/AlgebraicCurves/README.md) names, and the other results named in the modules, or folders of modules, where only this status names declarations, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/AlgebraicCurves/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [The Hurwitz genus formula (Stichtenoth, Theorem 3.4.13)](the-hurwitz-genus-formula-stichtenoth-theorem-3.md)
@@ -16,3 +16,4 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The residue theorem (Stichtenoth, Corollary 4.3.3)](the-residue-theorem-stichtenoth-corollary-4-3-3.md)
 - [The residue theorem over a perfect field (Stichtenoth, Corollary 4.3.3 and Remark 4.3.7(d))](the-residue-theorem-over-a-perfect-field-stichte.md)
 - [Riemann's theorem](riemanns-theorem.md)
+- [The Riemann–Roch identity, read as duality](the-riemann-roch-identity-read-as-duality.md)

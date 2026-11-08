@@ -4,6 +4,7 @@ Results named in the rest of Tau Ceti's `TauCeti.RepresentationTheory` modules a
 
 - [Burnside density theorem](burnside-density-theorem.md)
 - [Frobenius reciprocity for `coind₁`, uniqueness](frobenius-reciprocity-for-coind1-uniqueness.md)
+- [Frobenius's theorem returns the normal complement it was handed](frobeniuss-theorem-returns-the-normal-complement.md)
 - [Frobenius's theorem: the Frobenius kernel is normal](frobeniuss-theorem-the-frobenius-kernel-is-norma.md)
 - [Maschke's theorem for intertwining maps](maschkes-theorem-for-intertwining-maps.md)
 - [Schur's lemma for contravariant forms](schurs-lemma-for-contravariant-forms.md)

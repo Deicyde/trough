@@ -27,6 +27,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Szemerédi's regularity lemma refining an equipartition exactly](szemeredis-regularity-lemma-refining-an-equipart.md)
 - [Szemerédi's regularity lemma relative to a seed](szemeredis-regularity-lemma-relative-to-a-seed.md)
 
 ## Lean

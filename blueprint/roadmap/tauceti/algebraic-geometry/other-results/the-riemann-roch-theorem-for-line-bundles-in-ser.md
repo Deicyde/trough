@@ -46,7 +46,7 @@ Its statement uses no other declaration mapped here.
 
 - [Riemann's theorem](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/riemanns-theorem.md)
 - [Serre duality in degree zero](serre-duality-in-degree-zero.md)
-- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

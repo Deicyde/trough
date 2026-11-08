@@ -8,6 +8,7 @@ Results named in Tau Ceti's `TauCeti.MeasureTheory.Function` modules and in no r
 - [Eilenberg's inequality, integral form](eilenbergs-inequality-integral-form.md)
 - [Fatou's lemma for the `Lᵖ` seminorm of `ℝ≥0∞`-valued functions](fatous-lemma-for-the-lp-seminorm-of-r0-valued-fu.md)
 - [The Fréchet--Kolmogorov compactness criterion](the-frechet-kolmogorov-compactness-criterion.md)
+- [The Fréchet--Kolmogorov criterion for a family vanishing almost everywhere off a fixed bounded set](the-frechet-kolmogorov-criterion-for-a-family-va.md)
 - [Fundamental theorem for absolutely continuous curves, integrability](fundamental-theorem-for-absolutely-continuous-cu.md)
 - [Hölder estimate along a curve](holder-estimate-along-a-curve.md)
 - [Hölder's inequality for the integral of a product](holders-inequality-for-the-integral-of-a-product.md)

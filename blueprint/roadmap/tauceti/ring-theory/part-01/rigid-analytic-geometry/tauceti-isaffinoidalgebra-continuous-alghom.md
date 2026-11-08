@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Kedlaya's Hilbert basis theorem for restricted power series](../mv-power-series/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
-- [The open mapping theorem over a Tate ring](../huber/the-open-mapping-theorem-over-a-tate-ring.md)
+- [The open mapping theorem over a Tate ring](../../part-02/other-results/part-02/the-open-mapping-theorem-over-a-tate-ring.md)
 - [The Weierstrass division estimate (Bosch–Güntzer–Remmert §5.2.1, Theorem 2)](../p-adic-measures-completed-group-algebras-and-cha/part-01/the-weierstrass-division-estimate-bosch-guntzer.md)
 - [The Weierstrass division identity](../p-adic-measures-completed-group-algebras-and-cha/part-01/the-weierstrass-division-identity.md)
 

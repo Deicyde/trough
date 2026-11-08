@@ -1,12 +1,12 @@
 {"tauceti_rev": "ace60277c4c5ba2166795686bca1af4052290145",
  "stats":
- {"walked_statements": 32498,
-  "walked_proofs": 194859,
-  "theorems_with_proof": 3314,
-  "theorems": 3314,
-  "requested": 3937,
+ {"walked_statements": 32376,
+  "walked_proofs": 194706,
+  "theorems_with_proof": 3294,
+  "theorems": 3294,
+  "requested": 3917,
   "reaching_sorry": 0,
-  "listed": 3926},
+  "listed": 3906},
  "schema": "trough-tauceti-deps/v1",
  "missing":
  ["FormalGroup.existsUnique_logarithm_of_nsmulSeries_two_eq_zero",
@@ -361,7 +361,7 @@
    "sorry": false,
    "signature":
    "WeierstrassCurve.y_eq_zero_or_sq_dvd_Δ_of_torsion {W : WeierstrassCurve ℤ} [W.IsCharNeTwoNF]\n  {x y : ℚ} (hns : (W.baseChange ℚ).toAffine.Nonsingular x y)\n  (htor : IsOfFinAddOrder (WeierstrassCurve.Affine.Point.some x y hns)) {x₀ y₀ : ℤ}\n  (hx : (algebraMap ℤ ℚ) x₀ = x) (hy : (algebraMap ℤ ℚ) y₀ = y) : y₀ = 0 ∨ y₀ ^ 2 ∣ W.Δ",
-   "proof": ["WeierstrassCurve.Universal.Jacobian.addXYZ_smulField"],
+   "proof": [],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.ShortNagellLutz",
    "line": 93,
    "kind": "theorem",
@@ -441,7 +441,6 @@
     "TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_eq_finrank_of_isSeparable",
     "TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank",
     "TauCeti.hurwitz_genus_formula_geometricDegree",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.GaloisCohomology.WeilPairing.Local",
    "line": 70,
@@ -453,7 +452,7 @@
    "sorry": false,
    "signature":
    "WeierstrassCurve.isInteger_or_order_two_of_torsion_rat {W : WeierstrassCurve ℤ} {x y : ℚ}\n  (hns : (W.baseChange ℚ).toAffine.Nonsingular x y)\n  (htor : IsOfFinAddOrder (WeierstrassCurve.Affine.Point.some x y hns)) :\n  IsLocalization.IsInteger ℤ x ∧ IsLocalization.IsInteger ℤ y ∨\n    addOrderOf (WeierstrassCurve.Affine.Point.some x y hns) = 2 ∧\n      IsLocalization.IsInteger ℤ (4 * x) ∧ IsLocalization.IsInteger ℤ (8 * y)",
-   "proof": ["WeierstrassCurve.Universal.Jacobian.addXYZ_smulField"],
+   "proof": [],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.NagellLutz",
    "line": 263,
    "kind": "theorem",
@@ -491,7 +490,6 @@
     "TauCeti.algebraicExtensionNormedField",
     "TauCeti.differentExponent_eq_ramificationIndex_sub_one_iff",
     "TauCeti.ramificationIndex_sub_one_le_differentExponent",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation",
     "WeierstrassCurve.tateModuleGaloisRepresentation_eq_one_of_isOfFinOrder"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.TateModule.PotentialGoodReduction",
@@ -518,7 +516,6 @@
     "TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank",
     "TauCeti.Ring.IsJapanese",
     "TauCeti.hurwitz_genus_formula_geometricDegree",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.HasseBound",
    "line": 41,
@@ -556,24 +553,12 @@
     "TauCeti.hurwitz_genus_formula_geometricDegree",
     "TauCeti.pow_pow_totient_eq_self",
     "TauCeti.ramificationIndex_sub_one_le_differentExponent",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.GaloisCohomology.Selmer.Finite",
    "line": 54,
    "kind": "theorem",
    "doc":
    "**The `m`-Selmer group of an elliptic curve over a number field is finite** (Silverman\nX.4.2). The local conditions are the images of the Kummer maps over the completions at all finite\nplaces. The conclusion holds for every nonzero natural number `m`."},
-  "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField {m n : ℤ} :\n  WeierstrassCurve.Jacobian.addXYZ WeierstrassCurve.Universal.pointedCurve\n      (WeierstrassCurve.Universal.Jacobian.smulField m)\n      (WeierstrassCurve.Universal.Jacobian.smulField n) =\n    WeierstrassCurve.Universal.polyToField\n        (WeierstrassCurve.ψ WeierstrassCurve.Universal.curve (n - m)) •\n      WeierstrassCurve.Universal.Jacobian.smulField (n + m)",
-   "proof": [],
-   "module": "TauCeti.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.ZSMul",
-   "line": 863,
-   "kind": "theorem",
-   "doc":
-   "**Mathlib's Jacobian addition formula at `(φₘ : ωₘ : ψₘ)` and `(φₙ : ωₙ : ψₙ)` returns\n`(φₙ₊ₘ : ωₙ₊ₘ : ψₙ₊ₘ)`, scaled by `ψₙ₋ₘ`.** The scaling is genuine: `addXYZ` is homogeneous, and\nthe representative it produces is the canonical triple only up to that factor."},
   "WeierstrassCurve.IsIntegralModularForm.mem_adjoin":
   {"statement": [],
    "sorry": false,
@@ -594,7 +579,6 @@
     "TauCeti.algebraicExtensionNormedField",
     "TauCeti.differentExponent_eq_ramificationIndex_sub_one_iff",
     "TauCeti.ramificationIndex_sub_one_le_differentExponent",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation",
     "WeierstrassCurve.tateModuleGaloisRepresentation_eq_one_of_isOfFinOrder"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.TateModule.TorsionCriterion",
@@ -1637,45 +1621,6 @@
    "kind": "theorem",
    "doc":
    "**Serre's mass formula for quadratic extensions in odd residue characteristic**:\n`∑_{L ∈ σ_K(2)} q ^ (-c(L)) = 2`, where `q` is the cardinality of the residue field of `K`. Both\nmembers of `σ_K(2)` are tamely ramified, with weight `1`."},
-  "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent_eq_of_lintegral_rootCount_eq":
-  {"statement":
-   ["IntermediateField.rootCount",
-    "IntermediateField.wildExponent",
-    "TauCeti.algebraicExtensionNormedField",
-    "TauCeti.eisensteinSet",
-    "TauCeti.relDiscr",
-    "TauCeti.totallyRamifiedOfDegree"],
-   "sorry": false,
-   "signature":
-   "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent_eq_of_lintegral_rootCount_eq.{u_1}\n  {K : Type u_1} [Field K] [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K]\n  {n : ℕ} [MeasurableSpace (Fin n → K)] [BorelSpace (Fin n → K)] (hn : 0 < n)\n  (μ : MeasureTheory.Measure (Fin n → K)) [μ.IsAddHaarMeasure]\n  (hμ : μ (TauCeti.integerBox K (Fin n)) = 1)\n  (h :\n    ∀ L ∈ TauCeti.totallyRamifiedOfDegree K n,\n      ∫⁻ (a : Fin n → K) in TauCeti.eisensteinSet K n, ↑(L.rootCount a) ∂μ =\n        1 /\n            ↑(Nat.card (IsLocalRing.ResidueField ↥(ValuativeRel.valuation K).integer)) ^\n              (L.discriminantExponent + 1) *\n          (1 - 1 / ↑(Nat.card (IsLocalRing.ResidueField ↥(ValuativeRel.valuation K).integer)))) :\n  ∑' (L : ↑(TauCeti.totallyRamifiedOfDegree K n)),\n      1 /\n        ↑(Nat.card (IsLocalRing.ResidueField ↥(ValuativeRel.valuation K).integer)) ^\n          (↑L).wildExponent =\n    ↑n",
-   "proof":
-   ["TauCeti.inertiaDegree_mul_ramificationIndex_sub_one_le_discriminantExponent",
-    "TauCeti.measure_eisensteinSet",
-    "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent_eq_iff_tsum_lintegral_rootCount_eq"],
-   "module": "TauCeti.NumberTheory.LocalField.MassFormula.Total",
-   "line": 140,
-   "kind": "theorem",
-   "doc":
-   "**Theorem 1 from the root-count integrals**: if, for Haar measure normalized on the integer\nbox, the root count of each `L ∈ σ_K(n)` integrates over the Eisenstein region to Serre's value\n`q ^ (-(d(L) + 1)) (1 - q⁻¹)`, then `∑ q ^ (-c(L)) = n`."},
-  "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent_eq_iff_tsum_lintegral_rootCount_eq":
-  {"statement":
-   ["IntermediateField.rootCount",
-    "IntermediateField.wildExponent",
-    "TauCeti.eisensteinSet",
-    "TauCeti.totallyRamifiedOfDegree"],
-   "sorry": false,
-   "signature":
-   "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent_eq_iff_tsum_lintegral_rootCount_eq.{u_1}\n  {K : Type u_1} [Field K] [ValuativeRel K] [TopologicalSpace K] [IsNonarchimedeanLocalField K]\n  {n : ℕ} [MeasurableSpace (Fin n → K)] [BorelSpace (Fin n → K)] (hn : 0 < n)\n  (μ : MeasureTheory.Measure (Fin n → K)) [μ.IsAddHaarMeasure] :\n  ∑' (L : ↑(TauCeti.totallyRamifiedOfDegree K n)),\n        1 /\n          ↑(Nat.card (IsLocalRing.ResidueField ↥(ValuativeRel.valuation K).integer)) ^\n            (↑L).wildExponent =\n      ↑n ↔\n    ∑' (L : ↑(TauCeti.totallyRamifiedOfDegree K n)),\n        ∫⁻ (a : Fin n → K) in TauCeti.eisensteinSet K n, ↑((↑L).rootCount a) ∂μ =\n      ∑' (L : ↑(TauCeti.totallyRamifiedOfDegree K n)),\n        1 /\n            ↑(Nat.card (IsLocalRing.ResidueField ↥(ValuativeRel.valuation K).integer)) ^\n              (↑L).wildExponent *\n          μ (TauCeti.eisensteinSet K n)",
-   "proof":
-   ["TauCeti.algebraicExtensionNormedField",
-    "TauCeti.exists_card_aroots_eq",
-    "TauCeti.measure_eisensteinSet",
-    "TauCeti.tsum_rootCount_eq_of_separable"],
-   "module": "TauCeti.NumberTheory.LocalField.MassFormula.Total",
-   "line": 108,
-   "kind": "theorem",
-   "doc":
-   "**Theorem 1 in integral form**: for any additive Haar measure `μ`, the weighted count\n`∑ q ^ (-c(L))` of the totally ramified degree-`n` subextensions equals `n` exactly when the\nroot-count integrals add up to `∑ q ^ (-c(L)) * μ(E_n)`, where `E_n` is the Eisenstein region.\nThe total of the integrals is `n * μ(E_n)`, and `μ(E_n)` is positive and finite."},
   "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent":
   {"statement": ["IntermediateField.wildExponent", "TauCeti.totallyRamifiedOfDegree"],
    "sorry": false,
@@ -1689,9 +1634,11 @@
     "Polynomial.exists_isRoot_addVal_eval_eq",
     "TauCeti.algebraicExtensionNormedField",
     "TauCeti.eisensteinSet",
+    "TauCeti.exists_card_aroots_eq",
     "TauCeti.inertiaDegree_mul_ramificationIndex_sub_one_le_discriminantExponent",
+    "TauCeti.measure_eisensteinSet",
     "TauCeti.relDiscr",
-    "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent_eq_of_lintegral_rootCount_eq"],
+    "TauCeti.tsum_rootCount_eq_of_separable"],
    "module": "TauCeti.NumberTheory.LocalField.MassFormula.Main",
    "line": 69,
    "kind": "theorem",
@@ -4278,17 +4225,6 @@
    "kind": "theorem",
    "doc":
    "**Dedekind's different theorem at a prime power with a coprime complement.** If\n`p · B = P ^ e * Q` with `P ^ e` and `Q` coprime and `p ≠ ⊥`, then `P ^ e` divides\n`differentIdeal A B` exactly when the residue extension at `P` is inseparable or `e` vanishes in\nthe residue field `A ⧸ p`."},
-  "TauCeti.poincarePolynomial_map":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.poincarePolynomial_map.{u_1, u_2, u_4} {B : Type u_1} {W : Type u_2} [Group W]\n  {M : CoxeterMatrix B} (cs : CoxeterSystem M W) {H : Type u_4} [Group H] [Finite W] [Finite H]\n  (e : W ≃* H) : TauCeti.poincarePolynomial (cs.map e) = TauCeti.poincarePolynomial cs",
-   "proof": [],
-   "module": "TauCeti.GroupTheory.Coxeter.Poincare",
-   "line": 217,
-   "kind": "theorem",
-   "doc":
-   "**The Poincaré polynomial is invariant under transporting the Coxeter system along a group\nisomorphism**, since the length function is (`TauCeti.length_map`). The hypothesis `[Finite H]`\nfollows from `[Finite W]`, but is needed to state the left-hand side."},
   "TauCeti.poincarePairing":
   {"statement":
    ["TauCeti.compactlySupportedDeRhamCohomology",
@@ -4678,17 +4614,6 @@
    "line": 156,
    "kind": "theorem",
    "doc": "**The coefficient field of a newform of weight at least two is a number field.**"},
-  "TauCeti.nsmul_smul_fixingSubgroupKummerEquivOfTrivial":
-  {"statement": ["TauCeti.kummerIso"],
-   "sorry": false,
-   "signature":
-   "TauCeti.nsmul_smul_fixingSubgroupKummerEquivOfTrivial.{u_1, u_2, u_3} {K : Type u_1} [Field K]\n  {n : ℕ} {L : Type u_2} [Field L] [Algebra K L] (σ : L →ₐ[K] SeparableClosure K) {M : Type u_3}\n  [AddCommGroup M] [TopologicalSpace M] [DiscreteTopology M]\n  [DistribMulAction (TauCeti.AbsoluteGaloisGroup K) M]\n  [ContinuousSMul (TauCeti.AbsoluteGaloisGroup K) M] [σ.fieldRange.fixingSubgroup.Normal]\n  (hn : IsUnit ↑n) (e : TauCeti.KummerCoeff K n ≃+ M)\n  (htriv : ∀ (g : TauCeti.AbsoluteGaloisGroup K) (m : M), g • m = m)\n  (hN : ∀ h ∈ σ.fieldRange.fixingSubgroup, ∀ (ξ : TauCeti.KummerCoeff K n), h • ξ = ξ)\n  (g : TauCeti.AbsoluteGaloisGroup K) (τ : L →ₐ[K] L) (hτ : ∀ (x : L), σ (τ x) = g (σ x)) (k : ℕ)\n  (hk : ∀ (ξ : TauCeti.KummerCoeff K n), g • ξ = k • ξ)\n  (x : Additive (TauCeti.powerClassQuotient Lˣ n)) :\n  k • g • (TauCeti.fixingSubgroupKummerEquivOfTrivial σ hn e htriv hN) x =\n    (TauCeti.fixingSubgroupKummerEquivOfTrivial σ hn e htriv hN)\n      ((MonoidHom.toAdditive (TauCeti.powerClassMap n (Units.map ↑τ))) x)",
-   "proof": [],
-   "module": "TauCeti.FieldTheory.GaloisCohomology.EquivariantKummer",
-   "line": 316,
-   "kind": "theorem",
-   "doc":
-   "**The Kummer isomorphism with trivial coefficients is equivariant up to the cyclotomic\ntwist.** If `g ∈ G_K` acts on `μₙ` as the `k`th power map and the `K`-endomorphism `τ` of `L`\nsatisfies `σ ∘ τ = g ∘ σ`, then `k` times the conjugate by `g` of the class of `x` is the class of\n`τ x`. As `k` is the value at `g` of the cyclotomic character modulo `n`, this identifies `H¹(N, M)`\nwith `μₙ^{⊗ -1} ⊗ Lˣ ⧸ (Lˣ)ⁿ` as a module over `G_K ⧸ N`."},
   "TauCeti.not_isTopologicalGroup_restrictedProduct_rat_bot":
   {"statement": [],
    "sorry": false,
@@ -5078,7 +5003,6 @@
     "QuotientGroup.quotientQuotientEquivQuotientSup",
     "Rep.projective_ker_of_isZero_res",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.dualityMap2_kummerCoeff_bijective",
     "TauCeti.ClassFieldTheory.invMap",
@@ -5095,7 +5019,6 @@
     "TauCeti.galEquivOfInjective",
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.kummerIso",
     "TauCeti.padicCompletionUnitsEquivAbelianizationProP",
     "TauCeti.ramificationIndex_sub_one_le_differentExponent",
@@ -6839,17 +6762,6 @@
    "kind": "theorem",
    "doc":
    "**Euler's identity** for the Jacobian matrix of a family of homogeneous polynomials: applied\nto the point itself, it returns each equation's value scaled by its degree."},
-  "TauCeti.iwasawaHomeomorph_symm_toGL":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.iwasawaHomeomorph_symm_toGL {n : ℕ} (g : Matrix.SpecialLinearGroup (Fin n) ℝ) :\n  (TauCeti.iwasawaHomeomorph ℝ n).symm (Matrix.SpecialLinearGroup.toGL g) =\n    (⟨Matrix.SpecialLinearGroup.toGL ↑((TauCeti.iwasawaSLHomeomorph n).symm g).1, ⋯⟩,\n      ⟨Matrix.SpecialLinearGroup.toGL ↑((TauCeti.iwasawaSLHomeomorph n).symm g).2.1, ⋯⟩,\n      ⟨Matrix.SpecialLinearGroup.toGL ↑((TauCeti.iwasawaSLHomeomorph n).symm g).2.2, ⋯⟩)",
-   "proof": [],
-   "module": "TauCeti.LinearAlgebra.Matrix.SpecialLinearGroup.Iwasawa",
-   "line": 197,
-   "kind": "theorem",
-   "doc":
-   "**The Iwasawa decomposition of `GL n ℝ` restricts to `SL n ℝ`**: the factors in `GL n ℝ` of a\nmatrix of determinant one are the images under `toGL` of its factors in `SL n ℝ`."},
   "TauCeti.iterate_frobeniusSchurRotate_eq_id":
   {"statement": [],
    "sorry": false,
@@ -8893,7 +8805,6 @@
    ["LieSubalgebra.lieCartanRestriction_injOn_lieInvariants",
     "TauCeti.UniversalEnvelopingAlgebra.pbwAssociatedGradedEquiv",
     "TauCeti.UniversalEnvelopingAlgebra.pbwAssociatedGradedMap_injective",
-    "TauCeti.cartanProjection_mem_pbwFiltrationPrevious",
     "TauCeti.exists_mem_pbwFiltration_hcProjectionLinear_eq"],
    "module": "TauCeti.Algebra.Lie.HighestWeight.CentralCharacter.Isomorphism",
    "line": 82,
@@ -8916,23 +8827,12 @@
    "sorry": false,
    "signature":
    "TauCeti.groupHomology.indIso_inv_comp_map_counit.{u} {k G : Type u} [CommRing k] [Group G]\n  [DecidableEq G] (S : Subgroup G) (B : Rep.{u, u, u} k G) (n : ℕ) :\n  CategoryTheory.CategoryStruct.comp (groupHomology.indIso S (Rep.res S.subtype B) n).inv\n      (groupHomology.map (MonoidHom.id G) ((Rep.indResAdjunction k S.subtype).counit.app B) n) =\n    groupHomology.map S.subtype (CategoryTheory.CategoryStruct.id (Rep.res S.subtype B)) n",
-   "proof": ["TauCeti.groupHomology.indIso_inv"],
+   "proof": [],
    "module": "TauCeti.RepresentationTheory.Homological.GroupHomology.Shapiro",
    "line": 138,
    "kind": "theorem",
    "doc":
    "**Corestriction through Shapiro's lemma.** For a `G`-representation `B`, the inverse of\nShapiro's isomorphism `Hₙ(G, Ind_S^G Res_S B) ≅ Hₙ(S, Res_S B)` followed by the map induced by the\ncounit `Ind_S^G Res_S B ⟶ B` of induction–restriction is corestriction\n`Hₙ(S, Res_S B) ⟶ Hₙ(G, B)`."},
-  "TauCeti.groupHomology.indIso_inv":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.groupHomology.indIso_inv.{u} {k G : Type u} [CommRing k] [Group G] [DecidableEq G]\n  (S : Subgroup G) (A : Rep.{u, u, u} k ↥S) (n : ℕ) :\n  (groupHomology.indIso S A n).inv =\n    groupHomology.map S.subtype ((Rep.indResAdjunction k S.subtype).unit.app A) n",
-   "proof": [],
-   "module": "TauCeti.RepresentationTheory.Homological.GroupHomology.Shapiro",
-   "line": 93,
-   "kind": "theorem",
-   "doc":
-   "**The inverse of Shapiro's isomorphism in homology is corestriction of the unit.** The\ninverse of the isomorphism `Hₙ(G, Ind_S^G A) ≅ Hₙ(S, A)` of `groupHomology.indIso` is the\nchange-of-group map along `S ≤ G` induced by the unit `A ⟶ Res_S Ind_S^G A`, `a ↦ 1 ⊗ a`,\nof induction–restriction. The `DecidableEq G` instance is the one used by Mathlib's `indIso`;\nkeeping it caller-supplied ensures that this equality rewrites the caller's isomorphism."},
   "TauCeti.groupCohomologyOddEquivTorsionBy":
   {"statement": ["AddEquiv.cyclicRep"],
    "sorry": false,
@@ -9514,28 +9414,6 @@
    "kind": "def",
    "doc":
    "The **Frobenius–Perron dimension** of an object of a fusion category: the value of the\nFrobenius–Perron character `TauCeti.SplitK0.frobeniusPerronChar` at the class of the object."},
-  "TauCeti.frobeniusKernel_inter_eq_singleton":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.frobeniusKernel_inter_eq_singleton.{u_1} {G : Type u_1} [Group G] {H : Subgroup G} :\n  TauCeti.frobeniusKernel H ∩ ↑H = {1}",
-   "proof": ["TauCeti.frobeniusKernel_inter_conj_smul_eq_singleton"],
-   "module": "TauCeti.GroupTheory.FrobeniusKernel",
-   "line": 223,
-   "kind": "theorem",
-   "doc":
-   "**The Frobenius kernel meets `H` exactly in the identity**, the case `g = 1` of\n`TauCeti.frobeniusKernel_inter_conj_smul_eq_singleton`."},
-  "TauCeti.frobeniusKernel_inter_conj_smul_eq_singleton":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.frobeniusKernel_inter_conj_smul_eq_singleton.{u_1} {G : Type u_1} [Group G] {H : Subgroup G}\n  (g : G) : TauCeti.frobeniusKernel H ∩ MulAut.conj g • ↑H = {1}",
-   "proof": [],
-   "module": "TauCeti.GroupTheory.FrobeniusKernel",
-   "line": 207,
-   "kind": "theorem",
-   "doc":
-   "**The Frobenius kernel meets each conjugate of `H` exactly in the identity.**  A nonidentity\nelement of `g H g⁻¹` lies in a conjugate of `H`, so it is outside the kernel."},
   "TauCeti.frobeniusKernelSubgroup_normal":
   {"statement": [],
    "sorry": false,
@@ -11285,8 +11163,7 @@
    ["Representation.symmetricAlgebraInvariants",
     "Representation.symmetricAlgebraReynolds",
     "TauCeti.UniversalEnvelopingAlgebra.pbwAssociatedGradedEquiv",
-    "TauCeti.UniversalEnvelopingAlgebra.pbwAssociatedGradedMap_injective",
-    "TauCeti.cartanProjection_mem_pbwFiltrationPrevious"],
+    "TauCeti.UniversalEnvelopingAlgebra.pbwAssociatedGradedMap_injective"],
    "module": "TauCeti.Algebra.Lie.HighestWeight.CentralCharacter.Surjective",
    "line": 130,
    "kind": "theorem",
@@ -12006,7 +11883,6 @@
     "MonoidAlgebra.isSemisimpleRing_tensor",
     "QuotientGroup.quotientQuotientEquivQuotientSup",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.dualityMap2_kummerCoeff_bijective",
     "TauCeti.ClassFieldTheory.invMap",
@@ -12025,7 +11901,6 @@
     "TauCeti.galEquivOfInjective",
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.kummerIso",
     "TauCeti.nonempty_layerTateModule",
     "TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat",
@@ -13755,7 +13630,7 @@
    "sorry": false,
    "signature":
    "TauCeti.dualTensorHom_kummerH1FiniteRepresentationEquiv.{u, v} {K : Type u} [Field K] {L : Type v}\n  [Field L] [Algebra K L] [Normal K L] (sigma : L →ₐ[K] SeparableClosure K) (n : ℕ) (hn : IsUnit ↑n)\n  (hN : ∀ g ∈ sigma.fieldRange.fixingSubgroup, ∀ (xi : TauCeti.KummerCoeff K n), g • xi = xi)\n  (x : Additive (TauCeti.powerClassQuotient Lˣ n)) (xi : TauCeti.KummerCoeff K n) :\n  ((dualTensorHom (ZMod n) (TauCeti.KummerCoeff K n) (Additive (TauCeti.powerClassQuotient Lˣ n)))\n        ((TauCeti.kummerH1FiniteRepresentationEquiv sigma n hn hN)\n          ((TauCeti.fixingSubgroupKummerEquivOfTrivial sigma hn (TauCeti.kummerCoeffAddEquivZMod hn)\n              ⋯ hN)\n            x)))\n      xi =\n    (TauCeti.kummerCoeffAddEquivZMod hn) xi • x",
-   "proof": ["TauCeti.nsmul_smul_fixingSubgroupKummerEquivOfTrivial"],
+   "proof": [],
    "module": "TauCeti.FieldTheory.GaloisCohomology.EquivariantKummer",
    "line": 681,
    "kind": "theorem",
@@ -14980,17 +14855,6 @@
    "kind": "theorem",
    "doc":
    "**The Cartan--Poincare identity over a semisimple degree-zero part.** If `A` is\nfinite-dimensional and nonnegatively graded, its degree-zero part is semisimple, the chosen\nsimples are concentrated in degree zero, and their full bigraded Ext Poincare matrix is diagonal,\nthen `C^T * P(-q) = diagonal (fun i ↦ gdim(eᵢ • Sᵢ))`.\n\nThe diagonal entries are nonzero and need not be one; for projective covers of degree-zero\nsimples they are the constants `dim_k End_A(Sᵢ)`. The semisimplicity hypothesis supplies minimal\nprojective resolutions with finite-dimensional terms, so no resolutions or minimality witnesses\noccur in the public statement."},
-  "TauCeti.cartanProjection_mem_pbwFiltrationPrevious":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.cartanProjection_mem_pbwFiltrationPrevious.{u, v} {K : Type u} {L : Type v} [Field K]\n  [CharZero K] [LieRing L] [LieAlgebra K L] [LieAlgebra.IsKilling K L] [FiniteDimensional K L]\n  {H : LieSubalgebra K L} [H.IsCartanSubalgebra] [LieModule.IsTriangularizable K (↥H) L]\n  (b : (LieAlgebra.IsKilling.rootSystem H).Base) {n : ℕ} {u : UniversalEnvelopingAlgebra K L}\n  (hu : u ∈ TauCeti.UniversalEnvelopingAlgebra.pbwFiltrationPrevious K L n) :\n  (TauCeti.cartanProjection b) u ∈ TauCeti.UniversalEnvelopingAlgebra.pbwFiltrationPrevious K (↥H) n",
-   "proof": [],
-   "module": "TauCeti.Algebra.Lie.HighestWeight.CentralCharacter.LeadingTerm",
-   "line": 131,
-   "kind": "theorem",
-   "doc":
-   "**The Cartan projection preserves a strict PBW degree bound**: the companion of\n`TauCeti.cartanProjection_mem_pbwFiltration` for the step preceding degree `n`."},
   "TauCeti.cartanMatrix_transpose_mul_extEulerMatrix_eq_diagonal":
   {"statement": [],
    "sorry": false,
@@ -16065,7 +15929,6 @@
    ["LinearMap.isOpenMap_of_isTateRing",
     "TauCeti.HasZeroSequenceOfUnits.isOpenMap",
     "TauCeti.HasZeroSequenceOfUnits.isQuotientMap",
-    "TauCeti.Huber.isWeightBounded_of_isWeightedVarPowerBounded",
     "TauCeti.WittVector.isStronglyNoetherian_intervalRing"],
    "module": "TauCeti.AlgebraicGeometry.AdicSpace.FarguesFontaine.IntervalChart",
    "line": 170,
@@ -16650,7 +16513,6 @@
    ["LinearMap.isOpenMap_of_isTateRing",
     "TauCeti.HasZeroSequenceOfUnits.isOpenMap",
     "TauCeti.HasZeroSequenceOfUnits.isQuotientMap",
-    "TauCeti.Huber.isWeightBounded_of_isWeightedVarPowerBounded",
     "TauCeti.MvPowerSeries.isNoetherianRing_isRestricted_subring_of_division"],
    "module": "TauCeti.AlgebraicGeometry.AdicSpace.Spa.Polydisc.LaurentCover",
    "line": 79,
@@ -16689,7 +16551,6 @@
     "LinearMap.isOpenMap_of_isTateRing",
     "TauCeti.HasZeroSequenceOfUnits.isOpenMap",
     "TauCeti.HasZeroSequenceOfUnits.isQuotientMap",
-    "TauCeti.Huber.isWeightBounded_of_isWeightedVarPowerBounded",
     "TauCeti.IsAffinoidAlgebra.continuous_algHom",
     "TauCeti.MvPowerSeries.isNoetherianRing_isRestricted_subring_of_division"],
    "module": "TauCeti.AlgebraicGeometry.AdicSpace.PreAdicSpace.StronglyNoetherian",
@@ -19474,17 +19335,6 @@
    "kind": "theorem",
    "doc":
    "**The splitting criterion for quaternion algebras** (Lam III.2.7 and III.4.2, Serre III.1,\nGille-Szamuely 1.1.9). For units `a` and `b` of a field in which `2` is invertible, the following\nare equivalent:\n1. `ℍ[K,a,b]` is isomorphic to `M₂(K)`;\n2. `b` is a norm from `K[√a] = QuadraticAlgebra K a 0`;\n3. `b = x² - a y²` for some `x, y ∈ K`;\n4. the ternary form `⟨1, -a, -b⟩` is isotropic;\n5. the norm form of `ℍ[K,a,b]`, that is `⟨1, -a, -b, ab⟩`, is isotropic."},
-  "TauCeti.Quaternion.mk_ne_one":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.Quaternion.mk_ne_one : TauCeti.BrauerGroup.mk (TauCeti.CSA.of ℝ (Quaternion ℝ)) ≠ 1",
-   "proof": ["IsSimpleRing.exists_algEquiv_matrix_centralDivisionRing"],
-   "module": "TauCeti.Algebra.BrauerGroup.Quaternion",
-   "line": 67,
-   "kind": "theorem",
-   "doc":
-   "**The Brauer class of the real quaternions is not the identity.** `ℍ[ℝ]` is a central division\nalgebra over `ℝ` of dimension `4`, and a central division algebra has the identity class only when\nit is one-dimensional, that is, only when it is the base field."},
   "TauCeti.QuadraticMap.isCompact_orthogonalGroup_iff":
   {"statement": [],
    "sorry": false,
@@ -19668,16 +19518,6 @@
    "kind": "theorem",
    "doc":
    "**The renewal central limit theorem.** Let `T 0, T 1, …` be independent, identically distributed\nnonnegative waiting times with nonzero variance `σ² = Var[T 0; P]` and expectation `μ = P[T 0]`. As\n`t → ∞` in `ℝ≥0`, the standardized renewal count `((N_t : ℝ) - t / μ) / (σ * √(t / μ ^ 3))`\nconverges in distribution to any standard normal random variable `Z`. Precomposing with\n`MeasureTheory.TendstoInDistribution.comp_tendsto` gives convergence along any time family (in\nparticular any sequence) tending to `atTop`."},
-  "TauCeti.Probability.studentTMeasure_one":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.Probability.studentTMeasure_one :\n  TauCeti.Probability.studentTMeasure 1 = ProbabilityTheory.cauchyMeasure 0 1",
-   "proof": [],
-   "module": "TauCeti.Probability.Distributions.StudentT.Basic",
-   "line": 315,
-   "kind": "theorem",
-   "doc": "**Student's t law with one degree of freedom is the standard Cauchy law.**"},
   "TauCeti.Probability.setIntegral_exp_mul_gaussianReal":
   {"statement": [],
    "sorry": false,
@@ -21801,8 +21641,7 @@
    "signature":
    "TauCeti.PDE.exists_holderOnWith_iteratedFDeriv_two_of_sum_smul_fderiv_fderiv_add_fderiv_add_mul\n  {n : ℕ} {α : NNReal} (hα : 0 < α) (hα1 : α < 1) {Ω K : Set (EuclideanSpace ℝ (Fin (n + 1)))}\n  (hΩ : IsOpen Ω) (hK : IsCompact K) (hKΩ : K ⊆ Ω)\n  {a : EuclideanSpace ℝ (Fin (n + 1)) → Matrix (Fin (n + 1)) (Fin (n + 1)) ℝ}\n  {b : EuclideanSpace ℝ (Fin (n + 1)) → EuclideanSpace ℝ (Fin (n + 1))}\n  {c : EuclideanSpace ℝ (Fin (n + 1)) → ℝ}\n  (ha :\n    ∀ x ∈ K,\n      ∃ r > 0, ∃ L, ∀ (i j : Fin (n + 1)), HolderOnWith L α (fun y => a y i j) (Metric.ball x r))\n  (hb : ∀ x ∈ K, ∃ r > 0, ∃ L, HolderOnWith L α b (Metric.ball x r))\n  (hc : ∀ x ∈ K, ∃ r > 0, ∃ L, HolderOnWith L α c (Metric.ball x r))\n  (hell :\n    ∀ x ∈ K,\n      ∃ lam,\n        0 < lam ∧\n          ∀ (ξ : EuclideanSpace ℝ (Fin (n + 1))), lam * ‖ξ‖ ^ 2 ≤ (a x).toQuadraticForm' ξ.ofLp) :\n  ∃ C,\n    ∀ {u : EuclideanSpace ℝ (Fin (n + 1)) → ℝ} {N M : NNReal},\n      ContDiffOn ℝ 2 u Ω →\n        (∀ x ∈ Ω, |u x| ≤ ↑N) →\n          (∀ x ∈ Ω, ‖fderiv ℝ u x‖ ≤ ↑N) →\n            (∀ x ∈ Ω, ‖iteratedFDeriv ℝ 2 u x‖ ≤ ↑N) →\n              (∀ S ⊆ Ω, IsCompact S → ∃ V, HolderOnWith V α (iteratedFDeriv ℝ 2 u) S) →\n                HolderOnWith M α\n                    (fun x =>\n                      ∑ i,\n                            ∑ j,\n                              a x i j •\n                                ((fderiv ℝ (fderiv ℝ u) x) (EuclideanSpace.single i 1))\n                                  (EuclideanSpace.single j 1) +\n                          (fderiv ℝ u x) (b x) +\n                        c x * u x)\n                    Ω →\n                  HolderOnWith (C * (M + N)) α (iteratedFDeriv ℝ 2 u) K",
    "proof":
-   ["IsCompact.exists_holderOnWith_thickening_and_norm_le",
-    "TauCeti.PDE.exists_holderOnWith_iteratedFDeriv_two_of_sum_smul_fderiv_fderiv_of_holderOnWith"],
+   ["TauCeti.PDE.exists_holderOnWith_iteratedFDeriv_two_of_sum_smul_fderiv_fderiv_of_holderOnWith"],
    "module": "TauCeti.Analysis.PDE.Regularity.Hessian.Schauder.LowerOrder",
    "line": 108,
    "kind": "theorem",
@@ -25123,7 +24962,6 @@
     "TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank",
     "TauCeti.Ring.IsJapanese",
     "TauCeti.hurwitz_genus_formula_geometricDegree",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.Frobenius.Isogenous",
    "line": 112,
@@ -25148,7 +24986,6 @@
     "TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank",
     "TauCeti.Ring.IsJapanese",
     "TauCeti.hurwitz_genus_formula_geometricDegree",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.Wronskian",
    "line": 115,
@@ -25175,7 +25012,6 @@
     "TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank",
     "TauCeti.Ring.IsJapanese",
     "TauCeti.hurwitz_genus_formula_geometricDegree",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.GaloisCohomology.WeilPairing.Local",
    "line": 113,
@@ -25255,7 +25091,6 @@
     "TauCeti.Place.sum_ramificationIdx_mul_relativeDegree_le_finrank",
     "TauCeti.Ring.IsJapanese",
     "TauCeti.hurwitz_genus_formula_geometricDegree",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
     "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.Wronskian",
    "line": 76,
@@ -27712,17 +27547,6 @@
    "kind": "def",
    "doc":
    "**The tensor topology** on `B ⊗[A] C`, for adic structure maps `A → B` and `A → C`: for any\ncompatible pairs of definition `(A₀, I)`, `(B₀, I B₀)` and `(C₀, I C₀)`, its neighbourhoods of\nzero are generated by the images of `Iⁿ F`, where `F` is the image of `B₀ ⊗[A₀] C₀`\n(`TauCeti.Huber.hasBasis_tensorTopology`). It is not an instance, since `B ⊗[A] C` may carry\nother topologies."},
-  "TauCeti.Huber.isWeightBounded_of_isWeightedVarPowerBounded":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "TauCeti.Huber.isWeightBounded_of_isWeightedVarPowerBounded.{u_1, u_2} {k : ℕ} {A : Type u_1}\n  {B : Type u_2} [CommSemiring A] [CommSemiring B] [TopologicalSpace B] {φ : A →+* B}\n  {T : Fin k → Set A} {b : Fin k → B} (h : TauCeti.Huber.IsWeightedVarPowerBounded φ T b) :\n  TauCeti.Huber.IsWeightBounded φ T b",
-   "proof": [],
-   "module": "TauCeti.RingTheory.Huber.WeightedEval.Basic",
-   "line": 185,
-   "kind": "theorem",
-   "doc":
-   "**Wedhorn's coordinatewise hypothesis gives the uniform bound.** Each weighted monomial set is\na finite pointwise product of powers of the weighted variables, so it lies in the product of the\nbounded sets containing those powers — and a finite pointwise product of bounded sets is bounded.\n\nThis is what makes `TauCeti.Huber.IsWeightBounded` the right hypothesis for the summability\ntheorem rather than a stronger one invented for it: the two are reached from the same place."},
   "TauCeti.Huber.isTopologicallyFiniteType_algebraMap_iff_isAffinoidAlgebra":
   {"statement": [],
    "sorry": false,
@@ -27745,8 +27569,7 @@
    "proof":
    ["LinearMap.isOpenMap_of_isTateRing",
     "TauCeti.HasZeroSequenceOfUnits.isOpenMap",
-    "TauCeti.HasZeroSequenceOfUnits.isQuotientMap",
-    "TauCeti.Huber.isWeightBounded_of_isWeightedVarPowerBounded"],
+    "TauCeti.HasZeroSequenceOfUnits.isQuotientMap"],
    "module": "TauCeti.AlgebraicGeometry.AdicSpace.Spa.StructurePresheaf.StronglyNoetherian",
    "line": 132,
    "kind": "theorem",
@@ -29393,7 +29216,6 @@
    ["LinearMap.isOpenMap_of_isTateRing",
     "TauCeti.HasZeroSequenceOfUnits.isOpenMap",
     "TauCeti.HasZeroSequenceOfUnits.isQuotientMap",
-    "TauCeti.Huber.isWeightBounded_of_isWeightedVarPowerBounded",
     "TauCeti.PreAdicSpace.isAdic",
     "TauCeti.WittVector.isStronglyNoetherian_intervalRing"],
    "module": "TauCeti.AlgebraicGeometry.AdicSpace.FarguesFontaine.Adic",
@@ -32162,8 +31984,7 @@
     "TauCeti.ExactStructure.exists_conflation_comp",
     "TauCeti.ExactStructure.exists_conflation_comp'",
     "TauCeti.algebraicExtensionNormedField",
-    "TauCeti.kummerIso",
-    "TauCeti.nsmul_smul_fixingSubgroupKummerEquivOfTrivial"],
+    "TauCeti.kummerIso"],
    "module": "TauCeti.NumberTheory.ClassFieldTheory.Local.EulerCharacteristic.Coprime",
    "line": 368,
    "kind": "theorem",
@@ -32239,7 +32060,6 @@
    ["IntermediateField.finiteDimensional_fixedField",
     "IntermediateField.isGalois_fixedField",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.invMap",
     "TauCeti.ClassFieldTheory.tateTheorem",
     "TauCeti.TateCohomology.cup_bijective_of_cupTrivialInt_injective",
@@ -32248,7 +32068,6 @@
     "TauCeti.galEquivOfInjective",
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.maximalUnramifiedGaloisGroupEquivZHat",
     "TauCeti.ramificationIndex_sub_one_le_differentExponent"],
    "module": "TauCeti.NumberTheory.ClassFieldTheory.Local.ExplicitCyclotomicSymbol.ArtinMap",
@@ -32287,23 +32106,6 @@
    "kind": "theorem",
    "doc":
    "**Shapiro's lemma for the normalized order.** For `L` the fixed field of `C ≤ G_K ⧸ V`, the\ninvariant `φ_K(A) = ‖#A‖_K = |#A|_p ^ [K : ℚ_p]` of the inflation of `Ind_C^{G_K ⧸ V} B` is that of\n`B` over `L`: `#Ind B = #B ^ [L : K]` and `[L : ℚ_p] = [K : ℚ_p] [L : K]`."},
-  "TauCeti.ClassFieldTheory.localArtinAt_eq_map_normResidue":
-  {"statement":
-   ["TauCeti.ClassFieldTheory.ClassFormation.tateIso",
-    "TauCeti.ClassFieldTheory.localClassFormation"],
-   "sorry": false,
-   "signature":
-   "TauCeti.ClassFieldTheory.localArtinAt_eq_map_normResidue {K : Type} [Field K] [NumberField K]\n  {L : Type} [Field L] [Algebra K L] [NumberField L] [IsGalois K L]\n  (v : IsDedekindDomain.HeightOneSpectrum (NumberField.RingOfIntegers K))\n  (w : IsDedekindDomain.HeightOneSpectrum (NumberField.RingOfIntegers L))\n  [w.asIdeal.LiesOver v.asIdeal] (x : (IsDedekindDomain.HeightOneSpectrum.adicCompletion K v)ˣ) :\n  (TauCeti.ClassFieldTheory.localArtinAt K L v) x =\n    (Abelianization.map\n        ((MulAction.stabilizer Gal(L/K) w.asIdeal).subtype.comp\n          (v.decompositionEquiv w).symm.toMonoidHom))\n      ((TauCeti.ClassFieldTheory.normResidue (IsDedekindDomain.HeightOneSpectrum.adicCompletion K v)\n          (IsDedekindDomain.HeightOneSpectrum.adicCompletion L w))\n        ↑x)",
-   "proof":
-   ["TauCeti.ClassFieldTheory.tateTheorem",
-    "TauCeti.TateCohomology.cup_bijective_of_cupTrivialInt_injective",
-    "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
-    "TauCeti.groupCohomology.map_unit_comp_coindIso_hom"],
-   "module": "TauCeti.NumberTheory.ClassFieldTheory.Global.LocalArtin.FinitePlace",
-   "line": 147,
-   "kind": "theorem",
-   "doc":
-   "**The local Artin symbol is finite local reciprocity at a place above `v`.** For `L/K` Galois\nand a finite place `w` of `L` above `v`, the local Artin symbol at `v` of `x ∈ K_vˣ` is the image\nof its norm residue symbol in `Gal(L_w/K_v)^ab` under the identification of `Gal(L_w/K_v)` with\nthe decomposition group of `w` (`IsDedekindDomain.HeightOneSpectrum.decompositionEquiv`)."},
   "TauCeti.ClassFieldTheory.kroneckerWeber":
   {"statement": [],
    "sorry": false,
@@ -32315,7 +32117,6 @@
     "IsDedekindDomain.FiniteAdeleRing.sIntegralAdeles",
     "QuotientGroup.quotientQuotientEquivQuotientSup",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.brLocalization_injective",
     "TauCeti.ClassFieldTheory.globalArtinEquiv",
@@ -32323,7 +32124,6 @@
     "TauCeti.ClassFieldTheory.globalInv",
     "TauCeti.ClassFieldTheory.index_range_ideleClassNormMap_le_of_finrank_prime",
     "TauCeti.ClassFieldTheory.invMap",
-    "TauCeti.ClassFieldTheory.localArtinAt_eq_map_normResidue",
     "TauCeti.ClassFieldTheory.localClassFormation",
     "TauCeti.ClassFieldTheory.tateTheorem",
     "TauCeti.ContCohomology.explicitMap2_explicitCor2_eq_sum",
@@ -32343,7 +32143,6 @@
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.isZero_of_isZero_sylow",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.groupHomology.indIso_inv_comp_map_counit",
     "TauCeti.maximalUnramifiedGaloisGroupEquivZHat",
     "TauCeti.pow_pow_totient_eq_self",
@@ -32439,7 +32238,6 @@
    ["IntermediateField.finiteDimensional_fixedField",
     "IntermediateField.isGalois_fixedField",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.brLocalization_injective",
     "TauCeti.ClassFieldTheory.localClassFormation",
@@ -32450,7 +32248,6 @@
     "TauCeti.galEquivOfInjective",
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.maximalUnramifiedGaloisGroupEquivZHat",
     "TauCeti.pow_pow_totient_eq_self",
     "TauCeti.ramificationIndex_sub_one_le_differentExponent",
@@ -32469,7 +32266,6 @@
    ["IntermediateField.finiteDimensional_fixedField",
     "IntermediateField.isGalois_fixedField",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.brLocalization_injective",
     "TauCeti.ClassFieldTheory.index_range_ideleClassNormMap_le_of_finrank_prime",
@@ -32491,7 +32287,6 @@
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.isZero_of_isZero_sylow",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.groupHomology.indIso_inv_comp_map_counit",
     "TauCeti.maximalUnramifiedGaloisGroupEquivZHat",
     "TauCeti.pow_pow_totient_eq_self",
@@ -32512,7 +32307,6 @@
    ["IntermediateField.finiteDimensional_fixedField",
     "IntermediateField.isGalois_fixedField",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.brLocalization_injective",
     "TauCeti.ClassFieldTheory.index_range_ideleClassNormMap_le_of_finrank_prime",
@@ -32533,7 +32327,6 @@
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.isZero_of_isZero_sylow",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.groupHomology.indIso_inv_comp_map_counit",
     "TauCeti.maximalUnramifiedGaloisGroupEquivZHat",
     "TauCeti.pow_pow_totient_eq_self",
@@ -32553,7 +32346,6 @@
    ["IntermediateField.finiteDimensional_fixedField",
     "IntermediateField.isGalois_fixedField",
     "TauCeti.Algebra.exists_norm_eq_of_norm_sub_mem",
-    "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom",
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.brLocalization_injective",
     "TauCeti.ClassFieldTheory.index_range_ideleClassNormMap_le_of_finrank_prime",
@@ -32574,7 +32366,6 @@
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
     "TauCeti.groupCohomology.isZero_of_isZero_sylow",
     "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv",
     "TauCeti.groupHomology.indIso_inv_comp_map_counit",
     "TauCeti.maximalUnramifiedGaloisGroupEquivZHat",
     "TauCeti.pow_pow_totient_eq_self",
@@ -32761,7 +32552,7 @@
    "sorry": false,
    "signature":
    "TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv.{u_1} {F : Type} [Field F]\n  {L : Type u_1} [Field L] [Algebra F L] [FiniteDimensional F L] (σ : L →ₐ[F] SeparableClosure F)\n  {V : OpenNormalSubgroup (Field.absoluteGaloisGroup F)} {n : ℕ} [Normal F L] (hn : IsUnit ↑n)\n  (hV : (TauCeti.absoluteGaloisGroupExtend F L σ).range = ↑V.toOpenSubgroup)\n  {M : FDRep (ZMod n) (Field.absoluteGaloisGroup F ⧸ ↑V.toOpenSubgroup)}\n  (e :\n    (TauCeti.ClassFieldTheory.fdGalRepOfQuotient n F V).obj M ≅ TauCeti.ClassFieldTheory.muNRep n F)\n  (x : Additive (TauCeti.powerClassQuotient Lˣ n)) (m : ↑M.V) :\n  ((dualTensorHom (ZMod n) (↑M.V) (Additive (TauCeti.powerClassQuotient Lˣ n)))\n        ((TauCeti.ClassFieldTheory.kummerH1ConjRepresentationEquiv σ hn hV e)\n          ((TauCeti.ClassFieldTheory.restrictSubgroupH1Equiv σ n hV)\n            ((TauCeti.fixingSubgroupKummerEquivOfTrivial σ hn (TauCeti.kummerCoeffAddEquivZMod hn) ⋯\n                ⋯)\n              x))))\n      m =\n    (TauCeti.kummerCoeffAddEquivZMod hn)\n        ((TauCeti.ClassFieldTheory.kummerCoeffEquivMuNRep n F).symm\n          ((TopRep.Hom.hom (CategoryTheory.eqToIso ⋯ ≪≫ e).hom) m)) •\n      x",
-   "proof": ["TauCeti.nsmul_smul_fixingSubgroupKummerEquivOfTrivial"],
+   "proof": [],
    "module": "TauCeti.NumberTheory.ClassFieldTheory.Local.EulerCharacteristic.Kummer.Basic",
    "line": 247,
    "kind": "theorem",
@@ -32874,21 +32665,6 @@
    "kind": "theorem",
    "doc":
    "**The Hasse principle for the Brauer group** (Albert–Brauer–Hasse–Noether). A Brauer class of\nthe number field `K` whose localizations at all places vanish is zero: `Br K → ⨁_v Br K_v` is\ninjective."},
-  "TauCeti.ClassFieldTheory.ClassFormation.tateIso_conj":
-  {"statement": ["TauCeti.ClassFieldTheory.ClassFormation.tateIso"],
-   "sorry": false,
-   "signature":
-   "TauCeti.ClassFieldTheory.ClassFormation.tateIso_conj {G : Type} [Group G] [TopologicalSpace G]\n  [IsTopologicalGroup G] [CompactSpace G] [TotallyDisconnectedSpace G]\n  {F : TauCeti.ClassFieldTheory.Formation G} (cf : TauCeti.ClassFieldTheory.ClassFormation F)\n  (L : TauCeti.ClassFieldTheory.NormalLayer G) (g : G) (r : ℤ) (x : ↑(L.TrivialTateH r)) :\n  (CategoryTheory.ConcreteCategory.hom (L.conjugateTateIso F g (r + 2)).hom) ((cf.tateIso L r) x) =\n    (cf.tateIso (L.conjugate g) r)\n      ((CategoryTheory.ConcreteCategory.hom (L.conjugateTrivialTateIso g r).hom) x)",
-   "proof":
-   ["TauCeti.ClassFieldTheory.tateTheorem",
-    "TauCeti.TateCohomology.cup_bijective_of_cupTrivialInt_injective",
-    "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
-    "TauCeti.groupCohomology.map_unit_comp_coindIso_hom"],
-   "module": "TauCeti.NumberTheory.ClassFieldTheory.Formation.Tate.Conjugation",
-   "line": 153,
-   "kind": "theorem",
-   "doc":
-   "**Tate's isomorphism of a class formation commutes with conjugation**: conjugating\n`x ∪ u_{U/V}` by `g` gives the cup product of the conjugate of `x` with the fundamental class of\nthe conjugate layer."},
   "TauCeti.ClassFieldTheory.ClassFormation.tateIso":
   {"statement": ["TauCeti.ClassFieldTheory.tateTheorem"],
    "sorry": false,
@@ -32911,44 +32687,12 @@
     "TauCeti.ClassFieldTheory.tateTheorem",
     "TauCeti.TateCohomology.cup_bijective_of_cupTrivialInt_injective",
     "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
-    "TauCeti.groupCohomology.map_unit_comp_coindIso_hom",
-    "TauCeti.groupHomology.indIso_inv"],
+    "TauCeti.groupCohomology.map_unit_comp_coindIso_hom"],
    "module": "TauCeti.NumberTheory.ClassFieldTheory.Formation.PrincipalIdeal",
    "line": 63,
    "kind": "theorem",
    "doc":
    "**The principal ideal theorem for a class formation.** Let `V ◁ U` be a layer, `K/F` in field\nnotation, and restrict it to the ground subgroup `U'` whose image `U'/V` is the commutator subgroup\nof `U/V`, the layer `K/E` over the maximal abelian subextension `E`. Then every element of the\nground level `A^U` is, in `A^{U'}`, a norm from `A^V`."},
-  "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom":
-  {"statement": ["TauCeti.ClassFieldTheory.ClassFormation.tateIso"],
-   "sorry": false,
-   "signature":
-   "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_layerHom {G : Type} [Group G]\n  [TopologicalSpace G] [IsTopologicalGroup G] [CompactSpace G] [TotallyDisconnectedSpace G]\n  {G' : Type} [Group G'] [TopologicalSpace G'] [IsTopologicalGroup G'] [CompactSpace G']\n  [TotallyDisconnectedSpace G'] {F : TauCeti.ClassFieldTheory.Formation G}\n  {L : TauCeti.ClassFieldTheory.NormalLayer G} {F' : TauCeti.ClassFieldTheory.Formation G'}\n  {L' : TauCeti.ClassFieldTheory.NormalLayer G'} (cf : TauCeti.ClassFieldTheory.ClassFormation F)\n  (cf' : TauCeti.ClassFieldTheory.ClassFormation F')\n  (E : TauCeti.ClassFieldTheory.LayerHom F L F' L')\n  (hu :\n    (CategoryTheory.ConcreteCategory.hom (E.cohomologyMap 2)) (cf.fundamentalClass L) =\n      cf'.fundamentalClass L')\n  (y : L.NormQuotient F) :\n  (cf'.artinEquiv L') (E.normQuotientMap y) =\n    (MulEquiv.toAdditive E.galEquiv.abelianizationCongr) ((cf.artinEquiv L) y)",
-   "proof":
-   ["TauCeti.ClassFieldTheory.tateTheorem",
-    "TauCeti.TateCohomology.cup_bijective_of_cupTrivialInt_injective",
-    "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
-    "TauCeti.groupCohomology.map_unit_comp_coindIso_hom"],
-   "module": "TauCeti.NumberTheory.ClassFieldTheory.Formation.Layer.Hom",
-   "line": 395,
-   "kind": "theorem",
-   "doc":
-   "**Artin reciprocity is carried along a layer morphism matching the fundamental classes.**"},
-  "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_conj":
-  {"statement": ["TauCeti.ClassFieldTheory.ClassFormation.tateIso"],
-   "sorry": false,
-   "signature":
-   "TauCeti.ClassFieldTheory.ClassFormation.artinEquiv_conj {G : Type} [Group G] [TopologicalSpace G]\n  [IsTopologicalGroup G] [CompactSpace G] [TotallyDisconnectedSpace G]\n  {F : TauCeti.ClassFieldTheory.Formation G} (cf : TauCeti.ClassFieldTheory.ClassFormation F)\n  (L : TauCeti.ClassFieldTheory.NormalLayer G) (g : G) (y : L.NormQuotient F) :\n  (cf.artinEquiv (L.conjugate g)) ((L.conjugateNormQuotientEquiv F g) y) =\n    (MulEquiv.toAdditive (L.conjugateGalEquiv g).abelianizationCongr) ((cf.artinEquiv L) y)",
-   "proof":
-   ["TauCeti.ClassFieldTheory.ClassFormation.tateIso_conj",
-    "TauCeti.ClassFieldTheory.tateTheorem",
-    "TauCeti.TateCohomology.cup_bijective_of_cupTrivialInt_injective",
-    "TauCeti.groupCohomology.coindIso_hom_comp_corestriction",
-    "TauCeti.groupCohomology.map_unit_comp_coindIso_hom"],
-   "module": "TauCeti.NumberTheory.ClassFieldTheory.Formation.ArtinMap",
-   "line": 254,
-   "kind": "theorem",
-   "doc":
-   "**Artin reciprocity commutes with conjugation**: Artin reciprocity of the conjugate layer,\napplied to the conjugate of a class modulo norms, is the conjugate of its Artin symbol."},
   "TauCeti.CkHolderSpace":
   {"statement": [],
    "sorry": false,
@@ -34310,9 +34054,7 @@
    "sorry": false,
    "signature":
    "TauCeti.AlgebraicGeometry.ModuliProblem.isRigid_gamma.{u} (B : AlgebraicGeometry.Scheme) (N : ℕ)\n  [NeZero N] (hN : ∀ (b : ↥B), ↑N ≠ 0) (hN3 : 3 ≤ N) :\n  (TauCeti.AlgebraicGeometry.ModuliProblem.gamma B N).IsRigid",
-   "proof":
-   ["WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
-    "WeierstrassCurve.formalThirdRootEval_relation"],
+   "proof": ["WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.ModularCurve.Comparison",
    "line": 348,
    "kind": "theorem",
@@ -34336,8 +34078,7 @@
    "sorry": false,
    "signature":
    "TauCeti.AlgebraicGeometry.ModuliProblem.gammaRelRepData.{u} (B : AlgebraicGeometry.Scheme) (N : ℕ)\n  [NeZero N] : (TauCeti.AlgebraicGeometry.ModuliProblem.gamma B N).RelRepData",
-   "proof":
-   ["TauCeti.etale_aeval_of_basis", "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField"],
+   "proof": ["TauCeti.etale_aeval_of_basis"],
    "module": "TauCeti.AlgebraicGeometry.ModularCurve.Gamma.Full",
    "line": 315,
    "kind": "def",
@@ -34372,7 +34113,7 @@
    "sorry": false,
    "signature":
    "TauCeti.AlgebraicGeometry.ModuliProblem.gammaOneNaiveRepresentableBy.{u}\n  {B : AlgebraicGeometry.Scheme} {N : ℕ} [NeZero N] (h4 : 4 ≤ N) :\n  CategoryTheory.Functor.RepresentableBy (TauCeti.AlgebraicGeometry.ModuliProblem.gammaOneNaive B N)\n    (TauCeti.AlgebraicGeometry.EllObj.yOne B N)",
-   "proof": ["WeierstrassCurve.Universal.Jacobian.addXYZ_smulField"],
+   "proof": [],
    "module": "TauCeti.AlgebraicGeometry.ModularCurve.YOne",
    "line": 661,
    "kind": "def",
@@ -34383,10 +34124,7 @@
    "sorry": false,
    "signature":
    "TauCeti.AlgebraicGeometry.ModuliProblem.gammaIsoGammaNaive.{u} (B : AlgebraicGeometry.Scheme)\n  (N : ℕ) [NeZero N] (hN : ∀ (b : ↥B), ↑N ≠ 0) :\n  TauCeti.AlgebraicGeometry.ModuliProblem.gamma B N ≅\n    TauCeti.AlgebraicGeometry.ModuliProblem.gammaNaive B N",
-   "proof":
-   ["TauCeti.etale_aeval_of_basis",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
-    "WeierstrassCurve.formalThirdRootEval_relation"],
+   "proof": ["TauCeti.etale_aeval_of_basis", "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.ModularCurve.Comparison",
    "line": 299,
    "kind": "def",
@@ -34509,8 +34247,7 @@
    "sorry": false,
    "signature":
    "TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast.{u}\n  {S : AlgebraicGeometry.Scheme} (E : TauCeti.AlgebraicGeometry.EllipticCurveGeom S) {n : ℤ}\n  (hn : n ≠ 0) : TauCeti.GroupScheme.IsogenyOfDegree (↑n).asHom.hom (n.natAbs ^ 2)",
-   "proof":
-   ["TauCeti.etale_aeval_of_basis", "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField"],
+   "proof": ["TauCeti.etale_aeval_of_basis"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.Scheme.Geom.Isogeny",
    "line": 131,
    "kind": "theorem",
@@ -34520,10 +34257,7 @@
    "sorry": false,
    "signature":
    "TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale_torsion_hom_of_forall_intCast_ne_zero.{u}\n  {S : AlgebraicGeometry.Scheme} (E : TauCeti.AlgebraicGeometry.EllipticCurveGeom S) {n : ℤ}\n  (hn : ∀ (s : ↥S), ↑n ≠ 0) : AlgebraicGeometry.Etale (E.torsion n).X.hom",
-   "proof":
-   ["TauCeti.etale_aeval_of_basis",
-    "WeierstrassCurve.Universal.Jacobian.addXYZ_smulField",
-    "WeierstrassCurve.formalThirdRootEval_relation"],
+   "proof": ["TauCeti.etale_aeval_of_basis", "WeierstrassCurve.formalThirdRootEval_relation"],
    "module": "TauCeti.AlgebraicGeometry.EllipticCurve.Scheme.Geom.Torsion.Etale.Locus",
    "line": 85,
    "kind": "theorem",
@@ -36178,17 +35912,6 @@
    "kind": "theorem",
    "doc":
    "**The topological first isomorphism theorem for rings.** A ring homomorphism that is a\nquotient map presents its target as the quotient of its source by its kernel, topologically as\nwell as algebraically.\n\nA continuous surjection is not enough on its own. Surjectivity of `f` makes the lift bijective and\ncontinuity of `f` makes it continuous, but a continuous bijection is open only when the topology it\nlands in is no coarser than the one it carries; that `f` is a quotient map is exactly the statement\nthat it is not coarser.\n\n`IsHomeomorph.homeomorph` turns this into `R ⧸ ker f ≃ₜ S`. What it bundles is `RingHom.kerLift`,\nwhich is a ring homomorphism, so a consumer needing the isomorphism of rings has it already —\n`RingHom.quotientKerEquivOfSurjective` is that same map."},
-  "RingEquiv.trivialF2Map1Equiv_kummerSquareClassEquiv":
-  {"statement": ["TauCeti.kummerIso"],
-   "sorry": false,
-   "signature":
-   "RingEquiv.trivialF2Map1Equiv_kummerSquareClassEquiv.{u, v} {K : Type u} {L : Type v} [Field K]\n  [Field L] [Invertible 2] [Invertible 2] (e : K ≃+* L) (x : TauCeti.SquareClassGroup K) :\n  (TauCeti.trivialF2Map1Equiv e.absoluteGaloisGroupCongr) ((TauCeti.kummerSquareClassEquiv K) x) =\n    (TauCeti.kummerSquareClassEquiv L) ((↑e).squareClassMap x)",
-   "proof": [],
-   "module": "TauCeti.FieldTheory.GaloisCohomology.MuTwo.FieldCongr",
-   "line": 142,
-   "kind": "theorem",
-   "doc":
-   "**The Kummer isomorphism on square classes is natural in field isomorphisms**: transport of\n`H¹(-, 𝔽₂)` along `G_L ≃ G_K` corresponds to pushforward of square classes along `e`."},
   "Ring.SatisfiesSerreR":
   {"statement": [],
    "sorry": false,
@@ -41479,17 +41202,6 @@
    "kind": "theorem",
    "doc":
    "**Harnack's inequality.** Let `K` be a compact subset of a preconnected open set `U`. There\nis a constant `C`, depending only on `K` and `U`, such that every function `u` harmonic and\nnonnegative on `U` satisfies `u x ≤ C * u y` for all `x, y ∈ K`; that is,\n`sup_K u ≤ C * inf_K u`."},
-  "IsCompact.exists_holderOnWith_thickening_and_norm_le":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "IsCompact.exists_holderOnWith_thickening_and_norm_le.{u_3, u_4} {X : Type u_3} {Y : Type u_4}\n  [PseudoMetricSpace X] [SeminormedAddCommGroup Y] {K : Set X} (hK : IsCompact K) {α : NNReal}\n  {f : X → Y} (hf : ∀ x ∈ K, ∃ r > 0, ∃ L, HolderOnWith L α f (Metric.ball x r)) :\n  ∃ δ > 0,\n    ∃ L M, HolderOnWith L α f (Metric.thickening δ K) ∧ ∀ y ∈ Metric.thickening δ K, ‖f y‖ ≤ ↑M",
-   "proof": [],
-   "module": "TauCeti.Topology.MetricSpace.Holder",
-   "line": 232,
-   "kind": "theorem",
-   "doc":
-   "**Local Hölder bounds near a compact set are uniform on a thickening.** If `f` is `α`-Hölder on\na ball around each point of a compact set `K`, with radii and constants depending on the point, then\non some open thickening of `K` the function `f` is `α`-Hölder with one constant and is bounded."},
   "IsCoercive.orthogonalComplement_iSup_eigenspaces_formSolutionOperator_eq_bot":
   {"statement": [],
    "sorry": false,
@@ -42226,17 +41938,6 @@
    "kind": "theorem",
    "doc":
    "**Shimura's commutativity criterion** (Proposition 3.8 of [Shimura][shimura1971]): the\nHecke ring over a commutative semiring is commutative when an anti-involution fixes every\ndouble coset."},
-  "HeckeCoset.heckeSum_eq_sum_of_rightCosets":
-  {"statement": [],
-   "sorry": false,
-   "signature":
-   "HeckeCoset.heckeSum_eq_sum_of_rightCosets.{u_1, u_2, u_3, u_4, u_5, u_6} {G : Type u_1} [Group G]\n  {Δ Δ' : Submonoid G} {Γ₁ Γ₂ : Subgroup G} (D : HeckeCoset Δ Γ₁ Γ₂) {R : Type u_2} {S : Type u_3}\n  {V : Type u_4} {W : Type u_5} [Semiring R] [Semiring S] [AddCommMonoid V] [_root_.Module R V]\n  [AddCommMonoid W] [_root_.Module S W] {σ : R →+* S} (ρ : Representation R (↥Δ') V)\n  (hD : ↑(Quotient.out D) ∈ Δ') (hΓ₂ : Γ₂.toSubmonoid ≤ Δ') {q : V →ₛₗ[σ] W}\n  [Finite (DoubleCoset.DecompQuotient Γ₂ Γ₁ (↑(Quotient.out D))⁻¹)] (hΓ₁ : Γ₁.toSubmonoid ≤ Δ')\n  (hq : ∀ (γ : G) (hγ : γ ∈ Γ₁), q ∘ₛₗ ρ ⟨γ, ⋯⟩ = q) {ι : Type u_6} [Fintype ι] (a : ι → G)\n  (ha : ∀ (i : ι), a i ∈ Δ')\n  (hcover : DoubleCoset.doubleCoset ↑(Quotient.out D) ↑Γ₁ ↑Γ₂ = ⋃ i, MulOpposite.op (a i) • ↑Γ₁)\n  (hinj : Function.Injective fun i => MulOpposite.op (a i) • ↑Γ₁) :\n  D.heckeSum ρ hD hΓ₂ q = ∑ i, q ∘ₛₗ ρ ⟨a i, ⋯⟩",
-   "proof": ["DoubleCoset.doubleCoset_eq_iUnion_rightCosetRep"],
-   "module": "TauCeti.NumberTheory.HeckeRing.Representation",
-   "line": 128,
-   "kind": "theorem",
-   "doc":
-   "**The Hecke sum of a `Γ₁`-invariant map is the sum over any decomposition of the double coset\ninto right cosets.** If the right cosets `Γ₁ aᵢ` are pairwise distinct and cover `Γ₁ D.out Γ₂`,\nthen `heckeSum D ρ q = ∑ᵢ q ∘ ρ(aᵢ)`.\n\nSo the map is attached to the double coset itself: the representatives `D.out` and `v.out` that\n`heckeSum` happens to pick are one such family, and every other family gives the same map. The\nhypothesis `ha` records that the family lies in the monoid `ρ` acts through; it is automatic\nwhen the family lies in the double coset and `Γ₁ ≤ Δ'`."},
   "HasStrictFDerivAt.isNashAt_implicitFunctionOfProdDomain":
   {"statement": [],
    "sorry": false,

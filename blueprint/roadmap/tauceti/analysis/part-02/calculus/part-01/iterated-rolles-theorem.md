@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Rolle's theorem for finitely many zeros](rolles-theorem-for-finitely-many-zeros.md)
+- [Rolle's theorem for finitely many zeros](../part-02/rolles-theorem-for-finitely-many-zeros.md)
 
 ## Lean
 

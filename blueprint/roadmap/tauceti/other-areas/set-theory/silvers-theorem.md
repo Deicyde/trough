@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: Setoid.silver_dichotomy, Setoid.borelReducible_bot_iff_not_countable_quotient, Setoid.silver_dichotomy_standardBorel, Setoid.countable_or_hasCantorAntichainOn_of_measurableSet
+lean: Setoid.silver_dichotomy, Setoid.borelReducible_bot_iff_not_countable_quotient, Setoid.silver_dichotomy_standardBorel
 statement: formalized
 proof: formalized
 ---
@@ -26,7 +26,6 @@ Its statement uses no other declaration mapped here.
 
 - [The category route to Silver's theorem](the-category-route-to-silvers-theorem.md)
 - [The Kechris–Solecki–Todorcevic lemma](the-kechris-solecki-todorcevic-lemma.md)
-- [The perfect set theorem for Borel sets (Alexandrov–Hausdorff)](../../measure-theory/constructions/the-perfect-set-theorem-for-borel-sets-alexandro.md)
 
 ## Lean
 
@@ -48,15 +47,6 @@ Setoid.borelReducible_bot_iff_not_countable_quotient.{u_1} {X : Type u_1} [Measu
 Setoid.silver_dichotomy_standardBorel.{u_1} {X : Type u_1} [MeasurableSpace X]
   [StandardBorelSpace X] (E : Setoid X) (hE : MeasurableSet {p | E p.1 p.2}) :
   Countable (Quotient E) ∨ ∃ f, MeasurableEmbedding f ∧ ∀ (a b : ℕ → Bool), a ≠ b → ¬E (f a) (f b)
-```
-
-**Silver's theorem relative to a Borel subset.** Formalized in Tau Ceti as [`Setoid.countable_or_hasCantorAntichainOn_of_measurableSet`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/Silver.html#Setoid.countable_or_hasCantorAntichainOn_of_measurableSet).
-
-```lean
-Setoid.countable_or_hasCantorAntichainOn_of_measurableSet.{u_1} {X : Type u_1} [TopologicalSpace X]
-  [PolishSpace X] [MeasurableSpace X] [BorelSpace X] {A : Set X} (hA : MeasurableSet A)
-  (R : Setoid X) (F : Setoid ↑A) (hRF : ∀ (x y : ↑A), R ↑x ↑y → F x y)
-  (hF : MeasurableSet {p | F p.1 p.2}) : Countable (Quotient F) ∨ R.HasCantorAntichainOn A
 ```
 
 ## Sources

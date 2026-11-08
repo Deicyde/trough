@@ -1,7 +1,7 @@
 ---
 declaration: def
 origin: cited
-lean: TopCat.singularCohomologyDualEquiv, TopCat.singularKronecker_bijective_succ_of_projective_homology, TopCat.singularKroneckerEquiv, TopCat.singularKronecker_bijective_zero, TopCat.singularKronecker_bijective_of_projective_homology
+lean: TopCat.singularCohomologyDualEquiv, TopCat.singularKroneckerEquiv, TopCat.singularKronecker_bijective_zero, TopCat.singularKronecker_bijective_of_projective_homology
 statement: formalized
 ---
 
@@ -27,17 +27,6 @@ TopCat.singularCohomologyDualEquiv.{w} {k : Type w} [Field k] (X : TopCat) (n : 
 Formalized in Tau Ceti as [`TopCat.singularCohomologyDualEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient/Field.html#TopCat.singularCohomologyDualEquiv).
 
 ## Other forms
-
-**The universal coefficient theorem above a projective homology module, over a hereditary commutative ring.** Formalized in Tau Ceti as [`TopCat.singularKronecker_bijective_succ_of_projective_homology`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/UniversalCoefficient.html#TopCat.singularKronecker_bijective_succ_of_projective_homology).
-
-```lean
-TopCat.singularKronecker_bijective_succ_of_projective_homology.{w} {k : Type w} [CommRing k]
-  [∀ (V : ModuleCat k), CategoryTheory.HasProjectiveDimensionLE V 1] (X : TopCat)
-  (R M : ModuleCat k) [Module.Projective k ↑R] (n : ℕ)
-  [CategoryTheory.Projective
-      (((AlgebraicTopology.singularHomologyFunctor (ModuleCat k) n).obj R).obj X)] :
-  Function.Bijective ⇑(X.singularKronecker k (n + 1))
-```
 
 **The universal coefficient theorem for injective coefficients.** Formalized in Tau Ceti as [`TopCat.singularKroneckerEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/Kronecker.html#TopCat.singularKroneckerEquiv).
 

@@ -51,7 +51,7 @@ Its statement uses no other declaration mapped here.
 - [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../field-theory/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [The Riemann–Roch theorem for line bundles, in Serre-duality form](../other-results/the-riemann-roch-theorem-for-line-bundles-in-ser.md)
 - [Stichtenoth's transformation formula](../../field-theory/function-field/part-01/stichtenoths-transformation-formula.md)
-- [The weak approximation theorem](../../field-theory/function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../../field-theory/function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 

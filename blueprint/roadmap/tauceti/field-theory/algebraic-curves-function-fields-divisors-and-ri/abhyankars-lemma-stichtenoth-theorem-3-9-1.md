@@ -40,7 +40,7 @@ Its statement uses no other declaration mapped here.
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](../function-field/part-01/the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [The Galois correspondence for the inertia field](../function-field/part-01/the-galois-correspondence-for-the-inertia-field.md)
 - [The residue action, on residues (Stichtenoth, Theorem 3.8.2)](../function-field/part-01/the-residue-action-on-residues-stichtenoth-theor.md)
-- [The weak approximation theorem](../function-field/part-01/the-weak-approximation-theorem.md)
+- [The weak approximation theorem](../function-field/part-02/the-weak-approximation-theorem.md)
 
 ## Lean
 
