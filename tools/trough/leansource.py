@@ -6,10 +6,12 @@ them is never read as a declaration. Scopes follow `namespace`, `section`,
 conservative, because a declaration it wrongly reports is worse than one it
 misses: a file whose scopes do not close as they open declares nothing, a
 declaration counts only when its command names it on the keyword's line, names
-Lean makes itself (constructors, fields, `ext` lemmas) are not read, a
-`private` declaration counts as not declared (Lean renames it), and nothing
-after `#exit` is read. One risk remains: a declaration written inside a syntax
-quotation, as a macro may build one, reads as the file's own.
+Lean makes itself (constructors, fields, `ext` lemmas, an anonymous instance's
+name) are not read, a `private` declaration counts as not declared (Lean renames
+it), and nothing after `#exit` is read. An indented `end` inside a declaration
+is part of it, as a notation may use the word. One risk remains: a declaration
+written inside a syntax quotation, as a macro may build one, reads as the file's
+own.
 """
 
 from __future__ import annotations
@@ -19,7 +21,7 @@ from dataclasses import dataclass
 
 KINDS = {"theorem": "theorem", "lemma": "lemma", "def": "def", "abbrev": "abbrev", "instance": "instance",
          "structure": "structure", "class": "class", "inductive": "inductive", "opaque": "opaque",
-         "axiom": "axiom", "irreducible_def": "def"}
+         "axiom": "axiom", "irreducible_def": "def", "alias": "alias"}
 COMPONENT = r"(?:«[^»\n]*»|[^\s.:()\[\]{}⟨⟩,«»@]+)"
 NAME = rf"{COMPONENT}(?:\.{COMPONENT})*"
 MODIFIERS = r"(?:(?:private|protected|noncomputable|partial|unsafe|nonrec|public|meta|scoped|local)\s+)*"
@@ -166,7 +168,7 @@ def scan(text: str) -> dict[str, Declaration] | None:
             close()
             scopes.append(("mutual", ""))
             continue
-        if match := END.match(line):
+        if (match := END.match(line)) and not (open_decl and line[:1].isspace()):
             close()
             if match["name"]:
                 # `end A.B` closes a section named A.B, or namespaces A and B.

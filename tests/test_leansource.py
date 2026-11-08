@@ -145,3 +145,19 @@ def test_raw_strings_have_no_escapes():
     text = ('def a : String := r"\\"\ntheorem afterRaw : True := trivial\n'
             'def b : String := r#"a "quoted" theorem inRaw : True"#\ntheorem afterHashes : True := trivial\n')
     assert set(leansource.scan(text)) == {"a", "afterRaw", "b", "afterHashes"}
+
+
+def test_an_alias_is_a_declaration_and_an_anonymous_instance_is_not_named():
+    text = ("namespace A\ntheorem long_name : True := trivial\n/-- Short. -/\nalias short := long_name\n"
+            "alias ⟨mp, mpr⟩ := Iff.rfl\ninstance : Inhabited Nat := ⟨0⟩\nend A\n")
+    found = leansource.scan(text)
+    assert set(found) == {"A.long_name", "A.short"} and found["A.short"].kind == "alias"
+
+
+def test_an_indented_end_inside_a_declaration_is_part_of_it():
+    # A notation may use the word, as an assembly program's `begin ... end` does.
+    text = ("namespace A\ntheorem prog : hoare\n  begin\n    li x 1, 0\n  end\n  := by\n  trivial\n\n"
+            "theorem after : True := trivial\nend A\n")
+    assert set(leansource.scan(text)) == {"A.prog", "A.after"}
+    # Indented, with no declaration open, it still closes its scope.
+    assert set(leansource.scan("namespace A\n  end A\ntheorem top : True := trivial\n")) == {"top"}
