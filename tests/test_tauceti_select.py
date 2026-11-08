@@ -20,13 +20,14 @@ def test_a_theorem_is_chosen_when_its_title_names_a_result():
         row("Ex.newton", "**Newton's identities express `eₖ` through the power sums.** ..."),
         row("Ex.hille", "**Hille--Yosida for contraction semigroups.** ..."),
         row("Ex.buzzard", "**Buzzard–Verberkmoes: stably uniform Tate pairs are sheafy.** ..."),
+        row("Ex.christoffel", "**The Schwarz--Christoffel formula for a map onto a domain whose end is a half-strip.**"),
     ])
     assert chosen == {
         "Ex.burnside": "named theorem", "Ex.cellular": "the theorem", "Ex.global": "cited theorem",
         "Ex.jordan": "named theorem", "Ex.morley": "named theorem", "Ex.schur": "named result",
         "Ex.serre": "named result", "Ex.serre2": "named theorem", "Ex.green": "named result",
         "Ex.couture": "named result", "Ex.newton": "named result", "Ex.hille": "named result",
-        "Ex.buzzard": "named result",
+        "Ex.buzzard": "named result", "Ex.christoffel": "named result",
     }
 
 
@@ -46,6 +47,11 @@ def test_ordinary_lemmas_and_citations_are_not_chosen():
         row("Ex.modifier", "**The Serre duality pairing** on a curve."),
         row("Ex.property", "**Shapiro's isomorphism is natural in the coefficients.**"),
         row("Ex.mathlib", "**Mathlib's doubling formula** in projective coordinates."),
+        row("Ex.negated", "**The Brauer class of the real quaternions is not the identity.**"),
+        row("Ex.element", "**The Frobenius kernel meets `H` exactly in the identity.**"),
+        row("Ex.object", "**Wedhorn's coordinatewise hypothesis gives the uniform bound.**"),
+        row("Ex.verb", "**Tate's isomorphism of a class formation commutes with conjugation.**"),
+        row("Ex.numbered", "**Theorem 1 in integral form.**"),
         # Joined names that cite a paper's numbered statement.
         row("Ex.paper", "**Katz–Mazur, Lemma 5.3.4.** ..."),
         row("Ex.paper2", "**Popa–Zagier, Proposition 2, on period polynomials.** ..."),
@@ -78,10 +84,26 @@ def test_forms_of_a_result_share_its_key():
     # A first word the library writes as a possessive is a name, and joined names are a key.
     assert key("Serre duality for a curve", {"Serre"}) == key("Serre duality, Yoneda form", {"Serre"}) == "serre duality"
     assert key("Hille--Yosida for contraction semigroups") == key("Hille–Yosida, quasi-contraction form") == "hille-yosida"
-    assert key("The Hille--Yosida generation theorem") == key("Hille–Yosida characterization") == "hille-yosida"
+    assert key("The Hille--Yosida generation theorem") == "hille-yosida"
+    # Joined names followed by another result noun, or by an object, are not the theorem.
+    assert key("The Mordell–Weil theorem, general version") == key("The Mordell–Weil theorem for a curve") == "mordell-weil"
+    assert key("The Mordell–Weil rank bound from the 2-Selmer group") == "mordell-weil rank bound"
+    assert key("The Mordell–Weil group of `E` over `ℚ` is `ℤ`") != "mordell-weil"
+    assert key("The Gelfand–Tsetlin decomposition") != key("The Gelfand-Tsetlin dimension formula")
+    # The key ends at a result noun that ends its phrase.
+    assert key("Szpiro's conjecture for Frey curves") == "szpiro conjecture" != key("Szpiro's conjecture implies asymptotic Fermat")
     assert tauceti_select.plain_title("Menger's theorem", "menger theorem")
     assert not tauceti_select.plain_title("Menger's theorem for curves", "menger theorem")
 
 
 def test_a_qualifier_inside_code_does_not_end_the_head():
     assert tauceti_select.head("Young's inequality for `‖f, g‖`, sharp form") == "Young's inequality for `‖f, g‖`"
+
+
+def test_a_bare_name_counts_only_as_the_subject_of_its_result():
+    chosen, _ = tauceti_select.select([
+        row("Ex.law", "**Artin's reciprocity law.** ..."),
+        row("Ex.cyclic", "**Artin reciprocity for cyclic extensions.** ..."),
+        row("Ex.conj", "**Artin reciprocity commutes with conjugation.** ..."),
+    ])
+    assert chosen == {"Ex.cyclic": "named result", "Ex.law": "named result"}

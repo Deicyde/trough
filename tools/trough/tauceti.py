@@ -188,8 +188,14 @@ def title_and_text(name: str, doc: str | None) -> tuple[str, str]:
     return name, doc
 
 
+# Module names that do not read as words when split.
+AREA_TITLES = {"MvPolynomial": "Multivariate Polynomials", "KrullSchmidt": "Krull–Schmidt", "Perm": "Permutations"}
+
+
 def area_title(word: str) -> str:
     """A module name as words, each as written: "NumberTheory" reads "Number Theory", "PDE" stays."""
+    if word in AREA_TITLES:
+        return AREA_TITLES[word]
     return " ".join(re.findall(r"[A-Z]+\d*(?![a-z])|[A-Z]?[a-z]+\d*|\d+", word)) or word
 
 
@@ -279,10 +285,11 @@ def build_leaf(sources: Sources, members: list[str], records: dict[str, dict], h
 def gather(names: list[str], records: dict[str, dict], named: set[str]) -> list[list[str]]:
     """The articles, each a list of declarations with its lead first. Forms of one result in one
     area share an article (tauceti_select.group_key, with the possessives the mapped docstrings
-    write). A declaration a status names leads its own, with the forms no status names; otherwise
-    the lead is a form Tau Ceti's website shows, else the form titled by the result's name alone,
-    else the one with the shortest title that is not a Lean name. A definition a status names
-    stands alone."""
+    write). A declaration a status names leads its own article, and each form no status names joins
+    the one whose title shares the most words with its own. Otherwise the lead is a form Tau Ceti's
+    website shows, else a form not titled by names alone ("Perron–Frobenius"), then the form titled
+    by the result's name alone, else the one with the shortest title that is not a Lean name. A
+    definition a status names stands alone."""
     titles = {name: tauceti_select.title(records[name].get("doc")) for name in names}
     possessives = tauceti_select.possessive_names([{"d": records[name].get("doc")} for name in names])
     groups: dict[tuple[str, tuple[str, str]], list[str]] = defaultdict(list)
@@ -297,15 +304,24 @@ def gather(names: list[str], records: dict[str, dict], named: set[str]) -> list[
         leads = [name for name in order if name in named]
         rest = [name for name in order if name not in named]
         if leads:
-            articles.append([leads[0], *rest])
-            articles += [[name] for name in leads[1:]]
+            words = {name: set(re.findall(r"\w+", titles[name].casefold())) for name in members}
+            forms: dict[str, list[str]] = {lead: [] for lead in leads}
+            for name in rest:
+                forms[max(leads, key=lambda lead: len(words[lead] & words[name]))].append(name)
+            articles += [[lead, *forms[lead]] for lead in leads]
         else:
             shown = {name: title_and_text(name, records[name].get("doc"))[0] for name in rest}
-            lead = min(rest, key=lambda name: (name not in tauceti_select.SHOWCASE,
+            lead = min(rest, key=lambda name: (name not in tauceti_select.SHOWCASE, names_only(shown[name]),
                                                not tauceti_select.plain_title(shown[name], key), shown[name] == name,
                                                len(shown[name]), name))
             articles.append([lead, *(name for name in rest if name != lead)])
     return articles
+
+
+def names_only(title: str) -> bool:
+    """Whether a title is names joined by dashes and nothing more ("Perron–Frobenius")."""
+    match = tauceti_select.JOINED.match(title)
+    return bool(match) and match.end() == len(title)
 
 
 def claims(roadmaps: list[dict], records: dict[str, dict]) -> tuple[dict[str, Counter], dict[str, Counter]]:
@@ -385,8 +401,9 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
         readme = f"https://github.com/{ROADMAP_REPO}/blob/{sources.roadmap_rev}/{roadmap['path']}/README.md"
         more = added.pop(roadmap["path"], [])
         section.prose = (f"The declarations the status of Tau Ceti's [roadmap]({readme}) names"
-                         + (", and the other results named in the modules, or folders of modules, where only this "
-                            "status names declarations," if more else "") + f" {at}.")
+                         + (", and the other results named in the modules where only this status names declarations, "
+                            f"or in folders below the areas where only it names {FOLDER_MIN} or more," if more else "")
+                         + f" {at}.")
         areas: Counter = Counter()
         for name in names:
             owned = first[name] == roadmap["path"]
@@ -425,6 +442,10 @@ def chapter(sources: Sources) -> tuple[Container, dict[str, int], dict[str, str]
                 ordered.append((section, Counter(area=1)))
             small += ordered
         else:
+            taken = {re.sub(r"s\b", "", title_key(section.title)) for section, kind in ordered if not kind}
+            for section, kind in ordered:
+                if kind["area"] and re.sub(r"s\b", "", title_key(section.title)) in taken:
+                    section.title += ": other results"
             part = Container(area_title(area), slugify(area_title(area)))
             part.prose = (f"Results in Tau Ceti's `TauCeti.{area}` modules, and the roadmaps whose articles are mostly "
                           "there: by roadmap, then by area.")
@@ -512,8 +533,8 @@ def intro(sources: Sources, stats: dict[str, int]) -> str:
         "title naming a result after a person (\"Burnside's pᵃqᵇ theorem\", \"Schur-Weyl duality\", \"Hille–Yosida\"), "
         "a title such as "
         "\"The cellular approximation theorem\", or a short title pinned to a textbook theorem; a definition that "
-        "carries such a theorem as data; and the four theorems Tau Ceti's website shows. The forms of one result share "
-        "an article. "
+        "carries such a theorem as data; and the four theorems Tau Ceti's website shows. The forms of one result in one "
+        "area share an article. "
         + ("The one name the statuses give that Tau Ceti does not have at this commit has no article. " if missing == 1
            else f"The {missing} names the statuses give that Tau Ceti does not have at this commit have no article. "
            if missing else "")

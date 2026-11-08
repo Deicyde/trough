@@ -73,10 +73,21 @@ NUMBERED = re.compile(r"\b(?:Theorem|Thm\.?|Lemma|Proposition|Prop\.?|Corollary|
                       r"\s+[\dIVX]+(?:\.[\dA-Za-z]+)+")
 NOT_HEADLINE = re.compile(r"^(?:Naturality|Step|Case|Part|Proof|Auxiliary|Helper|Lemma|Corollary|Technical|"
                           r"Preparation|Reduction|Ingredient)\b", re.I)
-# A result noun used as a predicate or a modifier names nothing: "is the identity", "up to
-# isomorphism", "quasi-isomorphism", "the identity component", "Dixon's size bound opens ...".
-PREDICATE = re.compile(r"(?:-|\b(?:is|are|be)\s+(?:an?|the)\s+(?:\S+\s+){0,2}|\b(?:to\s+the|under(?:\s+an?)?|up\s+to)\s+)$",
-                       re.I)
+# A result noun used as a predicate or a modifier names nothing: "is the identity", "is not the
+# identity", "exactly in the identity", "up to isomorphism", "quasi-isomorphism", "the identity
+# component", "Dixon's size bound opens ...". Nor does one that a verb before it takes as its object:
+# "Wedhorn's hypothesis gives the uniform bound".
+PREDICATE = re.compile(r"(?:-|\b(?:is|are|be)\s+(?:not\s+)?(?:an?|the)\s+(?:\S+\s+){0,2}"
+                       r"|\b(?:to\s+the|in\s+the|under(?:\s+an?)?|up\s+to)\s+)$", re.I)
+VERB = re.compile(r"\b(?:is|are|was|were|gives|meets|implies|has|have|preserves|commutes|holds|returns|sends|takes|"
+                  r"equals|satisfies|lies|yields|makes|admits|determines|controls|characteri[sz]es|follows|reduces|"
+                  r"extends|agrees|coincides|vanishes|acts|fixes|splits|restricts|becomes|recovers|computes|detects|"
+                  r"induces|identifies|opens)\b", re.I)
+# A verb after the noun phrase, outside a relative clause, makes the head a property of what it names:
+# "Tate's isomorphism of a class formation commutes with conjugation".
+PROPERTY = re.compile(r"\b(?:is|are|commutes|preserves|returns|sends|restricts|acts|fixes|agrees|coincides|vanishes)\b",
+                      re.I)
+RELATIVE = re.compile(r"\b(?:whose|which|that|where|when|if)\b", re.I)
 PHRASE_END = re.compile(r"\s*(?:$|[,;:.()`]|(?:for|of|on|in|over|with|at|along|via|from|between|without|by|as|and|"
                         r"under|to|modulo|after|beyond|near|inside|through|against|across|up\s+to|off|within|"
                         r"into|outside|when|if|where|whenever|unless|except|using|holds?|express(?:es)?)\b)", re.I)
@@ -90,7 +101,7 @@ CITED = re.compile(r"^\s*[.:]?\s*\(([^()]{0,80}?)\b(?:Theorem|Thm\.?)\s+[\dIVX]+
 NOT_CITED = re.compile(r"\b(?:proof|step|after|of|by|see|cf\.?|from|in)\s*$", re.I)
 CITED_WORDS = 3
 POSSESSIVE = re.compile(r"\b([A-ZÀ-Ö][a-zà-ÿ]+)['’]s?\s")
-BARE_FIRST = re.compile(rf"^([A-ZÀ-Ö][a-zà-ÿ]+)\s+(?:[\w-]+\s+){{0,2}}?{RESULT}\b")
+BARE_FIRST = re.compile(rf"^([A-ZÀ-Ö][a-zà-ÿ]+)\s+(?:[\w-]+\s+){{0,2}}?(?P<noun>{RESULT})\b")
 # A proposition that only states a claim, by its name's last component.
 STATEMENT = re.compile(r"(?:Conjecture|Theorem|Hypothesis|Problem)\w*$")
 DEFINITIONS = frozenset({"def", "abbrev"})
@@ -146,13 +157,22 @@ def named_result(clause: str) -> bool:
     if _excluded(clause):
         return False
     for match in re.finditer(rf"\b{RESULT}\b", clause, re.I):
-        before, after = clause[:match.start()], clause[match.end():]
-        if PREDICATE.search(before) or not PHRASE_END.match(after):
+        before = clause[:match.start()]
+        if not ends_phrase(clause, match.start(), match.end()):
             continue
         if match.group(0).lower().startswith("law") and not re.search(r"['’]s?\s", _plain(before)):
             continue
         return named_before(clause, match.end())
     return False
+
+
+def ends_phrase(clause: str, start: int, end: int) -> bool:
+    """Whether the result noun at clause[start:end] ends its noun phrase as the head's subject: no
+    predicate, modifier or verb before it, a qualifier or the end after it, and no verb that makes
+    the head a property of the result."""
+    before, after = clause[:start], clause[end:]
+    return (not PREDICATE.search(before) and not VERB.search(before) and bool(PHRASE_END.match(after))
+            and not PROPERTY.search(RELATIVE.split(after, 1)[0]))
 
 
 def joined_names(clause: str, text: str) -> bool:
@@ -168,12 +188,15 @@ def bare_named_result(clause: str, possessives: set[str]) -> bool:
     if clause.startswith("The ") or NUMBERED.search(clause):
         return False
     match = BARE_FIRST.match(clause)
-    return bool(match) and match.group(1) in possessives
+    if not match or match.group(1) not in possessives:
+        return False
+    return ends_phrase(clause, match.start("noun"), match.end("noun"))
 
 
 def the_theorem(clause: str) -> bool:
-    """"theorem" within the first six words: "The prime number theorem"."""
-    if NUMBERED.search(clause):
+    """"theorem" within the first six words: "The prime number theorem", but not a numbered
+    statement ("Theorem 1 in integral form")."""
+    if NUMBERED.search(clause) or re.match(r"(?:Theorem|Lemma)\s+[\dIVX]+\b", clause):
         return False
     plain = _plain(clause)
     return bool(re.match(r"(?:[^\s,]+\s+){0,5}theorems?\b", plain, re.I)) and not NOT_HEADLINE.match(plain)
@@ -265,16 +288,21 @@ def plain_title(text: str, key: str) -> bool:
 
 def group_key(text: str, possessives: set[str] | frozenset[str] = frozenset()) -> str:
     """The name of the result a title states, for gathering its forms: "Menger's theorem for
-    adjacent vertices" and "Menger's theorem, predicate form" both give "menger theorem". A short
-    key without a name ("structure theorem") keeps the whole head clause; a first word in
-    *possessives* is a name ("Serre duality"), and names joined by dashes that open the head are
-    the key themselves ("Hille--Yosida for contraction semigroups" and "The Hille–Yosida generation
-    theorem" give "hille-yosida")."""
+    adjacent vertices" and "Menger's theorem, predicate form" both give "menger theorem". The key
+    ends at the first result noun that ends its phrase, so "Szpiro's conjecture implies asymptotic
+    Fermat" keeps its whole head clause, as does a short key without a name ("structure theorem");
+    a first word in *possessives* is a name ("Serre duality"). Names joined by dashes are the key
+    themselves when only a qualifier or "(word) theorem" follows them: "Hille--Yosida for contraction
+    semigroups" and "The Hille–Yosida generation theorem" give "hille-yosida", but "The Mordell–Weil
+    rank bound" gives "mordell-weil rank bound"."""
     clause = head(text)
-    joined = JOINED.match(ARTICLE.sub("", clause))
-    if joined:
+    plain = ARTICLE.sub("", clause)
+    joined = JOINED.match(plain)
+    if joined and (PHRASE_END.match(plain[joined.end():])
+                   or re.match(r"\s+(?:[\w-]+\s+)?theorems?\b", plain[joined.end():])):
         return _normal(joined.group(0))
-    match = re.search(rf"\b{RESULT}\b", clause, re.I)
+    match = next((match for match in re.finditer(rf"\b{RESULT}\b", clause, re.I)
+                  if PHRASE_END.match(clause[match.end():])), None)
     key = clause[:match.end()] if match else clause
     named = named_before(clause, match.end()) if match else False
     if match and len(_plain(key).split()) <= 2 and not named and _plain(clause).split()[0] not in possessives:

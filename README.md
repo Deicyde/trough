@@ -117,11 +117,13 @@ signatures and its frontier, says what Tau Ceti may add and is left out, and so
 is the status files' prose, which a model writes and Tau Ceti does not check.
 
 The forms of one result in one area, a module's first two levels under
-`TauCeti`, such as "Menger's theorem" and "Menger's theorem, predicate form",
-share an article: a declaration a status names leads its own, otherwise a form
-the website shows, the form titled by the result's name alone, or the one with
-the shortest title that is not a Lean name. The others are listed under *Other
-forms*. Parts follow the library's top-level areas, those with fewer than ten
+`TauCeti`, such as "Menger's theorem for fans" and "Menger's theorem for fans,
+predicate form", share an article. A declaration a status names leads its own,
+and each form no status names joins the one whose title shares the most words
+with its own; otherwise the lead is a form the website shows, then one not
+titled by names alone ("Perron–Frobenius"), the form titled by the result's
+name alone, or the one with the shortest title that is not a Lean name. The
+others are listed under *Other forms*. Parts follow the library's top-level areas, those with fewer than ten
 articles together as *Other Areas*. A roadmap whose status names a declaration
 has a section in the part with most of its articles, holding what the status
 names and the named results in a module where only its status names

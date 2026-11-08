@@ -340,5 +340,45 @@ def test_a_result_stated_from_a_defined_proposition_says_what_it_assumes():
 
 
 def test_area_titles_read_as_words():
-    assert [tauceti.area_title(word) for word in ("NumberTheory", "PDE", "SU2", "Lie")] == [
-        "Number Theory", "PDE", "SU2", "Lie"]
+    assert [tauceti.area_title(word) for word in ("NumberTheory", "PDE", "SU2", "Lie", "MvPolynomial")] == [
+        "Number Theory", "PDE", "SU2", "Lie", "Multivariate Polynomials"]
+
+
+def test_each_form_joins_the_status_named_lead_its_title_matches():
+    roadmaps = [{"id": "A", "path": "TauCetiRoadmap/A", "title": "Alpha", "names": ["Ex.fans", "Ex.cuts"]}]
+    declarations = {
+        "Ex.fans": record(module="TauCeti.Graph.Menger.A", doc="**Menger's theorem for fans.** Text"),
+        "Ex.cuts": record(module="TauCeti.Graph.Menger.B", doc="**Menger's theorem for vertex cuts.** Text"),
+        "Ex.fans2": record(module="TauCeti.Graph.Menger.A", doc="**Menger's theorem for fans, predicate form.** Text"),
+        "Ex.cuts2": record(module="TauCeti.Graph.Menger.B", doc="**Menger's theorem for vertex cuts, sets.** Text"),
+    }
+    data = sources(roadmaps, declarations)
+    data.selection = {"chosen": {"Ex.fans2": "named theorem", "Ex.cuts2": "named theorem"}, "assuming": {}}
+    root, _, _ = tauceti.chapter(data)
+    by_name = leaves(root)
+    assert dict(by_name["Ex.fans"].fields)["lean"] == "Ex.fans, Ex.fans2"
+    assert dict(by_name["Ex.cuts"].fields)["lean"] == "Ex.cuts, Ex.cuts2"
+
+
+def test_a_title_of_names_alone_leads_last():
+    declarations = {
+        "Ex.bare": record(module="TauCeti.Matrix.PF", doc="**Perron–Frobenius**: the Perron root is simple."),
+        "Ex.full": record(module="TauCeti.Matrix.PF", doc="**Perron–Frobenius theorem for nonnegative matrices.** Text"),
+    }
+    data = sources([], declarations)
+    data.selection = {"chosen": {name: "named result" for name in declarations}, "assuming": {}}
+    root, _, _ = tauceti.chapter(data)
+    assert [dict(leaf.fields)["lean"] for leaf in walk(root) if isinstance(leaf, Leaf)] == ["Ex.full, Ex.bare"]
+
+
+def test_an_area_section_titled_like_a_roadmap_in_its_part_says_it_holds_the_rest():
+    names = [f"Ex.road{i}" for i in range(8)]
+    roadmaps = [{"id": "E", "path": "TauCetiRoadmap/E", "title": "Elliptic curves", "names": names}]
+    declarations = {name: record(module=f"TauCeti.Geo.Curves.M{i}") for i, name in enumerate(names)}
+    people = ["Abel", "Baire", "Cantor"]
+    declarations |= {f"Ex.area{i}": record(module=f"TauCeti.Geo.EllipticCurve.X{i}", doc=f"**{person}'s theorem.** Text")
+                     for i, person in enumerate(people)}
+    data = sources(roadmaps, declarations)
+    data.selection = {"chosen": {f"Ex.area{i}": "named theorem" for i in range(3)}, "assuming": {}}
+    root, _, _ = tauceti.chapter(data)
+    assert set(sections(root)) == {"Elliptic curves", "Elliptic Curve: other results"}
