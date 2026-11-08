@@ -15,7 +15,8 @@ gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
 roadmaps' status files name, five research projects from their
 leanblueprints (Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+),
-and the Formal Frontier libraries from their headline results.
+the Formal Frontier libraries from their headline results, and Formal
+Conjectures from its problem files.
 
 ## The Mathlib map
 
@@ -175,6 +176,47 @@ this chapter yet, so its articles have no edges.
    Apache-2.0 or its record finds under half the declarations the last one
    found.
 
+## The Formal Conjectures chapter
+
+[Formal Conjectures](https://github.com/google-deepmind/formal-conjectures),
+from Google DeepMind, states open and solved problems in Lean, a file per
+problem in a folder per source: Erdős problems, OEIS, Wikipedia, papers and
+others. Every statement carries one `category` attribute (research open,
+research solved, textbook, API or test), most carry `AMS` subject codes, and
+some `formal_proof` links to proofs elsewhere. The chapter has a part per source
+folder, the Erdős problems in sections by hundreds, an article per problem file
+that states a research or textbook statement, and in it a card per such
+statement: whether it is open, solved with or without a proof elsewhere, or
+proved here, its docstring, its Lean statement and its line in the source. Test
+and API statements are counted in their problem's article, not shown, and a
+file that states neither kind has no article. Two indexes link the articles: a
+page per top-level AMS subject, and a page per FC100 list, Formal Conjectures'
+benchmark sets. No Lean runs for this chapter, so its articles have no edges.
+
+1. `tools/refresh_formal_conjectures.py CHECKOUT` reads a checkout and writes
+   `data/formal-conjectures/source.json`, the commit, and `problems.json`: each
+   problem file's title and module docstring, its research and textbook
+   statements, its counts of test and API statements, the FC100 lists, and the
+   names Formal Conjectures gives the AMS codes.
+2. `tools/trough/leansource.py` reads each file as it does for Formal Frontier,
+   and gives each declaration what is written before it: its docstring and the
+   attributes of its `@[...]` list, which may span lines. A statement is a named
+   declaration whose list holds one category; its Lean statement runs to the
+   `:=` (or `where`) that starts its proof, and it is proved here when the text
+   from there on holds no `sorry`, which, like Formal Conjectures' own
+   `hasSorryFreeProof`, says nothing of the statements that proof uses. A
+   statement with no name, an `example`, is left out, as Formal Conjectures'
+   site leaves it out, and so is one whose attributes don't read; the refresh
+   lists those.
+3. The **Formal Conjectures data** workflow (`.github/workflows/fc-data.yml`)
+   fetches the repository at the commit `source.json` pins, as a blobless
+   sparse checkout of the files the refresh reads, runs the refresh,
+   regenerates the pages and runs the tests; on a pull request it fails when
+   the committed data differ from what the pin gives. The weekly run, or a
+   dispatch with `newest`, moves the pin to the newest main commit whose build
+   passed. A refresh writes nothing, and the workflow fails, when the repository
+   is not Apache-2.0 or keeps under half the statements the last record kept.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -240,4 +282,9 @@ public domain. `data/tauceti/roadmaps.json` comes from
 docstrings and signatures in `data/tauceti/deps.json` from
 [Tau Ceti](https://github.com/TauCetiProject/TauCeti), both Apache-2.0. The
 text quoted in `data/ff/` comes from the formalization.yaml and README of each
-[Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0.
+[Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0. The
+docstrings and Lean statements in `data/formal-conjectures/` come from
+[Formal Conjectures](https://github.com/google-deepmind/formal-conjectures)
+(Google DeepMind), Apache-2.0; its Erdős problems' docstrings follow
+[erdosproblems.com](https://www.erdosproblems.com), as its contributing rules
+for them ask.

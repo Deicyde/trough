@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import blueprints, catalog, ff, links, mathlib, tauceti, wiki
+from trough import blueprints, catalog, ff, formal_conjectures, links, mathlib, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -126,6 +126,27 @@ def generate() -> dict[Path, str]:
             f"{ff_stats['main_results']} main results found",
             file=sys.stderr,
         )
+    fc_data = formal_conjectures.load(DATA)
+    if fc_data:
+        fc_built, fc_links = formal_conjectures.chapter(fc_data)
+        assign_paths(fc_built.root, ROADMAP / "formal-conjectures")
+        blueprints.resolve(fc_built, VAULT)
+        files.update(render_tree(fc_built.root, VAULT))
+        chapters["formal-conjectures"] = "formal-conjectures/README.md"
+        lean_links["formal-conjectures"] = fc_links
+        fc_stats = fc_built.stats
+        blueprint_rows.append(("Formal Conjectures", "DECOMPOSED",
+                               f"[{fc_stats['articles']:,} problem files](../roadmap/formal-conjectures/README.md) that state "
+                               "a research or textbook statement, one article each, with a card per statement."))
+        print(
+            f"formal-conjectures: {fc_stats['articles']} articles of {fc_stats['problems']} problem files, "
+            f"{fc_stats['statements']} statements ({fc_stats['open']} open, {fc_stats['solved with proof']} solved with a "
+            f"proof link, {fc_stats['solved']} solved without, {fc_stats['proved']} proved here, {fc_stats['textbook']} "
+            f"textbook stated, {fc_stats['textbook proved']} textbook proved, {fc_stats['definition']} definitions); "
+            f"{fc_stats['test']} test and {fc_stats['api']} API statements counted; {fc_stats['subjects']} subjects; "
+            f"{fc_stats['subset_missing']} of {fc_stats['subset_names']} FC100 names without an article",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -148,6 +169,7 @@ def generate() -> dict[Path, str]:
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
         (tau.rev, tau.roadmap_rev) if tau and tau.deps else None,
         {library["id"]: record["rev"] for library, record in ff_libraries},
+        fc_data["rev"] if fc_data else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

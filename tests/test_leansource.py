@@ -161,3 +161,80 @@ def test_an_indented_end_inside_a_declaration_is_part_of_it():
     assert set(leansource.scan(text)) == {"A.prog", "A.after"}
     # Indented, with no declaration open, it still closes its scope.
     assert set(leansource.scan("namespace A\n  end A\ntheorem top : True := trivial\n")) == {"top"}
+
+
+ATTACHED = '''/-!
+# A problem
+
+*Reference:* [example.org/1](https://example.org/1)
+-/
+
+namespace P
+
+/-- Not this one's: a docstring for `helper`. -/
+def helper : ℕ := 0
+
+set_option linter.style.formal_proof_palomar false in
+/--
+The main statement,
+  indented.
+-/
+@[category research solved, AMS 5 11, -- a comment, ignored
+  formal_proof using lean4 at
+    "https://example.org/a,b"]
+theorem main (n : ℕ := 0) : let m := n; m = n := by
+  sorry
+
+@[simp] theorem inline : True := trivial
+
+/-- Its value holds no `sorry`, though its statement does. -/
+@[category test]
+theorem answered : (sorry : ℕ) = sorry := rfl
+
+theorem byFields : True ∧ True where
+  left := trivial
+  right := sorry
+
+/-- A docstring with no attributes. -/
+theorem plain : True :=
+  trivial
+
+def byCases : ℕ → ℕ
+  | 0 => 0
+  | n + 1 => n
+
+end P
+'''
+
+
+def test_a_declaration_carries_its_docstring_and_attribute_list():
+    found = leansource.scan(ATTACHED)
+    main = found["P.main"]
+    assert main.doc == "The main statement,\n  indented."
+    assert main.attributes == ("category research solved", "AMS 5 11",
+                               'formal_proof using lean4 at "https://example.org/a,b"')
+    assert found["P.inline"].attributes == ("simp",) and found["P.inline"].doc == ""
+    assert found["P.plain"].doc == "A docstring with no attributes." and found["P.plain"].attributes == ()
+    assert found["P.helper"].doc == "Not this one's: a docstring for `helper`." and found["P.helper"].attributes == ()
+
+
+def test_a_statement_runs_to_the_value_and_sorry_is_read_in_the_value():
+    found = leansource.scan(ATTACHED)
+    # A default argument's `:=` sits in brackets, and a `let` claims the next one.
+    assert found["P.main"].statement == "theorem main (n : ℕ := 0) : let m := n; m = n"
+    assert found["P.main"].sorry and found["P.main"].proof_sorry
+    assert found["P.answered"].statement == "theorem answered : (sorry : ℕ) = sorry"
+    assert found["P.answered"].sorry and not found["P.answered"].proof_sorry
+    assert found["P.byFields"].statement == "theorem byFields : True ∧ True" and found["P.byFields"].proof_sorry
+    assert found["P.plain"].statement == "theorem plain : True" and not found["P.plain"].proof_sorry
+    # A definition by pattern matching has no `:=` to end its statement.
+    assert found["P.byCases"].statement is None and not found["P.byCases"].proof_sorry
+
+
+def test_the_module_docstring_is_the_first_one():
+    assert leansource.module_doc(ATTACHED) == "# A problem\n\n*Reference:* [example.org/1](https://example.org/1)"
+    assert leansource.module_doc("theorem x : True := trivial\n") is None
+
+
+def test_attribute_lists_split_at_top_level_commas_only():
+    assert leansource.split_attributes(' simp, foo [a, b],\n  bar "x, y" ') == ["simp", "foo [a, b]", 'bar "x, y"']
