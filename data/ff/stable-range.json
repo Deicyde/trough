@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "author-verified",
-  "notes": "Metadata verification does not establish independent source correspondence, rights clearance or complete coverage of the book."
+  "notes": "Metadata verification does not establish independent source correspondence, rights clearance or complete coverage of the book.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": "AI agents authored code, proofs, documentation and metadata. No human mathematical review or source-author endorsement is asserted. AI generation does not establish correctness, originality, copyright ownership or clearance."
  },
- "scope": "The aggregate root imports the mathematical leaves, including exact-size finite-free cancellation under a stable-range bound and coefficient-row completion with the original row in the first matrix position. It includes elementary unit pivots and diagonalization over commutative S_1 rings. Biproduct cancellation in a preadditive category assumes S_1 only for the canonical End of the cancelled object and requires only the two displayed biproducts. It imposes no commutativity, global-sum or remainder hypotheses; the local-End corollary uses the existing local-ring producer. Module cancellation specializes this result while retaining independent scalar and carrier universes. It also imports finite determinant-one generation, the stable determinant kernel theorem and the quotient-to-units equivalence under S_1. It also imports S_1 inheritance for the corner of any idempotent, without centrality or nontriviality. The aggregate root also re-exports kernel-product decompositions with a specified linear section over a semiring, with an additive-group source, additive-monoid target and independent scalar and carrier universes. Forward and inverse coordinates retain that section; splitting alone asserts neither finiteness nor freeness. The full injective-first-map comparison uses Mathlib's right-split-exact equivalence and the same section. The aggregate root also re-exports RowKernel's arbitrary-ring right-coefficient row section and kernel-product splitting, and RightRowCompletion's rectangular two-sided inverse criterion when that kernel is free. Splitting alone makes no freeness claim. Separately, its explicit two-element commutative supplied-witness completion gives scalar kernel coordinates and cancellation from a supplied rank-two product equivalence. The local-semiring interface supplies division-semiring locality and the zero nonunits additive submonoid without commutativity or additive inverses, and identifies the additive view of the existing maximal ideal with nonunits for commutative local semirings. For possibly noncommutative local rings, the Jacobson radical is the unique maximal left ideal; the classification ranges over all left ideals, not only two-sided ones. Conversely, maximality of the canonical radical among all left ideals recognizes unit-theoretic locality in any ring, without a locality or separate nontriviality premise. A separate test root imports PublicAPIClient, FiniteFreeClient, RowCompletionClient, ElementaryGenerationClient, SemilocalClient, CornerClient, RightCoefficientClient, RowCompletionTwoClient, RightRowCompletionClient, LocalIdealCommRingClient and ProductMaximalIdealClient. RightRowCompletionClient uses independent two-by-two integer-matrix fixtures, including a nonzero kernel column and noncentral multiplication. RowCompletionTwoClient uses independently checked integer fixtures, a nonidentity product equivalence and the zero ring; RightCoefficientClient imports integer and matrix right-coefficient fixtures with zero/empty-row boundaries. Other test-only fixtures include zero-ring, rank-one and noncentral matrix corners and a nonlocal product of fields. The commutative finite-maximal-spectrum S_1 theorem supplies shortening and stable quotient determinant clients. Bass S_1 need not mean least stable index one: the zero ring also has S_0. The remaining principal results below summarize proved mathematics rather than enumerate every declaration or claim full coverage of the source.",
  "sources": [
   {
    "title": "The K-book: An Introduction to Algebraic K-theory",
@@ -47,7 +47,12 @@
    "rev": "2683f75e2c5774ddd1295c46062035cb6afabb8a"
   }
  ],
- "related": [],
+ "related": [
+  {
+   "name": "general-linear-groups",
+   "relationship": "builds-on"
+  }
+ ],
  "highlights": [],
  "headlines": [
   {
@@ -56,7 +61,7 @@
   },
   {
    "kind": "item",
-   "title": "[Bass conditions](StableRange/Basic.lean)",
+   "title": "Bass conditions",
    "text": "For arbitrary possibly noncommutative rings: right-unimodular\nrows, `(S_n)`, least stable index, monotonicity, ring-equivalence invariance and\n[surjective descent/quasiregular quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Quotient.lean).\n[Nontrivial local rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) have least stable range one.",
    "link": {
     "text": "Nontrivial local rings",
@@ -89,7 +94,7 @@
   },
   {
    "kind": "item",
-   "title": "[Retract endomorphisms](StableRange/CategoryTheory/EndRetract.lean)",
+   "title": "Retract endomorphisms",
    "text": "In any preadditive category, `i : X ⟶ Z`, `p : Z ⟶ X` and `i ≫ p = 𝟙 X`\ntransfer `Bass.StableRangeCondition (End Z) 1` to\n`Bass.StableRangeCondition (End X) 1` for the original canonical endomorphism\nrings. Object and morphism universes are independent; no complementary object,\nfinite-length or nonzero hypothesis is needed.",
    "link": {
     "text": "Retract endomorphisms",
@@ -100,7 +105,7 @@
   },
   {
    "kind": "item",
-   "title": "[Finite biproduct endomorphisms](StableRange/CategoryTheory/FiniteLocalEnd.lean)",
+   "title": "Finite biproduct endomorphisms",
    "text": "In any preadditive category, a displayed finite biproduct of objects with local\nendomorphism rings, and every displayed retract of that biproduct, have canonical\nendomorphism rings satisfying `(S₁)`. Only that biproduct and, for the retract,\nits supplied retraction are required, with independent index universe; empty\nfamilies and the zero biproduct are included. No vanishing of morphisms between\nsummands is assumed.",
    "link": {
     "text": "Finite biproduct endomorphisms",

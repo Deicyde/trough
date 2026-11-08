@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "agent-reviewed",
-  "notes": "AI agents reviewed the ideal-norm, principal-prime and localization results; no human review is claimed."
+  "notes": "AI agents reviewed the ideal-norm, principal-prime and localization results; no human review is claimed.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": "AI agents authored the Lean proofs and documentation. AI involvement does not itself establish origin, correctness or rights."
  },
- "scope": "Ideal arithmetic, generic quotient indices, intrinsic fixed-field heights and their tensor, positive-rescaling and equivalence-pullback laws are described below. Supplied rational frames evaluate height through their coefficient-ideal norms and weighted rational-fibre norm products, or through residue-cardinality products with negative coefficient-ideal exponents and the same archimedean denominator. These products have finite support. Generic semiring-algebra coordinates of supplied frames and principal-count/completion-norm bridges also support canonical definite ultrametric seminorms on adic fibres of invertible modules over infinite Dedekind domains with finite quotients. The supplied-frame construction needs only a finitely generated module and a rational frame. The plus sign on its coefficient-ideal count does not change the existing height factors. Independently of norms and arithmetic finiteness, the valuation-integer span of integral sections is the image of the integer tensor fibre and spans the whole field fibre; it is finite for finite modules, and flatness gives an equivalence onto the span. The scalar right-unit model identifies the whole span with the valuation-integer ring. Generic fractional-ideal norm/index comparisons include zero ideals and sections; prime-exponent norm factorization requires a nonzero ideal, as supplied automatically by a rational frame. Weighted infinite-place products, fractional-ideal norm extension formulas, seminorm scalar extension and isometric completion maps supply further interfaces, not finite-extension-height evaluations. Element-norm witnesses, class-number computations, injectivity of class extension and proofs of proposed class generators are not supplied. The adic fibres are algebraic tensor products, not completed tensor products. Completed-lattice constructions, identification of seminorm unit balls with those lattices, local tensor compatibility and finite-extension height transport remain open.",
  "sources": [
   {
    "title": "The K-book: An Introduction to Algebraic K-theory",

@@ -16,19 +16,20 @@
  },
  "review": {
   "status": "other",
-  "notes": "Read README.md for headline results and import examples, and docs/Mathematics.md for hypotheses, constructions and limitations."
+  "notes": "Read README.md for headline results and import examples, and docs/Mathematics.md for hypotheses, constructions and limitations.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
    {
     "method": "agent",
     "framework": "Codex CLI and Hive Tasks",
-    "tool_setup": "AI agents developed code and documentation with a pinned Lean/mathlib Lake environment; independent agent executions reviewed mathematics."
+    "tool_setup": "AI agents developed code and documentation with a pinned Lean/mathlib Lake environment; independent agent executions reviewed mathematics.",
+    "prompting_notes": "Mathematical assumptions, source boundaries and concrete declarations are explained in README.md, docs/Mathematics.md and docs/API.md."
    }
   ],
   "notes": "Beacon contributed the initial implementation and API and regression-client repairs. Formal Frontier Agents contributed further mathematics, tests, reference documentation and independent reviews. The native reference adapter and catalogue follow the finite-group Tate cohomology, polynomial-root-stability and Anchor ideal-completion adaptation lineage; Folio contributed headline input."
  },
- "scope": "Production modules and checked-use clients have separate import roots. For any small nonempty cofiltered diagram of finite discrete spaces and any limiting cone, stage maps to a finite target form a filtered colimit equivalent to continuous maps from its limit, naturally in the target. Empty stages, limits and targets are allowed, but not an empty index. For an arbitrary diagram of finite-space targets with a specified limiting profinite cone, continuous maps from a specified cofiltered finite-space limit correspond to compatible stage-map classes at the target objects; the target index need not be cofiltered, small or nonempty. This is a comparison of profinite spaces and continuous maps, not groups. For two small nonempty cofiltered diagrams in the finite-set skeleton, morphisms between their canonical dual ind-objects correspond to compatible finite-stage map classes, with representative, composition, identity and fixed-index naturality laws. Specified limiting cones identify these morphisms with continuous maps of profinite spaces; no presentation-independent pro-category equivalence is asserted. Compatible quotient images reconstruct closed subgroups, and arbitrary prescribed quotient-level Sylow coordinates extend to compatible families and closed subgroups with Sylow finite images. Maximality is conditional on every actual finite quotient image of a containing subgroup being a p-group; independently conjugate images of closed subgroups yield an ambient conjugator. Procyclic power images classify open subgroups, not all closed subgroups of an arbitrary procyclic group. The closed-subgroup classification is for the specific primewise p-adic product. Nevertheless, every closed subgroup of a procyclic profinite group inherits procyclicity.",
  "sources": [
   {
    "title": "Cohomology of Number Fields (corrected second edition, electronic version 2.3, May 2020)",

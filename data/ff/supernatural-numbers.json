@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "self-assessed",
-  "notes": "Compilation checks, including warning-fatal builds, are distinct from complete transitive standard-axiom verification, including private and generated declarations. Neither schema validation nor this self-assessment constitutes independent mathematical review, rights assessment or certification of a particular revision or its publication status."
+  "notes": "Compilation checks, including warning-fatal builds, are distinct from complete transitive standard-axiom verification, including private and generated declarations. Neither schema validation nor this self-assessment constitutes independent mathematical review, rights assessment or certification of a particular revision or its publication status.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": "Formal Frontier Agents is the collective formalization credit. Beacon is an AI-agent contributor, not a separately identified human author. Beacon's original modules, other AI-agent client/metadata/bottom and documentation contributions, Folio's headline exposition and the adapter's Root Stability/Anchor Ideal recipe lineage are credited in README.md and docs/README.md. Apache notices, collective credit and genuine third-party attribution are preserved; the collective author credit does not identify a copyright holder. The generated API includes displayed Lean signatures and project docstrings, not external book text."
  },
- "scope": "Reusable supernatural-number arithmetic, finite-quotient profinite order and closed-subgroup index, their tower law, and torsion-character comparison under the hypotheses declared in Lean. This metadata does not assert complete source coverage or certify any particular release snapshot.",
  "sources": [
   {
    "title": "Cohomology of Number Fields",

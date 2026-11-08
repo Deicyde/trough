@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "other: historical mathematical review is distinct from revision-specific acceptance",
-  "notes": "The mathematical library had distinct-execution agent review before its prior private release. Build, complete standard-axiom and independent mathematical/API/rights decisions apply only to the exact revisions they assessed; this metadata is not itself an acceptance certificate for any successor. No human or source-author endorsement is asserted."
+  "notes": "The mathematical library had distinct-execution agent review before its prior private release. Build, complete standard-axiom and independent mathematical/API/rights decisions apply only to the exact revisions they assessed; this metadata is not itself an acceptance certificate for any successor. No human or source-author endorsement is asserted.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "Contributor and adaptation credits are in docs/CREDITS.md and repository history. No human peer review, source-author approval, model-cost estimate or current-tree performance measurement is inferred."
  },
- "scope": "A 103-module Lean library with compact-open filtered comparisons, quasi-flasque and derived-cohomological results, conditional constructed native limits and their forgetful comparisons, and spectral inverse-limit global and cylinder sections. Generic open-variable naturality and transition-pullback principal-tail comparisons are arrow-level results for actual diagrams and original cones; neither proves an all-open isomorphism, unconditional global limits nor source-level coverage. Examples include both public named examples and private clients. The historical generated docs/API.md covers 26 original modules only; consult the focused guides for later modules and exact hypotheses.",
  "sources": [
   {
    "title": "Sheaf cohomology, compact-open colimits, pullback and open base change",

@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "Independently reviewed mathematical development",
-  "notes": "Independent mathematical review and maintainer acceptance do not establish correspondence with or coverage of any selected source."
+  "notes": "Independent mathematical review and maintainer acceptance do not establish correspondence with or coverage of any selected source.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": "AI agents prepared original and adapted code, documentation and source assembly; this metadata describes involvement, not automated proof certification."
  },
- "scope": "Reusable 30-leaf mathematical library with aggregate public import, eleven test clients, two diagnostic modules and three reader examples (47 Lean files). Results include positive-degree projective basics and radical, homogeneous coordinates, charts, quotient and symmetric-algebra Proj, geometric-cover global sections, whole-arrow unit scaling, degree-scaled maps on their natural open domain with full ordinary-prime contraction, positive-Veronese whole-scheme isomorphism and coherent-tail whole-scheme isomorphisms with both degree-zero coefficient triangles, and Noetherian Proj of arbitrary N-graded Noetherian commutative rings, including finite-coordinate polynomial Proj over any Noetherian coefficient ring. Finite-dimensional polynomial projective space is geometrically integral over every commutative ring, with finite nonempty coordinates. The Noetherian results need no field, domain, degree-one generation or nontriviality assumption. Official pinned Graded Rings supplies the selected-component and coherent-tail algebra. See README.md and docs/MODULES.md for exact assumptions and direct imports.",
  "sources": [
   {
    "title": "Original projective-space formal development",
@@ -89,7 +89,8 @@
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/PointClient.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
@@ -100,7 +101,8 @@
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/CoherentTailProjClient.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
@@ -111,7 +113,8 @@
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/VeroneseClient.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
@@ -122,7 +125,8 @@
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/DegreeScaledMapPointClient.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
@@ -133,7 +137,8 @@
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/GeometryClient.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
@@ -144,7 +149,8 @@
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/NoetherianClient.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
@@ -155,7 +161,8 @@
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/GeometricallyIntegralClient.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   }
  ],
  "main_results": [

@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "other: independently reviewed",
-  "notes": "Independent review covers the mathematical code, ordinary-import examples and documentation."
+  "notes": "Independent review covers the mathematical code, ordinary-import examples and documentation.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "Atlas contributed the initial descent proofs; other Formal Frontier contributors developed the later mathematics, module interfaces and examples. Folio contributed the initial README headlines. No model, cost or performance measurements are reported here."
  },
- "scope": "An A-linear retraction of an injective algebra map into an integrally closed domain descends integral closedness; domain and integral-closure descent from an arbitrary field extension are separate results. No ascent, converse, normalization or whole-source formalization is claimed. For a homomorphism of commutative semirings, positive powers in its image give a topological embedding on prime spectra, without requiring the homomorphism to be surjective. This extends the surjective criterion, not all localization embeddings; no closed-range or spectral-surjectivity assertion is made. A nonzero domain integral over a henselian local ring is local, without assuming the base is a domain, the structural map injective, or the extension finite as a module.",
  "sources": [
   {
    "title": "Integral-closure descent along linear retractions and arbitrary field scalar extensions",
@@ -185,7 +185,8 @@
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Ideal.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "prose",
@@ -425,21 +426,24 @@
    "title": "`Ideal.comap_jacobson_of_isIntegral`",
    "text": "`Ideal.comap_jacobson_of_isIntegral`: for every target ideal `J : Ideal S`,\n`J.jacobson.comap f = (J.comap f).jacobson`.",
    "link": null,
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
    "title": "`Ideal.map_jacobson_le_of_isIntegral`",
    "text": "`Ideal.map_jacobson_le_of_isIntegral`: for every source ideal `I : Ideal R`,\n`I.jacobson.map f ≤ (I.map f).jacobson`.",
    "link": null,
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
    "title": "`Ideal.map_le_jacobson_bot_of_isIntegral`",
    "text": "`Ideal.map_le_jacobson_bot_of_isIntegral`: for every source ideal `I`,\n`I ≤ (⊥ : Ideal R).jacobson` implies\n`I.map f ≤ (⊥ : Ideal S).jacobson`.",
    "link": null,
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "prose",

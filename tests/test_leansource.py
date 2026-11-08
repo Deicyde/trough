@@ -62,7 +62,7 @@ def test_the_scan_follows_namespaces_sections_and_root():
     found = leansource.scan(SOURCE)
     assert found is not None
     assert set(found) == {"A.b", "A.c", "A.quote", "A.quoteChar", "A.afterChar", "Top.level", "A.opened", "A.named",
-                          "A.hidden", "A.universes", "A.B.C.stated", "A.B.C.proved", "A.inSection"}
+                          "A.universes", "A.B.C.stated", "A.B.C.proved", "A.inSection"}
     assert found["A.b"].line == 12 and found["A.b"].kind == "theorem"
     assert found["A.c"].kind == "lemma" and found["A.c"].line == 19
     assert found["A.named"].kind == "instance"
@@ -105,3 +105,38 @@ def test_is_name_accepts_one_lean_name_only():
     assert not leansource.is_name("f : X → Y")
     assert not leansource.is_name("Order.height_pi and Order.coheight_pi")
     assert not leansource.is_name(".b")
+
+
+def test_a_private_declaration_is_not_declared():
+    # Lean names it `_private...`, so no one can refer to it by the name it is written with.
+    assert "A.hidden" not in leansource.scan(SOURCE)
+
+
+def test_mutual_blocks_and_named_sections_close():
+    text = ("namespace A\nmutual\ntheorem even : True := trivial\ntheorem odd : True := trivial\nend\n"
+            "section B.C\ntheorem inner : True := trivial\nend B.C\nend A\ntheorem after : True := trivial\n")
+    assert set(leansource.scan(text)) == {"A.even", "A.odd", "A.inner", "after"}
+
+
+def test_nothing_after_exit_is_read():
+    text = "theorem kept : True := by\n  trivial\n#exit\ntheorem dropped : True := sorry\n"
+    found = leansource.scan(text)
+    assert set(found) == {"kept"} and not found["kept"].sorry
+
+
+def test_sorry_ax_and_stop_count_as_sorry():
+    text = ("theorem ax : True := sorryAx True\ntheorem stopped : True := by\n  stop\n  trivial\n"
+            "theorem fine : True := by\n  exact trivial\n")
+    found = leansource.scan(text)
+    assert found["ax"].sorry and found["stopped"].sorry and not found["fine"].sorry
+
+
+def test_a_docstring_opened_by_slash_dash_dash_slash_runs_to_its_close():
+    text = "/--/ theorem inDoc : True := trivial -/\ntheorem real : True := trivial\n"
+    assert set(leansource.scan(text)) == {"real"}
+
+
+def test_raw_strings_have_no_escapes():
+    text = ('def a : String := r"\\"\ntheorem afterRaw : True := trivial\n'
+            'def b : String := r#"a "quoted" theorem inRaw : True"#\ntheorem afterHashes : True := trivial\n')
+    assert set(leansource.scan(text)) == {"a", "afterRaw", "b", "afterHashes"}

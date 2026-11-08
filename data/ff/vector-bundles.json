@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "agent-reviewed",
-  "notes": ""
+  "notes": "",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "AI agents contributed to the formalization and documentation."
  },
- "scope": "Foundational metrics, supplied-metric orthogonal splitting and local coordinates, fiberwise isomorphisms, products, pullbacks, cylinder charts, frames, finite embeddings, ranges and finite complements, with full standard and boundary examples. Sigma-compactness of fiber-bundle total spaces over R₁ sigma-compact bases with sigma-compact models, reflection to models over pointed R₀ bases, and a factor characterization for nonempty R₁ bases and nonempty models.",
  "sources": [
   {
    "title": "Vector Bundles and K-Theory",
@@ -161,7 +161,8 @@
     "url": "https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Analysis/Normed/Algebra/OperatorFamilies.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",
@@ -172,7 +173,8 @@
     "url": "https://github.com/FormalFrontier/vector-bundles/blob/e3fb9de334c8b60bdb707b3e48b2094b2202c725/VectorBundles/Topology/Module/FiniteCoordinates/FiniteDimensional/Basic.lean",
     "code": false
    },
-   "declaration": null
+   "declaration": null,
+   "title_in_text": true
   },
   {
    "kind": "item",

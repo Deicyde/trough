@@ -1,8 +1,9 @@
 # Every library trough maps or plans to map, one [[library]] table each.
 #
 # Snapshot fields (head, head_date, toolchain, mathlib, lean_files) were read
-# from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08 at the
-# commits data/ff/ records, and drift as the libraries move. map_status is
+# from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08, and
+# drift as the libraries move; a Formal Frontier library's commit is the one
+# its data/ff/ record pins, so its entry has no head. map_status is
 # "live" (a chapter of this site), "elsewhere" (mapped on another site) or
 # "planned"; map_unit says what one article will be. A Formal Frontier
 # library's subject is its part of that chapter, one of SUBJECTS in
@@ -342,11 +343,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 267
-head = "86f9b35ef35a"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-algebraic-direct-limits"
@@ -361,11 +360,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 95
-head = "e5d0dea1697c"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-algebraic-groups"
@@ -380,11 +377,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 517
-head = "cad2dc41da14"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-coherent-modules"
@@ -399,11 +394,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 179
-head = "b670b34e8741"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-complex-analysis"
@@ -418,11 +411,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 20
-head = "c22c803e257c"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-continuous-group-cohomology"
@@ -437,11 +428,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 144
-head = "4434e3f21530"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-dedekind-ideal-arithmetic"
@@ -456,18 +445,16 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 25
-head = "c76307595a11"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-finite-etale-algebras"
 name = "Finite étale algebras"
 repo = "FormalFrontier/finite-etale-algebras"
 group = "formal-frontier"
-subject = "Algebraic geometry"
+subject = "Commutative algebra"
 what = "Finite etale subalgebras over fields, Galois/separable/purely inseparable descent (Milne Algebraic Groups background)"
 informal_layer = "README + docs API/MODELS"
 formalization_yaml = "v0.4; no highlights; no main_results"
@@ -475,11 +462,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 9
-head = "4627c3ab2479"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-finite-group-tate-cohomology"
@@ -494,11 +479,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 8
-head = "c0c9d563d45a"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-formal-power-series"
@@ -513,11 +496,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 73
-head = "29bdab8c1f57"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-fundamental-groupoids"
@@ -532,11 +513,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 218
-head = "ce38a38faef1"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-general-linear-groups"
@@ -551,11 +530,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 116
-head = "a2199cf0d02b"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-graded-rings"
@@ -570,11 +547,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 149
-head = "6a459e8e4d20"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-group-rings"
@@ -589,11 +564,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 100
-head = "8e90e6563300"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-group-theory"
@@ -608,11 +581,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 305
-head = "cad97f1a1920"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-homological-algebra"
@@ -627,11 +598,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 101
-head = "8bcaebe913c5"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-ideal-completion"
@@ -646,11 +615,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 5
-head = "e316d02a1c08"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-integral-closure"
@@ -665,11 +632,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 20
-head = "8f0b15a513bb"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-iwasawa-modules"
@@ -684,11 +649,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "e37d88a26f37"
 lean_files = 11
-head = "e71db96b779b"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-metrization"
@@ -703,11 +666,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 6
-head = "9c7cf0d82ab3"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-minimal-primes"
@@ -722,11 +683,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 122
-head = "45952e34e2da"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-morphism-properties"
@@ -741,11 +700,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 12
-head = "1666ed81a5c4"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-multivariate-polynomials"
@@ -760,11 +717,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 174
-head = "724d9804aa6e"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-norm-forms"
@@ -779,11 +734,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 30
-head = "4b2893fb313b"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-polynomial-root-stability"
@@ -798,11 +751,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 23
-head = "efade497a4cf"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-profinite-groups"
@@ -817,11 +768,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 103
-head = "bf258c54ddbe"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-projective-modules"
@@ -836,11 +785,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 473
-head = "27f95a8b2a06"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-projective-space"
@@ -855,11 +802,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 47
-head = "9dbd208f4275"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-quadratic-algebras"
@@ -874,11 +819,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 29
-head = "16a5b4c54c45"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-restricted-product-duality"
@@ -893,11 +836,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 43
-head = "df6cc0bb4483"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-ringed-spaces"
@@ -912,11 +853,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 89
-head = "052015f070ef"
-head_date = "2026-10-29"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-scheme-properties"
@@ -931,11 +870,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 319
-head = "09db7d881a2f"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-sequence-growth"
@@ -950,11 +887,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 4
-head = "ccf81c7190cb"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-sheaf-cohomology"
@@ -969,11 +904,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 133
-head = "85cf087ff3e2"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-simplicial-objects"
@@ -988,11 +921,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 47
-head = "e210890fdc17"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-simplicial-rings"
@@ -1007,11 +938,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 6
-head = "728785746bd0"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-smooth-regularity"
@@ -1026,11 +955,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 26
-head = "fbc0ee825697"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-spectral-stone-duality"
@@ -1045,11 +972,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 47
-head = "3d9e22b25e63"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-sphere-topology"
@@ -1064,11 +989,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 112
-head = "672d46f90cf5"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-stable-range"
@@ -1083,11 +1006,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 67
-head = "4d01f17954ba"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-supernatural-numbers"
@@ -1102,11 +1023,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 9
-head = "cb444a4051e5"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-toric-ideals"
@@ -1121,11 +1040,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 143
-head = "593116e0783d"
-head_date = "2026-11-04"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-valuation-integers"
@@ -1140,11 +1057,9 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 145
-head = "212f1a045abb"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."
 
 [[library]]
 id = "ff-vector-bundles"
@@ -1159,8 +1074,6 @@ license = "Apache-2.0"
 toolchain = "v4.34.0-rc2"
 mathlib = "83abb3e776bd"
 lean_files = 266
-head = "e3fb9de334c8"
-head_date = "2026-11-05"
 map_status = "live"
 map_unit = "headline result"
-map_plan = "One article per highlight in a library's formalization.yaml and per headline result in its README whose declaration link names a declaration the linked file has; the main results its formalization.yaml lists are on the library's page."
+map_plan = "One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own."

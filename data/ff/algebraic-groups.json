@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "AI-assisted development with independent agent review of individual contributions; no human mathematical review is claimed.",
-  "notes": "Mathematical scope and third-party credit appear in README.md and CREDITS.md; this metadata does not assert complete source coverage."
+  "notes": "Mathematical scope and third-party credit appear in README.md and CREDITS.md; this metadata does not assert complete source coverage.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "AI agents developed mathematical proofs and ordinary-import clients."
  },
- "scope": "This repository contains reusable algebraic-group, group-scheme and coordinate-algebra definitions and results, with focused ordinary-import clients. Every finite subset of a coalgebra over a commutative semiring with projective ambient module lies in a module-finitely-generated submodule with every-member first-factor tensor-image closure, without ambient finite generation. Free modules are included. Over a field, finite subsets have two-factor tensor-image containment. The restricted coalgebra structures over a field are provided by the subcoalgebra API. Finite biorthogonal ambient coordinates give coefficient-comultiplication and counit laws. Finite Hopf coefficient matrices satisfying both matrix laws are units with entrywise antipode inverse, including empty indices. For every coalgebra over a commutative semiring, the counit range is an idempotent ideal acting on the top submodule with image top. Idempotent principal ideals have explicit coalgebra constructors, including nonfree examples. Arbitrary split free presentations give finite tensor reconstruction and all-index contraction formulas without assuming freeness or finite generation of the presented module. Unitriangular point groups have central, lower-central and derived series, superdiagonal quotient and exponent results with the hypotheses described in their guides. Closed superdiagonal stages have Hopf coordinate quotients, multiplicative points, a polynomial-algebra presentation and underlying over-scheme affine-space isomorphisms over arbitrary commutative bases. These stages are normal; positive stages have primitive group-scheme coordinate projections whose successor is their underlying over-scheme kernel; the positive-stage projection has a specified underlying over-scheme section, without a quotient or a group-scheme splitting claim. The literal finite product of additive group schemes has underlying polynomial affine space over arbitrary commutative rings, preserving actual projections (including empty indices and zero rings). Diagonal, triangular, GL and SL constructions include selected products, representations, finite geometry and dimension results. Unitriangular coordinate algebras and group schemes have base-change and identity/tower coherence comparisons. Over a field, subcoalgebras are subspaces whose members' comultiplication lies in the image of their tensor square. Their subtypes carry the restricted coalgebra, with bundled inclusions and unique codomain restriction for homomorphisms. Every finitely generated subspace, and every finite subset, lies in a finite-dimensional subcoalgebra. No finite-dimensional ambient module or algebra structure is required, and no least finite closure is asserted. For a central bialgebra map from a commutative bialgebra A over a commutative ring R to a possibly noncommutative Hopf algebra B, the tensor-quotient equivalence compares B tensor_A B with B tensor_R (B / (ker counit_A)B) as first-factor B-modules. In this generality the target uses only the original module quotient, and A need not have an antipode. When B is commutative, tensorQuotientAlgEquiv refines the same map to a B-algebra equivalence on the canonical tensor and quotient algebras. Its simp toLinearEquiv equality recovers tensorQuotientEquiv and its finite-comultiplication formulas in both directions. Mixed scalar extension is a composition of tensor cancellation and congruence for compatible ordinary algebra maps and scalar towers, with no Hopf structure required on the commutative coefficient algebra. The library is not a blanket arbitrary-base classification or full quotient-effectivity theory, or complete formalization of Milne's book. Read exact limitations with each mathematical guide.",
  "sources": [
   {
    "title": "Hopf Algebras",
@@ -90,7 +90,16 @@
    "rev": "8e054f1f528a37cf793e68d433db9dd568bead18"
   }
  ],
- "related": [],
+ "related": [
+  {
+   "name": "general-linear-groups",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "group-theory",
+   "relationship": "builds-on"
+  }
+ ],
  "highlights": [
   {
    "title": "Closed linear embeddings of affine algebraic groups",

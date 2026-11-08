@@ -16,19 +16,23 @@
  },
  "review": {
   "status": "independently reviewed published foundation; successor candidates require exact review",
-  "notes": "Prism, Atlas, Lattice and Anchor reviewed earlier original mathematical contributions. Separate independent reviews addressed the original development and subsequent published snapshots. Each successor requires its own exact-candidate review and applicable build and complete transitive standard-axiom evidence, including private and generated declarations. Schema validity or public API documentation alone is not acceptance."
+  "notes": "Prism, Atlas, Lattice and Anchor reviewed earlier original mathematical contributions. Separate independent reviews addressed the original development and subsequent published snapshots. Each successor requires its own exact-candidate review and applicable build and complete transitive standard-axiom evidence, including private and generated declarations. Schema validity or public API documentation alone is not acceptance.",
+  "reviewers": [
+   "Prism, Atlas, Lattice and Anchor (historical individual mathematical contributions)",
+   "Independent Formal Frontier reviewers (development and published-release candidates)"
+  ]
  },
  "automation": {
   "methods": [
    {
     "method": "agent",
     "framework": "AI-assisted Lean authoring with pinned Lake and mathlib",
-    "tool_setup": "Beacon's original bridges, native-module and lint contributions; independently contributed public clients and metadata. The default build checks production and test roots with pinned Lean/mathlib. Separately retained native doc-gen4 SQLite/raw-record runs supplied the eleven-module API catalogue, not a private-proof census."
+    "tool_setup": "Beacon's original bridges, native-module and lint contributions; independently contributed public clients and metadata. The default build checks production and test roots with pinned Lean/mathlib. Separately retained native doc-gen4 SQLite/raw-record runs supplied the eleven-module API catalogue, not a private-proof census.",
+    "prompting_notes": "AI agents assisted with original construction, proof search, module migration, testing and documentation. Human/operator authorization for verified original project contributions does not assign copyright ownership or clear third-party reuse."
    }
   ],
   "notes": "Mathematical and module/test contributions received independent review. The adapted native-documentation generator draws on the finite-group Tate cohomology, polynomial-root-stability and Anchor ideal-completion adapters; expression credit and the bounds of public API documentation are explained in docs/README.md. Exact release decisions are recorded separately."
  },
- "scope": "Reusable generic foundation only, not the full Iwasawa-module roadmap or a source-formalization completion claim. The native API catalogue is bound to the unchanged mathematical and dependency inputs identified by deceb449133f8bcc7fb4829e4fc167b483eef3a2, not to this document's release status. Independent review and required build/standard-axiom evidence are tied to exact candidates in the separate release record.",
  "sources": [
   {
    "title": "Original Formal Frontier bridge definitions and proofs for Iwasawa modules",

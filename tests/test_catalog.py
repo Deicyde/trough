@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pytest
+
 from trough import catalog
 
 CATALOG = Path(__file__).resolve().parent.parent / "catalog" / "libraries.toml"
@@ -22,3 +24,26 @@ def test_coverage_has_a_row_per_library_not_live():
 def test_the_book_shows_no_lean_progress():
     root = catalog.roadmap_root(catalog.load(CATALOG), {}, None)
     assert root.startswith("---\ntracks_lean: false\n---\n\n# Trough\n")
+
+
+def test_a_formal_frontier_library_names_a_known_subject(tmp_path):
+    entry = ('[[library]]\nid = "ff-x"\nname = "X"\nrepo = "FormalFrontier/x"\ngroup = "formal-frontier"\n'
+             'map_status = "live"\nmap_unit = "headline result"\nmap_plan = "p"\n')
+    path = tmp_path / "libraries.toml"
+    path.write_text(entry + 'subject = "Topology"\n', encoding="utf-8")
+    assert catalog.load(path)[0]["subject"] == "Topology"
+    path.write_text(entry + 'subject = "Astrology"\n', encoding="utf-8")
+    with pytest.raises(ValueError, match="unknown subject Astrology"):
+        catalog.load(path)
+    path.write_text(entry, encoding="utf-8")
+    with pytest.raises(ValueError, match="unknown subject None"):
+        catalog.load(path)
+
+
+def test_the_formal_frontier_libraries_share_one_chapter_line():
+    libraries = catalog.load(CATALOG)
+    live = sum(library["group"] == "formal-frontier" and library["map_status"] == "live" for library in libraries)
+    root = catalog.roadmap_root(libraries, {"formal-frontier": "formal-frontier/README.md"}, None)
+    lines = [line for line in root.splitlines() if "Formal Frontier" in line and line.startswith("- [")]
+    assert lines == [line for line in lines if line.startswith(f"- [Formal Frontier](formal-frontier/README.md): {live} libraries")]
+    assert len(lines) == 1

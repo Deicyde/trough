@@ -5,8 +5,11 @@ them is never read as a declaration. Scopes follow `namespace`, `section`,
 `mutual` and `end`, and `_root_` puts a name at the top level. The reading is
 conservative, because a declaration it wrongly reports is worse than one it
 misses: a file whose scopes do not close as they open declares nothing, a
-declaration counts only when its command names it on the keyword's line, and
-names Lean makes itself (constructors, fields, `ext` lemmas) are not read.
+declaration counts only when its command names it on the keyword's line, names
+Lean makes itself (constructors, fields, `ext` lemmas) are not read, a
+`private` declaration counts as not declared (Lean renames it), and nothing
+after `#exit` is read. One risk remains: a declaration written inside a syntax
+quotation, as a macro may build one, reads as the file's own.
 """
 
 from __future__ import annotations
@@ -23,7 +26,7 @@ MODIFIERS = r"(?:(?:private|protected|noncomputable|partial|unsafe|nonrec|public
 # "open Foo in", "set_option x y in": a prefix that scopes one command.
 IN_PREFIX = r"(?:(?:open|set_option|omit|include)\b[^\n]*?\bin\s+)*"
 DECLARATION = re.compile(
-    rf"^[ \t]*{IN_PREFIX}{MODIFIERS}(?:class\s+(?=inductive\b))?(?P<kind>{'|'.join(KINDS)})\b[ \t]*"
+    rf"^[ \t]*{IN_PREFIX}(?P<modifiers>{MODIFIERS})(?:class\s+(?=inductive\b))?(?P<kind>{'|'.join(KINDS)})\b[ \t]*"
     rf"(?:\(priority\s*:=[^)\n]*\)[ \t]*)?(?P<name>{NAME})?",
     re.M,
 )
@@ -37,7 +40,9 @@ COMMAND = re.compile(
     r"set_option|attribute|mutual|notation|infix|infixl|infixr|prefix|postfix|macro|macro_rules|syntax|elab|"
     r"elab_rules|alias|export|initialize|omit|include|deriving|#\w+)\b)"
 )
-SORRY = re.compile(r"(?<![\w.'])(?:sorry|admit)(?![\w'!?])")
+SORRY = re.compile(r"(?<![\w.'])(?:sorry|sorryAx|admit)(?![\w'!?])|^[ \t]*(?:·[ \t]*)?stop(?![\w'!?])", re.M)
+EXIT = re.compile(r"^#exit\b")
+RAW_STRING = re.compile(r'r(#*)"')
 NOT_NAMES = {"where", "extends", "deriving"}
 
 
@@ -46,7 +51,7 @@ class Declaration:
     name: str
     kind: str
     line: int
-    sorry: bool  # its text in the file holds `sorry` or `admit`
+    sorry: bool  # its text in the file holds `sorry`, `sorryAx`, `admit` or a `stop` tactic
 
 
 def blank(text: str) -> str:
@@ -68,7 +73,8 @@ def blank(text: str) -> str:
             clear(i, end)
             i = end
         elif text.startswith("/-", i):
-            depth, j = 1, i + 2
+            # A docstring's body starts after "/--" or "/-!", so "/--/" opens one.
+            depth, j = 1, i + 3 if text[i + 2:i + 3] in ("-", "!") else i + 2
             while j < n and depth:
                 if text.startswith("/-", j):
                     depth += 1
@@ -86,6 +92,13 @@ def blank(text: str) -> str:
                 j += 2 if text[j] == "\\" else 1
             clear(i, j + 1)
             i = j + 1
+        elif c == "r" and (i == 0 or not (text[i - 1].isalnum() or text[i - 1] in "_'!?.")) and (
+                raw := RAW_STRING.match(text, i)):
+            # A raw string has no escapes and ends at a quote followed by as many hashes as opened it.
+            close_at = text.find('"' + raw.group(1), raw.end())
+            end = n if close_at < 0 else close_at + 1 + len(raw.group(1))
+            clear(i, end)
+            i = end
         elif c == "«":
             j = text.find("»", i)
             i = n if j < 0 else j + 1
@@ -137,6 +150,8 @@ def scan(text: str) -> dict[str, Declaration] | None:
         open_decl = None
 
     for number, line in enumerate(lines, 1):
+        if EXIT.match(line):
+            break
         if open_decl and line[:1].strip() and COMMAND.match(line):
             close()
         if match := NAMESPACE.match(line):
@@ -170,7 +185,7 @@ def scan(text: str) -> dict[str, Declaration] | None:
         if match := DECLARATION.match(line):
             close()
             name = match["name"]
-            if not name or name in NOT_NAMES:
+            if not name or name in NOT_NAMES or "private" in match["modifiers"].split():
                 continue
             if name.startswith("_root_."):
                 full = name[len("_root_."):]

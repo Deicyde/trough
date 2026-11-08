@@ -99,20 +99,23 @@ def generate() -> dict[Path, str]:
         blueprints.resolve(ff_built, VAULT)
         files.update(render_tree(ff_built.root, VAULT))
         chapters["formal-frontier"] = "formal-frontier/README.md"
-        for section, names in ff_sections:
+        for section, names, counts in ff_sections:
             # Keyed by the library's directory: the hook takes the longest key a page's path starts with.
             here = section.path.parent.relative_to(ROADMAP).as_posix()
             if names:
                 lean_links[here] = dict(sorted(names.items()))
-            count = sum(isinstance(node, Leaf) for node in walk(section))
-            if count:
+            kinds = [text for number, text in (
+                (counts["highlight_articles"], ff.plural(counts["highlight_articles"], "highlight") + " of its formalization.yaml"),
+                (counts["headline_articles"], ff.plural(counts["headline_articles"], "headline result"))) if number]
+            if kinds:
                 blueprint_rows.append((f"Formal Frontier / {section.title}", "DECOMPOSED",
-                                       f"[{count} headline {'result' if count == 1 else 'results'}](../roadmap/{here}/README.md) "
-                                       f"that {'names' if count == 1 else 'name'} a declaration its files have, one article each."))
+                                       f"[{' and '.join(kinds)}](../roadmap/{here}/README.md) whose declarations the scan "
+                                       "finds in the linked file, one article each."))
             else:
                 blueprint_rows.append((f"Formal Frontier / {section.title}", "OUT",
-                                       f"No headline result names a declaration its files have at the pinned commit; "
-                                       f"[its page](../roadmap/{here}/README.md) quotes them."))
+                                       f"Mapped as [a page](../roadmap/{here}/README.md) without articles: none of its "
+                                       "headline results links a declaration the scan finds in the linked file at the "
+                                       "pinned commit."))
         ff_stats = ff_built.stats
         print(
             f"formal-frontier: {ff_stats['articles']} articles ({ff_stats['highlight_articles']} highlights, "
@@ -144,7 +147,7 @@ def generate() -> dict[Path, str]:
         libraries, sources.rev, sources.thousand_plus,
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
         (tau.rev, tau.roadmap_rev) if tau and tau.deps else None,
-        len(ff_libraries),
+        {library["id"]: record["rev"] for library, record in ff_libraries},
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

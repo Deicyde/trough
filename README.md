@@ -134,14 +134,17 @@ written by AI agents, 44 of them in the catalog. Each has a
 [formalization.yaml](https://github.com/mathlib-initiative/formalization.yaml)
 (v0.4) and a README whose "Headline results" section says what it proves. The
 chapter has a part per subject, the catalog's `subject` field, and a page per
-library: its description, scope, review and automation statements quoted from
-its formalization.yaml, the Formal Frontier libraries it builds on and those
-built on it, its headline results, and a table of the main results its
-formalization.yaml lists. An article is a highlight of the formalization.yaml,
-or a headline result whose declaration link names a declaration the linked file
-has. Any other headline result stays as quoted text on the library's page, and
-the main results, close to the whole API in several libraries, are not
-articles. No Lean runs for this chapter yet, so its articles have no edges.
+library: its description, review and automation statements quoted from its
+formalization.yaml, the Formal Frontier libraries it builds on and those built
+on it, its headline results, and a page listing the main results its
+formalization.yaml names. An article is a highlight of the formalization.yaml
+whose declarations the scan below finds, or a headline result whose declaration
+link names a declaration the scan finds in the linked file. Any other headline
+result stays as quoted text on the library's page, and the main results, close
+to the whole API in several libraries, are not articles. A library whose
+quoted headline results pass 40 KB has them on a page of their own, and a
+main-results list of more than 100 rows is split into pages. No Lean runs for
+this chapter yet, so its articles have no edges.
 
 1. `tools/refresh_ff.py CHECKOUTS` reads a checkout of each library and writes
    `data/ff/<name>.json`: the commit, the formalization.yaml's facts,
@@ -154,10 +157,12 @@ articles. No Lean runs for this chapter yet, so its articles have no edges.
    named file's source without Lean, with comments, docstrings and strings
    blanked and scopes followed through `namespace`, `section` and `end`. A
    name counts as declared only when a declaration command in that file names
-   it in full under the namespaces it sits in, and a file whose scopes don't
+   it in full under the namespaces it sits in, a `private` declaration and
+   anything after `#exit` count as not declared, and a file whose scopes don't
    close as they open declares nothing: a name the reading can't place is
    left out rather than guessed. A declaration whose text in the file holds
-   `sorry` is recorded as stated without proof, and its article says so. Each
+   `sorry` (or `sorryAx`, `admit`, a `stop` tactic) is recorded as stated
+   without proof, and its article says so. Each
    article's Lean name links its line in the library's source at the pin.
 3. The **Formal Frontier data** workflow (`.github/workflows/ff-data.yml`)
    fetches each library at the commit its data file pins, as a blobless

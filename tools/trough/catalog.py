@@ -127,10 +127,11 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
-                   tauceti: tuple[str, str] | None = None, formal_frontier: int = 0) -> str:
+                   tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
-    *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* counts
-    the Formal Frontier libraries with a record."""
+    *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
+    commit each Formal Frontier library's record pins, by library id."""
+    formal_frontier = formal_frontier or {}
     lines = [
         "# Sources",
         "",
@@ -179,7 +180,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "",
             "## Formal Frontier",
             "",
-            f"- `data/ff/<name>.json`: for each of the {formal_frontier} Formal Frontier libraries, the facts, highlights "
+            f"- `data/ff/<name>.json`: for each of the {len(formal_frontier)} Formal Frontier libraries, the facts, highlights "
             "and main results of its formalization.yaml and the headline results of its README, read at the commit the "
             "file records, with the line and kind of each named declaration its file declares, from "
             "[FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source "
@@ -192,7 +193,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             lines.append(f"### {heading}")
             lines.append("")
             for library in members:
-                snapshot = f" at {library['head']}" if library.get("head") else ""
+                head = formal_frontier[library["id"]][:12] if library["id"] in formal_frontier else library.get("head")
+                snapshot = f" at {head}" if head else ""
                 lines.append(f"- [{library['name']}]({repo_url(library)}){snapshot}: {library.get('what', '')}")
             lines.append("")
     return "\n".join(lines).rstrip() + "\n"

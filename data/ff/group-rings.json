@@ -16,19 +16,20 @@
  },
  "review": {
   "status": "other",
-  "notes": "Agent mathematical review is revision-specific, not human review or source-author endorsement. Metadata and historical API signature hashes do not certify proofs, current native analysis, source coverage or rights."
+  "notes": "Agent mathematical review is revision-specific, not human review or source-author endorsement. Metadata and historical API signature hashes do not certify proofs, current native analysis, source coverage or rights.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
    {
     "method": "agent",
     "framework": "AI agents using Lean and Lake",
-    "tool_setup": "Agents wrote and adapted proofs, interfaces, clients and documentation using Lean v4.34.0-rc2, Lake and mathlib 83abb3e776bdefcbc447a1e44d0debe4010039e5."
+    "tool_setup": "Agents wrote and adapted proofs, interfaces, clients and documentation using Lean v4.34.0-rc2, Lake and mathlib 83abb3e776bdefcbc447a1e44d0debe4010039e5.",
+    "prompting_notes": "Supplied coordinates, coefficient/universe hypotheses, basis laws, Fourier sign, augmentation coefficient laws, single-term unit criteria and boundary clients guide the reusable interfaces."
    }
   ],
   "notes": "Code, proofs, documentation and metadata include AI-agent contributions; expression origins and contributor credit are recorded in CREDITS.md. No human mathematical review or source-author endorsement is claimed. AI generation does not establish correctness, originality, copyright ownership or redistribution clearance."
  },
- "scope": "Reusable Laurent-coordinate algebra equivalences and canonical free-abelian specialization coexist with generic-field additive-character results and algebraic finite-abelian right convolution. The Laurent abbreviation has semiring coefficients; equivalences require commutative semirings and supplied additive coordinates, not chosen coordinates. Character independence needs neither finiteness nor enough roots; character finiteness needs a finite group but no roots. The evaluation basis, convolution diagonalization and Nat.card rank formula require enough roots of unity. The monoid-algebra augmentation map needs only a semiring and a monoid in independent universes. Its kernel/left-span theorem needs a ring, but no commutativity, inverses, finiteness or nontriviality. The span can be restricted to a monoid generating set, or to an ordinary subgroup generating set for groups. The generic difference-membership interface works for any monoid homomorphism into any ring and any left ideal, without a group structure on the target. Its kernel also has a left coefficient-ring module basis indexed by nonidentity monoid elements; vectors are single m 1 - 1 and coordinates are coefficients at m. The generic engine needs Semiring S, AddCommGroup V and Module S V, with scalar, coefficient and pointed index types in independent universes. The augmentation/sumCoords and restricted-kernel bridges need only Semiring R. The single-term unit criterion assumes only a nontrivial semiring and an arbitrary monoid in independent universes; the coefficient-reflection direction does not require nontriviality. The basis embedding reflects units under the same nontriviality hypothesis, expressed as IsLocalHom. For any subgroup of a group, the subgroup-difference left ideal consists of exactly the elements with zero coset coefficient sums, without normality or nontriviality. Membership and order reflection, and the converse from two-sidedness to normality, require nontrivial coefficients; normality implies two-sidedness over every ring. The target uses the left coset type as a module index, not a quotient group or ring for nonnormal subgroups. A finitely generated subgroup gives a finitely generated left ideal over any ring. The converse requires Nontrivial R, but no normality. For the top subgroup this yields the same all-ring forward and nontrivial-ring equivalence between augmentation-kernel FG and Group.FG. These ideals are generated over R[G], not as coefficient-ring modules. Left-Noetherianity of a group algebra over a nontrivial ring forces finite generation of every subgroup, without normality or commutativity. For any semiring and monoid, surjective augmentation transports left-Noetherianity to the coefficient semiring via the generic stock theorem. Over every semiring, left-Noetherianity descends along any injective group-to-monoid homomorphism, hence to every subgroup algebra. No commutativity, nontriviality, additive inverses, finiteness, index, normality, cancellation or target-group assumption is added. The projection is additive and right-compatible, not asserted multiplicative. The generic semiring criterion fixes left ideals under extension-contraction and transports their ascending chain condition. No sufficient-condition converse is asserted. For a group over any semiring, equality is detected by one fixed coefficient after all right multiplications, and independently after all left multiplications. Both families detect zero, with no subtraction, nontriviality, commutativity or finite-group hypothesis. The identity coefficient is obtained by selecting index one, without replacing the canonical algebra or its product. For any possibly noncommutative or zero ring R, prime p with (p : R) = 0, and group G with IsPGroup p G and finite subgroup closure of every finite subset, each augmentation-zero element is nilpotent. The exponent may depend on the element; no uniform exponent or vanishing power of the whole kernel is asserted. The coefficient and group universes are independent; G need not be finite or abelian. Under these same hypotheses, Ring.jacobson R[G] is the augmentation preimage of Ring.jacobson R. Membership is determined by the coefficient sum; single g r is radical exactly when r is, with g=1 giving canonical coefficient inclusion. If Ring.jacobson R is zero, the radical is precisely the augmentation kernel. These radical statements require no additional finiteness, coefficient commutativity, nontriviality or CharP premise. The selected public interfaces below are not a census of private/generated declarations or client tests. The generated API page is a historical four-module/eight-Laurent snapshot with its original native-record binding, not a current whole-library analysis. The handwritten Fourier guide describes the current Fourier API.",
  "sources": [
   {
    "title": "The K-book: An Introduction to Algebraic K-theory",
@@ -59,7 +60,16 @@
    "rev": "616945c1c06d1655887100fe8a40e06a4a4a6d76"
   }
  ],
- "related": [],
+ "related": [
+  {
+   "name": "group-theory",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "general-linear-groups",
+   "relationship": "builds-on"
+  }
+ ],
  "highlights": [],
  "headlines": [
   {

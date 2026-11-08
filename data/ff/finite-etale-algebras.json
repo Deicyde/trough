@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "agent-reviewed",
-  "notes": "Mathematical code, public-module clients and later hypothesis generalization received independent non-author agent review. This is not human review, source-author endorsement or a source-coverage decision. Generated API documentation records historical source bindings, not proof certification."
+  "notes": "Mathematical code, public-module clients and later hypothesis generalization received independent non-author agent review. This is not human review, source-author endorsement or a source-coverage decision. Generated API documentation records historical source bindings, not proof certification.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "AI-assisted development under human project direction. No model identity, expenditure, elapsed-time total or human mathematical review is asserted."
  },
- "scope": "Reusable field-base commutative-algebra APIs and checked example clients; ambient algebras may be zero or nonreduced. Greatest finite etale subalgebras need a supplied uniform natural-number dimension bound. Spectrum dimension bounds need a separably closed base and finitely many source connected components. Finite-Galois and separable-closure descent require coefficientwise stability and their stated extension hypotheses; purely inseparable finite-etale reconstruction requires a separably closed larger field. Complete source formalization is not claimed.",
  "sources": [
   {
    "title": "Algebraic Groups",

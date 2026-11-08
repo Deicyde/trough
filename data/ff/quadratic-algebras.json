@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "agent-reviewed mathematical development",
-  "notes": "The stated scope does not assert complete source correspondence."
+  "notes": "The stated scope does not assert complete source correspondence.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "AI agents contributed mathematical proofs, module and client migration, and documentation."
  },
- "scope": "The canonical quadratic-algebra quotient bridge, scalar-extension presentations and total fraction rings allow arbitrary commutative rings. Over a real-closed field, irreducibility of the defining quadratic gives a nonzero square root of its negative discriminant. For any field R with Mathlib's IsRealClosed R, QuadraticAlgebra R (-1) 0 is algebraically closed and every irreducible polynomial over R has natural degree at most two, without a chosen ordering or a separately supplied closure or degree bound. This does not assert algebraic closedness for arbitrary quadratic algebras or commutative rings. Over any field with nonzero two, a supplied nonzero element whose square is the negative discriminant gives chosen coordinates, with no preferred sign. The discriminant-coordinate AdjoinRoot equivalence additionally requires a monic polynomial of natural degree two. Separately, an irreducible degree-two polynomial over any field with a supplied root in the canonical quadratic algebra has an evaluation equivalence without monicity; over a real-closed field, every irreducible nonlinear polynomial has such an equivalence with a chosen root and no witness from the caller. Over the reals, the canonical quadratic algebra has complex coordinates with its generator mapping to the positive imaginary unit. Any supplied complex root of an irreducible quadratic induces an evaluation equivalence on every polynomial class, and irreducible nonlinear polynomials admit a selected-root equivalence with no caller-supplied root or monicity. Neither construction presents higher-degree quotients or works over arbitrary commutative rings. Integral-closure criteria retain the stated domain, UFD, invertible-two or integer congruence hypotheses. Diagonal irreducibility and squarefreeness retain field and nonzero-two assumptions. The concrete minus-five development proves nonunique factorization, the ring-of-integers identification, discriminant minus twenty and class number two. No general classification of quadratic forms or number fields, or complete formalization of a mathematical source, is asserted.",
  "sources": [
   {
    "title": "Quadratic algebras, integral closure, diagonal forms and arithmetic of minus five",

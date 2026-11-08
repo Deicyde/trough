@@ -16,19 +16,20 @@
  },
  "review": {
   "status": "independent agent review; no human mathematical review claimed",
-  "notes": "Reviews and build evidence concern specific revisions. No complete Weibel source correspondence or source formalization is asserted."
+  "notes": "Reviews and build evidence concern specific revisions. No complete Weibel source correspondence or source formalization is asserted.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
    {
     "method": "agent",
     "framework": "AI agents using Lean and Lake",
-    "tool_setup": "Formal Frontier Agents developed Lean proofs and ordinary-import clients using mathlib APIs, compiler feedback and Lake. The clients exercise the public interfaces and degenerate examples; the historical API reference does not enumerate all present results."
+    "tool_setup": "Formal Frontier Agents developed Lean proofs and ordinary-import clients using mathlib APIs, compiler feedback and Lake. The clients exercise the public interfaces and degenerate examples; the historical API reference does not enumerate all present results.",
+    "prompting_notes": "AI-assisted formalization states hypotheses explicitly and uses kernel-checked Lean proofs."
    }
   ],
   "notes": "AI agents produced code, proofs and documentation with compiler feedback; no human mathematical review or source-author endorsement is asserted. AI generation alone does not establish originality, copyright ownership or third-party redistribution rights."
  },
- "scope": "Reusable finite general-linear-group mathematics over rings, including elementary and relative groups, block factorizations, congruence and quasi-regular quotients, additive trace, a Steinberg presentation, and dual-number kernels in Mathlib's GL/SL groups and ordered mixed commutators. Core rings may be noncommutative; the dual-number layer requires CommRing. The additional elementary algebra/topology layer covers unit-pivot diagonalization, product-one diagonals, local-ring elementary generation, elementary paths and neighborhoods in Mathlib's SL group, each with its stated hypotheses. Scalar unit-reflecting Ring-to-Semiring homomorphisms have quasi-regular canonical two-sided kernels without surjectivity; for surjective maps, this kernel condition is also sufficient for unit reflection. Source and target universes are independent, with no commutativity, local-ring, nontriviality or nil-kernel assumption. Stable general linear groups over semirings have finite representatives, injective stages, compatible lifts and coefficient maps. Over rings the stable elementary subgroup is the commutator subgroup, is intrinsically perfect, and has abelian quotient canonically equivalent to the abelianization. Over commutative rings the stable determinant and its quotient and abelianization factorizations have rank-one sections; elementary matrices are contained in the determinant kernel. The abelian stable elementary quotient is the product of its determinant kernel and the unit group, compatibly with coefficient maps. Over commutative local rings, invertible matrices admit two-sided elementary diagonalization, finite elementary membership is equivalent to determinant one in every rank, stable elementary equals the stable determinant kernel, and the quotient determinant identifies the elementary quotient with the coefficient units via the rank-one section. Fintype and DecidableEq hypotheses apply to matrix index types where stated. The results do not establish stable K1 or K2, a source-complete K-theory formalization, or source-passage coverage.",
  "sources": [
   {
    "title": "The K-book: An Introduction to Algebraic K-theory",

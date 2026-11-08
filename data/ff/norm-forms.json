@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "agent-reviewed",
-  "notes": "The coordinate and universal norm results, polynomial-system common-zero theorems, field-extension transfer and positive-tensor-power annihilation results have been independently reviewed. Their material hypotheses and limitations are described in the README and mathematical guides. This status does not claim complete coverage of a selected source or settle unrelated third-party rights."
+  "notes": "The coordinate and universal norm results, polynomial-system common-zero theorems, field-extension transfer and positive-tensor-power annihilation results have been independently reviewed. Their material hypotheses and limitations are described in the README and mathematical guides. This status does not claim complete coverage of a selected source or settle unrelated third-party rights.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": ""
  },
- "scope": "",
  "sources": [
   {
    "title": "Local Fields and Their Extensions",

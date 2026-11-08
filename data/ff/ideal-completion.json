@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "other: independent AI-agent review",
-  "notes": "Independent AI agents reviewed the mathematical core and module/example contributions."
+  "notes": "Independent AI agents reviewed the mathematical core and module/example contributions.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "The mathematical core, reference adapter and packaging were prepared by the Anchor AI agent; another AI contributor prepared the modules and examples. Independent AI agents reviewed the formalization. No human peer review or source-author endorsement is implied."
  },
- "scope": "For DistribLattice A and BoundedOrder A, reusable ideal completion with an injective principal bounded lattice homomorphism, finite-join witnesses for arbitrary suprema, frame structure, compact iff principal and compact generation. For Lattice A and BoundedOrder A, prime order ideals correspond to Boolean-valued bounded lattice homomorphisms. Does not include prime-ideal existence, spectra, Stone duality, universal extension or generic partial-order completion, and does not claim whole-source formalization.",
  "sources": [
   {
    "title": "Ideal completion of a bounded distributive lattice",

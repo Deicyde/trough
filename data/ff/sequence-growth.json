@@ -16,7 +16,10 @@
  },
  "review": {
   "status": "agent-reviewed",
-  "notes": "The two listed recurrence theorems and their documented hypotheses have been independently agent-reviewed; no complete coverage of an external source is asserted."
+  "notes": "The two listed recurrence theorems and their documented hypotheses have been independently agent-reviewed; no complete coverage of an external source is asserted.",
+  "reviewers": [
+   "Formal Frontier Agents"
+  ]
  },
  "automation": {
   "methods": [
@@ -28,7 +31,6 @@
   ],
   "notes": "Formal Frontier Agents developed the Lean proofs with AI assistance and reused Mathlib's arithmetic foundations."
  },
- "scope": "Two public natural-division growth theorems, plus ordinary-import client examples and boundary tests.",
  "sources": [
   {
    "title": "Natural-division lower-recurrence growth bounds (original formalization)",

@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "self-assessed",
-  "notes": "This metadata describes the library and does not self-certify independent acceptance of any new release, rights clearance, proof integrity or source coverage. Revision-specific review and release evidence is recorded separately."
+  "notes": "This metadata describes the library and does not self-certify independent acceptance of any new release, rights clearance, proof integrity or source coverage. Revision-specific review and release evidence is recorded separately.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": ""
  },
- "scope": "",
  "sources": [
   {
    "title": "Ringed-space restrictions, gluing and module change of rings",

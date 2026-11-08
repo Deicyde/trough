@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "Under development",
-  "notes": "The library covers relative preservation, fixed-base-arrow structured-over transport and fixed-base pairing, not the full B1/B2 package, converse, adjunction or creation of structured pullbacks."
+  "notes": "The library covers relative preservation, fixed-base-arrow structured-over transport and fixed-base pairing, not the full B1/B2 package, converse, adjunction or creation of structured pullbacks.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": ""
  },
- "scope": "Four modules: generic relative pullback-map preservation and the either-leg criterion for existing squares; structured-over transport with projection, membership, extensionality, uniqueness and comparison APIs; and a fixed-base pullback pairing with independent object properties, selected-pair existence and relative horizontal preservation; and pointwise density under slicing, with a dense-functor instance under the hypothesis that the original functor is dense. Density examples use Yoneda over two-point and empty constant presheaves. Other constructed examples use three- and four-object chains, nonempty finite subsets and proper finite-type maps, including local existence boundaries and an asymmetric nonisomorphic pairing.",
  "sources": [
   {
    "title": "Foundations of Rigid Geometry I",

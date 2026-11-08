@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "pending",
-  "notes": ""
+  "notes": "",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": "Automated assistance is not a substitute for proof-term validation, mathematical review or source-correspondence review."
  },
- "scope": "Nonzero separable reference and same-degree splitting comparison polynomials in one IsKrasner normed extension; real/complex variants, varying degrees and canonical splitting-field objects excluded. Also a quantitative Newton lifting theorem for integral polynomials over complete ultrametric normed fields, and resultant-controlled two-factor lifting with degree and leading-coefficient preservation and quantitative correction bounds. Generic value-monoid estimates give anchored and two-point polynomial scaling and derivative-value constancy over commutative rings, with injectivity only for valuations of zero support; no arbitrary-rank root-existence theorem is asserted. Newton lifting retains its complete ultrametric normed-field hypotheses.",
  "sources": [
   {
    "title": "Fixed-ambient-field root-generated-field stability",

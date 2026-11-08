@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "self-assessed",
-  "notes": ""
+  "notes": "",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": ""
  },
- "scope": "",
  "sources": [
   {
    "title": "The K-book: An Introduction to Algebraic K-theory",

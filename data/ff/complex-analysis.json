@@ -16,18 +16,19 @@
  },
  "review": {
   "status": "agent-reviewed",
-  "notes": ""
+  "notes": "",
+  "reviewers": []
  },
  "automation": {
   "methods": [
    {
     "method": "agent",
-    "framework": "Codex and Hive"
+    "framework": "Codex and Hive",
+    "prompting_notes": "Agent-assisted mathematical formalization using Mathlib."
    }
   ],
   "notes": ""
  },
- "scope": "",
  "sources": [
   {
    "title": "The classical Cauchy integral formula on polydiscs",

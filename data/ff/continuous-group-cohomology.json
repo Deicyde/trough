@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "other",
-  "notes": "Scoped mathematical and API contributions received independent review; formal journal review and complete source coverage are not claimed."
+  "notes": "Scoped mathematical and API contributions received independent review; formal journal review and complete source coverage are not claimed.",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -28,7 +29,6 @@
   ],
   "notes": "Proof development and documentation were AI-assisted using Codex CLI."
  },
- "scope": "Low-degree continuous cohomology, finite-index transfer, compact-group degree-one torsion, classwise finite-quotient lifts and positive-degree classwise torsion, and the all-degree native open-normal finite-stage colimit (including degree zero and arbitrary topological-module targets). The colimit assumes a compact topological group and discrete jointly continuous coefficients over a ring with a topology; generic algebraic boundaries and transition diagrams need fewer assumptions. Also includes finite-level Tate deflation, compact finite-bar homology, compact exceptional Tate stages and diagrams, coefficient naturality, norm rows, compact full-system limits and restricted universal-norm comparisons under the hypotheses of their respective declarations. The algebraic connecting sequence has a two-point integer coinduction/sign example with a nonzero degree-one connector and separate split degree-zero boundaries. Vanishing of middle-coefficient cohomology in adjacent degrees gives a connecting isomorphism on the underlying modules in every natural degree, including zero, with the existing connector as forward map; vanishing in either degree alone gives the corresponding mono or epi conclusion. No continuity or topological isomorphism of this general connector is asserted. There is no fixed-stage positive-degree injectivity, uniform refinement or bound, closed boundary range requirement for the native colimit, arbitrary-system inverse-limit exactness, general completed continuous Tate theory or source-coverage assertion. The initial invariant-coefficient sequence has a natural degree-zero cohomology comparison and is exact at its five internal underlying-module positions, with no surjectivity claim at the final degree-one term or continuity claim for the boundary. Generic invariant injection and left exactness live in TopRep with deprecated ContinuousCohomology aliases. The examples include a nonzero displayed inclusion, a nonsplit boundary and independent coefficient-level obstruction witnesses. For an arbitrary topological domain, continuous-map postcomposition preserves exactness of coefficient maps when the first map induces the source topology or when the middle space is discrete, and surjectivity when the target space is discrete. An exact coefficient row with a topological embedding as its first map induces an exact row of homogeneous invariant cochains in every natural degree, for any topological group, without coefficient discreteness or extra joint-action continuity. The discrete-middle injective case remains a corollary. This is underlying algebraic exactness, not topological strictness or exactness on cohomology; cochain surjectivity retains its locally compact group, discrete target and jointly continuous source hypotheses. Over any topological group, coinduction takes an injective, exact and surjective coefficient row with discrete middle and target to injective, exact and surjective underlying maps, not categorical TopRep exactness. See README.md and individual guides for precise boundaries.",
  "sources": [
   {
    "title": "Native-core continuous group cohomology (original Formal Frontier development)",
@@ -57,7 +57,20 @@
    "rev": "5f11ef67fb23396b63a644a3713391e2b9300546"
   }
  ],
- "related": [],
+ "related": [
+  {
+   "name": "finite-group-tate-cohomology",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "profinite-groups",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "group-theory",
+   "relationship": "builds-on"
+  }
+ ],
  "highlights": [],
  "headlines": [
   {

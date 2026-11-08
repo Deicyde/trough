@@ -16,7 +16,8 @@
  },
  "review": {
   "status": "agent-reviewed",
-  "notes": ""
+  "notes": "",
+  "reviewers": []
  },
  "automation": {
   "methods": [
@@ -27,7 +28,6 @@
   ],
   "notes": "AI agents contributed to the formalization and documentation."
  },
- "scope": "Metrizability from a T3 sigma-locally-finite open basis, the metrizable-space converse, and the locally finite closed metrizable neighbourhood-cover criterion without ambient separation assumptions. Supporting regular-basis and finite-support continuity results, with three coproduct clients.",
  "sources": [
   {
    "title": "On a necessary and sufficient condition of metrizability",
