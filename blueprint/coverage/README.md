@@ -14,6 +14,50 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Equational Theories | `DECOMPOSED` | [137 blueprint nodes in Lean](../roadmap/equational-theories/README.md), one article per node. |
 | Strong PNT (Math Inc) | `DECOMPOSED` | [615 blueprint nodes in Lean](../roadmap/strongpnt/README.md), one article per node. |
 | Tau Ceti | `DECOMPOSED` | [1,377 declarations its roadmaps name](../roadmap/tauceti/README.md), one article per declaration. |
+| Formal Frontier / Adic modules | `DECOMPOSED` | [1 headline result](../roadmap/formal-frontier/commutative-algebra/adic-modules/README.md) that names a declaration its files have, one article each. |
+| Formal Frontier / Algebraic direct limits | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/commutative-algebra/algebraic-direct-limits/README.md) quotes them. |
+| Formal Frontier / Algebraic groups | `DECOMPOSED` | [6 headline results](../roadmap/formal-frontier/algebraic-geometry/algebraic-groups/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Coherent modules | `DECOMPOSED` | [76 headline results](../roadmap/formal-frontier/commutative-algebra/coherent-modules/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Complex analysis | `DECOMPOSED` | [7 headline results](../roadmap/formal-frontier/analysis/complex-analysis/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Continuous group cohomology | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/homological-algebra-and-category-theory/continuous-group-cohomology/README.md) quotes them. |
+| Formal Frontier / Dedekind ideal arithmetic | `DECOMPOSED` | [5 headline results](../roadmap/formal-frontier/number-theory/dedekind-ideal-arithmetic/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Finite étale algebras | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/algebraic-geometry/finite-etale-algebras/README.md) quotes them. |
+| Formal Frontier / Finite-group Tate cohomology | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/homological-algebra-and-category-theory/finite-group-tate-cohomology/README.md) quotes them. |
+| Formal Frontier / Formal power series | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/commutative-algebra/formal-power-series/README.md) quotes them. |
+| Formal Frontier / Fundamental groupoids | `DECOMPOSED` | [6 headline results](../roadmap/formal-frontier/topology/fundamental-groupoids/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / General linear groups | `DECOMPOSED` | [6 headline results](../roadmap/formal-frontier/group-theory/general-linear-groups/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Graded rings | `DECOMPOSED` | [5 headline results](../roadmap/formal-frontier/commutative-algebra/graded-rings/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Group rings | `DECOMPOSED` | [1 headline result](../roadmap/formal-frontier/ring-theory/group-rings/README.md) that names a declaration its files have, one article each. |
+| Formal Frontier / Group theory | `DECOMPOSED` | [2 headline results](../roadmap/formal-frontier/group-theory/group-theory/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Homological algebra | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/homological-algebra-and-category-theory/homological-algebra/README.md) quotes them. |
+| Formal Frontier / Ideal completion | `DECOMPOSED` | [2 headline results](../roadmap/formal-frontier/topology/ideal-completion/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Integral closure | `DECOMPOSED` | [7 headline results](../roadmap/formal-frontier/commutative-algebra/integral-closure/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Iwasawa modules | `DECOMPOSED` | [1 headline result](../roadmap/formal-frontier/number-theory/iwasawa-modules/README.md) that names a declaration its files have, one article each. |
+| Formal Frontier / Metrization | `DECOMPOSED` | [3 headline results](../roadmap/formal-frontier/topology/metrization/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Minimal primes | `DECOMPOSED` | [30 headline results](../roadmap/formal-frontier/commutative-algebra/minimal-primes/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Morphism properties | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/homological-algebra-and-category-theory/morphism-properties/README.md) quotes them. |
+| Formal Frontier / Multivariate polynomials | `DECOMPOSED` | [55 headline results](../roadmap/formal-frontier/commutative-algebra/multivariate-polynomials/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Norm forms | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/number-theory/norm-forms/README.md) quotes them. |
+| Formal Frontier / Polynomial root stability | `DECOMPOSED` | [4 headline results](../roadmap/formal-frontier/number-theory/polynomial-root-stability/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Profinite groups | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/group-theory/profinite-groups/README.md) quotes them. |
+| Formal Frontier / Projective modules | `DECOMPOSED` | [7 headline results](../roadmap/formal-frontier/ring-theory/projective-modules/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Projective space | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/algebraic-geometry/projective-space/README.md) quotes them. |
+| Formal Frontier / Quadratic algebras | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/number-theory/quadratic-algebras/README.md) quotes them. |
+| Formal Frontier / Restricted-product duality | `DECOMPOSED` | [1 headline result](../roadmap/formal-frontier/topology/restricted-product-duality/README.md) that names a declaration its files have, one article each. |
+| Formal Frontier / Ringed spaces | `DECOMPOSED` | [2 headline results](../roadmap/formal-frontier/algebraic-geometry/ringed-spaces/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Scheme properties | `DECOMPOSED` | [1 headline result](../roadmap/formal-frontier/algebraic-geometry/scheme-properties/README.md) that names a declaration its files have, one article each. |
+| Formal Frontier / Sequence growth | `DECOMPOSED` | [2 headline results](../roadmap/formal-frontier/analysis/sequence-growth/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Sheaf cohomology | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/homological-algebra-and-category-theory/sheaf-cohomology/README.md) quotes them. |
+| Formal Frontier / Simplicial objects | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/homological-algebra-and-category-theory/simplicial-objects/README.md) quotes them. |
+| Formal Frontier / Simplicial rings | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/homological-algebra-and-category-theory/simplicial-rings/README.md) quotes them. |
+| Formal Frontier / Smooth regularity | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/commutative-algebra/smooth-regularity/README.md) quotes them. |
+| Formal Frontier / Spectral Stone duality | `DECOMPOSED` | [2 headline results](../roadmap/formal-frontier/topology/spectral-stone-duality/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Sphere topology | `DECOMPOSED` | [22 headline results](../roadmap/formal-frontier/topology/sphere-topology/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Stable range | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/ring-theory/stable-range/README.md) quotes them. |
+| Formal Frontier / Supernatural numbers | `OUT` | No headline result names a declaration its files have at the pinned commit; [its page](../roadmap/formal-frontier/group-theory/supernatural-numbers/README.md) quotes them. |
+| Formal Frontier / Toric ideals | `DECOMPOSED` | [3 headline results](../roadmap/formal-frontier/commutative-algebra/toric-ideals/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Valuation integers | `DECOMPOSED` | [5 headline results](../roadmap/formal-frontier/number-theory/valuation-integers/README.md) that name a declaration its files have, one article each. |
+| Formal Frontier / Vector bundles | `DECOMPOSED` | [5 headline results](../roadmap/formal-frontier/topology/vector-bundles/README.md) that name a declaration its files have, one article each. |
 | ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>. |
 | Formal Conjectures | `DEFERRED` | Planned map, by problem: One article per problem file (about 2,000), grouped by source; most are stated without a proof. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |
@@ -24,47 +68,3 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | OpenAI Math | `DEFERRED` | Planned map, by result family: One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results. |
 | Classification of Finite Simple Groups (Axiom) | `DEFERRED` | Planned map, by milestone: Milestones from the in-Lean CFSG/Blueprint catalog and the formalization.yaml main results. |
 | Lean Pool | `DEFERRED` | Planned map, by project: One article per project in LeanPool/projects (317), with its main_results as statements. |
-| adic-modules | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| algebraic-direct-limits | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| algebraic-groups | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (323 main results) and docs/HeadlineResults.md. |
-| coherent-modules | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| complex-analysis | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| continuous-group-cohomology | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (205 main results) and docs/HeadlineResults.md. |
-| dedekind-ideal-arithmetic | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (6 main results) and docs/HeadlineResults.md. |
-| finite-etale-algebras | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| finite-group-tate-cohomology | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (4 main results) and docs/HeadlineResults.md. |
-| formal-power-series | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (96 main results) and docs/HeadlineResults.md. |
-| fundamental-groupoids | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| general-linear-groups | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (214 main results) and docs/HeadlineResults.md. |
-| graded-rings | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (61 main results) and docs/HeadlineResults.md. |
-| group-rings | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (118 main results) and docs/HeadlineResults.md. |
-| group-theory | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (203 main results) and docs/HeadlineResults.md. |
-| homological-algebra | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (219 main results) and docs/HeadlineResults.md. |
-| ideal-completion | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| integral-closure | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (8 main results) and docs/HeadlineResults.md. |
-| iwasawa-modules | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (4 main results) and docs/HeadlineResults.md. |
-| metrization | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (3 main results) and docs/HeadlineResults.md. |
-| minimal-primes | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (16 main results) and docs/HeadlineResults.md. |
-| morphism-properties | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (6 main results) and docs/HeadlineResults.md. |
-| multivariate-polynomials | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (49 main results) and docs/HeadlineResults.md. |
-| norm-forms | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| polynomial-root-stability | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (9 main results) and docs/HeadlineResults.md. |
-| profinite-groups | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| projective-modules | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (210 main results) and docs/HeadlineResults.md. |
-| projective-space | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (26 main results) and docs/HeadlineResults.md. |
-| quadratic-algebras | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (19 main results) and docs/HeadlineResults.md. |
-| restricted-product-duality | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| ringed-spaces | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| scheme-properties | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (147 main results) and docs/HeadlineResults.md. |
-| sequence-growth | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (2 main results) and docs/HeadlineResults.md. |
-| sheaf-cohomology | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (10 main results) and docs/HeadlineResults.md. |
-| simplicial-objects | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| simplicial-rings | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| smooth-regularity | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| spectral-stone-duality | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| sphere-topology | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (70 main results) and docs/HeadlineResults.md. |
-| stable-range | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (54 main results) and docs/HeadlineResults.md. |
-| supernatural-numbers | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| toric-ideals | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| valuation-integers | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml and docs/HeadlineResults.md. |
-| vector-bundles | `DEFERRED` | Planned map, by headline result: Headline results from formalization.yaml (14 main results) and docs/HeadlineResults.md. |
