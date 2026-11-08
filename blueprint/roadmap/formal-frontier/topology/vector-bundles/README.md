@@ -254,7 +254,8 @@ from supplied injective algebraic fiber maps whose local frames are parameter-co
 each fixed vector. The normed inner-product target need not be complete; local ranks may vary.
 The inverse extends to a jointly continuous fiberwise linear retraction on the product.
 
-**Finite Euclidean embeddings from weighted local coordinates.** For a continuous map `p : T → X` over `K = ℝ` or `ℂ`, finitely many normed
+**Finite Euclidean embeddings from weighted local coordinates.**
+For a continuous map `p : T → X` over `K = ℝ` or `ℂ`, finitely many normed
 finite-dimensional local models for the original equality-subtype fibre
 modules give a closed embedding `T → X × E` into a finite Euclidean product.
 The supplied domains need not be open: their forward realizations and exact

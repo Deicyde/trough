@@ -32,7 +32,7 @@ No other Formal Frontier library.
 
 *Quoted from the headline results in [README.md](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/README.md#headline-results) of [FormalFrontier/simplicial-rings](https://github.com/FormalFrontier/simplicial-rings) at commit [72878574](https://github.com/FormalFrontier/simplicial-rings/tree/728785746bd0ddcca62c91cf3f50507ec71107ce), Apache-2.0.*
 
-**`PolyRing R n`.** Has `n` central
+[`PolyRing R n`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) has `n` central
 indeterminates over any `Ring R`; homogeneous
 [`coordinate`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) values sum to one.
 [`substitute`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) evaluates free
@@ -40,7 +40,7 @@ generators at **whole-target-center** elements (a sufficient, not necessarily
 minimal, condition); [`hom_ext`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean)
 determines ring maps by coefficients and generators.
 
-**`simplexFunctor`.** Sends a ring
+[`simplexFunctor`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) sends a ring
 to an actual simplicial ring, with contravariant
 [`ordinalMap`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) for every ordinal
 arrow, including empty fibres. Polynomial
@@ -48,7 +48,7 @@ arrow, including empty fibres. Polynomial
 by [`evalAtZero`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex.lean) is strictly
 the identity on the unextended simplex; both maps are coefficient-natural.
 
-**`contraction`.** Is a
+[`contraction`](https://github.com/FormalFrontier/simplicial-rings/blob/728785746bd0ddcca62c91cf3f50507ec71107ce/SimplicialRings/CentralPolynomialSimplex/Homotopy.lean) is a
 native seven-identity `SimplicialObject.Homotopy` from evaluation-then-inclusion
 to the identity on the polynomially extended simplex. Its first face is the
 **identity** endpoint and its last face is **evaluation-then-inclusion**;

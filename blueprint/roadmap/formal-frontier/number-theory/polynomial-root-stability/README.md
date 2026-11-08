@@ -70,7 +70,9 @@ normalization to obtain the stated local-constancy interfaces. See the
 - [Polynomial root scaling](polynomial-root-scaling.md)
 - [Polynomial scaling in valuation balls](polynomial-scaling-in-valuation-balls.md)
 
-**Local polynomial norm scaling.** Let `R` be an ultrametric commutative seminormed ring with multiplicative
+### Local polynomial norm scaling
+
+Let `R` be an ultrametric commutative seminormed ring with multiplicative
 seminorm. If `f : R[X]` satisfies `∀ n, ‖f.coeff n‖ ≤ M`, `‖a‖ ≤ 1`, and
 `M * ‖b - a‖ < ‖f.derivative.eval a‖`, then
 
@@ -100,7 +102,9 @@ give injectivity on this strict ball. The theorem
 [`Polynomial.injOn_eval_of_mul_norm_sub_lt_norm_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/RootUniqueness.lean)
 expresses this as `Set.InjOn`; the anchor need not be a root.
 
-**Root existence and bounds under coefficient perturbation.** For an ultrametric commutative seminormed ring with multiplicative seminorm, assume
+### Root existence and bounds under coefficient perturbation
+
+For an ultrametric commutative seminormed ring with multiplicative seminorm, assume
 `∀ n, ‖f.coeff n‖ ≤ M`, `‖a‖ ≤ 1`, `f.eval x = 0`, and `g.eval y = 0`.
 If `M * ‖x - a‖ < ‖f.derivative.eval a‖` and `M * ‖y - a‖ < ‖f.derivative.eval a‖`,
 and `∀ n, ‖f.coeff n - g.coeff n‖ ≤ ε`, then `‖f.derivative.eval a‖ * ‖x - y‖ ≤ ε`.
@@ -134,7 +138,9 @@ See [coefficient perturbation](https://github.com/FormalFrontier/polynomial-root
 
 - [Root uniqueness in an ultrametric normed ring](root-uniqueness-in-an-ultrametric-normed-ring.md)
 
-**Quantitative Newton lifting.** For a complete ultrametric normed field `K`, a polynomial `f : K[X]` with
+### Quantitative Newton lifting
+
+For a complete ultrametric normed field `K`, a polynomial `f : K[X]` with
 `∀ n, ‖f.coeff n‖ ≤ 1`, and `‖a₀‖ ≤ 1`, the hypothesis
 `‖f.eval a₀‖ < ‖f.derivative.eval a₀‖²` gives an integral root at exact distance
 `‖f.eval a₀‖ / ‖f.derivative.eval a₀‖`, with derivative-norm stability and

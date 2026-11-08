@@ -36,7 +36,9 @@ The sources its formalization.yaml names, with their relationship to it.
 
 *Quoted from the headline results in [README.md](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/README.md#headline-results) of [FormalFrontier/formal-power-series](https://github.com/FormalFrontier/formal-power-series) at commit [29bdab8c](https://github.com/FormalFrontier/formal-power-series/tree/29bdab8c1f57472100a579c97a589effaea11987), Apache-2.0.*
 
-**Weighted unit derivative.** Over an arbitrary commutative ring `R`, for a native unit
+### Weighted unit derivative
+
+Over an arbitrary commutative ring `R`, for a native unit
 `f : (PowerSeries R)ˣ`, `negXLogDeriv f = -X * f' * f⁻¹`, weighted by
 **negative `X`**. Products become sums, inverses become negatives and integer
 powers become integer multiples, naturally under coefficient-ring homomorphisms.
@@ -51,7 +53,9 @@ units can do so. No formal logarithm, lambda/Witt structure, splitting extension
 or Adams operation is asserted. See the [full formulas and limitations](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/RESULTS.md#weighted-unit-derivative)
 and [source](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/UnitLogDerivative.lean).
 
-**Rational Artin–Hasse exponential.** The rational formal construction is defined for every natural `p` and has
+### Rational Artin–Hasse exponential
+
+The rational formal construction is defined for every natural `p` and has
 constant and linear coefficients one. For `2 ≤ p` (composite `p` allowed), it is
 `exp (∑ i ≥ 0, X^(p^i) / p^i)`; the coefficient recurrence together with
 `a_0 = 1` determines it uniquely. The recurrence fails at `p = 1`, degree two.

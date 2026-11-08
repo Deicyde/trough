@@ -47,7 +47,8 @@ The sources its formalization.yaml names, with their relationship to it.
 
 *Quoted from the headline results in [README.md](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/README.md#headline-results) of [FormalFrontier/integral-closure](https://github.com/FormalFrontier/integral-closure) at commit [8f0b15a5](https://github.com/FormalFrontier/integral-closure/tree/8f0b15a513bbb22d6b51988f2b424cc407694390), Apache-2.0.*
 
-**Local normal integral extensions of valuation domains are valuation domains.** For commutative domains `R` and `S` in independent universes, an integral
+**Local normal integral extensions of valuation domains are valuation domains.**
+For commutative domains `R` and `S` in independent universes, an integral
 homomorphism `f : R →+* S` from a valuation domain to a local integrally
 closed domain gives `ValuationRing S` through
 `RingHom.IsIntegral.isValuationRing_of_isLocalRing`.

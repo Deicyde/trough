@@ -6,7 +6,9 @@ navigation: transparent
 
 *Quoted from the headline results in [README.md](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/README.md#headline-results) of [FormalFrontier/minimal-primes](https://github.com/FormalFrontier/minimal-primes) at commit [45952e34](https://github.com/FormalFrontier/minimal-primes/tree/45952e34e2da84045925cdfa45f0514356a2a608), Apache-2.0.*
 
-**Uniform finite generators of dependent reduced products.** The [finite-generation module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Product/Finite.lean)
+### Uniform finite generators of dependent reduced products
+
+The [finite-generation module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Product/Finite.lean)
 proves two finite-generation criteria.
 For the same given semiring, additive and module records, an arbitrary filter `F`,
 a naturally finite index type `J` and raw vectors `g : J → (∀ i, M i)`,
@@ -33,7 +35,9 @@ universes are independent. Empty `J`, `n = 0`, empty index types, bottom filters
 and zero semirings are included, with no properness or nontriviality hypothesis.
 These criteria add no new functional data or global instances.
 
-**Uniform finite presentations of dependent reduced products.** The [finite-presentation module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Product/FinitePresentation.lean)
+### Uniform finite presentations of dependent reduced products
+
+The [finite-presentation module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Product/FinitePresentation.lean)
 proves the uniform generators-and-relations criterion. For arbitrary `F`,
 independently universed ring families `R i`, and given additive
 commutative monoids `M i` with their given `R i`-module actions,
@@ -73,7 +77,9 @@ presentation by a finitely generated congruence; no such semiring claim is made.
 - [Reduced filter germs](reduced-filter-germs.md)
 - [Nontrivial dependent reduced products](../../nontrivial-dependent-reduced-products.md)
 
-**Reduced ranges of iterated Frobenius.** For a commutative semiring of exponential characteristic `p`, the original image
+### Reduced ranges of iterated Frobenius
+
+For a commutative semiring of exponential characteristic `p`, the original image
 of the `n`th Frobenius iterate is reduced exactly when every nilpotent element
 has zero `p ^ n`th power. If the semiring is Noetherian and `p` is prime,
 all sufficiently high iterates have reduced images. The
@@ -83,7 +89,9 @@ No field, perfectness, or reducedness of the ambient semiring is assumed.
 
 - [No zero divisors in ultrafilter products](no-zero-divisors-in-ultrafilter-products.md)
 
-**Reduced dependent filter products.** For an arbitrary filter and an independently universed dependent family of
+### Reduced dependent filter products
+
+For an arbitrary filter and an independently universed dependent family of
 monoids with zero, the filter product is reduced exactly when its reduced
 fibres form a member of the filter. The
 [criterion](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Product/Reduced.lean) uses a uniform
@@ -108,7 +116,9 @@ still need only zero and natural-number powers. The
 a nonzero nilpotent quotient element on an infinite index type with varying
 nonadditive fibres.
 
-**Regular elements of dependent filter products.** For an arbitrary filter `D` and an independently universed family `K` with only
+### Regular elements of dependent filter products
+
+For an arbitrary filter `D` and an independently universed family `K` with only
 fibrewise multiplication, a total section represents a left-regular, right-regular,
 or regular element of `D.Product K` exactly when its values have that property
 eventually. The [criteria](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Product/Regular.lean) require
@@ -124,7 +134,8 @@ separates left and right regularity in noncommutative magmas with no identity.
 The following interfaces are implemented in this library. See the [reader guide](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/docs/Guide.md)
 and the linked module documentation for statements, examples, proof ideas and Mathlib dependencies.
 
-**All ideals of products and standard filters.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PiFilter.lean)). For a dependent family
+**All ideals of products and standard filters**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PiFilter.lean)). For a dependent family
 `K : ι → Type v` of division semirings, `Ideal.piOrderIsoFilter K` identifies
 `Ideal (Π i, K i)` with the order dual of `Filter ι`; in particular it applies
 to semifields. Its characteristic law is
@@ -143,14 +154,16 @@ of its complement unless `D` is an ultrafilter. Zero fibres and improper
 filters are allowed.
 ([examples](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimesTest/RingTheory/Ideal/PiFilter.lean)).
 
-**Ultrafilter coordinate-locus criteria.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PrimePiUltrafilter.lean)). For dependent
+**Ultrafilter coordinate-locus criteria**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PrimePiUltrafilter.lean)). For dependent
 semirings `R i` and left ideals `I i`, `Ultrafilter.isPrime_pi_sup_piIdeal_iff`
 and `Ultrafilter.isMaximal_pi_sup_piIdeal_iff` characterize the sum
 `Ideal.pi I ⊔ (U : Filter ι).piIdeal R` as prime or maximal exactly when the
 respective coordinate locus belongs to `U`. The criteria need no commutativity,
 nontrivial-factor or subtractivity assumption.
 
-**Prime ideals of arbitrary products of semifields.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PrimePiUltrafilter.lean)). For any dependent
+**Prime ideals of arbitrary products of semifields**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PrimePiUltrafilter.lean)). For any dependent
 family `K : ι → Type v` of semifields, `PrimeSpectrum.piEquivUltrafilter K`
 identifies every prime ideal of `Π i, K i` with an ultrafilter on `ι`.
 A function belongs to the ideal for `U` exactly when `{i | f i = 0} ∈ U`.
@@ -172,7 +185,8 @@ product homomorphism corresponds to `Ultrafilter.map g`. The API includes the
 inverse square, index precomposition and same-index family-map specializations;
 the index and fibre universes are independent, with no injectivity or finiteness assumption.
 
-**Residue fields of dependent products of fields.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/ResidueFieldPiUltrafilter.lean)). For a
+**Residue fields of dependent products of fields**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/ResidueFieldPiUltrafilter.lean)). For a
 dependent family `K : ι → Type v` of fields and `U : Ultrafilter ι`,
 `Ultrafilter.residueFieldProductEquiv K U` canonically identifies
 `(U.piIdeal K).ResidueField` with the existing `(U : Filter ι).Product K`.
@@ -188,7 +202,8 @@ field instance on the Product, is required. The
 coordinate kernel and a dependent `ZMod 2`/`ZMod 3` family with distinct residue
 characteristics and opposite-characteristic nonzero controls.
 
-**Minimal primes of finite products.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/MinimalPrimePi.lean)). For commutative
+**Minimal primes of finite products**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/MinimalPrimePi.lean)). For commutative
 semirings `R i` and a finite index type, `Ideal.mem_minimalPrimes_pi_iff`
 identifies minimal primes over any ideal of the product with unique labelled coordinate
 minimal primes. `Ideal.minimalPrimesPiEquiv` gives the corresponding equivalence
@@ -199,7 +214,8 @@ infinite index types; it does not classify all primes of an infinite product.
 No nonempty-index, nontrivial-factor, proper-base-ideal or ring assumptions
 are needed. Equal factors retain distinct coordinate labels.
 
-**Minimal primes and radical membership detected by localization.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/MinimalPrimeLocalization.lean)).
+**Minimal primes and radical membership detected by localization**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/MinimalPrimeLocalization.lean)).
 In a commutative semiring `R`, an element belongs to `I.radical` exactly when its
 canonical image belongs to the radical of the extension of `I` in
 `Localization.AtPrime q` for every minimal prime `q` over `I`
@@ -211,11 +227,12 @@ and `[IsLocalization.AtPrime A q]`, any ideal `I` also satisfies
 `(I.map (algebraMap R A)).radical = q.map (algebraMap R A)` iff `q ∈ I.minimalPrimes`.
 No separate `I ≤ q` is needed. Mathlib supplies the implication from minimality.
 
-**Multipliers outside a minimal prime.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/MinimalPrimeMultipliers.lean)).
+**Multipliers outside a minimal prime** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/MinimalPrimeMultipliers.lean)).
 For ideals `I`, `q` in a commutative semiring, `q ∈ I.minimalPrimes` and `x ∈ q`
 imply `∃ s ∉ q, s * x ∈ I.radical`. Over the zero ideal, the product is nilpotent.
 
-**Ideal contraction and positive powers in the image.** ([ideals](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PositivePowerRange.lean),
+**Ideal contraction and positive powers in the image**
+([ideals](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PositivePowerRange.lean),
 [prime spectra](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Spectrum/Prime/PositivePowerRange.lean)).
 For a homomorphism from a semiring `R` to a commutative semiring `S`, suppose
 every `x : S` has some positive power in `Set.range f`. Then
@@ -240,14 +257,15 @@ independent universes. The extension need not be algebraic, and `A` need not
 be a domain, reduced or nontrivial. Dimension takes values in `WithBot ℕ∞`;
 the zero algebra has dimension `⊥`.
 
-**Dimension under integral maps.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/Integral.lean)).
+**Dimension under integral maps** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/Integral.lean)).
 For integral maps `f : R →+* S` of commutative rings, target Krull dimension is
 at most source dimension, with equality if `f` is injective. Without injectivity,
 `ringKrullDim S = ringKrullDim (R ⧸ RingHom.ker f)`. A faithful integral algebra
 has equal source and target dimensions using its given algebra structure.
 Dimensions lie in `WithBot ℕ∞`, including zero rings and infinite dimension.
 
-**Closed-locus dimension bound for ideals containing a non-zero-divisor.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/Basic.lean)). For a commutative
+**Closed-locus dimension bound for ideals containing a non-zero-divisor**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/Basic.lean)). For a commutative
 semiring `R`, `PrimeSpectrum.krullDim_zeroLocus_add_one_le_of_exists_mem_nonZeroDivisors`
 states that `Order.krullDim (PrimeSpectrum.zeroLocus (J : Set R)) + 1 ≤ ringKrullDim R`
 whenever `∃ a ∈ J, a ∈ nonZeroDivisors R`. Addition is in `WithBot ℕ∞`, so empty loci
@@ -261,13 +279,15 @@ For commutative rings, Mathlib's quotient-spectrum order isomorphism identifies
 the same locus with the spectrum of `R ⧸ J`; arbitrary semiring ideal quotients
 are not asserted.
 
-**Dimension from irreducible generators of prime ideals.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/Basic.lean)). In any commutative
+**Dimension from irreducible generators of prime ideals**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/Basic.lean)). In any commutative
 semiring, if every nonzero nonmaximal prime ideal is generated by an irreducible
 element, `Ring.krullDimLE_two_of_forall_exists_irreducible_span_eq` gives
 `Ring.KrullDimLE 2 R`. No domain, unique factorization, ring or Noetherian
 assumption is required, and irreducible elements need not be prime.
 
-**Height and dimension of pointwise products.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)). In arbitrary preorders,
+**Height and dimension of pointwise products**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)). In arbitrary preorders,
 `Order.height_pi` and `Order.coheight_pi` express the ranks of a section of a
 finite dependent product as sums of its coordinate ranks in `ℕ∞`, including
 infinite ranks and rank zero for an empty index. For arbitrary dependent products,
@@ -285,7 +305,8 @@ product has dimension zero. No nonemptiness, finite-dimension or antisymmetry
 hypothesis is required. These concern canonical pointwise orders, not lexicographic
 or topological products.
 
-**All-dimension bounds after deleting boundary points.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)). For any preorder `α : Type u`,
+**All-dimension bounds after deleting boundary points**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)). For any preorder `α : Type u`,
 `Order.krullDim_not_isMin_add_one_le` states
 `Order.krullDim {x : α // ¬ IsMin x} + 1 ≤ Order.krullDim α`.
 The dual `Order.krullDim_not_isMax_add_one_le` gives the same bound for the
@@ -300,7 +321,8 @@ sharp on two- and three-point chains. Empty types and antichains show why these
 are not unconditional equalities; infinite dimension precludes a strict-drop
 assertion. This generic order API is a Mathlib-upstream candidate.
 
-**Finite dimension bounds after deleting boundary points.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)). For any preorder `α : Type u`
+**Finite dimension bounds after deleting boundary points**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)). For any preorder `α : Type u`
 and `n : ℕ`, `Order.krullDimLE_succ_iff_not_isMin` states
 `Order.KrullDimLE (n + 1) α ↔ Order.KrullDimLE n {x : α // ¬ IsMin x}`.
 The dual theorem `Order.krullDimLE_succ_iff_not_isMax` gives the same equivalence
@@ -313,7 +335,8 @@ inherited order. No antisymmetry, inhabitation, bottom, top, finite-carrier or
 chain-condition assumption is needed. These are finite-bound equivalences,
 not unconditional exact dimension subtraction; empty types and antichains are included.
 
-**Comparison in dimension at most two.** ([order](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean),
+**Comparison in dimension at most two**
+([order](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean),
 [prime ideals](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/Basic.lean)). In a preorder
 with `[Order.KrullDimLE 2 α]`, if `x ≤ y`, `¬ IsMin x` and `¬ IsMax y`, then
 `y ≤ x`; equality needs antisymmetry. In a commutative semiring with
@@ -321,21 +344,22 @@ with `[Order.KrullDimLE 2 α]`, if `x ≤ y`, `¬ IsMin x` and `¬ IsMax y`, the
 `a ∈ nonZeroDivisors R` equals `Ideal.span {a}`. No unique factorization, global
 no-zero-divisors, ring or Noetherian hypothesis is required.
 
-**Prime ideals in dimension-two unique factorization semirings.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/UniqueFactorizationDomain.lean)).
+**Prime ideals in dimension-two unique factorization semirings**
+([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/KrullDimension/UniqueFactorizationDomain.lean)).
 In a commutative semiring with `[UniqueFactorizationMonoid R]` and
 `[Ring.KrullDimLE 2 R]`, every nonzero nonmaximal prime ideal is the span of
 an irreducible element. Every prime is therefore zero, irreducible-principal,
 or maximal; the alternatives may overlap. No ring, Noetherian, normalization
 or global nontriviality hypothesis is required.
 
-**When a prime localization is a field.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Localization/AtPrime.lean)).
+**When a prime localization is a field** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Localization/AtPrime.lean)).
 For commutative semirings `R`, `A` with their given `R`-algebra structure,
 any prime `q` and `[IsLocalization.AtPrime A q]` satisfy
 `IsField A ↔ q ∈ minimalPrimes R ∧ IsReduced A`.
 Reducedness of `R` gives the reduced-base corollary: arbitrary localization
 preserves reducedness. For semirings `IsField` includes semifields.
 
-**Principal prime witnesses and contraction.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Principal.lean)).
+**Principal prime witnesses and contraction** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Principal.lean)).
 In a commutative semiring, a proper principal ideal avoids at least one of two
 relatively prime (`IsRelPrime`) elements.
 In a commutative semiring with unique factorization, every nonunit, including
@@ -343,25 +367,25 @@ zero, belongs to a principal prime ideal with this disjunctive avoidance.
 No normalization or nonzero assumption is needed. Contraction from any semiring
 gives a prime two-sided source ideal, not necessarily a principal ideal.
 
-**Minimal primes of a principal ideal.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Principal.lean)).
+**Minimal primes of a principal ideal** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Principal.lean)).
 For `[CommSemiring R]`, `[UniqueFactorizationMonoid R]`, the caller's
 `[NormalizationMonoid R]` and `f ≠ 0`, the minimal primes over `(f)` are exactly
 the principal ideals generated by normalized irreducible factor values.
 Their factor equivalence sends `p` to `span {p}`; multiplicities do not add primes.
 
-**Irreducible components of a principal zero locus.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/IrreducibleComponents.lean)).
+**Irreducible components of a principal zero locus** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/IrreducibleComponents.lean)).
 Under those same semiring, factorization, normalization and nonzero hypotheses,
 the factor values are equivalent to the **order-dual subtype** of irreducible
 components of the subspace `V((f))` in `PrimeSpectrum R`. This is an `Equiv`,
 not an order-equivalence or homeomorphism, and does not classify arbitrary ideals.
 
-**Associated primes of a principal quotient.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/AssociatedPrincipal.lean)).
+**Associated primes of a principal quotient** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/AssociatedPrincipal.lean)).
 For every `f` in a commutative ring with unique factorization,
 `associatedPrimes R (R ⧸ Ideal.span {f}) = (Ideal.span {f}).minimalPrimes`,
 using base-ring `R` scalars. No normalization, nonzero or Noetherian hypothesis
 is needed; the zero ring is included.
 
-**Scalar restriction and quotient points.** ([scalar restriction](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/AssociatedRestrictScalars.lean),
+**Scalar restriction and quotient points** ([scalar restriction](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/AssociatedRestrictScalars.lean),
 [quotients](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/AssociatedPrincipal.lean)). Colon ideals of arbitrary
 submodules contract under compatible algebra/module towers with commutative
 source and semiring target. Associated primes of a compatible module contract
@@ -371,13 +395,14 @@ of a commutative ring with unique factorization, quotient-spectrum associated
 points and exact singleton-annihilator criteria correspond by ideal comap to
 minimal primes over the generator.
 
-**Height of a principal prime.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PrincipalPrimeHeight.lean)).
+**Height of a principal prime** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/PrincipalPrimeHeight.lean)).
 In a commutative ring with `[WfDvdMonoid R]` and `Prime p`, `span {p}` has height
 at most one. Its height is one if `p ∈ nonZeroDivisors R`, in particular in a domain.
 This uses well-founded strict divisibility, not a Noetherian or UFM assumption,
 and concerns prime generators, not arbitrary principal ideals.
 
-**Descending prime chains at finite initial height.** ([order](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/FiniteHeightChain.lean), [prime chains](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/FiniteHeightChain.lean)).
+**Descending prime chains at finite initial height**
+([order](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/FiniteHeightChain.lean), [prime chains](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Ideal/FiniteHeightChain.lean)).
 In a preorder, finite ambient height of `x` makes the strict order on `Set.Iic x`
 well-founded. An antitone spectrum sequence over a commutative semiring with
 finite initial ambient height stabilizes. So does an antitone ideal sequence
@@ -386,14 +411,16 @@ over a commutative ring when **every term is prime** and the initial ideal has
 **all-index** ideal infimum; no global dimension or chain-condition hypothesis
 is added. Spectrum height is not height in the full lattice of ideals.
 
-**Zero-dimensional Zariski spectra.** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Spectrum/Prime/ZeroDimensional.lean)).
+**Zero-dimensional Zariski spectra** ([module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/RingTheory/Spectrum/Prime/ZeroDimensional.lean)).
 For any commutative semiring, T₁ and Hausdorffness of `PrimeSpectrum R` are each
 equivalent to `Ring.KrullDimLE 0 R`, including the empty spectrum; under this
 bound all basic opens are clopen. Mathlib supplies total separation and total
 disconnectedness from the Hausdorff spectrum. For a **reduced, nontrivial
 commutative ring**, this bound and preconnectedness of its spectrum imply `IsField R`.
 
-**Non-zero-divisor loci of germs.** For an arbitrary filter `D` and a monoid with zero `M`, the
+### Non-zero-divisor loci of germs
+
+For an arbitrary filter `D` and a monoid with zero `M`, the
 [non-zero-divisor criteria](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Germ/NonZeroDivisors.lean)
 identify intrinsic left, right and two-sided non-zero-divisors of `Filter.Germ D M`
 with eventual coordinate membership in the corresponding submonoids of `M`.
@@ -403,7 +430,9 @@ multiplicative cancellation criteria. The generic API is a Mathlib-upstream cand
 
 - [Irreducible closed rectangles and topological product dimensions](irreducible-closed-rectangles-and-topological-pr.md)
 
-**Topological dimension under inducing maps and covers.** The [inducing-map and open-cover module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Topology/KrullDimension/OpenCover.lean)
+### Topological dimension under inducing maps and covers
+
+The [inducing-map and open-cover module](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Topology/KrullDimension/OpenCover.lean)
 proves `Topology.IsInducing.topologicalKrullDim_eq`: an inducing surjection between
 independently universed spaces with their given topologies preserves dimension in
 `WithBot ℕ∞`. The map need not be injective, and no separation, sobriety, finiteness
@@ -446,7 +475,9 @@ inclusion, and an ambient irreducible closed `Z` belongs to its range exactly wh
 `closure ((Z : Set X) ∩ Set.range f) = (Z : Set X)`. These properties apply to
 noninjective maps and identify the chart orders used in the finite-cover bound.
 
-**Topological dimension on closed covers, components and point closures.** The [closed-cover leaf](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Topology/KrullDimension/ClosedCover.lean) proves
+### Topological dimension on closed covers, components and point closures
+
+The [closed-cover leaf](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Topology/KrullDimension/ClosedCover.lean) proves
 `topologicalKrullDim_eq_iSup_of_isClosedEmbedding_cover`: the dimension is the
 supremum of the dimensions of the given domains of a jointly surjective family of
 closed embeddings, provided the original indexed family of images is locally finite.

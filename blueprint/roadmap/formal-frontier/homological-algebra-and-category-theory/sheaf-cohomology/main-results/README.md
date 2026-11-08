@@ -2,7 +2,7 @@
 
 The main results that the formalization.yaml of [FormalFrontier/sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology) lists under `status.main_results` at commit [85cf087f](https://github.com/FormalFrontier/sheaf-cohomology/tree/85cf087ff3e2311834bc8c16cb347f1a513d18e4), each that the scan finds declared in the file the yaml gives, with its line. They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API. The notes are the yaml's.
 
-The scan does not find 1 of them; the library's page names them.
+The scan does not find 1 of them; [the library's page](../README.md) names it.
 
 | Declaration | Kind | Where | Note |
 | --- | --- | --- | --- |

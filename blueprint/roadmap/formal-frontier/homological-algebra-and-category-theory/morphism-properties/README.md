@@ -42,32 +42,38 @@ arrows into the common base, as are `f' : X' ⟶ S` and `g' : Y' ⟶ S`.
 Maps `i₁ : X ⟶ X'` and `i₂ : Y ⟶ Y'` satisfying `f = i₁ ≫ f'` and
 `g = i₂ ≫ g'` induce Mathlib's `pullback.map : X ×[S] Y ⟶ X' ×[S] Y'`.
 
-**Preservation along a target projection.** ([`pullbackLift_fst_snd_of_isStableUnderBaseChangeAlong`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**Preservation along a target projection**
+([`pullbackLift_fst_snd_of_isStableUnderBaseChangeAlong`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 If `P g` and `P` is stable under base change along `Y ×[S] S' ⟶ Y`,
 the induced map has property `P`. Only the two endpoint pullbacks are required.
 
-**Relative preservation along an `E` arrow.** ([`pullbackLift_fst_snd_of_isStableUnderBaseChangeAgainst`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**Relative preservation along an `E` arrow**
+([`pullbackLift_fst_snd_of_isStableUnderBaseChangeAgainst`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 Assume `P.IsStableUnderBaseChangeAgainst E`, `E.IsStableUnderBaseChange`,
 `E f`, and `P g`, with the two endpoint pullbacks. Then the induced map has `P`.
 
-**Relative slice-functor preservation.** ([`overPullbackMap_of_isStableUnderBaseChangeAgainst`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**Relative slice-functor preservation**
+([`overPullbackMap_of_isStableUnderBaseChangeAgainst`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 Under the same stability and base-arrow hypotheses and
 `Limits.HasPullbacksAlong f`, Mathlib's existing `CategoryTheory.Over.pullback f`
 preserves `P` on underlying horizontal arrows.
 
-**Object-structured preservation.** ([`pullbackLift_fst_snd_of_intersection_of_postcomp`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**Object-structured preservation**
+([`pullbackLift_fst_snd_of_intersection_of_postcomp`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 Assume `(P ⊓ E).IsStableUnderBaseChange`, `E.HasOfPostcompProperty E`,
 `E v₁₂`, `E v₂₂`, and `P g`. With the two endpoint pullbacks, the induced
 map belongs to `P ⊓ E` along arbitrary `f`, without `E f` or absolute
 stability of `P` or `E`.
 
-**One-factor preservation alternatives.** ([`pullbackLift_fst_snd_of_relative_alternatives`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**One-factor preservation alternatives**
+([`pullbackLift_fst_snd_of_relative_alternatives`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 Assume stability of `P` against `E`, absolute stability of `P ⊓ E` and of
 `E`, cancellation of `E` under postcomposition by `E`, and `P g`. With the
 endpoint pullbacks, the induced map has `P` if either both structure maps
 belong to `E` or `f` belongs to `E`.
 
-**Two-factor relative preservation.** ([`pullbackMap_of_relative_alternatives`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**Two-factor relative preservation**
+([`pullbackMap_of_relative_alternatives`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 Assume composition closure of `P`, stability of `P` against `E`, absolute
 stability of `P ⊓ E` and `E`, and cancellation of `E` under postcomposition
 by `E`. If `P i₁` and `P i₂`, the canonical map has `P` provided either
@@ -76,27 +82,31 @@ and `(f', g')`, only the mixed pullback selected by the alternative is
 required: `(f', g)` in the first case, `(f, g')` in the second.
 No identity closure of `P` is assumed.
 
-**Absolute two-factor specialization.** ([`pullbackMap_of_relative_alternatives_top`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**Absolute two-factor specialization**
+([`pullbackMap_of_relative_alternatives_top`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 With `E = ⊤`, absolute base-change stability and composition closure of `P`,
 `P i₁`, `P i₂`, and the same commuting equations suffice under Mathlib's
 `pullbackMap` hypotheses `Limits.HasPullbacksAlong f` and
 `Limits.HasPullbacksAlong g'`. The conclusion is membership for the same
 canonical map. No pullbacks along `g` or identity closure are added.
 
-**Either-leg criterion for existing squares.** ([`isStableUnderBaseChange_either_iff`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
+**Either-leg criterion for existing squares**
+([`isStableUnderBaseChange_either_iff`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/RelativeBaseChange.lean)).
 For base-change-stable `E`, preservation of `P` on an existing square
 `IsPullback p q a b` whenever `P a` and `E a ∨ E b` is equivalent to
 `P.IsStableUnderBaseChangeAgainst E` and `(P ⊓ E).IsStableUnderBaseChange`.
 The preserved arrow is `q`; no pullback-existence assumption is made.
 
-**Canonical structured-over transport.** ([`Over.pullbackOfIntersectionOfPostcomp`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/OverPullback.lean)).
+**Canonical structured-over transport**
+([`Over.pullbackOfIntersectionOfPostcomp`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/OverPullback.lean)).
 A functor `E.Over P S ⥤ E.Over P S'` assuming `P.IsMultiplicative`,
 `E.HasPullbacksAlong f`, `E.IsStableUnderBaseChangeAlong f`,
 `(P ⊓ E).IsStableUnderBaseChange`, and `E.HasOfPostcompProperty E`.
 Here existence is required only for structure arrows satisfying `E`,
 not for every object over `S`.
 
-**Fixed-base pullback pairing.** ([`Over.pullbackPairing` and `Over.pullbackPairing_map_mem_of_relative`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/PullbackPairing.lean)).
+**Fixed-base pullback pairing**
+([`Over.pullbackPairing` and `Over.pullbackPairing_map_mem_of_relative`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/PullbackPairing.lean)).
 A functor `(E.Over P S × Q.Over P S) ⥤ CategoryTheory.Over S` assuming only
 `P.IsMultiplicative` and `HasPullback A.hom B.hom` for every selected
 `A : E.Over P S`, `B : Q.Over P S`. No closure of `E` or `Q` is required.
@@ -106,14 +116,16 @@ against `E`, base-change stability of `P ⊓ E` and `E`, and cancellation of
 `E` under postcomposition by `E`. The left endpoints supply `E`; the selected
 family supplies the mixed pullback `(target-left, source-right)`.
 
-**Product of the forgetful input functors.** ([`Over.pullbackPairingFan_isLimit`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/PullbackPairing.lean)).
+**Product of the forgetful input functors**
+([`Over.pullbackPairingFan_isLimit`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/PullbackPairing.lean)).
 Under the same multiplicativity and selected-pair existence hypotheses,
 the pullback pairing with its two projection transformations is a binary
 product of `Prod.fst ⋙ Over.forget E P S` and `Prod.snd ⋙ Over.forget Q P S`
 in `(E.Over P S × Q.Over P S) ⥤ CategoryTheory.Over S`. Joint lifts and
 projections are ordinary-over morphisms; no membership in `P` is imposed.
 
-**Symmetry of fixed-base pairing.** ([`Over.pullbackPairingSymmetry`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/PullbackPairing.lean)).
+**Symmetry of fixed-base pairing**
+([`Over.pullbackPairingSymmetry`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/PullbackPairing.lean)).
 With the same multiplicativity and selected-pair existence hypotheses,
 interchanging `E` and `Q` gives a natural isomorphism to the reversed pairing.
 Reverse pullbacks are derived from the forward family. Components are the
@@ -121,7 +133,8 @@ ambient pullback symmetry maps, with characteristic equations for both
 projections, the inverse, and swapping twice. No stability or iso invariance
 of the morphism properties is required.
 
-**Density under slicing.** ([`CategoryTheory.CostructuredArrow.isDenseAt_toOver` and `isDense_toOver`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/Density.lean)).
+**Density under slicing**
+([`CategoryTheory.CostructuredArrow.isDenseAt_toOver` and `isDense_toOver`](https://github.com/FormalFrontier/morphism-properties/blob/1666ed81a5c4bcebb188ff67ab3b46df00aa6e4f/MorphismProperties/Density.lean)).
 For arbitrary categories `A`, `C`, a functor `F : A ⥤ C`, `X : C`, and
 `Y : CategoryTheory.Over X`, `F.isDenseAt Y.left` implies
 `(CategoryTheory.CostructuredArrow.toOver F X).isDenseAt Y`.

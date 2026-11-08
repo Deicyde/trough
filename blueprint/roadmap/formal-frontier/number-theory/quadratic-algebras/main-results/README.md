@@ -2,7 +2,7 @@
 
 The main results that the formalization.yaml of [FormalFrontier/quadratic-algebras](https://github.com/FormalFrontier/quadratic-algebras) lists under `status.main_results` at commit [16a5b4c5](https://github.com/FormalFrontier/quadratic-algebras/tree/16a5b4c54c4586483cf53597a96eb91ecd5a3bca), each that the scan finds declared in the file the yaml gives, with its line. They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API. The notes are the yaml's.
 
-The scan does not find 1 of them; the library's page names them.
+The scan does not find 1 of them; [the library's page](../README.md) names it.
 
 | Declaration | Kind | Where | Note |
 | --- | --- | --- | --- |

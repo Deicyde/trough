@@ -174,7 +174,8 @@ formulas. Empty ranks and zero semirings are allowed.
 [stable inverse-transpose](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableOpposite.lean),
 [elementary quotients](https://github.com/FormalFrontier/general-linear-groups/blob/a2199cf0d02b1e0775890a7ed09b709dfbfba74b/GeneralLinearGroups/StableElementaryOpposite.lean).
 
-**Finite coefficient products of stable groups and elementary quotients.** For arbitrary `Semiring R` and `Semiring S` in independent universes,
+**Finite coefficient products of stable groups and elementary quotients.**
+For arbitrary `Semiring R` and `Semiring S` in independent universes,
 coefficient projections give `StableGL (R × S) ≃* (StableGL R × StableGL S)`.
 For `[Finite ι]` and a family of semirings `R i`, evaluation gives
 `StableGL (∀ i, R i) ≃* (∀ i, StableGL (R i))`, including the empty family.

@@ -79,7 +79,8 @@ The generic Henselian-pair estimates come from Adic Modules, positive-power comp
 and polynomial-root inverse-image criteria from Group Theory, and the generic-point
 space from Spectral Stone Duality; their valuation applications are developed here.
 
-**Polynomial root-value bounds and inverse images.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/PolynomialValueBounds.lean),
+**Polynomial root-value bounds and inverse images**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/PolynomialValueBounds.lean),
 [details](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#polynomial-root-values-and-multiplicative-images)).
 Let `D,E` be possibly noncommutative semirings, `f : D →+* E`, and
 `ν : E →*₀ Γ` satisfy the max-addition inequality, with `Γ` a linearly ordered
@@ -96,7 +97,8 @@ is not a unit in general. Raw unit-constant roots have left inverses over semiri
 (hypotheses that force a ring structure); genuinely nonring evaluations are possible
 for the generic mapped theorem.
 
-**Finitely many distinct polynomial-root values.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/PolynomialValues.lean),
+**Finitely many distinct polynomial-root values**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/PolynomialValues.lean),
 [details](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#polynomial-root-values-and-multiplicative-images)).
 Under the same valuation-like semiring hypotheses, one source-supported coefficient
 of nonzero image value bounds the number of distinct root values, including zero,
@@ -106,7 +108,8 @@ the nonzero root values number at most `A.card - 1`; add the zero-value occurren
 for the total bound. Finiteness for nonzero polynomials over a division semiring
 also includes collapsed value targets. These count values, not roots or multiplicities.
 
-**Restriction, equivalence and canonical extensions.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#restriction-equivalence-and-canonical-extensions)).
+**Restriction, equivalence and canonical extensions**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#restriction-equivalence-and-canonical-extensions)).
 On a division ring, valuations into independent linearly ordered commutative monoids with zero
 are equivalent iff their strict unit cuts agree, or iff their zero fibers and closed
 unit cuts agree. For a map of arbitrary rings whose range contains a positive power
@@ -118,7 +121,8 @@ each valuation subring of `F` has a unique extension to `E`: its integral closur
 Membership is integrality, or scalar membership after any specified positive power;
 purely inseparable field extensions supply the power witnesses.
 
-**Compatible valuation-ring extensions and prescribed residue fields.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueExtension.lean)).
+**Compatible valuation-ring extensions and prescribed residue fields**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueExtension.lean)).
 Along a field homomorphism, a chosen extension valuation subring restricts to
 the original valuation ring and preserves every value-order comparison on the
 base field, without identifying value groups. The original local coefficient
@@ -130,7 +134,8 @@ extension to its residue field. The selected power-basis generators correspond
 under reduction. No Henselianity,
 discreteness or completeness hypothesis is imposed.
 
-**Scalar-trivial values and valuation-separated linear independence.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#scalar-values-and-linear-independence)).
+**Scalar-trivial values and valuation-separated linear independence**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#scalar-values-and-linear-independence)).
 In a ring algebra over a commutative ring, a valuation into a linearly ordered commutative
 monoid with zero that is trivial on nonzero scalars takes integral elements to zero
 or one. Over a field, scalar values at most one give the same conclusion for
@@ -142,7 +147,8 @@ every nonzero scalar value for `0 < n < d` make the first `d` powers independent
 if `A` is finite over `F`, then `d ≤ Module.finrank F A`. No domain on `A` or
 group structure on the value monoid is needed.
 
-**Residue degree bounded by field degree.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueDegree.lean)).
+**Residue degree bounded by field degree**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueDegree.lean)).
 Let `R` be a valuation domain with fraction field `F`, `L/F` a finite field
 extension, and `S` a commutative local `R`-algebra whose given `algebraMap S L`
 is injective, with commuting `R/F/L` and `R/S/L` scalar towers. Write `κR`, `κS`
@@ -159,7 +165,8 @@ or explicit local-map hypothesis on `R → S` is assumed. Universes are independ
 no Henselianity, completeness, discreteness, separability, residue perfection
 or common value group is required.
 
-**Prescribed residue lifts give field and ring bases.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueBasis.lean)).
+**Prescribed residue lifts give field and ring bases**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueBasis.lean)).
 Let `R` be a valuation domain with fraction field `F`, `L/F` a finite field
 extension, and `S` a commutative local `R`-algebra with its given injective
 `algebraMap S L`. Retain the original `R/S/F/L` algebras and actions, with
@@ -194,7 +201,8 @@ separability, residue perfection, finite residue-field cardinality or common
 value group is required. This is degree exhaustion by the residue-basis size,
 not a definition of an unramified extension.
 
-**Trace and norm for prescribed residue lifts.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueTraceNorm.lean)).
+**Trace and norm for prescribed residue lifts**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueTraceNorm.lean)).
 Under the preceding prescribed-lift hypotheses, including finite `L/F` and
 `card ι = [L : F]`, ordinary algebraic trace and norm commute with the original
 embeddings `R → F` and `S → L`, and with the canonical residue maps.
@@ -202,7 +210,8 @@ Finiteness and freeness of `S` over `R` follow from the lifted ring basis;
 neither is an extra premise. Residue separability is not required, and there
 is no restriction on characteristic.
 
-**Trace-one units and trace surjectivity.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueTraceNorm.lean)).
+**Trace-one units and trace surjectivity**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueTraceNorm.lean)).
 Let `R` be a valuation domain with fraction field `F`, `L/F` a finite field
 extension, and `S` a commutative local `R`-algebra with its given injective
 `S → L`. Retain the original ambient and residue algebra actions and the
@@ -216,7 +225,8 @@ No Henselianity, finite residue-field cardinality, invertible degree,
 valuation-ring structure on `S`, or fraction-field structure for `S → L`
 is required.
 
-**Perfectness of the integral trace pairing.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/TracePairing.lean)).
+**Perfectness of the integral trace pairing**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/TracePairing.lean)).
 For a valuation domain `R` with fraction field `F` and a local `R`-algebra
 `S` embedded by its given algebra map in a field `L` finite over `F`, retain
 the compatible original ambient and residue algebras and scalar towers.
@@ -228,7 +238,8 @@ under the trace. Finite freeness is derived, not a caller premise; no
 Henselianity, finite residue-field cardinality, or invertibility of the degree
 is assumed.
 
-**Unit discriminants from separable residue-degree exhaustion.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/Discriminant.lean)).
+**Unit discriminants from separable residue-degree exhaustion**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/Discriminant.lean)).
 In the same compatible valuation-domain and local embedded-algebra setting,
 if `[L : F] = [κS : κR]` and the given residue extension is separable,
 `ValuationRing.discr_isUnit_of_finrank_eq` makes the discriminant of every
@@ -236,7 +247,8 @@ finite `R`-basis of the original `S` a unit in the original `R`.
 Finite freeness and the extended maximal-ideal equality are derived internally;
 no Henselianity, finite residue-field cardinality or invertible degree is required.
 
-**Ambient membership detected by the trace pairing.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueTraceNorm.lean)).
+**Ambient membership detected by the trace pairing**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueTraceNorm.lean)).
 Let `R` be a commutative valuation domain with fraction field `F`, and let
 `S` be a commutative local ring embedded by its given algebra map in a field
 `L` finite over `F`. Keep the seven given algebras `R → F`, `F → L`,
@@ -254,7 +266,8 @@ No Henselianity, finite residue-field cardinality, invertible degree,
 ambient separability, valuation-ring or fraction-field structure on `S`,
 value-group, discreteness or completeness hypothesis is added.
 
-**Valuation of a norm under residue-degree exhaustion.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormValuation.lean)).
+**Valuation of a norm under residue-degree exhaustion**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormValuation.lean)).
 Let `L/F` be a finite field extension with given valuations `v`, `w` and
 original integer rings `R`, `S`. Retain the compatible ambient and residue
 algebra structures and scalar towers above, and assume `[L : F] = [κS : κR]`.
@@ -265,7 +278,8 @@ satisfying `w (algebraMap F L a) = j (v a)` for every `a : F`,
 No injectivity or order preservation of `j`, Henselianity, separability,
 discreteness or finite residue-field cardinality is assumed.
 
-**Unit norms over a Henselian valuation domain.** ([principal congruences](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormUnits.lean),
+**Unit norms over a Henselian valuation domain**
+([principal congruences](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormUnits.lean),
 [finite residue fields](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/UnitNorm.lean)).
 In the preceding compatible valuation-domain and local embedded-algebra setting,
 assume `R` Henselian, `[L : F] = [κS : κR]`, and the given residue extension
@@ -285,7 +299,8 @@ including zero. Residue separability is derived from finiteness, rather than
 assumed. This combines finite-field unit norm surjectivity, the residue norm
 comparison and the principal-congruence correction.
 
-**The field norm group.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormRange.lean)).
+**The field norm group**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormRange.lean)).
 In the preceding compatible valuation-domain and local embedded-algebra setting,
 assume `R` Henselian with finite residue field and `[L : F] = [κS : κR]`.
 `ValuationRing.mem_range_norm_units_iff` identifies the usual norm subgroup
@@ -295,7 +310,8 @@ Residue bases and lifts are chosen internally. No valuation-ring structure on
 `S`, fraction-field structure for `S → L`, separability or degree invertibility
 is assumed. This is the norm on `Lˣ`, not the zero-inclusive range on `L`.
 
-**The field norm quotient over a discrete valuation ring.** ([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormQuotient.lean)).
+**The field norm quotient over a discrete valuation ring**
+([module](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/NormQuotient.lean)).
 In the preceding field-norm setting, additionally suppose that the base `R`
 is a discrete valuation ring. `ValuationRing.normQuotientEquivZMod` identifies
 `Fˣ / N(Lˣ)` with the additive group `ZMod [L : F]`, written multiplicatively.
@@ -305,7 +321,8 @@ valuation, reduced modulo the degree; a uniformizer has exponent `-1`.
 give cyclicity and cardinality `[L : F]`. No discrete valuation ring structure
 on `S`, Galois assumption or restriction on the characteristic or degree is added.
 
-**Power bases and minimal polynomials from arbitrary primitive residue lifts.** ([power bases](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResiduePowerBasis.lean),
+**Power bases and minimal polynomials from arbitrary primitive residue lifts**
+([power bases](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResiduePowerBasis.lean),
 [polynomial comparisons](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResiduePolynomial.lean),
 [derivatives and separability](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueSeparability.lean)).
 In the preceding valuation-domain, local embedded-algebra setting, assume
@@ -335,7 +352,8 @@ homomorphism `φ : κS →ₐ[κR] κT` lifts uniquely to an `R`-algebra homomor
 `S → T` whose reduction agrees with `φ` on every element of `S`
 ([residue homomorphisms](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueHom.lean)).
 
-**Unique residue and field homomorphism lifts.** ([lifting](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueHomFinite.lean),
+**Unique residue and field homomorphism lifts**
+([lifting](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueHomFinite.lean),
 [identity and composition](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/ValuationIntegers/Valuation/ResidueHomFunctorial.lean)).
 Let `R` be a valuation domain with fraction field `F`, and let a commutative
 local `R`-algebra `S` embed by its given algebra map in a finite extension
@@ -364,7 +382,8 @@ universes are independent, and the given maps, actions and towers are retained.
 The source degree equality and residue separability remain restrictions;
 this is not a full unramified-extension equivalence.
 
-**Absolute values and rank-at-most-one realizations.** ([generic layer](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/AbsoluteValues.md),
+**Absolute values and rank-at-most-one realizations**
+([generic layer](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/AbsoluteValues.md),
 [rank and topology details](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#rank-dimension-and-real-absolute-values)).
 Nonarchimedean real absolute values on nontrivial rings and zero-reflecting
 `NNReal`-valued valuations on rings convert in both directions with round-trip laws.
@@ -376,7 +395,8 @@ reflecting the preorder and unit ball, with an ultrametric uniform equivalence
 `WithVal v ≃ᵤ WithAbs v.absoluteValue`. Trivial valuations are included; rank one
 gives nontriviality and, on valued fields, Mathlib's `Valued.toNormedField` norm.
 
-**Scalar and binomial valuation formulas.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#scalar-and-binomial-estimates)).
+**Scalar and binomial valuation formulas**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#scalar-and-binomial-estimates)).
 Multiplication-preserving, nonnegative nonarchimedean maps on a nonassociative ring
 satisfy natural prime-power formulas at a prime `p` with `f p < f 1`, retaining
 the factor `f 1`. The target needs `MulOneClass`, natural powers with `NatPowAssoc`,
@@ -389,7 +409,8 @@ hold without integrality or cancellation. If `p` is prime, `v p < 1` and both
 integer powers as well. No commutation is needed, and zero distances are included.
 Natural powers with `v m = 1` preserve distances in the strict unit ball about one.
 
-**Rank, dimension, normalization and bounded modules.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#rank-dimension-and-real-absolute-values)).
+**Rank, dimension, normalization and bounded modules**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#rank-dimension-and-real-absolute-values)).
 For a field valuation into a linearly ordered commutative group with zero and a
 commutative local integer presentation `hv : val.Integers O`,
 rank at most one gives positive-power divisibility `y ∣ x^n` for maximal-ideal `x`
@@ -404,7 +425,8 @@ unit ball. For a finite-dimensional normed `K`-algebra that is a normed ring,
 `v.HasExtension w`, Noetherian base integers, a `v`-integral base norm unit ball
 and norm-at-most-one `w`-integers give finite extension-integer modules.
 
-**Valuative topologies, Cauchy filters and completions.** ([topology and Cauchy details](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#valuative-topologies-and-cauchy-filters),
+**Valuative topologies, Cauchy filters and completions**
+([topology and Cauchy details](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#valuative-topologies-and-cauchy-filters),
 [completion details](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#completions-and-residue-transport)).
 Here value groups are arbitrary linearly ordered commutative groups with zero.
 Powers tend to zero iff `x <ᵥ 1` in rank-at-most-one valuative rings; on division
@@ -420,7 +442,8 @@ from a valued field to a complete separated valued ring identifies that ring wit
 Dense `HasExtension` field algebra maps induce dense integer maps and bijective
 residue maps, also for different value groups; integer surjectivity is not asserted.
 
-**Finite intersections, approximation and spectra.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#intersections-and-spectra)).
+**Finite intersections, approximation and spectra**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#intersections-and-spectra)).
 Arbitrary families of valuations on a field into a common linearly ordered
 commutative group with zero have intersection integers and full residue maps.
 Finite pointwise rank-at-most-one families have denominator, localization and
@@ -432,7 +455,8 @@ at positive restricted-value radii, residue-product surjectivity and a spectrum
 homeomorphism with `Topology.WithGenericPoint`. Diagonal uniformizers additionally
 require discreteness; repeated or trivial places need the separate boundaries below.
 
-**Laurent-series integers and approximation.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#laurent-series-and-approximation)).
+**Laurent-series integers and approximation**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#laurent-series-and-approximation)).
 Over a field `K`, maximal-ideal powers in the standard Laurent-series valuation
 subring are detected by vanishing coefficients at natural indices below the power;
 units are exactly those with nonzero zeroth coefficient, and maximal-ideal elements
@@ -441,7 +465,8 @@ given by that coefficient. Laurent series over a type
 with zero have finite support below every integer cutoff; over a semiring a Laurent
 polynomial matches those coefficients, and over a field these polynomials are dense.
 
-**Henselian roots with sharp valuation precision.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#henselian-roots-and-power-neighborhoods)).
+**Henselian roots with sharp valuation precision**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#henselian-roots-and-power-neighborhoods)).
 For a field valuation into a linearly ordered commutative group with zero whose integers
 `O` are Henselian at their maximal ideal `𝔪`, `v(f(a)) < v(f′(a))²` for `f : O[X]`,
 `a : O`, gives a root with exact error identity, derivative-value stability and uniqueness
@@ -451,7 +476,8 @@ in the strict derivative ball. For natural `s`, the conditions `f(a) ∈ 𝔪^(2
 nonzero exponent casts give open power ranges in `Kˣ`. No completeness, rank,
 discreteness, monicity or unit-derivative assumption is required.
 
-**Bernoulli integrality and complete denominators.** ([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#bernoulli-numbers-and-discrete-roots)).
+**Bernoulli integrality and complete denominators**
+([details and modules](https://github.com/FormalFrontier/valuation-integers/blob/212f1a045abb1dfb6e6da1796d16433db6d72d74/docs/Guide.md#bernoulli-numbers-and-discrete-roots)).
 For every integer `n` and positive natural `k`, `n^k*(n^k-1)*B_k/k` is integral
 over `ℤ`, including `B₁ = -1/2`. For the divided Bernoulli number
 `B_(2*k)/(2*k)` with positive natural `k`, selected primes `p` satisfying

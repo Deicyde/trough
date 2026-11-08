@@ -10,22 +10,6 @@ chosen coefficient ring.
 
 Browse the results by topic:
 
-**Polynomial and Rees constructions.**
-
-**Graded quotients, localization and finiteness.**
-
-**Natural Rees modules.**
-
-**Integer filtrations and associated graded modules.**
-
-**Filtered finite generation.**
-
-**Quotient Rees modules.**
-
-**Symmetric algebras and prime multiplicity.**
-
-**Veronese rings and homogeneous generation.**
-
 ### Polynomial and Rees constructions
 
 - [Polynomial covers and equivalences for principal ideals](polynomial-covers-and-equivalences-for-principal.md)

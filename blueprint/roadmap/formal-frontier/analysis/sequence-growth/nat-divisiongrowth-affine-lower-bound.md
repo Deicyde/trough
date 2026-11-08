@@ -8,7 +8,7 @@ proof: formalized
 
 # `Nat.DivisionGrowth.affine_lower_bound`
 
-If `0 < s < n` and
+[`Nat.DivisionGrowth.affine_lower_bound`](https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean): if `0 < s < n` and
 `∀ m, n * (u m / s) ≤ u (m + 1)`, then for every `m : ℕ`, with
 `λ = (n : ℚ) / s` and `C = (n : ℚ) * ((s - 1 : ℕ) : ℚ) / ((n : ℚ) - s)`,
 `λ ^ m * ((u 0 : ℚ) - C) + C ≤ (u m : ℚ)`. There is **no** seed condition.

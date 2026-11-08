@@ -11,7 +11,8 @@ navigation: transparent
 - [Arbitrary-index circle bouquets](arbitrary-index-circle-bouquets.md)
 - [Diagonal equivalence for non-antipodal pairs](diagonal-equivalence-for-non-antipodal-pairs.md)
 
-**Continuous hairy-ball theorem for S².** [`sphere2_exists_zero_of_orthogonal_field`](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/SphereTopology/Homotopy/HairyBallSphere2.lean)
+**Continuous hairy-ball theorem for S².**
+[`sphere2_exists_zero_of_orthogonal_field`](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/SphereTopology/Homotopy/HairyBallSphere2.lean)
 says every `V : C(sphere2, E3)` pointwise orthogonal to the radius has a zero.
 In any real inner-product space, a nowhere-zero continuous orthogonal field
 on the metric unit sphere gives an explicit identity-to-antipodal homotopy
@@ -60,7 +61,8 @@ degree-zero sequence is exact at the biproduct for every two-open cover;
 its final map is epic when the intersection is nonempty, not unconditionally
 ([`ReducedMayerVietoris`](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/SphereTopology/Homology/Singular/ReducedMayerVietoris.lean)).
 
-**Components and path connectedness.** [`Components`](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/SphereTopology/Homology/Singular/Components.lean) presents the
+**Components and path connectedness.**
+[`Components`](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/SphereTopology/Homology/Singular/Components.lean) presents the
 augmentation kernel by nonbasepoint path components, with categorical
 coefficients. In a preadditive category with the requisite coproducts and
 homology, `H₀(X; R) ⟶ R` is invertible exactly when `X` is path connected

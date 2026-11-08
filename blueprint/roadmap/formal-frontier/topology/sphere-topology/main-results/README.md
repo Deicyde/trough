@@ -2,7 +2,7 @@
 
 The main results that the formalization.yaml of [FormalFrontier/sphere-topology](https://github.com/FormalFrontier/sphere-topology) lists under `status.main_results` at commit [672d46f9](https://github.com/FormalFrontier/sphere-topology/tree/672d46f90cf51cdf3f933248b85c842990ead729), each that the scan finds declared in the file the yaml gives, with its line. They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API. The notes are the yaml's.
 
-The scan does not find 1 of them; the library's page names them.
+The scan does not find 1 of them; [the library's page](../README.md) names it.
 
 | Declaration | Kind | Where | Note |
 | --- | --- | --- | --- |

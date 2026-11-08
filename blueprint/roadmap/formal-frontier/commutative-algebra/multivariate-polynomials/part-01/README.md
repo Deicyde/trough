@@ -11,7 +11,8 @@ navigation: transparent
 - [Heights of homogeneous polynomial evaluations](heights-of-homogeneous-polynomial-evaluations.md)
 - [Homogeneous polynomial maps on projective coordinate spaces](homogeneous-polynomial-maps-on-projective-coordi.md)
 
-**Homogeneous coordinate-power certificates.** For an arbitrarily indexed homogeneous family `p : J → MvPolynomial I R`
+**Homogeneous coordinate-power certificates.**
+For an arbitrarily indexed homogeneous family `p : J → MvPolynomial I R`
 of common degree `d` over any commutative semiring, with finitely many
 variables, the
 [certificate module](https://github.com/FormalFrontier/multivariate-polynomials/blob/724d9804aa6e853d9fe34f6a35c5c0d35c7f8c6a/MultivariatePolynomials/HomogeneousCertificates.lean)

@@ -49,7 +49,7 @@ The sources its formalization.yaml names, with their relationship to it.
 
 ## Headline results
 
-The 60 headline results of its README are on a page of their own: 1 article, 58 quoted as text, and 1 that link an article above.
+The 52 headline results of its README are on a page of their own: 1 article, 50 quoted as text, and 1 that links an article above.
 
 - [Headline results](headline-results/README.md)
 

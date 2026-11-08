@@ -8,7 +8,7 @@ proof: formalized
 
 # `Nat.DivisionGrowth.eventually_dominates`
 
-Under the same recurrence,
+[`Nat.DivisionGrowth.eventually_dominates`](https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean): under the same recurrence,
 `0 < s`, `0 < b`, `s * b < n`, and the sufficient natural seed
 `n * (s - 1) < (n - s) * u 0`, for **each** `K : ℕ` there is `M : ℕ`
 such that **every** `m ≥ M` satisfies `K * b ^ m < u m`.

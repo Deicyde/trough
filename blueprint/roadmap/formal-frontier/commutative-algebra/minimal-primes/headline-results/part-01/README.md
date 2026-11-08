@@ -8,7 +8,9 @@ navigation: transparent
 
 - [Successors of finite product expansions](successors-of-finite-product-expansions.md)
 
-**Ranks of dependent pointwise products.** For arbitrary `ι : Type u`, independently universed given preorders
+### Ranks of dependent pointwise products
+
+For arbitrary `ι : Type u`, independently universed given preorders
 `β : ι → Type v`, and a section `f : ∀ i, β i`,
 [`Order.height_pi_eq_iSup_finset` and `Order.coheight_pi_eq_iSup_finset`](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)
 state
@@ -61,7 +63,9 @@ reindexing, and finite-sum formulas.
 - [Krull dimension of lexicographic sums](../../krull-dimension-and-chain-cardinalities-of-lexic.md)
 - [Krull dimension of lexicographic products](krull-dimension-of-lexicographic-products.md)
 
-**Point heights and coheights of binary lexicographic products.** For independently universed given preorders `α : Type u`, `β : Type v` and points
+### Point heights and coheights of binary lexicographic products
+
+For independently universed given preorders `α : Type u`, `β : Type v` and points
 `a : α`, `b : β`, put `Hβ = (Set.univ : Set β).chainHeight (· < ·)`. The formulas
 [`Order.height_toLex_prod` and `Order.coheight_toLex_prod`](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/KrullDimension.lean)
 are
@@ -102,7 +106,9 @@ chain-height APIs.
 - [Dimension and point ranks of finite dependent lexicographic products](../../dimension-and-point-ranks-of-finite-dependent-le.md)
 - [Semimodules, annihilators and faithful actions on dependent reduced products](semimodules-annihilators-and-faithful-actions-on.md)
 
-**Matrix rings over dependent reduced products.** For an arbitrary filter `F`, given semirings `R i` and a fixed index type `J` with
+### Matrix rings over dependent reduced products
+
+For an arbitrary filter `F`, given semirings `R i` and a fixed index type `J` with
 `Fintype J` and `DecidableEq J`, the
 [matrix leaf](https://github.com/FormalFrontier/minimal-primes/blob/45952e34e2da84045925cdfa45f0514356a2a608/MinimalPrimes/Order/Filter/Product/Matrix.lean) constructs
 `Filter.Product.matrixRingEquiv` between `F.Product (fun i => Matrix J J (R i))`

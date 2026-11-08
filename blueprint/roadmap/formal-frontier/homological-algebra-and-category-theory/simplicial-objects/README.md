@@ -37,7 +37,8 @@ The sources its formalization.yaml names, with their relationship to it.
 
 *Quoted from the headline results in [README.md](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/README.md#headline-results) of [FormalFrontier/simplicial-objects](https://github.com/FormalFrontier/simplicial-objects) at commit [e210890f](https://github.com/FormalFrontier/simplicial-objects/tree/e210890fdc170ec8425587eea91c11d4c60c3b87), Apache-2.0.*
 
-**Integral all-simplex chain coordinates.** ([`chainGroupIsoFinsupp`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/ChainCoordinates.lean),
+**Integral all-simplex chain coordinates**
+([`chainGroupIsoFinsupp`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/ChainCoordinates.lean),
 [`chainComplexIsoFinsupp`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/ChainComplexCoordinates.lean)).
 For any ring `R`, `AlgebraicTopology.finsuppChainComplexFunctor R` gives the
 ordinary-Finsupp alternating-face chain complex, with independent ring and
@@ -57,13 +58,15 @@ not normalized chains or homology. The
 the [identity edge of `Δ[1]`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjectsTest/ChainBoundaryCoordinates.lean)
 has boundary `[v₁] - [v₀]`, nonzero as a chain, not as a homology class.
 
-**Augmented left décalage and its canonical extra degeneracy.** ([`LeftDecalage`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/LeftDecalage.lean)).
+**Augmented left décalage and its canonical extra degeneracy**
+([`LeftDecalage`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/LeftDecalage.lean)).
 For every simplicial object in any category, `P(X)ₙ = Xₙ₊₁` augments to `X₀`,
 with `ε₀ = X.δ 1`, not in general the ordinary projection `X.δ 0`.
 No terminal/zero objects, additivity or limits are required. Functoriality and
 naturality are explicit; Mathlib supplies the section and combinatorial homotopy.
 
-**Finite-fiber transfers and coefficient comparison.** ([`FiniteFiberTransfer`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/FiniteFiberTransfer.lean)).
+**Finite-fiber transfers and coefficient comparison**
+([`FiniteFiberTransfer`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/FiniteFiberTransfer.lean)).
 In a preadditive category with simplex-indexed coproducts, equifibered simplicial
 maps with finite vertex fibers admit reverse-composing transfers. No fixed sheet
 number is needed. A constant vertex-fiber cardinality `d` gives pushforward
@@ -71,7 +74,8 @@ after transfer equal to `d • id` on chains and, with homology, in every degree
 Additive functors preserving those coproducts commute with transfer; no exactness
 or homology preservation is assumed. Pullback and coefficient laws are included.
 
-**Normalized descent and change of coefficient category.** ([`Normalization`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/Normalization.lean)).
+**Normalized descent and change of coefficient category**
+([`Normalization`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/Normalization.lean)).
 Morphisms between split simplicial objects in a preadditive category descend
 without preserving chosen nondegenerate summands. For preadditive coefficient
 categories with `HasCoproducts.{w}`, additive functors preserving exactly
@@ -80,7 +84,8 @@ compatibly with projection, section, transfers and natural transformations.
 All five category/simplex universes are independent; no exactness or Abelian
 assumption is needed. These are distinct from the integral tensor presentation.
 
-**Integral tensor chains, simplicial maps and homotopies.** ([`TensorCoefficients`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorCoefficients.lean),
+**Integral tensor chains, simplicial maps and homotopies**
+([`TensorCoefficients`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorCoefficients.lean),
 [`TensorMaps`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorMaps.lean),
 [`TensorHomotopies`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomotopies.lean)).
 For every abelian group `A` and simplicial set `S`, the independently defined
@@ -95,7 +100,8 @@ preadditive with coproducts and homology; augmentation targets need not be termi
 [Cokernel comparison](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorCokernels.lean) applies to all arrows;
 its nonzero omitted-vertex example concerns chain cokernels, not homology.
 
-**Additive and exact change of abelian coefficients.** ([`TensorCoefficientMaps`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorCoefficientMaps.lean),
+**Additive and exact change of abelian coefficients**
+([`TensorCoefficientMaps`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorCoefficientMaps.lean),
 [`TensorCoefficientFunctor`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorCoefficientFunctor.lean),
 [`TensorCoefficientSequences`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorCoefficientSequences.lean)).
 Arbitrary additive maps act by `id ⊗ g`, naturally in both variables, on the
@@ -106,7 +112,8 @@ and short exactness. Universes remain independent with common balanced padding;
 no coefficient flatness or endpoint assumption is added to middle exactness.
 This is exactness of a chain-valued functor, not exactness after homology.
 
-**Degree-zero homology, components and path components.** ([`TensorHomologyZero`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomologyZero.lean),
+**Degree-zero homology, components and path components**
+([`TensorHomologyZero`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomologyZero.lean),
 [`SingularHomologyZero`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/SingularHomologyZero.lean)).
 For every abelian `A` and simplicial set `S`, tensor `H₀` is the coproduct of
 `ModuleCat.of ℤ (ULift.{max w p} A)` over `SSet.π₀ S`, naturally in simplicial
@@ -117,7 +124,8 @@ continuous and coefficient maps, without local path connectedness. The direct
 [path-component functor](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/PathComponents.lean) agrees naturally
 with singular components via Mathlib's equivalence.
 
-**Degree-zero normalized homology of binary products.** ([`tensorNormalizedHomologyZeroProductIso`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomologyZeroProducts.lean)).
+**Degree-zero normalized homology of binary products**
+([`tensorNormalizedHomologyZeroProductIso`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomologyZeroProducts.lean)).
 For arbitrary abelian groups `A`, `B` and simplicial sets `K`, `L`,
 `H₀ᴺ(K; A) ⊗ℤ H₀ᴺ(L; B) ≅ H₀ᴺ(K × L; A ⊗ℤ B)`, using canonical
 universe lifts with independent coefficient, simplex and padding universes.
@@ -131,7 +139,8 @@ flatness, connectedness or nonemptiness is assumed. A
 distinguishes the four nonzero vertex tensors and their four product classes,
 and evaluates simplicial and coefficient maps on them.
 
-**Component folds, terminal sets and dimension vanishing.** ([`TensorHomologyZeroConnected`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomologyZeroConnected.lean),
+**Component folds, terminal sets and dimension vanishing**
+([`TensorHomologyZeroConnected`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomologyZeroConnected.lean),
 [`TensorHomologyZeroEmpty`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/TensorHomologyZeroEmpty.lean),
 [`PointHomology`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/PointHomology.lean)).
 The fold agrees with collapse and terminal coefficient evaluation for every
@@ -141,7 +150,8 @@ positive homology. More generally `S.HasDimensionLT d` gives vanishing in
 degrees `n ≥ d`; `H₀(∂Δ[0])` is zero. Arbitrary abelian coefficients and independent
 coefficient/simplex/padding universes are retained.
 
-**Coefficient naturality of ordinary simplicial `H₀`.** ([`HomologyZero`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/HomologyZero.lean)).
+**Coefficient naturality of ordinary simplicial `H₀`**
+([`HomologyZero`](https://github.com/FormalFrontier/simplicial-objects/blob/e210890fdc170ec8425587eea91c11d4c60c3b87/SimplicialObjects/HomologyZero.lean)).
 Mathlib's `SSet.homology₀Iso` and its inverse commute with every coefficient
 morphism in any preadditive category with `HasCoproducts.{w}` and homology,
 with independent object, morphism and simplex universes. The all-degree

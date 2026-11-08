@@ -46,7 +46,8 @@ Hausdorff. In particular, every real normed space has no small subgroups, withou
 completeness or finite-dimensionality hypotheses. See
 [`NormedSpace.lean`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/NormedSpace.lean).
 
-**No small subgroups and compact-source hom spaces.** `NoSmallSubgroups G` means that some identity neighborhood contains no
+**No small subgroups and compact-source hom spaces.**
+`NoSmallSubgroups G` means that some identity neighborhood contains no
 nontrivial subgroup. Its neighborhood and positive-powers APIs include an
 open inversion-symmetric identity neighborhood when inversion is continuous.
 For a compact monoid `M` with a topology and a commutative topological group
@@ -59,7 +60,8 @@ For a compact monoid `M` with a topology and a commutative topological group
 [`ContinuousMonoidHom.NoSmallSubgroups`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/NoSmallSubgroups.lean)
 and [`Group.NoSmallSubgroups.Circle`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/Group/NoSmallSubgroups/Circle.lean).
 
-**No small subgroups is local under open embeddings.** For groups `G`, `H` with their original arbitrary topologies, an injective
+**No small subgroups is local under open embeddings.**
+For groups `G`, `H` with their original arbitrary topologies, an injective
 open homomorphism `f : G →* H` sends `NoSmallSubgroups G` to
 `NoSmallSubgroups H`; neither operation continuity nor continuity of `f`
 is required. If `f` is continuous at one, the two properties are equivalent.
@@ -95,7 +97,8 @@ existing group-target local-compactness theorem. See
 [`ContinuousMonoidHom.LocallyCompact`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/LocallyCompact.lean)
 and [`ContinuousMonoidHom.Units`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/Algebra/ContinuousMonoidHom/Units.lean).
 
-**Pointwise products of dependent finitely supported functions.** `DFinsupp.pointwiseMul` gives a non-instance `Mul (Π₀ i, β i)` whenever
+**Pointwise products of dependent finitely supported functions.**
+`DFinsupp.pointwiseMul` gives a non-instance `Mul (Π₀ i, β i)` whenever
 each fibre is a `MulZeroClass`; evaluation multiplies the two coefficients.
 Singles at distinct indices have zero product, and product support is contained
 in the intersection of the supports. No associativity, unit or finite index is
@@ -151,7 +154,8 @@ continuous multiplication. See
 and [`PontryaginDual.Prod`](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Topology/PontryaginDual/Prod.lean).
 This binary result asserts neither infinite-product duality nor bidual reflexivity.
 
-**Canonical biduality of binary products and the real plane.** `PontryaginDual.evalHom A : A →* PontryaginDual (PontryaginDual A)` bundles
+**Canonical biduality of binary products and the real plane.**
+`PontryaginDual.evalHom A : A →* PontryaginDual (PontryaginDual A)` bundles
 fixed evaluation for any monoid with a topology. Given factor equivalences
 `eA : A ≃ₜ* PontryaginDual (PontryaginDual A)` and `eB` with the pointwise
 laws `eA a χ = χ a` and `eB b ψ = ψ b`, `PontryaginDual.prodEvalEquiv`
@@ -214,7 +218,9 @@ and qualifications. For API details and examples, see the
 [result guide](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/Results.md); for imports and applications, see the
 [usage guide](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/Usage.md).
 
-**Zero-sum pairs and multiplicative images.** In a nonunital, nonassociative semiring, `a + b = 0` implies `a * a = b * b`.
+### Zero-sum pairs and multiplicative images
+
+In a nonunital, nonassociative semiring, `a + b = 0` implies `a * a = b * b`.
 A multiplication-preserving function into any monoid sends `a` and `b` to
 units simultaneously, without preserving addition, zero or one or requiring
 commutativity of the target. See the
@@ -279,7 +285,9 @@ See the [commuting-divisor API](https://github.com/FormalFrontier/group-theory/b
 [list-product API](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/GroupTheory/Algebra/BigOperators/GroupWithZero/List.lean) and
 [full statements](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results).
 
-**Finite sums and product homomorphisms.** For submodules of a semiring equipped with a module structure over another
+### Finite sums and product homomorphisms
+
+For submodules of a semiring equipped with a module structure over another
 semiring, `Submodule.sum_eq_sup` identifies finite sums with finite suprema,
 complementing the zero/bottom and addition/supremum identities.
 No scalar-tower, commutativity, or algebra hypothesis is required. See
@@ -297,7 +305,9 @@ cover-one premise forces the target to satisfy `0 = 1`. See
 [catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results) for
 application, zero-off extension and uniqueness laws, with their hypotheses.
 
-**Power restrictions and order.** In any group, membership of every power in a finite family in a subgroup-like
+### Power restrictions and order
+
+In any group, membership of every power in a finite family in a subgroup-like
 object is equivalent to membership of the gcd power; gcd one detects the element.
 The subgroup generated by the selected powers is the cyclic subgroup generated
 by that gcd power. Additive groups have the corresponding natural-multiple
@@ -364,7 +374,9 @@ at most `1`, even for empty sets. See the
 [power and order catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#power-restrictions-and-order)
 for additive restriction, pointwise comparison and multiplicative-map versions.
 
-**Group actions and presentations.** For a commutative ring `R`, a commutative domain `A` with an `R`-algebra
+### Group actions and presentations
+
+For a commutative ring `R`, a commutative domain `A` with an `R`-algebra
 structure, and a monoid `M` acting on `A` by semiring endomorphisms,
 `IsIntegral.finite_orbit` proves that every element integral over `R` has
 finite orbit, provided `[SMulCommClass M R A]`. The three types may lie in
@@ -388,7 +400,9 @@ The [actions and presentations catalogue](https://github.com/FormalFrontier/grou
 also gives coefficient-sum relations over semirings and the precise universal
 properties, including their universe qualifications.
 
-**Fixed vectors and averaging.** For monoid representations on additive commutative monoid modules over a
+### Fixed vectors and averaging
+
+For monoid representations on additive commutative monoid modules over a
 semiring, intertwiners `f, g` with injective `f` and `Function.Exact f g` remain
 exact on fixed submodules. Fixed vectors commute with arbitrary products and
 algebraic direct sums, but do not in general preserve surjectivity.
@@ -424,7 +438,9 @@ additive commutative monoid modules. Its narrower commutative-ring comparison
 with Mathlib's `averageMap` is in the
 [catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#further-algebraic-and-character-results).
 
-**Free groups, arithmetic and Grothendieck completions.** For any generator relabeling `σ : I → J`, the kernel of `FreeGroup.map σ` is
+### Free groups, arithmetic and Grothendieck completions
+
+For any generator relabeling `σ : I → J`, the kernel of `FreeGroup.map σ` is
 the **normal closure** of all `of i * (of k)⁻¹` with `σ i = σ k`. The label
 types may be empty and lie in independent universes; no injectivity, surjectivity
 or finiteness is needed. The induced homomorphism is injective or surjective
@@ -451,7 +467,9 @@ freeness of `L` or ambient finite generation. The
 [free-group, arithmetic and completion catalogue](https://github.com/FormalFrontier/group-theory/blob/cad97f1a1920e3c68d41ec2d689cde51231b5a31/docs/HeadlineResults.md#free-groups-arithmetic-and-grothendieck-completions)
 also links the explicit index-two generators and nilpotence reflection on additive units.
 
-**Topology and abstract homomorphisms.** **Continuous endomorphisms of additive circles.** For every nonzero real `T`,
+### Topology and abstract homomorphisms
+
+**Continuous endomorphisms of additive circles.** For every nonzero real `T`,
 `AddCircle.continuousAddMonoidHomEquivInt` is an additive equivalence from
 continuous additive endomorphisms of `AddCircle T`, with pointwise addition,
 to `ℤ`. Its inverse sends `n` to `n • id`, pointwise `x ↦ n • x`;

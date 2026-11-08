@@ -40,7 +40,9 @@ These results are proved here for representations over a ring
 `k` equipped with a topology. The group, discreteness and action-continuity
 hypotheses are specified separately below; foundations come from Mathlib.
 
-**Finite-quotient descent, torsion and the topological colimit.** See [`CompactDiscreteTorsion`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CompactDiscreteTorsion.lean)
+### Finite-quotient descent, torsion and the topological colimit
+
+See [`CompactDiscreteTorsion`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CompactDiscreteTorsion.lean)
 and [`FiniteStageColimit`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/FiniteStageColimit.lean) for these APIs.
 
 For a compact topological group `G` and discrete `X : TopRep k G` over a
@@ -68,7 +70,9 @@ eventual refinements, not fixed-stage positive-degree injectivity, a uniform
 refinement or a closed-boundary-range assumption. The concrete sign-orbit
 cochain construction still uses joint continuity.
 
-**Additivity in coefficient maps in every degree.** For `[Ring k] [TopologicalSpace k]`, topological groups `H` and `G`, and a
+### Additivity in coefficient maps in every degree
+
+For `[Ring k] [TopologicalSpace k]`, topological groups `H` and `G`, and a
 continuous homomorphism `φ : H →ₜ* G`, the
 [coefficient-map API](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/ContinuousCohomologyFunctor.lean)
 proves additivity and preservation of zero in the coefficient morphism in
@@ -86,7 +90,9 @@ morphisms doubles every class in every degree. Its degree-zero calculation uses
 `zeroNatIso` naturality to send the class with invariant value `1` to a nonzero
 class with invariant value `2`.
 
-**Positive coinduced cohomology after closed restriction.** For compact topological groups and discrete coefficients,
+### Positive coinduced cohomology after closed restriction
+
+For compact topological groups and discrete coefficients,
 [diagonal insertion](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CoinducedAcyclic.lean)
 gives a map on the recursively iterated coinduced homogeneous cochains with an
 explicit evaluation law. This insertion contracts the cochain complex in every
@@ -110,7 +116,9 @@ are strictly positive-degree conclusions, corresponding to the closed-subgroup
 clause of Neukirch–Schmidt–Wingberg, I §3, Proposition 1.3.7; they do not
 assert degree-zero vanishing or all-integer Tate acyclicity.
 
-**Normal-quotient coinduction.** For `[Ring k] [TopologicalSpace k]`, a compact topological group `G`, any
+### Normal-quotient coinduction
+
+For `[Ring k] [TopologicalSpace k]`, a compact topological group `G`, any
 normal subgroup `N` and a discrete, jointly continuous `B : TopRep k G`, the
 [normal-quotient coinduction equivalence](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CoinducedInvariants.lean)
 identifies `TopRep.quotientInvariants N (TopRep.coind₁ B)` with
@@ -125,7 +133,9 @@ exhibit `B^N = 0` with nonzero `B`, a quotient function moved by the residual
 quotient action, and an invariant function whose value at the identity is
 moved by `N`.
 
-**Degreewise exactness under coefficient embeddings.** For any topological group `G` and `A B C : TopRep.{max v w} k G`,
+### Degreewise exactness under coefficient embeddings
+
+For any topological group `G` and `A B C : TopRep.{max v w} k G`,
 [`cochainsMap_exact_of_isEmbedding`](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CochainExactness.lean)
 proves that an exact underlying coefficient row `A → B → C` whose first map is a
 topological embedding induces an exact row of homogeneous invariant cochains in
@@ -136,7 +146,9 @@ exactness, not topological strictness or an exactness assertion on cohomology.
 The separate cochain-surjectivity theorem still assumes locally compact `G`,
 a discrete target and jointly continuous source coefficients.
 
-**Algebraic connecting maps, naturality and initial invariants.** The [algebraic connecting-map guide](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/docs/CohomologyExactSequence.md) describes
+### Algebraic connecting maps, naturality and initial invariants
+
+The [algebraic connecting-map guide](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/docs/CohomologyExactSequence.md) describes
 a connecting `k`-linear map in each natural degree and proves the three
 recurring exactness assertions for the underlying modules of continuous cohomology.
 They use locally compact `G`, discrete `B` and `C`, jointly continuous action

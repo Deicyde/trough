@@ -154,7 +154,8 @@ orthogonal-coordinate charts above still require an inner product.
 - [Real projective fundamental groups and lifted endpoints](real-projective-fundamental-groups-and-lifted-en.md)
 - [Boundary-only fixed points on complex closed balls](brouwer-fixed-points-on-complex-disks.md)
 
-**Quotient presentations of topological wide pushouts (Fundamental Groupoids).** [`TopCat.widePushoutHomeomorph`](https://github.com/FormalFrontier/fundamental-groupoids/blob/main/FundamentalGroupoids/Topology/Category/TopCat/Limits/WidePushout.lean)
+**Quotient presentations of topological wide pushouts (Fundamental Groupoids).**
+[`TopCat.widePushoutHomeomorph`](https://github.com/FormalFrontier/fundamental-groupoids/blob/main/FundamentalGroupoids/Topology/Category/TopCat/Limits/WidePushout.lean)
 identifies the quotient of `B ⊕ Σ i, X i` by `b ∼ (i, f i b)` with the
 categorical wide pushout of arbitrary continuous maps `f i : B ⟶ X i`,
 preserving the head and every factor. Continuity and descent have an
@@ -163,7 +164,8 @@ compactness or homotopy assumptions.
 
 - [Embeddings, closed maps and neighborhoods of point-wide-pushouts](embeddings-closed-maps-and-neighborhoods-of-poin.md)
 
-**Parametrized continuity and homotopy gluing (Fundamental Groupoids).** [`TopCat.continuous_prod_iff_of_isColimit`](https://github.com/FormalFrontier/fundamental-groupoids/blob/main/FundamentalGroupoids/Topology/Category/TopCat/Limits/Products.lean)
+**Parametrized continuity and homotopy gluing (Fundamental Groupoids).**
+[`TopCat.continuous_prod_iff_of_isColimit`](https://github.com/FormalFrontier/fundamental-groupoids/blob/main/FundamentalGroupoids/Topology/Category/TopCat/Limits/Products.lean)
 checks joint continuity on the legs of any supplied topological colimit under
 Mathlib's `LocallyCompactPair P Y` hypothesis; a locally compact parameter
 suffices, with no separation condition on the target. Parameter and target
@@ -177,7 +179,8 @@ supplied by
 - [Point-relative equivalences and contractions](point-relative-equivalences-and-contractions.md)
 - [Factor retractions and separation of point-wide-pushouts](factor-retractions-and-separation-of-point-wide.md)
 
-**Compact subsets meet finitely many pointed factors.** [`finite_widePushoutPointSupport`](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/SphereTopology/Topology/WidePushout/Compactness.lean)
+**Compact subsets meet finitely many pointed factors.**
+[`finite_widePushoutPointSupport`](https://github.com/FormalFrontier/sphere-topology/blob/672d46f90cf51cdf3f933248b85c842990ead729/SphereTopology/Topology/WidePushout/Compactness.lean)
 applies to arbitrary indexed T₁ spaces attached at chosen points. A compact
 subset of their categorical wide pushout meets only finitely many factors
 away from the common point. The support API characterizes coverings by the

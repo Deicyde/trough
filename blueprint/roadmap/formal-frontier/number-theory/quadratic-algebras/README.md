@@ -41,7 +41,9 @@ infrastructure is not a new contribution of this library. The
 guide to the newer real-closed declarations; the [binding guide](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/docs/README.md)
 also describes the later complex quotient interface and module imports.
 
-**Presentations, scalar extension and integral closure.** The library connects mathlib's coordinate model `QuadraticAlgebra R a b` with
+### Presentations, scalar extension and integral closure
+
+The library connects mathlib's coordinate model `QuadraticAlgebra R a b` with
 the polynomial quotient `AdjoinRoot (X ^ 2 - C b * X - C a)`. It also proves
 that scalar extension commutes with quadratic algebras and canonically
 identifies their total fraction rings with base change to `FractionRing R`.
@@ -83,7 +85,9 @@ Key interfaces are the [polynomial-quotient equivalence](https://github.com/Form
 [UFD squarefree criterion](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/docs/API.md#qa-ufd-squarefree-criterion)
 and [separate integer criterion](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/docs/API.md#qa-integer-integral-closure).
 
-**Chosen coordinates for quadratic algebras.** Over a field `R` with `[IsRealClosed R]`, irreducibility of
+### Chosen coordinates for quadratic algebras
+
+Over a field `R` with `[IsRealClosed R]`, irreducibility of
 `QuadraticAlgebra.definingPolynomial a b` supplies a nonzero `d` with
 `d² = -QuadraticAlgebra.discr a b`; see the
 [real-closed witness](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/docs/API.md#qa-real-closed-witness). Separately, over
@@ -100,7 +104,9 @@ coordinates are distinct from the earlier canonical quotient bridge over
 arbitrary commutative rings; they do not choose a sign or provide an
 arbitrary-degree quotient equivalence.
 
-**Algebraic closure over a real-closed field.** For any field `R` with `[IsRealClosed R]`, the canonical quadratic field
+### Algebraic closure over a real-closed field
+
+For any field `R` with `[IsRealClosed R]`, the canonical quadratic field
 `QuadraticAlgebra R (-1) 0` is algebraically closed. No order or nonsquare
 witness is supplied by the caller: semireality proves the field witness
 `Fact (¬ IsSquare (-1 : R))`. Every element of this quadratic field has a
@@ -116,7 +122,9 @@ the square-root and cubic-root results and compare the general degree bound
 with Mathlib's real-only bound. See the
 [closure API](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/docs/API.md#qa-real-closed-closure).
 
-**Irreducible polynomial quotients.** For an arbitrary real-closed field `R`, each irreducible `p : R[X]` with
+### Irreducible polynomial quotients
+
+For an arbitrary real-closed field `R`, each irreducible `p : R[X]` with
 `1 < p.natDegree` has an `R`-algebra equivalence from `AdjoinRoot p` to
 `QuadraticAlgebra R (-1) 0`; no monicity or discriminant witness is required.
 Over any base field, the chosen-root constructor for an irreducible quadratic
@@ -128,7 +136,9 @@ irreducible quadratic and reducible boundaries; the
 [quotient clients](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebrasTest/RealClosedAdjoinRoot.lean) also exercise
 a nonmonic scalar multiple and both signs of the quadratic generator.
 
-**Complex coordinates and real polynomial quotients.** The [complex coordinate equivalence](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealComplexAdjoinRoot.lean)
+### Complex coordinates and real polynomial quotients
+
+The [complex coordinate equivalence](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/QuadraticAlgebras/RealComplexAdjoinRoot.lean)
 identifies `QuadraticAlgebra ℝ (-1) 0` with `ℂ` as real algebras, sending
 `omega` to `Complex.I` and exposing both coordinate formulas. For an
 irreducible `p : ℝ[X]` of degree two and any specified complex root `z`, the
@@ -142,7 +152,9 @@ both `±Complex.I`, a nonmonic scalar multiple, arbitrary quotient classes and
 the variable class in the ideal quotient. This is an algebraic presentation;
 it does not supply maximality, scheme residue fields or topology.
 
-**Diagonal quadratics.** The library also defines the finitely supported
+### Diagonal quadratics
+
+The library also defines the finitely supported
 diagonal multivariate quadratic `MvPolynomial.sumSMulXSq c`. Over any field
 of characteristic different from two, this polynomial is squarefree when at
 least two coefficients are nonzero and irreducible when at least three are
@@ -158,7 +170,9 @@ See the [diagonal construction](https://github.com/FormalFrontier/quadratic-alge
 [three-coefficient irreducibility theorem](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/docs/API.md#qa-diagonal-irreducible)
 and [binary nonsquare criterion](https://github.com/FormalFrontier/quadratic-algebras/blob/16a5b4c54c4586483cf53597a96eb91ecd5a3bca/docs/API.md#qa-binary-diagonal-irreducible).
 
-**The order and number field generated by a square root of minus five.** A domain quadratic algebra
+### The order and number field generated by a square root of minus five
+
+A domain quadratic algebra
 over a Dedekind domain is also shown to be Dedekind whenever it is integrally
 closed, using its finite-module and integral structures. Finally, the library
 proves that the integer quadratic algebra `QuadraticAlgebra ℤ (-5) 0` is not

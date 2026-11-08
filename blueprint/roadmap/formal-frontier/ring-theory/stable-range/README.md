@@ -44,7 +44,7 @@ come from pinned `general-linear-groups`; the stable-range consequences are prov
 here. The [guide](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/docs/GUIDE.md#headline-results) retains detailed statements,
 coordinate formulas, compatibility names and client inventories.
 
-**Bass conditions.** For arbitrary possibly noncommutative rings: right-unimodular
+**[Bass conditions](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Basic.lean).** For arbitrary possibly noncommutative rings: right-unimodular
 rows, `(S_n)`, least stable index, monotonicity, ring-equivalence invariance and
 [surjective descent/quasiregular quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Quotient.lean).
 [Nontrivial local rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) have least stable range one.
@@ -64,13 +64,15 @@ preserve `(S₁)`; matrix reflection needs nonempty indices, corners neither
 centrality nor fullness. [Commutative semilocal rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semilocal.lean)
 satisfy `(S₁)` assuming only finite maximal spectrum, including the zero ring.
 
-**Retract endomorphisms.** In any preadditive category, `i : X ⟶ Z`, `p : Z ⟶ X` and `i ≫ p = 𝟙 X`
+**[Retract endomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/EndRetract.lean).**
+In any preadditive category, `i : X ⟶ Z`, `p : Z ⟶ X` and `i ≫ p = 𝟙 X`
 transfer `Bass.StableRangeCondition (End Z) 1` to
 `Bass.StableRangeCondition (End X) 1` for the original canonical endomorphism
 rings. Object and morphism universes are independent; no complementary object,
 finite-length or nonzero hypothesis is needed.
 
-**Finite biproduct endomorphisms.** In any preadditive category, a displayed finite biproduct of objects with local
+**[Finite biproduct endomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/FiniteLocalEnd.lean).**
+In any preadditive category, a displayed finite biproduct of objects with local
 endomorphism rings, and every displayed retract of that biproduct, have canonical
 endomorphism rings satisfying `(S₁)`. Only that biproduct and, for the retract,
 its supplied retraction are required, with independent index universe; empty
