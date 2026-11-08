@@ -53,9 +53,9 @@ Returning to our specific situation, we now have
 - [Limiting improved $\tau$-decrement](de-prop-lim-improv.md)
 - [Improved entropy version of PFR](entropy-pfr-improv.md)
 
-One can then replace [Lemma pfr\_aux](../proof-of-pfr/pfr-aux.md) with
+One can then replace [Lemma pfr_aux](../proof-of-pfr/pfr-aux.md) with
 
-- [pfr\_aux-improv](pfr-aux-improv.md)
+- [pfr_aux-improv](pfr-aux-improv.md)
 
 This implies the following improved version of Theorem [PFR](../proof-of-pfr/pfr.md):
 

@@ -24,7 +24,7 @@ Apply the usual greedy algorithm.
 
 ## Lean
 
-Formalized as [`Eq1323.exists_complete_function`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.exists_complete_function).
+Stated as [`Eq1323.exists_complete_function`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.exists_complete_function); the blueprint does not mark its proof formalized.
 
 ## Sources
 

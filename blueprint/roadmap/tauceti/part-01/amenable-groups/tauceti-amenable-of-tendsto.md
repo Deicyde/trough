@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Amenable.of\_tendsto
+# TauCeti.Amenable.of_tendsto
 
 Cluster-point criterion: a topological group is amenable when it carries means `ms i` which
 are approximately left invariant along a nontrivial filter, that is, `ms i (L_g f) - ms i f → 0`

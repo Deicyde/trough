@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.zHat.cohomologicalDimensionAt\_eq\_one
+# TauCeti.zHat.cohomologicalDimensionAt_eq_one
 
 **The `p`-cohomological dimension of the profinite integers is one**, for every prime `p`.
 

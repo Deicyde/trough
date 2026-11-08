@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.Algebra.etale\_iff\_traceForm\_nondegenerate](tauceti-algebra-etale-iff-traceform-nondegenerat.md)
+- [TauCeti.Algebra.etale_iff_traceForm_nondegenerate](tauceti-algebra-etale-iff-traceform-nondegenerat.md)
 
 ## Lean
 

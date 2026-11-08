@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.ContCohomology.smoothTensorInducedDiagonalClass\_eq\_graphClass
+# TauCeti.ContCohomology.smoothTensorInducedDiagonalClass_eq_graphClass
 
 The tensor-induced class of the homogeneous degree-one cocycle of a continuous character is
 the index-two graph class. The transversal has representatives `1` and `s`, and the coefficient

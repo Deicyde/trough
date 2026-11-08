@@ -4,10 +4,10 @@ navigation: transparent
 
 # IsDedekindDomain.HeightOneSpectr… to NumberField.InfinitePlace.Comple…
 
-- [IsDedekindDomain.HeightOneSpectrum.valuation\_comap](isdedekinddomain-heightonespectrum-valuation-com.md)
+- [IsDedekindDomain.HeightOneSpectrum.valuation_comap](isdedekinddomain-heightonespectrum-valuation-com.md)
 - [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-adi.md)
-- [IsDedekindDomain.HeightOneSpectrum.Extension.valued\_adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-val.md)
-- [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom\_image\_adicCompletionIntegers](isdedekinddomain-heightonespectrum-extension-adi-2.md)
+- [IsDedekindDomain.HeightOneSpectrum.Extension.valued_adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-val.md)
+- [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom_image_adicCompletionIntegers](isdedekinddomain-heightonespectrum-extension-adi-2.md)
 - [IsDedekindDomain.HeightOneSpectrum.adicCompletion.instIsModuleTopology](isdedekinddomain-heightonespectrum-adiccompletio.md)
 
 Because of the commutative diagram
@@ -31,11 +31,11 @@ Because $K_v\to\prod_{w|v}L_w$ lies over $K\to L$, there's an induced $L$-algebr
 
 We now start thinking about what's going on at the integral level. We write $A_v$ for the integers of $K_v$ and $B_w$ for the integers of $L_w$.
 
-- [IsDedekindDomain.HeightOneSpectrum.range\_baseChange\_comp\_tensorAdicCompletionTo\_eq\_pi](isdedekinddomain-heightonespectrum-range-basecha.md)
+- [IsDedekindDomain.HeightOneSpectrum.range_baseChange_comp_tensorAdicCompletionTo_eq_pi](isdedekinddomain-heightonespectrum-range-basecha.md)
 
 A summary of what we have so far: for all finite places $v$ of $A$ we have shown that the natural map $L\otimes_KK_v\to\prod_wL_w$ is an isomorphism of $L$-algebras, and that if $L\otimes_KK_v$ has the $K_v$-module topology and each $L_w$ has the valuation topology then this map is also a homeomorphism. Furthermore we have shown that there is an induced algebraic isomorphism $B\otimes_AA_v\equiv\prod_w B_w$ on the subrings of the left and right hand sides.
 
-Recall that the finite adeles $\mathbb{A}_{A,K}^\infty$ is defined in mathlib to be the restricted product of the $K_v$ with respect to the $A_v$, equipped with a certain restricted product topology (which is not the subspace topology of the product topology, indeed $\prod_v A_v$ is open in this topology). We have seen in definition [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-adi.md) that there's a map $K_v\to L_w$ if $w|v$, extending $K\to L$, and we have seen in theorem [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom\_image\_adicCompletionIntegers](isdedekinddomain-heightonespectrum-extension-adi-2.md) that this sends $A_v$ to $B_w$. We conclude
+Recall that the finite adeles $\mathbb{A}_{A,K}^\infty$ is defined in mathlib to be the restricted product of the $K_v$ with respect to the $A_v$, equipped with a certain restricted product topology (which is not the subspace topology of the product topology, indeed $\prod_v A_v$ is open in this topology). We have seen in definition [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-adi.md) that there's a map $K_v\to L_w$ if $w|v$, extending $K\to L$, and we have seen in theorem [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom_image_adicCompletionIntegers](isdedekinddomain-heightonespectrum-extension-adi-2.md) that this sends $A_v$ to $B_w$. We conclude
 
 - [IsDedekindDomain.FiniteAdeleRing.mapSemialgHom](isdedekinddomain-finiteadelering-mapsemialghom.md)
 
@@ -57,7 +57,7 @@ As usual we are in the AKLB set-up, so in particular $K$ is the field of fractio
 
 We start with the following observation. If $M$ is a $K$-module then there's a canonical map $B\otimes_AM\to L\otimes_KM$ sending $b\otimes m$ to $b\otimes m$ (this follows from the universal property of the tensor product). Our first goal is to show that this map is an isomorphism. Let us establish some lemmas first.
 
-- [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md)
+- [IsDedekindDomain.AKLB.tensorProduct_module_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md)
 
 We now need to explain how tensor products sometimes commute with restricted products.
 
@@ -123,7 +123,7 @@ The overall strategy is to first establish, for each infinite place $v$ of $K$, 
 
 First, we require a preliminary result that $K$ is dense inside any product of completions $\prod_{v\in S} K_v$ of $K$ at infinite places.
 
-- [NumberField.InfinitePlace.Completion.denseRange\_algebraMap\_subtype\_pi](numberfield-infiniteplace-completion-denserange.md)
+- [NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi](numberfield-infiniteplace-completion-denserange.md)
 
 ### Base change at infinite places
 
@@ -132,9 +132,9 @@ First, we require a preliminary result that $K$ is dense inside any product of c
 The map in [NumberField.InfinitePlace.Completion.piExtension](numberfield-infiniteplace-completion-piextension.md) can be lifted to an $L$-algebra homomorphism defined on $L\otimes_K K_v$.
 
 - [NumberField.InfinitePlace.Completion.baseChange](numberfield-infiniteplace-completion-basechange.md)
-- [NumberField.InfinitePlace.Completion.baseChange\_surjective](numberfield-infiniteplace-completion-basechange-2.md)
-- [NumberField.InfinitePlace.Completion.baseChange\_injective](numberfield-infiniteplace-completion-basechange-3.md)
+- [NumberField.InfinitePlace.Completion.baseChange_surjective](numberfield-infiniteplace-completion-basechange-2.md)
+- [NumberField.InfinitePlace.Completion.baseChange_injective](numberfield-infiniteplace-completion-basechange-3.md)
 
 We have established that the map of Definition [NumberField.InfinitePlace.Completion.baseChange](numberfield-infiniteplace-completion-basechange.md) gives an $L$-algebra isomorphism between $L\otimes_K K_v$ and $\prod_{w\mid v}L_w$. The left-hand side is given the $K_v$-module topology, while we show that the right-hand side also has the $K_v$-module topology.
 
-- [NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap\_fLT](numberfield-infiniteplace-completion-instismodul.md)
+- [NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT](numberfield-infiniteplace-completion-instismodul.md)

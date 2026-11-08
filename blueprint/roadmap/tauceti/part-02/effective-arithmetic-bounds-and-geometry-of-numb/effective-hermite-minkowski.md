@@ -29,7 +29,7 @@ NumberField.ncard_setOf_finiteDimensional_abs_discr_le_le.{u_1} (A : Type u_1) [
 
 ## Proof depends on
 
-- [TauCeti.Polynomial.ncard\_biUnion\_roots\_natDegree\_le\_abs\_intCoeff\_le](tauceti-polynomial-ncard-biunion-roots-natdegree.md)
+- [TauCeti.Polynomial.ncard_biUnion_roots_natDegree_le_abs_intCoeff_le](tauceti-polynomial-ncard-biunion-roots-natdegree.md)
 
 ## Lean
 

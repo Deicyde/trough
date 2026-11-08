@@ -2,7 +2,7 @@
 
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/GlobalQuadraticForms/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [TauCeti.NumberField.QuadraticForm.exists\_hilbertSymbol\_eq\_ite](tauceti-numberfield-quadraticform-exists-hilbert.md)
+- [TauCeti.NumberField.QuadraticForm.exists_hilbertSymbol_eq_ite](tauceti-numberfield-quadraticform-exists-hilbert.md)
 - [The Hasse product formula](the-hasse-product-formula.md)
 - [The quaternary case of the Hasse–Minkowski theorem](the-quaternary-case-of-the-hasse-minkowski-theor.md)
 - [The Hasse–Minkowski induction step in rank at least five](the-hasse-minkowski-induction-step-in-rank-at-le.md)

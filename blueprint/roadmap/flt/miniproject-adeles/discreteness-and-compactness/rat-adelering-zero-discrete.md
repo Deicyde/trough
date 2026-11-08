@@ -5,7 +5,7 @@ lean: Rat.AdeleRing.zero_discrete
 statement: formalized
 ---
 
-# Rat.AdeleRing.zero\_discrete
+# Rat.AdeleRing.zero_discrete
 
 There's an open subset of $\mathbb{A}_{\mathbb{Q}}$ whose intersection with $\mathbb{Q}$ is $\{0\}$.
 
@@ -19,7 +19,7 @@ Use $\prod_p{\mathbb{Z}_p}\times(-1,1)$. Any rational $q$ in this set is a $p$-a
 
 ## Lean
 
-Formalized as [`Rat.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Rat.AdeleRing.zero_discrete).
+Stated as [`Rat.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Rat.AdeleRing.zero_discrete); the blueprint does not mark its proof formalized.
 
 ## Sources
 

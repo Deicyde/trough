@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [TauCeti.PreAdicSpace.isAdic](tauceti-preadicspace-isadic.md)
-- [TauCeti.WittVector.isStronglyNoetherian\_intervalRing](tauceti-wittvector-isstronglynoetherian-interval.md)
+- [TauCeti.WittVector.isStronglyNoetherian_intervalRing](tauceti-wittvector-isstronglynoetherian-interval.md)
 
 ## Lean
 

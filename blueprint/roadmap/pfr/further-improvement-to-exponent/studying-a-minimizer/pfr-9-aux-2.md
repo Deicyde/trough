@@ -21,7 +21,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Apply [Corollary pfr-9-aux](pfr-9-aux.md) and [Ruzsa covering lemma](../../proof-of-pfr/ruz-cov.md) to get the result, as in the proof of [Lemma pfr\_aux](../../proof-of-pfr/pfr-aux.md).
+Apply [Corollary pfr-9-aux](pfr-9-aux.md) and [Ruzsa covering lemma](../../proof-of-pfr/ruz-cov.md) to get the result, as in the proof of [Lemma pfr_aux](../../proof-of-pfr/pfr-aux.md).
 
 ## Lean
 

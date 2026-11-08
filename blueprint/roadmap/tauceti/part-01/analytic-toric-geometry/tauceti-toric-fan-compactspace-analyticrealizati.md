@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Toric.Fan.compactSpace\_analyticRealization\_iff\_isComplete
+# TauCeti.Toric.Fan.compactSpace_analyticRealization_iff_isComplete
 
 A nonempty regular fan has compact analytic realization exactly when it is complete. The
 nonemptiness hypothesis is necessary: the realization of the empty fan is empty, hence compact,

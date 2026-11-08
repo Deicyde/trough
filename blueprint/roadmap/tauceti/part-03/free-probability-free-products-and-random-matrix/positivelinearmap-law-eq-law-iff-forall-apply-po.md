@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# PositiveLinearMap.law\_eq\_law\_iff\_forall\_apply\_pow
+# PositiveLinearMap.law_eq_law_iff_forall_apply_pow
 
 Two selfadjoint elements, possibly in different C⋆-algebras and with respect to different
 positive functionals, have the same law exactly when they have the same moments:

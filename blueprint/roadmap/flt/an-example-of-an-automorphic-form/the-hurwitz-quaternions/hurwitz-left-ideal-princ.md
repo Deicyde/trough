@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.left\_ideal\_princ
+# Hurwitz.left_ideal_princ
 
 All left ideals of $\mathcal{O}$ are principal.
 
@@ -16,7 +16,7 @@ All left ideals of $\mathcal{O}$ are principal.
 
 ## Proof depends on
 
-- [Hurwitz.quot\_rem](hurwitz-quot-rem.md)
+- [Hurwitz.quot_rem](hurwitz-quot-rem.md)
 
 ## Proof
 

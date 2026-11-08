@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# FermatLastTheorem.of\_odd\_primes
+# FermatLastTheorem.of_odd_primes
 
 If there is a counterexample to Fermat's Last Theorem, then there is a counterexample $a^p+b^p=c^p$ with $p$ an odd prime.
 

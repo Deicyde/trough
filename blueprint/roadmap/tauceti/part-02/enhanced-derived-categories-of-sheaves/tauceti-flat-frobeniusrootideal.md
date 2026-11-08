@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.flat\_frobeniusRootIdeal
+# TauCeti.flat_frobeniusRootIdeal
 
 **Frobenius-root ideals are flat**, also when `R` has zero divisors.
 

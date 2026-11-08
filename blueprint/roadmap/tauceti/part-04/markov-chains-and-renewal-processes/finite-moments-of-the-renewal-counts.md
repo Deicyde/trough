@@ -28,7 +28,7 @@ TauCeti.Probability.lintegral_renewalCount_pow_lt_top.{u_1} {Ω : Type u_1} [Mea
 
 - [Chernoff bound for the arrival times](chernoff-bound-for-the-arrival-times.md)
 - [Finiteness of the renewal counts](finiteness-of-the-renewal-counts.md)
-- [TauCeti.Probability.renewalCount\_eq\_natCast\_iff](tauceti-probability-renewalcount-eq-natcast-iff.md)
+- [TauCeti.Probability.renewalCount_eq_natCast_iff](tauceti-probability-renewalcount-eq-natcast-iff.md)
 
 ## Lean
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.WittVector.isStronglyNoetherian\_intervalRing
+# TauCeti.WittVector.isStronglyNoetherian_intervalRing
 
 **The interval ring `B^I` is strongly noetherian** (Kedlaya, Theorem 4.10 and Remark 4.11),
 for all radii `ρ₁ ≤ ρ₂`: each completed Huber algebra `B^I⟨X₁, …, Xₙ⟩` is the Gauss-normed ring

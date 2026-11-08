@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# BoundedVariationOn.exists\_arclength\_factorization
+# BoundedVariationOn.exists_arclength_factorization
 
 A continuous rectifiable curve factors through a 1-Lipschitz curve on its length interval.
 The factor has exactly the parameter difference as variation on every subinterval, including

@@ -4,7 +4,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Uniqueness of aspherical spaces of CW type](uniqueness-of-aspherical-spaces-of-cw-type.md)
 - [The cellular and the simplicial classifying spaces agree](the-cellular-and-the-simplicial-classifying-spac.md)
-- [TauCeti.exists\_isEilenbergMacLaneSpaceOne](tauceti-exists-iseilenbergmaclanespaceone.md)
+- [TauCeti.exists_isEilenbergMacLaneSpaceOne](tauceti-exists-iseilenbergmaclanespaceone.md)
 - [The singular homology of the classifying space is group homology](the-singular-homology-of-the-classifying-space-i.md)
 - [The singular cohomology of the classifying space is group cohomology](the-singular-cohomology-of-the-classifying-space.md)
 - [TauCeti.universalGSpaceStandardHomotopyEquiv](tauceti-universalgspacestandardhomotopyequiv.md)

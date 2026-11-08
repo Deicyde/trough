@@ -29,7 +29,7 @@ This is an alternative expression for $\zeta(s)^3$ that can be derived from the 
 
 ## Lean
 
-Formalized as [`ArithmeticFunction.zeta_pow_three_eq_alt`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.zeta_pow_three_eq_alt).
+Stated as [`ArithmeticFunction.zeta_pow_three_eq_alt`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.zeta_pow_three_eq_alt); the blueprint does not mark its proof formalized.
 
 ## Sources
 

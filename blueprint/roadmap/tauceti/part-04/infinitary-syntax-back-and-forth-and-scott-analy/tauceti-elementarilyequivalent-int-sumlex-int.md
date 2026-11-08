@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.elementarilyEquivalent\_int\_sumLex\_int
+# TauCeti.elementarilyEquivalent_int_sumLex_int
 
 `ℤ` and `ℤ ⊕ₗ ℤ` satisfy the same first-order sentences in the language of orders.
 

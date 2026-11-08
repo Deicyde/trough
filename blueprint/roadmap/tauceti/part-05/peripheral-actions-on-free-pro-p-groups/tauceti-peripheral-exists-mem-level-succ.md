@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Peripheral.exists\_mem\_level\_succ
+# TauCeti.Peripheral.exists_mem_level_succ
 
 A pair of conjugators whose defect lies in `γ_n`, for positive `n`, can be corrected so that
 its defect lies in `γ_{n+1}`. The corrections lie in `γ_{n-1}`, and the correction at the first

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.MvPowerSeries.supSeminorm\_eq\_norm
+# TauCeti.MvPowerSeries.supSeminorm_eq_norm
 
 On a Tate algebra the supremum seminorm is the Gauss norm: `|f|sup = ‖f‖`.
 
@@ -22,7 +22,7 @@ TauCeti.MvPowerSeries.supSeminorm_eq_norm.{u_1} {K : Type u_1} [NontriviallyNorm
 
 ## Proof depends on
 
-- [TauCeti.IsAffinoidAlgebra.continuous\_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [TauCeti.IsAffinoidAlgebra.continuous_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
 
 ## Lean
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.GTopology.isSheaf\_iff
+# TauCeti.GTopology.isSheaf_iff
 
 The site sheaf condition is precisely unique gluing of matching families on all admissible
 covers. `Presieve.IsSheafFor` is Mathlib's existence-and-uniqueness condition for amalgamations.

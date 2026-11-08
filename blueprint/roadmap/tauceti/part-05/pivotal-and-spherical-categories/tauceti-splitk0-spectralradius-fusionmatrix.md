@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.SplitK0.spectralRadius\_fusionMatrix
+# TauCeti.SplitK0.spectralRadius_fusionMatrix
 
 The value of the Frobenius–Perron character on a simple class `S` is the spectral radius of
 the fusion matrix of `S`.

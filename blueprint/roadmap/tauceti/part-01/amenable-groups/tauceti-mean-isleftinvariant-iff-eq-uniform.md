@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Mean.isLeftInvariant\_iff\_eq\_uniform
+# TauCeti.Mean.isLeftInvariant_iff_eq_uniform
 
 On a finite group, the uniform mean is the unique left-invariant mean.
 

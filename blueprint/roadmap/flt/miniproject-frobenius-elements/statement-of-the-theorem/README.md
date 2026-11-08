@@ -12,7 +12,7 @@ In the next definition we write down a group homomorphism $\phi$ from $D_Q$ to $
 
 The theorem we want in this mini-project is
 
-- [IsFractionRing.stabilizerHom\_surjective](isfractionring-stabilizerhom-surjective.md)
+- [IsFractionRing.stabilizerHom_surjective](isfractionring-stabilizerhom-surjective.md)
 
 The goal of this mini-project is to get this theorem formalised and ideally into mathlib.
 

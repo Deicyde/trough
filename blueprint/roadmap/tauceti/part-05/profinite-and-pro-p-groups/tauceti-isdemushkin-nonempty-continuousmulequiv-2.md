@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsDemushkin.nonempty\_continuousMulEquiv\_of\_even\_demushkinRank\_of\_range\_eq\_unitsPlusMinus
+# TauCeti.IsDemushkin.nonempty_continuousMulEquiv_of_even_demushkinRank_of_range_eq_unitsPlusMinus
 
 **Uniqueness of the dyadic Demushkin groups of even rank with image `{±1} × U^(f)`** (Labute,
 Theorem 6). Two Demushkin groups at `p = 2` of the same even rank `n ≥ 4` whose canonical

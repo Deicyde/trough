@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsFiniteEtaleSplit.of\_henselianLocalRing
+# TauCeti.IsFiniteEtaleSplit.of_henselianLocalRing
 
 A Henselian local ring with separably closed residue field, that is, a strictly Henselian local
 ring, has no nonsplit finite étale covers: a faithfully flat finite étale algebra has a point over
@@ -23,7 +23,7 @@ TauCeti.IsFiniteEtaleSplit.of_henselianLocalRing.{u} (R : Type u) [CommRing R]
 
 ## Proof depends on
 
-- [TauCeti.isFiniteEtaleSplit\_iff\_exists\_section](tauceti-isfiniteetalesplit-iff-exists-section.md)
+- [TauCeti.isFiniteEtaleSplit_iff_exists_section](tauceti-isfiniteetalesplit-iff-exists-section.md)
 
 ## Lean
 

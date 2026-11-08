@@ -1,6 +1,6 @@
 # PNT+
 
-The blueprint of PNT+, read at commit [127b50e3](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/tree/127b50e33f6033e2147921167a117af96d9ba4ea) (2026-10-19): one article for each of its 383 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 20 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A node the blueprint marks `\leanok` is formalized here, its proof too when that is marked, and `\mathlibok` puts it in Mathlib. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+The blueprint of PNT+, read at commit [127b50e3](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/tree/127b50e33f6033e2147921167a117af96d9ba4ea) (2026-10-19): one article for each of its 383 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 20 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement whose proof the blueprint does not mark `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

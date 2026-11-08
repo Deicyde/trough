@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isZero\_cyclicCohomology\_self\_of\_odd
+# TauCeti.isZero_cyclicCohomology_self_of_odd
 
 The cyclic cohomology of the ground ring vanishes in odd degree.
 

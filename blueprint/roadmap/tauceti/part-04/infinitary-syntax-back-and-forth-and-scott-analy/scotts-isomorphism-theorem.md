@@ -32,9 +32,9 @@ TauCeti.scott_isomorphism.{u, v, w, w'} {L : FirstOrder.Language}
 ## Proof depends on
 
 - [TauCeti.BFEquiv](tauceti-bfequiv.md)
-- [TauCeti.exists\_complete\_self\_stabilization](tauceti-exists-complete-self-stabilization.md)
+- [TauCeti.exists_complete_self_stabilization](tauceti-exists-complete-self-stabilization.md)
 - [TauCeti.PotentialIso](tauceti-potentialiso.md)
-- [TauCeti.realize\_scottFormula\_iff\_bfEquiv](tauceti-realize-scottformula-iff-bfequiv.md)
+- [TauCeti.realize_scottFormula_iff_bfEquiv](tauceti-realize-scottformula-iff-bfequiv.md)
 
 ## Lean
 

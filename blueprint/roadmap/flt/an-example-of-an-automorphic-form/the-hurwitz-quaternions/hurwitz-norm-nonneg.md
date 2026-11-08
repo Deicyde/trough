@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.norm\_nonneg
+# Hurwitz.norm_nonneg
 
 The norm of an element is nonnegative.
 

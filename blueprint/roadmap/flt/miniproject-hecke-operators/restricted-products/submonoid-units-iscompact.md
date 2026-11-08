@@ -6,7 +6,7 @@ statement: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/588
 ---
 
-# Submonoid.units\_isCompact
+# Submonoid.units_isCompact
 
 If $M$ is a Hausdorff topological monoid and $U$ is a compact submonoid, then the units $U^\times$ of $U$ are naturally a compact subgroup of $M^\times$.
 
@@ -22,7 +22,7 @@ We have $U\times U$ is a compact subset of $M\times M$, and so $U^\times=M^\time
 
 ## Lean
 
-Formalized as [`Submonoid.units_isCompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Submonoid.units_isCompact).
+Stated as [`Submonoid.units_isCompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Submonoid.units_isCompact); the blueprint does not mark its proof formalized.
 
 ## Sources
 

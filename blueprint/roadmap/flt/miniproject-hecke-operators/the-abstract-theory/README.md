@@ -19,4 +19,4 @@ The group $G$ is not in general commutative, and hence if $U=V$ the Hecke operat
 
 The finiteness hypothesis that the decomposition $UgV=\coprod_i g_iV$ is into a finite union is necessary for the theory to work. If $G$ is a topological group then here is a criterion which gives the finiteness hypothesis for free.
 
-- [QuotientGroup.mk\_image\_finite\_of\_compact\_of\_open](quotientgroup-mk-image-finite-of-compact-of-open.md)
+- [QuotientGroup.mk_image_finite_of_compact_of_open](quotientgroup-mk-image-finite-of-compact-of-open.md)

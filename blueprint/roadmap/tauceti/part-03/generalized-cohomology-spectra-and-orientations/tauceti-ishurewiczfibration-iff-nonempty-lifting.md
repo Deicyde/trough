@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isHurewiczFibration\_iff\_nonempty\_liftingFunction
+# TauCeti.isHurewiczFibration_iff_nonempty_liftingFunction
 
 A map is a Hurewicz fibration for test spaces in `Type (max u v)` if and only if it has a
 lifting function.

@@ -107,7 +107,7 @@ and using [Unique factorization](unique-factorization.md) we reduce to either $y
 
 ## Lean
 
-Formalized as [`Refutation_854.not_3316_3925`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_854.not_3316_3925).
+Stated as [`Refutation_854.not_3316_3925`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_854.not_3316_3925); the blueprint does not mark its proof formalized.
 
 ## Sources
 

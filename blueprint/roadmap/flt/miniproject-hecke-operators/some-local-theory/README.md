@@ -17,4 +17,4 @@ Say $\Gamma_v$ is a subgroup of $GL_2(k_v)$. Then $\Gamma_v$ is finite. Consider
 
 Say now $\begin{pmatrix}1&*\\0&1\end{pmatrix}\subseteq\Gamma_v\subseteq\begin{pmatrix}*&*\\0&*\end{pmatrix}$ and let $U:=U_v$ be its preimage in $GL_2(\mathcal{O}_v)$, considered as a compact open subgroup of $GL_2(K_v)$. Choose $0\not=\alpha\in\mathcal{O}_v$ and define $g=\begin{pmatrix}\alpha&0\\0&1\end{pmatrix}\in GL_2(K_v)$. Let's do an explicit double coset decomposition in preparation for a calculation with Hecke operators.
 
-- [bijOn\_unipotent\_mul\_diagU1\_U1diagU1](bijon-unipotent-mul-diagu1-u1diagu1.md)
+- [bijOn_unipotent_mul_diagU1_U1diagU1](bijon-unipotent-mul-diagu1-u1diagu1.md)

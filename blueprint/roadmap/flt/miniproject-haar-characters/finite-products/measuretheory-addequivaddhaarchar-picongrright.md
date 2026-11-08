@@ -7,13 +7,13 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/521
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_piCongrRight
+# MeasureTheory.addEquivAddHaarChar_piCongrRight
 
 If $A_i$ are a finite collection of locally compact topological abelian groups, with $\phi_i:A_i\to A_i$ additive homeomorphisms, then $d_{\prod_i A_i}(\prod_i\phi_i)=\prod_i d_{A_i}(\phi_i)$.
 
 ## Depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md)
+- [MeasureTheory.addEquivAddHaarChar_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md)
 
 ## Proof
 

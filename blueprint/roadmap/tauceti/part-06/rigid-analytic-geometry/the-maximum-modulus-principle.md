@@ -27,8 +27,8 @@ TauCeti.IsAffinoidAlgebra.exists_pointNorm_eq_supSeminorm.{u_1, u_2} {K : Type u
 
 - [Affinoid Noether normalisation](affinoid-noether-normalisation.md)
 - [The supremum seminorm is the spectral value of the minimal polynomial](the-supremum-seminorm-is-the-spectral-value-of-t.md)
-- [TauCeti.IsAffinoidAlgebra.continuous\_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
-- [TauCeti.MvPowerSeries.supSeminorm\_eq\_norm](tauceti-mvpowerseries-supseminorm-eq-norm.md)
+- [TauCeti.IsAffinoidAlgebra.continuous_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [TauCeti.MvPowerSeries.supSeminorm_eq_norm](tauceti-mvpowerseries-supseminorm-eq-norm.md)
 
 ## Lean
 

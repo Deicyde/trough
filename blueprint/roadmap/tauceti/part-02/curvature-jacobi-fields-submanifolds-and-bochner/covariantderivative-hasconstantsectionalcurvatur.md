@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# CovariantDerivative.hasConstantSectionalCurvature\_iff\_isConstantCurvatureTensor
+# CovariantDerivative.hasConstantSectionalCurvature_iff_isConstantCurvatureTensor
 
 A metric-compatible torsion-free connection has constant sectional curvature `κ` if and only
 if its curvature tensor is the constant-curvature tensor `R(w, u)v = κ (⟨u, v⟩ w - ⟨w, v⟩ u)` at
@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [CovariantDerivative.IsMetricCompatible.riemannCurvatureTensor\_eq\_of\_forall\_linearIndependent](covariantderivative-ismetriccompatible-riemanncu.md)
+- [CovariantDerivative.IsMetricCompatible.riemannCurvatureTensor_eq_of_forall_linearIndependent](covariantderivative-ismetriccompatible-riemanncu.md)
 
 ## Lean
 

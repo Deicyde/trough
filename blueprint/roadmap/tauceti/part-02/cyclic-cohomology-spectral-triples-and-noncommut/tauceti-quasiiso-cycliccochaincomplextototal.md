@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.quasiIso\_cyclicCochainComplexToTotal
+# TauCeti.quasiIso_cyclicCochainComplexToTotal
 
 Over a ring containing `ℚ`, the inclusion of Connes' cyclic cochain complex into the total
 complex of the cyclic bicomplex is a quasi-isomorphism: cyclic cohomology defined by cyclic cochains

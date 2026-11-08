@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# CategoryTheory.ActionCategory.isEmpty\_equivalence\_punit
+# CategoryTheory.ActionCategory.isEmpty_equivalence_punit
 
 If the group is nontrivial, the point quotient `[*/G]` is not equivalent to a thin category;
 in particular it is not equivalent to the point with trivial isotropy.

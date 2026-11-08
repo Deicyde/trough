@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.SymplecticForm.isLagrangian\_iff\_maximal\_isIsotropic
+# TauCeti.SymplecticForm.isLagrangian_iff_maximal_isIsotropic
 
 Lagrangian subspaces are exactly the maximal isotropic subspaces, in any dimension.
 

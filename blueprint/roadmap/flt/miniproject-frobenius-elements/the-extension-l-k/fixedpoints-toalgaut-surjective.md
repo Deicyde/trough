@@ -5,7 +5,7 @@ mathlib: true
 mathlib_declaration: FixedPoints.toAlgAut_surjective
 ---
 
-# FixedPoints.toAlgAut\_surjective
+# FixedPoints.toAlgAut_surjective
 
 Let $H$ be a finite group acting on a field $F$ by field automorphisms. Then the map $H \to \operatorname{Aut}(F/F^H)$ is surjective.
 

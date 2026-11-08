@@ -44,7 +44,7 @@ Now we tackle the most difficult verification, which is 854. This splits into a 
 
 ## Lean
 
-Formalized as [`Refutation_854.Greedy.Extension1.next_ok`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_854.Greedy.Extension1.next_ok).
+Stated as [`Refutation_854.Greedy.Extension1.next_ok`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_854.Greedy.Extension1.next_ok); the blueprint does not mark its proof formalized.
 
 ## Sources
 

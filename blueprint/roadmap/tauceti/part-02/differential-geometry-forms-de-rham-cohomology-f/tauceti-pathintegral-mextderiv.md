@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.pathIntegral\_mextDeriv
+# TauCeti.pathIntegral_mextDeriv
 
 **The fundamental theorem of calculus for line integrals**, for a `C¹` form `ψ` of degree
 zero: the line integral of `dψ` along a `C¹` curve is the difference of the values of `ψ` at the

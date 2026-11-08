@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ContinuousLinearMap.summingENorm\_le\_ofReal\_iff\_exists\_eq\_comp\_codRestrict\_topologicalClosure
+# ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_eq_comp_codRestrict_topologicalClosure
 
 **Pietsch factorization** through the closure of the canonical image: for a Banach space `F`,
 `1 ≤ p < ∞` and `C ≥ 0`, `πₚ(T) ≤ C` iff there are a regular Borel probability measure `ν` on the

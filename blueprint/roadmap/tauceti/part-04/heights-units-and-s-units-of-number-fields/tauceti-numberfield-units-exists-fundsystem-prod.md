@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NumberField.Units.exists\_fundSystem\_prod\_absLogHeight₁\_le
+# TauCeti.NumberField.Units.exists_fundSystem_prod_absLogHeight₁_le
 
 **A reduced fundamental system** (Bugeaud–Győry, Lemma 1). Some fundamental system `ε` of
 units has `∏ i, absLogHeight₁ (ε i) ≤ (r!) ^ 2 / (2 ^ (r - 1) * [K : ℚ] ^ r) * regulator K`, where
@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [ZLattice.prod\_successiveMin\_mul\_measure\_le\_two\_pow\_mul\_covolume](zlattice-prod-successivemin-mul-measure-le-two-p.md)
+- [ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume](zlattice-prod-successivemin-mul-measure-le-two-p.md)
 - [ZLattice.successiveMin](zlattice-successivemin.md)
 
 ## Lean

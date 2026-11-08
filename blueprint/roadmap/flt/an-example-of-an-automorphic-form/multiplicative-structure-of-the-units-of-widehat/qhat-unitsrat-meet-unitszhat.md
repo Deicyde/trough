@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Qhat.unitsrat\_meet\_unitszHat
+# Qhat.unitsrat_meet_unitszHat
 
 The intersection of $\mathbb{Q}^\times$ and $\widehat{\mathbb{Z}}^\times$ in $\widehat{\mathbb{Q}}^\times$ is $\mathbb{Z}^\times$.
 
@@ -18,7 +18,7 @@ The intersection of $\mathbb{Q}^\times$ and $\widehat{\mathbb{Z}}^\times$ in $\w
 ## Proof depends on
 
 - [QHat.lowestTerms](../a-crash-course-in-tensor-products/qhat-lowestterms.md)
-- [QHat.rat\_meet\_zHat](../additive-structure-of-widehat-q/qhat-rat-meet-zhat.md)
+- [QHat.rat_meet_zHat](../additive-structure-of-widehat-q/qhat-rat-meet-zhat.md)
 
 ## Proof
 

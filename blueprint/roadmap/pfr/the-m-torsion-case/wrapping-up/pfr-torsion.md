@@ -16,11 +16,11 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [pfr\_aux\_torsion](pfr-aux-torsion.md)
+- [pfr_aux_torsion](pfr-aux-torsion.md)
 
 ## Proof
 
-If $G$ is finite, repeat the proof of [PFR](../../proof-of-pfr/pfr.md), but with [Lemma pfr\_aux\_torsion](pfr-aux-torsion.md) in place of [Lemma pfr\_aux](../../proof-of-pfr/pfr-aux.md). In general, reduce to the finite span of $A$ over $\mathrm{Z}/m\mathrm{Z}$.
+If $G$ is finite, repeat the proof of [PFR](../../proof-of-pfr/pfr.md), but with [Lemma pfr_aux_torsion](pfr-aux-torsion.md) in place of [Lemma pfr_aux](../../proof-of-pfr/pfr-aux.md). In general, reduce to the finite span of $A$ over $\mathrm{Z}/m\mathrm{Z}$.
 
 ## Lean
 

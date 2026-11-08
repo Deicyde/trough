@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.not\_continuous\_restrictedProductSum\_symm
+# TauCeti.not_continuous_restrictedProductSum_symm
 
 The inverse of the splitting `restrictedProductSum` of a restricted product over a sum of index
 types is not continuous in general: for `Πʳ k : ℕ ⊕ ℕ, [Multiplicative ℚ, ⊥]`, with the trivial,

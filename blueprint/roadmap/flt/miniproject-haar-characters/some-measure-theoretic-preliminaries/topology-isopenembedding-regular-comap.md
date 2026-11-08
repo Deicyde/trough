@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/513
 ---
 
-# Topology.IsOpenEmbedding.regular\_comap
+# Topology.IsOpenEmbedding.regular_comap
 
 The pullback of a regular Borel measure along an open embedding is a regular Borel measure.
 

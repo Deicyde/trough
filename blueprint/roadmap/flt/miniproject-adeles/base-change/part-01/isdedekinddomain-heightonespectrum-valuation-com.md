@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsDedekindDomain.HeightOneSpectrum.valuation\_comap
+# IsDedekindDomain.HeightOneSpectrum.valuation_comap
 
 If $i:K\to L$ denotes the inclusion then for $k\in K$ we have $e\times w(i(k))=v(k)$, where $e$ is the ramification index of $w/v$ (recall that valuations here are written additively, unlike in mathlib).
 

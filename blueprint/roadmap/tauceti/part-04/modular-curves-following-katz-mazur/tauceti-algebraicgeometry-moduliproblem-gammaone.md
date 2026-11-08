@@ -23,7 +23,7 @@ TauCeti.AlgebraicGeometry.ModuliProblem.gammaOneRepresentableBy.{u} {B : Algebra
 
 ## Proof depends on
 
-- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale\_torsion\_hom\_of\_forall\_intCast\_ne\_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
+- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale_torsion_hom_of_forall_intCast_ne_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
 
 ## Lean
 

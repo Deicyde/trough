@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Toric.Fan.exists\_partialDiffeomorph\_analyticBoundaryComponent\_normalForm
+# TauCeti.Toric.Fan.exists_partialDiffeomorph_analyticBoundaryComponent_normalForm
 
 The toric boundary has the holomorphic coordinate-hyperplane normal form near every point `x`
 of the realization. There are a biholomorphism `e` from an open neighbourhood of `x` onto an open

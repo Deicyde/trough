@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Floer.NovikovRing.forall\_finite\_lt\_iff\_bddAbove\_degree
+# TauCeti.Floer.NovikovRing.forall_finite_lt_iff_bddAbove_degree
 
 For a positively monotone pair, a coefficient function on the period group satisfies the
 Novikov condition of the Floer Novikov ring exactly when the degrees of its support are bounded

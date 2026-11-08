@@ -22,7 +22,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.signedCheckedR\_braid](tauceti-signedcheckedr-braid.md)
+- [TauCeti.signedCheckedR_braid](tauceti-signedcheckedr-braid.md)
 
 ## Lean
 

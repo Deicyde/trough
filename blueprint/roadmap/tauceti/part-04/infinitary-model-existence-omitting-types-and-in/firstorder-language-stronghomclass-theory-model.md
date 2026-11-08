@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# FirstOrder.Language.StrongHomClass.theoryω\_model\_iff
+# FirstOrder.Language.StrongHomClass.theoryω_model_iff
 
 Isomorphic structures are models of the same `L_{ω₁ω}` theories.
 

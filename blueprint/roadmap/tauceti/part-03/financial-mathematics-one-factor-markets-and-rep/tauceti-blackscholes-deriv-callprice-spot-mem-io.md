@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.BlackScholes.deriv\_callPrice\_spot\_mem\_Ioo
+# TauCeti.BlackScholes.deriv_callPrice_spot_mem_Ioo
 
 The call delta lies strictly between `0` and `1`.
 
@@ -22,7 +22,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.BlackScholes.mul\_gaussianPDFReal\_dPlus](tauceti-blackscholes-mul-gaussianpdfreal-dplus.md)
+- [TauCeti.BlackScholes.mul_gaussianPDFReal_dPlus](tauceti-blackscholes-mul-gaussianpdfreal-dplus.md)
 
 ## Lean
 

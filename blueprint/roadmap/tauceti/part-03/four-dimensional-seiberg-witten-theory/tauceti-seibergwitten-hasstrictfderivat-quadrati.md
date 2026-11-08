@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.SeibergWitten.hasStrictFDerivAt\_quadraticEnd
+# TauCeti.SeibergWitten.hasStrictFDerivAt_quadraticEnd
 
 The real Fréchet derivative of `Q₀` at `ψ` is `B(ψ, ·)`, that is
 `DQ₀|_ψ (φ) = φψ* + ψφ* - Re⟪ψ, φ⟫ Id`; this holds in the strict sense.

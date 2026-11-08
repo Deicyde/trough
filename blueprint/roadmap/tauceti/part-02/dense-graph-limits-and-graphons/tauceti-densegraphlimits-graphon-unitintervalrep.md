@@ -26,7 +26,7 @@ TauCeti.DenseGraphLimits.Graphon.unitIntervalRepr.{u_1} {Ω : Type u_1} [Measura
 
 ## Proof depends on
 
-- [TauCeti.DenseGraphLimits.cutDist\_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
+- [TauCeti.DenseGraphLimits.cutDist_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
 
 ## Lean
 

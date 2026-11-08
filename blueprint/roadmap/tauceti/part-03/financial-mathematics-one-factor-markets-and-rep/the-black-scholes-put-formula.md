@@ -25,8 +25,8 @@ TauCeti.BlackScholes.riskNeutralPrice_put {s r σ K τ : ℝ} (hs : 0 < s) (hσ 
 ## Proof depends on
 
 - [The Black–Scholes call formula](the-black-scholes-call-formula.md)
-- [TauCeti.BlackScholes.callPrice\_sub\_putPrice](tauceti-blackscholes-callprice-sub-putprice.md)
-- [TauCeti.Probability.setIntegral\_exp\_mul\_gaussianReal](tauceti-probability-setintegral-exp-mul-gaussian.md)
+- [TauCeti.BlackScholes.callPrice_sub_putPrice](tauceti-blackscholes-callprice-sub-putprice.md)
+- [TauCeti.Probability.setIntegral_exp_mul_gaussianReal](tauceti-probability-setintegral-exp-mul-gaussian.md)
 
 ## Lean
 

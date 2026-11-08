@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.norm\_eq\_mul\_conj
+# Hurwitz.norm_eq_mul_conj
 
 We have $N(x)=x\overline{x}$.
 

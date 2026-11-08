@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Isogeny.zetaFunction\_eq
+# TauCeti.Isogeny.zetaFunction_eq
 
 **Isogenous curves over a finite field have the same zeta function**
 `Z(W/F, T) = exp (∑_{n ≥ 1} #W(𝔽_{qⁿ}) Tⁿ / n)`.
@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.hurwitz\_genus\_formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-hurwitz-genus-formula.md)
+- [TauCeti.hurwitz_genus_formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-hurwitz-genus-formula.md)
 - [TauCeti.Ring.IsJapanese](../../part-06/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

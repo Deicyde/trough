@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.contDiffGroupoid\_eq\_of\_ne\_zero
+# TauCeti.contDiffGroupoid_eq_of_ne_zero
 
 For a boundaryless model on a finite-dimensional complex space, the `C^m` and `C^n` groupoids
 agree whenever `m` and `n` are nonzero.

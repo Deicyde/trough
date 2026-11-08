@@ -19,7 +19,7 @@ Trivial.
 
 ## Lean
 
-Formalized as [`Law.MagmaLaw.Equation2_minimal`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.Equation2_minimal).
+Stated as [`Law.MagmaLaw.Equation2_minimal`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.Equation2_minimal); the blueprint does not mark its proof formalized.
 
 ## Sources
 

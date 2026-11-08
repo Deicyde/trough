@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# QHat.rat\_meet\_zHat
+# QHat.rat_meet_zHat
 
 The intersection of $\mathbb{Q}$ and $\widehat{\mathbb{Z}}$ in $\widehat{\mathbb{Q}}$ is $\mathbb{Z}$.
 

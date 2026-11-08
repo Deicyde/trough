@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.continuous\_awayDecomposition\_symm
+# TauCeti.continuous_awayDecomposition_symm
 
 The inverse of the decomposition is continuous when the reference subgroups away from `S` are
 open; the reference subgroups at `S` play no role, since the finite factor carries no integrality

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.DivisionAlgebra.Aux.X\_meets\_kernel
+# NumberField.AdeleRing.DivisionAlgebra.Aux.X_meets_kernel
 
 If $\beta\in D_{\mathbb{A}}^{(1)}$ then $\beta X\cap D^\times\not=\emptyset$.
 

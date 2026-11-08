@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isFormal\_liuWangAffineD4AInfinityAlgebra
+# TauCeti.isFormal_liuWangAffineD4AInfinityAlgebra
 
 **Liu--Wang's `A∞` algebra is formal**, for every scalar `c`: the displayed quartic operation
 `m₄` is a Hochschild coboundary of the strict zigzag algebra, so it defines the trivial

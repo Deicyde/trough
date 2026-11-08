@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.gradedCartanMatrix\_zigzagAlgebra
+# TauCeti.gradedCartanMatrix_zigzagAlgebra
 
 The categorical graded Cartan map of the public algebra has matrix `(1 + q²) I + q A_G`
 in the vertex-projective and vertex-head class bases, including isolated vertices.

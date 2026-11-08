@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NovikovModule.kernelMatrix\_mem\_periodFiltration
+# TauCeti.NovikovModule.kernelMatrix_mem_periodFiltration
 
 Under a potential bound with constant `C`, the `(i, j, k)` entry of the kernel matrix lies in
 the period filtration at level `F₀(r₀ k) - F₁(r₁ i) - F₂(r₂ j) - C`.

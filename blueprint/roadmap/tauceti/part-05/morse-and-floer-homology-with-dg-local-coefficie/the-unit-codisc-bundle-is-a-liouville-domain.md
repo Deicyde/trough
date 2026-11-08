@@ -33,7 +33,7 @@ TauCeti.CotangentBundle.isLiouvilleDomain_codiscBundle.{u_1, u_2, u_3} {E : Type
 ## Proof depends on
 
 - [Chart formula for the canonical symplectic form](../../part-06/symplectic-geometry-and-hamiltonian-mechanics/chart-formula-for-the-canonical-symplectic-form.md)
-- [TauCeti.CotangentBundle.isSymplectic\_symplecticForm](../../part-06/symplectic-geometry-and-hamiltonian-mechanics/tauceti-cotangentbundle-issymplectic-symplecticf.md)
+- [TauCeti.CotangentBundle.isSymplectic_symplecticForm](../../part-06/symplectic-geometry-and-hamiltonian-mechanics/tauceti-cotangentbundle-issymplectic-symplecticf.md)
 
 ## Lean
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlgebraicGeometry.ModuliProblem.isRigid\_gamma
+# TauCeti.AlgebraicGeometry.ModuliProblem.isRigid_gamma
 
 **`[Γ(N)]` is rigid for `N ≥ 3` where `N` is invertible** (Katz–Mazur, 2.7.2). Over a base `B`
 on which `N` is invertible, `[Γ(N)]` is isomorphic to the rigid naive problem `[Γ(N)]_naive`

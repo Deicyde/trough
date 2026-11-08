@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 - [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
 - [TauCeti.ClassFieldTheory.invMap](../../part-01/class-field-theory/tauceti-classfieldtheory-invmap.md)
 - [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
-- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

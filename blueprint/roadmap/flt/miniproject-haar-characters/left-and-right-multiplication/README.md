@@ -6,5 +6,5 @@ What's going on here is that if we regard left and right multiplication as $\mat
 
 However, if $k$ is now any field and if $B$ is a finite-dimensional central simple algebra over $k$ (for example a quaternion algebra, the case we'll care about later), and if $u\in B^\times$ then $x\mapsto ux$ and $x\mapsto xu$ are both $k$-linear endomorphisms of $B$, and I claim that they have the same determinant.
 
-- [IsSimpleRing.mulLeft\_det\_eq\_mulRight\_det](issimplering-mulleft-det-eq-mulright-det.md)
-- [IsSimpleRing.ringHaarChar\_eq\_addEquivAddHaarChar\_mulRight](issimplering-ringhaarchar-eq-addequivaddhaarchar.md)
+- [IsSimpleRing.mulLeft_det_eq_mulRight_det](issimplering-mulleft-det-eq-mulright-det.md)
+- [IsSimpleRing.ringHaarChar_eq_addEquivAddHaarChar_mulRight](issimplering-ringhaarchar-eq-addequivaddhaarchar.md)

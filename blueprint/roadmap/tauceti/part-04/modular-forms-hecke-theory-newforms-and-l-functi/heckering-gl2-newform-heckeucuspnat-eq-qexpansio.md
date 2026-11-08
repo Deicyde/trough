@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# HeckeRing.GL2.Newform.heckeUCuspNat\_eq\_qExpansion\_coeff\_smul
+# HeckeRing.GL2.Newform.heckeUCuspNat_eq_qExpansion_coeff_smul
 
 **A newform is an eigenvector of `U_p` at every prime `p` dividing the level, with eigenvalue
 `a_p(f)`** (Atkin–Lehner; Li; Diamond–Shurman, Theorem 5.8.2; Miyake, Theorem 4.6.13). Together

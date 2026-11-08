@@ -12,8 +12,8 @@ We define $\delta_R(u)$ (or just $\delta(u)$ when the ring $R$ is clear) to be $
 ## Depends on
 
 - [MeasureTheory.addEquivAddHaarChar](measuretheory-addequivaddhaarchar.md)
-- [MeasureTheory.addEquivAddHaarChar\_refl](measuretheory-addequivaddhaarchar-refl.md)
-- [MeasureTheory.addEquivAddHaarChar\_trans](measuretheory-addequivaddhaarchar-trans.md)
+- [MeasureTheory.addEquivAddHaarChar_refl](measuretheory-addequivaddhaarchar-refl.md)
+- [MeasureTheory.addEquivAddHaarChar_trans](measuretheory-addequivaddhaarchar-trans.md)
 
 ## Lean
 

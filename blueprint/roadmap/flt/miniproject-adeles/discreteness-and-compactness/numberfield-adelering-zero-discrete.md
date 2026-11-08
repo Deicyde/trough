@@ -5,13 +5,13 @@ lean: NumberField.AdeleRing.zero_discrete
 statement: formalized
 ---
 
-# NumberField.AdeleRing.zero\_discrete
+# NumberField.AdeleRing.zero_discrete
 
 There's an open subset of $\mathbb{A}_{K}$ whose intersection with $K$ is $\{0\}$.
 
 ## Depends on
 
-- [Rat.AdeleRing.zero\_discrete](rat-adelering-zero-discrete.md)
+- [Rat.AdeleRing.zero_discrete](rat-adelering-zero-discrete.md)
 - [NumberField.AdeleRing.baseChangeEquiv](../base-change/part-02/numberfield-adelering-basechangeequiv.md)
 
 ## Proof
@@ -20,7 +20,7 @@ By a previous result, we have $\mathbb{A}_K=K\otimes_{\mathbb{Q}}\mathbb{A}_{\ma
 
 ## Lean
 
-Formalized as [`NumberField.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.zero_discrete).
+Stated as [`NumberField.AdeleRing.zero_discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.zero_discrete); the blueprint does not mark its proof formalized.
 
 ## Sources
 

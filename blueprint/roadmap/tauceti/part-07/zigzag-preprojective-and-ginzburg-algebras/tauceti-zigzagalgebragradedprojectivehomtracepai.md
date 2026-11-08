@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.zigzagAlgebraGradedProjectiveHomTracePairing\_isPerfPair
+# TauCeti.zigzagAlgebraGradedProjectiveHomTracePairing_isPerfPair
 
 Complementary shifted Hom spaces of actual componentwise vertex projectives are in perfect
 trace pairing over every commutative coefficient ring.

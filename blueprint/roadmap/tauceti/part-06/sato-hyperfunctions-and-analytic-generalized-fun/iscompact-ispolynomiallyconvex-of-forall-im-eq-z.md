@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsCompact.isPolynomiallyConvex\_of\_forall\_im\_eq\_zero
+# IsCompact.isPolynomiallyConvex_of_forall_im_eq_zero
 
 Every compact subset of the real locus `ℝⁿ ⊆ ℂⁿ` is polynomially convex.
 

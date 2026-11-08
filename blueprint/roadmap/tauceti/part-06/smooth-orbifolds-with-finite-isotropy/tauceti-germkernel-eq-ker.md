@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.germKernel\_eq\_ker
+# TauCeti.germKernel_eq_ker
 
 For a group with torsion stabilizers acting by `C¹` maps on a preconnected Hausdorff manifold
 without boundary, the germ kernel at every point is the kernel of the action: an element acting as

@@ -6,17 +6,17 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.ringHaarChar\_prod
+# MeasureTheory.ringHaarChar_prod
 
 If $R$ and $S$ are locally compact topological rings, then $\delta_{R\times S}(r,s)=\delta_R(r)\times\delta_S(s)$.
 
 ## Depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md)
+- [MeasureTheory.addEquivAddHaarChar_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md)
 
 ## Proof
 
-Follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md).
+Follows immediately from lemma [MeasureTheory.addEquivAddHaarChar_prodCongr](measuretheory-addequivaddhaarchar-prodcongr.md).
 
 ## Lean
 

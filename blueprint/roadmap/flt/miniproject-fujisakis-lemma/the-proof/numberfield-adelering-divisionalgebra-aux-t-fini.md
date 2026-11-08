@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.DivisionAlgebra.Aux.T\_finite
+# NumberField.AdeleRing.DivisionAlgebra.Aux.T_finite
 
 $T$ is finite.
 
@@ -16,7 +16,7 @@ $T$ is finite.
 
 ## Proof depends on
 
-- [NumberField.AdeleRing.DivisionAlgebra.Aux.Y\_compact](numberfield-adelering-divisionalgebra-aux-y-comp.md)
+- [NumberField.AdeleRing.DivisionAlgebra.Aux.Y_compact](numberfield-adelering-divisionalgebra-aux-y-comp.md)
 
 ## Proof
 

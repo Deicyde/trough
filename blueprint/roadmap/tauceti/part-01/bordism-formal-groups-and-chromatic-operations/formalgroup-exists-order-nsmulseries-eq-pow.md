@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# FormalGroup.exists\_order\_nsmulSeries\_eq\_pow
+# FormalGroup.exists_order_nsmulSeries_eq_pow
 
 **The `p`-series has order a power of `p`** in characteristic `p`: if `p` is a prime with
 `p = 0` in `R` and `F` is commutative, then either `[p]_F = 0` or the first nonzero term of

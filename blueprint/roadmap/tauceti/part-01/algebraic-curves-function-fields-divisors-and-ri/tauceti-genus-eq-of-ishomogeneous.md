@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.genus\_eq\_of\_isHomogeneous
+# TauCeti.genus_eq_of_isHomogeneous
 
 **The genus of a smooth projective plane curve** (Fulton, *Algebraic Curves*, Section 8.3): let
 `G ∈ k[X₀, X₁, X₂]` be homogeneous of degree `d`, with every point of `G = 0` over an algebraically
@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.hurwitz\_genus\_formula](tauceti-hurwitz-genus-formula.md)
+- [TauCeti.hurwitz_genus_formula](tauceti-hurwitz-genus-formula.md)
 - [TauCeti.Ring.IsJapanese](../../part-06/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

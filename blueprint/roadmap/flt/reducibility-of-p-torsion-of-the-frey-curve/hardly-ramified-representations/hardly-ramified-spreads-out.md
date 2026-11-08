@@ -5,7 +5,7 @@ lean: GaloisRepresentation.IsHardlyRamified.mem_isCompatible
 statement: formalized
 ---
 
-# hardly\_ramified\_spreads\_out
+# hardly_ramified_spreads_out
 
 If $\ell\geq3$ is prime, $K$ is a finite extension of $\mathbb{Q}_\ell$ with integers $\mathcal{O}$ and if $\rho:\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to\operatorname{GL}_2(\mathcal{O})$ is a hardly ramified representation whose reduction is irreducible, then there exists a number field $M$ and, for each finite place $\mu$ of $M$ of characteristic prime to 2, with completion $M_\mu$ having integer ring $R_\mu$, a hardly ramified semisimple representation $\rho_\mu:\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to\operatorname{GL}_2(R_\mu)$ (by which we mean the generic fibre is semisimple), with the following properties:
 
@@ -14,7 +14,7 @@ If $\ell\geq3$ is prime, $K$ is a finite extension of $\mathbb{Q}_\ell$ with int
 
 ## Depends on
 
-- [hardly\_ramified](hardly-ramified.md)
+- [hardly_ramified](hardly-ramified.md)
 
 ## Proof
 
@@ -22,7 +22,7 @@ Omitted for now **TODO**
 
 ## Lean
 
-Formalized as [`GaloisRepresentation.IsHardlyRamified.mem_isCompatible`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mem_isCompatible).
+Stated as [`GaloisRepresentation.IsHardlyRamified.mem_isCompatible`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mem_isCompatible); the blueprint does not mark its proof formalized.
 
 ## Sources
 

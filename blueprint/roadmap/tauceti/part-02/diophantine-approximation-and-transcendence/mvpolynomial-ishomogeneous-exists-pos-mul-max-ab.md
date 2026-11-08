@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# MvPolynomial.IsHomogeneous.exists\_pos\_mul\_max\_abs\_rpow\_le\_abs\_eval
+# MvPolynomial.IsHomogeneous.exists_pos_mul_max_abs_rpow_le_abs_eval
 
 **The Thue–Roth inequality for binary forms** (Evertse, Theorem 6.3). Let `F ∈ ℤ[X₀, X₁]` be
 a binary form of degree `d` with no squared linear factor over `ℂ`, and let `κ > 2`. Then there
@@ -35,7 +35,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [IsAlgebraic.finite\_setOfPred\_abs\_sub\_le\_mulHeight₁\_rpow\_neg](isalgebraic-finite-setofpred-abs-sub-le-mulheigh.md)
+- [IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight₁_rpow_neg](isalgebraic-finite-setofpred-abs-sub-le-mulheigh.md)
 
 ## Lean
 

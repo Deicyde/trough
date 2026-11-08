@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# FermatLastTheorem.of\_p\_ge\_5
+# FermatLastTheorem.of_p_ge_5
 
 If there is a counterexample to Fermat's Last Theorem, then there is a counterexample $a^p+b^p=c^p$ with $p$ prime and $p\geq 5$.
 
@@ -17,7 +17,7 @@ Its statement uses no other node of the blueprint.
 ## Proof depends on
 
 - [fermatLastTheoremThree](fermatlasttheoremthree.md)
-- [FermatLastTheorem.of\_odd\_primes](fermatlasttheorem-of-odd-primes.md)
+- [FermatLastTheorem.of_odd_primes](fermatlasttheorem-of-odd-primes.md)
 
 ## Proof
 

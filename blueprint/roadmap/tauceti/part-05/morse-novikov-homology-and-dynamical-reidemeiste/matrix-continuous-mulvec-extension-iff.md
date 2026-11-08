@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Matrix.continuous\_mulVec\_extension\_iff
+# Matrix.continuous_mulVec_extension_iff
 
 A matrix over the group ring has a unique continuous extension of its action to completed
 coordinate modules. Its entries are included coefficientwise in the Novikov ring. No topology

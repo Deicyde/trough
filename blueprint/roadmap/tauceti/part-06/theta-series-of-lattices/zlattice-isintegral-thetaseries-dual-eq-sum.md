@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZLattice.IsIntegral.thetaSeries\_dual\_eq\_sum
+# ZLattice.IsIntegral.thetaSeries_dual_eq_sum
 
 For an integral lattice `L`, the theta series of the dual lattice is the sum of the coset theta
 series over the finite discriminant group `L^∨ ⧸ L`: `Θ_{L^∨} = ∑_{γ ∈ A_L} θ_γ`. The discriminant

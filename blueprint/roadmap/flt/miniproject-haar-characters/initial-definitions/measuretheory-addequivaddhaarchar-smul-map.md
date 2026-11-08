@@ -6,13 +6,13 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_smul\_map
+# MeasureTheory.addEquivAddHaarChar_smul_map
 
 If $\mu$ is any regular Haar measure on $A$ then $d_A(\phi)(\phi_*\mu) = \mu.$
 
 ## Depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_eq](measuretheory-addequivaddhaarchar-eq.md)
+- [MeasureTheory.addEquivAddHaarChar_eq](measuretheory-addequivaddhaarchar-eq.md)
 
 ## Proof
 

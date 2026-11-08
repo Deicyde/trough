@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.freeProP.finrank\_lcsGradedPiece\_one
+# TauCeti.freeProP.finrank_lcsGradedPiece_one
 
 `gr_1` of the free pro-`p` group on `X` has rank `#X choose 2` over `ℤ_p`.
 

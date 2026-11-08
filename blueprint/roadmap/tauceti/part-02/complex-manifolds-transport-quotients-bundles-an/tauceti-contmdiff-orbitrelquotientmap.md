@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.contMDiff\_orbitRelQuotientMap
+# TauCeti.contMDiff_orbitRelQuotientMap
 
 For free properly discontinuous actions by `C^n` maps on `C^n` manifolds and `m ≤ n`, a
 `C^m` map carrying one action to the other along `σ` induces a `C^m` map of orbit spaces.

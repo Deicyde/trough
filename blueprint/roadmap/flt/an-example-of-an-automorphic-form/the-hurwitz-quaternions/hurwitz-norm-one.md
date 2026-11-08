@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.norm\_one
+# Hurwitz.norm_one
 
 The norm of $1$ is $1$.
 

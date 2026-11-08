@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.CotangentBundle.isSymplectic\_symplecticForm
+# TauCeti.CotangentBundle.isSymplectic_symplecticForm
 
 The canonical symplectic form of the cotangent bundle is closed and nondegenerate.
 

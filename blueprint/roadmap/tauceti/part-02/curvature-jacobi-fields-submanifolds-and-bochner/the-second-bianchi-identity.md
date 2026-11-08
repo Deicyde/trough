@@ -49,7 +49,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [VectorField.jacobi\_identity\_mlieBracket\_apply](vectorfield-jacobi-identity-mliebracket-apply.md)
+- [VectorField.jacobi_identity_mlieBracket_apply](vectorfield-jacobi-identity-mliebracket-apply.md)
 
 ## Lean
 

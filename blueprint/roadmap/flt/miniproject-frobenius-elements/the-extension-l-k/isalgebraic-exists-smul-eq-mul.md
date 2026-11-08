@@ -5,7 +5,7 @@ mathlib: true
 mathlib_declaration: IsAlgebraic.exists_smul_eq_mul
 ---
 
-# IsAlgebraic.exists\_smul\_eq\_mul
+# IsAlgebraic.exists_smul_eq_mul
 
 If $R/S$ is an algebraic extension of integral domains, then any fraction $a/b$ with $a,b\in R$ can be written as $c/d$ with $c\in R$ and $d\in S$.
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.PLPath.lower\_eq\_some\_iff
+# TauCeti.PLPath.lower_eq_some_iff
 
 Littelmann's root operators are partial inverses: lowering `p` gives `q` exactly when raising
 `q` gives `p`.

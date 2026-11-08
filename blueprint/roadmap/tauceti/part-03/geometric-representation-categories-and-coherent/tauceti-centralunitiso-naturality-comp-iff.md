@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.centralUnitIso\_naturality\_comp\_iff
+# TauCeti.centralUnitIso_naturality_comp_iff
 
 The composition condition of a strong transformation with identity components and
 naturality `2`-cells `centralUnitIso C (b g)`, between pseudofunctors with identity `1`-cells

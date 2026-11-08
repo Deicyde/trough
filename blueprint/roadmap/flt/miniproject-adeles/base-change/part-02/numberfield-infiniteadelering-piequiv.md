@@ -19,7 +19,7 @@ Using the isomorphisms $K_v^{[L:K]} \cong_{K_v} \prod_{w\mid v}L_w$ from Theorem
 
 ## Lean
 
-Formalized as [`NumberField.InfiniteAdeleRing.piEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.piEquiv).
+Stated as [`NumberField.InfiniteAdeleRing.piEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.piEquiv); the blueprint does not mark its proof formalized.
 
 ## Sources
 

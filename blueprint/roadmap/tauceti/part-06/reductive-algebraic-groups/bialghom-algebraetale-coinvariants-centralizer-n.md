@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# BialgHom.algebraEtale\_coinvariants\_centralizer\_normalizer
+# BialgHom.algebraEtale_coinvariants_centralizer_normalizer
 
 The represented quotient of the scheme normalizer by the scheme centralizer
 is étale, retaining the full subgroup schemes even when `D(X)` is nonreduced.

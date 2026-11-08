@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.ModuleTower.subsingleton\_limOne\_of\_isMittagLeffler
+# TauCeti.ModuleTower.subsingleton_limOne_of_isMittagLeffler
 
 **Mittag-Leffler towers have vanishing `lim¹`** (Stacks, Tag 07KW).
 

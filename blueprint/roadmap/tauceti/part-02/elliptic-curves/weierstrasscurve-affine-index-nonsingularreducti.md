@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# WeierstrassCurve.Affine.index\_nonsingularReduction\_eq\_tateLocalIndex
+# WeierstrassCurve.Affine.index_nonsingularReduction_eq_tateLocalIndex
 
 **Tate's local index is the point-group index** (Silverman, *Advanced Topics*, IV.9, Table 4.1).
 Suppose that the valuation ring of `v` is Henselian with finite residue field, for instance the

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Polynomial.ncard\_biUnion\_roots\_natDegree\_le\_abs\_intCoeff\_le
+# TauCeti.Polynomial.ncard_biUnion_roots_natDegree_le_abs_intCoeff_le
 
 The integer specialisation: the roots in a domain `S` of all integer polynomials of degree at
 most `d` with every coefficient bounded by `B` in absolute value number at most

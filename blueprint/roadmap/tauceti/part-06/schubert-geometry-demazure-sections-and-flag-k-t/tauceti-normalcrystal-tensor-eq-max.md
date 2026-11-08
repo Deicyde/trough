@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NormalCrystal.tensor\_ε\_eq\_max
+# TauCeti.NormalCrystal.tensor_ε_eq_max
 
 Kashiwara's form of the raising string length of a tensor product:
 `ε i (x₁ ⊗ x₂) = max (ε i x₁) (ε i x₂ - ⟨wt x₁, α_i^∨⟩)`.

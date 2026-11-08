@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsFreeGroup.isGDomain\_id
+# IsFreeGroup.isGDomain_id
 
 **Nonabelian free groups are domains** (Baumslag–Myasnikov–Remeslennikov, Corollary 1).
 
@@ -22,7 +22,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Free groups are CSA](free-groups-are-csa.md)
-- [TauCeti.GroupAlgGeom.IsGDomain.of\_isCSA](tauceti-groupalggeom-isgdomain-of-iscsa.md)
+- [TauCeti.GroupAlgGeom.IsGDomain.of_isCSA](tauceti-groupalggeom-isgdomain-of-iscsa.md)
 
 ## Lean
 

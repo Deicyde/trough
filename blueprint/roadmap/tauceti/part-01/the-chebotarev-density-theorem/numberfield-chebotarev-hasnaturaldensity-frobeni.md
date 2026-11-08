@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.Chebotarev.hasNaturalDensity\_frobeniusPrimeSet
+# NumberField.Chebotarev.hasNaturalDensity_frobeniusPrimeSet
 
 Natural-density Chebotarev: among the primes of `K`, the primes with arithmetic Frobenius
 class `C` have density `#C / #Gal(L/K)`.

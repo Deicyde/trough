@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.ncard\_isomorphic\_mul\_natCard\_algEquiv
+# TauCeti.ncard_isomorphic_mul_natCard_algEquiv
 
 **The orbit count** ([Serre 1978, Remarque 3°]): for `L ∈ σ_K(n)`, the isomorphism class of `L`
 inside `σ_K(n)` has `n / #Aut_K(L)` members, in multiplied form. The extension `L / K` is separable

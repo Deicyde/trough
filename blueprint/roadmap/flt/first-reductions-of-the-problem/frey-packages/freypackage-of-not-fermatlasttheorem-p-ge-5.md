@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/19
 ---
 
-# FreyPackage.of\_not\_FermatLastTheorem\_p\_ge\_5
+# FreyPackage.of_not_FermatLastTheorem_p_ge_5
 
 If Fermat's Last Theorem is false for $p \ge 5$ and prime, then there exists a Frey package.
 

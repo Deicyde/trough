@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Huber.exists\_tateSeminorm
+# TauCeti.Huber.exists_tateSeminorm
 
 A ring with separately continuous multiplication in which the sets `ϖ ^ n A₀`, `n ≥ 0`, form
 a neighbourhood basis of zero carries an ultrametric ring seminorm, equal to the Tate gauge, whose

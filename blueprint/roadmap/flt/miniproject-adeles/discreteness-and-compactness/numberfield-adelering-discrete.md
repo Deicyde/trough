@@ -11,7 +11,7 @@ The additive subgroup $K$ of $\mathbb{A}_K$ is discrete.
 
 ## Depends on
 
-- [NumberField.AdeleRing.zero\_discrete](numberfield-adelering-zero-discrete.md)
+- [NumberField.AdeleRing.zero_discrete](numberfield-adelering-zero-discrete.md)
 
 ## Proof
 
@@ -19,7 +19,7 @@ If $x\in K$ and $U$ is the open subset in the previous lemma, then it's easily c
 
 ## Lean
 
-Formalized as [`NumberField.AdeleRing.discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.discrete).
+Stated as [`NumberField.AdeleRing.discrete`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.discrete); the blueprint does not mark its proof formalized.
 
 ## Sources
 

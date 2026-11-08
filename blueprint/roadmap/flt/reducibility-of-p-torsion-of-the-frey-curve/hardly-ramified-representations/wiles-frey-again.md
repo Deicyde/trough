@@ -5,7 +5,7 @@ lean: FLT.Bosses.B4_proof
 statement: formalized
 ---
 
-# Wiles\_Frey\_again
+# Wiles_Frey_again
 
 If $\overline{\rho}$ is the mod $p$ Galois representation associated to a Frey package $(a,b,c,p)$ then $\overline{\rho}$ is reducible.
 
@@ -15,16 +15,16 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [Frey\_curve\_hardly\_ramified](frey-curve-hardly-ramified.md)
-- [hardly\_ramified\_reducible](hardly-ramified-reducible.md)
+- [Frey_curve_hardly_ramified](frey-curve-hardly-ramified.md)
+- [hardly_ramified_reducible](hardly-ramified-reducible.md)
 
 ## Proof
 
-Indeed, $\rho$ is hardly ramified by theorem [Frey\_curve\_hardly\_ramified](frey-curve-hardly-ramified.md) and thus reducible by theorem [hardly\_ramified\_reducible](hardly-ramified-reducible.md).
+Indeed, $\rho$ is hardly ramified by theorem [Frey_curve_hardly_ramified](frey-curve-hardly-ramified.md) and thus reducible by theorem [hardly_ramified_reducible](hardly-ramified-reducible.md).
 
 ## Lean
 
-Formalized as [`FLT.Bosses.B4_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B4_proof).
+Stated as [`FLT.Bosses.B4_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B4_proof); the blueprint does not mark its proof formalized.
 
 ## Sources
 

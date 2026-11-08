@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.ringHaarChar\_real
+# MeasureTheory.ringHaarChar_real
 
 If $R=\mathbb{R}$ then $\delta_R(u)=|u|$.
 
@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [MeasureTheory.ringHaarChar\_mul\_volume](../initial-definitions/measuretheory-ringhaarchar-mul-volume.md)
+- [MeasureTheory.ringHaarChar_mul_volume](../initial-definitions/measuretheory-ringhaarchar-mul-volume.md)
 
 ## Proof
 

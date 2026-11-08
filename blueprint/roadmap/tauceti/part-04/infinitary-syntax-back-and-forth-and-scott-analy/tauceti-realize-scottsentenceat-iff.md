@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.realize\_scottSentenceAt\_iff
+# TauCeti.realize_scottSentenceAt_iff
 
 At a countable internally stabilizing level, the Scott sentence of a countable structure `M`
 holds in a countable structure exactly when that structure is isomorphic to `M`.
@@ -27,7 +27,7 @@ TauCeti.realize_scottSentenceAt_iff.{u, v, w, w', o} {L : FirstOrder.Language} [
 ## Proof depends on
 
 - [TauCeti.PotentialIso](tauceti-potentialiso.md)
-- [TauCeti.realize\_scottFormula\_iff\_bfEquiv](tauceti-realize-scottformula-iff-bfequiv.md)
+- [TauCeti.realize_scottFormula_iff_bfEquiv](tauceti-realize-scottformula-iff-bfequiv.md)
 
 ## Lean
 

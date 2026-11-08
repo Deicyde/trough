@@ -24,7 +24,7 @@ TauCeti.BlackScholes.riskNeutralPrice_call {s r σ K τ : ℝ} (hs : 0 < s) (hσ
 
 ## Proof depends on
 
-- [TauCeti.Probability.setIntegral\_exp\_mul\_gaussianReal](tauceti-probability-setintegral-exp-mul-gaussian.md)
+- [TauCeti.Probability.setIntegral_exp_mul_gaussianReal](tauceti-probability-setintegral-exp-mul-gaussian.md)
 
 ## Lean
 

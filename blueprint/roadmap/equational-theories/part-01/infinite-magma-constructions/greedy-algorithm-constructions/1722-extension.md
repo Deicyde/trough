@@ -32,7 +32,7 @@ Now suppose that $a \diamond b$ is undefined for some $a \neq b$. By applying th
 
 ## Lean
 
-Formalized as [`Eq1722.Greedy.lift`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1722.Greedy.lift).
+Stated as [`Eq1722.Greedy.lift`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1722.Greedy.lift); the blueprint does not mark its proof formalized.
 
 ## Sources
 

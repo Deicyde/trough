@@ -5,13 +5,13 @@ lean: FreyCurve.torsion_isHardlyRamified
 statement: formalized
 ---
 
-# Frey\_curve\_hardly\_ramified
+# Frey_curve_hardly_ramified
 
 The $\ell$-torsion $\rho:\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to\operatorname{GL}_2(\mathbb{Z}/\ell\mathbb{Z})$ in the Frey curve associated to a Frey package $(a,b,c,\ell)$ is hardly ramified.
 
 ## Depends on
 
-- [hardly\_ramified](hardly-ramified.md)
+- [hardly_ramified](hardly-ramified.md)
 
 ## Proof
 
@@ -19,7 +19,7 @@ This was well-known in the 1980s. A proof sketch is as follows. First note that 
 
 ## Lean
 
-Formalized as [`FreyCurve.torsion_isHardlyRamified`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyCurve.torsion_isHardlyRamified).
+Stated as [`FreyCurve.torsion_isHardlyRamified`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyCurve.torsion_isHardlyRamified); the blueprint does not mark its proof formalized.
 
 ## Sources
 

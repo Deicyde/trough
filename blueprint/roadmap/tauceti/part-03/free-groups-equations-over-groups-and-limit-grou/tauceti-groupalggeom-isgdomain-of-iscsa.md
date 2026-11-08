@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.GroupAlgGeom.IsGDomain.of\_isCSA
+# TauCeti.GroupAlgGeom.IsGDomain.of_isCSA
 
 **CSA groups are domains** (Baumslag–Myasnikov–Remeslennikov, Proposition 1). A CSA group in
 which the images of two coefficients do not commute is a domain over these coefficients.

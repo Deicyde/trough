@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.hasPrekopaLeindler\_volume
+# TauCeti.hasPrekopaLeindler_volume
 
 The **Prékopa–Leindler inequality** on a finite-dimensional real inner product space, such as
 `EuclideanSpace ℝ (Fin n)`: its volume has the Prékopa–Leindler property at every weight

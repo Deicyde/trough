@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.QuadraticMap.OrthogonalCompactOpens.not\_discreteTopology\_range\_finiteAdelicSpecialOrthogonalDiagonal
+# TauCeti.QuadraticMap.OrthogonalCompactOpens.not_discreteTopology_range_finiteAdelicSpecialOrthogonalDiagonal
 
 For a nondegenerate isotropic rational quadratic space of dimension at least three, the
 rational diagonal is not discrete in finite adelic `SO`. In dimension two the transvection

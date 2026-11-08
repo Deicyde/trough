@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Polynomial.exists\_isRoot\_addVal\_eval\_eq
+# Polynomial.exists_isRoot_addVal_eval_eq
 
 **Hensel's lemma with an estimate** over a Henselian discrete valuation ring. If the order of
 `F` at `y₀` exceeds twice the order of its derivative there, then `F` has a root `z` whose

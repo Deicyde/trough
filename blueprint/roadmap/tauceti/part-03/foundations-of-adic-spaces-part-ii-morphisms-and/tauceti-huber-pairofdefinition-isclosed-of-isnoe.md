@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Huber.PairOfDefinition.isClosed\_of\_isNoetherianRing
+# TauCeti.Huber.PairOfDefinition.isClosed_of_isNoetherianRing
 
 **Submodules of finite modules over a complete Huber ring with a noetherian ring of definition
 are closed** (Huber, Lemma 2.3(ii)). If `A` is complete and Hausdorff with a noetherian ring of

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.continuous\_eval\_and\_not\_continuous\_rationalDiagonal\_range\_coeMonoidHom
+# TauCeti.continuous_eval_and_not_continuous_rationalDiagonal_range_coeMonoidHom
 
 The uniform integrality set in `continuous_rationalDiagonal` cannot be dropped. Take
 discrete groups with trivial reference subgroups, infinitely many of them nontrivial, and for `Γ`

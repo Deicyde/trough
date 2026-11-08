@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Algebra.isUnit\_discr\_localization\_iff
+# TauCeti.Algebra.isUnit_discr_localization_iff
 
 The discriminant of a basis of a finite free algebra is a unit at a prime `𝔭` iff the base
 change to the localization `A_𝔭` is étale over `A_𝔭`.

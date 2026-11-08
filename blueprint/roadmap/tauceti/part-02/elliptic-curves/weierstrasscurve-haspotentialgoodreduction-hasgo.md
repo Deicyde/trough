@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# WeierstrassCurve.HasPotentialGoodReduction.hasGoodReduction\_iff\_forall\_mem\_inertiaSubgroup
+# WeierstrassCurve.HasPotentialGoodReduction.hasGoodReduction_iff_forall_mem_inertiaSubgroup
 
 **The criterion of Néron, Ogg and Shafarevich with finite coefficients** (Serre–Tate). Let
 `W` be an elliptic curve over a nonarchimedean local field `K`, given by a minimal equation, with

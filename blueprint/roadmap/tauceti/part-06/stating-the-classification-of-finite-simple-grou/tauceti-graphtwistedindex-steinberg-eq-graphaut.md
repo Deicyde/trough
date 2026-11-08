@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.GraphTwistedIndex.steinberg\_eq\_graphAut\_comp\_frobenius
+# TauCeti.GraphTwistedIndex.steinberg_eq_graphAut_comp_frobenius
 
 **The Steinberg endomorphism is the graph automorphism composed with the Frobenius**,
 uniformly in the thirteen ordinary and graph-twisted families. On the nine untwisted ones the

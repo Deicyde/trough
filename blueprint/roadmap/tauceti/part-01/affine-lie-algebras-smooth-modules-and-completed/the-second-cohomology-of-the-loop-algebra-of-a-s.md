@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.LieAlgebra.exists\_eq\_smul\_killingForm](tauceti-liealgebra-exists-eq-smul-killingform.md)
+- [TauCeti.LieAlgebra.exists_eq_smul_killingForm](tauceti-liealgebra-exists-eq-smul-killingform.md)
 - [Whitehead's first lemma](whiteheads-first-lemma.md)
 
 ## Lean

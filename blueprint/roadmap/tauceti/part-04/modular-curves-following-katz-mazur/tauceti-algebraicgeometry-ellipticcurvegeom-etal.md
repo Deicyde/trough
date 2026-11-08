@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale\_torsion\_hom\_of\_forall\_intCast\_ne\_zero
+# TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale_torsion_hom_of_forall_intCast_ne_zero
 
 **The `n`-torsion of an elliptic curve is étale where `n` is invertible** (Katz–Mazur 2.3.1).
 For an elliptic curve `E` over a scheme `S` and an integer `n` invertible in every residue field of

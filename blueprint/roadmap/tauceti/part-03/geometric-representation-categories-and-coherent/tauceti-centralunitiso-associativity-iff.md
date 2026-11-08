@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.centralUnitIso\_associativity\_iff
+# TauCeti.centralUnitIso_associativity_iff
 
 The associativity condition of a pseudofunctor out of `LocallyDiscrete (SingleObj G)` with
 identity `1`-cells and central compositors `centralUnitIso C (c (h, g))` at `g ≫ h = h * g`,

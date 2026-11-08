@@ -3,7 +3,7 @@
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/OrthogonalL2Bases/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The Hermite functions are a Hilbert basis of `L²(ℝ)`](the-hermite-functions-are-a-hilbert-basis-of-l2.md)
-- [TauCeti.tsum\_norm\_sq\_inner\_hermiteFunctionLp](tauceti-tsum-norm-sq-inner-hermitefunctionlp.md)
+- [TauCeti.tsum_norm_sq_inner_hermiteFunctionLp](tauceti-tsum-norm-sq-inner-hermitefunctionlp.md)
 - [The Chebyshev `T` polynomials are a Hilbert basis of `L²(measureT)`](the-chebyshev-t-polynomials-are-a-hilbert-basis.md)
 - [The Chebyshev expansion](the-chebyshev-expansion.md)
 - [Moment determinacy, exponential-moment form (the roadmap's B1 hypothesis)](moment-determinacy-exponential-moment-form-the-r.md)

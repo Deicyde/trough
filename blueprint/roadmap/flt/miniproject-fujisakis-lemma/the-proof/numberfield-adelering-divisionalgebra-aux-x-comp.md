@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.DivisionAlgebra.Aux.X\_compact
+# NumberField.AdeleRing.DivisionAlgebra.Aux.X_compact
 
 $X$ is a compact subset of $D_{\mathbb{A}}$.
 

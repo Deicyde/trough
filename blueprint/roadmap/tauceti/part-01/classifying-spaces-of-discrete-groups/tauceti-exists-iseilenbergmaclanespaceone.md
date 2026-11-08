@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_isEilenbergMacLaneSpaceOne
+# TauCeti.exists_isEilenbergMacLaneSpaceOne
 
 **Every group has a `K(G, 1)`**, in its own universe, satisfying the standing hypotheses of
 covering-space theory: local path-connectedness and semilocal simple connectivity. No hypothesis

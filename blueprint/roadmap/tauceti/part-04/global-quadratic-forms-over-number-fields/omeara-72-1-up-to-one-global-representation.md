@@ -43,8 +43,8 @@ TauCeti.NumberField.QuadraticForm.GlobalFormInvariants.IsLocalRealization.exists
 
 - [The Hasse product formula](the-hasse-product-formula.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
-- [TauCeti.NumberField.QuadraticForm.exists\_hilbertSymbol\_eq\_ite](tauceti-numberfield-quadraticform-exists-hilbert.md)
-- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.NumberField.QuadraticForm.exists_hilbertSymbol_eq_ite](tauceti-numberfield-quadraticform-exists-hilbert.md)
+- [TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Graph.isBridge\_iff\_forall\_cycle\_notMem
+# Graph.isBridge_iff_forall_cycle_notMem
 
 An actual edge is a bridge exactly when it lies on no cycle.
 

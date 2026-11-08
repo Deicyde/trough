@@ -5,7 +5,7 @@ lean: GaloisRepresentation.IsHardlyRamified
 statement: formalized
 ---
 
-# hardly\_ramified
+# hardly_ramified
 
 Let $R$ be a coefficient ring with finite residue field of characteristic $\ell\geq3$. Let $V$ be a finite free $R$-module of rank 2, equipped with the product topology. A continuous representation $\rho: \operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to \operatorname{GL}_R(V)$ is said to be *hardly ramified* if it satisfies the following four conditions:
 

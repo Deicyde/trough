@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 
 - [Frieze--Kannan weak regularity](frieze-kannan-weak-regularity.md)
 - [TauCeti.DenseGraphLimits.cutDist](tauceti-densegraphlimits-cutdist.md)
-- [TauCeti.DenseGraphLimits.cutDist\_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
+- [TauCeti.DenseGraphLimits.cutDist_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
 - [TauCeti.DenseGraphLimits.Graphon.unitIntervalRepr](tauceti-densegraphlimits-graphon-unitintervalrep.md)
 
 ## Lean

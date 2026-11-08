@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv
+# IsDedekindDomain.AKLB.tensorProduct_module_algEquiv
 
 If $M$ is any $K$-module then the canonical map $B\otimes_A M\to L\otimes_K M$ is an isomorphism.
 

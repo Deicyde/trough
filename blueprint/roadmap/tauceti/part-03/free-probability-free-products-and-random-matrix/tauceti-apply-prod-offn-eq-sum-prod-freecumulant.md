@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.apply\_prod\_ofFn\_eq\_sum\_prod\_freeCumulant
+# TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant
 
 The *moment–cumulant formula* for a word `a₁, …, aₙ` with `n ≥ 1` in multiplicative form:
 `φ (a₁ * ⋯ * aₙ) = ∑_{π ∈ NC(n)} ∏_{B ∈ π} κ_B(a₁, …, aₙ)`.
@@ -23,7 +23,7 @@ TauCeti.apply_prod_ofFn_eq_sum_prod_freeCumulant.{u_1, u_2} {R : Type u_1} {A : 
 
 ## Proof depends on
 
-- [TauCeti.partitionCumulant\_eq\_prod\_freeCumulant](tauceti-partitioncumulant-eq-prod-freecumulant.md)
+- [TauCeti.partitionCumulant_eq_prod_freeCumulant](tauceti-partitioncumulant-eq-prod-freecumulant.md)
 
 ## Lean
 

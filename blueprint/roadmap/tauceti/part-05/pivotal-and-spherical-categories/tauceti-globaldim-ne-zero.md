@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.globalDim\_ne\_zero
+# TauCeti.globalDim_ne_zero
 
 **The global dimension of a pivotal fusion category over a field of characteristic zero is
 nonzero** (Etingof–Nikshych–Ostrik). Here `C` is pivotal, `k`-linear abelian and finite semisimple

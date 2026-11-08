@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Compactification.exists\_forall\_nonempty\_hom
+# TauCeti.Compactification.exists_forall_nonempty_hom
 
 Every nonempty finite family of compactifications has a dense common refinement.
 

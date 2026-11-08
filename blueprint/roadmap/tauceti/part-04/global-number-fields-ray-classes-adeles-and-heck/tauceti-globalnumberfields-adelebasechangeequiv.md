@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.GlobalNumberFields.adeleBaseChangeEquiv\_tower
+# TauCeti.GlobalNumberFields.adeleBaseChangeEquiv_tower
 
 **Base change of adeles in a tower** `K ⊆ L ⊆ M`: the comparison for `M/K` factors through
 the comparison for `L/K`, followed by the comparison for `M/L`.

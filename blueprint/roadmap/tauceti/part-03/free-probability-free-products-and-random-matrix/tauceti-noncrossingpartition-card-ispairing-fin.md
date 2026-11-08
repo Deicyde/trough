@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NoncrossingPartition.card\_isPairing\_fin\_eq\_catalan
+# TauCeti.NoncrossingPartition.card_isPairing_fin_eq_catalan
 
 There are `catalan n` noncrossing pairings of the `2 * n` ordered positions of `Fin (2 * n)`.
 

@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/531
 ---
 
-# Continuous.restrictedProduct\_congrRight
+# Continuous.restrictedProduct_congrRight
 
 If the $A_i$ and $B_i$ are topological spaces and the $\phi_i$ are continuous functions, then the restricted product $\phi = \prod'_i\phi_i$ is a continuous function.
 

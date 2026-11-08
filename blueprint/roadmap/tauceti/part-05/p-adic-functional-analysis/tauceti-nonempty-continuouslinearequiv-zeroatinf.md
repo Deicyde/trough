@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.nonempty\_continuousLinearEquiv\_zeroAtInfty\_nat\_of\_dense\_span
+# TauCeti.nonempty_continuousLinearEquiv_zeroAtInfty_nat_of_dense_span
 
 An infinite-dimensional ultrametric Banach space of countable type (some sequence has dense
 span) over a complete nontrivially normed field is continuously linearly equivalent to

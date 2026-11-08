@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 - [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
-- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

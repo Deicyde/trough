@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.GridDiagram.unblockedDifferential\_commutationHomotopy\_add\_eq
+# TauCeti.GridDiagram.unblockedDifferential_commutationHomotopy_add_eq
 
 The homotopy equation `∂ ∘ H + H ∘ ∂ = 1 + Ψ ∘ Φ` of a column commutation, over any
 commutative semiring of characteristic two: the hexagon-counting map `H` is a chain homotopy

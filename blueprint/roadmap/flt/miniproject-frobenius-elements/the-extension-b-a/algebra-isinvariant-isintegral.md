@@ -15,8 +15,8 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [MulSemiringAction.monic\_charpoly](mulsemiringaction-monic-charpoly.md)
-- [Algebra.IsInvariant.charpoly\_mem\_lifts](algebra-isinvariant-charpoly-mem-lifts.md)
+- [MulSemiringAction.monic_charpoly](mulsemiringaction-monic-charpoly.md)
+- [Algebra.IsInvariant.charpoly_mem_lifts](algebra-isinvariant-charpoly-mem-lifts.md)
 
 ## Proof
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.topologicalGeneratorRankNat\_absoluteGaloisGroup
+# TauCeti.topologicalGeneratorRankNat_absoluteGaloisGroup
 
 **The generator rank of a local absolute Galois group** (NSW (7.4.1)). For a finite extension
 `K` of `ℚ_p`, the absolute Galois group `G_K` needs exactly `[K : ℚ_p] + 2` topological
@@ -34,9 +34,9 @@ Its statement uses no other declaration mapped here.
 - [TauCeti.ClassFieldTheory.invMap](../../part-01/class-field-theory/tauceti-classfieldtheory-invmap.md)
 - [TauCeti.ContCohomology.dimensionShiftIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-contcohomology-dimensionshiftiso.md)
 - [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
-- [TauCeti.nonempty\_layerTateModule](tauceti-nonempty-layertatemodule.md)
-- [TauCeti.nonempty\_linearEquiv\_of\_projective\_of\_tensorRat](tauceti-nonempty-linearequiv-of-projective-of-te.md)
-- [TauCeti.strictCohomologicalDimensionLE\_iff\_forall\_openSubgroup](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-strictcohomologicaldimensionle-iff-foral.md)
+- [TauCeti.nonempty_layerTateModule](tauceti-nonempty-layertatemodule.md)
+- [TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat](tauceti-nonempty-linearequiv-of-projective-of-te.md)
+- [TauCeti.strictCohomologicalDimensionLE_iff_forall_openSubgroup](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-strictcohomologicaldimensionle-iff-foral.md)
 - [TauCeti.wildInertiaSubgroup](../local-fields-and-ramification/tauceti-wildinertiasubgroup.md)
 
 ## Lean

@@ -6,7 +6,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Relative Spec commutes with base change, naturally in the algebra](relative-spec-commutes-with-base-change-naturall.md)
 - [Relative Spec commutes with base change, compatibly with composition](relative-spec-commutes-with-base-change-compatib.md)
 - [`Spec_X (Sym F)` represents linear functionals](spec-x-sym-f-represents-linear-functionals.md)
-- [TauCeti.AlgebraicGeometry.QuasicoherentSheaf.nonempty\_hasLeftDual\_iff\_isFiniteLocallyFree](tauceti-algebraicgeometry-quasicoherentsheaf-non.md)
+- [TauCeti.AlgebraicGeometry.QuasicoherentSheaf.nonempty_hasLeftDual_iff_isFiniteLocallyFree](tauceti-algebraicgeometry-quasicoherentsheaf-non.md)
 - [TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.evalNatIso](tauceti-algebraicgeometry-finitelocallyfreesheaf.md)
 - [Symmetric powers commute with pullback of quasicoherent sheaves](symmetric-powers-commute-with-pullback-of-quasic.md)
 - [TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pullbackDeterminantIso](tauceti-algebraicgeometry-finitelocallyfreesheaf-2.md)

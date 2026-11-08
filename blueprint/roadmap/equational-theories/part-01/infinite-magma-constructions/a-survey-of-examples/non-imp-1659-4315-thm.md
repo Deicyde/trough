@@ -17,7 +17,7 @@ There exists a magma which satisfies [E1659](https://teorth.github.io/equational
 
 ## Lean
 
-Formalized as [`Equation1659_facts`](https://teorth.github.io/equational_theories/docs/find/#doc/Equation1659_facts).
+Stated as [`Equation1659_facts`](https://teorth.github.io/equational_theories/docs/find/#doc/Equation1659_facts); the blueprint does not mark its proof formalized.
 
 ## Sources
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ContinuousLinearMap.IsRowCompact.evalAt\_charPowerSeries\_eq\_zero\_iff\_hasEigenvalue
+# ContinuousLinearMap.IsRowCompact.evalAt_charPowerSeries_eq_zero_iff_hasEigenvalue
 
 The zeros of the Fredholm series of a row-compact operator are exactly the inverses of its
 nonzero eigenvalues. This conclusion concerns eigenvalues in the given coefficient field.
@@ -26,7 +26,7 @@ ContinuousLinearMap.IsRowCompact.evalAt_charPowerSeries_eq_zero_iff_hasEigenvalu
 ## Proof depends on
 
 - [ContinuousLinearMap.charPowerSeries](continuouslinearmap-charpowerseries.md)
-- [ContinuousLinearMap.IsCompletelyContinuous.isFredholm\_one\_sub](continuouslinearmap-iscompletelycontinuous-isfre.md)
+- [ContinuousLinearMap.IsCompletelyContinuous.isFredholm_one_sub](continuouslinearmap-iscompletelycontinuous-isfre.md)
 - [The Fredholm determinant is entire](the-fredholm-determinant-is-entire.md)
 - [Independence of the presentation](independence-of-the-presentation.md)
 

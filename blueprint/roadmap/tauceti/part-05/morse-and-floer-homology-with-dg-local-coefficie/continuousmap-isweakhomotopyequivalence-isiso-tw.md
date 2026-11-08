@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ContinuousMap.IsWeakHomotopyEquivalence.isIso\_twistedHomologyMap
+# ContinuousMap.IsWeakHomotopyEquivalence.isIso_twistedHomologyMap
 
 **A weak homotopy equivalence induces isomorphisms on singular homology with local
 coefficients**, the local-coefficient form of Hatcher, Proposition 4.21: for every local

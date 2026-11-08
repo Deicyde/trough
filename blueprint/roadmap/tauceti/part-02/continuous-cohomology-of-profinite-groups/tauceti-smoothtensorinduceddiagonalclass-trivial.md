@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.smoothTensorInducedDiagonalClass\_trivialF2\_changeTransversal
+# TauCeti.smoothTensorInducedDiagonalClass_trivialF2_changeTransversal
 
 After identifying tensor-induced trivial `𝔽₂` coefficients with the ambient trivial
 coefficient object, the class of an invariant diagonal cocycle does not depend on the transversal.

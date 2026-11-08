@@ -19,7 +19,7 @@ Such a bijection can be easily constructed from the axiom of choice and a greedy
 
 ## Lean
 
-Formalized as [`Eq1323.ϕ`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.ϕ).
+Stated as [`Eq1323.ϕ`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1323.ϕ); the blueprint does not mark its proof formalized.
 
 ## Sources
 

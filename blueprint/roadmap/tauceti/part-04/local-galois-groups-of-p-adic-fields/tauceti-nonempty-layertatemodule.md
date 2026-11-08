@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.nonempty\_layerTateModule
+# TauCeti.nonempty_layerTateModule
 
 **Existence of the Tate module of a finite layer** (NSW (5.6.5) and the proof of (7.4.1)). For
 a finite Galois extension `L/K` of `p`-adic fields there is a finitely generated
@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 - [TauCeti.ClassFieldTheory.invMap](../../part-01/class-field-theory/tauceti-classfieldtheory-invmap.md)
 - [TauCeti.ContCohomology.dimensionShiftIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-contcohomology-dimensionshiftiso.md)
 - [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
-- [TauCeti.strictCohomologicalDimensionLE\_iff\_forall\_openSubgroup](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-strictcohomologicaldimensionle-iff-foral.md)
+- [TauCeti.strictCohomologicalDimensionLE_iff_forall_openSubgroup](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-strictcohomologicaldimensionle-iff-foral.md)
 
 ## Lean
 

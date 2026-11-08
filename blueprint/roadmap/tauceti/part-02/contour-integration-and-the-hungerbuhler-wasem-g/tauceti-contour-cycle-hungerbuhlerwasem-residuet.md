@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Contour.Cycle.hungerbuhlerWasem\_residueTheorem
+# TauCeti.Contour.Cycle.hungerbuhlerWasem_residueTheorem
 
 **The Hungerbühler–Wasem generalized residue theorem for a contour cycle** (HW Thm 3.3).
 Let `U` be open, `S ⊆ U` finite, `f` holomorphic on `U ∖ S` and meromorphic at each point of

@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.IsAffinoidAlgebra.continuous\_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [TauCeti.IsAffinoidAlgebra.continuous_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
 
 ## Lean
 

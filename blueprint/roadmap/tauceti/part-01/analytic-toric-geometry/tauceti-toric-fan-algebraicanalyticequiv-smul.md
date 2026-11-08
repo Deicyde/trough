@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Toric.Fan.algebraicAnalyticEquiv\_smul
+# TauCeti.Toric.Fan.algebraicAnalyticEquiv_smul
 
 The algebraic–analytic comparison is equivariant for the coordinate-free complex torus.
 

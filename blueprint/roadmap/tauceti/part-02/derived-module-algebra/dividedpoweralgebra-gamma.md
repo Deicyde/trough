@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [DividedPowerAlgebra.isInternal\_homogeneousSubmodule](dividedpoweralgebra-isinternal-homogeneoussubmod.md)
+- [DividedPowerAlgebra.isInternal_homogeneousSubmodule](dividedpoweralgebra-isinternal-homogeneoussubmod.md)
 
 ## Lean
 

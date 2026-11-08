@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.signedCheckedR\_braid
+# TauCeti.signedCheckedR_braid
 
 The braid relation for signed checked R-matrices on two pairs of strands sharing the strand
 `k`, the Yang-Baxter equation for the signed checked R-matrix.

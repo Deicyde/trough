@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# WeierstrassCurve.hasPotentialGoodReduction\_iff\_finite\_image\_tateModuleGaloisRepresentation
+# WeierstrassCurve.hasPotentialGoodReduction_iff_finite_image_tateModuleGaloisRepresentation
 
 **The criterion of Néron, Ogg and Shafarevich for potential good reduction** (Silverman AEC
 VII.7.3). Let `W` be an elliptic curve over a nonarchimedean local field `K`, and let `ℓ` be a

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.strictCohomologicalDimensionLE\_iff\_forall\_openSubgroup
+# TauCeti.strictCohomologicalDimensionLE_iff_forall_openSubgroup
 
 **The strict cohomological dimension through integral coefficients** (NSW (3.3.4)), as
 vanishing predicates. For a profinite group `G` and a prime `p`,

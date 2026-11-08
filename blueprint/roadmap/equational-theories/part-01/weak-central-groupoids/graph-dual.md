@@ -29,7 +29,7 @@ giving the forward implication. The backwards implication follows by duality.
 
 ## Lean
 
-Formalized as [`WeakCentralGroupoid.Path.def'`](https://teorth.github.io/equational_theories/docs/find/#doc/WeakCentralGroupoid.Path.def').
+Stated as [`WeakCentralGroupoid.Path.def'`](https://teorth.github.io/equational_theories/docs/find/#doc/WeakCentralGroupoid.Path.def'); the blueprint does not mark its proof formalized.
 
 ## Sources
 

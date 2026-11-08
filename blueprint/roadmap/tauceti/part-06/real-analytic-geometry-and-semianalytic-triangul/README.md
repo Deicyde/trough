@@ -8,7 +8,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Equivalence of presentations](equivalence-of-presentations.md)
 - [Analytic preimages](analytic-preimages.md)
 - [Analytic isomorphisms](analytic-isomorphisms.md)
-- [Geometry.SimplicialComplex.space\_cone\_of\_space\_eq\_intrinsicFrontier](geometry-simplicialcomplex-space-cone-of-space-e.md)
+- [Geometry.SimplicialComplex.space_cone_of_space_eq_intrinsicFrontier](geometry-simplicialcomplex-space-cone-of-space-e.md)
 - [TauCeti.SemianalyticAt](tauceti-semianalyticat.md)
 - [TauCeti.IsSemianalytic](tauceti-issemianalytic.md)
 - [Locally finite unions](locally-finite-unions.md)

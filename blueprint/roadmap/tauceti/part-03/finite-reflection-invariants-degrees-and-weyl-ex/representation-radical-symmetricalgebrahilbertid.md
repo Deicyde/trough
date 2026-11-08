@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Representation.radical\_symmetricAlgebraHilbertIdeal\_of\_isReduced
+# Representation.radical_symmetricAlgebraHilbertIdeal_of_isReduced
 
 For a finite group over a reduced base, the radical of the Hilbert ideal is the irrelevant
 ideal.

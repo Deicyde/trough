@@ -4,6 +4,6 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [FirstOrder.Language.Theoryω](firstorder-language-theory.md)
 - [FirstOrder.Language.Theoryω.Model](firstorder-language-theory-model.md)
-- [FirstOrder.Language.StrongHomClass.theoryω\_model\_iff](firstorder-language-stronghomclass-theory-model.md)
+- [FirstOrder.Language.StrongHomClass.theoryω_model_iff](firstorder-language-stronghomclass-theory-model.md)
 - [FirstOrder.Language.Theoryω.conjunction](firstorder-language-theory-conjunction.md)
 - [A countable theory is one sentence](a-countable-theory-is-one-sentence.md)

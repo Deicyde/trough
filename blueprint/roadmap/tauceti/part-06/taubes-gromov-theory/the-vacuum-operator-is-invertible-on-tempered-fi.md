@@ -22,7 +22,7 @@ TauCeti.Vortex.temperedVacuumOperatorEquiv :
 
 ## Proof depends on
 
-- [TauCeti.Vortex.temperedVacuumAdjoint\_temperedVacuumOperator](tauceti-vortex-temperedvacuumadjoint-temperedvac.md)
+- [TauCeti.Vortex.temperedVacuumAdjoint_temperedVacuumOperator](tauceti-vortex-temperedvacuumadjoint-temperedvac.md)
 
 ## Lean
 

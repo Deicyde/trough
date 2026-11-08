@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.BinaryCode.IsTypeII.eight\_dvd\_card
+# TauCeti.BinaryCode.IsTypeII.eight_dvd_card
 
 A Type II binary code has length divisible by eight.
 

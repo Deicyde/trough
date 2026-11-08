@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.restrictedProductMap\_surjective\_iff
+# TauCeti.restrictedProductMap_surjective_iff
 
 A componentwise restricted-product homomorphism is surjective exactly when every coordinate
 map is surjective and, at all but finitely many indices, the coordinate map carries the source

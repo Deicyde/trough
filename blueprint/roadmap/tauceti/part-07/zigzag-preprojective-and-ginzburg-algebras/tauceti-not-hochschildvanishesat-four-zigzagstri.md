@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.not\_hochschildVanishesAt\_four\_zigzagStrictAInfinityAlgebra
+# TauCeti.not_hochschildVanishesAt_four_zigzagStrictAInfinityAlgebra
 
 **The quartic Hochschild cohomology `HH^{4, -2}` of a zigzag algebra is nonzero** when four
 distinct darts of `G` have a common head, that is when some vertex has four distinct neighbours,

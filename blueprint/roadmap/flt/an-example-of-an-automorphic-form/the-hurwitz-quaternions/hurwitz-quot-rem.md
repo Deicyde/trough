@@ -6,18 +6,18 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.quot\_rem
+# Hurwitz.quot_rem
 
 Given two Hurwitz quaternions $a$ and $b$ with $b$ nonzero, there exists $q$ and $r$ such that $a=qb+r$ and $N(r)\lt N(b)$.
 
 ## Depends on
 
 - [Hurwitz.norm](hurwitz-norm.md)
-- [Hurwitz.exists\_near](hurwitz-exists-near.md)
+- [Hurwitz.exists_near](hurwitz-exists-near.md)
 
 ## Proof
 
-Let $q$ be the Hurwitz quaternion obtained by applying Lemma [Hurwitz.exists\_near](hurwitz-exists-near.md) to $a/b := ab^{-1}$; then $N(a/b-q)<1$ and now everything follows after multiplying up.
+Let $q$ be the Hurwitz quaternion obtained by applying Lemma [Hurwitz.exists_near](hurwitz-exists-near.md) to $a/b := ab^{-1}$; then $N(a/b-q)<1$ and now everything follows after multiplying up.
 
 ## Lean
 

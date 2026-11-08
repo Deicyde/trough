@@ -4,9 +4,9 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Conjugacy criterion in free groups](conjugacy-criterion-in-free-groups.md)
 - [Free groups are CSA](free-groups-are-csa.md)
-- [IsFreeGroup.maximal\_isMulCommutative\_iff](isfreegroup-maximal-ismulcommutative-iff.md)
-- [IsFreeGroup.isGDomain\_id](isfreegroup-isgdomain-id.md)
-- [TauCeti.GroupAlgGeom.IsGDomain.of\_isCSA](tauceti-groupalggeom-isgdomain-of-iscsa.md)
+- [IsFreeGroup.maximal_isMulCommutative_iff](isfreegroup-maximal-ismulcommutative-iff.md)
+- [IsFreeGroup.isGDomain_id](isfreegroup-isgdomain-id.md)
+- [TauCeti.GroupAlgGeom.IsGDomain.of_isCSA](tauceti-groupalggeom-isgdomain-of-iscsa.md)
 - [Sanov's theorem](sanovs-theorem.md)
 - [Free groups of countable rank are linear over `ℤ`](free-groups-of-countable-rank-are-linear-over-z.md)
 - [Linear groups are equationally Noetherian](linear-groups-are-equationally-noetherian.md)

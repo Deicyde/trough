@@ -30,7 +30,7 @@ TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlge
 
 ## Proof depends on
 
-- [TauCeti.IsAffinoidAlgebra.continuous\_algHom](../../part-06/rigid-analytic-geometry/tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [TauCeti.IsAffinoidAlgebra.continuous_algHom](../../part-06/rigid-analytic-geometry/tauceti-isaffinoidalgebra-continuous-alghom.md)
 
 ## Lean
 

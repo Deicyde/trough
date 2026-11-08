@@ -5,7 +5,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.harishChandraLinearIso](tauceti-harishchandralineariso.md)
 - [Harish-Chandra's theorem on central characters](harish-chandras-theorem-on-central-characters.md)
 - [Chevalley's restriction theorem](chevalleys-restriction-theorem.md)
-- [ModuleCat.exists\_isAlmostSplit\_X₃\_eq\_iff](modulecat-exists-isalmostsplit-x3-eq-iff.md)
+- [ModuleCat.exists_isAlmostSplit_X₃_eq_iff](modulecat-exists-isalmostsplit-x3-eq-iff.md)
 - [The Peter-Weyl theorem, unconditionally](the-peter-weyl-theorem-unconditionally.md)
 - [Gabriel's theorem, Tits form version](gabriels-theorem-tits-form-version.md)
 - [TauCeti.UniversalEnvelopingAlgebra.reesAlgebra](tauceti-universalenvelopingalgebra-reesalgebra.md)

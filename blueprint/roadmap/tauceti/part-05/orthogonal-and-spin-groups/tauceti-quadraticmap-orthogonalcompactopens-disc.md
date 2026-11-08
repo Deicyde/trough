@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.QuadraticMap.OrthogonalCompactOpens.discreteTopology\_range\_fullAdelicSpinDiagonal
+# TauCeti.QuadraticMap.OrthogonalCompactOpens.discreteTopology_range_fullAdelicSpinDiagonal
 
 Rational Spin points of a nondegenerate rational quadratic space form a discrete subgroup
 of the full adelic Spin group for every compatible compact-open reference family.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.norm\_zero
+# Hurwitz.norm_zero
 
 The norm of $0$ is $0$.
 

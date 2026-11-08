@@ -3,9 +3,9 @@
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/TaubesGromov/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The good-curve component inequality](the-good-curve-component-inequality.md)
-- [TauCeti.IsGoodCycle.apply\_self\_eq\_zero\_of\_one\_lt\_mult](tauceti-isgoodcycle-apply-self-eq-zero-of-one-lt.md)
-- [TauCeti.coeff\_rayTorusWeightSeries](tauceti-coeff-raytorusweightseries.md)
-- [TauCeti.Vortex.temperedVacuumAdjoint\_temperedVacuumOperator](tauceti-vortex-temperedvacuumadjoint-temperedvac.md)
+- [TauCeti.IsGoodCycle.apply_self_eq_zero_of_one_lt_mult](tauceti-isgoodcycle-apply-self-eq-zero-of-one-lt.md)
+- [TauCeti.coeff_rayTorusWeightSeries](tauceti-coeff-raytorusweightseries.md)
+- [TauCeti.Vortex.temperedVacuumAdjoint_temperedVacuumOperator](tauceti-vortex-temperedvacuumadjoint-temperedvac.md)
 - [The vacuum operator is invertible on tempered fields](the-vacuum-operator-is-invertible-on-tempered-fi.md)
 - [The vacuum operator restricts to a bijection `H^s → H^{s-1}`](the-vacuum-operator-restricts-to-a-bijection-h-s.md)
 - [The integral Wang torsion order](the-integral-wang-torsion-order.md)

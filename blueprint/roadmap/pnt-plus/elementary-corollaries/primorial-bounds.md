@@ -24,7 +24,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Exponentiate Theorem chebyshev\_asymptotic.
+Exponentiate Theorem chebyshev_asymptotic.
 
 ## Lean
 

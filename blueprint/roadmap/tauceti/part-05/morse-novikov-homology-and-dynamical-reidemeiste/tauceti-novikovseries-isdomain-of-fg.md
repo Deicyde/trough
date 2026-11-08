@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NovikovSeries.isDomain\_of\_fg
+# TauCeti.NovikovSeries.isDomain_of_fg
 
 Over a domain, the Novikov ring of a finitely generated cancellative torsion-free commutative
 monoid, for instance of a finitely generated torsion-free abelian group, is a domain for every

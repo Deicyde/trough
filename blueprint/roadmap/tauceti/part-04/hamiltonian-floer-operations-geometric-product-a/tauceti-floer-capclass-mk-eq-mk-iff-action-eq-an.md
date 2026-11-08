@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Floer.CapClass.mk\_eq\_mk\_iff\_action\_eq\_and\_index\_eq
+# TauCeti.Floer.CapClass.mk_eq_mk_iff_action_eq_and_index_eq
 
 Two raw caps have the same class exactly when they have the same action and the same grading,
 for functions `a` and `m` on raw caps obeying the recapping laws for area and twice the first

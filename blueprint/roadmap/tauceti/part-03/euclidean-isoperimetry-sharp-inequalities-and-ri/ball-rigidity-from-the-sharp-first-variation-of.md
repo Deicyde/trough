@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.hasPrekopaLeindler\_volume](tauceti-hasprekopaleindler-volume.md)
+- [TauCeti.hasPrekopaLeindler_volume](tauceti-hasprekopaleindler-volume.md)
 
 ## Lean
 

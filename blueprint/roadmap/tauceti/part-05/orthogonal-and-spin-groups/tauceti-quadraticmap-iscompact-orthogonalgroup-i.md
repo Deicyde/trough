@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.QuadraticMap.isCompact\_orthogonalGroup\_iff
+# TauCeti.QuadraticMap.isCompact_orthogonalGroup_iff
 
 The orthogonal group of a quadratic form on a finite-dimensional space
 over a locally compact nontrivially normed field is compact exactly when the form is anisotropic.

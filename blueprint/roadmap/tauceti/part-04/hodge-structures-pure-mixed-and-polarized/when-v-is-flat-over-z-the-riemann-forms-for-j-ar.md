@@ -27,7 +27,7 @@ TauCeti.AlmostComplexStructure.isRiemannForm_iff_isPolarization.{u, v} {V : Type
 
 - [The Hodge decomposition](the-hodge-decomposition.md)
 - [IsBaseChange.bilinForm](isbasechange-bilinform.md)
-- [TauCeti.AlmostComplexStructure.isRiemannForm\_of\_isPolarization](tauceti-almostcomplexstructure-isriemannform-of.md)
+- [TauCeti.AlmostComplexStructure.isRiemannForm_of_isPolarization](tauceti-almostcomplexstructure-isriemannform-of.md)
 
 ## Lean
 

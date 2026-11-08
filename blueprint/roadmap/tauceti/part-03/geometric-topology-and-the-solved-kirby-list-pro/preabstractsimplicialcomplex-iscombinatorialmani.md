@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# PreAbstractSimplicialComplex.IsCombinatorialManifold.exists\_chartedSpace\_hasGroupoid\_PLGroupoid
+# PreAbstractSimplicialComplex.IsCombinatorialManifold.exists_chartedSpace_hasGroupoid_PLGroupoid
 
 The weak realization of a positive-dimensional combinatorial manifold is a PL manifold,
 possibly with boundary: it has an atlas modelled on the half-space in `(Fin n → ℝ) × ℝ` whose

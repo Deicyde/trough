@@ -12,11 +12,11 @@ If $U$ is an open subgroup of $(D\otimes_K \mathbb{A}_K^\infty)^\times$ then the
 
 ## Depends on
 
-- [NumberField.FiniteAdeleRing.DivisionAlgebra.units\_cocompact](numberfield-finiteadelering-divisionalgebra-unit.md)
+- [NumberField.FiniteAdeleRing.DivisionAlgebra.units_cocompact](numberfield-finiteadelering-divisionalgebra-unit.md)
 
 ## Proof
 
-The double cosets give a disjoint open cover of $(D\otimes_K \mathbb{A}_K^\infty)$ which descends to a disjoint open cover of the quotient space $D^\times\backslash(D\otimes_K \mathbb{A}_K^\infty)^\times$. However this space is compact by theorem [NumberField.FiniteAdeleRing.DivisionAlgebra.units\_cocompact](numberfield-finiteadelering-divisionalgebra-unit.md).
+The double cosets give a disjoint open cover of $(D\otimes_K \mathbb{A}_K^\infty)$ which descends to a disjoint open cover of the quotient space $D^\times\backslash(D\otimes_K \mathbb{A}_K^\infty)^\times$. However this space is compact by theorem [NumberField.FiniteAdeleRing.DivisionAlgebra.units_cocompact](numberfield-finiteadelering-divisionalgebra-unit.md).
 
 ## Lean
 

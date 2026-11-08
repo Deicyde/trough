@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# pfr\_aux-improv
+# pfr_aux-improv
 
 If $A \subset {\bf F}_2^n$ is non-empty and $|A+A| \leq K|A|$, then $A$ can be covered by at most $K^6 |A|^{1/2}/|H|^{1/2}$ translates of a subspace $H$ of ${\bf F}_2^n$ with
 
@@ -31,7 +31,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-By repeating the proof of [Lemma pfr\_aux](../proof-of-pfr/pfr-aux.md) and using [Improved entropy version of PFR](entropy-pfr-improv.md) one can obtain the claim with $13/2$ replaced with $6$ and $11$ replaced by $10$.
+By repeating the proof of [Lemma pfr_aux](../proof-of-pfr/pfr-aux.md) and using [Improved entropy version of PFR](entropy-pfr-improv.md) one can obtain the claim with $13/2$ replaced with $6$ and $11$ replaced by $10$.
 
 ## Lean
 

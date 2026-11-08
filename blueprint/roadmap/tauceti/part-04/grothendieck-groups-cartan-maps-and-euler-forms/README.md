@@ -4,7 +4,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [The resolution theorem](the-resolution-theorem.md)
 - [Cartan-matrix unimodularity](cartan-matrix-unimodularity.md)
-- [TauCeti.gradedCartanMatrix\_dualNumber](tauceti-gradedcartanmatrix-dualnumber.md)
+- [TauCeti.gradedCartanMatrix_dualNumber](tauceti-gradedcartanmatrix-dualnumber.md)
 - [TauCeti.gradedCartanEquiv](tauceti-gradedcartanequiv.md)
 - [The q-Euler matrix of a path algebra is the inverse of its conjugate-transposed graded Cartan matrix](the-q-euler-matrix-of-a-path-algebra-is-the-inve.md)
 - [The graded quiver q-Euler form at `q = 1` is the ungraded Ext-Euler pairing](the-graded-quiver-q-euler-form-at-q-1-is-the-ung.md)

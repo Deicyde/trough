@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/587
 ---
 
-# Submonoid.units\_isOpen
+# Submonoid.units_isOpen
 
 If $M$ is a topological monoid and $U$ is an open submonoid, then the units $U^\times$ of $U$ are naturally an open subgroup of $M^\times$.
 

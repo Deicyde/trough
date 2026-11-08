@@ -19,7 +19,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [HeckeRing.GL2.Newform.heckeUCuspNat\_eq\_qExpansion\_coeff\_smul](heckering-gl2-newform-heckeucuspnat-eq-qexpansio.md)
+- [HeckeRing.GL2.Newform.heckeUCuspNat_eq_qExpansion_coeff_smul](heckering-gl2-newform-heckeucuspnat-eq-qexpansio.md)
 - [Periods determine a cusp form](periods-determine-a-cusp-form.md)
 - [TauCeti.ModularSymbols](tauceti-modularsymbols.md)
 - [TauCeti.ModularSymbols.periodMap](tauceti-modularsymbols-periodmap.md)

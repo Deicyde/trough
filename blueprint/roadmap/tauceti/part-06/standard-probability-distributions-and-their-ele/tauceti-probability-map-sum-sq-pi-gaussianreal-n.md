@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Probability.map\_sum\_sq\_pi\_gaussianReal\_noncentral
+# TauCeti.Probability.map_sum_sq_pi_gaussianReal_noncentral
 
 The sum of squares of independent unit-variance Gaussian coordinates has noncentral
 chi-squared law, including the empty family.

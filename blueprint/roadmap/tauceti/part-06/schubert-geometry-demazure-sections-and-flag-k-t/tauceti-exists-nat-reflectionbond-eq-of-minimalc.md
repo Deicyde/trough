@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_nat\_reflectionBond\_eq\_of\_minimalCosetRepCovBy
+# TauCeti.exists_nat_reflectionBond_eq_of_minimalCosetRepCovBy
 
 **The bond of a cover of `W / W_λ` is a positive integer** when the dominant weight `λ` is
 integral, that is when every simple coroot takes an integer value on `λ`.

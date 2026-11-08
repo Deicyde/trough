@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# MDifferentiableAt.mfderiv\_restrictScalars
+# MDifferentiableAt.mfderiv_restrictScalars
 
 At a point where `f` is differentiable for the models over `𝕜'`, the derivative of `f` over the
 smaller field `𝕜` is its derivative over `𝕜'` with scalars restricted to `𝕜`, both read in the model

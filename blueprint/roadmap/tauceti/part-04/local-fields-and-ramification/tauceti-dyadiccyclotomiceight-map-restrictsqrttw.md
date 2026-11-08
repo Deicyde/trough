@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.DyadicCyclotomicEight.map\_restrictSqrtTwo\_lowerRamificationGroup\_three\_ne
+# TauCeti.DyadicCyclotomicEight.map_restrictSqrtTwo_lowerRamificationGroup_three_ne
 
 Lower numbering fails to commute with this restriction: the image at depth three is
 the whole quadratic Galois group, but the quadratic lower group at depth three is trivial.

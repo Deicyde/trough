@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsFreelyIndependent.eqOn\_iSup
+# TauCeti.IsFreelyIndependent.eqOn_iSup
 
 Freeness determines the joint distribution from the individual ones: two normalised
 functionals for which `B` is free and which agree on each `B i` agree on the subalgebra

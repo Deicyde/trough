@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NumberField.Units.regulator\_le\_prod\_absLogHeight₁
+# TauCeti.NumberField.Units.regulator_le_prod_absLogHeight₁
 
 Every fundamental system bounds the field regulator by `(2d) ^ r` times the product
 of its absolute logarithmic heights, where `d` is the degree and `r` the unit rank.

@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.germKernel\_eq\_ker](tauceti-germkernel-eq-ker.md)
+- [TauCeti.germKernel_eq_ker](tauceti-germkernel-eq-ker.md)
 - [TauCeti.MulAction.germKernel](tauceti-mulaction-germkernel.md)
 
 ## Lean

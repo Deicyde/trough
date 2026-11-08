@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlgebraicGeometry.ModuliProblem.IsRigid.eq\_one\_of\_comp\_simultaneousAction\_gammaNaiveAction\_base\_eq
+# TauCeti.AlgebraicGeometry.ModuliProblem.IsRigid.eq_one_of_comp_simultaneousAction_gammaNaiveAction_base_eq
 
 **`GL₂(ℤ/Nℤ)` acts freely on `𝕄(𝒫, [Γ(N)])`** for every rigid `𝒫`. Let `V` represent the
 simultaneous problem `(𝒫, [Γ(N)])` with the naive full level-`N` problem, on which `GL₂(ℤ/Nℤ)` acts

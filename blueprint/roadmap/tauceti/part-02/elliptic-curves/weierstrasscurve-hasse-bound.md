@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# WeierstrassCurve.hasse\_bound
+# WeierstrassCurve.hasse_bound
 
 **The Hasse bound** (Silverman V.1.1): an elliptic curve `E` over a field with `q` elements
 satisfies `(#E(𝔽_q) - (q + 1))² ≤ 4q`, that is `|#E(𝔽_q) - (q + 1)| ≤ 2√q`, where the count
@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.hurwitz\_genus\_formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-hurwitz-genus-formula.md)
+- [TauCeti.hurwitz_genus_formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-hurwitz-genus-formula.md)
 - [TauCeti.Ring.IsJapanese](../../part-06/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

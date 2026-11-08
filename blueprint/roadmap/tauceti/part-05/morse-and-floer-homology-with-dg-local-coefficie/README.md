@@ -4,8 +4,8 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [TauCeti.singularCubicalHomologyNatIso](tauceti-singularcubicalhomologynatiso.md)
 - [Cubical and simplicial chains with local coefficients are chain homotopy equivalent](cubical-and-simplicial-chains-with-local-coeffic.md)
-- [TauCeti.isWeakHomotopyEquivalence\_cwApproximationMap](tauceti-isweakhomotopyequivalence-cwapproximatio.md)
-- [ContinuousMap.IsWeakHomotopyEquivalence.isIso\_twistedHomologyMap](continuousmap-isweakhomotopyequivalence-isiso-tw.md)
+- [TauCeti.isWeakHomotopyEquivalence_cwApproximationMap](tauceti-isweakhomotopyequivalence-cwapproximatio.md)
+- [ContinuousMap.IsWeakHomotopyEquivalence.isIso_twistedHomologyMap](continuousmap-isweakhomotopyequivalence-isiso-tw.md)
 - [Barraud--Damian--Humilière--Oancea, Lemma 3.41 (Moore singular homology)](barraud-damian-humiliere-oancea-lemma-3-41-moore.md)
 - [Homologous twisting cocycles give homotopy equivalent twisted complexes](homologous-twisting-cocycles-give-homotopy-equiv.md)
 - [TauCeti.TwistingCocycle.indexSpectralSequenceSecondPageXIso](tauceti-twistingcocycle-indexspectralsequencesec.md)

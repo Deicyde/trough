@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Bundle.ContMDiffRiemannianMetric.scalarCurvature\_prodTangentSpace
+# Bundle.ContMDiffRiemannianMetric.scalarCurvature_prodTangentSpace
 
 **The scalar curvature of a product metric** `g₁ × g₂` is the sum of the scalar curvatures of
 the factors: `Scal(x, y) = Scal_{g₁}(x) + Scal_{g₂}(y)`.

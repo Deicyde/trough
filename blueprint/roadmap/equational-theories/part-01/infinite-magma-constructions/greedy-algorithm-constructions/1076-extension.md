@@ -34,7 +34,7 @@ We need to verify that these constructions preserve Law 1. There are several cas
 
 ## Lean
 
-Formalized as [`Eq1076.Greedy.lift`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1076.Greedy.lift).
+Stated as [`Eq1076.Greedy.lift`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1076.Greedy.lift); the blueprint does not mark its proof formalized.
 
 ## Sources
 

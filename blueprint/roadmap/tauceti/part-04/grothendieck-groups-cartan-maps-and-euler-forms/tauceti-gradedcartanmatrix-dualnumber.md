@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.gradedCartanMatrix\_dualNumber
+# TauCeti.gradedCartanMatrix_dualNumber
 
 **The graded Cartan matrix of the dual numbers is `1 + q²`**, with `ε` in degree two, in the
 bases `[A]` and `[S]`: the regular module has the graded composition factors `S` and `S{2}`. At

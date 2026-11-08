@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# HomologicalComplex.reidemeisterTorsion\_eq\_zero\_iff
+# HomologicalComplex.reidemeisterTorsion_eq_zero_iff
 
 The torsion of a bounded based complex vanishes if and only if the complex is not acyclic.
 

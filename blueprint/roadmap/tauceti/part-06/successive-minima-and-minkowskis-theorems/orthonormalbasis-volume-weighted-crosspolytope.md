@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# OrthonormalBasis.volume\_weighted\_crosspolytope
+# OrthonormalBasis.volume_weighted_crosspolytope
 
 The canonical Euclidean volume of a weighted cross-polytope in an arbitrary real basis.
 The index type may be empty, in which case the volume and the empty products are one.

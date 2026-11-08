@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.baseChange\_moduleTopology
+# NumberField.AdeleRing.baseChange_moduleTopology
 
 If $K\to L$ is a ring homomorphism between two number fields then the topology on $\mathbb{A}_L$ is the $\mathbb{A}_K$-module topology, where the module structure comes from the natural map $\mathbb{A}_K\to\mathbb{A}_L$.
 

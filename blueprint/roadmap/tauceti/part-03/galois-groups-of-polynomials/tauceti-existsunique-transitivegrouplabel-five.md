@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.existsUnique\_transitiveGroupLabel\_five
+# TauCeti.existsUnique_transitiveGroupLabel_five
 
 A transitive subgroup of the symmetric group on five points carries exactly one label, one of
 `5T1`, …, `5T5`.

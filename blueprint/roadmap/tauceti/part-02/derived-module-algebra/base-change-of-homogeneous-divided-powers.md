@@ -26,7 +26,7 @@ DividedPowerAlgebra.baseChangeHomogeneousEquiv.{u_1, u_2, u_3} (R : Type u_1) [C
 
 ## Proof depends on
 
-- [DividedPowerAlgebra.isInternal\_homogeneousSubmodule](dividedpoweralgebra-isinternal-homogeneoussubmod.md)
+- [DividedPowerAlgebra.isInternal_homogeneousSubmodule](dividedpoweralgebra-isinternal-homogeneoussubmod.md)
 
 ## Lean
 

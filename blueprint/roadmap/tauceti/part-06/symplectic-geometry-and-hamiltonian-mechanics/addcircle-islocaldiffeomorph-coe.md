@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# AddCircle.isLocalDiffeomorph\_coe
+# AddCircle.isLocalDiffeomorph_coe
 
 The quotient map `ℝ → AddCircle p` is an analytic local diffeomorphism.
 

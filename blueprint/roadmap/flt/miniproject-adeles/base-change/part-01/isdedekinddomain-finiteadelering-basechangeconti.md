@@ -11,11 +11,11 @@ The induced $L$-algebra morphism $L\otimes_K\mathbb{A}_{A,K}^\infty\to\mathbb{A}
 
 ## Depends on
 
-- [IsDedekindDomain.HeightOneSpectrum.range\_baseChange\_comp\_tensorAdicCompletionTo\_eq\_pi](isdedekinddomain-heightonespectrum-range-basecha.md)
+- [IsDedekindDomain.HeightOneSpectrum.range_baseChange_comp_tensorAdicCompletionTo_eq_pi](isdedekinddomain-heightonespectrum-range-basecha.md)
 
 ## Lean
 
-Formalized as [`IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv).
+Stated as [`IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.FiniteAdeleRing.baseChangeContinuousAlgEquiv); the blueprint does not mark its proof formalized.
 
 ## Sources
 

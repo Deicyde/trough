@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# QuadraticAlgebra.nrComplexPlaces\_eq\_one
+# QuadraticAlgebra.nrComplexPlaces_eq_one
 
 An imaginary quadratic field has exactly one complex place, so its signature is `(0, 1)`.
 

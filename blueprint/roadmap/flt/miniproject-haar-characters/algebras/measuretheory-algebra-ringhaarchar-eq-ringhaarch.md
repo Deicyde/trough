@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.algebra\_ringHaarChar\_eq\_ringHaarChar\_det
+# MeasureTheory.algebra_ringHaarChar_eq_ringHaarChar_det
 
 If $u\in R^\times$ then $\delta_R(u)=\delta_F(\det(\ell_u))$.
 

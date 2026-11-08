@@ -53,7 +53,7 @@ Let $G_*$ be a finite partial extension of $G_0$ to be chosen later. By [Complet
 
 ## Lean
 
-Formalized as [`Refutation_1485.not_3457`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_1485.not_3457), [`Refutation_1485.not_3511`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_1485.not_3511), [`Refutation_1485.not_2087_2124`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_1485.not_2087_2124).
+Stated as [`Refutation_1485.not_3457`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_1485.not_3457), [`Refutation_1485.not_3511`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_1485.not_3511), [`Refutation_1485.not_2087_2124`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_1485.not_2087_2124); the blueprint does not mark its proof formalized.
 
 ## Sources
 

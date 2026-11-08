@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.nontrivial\_deRhamCohomology\_circle\_one
+# TauCeti.nontrivial_deRhamCohomology_circle_one
 
 The first de Rham cohomology of the circle is nontrivial.
 
@@ -22,7 +22,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [TauCeti.pathIntegral](tauceti-pathintegral.md)
-- [TauCeti.pathIntegral\_mextDeriv](tauceti-pathintegral-mextderiv.md)
+- [TauCeti.pathIntegral_mextDeriv](tauceti-pathintegral-mextderiv.md)
 
 ## Lean
 

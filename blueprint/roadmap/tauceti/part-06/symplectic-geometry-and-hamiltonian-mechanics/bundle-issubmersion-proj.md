@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Bundle.isSubmersion\_proj
+# Bundle.isSubmersion_proj
 
 The projection of a fibre bundle is a submersion.
 

@@ -5,7 +5,7 @@ lean: NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi
 statement: formalized
 ---
 
-# NumberField.InfinitePlace.Completion.denseRange\_algebraMap\_subtype\_pi
+# NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi
 
 Let $S$ be a set of infinite places of $K$. The image of $K$ under the embedding $K\hookrightarrow (K_v)_{v\in S}; k \mapsto (k)_v$ is dense in the product topology.
 
@@ -19,7 +19,7 @@ Let $(K, v)$ denote $K$ equipped with the topology induced by the infinite place
 
 ## Lean
 
-Formalized as [`NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi).
+Stated as [`NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.denseRange_algebraMap_subtype_pi); the blueprint does not mark its proof formalized.
 
 ## Sources
 

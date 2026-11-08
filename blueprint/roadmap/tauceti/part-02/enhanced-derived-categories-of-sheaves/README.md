@@ -5,7 +5,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [CategoryTheory.Idempotents.DoldKan.laxMonoidalΓ](categorytheory-idempotents-doldkan-laxmonoidal.md)
 - [Coassociativity of the Alexander–Whitney map](coassociativity-of-the-alexander-whitney-map.md)
 - [Frobenius-root ideals are radicals](frobenius-root-ideals-are-radicals.md)
-- [TauCeti.flat\_frobeniusRootIdeal](tauceti-flat-frobeniusrootideal.md)
+- [TauCeti.flat_frobeniusRootIdeal](tauceti-flat-frobeniusrootideal.md)
 - [The multiplication tower is pro-zero exactly for nilpotent elements](the-multiplication-tower-is-pro-zero-exactly-for.md)
 - [CategoryTheory.Functor.IsProZero](categorytheory-functor-isprozero.md)
 - [CategoryTheory.Functor.proIsomorphisms](categorytheory-functor-proisomorphisms.md)

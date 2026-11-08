@@ -19,7 +19,7 @@ Apply the usual greedy algorithm.
 
 ## Lean
 
-Formalized as [`Refutation_854.Greedy.exists_extension`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_854.Greedy.exists_extension).
+Stated as [`Refutation_854.Greedy.exists_extension`](https://teorth.github.io/equational_theories/docs/find/#doc/Refutation_854.Greedy.exists_extension); the blueprint does not mark its proof formalized.
 
 ## Sources
 

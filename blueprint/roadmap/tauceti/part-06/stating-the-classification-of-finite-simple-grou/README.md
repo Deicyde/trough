@@ -4,8 +4,8 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Classification of finite simple groups, statement only](classification-of-finite-simple-groups-statement.md)
 - [TauCeti.ValidLieTypeIndex.Group](tauceti-validlietypeindex-group.md)
-- [TauCeti.GraphTwistedIndex.steinberg\_eq\_graphAut\_comp\_frobenius](tauceti-graphtwistedindex-steinberg-eq-graphaut.md)
-- [TauCeti.F4ShortRoot.PrimeField.specialIsogeny\_specialIsogeny](tauceti-f4shortroot-primefield-specialisogeny-sp.md)
+- [TauCeti.GraphTwistedIndex.steinberg_eq_graphAut_comp_frobenius](tauceti-graphtwistedindex-steinberg-eq-graphaut.md)
+- [TauCeti.F4ShortRoot.PrimeField.specialIsogeny_specialIsogeny](tauceti-f4shortroot-primefield-specialisogeny-sp.md)
 - [TauCeti.SporadicName.presentation](tauceti-sporadicname-presentation.md)
 - [The explicit type-A carrier is equivalent to the points of the pinned `SL_{r+1}/ℤ` group scheme](the-explicit-type-a-carrier-is-equivalent-to-the.md)
 - [The ambient group of a valid Lie-type index](the-ambient-group-of-a-valid-lie-type-index.md)

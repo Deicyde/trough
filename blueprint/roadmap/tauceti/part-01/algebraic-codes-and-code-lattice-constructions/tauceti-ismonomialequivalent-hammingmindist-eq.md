@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsMonomialEquivalent.hammingMinDist\_eq
+# TauCeti.IsMonomialEquivalent.hammingMinDist_eq
 
 Monomially equivalent codes have the same minimum distance.
 

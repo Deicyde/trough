@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.CStarAction.CovariantRepresentation.integratedOperator\_convolution
+# TauCeti.CStarAction.CovariantRepresentation.integratedOperator_convolution
 
 The integrated form of a covariant pair is multiplicative for twisted convolution with respect
 to a left-invariant measure: `(π ⋊ U) (f ⋆ g) = (π ⋊ U) f * (π ⋊ U) g`.

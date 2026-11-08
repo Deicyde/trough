@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.freeProP.continuousAutToGL\_surjective
+# TauCeti.freeProP.continuousAutToGL_surjective
 
 **Every invertible matrix over `𝔽_p` comes from a continuous automorphism** of the free
 pro-`p` group of finite rank: the automorphism of the Frattini quotient it defines lifts.

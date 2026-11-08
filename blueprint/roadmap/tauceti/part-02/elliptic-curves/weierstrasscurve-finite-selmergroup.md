@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# WeierstrassCurve.finite\_selmerGroup
+# WeierstrassCurve.finite_selmerGroup
 
 **The `m`-Selmer group of an elliptic curve over a number field is finite** (Silverman
 X.4.2). The local conditions are the images of the Kummer maps over the completions at all finite
@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
-- [TauCeti.hurwitz\_genus\_formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-hurwitz-genus-formula.md)
+- [TauCeti.hurwitz_genus_formula](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-hurwitz-genus-formula.md)
 - [TauCeti.Ring.IsJapanese](../../part-06/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

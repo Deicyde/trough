@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# SchwartzMap.tsum\_eq\_tsum\_dual\_fourier
+# SchwartzMap.tsum_eq_tsum_dual_fourier
 
 **Poisson's summation formula** over a full lattice `L` of a finite-dimensional real inner
 product space: for a Schwartz function `f` and `v : E`,

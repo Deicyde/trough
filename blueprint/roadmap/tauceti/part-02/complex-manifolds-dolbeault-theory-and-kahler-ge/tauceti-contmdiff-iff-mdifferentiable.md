@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.contMDiff\_iff\_mdifferentiable
+# TauCeti.contMDiff_iff_mdifferentiable
 
 A map between complex manifolds is `C^n`, for any `n ≠ 0`, if and only if it is
 holomorphic.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Vortex.temperedVacuumAdjoint\_temperedVacuumOperator
+# TauCeti.Vortex.temperedVacuumAdjoint_temperedVacuumOperator
 
 **The Weitzenböck identity at the vacuum** on tempered fields: `L₀* L₀ = -Δ + 1 / 4`.
 

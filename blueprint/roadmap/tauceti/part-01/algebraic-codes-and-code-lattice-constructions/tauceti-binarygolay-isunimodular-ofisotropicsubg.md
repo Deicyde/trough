@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.BinaryGolay.isUnimodular\_ofIsotropicSubgroup\_codeInZeroLatticeDiscriminantGroup
+# TauCeti.BinaryGolay.isUnimodular_ofIsotropicSubgroup_codeInZeroLatticeDiscriminantGroup
 
 **Gluing `2 ℤ²⁴` along the Golay code gives a unimodular lattice**, because the glue is
 Lagrangian.

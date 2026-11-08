@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Floer.periodGroupComparison\_single\_eq\_iff
+# TauCeti.Floer.periodGroupComparison_single_eq_iff
 
 Monomial descent identifies precisely the joint periods, retaining equal-area classes
 of different Chern number. The coefficient is assumed nonzero.

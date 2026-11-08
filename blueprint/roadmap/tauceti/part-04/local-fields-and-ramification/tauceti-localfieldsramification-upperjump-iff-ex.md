@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.LocalFieldsRamification.upperJump\_iff\_exists\_isCyclic\_intermediateField
+# TauCeti.LocalFieldsRamification.upperJump_iff_exists_isCyclic_intermediateField
 
 An upper break of a finite abelian extension is detected in a cyclic subextension. The
 subextension can be chosen with trivial upper ramification groups at every later index, so the

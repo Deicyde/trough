@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.ringHaarChar\_adeles\_rat
+# MeasureTheory.ringHaarChar_adeles_rat
 
 If $x\in\mathbb{A}_{\mathbb{Q}}^\times$ then $\delta_{\mathbb{A}_{\mathbb{Q}}}(x)=\prod_v|x_v|_v.$
 
@@ -16,14 +16,14 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_prodCongr](../finite-products/measuretheory-addequivaddhaarchar-prodcongr.md)
-- [MeasureTheory.ringHaarChar\_real](../examples/measuretheory-ringhaarchar-real.md)
-- [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md)
-- [MeasureTheory.ringHaarChar\_padic](../examples/measuretheory-ringhaarchar-padic.md)
+- [MeasureTheory.addEquivAddHaarChar_prodCongr](../finite-products/measuretheory-addequivaddhaarchar-prodcongr.md)
+- [MeasureTheory.ringHaarChar_real](../examples/measuretheory-ringhaarchar-real.md)
+- [MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md)
+- [MeasureTheory.ringHaarChar_padic](../examples/measuretheory-ringhaarchar-padic.md)
 
 ## Proof
 
-By theorem [MeasureTheory.addEquivAddHaarChar\_prodCongr](../finite-products/measuretheory-addequivaddhaarchar-prodcongr.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}}(x)=\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}(x^\infty)\times\delta_{\mathbb{R}}(x_\infty)$. By lemma [MeasureTheory.ringHaarChar\_real](../examples/measuretheory-ringhaarchar-real.md) we have $\delta_{\mathbb{R}}(x_\infty)=|x|_\infty$, and by theorem [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}=\prod_p\delta_{\mathbb{Q}_p}(x_p)$. By lemma [MeasureTheory.ringHaarChar\_padic](../examples/measuretheory-ringhaarchar-padic.md) we have $\delta_{\mathbb{Q}_p}(x_p)=|x_p|_p$ and putting everything together we get the result.
+By theorem [MeasureTheory.addEquivAddHaarChar_prodCongr](../finite-products/measuretheory-addequivaddhaarchar-prodcongr.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}}(x)=\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}(x^\infty)\times\delta_{\mathbb{R}}(x_\infty)$. By lemma [MeasureTheory.ringHaarChar_real](../examples/measuretheory-ringhaarchar-real.md) we have $\delta_{\mathbb{R}}(x_\infty)=|x|_\infty$, and by theorem [MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) we have $\delta_{\mathbb{A}_{\mathbb{Q}}^\infty}=\prod_p\delta_{\mathbb{Q}_p}(x_p)$. By lemma [MeasureTheory.ringHaarChar_padic](../examples/measuretheory-ringhaarchar-padic.md) we have $\delta_{\mathbb{Q}_p}(x_p)=|x_p|_p$ and putting everything together we get the result.
 
 ## Lean
 

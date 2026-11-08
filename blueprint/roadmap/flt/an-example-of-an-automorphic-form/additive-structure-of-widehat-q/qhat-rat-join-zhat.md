@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# QHat.rat\_join\_zHat
+# QHat.rat_join_zHat
 
 The sum of $\mathbb{Q}$ and $\widehat{\mathbb{Z}}$ in $\widehat{\mathbb{Q}}$ is $\widehat{\mathbb{Q}}$. More precisely, every element of $\widehat{\mathbb{Q}}$ can be written as $q+z$ with $q\in\mathbb{Q}$ and $z\in\widehat{\mathbb{Z}}$, or more precisely as $q\otimes_t 1+1\otimes_t z$.
 

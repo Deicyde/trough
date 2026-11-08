@@ -5,7 +5,7 @@ lean: NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebra
 statement: formalized
 ---
 
-# NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap\_fLT
+# NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT
 
 If $w \mid v$ is an infinite place of $L$ lying above the infinite place $v$ of $K$, then $L_w$ has the $K_v$-module topology.
 
@@ -19,7 +19,7 @@ Because $L_w$ is a finite-dimensional normed $K_v$ vector space, there exists a 
 
 ## Lean
 
-Formalized as [`NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT).
+Stated as [`NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT); the blueprint does not mark its proof formalized.
 
 ## Sources
 

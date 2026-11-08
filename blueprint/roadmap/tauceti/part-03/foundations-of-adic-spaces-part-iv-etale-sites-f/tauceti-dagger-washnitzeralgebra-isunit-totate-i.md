@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Dagger.washnitzerAlgebra.isUnit\_toTate\_iff
+# TauCeti.Dagger.washnitzerAlgebra.isUnit_toTate_iff
 
 An overconvergent series is a unit of the Tate algebra iff it is a unit of the
 Monsky–Washnitzer algebra: the inverse of an overconvergent series is overconvergent.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Toric.Fan.isProperMap\_analyticMap\_starSubdivisionAlong
+# TauCeti.Toric.Fan.isProperMap_analyticMap_starSubdivisionAlong
 
 The star subdivision of a regular fan `Φ` along a nonzero cone `σ` of `Φ` induces a proper
 analytic map to the realization of `Φ`, because the two fans have the same support.

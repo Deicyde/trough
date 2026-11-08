@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# CliffordAlgebra.range\_spinToSpecialOrthogonal\_eq\_ker\_spinorNorm
+# CliffordAlgebra.range_spinToSpecialOrthogonal_eq_ker_spinorNorm
 
 The image of the Spin action on `SO(Q)` is exactly the kernel of the spinor norm.
 

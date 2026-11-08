@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.norm\_eq\_zero
+# Hurwitz.norm_eq_zero
 
 The norm of an element is zero if and only if the element is zero.
 

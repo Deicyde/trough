@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Huber.PairOfDefinition.ofTensorProduct\_bijective
+# TauCeti.Huber.PairOfDefinition.ofTensorProduct_bijective
 
 **Completion of a finite module is base change to the completed ring** (Huber, Lemma
 2.3(iii)). If `A` is a Huber ring with a noetherian ring of definition and `M` is a finitely
@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Noetherianity of complete rings](noetherianity-of-complete-rings.md)
-- [TauCeti.Huber.PairOfDefinition.isClosed\_of\_isNoetherianRing](tauceti-huber-pairofdefinition-isclosed-of-isnoe.md)
+- [TauCeti.Huber.PairOfDefinition.isClosed_of_isNoetherianRing](tauceti-huber-pairofdefinition-isclosed-of-isnoe.md)
 
 ## Lean
 

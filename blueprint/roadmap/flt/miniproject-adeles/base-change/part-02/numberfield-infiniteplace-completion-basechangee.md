@@ -12,17 +12,17 @@ Let $v$ be an infinite place of $K$. There is a natural $L$-algebra homeomorphis
 ## Depends on
 
 - [NumberField.InfinitePlace.Completion.baseChange](../part-01/numberfield-infiniteplace-completion-basechange.md)
-- [NumberField.InfinitePlace.Completion.baseChange\_surjective](../part-01/numberfield-infiniteplace-completion-basechange-2.md)
-- [NumberField.InfinitePlace.Completion.baseChange\_injective](../part-01/numberfield-infiniteplace-completion-basechange-3.md)
-- [NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap\_fLT](../part-01/numberfield-infiniteplace-completion-instismodul.md)
+- [NumberField.InfinitePlace.Completion.baseChange_surjective](../part-01/numberfield-infiniteplace-completion-basechange-2.md)
+- [NumberField.InfinitePlace.Completion.baseChange_injective](../part-01/numberfield-infiniteplace-completion-basechange-3.md)
+- [NumberField.InfinitePlace.Completion.instIsModuleTopologyValEqComapAlgebraMap_fLT](../part-01/numberfield-infiniteplace-completion-instismodul.md)
 
 ## Proof
 
-The map in [NumberField.InfinitePlace.Completion.baseChange](../part-01/numberfield-infiniteplace-completion-basechange.md) is an $L$-algebra isomorphism by Theorem [NumberField.InfinitePlace.Completion.baseChange\_surjective](../part-01/numberfield-infiniteplace-completion-basechange-2.md) and Theorem [NumberField.InfinitePlace.Completion.baseChange\_injective](../part-01/numberfield-infiniteplace-completion-basechange-3.md). Every $K_v$-algebra isomorphism between two $K_v$-module topological spaces is a homeomorphism. Since the $L$-algebra isomorphism of Definition [NumberField.InfinitePlace.Completion.baseChange](../part-01/numberfield-infiniteplace-completion-basechange.md) can equivalently be viewed as a $K_v$-algebra isomorphism, it is also a homeomorphism.
+The map in [NumberField.InfinitePlace.Completion.baseChange](../part-01/numberfield-infiniteplace-completion-basechange.md) is an $L$-algebra isomorphism by Theorem [NumberField.InfinitePlace.Completion.baseChange_surjective](../part-01/numberfield-infiniteplace-completion-basechange-2.md) and Theorem [NumberField.InfinitePlace.Completion.baseChange_injective](../part-01/numberfield-infiniteplace-completion-basechange-3.md). Every $K_v$-algebra isomorphism between two $K_v$-module topological spaces is a homeomorphism. Since the $L$-algebra isomorphism of Definition [NumberField.InfinitePlace.Completion.baseChange](../part-01/numberfield-infiniteplace-completion-basechange.md) can equivalently be viewed as a $K_v$-algebra isomorphism, it is also a homeomorphism.
 
 ## Lean
 
-Formalized as [`NumberField.InfinitePlace.Completion.baseChangeEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChangeEquiv).
+Stated as [`NumberField.InfinitePlace.Completion.baseChangeEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfinitePlace.Completion.baseChangeEquiv); the blueprint does not mark its proof formalized.
 
 ## Sources
 

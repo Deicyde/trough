@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZLattice.IsEven.thetaCoset\_one\_vadd
+# ZLattice.IsEven.thetaCoset_one_vadd
 
 The translation law of the theta series of a coset of an even lattice: for `γ ∈ L^∨`,
 `θ_{γ+L}(τ + 1) = e(q_L(γ)) θ_{γ+L}(τ)` with `e(q_L(γ)) = exp (π i ‖γ‖²)`.

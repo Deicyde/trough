@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZLattice.IsIntegral.det\_eq\_card\_discriminantGroup
+# ZLattice.IsIntegral.det_eq_card_discriminantGroup
 
 For an integral lattice `L`, the determinant is the order of the discriminant group
 `L^∨ ⧸ L`. In particular it is a positive integer.

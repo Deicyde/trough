@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.TerminalCut.min\_pairMinimumValue\_le
+# TauCeti.TerminalCut.min_pairMinimumValue_le
 
 **Ultrametric inequality** for minimum cut values: every cut separating `s` from `t`
 separates `s` from `v` or `v` from `t`. The intermediate vertex `v` is arbitrary.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.LazardRing.coproduct\_coassoc
+# TauCeti.LazardRing.coproduct_coassoc
 
 **Coassociativity** `(Δ ⊗ id) Δ = (id ⊗ Δ) Δ` of the coproduct: composition of strict
 isomorphisms is associative. Both sides take values in the triple tensor product

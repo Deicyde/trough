@@ -23,7 +23,7 @@ This is a direct consequence of the multiplicative properties of the functions i
 
 ## Lean
 
-Formalized as [`ArithmeticFunction.zeta_mul_zeta_mul_zeta_mul_zeta_eq`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.zeta_mul_zeta_mul_zeta_mul_zeta_eq).
+Stated as [`ArithmeticFunction.zeta_mul_zeta_mul_zeta_mul_zeta_eq`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.zeta_mul_zeta_mul_zeta_mul_zeta_eq); the blueprint does not mark its proof formalized.
 
 ## Sources
 

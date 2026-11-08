@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Place.exists\_completion\_ringEquiv\_laurentSeries
+# TauCeti.Place.exists_completion_ringEquiv_laurentSeries
 
 **At every place the completion is `F_P((T))`**, separable residue field or not: some
 isomorphism of the completion with the Laurent-series field over the residue field carries the

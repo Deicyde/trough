@@ -7,18 +7,18 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/515
 ---
 
-# MeasureTheory.ringHaarChar\_mul\_volume
+# MeasureTheory.ringHaarChar_mul_volume
 
 If $X$ is a Borel subset of $R$ and $r\in R^\times$ then $\mu(rX)=\delta_R(r)\mu(X)$.
 
 ## Depends on
 
 - [MeasureTheory.ringHaarChar](measuretheory-ringhaarchar.md)
-- [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md)
 
 ## Proof
 
-Immediate from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md).
+Immediate from lemma [MeasureTheory.addEquivAddHaarChar_smul_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md).
 
 ## Lean
 

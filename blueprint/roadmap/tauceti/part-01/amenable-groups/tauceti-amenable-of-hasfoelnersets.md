@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Amenable.of\_hasFoelnerSets
+# TauCeti.Amenable.of_hasFoelnerSets
 
 A group with Følner sets is amenable, for every group topology.
 
@@ -21,7 +21,7 @@ TauCeti.Amenable.of_hasFoelnerSets.{u_1} {G : Type u_1} [Group G] [TopologicalSp
 
 ## Proof depends on
 
-- [TauCeti.Amenable.of\_tendsto](tauceti-amenable-of-tendsto.md)
+- [TauCeti.Amenable.of_tendsto](tauceti-amenable-of-tendsto.md)
 - [TauCeti.UCB.leftTranslation](tauceti-ucb-lefttranslation.md)
 
 ## Lean

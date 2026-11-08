@@ -12,7 +12,7 @@ There's a natural ring homomorphism $\mathbb{A}_{A,K}^\infty\to\mathbb{A}_{B,L}^
 ## Depends on
 
 - [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom](isdedekinddomain-heightonespectrum-extension-adi.md)
-- [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom\_image\_adicCompletionIntegers](isdedekinddomain-heightonespectrum-extension-adi-2.md)
+- [IsDedekindDomain.HeightOneSpectrum.Extension.adicCompletionSemialgHom_image_adicCompletionIntegers](isdedekinddomain-heightonespectrum-extension-adi-2.md)
 
 ## Lean
 

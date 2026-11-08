@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.WittVector.isStablySheafyRing\_intervalRing
+# TauCeti.WittVector.isStablySheafyRing_intervalRing
 
 **The interval ring `B^I` is stably sheafy** for all radii `0 < ρ₁ ≤ ρ₂ < 1`: every complete
 Hausdorff Huber ring topologically of finite type over `B^I` is sheafy. The ring `B^I` is a
@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.WittVector.isStronglyNoetherian\_intervalRing](tauceti-wittvector-isstronglynoetherian-interval.md)
+- [TauCeti.WittVector.isStronglyNoetherian_intervalRing](tauceti-wittvector-isstronglynoetherian-interval.md)
 
 ## Lean
 

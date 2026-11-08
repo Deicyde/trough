@@ -5,7 +5,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Newton–Puiseux theorem](newton-puiseux-theorem.md)
 - [TauCeti.puiseuxField.instIsAlgClosure](tauceti-puiseuxfield-instisalgclosure.md)
 - [Finite extensions of `K⸨X⸩`](finite-extensions-of-kx.md)
-- [TauCeti.puiseuxField.mem\_level\_factorial\_of\_aeval\_eq\_zero](tauceti-puiseuxfield-mem-level-factorial-of-aeva.md)
+- [TauCeti.puiseuxField.mem_level_factorial_of_aeval_eq_zero](tauceti-puiseuxfield-mem-level-factorial-of-aeva.md)
 - [TauCeti.puiseuxField.levelGalEquivRootsOfUnity](tauceti-puiseuxfield-levelgalequivrootsofunity.md)
 - [Faithfulness](faithfulness.md)
 - [Finite-map residue formula for Laurent series substitution](finite-map-residue-formula-for-laurent-series-su.md)

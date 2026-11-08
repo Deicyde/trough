@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.puiseuxField.mem\_level\_factorial\_of\_aeval\_eq\_zero
+# TauCeti.puiseuxField.mem_level_factorial_of_aeval_eq_zero
 
 If `K` contains all roots of unity, then a Puiseux series that is a root of a nonzero
 polynomial of degree `d` over `K⸨X⸩` lies in level `d!`. Thus all roots of such a polynomial lie in

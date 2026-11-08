@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Huber.PairOfDefinition.isStrictMap\_of\_isNoetherianRing
+# TauCeti.Huber.PairOfDefinition.isStrictMap_of_isNoetherianRing
 
 **Linear maps of finite modules over a Huber ring with a noetherian ring of definition are
 strict** (Huber, Lemma 2.3(i)). If `A₀` is noetherian, every `A`-linear map between finitely
