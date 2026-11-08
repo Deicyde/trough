@@ -152,7 +152,8 @@ this chapter yet, so its articles have no edges.
    Frontier libraries its `lake-manifest.json` names, and the README's
    headline results, split as Formal Frontier's
    [dashboard](https://formalfrontier.github.io) splits them but each with its
-   whole text.
+   whole text as written; an entry that only links into the README or `docs/`
+   belongs to a table of contents and is left out.
 2. For every declaration those name, `tools/trough/leansource.py` reads the
    named file's source without Lean, with comments, docstrings and strings
    blanked and scopes followed through `namespace`, `section` and `end`. A

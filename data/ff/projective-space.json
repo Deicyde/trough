@@ -83,86 +83,86 @@
   {
    "kind": "item",
    "title": "Inverse degree-preserving graded ring maps give whole-scheme `Proj` isomorphisms through `ProjectiveSpace.projIsoOfInverseGradedRingHom` and …",
+   "title_from": "sentence",
    "text": "Inverse degree-preserving graded ring maps give whole-scheme `Proj`\nisomorphisms through `ProjectiveSpace.projIsoOfInverseGradedRingHom` and\nhomeomorphisms and closed-point equivalences through\n`ProjectiveSpace.projectiveSpectrumHomeomorphOfInverseGradedRingHom` and\n`ProjectiveSpace.projClosedPointsEquivOfInverseGradedRingHom`.\nScheme transport uses one universe for underlying rings; point transport\npermits independent ring universes. See the\n[module](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpace/GradedProjIso.lean) and\n[point client](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/PointClient.lean).",
    "link": {
     "text": "point client",
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/PointClient.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "Compatible graded tails with equivalent degree-zero rings and high-degree pieces induce an isomorphism of **entire projective schemes** …",
+   "title_from": "sentence",
    "text": "Compatible graded tails with equivalent degree-zero rings and high-degree\npieces induce an isomorphism of **entire projective schemes**\n`E.projIso n hNn hn` for `N ≤ n` and `0 < n`, with both forward and inverse\nequalities over the actual degree-zero base. No graded map on the omitted\nlow-degree original components, finite generation, domain, reducedness or\n`Nontrivial` is needed. The algebraic `TailEquiv` is provided by the official\nGraded Rings dependency; this library proves the geometric transfer. See\n[the coherent-tail guide](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/docs/CoherentTailProj.md),\n[module](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpace/CoherentTailProj.lean) and\n[client](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/CoherentTailProjClient.lean).",
    "link": {
     "text": "client",
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/CoherentTailProjClient.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "Every positive selected-component Veronese has a whole-scheme isomorphism `AlgebraicGeometry.Proj.Veronese.schemeIso`, compatible with the …",
+   "title_from": "sentence",
    "text": "Every positive selected-component Veronese has a whole-scheme isomorphism\n`AlgebraicGeometry.Proj.Veronese.schemeIso`, compatible with the degree-zero\ncoefficient map; its charts accommodate zero divisors and nilpotents.\nSelected-component ring algebra comes from Graded Rings. See\n[the Veronese guide](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/docs/Veronese.md),\n[module](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpace/Veronese.lean) and\n[client](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/VeroneseClient.lean).",
    "link": {
     "text": "client",
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/VeroneseClient.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "A positive degree-scaled ring hom constructs a projective scheme arrow on the **actual open complement** of its image-irrelevant zero locus …",
+   "title_from": "sentence",
    "text": "A positive degree-scaled ring hom constructs a projective scheme arrow on\nthe **actual open complement** of its image-irrelevant zero locus, with\ncoefficient naturality and arbitrary-element ordinary point-prime\ncontraction. The generic arrow is not asserted to extend to all of `Proj`.\nSee the [degree-scaled guide](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/docs/DegreeScaledMap.md),\n[point-prime guide](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/docs/DegreeScaledMapPoint.md) and\n[direct client](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/DegreeScaledMapPointClient.lean).",
    "link": {
     "text": "direct client",
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/DegreeScaledMapPointClient.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "Positive-degree homogeneous basic opens form a basis on arbitrary graded `Proj`, including the zero ring",
+   "title_from": "sentence",
    "text": "Positive-degree homogeneous basic opens form a basis on arbitrary graded\n`Proj`, including the zero ring; the positive-degree projective radical\ncriterion identifies vanishing with membership in an **ordinary** radical.\nThe latter needs a positive-degree homogeneous element, not a field or\nNoetherianity. See the [basis module](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpace/BasicOpenBasis.lean),\n[radical module](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpace/ProjectiveNullstellensatz.lean) and\n[geometry client](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/GeometryClient.lean).",
    "link": {
     "text": "geometry client",
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/GeometryClient.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "The `Proj` of a naturally graded **Noetherian commutative ring** is a Noetherian scheme",
+   "title_from": "sentence",
    "text": "The `Proj` of a naturally graded **Noetherian commutative ring** is a\nNoetherian scheme. In particular, total-degree polynomial `Proj` over any\nNoetherian commutative ring with **finite coordinates** is Noetherian,\nincluding empty coordinate types and the zero ring. Mathlib then gives\nNoetherianity of its underlying topological space; every subset is compact.\nSee the [module](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpace/Noetherian.lean) and\n[client](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/NoetherianClient.lean).",
    "link": {
     "text": "client",
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/NoetherianClient.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "Finite-dimensional projective space is **geometrically integral over every commutative ring**",
+   "title_from": "sentence",
    "text": "Finite-dimensional projective space is **geometrically integral over every\ncommutative ring**: `polynomialProjToSpec_fin_geometricallyIntegral` applies\nto `Fin (n + 1)`, and `polynomialProjToSpec_geometricallyIntegral_of_finite`\nto any finite nonempty coordinate type. No domain, Noetherian or\nnontrivial-base hypothesis is needed. The finite restriction belongs to the\npolynomial-chart API; empty coordinates are excluded because projective\nspace over a field would be empty. See the\n[module](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpace/GeometricallyIntegral.lean) and the\n[projective-line client](https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/GeometricallyIntegralClient.lean).",
    "link": {
     "text": "projective-line client",
     "url": "https://github.com/FormalFrontier/projective-space/blob/9dbd208f42754d4b3e0fd8e778faa9125b9c6d91/ProjectiveSpaceTest/GeometricallyIntegralClient.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   }
  ],
  "main_results": [

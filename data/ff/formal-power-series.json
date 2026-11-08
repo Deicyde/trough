@@ -71,6 +71,7 @@
   {
    "kind": "item",
    "title": "Weighted unit derivative",
+   "title_from": "heading",
    "text": "Over an arbitrary commutative ring `R`, for a native unit\n`f : (PowerSeries R)ˣ`, `negXLogDeriv f = -X * f' * f⁻¹`, weighted by\n**negative `X`**. Products become sums, inverses become negatives and integer\npowers become integer multiples, naturally under coefficient-ring homomorphisms.\nIntegral convolution works without normalization; a division-free **forward**\nrecurrence for derivative coefficients requires constant coefficient one.\nLinear factors `1 - C a * X` give signed power sums for finite products,\nincluding inverse factors and the empty family.\n\nThis is neither reconstruction nor injectivity: constant units and, under\n`[CharP R p]`, `p`-th powers lie in the kernel; even normalized nonidentity\nunits can do so. No formal logarithm, lambda/Witt structure, splitting extension\nor Adams operation is asserted. See the [full formulas and limitations](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/RESULTS.md#weighted-unit-derivative)\nand [source](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/UnitLogDerivative.lean).",
    "link": null,
    "declaration": null
@@ -78,6 +79,7 @@
   {
    "kind": "item",
    "title": "Rational Artin–Hasse exponential",
+   "title_from": "heading",
    "text": "The rational formal construction is defined for every natural `p` and has\nconstant and linear coefficients one. For `2 ≤ p` (composite `p` allowed), it is\n`exp (∑ i ≥ 0, X^(p^i) / p^i)`; the coefficient recurrence together with\n`a_0 = 1` determines it uniquely. The recurrence fails at `p = 1`, degree two.\n\nFor **prime `p` only**, its degree-`k` coefficient equals that of every finite\nEuler product of `(1 - X^n)^(-μ(n)/n)` over positive `n ≤ N` coprime to `p`,\nwhen `k ≤ N`. This is coefficientwise, not an infinite-product or analytic\nconvergence assertion. Prime `p` also gives coefficient p-integrality\n(multiplicative p-adic valuation at most one), by an independent\nDieudonné–Dwork proof using p-adic divided powers, **not** the Euler identity.\nThe rational core does not import p-adic theory. See [details and examples](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/RESULTS.md#rational-artinhasse-exponential),\nthe [rational core](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/ArtinHasse.lean),\n[Euler product](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/ArtinHasseEulerProduct.lean) and\n[separate p-adic module](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/ArtinHasse/Padic.lean).",
    "link": null,
    "declaration": null
@@ -97,21 +99,24 @@
   {
    "kind": "item",
    "title": "Regrouping and kernels",
-   "text": "First-variable regrouping is injective, not an\nequivalence with all iterated restricted series. Finite variables give a\ndegree-cutoff criterion; with `I.FG` they also identify the intrinsic\nalgebraic reduction kernel at every level. Regular principal ideals admit\ninternal division and scalar-linear quotient equivalences. For arbitrary\nvariables and ideals, coefficientwise reduction kernels multiply from levels\n`n`, `k` into level `n + k`, without completeness or finite generation; this\ndoes **not** identify intrinsic ideal powers or give an arbitrary-ideal\nintrinsic kernel identity.",
+   "title_from": "bold",
+   "text": "**Regrouping and kernels.** First-variable regrouping is injective, not an\nequivalence with all iterated restricted series. Finite variables give a\ndegree-cutoff criterion; with `I.FG` they also identify the intrinsic\nalgebraic reduction kernel at every level. Regular principal ideals admit\ninternal division and scalar-linear quotient equivalences. For arbitrary\nvariables and ideals, coefficientwise reduction kernels multiply from levels\n`n`, `k` into level `n + k`, without completeness or finite generation; this\ndoes **not** identify intrinsic ideal powers or give an arbitrary-ideal\nintrinsic kernel identity.",
    "link": null,
    "declaration": null
   },
   {
    "kind": "item",
    "title": "Completion and units",
-   "text": "For arbitrary `R`, `I` and `σ`,\n`MvPolynomial.adicCompletionEquiv σ I` identifies polynomial completion with\nthe algebra of series over `AdicCompletion I R` that become polynomials under\nevery original quotient evaluation. It uses the named\n`AdicCompletion.extendedAlgebra` on the source, not a new global instance.\nUnder `[IsAdicComplete I R]`, coefficient transport recovers the original\nring equivalence with restricted series over `R`. Neither assertion assumes\nintrinsic completeness of arbitrary polynomial completions. Under coefficient\ncompleteness, a restricted series `f` is a unit exactly when `adicReduction I 1 f` is a unit,\nequivalently when its constant coefficient is a unit and every other\ncoefficient lies in `I.radical`.",
+   "title_from": "bold",
+   "text": "**Completion and units.** For arbitrary `R`, `I` and `σ`,\n`MvPolynomial.adicCompletionEquiv σ I` identifies polynomial completion with\nthe algebra of series over `AdicCompletion I R` that become polynomials under\nevery original quotient evaluation. It uses the named\n`AdicCompletion.extendedAlgebra` on the source, not a new global instance.\nUnder `[IsAdicComplete I R]`, coefficient transport recovers the original\nring equivalence with restricted series over `R`. Neither assertion assumes\nintrinsic completeness of arbitrary polynomial completions. Under coefficient\ncompleteness, a restricted series `f` is a unit exactly when `adicReduction I 1 f` is a unit,\nequivalently when its constant coefficient is a unit and every other\ncoefficient lies in `I.radical`.",
    "link": null,
    "declaration": null
   },
   {
    "kind": "item",
    "title": "Coefficient and variable maps",
-   "text": "For commutative rings `R`, `T`, ideals\n`I`, `J`, a homomorphism `f : R →+* T`, `hf : I ≤ J.comap f`, and any variable\nmap `g : σ → τ`, the completed-coefficient series above admit a ring map\n`MvPowerSeries.completedRestrictedMap I J f hf g`. Infinite fibers are\nallowed: at each precision its coefficients are finite sums over the source\npolynomial reduction's support. Coefficient change is coefficientwise along\n`AdicCompletion.mapRingHom I J f hf`; renaming completes a finite direct-sum\npushforward using the whole completion/restricted-product equivalence,\nindependently of the polynomial-completion comparison. Identity, composition,\npolynomial and scalar laws hold, and `MvPolynomial.adicCompletionEquiv`\ncommutes with these maps in both directions on all elements. No completeness,\nseparation, finite generation or finite-variable hypothesis is required.\nSee the [map API](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/API.md#coefficient-change-arbitrary-variable-maps-and-naturality).",
+   "title_from": "bold",
+   "text": "**Coefficient and variable maps.** For commutative rings `R`, `T`, ideals\n`I`, `J`, a homomorphism `f : R →+* T`, `hf : I ≤ J.comap f`, and any variable\nmap `g : σ → τ`, the completed-coefficient series above admit a ring map\n`MvPowerSeries.completedRestrictedMap I J f hf g`. Infinite fibers are\nallowed: at each precision its coefficients are finite sums over the source\npolynomial reduction's support. Coefficient change is coefficientwise along\n`AdicCompletion.mapRingHom I J f hf`; renaming completes a finite direct-sum\npushforward using the whole completion/restricted-product equivalence,\nindependently of the polynomial-completion comparison. Identity, composition,\npolynomial and scalar laws hold, and `MvPolynomial.adicCompletionEquiv`\ncommutes with these maps in both directions on all elements. No completeness,\nseparation, finite generation or finite-variable hypothesis is required.\nSee the [map API](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/API.md#coefficient-change-arbitrary-variable-maps-and-naturality).",
    "link": {
     "text": "map API",
     "url": "https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/API.md#coefficient-change-arbitrary-variable-maps-and-naturality",
@@ -122,7 +127,8 @@
   {
    "kind": "item",
    "title": "Linear extension",
-   "text": "Under `[IsAdicComplete I R]`, every polynomial\n`R`-linear endomorphism extends to an `R`-linear restricted-series operator\nwith finite-level equations. Uniqueness needs **both** agreement on\npolynomials and preservation of **every** coefficientwise reduction kernel;\nno ring-homomorphism extension or intrinsic restricted-ring completeness is\nasserted. See the [extension guide](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension/README.md).",
+   "title_from": "bold",
+   "text": "**Linear extension.** Under `[IsAdicComplete I R]`, every polynomial\n`R`-linear endomorphism extends to an `R`-linear restricted-series operator\nwith finite-level equations. Uniqueness needs **both** agreement on\npolynomials and preservation of **every** coefficientwise reduction kernel;\nno ring-homomorphism extension or intrinsic restricted-ring completeness is\nasserted. See the [extension guide](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension/README.md).",
    "link": {
     "text": "extension guide",
     "url": "https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension/README.md",
@@ -133,14 +139,16 @@
   {
    "kind": "item",
    "title": "Content, leading terms and division",
-   "text": "Separated prevaluation rings give\nselected-coefficient content factorization. Over a valuation domain separated\nfor the principal ideal of a parameter in its maximal ideal, intrinsic\nleading terms are polynomials over the actual ring `R`. Any two supplied\ndivisions by a nonzero singleton divisor with actual-supported remainders\nagree; arbitrary-divisor existence is not asserted. Primitive-divisor\nexistence and conditional ideal generation additionally require a nonzero\nparameter, radical equal to the maximal ideal, and adic completeness.\nUnder those hypotheses, a finite primitive family in a restricted-series\nideal generates it **if** its actual-`R` leading terms generate the full\npolynomial leading-term ideal. No standard-basis existence is asserted;\nconditional quotient-unit reflection does not construct a division.",
+   "title_from": "bold",
+   "text": "**Content, leading terms and division.** Separated prevaluation rings give\nselected-coefficient content factorization. Over a valuation domain separated\nfor the principal ideal of a parameter in its maximal ideal, intrinsic\nleading terms are polynomials over the actual ring `R`. Any two supplied\ndivisions by a nonzero singleton divisor with actual-supported remainders\nagree; arbitrary-divisor existence is not asserted. Primitive-divisor\nexistence and conditional ideal generation additionally require a nonzero\nparameter, radical equal to the maximal ideal, and adic completeness.\nUnder those hypotheses, a finite primitive family in a restricted-series\nideal generates it **if** its actual-`R` leading terms generate the full\npolynomial leading-term ideal. No standard-basis existence is asserted;\nconditional quotient-unit reflection does not construct a division.",
    "link": null,
    "declaration": null
   },
   {
    "kind": "item",
    "title": "First-variable preparation",
-   "text": "Over a commutative valuation domain complete\nfor the principal ideal of a nonzero parameter in its maximal ideal, with\nthat ideal's radical equal to the maximal ideal, let a restricted series `f`\nin `Fin (n + 1)` variables have regrouped maximal-ideal residue polynomial\nof degree `d` with nonzero scalar top coefficient `C c`. There is a unique\npair consisting of a restricted unit `u` and a monic first-variable polynomial\n`G` of exact degree `d` with `polynomialRestrictedFinFirst _ n G = u * f`.\nActual-coefficient primitivity follows; uniqueness even allows competing\nmultipliers not assumed units. **`n = 0` and `d = 0` are included**. See the\n[preparation guide](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariablePreparation/README.md).",
+   "title_from": "bold",
+   "text": "**First-variable preparation.** Over a commutative valuation domain complete\nfor the principal ideal of a nonzero parameter in its maximal ideal, with\nthat ideal's radical equal to the maximal ideal, let a restricted series `f`\nin `Fin (n + 1)` variables have regrouped maximal-ideal residue polynomial\nof degree `d` with nonzero scalar top coefficient `C c`. There is a unique\npair consisting of a restricted unit `u` and a monic first-variable polynomial\n`G` of exact degree `d` with `polynomialRestrictedFinFirst _ n G = u * f`.\nActual-coefficient primitivity follows; uniqueness even allows competing\nmultipliers not assumed units. **`n = 0` and `d = 0` are included**. See the\n[preparation guide](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariablePreparation/README.md).",
    "link": {
     "text": "preparation guide",
     "url": "https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariablePreparation/README.md",
@@ -151,7 +159,8 @@
   {
    "kind": "item",
    "title": "Generic cofinal support",
-   "text": "For any `R`-module, `I ≤ J`, `1 ≤ N` and\n`J ^ N ≤ I` equate separation, precompleteness and completeness for the two\nfiltrations; this separately importable result needs no restricted series.",
+   "title_from": "bold",
+   "text": "**Generic cofinal support.** For any `R`-module, `I ≤ J`, `1 ≤ N` and\n`J ^ N ≤ I` equate separation, precompleteness and completeness for the two\nfiltrations; this separately importable result needs no restricted series.",
    "link": null,
    "declaration": null
   },

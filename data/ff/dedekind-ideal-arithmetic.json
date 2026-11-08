@@ -372,7 +372,8 @@
   {
    "kind": "item",
    "title": "Norm detects strict ideal inclusion and equality",
-   "text": "In an infinite\ncommutative Dedekind domain with finite quotients, `I < J` and `I ≠ ⊥`\nimply `J.absNorm < I.absNorm`. If `I ≤ J` and the norms agree, `I = J`,\nincluding zero ideals. No finite-free presentation over `ℤ` is needed.\nSee [strict comparison](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L29)\nand [equality](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L42).",
+   "title_from": "bold",
+   "text": "**Norm detects strict ideal inclusion and equality.** In an infinite\ncommutative Dedekind domain with finite quotients, `I < J` and `I ≠ ⊥`\nimply `J.absNorm < I.absNorm`. If `I ≤ J` and the norms agree, `I = J`,\nincluding zero ideals. No finite-free presentation over `ℤ` is needed.\nSee [strict comparison](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L29)\nand [equality](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L42).",
    "link": {
     "text": "equality",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AbsNorm.lean#L42",
@@ -383,7 +384,8 @@
   {
    "kind": "item",
    "title": "A supplied prime-norm element yields a principal prime",
-   "text": "In an infinite\nDedekind domain finite free over `ℤ`, a natural prime `p` and a supplied\n`α` with `(Algebra.norm ℤ α).natAbs = p` give a principal prime above\n`(p)`. This is conditional existence, not a search for `α`, a class-number\ncomputation or a witness assertion for every prime. See\n[principal-prime extraction](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/PrincipalPrime.lean#L27).",
+   "title_from": "bold",
+   "text": "**A supplied prime-norm element yields a principal prime.** In an infinite\nDedekind domain finite free over `ℤ`, a natural prime `p` and a supplied\n`α` with `(Algebra.norm ℤ α).natAbs = p` give a principal prime above\n`(p)`. This is conditional existence, not a search for `α`, a class-number\ncomputation or a witness assertion for every prime. See\n[principal-prime extraction](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/PrincipalPrime.lean#L27).",
    "link": {
     "text": "principal-prime extraction",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/PrincipalPrime.lean#L27",
@@ -394,7 +396,8 @@
   {
    "kind": "item",
    "title": "Localization can kill the class group and give a PID/UFD",
-   "text": "For Dedekind\ndomains `A, B` in possibly different universes, an `A`-algebra `B`\ntorsion-free over `A`, and\n`IsLocalization M B`, extension `Cl(A) → Cl(B)` is\n[surjective](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L37).\nIf every source class is an integral power of a supplied `g` and `g`\nextends to one, the library gives a\n[PID](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L59) and hence a\n[UFD](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L81).\nSurjectivity needs no generator; neither class group need be finite.",
+   "title_from": "bold",
+   "text": "**Localization can kill the class group and give a PID/UFD.** For Dedekind\ndomains `A, B` in possibly different universes, an `A`-algebra `B`\ntorsion-free over `A`, and\n`IsLocalization M B`, extension `Cl(A) → Cl(B)` is\n[surjective](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L37).\nIf every source class is an integral power of a supplied `g` and `g`\nextends to one, the library gives a\n[PID](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L59) and hence a\n[UFD](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L81).\nSurjectivity needs no generator; neither class group need be finite.",
    "link": {
     "text": "UFD",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/ClassGroup/Localization.lean#L81",
@@ -405,7 +408,8 @@
   {
    "kind": "item",
    "title": "Section indices and common multiples",
-   "text": "Over a domain, scaling a\nnonzero section of a torsion-free module multiplies its quotient index by\nthe principal left-ideal index, including zero scalars and infinite quotients.\nInvertible modules over commutative domains with finite quotients have finite\nquotients by nonzero sections; over any commutative domain their nonzero\nsections admit common nonzero scalar multiples. See\n[module indices](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/Index.lean).",
+   "title_from": "bold",
+   "text": "**Section indices and common multiples.** Over a domain, scaling a\nnonzero section of a torsion-free module multiplies its quotient index by\nthe principal left-ideal index, including zero scalars and infinite quotients.\nInvertible modules over commutative domains with finite quotients have finite\nquotients by nonzero sections; over any commutative domain their nonzero\nsections admit common nonzero scalar multiples. See\n[module indices](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/Index.lean).",
    "link": {
     "text": "module indices",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/Index.lean",
@@ -416,7 +420,8 @@
   {
    "kind": "item",
    "title": "Intrinsic heights of normed invertible modules",
-   "text": "Over `𝓞 K` for a number\nfield `K`, definite seminorms on all archimedean fibres give a positive,\nsection-independent height: quotient index divided by the weighted norm\nproduct. Invertibility, not integral freeness, is assumed. Tensor products,\npositive rescaling and integral-equivalence pullback obey the expected\nmultiplicative and logarithmic laws. The normalized logarithmic height can\nbe negative. See [module heights](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/ModuleHeight.lean)\nand the [height guide](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/docs/RationalFrameHeight.md#intrinsic-height-and-sections).",
+   "title_from": "bold",
+   "text": "**Intrinsic heights of normed invertible modules.** Over `𝓞 K` for a number\nfield `K`, definite seminorms on all archimedean fibres give a positive,\nsection-independent height: quotient index divided by the weighted norm\nproduct. Invertibility, not integral freeness, is assumed. Tensor products,\npositive rescaling and integral-equivalence pullback obey the expected\nmultiplicative and logarithmic laws. The normalized logarithmic height can\nbe negative. See [module heights](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/ModuleHeight.lean)\nand the [height guide](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/docs/RationalFrameHeight.md#intrinsic-height-and-sections).",
    "link": {
     "text": "height guide",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/docs/RationalFrameHeight.md#intrinsic-height-and-sections",
@@ -427,7 +432,8 @@
   {
    "kind": "item",
    "title": "Rational-frame and finite-place height formulas",
-   "text": "Every rational frame\nevaluates this same intrinsic height as `1 / (N(I) * archimedeanProduct)`.\nNonzero fractional-ideal norms factor into prime norms with signed exponents\nover Dedekind domains finite free over `ℤ`, without a number-field structure\non the fraction field. For number fields the height numerator uses residue\ncardinalities with **negative** coefficient-ideal counts. See\n[fractional norms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/FractionalNorm.lean) and\n[finite-place height factors](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean).",
+   "title_from": "bold",
+   "text": "**Rational-frame and finite-place height formulas.** Every rational frame\nevaluates this same intrinsic height as `1 / (N(I) * archimedeanProduct)`.\nNonzero fractional-ideal norms factor into prime norms with signed exponents\nover Dedekind domains finite free over `ℤ`, without a number-field structure\non the fraction field. For number fields the height numerator uses residue\ncardinalities with **negative** coefficient-ideal counts. See\n[fractional norms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/FractionalNorm.lean) and\n[finite-place height factors](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean).",
    "link": {
     "text": "finite-place height factors",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/NumberField/FinitePlaceHeight.lean",
@@ -438,7 +444,8 @@
   {
    "kind": "item",
    "title": "Principal exponents determine scalar completion norms",
-   "text": "Over a Dedekind\ndomain and fraction field, a nonzero scalar has adic valuation equal to the\nexponential of its negative principal-ideal count. For an infinite base with\nfinite quotients, its completion norm is the residue cardinality to that\nnegative count. No norm on bare `K` is chosen. See\n[adic norms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AdicNorm.lean).",
+   "title_from": "bold",
+   "text": "**Principal exponents determine scalar completion norms.** Over a Dedekind\ndomain and fraction field, a nonzero scalar has adic valuation equal to the\nexponential of its negative principal-ideal count. For an infinite base with\nfinite quotients, its completion norm is the residue cardinality to that\nnegative count. No norm on bare `K` is chosen. See\n[adic norms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AdicNorm.lean).",
    "link": {
     "text": "adic norms",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/AdicNorm.lean",
@@ -449,7 +456,8 @@
   {
    "kind": "item",
    "title": "Sharp signed fractional-ideal exponents",
-   "text": "At each fixed height-one prime\nof any Dedekind domain, a nonzero fractional ideal contains a nonzero element\nattaining its signed count. Together with Mathlib's `count_mono`, this is an\nattained minimum. The witness may depend on the prime; no principality,\ninfinite-ring, finite-residue or `ℤ`-freeness hypothesis is needed. See\n[count attainment](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/CountAttainment.lean).",
+   "title_from": "bold",
+   "text": "**Sharp signed fractional-ideal exponents.** At each fixed height-one prime\nof any Dedekind domain, a nonzero fractional ideal contains a nonzero element\nattaining its signed count. Together with Mathlib's `count_mono`, this is an\nattained minimum. The witness may depend on the prime; no principality,\ninfinite-ring, finite-residue or `ℤ`-freeness hypothesis is needed. See\n[count attainment](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/CountAttainment.lean).",
    "link": {
     "text": "count attainment",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Ideal/CountAttainment.lean",
@@ -460,7 +468,8 @@
   {
    "kind": "item",
    "title": "Algebraic integral spans in adic fibres",
-   "text": "For any `R`-module `M` over a\nDedekind domain with fraction field `K` and height-one prime `p`, the span of\n`1 ⊗ m` over the valuation integers in `F ⊗[R] M`,\n`F = p.adicCompletion K`, is the image of\n`O ⊗[R] M`, `O = p.adicCompletionIntegers K`. It is finite over `O` if\n`M` is finite, and spans the whole fibre over `F`; flatness makes the image\nmap an equivalence onto the span. For `M = R`, the whole span corresponds\nexactly to `O`. No finite-residue or infinite-ring hypothesis is used. See\n[integral spans](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicIntegralSpan.lean).",
+   "title_from": "bold",
+   "text": "**Algebraic integral spans in adic fibres.** For any `R`-module `M` over a\nDedekind domain with fraction field `K` and height-one prime `p`, the span of\n`1 ⊗ m` over the valuation integers in `F ⊗[R] M`,\n`F = p.adicCompletion K`, is the image of\n`O ⊗[R] M`, `O = p.adicCompletionIntegers K`. It is finite over `O` if\n`M` is finite, and spans the whole fibre over `F`; flatness makes the image\nmap an equivalence onto the span. For `M = R`, the whole span corresponds\nexactly to `O`. No finite-residue or infinite-ring hypothesis is used. See\n[integral spans](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicIntegralSpan.lean).",
    "link": {
     "text": "integral spans",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicIntegralSpan.lean",
@@ -471,7 +480,8 @@
   {
    "kind": "item",
    "title": "Canonical ultrametric seminorms on adic fibres",
-   "text": "For an infinite Dedekind\ndomain `R` with finite quotients, fraction field `K`, height-one prime `p`\nand invertible `M`, the fibre `F ⊗[R] M` has a canonical definite\n`F`-seminorm. In every rational frame, on every vector, it is the coordinate\nnorm times the residue cardinality raised to the signed coefficient-ideal\ncount, with a **plus** sign; negative counts are included. It is\nframe-independent and characterized by its rational-unit-vector weight.\nThe supplied-frame constructor only needs finite `M` and a frame,\nallowing torsion. For `M = R` the whole seminorm is the completion norm\npulled back along tensor right-unit equivalence. See\n[adic seminorms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicSeminorm.lean).",
+   "title_from": "bold",
+   "text": "**Canonical ultrametric seminorms on adic fibres.** For an infinite Dedekind\ndomain `R` with finite quotients, fraction field `K`, height-one prime `p`\nand invertible `M`, the fibre `F ⊗[R] M` has a canonical definite\n`F`-seminorm. In every rational frame, on every vector, it is the coordinate\nnorm times the residue cardinality raised to the signed coefficient-ideal\ncount, with a **plus** sign; negative counts are included. It is\nframe-independent and characterized by its rational-unit-vector weight.\nThe supplied-frame constructor only needs finite `M` and a frame,\nallowing torsion. For `M = R` the whole seminorm is the completion norm\npulled back along tensor right-unit equivalence. See\n[adic seminorms](https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicSeminorm.lean).",
    "link": {
     "text": "adic seminorms",
     "url": "https://github.com/FormalFrontier/dedekind-ideal-arithmetic/blob/c76307595a1151abc42eacc9a815cb2d1bba6dc8/DedekindIdealArithmetic/Module/AdicSeminorm.lean",

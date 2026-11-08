@@ -62,7 +62,8 @@
   {
    "kind": "item",
    "title": "Bass conditions",
-   "text": "For arbitrary possibly noncommutative rings: right-unimodular\nrows, `(S_n)`, least stable index, monotonicity, ring-equivalence invariance and\n[surjective descent/quasiregular quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Quotient.lean).\n[Nontrivial local rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) have least stable range one.",
+   "title_from": "bold",
+   "text": "**[Bass conditions](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Basic.lean).** For arbitrary possibly noncommutative rings: right-unimodular\nrows, `(S_n)`, least stable index, monotonicity, ring-equivalence invariance and\n[surjective descent/quasiregular quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Quotient.lean).\n[Nontrivial local rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) have least stable range one.",
    "link": {
     "text": "Nontrivial local rings",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean",
@@ -73,7 +74,8 @@
   {
    "kind": "item",
    "title": "Local interfaces",
-   "text": "[Division semirings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) are local with\nzero nonunits submonoid; the maximal-ideal additive comparison requires a\ncommutative local semiring.\nFor rings, locality is equivalent to Jacobson-radical maximality among all left\nideals. In local rings the radical is the nonunits and contains every proper\nleft ideal; these statements do not assume two-sidedness of the left ideals.",
+   "title_from": "bold",
+   "text": "**Local interfaces.** [Division semirings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean) are local with\nzero nonunits submonoid; the maximal-ideal additive comparison requires a\ncommutative local semiring.\nFor rings, locality is equivalent to Jacobson-radical maximality among all left\nideals. In local rings the radical is the nonunits and contains every proper\nleft ideal; these statements do not assume two-sidedness of the left ideals.",
    "link": {
     "text": "Division semirings",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Local.lean",
@@ -84,7 +86,8 @@
   {
    "kind": "item",
    "title": "Preservation",
-   "text": "[Products](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Product.lean) preserve every `(S_n)`.\n[Semisimple rings and semisimple radical quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semisimple.lean)\nsatisfy `(S₁)` without radical nilpotence. [Finite matrix rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Matrix.lean),\n[idempotent corners](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Corner.lean) and [opposites](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Opposite.lean)\npreserve `(S₁)`; matrix reflection needs nonempty indices, corners neither\ncentrality nor fullness. [Commutative semilocal rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semilocal.lean)\nsatisfy `(S₁)` assuming only finite maximal spectrum, including the zero ring.",
+   "title_from": "bold",
+   "text": "**Preservation.** [Products](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Product.lean) preserve every `(S_n)`.\n[Semisimple rings and semisimple radical quotients](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semisimple.lean)\nsatisfy `(S₁)` without radical nilpotence. [Finite matrix rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Matrix.lean),\n[idempotent corners](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Corner.lean) and [opposites](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Opposite.lean)\npreserve `(S₁)`; matrix reflection needs nonempty indices, corners neither\ncentrality nor fullness. [Commutative semilocal rings](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semilocal.lean)\nsatisfy `(S₁)` assuming only finite maximal spectrum, including the zero ring.",
    "link": {
     "text": "Commutative semilocal rings",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Semilocal.lean",
@@ -95,7 +98,8 @@
   {
    "kind": "item",
    "title": "Retract endomorphisms",
-   "text": "In any preadditive category, `i : X ⟶ Z`, `p : Z ⟶ X` and `i ≫ p = 𝟙 X`\ntransfer `Bass.StableRangeCondition (End Z) 1` to\n`Bass.StableRangeCondition (End X) 1` for the original canonical endomorphism\nrings. Object and morphism universes are independent; no complementary object,\nfinite-length or nonzero hypothesis is needed.",
+   "title_from": "bold",
+   "text": "**[Retract endomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/EndRetract.lean).**\nIn any preadditive category, `i : X ⟶ Z`, `p : Z ⟶ X` and `i ≫ p = 𝟙 X`\ntransfer `Bass.StableRangeCondition (End Z) 1` to\n`Bass.StableRangeCondition (End X) 1` for the original canonical endomorphism\nrings. Object and morphism universes are independent; no complementary object,\nfinite-length or nonzero hypothesis is needed.",
    "link": {
     "text": "Retract endomorphisms",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/EndRetract.lean",
@@ -106,7 +110,8 @@
   {
    "kind": "item",
    "title": "Finite biproduct endomorphisms",
-   "text": "In any preadditive category, a displayed finite biproduct of objects with local\nendomorphism rings, and every displayed retract of that biproduct, have canonical\nendomorphism rings satisfying `(S₁)`. Only that biproduct and, for the retract,\nits supplied retraction are required, with independent index universe; empty\nfamilies and the zero biproduct are included. No vanishing of morphisms between\nsummands is assumed.",
+   "title_from": "bold",
+   "text": "**[Finite biproduct endomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/FiniteLocalEnd.lean).**\nIn any preadditive category, a displayed finite biproduct of objects with local\nendomorphism rings, and every displayed retract of that biproduct, have canonical\nendomorphism rings satisfying `(S₁)`. Only that biproduct and, for the retract,\nits supplied retraction are required, with independent index universe; empty\nfamilies and the zero biproduct are included. No vanishing of morphisms between\nsummands is assumed.",
    "link": {
     "text": "Finite biproduct endomorphisms",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/FiniteLocalEnd.lean",
@@ -117,7 +122,8 @@
   {
    "kind": "item",
    "title": "Regularity and cancellation",
-   "text": "[`(S₁)`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Regular.lean) implies direct\nfiniteness, is equivalent to unit-valued pair shortening, and under von Neumann\nregularity is equivalent to unit-regularity.\n[Biproduct cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/Cancellation.lean) in any\npreadditive category needs `(S₁)` for the canonical `End(X)` and only the two\ndisplayed biproducts. The remaining objects are unrestricted; local End is\nsufficient, and neither global sums nor commutativity is assumed.\n[Module cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Cancellation.lean) is a specialization,\nwith independent carrier universes and no finiteness or projectivity;\nregular right modules use the opposite ring. [Division-ring vector-space endomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DivisionRing.lean)\nhave inner inverses; finite dimension gives automorphic inner inverses and\nunit-regular finite matrix rings, including empty indices.",
+   "title_from": "bold",
+   "text": "**Regularity and cancellation.** [`(S₁)`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Regular.lean) implies direct\nfiniteness, is equivalent to unit-valued pair shortening, and under von Neumann\nregularity is equivalent to unit-regularity.\n[Biproduct cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CategoryTheory/Cancellation.lean) in any\npreadditive category needs `(S₁)` for the canonical `End(X)` and only the two\ndisplayed biproducts. The remaining objects are unrestricted; local End is\nsufficient, and neither global sums nor commutativity is assumed.\n[Module cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Cancellation.lean) is a specialization,\nwith independent carrier universes and no finiteness or projectivity;\nregular right modules use the opposite ring. [Division-ring vector-space endomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DivisionRing.lean)\nhave inner inverses; finite dimension gives automorphic inner inverses and\nunit-regular finite matrix rings, including empty indices.",
    "link": {
     "text": "(S₁)",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Regular.lean",
@@ -128,7 +134,8 @@
   {
    "kind": "item",
    "title": "Ranks and blocks",
-   "text": "[Division-ring row rank](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DivisionRingRank.lean)\nhas rectangular bounds, reindexing, realization and repeated-block laws;\nnormalized empty square rank is zero. [Repeated-block homomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RepeatedBlock.lean)\nwork over `NonAssocSemiring` coefficients, injectively for nonempty block families.",
+   "title_from": "bold",
+   "text": "**Ranks and blocks.** [Division-ring row rank](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DivisionRingRank.lean)\nhas rectangular bounds, reindexing, realization and repeated-block laws;\nnormalized empty square rank is zero. [Repeated-block homomorphisms](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RepeatedBlock.lean)\nwork over `NonAssocSemiring` coefficients, injectively for nonempty block families.",
    "link": {
     "text": "Repeated-block homomorphisms",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RepeatedBlock.lean",
@@ -139,7 +146,8 @@
   {
    "kind": "item",
    "title": "Commutative dimension bounds",
-   "text": "[Regularity](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Commutative.lean) is\nequivalent to reducedness and dimension at most zero; all modules over such\nregular rings are flat.\n[Dimension at most zero gives `(S₁)`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CommutativeStableRange.lean)\nwithout reducedness or nontriviality; commutative regular rings are unit-regular.\n[Noetherian dimension at most `d` gives `(S_(d+1))`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/BassDimension.lean),\nwith no infinite-residue-fields premise.",
+   "title_from": "bold",
+   "text": "**Commutative dimension bounds.** [Regularity](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Commutative.lean) is\nequivalent to reducedness and dimension at most zero; all modules over such\nregular rings are flat.\n[Dimension at most zero gives `(S₁)`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CommutativeStableRange.lean)\nwithout reducedness or nontriviality; commutative regular rings are unit-regular.\n[Noetherian dimension at most `d` gives `(S_(d+1))`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/BassDimension.lean),\nwith no infinite-residue-fields premise.",
    "link": {
     "text": "Noetherian dimension at most `d` gives `(S_(d+1))",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/BassDimension.lean",
@@ -150,7 +158,8 @@
   {
    "kind": "item",
    "title": "Specified splittings",
-   "text": "[A supplied linear right inverse of a linear map `f`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Module/SplitSurjective.lean)\ngives `ker f × N ≃ₗ[R] M` over a semiring, for an additive commutative group `M`\nand additive commutative monoid `N`, in independent universes. The prescribed\ncomplementary endomorphism `id - g.comp f` has range exactly `ker f`.\n[Complementary-range ranks](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Module/SplitSurjectiveRank.lean) over a\ndivision ring satisfy `finrank K (range (id - g.comp f)) = finrank K M - finrank K N`\nassuming only that `M` is finite-dimensional. A family with given equivalences\n`N b ≃ₗ[K] F` has this rank equal to `finrank K M - finrank K F` at every `b`,\nwithout a nonempty base or a finite-dimensionality assumption on `F`.\n[Right-unimodular\ncoefficient rows](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowKernel.lean) split over `Rᵐᵒᵖ` for any ring, including empty\nrows and the zero ring. Splitting alone does not give freeness.",
+   "title_from": "bold",
+   "text": "**Specified splittings.** [A supplied linear right inverse of a linear map `f`](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Module/SplitSurjective.lean)\ngives `ker f × N ≃ₗ[R] M` over a semiring, for an additive commutative group `M`\nand additive commutative monoid `N`, in independent universes. The prescribed\ncomplementary endomorphism `id - g.comp f` has range exactly `ker f`.\n[Complementary-range ranks](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/Module/SplitSurjectiveRank.lean) over a\ndivision ring satisfy `finrank K (range (id - g.comp f)) = finrank K M - finrank K N`\nassuming only that `M` is finite-dimensional. A family with given equivalences\n`N b ≃ₗ[K] F` has this rank equal to `finrank K M - finrank K F` at every `b`,\nwithout a nonempty base or a finite-dimensionality assumption on `F`.\n[Right-unimodular\ncoefficient rows](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowKernel.lean) split over `Rᵐᵒᵖ` for any ring, including empty\nrows and the zero ring. Splitting alone does not give freeness.",
    "link": {
     "text": "Right-unimodular\ncoefficient rows",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowKernel.lean",
@@ -161,7 +170,8 @@
   {
    "kind": "item",
    "title": "Completion and IBN",
-   "text": "[Right-unimodularity and free right kernels](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RightRowCompletion.lean)\ncharacterize two-sided rectangular completion, preserving a supplied inverse\ncolumn. For successor-length rows, [square completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/SquareRightRowCompletionCriterion.lean)\nneeds IBN only to infer kernel size; supplied matching coordinates and the\nconverse need no IBN. The [countable endomorphism example](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CountableEndomorphism.lean)\nseparates rectangular from square completion for nontrivial underlying modules,\neven for a unary row.",
+   "title_from": "bold",
+   "text": "**Completion and IBN.** [Right-unimodularity and free right kernels](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RightRowCompletion.lean)\ncharacterize two-sided rectangular completion, preserving a supplied inverse\ncolumn. For successor-length rows, [square completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/SquareRightRowCompletionCriterion.lean)\nneeds IBN only to infer kernel size; supplied matching coordinates and the\nconverse need no IBN. The [countable endomorphism example](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CountableEndomorphism.lean)\nseparates rectangular from square completion for nontrivial underlying modules,\neven for a unary row.",
    "link": {
     "text": "countable endomorphism example",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/CountableEndomorphism.lean",
@@ -172,7 +182,8 @@
   {
    "kind": "item",
    "title": "Commutative cancellation",
-   "text": "Under `(S_s)`, right-unimodular rows of length at\nleast `s + 1` have free kernels. [Finite-free cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/FiniteFree.lean) uses an\nexplicit `P × R^m ≃ R^(n+m)` and `s ≤ n`, without prior freeness of `P`;\n[completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletion.lean) preserves the literal first row.\nBoth allow zero rings; dimension-bound variants require Noetherianity.\n[Two-entry completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletionTwo.lean) retains supplied Bézout\ncoefficients over commutative rings, with explicit scalar kernel coordinates.",
+   "title_from": "bold",
+   "text": "**Commutative cancellation.** Under `(S_s)`, right-unimodular rows of length at\nleast `s + 1` have free kernels. [Finite-free cancellation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/FiniteFree.lean) uses an\nexplicit `P × R^m ≃ R^(n+m)` and `s ≤ n`, without prior freeness of `P`;\n[completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletion.lean) preserves the literal first row.\nBoth allow zero rings; dimension-bound variants require Noetherianity.\n[Two-entry completion](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletionTwo.lean) retains supplied Bézout\ncoefficients over commutative rings, with explicit scalar kernel coordinates.",
    "link": {
     "text": "Two-entry completion",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/RowCompletionTwo.lean",
@@ -183,7 +194,8 @@
   {
    "kind": "item",
    "title": "Elementary matrices and determinants",
-   "text": "For commutative rings satisfying `(S₁)`,\n[elementary diagonalization](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/ElementaryGeneration.lean) works in all\nfinite ranks, including zero. [Determinant generation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DeterminantGeneration.lean)\nidentifies invertible determinant-one matrices with elementary matrices, the stable\nelementary subgroup with the determinant kernel, and its quotient with units,\nwithout locality, nontriviality or positive-rank hypotheses.",
+   "title_from": "bold",
+   "text": "**Elementary matrices and determinants.** For commutative rings satisfying `(S₁)`,\n[elementary diagonalization](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/ElementaryGeneration.lean) works in all\nfinite ranks, including zero. [Determinant generation](https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DeterminantGeneration.lean)\nidentifies invertible determinant-one matrices with elementary matrices, the stable\nelementary subgroup with the determinant kernel, and its quotient with units,\nwithout locality, nontriviality or positive-rank hypotheses.",
    "link": {
     "text": "Determinant generation",
     "url": "https://github.com/FormalFrontier/stable-range/blob/4d01f17954ba77e8ec53cf1524c9057e8f3d72e3/StableRange/DeterminantGeneration.lean",

@@ -155,7 +155,8 @@
   {
    "kind": "item",
    "title": "Annihilator order duality",
-   "text": "For a reflexive projective module with projective dual over a commutative ring,\nannihilator and coannihilator give an order anti-isomorphism between submodules\nwith projective original quotient and dual submodules with projective original\nquotient. Finite projective modules satisfy these ambient hypotheses.\nThe correspondence uses canonical evaluation and has pointwise membership\nand forward/inverse carrier formulas, with independent ring/module universes.",
+   "title_from": "bold",
+   "text": "**[Annihilator order duality](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Dual/Annihilator.lean).**\nFor a reflexive projective module with projective dual over a commutative ring,\nannihilator and coannihilator give an order anti-isomorphism between submodules\nwith projective original quotient and dual submodules with projective original\nquotient. Finite projective modules satisfy these ambient hypotheses.\nThe correspondence uses canonical evaluation and has pointwise membership\nand forward/inverse carrier formulas, with independent ring/module universes.",
    "link": {
     "text": "Annihilator order duality",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Dual/Annihilator.lean",
@@ -166,7 +167,8 @@
   {
    "kind": "item",
    "title": "Projective-class and K₀ comparisons for directed limits",
-   "text": "For a nonempty directed system of unital rings, the additive direct limits of\nfinite-projective right-module class monoids and K₀ groups are canonically\nadditively equivalent to the corresponding objects over the ring limit.\nThe forward comparisons composed with the canonical direct-limit stage maps\nare the original scalar-extension maps; their inverses send each such image\nto its canonical direct-limit image. Compatible additive maps extend uniquely\nfrom the stages.\nNo commutativity or injective-transition assumption is needed, and index and\ncoefficient universes are independent. For projective classes, equality is\ndetected at a common upper stage and every limit class descends to a stage.",
+   "title_from": "bold",
+   "text": "**[Projective-class and K₀ comparisons for directed limits](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/DirectLimit.lean).**\nFor a nonempty directed system of unital rings, the additive direct limits of\nfinite-projective right-module class monoids and K₀ groups are canonically\nadditively equivalent to the corresponding objects over the ring limit.\nThe forward comparisons composed with the canonical direct-limit stage maps\nare the original scalar-extension maps; their inverses send each such image\nto its canonical direct-limit image. Compatible additive maps extend uniquely\nfrom the stages.\nNo commutativity or injective-transition assumption is needed, and index and\ncoefficient universes are independent. For projective classes, equality is\ndetected at a common upper stage and every limit class descends to a stage.",
    "link": {
     "text": "Projective-class and K₀ comparisons for directed limits",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/DirectLimit.lean",
@@ -177,7 +179,8 @@
   {
    "kind": "item",
    "title": "Multiplicative opposite-ring duality",
-   "text": "For every commutative ring `R`, including zero rings, canonical duality gives\na semiring equivalence of finite-projective right-module classes over `R` and\n`Rᵐᵒᵖ`, and a ring equivalence of their K₀ rings. These preserve tensor\nproducts and have the canonical duality equivalences as their underlying\nadditive equivalences.",
+   "title_from": "bold",
+   "text": "**[Multiplicative opposite-ring duality](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/DualRing.lean).**\nFor every commutative ring `R`, including zero rings, canonical duality gives\na semiring equivalence of finite-projective right-module classes over `R` and\n`Rᵐᵒᵖ`, and a ring equivalence of their K₀ rings. These preserve tensor\nproducts and have the canonical duality equivalences as their underlying\nadditive equivalences.",
    "link": {
     "text": "Multiplicative opposite-ring duality",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/DualRing.lean",
@@ -188,7 +191,8 @@
   {
    "kind": "item",
    "title": "Finite-projective descent along directed limits",
-   "text": "Over a nonempty directed limit of arbitrary unital rings, every finitely generated\nprojective right module is linearly equivalent to scalar extension of a finite\nidempotent matrix range from some stage, along the canonical stage map. The stage\nmay depend on the module; transition maps need not be injective. Index, ring and\nmodule universes are independent, and zero rings and size-zero matrices are allowed.\nThis is existence of a stage representative; it does not assert continuity of K₀.",
+   "title_from": "bold",
+   "text": "**[Finite-projective descent along directed limits](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/DirectLimit.lean).**\nOver a nonempty directed limit of arbitrary unital rings, every finitely generated\nprojective right module is linearly equivalent to scalar extension of a finite\nidempotent matrix range from some stage, along the canonical stage map. The stage\nmay depend on the module; transition maps need not be injective. Index, ring and\nmodule universes are independent, and zero rings and size-zero matrices are allowed.\nThis is existence of a stage representative; it does not assert continuity of K₀.",
    "link": {
     "text": "Finite-projective descent along directed limits",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/DirectLimit.lean",
@@ -199,7 +203,8 @@
   {
    "kind": "item",
    "title": "Eventual equivalence of idempotent ranges",
-   "text": "For two prescribed finite idempotent matrices at possibly different stages of a\nnonempty directed semiring system, their mapped right-column ranges over the limit\nare linearly equivalent exactly when their images are linearly equivalent at one\ncommon upper stage. Over rings the same criterion holds for the canonical scalar\nextensions of the original ranges. The finite dimensions may differ or be empty;\ntransition maps need not be injective. This compares existence of equivalences,\nnot the lifting of a specified equivalence, and does not assert continuity of K₀.",
+   "title_from": "bold",
+   "text": "**[Eventual equivalence of idempotent ranges](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/DirectLimit.lean).**\nFor two prescribed finite idempotent matrices at possibly different stages of a\nnonempty directed semiring system, their mapped right-column ranges over the limit\nare linearly equivalent exactly when their images are linearly equivalent at one\ncommon upper stage. Over rings the same criterion holds for the canonical scalar\nextensions of the original ranges. The finite dimensions may differ or be empty;\ntransition maps need not be injective. This compares existence of equivalences,\nnot the lifting of a specified equivalence, and does not assert continuity of K₀.",
    "link": {
     "text": "Eventual equivalence of idempotent ranges",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/DirectLimit.lean",
@@ -210,7 +215,8 @@
   {
    "kind": "item",
    "title": "Scalar extension of idempotent images",
-   "text": "Over arbitrary rings, extension of scalars carries the original range of an\nidempotent endomorphism to the range of its extended endomorphism, through the\noriginal range inclusion and corestriction. No flatness or finiteness is needed.\nThe [finite-matrix comparison](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/RightExtensionMatrixRange.lean)\nhas the entrywise target matrix and the column formula `f (x i) * s`, without a\ncaller equality-decision instance; empty indices and zero rings are included.",
+   "title_from": "bold",
+   "text": "**[Scalar extension of idempotent images](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/RightExtensionRange.lean).**\nOver arbitrary rings, extension of scalars carries the original range of an\nidempotent endomorphism to the range of its extended endomorphism, through the\noriginal range inclusion and corestriction. No flatness or finiteness is needed.\nThe [finite-matrix comparison](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/RightExtensionMatrixRange.lean)\nhas the entrywise target matrix and the column formula `f (x i) * s`, without a\ncaller equality-decision instance; empty indices and zero rings are included.",
    "link": {
     "text": "finite-matrix comparison",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/RightExtensionMatrixRange.lean",
@@ -221,7 +227,8 @@
   {
    "kind": "item",
    "title": "Artinian and semisimple module-category invariance",
-   "text": "Ordinary equivalences preserve and reflect Artinianness and semisimplicity of\nmodules over arbitrary rings, with independent scalar and carrier universes.\nThe forward ring theorems use a target carrier universe containing its ring;\nthe ring equivalence theorems use this bound on both sides. Zero rings are\nincluded, without finite-generation or commutativity assumptions.",
+   "title_from": "bold",
+   "text": "**[Artinian](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Category/Artinian.lean) and\n[semisimple](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Category/Semisimple.lean) module-category invariance.**\nOrdinary equivalences preserve and reflect Artinianness and semisimplicity of\nmodules over arbitrary rings, with independent scalar and carrier universes.\nThe forward ring theorems use a target carrier universe containing its ring;\nthe ring equivalence theorems use this bound on both sides. Zero rings are\nincluded, without finite-generation or commutativity assumptions.",
    "link": {
     "text": "semisimple",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Category/Semisimple.lean",
@@ -232,7 +239,8 @@
   {
    "kind": "item",
    "title": "Jacobson-kernel reduction injectivity",
-   "text": "For a surjective ring homomorphism `f : R →+* S` between arbitrary rings with\n`RingHom.ker f ≤ Ideal.jacobson (⊥ : Ideal R)`, scalar extension is injective on\nisomorphism classes of finitely generated projective right modules and on `K₀`.\nThe rings may lie in independent universes; zero rings are included.",
+   "title_from": "bold",
+   "text": "**[Jacobson-kernel reduction injectivity](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Jacobson.lean).**\nFor a surjective ring homomorphism `f : R →+* S` between arbitrary rings with\n`RingHom.ker f ≤ Ideal.jacobson (⊥ : Ideal R)`, scalar extension is injective on\nisomorphism classes of finitely generated projective right modules and on `K₀`.\nThe rings may lie in independent universes; zero rings are included.",
    "link": {
     "text": "Jacobson-kernel reduction injectivity",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Jacobson.lean",
@@ -243,7 +251,8 @@
   {
    "kind": "item",
    "title": "Stable freeness and the regular class",
-   "text": "Over any unital ring `R`, the canonical homomorphism `ℤ → K₀(R)` sending\n`n` to `n[R]` is surjective exactly when every finitely generated projective\nright `R`-module is stably free. It is bijective exactly when this condition\nholds and `R` has invariant basis number. This concerns the specified regular\nclass, not an arbitrary abstract isomorphism `K₀(R) ≅ ℤ`; zero rings are included.",
+   "title_from": "bold",
+   "text": "**[Stable freeness and the regular class](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Reduced.lean).**\nOver any unital ring `R`, the canonical homomorphism `ℤ → K₀(R)` sending\n`n` to `n[R]` is surjective exactly when every finitely generated projective\nright `R`-module is stably free. It is bijective exactly when this condition\nholds and `R` has invariant basis number. This concerns the specified regular\nclass, not an arbitrary abstract isomorphism `K₀(R) ≅ ℤ`; zero rings are included.",
    "link": {
     "text": "Stable freeness and the regular class",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Reduced.lean",
@@ -254,7 +263,8 @@
   {
    "kind": "item",
    "title": "Algebra-valued pairing matrices",
-   "text": "For finite based modules over a commutative semiring\n`R` and a semiring `R`-algebra `S`,\n[`LinearMap.toMatrix₂_compl₁₂_algebra`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Free/BilinearMatrix.lean)\nexpresses composition of an `S`-valued `R`-bilinear map by coefficient-matrix\nmultiplication after `algebraMap R S`. The target algebra need not be commutative,\nfinite or projective over `R`; the identity-algebra formula recovers the scalar case.\nFor integer-bilinear pairings into a linearly ordered commutative ring,\n[subgroup-index comparison](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Free/BilinearIndex.lean) scales absolute\nGram determinants by the relative indices of nested free subgroups of equal finite\nrank. The ambient groups need not be free or finitely generated, and a one-sided\ncomparison allows an arbitrary family in the other variable. Empty matrices and\nzero determinants are included.",
+   "title_from": "bold",
+   "text": "**Algebra-valued pairing matrices.** For finite based modules over a commutative semiring\n`R` and a semiring `R`-algebra `S`,\n[`LinearMap.toMatrix₂_compl₁₂_algebra`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Free/BilinearMatrix.lean)\nexpresses composition of an `S`-valued `R`-bilinear map by coefficient-matrix\nmultiplication after `algebraMap R S`. The target algebra need not be commutative,\nfinite or projective over `R`; the identity-algebra formula recovers the scalar case.\nFor integer-bilinear pairings into a linearly ordered commutative ring,\n[subgroup-index comparison](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Free/BilinearIndex.lean) scales absolute\nGram determinants by the relative indices of nested free subgroups of equal finite\nrank. The ambient groups need not be free or finitely generated, and a one-sided\ncomparison allows an arbitrary family in the other variable. Empty matrices and\nzero determinants are included.",
    "link": {
     "text": "LinearMap.toMatrix₂_compl₁₂_algebra",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Free/BilinearMatrix.lean",
@@ -273,7 +283,8 @@
   {
    "kind": "item",
    "title": "Normalized pairing regulators",
-   "text": "For finitely generated abelian groups of equal\ninteger-module rank and a real-valued integer-bilinear pairing,\n[`LinearMap.pairingRegulator`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Pairing/Regulator/Basic.lean)\nis the absolute determinant on independent full frames divided by the product of\ntheir spans' indices in the original groups, including torsion. Frame invariance\nand arbitrary-frame evaluation require neither freeness of the original groups\nnor nondegeneracy; zero determinants and rank zero are included. Evaluation on\n[subgroup bases](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Pairing/Regulator/Subgroup.lean) uses their\nwhole-group indices, while [lifts of bases modulo torsion](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Pairing/Regulator/Torsion.lean)\nuse the two torsion cardinalities. At rank zero the regulator is the reciprocal\nof the product of the original group cardinalities. The definition and\nnonnegativity do not require finite generation; infinite indices are represented\nby zero.",
+   "title_from": "bold",
+   "text": "**Normalized pairing regulators.** For finitely generated abelian groups of equal\ninteger-module rank and a real-valued integer-bilinear pairing,\n[`LinearMap.pairingRegulator`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Pairing/Regulator/Basic.lean)\nis the absolute determinant on independent full frames divided by the product of\ntheir spans' indices in the original groups, including torsion. Frame invariance\nand arbitrary-frame evaluation require neither freeness of the original groups\nnor nondegeneracy; zero determinants and rank zero are included. Evaluation on\n[subgroup bases](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Pairing/Regulator/Subgroup.lean) uses their\nwhole-group indices, while [lifts of bases modulo torsion](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Pairing/Regulator/Torsion.lean)\nuse the two torsion cardinalities. At rank zero the regulator is the reciprocal\nof the product of the original group cardinalities. The definition and\nnonnegativity do not require finite generation; infinite indices are represented\nby zero.",
    "link": {
     "text": "LinearMap.pairingRegulator",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Pairing/Regulator/Basic.lean",
@@ -292,7 +303,8 @@
   {
    "kind": "item",
    "title": "Nilpotence from characteristic polynomials",
-   "text": "For a finite projective module\nover any commutative ring,\n[`Module.isNilpotent_of_isNilpotent_charpoly_sub_charpoly_zero`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/CayleyHamilton/Nilpotent.lean)\nshows that a nilpotent difference between the characteristic polynomials of an\nendomorphism and zero forces the endomorphism to be nilpotent. Equality is a\nspecial case. The underlying\n[`Module.charpoly_zero_dvd_X_pow`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/MonicMultiple.lean)\nneeds no constant-rank, faithfulness or global-monicity assumption. The given\nmodule action and independent universes are retained; the `LinearMap` corollary\nagrees with the ordinary characteristic polynomial on finite free modules.",
+   "title_from": "bold",
+   "text": "**Nilpotence from characteristic polynomials.** For a finite projective module\nover any commutative ring,\n[`Module.isNilpotent_of_isNilpotent_charpoly_sub_charpoly_zero`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/CayleyHamilton/Nilpotent.lean)\nshows that a nilpotent difference between the characteristic polynomials of an\nendomorphism and zero forces the endomorphism to be nilpotent. Equality is a\nspecial case. The underlying\n[`Module.charpoly_zero_dvd_X_pow`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/MonicMultiple.lean)\nneeds no constant-rank, faithfulness or global-monicity assumption. The given\nmodule action and independent universes are retained; the `LinearMap` corollary\nagrees with the ordinary characteristic polynomial on finite free modules.",
    "link": {
     "text": "Module.isNilpotent_of_isNilpotent_charpoly_sub_charpoly_zero",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/CayleyHamilton/Nilpotent.lean",
@@ -311,7 +323,8 @@
   {
    "kind": "item",
    "title": "Quadratic powers of projective modules",
-   "text": "Over a commutative ring, antisymmetrization embeds the second exterior power of any projective module in its tensor square. The tensor square is noncanonically the product of its second exterior and symmetric powers, with the canonical antisymmetrization and symmetric quotient as inclusion and projection. No finite-generation or characteristic restriction is required. See [`ExteriorPower/QuadraticProjective.lean`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/QuadraticProjective.lean).",
+   "title_from": "bold",
+   "text": "**Quadratic powers of projective modules.** Over a commutative ring, antisymmetrization embeds the second exterior power of any projective module in its tensor square. The tensor square is noncanonically the product of its second exterior and symmetric powers, with the canonical antisymmetrization and symmetric quotient as inclusion and projection. No finite-generation or characteristic restriction is required. See [`ExteriorPower/QuadraticProjective.lean`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/QuadraticProjective.lean).",
    "link": {
     "text": "ExteriorPower/QuadraticProjective.lean",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/QuadraticProjective.lean",
@@ -326,7 +339,8 @@
   {
    "kind": "item",
    "title": "Nilpotent characteristic polynomials",
-   "text": "For a nilpotent endomorphism of a finite projective module over a commutative\nring, its intrinsic characteristic polynomial differs from that of zero by a\nnilpotent polynomial. Over a reduced ring the two are equal. No freeness,\nconstant rank or nontriviality hypothesis is required; zero modules and zero\nrings are included.",
+   "title_from": "bold",
+   "text": "**[Nilpotent characteristic polynomials](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Nilpotent.lean).**\nFor a nilpotent endomorphism of a finite projective module over a commutative\nring, its intrinsic characteristic polynomial differs from that of zero by a\nnilpotent polynomial. Over a reduced ring the two are equal. No freeness,\nconstant rank or nontriviality hypothesis is required; zero modules and zero\nrings are included.",
    "link": {
     "text": "Nilpotent characteristic polynomials",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Nilpotent.lean",
@@ -337,7 +351,8 @@
   {
    "kind": "item",
    "title": "Scalar determinants and functorial rank-dependent powers",
-   "text": "Over a commutative ring, scaling any endomorphism of a finite projective module\nmultiplies its canonical determinant by `Module.rankPower R P r`. This\nmultiplicative scalar power is characterized on every rank fiber by the usual\npower with that fiber's rank. No constant-rank or invertibility assumption is\nneeded. Canonical determinants and rank-dependent powers commute with arbitrary\nscalar extension, without flatness. The power homomorphism is invariant under\nlinear equivalence and multiplies pointwise under binary module products.\nFor a zero module it is one, including at the scalar zero.",
+   "title_from": "bold",
+   "text": "**[Scalar determinants and functorial rank-dependent powers](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Scalar.lean).**\nOver a commutative ring, scaling any endomorphism of a finite projective module\nmultiplies its canonical determinant by `Module.rankPower R P r`. This\nmultiplicative scalar power is characterized on every rank fiber by the usual\npower with that fiber's rank. No constant-rank or invertibility assumption is\nneeded. Canonical determinants and rank-dependent powers commute with arbitrary\nscalar extension, without flatness. The power homomorphism is invariant under\nlinear equivalence and multiplies pointwise under binary module products.\nFor a zero module it is one, including at the scalar zero.",
    "link": {
     "text": "Scalar determinants and functorial rank-dependent powers",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Scalar.lean",
@@ -348,7 +363,8 @@
   {
    "kind": "item",
    "title": "Schur determinants",
-   "text": "For finite projective modules over a commutative ring, a block endomorphism\nwhose upper-left block is a linear equivalence `e` has determinant\n`det(e) * det(d - c ∘ e⁻¹ ∘ b)`. Neither the complement nor the full block\nneeds to be invertible. Varying rank and nonfaithful modules are allowed;\nfinite bases identify the scalar determinant with the block matrix determinant.",
+   "title_from": "bold",
+   "text": "**[Schur determinants](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Schur.lean).**\nFor finite projective modules over a commutative ring, a block endomorphism\nwhose upper-left block is a linear equivalence `e` has determinant\n`det(e) * det(d - c ∘ e⁻¹ ∘ b)`. Neither the complement nor the full block\nneeds to be invertible. Varying rank and nonfaithful modules are allowed;\nfinite bases identify the scalar determinant with the block matrix determinant.",
    "link": {
     "text": "Schur determinants",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Schur.lean",
@@ -359,7 +375,8 @@
   {
    "kind": "item",
    "title": "Determinants in short exact sequences",
-   "text": "For a short exact sequence `0 → P → M → Q → 0` of finite projective modules\nover a commutative ring and compatible endomorphisms, the determinant on `M`\nis the product of the determinants on `P` and `Q`. No equivariant splitting\nor invertibility assumption is needed. An invariant finite projective submodule\nwith finite projective quotient gives the restriction/quotient formula.",
+   "title_from": "bold",
+   "text": "**[Determinants in short exact sequences](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/ShortExact.lean).**\nFor a short exact sequence `0 → P → M → Q → 0` of finite projective modules\nover a commutative ring and compatible endomorphisms, the determinant on `M`\nis the product of the determinants on `P` and `Q`. No equivariant splitting\nor invertibility assumption is needed. An invariant finite projective submodule\nwith finite projective quotient gives the restriction/quotient formula.",
    "link": {
     "text": "Determinants in short exact sequences",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/ShortExact.lean",
@@ -370,7 +387,8 @@
   {
    "kind": "item",
    "title": "Tensor determinants",
-   "text": "For finite projective modules over a commutative ring, the determinant of a\ntensor product of arbitrary endomorphisms is the product of the cross\nrank-dependent powers of their determinants. Tensor products compose the\nmultiplicative scalar powers. Neither constant rank nor invertibility is needed.",
+   "title_from": "bold",
+   "text": "**[Tensor determinants](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Tensor.lean).**\nFor finite projective modules over a commutative ring, the determinant of a\ntensor product of arbitrary endomorphisms is the product of the cross\nrank-dependent powers of their determinants. Tensor products compose the\nmultiplicative scalar powers. Neither constant rank nor invertibility is needed.",
    "link": {
     "text": "Tensor determinants",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Tensor.lean",
@@ -381,7 +399,8 @@
   {
    "kind": "item",
    "title": "Exterior-power coproduct",
-   "text": "Over an arbitrary commutative ring and arbitrary modules, the homogeneous\ncoproduct maps have coefficient-one signed coshuffle formulas, commute with\nlinear maps, and satisfy graded symmetry and associativity. The degree-zero\nand exterior-square formulas include the zero ring and characteristic two.",
+   "title_from": "bold",
+   "text": "**[Exterior-power coproduct](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/Coproduct.lean).**\nOver an arbitrary commutative ring and arbitrary modules, the homogeneous\ncoproduct maps have coefficient-one signed coshuffle formulas, commute with\nlinear maps, and satisfy graded symmetry and associativity. The degree-zero\nand exterior-square formulas include the zero ring and characteristic two.",
    "link": {
     "text": "Exterior-power coproduct",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/Coproduct.lean",
@@ -392,7 +411,8 @@
   {
    "kind": "item",
    "title": "Finite consistency of row-finite linear systems",
-   "text": "For a ring `R` and any\nleft `R`-module `M` satisfying `Module.Baer R M`, a system with finitely\nsupported coefficient rows has a full solution whenever every finite set of\nrows has a solution (`Module.Baer.exists_solution_of_finite`). Over a semisimple\nring, this is equivalent to finite consistency for every left module\n(`Finsupp.exists_solution_iff_finite`), hence applies to division rings and\nreal vector spaces. The scalar, target, row and coordinate types have\nindependent universes; no countability or dimension bound is required.\nSolutions are arbitrary coordinate functions, not finitely supported\nfunctions, and the assignments for finite subsystems need not be compatible.\nSee [`Module.FiniteConsistency`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/FiniteConsistency.lean)\nfor the extension argument and its Mathlib formalization credits.",
+   "title_from": "bold",
+   "text": "**Finite consistency of row-finite linear systems.** For a ring `R` and any\nleft `R`-module `M` satisfying `Module.Baer R M`, a system with finitely\nsupported coefficient rows has a full solution whenever every finite set of\nrows has a solution (`Module.Baer.exists_solution_of_finite`). Over a semisimple\nring, this is equivalent to finite consistency for every left module\n(`Finsupp.exists_solution_iff_finite`), hence applies to division rings and\nreal vector spaces. The scalar, target, row and coordinate types have\nindependent universes; no countability or dimension bound is required.\nSolutions are arbitrary coordinate functions, not finitely supported\nfunctions, and the assignments for finite subsystems need not be compatible.\nSee [`Module.FiniteConsistency`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/FiniteConsistency.lean)\nfor the extension argument and its Mathlib formalization credits.",
    "link": {
     "text": "Module.FiniteConsistency",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/FiniteConsistency.lean",
@@ -407,7 +427,8 @@
   {
    "kind": "item",
    "title": "Finite orthogonal idempotent endomorphisms",
-   "text": "Over a possibly noncommutative\nsemiring `R`, a finite orthogonal idempotent family `e` on an additive\ncommutative `R`-module `M`, whose sum is the identity, gives the canonical\nequivalence `CompleteOrthogonalIdempotents.linearEquivPiRange`:\n`M ≃ₗ[R] (Π i, LinearMap.range (e i))`. Its coordinates are `e i m` and its\ninverse sums the ambient values. The API includes extensionality and\nnaturality for arbitrary linear intertwiners, with no projectivity, topology,\nrank or nontriviality premise. An empty index type forces `M`, not `R`, to be\nzero. See [`Module.OrthogonalIdempotentRanges`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/OrthogonalIdempotentRanges.lean).",
+   "title_from": "bold",
+   "text": "**Finite orthogonal idempotent endomorphisms.** Over a possibly noncommutative\nsemiring `R`, a finite orthogonal idempotent family `e` on an additive\ncommutative `R`-module `M`, whose sum is the identity, gives the canonical\nequivalence `CompleteOrthogonalIdempotents.linearEquivPiRange`:\n`M ≃ₗ[R] (Π i, LinearMap.range (e i))`. Its coordinates are `e i m` and its\ninverse sums the ambient values. The API includes extensionality and\nnaturality for arbitrary linear intertwiners, with no projectivity, topology,\nrank or nontriviality premise. An empty index type forces `M`, not `R`, to be\nzero. See [`Module.OrthogonalIdempotentRanges`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/OrthogonalIdempotentRanges.lean).",
    "link": {
     "text": "Module.OrthogonalIdempotentRanges",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/OrthogonalIdempotentRanges.lean",
@@ -422,7 +443,8 @@
   {
    "kind": "item",
    "title": "Endomorphism range ideals",
-   "text": "For any semiring `R` and additive commutative `R`-module `M`,\n`Module.End.rangeIdeal U` is the right ideal of endomorphisms with range\nin `U`, expressed as an ideal of `(Module.End R M)ᵐᵒᵖ`.\n`Module.End.idealRange I` is the supremum of their ranges, or equivalently\nthe `R`-span of all evaluations. These form a Galois connection:\n`idealRange I ≤ U ↔ I ≤ rangeIdeal U`. The principal right ideal generated\nby any endomorphism evaluates to its range. Scalar and module universes\nare independent; neither additive inverses nor finiteness, projectivity,\ncommutativity or full invariance of `U` is assumed. This is not an\nunrestricted lattice equivalence.",
+   "title_from": "bold",
+   "text": "**[Endomorphism range ideals](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/EndomorphismIdeals.lean).**\nFor any semiring `R` and additive commutative `R`-module `M`,\n`Module.End.rangeIdeal U` is the right ideal of endomorphisms with range\nin `U`, expressed as an ideal of `(Module.End R M)ᵐᵒᵖ`.\n`Module.End.idealRange I` is the supremum of their ranges, or equivalently\nthe `R`-span of all evaluations. These form a Galois connection:\n`idealRange I ≤ U ↔ I ≤ rangeIdeal U`. The principal right ideal generated\nby any endomorphism evaluates to its range. Scalar and module universes\nare independent; neither additive inverses nor finiteness, projectivity,\ncommutativity or full invariance of `U` is assumed. This is not an\nunrestricted lattice equivalence.",
    "link": {
     "text": "Endomorphism range ideals",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/EndomorphismIdeals.lean",
@@ -433,7 +455,8 @@
   {
    "kind": "item",
    "title": "Internal pairs and complementary endomorphism ideals",
-   "text": "Over a semiring, an internal ordered Bool pair of submodules has\ncomplementary range ideals, which evaluate back to the original pair.\nThis direction only needs `AddCommMonoid M`.\nIf `M` is an additive commutative group, complementary ideals conversely\nevaluate to an internal pair. Each internal pair has a unique complementary\nideal pair evaluating to it, and each complementary ideal pair has a unique\ninternal pair with those range ideals. Bool `true` is the first coordinate;\nthese are not inverse maps on the full lattices.",
+   "title_from": "bold",
+   "text": "**[Internal pairs and complementary endomorphism ideals](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/EndomorphismIdeals/DirectSum.lean).**\nOver a semiring, an internal ordered Bool pair of submodules has\ncomplementary range ideals, which evaluate back to the original pair.\nThis direction only needs `AddCommMonoid M`.\nIf `M` is an additive commutative group, complementary ideals conversely\nevaluate to an internal pair. Each internal pair has a unique complementary\nideal pair evaluating to it, and each complementary ideal pair has a unique\ninternal pair with those range ideals. Bool `true` is the first coordinate;\nthese are not inverse maps on the full lattices.",
    "link": {
     "text": "Internal pairs and complementary endomorphism ideals",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/EndomorphismIdeals/DirectSum.lean",
@@ -444,7 +467,8 @@
   {
    "kind": "item",
    "title": "Simultaneous idempotent conjugation",
-   "text": "Let `R` be any ring, `ι` a finite index type, and `a b : ι → R` two\northogonal idempotent families with `b i - a i ∈ I` for a two-sided ideal\n`I ≤ Ring.jacobson R`. The unit\n`u = OrthogonalIdempotents.conjugatingUnit ha I hI hab` has value\n`(∑ i, b i * a i) + (1 - ∑ i, b i) * (1 - ∑ i, a i)`, satisfies\n`(u : R) - 1 ∈ I`, and simultaneously conjugates `a i` to `b i`:\n`u * a i * u⁻¹ = b i`. Neither family must sum to one; noncommutative\nand zero rings are allowed, and an empty family gives the identity unit.\nThe coefficient needs no orthogonality, and its unit construction needs\nonly orthogonality of `a`; both families' orthogonality enters conjugacy.\nFor any ring homomorphism `f`, equal-image orthogonal families admit this\nconjugating unit with `f u = 1` if `ker f ≤ Ring.jacobson R`, or if every\nelement of the whole kernel is nilpotent. No surjectivity or uniform\nnilpotence exponent is required; source, target and index universes are\nindependent.\nThe [construction naturality API](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/RingTheory/IdempotentConjugationNaturality.lean)\nsends the coefficient of arbitrary `a b : ι → R` to that of `f ∘ a, f ∘ b`\nunder any unital `f : R →+* S`, without orthogonality or ideal hypotheses.\nFor orthogonal `a`, `Units.map f.toMonoidHom u` equals the target constructed\nunit in `Sˣ` when the source uses a two-sided `I ≤ Ring.jacobson R` with\n`b i - a i ∈ I` for every `i`, and the target uses its own two-sided\n`J ≤ Ring.jacobson S` with `f (b i) - f (a i) ∈ J` for every `i`.\nNo ideal-image containment, radical-preservation, injectivity or surjectivity\nassumption is imposed. Joint reindexing of both families by `e : κ ≃ ι`\nbetween finite types leaves the coefficient and unit unchanged. Only `a`\nmust be orthogonal for the unit identities; `b` may be nonidempotent, so these\nare construction-transport laws, not conjugacy in that generality. Neither\nfamily must sum to one; noncommutative and zero rings, empty finite indices,\nand independent source, target and index universes are included.",
+   "title_from": "bold",
+   "text": "**[Simultaneous idempotent conjugation](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/RingTheory/IdempotentConjugation.lean).**\nLet `R` be any ring, `ι` a finite index type, and `a b : ι → R` two\northogonal idempotent families with `b i - a i ∈ I` for a two-sided ideal\n`I ≤ Ring.jacobson R`. The unit\n`u = OrthogonalIdempotents.conjugatingUnit ha I hI hab` has value\n`(∑ i, b i * a i) + (1 - ∑ i, b i) * (1 - ∑ i, a i)`, satisfies\n`(u : R) - 1 ∈ I`, and simultaneously conjugates `a i` to `b i`:\n`u * a i * u⁻¹ = b i`. Neither family must sum to one; noncommutative\nand zero rings are allowed, and an empty family gives the identity unit.\nThe coefficient needs no orthogonality, and its unit construction needs\nonly orthogonality of `a`; both families' orthogonality enters conjugacy.\nFor any ring homomorphism `f`, equal-image orthogonal families admit this\nconjugating unit with `f u = 1` if `ker f ≤ Ring.jacobson R`, or if every\nelement of the whole kernel is nilpotent. No surjectivity or uniform\nnilpotence exponent is required; source, target and index universes are\nindependent.\nThe [construction naturality API](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/RingTheory/IdempotentConjugationNaturality.lean)\nsends the coefficient of arbitrary `a b : ι → R` to that of `f ∘ a, f ∘ b`\nunder any unital `f : R →+* S`, without orthogonality or ideal hypotheses.\nFor orthogonal `a`, `Units.map f.toMonoidHom u` equals the target constructed\nunit in `Sˣ` when the source uses a two-sided `I ≤ Ring.jacobson R` with\n`b i - a i ∈ I` for every `i`, and the target uses its own two-sided\n`J ≤ Ring.jacobson S` with `f (b i) - f (a i) ∈ J` for every `i`.\nNo ideal-image containment, radical-preservation, injectivity or surjectivity\nassumption is imposed. Joint reindexing of both families by `e : κ ≃ ι`\nbetween finite types leaves the coefficient and unit unchanged. Only `a`\nmust be orthogonal for the unit identities; `b` may be nonidempotent, so these\nare construction-transport laws, not conjugacy in that generality. Neither\nfamily must sum to one; noncommutative and zero rings, empty finite indices,\nand independent source, target and index universes are included.",
    "link": {
     "text": "construction naturality API",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/RingTheory/IdempotentConjugationNaturality.lean",
@@ -455,14 +479,16 @@
   {
    "kind": "item",
    "title": "Total symmetric-power series on `K0`",
-   "text": "For every commutative ring `R`,\n`KTheory.K0.totalSymmetricSeries` sends addition in `K0 R` to multiplication\nof units of `PowerSeries (K0 R)`. On a finite projective right module, its\ncoefficients are the classes of the symmetric powers. The linear coefficient\nrecovers every virtual class, and the negative regular-module class has series\n`1 - X`. This is a fixed-ring additive construction, not an identification with\nthe exterior-power λ-series.",
+   "title_from": "bold",
+   "text": "**Total symmetric-power series on `K0`.** For every commutative ring `R`,\n`KTheory.K0.totalSymmetricSeries` sends addition in `K0 R` to multiplication\nof units of `PowerSeries (K0 R)`. On a finite projective right module, its\ncoefficients are the classes of the symmetric powers. The linear coefficient\nrecovers every virtual class, and the negative regular-module class has series\n`1 - X`. This is a fixed-ring additive construction, not an identification with\nthe exterior-power λ-series.",
    "link": null,
    "declaration": null
   },
   {
    "kind": "item",
    "title": "Exterior–symmetric series identity",
-   "text": "Over every commutative ring `R` and for every virtual class `x : K0 R`,\nthe exterior- and symmetric-power series satisfy\n`λₓ(-t) σₓ(t) = 1` and `λₓ(t) σₓ(-t) = 1`.\nTheir coefficients on finite projective right modules are the respective\npower classes. The proof uses the homogeneous Koszul complex and its\ninteger-signed Euler identity, with no freeness, constant-rank or\ncharacteristic assumptions.",
+   "title_from": "bold",
+   "text": "**[Exterior–symmetric series identity](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/ExteriorSymmetricPowerSeries.lean).**\nOver every commutative ring `R` and for every virtual class `x : K0 R`,\nthe exterior- and symmetric-power series satisfy\n`λₓ(-t) σₓ(t) = 1` and `λₓ(t) σₓ(-t) = 1`.\nTheir coefficients on finite projective right modules are the respective\npower classes. The proof uses the homogeneous Koszul complex and its\ninteger-signed Euler identity, with no freeness, constant-rank or\ncharacteristic assumptions.",
    "link": {
     "text": "Exterior–symmetric series identity",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/ExteriorSymmetricPowerSeries.lean",
@@ -473,7 +499,8 @@
   {
    "kind": "item",
    "title": "Idempotent-matrix classification",
-   "text": "Over any semiring `R`, a right semimodule `P` is finitely generated and projective\niff it is `Rᵐᵒᵖ`-linearly equivalent to the range of an idempotent finite\n`R`-matrix acting on `R`-valued columns by `x ↦ e *ᵥ x`, with pointwise\nright action `(MulOpposite.op a • x) i = x i * a`. No finiteness or projectivity\nis assumed in advance; scalar and carrier universes are independent, and size\nzero, zero semirings and the zero semimodule are included.",
+   "title_from": "bold",
+   "text": "**[Idempotent-matrix classification](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#idempotent-matrix-classification).**\nOver any semiring `R`, a right semimodule `P` is finitely generated and projective\niff it is `Rᵐᵒᵖ`-linearly equivalent to the range of an idempotent finite\n`R`-matrix acting on `R`-valued columns by `x ↦ e *ᵥ x`, with pointwise\nright action `(MulOpposite.op a • x) i = x i * a`. No finiteness or projectivity\nis assumed in advance; scalar and carrier universes are independent, and size\nzero, zero semirings and the zero semimodule are included.",
    "link": {
     "text": "Idempotent-matrix classification",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#idempotent-matrix-classification",
@@ -484,7 +511,8 @@
   {
    "kind": "item",
    "title": "Quadratic tensor exactness",
-   "text": "The exterior-square image is the kernel of the symmetric-square quotient over a\ncommutative ring; projective modules admit a quotient section.",
+   "title_from": "bold",
+   "text": "**[Quadratic tensor exactness](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#quadratic-tensor-exactness).**\nThe exterior-square image is the kernel of the symmetric-square quotient over a\ncommutative ring; projective modules admit a quotient section.",
    "link": {
     "text": "Quadratic tensor exactness",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#quadratic-tensor-exactness",
@@ -495,7 +523,8 @@
   {
    "kind": "item",
    "title": "Kernel families",
-   "text": "Over an arbitrary semiring, two supplied split linear\nretractions with a common section into a fixed module with a topological\nadditive-group structure have homeomorphic total kernel spaces whenever their\nambient projection difference is jointly continuous. The section-domain modules\nmay vary and need no topology. Both total spaces retain their subspace topologies\nin the parameter–ambient product. Writing `Δ = Γr - Γq`, transport is\n`(t,a) ↦ (t,a + Δ(t,a))`, with inverse `(t,a) ↦ (t,a - Δ(t,a))`.",
+   "title_from": "bold",
+   "text": "**[Kernel families](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Topology/KernelComparison.lean).**\nOver an arbitrary semiring, two supplied split linear\nretractions with a common section into a fixed module with a topological\nadditive-group structure have homeomorphic total kernel spaces whenever their\nambient projection difference is jointly continuous. The section-domain modules\nmay vary and need no topology. Both total spaces retain their subspace topologies\nin the parameter–ambient product. Writing `Δ = Γr - Γq`, transport is\n`(t,a) ↦ (t,a + Δ(t,a))`, with inverse `(t,a) ↦ (t,a - Δ(t,a))`.",
    "link": {
     "text": "Kernel families",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Topology/KernelComparison.lean",
@@ -506,7 +535,8 @@
   {
    "kind": "item",
    "title": "Kernels with a common section",
-   "text": "Over a semiring, continuous linear maps `r, s : A →L[K] H` sharing a right inverse\n`Γ : H →L[K] A` have canonically continuously linearly equivalent kernels, via\n`a ↦ a - Γ (s a)`. Here `H` is an additive commutative monoid with a module\nstructure and a given topology, and `A` is an additive commutative group with a\nmodule structure and a given topological additive group topology. The comparison\nuses the induced kernel topologies and satisfies identity, inverse and composition\nlaws; no topology on the scalar semiring or separation axiom is required.",
+   "title_from": "bold",
+   "text": "**[Kernels with a common section](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Topology/KernelComparison.lean).**\nOver a semiring, continuous linear maps `r, s : A →L[K] H` sharing a right inverse\n`Γ : H →L[K] A` have canonically continuously linearly equivalent kernels, via\n`a ↦ a - Γ (s a)`. Here `H` is an additive commutative monoid with a module\nstructure and a given topology, and `A` is an additive commutative group with a\nmodule structure and a given topological additive group topology. The comparison\nuses the induced kernel topologies and satisfies identity, inverse and composition\nlaws; no topology on the scalar semiring or separation axiom is required.",
    "link": {
     "text": "Kernels with a common section",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Topology/KernelComparison.lean",
@@ -521,7 +551,8 @@
   {
    "kind": "item",
    "title": "Finite generation and residue rank",
-   "text": "An arbitrary projective module over a commutative ring is finitely generated iff\nits prime residue-field tensor ranks are finite cardinals and their\nCardinal-valued function is locally constant. No uniform rank, finite-generation,\nfinite-presentation, Noetherian or nontrivial-ring premise is needed; scalar and\ncarrier universes remain independent. The rank is a cardinal, not `finrank`.\n[Rank one or any fixed natural rank at all maximal fibers](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/FiniteOfFiberRank.lean)\nalso suffices, including rank zero and the zero ring; in rank zero the module is\n[subsingleton](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/ZeroOfFiberRank.lean).\nFor arbitrary modules over commutative rings, the\n[residue-rank calculus](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#finite-generation-from-locally-constant-finite-residue-rank)\ncovers base change, cyclic quotients, tensor products and arbitrary algebraic direct\nsums, without finite generation, flatness or projectivity, with cardinal lifts for\nindependent universes.",
+   "title_from": "bold",
+   "text": "**[Finite generation and residue rank](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/FiniteOfLocallyConstantRank.lean).**\nAn arbitrary projective module over a commutative ring is finitely generated iff\nits prime residue-field tensor ranks are finite cardinals and their\nCardinal-valued function is locally constant. No uniform rank, finite-generation,\nfinite-presentation, Noetherian or nontrivial-ring premise is needed; scalar and\ncarrier universes remain independent. The rank is a cardinal, not `finrank`.\n[Rank one or any fixed natural rank at all maximal fibers](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/FiniteOfFiberRank.lean)\nalso suffices, including rank zero and the zero ring; in rank zero the module is\n[subsingleton](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/ZeroOfFiberRank.lean).\nFor arbitrary modules over commutative rings, the\n[residue-rank calculus](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#finite-generation-from-locally-constant-finite-residue-rank)\ncovers base change, cyclic quotients, tensor products and arbitrary algebraic direct\nsums, without finite generation, flatness or projectivity, with cardinal lifts for\nindependent universes.",
    "link": {
     "text": "residue-rank calculus",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#finite-generation-from-locally-constant-finite-residue-rank",
@@ -532,7 +563,8 @@
   {
    "kind": "item",
    "title": "Schanuel kernel comparison",
-   "text": "Over any semiring, supplied lifts between two linear maps from additive\ncommutative groups to a common additive commutative monoid give\n`(ker p × Q) ≃ₗ[R] (ker q × P)`, with formulas retaining both lifts.\nThe core needs neither surjectivity nor projectivity. For surjections from\nprojective source modules, the\n[projective presentation theorem](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/ProjectiveKernelComparison.lean)\nobtains such an equivalence from the projective lifting property.\nThe common target needs no additive inverses; all universes are independent.",
+   "title_from": "bold",
+   "text": "**[Schanuel kernel comparison](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/KernelComparison.lean).**\nOver any semiring, supplied lifts between two linear maps from additive\ncommutative groups to a common additive commutative monoid give\n`(ker p × Q) ≃ₗ[R] (ker q × P)`, with formulas retaining both lifts.\nThe core needs neither surjectivity nor projectivity. For surjections from\nprojective source modules, the\n[projective presentation theorem](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/ProjectiveKernelComparison.lean)\nobtains such an equivalence from the projective lifting property.\nThe common target needs no additive inverses; all universes are independent.",
    "link": {
     "text": "projective presentation theorem",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/ProjectiveKernelComparison.lean",
@@ -543,7 +575,8 @@
   {
    "kind": "item",
    "title": "Noetherian and PID freeness",
-   "text": "over a left-Noetherian, possibly noncommutative ring, submodules of sequence-spanned\nmodules are sequence-spanned, with independent universes and no ambient Noetherian,\nfree, projective or finite premise. Commutative PID freeness covers arbitrary-rank projectives\nand submodules of arbitrary-rank free modules, not general Noetherian submodules.",
+   "title_from": "bold",
+   "text": "**[Noetherian and PID freeness](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/Overview.md#noetherian-submodules-and-pid-freeness):**\nover a left-Noetherian, possibly noncommutative ring, submodules of sequence-spanned\nmodules are sequence-spanned, with independent universes and no ambient Noetherian,\nfree, projective or finite premise. Commutative PID freeness covers arbitrary-rank projectives\nand submodules of arbitrary-rank free modules, not general Noetherian submodules.",
    "link": {
     "text": "Noetherian and PID freeness",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/Overview.md#noetherian-submodules-and-pid-freeness",
@@ -558,7 +591,8 @@
   {
    "kind": "item",
    "title": "Finite simultaneous decomposition",
-   "text": "for any semiring `R`, additive commutative group `M` with an `R`-module structure,\nfinite index type `I`, and supplied pairwise commuting idempotent endomorphisms\n`p : I → Module.End R M`, `LinearMap.commutingIdempotentsPiEquiv` identifies the\noriginal `M` with the product of all Boolean-selected intersections of the original\nranges and kernels. Its components are the commuting products of `p i` or `1 - p i`,\nand its inverse sums the block inclusions. Zero blocks and the empty constraint\nfamily are retained; scalar, module and index universes are independent. No freeness,\nfinite generation, finite dimension or commutativity of `R` is assumed.",
+   "title_from": "bold",
+   "text": "**[Finite simultaneous decomposition](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/CommutingProjections.lean):**\nfor any semiring `R`, additive commutative group `M` with an `R`-module structure,\nfinite index type `I`, and supplied pairwise commuting idempotent endomorphisms\n`p : I → Module.End R M`, `LinearMap.commutingIdempotentsPiEquiv` identifies the\noriginal `M` with the product of all Boolean-selected intersections of the original\nranges and kernels. Its components are the commuting products of `p i` or `1 - p i`,\nand its inverse sums the block inclusions. Zero blocks and the empty constraint\nfamily are retained; scalar, module and index universes are independent. No freeness,\nfinite generation, finite dimension or commutativity of `R` is assumed.",
    "link": {
     "text": "Finite simultaneous decomposition",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/CommutingProjections.lean",
@@ -569,7 +603,8 @@
   {
    "kind": "item",
    "title": "Unimodular contraction",
-   "text": "for every quadratic form over a commutative ring, contraction by a surjective covector\nhas range equal to its kernel. A vector pairing to one gives a\n[linear splitting](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorAlgebra/ContractionSplitting.lean) into two\ncopies of that kernel, with explicit forward and inverse formulas. Left multiplication\nsquares to the quadratic value, not necessarily to zero; no invertibility of two,\nfiniteness or freeness is required.",
+   "title_from": "bold",
+   "text": "**[Unimodular contraction](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorAlgebra/ContractionExactness.lean):**\nfor every quadratic form over a commutative ring, contraction by a surjective covector\nhas range equal to its kernel. A vector pairing to one gives a\n[linear splitting](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorAlgebra/ContractionSplitting.lean) into two\ncopies of that kernel, with explicit forward and inverse formulas. Left multiplication\nsquares to the quadratic value, not necessarily to zero; no invertibility of two,\nfiniteness or freeness is required.",
    "link": {
     "text": "linear splitting",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorAlgebra/ContractionSplitting.lean",
@@ -580,7 +615,8 @@
   {
    "kind": "item",
    "title": "Symmetric powers",
-   "text": "For arbitrary semimodules over commutative semirings,\n[concatenation](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/Tensor.lean) on arbitrary\nlabels is natural and surjective, not generally an equivalence.\nThe [binomial decomposition](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/Prod.lean)\nidentifies every finite degree of `M × N` with the finite direct sum of tensors\nof complementary symmetric degrees, with coefficient one per labelled subset\nand naturality in both modules. Degree zero preserves the scalar unit;\nthe degree-one target is ordered `N × M`.\n[Plethysm](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/Plethysm.lean) flattens finite\nouter and arbitrary inner labels; `Sym^p (Sym^q M) → Sym^(p*q) M` is natural\nand surjective for all natural degrees, with coefficient one on labelled grids.\nProjectivity of `M` gives a linear section, not a canonical or natural choice.\n[Base change](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/BaseChange.lean) along any\ncommutative-semiring algebra `R → S` commutes with every finite degree, without\nflatness or projectivity; both directions have natural labelled pure-tensor\nformulas. See the [full statements and unit comparisons](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#symmetric-powers).",
+   "title_from": "bold",
+   "text": "**[Symmetric powers](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower.lean).**\nFor arbitrary semimodules over commutative semirings,\n[concatenation](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/Tensor.lean) on arbitrary\nlabels is natural and surjective, not generally an equivalence.\nThe [binomial decomposition](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/Prod.lean)\nidentifies every finite degree of `M × N` with the finite direct sum of tensors\nof complementary symmetric degrees, with coefficient one per labelled subset\nand naturality in both modules. Degree zero preserves the scalar unit;\nthe degree-one target is ordered `N × M`.\n[Plethysm](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/Plethysm.lean) flattens finite\nouter and arbitrary inner labels; `Sym^p (Sym^q M) → Sym^(p*q) M` is natural\nand surjective for all natural degrees, with coefficient one on labelled grids.\nProjectivity of `M` gives a linear section, not a canonical or natural choice.\n[Base change](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/SymmetricPower/BaseChange.lean) along any\ncommutative-semiring algebra `R → S` commutes with every finite degree, without\nflatness or projectivity; both directions have natural labelled pure-tensor\nformulas. See the [full statements and unit comparisons](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#symmetric-powers).",
    "link": {
     "text": "full statements and unit comparisons",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#symmetric-powers",
@@ -591,7 +627,8 @@
   {
    "kind": "item",
    "title": "Exterior series under invertible twists",
-   "text": "For an invertible right module L over a commutative ring R,\nλⁿ([L]x) = [L]ⁿ λⁿ(x) for every virtual class x ∈ K₀(R) and every degree n.\nEquivalently, λ_([L]x)(t) = λ_x([L]t).",
+   "title_from": "bold",
+   "text": "**[Exterior series under invertible twists](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/ExteriorPowerSeriesInvertible.lean):**\nFor an invertible right module L over a commutative ring R,\nλⁿ([L]x) = [L]ⁿ λⁿ(x) for every virtual class x ∈ K₀(R) and every degree n.\nEquivalently, λ_([L]x)(t) = λ_x([L]t).",
    "link": {
     "text": "Exterior series under invertible twists",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/ExteriorPowerSeriesInvertible.lean",
@@ -602,7 +639,8 @@
   {
    "kind": "item",
    "title": "Exterior twists by invertible lines",
-   "text": "over a commutative ring `R`, an invertible module `L` and an arbitrary module `P`\nhave the canonical equivalence\n`TensorPower R n L ⊗[R] exteriorPower R n P ≃ₗ[R] exteriorPower R n (L ⊗[R] P)`\nin every degree, including zero. It sends `tprod(l) ⊗ ιMulti(p)` to\n`ιMulti(fun i => l i ⊗ p i)` and is natural for arbitrary linear maps of the\ninvertible lines and the other modules. Independent universes and zero rings\nare included; `P` need not be flat, finite, free or projective.",
+   "title_from": "bold",
+   "text": "**[Exterior twists by invertible lines](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/InvertibleTwist.lean):**\nover a commutative ring `R`, an invertible module `L` and an arbitrary module `P`\nhave the canonical equivalence\n`TensorPower R n L ⊗[R] exteriorPower R n P ≃ₗ[R] exteriorPower R n (L ⊗[R] P)`\nin every degree, including zero. It sends `tprod(l) ⊗ ιMulti(p)` to\n`ιMulti(fun i => l i ⊗ p i)` and is natural for arbitrary linear maps of the\ninvertible lines and the other modules. Independent universes and zero rings\nare included; `P` need not be flat, finite, free or projective.",
    "link": {
     "text": "Exterior twists by invertible lines",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/InvertibleTwist.lean",
@@ -613,7 +651,8 @@
   {
    "kind": "item",
    "title": "Determinant lines",
-   "text": "for finite projective\nmodules over arbitrary commutative rings, the dependent product of top exterior\npowers over attained stalk-rank fibers is invertible. Rank zero, zero rings and\nindependent universes are included. `Module.DeterminantLine.congr` is the\ncanonical equivalence induced by a linear equivalence, acting on each attained\nfiber in its top exterior degree. It respects identity, composition and inverses,\nand respects intertwining of arbitrary endomorphisms. Rank-fiber recovery,\nzero-module and invertible-module normalizations assert existence of linear\nisomorphisms. For any commutative `R`-algebra `S` supported on a rank fiber,\nthe scalar-extended line is isomorphic to the homogeneous exterior power of\n`S ⊗[R] P` in that fiber's rank.\nThe tensor product of the determinant lines of two finite projective modules\nis isomorphic to the determinant line of their product.\nThe [scalar determinant](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism.lean)\nof any endomorphism is the unique scalar inducing its action on the line.\nIt is multiplicative under composition and invariant under intertwining linear\nequivalences, hence under conjugation.",
+   "title_from": "bold",
+   "text": "**[Determinant lines](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/Overview.md#determinant-lines):** for finite projective\nmodules over arbitrary commutative rings, the dependent product of top exterior\npowers over attained stalk-rank fibers is invertible. Rank zero, zero rings and\nindependent universes are included. `Module.DeterminantLine.congr` is the\ncanonical equivalence induced by a linear equivalence, acting on each attained\nfiber in its top exterior degree. It respects identity, composition and inverses,\nand respects intertwining of arbitrary endomorphisms. Rank-fiber recovery,\nzero-module and invertible-module normalizations assert existence of linear\nisomorphisms. For any commutative `R`-algebra `S` supported on a rank fiber,\nthe scalar-extended line is isomorphic to the homogeneous exterior power of\n`S ⊗[R] P` in that fiber's rank.\nThe tensor product of the determinant lines of two finite projective modules\nis isomorphic to the determinant line of their product.\nThe [scalar determinant](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism.lean)\nof any endomorphism is the unique scalar inducing its action on the line.\nIt is multiplicative under composition and invariant under intertwining linear\nequivalences, hence under conjugation.",
    "link": {
     "text": "scalar determinant",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism.lean",
@@ -624,7 +663,8 @@
   {
    "kind": "item",
    "title": "Scalar determinants",
-   "text": "Over any commutative ring `R`, for a finite projective\n`R`-module `P` of possibly variable stalk rank,\n`Module.determinant R P : Module.End R P →* R` is multiplicative under\nendomorphism composition. `Module.determinant_eq_iff_map_eq_smul` characterizes\nit as the unique scalar giving the induced action on the determinant line.\nFor finite free `P`, `Module.determinant_eq_det` identifies it with\n`LinearMap.det`; on the zero module its value is `1`.\nFor any finite free ambient module and specified split presentation,\n`Module.determinant_eq_det_stabilization` computes this scalar as the ordinary\ndeterminant of the endomorphism extended by the identity on the complement.\nThe retract need not be free or have constant stalk rank, and\n`LinearMap.det_stabilization_eq_of_retractions` compares different presentations.\nFor arbitrary finite projective factors, `Module.determinant_prodMap` gives\n`det(f × g) = det(f) * det(g)`, even when their stalk ranks vary.\n[Linear duality](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Dual.lean)\npreserves this determinant. Upper and lower block-triangular endomorphisms have\nthe product of their diagonal determinants, with no condition on the off-diagonal\nblock. The [unit criterion](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Units.lean)\nsays that an endomorphism is a unit exactly when its scalar determinant is a unit.\nNone of these formulas requires freeness or constant stalk rank.\nFor finite projective `R`-modules `P` and `Q` in independent universes and\narbitrary `R`-linear maps `f : P →ₗ[R] Q` and `g : Q →ₗ[R] P`, the\n[intrinsic Sylvester identity](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Sylvester.lean),\n`Module.determinant_one_add_comp_comm`, states\n`det_P(1 + g ∘ f) = det_Q(1 + f ∘ g)`. Neither module need be free or have\nconstant rank; their ranks may differ, and neither endomorphism is assumed\ninvertible.\nSee [determinant-line endomorphisms](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism.lean),\n[finite-free stabilization](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Stabilization.lean),\nand [product endomorphisms](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Product.lean).",
+   "title_from": "bold",
+   "text": "**Scalar determinants.** Over any commutative ring `R`, for a finite projective\n`R`-module `P` of possibly variable stalk rank,\n`Module.determinant R P : Module.End R P →* R` is multiplicative under\nendomorphism composition. `Module.determinant_eq_iff_map_eq_smul` characterizes\nit as the unique scalar giving the induced action on the determinant line.\nFor finite free `P`, `Module.determinant_eq_det` identifies it with\n`LinearMap.det`; on the zero module its value is `1`.\nFor any finite free ambient module and specified split presentation,\n`Module.determinant_eq_det_stabilization` computes this scalar as the ordinary\ndeterminant of the endomorphism extended by the identity on the complement.\nThe retract need not be free or have constant stalk rank, and\n`LinearMap.det_stabilization_eq_of_retractions` compares different presentations.\nFor arbitrary finite projective factors, `Module.determinant_prodMap` gives\n`det(f × g) = det(f) * det(g)`, even when their stalk ranks vary.\n[Linear duality](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Dual.lean)\npreserves this determinant. Upper and lower block-triangular endomorphisms have\nthe product of their diagonal determinants, with no condition on the off-diagonal\nblock. The [unit criterion](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Units.lean)\nsays that an endomorphism is a unit exactly when its scalar determinant is a unit.\nNone of these formulas requires freeness or constant stalk rank.\nFor finite projective `R`-modules `P` and `Q` in independent universes and\narbitrary `R`-linear maps `f : P →ₗ[R] Q` and `g : Q →ₗ[R] P`, the\n[intrinsic Sylvester identity](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Sylvester.lean),\n`Module.determinant_one_add_comp_comm`, states\n`det_P(1 + g ∘ f) = det_Q(1 + f ∘ g)`. Neither module need be free or have\nconstant rank; their ranks may differ, and neither endomorphism is assumed\ninvertible.\nSee [determinant-line endomorphisms](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism.lean),\n[finite-free stabilization](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Stabilization.lean),\nand [product endomorphisms](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Product.lean).",
    "link": {
     "text": "product endomorphisms",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/ExteriorPower/DeterminantLine/Endomorphism/Product.lean",
@@ -639,7 +679,8 @@
   {
    "kind": "item",
    "title": "Characteristic polynomials",
-   "text": "for an endomorphism `f` of a finite projective module over any commutative ring,\n`Module.charpoly R P f` is the determinant over `R[X]` of the universal scalar\npencil `X • id - f.baseChange R[X]`. Evaluation in every commutative algebra and\narbitrary scalar extension are characterized by `Module.eval₂_charpoly` and\n`Module.charpoly_baseChange`; the finite-free construction agrees with Mathlib's.\n`Module.aeval_self_charpoly` gives Cayley–Hamilton in the endomorphism ring,\nwithout a faithfulness assumption. Varying ranks and zero rings are included:\nthe polynomial need not be monic, and on the zero module it is `1`.\nFor maps `f : P →ₗ[R] Q` and `g : Q →ₗ[R] P` between finite projective modules,\nthe [composition formulas](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Composition.lean)\ngive `χ(g ∘ f) χ(0_Q) = χ(0_P) χ(f ∘ g)`, retaining the zero-map polynomials\nrather than a global rank. The rank-one case is\n`χ(φ.smulRight v) X = χ(0_P) (X - C (φ v))`.\nThe [unit and spectrum criteria](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Spectrum.lean)\ngive `IsUnit ((Module.charpoly R P f).eval r) ↔ IsUnit (r • 1 - f)`.\nThus the algebraic spectrum is the set of scalars with nonunit polynomial value,\nand `f` is invertible exactly when the constant coefficient is a unit.\n[Zero compositions](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/ZeroComp.lean) satisfy\n`charpoly(f) * charpoly(g) = charpoly(f + g) * charpoly(0)` whenever `f.comp g = 0`;\nno reverse-zero or commutation hypothesis is needed. As a special case,\n[complementary idempotents](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Idempotent.lean)\nsatisfy `charpoly(f) * charpoly(1 - f) = charpoly(0) * charpoly(1)`, with all four\npolynomials taken on the original module, without a global rank or freeness assumption.",
+   "title_from": "bold",
+   "text": "**[Characteristic polynomials](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/CayleyHamilton.lean):**\nfor an endomorphism `f` of a finite projective module over any commutative ring,\n`Module.charpoly R P f` is the determinant over `R[X]` of the universal scalar\npencil `X • id - f.baseChange R[X]`. Evaluation in every commutative algebra and\narbitrary scalar extension are characterized by `Module.eval₂_charpoly` and\n`Module.charpoly_baseChange`; the finite-free construction agrees with Mathlib's.\n`Module.aeval_self_charpoly` gives Cayley–Hamilton in the endomorphism ring,\nwithout a faithfulness assumption. Varying ranks and zero rings are included:\nthe polynomial need not be monic, and on the zero module it is `1`.\nFor maps `f : P →ₗ[R] Q` and `g : Q →ₗ[R] P` between finite projective modules,\nthe [composition formulas](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Composition.lean)\ngive `χ(g ∘ f) χ(0_Q) = χ(0_P) χ(f ∘ g)`, retaining the zero-map polynomials\nrather than a global rank. The rank-one case is\n`χ(φ.smulRight v) X = χ(0_P) (X - C (φ v))`.\nThe [unit and spectrum criteria](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Spectrum.lean)\ngive `IsUnit ((Module.charpoly R P f).eval r) ↔ IsUnit (r • 1 - f)`.\nThus the algebraic spectrum is the set of scalars with nonunit polynomial value,\nand `f` is invertible exactly when the constant coefficient is a unit.\n[Zero compositions](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/ZeroComp.lean) satisfy\n`charpoly(f) * charpoly(g) = charpoly(f + g) * charpoly(0)` whenever `f.comp g = 0`;\nno reverse-zero or commutation hypothesis is needed. As a special case,\n[complementary idempotents](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Idempotent.lean)\nsatisfy `charpoly(f) * charpoly(1 - f) = charpoly(0) * charpoly(1)`, with all four\npolynomials taken on the original module, without a global rank or freeness assumption.",
    "link": {
     "text": "complementary idempotents",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/LinearAlgebra/Charpoly/Idempotent.lean",
@@ -650,7 +691,8 @@
   {
    "kind": "item",
    "title": "Partial trace",
-   "text": "over a commutative\nsemiring `R`, contraction in a finite-projective tensor factor `M` defines an\n`R`-linear operator from maps `M ⊗[R] N →ₗ[R] M ⊗[R] P` to maps `N →ₗ[R] P`.\nThe untraced semimodules `N` and `P` are arbitrary, with independent universes.\nOn `TensorProduct.map a b`, its value is `tr_M(a) • b`.\nPrecomposition by `b.lTensor M` and postcomposition by `c.lTensor M` commute\nwith contraction, separately and together, for every input map and arbitrary\n`b : N' →ₗ[R] N`, `c : P →ₗ[R] P'`. These are stock `TensorProduct.map` maps\nwith identity on `M`; all untraced factors are arbitrary, with independent scalar/carrier universes.\nFor two finite-projective traced factors `M` and `N`, contraction over `M ⊗[R] N`\nagrees with successive contractions, first over `M` and then over `N`, after\ninverse-associator input and forward-associator output transport. The remaining\ninput and output semimodules are arbitrary, with independent universes.",
+   "title_from": "bold",
+   "text": "**[Partial trace](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/Trace/Partial.lean):** over a commutative\nsemiring `R`, contraction in a finite-projective tensor factor `M` defines an\n`R`-linear operator from maps `M ⊗[R] N →ₗ[R] M ⊗[R] P` to maps `N →ₗ[R] P`.\nThe untraced semimodules `N` and `P` are arbitrary, with independent universes.\nOn `TensorProduct.map a b`, its value is `tr_M(a) • b`.\nPrecomposition by `b.lTensor M` and postcomposition by `c.lTensor M` commute\nwith contraction, separately and together, for every input map and arbitrary\n`b : N' →ₗ[R] N`, `c : P →ₗ[R] P'`. These are stock `TensorProduct.map` maps\nwith identity on `M`; all untraced factors are arbitrary, with independent scalar/carrier universes.\nFor two finite-projective traced factors `M` and `N`, contraction over `M ⊗[R] N`\nagrees with successive contractions, first over `M` and then over `N`, after\ninverse-associator input and forward-associator output transport. The remaining\ninput and output semimodules are arbitrary, with independent universes.",
    "link": {
     "text": "Partial trace",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/Trace/Partial.lean",
@@ -661,7 +703,8 @@
   {
    "kind": "item",
    "title": "Tensor-family zero detection",
-   "text": "over a\ncommutative semiring, tensoring a jointly zero-detecting family with a projective\nmodule on either side preserves zero detection. The family's source and dependent\ntargets are arbitrary additive commutative monoids. For two jointly zero-detecting\nfamilies `f i : A →ₗ[R] B i` and `g j : C →ₗ[R] D j`, the maps `f i ⊗ g j`\njointly detect zero when `C` and every `B i` are projective; no projectivity of\n`A` or `D j` is required. Universes are independent, index types may be empty,\nand no finite-generation assumption is needed. This is zero detection, not\nseparation of arbitrary pairs.",
+   "title_from": "bold",
+   "text": "**[Tensor-family zero detection](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Dual/TensorProduct.lean):** over a\ncommutative semiring, tensoring a jointly zero-detecting family with a projective\nmodule on either side preserves zero detection. The family's source and dependent\ntargets are arbitrary additive commutative monoids. For two jointly zero-detecting\nfamilies `f i : A →ₗ[R] B i` and `g j : C →ₗ[R] D j`, the maps `f i ⊗ g j`\njointly detect zero when `C` and every `B i` are projective; no projectivity of\n`A` or `D j` is required. Universes are independent, index types may be empty,\nand no finite-generation assumption is needed. This is zero detection, not\nseparation of arbitrary pairs.",
    "link": {
     "text": "Tensor-family zero detection",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Dual/TensorProduct.lean",
@@ -672,7 +715,8 @@
   {
    "kind": "item",
    "title": "Tensor-image membership",
-   "text": "over a\ncommutative ring, if `W ≤ V` has projective quotient, any jointly zero-detecting\nfamily `f i : A →ₗ[R] B i` detects membership in the image of\n`W ⊗[R] A → V ⊗[R] A`. This image equals the infimum of the comaps of the\ncorresponding images in `V ⊗[R] B i`. The source and dependent targets are\narbitrary modules, and the index type may be infinite or empty.",
+   "title_from": "bold",
+   "text": "**[Tensor-image membership](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/TensorProduct/Submodule.lean):** over a\ncommutative ring, if `W ≤ V` has projective quotient, any jointly zero-detecting\nfamily `f i : A →ₗ[R] B i` detects membership in the image of\n`W ⊗[R] A → V ⊗[R] A`. This image equals the infimum of the comaps of the\ncorresponding images in `V ⊗[R] B i`. The source and dependent targets are\narbitrary modules, and the index type may be infinite or empty.",
    "link": {
     "text": "Tensor-image membership",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/TensorProduct/Submodule.lean",
@@ -683,7 +727,8 @@
   {
    "kind": "item",
    "title": "Local freeness",
-   "text": "every projective right module\nis free over a ring with a proper two-sided ideal and unit complement, with no\ngeneration bound. The `IsLocalRing` form permits noncommutative rings and independent\nuniverses; split-range assembly itself requires explicitly free increments.",
+   "title_from": "bold",
+   "text": "**[Local freeness](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/Overview.md#local-freeness):** every projective right module\nis free over a ring with a proper two-sided ideal and unit complement, with no\ngeneration bound. The `IsLocalRing` form permits noncommutative rings and independent\nuniverses; split-range assembly itself requires explicitly free increments.",
    "link": {
     "text": "Local freeness",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/Overview.md#local-freeness",
@@ -698,7 +743,8 @@
   {
    "kind": "item",
    "title": "Submodule lattices and length",
-   "text": "ordinary equivalences `e : ModuleCat.{vR} R ≌ ModuleCat.{vS} S` over arbitrary\nrings give the canonical order isomorphism\n`ModuleCat.submoduleOrderIsoOfEquivalence e X` on all submodules. For every\nmodule `X`, `ModuleCat.length_eq_of_equivalence e X` gives\n`Module.length S (e.functor.obj X) = Module.length R X` in `ℕ∞`, including `⊤`;\n`ModuleCat.isFiniteLength_iff_of_equivalence e X` preserves and reflects the\nproposition `IsFiniteLength`. Scalar and carrier universes are independent,\nwith no maximum-universe or finite-generation hypothesis. This compares a\nmodule with its image, not the two regular modules: the matrix equivalence\nsends `ℚ` to the simple column module `Fin 2 → ℚ` of length 1 over\n`Matrix (Fin 2) (Fin 2) ℚ`, whose left regular module instead has length 2.",
+   "title_from": "bold",
+   "text": "**[Submodule lattices and length](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Category/Length.lean):**\nordinary equivalences `e : ModuleCat.{vR} R ≌ ModuleCat.{vS} S` over arbitrary\nrings give the canonical order isomorphism\n`ModuleCat.submoduleOrderIsoOfEquivalence e X` on all submodules. For every\nmodule `X`, `ModuleCat.length_eq_of_equivalence e X` gives\n`Module.length S (e.functor.obj X) = Module.length R X` in `ℕ∞`, including `⊤`;\n`ModuleCat.isFiniteLength_iff_of_equivalence e X` preserves and reflects the\nproposition `IsFiniteLength`. Scalar and carrier universes are independent,\nwith no maximum-universe or finite-generation hypothesis. This compares a\nmodule with its image, not the two regular modules: the matrix equivalence\nsends `ℚ` to the simple column module `Fin 2 → ℚ` of length 1 over\n`Matrix (Fin 2) (Fin 2) ℚ`, whose left regular module instead has length 2.",
    "link": {
     "text": "Submodule lattices and length",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Category/Length.lean",
@@ -709,7 +755,8 @@
   {
    "kind": "item",
    "title": "Product comparisons and uniform rank bounds",
-   "text": "the [canonical additive comparison](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Product.lean) maps\nK₀ of any product of rings to the product of their K₀ groups. For a family of\npossibly noncommutative division rings, it is injective and its image consists\nexactly of families whose integer ranks have one uniform absolute bound.\nMore generally, every K₀ element of an arbitrary ring `R` has uniformly bounded\nabsolute integer ranks under any indexed family of unital maps `R →+* D i` to\ndivision rings. For an infinite product of division rings, the comparison is\nnot surjective.",
+   "title_from": "bold",
+   "text": "**[Product comparisons and uniform rank bounds](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/RankBound.lean):**\nthe [canonical additive comparison](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Product.lean) maps\nK₀ of any product of rings to the product of their K₀ groups. For a family of\npossibly noncommutative division rings, it is injective and its image consists\nexactly of families whose integer ranks have one uniform absolute bound.\nMore generally, every K₀ element of an arbitrary ring `R` has uniformly bounded\nabsolute integer ranks under any indexed family of unital maps `R →+* D i` to\ndivision rings. For an infinite product of division rings, the comparison is\nnot surjective.",
    "link": {
     "text": "canonical additive comparison",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Product.lean",
@@ -720,7 +767,8 @@
   {
    "kind": "item",
    "title": "Lifting across nil kernels",
-   "text": "A surjective homomorphism from a commutative ring to a ring induces a surjection\non finitely generated projective right-module isomorphism classes whenever every\nelement of its kernel is nilpotent. The nilpotence exponent may depend on the\nkernel element; no uniform exponent for the whole kernel is required.",
+   "title_from": "bold",
+   "text": "**[Lifting across nil kernels](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Nil.lean):**\nA surjective homomorphism from a commutative ring to a ring induces a surjection\non finitely generated projective right-module isomorphism classes whenever every\nelement of its kernel is nilpotent. The nilpotence exponent may depend on the\nkernel element; no uniform exponent for the whole kernel is required.",
    "link": {
     "text": "Lifting across nil kernels",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Nil.lean",
@@ -731,7 +779,8 @@
   {
    "kind": "item",
    "title": "Nil-kernel injectivity and nilpotent-kernel invariance",
-   "text": "for a surjective unital homomorphism of arbitrary, possibly noncommutative rings,\nscalar extension is injective on finite-projective right-module isomorphism\nclasses whenever every kernel element is nilpotent; no common exponent is\nrequired. If some power of the two-sided kernel ideal is zero, the\nscalar-extension maps on finite-projective right-module isomorphism-class monoids\nand on K₀ are additive equivalences.",
+   "title_from": "bold",
+   "text": "**[Nil-kernel injectivity and nilpotent-kernel invariance](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Nilpotent.lean):**\nfor a surjective unital homomorphism of arbitrary, possibly noncommutative rings,\nscalar extension is injective on finite-projective right-module isomorphism\nclasses whenever every kernel element is nilpotent; no common exponent is\nrequired. If some power of the two-sided kernel ideal is zero, the\nscalar-extension maps on finite-projective right-module isomorphism-class monoids\nand on K₀ are additive equivalences.",
    "link": {
     "text": "Nil-kernel injectivity and nilpotent-kernel invariance",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/KTheory/Nilpotent.lean",
@@ -742,7 +791,8 @@
   {
    "kind": "item",
    "title": "Locally constant module rank",
-   "text": "`Module.rankLocallyConstant R M` assigns a locally constant natural-valued\nfunction on `Spec R` to each finite projective left module over a commutative\nring. It is invariant under linear isomorphism, sends subsingleton modules to\nzero and the regular module to one, adds under finite dependent products and\nbinary products, and multiplies under tensor products. Arbitrary commutative\nalgebra base change pulls this function back along the induced map on prime\nspectra. Scalar, module and index universes are independent; empty products\nand zero rings are included. These are module-level laws, not a class or K₀ map.",
+   "title_from": "bold",
+   "text": "**[Locally constant module rank](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/RankLocallyConstant.lean):**\n`Module.rankLocallyConstant R M` assigns a locally constant natural-valued\nfunction on `Spec R` to each finite projective left module over a commutative\nring. It is invariant under linear isomorphism, sends subsingleton modules to\nzero and the regular module to one, adds under finite dependent products and\nbinary products, and multiplies under tensor products. Arbitrary commutative\nalgebra base change pulls this function back along the induced map on prime\nspectra. Scalar, module and index universes are independent; empty products\nand zero rings are included. These are module-level laws, not a class or K₀ map.",
    "link": {
     "text": "Locally constant module rank",
     "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/RankLocallyConstant.lean",
@@ -753,6 +803,7 @@
   {
    "kind": "item",
    "title": "Frobenius functionals and self-injectivity",
+   "title_from": "heading",
    "text": "For a finite-dimensional algebra `A` over a field `K`,\n[`Module.injective_of_nondegenerate_mul`](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/ProjectiveModules/Module/Injective/Frobenius.lean)\nproves `Module.Injective A A` from a given linear functional\n`l : A →ₗ[K] K` whose multiplication pairing `l (x * y)` is nondegenerate.\nThe algebra may be noncommutative, the scalar and algebra universes are independent,\nand no normalization such as `l 1 = 1` is required. The resulting injectivity applies\nto arbitrary left modules, without finiteness or common-universe assumptions.\nThis is conditional on the functional, not a construction of one.",
    "link": {
     "text": "Module.injective_of_nondegenerate_mul",
@@ -776,171 +827,6 @@
   {
    "kind": "prose",
    "text": "[Detailed headline results](https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md)"
-  },
-  {
-   "kind": "item",
-   "title": "Quotients, kernels and presentations",
-   "text": "",
-   "link": {
-    "text": "Quotients, kernels and presentations",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#quotients-kernels-and-presentations",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Freeness, cancellation and free words",
-   "text": "",
-   "link": {
-    "text": "Freeness, cancellation and free words",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#freeness-cancellation-and-free-words",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Idempotents and projections",
-   "text": "",
-   "link": {
-    "text": "Idempotents and projections",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#idempotents-and-projections",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Exterior algebra and contraction",
-   "text": "",
-   "link": {
-    "text": "Exterior algebra and contraction",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#exterior-algebra-and-contraction",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Symmetric powers",
-   "text": "",
-   "link": {
-    "text": "Symmetric powers",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#symmetric-powers",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Determinants",
-   "text": "",
-   "link": {
-    "text": "Determinants",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#determinants",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Duality, Hom and tensor tests",
-   "text": "",
-   "link": {
-    "text": "Duality, Hom and tensor tests",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#duality-hom-and-tensor-tests",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Traces",
-   "text": "",
-   "link": {
-    "text": "Traces",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#traces",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Topology",
-   "text": "",
-   "link": {
-    "text": "Topology",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#topology",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Coefficient products and right extension",
-   "text": "",
-   "link": {
-    "text": "Coefficient products and right extension",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#coefficient-products-and-right-extension",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Categories, size and length",
-   "text": "",
-   "link": {
-    "text": "Categories, size and length",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#categories-size-and-length",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Right classes and K0 structures",
-   "text": "",
-   "link": {
-    "text": "Right classes and K0 structures",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#right-classes-and-k0-structures",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "K0 calculations and simple types",
-   "text": "",
-   "link": {
-    "text": "K0 calculations and simple types",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#k0-calculations-and-simple-types",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Stalk rank and component models",
-   "text": "",
-   "link": {
-    "text": "Stalk rank and component models",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#stalk-rank-and-component-models",
-    "code": false
-   },
-   "declaration": null
-  },
-  {
-   "kind": "item",
-   "title": "Tensor families and finite residue rank",
-   "text": "",
-   "link": {
-    "text": "Tensor families and finite residue rank",
-    "url": "https://github.com/FormalFrontier/projective-modules/blob/27f95a8b2a0669df91bfc703a078030fbf191d75/docs/HeadlineResults.md#tensor-families-and-finite-residue-rank",
-    "code": false
-   },
-   "declaration": null
   }
  ],
  "main_results": [

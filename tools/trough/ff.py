@@ -157,6 +157,16 @@ class Links:
             return f"{root}/tree/{self.rev}{fragment}"
         return f"{root}/{'tree' if path in self.dirs else 'blob'}/{self.rev}/{path}{fragment}"
 
+    def contents(self, url: str) -> bool:
+        """Whether a link points into the README or docs/, as a table of contents' entries do."""
+        resolved = self.resolve(url)
+        for kind in ("blob", "tree"):
+            prefix = f"{GITHUB}/{ORG}/{self.name}/{kind}/{self.rev}/"
+            if resolved.startswith(prefix):
+                path = resolved[len(prefix):].partition("#")[0]
+                return path in ("README.md", "docs") or path.startswith("docs/")
+        return False
+
     def file(self, url: str) -> str | None:
         """The repository path a resolved link names at this commit, if it names one."""
         prefix = f"{GITHUB}/{ORG}/{self.name}/blob/{self.rev}/"
@@ -170,8 +180,9 @@ class Links:
         return LINK.sub(link, markdown)
 
 
-def first_sentence(text: str, limit: int = 140) -> str:
-    """The first sentence of Markdown text, cut at a word outside code spans."""
+def sentence(text: str, limit: int = 140) -> tuple[str, bool, bool]:
+    """The first sentence of Markdown text with its closing mark, cut at a word outside code spans when longer
+    than *limit*; whether it was cut there; and whether any of the text is left out."""
     flat = " ".join(text.split())
     in_code, end, cut = False, len(flat), None
     for i, char in enumerate(flat):
@@ -185,14 +196,21 @@ def first_sentence(text: str, limit: int = 140) -> str:
             if flat[: i + 1].rsplit(" ", 1)[-1].lower() not in ABBREVIATIONS:
                 end = i + 1
                 break
-    sentence = flat[:end]
-    if len(sentence) > limit and cut:
-        sentence = flat[:cut].rstrip(",;:") + " …"
-    return re.sub(r"(?<!\.)[.:;]$", "", sentence)
+    if end > limit and cut:
+        return flat[:cut].rstrip(",;:"), True, True
+    return flat[:end], False, end < len(flat)
 
 
-def capitalize(text: str) -> str:
-    return text[:1].upper() + text[1:] if text[:1].islower() else text
+def first_sentence(text: str, limit: int = 140) -> str:
+    """The first sentence of Markdown text as a title: cut with " …" when long, and without its closing mark."""
+    words, cut, _ = sentence(text, limit)
+    return words + " …" if cut else re.sub(r"(?<!\.)[.:;]$", "", words)
+
+
+def opening(text: str, limit: int = 140) -> str:
+    """The first sentence of Markdown text as written, with " …" where the text goes on."""
+    words, _, more = sentence(text, limit)
+    return words + " …" if more else words
 
 
 def item_link(paragraph: str, links: Links) -> dict | None:
@@ -208,33 +226,32 @@ def item_link(paragraph: str, links: Links) -> dict | None:
     return None
 
 
-def headline_item(markdown: str, links: Links, title: str | None = None) -> dict:
-    """One headline result: its title, its text (Markdown, links absolute) and its declaration link.
-    A bold lead or a leading file link is the title; after a leading declaration link, the name is."""
+def headline_item(markdown: str, links: Links, title: str | None = None) -> dict | None:
+    """One headline result: its title, its text as written (Markdown, links absolute) and its declaration
+    link; None for a table of contents' entry. The title is a bold lead, a leading link's label, a leading
+    declaration link's name, or else the first sentence; `title_from` says which."""
     paragraph = markdown.split("\n\n", 1)[0]
     link = item_link(paragraph, links)
-    text = markdown
-    in_text = False  # the title is the text's first sentence, so a page shows the text alone
+    title_from = "heading"
     if title is None:
         if bold := BOLD_LEAD.match(markdown):
-            title = re.sub(r"(?<!\.)[.:;]$", "", " ".join(bold.group(1).split()))
-            text = markdown[bold.end():].lstrip(" :;,.—–-\n")
+            title, title_from = re.sub(r"(?<!\.)[.:;]$", "", " ".join(bold.group(1).split())), "bold"
         elif (lead := LEADING_LINK.match(markdown)) and not lead.group(1).startswith("`"):
-            title = " ".join(lead.group(1).split())
-            text = markdown[lead.end():].lstrip(" :;,.—–-\n")
+            if lead.end() == len(markdown) and links.contents(lead.group(2)):
+                return None  # only a link into the README or docs/, as a table of contents' entry is
+            title, title_from = " ".join(lead.group(1).split()), "link"
         elif lead and link and link["code"] and lead.group(1) == f"`{link['text']}`":
-            title = lead.group(1)
-            text = capitalize(markdown[lead.end():].lstrip(" :;,.—–-\n"))
+            title, title_from = lead.group(1), "declaration"
         else:
-            title, in_text = first_sentence(markdown), True
+            title, title_from = first_sentence(markdown), "sentence"
     title = LINK.sub(lambda match: match.group(1), title)  # a title is a link's label elsewhere
     declaration = None
     if link and link["code"] and leansource.is_name(link["text"]):
         file = links.file(link["url"])
         if file and file.endswith(".lean"):
             declaration = {"name": link["text"], "file": file}
-    return {"kind": "item", "title": title, "text": links.text(text.strip()), "link": link,
-            "declaration": declaration} | ({"title_in_text": True} if in_text else {})
+    return {"kind": "item", "title": title, "title_from": title_from, "text": links.text(markdown.strip()),
+            "link": link, "declaration": declaration}
 
 
 def headlines(readme: str, links: Links) -> list[dict]:
@@ -257,7 +274,9 @@ def headlines(readme: str, links: Links) -> list[dict]:
         if heading is not None:
             out.append({"kind": "heading", "title": heading})
         for kind, text in members:
-            out.append(headline_item(text, links) if kind == "item" else {"kind": "prose", "text": links.text(text)})
+            item = headline_item(text, links) if kind == "item" else {"kind": "prose", "text": links.text(text)}
+            if item:
+                out.append(item)
     return out
 
 
@@ -441,11 +460,21 @@ def article(record: dict, title: str, text: str, attribution: str, declarations:
 
 
 def text_item(item: dict) -> str:
-    """A headline result with no article, quoted as its README gives it."""
-    if item.get("title_in_text"):
-        return safe(item["text"])
-    title = item["title"] if re.search(r"[.?!]$", item["title"]) else f"{item['title']}."
-    return safe(f"**{title}** {item['text']}".strip())
+    """A headline result with no article, quoted as its README gives it; a heading that stands for a
+    result keeps its heading."""
+    if item.get("title_from") == "heading":
+        return f"### {safe(item['title'])}\n\n{safe(item['text'])}"
+    return safe(item["text"])
+
+
+def article_text(item: dict) -> str:
+    """The quoted text an article shows under its title: the item as written, less a bold lead that is the
+    title and a link to its own declaration right after it, which the Lean section shows."""
+    text = item["text"]
+    if item.get("title_from") == "bold":
+        text = BOLD_LEAD.sub("", text, count=1).lstrip(" :;,.—–-\n")
+        text = without_lead_link(text, item["declaration"]["name"])
+    return text
 
 
 def cell(text: str) -> str:
@@ -482,7 +511,8 @@ def main_results_page(record: dict) -> Container | None:
              "yaml gives, with its line. They are listed here, not made articles: in several Formal Frontier libraries "
              "this list is close to the whole API. The notes are the yaml's."]
     if missing:
-        lines += ["", f"The scan does not find {missing} of them; the library's page names them."]
+        lines += ["", f"The scan does not find {missing} of them; [the library's page](../README.md) names "
+                  f"{'it' if missing == 1 else 'them'}."]
     page = Container("Main results", "main-results")
     if len(rows) <= TABLE_ROWS:
         page.prose = "\n".join(lines + ([""] + header + rows if rows else []) + ["", credit])
@@ -629,7 +659,7 @@ def library_section(record: dict, chapter: set[str], titles: dict[str, str],
         missing = [item for item in highlight["declarations"] if not item["found"]]
         if not found:
             stats["highlights_not_found"] += 1
-            pending += [text_item({"title": escape(highlight["title"]), "text": highlight["statement"]}),
+            pending += [f"**{escape(highlight['title'])}.** {safe(highlight['statement'])}",
                         quoted(record, "the highlights", "formalization.yaml")]
             continue
         stats["highlight_articles"] += 1
@@ -659,7 +689,7 @@ def library_section(record: dict, chapter: set[str], titles: dict[str, str],
             else:
                 stats["headline_articles"] += 1
                 add(headlines, article(record, item["title"] or f"`{declaration['name']}`",
-                                       without_lead_link(item["text"], declaration["name"]), readme_quoted,
+                                       article_text(item), readme_quoted,
                                        [declaration], [],
                                        (f"{name} at {record['rev'][:8]}: README, headline results",
                                         blob(record, readme[0]) + readme[1])),
@@ -681,7 +711,8 @@ def library_section(record: dict, chapter: set[str], titles: dict[str, str],
             "## Headline results",
             f"The {plural(stats['headline_items'], 'headline result')} of its README are on a page of their own: "
             f"{plural(stats['headline_articles'], 'article')}, {quoted_items} quoted as text"
-            + (f", and {stats['headline_duplicates']} that link an article above." if stats["headline_duplicates"] else ".")])))
+            + (f", and {stats['headline_duplicates']} that {'links' if stats['headline_duplicates'] == 1 else 'link'} "
+               "an article above." if stats["headline_duplicates"] else ".")])))
     else:
         lead = highlight_text + (["## Headline results", readme_quoted] if record["headlines"] else [])
         if headlines.entries:
@@ -769,16 +800,15 @@ def chapter(pairs: list[tuple[dict, dict]]) -> tuple[Built, list[tuple[Container
         parts.append(Entry(part))
     root = Container("Formal Frontier", "formal-frontier", parts)
     root.prose = intro(stats)
-    overview = ["## The libraries", "", "Each with the first sentence of its description, quoted from its "
-                "formalization.yaml at its pinned commit, and its number of articles."]
+    overview = ["## The libraries", "", "Each with its number of articles and the opening of its description, quoted "
+                "from its formalization.yaml at its pinned commit, shortened with … where it is cut."]
     counts_of = {id(section): counts for section, _, counts in built}
     for subject, sections in by_subject.items():
         if sections:
             overview += ["", f"### {subject}", ""]
             for section in sections:
                 library, record = names[section.slug]
-                lead = first_sentence(record["project"]["description"])
-                lead += "" if lead.endswith("…") else "."
+                lead = opening(record["project"]["description"])
                 overview.append(f"- [{section.title}](trough:{library['id']}) "
                                 f"({plural(counts_of[id(section)]['articles'], 'article')}): {safe(lead)}")
     root.tail = "\n".join(overview)

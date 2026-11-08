@@ -116,6 +116,8 @@ def test_mutual_blocks_and_named_sections_close():
     text = ("namespace A\nmutual\ntheorem even : True := trivial\ntheorem odd : True := trivial\nend\n"
             "section B.C\ntheorem inner : True := trivial\nend B.C\nend A\ntheorem after : True := trivial\n")
     assert set(leansource.scan(text)) == {"A.even", "A.odd", "A.inner", "after"}
+    # A section named with a dot closes at the top level too.
+    assert set(leansource.scan("section A.B\ntheorem x : True := trivial\nend A.B\n")) == {"x"}
 
 
 def test_nothing_after_exit_is_read():
@@ -126,9 +128,12 @@ def test_nothing_after_exit_is_read():
 
 def test_sorry_ax_and_stop_count_as_sorry():
     text = ("theorem ax : True := sorryAx True\ntheorem stopped : True := by\n  stop\n  trivial\n"
-            "theorem fine : True := by\n  exact trivial\n")
+            "theorem fine : True := by\n  exact trivial\n"
+            "def config : Config where\n  stop := 5\n  start := 0\n")
     found = leansource.scan(text)
     assert found["ax"].sorry and found["stopped"].sorry and not found["fine"].sorry
+    # A field named `stop` is not the tactic.
+    assert not found["config"].sorry
 
 
 def test_a_docstring_opened_by_slash_dash_dash_slash_runs_to_its_close():

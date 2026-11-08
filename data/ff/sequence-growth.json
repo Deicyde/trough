@@ -48,7 +48,8 @@
   {
    "kind": "item",
    "title": "`Nat.DivisionGrowth.affine_lower_bound`",
-   "text": "If `0 < s < n` and\n`∀ m, n * (u m / s) ≤ u (m + 1)`, then for every `m : ℕ`, with\n`λ = (n : ℚ) / s` and `C = (n : ℚ) * ((s - 1 : ℕ) : ℚ) / ((n : ℚ) - s)`,\n`λ ^ m * ((u 0 : ℚ) - C) + C ≤ (u m : ℚ)`. There is **no** seed condition.",
+   "title_from": "declaration",
+   "text": "[`Nat.DivisionGrowth.affine_lower_bound`](https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean): if `0 < s < n` and\n`∀ m, n * (u m / s) ≤ u (m + 1)`, then for every `m : ℕ`, with\n`λ = (n : ℚ) / s` and `C = (n : ℚ) * ((s - 1 : ℕ) : ℚ) / ((n : ℚ) - s)`,\n`λ ^ m * ((u 0 : ℚ) - C) + C ≤ (u m : ℚ)`. There is **no** seed condition.",
    "link": {
     "text": "Nat.DivisionGrowth.affine_lower_bound",
     "url": "https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean",
@@ -67,7 +68,8 @@
   {
    "kind": "item",
    "title": "`Nat.DivisionGrowth.eventually_dominates`",
-   "text": "Under the same recurrence,\n`0 < s`, `0 < b`, `s * b < n`, and the sufficient natural seed\n`n * (s - 1) < (n - s) * u 0`, for **each** `K : ℕ` there is `M : ℕ`\nsuch that **every** `m ≥ M` satisfies `K * b ^ m < u m`.",
+   "title_from": "declaration",
+   "text": "[`Nat.DivisionGrowth.eventually_dominates`](https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean): under the same recurrence,\n`0 < s`, `0 < b`, `s * b < n`, and the sufficient natural seed\n`n * (s - 1) < (n - s) * u 0`, for **each** `K : ℕ` there is `M : ℕ`\nsuch that **every** `m ≥ M` satisfies `K * b ^ m < u m`.",
    "link": {
     "text": "Nat.DivisionGrowth.eventually_dominates",
     "url": "https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean",

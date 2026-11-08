@@ -53,7 +53,8 @@
   {
    "kind": "item",
    "title": "Principal embedding",
-   "text": "[`Order.Ideal.principalHom`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L29)\nsends `a` to its principal ideal as a bounded lattice homomorphism;\n[`principalHom_injective`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L47) shows it is\ninjective. Its operation laws are available through the bundled homomorphism.",
+   "title_from": "bold",
+   "text": "**Principal embedding.** [`Order.Ideal.principalHom`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L29)\nsends `a` to its principal ideal as a bounded lattice homomorphism;\n[`principalHom_injective`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L47) shows it is\ninjective. Its operation laws are available through the bundled homomorphism.",
    "link": {
     "text": "Order.Ideal.principalHom",
     "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L29",
@@ -72,7 +73,8 @@
   {
    "kind": "item",
    "title": "Frame and arbitrary suprema",
-   "text": "The\n[`Order.Frame` instance](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L96) makes the ideal\ncompletion a complete Heyting algebra. The\n[`mem_sSup_iff` theorem](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L77) characterizes\n`x ∈ sSup S` by a finite set of elements, each in some ideal of the *arbitrary*\nfamily `S`, whose join is **at least** `x`. This includes the empty-family and\nbottom cases; it is not restricted to directed families.",
+   "title_from": "bold",
+   "text": "**Frame and arbitrary suprema.** The\n[`Order.Frame` instance](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L96) makes the ideal\ncompletion a complete Heyting algebra. The\n[`mem_sSup_iff` theorem](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L77) characterizes\n`x ∈ sSup S` by a finite set of elements, each in some ideal of the *arbitrary*\nfamily `S`, whose join is **at least** `x`. This includes the empty-family and\nbottom cases; it is not restricted to directed families.",
    "link": {
     "text": "mem_sSup_iff` theorem",
     "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L77",
@@ -83,7 +85,8 @@
   {
    "kind": "item",
    "title": "Compact generation",
-   "text": "Every principal ideal is\n[compact](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L116), and\n[`isCompactElement_iff_eq_principal`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L141)\nidentifies **all** compact ideals as principal. The\n[`IsCompactlyGenerated` instance](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L168)\nexpresses every ideal as a supremum of compact ideals. Compactness here is\norder-theoretic, not finiteness of the ideal's underlying set.",
+   "title_from": "bold",
+   "text": "**Compact generation.** Every principal ideal is\n[compact](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L116), and\n[`isCompactElement_iff_eq_principal`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L141)\nidentifies **all** compact ideals as principal. The\n[`IsCompactlyGenerated` instance](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L168)\nexpresses every ideal as a supremum of compact ideals. Compactness here is\norder-theoretic, not finiteness of the ideal's underlying set.",
    "link": {
     "text": "isCompactElement_iff_eq_principal",
     "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/OrderIdeal.lean#L141",
@@ -98,7 +101,8 @@
   {
    "kind": "item",
    "title": "Prime ideals and Boolean-valued maps",
-   "text": "For `[Lattice A]` and\n`[BoundedOrder A]`,\n[`Order.Ideal.primeEquivBoolHom`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean)\nidentifies prime order ideals with bounded lattice homomorphisms `A → Bool`.\nThe characteristic map sends precisely the ideal to `false`; conversely\n[`BoundedLatticeHom.falseIdeal`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean)\nis its prime false fiber. Every such map is surjective. This includes the\none-element lattice, for which both sides of the equivalence are empty.",
+   "title_from": "bold",
+   "text": "**Prime ideals and Boolean-valued maps.** For `[Lattice A]` and\n`[BoundedOrder A]`,\n[`Order.Ideal.primeEquivBoolHom`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean)\nidentifies prime order ideals with bounded lattice homomorphisms `A → Bool`.\nThe characteristic map sends precisely the ideal to `false`; conversely\n[`BoundedLatticeHom.falseIdeal`](https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean)\nis its prime false fiber. Every such map is surjective. This includes the\none-element lattice, for which both sides of the equivalence are empty.",
    "link": {
     "text": "Order.Ideal.primeEquivBoolHom",
     "url": "https://github.com/FormalFrontier/ideal-completion/blob/e316d02a1c0814b130a7085a112c142542b7019d/IdealCompletion/PrimeIdeal.lean",

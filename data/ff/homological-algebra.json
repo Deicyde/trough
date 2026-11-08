@@ -103,7 +103,8 @@
   {
    "kind": "item",
    "title": "Uniqueness of finite biproduct factors",
-   "text": "In a preadditive category, two\nfinite families with local canonical, possibly noncommutative endomorphism\nrings and isomorphic biproducts have equivalent index types and matching\nisomorphic factors. Only the two given biproducts are needed, with independent\nobject, morphism and both index universes; no abelian structure, chain\nconditions or idempotent completeness is assumed. Repeated factors are allowed;\nthe matching need not be unique or make the supplied isomorphism diagonal.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#uniqueness-of-finite-biproduct-factors).",
+   "title_from": "bold",
+   "text": "**Uniqueness of finite biproduct factors.** In a preadditive category, two\nfinite families with local canonical, possibly noncommutative endomorphism\nrings and isomorphic biproducts have equivalent index types and matching\nisomorphic factors. Only the two given biproducts are needed, with independent\nobject, morphism and both index universes; no abelian structure, chain\nconditions or idempotent completeness is assumed. Repeated factors are allowed;\nthe matching need not be unique or make the supplied isomorphism diagonal.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#uniqueness-of-finite-biproduct-factors).",
    "link": {
     "text": "Statement and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#uniqueness-of-finite-biproduct-factors",
@@ -114,7 +115,8 @@
   {
    "kind": "item",
    "title": "Finite indecomposable decompositions",
-   "text": "An Artinian object, or separately\na Noetherian object, in a category with zero morphisms and finite biproducts\nis isomorphic to a finite biproduct of nonzero indecomposables; zero has the\nempty decomposition. No preadditivity, abelian structure, second chain condition or\nidempotent completeness is needed; this is existence, not uniqueness.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-indecomposable-decompositions).",
+   "title_from": "bold",
+   "text": "**Finite indecomposable decompositions.** An Artinian object, or separately\na Noetherian object, in a category with zero morphisms and finite biproducts\nis isomorphic to a finite biproduct of nonzero indecomposables; zero has the\nempty decomposition. No preadditivity, abelian structure, second chain condition or\nidempotent completeness is needed; this is existence, not uniqueness.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-indecomposable-decompositions).",
    "link": {
     "text": "Statements and modules",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-indecomposable-decompositions",
@@ -125,7 +127,8 @@
   {
    "kind": "item",
    "title": "Finite-length decompositions with local endomorphism rings",
-   "text": "A Noetherian\n**and** Artinian object in any abelian category is isomorphic to a finite\nbiproduct with local canonical, possibly noncommutative endomorphism rings\non its factors. Object and morphism universes are independent; zero has the\nempty decomposition. This asserts existence and locality, not uniqueness.\nIts local-End factors also satisfy the generic uniqueness theorem above.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-length-decompositions-with-local-endomorphism-rings).",
+   "title_from": "bold",
+   "text": "**Finite-length decompositions with local endomorphism rings.** A Noetherian\n**and** Artinian object in any abelian category is isomorphic to a finite\nbiproduct with local canonical, possibly noncommutative endomorphism rings\non its factors. Object and morphism universes are independent; zero has the\nempty decomposition. This asserts existence and locality, not uniqueness.\nIts local-End factors also satisfy the generic uniqueness theorem above.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-length-decompositions-with-local-endomorphism-rings).",
    "link": {
     "text": "Statement and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-length-decompositions-with-local-endomorphism-rings",
@@ -136,7 +139,8 @@
   {
    "kind": "item",
    "title": "Cancellation of finite local-End families",
-   "text": "In a preadditive category,\na finite biproduct of objects with local canonical, possibly noncommutative\nendomorphism rings cancels from binary biproducts with arbitrary remaining\nobjects. Only the common full sum and the two binary totals are required;\nno intermediate sums, chain conditions or idempotent completeness are assumed.\nThe object, morphism and index universes are independent, and the empty family\nis allowed. The residual isomorphism is not canonical.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-local-end-families).",
+   "title_from": "bold",
+   "text": "**Cancellation of finite local-End families.** In a preadditive category,\na finite biproduct of objects with local canonical, possibly noncommutative\nendomorphism rings cancels from binary biproducts with arbitrary remaining\nobjects. Only the common full sum and the two binary totals are required;\nno intermediate sums, chain conditions or idempotent completeness are assumed.\nThe object, morphism and index universes are independent, and the empty family\nis allowed. The residual isomorphism is not canonical.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-local-end-families).",
    "link": {
     "text": "Statement and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-local-end-families",
@@ -147,7 +151,8 @@
   {
    "kind": "item",
    "title": "Cancellation of finite-length summands",
-   "text": "In any abelian category, if\n`X` is Noetherian **and** Artinian, `X ⊞ Y ≅ X ⊞ Z` implies\n`Nonempty (Y ≅ Z)` for unrestricted `Y, Z`. No locality of `End X`\nis required; zero is allowed and the isomorphism is not canonical.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-length-summands).",
+   "title_from": "bold",
+   "text": "**Cancellation of finite-length summands.** In any abelian category, if\n`X` is Noetherian **and** Artinian, `X ⊞ Y ≅ X ⊞ Z` implies\n`Nonempty (Y ≅ Z)` for unrestricted `Y, Z`. No locality of `End X`\nis required; zero is allowed and the isomorphism is not canonical.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-length-summands).",
    "link": {
     "text": "Statement and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-length-summands",
@@ -158,7 +163,8 @@
   {
    "kind": "item",
    "title": "Subobject correspondence and modularity",
-   "text": "Canonical subobject lattices\nin any abelian category are modular. Pullback along an epimorphism identifies\ncodomain subobjects with domain subobjects containing its kernel, with direct\nimage as inverse; the cokernel case is included. No smallness is assumed.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#subobject-correspondence-and-modularity).",
+   "title_from": "bold",
+   "text": "**Subobject correspondence and modularity.** Canonical subobject lattices\nin any abelian category are modular. Pullback along an epimorphism identifies\ncodomain subobjects with domain subobjects containing its kernel, with direct\nimage as inverse; the cokernel case is included. No smallness is assumed.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#subobject-correspondence-and-modularity).",
    "link": {
     "text": "Statements and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#subobject-correspondence-and-modularity",
@@ -169,7 +175,8 @@
   {
    "kind": "item",
    "title": "Composition series and Jordan–Hölder",
-   "text": "A Noetherian **and** Artinian\nobject in any abelian category has a finite composition series from `⊥`\nto `⊤` with simple quotient factors. Any two given series with equal heads\nand lasts have equal lengths and isomorphic factors after a bijection,\nwithout chain conditions or bottom/top assumptions for uniqueness.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#composition-series-and-jordanhölder).",
+   "title_from": "bold",
+   "text": "**Composition series and Jordan–Hölder.** A Noetherian **and** Artinian\nobject in any abelian category has a finite composition series from `⊥`\nto `⊤` with simple quotient factors. Any two given series with equal heads\nand lasts have equal lengths and isomorphic factors after a bijection,\nwithout chain conditions or bottom/top assumptions for uniqueness.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#composition-series-and-jordanhölder).",
    "link": {
     "text": "Statements and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#composition-series-and-jordanhölder",
@@ -180,7 +187,8 @@
   {
    "kind": "item",
    "title": "Categorical object length",
-   "text": "In any category, `objectLength X : ℕ∞`\nmeasures strict steps in the canonical subobject order and is invariant under\nisomorphisms and monotone under monomorphisms. In an abelian category it is\nadditive on every short exact sequence, including infinite lengths, and is\nfinite exactly for Noetherian **and** Artinian objects. Full composition\nseries compute it; over any ring it agrees with `Module.length`, with\nindependent scalar and carrier universes.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#categorical-object-length).",
+   "title_from": "bold",
+   "text": "**Categorical object length.** In any category, `objectLength X : ℕ∞`\nmeasures strict steps in the canonical subobject order and is invariant under\nisomorphisms and monotone under monomorphisms. In an abelian category it is\nadditive on every short exact sequence, including infinite lengths, and is\nfinite exactly for Noetherian **and** Artinian objects. Full composition\nseries compute it; over any ring it agrees with `Module.length`, with\nindependent scalar and carrier universes.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#categorical-object-length).",
    "link": {
     "text": "Statements and modules",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#categorical-object-length",
@@ -191,7 +199,8 @@
   {
    "kind": "item",
    "title": "Fitting decomposition and intertwiners",
-   "text": "For an endomorphism of a\nNoetherian **and** Artinian object in any abelian category, all sufficiently\nhigh powers have complementary kernels and images, with canonical copairing\nan isomorphism. The original endomorphism has a nilpotent restriction to the\nkernel and an invertible restriction to the image, with a common-tail\nblock-intertwining equation. Arbitrary intertwiners between two such objects\nare block diagonal in these canonical coordinates on one common tail.\nComplementarity agrees with linear-map power kernels and ranges over\narbitrary, possibly noncommutative rings. Separately, generic block-intertwiner\nand mixed-Hom vanishing laws need only zero morphisms and the displayed\nbiproducts, nilpotence and mono/epi conditions, not abelian structure.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fitting-decomposition).",
+   "title_from": "bold",
+   "text": "**Fitting decomposition and intertwiners.** For an endomorphism of a\nNoetherian **and** Artinian object in any abelian category, all sufficiently\nhigh powers have complementary kernels and images, with canonical copairing\nan isomorphism. The original endomorphism has a nilpotent restriction to the\nkernel and an invertible restriction to the image, with a common-tail\nblock-intertwining equation. Arbitrary intertwiners between two such objects\nare block diagonal in these canonical coordinates on one common tail.\nComplementarity agrees with linear-map power kernels and ranges over\narbitrary, possibly noncommutative rings. Separately, generic block-intertwiner\nand mixed-Hom vanishing laws need only zero morphisms and the displayed\nbiproducts, nilpotence and mono/epi conditions, not abelian structure.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fitting-decomposition).",
    "link": {
     "text": "Statements and modules",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fitting-decomposition",
@@ -202,7 +211,8 @@
   {
    "kind": "item",
    "title": "Canonical finite-length power bounds",
-   "text": "If `objectLength X ≠ ⊤`, put\n`L = (objectLength X).toNat`. Power kernels stabilize by `L` with zero\nmorphisms and kernels; nilpotent endomorphisms satisfy `g ^ L = 0`.\nPower images stabilize by `L` with images and image maps. On a Noetherian\n**and** Artinian object in an abelian category, kernels and images of\n`f ^ n` agree with those of the Drazin projector for every `n ≥ L`;\n`f ^ (L + 1) * drazinInverse f = f ^ L` and\n`(f * (1 - f * drazinInverse f)) ^ L = 0`. Zero length is included;\nthese are uniform mathematical bounds, not least exponents or runtime bounds.\nOver any ring, a module of finite composition length `L` has\n`ker (f ^ n) = ker (f ^ L)` for every endomorphism and every `n ≥ L`;\nfinite generation alone is not the hypothesis.\n[Equations and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-finite-length-power-bounds).",
+   "title_from": "bold",
+   "text": "**Canonical finite-length power bounds.** If `objectLength X ≠ ⊤`, put\n`L = (objectLength X).toNat`. Power kernels stabilize by `L` with zero\nmorphisms and kernels; nilpotent endomorphisms satisfy `g ^ L = 0`.\nPower images stabilize by `L` with images and image maps. On a Noetherian\n**and** Artinian object in an abelian category, kernels and images of\n`f ^ n` agree with those of the Drazin projector for every `n ≥ L`;\n`f ^ (L + 1) * drazinInverse f = f ^ L` and\n`(f * (1 - f * drazinInverse f)) ^ L = 0`. Zero length is included;\nthese are uniform mathematical bounds, not least exponents or runtime bounds.\nOver any ring, a module of finite composition length `L` has\n`ker (f ^ n) = ker (f ^ L)` for every endomorphism and every `n ≥ L`;\nfinite generation alone is not the hypothesis.\n[Equations and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-finite-length-power-bounds).",
    "link": {
     "text": "Equations and hypotheses",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-finite-length-power-bounds",
@@ -213,7 +223,8 @@
   {
    "kind": "item",
    "title": "Canonical Drazin inverses",
-   "text": "Every endomorphism of a Noetherian **and**\nArtinian object in an abelian category has a unique commuting Drazin inverse.\nIts characteristic equations, nilpotent and idempotent cases, and\npreservation by arbitrary multiplicative maps and functors are included.\nFor preservation both relevant objects must be Noetherian and Artinian;\nfunctors need not be additive or exact. Intertwiners also intertwine the\ninverses, and taking the inverse respects every natural power, including zero,\nand products of commuting endomorphisms. Double inversion gives the group part\n`f * drazinInverse f * f`, not generally `f`.\n[Equations and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-drazin-inverses).",
+   "title_from": "bold",
+   "text": "**Canonical Drazin inverses.** Every endomorphism of a Noetherian **and**\nArtinian object in an abelian category has a unique commuting Drazin inverse.\nIts characteristic equations, nilpotent and idempotent cases, and\npreservation by arbitrary multiplicative maps and functors are included.\nFor preservation both relevant objects must be Noetherian and Artinian;\nfunctors need not be additive or exact. Intertwiners also intertwine the\ninverses, and taking the inverse respects every natural power, including zero,\nand products of commuting endomorphisms. Double inversion gives the group part\n`f * drazinInverse f * f`, not generally `f`.\n[Equations and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-drazin-inverses).",
    "link": {
     "text": "Equations and hypotheses",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-drazin-inverses",
@@ -224,7 +235,8 @@
   {
    "kind": "item",
    "title": "Drazin sums, projectors and perturbations",
-   "text": "On a Noetherian **and**\nArtinian object in an abelian category, mutually annihilating endomorphisms\nin **both** product orders have additive Drazin inverses, also on finite\nsupports. A commuting nilpotent perturbation preserves the stable-image\nprojector and has an explicit finite geometric inverse formula; the Drazin\ninverse itself generally changes. The projector has the stable power kernel\nand image; `f * (1 - f * drazinInverse f)` is nilpotent, not necessarily\nthe complementary idempotent itself. These are conditional laws, not general\nadditivity or perturbation invariance of the inverse.\n[Formulas and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#drazin-sums-projectors-and-perturbations).",
+   "title_from": "bold",
+   "text": "**Drazin sums, projectors and perturbations.** On a Noetherian **and**\nArtinian object in an abelian category, mutually annihilating endomorphisms\nin **both** product orders have additive Drazin inverses, also on finite\nsupports. A commuting nilpotent perturbation preserves the stable-image\nprojector and has an explicit finite geometric inverse formula; the Drazin\ninverse itself generally changes. The projector has the stable power kernel\nand image; `f * (1 - f * drazinInverse f)` is nilpotent, not necessarily\nthe complementary idempotent itself. These are conditional laws, not general\nadditivity or perturbation invariance of the inverse.\n[Formulas and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#drazin-sums-projectors-and-perturbations).",
    "link": {
     "text": "Formulas and hypotheses",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#drazin-sums-projectors-and-perturbations",
@@ -235,7 +247,8 @@
   {
    "kind": "item",
    "title": "Cyclic and triangular Drazin formulas",
-   "text": "Between two Noetherian **and**\nArtinian objects of an abelian category, arbitrary `a : X ⟶ Y`, `b : Y ⟶ X`\nsatisfy Cline's cyclic-product formula, with a canonical isomorphism between\nthe images of their Drazin projectors. For such `X, Y`, a unit `f : End X`,\nnilpotent `g : End Y` with any witness `g ^ n = 0`, and arbitrary\n`h : X ⟶ Y` give a finite-sum formula for the inverse of\n`Biprod.ofComponents f h 0 g`; no intertwining condition on `h` is imposed.\nThe canonical image of its stable-image projector is isomorphic to `X`,\nwith the isomorphism's inverse given by a graph map.\nThe witness may be zero or nonminimal. Separately, cyclic powers need only\na category, and cyclic nilpotence only zero morphisms.\n[Cyclic formulas](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cyclic-products-and-projector-images),\n[triangular formula](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#triangular-biproduct-formula).",
+   "title_from": "bold",
+   "text": "**Cyclic and triangular Drazin formulas.** Between two Noetherian **and**\nArtinian objects of an abelian category, arbitrary `a : X ⟶ Y`, `b : Y ⟶ X`\nsatisfy Cline's cyclic-product formula, with a canonical isomorphism between\nthe images of their Drazin projectors. For such `X, Y`, a unit `f : End X`,\nnilpotent `g : End Y` with any witness `g ^ n = 0`, and arbitrary\n`h : X ⟶ Y` give a finite-sum formula for the inverse of\n`Biprod.ofComponents f h 0 g`; no intertwining condition on `h` is imposed.\nThe canonical image of its stable-image projector is isomorphic to `X`,\nwith the isomorphism's inverse given by a graph map.\nThe witness may be zero or nonminimal. Separately, cyclic powers need only\na category, and cyclic nilpotence only zero morphisms.\n[Cyclic formulas](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cyclic-products-and-projector-images),\n[triangular formula](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#triangular-biproduct-formula).",
    "link": {
     "text": "triangular formula",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#triangular-biproduct-formula",
@@ -246,7 +259,8 @@
   {
    "kind": "item",
    "title": "Sylvester equation and invariant graphs",
-   "text": "In any preadditive category,\ninvertible `f : X ⟶ X`, nilpotent `g : End Y` and arbitrary `h : X ⟶ Y`\ngive a unique `u : X ⟶ Y` with `f ≫ u = h + u ≫ g`. No biproducts,\nscalar action or chain conditions are needed; object and morphism universes\nare independent. Under the abelian, Noetherian **and** Artinian triangular\nhypotheses above, this identifies the canonical graph slope, including its\nfactor of `f`, and the unique section of the first projection that intertwines\n`f` with the triangular endomorphism.\n[Equation and canonical graph](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#sylvester-equation-and-canonical-invariant-graph).",
+   "title_from": "bold",
+   "text": "**Sylvester equation and invariant graphs.** In any preadditive category,\ninvertible `f : X ⟶ X`, nilpotent `g : End Y` and arbitrary `h : X ⟶ Y`\ngive a unique `u : X ⟶ Y` with `f ≫ u = h + u ≫ g`. No biproducts,\nscalar action or chain conditions are needed; object and morphism universes\nare independent. Under the abelian, Noetherian **and** Artinian triangular\nhypotheses above, this identifies the canonical graph slope, including its\nfactor of `f`, and the unique section of the first projection that intertwines\n`f` with the triangular endomorphism.\n[Equation and canonical graph](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#sylvester-equation-and-canonical-invariant-graph).",
    "link": {
     "text": "Equation and canonical graph",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#sylvester-equation-and-canonical-invariant-graph",
@@ -257,7 +271,8 @@
   {
    "kind": "item",
    "title": "Nilpotence in short complexes",
-   "text": "For a compatible endomorphism of a\nshort exact complex in any category with zero morphisms, the middle component\nis nilpotent exactly when both outer components are. Exactness alone gives\nthe explicit middle exponent `m + n` from outer exponents `m, n`; a monic\nfirst arrow and an epic second arrow reflect a middle exponent to the left\nand right components, respectively, without changing it. All natural\nexponents, including zero, are allowed; no abelian, additive, splitting or\nchain-condition premise is needed.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#nilpotence-in-short-complexes).",
+   "title_from": "bold",
+   "text": "**Nilpotence in short complexes.** For a compatible endomorphism of a\nshort exact complex in any category with zero morphisms, the middle component\nis nilpotent exactly when both outer components are. Exactness alone gives\nthe explicit middle exponent `m + n` from outer exponents `m, n`; a monic\nfirst arrow and an epic second arrow reflect a middle exponent to the left\nand right components, respectively, without changing it. All natural\nexponents, including zero, are allowed; no abelian, additive, splitting or\nchain-condition premise is needed.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#nilpotence-in-short-complexes).",
    "link": {
     "text": "Statements and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#nilpotence-in-short-complexes",
@@ -268,7 +283,8 @@
   {
    "kind": "item",
    "title": "Local endomorphism rings",
-   "text": "An indecomposable Noetherian **and** Artinian\nobject in any abelian category has a local canonical, possibly noncommutative\nendomorphism ring; every endomorphism is nilpotent or a unit.\nIndecomposability excludes zero, with no extra nontriviality premise.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#local-endomorphism-rings).",
+   "title_from": "bold",
+   "text": "**Local endomorphism rings.** An indecomposable Noetherian **and** Artinian\nobject in any abelian category has a local canonical, possibly noncommutative\nendomorphism ring; every endomorphism is nilpotent or a unit.\nIndecomposability excludes zero, with no extra nontriviality premise.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#local-endomorphism-rings).",
    "link": {
     "text": "Statements and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#local-endomorphism-rings",
@@ -279,7 +295,8 @@
   {
    "kind": "item",
    "title": "Indecomposability from locality",
-   "text": "In any preadditive category with binary\nbiproducts, a local canonical ring `End X` implies Mathlib's original\n`Indecomposable X`. No abelian structure, chain conditions, chosen zero\nobject or separate nonzero hypothesis is required; the ring may be\nnoncommutative.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#indecomposability-from-locality).",
+   "title_from": "bold",
+   "text": "**Indecomposability from locality.** In any preadditive category with binary\nbiproducts, a local canonical ring `End X` implies Mathlib's original\n`Indecomposable X`. No abelian structure, chain conditions, chosen zero\nobject or separate nonzero hypothesis is required; the ring may be\nnoncommutative.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#indecomposability-from-locality).",
    "link": {
     "text": "Statement and module",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#indecomposability-from-locality",
@@ -290,7 +307,8 @@
   {
    "kind": "item",
    "title": "Finite Euler identities",
-   "text": "In an abelian category, an invariant valued in\nany additive commutative group and additive on every native short exact\nsequence gives finite integer-interval Euler identities for chains and\ncochains with explicit endpoint-image corrections. Quasi-isomorphism\ninvariance requires both complexes to have term support in the same nonempty\ninterval; homology-sum SES additivity for chains requires this of all three\ncomplexes. Cochain LES additivity instead has connecting-image corrections\nremovable by neighboring homology vanishing. Exact-functor transport,\nfinite-support and native-shift formulas, and length for finitely generated\nmodules over a commutative Noetherian Artinian ring are included.\n[Formulas and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-euler-identities),\n[Euler guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdditiveEuler.md).",
+   "title_from": "bold",
+   "text": "**Finite Euler identities.** In an abelian category, an invariant valued in\nany additive commutative group and additive on every native short exact\nsequence gives finite integer-interval Euler identities for chains and\ncochains with explicit endpoint-image corrections. Quasi-isomorphism\ninvariance requires both complexes to have term support in the same nonempty\ninterval; homology-sum SES additivity for chains requires this of all three\ncomplexes. Cochain LES additivity instead has connecting-image corrections\nremovable by neighboring homology vanishing. Exact-functor transport,\nfinite-support and native-shift formulas, and length for finitely generated\nmodules over a commutative Noetherian Artinian ring are included.\n[Formulas and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-euler-identities),\n[Euler guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdditiveEuler.md).",
    "link": {
     "text": "Euler guide",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdditiveEuler.md",
@@ -301,7 +319,8 @@
   {
    "kind": "item",
    "title": "Unrestricted Hom complexes and K-objects",
-   "text": "For integer cochains in any\npreadditive category, the canonical Hom complex uses unrestricted products\nof **abelian groups**, not products in the coefficient category. Homotopies\nact in both variables; a contraction in either contracts the Hom complex,\nand degree-`n` cohomology vanishes exactly when every map `K ⟶ L⟦n⟧` is\nnull-homotopic. In an **abelian** category, K-projectivity and K-injectivity\nare characterized by acyclicity of Hom complexes against acyclic tests,\neven by vanishing in one fixed degree. They descend along one-sided homotopy\nretracts, are invariant under categorical equivalences, and are detected\ncomponentwise on supplied coproducts and products, respectively, including\nempty families. Hom-complex quasi-isomorphism criteria, diagonal homotopy\ncriteria with evaluation-preservation hypotheses, and canonical preimages\nof supplied homotopy equivalences under fully faithful additive functors\ncomplement these results; no boundedness or enough-projectives/injectives\nassumption is imposed.\n[Detailed statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#hom-complexes-and-k-objects),\n[Hom-complex guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HomComplexHomotopy.md).",
+   "title_from": "bold",
+   "text": "**Unrestricted Hom complexes and K-objects.** For integer cochains in any\npreadditive category, the canonical Hom complex uses unrestricted products\nof **abelian groups**, not products in the coefficient category. Homotopies\nact in both variables; a contraction in either contracts the Hom complex,\nand degree-`n` cohomology vanishes exactly when every map `K ⟶ L⟦n⟧` is\nnull-homotopic. In an **abelian** category, K-projectivity and K-injectivity\nare characterized by acyclicity of Hom complexes against acyclic tests,\neven by vanishing in one fixed degree. They descend along one-sided homotopy\nretracts, are invariant under categorical equivalences, and are detected\ncomponentwise on supplied coproducts and products, respectively, including\nempty families. Hom-complex quasi-isomorphism criteria, diagonal homotopy\ncriteria with evaluation-preservation hypotheses, and canonical preimages\nof supplied homotopy equivalences under fully faithful additive functors\ncomplement these results; no boundedness or enough-projectives/injectives\nassumption is imposed.\n[Detailed statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#hom-complexes-and-k-objects),\n[Hom-complex guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HomComplexHomotopy.md).",
    "link": {
     "text": "Hom-complex guide",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HomComplexHomotopy.md",
@@ -312,7 +331,8 @@
   {
    "kind": "item",
    "title": "Ordinary disks and bounded-below projective chains",
-   "text": "In a category with\nzero morphisms and a zero object, an integer cochain identity disk in degrees\n`n,n+1` is ordinarily projective or injective exactly when its coefficient is;\nno preadditivity is required. Separately, in any abelian category, a\nparticular map between integer chain complexes with projective terms and\npossibly different termwise lower bounds is a quasi-isomorphism exactly\nwhen it is the forward map of a homotopy equivalence. There is no upper-bound\nor enough-projectives assumption. Ordinary projectivity is distinct from\nK-projectivity.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#ordinary-disks-and-bounded-below-projective-chains).",
+   "title_from": "bold",
+   "text": "**Ordinary disks and bounded-below projective chains.** In a category with\nzero morphisms and a zero object, an integer cochain identity disk in degrees\n`n,n+1` is ordinarily projective or injective exactly when its coefficient is;\nno preadditivity is required. Separately, in any abelian category, a\nparticular map between integer chain complexes with projective terms and\npossibly different termwise lower bounds is a quasi-isomorphism exactly\nwhen it is the forward map of a homotopy equivalence. There is no upper-bound\nor enough-projectives assumption. Ordinary projectivity is distinct from\nK-projectivity.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#ordinary-disks-and-bounded-below-projective-chains).",
    "link": {
     "text": "Statements and modules",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#ordinary-disks-and-bounded-below-projective-chains",
@@ -323,7 +343,8 @@
   {
    "kind": "item",
    "title": "Chain conditions and homology",
-   "text": "A functor between arbitrary categories\npreserving monomorphisms and reflecting isomorphisms reflects Noetherian and,\nseparately, Artinian objects, with four independent universes; fullness and\nfaithfulness are not required. In an abelian category, a short complex with\nNoetherian middle object has Noetherian homology. Epimorphic Noetherian and\nmonomorphic Artinian endomorphisms are isomorphisms. Both module criteria use\nthe original scalar action over any ring, with independent scalar and carrier\nuniverses. No smallness, well-poweredness, Noetherian-ring or whole-category\nchain condition is assumed. In an abelian category, binary biproducts\npreserve each chain condition separately from that condition on both factors.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#noetherian-objects).",
+   "title_from": "bold",
+   "text": "**Chain conditions and homology.** A functor between arbitrary categories\npreserving monomorphisms and reflecting isomorphisms reflects Noetherian and,\nseparately, Artinian objects, with four independent universes; fullness and\nfaithfulness are not required. In an abelian category, a short complex with\nNoetherian middle object has Noetherian homology. Epimorphic Noetherian and\nmonomorphic Artinian endomorphisms are isomorphisms. Both module criteria use\nthe original scalar action over any ring, with independent scalar and carrier\nuniverses. No smallness, well-poweredness, Noetherian-ring or whole-category\nchain condition is assumed. In an abelian category, binary biproducts\npreserve each chain condition separately from that condition on both factors.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#noetherian-objects).",
    "link": {
     "text": "Statements and modules",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#noetherian-objects",
@@ -334,7 +355,8 @@
   {
    "kind": "item",
    "title": "Quotients, admissible layers and snake sequences",
-   "text": "In any abelian\ncategory, for subobjects `L ≤ U` of `B` and any `D`, the chosen-cokernel map\n`U/(L ⊓ D) ⟶ (U/L) × (B/D)` is monic, without `L ≤ D`. Layers admissible\nfor a quotient property `P` have reversed lower and forward upper order;\nsubobject and binary-product closure and `P(B/D)` make the lower cut\n`(L,U) ↦ (L ⊓ D,U)` **left** adjoint to inclusion of layers with lower\nendpoint at most `D`. Separately, snake inputs with exact rows, epic upper\nsecond arrow and monic lower first arrow give an eight-object sequence exact\nat all six interior objects.\nNeither exterior object is required to vanish; the four middle exactness\npositions use Mathlib's snake lemma.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#quotients-admissible-layers-and-snake-sequences),\n[quotient guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/QuotientIntersection.md), [layer guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdmissibleLayers.md).",
+   "title_from": "bold",
+   "text": "**Quotients, admissible layers and snake sequences.** In any abelian\ncategory, for subobjects `L ≤ U` of `B` and any `D`, the chosen-cokernel map\n`U/(L ⊓ D) ⟶ (U/L) × (B/D)` is monic, without `L ≤ D`. Layers admissible\nfor a quotient property `P` have reversed lower and forward upper order;\nsubobject and binary-product closure and `P(B/D)` make the lower cut\n`(L,U) ↦ (L ⊓ D,U)` **left** adjoint to inclusion of layers with lower\nendpoint at most `D`. Separately, snake inputs with exact rows, epic upper\nsecond arrow and monic lower first arrow give an eight-object sequence exact\nat all six interior objects.\nNeither exterior object is required to vanish; the four middle exactness\npositions use Mathlib's snake lemma.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#quotients-admissible-layers-and-snake-sequences),\n[quotient guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/QuotientIntersection.md), [layer guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdmissibleLayers.md).",
    "link": {
     "text": "layer guide",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdmissibleLayers.md",
@@ -345,7 +367,8 @@
   {
    "kind": "item",
    "title": "Fixed-arrow relative paths",
-   "text": "For integer cochains in a preadditive\ncategory with binary biproducts and **pullbacks**, the pullback of a fixed\n`f : B₁ ⟶ B` along the first native path endpoint has a strict section,\nlifts from chosen homotopies with strict endpoint equations, and a homotopy\nequivalence to `B₁` whose inverse homotopy vanishes over the first projection.\nThe object depends only on `f`; no arbitrary-arrow naturality or new\nquasi-isomorphism instance is asserted.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fixed-arrow-relative-paths),\n[relative-path guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/CochainRelativePath.md).",
+   "title_from": "bold",
+   "text": "**Fixed-arrow relative paths.** For integer cochains in a preadditive\ncategory with binary biproducts and **pullbacks**, the pullback of a fixed\n`f : B₁ ⟶ B` along the first native path endpoint has a strict section,\nlifts from chosen homotopies with strict endpoint equations, and a homotopy\nequivalence to `B₁` whose inverse homotopy vanishes over the first projection.\nThe object depends only on `f`; no arbitrary-arrow naturality or new\nquasi-isomorphism instance is asserted.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fixed-arrow-relative-paths),\n[relative-path guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/CochainRelativePath.md).",
    "link": {
     "text": "relative-path guide",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/CochainRelativePath.md",
@@ -356,7 +379,8 @@
   {
    "kind": "item",
    "title": "Quadrant product totals",
-   "text": "For any ring `R`, native quadrant bicomplexes\nin `ModuleCat.{u} R`, with `R : Type u`, have signed unrestricted product\ntotals in integer degrees `p-r`. Acyclic horizontal rows at **every** row\nand horizontal degree, including the boundary `p=0`, imply total acyclicity\nin **all integer degrees**. Chosen elementwise lifts are not linear or\nnatural splittings; this is not an arbitrary-unbounded total theorem.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#quadrant-product-totals),\n[product-total guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/ProductTotalAcyclicity.md).",
+   "title_from": "bold",
+   "text": "**Quadrant product totals.** For any ring `R`, native quadrant bicomplexes\nin `ModuleCat.{u} R`, with `R : Type u`, have signed unrestricted product\ntotals in integer degrees `p-r`. Acyclic horizontal rows at **every** row\nand horizontal degree, including the boundary `p=0`, imply total acyclicity\nin **all integer degrees**. Chosen elementwise lifts are not linear or\nnatural splittings; this is not an arbitrary-unbounded total theorem.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#quadrant-product-totals),\n[product-total guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/ProductTotalAcyclicity.md).",
    "link": {
     "text": "product-total guide",
     "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/ProductTotalAcyclicity.md",

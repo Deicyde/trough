@@ -50,3 +50,15 @@ def test_rel_and_frontmatter():
 
 def test_link_text_escapes_brackets_outside_code_spans_only():
     assert link_text("A [b] and `[Γ(N)]` over `k[X]`") == "A \\[b\\] and `[Γ(N)]` over `k[X]`"
+
+
+def test_entries_after_pagination_parts_are_lines_of_their_own():
+    library = Container("Library", "library", [Entry(leaf(f"Item {n:02d}")) for n in range(21)])
+    chunk(library)
+    library.entries += [Entry(Container("Main results", "main-results"), before="## Main results\n\nOn a page."),
+                        Entry(leaf("After"))]
+    assign_paths(library, Path("vault/roadmap/library"))
+    page = render_container(library, Path("vault"), None)
+    assert page.startswith("# Library\n\n## [Item 00 to Item 19](part-01/README.md)\n\n- [Item 00](part-01/item-00.md)\n")
+    assert ("- [Item 20](part-02/item-20.md)\n\n## Main results\n\nOn a page.\n\n- [Main results](main-results/README.md)\n"
+            "- [After](after.md)\n") in page

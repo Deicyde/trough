@@ -65,7 +65,8 @@
   {
    "kind": "item",
    "title": "Sigma-locally-finite basis criterion",
-   "text": "([`TopologicalSpace.metrizableSpace_of_sigmaLocallyFinite_isTopologicalBasis`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).\nA T₃ space is metrizable if it has an open basis in countably many locally finite\nindexed levels. Each level may have an arbitrary index type; local finiteness\ncounts the original indices, including repetitions.",
+   "title_from": "bold",
+   "text": "**Sigma-locally-finite basis criterion**\n([`TopologicalSpace.metrizableSpace_of_sigmaLocallyFinite_isTopologicalBasis`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).\nA T₃ space is metrizable if it has an open basis in countably many locally finite\nindexed levels. Each level may have an arbitrary index type; local finiteness\ncounts the original indices, including repetitions.",
    "link": {
     "text": "TopologicalSpace.metrizableSpace_of_sigmaLocallyFinite_isTopologicalBasis",
     "url": "https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean",
@@ -84,7 +85,8 @@
   {
    "kind": "item",
    "title": "Metric converse",
-   "text": "([`TopologicalSpace.exists_sigmaLocallyFinite_isTopologicalBasis`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).\nEvery metrizable space has an open basis in countably many locally finite\nlevels, each indexed by the points of the space.",
+   "title_from": "bold",
+   "text": "**Metric converse**\n([`TopologicalSpace.exists_sigmaLocallyFinite_isTopologicalBasis`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).\nEvery metrizable space has an open basis in countably many locally finite\nlevels, each indexed by the points of the space.",
    "link": {
     "text": "TopologicalSpace.exists_sigmaLocallyFinite_isTopologicalBasis",
     "url": "https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean",
@@ -103,7 +105,8 @@
   {
    "kind": "item",
    "title": "Closed metrizable neighbourhood-cover criterion",
-   "text": "([`TopologicalSpace.metrizableSpace_of_locallyFinite_isClosed_interior_cover`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).\nA space is metrizable if it has a locally finite family of closed subsets whose\ninteriors cover the space and each of which is metrizable in its original\nsubtype topology. No ambient separation assumption is required.",
+   "title_from": "bold",
+   "text": "**Closed metrizable neighbourhood-cover criterion**\n([`TopologicalSpace.metrizableSpace_of_locallyFinite_isClosed_interior_cover`](https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean)).\nA space is metrizable if it has a locally finite family of closed subsets whose\ninteriors cover the space and each of which is metrizable in its original\nsubtype topology. No ambient separation assumption is required.",
    "link": {
     "text": "TopologicalSpace.metrizableSpace_of_locallyFinite_isClosed_interior_cover",
     "url": "https://github.com/FormalFrontier/metrization/blob/9c7cf0d82ab3c69a759c43e2ab6a246d537b7235/Metrization/LocallyFinite.lean",

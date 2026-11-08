@@ -50,7 +50,8 @@
   {
    "kind": "item",
    "title": "Module direct limits as colimits of types",
-   "text": "For a semimodule system over\na semiring, indexed by a nonempty directed preorder with decidable equality,\nthe canonical maps into `Module.DirectLimit` form a colimiting cocone of types.\nTransition maps need not be injective, and the scalar, index and stage\nuniverses are independent. See\n[Module](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Algebra/Colimit/Module.lean).",
+   "title_from": "bold",
+   "text": "**Module direct limits as colimits of types.** For a semimodule system over\na semiring, indexed by a nonempty directed preorder with decidable equality,\nthe canonical maps into `Module.DirectLimit` form a colimiting cocone of types.\nTransition maps need not be injective, and the scalar, index and stage\nuniverses are independent. See\n[Module](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Algebra/Colimit/Module.lean).",
    "link": {
     "text": "Module",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Algebra/Colimit/Module.lean",
@@ -61,7 +62,8 @@
   {
    "kind": "item",
    "title": "Directed Grothendieck additive groups",
-   "text": "A coherent, jointly surjective\nfamily of additive maps over a binary-directed index relation induces a\njointly surjective family on the original Grothendieck additive groups;\ntransition identity and composition laws are not needed for this conclusion.\nOver a directed preorder, if the transitions form a directed system and raw\ncocone equality is witnessed at a common stage, equality of arbitrary\ncompleted images is equivalent to equality at a common completed stage.\nNo cancellation or injectivity of transitions, cocone maps, or canonical\ncompletion maps is assumed. See\n[DirectedGroupCompletion](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/DirectedGroupCompletion.lean).",
+   "title_from": "bold",
+   "text": "**Directed Grothendieck additive groups.** A coherent, jointly surjective\nfamily of additive maps over a binary-directed index relation induces a\njointly surjective family on the original Grothendieck additive groups;\ntransition identity and composition laws are not needed for this conclusion.\nOver a directed preorder, if the transitions form a directed system and raw\ncocone equality is witnessed at a common stage, equality of arbitrary\ncompleted images is equivalent to equality at a common completed stage.\nNo cancellation or injectivity of transitions, cocone maps, or canonical\ncompletion maps is assumed. See\n[DirectedGroupCompletion](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/DirectedGroupCompletion.lean).",
    "link": {
     "text": "DirectedGroupCompletion",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/DirectedGroupCompletion.lean",
@@ -72,7 +74,8 @@
   {
    "kind": "item",
    "title": "Finite matrix units",
-   "text": "Over a nonempty directed preorder of semirings\nwith bundled ring-hom transitions, `DirectLimit.matrixUnitsColimitEquiv`\nidentifies the limit of square-matrix unit groups with the matrix units\nover the coefficient limit. The dimension has `Fintype` and `DecidableEq`\nand may be empty; transitions need not be injective. See the\n[matrix-units guide](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/docs/MatrixUnits.md) and\n[source module](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Matrix/Units.lean).",
+   "title_from": "bold",
+   "text": "**Finite matrix units.** Over a nonempty directed preorder of semirings\nwith bundled ring-hom transitions, `DirectLimit.matrixUnitsColimitEquiv`\nidentifies the limit of square-matrix unit groups with the matrix units\nover the coefficient limit. The dimension has `Fintype` and `DecidableEq`\nand may be empty; transitions need not be injective. See the\n[matrix-units guide](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/docs/MatrixUnits.md) and\n[source module](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Matrix/Units.lean).",
    "link": {
     "text": "source module",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Matrix/Units.lean",
@@ -83,7 +86,8 @@
   {
    "kind": "item",
    "title": "Finite dependent products and representatives",
-   "text": "For directed systems of\ntypes over a nonempty directed preorder, `DirectLimit.piEquiv` identifies the\nlimit of a finite dependent product with the product of the coordinate limits.\nIts forward map is the canonical coordinate comparison `DirectLimit.piMap`.\nTransition maps may be arbitrary function-like maps and coordinate carriers\nmay be empty; neither injectivity nor algebraic structure is needed. Every\nfinite dependent family of limit elements has representatives at one common\nstage. See [Pi](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Order/DirectLimit/Pi.lean).\n`DirectLimit.forall_mk_eq_iff_exists` characterizes equality of two finite\nfamilies of quotient classes by equality of their transported functions at\none common stage. Its `_of_fixed` variant bounds both supplied input stages,\nincluding for an empty family, without a separate nonempty-index assumption.\nSee [DirectedSystem](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Order/DirectedSystem.lean) and the\n[first-order and paired-matrix examples](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/FiniteRepresentatives.lean).",
+   "title_from": "bold",
+   "text": "**Finite dependent products and representatives.** For directed systems of\ntypes over a nonempty directed preorder, `DirectLimit.piEquiv` identifies the\nlimit of a finite dependent product with the product of the coordinate limits.\nIts forward map is the canonical coordinate comparison `DirectLimit.piMap`.\nTransition maps may be arbitrary function-like maps and coordinate carriers\nmay be empty; neither injectivity nor algebraic structure is needed. Every\nfinite dependent family of limit elements has representatives at one common\nstage. See [Pi](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Order/DirectLimit/Pi.lean).\n`DirectLimit.forall_mk_eq_iff_exists` characterizes equality of two finite\nfamilies of quotient classes by equality of their transported functions at\none common stage. Its `_of_fixed` variant bounds both supplied input stages,\nincluding for an empty family, without a separate nonempty-index assumption.\nSee [DirectedSystem](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Order/DirectedSystem.lean) and the\n[first-order and paired-matrix examples](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/FiniteRepresentatives.lean).",
    "link": {
     "text": "first-order and paired-matrix examples",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/FiniteRepresentatives.lean",
@@ -94,7 +98,8 @@
   {
    "kind": "item",
    "title": "Finite-support coefficient descent",
-   "text": "Over a nonempty directed preorder,\nfinitely supported functions commute with direct limits of types with zero\nwhose selected transition maps preserve zero. The coefficient index may be\narbitrary, and each function has a representative at one stage with exactly\nthe same support. Neither injective transitions nor additive structure are\nrequired. See [Finsupp](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Data/Finsupp.lean).",
+   "title_from": "bold",
+   "text": "**Finite-support coefficient descent.** Over a nonempty directed preorder,\nfinitely supported functions commute with direct limits of types with zero\nwhose selected transition maps preserve zero. The coefficient index may be\narbitrary, and each function has a representative at one stage with exactly\nthe same support. Neither injective transitions nor additive structure are\nrequired. See [Finsupp](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Data/Finsupp.lean).",
    "link": {
     "text": "Finsupp",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Data/Finsupp.lean",
@@ -105,7 +110,8 @@
   {
    "kind": "item",
    "title": "Semilinear quotient descent",
-   "text": "A continuous semilinear map from a module\nover a ring to a module over a semiring descends through any submodule in\nits kernel, retaining the original module structures and quotient topology.\nThe codomain need only be an additive commutative monoid; continuity of\nmodule operations is not assumed. See\n[Quotient](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/Module/Quotient.lean).",
+   "title_from": "bold",
+   "text": "**Semilinear quotient descent.** A continuous semilinear map from a module\nover a ring to a module over a semiring descends through any submodule in\nits kernel, retaining the original module structures and quotient topology.\nThe codomain need only be an additive commutative monoid; continuity of\nmodule operations is not assumed. See\n[Quotient](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/Module/Quotient.lean).",
    "link": {
     "text": "Quotient",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/Module/Quotient.lean",
@@ -116,7 +122,8 @@
   {
    "kind": "item",
    "title": "Varying scalars and tensor products",
-   "text": "For compatible semilinear module\nsystems over a nonempty directed preorder, the tensor product of the two\nmodule limits over the varying commutative-semiring limit is equivalent to\nthe limit of the stagewise tensor products. Transition maps need not be\ninjective. See [VaryingScalar](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/VaryingScalar.lean).",
+   "title_from": "bold",
+   "text": "**Varying scalars and tensor products.** For compatible semilinear module\nsystems over a nonempty directed preorder, the tensor product of the two\nmodule limits over the varying commutative-semiring limit is equivalent to\nthe limit of the stagewise tensor products. Transition maps need not be\ninjective. See [VaryingScalar](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/VaryingScalar.lean).",
    "link": {
     "text": "VaryingScalar",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/VaryingScalar.lean",
@@ -127,7 +134,8 @@
   {
    "kind": "item",
    "title": "Mittag--Leffler inverse systems",
-   "text": "A pointwise nonempty, Type-valued\nMittag--Leffler inverse system over a nonempty directed preorder with a\ncountable cofinal subset has a compatible section. Under the same index and\nMittag--Leffler conditions, each element of an eventual range lifts to a\nsection without a separate pointwise-nonemptiness assumption. See\n[MittagLeffler](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/MittagLeffler.lean).",
+   "title_from": "bold",
+   "text": "**Mittag--Leffler inverse systems.** A pointwise nonempty, Type-valued\nMittag--Leffler inverse system over a nonempty directed preorder with a\ncountable cofinal subset has a compatible section. Under the same index and\nMittag--Leffler conditions, each element of an eventual range lifts to a\nsection without a separate pointwise-nonemptiness assumption. See\n[MittagLeffler](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/MittagLeffler.lean).",
    "link": {
     "text": "MittagLeffler",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/MittagLeffler.lean",
@@ -138,7 +146,8 @@
   {
    "kind": "item",
    "title": "Prime spectra of filtered colimits",
-   "text": "For a small filtered category and\nany colimit cocone of commutative rings, its spectrum cone is a limit in\ntopological spaces. The chosen-limit homeomorphism identifies coordinates\nwith contraction along the cocone maps; no injectivity or nonzero-ring\nassumption is required. See\n[PrimeSpectrumFilteredColimits](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/PrimeSpectrumFilteredColimits.lean).",
+   "title_from": "bold",
+   "text": "**Prime spectra of filtered colimits.** For a small filtered category and\nany colimit cocone of commutative rings, its spectrum cone is a limit in\ntopological spaces. The chosen-limit homeomorphism identifies coordinates\nwith contraction along the cocone maps; no injectivity or nonzero-ring\nassumption is required. See\n[PrimeSpectrumFilteredColimits](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/PrimeSpectrumFilteredColimits.lean).",
    "link": {
     "text": "PrimeSpectrumFilteredColimits",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/PrimeSpectrumFilteredColimits.lean",
@@ -149,7 +158,8 @@
   {
    "kind": "item",
    "title": "Krull dimension under finite-subset capture",
-   "text": "For homomorphisms\n`φ i : A i →+* B` of commutative semirings, if every finite subset of `B`\nlies in the range of one `φ i`, then\n`ringKrullDim B ≤ ⨆ i, ringKrullDim (A i)`. The family need not be directed\nand the maps need not be injective; dimensions include `⊥` and `⊤`. See\n[FiniteCapture](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/RingTheory/KrullDimension/FiniteCapture.lean).",
+   "title_from": "bold",
+   "text": "**Krull dimension under finite-subset capture.** For homomorphisms\n`φ i : A i →+* B` of commutative semirings, if every finite subset of `B`\nlies in the range of one `φ i`, then\n`ringKrullDim B ≤ ⨆ i, ringKrullDim (A i)`. The family need not be directed\nand the maps need not be injective; dimensions include `⊥` and `⊤`. See\n[FiniteCapture](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/RingTheory/KrullDimension/FiniteCapture.lean).",
    "link": {
     "text": "FiniteCapture",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/RingTheory/KrullDimension/FiniteCapture.lean",
@@ -160,7 +170,8 @@
   {
    "kind": "item",
    "title": "Module topology on finite-dimensional strong duals",
-   "text": "Over any normed\nfield, the continuous dual of a finite-dimensional topological vector space\nwith module topology also has module topology, retaining its topology of\nuniform convergence on bounded sets. Neither completeness nor a nontrivial\nnorm on the field is required. This is an explicit theorem, not a global\ninstance. See [StrongDual](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/StrongDual.lean).",
+   "title_from": "bold",
+   "text": "**Module topology on finite-dimensional strong duals.** Over any normed\nfield, the continuous dual of a finite-dimensional topological vector space\nwith module topology also has module topology, retaining its topology of\nuniform convergence on bounded sets. Neither completeness nor a nontrivial\nnorm on the field is required. This is an explicit theorem, not a global\ninstance. See [StrongDual](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/StrongDual.lean).",
    "link": {
     "text": "StrongDual",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/StrongDual.lean",
@@ -171,7 +182,8 @@
   {
    "kind": "item",
    "title": "Flat-coefficient tensor monomorphisms",
-   "text": "Over a commutative ring with a\nsupplied topology, tensoring the topological module factor with a flat\nalgebraic coefficient module preserves injectivity of continuous linear\nmaps and categorical monomorphisms. No coefficient topology is required.\nSee [TensorFunctor](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorFunctor.lean).",
+   "title_from": "bold",
+   "text": "**Flat-coefficient tensor monomorphisms.** Over a commutative ring with a\nsupplied topology, tensoring the topological module factor with a flat\nalgebraic coefficient module preserves injectivity of continuous linear\nmaps and categorical monomorphisms. No coefficient topology is required.\nSee [TensorFunctor](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorFunctor.lean).",
    "link": {
     "text": "TensorFunctor",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorFunctor.lean",
@@ -182,7 +194,8 @@
   {
    "kind": "item",
    "title": "Coefficient tensor–continuous Hom adjunction",
-   "text": "For a commutative ring\nwith a supplied topology and a topological module with jointly continuous\nscalar action, coefficient tensor is left adjoint to the algebraic\ncontinuous-Hom functor, in a common carrier universe independent of the\nscalar universe. It preserves existing colimits of arbitrary diagram size;\nneither coefficients nor the Hom module are given a topology. See\n[CoefficientTensor](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/CoefficientTensor.lean).",
+   "title_from": "bold",
+   "text": "**Coefficient tensor–continuous Hom adjunction.** For a commutative ring\nwith a supplied topology and a topological module with jointly continuous\nscalar action, coefficient tensor is left adjoint to the algebraic\ncontinuous-Hom functor, in a common carrier universe independent of the\nscalar universe. It preserves existing colimits of arbitrary diagram size;\nneither coefficients nor the Hom module are given a topology. See\n[CoefficientTensor](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/CoefficientTensor.lean).",
    "link": {
     "text": "CoefficientTensor",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/CoefficientTensor.lean",
@@ -193,7 +206,8 @@
   {
    "kind": "item",
    "title": "Continuous tensor quotients",
-   "text": "For a commutative ring `R` with a supplied\ntopology, an algebraic coefficient module `C`, a topological module `M` with\njointly continuous scalar action and any submodule `P`, there is a continuous\nlinear equivalence `C ⊗[R] (M ⧸ P) ≃L[R] (C ⊗[R] M) ⧸ K`, where\n`K = LinearMap.range (TensorProduct.map LinearMap.id P.subtype)`.\nThis is the range, not its closure; no flatness or closedness assumption is\nrequired. See [Quotient](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorProduct/Quotient.lean).",
+   "title_from": "bold",
+   "text": "**Continuous tensor quotients.** For a commutative ring `R` with a supplied\ntopology, an algebraic coefficient module `C`, a topological module `M` with\njointly continuous scalar action and any submodule `P`, there is a continuous\nlinear equivalence `C ⊗[R] (M ⧸ P) ≃L[R] (C ⊗[R] M) ⧸ K`, where\n`K = LinearMap.range (TensorProduct.map LinearMap.id P.subtype)`.\nThis is the range, not its closure; no flatness or closedness assumption is\nrequired. See [Quotient](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorProduct/Quotient.lean).",
    "link": {
     "text": "Quotient",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorProduct/Quotient.lean",
@@ -204,7 +218,8 @@
   {
    "kind": "item",
    "title": "Projective coefficients preserve tensor Hausdorffness",
-   "text": "Over a\ncommutative ring with a supplied topology, the one-sided tensor of a\nprojective algebraic coefficient module with a Hausdorff topological module\nwith jointly continuous scalar action is Hausdorff. No coefficient topology\nor finiteness assumption is required. See\n[TensorSeparation](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorSeparation.lean).",
+   "title_from": "bold",
+   "text": "**Projective coefficients preserve tensor Hausdorffness.** Over a\ncommutative ring with a supplied topology, the one-sided tensor of a\nprojective algebraic coefficient module with a Hausdorff topological module\nwith jointly continuous scalar action is Hausdorff. No coefficient topology\nor finiteness assumption is required. See\n[TensorSeparation](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorSeparation.lean).",
    "link": {
     "text": "TensorSeparation",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimits/Topology/TensorSeparation.lean",
@@ -215,7 +230,8 @@
   {
    "kind": "item",
    "title": "Flat coefficients need not preserve tensor Hausdorffness",
-   "text": "The one-sided\ntensor `ℚ ⊗[ℤ] AddCircle (1 : ℝ)` is not Hausdorff, although the rational\ncoefficient module is flat and the usual real circle is compact Hausdorff\nwith jointly continuous integer action. See the\n[rational-circle counterexample](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/TensorCircleClient.lean).",
+   "title_from": "bold",
+   "text": "**Flat coefficients need not preserve tensor Hausdorffness.** The one-sided\ntensor `ℚ ⊗[ℤ] AddCircle (1 : ℝ)` is not Hausdorff, although the rational\ncoefficient module is flat and the usual real circle is compact Hausdorff\nwith jointly continuous integer action. See the\n[rational-circle counterexample](https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/TensorCircleClient.lean).",
    "link": {
     "text": "rational-circle counterexample",
     "url": "https://github.com/FormalFrontier/algebraic-direct-limits/blob/e5d0dea1697c85da3aefbe23ec33c4da2d138a6c/AlgebraicDirectLimitsExamples/TensorCircleClient.lean",

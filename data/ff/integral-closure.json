@@ -149,7 +149,8 @@
   {
    "kind": "item",
    "title": "Local normal integral extensions of valuation domains are valuation domains",
-   "text": "For commutative domains `R` and `S` in independent universes, an integral\nhomomorphism `f : R →+* S` from a valuation domain to a local integrally\nclosed domain gives `ValuationRing S` through\n`RingHom.IsIntegral.isValuationRing_of_isLocalRing`.\nThe map may be noninjective. Neither module finiteness, Henselianity,\nNoetherianity nor separability is assumed. Import\n[`IntegralClosure.ValuationRing`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/ValuationRing.lean) or the\nroot `IntegralClosure`.\nIts supporting theorem\n`LocalSubring.mem_or_inv_mem_of_isUnit_coeff` applies to a local subring\nintegrally closed in any ambient field: a root of a polynomial with a unit coefficient\nlies in that subring or has its inverse there. It uses the original subring\ninclusion and requires the coefficient to be a unit in the subring itself.",
+   "title_from": "bold",
+   "text": "**Local normal integral extensions of valuation domains are valuation domains.**\nFor commutative domains `R` and `S` in independent universes, an integral\nhomomorphism `f : R →+* S` from a valuation domain to a local integrally\nclosed domain gives `ValuationRing S` through\n`RingHom.IsIntegral.isValuationRing_of_isLocalRing`.\nThe map may be noninjective. Neither module finiteness, Henselianity,\nNoetherianity nor separability is assumed. Import\n[`IntegralClosure.ValuationRing`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/ValuationRing.lean) or the\nroot `IntegralClosure`.\nIts supporting theorem\n`LocalSubring.mem_or_inv_mem_of_isUnit_coeff` applies to a local subring\nintegrally closed in any ambient field: a root of a polynomial with a unit coefficient\nlies in that subring or has its inverse there. It uses the original subring\ninclusion and requires the coefficient to be a unit in the subring itself.",
    "link": {
     "text": "IntegralClosure.ValuationRing",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/ValuationRing.lean",
@@ -164,7 +165,8 @@
   {
    "kind": "item",
    "title": "Integral domains over henselian local rings are local",
-   "text": "Let `R` and `S`\nbe commutative rings in independent universes, with a given `R`-algebra\nstructure on `S`. If `R` is henselian local, `S` is a nonzero domain and\n`S` is integral over `R`, then\n`HenselianLocalRing.isLocalRing_of_isIntegral R S` gives `IsLocalRing S`.\nThe base `R` need not be a domain or reduced; injectivity of the algebra\nmap, module finiteness, Noetherianity and completeness are not assumed.\nImport [`IntegralClosure.Henselian`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Henselian.lean).\nThe unital-homomorphism form\n`RingHom.isLocalRing_of_henselian_of_isIntegral alpha h` instead takes\n`alpha : R →+* S` with `h : alpha.IsIntegral`, without a chosen algebra\nstructure.",
+   "title_from": "bold",
+   "text": "**Integral domains over henselian local rings are local.** Let `R` and `S`\nbe commutative rings in independent universes, with a given `R`-algebra\nstructure on `S`. If `R` is henselian local, `S` is a nonzero domain and\n`S` is integral over `R`, then\n`HenselianLocalRing.isLocalRing_of_isIntegral R S` gives `IsLocalRing S`.\nThe base `R` need not be a domain or reduced; injectivity of the algebra\nmap, module finiteness, Noetherianity and completeness are not assumed.\nImport [`IntegralClosure.Henselian`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Henselian.lean).\nThe unital-homomorphism form\n`RingHom.isLocalRing_of_henselian_of_isIntegral alpha h` instead takes\n`alpha : R →+* S` with `h : alpha.IsIntegral`, without a chosen algebra\nstructure.",
    "link": {
     "text": "IntegralClosure.Henselian",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Henselian.lean",
@@ -179,14 +181,14 @@
   {
    "kind": "item",
    "title": "For a homomorphism `f : A →+* B` of commutative rings, if each target element has a positive power in the image, contraction is an order …",
+   "title_from": "sentence",
    "text": "For a homomorphism `f : A →+* B` of commutative rings, if each target element\nhas a positive power in the image, contraction is an order isomorphism from\nradical ideals of `B` to radical ideals of `A` containing `RingHom.ker f`.\nIts inverse is extension followed by radical. For any integral homomorphism\nof commutative rings and any source ideal `I`,\n`Ideal.comap f (Ideal.map f I).radical = (I ⊔ RingHom.ker f).radical`.\nSee the [ideal extension and contraction API](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Ideal.lean).",
    "link": {
     "text": "ideal extension and contraction API",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Ideal.lean",
     "code": false
    },
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "prose",
@@ -195,7 +197,8 @@
   {
    "kind": "item",
    "title": "Integrality reflects along nil kernels",
-   "text": "Let `K` be a commutative ring,\nlet `A` and `B` be possibly noncommutative rings with their given `K`-algebra\nstructures, and let `f : A →ₐ[K] B`. If every element killed by `f` is\nnilpotent, then integrality over `K` of `f a` implies integrality of `a`.\nThe rings may lie in three independent universes; neither injectivity nor\nsurjectivity of `f`, nor a uniform nilpotence exponent for its kernel,\nis required. The elementwise theorem\n`IsIntegral.of_isNilpotent_of_map_eq_zero` and its whole-algebra counterpart\n`Algebra.IsIntegral.of_isNilpotent_of_map_eq_zero` are in\n[`IntegralClosure.RingHom`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean). The latter reflects\nintegrality of `B/K` to `A/K`; it does not require module finiteness.",
+   "title_from": "bold",
+   "text": "**Integrality reflects along nil kernels.** Let `K` be a commutative ring,\nlet `A` and `B` be possibly noncommutative rings with their given `K`-algebra\nstructures, and let `f : A →ₐ[K] B`. If every element killed by `f` is\nnilpotent, then integrality over `K` of `f a` implies integrality of `a`.\nThe rings may lie in three independent universes; neither injectivity nor\nsurjectivity of `f`, nor a uniform nilpotence exponent for its kernel,\nis required. The elementwise theorem\n`IsIntegral.of_isNilpotent_of_map_eq_zero` and its whole-algebra counterpart\n`Algebra.IsIntegral.of_isNilpotent_of_map_eq_zero` are in\n[`IntegralClosure.RingHom`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean). The latter reflects\nintegrality of `B/K` to `A/K`; it does not require module finiteness.",
    "link": {
     "text": "IntegralClosure.RingHom",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean",
@@ -210,7 +213,8 @@
   {
    "kind": "item",
    "title": "Finiteness from powers of algebra generators",
-   "text": "Let `R` and `A` be\ncommutative semirings with the given `R`-algebra structure. If a finite set\ngenerates `A` as an `R`-algebra and `C : Subalgebra R A` contains a positive\npower of each chosen generator, then the original `A` is finite as a module\nover `C` through the canonical inclusion action. Exponents may vary with the\ngenerator; no field, Noetherianity, finite type of `C/R`, or ring structure\nis assumed. The theorem\n[`Subalgebra.finite_of_adjoin_eq_top_of_forall_exists_pow_mem`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Subalgebra.lean)\nbounds powers in each singleton adjoin and multiplies the resulting\n`C`-submodule spans.\nIts finite-type, all-elements corollary is\n[`Subalgebra.finite_of_forall_exists_pow_mem`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Subalgebra.lean).\nThe generator-only criterion applies to `ℕ[X²] ⊊ ℕ[X]`, with generator `X`\nand exponent `2`, where `1,X` span over `ℕ[X²]`. The all-elements condition\nfails in this example: the `X`-coefficient of `(1+X)^n` is `n` for every\npositive `n`. In general the bounded monomials span; they need not be a basis.",
+   "title_from": "bold",
+   "text": "**Finiteness from powers of algebra generators.** Let `R` and `A` be\ncommutative semirings with the given `R`-algebra structure. If a finite set\ngenerates `A` as an `R`-algebra and `C : Subalgebra R A` contains a positive\npower of each chosen generator, then the original `A` is finite as a module\nover `C` through the canonical inclusion action. Exponents may vary with the\ngenerator; no field, Noetherianity, finite type of `C/R`, or ring structure\nis assumed. The theorem\n[`Subalgebra.finite_of_adjoin_eq_top_of_forall_exists_pow_mem`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Subalgebra.lean)\nbounds powers in each singleton adjoin and multiplies the resulting\n`C`-submodule spans.\nIts finite-type, all-elements corollary is\n[`Subalgebra.finite_of_forall_exists_pow_mem`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Subalgebra.lean).\nThe generator-only criterion applies to `ℕ[X²] ⊊ ℕ[X]`, with generator `X`\nand exponent `2`, where `1,X` span over `ℕ[X²]`. The all-elements condition\nfails in this example: the `X`-coefficient of `(1+X)^n` is `n` for every\npositive `n`. In general the bounded monomials span; they need not be a basis.",
    "link": {
     "text": "Subalgebra.finite_of_adjoin_eq_top_of_forall_exists_pow_mem",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Subalgebra.lean",
@@ -229,7 +233,8 @@
   {
    "kind": "item",
    "title": "Prime-spectrum embeddings from powers in the image",
-   "text": "For commutative\nsemirings `A` and `B` in independent universes and a homomorphism `f : A →+* B`,\nif every `b : B` has a positive natural power in `Set.range f`, then\n`PrimeSpectrum.comap f` is a topological embedding. The exponent may depend on\n`b`; neither injectivity nor surjectivity of `f` is assumed. The theorem\n[`PrimeSpectrum.isEmbedding_comap_of_forall_pow_mem_range`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum/Topology.lean)\ncombines the inducing criterion\n`PrimeSpectrum.comap_isInducing_of_forall_pow_mem_range` with the existing\n[`PrimeSpectrum.comap_injective_of_forall_pow_mem_range`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum.lean).\nMathlib's basic-open basis and power identities give the induced topology.\nThis separates and generalizes the ring-free embedding component of\n`PrimeSpectrum.isHomeomorph_comap`, formalized in Mathlib by Christian Merten\nand Junyan Xu following the [Stacks Project, Tag 0BR8](https://stacks.math.columbia.edu/tag/0BR8).\nMathlib's stronger homeomorphism theorem additionally assumes commutative rings\nand a kernel consisting of nilpotents. The surjective embedding criterion is\nrecovered with exponent one, but not every localization embedding satisfies the\npremise. Over arbitrary commutative semirings this asserts no spectral\nsurjectivity, homeomorphism, universal injectivity or closed range.",
+   "title_from": "bold",
+   "text": "**Prime-spectrum embeddings from powers in the image.** For commutative\nsemirings `A` and `B` in independent universes and a homomorphism `f : A →+* B`,\nif every `b : B` has a positive natural power in `Set.range f`, then\n`PrimeSpectrum.comap f` is a topological embedding. The exponent may depend on\n`b`; neither injectivity nor surjectivity of `f` is assumed. The theorem\n[`PrimeSpectrum.isEmbedding_comap_of_forall_pow_mem_range`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum/Topology.lean)\ncombines the inducing criterion\n`PrimeSpectrum.comap_isInducing_of_forall_pow_mem_range` with the existing\n[`PrimeSpectrum.comap_injective_of_forall_pow_mem_range`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum.lean).\nMathlib's basic-open basis and power identities give the induced topology.\nThis separates and generalizes the ring-free embedding component of\n`PrimeSpectrum.isHomeomorph_comap`, formalized in Mathlib by Christian Merten\nand Junyan Xu following the [Stacks Project, Tag 0BR8](https://stacks.math.columbia.edu/tag/0BR8).\nMathlib's stronger homeomorphism theorem additionally assumes commutative rings\nand a kernel consisting of nilpotents. The surjective embedding criterion is\nrecovered with exponent one, but not every localization embedding satisfies the\npremise. Over arbitrary commutative semirings this asserts no spectral\nsurjectivity, homeomorphism, universal injectivity or closed range.",
    "link": {
     "text": "PrimeSpectrum.isEmbedding_comap_of_forall_pow_mem_range",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Spectrum/Topology.lean",
@@ -248,7 +253,8 @@
   {
    "kind": "item",
    "title": "Integral closedness descends along a linear retraction",
-   "text": "For commutative\nrings `A` and `B`, an injective algebra map `A → B` into an integrally closed\ndomain, together with an `A`-linear left inverse `B →ₗ[A] A`, gives integral\nclosedness of `A`. The theorem\n[`IsIntegrallyClosed.of_linearRetract`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/LinearRetract.lean#L43)\nderives the domain structure on `A` inside its proof. The retraction need not\npreserve multiplication, and the algebra map need not be integral.",
+   "title_from": "bold",
+   "text": "**Integral closedness descends along a linear retraction.** For commutative\nrings `A` and `B`, an injective algebra map `A → B` into an integrally closed\ndomain, together with an `A`-linear left inverse `B →ₗ[A] A`, gives integral\nclosedness of `A`. The theorem\n[`IsIntegrallyClosed.of_linearRetract`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/LinearRetract.lean#L43)\nderives the domain structure on `A` inside its proof. The retraction need not\npreserve multiplication, and the algebra map need not be integral.",
    "link": {
     "text": "IsIntegrallyClosed.of_linearRetract",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/LinearRetract.lean#L43",
@@ -267,7 +273,8 @@
   {
    "kind": "item",
    "title": "Normal-domain descent from any field scalar extension",
-   "text": "For any field\nextension `l/k` and commutative `k`-algebra `A`, if `A ⊗[k] l` is a domain,\nthen so is `A`; if the tensor product is also integrally closed, then so is\n`A`. The separate theorems\n[`isDomain_left`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L61) and\n[`isIntegrallyClosed_left`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L71) in\n`Algebra.TensorProduct` require no finite-dimensionality, algebraicity or\nseparability assumption on the field extension.",
+   "title_from": "bold",
+   "text": "**Normal-domain descent from any field scalar extension.** For any field\nextension `l/k` and commutative `k`-algebra `A`, if `A ⊗[k] l` is a domain,\nthen so is `A`; if the tensor product is also integrally closed, then so is\n`A`. The separate theorems\n[`isDomain_left`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L61) and\n[`isIntegrallyClosed_left`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L71) in\n`Algebra.TensorProduct` require no finite-dimensionality, algebraicity or\nseparability assumption on the field extension.",
    "link": {
     "text": "isDomain_left",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L61",
@@ -282,7 +289,8 @@
   {
    "kind": "item",
    "title": "Tensor-factor evaluation gives linear retractions",
-   "text": "For the same fields\nand algebra, any `k`-linear functional `f : l →ₗ[k] k` defines an `A`-linear\n[`rightLinearMap`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L45) from `A ⊗[k] l`\nto `A`, taking `a ⊗ₜ[k] b` to `a * algebraMap k A (f b)`. When `f 1 = 1`,\n[`rightLinearMap_includeLeft`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L54)\nproves it is a left inverse to `includeLeft`. Normalization is needed for\nthis retraction equation, not for constructing the evaluation map; the\nfunctional and evaluation map need not be multiplicative.",
+   "title_from": "bold",
+   "text": "**Tensor-factor evaluation gives linear retractions.** For the same fields\nand algebra, any `k`-linear functional `f : l →ₗ[k] k` defines an `A`-linear\n[`rightLinearMap`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L45) from `A ⊗[k] l`\nto `A`, taking `a ⊗ₜ[k] b` to `a * algebraMap k A (f b)`. When `f 1 = 1`,\n[`rightLinearMap_includeLeft`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L54)\nproves it is a left inverse to `includeLeft`. Normalization is needed for\nthis retraction equation, not for constructing the evaluation map; the\nfunctional and evaluation map need not be multiplicative.",
    "link": {
     "text": "rightLinearMap",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/TensorProduct.lean#L45",
@@ -297,7 +305,8 @@
   {
    "kind": "item",
    "title": "Monic relations at inverses of units",
-   "text": "For a division semiring `R`, a\nsemiring `S`, an arbitrary unital homomorphism `f : R →+* S` and a unit\n`a : Sˣ`, any nonzero polynomial relation over `R` at `a` yields a monic\npolynomial relation at `a⁻¹`. The results in\n[`IntegralClosure.Polynomial`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Polynomial.lean) require no\ncoefficient centrality or commutativity of `S`. The more general semiring-source\ntheorem assumes that the reversed polynomial's leading coefficient is a unit\nin `R`, without requiring the original polynomial to be nonzero.",
+   "title_from": "bold",
+   "text": "**Monic relations at inverses of units.** For a division semiring `R`, a\nsemiring `S`, an arbitrary unital homomorphism `f : R →+* S` and a unit\n`a : Sˣ`, any nonzero polynomial relation over `R` at `a` yields a monic\npolynomial relation at `a⁻¹`. The results in\n[`IntegralClosure.Polynomial`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Polynomial.lean) require no\ncoefficient centrality or commutativity of `S`. The more general semiring-source\ntheorem assumes that the reversed polynomial's leading coefficient is a unit\nin `R`, without requiring the original polynomial to be nonzero.",
    "link": {
     "text": "IntegralClosure.Polynomial",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Polynomial.lean",
@@ -312,7 +321,8 @@
   {
    "kind": "item",
    "title": "A unit-constant criterion for two monic relations",
-   "text": "For arbitrary semirings\n`R` and `S`, a unital homomorphism `f : R →+* S` and `a : Sˣ`, monic\npolynomial relations at both `a` and `a⁻¹` exist exactly when a monic relation\nat `a` has constant coefficient a unit in `R`. When both relations exist,\nthat constant coefficient can be chosen to be `1`. These results in\n[`IntegralClosure.Polynomial`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Polynomial.lean) use left\ncoefficients and require no coefficient centrality. The unit condition is\nin the source semiring, not merely after applying `f`.",
+   "title_from": "bold",
+   "text": "**A unit-constant criterion for two monic relations.** For arbitrary semirings\n`R` and `S`, a unital homomorphism `f : R →+* S` and `a : Sˣ`, monic\npolynomial relations at both `a` and `a⁻¹` exist exactly when a monic relation\nat `a` has constant coefficient a unit in `R`. When both relations exist,\nthat constant coefficient can be chosen to be `1`. These results in\n[`IntegralClosure.Polynomial`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Polynomial.lean) use left\ncoefficients and require no coefficient centrality. The unit condition is\nin the source semiring, not merely after applying `f`.",
    "link": {
     "text": "IntegralClosure.Polynomial",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/Polynomial.lean",
@@ -327,7 +337,8 @@
   {
    "kind": "item",
    "title": "Units descend from a monic inverse relation",
-   "text": "For arbitrary semirings `R`\nand `S`, an injective homomorphism `f : R →+* S`, `r : R` and a unit\n`a : Sˣ` with `↑a = f r`, a monic polynomial relation over `R` at `a⁻¹`\nimplies `IsUnit r`. The theorem\n`RingHom.isUnit_of_monic_eval₂_units_inv_eq_zero` in\n[`IntegralClosure.RingHom`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) needs neither\ncommutativity nor a second relation at `a`. Although stated with semiring\ninstances, its hypotheses force both semirings to admit ring structures.",
+   "title_from": "bold",
+   "text": "**Units descend from a monic inverse relation.** For arbitrary semirings `R`\nand `S`, an injective homomorphism `f : R →+* S`, `r : R` and a unit\n`a : Sˣ` with `↑a = f r`, a monic polynomial relation over `R` at `a⁻¹`\nimplies `IsUnit r`. The theorem\n`RingHom.isUnit_of_monic_eval₂_units_inv_eq_zero` in\n[`IntegralClosure.RingHom`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) needs neither\ncommutativity nor a second relation at `a`. Although stated with semiring\ninstances, its hypotheses force both semirings to admit ring structures.",
    "link": {
     "text": "IntegralClosure.RingHom",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean",
@@ -374,7 +385,8 @@
   {
    "kind": "item",
    "title": "Integrality is unchanged by positive powers",
-   "text": "[`RingHom.IsIntegralElem.pow`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) shows that\nevery natural power of an integral element is integral, including exponent\nzero. Conversely,\n[`of_pow`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) and the simp lemma\n[`pow_iff`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) require `0 < n`: integrality of\n`x ^ n` then implies, and is equivalent to, integrality of `x`.",
+   "title_from": "bold",
+   "text": "**Integrality is unchanged by positive powers.**\n[`RingHom.IsIntegralElem.pow`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) shows that\nevery natural power of an integral element is integral, including exponent\nzero. Conversely,\n[`of_pow`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) and the simp lemma\n[`pow_iff`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean) require `0 < n`: integrality of\n`x ^ n` then implies, and is equivalent to, integrality of `x`.",
    "link": {
     "text": "RingHom.IsIntegralElem.pow",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean",
@@ -393,7 +405,8 @@
   {
    "kind": "item",
    "title": "Positive powers in the range imply an integral homomorphism",
-   "text": "[`RingHom.isIntegral_of_forall_pow_mem_range`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean)\nproves `f.IsIntegral` if each `x : S` has some positive power in `Set.range f`.\nEach element may have its own exponent; neither a uniform exponent nor\nsurjectivity is required.",
+   "title_from": "bold",
+   "text": "**Positive powers in the range imply an integral homomorphism.**\n[`RingHom.isIntegral_of_forall_pow_mem_range`](https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean)\nproves `f.IsIntegral` if each `x : S` has some positive power in `Set.range f`.\nEach element may have its own exponent; neither a uniform exponent nor\nsurjectivity is required.",
    "link": {
     "text": "RingHom.isIntegral_of_forall_pow_mem_range",
     "url": "https://github.com/FormalFrontier/integral-closure/blob/8f0b15a513bbb22d6b51988f2b424cc407694390/IntegralClosure/RingHom.lean",
@@ -424,26 +437,26 @@
   {
    "kind": "item",
    "title": "`Ideal.comap_jacobson_of_isIntegral`",
+   "title_from": "sentence",
    "text": "`Ideal.comap_jacobson_of_isIntegral`: for every target ideal `J : Ideal S`,\n`J.jacobson.comap f = (J.comap f).jacobson`.",
    "link": null,
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "`Ideal.map_jacobson_le_of_isIntegral`",
+   "title_from": "sentence",
    "text": "`Ideal.map_jacobson_le_of_isIntegral`: for every source ideal `I : Ideal R`,\n`I.jacobson.map f ≤ (I.map f).jacobson`.",
    "link": null,
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "item",
    "title": "`Ideal.map_le_jacobson_bot_of_isIntegral`",
+   "title_from": "sentence",
    "text": "`Ideal.map_le_jacobson_bot_of_isIntegral`: for every source ideal `I`,\n`I ≤ (⊥ : Ideal R).jacobson` implies\n`I.map f ≤ (⊥ : Ideal S).jacobson`.",
    "link": null,
-   "declaration": null,
-   "title_in_text": true
+   "declaration": null
   },
   {
    "kind": "prose",

@@ -30,6 +30,9 @@ Intro, with [a guide](docs/Guide.md).
 - **Stated.** See [`Lib.stated`](Lib/A.lean).
 - **A module.** See [`Lib.A`](Lib/A.lean).
 - **Led** ([`Lib.led`](Lib/C.lean)). The lead link goes.
+- [The file](Lib/C.lean)
+- [Contents](docs/Guide.md#contents)
+- [More contents](#headline-results)
 
 ### A group
 
@@ -149,23 +152,45 @@ def test_the_headline_section_ends_at_the_next_section_and_skips_code():
 def test_headline_items_take_their_titles_text_and_declaration_links():
     items = ff.headlines(README, ff.Links("lib", REV, set(LEAN) | {"docs/Guide.md"}))
     kinds = [item["kind"] for item in items]
-    assert kinds == ["item"] * 9 + ["heading", "prose", "item", "item"]
+    # The two entries that only link into the README or docs/ are a table of contents, not results.
+    assert kinds == ["item"] * 10 + ["heading", "prose", "item", "item"]
     bold, lead, guide, several, plain = items[:5]
-    assert bold["title"] == "Bold title"
-    assert bold["text"] == f"It holds for every `x`\n([module]({BLOB}/Lib/A.lean))."
+    # Each item's text is as the README writes it, with its links made absolute.
+    assert bold["title"] == "Bold title" and bold["title_from"] == "bold"
+    assert bold["text"] == f"**Bold title.** It holds for every `x`\n([module]({BLOB}/Lib/A.lean))."
     assert bold["link"] == {"text": "module", "url": f"{BLOB}/Lib/A.lean", "code": False} and bold["declaration"] is None
-    assert lead["title"] == "`Lib.thm`" and lead["text"] == "If `p` then `q`."
+    assert lead["title"] == "`Lib.thm`" and lead["title_from"] == "declaration"
+    assert lead["text"] == f"[`Lib.thm`]({BLOB}/Lib/A.lean): if `p` then `q`."
     assert lead["declaration"] == {"name": "Lib.thm", "file": "Lib/A.lean"}
-    assert guide["title"] == "Guide" and guide["text"] == "explains the setup."
+    assert guide["title"] == "Guide" and guide["text"] == f"[Guide]({BLOB}/docs/Guide.md) explains the setup."
     assert several["declaration"] is None
-    assert plain["title"] == "A plain result with no link" and plain["title_in_text"]
-    assert items[10] == {"kind": "prose", "text": f"Group intro with [a file]({BLOB}/Lib/B.lean)."}
-    grouped, alone = items[11:]
+    assert plain["title"] == "A plain result with no link" and plain["title_from"] == "sentence"
+    assert items[9]["title"] == "The file" and items[9]["text"] == f"[The file]({BLOB}/Lib/C.lean)"
+    assert items[11] == {"kind": "prose", "text": f"Group intro with [a file]({BLOB}/Lib/B.lean)."}
+    grouped, alone = items[12:]
     # A link in a title keeps only its label; a line anchor is not part of the file.
     assert grouped["title"] == "Grouped" and grouped["declaration"] == {"name": "Lib.B.grouped", "file": "Lib/B.lean"}
     # A heading with no list under it is one result: the prose is its text.
-    assert alone["title"] == "A result on its own" and alone["declaration"]["name"] == "Lib.alone"
+    assert alone["title"] == "A result on its own" and alone["title_from"] == "heading"
+    assert alone["declaration"]["name"] == "Lib.alone"
     assert alone["text"].endswith("```lean\n## not a heading\n```")
+
+
+def test_quoted_openings_keep_the_sources_marks():
+    assert ff.opening("Bounds for rings; with more after.") == "Bounds for rings; …"
+    assert ff.opening("One sentence only.") == "One sentence only."
+    assert ff.opening("Word " * 40) == ("Word " * 28).strip() + " …"
+    # Titles drop the closing mark instead.
+    assert ff.first_sentence("Bounds for rings; with more after.") == "Bounds for rings"
+
+
+def test_an_article_quotes_its_item_as_written():
+    led = {"title_from": "declaration", "declaration": {"name": "PolyRing"},
+           "text": "[`PolyRing R n`](https://example.org/A.lean) has `n` central indeterminates."}
+    assert ff.article_text(led) == led["text"]
+    bold = {"title_from": "bold", "declaration": {"name": "X.y"},
+            "text": "**Title** ([`X.y`](https://example.org/A.lean)). It holds, see [`X.y`](https://example.org/A.lean)."}
+    assert ff.article_text(bold) == "It holds, see [`X.y`](https://example.org/A.lean)."
 
 
 def test_a_library_record_finds_each_named_declaration_in_its_file(tmp_path):
@@ -226,7 +251,7 @@ def test_articles_are_the_highlights_and_the_headline_results_with_a_declaration
     stats = built.stats
     assert stats["articles"] == 5 and stats["highlight_articles"] == 1 and stats["headline_articles"] == 4
     # `Lib.thm` heads the highlight's article, so the two README items naming it link that article.
-    assert stats["headline_duplicates"] == 2 and stats["headline_not_found"] == 1 and stats["headline_unnamed"] == 5
+    assert stats["headline_duplicates"] == 2 and stats["headline_not_found"] == 1 and stats["headline_unnamed"] == 6
     # `Lib.A` names its file's module.
     assert stats["headline_module_links"] == 1
     assert stats["libraries_without_articles"] == 1 and stats["libraries"] == 2
@@ -269,6 +294,8 @@ def test_a_library_page_has_its_facts_links_text_and_main_results(tmp_path):
     assert "## Headline results\n\n*Quoted from the headline results in [README.md]" in page
     assert "### A group\n\nGroup intro with" in page
     assert "**Bold title.** It holds for every `x`" in page
+    assert f"[`Lib.thm`]({BLOB}/Lib/A.lean): if `p` then `q`." not in page  # it links the highlight's article
+    assert f"\n[The file]({BLOB}/Lib/C.lean)\n" in page and "Contents" not in page
     assert "A plain result with no link. And a second sentence." in page and "**A plain result" not in page
     assert "## Scope" not in page
     # The main results have a page of their own; the library's page counts them and names the scan's misses.
@@ -278,7 +305,7 @@ def test_a_library_page_has_its_facts_links_text_and_main_results(tmp_path):
     assert "| `Lib.thm` |" not in page
     table = files[Path("blueprint/roadmap/formal-frontier/topology/lib/main-results/README.md")]
     assert f"| `Lib.thm` | theorem | [Lib/A.lean, line 3]({BLOB}/Lib/A.lean#L3) | The main \\| result. Sorry count 0. |" in table
-    assert "The scan does not find 2 of them" in table and "*Quoted from the main results in [formalization.yaml]" in table
+    assert "The scan does not find 2 of them; [the library's page](../README.md) names them." in table and "*Quoted from the main results in [formalization.yaml]" in table
     base = files[Path("blueprint/roadmap/formal-frontier/commutative-algebra/base/README.md")]
     assert ("No articles: its formalization.yaml lists no highlights, and none of its 1 headline result links a "
             "declaration that the scan finds in the linked file at this commit, so they are quoted below.") in base
@@ -307,8 +334,8 @@ def test_long_quoted_headline_results_get_a_page_of_their_own(tmp_path):
     finally:
         ff.QUOTE_LIMIT = limit
     page = files[Path("blueprint/roadmap/formal-frontier/topology/lib/README.md")]
-    assert ("## Headline results\n\nThe 11 headline results of its README are on a page of their own: 4 articles, "
-            "5 quoted as text, and 2 that link an article above.\n\n- [Headline results](headline-results/README.md)") in page
+    assert ("## Headline results\n\nThe 12 headline results of its README are on a page of their own: 4 articles, "
+            "6 quoted as text, and 2 that link an article above.\n\n- [Headline results](headline-results/README.md)") in page
     headlines = files[Path("blueprint/roadmap/formal-frontier/topology/lib/headline-results/README.md")]
     assert headlines.startswith("# Headline results\n\n*Quoted from the headline results in [README.md]")
     assert Path("blueprint/roadmap/formal-frontier/topology/lib/headline-results/led.md") in files

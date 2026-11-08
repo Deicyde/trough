@@ -40,7 +40,7 @@ COMMAND = re.compile(
     r"set_option|attribute|mutual|notation|infix|infixl|infixr|prefix|postfix|macro|macro_rules|syntax|elab|"
     r"elab_rules|alias|export|initialize|omit|include|deriving|#\w+)\b)"
 )
-SORRY = re.compile(r"(?<![\w.'])(?:sorry|sorryAx|admit)(?![\w'!?])|^[ \t]*(?:·[ \t]*)?stop(?![\w'!?])", re.M)
+SORRY = re.compile(r"(?<![\w.'])(?:sorry|sorryAx|admit)(?![\w'!?])|^[ \t]*(?:·[ \t]*)?stop(?![\w'!?])(?!\s*:=)", re.M)
 EXIT = re.compile(r"^#exit\b")
 RAW_STRING = re.compile(r'r(#*)"')
 NOT_NAMES = {"where", "extends", "deriving"}
@@ -169,13 +169,13 @@ def scan(text: str) -> dict[str, Declaration] | None:
         if match := END.match(line):
             close()
             if match["name"]:
+                # `end A.B` closes a section named A.B, or namespaces A and B.
+                if scopes and scopes[-1] == ("section", match["name"]):
+                    scopes.pop()
+                    continue
                 parts = split(match["name"])
                 if len(scopes) < len(parts):
                     return None
-                # `end A.B` closes namespaces A and B, or a section named A.B.
-                if scopes[-1] == ("section", match["name"]):
-                    scopes.pop()
-                    continue
                 for part in reversed(parts):
                     if scopes.pop() != ("namespace", part):
                         return None
