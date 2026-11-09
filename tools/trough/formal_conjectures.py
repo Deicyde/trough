@@ -506,8 +506,8 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
             f"The {plural(len(articles), 'problem file')} in {where} that {'states' if len(articles) == 1 else 'state'} a "
             f"research or textbook statement, at commit {at(rev)}" + ("" if len(articles) == 1 else ", one article each")
             + (", in sections by hundreds of problem number." if folder == ERDOS else "."),
-            f"Their docstrings and Lean statements are quoted from [Formal Conjectures]({GITHUB}/{REPO}) (Google DeepMind) "
-            "at that commit, under its Apache-2.0 license.",
+            f"{'Its' if len(articles) == 1 else 'Their'} docstrings and Lean statements are quoted from "
+            f"[Formal Conjectures]({GITHUB}/{REPO}) (Google DeepMind) at that commit, under its Apache-2.0 license.",
             (f"Formal Conjectures' [README for this folder]({blob(rev, f'{ROOT}/{ERDOS}/README.md')}) asks contributors to "
              f"keep each docstring as close as possible to the problem's text on [erdosproblems.com]({ERDOS_SITE}), and to "
              "copy it from the site's LaTeX. Each article links its problem's page there.") if folder == ERDOS else "",

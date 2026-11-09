@@ -313,7 +313,8 @@ def test_part_pages_credit_formal_conjectures_and_list_files_without_an_article(
     wiki = files[Path("blueprint/roadmap/formal-conjectures/wikipedia/README.md")]
     assert ("The 1 problem file in [FormalConjectures/Wikipedia](https://github.com/google-deepmind/formal-conjectures/"
             f"tree/{REV}/FormalConjectures/Wikipedia) that states a research or textbook statement, at commit") in wiki
-    assert "one article each" not in wiki
+    assert "Its docstrings and Lean statements are quoted from" in wiki
+    assert "one article each" not in wiki and "Their docstrings" not in wiki
     assert f"No article: 1 file in a folder with no article states no research or textbook statement: [Tests only]" in root
     subject = files[Path("blueprint/roadmap/formal-conjectures/by-subject/05-combinatorics/README.md")]
     assert "- [Erdős Problem 1](../../erdos-problems/1-99/erdos-problem-1.md)" in subject
