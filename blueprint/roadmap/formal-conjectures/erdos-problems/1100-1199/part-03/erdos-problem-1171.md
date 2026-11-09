@@ -20,6 +20,7 @@ The file states 2 research or textbook statements: 1 open and 1 solved. It also 
 Open: stated without proof.
 
 > **Erdős Problem 1171.** Is it true that for all finite $k < \omega$,
+>
 > $$\omega_1^2 \to (\omega_1 \cdot \omega, \underbrace{3, \ldots, 3}_{k})^2_{k+1}?$$
 >
 > In any $(k+1)$-coloring of the pairs of the complete graph on $\omega_1^2$, either

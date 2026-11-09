@@ -8,6 +8,7 @@ statement: formalized
 # Central binomial sum $a(n) = \sum_{k=0}^n \binom{n}{k}^2 \binom{n-k}{k}^2 (-16)^k$
 
 > The sequence is defined by
+>
 > $$a(n) = \sum_{k=0}^n \binom{n}{k}^2 \binom{n-k}{k}^2 (-16)^k.$$
 >
 > *References:*

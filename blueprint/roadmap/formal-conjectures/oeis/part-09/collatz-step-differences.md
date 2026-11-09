@@ -9,7 +9,9 @@ statement: formalized
 
 > Differences in adjacent elements of the sequence quantifying the steps needed for $n$ to
 > converge to 1 in the Collatz Conjecture.
+>
 > $$a(n) = \mathrm{A006577}(n+1) - \mathrm{A006577}(n)$$
+>
 > for $n > 0$.
 >
 > *References:*

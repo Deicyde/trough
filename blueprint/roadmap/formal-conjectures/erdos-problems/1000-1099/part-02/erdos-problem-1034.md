@@ -52,6 +52,7 @@ Solved: stated here without proof.
 > $>n^2/4$ edges contained a triangle and $h(n)$ other vertices which are connected to at least two
 > vertices of the triangle. The fact that every graph with $>n^2/4$ edges contains a book of size
 > $n/6$ shows that
+>
 > $$(1/6-o(1))n \leq h(n).$$
 
 ```lean
@@ -71,6 +72,7 @@ Solved: stated here without proof.
 > The construction of Ma and Tang [MaTa25] of a graph with $n$ vertices and $>n^2/4$ edges in which
 > every triangle has at most $(2-(5/2)^{1/2}+o(1))n$ vertices adjacent to at least two of its
 > vertices shows that, for the threshold $h(n)$ of `erdos_1034.variants.lower_bound`,
+>
 > $$h(n) \leq (2-(5/2)^{1/2}+o(1))n.$$
 
 ```lean

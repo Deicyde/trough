@@ -32,6 +32,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Is it true that if $A\subseteq\{1,\ldots,n\}$ is a set such that $[a,b]>n$ for all $a\neq b$,
 > where $[a,b]$ is the least common multiple, then
+>
 > $$\sum_{a\in A}\frac{1}{a}\leq \frac{31}{30}?$$
 >
 > The answer is yes, proved by Schinzel and Szekeres [ScSz59]. The bound is best possible as
@@ -112,6 +113,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Chen [Ch96] has proved that if $n>172509$ then
+>
 > $$\sum_{a\in A}\frac{1}{a}< \frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{7}+\frac{1}{11}.$$
 
 ```lean
@@ -126,7 +128,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Open: stated without proof.
 
 > In [Er73] Erdős further speculates that in fact
+>
 > $$\sum_{a\in A}\frac{1}{a}\leq 1+o(1),$$
+>
 > where the $o(1)$ term $\to 0$ as $n\to \infty$.
 
 ```lean

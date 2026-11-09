@@ -35,7 +35,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Open: stated without proof.
 
 > Prove that there exists some $c>0$ such that
+>
 > $$h(n) \sim c \left(\frac{n}{\log n}\right)^{1/2}$$
+>
 > as $n\to \infty$.
 
 ```lean

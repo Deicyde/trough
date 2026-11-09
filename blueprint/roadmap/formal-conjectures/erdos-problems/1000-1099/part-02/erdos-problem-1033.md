@@ -30,6 +30,7 @@ Solved: stated here without proof.
 > Let $h(n)$ be such that every graph on $n$ vertices with $>n^2/4$ many edges contains a triangle
 > whose vertices have degrees summing to at least $h(n)$. Estimate $h(n)$. In particular, is it
 > true that
+>
 > $$h(n)\geq (2(\sqrt{3}-1)-o(1))n?$$
 >
 > A conjecture of Bollobás and Erdős.

@@ -9,7 +9,9 @@ statement: formalized
 
 > The sequence $a(n)$ satisfies $\sum_{k \mid n} \frac{a(k)}{k!} = \sum_{j=1}^n \frac{1}{j} = H_n$,
 > where the sum on the left is over positive divisors $k$ of $n$. By Möbius inversion,
+>
 > $$a(n) = n! \sum_{d \mid n} \mu(n/d) H_d$$
+>
 > where $H_d = \sum_{j=1}^d \frac{1}{j}$ is the $d$-th harmonic number.
 >
 > *References:*

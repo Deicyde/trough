@@ -20,9 +20,11 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here without proof.
 
 > Lower bound (Hefty–Horn–King–Pfender 2025).
+>
 > $$
 > (1 - o(1)) \sqrt{\frac{n}{\log n}} \le f(n),
 > $$
+>
 > where $f(n)$ denotes the maximum chromatic number of a triangle-free graph on
 > $n$ vertices, formalized as `triangleFreeMaxChromatic n`.
 
@@ -40,9 +42,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Upper bound (Davies–Illingworth 2022).
+>
 > $$
 > f(n) \le (2 + o(1)) \sqrt{\frac{n}{\log n}},
 > $$
+>
 > where $f(n)$ denotes the maximum chromatic number of a triangle-free graph on
 > $n$ vertices, formalized as `triangleFreeMaxChromatic n`.
 

@@ -34,7 +34,9 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 > the Kakeya conjecture. Under this equivalence:
 > - The greatest achievable exponent for this problem is equal to the smallest constant $c$
 >   achievable for Bourgain's sums-differences question:
->   $$|A -_G B| \ll \max(|A|, |B|, |A +_G B|)^c$$
+>
+> $$|A -_G B| \ll \max(|A|, |B|, |A +_G B|)^c$$
+>
 > - The $O(n^{3/2})$ prediction is disproved because the lower bound has been shown to satisfy
 >   $c \ge 1.77898$ (due to Zheng and AlphaEvolve [GGTW25], improving on Lemm [Le15]), which is
 >   strictly greater than $3/2 = 1.5$.

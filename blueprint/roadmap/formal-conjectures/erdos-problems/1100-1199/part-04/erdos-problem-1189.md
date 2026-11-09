@@ -155,7 +155,9 @@ Solved: stated here without proof.
 
 > Let $I(k)$ count the number of irreducible covering sets of size $k$. Balister, Bollobás, Morris,
 > Sahasrabudhe, and Tiba [BBMST24] proved that
+>
 > $$I(k) \leq \exp\left((c+o(1))\frac{k^{3/2}}{(\log k)^{1/2}}\right)$$
+>
 > by proving that the right-hand side is an asymptotic for the number of minimal covering systems
 > on $k$ moduli.
 >

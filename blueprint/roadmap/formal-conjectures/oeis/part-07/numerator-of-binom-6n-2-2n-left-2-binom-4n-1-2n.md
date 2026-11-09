@@ -33,7 +33,9 @@ Solved: stated here without proof.
 >
 > The OEIS comment indexes A005156 from $1$; for the $0$-indexed sequence `b` this states
 > `frac (n + 1) = b (n + 1) / b n`. This holds by the product formula
+>
 > $$\text{A005156}(n) = \frac{1}{2^n} \prod_{k=1}^{n} \frac{(6k-2)!\,(2k-1)!}{(4k-1)!\,(4k-2)!}$$
+>
 > conjectured by Robbins and proved by Kuperberg (2002).
 
 ```lean

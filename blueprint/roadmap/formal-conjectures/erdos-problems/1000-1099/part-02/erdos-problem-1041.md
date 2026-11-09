@@ -41,11 +41,15 @@ Category `research solved`; AMS [32 Several complex variables and analytic space
 Solved: stated here; a Lean proof is at [https://github.com/wcook04/plectis-erdos-lean/blob/587c48f213106c20ba2cdf3d585700c1394fc44f/verification/FC1041HausdorffCounterexample/lean/ErdosProblems/Erdos1041/Counterexample/HausdorffLength.lean#L449-L454](https://github.com/wcook04/plectis-erdos-lean/blob/587c48f213106c20ba2cdf3d585700c1394fc44f/verification/FC1041HausdorffCounterexample/lean/ErdosProblems/Erdos1041/Counterexample/HausdorffLength.lean#L449-L454).
 
 > Let
+>
 > $$ f(z) = \prod_{i=1}^{n} (z - z_i) \in \mathbb{C}[x] $$
+>
 > with $|z_i| < 1$ for all $i$.
 >
 > Conjecture: Must there always exist a path of length less than 2 in
+>
 > $$ \{ z \in \mathbb{C} \mid |f(z)| < 1 \} $$
+>
 > which connects two of the roots of $f$?
 >
 > The answer is negative. ani gave a counterexample of degree seven on the

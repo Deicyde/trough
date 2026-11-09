@@ -24,7 +24,9 @@ The file states 4 research or textbook statements: 3 solved and 1 textbook resul
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos673.lean#L914](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos673.lean#L914).
 
 > Let $1=d_1\lt \cdots \lt d_{\tau(n)}=n$ be the divisors of $n$ and
+>
 > $$G(n) = \sum_{1\leq i\lt \tau(n)}\frac{d_i}{d_{i+1}}.$$
+>
 > Is it true that $G(n)\to \infty$ for almost all $n$?
 >
 > The answer is yes: Tao observed that $\tau(n/m)/m\leq G(n)\leq \tau(n)$ for any $m\mid n$ with

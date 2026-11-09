@@ -87,7 +87,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The current best-known bounds on $\alpha$ are
+>
 > $$1.4457\leq \alpha \leq \frac{1+\sqrt{5}}{2}\approx 1.618.$$
+>
 > The lower bound is due to Gaspers and Mackenzie [GaMa18].
 
 ```lean
@@ -103,7 +105,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The current best-known bounds on $\alpha$ are
+>
 > $$1.4457\leq \alpha \leq \frac{1+\sqrt{5}}{2}\approx 1.618.$$
+>
 > The upper bound is due to Fomin and Villanger [FoVi12] (with a simpler proof in [GaMa18]).
 
 ```lean

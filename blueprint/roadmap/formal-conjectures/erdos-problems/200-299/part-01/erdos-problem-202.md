@@ -37,6 +37,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > This was proved by GPT-5.4 Pro (prompted by Ho Boon Suan), using the argument of [BFV13] together
 > with the resolution of the Kahn-Kalai conjecture by Park and Pham [PaPh24], so that
+>
 > $$f(N)= N L(N)^{-1+o(1)}.$$
 
 ```lean

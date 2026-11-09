@@ -97,7 +97,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The same authors prove that for all $t\geq 1$ we have
+>
 > $$h_t(d) \leq \tfrac{3}{2}d^t+1.$$
+>
 > See [CCJK22, Theorem 6]. Here the inequality is stated as `2 * h t d ≤ 3 * d ^ t + 2`.
 
 ```lean
@@ -157,7 +159,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Kumar, Mohar and Pragada [KMP26, Theorem 1.11] proved
+>
 > $$\liminf_{d\to\infty}\frac{h_3(d)}{d^3}\geq \frac{253}{225}.$$
+>
 > In particular the conjecture of [CCJK22] that $h_t(d)\leq (1+o(1))d^t$ is false for $t=3$.
 
 ```lean

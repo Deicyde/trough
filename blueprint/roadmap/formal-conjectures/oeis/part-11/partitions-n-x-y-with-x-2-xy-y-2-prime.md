@@ -51,6 +51,7 @@ Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-num
 Solved: stated here without proof.
 
 > $$\lim_{N \to \infty} \frac{\sum_{p < N, \, p \equiv 1 \pmod 3} x(p)}{\sum_{p < N, \, p \equiv 1 \pmod 3} y(p)} = 1 + \sqrt{3},$$
+>
 > where for a prime $p \equiv 1 \pmod 3$, $x(p) > y(p) > 0$ are the unique positive integers such
 > that $p = x(p)^2 + x(p)y(p) + y(p)^2$.
 > - _Zhi-Wei Sun_
@@ -74,13 +75,16 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here without proof.
 
 > Conjecture:
+>
 > $$\lim_{N \to \infty} \frac{\sum_{p < N, \, p \equiv 1 \pmod 3} x(p)^2}{\sum_{p < N, \, p \equiv 1 \pmod 3} y(p)^2} = \frac{52}{9},$$
+>
 > where for a prime $p \equiv 1 \pmod 3$, $x(p) > y(p) > 0$ are the unique positive integers such
 > that $p = x(p)^2 + x(p)y(p) + y(p)^2$.
 > - _Zhi-Wei Sun_
 >
 > Disproved by Hecke's (1920) equidistribution theorem for Hecke Grossencharacters of
 > $\mathbb{Q}(\sqrt{-3})$, which yields the true limit
+>
 > $$\frac{\int_0^{\pi/6} (\cos\theta - \frac{1}{\sqrt{3}}\sin\theta)^2\,d\theta}{\int_0^{\pi/6} \frac{4}{3}\sin^2\theta\,d\theta} = \frac{2\pi}{2\pi - 3\sqrt{3}} \approx 5.780124 \neq \frac{52}{9}.$$
 
 ```lean

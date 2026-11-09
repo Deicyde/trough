@@ -20,6 +20,7 @@ The file states 4 research or textbook statements: 3 open and 1 solved.
 Open: stated without proof.
 
 > Let $\tau(n)$ count the number of divisors of $n$. Is there some $n > 24$ such that
+>
 > $$
 >   \max_{m < n}(m + \tau(m)) \leq n + 2?
 > $$
@@ -48,6 +49,7 @@ Open: stated without proof.
 
 > Erdős says 'it is extremely doubtful' that there are infinitely many such $n$, and in
 > fact suggests that
+>
 > $$
 >   lim_{n\to\infty} \max_{m < n}(\tau(m) + m − n) = \infty.
 > $$
@@ -65,6 +67,7 @@ Open: stated without proof.
 
 > Erdős says it 'seems certain' that for every $k$ there are infinitely many $n$
 > for which
+>
 > $$
 >   \max_{n−k < m < n}(m + \tau(m)) ≤ n + 2.
 > $$

@@ -28,7 +28,9 @@ Solved: stated here without proof.
 
 > Let $A(x)$ count the number of $n\leq x$ which are the sum of two squarefull numbers (a number
 > $m$ is squarefull if $p\mid m$ implies $p^2\mid m$). Is it true that
+>
 > $$A(x) \sim c \frac{x}{\sqrt{\log x}}$$
+>
 > for some $c>0$?
 >
 > Odoni [Od81] proved this is false.
@@ -46,7 +48,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Blomer and Granville [BlGr06] proved
+>
 > $$A(x)= (\log\log x)^{O(1)}\frac{x}{(\log x)^{\alpha}}$$
+>
 > where $\alpha=1-2^{-1/3}\approx 0.206299$: for some $C$ and all large $x$, $A(x)$ lies between
 > $(\log\log x)^{-C}$ and $(\log\log x)^{C}$ times $x/(\log x)^{\alpha}$.
 

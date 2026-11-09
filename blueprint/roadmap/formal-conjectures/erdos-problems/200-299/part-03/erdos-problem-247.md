@@ -20,13 +20,17 @@ The file states 2 research or textbook statements: 1 open and 1 solved.
 Open: stated without proof.
 
 > Let $n_1 < n_2 < \cdots$ be a sequence of integers such that
+>
 > $$
 >   \limsup \frac{n_k}{k} = \infty.
 > $$
+>
 > Is
+>
 > $$
 >   \sum_{k=1}^{\infty} \frac{1}{2^{n_k}}
 > $$
+>
 > transcendental?
 
 ```lean

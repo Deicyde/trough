@@ -36,7 +36,9 @@ Open: stated without proof.
 > monochromatic copy of $G$.
 >
 > Determine
+>
 > $$\hat{R}(K_{n,n}),$$
+>
 > where $K_{n,n}$ is the complete bipartite graph with $n$ vertices in each component.
 
 ```lean
@@ -50,6 +52,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > The lower bound (which holds for $n\geq 6$) was proved by Erdős and Rousseau [ErRo93]:
+>
 > $$\frac{1}{60}n^22^n\lt \hat{R}(K_{n,n}).$$
 
 ```lean
@@ -65,7 +68,9 @@ Solved: stated here without proof.
 
 > The upper bound was proved by Erdős, Faudree, Rousseau, and Schelp [EFRS78b] and Nešetřil
 > and Rödl [NeRo78]:
+>
 > $$\hat{R}(K_{n,n})\lt \frac{3}{2}n^32^n.$$
+>
 > We require $n\geq 1$ because the strict inequality fails for the empty graph.
 
 ```lean
@@ -80,8 +85,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > Conlon, Fox, and Wigderson [CFW23] conjecture that
+>
 > $$\hat{R}(K_{s,t})\asymp s^2t2^s$$
+>
 > for all $s\leq t$, and so in particular we should have
+>
 > $$\hat{R}(K_{n,n})\asymp n^32^n.$$
 
 ```lean

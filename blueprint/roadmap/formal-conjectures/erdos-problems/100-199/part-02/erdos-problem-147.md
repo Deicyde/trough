@@ -31,6 +31,7 @@ The file states 4 research or textbook statements: 1 open and 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos147.lean#L799](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos147.lean#L799).
 
 > If $H$ is bipartite with minimum degree $r$ then there exists $\epsilon=\epsilon(H)>0$ such that
+>
 > $$\mathrm{ex}(n;H) \gg n^{2-\frac{1}{r-1}+\epsilon}.$$
 >
 > Conjectured by Erdős and Simonovits [ErSi84]. A probabilistic argument shows that there exists

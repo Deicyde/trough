@@ -27,6 +27,7 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Show that for $k\geq 3$
+>
 > $$\mathrm{ex}(n;C_{2k})\gg n^{1+\frac{1}{k}}.$$
 >
 > This problem is #46 in Extremal Graph Theory in the graphs problem collection.

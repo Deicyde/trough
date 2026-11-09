@@ -47,6 +47,7 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/microscopic
 > The proof proceeds by constructing an explicit counterexample: a finite metric space
 > on 10 points that has finite concentration but does not admit a microscopic weighting.
 > The metric space is defined by the following $10 \times 10$ distance matrix $A$:
+>
 > $$
 > \begin{pmatrix}
 > 0 & 116 & 236 & 231 & 260 & 124 & 64 & 290 & 266 & 64 \cr
@@ -63,24 +64,30 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/microscopic
 > $$
 >
 > The space has finite concentration, demonstrated by the explicit gauging $g$:
+>
 > $$
 > g = \frac{1}{24842973905} \begin{pmatrix} 3672468740 \cr 6389133731 \cr 9124217512 \cr
 > 5612262448 \cr -6875621136 \cr 2754831248 \cr 0 \cr 10758780188 \cr -6593098826 \cr 0
 > \end{pmatrix}
 > $$
+>
 > which gives $A g = \frac{4111107017312}{24842973905} \mathbf{1}$.
 >
 > To prove that it does not admit a microscopic weighting, we provide a vector $v \in \ker A$:
+>
 > $$
 > v = \begin{pmatrix} -2 \cr -1 \cr 3 \cr 4 \cr -4 \cr -2 \cr 2 \cr 2 \cr -4 \cr 2 \end{pmatrix}
 > $$
+>
 > along with a row-space certificate $q$ for the entrywise square matrix $B = A^{\circ 2}$ satisfying $q A = v^\top B$:
+>
 > $$
 > q^\top = \frac{1}{128472094291} \begin{pmatrix} 43681853675722 \cr -53873248293642 \cr
 > -66890627544007 \cr -81187181670120 \cr 24308499983196 \cr 40819375894674 \cr 0 \cr
 > 54690260644468 \cr 35226831040652 \cr 0
 > \end{pmatrix}
 > $$
+>
 > This certificate shows that the obstruction $v^\top B$ annihilates $\ker A$, making it impossible to construct a convergent weighting.
 
 ```lean

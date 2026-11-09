@@ -41,6 +41,7 @@ Solved: stated here without proof.
 > chromatic number $k$ and is critical (i.e. deleting any edge reduces the chromatic number).
 >
 > Is it true that
+>
 > $$f_k(n) \gg_k n^2?$$
 >
 > This is the first part. It was proved by Toft [To70]. We read $\gg_k$ as: for each $k$ there is
@@ -61,6 +62,7 @@ Open: stated without proof.
 > chromatic number $k$ and is critical (i.e. deleting any edge reduces the chromatic number).
 >
 > Is it true that
+>
 > $$f_6(n)\sim n^2/4?$$
 >
 > This is the second part.
@@ -80,6 +82,7 @@ Solved: stated here without proof.
 > chromatic number $k$ and is critical (i.e. deleting any edge reduces the chromatic number).
 >
 > More generally, is it true that, for $k\geq 6$,
+>
 > $$f_k(n) \sim \frac{1}{2}\left(1-\frac{1}{\lfloor k/3\rfloor}\right)n^2?$$
 >
 > This is the third part. It has a negative answer: the constructions in
@@ -99,7 +102,9 @@ Solved: stated here without proof.
 
 > Constructions of Stiebitz [St87] show that, for $k\geq 6$, there exist infinitely many values of
 > $n$ such that
+>
 > $$f_k(n) \geq \frac{1}{2}\left(1-\frac{1}{\lfloor k/3\rfloor+\delta_k}\right)n^2$$
+>
 > where $\delta_k=0$ if $k\equiv 0\pmod{3}$, $\delta_k=1/7$ if $k\equiv 1\pmod{3}$, and
 > $\delta_k = 24/69$ if $k\equiv 2\pmod{3}$.
 >
@@ -134,7 +139,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > The remaining case of the third question: is it true that, for $k\geq 6$ with $3 \mid k$,
+>
 > $$f_k(n) \sim \frac{1}{2}\left(1-\frac{1}{\lfloor k/3\rfloor}\right)n^2?$$
+>
 > For $k = 6$ this is `erdos_917.parts.ii`.
 
 ```lean
@@ -149,7 +156,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > In fact Dirac [Di52] proved
+>
 > $$f_6(4n+2) \geq 4n^2+8n+3,$$
+>
 > as witnessed by taking two disjoint copies of $C_{2n+1}$ and adding all edges between them.
 >
 > We take $n \geq 1$, so that $C_{2n+1}$ is a cycle.
@@ -167,6 +176,7 @@ Solved: stated here without proof.
 
 > Erdős [Er69b] observed that Dirac's construction generalises to show that, if $3\mid k$, there are
 > infinitely many values of $n$ (those of the shape $mk/3$ where $m$ is odd) such that
+>
 > $$f_k(n) \geq \frac{1}{2}\left(1-\frac{1}{k/3}\right)n^2 + n.$$
 >
 > We take $m \geq 3$, so that the cycle $C_m$ exists.
@@ -184,7 +194,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Stiebitz also proved the general upper bound
+>
 > $$f_k(n) < \mathrm{ex}(n;K_{k-1})\sim \frac{1}{2}\left(1-\frac{1}{k-2}\right)n^2$$
+>
 > for large $n$.
 >
 > Here $k \geq 4$, as in [LMY23].
@@ -202,6 +214,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Luo, Ma, and Yang [LMY23] have improved this upper bound to
+>
 > $$f_k(n) \leq \frac{1}{2}\left(1-\frac{1}{k-2}-\frac{1}{36(k-1)^2}+o(1)\right)n^2.$$
 >
 > [LMY23, Theorem 1.1] proves the stronger bound

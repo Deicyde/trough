@@ -27,7 +27,9 @@ Solved: stated here; a Lean proof is at [https://github.com/zhangjun725/erdos557
 
 > Let $R_k(G)$ denote the minimal $m$ such that if the edges of $K_m$ are $k$-coloured then there
 > is a monochromatic copy of $G$. Is it true that
+>
 > $$R_k(T)\leq kn+O(1)$$
+>
 > for any tree $T$ on $n$ vertices?
 >
 > The answer is yes, with an absolute constant: $R_k(T) \leq kn + 3$ for all $k$ and $n$. For

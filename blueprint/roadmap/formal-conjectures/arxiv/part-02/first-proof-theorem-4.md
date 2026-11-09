@@ -21,6 +21,7 @@ Solved: stated here; a Lean proof is at [https://github.com/frenzymath/Archon-Fi
 
 > Is it true that if $p(x)$ and $q(x)$ are monic real-rooted polynomials of
 > degree $n$, then
+>
 > $$\frac{1}{\Phi_n(p\boxplus_n q)} \ge \frac{1}{\Phi_n(p)}+\frac{1}{\Phi_n(q)}?$$
 >
 > [arxiv/2602.05192v2](https://arxiv.org/abs/2602.05192v2) contains a proof.
@@ -37,6 +38,7 @@ Solved: stated here without proof.
 
 > Is it true that if $p(x)$ and $q(x)$ are monic real-rooted polynomials of
 > degree $2$, then
+>
 > $$\frac{1}{\Phi_2(p\boxplus_n q)} \ge \frac{1}{\Phi_2(p)}+\frac{1}{\Phi_2(q)}?$$
 
 ```lean
@@ -51,6 +53,7 @@ Solved: stated here without proof.
 
 > Is it true that if $p(x)$ and $q(x)$ are monic real-rooted polynomials of
 > degree $3$, then
+>
 > $$\frac{1}{\Phi_3(p\boxplus_n q)} \ge \frac{1}{\Phi_3(p)}+\frac{1}{\Phi_3(q)}?$$
 
 ```lean

@@ -8,6 +8,7 @@ statement: formalized
 # Normalized convolution of $\binom{6k}{3k}\binom{3k}{k}$
 
 > The sequence $a(n)$ is defined by
+>
 > $$a(n) = \frac{\sum_{k=0}^n \binom{6k}{3k}\binom{3k}{k}
 >   \binom{6(n-k)}{3(n-k)}\binom{3(n-k)}{n-k}}{(2n-1)\binom{3n}{n}}.$$
 >

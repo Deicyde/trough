@@ -31,9 +31,13 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1001.lean#L8077](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1001.lean#L8077).
 
 > Let $S(N,A,c)$ be the measure of the set of those $\alpha\in (0,1)$ such that
+>
 > $$\left\lvert \alpha-\frac{x}{y}\right\rvert< \frac{A}{y^2}$$
+>
 > for some $N\leq y\leq cN$ and $(x,y)=1$. Does
+>
 > $$\lim_{N\to \infty}S(N,A,c)=f(A,c)$$
+>
 > exist?
 >
 > This is a problem of Erdős, Szüsz, and Turán [EST58], restated in [Er64b, p. 62]. The existence
@@ -53,7 +57,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1001.lean#L1047](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1001.lean#L1047).
 
 > Erdős, Szüsz, and Turán [EST58] proved that
+>
 > $$f(A,c)=\frac{12 A\log c}{\pi^2}$$
+>
 > when $0\lt A< \frac{c}{1+c^2}$. Here $c\geq 1$, since the range $N\leq y\leq cN$ is empty for
 > $c<1$.
 

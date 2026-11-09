@@ -26,6 +26,7 @@ The file states 2 research or textbook statements: 2 solved. It also has 1 test 
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos166.lean#L83](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos166.lean#L83).
 
 > Prove that
+>
 > $$R(4,k) \gg \frac{k^3}{(\log k)^{O(1)}}.$$
 >
 > This is true, and was proved by Mattheus and Verstraëte [MaVe23], who showed that
@@ -51,6 +52,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Mattheus and Verstraëte [MaVe23] proved the explicit lower bound
+>
 > $$R(4,k) \gg \frac{k^3}{(\log k)^4}.$$
 
 ```lean

@@ -28,12 +28,15 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Let $A=\{n_1\lt n_2\lt \cdots\}$ be an infinite sequence of positive integers, and let $\phi_A(k)$
 > count the number of $1\leq m\leq n_k$ such that the fraction $\frac{m}{n_k}$ cannot be written
 > as $\frac{b}{n_j}$ for any integer $b$ and any $j\lt k$; equivalently,
+>
 > $$
 > \frac{n_k}{(m,n_k)}\nmid n_j
 > $$
+>
 > for all $1\leq j\lt k$.
 >
 > Is there a sequence $A$ such that
+>
 > $$
 > \lim_{N\to \infty}\frac{1}{N}\sum_{k\leq N}\frac{\phi_A(k)}{n_k}=0?
 > $$
@@ -69,6 +72,7 @@ Solved: stated here without proof.
 
 > The study of $\phi_A$ was introduced by Cassels [Ca50b], who proved that there exist sequences
 > such that
+>
 > $$
 > \liminf_{N\to \infty}\frac{1}{N}\sum_{k\leq N}\frac{\phi_A(k)}{n_k}=0.
 > $$

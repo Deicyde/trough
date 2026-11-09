@@ -31,7 +31,9 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1046.lean#L329](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1046.lean#L329).
 
 > Let $f\in \mathbb{C}[x]$ be a monic polynomial and
+>
 > $$E=\{ z: \lvert f(z)\rvert <1\}.$$
+>
 > If $E$ is connected then is $E$ contained in a disc of radius $2$?
 >
 > A problem of Erdős, Herzog, and Piranian [EHP58], who also ask, if

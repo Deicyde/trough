@@ -21,7 +21,9 @@ Solved: stated here; a Lean proof is at [https://github.com/AlperTheKing/formal-
 
 > Let $x_1,\ldots,x_n\in \mathbb{R}^2$ be such that no circle whose centre is one
 > of the $x_i$ contains three other points. Are there at least
+>
 > $$(1+c)\frac{n}{2}$$
+>
 > distinct distances determined between the $x_i$, for some constant $c>0$ and
 > all $n$ sufficiently large?
 >
@@ -46,7 +48,10 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > Let $x_1,\ldots,x_n\in \mathbb{R}^2$ be such that no circle whose centre is one
-> of the $x_i$ contains three other points. Are there at least$$(1+c)\frac{n}{2}$$
+> of the $x_i$ contains three other points. Are there at least
+>
+> $$(1+c)\frac{n}{2}$$
+>
 > distinct distances determined between the $x_i$, for some constant $c>0$ and
 > all $n$ sufficiently large?
 >

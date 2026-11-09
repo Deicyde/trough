@@ -41,7 +41,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > Erdős and Szemerédi proved that there exist arbitrarily large sets $A$ such that the number of
 > integers which are the sum or product of distinct elements of $A$ is at most
+>
 > $$\exp\left(c \frac{(\log \lvert A\rvert)^2}{\log\log\lvert A\rvert}\right)$$
+>
 > for some constant $c>0$. (erdosproblems.com multiplies by $\log\log\lvert A\rvert$;
 > [ErSz83, Theorem 2] divides by it.)
 >
@@ -60,7 +62,9 @@ Solved: stated here without proof.
 
 > Erdős and Szemerédi [ErSz83] proved that there exist arbitrarily large sets $A$ such that the
 > number of integers which are the sum or product of distinct elements of $A$ is at most
+>
 > $$\exp\left(c \frac{(\log \lvert A\rvert)^2}{\log\log\lvert A\rvert}\right)$$
+>
 > for some constant $c>0$. (erdosproblems.com multiplies by $\log\log\lvert A\rvert$;
 > [ErSz83, Theorem 2] divides by it.)
 

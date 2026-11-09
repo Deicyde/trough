@@ -26,7 +26,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $\epsilon > 0$ and $f_\epsilon(p)$ be the smallest integer $m$
 > such that $\sum_{n\leq N} \left(\frac{n}{p}\right)\lt \epsilon N$ for all $N\geq m$. Prove that
+>
 > $$\sum_{p\lt x}f_\epsilon(p)\sim c_\epsilon \frac{x}{\log x}$$
+>
 > for some $c_\epsilon > 0$.
 >
 > Proved by Elliott [El69].
@@ -43,7 +45,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Let $\epsilon > 0$ and $f_\epsilon(p)$ be the smallest integer $m$ such that $\sum_{n\leq m} \left(\frac{n}{p}\right)\lt \epsilon m$. Prove that
+>
 > $$\sum_{p\lt x}f_\epsilon(p)\sim c_\epsilon \frac{x}{\log x}$$
+>
 > for some $c_\epsilon > 0$.
 >
 > Proved by Tang and Zhang [TaZh25].

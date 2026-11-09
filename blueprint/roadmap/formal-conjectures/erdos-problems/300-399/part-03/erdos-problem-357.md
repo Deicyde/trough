@@ -172,6 +172,7 @@ Solved: stated here without proof.
 > Let $g(n)$ be the maximal $k$ such that there exist integers $1 \le a_1, \dotsc, a_k \le n$
 > such that all sums of the shape $\sum_{u \le i \le v} a_i$ are distinct. Hegyvári [He86] proved
 > that
+>
 > $$\left(\frac 1 3 + o(1) \right)n \leq g(n) \leq \left(\frac 2 3 + o(1) \right)n.$$
 
 ```lean

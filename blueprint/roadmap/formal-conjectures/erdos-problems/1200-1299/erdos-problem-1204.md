@@ -30,6 +30,7 @@ Open: stated without proof.
 > We call a sequence of integers $0\leq a_1\lt \cdots \lt a_k$ admissible if it is missing at least one
 > congruence class modulo every prime $p$. Let $A(k)=\min a_k$. Estimate $A(k)$ - in particular, is
 > it true that
+>
 > $$A(k)\sim k\log k?$$
 
 ```lean
@@ -45,6 +46,7 @@ Open: stated without proof.
 
 > We call a sequence of integers $0\leq a_1\lt \cdots \lt a_k$ admissible if it is missing at least one
 > congruence class modulo every prime $p$. Estimate
+>
 > $$B(k)=\min \frac{a_1+\cdots+a_k}{k}.$$
 >
 > We read "estimate" as finding an asymptotic formula, since $B(k)\asymp k\log k$ already follows

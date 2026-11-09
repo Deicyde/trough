@@ -28,7 +28,9 @@ The file states 5 research or textbook statements: 5 solved. It also has 2 test 
 Solved: stated here without proof.
 
 > What is the size of the largest $A\subseteq \{1,\ldots,n\}$ such that in the set
+>
 > $$\left\{ \sum_{a\in S} a : \emptyset\neq S\subseteq A\right\}$$
+>
 > no two distinct elements divide each other?
 >
 > A problem of Erdős and Sárközy. The answer is $(1+o(1))\log_2 n$: the lower bound

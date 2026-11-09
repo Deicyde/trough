@@ -46,9 +46,11 @@ Solved: stated here without proof.
 
 > Let $f_k(n)$ denote the smallest integer such that any $f_k(n)$ points in general position in
 > $\mathbb{R}^k$ contain $n$ which determine a convex polyhedron. Is it true that
+>
 > $$
 >   f_k(n) > (1+c_k)^n
 > $$
+>
 > for some constant $c_k>0$?
 >
 > A problem of Erdős [Er97e]. We read "determine a convex polyhedron" as "are in convex position",

@@ -24,6 +24,7 @@ Open: stated without proof.
 > hypergraph on $n$ vertices.
 >
 > Is there some constant $c>0$ such that
+>
 > $$ R_3(n) \geq 2^{2^{cn}}? $$
 
 ```lean

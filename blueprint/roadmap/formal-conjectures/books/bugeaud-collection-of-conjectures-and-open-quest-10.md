@@ -9,8 +9,10 @@ statement: formalized
 
 > Problem 10.61, proposed by Mendès France [MF67, Problème 1, p. 41]. For a Pisot number
 > $\alpha > 2$ put
+>
 > $$C(\alpha) = \left\{ (\alpha - 1) \sum_{k \ge 1} \varepsilon_k \alpha^{-k} :
 > \varepsilon_k \in \{0, 1\} \right\}.$$
+>
 > The problem asks to prove that $(\xi \alpha^n)_{n \ge 1}$ is not uniformly distributed
 > modulo one for any $\xi \in C(\alpha)$. In the language of [MF67] this reads
 > $C(\alpha) \cap B(\alpha) = \emptyset$, where $B(\alpha)$ is the set of $\xi$ for which

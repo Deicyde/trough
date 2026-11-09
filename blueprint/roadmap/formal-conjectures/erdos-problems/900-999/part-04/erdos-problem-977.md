@@ -32,7 +32,9 @@ The file states 5 research or textbook statements: 1 open and 4 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos977.lean#L4271](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos977.lean#L4271).
 
 > If $P(m)$ is the greatest prime divisor of $m$, then is it true that
+>
 > $$\frac{P(2^n-1)}{n}\to \infty$$
+>
 > as $n\to \infty$?
 >
 > Schinzel [Sc62] proved that $P(2^n-1)>2n$ for $n>12$. In [Er65b] Erdős also asks about $P(n!+1)$.
@@ -95,6 +97,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > The best-known unconditional result, due to Lai [La21], is that
+>
 > $$\limsup \frac{P(n!+1)}{n} \geq 1+9\log 2\approx 7.238.$$
 
 ```lean

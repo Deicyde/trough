@@ -12,7 +12,9 @@ statement: formalized
 > Let $G$ be a finite abelian group. Consider the space $\Phi(G)$ of all functions on $G$ which
 > are "convex combinations" (in the sense of complex coefficients $c_i$ with
 > $\sum |c_i| \le 1$) of functions of the form
+>
 > $$\phi(g) := \mathbb{E}_{x_1 + x_2 + x_3 = g} f_1(x_2, x_3) f_2(x_1, x_3) f_3(x_1, x_2)$$
+>
 > with $\|f_i\|_\infty \le 1$ (where $f_i : G \times G \to \mathbb{C}$).
 >
 > Let $\Phi'(G)$ be the space defined similarly, but with $f_3(x_1, x_2)$ required to be
@@ -38,6 +40,7 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 > does the support function of $\Phi$ at $a$ strictly exceed that of $\Phi'$?
 >
 > Numerical evidence suggests the answer is **yes**:
+>
 > $$\sup_{\varphi \in \Phi'(\mathbb{Z}/3\mathbb{Z})} \operatorname{Re}\langle a, \varphi \rangle
 >   \;\lt \; \sup_{\varphi \in \Phi(\mathbb{Z}/3\mathbb{Z})} \operatorname{Re}\langle a, \varphi \rangle.$$
 >

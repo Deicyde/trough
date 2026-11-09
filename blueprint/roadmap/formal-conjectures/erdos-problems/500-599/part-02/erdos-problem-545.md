@@ -28,7 +28,9 @@ Open: stated without proof.
 > Is the Ramsey number $R(G)$ maximised when $G$ is 'as complete as possible'?
 > That is, if $m=\binom{n}{2}+t$ edges with $0\leq t < n$
 > then is
+>
 > $$R(G)\leq R(H),$$
+>
 > where $H$ is the graph formed by connecting a new vertex to $t$ of the vertices of $K_n$?
 >
 > A question of Erdős and Graham. The restriction to sufficiently large $m$ excludes the

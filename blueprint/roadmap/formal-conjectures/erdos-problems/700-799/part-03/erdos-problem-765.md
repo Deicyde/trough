@@ -39,7 +39,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Give an asymptotic formula for $\mathrm{ex}(n; C_4)$.
 >
 > Erdős and Klein [Er38] proved $\mathrm{ex}(n; C_4) \asymp n^{3/2}$, and Reiman [Re58] proved
+>
 > $$\frac{1}{2\sqrt 2} \le \lim \frac{\mathrm{ex}(n; C_4)}{n^{3/2}} \le \frac12.$$
+>
 > Erdős and Rényi [ERS66], and independently Brown [Br66], gave a construction showing that if
 > $n = q^2 + q + 1$ with $q$ a prime power then $\mathrm{ex}(n; C_4) \ge \frac12 q (q+1)^2$; together
 > with Reiman's upper bound this gives $\mathrm{ex}(n; C_4) \sim \frac12 n^{3/2}$. Füredi [Fu83] proved

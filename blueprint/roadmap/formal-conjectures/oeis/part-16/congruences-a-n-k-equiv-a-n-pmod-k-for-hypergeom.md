@@ -9,7 +9,9 @@ statement: formalized
 
 > a: $a(n) = \text{hypergeometric}([n, -n], [], -1)$.
 > This is equivalent to the combinatorial sum:
+>
 > $$a(n) = \sum_{k=0}^n \binom{n}{k} \binom{n+k-1}{k} k!$$
+>
 > The expression uses $\mathbb{N}$ arithmetic throughout, safely handling
 > the subtraction via `Nat.pred`.
 >

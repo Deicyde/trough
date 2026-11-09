@@ -36,10 +36,14 @@ Open: stated without proof.
 
 > Let $f(n)$ be maximal such that there is a connected graph $G$ with $n$ vertices and $f(n)$ edges
 > such that
+>
 > $$R(K_3,G)= 2n-1.$$
+>
 > Let $F(n)$ be maximal such that every connected graph $G$ with $n$ vertices and $\leq F(n)$ edges
 > has
+>
 > $$R(K_3,G)= 2n-1.$$
+>
 > Estimate $f(n)$ and $F(n)$. In particular, is it true that $F(n)/n\to \infty$?
 >
 > This is the first part: estimate $f(n)$. The problem is due to Burr, Erdős, Faudree, Rousseau and
@@ -61,10 +65,14 @@ Solved: stated here without proof.
 
 > Let $f(n)$ be maximal such that there is a connected graph $G$ with $n$ vertices and $f(n)$ edges
 > such that
+>
 > $$R(K_3,G)= 2n-1.$$
+>
 > Let $F(n)$ be maximal such that every connected graph $G$ with $n$ vertices and $\leq F(n)$ edges
 > has
+>
 > $$R(K_3,G)= 2n-1.$$
+>
 > Estimate $f(n)$ and $F(n)$. In particular, is it true that $F(n)/n\to \infty$?
 >
 > This is the second part: estimate $F(n)$. As an order of magnitude, `=Θ`, this is known:
@@ -86,10 +94,14 @@ Solved: stated here without proof.
 
 > Let $f(n)$ be maximal such that there is a connected graph $G$ with $n$ vertices and $f(n)$ edges
 > such that
+>
 > $$R(K_3,G)= 2n-1.$$
+>
 > Let $F(n)$ be maximal such that every connected graph $G$ with $n$ vertices and $\leq F(n)$ edges
 > has
+>
 > $$R(K_3,G)= 2n-1.$$
+>
 > Estimate $f(n)$ and $F(n)$. In particular, is it true that $F(n)/n\to \infty$?
 >
 > This is the third part, asked in [BEFRS80, Section 5] and in [Er78, pp. 33-34], where Erdős says
@@ -150,7 +162,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Burr, Erdős, Faudree, Rousseau and Schelp [BEFRS80, Theorem 1(a)] proved
+>
 > $$\frac{17n+1}{15}\leq F(n),$$
+>
 > the lower bound for all $n\geq 4$.
 >
 > We state the integer-part version $n+\lfloor (2n+1)/15\rfloor\le F(n)$, which is what the proof
@@ -169,7 +183,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Burr, Erdős, Faudree, Rousseau and Schelp [BEFRS80, Theorem 1(b)] proved
+>
 > $$F(n)\leq \left(\frac{27}{4}+o(1)\right)n(\log n)^2.$$
+>
 > This is superseded by the linear bounds of `erdos_1182.variants.brandt` and
 > `erdos_1182.variants.nikiforov_rousseau`.
 
@@ -235,7 +251,9 @@ Solved: stated here without proof.
 
 > Burr, Erdős, Faudree, Rousseau and Schelp [BEFRS80, Theorem 2] proved that there is a constant
 > $A>0$ with
+>
 > $$n^{3/2}(\log n)^{1/2} \ll f(n),$$
+>
 > more precisely $An^{3/2}(\log n)^{1/2}\lt f(n)$ for all sufficiently large $n$.
 
 ```lean
@@ -252,7 +270,9 @@ Solved: stated here without proof.
 
 > Burr, Erdős, Faudree, Rousseau and Schelp [BEFRS80, Theorem 2] proved that there is a constant
 > $B>0$ with
+>
 > $$f(n)\ll n^{5/3}(\log n)^{2/3},$$
+>
 > more precisely $f(n)\lt Bn^{5/3}(\log n)^{2/3}$ for all sufficiently large $n$.
 
 ```lean
@@ -270,7 +290,9 @@ Solved: stated here without proof.
 > The first few values of $F(n)$ and $f(n)$ (beginning with $n=2$) are $1,2,5,7,8$ and $1,2,5,8,12$
 > respectively, as reported in [BEFRS80, Table I]. Brandt, Brinkmann and Harmuth [BBH98, Table 2]
 > extended these (by computer) to all $n\le 12$:
+>
 > $$F(n):\ 1,2,5,7,8,11,11,16,18,23,23,\qquad f(n):\ 1,2,5,8,12,16,20,27,33,41,49$$
+>
 > for $n=2,\ldots,12$. (The value for $n=2$ is from [BEFRS80]; [BBH98] start at $n=3$.)
 
 ```lean

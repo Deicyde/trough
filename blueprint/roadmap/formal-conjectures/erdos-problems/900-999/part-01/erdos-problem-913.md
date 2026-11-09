@@ -22,9 +22,11 @@ The file states 3 research or textbook statements: 2 open and 1 solved.
 Open: stated without proof.
 
 > Are there infinitely many $n$ such that if
+>
 > $$
 >   n(n + 1) = \prod_i p_i^{k_i}
 > $$
+>
 > is the factorisation into distinct primes then all exponents $k_i$ are distinct?
 
 ```lean

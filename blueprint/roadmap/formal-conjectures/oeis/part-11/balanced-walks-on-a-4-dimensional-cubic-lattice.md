@@ -10,7 +10,9 @@ statement: formalized
 > The sequence $a(n)$ counts the words over a $4$-ary alphabet (either empty or starting with the
 > first letter) in which each letter occurs $n$ times and adjacent letters are equal or adjacent in
 > the alphabet. Equivalently,
+>
 > $$a(n) = \sum_{k=0}^{n-1} \binom{n}{k} \binom{n-1}{k} \binom{n+k-1}{k}^2$$
+>
 > for $n \ge 1$ and $a(0) = 1$.
 >
 > *References:*

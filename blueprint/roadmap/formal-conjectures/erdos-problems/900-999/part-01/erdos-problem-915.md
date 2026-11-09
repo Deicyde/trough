@@ -64,7 +64,9 @@ Solved: stated here without proof.
 
 > The edge-disjoint reading of [erdős_915](https://www.erdosproblems.com/915). Mader [Ma73] proved
 > that if a graph with $n$ vertices has more than
+>
 > $$\frac{m}{2}(n-1)-\frac{1}{2}(e_0(G)+\cdots+e_{m-2}(G))$$
+>
 > edges then $G$ contains two vertices connected by $m$ edge-disjoint paths (where $e_r(G)$ counts
 > the number of vertices of degree $\leq r$). In particular, this confirms (and is stronger than)
 > the conjecture.

@@ -25,10 +25,13 @@ Open: stated without proof.
 > Let $s_t(n)$ be the $t$-smooth component of $n$ - that is, the product of all primes $p$ (with
 > multiplicity) dividing $n$ such that $p\lt t$. Let $f(n,t)$ count the number of distinct possible
 > values for $s_t(m)$ for $m\in [n+1,n+t]$. Is it true that
+>
 > $$f(n,t)\gg t$$
+>
 > (uniformly, for all $t$ and $n$)?
 >
 > Erdős and Graham report they can show
+>
 > $$f(n,t) \gg \frac{t}{\log t}.$$
 
 ```lean

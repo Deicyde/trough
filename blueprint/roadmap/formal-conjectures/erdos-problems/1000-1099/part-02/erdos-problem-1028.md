@@ -27,11 +27,15 @@ The file states 4 research or textbook statements: 4 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos1028.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos1028.lean).
 
 > Let
+>
 > $$H(n)=\min_f \max_{X\subseteq \{1,\ldots,n\}} \left\lvert \sum_{x\lt y\in X} f(x,y)\right\rvert,$$
+>
 > where $f$ ranges over all functions $f:\{1,\ldots,n\}^2\to \{-1,1\}$. Estimate $H(n)$.
 >
 > Erdős [Er63d] proved
+>
 > $$\frac{n}{4}\leq H(n) \ll n^{3/2}.$$
+>
 > Erdős and Spencer [ErSp71] proved that $H(n)\gg n^{3/2}$.
 
 ```lean
@@ -47,6 +51,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er63d] proved
+>
 > $$\frac{n}{4}\leq H(n) \ll n^{3/2}.$$
 
 ```lean
@@ -61,6 +66,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er63d] proved
+>
 > $$\frac{n}{4}\leq H(n) \ll n^{3/2}.$$
 
 ```lean

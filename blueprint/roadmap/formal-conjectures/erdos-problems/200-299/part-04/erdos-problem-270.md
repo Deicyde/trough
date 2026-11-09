@@ -28,19 +28,24 @@ The file states 4 research or textbook statements: 1 open and 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos270.lean#L1027](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos270.lean#L1027).
 
 > Let $f(n)\to \infty$ as $n\to \infty$. Is it true that
+>
 > $$\sum_{n\geq 1} \frac{1}{(n+1)\cdots (n+f(n))}$$
+>
 > is irrational?
 >
 > Erdős and Graham [ErGr80] write 'the answer is almost surely in the affirmative if $f(n)$ is
 > assumed to be nondecreasing'. The case $f(n)=n$ was subsequently settled by Crmarić and Kovač
 > [Ko26]. Hansen [Ha75] has
 > shown that
+>
 > $$\sum_n \frac{1}{\binom{2n}{n}}=\sum_n \frac{n!}{(n+1)\cdots (n+n)}=\frac{1}{3}+\frac{2\pi}{3^{5/2}}$$
+>
 > is transcendental.
 >
 > Crmarić and Kovač [CrKo25] have shown that the answer to this question is no in a strong sense:
 > for any $\alpha \in (0,\infty)$ there exists a function $f:\mathbb{N}\to\mathbb{N}$ such that
 > $f(n)\to \infty$ as $n\to\infty$ and
+>
 > $$\sum_{n\geq 1} \frac{1}{(n+1)\cdots (n+f(n))}=\alpha.$$
 
 ```lean
@@ -56,6 +61,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Crmarić and Kovač [CrKo25]: for any $\alpha \in (0,\infty)$ there exists a function
 > $f:\mathbb{N}\to\mathbb{N}$ such that $f(n)\to \infty$ as $n\to\infty$ and
+>
 > $$\sum_{n\geq 1} \frac{1}{(n+1)\cdots (n+f(n))}=\alpha.$$
 
 ```lean

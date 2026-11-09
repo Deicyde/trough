@@ -20,10 +20,13 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/blob/d82a35ecc798ada27f82a88b559f25b753f63a73/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/blob/d82a35ecc798ada27f82a88b559f25b753f63a73/PrimeNumberTheoremAnd/IEANTN/Erdos392.lean).
 
 > Let $A(n)$ denote the least value of $t$ such that
+>
 > $$
 >   n! = a_1 \cdots a_t
 > $$
+>
 > with $a_1 \leq \cdots \leq a_t\leq n^2$. Then
+>
 > $$
 >   A(n) = \frac{n}{2} - \frac{n}{2\log n} + o\left(\frac{n}{\log n}\right).
 > $$
@@ -42,6 +45,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > If we change the condition to $a_t \leq n$ it can be shown that
+>
 > $$
 >   A(n) = n - \frac{n}{\log n} + o\left(\frac{n}{\log n}\right)
 > $$

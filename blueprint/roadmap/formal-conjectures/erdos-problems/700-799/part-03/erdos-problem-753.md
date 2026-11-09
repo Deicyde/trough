@@ -28,14 +28,18 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > vertices receive distinct colours.
 >
 > Does there exist some constant $c>0$ such that
+>
 > $$\chi_L(G)+\chi_L(G^c)> n^{1/2+c}$$
+>
 > for every graph $G$ on $n$ vertices (where $G^c$ is the complement of $G$)?
 >
 > A problem of Erdős, Rubin, and Taylor.
 >
 > The answer is no: Alon [Al92] proved that, for every $n$, there exists a graph $G$ on $n$ vertices
 > such that
+>
 > $$\chi_L(G)+\chi_L(G^c)\ll (n\log n)^{1/2},$$
+>
 > where the implied constant is absolute.
 
 ```lean
@@ -52,7 +56,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Alon [Al92] proved that, for every $n$, there exists a graph $G$ on $n$ vertices such that
+>
 > $$\chi_L(G)+\chi_L(G^c)\ll (n\log n)^{1/2},$$
+>
 > where the implied constant is absolute.
 
 ```lean

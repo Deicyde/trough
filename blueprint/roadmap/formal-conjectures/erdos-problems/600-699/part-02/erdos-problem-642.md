@@ -57,6 +57,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Draganić, Methuku, Munhá Correia, and Sudakov [DMMS24] have improved this to
+>
 > $$f(n) \ll n(\log n)^8.$$
 
 ```lean

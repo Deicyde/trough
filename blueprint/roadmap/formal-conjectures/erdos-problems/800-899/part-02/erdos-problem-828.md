@@ -20,7 +20,10 @@ The file states 3 research or textbook statements: 2 open and 1 textbook result.
 Open: stated without proof.
 
 > Is it true that, for any $a \in \mathbb{Z}$, there are infinitely many $n$ such that
-> $$\phi(n) | n + a$$?
+>
+> $$\phi(n) | n + a$$
+>
+> ?
 
 ```lean
 theorem erdos_828 : ∀ a : ℤ, Set.Infinite {n : ℕ | ↑(φ n) ∣ n + a}

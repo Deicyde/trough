@@ -22,7 +22,9 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here without proof.
 
 > If $G$ is a graph on $n$ vertices which has no two adjacent vertices of degree $\geq 3$ then
+>
 > $$R(G)\ll n,$$
+>
 > where the implied constant is absolute.
 >
 > A problem of Burr and Erdős. Solved in the affirmative by Alon [Al94].

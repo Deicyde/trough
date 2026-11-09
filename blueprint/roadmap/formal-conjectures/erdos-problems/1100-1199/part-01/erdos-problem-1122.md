@@ -26,14 +26,18 @@ Open: stated without proof.
 
 > Let $f:\mathbb{N}\to \mathbb{R}$ be an additive function (i.e. $f(ab)=f(a)+f(b)$ whenever
 > $(a,b)=1$). Let
+>
 > $$A=\{ n \geq 1: f(n+1)< f(n)\}.$$
+>
 > If $\lvert A\cap [1,X]\rvert =o(X)$ then must $f(n)=c\log n$ for some $c\in \mathbb{R}$?
 >
 > The condition $\lvert A\cap [1,X]\rvert =o(X)$ says that $A$ has natural density $0$.
 >
 > Partial progress was made by Mangerel [Ma22], who proved that this is true for completely
 > additive $f$ if
+>
 > $$\lvert A\cap [1,X]\rvert \ll \frac{X}{(\log X)^{2+c}}$$
+>
 > for some $c>0$, and if $f(p)$ does not have very large values (in a certain technical sense).
 >
 > See also `erdos_491`.

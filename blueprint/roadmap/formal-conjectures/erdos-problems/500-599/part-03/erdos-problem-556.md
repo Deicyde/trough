@@ -9,7 +9,9 @@ statement: formalized
 
 > A problem of Bondy and Erdős: for the cycle $C_n$ with $n \ge 4$, the $3$-colour Ramsey number
 > satisfies
+>
 > $$R(C_n; 3) \le 4n - 3.$$
+>
 > The triangle is excluded: $C_3 = K_3$ and $R(K_3; 3) = 17 > 9$ [Rad]. The bound is best possible for odd $n$, where equality is conjectured (and known for large odd
 > $n$). Łuczak proved the asymptotic bound $R(C_n; 3) \le (4 + o(1))n$, and $(3 + o(1))n$ for even
 > $n$; Kohayakawa, Simonovits and Skokan settled large odd $n$, and Benevides and Skokan large even
@@ -39,7 +41,9 @@ The file states 6 research or textbook statements: 1 open and 5 solved.
 Open: stated without proof.
 
 > Erdős Problem 556 (Bondy–Erdős): for all $n \ge 4$,
+>
 > $$R(C_n; 3) \le 4n - 3.$$
+>
 > The case $n = 3$ is excluded since $R(K_3; 3) = 17$.
 
 ```lean
@@ -54,6 +58,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Łuczak's asymptotic bound [Lu99]: for every $\varepsilon > 0$, for all sufficiently large $n$,
+>
 > $$R(C_n; 3) \le (4 + \varepsilon)n.$$
 
 ```lean
@@ -70,6 +75,7 @@ Solved: stated here without proof.
 
 > Łuczak's asymptotic bound for even $n$ [Lu99]: for every $\varepsilon > 0$, for all sufficiently
 > large even $n$,
+>
 > $$R(C_n; 3) \le (3 + \varepsilon)n.$$
 
 ```lean
@@ -100,6 +106,7 @@ Solved: stated here without proof.
 
 > Kohayakawa, Simonovits and Skokan [KSS05] settled the conjecture for large odd $n$: for all
 > sufficiently large odd $n$,
+>
 > $$R(C_n; 3) = 4n - 3.$$
 
 ```lean
@@ -115,6 +122,7 @@ Solved: stated here without proof.
 
 > Benevides and Skokan [BeSk09] settled the even case for large $n$: for all sufficiently large
 > even $n$,
+>
 > $$R(C_n; 3) = 2n.$$
 
 ```lean

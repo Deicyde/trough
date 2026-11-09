@@ -20,9 +20,11 @@ The file states 4 research or textbook statements: 1 open, 2 solved and 1 textbo
 Open: stated without proof.
 
 > Let $A\subseteq\mathbb{N}$ be an infinite set. Is
+>
 > $$
 > \sum_{n\in A} \frac{1}{2^n - 1}
 > $$
+>
 > irrational?
 
 ```lean
@@ -37,9 +39,11 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Textbook result, proved here.
 
 > Show that
+>
 > $$
 > \sum_{n} \frac{1}{2^n - 1} = \sum_{n} \frac{d(n)}{2^n},
 > $$
+>
 > where $d(n)$ is the number of divisors of $n$.
 
 ```lean
@@ -54,9 +58,11 @@ Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-numbe
 Solved: stated here; a Lean proof is at [https://github.com/wcook04/plectis-erdos-lean/blob/c4eab2571b4692ee9c08d3ec138176f7fbfa09a9/verification/FCMergedIntegerAdapters/research/adapters/FormalConjecturesAdapter.lean#L121-L134](https://github.com/wcook04/plectis-erdos-lean/blob/c4eab2571b4692ee9c08d3ec138176f7fbfa09a9/verification/FCMergedIntegerAdapters/research/adapters/FormalConjecturesAdapter.lean#L121-L134).
 
 > Show that
+>
 > $$
 > \sum_{n} \frac{d(n)}{2^n}
 > $$
+>
 > is irrational.
 >
 > [Er48] Erdős, P., _On arithmetical properties of Lambert series_. J. Indian Math. Soc. (N.S.) (1948), 63-66.
@@ -74,9 +80,11 @@ Solved: stated here; a Lean proof is at [https://github.com/wcook04/plectis-erdo
 
 > Let $A \subseteq \mathbb{N}$ be infinite with $\sum_{a \in A} 1/a < \infty$.
 > For every integer base $b \ge 2$, the series
+>
 > $$
 > \sum_{a \in A} \frac{1}{b^a - 1}
 > $$
+>
 > is irrational. No pairwise coprimality assumption is needed. Exponent zero
 > contributes zero under Lean's real-division convention.
 >

@@ -22,7 +22,11 @@ The file states 4 research or textbook statements: 4 solved. It also has 1 test 
 
 Solved: stated here without proof.
 
-> In 1950, Erdős [Er50c] proved the upper bound $$N(b) \ll \log b / \log \log b$$.
+> In 1950, Erdős [Er50c] proved the upper bound
+>
+> $$N(b) \ll \log b / \log \log b$$
+>
+> .
 > [Er50c] Erdős, P., Az ${1}/{x_1} + {1}/{x_2} + \ldots + {1}/{x_n} =A/B$ egyenlet eg\'{E}sz sz\'{A}m\'{u} megold\'{A}sairól. Mat. Lapok (1950), 192-210.
 
 ```lean
@@ -37,7 +41,11 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 
 Solved: stated here; a Lean proof is at [https://github.com/thepriceisright/publications/blob/8f055eb3fd1485477c92cbfbdfa4b3c56f192610/erdos/304/Lower1950.lean](https://github.com/thepriceisright/publications/blob/8f055eb3fd1485477c92cbfbdfa4b3c56f192610/erdos/304/Lower1950.lean).
 
-> In 1950, Erdős [Er50c] proved the lower bound $$\log \log b \ll N(b)$$.
+> In 1950, Erdős [Er50c] proved the lower bound
+>
+> $$\log \log b \ll N(b)$$
+>
+> .
 > [Er50c] Erdős, P., Az ${1}/{x_1} + {1}/{x_2} + \ldots + {1}/{x_n} =A/B$ egyenlet eg\'{E}sz sz\'{A}m\'{u} megold\'{A}sairól. Mat. Lapok (1950), 192-210.
 
 ```lean
@@ -52,7 +60,11 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 
 Solved: stated here without proof.
 
-> In 1985 Vose [Vo85] proved the upper bound $$N(b) \ll \sqrt{\log b}$$.
+> In 1985 Vose [Vo85] proved the upper bound
+>
+> $$N(b) \ll \sqrt{\log b}$$
+>
+> .
 > [Vo85] Vose, Michael D., Egyptian fractions. Bull. London Math. Soc. (1985), 21-24.
 
 ```lean
@@ -67,7 +79,11 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 
 Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/ShortEgyptian/Main.lean#L33](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/ShortEgyptian/Main.lean#L33).
 
-> Is it true that $$N(b) \ll \log \log b$$?
+> Is it true that
+>
+> $$N(b) \ll \log \log b$$
+>
+> ?
 >
 > Yes. This was proved by an internal OpenAI model in September 2026 [OAI26a]; see the linked
 > Lean proof.

@@ -46,6 +46,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Pyber [Py93] proved that
+>
 > $$\log f(n)\asymp n^2.$$
 
 ```lean
@@ -60,7 +61,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Roney-Dougal and Tracey [RoTr25] have proved that
+>
 > $$\log f(n)=\left(\frac{1}{16}+o(1)\right)n^2.$$
+>
 > Here $\log$ is the logarithm to base $2$, as in [RoTr25].
 
 ```lean
@@ -76,7 +79,9 @@ Solved: stated here without proof.
 
 > Roney-Dougal and Tracey [RoTr25, Theorem 1] proved that there are absolute constants
 > $\alpha>0$ and $\beta$ such that for all integers $n>1$
+>
 > $$2^{n^2/16+\alpha n\log n}\leq f(n)\leq 2^{n^2/16+\beta n^{3/2}},$$
+>
 > where $\log$ is the logarithm to base $2$. This implies the previous variant.
 
 ```lean

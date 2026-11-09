@@ -35,12 +35,16 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > [Yo97] proved that $N(n)\geq \log n-O(\log\log n)$.
 >
 > Croot [Cr99] proved that every integer at most
+>
 > $$\leq \sum_{n\leq N}\frac{1}{n}-(\tfrac{9}{2}+o(1))\frac{(\log\log N)^2}{\log N}$$
+>
 > can be so represented.
 >
 > If $F(N)$ counts the number of integers which can be represented in this fashion, then the
 > current best lower bound known is
+>
 > $$F(N) \geq \log N+\gamma -\left(\frac{\pi^2}{3}+o(1)\right)\frac{(\log\log N)^2}{\log N}$$
+>
 > due to Yokota [Yo02].
 >
 > The answer to the question is no: $F(N) \sim \log N$. Here $0$ (the empty sum) is counted.

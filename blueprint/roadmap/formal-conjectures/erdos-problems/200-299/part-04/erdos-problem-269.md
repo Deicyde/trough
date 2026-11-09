@@ -22,7 +22,9 @@ Open: stated without proof.
 > Let $P$ be a finite set of primes with $|P| \ge 2$ and let
 > $\{a_1 < a_2 < \dots\}$ be the set of positive integers whose prime factors
 > are all in $P$. Is the sum
+>
 > $$ \sum_{n=1}^\infty \frac{1}{[a_1,\ldots,a_n]} $$
+>
 > rational?
 
 ```lean
@@ -40,7 +42,9 @@ Open: stated without proof.
 > Let $P$ be a finite set of primes with $|P| \ge 2$ and let
 > $\{a_1 < a_2 < \dots\}$ be the set of positive integers whose prime factors
 > are all in $P$. Is the sum
+>
 > $$ \sum_{n=1}^\infty \frac{1}{[a_1,\ldots,a_n]} $$
+>
 > irrational?
 
 ```lean

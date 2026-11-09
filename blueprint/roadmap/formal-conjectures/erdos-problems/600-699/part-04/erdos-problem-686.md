@@ -23,7 +23,9 @@ The file states 8 research or textbook statements: 4 open and 4 solved.
 Open: stated without proof.
 
 > Can every integer $N≥2$ be written as
+>
 > $$N=\frac{\prod_{1\leq i\leq k}(m+i)}{\prod_{1\leq i\leq k}(n+i)}$$
+>
 > for some $k≥2$ and $m≥n+k$?
 
 ```lean
@@ -39,7 +41,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Can every square $N≥2$ be written as
+>
 > $$N=\frac{\prod_{1\leq i\leq k}(m+i)}{\prod_{1\leq i\leq k}(n+i)}$$
+>
 > for some $k≥2$ and $m≥n+k$?
 
 ```lean
@@ -55,7 +59,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Can $4$ be written as
+>
 > $$4=\frac{\prod_{1\leq i\leq k}(m+i)}{\prod_{1\leq i\leq k}(n+i)}$$
+>
 > for some $k≥2$ and $m≥n+k$?
 
 ```lean
@@ -71,7 +77,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Proved here.
 
 > The number $4$ cannot be written as
+>
 > $$4=\frac{\prod_{1\leq i\leq 2}(m+i)}{\prod_{1\leq i\leq 2}(n+i)}$$
+>
 > for $m≥n+2$!
 
 ```lean
@@ -87,7 +95,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > The number $4$ cannot be written as
+>
 > $$4=\frac{\prod_{1\leq i\leq 3}(m+i)}{\prod_{1\leq i\leq 3}(n+i)}$$
+>
 > for $m≥n+3$!
 >
 > See [comment section on erdosproblems.com](https://www.erdosproblems.com/forum/thread/686#post-4599)
@@ -105,7 +115,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Proved here.
 
 > Can $9$ be written as
+>
 > $$9=\frac{\prod_{1\leq i\leq k}(m+i)}{\prod_{1\leq i\leq k}(n+i)}$$
+>
 > for some $k≥2$ and $m≥n+k$?
 
 ```lean
@@ -121,7 +133,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Open: stated without proof.
 
 > Can $25$ be written as
+>
 > $$25=\frac{\prod_{1\leq i\leq k}(m+i)}{\prod_{1\leq i\leq k}(n+i)}$$
+>
 > for some $k≥2$ and $m≥n+k$?
 
 ```lean
@@ -137,7 +151,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Proved here.
 
 > Can every non-square $N≥2$ be written as
+>
 > $$N=\frac{\prod_{1\leq i\leq k}(m+i)}{\prod_{1\leq i\leq k}(n+i)}$$
+>
 > for some $k≥2$ and $m≥n+k$?
 
 ```lean

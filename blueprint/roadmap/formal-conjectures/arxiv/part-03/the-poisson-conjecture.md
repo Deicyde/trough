@@ -26,7 +26,9 @@ statement: formalized
 >
 > By [AvdE07], Theorem 7 (the "United Conjectures Theorem"), for every `n` there is a chain
 > of implications
+>
 > $$JC_{2n} \Longrightarrow PC_n \Longrightarrow DC_n \Longrightarrow JC_n,$$
+>
 > where $JC_n$ is the Jacobian Conjecture in dimension `n` and $DC_n$ the Dixmier Conjecture
 > for the `n`-th Weyl algebra (the implication $DC_n \Longrightarrow JC_n$ being classical [BCW82]).
 > Since the Jacobian conjecture was disproved in dimension $3$ [Alp26] — and hence in every

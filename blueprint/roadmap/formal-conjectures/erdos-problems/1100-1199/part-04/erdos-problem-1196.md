@@ -19,7 +19,11 @@ The file states 1 research or textbook statement: 1 solved.
 
 Solved: stated here; a Lean proof is at [https://github.com/math-inc/Erdos1196/blob/02fba13be7487cc51315f68d8fa7ef277633d3c8/PrimitiveSetsAboveX/FormalConjecturesErdos1196.lean](https://github.com/math-inc/Erdos1196/blob/02fba13be7487cc51315f68d8fa7ef277633d3c8/PrimitiveSetsAboveX/FormalConjecturesErdos1196.lean).
 
-> Is it true that, for any $x$, if $A\subset [x,\infty)$ is a primitive set of integers (so that no distinct elements of $A$ divide each other) then$$\sum_{a\in A}\frac{1}{a\log a}&#60; 1+o(1),$$where the $o(1)$ term $\to 0$ as $x\to \infty$?
+> Is it true that, for any $x$, if $A\subset [x,\infty)$ is a primitive set of integers (so that no distinct elements of $A$ divide each other) then
+>
+> $$\sum_{a\in A}\frac{1}{a\log a}< 1+o(1),$$
+>
+> where the $o(1)$ term $\to 0$ as $x\to \infty$?
 > -
 
 ```lean

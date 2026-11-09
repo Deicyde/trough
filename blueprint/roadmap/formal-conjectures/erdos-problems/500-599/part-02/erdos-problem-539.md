@@ -37,7 +37,11 @@ The file states 8 research or textbook statements: 1 open and 7 solved.
 Open: stated without proof.
 
 > Let $h(n)$ be maximal such that, for any set $A\subseteq \mathbb{N}$ of size $n$, the
-> set$$\left\{ \frac{a}{(a,b)}: a,b\in A\right\}$$has size at least $h(n)$. Estimate $h(n)$.
+> set
+>
+> $$\left\{ \frac{a}{(a,b)}: a,b\in A\right\}$$
+>
+> has size at least $h(n)$. Estimate $h(n)$.
 
 ```lean
 theorem erdos_539 :
@@ -51,7 +55,11 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/erdos-539-sqrt-disproof/blob/f4b14f9ef32c111162d3fd587e1c65b27a1524d5/lean/Erdos539SqrtFC.lean#L41-L44](https://github.com/KitaKen1/erdos-539-sqrt-disproof/blob/f4b14f9ef32c111162d3fd587e1c65b27a1524d5/lean/Erdos539SqrtFC.lean#L41-L44).
 
 > Let $h(n)$ be maximal such that, for any set $A\subseteq \mathbb{N}$ of size $n$, the
-> set$$\left\{ \frac{a}{(a,b)}: a,b\in A\right\}$$has size at least $h(n)$.
+> set
+>
+> $$\left\{ \frac{a}{(a,b)}: a,b\in A\right\}$$
+>
+> has size at least $h(n)$.
 > Is $h(n) = \Theta(\sqrt{n})$?
 
 ```lean
@@ -65,7 +73,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 
 Solved: stated here without proof.
 
-> Erdős and Szemerédi proved that$$n^{1/2} \ll h(n)$$.
+> Erdős and Szemerédi proved that
+>
+> $$n^{1/2} \ll h(n)$$
+>
+> .
 
 ```lean
 theorem erdos_539.variants.sq_isBigO :
@@ -92,7 +104,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/erdos-539-formal-conjectures/blob/79897cf9241390eb168572f4a481e29e0e64b5f7/lean/Erdos539/FC.lean#L282-L296](https://github.com/KitaKen1/erdos-539-formal-conjectures/blob/79897cf9241390eb168572f4a481e29e0e64b5f7/lean/Erdos539/FC.lean#L282-L296).
 
 > Let $h(n)$ be maximal such that, for any set $A\subseteq \mathbb{N}$ of size $n$, the
-> set$$\left\{ \frac{a}{(a,b)}: a,b\in A\right\}$$has size at least $h(n)$.
+> set
+>
+> $$\left\{ \frac{a}{(a,b)}: a,b\in A\right\}$$
+>
+> has size at least $h(n)$.
 > Is $h(n) = \Theta(n^{2/3})$?
 > The answer is negative; see [Sc+26, Theorem A.1] and the linked Lean proof.
 
@@ -108,7 +124,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 
 Solved: stated here without proof.
 
-> Granville and Roesler [GR99] showed that $$h(n)\ll n^{2/3}$$.
+> Granville and Roesler [GR99] showed that
+>
+> $$h(n)\ll n^{2/3}$$
+>
+> .
 
 ```lean
 theorem erdos_539.variants.isBigO_sq_cube_root :
@@ -136,9 +156,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/erdos-539-formal-conjectures/blob/79897cf9241390eb168572f4a481e29e0e64b5f7/lean/Erdos539/FC.lean#L282-L296](https://github.com/KitaKen1/erdos-539-formal-conjectures/blob/79897cf9241390eb168572f4a481e29e0e64b5f7/lean/Erdos539/FC.lean#L282-L296).
 
 > From [Er73]: The determination of
+>
 > $$
 >   \lim_{n\to\infty}\frac{\log(h(n))}{\log(n)}
 > $$
+>
 > will perhaps be not too difficult.
 > The limit is $1/2$; see [Sc+26, Theorem A.1] and the linked Lean proof.
 

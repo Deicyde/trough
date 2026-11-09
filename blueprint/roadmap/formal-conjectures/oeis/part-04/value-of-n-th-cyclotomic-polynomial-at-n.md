@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n) = \Phi_n(n)$ gives the value of the $n$-th cyclotomic polynomial evaluated
 > at $n$:
+>
 > $$a(n) = |\Phi_n(n)|$$
 >
 > *References:*

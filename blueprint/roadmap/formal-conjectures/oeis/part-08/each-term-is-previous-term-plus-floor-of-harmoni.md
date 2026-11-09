@@ -23,7 +23,9 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/oeis-a11483
 
 > Conjecture based on OEIS A114831: What is this sequence, asymptotically?
 > If the limit exists, the ratio of consecutive terms must tend to $\sqrt{3}$:
+>
 > $$ \lim_{n \to \infty} \frac{a(n+1)}{a(n)} = \sqrt{3}. $$
+>
 > That's because $a(n)$ is positive, monotonically increasing ($a(n) > a(n-1)$)
 > and $a(n+2) \geq a(n+1) + a(n)$.
 > So $a(n)$ grows exponentially, at least as fast as the Fibonnaci numbers.

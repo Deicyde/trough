@@ -27,7 +27,9 @@ Open: stated without proof.
 > $\alpha \binom{\lvert X\rvert}{2}$ many edges of each colour.
 >
 > Prove that, for every $0\leq \alpha < 1/2$,
+>
 > $$F(n,\alpha)\sim c_\alpha\log n$$
+>
 > for some constant $c_\alpha$ depending only on $\alpha$.
 >
 > This problem is #39 in Ramsey Theory in the graphs problem collection.

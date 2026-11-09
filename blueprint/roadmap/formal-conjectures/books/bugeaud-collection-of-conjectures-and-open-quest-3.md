@@ -26,7 +26,9 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/bugeaud-10-
 > Problem 10.5 (first part). Let $\mathbb{K}$ be a real number field. Then, for any
 > $\varepsilon > 0$, there exists a lacunary sequence $(t_n)_{n \ge 1}$ of positive numbers
 > in $\mathbb{K}$ such that
+>
 > $$\limsup_{n \to \infty} \{\xi t_n\} \ge 1 - \varepsilon,$$
+>
 > for any real number $\xi$ not in $\mathbb{K}$.
 >
 > This follows from the stronger `problem_10_5_moreover` via
@@ -58,7 +60,9 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/bugeaud-10-
 > A Lean 4 formalization by Kenta Kitamura
 > ([KitaKen1 on GitHub](https://github.com/KitaKen1)) proves this statement using the
 > explicit positive integer sequence
+>
 > $$t_{Jk+r} = (J+r)2^k \qquad (k \ge 0,\ 0 \le r < J).$$
+>
 > Here $Q$ is a positive integer chosen so that $Q > 1/\varepsilon$, and $J = 10Q!$.
 > Since $\mathbb{K}$ contains $\mathbb{Q}$, every term belongs to $\mathbb{K}$.
 > The proof verifies that this sequence is lacunary and has the required cluster-point

@@ -31,6 +31,7 @@ The file states 3 research or textbook statements: 1 open and 2 solved.
 Open: stated without proof.
 
 > Is it true that
+>
 > $$\mathrm{ex}(n;\{C_3,C_4\})\sim (n/2)^{3/2}?$$
 >
 > A problem of Erdős and Simonovits. This problem is asking whether the threshold is the same as
@@ -52,6 +53,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős and Simonovits [ErSi82] proved that
+>
 > $$\mathrm{ex}(n;\{C_4,C_5\})=(n/2)^{3/2}+O(n).$$
 >
 > The source writes an equality; only the upper bound is stated here.
@@ -70,7 +72,9 @@ Solved: stated here without proof.
 
 > Kővári, Sós, and Turán [KST54] proved that the extremal number of edges for containing either
 > $C_4$ or an odd cycle of any length is $\sim (n/2)^{3/2}$, that is,
+>
 > $$\mathrm{ex}(n;\{C_4, C_3, C_5, C_7, \ldots\})\sim (n/2)^{3/2}.$$
+>
 > Equivalently, the maximum number of edges of a bipartite $C_4$-free graph on $n$ vertices is
 > $\sim (n/2)^{3/2}$. The attribution follows erdosproblems.com; the matching lower bound comes from
 > finite-geometry constructions.

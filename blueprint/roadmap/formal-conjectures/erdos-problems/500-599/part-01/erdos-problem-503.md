@@ -66,6 +66,7 @@ Category `research solved`; AMS [51 Geometry](../../../by-subject/part-02/51-geo
 Solved: stated here without proof.
 
 > The best upper bound known in general is due to Blokhius [Bl84] who showed that
+>
 > $$
 > |A| \leq \binom{n + 2}{2}
 > $$

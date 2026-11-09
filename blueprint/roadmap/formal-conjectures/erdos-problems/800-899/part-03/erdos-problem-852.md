@@ -28,7 +28,9 @@ Open: stated without proof.
 > Let $d_n = p_{n+1} - p_n$, where $p_n$ is the $n$th prime. Let $h(x)$ be maximal such that for
 > some $n < x$ the numbers $d_n, d_{n+1}, \ldots, d_{n+h(x)-1}$ are all distinct [Er85c]. Estimate
 > $h(x)$. In particular, is it true that
+>
 > $$h(x) > (\log x)^c$$
+>
 > for some constant $c > 0$?
 >
 > The statement avoids defining $h$. Since $h(x)$ is the longest such run, $h(x) > y$ holds exactly
@@ -53,6 +55,7 @@ Open: stated without proof.
 > Let $d_n = p_{n+1} - p_n$, where $p_n$ is the $n$th prime. Let $h(x)$ be maximal such that for
 > some $n < x$ the numbers $d_n, d_{n+1}, \ldots, d_{n+h(x)-1}$ are all distinct [Er85c]. Estimate
 > $h(x)$. In particular, is it true that
+>
 > $$h(x) = o(\log x)?$$
 >
 > The statement avoids defining $h$. It says that for every $\varepsilon > 0$ and all large real $x$,

@@ -13,7 +13,9 @@ statement: formalized
 >
 > Conjecture 3 (open since 2020) asserts that for every $r$-regular graph $G$
 > (every vertex has degree $r$),
+>
 > $$i(G) \le \mu^*(G),$$
+>
 > where $i(G)$ is the independent domination number and $\mu^*(G)$ the saturation
 > number (minimum size of a maximal matching).
 
@@ -27,6 +29,7 @@ Open: stated without proof.
 
 > TxGraffiti [Conjecture 3](https://arxiv.org/abs/2507.17780):
 > for every $r$-regular graph $G$ ($r \ge 1$),
+>
 > $$i(G) \le \mu^*(G).$$
 >
 > This conjecture is **open**.

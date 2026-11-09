@@ -30,6 +30,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A\subseteq \mathbb{N}$ be an additive basis (of any finite order) such that
 > $\lvert A\cap \{1,\ldots,N\}\rvert=o(N)$. Is it true that
+>
 > $$
 > \lim_{N\to \infty}\frac{\lvert (A+A)\cap \{1,\ldots,N\}\rvert}
 > {\lvert A\cap \{1,\ldots,N\}\rvert}=\infty?
@@ -80,10 +81,12 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conjectures/blob/9e4cd5617edacb313fb1da32adb4751f1fa8f603/FormalConjectures/ErdosProblems/337.lean#L95](https://github.com/mo271/formal-conjectures/blob/9e4cd5617edacb313fb1da32adb4751f1fa8f603/FormalConjectures/ErdosProblems/337.lean#L95).
 
 > Ruzsa and Turjányi do prove (under the same hypotheses) that
+>
 > $$
 > \lim_{N\to \infty}\frac{\lvert (A+A+A)\cap \{1,\ldots,3N\}\rvert}
 > {\lvert A\cap \{1,\ldots,N\}\rvert}=\infty,
 > $$
+>
 > and conjecture that the same should be true with $(A+A)\cap \{1,\ldots,2N\}$ in the numerator.
 >
 > This follows from the Plünnecke–Ruzsa inequality applied to $B=A\cap\{0,\ldots,N\}$: if $A$ is a
@@ -107,6 +110,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conjectures/blob/9e4cd5617edacb313fb1da32adb4751f1fa8f603/FormalConjectures/ErdosProblems/337.lean#L240](https://github.com/mo271/formal-conjectures/blob/9e4cd5617edacb313fb1da32adb4751f1fa8f603/FormalConjectures/ErdosProblems/337.lean#L240).
 
 > Ruzsa and Turjányi do prove (under the same hypotheses) that
+>
 > $$
 > \lim_{N\to \infty}\frac{\lvert (A+A+A)\cap \{1,\ldots,3N\}\rvert}
 > {\lvert A\cap \{1,\ldots,N\}\rvert}=\infty.

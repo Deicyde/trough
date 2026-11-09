@@ -32,11 +32,15 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/68da20b96673899166e94638f5a7fffeb7231d35/src/latest/ErdosProblems/Erdos206.lean](https://github.com/plby/lean-proofs/blob/68da20b96673899166e94638f5a7fffeb7231d35/src/latest/ErdosProblems/Erdos206.lean).
 
 > Let $x>0$ be a real number. For any $n\geq 1$ let
+>
 > $$R_n(x) = \sum_{i=1}^n\frac{1}{m_i}\lt x$$
+>
 > be the maximal sum of $n$ distinct unit fractions which is $\lt x$.
 >
 > Is it true that, for almost all $x$, for sufficiently large $n$, we have
+>
 > $$R_{n+1}(x)=R_n(x)+\frac{1}{m},$$
+>
 > where $m$ is minimal such that $m$ does not appear in $R_n(x)$ and the right-hand side is
 > $\lt x$? (That is, are the best underapproximations eventually always constructed in a 'greedy'
 > fashion?)

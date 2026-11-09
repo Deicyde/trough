@@ -29,7 +29,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Is it true that, for each fixed $n$ and fixed sizes $k_1,\ldots,k_n \geq 4$, there are only finitely
 > many collections of disjoint intervals $I_1,\ldots,I_n$ of size $\lvert I_i\rvert = k_i$ for
-> $1\leq i\leq n$ such that$$\prod_{1\leq i\leq n}\prod_{m\in I_i}m$$is a square?
+> $1\leq i\leq n$ such that
+>
+> $$\prod_{1\leq i\leq n}\prod_{m\in I_i}m$$
+>
+> is a square?
 >
 > The number of intervals and their sizes are fixed: the list `ks` of sizes determines both. Without
 > this restriction finiteness fails, by a result of Skałba (see [Ul05]).

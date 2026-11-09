@@ -49,7 +49,9 @@ Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-com
 Solved: stated here without proof.
 
 > **Simkin's theorem.** There is a constant $1.94 < \alpha < 1.9449$ such that
+>
 > $$\lim_{n \to \infty} \frac{Q(n)^{1/n}}{n} = e^{-\alpha},$$
+>
 > that is, $Q(n) = ((1+o(1))\, n e^{-\alpha})^n$ [Si23, Theorem 1.1]. The constant $\alpha$ is
 > defined in [Si23] as the solution of a convex optimisation problem over Borel probability measures
 > on the square $[-1/2, 1/2]^2$. The limit determines $\alpha$ uniquely. Nobel, Agrawal and Boyd
@@ -127,7 +129,9 @@ Solved: stated here without proof.
 
 > **Eberhard, Manners and Mrazović.** For odd $n$, the number $s_n$ of pairs $(\pi_1, \pi_2)$ of
 > bijections $\{1, \dots, n\} \to \mathbb{Z}/n\mathbb{Z}$ with $\pi_1 + \pi_2$ also a bijection is
+>
 > $$s_n = (e^{-1/2} + o(1))\, \frac{(n!)^3}{n^{n-1}}$$
+>
 > [EMM19, Theorem 1.2]. [Gr24] refers to this paper for the variant of the toroidal question where
 > only $\pi_1$, $\pi_2$ and $\pi_1 - \pi_2$ are required to be bijections. Replacing $\pi_2$ by
 > $-\pi_2$ shows that this variant has the same count $s_n$. For even $n$, $s_n = 0$

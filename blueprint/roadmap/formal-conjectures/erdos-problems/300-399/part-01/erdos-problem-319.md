@@ -21,13 +21,17 @@ Open: stated without proof.
 
 > What is the size of the largest $A\subseteq\{1, \dots, N\}$ such that there is a function
 > $\delta : A \to \{-1, 1\}$ such that
+>
 > $$
 >   \sum_{n\in A} \frac{\delta n}{n} = 0
 > $$
+>
 > and
+>
 > $$
 >   \sum_{n\in A'}\frac{\delta n}{n} \neq 0
 > $$
+>
 > for all non-empty $A'\subsetneq A$.
 
 ```lean
@@ -46,13 +50,17 @@ Solved: stated here without proof.
 
 > Let $c(N)$ be the size of the largest $A\subseteq\{1, \dots, N\}$ such that there is a function
 > $\delta : A \to \{-1, 1\}$ such that
+>
 > $$
 >   \sum_{n\in A} \frac{\delta n}{n} = 0
 > $$
+>
 > and
+>
 > $$
 >   \sum_{n\in A'}\frac{\delta n}{n} \neq 0
 > $$
+>
 > for all non-empty $A'\subsetneq A$. What is $\Theta(c(N))$?
 >
 > Trivially $c(N) \leq N$, and `erdos_319.variants.lb` gives $c(N) \geq (1 - \frac{1}{e} + o(1))N$,
@@ -74,9 +82,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Adenwalla has observed that a lower bound (on the maximum size of $A$) of
+>
 > $$
 >   |A| \geq (1 - \frac{1}{e} + o(1))N
 > $$
+>
 > follows from the main result of Croot [Cr01].
 >
 > [Cr01] Croot, III, Ernest S., _On unit fractions with denominators in short intervals_.

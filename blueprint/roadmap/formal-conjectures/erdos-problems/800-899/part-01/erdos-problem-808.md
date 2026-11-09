@@ -27,9 +27,13 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $c,\epsilon>0$ and $n$ be sufficiently large. If $A\subset \mathbb{N}$ has $\lvert A\rvert=n$
 > and $G$ is any graph on $A$ with at least $n^{1+c}$ edges then
+>
 > $$\max(\lvert A+_GA\rvert,\lvert A\cdot_G A\rvert) \geq \lvert A\rvert^{1+c-\epsilon},$$
+>
 > where
+>
 > $$A+_GA = \{ a+b : (a,b)\in G\}$$
+>
 > and similarly for $A\cdot_GA$.
 >
 > This strong conjecture of Erdős and Szemerédi [ErSz83] strengthens Erdős Problem 52
@@ -81,6 +85,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos808.lean#L833](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos808.lean#L833).
 
 > Alon, Ruzsa, and Solymosi do prove, however, that if $A$ has size $n$ and $G$ has $m$ edges then
+>
 > $$\max(\lvert A+_GA\rvert,\lvert A\cdot_G A\rvert) \gg m^{3/2}n^{-7/4}.$$
 >
 > This is [ARS20, Theorem 10]. It holds for any $n$-element set of real numbers, and [ARS20]

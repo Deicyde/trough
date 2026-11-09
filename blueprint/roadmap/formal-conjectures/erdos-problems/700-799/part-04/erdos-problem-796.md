@@ -22,7 +22,9 @@ Solved: stated here; a Lean proof is at [https://github.com/williamjblair/lean-p
 > Let $k\geq 2$ and let $g_k(n)$ be the largest possible size of
 > $A\subseteq \{1,\ldots,n\}$ such that every $m$ has $\lt k$ solutions to
 > $m=a_1a_2$ with $a_1\lt a_2\in A$. Is it true that
+>
 > $$g_3(n)=\frac{\log\log n}{\log n}n+(c+o(1))\frac{n}{\log n}$$
+>
 > for some constant $c$?
 >
 > The answer is yes: the rescaled error `normalizedError` converges.

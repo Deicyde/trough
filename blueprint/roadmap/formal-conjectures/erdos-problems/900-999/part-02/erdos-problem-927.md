@@ -29,7 +29,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $g(n)$ be the maximum number of different sizes of cliques that can occur in a graph on $n$
 > vertices. Estimate $g(n)$ - in particular, is it true that
+>
 > $$g(n) = n - \log_2 n - \log_*(n) + O(1),$$
+>
 > where $\log_*(n)$ is the number of iterated logarithms such that $\log \cdots \log n < 1$?
 >
 > A quantity first considered by Moon and Moser [MoMo65], who proved

@@ -40,7 +40,9 @@ The file states 1 research or textbook statement: 1 solved.
 
 Solved: stated here; a Lean proof is at [https://github.com/Jayyhk/erdos-lean/blob/2f055a777231a73a305b379e993c37f00ed5a66b/problems/571/Erdos571.lean](https://github.com/Jayyhk/erdos-lean/blob/2f055a777231a73a305b379e993c37f00ed5a66b/problems/571/Erdos571.lean).
 
-> Show that for any rational $\alpha \in [1,2)$ there exists a bipartite graph $G$ such that $$\mathrm{ex}(n;G)\asymp n^{\alpha}.$$
+> Show that for any rational $\alpha \in [1,2)$ there exists a bipartite graph $G$ such that
+>
+> $$\mathrm{ex}(n;G)\asymp n^{\alpha}.$$
 >
 > The proof constructs balanced rooted models for all rational parameters. Its upper-bound closure replaces old edges by paths
 > of arbitrary length, adds two color-class hubs, and commutes with positive rooted powers.

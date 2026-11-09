@@ -37,6 +37,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Erdős and Pomerance [ErPo80] proved
+>
 > $$\left(\frac{2}{\sqrt{e}}+o(1)\right)n\left(\frac{\log n}{\log\log n}\right)^{1/2}
 > \leq f(n) \leq (1.7398\cdots+o(1))n(\log n)^{1/2}.$$
 >
@@ -56,6 +57,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős and Pomerance [ErPo80] proved
+>
 > $$\left(\frac{2}{\sqrt{e}}+o(1)\right)n\left(\frac{\log n}{\log\log n}\right)^{1/2}
 > \leq f(n) \leq (1.7398\cdots+o(1))n(\log n)^{1/2}.$$
 >

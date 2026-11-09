@@ -8,7 +8,9 @@ statement: formalized
 # Product of two consecutive primes modulo the next prime
 
 > The sequence is defined by
+>
 > $$a(n) = \mathrm{prime}(n) \cdot \mathrm{prime}(n+1) \bmod \mathrm{prime}(n+2),$$
+>
 > where $\mathrm{prime}(k)$ is the $k$-th prime number ($\mathrm{prime}(1)=2$).
 >
 > *References:*

@@ -24,7 +24,9 @@ Open: stated without proof.
 
 > The Elliott–Halberstam conjecture: for every $\theta < 1$ and $A > 0$ there exists a
 > constant $C > 0$ such that
+>
 > $$\sum_{1 \le q \le x^{\theta}} E(x; q) \le \frac{C x}{\log^A x}$$
+>
 > for all $x > 2$.
 
 ```lean

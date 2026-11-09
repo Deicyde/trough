@@ -28,7 +28,9 @@ The file states 2 research or textbook statements: 2 open.
 
 Open: stated without proof.
 
-> Is it true that, for every bipartite graph $G$, there exists some $\alpha\in [1,2)$ and $c>0$ such that $$\mathrm{ex}(n;G)\sim cn^\alpha?$$
+> Is it true that, for every bipartite graph $G$, there exists some $\alpha\in [1,2)$ and $c>0$ such that
+>
+> $$\mathrm{ex}(n;G)\sim cn^\alpha?$$
 >
 > The condition that $G$ have at least two edges excludes degenerate forbidden graphs whose
 > extremal number is eventually zero, for which the displayed asymptotic with $c>0$ is impossible.

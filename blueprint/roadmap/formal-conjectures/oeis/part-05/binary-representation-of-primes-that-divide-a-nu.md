@@ -8,7 +8,9 @@ statement: formalized
 # Binary representation of primes that divide a number, in decimal
 
 > The value $a(n)$ is given by
+>
 > $$ a(n) = \sum_{p \mid n, p \text{ prime}} 2^{\pi(p) - 1} $$
+>
 > where $\pi(p) = \mathrm{primeCounting}(p)$ gives the 1-based index of the prime $p$.
 >
 > *References:*

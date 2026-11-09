@@ -28,6 +28,7 @@ Solved: stated here without proof.
 
 > Let $G$ be a graph with $n$ vertices and $kn$ edges, and $a_1\lt a_2\lt \cdots$ be the lengths of
 > cycles in $G$. Assume $n>0$. Is it true that
+>
 > $$\sum\frac{1}{a_i}\gg \log k?$$
 >
 > Gyárfás, Komlós, and Szemerédi [GKS84] have proved that this sum is $\gg \log k$, so that only

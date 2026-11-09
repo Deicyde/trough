@@ -8,7 +8,9 @@ statement: formalized
 # Recurrence $a(n+2) = |a(n+1)a(n) - a(n)a(n+1)|$ via concatenation
 
 > The sequence starts with $a(1) = 0, a(2) = 1$. For $n \ge 1$,
+>
 > $$a(n+2) = |\text{concat}(a(n+1), a(n)) - \text{concat}(a(n), a(n+1))|$$
+>
 > where concatenation is in decimal representation.
 >
 > *References:*

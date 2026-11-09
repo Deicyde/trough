@@ -28,7 +28,9 @@ The file states 2 research or textbook statements: 2 solved. It also has 1 test 
 Solved: stated here without proof.
 
 > Let $k\geq 2$ and $n_k(p)$ denote the least $k$th power nonresidue of $p$. Is it true that
+>
 > $$\sum_{p\lt x} n_k(p)\sim c_k \frac{x}{\log x}$$
+>
 > for some constant $c_k>0$?
 >
 > Erdős [Er65b] asked this; it is true, and was proved by Elliott [El67b]. As in [El67b], the sum
@@ -46,7 +48,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős [Er61e] proved this when $k=2$, with
+>
 > $$c_2=\sum_{k=1}^\infty \frac{p_k}{2^k},$$
+>
 > where $p_k$ is the $k$th prime; the sum is over the odd primes $p < x$ [MaPo11, (1.1)].
 
 ```lean

@@ -65,9 +65,11 @@ Solved: stated here without proof.
 
 > Let $\epsilon > 0$ be given. Then, for a sufficiently large prime `p`, take the sequence of
 > consecutive primes $p_1 < \cdots < p_k$ such that
+>
 > $$
 > \sum_{i=1}^k \frac{1}{p_i} < 1 < \sum_{i=1}^{k + 1} \frac{1}{p_i},
 > $$
+>
 > and let $A$ be the set of all naturals divisible by exactly one of $p_1, ..., p_k$ (with
 > multiplicity $1$). Then $A$ has density $> \frac{1}{e} - \epsilon$ and has the property
 > that $a_1\cdots a_r = b_1\cdots b_s$ with $a_i, b_j\in A$ can only hold when $r = s$.

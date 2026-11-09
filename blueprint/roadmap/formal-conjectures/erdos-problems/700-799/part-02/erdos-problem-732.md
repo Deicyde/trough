@@ -25,7 +25,9 @@ Open: stated without proof.
 > i\leq m$. (A pairwise block design means that every pair in $\{1,\ldots,n\}$ is contained in exactly
 > one of the $A_i$.) Are there necessary and sufficient conditions for $(X_i)$ to be block-compatible?
 > Is there some constant $c>0$ such that for all large $n$ there are
+>
 > $$\geq \exp(c n^{1/2}\log n)$$
+>
 > many block-compatible sequences for $\{1,\ldots,n\}$?
 
 ```lean

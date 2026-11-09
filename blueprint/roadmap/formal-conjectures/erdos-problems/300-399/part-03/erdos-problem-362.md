@@ -35,7 +35,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A\subseteq \mathbb{N}$ be a finite set of size $N$. Is it true that, for any fixed $t$,
 > there are
+>
 > $$\ll \frac{2^N}{N^{3/2}}$$
+>
 > many $S\subseteq A$ such that $\sum_{n\in S}n=t$?
 >
 > Erdős and Moser [Er65] proved the first bound with an additional factor of $(\log n)^{3/2}$.
@@ -55,7 +57,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos362.lean#L2541](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos362.lean#L2541).
 
 > If we further ask that $\lvert S\rvert=l$ (for any fixed $l$) then is the number of solutions
+>
 > $$\ll \frac{2^N}{N^2},$$
+>
 > with the implied constant independent of $l$ and $t$?
 >
 > The second question was answered in the affirmative by Halász [Ha77], as a consequence of a more

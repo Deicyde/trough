@@ -43,7 +43,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos440.lean#L602](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos440.lean#L602).
 
 > How large can
+>
 > $$\liminf \frac{A(x)}{x^{1/2}}$$
+>
 > be?
 >
 > Taking $A=\mathbb{N}$ shows that $\liminf A(x)/x^{1/2}=1$ is possible. Erdős and Szemerédi
@@ -62,7 +64,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos440.lean#L602](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos440.lean#L602).
 
 > Erdős and Szemerédi [ErSz80] proved that $A(x)\leq (c+o(1))x^{1/2}$ where
+>
 > $$c=\sum_{n\geq 1}\frac{1}{n^{1/2}(n+1)}\approx 1.86,$$
+>
 > and that this constant is best possible (this was later rediscovered by van Doorn).
 
 ```lean

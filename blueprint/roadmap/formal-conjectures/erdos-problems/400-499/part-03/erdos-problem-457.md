@@ -21,6 +21,7 @@ Solved: stated here; a Lean proof is at [https://github.com/Woett/Lean-files/blo
 
 > Is there some $\epsilon > 0$ such that there are infinitely
 > many $n$ where all primes $p \le (2 + \epsilon) \log n$ divide
+>
 > $$
 >   \prod_{1 \le i \le \log n} (n + i)?
 > $$
@@ -61,9 +62,11 @@ Open: stated without proof.
 
 > Taking $n$ to be the product of primes
 > between $\log n$ and $(2 + o(1)) \log n$ gives an example where
+>
 > $$
 >   q(n, \log n) \ge (2 + o(1)) \log n.
 > $$
+>
 > Can one prove that $q(n, \log n) < (1 - \epsilon) (\log n)^2$
 > for all large $n$ and some $\epsilon > 0$?
 

@@ -31,8 +31,11 @@ The file states 5 research or textbook statements: 2 open and 3 solved.
 Open: stated without proof.
 
 > For any integer $n=\prod p^{k_p}$ let $Q_2(n)$ be the powerful part of $n$, so that
+>
 > $$Q_2(n) = \prod_{\substack{p\\ k_p\geq 2}}p^{k_p}.$$
+>
 > Is it true that, for every $\epsilon>0$ and $\ell\geq 1$, if $n$ is sufficiently large then
+>
 > $$Q_2(n(n+1)\cdots(n+\ell))\lt n^{2+\epsilon}?$$
 >
 > A problem of Erdős [Er76d, p. 32], who writes that if this is true then it seems very difficult to
@@ -51,9 +54,13 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > For any integer $n=\prod p^{k_p}$ let $Q_2(n)$ be the powerful part of $n$, so that
+>
 > $$Q_2(n) = \prod_{\substack{p\\ k_p\geq 2}}p^{k_p}.$$
+>
 > If $\ell\geq 2$ then is
+>
 > $$\limsup_{n\to \infty}\frac{Q_2(n(n+1)\cdots(n+\ell))}{n^2}$$
+>
 > infinite?
 >
 > This is the second part. We write "infinite" as: for every $C$, $C n^2 < Q_2(\cdots)$ for infinitely
@@ -74,8 +81,11 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Open: stated without proof.
 
 > For any integer $n=\prod p^{k_p}$ let $Q_2(n)$ be the powerful part of $n$, so that
+>
 > $$Q_2(n) = \prod_{\substack{p\\ k_p\geq 2}}p^{k_p}.$$
+>
 > If $\ell\geq 2$ then is
+>
 > $$\lim_{n\to \infty}\frac{Q_2(n(n+1)\cdots(n+\ell))}{n^{\ell+1}}=0?$$
 >
 > This is the third part. The restriction $\ell \geq 2$ is needed: for $\ell = 1$ the Pell solutions of
@@ -95,6 +105,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > A result of Mahler implies, for every $\ell\geq 1$,
+>
 > $$\limsup_{n\to \infty}\frac{Q_2(n(n+1)\cdots(n+\ell))}{n^2}\geq 1.$$
 >
 > Erdős [Er76d, pp. 31-32] derives this from the infinitely many solutions of $x^2-8y^2=1$, which
@@ -115,6 +126,7 @@ Solved: stated here without proof.
 
 > The construction of van Doorn for [367] (also given by Aletheia [Fe26, §4.2]) proves the second
 > part in the affirmative: a construction via solutions to the Pell equation $x^2-8y^2=1$ implies
+>
 > $$\limsup_{n\to \infty}\frac{Q_2(n(n+1)(n+2))}{n^2}=\infty.$$
 >
 > This is the case $\ell = 2$, stated as in `erdos_935.parts.ii`.

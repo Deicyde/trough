@@ -24,6 +24,7 @@ Open: stated without proof.
 > $$
 > 1 = \left( \sum_{p \in P} \frac{1}{p} \right) \left( \sum_{q \in Q} \frac{1}{q} \right)
 > $$
+>
 > ?
 >
 > Asked by Barbeau [Ba76].
@@ -44,10 +45,13 @@ Textbook result, proved here.
 > Instead of asking for sets of primes, ask only that all elements in the sets be relatively coprime.
 >
 > Cambie has found several examples when this weakened version is true. For example,
+>
 > $$
 > 1=\left(1+\frac{1}{5}\right)\left(\frac{1}{2}+\frac{1}{3}\right)
 > $$
+>
 > and
+>
 > $$
 > 1=\left(1+\frac{1}{41}\right)\left(\frac{1}{2}+\frac{1}{3}+\frac{1}{7}\right).
 > $$

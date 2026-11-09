@@ -24,9 +24,13 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos1126.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos1126.lean).
 
 > If
+>
 > $$f(x+y)=f(x)+f(y)$$
+>
 > for almost all $x,y\in \mathbb{R}$ then there exists a function $g$ such that
+>
 > $$g(x+y)=g(x)+g(y)$$
+>
 > for all $x,y\in\mathbb{R}$ such that $f(x)=g(x)$ for almost all $x$.
 >
 > Proved independently by de Bruijn [dB66] and Jurkat [Ju65].

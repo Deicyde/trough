@@ -22,8 +22,15 @@ The file states 2 research or textbook statements: 2 solved.
 
 Solved: stated here; a Lean proof is at [https://github.com/Woett/Lean-files/blob/d30552f64c55686d40b928a0a3b8e2396357a4ee/ErdosProblem331.lean](https://github.com/Woett/Lean-files/blob/d30552f64c55686d40b928a0a3b8e2396357a4ee/ErdosProblem331.lean).
 
-> Let $A,B\subseteq \mathbb{N}$ such that for all large $N$$$\lvert A\cap \{1,\ldots,N\}\rvert \gg
-> N^{1/2}$$and$$\lvert B\cap \{1,\ldots,N\}\rvert \gg N^{1/2}.$$
+> Let $A,B\subseteq \mathbb{N}$ such that for all large $N
+>
+> $$$\lvert A\cap \{1,\ldots,N\}\rvert \gg
+> N^{1/2}$$
+>
+> and
+>
+> $$\lvert B\cap \{1,\ldots,N\}\rvert \gg N^{1/2}.$$
+>
 > Is it true that there are infinitely many solutions to $a_1-a_2=b_1-b_2\neq 0$ with $a_1,a_2\in A$
 > and $b_1,b_2\in B$?
 >

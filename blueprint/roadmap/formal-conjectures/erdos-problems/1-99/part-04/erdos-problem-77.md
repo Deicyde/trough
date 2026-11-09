@@ -33,6 +33,7 @@ Open: stated without proof.
 
 > If $R(k)$ is the Ramsey number for $K_k$, the minimal $n$ such that every $2$-colouring of the edges
 > of $K_n$ contains a monochromatic copy of $K_k$, then find the value of
+>
 > $$\lim_{k\to \infty}R(k)^{1/k}.$$
 >
 > This problem is #3 in Ramsey Theory in the graphs problem collection.

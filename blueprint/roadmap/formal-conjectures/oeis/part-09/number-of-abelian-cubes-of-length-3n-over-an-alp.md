@@ -10,6 +10,7 @@ statement: formalized
 > An Abelian cube is a string of the form $x x' x''$ with $|x| = |x'| = |x''|$ and $x$ is a
 > permutation of $x'$ and $x''$. The number of Abelian cubes of length $3n$ over an alphabet of
 > size 3 is given by
+>
 > $$a(n) = \sum_{k=0}^n \binom{n}{k}^3 \sum_{j=0}^k \binom{k}{j}^3.$$
 >
 > *References:*

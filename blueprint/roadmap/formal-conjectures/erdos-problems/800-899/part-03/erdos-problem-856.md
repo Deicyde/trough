@@ -49,6 +49,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Erdős [Er70, p. 127] notes that
+>
 > $$f_k(N) \ll \frac{\log N}{\log\log N}.$$
 >
 > The implied constant depends on $k$.
@@ -65,6 +66,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Tang and Zhang [TaZh25b, Theorem 1.2] proved that, for fixed $k\geq 3$ and as $N\to\infty$,
+>
 > $$f_k(N) \geq (\log N)^{c_k - o(1)}, \qquad c_k = \frac{k-2}{e\,((k-2)!)^{1/(k-2)}}.$$
 >
 > The $o(1)$ is stated with an arbitrary $\varepsilon > 0$.
@@ -81,6 +83,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Tang and Zhang [TaZh25b, Corollary 1.7] proved, as $N\to\infty$,
+>
 > $$(\log N)^{\log(1.551)-o(1)}\leq f_3(N)\ll(\log N)^{\frac{3}{2^{2/3}}-1+o(1)}.$$
 >
 > This is the lower bound, with the $o(1)$ stated with an arbitrary $\varepsilon > 0$. Since
@@ -98,6 +101,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Tang and Zhang [TaZh25b, Corollary 1.7] proved, as $N\to\infty$,
+>
 > $$(\log N)^{\log(1.551)-o(1)}\leq f_3(N)\ll(\log N)^{\frac{3}{2^{2/3}}-1+o(1)}.$$
 >
 > This is the upper bound, with the $o(1)$ and the implied constant absorbed into an arbitrary

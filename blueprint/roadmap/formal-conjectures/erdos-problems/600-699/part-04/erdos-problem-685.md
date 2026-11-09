@@ -24,6 +24,7 @@ Open: stated without proof.
 
 > Let $\epsilon > 0$ and let $n$ be large depending on $\epsilon$. Is it true that for all
 > $n^{\epsilon} < k \leq n^{1-\epsilon}$ the number of distinct prime divisors of $\binom{n}{k}$ is
+>
 > $$(1+o(1))\, k \sum_{k < p < n} \frac{1}{p}?$$
 >
 > The $o(1)$ is uniform in $k$.
@@ -44,7 +45,9 @@ Open: stated without proof.
 
 > Is it true that, for some constant $c > 0$, the number of distinct prime divisors of
 > $\binom{n}{k}$ is
+>
 > $$(1+o(1))\, k \sum_{k < p < n} \frac{1}{p}$$
+>
 > even for all $(\log n)^c \leq k \leq n^{1-\epsilon}$?
 >
 > Here $\epsilon > 0$ is as in the first question, and the $o(1)$ is uniform in $k$.
@@ -64,6 +67,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Textbook result, proved here.
 
 > For $1 \leq k \leq n - 1$ the number of distinct prime divisors of $\binom{n}{k}$ satisfies
+>
 > $$\omega\left(\binom{n}{k}\right) \geq \frac{\log \binom{n}{k}}{\log n}.$$
 
 ```lean

@@ -25,12 +25,14 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos862.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos862.lean).
 
 > Let $A_1(N)$ be the number of maximal Sidon subsets of $\{1,\ldots,N\}$. Is it true that
+>
 > $$A_1(N) < 2^{o(N^{1/2})}?$$
 >
 > A problem of Cameron and Erdős. This is resolved as a consequence of results of Saxton and
 > Thomason [SaTh15] - they prove that the number of Sidon sets in $\{1,\ldots,N\}$ is at least
 > $2^{(1.16+o(1))N^{1/2}}$. Since each Sidon set is contained in a maximal Sidon set, and each
 > maximal Sidon set contains at most $2^{(1+o(1))N^{1/2}}$ Sidon sets, it follows that
+>
 > $$A_1(N) \geq 2^{(0.16+o(1))N^{1/2}}.$$
 
 ```lean
@@ -46,13 +48,16 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos862.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos862.lean).
 
 > Let $A_1(N)$ be the number of maximal Sidon subsets of $\{1,\ldots,N\}$. Is it true that
+>
 > $$A_1(N) > 2^{N^c}$$
+>
 > for some constant $c>0$?
 >
 > A problem of Cameron and Erdős. This is resolved as a consequence of results of Saxton and
 > Thomason [SaTh15] - they prove that the number of Sidon sets in $\{1,\ldots,N\}$ is at least
 > $2^{(1.16+o(1))N^{1/2}}$. Since each Sidon set is contained in a maximal Sidon set, and each
 > maximal Sidon set contains at most $2^{(1+o(1))N^{1/2}}$ Sidon sets, it follows that
+>
 > $$A_1(N) \geq 2^{(0.16+o(1))N^{1/2}}.$$
 
 ```lean
@@ -71,6 +76,7 @@ Solved: stated here without proof.
 > the number of Sidon sets in $\{1,\ldots,N\}$ is at least $2^{(1.16+o(1))N^{1/2}}$. Since each
 > Sidon set is contained in a maximal Sidon set, and each maximal Sidon set contains at most
 > $2^{(1+o(1))N^{1/2}}$ Sidon sets, it follows that
+>
 > $$A_1(N) \geq 2^{(0.16+o(1))N^{1/2}}.$$
 
 ```lean

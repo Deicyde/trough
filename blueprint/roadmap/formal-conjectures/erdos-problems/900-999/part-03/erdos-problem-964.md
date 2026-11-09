@@ -26,7 +26,9 @@ The file states 2 research or textbook statements: 2 solved. It also has 1 API s
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos964.lean#L1559](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos964.lean#L1559).
 
 > Let $\tau(n)$ count the number of divisors of $n$. Is the sequence
+>
 > $$\frac{\tau(n+1)}{\tau(n)}$$
+>
 > everywhere dense in $(0,\infty)$?
 >
 > The answer is yes, proved by Eberhard [Eb25].

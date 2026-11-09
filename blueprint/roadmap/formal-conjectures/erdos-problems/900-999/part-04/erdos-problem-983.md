@@ -30,7 +30,9 @@ Solved: stated here without proof.
 > that $>r$ many $a\in A$ are only divisible by primes from $\{p_1,\ldots,p_r\}$.
 >
 > Is it true that
+>
 > $$2\pi(n^{1/2})-f(\pi(n)+1,n)\to \infty$$
+>
 > as $n\to \infty$?
 >
 > This is the first part. The primes may depend on $A$. Erdős and Straus conjectured this
@@ -97,6 +99,7 @@ Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-numbe
 Solved: stated here without proof.
 
 > Erdős and Straus [Er70b, p. 139, (14)] proved
+>
 > $$f(\pi(n)+1,n)\leq 2\pi(n^{1/2})+1.$$
 
 ```lean
@@ -111,7 +114,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős and Straus proved [Er70b, pp. 138-140] that
+>
 > $$f(\pi(n)+1,n)=2\pi(n^{1/2})+o_A\left(\frac{n^{1/2}}{(\log n)^A}\right)$$
+>
 > for any $A>0$.
 
 ```lean

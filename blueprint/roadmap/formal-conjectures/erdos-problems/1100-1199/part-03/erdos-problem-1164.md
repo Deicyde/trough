@@ -34,6 +34,7 @@ Solved: stated here without proof.
 > $\mathbb{Z}^2$ visits every $x\in\mathbb{Z}^2$ with $\lVert x\rVert\leq R_n$ in at most $n$ steps.
 >
 > Is it true that
+>
 > $$\log R_n \asymp \sqrt{\log n}?$$
 >
 > A problem of Erdős and Taylor, see [ErTa60, p. 153] and [Va99, 6.76]. This is true, as proved
@@ -70,7 +71,9 @@ Solved: stated here without proof.
 > Dembo, Peres, Rosen and Zeitouni [DPRZ04, Theorem 1.4] proved a conjecture of Kesten and Révész:
 > if $T_n$ is the time it takes the simple random walk in $\mathbb{Z}^2$ to cover the disc of
 > radius $n$, then
+>
 > $$\lim_{n\to\infty}\mathbb{P}\left(\log T_n\leq t(\log n)^2\right)=e^{-4/t}$$
+>
 > for every $t>0$.
 >
 > The disc is $D_n=D(0,n)\cap\mathbb{Z}^2$ (`openDisc`). Since $T_n$ is an integer,

@@ -38,7 +38,9 @@ Solved: stated here; a Lean proof is at [https://github.com/Woett/Lean-files/blo
 > GPT 5.4 Pro (prompted by He, Li, and Tang) proved $f(m)\leq \lceil 2\sqrt{m}\rceil$. A
 > corresponding lower bound was given by GPT 5.4 Pro and Aristotle; it is now known (see the paper
 > of van Doorn, Li, and Tang [VLT26]) that
+>
 > $$f(m) = \min(m, \lceil 2\sqrt{m}\rceil)$$
+>
 > for all $m$.
 >
 > This was formalized in Lean by van Doorn using Aristotle.
@@ -62,7 +64,9 @@ Solved: stated here; a Lean proof is at [https://github.com/Woett/Lean-files/blo
 > GPT 5.4 Pro (prompted by He, Li, and Tang) proved $f(m)\leq \lceil 2\sqrt{m}\rceil$. A
 > corresponding lower bound was given by GPT 5.4 Pro and Aristotle; it is now known (see the paper
 > of van Doorn, Li, and Tang [VLT26]) that
+>
 > $$f(m) = \min(m, \lceil 2\sqrt{m}\rceil)$$
+>
 > for all $m$.
 >
 > This was formalized in Lean by van Doorn using Aristotle.

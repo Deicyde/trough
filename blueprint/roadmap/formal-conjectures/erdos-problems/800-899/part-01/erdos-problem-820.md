@@ -41,13 +41,17 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Is it true that there exists some constant $c > 0$ such that, for all $\epsilon > 0$,
+>
 > $$
 > H(n) > \exp\left(n^{(c-\epsilon)/\log\log n}\right)
 > $$
+>
 > for infinitely many $n$ and
+>
 > $$
 > H(n) < \exp\left(n^{(c+\epsilon)/\log\log n}\right)
 > $$
+>
 > for all large enough $n$?
 
 ```lean
@@ -67,9 +71,11 @@ Open: stated without proof.
 
 > Let $K(n)$ be the smallest $k$ such that $(k^n-1, 2^n-1) = 1$. Does a similar upper bound hold
 > for $K(n)$? That is, is there a constant $c > 0$ such that, for all $\epsilon > 0$,
+>
 > $$
 > K(n) < \exp\left(n^{(c+\epsilon)/\log\log n}\right)
 > $$
+>
 > for all large enough $n$?
 >
 > We read "similar" as an upper bound of the same shape, with its own constant $c$, which need
@@ -88,9 +94,11 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Erdős [Er74b] proved that there exists a constant $c > 0$ such that
+>
 > $$
 > H(n) > \exp\left(n^{c/(\log\log n)^2}\right)
 > $$
+>
 > for infinitely many $n$.
 
 ```lean

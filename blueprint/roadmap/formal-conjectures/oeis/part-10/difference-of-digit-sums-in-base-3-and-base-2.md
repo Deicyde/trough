@@ -8,6 +8,7 @@ statement: formalized
 # Difference of digit sums in base 3 and base 2
 
 > Difference of sums of digits of $n$ in ternary and in binary:
+>
 > $$a(n) = \sum \mathrm{digits}_3(n) - \sum \mathrm{digits}_2(n).$$
 >
 > *References:*

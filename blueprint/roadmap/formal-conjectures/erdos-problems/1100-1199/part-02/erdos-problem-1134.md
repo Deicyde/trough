@@ -31,7 +31,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A\subseteq \mathbb{N}$ be the smallest set which contains $1$ and is closed under the
 > operations
+>
 > $$x\mapsto 2x+1,\quad x\mapsto 3x+1,\quad x\mapsto 6x+1.$$
+>
 > Does $A$ have positive lower density?
 >
 > Lagarias [La16] reports that Erdős asked this in 1972, offering £10 for a solution. (Although
@@ -47,7 +49,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > This was answered in the negative soon afterwards by Crampin and Hilton (as reported in [Kl82]),
 > who proved that in fact, for all large $X$, $\lvert A\cap [1,X]\rvert \ll X^{\tau+o(1)}$ where
 > $\tau\approx 0.900626$ is the unique positive root of
+>
 > $$6^{-\tau}+\sum_{k\geq 0}(3\cdot 2^k)^{-\tau}=1.$$
+>
 > Their proof is given in [La16]. This problem is repeated by Guy [Gu83b] in an article called
 > 'Don't Try to Solve These Problems'. This is Problem E36 in Guy's collection [Gu04].
 
@@ -77,7 +81,9 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/erdos-1134-
 
 > Klarner has several (open) variants of this problem - see Section 8.9 of [La16]. For example, it
 > is unknown if the smallest set $A$ which contains $0$ and is closed under
+>
 > $$x\mapsto 2x,\quad x\mapsto 3x+2,\quad x\mapsto 6x+3$$
+>
 > has positive density.
 >
 > The answer is negative: Kenta Kitamura (KitaKen1 on GitHub) has given a Lean proof

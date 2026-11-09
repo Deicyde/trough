@@ -67,7 +67,9 @@ Open: stated without proof.
 
 > Graham has shown that $\frac{m}{n}$ is the sum of distinct unit fractions
 > with denominators $\equiv a\pmod{d}$ if and only if
+>
 > $$\left(\frac{n}{(n,a,d)},\frac{d}{(a,d)}\right)=1.$$
+>
 > Does the greedy algorithm always
 > terminate in such cases?
 

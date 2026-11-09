@@ -22,9 +22,11 @@ The file states 5 research or textbook statements: 4 open and 1 textbook result.
 Open: stated without proof.
 
 > Let $f(1) = f(2) = 1$ and for $n > 2$
+>
 > $$
 > f(n) = f(n - f(n - 1)) + f(n - f(n - 2)).
 > $$
+>
 > Does $f(n)$ miss infinitely many integers?
 
 ```lean

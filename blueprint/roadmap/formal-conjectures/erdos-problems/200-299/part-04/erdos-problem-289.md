@@ -27,9 +27,11 @@ Solved: stated here; a Lean proof is at [https://github.com/lfsong-google/formal
 > Is it true that, for all sufficiently large $k$, there exist finite intervals
 > $I_1, \dotsc, I_k \subset \mathbb{N}$, distinct, not overlapping or adjacent, with
 > $|I_i| \geq 2$ for $1 \leq i \leq k$ such that
+>
 > $$
 > 1 = \sum_{i=1}^k \sum_{n \in I_i} \frac{1}{n}?
 > $$
+>
 > Here two intervals are adjacent if their union is again an interval, so any two of the
 > $I_i$ must be separated by at least one integer.
 >

@@ -16,7 +16,9 @@ statement: formalized
 >
 > The **$\alpha$-core** of a graph $G$, written `alphaCore G`, is the set of vertices
 > $v$ such that removing $v$ strictly decreases the independence number:
+>
 > $$\mathrm{alphaCore}(G) = \{v \mid \alpha(G - v) < \alpha(G)\}$$
+>
 > where $G - v$ is the subgraph of $G$ induced on $V(G) \setminus \{v\}$.
 >
 > These vertices are also called "critical vertices for independence."

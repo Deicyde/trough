@@ -46,6 +46,7 @@ The file states 5 research or textbook statements: 2 open and 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/MendozaLab/erdos-experiments/blob/09f72c57ed2d98906b9cf03bff2091f6fe73807f/proofs/erdos604/Erdos604Proof/ExternalApplication.lean#L17](https://github.com/MendozaLab/erdos-experiments/blob/09f72c57ed2d98906b9cf03bff2091f6fe73807f/proofs/erdos604/Erdos604Proof/ExternalApplication.lean#L17).
 
 > Given $n$ distinct points $A\subset\mathbb{R}^2$, must there be a point $x\in A$ such that
+>
 > $$\#\{ d(x,y) : y \in A\} \gg n^{1-o(1)}?$$
 >
 > This is the pinned distance problem, a stronger form of Problem 89. Here $n^{1-o(1)}$ means: for
@@ -67,6 +68,7 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Open: stated without proof.
 
 > Given $n$ distinct points $A\subset\mathbb{R}^2$, must there be a point $x\in A$ such that
+>
 > $$\#\{ d(x,y) : y \in A\} \gg \frac{n}{\sqrt{\log n}}?$$
 
 ```lean
@@ -102,6 +104,7 @@ Solved: stated here without proof.
 
 > Katz and Tardos [KaTa04] proved that some point of $A$ has $\gg n^{c-o(1)}$ distinct distances to
 > the other points of $A$, where
+>
 > $$c=\frac{48-14e}{55-16e}=0.864137\cdots.$$
 
 ```lean
@@ -119,7 +122,9 @@ Open: stated without proof.
 
 > Let $d(x)$ be the number of distinct distances from $x$ to the other points of $A$. Erdős [Er75f]
 > conjectured that
+>
 > $$\sum_{x\in A}d(x) \gg \frac{n^2}{\sqrt{\log n}}$$
+>
 > for every set $A\subset\mathbb{R}^2$ of $n$ points.
 >
 > The sum is at most $n$ times the largest $d(x)$, so this conjecture implies a positive answer to

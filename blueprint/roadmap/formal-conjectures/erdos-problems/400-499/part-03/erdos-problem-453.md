@@ -33,9 +33,11 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos453.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos453.lean).
 
 > Is it true that, for all sufficiently large $n$, there exists some $i\lt n$ such that
+>
 > $$
 > p_n^2 < p_{n+i}p_{n-i},
 > $$
+>
 > where $p_k$ is the $k$th prime?
 >
 > Pomerance proved that the answer is no.

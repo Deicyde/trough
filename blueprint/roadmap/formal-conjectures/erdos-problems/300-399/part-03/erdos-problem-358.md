@@ -34,7 +34,10 @@ Category `textbook`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combi
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/1268917deaaaa0d674f651287027baa26cea9920/src/latest/ErdosProblems/Erdos358.lean#L9111](https://github.com/plby/lean-proofs/blob/1268917deaaaa0d674f651287027baa26cea9920/src/latest/ErdosProblems/Erdos358.lean#L9111).
 
 > Let $A=\{a_1 < \cdots\}$ be an infinite sequence of integers. Let $f(n)$ count the number of
-> solutions to $$n=\sum_{u\leq i\leq v}a_i.$$
+> solutions to
+>
+> $$n=\sum_{u\leq i\leq v}a_i.$$
+>
 > Is there such an $A$ for which $f(n)\to \infty$ as $n\to \infty$?
 >
 > Tao [Ta26] constructed such a sequence with $f(n) \gg \log n$ for all sufficiently large $n$.
@@ -51,7 +54,10 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/1268917deaaaa0d674f651287027baa26cea9920/src/latest/ErdosProblems/Erdos358.lean#L9115](https://github.com/plby/lean-proofs/blob/1268917deaaaa0d674f651287027baa26cea9920/src/latest/ErdosProblems/Erdos358.lean#L9115).
 
 > Let $A=\{a_1 < \cdots\}$ be an infinite sequence of integers. Let $f(n)$ count the number of
-> solutions to $$n=\sum_{u\leq i\leq v}a_i.$$
+> solutions to
+>
+> $$n=\sum_{u\leq i\leq v}a_i.$$
+>
 > Is there an $A$ such that $f(n)\geq 2$ for all large $n$?
 >
 > This also follows from Tao's construction with $f(n) \gg \log n$ [Ta26].
@@ -68,7 +74,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > When $A =\{a_1 < \cdots\}$ corresponds to the set of primes, it is conjectured that the
-> $\limsup$ of the number of representations $$n=\sum_{u\leq i\leq v}a_i$$ is infinite.
+> $\limsup$ of the number of representations
+>
+> $$n=\sum_{u\leq i\leq v}a_i$$
+>
+> is infinite.
 
 ```lean
 theorem erdos_358.variants.prime_set :
@@ -82,7 +92,11 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > When $A =\{a_1 < \cdots\}$ corresponds to the set of primes, it is conjectured that the set of
-> numbers $n$ that have representations $$n=\sum_{u\leq i\leq v}a_i$$ has positive upper density.
+> numbers $n$ that have representations
+>
+> $$n=\sum_{u\leq i\leq v}a_i$$
+>
+> has positive upper density.
 
 ```lean
 theorem erdos_358.variants.prime_set_density_representation :
@@ -97,7 +111,11 @@ Proved here.
 
 > In [ErGr80] Erdős and Graham further asked whether there is an $A$ with $f(n)\geq 1$ for all
 > large $n$. Egami observed that this holds trivially for $a_n=n$, so they may have intended to
-> count only those representations $$n=\sum_{u\leq i\leq v}a_i$$ that use at least two consecutive
+> count only those representations
+>
+> $$n=\sum_{u\leq i\leq v}a_i$$
+>
+> that use at least two consecutive
 > terms, which is what $g$ counts.
 >
 > This follows from Tao's construction [Ta26], which gives $f(n)\gg\log n$: see

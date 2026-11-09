@@ -26,7 +26,9 @@ The file states 1 research or textbook statement: 1 open.
 
 Open: stated without proof.
 
-> Is it true that $$\mathrm{ex}(n; K_{r,r}) \gg n^{2-1/r}?$$
+> Is it true that
+>
+> $$\mathrm{ex}(n; K_{r,r}) \gg n^{2-1/r}?$$
 
 ```lean
 theorem erdos_714 :

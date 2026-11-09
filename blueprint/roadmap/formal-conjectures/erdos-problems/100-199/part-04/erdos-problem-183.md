@@ -24,6 +24,7 @@ Solved: stated here; a Lean proof is at [https://github.com/openai/ten-proofs/bl
 
 > Let $R(3;k)$ be the minimal $n$ such that if the edges of $K_n$ are coloured with $k$ colours
 > then there must exist a monochromatic triangle. Determine
+>
 > $$\lim_{k\to \infty}R(3;k)^{1/k}.$$
 >
 > There is no finite limit: $R(3;k)^{1/k}\to\infty$. This was established by OpenAI [OpenAI26]
@@ -43,6 +44,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/openai/ten-proofs/blob/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/MulticolorTriangleRamsey.lean](https://github.com/openai/ten-proofs/blob/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/MulticolorTriangleRamsey.lean).
 
 > The explicit bound behind `erdos_183`: for every $k\geq 2$,
+>
 > $$R(3;k)\geq \left(\frac{k^{1/3}}{6e^{38}\log k}\right)^k.$$
 
 ```lean

@@ -26,7 +26,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > If $f\in \mathbb{C}[x]$ is a monic polynomial with all roots satisfying
 > $\lvert z\rvert \leq r$ for some $0 < r < 2$, then must
+>
 > $$\{ z: \lvert f(z)\rvert <1\}$$
+>
 > have a connected component with diameter $>2-r$?
 >
 > A problem of Erdős, Herzog, and Piranian [EHP58].

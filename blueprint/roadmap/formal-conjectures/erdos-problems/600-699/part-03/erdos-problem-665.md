@@ -30,7 +30,9 @@ Open: stated without proof.
 > \{1,\ldots,n\}$ such that $2\leq \lvert A_i\rvert \lt n$ and every pair of distinct elements $x,y\in
 > \{1,\ldots,n\}$ is contained in exactly one $A_i$. Is there a constant $C>0$ and, for all large $n$,
 > a pairwise balanced design such that
+>
 > $$\lvert A_i\rvert > n^{1/2}-C$$
+>
 > for all $1\leq i\leq m$?
 
 ```lean

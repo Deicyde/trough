@@ -8,6 +8,7 @@ statement: formalized
 # Denominators of $\sum_{k=1}^n \frac{1}{k 2^k}$
 
 > $a(n)$ is the denominator of the sum
+>
 > $$\sum_{i=1}^n \frac{1}{i} \binom{2n-i-1}{i-1}$$
 >
 > *References:*

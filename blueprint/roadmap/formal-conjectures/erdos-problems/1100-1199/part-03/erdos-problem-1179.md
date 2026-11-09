@@ -29,17 +29,23 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $0\lt \epsilon<1$ and let $g_\epsilon(N)$ be the minimal $k$ such that if $G$ is an abelian
 > group of size $N$ and $A\subseteq G$ is a uniformly random subset of size $k$, and
+>
 > $$F_A(g) = \#\left\{ S\subseteq A : g = \sum_{x\in S}x\right\},$$
+>
 > then, with probability $\to 1$ as $N\to \infty$,
+>
 > $$\left\lvert F_A(g)-\frac{2^k}{N}\right\rvert \leq \epsilon \frac{2^k}{N}$$
+>
 > for all $g\in G$.
 >
 > Estimate $g_\epsilon(N)$ - in particular, is it true that for all $\epsilon>0$
+>
 > $$g_\epsilon(N)=(1+o_\epsilon(1))\log_2N?$$
 >
 > It is trivial that $g_\epsilon(N)\geq \log_2N$ for all $0\lt \epsilon<1$. Erdős and Rényi [ErRe65]
 > proved that for all $0\lt \epsilon<1$, $g_\epsilon(N) \leq (2+o(1))\log_2N+O_\epsilon(1)$. Erdős and
 > Hall [ErHa76] proved that, for all $0\lt \epsilon<1$,
+>
 > $$g_\epsilon(N)\leq \left(1+O_\epsilon\left(\frac{\log\log\log N}{\log\log N}\right)\right)
 > \log_2N.$$
 >

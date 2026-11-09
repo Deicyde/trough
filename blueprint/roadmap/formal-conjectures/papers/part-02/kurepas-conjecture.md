@@ -19,7 +19,9 @@ Open: stated without proof.
 
 > ## Kurepa's conjecture
 >
-> For all $n$, $$!n\not\equiv 0 \mod n$$
+> For all $n$,
+>
+> $$!n\not\equiv 0 \mod n$$
 >
 > This appears as B44 "Sums of factorials."
 > in [Unsolved Problems in Number Theory](https://doi.org/10.1007/978-0-387-26677-0)

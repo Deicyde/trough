@@ -9,7 +9,9 @@ statement: formalized
 
 > The sequence $a(n)$ counts the number of primes $p$ in the interval $[2^n, 2^n + p_n]$,
 > where $p_n$ is the $n$-th prime ($p_1 = 2, p_2 = 3, \dots$):
+>
 > $$a(n) = |\{p \text{ prime} \mid 2^n \le p \le 2^n + p_n\}|$$
+>
 > for $n \ge 1$, and $a(0) = 0$.
 >
 > *References:*

@@ -25,7 +25,9 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1147.lean#L538](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1147.lean#L538).
 
 > Let $\alpha>0$ be an irrational number. Is the set
+>
 > $$A=\left\{ n\geq 1: \| \alpha n^2\| < \frac{1}{\log n}\right\},$$
+>
 > where $\|\cdot\|$ denotes the distance to the nearest integer, an additive basis of order $2$?
 >
 > This was disproved by Konieczny [Ko16b], and is false both for almost every $\alpha>0$, and also

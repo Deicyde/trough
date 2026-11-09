@@ -65,6 +65,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Dirac and Erdős proved independently that when $l=\lfloor k^2/4\rfloor+1$
+>
 > $$f(n;k,l)\leq \lfloor n^2/4\rfloor+1.$$
 >
 > [Er64c, p. 34] states this for every $k \leq n$. We assume $k \geq 3$, since for $k \leq 2$ there

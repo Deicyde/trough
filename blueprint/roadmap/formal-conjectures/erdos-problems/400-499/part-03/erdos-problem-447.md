@@ -44,9 +44,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > How large can a union-free collection $\mathcal{F}$ of subsets of $[n]$ be? By union-free we mean
 > there are no solutions to $A\cup B=C$ with distinct $A,B,C\in \mathcal{F}$. Perhaps even
+>
 > $$\lvert \mathcal{F}\rvert <(1+o(1))\binom{n}{\lfloor n/2\rfloor}?$$
 >
 > Solved by Kleitman [Kl71], who proved
+>
 > $$\lvert \mathcal{F}\rvert <(1+o(1))\binom{n}{\lfloor n/2\rfloor}.$$
 
 ```lean

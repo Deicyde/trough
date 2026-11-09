@@ -24,12 +24,16 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $N_k=2\cdot 3\cdots p_k$ and $\{a_1\lt a_2\lt \cdots \lt a_{\phi(N_k)}\}$ be the integers $\lt N_k$ which
 > are relatively prime to $N_k$. Then, for any $c\geq 0$, the limit
+>
 > $$\frac{\#\{ a_i-a_{i-1}\leq c \frac{N_k}{\phi(N_k)} : 2\leq i\leq \phi(N_k)\}}{\phi(N_k)}$$
+>
 > exists and is a continuous function of $c$.
 >
 > Solved by Hooley [Ho65], who proved that these gaps have an exponential distribution: that is, if
 > $f(c)$ is the function in question, then
+>
 > $$f(c)=(1+o(1))(1-e^{-c})$$
+>
 > (where the $o(1)$ goes to $0$ uniformly as $k\to \infty$).
 >
 > See also [234](https://www.erdosproblems.com/234) for a more difficult version of this problem using
@@ -49,7 +53,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Hooley [Ho65] proved that the limit in `erdos_235` is $1-e^{-c}$.
 > For each fixed $c\geq 0$,
+>
 > $$f(c)=(1+o(1))(1-e^{-c})$$
+>
 > as $k\to\infty$.
 
 ```lean

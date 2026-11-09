@@ -8,6 +8,7 @@ statement: formalized
 # Unique realization of odd primes $p \notin \{3, 5\}$ by continued fraction values
 
 > $a(n)$ is the denominator of the finite continued fraction
+>
 > $$\frac{1}{2 - \frac{3}{3 - \frac{4}{4 - \frac{5}{\dots - \frac{n-1}{(n-1) - \frac{n}{n+4}}}}}}$$
 >
 > *References:*

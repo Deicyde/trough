@@ -26,7 +26,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $a_1, \dots, a_p$ be (not necessarily distinct) residues modulo a prime $p$, such that there
 > exists some $r$ so that if $S \subseteq [p]$ is non-empty and
+>
 > $$\sum_{i \in S} a_i \equiv 0 \pmod{p}$$
+>
 > then $|S| = r$.
 >
 > Must there be at most two distinct residues amongst the $a_i$?

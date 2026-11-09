@@ -28,6 +28,7 @@ Open: stated without proof.
 > Let $A\subseteq \{1,\ldots,N\}$ be a set such that there exists at most one $n$ with more than one
 > solution to $n=a+b$ (with $a\leq b\in A$). Estimate the maximal possible size of $|A|$. In
 > particular, is it true that
+>
 > $$|A| \leq (1+o(1))\frac{2}{\sqrt{3}} N^{1/2}?$$
 >
 > A problem of Erdős and Freud [ErFr91] [Er92c]. For the analogous question with $n=a-b$ they prove
@@ -51,7 +52,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős and Freud [ErFr91] [Er92c] prove that
+>
 > $$\lvert A\rvert \geq (1+o(1))\frac{2}{\sqrt{3}}N^{1/2}.$$
+>
 > This is shown by taking a genuine Sidon set $B\subset [1,N/3]$ of size $\sim N^{1/2}/\sqrt{3}$
 > and taking the union with $\{N-b : b\in B\}$.
 >

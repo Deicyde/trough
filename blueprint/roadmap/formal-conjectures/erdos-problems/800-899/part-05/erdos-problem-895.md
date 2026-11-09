@@ -57,7 +57,9 @@ Open: stated without proof.
 
 > Hajnal thought that there is in fact an independent set which is a Hindman set - that is, an
 > independent set of the shape
+>
 > $$\left\{ \sum_{i\in S}a_i : S\subseteq \{1,\ldots,k\}\right\}$$
+>
 > for some $a_1,\ldots,a_k$ (provided $n$ is sufficiently large depending on $k$).
 >
 > The general question of an independent Hindman set remains open. Here the $a_i$ are taken to be

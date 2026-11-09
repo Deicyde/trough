@@ -29,7 +29,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > points, and the number of points on $\ell_i$ is exactly $X_i$.
 >
 > Prove that there are at most
+>
 > $$\exp(O(n^{1/2}))$$
+>
 > many line-compatible sequences.
 >
 > Asked by Erdős [Er81] and proved by Szemerédi and Trotter [SzTr83]. We take the lines $\ell_i$ to
@@ -51,10 +53,14 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > Erdős [Er81] writes that it is 'easy' to prove there are at least
+>
 > $$\exp(cn^{1/2})$$
+>
 > many such sequences for some constant $c>0$, but expected proving the upper bound to be
 > difficult. Once it is done, he asked for the existence and value of
+>
 > $$\lim_{n\to \infty}\frac{\log f(n)}{n^{1/2}},$$
+>
 > where $f(n)$ counts the number of line-compatible sequences. Does this limit exist?
 >
 > In [Er81], $f(n)$ counts the sequences of the numbers of points on all the lines determined by

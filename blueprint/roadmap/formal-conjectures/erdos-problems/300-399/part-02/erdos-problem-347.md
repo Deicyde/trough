@@ -20,9 +20,13 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/ebarschkis/ErdosProblem/blob/main/Problem347/Formalization.lean](https://github.com/ebarschkis/ErdosProblem/blob/main/Problem347/Formalization.lean).
 
 > Is there a sequence $A=\{a_1\leq a_2\leq \cdots\}$ of integers with
+>
 > $$\lim \frac{a_{n+1}}{a_n}=2$$
+>
 > such that
+>
 > $$P(A')= \left\{\sum_{n\in B}n : B\subseteq A'\textrm{ finite }\right\}$$
+>
 > has density $1$ for every cofinite subsequence $A'$ of $A$?
 >
 > This has been solved in the affirmative by ebarschkis in the comments (based on idea of Tao and

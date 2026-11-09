@@ -27,7 +27,9 @@ Open: stated without proof.
 
 > Let $f(N)$ be the size of the largest $A\subseteq \{1,\ldots,N\}$ such that there are no
 > solutions to
+>
 > $$\frac{1}{a}= \frac{1}{b}+\frac{1}{c}$$
+>
 > with distinct $a,b,c\in A$? Estimate $f(N)$.
 >
 > The colouring version of this is [303], which was solved by Brown and Rödl [BrRo91].
@@ -75,7 +77,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Stijn Cambie has observed that
+>
 > $$f(N)\geq (5/8+o(1))N,$$
+>
 > taking $A$ to be all odd integers $\leq N/4$ and all integers in $[N/2,N]$.
 
 ```lean
@@ -91,6 +95,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Wouter van Doorn has proved [va25] that
+>
 > $$f(N) \leq (9/10+o(1))N.$$
 
 ```lean
@@ -107,6 +112,7 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/erdos-302-u
 
 > Kenta Kitamura (KitaKen1 on GitHub) has given a Lean proof
 > ([erdos-302-upper-bound](https://github.com/KitaKen1/erdos-302-upper-bound)) that
+>
 > $$f(N) \leq (0.8461739827964010+o(1))N.$$
 
 ```lean

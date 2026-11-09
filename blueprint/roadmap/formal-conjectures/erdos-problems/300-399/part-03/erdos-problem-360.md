@@ -33,7 +33,9 @@ Solved: stated here without proof.
 >
 > A problem of Erdős and Graham [ErGr80]. Conlon, Fox, and Pham [CFP21, Theorem 1.5] determined
 > the order of growth of $f(n)$ up to a multiplicative constant, proving
+>
 > $$f(n) \asymp \frac{n^{1/3}(n/\phi(n))}{(\log n)^{1/3}(\log\log n)^{2/3}}.$$
+>
 > Here $\phi$ is Euler's totient function, and the statement is asymptotic ($n \to \infty$).
 
 ```lean
@@ -47,8 +49,10 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Alon and Erdős [AlEr96] proved that $f(n) = n^{1/3+o(1)}$, and more precisely
+>
 > $$\frac{n^{1/3}}{(\log n)^{4/3}}\ll f(n) \ll
 >   \frac{n^{1/3}}{(\log n)^{1/3}}(\log\log n)^{1/3}.$$
+>
 > This is the two-sided bound, which implies the first claim.
 
 ```lean
@@ -67,6 +71,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Vu [Vu07] improved the lower bound to
+>
 > $$f(n) \gg \frac{n^{1/3}}{\log n}.$$
 
 ```lean

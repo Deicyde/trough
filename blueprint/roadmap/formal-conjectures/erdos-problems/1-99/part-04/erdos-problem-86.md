@@ -28,7 +28,11 @@ The file states 1 research or textbook statement: 1 open.
 
 Open: stated without proof.
 
-> Let $Q_n$ be the $n$-dimensional hypercube graph (so that $Q_n$ has $2^n$ vertices and $n2^{n-1}$ edges). Is it true that every subgraph of $Q_n$ with $$\geq \left(\frac{1}{2}+o(1)\right)n2^{n-1}$$ many edges contains a $C_4$?
+> Let $Q_n$ be the $n$-dimensional hypercube graph (so that $Q_n$ has $2^n$ vertices and $n2^{n-1}$ edges). Is it true that every subgraph of $Q_n$ with
+>
+> $$\geq \left(\frac{1}{2}+o(1)\right)n2^{n-1}$$
+>
+> many edges contains a $C_4$?
 
 ```lean
 theorem erdos_86 :

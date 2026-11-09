@@ -29,9 +29,12 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos391.lean#L4924](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos391.lean#L4924).
 
 > Let $t(n)$ be maximal such that there is a representation
+>
 > $$n!=a_1\cdots a_n$$
+>
 > with $t(n)=a_1\leq \cdots \leq a_n$. Obtain good bounds for $t(n)/n$. In particular, is it true
 > that
+>
 > $$\lim \frac{t(n)}{n}=\frac{1}{e}?$$
 >
 > It is easy to see that $\lim \frac{t(n)}{n}\leq \frac{1}{e}$. Erdős [Er96b] wrote he, Selfridge,
@@ -45,7 +48,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > Both questions were answered by Alexeev, Conway, Rosenfeld, Sutherland, Tao, Uhr, and Ventullo
 > [ACRSTUV25], who proved that
+>
 > $$\frac{t(n)}{n}= \frac{1}{e}-\frac{c_0}{\log n}+O\left(\frac{1}{(\log n)^{1+c}}\right),$$
+>
 > where $c_0=0.3044\cdots$ is an explicit constant, for some $c>0$.
 
 ```lean
@@ -60,7 +65,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos391.lean#L4924](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos391.lean#L4924).
 
 > Furthermore, does there exist some constant $c>0$ such that
+>
 > $$\frac{t(n)}{n} \leq \frac{1}{e}-\frac{c}{\log n}$$
+>
 > for infinitely many $n$?
 >
 > This was answered in the affirmative by Alexeev, Conway, Rosenfeld, Sutherland, Tao, Uhr, and

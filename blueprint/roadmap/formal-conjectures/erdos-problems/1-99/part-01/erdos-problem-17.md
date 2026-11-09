@@ -32,7 +32,10 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > In 1999 Blecksmith, Erdős, and Selfridge [BES99] proved the upper bound
-> $$\pi^{\mathcal{C}}(x) \ll_A x(\log x)^{-A}$$ for every real $A > 0$.
+>
+> $$\pi^{\mathcal{C}}(x) \ll_A x(\log x)^{-A}$$
+>
+> for every real $A > 0$.
 >
 > [BES99] Blecksmith, Richard and Erd\H os, Paul and Selfridge, J. L., Cluster primes. Amer. Math. Monthly (1999), 43--48.
 
@@ -48,7 +51,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > In 2003, Elsholtz [El03] refined the upper bound to
+>
 > $$\pi^{\mathcal{C}}(x) \ll x\,\exp\!\bigl(-c(\log\log x)^2\bigr)$$
+>
 > for every real $0 < c < 1/8$.
 >
 > [El03] Elsholtz, Christian, On cluster primes. Acta Arith. (2003), 281--284.

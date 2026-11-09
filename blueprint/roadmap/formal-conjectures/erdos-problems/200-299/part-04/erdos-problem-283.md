@@ -29,9 +29,14 @@ Solved: stated here; a Lean proof is at [https://github.com/Shashi456/erdos-form
 > taking integer values at all integers) whose leading coefficient is positive and such that there
 > exists no $d≥2$ with $d ∣ p(n)$ for all $n≥1$. Is it true that,
 > for all sufficiently large $m$, there exist integers $1≤n_1\lt \dots < n_k$ such that
+>
 > $$1=\frac{1}{n_1}+\cdots+\frac{1}{n_k}$$
+>
 > and
-> $$m=p(n_1)+\cdots+p(n_k)$$?
+>
+> $$m=p(n_1)+\cdots+p(n_k)$$
+>
+> ?
 >
 > GPT 5.5 Pro (prompted by Price) has given a proof that the answer is yes, for the stronger version
 > with $1$ replaced by any rational $\alpha>0$.

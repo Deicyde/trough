@@ -33,6 +33,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > For a meromorphic function $f$ let $n(r,a)$ count the number of roots of $f(z)=a$ in the disc
 > $\lvert z\rvert \lt r$. Does there exist a meromorphic (or entire) $f$ such that for every
 > $a\neq b$
+>
 > $$\limsup_{r\to \infty}\frac{n(r,a)}{n(r,b)}=\infty?$$
 >
 > This is Problem 1.25 in [Ha74], where it is attributed to Erdős. Gol'dberg [Go78] and Toppila

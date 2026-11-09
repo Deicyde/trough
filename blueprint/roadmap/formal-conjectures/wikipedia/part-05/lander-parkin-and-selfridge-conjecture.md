@@ -24,7 +24,9 @@ Open: stated without proof.
 > Formally, for positive integers $k, n, m \in \mathbb{N}$ and sequences
 > $x : \{0, \ldots, n-1\} \to \mathbb{N}$ and $y : \{0, \ldots, m-1\} \to \mathbb{N}$
 > with $x_i > 0$, $y_j > 0$, and $x_i \neq y_j$ for all $i, j$, if
+>
 > $$\sum_{i=0}^{n-1} x_i^k = \sum_{j=0}^{m-1} y_j^k,$$
+>
 > then $k \leq n + m$.
 
 ```lean
@@ -45,9 +47,13 @@ Open: stated without proof.
 
 > Special case of the Lander–Parkin–Selfridge conjecture: there is no solution in positive
 > integers to
+>
 > $$x_1^5 + x_2^5 + x_3^5 = y^5.$$
+>
 > That is, for all $x_1, x_2, x_3, y \in \mathbb{N}$ with $x_1, x_2, x_3, y > 0$,
+>
 > $$x_1^5 + x_2^5 + x_3^5 \neq y^5.$$
+>
 > This corresponds to the case $k = 5$, $n = 3$, $m = 1$ of the general conjecture,
 > where $n + m = 4 < 5 = k$ would be required to yield a counterexample.
 

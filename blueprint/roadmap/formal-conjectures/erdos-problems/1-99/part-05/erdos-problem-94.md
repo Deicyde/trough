@@ -29,6 +29,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Suppose $n$ points in $\mathbb{R}^2$ determine a convex polygon and the set of distances between
 > them is $\{u_1,\ldots,u_t\}$. Suppose $u_i$ appears as the distance between $f(u_i)$ many pairs of
 > points. Then
+>
 > $$\sum_i f(u_i)^2 \ll n^3.$$
 >
 > In [Er97c] Erdős claims that Fishburn solved this, but gives no reference.
@@ -45,7 +46,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Lefmann and Theile [LeTh95] prove a stronger version of this question, that
+>
 > $$\sum_i f(u_i)^2 \ll n^3$$
+>
 > under the weaker assumption that no three points are on a line.
 
 ```lean

@@ -85,7 +85,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er80, p. 100] wrote it is 'easy to see' that
+>
 > $$\limsup_{n\to \infty}\frac{a_n}{n}=\infty.$$
+>
 > Indeed, since $A$ must be a Sidon set, if $a_n \leq f(n)n$ for all $n$, then all differences in
 > $[1,x/f(x)]$ can be realised by differences from $A\cap [1,x]$, and hence
 > $\lvert A\cap [1,x]\rvert^2 \gg x/f(x)$. Erdős (see for example [HaRo66]) proved that for

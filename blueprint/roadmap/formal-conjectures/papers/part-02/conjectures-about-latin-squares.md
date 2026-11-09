@@ -91,9 +91,11 @@ Open: stated without proof.
 
 > Conjecture 6.7 in [Wa2011]:
 > There exist real constants $0 < c_1 < c_2 < 1$ such that
+>
 > $$
 > c_1^n n! \leq z_n \leq c_2^n n!
 > $$
+>
 > for all odd $n \geq 3$.
 
 ```lean
@@ -110,9 +112,11 @@ Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-com
 Open: stated without proof.
 
 > Conjecture 6.9 in [Wa2011]:
+>
 > $$
 > \lim_{\substack{n \to \infty \\ n \text{ odd}}} \frac{1}{n} \log(z_n / n!) = -1
 > $$
+>
 > It is not even known if this limit exists. Note that $z_n = 0$ for even $n$ (see `z_even`), so the
 > limit must be restricted to odd $n$; here we parametrise odd $n$ as $2k + 1$.
 
@@ -131,9 +135,11 @@ Solved: stated here without proof.
 
 > Theorem 7.2 in [Wa2011]:
 > For all $n \geq 5$,
+>
 > $$
 > 15^{n/5} \leq T(n) \leq c^n \sqrt{n} \cdot n!
 > $$
+>
 > where $c = \sqrt{\frac{3 - \sqrt{3}}{6}} \cdot e^{\sqrt{3}/6}$
 
 ```lean

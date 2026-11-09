@@ -60,6 +60,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Tao [Ta24] shows that, if $u(x)=(\log x\log\log x)^{1/2}$, then
+>
 > $$x\exp(-(2^{1/2}+o(1))u(x)) \leq L(x) \leq x\exp(-(2^{-1/2}+o(1))u(x)).$$
 
 ```lean

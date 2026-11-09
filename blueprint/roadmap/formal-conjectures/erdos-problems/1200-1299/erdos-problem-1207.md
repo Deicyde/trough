@@ -28,7 +28,11 @@ The file states 1 research or textbook statement: 1 solved.
 
 Solved: stated here without proof.
 
-> Let $P_d(n)$ be such that in any set of $n$ points in $\mathbb{R}^d$ there exist at least $P_d(n)$ many points which do not contain an isosceles triangle. Estimate $P_d(n)$ - in particular, is it true that $$P_2(n)\lt n^{1-c}$$ for some constant $c>0$?
+> Let $P_d(n)$ be such that in any set of $n$ points in $\mathbb{R}^d$ there exist at least $P_d(n)$ many points which do not contain an isosceles triangle. Estimate $P_d(n)$ - in particular, is it true that
+>
+> $$P_2(n)\lt n^{1-c}$$
+>
+> for some constant $c>0$?
 >
 > Lee, Pohoata, and Zhu [LPZ26] proved the stated planar bound. Their isosceles-free subsets
 > also exclude degenerate triangles of equally spaced collinear points.

@@ -21,6 +21,7 @@ Open: stated without proof.
 
 > Let $F(n)$ be the maximum size of a subset of $\{1,\ldots,n\}$ with distinct
 > pairwise products. Is there a constant $c > 0$ such that
+>
 > $$F(n) = \pi(n) + (c + o(1)) n^{3/4}(\log n)^{-3/2}?$$
 
 ```lean
@@ -40,6 +41,7 @@ Open: stated without proof.
 
 > If all products of $r$ distinct elements of $A \subseteq \{1,\ldots,n\}$ are
 > distinct, must
+>
 > $$|A| \leq \pi(n) + O\bigl(n^{(r+1)/(2r)}\bigr)?$$
 
 ```lean

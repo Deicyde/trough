@@ -30,11 +30,15 @@ The file states 5 research or textbook statements: 5 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos232.lean#L125](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos232.lean#L125).
 
 > For $A\subset \mathbb{R}^2$ we define the upper density as
+>
 > $$\overline{\delta}(A)=\limsup_{R\to \infty}\frac{\lambda(A \cap B_R)}{\lambda(B_R)},$$
+>
 > where $\lambda$ is the Lebesgue measure and $B_R$ is the ball of radius $R$.
 >
 > Estimate
+>
 > $$m_1=\sup \overline{\delta}(A),$$
+>
 > where $A$ ranges over all measurable subsets of $\mathbb{R}^2$ without two points distance $1$
 > apart. In particular, is $m_1\leq 1/4$?
 >

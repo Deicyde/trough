@@ -8,6 +8,7 @@ statement: formalized
 # Prime-th recurrence with reversal at each step
 
 > $$a(n) = \operatorname{reversal}(p_{a(n-1)})$$
+>
 > with $a(0)=1$, where $p_k$ is the $k$-th prime number.
 >
 > *References:*

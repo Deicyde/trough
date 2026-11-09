@@ -20,6 +20,7 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Is it true that for every $k$ there exists $n$ such that
+>
 > $$\prod_{0\leq i\leq k}(n-i) \mid \binom{2n}{n}?$$
 
 ```lean

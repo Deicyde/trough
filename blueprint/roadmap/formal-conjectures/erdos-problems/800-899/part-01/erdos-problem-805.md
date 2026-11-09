@@ -72,7 +72,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Alon and Sudakov [AlSu07] proved that there is no such graph with
+>
 > $$g(n)=\frac{c}{\log\log n}(\log n)^3$$
+>
 > for some constant $c>0$.
 >
 > Here `log` is the natural logarithm, as in [AlSu07], and the statement is for all large `n`.
@@ -90,6 +92,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Alon, Bucić, and Sudakov [ABS21] construct such a graph with
+>
 > $$g(n)\leq 2^{2^{(\log\log n)^{1/2+o(1)}}}.$$
 >
 > Here all logarithms are to base $2$, as in [ABS21], so the cliques and independent sets have at

@@ -27,8 +27,11 @@ The file states 4 research or textbook statements: 4 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1099.lean#L63](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1099.lean#L63).
 
 > Let $1=d_1\lt \cdots\lt d_{\tau(n)}=n$ be the divisors of $n$, and for $\alpha>1$ let
+>
 > $$h_\alpha(n) = \sum_i \left( \frac{d_{i+1}}{d_i}-1\right)^\alpha.$$
+>
 > Is it true that
+>
 > $$\liminf_{n\to \infty}h_\alpha(n) \ll_\alpha 1?$$
 >
 > Erdős [Er81h] remarks that $n!$ or the least common multiple of $\{1,\ldots,n\}$ would be good
@@ -82,7 +85,9 @@ Solved: stated here without proof.
 
 > Erdős remarks that this problem occurred to him when considering $\sum_i \frac{d_{i+1}}{d_i}$.
 > It is easy to see that $\sum_{i} \frac{d_{i+1}}{d_i}> \tau(n)+\log n$, and Erdős asked whether
+>
 > $$\liminf \left(\sum_{i} \frac{d_{i+1}}{d_i}-\tau(n)-\log n\right)\lt \infty,$$
+>
 > which follows from the affirmative answer to the main question.
 
 ```lean

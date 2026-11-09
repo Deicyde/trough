@@ -20,10 +20,13 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here without proof.
 
 > Let $f(k)$ be the minimal value of $n_k$ such that there exist $n_1 < n_2 < \dots < n_k$ with
+>
 > $$
 >   1 = \frac{1}{n_1} + \cdots + \frac{1}{n_k}.
 > $$
+>
 > Is it true that
+>
 > $$
 >   f(k) = (1 + o(1)) \frac{e}{e - 1} k ?
 > $$

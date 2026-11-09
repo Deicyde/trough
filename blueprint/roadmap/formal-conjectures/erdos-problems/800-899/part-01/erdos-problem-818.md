@@ -23,11 +23,15 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos818.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos818.lean).
 
 > Let $A$ be a finite set of integers such that $\lvert A+A\rvert \ll \lvert A\rvert$. Is it true that
+>
 > $$\lvert AA\rvert \gg \frac{\lvert A\rvert^2}{(\log \lvert A\rvert)^C}$$
+>
 > for some constant $C>0$?
 >
 > This was proved by Solymosi [So09d], in the strong form
+>
 > $$\lvert AA\rvert \gg \frac{\lvert A\rvert^2}{\log \lvert A\rvert}.$$
+>
 > See also [52].
 
 ```lean
@@ -44,6 +48,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > This was proved by Solymosi [So09d], in the strong form
+>
 > $$\lvert AA\rvert \gg \frac{\lvert A\rvert^2}{\log \lvert A\rvert}.$$
 
 ```lean

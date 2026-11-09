@@ -28,6 +28,7 @@ Solved: stated here without proof.
 > $\mathcal{F}$. Note that it is trivial that $\mathrm{ex}(n;\mathcal{F})\leq \mathrm{ex}(n;G)$ for
 > every $G\in\mathcal{F}$. Is it true that, for every $\mathcal{F}$, there exists $G\in\mathcal{F}$
 > such that
+>
 > $$\mathrm{ex}(n;G)\ll_{\mathcal{F}}\mathrm{ex}(n;\mathcal{F})?$$
 >
 > This is the Erdős–Simonovits compactness conjecture. The answer is no: OpenAI [OpenAI26] give a

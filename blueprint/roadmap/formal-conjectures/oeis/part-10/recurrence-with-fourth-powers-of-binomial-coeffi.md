@@ -8,6 +8,7 @@ statement: formalized
 # Recurrence with fourth powers of binomial coefficients
 
 > The sequence is defined by $a(1) = 2$, and for $n \ge 2$,
+>
 > $$(2n+1)^3 a(n) = 32n^3 a(n-1) + (21n^3 + 22n^2 + 8n + 1) \binom{2n-1}{n}^4.$$
 >
 > *References:*

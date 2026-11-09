@@ -8,9 +8,13 @@ statement: formalized
 # Asymptotic density of powerful numbers
 
 > Let $Q(x)$ denote the number of powerful integers up to $x$. Erdős and Szekeres [ES35] proved
+>
 > $$Q(x) = \frac{\zeta(3/2)}{\zeta(3)} x^{1/2} + O(x^{1/3}),$$
+>
 > and Bateman and Grosswald [BG58] sharpened this to
+>
 > $$Q(x) = \frac{\zeta(3/2)}{\zeta(3)} x^{1/2} + \frac{\zeta(2/3)}{\zeta(2)} x^{1/3} + O(x^{1/6}).$$
+>
 > Improving the exponent $1/6$ in the error term unconditionally remains open; conditional
 > improvements are known under the Riemann Hypothesis.
 >
@@ -30,7 +34,9 @@ The file states 3 research or textbook statements: 1 open and 2 solved.
 Solved: stated here without proof.
 
 > Erdős and Szekeres [ES35] proved that the number of powerful integers up to $x$ satisfies
+>
 > $$Q(x) = \frac{\zeta(3/2)}{\zeta(3)} x^{1/2} + O(x^{1/3}).$$
+>
 > In particular $Q(x) \sim \frac{\zeta(3/2)}{\zeta(3)} \sqrt{x}$.
 
 ```lean
@@ -46,6 +52,7 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here without proof.
 
 > Bateman and Grosswald [BG58] proved the sharper asymptotic
+>
 > $$Q(x) = \frac{\zeta(3/2)}{\zeta(3)} x^{1/2} + \frac{\zeta(2/3)}{\zeta(2)} x^{1/3} + O(x^{1/6}).$$
 
 ```lean
@@ -62,8 +69,10 @@ Open: stated without proof.
 
 > Can the exponent $1/6$ in the error term of the Bateman–Grosswald asymptotic be improved
 > unconditionally? That is, is there $\delta > 0$ such that
+>
 > $$Q(x) = \frac{\zeta(3/2)}{\zeta(3)} x^{1/2} + \frac{\zeta(2/3)}{\zeta(2)} x^{1/3} +
 > O(x^{1/6 - \delta})?$$
+>
 > Improvements are known under the Riemann Hypothesis.
 
 ```lean

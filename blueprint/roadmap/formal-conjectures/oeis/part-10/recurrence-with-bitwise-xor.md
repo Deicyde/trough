@@ -8,7 +8,9 @@ statement: formalized
 # Recurrence with bitwise XOR
 
 > The sequence is defined by $a(0) = 0$, $a(1) = 1$, and for $n \ge 0$,
+>
 > $$a(n+2) = (a(n+1) \mathbin{\mathrm{XOR}} (n+2)) - a(n),$$
+>
 > where $\mathrm{XOR}$ is the bitwise exclusive-or operator on integers.
 >
 > *References:*

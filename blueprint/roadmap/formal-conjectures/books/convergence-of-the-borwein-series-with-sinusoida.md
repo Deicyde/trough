@@ -21,9 +21,11 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/AxiomMath/gdm-formal-conjectures/blob/main/BorweinSineSeries/solution.lean](https://github.com/AxiomMath/gdm-formal-conjectures/blob/main/BorweinSineSeries/solution.lean).
 
 > Does the series
+>
 > $$
 >   \sum_{n=1}^{\infty} \frac{\left(\frac{2}{3} + \frac{1}{3}\sin n\right)^n}{n}
 > $$
+>
 > converge?
 >
 > After computing approximately $10^7$ terms, the partial sums approximate $2.163$.

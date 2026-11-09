@@ -92,7 +92,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The current best bounds known are
+>
 > $$(\log n)^{1+c} \ll g(n) \ll \exp(\sqrt{\log n})$$
+>
 > for some constant $c>0$, the lower bound due to Sanders [Sa21] and the upper bound due to
 > Ruzsa [Ru05].
 >
@@ -110,7 +112,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The current best bounds known are
+>
 > $$(\log n)^{1+c} \ll g(n) \ll \exp(\sqrt{\log n})$$
+>
 > for some constant $c>0$, the lower bound due to Sanders [Sa21] and the upper bound due to
 > Ruzsa [Ru05].
 >
@@ -129,6 +133,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Beker [Be25] has proved
+>
 > $$(\log n)^{1+\tfrac{1}{68}+o(1)} \ll g(n).$$
 >
 > Here this means that $g(n) \geq (\log n)^{1+c}$ for every $c < 1/68$ and all large $n$

@@ -26,6 +26,7 @@ Open: stated without proof.
 > coloured red and blue then there exists either a red $K_k$ or a blue $K_l$.
 >
 > Prove the existence of some $c>0$ such that
+>
 > $$\lim_{k\to \infty}\frac{R(k+1,k)}{R(k,k)}> 1+c.$$
 >
 > A problem of Erdős and Sós.

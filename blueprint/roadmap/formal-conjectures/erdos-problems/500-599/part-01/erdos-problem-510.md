@@ -27,6 +27,7 @@ Open: stated without proof.
 >
 > If $A\subset \mathbb{N}$ is a finite set of positive integers of size $N > 0$ then is there some
 > absolute constant $c>0$ and $\theta$ such that
+>
 > $$\sum_{n\in A}\cos(n\theta) < -cN^{1/2}?$$
 
 ```lean

@@ -22,11 +22,13 @@ Solved: stated here without proof.
 > Let $f_\max(n)$ be the largest $m$ such that $\phi(m) = n$, and
 > $f_\min(n)$ be the smallest such $m$, where $\phi$ is Euler's
 > totient function. Investigate
+>
 > $$
 >   \max_{n\leq x}\frac{f_\max(n)}{f_\min(n)}.
 > $$
 >
 > GPT-5.5 Pro (prompted by Price) has proved (see also the comments for a summary) that
+>
 > $$
 > \max_{n\leq x}\frac{f_{\max}(n)}{f_{\min}(n)}=(e^\gamma+o(1))\log\log x.
 > $$

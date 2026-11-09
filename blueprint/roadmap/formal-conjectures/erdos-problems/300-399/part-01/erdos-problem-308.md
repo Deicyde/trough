@@ -73,9 +73,12 @@ Solved: stated here without proof.
 
 > Croot [Cr99] bounded $\eta(N)$, the largest integer such that every integer in
 > $\{1,\ldots,\eta(N)\}$ is representable; this is $f(N)-1$, so his bounds read
+>
 > $$\left\lfloor\sum_{n\leq N}\frac{1}{n}-\frac{9}{2}(1+o(1))\frac{(\log\log N)^2}{\log N}
 > \right\rfloor + 1 \leq f(N)$$
+>
 > and
+>
 > $$f(N)\leq \left\lfloor\sum_{n\leq N}\frac{1}{n}-\frac{1}{2}(1+o(1))
 > \frac{(\log\log N)^2}{\log N}\right\rfloor + 1.$$
 

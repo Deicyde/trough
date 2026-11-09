@@ -29,6 +29,7 @@ Solved: stated here without proof.
 > $A\subseteq S$.
 >
 > Is it true that
+>
 > $$f(n) = \left(\frac{1}{2}+o(1)\right)\frac{n}{\log n}?$$
 >
 > The answer is yes: the lower bound is due to Erdős and Graham and the upper bound to Alon and
@@ -46,7 +47,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős and Graham proved the lower bound
+>
 > $$f(n)\geq \left(\frac{1}{2}+o(1)\right)\frac{n}{\log n}.$$
+>
 > Their proof is to note that we can assume that $m< \binom{n+1}{2}$ and then, for any $m$, take
 > $S=\{ kp : 1\leq k\lt \frac{n}{p}\}$ where $p$ is the least prime that does not divide $m$
 > (so $p<(2+o(1))\log n$).
@@ -63,7 +66,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > The complementary bound
+>
 > $$f(n) \leq \left(\frac{1}{2}+o(1)\right)\frac{n}{\log n}$$
+>
 > was proved by Alon and Freiman [AlFr88], who chose $m$ as the least common multiple of
 > $\{1,\ldots,s\}$ where $s$ is maximal such that $m\leq \frac{n^2}{20(\log n)^2}$.
 

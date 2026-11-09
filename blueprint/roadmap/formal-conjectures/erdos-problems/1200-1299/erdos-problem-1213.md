@@ -24,6 +24,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Let $a,K\geq 1$. Does there exist $f(a,K)$ such that if $a=a_1\lt \cdots \lt a_s$ is a sequence of
 > integers with $a_s> f(a,K)$ and with bounded gaps $a_{i+1}-a_i\leq K$ then there are two distinct
 > intervals $I$ and $J$ such that
+>
 > $$\sum_{i\in I}a_i=\sum_{j\in J}a_j?$$
 >
 > Hegyvári [He86] has proved the answer is yes, and gives an explicit bound of the shape

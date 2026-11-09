@@ -20,9 +20,15 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos351.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos351.lean).
 
 > Let $p(x) \in \mathbb{Q}[x]$ be a non-constant rational polynomial with positive leading
-> coefficient. Is it true that $$A=\{ p(n)+1/n : n \in \mathbb{N}\}$$ is strongly complete,
+> coefficient. Is it true that
+>
+> $$A=\{ p(n)+1/n : n \in \mathbb{N}\}$$
+>
+> is strongly complete,
 > in the sense that, for any finite set $B$,
+>
 > $$\left\{\sum_{a \in X} a : X \subseteq A \setminus B, X \textrm{ is finite}\right\}$$
+>
 > contains all sufficiently large integers?
 
 ```lean
@@ -37,9 +43,13 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Let $p(x) = x \in \mathbb{Q}[x]$. It has been shown that
+>
 > $$A=\{ p(n)+1/n : n \in \mathbb{N}\}$$
+>
 > is strongly complete, in the sense that, for any finite set $B$,
+>
 > $$\left\{\sum_{a \in X} a : X \subseteq A \setminus B, X \textrm{ is finite}\right\}$$
+>
 > contains all sufficiently large integers.
 
 ```lean
@@ -53,9 +63,13 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Let $p(x) = x ^ 2 \in \mathbb{Q}[x]$. It has been shown that
+>
 > $$A=\{ p(n)+1/n : n \in \mathbb{N}\}$$
+>
 > is strongly complete, in the sense that, for any finite set $B$,
+>
 > $$\left\{\sum_{a \in X} a : X \subseteq A \setminus B, X \textrm{ is finite}\right\}$$
+>
 > contains all sufficiently large integers.
 
 ```lean

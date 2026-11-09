@@ -24,6 +24,7 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > There exists some constant $c>0$ such that
+>
 > $$R(C_4,K_n) \ll n^{2-c}.$$
 >
 > The prize of $100 is offered in [Er78] for a proof or disproof.

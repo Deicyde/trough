@@ -31,6 +31,7 @@ Solved: stated here without proof.
 
 > Let $k\geq 3$. Is it true that, if $m$ is sufficiently large, for any graph $H$ on $m$ edges
 > without isolated vertices,
+>
 > $$R(C_k,H) \leq 2m+\left\lfloor\frac{k-1}{2}\right\rfloor?$$
 >
 > This was proved for even $k$ by Erdős, Faudree, Rousseau, and Schelp [EFRS93]. This was proved

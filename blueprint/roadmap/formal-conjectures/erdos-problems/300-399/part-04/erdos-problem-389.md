@@ -20,6 +20,7 @@ The file states 2 research or textbook statements: 1 open and 1 textbook result.
 Open: stated without proof.
 
 > Is it true that for every $n \geq 1$ there is a $k$ such that
+>
 > $$
 >   n(n + 1) \cdots (n + k - 1) \mid (n + k) \cdots (n + 2k - 1)?
 > $$

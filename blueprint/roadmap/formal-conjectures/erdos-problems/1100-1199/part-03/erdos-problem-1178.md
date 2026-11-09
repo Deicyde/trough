@@ -35,10 +35,14 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > For $r\geq 3$ let $d_r(e)$ be the minimal $d$ such that
+>
 > $$\mathrm{ex}_r(n,\mathcal{F})=o(n^2),$$
+>
 > where $\mathcal{F}$ is the family of $r$-uniform hypergraphs on $d$ vertices with $e$ edges. Prove
 > that
+>
 > $$d_r(e)=(r-2)e+3$$
+>
 > for all $r,e\geq 3$.
 
 ```lean

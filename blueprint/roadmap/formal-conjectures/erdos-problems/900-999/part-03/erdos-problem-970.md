@@ -26,7 +26,9 @@ The file states 2 research or textbook statements: 2 solved.
 
 Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/Jacobsthal/Conclusions/QuadraticBound.lean#L13](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/Jacobsthal/Conclusions/QuadraticBound.lean#L13).
 
-> Let $h(k)$ be Jacobsthal's function, defined to as the minimal $m$ such that, if $n$ has at most $k$ prime factors, then in any set of $m$ consecutive integers there exists an integer coprime to $n$. Determine the order of magnitude of $h(k)$. In particular, is it true that $$h(k) \ll k^2?$$
+> Let $h(k)$ be Jacobsthal's function, defined to as the minimal $m$ such that, if $n$ has at most $k$ prime factors, then in any set of $m$ consecutive integers there exists an integer coprime to $n$. Determine the order of magnitude of $h(k)$. In particular, is it true that
+>
+> $$h(k) \ll k^2?$$
 >
 > The bound $h(k) \ll k^2$ was proved by an internal OpenAI model in September 2026 [OAI26a]; see
 > the linked Lean proof. The order of magnitude of $h(k)$ remains open.
@@ -42,7 +44,11 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 
 Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/Jacobsthal/Conclusions/IteratedLogBound.lean#L59](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/Jacobsthal/Conclusions/IteratedLogBound.lean#L59).
 
-> The stronger bound $$h(k) \ll \frac{k^2}{(\log\log 3k)^2}$$ proved in [OAI26a].
+> The stronger bound
+>
+> $$h(k) \ll \frac{k^2}{(\log\log 3k)^2}$$
+>
+> proved in [OAI26a].
 
 ```lean
 theorem erdos_970.variants.iterated_log :

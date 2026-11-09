@@ -49,9 +49,11 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Solved: stated here without proof.
 
 > Erdős and Szekeres proved the bounds
+>
 > $$
 >   2^{n-2} + 1 ≤ f(n) ≤ \binom{2n-4}{n-2} + 1
 > $$
+>
 > ([ErSz60] and [ErSz35] respectively).
 >
 > [ErSz60] Erdős, P. and Szekeres, G., _On some extremum problems in elementary geometry_.
@@ -72,6 +74,7 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Solved: stated here without proof.
 
 > Suk [Su17] proved
+>
 > $$
 >   f(n) ≤ 2^{(1+o(1))n}.
 > $$
@@ -93,6 +96,7 @@ Solved: stated here without proof.
 
 > The current best bound is due to Holmsen, Mojarrad, Pach, and Tardos [HMPT20],
 > who prove
+>
 > $$
 >   f(n) ≤ 2^{n+O(\sqrt{n\log n})}.
 > $$

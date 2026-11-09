@@ -17,10 +17,12 @@ statement: formalized
 >
 > For positive integers $m, n \ge 2$, let $\mathrm{S}_m \times \mathrm{S}_n$ be the direct product of
 > symmetric groups on $[m] = \{1, \dots, m\}$ and $[n'] = \{1', \dots, n'\}$. Define
+>
 > $$
 > \Gamma_{m \oplus n} = \{(\sigma_1, \sigma_2) \in \mathrm{S}_m \times \mathrm{S}_n :
 >   \mathrm{sgn}(\sigma_1) = \mathrm{sgn}(\sigma_2)\}
 > $$
+>
 > to be the index-$2$ subgroup of pairs of permutations with equal parity, i.e., those whose
 > product action on $[m] \cup [n']$ is an even permutation.
 >
@@ -42,10 +44,12 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/fernandes-c
 > **Conjecture 1 (Fernandes, 2026):**
 > Let $m \ge n \ge 2$ be integers with $(m, n) \notin \{(2,2), (3,3), (4,3), (4,4)\}$.
 > Then the group
+>
 > $$
 > \Gamma_{m \oplus n} = \{(\sigma_1, \sigma_2) \in \mathrm{S}_m \times \mathrm{S}_n :
 >   \mathrm{sgn}(\sigma_1) = \mathrm{sgn}(\sigma_2)\}
 > $$
+>
 > has rank $2$, i.e., minimal generating set of size $2$.
 >
 > Note: Fernandes states the conjecture for groups of exact rank $2$, which is why $(2,2)$

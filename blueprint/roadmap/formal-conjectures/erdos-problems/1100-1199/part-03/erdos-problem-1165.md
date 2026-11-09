@@ -30,9 +30,13 @@ Solved: stated here without proof.
 > the number of $0\leq k\leq n$ such that $s_k=x$.
 >
 > Let
+>
 > $$F(n)=\{ x: f_n(x) = \max_y f_n(y)\}$$
+>
 > be the set of 'favourite values'. Find
+>
 > $$\mathbb{P}(\lvert F(n)\rvert=r\textrm{ infinitely often})$$
+>
 > for $r\geq 3$.
 >
 > A problem of Erdős and Révész [Va99, 6.77]. We take the simple random walk, on any probability
@@ -54,7 +58,9 @@ Solved: stated here without proof.
 
 > Hao, Li, Okada and Zheng [HLOZ24, Theorem 1.1] proved that, for the simple random walk on
 > $\mathbb{Z}^2$, almost surely
+>
 > $$\limsup_{n\to\infty} \#K^{(2)}(n) = 3,$$
+>
 > where $K^{(2)}(n)$ is the set of favourite sites at time $n$. The cardinalities are natural
 > numbers, so almost surely there are eventually at most three favourite sites, and exactly three
 > infinitely often. Tóth [To01] proved the corresponding bound for the one-dimensional walk, see

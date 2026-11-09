@@ -23,6 +23,7 @@ Solved: stated here; a Lean proof is at [https://github.com/henrykmichalewski/fo
 > Canad. Math. Bull. 57 (2014), no. 1, 141–144](https://doi.org/10.4153/CMB-2013-020-5)
 > claims: if $G$ is a connected triangle-free graph of order $n$ and size $m$ with
 > connected domination number $\gamma_c$, then
+>
 > $$m \le \frac{(n - \gamma_c)^2}{4} + n - 1.$$
 >
 > The claim is **false**: the 3-dimensional hypercube $Q_3$ is a counterexample,

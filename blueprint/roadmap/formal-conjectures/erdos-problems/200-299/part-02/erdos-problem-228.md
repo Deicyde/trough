@@ -20,7 +20,11 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here without proof.
 
 > Does there exist, for all large $n$, a polynomial $P$ of degree $n$, with coefficients $\pm1$, such
-> that $$\sqrt n \ll |P(z)| \ll \sqrt n$$ for all $|z|=1$, with the implied constants independent of
+> that
+>
+> $$\sqrt n \ll |P(z)| \ll \sqrt n$$
+>
+> for all $|z|=1$, with the implied constants independent of
 > $z$ and $n$?
 >
 > The answer is yes, proved by Balister, Bollobás, Morris, Sahasrabudhe, and Tiba [BBMST19].

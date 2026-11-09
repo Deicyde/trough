@@ -25,6 +25,7 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here; a Lean proof is at [https://github.com/zhangjun725/erdos557/blob/c4e0ab13027f8bb50defade11cf8a53c7b8b0ba9/Erdos557/Erdos547.lean#L84](https://github.com/zhangjun725/erdos557/blob/c4e0ab13027f8bb50defade11cf8a53c7b8b0ba9/Erdos557/Erdos547.lean#L84).
 
 > If $T$ is a tree on $n$ vertices then
+>
 > $$R(T) \leq 2n-2.$$
 >
 > This problem is #14 in Ramsey Theory in the graphs problem collection.

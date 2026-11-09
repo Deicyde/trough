@@ -21,7 +21,9 @@ Open: stated without proof.
 
 > Let $\epsilon>0$ and $N$ be sufficiently large. Is it true that if $A\subseteq \{1,\ldots,N\}$ has
 > size at least $\epsilon N$ then there must be distinct $a,b,c\in A$ such that
+>
 > $$[a, b]=[b, c]=[a, c],$$
+>
 > where $[\cdot, \cdot]$ denotes the least common multiple?
 
 ```lean

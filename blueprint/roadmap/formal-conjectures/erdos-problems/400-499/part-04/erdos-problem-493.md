@@ -22,7 +22,9 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos493.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos493.lean).
 
 > Does there exist a $k$ such that every sufficiently large integer can be written in the form
+>
 > $$\prod_{i=1}^k a_i - \sum_{i=1}^k a_i$$
+>
 > for some integers $a_i\geq 2$?
 >
 > Erdős attributes this question to Schinzel. Eli Seamans has observed that the answer is yes (with $k=2$) for a very simple reason: $n = 2(n+2)-(2+(n+2))$. There may well have been some additional constraint in the problem as Schinzel posed it, but [Er61] does not record what this is.

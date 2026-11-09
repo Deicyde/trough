@@ -27,7 +27,9 @@ The file states 2 research or textbook statements: 1 open and 1 solved.
 Open: stated without proof.
 
 > Prove that
+>
 > $$R(C_k,K_n)=(k-1)(n-1)+1$$
+>
 > for $k\geq n\geq 3$ (except when $n=k=3$).
 >
 > Asked by Erdős, Faudree, Rousseau, and Schelp.

@@ -29,10 +29,12 @@ Solved: stated here; a Lean proof is at [https://github.com/AlperTheKing/formal-
 >
 > **Proof sketch.** The proof first strengthens the real-valued target to the
 > integral bound
+>
 > $$
 > \mathrm{ecc}(B) + \mathrm{girth}(G)
 >   - \lfloor \mathrm{girth}(G) / 3 \rfloor \leq \mathrm{tree}(G).
 > $$
+>
 > For a cyclic graph, start with a shortest cycle $K$. It is chordless, so
 > removing one vertex leaves an induced path on $\mathrm{girth}(G)-1$ vertices.
 > Shortest paths from selected vertices to $K$ are called *descents*. Pairwise
@@ -51,11 +53,13 @@ Solved: stated here; a Lean proof is at [https://github.com/AlperTheKing/formal-
 > $\mathrm{ecc}(B)$, and the two remaining congruence cases are handled by
 > separate geodesic/cycle certificates with one or two descents; the acyclic case
 > follows from a diametral path. Finally,
+>
 > $$
 > \mathrm{girth}(G)-\lfloor\mathrm{girth}(G)/3\rfloor
 >   = \lceil 2\,\mathrm{girth}(G)/3\rceil
 >   \geq 2\,\mathrm{girth}(G)/3,
 > $$
+>
 > which gives the stated real-valued inequality.
 >
 > The argument was developed with assistance from ChatGPT Pro. The linked Lean 4

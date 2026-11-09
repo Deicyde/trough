@@ -9,6 +9,7 @@ statement: formalized
 
 > Let $A$ and $B$ be sets of words of length $n$ over an alphabet with $q$ letters. If no
 > (nonempty) suffix of any word in $A$ coincides with a prefix of any word in $B$, then
+>
 > $$|A| \cdot |B| \leq \frac{q^{2n}}{en}.$$
 >
 > *References:*

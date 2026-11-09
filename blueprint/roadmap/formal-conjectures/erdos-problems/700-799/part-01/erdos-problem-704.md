@@ -54,7 +54,9 @@ Open: stated without proof.
 
 > Let $G_n$ be the unit distance graph in $\mathbb{R}^n$, with two vertices joined by an edge if
 > and only if the distance between them is $1$. Does
+>
 > $$\lim_{n\to\infty}\chi(G_n)^{1/n}$$
+>
 > exist?
 >
 > This generalises the Hadwiger–Nelson problem (Erdős Problem 508), the case $n = 2$. The
@@ -74,7 +76,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Textbook result, stated without proof.
 
 > The trivial colouring (by tiling with cubes) gives
+>
 > $$\chi(G_n) \leq (2 + \sqrt{n})^n.$$
+>
 > In particular $\chi(G_n)$ is finite for every $n$.
 
 ```lean
@@ -90,6 +94,7 @@ Category `textbook`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combi
 Solved: stated here without proof.
 
 > Frankl and Wilson [FrWi81] proved
+>
 > $$\chi(G_n) \geq (1 + o(1)) 1.2^n.$$
 
 ```lean
@@ -105,7 +110,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Raigorodskii [Ra00] proved
+>
 > $$\chi(G_n) \geq (1.239\cdots + o(1))^n.$$
+>
 > We state the weaker bound with the truncated constant $1.239$: for every $0 < c < 1.239$ we
 > have $\chi(G_n) \geq c^n$ for all large $n$.
 
@@ -122,7 +129,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Davies [Da26, Theorem 1.4] proved
+>
 > $$\chi(G_n) \geq (2 + o(1))^n,$$
+>
 > improving the bound of Raigorodskii (see `Erdos704.erdos_704.variants.raigorodskii`): for every
 > $0 < c < 2$ we have $\chi(G_n) \geq c^n$ for all large $n$.
 
@@ -139,7 +148,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Larman and Rogers [LaRo72] proved
+>
 > $$\chi(G_n) \leq (3 + o(1))^n.$$
+>
 > Prosanov [Pr20] has given an alternative proof of this bound.
 
 ```lean
@@ -155,7 +166,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Davies [Da26, Theorem 1.5] proved
+>
 > $$\chi(G_n) \leq (3\sqrt{3}/2 + o(1))^n,$$
+>
 > improving the bound of Larman and Rogers (see `Erdos704.erdos_704.variants.larman_rogers`).
 > (The abstract of [Da26] prints $3\sqrt{3}/4$; Theorem 1.5 has $3\sqrt{3}/2 \approx 2.598$.)
 
@@ -172,7 +185,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Larman and Rogers [LaRo72] conjecture that the truth may be
+>
 > $$\chi(G_n) = (2^{3/2} + o(1))^n,$$
+>
 > that is, $\chi(G_n)^{1/n} \to 2^{3/2}$.
 >
 > This is false: by `Erdos704.erdos_704.variants.davies_upper` [Da26] we have

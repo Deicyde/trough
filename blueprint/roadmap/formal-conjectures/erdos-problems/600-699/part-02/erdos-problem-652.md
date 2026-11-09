@@ -26,7 +26,9 @@ Solved: stated here without proof.
 
 > Let $x_1,\ldots,x_n\in \mathbb{R}^2$ and let
 > $R(x_i)=\#\{ \lvert x_j-x_i\rvert : j\neq i\}$, where the points are ordered such that
+>
 > $$R(x_1)\leq \cdots \leq R(x_n).$$
+>
 > Let $\alpha_k$ be minimal such that, for all large enough $n$, there exists a set of $n$ points
 > with $R(x_k)\lt \alpha_kn^{1/2}$. Is it true that $\alpha_k\to \infty$ as $k\to \infty$?
 >

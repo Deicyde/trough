@@ -30,7 +30,9 @@ Open: stated without proof.
 > Let $k \geq 4$ and let $g_k(n)$ denote the largest $m$ such that there is a graph on $n$
 > vertices with chromatic number $k$ and girth $> m$ (i.e. containing no cycle of length
 > $\leq m$). Does
+>
 > $$\lim_{n\to\infty}\frac{g_k(n)}{\log n}$$
+>
 > exist?
 >
 > By `Erdos626.erdos_626.variants.kostochka` and `Erdos626.erdos_626.variants.erdos_upper`, the
@@ -49,7 +51,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Kostochka [Ko88] proved that for $k \geq 4$
+>
 > $$g_k(n) \geq \frac{1}{4\log k}\log n.$$
+>
 > Kostochka's theorem gives this lower bound for the girth itself, and $g_k(n)$ is one less than the
 > largest possible girth, so the inequality above holds only up to $1$. The statement below is a
 > consequence of his theorem, not the theorem itself: for every $\varepsilon > 0$ and all
@@ -68,7 +72,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er59b] proved that for $k \geq 4$
+>
 > $$g_k(n) \leq \frac{2}{\log(k-2)}\log n + 1.$$
+>
 > We state it for all sufficiently large $n$.
 
 ```lean
@@ -85,7 +91,9 @@ Open: stated without proof.
 
 > Let $h^{(m)}(n)$ be the maximal chromatic number of a graph on $n$ vertices with girth $> m$.
 > Does
+>
 > $$\lim_{n\to\infty}\frac{\log h^{(m)}(n)}{\log n}$$
+>
 > exist, and what is its value? The value is asked for in
 > `Erdos626.erdos_626.variants.h_odd_conjecture` and `Erdos626.erdos_626.variants.h_even_conjecture`.
 
@@ -102,7 +110,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős [Er59b] proved that
+>
 > $$\lim_{n\to\infty}\frac{\log h^{(m)}(n)}{\log n} \gg \frac{1}{m}.$$
+>
 > The existence of the limit is open, so we state the lower bound for the lower limit: there is
 > an absolute constant $c > 0$ such that for every $m \geq 1$ and $\varepsilon > 0$, eventually
 > $h^{(m)}(n) \geq n^{c/m - \varepsilon}$.
@@ -120,7 +130,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er59b] proved that for odd $m$
+>
 > $$\lim_{n\to\infty}\frac{\log h^{(m)}(n)}{\log n} \leq \frac{2}{m+1}.$$
+>
 > The existence of the limit is open, so we state the bound for the upper limit: for every
 > $\varepsilon > 0$, eventually $h^{(m)}(n) \leq n^{2/(m+1) + \varepsilon}$.
 
@@ -138,6 +150,7 @@ Open: stated without proof.
 
 > Erdős conjectured that the bound in `Erdos626.erdos_626.variants.h_upper_odd` is sharp: for
 > odd $m$,
+>
 > $$\lim_{n\to\infty}\frac{\log h^{(m)}(n)}{\log n} = \frac{2}{m+1}.$$
 
 ```lean

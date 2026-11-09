@@ -27,7 +27,9 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/cadamcat/hypercube-ramsey-lean4/blob/ad206e1bf8240c28b538dfe72f10364cbc1591da/HypercubeRamsey/Main.lean#L14](https://github.com/cadamcat/hypercube-ramsey-lean4/blob/ad206e1bf8240c28b538dfe72f10364cbc1591da/HypercubeRamsey/Main.lean#L14).
 
 > Let $Q_n$ be the $n$-dimensional hypercube graph (so that $Q_n$ has $2^n$ vertices and
-> $n2^{n-1}$ edges). Prove that $$R(Q_n) \ll 2^n.$$
+> $n2^{n-1}$ edges). Prove that
+>
+> $$R(Q_n) \ll 2^n.$$
 
 ```lean
 theorem erdos_181 :

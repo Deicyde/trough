@@ -106,6 +106,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Ford, Green, Konyagin, Maynard and Tao [FGKMT18] proved
+>
 > $$Y(x) \gg \frac{x \log x \log\log\log x}{\log\log x}.$$
 
 ```lean

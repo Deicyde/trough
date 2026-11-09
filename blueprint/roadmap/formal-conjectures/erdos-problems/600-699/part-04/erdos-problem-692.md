@@ -62,7 +62,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Erdős proved that
+>
 > $$\delta_1(n,m) \ll \frac{1}{(\log n)^c}$$
+>
 > for all $m$, for some constant $c>0$.
 
 ```lean
@@ -78,6 +80,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/linrock/math-proofs/blob/b8e7531a14cbe5c18ea1ae2e9e85b811bc3c7a46/erdos-692/Solution.lean#L26](https://github.com/linrock/math-proofs/blob/b8e7531a14cbe5c18ea1ae2e9e85b811bc3c7a46/erdos-692/Solution.lean#L26).
 
 > Cambie has calculated that unimodularity fails even for $n=2$ and $n=3$. For example,
+>
 > $$\delta_1(3,6)= 0.35\quad \delta_1(3,7)\approx 0.33\quad \delta_1(3,8)\approx 0.3619.$$
 
 ```lean

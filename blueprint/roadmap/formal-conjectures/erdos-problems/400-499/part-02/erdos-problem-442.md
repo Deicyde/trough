@@ -23,14 +23,18 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > $\operatorname{Log}_2x = \operatorname{Log} (\operatorname{Log} x)$, and
 > $\operatorname{Log}_3x = \operatorname{Log}(\operatorname{Log}(\operatorname{Log} x)).$
 > Is it true that if $A\subseteq\mathbb{N}$ is such that
+>
 > $$
 > \frac{1}{\operatorname{Log}_2 x} \sum_{n\in A: n\leq x} \frac{1}{n}\to\infty
 > $$
+>
 > then
+>
 > $$
 > \left(\sum_{n\in A: n\leq x} \frac{1}{n}\right)^2 \sum_{n, m \in A: n < m \leq x}
 > \frac{1}{\operatorname{lcm}(n, m)}\to\infty
 > $$
+>
 > as $x\to\infty$?
 >
 > Tao [Ta24b] has shown this is false.
@@ -61,11 +65,14 @@ Solved: stated here without proof.
 > $\operatorname{Log}_2x = \operatorname{Log} (\operatorname{Log} x)$, and
 > $\operatorname{Log}_3x = \operatorname{Log}(\operatorname{Log}(\operatorname{Log} x)).$
 > There exists a set $A$ of natural numbers such that
+>
 > $$
 > \sum_{n\in A: n\leq x} \frac{1}{n} =
 >   \exp\left(\left(\left(\frac{1}{2} + o(1)\right)\operatorname{Log}_2^{1/2}x \operatorname{Log}_3x\right)\right)
 > $$
+>
 > and
+>
 > $$
 > \sum_{n, m\in A: n, m\leq x} \frac{1}{\operatorname{lcm}(n, m)}\ll\left(\sum_{n\in A: n\leq x} \frac{1}{n}\right)^2
 > $$

@@ -29,12 +29,16 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > sum of finitely many distinct elements of $A$, and similarly for $S(B)$.
 >
 > If
+>
 > $$
 > \overline{\delta}(X)=\limsup_{x\to \infty}\frac{1}{\log x}
 >   \sum_{\substack{n\in X\\ n\lt x}}\frac{1}{n}
 > $$
+>
 > is the upper logarithmic density of $X$ then how large must
+>
 > $$\max(\overline{\delta}(S(A)),\overline{\delta}(S(B)))$$
+>
 > be?
 >
 > A question of Erdős [Er80]. Conlon, Fox, and Pham [CFP22, Theorem 1] proved that the least

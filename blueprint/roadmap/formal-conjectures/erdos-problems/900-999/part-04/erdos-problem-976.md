@@ -31,7 +31,9 @@ Open: stated without proof.
 > Let $f\in \mathbb{Z}[x]$ be an irreducible polynomial of degree $d\geq 2$. Let $F_f(n)$ be maximal
 > such that there exists $1\leq m\leq n$ with $f(m)$ is divisible by a prime $\geq F_f(n)$.
 > Equivalently, $F_f(n)$ is the greatest prime divisor of
+>
 > $$\prod_{1\leq m\leq n}f(m).$$
+>
 > Estimate $F_f(n)$.
 >
 > We read "estimate" as determining the order of magnitude of $F_f(n)$.
@@ -93,7 +95,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős [Er52c] improved the bound of Nagell and Ricci to
+>
 > $$F_f(n) \gg n(\log n)^{\log\log\log n}.$$
+>
 > More precisely, [Er52c] gives $F_f(n) > n(\log n)^{c\log\log\log n}$ for some constant
 > $c = c(f) > 0$; the site omits $c$.
 

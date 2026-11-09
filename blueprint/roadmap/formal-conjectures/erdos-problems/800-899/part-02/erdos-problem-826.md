@@ -20,6 +20,7 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Are there infinitely many $n$ such that, for all $k\geq 1$
+>
 > $$
 >   \tau(n + k) \ll k?
 > $$

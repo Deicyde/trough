@@ -20,8 +20,11 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos728p.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos728p.lean).
 
 > Let $\varepsilon$ be sufficiently small and $C, C' > 0$. Are there integers $a, b, n$ such that
+>
 > $$a, b > \varepsilon n\quad a!\, b! \mid n!\, (a + b - n)!, $$
+>
 > and
+>
 > $$C \log n < a + b - n < C' \log n ?$$
 >
 > Note that the website currently displays a simpler (trivial) version of this problem because

@@ -24,7 +24,11 @@ The file states 3 research or textbook statements: 1 open and 2 solved. It also 
 Open: stated without proof.
 
 > Does there exist, for all $r\geq 2$, a basis $A$ of order $r$ (so that $f_r(n)>0$ for all
-> large $n$) such that $$\sum_{n\leq x}f_r(n)^2 \ll x$$ for all $x$?
+> large $n$) such that
+>
+> $$\sum_{n\leq x}f_r(n)^2 \ll x$$
+>
+> for all $x$?
 
 ```lean
 theorem erdos_1192 :
@@ -41,7 +45,14 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős and Rényi proved by the probabilistic method that there exists a set $A$ such that
-> $$\sum_{n\leq x}f_r(n)^2 \ll x$$ and $$\lvert A\cap [1,x]\rvert\gg x^{1/r}$$ for all $x$.
+>
+> $$\sum_{n\leq x}f_r(n)^2 \ll x$$
+>
+> and
+>
+> $$\lvert A\cap [1,x]\rvert\gg x^{1/r}$$
+>
+> for all $x$.
 
 ```lean
 theorem erdos_1192.variants.renyi :

@@ -29,7 +29,9 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos407.lean#L257](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos407.lean#L257).
 
 > Let $w(n)$ count the number of solutions to
+>
 > $$n=2^a+3^b+2^c3^d$$
+>
 > with $a,b,c,d\geq 0$ integers. Is it true that $w(n)$ is bounded by some absolute constant?
 >
 > A conjecture originally due to Newman.

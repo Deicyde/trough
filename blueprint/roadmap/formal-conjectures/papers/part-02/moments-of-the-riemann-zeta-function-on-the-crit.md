@@ -40,9 +40,11 @@ Open: stated without proof.
 
 > The asymptotic behaviour of the $k$th moment of the Riemann zeta function
 > is conjectured to be
+>
 > $$
 >   \frac{1}{T}\int_0^T |\zeta(1/2 + it)|^{2k}dt \sim c_k \log(T)^{k^2},
 > $$
+>
 > for some constant $c_k$.
 
 ```lean

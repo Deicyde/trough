@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ is the sum of $d \cdot \tau(d)$ over all proper divisors $d < n$ of $n$,
 > where $\tau(d)$ is the number of divisors of $d$:
+>
 > $$a(n) = \sum_{d \mid n, d < n} d \cdot \tau(d)$$
 >
 > *References:*

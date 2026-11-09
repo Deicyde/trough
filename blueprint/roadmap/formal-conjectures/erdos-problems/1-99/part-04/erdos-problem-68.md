@@ -20,7 +20,9 @@ The file states 2 research or textbook statements: 1 open and 1 textbook result.
 Open: stated without proof.
 
 > Is
+>
 > $$\sum_{n=2}^\infty \frac{1}{n!-1}$$
+>
 > irrational?
 
 ```lean

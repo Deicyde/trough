@@ -23,11 +23,13 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/Kuberwastaken/c5-k4/blob/c9daf0f594d6d5b264c6cd54dc9eec488cb64741/lean/GraphConjecture309.lean](https://github.com/Kuberwastaken/c5-k4/blob/c9daf0f594d6d5b264c6cd54dc9eec488cb64741/lean/GraphConjecture309.lean).
 
 > Does every finite simple connected graph $G$ of order greater than two satisfy
+>
 > $$
 > \gamma_t(G) \leq \frac{1}{2}\left(
 > \max_v(\operatorname{distEven}(v)-\operatorname{evenHorizontal}(v))+
 > \min_{e\in E(\overline G)}|N_{\overline G}(e)|\right)?
 > $$
+>
 > Gebendorfer disproved the statement with the family $C_5[K_k]$, $k \geq 3$.
 
 ```lean

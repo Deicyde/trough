@@ -25,6 +25,7 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/linrock/math-proofs/blob/7caa4144741e10f96cf79d6f7313a0efd9a18b67/erdos-546/Proofs/OriginalStatement546.lean#L33](https://github.com/linrock/math-proofs/blob/7caa4144741e10f96cf79d6f7313a0efd9a18b67/erdos-546/Proofs/OriginalStatement546.lean#L33).
 
 > Let $G$ be a graph with no isolated vertices and $m$ edges. Is it true that
+>
 > $$R(G) \leq 2^{O(m^{1/2})}?$$
 >
 > This is true, and was proved by Sudakov [Su11].

@@ -22,7 +22,14 @@ The file states 2 research or textbook statements: 2 open.
 
 Open: stated without proof.
 
-> Let$$V'(x)=\#\{\phi(m) : 1\leq m\leq x\}$$and$$V(x)=\#\{\phi(m) \leq x : 1\leq m\}.$$
+> Let
+>
+> $$V'(x)=\#\{\phi(m) : 1\leq m\leq x\}$$
+>
+> and
+>
+> $$V(x)=\#\{\phi(m) \leq x : 1\leq m\}.$$
+>
 > Does $\lim V(x)/V'(x)$ exist?
 
 ```lean

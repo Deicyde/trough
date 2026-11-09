@@ -24,6 +24,7 @@ The file states 3 research or textbook statements: 2 open and 1 solved.
 Open: stated without proof.
 
 > Let $A\subset\mathbb{N}$ be an infinite Sidon set. Is it true that
+>
 > $$\liminf_{x\to \infty} \frac{\lvert A\cap [1,x]\rvert}{x^{1/2}}(\log x)^{1/2}=0?$$
 >
 > Here $x$ runs over $\mathbb{N}$ and the $\liminf$ is taken in `ℝ≥0∞`, so that it is $\infty$
@@ -42,7 +43,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > Does there exist an infinite Sidon set $A$ such that
+>
 > $$\liminf_{x\to \infty} \frac{\lvert A\cap [1,x]\rvert}{x^{1/2}}(\log x)^c>0$$
+>
 > for some $c>0$?
 >
 > A positive answer would also give a positive answer to Erdős Problem 39.
@@ -60,7 +63,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős proved (see for example [HaRo66]) that if $A$ is an infinite Sidon set then
+>
 > $$\liminf_{x\to \infty} \frac{\lvert A\cap [1,x]\rvert}{x^{1/2}}(\log x)^{1/2}\leq c$$
+>
 > for some constant $c>0$. See also `erdos_158.variants.isSidon'`.
 
 ```lean

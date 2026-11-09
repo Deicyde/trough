@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ is the largest integer $k$ such that $n = k^2 + \dots$ is a
 > decomposition of $n$ into a sum of at most four nondecreasing squares:
+>
 > $$a(n) = \max \{k \ge 1 : \exists b_1, b_2, b_3 \in \{0\} \cup [k, n],
 >   k^2 + b_1^2 + b_2^2 + b_3^2 = n\}$$
 >

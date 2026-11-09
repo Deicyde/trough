@@ -35,6 +35,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Suppose that we have a family $\mathcal{F}$ of subsets of $[4n]$ such that $\lvert A\rvert=2n$
 > for all $A\in\mathcal{F}$ and for every $A,B\in \mathcal{F}$ we have
 > $\lvert A\cap B\rvert \geq 2$. Then
+>
 > $$\lvert \mathcal{F}\rvert \leq \frac{1}{2}\left(\binom{4n}{2n}-\binom{2n}{n}^2\right).$$
 >
 > Conjectured by Erdős, Ko, and Rado [ErKoRa61]. This inequality would be best possible, as shown
@@ -43,7 +44,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > Proved by Ahlswede and Khachatrian [AhKh97], who more generally showed the following. Let
 > $2\leq t\leq k\leq m$ and let $r\geq 0$ be such that
+>
 > $$\frac{1}{r+1}\leq \frac{m-2k+2t-2}{(t-1)(k-t+1)}< \frac{1}{r}.$$
+>
 > The largest possible family of subsets of $[m]$ of size $k$, such that the pairwise
 > intersections have size at least $t$, is the family of all subsets of $[m]$ of size $k$ which
 > contain at least $t+r$ elements from $\{1,\ldots,t+2r\}$.

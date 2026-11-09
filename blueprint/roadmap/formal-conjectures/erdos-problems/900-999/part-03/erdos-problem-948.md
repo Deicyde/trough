@@ -26,7 +26,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Is there a function $f(n)$ and a $k$ such that in any $k$-colouring of the integers there exists a
 > sequence $a_1 < a_2 < \cdots$ such that $a_n < f(n)$ for infinitely many $n$ and the set
+>
 > $$\left\{ \sum_{i \in S} a_i : \textrm{finite nonempty } S \right\}$$
+>
 > does not contain all colours?
 >
 > A question of Erdős [Er77c] and Erdős and Galvin [ErGa91]. The answer is no: GPT-5.5 Pro (prompted

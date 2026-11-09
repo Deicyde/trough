@@ -21,9 +21,11 @@ Open: stated without proof.
 
 > Let $S$ be the set of all $m\geq 1$ such that there exists a prime $p\not\equiv 1\pmod{m}$ such
 > that $m! + 1 \equiv 0\pmod{p}$. Does
+>
 > $$
 >   \lim\frac{|S\cap[1, x]|}{x}
 > $$
+>
 > exist?
 
 ```lean
@@ -38,6 +40,7 @@ Open: stated without proof.
 
 > Let $S$ be the set of all $m\geq 1$ such that there exists a prime $p\not\equiv 1\pmod{m}$ such
 > that $m! + 1 \equiv 0\pmod{p}$. What is
+>
 > $$
 >   \lim\frac{|S\cap[1, x]|}{x}?
 > $$
@@ -54,9 +57,11 @@ Open: stated without proof.
 
 > Similarly, if $P$ is the set of all primes $p$ such that there exists an $m$ with
 > $p\not\equiv 1\pmod{m}$ such that $m! + 1 \equiv 0\pmod{p}$, then does
+>
 > $$
 >   \lim\frac{|P\cap[1, x]|}{\pi(x)}
 > $$
+>
 > exist?
 
 ```lean
@@ -71,6 +76,7 @@ Open: stated without proof.
 
 > Similarly, if $P$ is the set of all primes $p$ such that there exists an $m$ with
 > $p\not\equiv 1\pmod{m}$ such that $m! + 1 \equiv 0\pmod{p}$, then what is
+>
 > $$
 >   \lim\frac{|P\cap[1, x]|}{\pi(x)}?
 > $$

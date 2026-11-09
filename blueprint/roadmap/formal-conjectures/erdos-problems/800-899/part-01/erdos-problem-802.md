@@ -30,7 +30,9 @@ Open: stated without proof.
 
 > Is it true that any $K_r$-free graph on $n$ vertices with average degree $t$ contains an
 > independent set on
+>
 > $$\gg_r \frac{\log t}{t}n$$
+>
 > many vertices?
 >
 > A conjecture of Ajtai, Erdős, Komlós, and Szemerédi [AEKS81].
@@ -49,7 +51,9 @@ Solved: stated here without proof.
 
 > Ajtai, Erdős, Komlós, and Szemerédi [AEKS81] proved that any $K_r$-free graph on $n$ vertices
 > with average degree $t$ contains an independent set on
+>
 > $$\gg_r \frac{\log\log(t+1)}{t}n$$
+>
 > many vertices.
 
 ```lean
@@ -66,7 +70,9 @@ Solved: stated here without proof.
 
 > Shearer [Sh95] proved that any $K_r$-free graph on $n$ vertices with average degree $t$ contains
 > an independent set on
+>
 > $$\gg_r \frac{\log t}{\log\log(t+1)t}n$$
+>
 > many vertices.
 >
 > We assume $t \geq 2$. For $t + 1$ slightly larger than $e$ the factor $\log\log(t+1)$ is close
@@ -87,7 +93,9 @@ Solved: stated here without proof.
 
 > Ajtai, Komlós, and Szemerédi [AKS80] proved the conjectured bound when $r = 3$: any
 > triangle-free graph on $n$ vertices with average degree $t$ contains an independent set on
+>
 > $$\gg \frac{\log t}{t}n$$
+>
 > many vertices.
 
 ```lean

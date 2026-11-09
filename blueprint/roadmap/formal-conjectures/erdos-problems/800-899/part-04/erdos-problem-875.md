@@ -31,7 +31,9 @@ The file states 4 research or textbook statements: 1 open and 3 solved. It also 
 Open: stated without proof.
 
 > Let $A=\{a_1\lt a_2\lt \cdots\}\subset \mathbb{N}$ be an infinite set such that the sets
+>
 > $$S_r = \{ a_1+\cdots +a_r : a_1\lt \cdots\lt a_r\in A\}$$
+>
 > are disjoint for distinct $r\geq 1$. How fast can such a sequence grow? How small can
 > $a_{n+1}-a_n$ be? In particular, for which $c$ is it possible that $a_{n+1}-a_n\leq n^{c}$?
 >
@@ -55,7 +57,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Erdős, Nicolas and Sárközy [ENS91, Theorem 2] constructed an infinite admissible set $A$ with
+>
 > $$A(x)=\lvert\{a\in A: a\leq x\}\rvert \gg x^{5-2\sqrt6}.$$
+>
 > The implied constant is positive and the inequality is required for all large $x$. This improves
 > a result of Erdős [Er62c], who obtained $A(x)\gg x^{c}$ for some unspecified $c>0$.
 
@@ -90,7 +94,9 @@ Solved: stated here without proof.
 > Deshouillers and Freiman [DeFr99, Theorem 1] proved a conjecture of Erdős on the finite version
 > ([874](https://www.erdosproblems.com/874)): for all sufficiently large $N$, every admissible set
 > $A\subseteq\{1,\ldots,N\}$ satisfies
+>
 > $$\lvert A\rvert\leq 2\sqrt{N+\tfrac14}-1.$$
+>
 > This is sharp: by Straus, the set of $k$ consecutive integers ending at $N$ is admissible if and
 > only if $k\leq 2\sqrt{N+\frac14}-1$.
 

@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ counts the number of integers $s \in \{1, \dots, n-1\}$ such that
 > $n^2 + s^2$ is prime:
+>
 > $$a(n) = \sum_{s=1}^{n-1} [\text{Prime}(n^2 + s^2)]$$
 >
 > *References:*

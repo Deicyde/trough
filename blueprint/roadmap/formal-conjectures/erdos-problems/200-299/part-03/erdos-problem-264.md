@@ -59,9 +59,11 @@ Solved: stated here without proof.
 
 > Kovač and Tao [KoTa24] generally proved that any strictly increasing sequence of positive integers
 > $a_n$ such that $\sum \frac{1}{a_n}$ converges and
+>
 > $$
 >   \liminf_{n \to \infty} (a_n^2 \sum_{k > n} \frac{1}{a_k^2}) > 0
 > $$
+>
 > is not an irrationality sequence.
 >
 > [KoTa24] Kovač, V. and Tao T., On several irrationality problems for Ahmes series. arXiv:2406.17593 (2024).

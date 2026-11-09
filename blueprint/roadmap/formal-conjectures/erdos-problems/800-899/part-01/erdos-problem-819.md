@@ -40,6 +40,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős and Freud [ErFr91] proved
+>
 > $$\left(\frac{3}{8}-o(1)\right)N \leq f(N) \leq \left(\frac{1}{2}+o(1)\right)N.$$
 >
 > This is the lower bound.
@@ -56,6 +57,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Proved here.
 
 > Erdős and Freud [ErFr91] proved
+>
 > $$\left(\frac{3}{8}-o(1)\right)N \leq f(N) \leq \left(\frac{1}{2}+o(1)\right)N.$$
 >
 > This is the upper bound.

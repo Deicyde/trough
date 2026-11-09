@@ -8,6 +8,7 @@ statement: formalized
 # Sum of fourth powers of Fibonacci-like binomial coefficients
 
 > The sequence is defined by
+>
 > $$a(n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n-k}{k}^4.$$
 >
 > *References:*

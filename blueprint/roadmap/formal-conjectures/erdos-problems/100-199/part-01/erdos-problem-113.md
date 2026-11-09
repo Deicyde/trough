@@ -37,6 +37,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Conjectured by Erdős and Simonovits [ErSi84]. Erdős first offered \$250 for a proof and \$100 for
 > a counterexample, but in [Er93] offered \$500 for a counterexample. Disproved by Janzer [Ja23b]
 > who constructed, for any $\epsilon>0$, a $3$-regular bipartite graph $H$ such that
+>
 > $$\mathrm{ex}(n;H)\ll n^{\frac{4}{3}+\epsilon}.$$
 >
 > See also [146](https://www.erdosproblems.com/146) and [147](https://www.erdosproblems.com/147).

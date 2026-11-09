@@ -20,6 +20,7 @@ The file states 2 research or textbook statements: 2 open.
 Open: stated without proof.
 
 > Does this imply that
+>
 > $$
 > \liminf \frac{|A \cap [1,x]|}{x} = 0?
 > $$
@@ -36,6 +37,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Or
+>
 > $$
 > \sum_{x \in A} \frac{1}{x \log x} < \infty,
 > $$

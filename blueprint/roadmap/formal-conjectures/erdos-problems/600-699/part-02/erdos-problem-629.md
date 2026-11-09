@@ -46,6 +46,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > A problem of Erdős, Rubin, and Taylor [ERT80], who proved that
+>
 > $$2^{k-1}\lt n(k) \lt k^22^{k+2}.$$
 >
 > The chain of inequalities in [ERT80, p. 129] needs $k \geq 2$, since $m(1) = 1 = 2^0$; for
@@ -83,6 +84,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The lower bounds on $m(k)$ by Radhakrishnan and Srinivasan [RaSr00] imply that
+>
 > $$2^k \left(\frac{k}{\log k}\right)^{1/2}\ll n(k).$$
 
 ```lean
@@ -122,6 +124,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Hanson, MacGillivray, and Toft [HMT96] proved
+>
 > $$n(k) \leq kn(k-2)+2^k.$$
 
 ```lean

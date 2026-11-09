@@ -38,7 +38,9 @@ Open: stated without proof.
 
 > Let $R_k(G)$ denote the minimal $m$ such that if the edges of $K_m$ are $k$-coloured then there
 > is a monochromatic copy of $G$. Show that
+>
 > $$\lim_{k\to \infty}\frac{R_k(C_{2n+1})}{R_k(K_3)}=0$$
+>
 > for any $n\geq 2$.
 >
 > A problem of Erdős and Graham. The case $n = 1$ is excluded since $C_3 = K_3$. This problem is
@@ -57,6 +59,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > The problem is open even for $n = 2$:
+>
 > $$\lim_{k\to \infty}\frac{R_k(C_5)}{R_k(K_3)}=0.$$
 
 ```lean
@@ -72,7 +75,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Bondy and Erdős [BoEr73] and Erdős and Graham [ErGr75] proved the lower bound
+>
 > $$n2^k+1\leq R_k(C_{2n+1})$$
+>
 > for all $n, k \geq 1$. The condition $k \geq 1$ excludes the junk value $R_0(G) = 2$.
 
 ```lean
@@ -88,7 +93,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős and Graham [ErGr75] (see also [BoEr73]) proved the upper bound
+>
 > $$R_k(C_{2n+1})\leq 2n(k+2)!$$
+>
 > for all $n, k \geq 1$.
 
 ```lean
@@ -104,7 +111,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Axenovich, Cames van Batenburg, Janzer, Michel and Rundström [ACJMR26, Theorem 1.1] proved that
+>
 > $$R_k(C_{2n+1}) \leq (4n-2)^k k^{k/n}+1$$
+>
 > for all $n, k \geq 1$. For $n \geq 2$ this improves the upper bound in
 > `Erdos554.erdos_554.variants.upper_bound`, since $k^{k/n}$ grows much more slowly than $(k+2)!$.
 
@@ -122,7 +131,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Day and Johnson [DaJo17] proved that for every $n \geq 1$ there is a constant $c_n > 0$ such that
+>
 > $$R_k(C_{2n+1}) > 2n(2+c_n)^{k-1}$$
+>
 > for all sufficiently large $k$. So the lower bound in `Erdos554.erdos_554.variants.lower_bound`
 > is not sharp for fixed $n$ and large $k$.
 
@@ -142,7 +153,9 @@ Solved: stated here without proof.
 > Jenssen and Skokan [JeSk21] proved that the lower bound in
 > `Erdos554.erdos_554.variants.lower_bound` is sharp for fixed $k$ and large $n$: for every
 > $k \geq 2$,
+>
 > $$R_k(C_{2n+1}) = n2^k+1$$
+>
 > for all sufficiently large $n$.
 
 ```lean

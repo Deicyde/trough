@@ -26,6 +26,7 @@ Solved: stated here without proof.
 
 > Let $\mathcal{F}$ be the family of all $3$-uniform hypergraphs with $6$ vertices and $3$ $3$-edges.
 > Is it true that
+>
 > $$\mathrm{ex}_3(n,\mathcal{F})=o(n^2)?$$
 >
 > The answer is yes, proved by Ruzsa and Szemerédi [RuSz78] (this is known as the Ruzsa-Szemerédi

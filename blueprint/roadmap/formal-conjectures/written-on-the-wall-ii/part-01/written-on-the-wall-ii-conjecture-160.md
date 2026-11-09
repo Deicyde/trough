@@ -13,7 +13,9 @@ statement: formalized
 > ## Definitions
 >
 > For a vertex $v$ in $G$, **$T(v)$** is the number of triangles incident to $v$:
+>
 > $$T(v) = |\{\{u, w\} \subseteq N(v) \mid u \sim w\}|$$
+>
 > i.e., the number of pairs of neighbors of $v$ that are themselves adjacent.
 >
 > The invariant `maxTrianglesAtVertex G` is the maximum of $T(v)$ over all vertices.

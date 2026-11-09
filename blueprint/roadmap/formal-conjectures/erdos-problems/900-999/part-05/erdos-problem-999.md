@@ -26,8 +26,11 @@ Solved: stated here without proof.
 
 > For any function $f:\mathbb{N}\to \mathbb{R}_{\geq 0}$ the property that, for almost all
 > $\alpha$
+>
 > $$\left\lvert \alpha-\frac{p}{q}\right\rvert < \frac{f(q)}{q}$$
+>
 > has infinitely many solutions with $(p,q)=1$, is equivalent to
+>
 > $$\sum_{q\geq 1}\phi(q)\frac{f(q)}{q}=\infty.$$
 >
 > The Duffin–Schaeffer conjecture. It is easy to prove that the latter follows from the former.

@@ -28,6 +28,7 @@ The file states 5 research or textbook statements: 2 open and 3 solved. It also 
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos59.lean#L46](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos59.lean#L46).
 
 > Is it true that the number of graphs on $n$ vertices which do not contain $G$ is
+>
 > $$\leq 2^{(1+o(1))\mathrm{ex}(n;G)}?$$
 >
 > The answer is no, already for $G=C_6$ (see `erdos_59.variants.morris_saxton`). Graphs are
@@ -65,7 +66,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > The answer is no for $G=C_6$, the cycle on 6 vertices. Morris and Saxton [MoSa16, Proposition
 > 1.4] have proved there are at least
+>
 > $$2^{(1+c)\mathrm{ex}(n;C_6)}$$
+>
 > such graphs for infinitely many $n$, for some constant $c>0$.
 
 ```lean
@@ -97,7 +100,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > It is still possible (and conjectured by Morris and Saxton) that the weaker bound of
+>
 > $$2^{O(\mathrm{ex}(n;G))}$$
+>
 > holds for all $G$ containing a cycle.
 
 ```lean

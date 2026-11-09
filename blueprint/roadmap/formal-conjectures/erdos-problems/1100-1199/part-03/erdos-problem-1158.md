@@ -24,7 +24,9 @@ Open: stated without proof.
 
 > Let $K_{t}(r)$ be the complete $t$-partite $t$-uniform hypergraph with $r$ vertices in each class.
 > Is it true that
+>
 > $$\mathrm{ex}_t(n,K_t(r)) \geq n^{t-r^{1-t}-o(1)}$$
+>
 > for all $t,r\geq 2$? The restriction $r\geq 2$ excludes forbidding a single edge.
 
 ```lean

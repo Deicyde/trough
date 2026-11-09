@@ -38,7 +38,9 @@ statement: formalized
 >
 > By [BCW82], $DC_n \Longrightarrow JC_n$ (the Jacobian conjecture in dimension `n`) over a
 > fixed field `K`. By [AvdE07], Theorem 7, the chain
+>
 > $$JC_{2n} \Longrightarrow PC_n \Longrightarrow DC_n \Longrightarrow JC_n$$
+>
 > holds when each conjecture is quantified over all fields of characteristic zero
 > ([AvdE07], Notations 5 and 7). Since the Jacobian conjecture fails in every dimension
 > $n ≥ 3$ [Alp26], the contrapositive of [BCW82] gives that $DC_n$ is **false for all

@@ -23,6 +23,7 @@ Open: stated without proof.
 
 > **Rudin's conjecture.** The maximal number of squares among the first $N$ terms of a non-trivial
 > arithmetic progression grows at most like $\sqrt{N}$:
+>
 > $$Q(N) = O(\sqrt{N}).$$
 
 ```lean

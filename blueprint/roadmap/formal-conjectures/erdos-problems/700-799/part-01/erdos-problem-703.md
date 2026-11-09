@@ -41,6 +41,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > Estimate $T(n,r)$ for $r\geq 2$. In particular, is it true that for every $\epsilon>0$ there
 > exists $\delta>0$ such that for all $\epsilon n\lt r<(1/2-\epsilon) n$ we have
+>
 > $$T(n,r)<(2-\delta)^n?$$
 >
 > The answer is yes, proved by Frankl and Rödl [FrRo87].
@@ -71,11 +72,15 @@ Solved: stated here without proof.
 
 > Frankl and Füredi [FrFu84b] proved that, for fixed $r$ and $n$ sufficiently large in terms of
 > $r$, the maximal $T(n,r)$ is achieved by taking
+>
 > $$\mathcal{F} = \left\{ A\subseteq \{1,\ldots,n\} : \lvert A\rvert> \frac{n+r}{2}\textrm{ or }
 > \lvert A\rvert < r\right\}$$
+>
 > when $n+r$ is odd, and
+>
 > $$\mathcal{F} = \left\{ A\subseteq \{1,\ldots,n\} : \lvert A\backslash \{1\}\rvert\geq
 > \frac{n+r}{2}\textrm{ or }\lvert A\rvert < r\right\}$$
+>
 > when $n+r$ is even.
 
 ```lean

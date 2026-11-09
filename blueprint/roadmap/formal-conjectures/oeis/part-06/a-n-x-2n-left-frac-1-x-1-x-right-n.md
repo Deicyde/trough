@@ -23,13 +23,17 @@ The file states 1 research or textbook statement: 1 solved. It also has 5 test s
 Solved: stated here; a Lean proof is at [https://github.com/epoch-research/LeanOpenProblems-results/blob/f02efd9a8c5fc6a735d2a90c33e24f7278ce0ffc/runs/oeis-lite-200usd-sol-nk5wh4g0vh3546nm/oeis_a103885_conjecture_0/Submission/Spec.lean#L2587](https://github.com/epoch-research/LeanOpenProblems-results/blob/f02efd9a8c5fc6a735d2a90c33e24f7278ce0ffc/runs/oeis-lite-200usd-sol-nk5wh4g0vh3546nm/oeis_a103885_conjecture_0/Submission/Spec.lean#L2587).
 
 > The recurrence given below can be rewritten in the form
+>
 > $$(2n+1)(2n+2)P(2,n)a(n+1) - (2n-1)(2n-2)P(2,-n)a(n-1) = Q(2,n^2)a(n),$$
+>
 > where the polynomial $Q(2,n) = 4(55n^2 - 34n + 3)$ and the polynomial $P(2,n) = 5n^2 - 5n + 1$
 > satisfies the symmetry condition $P(2,n) = P(2,1-n)$ and has real zeros.
 > More generally, for fixed $m = 1,2,3, \ldots$, we conjecture that the sequence $b(n) := a(mn)$
 > satisfies a recurrence of the form
+>
 > $$( \prod_{k = 1}^{2m} (2mn + k) )P(2m,n)b(n+1) + (-1)^m( \prod_{k = 1}^{2*m} (2mn - k) )
 >   P(2m,-n)b(n-1) = Q(2m,n^2)b(n),$$
+>
 > where the polynomials $P(2m,n)$ and $Q(2m,n)$ have degree $2m$. Conjecturally, the polynomial
 > $P(2m,n) = P(2m,1-n)$ and has real zeros in the interval [0, 1].
 > The $4m$ zeros of the polynomial $Q(2m,n^2)$ seem to belong to the interval $[-1, 1]$ and

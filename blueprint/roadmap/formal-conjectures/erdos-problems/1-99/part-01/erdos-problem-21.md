@@ -44,10 +44,13 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > $A\in \mathcal{F}$.
 >
 > Is it true that
+>
 > $$f(n) \ll n?$$
 >
 > Conjectured by Erdős and Lovász [ErLo75], who proved that
+>
 > $$\frac{8}{3}n-3\leq f(n) \ll n^{3/2}\log n$$
+>
 > for all $n$. The upper bound was improved by Kahn [Ka92b] to $f(n) \ll n\log n$. (The upper
 > bound constructions in both cases are formed by taking a random set of lines from a projective
 > plane of order $n-1$, assuming $n-1$ is a prime power.)

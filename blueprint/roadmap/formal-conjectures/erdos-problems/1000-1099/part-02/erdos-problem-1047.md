@@ -75,7 +75,9 @@ Category `research solved`; AMS [30 Functions of a complex variable](../../../by
 Solved: stated here without proof.
 
 > Goodman [Go66] proved that one of the three components of
+>
 > $$\{ z: \lvert (z^2+1)(z-2)^2\rvert < 5^{3/2}/4\}$$
+>
 > is not convex.
 
 ```lean

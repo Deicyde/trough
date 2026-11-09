@@ -25,6 +25,7 @@ Solved: stated here; a Lean proof is at [https://gist.githubusercontent.com/llll
 
 > Let $1\lt a_1\lt \cdots$ be a sequence of integers such that $\sum\frac{1}{a_i}\lt \infty$. Is it true
 > that, for every $t\in \mathbb{R}$,
+>
 > $$1+\sum_{k}\frac{1}{a_k^{1+it}}\neq 0?$$
 >
 > Yip [Yi25] has proved that this is not always true - in fact, for any real $t\neq 0$, there
@@ -91,7 +92,9 @@ Solved: stated here without proof.
 > Their interest in this problem arose from their proof that the statement that there are no such
 > zeros is equivalent to the fact that, for any non-decreasing $f:\mathbb{R}\to \mathbb{R}_{\geq 0}$
 > which is bounded on every bounded interval and is $=0$ for $x<1$, the relationship
+>
 > $$f(x)+\sum_k f(x/a_k)=\left(1+\sum_k \frac{1}{a_k}+o(1)\right)x$$
+>
 > implies $f(x)=(1+o(1))x$.
 
 ```lean

@@ -24,7 +24,9 @@ The file states 3 research or textbook statements: 1 open and 2 solved. It also 
 Open: stated without proof.
 
 > Let $Q(x)$ count the squarefree integers in $[1,x]$, and define $E(x)$ by
+>
 > $$Q(x)=\frac{6}{\pi^2}x+E(x).$$
+>
 > Determine the order of magnitude of $E(x)$: an upper bound $E(x)=O(g(x))$ with a matching
 > oscillation bound $E(x)\ne o(g(x))$.
 

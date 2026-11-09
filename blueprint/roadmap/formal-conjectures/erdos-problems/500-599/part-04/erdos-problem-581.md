@@ -28,6 +28,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > bipartite graph with $k$ edges. Determine $f(m)$.
 >
 > Resolved by Alon [Al96], who showed that there exist constants $c_1,c_2>0$ such that
+>
 > $$\frac{m}{2}+c_1m^{4/5}\leq f(m)\leq \frac{m}{2}+c_2m^{4/5}.$$
 
 ```lean

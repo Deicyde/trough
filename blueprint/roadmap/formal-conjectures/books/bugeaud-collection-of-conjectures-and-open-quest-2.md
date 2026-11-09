@@ -23,7 +23,9 @@ statement: formalized
 > $\alpha = 64$, where the digits of $\xi$ can be prescribed directly.
 >
 > For a bit sequence $u \in \{0, 1\}^{\mathbb{N}}$ put
+>
 > $$\theta_u = \sum_{i \ge 0} (1 + u_i) \, 8^{-e(i)}, \qquad e(i) = 4^{i+1} + i + 6.$$
+>
 > The map $u \mapsto \theta_u$ is injective with values in $(0, 1)$.
 >
 > Split the indices into the blocks $[5 m_k, 6 m_k)$ with $m_k = 20 \cdot 8^k$; these are

@@ -28,6 +28,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Let $A\subset \mathbb{R}^2$ be a set of size $n$ and let $\{d_1\lt \ldots\lt d_k\}$ be the set of
 > distinct distances determined by $A$. Let $f(d)$ be the number of times the distance $d$ is
 > determined. Is it true that
+>
 > $$f(d_1)f(d_k) \leq (\tfrac{9}{8}+o(1))n^2?$$
 >
 > A question of Erdős and Pach [ErPa90]. The answer is yes, proved by Dumitrescu [Du19]. Here
@@ -50,7 +51,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos957.lean#L44](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos957.lean#L44).
 
 > The original problem was solved by Dumitrescu [Du19, Theorem 1], who proved that
+>
 > $$f(d_1)f(d_k)\leq \frac{9}{8}n^2+O(n).$$
+>
 > Here a single constant $C$ in the error term $Cn$ works for all finite $A \subset \mathbb{R}^2$.
 
 ```lean

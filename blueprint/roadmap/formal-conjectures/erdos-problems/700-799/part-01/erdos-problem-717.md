@@ -27,6 +27,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $G$ be a graph on $n$ vertices with chromatic number $\chi(G)$ and let $\sigma(G)$ be the
 > maximal $k$ such that $G$ contains a subdivision of $K_k$. Is it true that
+>
 > $$\chi(G) \ll \frac{n^{1/2}}{\log n}\sigma(G)?$$
 >
 > The answer is yes, proved by Fox, Lee, and Sudakov [FLS13, Theorem 1.1]. We read $\ll$ as: there
@@ -50,7 +51,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős and Fajtlowicz [ErFa81, Theorem 3] showed that for almost all graphs on $n$ vertices
+>
 > $$\chi(G) \gg \frac{n^{1/2}}{\log n}\sigma(G).$$
+>
 > As in [ErFa81, p. 141], "almost all" means all but $o(2^{\binom{n}{2}})$ labelled graphs on $n$
 > vertices.
 

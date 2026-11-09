@@ -8,7 +8,9 @@ statement: formalized
 # Signed digit sums in bases $b \ge 5$
 
 > The sequence is defined by
+>
 > $$a(n) = \sum_{k=1}^n (-1)^{\operatorname{isprime}(k)} 10^k$$
+>
 > where the sign is $-1$ if $k$ is prime, and $1$ if $k$ is not prime.
 >
 > Generalizing the digit pattern observed in $a(n)$, it was conjectured on the OEIS entry that

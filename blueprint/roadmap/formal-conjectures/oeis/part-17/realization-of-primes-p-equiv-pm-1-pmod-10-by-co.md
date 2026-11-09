@@ -8,6 +8,7 @@ statement: formalized
 # Realization of primes $p \equiv \pm 1 \pmod{10}$ by continued fraction denominators
 
 > $a(n)$ is the denominator of the finite continued fraction
+>
 > $$\frac{1}{2 - \frac{3}{3 - \frac{4}{4 - \frac{5}{\dots - \frac{n-1}{(n-1) - \frac{n}{-4}}}}}}$$
 >
 > *References:*

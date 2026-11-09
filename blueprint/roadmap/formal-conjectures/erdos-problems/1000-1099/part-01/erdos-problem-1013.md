@@ -30,6 +30,7 @@ Open: stated without proof.
 
 > Let $h_3(k)$ be the minimal $n$ such that there exists a triangle-free graph on $n$ vertices with
 > chromatic number $k$. Find an asymptotic for $h_3(k)$, and also prove
+>
 > $$\lim_{k\to \infty}\frac{h_3(k+1)}{h_3(k)}=1.$$
 >
 > This is the first part.
@@ -47,6 +48,7 @@ Open: stated without proof.
 
 > Let $h_3(k)$ be the minimal $n$ such that there exists a triangle-free graph on $n$ vertices with
 > chromatic number $k$. Find an asymptotic for $h_3(k)$, and also prove
+>
 > $$\lim_{k\to \infty}\frac{h_3(k+1)}{h_3(k)}=1.$$
 >
 > This is the second part.
@@ -63,6 +65,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Graver and Yackel [GrYa68] proved
+>
 > $$h_3(k)\gg \frac{\log k}{\log\log k}k^2.$$
 
 ```lean
@@ -79,6 +82,7 @@ Solved: stated here without proof.
 
 > The upper bound $f(n) \leq (2+o(1))(n/\log n)^{1/2}$ of Davies and Illingworth [DaIl22] for the
 > function $f$ of [1104] gives
+>
 > $$\left(\frac{1}{2}-o(1)\right)k^2\log k\leq h_3(k).$$
 
 ```lean
@@ -95,7 +99,9 @@ Solved: stated here without proof.
 
 > The lower bound $f(n) \geq (1-o(1))(n/\log n)^{1/2}$ for the function $f$ of [1104], which follows
 > from the construction of Hefty, Horn, King, and Pfender [HHKP25], gives
+>
 > $$h_3(k) \leq (2+o(1))k^2\log k.$$
+>
 > The site states $(1+o(1))k^2\log k$, but the bounds recorded in [1104] give only $2+o(1)$.
 
 ```lean

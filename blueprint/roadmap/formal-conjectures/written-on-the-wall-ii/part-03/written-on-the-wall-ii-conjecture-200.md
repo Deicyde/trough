@@ -20,7 +20,9 @@ statement: formalized
 > The local-neighbourhood independence numbers are $2$ at $x,y,z$, $1$ at each
 > $p_d$, and $3$ at every vertex of $C$. Their sum is $4q+4$, while the graph has
 > $2q+1$ vertices, so
+>
 > $$\left\lceil 1 + l_{\mathrm{avg}}(G)\right\rceil = 4.$$
+>
 > The vertices $\{a,x,y,z\}$ induce a claw, and a case split on the number of
 > vertices from $C$ shows that no induced tree has more than four vertices.
 > Thus $\operatorname{tree}(G)=4$. Finally, the graph has $q-2 \geq 3$ pendant

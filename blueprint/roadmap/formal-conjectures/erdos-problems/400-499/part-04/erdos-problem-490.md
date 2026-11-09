@@ -32,13 +32,16 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A,B\subseteq \{1,\ldots,N\}$ be such that all the products $ab$ with $a\in A$ and $b\in B$
 > are distinct. Is it true that
+>
 > $$\lvert A\rvert \lvert B\rvert \ll \frac{N^2}{\log N}?$$
 >
 > This would be best possible, for example letting $A=[1,N/2]\cap \mathbb{N}$ and
 > $B=\{ N/2\lt p\leq N: p\textrm{ prime}\}$. This is true, and was proved by Szemerédi [Sz76].
 >
 > In [Er72] Erdős goes on to ask whether
+>
 > $$\lim_{N\to \infty}\max_{A,B\subseteq [N]}\frac{\lvert A\rvert\lvert B\rvert\log N}{N^2}$$
+>
 > exists, where the maximum is over $A$ and $B$ with all the products $ab$ distinct, and to
 > determine its value. As noted in the comments to [896](https://www.erdosproblems.com/896) by van
 > Doorn, if the limit exists it must be $\geq 1$.
@@ -59,7 +62,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Open: stated without proof.
 
 > Erdős [Er72] asks whether
+>
 > $$\lim_{N\to \infty}\max_{A,B\subseteq [N]}\frac{\lvert A\rvert\lvert B\rvert\log N}{N^2}$$
+>
 > exists, where the maximum is over $A$ and $B$ with all the products $ab$ distinct, and to
 > determine its value.
 

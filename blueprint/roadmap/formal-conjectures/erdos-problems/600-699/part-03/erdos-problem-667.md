@@ -30,7 +30,9 @@ Open: stated without proof.
 > Let $p, q \geq 1$ be fixed integers. Define $H(n) = H(n; p, q)$ to be the largest $m$ such that any
 > graph on $n$ vertices where every set of $p$ vertices spans at least $q$ edges must contain a
 > complete graph on $m$ vertices. Is
+>
 > $$ c(p, q) = \liminf_{n \to \infty} \frac{\log H(n)}{\log n} $$
+>
 > a strictly increasing function of $q$ for $1 \leq q \leq \binom{p-1}{2} + 1$?
 >
 > A problem of Erdős, Faudree, Rousseau, and Schelp. When $q = 1$ this corresponds exactly to the

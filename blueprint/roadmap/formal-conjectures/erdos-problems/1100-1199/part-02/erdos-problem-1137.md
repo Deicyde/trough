@@ -20,7 +20,10 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Let $d_n=p_{n+1}-p_n$, where $p_n$ denotes the $n$th prime. Is it true that
-> $$\frac{\max_{n < x}d_{n}d_{n-1}}{(\max_{n < x}d_n)^2}\to 0$$ as $x\to \infty$?
+>
+> $$\frac{\max_{n < x}d_{n}d_{n-1}}{(\max_{n < x}d_n)^2}\to 0$$
+>
+> as $x\to \infty$?
 
 ```lean
 theorem erdos_1137 :

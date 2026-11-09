@@ -9,7 +9,9 @@ statement: formalized
 
 > A binomial coefficient summation: $a(n) = S(3, n) / S(1, n)$, where for a positive integer $r$
 > we define
+>
 > $$S(r,n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \left( \binom{n}{k} - \binom{n}{k-1} \right)^r$$
+>
 > with $\binom{n}{-1} = 0$.
 >
 > *References:*

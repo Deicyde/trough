@@ -28,7 +28,9 @@ Solved: stated here without proof.
 
 > Let $E\subseteq (0,1)$ be a meaurable subset with Lebesgue measure $\lambda(E)$. Is it true that,
 > for almost all $\alpha$,
+>
 > $$\lim_{n\to \infty}\frac{1}{n}\sum_{1\leq k\leq n}1_{\{k\alpha \}\in E}=\lambda(E)$$
+>
 > for all $E$?
 >
 > This is a conjecture of Khintchine [Kh23] (with the exceptional null set of $\alpha$ allowed to

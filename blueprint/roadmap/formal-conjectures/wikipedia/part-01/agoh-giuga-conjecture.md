@@ -68,6 +68,7 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here without proof.
 
 > A composite number $n$ is weak Giuga if and only if
+>
 > $$
 > \sum_{p\mid n} \frac{1}{p} - \frac{1}{n} \in\mathbb{N}.
 > $$

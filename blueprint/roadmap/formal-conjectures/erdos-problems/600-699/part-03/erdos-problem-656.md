@@ -27,6 +27,7 @@ Solved: stated here without proof.
 
 > Let $A\subset \mathbb{N}$ be a set with positive upper density. Must there exist an infinite set
 > $B\subseteq A$ and integer $t$ such that
+>
 > $$\{b_1+b_2: b_1\neq b_2\in B\}+t\subseteq A?$$
 >
 > Erdős [Er75b] posed this as a candidate for a density version of Hindman's theorem. This is true,

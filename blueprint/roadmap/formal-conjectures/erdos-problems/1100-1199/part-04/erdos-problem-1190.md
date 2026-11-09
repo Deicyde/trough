@@ -25,14 +25,18 @@ The file states 5 research or textbook statements: 5 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos1190.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos1190.lean).
 
 > Let
+>
 > $$\epsilon_m=\max \sum \frac{1}{n_i}$$
+>
 > where the maximum is taken over all finite sequences $m\lt n_1\lt \cdots\lt n_k$ for which there exist
 > congruences $a_i\pmod{n_i}$ such that no integer satisfies two such congruences.
 >
 > Estimate $\epsilon_m$.
 >
 > The resolution of [202] by GPT-5.4 Pro implies via the same reduction that
+>
 > $$\epsilon_m=L(m)^{-1+o(1)},$$
+>
 > where $L(m)=\exp(\sqrt{\log m\log\log m})$.
 
 ```lean
@@ -75,7 +79,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The work of de la Bretèche, Ford, and Vandehey [BFV13] implies
+>
 > $$L(m)^{-1+o(1)}< \epsilon_m < L(m)^{-\sqrt{3}/2+o(1)},$$
+>
 > where $L(m)=\exp(\sqrt{\log m\log\log m})$. The lower bound is implicit in their construction.
 
 ```lean
@@ -90,7 +96,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The work of de la Bretèche, Ford, and Vandehey [BFV13] implies
+>
 > $$L(m)^{-1+o(1)}< \epsilon_m < L(m)^{-\sqrt{3}/2+o(1)},$$
+>
 > where $L(m)=\exp(\sqrt{\log m\log\log m})$. The upper bound follows immediately from their upper
 > bound as reported in [202] and partial summation.
 

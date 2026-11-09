@@ -28,6 +28,7 @@ The file states 7 research or textbook statements: 2 open, 3 solved and 2 textbo
 Textbook result, stated without proof. A Lean proof is at [https://github.com/linrock/math-proofs/blob/b53791ff6294b4b90e3653970367f127a52fd16e/erdos-261/Solution.lean#L73](https://github.com/linrock/math-proofs/blob/b53791ff6294b4b90e3653970367f127a52fd16e/erdos-261/Solution.lean#L73).
 
 > For every positive integer $m$, if $n = 2^{m+1} - m - 2$, then
+>
 > $$\frac{n}{2^n} = \sum_{n < k \le n + m} \frac{k}{2^k}.$$
 >
 > This construction is due to Borwein and Loring [BoLo90].
@@ -60,6 +61,7 @@ Solved: stated here; a Lean proof is at [https://github.com/anatoliiohorodnyk/le
 
 > Are there infinitely many positive integers $n$ such that there exist some $t \ge 2$ and
 > distinct integers $a_1, \ldots, a_t \ge 1$ satisfying
+>
 > $$\frac{n}{2^n} = \sum_{1 \le k \le t} \frac{a_k}{2^{a_k}}?$$
 >
 > In [Er88c], Erdős notes that Cusick had a simple proof that infinitely many such $n$ exist.
@@ -101,7 +103,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Is there a rational number $x$ such that
+>
 > $$x = \sum_{k=1}^{\infty} \frac{a_k}{2^{a_k}}$$
+>
 > has at least $2^{\aleph_0}$ representations by pairwise distinct positive integers $a_k$?
 
 ```lean
@@ -117,7 +121,9 @@ Solved: stated here; a Lean proof is at [https://github.com/g8r-b8/erdos261-lean
 
 > In [Er88c], Erdős asks the weaker question of whether there exists a rational $x$ with at
 > least two representations
+>
 > $$x = \sum_{k=1}^{\infty} \frac{a_k}{2^{a_k}}$$
+>
 > by pairwise distinct positive integers $a_k$.
 >
 > The answer is yes: Z. Rafik (erdosproblems.com forum, 27 Apr 2026) observed that

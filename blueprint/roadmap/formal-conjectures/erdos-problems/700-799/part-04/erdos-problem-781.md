@@ -26,7 +26,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $f(k)$ be the minimal $n$ such that any $2$-colouring of $\{1,\ldots,n\}$ contains a
 > monochromatic $k$-term descending wave: a sequence $x_1\lt \cdots \lt x_k$ such that, for $1\lt j\lt k$,
+>
 > $$x_j \geq \frac{x_{j+1}+x_{j-1}}{2}.$$
+>
 > Estimate $f(k)$.
 >
 > Brown, Erdős, and Freedman [BEF90] proved $k^2-k+1\leq f(k) \leq \frac{k^3-4k+9}{3}$. Resolved by

@@ -49,6 +49,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > $g(N) \geq \left(\tfrac{9}{8}N\right)^{1/2}+O(1)$. Erdős [Er51b] proved
 > $g(N) \leq (4N)^{1/2}+O(1)$, which was improved by Choi [Ch72b]. Chen [Ch98] established the
 > asymptotic $g(N) \sim \left(\tfrac{9}{8}N\right)^{1/2}$. Chen and Dai [DaCh06] proved that
+>
 > $$g(N)\leq \left(\tfrac{9}{8}N\right)^{1/2}+
 > O\left(\left(\frac{N}{\log N}\right)^{1/2}\log\log N\right).$$
 >

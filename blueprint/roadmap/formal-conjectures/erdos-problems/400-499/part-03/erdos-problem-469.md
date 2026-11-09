@@ -24,9 +24,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A$ be the set of all $n$ such that $n = d_1 + ⋯ + d_k$ with $d_i$ distinct
 > proper divisors of $n$, but this is not true for any $m ∣ n$ with $m < n$. Does:
+>
 > $$
 >   \sum_{n ∈ A} \frac 1 n
 > $$
+>
 > converge?
 >
 > Yes: the sum converges. This was proved by Lewis [Le25], whose proof has been formalized in

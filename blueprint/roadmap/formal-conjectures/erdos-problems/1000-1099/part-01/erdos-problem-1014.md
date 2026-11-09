@@ -29,6 +29,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > vertices contains either a $K_k$ or an independent set on $l$ vertices.
 >
 > Prove, for fixed $k\geq 3$, that
+>
 > $$\lim_{l\to \infty}\frac{R(k,l+1)}{R(k,l)}=1.$$
 >
 > This has been
@@ -47,7 +48,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > That proof in fact shows that
+>
 > $$R(k,l+1)\leq (1+O(l^{-c/k^2}))R(k,l)$$
+>
 > for some constant $c>0$.
 
 ```lean

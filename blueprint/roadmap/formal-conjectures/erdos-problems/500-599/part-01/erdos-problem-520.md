@@ -26,6 +26,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $f$ be a Rademacher multiplicative function.
 > Does there exist some constant $c > 0$ such that, almost surely,
+>
 > $$
 >   \limsup_{N \to \infty} \frac{\sum_{m \leq N} f(m)}{\sqrt{N \log \log N}} = c?
 > $$

@@ -21,6 +21,7 @@ Solved: stated here without proof.
 
 > Let $A\subseteq\mathbb{N}$ be an infinite set such that $|A\cap \{1, ..., N\}| = o(N)$.
 > Is it true that
+>
 > $$
 > \limsup_{N\to\infty}\frac{|(A + A)\cap \{1, ..., N\}|}{|A \cap \{1, ..., N\}|} \geq 3?
 > $$
@@ -46,6 +47,7 @@ Solved: stated here without proof.
 
 > Let $A\subseteq\mathbb{N}$ be an infinite set such that $|A\cap \{1, ..., N\}| = o(N)$.
 > Then
+>
 > $$
 > \limsup_{N\to\infty}\frac{|(A + A)\cap \{1, ..., N\}|}{|A \cap \{1, ..., N\}|} \geq 2.
 > $$

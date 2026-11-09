@@ -69,6 +69,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er63c] proved
+>
 > $$2^{n+1}-1 \leq f(n) \ll n^22^n.$$
 >
 > This is the lower bound.
@@ -84,6 +85,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er63c] proved
+>
 > $$2^{n+1}-1 \leq f(n) \ll n^22^n.$$
 >
 > This is the upper bound, in the form proved in [Er63c, (2)]:
@@ -101,6 +103,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Szekeres and Szekeres [SzSz65] proved that $f(3)=19$ and
+>
 > $$n2^n \ll f(n).$$
 >
 > This is the statement for $f(3)$.
@@ -116,6 +119,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Szekeres and Szekeres [SzSz65] proved that $f(3)=19$ and
+>
 > $$n2^n \ll f(n).$$
 >
 > This is the lower bound.

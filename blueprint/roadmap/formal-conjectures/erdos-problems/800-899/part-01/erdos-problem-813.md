@@ -28,6 +28,7 @@ Open: stated without proof.
 > Let $h(n)$ be minimal such that every graph on $n$ vertices where every set of $7$ vertices
 > contains a triangle must contain a clique on at least $h(n)$ vertices. Estimate $h(n)$. In
 > particular, do there exist constants $c_1, c_2 > 0$ such that
+>
 > $$n^{1/3+c_1} \ll h(n) \ll n^{1/2-c_2}?$$
 >
 > The lower half has a positive answer (`Erdos813.erdos_813.variants.lower`); the upper half is
@@ -47,6 +48,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős and Hajnal proved (see [Er91]) that
+>
 > $$n^{1/3} \ll h(n) \ll n^{1/2}.$$
 
 ```lean

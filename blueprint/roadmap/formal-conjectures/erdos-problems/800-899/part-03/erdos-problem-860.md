@@ -42,6 +42,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Erdős and Pomerance [ErPo80] proved that
+>
 > $$h(n) \ll \frac{n^{3/2}}{(\log n)^{1/2}}.$$
 
 ```lean

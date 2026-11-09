@@ -20,7 +20,9 @@ The file states 3 research or textbook statements: 2 open and 1 textbook result.
 Open: stated without proof.
 
 > For what functions $g(N) → \infty$ is it true that
+>
 > $$\lvert A\cap \{1,\ldots,N\}\rvert \gg \frac{N^{1/2}}{g(N)}$$
+>
 > implies $\limsup 1_A\ast 1_A(n)=\infty$?
 
 ```lean
@@ -35,7 +37,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Is there any function $g(N) → \infty$ such that
+>
 > $$\lvert A\cap \{1,\ldots,N\}\rvert \gg \frac{N^{1/2}}{g(N)}$$
+>
 > implies $\limsup 1_A\ast 1_A(n)=\infty$?
 >
 > This is a weaker form of Erdős Problem 40, which asks for all such $g$. Establishing

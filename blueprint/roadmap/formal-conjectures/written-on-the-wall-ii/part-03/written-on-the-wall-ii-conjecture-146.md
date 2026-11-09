@@ -17,6 +17,7 @@ statement: formalized
 > most $2$.
 >
 > The **radius of $G^2$** is the minimum eccentricity of any vertex in $G^2$, i.e.,
+>
 > $$\mathrm{rad}(G^2) = \min_{v \in V} \max_{u \in V} \mathrm{dist}_{G^2}(u, v).$$
 
 *Quoted from [FormalConjectures/WrittenOnTheWallII/GraphConjecture146.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/WrittenOnTheWallII/GraphConjecture146.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*

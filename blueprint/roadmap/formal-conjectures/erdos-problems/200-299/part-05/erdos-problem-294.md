@@ -25,11 +25,15 @@ The file states 2 research or textbook statements: 2 solved. It also has 2 API s
 Solved: stated here without proof.
 
 > Let $N\geq 1$ and let $t(N)$ be the least integer $t$ such that there is no solution to
+>
 > $$1=\frac{1}{n_1}+\cdots+\frac{1}{n_k}$$
+>
 > with $t=n_1\lt \cdots \lt n_k\leq N$. Estimate $t(N)$.
 >
 > Solved by Liu and Sawhney [LiSa24, Theorem 1.6] (up to $(\log\log N)^{O(1)}$), who proved that
+>
 > $$\frac{N}{(\log N)(\log\log N)^3(\log\log\log N)^{O(1)}}\ll t(N) \ll \frac{N}{\log N}.$$
+>
 > The unspecified $O(1)$ exponent is the real number `K`.
 
 ```lean

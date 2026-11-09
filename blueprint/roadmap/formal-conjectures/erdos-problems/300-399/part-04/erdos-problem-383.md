@@ -21,9 +21,11 @@ Open: stated without proof.
 
 > Is it true that for every $k$ there are infinitely many primes $p$ such that the largest prime
 > divisor of
+>
 > $$
 >   \prod_{i = 0}^k (p ^ 2 + i)
 > $$
+>
 > is $p$?
 
 ```lean

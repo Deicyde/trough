@@ -33,6 +33,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > about $\sigma(n)$.
 >
 > Solved by Tao [Ta24d], who proved that
+>
 > $$ \lvert A\rvert \leq \left(1+O\left(\frac{(\log\log x)^5}{\log x}\right)\right)\pi(x).$$
 >
 > In [Er95c] Erdős further asks about the situation when $\phi(a_1)\leq \cdots \leq \phi(a_t)$.

@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ counts the number of integers $k \in \{1, \dots, n\}$ such that
 > $\pi(\pi(k n))$ is a square, where $\pi(x)$ is the prime counting function:
+>
 > $$a(n) = |\{0 < k \le n : \pi(\pi(k n)) \text{ is a square}\}|$$
 >
 > *References:*

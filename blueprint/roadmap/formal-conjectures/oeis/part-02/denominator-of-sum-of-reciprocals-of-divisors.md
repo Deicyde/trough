@@ -8,7 +8,9 @@ statement: formalized
 # Denominator of sum of reciprocals of divisors
 
 > Denominator of sum of reciprocals of divisors of $n$:
+>
 > $$\sum_{d \mid n} \frac{1}{d} = \frac{\sigma(n)}{n}$$
+>
 > in lowest terms.
 >
 > *References:*

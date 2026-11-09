@@ -31,6 +31,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Sperner's theorem states that $\lvert \mathcal{F}\rvert \leq \binom{n}{\lfloor n/2\rfloor}$.
 > This is also known as Dedekind's problem. Resolved by Kleitman [Kl69], who proved that the
 > number of such families is
+>
 > $$2^{(1+o(1))\binom{n}{\lfloor n/2\rfloor}}.$$
 
 ```lean

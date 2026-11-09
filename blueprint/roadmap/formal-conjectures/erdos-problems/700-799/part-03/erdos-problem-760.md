@@ -27,14 +27,17 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > independent set.
 >
 > If $G$ is a graph with chromatic number $\chi(G)=m$ then must $G$ contain a subgraph $H$ with
+>
 > $$
 > \zeta(H) \gg \frac{m}{\log m}?
 > $$
 >
 > A problem of Erdős and Gimbel, who proved that there must exist a subgraph $H$ with
+>
 > $$
 > \zeta(H) \gg \left(\frac{m}{\log m}\right)^{1/2}.
 > $$
+>
 > The proposed bound would be best possible, as shown by taking $G$ to be a complete graph.
 >
 > The answer is yes, proved by Alon, Krivelevich, and Sudakov.
@@ -54,6 +57,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > A problem of Erdős and Gimbel, who proved that there must exist a subgraph $H$ with
+>
 > $$
 > \zeta(H) \gg \left(\frac{m}{\log m}\right)^{1/2}.
 > $$

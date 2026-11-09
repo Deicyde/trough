@@ -102,8 +102,11 @@ Solved: stated here without proof.
 
 > The problem with $k=3$ is the classical 'Orchard problem' of Sylvester. Burr, Grünbaum, and Sloane
 > [BGS74] have proved that
+>
 > $$f_3(n)=\frac{n^2}{6}-O(n)$$
+>
 > and
+>
 > $$F_3(n)=\frac{n^2}{6}-O(n).$$
 >
 > This is the statement for $f_3$.
@@ -122,8 +125,11 @@ Solved: stated here without proof.
 
 > The problem with $k=3$ is the classical 'Orchard problem' of Sylvester. Burr, Grünbaum, and Sloane
 > [BGS74] have proved that
+>
 > $$f_3(n)=\frac{n^2}{6}-O(n)$$
+>
 > and
+>
 > $$F_3(n)=\frac{n^2}{6}-O(n).$$
 >
 > This is the statement for $F_3$.
@@ -154,7 +160,9 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Solved: stated here without proof.
 
 > There is a trivial upper bound of $F_k(n) \leq \binom{n}{2}/\binom{k}{2}$, and hence
+>
 > $$\lim F_k(n)/n^2 \leq \frac{1}{k(k-1)}.$$
+>
 > See also [101](https://www.erdosproblems.com/101).
 >
 > Here the limit is assumed to exist and is called `L`.

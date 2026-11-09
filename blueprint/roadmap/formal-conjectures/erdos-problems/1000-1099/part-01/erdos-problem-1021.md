@@ -28,7 +28,9 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1021.lean#L2359](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1021.lean#L2359).
 
 > Is it true that, for every $k \geq 3$, there is a constant $c_k > 0$ such that
+>
 > $$\mathrm{ex}(n, G_k) \ll n^{3/2 - c_k},$$
+>
 > where $G_k$ is the bipartite graph between $\{y_1, \ldots, y_k\}$ and
 > $\{z_1, \ldots, z_{\binom{k}{2}}\}$, with each $z_j$ joined to a unique pair of $y_i$?
 >

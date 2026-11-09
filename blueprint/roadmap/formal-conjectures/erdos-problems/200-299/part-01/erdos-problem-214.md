@@ -95,6 +95,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The best known bounds currently are
+>
 > $$4\leq k\leq 7.$$
 
 ```lean

@@ -28,6 +28,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Let $k\geq 4$ and let $f_k(n)$ be the largest $m$ such that there is a graph on $n$ vertices
 > with chromatic number $k$ in which every odd cycle has length $> m$.
 > Then
+>
 > $$f_k(n) \asymp n^{\frac{1}{k-2}}.$$
 >
 > A question of Erdős and Gallai.

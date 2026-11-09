@@ -28,7 +28,9 @@ Solved: stated here without proof.
 
 > If $\mathbb{N}$ is $2$-coloured, must there exist an infinite set $A=\{a_1\lt a_2\lt \cdots\}$ such that
 > all expressions of the shape
+>
 > $$\sum_{j=1}^{k}\prod_{i\in S_j}a_i,$$
+>
 > for $k\geq 1$ and pairwise disjoint nonempty finite sets of indices $S_1,\ldots,S_k$ (excluding the
 > trivial expressions $a_i$, that is $k=1$ and $|S_1|=1$), have the same colour?
 >

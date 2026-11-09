@@ -21,6 +21,7 @@ Solved: stated here without proof.
 
 > Prove that, for any finite set $A\subset\mathbb{N}$, there exist $a, b\in A$ such
 > that
+>
 > $$
 >   \gcd(a, b)\leq a/|A|.
 > $$

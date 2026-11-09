@@ -10,7 +10,9 @@ statement: formalized
 > Number of nonempty subsets of $\{1, 2, 3, \dots, n\}$ whose elements have an integer average.
 >
 > Benoit Cloitre conjectured the asymptotic expansion:
+>
 > $$a(n) = \frac{2^{n+1}}{n} \left(1 + \frac{1}{n} + \frac{3}{n^2} + \frac{13}{n^3} + \frac{75}{n^4} + \frac{541}{n^5} + o\left(\frac{1}{n^5}\right)\right)$$
+>
 > where the coefficients $1, 1, 3, 13, 75, 541, \dots$ are the Fubini numbers (preferential arrangements, A000670).
 >
 > *References:*

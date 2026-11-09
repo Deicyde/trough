@@ -27,7 +27,9 @@ Solved: stated here without proof.
 
 > Let $r\geq 3$ and $k$ be sufficiently large in terms of $r$. Is it true that every $r$-uniform
 > hypergraph with chromatic number $k$ has at least
+>
 > $$\binom{(r-1)(k-1)+1}{r}$$
+>
 > edges, with equality only for the complete graph on $(r-1)(k-1)+1$ vertices?
 >
 > This was disproved by Alon [Al85]. The validity of this conjecture for $r=3$ remains open.

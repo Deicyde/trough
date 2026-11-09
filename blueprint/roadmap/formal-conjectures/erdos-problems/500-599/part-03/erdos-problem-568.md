@@ -24,6 +24,7 @@ Open: stated without proof.
 
 > Let $G$ be a graph such that $R(G,T_n)\ll n$ for any tree $T_n$ on $n$ vertices and
 > $R(G,K_n)\ll n^2$. Is it true that, for any $H$ with $m$ edges and no isolated vertices,
+>
 > $$R(G,H)\ll m?$$
 >
 > In other words, is $G$ Ramsey size linear?

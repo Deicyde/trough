@@ -20,8 +20,11 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Let $A$ be a finite set and
+>
 > $$B=\{ n \geq 1 : a\mid n\textrm{ for some }a\in A\}.$$
+>
 > Is it true that, for every $m>n\geq \max(A)$,
+>
 > $$\frac{\lvert B\cap [1,m]\rvert }{m}< 2\frac{\lvert B\cap [1,n]\rvert}{n}?$$
 
 ```lean

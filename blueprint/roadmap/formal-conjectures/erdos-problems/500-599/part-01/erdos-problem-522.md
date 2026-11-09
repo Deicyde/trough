@@ -35,9 +35,11 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/erdos-522-s
 >
 > Is it true that, if $R_n$ is the number of roots of $f(z)$ in
 > $\{ z\in \mathbb{C} : \lvert z\rvert \leq 1\}$, then
+>
 > $$
 >   \frac{R_n}{n/2}\to 1
 > $$
+>
 > almost surely?
 >
 > There is some ambiguity as to whether the intended coefficient set is $\{-1, 1\}$ or $\{0, 1\}$,
@@ -68,9 +70,11 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/erdos-522-s
 >
 > Is it true that, if $R_n$ is the number of roots of $f(z)$ in
 > $\{ z\in \mathbb{C} : \lvert z\rvert \leq 1\}$, then
+>
 > $$
 >   \frac{R_n}{n/2}\to 1
 > $$
+>
 > almost surely?
 >
 > This is true; a Lean proof is given in [Ki26].

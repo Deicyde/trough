@@ -25,14 +25,19 @@ The file states 1 research or textbook statement: 1 solved. It also has 1 API st
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos284.lean#L97](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos284.lean#L97).
 
 > Let $f(k)$ be the maximal value of $n_1$ such that there exist $n_1\lt n_2\lt \cdots \lt n_k$ with
+>
 > $$1=\frac{1}{n_1}+\cdots+\frac{1}{n_k}.$$
+>
 > Is it true that
+>
 > $$f(k)=(1+o(1))\frac{k}{e-1}?$$
 >
 > Asked by Erdős and Graham [ErGr80, p. 33]. We state it as $f(k)/k\to 1/(e-1)$, which is
 > equivalent. Essentially solved by Croot [Cr01], who showed that for any $N>1$ there exists some
 > $k\geq 1$ and
+>
 > $$N\lt n_1\lt \cdots \lt n_k \leq (e+o(1))N$$
+>
 > with $1=\sum \frac{1}{n_i}$. See also [erdosproblems.com/286](https://www.erdosproblems.com/286).
 
 ```lean

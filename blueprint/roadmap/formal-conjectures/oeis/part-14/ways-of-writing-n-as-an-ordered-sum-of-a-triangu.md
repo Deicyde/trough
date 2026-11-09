@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ counts the number of tuples $(i, j, k) \in \mathbb{N}^3$ such that
 > $T_i + S_j + P_k = n$, where $T_i = i(i+1)/2$, $S_j = j^2$, and $P_k = k(3k-1)/2$:
+>
 > $$a(n) = |\{(i, j, k) \in \mathbb{N}^3 : i(i+1)/2 + j^2 + k(3k-1)/2 = n\}|$$
 >
 > *References:*

@@ -26,7 +26,9 @@ The file states 3 research or textbook statements: 2 open and 1 solved.
 Open: stated without proof.
 
 > Let $x_1, \ldots, x_n \in \mathbb{R}^3$ be the vertices of a convex polyhedron. Are there at least
+>
 > $$(1 - o(1)) \frac{n}{2}$$
+>
 > many distinct distances between the $x_i$?
 >
 > The $(1 - o(1)) \frac{n}{2}$ lower bound is formalised as: for every $\varepsilon > 0$, every set

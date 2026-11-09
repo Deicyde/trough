@@ -33,7 +33,9 @@ Open: stated without proof.
 > Let $\omega(G)$ denote the clique number of $G$ and $\chi(G)$ the chromatic number. If $f(n)$ is
 > the maximum value of $\chi(G)/\omega(G)$, as $G$ ranges over all graphs on $n$ vertices, then
 > does
+>
 > $$\lim_{n\to\infty}\frac{f(n)}{n/(\log_2n)^2}$$
+>
 > exist?
 >
 > Since $f(n) \asymp n/(\log_2 n)^2$ (see `Erdos627.erdos_627.variants.theta`), the limit, if it
@@ -52,6 +54,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős [Er67c] proved that
+>
 > $$f(n) \asymp \frac{n}{(\log_2 n)^2}.$$
 
 ```lean
@@ -67,6 +70,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős [Er67c] proved the lower bound
+>
 > $$f(n) \geq \left(\frac{1}{4} + o(1)\right) \frac{n}{(\log_2 n)^2}.$$
 
 ```lean
@@ -82,7 +86,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The method of Erdős [Er67c] gives the upper bound
+>
 > $$f(n) \leq (4 + o(1)) \frac{n}{(\log_2 n)^2}.$$
+>
 > Erdős states the constant as $1$, but Araujo, Filipe, and Miyazaki [AFM25] note that his method
 > gives $4$.
 
@@ -114,7 +120,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Araujo, Filipe, and Miyazaki [AFM25, Theorem 1.3] improved the upper bound to
+>
 > $$f(n) \leq (3.71943 + o(1)) \frac{n}{(\log_2 n)^2},$$
+>
 > using recent improvements in the asymptotics of Ramsey numbers. [AFM25] is an arXiv preprint.
 
 ```lean
@@ -132,7 +140,9 @@ Solved: stated here without proof.
 > Araujo, Filipe, and Miyazaki [AFM25, Theorem 1.2]: suppose that $R(s,t) \leq R(k)$ for all
 > $s, t, k \in \mathbb{N}$ with $st \leq k^2$ (their Conjecture 1.1), and that
 > $\lim_{k \to \infty} \frac{\log_2 R(k)}{k}$ exists and equals $\ell$. Then
+>
 > $$f(n) = (\ell^2 + o(1)) \frac{n}{(\log_2 n)^2},$$
+>
 > so the limit in `Erdos627.erdos_627` exists and equals $\ell^2$. Here $R(s,t)$ is the
 > two-colour Ramsey number and $R(k) = R(k,k)$ (see [77]). [AFM25] is an arXiv preprint.
 
@@ -170,7 +180,9 @@ Solved: stated here without proof.
 
 > Erdős [Er61d] proved that for every (large) $n$ there is a graph on $n$ vertices with
 > $\omega(G) = 2$ and
+>
 > $$\chi(G) \gg \frac{n^{1/2}}{\log n},$$
+>
 > whence $f(n) \gg n^{1/2}/\log n$.
 
 ```lean

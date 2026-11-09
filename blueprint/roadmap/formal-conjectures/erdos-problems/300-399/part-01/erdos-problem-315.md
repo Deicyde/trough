@@ -28,8 +28,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $u_1=1$ and $u_{n+1}=u_n(u_n+1)$, so that $\sum_{k\geq 1}\frac{1}{u_k+1}$ and
 > $u_k=\lfloor c_0^{2^k}+1\rfloor$ for $k\geq 1$, where
+>
 > $$c_0=\lim u_n^{1/2^n}=1.264085\cdots.$$
+>
 > Let $a_1\lt a_2\lt \cdots $ be any other sequence with $\sum \frac{1}{a_k}=1$. Is it true that
+>
 > $$\liminf a_n^{1/2^n}\lt c_0=1.264085\cdots?$$
 >
 > This is true, and was proved independently by Kamio [Ka25] and Li and Tang [LiTa25].

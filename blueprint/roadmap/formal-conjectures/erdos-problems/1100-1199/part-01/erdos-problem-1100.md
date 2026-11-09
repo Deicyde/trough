@@ -60,7 +60,9 @@ Solved: stated here without proof.
 > of $i$ for which $(d_i,d_{i+1})=1$.
 >
 > Is it true that
+>
 > $$\tau_\perp(n)< \exp((\log n)^{o(1)})$$
+>
 > for all $n$?
 >
 > This is the second part. Erdős and Hall [ErHa78, p. 483] say it would be reasonable to expect
@@ -86,7 +88,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Open: stated without proof.
 
 > Let
+>
 > $$g(k) = \max_{\omega(n)=k}\tau_\perp(n),$$
+>
 > where $\omega(n)$ counts the number of distinct prime divisors of $n$, and $n$ is restricted to
 > squarefree integers. Determine the growth of $g(k)$.
 >
@@ -137,7 +141,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős and Hall [ErHa78, Theorem 1, p. 480] prove, for all $\epsilon>0$ and sufficiently large $x$,
+>
 > $$\max_{n\lt x} \tau_\perp(n) > \exp((\log\log x)^{2-\epsilon}).$$
+>
 > We write the maximum as: some $n\lt x$ has $\tau_\perp(n)$ above the bound.
 
 ```lean
@@ -152,8 +158,10 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős and Tenenbaum [ErTe89, Theorem 4, p. 289] improved this considerably: for $x\geq 3$,
+>
 > $$\max_{n\leq x}\tau_\perp(n)\geq \exp\Bigl(\bigl((\log 2)^2+o(1)\bigr)
 > \frac{\log x}{(\log\log x)^2}\Bigr).$$
+>
 > We write $o(1)$ as an arbitrarily small $\delta>0$ and the maximum as: some $n\leq x$ has
 > $\tau_\perp(n)$ above the bound.
 
@@ -172,7 +180,9 @@ Solved: stated here without proof.
 
 > Erdős and Tenenbaum [ErTe89, Corollary 2, p. 288] proved that for almost all $n$ (that is, on a set
 > of density $1$)
+>
 > $$(\log n)^{\log 3-1+o(1)}\leq \tau_\perp(n)\leq (\log n)^{\log 2-1/2+o(1)}.$$
+>
 > The paper credits the upper bound to an earlier work of the same authors (Bull. Soc. Math. France
 > 111 (1983)). We write $o(1)$ as: for every $\epsilon>0$ the set of $n$ with
 > both bounds, with exponents shifted by $\mp\epsilon$, has density $1$.
@@ -190,7 +200,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős and Simonovits (see [Er81h, p. 173]) proved
+>
 > $$(2^{1/2}+o(1))^k < g(k) < (2-c)^k$$
+>
 > for some constant $c>0$. We write the lower bound as: every fixed $0\leq r\lt \sqrt2$ satisfies
 > $r^k\lt g(k)$ for all large $k$, and the upper bound for all large $k$.
 >
@@ -212,7 +224,9 @@ Solved: stated here without proof.
 
 > For squarefree $n$ with $\omega(n)=k$ the bound $f(n)\leq 3\tau(n)B_1^{\omega_1(n)}$ of
 > [ErTe89, Theorem 1, (1.3), p. 287], with $B_1=3\cdot 2^{-5/3}$, gives
+>
 > $$g(k)\leq 3\left(3\cdot 2^{-2/3}\right)^k,$$
+>
 > and $3\cdot 2^{-2/3}=1.88988\ldots<2$.
 
 ```lean

@@ -32,24 +32,31 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $P(z)=\sum_{1\leq k\leq n}a_kz^k$ for some $a_k\in \mathbb{C}$ with $\lvert a_k\rvert=1$ for
 > $1\leq k\leq n$. Does there exist a constant $c>0$ such that, for $n\geq 2$, we have
+>
 > $$\max_{\lvert z\rvert=1}\lvert P(z)\rvert \geq (1+c)\sqrt{n}?$$
 >
 > This is Problem 4.31 in [Ha74], in which it is described as a conjecture of Erdős and Newman.
 > The lower bound of $\sqrt{n}$ is trivial from Parseval's theorem. Körner [Ko80] constructed, for
 > all $n\geq 2$, polynomials $P(z)=\sum_{k\leq n} a_kz^k$ with $\lvert a_k\rvert=1$ for
 > $1\leq k\leq n$ such that, for all $z$ with $\lvert z\rvert=1$,
+>
 > $$(c_1-o(1))\sqrt{n} \leq \lvert P(z)\rvert \leq (c_2+o(1))\sqrt{n}$$
+>
 > for some absolute constants $0\lt c_1\leq c_2$.
 >
 > The answer is no (contrary to Erdős' initial guess). Kahane [Ka80] constructed 'ultraflat'
 > polynomials $P(z)=\sum a_kz^k$ with $\lvert a_k\rvert=1$ such that
+>
 > $$P(z)=(1+o(1))\sqrt{n}$$
+>
 > uniformly for all $z\in\mathbb{C}$ with $\lvert z\rvert=1$, where the $o(1)$ term $\to 0$ as
 > $n\to \infty$.
 >
 > For more details see the paper [BoBo09] of Bombieri and Bourgain and where Kahane's construction
 > is improved to yield such a polynomial with
+>
 > $$P(z)=\sqrt{n}+O(n^{\frac{7}{18}}(\log n)^{O(1)})$$
+>
 > for all $z\in\mathbb{C}$ with $\lvert z\rvert=1$.
 >
 > See also [228](https://www.erdosproblems.com/228) and

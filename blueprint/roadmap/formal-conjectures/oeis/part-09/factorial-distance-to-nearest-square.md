@@ -8,9 +8,11 @@ statement: formalized
 # Factorial distance to nearest square
 
 > The sequence is defined as
+>
 > $$a(n) =
 > \mathrm{round}\left(\frac{\mathrm{round}(\sqrt{n!})}{\left|(\mathrm{round}(\sqrt{n!}))^2 -
 > n!\right|}\right)$$
+>
 > for $n \ge 2$.
 >
 > *References:*

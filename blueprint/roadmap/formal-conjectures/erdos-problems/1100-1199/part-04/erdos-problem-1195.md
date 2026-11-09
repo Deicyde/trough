@@ -38,7 +38,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > $F:[1,\infty)\to [0,\infty)$ is a non-decreasing function tending to infinity, then there exists
 > such a set $S$ with
 > $\lvert S\cap (0,x)\rvert \geq F(x)$ if and only if
+>
 > $$\int_1^\infty \frac{F(x)}{x^2}\mathrm{d}x < \infty.$$
+>
 > Here $\lvert\cdot\rvert$ is Lebesgue measure, $S$ is measurable, and the inequality is required for
 > all sufficiently large $x$. The statement says that the set of such $F$ is exactly the answer.
 

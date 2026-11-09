@@ -9,7 +9,9 @@ statement: formalized
 
 > Let $d(n)$ be the number of divisors of $n$ and $D(x) = \sum_{n \le x} d(n)$ the divisor
 > summatory function. Dirichlet's hyperbola method gives
+>
 > $$D(x) = x \log x + (2\gamma - 1) x + \Delta(x), \qquad \Delta(x) = O(x^{1/2}),$$
+>
 > where $\gamma$ is the Euler–Mascheroni constant. The **Dirichlet divisor problem** asks for the
 > infimum $\theta$ of exponents with $\Delta(x) = O(x^{\theta})$. It is conjectured that
 > $\theta = 1/4$, i.e. $\Delta(x) = O(x^{1/4 + \varepsilon})$ for every $\varepsilon > 0$. Hardy

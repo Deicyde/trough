@@ -36,6 +36,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > a graph $H$ with $m$ edges that is Ramsey for $G$.
 >
 > If $G$ has $n$ vertices and maximum degree $d$ then prove that
+>
 > $$\hat{R}(G)\ll_d n.$$
 >
 > This was disproved for $d=3$ by Rödl and Szemerédi [RoSz00], who constructed a graph on $n$

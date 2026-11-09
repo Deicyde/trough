@@ -30,6 +30,7 @@ Solved: stated here without proof.
 > Let $F(n)$ be the maximum possible size of a subset $A \subseteq \{1, \ldots, n\}$ such that
 > $a \nmid bc$ whenever $a, b, c \in A$ with $a \neq b$ and $a \neq c$. Is there a constant $c$ such
 > that
+>
 > $$F(n) = \pi(n) + (c + o(1)) n^{2/3} (\log n)^{-2}?$$
 >
 > A problem of Erdős [Er69, Er70b], who proved in [Er38] that
@@ -50,7 +51,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos793.lean#L25](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos793.lean#L25).
 
 > The constant in Problem 793 is $c = 27/2$, i.e.
+>
 > $$F(n) = \pi(n) + \left(\frac{27}{2} + o(1)\right) \frac{n^{2/3}}{(\log n)^2}.$$
+>
 > Formalised by van Doorn and Aristotle, following the proof of GPT-5.6 Sol.
 
 ```lean

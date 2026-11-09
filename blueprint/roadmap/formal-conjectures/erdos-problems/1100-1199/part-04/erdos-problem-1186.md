@@ -56,6 +56,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The probabilistic method implies
+>
 > $$\delta_k \leq \frac{1}{(k-1)2^{k}}.$$
 
 ```lean
@@ -70,7 +71,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Parrilo, Robertson, and Saracino [PRS08] have proved
+>
 > $$0.0511\approx \frac{1675}{32768}\leq \delta_3 \leq \frac{117}{2192}\approx 0.0533,$$
+>
 > and conjectured the upper bound is correct.
 
 ```lean
@@ -84,7 +87,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > Parrilo, Robertson, and Saracino [PRS08] have proved
+>
 > $$0.0511\approx \frac{1675}{32768}\leq \delta_3 \leq \frac{117}{2192}\approx 0.0533,$$
+>
 > and conjectured the upper bound is correct.
 >
 > This is the conjecture $\delta_3 = \frac{117}{2192}$.

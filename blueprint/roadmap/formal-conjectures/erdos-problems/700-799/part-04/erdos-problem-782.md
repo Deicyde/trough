@@ -34,6 +34,7 @@ Open: stated without proof.
 > Do the squares contain arbitrarily long quasi-progressions? That is, does there exist some
 > constant $C>0$ such that, for any $k$, the squares contain a sequence $x_1,\ldots,x_k$ where, for
 > some $d$ and all $1\leq i\lt k$,
+>
 > $$x_i+d\leq x_{i+1}\leq x_i+d+C.$$
 >
 > A question of Brown, Erdős, and Freedman [BEF90]. This is the first question. Here $C$ and $d$ are
@@ -51,6 +52,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Do the squares contain arbitrarily large cubes
+>
 > $$a+\left\{ \sum_i \epsilon_ib_i : \epsilon_i\in \{0,1\}\right\}?$$
 >
 > A question of Brown, Erdős, and Freedman [BEF90]. This is the second question. The generators

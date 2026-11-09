@@ -39,7 +39,9 @@ Open: stated without proof.
 
 > Let $A=\{a_1\lt a_2\lt \cdots\}\subset \mathbb{N}$ be an infinite sum-free set - that is, there are no
 > solutions to
+>
 > $$a=b_1+\cdots+b_r$$
+>
 > with $b_1\lt \cdots\lt b_r\lt a\in A$. How small can $a_{n+1}-a_n$ be? Is it possible that
 > $a_{n+1}-a_n\lt n$?
 >

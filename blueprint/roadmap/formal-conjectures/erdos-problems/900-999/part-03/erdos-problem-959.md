@@ -23,7 +23,9 @@ Open: stated without proof.
 > the set of distinct distances determined by $A$. Let $f(d)$ be the number of times
 > the distance $d$ is determined, ordered so that
 > $f(d_1)\geq f(d_2)\geq \cdots \geq f(d_k)$. Estimate
+>
 > $$\max (f(d_1)-f(d_2)),$$
+>
 > where the maximum is taken over all $A$ of size $n$ (this is `extremalGap n`).
 
 ```lean
@@ -38,7 +40,9 @@ Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subj
 Solved: stated here; a Lean proof is at [https://github.com/williamjblair/lean-proofs/blob/4f915a323443bfb1709a6805a013812016dca88a/starfleet/erdos-959/Research/FinalLowerBound.lean](https://github.com/williamjblair/lean-proofs/blob/4f915a323443bfb1709a6805a013812016dca88a/starfleet/erdos-959/Research/FinalLowerBound.lean).
 
 > A superlinear lower bound: there is a $c>0$ with
+>
 > $$\text{extremalGap}(n)\geq n^{1 + c/\log\log n}$$
+>
 > for all large $n$, so $\max (f(d_1)-f(d_2))$ grows faster than any linear function
 > of $n$. Determining the exact order remains open, which is `erdos_959`.
 

@@ -10,7 +10,9 @@ statement: formalized
 > A227582: Expansion of $(2+3x+2x^2+2x^3+3x^4+x^5-x^6)/(1-2x+x^2-x^5+2x^6-x^7)$.
 >
 > The sequence satisfies the linear recurrence:
+>
 > $$a(n) = 2 a(n-1) - a(n-2) + a(n-5) - 2 a(n-6) + a(n-7)$$
+>
 > with initial values $a(1) = 2, a(2) = 7, a(3) = 14, a(4) = 23, a(5) = 35, a(6) = 50, a(7) = 67$.
 >
 > The sequence is 1-indexed in OEIS, so $a(n)$ is the $(n-1)$-th term of the 0-indexed solution.

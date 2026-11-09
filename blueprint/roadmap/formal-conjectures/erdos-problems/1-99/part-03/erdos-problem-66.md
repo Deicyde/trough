@@ -20,7 +20,9 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Is there and $A \subset \mathbb{N}$ is such that
+>
 > $$\lim_{n\to \infty}\frac{1_A\ast 1_A(n)}{\log n}$$
+>
 > exists and is $\ne 0$?
 
 ```lean

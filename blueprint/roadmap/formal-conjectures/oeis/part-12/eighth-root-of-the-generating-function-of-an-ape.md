@@ -8,6 +8,7 @@ statement: formalized
 # Eighth root of the generating function of an Apéry-like sequence
 
 > The auxiliary sequence used for the Hankel matrix, defined as
+>
 > $$\sum_{k=0}^n \binom{n}{k}^2 \binom{n+k}{k}^2$$
 >
 > Determinant of the $(n+1) \times (n+1)$ Hankel-type matrix with

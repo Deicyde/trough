@@ -10,6 +10,7 @@ statement: formalized
 > The Komlós conjecture in discrepancy theory: there is a universal constant $K$ such
 > that for all $n, m$ and all vectors $v\_1, \dots, v\_n \in \mathbb{R}^m$ with
 > $\|v\_i\|\_2 \le 1$, there exist signs $\varepsilon\_i \in \{-1, +1\}$ such that
+>
 > $$\left\|\sum\_{i=1}^n \varepsilon\_i v\_i\right\|\_\infty \le K.$$
 >
 > For a long time the best known bound was due to Banaszczyk, who proved that one can always

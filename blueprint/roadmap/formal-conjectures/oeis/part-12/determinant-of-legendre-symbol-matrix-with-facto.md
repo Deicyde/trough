@@ -8,7 +8,9 @@ statement: formalized
 # Determinant of Legendre symbol matrix with factorial shifts
 
 > Determinant of the $(p_n-1)/2$-by-$(p_n-1)/2$ matrix with $(i,j)$-entry being the Legendre symbol
+>
 > $$\left(\frac{i^2 - \left(\frac{p_n-1}{2}\right)! j}{p_n}\right),$$
+>
 > where $p_n$ is the $n$-th prime ($n \ge 2$).
 >
 > *References:*

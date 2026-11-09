@@ -22,7 +22,9 @@ Open: stated without proof.
 
 > For a graph $G$, we define $\Delta(G)$ to be the maximum degree, $\omega(G)$ to be the size of the
 > largest clique subgraph, and $\chi(G)$ to be the chromatic number. Reed's omega, delta, and chi
-> conjecture states that $$\chi(G) \leq \lceil \frac{1}{2}(\omega(G) + \Delta(G) + 1) \rceil.$$
+> conjecture states that
+>
+> $$\chi(G) \leq \lceil \frac{1}{2}(\omega(G) + \Delta(G) + 1) \rceil.$$
 
 ```lean
 theorem reed_omega_delta_chi_conjecture :
@@ -41,7 +43,9 @@ Open: stated without proof.
 
 > For a finite graph $G$, we define $\Delta(G)$ to be the maximum degree, $\omega(G)$ to be the
 > size of the largest clique subgraph, and $\chi(G)$ to be the chromatic number. Reed's omega,
-> delta, and chi conjecture states that $$\chi(G) \leq \lceil \frac{1}{2}(\omega(G) + \Delta(G) + 1) \rceil.$$
+> delta, and chi conjecture states that
+>
+> $$\chi(G) \leq \lceil \frac{1}{2}(\omega(G) + \Delta(G) + 1) \rceil.$$
 
 ```lean
 theorem reed_omega_delta_chi_conjecture_for_finite_graphs :

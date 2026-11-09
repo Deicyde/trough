@@ -24,6 +24,7 @@ Open: stated without proof.
 
 > If $\omega_k(n)$ counts the number of distinct prime factors of $n$ which are $>k$, then is it true
 > that, for every $k\geq 1$,
+>
 > $$\liminf_{n\to \infty}\sum_{0\leq i < k}\omega_k(n+i)\leq k?$$
 
 ```lean
@@ -38,7 +39,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Is it true that
+>
 > $$\limsup_{n\to \infty}\left(\sum_{0\leq i < k}\omega(n+i)\right) \frac{\log\log n}{\log n}=1,$$
+>
 > where $\omega$ counts the number of distinct prime factors without restriction?
 
 ```lean

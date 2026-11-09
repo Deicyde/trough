@@ -25,10 +25,13 @@ The file states 4 research or textbook statements: 4 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos698.lean#L452](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos698.lean#L452).
 
 > Is there some $h(n)\to \infty$ such that for all $2\leq i\lt j\leq n/2$
+>
 > $$\textrm{gcd}\left( \binom{n}{i},\binom{n}{j}\right) \geq h(n)?$$
 >
 > This was resolved by Bergman [Be11], who proved that for any $2\leq i\lt j\leq n/2$
+>
 > $$\textrm{gcd}\left( \binom{n}{i},\binom{n}{j}\right) \gg n^{1/2}\frac{2^i}{i^{3/2}},$$
+>
 > where the implied constant is absolute.
 >
 > The linked formal proof (van Doorn and Aristotle, see `erdos_698.variants.bergman`) gives the
@@ -49,8 +52,10 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Proved here.
 
 > A problem of Erdős and Szekeres, who observed that
+>
 > $$\textrm{gcd}\left( \binom{n}{i},\binom{n}{j}\right) \geq \frac{\binom{n}{i}}{\binom{j}{i}}
 > \geq 2^i$$
+>
 > (in particular the greatest common divisor is always $>1$).
 
 ```lean
@@ -82,7 +87,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos698.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos698.lean).
 
 > This was resolved by Bergman [Be11], who proved that for any $2\leq i\lt j\leq n/2$
+>
 > $$\textrm{gcd}\left( \binom{n}{i},\binom{n}{j}\right) \gg n^{1/2}\frac{2^i}{i^{3/2}},$$
+>
 > where the implied constant is absolute.
 
 ```lean

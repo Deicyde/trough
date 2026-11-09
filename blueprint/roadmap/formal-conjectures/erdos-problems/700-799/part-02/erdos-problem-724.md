@@ -34,7 +34,9 @@ Open: stated without proof.
 
 > Let $f(n)$ be the maximum number of mutually orthogonal Latin squares of order $n$. Is it true
 > that
+>
 > $$f(n) \gg n^{1/2}?$$
+>
 > This question is from [Er81].
 
 ```lean
@@ -76,6 +78,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Chowla, Erdős, and Straus [CES60] proved that
+>
 > $$f(n) \gg n^{1/91}.$$
 
 ```lean
@@ -91,6 +94,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Wilson [Wi74] proved that
+>
 > $$f(n) \gg n^{1/17}.$$
 
 ```lean
@@ -106,6 +110,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Beth [Be83c] proved that
+>
 > $$f(n) \gg n^{1/14.8}.$$
 
 ```lean
@@ -121,7 +126,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Textbook result, proved here.
 
 > For $n \geq 2$ there are at most $n - 1$ mutually orthogonal Latin squares of order $n$:
+>
 > $$f(n) \leq n - 1.$$
+>
 > This is classical; see OEIS A001438.
 
 ```lean

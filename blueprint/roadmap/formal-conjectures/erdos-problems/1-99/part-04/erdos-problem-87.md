@@ -23,7 +23,9 @@ The file states 2 research or textbook statements: 2 open.
 Open: stated without proof.
 
 > Let $0 < \epsilon < 1$. Is it true that, if $k$ is sufficiently large, then
+>
 > $$R(G) > (1-\epsilon)^k R(k)$$
+>
 > for every graph $G$ with chromatic number $\chi(G)=k$?
 >
 > The restriction $\epsilon < 1$ excludes negative bases in $(1-\epsilon)^k$.
@@ -45,7 +47,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > Even stronger, is there some $c > 0$ such that, for all large $k$,
+>
 > $$R(G) > c R(k)$$
+>
 > for every graph $G$ with chromatic number $\chi(G)=k$?
 >
 > This problem is #13 in Ramsey Theory in the graphs problem collection.

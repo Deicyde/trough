@@ -29,7 +29,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $\epsilon>0$. Does there exist a constant $C_\epsilon$ such that, for all primes $p$, every
 > residue modulo $p$ is the sum of at most $C_\epsilon$ many elements of
+>
 > $$\{ n^{-1} : 1\leq n\leq p^\epsilon\}$$
+>
 > where $n^{-1}$ denotes the inverse of $n$ modulo $p$?
 >
 > The original question was answered in the affirmative by Shparlinski [Sh02], who proved that

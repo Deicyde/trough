@@ -30,8 +30,11 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos220.lean#L39](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos220.lean#L39).
 
 > Let $n \geq 1$ and
+>
 > $$A = \{a_1 < \cdots < a_{\phi(n)}\} = \{1 \leq m < n : (m, n) = 1\}.$$
+>
 > Is it true that
+>
 > $$\sum_{1 \leq k < \phi(n)} (a_{k+1} - a_k)^2 \ll \frac{n^2}{\phi(n)}?$$
 >
 > A problem of Erdős [Er40, Er73, ErGr80], which is discussed in problem B40 of Guy's collection

@@ -45,7 +45,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Alon and Hajnal [AlHa91] proved that $G$ must contain at least
+>
 > $$\exp\left(n(\log n)^{-O(\log\log n)}\right)$$
+>
 > many non-isomorphic induced subgraphs.
 
 ```lean

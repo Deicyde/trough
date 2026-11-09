@@ -32,6 +32,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Estimate $f(n)$. In particular, is it true that $f((\log n)^2,n) \geq n^{1/2-o(1)}$?
 >
 > The answer is no: Alon and Sudakov [AlSu07] proved that in fact
+>
 > $$\frac{(\log n)^2}{\log\log n}\ll f((\log n)^2,n) \ll (\log n)^2.$$
 
 ```lean
@@ -49,6 +50,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Is it true that $f((\log n)^3,n)\gg (\log n)^3$?
 >
 > The answer is no: Alon and Sudakov [AlSu07] proved that in fact
+>
 > $$f((\log n)^3,n)\asymp \frac{(\log n)^2}{\log\log n}.$$
 
 ```lean
@@ -63,8 +65,11 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos804.lean#L3532](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos804.lean#L3532).
 
 > Alon and Sudakov [AlSu07] proved that
+>
 > $$\frac{(\log n)^2}{\log\log n}\ll f((\log n)^2,n) \ll (\log n)^2$$
+>
 > and
+>
 > $$f((\log n)^3,n)\asymp \frac{(\log n)^2}{\log\log n}.$$
 
 ```lean

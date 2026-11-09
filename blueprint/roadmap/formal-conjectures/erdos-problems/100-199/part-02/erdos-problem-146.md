@@ -25,6 +25,7 @@ Solved: stated here without proof.
 
 > If $H$ is bipartite and is $r$-degenerate, that is, every induced subgraph of $H$ has minimum
 > degree $\leq r$, then
+>
 > $$\mathrm{ex}(n;H) \ll n^{2-1/r}.$$
 >
 > The answer is no. OpenAI [OpenAI26] give a connected bipartite `2`-degenerate `H` and constants

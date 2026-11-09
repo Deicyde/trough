@@ -101,6 +101,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Matolcsi, Ruzsa, Varga, and Zsámboki [MRVZ23] have improved the upper bound to
+>
 > $$f(n) \leq \left(\frac{1}{4}+o(1)\right)n.$$
 >
 > This follows from the previous statement by taking disjoint copies of the graph far apart.

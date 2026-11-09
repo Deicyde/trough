@@ -20,9 +20,11 @@ The file states 5 research or textbook statements: 1 open and 4 solved.
 Open: stated without proof.
 
 > Is there some absolute constant $C > 0$ such that
+>
 > $$
 >   \sum_{p \leq n} 1_{p\nmid {2n \choose n}}\frac{1}{p} \leq C
 > $$
+>
 > for all $n$?
 
 ```lean
@@ -37,14 +39,19 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Erdos, Graham, Ruzsa, and Straus proved that if
+>
 > $$
 >   f(n) = \sum_{p \leq n} 1_{p\nmid {2n \choose n}}\frac{1}{p}
 > $$
+>
 > and
+>
 > $$
 >   \gamma_0 = \sum_{k = 2}^{\infty} \frac{\log k}{2^k}
 > $$
+>
 > then
+>
 > $$
 >   \lim_{x\to\infty} \frac{1}{x}\sum_{n\leq x} f(n) = \gamma_0
 > $$
@@ -65,14 +72,19 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdos, Graham, Ruzsa, and Straus proved that if
+>
 > $$
 >   f(n) = \sum_{p \leq n} 1_{p\nmid {2n \choose n}}\frac{1}{p}
 > $$
+>
 > and
+>
 > $$
 >   \gamma_0 = \sum_{k = 2}^{\infty} \frac{\log k}{2^k}
 > $$
+>
 > then
+>
 > $$
 >   \lim_{x\to\infty} \frac{1}{x}\sum_{n\leq x} f(n)^2 = \gamma_0^2
 > $$
@@ -94,13 +106,17 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdos, Graham, Ruzsa, and Straus proved that if
+>
 > $$
 >   f(n) = \sum_{p \leq n} 1_{p\nmid {2n \choose n}}\frac{1}{p}
 > $$
+>
 > and
+>
 > $$
 >   \gamma_0 = \sum_{k = 2}^{\infty} \frac{\log k}{2^k}
 > $$
+>
 > then for almost all integers $f(m) = \gamma_0 + o(1)$, i.e. for every $\varepsilon > 0$ the set of
 > $n$ with $|f(n) - \gamma_0| < \varepsilon$ has natural density one.
 >
@@ -118,10 +134,13 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdos, Graham, Ruzsa, and Straus proved that if
+>
 > $$
 >   f(n) = \sum_{p \leq n} 1_{p\nmid {2n \choose n}}\frac{1}{p}
 > $$
+>
 > then there is some constant $c < 1$ such that for all large $n$
+>
 > $$
 >   f(n) \leq c \log\log n.
 > $$

@@ -33,12 +33,14 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $x_1,\ldots,x_n\in\mathbb{R}^2$ determine the set of distances $\{u_1,\ldots,u_t\}$. Suppose
 > $u_i$ appears as the distance between $f(u_i)$ many pairs of points. Then for all $\epsilon>0$
+>
 > $$\sum_i f(u_i)^2 \ll_\epsilon n^{3+\epsilon}.$$
 >
 > The case when the points determine a convex polygon was solved by Altman [Al63]. Note it is
 > trivial that $\sum f(u_i)=\binom{n}{2}$.
 >
 > Solved by Guth and Katz [GuKa15] who proved the upper bound
+>
 > $$\sum_i f(u_i)^2 \ll n^3\log n.$$
 >
 > See also [94](https://www.erdosproblems.com/94).

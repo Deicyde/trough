@@ -40,15 +40,21 @@ Solved: stated here; a Lean proof is at [https://github.com/Jayyhk/erdos-lean/bl
 > Let $A=\{n_1\lt n_2\lt \cdots\}\subset \mathbb{N}$ be a lacunary sequence (so there exists some
 > $\epsilon>0$ with $n_{k+1}\geq (1+\epsilon)n_k$ for all $k$). Must there exist an irrational
 > $\theta$ such that
+>
 > $$\{ \|\theta n_k\| : k\geq 1\}$$
+>
 > is not dense in $[0,1]$ (where $\| x\|$ is the distance to the nearest integer)?
 >
 > Solved independently by de Mathan [dM80] and Pollington [Po79b], who showed that, given any
 > such $A$, there exists such a $\theta$, with
+>
 > $$\inf_{k\geq 1}\| \theta n_k\| \gg \frac{\epsilon^4}{\log(1/\epsilon)}.$$
+>
 > This bound was improved by Katznelson [Ka01], Akhunzhanov and Moshchevitin [AkMo04], and
 > Dubickas [Du06], before Peres and Schlag [PeSc10] improved it to
+>
 > $$\inf_{k\geq 1}\| \theta n_k\| \gg \frac{\epsilon}{\log(1/\epsilon)},$$
+>
 > and note that the best bound possible here would be $\gg \epsilon$.
 >
 > This problem has consequences for [894](https://www.erdosproblems.com/894).

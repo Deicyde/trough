@@ -22,6 +22,7 @@ Solved: stated here; a Lean proof is at [https://github.com/williamjblair/lean-p
 > Let $(\epsilon_k)_{k\geq 0}$ be independently uniformly chosen at random from
 > $\{-1,1\}$. If $R_n$ counts the number of real roots of
 > $f_n(z)=\sum_{0\leq k\leq n}\epsilon_k z^k$ then is it true that, almost surely,
+>
 > $$\lim_{n\to \infty}\frac{R_n}{\log n}=\frac{2}{\pi}?$$
 >
 > The answer is no: this almost-sure limit fails. This result was obtained first by others, who

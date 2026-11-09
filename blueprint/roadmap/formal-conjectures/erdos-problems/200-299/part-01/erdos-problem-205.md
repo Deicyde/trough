@@ -31,7 +31,9 @@ Solved: stated here without proof.
 > Barreto and Leeham, using ChatGPT and Aristotle, have proved a negative answer, which was
 > quantified by Tao and Alexeev (see the comments): in fact there are infinitely many $n$ such that,
 > for all $k$ with $2^k\lt n$, $n-2^k$ has at least
+>
 > $$\gg \left(\frac{\log n}{\log\log n}\right)^{1/2}$$
+>
 > many prime factors.
 
 ```lean
@@ -84,7 +86,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos205.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos205.lean).
 
 > In fact there are infinitely many $n$ such that, for all $k$ with $2^k\lt n$, $n-2^k$ has at least
+>
 > $$\gg \left(\frac{\log n}{\log\log n}\right)^{1/2}$$
+>
 > many prime factors.
 
 ```lean

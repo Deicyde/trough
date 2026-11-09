@@ -8,6 +8,7 @@ statement: formalized
 # Asymptotics of an inner sum formula for $a(n)$
 
 > The inner sum of the formula used in a:
+>
 > $$\sum_{\max(k-n+5, 0) \le j \le \min(k,4)} \binom{8-j}{j}\binom{2n-k+j-10}{k-j}$$
 >
 > a: A total of $n$ married couples, including a mathematician M and his wife, are to be seated

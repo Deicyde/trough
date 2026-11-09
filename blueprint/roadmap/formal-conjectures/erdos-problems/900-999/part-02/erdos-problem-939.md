@@ -104,7 +104,10 @@ Proved here.
 
 > Cambie has found several examples of the sum of $r - 2$ coprime $r$-powerful numbers being itself
 > $r$-powerful. For example when $r=5$ we have
-> $$3^7\cdot 61^5 = 2^8\cdot3^{10}\cdot 5^7 + 2^{12}\cdot 23^6 + 11^5\cdot 13^5$$.
+>
+> $$3^7\cdot 61^5 = 2^8\cdot3^{10}\cdot 5^7 + 2^{12}\cdot 23^6 + 11^5\cdot 13^5$$
+>
+> .
 
 ```lean
 theorem erdos_939.variants.examples : (∃ r ≥ 4, (Erdos939Sums r).Nonempty)
@@ -146,7 +149,10 @@ Proved here.
 
 > Euler had conjectured that the sum of $k - 1$ many $k$-th powers is never a
 > $k$-th power, but this is false for $k=5$, as Lander and Parkin [LaPa67] found
-> $$27^5+84^5+110^5+133^5=144^5$$.
+>
+> $$27^5+84^5+110^5+133^5=144^5$$
+>
+> .
 >
 > The summands must be positive. Without that condition a set containing `0` would count, so the
 > negation would be satisfied by a sum of fewer than $k-1$ powers and would claim less than the

@@ -14,7 +14,9 @@ statement: formalized
 > Conjecture 1, the oldest of the four TxGraffiti conjectures in the cited
 > collection (open since 2016), asserts that every nontrivial connected graph $G$
 > with maximum degree $\Delta \ge 2$ satisfies
+>
 > $$\alpha(G) \ge \frac{a(G) + R(G)}{\Delta(G)},$$
+>
 > where $\alpha$ is the independence number, $a$ the annihilation number, $R$ the
 > Havel–Hakimi residue, and $\Delta$ the maximum degree.
 >
@@ -31,6 +33,7 @@ Solved: stated here without proof.
 
 > TxGraffiti [Conjecture 1](https://arxiv.org/abs/2507.17780):
 > for every nontrivial connected graph $G$ with $\Delta(G) \ge 2$,
+>
 > $$\alpha(G) \ge \frac{a(G) + R(G)}{\Delta(G)}.$$
 >
 > This conjecture is **true**.

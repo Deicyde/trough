@@ -20,9 +20,11 @@ The file states 2 research or textbook statements: 2 open.
 Open: stated without proof.
 
 > For any two real numbers $\alpha$ and $\beta$,
+>
 > $$
 >   \liminf_{n\to\infty} n\||n\alpha\||\||n\beta\|| = 0
 > $$
+>
 > where $\||x\|| := \min(|x - \lfloor x \rfloor|, |x - \lceil x \rceil|)$ is the distance
 > to the nearest integer.
 
@@ -38,9 +40,11 @@ Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-num
 Open: stated without proof.
 
 > For real number $\alpha$ and prime $p$,
+>
 > $$
 >   \liminf\_{n \to\infty} n |n|\_{p}\||n\alpha\|| = 0
 > $$
+>
 > where $\||x\|| := \min(|x - \lfloor x \rfloor|, |x - \lceil x \rceil|)$ is the distance
 > to the nearest integer, and $|x|\_{p}$ is the $p$-adic norm.
 

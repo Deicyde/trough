@@ -35,18 +35,22 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Let $C>0$ be arbitrary. Is it true that, if $n$ is sufficiently large depending on $C$, then in
 > any $2$-colouring of $\binom{\{2,\ldots,n\}}{2}$ there exists some $X\subseteq \{2,\ldots,n\}$
 > such that $\binom{X}{2}$ is monochromatic and
+>
 > $$\sum_{x\in X}\frac{1}{\log x}\geq C?$$
 >
 > The answer is yes, which was proved by Rödl [Ro03]. In the same article Rödl also proved a lower
 > bound for this problem, constructing, for all $n$, a $2$-colouring of $\binom{\{2,\ldots,n\}}{2}$
 > such that if $X\subseteq \{2,\ldots,n\}$ is such that $\binom{X}{2}$ is monochromatic then
+>
 > $$\sum_{x\in X}\frac{1}{\log x}\ll \log\log\log n.$$
+>
 > In the same paper Rödl proves that the answer to the main problem is negative if we consider
 > $3$-colourings.
 >
 > This bound is best possible, as proved by Conlon, Fox, and Sudakov [CFS13], who proved that, if
 > $n$ is sufficiently large, then in any $2$-colouring of $\binom{\{2,\ldots,n\}}{2}$ there exists
 > some $X\subseteq \{2,\ldots,n\}$ such that $\binom{X}{2}$ is monochromatic and
+>
 > $$\sum_{x\in X}\frac{1}{\log x}\geq 2^{-8}\log\log\log n.$$
 >
 > A $2$-colouring of the pairs of $\{2,\ldots,n\}$ is a graph `G` on this vertex set; a
@@ -67,6 +71,7 @@ Solved: stated here without proof.
 > Conlon, Fox, and Sudakov [CFS13] proved that, if $n$ is sufficiently large, then in any
 > $2$-colouring of $\binom{\{2,\ldots,n\}}{2}$ there exists some $X\subseteq \{2,\ldots,n\}$ such
 > that $\binom{X}{2}$ is monochromatic and
+>
 > $$\sum_{x\in X}\frac{1}{\log x}\geq 2^{-8}\log\log\log n.$$
 
 ```lean
@@ -84,6 +89,7 @@ Solved: stated here without proof.
 
 > Rödl [Ro03] constructed, for all $n$, a $2$-colouring of $\binom{\{2,\ldots,n\}}{2}$ such that
 > if $X\subseteq \{2,\ldots,n\}$ is such that $\binom{X}{2}$ is monochromatic then
+>
 > $$\sum_{x\in X}\frac{1}{\log x}\ll \log\log\log n.$$
 
 ```lean

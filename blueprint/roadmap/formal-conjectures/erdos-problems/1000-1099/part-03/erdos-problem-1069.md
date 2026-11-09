@@ -27,6 +27,7 @@ Solved: stated here without proof.
 
 > Given any $n$ points in $\mathbb{R}^2$, the number of $k$-rich lines (lines which contain
 > $\geq k$ of the points) is, provided $k\leq n^{1/2}$,
+>
 > $$\ll \frac{n^2}{k^3}.$$
 >
 > Erdős [Er87b] describes this as a conjecture of himself, Croft, and Purdy. It was proved by

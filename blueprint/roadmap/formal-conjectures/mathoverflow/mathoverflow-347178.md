@@ -19,7 +19,10 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/google-deepmind/formal-conjectures/blob/fc20c0b55eab6fc26e2bb5b24fb3005303a0910b/FormalConjectures/Mathoverflow/347178.lean#L670](https://github.com/google-deepmind/formal-conjectures/blob/fc20c0b55eab6fc26e2bb5b24fb3005303a0910b/FormalConjectures/Mathoverflow/347178.lean#L670).
 
 > Let $f : \mathbb R^n \to \mathbb R,  n \geq 2$ be a $C^1$ function. Is it true that
-> $$\sup_{x \in \mathbb R^n}f(x) = \sup_{x\in \mathbb R^n} f(x+\nabla f(x))$$?
+>
+> $$\sup_{x \in \mathbb R^n}f(x) = \sup_{x\in \mathbb R^n} f(x+\nabla f(x))$$
+>
+> ?
 >
 > Answer: No. A counterexample in $\mathbb R^2$ is recorded in the linked formal proof.
 
@@ -54,7 +57,9 @@ Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-rea
 Solved: stated here; a Lean proof is at [https://github.com/inozemtsev/gradient-supremum/blob/56743ea06dd2953e02274841c16e0f56927b5a44/GradientSupremum/Mathoverflow347178.lean#L30](https://github.com/inozemtsev/gradient-supremum/blob/56743ea06dd2953e02274841c16e0f56927b5a44/GradientSupremum/Mathoverflow347178.lean#L30).
 
 > Let $f : \mathbb R^n \to \mathbb R,  n \geq 2$ be a $C^1$ function. Does the equality
+>
 > $$\sup_{x \in \mathbb R^n}f(x) = \sup_{x\in \mathbb R^n} f(x+\nabla f(x))$$
+>
 > hold when both suprema are finite?
 >
 > Answer: Yes. Upper boundedness of $f$ alone suffices.

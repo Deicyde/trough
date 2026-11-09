@@ -30,6 +30,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $f(n)$ count the number of sum-free $A\subseteq \{1,\ldots,n\}$, i.e. $A$ contains no
 > solutions to $a=b+c$ with $a,b,c\in A$. Is it true that
+>
 > $$f(n)=2^{(1+o(1))\frac{n}{2}}?$$
 >
 > The Cameron–Erdős conjecture. This is true, and in fact $f(n) \ll 2^{n/2}$, which was proved

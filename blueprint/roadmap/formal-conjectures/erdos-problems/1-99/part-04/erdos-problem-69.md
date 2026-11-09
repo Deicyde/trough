@@ -20,9 +20,11 @@ The file states 2 research or textbook statements: 1 solved and 1 textbook resul
 Textbook result, stated without proof.
 
 > Is
+>
 > $$
 > \sum_{n\geq 2}\frac{\omega(n)}{2^n}
 > $$
+>
 > irrational? (Here $\omega(n)$ counts the number of distinct prime divisors of $n$.)
 
 ```lean
@@ -36,6 +38,7 @@ Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-numbe
 Proved here.
 
 > Tao observed that `erdos_69` is a special case of `erdos_257`, since
+>
 > $$
 > \sum_{n\geq 2}\frac{\omega(n)}{2^n} = \sum_p \frac{1}{2^p - 1}.
 > $$

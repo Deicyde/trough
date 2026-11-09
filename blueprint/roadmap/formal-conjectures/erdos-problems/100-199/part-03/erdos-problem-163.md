@@ -25,6 +25,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > The Burr-Erdős conjecture: For any $d\geq 1$ if $H$ is a graph such that every subgraph
 > contains a vertex of degree at most $d$ then
+>
 > $$R(H)\ll_d n.$$
 >
 > Solved by Lee [Le17], who proved that $R(H) \leq 2^{2^{O(d)}}n$.

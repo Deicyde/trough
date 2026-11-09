@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ is given by $a(n) = n + \lfloor n r / t \rfloor + \lfloor n s / t \rfloor$
 > where $r = 1$, $s = \sqrt{5/4}$, and $t = \sqrt{4/5}$. Equivalently,
+>
 > $$a(n) = 2n + \lfloor n \sqrt{5/4} \rfloor + \lfloor n/4 \rfloor.$$
 >
 > *References:*

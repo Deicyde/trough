@@ -10,6 +10,7 @@ statement: formalized
 > The central problem of Ramsey–Turán theory: writing $\mathrm{rt}(n; k, \ell)$ for the maximum
 > number of edges of a $K_k$-free graph on $n$ vertices whose largest independent set has size
 > less than $\ell$, is it true that for every $\epsilon > 0$ and all sufficiently large $n$
+>
 > $$\mathrm{rt}(n; 4, \epsilon n) \geq n^2/8?$$
 >
 > Conjectured by Bollobás and Erdős [BoEr76], who constructed such a graph with
@@ -97,6 +98,7 @@ Solved: stated here without proof.
 > The quantitative strengthening proved by Fox, Loh, and Zhao [FLZ15]: there is a constant
 > $C > 0$ such that for all sufficiently large $n$ there exists a $K_4$-free graph on $n$
 > vertices with at least $n^2/8$ edges whose largest independent set has size at most
+>
 > $$C \cdot \frac{(\log\log n)^{3/2}}{(\log n)^{1/2}} \cdot n.$$
 
 ```lean

@@ -8,7 +8,9 @@ statement: formalized
 # Lerch quotients of odd primes
 
 > The Lerch quotient of an odd prime $p$ is given by
+>
 > $$L_p = \frac{\left(\sum_{k=1}^{p-1} q_p(k)\right) - w_p}{p}$$
+>
 > where $q_p(k) = (k^{p-1}-1)/p$ is the Fermat quotient and $w_p = ((p-1)!+1)/p$ is the Wilson
 > quotient. For $n > 1$, $a(n)$ is the Lerch quotient of the $n$-th prime $p_n$.
 >

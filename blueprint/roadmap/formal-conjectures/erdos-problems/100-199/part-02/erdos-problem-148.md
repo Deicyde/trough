@@ -26,7 +26,9 @@ The file states 3 research or textbook statements: 1 open and 2 solved. It also 
 Open: stated without proof.
 
 > Let $F(k)$ be the number of solutions to
+>
 > $$ 1= \frac{1}{n_1}+\cdots+\frac{1}{n_k},$$
+>
 > where $1\leq n_1\lt \cdots\lt n_k$ are distinct integers. Find good estimates for $F(k)$.
 
 ```lean
@@ -40,15 +42,19 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > The current best bounds known are
+>
 > $$2^{c^{\frac{k}{\log k}}}\leq F(k) \leq c_0^{(\frac{1}{5}+o(1))2^k},$$
+>
 > where $c>0$ is some absolute constant and $c_0=1.5979102\ldots$ is the square of the 'Vardi
 > constant' $1.26408\cdots$. The lower bound is due to Konyagin [Ko14] and the upper bound to
 > Elsholtz and Planitzer [ElPl21]. (erdosproblems.com gives $c_0=1.26408\cdots$;
 > [ElPl21, Remark 3] gives $c_0=1.5979102\ldots$.)
 >
 > [Ko14, Theorem 1] states the lower bound in the explicit form
+>
 > $$F(k) \geq \exp\left(\exp\left(\left(\frac{(\log 2)(\log 3)}{3}+o(1)\right)
 > \frac{k}{\log k}\right)\right) \quad (k \to \infty),$$
+>
 > which is the statement formalised here.
 
 ```lean
@@ -64,7 +70,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > The current best bounds known are
+>
 > $$2^{c^{\frac{k}{\log k}}}\leq F(k) \leq c_0^{(\frac{1}{5}+o(1))2^k},$$
+>
 > where $c>0$ is some absolute constant and $c_0=1.5979102\ldots$ is the square of the 'Vardi
 > constant' $1.26408\cdots$. The lower bound is due to Konyagin [Ko14] and the upper bound to
 > Elsholtz and Planitzer [ElPl21]. (erdosproblems.com gives $c_0=1.26408\cdots$;

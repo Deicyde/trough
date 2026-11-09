@@ -34,8 +34,10 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > Bui, Pratt, and Zaharescu [BPZ24] proved that the distribution of $t_n$ continues to follow
 > $P(n)$, in that for any fixed $c\in (0,1]$
+>
 > $$\lim_{x\to \infty}\frac{\lvert \{ n\leq x : t_n\leq n^c\}\rvert}{x}
 >   = \lim_{x\to \infty}\frac{\lvert \{ n\leq x : P(n)\leq n^c\}\rvert}{x}.$$
+>
 > The statement below is that the difference of the two counting functions is $o(x)$.
 >
 > This was formalized in Lean by Codex.
@@ -85,6 +87,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos841/Core.lean#L16105](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos841/Core.lean#L16105).
 
 > Bui, Pratt, and Zaharescu [BPZ24] proved that for at least $x^{1-o(1)}$ many $n\leq x$ we have
+>
 > $$t_n \leq \exp(O(\sqrt{\log n\log\log n})).$$
 >
 > This was formalized in Lean by Codex.
@@ -103,6 +106,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos841/LowerBound.lean#L3166](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos841/LowerBound.lean#L3166).
 
 > Bui, Pratt, and Zaharescu [BPZ24] proved that for all non-square $n$
+>
 > $$t_n \gg (\log\log n)^{6/5}(\log\log\log n)^{-1/5}.$$
 >
 > This was formalized in Lean by Codex.

@@ -37,6 +37,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Equivalently, writing $\mathrm{RT}_3(n, K_5, m)$ for the maximum number of edges of a
 > $K_5$-free graph on $n$ vertices in which every triangle-free vertex set has fewer than $m$
 > vertices (the *triangle Ramsey–Turán number*), is
+>
 > $$\delta_3(5) = \lim_{\epsilon \to 0} \lim_{n \to \infty}
 >   \frac{\mathrm{RT}_3(n, K_5, \epsilon n)}{n^2} = 0?$$
 >

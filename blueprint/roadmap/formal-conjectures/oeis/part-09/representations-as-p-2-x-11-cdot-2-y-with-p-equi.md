@@ -9,6 +9,7 @@ statement: formalized
 
 > Number of ways to write the $n$-th positive odd integer in the form $p + 2^x + 11 \cdot 2^y$
 > with $p$ a prime congruent to $1 \bmod 6$ and $x, y$ positive integers.
+>
 > $$a(n) = \left|\left\{(p, x, y) : p + 2^x + 11 \cdot 2^y = 2n - 1 \text{ with } p \text{ prime},
 > p \equiv 1 \pmod 6, x, y \in \mathbb{Z}^+\right\}\right|.$$
 >

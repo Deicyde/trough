@@ -24,7 +24,9 @@ Open: stated without proof.
 
 > Let $\epsilon>0$ and $\omega(n)$ count the number of distinct prime factors of $n$.
 > Are there infinitely many values of $n$ such that
+>
 > $$\omega(n-k) < (1+\epsilon)\frac{\log k}{\log\log k}$$
+>
 > for all $k\lt n$ which are sufficiently large depending on $\epsilon$ only?
 
 ```lean
@@ -42,7 +44,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here; a Lean proof is at [https://github.com/AItoBit/erdos-679-additive-refutation/blob/4a53d358d1b7ade35d6f696f501c99b4d88c9e4c/Solution.lean](https://github.com/AItoBit/erdos-679-additive-refutation/blob/4a53d358d1b7ade35d6f696f501c99b4d88c9e4c/Solution.lean).
 
 > Can one show the stronger version with
+>
 > $$\omega(n-k) < \frac{\log k}{\log\log k}+O(1)$$
+>
 > is false?
 >
 > DottedCalculator disproved this strengthening. For every additive constant $C$ and cutoff $K$,

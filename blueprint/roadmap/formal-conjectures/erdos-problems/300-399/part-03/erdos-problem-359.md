@@ -50,7 +50,11 @@ Open: stated without proof.
 
 > Suppose monotone sequence $A$ satisfies the following: `A 0 = 1` and for all `j`, `A (j + 1)` is the
 > smallest natural number that cannot be written as a sum of consecutive terms of `A 0, ..., A j`.
-> Then it is conjectured that $$a_k ~ \frac{k \log k}{\log \log k}$$.
+> Then it is conjectured that
+>
+> $$a_k ~ \frac{k \log k}{\log \log k}$$
+>
+> .
 
 ```lean
 theorem erdos_359.variants.isGoodFor_1_asymptotic (A : ℕ → ℕ) (hA : IsGoodFor A 1) :

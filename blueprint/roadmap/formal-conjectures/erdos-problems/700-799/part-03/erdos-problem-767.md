@@ -30,7 +30,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $g_k(n)$ be the maximal number of edges possible on a graph with $n$ vertices which does not
 > contain a cycle with $k$ chords incident to a vertex on the cycle. Is it true that
+>
 > $$g_k(n)=(k+1)n-(k+1)^2$$
+>
 > for $n$ sufficiently large?
 >
 > The answer is yes: the conjectured equality was proved for $n\geq 3k+3$ by Jiang [Ji04].

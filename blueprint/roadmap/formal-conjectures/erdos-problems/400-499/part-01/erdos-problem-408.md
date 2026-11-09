@@ -38,7 +38,9 @@ Open: stated without proof.
 
 > Let $\phi(n)$ be the Euler totient function and $\phi_k(n)$ be the iterated $\phi$ function, so
 > that $\phi_1(n)=\phi(n)$ and $\phi_k(n)=\phi(\phi_{k-1}(n))$. Let
+>
 > $$f(n) = \min\{k : \phi_k(n)=1\}.$$
+>
 > Does $f(n)/\log n$ have a distribution function?
 >
 > We ask for a distribution function $F$ (non-decreasing, with $F(-\infty) = 0$ and
@@ -81,8 +83,10 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Pillai [Pi29] proved that, for all $n \geq 2$,
+>
 > $$\left\lfloor \frac{\log n - \log 2}{\log 3} \right\rfloor + 1 \leq f(n) \leq
 >   \left\lfloor \frac{\log n}{\log 2} \right\rfloor + 1.$$
+>
 > These are Theorems I and III of [Pi29]; Pillai's function $R(n)$ is the least $r$ with
 > $\phi_r(n) = 1$, which is $f(n)$. The lower bound is attained at $n = 2 \cdot 3^k$, and
 > $f(2^k) = k$ (`Erdos408.f_two_pow`), so the upper bound cannot be replaced by $f(n) < \log_2 n$.

@@ -25,6 +25,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $m_1\leq\cdots\leq m_k$ and $n$ be sufficiently large. If $T$ is a tree on $n$ vertices
 > and $G$ is the complete multipartite graph with vertex class sizes $m_1,\ldots,m_k$ then prove that
+>
 > $$R(T,G)\leq (\chi(G)-1)(R(T,K_{m_1,m_2})-1)+m_1.$$
 >
 > This problem is #16 in Ramsey Theory in the graphs problem collection.

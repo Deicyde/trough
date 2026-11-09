@@ -11,12 +11,22 @@ statement: formalized
 > or equivalently, the number of antichains (Sperner families) in the Boolean lattice `2^[n]`.
 >
 > For example,
+>
 > $$M ( 0 ) = 2 , M ( 1 ) = 3 , M ( 2 ) = 6 , and M ( 3 ) = 20 .$$
+>
 > The first few values grew slowly:
-> $$M ( 4 ) = 168 , M ( 5 ) = 7581$$,
+>
+> $$M ( 4 ) = 168 , M ( 5 ) = 7581$$
+>
+> ,
 > but then rapidly:
-> $$M ( 6 ) = 7828354 , M ( 7 ) = 2414682040998 , M ( 8 ) = 56130437228687557907788$$, and
+>
+> $$M ( 6 ) = 7828354 , M ( 7 ) = 2414682040998 , M ( 8 ) = 56130437228687557907788$$
+>
+> , and
+>
 > $$M ( 9 ) = 286386577668298411128469151667598498812366$$
+>
 > (computed in 2023).
 >
 > We formalize two definitions:
@@ -81,10 +91,12 @@ Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinat
 Solved: stated here without proof.
 
 > Kisielewicz (1988) proved the following arithmetic formula for the Dedekind numbers:
+>
 > $$
 >   M(n) = \sum_{k=0}^{2^{2^n}}\prod_{j = 1}^{2 ^ n - 1}\prod_{i = 0}^{j - 1} \left(
 >     1 - b_i^kb_j^k \prod_{m = 0}^{\log_2 i} (1 - b_m^i + b_m^ib_m^j)\right),
 > $$
+>
 > where $b_i^k$ is the $i$-th bit of $k$. However, this formula is not computationally
 > efficient for large $n$.
 

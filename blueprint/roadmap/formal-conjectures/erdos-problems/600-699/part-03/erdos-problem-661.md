@@ -31,6 +31,7 @@ Open: stated without proof.
 
 > Are there, for all large $n$, some points $x_1,\ldots,x_n,y_1,\ldots,y_n\in \mathbb{R}^2$ such that
 > the number of distinct distances $d(x_i,y_j)$ is
+>
 > $$o\left(\frac{n}{\sqrt{\log n}}\right)?$$
 >
 > We require all $2n$ points to be distinct; without any distinctness one could take all points

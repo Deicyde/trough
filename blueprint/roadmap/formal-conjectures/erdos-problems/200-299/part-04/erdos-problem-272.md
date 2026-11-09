@@ -48,6 +48,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Szabo showed that the maximal $t$ is equal to
+>
 > $$
 >   \frac{N^2}{2} + O(N^{5/3}\log^3N).
 > $$
@@ -65,6 +66,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > Szabo asks whether the maximal $t$ is given by
+>
 > $$
 >   \frac{N^2}{2} + O(N)
 > $$

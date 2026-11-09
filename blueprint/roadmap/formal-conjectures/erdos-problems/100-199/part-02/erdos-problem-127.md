@@ -26,7 +26,9 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos127.lean#L585](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos127.lean#L585).
 
 > Let $f(m)$ be maximal such that every graph with $m$ edges must contain a bipartite graph with
+>
 > $$\geq \frac{m}{2}+\frac{\sqrt{8m+1}-1}{8}+f(m)$$
+>
 > edges. Is there an infinite sequence of $m_i$ such that $f(m_i)\to \infty$?
 >
 > Conjectured by Erdős, Kohayakava, and Gyárfás [Er97b]. Edwards [Ed73] proved that $f(m)\geq 0$

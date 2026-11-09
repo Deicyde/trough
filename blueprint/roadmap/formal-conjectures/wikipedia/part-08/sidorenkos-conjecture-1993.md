@@ -135,7 +135,9 @@ Open: stated without proof.
 >
 > For every finite undirected tree $T$, there exists an orientation $\vec{T}$ of its edges such that
 > for any finite tournament $G$, the homomorphism density satisfies:
+>
 > $$ t_{\vec{T}}(G) \le 2^{-e(T)} $$
+>
 > where $e(T)$ is the total number of edges in $T$.
 
 ```lean
@@ -160,7 +162,9 @@ Open: stated without proof.
 >
 > For every finite undirected tree $T$, there exists an orientation $\vec{T}$ of its edges such that
 > for every tournamenton $W : [0, 1]^2 \to [0, 1]$, the homomorphism density satisfies:
+>
 > $$ t_{\vec{T}}(W) \le 2^{-e(T)} $$
+>
 > where $e(T)$ is the total number of edges in $T$.
 
 ```lean

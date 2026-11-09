@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ counts the number of positive integers $k < n$ such that
 > $n^2 - \pi(k n)$ is prime, where $\pi(x)$ is the prime counting function:
+>
 > $$a(n) = |\{0 < k < n : n^2 - \pi(k n) \text{ is prime}\}|$$
 >
 > *References:*

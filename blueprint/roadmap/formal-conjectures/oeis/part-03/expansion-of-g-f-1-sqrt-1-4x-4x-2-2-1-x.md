@@ -8,6 +8,7 @@ statement: formalized
 # Expansion of g.f. $(1-\sqrt{1-4x-4x^2})/(2(1+x))$
 
 > The $n$-th term $a(n)$ is given by
+>
 > $$a(n) = \sum_{k=0}^{n-1} \frac{1}{k+1} \binom{2k}{k} \binom{k}{n-1-k}$$
 >
 > *References:*

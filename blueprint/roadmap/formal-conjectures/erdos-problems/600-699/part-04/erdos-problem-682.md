@@ -24,7 +24,9 @@ The file states 3 research or textbook statements: 2 solved and 1 textbook resul
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos682.lean#L5018](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos682.lean#L5018).
 
 > Is it true that for almost all $n$ there exists some $m\in (p_n,p_{n+1})$ such that
+>
 > $$p(m) \geq p_{n+1}-p_n,$$
+>
 > where $p(m)$ denotes the least prime factor of $m$?
 >
 > This was solved in the affirmative by Gafni and Tao [GaTa25].
@@ -44,6 +46,7 @@ Solved: stated here without proof.
 
 > Gafni and Tao [GaTa25, Theorem 1.1] proved that the number of exceptional gaps
 > $(p_n,p_{n+1})$ with $p_n\in [X,2X]$ is
+>
 > $$\ll \frac{X}{(\log X)^2}.$$
 
 ```lean
@@ -61,7 +64,9 @@ Textbook result, stated without proof. A Lean proof is at [https://github.com/pl
 
 > Erdős first thought this should be true for all large $n$, but found a (conditional)
 > counterexample: Dickson's conjecture says there are infinitely many $d$ such that
+>
 > $$2183+30030d\textrm{ and }2201+30030d$$
+>
 > are both prime, and then they must necessarily be consecutive primes. These give a counterexample
 > since $30030=2\cdot 3 \cdot 5\cdot 7\cdot 11\cdot 13$ and every integer in $[2184,2200]$ is
 > divisible by at least one of these primes.

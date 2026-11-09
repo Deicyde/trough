@@ -30,10 +30,13 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $N(X,\delta)$ denote the maximum number of points $P_1,\ldots,P_n$ which can be chosen in a
 > circle of radius $X$ such that
+>
 > $$\| \lvert P_i-P_j\rvert \| \geq \delta$$
+>
 > for all $1\leq i\lt j\leq n$. (Here $\|x\|$ is the distance from $x$ to the nearest integer.)
 >
 > Is there some $\delta>0$ such that
+>
 > $$\lim_{X\to \infty}N(X,\delta)=\infty?$$
 >
 > Graham proved this is true, and in fact $N(X,1/10)> \frac{\log X}{10}$. This was substantially

@@ -30,9 +30,13 @@ The file states 6 research or textbook statements: 3 open and 3 solved. It also 
 Open: stated without proof.
 
 > If $\tau(n)$ counts the number of divisors of $n$ then let
+>
 > $$F(f,n)=\frac{\tau((n+\lfloor f(n)\rfloor)!)}{\tau(n!)}.$$
+>
 > Is it true that
+>
 > $$\lim_{n\to \infty}F((\log n)^C,n)=\infty$$
+>
 > for large $C$?
 >
 > "For large $C$" means for all sufficiently large real $C$. Since $(\log n)^C$ increases with $C$
@@ -101,7 +105,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Erdős, Graham, Ivić and Pomerance proved [EGIP96, Corollary 2] that for infinitely many $n$,
+>
 > $$K(n) > \frac{\log n \cdot \log\log n \cdot \log\log\log\log n}{9(\log\log\log n)^3},$$
+>
 > with $K(n)$ as in the module docstring. Equivalently,
 > $F(f,n) < 2$ for infinitely many $n$, where $f(n)$ is the right-hand side.
 

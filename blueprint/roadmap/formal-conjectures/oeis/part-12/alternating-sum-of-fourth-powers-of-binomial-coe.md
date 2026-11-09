@@ -8,6 +8,7 @@ statement: formalized
 # Alternating sum of fourth powers of binomial coefficients
 
 > The sequence is defined by
+>
 > $$a(n) = \sum_{k=0}^n \binom{n}{k}^4 (-1)^k.$$
 >
 > *References:*

@@ -44,7 +44,9 @@ Open: stated without proof.
 
 > Let $f(n;r,k)$ be the maximal number of edges in an $r$-uniform hypergraph which contains no set of $k$ many independent edges.
 >
-> For all $r\geq 3$, $$f(n;r,k)=\max\left(\binom{rk-1}{r}, \binom{n}{r}-\binom{n-k+1}{r}\right).$$
+> For all $r\geq 3$,
+>
+> $$f(n;r,k)=\max\left(\binom{rk-1}{r}, \binom{n}{r}-\binom{n-k+1}{r}\right).$$
 >
 > Note: the source states the formula with no range on `n` or `k`, but some restriction
 > is needed: e.g. for `r = 3`, `k = 2`, `n = 4` no two disjoint triples fit in `4`

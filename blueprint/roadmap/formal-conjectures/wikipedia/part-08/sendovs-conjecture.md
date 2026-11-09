@@ -25,7 +25,9 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/teorth/sendov/blob/1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d/Sendov/Conjecture.lean#L156-L167](https://github.com/teorth/sendov/blob/1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d/Sendov/Conjecture.lean#L156-L167).
 
 > **Sendov's conjecture** states that for a polynomial
+>
 > $$f(z)=(z-r_{1})\cdots (z-r_{n}),\qquad (n\geq 2)$$
+>
 > with all roots $r_1, ..., r_n$ inside the closed unit disk $|z| ≤ 1$, each of the $n$ roots is at a
 > distance no more than $1$ from at least one critical point.
 
@@ -40,7 +42,9 @@ Category `research solved`; AMS [12 Field theory and polynomials](../../by-subje
 Solved: stated here without proof.
 
 > **Sendov's conjecture** states that for a polynomial
+>
 > $$f(z)=(z-r_{1})\cdots (z-r_{n}),\qquad (n\geq 2)$$
+>
 > with all roots $r_1, ..., r_n$ inside the closed unit disk $|z| ≤ 1$, each of the $n$ roots is at a
 > distance no more than $1$ from at least one critical point.
 >
@@ -58,7 +62,9 @@ Category `research solved`; AMS [12 Field theory and polynomials](../../by-subje
 Solved: stated here without proof.
 
 > **Sendov's conjecture** states that for a polynomial
+>
 > $$f(z)=(z-r_{1})\cdots (z-r_{n}),\qquad (n\geq 2)$$
+>
 > with all roots $r_1, ..., r_n$ inside the closed unit disk $|z| ≤ 1$, each of the $n$ roots is at a
 > distance no more than $1$ from at least one critical point.
 >

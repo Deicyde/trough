@@ -28,9 +28,13 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $B\subseteq\mathbb{N}$ be an additive basis of order $k$ with $0\in B$. Is it true that for
 > every $A\subseteq\mathbb{N}$ we have
+>
 > $$d_s(A+B)\geq \alpha+\frac{\alpha(1-\alpha)}{k},$$
+>
 > where $\alpha=d_s(A)$ and
+>
 > $$d_s(A) = \inf \frac{\lvert A\cap\{1,\ldots,N\}\rvert}{N}$$
+>
 > is the Schnirelmann density?
 >
 > Erdős [Er36c] proved this is true with $k$ replaced by $2k$ in the denominator (in a stronger form
@@ -38,6 +42,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > Ruzsa has observed that this follows immediately from the stronger fact proved by Plünnecke
 > [Pl70] that (under the same assumptions, and for $\alpha>0$)
+>
 > $$d_S(A+B)\geq \alpha^{1-1/k}.$$
 
 ```lean

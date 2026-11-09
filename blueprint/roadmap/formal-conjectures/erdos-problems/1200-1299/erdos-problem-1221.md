@@ -25,17 +25,26 @@ Open: stated without proof.
 
 > Let $a=(a_1,\ldots,a_n)$ be points, ordered consecutively, around the circle (normalised to have
 > circumference $1$). Let
+>
 > $$M_r(a)=\max_r \lvert a_{i+r}-a_i\rvert$$
+>
 > and
+>
 > $$m_r(a)=\min_r \lvert a_{i+r}-a_i\rvert,$$
+>
 > where the indices are interpreted in a cyclic fashion and the distance is around the circle (in
 > other words, the maximum and minimum distance between $r$-consecutive points).
 >
 > Let
+>
 > $$\Lambda_r=\inf_a \limsup_n n M_r(a_1,\ldots,a_n),$$
+>
 > $$\lambda_r = \sup_a \liminf_n nm_r(a_1,\ldots,a_n),$$
+>
 > and
+>
 > $$\mu_r=\inf_a \limsup_n \frac{M_r(a)}{m_r(a)},$$
+>
 > where the outer $\inf/\sup$ is over all infinite sequences $a=(a_1,\ldots)$.
 >
 > Is it true that $r(\Lambda_r-1)$, $r(1-\lambda_r)$, and $r(\mu_r-1)$ tend to infinity as
@@ -63,17 +72,26 @@ Open: stated without proof.
 
 > Let $a=(a_1,\ldots,a_n)$ be points, ordered consecutively, around the circle (normalised to have
 > circumference $1$). Let
+>
 > $$M_r(a)=\max_r \lvert a_{i+r}-a_i\rvert$$
+>
 > and
+>
 > $$m_r(a)=\min_r \lvert a_{i+r}-a_i\rvert,$$
+>
 > where the indices are interpreted in a cyclic fashion and the distance is around the circle (in
 > other words, the maximum and minimum distance between $r$-consecutive points).
 >
 > Let
+>
 > $$\Lambda_r=\inf_a \limsup_n n M_r(a_1,\ldots,a_n),$$
+>
 > $$\lambda_r = \sup_a \liminf_n nm_r(a_1,\ldots,a_n),$$
+>
 > and
+>
 > $$\mu_r=\inf_a \limsup_n \frac{M_r(a)}{m_r(a)},$$
+>
 > where the outer $\inf/\sup$ is over all infinite sequences $a=(a_1,\ldots)$.
 >
 > Is it true that $r(\Lambda_r-1)$, $r(1-\lambda_r)$, and $r(\mu_r-1)$ tend to infinity as
@@ -95,17 +113,26 @@ Open: stated without proof.
 
 > Let $a=(a_1,\ldots,a_n)$ be points, ordered consecutively, around the circle (normalised to have
 > circumference $1$). Let
+>
 > $$M_r(a)=\max_r \lvert a_{i+r}-a_i\rvert$$
+>
 > and
+>
 > $$m_r(a)=\min_r \lvert a_{i+r}-a_i\rvert,$$
+>
 > where the indices are interpreted in a cyclic fashion and the distance is around the circle (in
 > other words, the maximum and minimum distance between $r$-consecutive points).
 >
 > Let
+>
 > $$\Lambda_r=\inf_a \limsup_n n M_r(a_1,\ldots,a_n),$$
+>
 > $$\lambda_r = \sup_a \liminf_n nm_r(a_1,\ldots,a_n),$$
+>
 > and
+>
 > $$\mu_r=\inf_a \limsup_n \frac{M_r(a)}{m_r(a)},$$
+>
 > where the outer $\inf/\sup$ is over all infinite sequences $a=(a_1,\ldots)$.
 >
 > Is it true that $r(\Lambda_r-1)$, $r(1-\lambda_r)$, and $r(\mu_r-1)$ tend to infinity as
@@ -142,7 +169,9 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here without proof.
 
 > De Bruijn and Erdős [dBEr49, (3.3)] proved that, for any $r\geq 1$,
+>
 > $$\Lambda_r \geq \frac{1}{\log(1+1/r)}.$$
+>
 > Here $\Lambda_r$ is as in `bigLambda`, with no normalisation by $r$.
 
 ```lean
@@ -157,7 +186,9 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here without proof.
 
 > De Bruijn and Erdős [dBEr49, (4.3)] proved that, for any $r\geq 1$,
+>
 > $$\lambda_r \leq \frac{r}{r+1}\frac{1}{\log(1+1/r)}.$$
+>
 > Here $\lambda_r$ is as in `smallLambda`, with no normalisation by $r$.
 
 ```lean
@@ -173,6 +204,7 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here without proof.
 
 > De Bruijn and Erdős [dBEr49, §1 and (5.7)] proved that, for any $r\geq 1$,
+>
 > $$\mu_r \geq 1+\frac{1}{r}.$$
 
 ```lean

@@ -11,6 +11,7 @@ statement: formalized
 > $a_p(E)/(2\sqrt{p})$ of a non-CM elliptic curve $E$ over $\mathbb{Q}$, as $p$ ranges over
 > the primes of good reduction: they equidistribute in $[-1,1]$ with respect to the
 > **Sato–Tate measure**
+>
 > $$
 > \frac{2}{\pi}\sqrt{1-x^2}\,dx.
 > $$
@@ -60,9 +61,11 @@ Solved: stated here without proof.
 > **The Sato–Tate conjecture**: for a non-CM elliptic curve $E$ over $\mathbb{Q}$ and
 > $-1 \le a \le b \le 1$, the proportion of primes $p < N$ whose normalized coefficient
 > belongs to $[a,b]$ tends to
+>
 > $$
 > \frac{2}{\pi}\int_a^b \sqrt{1-x^2}\,dx
 > $$
+>
 > as $N \to \infty$.
 >
 > The finitely many primes where the supplied equation fails to have integral

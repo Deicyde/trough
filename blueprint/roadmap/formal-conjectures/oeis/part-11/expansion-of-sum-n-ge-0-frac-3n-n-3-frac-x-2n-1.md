@@ -9,6 +9,7 @@ statement: formalized
 
 > The sequence $a(n)$ given by the expansion of
 > $\sum_{n \ge 0} \frac{(3n)!}{n!^3} \frac{x^{2n}}{(1-x)^{3n+1}}$, which satisfies
+>
 > $$a(n) = \sum_{k=0}^n \binom{n}{k} \binom{n-k}{k} \binom{n+k}{k}.$$
 >
 > *References:*

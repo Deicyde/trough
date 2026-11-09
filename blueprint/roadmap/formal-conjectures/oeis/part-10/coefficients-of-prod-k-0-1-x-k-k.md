@@ -8,7 +8,9 @@ statement: formalized
 # Coefficients of $\prod_{k>0} (1 - x^k/k!)$
 
 > The sequence $a(n)$ has exponential generating function
+>
 > $$E(x) = \prod_{k=1}^\infty \left(1 - \frac{x^k}{k!}\right),$$
+>
 > so that $a(n) = n! [x^n] \prod_{k=1}^n \left(1 - \frac{x^k}{k!}\right)$.
 >
 > Since $a(n)$ is a sum of multinomial coefficients with $\pm$ signs, it is always

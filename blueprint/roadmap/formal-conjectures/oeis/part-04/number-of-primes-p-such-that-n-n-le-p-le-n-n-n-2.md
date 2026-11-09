@@ -8,6 +8,7 @@ statement: formalized
 # Number of primes $p$ such that $n^n \le p \le n^n + n^2$
 
 > The sequence $a(n)$ counts the number of prime numbers in the interval $[n^n, n^n + n^2]$:
+>
 > $$a(n) = |\{p \text{ prime} \mid n^n \le p \le n^n + n^2\}|$$
 >
 > *References:*

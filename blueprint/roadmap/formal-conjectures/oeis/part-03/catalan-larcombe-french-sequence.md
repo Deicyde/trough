@@ -8,7 +8,10 @@ statement: formalized
 # Catalan-Larcombe-French sequence
 
 > The Catalan-Larcombe-French sequence defined by $a(0)=1$, $a(1)=8$, and
-> $$n^2 a(n) = 8(3n^2 - 3n + 1) a(n-1) - 128(n-1)^2 a(n-2)$$ for $n \ge 2$.
+>
+> $$n^2 a(n) = 8(3n^2 - 3n + 1) a(n-1) - 128(n-1)^2 a(n-2)$$
+>
+> for $n \ge 2$.
 >
 > *References:*
 > - [A053175](https://oeis.org/A053175)

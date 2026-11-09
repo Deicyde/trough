@@ -9,7 +9,9 @@ statement: formalized
 
 > Let $A$ be a finite-dimensional Hopf algebra over a field $k$, and view $k$ as an $A$-module
 > through the counit. The cohomology ring
+>
 > $$H^*(A, k) = \mathrm{Ext}^*_A(k, k) = \bigoplus_{n \ge 0} \mathrm{Ext}^n_A(k, k)$$
+>
 > is a graded-commutative $k$-algebra under the Yoneda product. The finite generation conjecture
 > asserts that it is a finitely generated $k$-algebra, and that $\mathrm{Ext}^*_A(k, M)$ is a
 > finitely generated module over it for every finite-dimensional $A$-module $M$. Etingof and Ostrik

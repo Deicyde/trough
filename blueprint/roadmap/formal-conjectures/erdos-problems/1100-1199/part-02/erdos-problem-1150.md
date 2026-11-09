@@ -25,6 +25,7 @@ Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc
 
 > Is there some constant $c > 0$ such that, for all large enough $n$ and all polynomials $P$ of
 > degree $n$ with coefficients in $\{-1, 1\}$,
+>
 > $$\max_{|z|=1} |P(z)| > (1 + c) \sqrt{n}?$$
 >
 > No. This was disproved by an internal OpenAI model in September 2026 [OAI26a]; see the linked
@@ -47,7 +48,9 @@ Textbook result, proved here.
 > coefficients in $\{-1, 1\}$, we have $\max_{|z|=1} |P(z)| \geq \sqrt{n+1}$.
 >
 > This follows from Parseval's identity:
+>
 > $$\frac{1}{2\pi} \int_0^{2\pi} |P(e^{i\theta})|^2 d\theta = \sum_{k=0}^{n} |a_k|^2 = n+1$$
+>
 > since each $|a_k|^2 = 1$. The circle average is bounded by the pointwise supremum squared, so
 > $\max_{|z|=1} |P(z)|^2 \ge n+1$, whence $\max_{|z|=1} |P(z)| \ge \sqrt{n+1}$.
 

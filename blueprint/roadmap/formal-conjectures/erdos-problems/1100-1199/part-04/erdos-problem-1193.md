@@ -25,7 +25,9 @@ Solved: stated here without proof.
 > Let $A\subset \mathbb{N}$ and let $g(n)$ be a non-decreasing function of $n$ which is always $>0$.
 >
 > Is the lower density of
+>
 > $$\{ n : 1_A\ast 1_A(n)=g(n)\}$$
+>
 > always $0$?
 >
 > The answer is trivially no to both questions: indeed if $A=\mathbb{N}$ (assuming $0\in\mathbb{N}$)
@@ -47,7 +49,9 @@ Solved: stated here without proof.
 > Let $A\subset \mathbb{N}$ and let $g(n)$ be a non-decreasing function of $n$ which is always $>0$.
 >
 > Is the upper density of
+>
 > $$\{ n : 1_A\ast 1_A(n)=g(n)\}$$
+>
 > always $\lt c$ for some constant $c<1$?
 >
 > The answer is trivially no to both questions: indeed if $A=\mathbb{N}$ (assuming $0\in\mathbb{N}$)

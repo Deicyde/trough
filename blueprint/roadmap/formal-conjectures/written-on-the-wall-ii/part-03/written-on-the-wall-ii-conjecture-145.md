@@ -16,7 +16,9 @@ statement: formalized
 > ## Definitions
 >
 > The **local independence minimum** $\mathrm{lMin}(G)$ is:
+>
 > $$\mathrm{lMin}(G) = \min_{v \in V(G)} l(v)$$
+>
 > where $l(v) = \mathrm{indepNeighborsCard}(G, v)$ is the independence number of the
 > neighbourhood of $v$. This is the minimum over all vertices of the local
 > independence number.

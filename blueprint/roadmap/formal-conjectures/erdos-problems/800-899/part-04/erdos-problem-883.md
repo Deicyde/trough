@@ -28,7 +28,9 @@ Open: stated without proof.
 > integers are joined by an edge if they are coprime.
 >
 > Is it true that if
+>
 > $$|A| > \lfloor n/2 \rfloor + \lfloor n/3 \rfloor - \lfloor n/6 \rfloor$$
+>
 > then $G(A)$ contains all odd cycles of length $\leq n/3 + 1$?
 >
 > A problem of Erdős and Sárközy [ErSa97].
@@ -49,7 +51,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Is it true that, for every $\ell\geq 1$, if $n$ is sufficiently large and
+>
 > $$|A| > \lfloor n/2\rfloor + \lfloor n/3\rfloor - \lfloor n/6\rfloor$$
+>
 > then $G(A)$ must contain a complete $(1,\ell,\ell)$ tripartite graph on $2\ell+1$ vertices?
 >
 > The second question was solved by Sárközy [Sa99], who proved this with

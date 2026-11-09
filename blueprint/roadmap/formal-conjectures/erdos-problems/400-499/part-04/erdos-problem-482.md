@@ -29,7 +29,11 @@ The file states 4 research or textbook statements: 4 solved.
 
 Solved: stated here; a Lean proof is at [https://github.com/gotrevor/lean-gallery/blob/a28a487968d989b24c9dde9b1958aa5b92c6fccb/LeanGallery/NumberTheory/Erdos482/Statement.lean#L46-L49](https://github.com/gotrevor/lean-gallery/blob/a28a487968d989b24c9dde9b1958aa5b92c6fccb/LeanGallery/NumberTheory/Erdos482/Statement.lean#L46-L49).
 
-> Define a sequence by $a_1=1$ and $$a_{n+1}=\lfloor\sqrt{2}(a_n+1/2)\rfloor$$ for $n\geq 1$.
+> Define a sequence by $a_1=1$ and
+>
+> $$a_{n+1}=\lfloor\sqrt{2}(a_n+1/2)\rfloor$$
+>
+> for $n\geq 1$.
 > The difference $a_{2n+1}-2a_{2n-1}$ is the $n$th digit in the binary expansion of $\sqrt{2}$.
 >
 > Find similar results for $\theta=\sqrt{m}$, and other algebraic numbers.

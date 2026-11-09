@@ -26,9 +26,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $f(z)=\prod_{i=1}^n(z-z_i)\in\mathbb{C}[x]$ where $\lvert z_i\rvert\leq 1$ for all $i$.
 > If $\Lambda(f)$ is the maximum of the lengths of the boundaries of the connected components of
+>
 > $$
 > \{ z: \lvert f(z)\rvert<1\}
 > $$
+>
 > then determine the infimum of $\Lambda(f)$.
 >
 > A problem of Erdős, Herzog, and Piranian [EHP58].

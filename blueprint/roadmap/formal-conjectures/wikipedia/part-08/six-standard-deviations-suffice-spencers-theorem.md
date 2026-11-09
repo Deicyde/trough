@@ -10,7 +10,9 @@ statement: formalized
 > Spencer's theorem in discrepancy theory: for every $n$ and every family of $n$ subsets
 > $S_1, \dots, S_n$ of $\{1, \dots, n\}$, there is a colouring
 > $\chi : \{1, \dots, n\} \to \{-1, +1\}$ such that
+>
 > $$\left|\sum_{j \in S_i} \chi(j)\right| \le 6\sqrt{n}$$
+>
 > for every $i$.
 >
 > A uniformly random colouring only achieves the bound $O(\sqrt{n \log n})$, so Spencer's

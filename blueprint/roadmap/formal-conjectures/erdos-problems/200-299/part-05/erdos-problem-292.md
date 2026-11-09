@@ -31,7 +31,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > The answer is yes, as proved by Martin [Ma00], who in fact proved that if
 > $B=\mathbb{N}\backslash A$ then, for all large $x$,
+>
 > $$\frac{\lvert B\cap [1,x]\rvert}{x}\asymp \frac{\log\log x}{\log x},$$
+>
 > and also gave an essentially complete description of $B$ as those integers which are small
 > multiples of prime powers.
 >

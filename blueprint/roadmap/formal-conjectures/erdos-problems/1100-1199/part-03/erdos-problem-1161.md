@@ -45,6 +45,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1161.lean#L50](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1161.lean#L50).
 
 > Beker [Be25d, Theorem 1.1] proved that
+>
 > $$\max_{k\geq 1} f_k(n)\sim (n-1)!.$$
 
 ```lean

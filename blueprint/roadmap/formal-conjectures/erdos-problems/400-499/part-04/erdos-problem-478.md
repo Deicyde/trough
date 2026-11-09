@@ -30,7 +30,13 @@ The file states 1 research or textbook statement: 1 open.
 
 Open: stated without proof.
 
-> Let $p$ be a prime and $$A_p = \{ k! \pmod{p} : 1\leq k\lt p\}.$$ Is it true that $$\lvert A_p\rvert \sim (1-\tfrac{1}{e})p?$$
+> Let $p$ be a prime and
+>
+> $$A_p = \{ k! \pmod{p} : 1\leq k\lt p\}.$$
+>
+> Is it true that
+>
+> $$\lvert A_p\rvert \sim (1-\tfrac{1}{e})p?$$
 
 ```lean
 theorem erdos_478 :

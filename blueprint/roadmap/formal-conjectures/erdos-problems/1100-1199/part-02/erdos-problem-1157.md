@@ -24,6 +24,7 @@ Open: stated without proof.
 
 > Let $s,k,r\geq 2$. Let $\mathcal{F}$ be the family of all $r$-uniform hypergraphs with $k$ vertices
 > and $s$ edges. Determine
+>
 > $$\mathrm{ex}_r(n,\mathcal{F}).$$
 
 ```lean

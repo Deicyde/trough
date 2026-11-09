@@ -26,6 +26,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $k\geq 2$. Is it true that there exists an interval $I$ of width $(e-1+o(1))k$ and integers
 > $n_1\lt \cdots\lt n_k\in I$ such that
+>
 > $$1=\frac{1}{n_1}+\cdots+\frac{1}{n_k}?$$
 >
 > The answer is yes, proved by Croot [Cr01].

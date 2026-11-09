@@ -24,7 +24,10 @@ Solved: stated here without proof.
 > **The Erdős discrepancy problem**
 >
 > If $f\colon \mathbb N \rightarrow \{-1, +1\}$ then is it true that for every $C>0$ there
-> exist $d, m \ge 1$ such that $$\left\lvert \sum_{1\leq k\leq m}f(kd)\right\rvert > C?$$
+> exist $d, m \ge 1$ such that
+>
+> $$\left\lvert \sum_{1\leq k\leq m}f(kd)\right\rvert > C?$$
+>
 > This is true, and was proved by Tao [Ta16]
 
 ```lean
@@ -41,7 +44,10 @@ Solved: stated here without proof.
 > **The Erdős discrepancy problem (complex variant)**
 >
 > If $f\colon \mathbb N \rightarrow S^1 ⊆ ℂ$ then is it true that for every $C>0$ there
-> exist $d, m \ge 1$ such that $$\left\lvert \sum_{1\leq k\leq m}f(kd)\right\rvert > C?$$
+> exist $d, m \ge 1$ such that
+>
+> $$\left\lvert \sum_{1\leq k\leq m}f(kd)\right\rvert > C?$$
+>
 > This is true, and was proved by Tao [Ta16]
 
 ```lean

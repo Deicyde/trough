@@ -34,9 +34,13 @@ Open: stated without proof.
 > **Erdős Problem 1167.** Let $r \geq 2$ be finite, $\gamma \geq 2$, and $\lambda$ be an infinite
 > cardinal. Let $\kappa_\alpha > r$ be cardinals for all $\alpha < \gamma$. Is it true
 > that
+>
 > $$2^\lambda \to (\kappa_\alpha + 1)_{\alpha < \gamma}^{r+1}$$
+>
 > implies
+>
 > $$\lambda \to (\kappa_\alpha)_{\alpha < \gamma}^r?$$
+>
 > Here $+$ means cardinal addition, so that $\kappa_\alpha + 1 = \kappa_\alpha$
 > if $\kappa_\alpha$ is infinite.
 >
@@ -98,8 +102,10 @@ Open: stated without proof.
 > **Infinite-target case.** When all $\kappa_\alpha \geq \aleph_0$ are infinite and bounded by
 > $\lambda$, $\kappa_\alpha + 1 = \kappa_\alpha$, so the hypothesis simplifies to a "pure"
 > stepping-down lemma:
+>
 > $$2^\lambda \to (\kappa_\alpha)_{\alpha\lt \gamma}^{r+1} \implies
 >    \lambda \to (\kappa_\alpha)_{\alpha\lt \gamma}^r.$$
+>
 > The condition $\kappa_\alpha \leq \lambda$ is needed to avoid a size obstruction: without it, the
 > conclusion would require a subset of $\lambda$ of size $\kappa_\alpha > \lambda$, which is impossible
 > (see `infinite_targets_needs_bound`).

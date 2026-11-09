@@ -29,7 +29,9 @@ Open: stated without proof.
 
 > Problem 10.8 ($p$-adic Littlewood conjecture). For every real number $\xi$ and
 > every prime number $p$,
+>
 > $$\inf_{q \ge 1} q \cdot \lVert q \xi \rVert \cdot |q|_p = 0,$$
+>
 > where $\lVert \cdot \rVert$ denotes the distance to the nearest integer and
 > $|\cdot|_p$ denotes the $p$-adic absolute value. Posed by de Mathan and
 > Teulié [dMT04].

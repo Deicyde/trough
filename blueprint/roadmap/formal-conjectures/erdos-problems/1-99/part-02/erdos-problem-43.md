@@ -21,6 +21,7 @@ Solved: stated here without proof.
 
 > If $A$ and $B$ are Sidon sets in $\{1,\ldots,N\}$ with
 > $(A-A)\cap(B-B)=\{0\}$, is it true that
+>
 > $$\binom{\lvert A\rvert}{2}+\binom{\lvert B\rvert}{2}\leq\binom{f(N)}{2}+O(1)?$$
 >
 > The answer is no; the Erdős Problems page notes that this follows from the solution to
@@ -45,8 +46,10 @@ Solved: stated here without proof.
 
 > If $A$ and $B$ are equal-sized Sidon sets in $\{1,\ldots,N\}$ with
 > $(A-A)\cap(B-B)=\{0\}$, can the bound be improved to
+>
 > $$\binom{\lvert A\rvert}{2}+\binom{\lvert B\rvert}{2}
 >     \leq (1-c+o(1))\binom{f(N)}{2}$$
+>
 > for some constant $c>0$?
 >
 > The answer is no; the Erdős Problems page records a negative answer due to Barreto.

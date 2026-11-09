@@ -28,7 +28,9 @@ Solved: stated here without proof.
 
 > **Corollary 29 (Fradelizi-Manui-Meyer-Ndiaye, 2026).** For a planar convex body $K$ with a
 > centre of symmetry containing the origin and $p > 1$,
+>
 > $$|K \oplus_p -K| \leq \left(\frac{2\Gamma(1+1/q)^2}{\Gamma(1+2/q)} + 2\right)|K|,$$
+>
 > where $q$ is the Hölder conjugate of $p$.
 
 ```lean

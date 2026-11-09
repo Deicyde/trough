@@ -124,7 +124,11 @@ Category `research open`; AMS [33 Special functions](../../by-subject/part-02/33
 
 Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/Catalan/Results/Conclusions.lean#L11](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/Catalan/Results/Conclusions.lean#L11).
 
-> Is the Catalan constant $$G = \sum_{n=0}^∞ (-1)^n / (2n + 1)^2 \approx 0.91596$$ irrational?
+> Is the Catalan constant
+>
+> $$G = \sum_{n=0}^∞ (-1)^n / (2n + 1)^2 \approx 0.91596$$
+>
+> irrational?
 >
 > This was proved by an internal OpenAI model in September 2026 [OAI26a]; see the linked Lean proof.
 

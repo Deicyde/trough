@@ -25,12 +25,16 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos443.lean](https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos443.lean).
 
 > Let $m,n\geq 1$. What is
+>
 > $$\# \{ k(m-k) : 1\leq k\leq m/2\} \cap \{ l(n-l) : 1\leq l\leq n/2\}?$$
+>
 > Can it be arbitrarily large?
 >
 > This was solved independently by Hegyvári [He25] and Cambie (unpublished), who show that if
 > $m>n$ then the set in question has size
+>
 > $$\leq m^{O(1/\log\log m)},$$
+>
 > and that for any integer $s$ there exist infinitely many pairs $(m,n)$ such that the set in
 > question has size $s$.
 
@@ -46,12 +50,16 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos443.lean](https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos443.lean).
 
 > Let $m,n\geq 1$. What is
+>
 > $$\# \{ k(m-k) : 1\leq k\leq m/2\} \cap \{ l(n-l) : 1\leq l\leq n/2\}?$$
+>
 > Is it $\leq (mn)^{o(1)}$ for all sufficiently large $m,n$?
 >
 > This was solved independently by Hegyvári [He25] and Cambie (unpublished), who show that if
 > $m>n$ then the set in question has size
+>
 > $$\leq m^{O(1/\log\log m)},$$
+>
 > and that for any integer $s$ there exist infinitely many pairs $(m,n)$ such that the set in
 > question has size $s$.
 

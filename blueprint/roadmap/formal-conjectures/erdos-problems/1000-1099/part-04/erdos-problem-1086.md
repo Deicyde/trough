@@ -41,6 +41,7 @@ Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subj
 Solved: stated here without proof.
 
 > Erdős and Purdy [ErPu71] proved
+>
 > $$n^2\log\log n \ll g(n) \ll n^{5/2}.$$
 >
 > This is the lower bound.

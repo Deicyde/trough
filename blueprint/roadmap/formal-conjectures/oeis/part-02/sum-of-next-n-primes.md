@@ -8,7 +8,9 @@ statement: formalized
 # Sum of next $n$ primes
 
 > The sum of the primes in the $n$-th row of the prime number triangle:
+>
 > $$a(n) = \sum_{i = 1 + n(n-1)/2}^{n + n(n-1)/2} p_i$$
+>
 > with $a(0) = 0$.
 >
 > *References:*

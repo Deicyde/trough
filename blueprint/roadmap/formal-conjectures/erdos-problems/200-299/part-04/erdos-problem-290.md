@@ -25,8 +25,10 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/Woett/Lean-files/blob/main/ErdosProblem290.lean](https://github.com/Woett/Lean-files/blob/main/ErdosProblem290.lean).
 
 > Let $a\geq 1$. Must there exist some $b>a$ such that
+>
 > $$\sum_{a\leq n\leq b}\frac{1}{n}=\frac{r_1}{s_1}\textrm{ and }
 > \sum_{a\leq n\leq b+1}\frac{1}{n}=\frac{r_2}{s_2},$$
+>
 > with $(r_i,s_i)=1$ and $s_2\lt s_1$? If so, how does this $b(a)$ grow with $a$?
 >
 > This was resolved in the affirmative by van Doorn [vD24], who proved $b=b(a)$ always exists, and in

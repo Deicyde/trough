@@ -25,6 +25,7 @@ Open: stated without proof.
 
 > Let $N$ be a large integer. For each prime $p$ with $N^{0.51} \leq p < 2N^{0.51}$, pick some
 > residue $a(p) \in \mathbb{Z}/p\mathbb{Z}$. Is it true that
+>
 > $$\#\{n \in [N] : n \equiv a(p) \pmod{p} \text{ for some } p\} \gg N^{1-o(1)}?$$
 
 ```lean

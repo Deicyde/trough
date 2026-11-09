@@ -57,7 +57,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Proved here.
 
 > Perhaps Erdős meant $2^k$, where indeed there is an example for $k=4$:
+>
 > $$1213121412132124.$$
+>
 > Every string of length $2^k$ over $k$ characters contains an abelian square for $k = 2, 3$, but
 > not for $k \geq 4$.
 

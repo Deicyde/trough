@@ -21,9 +21,11 @@ Open: stated without proof.
 
 > Is there a function $f$ with $f(n)\to\infty$ as $n\to\infty$ such that,
 > for all large $n$, there is a composite number $m$ such that
+>
 > $$
 > n + f(n) < m < n + p(m)
 > $$
+>
 > Here $p(m)$ is the least prime factor of $m$.
 
 ```lean

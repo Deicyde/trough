@@ -41,6 +41,7 @@ Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subj
 Solved: stated here without proof.
 
 > Erdős and Purdy [ErPu71] proved
+>
 > $$n^3\log n \ll f(n) \ll n^{7/2}.$$
 >
 > This is the lower bound.
@@ -57,6 +58,7 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Solved: stated here without proof.
 
 > Erdős and Purdy [ErPu71] proved
+>
 > $$n^3\log n \ll f(n) \ll n^{7/2}.$$
 >
 > This is the upper bound.

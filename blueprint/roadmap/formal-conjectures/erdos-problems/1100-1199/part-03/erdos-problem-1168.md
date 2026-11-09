@@ -23,7 +23,9 @@ The file states 2 research or textbook statements: 1 open and 1 solved. It also 
 Open: stated without proof.
 
 > **Erdős Problem 1168.** Prove that
+>
 > $$\aleph_{\omega+1} \not\to (\aleph_{\omega+1}, \underbrace{3, 3, \ldots}_{\aleph_0})^2_{\aleph_0}$$
+>
 > without assuming the generalized continuum hypothesis.
 >
 > A problem of Erdős, Hajnal, and Rado [EHR65]: the negative arrow is known under GCH;

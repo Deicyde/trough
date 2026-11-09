@@ -21,11 +21,14 @@ Open: stated without proof.
 > $\pi_P(n)$ denote the number of primes $p\leq n$ such that $(p, p + m_1, \dots, p + m_k)$
 > forms an admissible prime constellation. Let $w(q; m_1, \dots, m_k)$ denote the
 > number of distinct residues of $0, m_1, \dots, m_k$ modulo $q$, and let
+>
 > $$
 >   C_P = 2 ^ k\prod_{\substack{q\ \text{prime} \\ q\geq 3}}
 >     \frac{1 - \frac{w(q; m_1, \dots, m_k)}{q}}{\left(1 - \frac{1}{q}\right)^{k+1}}.
 > $$
+>
 > Then
+>
 > $$
 >   \pi_P(n)\sim C_P\int_2^n\frac{dt}{\log^{k+1}t}.
 > $$
@@ -42,9 +45,11 @@ Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-num
 Open: stated without proof.
 
 > For integers $x, y \geq 2$,
+>
 > $$
 >   \pi(x + y) \leq \pi(x) + \pi(y),
 > $$
+>
 > where $\pi(z)$ denotes the prime-counting function, giving the number of primes up to
 > and including $z$.
 

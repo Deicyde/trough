@@ -30,10 +30,13 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A\subseteq \{1,\ldots,N\}$ be such that there is no solution to $at=b$ with $a,b\in A$ and
 > the smallest prime factor of $t$ is $>a$. Estimate the maximum of
+>
 > $$\frac{1}{\log N}\sum_{n\in A}\frac{1}{n}.$$
 >
 > This has been solved by Chojecki and GPT-5.4 Pro, who show that for large $N$
+>
 > $$\max_A \sum_{n\in A}\frac{1}{n}=(c+o(1))\log N$$
+>
 > where the maximum is over all $A\subseteq \{1,\ldots,N\}$ with the stated property and
 > $c\approx 0.618\cdots$ is an explicit constant.
 

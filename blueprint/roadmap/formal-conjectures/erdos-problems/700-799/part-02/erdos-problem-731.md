@@ -25,6 +25,7 @@ Open: stated without proof.
 
 > Find some reasonable function $f(n)$ such that, for almost all integers $n$, the least integer
 > $m$ such that $m\nmid \binom{2n}{n}$ satisfies
+>
 > $$m\sim f(n).$$
 >
 > Here "almost all" means natural density $1$, and $m \sim f(n)$ means that for every
@@ -43,6 +44,7 @@ Solved: stated here without proof.
 
 > A problem of Erdős, Graham, Ruzsa, and Straus [EGRS75], who say it is 'not hard to show that',
 > for almost all $n$, the minimal such $m$ satisfies
+>
 > $$m=\exp((\log n)^{1/2+o(1)}).$$
 >
 > [EGRS75, (8), p. 91] states this as: for every $\varepsilon>0$, for all $n$ outside a set of

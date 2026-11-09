@@ -31,7 +31,9 @@ The file states 2 research or textbook statements: 2 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos926.lean#L644](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos926.lean#L644).
 
 > Let $k\geq 4$. Is it true that
+>
 > $$\mathrm{ex}(n;H_k) \ll_k n^{3/2},$$
+>
 > where $H_k$ is the graph on vertices $x,y_1,\ldots,y_k,z_1,\ldots,z_{\binom{k}{2}}$, where $x$ is
 > adjacent to all $y_i$ and each pair of $y_i,y_j$ is adjacent to a unique $z_i$.
 >

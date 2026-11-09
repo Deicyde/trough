@@ -22,10 +22,14 @@ Open: stated without proof.
 > with positive leading coefficients that satisfy the Schinzel condition, the number
 > of positive integers $n \leq x$ for which all polynomials $f_i$ are simultaneously prime is
 > asymptotic to:
+>
 > $$\frac{C}{D} \frac{x}{(\log x)^k}$$
+>
 > where $D = \prod_i \deg(f_i)$ and $C$ is the Bateman-Horn constant given by the convergent
 > infinite product:
+>
 > $$C = \prod_{p\in\mathbb{P}} (1 - 1/p)^{-k} (1 - \omega_p/p)$$
+>
 > Here $\omega_p$ is the number of residue classes modulo $p$ for which at least one polynomial
 > vanishes. The product is only conditionally convergent: it is the limit as $N \to \infty$ of the
 > partial products over the primes $p < N$.

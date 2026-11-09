@@ -21,7 +21,9 @@ The file states 2 research or textbook statements: 2 open.
 Open: stated without proof.
 
 > Show that
+>
 > $$R(3,k+1)-R(3,k)\to\infty$$
+>
 > as $k\to \infty$.
 >
 > A problem of Erdős and Sós.
@@ -40,6 +42,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > Similarly, prove or disprove that
+>
 > $$R(3,k+1)-R(3,k)=o(k).$$
 
 ```lean

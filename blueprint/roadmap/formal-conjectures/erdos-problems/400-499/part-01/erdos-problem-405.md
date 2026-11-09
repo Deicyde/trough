@@ -63,6 +63,7 @@ Solved: stated here without proof.
 
 > Yu and Liu [YuLi96] showed that the only solutions to $(p-1)! + a^(p-1) = p^k$
 > for an odd prime p are:
+>
 > $$
 > 2! + 1^2 = 3\\
 > 2! + 5^2 = 3^3\\

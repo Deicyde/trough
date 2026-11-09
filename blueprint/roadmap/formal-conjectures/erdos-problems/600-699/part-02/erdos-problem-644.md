@@ -39,6 +39,7 @@ Open: stated without proof.
 > that for every collection of $r$ of the $A_is$ there is some pair $\{x,y\}$ which intersects all of
 > the $A_j$, then there is some set of size $f(k,r)$ which intersects all of the sets $A_i$. Is it
 > true that
+>
 > $$f(k,7)=(1+o(1))\frac{3}{4}k?$$
 
 ```lean
@@ -54,6 +55,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > Is it true that for any $r\geq 3$ there exists some constant $c_r$ such that
+>
 > $$f(k,r)=(1+o(1))c_rk?$$
 
 ```lean

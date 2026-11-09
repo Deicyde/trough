@@ -47,6 +47,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Main.lean#L12](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Main.lean#L12).
 
 > In [Er80] Erdős asks whether
+>
 > $$ \lim_{k \to \infty} (W(k))^{1/k} = \infty $$
 >
 > Yes. This was proved by an internal OpenAI model in September 2026 [OAI26], which shows
@@ -74,7 +75,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 
 Solved: stated here without proof.
 
-> Gowers [Go01] has proved $$W(k) \leq 2^{2^{2^{2^{2^{k+9}}}}.$$
+> Gowers [Go01] has proved
+>
+> $$W(k) \leq 2^{2^{2^{2^{2^{k+9}}}}.$$
 
 ```lean
 theorem erdos_138.variants.upper (k : ℕ) : W k ≤ 2 ^ (2 ^ (2 ^ 2 ^ 2 ^ (k + 9)))

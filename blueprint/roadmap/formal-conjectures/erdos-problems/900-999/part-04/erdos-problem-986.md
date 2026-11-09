@@ -27,7 +27,9 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos986.lean#L92](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos986.lean#L92).
 
 > For any fixed $s\geq 3$,
+>
 > $$R(s,k) \gg \frac{k^{s-1}}{(\log k)^c}$$
+>
 > for some constant $c=c(s)>0$.
 >
 > According to Chung and Graham [ChGr98] this was first conjectured by Erdős in 1947.

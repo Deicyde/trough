@@ -20,7 +20,9 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Is there a set $A\subseteq \mathbb{N}$ such that, for infinitely many $n$, all of $n-a$
-> are prime for all $a\in A$ with $0 < a < n$ and $$\liminf\frac{\lvert A\cap [1,x]\rvert}{\pi(x)}>0?$$
+> are prime for all $a\in A$ with $0 < a < n$ and
+>
+> $$\liminf\frac{\lvert A\cap [1,x]\rvert}{\pi(x)}>0?$$
 
 ```lean
 theorem erdos_428 :

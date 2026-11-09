@@ -24,11 +24,14 @@ Solved: stated here; a Lean proof is at [https://zenodo.org/records/22638810](ht
 
 > Let $k \geq 3$. Define $g_k(n)$ to be the minimal $N$ such that
 > $\{1, ..., N\}$ contains some $A$ of size $|A| = n$ such that
+>
 > $$
 >   \langle A\rangle = \left\{\sum_{a \in A} \epsilon_a a : \epsilon_a \in\{0, 1\}\right\}
 > $$
+>
 > contains no non-trivial $k$-term arithmetic progression. Estimate $g_k(n)$. In
 > particular, is it true that
+>
 > $$
 >   g_3(n) \gg 3^n
 > $$
@@ -47,6 +50,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > A problem of Erdős and Sárközy who proved
+>
 > $$
 >   g_3(n) \gg \frac{3^n}{n^{O(1)}}.
 > $$

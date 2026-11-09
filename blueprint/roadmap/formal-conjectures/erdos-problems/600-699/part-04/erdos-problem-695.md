@@ -21,6 +21,7 @@ Open: stated without proof.
 
 > Let $q_1 < q_2 < \cdots$ be a sequence of primes such that $q_{i + 1} \equiv 1 \pmod{q_i}$. Is it
 > true that
+>
 > $$
 > \lim_{k \to \infty} q_k^{1/k} = \infty?
 > $$
@@ -41,6 +42,7 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Is there a sequence of primes $q_1 < q_2 < \cdots$ such that $q_{i + 1} \equiv 1 \pmod{q_i}$ and
+>
 > $$
 > q(k) \leq \exp(k (\log k)^{1 + o(1)})?
 > $$

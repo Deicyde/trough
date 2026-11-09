@@ -22,9 +22,11 @@ Open: stated without proof.
 > Let $f_d(n)$ be the minimal $m$ such that any set of $m$ points in $\mathbb{R}^d$ contains a set of
 > $n$ points for which any two determined distances are distinct. Erdős Problem 1088 asks to
 > estimate $f_d(n)$. In particular, is it true that, for every fixed $n \geq 3$,
+>
 > $$
 > f_d(n) = 2^{o(d)}
 > $$
+>
 > as $d \to \infty$?
 >
 > The little-$o$ condition is stated after taking the base-$2$ logarithm.

@@ -57,7 +57,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > A problem of Erdős and Surányi [ErSu59], who proved
+>
 > $$(\log n)^c \ll f(n) \ll n^{1/2}$$
+>
 > for some constant $c>0$.
 >
 > This is the lower bound.
@@ -74,7 +76,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > A problem of Erdős and Surányi [ErSu59], who proved
+>
 > $$(\log n)^c \ll f(n) \ll n^{1/2}$$
+>
 > for some constant $c>0$.
 >
 > This is the upper bound.
@@ -91,6 +95,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > The lower bound here can be improved, using van Doorn's lower bound for [711] from [vD26], to
+>
 > $$\frac{\log n}{\log\log n}\ll f(n).$$
 
 ```lean

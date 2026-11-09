@@ -25,7 +25,9 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here without proof.
 
 > For every fixed $k \geq 2$, Erdős and Graham conjectured that
+>
 > $$g(k,n) \sim \frac{n^2}{k-1}.$$
+>
 > The conjecture was proved by Dixmier [Di90].
 
 ```lean

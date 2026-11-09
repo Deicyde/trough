@@ -27,6 +27,7 @@ Open: stated without proof.
 >
 > Is there a function $f$ such that $f(x)/x\to \infty$ as $x\to \infty$ such that, for all large $C$,
 > if $G$ is a graph with $n$ vertices and $e\geq Cn$ edges then
+>
 > $$\hat{R}(G) > f(C) e?$$
 >
 > Here $\hat{R}(G)$ is `sizeRamsey G G`, and $G$ has at least one vertex (for $n = 0$ the

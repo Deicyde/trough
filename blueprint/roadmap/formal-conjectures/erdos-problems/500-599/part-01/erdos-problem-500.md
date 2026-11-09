@@ -48,6 +48,7 @@ Solved: stated here without proof.
 > A problem of Turán. Turán observed that dividing the vertices into three equal parts
 > $X_1,X_2,X_3$, and taking the edges to be those triples that either have exactly one vertex in
 > each part or two vertices in $X_i$ and one vertex in $X_{i+1}$ (where $X_4=X_1$) shows that
+>
 > $$\mathrm{ex}_3(n,K_4^3)\geq\left(\frac{5}{9}+o(1)\right)\binom{n}{3}.$$
 
 ```lean
@@ -65,7 +66,9 @@ Open: stated without proof.
 > Turán observed that dividing the vertices into three equal parts $X_1,X_2,X_3$, and taking the
 > edges to be those triples that either have exactly one vertex in each part or two vertices in
 > $X_i$ and one vertex in $X_{i+1}$ (where $X_4=X_1$) shows that
+>
 > $$\mathrm{ex}_3(n,K_4^3)\geq\left(\frac{5}{9}+o(1)\right)\binom{n}{3}.$$
+>
 > This is probably the truth.
 
 ```lean
@@ -81,7 +84,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here; a Lean proof is at [https://github.com/taeyool/tetrahedron-turan/blob/28b83b6f215cb886d2abdc89b33fdae3f17a7e3f/LeanFlagAlgebras/Core/Examples/FullSevenConverged/TetrahedronDifferential.lean#L251](https://github.com/taeyool/tetrahedron-turan/blob/28b83b6f215cb886d2abdc89b33fdae3f17a7e3f/LeanFlagAlgebras/Core/Examples/FullSevenConverged/TetrahedronDifferential.lean#L251).
 
 > The historical upper bound
+>
 > $$\mathrm{ex}_3(n,K_4^3)\leq (0.561666+o(1))\binom{n}{3}$$
+>
 > is due to Razborov [Ra10]. (erdosproblems.com gives $0.5611666$ and omits the $o(1)$; without it
 > the bound fails at $n=4$, where $\mathrm{ex}_3(4,K_4^3)=3>0.561666\binom{4}{3}$.)
 >
@@ -106,7 +111,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > The asymptotic form of the question: what is the Turán density
+>
 > $$\pi(K_4^3)=\lim_{n\to\infty}\frac{\mathrm{ex}_3(n,K_4^3)}{\binom{n}{3}}?$$
+>
 > By `erdos_500.variants.lower_bound`, $\pi(K_4^3)\geq\frac{5}{9}$.
 > Turán's conjecture says that $\pi(K_4^3)=\frac{5}{9}$.
 

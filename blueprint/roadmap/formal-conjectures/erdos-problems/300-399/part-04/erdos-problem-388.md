@@ -28,7 +28,9 @@ The file states 3 research or textbook statements: 3 open.
 Open: stated without proof.
 
 > Are there only finitely many solutions of
+>
 > $$\prod_{1\leq i\leq k_1}(m_1+i)=\prod_{1\leq j\leq k_2}(m_2+j)$$
+>
 > with $k_1,k_2>3$ and $m_1+k_1\leq m_2$?
 >
 > Here $m_1, m_2 \geq 0$, so every factor is positive and the condition $m_1 + k_1 \leq m_2$ makes the
@@ -49,7 +51,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > Can one classify all solutions of
+>
 > $$\prod_{1\leq i\leq k_1}(m_1+i)=\prod_{1\leq j\leq k_2}(m_2+j)$$
+>
 > with $k_1,k_2>3$ and $m_1+k_1\leq m_2$?
 >
 > A solution must supply the set of all solutions $(m_1, k_1, m_2, k_2)$. Whether a description of
@@ -69,7 +73,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Open: stated without proof.
 
 > More generally, if $k_1>2$ then for fixed $a$ and $b$ the equation
+>
 > $$a\prod_{1\leq i\leq k_1}(m_1+i)=b\prod_{1\leq j\leq k_2}(m_2+j)$$
+>
 > should have only finitely many solutions.
 >
 > The source states no condition on $a$, $b$, $k_2$ or the position of the blocks, so this is our

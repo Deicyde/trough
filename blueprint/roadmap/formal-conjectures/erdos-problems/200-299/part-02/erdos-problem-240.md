@@ -46,7 +46,9 @@ Solved: stated here without proof.
 
 > Tijdeman [Ti73] resolved this question, proving that, for any $\epsilon>0$, there exists an
 > infinite set of primes $P$ such that, with $a_i$ defined as above,
+>
 > $$a_{i+1}-a_i \gg a_i^{1-\epsilon}.$$
+>
 > ([Ti73, Theorem 7] is stated for $0\lt \epsilon<1$; for $\epsilon\geq 1$ the bound is trivial.)
 
 ```lean
@@ -81,7 +83,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Tijdeman [Ti73] proved that, if $P$ is a finite set of primes, then
+>
 > $$a_{i+1}-a_i \gg \frac{a_i}{(\log a_i)^C}$$
+>
 > for some constant $C>0$ depending on $P$.
 >
 > [Ti73, Theorem 1 and its Corollary] state this for the integers composed of all primes at most

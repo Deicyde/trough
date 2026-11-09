@@ -25,6 +25,7 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos419.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos419.lean).
 
 > If $\tau(n)$ counts the number of divisors of $n$, then what is the set of limit points of
+>
 > $$
 > \frac{\tau((n+1)!)}{\tau(n!)}?
 > $$

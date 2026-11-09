@@ -29,16 +29,22 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > For integers $1\leq a\lt b$ let $D(a,b)$ be the minimal value of $n_k$ such that there exist
 > integers $1\leq n_1\lt \cdots \lt n_k$ with
+>
 > $$\frac{a}{b}=\frac{1}{n_1}+\cdots+\frac{1}{n_k}.$$
+>
 > Estimate $D(b)=\max_{1\leq a\lt b}D(a,b)$. Is it true that
+>
 > $$D(b) \ll b(\log b)^{1+o(1)}?$$
 >
 > Bleicher and Erdős [BlEr76] have shown that $D(b)\ll b(\log b)^2$. If $b=p$ is a prime then
 > $D(p) \gg p\log p$.
 >
 > This was solved by Yokota [Yo88], who proved that
+>
 > $$D(b)\ll b(\log b)(\log\log b)^4(\log\log\log b)^2.$$
+>
 > This was improved by Liu and Sawhney [LiSa24] to
+>
 > $$D(b)\ll b(\log b)(\log\log b)^3(\log\log\log b)^{O(1)}.$$
 
 ```lean

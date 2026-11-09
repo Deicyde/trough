@@ -25,6 +25,7 @@ Solved: stated here without proof.
 
 > If $T$ is a tree which is a bipartite graph with $k$ vertices in one class and $2k$ vertices
 > in the other class then
+>
 > $$R(T)=4k-1.$$
 >
 > This is false: Norin, Sun, and Zhao [NSZ16] have proved that if $T$ is the union of two stars on $k$

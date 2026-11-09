@@ -28,7 +28,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > If $z_1,\ldots,z_n\in \mathbb{C}$ with $\lvert z_i\rvert=1$ then is it true that the probability
 > that
+>
 > $$\lvert \epsilon_1z_1+\cdots+\epsilon_nz_n\rvert \leq \sqrt{2},$$
+>
 > where $\epsilon_i\in \{-1,1\}$ uniformly at random, is $\gg 1/n$?
 >
 > A reverse Littlewood-Offord problem. Erdős originally asked this with $\sqrt{2}$ replaced by $1$,

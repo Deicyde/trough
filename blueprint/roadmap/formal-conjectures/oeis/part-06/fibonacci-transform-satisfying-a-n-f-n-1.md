@@ -8,7 +8,9 @@ statement: formalized
 # Fibonacci transform satisfying $|a(n)| = F(n+1)$
 
 > The sequence $a(n)$ satisfies the linear recurrence relation:
+>
 > $$a(n) = 3a(n-1) - 4a(n-2) + 2a(n-3) - a(n-4)$$
+>
 > with initial terms $a(0)=0, a(1)=1, a(2)=1, a(3)=0$.
 > The sequence takes values in $\mathbb{Z}$.
 >

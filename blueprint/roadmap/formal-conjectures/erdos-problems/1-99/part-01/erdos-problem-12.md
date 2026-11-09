@@ -114,7 +114,9 @@ Solved: stated here without proof.
 
 > An example of an $A$ with the property that there are no distinct $a,b,c \in A$ such that
 > $a \mid (b+c)$ and $b,c > a$ and such that
+>
 > $$\liminf \frac{\lvert A\cap\{1,\ldots,N\}\rvert}{N^{1/2}}\log N > 0$$
+>
 > is given by the set of $p^2$, where $p\equiv 3\pmod{4}$ is prime.
 
 ```lean
@@ -131,7 +133,9 @@ Solved: stated here without proof.
 
 > Let $A$ be a set of natural numbers with the property that there are no distinct $a,b,c \in A$ such
 > that $a \mid (b+c)$ and $b,c > a$. If all elements in $A$ are pairwise coprime then
+>
 > $$\lvert A\cap\{1,\ldots,N\}\rvert \ll N^{2/3}$$
+>
 > for infinitely many $N$.
 
 ```lean
@@ -147,7 +151,9 @@ Solved: stated here without proof.
 
 > Let $A$ be a set of natural numbers with the property that there are no distinct $a,b,c \in A$ such
 > that $a \mid (b+c)$ and $b,c > a$. If all elements in $A$ are pairwise coprime then
+>
 > $$\lvert A\cap\{1,\ldots,N\}\rvert \ll N^{2/3}/\log N$$
+>
 > for infinitely many $N$.
 
 ```lean

@@ -10,8 +10,10 @@ statement: formalized
 > A regular (analytic) function is **$p$-valent** on the unit disk if it assumes each value at most
 > $p$ times there, and some value exactly $p$ times. For such a function $f(z) = \sum_{n \ge 1} b_n z^n$
 > (so $f(0) = 0$), **Goodman's conjecture** (1948) asserts that its coefficients satisfy
+>
 > $$|b_n| \le \sum_{k=1}^{p} \frac{2k (n+p)!}{(p-k)!\,(p+k)!\,(n-p-1)!\,(n^2-k^2)} |b_k|
 > \qquad (n > p).$$
+>
 > This generalises the classical coefficient bounds for univalent functions (the case $p = 1$,
 > where the bound reads $|b_n| \le n\,|b_1|$, i.e. $|b_n| \le n$ under the classical normalisation
 > $b_1 = 1$) to $p$-valent functions. It has been verified in several special cases, including
@@ -32,6 +34,7 @@ Open: stated without proof.
 
 > **Goodman's conjecture.** For every $p$-valent normalised function $f$ on the unit disk and every
 > $n > p$, the $n$-th coefficient is bounded by the Goodman bound:
+>
 > $$|b_n| \le \sum_{k=1}^{p} \frac{2k (n+p)!}{(p-k)!\,(p+k)!\,(n-p-1)!\,(n^2-k^2)} |b_k|.$$
 
 ```lean

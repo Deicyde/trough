@@ -25,7 +25,9 @@ The file states 6 research or textbook statements: 1 open, 3 solved and 2 textbo
 Open: stated without proof.
 
 > **Conjecture (Amdeberhan-Medina-Moll, 2008).** For every integer $n \geq 5$, the value
+>
 > $$x_n = \tan(\arctan 1 + \arctan 2 + \cdots + \arctan n)$$
+>
 > is not an integer.
 
 ```lean

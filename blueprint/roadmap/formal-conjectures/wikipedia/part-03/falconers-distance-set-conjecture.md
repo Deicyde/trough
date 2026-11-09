@@ -9,7 +9,9 @@ statement: formalized
 
 > If $d \ge 2$ and $E \subseteq \mathbb{R}^d$ is compact with $\dim_H E > \frac{d}{2}$, then the
 > distance set
+>
 > $$\{ |x - y| \mid x, y \in E \}$$
+>
 > has positive Lebesgue measure. The restriction $d \ge 2$ is needed; see `falconer_conjecture`.
 >
 > ## References

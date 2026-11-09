@@ -11,6 +11,7 @@ statement: formalized
 > exist a constant $c > 0$ such that every graph on $n$ vertices with at least $(1/8 - c)n^2$
 > edges contains either a $K_4$ or an independent set on at least $n/\log n$ vertices? In the
 > notation of Ramsey–Turán theory this asks whether
+>
 > $$\mathrm{rt}(n; 4, n/\log n) < (1/8 - c)n^2.$$
 >
 > This was disproved by Fox, Loh, and Zhao [FLZ15], who showed that

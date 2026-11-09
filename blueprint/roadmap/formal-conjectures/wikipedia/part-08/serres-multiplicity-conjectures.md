@@ -9,7 +9,9 @@ statement: formalized
 
 > Let $R$ be a regular local ring and let $M$, $N$ be finitely generated $R$-modules such that
 > $M \otimes_R N$ has finite length. Serre defined the intersection multiplicity
+>
 > $$\chi(M, N) = \sum_{i \ge 0} (-1)^i \ell_R(\operatorname{Tor}_i^R(M, N)).$$
+>
 > He proved the dimension inequality $\dim M + \dim N \le \dim R$ for every regular local ring,
 > and conjectured the following three properties:
 >

@@ -33,7 +33,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $\tau(n)$ count the divisors of $n$ and $\tau^+(n)$ count the number of $k$ such that $n$ has a
 > divisor in $[2^k, 2^{k+1})$. Is it true that, for all $\epsilon > 0$,
+>
 > $$ \tau^+(n) < \epsilon \cdot \tau(n) $$
+>
 > for almost all $n$?
 >
 > This is false, and was disproved by Erdős and Tenenbaum [ErTe81], who showed that in fact the upper
@@ -43,8 +45,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Tenenbaum further prove that $\tau^+(n)/\tau(n)$ has a distribution function. Erdős and Graham also
 > asked whether there is a good inequality known for $\sum_{n \leq x} \tau^+(n)$. This was provided by
 > Ford [Fo08] who proved
+>
 > $$ \sum_{n \leq x} \tau^+(n) \asymp x\frac{(\log x)^{1-\alpha}}{(\log\log x)^{3/2}} $$
+>
 > where
+>
 > $$ \alpha = 1-\frac{1+\log\log 2}{\log 2} = 0.08607\cdots. $$
 
 ```lean
@@ -115,7 +120,9 @@ Solved: stated here without proof.
 
 > Erdős and Graham asked whether there is a good inequality for $\sum_{n \le x} \tau^+(n)$. This was
 > answered by Ford [Fo08], who proved
+>
 > $$ \sum_{n \le x} \tau^+(n) \asymp x \cdot \frac{(\log x)^{1 - \alpha}}{(\log\log x)^{3/2}}, $$
+>
 > where $\alpha = 1 - \frac{1 + \log\log 2}{\log 2} = 0.08607\ldots$.
 
 ```lean

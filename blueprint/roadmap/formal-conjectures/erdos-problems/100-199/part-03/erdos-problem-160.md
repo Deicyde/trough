@@ -67,7 +67,9 @@ Solved: stated here without proof.
 
 > The observation of Zachary Hunter in [that question](https://mathoverflow.net/q/410808)
 > coupled with the bounds of Kelley-Meka [KeMe23](https://arxiv.org/abs/2302.05537) imply that
+>
 > $$h(N) \gg \exp(c(\log N)^{\frac 1 {12}})$$
+>
 > for some $c > 0$.
 
 ```lean

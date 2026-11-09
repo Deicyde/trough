@@ -75,7 +75,9 @@ Open: stated without proof.
 > [BMO#2](https://wiki.bbchallenge.org/wiki/Beaver_Math_Olympiad#2._Hydra_and_Antihydra)
 >
 > Antihydra is a sequence starting at 8, and iterating the function
+>
 > $$H(n) = \left\lfloor \frac {3n}2 \right\rfloor.$$
+>
 > The conjecture states that the cumulative number of odd values in this sequence
 > is never more than twice the cumulative number of even values. It is a relatively new open problem
 > with, so it might be solvable, although seems quite hard because of its Collatz-like flavor.

@@ -48,7 +48,11 @@ Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-numbe
 Textbook result, stated without proof.
 
 > It is not hard to prove that the density $\delta_l$ of integers for which $h(n) = l$ exists
-> and satisfies $$\sum_l \delta_l = 1$$.
+> and satisfies
+>
+> $$\sum_l \delta_l = 1$$
+>
+> .
 
 ```lean
 theorem erdos_942.variants.density :

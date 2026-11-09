@@ -29,8 +29,11 @@ Open: stated without proof.
 > Let $F_1$ and $F_2$ be the union of stars. More precisely, let
 > $F_1=\cup_{i\leq s}K_{1,n_i}$ and $F_2=\cup_{j\leq t}K_{1,m_j}$ with
 > $n_1\geq\cdots\geq n_s\geq1$ and $m_1\geq\cdots\geq m_t\geq1$. Prove that
+>
 > $$\hat{R}(F_1,F_2)=\sum_{2\leq k\leq s+t}l_k$$
+>
 > where
+>
 > $$l_k=\max\{n_i+m_j-1:i+j=k\}.$$
 >
 > The unions are vertex-disjoint, and $s,t\geq1$. Lean indices start at zero, so the condition

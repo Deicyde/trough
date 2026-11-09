@@ -96,7 +96,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Let $B \subseteq \mathbb{N}$ be a set of pairwise coprime integers with
+>
 > $$\sum_{b \in B,\ b < x} \frac{1}{b} = o(\log \log x).$$
+>
 > Then $A = \{n : b \nmid n \text{ for all } b \in B\}$ has the translation property.
 > As remarked on erdosproblems.com, this follows from Brun's sieve, and Erdős did not know what
 > happens if the condition on the sum is weakened or dropped.

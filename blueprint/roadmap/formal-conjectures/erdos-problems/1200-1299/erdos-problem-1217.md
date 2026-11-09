@@ -32,8 +32,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > logarithmic density.
 >
 > Must there exist a sequence $n_1\lt \cdots$ such that
+>
 > $$a_{n_i}\mid a_{n_{i+1}}$$
+>
 > for all $i\geq 1$ and
+>
 > $$\limsup_{x\to \infty}\frac{1}{\log\log x}\sum_{a_{n_i}\lt x}1 \geq
 >   \limsup_{x\to \infty} \frac{1}{\log\log x}\sum_{a_n\lt x}\frac{1}{a_n\log a_n}?$$
 >
@@ -73,8 +76,11 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > The set form of [ABLLPSTT26, Theorem 1.6]: if $A \subseteq \mathbb{N}$ has positive upper doubly
 > logarithmic density
+>
 > $$\Delta=\limsup_{x\to\infty}\frac{1}{\log\log x}\sum_{n\in A,\ n\lt x}\frac{1}{n\log n},$$
+>
 > then $A$ contains a strictly increasing infinite divisibility chain $d_0\mid d_1\mid\cdots$ with
+>
 > $$\limsup_{x\to\infty}\frac{1}{\log\log x}\sum_{d_i\lt x}1\geq\Delta.$$
 
 ```lean
@@ -106,9 +112,13 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1217.lean#L66](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1217.lean#L66).
 
 > Erdős, Sárközi, and Szemerédi [ESS66, Theorem 2] proved that if
+>
 > $$\limsup_{x\to \infty}\frac{1}{\log\log x}\sum_{a_n\lt x}\frac{1}{a_n\log a_n}=c>0,$$
+>
 > then there exists such a sequence with
+>
 > $$\limsup_{x\to \infty}\frac{1}{\log\log x}\sum_{a_{n_i}\lt x}1\gg_c 1.$$
+>
 > Here $\gg_c 1$ means a lower bound $\kappa>0$ depending only on $c$.
 
 ```lean

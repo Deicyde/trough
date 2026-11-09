@@ -27,6 +27,7 @@ Solved: stated here; a Lean proof is at [https://github.com/jbaelaw/erdos1219-le
 
 > Let $(n_k)$ be an increasing sequence of integers such that $2^{\aleph_{n_k}}$ is strictly
 > increasing, and $2^{\aleph_{n_0}} > \aleph_\omega$. Is it true that
+>
 > $$\sum_k 2^{\aleph_{n_k}} \to (\aleph_\omega)^2?$$
 >
 > Here $\sum_k 2^{\aleph_{n_k}}$ is the cardinal sum, and the partition relation is the classical

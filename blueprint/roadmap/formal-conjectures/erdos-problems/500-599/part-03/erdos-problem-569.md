@@ -23,7 +23,9 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Let $k\geq 1$. What is the best possible $c_k$ such that
+>
 > $$R(C_{2k+1},H)\leq c_k m$$
+>
 > for any graph $H$ on $m$ edges without isolated vertices?
 >
 > This problem is #34 in Ramsey Theory in the graphs problem collection.

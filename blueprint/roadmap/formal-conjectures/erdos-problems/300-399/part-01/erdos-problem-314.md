@@ -25,13 +25,18 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos314.lean](https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos314.lean).
 
 > Let $n\geq 1$ and let $m$ be minimal such that $\sum_{n\leq k\leq m}\frac{1}{k}\geq 1$. We define
+>
 > $$\epsilon(n) = \sum_{n\leq k\leq m}\frac{1}{k}-1.$$
+>
 > How small can $\epsilon(n)$ be? Is it true that
+>
 > $$\liminf n^2\epsilon(n)=0?$$
 >
 > This is true, and shown by Lim and Steinerberger [LiSt24], who further proved that, for any
 > $\delta>0$, there exist infinitely many $n$ and $m$ such that
+>
 > $$n^2\left\lvert \sum_{n\leq k\leq m}\frac{1}{k}-1\right\rvert\ll \frac{1}{(\log n)^{5/4-\delta}}.$$
+>
 > Erdős and Graham (and also Lim and Steinerberger) believe that the exponent of $2$ is best
 > possible here, in that $\liminf \epsilon(n) n^{2+\delta}=\infty$ for all $\delta>0$.
 

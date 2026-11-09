@@ -34,7 +34,9 @@ Open: stated without proof.
 >
 > If $1=a_1\lt a_2\lt \cdots \lt a_{\phi(n_k)}=n_k-1$ is the sequence of integers coprime to $n_k$, then
 > estimate the smallest even integer not of the form $a_{i+1}-a_i$. Are there
+>
 > $$\gg \max_i (a_{i+1}-a_i)$$
+>
 > many even integers of the form $a_{j+1}-a_j$?
 >
 > This is the first part. A problem of Erdős [Er85c, p. 80], who writes "integer" instead of "even
@@ -58,7 +60,9 @@ Open: stated without proof.
 >
 > If $1=a_1\lt a_2\lt \cdots \lt a_{\phi(n_k)}=n_k-1$ is the sequence of integers coprime to $n_k$, then
 > estimate the smallest even integer not of the form $a_{i+1}-a_i$. Are there
+>
 > $$\gg \max_i (a_{i+1}-a_i)$$
+>
 > many even integers of the form $a_{j+1}-a_j$?
 >
 > This is the second part. We read it as: there is an absolute constant $c > 0$ such that, for all

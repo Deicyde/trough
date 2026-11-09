@@ -85,9 +85,11 @@ Solved: stated here; a Lean proof is at [https://github.com/boonsuan/erdos670/bl
 > Ho [Ho26] showed that the claim fails if $n$ grows with $d$: there exist infinitely many $n$
 > and, with $d = n^2 - n$, a set $A\subset \mathbb{R}^d$ of $n$ points such that all pairwise
 > distances differ by at least $1$, with diameter at most
+>
 > $$
 > \left(1-\frac{1}{\pi^2}+o(1)\right)n^2\approx 0.898n^2.
 > $$
+>
 > Ho's construction uses $n = q + 1$ points in dimension $q^2 + q = n^2 - n$, for every prime power
 > $q$.
 

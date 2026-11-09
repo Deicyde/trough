@@ -26,14 +26,18 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/oeis-a12936
 >
 > Let $c(n) = \prod_{j=1}^n \prod_{k=1}^n (j,k)$ be the numerator.
 > Observe that
+>
 > $$\textrm{ord}(c(n), p) = \left\lfloor \frac{n}{p} \right\rfloor^2 + \left\lfloor \frac{n}{p^2} \right\rfloor^2 + ...$$
+>
 > proven similar to Legendre's formula for $\textrm{ord}(n!, p)$.
 >
 > Next let $d(n) = \prod_{k=1}^n (\lfloor n/k \rfloor!)^k$ be the denominator.
 > Observe that
+>
 > $$\textrm{ord}(d(n), p) = \sum_{k=1}^n k\,\textrm{ord}(\lfloor n/k \rfloor, p) = \sum_{k=1}^n \sum_{r \geq 1} k \left\lfloor \frac{\lfloor n/p^r \rfloor}{k} \right\rfloor.$$
 >
 > Combining the two gives:
+>
 > $$\textrm{ord}(a(n), p) = \sum_{r \geq 1} \sum_{k=1}^n \left(\left\lfloor \frac{n}{p^r} \right\rfloor \textrm{mod } k\right).$$
 >
 > Defining $b(m) = \sum_{k=1}^m m \textrm{ mod } k$, we obtain $\textrm{ord}(a(n), p) = \sum_{r \geq 1} b(\lfloor n/p^r \rfloor)$.

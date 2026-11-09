@@ -20,7 +20,9 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Let $1\leq u_1 < u_2 < \cdots$ be the sequence of integers with at most $2$ prime factors.
-> Is it true that $$\limsup_{k \to \infty} \frac{u_{k+1}-u_k}{\log k}=\infty?$$
+> Is it true that
+>
+> $$\limsup_{k \to \infty} \frac{u_{k+1}-u_k}{\log k}=\infty?$$
 
 ```lean
 theorem erdos_1139 :

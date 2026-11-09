@@ -25,6 +25,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Let $F(n)$ be the maximal size of a family of subsets of $\{1,\ldots,n\}$ such that no set in
 > this family is the union of other members of the family. Is it true that there is a constant
 > $c>0$ such that
+>
 > $$F(n)\sim c \frac{2^n}{n^{1/2}}?$$
 >
 > Hunter observes in the comments that this follows from the solution to [447], which implies
@@ -44,7 +45,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > Erdős and Kleitman proved in unpublished work that
+>
 > $$F(n)\asymp \frac{2^n}{n^{1/2}}.$$
+>
 > ([Er71] has an exponent of $3/2$, but this is presumably a typo.)
 
 ```lean

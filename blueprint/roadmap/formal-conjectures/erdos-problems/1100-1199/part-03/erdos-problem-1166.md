@@ -34,9 +34,13 @@ Solved: stated here without proof.
 > the number of $0\leq l\leq k$ such that $s_l=x$.
 >
 > Let
+>
 > $$F(k)=\{ x: f_k(x) = \max_y f_k(y)\}$$
+>
 > be the set of 'favourite values'. Is it true that
+>
 > $$\left\lvert \bigcup_{k\leq n}F(k)\right\rvert \leq (\log n)^{O(1)}$$
+>
 > almost surely, for all but finitely many $n$?
 >
 > A problem of Erdős and Révész [Va99, 6.78]. The answer is yes. Almost surely there are at most
@@ -67,8 +71,10 @@ Solved: stated here without proof.
 
 > Erdős and Taylor [ErTa60, p. 162] proved that, for the simple random walk on $\mathbb{Z}^2$, if
 > $T_n$ is the maximal number of visits to a point in the first $n$ steps, then almost surely
+>
 > $$\frac{1}{4\pi}\leq\liminf_{n\to\infty}\frac{T_n}{(\log n)^2}
 >   \leq\limsup_{n\to\infty}\frac{T_n}{(\log n)^2}\leq\frac{1}{\pi}.$$
+>
 > They conjectured that the limit exists and equals $1/\pi$, see
 > `erdos_1166.variants.dembo_peres_rosen_zeitouni`.
 >
@@ -93,6 +99,7 @@ Solved: stated here without proof.
 > Dembo, Peres, Rosen and Zeitouni [DPRZ01, Theorem 1.1] proved the conjecture of Erdős and Taylor:
 > for the simple random walk on $\mathbb{Z}^2$, if $T_n^*$ is the maximal number of visits to a
 > point in the first $n$ steps, then almost surely
+>
 > $$\lim_{n\to\infty}\frac{T_n^*}{(\log n)^2}=\frac{1}{\pi}.$$
 >
 > `maxLocalTime` counts the visit at time $0$. Whether this visit is counted changes $T_n^*$ by at

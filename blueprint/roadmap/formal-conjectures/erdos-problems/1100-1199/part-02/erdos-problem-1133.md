@@ -28,7 +28,9 @@ Solved: stated here without proof.
 >
 > For any $x_1,\ldots,x_n\in [-1,1]$ there exist $y_1,\ldots,y_n\in [-1,1]$ such that, if $P$ is a
 > polynomial of degree $m<(1+\epsilon)n$ with $P(x_i)=y_i$ for at least $(1-\epsilon)n$ many
-> $1\leq i\leq n$, then $$\max_{x\in [-1,1]}\lvert P(x)\rvert >C.$$
+> $1\leq i\leq n$, then
+>
+> $$\max_{x\in [-1,1]}\lvert P(x)\rvert >C.$$
 >
 > Yang [Ya26, Theorem 2.1] proved this, including repeated nodes, by taking $\rho=0$.
 

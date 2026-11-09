@@ -32,7 +32,9 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos814.lean#L81](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos814.lean#L81).
 
 > Let $k\geq 2$ and $G$ be a graph with $n\geq k-1$ vertices and
+>
 > $$(k-1)(n-k+2)+\binom{k-2}{2}+1$$
+>
 > edges. Does there exist some $c_k>0$ such that $G$ must contain an induced subgraph on at most
 > $(1-c_k)n$ vertices with minimum degree at least $k$?
 >

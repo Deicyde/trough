@@ -25,13 +25,17 @@ The file states 6 research or textbook statements: 6 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos867.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos867.lean).
 
 > Is it true that if $A=\{a_1\lt \cdots \lt a_t\}\subseteq \{1,\ldots,N\}$ has no solutions to
+>
 > $$a_i+a_{i+1}+\cdots+a_j\in A$$
+>
 > then
+>
 > $$\lvert A\rvert \leq \frac{N}{2}+O(1)?$$
 >
 > In fact this problem is false. Freud [Fr93] constructed a sequence with density $\geq 19/36$.
 > The current best bounds are due to Coppersmith and Phillips [CoPh96], who prove that the
 > maximal size of such an $A$ satisfies
+>
 > $$\frac{13}{24}N -O(1)\leq \lvert A\rvert \leq \left(\frac{2}{3}-\frac{1}{512}\right)N+\log N.$$
 
 ```lean
@@ -61,6 +65,7 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here; a Lean proof is at [https://github.com/anatoliiohorodnyk/lean-fc-proofs/blob/5da9642575b26c2c816a49bcb56b33fed5456619/Proofs/T_Erdos867_erdos_867_variants_adenwalla.lean#L262](https://github.com/anatoliiohorodnyk/lean-fc-proofs/blob/5da9642575b26c2c816a49bcb56b33fed5456619/Proofs/T_Erdos867_erdos_867_variants_adenwalla.lean#L262).
 
 > Adenwalla has observed that
+>
 > $$\lvert A\rvert \leq (\tfrac{2}{3}+o(1))N.$$
 
 ```lean
@@ -91,6 +96,7 @@ Solved: stated here without proof.
 
 > The current best bounds are due to Coppersmith and Phillips [CoPh96], who prove that the
 > maximal size of such an $A$ satisfies
+>
 > $$\frac{13}{24}N -O(1)\leq \lvert A\rvert.$$
 
 ```lean
@@ -107,6 +113,7 @@ Solved: stated here without proof.
 
 > The current best bounds are due to Coppersmith and Phillips [CoPh96], who prove that the
 > maximal size of such an $A$ satisfies
+>
 > $$\lvert A\rvert \leq \left(\frac{2}{3}-\frac{1}{512}\right)N+\log N.$$
 
 ```lean

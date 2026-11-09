@@ -33,7 +33,9 @@ Open: stated without proof.
 
 > Let $f_k(n)$ be minimal such that if $n$ points in $\mathbb{R}^2$ have no $k+1$ points on a line
 > then there must be at most $f_k(n)$ many lines containing at least $k$ points. Is it true that
+>
 > $$f_k(n) = o(n^2)$$
+>
 > for $k \geq 4$?
 >
 > The case $k = 4$ is Erdős Problem 101. The restriction $k \geq 4$ is needed: see
@@ -52,6 +54,7 @@ Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subj
 Textbook result, stated without proof. A Lean proof is at [https://github.com/veljjanoski/formal-conjectures-proofs/blob/a199537b29d77124f8e1ea0d816a881e96f0cc0f/FcProofs/Erdos588.lean#L81](https://github.com/veljjanoski/formal-conjectures-proofs/blob/a199537b29d77124f8e1ea0d816a881e96f0cc0f/FcProofs/Erdos588.lean#L81).
 
 > The trivial upper bound, by counting pairs of points: for $k \geq 2$,
+>
 > $$f_k(n) \cdot k(k-1) \leq n(n-1).$$
 
 ```lean
@@ -66,6 +69,7 @@ Category `textbook`; AMS [52 Convex and discrete geometry](../../../by-subject/p
 Solved: stated here without proof.
 
 > Sylvester showed (see [BGS74]) that
+>
 > $$f_3(n) = \frac{n^2}{6} + O(n).$$
 >
 > The upper bound $f_3(n) \leq n(n-1)/6$ is `Erdos588.erdos_588.variants.trivial_upper` with
@@ -85,6 +89,7 @@ Solved: stated here without proof.
 
 > Burr, Grünbaum, and Sloane [BGS74] and Füredi and Palásti [FuPa84] gave constructions which
 > show that
+>
 > $$f_3(n) \geq \left(\frac{1}{6} + o(1)\right) n^2.$$
 
 ```lean
@@ -114,7 +119,9 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Solved: stated here without proof.
 
 > Kárteszi [Ka63] proved that for $k \geq 4$,
+>
 > $$f_k(n) \gg_k n \log n,$$
+>
 > resolving a conjecture of Erdős that $f_k(n)/n \to \infty$.
 
 ```lean
@@ -130,6 +137,7 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Solved: stated here without proof.
 
 > Grünbaum [Gr76] proved that for $k \geq 4$,
+>
 > $$f_k(n) \gg_k n^{1 + \frac{1}{k-2}}.$$
 
 ```lean
@@ -145,6 +153,7 @@ Category `research solved`; AMS [52 Convex and discrete geometry](../../../by-su
 Solved: stated here without proof.
 
 > Solymosi and Stojaković [SoSt13] proved that for $k \geq 4$,
+>
 > $$f_k(n) \gg_k n^{2 - O_k(1/\sqrt{\log n})}.$$
 
 ```lean

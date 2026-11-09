@@ -26,7 +26,9 @@ The file states 3 research or textbook statements: 2 open and 1 solved.
 Open: stated without proof.
 
 > Determine the Ramsey number
+>
 > $$R(C_4, S_n),$$
+>
 > where $S_n=K_{1,n}$ is the star on $n+1$ vertices.
 >
 > A problem of Burr, Erdős, Faudree, Rousseau, and Schelp [BEFRS89].
@@ -48,6 +50,7 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Open: stated without proof.
 
 > In particular, is it true that, for any $c > 0$, there are infinitely many $n$ such that
+>
 > $$R(C_4, S_n) \leq n + \sqrt{n} - c?$$
 
 ```lean

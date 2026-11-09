@@ -13,7 +13,9 @@ statement: formalized
 >
 > Conjecture 2 (open since 2017) asserts that for every connected graph $G$ with
 > maximum degree at most $3$ and $G \ne K_4$,
+>
 > $$Z(G) \le \alpha(G) + 1,$$
+>
 > where $Z(G)$ is the zero forcing number and $\alpha(G)$ the independence number.
 
 *Quoted from [FormalConjectures/Arxiv/2507.17780/2.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2507.17780/2.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
@@ -26,6 +28,7 @@ Solved: stated here without proof.
 
 > TxGraffiti [Conjecture 2](https://arxiv.org/abs/2507.17780):
 > for every connected graph $G$ with $\Delta(G) \le 3$ and $G \ne K_4$,
+>
 > $$Z(G) \le \alpha(G) + 1.$$
 >
 > This conjecture is **false**. Fischer gives a connected 24-vertex

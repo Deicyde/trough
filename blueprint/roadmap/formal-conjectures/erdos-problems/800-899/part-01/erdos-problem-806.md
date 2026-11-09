@@ -29,10 +29,12 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > A problem of Erdős and Newman [ErNe77], who proved that there exist $A$ with
 > $\lvert A\rvert\asymp n^{1/2}$ such that if $A\subseteq B+B$ then
+>
 > $$\lvert B\rvert \gg \frac{\log\log n}{\log n}n^{1/2}.$$
 >
 > Resolved by Alon, Bukh, and Sudakov [ABS09], who proved that for any $A\subseteq \{1,\ldots,n\}$
 > with $\lvert A\rvert \leq n^{1/2}$ there exists some $B$ such that $A\subseteq B+B$ and
+>
 > $$\lvert B\rvert \ll \frac{\log\log n}{\log n}n^{1/2}.$$
 >
 > See also [333](https://www.erdosproblems.com/333).

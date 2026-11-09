@@ -24,9 +24,11 @@ The file states 10 research or textbook statements: 5 open and 5 solved. It also
 Solved: stated here without proof.
 
 > **Robin's Criterion**. The Riemann Hypothesis is equivalent to
+>
 > $$
 >   \sigma(n) < e ^ {\gamma} n\log\log n
 > $$
+>
 > for all $n > 5040$, where $\gamma$ is the Euler-Mascheroni constant and $\sigma(n)$ is
 > the sum of divisors.
 
@@ -56,9 +58,11 @@ Solved: stated here without proof.
 
 > **Lagarias' Criterion**. A refinement of Robin's criterion: the Riemann Hypothesis
 > is equivalent to
+>
 > $$
 >   \sigma(n) < H_n + e^{H_n}\log H_n
 > $$
+>
 > for all $n \geq 2$, where $H_n = 1 + 1/2 + \cdots + 1/n$ is the $n$th harmonic number.
 >
 > Note that [Co26] states this for all $n \geq 1$, but at $n = 1$ both sides equal $1$; Lagarias'
@@ -90,9 +94,11 @@ Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-num
 Solved: stated here without proof.
 
 > **Li's Criterion**. The Riemann Hypothesis is equivalent to the positivity of
+>
 > $$
 >   \lambda_n := \sum_{\rho}\left(1 - \left(1 - \frac{1}{\rho}\right)^n\right)
 > $$
+>
 > for each $n > 0$.
 
 ```lean
@@ -150,9 +156,11 @@ Solved: stated here without proof.
 
 > **Weil's Positivity Criterion**. The Riemann Hypothesis is equivalent to the non-positivity of
 > Weil factor sums on the convolution of test functions. In [Co26] this is expressed as
+>
 > $$
 >   \sum_v W_v(g\star g^*) \leq 0
 > $$
+>
 > for all compactly-supported smooth functions $g : \mathbb{R}_+^{\times} \to \mathbb{C}$ such that
 > the Mellin transform of $g$ vanishes at $\pm i / 2$, where $g^*(x) := \bar{g}(x^{-1})$ and $W_v$
 > are the multiplicative Weil factors defined in [Co26]. We formalise this as the corresponding

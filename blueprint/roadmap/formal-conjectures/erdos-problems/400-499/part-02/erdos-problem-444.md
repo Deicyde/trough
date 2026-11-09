@@ -26,6 +26,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A\subseteq\mathbb{N}$ be infinite and $d_A(n)$ count the number of $a\in A$ which divide $n$.
 > Is it true that, for every $k$,
+>
 > $$\limsup_{x\to \infty} \frac{\max_{n\lt x}d_A(n)}{\left(\sum_{n\in A\cap[1,x)}\frac{1}{n}\right)^k}
 > =\infty?$$
 >

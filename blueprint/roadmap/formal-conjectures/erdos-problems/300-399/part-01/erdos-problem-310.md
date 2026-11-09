@@ -27,7 +27,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $\alpha >0$ and $N\geq 1$. Is it true that for any $A\subseteq \{1,\ldots,N\}$ with
 > $\lvert A\rvert \geq \alpha N$ there exists some $S\subseteq A$ such that
+>
 > $$\frac{a}{b}=\sum_{n\in S}\frac{1}{n}$$
+>
 > with $a\leq b =O_\alpha(1)$?
 >
 > Liu and Sawhney [LiSa24] observed that the main result of Bloom [Bl21] implies a positive

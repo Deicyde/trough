@@ -21,6 +21,7 @@ Open: stated without proof.
 
 > Let $A \subset \mathbb{N}$ be an infinite set such that the triple sums $a+b+c$ are all distinct
 > for $a,b,c \in A$ (aside from the trivial coincidences). Is it true that
+>
 > $$\liminf_{N \to \infty} \frac{\lvert A \cap \{1,\ldots,N\}\rvert}{N^{1/3}}=0?$$
 
 ```lean
@@ -36,6 +37,7 @@ Solved: stated here without proof.
 
 > Erdős proved that if the pairwise sums $a+b$ are all distinct aside from the trivial
 > coincidences, then
+>
 > $$\liminf_{N \to \infty} \frac{\lvert A \cap \{1,\ldots,N\}\rvert}{N^{1/2}}=0.$$
 
 ```lean

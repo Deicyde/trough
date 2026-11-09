@@ -38,9 +38,11 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here; a Lean proof is at [https://github.com/Jayyhk/erdos-lean/blob/main/problems/427/Erdos427.lean](https://github.com/Jayyhk/erdos-lean/blob/main/problems/427/Erdos427.lean).
 
 > **Erdős Problem 427**: is it true that, for every $n$ and $d$, there exists $k$ such that
+>
 > $$
 >   d \mid p_{n + 1} + \cdots + p_{n + k},
 > $$
+>
 > where $p_r$ denotes the $r$th prime?
 
 ```lean

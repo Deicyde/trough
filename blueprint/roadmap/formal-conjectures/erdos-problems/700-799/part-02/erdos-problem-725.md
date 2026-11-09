@@ -43,7 +43,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős and Kaplansky [ErKa46] proved the count is
+>
 > $$\sim e^{-\binom{k}{2}}(n!)^k$$
+>
 > when $k=o((\log n)^{3/2-\epsilon})$.
 >
 > Here $\epsilon>0$ is fixed.

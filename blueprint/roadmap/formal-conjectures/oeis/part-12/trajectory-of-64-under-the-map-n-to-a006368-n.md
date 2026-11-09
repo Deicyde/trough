@@ -8,6 +8,7 @@ statement: formalized
 # Trajectory of $64$ under the map $n \to \text{A006368}(n)$
 
 > The map is given by
+>
 > $$f(n) = \begin{cases}
 > 3n/2 & \text{if } n \equiv 0 \pmod 2, \\
 > (3n+1)/4 & \text{if } n \equiv 1 \pmod 4, \\

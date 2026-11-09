@@ -29,7 +29,10 @@ Solved: stated here; a Lean proof is at [https://github.com/YanYablonovskiy/form
 > **Erdős Problem 1138.**
 > Let $x/2 < y < x$ and $C > 1$. If $d = \max_{p_n < x}(p_{n+1} - p_n)$,
 > where $p_n$ denotes the $n$-th prime, then is it true that
-> $$\pi(y + Cd) - \pi(y) \sim \frac{Cd}{\log y}$$?
+>
+> $$\pi(y + Cd) - \pi(y) \sim \frac{Cd}{\log y}$$
+>
+> ?
 
 ```lean
 theorem erdos_1138 : ¬ ∀C > 1,

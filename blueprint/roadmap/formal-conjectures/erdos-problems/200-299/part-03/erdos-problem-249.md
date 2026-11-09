@@ -20,7 +20,9 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Is
+>
 > $$\sum_{n} \frac{\phi(n)}{2^n}$$
+>
 > irrational? Here $\phi$ is the Euler totient function.
 
 ```lean

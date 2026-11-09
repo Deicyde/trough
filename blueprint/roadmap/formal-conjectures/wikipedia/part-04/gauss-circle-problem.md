@@ -18,9 +18,11 @@ The file states 4 research or textbook statements: 1 open and 3 solved.
 Solved: stated here without proof.
 
 > Gauss proved that
+>
 > $$
 >   |E(r)|\leq 2\sqrt{2}\pi r,
 > $$
+>
 > for sufficiently large $r$.
 >
 > [Ha59]  Hardy, G. H. (1959). _Ramanujan: Twelve Lectures on Subjects Suggested by His Life and Work_(3rd ed.). New York: Chelsea Publishing Company. p. 67
@@ -36,6 +38,7 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Solved: stated here without proof.
 
 > Hardy and Laundau independently found a lower bound by showing that
+>
 > $$
 >   |E(r)| \neq o\left(r^{1/2}(\log r)^{1/4}\right)
 > $$
@@ -51,6 +54,7 @@ Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-n
 Open: stated without proof.
 
 > It is conjectured that the correct bound is
+>
 > $$
 >   |E(r)| = O\left(r^{1/2 + o(1)}\right)
 > $$
@@ -71,6 +75,7 @@ Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-num
 Solved: stated here without proof.
 
 > The value of $N(r)$ can be expressed as
+>
 > $$
 >   N(r) = 1 + 4\sum_{i=0}^{\infty}\left(\left\lfloor\frac{r^2}{4i+1}\right\rfloor -
 >     \left\lfloor\frac{r^2}{4i + 3}\right\rfloor\right).

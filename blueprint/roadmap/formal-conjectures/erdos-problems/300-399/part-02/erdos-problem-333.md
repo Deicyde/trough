@@ -26,7 +26,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $A\subseteq \mathbb{N}$ be a set of density zero. Does there exist a $B$ such that
 > $A\subseteq B+B$ and
+>
 > $$\lvert B\cap \{1,\ldots,N\}\rvert =o(N^{1/2})$$
+>
 > for all large $N$?
 >
 > The answer is no. Erdős and Newman [ErNe77] have proved this is true when $A$ is the set of

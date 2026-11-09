@@ -34,9 +34,12 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos225.lean#L2034](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos225.lean#L2034).
 
 > Let
+>
 > $$ f(\theta) = \sum_{0\leq k\leq n}c_k e^{ik\theta}$$
+>
 > be a trigonometric polynomial all of whose roots are real, such that
 > $\max_{\theta\in [0,2\pi]}\lvert f(\theta)\rvert=1$. Then
+>
 > $$\int_0^{2\pi}\lvert f(\theta)\rvert \mathrm{d}\theta \leq 4.$$
 >
 > This is Problem 4.20 in [Ha74], where it is attributed to Erdős.

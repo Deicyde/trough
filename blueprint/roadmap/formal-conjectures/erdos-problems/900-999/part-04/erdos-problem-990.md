@@ -29,11 +29,14 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Let $f=a_0+\cdots+a_dx^d\in \mathbb{C}[x]$ be a polynomial. Is it true that, if $f$ has roots
 > $z_1,\ldots,z_d$ with corresponding arguments $\theta_1,\ldots,\theta_d\in [0,2\pi]$, then for all
 > intervals $I\subseteq [0,2\pi]$
+>
 > $$
 > \left\lvert (\# \theta_i \in I) - \frac{\lvert I\rvert}{2\pi}d\right\rvert \ll
 > \left(n\log M\right)^{1/2},
 > $$
+>
 > where $n$ is the number of non-zero coefficients of $f$ and
+>
 > $$
 > M=\frac{\lvert a_0\rvert+\cdots +\lvert a_d\rvert}{(\lvert a_0\rvert\lvert a_d\rvert)^{1/2}}.
 > $$
@@ -41,6 +44,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > An internal OpenAI model (see [APSSV26b]) has disproved the conjecture, constructing, for every
 > $n\geq 1$, a polynomial $f$ with $n$ non-zero coefficients such that $M<3$ and with a positive real
 > zero of multiplicity $n-1$, whence letting $I=[0,c/d]$ for a suitably small $c>0$,
+>
 > $$
 > \left\lvert (\# \theta_i \in I) - \frac{\lvert I\rvert}{2\pi}d\right\rvert \geq n-1.
 > $$
@@ -74,9 +78,11 @@ Category `research solved`; AMS [12 Field theory and polynomials](../../../by-su
 Solved: stated here without proof.
 
 > Hayman [Ha72b] proved
+>
 > $$
 > \left\lvert (\# \theta_i \in I) - \frac{\lvert I\rvert}{2\pi}d\right\rvert \leq n-1,
 > $$
+>
 > and noted this is essentially sharp since $f(x)=(x^{p}-1)^{n-1}$ has $n$ non-zero coefficients and
 > has $1$ as a positive real zero of multiplicity $n-1$ (although for this $f$ the parameter $M$
 > becomes very large).

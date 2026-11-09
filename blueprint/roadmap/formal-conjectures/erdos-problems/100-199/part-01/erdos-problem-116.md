@@ -38,7 +38,9 @@ The file states 4 research or textbook statements: 4 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos116.lean#L918](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos116.lean#L918).
 
 > Let $p(z)=\prod_{i=1}^n (z-z_i)$ for $\lvert z_i\rvert \leq 1$. Is it true that
+>
 > $$\lvert\{ z: \lvert p(z)\rvert <1\}\rvert>n^{-O(1)}$$
+>
 > (or perhaps even $>(\log n)^{-O(1)}$)?
 >
 > Conjectured by Erdős, Herzog, and Piranian [EHP58]. The lower bound $\gg n^{-4}$ follows from a
@@ -46,7 +48,9 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 > Lundberg, and Ramachandran [KLR25].
 >
 > Wagner [Wa88] proves, for $n\geq 3$, the existence of such polynomials with
+>
 > $$\lvert\{ z: \lvert p(z)\rvert <1\}\rvert \ll_\epsilon (\log\log n)^{-1/2+\epsilon}$$
+>
 > for all $\epsilon>0$. Krishnapur, Lundberg, and Ramachandran [KLR25] improved this upper bound to
 > $\ll (\log\log n)^{-1}$.
 >

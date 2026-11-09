@@ -78,7 +78,9 @@ Solved: stated here without proof.
 
 > Temur [Tem26], Theorem 1. There is an irrational $\xi \in (0, 1)$ all of whose partial quotients
 > are $1$ or $2$, such that
+>
 > $$\lVert b^k \xi \rVert > 154^{-2^b} \quad (b \ge 2,\ k \ge 0),$$
+>
 > where $\lVert \cdot \rVert$ denotes the distance to the nearest integer. The bound on the partial
 > quotients gives $E(\xi) \le (\log 2) / 4$, and the displayed inequality forces the base $b$
 > expansion of $\xi$ to omit a block of zeros, which gives $E(\xi, b) < \log b$ for every

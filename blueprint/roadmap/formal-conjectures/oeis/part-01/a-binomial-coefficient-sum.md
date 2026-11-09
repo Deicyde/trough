@@ -8,7 +8,9 @@ statement: formalized
 # A binomial coefficient sum
 
 > A binomial coefficient sum:
+>
 > $$a(n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \left( \binom{n}{k} - \binom{n}{k-1} \right)^3$$
+>
 > where $\binom{n}{-1} = 0$.
 >
 > *References:*

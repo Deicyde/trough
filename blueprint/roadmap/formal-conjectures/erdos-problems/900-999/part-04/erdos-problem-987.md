@@ -56,6 +56,7 @@ Solved: stated here; a Lean proof is at [https://github.com/Marti2203/formal-con
 
 > Erdős [Er64b] remarks it is "easy to see" that for every infinite sequence
 > $x_1, x_2, \ldots \in (0, 1)$,
+>
 > $$\limsup_{k \to \infty} \sup_n \left\lvert \sum_{j \le n} e(k x_j) \right\rvert = \infty.$$
 
 ```lean

@@ -27,11 +27,15 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $g_d(n)$ be minimal such that every collection of $g_d(n)$ points in $\mathbb{R}^d$ determines
 > at least $n$ many distinct distances. Estimate $g_d(n)$. In particular, does
+>
 > $$\lim_{d \to \infty} \frac{g_d(n)}{d^{n-1}}$$
+>
 > exist?
 >
 > A problem of Erdős [Er75f, p.105]. The answer is yes: for $n \ge 2$,
+>
 > $$\binom{d+1}{n-1} + 1 \le g_d(n) \le \binom{d+n-1}{n-1} + 1,$$
+>
 > where the upper bound is due to Bannai, Bannai and Stanton [BBS83] and the lower bound to a
 > construction of Aletheia (generalising constructions for Problem 502), so that
 > $g_d(n) / d^{n-1} \to 1/(n-1)!$ as $d \to \infty$.

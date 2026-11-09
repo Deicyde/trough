@@ -42,6 +42,7 @@ Open: stated without proof.
 > **Erdos Problem 830, Part 2**
 > We say that $a,b\in \mathbb{N}$ are an amicable pair if $\sigma(a)=\sigma(b)=a+b$.
 > If $A(x)$ counts the number of amicable $1\leq a\leq b\leq x$ then is it true that
+>
 > $$A(x) > x^{1-o(1)}?$$
 
 ```lean

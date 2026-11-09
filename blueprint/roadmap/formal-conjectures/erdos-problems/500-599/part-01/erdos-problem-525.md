@@ -50,11 +50,14 @@ Category `research solved`; AMS [30 Functions of a complex variable](../../../by
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos525.lean#L118](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos525.lean#L118).
 
 > What is the behaviour of
+>
 > $$m(f)=\min_{\lvert z\rvert=1}\lvert f(z)\rvert?$$
 >
 > Cook and Nguyen [CoNg21] have identified the limiting distribution, proving that for any
 > $\epsilon>0$
+>
 > $$\lim_{n\to \infty} \mathbb{P}(m(f) > \epsilon n^{-1/2}) = e^{-\epsilon \lambda}$$
+>
 > where $\lambda=\sqrt{\pi/12}$.
 
 ```lean
@@ -98,6 +101,7 @@ Category `research solved`; AMS [30 Functions of a complex variable](../../../by
 Solved: stated here without proof.
 
 > Konyagin and Schlag [KoSc99] proved that for any $\epsilon>0$
+>
 > $$\limsup_{n\to \infty} \mathbb{P}(m(f) \leq \epsilon n^{-1/2})\ll \epsilon.$$
 
 ```lean

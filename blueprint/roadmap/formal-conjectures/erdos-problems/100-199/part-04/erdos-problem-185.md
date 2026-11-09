@@ -30,6 +30,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 >
 > Originally considered by Moser. It is trivial that $f_3(n)\geq R_3(3^n)$, the maximal size of a
 > subset of $\{1,\ldots,3^n\}$ without a three-term arithmetic progression. Moser showed that
+>
 > $$f_3(n) \gg \frac{3^n}{\sqrt{n}}.$$
 >
 > The answer is yes, which is a corollary of the density Hales-Jewett theorem, proved by

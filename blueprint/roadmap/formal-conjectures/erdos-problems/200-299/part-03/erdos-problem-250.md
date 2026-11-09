@@ -20,9 +20,11 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos250.lean#L97](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos250.lean#L97).
 
 > Is
+>
 > $$
 >   \sum_{n=1}^\infty \frac{\sigma(n)}{2^n}
 > $$
+>
 > irrational? Here $\sigma(n)$ is the sum of divisors function.
 >
 > The answer is yes, as shown by Nesterenko [Ne96].

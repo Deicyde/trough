@@ -21,9 +21,11 @@ Open: stated without proof.
 
 > Let $s_1 < s_2 < \cdots$ be the sequence of squarefree numbers. Is it true that, for any
 > $\alpha\geq 0$,
+>
 > $$
 > \lim_{x\to\infty} \frac{1}{x}\sum_{s_n\leq x}(s_{n+1}-s_n)^\alpha
 > $$
+>
 > exists?
 
 ```lean

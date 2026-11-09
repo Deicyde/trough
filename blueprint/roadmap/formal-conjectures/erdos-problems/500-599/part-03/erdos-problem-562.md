@@ -24,7 +24,9 @@ Open: stated without proof.
 > monochromatic copy of the complete $r$-uniform hypergraph on $n$ vertices.
 >
 > Prove that, for $r \ge 3$,
+>
 > $$ \log_{r-1} R_r(n) \asymp_r n, $$
+>
 > where $\log_{r-1}$ denotes the $(r-1)$-fold iterated logarithm.
 
 ```lean

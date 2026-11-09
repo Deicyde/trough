@@ -31,7 +31,9 @@ The file states 5 research or textbook statements: 2 open and 3 solved. It also 
 Open: stated without proof.
 
 > Let $f(n)$ denote the minimal $m\geq 1$ such that
+>
 > $$n! = a_1\cdots a_t$$
+>
 > with $a_1\lt \cdots \lt a_t=a_1+m$. What is the behaviour of $f(n)$?
 >
 > We formalise the question as: does $f(n) \to \infty$? A result of Luca [Lu02] implies a positive
@@ -84,7 +86,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > A theorem of Bui, Pratt, and Zaharescu [BPZ23] implies that, for each fixed $m$,
+>
 > $$F_m(N) \ll_m N^{33/34},$$
+>
 > where $F_m(N)$ is the number of $n \leq N$ such that $f(n) = m$.
 >
 > They proved that, for every $P \in \mathbb{Z}[x]$ of degree at least $2$, the number of

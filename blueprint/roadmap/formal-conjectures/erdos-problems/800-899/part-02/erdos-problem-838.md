@@ -25,6 +25,7 @@ Open: stated without proof.
 > Let $f(n)$ be maximal such that any $n$ points in $\mathbb{R}^2$, with no three on a line,
 > determine at least $f(n)$ different convex subsets. Estimate $f(n)$ - in particular, does there
 > exist a constant $c$ such that
+>
 > $$\lim \frac{\log f(n)}{(\log n)^2}=c?$$
 >
 > A question of Erdős and Hammer [Er78c, pp. 52-53]. This is the first part. We read "estimate" as
@@ -44,6 +45,7 @@ Open: stated without proof.
 > Let $f(n)$ be maximal such that any $n$ points in $\mathbb{R}^2$, with no three on a line,
 > determine at least $f(n)$ different convex subsets. Estimate $f(n)$ - in particular, does there
 > exist a constant $c$ such that
+>
 > $$\lim \frac{\log f(n)}{(\log n)^2}=c?$$
 >
 > A question of Erdős and Hammer [Er78c, p. 53]. This is the second part.
@@ -60,7 +62,9 @@ Category `research open`; AMS [52 Convex and discrete geometry](../../../by-subj
 Solved: stated here without proof.
 
 > Erdős proved in [Er78c] that there exist constants $c_1,c_2>0$ such that
+>
 > $$n^{c_1\log n}\lt f(n)< n^{c_2\log n}.$$
+>
 > Here $\log$ is the natural logarithm (another base only changes the constants), and $n\geq 2$.
 
 ```lean

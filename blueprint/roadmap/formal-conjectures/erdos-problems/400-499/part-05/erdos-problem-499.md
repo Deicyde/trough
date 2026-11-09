@@ -20,9 +20,11 @@ The file states 3 research or textbook statements: 3 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos499.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos499.lean).
 
 > Let $M$ be a real $n \times n$ doubly stochastic matrix. Does there exist some $σ \in S_n$ such that
+>
 > $$
 > \prod_{1 \leq i \leq n} M_{i, σ(i)} \geq n^{-n}?
 > $$
+>
 > This is true, and was proved by Marcus and Minc [MaMi62]
 >
 > [MaMi62] Marcus, Marvin and Minc, Henryk, Some results on doubly stochastic matrices. Proc. Amer. Math. Soc. (1962), 571-579.
@@ -61,9 +63,11 @@ Solved: stated here without proof.
 
 > A weaker version of Erdős' problem 499, which asks whether for every doubly stochastic matrix, there
 > exists a permutation $σ \in S_n$ with $M_{i, σ(i)} ≠ 0$ and such that
+>
 > $$
 > \sum_{1 \leq i \leq n} M_{i, σ(i)} \geq 1
 > $$
+>
 > Proved by Marcus and Ree [MaRe59].
 >
 > [MaRe59] Marcus, M. and Ree, R., Diagonals of doubly stochastic matrices. Quart. J. Math. Oxford Ser. (2) (1959), 296-302.

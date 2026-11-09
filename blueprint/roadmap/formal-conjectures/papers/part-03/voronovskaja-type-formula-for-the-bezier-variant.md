@@ -9,22 +9,27 @@ statement: formalized
 
 > The Bézier-type Bernstein operators $B_{n,\alpha}$ for $\alpha > 0$ are defined for
 > $f : [0,1] \to \mathbb{R}$ by
+>
 > $$
 > (B_{n,\alpha} f)(x)
 >   = \sum_{k=0}^n f\!\left(\frac{k}{n}\right)
 >     \left( J_{n,k}(x)^{\alpha} - J_{n,k+1}(x)^{\alpha} \right),
 > $$
+>
 > where
+>
 > $$
 > J_{n,k}(x) = \sum_{j=k}^n p_{n,j}(x),
 > \qquad
 > p_{n,j}(x) = \binom{n}{j} x^j(1-x)^{n-j},
 > $$
+>
 > and $J_{n,n+1}(x) = 0$.
 >
 > In the classical case $\alpha = 1$, these operators reduce to the usual Bernstein operators.
 > For $f$ which are $C^2$ on $[0,1]$, one has the classical Voronovskaja
 > asymptotic formula
+>
 > $$
 > \lim_{n \to \infty} n\bigl( B_{n,1} f(x) - f(x) \bigr)
 >     = \tfrac{1}{2} x(1-x) f''(x).
@@ -33,21 +38,25 @@ statement: formalized
 > ## Known Results
 > * For $\alpha = 1$, the asymptotics are completely understood.
 > * Numerical experiments indicate that for $\alpha \neq 1$ the quantity
->     $$
+>
+> $$
 >         \sqrt{n}\,\bigl( B_{n,\alpha} f(x) - f(x) \bigr)
 >     $$
->     may converge to a non-zero limit.
+>
+> may converge to a non-zero limit.
 >
 > ## The Problem
 > Determine the asymptotic behaviour of the Bézier-type Bernstein operators for $\alpha > 0$,
 > $\alpha \neq 1$:
 > \textbf{Existence of the limit:}
 >     Prove (or disprove) the existence of the limit
->     $$
+>
+> $$
 >         \lim_{n \to \infty}
 >         \sqrt{n}\,\bigl( B_{n,\alpha} f(x) - f(x) \bigr),
 >     $$
->     at least for sufficiently smooth functions $f$.
+>
+> at least for sufficiently smooth functions $f$.
 >     \textbf{Explicit form of the limit:}
 >     If the limit exists, determine an explicit expression for it in terms of $f$, $x$, and $\alpha$.
 >
@@ -77,6 +86,7 @@ Solved: stated here without proof.
 > Classical Voronovskaja theorem (α = 1).
 >
 > For functions $f$ that are $C^2$ on $[0,1]$, the limit:
+>
 > $$
 > n\bigl( B_n f(x) - f(x) \bigr)
 > \;\longrightarrow\;
@@ -115,19 +125,23 @@ Solved: stated here; a Lean proof is at [https://github.com/KitaKen1/bezier-bern
 > Informal proof: the weights
 > $w_{n,k} = J_{n,k}(x)^{\alpha} - J_{n,k+1}(x)^{\alpha}$ are nonnegative and sum
 > to $1$, so the quadratic Taylor bound for $f \in C^2$ gives
+>
 > $$
 > B_{n,\alpha} f(x) - f(x)
 >   = \sum_{k=0}^{n} \bigl( f(k/n) - f(x) \bigr) w_{n,k}
 >   = f'(x) \sum_{k=0}^{n} (k/n - x)\, w_{n,k}
 >     + O\Bigl( \sum_{k=0}^{n} (k/n - x)^2 w_{n,k} \Bigr).
 > $$
+>
 > The two sums on the right satisfy
+>
 > $$
 > \sqrt{n} \sum_{k=0}^{n} (k/n - x)\, w_{n,k}
 >   \longrightarrow \mu(\alpha)\,\sqrt{x(1-x)},
 > \qquad
 > \sqrt{n} \sum_{k=0}^{n} (k/n - x)^2 w_{n,k} \longrightarrow 0,
 > $$
+>
 > so multiplying by $\sqrt{n}$ gives the stated limit.
 >
 > The linked formal proof is a self-contained Lean 4 formalisation by *Kenta Kitamura*

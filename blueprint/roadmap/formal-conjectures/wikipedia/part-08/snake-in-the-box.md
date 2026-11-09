@@ -91,9 +91,11 @@ Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-c
 Solved: stated here without proof.
 
 > For $n \geq 2$, an upper bound on the maximal length of the longest coil in a box is given by
+>
 > $$
 > 1 + 2^{n-1}\frac{6n}{6n + \frac{1}{6\sqrt{6}}n^{\frac 1 2} - 7}
 > $$
+>
 > (see [Ze97]). The case $n = 1$ is excluded since the right-hand side is negative there.
 
 ```lean

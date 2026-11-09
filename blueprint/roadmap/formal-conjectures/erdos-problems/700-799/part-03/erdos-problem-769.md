@@ -41,7 +41,9 @@ Open: stated without proof.
 
 > What refuting $c(n)\gg n^n$ leaves open: give good bounds for $c(n)$. Asked here on the
 > scale the problem itself sets, $n^n$: does $c$ have a well-defined order
+>
 > $$\lim_{n\to\infty}\frac{\log c(n)}{n\log n}?$$
+>
 > The refuted conjecture would have forced this limit to be at least $1$.
 > The cutoff condition is restricted to positive dimensions: in dimension zero,
 > exact coverage permits only one tile, so no cutoff exists.

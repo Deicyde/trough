@@ -43,6 +43,7 @@ The file states 14 research or textbook statements: 3 open and 11 solved. It als
 Open: stated without proof.
 
 > Let $C\geq 0$. Is there an infinite sequence of $n_i$ such that
+>
 > $$\lim_{i\to \infty}\frac{p_{n_i+1}-p_{n_i}}{\log n_i}=C?$$
 >
 > We formalise "an infinite sequence of $n_i$" as a strictly monotone sequence of indices

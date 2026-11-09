@@ -41,11 +41,14 @@ Solved: stated here; a Lean proof is at [https://github.com/Woett/Lean-files/blo
 > Let $A,B\subseteq \mathbb{N}$ be infinite sets of positive integers such that $A+B$ contains all
 > large integers. Let $A(x)=\lvert A\cap [1,x]\rvert$ and similarly for $B(x)$. Is it true that if
 > $A(x)B(x)\sim x$ then
+>
 > $$A(x)B(x)-x\to \infty$$
+>
 > as $x\to \infty$?
 >
 > A conjecture of Erdős and Danzer. The answer is yes, proved by Sárközy and Szemerédi [SaSz94],
 > who actually proved that it is impossible for
+>
 > $$A(x)B(x)-x=o(A(x)).$$
 >
 > This was formalized in Lean by van Doorn using Aristotle.
@@ -77,6 +80,7 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Sárközy and Szemerédi [SaSz94] proved that it is impossible for
+>
 > $$A(x)B(x)-x=o(A(x)).$$
 
 ```lean
@@ -128,7 +132,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Ruzsa [Ru17] has constructed, for any function $w(x)\to \infty$, such a pair of sets with
+>
 > $$A(x)B(x)-x\lt w(x)$$
+>
 > for infinitely many $x$.
 
 ```lean
@@ -145,6 +151,7 @@ Solved: stated here without proof.
 
 > Ruzsa [Ru17] proves that, if $a^*(x)=\max A \cap [1,x]$ and $A$ and $B$ satisfy the conditions
 > in the problem then (after possibly changing the roles of $A$ and $B$)
+>
 > $$A(x)B(x)-x > (1-o(1))\frac{a^*(x)}{A(x)}.$$
 
 ```lean
@@ -166,7 +173,9 @@ Solved: stated here without proof.
 
 > Chen and Fang [ChFa10] proved the stronger statement that $A(x)B(x)-x\to \infty$ if $A$ and $B$
 > are infinite sets such that $A+B$ contains all large integers and
+>
 > $$\limsup_{x\to \infty}\frac{A(x)B(x)}{x}\lt \frac{5}{4}.$$
+>
 > They later [ChFa14] improved $5/4$ to $3-\sqrt{3}\approx 1.268$.
 
 ```lean
@@ -200,7 +209,9 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > This is sharp, as Chen and Fang [ChFa11] also proved that there exist such $A$ and $B$ with
+>
 > $$\limsup_{x\to \infty}\frac{A(x)B(x)}{x}=\frac{3}{2}$$
+>
 > for which $A(x)B(x)-x=1$ for infinitely many $x$.
 
 ```lean

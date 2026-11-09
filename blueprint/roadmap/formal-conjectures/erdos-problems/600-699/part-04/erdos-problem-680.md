@@ -20,9 +20,11 @@ The file states 2 research or textbook statements: 2 open.
 Open: stated without proof.
 
 > Is it true that, for all sufficiently large $n$, there exists some $k$ such that
+>
 > $$
 > p(n+k)>k^2+1,
 > $$
+>
 > where $p(m)$ denotes the least prime factor of $m$?
 
 ```lean

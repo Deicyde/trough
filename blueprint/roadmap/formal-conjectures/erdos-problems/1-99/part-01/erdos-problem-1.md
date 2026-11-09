@@ -21,6 +21,7 @@ Solved: stated here; a Lean proof is at [https://github.com/tadamcz/erdos1/blob/
 
 > If $A\subseteq\{1, ..., N\}$ with $|A| = n$ is such that the subset sums $\sum_{a\in S}a$ are
 > distinct for all $S\subseteq A$ then
+>
 > $$
 >   N \gg 2 ^ n.
 > $$
@@ -53,6 +54,7 @@ Category `textbook`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combi
 Solved: stated here without proof.
 
 > Erdős and Moser [Er56] proved
+>
 > $$
 >   N \geq (\tfrac{1}{4} - o(1)) \frac{2^n}{\sqrt{n}}.
 > $$

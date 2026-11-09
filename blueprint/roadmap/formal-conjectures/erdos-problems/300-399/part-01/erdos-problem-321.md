@@ -74,9 +74,11 @@ Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-
 Solved: stated here without proof.
 
 > Let $R(N)$ be the maximal such size. Results of Bleicher and Erdős from [BlEr75] and [BlEr76b] imply that
+>
 > $$
 > \frac{N}{\log N} \prod_{i=3}^{k} \log_i N \le R(N),
 > $$
+>
 > valid for any $k \ge 4$ with $\log_k N \ge k$ and any $r \ge 1$ with $\log_{2r} N \ge 1$. (In these bounds $\log_i n$ denotes the $i$-fold iterated logarithm.)
 >
 > [BlEr75] Bleicher, M. N. and Erdős, P., _The number of distinct subsums of $\sum \sb{1}\spN\,1/i$_. Math. Comp. (1975), 29-42.
@@ -94,9 +96,11 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Solved: stated here without proof.
 
 > Let $R(N)$ be the maximal such size. Results of Bleicher and Erdős from [BlEr75] and [BlEr76b] imply that
+>
 > $$
 > R(N) \le \frac{1}{\log 2} \log_r N \left( \frac{N}{\log N} \prod_{i=3}^{r} \log_i N \right),
 > $$
+>
 > valid for any $k \ge 4$ with $\log_k N \ge k$ and any $r \ge 1$ with $\log_{2r} N \ge 1$. (In these bounds $\log_i n$ denotes the $i$-fold iterated logarithm.)
 >
 > Since `Real.log` is defined on all of $\mathbb{R}$, the condition $\log_{2r} N \ge 1$ is

@@ -35,6 +35,7 @@ Open: stated without proof.
 
 > **Babai–Seress Conjecture (Conjecture 1.5)**: There exists an absolute constant $C$ such
 > that the diameter of the alternating group $A_n$ satisfies
+>
 > $$\operatorname{diam}(A_n) \leq n^C.$$
 >
 > *Reference:* [L. Babai and Á. Seress, *On the diameter of permutation groups*,
@@ -54,6 +55,7 @@ Open: stated without proof.
 
 > **Babai–Seress Conjecture (Conjecture 1.7)**: There exists an absolute constant $C$ such
 > that every finite simple non-abelian group $G$ satisfies
+>
 > $$\operatorname{diam}(G) \leq (\log |G|)^C.$$
 >
 > *Reference:* [L. Babai and Á. Seress, *On the diameter of permutation groups*,

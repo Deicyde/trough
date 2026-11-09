@@ -20,9 +20,11 @@ The file states 1 research or textbook statement: 1 open.
 Open: stated without proof.
 
 > Is it true that for every $k \geq 1$ we have
+>
 > $$
 > F(N + k) \leq F(N) + 1
 > $$
+>
 > for all sufficiently large $N$?
 
 ```lean

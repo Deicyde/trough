@@ -47,7 +47,9 @@ Category `research open`; AMS [20 Group theory and generalizations](../../../by-
 Open: stated without proof.
 
 > Question 22.18 of [BNV07] suggests the even stronger conjecture
+>
 > $$\sum_{n<2^m}g(n) \leq g(2^m)$$
+>
 > for all sufficiently large $m$ (perhaps even as soon as $m\geq 7$).
 >
 > The sum is over $1\leq n<2^m$.

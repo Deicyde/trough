@@ -22,7 +22,9 @@ The file states 5 research or textbook statements: 1 open and 4 solved.
 Solved: stated here without proof.
 
 > Let  $3 \le d_1 < d_2 < \dots < d_r$ be integers such that
+>
 > $$\sum_{1 \le i \le r}\frac 1{d_i - 1} \ge 1.$$
+>
 > Can all sufficiently large integers be written as a sum of the shape $\sum_i c_ia_i$
 > where $c_i \in \{0, 1\}$ and $a_i$ has only the digits $0, 1$ when written in base $d_i$?
 >
@@ -41,7 +43,9 @@ Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/1
 Open: stated without proof.
 
 > Let $k \ne 0$ and $3\leq d_1 < d_2 < \cdots < d_r$ be integers of gcd equal to $1$ such that
+>
 > $$\sum_{1 \le i \le r}\frac 1{d_i - 1} \ge 1.$$
+>
 > Can all sufficiently large integers be written as a sum of the shape $\sum_i c_ia_i$
 > where $c_i \in \{0, 1\}$ and $a_i$ is divisible by $d_i ^ k$ and has only the digits $0, 1$ when
 > written in base $d_i$?
@@ -81,6 +85,7 @@ Solved: stated here; a Lean proof is at [https://github.com/arex1337/formal-conj
 > Let $3\leq d_1 < d_2 < \cdots < d_r$ be integers such that all sufficiently large integers can be
 > written as a sum of the shape $\sum_i c_ia_i$ where $c_i \in \{0, 1\}$ and $a_i$ has only the digits
 > $0, 1$ when written in base $d_i$. Then
+>
 > $$\sum_{1 \le i \le r}\frac 1{d_i - 1} \ge 1.$$
 >
 > Reported by Burr, Erdős, Graham, and Li [BEGL96] as an observation of Pomerance

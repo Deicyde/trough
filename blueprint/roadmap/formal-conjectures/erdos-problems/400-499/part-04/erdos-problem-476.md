@@ -28,10 +28,13 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos476.lean](https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos476.lean).
 
 > Let $A\subseteq \mathbb{F}_p$. Let
+>
 > $$
 > A\hat{+}A = \{ a+b : a\neq b \in A\}.
 > $$
+>
 > Is it true that
+>
 > $$
 > \lvert A\hat{+}A\rvert \geq \min(2\lvert A\rvert-3,p)?
 > $$

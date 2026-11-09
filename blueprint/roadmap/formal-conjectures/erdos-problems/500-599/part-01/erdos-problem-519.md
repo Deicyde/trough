@@ -34,6 +34,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 
 > Let $z_1,\ldots,z_n\in \mathbb{C}$ with $z_1=1$. Must there exist an absolute constant $c>0$ such
 > that
+>
 > $$
 > \max_{1\leq k\leq n}\left\lvert \sum_{i}z_i^k\right\rvert>c?
 > $$

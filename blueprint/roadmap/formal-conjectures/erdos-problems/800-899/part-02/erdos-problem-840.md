@@ -29,7 +29,9 @@ Open: stated without proof.
 
 > Let $f(N)$ be the size of the largest quasi-Sidon subset $A\subset\{1,\ldots,N\}$, where we say
 > that $A$ is quasi-Sidon if
+>
 > $$\lvert A+A\rvert=(1+o(1))\binom{\lvert A\rvert}{2}.$$
+>
 > How does $f(N)$ grow?
 >
 > Following [Er81h, p. 175], we ask for the largest $c$ such that there are quasi-Sidon sets
@@ -46,7 +48,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Solved: stated here without proof.
 
 > Erdős and Freud [ErFr91] proved
+>
 > $$\left(\frac{2}{\sqrt{3}}+o(1)\right)N^{1/2} \leq f(N) \leq \left(2+o(1)\right)N^{1/2}.$$
+>
 > (Although both bounds were already given by Erdős in [Er81h].)
 >
 > This is the lower bound. The lower bound is taking a genuine Sidon set $B\subset [1,N/3]$ of size
@@ -63,7 +67,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Proved here.
 
 > Erdős and Freud [ErFr91] proved
+>
 > $$\left(\frac{2}{\sqrt{3}}+o(1)\right)N^{1/2} \leq f(N) \leq \left(2+o(1)\right)N^{1/2}.$$
+>
 > (Although both bounds were already given by Erdős in [Er81h].)
 >
 > This is the upper bound.
@@ -79,7 +85,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Solved: stated here without proof.
 
 > The upper bound was improved by Pikhurko [Pi06] to
+>
 > $$f(N) \leq \left(\left(\frac{1}{4}+\frac{1}{(\pi+2)^2}\right)^{-1/2}+o(1)\right)N^{1/2}$$
+>
 > (the constant here is $=1.863\cdots$).
 
 ```lean

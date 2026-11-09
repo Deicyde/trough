@@ -8,6 +8,7 @@ statement: formalized
 # $a(n) = \sum_{k=0}^n \binom{2k}{k}^3$
 
 > The sequence $a(n) = 1 + \binom{2}{1}^3 + \binom{4}{2}^3 + \cdots + \binom{2n}{n}^3$:
+>
 > $$a(n) = \sum_{k=0}^n \binom{2k}{k}^3$$
 >
 > *References:*

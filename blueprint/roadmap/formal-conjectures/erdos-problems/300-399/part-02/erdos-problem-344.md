@@ -31,9 +31,13 @@ The file states 3 research or textbook statements: 1 open and 2 solved. It also 
 Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos344.lean#L8994](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos344.lean#L8994).
 
 > If $A\subseteq \mathbb{N}$ is a set of integers such that
+>
 > $$\lvert A\cap \{1,\ldots,N\}\rvert\gg N^{1/2}$$
+>
 > for all $N$ then must $A$ be subcomplete? That is, must
+>
 > $$P(A) = \left\{\sum_{n\in B}n : B\subseteq A\textrm{ finite }\right\}$$
+>
 > contain an infinite arithmetic progression?
 >
 > This is true, and was proved by Szemerédi and Vu [SzVu06].
@@ -53,7 +57,9 @@ Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/0
 Open: stated without proof.
 
 > The stronger conjecture that this is true under
+>
 > $$\lvert A\cap \{1,\ldots,N\}\rvert\geq (2N)^{1/2}$$
+>
 > seems to be still open (this would be best possible as shown by [Er61b]).
 >
 > The bound is required for all sufficiently large $N$: at $N=1$, it is impossible since
@@ -72,7 +78,9 @@ Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-
 Proved here.
 
 > Folkman proved this under the stronger assumption that
+>
 > $$\lvert A\cap \{1,\ldots,N\}\rvert\gg N^{1/2+\epsilon}$$
+>
 > for some $\epsilon>0$ [Fo66].
 
 ```lean

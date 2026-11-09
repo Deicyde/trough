@@ -25,9 +25,11 @@ The file states 1 research or textbook statement: 1 solved.
 Solved: stated here; a Lean proof is at [https://github.com/Kuberwastaken/c5-k4/blob/8c0a76079e5c7153bdc2dd6d97a9821ee25b2620/lean/GraphConjecture64.lean](https://github.com/Kuberwastaken/c5-k4/blob/8c0a76079e5c7153bdc2dd6d97a9821ee25b2620/lean/GraphConjecture64.lean).
 
 > WOWII Conjecture 64 proposed that every finite simple connected graph $G$ satisfies
+>
 > $$
 > f(G) \geq \left\lceil\sqrt{\alpha(G)\bigl(1+(|V(G)|\bmod\Delta(G))\bigr)}\right\rceil,
 > $$
+>
 > where $f(G)$ is the maximum order of an induced forest.
 > For $C_5[K_4]$, the forest number is $4$, the independence number is $2$,
 > and the proposed lower bound is $\lceil\sqrt{2(1+9)}\rceil=5$.

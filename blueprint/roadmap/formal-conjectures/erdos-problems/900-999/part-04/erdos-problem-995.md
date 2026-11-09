@@ -14,7 +14,9 @@ statement: formalized
 >
 > Let $n_1 < n_2 < \cdots$ be a lacunary sequence of integers and $f \in L^2([0,1])$ with
 > $\int_0^1 f = 0$. Estimate the growth of
+>
 > $$S_N(\alpha) = \sum_{k \le N} f(\{\alpha n_k\})$$
+>
 > for almost all $\alpha$, where $\{\cdot\}$ denotes the fractional part. In particular, is it
 > true that $S_N(\alpha) = o\!\left(N \sqrt{\log\log N}\right)$ for almost all $\alpha$?
 >
@@ -39,6 +41,7 @@ Open: stated without proof.
 >
 > For every lacunary sequence $(n_k)$ of integers and every $f \in L^2([0,1])$ with
 > $\int_0^1 f = 0$, is it true that for almost all $\alpha$,
+>
 > $$\sum_{k < N} f(\{\alpha n_k\}) = o\!\left(N \sqrt{\log\log N}\right)?$$
 
 ```lean
@@ -59,6 +62,7 @@ Solved: stated here without proof.
 > Erdős [Er49] showed the growth cannot be pushed below $N (\log\log N)^{1/2}$ by more than an
 > arbitrarily small power: there is a lacunary sequence and a mean-zero $f \in L^2([0,1])$ such
 > that for every $\varepsilon > 0$, for almost all $\alpha$,
+>
 > $$\limsup_{N \to \infty} \frac{\sum_{k < N} f(\{\alpha n_k\})}{N (\log\log N)^{1/2 - \varepsilon}}
 >   = \infty.$$
 
