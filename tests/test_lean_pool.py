@@ -292,6 +292,36 @@ def test_the_source_row_links_a_paper_and_quotes_the_cards_notes_but_not_the_rep
     ]
 
 
+def test_a_url_that_is_the_doi_or_arxiv_page_is_linked_once():
+    doi = {"source": {"doi": "10.1/x", "url": "https://doi.org/10.1/x", "github_repo": "someone/art"}}
+    arxiv = {"source": {"arxiv": "2111.11031", "url": "https://arxiv.org/abs/2111.11031/", "github_repo": "someone/art"}}
+    assert lean_pool.source_links(doi)[0] == "- Source: [doi:10.1/x](https://doi.org/10.1/x)."
+    assert lean_pool.source_links(arxiv)[0] == "- Source: [arXiv:2111.11031](https://arxiv.org/abs/2111.11031)."
+
+
+def test_a_url_to_the_repository_at_a_commit_gives_the_commit_when_the_card_has_none():
+    sha = "f" * 40
+    project = {"source": {"github_repo": "someone/art", "url": f"https://github.com/someone/art/tree/{sha}",
+                          "background": "A survey.", "proof_url": "https://example.org/proof.md",
+                          "problem_url": "https://www.erdosproblems.com/111"}}
+    assert lean_pool.source_links(project) == [
+        "- Source: [proof](https://example.org/proof.md), [problem](https://www.erdosproblems.com/111).",
+        "- Background, as the card gives it: “A survey.”",
+        f"- Project repository: [someone/art](https://github.com/someone/art), at commit [ffffffff]"
+        f"(https://github.com/someone/art/tree/{sha}).",
+    ]
+
+
+def test_an_entry_module_may_be_a_module_under_the_projects_directory(tmp_path):
+    nested = ART.replace("entry_module: LeanPool.Art", "entry_module: LeanPool.Art.A")
+    _, record, _ = lean_pool.read_pool(checkout(tmp_path / "a", {"1mfld": ONE_MANIFOLD, "art": nested}), REV, "")
+    art = record["projects"][1]
+    assert art["directory"] == "Art" and art["main_results"][0]["module"] == "LeanPool.Art.A"
+    with pytest.raises(ValueError, match="its entry module, LeanPool/Art/Gone.lean, is not in the checkout"):
+        lean_pool.read_pool(checkout(tmp_path / "b", {"art": nested.replace("LeanPool.Art.A", "LeanPool.Art.Gone")}),
+                            REV, "")
+
+
 def test_a_main_declaration_whose_text_holds_sorry_is_stated_without_proof(tmp_path):
     root = checkout(tmp_path)
     (root / "LeanPool/Art/A.lean").write_text(

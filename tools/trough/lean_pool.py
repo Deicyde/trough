@@ -39,9 +39,15 @@ REQUIRED = ("slug", "title", "summary", "entry_module", "authors", "source", "li
             "main_declarations", "main_results", "msc")
 LICENSES = ("Apache-2.0", "MIT")
 SOURCE_KEYS = ("title", "authors", "citation", "doi", "arxiv", "url", "paper_url", "paper", "manuscript_url",
-               "manuscript", "mathematical_source", "note", "notes", "github_repo", "commit")
+               "manuscript", "proof_url", "problem_url", "mathematical_source", "background", "note", "notes",
+               "github_repo", "commit")
 # Source keys that name a document to link, and the word for it.
-DOCUMENTS = {"paper_url": "paper", "paper": "paper", "manuscript_url": "manuscript", "manuscript": "manuscript"}
+DOCUMENTS = {"paper_url": "paper", "paper": "paper", "manuscript_url": "manuscript", "manuscript": "manuscript",
+             "proof_url": "proof", "problem_url": "problem"}
+# Source keys quoted on a row of their own, and the row's words.
+QUOTED = {"mathematical_source": "Mathematical source, as the card gives it",
+          "background": "Background, as the card gives it",
+          "note": "The card's note on its source", "notes": "The card's note on its source"}
 # Lean Pool's own words for each provenance, from its CONTRIBUTING.md: who wrote the Lean proofs.
 PROVENANCE = {"human": "written by people", "AI": "mostly produced by an AI system",
               "mix": "both contributed substantially"}
@@ -149,8 +155,9 @@ def read_card(text: str, where: str) -> dict:
     msc = strings(card["msc"])
     if not msc or not (code := MSC_CODE.match(msc[0])) or code.group(1) not in MSC:
         raise ValueError(f"{where}: first MSC2020 code {msc[:1]!r} is not one of a known class")
+    # An entry module is LeanPool.<Dir>, or a module under it, LeanPool.<Dir>.<Name>.
     if not isinstance(card["source"], dict) or not isinstance(card["main_results"], list) or \
-            len(card["entry_module"].split(".")) != 2 or card["entry_module"].split(".")[0] != "LeanPool":
+            len(card["entry_module"].split(".")) < 2 or card["entry_module"].split(".")[0] != "LeanPool":
         raise ValueError(f"{where}: source, main_results or entry_module not as Lean Pool writes them")
     if not all(isinstance(result, dict) and isinstance(result.get("declaration"), str)
                and isinstance(result.get("informal"), str) for result in card["main_results"]):
@@ -201,9 +208,9 @@ def read_project(checkout: Path, card: dict, notice: dict) -> tuple[dict, Counte
     """A card's record, each main result with where the scan finds its declaration. Raises ValueError when
     the card's entry module is not in the checkout."""
     directory = card["entry_module"].split(".")[1]
-    if not (checkout / "LeanPool" / f"{directory}.lean").is_file():
-        raise ValueError(f"LeanPool/projects/{card['slug']}.yaml: its entry module, LeanPool/{directory}.lean, "
-                         "is not in the checkout")
+    entry_file = "/".join(card["entry_module"].split(".")) + ".lean"
+    if not (checkout / entry_file).is_file():
+        raise ValueError(f"LeanPool/projects/{card['slug']}.yaml: its entry module, {entry_file}, is not in the checkout")
     main = set(strings(card["main_declarations"]))
     results = [result for result in card["main_results"] if isinstance(result, dict) and result.get("declaration")]
     places, counts = scan_project(checkout, directory, [result["declaration"] for result in results])
@@ -383,18 +390,25 @@ def result_line(source: dict, result: dict) -> str:
 
 
 def source_links(project: dict) -> list[str]:
-    """The card's sources: DOI, then arXiv, then URL, then a paper or manuscript it links, with its notes on them,
-    and the project's own repository and commit."""
+    """The card's sources: DOI, then arXiv, then URL, then a paper, manuscript, proof or problem page it links,
+    with its citation, mathematical source, background and notes, and the project's own repository and commit."""
     source = project["source"]
-    links = []
+    links, linked = [], set()
     if source.get("doi"):
-        links.append(f"[doi:{text(source['doi'])}]({href('https://doi.org/' + source['doi'])})")
+        linked.add(url := "https://doi.org/" + source["doi"])
+        links.append(f"[doi:{text(source['doi'])}]({href(url)})")
     if source.get("arxiv"):
-        links.append(f"[arXiv:{text(source['arxiv'])}]({href('https://arxiv.org/abs/' + source['arxiv'])})")
+        linked.add(url := "https://arxiv.org/abs/" + source["arxiv"])
+        links.append(f"[arXiv:{text(source['arxiv'])}]({href(url)})")
     repository = f"{GITHUB}/{source['github_repo']}" if source.get("github_repo") else ""
     commit = source.get("commit", "")
-    # A URL that is the project's repository, or the repository at the card's commit, is the row below.
-    if source.get("url") and source["url"].rstrip("/") not in (repository, f"{repository}/tree/{commit}"):
+    # A card with no commit may give one in a URL to its repository at that commit: the repository row shows it.
+    if repository and not commit and (pinned := re.fullmatch(rf"{re.escape(repository)}/tree/([0-9a-f]{{40}})/?",
+                                                              source.get("url", ""))):
+        commit = pinned.group(1)
+    # A URL that is the project's repository, the repository at its commit, or the DOI or arXiv page just linked,
+    # is not linked again.
+    if source.get("url") and source["url"].rstrip("/") not in {repository, f"{repository}/tree/{commit}", *linked}:
         links.append(f"[{text(source['url'])}]({href(source['url'])})")
     for key, word in DOCUMENTS.items():
         if re.match(r"https?://", source.get(key, "")) and source[key] != source.get("url"):
@@ -406,11 +420,9 @@ def source_links(project: dict) -> list[str]:
             work += f" by {text(', '.join(source['authors']))}"
         citation = text(source["citation"]) if source.get("citation") else ""
         rows.append("- Source: " + ", ".join(filter(None, [work, citation, *links])) + ".")
-    if source.get("mathematical_source"):
-        rows.append(f"- Mathematical source, as the card gives it: {closed(text(source['mathematical_source']))}")
-    for key in ("note", "notes"):
+    for key, words in QUOTED.items():
         if source.get(key):
-            rows.append(f"- The card's note on its source: {closed(text(source[key]))}")
+            rows.append(f"- {words}: {closed(text(source[key]))}")
     if repository:
         rows.append(f"- Project repository: [{source['github_repo']}]({repository})"
                     + (f", at commit [{commit[:8]}]({repository}/tree/{commit})" if re.fullmatch(r"[0-9a-f]{40}", commit)
@@ -554,9 +566,10 @@ def intro(source: dict, record: dict, stats: Counter) -> str:
         f"{stats['provenance_mix']} mix.",
         "The quoted text is the cards', in Lean Pool's repository under the Apache-2.0 license, as written, except "
         "that a < before a letter, or an & that would start a character reference, which the site cannot show as "
-        "text, is set in code. Each article names the project's authors and gives the sources its card names: "
-        "links to a DOI, arXiv, a URL and a paper or manuscript, a citation, the mathematical source, and the card's "
-        "notes on them. Of the projects, "
+        "text, is set in code. Each article names the project's authors and shows these fields of its card's "
+        "source, where the card has them: the DOI, arXiv id and URL, and a paper, manuscript, proof or problem page, "
+        "each linked; the citation; the mathematical source, background and notes, quoted; and the project's "
+        "repository and commit. A card may hold other source fields, which are not shown. Of the projects, "
         f"{stats['license_MIT']} were published under the MIT license, and Lean Pool redistributes them under "
         "Apache-2.0; where Lean Pool's notice file keeps a copyright line or a note for one, its article quotes it.",
     ])
