@@ -35,11 +35,8 @@ SOURCE_SCHEMA = "trough-anthropic-flt-source/v1"
 LANDMARKS_SCHEMA = "trough-anthropic-flt-landmarks/v1"
 REPO = "anthropics/fermats-last-theorem"
 GITHUB = "https://github.com"
-REPO_URL = f"{GITHUB}/{REPO}"
 # The Imperial College London FLT project's chapter, whose `lean` names a landmark's names are compared with.
 IMPERIAL = "flt"
-INDEX_FILES = ("PROOF-PATH.md", "formalization.yaml", "html/data/meta.js", "html/data/edges.js", "lean-toolchain",
-               "lake-manifest.json", "LICENSE", "FinalCheck.lean")
 STEP = re.compile(r"^\*\*(?P<number>\d+)\.\s+(?P<title>.+?)\.?\*\*", re.M)
 HEADING = re.compile(r"^(#{1,6})\s+(.*?)\s*#*\s*$", re.M)
 PREAMBLE = re.compile(r"^(?:import|attribute)\b")
