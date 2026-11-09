@@ -16,6 +16,9 @@ own.
 Each declaration also carries what is attached to it: its docstring, the
 attributes of the `@[...]` list before it, and its statement, the text up to the
 `:=` or `where` that starts its value, with whether that value holds `sorry`.
+
+`scan` leaves out `example`s, which have no name; `scan_with_examples` also
+gives each `example` that starts a line at column 0, read the same way.
 """
 
 from __future__ import annotations
@@ -37,6 +40,8 @@ DECLARATION = re.compile(
     rf"(?:\(priority\s*:=[^)\n]*\)[ \t]*)?(?P<name>{NAME})?",
     re.M,
 )
+# Only at column 0, where it ends the declaration before it as any command does.
+EXAMPLE = re.compile(rf"^{IN_PREFIX}(?P<modifiers>{MODIFIERS})example\b")
 NAMESPACE = re.compile(rf"^[ \t]*namespace[ \t]+(?P<name>{NAME})[ \t]*$")
 SECTION = re.compile(rf"^[ \t]*(?:(?:noncomputable|public)[ \t]+)*section(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
 MUTUAL = re.compile(r"^[ \t]*mutual[ \t]*$")
@@ -162,6 +167,19 @@ def blank_attributes(text: str) -> str:
 
 def scan(text: str) -> dict[str, Declaration] | None:
     """Each declaration the file makes, by full name; None when its scopes don't close as they open."""
+    return read(text, None)
+
+
+def scan_with_examples(text: str) -> tuple[dict[str, Declaration], list[Declaration]] | None:
+    """The declarations scan() gives, and the file's `example`s in order, each with an empty name and the kind
+    "example"; None when the file's scopes don't close as they open."""
+    examples: list[Declaration] = []
+    found = read(text, examples)
+    return None if found is None else (found, examples)
+
+
+def read(text: str, examples: list[Declaration] | None) -> dict[str, Declaration] | None:
+    """scan()'s reading, adding each `example` to *examples* when that is a list."""
     found_spans = spans(text)
     code = clear(text, found_spans)
     # Comments go but strings stay, for reading attributes.
@@ -184,8 +202,12 @@ def scan(text: str) -> dict[str, Declaration] | None:
             column = head - offsets[line - 1]
             statement = None if cut is None else dedent(text[head:start + cut].rstrip(), column)
             doc, attributes = attached(text, code, plain, docs, head)
-            found.setdefault(name, Declaration(name, kind, line, bool(SORRY.search(joined)), doc, attributes, statement,
-                                               cut is not None and bool(SORRY.search(joined[cut:]))))
+            declaration = Declaration(name, kind, line, bool(SORRY.search(joined)), doc, attributes, statement,
+                                      cut is not None and bool(SORRY.search(joined[cut:])))
+            if kind == "example":
+                examples.append(declaration)
+            else:
+                found.setdefault(name, declaration)
         open_decl = None
 
     for number, line in enumerate(lines, 1):
@@ -205,7 +227,8 @@ def scan(text: str) -> dict[str, Declaration] | None:
             close()
             scopes.append(("mutual", ""))
             continue
-        if (match := END.match(line)) and not (open_decl and line[:1].isspace()):
+        # An open example keeps no indented `end`, so the scopes, and the declarations, are as scan() reads them.
+        if (match := END.match(line)) and not (open_decl and open_decl[1] != "example" and line[:1].isspace()):
             close()
             if match["name"]:
                 # `end A.B` closes a section named A.B, or namespaces A and B.
@@ -233,6 +256,11 @@ def scan(text: str) -> dict[str, Declaration] | None:
             base = offsets[number - 1]
             open_decl = (full, KINDS[match["kind"]], number, base + match.start("modifiers"), base + match.end(),
                          [line[match.end():]])
+            continue
+        if examples is not None and (match := EXAMPLE.match(line)):
+            close()
+            base = offsets[number - 1]
+            open_decl = ("", "example", number, base + match.start("modifiers"), base + match.end(), [line[match.end():]])
             continue
         if open_decl:
             open_decl[5].append(line)

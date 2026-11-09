@@ -238,3 +238,48 @@ def test_the_module_docstring_is_the_first_one():
 
 def test_attribute_lists_split_at_top_level_commas_only():
     assert leansource.split_attributes(' simp, foo [a, b],\n  bar "x, y" ') == ["simp", "foo [a, b]", 'bar "x, y"']
+
+
+EXAMPLES = '''namespace E
+
+/-- Example 1.2: a documented example. -/
+example : 1 + 1 = 2 := by
+  sorry
+
+theorem named : True := trivial
+open Nat in example (n : ℕ) : n + 0 = n := by
+  simp
+
+section
+  example : True := trivial
+  end
+
+/-- Exercise 1.3 -/
+example : (sorry : Prop) := by sorry
+
+end E
+
+example : True where
+'''
+
+
+def test_scan_with_examples_adds_the_examples_and_keeps_the_declarations():
+    for text in (SOURCE, ATTACHED, EXAMPLES):
+        found, _ = leansource.scan_with_examples(text)
+        assert found == leansource.scan(text)
+    found, examples = leansource.scan_with_examples(EXAMPLES)
+    assert set(found) == {"E.named"}
+    assert [(example.line, example.kind, example.name) for example in examples] == [
+        (4, "example", ""), (8, "example", ""), (16, "example", ""), (20, "example", "")]
+    first, opened, exercise, last = examples
+    assert first.doc == "Example 1.2: a documented example." and first.statement == "example : 1 + 1 = 2"
+    assert first.proof_sorry
+    # An `open ... in` prefix is not part of the statement, as for a declaration.
+    assert opened.statement == "example (n : ℕ) : n + 0 = n" and not opened.proof_sorry and opened.doc == ""
+    assert exercise.statement == "example : (sorry : Prop)" and exercise.proof_sorry
+    assert last.statement == "example : True"
+    # The indented example and its indented `end` are read as scan() reads them: the example is not one, and
+    # the `end` closes the section.
+    assert leansource.scan_with_examples("example : True := by\n  end\n") is None
+    assert leansource.scan_with_examples("theorem t : True := by\n  end\n") == ({"t": leansource.scan(
+        "theorem t : True := by\n  end\n")["t"]}, [])
