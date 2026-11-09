@@ -34,5 +34,5 @@ norm_le_gronwallBound_of_norm_deriv_right_le.{u_1} {E : Type u_1} [NormedAddComm
 ## Sources
 
 - [Mathlib documentation: `norm_le_gronwallBound_of_norm_deriv_right_le`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/ODE/Gronwall.html#norm_le_gronwallBound_of_norm_deriv_right_le)
-- [Source of `norm_le_gronwallBound_of_norm_deriv_right_le` in Mathlib/Analysis/ODE/Gronwall.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/ODE/Gronwall.lean#L130)
-- [Mathlib undergraduate list: Multivariable calculus › Differential equations](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L478)
+- [Source of `norm_le_gronwallBound_of_norm_deriv_right_le` in Mathlib/Analysis/ODE/Gronwall.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/ODE/Gronwall.lean#L130)
+- [Mathlib undergraduate list: Multivariable calculus › Differential equations](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L478)

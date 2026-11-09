@@ -18,11 +18,11 @@ InnerProductSpace.toDual.{u_1, u_2} (𝕜 : Type u_1) (E : Type u_2) [RCLike �
 ## Sources
 
 - [Mathlib documentation: `InnerProductSpace.toDual`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Dual.html#InnerProductSpace.toDual)
-- [Source of `InnerProductSpace.toDual` in Mathlib/Analysis/InnerProductSpace/Dual.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/InnerProductSpace/Dual.lean#L133)
-- [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L303)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Euclidean and Hermitian spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L217)
-- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L441)
-- [1000+ theorems list: Q1357684](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1634)
+- [Source of `InnerProductSpace.toDual` in Mathlib/Analysis/InnerProductSpace/Dual.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/InnerProductSpace/Dual.lean#L133)
+- [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L303)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Euclidean and Hermitian spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L217)
+- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L441)
+- [1000+ theorems list: Q1357684](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1634)
 - [1000+ theorems project: Q1357684](https://1000-plus.github.io/all.html?length=-1#Q1357684)
 - [Wikipedia: Riesz representation theorem](https://en.wikipedia.org/wiki/Riesz_representation_theorem)
 - [Wikidata: Q1357684](https://www.wikidata.org/wiki/Q1357684)

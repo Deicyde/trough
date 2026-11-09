@@ -16,5 +16,5 @@ BoundedContinuousFunction.instNormedSpace.{u, v, u_1} {α : Type u} {β : Type v
 ## Sources
 
 - [Mathlib documentation: `BoundedContinuousFunction.instNormedSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/Bounded/Normed.html#BoundedContinuousFunction.instNormedSpace)
-- [Source of `BoundedContinuousFunction.instNormedSpace` in Mathlib/Topology/ContinuousMap/Bounded/Normed.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean#L256)
-- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L432)
+- [Source of `BoundedContinuousFunction.instNormedSpace` in Mathlib/Topology/ContinuousMap/Bounded/Normed.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean#L272)
+- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L432)

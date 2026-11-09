@@ -27,5 +27,5 @@ CovariantDerivative.{u_1, u_2, u_3, u_4, u_5, u_6} {𝕜 : Type u_1} [Nontrivial
 ## Sources
 
 - [Mathlib documentation: `CovariantDerivative`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Basic.html#CovariantDerivative)
-- [Source of `CovariantDerivative` in Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Basic.lean#L361)
-- [Mathlib overview: Geometry › Smooth vector and fiber bundles](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L473)
+- [Source of `CovariantDerivative` in Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Basic.lean#L361)
+- [Mathlib overview: Geometry › Smooth vector and fiber bundles](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L473)

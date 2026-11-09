@@ -22,5 +22,5 @@ Set.ruzsa_covering_add.{u_1} {G : Type u_1} [AddGroup G] {K : ℝ} {A B : Set G}
 ## Sources
 
 - [Mathlib documentation: `Set.ruzsa_covering_add`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/RuzsaCovering.html#Set.ruzsa_covering_add)
-- [Source of `Set.ruzsa_covering_add` in Mathlib/Combinatorics/Additive/RuzsaCovering.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Additive/RuzsaCovering.lean#L65)
-- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L545)
+- [Source of `Set.ruzsa_covering_add` in Mathlib/Combinatorics/Additive/RuzsaCovering.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Additive/RuzsaCovering.lean#L65)
+- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L545)

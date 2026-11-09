@@ -53,7 +53,7 @@ homomorphisms form [the category of $R$-algebras](the-category-of-algebras-over-
   [field](../field-theory/field.md) $K$, which is a $K$-algebra.
 - **Polynomials.** If $A$ is an $R$-algebra, the
   [polynomial ring](../polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-  [$A[X]$ is an $R$-algebra](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/AlgebraMap.html#Polynomial.algebraOfAlgebra), with
+  $A[X]$ is an $R$-algebra, with
   $r$ acting on coefficients; in particular $R[X]$ is an $R$-algebra. The same holds for
   [polynomials in several indeterminates](../polynomials-and-power-series/polynomial-in-several-indeterminates.md).
 - **Matrices.** For a finite index set with $n$ elements and an $R$-algebra $A$, the
@@ -133,6 +133,6 @@ with the two compatibility identities above.
 ## Sources
 
 - [Mathlib documentation: `Algebra`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Algebra/Defs.html#Algebra)
-- [Source of `Algebra` in Mathlib/Algebra/Algebra/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Algebra/Defs.lean#L91)
-- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L110)
-- [Mathlib undergraduate list: Ring Theory › Algebra](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L139)
+- [Source of `Algebra` in Mathlib/Algebra/Algebra/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Algebra/Defs.lean#L91)
+- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L110)
+- [Mathlib undergraduate list: Ring Theory › Algebra](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L139)

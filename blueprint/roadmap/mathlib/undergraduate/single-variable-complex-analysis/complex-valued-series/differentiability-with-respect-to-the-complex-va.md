@@ -26,5 +26,5 @@ HasFPowerSeriesOnBall.differentiableOn.{u, v, u_1} {𝕜 : Type u_1} [Nontrivial
 ## Sources
 
 - [Mathlib documentation: `HasFPowerSeriesOnBall.differentiableOn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Analytic.html#HasFPowerSeriesOnBall.differentiableOn)
-- [Source of `HasFPowerSeriesOnBall.differentiableOn` in Mathlib/Analysis/Calculus/FDeriv/Analytic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/FDeriv/Analytic.lean#L167)
-- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L372)
+- [Source of `HasFPowerSeriesOnBall.differentiableOn` in Mathlib/Analysis/Calculus/FDeriv/Analytic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/FDeriv/Analytic.lean#L167)
+- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L372)

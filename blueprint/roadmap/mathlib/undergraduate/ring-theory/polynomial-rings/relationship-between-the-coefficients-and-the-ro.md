@@ -20,5 +20,5 @@ Polynomial.coeff_eq_esymm_roots_of_card.{u_1} {R : Type u_1} [CommRing R] [IsDom
 ## Sources
 
 - [Mathlib documentation: `Polynomial.coeff_eq_esymm_roots_of_card`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Vieta.html#Polynomial.coeff_eq_esymm_roots_of_card)
-- [Source of `Polynomial.coeff_eq_esymm_roots_of_card` in Mathlib/RingTheory/Polynomial/Vieta.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/Polynomial/Vieta.lean#L114)
-- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L165)
+- [Source of `Polynomial.coeff_eq_esymm_roots_of_card` in Mathlib/RingTheory/Polynomial/Vieta.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Polynomial/Vieta.lean#L114)
+- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L165)

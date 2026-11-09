@@ -29,5 +29,5 @@ exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless.{u_1, u_2, u_3} {E : Type 
 ## Sources
 
 - [Mathlib documentation: `exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/IntegralCurve/ExistUnique.html#exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless)
-- [Source of `exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless` in Mathlib/Geometry/Manifold/IntegralCurve/ExistUnique.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Manifold/IntegralCurve/ExistUnique.lean#L119)
-- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L454)
+- [Source of `exists_isMIntegralCurveAt_of_contMDiffAt_boundaryless` in Mathlib/Geometry/Manifold/IntegralCurve/ExistUnique.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/IntegralCurve/ExistUnique.lean#L119)
+- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L454)

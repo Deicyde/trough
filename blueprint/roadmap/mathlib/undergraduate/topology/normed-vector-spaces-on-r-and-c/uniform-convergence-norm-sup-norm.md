@@ -15,5 +15,5 @@ EMetric.tendstoUniformlyOn_iff.{u, v, u_2} {γ : Type u} {β : Type v} [PseudoEM
 ## Sources
 
 - [Mathlib documentation: `EMetric.tendstoUniformlyOn_iff`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/EMetricSpace/Basic.html#EMetric.tendstoUniformlyOn_iff)
-- [Source of `EMetric.tendstoUniformlyOn_iff` in Mathlib/Topology/EMetricSpace/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/EMetricSpace/Basic.lean#L123)
-- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L431)
+- [Source of `EMetric.tendstoUniformlyOn_iff` in Mathlib/Topology/EMetricSpace/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/EMetricSpace/Basic.lean#L123)
+- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L431)

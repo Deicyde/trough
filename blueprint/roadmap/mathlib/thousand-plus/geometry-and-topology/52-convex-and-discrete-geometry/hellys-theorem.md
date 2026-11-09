@@ -30,8 +30,8 @@ Convex.helly_theorem.{u_1, u_2, u_3} {ι : Type u_1} {𝕜 : Type u_2} {E : Type
 ## Sources
 
 - [Mathlib documentation: `Convex.helly_theorem`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Radon.html#Convex.helly_theorem)
-- [Source of `Convex.helly_theorem` in Mathlib/Analysis/Convex/Radon.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/Radon.lean#L141)
-- [1000+ theorems list: Q1632433](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1812)
+- [Source of `Convex.helly_theorem` in Mathlib/Analysis/Convex/Radon.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/Radon.lean#L141)
+- [1000+ theorems list: Q1632433](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1812)
 - [1000+ theorems project: Q1632433](https://1000-plus.github.io/all.html?length=-1#Q1632433)
 - [Wikipedia: Helly's theorem](https://en.wikipedia.org/wiki/Helly's_theorem)
 - [Wikidata: Q1632433](https://www.wikidata.org/wiki/Q1632433)

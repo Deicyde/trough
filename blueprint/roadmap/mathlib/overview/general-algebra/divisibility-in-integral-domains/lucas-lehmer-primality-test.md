@@ -121,5 +121,5 @@ by computation inside the system.
 ## Sources
 
 - [Mathlib documentation: `lucas_lehmer_sufficiency`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LucasLehmer.html#lucas_lehmer_sufficiency)
-- [Source of `lucas_lehmer_sufficiency` in Mathlib/NumberTheory/LucasLehmer.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/LucasLehmer.lean#L582)
-- [Mathlib overview: General algebra › Divisibility in integral domains](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L93)
+- [Source of `lucas_lehmer_sufficiency` in Mathlib/NumberTheory/LucasLehmer.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/LucasLehmer.lean#L582)
+- [Mathlib overview: General algebra › Divisibility in integral domains](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L93)

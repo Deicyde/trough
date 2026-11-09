@@ -13,9 +13,10 @@ Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
 gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
-roadmaps' status files name, five research projects from their
-leanblueprints (Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+),
-and the Formal Frontier libraries from their headline results.
+roadmaps' status files name and the results its docstrings name, five
+research projects from their leanblueprints (Imperial's FLT, PFR, Equational
+Theories, Strong PNT and PNT+), and the Formal Frontier libraries from their
+headline results.
 
 ## The Mathlib map
 
@@ -99,30 +100,62 @@ page, and references print it; tables, listings and figure captions are kept.
 
 Tau Ceti's human-written roadmaps live in TauCetiRoadmap, and most carry a
 generated `STATUS.md` whose "Named results" and "Notable definitions and
-infrastructure" link declarations in Tau Ceti's documentation. Those links pick
-the chapter's articles, one per declaration Tau Ceti has at the pinned commit,
-in a section per roadmap titled from its README; a roadmap without a status, or
-whose status names nothing Tau Ceti has, has no section. The rest of a roadmap, its
-plan, its `Suggested.lean` signatures and its frontier, says what Tau Ceti may
-add and is left out, and so is the status files' prose, which a model writes
-and Tau Ceti does not check. An article's text is its declaration's docstring
-and signature, titled by the docstring's bold lead when it has one.
+infrastructure" link declarations in Tau Ceti's documentation. A model writes
+those files and names at most five results in each, so the chapter maps two
+kinds of declaration that Tau Ceti has at the pinned commit: those the statuses
+link, and those whose own docstrings name a result. A theorem's docstring names
+one when its bold title's head clause, the title before its first qualifier, is
+a result named after a person ("Burnside's pᵃqᵇ theorem", "Schur-Weyl duality",
+"Serre duality" when another title writes "Serre's", "Hille--Yosida for
+contraction semigroups"), has "theorem" within its first six words, or is at
+most three words pinned to a textbook theorem ("Global existence (Milne VII,
+Theorem 9.5)"). A result noun other than theorem, lemma or conjecture counts
+only where it ends its phrase and is not a predicate, so "the Serre duality
+pairing" and "The Künneth map is an isomorphism" do not. A definition counts
+when its title names a theorem it carries as data. The four theorems Tau Ceti's website
+shows are always in. The rest of a roadmap, its plan, its `Suggested.lean`
+signatures and its frontier, says what Tau Ceti may add and is left out, and so
+is the status files' prose, which a model writes and Tau Ceti does not check.
+
+The forms of one result in one area, a module's first two levels under
+`TauCeti`, such as "Menger's theorem for fans" and "Menger's theorem for fans,
+predicate form", share an article. A declaration a status names leads its own,
+and each form no status names joins the one whose title shares the most words
+with its own; otherwise the lead is a form the website shows, then one not
+titled by names alone ("Perron–Frobenius"), the form titled by the result's
+name alone, or the one with the shortest title that is not a Lean name. The
+others are listed under *Other forms*. Parts follow the library's top-level areas, those with fewer than ten
+articles together as *Other Areas*. A roadmap whose status names a declaration
+has a section in the part with most of its articles, holding what the status
+names and the named results in a module where only its status names
+declarations, or else in a folder of modules below the areas where only it
+names two or more; the other named results have a section for each area, and an
+area with fewer than three joins its part's *Other results*. An article's text
+is its lead's docstring and signature, titled by the docstring's bold opening,
+or by the sentence its bold words begin when the rest of that sentence is short
+and holds no link.
 
 1. `tools/refresh_tauceti.py CHECKOUT` writes `data/tauceti/roadmaps.json`
    from a TauCetiRoadmap checkout: each roadmap's title and the names its
    status links in those two sections, nothing else.
 2. The **Tau Ceti data** workflow fetches Tau Ceti at the commit
-   `data/tauceti/source.json` pins, with its build cache, and runs
-   `lean/tauceti/TauCetiDeps.lean` over every Tau Ceti module. For each name
-   that resolves it writes the module, kind, line, docstring, signature,
-   whether the proof reaches `sorry`, and the nearest named declarations the
-   statement reaches through unnamed statements and the proof through any
-   chain of unnamed Tau Ceti declarations; a name that does not resolve is
-   listed as missing and has no article, as is one that now resolves outside
-   Tau Ceti. A theorem whose proof reaches `sorry`, itself or through another
-   named declaration, is recorded as stated, not proved, and its article says
-   so.
-3. A change to either pin file runs the workflow too, so the committed dump
+   `data/tauceti/source.json` pins, with its build cache. It runs
+   `lean/tauceti/TauCetiSurvey.lean` over every Tau Ceti module, which writes
+   each declaration's kind, module and the start of its docstring, and
+   `tools/select_tauceti.py` chooses from those (`tools/trough/tauceti_select.py`
+   has the rules) into `data/tauceti/selection.json`, with the proposition a
+   chosen theorem is stated from when it lives in that proposition's namespace.
+3. Then `lean/tauceti/TauCetiDeps.lean` reads the names the statuses give and
+   the chosen ones. For each name that resolves it writes the module, kind, line,
+   docstring, signature, whether the proof reaches `sorry`, and the nearest mapped
+   declarations the statement reaches through unmapped statements and the proof
+   through any chain of unmapped Tau Ceti declarations; a name that does not
+   resolve is listed as missing and has no article, as is one that now resolves
+   outside Tau Ceti. A theorem whose proof reaches `sorry`, itself or through
+   another mapped declaration, is recorded as stated, not proved, and its article
+   says so; one whose binders take the proposition it is stated from says what it
+   assumes.
+4. A change to either pin file runs the workflow too, so the committed dump
    always matches the pins. The weekly run, or a dispatch with `newest`, moves both pins: Tau Ceti to
    its newest main commit whose CI passed, so its cache exists, and the
    roadmaps to their newest commit.

@@ -13,7 +13,7 @@ Let $R$ be a ring. A polynomial over $R$ is a sequence $(a_0, a_1, a_2, \dots)$ 
 of $R$ in which only finitely many terms are nonzero, that is, a
 [finitely supported function](../../data-structures/maps/finitely-supported-function.md) from the natural numbers to $R$. The term $a_n$
 is the coefficient of $X^n$, and
-[two polynomials are equal exactly when all their coefficients agree](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Basic.html#Polynomial.ext_iff).
+[two polynomials are equal exactly when all their coefficients agree](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/MonoidAlgebra/Defs.html#AddMonoidAlgebra.ext_iff).
 Addition is coefficientwise, and multiplication is defined so that $X^i X^j = X^{i+j}$: the
 product of $f = \sum_i a_i X^i$ and $g = \sum_j b_j X^j$ has
 [as coefficient of $X^n$ the sum of $a_i b_j$ over all pairs with $i + j = n$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Coeff.html#Polynomial.coeff_mul),
@@ -123,5 +123,5 @@ division operation divides by any nonzero polynomial.
 ## Sources
 
 - [Mathlib documentation: `Polynomial`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Basic.html#Polynomial)
-- [Source of `Polynomial` in Mathlib/Algebra/Polynomial/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Polynomial/Basic.lean#L63)
-- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L96)
+- [Source of `Polynomial` in Mathlib/Algebra/Polynomial/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Polynomial/Basic.lean#L63)
+- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L96)

@@ -26,5 +26,5 @@ MeasureTheory.measure_limsup_atTop_eq_zero.{u_1, u_3} {α : Type u_1} {F : Type 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.measure_limsup_atTop_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.html#MeasureTheory.measure_limsup_atTop_eq_zero)
-- [Source of `MeasureTheory.measure_limsup_atTop_eq_zero` in Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean#L55)
-- [Mathlib undergraduate list: Probability Theory › Definitions of a probability space](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L552)
+- [Source of `MeasureTheory.measure_limsup_atTop_eq_zero` in Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean#L55)
+- [Mathlib undergraduate list: Probability Theory › Definitions of a probability space](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L552)

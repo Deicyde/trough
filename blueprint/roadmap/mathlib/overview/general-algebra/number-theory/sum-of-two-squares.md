@@ -136,10 +136,10 @@ criterion to decide by computation whether a given number is a sum of two square
 ## Sources
 
 - [Mathlib documentation: `Nat.Prime.sq_add_sq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/SumTwoSquares.html#Nat.Prime.sq_add_sq)
-- [Source of `Nat.Prime.sq_add_sq` in Mathlib/NumberTheory/SumTwoSquares.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/SumTwoSquares.lean#L34)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L142)
-- [Freek Wiedijk's 100 theorems, no. 20](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L99)
-- [1000+ theorems list: Q914517](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1070)
+- [Source of `Nat.Prime.sq_add_sq` in Mathlib/NumberTheory/SumTwoSquares.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/SumTwoSquares.lean#L34)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L142)
+- [Freek Wiedijk's 100 theorems, no. 20](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L99)
+- [1000+ theorems list: Q914517](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1070)
 - [1000+ theorems project: Q914517](https://1000-plus.github.io/all.html?length=-1#Q914517)
 - [Wikipedia: Fermat's theorem on sums of two squares](https://en.wikipedia.org/wiki/Fermat's_theorem_on_sums_of_two_squares)
 - [Wikidata: Q914517](https://www.wikidata.org/wiki/Q914517)

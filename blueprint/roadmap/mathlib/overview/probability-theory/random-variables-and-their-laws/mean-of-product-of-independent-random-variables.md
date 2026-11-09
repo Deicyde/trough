@@ -29,5 +29,5 @@ ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral.{u_1, u_2} {Ω : Type u_
 ## Sources
 
 - [Mathlib documentation: `ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Independence/Integration.html#ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral)
-- [Source of `ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral` in Mathlib/Probability/Independence/Integration.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Probability/Independence/Integration.lean#L411)
-- [Mathlib overview: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L404)
+- [Source of `ProbabilityTheory.IndepFun.integral_mul_eq_mul_integral` in Mathlib/Probability/Independence/Integration.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/Independence/Integration.lean#L405)
+- [Mathlib overview: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L404)

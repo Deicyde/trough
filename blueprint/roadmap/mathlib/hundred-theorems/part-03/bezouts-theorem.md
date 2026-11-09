@@ -14,8 +14,8 @@ Nat.gcd_eq_gcd_ab (x y : ℕ) : ↑(x.gcd y) = ↑x * x.gcdA y + ↑y * x.gcdB y
 ## Sources
 
 - [Mathlib documentation: `Nat.gcd_eq_gcd_ab`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Int/GCD.html#Nat.gcd_eq_gcd_ab)
-- [Source of `Nat.gcd_eq_gcd_ab` in Mathlib/Data/Int/GCD.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Data/Int/GCD.lean#L121)
-- [Freek Wiedijk's 100 theorems, no. 60](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L307)
-- [1000+ theorems list: Q513028](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3040)
+- [Source of `Nat.gcd_eq_gcd_ab` in Mathlib/Data/Int/GCD.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Data/Int/GCD.lean#L121)
+- [Freek Wiedijk's 100 theorems, no. 60](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L307)
+- [1000+ theorems list: Q513028](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3040)
 - [1000+ theorems project: Q513028](https://1000-plus.github.io/all.html?length=-1#Q513028)
 - [Wikidata: Q513028](https://www.wikidata.org/wiki/Q513028)

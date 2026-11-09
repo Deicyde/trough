@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Part 2 of 2
+# SmoothExistence
 
 Let $\nu$ be a bumpfunction.
 

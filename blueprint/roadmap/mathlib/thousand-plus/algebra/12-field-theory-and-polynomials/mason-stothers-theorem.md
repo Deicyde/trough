@@ -24,8 +24,8 @@ Polynomial.abc.{u_1} {k : Type u_1} [Field k] [DecidableEq k] {a b c : Polynomia
 ## Sources
 
 - [Mathlib documentation: `Polynomial.abc`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/FLT/MasonStothers.html#Polynomial.abc)
-- [Source of `Polynomial.abc` in Mathlib/NumberTheory/FLT/MasonStothers.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/FLT/MasonStothers.lean#L54)
-- [1000+ theorems list: Q6783821](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3538)
+- [Source of `Polynomial.abc` in Mathlib/NumberTheory/FLT/MasonStothers.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/FLT/MasonStothers.lean#L54)
+- [1000+ theorems list: Q6783821](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3538)
 - [1000+ theorems project: Q6783821](https://1000-plus.github.io/all.html?length=-1#Q6783821)
 - [Wikipedia: Mason–Stothers theorem](https://en.wikipedia.org/wiki/Mason%E2%80%93Stothers_theorem)
 - [Wikidata: Q6783821](https://www.wikidata.org/wiki/Q6783821)

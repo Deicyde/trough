@@ -32,5 +32,5 @@ intervalIntegral.continuous_of_dominated_interval.{u_2, u_3} {E : Type u_2} [Nor
 ## Sources
 
 - [Mathlib documentation: `intervalIntegral.continuous_of_dominated_interval`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/DominatedConvergence.html#intervalIntegral.continuous_of_dominated_interval)
-- [Source of `intervalIntegral.continuous_of_dominated_interval` in Mathlib/MeasureTheory/Integral/DominatedConvergence.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/DominatedConvergence.lean#L289)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L519)
+- [Source of `intervalIntegral.continuous_of_dominated_interval` in Mathlib/MeasureTheory/Integral/DominatedConvergence.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/DominatedConvergence.lean#L289)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L519)

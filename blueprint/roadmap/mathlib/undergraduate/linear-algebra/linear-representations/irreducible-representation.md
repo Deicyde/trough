@@ -16,5 +16,5 @@ Representation.IsIrreducible.{u_1, u_2, u_3} {G : Type u_1} {k : Type u_2} {V : 
 ## Sources
 
 - [Mathlib documentation: `Representation.IsIrreducible`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RepresentationTheory/Irreducible.html#Representation.IsIrreducible)
-- [Source of `Representation.IsIrreducible` in Mathlib/RepresentationTheory/Irreducible.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RepresentationTheory/Irreducible.lean#L27)
-- [Mathlib undergraduate list: Linear algebra › Linear representations](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L69)
+- [Source of `Representation.IsIrreducible` in Mathlib/RepresentationTheory/Irreducible.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RepresentationTheory/Irreducible.lean#L27)
+- [Mathlib undergraduate list: Linear algebra › Linear representations](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L69)

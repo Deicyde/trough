@@ -43,9 +43,9 @@ Module.equiv_free_prod_directSum.{u, v} (R : Type u) [CommRing R] [IsPrincipalId
 ## Sources
 
 - [Mathlib documentation: `Module.equiv_free_prod_directSum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/PID.html#Module.equiv_free_prod_directSum)
-- [Source of `Module.equiv_free_prod_directSum` in Mathlib/Algebra/Module/PID.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Module/PID.lean#L252)
-- [Mathlib overview: Linear algebra › Finitely generated modules over a PID](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L188)
-- [1000+ theorems list: Q7888360](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3953)
+- [Source of `Module.equiv_free_prod_directSum` in Mathlib/Algebra/Module/PID.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Module/PID.lean#L252)
+- [Mathlib overview: Linear algebra › Finitely generated modules over a PID](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L188)
+- [1000+ theorems list: Q7888360](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3953)
 - [1000+ theorems project: Q7888360](https://1000-plus.github.io/all.html?length=-1#Q7888360)
 - [Wikipedia: Structure theorem for finitely generated modules over a principal ideal domain](https://en.wikipedia.org/wiki/Structure_theorem_for_finitely_generated_modules_over_a_principal_ideal_domain)
 - [Wikidata: Q7888360](https://www.wikidata.org/wiki/Q7888360)

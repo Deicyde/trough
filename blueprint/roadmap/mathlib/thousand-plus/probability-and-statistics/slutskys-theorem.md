@@ -51,8 +51,8 @@ MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_c
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/ConvergenceInDistribution.html#MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const)
-- [Source of `MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const` in Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean#L326)
-- [1000+ theorems list: Q643826](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L664)
+- [Source of `MeasureTheory.TendstoInDistribution.continuous_comp_prodMk_of_tendstoInMeasure_const` in Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean#L326)
+- [1000+ theorems list: Q643826](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L664)
 - [1000+ theorems project: Q643826](https://1000-plus.github.io/all.html?length=-1#Q643826)
 - [Wikipedia: Slutsky's theorem](https://en.wikipedia.org/wiki/Slutsky's_theorem)
 - [Wikidata: Q643826](https://www.wikidata.org/wiki/Q643826)

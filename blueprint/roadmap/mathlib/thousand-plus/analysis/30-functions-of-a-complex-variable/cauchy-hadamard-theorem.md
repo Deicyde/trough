@@ -23,8 +23,8 @@ FormalMultilinearSeries.radius_inv_eq_limsup.{u_1, u_2, u_3} {𝕜 : Type u_1}
 ## Sources
 
 - [Mathlib documentation: `FormalMultilinearSeries.radius_inv_eq_limsup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Analytic/RadiusLiminf.html#FormalMultilinearSeries.radius_inv_eq_limsup)
-- [Source of `FormalMultilinearSeries.radius_inv_eq_limsup` in Mathlib/Analysis/Analytic/RadiusLiminf.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Analytic/RadiusLiminf.lean#L64)
-- [1000+ theorems list: Q859122](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1000)
+- [Source of `FormalMultilinearSeries.radius_inv_eq_limsup` in Mathlib/Analysis/Analytic/RadiusLiminf.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Analytic/RadiusLiminf.lean#L64)
+- [1000+ theorems list: Q859122](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1000)
 - [1000+ theorems project: Q859122](https://1000-plus.github.io/all.html?length=-1#Q859122)
 - [Wikipedia: Cauchy–Hadamard theorem](https://en.wikipedia.org/wiki/Cauchy%E2%80%93Hadamard_theorem)
 - [Wikidata: Q859122](https://www.wikidata.org/wiki/Q859122)

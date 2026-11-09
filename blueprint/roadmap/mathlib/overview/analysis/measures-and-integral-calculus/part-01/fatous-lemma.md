@@ -27,10 +27,10 @@ MeasureTheory.lintegral_liminf_le.{u_1, u_3} {α : Type u_1} {m : MeasurableSpac
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.lintegral_liminf_le`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Lebesgue/Add.html#MeasureTheory.lintegral_liminf_le)
-- [Source of `MeasureTheory.lintegral_liminf_le` in Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean#L236)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L349)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L515)
-- [1000+ theorems list: Q5437947](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3178)
+- [Source of `MeasureTheory.lintegral_liminf_le` in Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean#L236)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L349)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L515)
+- [1000+ theorems list: Q5437947](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3178)
 - [1000+ theorems project: Q5437947](https://1000-plus.github.io/all.html?length=-1#Q5437947)
 - [Wikipedia: Fatou–Lebesgue theorem](https://en.wikipedia.org/wiki/Fatou%E2%80%93Lebesgue_theorem)
 - [Wikidata: Q5437947](https://www.wikidata.org/wiki/Q5437947)

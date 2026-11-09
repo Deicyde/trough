@@ -34,5 +34,5 @@ intervalIntegral.integral_hasFDerivAt_of_tendsto_ae.{u_3} {E : Type u_3} [Normed
 ## Sources
 
 - [Mathlib documentation: `intervalIntegral.integral_hasFDerivAt_of_tendsto_ae`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.html#intervalIntegral.integral_hasFDerivAt_of_tendsto_ae)
-- [Source of `intervalIntegral.integral_hasFDerivAt_of_tendsto_ae` in Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean#L676)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L355)
+- [Source of `intervalIntegral.integral_hasFDerivAt_of_tendsto_ae` in Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean#L676)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L355)

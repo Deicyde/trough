@@ -137,5 +137,5 @@ degree of an infinite extension and the index of an infinite-index subgroup are 
 ## Sources
 
 - [Mathlib documentation: `IsGalois.intermediateFieldEquivSubgroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Galois/Basic.html#IsGalois.intermediateFieldEquivSubgroup)
-- [Source of `IsGalois.intermediateFieldEquivSubgroup` in Mathlib/FieldTheory/Galois/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/FieldTheory/Galois/Basic.lean#L369)
-- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L134)
+- [Source of `IsGalois.intermediateFieldEquivSubgroup` in Mathlib/FieldTheory/Galois/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/Galois/Basic.lean#L369)
+- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L134)

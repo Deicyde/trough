@@ -37,5 +37,5 @@ tendsto_integral_exp_smul_cocompact.{u_1, u_2} {E : Type u_1} {V : Type u_2} [No
 ## Sources
 
 - [Mathlib documentation: `tendsto_integral_exp_smul_cocompact`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/RiemannLebesgueLemma.html#tendsto_integral_exp_smul_cocompact)
-- [Source of `tendsto_integral_exp_smul_cocompact` in Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean#L242)
-- [Mathlib undergraduate list: Measures and integral calculus › Fourier analysis](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L533)
+- [Source of `tendsto_integral_exp_smul_cocompact` in Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean#L242)
+- [Mathlib undergraduate list: Measures and integral calculus › Fourier analysis](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L533)

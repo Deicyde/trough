@@ -28,6 +28,8 @@ def test_chunk_keeps_every_page_at_twenty_entries():
     assert all(len(page.entries) <= 20 for page in pages(container))
     leaves = [node for page in pages(container) for node in page.children if isinstance(node, Leaf)]
     assert len(leaves) == 401
+    # A part holding one entry is titled by it.
+    assert container.entries[-1].node.title == "Item 400"
 
 
 def test_references_stay_out_of_a_containers_directory():

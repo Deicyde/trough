@@ -18,6 +18,6 @@ ProbabilityTheory.bernoulliMeasure.{u_1} {X : Type u_1} [MeasurableSpace X] (x y
 ## Sources
 
 - [Mathlib documentation: `ProbabilityTheory.bernoulliMeasure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Distributions/Bernoulli.html#ProbabilityTheory.bernoulliMeasure)
-- [Source of `ProbabilityTheory.bernoulliMeasure` in Mathlib/Probability/Distributions/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Probability/Distributions/Bernoulli.lean#L41)
-- [Mathlib overview: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L406)
-- [Mathlib undergraduate list: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L566)
+- [Source of `ProbabilityTheory.bernoulliMeasure` in Mathlib/Probability/Distributions/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/Distributions/Bernoulli.lean#L41)
+- [Mathlib overview: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L406)
+- [Mathlib undergraduate list: Probability Theory › Random variables and their laws](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L566)

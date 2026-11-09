@@ -25,5 +25,5 @@ Theorems100.«82».cannot_cube_a_cube {n : ℕ} :
 ## Sources
 
 - [Mathlib documentation: `Theorems100.«82».cannot_cube_a_cube`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/CubingACube.html#Theorems100.%C2%AB82%C2%BB.cannot_cube_a_cube)
-- [Source of `Theorems100.«82».cannot_cube_a_cube` in Archive/Wiedijk100Theorems/CubingACube.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/CubingACube.lean#L537)
-- [Freek Wiedijk's 100 theorems, no. 82](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L421)
+- [Source of `Theorems100.«82».cannot_cube_a_cube` in Archive/Wiedijk100Theorems/CubingACube.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/CubingACube.lean#L537)
+- [Freek Wiedijk's 100 theorems, no. 82](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L421)

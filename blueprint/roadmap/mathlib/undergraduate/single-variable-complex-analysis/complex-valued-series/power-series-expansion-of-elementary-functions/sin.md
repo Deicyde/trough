@@ -23,5 +23,5 @@ Complex.hasSum_sin (z : ℂ) :
 ## Sources
 
 - [Mathlib documentation: `Complex.hasSum_sin`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.html#Complex.hasSum_sin)
-- [Source of `Complex.hasSum_sin` in Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.lean#L76)
-- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series › power series expansion of elementary functions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L380)
+- [Source of `Complex.hasSum_sin` in Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SpecialFunctions/Trigonometric/Series.lean#L76)
+- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series › power series expansion of elementary functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L380)

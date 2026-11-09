@@ -27,8 +27,8 @@ riesz_extension.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.Module ℝ E] (s :
 ## Sources
 
 - [Mathlib documentation: `riesz_extension`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Cone/Extension.html#riesz_extension)
-- [Source of `riesz_extension` in Mathlib/Analysis/Convex/Cone/Extension.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/Cone/Extension.lean#L141)
-- [1000+ theorems list: Q3527217](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2549)
+- [Source of `riesz_extension` in Mathlib/Analysis/Convex/Cone/Extension.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/Cone/Extension.lean#L141)
+- [1000+ theorems list: Q3527217](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2549)
 - [1000+ theorems project: Q3527217](https://1000-plus.github.io/all.html?length=-1#Q3527217)
 - [Wikipedia: M. Riesz extension theorem](https://en.wikipedia.org/wiki/M._Riesz_extension_theorem)
 - [Wikidata: Q3527217](https://www.wikidata.org/wiki/Q3527217)

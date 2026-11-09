@@ -27,5 +27,5 @@ MeasureTheory.SimpleFunc.tendsto_approxOn.{u_1, u_2} {α : Type u_1} {β : Type 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.SimpleFunc.tendsto_approxOn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/SimpleFuncDense.html#MeasureTheory.SimpleFunc.tendsto_approxOn)
-- [Source of `MeasureTheory.SimpleFunc.tendsto_approxOn` in Mathlib/MeasureTheory/Function/SimpleFuncDense.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/SimpleFuncDense.lean#L154)
-- [Mathlib undergraduate list: Measures and integral calculus › Measure theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L511)
+- [Source of `MeasureTheory.SimpleFunc.tendsto_approxOn` in Mathlib/MeasureTheory/Function/SimpleFuncDense.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/SimpleFuncDense.lean#L154)
+- [Mathlib undergraduate list: Measures and integral calculus › Measure theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L511)

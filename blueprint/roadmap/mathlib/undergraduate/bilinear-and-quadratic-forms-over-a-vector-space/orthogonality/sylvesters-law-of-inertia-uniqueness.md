@@ -32,5 +32,5 @@ QuadraticForm.sigPos_of_equiv_weightedSumSquares.{u_2, u_4, u_5} {M : Type u_2} 
 ## Sources
 
 - [Mathlib documentation: `QuadraticForm.sigPos_of_equiv_weightedSumSquares`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/QuadraticForm/Signature.html#QuadraticForm.sigPos_of_equiv_weightedSumSquares)
-- [Source of `QuadraticForm.sigPos_of_equiv_weightedSumSquares` in Mathlib/LinearAlgebra/QuadraticForm/Signature.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/QuadraticForm/Signature.lean#L240)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L210)
+- [Source of `QuadraticForm.sigPos_of_equiv_weightedSumSquares` in Mathlib/LinearAlgebra/QuadraticForm/Signature.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/QuadraticForm/Signature.lean#L240)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L210)

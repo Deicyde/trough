@@ -22,6 +22,6 @@ convexOn_of_deriv2_nonneg {D : Set ℝ} (hD : Convex ℝ D) {f : ℝ → ℝ} (h
 ## Sources
 
 - [Mathlib documentation: `convexOn_of_deriv2_nonneg`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Deriv.html#convexOn_of_deriv2_nonneg)
-- [Source of `convexOn_of_deriv2_nonneg` in Mathlib/Analysis/Convex/Deriv.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/Deriv.lean#L213)
-- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L322)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L363)
+- [Source of `convexOn_of_deriv2_nonneg` in Mathlib/Analysis/Convex/Deriv.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/Deriv.lean#L213)
+- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L322)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L363)
