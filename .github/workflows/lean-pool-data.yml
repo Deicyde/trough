@@ -19,6 +19,7 @@ on:
     paths:
       - "tools/refresh_lean_pool.py"
       - "tools/trough/lean_pool.py"
+      - "tools/trough/ff.py"
       - "tools/trough/leansource.py"
       - "data/lean-pool/**"
       - ".github/workflows/lean-pool-data.yml"
@@ -26,6 +27,7 @@ on:
     paths:
       - "tools/refresh_lean_pool.py"
       - "tools/trough/lean_pool.py"
+      - "tools/trough/ff.py"
       - "tools/trough/leansource.py"
       - "data/lean-pool/**"
       - ".github/workflows/lean-pool-data.yml"

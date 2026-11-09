@@ -8,14 +8,14 @@ checkout is enough: the cards in LeanPool/projects/, NOTICE.extra.yml, LICENSE,
 lean-toolchain, lake-manifest.json and the .lean files under LeanPool/. This
 writes data/lean-pool/source.json (the commit, its date, the Lean toolchain and
 Mathlib's commit) and data/lean-pool/projects.json: each card's title, summary,
-authors, sources, license, provenance and MSC2020 codes, the copyright line
-NOTICE.extra.yml keeps for a project published under MIT, and each main result
-with the module, line and kind of its declaration as trough.leansource reads
-the project's files without Lean.
+authors, sources, license, provenance and MSC2020 codes, the note (its copyright
+line, or a remark about it) NOTICE.extra.yml keeps for a project published under
+MIT, and each main result with the module, line and kind of its declaration as
+trough.leansource reads the project's files without Lean.
 
 Nothing is written when the repository is not Apache-2.0, a card is not as the
-chapter reads it, or the main results the scan places drop under half of those
-the last record placed.
+chapter reads it or names an entry module the checkout lacks, or the main
+results the scan places drop under half of those the last record placed.
 """
 
 from __future__ import annotations
@@ -51,7 +51,10 @@ def refresh(checkout: Path, out: Path) -> list[str]:
         return [str(error)]
     previous = out / "projects.json"
     if previous.is_file():
-        before = lean_pool.found_count(json.loads(previous.read_text(encoding="utf-8")))
+        try:
+            before = lean_pool.found_count(json.loads(previous.read_text(encoding="utf-8")))
+        except (ValueError, KeyError, TypeError) as error:
+            return [f"{previous.name}, the last record, does not read: {error!r}"]
         after = lean_pool.found_count(record)
         if after * 2 < before:
             return [f"places {after} main results, under half the {before} the last record placed"]

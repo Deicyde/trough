@@ -196,8 +196,9 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "",
             f"- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes "
             f"and main results of each project card in [LeanPool/lean-pool at {lean_pool[:8]}]"
-            f"(https://github.com/LeanPool/lean-pool/tree/{lean_pool}), Apache-2.0, with the copyright line its "
-            "NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main "
+            f"(https://github.com/LeanPool/lean-pool/tree/{lean_pool}), Apache-2.0, with the note, its copyright "
+            "line or a remark about it, that its NOTICE.extra.yml keeps for a project published under MIT, and the "
+            "module, line and kind of each main "
             "result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the "
             "commit, its Lean toolchain and Mathlib.",
         ]

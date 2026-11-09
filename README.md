@@ -182,25 +182,26 @@ this chapter yet, so its articles have no edges.
 Mathlib's scope, each in a directory of its own under `LeanPool/` with a card,
 `LeanPool/projects/<slug>.yaml`: its title, summary, authors, sources, license,
 provenance, MSC2020 codes and main results, each a declaration with an informal
-statement. The chapter has a part per top-level MSC2020 class, the class of
-the first code a card lists, titled by its MSC2020 name, and an article per
+statement. The chapter has a section per top-level MSC2020 class, the class
+of the first code a card lists, titled by its MSC2020 name, and an article per
 card, titled by the card's title. An article quotes the card's summary, names
-the project's authors, links its sources (DOI, then arXiv, then URL) and its own
-repository at the commit the card gives, says who wrote its Lean proofs as the
-card's provenance does in Lean Pool's words, gives its license, with the
-copyright line Lean Pool keeps for a project published under MIT, and lists
-its main results: each informal statement quoted, with its declaration linked
-to Lean Pool's [documentation](https://leanpool.github.io/lean-pool/) and to
-its line at the pin when the scan below finds it. A main result the scan does
-not find keeps its statement and says so. The articles show no Lean signatures
-and have no edges: the projects do not import one another, and no Lean runs for
-this chapter.
+the project's authors, links its sources (DOI, then arXiv, then URL, then a
+paper or manuscript the card links), with the card's citation and notes on
+them, and its own repository at the commit the card gives, says who wrote its
+Lean proofs as the card's provenance does in Lean Pool's words, gives its
+license, quoting the copyright line or note Lean Pool's notice file keeps for
+a project published under MIT, and lists its main results: each informal
+statement quoted, with its declaration linked to Lean Pool's
+[documentation](https://leanpool.github.io/lean-pool/) and to its line at the
+pin when the scan below finds it. A main result the scan does not find keeps
+its statement and says so. The articles show no Lean signatures and have no
+edges, which need Lean, and no Lean runs for this chapter.
 
 1. `tools/refresh_lean_pool.py CHECKOUT` reads a checkout of Lean Pool and
    writes `data/lean-pool/source.json`, the commit with its Lean toolchain and
-   Mathlib, and `data/lean-pool/projects.json`, the cards with the copyright
-   lines from its `NOTICE.extra.yml`. For each main result it looks for the
-   declaration in the project's `.lean` files with `tools/trough/leansource.py`,
+   Mathlib, and `data/lean-pool/projects.json`, the cards with the notes its
+   `NOTICE.extra.yml` keeps for MIT projects. For each main result it looks for
+   the declaration in the project's `.lean` files with `tools/trough/leansource.py`,
    as the Formal Frontier chapter does, and records its module, line and kind
    and whether its text holds `sorry`; a name declared in two of the project's
    files is left out, since the project imports all of them together and Lean
@@ -213,9 +214,10 @@ this chapter.
    fails when the committed data differ from what the pin gives. The weekly
    run, or a dispatch with `newest`, moves the pin to Lean Pool's newest main
    commit whose Lean CI passed. A refresh writes nothing, and the workflow
-   fails, when Lean Pool is not Apache-2.0, a card lacks what the chapter reads
-   or has a license other than Apache-2.0 or MIT, or the scan places under half
-   the main results the last record placed.
+   fails, when Lean Pool is not Apache-2.0, a card lacks what the chapter reads,
+   has a license other than Apache-2.0 or MIT or names an entry module the
+   checkout lacks, or the scan places under half the main results the last
+   record placed.
 
 ## Working on it
 

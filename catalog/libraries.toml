@@ -3,11 +3,12 @@
 # Snapshot fields (head, head_date, toolchain, mathlib, lean_files) were read
 # from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08, and
 # drift as the libraries move; a Formal Frontier library's commit is the one
-# its data/ff/ record pins, so its entry has no head. map_status is
-# "live" (a chapter of this site), "elsewhere" (mapped on another site) or
-# "planned"; map_unit says what one article will be. A Formal Frontier
-# library's subject is its part of that chapter, one of SUBJECTS in
-# tools/trough/catalog.py.
+# its data/ff/ record pins, so its entry has no head. Nor has Lean Pool's: its
+# commit is the one data/lean-pool/ pins, and its snapshot fields were read at
+# that pin on 2026-11-08. map_status is "live" (a chapter of this site),
+# "elsewhere" (mapped on another site) or "planned"; map_unit says what one
+# article will be. A Formal Frontier library's subject is its part of that
+# chapter, one of SUBJECTS in tools/trough/catalog.py.
 
 
 [[library]]
@@ -317,8 +318,8 @@ name = "Lean Pool"
 repo = "LeanPool/lean-pool"
 group = "corpus"
 homepage = "https://leanpool.github.io/lean-pool/"
-what = "A pool of 334 permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa."
-informal_layer = "LeanPool/projects/<slug>.yaml: one card per project (334) with title, summary, branch, msc, tags, entry_module, source{url,github_repo,commit,arxiv,doi}, license, status, provenance, main_declarations and main_results[{declaration, informal, source_ref}]; NOTICE.extra.yml keeps the MIT projects' copyright lines. Plus a generated exposition site and a candidates/ queue."
+what = "A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa."
+informal_layer = "LeanPool/projects/<slug>.yaml: one card per project with title, summary, branch, msc, tags, entry_module, source{url,github_repo,commit,arxiv,doi}, license, status, provenance, main_declarations and main_results[{declaration, informal, source_ref}]; NOTICE.extra.yml keeps the MIT projects' copyright lines. Plus a generated exposition site and a candidates/ queue."
 formalization_yaml = "absent (each project's card plays its role)"
 license = "Apache-2.0"
 toolchain = "v4.35.0"
@@ -326,7 +327,7 @@ mathlib = "56a005855ea1"
 lean_files = 31452
 map_status = "live"
 map_unit = "project card"
-map_plan = "One article per project card in LeanPool/projects, in a part per top-level MSC2020 class: the card's summary, authors, sources, provenance and license, and its main results' informal statements, each with its declaration where the scan finds it in the project's files."
+map_plan = "One article per project card in LeanPool/projects, in a section per top-level MSC2020 class: the card's summary, authors, sources, provenance and license, and its main results' informal statements, each with its declaration where the scan finds it in the project's files."
 
 [[library]]
 id = "ff-adic-modules"

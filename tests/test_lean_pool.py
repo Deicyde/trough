@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import subprocess
 from pathlib import Path
 
@@ -185,6 +186,10 @@ def test_card_text_keeps_its_code_and_escapes_the_rest():
         "[SL_2(Z) : `<`Gamma_1(N), -I>] and AT`&`amp; or `<b>`"
 
 
+def record_of(tmp_path):
+    return pool(tmp_path)[1]
+
+
 def build(tmp_path):
     source, record, _ = pool(tmp_path)
     root, stats, parts = lean_pool.chapter(source, record)
@@ -193,7 +198,7 @@ def build(tmp_path):
     return root, stats, parts, render_tree(root, vault)
 
 
-def test_the_chapter_has_a_part_per_msc_class_in_order_and_an_article_per_card(tmp_path):
+def test_the_chapter_has_a_section_per_msc_class_in_order_and_an_article_per_card(tmp_path):
     root, stats, parts, _ = build(tmp_path)
     assert [part.title for part, _ in parts] == ["Associative rings and algebras", "Manifolds and cell complexes"]
     assert [part.slug for part, _ in parts] == ["16-associative-rings-and-algebras", "57-manifolds-and-cell-complexes"]
@@ -205,8 +210,15 @@ def test_the_chapter_has_a_part_per_msc_class_in_order_and_an_article_per_card(t
     assert dict(leaves[1].fields)["lean"] == "OneMfld.homeomorph_circle_or_unitInterval"
     assert parts[1][1] == {"OneMfld.homeomorph_circle_or_unitInterval":
                            f"{DOCS}/LeanPool/OneManifold/Main.html#OneMfld.homeomorph_circle_or_unitInterval"}
-    assert "No Lean is run for this chapter" in root.prose and "have no dependencies" in root.prose
+    assert "No Lean is run for this chapter" in root.prose and "have no dependencies, as edges" in root.prose
     assert "2 projects at commit [aaaaaaaa]" in root.prose and "Of the cards, 1 say AI, 0 human and 1 mix." in root.prose
+    assert "(2 sections)" in root.prose and "rebuilds daily from its main branch" in root.prose
+    assert "import one another" not in root.prose + lean_pool.NO_DEPENDS
+    # A class page of one article says so once, and a class name with a comma is quoted.
+    assert parts[0][0].prose.endswith("class 16, Associative rings and algebras: 1 article.")
+    moved = {**record_of(tmp_path), "projects": [project | {"msc": ["22A05"]} for project in record_of(tmp_path)["projects"]]}
+    _, _, regrouped = lean_pool.chapter(pool(tmp_path)[0], moved)
+    assert regrouped[0][0].prose.endswith("class 22, “Topological groups, Lie groups”: 2 articles, one per card.")
 
 
 def test_an_article_quotes_its_card_and_links_its_declarations(tmp_path):
@@ -226,6 +238,8 @@ def test_an_article_quotes_its_card_and_links_its_declarations(tmp_path):
             "(https://github.com/sweeneyde/1mfld/tree/83e961ba28dd8182e7bae844756aba614eb1512e).") in page
     assert "- Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially”" in page
     assert "- License: Apache-2.0.\n- MSC2020: 57N99, 54F65, 68V20." in page
+    # Its url is its repository, which the next row links.
+    assert "- Source:" not in page and "rebuilds daily from its main branch" in page
     art = files[Path("blueprint/roadmap/lean-pool/16-associative-rings-and-algebras/art.md")]
     assert "# Rings of order p \\* q over F_q[t]\n\n> Proves that `R` is \\*simple\\*." in art
     assert ("- Source: *A Book on Rings* by C. Writer, [doi:10.1016/S0095-8956(03)00073-X]"
@@ -246,6 +260,73 @@ def test_an_mit_project_without_a_copyright_line_in_the_notice_file_says_nothing
     note = lean_pool.project_note(source, art)
     assert "- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.\n" in note
     assert "copyright" not in note.lower()
+
+
+def test_a_note_that_is_not_a_copyright_line_is_quoted_as_the_notice_files_note(tmp_path):
+    source, record, _ = pool(tmp_path)
+    art = record["projects"][1] | {"notice": "The upstream MIT LICENSE file contains no copyright line."}
+    assert ("- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0. "
+            "Lean Pool's notice file notes: “The upstream MIT LICENSE file contains no copyright line.”\n"
+            in lean_pool.project_note(source, art))
+
+
+def test_a_provenance_note_under_source_is_kept(tmp_path):
+    nested = ART.replace("provenance_note: The README says so.\n", "").replace(
+        "  github_repo: someone/art\n", "  github_repo: someone/art\n  provenance_note: Nested under source.\n")
+    _, record, _ = lean_pool.read_pool(checkout(tmp_path, {"1mfld": ONE_MANIFOLD, "art": nested}), REV, "")
+    assert record["projects"][1]["provenance_note"] == "Nested under source."
+
+
+def test_the_source_row_links_a_paper_and_quotes_the_cards_notes_but_not_the_repository_twice(tmp_path):
+    commit = "c" * 40
+    project = {"source": {"title": "Measurement", "citation": "J. Math. Psych. 1 (1964), 233-247",
+                          "url": f"https://github.com/someone/art/tree/{commit}/", "paper_url": "https://example.org/a.pdf",
+                          "mathematical_source": "A theorem of B.", "note": "Most code is from elsewhere.",
+                          "github_repo": "someone/art", "commit": commit}}
+    assert lean_pool.source_links(project) == [
+        "- Source: *Measurement*, J. Math. Psych. 1 (1964), 233-247, [paper](https://example.org/a.pdf).",
+        "- Mathematical source, as the card gives it: “A theorem of B.”",
+        "- The card's note on its source: “Most code is from elsewhere.”",
+        f"- Project repository: [someone/art](https://github.com/someone/art), at commit [cccccccc]"
+        f"(https://github.com/someone/art/tree/{commit}).",
+    ]
+
+
+def test_a_main_declaration_whose_text_holds_sorry_is_stated_without_proof(tmp_path):
+    root = checkout(tmp_path)
+    (root / "LeanPool/Art/A.lean").write_text(
+        "namespace Art\n\ntheorem main : True := by\n  sorry\n\ntheorem twice : True := trivial\n\nend Art\n",
+        encoding="utf-8")
+    source, record, _ = lean_pool.read_pool(root, REV, "")
+    leaf, _ = lean_pool.article(source, record["projects"][1])
+    fields = dict(leaf.fields)
+    assert fields["statement"] == "formalized" and "proof" not in fields
+    assert "where its text contains `sorry`, so it is stated without proof" in leaf.notes[0][1]
+
+
+def test_the_front_matter_takes_the_kind_of_a_placed_main_result_and_claims_none_without_one(tmp_path):
+    source, record, _ = pool(tmp_path)
+    art = record["projects"][1]
+    results = [result | ({"module": None, "kind": None} if result["main"] else {}) for result in art["main_results"]]
+    results[1] |= {"module": "LeanPool.Art.A", "line": 9, "kind": "lemma", "sorry": False}
+    leaf, names = lean_pool.article(source, art | {"main_results": results})
+    assert leaf.fields == [("declaration", "lemma"), ("origin", "cited")] and names == {}
+    unplaced = [result | {"module": None, "kind": None} for result in art["main_results"]]
+    assert lean_pool.article(source, art | {"main_results": unplaced})[0].fields == []
+
+
+def test_a_card_that_does_not_read_is_named(tmp_path):
+    with pytest.raises(ValueError, match="LeanPool/projects/art.yaml: "):
+        lean_pool.read_pool(checkout(tmp_path / "a", {"art": ART.replace("slug: art", "slug: [art")}), REV, "")
+    with pytest.raises(ValueError, match="art.yaml: slug, title, summary, entry_module, license or provenance"):
+        lean_pool.read_pool(checkout(tmp_path / "b", {"art": ART.replace("entry_module: LeanPool.Art",
+                                                                         "entry_module: [LeanPool.Art]")}), REV, "")
+    with pytest.raises(ValueError, match="its entry module, LeanPool/Gone.lean, is not in the checkout"):
+        lean_pool.read_pool(checkout(tmp_path / "c", {"art": ART.replace("LeanPool.Art", "LeanPool.Gone")}), REV, "")
+    root = checkout(tmp_path / "d")
+    (root / "LeanPool/Art/A.lean").write_bytes(b"theorem main \xff")
+    with pytest.raises(ValueError, match="LeanPool/Art/A.lean: "):
+        lean_pool.read_pool(root, REV, "")
 
 
 def git(path: Path, *args: str) -> None:
@@ -288,6 +369,10 @@ def test_the_refresh_refuses_a_record_that_places_under_half_the_last(tmp_path):
     repo = repository(checkout(tmp_path / "lean-pool"))
     assert refresh_lean_pool.refresh(repo, out) == ["places 2 main results, under half the 5 the last record placed"]
     assert not (out / "source.json").exists()
+    # A last record that does not read stops the refresh too.
+    (out / "projects.json").write_text("{", encoding="utf-8")
+    problems = refresh_lean_pool.refresh(repo, out)
+    assert len(problems) == 1 and problems[0].startswith("projects.json, the last record, does not read")
 
 
 @pytest.mark.skipif(not (ROOT / "data" / "lean-pool" / "projects.json").is_file(), reason="no Lean Pool data")
@@ -307,7 +392,7 @@ def test_the_committed_data_build_the_chapter():
         assert all(links[lean_pool.msc_class(project)][name] == url for name, url in names.items())
     assert all(isinstance(part, Container) and len(part.slug) > 3 for part, _ in parts)
     # Lean Pool's CI checks that every main declaration exists, so the scan should place each one; the only
-    # names it can't read are those Lean gives anonymous instances.
+    # names it can't read are those Lean gives anonymous instances, and there are few of them.
     missed = [result["declaration"] for project in record["projects"] for result in project["main_results"]
               if result["main"] and not result["module"]]
-    assert all(name.split(".")[-1].startswith("inst") for name in missed), missed
+    assert len(missed) <= 3 and all(re.fullmatch(r"inst[A-Z]\w*", name.split(".")[-1]) for name in missed), missed
