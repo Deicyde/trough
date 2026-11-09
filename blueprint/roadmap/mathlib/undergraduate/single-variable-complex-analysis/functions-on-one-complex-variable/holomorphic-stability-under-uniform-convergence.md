@@ -38,5 +38,5 @@ TendstoLocallyUniformlyOn.differentiableOn.{u_1, u_2} {E : Type u_1} {ι : Type 
 ## Sources
 
 - [Mathlib documentation: `TendstoLocallyUniformlyOn.differentiableOn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/LocallyUniformLimit.html#TendstoLocallyUniformlyOn.differentiableOn)
-- [Source of `TendstoLocallyUniformlyOn.differentiableOn` in Mathlib/Analysis/Complex/LocallyUniformLimit.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/LocallyUniformLimit.lean#L133)
-- [Mathlib undergraduate list: Single Variable Complex Analysis › Functions on one complex variable](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L400)
+- [Source of `TendstoLocallyUniformlyOn.differentiableOn` in Mathlib/Analysis/Complex/LocallyUniformLimit.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/LocallyUniformLimit.lean#L133)
+- [Mathlib undergraduate list: Single Variable Complex Analysis › Functions on one complex variable](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L400)

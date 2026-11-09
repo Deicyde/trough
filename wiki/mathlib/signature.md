@@ -31,7 +31,7 @@ $$\operatorname{sgn}(\sigma) = \prod_{i < j} \frac{\sigma(j) - \sigma(i)}{j - i}
 
 ## Related concepts
 
-The alternating group, as the kernel of the signature, is the starting point for the fact that [$A_n$ is simple for $n \ge 5$](trough:alternatingGroup.isSimpleGroup) (see [simple group](trough:IsSimpleGroup)). The determinant is defined through the signature, as the signed sum above. [Alternating maps](trough:AlternatingMap) are the multilinear maps that vanish whenever two arguments coincide; for such a map $f$ in finitely many arguments, with values in a module over a ring, $f(v_{\sigma(1)}, \dots, v_{\sigma(n)}) = \operatorname{sgn}(\sigma) f(v_1, \dots, v_n)$ for every permutation $\sigma$. The [abelianization](trough:Abelianization) of $S_n$ for $n \ge 2$ is the two-element group, and the signature is the quotient map onto it.
+The alternating group, as the kernel of the signature, is the starting point for the fact that [$A_n$ is simple for $n \ge 5$](trough:alternatingGroup.isSimpleGroup) (see [simple group](trough:IsSimpleGroup)). The determinant is defined through the signature, as the signed sum above. [Alternating maps](trough:AlternatingMap) are the multilinear maps that vanish whenever two arguments coincide; for such a map $f$ in finitely many arguments, with values in a module over a ring, $f(v_{\sigma(1)}, \dots, v_{\sigma(n)}) = \operatorname{sgn}(\sigma) f(v_1, \dots, v_n)$ for every permutation $\sigma$. The [abelianization](trough:Group.Abelianization) of $S_n$ for $n \ge 2$ is the two-element group, and the signature is the quotient map onto it.
 
 ## In Mathlib
 

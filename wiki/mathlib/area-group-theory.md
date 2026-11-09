@@ -36,7 +36,7 @@ The [second isomorphism theorem](trough:QuotientGroup.quotientInfEquivProdNormal
 gives $H/(H \cap N) \cong HN/N$ for a subgroup $H$ and a normal subgroup $N$, and the
 [third](trough:QuotientGroup.quotientQuotientEquivQuotient) gives
 $(G/N)/(M/N) \cong G/M$ for normal subgroups $N \le M$. The largest abelian quotient of
-$G$ is its [abelianization](trough:Abelianization), the quotient by the commutator
+$G$ is its [abelianization](trough:Group.Abelianization), the quotient by the commutator
 subgroup; morphisms from $G$ to an abelian group correspond exactly to morphisms from the abelianization.
 
 ## Actions and counting

@@ -26,5 +26,5 @@ Finset.lubell_yamamoto_meshalkin_inequality_sum_card_div_choose.{u_1, u_2} {𝕜
 ## Sources
 
 - [Mathlib documentation: `Finset.lubell_yamamoto_meshalkin_inequality_sum_card_div_choose`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/LYM.html#Finset.lubell_yamamoto_meshalkin_inequality_sum_card_div_choose)
-- [Source of `Finset.lubell_yamamoto_meshalkin_inequality_sum_card_div_choose` in Mathlib/Combinatorics/SetFamily/LYM.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/SetFamily/LYM.lean#L198)
-- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L513)
+- [Source of `Finset.lubell_yamamoto_meshalkin_inequality_sum_card_div_choose` in Mathlib/Combinatorics/SetFamily/LYM.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SetFamily/LYM.lean#L198)
+- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L513)

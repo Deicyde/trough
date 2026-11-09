@@ -19,5 +19,5 @@ basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix.{u_1, u_2, u_3, u_4, u_
 ## Sources
 
 - [Mathlib documentation: `basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Basis.html#basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix)
-- [Source of `basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix` in Mathlib/LinearAlgebra/Matrix/Basis.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/Matrix/Basis.lean#L201)
-- [Mathlib undergraduate list: Linear algebra › Matrices](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L45)
+- [Source of `basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix` in Mathlib/LinearAlgebra/Matrix/Basis.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Matrix/Basis.lean#L201)
+- [Mathlib undergraduate list: Linear algebra › Matrices](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L45)

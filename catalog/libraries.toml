@@ -46,8 +46,8 @@ lean_files = 27084
 head = "ace60277c4c5"
 head_date = "2026-11-07"
 map_status = "live"
-map_unit = "named declaration"
-map_plan = "One article per declaration a roadmap's status names as a result or notable definition, as Tau Ceti has it: its docstring, signature and dependencies, in a section per roadmap."
+map_unit = "named result"
+map_plan = "One article per declaration a roadmap's status names as a result or notable definition, and per result Tau Ceti's docstrings name, the forms of one result together, as Tau Ceti has it: its docstring, signature and dependencies, in a part per top-level area with a section per roadmap or area of modules."
 
 [[library]]
 id = "atlas-lean"

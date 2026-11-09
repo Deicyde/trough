@@ -25,6 +25,6 @@ The 21 problems with a statement whose `AMS` attribute names 14, Algebraic geome
 - [The Poisson Conjecture](../../../arxiv/part-03/the-poisson-conjecture.md)
 - [The Birch and Swinnerton-Dyer (BSD) Conjecture](../../../millennium-problems/the-birch-and-swinnerton-dyer-bsd-conjecture.md)
 
-## [Part 2 of 2](part-02/README.md)
+## [Lam--Litt conjecture](part-02/README.md)
 
 - [Lam--Litt conjecture](../../../litts-problems/lam-litt-conjecture.md)

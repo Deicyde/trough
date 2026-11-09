@@ -31,9 +31,9 @@ Stirling.tendsto_stirlingSeq_sqrt_pi :
 ## Sources
 
 - [Mathlib documentation: `Stirling.tendsto_stirlingSeq_sqrt_pi`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecialFunctions/Stirling.html#Stirling.tendsto_stirlingSeq_sqrt_pi)
-- [Source of `Stirling.tendsto_stirlingSeq_sqrt_pi` in Mathlib/Analysis/SpecialFunctions/Stirling.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SpecialFunctions/Stirling.lean#L210)
-- [Freek Wiedijk's 100 theorems, no. 90](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L463)
-- [1000+ theorems list: Q470877](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L471)
+- [Source of `Stirling.tendsto_stirlingSeq_sqrt_pi` in Mathlib/Analysis/SpecialFunctions/Stirling.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SpecialFunctions/Stirling.lean#L210)
+- [Freek Wiedijk's 100 theorems, no. 90](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L463)
+- [1000+ theorems list: Q470877](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L471)
 - [1000+ theorems project: Q470877](https://1000-plus.github.io/all.html?length=-1#Q470877)
 - [Wikipedia: Stirling's theorem](https://en.wikipedia.org/wiki/Stirling's_theorem)
 - [Wikidata: Q470877](https://www.wikidata.org/wiki/Q470877)

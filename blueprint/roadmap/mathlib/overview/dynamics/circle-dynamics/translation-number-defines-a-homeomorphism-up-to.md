@@ -21,5 +21,5 @@ CircleDeg1Lift.semiconj_of_bijective_of_translationNumber_eq {f₁ f₂ : Circle
 ## Sources
 
 - [Mathlib documentation: `CircleDeg1Lift.semiconj_of_bijective_of_translationNumber_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.html#CircleDeg1Lift.semiconj_of_bijective_of_translationNumber_eq)
-- [Source of `CircleDeg1Lift.semiconj_of_bijective_of_translationNumber_eq` in Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean#L884)
-- [Mathlib overview: Dynamics › Circle dynamics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L560)
+- [Source of `CircleDeg1Lift.semiconj_of_bijective_of_translationNumber_eq` in Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean#L884)
+- [Mathlib overview: Dynamics › Circle dynamics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L560)

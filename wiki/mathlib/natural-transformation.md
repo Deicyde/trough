@@ -36,7 +36,7 @@ two natural transformations with the same components are equal.
   $\det(\varphi(A)) = \varphi(\det A)$, where $\varphi$ is applied entrywise, because the
   determinant is a polynomial with integer coefficients in the entries. So the determinant is a
   natural transformation between two functors from commutative rings to groups.
-- **[Abelianization](trough:Abelianization).** The quotient maps $G \to G/[G,G]$ form a natural
+- **[Abelianization](trough:Group.Abelianization).** The quotient maps $G \to G/[G,G]$ form a natural
   transformation from the identity functor on groups to the functor sending a group to its
   abelianization.
 - **Cones.** A cone over a diagram $F : J \to C$ with apex $X$ is a family of morphisms from $X$ to

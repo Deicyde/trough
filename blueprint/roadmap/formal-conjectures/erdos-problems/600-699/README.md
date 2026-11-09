@@ -94,6 +94,6 @@ The Erdős problems numbered 600 to 699 that Formal Conjectures states, one arti
 - [Erdős Problem 697](part-04/erdos-problem-697.md)
 - [Erdős Problem 698](part-04/erdos-problem-698.md)
 
-## [Part 5 of 5](part-05/README.md)
+## [Erdős Problem 699](part-05/README.md)
 
 - [Erdős Problem 699](part-05/erdos-problem-699.md)

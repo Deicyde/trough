@@ -33,8 +33,8 @@ closure_convexHull_extremePoints.{u_1} {E : Type u_1} [AddCommGroup E] [_root_.M
 ## Sources
 
 - [Mathlib documentation: `closure_convexHull_extremePoints`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/KreinMilman.html#closure_convexHull_extremePoints)
-- [Source of `closure_convexHull_extremePoints` in Mathlib/Analysis/Convex/KreinMilman.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/KreinMilman.lean#L94)
-- [1000+ theorems list: Q642620](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L655)
+- [Source of `closure_convexHull_extremePoints` in Mathlib/Analysis/Convex/KreinMilman.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/KreinMilman.lean#L94)
+- [1000+ theorems list: Q642620](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L655)
 - [1000+ theorems project: Q642620](https://1000-plus.github.io/all.html?length=-1#Q642620)
 - [Wikipedia: Krein–Milman theorem](https://en.wikipedia.org/wiki/Krein%E2%80%93Milman_theorem)
 - [Wikidata: Q642620](https://www.wikidata.org/wiki/Q642620)

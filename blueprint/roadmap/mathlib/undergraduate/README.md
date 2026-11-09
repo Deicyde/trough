@@ -1,6 +1,6 @@
 # Undergraduate mathematics
 
-The undergraduate curriculum Mathlib tracks ([docs/undergrad.yaml](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml)). Mathlib does not have 167 of its 566 items; they have no article here.
+The undergraduate curriculum Mathlib tracks ([docs/undergrad.yaml](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml)). Mathlib does not have 167 of its 566 items; they have no article here.
 
 - [Linear algebra](linear-algebra/README.md)
 - [Group Theory](group-theory/README.md)

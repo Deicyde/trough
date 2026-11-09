@@ -23,5 +23,5 @@ Fintype.exists_lt_card_fiber_of_mul_lt_card.{u, v} {α : Type u} {β : Type v} [
 ## Sources
 
 - [Mathlib documentation: `Fintype.exists_lt_card_fiber_of_mul_lt_card`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Pigeonhole.html#Fintype.exists_lt_card_fiber_of_mul_lt_card)
-- [Source of `Fintype.exists_lt_card_fiber_of_mul_lt_card` in Mathlib/Combinatorics/Pigeonhole.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Pigeonhole.lean#L383)
-- [Mathlib overview: Combinatorics › Pigeonhole principles](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L500)
+- [Source of `Fintype.exists_lt_card_fiber_of_mul_lt_card` in Mathlib/Combinatorics/Pigeonhole.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Pigeonhole.lean#L383)
+- [Mathlib overview: Combinatorics › Pigeonhole principles](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L500)

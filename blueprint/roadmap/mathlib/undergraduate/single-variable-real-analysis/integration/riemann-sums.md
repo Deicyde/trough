@@ -19,5 +19,5 @@ BoxIntegral.integralSum.{u, v, w} {ι : Type u} {E : Type v} {F : Type w} [Norme
 ## Sources
 
 - [Mathlib documentation: `BoxIntegral.integralSum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/BoxIntegral/Basic.html#BoxIntegral.integralSum)
-- [Source of `BoxIntegral.integralSum` in Mathlib/Analysis/BoxIntegral/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/BoxIntegral/Basic.lean#L77)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L341)
+- [Source of `BoxIntegral.integralSum` in Mathlib/Analysis/BoxIntegral/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/BoxIntegral/Basic.lean#L77)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L341)

@@ -133,5 +133,5 @@ numbers, which [agrees with the general one](https://leanprover-community.github
 ## Sources
 
 - [Mathlib documentation: `ContFract`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/ContinuedFractions/Basic.html#ContFract)
-- [Source of `ContFract` in Mathlib/Algebra/ContinuedFractions/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/ContinuedFractions/Basic.lean#L227)
-- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L24)
+- [Source of `ContFract` in Mathlib/Algebra/ContinuedFractions/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/ContinuedFractions/Basic.lean#L227)
+- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L24)

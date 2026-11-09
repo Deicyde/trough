@@ -123,5 +123,5 @@ in types of the same universe as the morphisms of $C$.
 ## Sources
 
 - [Mathlib documentation: `CategoryTheory.NatTrans`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/NatTrans.html#CategoryTheory.NatTrans)
-- [Source of `CategoryTheory.NatTrans` in Mathlib/CategoryTheory/NatTrans.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/CategoryTheory/NatTrans.lean#L47)
-- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L6)
+- [Source of `CategoryTheory.NatTrans` in Mathlib/CategoryTheory/NatTrans.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/CategoryTheory/NatTrans.lean#L47)
+- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L6)

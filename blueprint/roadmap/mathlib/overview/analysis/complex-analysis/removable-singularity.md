@@ -28,5 +28,5 @@ Complex.differentiableOn_update_limUnder_insert_of_isLittleO.{u} {E : Type u} [N
 ## Sources
 
 - [Mathlib documentation: `Complex.differentiableOn_update_limUnder_insert_of_isLittleO`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/RemovableSingularity.html#Complex.differentiableOn_update_limUnder_insert_of_isLittleO)
-- [Source of `Complex.differentiableOn_update_limUnder_insert_of_isLittleO` in Mathlib/Analysis/Complex/RemovableSingularity.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/RemovableSingularity.lean#L88)
-- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L373)
+- [Source of `Complex.differentiableOn_update_limUnder_insert_of_isLittleO` in Mathlib/Analysis/Complex/RemovableSingularity.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/RemovableSingularity.lean#L88)
+- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L373)

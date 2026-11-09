@@ -18,9 +18,9 @@ ComputablePred.rice (C : Set (ℕ →. ℕ)) (h : ComputablePred fun c => c.eval
 ## Sources
 
 - [Mathlib documentation: `ComputablePred.rice`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/Halting.html#ComputablePred.rice)
-- [Source of `ComputablePred.rice` in Mathlib/Computability/Halting.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/Halting.lean#L31)
-- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L608)
-- [1000+ theorems list: Q1893717](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1924)
+- [Source of `ComputablePred.rice` in Mathlib/Computability/Halting.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/Halting.lean#L31)
+- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L608)
+- [1000+ theorems list: Q1893717](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1924)
 - [1000+ theorems project: Q1893717](https://1000-plus.github.io/all.html?length=-1#Q1893717)
 - [Wikipedia: Rice's theorem](https://en.wikipedia.org/wiki/Rice's_theorem)
 - [Wikidata: Q1893717](https://www.wikidata.org/wiki/Q1893717)

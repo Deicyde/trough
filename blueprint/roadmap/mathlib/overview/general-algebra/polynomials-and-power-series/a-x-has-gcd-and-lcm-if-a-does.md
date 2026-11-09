@@ -129,5 +129,5 @@ fractions is not used.
 ## Sources
 
 - [Mathlib documentation: `Polynomial.normalizedGcdMonoid`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Content.html#Polynomial.normalizedGcdMonoid)
-- [Source of `Polynomial.normalizedGcdMonoid` in Mathlib/RingTheory/Polynomial/Content.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/Polynomial/Content.lean#L457)
-- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L102)
+- [Source of `Polynomial.normalizedGcdMonoid` in Mathlib/RingTheory/Polynomial/Content.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Polynomial/Content.lean#L457)
+- [Mathlib overview: General algebra › Polynomials and power series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L102)

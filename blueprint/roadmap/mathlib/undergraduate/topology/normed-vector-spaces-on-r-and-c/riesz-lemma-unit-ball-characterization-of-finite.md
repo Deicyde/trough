@@ -19,11 +19,11 @@ FiniteDimensional.of_isCompact_closedBall.{u, u_1} (𝕜 : Type u) [Nontrivially
 
 ## Proof depends on
 
-- [Finite-dimensional normed spaces over complete normed fields are complete](../../../overview/analysis/normed-vector-spaces-banach-spaces/finite-dimensional-normed-spaces-over-complete-n.md)
+- [Hausdorff space](../../../overview/topology/general-topology/part-01/hausdorff-space.md)
 - [Topology of a metric space](../topology-and-metric-spaces/topology-of-a-metric-space.md)
 
 ## Sources
 
 - [Mathlib documentation: `FiniteDimensional.of_isCompact_closedBall`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Module/FiniteDimension.html#FiniteDimensional.of_isCompact_closedBall)
-- [Source of `FiniteDimensional.of_isCompact_closedBall` in Mathlib/Analysis/Normed/Module/FiniteDimension.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Module/FiniteDimension.lean#L473)
-- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L435)
+- [Source of `FiniteDimensional.of_isCompact_closedBall` in Mathlib/Analysis/Normed/Module/FiniteDimension.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Module/FiniteDimension.lean#L476)
+- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L435)

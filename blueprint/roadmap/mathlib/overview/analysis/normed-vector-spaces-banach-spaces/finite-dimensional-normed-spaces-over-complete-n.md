@@ -3,7 +3,7 @@
 A finite-dimensional subspace is complete.
 
 ```lean
-Submodule.complete_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2}
+Submodule.isComplete_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2}
   [NontriviallyNormedField 𝕜] [CompleteSpace 𝕜] [AddCommGroup E] [UniformSpace E] [T2Space E]
   [IsUniformAddGroup E] [_root_.Module 𝕜 E] [ContinuousSMul 𝕜 E] (s : Submodule 𝕜 E)
   [FiniteDimensional 𝕜 ↥s] : IsComplete ↑s
@@ -19,15 +19,20 @@ Submodule.complete_of_finiteDimensional.{u_1, u_2} {𝕜 : Type u_1} {E : Type u
 
 ## Proof depends on
 
-- [Basis](../../linear-algebra/fundamentals/basis.md)
+- [Affine space](../../geometry/affine-and-euclidean-geometry/affine-space.md)
 - [Cardinal](../../logic-and-computation/set-theory/cardinals/cardinal.md)
-- [Equivalence of norms in finite dimension](equivalence-of-norms-in-finite-dimension.md)
-- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
+- [Closure](../../topology/general-topology/part-01/closure.md)
+- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
+- [Field $\R$ of real numbers](../../../undergraduate/ring-theory/field-theory/field-r-of-real-numbers.md)
+- [Induced topology](../../topology/general-topology/part-01/induced-topology.md)
+- [Isomorphism with $K^n$](../../linear-algebra/finite-dimensional-vector-spaces/isomorphism-with-k-n.md)
+- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
 - [Local ring](../../general-algebra/rings/local-ring.md)
+- [Quotient space (Fundamentals)](../../linear-algebra/fundamentals/quotient-space.md)
 - [Topological ring](../../topology/topological-algebra/topological-ring.md)
 
 ## Sources
 
-- [Mathlib documentation: `Submodule.complete_of_finiteDimensional`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/Module/FiniteDimension.html#Submodule.complete_of_finiteDimensional)
-- [Source of `Submodule.complete_of_finiteDimensional` in Mathlib/Topology/Algebra/Module/FiniteDimension.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Algebra/Module/FiniteDimension.lean#L519)
-- [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L282)
+- [Mathlib documentation: `Submodule.isComplete_of_finiteDimensional`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/Module/FiniteDimension.html#Submodule.isComplete_of_finiteDimensional)
+- [Source of `Submodule.isComplete_of_finiteDimensional` in Mathlib/Topology/Algebra/Module/FiniteDimension.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Algebra/Module/FiniteDimension.lean#L551)
+- [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L282)

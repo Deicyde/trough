@@ -81,10 +81,10 @@ and of the first Sylow theorem assume the group is finite.
 ## Sources
 
 - [Mathlib documentation: `Subgroup.card_subgroup_dvd_card`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Coset/Card.html#Subgroup.card_subgroup_dvd_card)
-- [Source of `Subgroup.card_subgroup_dvd_card` in Mathlib/GroupTheory/Coset/Card.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/Coset/Card.lean#L66)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L59)
-- [Freek Wiedijk's 100 theorems, no. 71](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L358)
-- [1000+ theorems list: Q505798](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L506)
+- [Source of `Subgroup.card_subgroup_dvd_card` in Mathlib/GroupTheory/Coset/Card.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Coset/Card.lean#L70)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L59)
+- [Freek Wiedijk's 100 theorems, no. 71](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L358)
+- [1000+ theorems list: Q505798](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L506)
 - [1000+ theorems project: Q505798](https://1000-plus.github.io/all.html?length=-1#Q505798)
 - [Wikipedia: Lagrange's theorem (group theory)](https://en.wikipedia.org/wiki/Lagrange's_theorem_%28group_theory%29)
 - [Wikidata: Q505798](https://www.wikidata.org/wiki/Q505798)
