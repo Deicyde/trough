@@ -1,0 +1,7 @@
+{
+ "repo": "teorth/analysis",
+ "rev": "a19a5bfadc616467562995b75f46035232841943",
+ "date": "2026-10-17T20:29:34-04:00",
+ "toolchain": "v4.29.0-rc8",
+ "mathlib": "698d2b68b870f1712040ab0c233d34372d4b56df"
+}

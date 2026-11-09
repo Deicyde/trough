@@ -29,6 +29,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and its counts of test and API statements, with the FC100 lists, from [google-deepmind/formal-conjectures at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0. They are read from the source text, without Lean.
 
+## Analysis I companion
+
+- `data/analysis/sections.json`: each section module's title, module docstring and imports of other sections, its labelled items with the docstring, Lean statement and line of each declaration carrying them and whether its value holds `sorry`, the chapter titles of the READMEs and the titles of the other modules, from [teorth/analysis at a19a5bfa](https://github.com/teorth/analysis/tree/a19a5bfadc616467562995b75f46035232841943), Apache-2.0. They are read from the source text, without Lean. `data/analysis/source.json` records the commit, its Lean toolchain and Mathlib.
+
 ## Libraries
 
 ### Core library
@@ -54,7 +58,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
 - [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
-- [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory.
+- [Analysis I companion](https://github.com/teorth/analysis) at a19a5bfadc61: Terence Tao's Lean companion to his textbook Analysis I, a module per section (61 sections, 4 chapter epilogues and 9 appendix sections), with a companion to his An introduction to measure theory (a Notation module and 17 sections of its Chapter 1) and 15 modules outside both books.
 
 ### Large corpora
 
