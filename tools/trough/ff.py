@@ -300,6 +300,32 @@ def is_apache(license_text: str) -> bool:
     return " ".join(license_text.split()).startswith("Apache License Version 2.0, January 2004")
 
 
+def facts_of(config: formalization.Formalization) -> dict:
+    """What a formalization.yaml states about its project, as a record keeps it for facts() and literature():
+    the project, review, automation and sources, each text on one line."""
+    text = formalization.text_of
+    return {
+        "project": {"name": text(config.project.get("name")), "description": text(config.project.get("description")),
+                    "authors": [text(author) for author in config.project.get("authors") or []]},
+        "review": {"status": text(config.review.get("status")), "notes": text(config.review.get("notes")),
+                   "reviewers": [text(reviewer) for reviewer in config.review.get("reviewers") or []]},
+        "automation": {
+            "methods": [{key: text(method.get(key)) for key in AUTOMATION if method.get(key)}
+                        | ({"models": [text(model) for model in method["models"]]} if method.get("models") else {})
+                        for method in config.automation.get("methods") or [] if isinstance(method, dict)],
+            "notes": text(config.automation.get("notes")),
+        },
+        "sources": [{key: value for key, value in {
+            "title": text(source.get("title")),
+            "authors": [text(author) for author in source.get("authors") or []],
+            "type": text(source.get("type")),
+            "relationship": text(source.get("relationship")),
+            "location": text(source.get("location")),
+            "url": text(source.get("id")) if re.match(r"https?://", str(source.get("id") or "")) else "",
+        }.items() if value} for source in config.sources],
+    }
+
+
 def read_library(checkout: Path, name: str, rev: str, date: str, paths: set[str]) -> dict:
     """A library's record at its commit: *paths* are every file the commit has. Raises ValueError when
     the library is not Apache-2.0, so none of its text is quoted."""
@@ -340,24 +366,7 @@ def read_library(checkout: Path, name: str, rev: str, date: str, paths: set[str]
         "toolchain": toolchain.read_text(encoding="utf-8").strip().split(":")[-1] if toolchain.is_file() else "",
         "mathlib": mathlib,
         "license": license_name,
-        "project": {"name": text(config.project.get("name")), "description": text(config.project.get("description")),
-                    "authors": [text(author) for author in config.project.get("authors") or []]},
-        "review": {"status": text(config.review.get("status")), "notes": text(config.review.get("notes")),
-                   "reviewers": [text(reviewer) for reviewer in config.review.get("reviewers") or []]},
-        "automation": {
-            "methods": [{key: text(method.get(key)) for key in AUTOMATION if method.get(key)}
-                        | ({"models": [text(model) for model in method["models"]]} if method.get("models") else {})
-                        for method in config.automation.get("methods") or [] if isinstance(method, dict)],
-            "notes": text(config.automation.get("notes")),
-        },
-        "sources": [{key: value for key, value in {
-            "title": text(source.get("title")),
-            "authors": [text(author) for author in source.get("authors") or []],
-            "type": text(source.get("type")),
-            "relationship": text(source.get("relationship")),
-            "location": text(source.get("location")),
-            "url": text(source.get("id")) if re.match(r"https?://", str(source.get("id") or "")) else "",
-        }.items() if value} for source in config.sources],
+        **facts_of(config),
         "depends": deps,
         "related": [{"name": match.group(1), "relationship": text(item.get("relationship"))}
                     for item in config.related

@@ -127,11 +127,14 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
-                   tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None) -> str:
+                   tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
+                   anthropic_flt: dict | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
-    commit each Formal Frontier library's record pins, by library id."""
+    commit each Formal Frontier library's record pins, by library id; *anthropic_flt* is the source record
+    of Anthropic's Fermat's Last Theorem, whose commit it pins."""
     formal_frontier = formal_frontier or {}
+    pinned = formal_frontier | ({"anthropic-flt": anthropic_flt["rev"]} if anthropic_flt else {})
     lines = [
         "# Sources",
         "",
@@ -186,6 +189,17 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "[FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source "
             "text, without Lean.",
         ]
+    if anthropic_flt:
+        lines += [
+            "",
+            "## Fermat's Last Theorem (Anthropic)",
+            "",
+            f"- `data/anthropic-flt/source.json` and `landmarks.json`: the facts of the formalization.yaml, the steps of "
+            f"PROOF-PATH.md, and the landmark theorems of [{anthropic_flt['repo']} at {anthropic_flt['rev'][:8]}]"
+            f"(https://github.com/{anthropic_flt['repo']}/tree/{anthropic_flt['rev']}), each with its route stage, aliases "
+            "and nearest landmarks from html/data/meta.js and html/data/edges.js and its Lean statement from its file "
+            "under Theorems/, Apache-2.0. Nothing is read with Lean.",
+        ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:
         members = [library for library in libraries if library["group"] == group]
@@ -193,7 +207,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             lines.append(f"### {heading}")
             lines.append("")
             for library in members:
-                head = formal_frontier[library["id"]][:12] if library["id"] in formal_frontier else library.get("head")
+                head = pinned[library["id"]][:12] if library["id"] in pinned else library.get("head")
                 snapshot = f" at {head}" if head else ""
                 lines.append(f"- [{library['name']}]({repo_url(library)}){snapshot}: {library.get('what', '')}")
             lines.append("")

@@ -3,9 +3,10 @@
 # Snapshot fields (head, head_date, toolchain, mathlib, lean_files) were read
 # from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08, and
 # drift as the libraries move; a Formal Frontier library's commit is the one
-# its data/ff/ record pins, so its entry has no head. map_status is
-# "live" (a chapter of this site), "elsewhere" (mapped on another site) or
-# "planned"; map_unit says what one article will be. A Formal Frontier
+# its data/ff/ record pins, and Anthropic's FLT's is the one
+# data/anthropic-flt/source.json pins, so those entries have no head.
+# map_status is "live" (a chapter of this site), "elsewhere" (mapped on another
+# site) or "planned"; map_unit says what one article will be. A Formal Frontier
 # library's subject is its part of that chapter, one of SUBJECTS in
 # tools/trough/catalog.py.
 
@@ -262,17 +263,15 @@ name = "Fermat's Last Theorem (Anthropic)"
 repo = "anthropics/fermats-last-theorem"
 group = "corpus"
 what = "A complete machine-checked proof of FLT via Frey-Serre-Ribet-Wiles-Taylor-Wiles, from the three standard axioms; checked by comparator and the nanoda kernel."
-informal_layer = "PROOF-PATH.md (97 lines: 'The route of the proof' plus 'Exact strength of the named steps', naming each step's Lean theorem) and the html/ DAG pages"
+informal_layer = "PROOF-PATH.md (97 lines: 'The route of the proof' plus 'Exact strength of the named steps', naming each step's Lean theorem); html/data/meta.js (29,511 theorems, 49 landmarks, 30 aliases, a route stage for each) and html/data/edges.js (the citation DAG, 106,853 edges from the proof modules' imports)"
 formalization_yaml = "v0.4; 2 main_results naming declarations (fermat_last_theorem in Theorems/Thm_fermat_last_theorem.lean, flt_mathlib in FinalCheck.lean), comparator_config verification/comparator/config.json"
 license = "Apache-2.0"
 toolchain = "v4.33.1"
 mathlib = "db584cd6d46c"
 lean_files = 60478
-head = "6e837e753555"
-head_date = "2026-09-24"
-map_status = "planned"
-map_unit = "proof step"
-map_plan = "One article per step of PROOF-PATH.md, linked to the Lean theorem it names."
+map_status = "live"
+map_unit = "landmark theorem"
+map_plan = "The 49 landmark theorems of its web pages, one article each in the route steps of PROOF-PATH.md, with the citation DAG between them."
 
 [[library]]
 id = "openai-math"
