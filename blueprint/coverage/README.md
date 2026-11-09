@@ -58,8 +58,8 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Formal Frontier / Toric ideals | `DECOMPOSED` | [3 highlights of its formalization.yaml](../roadmap/formal-frontier/commutative-algebra/toric-ideals/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Valuation integers | `DECOMPOSED` | [5 highlights of its formalization.yaml](../roadmap/formal-frontier/number-theory/valuation-integers/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Vector bundles | `DECOMPOSED` | [4 highlights of its formalization.yaml and 1 headline result](../roadmap/formal-frontier/topology/vector-bundles/README.md) whose declarations the scan finds in the linked file, one article each. |
+| Formal Conjectures | `DECOMPOSED` | [1,814 problem files](../roadmap/formal-conjectures/README.md) that state a research or textbook statement, one article each, with a card per statement. |
 | ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>. |
-| Formal Conjectures | `DEFERRED` | Planned map, by problem: One article per problem file (about 2,000), grouped by source; most are stated without a proof. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |
 | CSLib | `DEFERRED` | Planned map, by documented declaration: One article per documented public declaration. |
 | Foundation | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration; the Zoo's inclusion diagrams between logics as edges. |
