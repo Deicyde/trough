@@ -240,6 +240,14 @@ def test_an_article_quotes_its_card_and_links_its_declarations(tmp_path):
     assert "- [Rings of order p \\* q over F_q\\[t\\]](art.md)" in part
 
 
+def test_an_mit_project_without_a_copyright_line_in_the_notice_file_says_nothing_of_one(tmp_path):
+    source, record, _ = pool(tmp_path)
+    art = record["projects"][1] | {"notice": None}
+    note = lean_pool.project_note(source, art)
+    assert "- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.\n" in note
+    assert "copyright" not in note.lower()
+
+
 def git(path: Path, *args: str) -> None:
     env = {**os.environ, "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@example.org", "GIT_COMMITTER_NAME": "t",
            "GIT_COMMITTER_EMAIL": "t@example.org", "GIT_AUTHOR_DATE": "2026-11-08T12:00:00+02:00",

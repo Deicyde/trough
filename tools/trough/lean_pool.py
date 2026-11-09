@@ -381,8 +381,8 @@ def project_note(source: dict, project: dict) -> str:
                 + (f" The card's note: “{text(project['provenance_note'])}”" if project.get("provenance_note") else ""))
     if project["license"] == "MIT":
         rows.append("- License: MIT, under which the project was published; Lean Pool redistributes it under "
-                    "Apache-2.0, " + (f"keeping its copyright line: “{text(project['notice'])}”." if project["notice"]
-                                      else "and its notice file gives no copyright line for it."))
+                    + (f"Apache-2.0, keeping its copyright line: “{text(project['notice'])}”." if project["notice"]
+                       else "Apache-2.0."))
     else:
         rows.append(f"- License: {project['license']}.")
     rows.append(f"- MSC2020: {', '.join(project['msc'])}.")
@@ -435,7 +435,6 @@ def chapter(source: dict, record: dict) -> tuple[Container, Counter, list[tuple[
         stats["articles"] += 1
         stats[f"provenance_{project['provenance']}"] += 1
         stats[f"license_{project['license']}"] += 1
-        stats["notices"] += bool(project["notice"])
         for result in project["main_results"]:
             stats["main_results"] += 1
             stats["main_results_found"] += bool(result["module"])
@@ -497,6 +496,6 @@ def intro(source: dict, record: dict, stats: Counter) -> str:
         f"{stats['provenance_mix']} mix.",
         f"The quoted text is the cards', in Lean Pool's repository under the Apache-2.0 license; each article names "
         f"the project's authors. Of the projects, {stats['license_MIT']} were published under the MIT license, and "
-        "Lean Pool redistributes them under Apache-2.0; their articles give the copyright line Lean Pool's notice file "
-        f"keeps for them, which it does for {stats['notices']}.",
+        "Lean Pool redistributes them under Apache-2.0; where Lean Pool's notice file keeps a copyright line for one, "
+        "its article gives it.",
     ])
