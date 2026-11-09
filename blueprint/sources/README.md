@@ -25,6 +25,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/ff/<name>.json`: for each of the 44 Formal Frontier libraries, the facts, highlights and main results of its formalization.yaml and the headline results of its README, read at the commit the file records, with the line and kind of each named declaration its file declares, from [FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source text, without Lean.
 
+## Fermat's Last Theorem (Anthropic)
+
+- `data/anthropic-flt/source.json` and `landmarks.json`: the facts of the formalization.yaml, the steps of PROOF-PATH.md, and the landmark theorems of [anthropics/fermats-last-theorem at 6e837e75](https://github.com/anthropics/fermats-last-theorem/tree/6e837e75355538c7f80bab5b956861e86c4eacc2), each with its route stage, aliases and nearest landmarks from html/data/meta.js and html/data/edges.js and its Lean statement from its file under Theorems/, Apache-2.0. Nothing is read with Lean.
+
 ## Libraries
 
 ### Core library
