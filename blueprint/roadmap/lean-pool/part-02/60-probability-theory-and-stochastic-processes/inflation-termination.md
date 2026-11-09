@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`TriangleInflation.Graph.classification_NW`](https://leanpool.github.io/lean-pool/LeanPool/InflationTermination/PalomarSolutions/TriangleInflationClassification.html#TriangleInflation.Graph.classification_NW) (theorem; a main declaration), declared in [LeanPool/InflationTermination/PalomarSolutions/TriangleInflationClassification.lean, line 45](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/InflationTermination/PalomarSolutions/TriangleInflationClassification.lean#L45): “For finite binary pair-source graphs without isolated vertices, some finite order of the Navascués–Wolfe hierarchy characterizes compatibility with finite latent alphabets exactly for double-star forests; order two suffices there.”
 - [`TriangleInflation.no_finite_characterizing_orderM`](https://leanpool.github.io/lean-pool/LeanPool/InflationTermination/TriangleInflation/FinnerMeasure.html#TriangleInflation.no_finite_characterizing_orderM) (theorem), declared in [LeanPool/InflationTermination/TriangleInflation/FinnerMeasure.lean, line 635](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/InflationTermination/TriangleInflation/FinnerMeasure.lean#L635): “At every positive inflation order, a triangle law passes both the AI and NW tests but has no compatible model over any measurable latent probability spaces.”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Chvatal.chvatal`](https://leanpool.github.io/lean-pool/LeanPool/Chvatal/Main.html#Chvatal.chvatal) (theorem; a main declaration), declared in [LeanPool/Chvatal/Main.lean, line 131](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Chvatal/Main.lean#L131): “Every intersecting subfamily A of a hereditary finite family D on a finite nonempty ground type has cardinality at most that of some star of D.”
 - [`Chvatal.exists_largest_intersecting_star`](https://leanpool.github.io/lean-pool/LeanPool/Chvatal/Main.html#Chvatal.exists_largest_intersecting_star) (theorem), declared in [LeanPool/Chvatal/Main.lean, line 140](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Chvatal/Main.lean#L140): “One star of D is itself intersecting and simultaneously dominates all intersecting subfamilies of the hereditary family D in size, on a finite nonempty ground type.”
@@ -32,6 +32,7 @@ The card lists 7 main results, each with its informal statement quoted from the 
 
 - Authors: Boon Suan Ho, Chvatal formalization contributors.
 - Source: *A proof of Chvátal's conjecture via a sharp correlation inequality* by Fan Chang, Hong Liu, Miao Liu, [arXiv:2609.19123v1](https://arxiv.org/abs/2609.19123v1).
+- The card's note on its source: “GPT-6 generated the formalization under Boon Suan Ho's direction; the mathematical proof is due to Chang, Liu, and Liu. No human expert review or source-author endorsement is claimed. The upstream MIT copyright and permission notice is retained in every imported file.”
 - Project repository: [boonsuan/chvatal](https://github.com/boonsuan/chvatal), at commit [c19ed3aa](https://github.com/boonsuan/chvatal/tree/c19ed3aaac9e42d446f963a862d39d8a09eddbf9).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.

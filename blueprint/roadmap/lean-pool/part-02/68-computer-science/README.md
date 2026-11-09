@@ -25,6 +25,6 @@ The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer 
 - [Quartic-over-logarithmic lower bound for rational permanent formulas](part-01/permanent-formula-lower-bound.md)
 - [Sharp list-scheduling and longest-processing-time bounds](part-01/graham-lpt.md)
 
-## [Part 2 of 2](part-02/README.md)
+## [Sundog certificates](part-02/README.md)
 
 - [Sundog certificates](part-02/sundogcert.md)

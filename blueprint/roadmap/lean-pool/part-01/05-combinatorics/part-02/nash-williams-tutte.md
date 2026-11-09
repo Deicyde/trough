@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`NashWilliamsTutte.tree_packing`](https://leanpool.github.io/lean-pool/LeanPool/NashWilliamsTutte/Theorems.html#NashWilliamsTutte.tree_packing) (theorem; a main declaration), declared in [LeanPool/NashWilliamsTutte/Theorems.lean, line 42](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NashWilliamsTutte/Theorems.lean#L42): “A finite simple graph on a nonempty vertex type has k pairwise edge-disjoint spanning trees if and only if every vertex partition into m nonempty parts has at least k(m − 1) crossing edges.”
 - [`NashWilliamsTutte.arboricity`](https://leanpool.github.io/lean-pool/LeanPool/NashWilliamsTutte/Theorems.html#NashWilliamsTutte.arboricity) (theorem; a main declaration), declared in [LeanPool/NashWilliamsTutte/Theorems.lean, line 116](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NashWilliamsTutte/Theorems.lean#L116): “A finite simple graph is the union of k forests if and only if every nonempty finite vertex set S induces at most k(|S| − 1) edges.”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Juan Pablo Traverso Gianini.
-- Source: *Edge-disjoint spanning trees of finite graphs*, [doi:10.1112/jlms/s1-36.1.445](https://doi.org/10.1112/jlms/s1-36.1.445), [https://github.com/jtraverso/nash-williams-trees/tree/101e48847a929dd8102521f57723e2137989ce2e](https://github.com/jtraverso/nash-williams-trees/tree/101e48847a929dd8102521f57723e2137989ce2e).
+- Source: *Edge-disjoint spanning trees of finite graphs*, [doi:10.1112/jlms/s1-36.1.445](https://doi.org/10.1112/jlms/s1-36.1.445).
 - Project repository: [jtraverso/nash-williams-trees](https://github.com/jtraverso/nash-williams-trees), at commit [101e4884](https://github.com/jtraverso/nash-williams-trees/tree/101e48847a929dd8102521f57723e2137989ce2e).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

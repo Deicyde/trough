@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`RS.regts_sevenster_characterisation`](https://leanpool.github.io/lean-pool/LeanPool/RegtsSevenster/RS/Summit.html#RS.regts_sevenster_characterisation) (theorem; a main declaration), declared in [LeanPool/RegtsSevenster/RS/Summit.lean, line 86](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RegtsSevenster/RS/Summit.lean#L86): “Normalized isomorphism-invariant complex graph parameters with exponentially bounded edge-connection ranks are precisely mixed partition functions.”
 - [`RS.regts_sevenster_total`](https://leanpool.github.io/lean-pool/LeanPool/RegtsSevenster/RS/Summit.html#RS.regts_sevenster_total) (theorem), declared in [LeanPool/RegtsSevenster/RS/Summit.lean, line 53](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RegtsSevenster/RS/Summit.lean#L53): “A natural rank bound R admits a representing mixed model with total color dimension at most R.”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 21 main results, each with its informal statement quoted from the card. The scan finds 21 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 21 main results, each with its informal statement quoted from the card. The scan finds 21 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanPolyLog.Proofs.A001`](https://leanpool.github.io/lean-pool/LeanPool/PolylogIntegrals/Proofs/A001.html#LeanPolyLog.Proofs.A001) (theorem), declared in [LeanPool/PolylogIntegrals/Proofs/A001.lean, line 25](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PolylogIntegrals/Proofs/A001.lean#L25): “Li_2(i) equals -pi^2/48 plus i times Catalan's constant.” Its source, as the card gives it: “Upstream Statements.lean and Proofs/A001.lean at the pinned commit; README prior-appearance table and blueprint/ERRATA.md label classical sources and corrections. Lean proofs were written with Claude assistance and reviewed by rainrzk; the informal tutorial is rainrzk (2022).”
 - [`LeanPolyLog.Proofs.A002`](https://leanpool.github.io/lean-pool/LeanPool/PolylogIntegrals/Proofs/A002.html#LeanPolyLog.Proofs.A002) (theorem), declared in [LeanPool/PolylogIntegrals/Proofs/A002.lean, line 27](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PolylogIntegrals/Proofs/A002.lean#L27): “Li_2(1/(1+i)) equals 5 pi^2/96 - log^2(2)/8 plus i times (pi log(2)/8 - G).” Its source, as the card gives it: “Upstream Statements.lean and Proofs/A002.lean at the pinned commit; README prior-appearance table and blueprint/ERRATA.md label classical sources and corrections. Lean proofs were written with Claude assistance and reviewed by rainrzk; the informal tutorial is rainrzk (2022).”
@@ -45,7 +45,7 @@ The card lists 21 main results, each with its informal statement quoted from the
 ## Project
 
 - Authors: rainrzk.
-- Source: *LeanPolyLog, completed formalization of PolyLog Integrals*, [https://github.com/rainrzk/LeanPolyLog/tree/056b7b42fd1a26f241e2945c67ae821ec5bdc49b](https://github.com/rainrzk/LeanPolyLog/tree/056b7b42fd1a26f241e2945c67ae821ec5bdc49b).
+- Source: *LeanPolyLog, completed formalization of PolyLog Integrals*.
 - Project repository: [rainrzk/LeanPolyLog](https://github.com/rainrzk/LeanPolyLog), at commit [056b7b42](https://github.com/rainrzk/LeanPolyLog/tree/056b7b42fd1a26f241e2945c67ae821ec5bdc49b).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

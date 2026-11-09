@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Algsuperdiff.superdiffusivity_with_finite_moments`](https://leanpool.github.io/lean-pool/LeanPool/Superdiffusion/Algsuperdiff/SuperdiffusivityFiniteMoments.html#Algsuperdiff.superdiffusivity_with_finite_moments) (theorem; a main declaration), declared in [LeanPool/Superdiffusion/Algsuperdiff/SuperdiffusivityFiniteMoments.lean, line 30](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Superdiffusion/Algsuperdiff/SuperdiffusivityFiniteMoments.lean#L30): “For dimensions at least two, one positive small-coupling threshold simultaneously gives the full quantitative superdiffusivity bounds and almost-sure integrability of both displacement observables at every positive time.”
 - [`Algsuperdiff.superdiffusivity`](https://leanpool.github.io/lean-pool/LeanPool/Superdiffusion/Algsuperdiff/MainTheorems.html#Algsuperdiff.superdiffusivity) (theorem), declared in [LeanPool/Superdiffusion/Algsuperdiff/MainTheorems.lean, line 104](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Superdiffusion/Algsuperdiff/MainTheorems.lean#L104): “For each dimension and positive nondegeneracy constant, sufficiently small coupling gives annealed moment bounds for the quenched second displacement moment about the intrinsic superdiffusive scale and for the squared quenched mean displacement, uniformly at all positive times and throughout the stated coupling-dependent moment range.”

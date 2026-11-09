@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`SteinhausThreeGap.three_gap_card_le_three`](https://leanpool.github.io/lean-pool/LeanPool/SteinhausThreeGap/Basic.html#SteinhausThreeGap.three_gap_card_le_three) (theorem; a main declaration), declared in [LeanPool/SteinhausThreeGap/Basic.lean, line 1471](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SteinhausThreeGap/Basic.lean#L1471): “For every real `a` and natural `N`, the gaps of the orbit `{i·a mod 1 : i < N}` take at most three distinct lengths.”
 - [`SteinhausThreeGap.three_gap_lengths_eq`](https://leanpool.github.io/lean-pool/LeanPool/SteinhausThreeGap/Basic.html#SteinhausThreeGap.three_gap_lengths_eq) (theorem), declared in [LeanPool/SteinhausThreeGap/Basic.lean, line 1485](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SteinhausThreeGap/Basic.lean#L1485): “When the gaps take exactly three distinct lengths, those lengths are precisely the two first returns `η⁺`, `η⁻`, and their sum `η⁺ + η⁻`; in particular the largest gap is the sum of the other two.”

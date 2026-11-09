@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`PackingBounds.FullMain.exact_limit`](https://leanpool.github.io/lean-pool/LeanPool/SpherePacking/Conclusion.html#PackingBounds.FullMain.exact_limit) (theorem), declared in [LeanPool/SpherePacking/Conclusion.lean, line 2030](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SpherePacking/Conclusion.lean#L2030): “The d-th root of the unrestricted Cohn--Elkies linear-program bound converges to the sharp constant sqrt(e / (2 pi)).”
 - [`PackingBounds.FullMain.exact_binary_exponent`](https://leanpool.github.io/lean-pool/LeanPool/SpherePacking/Conclusion.html#PackingBounds.FullMain.exact_binary_exponent) (theorem), declared in [LeanPool/SpherePacking/Conclusion.lean, line 2040](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SpherePacking/Conclusion.lean#L2040): “The base-two logarithm of the unrestricted linear-program bound, divided by dimension, converges to -1/2 log_2(2 pi / e).”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: OpenAI, Sidharth Hariharan, Gareth Ma, Dean Cureton.
-- Source: *Ten Advances in Mathematics and Theoretical Computer Science* by OpenAI, [https://github.com/openai/ten-proofs/tree/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6](https://github.com/openai/ten-proofs/tree/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6).
+- Source: *Ten Advances in Mathematics and Theoretical Computer Science* by OpenAI.
 - Project repository: [openai/ten-proofs](https://github.com/openai/ten-proofs), at commit [94bc0feb](https://github.com/openai/ten-proofs/tree/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6).
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
 - License: Apache-2.0.

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`HSDInteriorPointLP.YTM_fixed_local_theory_from_paper`](https://leanpool.github.io/lean-pool/LeanPool/HSDInteriorPointLP/FixedYTMTheory.html#HSDInteriorPointLP.YTM_fixed_local_theory_from_paper) (theorem; a main declaration), declared in [LeanPool/HSDInteriorPointLP/FixedYTMTheory.lean, line 1007](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HSDInteriorPointLP/FixedYTMTheory.lean#L1007): “Packages the fixed Ye-Todd-Mizuno local theory, combining predictor and corrector estimates for the tight and wide central neighborhoods.” Its source, as the card gives it: “Y. Ye, M. J. Todd, and S. Mizuno, An O(√nL)-iteration homogeneous and self-dual linear programming algorithm, Mathematics of Operations Research 19(1):53-67, 1994.”
 - [`HSDInteriorPointLP.HSDGeneratedAlgorithm.gap_stop_even_at_logPairBound`](https://leanpool.github.io/lean-pool/LeanPool/HSDInteriorPointLP/GeneratedConvergence.html#HSDInteriorPointLP.HSDGeneratedAlgorithm.gap_stop_even_at_logPairBound) (theorem), declared in [LeanPool/HSDInteriorPointLP/GeneratedConvergence.lean, line 253](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HSDInteriorPointLP/GeneratedConvergence.lean#L253): “Proves that the generated even iterate satisfies the gap stopping test at the logarithmic pair bound.”

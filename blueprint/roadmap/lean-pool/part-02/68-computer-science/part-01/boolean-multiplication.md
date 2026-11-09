@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`UnrestrictedBooleanMul.mc_mul_zero`](https://leanpool.github.io/lean-pool/LeanPool/BooleanMultiplication/SmallCases.html#UnrestrictedBooleanMul.mc_mul_zero) (theorem), declared in [LeanPool/BooleanMultiplication/SmallCases.lean, line 367](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BooleanMultiplication/SmallCases.lean#L367): “The empty polynomial multiplication map needs zero AND gates.” Its source, as the card gives it: “Proposition 2.3; the n = 0 target has no output coordinates.”
 - [`UnrestrictedBooleanMul.mc_mul_one`](https://leanpool.github.io/lean-pool/LeanPool/BooleanMultiplication/SmallCases.html#UnrestrictedBooleanMul.mc_mul_one) (theorem), declared in [LeanPool/BooleanMultiplication/SmallCases.lean, line 370](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BooleanMultiplication/SmallCases.lean#L370): “Multiplying two one-coefficient binary polynomials needs exactly one AND gate.” Its source, as the card gives it: “Proposition 2.3.”
@@ -30,7 +30,8 @@ The card lists 6 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Gregory Morse.
-- Source: *Unrestricted Boolean Multiplicative Complexity of Four-Term Binary Polynomial Multiplication: Rational Places, Hasse Jets, and the Failure of Nonlinear Feedback*, [arXiv:2608.30238v1](https://arxiv.org/abs/2608.30238v1), [https://github.com/GregoryMorse/unrestricted-boolean-mul/tree/79a801760668f52bb00a9e1a406e841375c58a6d](https://github.com/GregoryMorse/unrestricted-boolean-mul/tree/79a801760668f52bb00a9e1a406e841375c58a6d).
+- Source: *Unrestricted Boolean Multiplicative Complexity of Four-Term Binary Polynomial Multiplication: Rational Places, Hasse Jets, and the Failure of Nonlinear Feedback*, [arXiv:2608.30238v1](https://arxiv.org/abs/2608.30238v1).
+- The card's note on its source: “The complete Lean release predates the arXiv v1 submission of 2026-08-31T04:45:12Z. The selected September 22 commit corrects release metadata; eligibility rests on the complete August 31 Lean release at 2ebc0cf42039e4b5de84cb7f9d97cad4791c669d. The August 29 release contained computational artifacts, not the Lean formalization. The author discloses GPT-5.6 Sol for original research and proof development, Opus 5 as a critical referee, and Codex for release preparation. Gregory Morse directed and reviewed the work and assumes responsibility. AI provenance records the proof-producing agent workflow; human direction alone is not classified as mixed formalization. The complete upstream MIT notice is retained in LeanPool/BooleanMultiplication.lean. Only the published n <= 4 dependency closure is imported; no n = 5 or n = 6 claim is made.”
 - Project repository: [GregoryMorse/unrestricted-boolean-mul](https://github.com/GregoryMorse/unrestricted-boolean-mul), at commit [79a80176](https://github.com/GregoryMorse/unrestricted-boolean-mul/tree/79a801760668f52bb00a9e1a406e841375c58a6d).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.

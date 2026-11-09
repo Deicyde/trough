@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`RamaekersConjecture`](https://leanpool.github.io/lean-pool/LeanPool/Redhill/Common/Conjectures.html#RamaekersConjecture) (def), declared in [LeanPool/Redhill/Common/Conjectures.lean, line 49](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Redhill/Common/Conjectures.lean#L49): “Defines Ramaekers's conjecture for fixed n as the statement that the quality of the relevant tuple set equals 1.”
 - [`not_ramaekersConjecture_ge_six`](https://leanpool.github.io/lean-pool/LeanPool/Redhill/General/Main.html#not_ramaekersConjecture_ge_six) (theorem; a main declaration), declared in [LeanPool/Redhill/General/Main.lean, line 131](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Redhill/General/Main.lean#L131): “Proves Ramaekers's conjecture fails for every n at least 6 (the general case, Theorem 1.14).”

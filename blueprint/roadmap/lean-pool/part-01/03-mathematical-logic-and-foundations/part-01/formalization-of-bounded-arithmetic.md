@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 9 main results, each with its informal statement quoted from the card. The scan finds 9 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 9 main results, each with its informal statement quoted from the card. The scan finds 9 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`IOPENModel.add_assoc`](https://leanpool.github.io/lean-pool/LeanPool/FormalizationOfBoundedArithmetic/IOPEN.html#IOPENModel.add_assoc) (theorem), declared in [LeanPool/FormalizationOfBoundedArithmetic/IOPEN.lean, line 60](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FormalizationOfBoundedArithmetic/IOPEN.lean#L60): “Proves associativity of addition in IOPEN models.”
 - [`IOPENModel.add_comm`](https://leanpool.github.io/lean-pool/LeanPool/FormalizationOfBoundedArithmetic/IOPEN.html#IOPENModel.add_comm) (theorem), declared in [LeanPool/FormalizationOfBoundedArithmetic/IOPEN.lean, line 123](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FormalizationOfBoundedArithmetic/IOPEN.lean#L123): “Proves commutativity of addition in IOPEN models.”
@@ -36,7 +36,7 @@ The card lists 9 main results, each with its informal statement quoted from the 
 - Source: *Logical Foundations of Proof Complexity* by Stephen Cook, Phuong Nguyen, [doi:10.1017/CBO9780511676277](https://doi.org/10.1017/CBO9780511676277).
 - Project repository: [ruplet/formalization-of-bounded-arithmetic](https://github.com/ruplet/formalization-of-bounded-arithmetic).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, keeping its copyright line: “The upstream MIT LICENSE file leaves the copyright line as the unfilled template text "Copyright (c) [year] [fullname]"; the repository owner of record is "ruplet".”.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0. Lean Pool's notice file notes: “The upstream MIT LICENSE file leaves the copyright line as the unfilled template text "Copyright (c) [year] [fullname]"; the repository owner of record is "ruplet".”
 - MSC2020: 03F30, 03D15.
 - In Lean Pool: [LeanPool/FormalizationOfBoundedArithmetic](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FormalizationOfBoundedArithmetic), from the card [LeanPool/projects/formalization-of-bounded-arithmetic.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/formalization-of-bounded-arithmetic.yaml).
 

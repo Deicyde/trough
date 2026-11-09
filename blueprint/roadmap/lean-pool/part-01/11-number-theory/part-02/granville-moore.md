@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`GranvilleMoore.exists_intCast_iteratedFermatQuot`](https://leanpool.github.io/lean-pool/LeanPool/GranvilleMoore/MasterExpansion.html#GranvilleMoore.exists_intCast_iteratedFermatQuot) (theorem), declared in [LeanPool/GranvilleMoore/MasterExpansion.lean, line 412](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GranvilleMoore/MasterExpansion.lean#L412): “For an odd prime p, an integer x not divisible by p, any j ≤ p - 1, and any k, the iterated Fermat quotient F^(j)\_k(x) is an integer.” Its source, as the card gives it: “Upstream README, first main result; attributed there to Granville.”
 - [`GranvilleMoore.dvd_factorial_mul_sub_mul_pow`](https://leanpool.github.io/lean-pool/LeanPool/GranvilleMoore/MasterExpansion.html#GranvilleMoore.dvd_factorial_mul_sub_mul_pow) (theorem), declared in [LeanPool/GranvilleMoore/MasterExpansion.lean, line 477](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GranvilleMoore/MasterExpansion.lean#L477): “Under the same prime and unit hypotheses, for j ≤ p - 2 and any k, j! F^(j)\_k(x) is congruent to x q_p(x)^j modulo p, where q_p(x) = (x^(p-1) - 1)/p.” Its source, as the card gives it: “Upstream README, second main result.”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`MatrixMultiplicationAllFields.omega_le_nine_quarters_all_fields`](https://leanpool.github.io/lean-pool/LeanPool/MatrixMultiplicationAllFields.html#MatrixMultiplicationAllFields.omega_le_nine_quarters_all_fields) (theorem; a main declaration), declared in [LeanPool/MatrixMultiplicationAllFields.lean, line 117](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MatrixMultiplicationAllFields.lean#L117): “For every field F, the infimum of admissible arithmetic matrix multiplication exponents is at most 9/4.”
 - [`MatrixMultiplicationAllFields.MatrixMultiplication.admissibleExponent_nine_quarters_all_fields`](https://leanpool.github.io/lean-pool/LeanPool/MatrixMultiplicationAllFields/LinearAlgebra/MatrixMultiplication/AllFields/Main.html#MatrixMultiplicationAllFields.MatrixMultiplication.admissibleExponent_nine_quarters_all_fields) (theorem), declared in [LeanPool/MatrixMultiplicationAllFields/LinearAlgebra/MatrixMultiplication/AllFields/Main.lean, line 109](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MatrixMultiplicationAllFields/LinearAlgebra/MatrixMultiplication/AllFields/Main.lean#L109): “Over every field F and for every epsilon > 0, a positive constant C bounds the cost of a correct division-free straight-line program for n by n matrix multiplication by C n^(9/4 + epsilon) for every n >= 1.”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: OpenAI, Jeroen Zuiddam.
-- Source: [https://github.com/jzuiddam/omega-nine-quarters-all-fields/tree/615b591cddd8792173c17b58558ef3b9f11a702c](https://github.com/jzuiddam/omega-nine-quarters-all-fields/tree/615b591cddd8792173c17b58558ef3b9f11a702c).
+- Source: [paper](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Matrix-Multiplication-Nine-Fourths-October-2-2026/paper.pdf).
 - Project repository: [jzuiddam/omega-nine-quarters-all-fields](https://github.com/jzuiddam/omega-nine-quarters-all-fields), at commit [615b591c](https://github.com/jzuiddam/omega-nine-quarters-all-fields/tree/615b591cddd8792173c17b58558ef3b9f11a702c).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

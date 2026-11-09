@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`CriticalPortraits.card_portraits`](https://leanpool.github.io/lean-pool/LeanPool/CriticalPortraits/Census.html#CriticalPortraits.card_portraits) (theorem; a main declaration), declared in [LeanPool/CriticalPortraits/Census.lean, line 61](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CriticalPortraits/Census.lean#L61): “The number of degree-d critical portraits at level m equals C(d\*m, d-1)/d.”
 - [`CriticalPortraits.Cycle.cycle_lemma`](https://leanpool.github.io/lean-pool/LeanPool/CriticalPortraits/CycleLemma.html#CriticalPortraits.Cycle.cycle_lemma) (theorem; a main declaration), declared in [LeanPool/CriticalPortraits/CycleLemma.lean, line 69](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CriticalPortraits/CycleLemma.lean#L69): “The Dvoretzky-Motzkin cycle lemma: a period-n integer sequence with period-sum 1 has exactly one good cyclic shift.”

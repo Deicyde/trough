@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Computability.RecursiveIn`](https://leanpool.github.io/lean-pool/LeanPool/Computability/Oracle.html#Computability.RecursiveIn) (inductive; a main declaration), declared in [LeanPool/Computability/Oracle.lean, line 54](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Computability/Oracle.lean#L54): “The inductive relation `RecursiveIn O f` stating that `f : ℕ →. ℕ` is partial recursive relative to a set of oracle functions `O`.”
 - [`Computability.exists_code_rel`](https://leanpool.github.io/lean-pool/LeanPool/Computability/Encoding.html#Computability.exists_code_rel) (theorem), declared in [LeanPool/Computability/Encoding.lean, line 413](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Computability/Encoding.lean#L413): “Universality of the oracle evaluator `evalo`, that is, `RecursiveIn (Set.range g) f` holds iff there is a code `c` with `evalo g c = f`.”

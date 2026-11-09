@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Erdos111.countably_colorable_of_linear`](https://leanpool.github.io/lean-pool/LeanPool/Erdos111.html#Erdos111.countably_colorable_of_linear) (theorem; a main declaration), declared in [LeanPool/Erdos111.lean, line 42](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos111.lean#L42): “For any real C, if each finite subgraph H of G has bipartization number at most C times its number of vertices, G admits a proper colouring by natural numbers. Vertex types may inhabit any universe.”
 - [`Erdos111.tendsto_of_not_countably_colorable`](https://leanpool.github.io/lean-pool/LeanPool/Erdos111.html#Erdos111.tendsto_of_not_countably_colorable) (theorem), declared in [LeanPool/Erdos111.lean, line 49](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos111.lean#L49): “If G has no proper colouring by natural numbers, h_G(n)/n tends to positive infinity along the whole natural-number sequence.”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Jacob Parish.
-- Source: *Graphs whose finite subgraphs have linear bipartization cost are countably colorable* by Plasma AI, [https://github.com/plasma-ai/erdos-111/tree/de72caf0e388c729697b6813f4ea90bfe1617c7b](https://github.com/plasma-ai/erdos-111/tree/de72caf0e388c729697b6813f4ea90bfe1617c7b).
+- Source: *Graphs whose finite subgraphs have linear bipartization cost are countably colorable* by Plasma AI.
 - Project repository: [plasma-ai/erdos-111](https://github.com/plasma-ai/erdos-111), at commit [de72caf0](https://github.com/plasma-ai/erdos-111/tree/de72caf0e388c729697b6813f4ea90bfe1617c7b).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

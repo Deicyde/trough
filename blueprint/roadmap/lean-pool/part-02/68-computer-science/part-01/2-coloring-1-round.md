@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Distributed2Coloring.pStar_ge_23879`](https://leanpool.github.io/lean-pool/LeanPool/TwoColoringOneRound/MainResults.html#Distributed2Coloring.pStar_ge_23879) (theorem; a main declaration), declared in [LeanPool/TwoColoringOneRound/MainResults.lean, line 70](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/TwoColoringOneRound/MainResults.lean#L70): “Proves that every one-round classical algorithm has monochromatic-edge probability at least 0.23879.”
 - [`Distributed2Coloring.pStar_lt_24118`](https://leanpool.github.io/lean-pool/LeanPool/TwoColoringOneRound/MainResults.html#Distributed2Coloring.pStar_lt_24118) (theorem; a main declaration), declared in [LeanPool/TwoColoringOneRound/MainResults.lean, line 79](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/TwoColoringOneRound/MainResults.lean#L79): “Proves that an explicit one-round algorithm attains monochromatic-edge probability strictly below 0.24118.”

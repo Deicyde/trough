@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LehmerE10.main_theorem`](https://leanpool.github.io/lean-pool/LeanPool/LehmerE10.html#LehmerE10.main_theorem) (theorem; a main declaration), declared in [LeanPool/LehmerE10.lean, line 44](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LehmerE10.lean#L44): “Lehmer's polynomial L(x) = x^10 + x^9 - x^7 - x^6 - x^5 - x^4 - x^3 + x + 1 is irreducible over the integers, and the characteristic polynomial of a Coxeter element of the E10 Weyl group equals L.”
 - [`LehmerE10.lehmer_mahlerMeasure`](https://leanpool.github.io/lean-pool/LeanPool/LehmerE10/Mahler.html#LehmerE10.lehmer_mahlerMeasure) (theorem), declared in [LeanPool/LehmerE10/Mahler.lean, line 76](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LehmerE10/Mahler.lean#L76): “The Mahler measure of L equals its Salem root mu, with the unconditional bounds 1 < M(L) < 7/5.”

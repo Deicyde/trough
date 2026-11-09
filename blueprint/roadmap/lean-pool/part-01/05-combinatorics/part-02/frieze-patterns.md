@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`main3`](https://leanpool.github.io/lean-pool/LeanPool/FriezePatterns/Chapter3.html#main3) (theorem; a main declaration), declared in [LeanPool/FriezePatterns/Chapter3.lean, line 536](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FriezePatterns/Chapter3.lean#L536): “Proves that the maximum value of an arithmetic frieze pattern of width n is exactly the n-th Fibonacci number, and that this bound is attained.”
 - [`FluteBounded`](https://leanpool.github.io/lean-pool/LeanPool/FriezePatterns/Chapter2.html#FluteBounded) (theorem; a main declaration), declared in [LeanPool/FriezePatterns/Chapter2.lean, line 679](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FriezePatterns/Chapter2.lean#L679): “Proves that every entry of an n-flute is bounded above by the n-th Fibonacci number.”

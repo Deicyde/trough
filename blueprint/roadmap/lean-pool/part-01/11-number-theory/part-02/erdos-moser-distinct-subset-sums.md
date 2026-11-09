@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanPool.ErdosMoser.leoMoserVarianceBound`](https://leanpool.github.io/lean-pool/LeanPool/ErdosMoser/SubsetSums.html#LeanPool.ErdosMoser.leoMoserVarianceBound) (theorem; a main declaration), declared in [LeanPool/ErdosMoser/SubsetSums.lean, line 129](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ErdosMoser/SubsetSums.lean#L129): “If a finite set A of natural numbers has distinct subset sums, then 4^|A| - 1 is at most three times the sum of the squares of the elements of A.” Its source, as the card gives it: “Richard K. Guy, "Sets of Integers Whose Subsets Have Distinct Sums," Theorem 2 (credited there to Leo Moser), Annals of Discrete Mathematics 12 (1982), 141-154, doi:10.1016/S0304-0208(08)73500-X.”
 - [`LeanPool.ErdosMoser.erdosMoserMaxBound`](https://leanpool.github.io/lean-pool/LeanPool/ErdosMoser/Bounds.html#LeanPool.ErdosMoser.erdosMoserMaxBound) (theorem), declared in [LeanPool/ErdosMoser/Bounds.lean, line 28](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ErdosMoser/Bounds.lean#L28): “For a nonempty finite set A of natural numbers with distinct subset sums, 4^|A| - 1 is at most 3|A| times the square of its largest element.”

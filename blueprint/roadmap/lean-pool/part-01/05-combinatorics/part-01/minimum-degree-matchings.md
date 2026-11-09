@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`BKLOK2.lemma107K2_holds`](https://leanpool.github.io/lean-pool/LeanPool/MinimumDegreeMatching/BKLO.html#BKLOK2.lemma107K2_holds) (theorem; a main declaration), declared in [LeanPool/MinimumDegreeMatching/BKLO.lean, line 190](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MinimumDegreeMatching/BKLO.lean#L190): “Specializes BKLO Lemma 10.7 to r = 2 in its apex-neighbourhood configuration: for every sufficiently large admissible configuration, all indexed neighbourhood graphs admit perfect matchings whose edge sets are pairwise disjoint. The proof is deterministic.”
 - [`SimpleGraph.exists_isPerfectMatching_of_minDegree`](https://leanpool.github.io/lean-pool/LeanPool/MinimumDegreeMatching/Basic.html#SimpleGraph.exists_isPerfectMatching_of_minDegree) (theorem), declared in [LeanPool/MinimumDegreeMatching/Basic.lean, line 44](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MinimumDegreeMatching/Basic.lean#L44): “Every finite simple graph of even order whose minimum degree is at least half its order has a perfect matching.”

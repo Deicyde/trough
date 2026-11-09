@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Front.IsFront.nash_williams`](https://leanpool.github.io/lean-pool/LeanPool/NashWilliams/Combinatorics/Front/NashWilliams.html#Front.IsFront.nash_williams) (theorem; a main declaration), declared in [LeanPool/NashWilliams/Combinatorics/Front/NashWilliams.lean, line 227](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NashWilliams/Combinatorics/Front/NashWilliams.lean#L227): “Every two-coloring of a Nash-Williams front on an infinite set has an infinite restriction whose front is monochromatic.”
 - [`Front.IsFront.nash_williams_fin`](https://leanpool.github.io/lean-pool/LeanPool/NashWilliams/Combinatorics/Front/NashWilliams.html#Front.IsFront.nash_williams_fin) (theorem), declared in [LeanPool/NashWilliams/Combinatorics/Front/NashWilliams.lean, line 273](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NashWilliams/Combinatorics/Front/NashWilliams.lean#L273): “Every finite coloring of a Nash-Williams front has an infinite restriction whose front is monochromatic.”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`PlanarMidpoint.planar_dual_midpoint_rigidity`](https://leanpool.github.io/lean-pool/LeanPool/PlanarMidpoint/MidpointRigidity.html#PlanarMidpoint.planar_dual_midpoint_rigidity) (theorem; a main declaration), declared in [LeanPool/PlanarMidpoint/MidpointRigidity.lean, line 44](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PlanarMidpoint/MidpointRigidity.lean#L44): “On an open preconnected Euclidean planar domain, a smooth symmetric cubic tensor field whose canonical local dual geodesic midpoints sum to the endpoints is constant.”
 - [`PlanarMidpoint.planar_midpoint_rigidity_C2`](https://leanpool.github.io/lean-pool/LeanPool/PlanarMidpoint/MidpointRigidity.html#PlanarMidpoint.planar_midpoint_rigidity_C2) (theorem), declared in [LeanPool/PlanarMidpoint/MidpointRigidity.lean, line 31](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PlanarMidpoint/MidpointRigidity.lean#L31): “The geometric midpoint rigidity theorem already holds for C2 coefficient fields.”
@@ -29,6 +29,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 
 - Authors: JD Jones.
 - Source: [arXiv:2609.07551](https://arxiv.org/abs/2609.07551), [https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1](https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1).
+- The card's note on its source: “The upstream MIT-licensed original proof settles the dimension-two case of Nielsen–Okamura Conjecture 9.1 (v2, Section 9); the cited paper poses the general-dimensional conjecture and does not contain this planar necessity proof. Public completed source was released on 2026-10-08. Proofs and mathematical arguments were produced by OpenAI Codex agents under JD Jones's supervision.”
 - Project repository: [JD-Jones-ASES/PlanarMidpoint](https://github.com/JD-Jones-ASES/PlanarMidpoint).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.

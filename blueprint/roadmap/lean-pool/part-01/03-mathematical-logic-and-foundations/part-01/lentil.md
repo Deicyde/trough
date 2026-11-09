@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`TLA.always`](https://leanpool.github.io/lean-pool/LeanPool/Lentil/Basic.html#TLA.always) (def; a main declaration), declared in [LeanPool/Lentil/Basic.lean, line 89](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Lentil/Basic.lean#L89): “Defines the TLA "always" (box) temporal modality, asserting a predicate holds on every suffix of an execution.”
 - [`TLA.eventually`](https://leanpool.github.io/lean-pool/LeanPool/Lentil/Basic.html#TLA.eventually) (def; a main declaration), declared in [LeanPool/Lentil/Basic.lean, line 91](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Lentil/Basic.lean#L91): “Defines the TLA "eventually" (diamond) temporal modality, asserting a predicate holds on some suffix of an execution.”

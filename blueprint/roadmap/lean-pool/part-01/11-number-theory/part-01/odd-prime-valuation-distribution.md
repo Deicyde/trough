@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`OddPrimeValuationDistribution.oddPrimeValuationGeneratingSeries_identity`](https://leanpool.github.io/lean-pool/LeanPool/OddPrimeValuationDistribution/GeneratingFunction.html#OddPrimeValuationDistribution.oddPrimeValuationGeneratingSeries_identity) (theorem; a main declaration), declared in [LeanPool/OddPrimeValuationDistribution/GeneratingFunction.lean, line 33](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/OddPrimeValuationDistribution/GeneratingFunction.lean#L33): “For every odd prime p = 2h+1, proves the denominator-cleared identity for the bivariate series whose coefficient of T^k X^r counts n < p^k with nu_p(binomial(2n,n)) = r; equivalently the series is (1-XT)/(1-(h+1)(1+X)T+pXT^2).” Its source, as the card gives it: “A. Straub, V. H. Moll, T. Amdeberhan, The p-adic valuation of k-central binomial coefficients, Acta Arith. 140 (2009), 31-42.”
 - [`OddPrimeValuationDistribution.oddPrimeValuationPolynomial_recurrence`](https://leanpool.github.io/lean-pool/LeanPool/OddPrimeValuationDistribution/ValuationBlocks.html#OddPrimeValuationDistribution.oddPrimeValuationPolynomial_recurrence) (theorem), declared in [LeanPool/OddPrimeValuationDistribution/ValuationBlocks.lean, line 128](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/OddPrimeValuationDistribution/ValuationBlocks.lean#L128): “Proves that the exact valuation polynomials satisfy F\_{k+2}(X)+pX F_k(X)=(h+1)(1+X)F\_{k+1}(X), with F_0=1 and F_1=(h+1)+hX.”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 9 main results, each with its informal statement quoted from the card. The scan finds 9 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 9 main results, each with its informal statement quoted from the card. The scan finds 9 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`QECCertificates.hgp_kunneth`](https://leanpool.github.io/lean-pool/LeanPool/QECCertificates/GF2/HGPKunneth.html#QECCertificates.hgp_kunneth) (theorem; a main declaration), declared in [LeanPool/QECCertificates/GF2/HGPKunneth.lean, line 277](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/QECCertificates/GF2/HGPKunneth.lean#L277): “For arbitrary finite binary matrices A and B, the number of columns of their hypergraph product minus its X and Z ranks equals nullity(A) times nullity(B) plus nullity(transpose A) times nullity(transpose B), expressed with natural-number rank differences.” Its source, as the card gives it: “Upstream GF2/HGPKunneth.lean; the Tillich–Zémor hypergraph-product construction.”
 - [`QECCertificates.hgp_X_distance_ge`](https://leanpool.github.io/lean-pool/LeanPool/QECCertificates/GF2/HGPCleaning.html#QECCertificates.hgp_X_distance_ge) (theorem), declared in [LeanPool/QECCertificates/GF2/HGPCleaning.lean, line 574](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/QECCertificates/GF2/HGPCleaning.lean#L574): “If a binary vector is killed by the hypergraph-product X check and is outside the Z row space, its Hamming weight is at least the minimum of supplied lower bounds for nonzero vectors in the kernels of the first input and the transpose of the second input.”

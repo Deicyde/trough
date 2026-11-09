@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanPool.KrohnRhodes.krohn_rhodes_prime_decomposition`](https://leanpool.github.io/lean-pool/LeanPool/KrohnRhodes/PrimeDecomposition.html#LeanPool.KrohnRhodes.krohn_rhodes_prime_decomposition) (theorem; a main declaration), declared in [LeanPool/KrohnRhodes/PrimeDecomposition.lean, line 1032](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/KrohnRhodes/PrimeDecomposition.lean#L1032): “Every finite monoid M in universe zero admits a finite list of finite monoid factors, each witnessed to be aperiodic or a simple group, with DivTowerWreath M factors and every simple-group factor a monoid divisor of M. An empty tower means M divides the trivial monoid. At a nonempty step, M divides F wreath B for a finite action of a finite monoid B that itself has the tail tower.” Its source, as the card gives it: “Upstream PrimeDecomposition.lean, completed September 28, 2026 at 07:36:52 UTC and publicly released at 08:48:24 UTC. Variant of Diekert–Kufleitner–Steinberg, arXiv:1111.1585, Sections 3–4, with left actions, the larger local divisor cM intersect Mc, arbitrary aperiodic factors, and recursive semigroup divisions. The stronger flip-flop and transformation-monoid claims of Theorem 4.1 are not asserted. Upstream CITATION.cff attributes the proofs primarily to Claude Code under Aditya Rao's direction.”
 - [`LeanPool.KrohnRhodes.krasnerKaloujnine_injective`](https://leanpool.github.io/lean-pool/LeanPool/KrohnRhodes/Foundations/KrasnerKaloujnine.html#LeanPool.KrohnRhodes.krasnerKaloujnine_injective) (theorem), declared in [LeanPool/KrohnRhodes/Foundations/KrasnerKaloujnine.lean, line 139](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/KrohnRhodes/Foundations/KrasnerKaloujnine.lean#L139): “For any group G and normal subgroup N, the constructed monoid homomorphism from G to Mathlib's regular wreath product of N and G/N is injective. No finiteness assumption is required.” Its source, as the card gives it: “Upstream Foundations/KrasnerKaloujnine.lean; the classical Krasner–Kaloujnine embedding theorem.”
@@ -27,7 +27,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Aditya Rao.
-- Source: *Krohn–Rhodes formalization by Aditya Rao*, [arXiv:1111.1585](https://arxiv.org/abs/1111.1585), [https://github.com/adii800/krohn-rhodes-lean/tree/8152fef3507406d2b4f4ed3760404ea88298e382](https://github.com/adii800/krohn-rhodes-lean/tree/8152fef3507406d2b4f4ed3760404ea88298e382).
+- Source: *Krohn–Rhodes formalization by Aditya Rao*, [arXiv:1111.1585](https://arxiv.org/abs/1111.1585).
 - Project repository: [adii800/krohn-rhodes-lean](https://github.com/adii800/krohn-rhodes-lean), at commit [8152fef3](https://github.com/adii800/krohn-rhodes-lean/tree/8152fef3507406d2b4f4ed3760404ea88298e382).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`HajnalSzemeredi.hajnalSzemeredi`](https://leanpool.github.io/lean-pool/LeanPool/HajnalSzemeredi/Final.html#HajnalSzemeredi.hajnalSzemeredi) (theorem; a main declaration), declared in [LeanPool/HajnalSzemeredi/Final.lean, line 88](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HajnalSzemeredi/Final.lean#L88): “Every finite simple graph whose vertex degrees are at most r has a proper colouring by Fin (r + 1) such that the size of any colour class is at most the size of any other colour class plus one.”
 - [`HajnalSzemeredi.hajnalSzemeredi_exact`](https://leanpool.github.io/lean-pool/LeanPool/HajnalSzemeredi/Final.html#HajnalSzemeredi.hajnalSzemeredi_exact) (theorem; a main declaration), declared in [LeanPool/HajnalSzemeredi/Final.lean, line 49](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HajnalSzemeredi/Final.lean#L49): “If a finite simple graph has s(r + 1) vertices and every vertex degree is at most r, it has a proper colouring by Fin (r + 1) with every class of size s.”
@@ -27,7 +27,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Juan Pablo Traverso Gianini.
-- Source: *A short proof of the Hajnal–Szemerédi theorem on equitable colouring* by H. A. Kierstead, A. V. Kostochka, [doi:10.1017/S0963548307008619](https://doi.org/10.1017/S0963548307008619), [https://github.com/jtraverso/hajnal-szemeredi/tree/ba34061e3cf12dfc8297610d5d7b3f0afac7ec54](https://github.com/jtraverso/hajnal-szemeredi/tree/ba34061e3cf12dfc8297610d5d7b3f0afac7ec54).
+- Source: *A short proof of the Hajnal–Szemerédi theorem on equitable colouring* by H. A. Kierstead, A. V. Kostochka, [doi:10.1017/S0963548307008619](https://doi.org/10.1017/S0963548307008619).
 - Project repository: [jtraverso/hajnal-szemeredi](https://github.com/jtraverso/hajnal-szemeredi), at commit [ba34061e](https://github.com/jtraverso/hajnal-szemeredi/tree/ba34061e3cf12dfc8297610d5d7b3f0afac7ec54).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

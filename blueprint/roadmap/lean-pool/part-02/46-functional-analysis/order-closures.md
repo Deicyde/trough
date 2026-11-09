@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`OrderClosures.gaoLeung_orderContinuous_characterization`](https://leanpool.github.io/lean-pool/LeanPool/OrderClosures/GaoLeungCharacterization.html#OrderClosures.gaoLeung_orderContinuous_characterization) (theorem), declared in [LeanPool/OrderClosures/GaoLeungCharacterization.lean, line 1012](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/OrderClosures/GaoLeungCharacterization.lean#L1012): “For a sigma-order-complete Banach lattice X, the following are equivalent: every vector sublattice has order-closed order adherence; every vector sublattice has equal order and unbounded-order adherence; and the norm of X is order continuous.” Its source, as the card gives it: “Paper Theorem 1.1, recalling Gao-Leung Theorem 2.7.”
 - [`OrderClosures.gao_counterexample`](https://leanpool.github.io/lean-pool/LeanPool/OrderClosures/GaoLeungProblem/Counterexample.html#OrderClosures.gao_counterexample) (theorem), declared in [LeanPool/OrderClosures/GaoLeungProblem/Counterexample.lean, line 45](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/OrderClosures/GaoLeungProblem/Counterexample.lean#L45): “For every cardinal kappa there is a compact Hausdorff space K such that C(K, R) is order complete and has density at least kappa, with a norm-closed separable vector sublattice Y whose only order-closed vector-sublattice extension is all of C(K, R).” Its source, as the card gives it: “Paper Proposition 2.1, via the Solovay Boolean algebra.”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Antonio Avilés, Mitchell A. Taylor, Pedro Tradacete, David Muñoz-Lahoz.
-- Source: *Order closure, order adherence and Fatou norms*, [arXiv:2609.06689](https://arxiv.org/abs/2609.06689), [https://github.com/pedrotradacete/OrderClosures/tree/6189ba7134f6975e7d8e4c8c093a9869d03a769c](https://github.com/pedrotradacete/OrderClosures/tree/6189ba7134f6975e7d8e4c8c093a9869d03a769c).
+- Source: *Order closure, order adherence and Fatou norms*, [arXiv:2609.06689](https://arxiv.org/abs/2609.06689).
 - Project repository: [pedrotradacete/OrderClosures](https://github.com/pedrotradacete/OrderClosures), at commit [6189ba71](https://github.com/pedrotradacete/OrderClosures/tree/6189ba7134f6975e7d8e4c8c093a9869d03a769c).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

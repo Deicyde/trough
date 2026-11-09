@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`PDL.interpolation`](https://leanpool.github.io/lean-pool/LeanPool/PDL/Interpolation/Theorem.html#PDL.interpolation) (theorem; a main declaration), declared in [LeanPool/PDL/Interpolation/Theorem.lean, line 27](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PDL/Interpolation/Theorem.lean#L27): “If the implication from PDL formula phi to psi is valid in every Kripke model, there exists a PDL formula theta whose atomic proposition and program vocabulary is contained in the intersection of theirs, such that phi implies theta and theta implies psi in every model.”
 - [`PDL.beth`](https://leanpool.github.io/lean-pool/LeanPool/PDL/Beth.html#PDL.beth) (theorem; a main declaration), declared in [LeanPool/PDL/Beth.lean, line 29](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PDL/Beth.lean#L29): “If a PDL formula phi implicitly determines a propositional letter p (all two-letter substitutions agree wherever both substituted formulas hold), there is a formula psi using only phi's vocabulary other than p such that phi entails that p is equivalent to psi.”

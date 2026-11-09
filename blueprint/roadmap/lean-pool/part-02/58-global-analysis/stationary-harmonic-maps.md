@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanStationaryHarmonicMaps.StationaryHarmonicMap.StationaryW12LocMap`](https://leanpool.github.io/lean-pool/LeanPool/LeanStationaryHarmonicMaps/StationaryHarmonicMap/StationaryMap.html#LeanStationaryHarmonicMaps.StationaryHarmonicMap.StationaryW12LocMap) (structure; a main declaration), declared in [LeanPool/LeanStationaryHarmonicMaps/StationaryHarmonicMap/StationaryMap.lean, line 37](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LeanStationaryHarmonicMaps/StationaryHarmonicMap/StationaryMap.lean#L37): “The public input package: a domain-variation stationary `W^{1,2}_{loc}` Sobolev map bundling a chosen weak gradient (`W12LocMapWitness`) with the vanishing domain first-variation identity. This is the object users construct to invoke the monotonicity theorem.”
 - [`LeanStationaryHarmonicMaps.StationaryHarmonicMap.stationaryW12LocMonotonicity_euclidean`](https://leanpool.github.io/lean-pool/LeanPool/LeanStationaryHarmonicMaps/StationaryHarmonicMap/MainTheorem.html#LeanStationaryHarmonicMaps.StationaryHarmonicMap.stationaryW12LocMonotonicity_euclidean) (theorem), declared in [LeanPool/LeanStationaryHarmonicMaps/StationaryHarmonicMap/MainTheorem.lean, line 56](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LeanStationaryHarmonicMaps/StationaryHarmonicMap/MainTheorem.lean#L56): “Witness-style monotonicity: from a stationary `W^{1,2}_{loc}` map package, the normalized weak energy `weakTheta` is monotone in the radius, `weakTheta Du a s <= weakTheta Du a r` for `0 < s <= r < R0`.”

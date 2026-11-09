@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`QuantumQueryComplexity.advDual_eq_advPM`](https://leanpool.github.io/lean-pool/LeanPool/QuantumQuery/Adversary.html#QuantumQueryComplexity.advDual_eq_advPM) (theorem), declared in [LeanPool/QuantumQuery/Adversary.lean, line 6567](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/QuantumQuery/Adversary.lean#L6567): “For every total Boolean function on a finite Boolean input cube, the all-pairs real adversary dual infimum equals the real symmetric primal supremum.”
 - [`QuantumQueryComplexity.advPM_composeFun_eq`](https://leanpool.github.io/lean-pool/LeanPool/QuantumQuery/Adversary.html#QuantumQueryComplexity.advPM_composeFun_eq) (theorem), declared in [LeanPool/QuantumQuery/Adversary.lean, line 6587](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/QuantumQuery/Adversary.lean#L6587): “The negative-weight adversary value of total Boolean functions composed on disjoint blocks equals the product of their adversary values, including constant functions and empty index types.”
@@ -31,7 +31,7 @@ The card lists 7 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Troy Lee.
-- Source: [arXiv:1011.3020v2](https://arxiv.org/abs/1011.3020v2), [https://github.com/troyjlee/quantum-query-complexity/tree/517ba85eb211232771429804d8583e3f52b9d541](https://github.com/troyjlee/quantum-query-complexity/tree/517ba85eb211232771429804d8583e3f52b9d541).
+- Source: [arXiv:1011.3020v2](https://arxiv.org/abs/1011.3020v2).
 - Project repository: [troyjlee/quantum-query-complexity](https://github.com/troyjlee/quantum-query-complexity), at commit [517ba85e](https://github.com/troyjlee/quantum-query-complexity/tree/517ba85eb211232771429804d8583e3f52b9d541).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

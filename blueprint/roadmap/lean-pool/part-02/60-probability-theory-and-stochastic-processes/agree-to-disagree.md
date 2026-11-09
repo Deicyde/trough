@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`AgreeToDisagree.agreeToDisagree`](https://leanpool.github.io/lean-pool/LeanPool/AgreeToDisagree/AgreeToDisagree.html#AgreeToDisagree.agreeToDisagree) (lemma; a main declaration), declared in [LeanPool/AgreeToDisagree/AgreeToDisagree.lean, line 226](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/AgreeToDisagree/AgreeToDisagree.lean#L226): “If it is common knowledge at a state that two agents assign fixed posterior probabilities to an event, and the common-knowledge cell has equal posterior under their priors, then the two posterior probabilities are equal.”
 - [`AgreeToDisagree.agreeToDisagree'`](https://leanpool.github.io/lean-pool/LeanPool/AgreeToDisagree/AgreeToDisagree.html#AgreeToDisagree.agreeToDisagree') (lemma), declared in [LeanPool/AgreeToDisagree/AgreeToDisagree.lean, line 240](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/AgreeToDisagree/AgreeToDisagree.lean#L240): “Generalizes the agreement theorem to a family of agents indexed by an arbitrary type.”

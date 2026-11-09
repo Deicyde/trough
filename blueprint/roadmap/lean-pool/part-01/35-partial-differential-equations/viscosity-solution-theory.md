@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`AleksandrovDifferentiability.convexAleksandrovAE`](https://leanpool.github.io/lean-pool/LeanPool/ViscositySolutionTheory/AleksandrovDifferentiability/Statements/Aleksandrov/Final.html#AleksandrovDifferentiability.convexAleksandrovAE) (theorem), declared in [LeanPool/ViscositySolutionTheory/AleksandrovDifferentiability/Statements/Aleksandrov/Final.lean, line 39](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ViscositySolutionTheory/AleksandrovDifferentiability/Statements/Aleksandrov/Final.lean#L39): “A convex real-valued function on an open subset of any finite-dimensional real inner product space is second-order differentiable at Lebesgue-almost every point.”
 - [`ViscositySolns.JensenContactSetPositiveMeasureOnClosedBallTheorem.proof`](https://leanpool.github.io/lean-pool/LeanPool/ViscositySolutionTheory/ViscositySolns/Analysis/SemiconvexJensen/Jensen/MainTheorems.html#ViscositySolns.JensenContactSetPositiveMeasureOnClosedBallTheorem.proof) (theorem), declared in [LeanPool/ViscositySolutionTheory/ViscositySolns/Analysis/SemiconvexJensen/Jensen/MainTheorems.lean, line 538](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ViscositySolutionTheory/ViscositySolns/Analysis/SemiconvexJensen/Jensen/MainTheorems.lean#L538): “Under the localized semiconvexity and strict-contact hypotheses, the contact set arising from sufficiently small linear perturbations has positive Lebesgue measure.”
@@ -30,7 +30,7 @@ The card lists 6 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: William M. Feldman, AleksandrovDifferentiability contributors, The Tau Ceti contributors.
-- Source: [arXiv:math/9207212](https://arxiv.org/abs/math/9207212), [https://github.com/willmfeldman/viscosity-solution-theory/tree/067e2540ad1594408c0b6145c5bde01b4d5791a9](https://github.com/willmfeldman/viscosity-solution-theory/tree/067e2540ad1594408c0b6145c5bde01b4d5791a9).
+- Source: [arXiv:math/9207212](https://arxiv.org/abs/math/9207212).
 - Project repository: [willmfeldman/viscosity-solution-theory](https://github.com/willmfeldman/viscosity-solution-theory), at commit [067e2540](https://github.com/willmfeldman/viscosity-solution-theory/tree/067e2540ad1594408c0b6145c5bde01b4d5791a9).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`CompactnessConjecture.quantitativeCompactnessCounterexample`](https://leanpool.github.io/lean-pool/LeanPool/CompactnessAndDegeneracy/Compactness.html#CompactnessConjecture.quantitativeCompactnessCounterexample) (theorem; a main declaration), declared in [LeanPool/CompactnessAndDegeneracy/Compactness.lean, line 9547](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CompactnessAndDegeneracy/Compactness.lean#L9547): “There is a nonempty finite family of connected bipartite cyclic graphs such that every member has a uniform positive n^(4/3)-scale extremal lower bound, while every family-free host on n vertices has its sixteenth power of the edge count bounded by a constant times n^21. Consequently the family is not compact and the Erdős--Simonovits compactness conjecture is false.”
 - [`TwoDegenerateGraphs.twoDegenerateExtremalCounterexample`](https://leanpool.github.io/lean-pool/LeanPool/CompactnessAndDegeneracy/Degeneracy.html#TwoDegenerateGraphs.twoDegenerateExtremalCounterexample) (theorem), declared in [LeanPool/CompactnessAndDegeneracy/Degeneracy.lean, line 9185](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CompactnessAndDegeneracy/Degeneracy.lean#L9185): “There is a connected bipartite two-degenerate finite graph H such that each side of every two-coloring has a vertex of degree greater than two, yet ex(n,H) is eventually at least c n^(3/2+ε) for some positive constants c and ε.”

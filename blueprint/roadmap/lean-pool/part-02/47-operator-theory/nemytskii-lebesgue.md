@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`NemytskiiLebesgue.IsCaratheodory.memLp_nemytskii_volume_iff_growth`](https://leanpool.github.io/lean-pool/LeanPool/NemytskiiLebesgue/ConverseImplication.html#NemytskiiLebesgue.IsCaratheodory.memLp_nemytskii_volume_iff_growth) (theorem; a main declaration), declared in [LeanPool/NemytskiiLebesgue/ConverseImplication.lean, line 1052](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NemytskiiLebesgue/ConverseImplication.lean#L1052): “For f from R times R^m to R^k with strongly measurable sections and almost-everywhere continuous fibers, and 1 <= p,q < infinity, every Lp input gives an Lq output if and only if there exist an Lq real envelope a and a nonnegative constant C such that almost everywhere, simultaneously for every fiber vector xi, norm(f(x,xi)) <= abs(a(x)) + C \* norm(xi)^(p/q).” Its source, as the card gives it: “Upstream NemytskiiLebesgue/ConverseImplication.lean.”
 - [`NemytskiiLebesgue.IsCaratheodory.nemytskii_seqContinuous_of_memLp_of_growth_real`](https://leanpool.github.io/lean-pool/LeanPool/NemytskiiLebesgue/Continuity.html#NemytskiiLebesgue.IsCaratheodory.nemytskii_seqContinuous_of_memLp_of_growth_real) (theorem), declared in [LeanPool/NemytskiiLebesgue/Continuity.lean, line 433](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NemytskiiLebesgue/Continuity.lean#L433): “On any measure space, the same Caratheodory and growth assumptions imply that a sequence of Lp functions converging in Lp to an Lp function has superposition images converging in Lq, for finite exponents p,q at least one and finite-dimensional real fibers.” Its source, as the card gives it: “Upstream NemytskiiLebesgue/Continuity.lean.”
@@ -28,9 +28,9 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Petr Girg, Petr Nečesal, Martin Dvořák, Jakub Psutka.
-- Source: *Nemytskii operators on Lebesgue spaces*, [https://github.com/madvorak/nemytskii-lebesgue/tree/d276c27a1e3ebbd9eb09f25243b5e9808ca168d7](https://github.com/madvorak/nemytskii-lebesgue/tree/d276c27a1e3ebbd9eb09f25243b5e9808ca168d7).
+- Source: *Nemytskii operators on Lebesgue spaces*.
 - Project repository: [madvorak/nemytskii-lebesgue](https://github.com/madvorak/nemytskii-lebesgue), at commit [d276c27a](https://github.com/madvorak/nemytskii-lebesgue/tree/d276c27a1e3ebbd9eb09f25243b5e9808ca168d7).
-- Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
+- Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs. The card's note: “Upstream credits the four listed authors. Its README and available commit history contain no AI disclosure; this is evidence under the repository's human-provenance rubric, not proof of tool non-use. The imported version includes substantial AI-assisted Mathlib porting and proof refactoring by OpenAI Codex, so it is recorded as mixed.”
 - License: Apache-2.0.
 - MSC2020: 47H30, 46E30, 47J05.
 - In Lean Pool: [LeanPool/NemytskiiLebesgue](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NemytskiiLebesgue), from the card [LeanPool/projects/nemytskii-lebesgue.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/nemytskii-lebesgue.yaml).

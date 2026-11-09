@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`ExistsNashEq`](https://leanpool.github.io/lean-pool/LeanPool/Brouwer/Nash.html#ExistsNashEq) (theorem; a main declaration), declared in [LeanPool/Brouwer/Nash.lean, line 497](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Brouwer/Nash.lean#L497): “Every finite game has a mixed Nash equilibrium.” Its source, as the card gives it: “J. Nash, Equilibrium Points in N-Person Games, Proceedings of the National Academy of Sciences 36(1):48-49, 1950, doi:10.1073/pnas.36.1.48.”
 - [`Brouwer`](https://leanpool.github.io/lean-pool/LeanPool/Brouwer/Brouwer.html#Brouwer) (theorem; a main declaration), declared in [LeanPool/Brouwer/Brouwer.lean, line 729](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Brouwer/Brouwer.lean#L729): “Every continuous self-map of a standard simplex has a fixed point.” Its source, as the card gives it: “H. Scarf, The Approximation of Fixed Points of a Continuous Mapping, SIAM Journal on Applied Mathematics 15(5):1328-1343, 1967, doi:10.1137/0115116.”

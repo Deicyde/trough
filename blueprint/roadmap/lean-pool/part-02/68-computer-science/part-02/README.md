@@ -2,6 +2,6 @@
 navigation: transparent
 ---
 
-# Part 2 of 2
+# Sundog certificates
 
 - [Sundog certificates](sundogcert.md)

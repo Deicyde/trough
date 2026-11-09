@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Valuation.ramificationIndex`](https://leanpool.github.io/lean-pool/LeanPool/FundamentalInequality.html#Valuation.ramificationIndex) (def; a main declaration), declared in [LeanPool/FundamentalInequality.lean, line 74](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FundamentalInequality.lean#L74): “Defines the ramification index e(w/v) as the relative index of the value group of the restricted valuation inside the value group of the extension.”
 - [`Valuation.residueDegree`](https://leanpool.github.io/lean-pool/LeanPool/FundamentalInequality.html#Valuation.residueDegree) (def), declared in [LeanPool/FundamentalInequality.lean, line 59](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FundamentalInequality.lean#L59): “Defines the residue degree f(w/v) as the rank of the residue field extension.”

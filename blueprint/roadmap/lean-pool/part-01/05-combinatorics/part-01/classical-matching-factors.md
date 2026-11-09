@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 10 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 10 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`BergeMatching.isMaximum_iff_not_exists_augmenting`](https://leanpool.github.io/lean-pool/LeanPool/ClassicalMatchingFactors/Matching/Berge.html#BergeMatching.isMaximum_iff_not_exists_augmenting) (theorem), declared in [LeanPool/ClassicalMatchingFactors/Matching/Berge.lean, line 521](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ClassicalMatchingFactors/Matching/Berge.lean#L521): “A matching in a finite simple graph has maximum cardinality if and only if it has no augmenting path, with distinct unmatched endpoints and alternating edges.” Its source, as the card gives it: “Berge (1957), Two theorems in graph theory, doi:10.1073/pnas.43.9.842.”
 - [`BergeMatching.exists_tutte_berge`](https://leanpool.github.io/lean-pool/LeanPool/ClassicalMatchingFactors/Matching/Berge.html#BergeMatching.exists_tutte_berge) (theorem; a main declaration), declared in [LeanPool/ClassicalMatchingFactors/Matching/Berge.lean, line 588](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ClassicalMatchingFactors/Matching/Berge.lean#L588): “Every finite simple graph admits a matching M and a vertex set U with twice the number of matching edges plus the number of odd components of G minus U equal to the number of vertices plus the size of U.” Its source, as the card gives it: “Berge (1958), Sur le couplage maximum d'un graphe; PALOMAR-2026-10-16-000011.”
@@ -34,7 +34,8 @@ The card lists 10 main results, each with its informal statement quoted from the
 ## Project
 
 - Authors: Juan Pablo Traverso Gianini.
-- Source: *A Short Proof of the Factor Theorem for Finite Graphs* by W. T. Tutte, [doi:10.4153/CJM-1954-033-3](https://doi.org/10.4153/CJM-1954-033-3), [https://github.com/jtraverso/tutte-f-factor/tree/dc3bbce463c80c499d3e9fa072d13f9145d907d0](https://github.com/jtraverso/tutte-f-factor/tree/dc3bbce463c80c499d3e9fa072d13f9145d907d0).
+- Source: *A Short Proof of the Factor Theorem for Finite Graphs* by W. T. Tutte, [doi:10.4153/CJM-1954-033-3](https://doi.org/10.4153/CJM-1954-033-3).
+- The card's note on its source: “This source anchors the f-factor development. The other four frozen source repositories, their commits and Palomar IDs are linked in the imported module docstrings; each main result below identifies its mathematical source.”
 - Project repository: [jtraverso/tutte-f-factor](https://github.com/jtraverso/tutte-f-factor), at commit [dc3bbce4](https://github.com/jtraverso/tutte-f-factor/tree/dc3bbce463c80c499d3e9fa072d13f9145d907d0).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

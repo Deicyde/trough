@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`RunsOfMultiples.main_theorem`](https://leanpool.github.io/lean-pool/LeanPool/RunsOfMultiples/Main.html#RunsOfMultiples.main_theorem) (theorem; a main declaration), declared in [LeanPool/RunsOfMultiples/Main.lean, line 32](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RunsOfMultiples/Main.lean#L32): “Every sufficiently large finite set S of positive integers has sum of its first missing multiple indices at most C\*n\*log(n)\*log(log(n)); for every sufficiently large n, a set of exactly n positive integers attains at least c\*n\*log(n)\*log(log(n)), for a fixed c>0. This proof uses entropy and smooth numbers.”
 - [`RunsOfMultiples.main_theorem_alt`](https://leanpool.github.io/lean-pool/LeanPool/RunsOfMultiples/Alt/Main.html#RunsOfMultiples.main_theorem_alt) (theorem; a main declaration), declared in [LeanPool/RunsOfMultiples/Alt/Main.lean, line 27](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RunsOfMultiples/Alt/Main.lean#L27): “The identical sharp asymptotic statement, proved using compression to divisor-closed, prime-shift-closed sets and a box-times-simplex construction.”

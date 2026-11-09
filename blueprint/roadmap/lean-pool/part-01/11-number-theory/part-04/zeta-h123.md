@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`ZetaH123.H1.main_theorem`](https://leanpool.github.io/lean-pool/LeanPool/ZetaH123/H1.html#ZetaH123.H1.main_theorem) (theorem; a main declaration), declared in [LeanPool/ZetaH123/H1.lean, line 2404](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ZetaH123/H1.lean#L2404): “Proves uniqueness of the admissible base-q decomposition maximizing the H1 power-sum weight functional.”
 - [`ZetaH123.H2.main`](https://leanpool.github.io/lean-pool/LeanPool/ZetaH123/H2.html#ZetaH123.H2.main) (theorem), declared in [LeanPool/ZetaH123/H2.lean, line 2130](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ZetaH123/H2.lean#L2130): “Proves the H2 unique-minimizer statement for the recursive digit/carry-free optimization problem defining the values s_d(k).”

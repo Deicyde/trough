@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Stafford38.universalStatement`](https://leanpool.github.io/lean-pool/LeanPool/Stafford38/Stafford38/FoundationClosure.html#Stafford38.universalStatement) (theorem; a main declaration), declared in [LeanPool/Stafford38/Stafford38/FoundationClosure.lean, line 74](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Stafford38/Stafford38/FoundationClosure.lean#L74): “For every characteristic-zero field, every Weyl algebra rank, and every nonzero d, there are F, R, S with 1 = d\*R + F\*d\*S.”
 - [`Stafford38.universalFixedSourceStatement`](https://leanpool.github.io/lean-pool/LeanPool/Stafford38/Stafford38/FoundationClosure.html#Stafford38.universalFixedSourceStatement) (theorem), declared in [LeanPool/Stafford38/Stafford38/FoundationClosure.lean, line 78](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Stafford38/Stafford38/FoundationClosure.lean#L78): “The stated fixed-source strengthening holds with its exact Bernstein-degree bound.”

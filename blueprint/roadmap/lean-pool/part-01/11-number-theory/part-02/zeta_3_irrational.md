@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanPool.Zeta3Irrational.zeta3_irrational`](https://leanpool.github.io/lean-pool/LeanPool/Zeta3Irrational/Basic.html#LeanPool.Zeta3Irrational.zeta3_irrational) (theorem; a main declaration), declared in [LeanPool/Zeta3Irrational/Basic.lean, line 1177](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Zeta3Irrational/Basic.lean#L1177): “Proves that ζ(3) is irrational.”
 - [`LeanPool.Zeta3Irrational.linear_int`](https://leanpool.github.io/lean-pool/LeanPool/Zeta3Irrational/Basic.html#LeanPool.Zeta3Irrational.linear_int) (theorem), declared in [LeanPool/Zeta3Irrational/Basic.lean, line 54](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Zeta3Irrational/Basic.lean#L54): “Clears denominators in the Apéry integral to produce a linear form in 1 and ζ(3).”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Nock.Verb.runProgram_adequate_complete`](https://leanpool.github.io/lean-pool/LeanPool/PureNock/PureComplete.html#Nock.Verb.runProgram_adequate_complete) (theorem; a main declaration), declared in [LeanPool/PureNock/PureComplete.lean, line 1156](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PureNock/PureComplete.lean#L1156): “A subject and formula evaluate to a result under the small-step program machine with some finite fuel if and only if the derived paper evaluator produces that result with some finite fuel.”
 - [`Nock.Verb.runTraceProgram_certificate`](https://leanpool.github.io/lean-pool/LeanPool/PureNock/TraceCertificate.html#Nock.Verb.runTraceProgram_certificate) (theorem), declared in [LeanPool/PureNock/TraceCertificate.lean, line 225](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PureNock/TraceCertificate.lean#L225): “Every successfully emitted program trace is consistent and complete, every adjacent transition passes the Nock checker, and the final state is either terminal or has a crash edge accepted by the checker.”
@@ -32,7 +32,7 @@ The card lists 7 main results, each with its informal statement quoted from the 
 
 - Authors: Pure Nock formalization contributors.
 - Contributors: Assimakis A. Kattis.
-- Source: *A Generic Compilation Framework for Efficiently Verifiable Virtual Machine Architectures (draft v0.1.6)* by Assimakis A. Kattis, Brian Klatt, Philip Quirk, Logan Allen.
+- Source: *A Generic Compilation Framework for Efficiently Verifiable Virtual Machine Architectures (draft v0.1.6)* by Assimakis A. Kattis, Brian Klatt, Philip Quirk, Logan Allen, [manuscript](https://github.com/nockchain/pure-nock-lean/blob/4838863baa2d49e38573efa3474e77bf1154f300/paper/main.tex).
 - Project repository: [nockchain/pure-nock-lean](https://github.com/nockchain/pure-nock-lean), at commit [4838863b](https://github.com/nockchain/pure-nock-lean/tree/4838863baa2d49e38573efa3474e77bf1154f300).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
 - License: Apache-2.0.

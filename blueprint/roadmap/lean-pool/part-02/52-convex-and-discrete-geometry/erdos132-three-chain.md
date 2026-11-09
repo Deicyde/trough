@@ -34,11 +34,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 8 main results, each with its informal statement quoted from the card. The scan finds 8 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 8 main results, each with its informal statement quoted from the card. The scan finds 8 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Erdos132ThreeChain.nonDiameterSqDists_ne_chain`](https://leanpool.github.io/lean-pool/LeanPool/Erdos132ThreeChain/Statement.html#Erdos132ThreeChain.nonDiameterSqDists_ne_chain) (theorem; a main declaration), declared in [LeanPool/Erdos132ThreeChain/Statement.lean, line 56](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos132ThreeChain/Statement.lean#L56): “Let n be at least thirteen, let a be positive, and let X be a finite set of points of the real plane with exactly n elements. Suppose D is the squared diameter of X, meaning that D is realised by two distinct points of X and dominates every squared distance inside X. Then for every natural number h, the set of squared distances realised by distinct points of X and different from D is not equal to the geometric 3-chain consisting of a times 3^j for j below h.”
 - [`Erdos132ThreeChain.four_chain_adjacent`](https://leanpool.github.io/lean-pool/LeanPool/Erdos132ThreeChain/Support.html#Erdos132ThreeChain.four_chain_adjacent) (theorem), declared in [LeanPool/Erdos132ThreeChain/Support.lean, line 74](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos132ThreeChain/Support.lean#L74): “Let a be positive and let S be a four-element set of points of the real plane such that every squared distance between distinct points of S equals a times a nonnegative power of three. Then there is a positive r, itself equal to a times a nonnegative power of three, for which every squared distance between distinct points of S equals r or 3r.”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanEval.Topology.ClassificationOfSurfaces.classification_of_surfaces`](https://leanpool.github.io/lean-pool/LeanPool/ClassificationOfSurfaces/EvalStatement.html#LeanEval.Topology.ClassificationOfSurfaces.classification_of_surfaces) (theorem; a main declaration), declared in [LeanPool/ClassificationOfSurfaces/EvalStatement.lean, line 30](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ClassificationOfSurfaces/EvalStatement.lean#L30): “Every compact connected Hausdorff topological 2-manifold with boundary is homeomorphic to the sphere, an orientable normal-form quotient, or a non-orientable normal-form quotient.”
 

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 14 main results, each with its informal statement quoted from the card. The scan finds 14 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 14 main results, each with its informal statement quoted from the card. The scan finds 14 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Konig.lineGraph_colorable_of_colorable_two`](https://leanpool.github.io/lean-pool/LeanPool/ClassicalGraphColouring/Konig/Basic.html#Konig.lineGraph_colorable_of_colorable_two) (theorem), declared in [LeanPool/ClassicalGraphColouring/Konig/Basic.lean, line 209](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ClassicalGraphColouring/Konig/Basic.lean#L209): “A finite bipartite simple graph has a proper edge colouring using its maximum degree many colours.” Its source, as the card gives it: “Kőnig (1916), doi:10.1007/BF01456961; PALOMAR-2026-10-15-000019.”
 - [`Konig.lineGraph_chromaticNumber_of_colorable_two`](https://leanpool.github.io/lean-pool/LeanPool/ClassicalGraphColouring/Konig/Basic.html#Konig.lineGraph_chromaticNumber_of_colorable_two) (theorem), declared in [LeanPool/ClassicalGraphColouring/Konig/Basic.lean, line 242](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ClassicalGraphColouring/Konig/Basic.lean#L242): “The chromatic index of a finite bipartite simple graph equals its maximum degree.” Its source, as the card gives it: “Kőnig (1916), doi:10.1007/BF01456961; PALOMAR-2026-10-15-000019.”
@@ -38,7 +38,8 @@ The card lists 14 main results, each with its informal statement quoted from the
 ## Project
 
 - Authors: Juan Pablo Traverso Gianini.
-- Source: *The List Chromatic Index of a Bipartite Multigraph* by Fred Galvin, [doi:10.1006/jctb.1995.1011](https://doi.org/10.1006/jctb.1995.1011), [https://github.com/jtraverso/galvin-dinitz/tree/0aa98fc17e1e96ec408f7bad3198ce37a08d26fc](https://github.com/jtraverso/galvin-dinitz/tree/0aa98fc17e1e96ec408f7bad3198ce37a08d26fc).
+- Source: *The List Chromatic Index of a Bipartite Multigraph* by Fred Galvin, [doi:10.1006/jctb.1995.1011](https://doi.org/10.1006/jctb.1995.1011).
+- The card's note on its source: “Formalizes the finite simple-graph case. The Kőnig edge-colouring proof comes from jtraverso/konig-edge-colouring at 7c60f7efb69c1747aaf39e5dfa7a89d907cd84ef (Palomar PALOMAR-2026-10-15-000019). The Galvin, Dinitz and stable-matching proofs come from PALOMAR-2026-10-18-000029. Gallai–Roy comes from jtraverso/gallai-roy at e737218bf80c3d3684d670f5f8aa9a8257e1a52f (PALOMAR-2026-10-16-000015), and the spectral bounds from jtraverso/spectral-graph-bounds at 8d8b4ce17e56165b5f1ad3b285fb141666804e1c (PALOMAR-2026-10-18-000016). The source's copied Vizing files are omitted in favour of the existing Lean Pool project.”
 - Project repository: [jtraverso/galvin-dinitz](https://github.com/jtraverso/galvin-dinitz), at commit [0aa98fc1](https://github.com/jtraverso/galvin-dinitz/tree/0aa98fc17e1e96ec408f7bad3198ce37a08d26fc).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

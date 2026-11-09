@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`SetTheory.kunen_inconsistency_V`](https://leanpool.github.io/lean-pool/LeanPool/SetTheory/KunenInconsistency.html#SetTheory.kunen_inconsistency_V) (theorem; a main declaration), declared in [LeanPool/SetTheory/KunenInconsistency.lean, line 374](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SetTheory/KunenInconsistency.lean#L374): “Proves the Kunen inconsistency theorem, that every elementary embedding of the von Neumann universe V into itself is the identity.”
 - [`SetTheory.kunen_inconsistency_vonNeumann`](https://leanpool.github.io/lean-pool/LeanPool/SetTheory/KunenInconsistency.html#SetTheory.kunen_inconsistency_vonNeumann) (theorem), declared in [LeanPool/SetTheory/KunenInconsistency.lean, line 348](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SetTheory/KunenInconsistency.lean#L348): “Proves the Kunen inconsistency theorem for von Neumann levels V_μ at a successor-limit ordinal, computing the supremum of the critical-point iterates.”

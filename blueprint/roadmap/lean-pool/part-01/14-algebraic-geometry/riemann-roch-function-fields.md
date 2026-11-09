@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 7 main results, each with its informal statement quoted from the card. The scan finds 7 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`FunctionField.riemann_roch`](https://leanpool.github.io/lean-pool/LeanPool/RiemannRochFunctionFields/CoordinateFree/RiemannRoch.html#FunctionField.riemann_roch) (theorem; a main declaration), declared in [LeanPool/RiemannRochFunctionFields/CoordinateFree/RiemannRoch.lean, line 286](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RiemannRochFunctionFields/CoordinateFree/RiemannRoch.lean#L286): “For a function field K over its full constant field k, a canonical divisor W, and any divisor D indexed by intrinsic places, ℓ(D) = deg D + 1 − g + ℓ(W − D).”
 - [`FunctionField.duality`](https://leanpool.github.io/lean-pool/LeanPool/RiemannRochFunctionFields/CoordinateFree/RiemannRoch.html#FunctionField.duality) (theorem), declared in [LeanPool/RiemannRochFunctionFields/CoordinateFree/RiemannRoch.lean, line 272](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RiemannRochFunctionFields/CoordinateFree/RiemannRoch.lean#L272): “For a canonical divisor W and any divisor D, ℓ(W − D) equals the index of specialty i(D), the codimension of L(D) plus K inside the adele space.”

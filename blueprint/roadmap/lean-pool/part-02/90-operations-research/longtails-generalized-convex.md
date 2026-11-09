@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LongTails.OracleTemplate.GeneralizedAccelerated.SelfNormalized.result`](https://leanpool.github.io/lean-pool/LeanPool/LongTails/Theorems/GeneralizedSelfNormalizedConvex.html#LongTails.OracleTemplate.GeneralizedAccelerated.SelfNormalized.result) (theorem; a main declaration), declared in [LeanPool/LongTails/Theorems/GeneralizedSelfNormalizedConvex.lean, line 32](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LongTails/Theorems/GeneralizedSelfNormalizedConvex.lean#L32): “For positive L0, R, Delta and epsilon and nonnegative L1, a single damped accelerated algorithm returns a point of objective gap at most epsilon for every admissible convex objective with an attained minimum within distance R and initial objective gap at most Delta. Its exact gradient-query budget is zero when Delta <= epsilon; otherwise it is twice the natural ceiling of 4096 times (1 + sqrt(L0\*R^2/epsilon) + min(ceil((L1\*R)^(2/3))\*D, D + (L1\*R\*D)^(2/3))), where D = log(4 + 4\*Delta/epsilon).”
 - [`LongTails.OracleTemplate.GeneralizedAccelerated.run_accuracy_self_normalized`](https://leanpool.github.io/lean-pool/LeanPool/LongTails/Proofs/GeneralizedSelfNormalizedConvergence.html#LongTails.OracleTemplate.GeneralizedAccelerated.run_accuracy_self_normalized) (lemma), declared in [LeanPool/LongTails/Proofs/GeneralizedSelfNormalizedConvergence.lean, line 78](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LongTails/Proofs/GeneralizedSelfNormalizedConvergence.lean#L78): “Under the same convexity, gradient, Hessian-growth and initialization hypotheses, N accelerated steps reach objective gap epsilon whenever N >= 4096\*(1 + sqrt(L0\*R^2/epsilon) + D + (L1\*R\*D)^(2/3)).”
@@ -28,7 +28,6 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Alexander Tyurin, QuocViet Pham, Valentin Khrulkov, Ivan Oseledets.
-- Source: [https://github.com/k3nfalt/longtails/tree/269cbc764dd36851fd0b64f2f950f329ee127de4](https://github.com/k3nfalt/longtails/tree/269cbc764dd36851fd0b64f2f950f329ee127de4).
 - Project repository: [k3nfalt/longtails](https://github.com/k3nfalt/longtails), at commit [269cbc76](https://github.com/k3nfalt/longtails/tree/269cbc764dd36851fd0b64f2f950f329ee127de4).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

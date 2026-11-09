@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`JL.johnson_lindenstrauss`](https://leanpool.github.io/lean-pool/LeanPool/JohnsonLindenstraussLean/Lemma.html#JL.johnson_lindenstrauss) (theorem; a main declaration), declared in [LeanPool/JohnsonLindenstraussLean/Lemma.lean, line 62](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/JohnsonLindenstraussLean/Lemma.lean#L62): “The abstract probabilistic-method union bound — if the summed per-pair distortion-failure probability is below one, a distortion-preserving map exists.”
 - [`JL.johnson_lindenstrauss_pointset`](https://leanpool.github.io/lean-pool/LeanPool/JohnsonLindenstraussLean/EndToEnd.html#JL.johnson_lindenstrauss_pointset) (theorem; a main declaration), declared in [LeanPool/JohnsonLindenstraussLean/EndToEnd.lean, line 65](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/JohnsonLindenstraussLean/EndToEnd.lean#L65): “The end-to-end Johnson–Lindenstrauss lemma — a Gaussian random projection into k dimensions embeds any m-point set with (1 ± ε) distortion once k is logarithmic in m.” Its source, as the card gives it: “S. Dasgupta, A. Gupta, An elementary proof of a theorem of Johnson and Lindenstrauss, Random Structures and Algorithms 22 (2003), 60-65, doi:10.1002/rsa.10073.”

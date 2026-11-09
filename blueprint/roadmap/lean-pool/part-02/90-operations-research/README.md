@@ -1,6 +1,6 @@
 # Operations research, mathematical programming
 
-The Lean Pool projects whose card's first MSC2020 code is in class 90, Operations research, mathematical programming: 6 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 90, “Operations research, mathematical programming”: 6 articles, one per card.
 
 - [Counterexample to Goemans' unsplittable-flow cost conjecture](goemans-cost-counterexample.md)
 - [Duality theory in linear optimization and its extensions](duality.md)

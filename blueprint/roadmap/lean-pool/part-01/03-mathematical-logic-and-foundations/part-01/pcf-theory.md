@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Ordinal.exists_isClubGuessing_of_cof_uncountable`](https://leanpool.github.io/lean-pool/LeanPool/PCFTheory/ClubGuessing.html#Ordinal.exists_isClubGuessing_of_cof_uncountable) (theorem; a main declaration), declared in [LeanPool/PCFTheory/ClubGuessing.lean, line 198](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PCFTheory/ClubGuessing.lean#L198): “Proves the existence of a club-guessing sequence on a stationary set whose elements share a common uncountable cofinality bounded by the cofinality of the ambient ordinal.”
 
@@ -28,7 +28,7 @@ The card lists one main result, with its informal statement quoted from the card
 - Source: [doi:10.1007/978-1-4020-5764-9_15](https://doi.org/10.1007/978-1-4020-5764-9_15).
 - Project repository: [YnirPaz/PCF-Theory](https://github.com/YnirPaz/PCF-Theory).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, keeping its copyright line: “The upstream MIT LICENSE file contains no copyright line; the repository owner of record is "YnirPaz".”.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0. Lean Pool's notice file notes: “The upstream MIT LICENSE file contains no copyright line; the repository owner of record is "YnirPaz".”
 - MSC2020: 03E04, 03E10, 03E55.
 - In Lean Pool: [LeanPool/PCFTheory](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PCFTheory), from the card [LeanPool/projects/pcf-theory.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/pcf-theory.yaml).
 

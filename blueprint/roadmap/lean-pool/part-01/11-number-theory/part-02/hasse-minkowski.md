@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`HasseMinkowski.hasseMinkowski`](https://leanpool.github.io/lean-pool/LeanPool/HasseMinkowski/Main.html#HasseMinkowski.hasseMinkowski) (theorem; a main declaration), declared in [LeanPool/HasseMinkowski/Main.lean, line 197](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HasseMinkowski/Main.lean#L197): “A quadratic form over ℚ is isotropic if and only if it is isotropic over ℝ and over every p-adic completion ℚ\_[p] (the Hasse–Minkowski local–global principle, in isotropy form).”
 - [`HasseMinkowski.meyer`](https://leanpool.github.io/lean-pool/LeanPool/HasseMinkowski/Main.html#HasseMinkowski.meyer) (theorem; a main declaration), declared in [LeanPool/HasseMinkowski/Main.lean, line 202](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HasseMinkowski/Main.lean#L202): “Every indefinite quadratic form over ℚ in at least five variables is isotropic (Meyer's theorem).”

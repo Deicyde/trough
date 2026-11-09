@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanPool.CenteredMaximal.ofReal_phi_le_weakTypeConstant_two`](https://leanpool.github.io/lean-pool/LeanPool/CenteredMaximal.html#LeanPool.CenteredMaximal.ofReal_phi_le_weakTypeConstant_two) (theorem; a main declaration), declared in [LeanPool/CenteredMaximal.lean, line 63](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CenteredMaximal.lean#L63): “The explicit radical phi is a lower bound for c_2, the infimum of all weak type (1,1) bounds for the centered maximal operator over axis-parallel squares in the real plane.”
 - [`LeanPool.CenteredMaximal.weakTypeConstant_le_two_pow`](https://leanpool.github.io/lean-pool/LeanPool/CenteredMaximal.html#LeanPool.CenteredMaximal.weakTypeConstant_le_two_pow) (theorem), declared in [LeanPool/CenteredMaximal.lean, line 58](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CenteredMaximal.lean#L58): “For every natural number d, including zero, the centered maximal operator over axis-parallel cubes in real d-space has weak type (1,1) constant c_d at most 2^d.”
@@ -28,6 +28,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 
 - Authors: Yongxi Lin.
 - Source: *A lower bound 1.6855 for the planar centred maximal constant over squares* by Yongxi Lin.
+- The card's note on its source: “First completed publicly on 2026-09-18 at 22:15:07 UTC in commit 06a726f113241d445903f0c0eae1ebe40d8b539f. The lower bound is documented and proved in upstream docs/PROOF.md; the weighted smearing argument adapts Aldaz (2000), Lemma 1.1, and the covering upper bound follows Tao's 245A Notes 5, Exercise 42. Upstream formalization.yaml and docs/HISTORY.md disclose AI generation of the configuration and proofs under Yongxi Lin's direction.”
 - Project repository: [CoolRmal/centered-maximal-constant](https://github.com/CoolRmal/centered-maximal-constant), at commit [c6a8cb29](https://github.com/CoolRmal/centered-maximal-constant/tree/c6a8cb29e8ecce9ac4614a8c7e4bf6938366f986).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

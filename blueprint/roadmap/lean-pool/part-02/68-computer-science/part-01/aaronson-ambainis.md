@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`AaronsonAmbainis.aaronson_ambainis`](https://leanpool.github.io/lean-pool/LeanPool/AaronsonAmbainis/Main.html#AaronsonAmbainis.aaronson_ambainis) (theorem; a main declaration), declared in [LeanPool/AaronsonAmbainis/Main.lean, line 44](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/AaronsonAmbainis/Main.lean#L44): “For every real polynomial in N variables of total degree at most d, bounded between zero and one on the Boolean cube, positive variance at least epsilon guarantees a coordinate whose uniform mean squared change under a bit flip is at least (epsilon/d)^7.”
 - [`AaronsonAmbainis.aaronson_ambainis_explicit`](https://leanpool.github.io/lean-pool/LeanPool/AaronsonAmbainis/Main.html#AaronsonAmbainis.aaronson_ambainis_explicit) (theorem; a main declaration), declared in [LeanPool/AaronsonAmbainis/Main.lean, line 49](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/AaronsonAmbainis/Main.lean#L49): “Under the same hypotheses, a coordinate has squared-difference influence at least 8 sqrt(15) epsilon^(5/2) / (125 pi^4 d^6).”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: David Turturean.
-- Source: *A proof of the Aaronson–Ambainis conjecture*, [https://github.com/physical-superintelligence/aaronson-ambainis/tree/2a6ceaef872ae993708950f951989134084b851a](https://github.com/physical-superintelligence/aaronson-ambainis/tree/2a6ceaef872ae993708950f951989134084b851a).
+- Source: *A proof of the Aaronson–Ambainis conjecture*.
 - Project repository: [physical-superintelligence/aaronson-ambainis](https://github.com/physical-superintelligence/aaronson-ambainis), at commit [2a6ceaef](https://github.com/physical-superintelligence/aaronson-ambainis/tree/2a6ceaef872ae993708950f951989134084b851a).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`ComputableℝSeq`](https://leanpool.github.io/lean-pool/LeanPool/ComputableReal/ComputableRSeq.html#Computable%E2%84%9DSeq) (structure; a main declaration), declared in [LeanPool/ComputableReal/ComputableRSeq.lean, line 132](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ComputableReal/ComputableRSeq.lean#L132): “A sequence of converging rational lower and upper bounds representing a single real number.”
 - [`Computableℝ`](https://leanpool.github.io/lean-pool/LeanPool/ComputableReal/ComputableReal.html#Computable%E2%84%9D) (def; a main declaration), declared in [LeanPool/ComputableReal/ComputableReal.lean, line 27](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ComputableReal/ComputableReal.lean#L27): “The quotient of interval-Cauchy sequences by equality of value, an ordered field whose ring operations are executable interval arithmetic.”

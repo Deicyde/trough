@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Mathoverflow1973.SixSphereComplexAtlas.exists_complex_analytic_atlas`](https://leanpool.github.io/lean-pool/LeanPool/HopfProblem/Threefold/SixSphereComplexAtlas.html#Mathoverflow1973.SixSphereComplexAtlas.exists_complex_analytic_atlas) (theorem), declared in [LeanPool/HopfProblem/Threefold/SixSphereComplexAtlas.lean, line 68](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HopfProblem/Threefold/SixSphereComplexAtlas.lean#L68): “The standard unit six-sphere admits a complex three-dimensional charted-space structure making it a complex-analytic manifold.”
 - [`Mathoverflow1973.SixSphereComplexAtlas.exists_complex_atlas`](https://leanpool.github.io/lean-pool/LeanPool/HopfProblem/Threefold/SixSphereComplexAtlas.html#Mathoverflow1973.SixSphereComplexAtlas.exists_complex_atlas) (theorem), declared in [LeanPool/HopfProblem/Threefold/SixSphereComplexAtlas.lean, line 83](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HopfProblem/Threefold/SixSphereComplexAtlas.lean#L83): “The standard unit six-sphere admits a complex three-dimensional charted-space structure making it a continuously differentiable complex manifold.”
@@ -27,7 +27,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Boris Alexeev, Yury G. Kudryashov, Sebastian Kumar, The Formal Conjectures Authors.
-- Source: *HopfProblem: formalization of Alpöge's six-sphere construction* by Boris Alexeev, [https://github.com/plby/HopfProblem/tree/9ac8a456b526527837d7082ff775213ca8bc9809](https://github.com/plby/HopfProblem/tree/9ac8a456b526527837d7082ff775213ca8bc9809).
+- Source: *HopfProblem: formalization of Alpöge's six-sphere construction* by Boris Alexeev.
 - Project repository: [plby/HopfProblem](https://github.com/plby/HopfProblem), at commit [9ac8a456](https://github.com/plby/HopfProblem/tree/9ac8a456b526527837d7082ff775213ca8bc9809).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

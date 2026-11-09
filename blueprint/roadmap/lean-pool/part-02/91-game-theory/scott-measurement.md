@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 12 main results, each with its informal statement quoted from the card. The scan finds 12 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 12 main results, each with its informal statement quoted from the card. The scan finds 12 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_1`](https://leanpool.github.io/lean-pool/LeanPool/ScottMeasurement/LinearInequalities/ScottTheorems.html#Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_1) (theorem), declared in [LeanPool/ScottMeasurement/LinearInequalities/ScottTheorems.lean, line 223](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ScottMeasurement/LinearInequalities/ScottTheorems.lean#L223): “For a finite symmetric subset X of a finite-dimensional real normed space, membership in an arbitrary set N on X is represented by nonnegativity of a linear functional if and only if every x in X has x or -x in N and every zero sum of positively real-weighted vectors from X intersect N has all their negatives in N.”
 - [`Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_2`](https://leanpool.github.io/lean-pool/LeanPool/ScottMeasurement/LinearInequalities/ScottTheorems.html#Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_2) (theorem), declared in [LeanPool/ScottMeasurement/LinearInequalities/ScottTheorems.lean, line 261](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ScottMeasurement/LinearInequalities/ScottTheorems.lean#L261): “For a finite symmetric set of rational-valued vectors on a finite coordinate type, the same linear realizability criterion uses unweighted zero sums, with repetitions allowed, instead of arbitrary positive real weights.”
@@ -36,7 +36,7 @@ The card lists 12 main results, each with its informal statement quoted from the
 ## Project
 
 - Authors: Lars Warren Ericson.
-- Source: *Measurement Structures and Linear Inequalities* by Dana Scott.
+- Source: *Measurement Structures and Linear Inequalities* by Dana Scott, Journal of Mathematical Psychology 1 (1964), 233-247.
 - Project repository: [catskillsresearch/scott1964](https://github.com/catskillsresearch/scott1964), at commit [591e8a6a](https://github.com/catskillsresearch/scott1964/tree/591e8a6a5d7d1ebf4cc761b4a1cb749b6480dfeb).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

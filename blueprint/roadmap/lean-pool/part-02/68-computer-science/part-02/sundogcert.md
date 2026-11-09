@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Sundog.SATReductionMain.sat_iff_decodes`](https://leanpool.github.io/lean-pool/LeanPool/Sundogcert/SATReductionMain.html#Sundog.SATReductionMain.sat_iff_decodes) (theorem; a main declaration), declared in [LeanPool/Sundogcert/SATReductionMain.lean, line 81](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sundogcert/SATReductionMain.lean#L81): “The end-to-end reduction correctness: a formula is satisfiable iff its image under the composed 3SAT-to-decoding reduction is a yes-instance of bounded-weight syndrome decoding.”
 - [`Sundog.MatchingNPHard.threeDM_iff_X3C`](https://leanpool.github.io/lean-pool/LeanPool/Sundogcert/MatchingNPHard.html#Sundog.MatchingNPHard.threeDM_iff_X3C) (theorem), declared in [LeanPool/Sundogcert/MatchingNPHard.lean, line 139](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sundogcert/MatchingNPHard.lean#L139): “The 3-dimensional matching instance has a perfect matching iff the reduced exact-cover-by-3-sets instance has an exact cover, both directions machine-checked.”

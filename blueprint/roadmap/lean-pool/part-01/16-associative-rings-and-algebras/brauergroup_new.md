@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 8 main results, each with its informal statement quoted from the card. The scan finds 8 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 8 main results, each with its informal statement quoted from the card. The scan finds 8 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`BrauerGroup.BruaerGroup`](https://leanpool.github.io/lean-pool/LeanPool/BrauerGroupNew/BrauerGroup.html#BrauerGroup.BruaerGroup) (instance; a main declaration), declared in [LeanPool/BrauerGroupNew/BrauerGroup.lean, line 409](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BrauerGroupNew/BrauerGroup.lean#L409): “Constructs the Brauer group of a field from Brauer equivalence classes of central simple algebras.”
 - [`BrauerGroupHom.Br`](https://leanpool.github.io/lean-pool/LeanPool/BrauerGroupNew/BrauerGroup.html#BrauerGroupHom.Br) (def; a main declaration), declared in [LeanPool/BrauerGroupNew/BrauerGroup.lean, line 678](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BrauerGroupNew/BrauerGroup.lean#L678): “Constructs the Brauer group functor from fields to commutative groups via scalar extension.”

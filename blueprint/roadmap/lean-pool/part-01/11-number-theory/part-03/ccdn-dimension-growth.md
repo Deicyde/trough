@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`CCDN.projective_dimension_growth`](https://leanpool.github.io/lean-pool/LeanPool/CCDN/ProjectiveDimensionGrowth.html#CCDN.projective_dimension_growth) (theorem; a main declaration), declared in [LeanPool/CCDN/ProjectiveDimensionGrowth.lean, line 141](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CCDN/ProjectiveDimensionGrowth.lean#L141): “For every ambient projective dimension n, a constant depending only on n bounds the rational points of height at most B on every integral projective variety of degree d at least five by C d^(2n^2+5n-5) B^dim(X), for B at least one.”
 - [`CCDN.projectiveCurveBound`](https://leanpool.github.io/lean-pool/LeanPool/CCDN/ProjectiveCurveBound.html#CCDN.projectiveCurveBound) (theorem), declared in [LeanPool/CCDN/ProjectiveCurveBound.lean, line 25](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CCDN/ProjectiveCurveBound.lean#L25): “In ambient dimension n at least two and for B at least one, every integral projective curve of degree d has at most C(n) d^4 B^(2/d) rational points of height at most B, uniformly in its coefficients.”
@@ -30,7 +30,7 @@ The card lists 6 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Jason Davies, Ralf Stephan, PrimeNumberTheoremAnd contributors.
-- Source: *The dimension growth conjecture, polynomial in the degree and without logarithmic factors*, [doi:10.2140/ant.2020.14.2261](https://doi.org/10.2140/ant.2020.14.2261), [arXiv:1904.13109](https://arxiv.org/abs/1904.13109), [https://github.com/jasondavies/ccdn-dimension-growth/tree/bb025e7207f3a35a21b898629f5678b72aa7e44f](https://github.com/jasondavies/ccdn-dimension-growth/tree/bb025e7207f3a35a21b898629f5678b72aa7e44f).
+- Source: *The dimension growth conjecture, polynomial in the degree and without logarithmic factors*, [doi:10.2140/ant.2020.14.2261](https://doi.org/10.2140/ant.2020.14.2261), [arXiv:1904.13109](https://arxiv.org/abs/1904.13109).
 - Project repository: [jasondavies/ccdn-dimension-growth](https://github.com/jasondavies/ccdn-dimension-growth), at commit [bb025e72](https://github.com/jasondavies/ccdn-dimension-growth/tree/bb025e7207f3a35a21b898629f5678b72aa7e44f).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

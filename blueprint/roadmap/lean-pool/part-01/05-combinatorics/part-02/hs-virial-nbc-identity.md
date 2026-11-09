@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`PalomarHS.main_result`](https://leanpool.github.io/lean-pool/LeanPool/HardSphereNBC/Solution.html#PalomarHS.main_result) (theorem; a main declaration), declared in [LeanPool/HardSphereNBC/Solution.lean, line 28](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HardSphereNBC/Solution.lean#L28): “The absolute hard-sphere Mayer coefficient, multiplied by the factorial, equals the sum of nonnegative no-broken-circuit region volumes over spanning trees.”
 - [`PalomarHS.nbc_region_real_volume_le_fork_factor`](https://leanpool.github.io/lean-pool/LeanPool/HardSphereNBC/Solution.html#PalomarHS.nbc_region_real_volume_le_fork_factor) (theorem; a main declaration), declared in [LeanPool/HardSphereNBC/Solution.lean, line 107](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HardSphereNBC/Solution.lean#L107): “For a spanning tree in three dimensions, its no-broken-circuit region has volume at most (17/32) to the maximum disjoint compatible-fork packing size times the unit-ball volume to the number of tree edges.”

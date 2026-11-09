@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`CIV.mainTheorem`](https://leanpool.github.io/lean-pool/LeanPool/CIVAxisymmetric/Statements/MainTheorem.html#CIV.mainTheorem) (theorem; a main declaration), declared in [LeanPool/CIVAxisymmetric/Statements/MainTheorem.lean, line 40](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CIVAxisymmetric/Statements/MainTheorem.lean#L40): “A smooth suitable weak solution on the unit parabolic cylinder with globally finite energy, bounded C^2 spatially analytic force, anisotropic Type II bounds on its angular mean, and a positive axisymmetric core at every time is axisymmetric throughout the cylinder and bounded near the origin up to the terminal time.”
 - [`CIV.axisymmetricTheorem`](https://leanpool.github.io/lean-pool/LeanPool/CIVAxisymmetric/Statements/AxisymmetricTheorem.html#CIV.axisymmetricTheorem) (theorem; a main declaration), declared in [LeanPool/CIVAxisymmetric/Statements/AxisymmetricTheorem.lean, line 38](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CIVAxisymmetric/Statements/AxisymmetricTheorem.lean#L38): “An axisymmetric smooth suitable weak solution obeying the stated anisotropic Type II bounds and bounded C^2 force is bounded near the origin up to the terminal time.”
@@ -29,7 +29,7 @@ The card lists 5 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Scott Armstrong, Vlad Vicol.
-- Source: [arXiv:2609.20803](https://arxiv.org/abs/2609.20803), [https://github.com/scottnarmstrong/CIVAxisymmetric/tree/9f539dc7bf7ddd414d3ef81df539e1bef229f681](https://github.com/scottnarmstrong/CIVAxisymmetric/tree/9f539dc7bf7ddd414d3ef81df539e1bef229f681).
+- Source: [arXiv:2609.20803](https://arxiv.org/abs/2609.20803).
 - Project repository: [scottnarmstrong/CIVAxisymmetric](https://github.com/scottnarmstrong/CIVAxisymmetric), at commit [9f539dc7](https://github.com/scottnarmstrong/CIVAxisymmetric/tree/9f539dc7bf7ddd414d3ef81df539e1bef229f681).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

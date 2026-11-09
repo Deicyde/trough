@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Nivat.nivat`](https://leanpool.github.io/lean-pool/LeanPool/Nivat/Main.html#Nivat.nivat) (theorem; a main declaration), declared in [LeanPool/Nivat/Main.lean, line 133](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Nivat/Main.lean#L133): “For every finite alphabet A and configuration c from the integer lattice to A, if for some positive m and n the number of distinct patterns of c on the m-by-n rectangle, counted over all integer translations, is at most m times n, then there is a nonzero lattice vector h with c(z + h) = c(z) for every z.”
 - [`NivatSubmission.nivat`](https://leanpool.github.io/lean-pool/LeanPool/Nivat/Statement.html#NivatSubmission.nivat) (theorem; a main declaration), declared in [LeanPool/Nivat/Statement.lean, line 56](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Nivat/Statement.lean#L56): “The same statement written with Mathlib vocabulary only, as registered with Palomar. The pattern set is the range of the restriction of translates of c to the product of the integer intervals [0, m) and [0, n), its natural cardinality is at most m times n, and the conclusion is a lattice vector h different from (0, 0) with c(z + h) = c(z) for all z.”
@@ -31,6 +31,7 @@ The card lists 6 main results, each with its informal statement quoted from the 
 
 - Authors: Boon Suan Ho.
 - Source: *Pattern complexity and Nivat's conjecture* by GPT-6 Pro, Boon Suan Ho.
+- The card's note on its source: “The proof and manuscript were produced by GPT-6 Pro and the Lean development by GPT-6 Astra in Codex, both prompted and directed by Boon Suan Ho, who claims no human mathematical authorship. The manuscript ships in the upstream repository as paper/nivat.tex. The Lean sources are identical to the commit archived by Palomar on 2026-09-14 (0d94547e); later upstream commits only touched the README and the paper's abstract. No human expert review is claimed upstream; Bryna Kra's guest post on Terence Tao's blog (2026-09-13) discusses the arrival of AI proofs of the conjecture. The upstream MIT copyright and permission notice is retained in every imported file.”
 - Project repository: [boonsuan/nivat](https://github.com/boonsuan/nivat), at commit [84fe8396](https://github.com/boonsuan/nivat/tree/84fe839635bdebb7d5e80c209b4f578a0c767fcf).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Komlos.discrepancy_le_of_forall_sum_sq_le_one`](https://leanpool.github.io/lean-pool/LeanPool/Komlos/Main.html#Komlos.discrepancy_le_of_forall_sum_sq_le_one) (theorem; a main declaration), declared in [LeanPool/Komlos/Main.lean, line 57](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Komlos/Main.lean#L57): “For a real matrix with arbitrary finite row and column index types, if each column has sum of squared entries at most one, its minimum signed-column discrepancy is at most 36.” Its source, as the card gives it: “Theorem 1.2, matrix form.”
 - [`Komlos.exists_isColouring_forall_abs_sum_apply_le`](https://leanpool.github.io/lean-pool/LeanPool/Komlos/Main.html#Komlos.exists_isColouring_forall_abs_sum_apply_le) (theorem), declared in [LeanPool/Komlos/Main.lean, line 102](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Komlos/Main.lean#L102): “Any finite family of vectors in a finite-dimensional real Euclidean space, each of norm at most one, admits signs in {-1, 1} whose signed sum has absolute value at most 36 in every coordinate.” Its source, as the card gives it: “Theorem 1.2.”

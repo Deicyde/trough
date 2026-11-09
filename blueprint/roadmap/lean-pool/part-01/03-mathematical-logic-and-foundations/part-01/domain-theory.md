@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`InfoSys`](https://leanpool.github.io/lean-pool/LeanPool/DomainTheory/InfoSys.html#InfoSys) (structure; a main declaration), declared in [LeanPool/DomainTheory/InfoSys.lean, line 55](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/DomainTheory/InfoSys.lean#L55): “Defines Scott information systems, with a distinguished bottom token, finite consistency predicate, entailment relation, and Scott's six axioms.”
 - [`Domain.Neighborhood.NeighborhoodSystem`](https://leanpool.github.io/lean-pool/LeanPool/DomainTheory/Neighborhood/Basic.html#Domain.Neighborhood.NeighborhoodSystem) (structure; a main declaration), declared in [LeanPool/DomainTheory/Neighborhood/Basic.lean, line 77](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/DomainTheory/Neighborhood/Basic.lean#L77): “Defines PRG-19 neighbourhood systems, Scott's neighbourhood presentation of domains.”

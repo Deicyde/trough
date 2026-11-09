@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`QuadraticIterates.section1_equiv`](https://leanpool.github.io/lean-pool/LeanPool/QuadraticIterates/ArchMath1992/Main.html#QuadraticIterates.section1_equiv) (theorem), declared in [LeanPool/QuadraticIterates/ArchMath1992/Main.lean, line 193](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/QuadraticIterates/ArchMath1992/Main.lean#L193): “For each n, assuming -a is not a rational square, the Galois group of the n-th iterate of X² + a is the full n-fold iterated wreath product of C₂ exactly when either the first n terms of the signed sequence c₁ = -a, cₖ = fₖ(0) for k ≥ 2, or the first n integer Möbius factors of that sequence are independent modulo rational squares.”
 - [`QuadraticIterates.section1_squarefree`](https://leanpool.github.io/lean-pool/LeanPool/QuadraticIterates/ArchMath1992/Main.html#QuadraticIterates.section1_squarefree) (theorem), declared in [LeanPool/QuadraticIterates/ArchMath1992/Main.lean, line 203](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/QuadraticIterates/ArchMath1992/Main.lean#L203): “If -a is not a rational square and none of the absolute Möbius factors from levels 2 through n is a rational square, then the n-th iterate has the full iterated-wreath-product Galois group.”

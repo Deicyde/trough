@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Highlights.brill_noether_existence_through_five`](https://leanpool.github.io/lean-pool/LeanPool/BrillNoetherGraphs/Highlights.html#Highlights.brill_noether_existence_through_five) (theorem; a main declaration), declared in [LeanPool/BrillNoetherGraphs/Highlights.lean, line 1242](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BrillNoetherGraphs/Highlights.lean#L1242): “Every finite connected loopless multigraph of genus g at most five has, for integers r and d, a divisor of degree d and rank at least r whenever (r + 1) \* (g - d + r) ≤ g.”
 - [`Highlights.treewidth_le_gonality`](https://leanpool.github.io/lean-pool/LeanPool/BrillNoetherGraphs/Highlights.html#Highlights.treewidth_le_gonality) (theorem), declared in [LeanPool/BrillNoetherGraphs/Highlights.lean, line 2052](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BrillNoetherGraphs/Highlights.lean#L2052): “On a finite connected loopless multigraph, for every natural number k, any degree-k divisor of rank at least one bounds the treewidth by k; this is the witness formulation of the treewidth lower bound for divisorial gonality.”

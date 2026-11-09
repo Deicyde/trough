@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`SimpleGraph.lineGraphColoringEquivMatchingDecomposition`](https://leanpool.github.io/lean-pool/LeanPool/GraphColouringMatching/Basic.html#SimpleGraph.lineGraphColoringEquivMatchingDecomposition) (def; a main declaration), declared in [LeanPool/GraphColouringMatching/Basic.lean, line 201](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GraphColouringMatching/Basic.lean#L201): “Proper colourings of the line graph on any palette are equivalent to partitions of the original edges into matching subgraphs indexed by that palette, with empty classes permitted.” Its source, as the card gives it: “New adapter proved in GraphColouringMatching/Basic.lean, using Mathlib's existing lineGraph, Coloring and Subgraph.IsMatching.”
 - [`SimpleGraph.MatchingDecomposition.edgeMatching_lineGraphColoring`](https://leanpool.github.io/lean-pool/LeanPool/GraphColouringMatching/Basic.html#SimpleGraph.MatchingDecomposition.edgeMatching_lineGraphColoring) (theorem), declared in [LeanPool/GraphColouringMatching/Basic.lean, line 163](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GraphColouringMatching/Basic.lean#L163): “Converting a matching decomposition to a colouring and extracting one colour class returns exactly its original matching subgraph.”

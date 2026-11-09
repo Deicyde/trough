@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`VML.Theorem42`](https://leanpool.github.io/lean-pool/LeanPool/Clawristotle/Theorem42.html#VML.Theorem42) (theorem; a main declaration), declared in [LeanPool/Clawristotle/Theorem42.lean, line 152](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Clawristotle/Theorem42.lean#L152): “States the abstract steady-state classification theorem for the Vlasov-Maxwell-Landau framework.”
 - [`VML.CoulombConcreteTheorem42`](https://leanpool.github.io/lean-pool/LeanPool/Clawristotle/CoulombConcreteTheorem42.html#VML.CoulombConcreteTheorem42) (theorem; a main declaration), declared in [LeanPool/Clawristotle/CoulombConcreteTheorem42.lean, line 84](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Clawristotle/CoulombConcreteTheorem42.lean#L84): “Specializes the steady-state classification theorem to the Coulomb kernel.”

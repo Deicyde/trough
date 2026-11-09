@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`ParallelPostulate.Hilbert.playfair_independent_continuous`](https://leanpool.github.io/lean-pool/LeanPool/ParallelPostulate.html#ParallelPostulate.Hilbert.playfair_independent_continuous) (theorem; a main declaration), declared in [LeanPool/ParallelPostulate.lean, line 4530](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ParallelPostulate.lean#L4530): “There exists a Hilbert plane satisfying Archimedes and Dedekind continuity and Playfair's axiom, and there exists another satisfying the same continuity axioms and the negation of Playfair's axiom. The models use real coordinate planes with bounds zero and minus one.” Its source, as the card gives it: “Upstream Hilbert/Independence.lean. First publicly announced 2026-09-30 01:08:53 UTC at https://leanprover.zulipchat.com/\#narrow/channel/583339-AI-authored-projects/topic/Independence.20Parallel.20Postulate/near/627942879. The author's follow-up discloses mostly AI-written proofs. Pasch order and Dedekind continuity are the stated variants; equivalence to plane separation and maximal completeness is not proved.”
 - [`ParallelPostulate.HyperbolicPlane.hyperbolic_parallels`](https://leanpool.github.io/lean-pool/LeanPool/ParallelPostulate/Geometry.html#ParallelPostulate.HyperbolicPlane.hyperbolic_parallels) (theorem), declared in [LeanPool/ParallelPostulate/Geometry.lean, line 1179](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ParallelPostulate/Geometry.lean#L1179): “Over any linearly ordered field, for every negative bound and every line in the bounded coordinate plane, infinitely many distinct lines pass through any point of the plane outside that line without meeting it.”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Richard Sutton.
-- Source: *ParallelPostulate formalization by Richard Sutton*, [https://github.com/Richiesutie/ParallelPostulate/tree/8ee502804263194ae40babeca9773127f1e0a085](https://github.com/Richiesutie/ParallelPostulate/tree/8ee502804263194ae40babeca9773127f1e0a085).
+- Source: *ParallelPostulate formalization by Richard Sutton*.
 - Project repository: [Richiesutie/ParallelPostulate](https://github.com/Richiesutie/ParallelPostulate), at commit [8ee50280](https://github.com/Richiesutie/ParallelPostulate/tree/8ee502804263194ae40babeca9773127f1e0a085).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

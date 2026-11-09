@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`ANR_polynomial_method`](https://leanpool.github.io/lean-pool/LeanPool/PolynomialMethodRestrictedSums/ANRPolynomialMethod.html#ANR_polynomial_method) (theorem; a main declaration), declared in [LeanPool/PolynomialMethodRestrictedSums/ANRPolynomialMethod.lean, line 1073](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PolynomialMethodRestrictedSums/ANRPolynomialMethod.lean#L1073): “The Alon–Nathanson–Rusza polynomial method theorem, giving a non-vanishing-coefficient criterion for restricted sums.” Its source, as the card gives it: “N. Alon, M. B. Nathanson, I. Z. Ruzsa, The polynomial method and restricted sums of congruence classes, J. Number Theory 56 (1996), 404-417, doi:10.1006/jnth.1996.0029.”
 - [`cauchy_davenport`](https://leanpool.github.io/lean-pool/LeanPool/PolynomialMethodRestrictedSums/CauchyDavenportTheorem.html#cauchy_davenport) (theorem; a main declaration), declared in [LeanPool/PolynomialMethodRestrictedSums/CauchyDavenportTheorem.lean, line 193](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PolynomialMethodRestrictedSums/CauchyDavenportTheorem.lean#L193): “The Cauchy–Davenport theorem on sums of subsets of the cyclic group of prime order.” Its source, as the card gives it: “N. Alon, Combinatorial Nullstellensatz, Combinatorics, Probability and Computing 8 (1999), 7-29, doi:10.1017/S0963548398003411.”

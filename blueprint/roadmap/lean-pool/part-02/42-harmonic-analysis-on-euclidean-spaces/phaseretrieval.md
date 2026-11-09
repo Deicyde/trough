@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`DimdPolyShowcaseChallenge.stable_phase_retrieval`](https://leanpool.github.io/lean-pool/LeanPool/PhaseRetrieval/DimdPoly.html#DimdPolyShowcaseChallenge.stable_phase_retrieval) (theorem; a main declaration), declared in [LeanPool/PhaseRetrieval/DimdPoly.lean, line 126](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PhaseRetrieval/DimdPoly.lean#L126): “Proves stable phase retrieval for the Gaussian L2 closure of finite d-dimensional Hermite-Fock polynomials at a fixed level, giving a uniform stability constant bounding the phase-aligned L2 distance by the L2 distance of magnitudes.” Its source, as the card gives it: “R. Balan, P. Casazza, D. Edidin, On signal reconstruction without phase, Appl. Comput. Harmon. Anal. 20 (2006), 345-356, doi:10.1016/j.acha.2005.07.001.”
 - [`FockSPR.orthogonalReduction_exists_phase`](https://leanpool.github.io/lean-pool/LeanPool/PhaseRetrieval/Constant.html#FockSPR.orthogonalReduction_exists_phase) (theorem), declared in [LeanPool/PhaseRetrieval/Constant.lean, line 61](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PhaseRetrieval/Constant.lean#L61): “Proves the phase-aligned one-dimensional Fock-space local stability estimate, producing a unit phase for which the L2 distance to one is controlled by the magnitude defect.”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`DistanceGeometry.schoenberg`](https://leanpool.github.io/lean-pool/LeanPool/DistanceGeometry/SchoenbergHard.html#DistanceGeometry.schoenberg) (theorem; a main declaration), declared in [LeanPool/DistanceGeometry/SchoenbergHard.lean, line 235](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/DistanceGeometry/SchoenbergHard.lean#L235): “For n at least one, a symmetric hollow n-by-n matrix is a squared-distance matrix of points in k-dimensional Euclidean space exactly when its basepoint-centered Gram matrix is positive semidefinite and has rank at most k.”
 - [`DistanceGeometry.encard_setOf_forall_dist_eq_le_two`](https://leanpool.github.io/lean-pool/LeanPool/DistanceGeometry/Trilateration.html#DistanceGeometry.encard_setOf_forall_dist_eq_le_two) (theorem), declared in [LeanPool/DistanceGeometry/Trilateration.lean, line 160](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/DistanceGeometry/Trilateration.lean#L160): “In a finite-dimensional real inner-product affine space, prescribed distances to centers whose affine span has codimension one admit at most two solutions.”

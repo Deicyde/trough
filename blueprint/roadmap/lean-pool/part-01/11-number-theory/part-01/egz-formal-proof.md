@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`EGZ.theorem_1_2`](https://leanpool.github.io/lean-pool/LeanPool/ErdosGinzburgZiv/EGZ/MainTheorem.html#EGZ.theorem_1_2) (theorem; a main declaration), declared in [LeanPool/ErdosGinzburgZiv/EGZ/MainTheorem.lean, line 36](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ErdosGinzburgZiv/EGZ/MainTheorem.lean#L36): “For each positive dimension d, s((F_p)^d) = p w((F_p)^d) + o(p) as p tends to infinity through primes.”
 - [`EGZ.main_upper_bound`](https://leanpool.github.io/lean-pool/LeanPool/ErdosGinzburgZiv/EGZ/MainTheorem.html#EGZ.main_upper_bound) (theorem; a main declaration), declared in [LeanPool/ErdosGinzburgZiv/EGZ/MainTheorem.lean, line 23](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ErdosGinzburgZiv/EGZ/MainTheorem.lean#L23): “For each positive d and ε > 0, sufficiently large primes satisfy s((F_p)^d) ≤ (w((F_p)^d) + ε) p.”

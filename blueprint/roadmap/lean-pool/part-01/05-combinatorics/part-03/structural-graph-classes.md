@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 10 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 10 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`SimpleGraph.isSplit_iff_forbidden_induced_subgraphs`](https://leanpool.github.io/lean-pool/LeanPool/StructuralGraphClasses/ForbiddenCharacterization.html#SimpleGraph.isSplit_iff_forbidden_induced_subgraphs) (theorem), declared in [LeanPool/StructuralGraphClasses/ForbiddenCharacterization.lean, line 49](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/StructuralGraphClasses/ForbiddenCharacterization.lean#L49): “A finite graph is split iff it contains no induced 2K2, C4 or C5.” Its source, as the card gives it: “Földes and Hammer, Split graphs (1977).”
 - [`SimpleGraph.isSplit_iff_isChordal_and_compl`](https://leanpool.github.io/lean-pool/LeanPool/StructuralGraphClasses/SplitExtension.html#SimpleGraph.isSplit_iff_isChordal_and_compl) (theorem), declared in [LeanPool/StructuralGraphClasses/SplitExtension.lean, line 214](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/StructuralGraphClasses/SplitExtension.lean#L214): “A finite graph is split iff both it and its complement are chordal.” Its source, as the card gives it: “Földes and Hammer, Split graphs (1977).”

@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 10 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 10 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`BollobasNikiforov.lambda1_sq_add_lambda2_sq_le`](https://leanpool.github.io/lean-pool/LeanPool/BollobasNikiforov/Main.html#BollobasNikiforov.lambda1_sq_add_lambda2_sq_le) (theorem; a main declaration), declared in [LeanPool/BollobasNikiforov/Main.lean, line 34](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BollobasNikiforov/Main.lean#L34): “For every finite simple graph G on at least two vertices that is not complete, the two largest adjacency eigenvalues satisfy λ₁(G)² + λ₂(G)² ≤ 2 (1 - 1/ω(G)) |E(G)|, with ω(G) the clique number and |E(G)| the number of edges.”
 - [`BollobasNikiforov.weighted`](https://leanpool.github.io/lean-pool/LeanPool/BollobasNikiforov/Spectral/Weighted.html#BollobasNikiforov.weighted) (theorem), declared in [LeanPool/BollobasNikiforov/Spectral/Weighted.lean, line 609](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BollobasNikiforov/Spectral/Weighted.lean#L609): “If B is a real symmetric matrix, indexed by a finite type with at least two elements, that is entrywise nonnegative, has zero diagonal and vanishes off the edges of a graph G on that type, then the sum of the squares of its two largest positive eigenvalues is at most (1 - 1/ω(G)) times its squared Frobenius norm.”

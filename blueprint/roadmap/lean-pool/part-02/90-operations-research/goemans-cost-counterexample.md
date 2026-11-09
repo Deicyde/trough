@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`GoemansFlow.goemans_cost_conjecture_false`](https://leanpool.github.io/lean-pool/LeanPool/GoemansFlow/Counterexample.html#GoemansFlow.goemans_cost_conjecture_false) (theorem; a main declaration), declared in [LeanPool/GoemansFlow/Counterexample.lean, line 577](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GoemansFlow/Counterexample.lean#L577): “The rational form of Goemans' cost conjecture is false, even for simple, loopless, acyclic finite digraphs with explicit capacities, positive demands, and distinct terminals different from the source.” Its source, as the card gives it: “Conjecture 1.3 of arXiv:2308.02651v1”
 - [`GoemansFlow.not_GoemansCostConjectureFull`](https://leanpool.github.io/lean-pool/LeanPool/GoemansFlow/Counterexample.html#GoemansFlow.not_GoemansCostConjectureFull) (theorem), declared in [LeanPool/GoemansFlow/Counterexample.lean, line 562](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GoemansFlow/Counterexample.lean#L562): “The same cost conjecture is false over every linearly ordered commutative ring, by transfer of the integer counterexample.”
@@ -29,7 +29,7 @@ The card lists 5 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Jason Hickey.
-- Source: *A verified counterexample to Goemans' cost conjecture* by Jason Hickey, [arXiv:2308.02651](https://arxiv.org/abs/2308.02651), [https://github.com/jyh/dinitz-verify/tree/ffba3523f0edd14be3460d039f22a6b98c02fd9e](https://github.com/jyh/dinitz-verify/tree/ffba3523f0edd14be3460d039f22a6b98c02fd9e).
+- Source: *A verified counterexample to Goemans' cost conjecture* by Jason Hickey, [arXiv:2308.02651](https://arxiv.org/abs/2308.02651).
 - Project repository: [jyh/dinitz-verify](https://github.com/jyh/dinitz-verify), at commit [ffba3523](https://github.com/jyh/dinitz-verify/tree/ffba3523f0edd14be3460d039f22a6b98c02fd9e).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

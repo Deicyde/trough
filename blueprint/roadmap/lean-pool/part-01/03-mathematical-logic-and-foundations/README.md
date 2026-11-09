@@ -25,6 +25,6 @@ The Lean Pool projects whose card's first MSC2020 code is in class 03, Mathemati
 - [Pointwise provable equality and the failure of composition](part-01/pointwise-provable-composition.md)
 - [Strengthened V0 Bounded Arithmetic Interfaces](part-01/formalization-of-bounded-arithmetic.md)
 
-## [Part 2 of 2](part-02/README.md)
+## [ZFLean](part-02/README.md)
 
 - [ZFLean](part-02/zflean.md)

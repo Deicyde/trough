@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`BeckFialaMatrix.exists_rounding`](https://leanpool.github.io/lean-pool/LeanPool/BeckFialaMatrix/Basic.html#BeckFialaMatrix.exists_rounding) (theorem; a main declaration), declared in [LeanPool/BeckFialaMatrix/Basic.lean, line 380](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BeckFialaMatrix/Basic.lean#L380): “Given a finite zero-one integer matrix with at most t ones per column, t at least one, and a rational vector in the unit cube, there is a zero-one integer vector whose discrepancy in every row is strictly less than t.” Its source, as the card gives it: “Rational unit-cube integer-making form with the stated strict discrepancy bound.”
 - [`BeckFialaMatrix.exists_rounding_preserving_integral`](https://leanpool.github.io/lean-pool/LeanPool/BeckFialaMatrix/Basic.html#BeckFialaMatrix.exists_rounding_preserving_integral) (theorem), declared in [LeanPool/BeckFialaMatrix/Basic.lean, line 364](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BeckFialaMatrix/Basic.lean#L364): “The strict rounding can additionally be chosen to leave every initially integral coordinate unchanged.” Its source, as the card gives it: “Strengthened conclusion of the floating-coordinate proof in the pinned source.”

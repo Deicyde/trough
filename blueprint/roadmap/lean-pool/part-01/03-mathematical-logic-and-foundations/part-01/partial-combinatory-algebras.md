@@ -13,11 +13,11 @@ statement: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanPool.PartialCombinatoryAlgebras.PCA`](https://leanpool.github.io/lean-pool/LeanPool/PartialCombinatoryAlgebras/PartialCombinatoryAlgebra.html#LeanPool.PartialCombinatoryAlgebras.PCA) (class; a main declaration), declared in [LeanPool/PartialCombinatoryAlgebras/PartialCombinatoryAlgebra.lean, line 43](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PartialCombinatoryAlgebras/PartialCombinatoryAlgebra.lean#L43): “Defines the class of partial combinatory algebras (PCAs) with K and S combinators.”
 - [`LeanPool.PartialCombinatoryAlgebras.CA`](https://leanpool.github.io/lean-pool/LeanPool/PartialCombinatoryAlgebras/CombinatoryAlgebra.html#LeanPool.PartialCombinatoryAlgebras.CA) (class), declared in [LeanPool/PartialCombinatoryAlgebras/CombinatoryAlgebra.lean, line 25](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PartialCombinatoryAlgebras/CombinatoryAlgebra.lean#L25): “Defines total combinatory algebras and exhibits every total combinatory algebra as a PCA.”

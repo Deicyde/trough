@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`RellichKondrachov.Geometry.Manifold.Sobolev.RiemannianFiniteChartData.isCompactOperator_h1ToL2_riemannianVolume`](https://leanpool.github.io/lean-pool/LeanPool/RellichKondrachov/Geometry/Manifold/Sobolev/RellichKondrachovRiemannian/Global.html#RellichKondrachov.Geometry.Manifold.Sobolev.RiemannianFiniteChartData.isCompactOperator_h1ToL2_riemannianVolume) (theorem), declared in [LeanPool/RellichKondrachov/Geometry/Manifold/Sobolev/RellichKondrachovRiemannian/Global.lean, line 113](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RellichKondrachov/Geometry/Manifold/Sobolev/RellichKondrachovRiemannian/Global.lean#L113): “On a compact Riemannian manifold, the Sobolev inclusion H¹ → L² for the Levi-Civita volume measure is a compact operator.”
 - [`RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.isCompactOperator_h1OnToL2`](https://leanpool.github.io/lean-pool/LeanPool/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/Rellich.html#RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.isCompactOperator_h1OnToL2) (theorem), declared in [LeanPool/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/Rellich.lean, line 97](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/Rellich.lean#L97): “Euclidean Rellich–Kondrachov compactness: on a fixed compact support K, the H¹ → L² inclusion restricted to functions supported in K is a compact operator.”

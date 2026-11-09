@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`HCPoly.polynomial_entry`](https://leanpool.github.io/lean-pool/LeanPool/HighContrastHomogenization/MainResults.html#HCPoly.polynomial_entry) (theorem), declared in [LeanPool/HighContrastHomogenization/MainResults.lean, line 77](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HighContrastHomogenization/MainResults.lean#L77): “Under stationary unit-range assumptions and the source-tail bound, every generation beyond a scale of polynomial length has annealed contrast at most one plus the prescribed tolerance.”
 - [`HCPoly.algebraic_convergence`](https://leanpool.github.io/lean-pool/LeanPool/HighContrastHomogenization/MainResults.html#HCPoly.algebraic_convergence) (theorem), declared in [LeanPool/HighContrastHomogenization/MainResults.lean, line 121](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HighContrastHomogenization/MainResults.lean#L121): “The annealed coarse blocks converge algebraically to a limiting positive-definite block, with two-sided order estimates.”
@@ -29,7 +29,7 @@ The card lists 5 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Scott Armstrong, Tuomo Kuusi, Amélie Loher.
-- Source: [arXiv:2609.27647](https://arxiv.org/abs/2609.27647), [https://github.com/scottnarmstrong/HighContrastHomogenization/tree/7a13dbcd8d6609264a713373f5c69ceeac870472](https://github.com/scottnarmstrong/HighContrastHomogenization/tree/7a13dbcd8d6609264a713373f5c69ceeac870472).
+- Source: [arXiv:2609.27647](https://arxiv.org/abs/2609.27647).
 - Project repository: [scottnarmstrong/HighContrastHomogenization](https://github.com/scottnarmstrong/HighContrastHomogenization), at commit [7a13dbcd](https://github.com/scottnarmstrong/HighContrastHomogenization/tree/7a13dbcd8d6609264a713373f5c69ceeac870472).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

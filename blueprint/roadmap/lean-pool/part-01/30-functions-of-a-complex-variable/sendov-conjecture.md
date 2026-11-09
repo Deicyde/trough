@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 8 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 10 main results, each with its informal statement quoted from the card. The scan finds 8 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Sendov.sendov`](https://leanpool.github.io/lean-pool/LeanPool/Sendov/Conjecture.html#Sendov.sendov) (theorem; a main declaration), declared in [LeanPool/Sendov/Conjecture.lean, line 162](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sendov/Conjecture.lean#L162): “For every natural number n at least two and every complex polynomial p of degree n all of whose roots have norm at most one, every root a of p admits a root of the derivative of p within distance at most one of a.” Its source, as the card gives it: “Sendov's conjecture (1962); Tao's blog post of 12 August 2026, Conjecture 1, following Mazur's proof; upstream Sendov/Conjecture.lean. First publicly announced 2026-08-12 23:10:54 UTC in that post, with the Lean repository completed the same day.”
 - [`Sendov.phelps_rodriguez`](https://leanpool.github.io/lean-pool/LeanPool/Sendov/Conjecture.html#Sendov.phelps_rodriguez) (theorem; a main declaration), declared in [LeanPool/Sendov/Conjecture.lean, line 87](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sendov/Conjecture.lean#L87): “Under the same hypotheses, either some root of the derivative lies at distance strictly less than one from a, or a has norm one and p equals a nonzero scalar multiple of X^n - a^n.” Its source, as the card gives it: “Phelps–Rodriguez conjecture; Tao's blog post, Conjecture 2; upstream Sendov/Conjecture.lean. The equality case is Rubinstein's 1968 theorem.”
@@ -34,7 +34,8 @@ The card lists 10 main results, each with its informal statement quoted from the
 ## Project
 
 - Authors: Terence Tao.
-- Source: *Sendov's conjecture in Lean*, [https://github.com/teorth/sendov/tree/1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d](https://github.com/teorth/sendov/tree/1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d).
+- Source: *Sendov's conjecture in Lean*.
+- Mathematical source, as the card gives it: “T. Tao, A digestion of the proof of Sendov's conjecture, blog post, 12 August 2026, digesting Lech Mazur's AI-assisted proof; the boundary case follows Q. Tang and T. Zhang, arXiv:2508.10341, equation (5.1) and Remark 5.1.”
 - Project repository: [teorth/sendov](https://github.com/teorth/sendov), at commit [1ddea92d](https://github.com/teorth/sendov/tree/1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”. The card's note: “The upstream README states that essentially all Lean source was written by Claude Opus 5 in Claude Code under the direction and review of Terence Tao, who set the targets, supplied the informal proof and staged plans, and made the mathematical decisions.”
 - License: Apache-2.0.

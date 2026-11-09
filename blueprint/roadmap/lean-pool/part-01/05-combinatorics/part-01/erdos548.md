@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Erdos548.erdos_548`](https://leanpool.github.io/lean-pool/LeanPool/Erdos548/Main.html#Erdos548.erdos_548) (theorem; a main declaration), declared in [LeanPool/Erdos548/Main.lean, line 135](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos548/Main.lean#L135): “Let n ≥ k+1. Every simple graph on n vertices with at least (k−1)n/2 + 1 edges contains every tree on k+1 vertices as a subgraph (an injective graph homomorphism). This is Erdős Problem 548, the Erdős–Sós conjecture, in the benchmark phrasing.”
 - [`Erdos548.tree_free_edge_bound`](https://leanpool.github.io/lean-pool/LeanPool/Erdos548/Main.html#Erdos548.tree_free_edge_bound) (lemma), declared in [LeanPool/Erdos548/Main.lean, line 103](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos548/Main.lean#L103): “If a tree T on t ≥ 2 vertices is not contained in a graph G on n ≥ 1 vertices, then 2·|E(G)| ≤ (t−2)·n. This is the classical sharp form of the Erdős–Sós bound.”

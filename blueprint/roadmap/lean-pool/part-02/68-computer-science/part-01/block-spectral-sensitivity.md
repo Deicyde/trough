@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`BSLambda.Final.exists_bs_gt_lam_rpow`](https://leanpool.github.io/lean-pool/LeanPool/BlockSpectralSensitivity/Main.html#BSLambda.Final.exists_bs_gt_lam_rpow) (theorem; a main declaration), declared in [LeanPool/BlockSpectralSensitivity/Main.lean, line 297](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BlockSpectralSensitivity/Main.lean#L297): “There exists a total Boolean function on ZMod 14011 times Fin 144 whose block sensitivity strictly exceeds its spectral sensitivity raised to the real exponent 2.12.” Its source, as the card gives it: “Upstream Main.lean; bs_lambda.txt Sections 5-12 and 14.”
 - [`BSLambda.Final.exists_counterexample`](https://leanpool.github.io/lean-pool/LeanPool/BlockSpectralSensitivity/Main.html#BSLambda.Final.exists_counterexample) (theorem), declared in [LeanPool/BlockSpectralSensitivity/Main.lean, line 305](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BlockSpectralSensitivity/Main.lean#L305): “There exists a gate labelling whose certificate-union indicator f has bs(f) at least 14011, lambda(f)^2 at most U = 7149 + 2 sqrt(150108), and lambda(f)^alpha at most bs(f), where alpha = 2 log(14011)/log(U) > 2.” Its source, as the card gives it: “Upstream Main.lean; bs_lambda.txt Sections 5-12 and 14.”
@@ -29,7 +29,7 @@ The card lists 5 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Alex Meiburg.
-- Source: *Block Sensitivity can exceed Spectral Sensitivity Squared*, [arXiv:2608.00851](https://arxiv.org/abs/2608.00851), [https://github.com/Timeroot/BS_Lam/tree/7bd39a8d41ee7910d3296d0477ad18f8fff9d870](https://github.com/Timeroot/BS_Lam/tree/7bd39a8d41ee7910d3296d0477ad18f8fff9d870).
+- Source: *Block Sensitivity can exceed Spectral Sensitivity Squared*, [arXiv:2608.00851](https://arxiv.org/abs/2608.00851).
 - Project repository: [Timeroot/BS_Lam](https://github.com/Timeroot/BS_Lam), at commit [7bd39a8d](https://github.com/Timeroot/BS_Lam/tree/7bd39a8d41ee7910d3296d0477ad18f8fff9d870).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

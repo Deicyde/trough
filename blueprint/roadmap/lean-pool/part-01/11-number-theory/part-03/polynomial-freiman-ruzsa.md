@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Marton.pfr_conjecture`](https://leanpool.github.io/lean-pool/LeanPool/PFR/Solution.html#Marton.pfr_conjecture) (theorem; a main declaration), declared in [LeanPool/PFR/Solution.lean, line 43](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PFR/Solution.lean#L43): “A nonempty finite set A of doubling at most K in an abelian group of exponent two is covered by fewer than 2 K^12 cosets of a finite subgroup no larger than A.”
 - [`Marton.pfr_conjecture_nine`](https://leanpool.github.io/lean-pool/LeanPool/PFR/Solution.html#Marton.pfr_conjecture_nine) (theorem), declared in [LeanPool/PFR/Solution.lean, line 59](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PFR/Solution.lean#L59): “Strengthens the characteristic-two covering theorem to fewer than 2 K^9 cosets of a finite subgroup no larger than A.”

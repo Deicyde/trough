@@ -1,5 +1,5 @@
 ---
-declaration: theorem
+declaration: lemma
 origin: cited
 ---
 
@@ -11,11 +11,11 @@ origin: cited
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - `Circuit.SequentialCircuitCategory.instSymmetricCategory`, a main declaration that the scan does not find declared in the project's files at this commit: “The category of sequential circuits, whose morphisms are causal monotone stream functions as in Ghica-Kaye-Sprunger's denotational semantics, is symmetric monoidal, with all coherence laws (pentagon, triangle, hexagons, symmetry) proven.”
 - `Circuit.CombinationalCircuitCategory.instSymmetricCategory`, which the scan does not find declared in the project's files at this commit: “The category of combinational circuits, with wire counts as objects and monotone wire-vector functions as morphisms, is symmetric monoidal under juxtaposition of wire bundles.”

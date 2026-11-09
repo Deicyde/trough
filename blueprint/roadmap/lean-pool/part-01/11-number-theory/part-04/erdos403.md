@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Erdos403.erdos_403_sharp`](https://leanpool.github.io/lean-pool/LeanPool/Erdos403/Sharp.html#Erdos403.erdos_403_sharp) (theorem; a main declaration), declared in [LeanPool/Erdos403/Sharp.lean, line 420](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos403/Sharp.lean#L420): “Every power of two that is a sum of distinct factorials is at most 2^7, with 128 the largest solution.”
 - [`Erdos403.erdos_403_finite`](https://leanpool.github.io/lean-pool/LeanPool/Erdos403/Sharp.html#Erdos403.erdos_403_finite) (theorem; a main declaration), declared in [LeanPool/Erdos403/Sharp.lean, line 427](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Erdos403/Sharp.lean#L427): “Only finitely many sums of distinct factorials are powers of two.”

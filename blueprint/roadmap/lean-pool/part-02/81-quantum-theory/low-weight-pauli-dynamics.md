@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Lean4LPD.PauliString.pauliNorm_layerStep_error_le_model_of_source_regime`](https://leanpool.github.io/lean-pool/LeanPool/LowWeightPauliDynamics/Pauli/LayerError.html#Lean4LPD.PauliString.pauliNorm_layerStep_error_le_model_of_source_regime) (theorem; a main declaration), declared in [LeanPool/LowWeightPauliDynamics/Pauli/LayerError.lean, line 591](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LowWeightPauliDynamics/Pauli/LayerError.lean#L591): “For an observable supported on Pauli weights at most ko, a block of Γ positive-many disjoint-support layers of Hermitian rotations of weight at most kh, kh ≥ 2, and |sin θ| ≤ a ≤ αt/r with α > 0 and t ≥ 0, truncation to weight ko + m(kh - 1) after each of r blocks has Pauli 2-norm error at most (2Γ(kh - 1)αt)^(m+1) (e(m+1))^(ko/(kh-1)) times the input norm. The conditions include m ≥ 1, r ≥ 5, m ≤ r, rΓ ≥ 8(m+1)^2, and r ≥ 8e^2(ko+kh-1)αt. Γ counts every layer of the actual block, including repeated product-formula layers.” Its source, as the card gives it: “Upstream STATEMENTS.md and Pauli/LayerError.lean at the pinned commit; norm-level counterpart of the revised supplement's truncation bound.”
 - [`Lean4LPD.l2_opNorm_le_schur`](https://leanpool.github.io/lean-pool/LeanPool/LowWeightPauliDynamics/SchurCore.html#Lean4LPD.l2_opNorm_le_schur) (theorem), declared in [LeanPool/LowWeightPauliDynamics/SchurCore.lean, line 113](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LowWeightPauliDynamics/SchurCore.lean#L113): “A finite rectangular matrix over any RCLike field, with absolute row sums bounded by nonnegative R and absolute column sums bounded by nonnegative C, has Euclidean operator norm at most sqrt(RC).” Its source, as the card gives it: “Upstream Schur.lean, finite-dimensional Schur test.”
@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Jue Xu.
-- Source: *Classical Simulation of Noiseless Quantum Dynamics without Randomness*, [arXiv:2601.15770](https://arxiv.org/abs/2601.15770), [https://github.com/Jue-Xu/Lean4LPD/tree/ad0561661c46ca4c331d21104468e5dc65b2a028](https://github.com/Jue-Xu/Lean4LPD/tree/ad0561661c46ca4c331d21104468e5dc65b2a028).
+- Source: *Classical Simulation of Noiseless Quantum Dynamics without Randomness*, [arXiv:2601.15770](https://arxiv.org/abs/2601.15770).
 - Project repository: [Jue-Xu/Lean4LPD](https://github.com/Jue-Xu/Lean4LPD), at commit [ad056166](https://github.com/Jue-Xu/Lean4LPD/tree/ad0561661c46ca4c331d21104468e5dc65b2a028).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

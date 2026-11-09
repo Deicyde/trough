@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`TuranStability.furedi`](https://leanpool.github.io/lean-pool/LeanPool/RemovalExtremalStability/TuranStability.html#TuranStability.furedi) (theorem), declared in [LeanPool/RemovalExtremalStability/TuranStability.lean, line 48](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RemovalExtremalStability/TuranStability.lean#L48): “A clique-free graph near Turán's edge bound has a large colourable subgraph.” Its source, as the card gives it: “Füredi's stability theorem.”
 - [`TuranStability.stability`](https://leanpool.github.io/lean-pool/LeanPool/RemovalExtremalStability/TuranStability.html#TuranStability.stability) (theorem; a main declaration), declared in [LeanPool/RemovalExtremalStability/TuranStability.lean, line 192](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/RemovalExtremalStability/TuranStability.lean#L192): “An L-free graph near the Turán density for a (p+1)-colourable L is close in edit distance to a complete p-partite graph.” Its source, as the card gives it: “Erdős–Simonovits stability theorem.”

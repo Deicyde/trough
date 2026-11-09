@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Biswal.Theorem1.genFun_is_polynomial`](https://leanpool.github.io/lean-pool/LeanPool/Biswal/Theorem1.html#Biswal.Theorem1.genFun_is_polynomial) (theorem), declared in [LeanPool/Biswal/Theorem1.lean, line 2259](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Biswal/Theorem1.lean#L2259): “Proves that the generating function attached to a partition is a polynomial whenever its parts are bounded by the parameter `m`.”
 - [`Biswal.Theorem1.genFun_coeff_eventually_pos`](https://leanpool.github.io/lean-pool/LeanPool/Biswal/Theorem1.html#Biswal.Theorem1.genFun_coeff_eventually_pos) (theorem), declared in [LeanPool/Biswal/Theorem1.lean, line 2268](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Biswal/Theorem1.lean#L2268): “Proves that the coefficients of the generating function attached to a partition are eventually strictly positive.”

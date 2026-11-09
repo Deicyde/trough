@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`MarshallHall.marshallHall`](https://leanpool.github.io/lean-pool/LeanPool/MarshallHall/MarshallHall/Hall.html#MarshallHall.marshallHall) (theorem; a main declaration), declared in [LeanPool/MarshallHall/MarshallHall/Hall.lean, line 376](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MarshallHall/MarshallHall/Hall.lean#L376): “Every finitely generated subgroup of a finite-rank free group is an inclusion-compatible free factor of a finite-index subgroup.”
 - [`LERFChallenge.freeGroup_finite_permutation_separator`](https://leanpool.github.io/lean-pool/LeanPool/MarshallHall/LERFSolution.html#LERFChallenge.freeGroup_finite_permutation_separator) (theorem), declared in [LeanPool/MarshallHall/LERFSolution.lean, line 45](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/MarshallHall/LERFSolution.lean#L45): “Every element outside a finitely generated subgroup of a finite-rank free group can be separated by an explicit finite permutation action.”

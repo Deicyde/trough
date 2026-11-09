@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanModelChecking.for_any_LTL_formula_exists_an_equivalent_NBW`](https://leanpool.github.io/lean-pool/LeanPool/LeanModelChecking/LTLNBWResult.html#LeanModelChecking.for_any_LTL_formula_exists_an_equivalent_NBW) (theorem; a main declaration), declared in [LeanPool/LeanModelChecking/LTLNBWResult.lean, line 35](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LeanModelChecking/LTLNBWResult.lean#L35): “For any linear temporal logic formula there exists an equivalent finite-state nondeterministic Büchi automaton, i.e. one whose state type is finite, accepting the same language.” Its source, as the card gives it: “M. Y. Vardi and P. Wolper, An automata-theoretic approach to automatic program verification, LICS 1986, 332-344; C. Baier and J.-P. Katoen, Principles of Model Checking, MIT Press, 2008, ISBN 978-0-262-02649-9, https://mitpress.mit.edu/9780262026499/principles-of-model-checking/”
 - [`LeanModelChecking.LTL`](https://leanpool.github.io/lean-pool/LeanPool/LeanModelChecking/LTLNBWStatement.html#LeanModelChecking.LTL) (inductive), declared in [LeanPool/LeanModelChecking/LTLNBWStatement.lean, line 25](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LeanModelChecking/LTLNBWStatement.lean#L25): “The syntax of linear temporal logic formulas over a set of atomic propositions.”

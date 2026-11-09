@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`LeanPool.HansonWright.hanson_wright_inequality_hdp`](https://leanpool.github.io/lean-pool/LeanPool/HansonWright/Probability/Concentration/HansonWright.html#LeanPool.HansonWright.hanson_wright_inequality_hdp) (theorem; a main declaration), declared in [LeanPool/HansonWright/Probability/Concentration/HansonWright.lean, line 3923](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HansonWright/Probability/Concentration/HansonWright.lean#L3923): “For independent mean-zero real random variables with finite least global-MGF sub-Gaussian scales and positive maximum coordinate MGF scale, and a matrix with positive Frobenius and operator norms, the centered quadratic form satisfies the Hanson-Wright two-regime exponential tail bound with the fixed universal coefficient 1 / (256 \* exp(1)^2).”
 - [`LeanPool.HansonWright.hasHansonWrightMGF_of_subgaussian`](https://leanpool.github.io/lean-pool/LeanPool/HansonWright/Probability/Concentration/HansonWright.html#LeanPool.HansonWright.hasHansonWrightMGF_of_subgaussian) (theorem), declared in [LeanPool/HansonWright/Probability/Concentration/HansonWright.lean, line 3669](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HansonWright/Probability/Concentration/HansonWright.lean#L3669): “Given positive K and operator norm and C at least 64 \* exp(1)^2, independent coordinates with global-MGF sub-Gaussian parameter K^2 satisfy the local quadratic cumulant-generating-function estimate needed for Hanson-Wright.”

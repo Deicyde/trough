@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`GraphCoveringTheory.KuroshStatement.kurosh_decomposition_with_inclusions`](https://leanpool.github.io/lean-pool/LeanPool/Kurosh/KuroshSolution.html#GraphCoveringTheory.KuroshStatement.kurosh_decomposition_with_inclusions) (theorem; a main declaration), declared in [LeanPool/Kurosh/KuroshSolution.lean, line 134](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Kurosh/KuroshSolution.lean#L134): “Every subgroup H of an arbitrary indexed free product admits a free product decomposition into a free group and subgroups of H that are intersections with conjugates of the original factors. The isomorphism to H is induced by the actual subgroup inclusions and a homomorphism from the free factor.” Its source, as the card gives it: “Kurosh subgroup theorem; upstream inclusion-preserving statement.”
 - [`GraphCoveringTheory.Kurosh.kurosh_decomposition`](https://leanpool.github.io/lean-pool/LeanPool/Kurosh/KuroshTheorem.html#GraphCoveringTheory.Kurosh.kurosh_decomposition) (theorem), declared in [LeanPool/Kurosh/KuroshTheorem.lean, line 51](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Kurosh/KuroshTheorem.lean#L51): “H is isomorphic to the free product of its nontrivial vertex stabilizers in the quotient Bass–Serre graph and the free group of that graph.”

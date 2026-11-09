@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`Nikodym.card_ge_pow_sub`](https://leanpool.github.io/lean-pool/LeanPool/Nikodym/Nikodym/Main.html#Nikodym.card_ge_pow_sub) (theorem; a main declaration), declared in [LeanPool/Nikodym/Nikodym/Main.lean, line 55](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Nikodym/Nikodym/Main.lean#L55): “Every Nikodym set in dimension d ≥ 2 over a finite field of size q has size at least q^d − (8d²+1)q^(d−2^(1−d)).”
 - [`Nikodym.exists_isNikodym_card_le`](https://leanpool.github.io/lean-pool/LeanPool/Nikodym/Nikodym/Main.html#Nikodym.exists_isNikodym_card_le) (theorem; a main declaration), declared in [LeanPool/Nikodym/Nikodym/Main.lean, line 64](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Nikodym/Nikodym/Main.lean#L64): “For every positive ε and dimension d ≥ 2, sufficiently large prime fields admit a Nikodym set of size at most q^d − q^(d−2^(1−d)−ε).”

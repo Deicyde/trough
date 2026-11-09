@@ -14,11 +14,11 @@ proof: formalized
 
 ## Depends on
 
-No dependencies are recorded: Lean Pool's projects do not import one another, and this chapter reads their source text without running Lean, which edges between declarations need.
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which is built from Lean Pool's newest commit, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
 - [`CutAndProject.main_theorem_geometric_concrete`](https://leanpool.github.io/lean-pool/LeanPool/CutAndProject/Basic.html#CutAndProject.main_theorem_geometric_concrete) (theorem; a main declaration), declared in [LeanPool/CutAndProject/Basic.lean, line 2585](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CutAndProject/Basic.lean#L2585): “The gap sequence of the residue model of the rational cut-and-project multiset (sorted hits of the length-N progression under the multiplier −αβ⁻¹ mod D) has minimal period N/D if D divides N and N otherwise, where N = ⌊ωα⌋ + ⌊ωβ⌋ + 1 and D = α² + β².”
 - [`CutAndProject.set_main_theorem_geometric_concrete`](https://leanpool.github.io/lean-pool/LeanPool/CutAndProject/Basic.html#CutAndProject.set_main_theorem_geometric_concrete) (theorem), declared in [LeanPool/CutAndProject/Basic.lean, line 2949](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CutAndProject/Basic.lean#L2949): “The set-convention residue-model gap sequence (multiplicities flattened to {0,1}) has minimal period 1 if N ≥ D and N otherwise.”
