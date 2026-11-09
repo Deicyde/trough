@@ -16,7 +16,7 @@ theorem FreyPackage.no_frey_package (P : FreyPackage) : False
 
 Aliases on the repository's web pages: “Frey”, “Serre”, “Ribet”, “Wiles”, “four-way contradiction”.
 
-PROOF-PATH.md names it in [1. Reduction to a prime p ≥ 5](../1-reduction-to-a-prime-p-5/README.md).
+PROOF-PATH.md names it in [1. Reduction to a prime p ≥ 5](../1-reduction-to-a-prime-p-5/README.md) and [2. Frey package](README.md).
 
 ## Depends on
 

@@ -18,6 +18,8 @@ theorem ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd {k :
 
 Aliases on the repository's web pages: “absolutely irreducible”, “odd”.
 
+PROOF-PATH.md names it in [Exact strength of the named steps](../exact-strength-of-the-named-steps/README.md).
+
 ## Depends on
 
 The repository's citation graph records the theorems each proof cites, not what statements use, so no statement dependencies are listed.
