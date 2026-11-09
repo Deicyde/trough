@@ -21,6 +21,7 @@ on:
       - "tools/refresh_formal_conjectures.py"
       - "tools/trough/formal_conjectures.py"
       - "tools/trough/leansource.py"
+      - "tools/trough/ff.py"
       - "data/formal-conjectures/**"
       - ".github/workflows/fc-data.yml"
   pull_request:
@@ -28,6 +29,7 @@ on:
       - "tools/refresh_formal_conjectures.py"
       - "tools/trough/formal_conjectures.py"
       - "tools/trough/leansource.py"
+      - "tools/trough/ff.py"
       - "data/formal-conjectures/**"
       - ".github/workflows/fc-data.yml"
   workflow_dispatch:
@@ -49,6 +51,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-24.04
+    timeout-minutes: 30
     outputs:
       changed: ${{ steps.compare.outputs.changed }}
       rev: ${{ steps.pin.outputs.rev }}

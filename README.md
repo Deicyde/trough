@@ -206,8 +206,7 @@ benchmark sets. No Lean runs for this chapter, so its articles have no edges.
    from there on holds no `sorry`, which, like Formal Conjectures' own
    `hasSorryFreeProof`, says nothing of the statements that proof uses. A
    statement with no name, an `example`, or a `private` one is left out, as
-   Formal Conjectures' site leaves them out, and so is one whose attributes
-   don't read; the refresh lists those.
+   Formal Conjectures' site leaves them out.
 3. The **Formal Conjectures data** workflow (`.github/workflows/fc-data.yml`)
    fetches the repository at the commit `source.json` pins, as a blobless
    sparse checkout of the files the refresh reads, runs the refresh,
@@ -215,7 +214,11 @@ benchmark sets. No Lean runs for this chapter, so its articles have no edges.
    the committed data differ from what the pin gives. The weekly run, or a
    dispatch with `newest`, moves the pin to the newest main commit whose build
    passed. A refresh writes nothing, and the workflow fails, when the repository
-   is not Apache-2.0 or keeps under half the statements the last record kept.
+   is not Apache-2.0, when its checkout gives no AMS subject names or lacks a
+   file the commit lists, when a declaration with a category does not read (its
+   attributes don't, it has two categories or no `:=`, or its file's scopes
+   don't close), naming each, or when it keeps under half the statements the
+   last record kept.
 
 ## Working on it
 
@@ -285,6 +288,5 @@ text quoted in `data/ff/` comes from the formalization.yaml and README of each
 [Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0. The
 docstrings and Lean statements in `data/formal-conjectures/` come from
 [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures)
-(Google DeepMind), Apache-2.0; its Erdős problems' docstrings follow
-[erdosproblems.com](https://www.erdosproblems.com), as its contributing rules
-for them ask.
+(Google DeepMind), Apache-2.0; Formal Conjectures asks that its Erdős
+problems' docstrings follow [erdosproblems.com](https://www.erdosproblems.com).

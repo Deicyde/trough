@@ -41,7 +41,7 @@ AMS = re.compile(r"^AMS((?: \d+)+)$")
 FORMAL_PROOF = re.compile(r'^(conditional )?formal_proof using (formal_conjectures|lean4|other_system) at "([^"\\]*)"'
                           r"(?: assuming ((?:[^\s,]+ ?)+))?$")
 TITLE = re.compile(r"^(?:#[ \t]+(.+?)[ \t]*#*|Title:[ \t]*(.+?))[ \t]*$")
-REFERENCES = re.compile(r"^[ \t]*\*{0,2}References?\*{0,2}:?\*{0,2}:?", re.M | re.I)
+REFERENCES = re.compile(r"^[ \t]*(?:#{1,6}[ \t]+)?\*{0,2}References?\*{0,2}:?\*{0,2}:?", re.M | re.I)
 REFERENCE = re.compile(r"\[((?:[^\[\]]|\[[^\[\]]*\])+)\]\(((?:[^\s()]|\([^\s()]*\))+)\)|(https?://[^\s)>\]]+)")
 DECL_NAME = re.compile(rf"decl_name%\s+({leansource.NAME})")
 SUBJECT = re.compile(r"/--\s*((?:(?!-/).)*?)\s*-/\s*\|\s*«(\d+)»", re.S)
@@ -286,9 +286,10 @@ def unlink(markdown: str) -> str:
 
 
 def quote(markdown: str) -> str:
-    """Quoted Markdown as a blockquote, so its headings and lists stay inside the quote. A `<` opens no HTML,
-    but an autolink (`<https://...>`) stays a link; a link whose target is not a URL reads as text; and each
-    display formula is a block of its own."""
+    """Quoted Markdown as a blockquote, so its headings and lists stay inside the quote. The markup changes only
+    where the site would misread it: a `<` opens no HTML, written `&lt;` outside a formula and `\\lt ` inside one,
+    but an autolink (`<https://...>`) stays a link; a character reference reads as its character; a link whose
+    target is not a URL reads as text; and each display formula is a block of its own."""
     # A character reference reads as its character; the site shows a reference as typed.
     markdown = outside_code(markdown, lambda text: REFERENCE_ENTITY.sub(lambda ref: html.unescape(ref.group()), text))
     text = re.sub(r"&lt;(https?://[^\s<>]*>)", r"<\1", safe(unlink(displays(markdown))))
@@ -331,17 +332,21 @@ def status(statement: dict) -> str:
     return "Textbook result, stated without proof." + also
 
 
+SHORT = {"research open": "open", "research solved": "solved", "textbook": "textbook"}
+
+
 def outcome(statement: dict) -> str:
-    """The status a statement counts under in the chapter's totals."""
+    """What a statement counts under in the chapter's totals: "definition" for a declaration that is not a
+    statement, else its category ("open", "solved" or "textbook") with " proved" when its proof holds no sorry,
+    or "solved with proof" for a solved one stated here with a `formal_proof` link."""
     if statement["kind"] not in STATEMENT_KINDS:
         return "definition"
+    short = SHORT[statement["category"]]
     if not statement["sorry"]:
-        return "textbook proved" if statement["category"] == "textbook" else "proved"
-    if statement["category"] == "research open":
-        return "open"
-    if statement["category"] == "research solved":
-        return "solved with proof" if statement["formal_proofs"] else "solved"
-    return "textbook"
+        return f"{short} proved"
+    if short == "solved" and statement["formal_proofs"]:
+        return "solved with proof"
+    return short
 
 
 def plural(count: int, word: str, words: str | None = None) -> str:
@@ -362,14 +367,23 @@ def card(statement: dict, file: str, rev: str, subjects: dict[str, str]) -> str:
 
 
 def counts(problem: dict) -> str:
-    """The line counting a problem's statements, the test and API ones included."""
-    tally = Counter(statement["category"] for statement in problem["statements"])
+    """The line counting a problem's statements, the test and API ones included, and its definitions that carry
+    a category."""
+    statements = [statement for statement in problem["statements"] if statement["kind"] in STATEMENT_KINDS]
+    definitions = len(problem["statements"]) - len(statements)
+    tally = Counter(statement["category"] for statement in statements)
     kinds = [plural(tally[category], label, labels) for category, label, labels in (
         ("research open", "open", "open"), ("research solved", "solved", "solved"),
         ("textbook", "textbook result", "textbook results")) if tally[category]]
-    total = len(problem["statements"])
-    line = (f"The file states {plural(total, 'research or textbook statement')}: "
-            + (", ".join(kinds[:-1]) + " and " + kinds[-1] if len(kinds) > 1 else kinds[0]) + ".")
+    if not statements:
+        line = (f"The file states no research or textbook statement, only {plural(definitions, 'definition')} with a "
+                "category attribute.")
+    else:
+        line = (f"The file states {plural(len(statements), 'research or textbook statement')}: "
+                + (", ".join(kinds[:-1]) + " and " + kinds[-1] if len(kinds) > 1 else kinds[0]) + ".")
+        if definitions:
+            line += (" A definition with a category attribute is not counted among them." if definitions == 1 else
+                     f" The {definitions:,} definitions with a category attribute are not counted among them.")
     folded = [plural(problem["folded"][key], f"{label} statement") for key, label in (("test", "test"), ("api", "API"))
               if problem["folded"][key]]
     if folded:
@@ -434,13 +448,13 @@ def erdos_sections(articles: list[tuple[dict, Leaf]]) -> list[Entry]:
     return sections
 
 
-def numbered(entries: list[Entry]):
-    """Part titles for a long list that count its entries: "Entries 1 to 20"."""
-    place = {id(entry): number for number, entry in enumerate(entries, 1)}
+def numbered(place: dict[int, int]):
+    """Part titles for a long list from its entries' numbers, keyed by the entry's id: "Entries 1 to 20"."""
 
     def title(group: list[Entry], number: int, total: int) -> str:
         if id(group[0]) in place and id(group[-1]) in place:
-            return f"Entries {place[id(group[0])]} to {place[id(group[-1])]}"
+            first, last = place[id(group[0])], place[id(group[-1])]
+            return f"Entry {first}" if first == last else f"Entries {first} to {last}"
         return range_title(group, number, total)
 
     return title
@@ -461,6 +475,11 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
     in_order: list[tuple[dict, Leaf]] = []
     parts: list[Entry] = []
     orphans: list[dict] = []
+    unread = [f"{problem['file']}:{item['line']} {item['name'] or '(the file)'}: {item['why']}"
+              for problem in data["problems"] for item in problem["unread"]]
+    if unread:
+        # A file whose statements don't read is not one that states none.
+        raise ValueError("declarations the reading could not read: " + "; ".join(unread))
     for folder in order:
         problems = by_folder[folder]
         articles = [(problem, article(problem, rev, subjects)) for problem in problems if problem["statements"]]
@@ -477,7 +496,6 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
         for problem in problems:
             stats["test"] += problem["folded"]["test"]
             stats["api"] += problem["folded"]["api"]
-            stats["unread"] += len(problem["unread"])
         if not articles:
             orphans += empty
             continue
@@ -485,22 +503,25 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
         where = f"[FormalConjectures/{folder}]({GITHUB}/{REPO}/tree/{rev}/{ROOT}/{folder})"
         part = Container(title, slugify(title))
         part.prose = "\n\n".join(filter(None, [
-            f"The {plural(len(articles), 'problem file')} in {where} that state a research or textbook statement, at commit "
-            f"{at(rev)}, one article each" + (", in sections by hundreds of problem number." if folder == ERDOS else "."),
+            f"The {plural(len(articles), 'problem file')} in {where} that {'states' if len(articles) == 1 else 'state'} a "
+            f"research or textbook statement, at commit {at(rev)}" + ("" if len(articles) == 1 else ", one article each")
+            + (", in sections by hundreds of problem number." if folder == ERDOS else "."),
             f"Their docstrings and Lean statements are quoted from [Formal Conjectures]({GITHUB}/{REPO}) (Google DeepMind) "
             "at that commit, under its Apache-2.0 license.",
             (f"Formal Conjectures' [README for this folder]({blob(rev, f'{ROOT}/{ERDOS}/README.md')}) asks contributors to "
              f"keep each docstring as close as possible to the problem's text on [erdosproblems.com]({ERDOS_SITE}), and to "
              "copy it from the site's LaTeX. Each article links its problem's page there.") if folder == ERDOS else "",
         ]))
-        part.tail = no_article(empty, rev)
         part.entries = erdos_sections(articles) if folder == ERDOS else [Entry(leaf) for _, leaf in articles]
         if folder != ERDOS:
             chunk(part)
+        # After chunking, which would move it to the last part's page.
+        part.tail = no_article(empty, rev)
         parts.append(Entry(part))
         stats["folders"] += 1
     stats["articles"] = len(in_order)
-    stats["statements"] = sum(len(problem["statements"]) for problem, _ in in_order)
+    stats["statements"] = sum(1 for problem, _ in in_order for statement in problem["statements"]
+                              if statement["kind"] in STATEMENT_KINDS)
 
     # The subject index: a page per top-level AMS code that a kept statement names.
     by_subject: dict[int, list[Leaf]] = {}
@@ -527,26 +548,36 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
     lists = []
     for subset in sorted(data["subsets"], key=lambda subset: natural(subset["file"])):
         page = Container(escape(subset["title"]), slugify(subset["title"]))
-        missing = []
-        for item in subset["names"]:
+        missing, place = [], {}
+        for number, item in enumerate(subset["names"], 1):
             leaf = leaves.get(item["file"] or "")
             if leaf is None:
-                missing.append(item)
+                missing.append((number, item))
                 continue
-            page.entries.append(Entry(leaf, owned=False, label=f"`{item['name']}` ({item['category']}), in {leaf.title}"))
+            entry = Entry(leaf, owned=False, label=f"{number}. `{item['name']}` ({item['category']}), in {leaf.title}")
+            page.entries.append(entry)
+            place[id(entry)] = number
+        named = len(subset["names"])
         page.prose = "\n\n".join(filter(None, [
             quote(subset["doc"]) if subset["doc"] else "",
             f"*Quoted from [{subset['file']}]({blob(rev, subset['file'])}) in [Formal Conjectures]({GITHUB}/{REPO}) "
             f"(Google DeepMind) at commit {at(rev)}, Apache-2.0.*",
-            f"The {plural(len(subset['names']), 'statement')} the list names, each linked to its problem's article.",
+            f"The {plural(named, 'statement')} the list names, numbered as it lists them, "
+            + ("each linked to its problem's article." if not missing else
+               f"{named - len(missing):,} of them linked to their problem's article; the "
+               f"{plural(len(missing), 'other')}, without an article here, {'is' if len(missing) == 1 else 'are'} "
+               "listed at the end."),
         ]))
+        chunk(page, numbered(place))
         if missing:
+            # After chunking, which would move it to the last part's page.
             page.tail = ("Without an article here: " + ", ".join(
-                f"`{item['name']}`" + (f" ({item['category']}, in [{item['file']}]({blob(rev, item['file'])}))" if item["file"]
-                                       else ", which the reading does not find") for item in missing) + ".")
-        stats["subset_names"] += len(subset["names"])
+                f"{number}. `{item['name']}`" + (f" ({item['category']}, in [{item['file']}]({blob(rev, item['file'])}))"
+                                                 if item["file"] else ", which the reading does not find")
+                for number, item in missing) + ".")
+        stats["subset_names"] += named
         stats["subset_missing"] += len(missing)
-        lists.append(Entry(chunk(page, numbered(page.entries))))
+        lists.append(Entry(page))
     if lists:
         subsets = Container("FC100 subsets", "fc100-subsets", lists)
         subsets.prose = (f"Formal Conjectures' {plural(len(lists), 'benchmark list')} in "
@@ -561,11 +592,16 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
 
 def intro(data: dict, stats: Counter) -> str:
     rev = data["rev"]
-    solved = stats["solved with proof"] + stats["solved"]
-    proved = stats["proved"] + stats["textbook proved"]
+    opened = stats["open"] + stats["open proved"]
+    solved = stats["solved"] + stats["solved with proof"] + stats["solved proved"]
     textbook = stats["textbook"] + stats["textbook proved"]
-    definitions = (f" {plural(stats['definition'], 'definition')} carrying a category attribute "
-                   f"{'is' if stats['definition'] == 1 else 'are'} shown as such.") if stats["definition"] else ""
+    open_part = (f"{opened:,} open and stated without proof" if not stats["open proved"] else
+                 f"{opened:,} open, {stats['open proved']:,} of them proved here")
+    empty, one = stats["without_statements"], stats["definition"] == 1
+    definitions = (f" Besides these, {plural(stats['definition'], 'definition')} "
+                   f"{'carries' if one else 'carry'} a category attribute; "
+                   f"{'its card says it is not a statement' if one else 'their cards say they are not statements'}."
+                   if stats["definition"] else "")
     return "\n\n".join([
         f"[Formal Conjectures]({GITHUB}/{REPO}), from Google DeepMind, states open and solved mathematical problems in "
         f"Lean, with a site at {SITE}. This chapter maps it as read at commit {at(rev)} ({data['date'][:10]}), Lean "
@@ -573,24 +609,25 @@ def intro(data: dict, stats: Counter) -> str:
         "it, a card per statement.",
         f"Every statement carries one `category` attribute: research open, research solved, textbook, API or test. The "
         f"articles show the first three, {plural(stats['statements'], 'statement')} in "
-        f"{plural(stats['articles'], 'article')}: {stats['open']:,} open and stated without proof, {solved:,} solved "
-        f"({stats['solved with proof']:,} of them with a `formal_proof` link to a proof elsewhere), {textbook:,} textbook "
-        f"results, and {proved:,} of these proved here.{definitions} The {stats['test']:,} test and {stats['api']:,} API "
-        f"statements are counted in their problem's article, not shown. {plural(stats['without_statements'], 'problem file')} "
-        f"{'states' if stats['without_statements'] == 1 else 'state'} none of the first three and "
-        f"{'has' if stats['without_statements'] == 1 else 'have'} no article; their folder's page lists them.",
+        f"{plural(stats['articles'], 'article')}: {open_part}; {solved:,} research solved, {stats['solved proved']:,} "
+        f"of them proved here and {stats['solved with proof']:,} of the rest with a `formal_proof` link to a proof "
+        f"elsewhere; {plural(textbook, 'textbook result')}, {stats['textbook proved']:,} of them proved here."
+        f"{definitions} The {stats['test']:,} test and {stats['api']:,} API statements are counted in their problem's "
+        f"article, not shown. {plural(empty, 'problem file')} {'states' if empty == 1 else 'state'} none of the first "
+        f"three and {'has' if empty == 1 else 'have'} no article; their folder's page lists them.",
         "A card's status line reads the statement's category, its `formal_proof` links and whether the text of its proof "
-        "in the file contains `sorry`: “Open: stated without proof.”; “Solved: stated here; a Lean proof is at …” when "
-        "a link gives one, and “Solved: stated here without proof.” when none does; “Proved here.” when the proof's "
-        "text holds no `sorry`, which, like Formal Conjectures' own `hasSorryFreeProof`, says nothing of the statements "
-        "that proof uses. Formal Conjectures marks a link `formal_conjectures` when the proof fills this statement as "
-        "written, and `lean4` when the problem is solved in Lean elsewhere, perhaps as an equivalent statement.",
+        "in the file contains `sorry`: “Open: stated without proof.”; “Solved: stated here; a Lean proof is at …” (or "
+        "“a proof in another system is at …”) when a link gives one, and “Solved: stated here without proof.” when none "
+        "does; “Textbook result, stated without proof.”; and “Proved here.” or “Textbook result, proved here.” when the "
+        "proof's text holds no `sorry`, which, like Formal Conjectures' own `hasSorryFreeProof`, says nothing of the "
+        "statements that proof uses. Formal Conjectures marks a link `formal_conjectures` when the proof fills this "
+        "statement as written, and `lean4` when the problem is solved in Lean elsewhere, perhaps as an equivalent "
+        "statement.",
         "No Lean is run for this chapter. Statements, docstrings and attributes are read from the source text: a "
         "statement is a named declaration with a category in the `@[...]` list right before it, its Lean statement "
         "runs to the `:=` that starts its proof, and its name is read under the namespaces it sits in. A statement "
         "with no name, an `example`, or a `private` one is left out, as Formal Conjectures' own site leaves them out. "
-        "The articles have no "
-        "dependencies: the problems form a flat collection, and edges between statements need Lean.",
+        "The articles have no dependencies: edges between statements need Lean.",
         f"Two indexes link the articles: [by subject](trough:fc-by-subject), from the `AMS` attributes' top-level "
         f"classes of the Mathematics Subject Classification ({stats['subjects']} subjects), and the "
         "[FC100 subsets](trough:fc-subsets), Formal Conjectures' benchmark lists.",

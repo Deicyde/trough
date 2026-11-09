@@ -134,15 +134,16 @@ def generate() -> dict[Path, str]:
         files.update(render_tree(fc_built.root, VAULT))
         chapters["formal-conjectures"] = "formal-conjectures/README.md"
         lean_links["formal-conjectures"] = fc_links
-        fc_stats = fc_built.stats
+        fc_stats = Counter(fc_built.stats)  # the chapter keeps no zero counts
         blueprint_rows.append(("Formal Conjectures", "DECOMPOSED",
                                f"[{fc_stats['articles']:,} problem files](../roadmap/formal-conjectures/README.md) that state "
                                "a research or textbook statement, one article each, with a card per statement."))
         print(
             f"formal-conjectures: {fc_stats['articles']} articles of {fc_stats['problems']} problem files, "
-            f"{fc_stats['statements']} statements ({fc_stats['open']} open, {fc_stats['solved with proof']} solved with a "
-            f"proof link, {fc_stats['solved']} solved without, {fc_stats['proved']} proved here, {fc_stats['textbook']} "
-            f"textbook stated, {fc_stats['textbook proved']} textbook proved, {fc_stats['definition']} definitions); "
+            f"{fc_stats['statements']} statements ({fc_stats['open']} open, {fc_stats['open proved']} open proved, "
+            f"{fc_stats['solved with proof']} solved with a proof link, {fc_stats['solved']} solved without, "
+            f"{fc_stats['solved proved']} solved proved, {fc_stats['textbook']} textbook stated, "
+            f"{fc_stats['textbook proved']} textbook proved) and {fc_stats['definition']} definitions; "
             f"{fc_stats['test']} test and {fc_stats['api']} API statements counted; {fc_stats['subjects']} subjects; "
             f"{fc_stats['subset_missing']} of {fc_stats['subset_names']} FC100 names without an article",
             file=sys.stderr,

@@ -201,13 +201,14 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "read from the source text, without Lean.",
         ]
     lines += ["", "## Libraries", ""]
+    pinned = {**formal_frontier, **({"formal-conjectures": formal_conjectures} if formal_conjectures else {})}
     for group, heading in GROUPS:
         members = [library for library in libraries if library["group"] == group]
         if members:
             lines.append(f"### {heading}")
             lines.append("")
             for library in members:
-                head = formal_frontier[library["id"]][:12] if library["id"] in formal_frontier else library.get("head")
+                head = pinned[library["id"]][:12] if library["id"] in pinned else library.get("head")
                 snapshot = f" at {head}" if head else ""
                 lines.append(f"- [{library['name']}]({repo_url(library)}){snapshot}: {library.get('what', '')}")
             lines.append("")
