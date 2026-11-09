@@ -187,6 +187,7 @@ def test_a_quote_puts_each_display_formula_in_a_block_of_its_own():
     assert fc.displays("such that\n$$\n  N \\gg 2^n.\n$$\nthen more") == "such that\n\n$$\n  N \\gg 2^n.\n$$\n\nthen more"
     assert fc.displays("and\n$$a(n) = 8$$ for $n$.") == "and\n\n$$a(n) = 8$$\n\nfor $n$."
     assert fc.displays("x `$$a$$` y") == "x `$$a$$` y"
+    assert fc.displays("such that\n$$a$$\nthen\n$$b$$\nas") == "such that\n\n$$a$$\n\nthen\n\n$$b$$\n\nas"
     assert fc.displays("No formula.") == "No formula."
     # A character reference reads as its character, which a formula then shows.
     assert fc.quote("then$$x&#60; 1,$$where") == "> then\n>\n> $$x< 1,$$\n>\n> where"

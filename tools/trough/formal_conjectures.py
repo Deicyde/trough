@@ -257,15 +257,20 @@ def displays(markdown: str) -> str:
     how the site reads it as a formula; the text around it is unchanged but for that space."""
 
     def isolate(text: str) -> str:
-        pieces, last = [], 0
+        out, last = [], 0
         for match in DISPLAY.finditer(text):
-            before = text[last:match.start()].rstrip()
-            pieces += [before, "\n\n" if before else "", match.group().strip()]
+            between = text[last:match.start()]
+            between = between.strip() if out else between.rstrip()
+            if out:
+                out.append("\n\n")
+            if between:
+                out += [between, "\n\n"]
+            out.append(match.group().strip())
             last = match.end()
-        rest = text[last:]
-        if not pieces:
+        if not out:
             return text
-        return "".join(pieces) + ("\n\n" + rest.lstrip() if rest.strip() else rest)
+        rest = text[last:]
+        return "".join(out) + ("\n\n" + rest.lstrip() if rest.strip() else rest)
 
     return outside_code(markdown, isolate)
 
