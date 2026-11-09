@@ -456,7 +456,7 @@ def chapter(source: dict, landmarks: dict, imperial: Container | None = None) ->
     for key, section, text in sections:
         for name in mentions(text, set(records)):
             named_in[name].append((section["title"], key))
-    adapted = ADAPTED[0] in imperial_leaves and any(ADAPTED[1] in step["text"] for step in route["steps"])
+    adapted = ADAPTED[0] in imperial_leaves and any(ADAPTED[1] in " ".join(step["text"].split()) for step in route["steps"])
     if adapted:
         targets[f"imperial:{ADAPTED[0]}"] = imperial_leaves[ADAPTED[0]]
     leaves: dict[str, Leaf] = {}

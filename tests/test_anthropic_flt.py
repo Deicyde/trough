@@ -35,7 +35,8 @@ Intro with E_P and `X.y`.
 
 **1. First step.** `root_thm` follows from `C.first`.
 
-**2. Second step ≥ 2.** `A.step`, adapted from the Imperial College London FLT project, proves it from:
+**2. Second step ≥ 2.** `A.step`, adapted from the Imperial College
+London FLT project, proves it from:
 - `B.deep (h : q ≠ 2) : q = q`, with F_p;
 - nothing else.
 
@@ -355,7 +356,7 @@ def test_a_part_per_step_holds_the_landmarks_of_its_stage(tmp_path):
                      "root_thm": f"{BLOB}/Theorems/Thm_root_thm.lean#L2", "C.first": f"{BLOB}/Theorems/Thm_C_first.lean#L2"}
     page = files[Path("blueprint/roadmap/anthropic-flt/2-second-step-2/README.md")]
     # Quoted as GitHub reads it: underscores outside code escaped, a blank line before the list.
-    assert ("> **2. Second step ≥ 2.** `A.step`, adapted from the Imperial College London FLT project, proves it from:\n"
+    assert ("> **2. Second step ≥ 2.** `A.step`, adapted from the Imperial College\n> London FLT project, proves it from:\n"
             ">\n> - `B.deep (h : q ≠ 2) : q = q`, with F\\_p;\n> - nothing else.") in page
     assert f"*Quoted from the route of the proof in [PROOF-PATH.md]({BLOB}/PROOF-PATH.md) of " in page
     # B.deep's span carries its signature, and still counts as naming it.
@@ -422,7 +423,8 @@ def test_a_name_the_imperial_chapter_shares_is_linked(tmp_path):
             "[Imp.shared](../../flt/shared.md) in the Imperial FLT chapter.") in first
     page = files[Path("blueprint/roadmap/anthropic-flt/README.md")]
     assert "[Imperial FLT chapter](../flt/README.md)" in page and "At this commit 2 names do." in page
-    # PROOF-PATH.md says the Frey package is adapted from the Imperial project, which has an article on its own.
+    # PROOF-PATH.md says, across a line break, that the Frey package is adapted from the Imperial project, which has
+    # an article on its own.
     assert ("The repository's `FreyPackage` is adapted from the Imperial College London FLT project, as PROOF-PATH.md "
             "says, and the Imperial FLT chapter has an article on its [`FreyPackage`](../flt/frey.md).") in page
     assert built.stats["imperial_matches"] == 2
