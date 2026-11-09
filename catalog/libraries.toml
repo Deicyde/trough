@@ -329,6 +329,23 @@ map_unit = "project card"
 map_plan = "One article per project card in LeanPool/projects, in a section per top-level MSC2020 class: the card's summary, authors, sources, provenance and license, and its main results' informal statements, each with its declaration where the scan finds it in the project's files."
 
 [[library]]
+id = "stacks"
+name = "The Stacks Project in Lean (Axiom)"
+repo = "AxiomMath/Stacks"
+group = "corpus"
+homepage = "https://stacks.axiommath.ai"
+what = "A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove."
+informal_layer = "@[stacks TAG] attributes, with a comment naming the part of the tag a declaration covers; add_to_stacks registrations of Mathlib declarations; @[ega] and @[sga] references and their add_to_ega and add_to_sga registrations; docstrings. The Stacks Project's own repository (GNU FDL) gives the parts, chapters and sections that place each tag. The site has a page per tag."
+formalization_yaml = "v0.4; review self-assessed; 3 alignment statements; no main_results"
+license = "Apache-2.0"
+toolchain = "v4.35.0"
+mathlib = "56a005855ea1"
+lean_files = 62972
+map_status = "live"
+map_unit = "section"
+map_plan = "One article per section of the Stacks Project with a tag that a declaration carries, on a page per chapter in a part per Stacks Project part, with a block per tag listing its declarations' Lean statements, tiers and attribute comments, the declarations registered for it and its EGA and SGA references; an EGA page and an SGA page index the references."
+
+[[library]]
 id = "ff-adic-modules"
 name = "Adic modules"
 repo = "FormalFrontier/adic-modules"

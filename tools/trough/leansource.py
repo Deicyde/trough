@@ -16,6 +16,9 @@ own.
 Each declaration also carries what is attached to it: its docstring, the
 attributes of the `@[...]` list before it, and its statement, the text up to the
 `:=` or `where` that starts its value, with whether that value holds `sorry`.
+declarations() also gives, in file order, the `private` declarations under the
+names they are written with and the anonymous instances with no name, for a
+reader that has to account for every attribute a file writes.
 """
 
 from __future__ import annotations
@@ -67,6 +70,7 @@ class Declaration:
     attributes: tuple[str, ...] = ()  # each attribute of its `@[...]` list, as written, whitespace collapsed
     statement: str | None = None  # its text up to the `:=` or `where` that starts its value; None when not found
     proof_sorry: bool = False  # its value, the text from there on, holds what `sorry` marks
+    private: bool = False  # written `private`: Lean renames it, so scan() leaves it out
 
 
 def spans(text: str) -> list[tuple[int, int, str]]:
@@ -162,6 +166,19 @@ def blank_attributes(text: str) -> str:
 
 def scan(text: str) -> dict[str, Declaration] | None:
     """Each declaration the file makes, by full name; None when its scopes don't close as they open."""
+    found = declarations(text)
+    if found is None:
+        return None
+    named: dict[str, Declaration] = {}
+    for declaration in found:
+        if declaration.name and not declaration.private:
+            named.setdefault(declaration.name, declaration)
+    return named
+
+
+def declarations(text: str) -> list[Declaration] | None:
+    """Each declaration the file writes, in order: those scan() gives, the `private` ones under their written
+    full names, and the anonymous instances, whose name is ""; None when its scopes don't close as they open."""
     found_spans = spans(text)
     code = clear(text, found_spans)
     # Comments go but strings stay, for reading attributes.
@@ -172,20 +189,21 @@ def scan(text: str) -> dict[str, Declaration] | None:
     for line in lines:
         offsets.append(offsets[-1] + len(line) + 1)
     scopes: list[tuple[str, str]] = []  # (kind, the header's last component or "")
-    found: dict[str, Declaration] = {}
-    open_decl: tuple[str, str, int, int, int, list[str]] | None = None  # name, kind, line, head, body start, its lines
+    found: list[Declaration] = []
+    # name, kind, line, head, body start, its lines, private
+    open_decl: tuple[str, str, int, int, int, list[str], bool] | None = None
 
     def close() -> None:
         nonlocal open_decl
         if open_decl:
-            name, kind, line, head, start, body = open_decl
+            name, kind, line, head, start, body, private = open_decl
             joined = "\n".join(body)
             cut = value_start(joined)
             column = head - offsets[line - 1]
             statement = None if cut is None else dedent(text[head:start + cut].rstrip(), column)
             doc, attributes = attached(text, code, plain, docs, head)
-            found.setdefault(name, Declaration(name, kind, line, bool(SORRY.search(joined)), doc, attributes, statement,
-                                               cut is not None and bool(SORRY.search(joined[cut:]))))
+            found.append(Declaration(name, kind, line, bool(SORRY.search(joined)), doc, attributes, statement,
+                                     cut is not None and bool(SORRY.search(joined[cut:])), private))
         open_decl = None
 
     for number, line in enumerate(lines, 1):
@@ -224,15 +242,19 @@ def scan(text: str) -> dict[str, Declaration] | None:
         if match := DECLARATION.match(line):
             close()
             name = match["name"]
-            if not name or name in NOT_NAMES or "private" in match["modifiers"].split():
+            anonymous = match["kind"] == "instance" and (not name or name in NOT_NAMES)
+            if anonymous:
+                # An anonymous instance's `where` belongs to its body.
+                full, rest = "", match.start("name") if name else match.end()
+            elif not name or name in NOT_NAMES:
                 continue
-            if name.startswith("_root_."):
-                full = name[len("_root_."):]
             else:
-                full = ".".join([part for kind, part in scopes if kind == "namespace"] + [name])
+                full = name[len("_root_."):] if name.startswith("_root_.") else ".".join(
+                    [part for kind, part in scopes if kind == "namespace"] + [name])
+                rest = match.end()
             base = offsets[number - 1]
-            open_decl = (full, KINDS[match["kind"]], number, base + match.start("modifiers"), base + match.end(),
-                         [line[match.end():]])
+            open_decl = (full, KINDS[match["kind"]], number, base + match.start("modifiers"), base + rest,
+                         [line[rest:]], "private" in match["modifiers"].split())
             continue
         if open_decl:
             open_decl[5].append(line)
