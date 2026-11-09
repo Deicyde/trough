@@ -1,3 +1,4 @@
+import http.client
 import json
 import os
 import subprocess
@@ -35,7 +36,7 @@ Intro with E_P and `X.y`.
 
 **1. First step.** `root_thm` follows from `C.first`.
 
-**2. Second step ≥ 2.** `A.step`, adapted from the Imperial College
+**2. Second step ≥ 2.** `A.step`, on a `FreyPackage` adapted from the Imperial College
 London FLT project, proves it from:
 - `B.deep (h : q ≠ 2) : q = q`, with F_p;
 - nothing else.
@@ -153,7 +154,7 @@ def test_proof_path_gives_the_intro_steps_and_later_sections():
     route = anthropic_flt.proof_path(PROOF_PATH)
     assert route["title"] == "The route" and route["intro"] == "Intro with E_P and `X.y`."
     assert [(step["number"], step["title"]) for step in route["steps"]] == [(1, "First step"), (2, "Second step ≥ 2")]
-    assert route["steps"][1]["text"].startswith("**2. Second step ≥ 2.** `A.step`, adapted")
+    assert route["steps"][1]["text"].startswith("**2. Second step ≥ 2.** `A.step`, on a `FreyPackage` adapted")
     assert route["steps"][1]["text"].endswith("- nothing else.")
     assert [section["title"] for section in route["sections"]] == ["Exact strength"]
     assert route["sections"][0]["text"].endswith("- **Other.** `C.first` holds as stated.")
@@ -170,6 +171,23 @@ def test_a_section_keeps_each_proved_clause_and_cuts_what_follows():
         "- **Named.** Proved: `B.deep`, in the strength needed. …\n- **Other.** `C.first` holds as stated.")
     # A sentence ends at a period outside code.
     assert anthropic_flt.proved_only("- **X.** Proved: `a.b` and\n  `c.d`. Rest.\n") == "- **X.** Proved: `a.b` and\n  `c.d`. …\n"
+    # Only the bold lead and the "Proved:" sentence stay, whatever comes before; "not proved" is read in any case.
+    assert anthropic_flt.proved_only("- **X.** Not proved: a. Proved: b.\n- **Y.** Not Proved: c.\n") == "- **X.** … Proved: b.\n"
+    for entry in ("- **Z.** Proved: a. Proved: b.", "- **W.** It is proved: a.", "Proved: a paragraph."):
+        with pytest.raises(ValueError, match="cannot cut the entry"):
+            anthropic_flt.proved_only(entry)
+
+
+def test_the_imperial_sentence_needs_a_sentence_naming_the_frey_package():
+    def route(text: str) -> dict:
+        return {"steps": [{"text": text}]}
+
+    assert anthropic_flt.adapted_from_imperial(route("A Frey package (`Def_FreyPackage.lean`, adapted from the Imperial\n"
+                                                     "College London FLT project) is a solution."))
+    assert not anthropic_flt.adapted_from_imperial(route("A `FreyPackage` is a solution. The patching is adapted from "
+                                                         "the Imperial College London FLT project."))
+    assert not anthropic_flt.adapted_from_imperial(route("The patching, adapted from the Imperial College London FLT "
+                                                         "project, is long."))
 
 
 def test_the_records_hold_the_facts_steps_and_landmarks(tmp_path):
@@ -209,6 +227,8 @@ def test_records_are_refused_when_the_source_does_not_hold(tmp_path):
         records(tmp_path / "7", **{"html/data/edges.js": "window.FLT_EDGES={off:[0,1,3,3,5],dst:[2,0,2,4,1]};\n"})
     with pytest.raises(ValueError, match="Thm_root_thm.lean: the text after the top-level `:=` of root_thm"):
         records(tmp_path / "8", **{"Theorems/Thm_root_thm.lean": "theorem root_thm : let x := 1; x = x := by rfl\n"})
+    with pytest.raises(ValueError, match="section “Exact strength”: cannot cut the entry"):
+        records(tmp_path / "9", **{"PROOF-PATH.md": PROOF_PATH + "- **Twice.** Proved: a. Proved: b.\n"})
     with pytest.raises(ValueError, match="numbered \\[1, 3\\]"):
         records(tmp_path / "4", **{"PROOF-PATH.md": PROOF_PATH.replace("**2. Second", "**3. Second")})
     with pytest.raises(ValueError, match="B.deep is in stage 3"):
@@ -293,6 +313,13 @@ def test_the_documentation_site_is_linked_only_when_it_serves_the_landmarks_page
     # A site that does not answer at all keeps the last record's link, so an outage changes nothing.
     assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", down) == []
     assert json.loads((out / "source.json").read_text(encoding="utf-8"))["docs"] == "https://docs.example/"
+    # The last record's check does not cover landmarks it did not have.
+    other = json.loads((out / "landmarks.json").read_text(encoding="utf-8"))
+    other["landmarks"][0]["name"] = "A.renamed"
+    (out / "landmarks.json").write_text(json.dumps(other), encoding="utf-8")
+    assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", down) == []
+    assert "docs" not in json.loads((out / "source.json").read_text(encoding="utf-8"))
+    assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", site(served)) == []
     # A site that answers without the pages loses it.
     assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", site({})) == []
     assert "docs" not in json.loads((out / "source.json").read_text(encoding="utf-8"))
@@ -312,11 +339,27 @@ def test_a_request_is_retried_and_only_a_missing_page_is_an_answer(monkeypatch):
         refresh_anthropic_flt.fetch("https://docs.example/thm.html", "GET", attempts=3, wait=0)
     assert len(calls) == 3
 
-    def missing(request, timeout):
-        raise urllib.error.HTTPError(request.full_url, 404, "Not Found", None, None)
+    # A rate limit, a timeout, a server error or a dropped connection says nothing about the page: tried again.
+    for failure in (urllib.error.HTTPError("u", 429, "Too Many Requests", None, None),
+                    urllib.error.HTTPError("u", 408, "Request Timeout", None, None),
+                    urllib.error.HTTPError("u", 503, "Unavailable", None, None), http.client.IncompleteRead(b"")):
+        calls.clear()
 
-    monkeypatch.setattr(urllib.request, "urlopen", missing)
-    assert refresh_anthropic_flt.fetch("https://docs.example/thm.html", "HEAD", wait=0) is None
+        def failing(request, timeout, failure=failure):
+            calls.append(request.full_url)
+            raise failure
+
+        monkeypatch.setattr(urllib.request, "urlopen", failing)
+        with pytest.raises(anthropic_flt.Unreachable):
+            refresh_anthropic_flt.fetch("https://docs.example/thm.html", "GET", attempts=2, wait=0)
+        assert len(calls) == 2
+    # Any other 4xx answers that the page is not there.
+    for code in (404, 410, 403):
+        def missing(request, timeout, code=code):
+            raise urllib.error.HTTPError(request.full_url, code, "No", None, None)
+
+        monkeypatch.setattr(urllib.request, "urlopen", missing)
+        assert refresh_anthropic_flt.fetch("https://docs.example/thm.html", "HEAD", wait=0) is None
 
 
 def imperial_chapter() -> Container:
@@ -356,7 +399,8 @@ def test_a_part_per_step_holds_the_landmarks_of_its_stage(tmp_path):
                      "root_thm": f"{BLOB}/Theorems/Thm_root_thm.lean#L2", "C.first": f"{BLOB}/Theorems/Thm_C_first.lean#L2"}
     page = files[Path("blueprint/roadmap/anthropic-flt/2-second-step-2/README.md")]
     # Quoted as GitHub reads it: underscores outside code escaped, a blank line before the list.
-    assert ("> **2. Second step ≥ 2.** `A.step`, adapted from the Imperial College\n> London FLT project, proves it from:\n"
+    assert ("> **2. Second step ≥ 2.** `A.step`, on a `FreyPackage` adapted from the Imperial College\n"
+            "> London FLT project, proves it from:\n"
             ">\n> - `B.deep (h : q ≠ 2) : q = q`, with F\\_p;\n> - nothing else.") in page
     assert f"*Quoted from the route of the proof in [PROOF-PATH.md]({BLOB}/PROOF-PATH.md) of " in page
     # B.deep's span carries its signature, and still counts as naming it.
@@ -370,7 +414,8 @@ def test_a_part_per_step_holds_the_landmarks_of_its_stage(tmp_path):
     assert (f"*Quoted from the section “Exact strength” of [PROOF-PATH.md]({BLOB}/PROOF-PATH.md) of "
             "[anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem) at commit "
             f"[aaaaaaaa](https://github.com/anthropics/fermats-last-theorem/tree/{REV}), Apache-2.0: each “Proved:” "
-            "clause, cut with … where the text goes on.*") in section
+            "clause, cut with … where the text goes on, and entries that say neither what is proved nor what is not, "
+            "whole.*") in section
     assert "No landmark is placed in this section. The landmarks it names" in section
     assert "- [B.deep](../2-second-step-2/b-deep.md)\n- [C.first](../1-first-step/c-first.md)" in section
 

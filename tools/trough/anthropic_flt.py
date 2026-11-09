@@ -45,6 +45,9 @@ PROOF_IMPORT = re.compile(r"^import\s+(P2M\.Sol\.\S+)\s*$", re.M)
 OPENERS, CLOSERS = "([{⟨⦃", ")]}⟩⦄"
 CODE_SPAN = re.compile(r"`[^`\n]*`")
 SENTENCE_END = re.compile(r"\.(?=\s|$)")
+# An entry of a section: its list marker and bold lead; and a "Proved:" or "Not proved:" clause in it.
+ENTRY_LEAD = re.compile(r"^[-*+] (?:\*\*[^*\n]+\*\*\s*)?")
+CLAUSE = re.compile(r"\b(not\s+)?proved:", re.I)
 # PROOF-PATH.md says the repository's Frey package is adapted from the Imperial FLT project, whose chapter
 # has an article on its own FreyPackage.
 ADAPTED = ("FreyPackage", "adapted from the Imperial College London FLT project")
@@ -185,6 +188,11 @@ def read_repository(checkout: Path, rev: str, date: str, paths: set[str]) -> tup
     numbers = [step["number"] for step in route["steps"]]
     if not numbers or numbers != list(range(1, len(numbers) + 1)):
         raise ValueError(f"PROOF-PATH.md's steps are numbered {numbers}, not 1, 2, ...")
+    for section in route["sections"]:
+        try:
+            proved_only(section["text"])
+        except ValueError as error:
+            raise ValueError(f"PROOF-PATH.md, section “{section['title']}”: {error}") from None
     meta = read_js((checkout / "html/data/meta.js").read_text(encoding="utf-8"))
     edges = read_js((checkout / "html/data/edges.js").read_text(encoding="utf-8"))
     names, offsets, targets = meta["names"], edges["off"], edges["dst"]
@@ -367,21 +375,37 @@ def step_theorem(step: dict, stage_names: set[str]) -> str | None:
 
 
 def proved_only(markdown: str) -> str:
-    """A section's entries with each one's “Proved:” clause kept, to the end of its sentence, and the rest
-    cut, marked with …: the map records what the repository proves, not what it leaves out. An entry with no
-    such clause is kept whole, unless it says what is not proved, when it is left out."""
+    """A section's entries cut to what the repository says it proves: an entry's bold lead and its “Proved:”
+    sentence, with … where text is cut before or after it. The map records what the repository proves, not
+    what it leaves out, so an entry that says only what is not proved is left out; one that says neither is
+    kept whole. Raises ValueError for an entry this can't cut safely: one with two “Proved:” clauses, or
+    “proved:” written another way."""
     out = []
     for item in re.split(r"(?m)^(?=[-*+] )", markdown):
         body = item.rstrip()
-        start = body.find("Proved:")
-        if start < 0:
-            if "Not proved:" not in body:
-                out.append(item)
+        clauses = list(CLAUSE.finditer(body))
+        proved = [clause for clause in clauses if not clause.group(1)]
+        if not clauses:
+            out.append(item)
             continue
+        if not proved:
+            continue
+        if len(proved) > 1 or proved[0].group() != "Proved:" or not body.startswith(("- ", "* ", "+ ")):
+            raise ValueError(f"cannot cut the entry {' '.join(body.split())[:80]!r} to its “Proved:” clause")
+        lead = ENTRY_LEAD.match(body).end()
+        start = proved[0].start()
         end = SENTENCE_END.search(CODE_SPAN.sub(lambda span: " " * len(span.group()), body), start)
-        cut = end.end() if end else len(body)
-        out.append(body[:cut].rstrip() + (" …" if body[cut:].strip() else "") + item[len(body):])
+        stop = end.end() if end else len(body)
+        out.append(body[:lead] + ("… " if body[lead:start].strip() else "") + body[start:stop]
+                   + (" …" if body[stop:].strip() else "") + item[len(body):])
     return "".join(out)
+
+
+def adapted_from_imperial(route: dict) -> bool:
+    """Whether a sentence of PROOF-PATH.md's steps says the repository's Frey package is adapted from the
+    Imperial College London FLT project."""
+    sentences = (sentence for step in route["steps"] for sentence in re.split(r"(?<=[.!?])\s+", " ".join(step["text"].split())))
+    return any(ADAPTED[1] in sentence and ADAPTED[0] in sentence for sentence in sentences)
 
 
 def imperial_names(root: Container | None) -> dict[str, Leaf]:
@@ -456,7 +480,7 @@ def chapter(source: dict, landmarks: dict, imperial: Container | None = None) ->
     for key, section, text in sections:
         for name in mentions(text, set(records)):
             named_in[name].append((section["title"], key))
-    adapted = ADAPTED[0] in imperial_leaves and any(ADAPTED[1] in " ".join(step["text"].split()) for step in route["steps"])
+    adapted = ADAPTED[0] in imperial_leaves and adapted_from_imperial(route)
     if adapted:
         targets[f"imperial:{ADAPTED[0]}"] = imperial_leaves[ADAPTED[0]]
     leaves: dict[str, Leaf] = {}
@@ -493,7 +517,8 @@ def chapter(source: dict, landmarks: dict, imperial: Container | None = None) ->
         part = Container(ff.safe(section["title"]), slugify(section["title"]),
                          [Entry(leaves[name], owned=False) for name in named])
         targets[key] = part
-        note = "each “Proved:” clause, cut with … where the text goes on" if text != section["text"] else ""
+        note = ("each “Proved:” clause, cut with … where the text goes on, and entries that say neither what is "
+                "proved nor what is not, whole") if text != section["text"] else ""
         part.prose = "\n\n".join([quote(text), credit(source, "PROOF-PATH.md", f"the section “{ff.safe(section['title'])}” of",
                                                       note),
                                   "No landmark is placed in this section"

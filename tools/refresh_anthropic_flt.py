@@ -25,6 +25,7 @@ landmarks drop under half of those the last record has.
 from __future__ import annotations
 
 import argparse
+import http.client
 import json
 import os
 import subprocess
@@ -47,22 +48,31 @@ def git(checkout: Path, *args: str) -> str:
                           env={**os.environ, "TZ": "UTC"}).stdout.strip()
 
 
+# Answers that say to try again later, not that the page is missing.
+RETRY = {408, 429}
+
+
 def fetch(url: str, method: str, attempts: int = 3, wait: float = 10.0) -> bytes | None:
-    """The body of a GET, b"" for a HEAD that answers, None when the site answers that it has no such page.
-    A request the site does not answer, or answers with a server error, is tried *attempts* times, then
-    raises anthropic_flt.Unreachable."""
+    """The body of a GET, b"" for a HEAD that answers, None when the site answers that it has no such page
+    (any 4xx but a timeout or a rate limit; a 403 from GitHub Pages means the site is off). A request the
+    site does not answer, drops, or answers with a timeout, a rate limit or a server error is tried
+    *attempts* times, then raises anthropic_flt.Unreachable."""
     for attempt in range(attempts):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, method=method), timeout=60) as response:
                 return response.read() if method == "GET" else b""
         except urllib.error.HTTPError as error:
-            if error.code < 500:
+            if error.code < 500 and error.code not in RETRY:
                 return None
-        except (urllib.error.URLError, OSError):
+        except (urllib.error.URLError, http.client.HTTPException, OSError):
             pass
         if attempt + 1 < attempts:
             time.sleep(wait)
     raise anthropic_flt.Unreachable(url)
+
+
+def names(landmarks: dict) -> set[str]:
+    return {record.get("name") for record in landmarks["landmarks"]}
 
 
 def refresh(checkout: Path, out: Path, docs: str | None = None, fetcher=fetch) -> list[str]:
@@ -85,11 +95,15 @@ def refresh(checkout: Path, out: Path, docs: str | None = None, fetcher=fetch) -
         try:
             problem = anthropic_flt.docs_problem(docs, landmarks, fetcher)
         except anthropic_flt.Unreachable as error:
+            # The last record's check holds only for the landmarks it checked.
             last = out / "source.json"
-            kept = json.loads(last.read_text(encoding="utf-8")).get("docs") if last.is_file() else None
+            linked = last.is_file() and json.loads(last.read_text(encoding="utf-8")).get("docs") == docs
+            same = previous.is_file() and names(json.loads(previous.read_text(encoding="utf-8"))) == names(landmarks)
             print(f"The documentation site does not answer at {error}; "
-                  + ("keeping the last record's link." if kept == docs else "not linking it."), file=sys.stderr)
-            if kept == docs:
+                  + ("keeping the last record's link." if linked and same else
+                     "its landmarks differ from the last record's, so not linking it." if linked else
+                     "not linking it."), file=sys.stderr)
+            if linked and same:
                 source["docs"] = docs
         else:
             if problem:

@@ -203,8 +203,10 @@ states.
    theorem a step opens with, when the web pages place it in that step, takes
    the step's name as its title; the web pages put `fermat_last_theorem` in a
    stage before the first step, so it opens part 1. The section on the exact
-   strength of the named steps is quoted by its "Proved:" clauses only: the map
-   records what the repository proves, not what it leaves out.
+   strength of the named steps is quoted by its "Proved:" clauses, cut with …
+   where the text goes on, and by its entries that say neither what is proved
+   nor what is not, whole: the map records what the repository proves, not what
+   it leaves out.
 2. Where a landmark's name, or another declaration its statement file makes, is
    also a Lean name in the Imperial FLT chapter, its article links that article.
    The names are compared as written.
