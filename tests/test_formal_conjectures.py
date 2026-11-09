@@ -78,7 +78,7 @@ end Erdos1
 WIKI = '''/-!
 # A conjecture on Wikipedia
 
-Some prose about it.
+Some prose about it, <https://example.org/autolink>.
 
 *References:*
 - [Wikipedia](https://en.wikipedia.org/wiki/Conjecture_(mathematics))
@@ -246,7 +246,8 @@ def test_an_article_quotes_its_module_docstring_and_has_a_card_per_statement(tmp
     assert "typo" not in page and "test_one" not in page
     assert fc.NO_DEPENDS in page
     wiki = files[Path("blueprint/roadmap/formal-conjectures/wikipedia/a-conjecture-on-wikipedia.md")]
-    assert "> Some prose about it.\n>\n> *References:*" in wiki and "erdosproblems.com" not in wiki
+    assert "> Some prose about it, <https://example.org/autolink>.\n>\n> *References:*" in wiki
+    assert "erdosproblems.com" not in wiki
     assert "- [Wikipedia](https://en.wikipedia.org/wiki/Conjecture_%28mathematics%29)" in wiki
 
 

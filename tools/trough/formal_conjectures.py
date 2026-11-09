@@ -235,8 +235,10 @@ def plain_link(url: str) -> str:
 
 
 def quote(markdown: str) -> str:
-    """Quoted Markdown as a blockquote, so its headings and lists stay inside the quote."""
-    return "\n".join(f"> {line}".rstrip() for line in safe(markdown).split("\n"))
+    """Quoted Markdown as a blockquote, so its headings and lists stay inside the quote. A `<` opens no HTML,
+    but an autolink (`<https://...>`) stays a link."""
+    text = re.sub(r"&lt;(https?://[^\s<>]*>)", r"<\1", safe(markdown))
+    return "\n".join(f"> {line}".rstrip() for line in text.split("\n"))
 
 
 def erdos_number(problem: dict) -> int | None:
