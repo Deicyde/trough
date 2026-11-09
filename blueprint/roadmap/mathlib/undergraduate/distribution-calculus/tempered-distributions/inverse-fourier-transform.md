@@ -16,5 +16,5 @@ FourierTransform.fourierInvCLM.{u_2, u_3, u_4} (R : Type u_2) (E : Type u_3) {F 
 ## Sources
 
 - [Mathlib documentation: `FourierTransform.fourierInvCLM`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/Notation.html#FourierTransform.fourierInvCLM)
-- [Source of `FourierTransform.fourierInvCLM` in Mathlib/Analysis/Fourier/Notation.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Fourier/Notation.lean#L190)
-- [Mathlib undergraduate list: Distribution calculus › Tempered distributions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L622)
+- [Source of `FourierTransform.fourierInvCLM` in Mathlib/Analysis/Fourier/Notation.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Fourier/Notation.lean#L198)
+- [Mathlib undergraduate list: Distribution calculus › Tempered distributions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L622)

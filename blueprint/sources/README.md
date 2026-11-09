@@ -4,7 +4,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Mathlib's curated lists
 
-- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 1b1ccf4b](https://github.com/leanprover-community/mathlib4/tree/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs), Apache-2.0.
+- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 9bac2d06](https://github.com/leanprover-community/mathlib4/tree/9bac2d0692944a775113f7c130fd5e5b4608a854/docs), Apache-2.0.
 - `data/mathlib/concept-deps.json`: each listed declaration's kind, docstring, signature and nearest listed dependencies, written by `lean/ConceptDeps.lean` in GitHub Actions.
 - `data/thousand-plus.json`: subject classification and Wikipedia pages of the 1000+ theorems, from [1000-plus/1000-plus.github.io](https://github.com/1000-plus/1000-plus.github.io) at 8e04b97d, released into the public domain.
 
@@ -24,6 +24,14 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ## Formal Frontier
 
 - `data/ff/<name>.json`: for each of the 44 Formal Frontier libraries, the facts, highlights and main results of its formalization.yaml and the headline results of its README, read at the commit the file records, with the line and kind of each named declaration its file declares, from [FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source text, without Lean.
+
+## Formal Conjectures
+
+- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and its counts of test and API statements, with the FC100 lists, from [google-deepmind/formal-conjectures at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0. They are read from the source text, without Lean.
+
+## Lean Pool
+
+- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes and main results of each project card in [LeanPool/lean-pool at 2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0, with the note, its copyright line or a remark about it, that its NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the commit, its Lean toolchain and Mathlib.
 
 ## Fermat's Last Theorem (Anthropic)
 
@@ -50,7 +58,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ### Libraries
 
-- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at d995ef5d3066: Statements (mostly sorry'd) of open conjectures: ErdosProblems 1000 files, OEIS 250, Wikipedia 184, WrittenOnTheWallII 64, GreensOpenProblems 61, Paper 52, Arxiv 41, MathOverflow, Kourovka, Books.
+- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 2055e5adadae: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
 - [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
 - [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
@@ -61,7 +69,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) at 6e837e753555: Its README states that it is a complete, machine-checked proof of FLT via Frey, Serre, Ribet, Wiles and Taylor-Wiles, from the three standard axioms, checked by comparator and the nanoda kernel.
 - [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Lean proofs of results from about 721 model-generated research manuscripts (README says ~42% of top-line results are formalized). Includes Hodge for CM abelian varieties, BSD cases, and counterexamples (Hadwiger, Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
-- [Lean Pool](https://github.com/LeanPool/lean-pool) at edbe5bd56f47: A pool of 317 permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
+- [Lean Pool](https://github.com/LeanPool/lean-pool) at 2b205bf90401: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
 
 ### Formal Frontier libraries
 

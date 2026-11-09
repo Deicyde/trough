@@ -24,5 +24,5 @@ deriv_comp.{u, u_1} {𝕜 : Type u} [NontriviallyNormedField 𝕜] (x : 𝕜) {�
 ## Sources
 
 - [Mathlib documentation: `deriv_comp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Deriv/Comp.html#deriv_comp)
-- [Source of `deriv_comp` in Mathlib/Analysis/Calculus/Deriv/Comp.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/Deriv/Comp.lean#L299)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L316)
+- [Source of `deriv_comp` in Mathlib/Analysis/Calculus/Deriv/Comp.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/Deriv/Comp.lean#L299)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L316)

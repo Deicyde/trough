@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, blueprints, catalog, ff, links, mathlib, tauceti, wiki
+from trough import anthropic_flt, blueprints, catalog, ff, formal_conjectures, lean_pool, links, mathlib, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -86,13 +86,17 @@ def generate() -> dict[Path, str]:
         chapters["tauceti"] = "tauceti/README.md"
         lean_links["tauceti"] = dict(sorted(tau_links.items()))
         blueprint_rows.append(("Tau Ceti", "DECOMPOSED",
-                               f"[{tau_stats['articles']:,} declarations its roadmaps name](../roadmap/tauceti/README.md), "
-                               "one article per declaration."))
+                               f"[{tau_stats['articles']:,} articles on {tau_stats['declarations']:,} declarations]"
+                               "(../roadmap/tauceti/README.md) its roadmaps' statuses name or its docstrings name as "
+                               "results, the forms of one result in one article."))
         print(
-            f"tauceti: {tau_stats['articles']} articles ({tau_stats.get('theorems', 0)} theorems, "
-            f"{tau_stats.get('definitions', 0)} definitions, {tau_stats.get('sorry', 0)} reaching sorry) in "
-            f"{tau_stats['roadmaps']} roadmaps; {tau_stats['missing']} names missing at the pin; "
-            f"{tau_stats.get('statement_edges', 0)} statement and {tau_stats.get('proof_edges', 0)} proof edges",
+            f"tauceti: {tau_stats['articles']} articles on {tau_stats['declarations']} declarations "
+            f"({tau_stats.get('theorems', 0)} theorems, {tau_stats.get('definitions', 0)} definitions, "
+            f"{tau_stats.get('sorry', 0)} reaching sorry; {tau_stats['named']} named by statuses, {tau_stats['chosen']} "
+            f"more by docstrings; {tau_stats.get('forms', 0)} articles with several forms) in {tau_stats['parts']} parts, "
+            f"{tau_stats['roadmaps']} roadmap and {tau_stats.get('areas', 0)} area sections; {tau_stats['missing']} names "
+            f"missing at the pin; {tau_stats.get('statement_edges', 0)} statement and "
+            f"{tau_stats.get('proof_edges', 0)} proof edges",
             file=sys.stderr,
         )
     ff_libraries = ff.load_libraries(DATA, libraries)
@@ -127,6 +131,47 @@ def generate() -> dict[Path, str]:
             f"{ff_stats['headline_unnamed']} link no declaration, {ff_stats['headline_not_found']} one not found, "
             f"{ff_stats['headline_duplicates']} one with an article; {ff_stats['main_results_found']} of "
             f"{ff_stats['main_results']} main results found",
+            file=sys.stderr,
+        )
+    fc_data = formal_conjectures.load(DATA)
+    if fc_data:
+        fc_built, fc_links = formal_conjectures.chapter(fc_data)
+        assign_paths(fc_built.root, ROADMAP / "formal-conjectures")
+        blueprints.resolve(fc_built, VAULT)
+        files.update(render_tree(fc_built.root, VAULT))
+        chapters["formal-conjectures"] = "formal-conjectures/README.md"
+        lean_links["formal-conjectures"] = fc_links
+        fc_stats = Counter(fc_built.stats)  # the chapter keeps no zero counts
+        blueprint_rows.append(("Formal Conjectures", "DECOMPOSED",
+                               f"[{fc_stats['articles']:,} problem files](../roadmap/formal-conjectures/README.md) that state "
+                               "a research or textbook statement, one article each, with a card per statement."))
+        print(
+            f"formal-conjectures: {fc_stats['articles']} articles of {fc_stats['problems']} problem files, "
+            f"{fc_stats['statements']} statements ({fc_stats['open']} open, {fc_stats['open proved']} open proved, "
+            f"{fc_stats['solved with proof']} solved with a proof link, {fc_stats['solved']} solved without, "
+            f"{fc_stats['solved proved']} solved proved, {fc_stats['textbook']} textbook stated, "
+            f"{fc_stats['textbook proved']} textbook proved) and {fc_stats['definition']} definitions; "
+            f"{fc_stats['test']} test and {fc_stats['api']} API statements counted; {fc_stats['subjects']} subjects; "
+            f"{fc_stats['subset_missing']} of {fc_stats['subset_names']} FC100 names without an article",
+            file=sys.stderr,
+        )
+    pool = lean_pool.load(DATA)
+    if pool:
+        pool_root, pool_stats, pool_parts = lean_pool.chapter(*pool)
+        assign_paths(pool_root, ROADMAP / "lean-pool")
+        files.update(render_tree(pool_root, VAULT))
+        chapters["lean-pool"] = "lean-pool/README.md"
+        for part, names in pool_parts:
+            # Keyed by the part's directory, as a name may be declared in more than one project.
+            if names:
+                lean_links[part.path.parent.relative_to(ROADMAP).as_posix()] = dict(sorted(names.items()))
+        blueprint_rows.append(("Lean Pool", "DECOMPOSED",
+                               f"[{pool_stats['articles']} project cards](../roadmap/lean-pool/README.md), one article "
+                               "per card."))
+        print(
+            f"lean-pool: {pool_stats['articles']} articles in {pool_stats['parts']} parts; "
+            f"{pool_stats['main_results_found']} of {pool_stats['main_results']} main results and "
+            f"{pool_stats['main_declarations_found']} of {pool_stats['main_declarations']} main declarations found",
             file=sys.stderr,
         )
     aflt = anthropic_flt.load(DATA)
@@ -170,7 +215,9 @@ def generate() -> dict[Path, str]:
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
         (tau.rev, tau.roadmap_rev) if tau and tau.deps else None,
         {library["id"]: record["rev"] for library, record in ff_libraries},
-        aflt[0] if aflt else None,
+        formal_conjectures=fc_data["rev"] if fc_data else None,
+        lean_pool=pool[0]["rev"] if pool else None,
+        anthropic_flt=aflt[0] if aflt else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

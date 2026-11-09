@@ -120,5 +120,5 @@ and that adically complete rings are Henselian, which covers $\mathbb{Z}_p$ as w
 ## Sources
 
 - [Mathlib documentation: `hensels_lemma`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Padics/Hensel.html#hensels_lemma)
-- [Source of `hensels_lemma` in Mathlib/NumberTheory/Padics/Hensel.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Padics/Hensel.lean#L460)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L150)
+- [Source of `hensels_lemma` in Mathlib/NumberTheory/Padics/Hensel.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Padics/Hensel.lean#L460)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L150)

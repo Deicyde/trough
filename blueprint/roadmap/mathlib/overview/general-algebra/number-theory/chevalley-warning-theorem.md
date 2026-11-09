@@ -122,5 +122,5 @@ proof of the Erdős–Ginzburg–Ziv theorem uses.
 ## Sources
 
 - [Mathlib documentation: `char_dvd_card_solutions`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/ChevalleyWarning.html#char_dvd_card_solutions)
-- [Source of `char_dvd_card_solutions` in Mathlib/FieldTheory/ChevalleyWarning.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/FieldTheory/ChevalleyWarning.lean#L173)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L149)
+- [Source of `char_dvd_card_solutions` in Mathlib/FieldTheory/ChevalleyWarning.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/ChevalleyWarning.lean#L173)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L149)

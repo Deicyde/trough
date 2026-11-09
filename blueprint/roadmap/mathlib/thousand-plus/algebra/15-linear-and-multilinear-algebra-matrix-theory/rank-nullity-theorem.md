@@ -19,8 +19,8 @@ LinearMap.rank_range_add_rank_ker.{u, u_1} {R : Type u_1} {M M₁ : Type u} [Rin
 ## Sources
 
 - [Mathlib documentation: `LinearMap.rank_range_add_rank_ker`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Dimension/RankNullity.html#LinearMap.rank_range_add_rank_ker)
-- [Source of `LinearMap.rank_range_add_rank_ker` in Mathlib/LinearAlgebra/Dimension/RankNullity.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/Dimension/RankNullity.lean#L81)
-- [1000+ theorems list: Q303402](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L356)
+- [Source of `LinearMap.rank_range_add_rank_ker` in Mathlib/LinearAlgebra/Dimension/RankNullity.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Dimension/RankNullity.lean#L80)
+- [1000+ theorems list: Q303402](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L356)
 - [1000+ theorems project: Q303402](https://1000-plus.github.io/all.html?length=-1#Q303402)
 - [Wikipedia: Rank–nullity theorem](https://en.wikipedia.org/wiki/Rank%E2%80%93nullity_theorem)
 - [Wikidata: Q303402](https://www.wikidata.org/wiki/Q303402)

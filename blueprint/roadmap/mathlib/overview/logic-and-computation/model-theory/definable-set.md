@@ -16,5 +16,5 @@ Set.Definable.{u, v, w, u₁} {M : Type w} (A : Set M) (L : FirstOrder.Language)
 ## Sources
 
 - [Mathlib documentation: `Set.Definable`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/Definability.html#Set.Definable)
-- [Source of `Set.Definable` in Mathlib/ModelTheory/Definability.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/ModelTheory/Definability.lean#L52)
-- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L640)
+- [Source of `Set.Definable` in Mathlib/ModelTheory/Definability.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/ModelTheory/Definability.lean#L52)
+- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L640)

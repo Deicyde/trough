@@ -18,5 +18,5 @@ supplied for true `εNFA`'s.
 ## Sources
 
 - [Mathlib documentation: `εNFA`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/EpsilonNFA.html#%CE%B5NFA)
-- [Source of `εNFA` in Mathlib/Computability/EpsilonNFA.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/EpsilonNFA.lean#L34)
-- [Mathlib overview: Logic and computation › Formal languages](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L618)
+- [Source of `εNFA` in Mathlib/Computability/EpsilonNFA.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/EpsilonNFA.lean#L34)
+- [Mathlib overview: Logic and computation › Formal languages](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L618)

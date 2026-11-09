@@ -137,10 +137,10 @@ statement for every coprime pair, including the degenerate pair $0$ and $1$.
 ## Sources
 
 - [Mathlib documentation: `Ideal.quotientInfRingEquivPiQuotient`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient/Operations.html#Ideal.quotientInfRingEquivPiQuotient)
-- [Source of `Ideal.quotientInfRingEquivPiQuotient` in Mathlib/RingTheory/Ideal/Quotient/Operations.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/Ideal/Quotient/Operations.lean#L245)
-- [Mathlib overview: General algebra › Ideals and quotients](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L79)
-- [Mathlib undergraduate list: Ring Theory › Ideals and Quotients](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L136)
-- [1000+ theorems list: Q193878](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L171)
+- [Source of `Ideal.quotientInfRingEquivPiQuotient` in Mathlib/RingTheory/Ideal/Quotient/Operations.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Ideal/Quotient/Operations.lean#L245)
+- [Mathlib overview: General algebra › Ideals and quotients](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L79)
+- [Mathlib undergraduate list: Ring Theory › Ideals and Quotients](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L136)
+- [1000+ theorems list: Q193878](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L171)
 - [1000+ theorems project: Q193878](https://1000-plus.github.io/all.html?length=-1#Q193878)
 - [Wikipedia: Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 - [Wikidata: Q193878](https://www.wikidata.org/wiki/Q193878)

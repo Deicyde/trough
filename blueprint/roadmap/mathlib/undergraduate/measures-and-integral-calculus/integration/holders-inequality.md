@@ -25,5 +25,5 @@ NNReal.lintegral_mul_le_Lp_mul_Lq.{u_1} {α : Type u_1} [MeasurableSpace α]
 ## Sources
 
 - [Mathlib documentation: `NNReal.lintegral_mul_le_Lp_mul_Lq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/MeanInequalities.html#NNReal.lintegral_mul_le_Lp_mul_Lq)
-- [Source of `NNReal.lintegral_mul_le_Lp_mul_Lq` in Mathlib/MeasureTheory/Integral/MeanInequalities.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/MeanInequalities.lean#L479)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L523)
+- [Source of `NNReal.lintegral_mul_le_Lp_mul_Lq` in Mathlib/MeasureTheory/Integral/MeanInequalities.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/MeanInequalities.lean#L479)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L523)

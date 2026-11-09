@@ -1,0 +1,22 @@
+# Hodge structures (pure, mixed, and polarized)
+
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/HodgeStructures/README.md) names as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+
+- [Categorical semisimplicity of polarizable rational Hodge structures](categorical-semisimplicity-of-polarizable-ration.md)
+- [Semisimplicity of polarizable rational Hodge structures](semisimplicity-of-polarizable-rational-hodge-str.md)
+- [The Hodge decomposition](the-hodge-decomposition.md)
+- [The Hodge numbers partition the dimension](the-hodge-numbers-partition-the-dimension.md)
+- [Deligne's theorem (`TauCeti.Hodge.MixedHodgeStructure.isInternal_deligneSplittingFamily`)](delignes-theorem-tauceti-hodge-mixedhodgestructu.md)
+- [Strictness of a morphism of mixed Hodge structures for the Hodge filtration](strictness-of-a-morphism-of-mixed-hodge-structur.md)
+- [TauCeti.Hodge.MixedHodgeStructureCat.abelian](tauceti-hodge-mixedhodgestructurecat-abelian.md)
+- [Deligne's fine conjugation relation](delignes-fine-conjugation-relation.md)
+- [When `V` is flat over `ℤ`, the Riemann forms for `J` are exactly the forms polarizing its weight-one Hodge structure](when-v-is-flat-over-z-the-riemann-forms-for-j-ar.md)
+- [Every form polarizing the weight-one Hodge structure of `J` is a Riemann form for `J`, with no flatness assumption](every-form-polarizing-the-weight-one-hodge-struc.md)
+- [Self-duality is invertible up to a nonzero integer](self-duality-is-invertible-up-to-a-nonzero-integ.md)
+- [The dual of a polarizable pure Hodge structure is polarizable](the-dual-of-a-polarizable-pure-hodge-structure-i.md)
+- [Polarizable pure Hodge structures are closed under internal homs](polarizable-pure-hodge-structures-are-closed-und.md)
+- [TauCeti.Hodge.HodgeStructureOn](tauceti-hodge-hodgestructureon.md)
+- [TauCeti.Hodge.IsPolarization](tauceti-hodge-ispolarization.md)
+- [TauCeti.Hodge.Polarization.Q](tauceti-hodge-polarization-q.md)
+- [IsBaseChange.bilinForm](isbasechange-bilinform.md)
+- [TauCeti.Hodge.PolarizableHodgeStructureCat](tauceti-hodge-polarizablehodgestructurecat.md)

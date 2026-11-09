@@ -28,5 +28,5 @@ AntitoneOn.tsum_le_integral {f : ℝ → ℝ} (anti : AntitoneOn f (Set.Ici 0))
 ## Sources
 
 - [Mathlib documentation: `AntitoneOn.tsum_le_integral`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SumIntegralComparisons.html#AntitoneOn.tsum_le_integral)
-- [Source of `AntitoneOn.tsum_le_integral` in Mathlib/Analysis/SumIntegralComparisons.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SumIntegralComparisons.lean#L273)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L301)
+- [Source of `AntitoneOn.tsum_le_integral` in Mathlib/Analysis/SumIntegralComparisons.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SumIntegralComparisons.lean#L273)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L301)

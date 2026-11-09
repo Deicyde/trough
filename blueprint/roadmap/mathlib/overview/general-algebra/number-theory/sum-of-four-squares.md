@@ -117,10 +117,10 @@ counting lemma about two quadratic polynomials over a finite field of odd order.
 ## Sources
 
 - [Mathlib documentation: `Nat.sum_four_squares`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/SumFourSquares.html#Nat.sum_four_squares)
-- [Source of `Nat.sum_four_squares` in Mathlib/NumberTheory/SumFourSquares.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/SumFourSquares.lean#L201)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L143)
-- [Freek Wiedijk's 100 theorems, no. 19](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L95)
-- [1000+ theorems list: Q756946](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L851)
+- [Source of `Nat.sum_four_squares` in Mathlib/NumberTheory/SumFourSquares.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/SumFourSquares.lean#L201)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L143)
+- [Freek Wiedijk's 100 theorems, no. 19](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L95)
+- [1000+ theorems list: Q756946](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L851)
 - [1000+ theorems project: Q756946](https://1000-plus.github.io/all.html?length=-1#Q756946)
 - [Wikipedia: Lagrange's four-square theorem](https://en.wikipedia.org/wiki/Lagrange's_four-square_theorem)
 - [Wikidata: Q756946](https://www.wikidata.org/wiki/Q756946)

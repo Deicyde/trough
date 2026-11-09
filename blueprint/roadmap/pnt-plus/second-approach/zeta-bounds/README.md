@@ -48,6 +48,6 @@ Now in Mathlib:
 - [LogDerivZetaHolcSmallT](part-02/logderivzetaholcsmallt.md)
 - [LogDerivZetaHolcLargeT9](part-02/logderivzetaholclarget9.md)
 
-## [Part 3 of 3](part-03/README.md)
+## [LogDerivZetaBndUnif99](part-03/README.md)
 
 - [LogDerivZetaBndUnif99](part-03/logderivzetabndunif99.md)

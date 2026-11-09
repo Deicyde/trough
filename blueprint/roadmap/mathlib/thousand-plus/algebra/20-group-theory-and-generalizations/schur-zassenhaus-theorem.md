@@ -25,8 +25,8 @@ Subgroup.exists_left_complement'_of_coprime.{u} {G : Type u} [Group G] {N : Subg
 ## Sources
 
 - [Mathlib documentation: `Subgroup.exists_left_complement'_of_coprime`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/SchurZassenhaus.html#Subgroup.exists_left_complement'_of_coprime)
-- [Source of `Subgroup.exists_left_complement'_of_coprime` in Mathlib/GroupTheory/SchurZassenhaus.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/SchurZassenhaus.lean#L294)
-- [1000+ theorems list: Q2226800](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2100)
+- [Source of `Subgroup.exists_left_complement'_of_coprime` in Mathlib/GroupTheory/SchurZassenhaus.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/SchurZassenhaus.lean#L294)
+- [1000+ theorems list: Q2226800](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2100)
 - [1000+ theorems project: Q2226800](https://1000-plus.github.io/all.html?length=-1#Q2226800)
 - [Wikipedia: Schur–Zassenhaus theorem](https://en.wikipedia.org/wiki/Schur%E2%80%93Zassenhaus_theorem)
 - [Wikidata: Q2226800](https://www.wikidata.org/wiki/Q2226800)

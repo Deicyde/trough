@@ -88,7 +88,7 @@ invertible linear maps of a vector space. Morphisms of other algebraic
 structures follow the same pattern: a [ring morphism](trough:RingHom) preserves
 addition, multiplication and the unit, and a [linear map](trough:LinearMap)
 preserves addition and scalar multiplication. The
-[abelianization](trough:Abelianization) and [free groups](trough:FreeGroup)
+[abelianization](trough:Group.Abelianization) and [free groups](trough:FreeGroup)
 are characterized by universal properties:
 morphisms from the abelianization of $G$ to an abelian group $A$ correspond to morphisms $G \to A$,
 and morphisms from the free group on a set $S$ to a group $H$ correspond to arbitrary maps $S \to H$.

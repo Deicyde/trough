@@ -13,10 +13,12 @@ Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
 gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
-roadmaps' status files name, five research projects from their
-leanblueprints (Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+),
-the Formal Frontier libraries from their headline results, and Anthropic's FLT
-from the landmark theorems of its proof.
+roadmaps' status files name and the results its docstrings name, five
+research projects from their leanblueprints (Imperial's FLT, PFR, Equational
+Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
+headline results, Formal Conjectures from its problem files, Lean Pool from
+its project cards, and Anthropic's FLT from the landmark theorems of its
+proof.
 
 ## The Mathlib map
 
@@ -100,30 +102,62 @@ page, and references print it; tables, listings and figure captions are kept.
 
 Tau Ceti's human-written roadmaps live in TauCetiRoadmap, and most carry a
 generated `STATUS.md` whose "Named results" and "Notable definitions and
-infrastructure" link declarations in Tau Ceti's documentation. Those links pick
-the chapter's articles, one per declaration Tau Ceti has at the pinned commit,
-in a section per roadmap titled from its README; a roadmap without a status, or
-whose status names nothing Tau Ceti has, has no section. The rest of a roadmap, its
-plan, its `Suggested.lean` signatures and its frontier, says what Tau Ceti may
-add and is left out, and so is the status files' prose, which a model writes
-and Tau Ceti does not check. An article's text is its declaration's docstring
-and signature, titled by the docstring's bold lead when it has one.
+infrastructure" link declarations in Tau Ceti's documentation. A model writes
+those files and names at most five results in each, so the chapter maps two
+kinds of declaration that Tau Ceti has at the pinned commit: those the statuses
+link, and those whose own docstrings name a result. A theorem's docstring names
+one when its bold title's head clause, the title before its first qualifier, is
+a result named after a person ("Burnside's pᵃqᵇ theorem", "Schur-Weyl duality",
+"Serre duality" when another title writes "Serre's", "Hille--Yosida for
+contraction semigroups"), has "theorem" within its first six words, or is at
+most three words pinned to a textbook theorem ("Global existence (Milne VII,
+Theorem 9.5)"). A result noun other than theorem, lemma or conjecture counts
+only where it ends its phrase and is not a predicate, so "the Serre duality
+pairing" and "The Künneth map is an isomorphism" do not. A definition counts
+when its title names a theorem it carries as data. The four theorems Tau Ceti's website
+shows are always in. The rest of a roadmap, its plan, its `Suggested.lean`
+signatures and its frontier, says what Tau Ceti may add and is left out, and so
+is the status files' prose, which a model writes and Tau Ceti does not check.
+
+The forms of one result in one area, a module's first two levels under
+`TauCeti`, such as "Menger's theorem for fans" and "Menger's theorem for fans,
+predicate form", share an article. A declaration a status names leads its own,
+and each form no status names joins the one whose title shares the most words
+with its own; otherwise the lead is a form the website shows, then one not
+titled by names alone ("Perron–Frobenius"), the form titled by the result's
+name alone, or the one with the shortest title that is not a Lean name. The
+others are listed under *Other forms*. Parts follow the library's top-level areas, those with fewer than ten
+articles together as *Other Areas*. A roadmap whose status names a declaration
+has a section in the part with most of its articles, holding what the status
+names and the named results in a module where only its status names
+declarations, or else in a folder of modules below the areas where only it
+names two or more; the other named results have a section for each area, and an
+area with fewer than three joins its part's *Other results*. An article's text
+is its lead's docstring and signature, titled by the docstring's bold opening,
+or by the sentence its bold words begin when the rest of that sentence is short
+and holds no link.
 
 1. `tools/refresh_tauceti.py CHECKOUT` writes `data/tauceti/roadmaps.json`
    from a TauCetiRoadmap checkout: each roadmap's title and the names its
    status links in those two sections, nothing else.
 2. The **Tau Ceti data** workflow fetches Tau Ceti at the commit
-   `data/tauceti/source.json` pins, with its build cache, and runs
-   `lean/tauceti/TauCetiDeps.lean` over every Tau Ceti module. For each name
-   that resolves it writes the module, kind, line, docstring, signature,
-   whether the proof reaches `sorry`, and the nearest named declarations the
-   statement reaches through unnamed statements and the proof through any
-   chain of unnamed Tau Ceti declarations; a name that does not resolve is
-   listed as missing and has no article, as is one that now resolves outside
-   Tau Ceti. A theorem whose proof reaches `sorry`, itself or through another
-   named declaration, is recorded as stated, not proved, and its article says
-   so.
-3. A change to either pin file runs the workflow too, so the committed dump
+   `data/tauceti/source.json` pins, with its build cache. It runs
+   `lean/tauceti/TauCetiSurvey.lean` over every Tau Ceti module, which writes
+   each declaration's kind, module and the start of its docstring, and
+   `tools/select_tauceti.py` chooses from those (`tools/trough/tauceti_select.py`
+   has the rules) into `data/tauceti/selection.json`, with the proposition a
+   chosen theorem is stated from when it lives in that proposition's namespace.
+3. Then `lean/tauceti/TauCetiDeps.lean` reads the names the statuses give and
+   the chosen ones. For each name that resolves it writes the module, kind, line,
+   docstring, signature, whether the proof reaches `sorry`, and the nearest mapped
+   declarations the statement reaches through unmapped statements and the proof
+   through any chain of unmapped Tau Ceti declarations; a name that does not
+   resolve is listed as missing and has no article, as is one that now resolves
+   outside Tau Ceti. A theorem whose proof reaches `sorry`, itself or through
+   another mapped declaration, is recorded as stated, not proved, and its article
+   says so; one whose binders take the proposition it is stated from says what it
+   assumes.
+4. A change to either pin file runs the workflow too, so the committed dump
    always matches the pins. The weekly run, or a dispatch with `newest`, moves both pins: Tau Ceti to
    its newest main commit whose CI passed, so its cache exists, and the
    roadmaps to their newest commit.
@@ -175,6 +209,94 @@ this chapter yet, so its articles have no edges.
    refresh writes nothing, and the workflow fails, when a library is not
    Apache-2.0 or its record finds under half the declarations the last one
    found.
+
+## The Formal Conjectures chapter
+
+[Formal Conjectures](https://github.com/google-deepmind/formal-conjectures),
+from Google DeepMind, states open and solved problems in Lean, a file per
+problem in a folder per source: Erdős problems, OEIS, Wikipedia, papers and
+others. Every statement carries one `category` attribute (research open,
+research solved, textbook, API or test), most carry `AMS` subject codes, and
+some `formal_proof` links to proofs elsewhere. The chapter has a part per source
+folder, the Erdős problems in sections by hundreds, an article per problem file
+that states a research or textbook statement, and in it a card per such
+statement: whether it is open, solved with or without a proof elsewhere, or
+proved here, its docstring, its Lean statement and its line in the source. Test
+and API statements are counted in their problem's article, not shown, and a
+file that states neither kind has no article. Two indexes link the articles: a
+page per top-level AMS subject, and a page per FC100 list, Formal Conjectures'
+benchmark sets. No Lean runs for this chapter, so its articles have no edges.
+
+1. `tools/refresh_formal_conjectures.py CHECKOUT` reads a checkout and writes
+   `data/formal-conjectures/source.json`, the commit, and `problems.json`: each
+   problem file's title and module docstring, its research and textbook
+   statements, its counts of test and API statements, the FC100 lists, and the
+   names Formal Conjectures gives the AMS codes.
+2. `tools/trough/leansource.py` reads each file as it does for Formal Frontier,
+   and gives each declaration what is written before it: its docstring and the
+   attributes of its `@[...]` list, which may span lines. A statement is a named
+   declaration whose list holds one category; its Lean statement runs to the
+   `:=` (or `where`) that starts its proof, and it is proved here when the text
+   from there on holds no `sorry`, which, like Formal Conjectures' own
+   `hasSorryFreeProof`, says nothing of the statements that proof uses. A
+   statement with no name, an `example`, or a `private` one is left out, as
+   Formal Conjectures' site leaves them out.
+3. The **Formal Conjectures data** workflow (`.github/workflows/fc-data.yml`)
+   fetches the repository at the commit `source.json` pins, as a blobless
+   sparse checkout of the files the refresh reads, runs the refresh,
+   regenerates the pages and runs the tests; on a pull request it fails when
+   the committed data differ from what the pin gives. The weekly run, or a
+   dispatch with `newest`, moves the pin to the newest main commit whose build
+   passed. A refresh writes nothing, and the workflow fails, when the repository
+   is not Apache-2.0, when its checkout gives no AMS subject names or lacks a
+   file the commit lists, when a declaration with a category does not read (its
+   attributes don't, it has two categories or no `:=`, or its file's scopes
+   don't close), naming each, or when it keeps under half the statements the
+   last record kept.
+
+## The Lean Pool chapter
+
+[Lean Pool](https://github.com/LeanPool/lean-pool) keeps Lean projects outside
+Mathlib's scope, each in a directory of its own under `LeanPool/` with a card,
+`LeanPool/projects/<slug>.yaml`: its title, summary, authors, sources, license,
+provenance, MSC2020 codes and main results, each a declaration with an informal
+statement. The chapter has a section per top-level MSC2020 class, the class of
+the first code a card lists, titled by its MSC2020 name, and an article per
+card, titled by the card's title. An article quotes the card's summary, names
+the project's authors, links its sources (DOI, then arXiv, then URL, then a
+paper, manuscript, proof or problem page the card links), with the card's
+citation, mathematical source, background and notes on them, and its own
+repository at the commit the card gives, says who wrote its Lean proofs as the
+card's provenance does in Lean Pool's words, gives its license, quoting the
+copyright line or note Lean Pool's notice file keeps for a project published
+under MIT, and lists its main results: each informal statement quoted, with its
+declaration linked to Lean Pool's
+[documentation](https://leanpool.github.io/lean-pool/) and to its line at the
+pin when the scan below finds it. A main result the scan does not find keeps
+its statement and says so. The articles show no Lean signatures and have no
+edges, which need Lean, and no Lean runs for this chapter.
+
+1. `tools/refresh_lean_pool.py CHECKOUT` reads a checkout of Lean Pool and
+   writes `data/lean-pool/source.json`, the commit with its Lean toolchain and
+   Mathlib, and `data/lean-pool/projects.json`, the cards with the notes its
+   `NOTICE.extra.yml` keeps for MIT projects. For each main result it looks for
+   the declaration in the project's `.lean` files with `tools/trough/leansource.py`,
+   as the Formal Frontier chapter does, and records its module, line and kind
+   and whether its text holds `sorry`; a name declared in two of the project's
+   files is left out, since the project imports all of them together and Lean
+   would refuse it. Lean Pool's CI checks that each card's main declarations
+   exist, so a main declaration the scan misses is a gap in the scan.
+2. The **Lean Pool data** workflow (`.github/workflows/lean-pool-data.yml`)
+   fetches Lean Pool at the commit `data/lean-pool/source.json` pins, as a
+   blobless sparse checkout of the cards and the `.lean` files, runs the
+   refresh, regenerates the pages and runs the tests; on a pull request it
+   fails when the committed data differ from what the pin gives. The weekly
+   run, or a dispatch with `newest`, moves the pin to Lean Pool's newest main
+   commit whose Lean CI passed. A refresh writes nothing, and the workflow
+   fails, when Lean Pool is not Apache-2.0, a card lacks what the chapter reads,
+   has a license other than Apache-2.0 or MIT or names an entry module the
+   checkout lacks, or the scan places under half the main results the last
+   record placed.
 
 ## The Anthropic FLT chapter
 
@@ -288,8 +410,15 @@ public domain. `data/tauceti/roadmaps.json` comes from
 docstrings and signatures in `data/tauceti/deps.json` from
 [Tau Ceti](https://github.com/TauCetiProject/TauCeti), both Apache-2.0. The
 text quoted in `data/ff/` comes from the formalization.yaml and README of each
-[Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0, and
-the text quoted in `data/anthropic-flt/` from the PROOF-PATH.md,
+[Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0. The
+docstrings and Lean statements in `data/formal-conjectures/` come from
+[Formal Conjectures](https://github.com/google-deepmind/formal-conjectures)
+(Google DeepMind), Apache-2.0; Formal Conjectures asks that its Erdős
+problems' docstrings follow [erdosproblems.com](https://www.erdosproblems.com).
+The text in `data/lean-pool/` comes from the project cards and
+`NOTICE.extra.yml` of [Lean Pool](https://github.com/LeanPool/lean-pool),
+Apache-2.0; each article names its project's authors.
+The text quoted in `data/anthropic-flt/` comes from the PROOF-PATH.md,
 formalization.yaml and `Theorems/` files of
 [anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem),
 Apache-2.0.

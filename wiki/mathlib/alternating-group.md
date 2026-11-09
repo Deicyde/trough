@@ -69,7 +69,7 @@ groups, so only the number of letters matters.
   it is the commutator subgroup of $S_n$.
   The second statement holds for every $n$, since $S_n / A_n$ is abelian and the
   commutators of transpositions produce all 3-cycles. In particular the
-  [abelianization](trough:Abelianization) of $S_n$ is $S_n / A_n$, of order two
+  [abelianization](trough:Group.Abelianization) of $S_n$ is $S_n / A_n$, of order two
   when $n \ge 2$.
 - **Transitivity.** The action of $A_n$ on the $n$ letters
   is $(n - 2)$-fold transitive: any

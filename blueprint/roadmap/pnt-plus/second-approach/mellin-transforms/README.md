@@ -23,6 +23,6 @@
 - [MellinOfSmooth1c](part-01/mellinofsmooth1c.md)
 - [Smooth1ContinuousAt](part-01/smooth1continuousat.md)
 
-## [Part 2 of 2](part-02/README.md)
+## [SmoothExistence](part-02/README.md)
 
 - [SmoothExistence](part-02/smoothexistence.md)

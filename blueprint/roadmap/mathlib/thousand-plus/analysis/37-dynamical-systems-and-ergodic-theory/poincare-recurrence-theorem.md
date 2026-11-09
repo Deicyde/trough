@@ -26,8 +26,8 @@ MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem.{u_1} {α : Type u_1}
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Dynamics/Ergodic/Conservative.html#MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem)
-- [Source of `MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem` in Mathlib/Dynamics/Ergodic/Conservative.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Dynamics/Ergodic/Conservative.lean#L156)
-- [1000+ theorems list: Q226014](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L247)
+- [Source of `MeasureTheory.Conservative.ae_mem_imp_frequently_image_mem` in Mathlib/Dynamics/Ergodic/Conservative.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Dynamics/Ergodic/Conservative.lean#L156)
+- [1000+ theorems list: Q226014](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L247)
 - [1000+ theorems project: Q226014](https://1000-plus.github.io/all.html?length=-1#Q226014)
 - [Wikipedia: Poincaré recurrence theorem](https://en.wikipedia.org/wiki/Poincar%C3%A9_recurrence_theorem)
 - [Wikidata: Q226014](https://www.wikidata.org/wiki/Q226014)

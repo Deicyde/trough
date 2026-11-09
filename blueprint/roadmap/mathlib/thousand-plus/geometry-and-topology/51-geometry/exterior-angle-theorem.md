@@ -24,8 +24,8 @@ EuclideanGeometry.exterior_angle_eq_angle_add_angle.{u_1, u_2} {V : Type u_1} {P
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.exterior_angle_eq_angle_add_angle`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Triangle.html#EuclideanGeometry.exterior_angle_eq_angle_add_angle)
-- [Source of `EuclideanGeometry.exterior_angle_eq_angle_add_angle` in Mathlib/Geometry/Euclidean/Triangle.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Euclidean/Triangle.lean#L325)
-- [1000+ theorems list: Q5421989](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3170)
+- [Source of `EuclideanGeometry.exterior_angle_eq_angle_add_angle` in Mathlib/Geometry/Euclidean/Triangle.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Euclidean/Triangle.lean#L325)
+- [1000+ theorems list: Q5421989](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3170)
 - [1000+ theorems project: Q5421989](https://1000-plus.github.io/all.html?length=-1#Q5421989)
 - [Wikipedia: Exterior angle theorem](https://en.wikipedia.org/wiki/Exterior_angle_theorem)
 - [Wikidata: Q5421989](https://www.wikidata.org/wiki/Q5421989)

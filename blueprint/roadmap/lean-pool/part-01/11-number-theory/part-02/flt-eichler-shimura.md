@@ -1,0 +1,42 @@
+---
+declaration: theorem
+origin: cited
+lean: HeckeEis.exists_eichlerShimura_heckeEquivariant, WeierstrassCurve.tateModuleRep_charpoly_frobenius, WeierstrassCurve.isogenyEnd_eq_zsmul_of_transcendental_j, ModularCurve.x0_modularPolynomialPresentation, ModularCurve.LevelN.frickeFunctionFieldModel, ModularCurve.genusFF_gamma1_formula_of_isAlgClosed
+statement: formalized
+proof: formalized
+---
+
+# FLT Eichler-Shimura
+
+> Collects the definitions and theorems from the Anthropic Fermat's Last Theorem formalization needed for the Eichler-Shimura isomorphism, relating modular forms to cohomology of modular curves, and properties of the Galois representations of elliptic curves. Includes integer-multiplication results for elliptic curves with transcendental j-invariant, explicit function-field models of modular curves, and the genus formula for X_1(N).
+
+*Quoted from the card [LeanPool/projects/flt-eichler-shimura.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/flt-eichler-shimura.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+
+## Depends on
+
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
+
+## Main results
+
+The card lists 6 main results, each with its informal statement quoted from the card. The scan finds 6 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+
+- [`HeckeEis.exists_eichlerShimura_heckeEquivariant`](https://leanpool.github.io/lean-pool/LeanPool/FLTEichlerShimura/Theorems/Thm_HeckeEis_exists_eichlerShimura_heckeEquivariant.html#HeckeEis.exists_eichlerShimura_heckeEquivariant) (theorem; a main declaration), declared in [LeanPool/FLTEichlerShimura/Theorems/Thm_HeckeEis_exists_eichlerShimura_heckeEquivariant.lean, line 39](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura/Theorems/Thm_HeckeEis_exists_eichlerShimura_heckeEquivariant.lean#L39): “The Eichler-Shimura isomorphism for Gamma_0(N), identifying parabolic cohomology with binary-form coefficients with the direct sum of holomorphic and antiholomorphic cusp forms, with descended cohomological Hecke operators and compatibility with T_p away from the level and U_p at primes dividing it.”
+- [`WeierstrassCurve.tateModuleRep_charpoly_frobenius`](https://leanpool.github.io/lean-pool/LeanPool/FLTEichlerShimura/Theorems/Thm_WeierstrassCurve_tateModuleRep_charpoly_frobenius.html#WeierstrassCurve.tateModuleRep_charpoly_frobenius) (theorem; a main declaration), declared in [LeanPool/FLTEichlerShimura/Theorems/Thm_WeierstrassCurve_tateModuleRep_charpoly_frobenius.lean, line 163](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura/Theorems/Thm_WeierstrassCurve_tateModuleRep_charpoly_frobenius.lean#L163): “For an integral Weierstrass model W over Z and primes p and ell with ell distinct from p and not dividing the discriminant of W, Frobenius at ell acts on the p-adic Tate module of W over the algebraic closure of Q with characteristic polynomial X^2 - a_ell X + ell. This formulation assumes the expected cardinalities of the p-power torsion subgroups, proved elsewhere in this library.”
+- [`WeierstrassCurve.isogenyEnd_eq_zsmul_of_transcendental_j`](https://leanpool.github.io/lean-pool/LeanPool/FLTEichlerShimura/Theorems/Thm_WeierstrassCurve_isogenyEnd_eq_zsmul_of_transcendental_j.html#WeierstrassCurve.isogenyEnd_eq_zsmul_of_transcendental_j) (theorem; a main declaration), declared in [LeanPool/FLTEichlerShimura/Theorems/Thm_WeierstrassCurve_isogenyEnd_eq_zsmul_of_transcendental_j.lean, line 62](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura/Theorems/Thm_WeierstrassCurve_isogenyEnd_eq_zsmul_of_transcendental_j.lean#L62): “Over an algebraically closed field of characteristic zero, if an elliptic curve has j-invariant transcendental over the rationals, every point-group endomorphism induced by a finite integral self-embedding of its function field (represented by IsogenyEndDatum) is multiplication by an integer.”
+- [`ModularCurve.x0_modularPolynomialPresentation`](https://leanpool.github.io/lean-pool/LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_explicitFunctionFieldModels.html#ModularCurve.x0_modularPolynomialPresentation) (theorem; a main declaration), declared in [LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_explicitFunctionFieldModels.lean, line 219](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_explicitFunctionFieldModels.lean#L219): “For positive N, the modular-polynomial quotient Q(X)[Y]/(Phi_N(X,Y)) is isomorphic as a Q-algebra to the q-expansion function field of X_0(N), with X mapping to j(q) and Y to j(q^N).”
+- [`ModularCurve.LevelN.frickeFunctionFieldModel`](https://leanpool.github.io/lean-pool/LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_explicitFunctionFieldModels.html#ModularCurve.LevelN.frickeFunctionFieldModel) (theorem; a main declaration), declared in [LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_explicitFunctionFieldModels.lean, line 271](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_explicitFunctionFieldModels.lean#L271): “For positive N, j and the nonzero N-torsion Fricke functions generate the full modular function field of Gamma(N) over C. Explicitly, every Gamma(N)-invariant meromorphic function on the upper half-plane with at most exponential growth at every cusp is a quotient of elements of C[j, f_v], with nonzero denominator and equality on punctured neighbourhoods of every point. The fraction field carries the modular action with kernel generated by Gamma(N) and -I. Its fixed field is C(j), and it is Galois over C(j) of degree [SL_2(Z) : `<`Gamma(N), -I>].”
+- [`ModularCurve.genusFF_gamma1_formula_of_isAlgClosed`](https://leanpool.github.io/lean-pool/LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_twelve_mul_genusFF_laurentBaseChange_gamma1_add_six_mul_natCard_doubleCoset_eq_index_add_twelve_of_isAlgClosed.html#ModularCurve.genusFF_gamma1_formula_of_isAlgClosed) (theorem; a main declaration), declared in [LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_twelve_mul_genusFF_laurentBaseChange_gamma1_add_six_mul_natCard_doubleCoset_eq_index_add_twelve_of_isAlgClosed.lean, line 249](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura/Theorems/Thm_ModularCurve_twelve_mul_genusFF_laurentBaseChange_gamma1_add_six_mul_natCard_doubleCoset_eq_index_add_twelve_of_isAlgClosed.lean#L249): “For N >= 5 and any algebraically closed field K of characteristic zero, the genus g of the Gamma_1(N) q-expansion function field after base change from Q to K satisfies 12g + 6c = [SL_2(Z) : `<`Gamma_1(N), -I>] + 12, where c is the number of cusps of Gamma_1(N).”
+
+## Project
+
+- Authors: David Loeffler.
+- Project repository: [loefflerd/KN-scratch](https://github.com/loefflerd/KN-scratch).
+- Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
+- License: Apache-2.0.
+- MSC2020: 11F11.
+- In Lean Pool: [LeanPool/FLTEichlerShimura](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura), from the card [LeanPool/projects/flt-eichler-shimura.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/flt-eichler-shimura.yaml).
+
+## Sources
+
+- [Lean Pool at 2b205bf9: LeanPool/projects/flt-eichler-shimura.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/flt-eichler-shimura.yaml)
+- [Lean Pool at 2b205bf9: LeanPool/FLTEichlerShimura](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FLTEichlerShimura)

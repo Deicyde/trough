@@ -30,8 +30,8 @@ BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding.{u_1, u_
 ## Sources
 
 - [Mathlib documentation: `BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/TietzeExtension.html#BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding)
-- [Source of `BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding` in Mathlib/Topology/TietzeExtension.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/TietzeExtension.lean#L270)
-- [1000+ theorems list: Q1346677](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1621)
+- [Source of `BoundedContinuousFunction.exists_extension_norm_eq_of_isClosedEmbedding` in Mathlib/Topology/TietzeExtension.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/TietzeExtension.lean#L270)
+- [1000+ theorems list: Q1346677](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1621)
 - [1000+ theorems project: Q1346677](https://1000-plus.github.io/all.html?length=-1#Q1346677)
 - [Wikipedia: Tietze extension theorem](https://en.wikipedia.org/wiki/Tietze_extension_theorem)
 - [Wikidata: Q1346677](https://www.wikidata.org/wiki/Q1346677)

@@ -17,5 +17,5 @@ ConvexCone.positive.{u_2, u_4} (R : Type u_2) (M : Type u_4) [Semiring R] [Parti
 ## Sources
 
 - [Mathlib documentation: `ConvexCone.positive`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Convex/Cone/Basic.html#ConvexCone.positive)
-- [Source of `ConvexCone.positive` in Mathlib/Geometry/Convex/Cone/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Convex/Cone/Basic.lean#L557)
-- [Mathlib overview: Geometry › Convex geometry](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L490)
+- [Source of `ConvexCone.positive` in Mathlib/Geometry/Convex/Cone/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Convex/Cone/Basic.lean#L557)
+- [Mathlib overview: Geometry › Convex geometry](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L490)

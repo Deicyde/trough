@@ -36,11 +36,11 @@ ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub.{u_1, u_2} {Ω : Ty
 ## Sources
 
 - [Mathlib documentation: `ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/CentralLimitTheorem.html#ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub)
-- [Source of `ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub` in Mathlib/Probability/CentralLimitTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Probability/CentralLimitTheorem.lean#L117)
-- [Mathlib overview: Probability Theory › Convergence of a sequence of random variables](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L421)
-- [Mathlib undergraduate list: Probability Theory › Convergence of a sequence of random variables](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L585)
-- [Freek Wiedijk's 100 theorems, no. 47](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L247)
-- [1000+ theorems list: Q190391](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L141)
+- [Source of `ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub` in Mathlib/Probability/CentralLimitTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/CentralLimitTheorem.lean#L117)
+- [Mathlib overview: Probability Theory › Convergence of a sequence of random variables](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L421)
+- [Mathlib undergraduate list: Probability Theory › Convergence of a sequence of random variables](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L585)
+- [Freek Wiedijk's 100 theorems, no. 47](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L247)
+- [1000+ theorems list: Q190391](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L141)
 - [1000+ theorems project: Q190391](https://1000-plus.github.io/all.html?length=-1#Q190391)
 - [Wikipedia: Central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 - [Wikidata: Q190391](https://www.wikidata.org/wiki/Q190391)

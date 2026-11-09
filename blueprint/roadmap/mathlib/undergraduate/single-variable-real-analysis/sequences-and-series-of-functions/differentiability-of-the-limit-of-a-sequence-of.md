@@ -35,5 +35,5 @@ hasFDerivAt_of_tendstoUniformly.{u_1, u_2, u_3, u_4} {ι : Type u_1} {l : Filter
 ## Sources
 
 - [Mathlib documentation: `hasFDerivAt_of_tendstoUniformly`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/UniformLimitsDeriv.html#hasFDerivAt_of_tendstoUniformly)
-- [Source of `hasFDerivAt_of_tendstoUniformly` in Mathlib/Analysis/Calculus/UniformLimitsDeriv.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/UniformLimitsDeriv.lean#L427)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L354)
+- [Source of `hasFDerivAt_of_tendstoUniformly` in Mathlib/Analysis/Calculus/UniformLimitsDeriv.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/UniformLimitsDeriv.lean#L427)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L354)

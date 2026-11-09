@@ -1,0 +1,216 @@
+# Reads Lean Pool at the commit data/lean-pool/source.json pins
+# (tools/refresh_lean_pool.py): its project cards, and where each card's main
+# results are declared in the project's files, read from the source without
+# Lean. The pages are then regenerated from that data. Lean Pool is a blobless,
+# sparse checkout of the files the refresh reads.
+#
+# A push that changes the reader or the data runs it too, so the committed data
+# always match the pin. The weekly run, or a dispatch with "newest", moves the
+# pin to Lean Pool's newest main commit whose Lean CI passed. On main, the
+# commit job records the data and the pages, then starts the Pages and Tests
+# workflows. On a pull request the run fails when the committed data differ
+# from what the pin gives, and keeps a patch.
+
+name: Lean Pool data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/refresh_lean_pool.py"
+      - "tools/trough/lean_pool.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/leansource.py"
+      - "data/lean-pool/**"
+      - ".github/workflows/lean-pool-data.yml"
+  pull_request:
+    paths:
+      - "tools/refresh_lean_pool.py"
+      - "tools/trough/lean_pool.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/leansource.py"
+      - "data/lean-pool/**"
+      - ".github/workflows/lean-pool-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin Lean Pool's newest main commit whose Lean CI passed
+        type: boolean
+        default: false
+  schedule:
+    - cron: "53 6 * * 5"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-pool-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      sha: ${{ steps.head.outputs.sha }}
+    steps:
+      # Outside pull requests, read the branch as it is now rather than the
+      # commit that started the run.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
+          persist-credentials: false
+
+      - name: Record the commit this run reads
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Choose the Lean Pool commit
+        id: pin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEWEST: ${{ github.event_name == 'schedule' || inputs.newest }}
+        run: |
+          set -euo pipefail
+          rev=$(jq -r '.rev // empty' data/lean-pool/source.json 2>/dev/null || true)
+          if [ "$NEWEST" = true ] || [ -z "$rev" ]; then
+            rev=$(gh api "repos/LeanPool/lean-pool/actions/workflows/lean_action_ci.yml/runs?branch=main&event=push&status=success&per_page=1" \
+              --jq '.workflow_runs[0].head_sha')
+          fi
+          echo "Lean Pool $rev"
+          echo "rev=$rev" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch Lean Pool at that commit
+        env:
+          REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/lean-pool"
+          git init --quiet "$dir"
+          git -C "$dir" remote add origin https://github.com/LeanPool/lean-pool.git
+          git -C "$dir" fetch --quiet --depth 1 --filter=blob:none origin "$REV"
+          git -C "$dir" sparse-checkout set --no-cone /LICENSE /NOTICE.extra.yml /lean-toolchain /lake-manifest.json \
+            '/LeanPool/projects/*.yaml' '/LeanPool/**/*.lean'
+          git -C "$dir" checkout --quiet FETCH_HEAD
+          echo "$(find "$dir/LeanPool" -name '*.lean' | wc -l) Lean files, $(ls "$dir/LeanPool/projects" | wc -l) cards"
+          du -sh "$dir"
+
+      - name: Read Lean Pool
+        run: uv run --no-dev python tools/refresh_lean_pool.py "$RUNNER_TEMP/lean-pool"
+
+      - name: Regenerate the pages
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Run the tests on the new data
+        run: uv run pytest -q
+
+      - name: Compare with the committed data
+        id: compare
+        run: |
+          git add -A data/lean-pool blueprint hooks/lean-links.json
+          if git diff --cached --quiet; then
+            echo "The committed data are what the pin gives."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git diff --cached --stat | tail -n 20
+          git diff --cached --binary > lean-pool-data.patch
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            echo "::error::The committed data differ from what the pin gives. Merge main and apply the patch: git fetch origin ${base} && git merge --no-edit ${base} && gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n lean-pool-data && git apply lean-pool-data.patch"
+            exit 1
+          fi
+
+      - name: Keep the patch
+        if: always() && steps.compare.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: lean-pool-data
+          path: lean-pool-data.patch
+          retention-days: 14
+
+      - name: Keep the data for the commit job
+        if: steps.compare.outputs.changed == 'true' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: lean-pool-data-files
+          path: data/lean-pool/
+          retention-days: 14
+
+  # Records the data in the newest main, regenerating the pages with main's
+  # generator, as the Formal Frontier data workflow does. Data changed
+  # meanwhile win: that push's run records its own.
+  commit:
+    needs: refresh
+    if: >-
+      needs.refresh.outputs.changed == 'true' &&
+      github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the data
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: lean-pool-data-files
+          path: ${{ runner.temp }}/data
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Commit the data and pages
+        env:
+          READ: ${{ needs.refresh.outputs.sha }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/data"
+          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(source|projects)\.json$'; then
+            echo "::error::The data artifact holds the files listed above."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            if ! git diff --quiet "$READ" HEAD -- data/lean-pool; then
+              echo "::notice::main has changed data/lean-pool since ${READ:0:8}; that push's run records the data."
+              exit 0
+            fi
+            mkdir -p data/lean-pool
+            cp "$src"/*.json data/lean-pool/
+            uv run --no-dev python tools/generate.py
+            git add -A data/lean-pool blueprint hooks/lean-links.json
+            if git diff --cached --quiet; then
+              echo "main already has this data."
+              exit 0
+            fi
+            git commit --quiet -m "Lean Pool data"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
+
+      - name: Rebuild the site and run the tests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"

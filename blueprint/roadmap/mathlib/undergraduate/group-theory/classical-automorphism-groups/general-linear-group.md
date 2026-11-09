@@ -131,5 +131,5 @@ is $\mathrm{SL}_n(R)$ or $R^\times$, and both sides are $0$.
 ## Sources
 
 - [Mathlib documentation: `Matrix.GeneralLinearGroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.html#Matrix.GeneralLinearGroup)
-- [Source of `Matrix.GeneralLinearGroup` in Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.lean#L41)
-- [Mathlib undergraduate list: Group Theory › Classical automorphism groups](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L105)
+- [Source of `Matrix.GeneralLinearGroup` in Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Matrix/GeneralLinearGroup/Defs.lean#L41)
+- [Mathlib undergraduate list: Group Theory › Classical automorphism groups](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L105)

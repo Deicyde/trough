@@ -47,3 +47,9 @@ def test_the_formal_frontier_libraries_share_one_chapter_line():
     lines = [line for line in root.splitlines() if "Formal Frontier" in line and line.startswith("- [")]
     assert lines == [line for line in lines if line.startswith(f"- [Formal Frontier](formal-frontier/README.md): {live} libraries")]
     assert len(lines) == 1
+
+
+def test_the_sources_page_takes_lean_pools_commit_from_its_data():
+    page = catalog.sources_readme(catalog.load(CATALOG), "a" * 40, None, lean_pool="b" * 40)
+    assert f"[LeanPool/lean-pool at bbbbbbbb](https://github.com/LeanPool/lean-pool/tree/{'b' * 40})" in page
+    assert "- [Lean Pool](https://github.com/LeanPool/lean-pool) at bbbbbbbbbbbb: A pool of" in page

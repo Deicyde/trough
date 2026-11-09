@@ -1,0 +1,7 @@
+{
+ "repo": "LeanPool/lean-pool",
+ "rev": "2b205bf904013a5e06d8ef03069430dd79e1c8bd",
+ "date": "2026-11-08T21:52:26Z",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}

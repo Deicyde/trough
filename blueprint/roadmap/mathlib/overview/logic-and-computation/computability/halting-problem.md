@@ -17,5 +17,5 @@ ComputablePred.halting_problem (n : ℕ) : ¬ComputablePred fun c => (c.eval n).
 ## Sources
 
 - [Mathlib documentation: `ComputablePred.halting_problem`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/Halting.html#ComputablePred.halting_problem)
-- [Source of `ComputablePred.halting_problem` in Mathlib/Computability/Halting.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/Halting.lean#L63)
-- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L607)
+- [Source of `ComputablePred.halting_problem` in Mathlib/Computability/Halting.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/Halting.lean#L63)
+- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L607)

@@ -22,5 +22,5 @@ Cardinal.aleph.{u_1} : Ordinal.{u_1} ↪o Cardinal.{u_1}
 ## Sources
 
 - [Mathlib documentation: `Cardinal.aleph`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/SetTheory/Cardinal/Aleph.html#Cardinal.aleph)
-- [Source of `Cardinal.aleph` in Mathlib/SetTheory/Cardinal/Aleph.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/SetTheory/Cardinal/Aleph.lean#L404)
-- [Mathlib overview: Logic and computation › Set theory › Cardinals](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L631)
+- [Source of `Cardinal.aleph` in Mathlib/SetTheory/Cardinal/Aleph.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/SetTheory/Cardinal/Aleph.lean#L404)
+- [Mathlib overview: Logic and computation › Set theory › Cardinals](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L631)

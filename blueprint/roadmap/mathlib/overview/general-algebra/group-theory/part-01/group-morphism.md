@@ -92,7 +92,7 @@ addition, multiplication and the unit, and a [linear map](../../../linear-algebr
 preserves addition and scalar multiplication. The
 [abelianization](abelianization.md) and [free groups](free-group.md)
 are characterized by universal properties:
-[morphisms from the abelianization of $G$ to an abelian group $A$ correspond to morphisms $G \to A$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.lift),
+[morphisms from the abelianization of $G$ to an abelian group $A$ correspond to morphisms $G \to A$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.lift),
 and [morphisms from the free group on a set $S$ to a group $H$ correspond to arbitrary maps $S \to H$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/Basic.html#FreeGroup.lift).
 
 ## In Mathlib
@@ -121,6 +121,6 @@ multiplicative ones.
 ## Sources
 
 - [Mathlib documentation: `MonoidHom`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Group/Hom/Defs.html#MonoidHom)
-- [Source of `MonoidHom` in Mathlib/Algebra/Group/Hom/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Group/Hom/Defs.lean#L357)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L34)
-- [Mathlib undergraduate list: Group Theory › Basic definitions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L80)
+- [Source of `MonoidHom` in Mathlib/Algebra/Group/Hom/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Group/Hom/Defs.lean#L357)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L34)
+- [Mathlib undergraduate list: Group Theory › Basic definitions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L80)

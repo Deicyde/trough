@@ -61,7 +61,7 @@ $$M_K = \left(\frac{4}{\pi}\right)^{r_2} \frac{n!}{n^n} \sqrt{|d_K|}.$$
   exactly when it is a principal ideal domain, so $h_K = 1$ also characterizes
   unique factorization of elements in $\mathcal{O}_K$.
 - **A discriminant criterion.**
-  [If $|d_K| < \left(2 (\pi/4)^{r_2} n^n / n!\right)^2$, then $\mathcal{O}_K$ is a principal ideal domain](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/ClassNumber.html#RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt).
+  [If $|d_K| < \left(2 (\pi/4)^{r_2} n^n / n!\right)^2$, then $\mathcal{O}_K$ is a principal ideal domain](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/ClassNumber.html#NumberField.RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt).
   The condition says $M_K < 2$, so every class contains an ideal of norm $1$.
 - **Powers of ideals.** By [Lagrange's theorem](../group-theory/part-02/lagranges-theorem.md)
   in $\mathrm{Cl}(K)$, the power $I^{h_K}$ of every nonzero ideal $I$ is principal.
@@ -136,5 +136,5 @@ rings of integers are principal ideal domains.
 ## Sources
 
 - [Mathlib documentation: `NumberField.RingOfIntegers.instFintypeClassGroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/ClassNumber.html#NumberField.RingOfIntegers.instFintypeClassGroup)
-- [Source of `NumberField.RingOfIntegers.instFintypeClassGroup` in Mathlib/NumberTheory/NumberField/ClassNumber.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/NumberField/ClassNumber.lean#L59)
-- [Mathlib overview: General algebra › Algebraic Number Theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L157)
+- [Source of `NumberField.RingOfIntegers.instFintypeClassGroup` in Mathlib/NumberTheory/NumberField/ClassNumber.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/NumberField/ClassNumber.lean#L59)
+- [Mathlib overview: General algebra › Algebraic Number Theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L157)

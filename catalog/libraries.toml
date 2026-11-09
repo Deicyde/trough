@@ -3,10 +3,13 @@
 # Snapshot fields (head, head_date, toolchain, mathlib, lean_files) were read
 # from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08, and
 # drift as the libraries move; a Formal Frontier library's commit is the one
-# its data/ff/ record pins, and Anthropic's FLT's is the one
-# data/anthropic-flt/source.json pins, so those entries have no head.
-# map_status is "live" (a chapter of this site), "elsewhere" (mapped on another
-# site) or "planned"; map_unit says what one article will be. A Formal Frontier
+# its data/ff/ record pins, Formal Conjectures' the one
+# data/formal-conjectures/source.json pins and Anthropic's FLT's the one
+# data/anthropic-flt/source.json pins, so their entries have no head.
+# Nor has Lean Pool's: its commit is the one data/lean-pool/ pins, and its
+# snapshot fields were read at that pin on 2026-11-08. map_status is "live"
+# (a chapter of this site), "elsewhere" (mapped on another site) or
+# "planned"; map_unit says what one article will be. A Formal Frontier
 # library's subject is its part of that chapter, one of SUBJECTS in
 # tools/trough/catalog.py.
 
@@ -46,8 +49,8 @@ lean_files = 27084
 head = "ace60277c4c5"
 head_date = "2026-11-07"
 map_status = "live"
-map_unit = "named declaration"
-map_plan = "One article per declaration a roadmap's status names as a result or notable definition, as Tau Ceti has it: its docstring, signature and dependencies, in a section per roadmap."
+map_unit = "named result"
+map_plan = "One article per declaration a roadmap's status names as a result or notable definition, and per result Tau Ceti's docstrings name, the forms of one result together, as Tau Ceti has it: its docstring, signature and dependencies, in a part per top-level area with a section per roadmap or area of modules."
 
 [[library]]
 id = "atlas-lean"
@@ -168,18 +171,16 @@ name = "Formal Conjectures"
 repo = "google-deepmind/formal-conjectures"
 group = "library"
 homepage = "https://google-deepmind.github.io/formal-conjectures/"
-what = "Statements (mostly sorry'd) of open conjectures: ErdosProblems 1000 files, OEIS 250, Wikipedia 184, WrittenOnTheWallII 64, GreensOpenProblems 61, Paper 52, Arxiv 41, MathOverflow, Kourovka, Books."
-informal_layer = "Module docstrings citing sources. STATEMENTS.md and PROOFS.md are contributor guides, not content. formal_proof attribute for external proofs."
+what = "Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones."
+informal_layer = "One @[category] per statement (8,648 at 2055e5ad: 1,873 research open, 3,014 research solved, 249 textbook, 705 API, 2,807 test; 131 of them on an example or an unnamed instance), @[AMS] subject codes, @[formal_proof] links (984 marked lean4, a Lean proof elsewhere; 174 marked formal_conjectures, a proof of the statement as written; 2 marked other_system). Module docstrings with a title and *Reference:* links. The site's data/conjectures.json comes from scripts/extract_names.lean. FormalConjectures/Subsets holds the four FC100 benchmark lists. STATEMENTS.md and PROOFS.md are contributor guides, not content."
 formalization_yaml = "absent"
 license = "Apache-2.0"
 toolchain = "v4.33.1"
 mathlib = "0df444a360ea"
-lean_files = 1999
-head = "d995ef5d3066"
-head_date = "2026-11-01"
-map_status = "planned"
+lean_files = 2117
+map_status = "live"
 map_unit = "problem"
-map_plan = "One article per problem file (about 2,000), grouped by source; most are stated without a proof."
+map_plan = "One article per problem file that states a research or textbook statement (1,814), on a page per source folder, with an index by AMS subject and the four FC100 lists; each statement's card says whether it is open, solved (with or without a proof elsewhere), a textbook result, or proved in the repository, and test and API statements are counted in their problem. Most statements are stated without a proof."
 
 [[library]]
 id = "physlib"
@@ -316,18 +317,16 @@ name = "Lean Pool"
 repo = "LeanPool/lean-pool"
 group = "corpus"
 homepage = "https://leanpool.github.io/lean-pool/"
-what = "A pool of 317 permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa."
-informal_layer = "LeanPool/projects/: one YAML card per project (317) with title, summary, branch, msc, tags, entry_module, source{url,github_repo,commit}, license, status, provenance, main_declarations and main_results[{declaration, informal}]. Plus a generated exposition site and a candidates/ queue."
-formalization_yaml = "absent (projects.yml plays its role per project)"
+what = "A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa."
+informal_layer = "LeanPool/projects/<slug>.yaml: one card per project with title, summary, branch, msc, tags, entry_module, source{github_repo, commit, url, doi, arxiv, title, authors, citation, paper_url, manuscript_url, proof_url, problem_url, mathematical_source, background, notes, provenance_note, and others}, license, status, provenance, main_declarations and main_results[{declaration, informal, source_ref}]; NOTICE.extra.yml keeps the MIT projects' copyright lines, or notes about them. Plus a generated exposition site and a candidates/ queue."
+formalization_yaml = "absent (each project's card plays its role)"
 license = "Apache-2.0"
-toolchain = "v4.35.0-rc3"
-mathlib = "c55e6e786f49"
-lean_files = 28795
-head = "edbe5bd56f47"
-head_date = "2026-10-22"
-map_status = "planned"
-map_unit = "project"
-map_plan = "One article per project in LeanPool/projects (317), with its main_results as statements."
+toolchain = "v4.35.0"
+mathlib = "56a005855ea1"
+lean_files = 31452
+map_status = "live"
+map_unit = "project card"
+map_plan = "One article per project card in LeanPool/projects, in a section per top-level MSC2020 class: the card's summary, authors, sources, provenance and license, and its main results' informal statements, each with its declaration where the scan finds it in the project's files."
 
 [[library]]
 id = "ff-adic-modules"

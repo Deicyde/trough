@@ -156,5 +156,5 @@ defined as numbers of infinite places.
 ## Sources
 
 - [Mathlib documentation: `NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/DedekindZeta.html#NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT)
-- [Source of `NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT` in Mathlib/NumberTheory/NumberField/DedekindZeta.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/NumberField/DedekindZeta.lean#L75)
-- [Mathlib overview: General algebra › Algebraic Number Theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L159)
+- [Source of `NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT` in Mathlib/NumberTheory/NumberField/DedekindZeta.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/NumberField/DedekindZeta.lean#L75)
+- [Mathlib overview: General algebra › Algebraic Number Theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L159)

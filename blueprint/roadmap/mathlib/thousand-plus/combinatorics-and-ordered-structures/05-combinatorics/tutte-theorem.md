@@ -25,8 +25,8 @@ SimpleGraph.tutte.{u_1} {V : Type u_1} {G : SimpleGraph V} [Finite V] :
 ## Sources
 
 - [Mathlib documentation: `SimpleGraph.tutte`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Tutte.html#SimpleGraph.tutte)
-- [Source of `SimpleGraph.tutte` in Mathlib/Combinatorics/SimpleGraph/Tutte.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/SimpleGraph/Tutte.lean#L311)
-- [1000+ theorems list: Q510197](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L511)
+- [Source of `SimpleGraph.tutte` in Mathlib/Combinatorics/SimpleGraph/Tutte.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SimpleGraph/Tutte.lean#L311)
+- [1000+ theorems list: Q510197](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L511)
 - [1000+ theorems project: Q510197](https://1000-plus.github.io/all.html?length=-1#Q510197)
 - [Wikipedia: Tutte theorem](https://en.wikipedia.org/wiki/Tutte_theorem)
 - [Wikidata: Q510197](https://www.wikidata.org/wiki/Q510197)

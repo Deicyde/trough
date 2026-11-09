@@ -30,6 +30,6 @@ MeasureTheory.Lp.instCompleteSpace.{u_1, u_3} {α : Type u_1} {m : MeasurableSpa
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.Lp.instCompleteSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/LpSpace/Complete.html#MeasureTheory.Lp.instCompleteSpace)
-- [Source of `MeasureTheory.Lp.instCompleteSpace` in Mathlib/MeasureTheory/Function/LpSpace/Complete.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/LpSpace/Complete.lean#L386)
-- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L445)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L522)
+- [Source of `MeasureTheory.Lp.instCompleteSpace` in Mathlib/MeasureTheory/Function/LpSpace/Complete.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/LpSpace/Complete.lean#L386)
+- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L445)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L522)

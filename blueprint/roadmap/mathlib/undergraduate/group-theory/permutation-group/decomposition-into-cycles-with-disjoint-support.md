@@ -133,5 +133,5 @@ the sign are proved in Mathlib by the induction principle on disjoint cycles.
 ## Sources
 
 - [Mathlib documentation: `Equiv.Perm.truncCycleFactors`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Perm/Cycle/Factors.html#Equiv.Perm.truncCycleFactors)
-- [Source of `Equiv.Perm.truncCycleFactors` in Mathlib/GroupTheory/Perm/Cycle/Factors.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/Perm/Cycle/Factors.lean#L464)
-- [Mathlib undergraduate list: Group Theory › Permutation group](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L101)
+- [Source of `Equiv.Perm.truncCycleFactors` in Mathlib/GroupTheory/Perm/Cycle/Factors.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Perm/Cycle/Factors.lean#L464)
+- [Mathlib undergraduate list: Group Theory › Permutation group](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L101)
