@@ -22,6 +22,7 @@ on:
     paths:
       - "tools/refresh_anthropic_flt.py"
       - "tools/trough/anthropic_flt.py"
+      - "tools/trough/ff.py"
       - "tools/trough/formalization.py"
       - "tools/trough/leansource.py"
       - "data/anthropic-flt/**"
@@ -30,6 +31,7 @@ on:
     paths:
       - "tools/refresh_anthropic_flt.py"
       - "tools/trough/anthropic_flt.py"
+      - "tools/trough/ff.py"
       - "tools/trough/formalization.py"
       - "tools/trough/leansource.py"
       - "data/anthropic-flt/**"
@@ -95,12 +97,12 @@ jobs:
           git -C "$dir" remote add origin "$REPOSITORY"
           git -C "$dir" fetch --quiet --depth 1 --filter=blob:none origin "$rev"
           git -C "$dir" sparse-checkout set --no-cone /PROOF-PATH.md /formalization.yaml /html/data/meta.js \
-            /html/data/edges.js /lean-toolchain /lake-manifest.json /LICENSE /FinalCheck.lean
+            /html/data/edges.js /lean-toolchain /lake-manifest.json /LICENSE
           git -C "$dir" checkout --quiet FETCH_HEAD
-          # The landmarks' statement files, which meta.js names.
+          # The landmarks' statement files, which meta.js names, and the main results' files.
           uv run --no-dev python tools/refresh_anthropic_flt.py "$dir" --files | sed 's|^|/|' > "$RUNNER_TEMP/statements.txt"
           git -C "$dir" sparse-checkout add --stdin < "$RUNNER_TEMP/statements.txt"
-          echo "$rev: $(wc -l < "$RUNNER_TEMP/statements.txt") statement files"
+          echo "$rev: $(wc -l < "$RUNNER_TEMP/statements.txt") statement and main result files"
           du -sh "$dir"
 
       - name: Read the repository

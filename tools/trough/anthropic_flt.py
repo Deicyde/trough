@@ -44,6 +44,10 @@ THEOREM = re.compile(r"^[ \t]*(?:(?:private|protected|nonrec|noncomputable)\s+)*
 PROOF_IMPORT = re.compile(r"^import\s+(P2M\.Sol\.\S+)\s*$", re.M)
 OPENERS, CLOSERS = "([{⟨⦃", ")]}⟩⦄"
 CODE_SPAN = re.compile(r"`[^`\n]*`")
+SENTENCE_END = re.compile(r"\.(?=\s|$)")
+# PROOF-PATH.md says the repository's Frey package is adapted from the Imperial FLT project, whose chapter
+# has an article on its own FreyPackage.
+ADAPTED = ("FreyPackage", "adapted from the Imperial College London FLT project")
 
 
 def read_js(text: str) -> dict:
@@ -87,7 +91,10 @@ def nearest(index: int, offsets: list[int], targets: list[int], landmarks: set[i
 def statement(text: str) -> dict | None:
     """The theorem a statement file states: its text from the end of the preamble (the imports and the
     `attribute` lines) to the top-level `:=`, the line of its `theorem` keyword, and its full name, with
-    the namespaces the file opens before it; None when the file states no theorem."""
+    the namespaces the file opens before it; None when the file states no theorem. The repository's
+    statement files prove by `by`, so text after the cut that does not open with `by` means the cut came
+    early, at the `:=` of a `let` in the statement, say: that raises ValueError rather than quote part of a
+    statement."""
     blanked = leansource.blank_attributes(leansource.blank(text))
     lines = blanked.split("\n")
     start, offset, attribute = None, 0, False
@@ -126,6 +133,9 @@ def statement(text: str) -> dict | None:
         return None
     own = name.group(1)
     full = own[len("_root_."):] if own.startswith("_root_.") else ".".join(scopes + [own])
+    if not re.match(r"\s*by\b", blanked[i + 2:]):
+        raise ValueError(f"the text after the top-level `:=` of {full} does not open a tactic proof, so the "
+                         "statement may be cut short")
     return {"name": full, "line": blanked.count("\n", 0, keyword.start()) + 1, "statement": text[start:i].strip()}
 
 
@@ -151,11 +161,21 @@ def proof_path(text: str) -> dict:
             "steps": steps, "sections": later}
 
 
+def files_to_read(checkout: Path) -> list[str]:
+    """The files the refresh reads besides the index files: each landmark's statement file, which meta.js
+    names, and each main result's file, which the formalization.yaml names."""
+    meta = read_js((checkout / "html/data/meta.js").read_text(encoding="utf-8"))
+    config = formalization.load((checkout / "formalization.yaml").read_text(encoding="utf-8"))
+    files = [statement_file(meta, index) for index in landmark_indices(meta)]
+    files += [str(result["file"]) for result in config.main_results if result.get("declaration") and result.get("file")]
+    return list(dict.fromkeys(files))
+
+
 def read_repository(checkout: Path, rev: str, date: str, paths: set[str]) -> tuple[dict, dict]:
     """The source and landmark records at a commit: *paths* are every file the commit has. Raises
     ValueError when the repository is not Apache-2.0, when PROOF-PATH.md's steps are not numbered 1, 2, ...,
-    when a landmark sits in a stage with no step, or when a landmark's statement file is missing or states
-    another theorem."""
+    when a landmark sits in a stage with no step, when a landmark's statement file is missing, states another
+    theorem or may be cut short, or when a main result's file is in the commit but not in the checkout."""
     config = formalization.load((checkout / "formalization.yaml").read_text(encoding="utf-8"))
     license_name = formalization.text_of(config.project.get("license"))
     license_file = checkout / "LICENSE"
@@ -182,7 +202,10 @@ def read_repository(checkout: Path, rev: str, date: str, paths: set[str]) -> tup
         if file not in paths or not (checkout / file).is_file():
             raise ValueError(f"{name}: {file} is missing")
         text = (checkout / file).read_text(encoding="utf-8")
-        stated = statement(text)
+        try:
+            stated = statement(text)
+        except ValueError as error:
+            raise ValueError(f"{file}: {error}") from None
         if not stated or stated["name"] != name:
             raise ValueError(f"{file} states {stated['name'] if stated else 'no theorem'}, not {name}")
         imports = PROOF_IMPORT.findall(text)
@@ -202,8 +225,12 @@ def read_repository(checkout: Path, rev: str, date: str, paths: set[str]) -> tup
     text = formalization.text_of
     results = []
     for result in config.main_results:
+        if not result.get("declaration"):
+            continue
         file = str(result.get("file") or "")
-        scan = leansource.scan((checkout / file).read_text(encoding="utf-8")) if file in paths and (checkout / file).is_file() else None
+        if file in paths and not (checkout / file).is_file():
+            raise ValueError(f"{text(result['declaration'])}: {file} is in the commit but not in the checkout")
+        scan = leansource.scan((checkout / file).read_text(encoding="utf-8")) if file in paths else None
         found = (scan or {}).get(text(result.get("declaration")))
         results.append({key: value for key, value in {
             "name": text(result.get("declaration")),
@@ -247,10 +274,15 @@ def shard(name: str, shards: int = 256) -> str:
     return f"{value % shards:03d}"
 
 
+class Unreachable(Exception):
+    """The documentation site did not answer at all: a network failure, which says nothing about its pages."""
+
+
 def docs_problem(url: str, landmarks: dict, fetch: Callable[[str, str], bytes | None]) -> str | None:
     """Why the documentation site at *url* does not serve the landmarks' pages, or None when it does: its
     theorem page answers, its meta.js marks the same landmarks, and each landmark's data shard answers.
-    fetch(url, method) gives the body of a GET, b"" for a HEAD that answers, and None on any failure."""
+    fetch(url, method) gives the body of a GET, b"" for a HEAD that answers, and None when the site answers
+    that it has no such page; it raises Unreachable when the site does not answer."""
     page = fetch(url + "thm.html", "GET")
     if not page or b'id="thm-main"' not in page:
         return f"{url}thm.html does not serve the theorem page"
@@ -259,7 +291,7 @@ def docs_problem(url: str, landmarks: dict, fetch: Callable[[str, str], bytes | 
         meta = read_js(data.decode("utf-8")) if data else None
     except (ValueError, UnicodeDecodeError):
         meta = None
-    if not meta or "names" not in meta:
+    if not meta or "names" not in meta or "lm" not in meta:
         return f"{url}data/meta.js does not serve the theorems"
     served = {meta["names"][index] for index in landmark_indices(meta)}
     names = {record["name"] for record in landmarks["landmarks"]}
@@ -293,9 +325,9 @@ def at(source: dict) -> str:
     return f"[{source['rev'][:8]}]({GITHUB}/{source['repo']}/tree/{source['rev']})"
 
 
-def credit(source: dict, file: str, what: str = "") -> str:
+def credit(source: dict, file: str, what: str = "", note: str = "") -> str:
     return (f"*Quoted from {what + ' ' if what else ''}[{file}]({blob(source, file)}) of [{source['repo']}]"
-            f"({GITHUB}/{source['repo']}) at commit {at(source)}, Apache-2.0.*")
+            f"({GITHUB}/{source['repo']}) at commit {at(source)}, Apache-2.0{': ' + note if note else ''}.*")
 
 
 def quote(markdown: str) -> str:
@@ -315,16 +347,41 @@ def quote(markdown: str) -> str:
     return "\n".join(f"> {line}" if line.strip() else ">" for line in lines)
 
 
+def span_name(span: str, names: set[str]) -> str | None:
+    """The name a code span writes: the whole span, or its first word when a signature follows, as in
+    `FreyPackage.no_frey_package (P : FreyPackage) : False`; None when that is none of *names*."""
+    head = re.split(r"\s", span.strip("`"), maxsplit=1)[0]
+    return head if head in names else None
+
+
 def mentions(text: str, names: set[str]) -> list[str]:
-    """The names a text writes in backticks, in the order it first does."""
-    return list(dict.fromkeys(match.group()[1:-1] for match in CODE_SPAN.finditer(text) if match.group()[1:-1] in names))
+    """The names a text writes in backticks, alone or with a signature after them, in the order it first does."""
+    return list(dict.fromkeys(name for match in CODE_SPAN.finditer(text) if (name := span_name(match.group(), names))))
 
 
 def step_theorem(step: dict, stage_names: set[str]) -> str | None:
     """The landmark a step opens with, in backticks right after its bold lead, when the step's stage holds it:
     the theorem that carries the step."""
-    match = re.match(r"\*\*.+?\*\*\s*`([^`]+)`", step["text"], re.S)
-    return match.group(1) if match and match.group(1) in stage_names else None
+    match = re.match(r"\*\*.+?\*\*\s*(`[^`]+`)", step["text"], re.S)
+    return span_name(match.group(1), stage_names) if match else None
+
+
+def proved_only(markdown: str) -> str:
+    """A section's entries with each one's “Proved:” clause kept, to the end of its sentence, and the rest
+    cut, marked with …: the map records what the repository proves, not what it leaves out. An entry with no
+    such clause is kept whole, unless it says what is not proved, when it is left out."""
+    out = []
+    for item in re.split(r"(?m)^(?=[-*+] )", markdown):
+        body = item.rstrip()
+        start = body.find("Proved:")
+        if start < 0:
+            if "Not proved:" not in body:
+                out.append(item)
+            continue
+        end = SENTENCE_END.search(CODE_SPAN.sub(lambda span: " " * len(span.group()), body), start)
+        cut = end.end() if end else len(body)
+        out.append(body[:cut].rstrip() + (" …" if body[cut:].strip() else "") + item[len(body):])
+    return "".join(out)
 
 
 def imperial_names(root: Container | None) -> dict[str, Leaf]:
@@ -390,10 +447,18 @@ def chapter(source: dict, landmarks: dict, imperial: Container | None = None) ->
         if theorem:
             titles[theorem] = ff.safe(step["title"])
             carries[theorem] = f"step {step['number']}"
+    sections = [(f"section-{number}", section, proved_only(section["text"]))
+                for number, section in enumerate(route["sections"], 1)]
     named_in: dict[str, list[tuple[str, str]]] = {name: [] for name in records}
     for step in route["steps"]:
         for name in mentions(step["text"], set(records)):
             named_in[name].append((f"{step['number']}. {step['title']}", keys[step["number"]]))
+    for key, section, text in sections:
+        for name in mentions(text, set(records)):
+            named_in[name].append((section["title"], key))
+    adapted = ADAPTED[0] in imperial_leaves and any(ADAPTED[1] in step["text"] for step in route["steps"])
+    if adapted:
+        targets[f"imperial:{ADAPTED[0]}"] = imperial_leaves[ADAPTED[0]]
     leaves: dict[str, Leaf] = {}
     stats = {"imperial_matches": 0}
     for name, record in records.items():
@@ -409,23 +474,28 @@ def chapter(source: dict, landmarks: dict, imperial: Container | None = None) ->
     for step in route["steps"]:
         number = step["number"]
         # The statement itself, which the web pages put in a stage before the first step, opens the first step.
-        members = by_stage.get(number, []) + (by_stage.get(0, []) if number == 1 else [])
-        order = mentions(step["text"], set(members))
-        members = order + sorted(set(members) - set(order))
+        before = by_stage.get(0, []) if number == 1 else []
+        groups = [mentions(step["text"], set(group)) for group in (before, by_stage.get(number, []))]
+        unnamed = [sorted(set(group) - set(order)) for group, order in zip((before, by_stage.get(number, [])), groups)]
+        members = groups[0] + unnamed[0] + groups[1] + unnamed[1]
         part = Container(f"{number}. {ff.safe(step['title'])}", slugify(f"{number} {step['title']}"),
                          [Entry(leaves[name]) for name in members])
         targets[keys[number]] = part
-        placed = ("The landmarks the repository's web pages place in this step"
-                  + (", with the theorem itself, which they place before it" if number == 1 and by_stage.get(0) else "")
-                  + ", in the order this step names them" + (", then by name:" if set(members) - set(order) else ":"))
+        placed = ((("The theorem itself" if len(before) == 1 else "The theorems") + ", which the repository's web pages "
+                   "place before this step, then the landmarks they place in it" if before else
+                   "The landmarks the repository's web pages place in this step")
+                  + ", in the order this step names them" + (", then by name:" if unnamed[0] or unnamed[1] else ":"))
         part.prose = "\n\n".join([quote(step["text"]), credit(source, "PROOF-PATH.md", "the route of the proof in"),
                                   placed if members else "The repository's web pages place no landmark in this step."])
         parts.append(Entry(chunk(part)))
-    for section in route["sections"]:
-        named = mentions(section["text"], set(records))
+    for key, section, text in sections:
+        named = mentions(text, set(records))
         part = Container(ff.safe(section["title"]), slugify(section["title"]),
                          [Entry(leaves[name], owned=False) for name in named])
-        part.prose = "\n\n".join([quote(section["text"]), credit(source, "PROOF-PATH.md", "the section of"),
+        targets[key] = part
+        note = "each “Proved:” clause, cut with … where the text goes on" if text != section["text"] else ""
+        part.prose = "\n\n".join([quote(text), credit(source, "PROOF-PATH.md", f"the section “{ff.safe(section['title'])}” of",
+                                                      note),
                                   "No landmark is placed in this section"
                                   + (". The landmarks it names, placed in the steps:" if named else ", and it names none.")])
         parts.append(Entry(part))
@@ -433,7 +503,7 @@ def chapter(source: dict, landmarks: dict, imperial: Container | None = None) ->
     counts = landmarks["counts"]
     stats |= {"articles": len(leaves), "landmark_edges": sum(len(leaf.proof_depends) for leaf in leaves.values()),
               "parts": len(parts), "theorems": counts["theorems"], "edges": counts["edges"]}
-    root.prose = intro(source, counts, stats, imperial is not None)
+    root.prose = intro(source, counts, stats, imperial is not None, by_stage.get(0, []), adapted)
     parts[0].before = "## The route"
     root.tail = "\n\n".join([ff.facts(source) + (f"\n- Scope, as its status states: “{ff.safe(source['scope'])}”"
                                                  if source.get("scope") else ""),
@@ -460,7 +530,7 @@ def main_results(source: dict, records: dict[str, dict]) -> str:
                       "axioms it gives for each, and where the source text declares them.", "", *lines])
 
 
-def intro(source: dict, counts: dict, stats: dict, imperial: bool) -> str:
+def intro(source: dict, counts: dict, stats: dict, imperial: bool, before_first: list[str], adapted: bool) -> str:
     repo = f"[{source['repo']}]({GITHUB}/{source['repo']})"
     date = f" ({source['date'][:10]})" if source.get("date") else ""
     route = source["proof_path"]
@@ -481,15 +551,16 @@ def intro(source: dict, counts: dict, stats: dict, imperial: bool) -> str:
     steps = len(route["steps"])
     others = counts["theorems"] - stats["articles"]
     paragraphs.append(
-        f"The repository's web pages list {counts['theorems']:,} theorems, a theorem `X.y` stated in its own file "
-        f"`Theorems/Thm_X_y.lean`, and mark {counts['landmarks']} of them as landmarks. This chapter maps the "
-        f"{stats['articles']} landmarks, one article each, in a part for each of the {steps} steps of PROOF-PATH.md, "
-        f"as the web pages place them, and quotes its other sections; "
+        f"The repository's web pages list {counts['theorems']:,} theorems and mark {counts['landmarks']} of them as "
+        f"landmarks. This chapter maps the {stats['articles']} landmarks, one article each, in a part for each of the "
+        f"{steps} steps of PROOF-PATH.md, as the web pages place them, and quotes from its other sections; "
         + ("the other theorem is" if others == 1 else f"the other {others:,} theorems are")
         + " counted, not mapped. An article quotes its theorem's Lean statement, from the end of the file's "
         "imports and `attribute` lines to the top-level `:=`, lists the aliases the web pages give it, and links its "
-        "line in the repository at the commit above. A theorem that opens a step of PROOF-PATH.md, as the theorem "
-        "carrying it, takes the step's name as its title; any other has its Lean name.")
+        "line in the repository at the commit above. A theorem a step opens with, when the web pages place it in "
+        "that step, takes the step's name as its title; any other has its Lean name."
+        + (f" The web pages put {' and '.join(f'`{name}`' for name in before_first)} in a stage before the first "
+           f"step, so {'it opens' if len(before_first) == 1 else 'they open'} part 1." if before_first else ""))
     paragraphs.append(
         f"The repository's citation graph has {counts['edges']:,} edges: the `import Theorems.Thm_…` lines of each "
         "proof module, which the repository documents as exactly the theorems the proof cites. Under *Proof depends "
@@ -501,10 +572,13 @@ def intro(source: dict, counts: dict, stats: dict, imperial: bool) -> str:
         paragraphs.append(
             "Where a landmark's name, or another declaration its statement file makes, is also the Lean name of an "
             "article in the [Imperial FLT chapter](trough:imperial), the landmark's article says so and links it. The "
-            "names are compared as written, so a match says only that the names agree. " + found)
+            "names are compared as written, so a match says only that the names agree. " + found
+            + (f" The repository's `{ADAPTED[0]}` is {ADAPTED[1]}, as PROOF-PATH.md says, and the Imperial FLT "
+               f"chapter has an article on its [`{ADAPTED[0]}`](trough:imperial:{ADAPTED[0]})." if adapted else ""))
     paragraphs.append(
-        f"The repository's documentation website, {source['docs']}, has a page for each theorem, and each article links "
-        "it; the data workflow checks that the site serves those pages before it links them."
+        f"The repository's README points to its documentation website, {source['docs']}, which it says has a page for "
+        "each theorem; each article links its theorem's page there, and the data workflow links them only when the "
+        "site serves the landmarks' pages."
         if source.get("docs") else
         "Articles link the repository's files at the commit above.")
     paragraphs.append(

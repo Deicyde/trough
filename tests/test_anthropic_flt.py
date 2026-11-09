@@ -1,6 +1,8 @@
 import json
 import os
 import subprocess
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 import pytest
@@ -33,13 +35,15 @@ Intro with E_P and `X.y`.
 
 **1. First step.** `root_thm` follows from `C.first`.
 
-**2. Second step ≥ 2.** `A.step` proves it from:
-- `B.deep`, with F_p;
+**2. Second step ≥ 2.** `A.step`, adapted from the Imperial College London FLT project, proves it from:
+- `B.deep (h : q ≠ 2) : q = q`, with F_p;
 - nothing else.
 
 ## Exact strength
 
-- **Named.** `B.deep`, in the strength needed.
+- **Named.** Proved: `B.deep`, in the strength needed. Not proved: more.
+- **Left.** Not proved: anything else.
+- **Other.** `C.first` holds as stated.
 """
 
 YAML = """version: "v0.4"
@@ -64,6 +68,7 @@ status:
       axioms: ["propext", "Classical.choice", "Quot.sound"]
     - declaration: "flt_mathlib"
       file: "FinalCheck.lean"
+    - file: "Unnamed.lean"
 automation:
   methods:
     - method: "agent"
@@ -82,7 +87,7 @@ STATEMENTS = {
         "local notation \"Γ:=\" => (G := 1)\nnamespace B\ntheorem deep {q : ℕ}\n    (h : q ≠ 2) : q = q := by\n"
         "  exact rfl\nend B\n"),
     "Theorems/Thm_root_thm.lean": "import P2M.Sol.S_root_thm\ntheorem\nroot_thm (n : ℕ) : n = n := by p2m_exact_reverting @x\n",
-    "Theorems/Thm_C_first.lean": "import P2M.Sol.S_C_first\ntheorem C.first : True := trivial\ntheorem Imp.shared : True := trivial\n",
+    "Theorems/Thm_C_first.lean": "import P2M.Sol.S_C_first\ntheorem C.first : True := by trivial\ntheorem Imp.shared : True := trivial\n",
 }
 APACHE = "\n                                 Apache License\n                           Version 2.0, January 2004\n"
 MANIFEST = {"packages": [{"name": "mathlib", "url": "https://github.com/leanprover-community/mathlib4", "rev": "c" * 40}]}
@@ -130,6 +135,9 @@ def test_a_statement_runs_from_the_preamble_to_the_top_level_colon_equals():
         "name": "root_thm", "line": 2, "statement": "theorem\nroot_thm (n : ℕ) : n = n"}
     assert anthropic_flt.statement("import Mathlib\nattribute [-simp] x\ndef f : ℕ := 1\n") is None
     assert anthropic_flt.statement("theorem t : True\n") is None
+    # A `let` in the statement has a top-level `:=` too: what follows the cut opens no proof, so it is refused.
+    with pytest.raises(ValueError, match="of t does not open a tactic proof"):
+        anthropic_flt.statement("theorem t : let x := 1; x = x := by rfl\n")
 
 
 def test_a_landmark_reaches_the_nearest_landmarks_through_other_theorems():
@@ -144,9 +152,23 @@ def test_proof_path_gives_the_intro_steps_and_later_sections():
     route = anthropic_flt.proof_path(PROOF_PATH)
     assert route["title"] == "The route" and route["intro"] == "Intro with E_P and `X.y`."
     assert [(step["number"], step["title"]) for step in route["steps"]] == [(1, "First step"), (2, "Second step ≥ 2")]
-    assert route["steps"][1]["text"].startswith("**2. Second step ≥ 2.** `A.step`")
+    assert route["steps"][1]["text"].startswith("**2. Second step ≥ 2.** `A.step`, adapted")
     assert route["steps"][1]["text"].endswith("- nothing else.")
-    assert route["sections"] == [{"title": "Exact strength", "text": "- **Named.** `B.deep`, in the strength needed."}]
+    assert [section["title"] for section in route["sections"]] == ["Exact strength"]
+    assert route["sections"][0]["text"].endswith("- **Other.** `C.first` holds as stated.")
+
+
+def test_a_code_span_names_a_landmark_alone_or_with_its_signature():
+    names = {"A.step", "B.deep"}
+    assert anthropic_flt.mentions("`B.deep (h : q ≠ 2) : q = q`, `A.step`, `B.deeper`, `A.step.x`, `B.deep`", names) == [
+        "B.deep", "A.step"]
+
+
+def test_a_section_keeps_each_proved_clause_and_cuts_what_follows():
+    assert anthropic_flt.proved_only(anthropic_flt.proof_path(PROOF_PATH)["sections"][0]["text"]) == (
+        "- **Named.** Proved: `B.deep`, in the strength needed. …\n- **Other.** `C.first` holds as stated.")
+    # A sentence ends at a period outside code.
+    assert anthropic_flt.proved_only("- **X.** Proved: `a.b` and\n  `c.d`. Rest.\n") == "- **X.** Proved: `a.b` and\n  `c.d`. …\n"
 
 
 def test_the_records_hold_the_facts_steps_and_landmarks(tmp_path):
@@ -182,6 +204,10 @@ def test_records_are_refused_when_the_source_does_not_hold(tmp_path):
         records(tmp_path / "2", **{"formalization.yaml": YAML.replace('license: "Apache-2.0"', 'license: "MIT"')})
     with pytest.raises(ValueError, match="states C.first, not B.deep"):
         records(tmp_path / "3", **{"Theorems/Thm_B_deep.lean": STATEMENTS["Theorems/Thm_C_first.lean"]})
+    with pytest.raises(ValueError, match="edges.js has 5 offsets and 5 edges for 5 theorems"):
+        records(tmp_path / "7", **{"html/data/edges.js": "window.FLT_EDGES={off:[0,1,3,3,5],dst:[2,0,2,4,1]};\n"})
+    with pytest.raises(ValueError, match="Thm_root_thm.lean: the text after the top-level `:=` of root_thm"):
+        records(tmp_path / "8", **{"Theorems/Thm_root_thm.lean": "theorem root_thm : let x := 1; x = x := by rfl\n"})
     with pytest.raises(ValueError, match="numbered \\[1, 3\\]"):
         records(tmp_path / "4", **{"PROOF-PATH.md": PROOF_PATH.replace("**2. Second", "**3. Second")})
     with pytest.raises(ValueError, match="B.deep is in stage 3"):
@@ -189,6 +215,21 @@ def test_records_are_refused_when_the_source_does_not_hold(tmp_path):
     root = checkout(tmp_path / "6")
     with pytest.raises(ValueError, match="Thm_B_deep.lean is missing"):
         anthropic_flt.read_repository(root, REV, "", paths_of(root) - {"Theorems/Thm_B_deep.lean"})
+    # A sparse checkout that leaves out a main result's file must not read as the file not declaring it.
+    (root / "FinalCheck.lean").unlink()
+    with pytest.raises(ValueError, match="flt_mathlib: FinalCheck.lean is in the commit but not in the checkout"):
+        anthropic_flt.read_repository(root, REV, "", paths_of(root) | {"FinalCheck.lean"})
+
+
+def test_files_lists_the_statement_and_main_result_files(tmp_path, monkeypatch, capsys):
+    # meta.js gives B.deep's file a stem of its own.
+    meta = META.replace('"stemx": {}', '"stemx": {"2": "B_deep_1"}')
+    root = checkout(tmp_path, **{"html/data/meta.js": meta})
+    monkeypatch.setattr("sys.argv", ["refresh_anthropic_flt.py", str(root), "--files"])
+    assert refresh_anthropic_flt.main() == 0
+    assert capsys.readouterr().out.split() == ["Theorems/Thm_A_step.lean", "Theorems/Thm_B_deep_1.lean",
+                                               "Theorems/Thm_root_thm.lean", "Theorems/Thm_C_first.lean",
+                                               "FinalCheck.lean"]
 
 
 def git(path: Path, *args: str) -> None:
@@ -244,15 +285,45 @@ def test_the_documentation_site_is_linked_only_when_it_serves_the_landmarks_page
     root, out = repository(checkout(tmp_path / "repo")), tmp_path / "out"
     assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", site(served)) == []
     assert json.loads((out / "source.json").read_text(encoding="utf-8"))["docs"] == "https://docs.example/"
+
+    def down(url: str, method: str) -> bytes | None:
+        raise anthropic_flt.Unreachable(url)
+
+    # A site that does not answer at all keeps the last record's link, so an outage changes nothing.
+    assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", down) == []
+    assert json.loads((out / "source.json").read_text(encoding="utf-8"))["docs"] == "https://docs.example/"
+    # A site that answers without the pages loses it.
     assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", site({})) == []
     assert "docs" not in json.loads((out / "source.json").read_text(encoding="utf-8"))
+    assert refresh_anthropic_flt.refresh(root, out, "https://docs.example/", down) == []
+    assert "docs" not in json.loads((out / "source.json").read_text(encoding="utf-8"))
+
+
+def test_a_request_is_retried_and_only_a_missing_page_is_an_answer(monkeypatch):
+    calls = []
+
+    def unanswered(request, timeout):
+        calls.append(request.full_url)
+        raise urllib.error.URLError("no route")
+
+    monkeypatch.setattr(urllib.request, "urlopen", unanswered)
+    with pytest.raises(anthropic_flt.Unreachable):
+        refresh_anthropic_flt.fetch("https://docs.example/thm.html", "GET", attempts=3, wait=0)
+    assert len(calls) == 3
+
+    def missing(request, timeout):
+        raise urllib.error.HTTPError(request.full_url, 404, "Not Found", None, None)
+
+    monkeypatch.setattr(urllib.request, "urlopen", missing)
+    assert refresh_anthropic_flt.fetch("https://docs.example/thm.html", "HEAD", wait=0) is None
 
 
 def imperial_chapter() -> Container:
     shared = Leaf("A shared name", "shared", [("lean", "Imp.shared")], "")
     named = Leaf("The root", "root", [("lean", "Other.name, root_thm")], "")
     plain = Leaf("No Lean", "plain", [("declaration", "theorem")], "")
-    return Container("Fermat's Last Theorem (Imperial)", "flt", [Entry(shared), Entry(named), Entry(plain)])
+    frey = Leaf("The Frey package", "frey", [("lean", "FreyPackage")], "")
+    return Container("Fermat's Last Theorem (Imperial)", "flt", [Entry(shared), Entry(named), Entry(plain), Entry(frey)])
 
 
 def build(tmp_path, docs: str | None = None, imperial: Container | None = None):
@@ -276,20 +347,31 @@ def test_a_part_per_step_holds_the_landmarks_of_its_stage(tmp_path):
     assert [(entry.node.title, entry.owned) for entry in parts[0].entries] == [("root_thm", True), ("C.first", True)]
     # A.step opens its step in backticks, so it takes the step's name.
     assert [(entry.node.title, entry.owned) for entry in parts[1].entries] == [("Second step ≥ 2", True), ("B.deep", True)]
-    # The section after the steps places nothing and links what it names.
-    assert [(entry.node.title, entry.owned) for entry in parts[2].entries] == [("B.deep", False)]
+    # The section after the steps places nothing and links what its quoted text names.
+    assert [(entry.node.title, entry.owned) for entry in parts[2].entries] == [("B.deep", False), ("C.first", False)]
     assert built.stats == {"imperial_matches": 0, "articles": 4, "landmark_edges": 4, "parts": 3, "theorems": 5,
                            "edges": 5}
     assert links == {"A.step": f"{BLOB}/Theorems/Thm_A_step.lean#L7", "B.deep": f"{BLOB}/Theorems/Thm_B_deep.lean#L5",
                      "root_thm": f"{BLOB}/Theorems/Thm_root_thm.lean#L2", "C.first": f"{BLOB}/Theorems/Thm_C_first.lean#L2"}
     page = files[Path("blueprint/roadmap/anthropic-flt/2-second-step-2/README.md")]
     # Quoted as GitHub reads it: underscores outside code escaped, a blank line before the list.
-    assert "> **2. Second step ≥ 2.** `A.step` proves it from:\n>\n> - `B.deep`, with F\\_p;\n> - nothing else." in page
+    assert ("> **2. Second step ≥ 2.** `A.step`, adapted from the Imperial College London FLT project, proves it from:\n"
+            ">\n> - `B.deep (h : q ≠ 2) : q = q`, with F\\_p;\n> - nothing else.") in page
     assert f"*Quoted from the route of the proof in [PROOF-PATH.md]({BLOB}/PROOF-PATH.md) of " in page
+    # B.deep's span carries its signature, and still counts as naming it.
     assert "in the order this step names them:\n\n- [Second step ≥ 2](a-step.md)\n- [B.deep](b-deep.md)" in page
+    first = files[Path("blueprint/roadmap/anthropic-flt/1-first-step/README.md")]
+    assert ("The theorem itself, which the repository's web pages place before this step, then the landmarks they "
+            "place in it, in the order this step names them:\n\n- [root_thm](root-thm.md)\n- [C.first](c-first.md)") in first
     section = files[Path("blueprint/roadmap/anthropic-flt/exact-strength/README.md")]
+    assert "> - **Named.** Proved: `B.deep`, in the strength needed. …\n> - **Other.** `C.first` holds as stated." in section
+    assert "Not proved" not in section and "Left" not in section
+    assert (f"*Quoted from the section “Exact strength” of [PROOF-PATH.md]({BLOB}/PROOF-PATH.md) of "
+            "[anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem) at commit "
+            f"[aaaaaaaa](https://github.com/anthropics/fermats-last-theorem/tree/{REV}), Apache-2.0: each “Proved:” "
+            "clause, cut with … where the text goes on.*") in section
     assert "No landmark is placed in this section. The landmarks it names" in section
-    assert "- [B.deep](../2-second-step-2/b-deep.md)" in section
+    assert "- [B.deep](../2-second-step-2/b-deep.md)\n- [C.first](../1-first-step/c-first.md)" in section
 
 
 def test_an_article_quotes_its_statement_aliases_and_dependencies(tmp_path):
@@ -301,6 +383,8 @@ def test_an_article_quotes_its_statement_aliases_and_dependencies(tmp_path):
     assert f"*Quoted from [Theorems/Thm_A_step.lean, line 7]({BLOB}/Theorems/Thm_A_step.lean#L7) of " in page
     assert "Aliases on the repository's web pages: “Step”." in page
     assert "PROOF-PATH.md names it in [2. Second step ≥ 2](README.md), as the theorem that carries step 2." in page
+    deep = files[Path("blueprint/roadmap/anthropic-flt/2-second-step-2/b-deep.md")]
+    assert "PROOF-PATH.md names it in [2. Second step ≥ 2](README.md) and [Exact strength](../exact-strength/README.md)." in deep
     assert f"## Depends on\n\n{anthropic_flt.NO_STATEMENT_EDGES}\n\n## Proof depends on\n\n- [B.deep](b-deep.md)" in page
     assert f"and proved in [P2M/Sol/S_A_step.lean]({BLOB}/P2M/Sol/S_A_step.lean)." in page
     assert "- [The repository's documentation page for `A.step`](https://docs.example/thm.html#A.step)" in page
@@ -316,7 +400,8 @@ def test_the_intro_attributes_what_it_quotes_and_counts_the_rest(tmp_path):
     assert "> A proof, built on Mathlib.\n\n*Quoted from the project description in [formalization.yaml]" in page
     assert "> Intro with E\\_P and `X.y`.\n\n*Quoted from [PROOF-PATH.md]" in page
     assert "> Portions derive from the Imperial College London FLT project." in page
-    assert "mark 4 of them as landmarks" in page and "the other 1 theorems" not in page
+    assert "list 5 theorems and mark 4 of them as landmarks" in page and "the other theorem is counted" in page
+    assert "The web pages put `root_thm` in a stage before the first step, so it opens part 1." in page
     assert "4 edges in all" in page and "Imperial FLT chapter" not in page
     assert "Articles link the repository's files at the commit above." in page
     assert "## The route\n\n- [1. First step](1-first-step/README.md)" in page
@@ -337,6 +422,10 @@ def test_a_name_the_imperial_chapter_shares_is_linked(tmp_path):
             "[Imp.shared](../../flt/shared.md) in the Imperial FLT chapter.") in first
     page = files[Path("blueprint/roadmap/anthropic-flt/README.md")]
     assert "[Imperial FLT chapter](../flt/README.md)" in page and "At this commit 2 names do." in page
+    # PROOF-PATH.md says the Frey package is adapted from the Imperial project, which has an article on its own.
+    assert ("The repository's `FreyPackage` is adapted from the Imperial College London FLT project, as PROOF-PATH.md "
+            "says, and the Imperial FLT chapter has an article on its [`FreyPackage`](../flt/frey.md).") in page
+    assert built.stats["imperial_matches"] == 2
 
 
 def test_the_committed_data_build_the_chapter():

@@ -178,9 +178,9 @@ this chapter yet, so its articles have no edges.
 
 ## The Anthropic FLT chapter
 
-[anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem)
-is a Lean proof of Fermat's Last Theorem along the route of Frey, Serre, Ribet,
-Wiles and Taylor-Wiles, by Anthropic, derived in part, as it says, from
+[anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem),
+by Anthropic, states that it is a Lean proof of Fermat's Last Theorem along the
+route of Frey, Serre, Ribet, Wiles and Taylor-Wiles, derived in part from
 Imperial's FLT project, flt-regular and Mathlib. Its `PROOF-PATH.md` describes
 the route in six steps and a section on the exact strength of the named steps,
 and the data of its web pages list its 29,511 theorems, mark 49 of them as
@@ -200,8 +200,11 @@ states.
    imports and `attribute` lines to the top-level `:=`; and the landmarks its
    proof reaches are the nearest ones in `html/data/edges.js`, the import lines
    of the proof modules, passing only through theorems that are not landmarks. A
-   theorem that opens a step, as the theorem carrying it, takes the step's name
-   as its title.
+   theorem a step opens with, when the web pages place it in that step, takes
+   the step's name as its title; the web pages put `fermat_last_theorem` in a
+   stage before the first step, so it opens part 1. The section on the exact
+   strength of the named steps is quoted by its "Proved:" clauses only: the map
+   records what the repository proves, not what it leaves out.
 2. Where a landmark's name, or another declaration its statement file makes, is
    also a Lean name in the Imperial FLT chapter, its article links that article.
    The names are compared as written.
@@ -212,9 +215,11 @@ states.
    what the pin gives. The weekly run, or a dispatch with `newest`, moves the
    pin to the repository's newest commit. The articles link the repository's
    documentation site only when the run finds that the site serves the
-   landmarks' pages. A refresh writes nothing, and the workflow fails, when the
-   repository is not Apache-2.0, a landmark's statement file is missing or
-   states another theorem, or the landmarks drop under half the last count.
+   landmarks' pages; when the site does not answer at all, the last record's
+   link stays. A refresh writes nothing, and the workflow fails, when the
+   repository is not Apache-2.0, a file the refresh reads is missing from the
+   checkout, a landmark's statement file states another theorem or may be cut
+   short, or the landmarks drop under half the last count.
 
 ## Working on it
 
