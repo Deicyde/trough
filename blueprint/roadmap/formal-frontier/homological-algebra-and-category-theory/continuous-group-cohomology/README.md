@@ -216,6 +216,6 @@ module boundaries, conventions and client map.
 
 ## Main results
 
-Its formalization.yaml lists 205 main results, and the scan finds 203 of them declared in the file the yaml gives; they are on their own page, not made articles. The scan does not find `ContinuousCohomology.openNormalInflationCoconeIsColimit_type` ([ContinuousGroupCohomology/FiniteStageColimit.lean](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/FiniteStageColimit.lean)), `ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsCone_isLimit` ([ContinuousGroupCohomology/CompactTateNormLimitSequence.lean](https://github.com/FormalFrontier/continuous-group-cohomology/blob/4434e3f215302e5c9ac4214c27646d0d21884169/ContinuousGroupCohomology/CompactTateNormLimitSequence.lean)).
+Its formalization.yaml lists 205 main results, and the scan finds 205 of them declared in the file the yaml gives; they are on their own page, not made articles.
 
 - [Main results](main-results/README.md)

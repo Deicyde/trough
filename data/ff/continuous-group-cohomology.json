@@ -162,7 +162,11 @@
   {
    "name": "ContinuousCohomology.openNormalInflationCoconeIsColimit_type",
    "file": "ContinuousGroupCohomology/FiniteStageColimit.lean",
-   "found": null
+   "found": {
+    "line": 194,
+    "kind": "alias",
+    "stated": false
+   }
   },
   {
    "name": "ContinuousCohomology.openNormalInflationCoconeIsColimit",
@@ -941,7 +945,11 @@
   {
    "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsCone_isLimit",
    "file": "ContinuousGroupCohomology/CompactTateNormLimitSequence.lean",
-   "found": null
+   "found": {
+    "line": 80,
+    "kind": "alias",
+    "stated": false
+   }
   },
   {
    "name": "ContinuousGroupCohomology.LevelCompact.compactTotalInvariantsLimitIso",
