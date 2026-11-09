@@ -13,7 +13,7 @@
 > - **"Irreducible"** is F\_p-irreducibility of E[p]; absolute irreducibility, where lifting needs it, is derived in
 >   the tree (`ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd`).
 
-*Quoted from the section “Exact strength of the named steps” of [PROOF-PATH.md](https://github.com/anthropics/fermats-last-theorem/blob/6e837e75355538c7f80bab5b956861e86c4eacc2/PROOF-PATH.md) of [anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem) at commit [6e837e75](https://github.com/anthropics/fermats-last-theorem/tree/6e837e75355538c7f80bab5b956861e86c4eacc2), Apache-2.0: each “Proved:” clause, cut with … where the text goes on.*
+*Quoted from the section “Exact strength of the named steps” of [PROOF-PATH.md](https://github.com/anthropics/fermats-last-theorem/blob/6e837e75355538c7f80bab5b956861e86c4eacc2/PROOF-PATH.md) of [anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem) at commit [6e837e75](https://github.com/anthropics/fermats-last-theorem/tree/6e837e75355538c7f80bab5b956861e86c4eacc2), Apache-2.0: each “Proved:” clause, cut with … where the text goes on, and entries that say neither what is proved nor what is not, whole.*
 
 No landmark is placed in this section. The landmarks it names, placed in the steps:
 
