@@ -128,11 +128,11 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
                    tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
-                   formal_conjectures: str | None = None) -> str:
+                   formal_conjectures: str | None = None, analysis: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
-    Conjectures commit read."""
+    Conjectures commit read, and *analysis* the Analysis I companion's."""
     formal_frontier = formal_frontier or {}
     lines = [
         "# Sources",
@@ -200,8 +200,21 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             f"(https://github.com/google-deepmind/formal-conjectures/tree/{formal_conjectures}), Apache-2.0. They are "
             "read from the source text, without Lean.",
         ]
+    if analysis:
+        lines += [
+            "",
+            "## Analysis I companion",
+            "",
+            "- `data/analysis/sections.json`: each section module's title, module docstring and imports of other "
+            "sections, its labelled items with the docstring, Lean statement, line and status of each declaration "
+            "carrying them, the chapter titles of the READMEs and the titles of the other modules, from "
+            f"[teorth/analysis at {analysis[:8]}](https://github.com/teorth/analysis/tree/{analysis}), Apache-2.0. They "
+            "are read from the source text, without Lean. `data/analysis/source.json` records the commit, its Lean "
+            "toolchain and Mathlib.",
+        ]
     lines += ["", "## Libraries", ""]
-    pinned = {**formal_frontier, **({"formal-conjectures": formal_conjectures} if formal_conjectures else {})}
+    pinned = {**formal_frontier, **({"formal-conjectures": formal_conjectures} if formal_conjectures else {}),
+              **({"analysis": analysis} if analysis else {})}
     for group, heading in GROUPS:
         members = [library for library in libraries if library["group"] == group]
         if members:

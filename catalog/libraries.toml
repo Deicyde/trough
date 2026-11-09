@@ -3,7 +3,9 @@
 # Snapshot fields (head, head_date, toolchain, mathlib, lean_files) were read
 # from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08, and
 # drift as the libraries move; a Formal Frontier library's commit is the one
-# its data/ff/ record pins, so its entry has no head. map_status is
+# its data/ff/ record pins, so its entry has no head. Nor has the Analysis I
+# companion's: its commit is the one data/analysis/ pins, and its snapshot
+# fields were read at that pin on 2026-11-09. map_status is
 # "live" (a chapter of this site), "elsewhere" (mapped on another site) or
 # "planned"; map_unit says what one article will be. A Formal Frontier
 # library's subject is its part of that chapter, one of SUBJECTS in
@@ -241,18 +243,16 @@ name = "Analysis I companion"
 repo = "teorth/analysis"
 group = "library"
 homepage = "https://teorth.github.io/analysis/"
-what = "Lean companion to Tao's Analysis I textbook (section-by-section exercises), plus measure theory."
-informal_layer = "Literate site: literate.toml orders modules Analysis.Section_2_1 ... (docstrings_as_text), excluding Analysis.Misc and Analysis.MeasureTheory"
+what = "Terence Tao's Lean companion to his textbook Analysis I, a module per section (61 sections, 4 chapter epilogues and 9 appendix sections), with a companion to his An introduction to measure theory (a Notation module and 17 sections of its Chapter 1) and 15 modules outside both books."
+informal_layer = "Module docstrings title each section ('Analysis I, Section 6.1: Convergence and limit laws') and list its main constructions and results; declaration docstrings, in Verso markup, start with the book's labels ('Definition 6.1.3', 'Exercise 6.1.2'): 1,069 labelled items carried by 1,571 declarations at a19a5bfa, examples included. literate.toml orders the Analysis I sections for the Verso site, the README lists the chapters and Analysis/MeasureTheory/README.md the measure theory sections. The README says exercises are left as sorry by design."
 formalization_yaml = "absent"
 license = "Apache-2.0"
 toolchain = "v4.29.0-rc8"
 mathlib = "698d2b68b870"
 lean_files = 109
-head = "a19a5bfadc61"
-head_date = "2026-10-18"
-map_status = "planned"
+map_status = "live"
 map_unit = "textbook section"
-map_plan = "One article per textbook section (the Section_X_Y modules)."
+map_plan = "One article per section module of the two books, Analysis I's on a page per chapter in literate.toml's order and the measure theory book's on a page per section of its Chapter 1: its module docstring, then a block per labelled item with each declaration's docstring, Lean statement, source line and status (proved here, stated without proof, an exercise, a definition), read from the source without Lean. Edges from the imports between sections; the modules outside both books are listed on one page."
 
 [[library]]
 id = "anthropic-flt"

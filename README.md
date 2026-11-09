@@ -15,8 +15,9 @@ gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
 roadmaps' status files name, five research projects from their
 leanblueprints (Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+),
-the Formal Frontier libraries from their headline results, and Formal
-Conjectures from its problem files.
+the Formal Frontier libraries from their headline results, Formal
+Conjectures from its problem files, and the Analysis I companion from its
+section modules.
 
 ## The Mathlib map
 
@@ -220,6 +221,50 @@ benchmark sets. No Lean runs for this chapter, so its articles have no edges.
    don't close), naming each, or when it keeps under half the statements the
    last record kept.
 
+## The Analysis I chapter
+
+[teorth/analysis](https://github.com/teorth/analysis) is Terence Tao's Lean
+companion to his textbook *Analysis I*, with a companion to his *An
+introduction to measure theory*: a Lean module per section of each book, its
+module docstring titling it, and docstrings that start with the book's labels
+("Definition 6.1.3", "Exercise 6.1.2"). Its README says the Lean paraphrases
+the book as faithfully as it can and leaves the exercises as `sorry`. The
+chapter has a part per book, Analysis I's sections on a page per chapter in the
+order of the repository's `literate.toml` and the measure theory book's on a
+page per section of its Chapter 1, and a page listing the modules of neither
+book. An article per section module quotes its module docstring and has a block
+per label, in file order: the declarations carrying it, `example`s included,
+each with its docstring, its Lean statement, its line in the source and its
+status: proved here, stated without proof, an exercise stated without proof, or
+a definition, whose value may be left as `sorry`. Declarations with no label are
+counted, not shown. An edge from one section to another means its Lean file
+imports the other's.
+
+1. `tools/refresh_analysis.py CHECKOUT` reads a checkout and writes
+   `data/analysis/source.json`, the commit, its date, toolchain and Mathlib, and
+   `sections.json`: each section's title, module docstring and imports of other
+   sections, its labelled items with their declarations, its counts of
+   declarations and examples with no label, the chapter titles the READMEs give
+   and the other modules' titles.
+2. `tools/trough/leansource.py` reads each file as it does for Formal
+   Frontier, and its `scan_with_examples` gives the file's `example`s as well.
+   A label is the kind and number a docstring starts with, after any Verso
+   `{given}` role, and several declarations can carry one. A declaration is
+   proved here when its text from the `:=` that ends its statement holds no
+   `sorry`, which says nothing of the results its proof uses. A `private`
+   declaration is not read, and an article names a label it carries. The
+   docstrings' Verso markup is shown as Markdown: a role's code as code, Verso's
+   formulas in TeX.
+3. The **Analysis I data** workflow (`.github/workflows/analysis-data.yml`)
+   fetches the repository at the commit `source.json` pins, as a blobless
+   sparse checkout of the files the refresh reads, runs the refresh,
+   regenerates the pages and runs the tests; on a pull request it fails when
+   the committed data differ from what the pin gives. The weekly run, or a
+   dispatch with `newest`, moves the pin to the newest main commit whose book
+   build passed. A refresh writes nothing, and the workflow fails, when the
+   repository is not Apache-2.0, when `literate.toml` names a module it lacks,
+   or when it keeps under half the labelled declarations the last record kept.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -290,3 +335,6 @@ docstrings and Lean statements in `data/formal-conjectures/` come from
 [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures)
 (Google DeepMind), Apache-2.0; Formal Conjectures asks that its Erdős
 problems' docstrings follow [erdosproblems.com](https://www.erdosproblems.com).
+The titles, docstrings, Lean statements and README text in `data/analysis/`
+come from [teorth/analysis](https://github.com/teorth/analysis) (Terence Tao
+and its contributors), Apache-2.0.

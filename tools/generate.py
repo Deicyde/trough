@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import blueprints, catalog, ff, formal_conjectures, links, mathlib, tauceti, wiki
+from trough import analysis, blueprints, catalog, ff, formal_conjectures, links, mathlib, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -148,6 +148,28 @@ def generate() -> dict[Path, str]:
             f"{fc_stats['subset_missing']} of {fc_stats['subset_names']} FC100 names without an article",
             file=sys.stderr,
         )
+    analysis_data = analysis.load(DATA)
+    if analysis_data:
+        analysis_built, analysis_links, forward = analysis.chapter(analysis_data)
+        assign_paths(analysis_built.root, ROADMAP / "analysis")
+        blueprints.resolve(analysis_built, VAULT)
+        files.update(render_tree(analysis_built.root, VAULT))
+        chapters["analysis"] = "analysis/README.md"
+        lean_links["analysis"] = analysis_links
+        analysis_stats = analysis_built.stats
+        blueprint_rows.append(("Analysis I companion", "DECOMPOSED",
+                               f"[{analysis_stats['articles']} section modules](../roadmap/analysis/README.md) of Analysis I "
+                               "and An introduction to measure theory, one article each, with a block per labelled item."))
+        print(
+            f"analysis: {analysis_stats['articles']} articles ({analysis_stats['analysis-i sections']} Analysis I, "
+            f"{analysis_stats['measure-theory sections']} measure theory); {analysis_stats['items']} labelled items, "
+            f"{analysis_stats['declarations']} declarations ({analysis_stats['proved']} proved here, "
+            f"{analysis_stats['stated']} stated, {analysis_stats['exercise']} exercises stated, "
+            f"{analysis_stats['definition']} definitions, {analysis_stats['definition sorry']} definitions left as sorry, "
+            f"{analysis_stats['axiom']} axioms); {analysis_stats['edges']} import edges, {len(forward)} forward"
+            + "".join(f"\n  forward import: {source} imports {target}" for source, target in forward),
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -171,6 +193,7 @@ def generate() -> dict[Path, str]:
         (tau.rev, tau.roadmap_rev) if tau and tau.deps else None,
         {library["id"]: record["rev"] for library, record in ff_libraries},
         fc_data["rev"] if fc_data else None,
+        analysis_data["rev"] if analysis_data else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "
