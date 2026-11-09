@@ -54,10 +54,10 @@ MeasureTheory.tendsto_lintegral_nn_filter_of_le_const.{u_1, u_2} {Ω : Type u_1}
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.FiniteMeasure.tendsto_lintegral_nn_of_le_const`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/FiniteMeasure.html#MeasureTheory.FiniteMeasure.tendsto_lintegral_nn_of_le_const)
-- [Source of `MeasureTheory.FiniteMeasure.tendsto_lintegral_nn_of_le_const` in Mathlib/MeasureTheory/Measure/FiniteMeasure.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Measure/FiniteMeasure.lean#L631)
+- [Source of `MeasureTheory.FiniteMeasure.tendsto_lintegral_nn_of_le_const` in Mathlib/MeasureTheory/Measure/FiniteMeasure.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Measure/FiniteMeasure.lean#L631)
 - [Mathlib documentation: `MeasureTheory.tendsto_lintegral_nn_filter_of_le_const`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/HasOuterApproxClosed.html#MeasureTheory.tendsto_lintegral_nn_filter_of_le_const)
-- [Source of `MeasureTheory.tendsto_lintegral_nn_filter_of_le_const` in Mathlib/MeasureTheory/Measure/HasOuterApproxClosed.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Measure/HasOuterApproxClosed.lean#L52)
-- [1000+ theorems list: Q1067156X](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1303)
+- [Source of `MeasureTheory.tendsto_lintegral_nn_filter_of_le_const` in Mathlib/MeasureTheory/Measure/HasOuterApproxClosed.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Measure/HasOuterApproxClosed.lean#L52)
+- [1000+ theorems list: Q1067156X](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1303)
 - [1000+ theorems project: Q1067156X](https://1000-plus.github.io/all.html?length=-1#Q1067156)
 - [Wikipedia: Bounded convergence theorem](https://en.wikipedia.org/wiki/Bounded_convergence_theorem)
 - [Wikidata: Q1067156](https://www.wikidata.org/wiki/Q1067156)

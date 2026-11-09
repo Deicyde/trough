@@ -6,8 +6,6 @@
 {"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "already determine a ring"}}}], "object": [{"location": {"declaration": "Ring.ofMinimalAxioms"}}]}
 {"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a commutative ring", "prefix": "integers "}}}], "object": [{"location": {"declaration": "Int.instCommRing"}}]}
 {"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a commutative ring", "prefix": "$n$ "}}}], "object": [{"location": {"declaration": "ZMod.commRing"}}]}
-{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a ring", "prefix": "coefficients in $R$ "}}}], "object": [{"location": {"declaration": "Polynomial.ring"}}]}
-{"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "commutative when $R$ is"}}}], "object": [{"location": {"declaration": "Polynomial.commRing"}}]}
 {"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a ring", "prefix": "entries in $R$ "}}}], "object": [{"location": {"declaration": "Matrix.instRing"}}]}
 {"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "form a ring", "prefix": "f(y)$, "}}}], "object": [{"location": {"declaration": "AddMonoid.End.instRing"}}]}
 {"subject": [{"type": "generic", "uri": "ring.md", "location": {"quote": {"exact": "componentwise operations"}}}], "object": [{"location": {"declaration": "Pi.ring"}}]}

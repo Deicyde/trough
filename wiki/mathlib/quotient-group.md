@@ -47,7 +47,7 @@ of $G$.
 - **Sign of a permutation.** The [alternating group](trough:alternatingGroup)
   $A_n$ is the kernel of the [signature](trough:Equiv.Perm.sign), so for
   $n \geq 2$ the quotient $S_n / A_n$ is a group of order $2$.
-- **Abelianization.** The [abelianization](trough:Abelianization) of $G$ is
+- **Abelianization.** The [abelianization](trough:Group.Abelianization) of $G$ is
   the quotient of $G$ by its commutator subgroup, the
   largest abelian quotient of $G$.
 - **Trivial cases.** Dividing by the trivial subgroup gives back $G$,

@@ -19,8 +19,8 @@ Nat.Partrec.Code.smn :
 ## Sources
 
 - [Mathlib documentation: `Nat.Partrec.Code.smn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/PartrecCode.html#Nat.Partrec.Code.smn)
-- [Source of `Nat.Partrec.Code.smn` in Mathlib/Computability/PartrecCode.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/PartrecCode.lean#L520)
-- [1000+ theorems list: Q1766814](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1885)
+- [Source of `Nat.Partrec.Code.smn` in Mathlib/Computability/PartrecCode.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/PartrecCode.lean#L520)
+- [1000+ theorems list: Q1766814](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1885)
 - [1000+ theorems project: Q1766814](https://1000-plus.github.io/all.html?length=-1#Q1766814)
 - [Wikipedia: Smn theorem](https://en.wikipedia.org/wiki/Smn_theorem)
 - [Wikidata: Q1766814](https://www.wikidata.org/wiki/Q1766814)

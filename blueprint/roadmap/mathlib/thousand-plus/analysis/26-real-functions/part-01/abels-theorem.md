@@ -44,10 +44,10 @@ Real.tendsto_tsum_powerSeries_nhdsWithin_lt {f : ℕ → ℝ} {l : ℝ}
 ## Sources
 
 - [Mathlib documentation: `Complex.tendsto_tsum_powerSeries_nhdsWithin_stolzCone`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/AbelLimit.html#Complex.tendsto_tsum_powerSeries_nhdsWithin_stolzCone)
-- [Source of `Complex.tendsto_tsum_powerSeries_nhdsWithin_stolzCone` in Mathlib/Analysis/Complex/AbelLimit.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/AbelLimit.lean#L240)
+- [Source of `Complex.tendsto_tsum_powerSeries_nhdsWithin_stolzCone` in Mathlib/Analysis/Complex/AbelLimit.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/AbelLimit.lean#L240)
 - [Mathlib documentation: `Real.tendsto_tsum_powerSeries_nhdsWithin_lt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/AbelLimit.html#Real.tendsto_tsum_powerSeries_nhdsWithin_lt)
-- [Source of `Real.tendsto_tsum_powerSeries_nhdsWithin_lt` in Mathlib/Analysis/Complex/AbelLimit.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/AbelLimit.lean#L262)
-- [1000+ theorems list: Q318767](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L360)
+- [Source of `Real.tendsto_tsum_powerSeries_nhdsWithin_lt` in Mathlib/Analysis/Complex/AbelLimit.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/AbelLimit.lean#L262)
+- [1000+ theorems list: Q318767](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L360)
 - [1000+ theorems project: Q318767](https://1000-plus.github.io/all.html?length=-1#Q318767)
 - [Wikipedia: Abel's theorem](https://en.wikipedia.org/wiki/Abel's_theorem)
 - [Wikidata: Q318767](https://www.wikidata.org/wiki/Q318767)

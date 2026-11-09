@@ -15,5 +15,5 @@ metricSpacePi.{v, u_2} {β : Type v} {X : β → Type u_2} [Fintype β] [(b : β
 ## Sources
 
 - [Mathlib documentation: `metricSpacePi`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Basic.html#metricSpacePi)
-- [Source of `metricSpacePi` in Mathlib/Topology/MetricSpace/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/MetricSpace/Basic.lean#L156)
-- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L407)
+- [Source of `metricSpacePi` in Mathlib/Topology/MetricSpace/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/MetricSpace/Basic.lean#L156)
+- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L407)

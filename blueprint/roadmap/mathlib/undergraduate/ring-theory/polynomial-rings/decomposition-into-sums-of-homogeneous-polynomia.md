@@ -16,5 +16,5 @@ MvPolynomial.sum_homogeneousComponent.{u_1, u_3} {σ : Type u_1} {R : Type u_3} 
 ## Sources
 
 - [Mathlib documentation: `MvPolynomial.sum_homogeneousComponent`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/MvPolynomial/Homogeneous.html#MvPolynomial.sum_homogeneousComponent)
-- [Source of `MvPolynomial.sum_homogeneousComponent` in Mathlib/RingTheory/MvPolynomial/Homogeneous.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/MvPolynomial/Homogeneous.lean#L558)
-- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L168)
+- [Source of `MvPolynomial.sum_homogeneousComponent` in Mathlib/RingTheory/MvPolynomial/Homogeneous.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/MvPolynomial/Homogeneous.lean#L581)
+- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L168)

@@ -122,5 +122,5 @@ module of finite rank.
 ## Sources
 
 - [Mathlib documentation: `ExteriorAlgebra`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/ExteriorAlgebra/Basic.html#ExteriorAlgebra)
-- [Source of `ExteriorAlgebra` in Mathlib/LinearAlgebra/ExteriorAlgebra/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/ExteriorAlgebra/Basic.lean#L58)
-- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L116)
+- [Source of `ExteriorAlgebra` in Mathlib/LinearAlgebra/ExteriorAlgebra/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/ExteriorAlgebra/Basic.lean#L58)
+- [Mathlib overview: General algebra › Algebras over a ring](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L116)

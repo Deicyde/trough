@@ -32,10 +32,10 @@ ContinuousLinearMap.isOpenMap.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {𝕜' : Ty
 ## Sources
 
 - [Mathlib documentation: `ContinuousLinearMap.isOpenMap`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Operator/Banach.html#ContinuousLinearMap.isOpenMap)
-- [Source of `ContinuousLinearMap.isOpenMap` in Mathlib/Analysis/Normed/Operator/Banach.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Operator/Banach.lean#L227)
-- [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L286)
-- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L425)
-- [1000+ theorems list: Q944297](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1131)
+- [Source of `ContinuousLinearMap.isOpenMap` in Mathlib/Analysis/Normed/Operator/Banach.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Operator/Banach.lean#L230)
+- [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L286)
+- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L425)
+- [1000+ theorems list: Q944297](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1131)
 - [1000+ theorems project: Q944297](https://1000-plus.github.io/all.html?length=-1#Q944297)
 - [Wikipedia: Open mapping theorem (functional analysis)](https://en.wikipedia.org/wiki/Open_mapping_theorem_%28functional_analysis%29)
 - [Wikidata: Q944297](https://www.wikidata.org/wiki/Q944297)

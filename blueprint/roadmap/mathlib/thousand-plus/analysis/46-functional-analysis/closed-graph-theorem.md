@@ -25,8 +25,8 @@ LinearMap.continuous_of_isClosed_graph.{u_1, u_3, u_5} {𝕜 : Type u_1} [Nontri
 ## Sources
 
 - [Mathlib documentation: `LinearMap.continuous_of_isClosed_graph`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Operator/Banach.html#LinearMap.continuous_of_isClosed_graph)
-- [Source of `LinearMap.continuous_of_isClosed_graph` in Mathlib/Analysis/Normed/Operator/Banach.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Operator/Banach.lean#L536)
-- [1000+ theorems list: Q1068085](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1309)
+- [Source of `LinearMap.continuous_of_isClosed_graph` in Mathlib/Analysis/Normed/Operator/Banach.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Operator/Banach.lean#L542)
+- [1000+ theorems list: Q1068085](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1309)
 - [1000+ theorems project: Q1068085](https://1000-plus.github.io/all.html?length=-1#Q1068085)
 - [Wikipedia: Closed graph theorem](https://en.wikipedia.org/wiki/Closed_graph_theorem)
 - [Wikidata: Q1068085](https://www.wikidata.org/wiki/Q1068085)

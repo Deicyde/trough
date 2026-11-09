@@ -394,5 +394,179 @@
   "article_id": "af_65dae603bcad3a51819a6860",
   "mathlib_rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
   "change": "trough:1000:Q1146791 names no other page: unlinked"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization is deprecated: it now cites lean:Group.Abelianization"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.of is deprecated: it now cites lean:Group.Abelianization.of"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.ker_of is deprecated: it now cites lean:Group.Abelianization.ker_of"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.commutator_le_ker is deprecated: it now cites lean:Group.Abelianization.commutator_le_ker"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.lift_unique is deprecated: it now cites lean:Group.Abelianization.lift_unique"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.lift is deprecated: it now cites lean:Group.Abelianization.lift"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.equivOfComm is deprecated: it now cites lean:Group.Abelianization.equivOfComm"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.map is deprecated: it now cites lean:Group.Abelianization.map"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.map_comp is deprecated: it now cites lean:Group.Abelianization.map_comp"
+ },
+ {
+  "file": "abelianization.md",
+  "article_id": "af_fa41078caa33967da7b2e81a",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "its concept Abelianization is now Group.Abelianization"
+ },
+ {
+  "file": "alternating-group.md",
+  "article_id": "af_4c425b4601e73e5607189d1b",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "area-group-theory.md",
+  "article_id": "af_e620bc4c5ed6c6bf13b0d972",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.lift is deprecated: it now cites lean:Group.Abelianization.lift"
+ },
+ {
+  "file": "area-group-theory.md",
+  "article_id": "af_e620bc4c5ed6c6bf13b0d972",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "associative-algebra-over-a-commutative-ring.md",
+  "article_id": "af_a7323adfbb834937f0549d54",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Polynomial.algebraOfAlgebra has no usable record at this pin: unlinked"
+ },
+ {
+  "file": "classification-of-abelian-simple-groups.md",
+  "article_id": "af_3d092e401f76df3264e4bbba",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "finiteness-of-the-class-number.md",
+  "article_id": "af_a069927a04ef2f6fdbc5c5d3",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt is deprecated: it now cites lean:NumberField.RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt"
+ },
+ {
+  "file": "free-group.md",
+  "article_id": "af_823659e3d5770f80e200b4b4",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "group-morphism.md",
+  "article_id": "af_624714303dbab73d4633bb5c",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization.lift is deprecated: it now cites lean:Group.Abelianization.lift"
+ },
+ {
+  "file": "group-morphism.md",
+  "article_id": "af_624714303dbab73d4633bb5c",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "natural-transformation.md",
+  "article_id": "af_a2e92639b38f504473e7b17f",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "nilpotent-group.md",
+  "article_id": "af_73b67c95c71ead4d84062de6",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:IsNilpotent.to_isSolvable is deprecated: it now cites lean:Group.IsNilpotent.to_isSolvable"
+ },
+ {
+  "file": "normal-subgroup.md",
+  "article_id": "af_3cee2a7176fb61b34adb90e3",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "polynomial-in-one-indeterminate.md",
+  "article_id": "af_09c6cb356916e6eac6c46ed8",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Polynomial.ext_iff is deprecated: it now cites lean:AddMonoidAlgebra.ext_iff"
+ },
+ {
+  "file": "presented-group.md",
+  "article_id": "af_5e72b2353ae36b3fb6570c1d",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "quotient-group.md",
+  "article_id": "af_bd9ac717a66a662b21be44fe",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Abelianization is deprecated: it now cites lean:Group.Abelianization"
+ },
+ {
+  "file": "quotient-group.md",
+  "article_id": "af_bd9ac717a66a662b21be44fe",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
+ },
+ {
+  "file": "ring.md",
+  "article_id": "af_7103ec351338d590278cb5bc",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Polynomial.ring has no usable record at this pin: unlinked"
+ },
+ {
+  "file": "ring.md",
+  "article_id": "af_7103ec351338d590278cb5bc",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "lean:Polynomial.commRing has no usable record at this pin: unlinked"
+ },
+ {
+  "file": "signature.md",
+  "article_id": "af_c97d7348ab1cd7e8b028837b",
+  "mathlib_rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
+  "change": "trough:Abelianization is now trough:Group.Abelianization"
  }
 ]

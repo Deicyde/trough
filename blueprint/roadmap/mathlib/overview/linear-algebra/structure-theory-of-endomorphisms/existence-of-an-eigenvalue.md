@@ -23,5 +23,5 @@ Module.End.exists_eigenvalue.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K] 
 ## Sources
 
 - [Mathlib documentation: `Module.End.exists_eigenvalue`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Eigenspace/Triangularizable.html#Module.End.exists_eigenvalue)
-- [Source of `Module.End.exists_eigenvalue` in Mathlib/LinearAlgebra/Eigenspace/Triangularizable.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/Eigenspace/Triangularizable.lean#L60)
-- [Mathlib overview: Linear algebra › Structure theory of endomorphisms](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L201)
+- [Source of `Module.End.exists_eigenvalue` in Mathlib/LinearAlgebra/Eigenspace/Triangularizable.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Eigenspace/Triangularizable.lean#L60)
+- [Mathlib overview: Linear algebra › Structure theory of endomorphisms](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L201)

@@ -26,8 +26,8 @@ Complex.borelCaratheodory {f : ℂ → ℂ} {M R : ℝ} {z : ℂ} (hM : 0 < M)
 ## Sources
 
 - [Mathlib documentation: `Complex.borelCaratheodory`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/BorelCaratheodory.html#Complex.borelCaratheodory)
-- [Source of `Complex.borelCaratheodory` in Mathlib/Analysis/Complex/BorelCaratheodory.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Complex/BorelCaratheodory.lean#L105)
-- [1000+ theorems list: Q3229335](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2361)
+- [Source of `Complex.borelCaratheodory` in Mathlib/Analysis/Complex/BorelCaratheodory.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/BorelCaratheodory.lean#L105)
+- [1000+ theorems list: Q3229335](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2361)
 - [1000+ theorems project: Q3229335](https://1000-plus.github.io/all.html?length=-1#Q3229335)
 - [Wikipedia: Borel–Carathéodory theorem](https://en.wikipedia.org/wiki/Borel%E2%80%93Carath%C3%A9odory_theorem)
 - [Wikidata: Q3229335](https://www.wikidata.org/wiki/Q3229335)

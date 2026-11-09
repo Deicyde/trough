@@ -109,5 +109,5 @@ subring of elements of norm at most $1$, not as an inverse limit of the rings $\
 ## Sources
 
 - [Mathlib documentation: `Padic`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Padics/PadicNumbers.html#Padic)
-- [Source of `Padic` in Mathlib/NumberTheory/Padics/PadicNumbers.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Padics/PadicNumbers.lean#L542)
-- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L28)
+- [Source of `Padic` in Mathlib/NumberTheory/Padics/PadicNumbers.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Padics/PadicNumbers.lean#L542)
+- [Mathlib overview: General algebra › Numbers](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L28)

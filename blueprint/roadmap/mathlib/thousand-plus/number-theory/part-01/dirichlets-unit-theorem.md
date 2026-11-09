@@ -40,10 +40,10 @@ NumberField.Units.exist_unique_eq_mul_prod.{u_1} (K : Type u_1) [Field K] [Numbe
 ## Sources
 
 - [Mathlib documentation: `NumberField.Units.basisModTorsion`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.html#NumberField.Units.basisModTorsion)
-- [Source of `NumberField.Units.basisModTorsion` in Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean#L465)
+- [Source of `NumberField.Units.basisModTorsion` in Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean#L465)
 - [Mathlib documentation: `NumberField.Units.exist_unique_eq_mul_prod`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.html#NumberField.Units.exist_unique_eq_mul_prod)
-- [Source of `NumberField.Units.exist_unique_eq_mul_prod` in Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean#L504)
-- [1000+ theorems list: Q1227702](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1547)
+- [Source of `NumberField.Units.exist_unique_eq_mul_prod` in Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean#L504)
+- [1000+ theorems list: Q1227702](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1547)
 - [1000+ theorems project: Q1227702](https://1000-plus.github.io/all.html?length=-1#Q1227702)
 - [Wikipedia: Dirichlet's unit theorem](https://en.wikipedia.org/wiki/Dirichlet's_unit_theorem)
 - [Wikidata: Q1227702](https://www.wikidata.org/wiki/Q1227702)

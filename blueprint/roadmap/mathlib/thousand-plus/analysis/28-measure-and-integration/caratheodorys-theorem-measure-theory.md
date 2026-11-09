@@ -19,8 +19,8 @@ Hard to say what exactly is meant.
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.OuterMeasure.caratheodory`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/OuterMeasure/Caratheodory.html#MeasureTheory.OuterMeasure.caratheodory)
-- [Source of `MeasureTheory.OuterMeasure.caratheodory` in Mathlib/MeasureTheory/OuterMeasure/Caratheodory.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/OuterMeasure/Caratheodory.lean#L181)
-- [1000+ theorems list: Q258374](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L297)
+- [Source of `MeasureTheory.OuterMeasure.caratheodory` in Mathlib/MeasureTheory/OuterMeasure/Caratheodory.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/OuterMeasure/Caratheodory.lean#L181)
+- [1000+ theorems list: Q258374](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L297)
 - [1000+ theorems project: Q258374](https://1000-plus.github.io/all.html?length=-1#Q258374)
 - [Wikipedia: Carathéodory's theorem (measure theory)](https://en.wikipedia.org/wiki/Carath%C3%A9odory's_theorem_%28measure_theory%29)
 - [Wikidata: Q258374](https://www.wikidata.org/wiki/Q258374)

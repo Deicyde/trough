@@ -28,5 +28,5 @@ PythagoreanTriple.classification {x y z : ℤ} :
 ## Sources
 
 - [Mathlib documentation: `PythagoreanTriple.classification`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PythagoreanTriples.html#PythagoreanTriple.classification)
-- [Source of `PythagoreanTriple.classification` in Mathlib/NumberTheory/PythagoreanTriples.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/PythagoreanTriples.lean#L604)
-- [Freek Wiedijk's 100 theorems, no. 23](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L112)
+- [Source of `PythagoreanTriple.classification` in Mathlib/NumberTheory/PythagoreanTriples.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/PythagoreanTriples.lean#L604)
+- [Freek Wiedijk's 100 theorems, no. 23](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L112)

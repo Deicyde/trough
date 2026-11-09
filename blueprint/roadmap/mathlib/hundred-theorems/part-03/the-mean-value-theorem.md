@@ -28,9 +28,9 @@ The 1000+ list (Q189136) also cites `exists_ratio_deriv_eq_ratio_slope`.
 ## Sources
 
 - [Mathlib documentation: `exists_deriv_eq_slope`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Deriv/MeanValue.html#exists_deriv_eq_slope)
-- [Source of `exists_deriv_eq_slope` in Mathlib/Analysis/Calculus/Deriv/MeanValue.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/Deriv/MeanValue.lean#L154)
-- [Freek Wiedijk's 100 theorems, no. 75](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L379)
-- [1000+ theorems list: Q189136](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L126)
+- [Source of `exists_deriv_eq_slope` in Mathlib/Analysis/Calculus/Deriv/MeanValue.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/Deriv/MeanValue.lean#L154)
+- [Freek Wiedijk's 100 theorems, no. 75](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L379)
+- [1000+ theorems list: Q189136](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L126)
 - [1000+ theorems project: Q189136](https://1000-plus.github.io/all.html?length=-1#Q189136)
 - [Wikipedia: Mean value theorem](https://en.wikipedia.org/wiki/Mean_value_theorem)
 - [Wikidata: Q189136](https://www.wikidata.org/wiki/Q189136)

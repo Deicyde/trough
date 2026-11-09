@@ -30,10 +30,10 @@ BoundedContinuousFunction.arzela_ascoli.{u, v} {α : Type u} {β : Type v} [Topo
 ## Sources
 
 - [Mathlib documentation: `BoundedContinuousFunction.arzela_ascoli`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.html#BoundedContinuousFunction.arzela_ascoli)
-- [Source of `BoundedContinuousFunction.arzela_ascoli` in Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean#L111)
-- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L268)
-- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L436)
-- [1000+ theorems list: Q1477053](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1722)
+- [Source of `BoundedContinuousFunction.arzela_ascoli` in Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/ContinuousMap/Bounded/ArzelaAscoli.lean#L111)
+- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L268)
+- [Mathlib undergraduate list: Topology › Normed vector spaces on $\R$ and $\C$](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L436)
+- [1000+ theorems list: Q1477053](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1722)
 - [1000+ theorems project: Q1477053](https://1000-plus.github.io/all.html?length=-1#Q1477053)
 - [Wikipedia: Arzelà–Ascoli theorem](https://en.wikipedia.org/wiki/Arzel%C3%A0%E2%80%93Ascoli_theorem)
 - [Wikidata: Q1477053](https://www.wikidata.org/wiki/Q1477053)

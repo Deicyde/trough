@@ -31,5 +31,5 @@ Theorems100.heron.{u_1, u_2} {V : Type u_1} {P : Type u_2} [NormedAddCommGroup V
 ## Sources
 
 - [Mathlib documentation: `Theorems100.heron`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/HeronsFormula.html#Theorems100.heron)
-- [Source of `Theorems100.heron` in Archive/Wiedijk100Theorems/HeronsFormula.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/HeronsFormula.lean#L30)
-- [Freek Wiedijk's 100 theorems, no. 57](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L293)
+- [Source of `Theorems100.heron` in Archive/Wiedijk100Theorems/HeronsFormula.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/HeronsFormula.lean#L29)
+- [Freek Wiedijk's 100 theorems, no. 57](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L293)

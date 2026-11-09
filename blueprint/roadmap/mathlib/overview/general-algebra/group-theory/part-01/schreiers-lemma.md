@@ -116,5 +116,5 @@ groups, as the least size of a finite generating set.
 ## Sources
 
 - [Mathlib documentation: `Subgroup.closure_mul_image_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Schreier.html#Subgroup.closure_mul_image_eq)
-- [Source of `Subgroup.closure_mul_image_eq` in Mathlib/GroupTheory/Schreier.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/Schreier.lean#L91)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L50)
+- [Source of `Subgroup.closure_mul_image_eq` in Mathlib/GroupTheory/Schreier.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Schreier.lean#L91)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L50)

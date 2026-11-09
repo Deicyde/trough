@@ -115,5 +115,5 @@ equivalent condition.
 ## Sources
 
 - [Mathlib documentation: `transcendental_liouvilleNumber`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Transcendental/Liouville/LiouvilleNumber.html#transcendental_liouvilleNumber)
-- [Source of `transcendental_liouvilleNumber` in Mathlib/NumberTheory/Transcendental/Liouville/LiouvilleNumber.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Transcendental/Liouville/LiouvilleNumber.lean#L191)
-- [Mathlib overview: General algebra › Transcendental numbers](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L154)
+- [Source of `transcendental_liouvilleNumber` in Mathlib/NumberTheory/Transcendental/Liouville/LiouvilleNumber.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Transcendental/Liouville/LiouvilleNumber.lean#L190)
+- [Mathlib overview: General algebra › Transcendental numbers](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L154)

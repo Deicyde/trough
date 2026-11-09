@@ -44,8 +44,8 @@ LieModule.exists_nontrivial_weightSpace_of_isSolvable.{u_1, u_2, u_3} (k : Type 
 ## Sources
 
 - [Mathlib documentation: `LieModule.exists_nontrivial_weightSpace_of_isSolvable`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Lie/LieTheorem.html#LieModule.exists_nontrivial_weightSpace_of_isSolvable)
-- [Source of `LieModule.exists_nontrivial_weightSpace_of_isSolvable` in Mathlib/Algebra/Lie/LieTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Lie/LieTheorem.lean#L236)
-- [1000+ theorems list: Q20971632](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L4194)
+- [Source of `LieModule.exists_nontrivial_weightSpace_of_isSolvable` in Mathlib/Algebra/Lie/LieTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Lie/LieTheorem.lean#L236)
+- [1000+ theorems list: Q20971632](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L4194)
 - [1000+ theorems project: Q20971632](https://1000-plus.github.io/all.html?length=-1#Q20971632)
 - [Wikipedia: Lie's theorem](https://en.wikipedia.org/wiki/Lie's_theorem)
 - [Wikidata: Q20971632](https://www.wikidata.org/wiki/Q20971632)

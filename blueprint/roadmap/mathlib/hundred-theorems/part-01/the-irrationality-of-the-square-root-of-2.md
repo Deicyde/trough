@@ -20,5 +20,5 @@ irrational_sqrt_two : Irrational √2
 ## Sources
 
 - [Mathlib documentation: `irrational_sqrt_two`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Real/Irrational.html#irrational_sqrt_two)
-- [Source of `irrational_sqrt_two` in Mathlib/NumberTheory/Real/Irrational.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Real/Irrational.lean#L140)
-- [Freek Wiedijk's 100 theorems, no. 1](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L8)
+- [Source of `irrational_sqrt_two` in Mathlib/NumberTheory/Real/Irrational.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Real/Irrational.lean#L138)
+- [Freek Wiedijk's 100 theorems, no. 1](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L8)

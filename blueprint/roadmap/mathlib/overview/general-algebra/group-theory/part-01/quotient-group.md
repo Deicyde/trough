@@ -50,7 +50,7 @@ of $G$.
   $A_n$ is the kernel of the [signature](../../../../undergraduate/group-theory/permutation-group/signature.md), so for
   $n \geq 2$ the quotient $S_n / A_n$ is a group of order $2$.
 - **Abelianization.** The [abelianization](abelianization.md) of $G$ is
-  [the quotient of $G$ by its commutator subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization), the
+  [the quotient of $G$ by its commutator subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization), the
   largest abelian quotient of $G$.
 - **Trivial cases.** [Dividing by the trivial subgroup gives back $G$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Basic.html#QuotientGroup.quotientBot),
   and [$G/N$ is trivial exactly when $N = G$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.subsingleton_iff).
@@ -123,6 +123,6 @@ $0$ for an infinite set, so the counting identity above holds for all groups.
 ## Sources
 
 - [Mathlib documentation: `QuotientGroup.Quotient.group`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Defs.html#QuotientGroup.Quotient.group)
-- [Source of `QuotientGroup.Quotient.group` in Mathlib/GroupTheory/QuotientGroup/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/QuotientGroup/Defs.lean#L71)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L43)
-- [Mathlib undergraduate list: Group Theory › Basic definitions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L86)
+- [Source of `QuotientGroup.Quotient.group` in Mathlib/GroupTheory/QuotientGroup/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/QuotientGroup/Defs.lean#L71)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L43)
+- [Mathlib undergraduate list: Group Theory › Basic definitions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L86)

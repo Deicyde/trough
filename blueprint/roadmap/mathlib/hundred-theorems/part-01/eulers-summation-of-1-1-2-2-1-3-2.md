@@ -27,9 +27,9 @@ hasSum_zeta_two : HasSum (fun n => 1 / ↑n ^ 2) (Real.pi ^ 2 / 6)
 ## Sources
 
 - [Mathlib documentation: `hasSum_zeta_two`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/ZetaValues.html#hasSum_zeta_two)
-- [Source of `hasSum_zeta_two` in Mathlib/NumberTheory/ZetaValues.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/ZetaValues.lean#L453)
-- [Freek Wiedijk's 100 theorems, no. 14](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L73)
-- [1000+ theorems list: Q810431](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L906)
+- [Source of `hasSum_zeta_two` in Mathlib/NumberTheory/ZetaValues.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/ZetaValues.lean#L453)
+- [Freek Wiedijk's 100 theorems, no. 14](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L73)
+- [1000+ theorems list: Q810431](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L906)
 - [1000+ theorems project: Q810431](https://1000-plus.github.io/all.html?length=-1#Q810431)
 - [Wikipedia: Basel problem](https://en.wikipedia.org/wiki/Basel_problem)
 - [Wikidata: Q810431](https://www.wikidata.org/wiki/Q810431)

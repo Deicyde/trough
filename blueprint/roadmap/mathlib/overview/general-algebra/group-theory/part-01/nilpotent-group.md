@@ -79,7 +79,7 @@ same class.
   eventually reaches $1$. By induction
   [$G^{(i)} \le \gamma_{i+1}$ for every $i$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Nilpotent/LowerCentralSeries.html#Subgroup.derivedSeries_le_lowerCentralSeries_top),
   so the derived series reaches $1$ no later than the lower central series, and
-  [every nilpotent group is solvable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Nilpotent.html#IsNilpotent.to_isSolvable).
+  [every nilpotent group is solvable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Nilpotent.html#Group.IsNilpotent.to_isSolvable).
 - **Normalizers.** The normalizer of a subgroup $H$ is the largest subgroup in
   which $H$ is normal. In a nilpotent group
   [every proper subgroup is strictly smaller than its normalizer](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Nilpotent.html#Group.normalizerCondition_of_isNilpotent).
@@ -154,5 +154,5 @@ additive groups; the results specific to finite groups do not.
 ## Sources
 
 - [Mathlib documentation: `Group.IsNilpotent`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Nilpotent.html#Group.IsNilpotent)
-- [Source of `Group.IsNilpotent` in Mathlib/GroupTheory/Nilpotent.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/Nilpotent.lean#L230)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L52)
+- [Source of `Group.IsNilpotent` in Mathlib/GroupTheory/Nilpotent.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Nilpotent.lean#L229)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L52)

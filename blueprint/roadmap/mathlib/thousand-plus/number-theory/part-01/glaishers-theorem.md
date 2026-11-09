@@ -28,8 +28,8 @@ Nat.Partition.card_restricted_eq_card_countRestricted (n : ℕ) {m : ℕ} (hm : 
 ## Sources
 
 - [Mathlib documentation: `Nat.Partition.card_restricted_eq_card_countRestricted`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Enumerative/Partition/Glaisher.html#Nat.Partition.card_restricted_eq_card_countRestricted)
-- [Source of `Nat.Partition.card_restricted_eq_card_countRestricted` in Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean#L154)
-- [1000+ theorems list: Q5566491](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3272)
+- [Source of `Nat.Partition.card_restricted_eq_card_countRestricted` in Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean#L154)
+- [1000+ theorems list: Q5566491](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3272)
 - [1000+ theorems project: Q5566491](https://1000-plus.github.io/all.html?length=-1#Q5566491)
 - [Wikipedia: Glaisher's theorem](https://en.wikipedia.org/wiki/Glaisher's_theorem)
 - [Wikidata: Q5566491](https://www.wikidata.org/wiki/Q5566491)

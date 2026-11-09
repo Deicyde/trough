@@ -57,12 +57,12 @@ The converse stated in the English Wikipedia article is not yet formalized.
 ## Sources
 
 - [Mathlib documentation: `HasFDerivAt.apply_self_eq_smul_of_eventuallyEq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/LineDeriv/Basic.html#HasFDerivAt.apply_self_eq_smul_of_eventuallyEq)
-- [Source of `HasFDerivAt.apply_self_eq_smul_of_eventuallyEq` in Mathlib/Analysis/Calculus/LineDeriv/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/LineDeriv/Basic.lean#L280)
+- [Source of `HasFDerivAt.apply_self_eq_smul_of_eventuallyEq` in Mathlib/Analysis/Calculus/LineDeriv/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/LineDeriv/Basic.lean#L280)
 - [Mathlib documentation: `HasFDerivAt.apply_self_eq_smul_of_homogeneous`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/LineDeriv/Basic.html#HasFDerivAt.apply_self_eq_smul_of_homogeneous)
-- [Source of `HasFDerivAt.apply_self_eq_smul_of_homogeneous` in Mathlib/Analysis/Calculus/LineDeriv/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/LineDeriv/Basic.lean#L294)
+- [Source of `HasFDerivAt.apply_self_eq_smul_of_homogeneous` in Mathlib/Analysis/Calculus/LineDeriv/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/LineDeriv/Basic.lean#L294)
 - [Mathlib documentation: `HasFDerivAt.apply_self_eq_nsmul_of_homogeneous`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/LineDeriv/Basic.html#HasFDerivAt.apply_self_eq_nsmul_of_homogeneous)
-- [Source of `HasFDerivAt.apply_self_eq_nsmul_of_homogeneous` in Mathlib/Analysis/Calculus/LineDeriv/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/LineDeriv/Basic.lean#L304)
-- [1000+ theorems list: Q25378679](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L4218)
+- [Source of `HasFDerivAt.apply_self_eq_nsmul_of_homogeneous` in Mathlib/Analysis/Calculus/LineDeriv/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/LineDeriv/Basic.lean#L304)
+- [1000+ theorems list: Q25378679](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L4218)
 - [1000+ theorems project: Q1132952](https://1000-plus.github.io/all.html?length=-1#Q1132952)
 - [Wikipedia: Euler's theorem on homogeneous functions](https://en.wikipedia.org/wiki/Euler's_theorem_on_homogeneous_functions)
 - [Wikidata: Q1132952](https://www.wikidata.org/wiki/Q1132952)
