@@ -206,8 +206,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "## Analysis I companion",
             "",
             "- `data/analysis/sections.json`: each section module's title, module docstring and imports of other "
-            "sections, its labelled items with the docstring, Lean statement, line and status of each declaration "
-            "carrying them, the chapter titles of the READMEs and the titles of the other modules, from "
+            "sections, its labelled items with the docstring, Lean statement and line of each declaration carrying "
+            "them and whether its value holds `sorry`, the chapter titles of the READMEs and the titles of the other modules, from "
             f"[teorth/analysis at {analysis[:8]}](https://github.com/teorth/analysis/tree/{analysis}), Apache-2.0. They "
             "are read from the source text, without Lean. `data/analysis/source.json` records the commit, its Lean "
             "toolchain and Mathlib.",
