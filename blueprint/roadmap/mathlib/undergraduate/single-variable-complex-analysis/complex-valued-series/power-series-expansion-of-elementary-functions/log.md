@@ -28,5 +28,5 @@ Complex.hasSum_taylorSeries_log {z : ℂ} (hz : ‖z‖ < 1) :
 ## Sources
 
 - [Mathlib documentation: `Complex.hasSum_taylorSeries_log`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecialFunctions/Complex/LogBounds.html#Complex.hasSum_taylorSeries_log)
-- [Source of `Complex.hasSum_taylorSeries_log` in Mathlib/Analysis/SpecialFunctions/Complex/LogBounds.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SpecialFunctions/Complex/LogBounds.lean#L245)
-- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series › power series expansion of elementary functions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L381)
+- [Source of `Complex.hasSum_taylorSeries_log` in Mathlib/Analysis/SpecialFunctions/Complex/LogBounds.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SpecialFunctions/Complex/LogBounds.lean#L245)
+- [Mathlib undergraduate list: Single Variable Complex Analysis › Complex-valued series › power series expansion of elementary functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L381)

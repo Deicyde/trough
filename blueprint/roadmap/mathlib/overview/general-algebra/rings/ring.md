@@ -47,8 +47,8 @@ under addition, negation and multiplication is a [subring](subring.md).
   [complex](../../../undergraduate/ring-theory/field-theory/field-c-of-complex-numbers.md) numbers are commutative rings, and in fact
   [fields](../field-theory/field.md): every nonzero element has a multiplicative inverse.
 - If $R$ is a ring, the polynomials in one indeterminate with coefficients in $R$
-  [form a ring](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Basic.html#Polynomial.ring), which is
-  [commutative when $R$ is](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Basic.html#Polynomial.commRing).
+  form a ring, which is
+  commutative when $R$ is.
 - For a positive integer $n$ and a ring $R$, the $n \times n$ matrices with
   entries in $R$ [form a ring](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Matrix/Mul.html#Matrix.instRing) under matrix addition and
   multiplication. For $n \ge 2$ and $R$ nonzero it is not commutative: with $E$
@@ -150,6 +150,6 @@ rings as a special case.
 ## Sources
 
 - [Mathlib documentation: `Ring`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Ring/Defs.html#Ring)
-- [Source of `Ring` in Mathlib/Algebra/Ring/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Ring/Defs.lean#L144)
-- [Mathlib overview: General algebra › Rings](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L65)
-- [Mathlib undergraduate list: Ring Theory › Fundamentals](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L126)
+- [Source of `Ring` in Mathlib/Algebra/Ring/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Ring/Defs.lean#L144)
+- [Mathlib overview: General algebra › Rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L65)
+- [Mathlib undergraduate list: Ring Theory › Fundamentals](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L126)

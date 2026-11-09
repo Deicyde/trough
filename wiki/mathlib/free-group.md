@@ -76,7 +76,7 @@ basis of $G$.
   [presentation](trough:PresentedGroup) of $G$.
 - **Rank.** The cardinality of a basis is an invariant: if two free groups are
   isomorphic, their bases are in bijection. One
-  way to see this passes to the [abelianization](trough:Abelianization) of
+  way to see this passes to the [abelianization](trough:Group.Abelianization) of
   $F(S)$, which is the free abelian group on $S$, and uses the invariance of
   the rank of a free abelian group. The common cardinality is the rank of the
   free group.

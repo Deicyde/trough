@@ -124,5 +124,5 @@ positive $d$ [a solution with $y \neq 0$ exists exactly when $d$ is not a square
 ## Sources
 
 - [Mathlib documentation: `Pell.pell`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PellMatiyasevic.html#Pell.pell)
-- [Source of `Pell.pell` in Mathlib/NumberTheory/PellMatiyasevic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/PellMatiyasevic.lean#L102)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L145)
+- [Source of `Pell.pell` in Mathlib/NumberTheory/PellMatiyasevic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/PellMatiyasevic.lean#L94)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L145)

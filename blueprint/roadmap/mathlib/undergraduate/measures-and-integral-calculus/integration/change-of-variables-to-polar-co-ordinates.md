@@ -29,5 +29,5 @@ integral_comp_polarCoord_symm.{u_1} {E : Type u_1} [NormedAddCommGroup E] [Norme
 ## Sources
 
 - [Mathlib documentation: `integral_comp_polarCoord_symm`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecialFunctions/PolarCoord.html#integral_comp_polarCoord_symm)
-- [Source of `integral_comp_polarCoord_symm` in Mathlib/Analysis/SpecialFunctions/PolarCoord.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SpecialFunctions/PolarCoord.lean#L139)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L526)
+- [Source of `integral_comp_polarCoord_symm` in Mathlib/Analysis/SpecialFunctions/PolarCoord.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SpecialFunctions/PolarCoord.lean#L139)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L526)

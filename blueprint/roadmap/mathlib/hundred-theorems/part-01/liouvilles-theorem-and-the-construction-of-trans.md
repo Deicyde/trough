@@ -30,5 +30,5 @@ Liouville.transcendental {x : ℝ} (lx : Liouville x) : Transcendental ℤ x
 ## Sources
 
 - [Mathlib documentation: `Liouville.transcendental`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Transcendental/Liouville/Basic.html#Liouville.transcendental)
-- [Source of `Liouville.transcendental` in Mathlib/NumberTheory/Transcendental/Liouville/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Transcendental/Liouville/Basic.lean#L179)
-- [Freek Wiedijk's 100 theorems, no. 18](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L91)
+- [Source of `Liouville.transcendental` in Mathlib/NumberTheory/Transcendental/Liouville/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Transcendental/Liouville/Basic.lean#L178)
+- [Freek Wiedijk's 100 theorems, no. 18](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L91)

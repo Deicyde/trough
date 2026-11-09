@@ -29,5 +29,5 @@ setOfPred_isPreconnected_eq_of_ordered.{u} {α : Type u} [TopologicalSpace α]
 ## Sources
 
 - [Mathlib documentation: `setOfPred_isPreconnected_eq_of_ordered`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Order/IntermediateValue.html#setOfPred_isPreconnected_eq_of_ordered)
-- [Source of `setOfPred_isPreconnected_eq_of_ordered` in Mathlib/Topology/Order/IntermediateValue.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Order/IntermediateValue.lean#L541)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Topology of R](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L294)
+- [Source of `setOfPred_isPreconnected_eq_of_ordered` in Mathlib/Topology/Order/IntermediateValue.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Order/IntermediateValue.lean#L541)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Topology of R](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L294)

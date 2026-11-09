@@ -28,8 +28,8 @@ AkraBazziRecurrence.isBigO_asympBound.{u_1} {α : Type u_1} [Fintype α] {T : �
 ## Sources
 
 - [Mathlib documentation: `AkraBazziRecurrence.isBigO_asympBound`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/AkraBazzi/AkraBazzi.html#AkraBazziRecurrence.isBigO_asympBound)
-- [Source of `AkraBazziRecurrence.isBigO_asympBound` in Mathlib/Computability/AkraBazzi/AkraBazzi.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/AkraBazzi/AkraBazzi.lean#L653)
-- [1000+ theorems list: Q420714](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L438)
+- [Source of `AkraBazziRecurrence.isBigO_asympBound` in Mathlib/Computability/AkraBazzi/AkraBazzi.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/AkraBazzi/AkraBazzi.lean#L653)
+- [1000+ theorems list: Q420714](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L438)
 - [1000+ theorems project: Q420714](https://1000-plus.github.io/all.html?length=-1#Q420714)
 - [Wikipedia: Akra–Bazzi theorem](https://en.wikipedia.org/wiki/Akra%E2%80%93Bazzi_theorem)
 - [Wikidata: Q420714](https://www.wikidata.org/wiki/Q420714)

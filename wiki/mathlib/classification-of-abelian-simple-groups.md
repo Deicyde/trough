@@ -80,7 +80,7 @@ whose other members (the alternating groups, the groups of Lie type and the
 sporadic groups) are all nonabelian. More generally, the
 [structure theorem for finitely generated abelian groups](trough:AddCommGroup.equiv_free_prod_directSum_zmod)
 describes every finitely generated abelian group, not only the simple ones, as a
-product of cyclic groups. The [abelianization](trough:Abelianization) of a group
+product of cyclic groups. The [abelianization](trough:Group.Abelianization) of a group
 is its largest abelian quotient; a nonabelian simple group has trivial
 abelianization.
 

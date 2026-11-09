@@ -31,7 +31,7 @@ Theorems100.birthday_measure : MeasureTheory.volume {f | Function.Injective f} <
 ## Sources
 
 - [Mathlib documentation: `Theorems100.birthday`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/BirthdayProblem.html#Theorems100.birthday)
-- [Source of `Theorems100.birthday` in Archive/Wiedijk100Theorems/BirthdayProblem.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/BirthdayProblem.lean#L29)
+- [Source of `Theorems100.birthday` in Archive/Wiedijk100Theorems/BirthdayProblem.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/BirthdayProblem.lean#L29)
 - [Mathlib documentation: `Theorems100.birthday_measure`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/BirthdayProblem.html#Theorems100.birthday_measure)
-- [Source of `Theorems100.birthday_measure` in Archive/Wiedijk100Theorems/BirthdayProblem.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/BirthdayProblem.lean#L48)
-- [Freek Wiedijk's 100 theorems, no. 93](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L478)
+- [Source of `Theorems100.birthday_measure` in Archive/Wiedijk100Theorems/BirthdayProblem.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/BirthdayProblem.lean#L48)
+- [Freek Wiedijk's 100 theorems, no. 93](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L478)

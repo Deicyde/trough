@@ -20,5 +20,5 @@ ack : ℕ → ℕ → ℕ
 ## Sources
 
 - [Mathlib documentation: `ack`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/Ackermann.html#ack)
-- [Source of `ack` in Mathlib/Computability/Ackermann.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/Ackermann.lean#L58)
-- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L605)
+- [Source of `ack` in Mathlib/Computability/Ackermann.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/Ackermann.lean#L58)
+- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L605)

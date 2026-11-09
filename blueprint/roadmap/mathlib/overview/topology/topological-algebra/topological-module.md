@@ -16,5 +16,5 @@ ContinuousSMul.{u_1, u_2} (M : Type u_1) (X : Type u_2) [SMul M X] [TopologicalS
 ## Sources
 
 - [Mathlib documentation: `ContinuousSMul`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/MulAction.html#ContinuousSMul)
-- [Source of `ContinuousSMul` in Mathlib/Topology/Algebra/MulAction.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Algebra/MulAction.lean#L40)
-- [Mathlib overview: Topology › Topological algebra](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L256)
+- [Source of `ContinuousSMul` in Mathlib/Topology/Algebra/MulAction.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Algebra/MulAction.lean#L40)
+- [Mathlib overview: Topology › Topological algebra](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L256)

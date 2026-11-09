@@ -55,10 +55,10 @@ RatFunc.valuation_isEquiv_infty_or_adic.{u_1, u_2} {K : Type u_1} {Γ : Type u_2
 ## Sources
 
 - [Mathlib documentation: `Rat.AbsoluteValue.equiv_real_or_padic`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Ostrowski.html#Rat.AbsoluteValue.equiv_real_or_padic)
-- [Source of `Rat.AbsoluteValue.equiv_real_or_padic` in Mathlib/NumberTheory/Ostrowski.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Ostrowski.lean#L435)
+- [Source of `Rat.AbsoluteValue.equiv_real_or_padic` in Mathlib/NumberTheory/Ostrowski.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Ostrowski.lean#L435)
 - [Mathlib documentation: `RatFunc.valuation_isEquiv_infty_or_adic`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/RatFunc/Ostrowski.html#RatFunc.valuation_isEquiv_infty_or_adic)
-- [Source of `RatFunc.valuation_isEquiv_infty_or_adic` in Mathlib/NumberTheory/RatFunc/Ostrowski.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/RatFunc/Ostrowski.lean#L257)
-- [1000+ theorems list: Q2919401](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2314)
+- [Source of `RatFunc.valuation_isEquiv_infty_or_adic` in Mathlib/NumberTheory/RatFunc/Ostrowski.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/RatFunc/Ostrowski.lean#L257)
+- [1000+ theorems list: Q2919401](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2314)
 - [1000+ theorems project: Q2919401](https://1000-plus.github.io/all.html?length=-1#Q2919401)
 - [Wikipedia: Ostrowski's theorem](https://en.wikipedia.org/wiki/Ostrowski's_theorem)
 - [Wikidata: Q2919401](https://www.wikidata.org/wiki/Q2919401)

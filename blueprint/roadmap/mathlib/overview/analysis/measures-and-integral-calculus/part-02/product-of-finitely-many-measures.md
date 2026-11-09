@@ -18,5 +18,5 @@ MeasureTheory.Measure.pi.{u_1, u_3} {ι : Type u_1} {α : ι → Type u_3} [Fint
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.Measure.pi`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Constructions/Pi.html#MeasureTheory.Measure.pi)
-- [Source of `MeasureTheory.Measure.pi` in Mathlib/MeasureTheory/Constructions/Pi.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Constructions/Pi.lean#L209)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L358)
+- [Source of `MeasureTheory.Measure.pi` in Mathlib/MeasureTheory/Constructions/Pi.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Constructions/Pi.lean#L209)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L358)

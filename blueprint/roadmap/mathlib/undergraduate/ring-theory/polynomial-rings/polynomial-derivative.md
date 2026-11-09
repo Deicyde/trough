@@ -14,5 +14,5 @@ Polynomial.derivative.{u} {R : Type u} [Semiring R] : Polynomial R →ₗ[R] Pol
 ## Sources
 
 - [Mathlib documentation: `Polynomial.derivative`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Polynomial/Derivative.html#Polynomial.derivative)
-- [Source of `Polynomial.derivative` in Mathlib/Algebra/Polynomial/Derivative.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Polynomial/Derivative.lean#L46)
-- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L167)
+- [Source of `Polynomial.derivative` in Mathlib/Algebra/Polynomial/Derivative.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Polynomial/Derivative.lean#L46)
+- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L167)
