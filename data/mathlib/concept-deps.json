@@ -1,11 +1,6 @@
-{"unresolved":
- ["Mathlib.FieldTheory.Finite.Basic",
-  "Mathlib.Order.LiminfLimsup",
-  "Polynomial.algebraOfAlgebra",
-  "Polynomial.commRing",
-  "Polynomial.ring"],
+{"unresolved": ["Mathlib.FieldTheory.Finite.Basic", "Mathlib.Order.LiminfLimsup"],
  "stats":
- {"walked": 30574, "theorems_with_proof": 450, "theorems": 450, "listed": 934, "cited": 2761},
+ {"walked": 30574, "theorems_with_proof": 450, "theorems": 450, "listed": 934, "cited": 2749},
  "schema": "trough-concept-deps/v1",
  "modules":
  {"Mathlib.Order.LiminfLimsup":
@@ -28007,14 +28002,6 @@
    "line": 1478,
    "kind": "theorem",
    "deprecated": null},
-  "RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt":
-  {"signature":
-   "RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt.{u_1} {K : Type u_1} [Field K] [NumberField K]\n  (h :\n    ↑|NumberField.discr K| <\n      (2 * (Real.pi / 4) ^ NumberField.InfinitePlace.nrComplexPlaces K *\n          (↑(Module.finrank ℚ K) ^ Module.finrank ℚ K / ↑(Module.finrank ℚ K).factorial)) ^\n        2) :\n  IsPrincipalIdealRing (NumberField.RingOfIntegers K)",
-   "module": "Mathlib.NumberTheory.NumberField.ClassNumber",
-   "line": 233,
-   "kind": "theorem",
-   "deprecated":
-   {"replacement": "NumberField.RingOfIntegers.isPrincipalIdealRing_of_abs_discr_lt"}},
   "RingHom.toAlgebra'":
   {"signature":
    "RingHom.toAlgebra'.{u_1, u_2} {R : Type u_1} {S : Type u_2} [CommSemiring R] [Semiring S]\n  (i : R →+* S) (h : ∀ (c : R) (x : S), i c * x = x * i c) : Algebra R S",
@@ -30044,13 +30031,6 @@
    "line": 487,
    "kind": "theorem",
    "deprecated": null},
-  "Polynomial.ext_iff":
-  {"signature":
-   "Polynomial.ext_iff.{u} {R : Type u} [Semiring R] {p q : Polynomial R} :\n  p = q ↔ ∀ (n : ℕ), p.coeff n = q.coeff n",
-   "module": "Mathlib.Algebra.Polynomial.Basic",
-   "line": 584,
-   "kind": "theorem",
-   "deprecated": {"replacement": "AddMonoidAlgebra.ext_iff"}},
   "Polynomial.exists_separable_of_irreducible":
   {"signature":
    "Polynomial.exists_separable_of_irreducible.{u} {F : Type u} [Field F] (p : ℕ) [HF : CharP F p]\n  {f : Polynomial F} (hf : Irreducible f) (hp : p ≠ 0) :\n  ∃ n g, g.Separable ∧ (Polynomial.expand F (p ^ n)) g = f",
@@ -34383,13 +34363,6 @@
    "line": 58,
    "kind": "class",
    "deprecated": null},
-  "IsNilpotent.to_isSolvable":
-  {"signature":
-   "IsNilpotent.to_isSolvable.{u_1} {G : Type u_1} [Group G] [h : Group.IsNilpotent G] :\n  Group.IsSolvable G",
-   "module": "Mathlib.GroupTheory.Nilpotent",
-   "line": 971,
-   "kind": "theorem",
-   "deprecated": {"replacement": "Group.IsNilpotent.to_isSolvable"}},
   "IsManifold":
   {"signature":
    "IsManifold.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] {E : Type u_2}\n  [NormedAddCommGroup E] [NormedSpace 𝕜 E] {H : Type u_3} [TopologicalSpace H]\n  (I : ModelWithCorners 𝕜 E H) (n : WithTop ℕ∞) (M : Type u_4) [TopologicalSpace M]\n  [ChartedSpace H M] : Prop",
@@ -42877,67 +42850,6 @@
    "line": 189,
    "kind": "abbrev",
    "deprecated": null},
-  "Abelianization.of":
-  {"signature": "Abelianization.of.{u} {G : Type u} [Group G] : G →* Group.Abelianization G",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 222,
-   "kind": "def",
-   "deprecated": {"replacement": "Group.Abelianization.of"}},
-  "Abelianization.map_comp":
-  {"signature":
-   "Abelianization.map_comp.{u, v, w} {G : Type u} [Group G] {H : Type v} [Group H] (f : G →* H)\n  {I : Type w} [Group I] (g : H →* I) :\n  (Group.Abelianization.map g).comp (Group.Abelianization.map f) =\n    Group.Abelianization.map (g.comp f)",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 249,
-   "kind": "theorem",
-   "deprecated": {"replacement": "Group.Abelianization.map_comp"}},
-  "Abelianization.map":
-  {"signature":
-   "Abelianization.map.{u, v} {G : Type u} [Group G] {H : Type v} [Group H] (f : G →* H) :\n  Group.Abelianization G →* Group.Abelianization H",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 244,
-   "kind": "def",
-   "deprecated": {"replacement": "Group.Abelianization.map"}},
-  "Abelianization.lift_unique":
-  {"signature":
-   "Abelianization.lift_unique.{u, v} {G : Type u} [Group G] {A : Type v} [Group A] [IsMulCommutative A]\n  (f : G →* A) (φ : Group.Abelianization G →* A)\n  (hφ : ∀ (x : G), φ (Group.Abelianization.of x) = f x) {x : Group.Abelianization G} :\n  φ x = (Group.Abelianization.lift f) x",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 238,
-   "kind": "theorem",
-   "deprecated": {"replacement": "Group.Abelianization.lift_unique"}},
-  "Abelianization.lift":
-  {"signature":
-   "Abelianization.lift.{u, v} {G : Type u} [Group G] {A : Type v} [Group A] [IsMulCommutative A] :\n  (G →* A) ≃ (Group.Abelianization G →* A)",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 231,
-   "kind": "def",
-   "deprecated": {"replacement": "Group.Abelianization.lift"}},
-  "Abelianization.ker_of":
-  {"signature":
-   "Abelianization.ker_of.{u} (G : Type u) [Group G] : Group.Abelianization.of.ker = commutator G",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 224,
-   "kind": "theorem",
-   "deprecated": {"replacement": "Group.Abelianization.ker_of"}},
-  "Abelianization.equivOfComm":
-  {"signature":
-   "Abelianization.equivOfComm.{u_1} {H : Type u_1} [CommGroup H] : H ≃* Group.Abelianization H",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 259,
-   "kind": "def",
-   "deprecated": {"replacement": "Group.Abelianization.equivOfComm"}},
-  "Abelianization.commutator_le_ker":
-  {"signature":
-   "Abelianization.commutator_le_ker.{u, v} {G : Type u} [Group G] {A : Type v} [Group A]\n  [IsMulCommutative A] (f : G →* A) : commutator G ≤ f.ker",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 225,
-   "kind": "theorem",
-   "deprecated": {"replacement": "Group.Abelianization.commutator_le_ker"}},
-  "Abelianization":
-  {"signature": "Abelianization.{u} (G : Type u) [Group G] : Type u",
-   "module": "Mathlib.GroupTheory.Abelianization.Defs",
-   "line": 219,
-   "kind": "def",
-   "deprecated": {"replacement": "Group.Abelianization"}},
   "AbelRuffini.exists_not_solvable_by_rad":
   {"signature":
    "AbelRuffini.exists_not_solvable_by_rad : ∃ x, IsAlgebraic ℚ x ∧ x ∉ solvableByRad ℚ ℂ",
