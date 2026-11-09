@@ -251,6 +251,7 @@
    "source": {
     "title": "Continuity of solutions to abstract linear control systems",
     "url": "https://github.com/frederic-marbach/alcs/tree/bda56576f8b2730b73a55f273511c80fabbe56f4",
+    "paper": "https://hexagonmath.org/pdf/2610.00022v2",
     "github_repo": "frederic-marbach/alcs",
     "commit": "bda56576f8b2730b73a55f273511c80fabbe56f4"
    },
@@ -1671,6 +1672,7 @@
     "title": "Unrestricted Boolean Multiplicative Complexity of Four-Term Binary Polynomial Multiplication: Rational Places, Hasse Jets, and the Failure of Nonlinear Feedback",
     "arxiv": "2608.30238v1",
     "url": "https://github.com/GregoryMorse/unrestricted-boolean-mul/tree/79a801760668f52bb00a9e1a406e841375c58a6d",
+    "notes": "The complete Lean release predates the arXiv v1 submission of 2026-08-31T04:45:12Z. The selected September 22 commit corrects release metadata; eligibility rests on the complete August 31 Lean release at 2ebc0cf42039e4b5de84cb7f9d97cad4791c669d. The August 29 release contained computational artifacts, not the Lean formalization. The author discloses GPT-5.6 Sol for original research and proof development, Opus 5 as a critical referee, and Codex for release preparation. Gregory Morse directed and reviewed the work and assumes responsibility. AI provenance records the proof-producing agent workflow; human direction alone is not classified as mixed formalization. The complete upstream MIT notice is retained in LeanPool/BooleanMultiplication.lean. Only the published n <= 4 dependency closure is imported; no n = 5 or n = 6 claim is made.",
     "github_repo": "GregoryMorse/unrestricted-boolean-mul",
     "commit": "79a801760668f52bb00a9e1a406e841375c58a6d"
    },
@@ -2364,6 +2366,7 @@
      "Yongxi Lin"
     ],
     "url": "https://github.com/CoolRmal/centered-maximal-constant",
+    "notes": "First completed publicly on 2026-09-18 at 22:15:07 UTC in commit 06a726f113241d445903f0c0eae1ebe40d8b539f. The lower bound is documented and proved in upstream docs/PROOF.md; the weighted smearing argument adapts Aldaz (2000), Lemma 1.1, and the covering upper bound follows Tao's 245A Notes 5, Exercise 42. Upstream formalization.yaml and docs/HISTORY.md disclose AI generation of the configuration and proofs under Yongxi Lin's direction.",
     "github_repo": "CoolRmal/centered-maximal-constant",
     "commit": "c6a8cb29e8ecce9ac4614a8c7e4bf6938366f986"
    },
@@ -2619,6 +2622,7 @@
     ],
     "arxiv": "2609.19123v1",
     "url": "https://github.com/boonsuan/chvatal",
+    "notes": "GPT-6 generated the formalization under Boon Suan Ho's direction; the mathematical proof is due to Chang, Liu, and Liu. No human expert review or source-author endorsement is claimed. The upstream MIT copyright and permission notice is retained in every imported file.",
     "github_repo": "boonsuan/chvatal",
     "commit": "c19ed3aaac9e42d446f963a862d39d8a09eddbf9"
    },
@@ -2928,6 +2932,7 @@
     ],
     "doi": "10.1006/jctb.1995.1011",
     "url": "https://github.com/jtraverso/galvin-dinitz/tree/0aa98fc17e1e96ec408f7bad3198ce37a08d26fc",
+    "note": "Formalizes the finite simple-graph case. The Kőnig edge-colouring proof comes from jtraverso/konig-edge-colouring at 7c60f7efb69c1747aaf39e5dfa7a89d907cd84ef (Palomar PALOMAR-2026-10-15-000019). The Galvin, Dinitz and stable-matching proofs come from PALOMAR-2026-10-18-000029. Gallai–Roy comes from jtraverso/gallai-roy at e737218bf80c3d3684d670f5f8aa9a8257e1a52f (PALOMAR-2026-10-16-000015), and the spectral bounds from jtraverso/spectral-graph-bounds at 8d8b4ce17e56165b5f1ad3b285fb141666804e1c (PALOMAR-2026-10-18-000016). The source's copied Vizing files are omitted in favour of the existing Lean Pool project.",
     "github_repo": "jtraverso/galvin-dinitz",
     "commit": "0aa98fc17e1e96ec408f7bad3198ce37a08d26fc"
    },
@@ -3097,6 +3102,7 @@
     ],
     "doi": "10.4153/CJM-1954-033-3",
     "url": "https://github.com/jtraverso/tutte-f-factor/tree/dc3bbce463c80c499d3e9fa072d13f9145d907d0",
+    "note": "This source anchors the f-factor development. The other four frozen source repositories, their commits and Palomar IDs are linked in the imported module docstrings; each main result below identifies its mathematical source.",
     "github_repo": "jtraverso/tutte-f-factor",
     "commit": "dc3bbce463c80c499d3e9fa072d13f9145d907d0"
    },
@@ -7919,6 +7925,7 @@
    ],
    "source": {
     "url": "https://github.com/uw-math-ai/FormalizingGMT",
+    "notes": "The geometric-measure-theory results follow Mattila, Geometry of Sets and Measures in Euclidean Spaces, Chapter 14. The weak-convergence, compactness, covering, and density results follow Evans--Gariepy, Measure Theory and Fine Properties of Functions, revised edition.",
     "github_repo": "uw-math-ai/FormalizingGMT",
     "commit": "0acca38a91c4121b813f8e0b6ff719a4590bf126"
    },
@@ -8318,6 +8325,7 @@
    "source": {
     "arxiv": "2607.18186",
     "url": "https://github.com/long-mathematics/gaussian-moments-counterexamples",
+    "notes": "Imports the completed Gaussian core and related moment infrastructure. The July manuscript predates the September Lean proof release. Five and six term counts refer to the natural complex coordinates; total degrees four and three also hold in the original real coordinates. The separate Jacobian-map and route-arithmetic files are excluded. No general inversion, Jacobian-reduction route, or resolution of the two-dimensional conjecture is claimed. Upstream MIT notice is retained in the project entry module. Upstream Lean authorship is inferred from the public codex/lean-formalization branch; its exact proof-authoring model and extent of human editing are unreported. This port and optimization are Codex-authored.",
     "github_repo": "long-mathematics/gaussian-moments-counterexamples",
     "commit": "c31bb63aaa7cfccf1191893f8e7d04fa71bae025"
    },
@@ -12919,6 +12927,7 @@
    ],
    "source": {
     "url": "https://github.com/jzuiddam/omega-nine-quarters-all-fields/tree/615b591cddd8792173c17b58558ef3b9f11a702c",
+    "paper_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Matrix-Multiplication-Nine-Fourths-October-2-2026/paper.pdf",
     "github_repo": "jzuiddam/omega-nine-quarters-all-fields",
     "commit": "615b591cddd8792173c17b58558ef3b9f11a702c"
    },
@@ -14151,6 +14160,7 @@
    "license": "Apache-2.0",
    "notice": null,
    "provenance": "mix",
+   "provenance_note": "Upstream credits the four listed authors. Its README and available commit history contain no AI disclosure; this is evidence under the repository's human-provenance rubric, not proof of tool non-use. The imported version includes substantial AI-assisted Mathlib porting and proof refactoring by OpenAI Codex, so it is recorded as mixed.",
    "directory": "NemytskiiLebesgue",
    "main_results": [
     {
@@ -14402,6 +14412,7 @@
      "Boon Suan Ho"
     ],
     "url": "https://github.com/boonsuan/nivat",
+    "notes": "The proof and manuscript were produced by GPT-6 Pro and the Lean development by GPT-6 Astra in Codex, both prompted and directed by Boon Suan Ho, who claims no human mathematical authorship. The manuscript ships in the upstream repository as paper/nivat.tex. The Lean sources are identical to the commit archived by Palomar on 2026-09-14 (0d94547e); later upstream commits only touched the README and the paper's abstract. No human expert review is claimed upstream; Bryna Kra's guest post on Terence Tao's blog (2026-09-13) discusses the arrival of AI proofs of the conjecture. The upstream MIT copyright and permission notice is retained in every imported file.",
     "github_repo": "boonsuan/nivat",
     "commit": "84fe839635bdebb7d5e80c209b4f578a0c767fcf"
    },
@@ -15709,6 +15720,7 @@
    "source": {
     "arxiv": "2609.07551",
     "url": "https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1",
+    "notes": "The upstream MIT-licensed original proof settles the dimension-two case of Nielsen–Okamura Conjecture 9.1 (v2, Section 9); the cited paper poses the general-dimensional conjecture and does not contain this planar necessity proof. Public completed source was released on 2026-10-08. Proofs and mathematical arguments were produced by OpenAI Codex agents under JD Jones's supervision.",
     "github_repo": "JD-Jones-ASES/PlanarMidpoint"
    },
    "license": "MIT",
@@ -16575,6 +16587,7 @@
      "Logan Allen"
     ],
     "url": "https://github.com/nockchain/pure-nock-lean",
+    "manuscript": "https://github.com/nockchain/pure-nock-lean/blob/4838863baa2d49e38573efa3474e77bf1154f300/paper/main.tex",
     "github_repo": "nockchain/pure-nock-lean",
     "commit": "4838863baa2d49e38573efa3474e77bf1154f300"
    },
@@ -18126,6 +18139,7 @@
    ],
    "source": {
     "doi": "10.5565/PUBLMAT_45101_06",
+    "paper": "http://dmle.icmat.es/pdf/PUBLICACIONSMATEMATIQUES_2001_45_01_06.pdf",
     "github_repo": "urkud/SardMoreira"
    },
    "license": "Apache-2.0",
@@ -18224,6 +18238,7 @@
     "authors": [
      "Dana Scott"
     ],
+    "citation": "Journal of Mathematical Psychology 1 (1964), 233-247",
     "url": "https://github.com/catskillsresearch/scott1964",
     "github_repo": "catskillsresearch/scott1964",
     "commit": "591e8a6a5d7d1ebf4cc761b4a1cb749b6480dfeb"
@@ -18560,6 +18575,7 @@
    "source": {
     "title": "Sendov's conjecture in Lean",
     "url": "https://github.com/teorth/sendov/tree/1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d",
+    "mathematical_source": "T. Tao, A digestion of the proof of Sendov's conjecture, blog post, 12 August 2026, digesting Lech Mazur's AI-assisted proof; the boundary case follows Q. Tang and T. Zhang, arXiv:2508.10341, equation (5.1) and Remark 5.1.",
     "github_repo": "teorth/sendov",
     "commit": "1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d"
    },
@@ -19448,12 +19464,14 @@
    "source": {
     "title": "Verified finite automata for finitely generated subgroups of F2",
     "url": "https://github.com/Arthur742Ramos/stallings-folding/tree/117dde0a8415d3da1787e15ad22a6223a744432d",
+    "mathematical_source": "John R. Stallings, Topology of Finite Graphs, Inventiones Mathematicae 71 (1983), 551-565, doi:10.1007/BF02095993. This is the rank-two finite-recognizer special case, implemented through least congruences rather than a sequence of local folds.",
     "github_repo": "Arthur742Ramos/stallings-folding",
     "commit": "117dde0a8415d3da1787e15ad22a6223a744432d"
    },
    "license": "Apache-2.0",
    "notice": null,
    "provenance": "AI",
+   "provenance_note": "Upstream formalization.yaml records human-directed GPT-6 Codex proof development. Lean Pool porting, cleanup, and optimization were also performed by OpenAI Codex. Author attribution follows upstream.",
    "directory": "StallingsFolding",
    "main_results": [
     {
@@ -20162,6 +20180,7 @@
    "source": {
     "title": "Formalization of boundedness of the trilinear Hilbert transform",
     "url": "https://github.com/roos-j/lean-trilinearht/tree/7b4209609e6a7fb9d9935973ee8541495f943660",
+    "manuscript_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/paper.pdf",
     "github_repo": "roos-j/lean-trilinearht",
     "commit": "7b4209609e6a7fb9d9935973ee8541495f943660"
    },
