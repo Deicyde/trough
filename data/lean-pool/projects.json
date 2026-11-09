@@ -5639,6 +5639,8 @@
      "Plasma AI"
     ],
     "url": "https://github.com/plasma-ai/erdos-111/tree/de72caf0e388c729697b6813f4ea90bfe1617c7b",
+    "proof_url": "https://github.com/plasma-ai/erdos-111/blob/de72caf0e388c729697b6813f4ea90bfe1617c7b/blueprint/proof.md",
+    "problem_url": "https://www.erdosproblems.com/111",
     "github_repo": "plasma-ai/erdos-111",
     "commit": "de72caf0e388c729697b6813f4ea90bfe1617c7b"
    },
@@ -19465,6 +19467,7 @@
     "title": "Verified finite automata for finitely generated subgroups of F2",
     "url": "https://github.com/Arthur742Ramos/stallings-folding/tree/117dde0a8415d3da1787e15ad22a6223a744432d",
     "mathematical_source": "John R. Stallings, Topology of Finite Graphs, Inventiones Mathematicae 71 (1983), 551-565, doi:10.1007/BF02095993. This is the rank-two finite-recognizer special case, implemented through least congruences rather than a sequence of local folds.",
+    "background": "Ilya Kapovich and Alexei Myasnikov, Stallings Foldings and Subgroups of Free Groups, Journal of Algebra 248 (2002), 608-668, doi:10.1006/jabr.2001.9033.",
     "github_repo": "Arthur742Ramos/stallings-folding",
     "commit": "117dde0a8415d3da1787e15ad22a6223a744432d"
    },
