@@ -50,7 +50,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ### Libraries
 
-- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 2055e5adadae: Statements, mostly without proof, of open and solved problems: 1,832 problem files in 17 source folders, ErdosProblems 1011, OEIS 348, Wikipedia 184, GreensOpenProblems 67, WrittenOnTheWallII 64, Paper 52, Arxiv 42, Mathoverflow 14, Books 13, Other 10, Kourovka 7, and smaller ones.
+- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 2055e5adadae: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
 - [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
 - [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.

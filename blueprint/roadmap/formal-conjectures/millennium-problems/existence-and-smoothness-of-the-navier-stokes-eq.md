@@ -117,3 +117,4 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 ## Sources
 
 - [FormalConjectures/Millennium/NavierStokes.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/NavierStokes.lean)
+- [Wikipedia](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_existence_and_smoothness)

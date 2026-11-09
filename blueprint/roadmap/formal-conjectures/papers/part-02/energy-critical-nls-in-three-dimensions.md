@@ -45,3 +45,4 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 ## Sources
 
 - [FormalConjectures/Paper/NLSCritical.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/NLSCritical.lean)
+- [Colliander, Keel, Staffilani, Takaoka, Tao](https://doi.org/10.4007/annals.2008.167.767)

@@ -12,7 +12,7 @@ statement: formalized
 
 *Quoted from [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
 
-The file states 6 research or textbook statements: 6 solved. It also has 8 API statements, counted here but not shown.
+The file states 5 research or textbook statements: 5 solved. A definition with a category attribute is not counted among them. It also has 8 API statements, counted here but not shown.
 
 ## `SimpleGraph.theorem1`
 

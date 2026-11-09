@@ -72,3 +72,4 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 ## Sources
 
 - [FormalConjectures/Wikipedia/Falconer.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Falconer.lean)
+- [K. Falconer, *On the Hausdorff dimensions of distance sets*](https://doi.org/10.1112/S0025579300010998)
