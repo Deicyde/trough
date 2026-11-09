@@ -29,7 +29,7 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Source: [arXiv:2610.02031](https://arxiv.org/abs/2610.02031).
 - Project repository: [AntMele/single-copy-stabilizer-learning-lean](https://github.com/AntMele/single-copy-stabilizer-learning-lean).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 81P68, 68Q32, 81P45.
 - In Lean Pool: [LeanPool/SingleCopyStabilizer](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SingleCopyStabilizer), from the card [LeanPool/projects/single-copy-stabilizer-learning.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/single-copy-stabilizer-learning.yaml).
 

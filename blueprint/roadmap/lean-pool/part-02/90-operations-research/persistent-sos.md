@@ -31,7 +31,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Source: *Persistent SOS failure with an explicit unique global minimizer* by JD Jones.
 - Project repository: [JD-Jones-ASES/persistent-sos](https://github.com/JD-Jones-ASES/persistent-sos), at commit [d432ff9a](https://github.com/JD-Jones-ASES/persistent-sos/tree/d432ff9a67594cc0fa7a7af1913320b46d2a86db).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 90C22, 90C26, 14P10.
 - In Lean Pool: [LeanPool/PersistentSOS](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PersistentSOS), from the card [LeanPool/projects/persistent-sos.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/persistent-sos.yaml).
 

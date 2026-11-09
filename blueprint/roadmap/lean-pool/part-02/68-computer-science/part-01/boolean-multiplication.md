@@ -33,7 +33,7 @@ The card lists 6 main results, each with its informal statement quoted from the 
 - Source: *Unrestricted Boolean Multiplicative Complexity of Four-Term Binary Polynomial Multiplication: Rational Places, Hasse Jets, and the Failure of Nonlinear Feedback*, [arXiv:2608.30238v1](https://arxiv.org/abs/2608.30238v1), [https://github.com/GregoryMorse/unrestricted-boolean-mul/tree/79a801760668f52bb00a9e1a406e841375c58a6d](https://github.com/GregoryMorse/unrestricted-boolean-mul/tree/79a801760668f52bb00a9e1a406e841375c58a6d).
 - Project repository: [GregoryMorse/unrestricted-boolean-mul](https://github.com/GregoryMorse/unrestricted-boolean-mul), at commit [79a80176](https://github.com/GregoryMorse/unrestricted-boolean-mul/tree/79a801760668f52bb00a9e1a406e841375c58a6d).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 68Q06, 68Q17, 68W30, 15A75, 94D10.
 - In Lean Pool: [LeanPool/BooleanMultiplication](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/BooleanMultiplication), from the card [LeanPool/projects/boolean-multiplication.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/boolean-multiplication.yaml).
 

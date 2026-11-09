@@ -34,7 +34,7 @@ The card lists 7 main results, each with its informal statement quoted from the 
 - Source: *A proof of Chvátal's conjecture via a sharp correlation inequality* by Fan Chang, Hong Liu, Miao Liu, [arXiv:2609.19123v1](https://arxiv.org/abs/2609.19123v1).
 - Project repository: [boonsuan/chvatal](https://github.com/boonsuan/chvatal), at commit [c19ed3aa](https://github.com/boonsuan/chvatal/tree/c19ed3aaac9e42d446f963a862d39d8a09eddbf9).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 05D05, 60E15.
 - In Lean Pool: [LeanPool/Chvatal](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Chvatal), from the card [LeanPool/projects/chvatal-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/chvatal-conjecture.yaml).
 

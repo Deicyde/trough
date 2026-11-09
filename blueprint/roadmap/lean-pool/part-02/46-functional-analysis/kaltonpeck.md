@@ -29,7 +29,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Authors: Avik Das.
 - Project repository: [adas1236/KaltonPeck](https://github.com/adas1236/KaltonPeck), at commit [752dec47](https://github.com/adas1236/KaltonPeck/tree/752dec47b173d05df3eeb579c1cd392335b87b60).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 46B03, 47A53.
 - In Lean Pool: [LeanPool/KaltonPeck](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/KaltonPeck), from the card [LeanPool/projects/kaltonpeck.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/kaltonpeck.yaml).
 

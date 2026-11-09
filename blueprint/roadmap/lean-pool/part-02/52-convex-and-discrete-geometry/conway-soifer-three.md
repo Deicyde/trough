@@ -29,7 +29,7 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Source: *The Conway–Soifer conjecture for n = 3: a Lean formalization*, [doi:10.5281/zenodo.22712658](https://doi.org/10.5281/zenodo.22712658), [https://github.com/AnanasClassic/conway-soifer-n3-lean/tree/b71b1d22b6f7ebb0f0173fc70a66075f44c86ce6](https://github.com/AnanasClassic/conway-soifer-n3-lean/tree/b71b1d22b6f7ebb0f0173fc70a66075f44c86ce6).
 - Project repository: [AnanasClassic/conway-soifer-n3-lean](https://github.com/AnanasClassic/conway-soifer-n3-lean), at commit [b71b1d22](https://github.com/AnanasClassic/conway-soifer-n3-lean/tree/b71b1d22b6f7ebb0f0173fc70a66075f44c86ce6).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 52C15, 51M16.
 - In Lean Pool: [LeanPool/ConwaySoifer](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ConwaySoifer), from the card [LeanPool/projects/conway-soifer-three.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/conway-soifer-three.yaml).
 

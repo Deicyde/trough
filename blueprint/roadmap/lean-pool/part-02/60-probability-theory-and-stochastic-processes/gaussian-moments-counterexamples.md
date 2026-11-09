@@ -30,7 +30,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Source: [arXiv:2607.18186](https://arxiv.org/abs/2607.18186).
 - Project repository: [long-mathematics/gaussian-moments-counterexamples](https://github.com/long-mathematics/gaussian-moments-counterexamples), at commit [c31bb63a](https://github.com/long-mathematics/gaussian-moments-counterexamples/tree/c31bb63aaa7cfccf1191893f8e7d04fa71bae025).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 60E05, 13F20.
 - In Lean Pool: [LeanPool/GaussianMomentsCounterexamples](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GaussianMomentsCounterexamples), from the card [LeanPool/projects/gaussian-moments-counterexamples.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/gaussian-moments-counterexamples.yaml).
 

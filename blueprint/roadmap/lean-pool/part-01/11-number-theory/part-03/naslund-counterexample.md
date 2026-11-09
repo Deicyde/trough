@@ -33,7 +33,7 @@ The card lists 6 main results, each with its informal statement quoted from the 
 - Source: *Square-difference-free sets in F_3[T] past the conjectured bound* by JD Jones.
 - Project repository: [JD-Jones-ASES/ns-lean](https://github.com/JD-Jones-ASES/ns-lean), at commit [035e9b0c](https://github.com/JD-Jones-ASES/ns-lean/tree/035e9b0c147630e35631e4401433660f695d1fba).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 11B75, 05D05.
 - In Lean Pool: [LeanPool/NaslundCounterexample](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NaslundCounterexample), from the card [LeanPool/projects/naslund-counterexample.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/naslund-counterexample.yaml).
 

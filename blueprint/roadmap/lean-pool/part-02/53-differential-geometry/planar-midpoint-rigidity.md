@@ -31,7 +31,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Source: [arXiv:2609.07551](https://arxiv.org/abs/2609.07551), [https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1](https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1).
 - Project repository: [JD-Jones-ASES/PlanarMidpoint](https://github.com/JD-Jones-ASES/PlanarMidpoint).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 53B12, 39B22.
 - In Lean Pool: [LeanPool/PlanarMidpoint](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PlanarMidpoint), from the card [LeanPool/projects/planar-midpoint-rigidity.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/planar-midpoint-rigidity.yaml).
 

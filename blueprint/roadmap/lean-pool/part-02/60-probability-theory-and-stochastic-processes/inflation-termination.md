@@ -28,7 +28,7 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Authors: William Blair.
 - Project repository: [williamjblair/inflation-termination](https://github.com/williamjblair/inflation-termination), at commit [2aa1f05c](https://github.com/williamjblair/inflation-termination/tree/2aa1f05ce932fdeef3896c83d287abd77cd8befb).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 60A05, 05C05.
 - In Lean Pool: [LeanPool/InflationTermination](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/InflationTermination), from the card [LeanPool/projects/inflation-termination.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/inflation-termination.yaml).
 

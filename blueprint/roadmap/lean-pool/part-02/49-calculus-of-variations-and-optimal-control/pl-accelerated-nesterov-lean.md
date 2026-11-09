@@ -30,7 +30,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Source: *Optimal local linear convergence of Nesterov's accelerated gradient method for C2 functions under the Polyak-Lojasiewicz inequality* by Zixu Feng, Hao Yuan, [arXiv:2603.21516](https://arxiv.org/abs/2603.21516).
 - Project repository: [M1ngXU/PL-Accelerated-Nesterov-Lean](https://github.com/M1ngXU/PL-Accelerated-Nesterov-Lean).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 49M37, 65K05, 58C15.
 - In Lean Pool: [LeanPool/PLAcceleratedNesterovLean](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/PLAcceleratedNesterovLean), from the card [LeanPool/projects/pl-accelerated-nesterov-lean.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/pl-accelerated-nesterov-lean.yaml).
 

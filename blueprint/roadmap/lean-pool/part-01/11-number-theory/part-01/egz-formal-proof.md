@@ -29,7 +29,7 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Source: [doi:10.19086/da.165216](https://doi.org/10.19086/da.165216), [arXiv:2002.09892](https://arxiv.org/abs/2002.09892).
 - Project repository: [zakharov2k/egz-formal-proof](https://github.com/zakharov2k/egz-formal-proof), at commit [7c82267c](https://github.com/zakharov2k/egz-formal-proof/tree/7c82267c43a51dd5cb3e440412780ff82aff7500).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 11B30, 11H06.
 - In Lean Pool: [LeanPool/ErdosGinzburgZiv](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ErdosGinzburgZiv), from the card [LeanPool/projects/egz-formal-proof.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/egz-formal-proof.yaml).
 

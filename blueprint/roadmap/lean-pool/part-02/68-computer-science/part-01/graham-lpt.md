@@ -34,7 +34,7 @@ The card lists 7 main results, each with its informal statement quoted from the 
 - Source: *Graham's bounds for list scheduling and LPT on identical machines* by JD Jones, [https://github.com/JD-Jones-ASES/graham-lpt-lean/tree/c8ed035b407cc554faf4b68df0cf3edc70058977](https://github.com/JD-Jones-ASES/graham-lpt-lean/tree/c8ed035b407cc554faf4b68df0cf3edc70058977).
 - Project repository: [JD-Jones-ASES/graham-lpt-lean](https://github.com/JD-Jones-ASES/graham-lpt-lean), at commit [c8ed035b](https://github.com/JD-Jones-ASES/graham-lpt-lean/tree/c8ed035b407cc554faf4b68df0cf3edc70058977).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 68M20, 90B35, 68W25.
 - In Lean Pool: [LeanPool/GrahamLPT](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/GrahamLPT), from the card [LeanPool/projects/graham-lpt.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/graham-lpt.yaml).
 

@@ -6,7 +6,7 @@ The cards list 1,341 main results, 509 of them among the cards' main declaration
 
 A card's provenance says who wrote the project's Lean proofs, in the words of Lean Pool's contributing guide: “human” (“written by people”), “AI” (“mostly produced by an AI system”) or “mix” (“both contributed substantially”). Of the cards, 207 say AI, 73 human and 54 mix.
 
-The quoted text is the cards', in Lean Pool's repository under the Apache-2.0 license; each article names the project's authors. Of the projects, 48 were published under the MIT license, and Lean Pool redistributes them under Apache-2.0; their articles give the copyright line Lean Pool's notice file keeps for them, which it does for 22.
+The quoted text is the cards', in Lean Pool's repository under the Apache-2.0 license; each article names the project's authors. Of the projects, 48 were published under the MIT license, and Lean Pool redistributes them under Apache-2.0; where Lean Pool's notice file keeps a copyright line for one, its article gives it.
 
 ## [MSC2020 classes 03 to 35](part-01/README.md)
 

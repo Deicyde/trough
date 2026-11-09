@@ -29,7 +29,7 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Source: *A 4AP-free permutation of the positive integers* by Boon Suan Ho, [arXiv:2609.12780](https://arxiv.org/abs/2609.12780).
 - Project repository: [boonsuan/4ap](https://github.com/boonsuan/4ap), at commit [4630aefb](https://github.com/boonsuan/4ap/tree/4630aefbbcb7f6537aceaeb1afac8dd3af455871).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 11B25, 05D10.
 - In Lean Pool: [LeanPool/FourAP](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FourAP), from the card [LeanPool/projects/four-ap-free-permutation.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/four-ap-free-permutation.yaml).
 

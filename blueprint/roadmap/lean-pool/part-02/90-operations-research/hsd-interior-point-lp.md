@@ -32,7 +32,7 @@ The card lists 5 main results, each with its informal statement quoted from the 
 - Source: *An O(√nL)-iteration homogeneous and self-dual linear programming algorithm* by Yinyu Ye, Michael J. Todd, Shinji Mizuno, [doi:10.1287/moor.19.1.53](https://doi.org/10.1287/moor.19.1.53).
 - Project repository: [makoto-yamashita/proof-on-a-homogeneous-self-dual-interior-point-method-for-linear-programming](https://github.com/makoto-yamashita/proof-on-a-homogeneous-self-dual-interior-point-method-for-linear-programming).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 90C05, 90C51.
 - In Lean Pool: [LeanPool/HSDInteriorPointLP](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/HSDInteriorPointLP), from the card [LeanPool/projects/hsd-interior-point-lp.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/hsd-interior-point-lp.yaml).
 

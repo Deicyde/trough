@@ -29,7 +29,7 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Source: *Common neighbour conjectures for Saxl graphs fail at every base size* by Aluna Rizzoli, Adam R. Thomas, [doi:10.5281/zenodo.22231393](https://doi.org/10.5281/zenodo.22231393).
 - Project repository: [alunik/common-neighbour-conjecture](https://github.com/alunik/common-neighbour-conjecture), at commit [b2c0a8f9](https://github.com/alunik/common-neighbour-conjecture/tree/b2c0a8f95aa4dca76a034a0e769a8c8249f38ae2).
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 20B15, 05C25.
 - In Lean Pool: [LeanPool/CommonNeighbourConjecture](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/CommonNeighbourConjecture), from the card [LeanPool/projects/common-neighbour-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/common-neighbour-conjecture.yaml).
 

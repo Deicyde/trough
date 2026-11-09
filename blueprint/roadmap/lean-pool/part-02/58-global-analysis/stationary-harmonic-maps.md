@@ -30,7 +30,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Source: *Theorems on Regularity and Singularity of Energy Minimizing Maps* by Leon Simon, [doi:10.1007/978-3-0348-9193-6](https://doi.org/10.1007/978-3-0348-9193-6).
 - Project repository: [BrookWW/LeanStationaryHarmonicMaps](https://github.com/BrookWW/LeanStationaryHarmonicMaps).
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 58E20, 35J50.
 - In Lean Pool: [LeanPool/LeanStationaryHarmonicMaps](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/LeanStationaryHarmonicMaps), from the card [LeanPool/projects/stationary-harmonic-maps.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/stationary-harmonic-maps.yaml).
 

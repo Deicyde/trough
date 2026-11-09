@@ -30,7 +30,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Source: *Chebyshev quotients, Demazure multiplicities, and Dyck-path models* by Evan Chen, Kenny Lau, Seewoo Lee, Ken Ono, Jujian Zhang, [arXiv:2604.25246](https://arxiv.org/abs/2604.25246).
 - Project repository: [AxiomMath/Biswal](https://github.com/AxiomMath/Biswal).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 05E10.
 - In Lean Pool: [LeanPool/Biswal](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Biswal), from the card [LeanPool/projects/biswal.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/biswal.yaml).
 

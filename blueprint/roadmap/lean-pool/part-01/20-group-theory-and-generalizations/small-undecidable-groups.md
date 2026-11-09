@@ -31,7 +31,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Source: *Small undecidable groups and unrecognizable 4-manifolds*, [arXiv:2609.10461](https://arxiv.org/abs/2609.10461).
 - Project repository: [32805433/Adian-Rabin](https://github.com/32805433/Adian-Rabin), at commit [fb4a401e](https://github.com/32805433/Adian-Rabin/tree/fb4a401e8fbdba36e7b35c11fde2baa15592e185).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 20F10, 03D35.
 - In Lean Pool: [LeanPool/SmallUndecidableGroups](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/SmallUndecidableGroups), from the card [LeanPool/projects/small-undecidable-groups.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/small-undecidable-groups.yaml).
 

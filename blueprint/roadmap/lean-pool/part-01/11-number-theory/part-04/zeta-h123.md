@@ -31,7 +31,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Source: *Thakur's hypotheses on power sums of F_q[t]* by Evan Chen, Ken Ono, [arXiv:2606.16239](https://arxiv.org/abs/2606.16239).
 - Project repository: [AxiomMath/zeta-h123](https://github.com/AxiomMath/zeta-h123).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 11M38, 11T55, 11G09.
 - In Lean Pool: [LeanPool/ZetaH123](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ZetaH123), from the card [LeanPool/projects/zeta-h123.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/zeta-h123.yaml).
 

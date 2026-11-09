@@ -33,7 +33,7 @@ The card lists 6 main results, each with its informal statement quoted from the 
 - Source: *Pattern complexity and Nivat's conjecture* by GPT-6 Pro, Boon Suan Ho.
 - Project repository: [boonsuan/nivat](https://github.com/boonsuan/nivat), at commit [84fe8396](https://github.com/boonsuan/nivat/tree/84fe839635bdebb7d5e80c209b4f578a0c767fcf).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 37B10, 37B51, 68R15.
 - In Lean Pool: [LeanPool/Nivat](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Nivat), from the card [LeanPool/projects/nivat-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/nivat-conjecture.yaml).
 

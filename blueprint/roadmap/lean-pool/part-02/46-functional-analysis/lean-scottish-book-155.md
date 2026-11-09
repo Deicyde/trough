@@ -27,7 +27,7 @@ The card lists one main result, with its informal statement quoted from the card
 - Authors: Yoshito Ishiki.
 - Project repository: [yoshito-ishiki-math/lean-scottish-book-155](https://github.com/yoshito-ishiki-math/lean-scottish-book-155), at commit [233eff4a](https://github.com/yoshito-ishiki-math/lean-scottish-book-155/tree/233eff4af7901eadee7927a1eb1f814ad0f3c118).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 46B20, 54E40.
 - In Lean Pool: [LeanPool/ScottishBook155](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/ScottishBook155), from the card [LeanPool/projects/lean-scottish-book-155.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/lean-scottish-book-155.yaml).
 

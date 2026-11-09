@@ -30,7 +30,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Source: *We Can't Agree to Disagree, Formally: Aumann's Theorem and Assumption Accounting in Lean*, [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6837298](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6837298).
 - Project repository: [AxiomMath/AgreeToDisagree](https://github.com/AxiomMath/AgreeToDisagree).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
-- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, and its notice file gives no copyright line for it.
+- License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 60A10, 91A40.
 - In Lean Pool: [LeanPool/AgreeToDisagree](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/AgreeToDisagree), from the card [LeanPool/projects/agree-to-disagree.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/agree-to-disagree.yaml).
 
