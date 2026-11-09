@@ -6,19 +6,20 @@ vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform
 and published at https://deicyde.github.io/trough/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
-`catalog/libraries.toml` lists the 61 libraries trough targets: Mathlib, Tau
+`catalog/libraries.toml` lists the 62 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
 Equational Theories, Strong PNT), Formal Conjectures, Physlib, CSLib,
 Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
-Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
-gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
+Pool, OpenAI Math, Axiom's CFSG and Stacks Project) and the 44 Formal Frontier
+libraries. Each gets the article unit that suits it, recorded as `map_unit` and
+`map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
 roadmaps' status files name and the results its docstrings name, five
 research projects from their leanblueprints (Imperial's FLT, PFR, Equational
 Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
 headline results, Formal Conjectures from its problem files, Lean Pool from
-its project cards, and Anthropic's FLT from the landmark theorems of its
-proof.
+its project cards, Anthropic's FLT from the landmark theorems of its proof,
+and Axiom's Stacks Project formalization from its Stacks tags.
 
 ## The Mathlib map
 
@@ -345,6 +346,56 @@ states.
    checkout, a landmark's statement file states another theorem or may be cut
    short, or the landmarks drop under half the last count.
 
+## The Stacks Project chapter
+
+[AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) formalizes
+[the Stacks Project](https://stacks.math.columbia.edu) in Lean, indexed by
+Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier,
+drafted and not yet reviewed. A declaration that formalizes all or part of a
+tag carries `@[stacks TAG]`, with a comment naming the part when it covers only
+part; `add_to_stacks` registers a Mathlib declaration for a tag; and `@[ega]`,
+`@[sga]`, `add_to_ega` and `add_to_sga` record the items of EGA and SGA a
+declaration proves. The chapter has a part per Stacks Project part, a page per
+chapter and an article per section with a tag that a declaration carries. An
+article has a block per tag, in the Stacks Project's order: the tag's link, each
+declaration carrying it with its Lean statement, docstring, tier, line and the
+attribute's comment, the declarations registered for it, linked to Mathlib's
+documentation, and the EGA and SGA references with their comments. An EGA page
+and an SGA page list each reference with the articles that carry it. The
+Stacks Project is under the GNU Free Documentation License, so its statements
+are not quoted; its parts, chapters and sections give the headings, and each
+block links its tag's page. No Lean runs for this chapter, so its articles have
+no edges.
+
+1. `tools/refresh_stacks.py CHECKOUT PROJECT` reads a checkout of the
+   repository and one of the Stacks Project and writes `data/stacks/`:
+   `source.json`, the commit, its formalization.yaml's facts, its README's words
+   on the tiers and the counts; `structure.json`, the Stacks Project's parts,
+   chapters and sections with their numbers and titles and the section each
+   tag's label is in; and `tags/XX.json`, the records of the tags that start
+   XX.
+2. `tools/trough/leansource.py` reads each file as it does for Formal
+   Conjectures, and also gives the `private` declarations and the instances
+   with no name, so every `@[stacks]`, `@[ega]` and `@[sga]` attribute a file
+   writes is accounted for. An `attribute [stacks TAG] name` command tags the
+   declaration it names. A declaration whose statement has no `:=` or `where`,
+   such as a definition by cases, shows its header.
+3. The repository runs no continuous integration, so the pin is the newest
+   commit of its main branch, not one a build is known to pass. The
+   **Stacks data** workflow (`.github/workflows/stacks-data.yml`) fetches both
+   repositories at the commits `source.json` and `structure.json` pin, as
+   blobless sparse checkouts of the files the refresh reads, runs the refresh,
+   regenerates the pages and runs the tests; on a pull request it fails when
+   the committed data differ from what the pins give. The weekly run, or a
+   dispatch with `newest`, moves both pins to the newest commits. The refresh
+   checks whether the repository's site serves its tag pages and records the
+   answer; the blocks link those pages only when it does. A refresh writes
+   nothing, and the workflow fails, when the repository is not Apache-2.0,
+   when a file the commit lists is not checked out, when an attribute, a
+   registration or an `attribute` command does not read or a file's scopes
+   don't close, naming each, when the Stacks Project's checkout gives no parts
+   or tags, or when the tags drop under half of those the last record has.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -422,3 +473,8 @@ The text quoted in `data/anthropic-flt/` comes from the PROOF-PATH.md,
 formalization.yaml and `Theorems/` files of
 [anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem),
 Apache-2.0.
+The docstrings, Lean statements and attribute comments in `data/stacks/tags/`
+come from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks), Apache-2.0;
+the titles in `data/stacks/structure.json` come from
+[the Stacks Project](https://github.com/stacks/stacks-project), under the GNU
+Free Documentation License, whose text is otherwise not copied.

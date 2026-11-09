@@ -18,7 +18,9 @@ attributes of the `@[...]` list before it, and its statement, the text up to the
 `:=` or `where` that starts its value, with whether that value holds `sorry`.
 declarations() also gives, in file order, the `private` declarations under the
 names they are written with and the anonymous instances with no name, for a
-reader that has to account for every attribute a file writes.
+reader that has to account for every attribute a file writes; with *relaxed*,
+it also reads a name written on the line after its keyword and a modifier
+written before the keyword's line (`@[simp] noncomputable` above a `def`).
 """
 
 from __future__ import annotations
@@ -54,6 +56,8 @@ SORRY = re.compile(r"(?<![\w.'])(?:sorry|sorryAx|admit)(?![\w'!?])|^[ \t]*(?:·[
 EXIT = re.compile(r"^#exit\b")
 RAW_STRING = re.compile(r'r(#*)"')
 NOT_NAMES = {"where", "extends", "deriving"}
+# A modifier ending the text before a declaration's keyword line.
+MODIFIER_BEFORE = re.compile(r"(?<![\w.'])(?:private|protected|noncomputable|partial|unsafe|nonrec|public|meta)\s*$")
 # What decides where a statement ends: brackets, `:=` or a `where` that gives the value by fields, and the
 # `let` and `have` whose own `:=` comes first.
 VALUE_TOKENS = re.compile(r"«[^»\n]*»|:=|[(\[{⟨⦃)\]}⟩⦄]|(?<![\w.'])(?:let|have|letI|haveI|where)(?![\w'!?])")
@@ -176,15 +180,18 @@ def scan(text: str) -> dict[str, Declaration] | None:
     return named
 
 
-def declarations(text: str) -> list[Declaration] | None:
+def declarations(text: str, relaxed: bool = False) -> list[Declaration] | None:
     """Each declaration the file writes, in order: those scan() gives, the `private` ones under their written
-    full names, and the anonymous instances, whose name is ""; None when its scopes don't close as they open."""
+    full names, and the anonymous instances, whose name is ""; None when its scopes don't close as they open.
+    With *relaxed*, a name on the line after its keyword counts too, and a modifier on the lines before the
+    keyword's does not stand between the declaration and its attributes."""
     found_spans = spans(text)
     code = clear(text, found_spans)
     # Comments go but strings stay, for reading attributes.
     plain = clear(text, [span for span in found_spans if span[2] != "string"])
     docs = {end: start for start, end, kind in found_spans if kind == "doc"}
     lines = blank_attributes(code).split("\n")
+    source = text.split("\n")
     offsets = [0]
     for line in lines:
         offsets.append(offsets[-1] + len(line) + 1)
@@ -200,8 +207,11 @@ def declarations(text: str) -> list[Declaration] | None:
             joined = "\n".join(body)
             cut = value_start(joined)
             column = head - offsets[line - 1]
+            if relaxed:
+                # The keyword line's own indentation: an attribute list before the keyword is no indentation.
+                column = len(source[line - 1]) - len(source[line - 1].lstrip(" "))
             statement = None if cut is None else dedent(text[head:start + cut].rstrip(), column)
-            doc, attributes = attached(text, code, plain, docs, head)
+            doc, attributes = attached(text, code, plain, docs, head, relaxed)
             found.append(Declaration(name, kind, line, bool(SORRY.search(joined)), doc, attributes, statement,
                                      cut is not None and bool(SORRY.search(joined[cut:])), private))
         open_decl = None
@@ -242,6 +252,11 @@ def declarations(text: str) -> list[Declaration] | None:
         if match := DECLARATION.match(line):
             close()
             name = match["name"]
+            if relaxed and not name and not line[match.end():].strip():
+                following = next((later for later in lines[number:] if later.strip()), "")
+                token = re.match(rf"[ \t]+({NAME})(?=[\s:({{\[]|$)", following)
+                if token and (token.group(1)[0].isalpha() or token.group(1)[0] in "_«") and token.group(1) not in NOT_NAMES:
+                    name = token.group(1)
             anonymous = match["kind"] == "instance" and (not name or name in NOT_NAMES)
             if anonymous:
                 # An anonymous instance's `where` belongs to its body.
@@ -291,9 +306,11 @@ def value_start(code: str) -> int | None:
     return None
 
 
-def attached(text: str, code: str, plain: str, docs: dict[int, int], head: int) -> tuple[str, tuple[str, ...]]:
+def attached(text: str, code: str, plain: str, docs: dict[int, int], head: int,
+             relaxed: bool = False) -> tuple[str, tuple[str, ...]]:
     """The docstring and attributes written before the declaration that starts at *head*: an `@[...]` list
-    right before it, and a docstring right before that, with nothing but space and comments between."""
+    right before it, and a docstring right before that, with nothing but space and comments between; with
+    *relaxed*, modifiers may stand between the list and the declaration's line."""
 
     def back(j: int) -> int:
         while j > 0 and code[j - 1].isspace() and j not in docs:
@@ -302,6 +319,8 @@ def attached(text: str, code: str, plain: str, docs: dict[int, int], head: int) 
 
     attributes: list[str] = []
     j = back(head)
+    while relaxed and (modifier := MODIFIER_BEFORE.search(code[max(0, j - 24):j])):
+        j = back(j - len(modifier.group()))
     while j > 0 and code[j - 1] == "]" and j not in docs:
         depth, k = 0, j - 1
         while k >= 0:

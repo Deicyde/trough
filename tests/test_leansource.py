@@ -238,3 +238,28 @@ def test_the_module_docstring_is_the_first_one():
 
 def test_attribute_lists_split_at_top_level_commas_only():
     assert leansource.split_attributes(' simp, foo [a, b],\n  bar "x, y" ') == ["simp", "foo [a, b]", 'bar "x, y"']
+
+
+def test_declarations_give_private_ones_and_anonymous_instances_and_scan_does_not():
+    text = "namespace A\n\ninstance : Inhabited Nat := ⟨0⟩\n\nprivate theorem hidden : True := trivial\n\n" \
+           "instance where\n  default := 0\n\ntheorem shown : True := trivial\n\nend A\n"
+    found = leansource.declarations(text)
+    assert [(item.name, item.kind, item.line, item.private) for item in found] == [
+        ("", "instance", 3, False), ("A.hidden", "theorem", 5, True), ("", "instance", 7, False),
+        ("A.shown", "theorem", 10, False)]
+    assert found[0].statement == "instance : Inhabited Nat" and found[2].statement == "instance"
+    assert set(leansource.scan(text)) == {"A.shown"}
+    assert leansource.declarations("namespace A\nend B\n") is None
+
+
+def test_the_relaxed_reading_takes_a_name_on_the_next_line_and_modifiers_before_the_keyword():
+    text = ("@[simp] public theorem\n    wrapped (n : Nat) :\n    n = n := rfl\n\n@[simp] noncomputable\ndef apart : Nat := 0\n\n"
+            "instance\n    [Inhabited Nat] : Inhabited Nat := ⟨0⟩\n")
+    assert [(item.name, item.attributes) for item in leansource.declarations(text)] == [("apart", ()), ("", ())]
+    relaxed = leansource.declarations(text, relaxed=True)
+    assert [(item.name, item.line, item.attributes) for item in relaxed] == [
+        ("wrapped", 1, ("simp",)), ("apart", 6, ("simp",)), ("", 8, ())]
+    # The statement keeps its lines' indentation: the attribute list before the keyword is no indentation.
+    assert relaxed[0].statement == "public theorem\n    wrapped (n : Nat) :\n    n = n"
+    assert relaxed[2].statement == "instance\n    [Inhabited Nat] : Inhabited Nat"
+

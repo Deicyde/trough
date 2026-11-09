@@ -162,7 +162,7 @@ def read_file(text: str, path: str) -> dict:
     `add_to_ega`, `add_to_sga`) and the `attribute` commands that name a declaration it does not; and what of
     these does not read."""
     record = {"declarations": [], "names": {}, "registrations": [], "commands": [], "unread": []}
-    found = leansource.declarations(text)
+    found = leansource.declarations(text, relaxed=True)
     if found is None:
         record["unread"].append({"line": 0, "why": "its scopes do not close as they open"})
         return record
@@ -283,7 +283,7 @@ def read(checkout: Path, paths: list[str]) -> tuple[list[dict], dict, list[str]]
             found = next((item for item in other["declarations"] if item["name"] == command["name"]), None)
             if found is None:
                 text = (checkout / target).read_text(encoding="utf-8")
-                declaration = next(item for item in leansource.declarations(text) or []
+                declaration = next(item for item in leansource.declarations(text, relaxed=True) or []
                                    if item.name == command["name"] and not item.private)
                 found = {"name": declaration.name, "kind": declaration.kind, "line": declaration.line,
                          "private": False, "doc": declaration.doc,
@@ -470,7 +470,7 @@ def sample(tags: list[str], size: int = 30) -> list[str]:
 # The chapter, from the data.
 
 # What each tier is, in the words of the repository's formalization.yaml.
-TIER_WORDS = {"StacksCore": "StacksCore, human-reviewed", "StacksFrontier": "StacksFrontier, drafted and not yet reviewed"}
+TIER_WORDS = {"StacksCore": "StacksCore (human-reviewed)", "StacksFrontier": "StacksFrontier (drafted, not yet reviewed)"}
 KIND_WORDS = {"chapter": "the chapter", "section": "the section", "subsection": "a subsection", "item": "an item",
               "equation": "an equation", "exercise": "an exercise", "example": "an example", "remarks": "remarks"}
 NO_DEPENDS = ("No dependencies are recorded: this chapter reads the repository's source text without running Lean, "
@@ -522,11 +522,15 @@ def references(block: dict) -> str:
     return ("References: " + "; ".join(named) + ".") if named else ""
 
 
+def indefinite(words: str) -> str:
+    return ("an " if words[:1] in "aeiou" else "a ") + words
+
+
 def declaration_block(block: dict, source: dict) -> str:
     """A declaration's part of its tag's block: its name, kind, tier and line, its attribute's comment, its EGA
     and SGA references, its docstring and its Lean statement."""
     if block["name"]:
-        name = f"**`{block['name']}`**" + (", a private" if block["private"] else ",") + f" {block['kind']}"
+        name = f"**`{block['name']}`**, " + indefinite(("private " if block["private"] else "") + block["kind"])
     else:
         name = "**An instance with no name**"
     head = (f"{name} in {TIER_WORDS[block['tier']]}, declared in "
@@ -800,8 +804,8 @@ def intro(data: dict, stats: Counter) -> str:
     source, structure = data["source"], data["structure"]
     counts = source["counts"]
     readme = source.get("readme", {})
-    tiers = "".join(f" Its README: {name}, “{ff.safe(readme['tiers'][name])}”" + (";" if name == TIERS[0] else ".")
-                    for name in TIERS if readme.get("tiers", {}).get(name))
+    described = [f"{name} as “{ff.safe(readme['tiers'][name])}”" for name in TIERS if readme.get("tiers", {}).get(name)]
+    tiers = f" It describes {' and '.join(described)}" if described else ""
     declarations = stats["StacksCore"] + stats["StacksFrontier"]
     site = source.get("site", {})
     site_line = (f"The repository's site, {SITE}, links each tag to its Lean code; each block links the tag's page there."
@@ -843,8 +847,8 @@ def intro(data: dict, stats: Counter) -> str:
         "section its label is in there. The Stacks Project is under the GNU Free Documentation License, so its text is "
         "not quoted: each block links its tag's page at stacks.math.columbia.edu. " + site_line,
         f"Declarations also carry the items of EGA and SGA they prove, which the blocks note with the attribute's "
-        f"comment as written; two indexes list them, [EGA](trough:stacks-ega) ({stats['ega_indexed']:,} items) and "
-        f"[SGA](trough:stacks-sga) ({stats['sga_indexed']:,} items), of the {counts.get('ega_items', 0):,} and "
-        f"{counts.get('sga_items', 0):,} the repository carries.",
+        f"comment as written; two indexes list them, [EGA](trough:stacks-ega) ({plural(stats['ega_indexed'], 'item')}) "
+        f"and [SGA](trough:stacks-sga) ({plural(stats['sga_indexed'], 'item')}), of the {counts.get('ega_items', 0):,} "
+        f"and {counts.get('sga_items', 0):,} the repository carries.",
         credit(source) + " Each declaration's line is linked.",
     ])
