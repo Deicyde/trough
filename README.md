@@ -205,9 +205,9 @@ benchmark sets. No Lean runs for this chapter, so its articles have no edges.
    `:=` (or `where`) that starts its proof, and it is proved here when the text
    from there on holds no `sorry`, which, like Formal Conjectures' own
    `hasSorryFreeProof`, says nothing of the statements that proof uses. A
-   statement with no name, an `example`, is left out, as Formal Conjectures'
-   site leaves it out, and so is one whose attributes don't read; the refresh
-   lists those.
+   statement with no name, an `example`, or a `private` one is left out, as
+   Formal Conjectures' site leaves them out, and so is one whose attributes
+   don't read; the refresh lists those.
 3. The **Formal Conjectures data** workflow (`.github/workflows/fc-data.yml`)
    fetches the repository at the commit `source.json` pins, as a blobless
    sparse checkout of the files the refresh reads, runs the refresh,

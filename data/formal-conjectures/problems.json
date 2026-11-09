@@ -6271,7 +6271,7 @@
    ],
    "folded": {
     "test": 5,
-    "api": 12
+    "api": 0
    },
    "unread": []
   },
@@ -9696,7 +9696,7 @@
    ],
    "folded": {
     "test": 2,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -11754,7 +11754,7 @@
    ],
    "folded": {
     "test": 5,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -33935,7 +33935,7 @@
     }
    ],
    "folded": {
-    "test": 3,
+    "test": 0,
     "api": 0
    },
    "unread": []
@@ -37089,7 +37089,7 @@
    ],
    "folded": {
     "test": 3,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -56619,7 +56619,7 @@
    ],
    "folded": {
     "test": 0,
-    "api": 2
+    "api": 0
    },
    "unread": []
   },
@@ -60585,7 +60585,7 @@
    ],
    "folded": {
     "test": 0,
-    "api": 3
+    "api": 0
    },
    "unread": []
   },
@@ -70291,7 +70291,7 @@
    ],
    "folded": {
     "test": 0,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -79051,7 +79051,7 @@
    ],
    "folded": {
     "test": 5,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -79214,7 +79214,7 @@
    ],
    "folded": {
     "test": 5,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -83434,7 +83434,7 @@
    ],
    "folded": {
     "test": 8,
-    "api": 2
+    "api": 0
    },
    "unread": []
   },
@@ -84752,7 +84752,7 @@
    ],
    "folded": {
     "test": 15,
-    "api": 3
+    "api": 2
    },
    "unread": []
   },
@@ -85218,7 +85218,7 @@
    ],
    "folded": {
     "test": 5,
-    "api": 7
+    "api": 0
    },
    "unread": []
   },
@@ -85321,7 +85321,7 @@
    ],
    "folded": {
     "test": 21,
-    "api": 2
+    "api": 1
    },
    "unread": []
   },
@@ -85457,19 +85457,6 @@
     "url": "https://oeis.org/A358684"
    },
    "statements": [
-    {
-     "name": "OeisA358684.log2_minFac_le",
-     "kind": "lemma",
-     "category": "textbook",
-     "ams": [
-      11
-     ],
-     "formal_proofs": [],
-     "doc": "The log2 of the smallest prime factor of $F_n$ is at most $2^n$.",
-     "statement": "private lemma log2_minFac_le (n : ℕ) : log2 (fermatNumber n).minFac ≤ 2^n",
-     "line": 72,
-     "sorry": false
-    },
     {
      "name": "OeisA358684.oeis_358684_conjecture_0",
      "kind": "theorem",
@@ -85954,7 +85941,7 @@
    ],
    "folded": {
     "test": 5,
-    "api": 20
+    "api": 0
    },
    "unread": []
   },
@@ -86529,7 +86516,7 @@
    ],
    "folded": {
     "test": 17,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -88678,7 +88665,7 @@
    "doc": "The conjecture asks for a Lindelöf Tychonoff space where all singletons are G_δ sets\nand which has cardinality > 𝔠.\n\nThis is Problem 1 in https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-(pp37-46).pdf.pdf\n\n*Reference:*\n* [Selected Old Open Problems in General Topology](https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-(pp37-46).pdf.pdf)\n  by A. V. Arhangel’skii",
    "reference": {
     "text": "Selected Old Open Problems in General Topology",
-    "url": "https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-(pp37-46"
+    "url": "https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-(pp37-46).pdf.pdf"
    },
    "statements": [
     {
@@ -88997,7 +88984,7 @@
    ],
    "folded": {
     "test": 2,
-    "api": 11
+    "api": 4
    },
    "unread": []
   },
@@ -89250,7 +89237,7 @@
    ],
    "folded": {
     "test": 0,
-    "api": 10
+    "api": 8
    },
    "unread": []
   },
@@ -91220,7 +91207,7 @@
     }
    ],
    "folded": {
-    "test": 6,
+    "test": 3,
     "api": 0
    },
    "unread": []
@@ -91886,7 +91873,7 @@
    "doc": "*References*:\n- [B. Reed,  ω Δ and χ, J. Graph Theory 27 (1998) 177-212.](https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1097-0118(199804)27:4%3C177::AID-JGT1%3E3.0.CO;2-K)\n- [openproblemgarden](http://www.openproblemgarden.org/op/reeds_omega_delta_and_chi_conjecture)\n- [mathoverflow/37923](https://mathoverflow.net/questions/37923) asked by user [Andrew D. King](https://mathoverflow.net/users/4580/andrew-d-king)",
    "reference": {
     "text": "B. Reed,  ω Δ and χ, J. Graph Theory 27 (1998) 177-212.",
-    "url": "https://onlinelibrary.wiley.com/doi/10.1002/(SICI"
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1097-0118(199804)27:4%3C177::AID-JGT1%3E3.0.CO;2-K"
    },
    "statements": [
     {
@@ -92759,7 +92746,7 @@
    ],
    "folded": {
     "test": 0,
-    "api": 27
+    "api": 21
    },
    "unread": []
   },
@@ -94067,7 +94054,7 @@
    "doc": "*References:*\n- [Wikipedia](https://en.wikipedia.org/wiki/Bloch%27s_theorem_(complex_analysis))\n- [CP96] Chen, H., Gauthier, P. M. \"On Bloch's constant.\" Journal d'Analyse Mathématique 69 (1996),\n  275–291.\n- [AG37] Ahlfors, L. V., Grunsky, H. \"Über die Blochsche Konstante.\" Mathematische Zeitschrift 42\n  (1937), 671–673.\n- [Ya95] Yanagihara, H. \"On the locally univalent Bloch constant.\" Journal d'Analyse Mathématique\n  65 (1995), 1–17.\n- [Ra43] Rademacher, H. \"On the Bloch-Landau Constant.\"\" American Journal of Mathematics 65 (1943),\n  387–390.\n- [OptimizationConstants](https://teorth.github.io/optimizationproblems/constants/57c.html)\n- [Skin2009] Skinner, Brian. The univalent Bloch constant problem. Complex Variables and Elliptic\n  Equations 54 (2009), no. 10, 951–955.\n- [MathWorld](https://mathworld.wolfram.com/BlochConstant.html)\n- [Bhowmik–Sen](https://www.cambridge.org/core/journals/canadian-mathematical-bulletin/article/improved-bloch-and-landau-constants-for-meromorphic-functions/FD465D1F2CEF7E8C62AFF16C3E89B7B4)\n- [Re2008] Rettinger, R. [\"Bloch's constant is computable.\"](https://jucs.org/jucs_14_6/blochs_constant_is_computable/jucs_14_06_0896_0907_rettinger.pdf)\n  Journal of Universal Computer Science 14 (2008), 896–907. In particular, a schlicht disk is the\n  image of a subdomain under a biholomorphic restriction.",
    "reference": {
     "text": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Bloch%27s_theorem_(complex_analysis"
+    "url": "https://en.wikipedia.org/wiki/Bloch%27s_theorem_(complex_analysis)"
    },
    "statements": [
     {
@@ -95263,7 +95250,7 @@
    "doc": "*References:*\n- [Wikipedia, *Diameter (group theory)*](https://en.wikipedia.org/wiki/Diameter_(group_theory))\n- [H. A. Helfgott and Á. Seress, *On the diameter of permutation groups*](https://arxiv.org/abs/1109.3550)\n- [L. Babai and Á. Seress, *On the diameter of permutation groups*,\n  European Journal of Combinatorics 13 (1992), 231–243](https://doi.org/10.1016/S0195-6698(05)80029-0)\n\nThis file contains two conjectures from the Babai–Seress paper:\n\n- **Conjecture 1.5**: $\\operatorname{diam}(A_n) < n^C$ for some absolute constant $C$,\n  where $A_n$ is the alternating group on $n$ elements.\n\n- **Conjecture 1.7**: $\\operatorname{diam}(G) < (\\log |G|)^C$ for some absolute constant $C$,\n  where $G$ ranges over all non-abelian finite simple groups.\n\nConjecture 1.7 generalises Conjecture 1.5, since for $G = A_n$ we have\n$\\log |A_n| \\approx n \\log n$, so a polylogarithmic bound in $|G|$ implies a polynomial\nbound in $n$.",
    "reference": {
     "text": "Wikipedia, *Diameter (group theory)*",
-    "url": "https://en.wikipedia.org/wiki/Diameter_(group_theory"
+    "url": "https://en.wikipedia.org/wiki/Diameter_(group_theory)"
    },
    "statements": [
     {
@@ -96011,7 +95998,7 @@
    "doc": "This file is a Wikipedia-facing entry point for the formalization in\n`FormalConjectures.ErdosProblems.«20»`.\n\n*Reference:* [Wikipedia](https://en.wikipedia.org/wiki/Sunflower_(mathematics))",
    "reference": {
     "text": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Sunflower_(mathematics"
+    "url": "https://en.wikipedia.org/wiki/Sunflower_(mathematics)"
    },
    "statements": [],
    "folded": {
@@ -96664,7 +96651,7 @@
    "doc": "*References:*\n- [Wikipedia: Examples of numerical series](https://en.wikipedia.org/wiki/Series_(mathematics)#Examples_of_numerical_series)\n- [MathWorld: Flint Hills Series](https://mathworld.wolfram.com/FlintHillsSeries.html)\n- [Alekseyev, On the Flint Hills series](https://doi.org/10.48550/arXiv.1104.5100)\n- [MathWorld: Cookson Hills Series](https://mathworld.wolfram.com/CooksonHillsSeries.html)",
    "reference": {
     "text": "Wikipedia: Examples of numerical series",
-    "url": "https://en.wikipedia.org/wiki/Series_(mathematics"
+    "url": "https://en.wikipedia.org/wiki/Series_(mathematics)#Examples_of_numerical_series"
    },
    "statements": [
     {
@@ -97277,7 +97264,7 @@
    "doc": "*References:*\n* [Wikipedia](https://en.wikipedia.org/wiki/Hadwiger_conjecture_(graph_theory)#Generalizations)\n* [Ha61] Hajós, G. (1961). \"Über eine Konstruktion nicht n-färbbarer Graphen.\"\n  *Wiss. Z. Martin-Luther-Univ. Halle-Wittenberg Math.-Natur. Reihe* 10, pp. 116--117.\n* [Di52] Dirac, G. A. (1952). \"A property of 4-chromatic graphs and some remarks on critical\n  graphs.\" *J. London Math. Soc.* 27, pp. 85--92.\n* [Ca79] Catlin, P. A. (1979). \"Hajós' graph-coloring conjecture: variations and\n  counterexamples.\" *J. Combin. Theory Ser. B* 26, pp. 268--274.\n* [EF81] Erdős, P. and Fajtlowicz, S. (1981). \"On the conjecture of Hajós.\" *Combinatorica* 1,\n  pp. 141--143.\n* [Th05] Thomassen, C. (2005). \"Some remarks on Hajós' conjecture.\" *J. Combin. Theory Ser. B*\n  93, pp. 95--105.",
    "reference": {
     "text": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Hadwiger_conjecture_(graph_theory"
+    "url": "https://en.wikipedia.org/wiki/Hadwiger_conjecture_(graph_theory)#Generalizations"
    },
    "statements": [
     {
@@ -97648,7 +97635,7 @@
    ],
    "folded": {
     "test": 1,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -100245,7 +100232,7 @@
    ],
    "folded": {
     "test": 3,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -102009,7 +101996,7 @@
    ],
    "folded": {
     "test": 1,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },
@@ -104439,7 +104426,7 @@
    ],
    "folded": {
     "test": 1,
-    "api": 1
+    "api": 0
    },
    "unread": []
   },

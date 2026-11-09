@@ -178,7 +178,7 @@ head = "2055e5adadae"
 head_date = "2026-11-06"
 map_status = "live"
 map_unit = "problem"
-map_plan = "One article per problem file (about 1,830), on a page per source folder, with an index by AMS subject and the four FC100 lists; each statement's card says whether it is open, solved with a proof elsewhere, or proved in the repository, and test and API statements are counted in their problem. Most statements are stated without a proof."
+map_plan = "One article per problem file that states a research or textbook statement (about 1,810), on a page per source folder, with an index by AMS subject and the four FC100 lists; each statement's card says whether it is open, solved with a proof elsewhere, or proved in the repository, and test and API statements are counted in their problem. Most statements are stated without a proof."
 
 [[library]]
 id = "physlib"

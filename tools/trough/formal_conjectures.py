@@ -548,7 +548,8 @@ def intro(data: dict, stats: Counter) -> str:
         "No Lean is run for this chapter. Statements, docstrings and attributes are read from the source text: a "
         "statement is a named declaration with a category in the `@[...]` list right before it, its Lean statement "
         "runs to the `:=` that starts its proof, and its name is read under the namespaces it sits in. A statement "
-        "with no name, an `example`, is left out, as Formal Conjectures' own site leaves it out. The articles have no "
+        "with no name, an `example`, or a `private` one is left out, as Formal Conjectures' own site leaves them out. "
+        "The articles have no "
         "dependencies: the problems form a flat collection, and edges between statements need Lean.",
         f"Two indexes link the articles: [by subject](trough:fc-by-subject), from the `AMS` attributes' top-level "
         f"classes of the Mathematics Subject Classification ({stats['subjects']} subjects), and the "
