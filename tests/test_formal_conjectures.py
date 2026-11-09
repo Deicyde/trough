@@ -82,6 +82,7 @@ Some prose about it, <https://example.org/autolink>.
 
 *References:*
 - [Wikipedia](https://en.wikipedia.org/wiki/Conjecture_(mathematics))
+- [Er56](Erdős, P., Problems (1956).) and $[0,1](x)$
 -/
 
 /-- It is open. -/
@@ -249,6 +250,8 @@ def test_an_article_quotes_its_module_docstring_and_has_a_card_per_statement(tmp
     assert "> Some prose about it, <https://example.org/autolink>.\n>\n> *References:*" in wiki
     assert "erdosproblems.com" not in wiki
     assert "- [Wikipedia](https://en.wikipedia.org/wiki/Conjecture_%28mathematics%29)" in wiki
+    # A citation written as a link reads as text, so the site looks for no page at its target.
+    assert "> - [Er56\\](Erdős, P., Problems (1956).) and $[0,1](x)$" in wiki
 
 
 def test_part_pages_credit_formal_conjectures_and_list_files_without_an_article(tmp_path):

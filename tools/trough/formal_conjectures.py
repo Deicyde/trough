@@ -44,6 +44,10 @@ REFERENCES = re.compile(r"^[ \t]*\*{0,2}References?\*{0,2}:?\*{0,2}:?", re.M | r
 REFERENCE = re.compile(r"\[((?:[^\[\]]|\[[^\[\]]*\])+)\]\(((?:[^\s()]|\([^\s()]*\))+)\)|(https?://[^\s)>\]]+)")
 DECL_NAME = re.compile(rf"decl_name%\s+({leansource.NAME})")
 SUBJECT = re.compile(r"/--\s*((?:(?!-/).)*?)\s*-/\s*\|\s*«(\d+)»", re.S)
+# Code spans and formulas, which quoted text leaves as written; and a link whose target is not a URL, such as
+# a citation written `[Er56](Erdős, P., ...)`.
+OPAQUE = re.compile(r"(?s)(`{3,}).*?\1|`[^`\n]*`|(?<!\\)(\${1,2}).*?(?<!\\)\2|\\\(.*?\\\)|\\\[.*?\\\]")
+PROSE_LINK = re.compile(r"\[((?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\((?!\s*<?(?:[a-zA-Z][a-zA-Z0-9+.-]*:|#))")
 
 
 def module_name(path: str) -> str:
@@ -234,10 +238,20 @@ def plain_link(url: str) -> str:
     return f"[{escape(url)}]({href(url)})"
 
 
+def unlink(markdown: str) -> str:
+    """Quoted Markdown whose links to something other than a URL read as text, their closing bracket escaped:
+    the site would look for a page at such a target."""
+    out, last = [], 0
+    for match in OPAQUE.finditer(markdown):
+        out += [PROSE_LINK.sub(r"[\1\\](", markdown[last:match.start()]), match.group()]
+        last = match.end()
+    return "".join(out) + PROSE_LINK.sub(r"[\1\\](", markdown[last:])
+
+
 def quote(markdown: str) -> str:
     """Quoted Markdown as a blockquote, so its headings and lists stay inside the quote. A `<` opens no HTML,
-    but an autolink (`<https://...>`) stays a link."""
-    text = re.sub(r"&lt;(https?://[^\s<>]*>)", r"<\1", safe(markdown))
+    but an autolink (`<https://...>`) stays a link, and a link whose target is not a URL reads as text."""
+    text = re.sub(r"&lt;(https?://[^\s<>]*>)", r"<\1", safe(unlink(markdown)))
     return "\n".join(f"> {line}".rstrip() for line in text.split("\n"))
 
 
