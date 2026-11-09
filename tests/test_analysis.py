@@ -178,6 +178,13 @@ def test_labels_read_as_the_book_writes_them():
     assert analysis.label("Assumption 2.6 (Existence)") == ("Assumption 2.6", "Assumption", False)
     assert analysis.label("Theorem 11.4.1(a) / Exercise 11.4.1") == ("Theorem 11.4.1(a) / Exercise 11.4.1", "Theorem", True)
     assert analysis.label("Proposition A.3.1, alternate proof") == ("Proposition A.3.1", "Proposition", False)
+    # A part after a space is the number's; other parentheses between joined labels are left out.
+    assert analysis.label("Proposition 3.6.14 (b') / Exercise 3.6.4") == (
+        "Proposition 3.6.14 (b') / Exercise 3.6.4", "Proposition", True)
+    assert analysis.label("Proposition 4.3.12(a) (Properties of exponentiation, II) (exponent product) / Exercise 4.3.4") == (
+        "Proposition 4.3.12(a) / Exercise 4.3.4", "Proposition", True)
+    assert analysis.label("Exercise 1.1.6 (vi) (translation invariance)") == ("Exercise 1.1.6 (vi)", "Exercise", True)
+    assert analysis.label("Lemma 2.2.3 ({lean}`n+(m++) = (n+m)++`). Compare") == ("Lemma 2.2.3", "Lemma", False)
     # A Verso `{given}` role may come first.
     assert analysis.label("{given -show}`n : ℕ` Exercise 7.4.2 : reprove") == ("Exercise 7.4.2", "Exercise", True)
     for text in ("Exercise for Lemma 1.1.2(ii): Interval", "Definition of disjointness", "Example: the measure",

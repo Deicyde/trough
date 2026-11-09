@@ -156,7 +156,7 @@ def generate() -> dict[Path, str]:
         files.update(render_tree(analysis_built.root, VAULT))
         chapters["analysis"] = "analysis/README.md"
         lean_links["analysis"] = analysis_links
-        analysis_stats = analysis_built.stats
+        analysis_stats = Counter(analysis_built.stats)
         blueprint_rows.append(("Analysis I companion", "DECOMPOSED",
                                f"[{analysis_stats['articles']} section modules](../roadmap/analysis/README.md) of Analysis I "
                                "and An introduction to measure theory, one article each, with a block per labelled item."))

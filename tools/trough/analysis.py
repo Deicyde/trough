@@ -40,11 +40,14 @@ HEADING = re.compile(r"^#[ \t]+(?:(?:Analysis I|Introduction to Measure Theory),
 IMPORT = re.compile(r"^(?:public[ \t]+)?(?:meta[ \t]+)?import[ \t]+(?:all[ \t]+)?(\S+)", re.M)
 LABEL_KINDS = ("Definition", "Theorem", "Lemma", "Proposition", "Corollary", "Exercise", "Example", "Remark", "Axiom",
                "Assumption")
-# A number as the book writes it, with a part or a prime: 6.1.3, A.1.1, 2.1, 3.6.2a, 1.1.23', 1.3.8(vi'').
-NUMBER = r"(?:[A-Z]\.)?\d+(?:\.\d+)*[a-z]?'*(?:\([a-z]+'*\))?"
-ONE_LABEL = rf"(?P<kind>{'|'.join(LABEL_KINDS)})s?[ \t]+{NUMBER}"
-# A label, or several joined by slashes: "Theorem 11.4.1(a) / Exercise 11.4.1".
-LABEL = re.compile(rf"^{ONE_LABEL}(?:[ \t]*/[ \t]*(?:{'|'.join(LABEL_KINDS)})s?[ \t]+{NUMBER})*")
+# A number as the book writes it, with a part or a prime: 6.1.3, A.1.1, 2.1, 3.6.2a, 1.1.23', 1.3.8(vi''),
+# 3.6.14 (b').
+NUMBER = r"(?:[A-Z]\.)?\d+(?:\.\d+)*[a-z]?'*(?:[ ]?\((?:[a-z]|[ivx]+)'*\))?"
+PART = re.compile(rf"(?P<kind>{'|'.join(LABEL_KINDS)})s?[ \t]+{NUMBER}")
+# What may come between a label and another it is joined to by a slash, as in "Proposition 4.3.12(a)
+# (Properties of exponentiation, II) (exponent product) / Exercise 4.3.4": a parenthesis, which may hold one.
+ASIDE = re.compile(r"[ \t]*\((?:[^()\n]|\([^()\n]*\))*\)")
+SLASH = re.compile(r"[ \t]*/[ \t]*")
 # Verso's `{given}` role, which names a docstring's variables before its text and may come before the label.
 GIVEN = re.compile(r"^(?:\{given\b[^}\n]*\}`[^`\n]*`\s*)+")
 # The site's README lists the chapters of Analysis I, and the measure theory README the sections of its chapter 1.
@@ -94,13 +97,24 @@ def title_and_doc(doc: str) -> tuple[str, str]:
 
 
 def label(doc: str) -> tuple[str, str, bool] | None:
-    """The book label a docstring starts with, as written, its kind (the first label's, singular), and
-    whether one of its labels is an exercise."""
-    match = LABEL.match(GIVEN.sub("", doc))
+    """The book label a docstring starts with, its kinds and numbers as written and joined by slashes, without
+    the parentheses between them; its kind (the first one's, singular); and whether one of them is an exercise."""
+    text = GIVEN.sub("", doc)
+    match = PART.match(text)
     if not match:
         return None
-    text = match.group()
-    return text, match["kind"], bool(re.search(r"(?:^|/)[ \t]*Exercises?\b", text))
+    parts, kinds, at = [match.group()], [match["kind"]], match.end()
+    while True:
+        while aside := ASIDE.match(text, at):
+            at = aside.end()
+        slash = SLASH.match(text, at)
+        joined = PART.match(text, slash.end()) if slash else None
+        if not joined:
+            break
+        parts.append(joined.group())
+        kinds.append(joined["kind"])
+        at = joined.end()
+    return " / ".join(parts), kinds[0], "Exercise" in kinds
 
 
 def declaration_record(declaration: leansource.Declaration) -> dict:
