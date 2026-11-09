@@ -19,9 +19,9 @@ Its statement uses no other concept on these lists.
 ## Sources
 
 - [Mathlib documentation: `Function.Embedding.schroeder_bernstein`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/SetTheory/Cardinal/SchroederBernstein.html#Function.Embedding.schroeder_bernstein)
-- [Source of `Function.Embedding.schroeder_bernstein` in Mathlib/SetTheory/Cardinal/SchroederBernstein.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/SetTheory/Cardinal/SchroederBernstein.lean#L88)
-- [Freek Wiedijk's 100 theorems, no. 25](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L123)
-- [1000+ theorems list: Q1033910](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1209)
+- [Source of `Function.Embedding.schroeder_bernstein` in Mathlib/SetTheory/Cardinal/SchroederBernstein.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/SetTheory/Cardinal/SchroederBernstein.lean#L88)
+- [Freek Wiedijk's 100 theorems, no. 25](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L123)
+- [1000+ theorems list: Q1033910](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1209)
 - [1000+ theorems project: Q1033910](https://1000-plus.github.io/all.html?length=-1#Q1033910)
 - [Wikipedia: Cantor–Bernstein–Schroeder theorem](https://en.wikipedia.org/wiki/Cantor%E2%80%93Bernstein%E2%80%93Schroeder_theorem)
 - [Wikidata: Q1033910](https://www.wikidata.org/wiki/Q1033910)

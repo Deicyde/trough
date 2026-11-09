@@ -19,9 +19,9 @@ abelianization is the [quotient group](quotient-group.md)
 
 $$G^{\mathrm{ab}} = G / [G, G],$$
 
-which is [the abelianization of $G$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization), together with the
-[quotient map $G \to G^{\mathrm{ab}}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.of), a surjective
-[homomorphism](group-morphism.md) whose [kernel is the commutator subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.ker_of).
+which is [the abelianization of $G$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization), together with the
+[quotient map $G \to G^{\mathrm{ab}}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.of), a surjective
+[homomorphism](group-morphism.md) whose [kernel is the commutator subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.ker_of).
 
 The quotient is abelian because the image of $ghg^{-1}h^{-1}$ is the identity,
 so the images of $g$ and $h$ commute. More is true: for a normal subgroup $N$ of
@@ -33,11 +33,11 @@ $G^{\mathrm{ab}}$ is the largest abelian quotient of $G$.
 
 Let $A$ be an abelian group and $f \colon G \to A$ a homomorphism. Since $A$ is
 abelian, $f$ sends every commutator to the identity, so
-[the commutator subgroup lies in the kernel of $f$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.commutator_le_ker).
+[the commutator subgroup lies in the kernel of $f$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.commutator_le_ker).
 Hence $f$ factors through the quotient map: there is a homomorphism
 $\bar f \colon G^{\mathrm{ab}} \to A$ with $\bar f(g[G, G]) = f(g)$, and it is
-[the only homomorphism with this property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.lift_unique).
-In other words, [homomorphisms $G \to A$ correspond bijectively to homomorphisms $G^{\mathrm{ab}} \to A$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.lift),
+[the only homomorphism with this property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.lift_unique).
+In other words, [homomorphisms $G \to A$ correspond bijectively to homomorphisms $G^{\mathrm{ab}} \to A$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.lift),
 the correspondence being composition with the quotient map. This property
 characterizes $G^{\mathrm{ab}}$ up to unique isomorphism, and it is the usual way
 to compute with it.
@@ -46,7 +46,7 @@ to compute with it.
 
 - **Abelian groups.** $G$ is abelian exactly when
   [its commutator subgroup is trivial](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Commutator/Basic.html#commutator_eq_bot_iff), and then
-  [$G$ is isomorphic to its abelianization](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.equivOfComm).
+  [$G$ is isomorphic to its abelianization](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.equivOfComm).
 - **Symmetric groups.** For $n \ge 2$ the commutator subgroup of the symmetric
   group $S_n$ is the [alternating group](../part-02/alternating-group.md) $A_n$, so the
   [sign](../../../../undergraduate/group-theory/permutation-group/signature.md) induces an isomorphism $S_n^{\mathrm{ab}} \cong \{\pm 1\}$.
@@ -71,8 +71,8 @@ to compute with it.
 ## Properties
 
 - **Functoriality.** A homomorphism $f \colon G \to H$
-  [induces a homomorphism $G^{\mathrm{ab}} \to H^{\mathrm{ab}}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.map),
-  and [this is compatible with composition](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.map_comp). In the
+  [induces a homomorphism $G^{\mathrm{ab}} \to H^{\mathrm{ab}}$](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.map),
+  and [this is compatible with composition](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.map_comp). In the
   language of category theory, abelianization is a [functor](../../category-theory/functor.md)
   from groups to abelian groups, and the universal property says that it is
   [left adjoint to the inclusion of abelian groups into groups](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Category/Grp/Adjunctions.html#GrpCat.abelianizeAdj)
@@ -124,6 +124,6 @@ the abelianization of the free group, written additively.
 
 ## Sources
 
-- [Mathlib documentation: `Abelianization`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization)
-- [Source of `Abelianization` in Mathlib/GroupTheory/Abelianization/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/Abelianization/Defs.lean#L38)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L47)
+- [Mathlib documentation: `Group.Abelianization`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization)
+- [Source of `Group.Abelianization` in Mathlib/GroupTheory/Abelianization/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Abelianization/Defs.lean#L39)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L47)

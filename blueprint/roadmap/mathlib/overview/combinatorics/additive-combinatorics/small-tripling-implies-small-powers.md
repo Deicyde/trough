@@ -26,5 +26,5 @@ Finset.small_pow_of_small_tripling.{u_1} {G : Type u_1} [DecidableEq G] [Group G
 ## Sources
 
 - [Mathlib documentation: `Finset.small_pow_of_small_tripling`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/SmallTripling.html#Finset.small_pow_of_small_tripling)
-- [Source of `Finset.small_pow_of_small_tripling` in Mathlib/Combinatorics/Additive/SmallTripling.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Additive/SmallTripling.lean#L167)
-- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L548)
+- [Source of `Finset.small_pow_of_small_tripling` in Mathlib/Combinatorics/Additive/SmallTripling.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Additive/SmallTripling.lean#L167)
+- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L548)

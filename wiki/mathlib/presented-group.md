@@ -28,7 +28,7 @@ A group $G$ has the presentation $\langle S \mid R \rangle$ when $G$ is isomorph
 
 **Constructions.** Renaming the generators along a bijection, and the relators with them, gives an isomorphic presented group. The free product of $\langle S_1 \mid R_1 \rangle$ and $\langle S_2 \mid R_2 \rangle$ is presented by the disjoint union of the generators and the union of the relators. Adding relators to a presentation gives a quotient of the original group.
 
-**Algorithmic questions.** A presentation determines its group, but extracting information from it can be impossible in general. There are finitely presented groups in which no algorithm decides whether a given word represents the identity, and no algorithm decides, given finite presentations, whether two of them define isomorphic groups or whether one defines the trivial group. Some invariants are computable: the [abelianization](trough:Abelianization) can be read off a finite presentation by linear algebra over $\mathbb{Z}$ (Smith normal form), but it forgets most of the group.
+**Algorithmic questions.** A presentation determines its group, but extracting information from it can be impossible in general. There are finitely presented groups in which no algorithm decides whether a given word represents the identity, and no algorithm decides, given finite presentations, whether two of them define isomorphic groups or whether one defines the trivial group. Some invariants are computable: the [abelianization](trough:Group.Abelianization) can be read off a finite presentation by linear algebra over $\mathbb{Z}$ (Smith normal form), but it forgets most of the group.
 
 ## In Mathlib
 

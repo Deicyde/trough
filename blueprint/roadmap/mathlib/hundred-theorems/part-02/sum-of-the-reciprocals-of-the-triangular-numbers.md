@@ -21,5 +21,5 @@ Theorems100.inverse_triangle_sum (n : ℕ) :
 ## Sources
 
 - [Mathlib documentation: `Theorems100.inverse_triangle_sum`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/InverseTriangleSum.html#Theorems100.inverse_triangle_sum)
-- [Source of `Theorems100.inverse_triangle_sum` in Archive/Wiedijk100Theorems/InverseTriangleSum.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/InverseTriangleSum.lean#L29)
-- [Freek Wiedijk's 100 theorems, no. 42](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L219)
+- [Source of `Theorems100.inverse_triangle_sum` in Archive/Wiedijk100Theorems/InverseTriangleSum.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/InverseTriangleSum.lean#L29)
+- [Freek Wiedijk's 100 theorems, no. 42](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L219)

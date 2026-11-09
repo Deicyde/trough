@@ -33,5 +33,5 @@ differentiable_tsum.{u_1, u_2, u_3, u_4} {α : Type u_1} {𝕜 : Type u_2} {E : 
 ## Sources
 
 - [Mathlib documentation: `differentiable_tsum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/SmoothSeries.html#differentiable_tsum)
-- [Source of `differentiable_tsum` in Mathlib/Analysis/Calculus/SmoothSeries.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/SmoothSeries.lean#L139)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L355)
+- [Source of `differentiable_tsum` in Mathlib/Analysis/Calculus/SmoothSeries.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/SmoothSeries.lean#L139)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L355)

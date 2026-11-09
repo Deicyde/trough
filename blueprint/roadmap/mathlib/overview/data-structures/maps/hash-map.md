@@ -36,4 +36,4 @@ Std.HashMap.{u, v} (α : Type u) (β : Type v) [BEq α] [Hashable α] : Type (ma
 ## Sources
 
 - [Mathlib documentation: `Std.HashMap`](https://leanprover-community.github.io/mathlib4_docs/Std/Data/HashMap/Basic.html#Std.HashMap)
-- [Mathlib overview: Data structures › Maps](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L588)
+- [Mathlib overview: Data structures › Maps](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L588)

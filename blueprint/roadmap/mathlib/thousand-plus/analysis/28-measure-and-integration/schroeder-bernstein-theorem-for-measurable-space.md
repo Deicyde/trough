@@ -16,8 +16,8 @@ MeasurableEmbedding.schroederBernstein.{u_1, u_2} {α : Type u_1} {β : Type u_2
 ## Sources
 
 - [Mathlib documentation: `MeasurableEmbedding.schroederBernstein`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/MeasurableSpace/Embedding.html#MeasurableEmbedding.schroederBernstein)
-- [Source of `MeasurableEmbedding.schroederBernstein` in Mathlib/MeasureTheory/MeasurableSpace/Embedding.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/MeasurableSpace/Embedding.lean#L715)
-- [1000+ theorems list: Q7432915](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3779)
+- [Source of `MeasurableEmbedding.schroederBernstein` in Mathlib/MeasureTheory/MeasurableSpace/Embedding.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/MeasurableSpace/Embedding.lean#L715)
+- [1000+ theorems list: Q7432915](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3779)
 - [1000+ theorems project: Q7432915](https://1000-plus.github.io/all.html?length=-1#Q7432915)
 - [Wikipedia: Schroeder–Bernstein theorem for measurable spaces](https://en.wikipedia.org/wiki/Schroeder%E2%80%93Bernstein_theorem_for_measurable_spaces)
 - [Wikidata: Q7432915](https://www.wikidata.org/wiki/Q7432915)

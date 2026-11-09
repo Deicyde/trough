@@ -43,10 +43,10 @@ MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone.{u_1} {α : Type u_1} {m 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.integral_tendsto_of_tendsto_of_antitone`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner/Basic.html#MeasureTheory.integral_tendsto_of_tendsto_of_antitone)
-- [Source of `MeasureTheory.integral_tendsto_of_tendsto_of_antitone` in Mathlib/MeasureTheory/Integral/Bochner/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/Bochner/Basic.lean#L839)
+- [Source of `MeasureTheory.integral_tendsto_of_tendsto_of_antitone` in Mathlib/MeasureTheory/Integral/Bochner/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/Bochner/Basic.lean#L851)
 - [Mathlib documentation: `MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Lebesgue/Add.html#MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone)
-- [Source of `MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone` in Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean#L117)
-- [1000+ theorems list: Q1153584](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1466)
+- [Source of `MeasureTheory.lintegral_tendsto_of_tendsto_of_monotone` in Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/Lebesgue/Add.lean#L117)
+- [1000+ theorems list: Q1153584](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1466)
 - [1000+ theorems project: Q1153584](https://1000-plus.github.io/all.html?length=-1#Q1153584)
 - [Wikipedia: Monotone convergence theorem](https://en.wikipedia.org/wiki/Monotone_convergence_theorem)
 - [Wikidata: Q1153584](https://www.wikidata.org/wiki/Q1153584)

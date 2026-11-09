@@ -36,10 +36,10 @@ MeasureTheory.integral_prod.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {E :
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.integral_prod`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Prod.html#MeasureTheory.integral_prod)
-- [Source of `MeasureTheory.integral_prod` in Mathlib/MeasureTheory/Integral/Prod.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/Prod.lean#L438)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L357)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L524)
-- [1000+ theorems list: Q1149022](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1443)
+- [Source of `MeasureTheory.integral_prod` in Mathlib/MeasureTheory/Integral/Prod.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/Prod.lean#L438)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L357)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L524)
+- [1000+ theorems list: Q1149022](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1443)
 - [1000+ theorems project: Q1149022](https://1000-plus.github.io/all.html?length=-1#Q1149022)
 - [Wikipedia: Fubini's theorem](https://en.wikipedia.org/wiki/Fubini's_theorem)
 - [Wikidata: Q1149022](https://www.wikidata.org/wiki/Q1149022)

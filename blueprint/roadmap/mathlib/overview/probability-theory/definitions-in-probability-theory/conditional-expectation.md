@@ -28,5 +28,5 @@ MeasureTheory.condExp.{u_1, u_3} {α : Type u_1} {E : Type u_3} (m : MeasurableS
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.condExp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.html#MeasureTheory.condExp)
-- [Source of `MeasureTheory.condExp` in Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean#L94)
-- [Mathlib overview: Probability Theory › Definitions in probability theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L396)
+- [Source of `MeasureTheory.condExp` in Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/ConditionalExpectation/Basic.lean#L94)
+- [Mathlib overview: Probability Theory › Definitions in probability theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L396)

@@ -19,9 +19,9 @@ Finset.kruskal_katona {n r : ℕ} {𝒜 𝒞 : Finset (Finset (Fin n))} (h𝒜r 
 ## Sources
 
 - [Mathlib documentation: `Finset.kruskal_katona`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/KruskalKatona.html#Finset.kruskal_katona)
-- [Source of `Finset.kruskal_katona` in Mathlib/Combinatorics/SetFamily/KruskalKatona.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/SetFamily/KruskalKatona.lean#L264)
-- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L521)
-- [1000+ theorems list: Q3527102](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2483)
+- [Source of `Finset.kruskal_katona` in Mathlib/Combinatorics/SetFamily/KruskalKatona.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SetFamily/KruskalKatona.lean#L264)
+- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L521)
+- [1000+ theorems list: Q3527102](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2483)
 - [1000+ theorems project: Q3527102](https://1000-plus.github.io/all.html?length=-1#Q3527102)
 - [Wikipedia: Kruskal–Katona theorem](https://en.wikipedia.org/wiki/Kruskal%E2%80%93Katona_theorem)
 - [Wikidata: Q3527102](https://www.wikidata.org/wiki/Q3527102)

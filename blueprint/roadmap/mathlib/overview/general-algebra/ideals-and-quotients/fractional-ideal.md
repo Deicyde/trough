@@ -127,5 +127,5 @@ defined using one fixed field of fractions of $R$.
 ## Sources
 
 - [Mathlib documentation: `FractionalIdeal`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/FractionalIdeal/Basic.html#FractionalIdeal)
-- [Source of `FractionalIdeal` in Mathlib/RingTheory/FractionalIdeal/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/FractionalIdeal/Basic.lean#L76)
-- [Mathlib overview: General algebra › Ideals and quotients](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L80)
+- [Source of `FractionalIdeal` in Mathlib/RingTheory/FractionalIdeal/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/FractionalIdeal/Basic.lean#L76)
+- [Mathlib overview: General algebra › Ideals and quotients](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L80)

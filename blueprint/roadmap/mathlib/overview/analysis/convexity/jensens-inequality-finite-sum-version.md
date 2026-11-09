@@ -27,5 +27,5 @@ ConvexOn.map_sum_le.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {E : Type u_2} {β : 
 ## Sources
 
 - [Mathlib documentation: `ConvexOn.map_sum_le`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Jensen.html#ConvexOn.map_sum_le)
-- [Source of `ConvexOn.map_sum_le` in Mathlib/Analysis/Convex/Jensen.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Convex/Jensen.lean#L65)
-- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L323)
+- [Source of `ConvexOn.map_sum_le` in Mathlib/Analysis/Convex/Jensen.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/Jensen.lean#L65)
+- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L323)

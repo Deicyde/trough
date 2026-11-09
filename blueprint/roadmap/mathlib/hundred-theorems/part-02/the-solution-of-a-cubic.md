@@ -29,9 +29,9 @@ Theorems100.cubic_eq_zero_iff.{u_1} {K : Type u_1} [Field K] (a b c d : K) {ω p
 ## Sources
 
 - [Mathlib documentation: `Theorems100.cubic_eq_zero_iff`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.html#Theorems100.cubic_eq_zero_iff)
-- [Source of `Theorems100.cubic_eq_zero_iff` in Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean#L108)
-- [Freek Wiedijk's 100 theorems, no. 37](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L195)
-- [1000+ theorems list: Q203565](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L200)
+- [Source of `Theorems100.cubic_eq_zero_iff` in Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/SolutionOfCubicQuartic.lean#L108)
+- [Freek Wiedijk's 100 theorems, no. 37](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L195)
+- [1000+ theorems list: Q203565](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L200)
 - [1000+ theorems project: Q203565](https://1000-plus.github.io/all.html?length=-1#Q203565)
 - [Wikipedia: Cubic equation](https://en.wikipedia.org/wiki/Cubic_equation)
 - [Wikidata: Q203565](https://www.wikidata.org/wiki/Q203565)

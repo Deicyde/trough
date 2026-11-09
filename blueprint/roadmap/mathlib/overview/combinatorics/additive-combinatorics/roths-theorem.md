@@ -25,5 +25,5 @@ roth_3ap_theorem_nat {n : ℕ} (ε : ℝ) (hε : 0 < ε) (hG : cornersTheoremBou
 ## Sources
 
 - [Mathlib documentation: `roth_3ap_theorem_nat`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Additive/Corner/Roth.html#roth_3ap_theorem_nat)
-- [Source of `roth_3ap_theorem_nat` in Mathlib/Combinatorics/Additive/Corner/Roth.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Combinatorics/Additive/Corner/Roth.lean#L155)
-- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L540)
+- [Source of `roth_3ap_theorem_nat` in Mathlib/Combinatorics/Additive/Corner/Roth.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Additive/Corner/Roth.lean#L155)
+- [Mathlib overview: Combinatorics › Additive combinatorics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L540)

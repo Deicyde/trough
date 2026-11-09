@@ -27,9 +27,9 @@ exists_extension_norm_eq.{u_1, u_2} {𝕜 : Type u_1} [NontriviallyNormedField �
 ## Sources
 
 - [Mathlib documentation: `exists_extension_norm_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Module/HahnBanach.html#exists_extension_norm_eq)
-- [Source of `exists_extension_norm_eq` in Mathlib/Analysis/Normed/Module/HahnBanach.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Module/HahnBanach.lean#L40)
-- [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L288)
-- [1000+ theorems list: Q866116](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1009)
+- [Source of `exists_extension_norm_eq` in Mathlib/Analysis/Normed/Module/HahnBanach.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Module/HahnBanach.lean#L40)
+- [Mathlib overview: Analysis › Normed vector spaces/Banach spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L288)
+- [1000+ theorems list: Q866116](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1009)
 - [1000+ theorems project: Q866116](https://1000-plus.github.io/all.html?length=-1#Q866116)
 - [Wikipedia: Hahn–Banach theorem](https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem)
 - [Wikidata: Q866116](https://www.wikidata.org/wiki/Q866116)

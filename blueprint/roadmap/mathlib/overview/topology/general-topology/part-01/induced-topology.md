@@ -17,6 +17,6 @@ TopologicalSpace.induced.{u_1, u_2} {X : Type u_1} {Y : Type u_2} (f : X → Y)
 ## Sources
 
 - [Mathlib documentation: `TopologicalSpace.induced`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Defs/Induced.html#TopologicalSpace.induced)
-- [Source of `TopologicalSpace.induced` in Mathlib/Topology/Defs/Induced.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Defs/Induced.lean#L60)
-- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L220)
-- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L406)
+- [Source of `TopologicalSpace.induced` in Mathlib/Topology/Defs/Induced.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Defs/Induced.lean#L60)
+- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L220)
+- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L406)

@@ -5,4 +5,4 @@ name = "trough"
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"
-rev = "1b1ccf4b088b32fa3f23f2de1127433254a81e1e"
+rev = "9bac2d0692944a775113f7c130fd5e5b4608a854"

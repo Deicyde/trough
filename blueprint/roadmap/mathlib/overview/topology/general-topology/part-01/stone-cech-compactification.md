@@ -14,5 +14,5 @@ StoneCech.{u} (α : Type u) [TopologicalSpace α] : Type u
 ## Sources
 
 - [Mathlib documentation: `StoneCech`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactification/StoneCech.html#StoneCech)
-- [Source of `StoneCech` in Mathlib/Topology/Compactification/StoneCech.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/Compactification/StoneCech.lean#L321)
-- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L232)
+- [Source of `StoneCech` in Mathlib/Topology/Compactification/StoneCech.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Compactification/StoneCech.lean#L321)
+- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L232)

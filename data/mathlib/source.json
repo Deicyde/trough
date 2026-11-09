@@ -1,5 +1,5 @@
 {
- "date": "2026-11-02T01:57:40Z",
- "rev": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+ "date": "2026-11-09T13:13:37Z",
+ "rev": "9bac2d0692944a775113f7c130fd5e5b4608a854",
  "toolchain": "leanprover/lean4:v4.36.0-rc2"
 }

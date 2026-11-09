@@ -22,5 +22,5 @@ Its statement uses no other concept on these lists.
 ## Sources
 
 - [Mathlib documentation: `Turing.TM0.Machine`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/TuringMachine/PostTuringMachine.html#Turing.TM0.Machine)
-- [Source of `Turing.TM0.Machine` in Mathlib/Computability/TuringMachine/PostTuringMachine.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Computability/TuringMachine/PostTuringMachine.lean#L123)
-- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L606)
+- [Source of `Turing.TM0.Machine` in Mathlib/Computability/TuringMachine/PostTuringMachine.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/TuringMachine/PostTuringMachine.lean#L123)
+- [Mathlib overview: Logic and computation › Computability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L606)

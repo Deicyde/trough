@@ -39,5 +39,5 @@ exists_continuous_zero_one_of_isClosed.{u_1} {X : Type u_1} [TopologicalSpace X]
 ## Sources
 
 - [Mathlib documentation: `exists_continuous_zero_one_of_isClosed`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UrysohnsLemma.html#exists_continuous_zero_one_of_isClosed)
-- [Source of `exists_continuous_zero_one_of_isClosed` in Mathlib/Topology/UrysohnsLemma.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Topology/UrysohnsLemma.lean#L314)
-- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L235)
+- [Source of `exists_continuous_zero_one_of_isClosed` in Mathlib/Topology/UrysohnsLemma.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/UrysohnsLemma.lean#L314)
+- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L235)

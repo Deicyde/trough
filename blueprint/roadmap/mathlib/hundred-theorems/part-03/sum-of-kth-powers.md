@@ -43,7 +43,7 @@ sum_Ico_pow (n p : ℕ) :
 ## Sources
 
 - [Mathlib documentation: `sum_range_pow`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Bernoulli.html#sum_range_pow)
-- [Source of `sum_range_pow` in Mathlib/NumberTheory/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Bernoulli.lean#L291)
+- [Source of `sum_range_pow` in Mathlib/NumberTheory/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Bernoulli.lean#L291)
 - [Mathlib documentation: `sum_Ico_pow`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Bernoulli.html#sum_Ico_pow)
-- [Source of `sum_Ico_pow` in Mathlib/NumberTheory/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/Bernoulli.lean#L356)
-- [Freek Wiedijk's 100 theorems, no. 77](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L389)
+- [Source of `sum_Ico_pow` in Mathlib/NumberTheory/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Bernoulli.lean#L356)
+- [Freek Wiedijk's 100 theorems, no. 77](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L389)

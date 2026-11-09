@@ -31,5 +31,5 @@ intervalIntegral.integral_mul_deriv_eq_deriv_mul.{u_1} {a b : ℝ} {A : Type u_1
 ## Sources
 
 - [Mathlib documentation: `intervalIntegral.integral_mul_deriv_eq_deriv_mul`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral/IntegrationByParts.html#intervalIntegral.integral_mul_deriv_eq_deriv_mul)
-- [Source of `intervalIntegral.integral_mul_deriv_eq_deriv_mul` in Mathlib/MeasureTheory/Integral/IntervalIntegral/IntegrationByParts.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Integral/IntervalIntegral/IntegrationByParts.lean#L134)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Integration](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L344)
+- [Source of `intervalIntegral.integral_mul_deriv_eq_deriv_mul` in Mathlib/MeasureTheory/Integral/IntervalIntegral/IntegrationByParts.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Integral/IntervalIntegral/IntegrationByParts.lean#L134)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L344)

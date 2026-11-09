@@ -15,5 +15,5 @@ AffineEquiv.group.{u_1, u_2, u_6} {k : Type u_1} {P₁ : Type u_2} {V₁ : Type 
 ## Sources
 
 - [Mathlib documentation: `AffineEquiv.group`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.html#AffineEquiv.group)
-- [Source of `AffineEquiv.group` in Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.lean#L325)
-- [Mathlib undergraduate list: Affine and Euclidean Geometry › General definitions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L250)
+- [Source of `AffineEquiv.group` in Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/AffineSpace/AffineEquiv.lean#L325)
+- [Mathlib undergraduate list: Affine and Euclidean Geometry › General definitions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L250)
