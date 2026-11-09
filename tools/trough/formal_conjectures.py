@@ -16,6 +16,7 @@ subject and a page per FC100 subset list; the problems have no edges.
 
 from __future__ import annotations
 
+import html
 import json
 import re
 from collections import Counter
@@ -47,6 +48,10 @@ SUBJECT = re.compile(r"/--\s*((?:(?!-/).)*?)\s*-/\s*\|\s*«(\d+)»", re.S)
 # Code spans and formulas, which quoted text leaves as written; and a link whose target is not a URL, such as
 # a citation written `[Er56](Erdős, P., ...)`.
 OPAQUE = re.compile(r"(?s)(`{3,}).*?\1|`[^`\n]*`|(?<!\\)(\${1,2}).*?(?<!\\)\2|\\\(.*?\\\)|\\\[.*?\\\]")
+CODE = re.compile(r"(?s)(`{3,}).*?\1|`[^`\n]*`")
+# A display formula, which the site's converter reads only as a block of its own.
+DISPLAY = re.compile(r"(?s)(?<!\\)\$\$.+?(?<!\\)\$\$")
+REFERENCE_ENTITY = re.compile(r"&(?:#[0-9]+|#[xX][0-9A-Fa-f]+|[A-Za-z][A-Za-z0-9]*);")
 PROSE_LINK = re.compile(r"\[((?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\((?!\s*<?(?:[a-zA-Z][a-zA-Z0-9+.-]*:|#))")
 
 
@@ -238,6 +243,33 @@ def plain_link(url: str) -> str:
     return f"[{escape(url)}]({href(url)})"
 
 
+def outside_code(markdown: str, change) -> str:
+    """The Markdown with *change* applied to each stretch outside code spans and fences."""
+    out, last = [], 0
+    for match in CODE.finditer(markdown):
+        out += [change(markdown[last:match.start()]), match.group()]
+        last = match.end()
+    return "".join(out) + change(markdown[last:])
+
+
+def displays(markdown: str) -> str:
+    """Quoted Markdown with each display formula (`$$...$$`) a block of its own, between blank lines, which is
+    how the site reads it as a formula; the text around it is unchanged but for that space."""
+
+    def isolate(text: str) -> str:
+        pieces, last = [], 0
+        for match in DISPLAY.finditer(text):
+            before = text[last:match.start()].rstrip()
+            pieces += [before, "\n\n" if before else "", match.group().strip()]
+            last = match.end()
+        rest = text[last:]
+        if not pieces:
+            return text
+        return "".join(pieces) + ("\n\n" + rest.lstrip() if rest.strip() else rest)
+
+    return outside_code(markdown, isolate)
+
+
 def unlink(markdown: str) -> str:
     """Quoted Markdown whose links to something other than a URL read as text, their closing bracket escaped:
     the site would look for a page at such a target."""
@@ -250,8 +282,11 @@ def unlink(markdown: str) -> str:
 
 def quote(markdown: str) -> str:
     """Quoted Markdown as a blockquote, so its headings and lists stay inside the quote. A `<` opens no HTML,
-    but an autolink (`<https://...>`) stays a link, and a link whose target is not a URL reads as text."""
-    text = re.sub(r"&lt;(https?://[^\s<>]*>)", r"<\1", safe(unlink(markdown)))
+    but an autolink (`<https://...>`) stays a link; a link whose target is not a URL reads as text; and each
+    display formula is a block of its own."""
+    # A character reference reads as its character; the site shows a reference as typed.
+    markdown = outside_code(markdown, lambda text: REFERENCE_ENTITY.sub(lambda ref: html.unescape(ref.group()), text))
+    text = re.sub(r"&lt;(https?://[^\s<>]*>)", r"<\1", safe(unlink(displays(markdown))))
     return "\n".join(f"> {line}".rstrip() for line in text.split("\n"))
 
 

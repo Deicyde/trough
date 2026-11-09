@@ -182,6 +182,16 @@ def test_the_fc100_lists_name_statements_by_file_and_category(tmp_path):
         {"name": "Gone.missing", "file": None, "category": None}]
 
 
+def test_a_quote_puts_each_display_formula_in_a_block_of_its_own():
+    # The site reads `$$...$$` as a formula only as a block of its own.
+    assert fc.displays("such that\n$$\n  N \\gg 2^n.\n$$\nthen more") == "such that\n\n$$\n  N \\gg 2^n.\n$$\n\nthen more"
+    assert fc.displays("and\n$$a(n) = 8$$ for $n$.") == "and\n\n$$a(n) = 8$$\n\nfor $n$."
+    assert fc.displays("x `$$a$$` y") == "x `$$a$$` y"
+    assert fc.displays("No formula.") == "No formula."
+    # A character reference reads as its character, which a formula then shows.
+    assert fc.quote("then$$x&#60; 1,$$where") == "> then\n>\n> $$x< 1,$$\n>\n> where"
+
+
 def test_status_lines_follow_category_proof_links_and_sorry():
     def line(category, sorry, proofs=(), kind="theorem"):
         return fc.status({"category": category, "sorry": sorry, "formal_proofs": list(proofs), "kind": kind})
