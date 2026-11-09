@@ -33,7 +33,7 @@ NNReal.hasSum_geometric {r : NNReal} (hr : r < 1) : HasSum (fun n => r ^ n) (1 -
 ## Sources
 
 - [Mathlib documentation: `geom_sum_Ico`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Field/GeomSum.html#geom_sum_Ico)
-- [Source of `geom_sum_Ico` in Mathlib/Algebra/Field/GeomSum.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Algebra/Field/GeomSum.lean#L52)
+- [Source of `geom_sum_Ico` in Mathlib/Algebra/Field/GeomSum.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Field/GeomSum.lean#L52)
 - [Mathlib documentation: `NNReal.hasSum_geometric`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecificLimits/Basic.html#NNReal.hasSum_geometric)
-- [Source of `NNReal.hasSum_geometric` in Mathlib/Analysis/SpecificLimits/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SpecificLimits/Basic.lean#L384)
-- [Freek Wiedijk's 100 theorems, no. 66](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L331)
+- [Source of `NNReal.hasSum_geometric` in Mathlib/Analysis/SpecificLimits/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SpecificLimits/Basic.lean#L384)
+- [Freek Wiedijk's 100 theorems, no. 66](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L331)

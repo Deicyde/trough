@@ -31,9 +31,9 @@ IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt.{u_1} {E : Type u_1}
 ## Sources
 
 - [Mathlib documentation: `IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/ODE/ExistUnique.html#IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt)
-- [Source of `IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt` in Mathlib/Analysis/ODE/ExistUnique.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/ODE/ExistUnique.lean#L54)
-- [Mathlib undergraduate list: Multivariable calculus › Differential equations](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L476)
-- [1000+ theorems list: Q530152](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L531)
+- [Source of `IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt` in Mathlib/Analysis/ODE/ExistUnique.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/ODE/ExistUnique.lean#L54)
+- [Mathlib undergraduate list: Multivariable calculus › Differential equations](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L476)
+- [1000+ theorems list: Q530152](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L531)
 - [1000+ theorems project: Q530152](https://1000-plus.github.io/all.html?length=-1#Q530152)
 - [Wikipedia: Picard–Lindelöf theorem](https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem)
 - [Wikidata: Q530152](https://www.wikidata.org/wiki/Q530152)

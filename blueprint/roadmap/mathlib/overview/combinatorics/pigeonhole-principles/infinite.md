@@ -23,5 +23,5 @@ Finite.exists_infinite_fiber.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Infinit
 ## Sources
 
 - [Mathlib documentation: `Finite.exists_infinite_fiber`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Fintype/Pigeonhole.html#Finite.exists_infinite_fiber)
-- [Source of `Finite.exists_infinite_fiber` in Mathlib/Data/Fintype/Pigeonhole.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Data/Fintype/Pigeonhole.lean#L80)
-- [Mathlib overview: Combinatorics › Pigeonhole principles](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L499)
+- [Source of `Finite.exists_infinite_fiber` in Mathlib/Data/Fintype/Pigeonhole.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Data/Fintype/Pigeonhole.lean#L80)
+- [Mathlib overview: Combinatorics › Pigeonhole principles](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L499)

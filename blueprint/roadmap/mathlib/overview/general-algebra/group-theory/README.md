@@ -39,7 +39,7 @@ gives $H/(H \cap N) \cong HN/N$ for a subgroup $H$ and a normal subgroup $N$, an
 [third](part-01/third-isomorphism-theorem.md) gives
 $(G/N)/(M/N) \cong G/M$ for normal subgroups $N \le M$. The largest abelian quotient of
 $G$ is its [abelianization](part-01/abelianization.md), the quotient by the commutator
-subgroup; [morphisms from $G$ to an abelian group correspond exactly to morphisms from the abelianization](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Abelianization.lift).
+subgroup; [morphisms from $G$ to an abelian group correspond exactly to morphisms from the abelianization](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Abelianization/Defs.html#Group.Abelianization.lift).
 
 ## Actions and counting
 

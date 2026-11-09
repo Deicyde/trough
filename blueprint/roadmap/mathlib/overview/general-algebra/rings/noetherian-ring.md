@@ -56,5 +56,5 @@ Mathlib defines the notion for any semiring, not only commutative rings, and mak
 ## Sources
 
 - [Mathlib documentation: `IsNoetherianRing`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Noetherian/Defs.html#IsNoetherianRing)
-- [Source of `IsNoetherianRing` in Mathlib/RingTheory/Noetherian/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/Noetherian/Defs.lean#L188)
-- [Mathlib overview: General algebra › Rings](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L71)
+- [Source of `IsNoetherianRing` in Mathlib/RingTheory/Noetherian/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Noetherian/Defs.lean#L188)
+- [Mathlib overview: General algebra › Rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L71)

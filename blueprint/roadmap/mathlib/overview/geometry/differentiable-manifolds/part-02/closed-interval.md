@@ -23,5 +23,5 @@ instIsManifoldIcc (x y : ℝ) [Fact (x < y)] {n : WithTop ℕ∞} :
 ## Sources
 
 - [Mathlib documentation: `instIsManifoldIcc`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Instances/Real.html#instIsManifoldIcc)
-- [Source of `instIsManifoldIcc` in Mathlib/Geometry/Manifold/Instances/Real.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Geometry/Manifold/Instances/Real.lean#L553)
-- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L461)
+- [Source of `instIsManifoldIcc` in Mathlib/Geometry/Manifold/Instances/Real.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/Instances/Real.lean#L553)
+- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L461)

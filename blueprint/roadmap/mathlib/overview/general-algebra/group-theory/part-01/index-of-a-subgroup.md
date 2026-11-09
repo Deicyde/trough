@@ -92,5 +92,5 @@ subgroup come with additive versions for additive groups, stated for additive su
 ## Sources
 
 - [Mathlib documentation: `Subgroup.index`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Index.html#Subgroup.index)
-- [Source of `Subgroup.index` in Mathlib/GroupTheory/Index.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/GroupTheory/Index.lean#L52)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L39)
+- [Source of `Subgroup.index` in Mathlib/GroupTheory/Index.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Index.lean#L52)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L39)

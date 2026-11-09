@@ -143,10 +143,10 @@ $a$ and $b$ share a factor.
 ## Sources
 
 - [Mathlib documentation: `legendreSym.quadratic_reciprocity`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.html#legendreSym.quadratic_reciprocity)
-- [Source of `legendreSym.quadratic_reciprocity` in Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean#L105)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L144)
-- [Freek Wiedijk's 100 theorems, no. 7](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/100.yaml#L38)
-- [1000+ theorems list: Q472883](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L476)
+- [Source of `legendreSym.quadratic_reciprocity` in Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean#L105)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L144)
+- [Freek Wiedijk's 100 theorems, no. 7](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L38)
+- [1000+ theorems list: Q472883](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L476)
 - [1000+ theorems project: Q472883](https://1000-plus.github.io/all.html?length=-1#Q472883)
 - [Wikipedia: Quadratic reciprocity theorem](https://en.wikipedia.org/wiki/Quadratic_reciprocity_theorem)
 - [Wikidata: Q472883](https://www.wikidata.org/wiki/Q472883)

@@ -136,5 +136,5 @@ $F$, and the minimal polynomial is taken over $F$.
 ## Sources
 
 - [Mathlib documentation: `isSolvable_gal_minpoly`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/AbelRuffini.html#isSolvable_gal_minpoly)
-- [Source of `isSolvable_gal_minpoly` in Mathlib/FieldTheory/AbelRuffini.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/FieldTheory/AbelRuffini.lean#L304)
-- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L135)
+- [Source of `isSolvable_gal_minpoly` in Mathlib/FieldTheory/AbelRuffini.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/AbelRuffini.lean#L304)
+- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L135)

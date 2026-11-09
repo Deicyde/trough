@@ -58,5 +58,5 @@ Mathlib defines Witt vectors for any natural number $p$ and any type $R$ as a st
 ## Sources
 
 - [Mathlib documentation: `WittVector`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/WittVector/Defs.html#WittVector)
-- [Source of `WittVector` in Mathlib/RingTheory/WittVector/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/RingTheory/WittVector/Defs.lean#L45)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L151)
+- [Source of `WittVector` in Mathlib/RingTheory/WittVector/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/WittVector/Defs.lean#L45)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L151)

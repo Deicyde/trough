@@ -21,8 +21,8 @@ MeasureTheory.Measure.absolutelyContinuous_iff_withDensity_rnDeriv_eq.{u_1} {α 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.Measure.absolutelyContinuous_iff_withDensity_rnDeriv_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/Decomposition/RadonNikodym.html#MeasureTheory.Measure.absolutelyContinuous_iff_withDensity_rnDeriv_eq)
-- [Source of `MeasureTheory.Measure.absolutelyContinuous_iff_withDensity_rnDeriv_eq` in Mathlib/MeasureTheory/Measure/Decomposition/RadonNikodym.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Measure/Decomposition/RadonNikodym.lean#L66)
-- [1000+ theorems list: Q1191319](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L1506)
+- [Source of `MeasureTheory.Measure.absolutelyContinuous_iff_withDensity_rnDeriv_eq` in Mathlib/MeasureTheory/Measure/Decomposition/RadonNikodym.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Measure/Decomposition/RadonNikodym.lean#L66)
+- [1000+ theorems list: Q1191319](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1506)
 - [1000+ theorems project: Q1191319](https://1000-plus.github.io/all.html?length=-1#Q1191319)
 - [Wikipedia: Radon–Nikodym theorem](https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem)
 - [Wikidata: Q1191319](https://www.wikidata.org/wiki/Q1191319)

@@ -22,5 +22,5 @@ Polynomial.annIdeal.{u_1, u_2} (R : Type u_1) {A : Type u_2} [CommSemiring R] [S
 ## Sources
 
 - [Mathlib documentation: `Polynomial.annIdeal`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/AnnihilatingPolynomial.html#Polynomial.annIdeal)
-- [Source of `Polynomial.annIdeal` in Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean#L48)
-- [Mathlib undergraduate list: Linear algebra › Endomorphism polynomials](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L54)
+- [Source of `Polynomial.annIdeal` in Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/AnnihilatingPolynomial.lean#L48)
+- [Mathlib undergraduate list: Linear algebra › Endomorphism polynomials](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L54)

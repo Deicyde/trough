@@ -56,12 +56,12 @@ The first two are over the complex numbers (with different assumptions), the thi
 ## Sources
 
 - [Mathlib documentation: `NormedRing.algEquivComplexOfComplete`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Algebra/GelfandFormula.html#NormedRing.algEquivComplexOfComplete)
-- [Source of `NormedRing.algEquivComplexOfComplete` in Mathlib/Analysis/Normed/Algebra/GelfandFormula.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Algebra/GelfandFormula.lean#L199)
+- [Source of `NormedRing.algEquivComplexOfComplete` in Mathlib/Analysis/Normed/Algebra/GelfandFormula.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Algebra/GelfandFormula.lean#L210)
 - [Mathlib documentation: `NormedAlgebra.Complex.algEquivOfNormMul`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Algebra/GelfandMazur.html#NormedAlgebra.Complex.algEquivOfNormMul)
-- [Source of `NormedAlgebra.Complex.algEquivOfNormMul` in Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean#L235)
+- [Source of `NormedAlgebra.Complex.algEquivOfNormMul` in Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean#L235)
 - [Mathlib documentation: `NormedAlgebra.Real.nonempty_algEquiv_or`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Algebra/GelfandMazur.html#NormedAlgebra.Real.nonempty_algEquiv_or)
-- [Source of `NormedAlgebra.Real.nonempty_algEquiv_or` in Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean#L402)
-- [1000+ theorems list: Q2226677](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L2063)
+- [Source of `NormedAlgebra.Real.nonempty_algEquiv_or` in Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Algebra/GelfandMazur.lean#L402)
+- [1000+ theorems list: Q2226677](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2063)
 - [1000+ theorems project: Q2226677](https://1000-plus.github.io/all.html?length=-1#Q2226677)
 - [Wikipedia: Gelfand–Mazur theorem](https://en.wikipedia.org/wiki/Gelfand%E2%80%93Mazur_theorem)
 - [Wikidata: Q2226677](https://www.wikidata.org/wiki/Q2226677)

@@ -24,5 +24,5 @@ InnerProductSpace.gramSchmidt_orthogonal.{u_1, u_2, u_3} (𝕜 : Type u_1) {E : 
 ## Sources
 
 - [Mathlib documentation: `InnerProductSpace.gramSchmidt_orthogonal`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/GramSchmidtOrtho.html#InnerProductSpace.gramSchmidt_orthogonal)
-- [Source of `InnerProductSpace.gramSchmidt_orthogonal` in Mathlib/Analysis/InnerProductSpace/GramSchmidtOrtho.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/InnerProductSpace/GramSchmidtOrtho.lean#L78)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L213)
+- [Source of `InnerProductSpace.gramSchmidt_orthogonal` in Mathlib/Analysis/InnerProductSpace/GramSchmidtOrtho.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/InnerProductSpace/GramSchmidtOrtho.lean#L78)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L213)

@@ -16,5 +16,5 @@ FirstOrder.Language.ElementaryEmbedding.{u_1, u_2, u_5, u_6} (L : FirstOrder.Lan
 ## Sources
 
 - [Mathlib documentation: `FirstOrder.Language.ElementaryEmbedding`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/ElementaryMaps.html#FirstOrder.Language.ElementaryEmbedding)
-- [Source of `FirstOrder.Language.ElementaryEmbedding` in Mathlib/ModelTheory/ElementaryMaps.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/ModelTheory/ElementaryMaps.lean#L42)
-- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L641)
+- [Source of `FirstOrder.Language.ElementaryEmbedding` in Mathlib/ModelTheory/ElementaryMaps.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/ModelTheory/ElementaryMaps.lean#L42)
+- [Mathlib overview: Logic and computation › Model theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L641)

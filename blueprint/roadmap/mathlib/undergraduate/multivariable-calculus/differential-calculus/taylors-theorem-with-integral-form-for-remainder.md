@@ -40,5 +40,5 @@ map_add_eq_sum_add_integral_iteratedFDeriv.{u_2, u_3} {E : Type u_2} {F : Type u
 ## Sources
 
 - [Mathlib documentation: `map_add_eq_sum_add_integral_iteratedFDeriv`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/TaylorIntegral.html#map_add_eq_sum_add_integral_iteratedFDeriv)
-- [Source of `map_add_eq_sum_add_integral_iteratedFDeriv` in Mathlib/Analysis/Calculus/TaylorIntegral.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/TaylorIntegral.lean#L62)
-- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L469)
+- [Source of `map_add_eq_sum_add_integral_iteratedFDeriv` in Mathlib/Analysis/Calculus/TaylorIntegral.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/TaylorIntegral.lean#L62)
+- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L469)

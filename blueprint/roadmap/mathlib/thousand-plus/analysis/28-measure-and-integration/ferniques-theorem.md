@@ -29,8 +29,8 @@ ProbabilityTheory.IsGaussian.exists_integrable_exp_sq.{u_1} {E : Type u_1} [Norm
 ## Sources
 
 - [Mathlib documentation: `ProbabilityTheory.IsGaussian.exists_integrable_exp_sq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Distributions/Gaussian/Fernique.html#ProbabilityTheory.IsGaussian.exists_integrable_exp_sq)
-- [Source of `ProbabilityTheory.IsGaussian.exists_integrable_exp_sq` in Mathlib/Probability/Distributions/Gaussian/Fernique.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Probability/Distributions/Gaussian/Fernique.lean#L161)
-- [1000+ theorems list: Q5445112](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L3195)
+- [Source of `ProbabilityTheory.IsGaussian.exists_integrable_exp_sq` in Mathlib/Probability/Distributions/Gaussian/Fernique.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Probability/Distributions/Gaussian/Fernique.lean#L161)
+- [1000+ theorems list: Q5445112](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3195)
 - [1000+ theorems project: Q5445112](https://1000-plus.github.io/all.html?length=-1#Q5445112)
 - [Wikipedia: Fernique's theorem](https://en.wikipedia.org/wiki/Fernique's_theorem)
 - [Wikidata: Q5445112](https://www.wikidata.org/wiki/Q5445112)

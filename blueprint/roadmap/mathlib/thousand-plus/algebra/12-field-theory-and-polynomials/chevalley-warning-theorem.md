@@ -24,8 +24,8 @@ char_dvd_card_solutions_of_sum_lt.{u_1, u_2, u_3} {K : Type u_1} {σ : Type u_2}
 ## Sources
 
 - [Mathlib documentation: `char_dvd_card_solutions_of_sum_lt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/ChevalleyWarning.html#char_dvd_card_solutions_of_sum_lt)
-- [Source of `char_dvd_card_solutions_of_sum_lt` in Mathlib/FieldTheory/ChevalleyWarning.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/FieldTheory/ChevalleyWarning.lean#L105)
-- [1000+ theorems list: Q720469](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/1000.yaml#L780)
+- [Source of `char_dvd_card_solutions_of_sum_lt` in Mathlib/FieldTheory/ChevalleyWarning.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/ChevalleyWarning.lean#L105)
+- [1000+ theorems list: Q720469](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L780)
 - [1000+ theorems project: Q720469](https://1000-plus.github.io/all.html?length=-1#Q720469)
 - [Wikipedia: Chevalley–Warning theorem](https://en.wikipedia.org/wiki/Chevalley%E2%80%93Warning_theorem)
 - [Wikidata: Q720469](https://www.wikidata.org/wiki/Q720469)

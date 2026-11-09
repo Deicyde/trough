@@ -25,5 +25,5 @@ Antitone.tendsto_alternating_series_of_tendsto_zero {f : ℕ → ℝ} (hfa : Ant
 ## Sources
 
 - [Mathlib documentation: `Antitone.tendsto_alternating_series_of_tendsto_zero`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/SpecificLimits/Normed.html#Antitone.tendsto_alternating_series_of_tendsto_zero)
-- [Source of `Antitone.tendsto_alternating_series_of_tendsto_zero` in Mathlib/Analysis/SpecificLimits/Normed.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/SpecificLimits/Normed.lean#L963)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L305)
+- [Source of `Antitone.tendsto_alternating_series_of_tendsto_zero` in Mathlib/Analysis/SpecificLimits/Normed.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/SpecificLimits/Normed.lean#L963)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L305)

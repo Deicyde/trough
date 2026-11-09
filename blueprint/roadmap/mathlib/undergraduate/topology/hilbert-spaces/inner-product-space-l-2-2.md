@@ -16,5 +16,5 @@ MeasureTheory.L2.innerProductSpace.{u_1, u_2, u_4} {α : Type u_1} {E : Type u_2
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.L2.innerProductSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/L2Space.html#MeasureTheory.L2.innerProductSpace)
-- [Source of `MeasureTheory.L2.innerProductSpace` in Mathlib/MeasureTheory/Function/L2Space.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/L2Space.lean#L191)
-- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L444)
+- [Source of `MeasureTheory.L2.innerProductSpace` in Mathlib/MeasureTheory/Function/L2Space.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/L2Space.lean#L191)
+- [Mathlib undergraduate list: Topology › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L444)

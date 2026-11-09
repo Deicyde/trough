@@ -26,6 +26,6 @@ IsLocalMin.fderiv_eq_zero.{u} {E : Type u} [NormedAddCommGroup E] [NormedSpace �
 ## Sources
 
 - [Mathlib documentation: `IsLocalMin.fderiv_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/LocalExtr/Basic.html#IsLocalMin.fderiv_eq_zero)
-- [Source of `IsLocalMin.fderiv_eq_zero` in Mathlib/Analysis/Calculus/LocalExtr/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Calculus/LocalExtr/Basic.lean#L180)
-- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L315)
-- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L470)
+- [Source of `IsLocalMin.fderiv_eq_zero` in Mathlib/Analysis/Calculus/LocalExtr/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/LocalExtr/Basic.lean#L180)
+- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L315)
+- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L470)

@@ -5,7 +5,7 @@ uniformly integrable in the measure theory sense and is uniformly bounded.
 
 ```lean
 MeasureTheory.UniformIntegrable.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {ι : Type u_3}
-  [NormedAddCommGroup β] {x✝ : MeasurableSpace α} (f : ι → α → β) (p : ENNReal)
+  {m : MeasurableSpace α} [NormedAddCommGroup β] (f : ι → α → β) (p : ENNReal)
   (μ : MeasureTheory.Measure α) : Prop
 ```
 
@@ -22,5 +22,5 @@ MeasureTheory.UniformIntegrable.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.UniformIntegrable`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Function/UniformIntegrable.html#MeasureTheory.UniformIntegrable)
-- [Source of `MeasureTheory.UniformIntegrable` in Mathlib/MeasureTheory/Function/UniformIntegrable.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/MeasureTheory/Function/UniformIntegrable.lean#L70)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/overview.yaml#L351)
+- [Source of `MeasureTheory.UniformIntegrable` in Mathlib/MeasureTheory/Function/UniformIntegrable.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Function/UniformIntegrable.lean#L70)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L351)

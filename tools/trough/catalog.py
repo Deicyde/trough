@@ -63,8 +63,9 @@ def roadmap_root(libraries: list[dict], chapters: dict[str, str], previous: str 
         "",
         "Trough maps Lean formalization libraries: what each one formalizes and how its results depend "
         "on one another, not what the library may add. Each library gets the article unit that suits it, "
-        "such as curated concepts for Mathlib, the declarations its roadmaps name for Tau Ceti, blueprint "
-        "nodes for the research projects, headline results for Formal Frontier and project cards for Lean Pool. "
+        "such as curated concepts for Mathlib, the declarations its roadmaps name and the results its docstrings "
+        "name for Tau Ceti, blueprint nodes for the research projects, headline results for Formal Frontier "
+        "and project cards for Lean Pool. "
         "The maps are rendered with "
         "[AutoformBot](https://github.com/facebookresearch/autoform-bot).",
         "",
@@ -129,12 +130,15 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
                    tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
-                   lean_pool: str | None = None) -> str:
+                   formal_conjectures: str | None = None, lean_pool: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
-    commit each Formal Frontier library's record pins, by library id; *lean_pool* the commit Lean Pool's does."""
+    commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
+    Conjectures commit read, and *lean_pool* the commit Lean Pool's record pins."""
     formal_frontier = formal_frontier or {}
-    pinned = formal_frontier | ({"lean-pool": lean_pool} if lean_pool else {})
+    # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
+    pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
+              | ({"lean-pool": lean_pool} if lean_pool else {}))
     lines = [
         "# Sources",
         "",
@@ -188,6 +192,18 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "file records, with the line and kind of each named declaration its file declares, from "
             "[FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source "
             "text, without Lean.",
+        ]
+    if formal_conjectures:
+        lines += [
+            "",
+            "## Formal Conjectures",
+            "",
+            f"- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research "
+            "and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and "
+            "its counts of test and API statements, with the FC100 lists, from "
+            f"[google-deepmind/formal-conjectures at {formal_conjectures[:8]}]"
+            f"(https://github.com/google-deepmind/formal-conjectures/tree/{formal_conjectures}), Apache-2.0. They are "
+            "read from the source text, without Lean.",
         ]
     if lean_pool:
         lines += [

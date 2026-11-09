@@ -8,7 +8,7 @@
 {"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "$gN$ is the identity of $G/N$ if and only if $g \\in N$"}}}], "object": [{"location": {"declaration": "QuotientGroup.eq_one_iff"}}]}
 {"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "the group of residues modulo $n$"}}}], "object": [{"location": {"declaration": "Int.quotientZMultiplesNatEquivZMod"}}]}
 {"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "additive circle", "prefix": "is the "}}}], "object": [{"location": {"declaration": "AddCircle"}}]}
-{"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "the quotient of $G$ by its commutator subgroup"}}}], "object": [{"location": {"declaration": "Abelianization"}}]}
+{"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "the quotient of $G$ by its commutator subgroup"}}}], "object": [{"location": {"declaration": "Group.Abelianization"}}]}
 {"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "Dividing by the trivial subgroup gives back $G$"}}}], "object": [{"location": {"declaration": "QuotientGroup.quotientBot"}}]}
 {"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "$G/N$ is trivial exactly when $N = G$"}}}], "object": [{"location": {"declaration": "QuotientGroup.subsingleton_iff"}}]}
 {"subject": [{"type": "generic", "uri": "quotient-group.md", "location": {"quote": {"exact": "$\\varphi$ factors through $G/N$"}}}], "object": [{"location": {"declaration": "QuotientGroup.lift"}}]}

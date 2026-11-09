@@ -27,5 +27,5 @@ continuous_tsum.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {F : Type u_3} [
 ## Sources
 
 - [Mathlib documentation: `continuous_tsum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Normed/Group/FunctionSeries.html#continuous_tsum)
-- [Source of `continuous_tsum` in Mathlib/Analysis/Normed/Group/FunctionSeries.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/Analysis/Normed/Group/FunctionSeries.lean#L122)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L353)
+- [Source of `continuous_tsum` in Mathlib/Analysis/Normed/Group/FunctionSeries.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Normed/Group/FunctionSeries.lean#L122)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Sequences and series of functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L353)

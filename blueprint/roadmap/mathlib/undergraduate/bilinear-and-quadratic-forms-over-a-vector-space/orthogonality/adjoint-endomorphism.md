@@ -24,5 +24,5 @@ LinearMap.BilinForm.leftAdjointOfNondegenerate.{u_5, u_6} {V : Type u_5} {K : Ty
 ## Sources
 
 - [Mathlib documentation: `LinearMap.BilinForm.leftAdjointOfNondegenerate`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/BilinearForm/Properties.html#LinearMap.BilinForm.leftAdjointOfNondegenerate)
-- [Source of `LinearMap.BilinForm.leftAdjointOfNondegenerate` in Mathlib/LinearAlgebra/BilinearForm/Properties.lean](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/Mathlib/LinearAlgebra/BilinearForm/Properties.lean#L455)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/1b1ccf4b088b32fa3f23f2de1127433254a81e1e/docs/undergrad.yaml#L208)
+- [Source of `LinearMap.BilinForm.leftAdjointOfNondegenerate` in Mathlib/LinearAlgebra/BilinearForm/Properties.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/BilinearForm/Properties.lean#L455)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L208)

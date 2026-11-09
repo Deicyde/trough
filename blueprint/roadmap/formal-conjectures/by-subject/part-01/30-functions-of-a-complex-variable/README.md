@@ -1,0 +1,40 @@
+# Functions of a complex variable
+
+The 31 problems with a statement whose `AMS` attribute names 30, Functions of a complex variable, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+
+## [Erdős Problem 114 to Erdős Problem 1044](part-01/README.md)
+
+- [Erdős Problem 114](../../../erdos-problems/100-199/part-01/erdos-problem-114.md)
+- [Erdős Problem 115](../../../erdos-problems/100-199/part-01/erdos-problem-115.md)
+- [Erdős Problem 116](../../../erdos-problems/100-199/part-01/erdos-problem-116.md)
+- [Erdős Problem 119](../../../erdos-problems/100-199/part-01/erdos-problem-119.md)
+- [Erdős Problem 225](../../../erdos-problems/200-299/part-02/erdos-problem-225.md)
+- [Erdős Problem 226](../../../erdos-problems/200-299/part-02/erdos-problem-226.md)
+- [Erdős Problem 229](../../../erdos-problems/200-299/part-02/erdos-problem-229.md)
+- [Erdős Problem 230](../../../erdos-problems/200-299/part-02/erdos-problem-230.md)
+- [Erdős Problem 509](../../../erdos-problems/500-599/part-01/erdos-problem-509.md)
+- [Erdős Problem 513](../../../erdos-problems/500-599/part-01/erdos-problem-513.md)
+- [Erdős Problem 516](../../../erdos-problems/500-599/part-01/erdos-problem-516.md)
+- [Erdős Problem 517](../../../erdos-problems/500-599/part-01/erdos-problem-517.md)
+- [Erdős Problem 519](../../../erdos-problems/500-599/part-01/erdos-problem-519.md)
+- [Erdős Problem 525](../../../erdos-problems/500-599/part-01/erdos-problem-525.md)
+- [Erdős Problem 906](../../../erdos-problems/900-999/part-01/erdos-problem-906.md)
+- [Erdős Problem 967](../../../erdos-problems/900-999/part-03/erdos-problem-967.md)
+- [Erdős Problem 974](../../../erdos-problems/900-999/part-04/erdos-problem-974.md)
+- [Erdős Problem 990](../../../erdos-problems/900-999/part-04/erdos-problem-990.md)
+- [Erdős Problem 1043](../../../erdos-problems/1000-1099/part-02/erdos-problem-1043.md)
+- [Erdős Problem 1044](../../../erdos-problems/1000-1099/part-02/erdos-problem-1044.md)
+
+## [Erdős Problem 1046 to Sendov's conjecture](part-02/README.md)
+
+- [Erdős Problem 1046](../../../erdos-problems/1000-1099/part-02/erdos-problem-1046.md)
+- [Erdős Problem 1047](../../../erdos-problems/1000-1099/part-02/erdos-problem-1047.md)
+- [Erdős Problem 1048](../../../erdos-problems/1000-1099/part-02/erdos-problem-1048.md)
+- [Erdős Problem 1115](../../../erdos-problems/1100-1199/part-01/erdos-problem-1115.md)
+- [Erdős Problem 1116](../../../erdos-problems/1100-1199/part-01/erdos-problem-1116.md)
+- [Erdős Problem 1119](../../../erdos-problems/1100-1199/part-01/erdos-problem-1119.md)
+- [Erdős Problem 1150](../../../erdos-problems/1100-1199/part-02/erdos-problem-1150.md)
+- [Bloch and Landau constants](../../../wikipedia/part-01/bloch-and-landau-constants.md)
+- [Brennan's Conjecture](../../../wikipedia/part-02/brennans-conjecture.md)
+- [Goodman's conjecture on coefficients of $p$-valent functions](../../../wikipedia/part-04/goodmans-conjecture-on-coefficients-of-p-valent.md)
+- [Sendov's conjecture](../../../wikipedia/part-08/sendovs-conjecture.md)
