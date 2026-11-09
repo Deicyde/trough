@@ -29,7 +29,7 @@ from pathlib import Path
 from . import ff, formalization, leansource
 from .blueprints import Built, escape
 from .mathlib import fence
-from .vault import Container, Entry, Leaf, slugify, walk
+from .vault import Container, Entry, Leaf, chunk, slugify, walk
 
 SOURCE_SCHEMA = "trough-anthropic-flt-source/v1"
 LANDMARKS_SCHEMA = "trough-anthropic-flt-landmarks/v1"
@@ -423,8 +423,8 @@ def chapter(source: dict, landmarks: dict, imperial: Container | None = None) ->
                   + ", in the order this step names them" + (", then by name:" if set(members) - set(order) else ":"))
         part.prose = "\n\n".join([quote(step["text"]), credit(source, "PROOF-PATH.md", "the route of the proof in"),
                                   placed if members else "The repository's web pages place no landmark in this step."])
-        parts.append(Entry(part))
-    for number, section in enumerate(route["sections"], 1):
+        parts.append(Entry(chunk(part)))
+    for section in route["sections"]:
         named = mentions(section["text"], set(records))
         part = Container(ff.safe(section["title"]), slugify(section["title"]),
                          [Entry(leaves[name], owned=False) for name in named])
