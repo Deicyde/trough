@@ -28,7 +28,7 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Jacob Parish.
-- Source: *Graphs whose finite subgraphs have linear bipartization cost are countably colorable* by Plasma AI.
+- Source: *Graphs whose finite subgraphs have linear bipartization cost are countably colorable* by Plasma AI, [proof](https://github.com/plasma-ai/erdos-111/blob/de72caf0e388c729697b6813f4ea90bfe1617c7b/blueprint/proof.md), [problem](https://www.erdosproblems.com/111).
 - Project repository: [plasma-ai/erdos-111](https://github.com/plasma-ai/erdos-111), at commit [de72caf0](https://github.com/plasma-ai/erdos-111/tree/de72caf0e388c729697b6813f4ea90bfe1617c7b).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

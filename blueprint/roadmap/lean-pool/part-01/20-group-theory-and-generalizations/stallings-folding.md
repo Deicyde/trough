@@ -29,6 +29,7 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Authors: Arthur Freitas Ramos.
 - Source: *Verified finite automata for finitely generated subgroups of F2*.
 - Mathematical source, as the card gives it: “John R. Stallings, Topology of Finite Graphs, Inventiones Mathematicae 71 (1983), 551-565, doi:10.1007/BF02095993. This is the rank-two finite-recognizer special case, implemented through least congruences rather than a sequence of local folds.”
+- Background, as the card gives it: “Ilya Kapovich and Alexei Myasnikov, Stallings Foldings and Subgroups of Free Groups, Journal of Algebra 248 (2002), 608-668, doi:10.1006/jabr.2001.9033.”
 - Project repository: [Arthur742Ramos/stallings-folding](https://github.com/Arthur742Ramos/stallings-folding), at commit [117dde0a](https://github.com/Arthur742Ramos/stallings-folding/tree/117dde0a8415d3da1787e15ad22a6223a744432d).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”. The card's note: “Upstream formalization.yaml records human-directed GPT-6 Codex proof development. Lean Pool porting, cleanup, and optimization were also performed by OpenAI Codex. Author attribution follows upstream.”
 - License: Apache-2.0.

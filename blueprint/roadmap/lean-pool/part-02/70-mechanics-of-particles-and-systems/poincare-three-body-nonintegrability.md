@@ -29,7 +29,7 @@ The card lists 5 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Gershon Bialer.
-- Source: *A new proof of Poincaré's result on the restricted three-body problem* by Kazuyuki Yagasaki, [doi:10.1063/5.0266087](https://doi.org/10.1063/5.0266087), [arXiv:2111.11031](https://arxiv.org/abs/2111.11031), [https://arxiv.org/abs/2111.11031](https://arxiv.org/abs/2111.11031).
+- Source: *A new proof of Poincaré's result on the restricted three-body problem* by Kazuyuki Yagasaki, [doi:10.1063/5.0266087](https://doi.org/10.1063/5.0266087), [arXiv:2111.11031](https://arxiv.org/abs/2111.11031).
 - Project repository: [gersh/lean-pool](https://github.com/gersh/lean-pool).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

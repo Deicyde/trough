@@ -28,7 +28,7 @@ The card lists 5 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: Catskills Research Company.
-- Source: *Domains for Denotational Semantics* by Dana Scott, [doi:10.1007/BFb0012801](https://doi.org/10.1007/BFb0012801), [https://doi.org/10.1007/BFb0012801](https://doi.org/10.1007/BFb0012801).
+- Source: *Domains for Denotational Semantics* by Dana Scott, [doi:10.1007/BFb0012801](https://doi.org/10.1007/BFb0012801).
 - Project repository: [catskillsresearch/domain_theory](https://github.com/catskillsresearch/domain_theory).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.

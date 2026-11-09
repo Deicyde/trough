@@ -28,9 +28,9 @@ The card lists 4 main results, each with its informal statement quoted from the 
 ## Project
 
 - Authors: JD Jones.
-- Source: [arXiv:2609.07551](https://arxiv.org/abs/2609.07551), [https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1](https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1).
+- Source: [arXiv:2609.07551](https://arxiv.org/abs/2609.07551).
 - The card's note on its source: “The upstream MIT-licensed original proof settles the dimension-two case of Nielsen–Okamura Conjecture 9.1 (v2, Section 9); the cited paper poses the general-dimensional conjecture and does not contain this planar necessity proof. Public completed source was released on 2026-10-08. Proofs and mathematical arguments were produced by OpenAI Codex agents under JD Jones's supervision.”
-- Project repository: [JD-Jones-ASES/PlanarMidpoint](https://github.com/JD-Jones-ASES/PlanarMidpoint).
+- Project repository: [JD-Jones-ASES/PlanarMidpoint](https://github.com/JD-Jones-ASES/PlanarMidpoint), at commit [f277b89a](https://github.com/JD-Jones-ASES/PlanarMidpoint/tree/f277b89a3b0db20872101fd61580ecced748e7c1).
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 53B12, 39B22.
