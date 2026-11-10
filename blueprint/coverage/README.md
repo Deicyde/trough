@@ -61,6 +61,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Formal Conjectures | `DECOMPOSED` | [1,814 problem files](../roadmap/formal-conjectures/README.md) that state a research or textbook statement, one article each, with a card per statement. |
 | Lean Pool | `DECOMPOSED` | [334 project cards](../roadmap/lean-pool/README.md), one article per card. |
 | Fermat's Last Theorem (Anthropic) | `DECOMPOSED` | [49 landmark theorems](../roadmap/anthropic-flt/README.md) in the steps of PROOF-PATH.md, one article each; the other 29,462 theorems are counted, not mapped. |
+| The Stacks Project in Lean (Axiom) | `DECOMPOSED` | [2,898 sections of the Stacks Project](../roadmap/stacks/README.md) with a tag that a declaration carries, one article each, with a block per tag. |
 | ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |
 | CSLib | `DEFERRED` | Planned map, by documented declaration: One article per documented public declaration. |

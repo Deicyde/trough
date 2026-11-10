@@ -1,0 +1,42 @@
+# 48 Duality for Schemes
+
+Chapter 48 of the Stacks Project, *Duality for Schemes*, [Tag 0DWE](https://stacks.math.columbia.edu/tag/0DWE): the 33 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 205 tags are carried by 504 declarations of the repository (all in StacksFrontier) and 26 registered declarations.
+
+## [48.2 Dualizing complexes on… to 48.21 Dimension functions](part-01/README.md)
+
+- [48.2 Dualizing complexes on schemes](part-01/48-2-dualizing-complexes-on-schemes.md)
+- [48.3 Right adjoint of pushforward](part-01/48-3-right-adjoint-of-pushforward.md)
+- [48.4 Right adjoint of pushforward and restriction to opens](part-01/48-4-right-adjoint-of-pushforward-and-restrictio.md)
+- [48.5 Right adjoint of pushforward and base change, I](part-01/48-5-right-adjoint-of-pushforward-and-base-chang.md)
+- [48.6 Right adjoint of pushforward and base change, II](part-01/48-6-right-adjoint-of-pushforward-and-base-chang.md)
+- [48.7 Right adjoint of pushforward and trace maps](part-01/48-7-right-adjoint-of-pushforward-and-trace-maps.md)
+- [48.8 Right adjoint of pushforward and pullback](part-01/48-8-right-adjoint-of-pushforward-and-pullback.md)
+- [48.9 Right adjoint of pushforward for closed immersions](part-01/48-9-right-adjoint-of-pushforward-for-closed-imm.md)
+- [48.10 Right adjoint of pushforward for closed immersions and base change](part-01/48-10-right-adjoint-of-pushforward-for-closed-im.md)
+- [48.11 Right adjoint of pushforward for finite morphisms](part-01/48-11-right-adjoint-of-pushforward-for-finite-mo.md)
+- [48.12 Right adjoint of pushforward for proper flat morphisms](part-01/48-12-right-adjoint-of-pushforward-for-proper-fl.md)
+- [48.13 Right adjoint of pushforward for perfect proper morphisms](part-01/48-13-right-adjoint-of-pushforward-for-perfect-p.md)
+- [48.14 Right adjoint of pushforward for effective Cartier divisors](part-01/48-14-right-adjoint-of-pushforward-for-effective.md)
+- [48.15 Right adjoint of pushforward in examples](part-01/48-15-right-adjoint-of-pushforward-in-examples.md)
+- [48.16 Upper shriek functors](part-01/48-16-upper-shriek-functors.md)
+- [48.17 Properties of upper shriek functors](part-01/48-17-properties-of-upper-shriek-functors.md)
+- [48.18 Base change for upper shriek](part-01/48-18-base-change-for-upper-shriek.md)
+- [48.19 A duality theory](part-01/48-19-a-duality-theory.md)
+- [48.20 Glueing dualizing complexes](part-01/48-20-glueing-dualizing-complexes.md)
+- [48.21 Dimension functions](part-01/48-21-dimension-functions.md)
+
+## [48.22 Dualizing modules to 48.34 Lichtenbaum's theorem](part-02/README.md)
+
+- [48.22 Dualizing modules](part-02/48-22-dualizing-modules.md)
+- [48.23 Cohen-Macaulay schemes](part-02/48-23-cohen-macaulay-schemes.md)
+- [48.24 Gorenstein schemes](part-02/48-24-gorenstein-schemes.md)
+- [48.25 Gorenstein morphisms](part-02/48-25-gorenstein-morphisms.md)
+- [48.26 More on dualizing complexes](part-02/48-26-more-on-dualizing-complexes.md)
+- [48.27 Duality for proper schemes over fields](part-02/48-27-duality-for-proper-schemes-over-fields.md)
+- [48.28 Relative dualizing complexes](part-02/48-28-relative-dualizing-complexes.md)
+- [48.29 The fundamental class of an lci morphism](part-02/48-29-the-fundamental-class-of-an-lci-morphism.md)
+- [48.30 Extension by zero for coherent modules](part-02/48-30-extension-by-zero-for-coherent-modules.md)
+- [48.31 Preliminaries to compactly supported cohomology](part-02/48-31-preliminaries-to-compactly-supported-cohom.md)
+- [48.32 Compactly supported cohomology for coherent modules](part-02/48-32-compactly-supported-cohomology-for-coheren.md)
+- [48.33 Duality for compactly supported cohomology](part-02/48-33-duality-for-compactly-supported-cohomology.md)
+- [48.34 Lichtenbaum's theorem](part-02/48-34-lichtenbaums-theorem.md)

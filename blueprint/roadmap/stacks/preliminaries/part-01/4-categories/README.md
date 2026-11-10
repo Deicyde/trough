@@ -1,0 +1,53 @@
+# 4 Categories
+
+Chapter 4 of the Stacks Project, *Categories*, [Tag 0011](https://stacks.math.columbia.edu/tag/0011): the 41 sections of its 44 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 226 tags are carried by 285 declarations of the repository (16 in StacksCore and 269 in StacksFrontier) and 192 registered declarations.
+
+## [4.2 Definitions to 4.23 Exact functors](part-01/README.md)
+
+- [4.2 Definitions](part-01/4-2-definitions.md)
+- [4.3 Opposite Categories and the Yoneda Lemma](part-01/4-3-opposite-categories-and-the-yoneda-lemma.md)
+- [4.4 Products of pairs](part-01/4-4-products-of-pairs.md)
+- [4.5 Coproducts of pairs](part-01/4-5-coproducts-of-pairs.md)
+- [4.6 Fibre products](part-01/4-6-fibre-products.md)
+- [4.8 Fibre products and representability](part-01/4-8-fibre-products-and-representability.md)
+- [4.9 Pushouts](part-01/4-9-pushouts.md)
+- [4.10 Equalizers](part-01/4-10-equalizers.md)
+- [4.11 Coequalizers](part-01/4-11-coequalizers.md)
+- [4.12 Initial and final objects](part-01/4-12-initial-and-final-objects.md)
+- [4.13 Monomorphisms and Epimorphisms](part-01/4-13-monomorphisms-and-epimorphisms.md)
+- [4.14 Limits and colimits](part-01/4-14-limits-and-colimits.md)
+- [4.16 Connected limits](part-01/4-16-connected-limits.md)
+- [4.17 Cofinal and initial categories](part-01/4-17-cofinal-and-initial-categories.md)
+- [4.18 Finite limits and colimits](part-01/4-18-finite-limits-and-colimits.md)
+- [4.19 Filtered colimits](part-01/4-19-filtered-colimits.md)
+- [4.20 Cofiltered limits](part-01/4-20-cofiltered-limits.md)
+- [4.21 Limits and colimits over preordered sets](part-01/4-21-limits-and-colimits-over-preordered-sets.md)
+- [4.22 Essentially constant systems](part-01/4-22-essentially-constant-systems.md)
+- [4.23 Exact functors](part-01/4-23-exact-functors.md)
+
+## [4.24 Adjoint functors to 4.43 Monoidal categories](part-02/README.md)
+
+- [4.24 Adjoint functors](part-02/4-24-adjoint-functors.md)
+- [4.25 A criterion for representability](part-02/4-25-a-criterion-for-representability.md)
+- [4.26 Categorically compact objects](part-02/4-26-categorically-compact-objects.md)
+- [4.27 Localization in categories](part-02/4-27-localization-in-categories.md)
+- [4.28 Formal properties](part-02/4-28-formal-properties.md)
+- [4.29 2-categories](part-02/4-29-2-categories.md)
+- [4.30 (2, 1)-categories](part-02/4-30-2-1-categories.md)
+- [4.31 2-fibre products](part-02/4-31-2-fibre-products.md)
+- [4.32 Categories over categories](part-02/4-32-categories-over-categories.md)
+- [4.33 Fibred categories](part-02/4-33-fibred-categories.md)
+- [4.34 Inertia](part-02/4-34-inertia.md)
+- [4.35 Categories fibred in groupoids](part-02/4-35-categories-fibred-in-groupoids.md)
+- [4.36 Presheaves of categories](part-02/4-36-presheaves-of-categories.md)
+- [4.37 Presheaves of groupoids](part-02/4-37-presheaves-of-groupoids.md)
+- [4.38 Categories fibred in sets](part-02/4-38-categories-fibred-in-sets.md)
+- [4.39 Categories fibred in setoids](part-02/4-39-categories-fibred-in-setoids.md)
+- [4.40 Representable categories fibred in groupoids](part-02/4-40-representable-categories-fibred-in-groupoid.md)
+- [4.41 The 2-Yoneda lemma](part-02/4-41-the-2-yoneda-lemma.md)
+- [4.42 Representable 1-morphisms](part-02/4-42-representable-1-morphisms.md)
+- [4.43 Monoidal categories](part-02/4-43-monoidal-categories.md)
+
+## [4.44 Categories of dotted arrows](part-03/README.md)
+
+- [4.44 Categories of dotted arrows](part-03/4-44-categories-of-dotted-arrows.md)

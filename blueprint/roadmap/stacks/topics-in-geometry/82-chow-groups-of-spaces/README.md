@@ -1,0 +1,40 @@
+# 82 Chow Groups of Spaces
+
+Chapter 82 of the Stacks Project, *Chow Groups of Spaces*, [Tag 0EDQ](https://stacks.math.columbia.edu/tag/0EDQ): the 31 sections of its 32 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 103 tags are carried by 277 declarations of the repository (all in StacksFrontier) and 2 registered declarations.
+
+## [82.2 Setup to 82.21 Intersecting with an…](part-01/README.md)
+
+- [82.2 Setup](part-01/82-2-setup.md)
+- [82.3 Cycles](part-01/82-3-cycles.md)
+- [82.4 Multiplicities](part-01/82-4-multiplicities.md)
+- [82.5 Cycle associated to a closed subspace](part-01/82-5-cycle-associated-to-a-closed-subspace.md)
+- [82.6 Cycle associated to a coherent sheaf](part-01/82-6-cycle-associated-to-a-coherent-sheaf.md)
+- [82.7 Preparation for proper pushforward](part-01/82-7-preparation-for-proper-pushforward.md)
+- [82.8 Proper pushforward](part-01/82-8-proper-pushforward.md)
+- [82.9 Preparation for flat pullback](part-01/82-9-preparation-for-flat-pullback.md)
+- [82.10 Flat pullback](part-01/82-10-flat-pullback.md)
+- [82.11 Push and pull](part-01/82-11-push-and-pull.md)
+- [82.12 Preparation for principal divisors](part-01/82-12-preparation-for-principal-divisors.md)
+- [82.13 Principal divisors](part-01/82-13-principal-divisors.md)
+- [82.14 Principal divisors and pushforward](part-01/82-14-principal-divisors-and-pushforward.md)
+- [82.15 Rational equivalence](part-01/82-15-rational-equivalence.md)
+- [82.16 Rational equivalence and push and pull](part-01/82-16-rational-equivalence-and-push-and-pull.md)
+- [82.17 The divisor associated to an invertible sheaf](part-01/82-17-the-divisor-associated-to-an-invertible-sh.md)
+- [82.18 Intersecting with an invertible sheaf](part-01/82-18-intersecting-with-an-invertible-sheaf.md)
+- [82.19 Intersecting with an invertible sheaf and push and pull](part-01/82-19-intersecting-with-an-invertible-sheaf-and.md)
+- [82.20 The key formula](part-01/82-20-the-key-formula.md)
+- [82.21 Intersecting with an invertible sheaf and rational equivalence](part-01/82-21-intersecting-with-an-invertible-sheaf-and.md)
+
+## [82.22 Intersecting with… to 82.32 Degrees of zero cycles](part-02/README.md)
+
+- [82.22 Intersecting with effective Cartier divisors](part-02/82-22-intersecting-with-effective-cartier-diviso.md)
+- [82.23 Gysin homomorphisms](part-02/82-23-gysin-homomorphisms.md)
+- [82.24 Relative effective Cartier divisors](part-02/82-24-relative-effective-cartier-divisors.md)
+- [82.25 Affine bundles](part-02/82-25-affine-bundles.md)
+- [82.26 Bivariant intersection theory](part-02/82-26-bivariant-intersection-theory.md)
+- [82.27 Projective space bundle formula](part-02/82-27-projective-space-bundle-formula.md)
+- [82.28 The Chern classes of a vector bundle](part-02/82-28-the-chern-classes-of-a-vector-bundle.md)
+- [82.29 Polynomial relations among Chern classes](part-02/82-29-polynomial-relations-among-chern-classes.md)
+- [82.30 Additivity of Chern classes](part-02/82-30-additivity-of-chern-classes.md)
+- [82.31 The splitting principle](part-02/82-31-the-splitting-principle.md)
+- [82.32 Degrees of zero cycles](part-02/82-32-degrees-of-zero-cycles.md)

@@ -1,0 +1,40 @@
+# 24 Differential Graded Sheaves
+
+Chapter 24 of the Stacks Project, *Differential Graded Sheaves*, [Tag 0FQS](https://stacks.math.columbia.edu/tag/0FQS): the 31 sections of its 35 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 105 tags are carried by 290 declarations of the repository (all in StacksFrontier) and 6 registered declarations.
+
+## [24.3 Sheaves of graded algebras to 24.23 Flat resolutions](part-01/README.md)
+
+- [24.3 Sheaves of graded algebras](part-01/24-3-sheaves-of-graded-algebras.md)
+- [24.4 Sheaves of graded modules](part-01/24-4-sheaves-of-graded-modules.md)
+- [24.5 The graded category of sheaves of graded modules](part-01/24-5-the-graded-category-of-sheaves-of-graded-mo.md)
+- [24.6 Tensor product for sheaves of graded modules](part-01/24-6-tensor-product-for-sheaves-of-graded-module.md)
+- [24.7 Internal hom for sheaves of graded modules](part-01/24-7-internal-hom-for-sheaves-of-graded-modules.md)
+- [24.8 Sheaves of graded bimodules and tensor-hom adjunction](part-01/24-8-sheaves-of-graded-bimodules-and-tensor-hom.md)
+- [24.9 Pull and push for sheaves of graded modules](part-01/24-9-pull-and-push-for-sheaves-of-graded-modules.md)
+- [24.10 Localization and sheaves of graded modules](part-01/24-10-localization-and-sheaves-of-graded-modules.md)
+- [24.11 Shift functors on sheaves of graded modules](part-01/24-11-shift-functors-on-sheaves-of-graded-module.md)
+- [24.12 Sheaves of differential graded algebras](part-01/24-12-sheaves-of-differential-graded-algebras.md)
+- [24.13 Sheaves of differential graded modules](part-01/24-13-sheaves-of-differential-graded-modules.md)
+- [24.15 Tensor product for sheaves of differential graded modules](part-01/24-15-tensor-product-for-sheaves-of-differential.md)
+- [24.16 Internal hom for sheaves of differential graded modules](part-01/24-16-internal-hom-for-sheaves-of-differential-g.md)
+- [24.17 Sheaves of differential graded bimodules and tensor-hom adjunction](part-01/24-17-sheaves-of-differential-graded-bimodules-a.md)
+- [24.18 Pull and push for sheaves of differential graded modules](part-01/24-18-pull-and-push-for-sheaves-of-differential.md)
+- [24.19 Localization and sheaves of differential graded modules](part-01/24-19-localization-and-sheaves-of-differential-g.md)
+- [24.20 Shift functors on sheaves of differential graded modules](part-01/24-20-shift-functors-on-sheaves-of-differential.md)
+- [24.21 The homotopy category](part-01/24-21-the-homotopy-category.md)
+- [24.22 Cones and triangles](part-01/24-22-cones-and-triangles.md)
+- [24.23 Flat resolutions](part-01/24-23-flat-resolutions.md)
+
+## [24.24 The differential graded… to 24.35 Inverse systems of…](part-02/README.md)
+
+- [24.24 The differential graded hull of a graded module](part-02/24-24-the-differential-graded-hull-of-a-graded-m.md)
+- [24.25 K-injective differential graded modules](part-02/24-25-k-injective-differential-graded-modules.md)
+- [24.26 The derived category](part-02/24-26-the-derived-category.md)
+- [24.27 The canonical delta-functor](part-02/24-27-the-canonical-delta-functor.md)
+- [24.28 Derived pullback](part-02/24-28-derived-pullback.md)
+- [24.29 Derived pushforward](part-02/24-29-derived-pushforward.md)
+- [24.30 Equivalences of derived categories](part-02/24-30-equivalences-of-derived-categories.md)
+- [24.31 Resolutions of differential graded algebras](part-02/24-31-resolutions-of-differential-graded-algebra.md)
+- [24.33 Differential graded modules on a category](part-02/24-33-differential-graded-modules-on-a-category.md)
+- [24.34 Differential graded modules on a category, bis](part-02/24-34-differential-graded-modules-on-a-category.md)
+- [24.35 Inverse systems of differential graded algebras](part-02/24-35-inverse-systems-of-differential-graded-alg.md)
