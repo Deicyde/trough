@@ -137,22 +137,11 @@ def refresh(checkout: Path, project: Path, out: Path, site: str | None = None, f
         "toolchain": toolchain.read_text(encoding="utf-8").strip().split(":")[-1] if toolchain.is_file() else "",
         "mathlib": mathlib.get("rev", ""), "mathlib_version": mathlib.get("inputRev", ""),
         "license": license_name,
-        "project": {"name": text(config.project.get("name")), "description": text(config.project.get("description")),
-                    "authors": [text(author) for author in config.project.get("authors") or []],
-                    "maintainers": [text(name) for name in config.project.get("responsible_maintainers") or []]},
-        "review": {"status": text(config.review.get("status")), "notes": text(config.review.get("notes")),
-                   "reviewers": [text(reviewer) for reviewer in config.review.get("reviewers") or []]},
-        "automation": {
-            "methods": [{key: text(method.get(key)) for key in ff.AUTOMATION if method.get(key)}
-                        | ({"models": [text(model) for model in method["models"]]} if method.get("models") else {})
-                        for method in config.automation.get("methods") or [] if isinstance(method, dict)],
-            "notes": text(config.automation.get("notes")),
-        },
-        "sources": [{"title": text(item.get("title")), "location": text(item.get("location")),
-                     "note": text(item.get("note"))} for item in config.sources],
+        **ff.facts_of(config),
         "readme": readme_words(readme.read_text(encoding="utf-8")) if readme.is_file() else {},
         "counts": counts,
     }
+    source["project"]["maintainers"] = [text(name) for name in config.project.get("responsible_maintainers") or []]
     if site:
         names = [record["tag"] for record in tags]
         try:

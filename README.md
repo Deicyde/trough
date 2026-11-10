@@ -376,8 +376,9 @@ no edges.
    XX.
 2. `tools/trough/leansource.py` reads each file as it does for Formal
    Conjectures, and also gives the `private` declarations and the instances
-   with no name, so every `@[stacks]`, `@[ega]` and `@[sga]` attribute a file
-   writes is accounted for. An `attribute [stacks TAG] name` command tags the
+   with no name, a name written on the line after its keyword, and a list of
+   attributes with a modifier between it and its keyword's line, so every
+   `@[stacks]`, `@[ega]` and `@[sga]` attribute a file writes is accounted for. An `attribute [stacks TAG] name` command tags the
    declaration it names. A declaration whose statement has no `:=` or `where`,
    such as a definition by cases, shows its header.
 3. The repository runs no continuous integration, so the pin is the newest
