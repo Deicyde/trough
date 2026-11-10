@@ -38,7 +38,7 @@ SITE = "https://stacks.axiommath.ai/"
 STACKS_SITE = "https://stacks.math.columbia.edu"
 MATHLIB_DOCS = "https://leanprover-community.github.io/mathlib4_docs/find/?pattern={}#doc"
 TIERS = ("StacksCore", "StacksFrontier")
-STRING = r'"(?:[^"\\]|\\.)*"'
+STRING = r'"(?:[^"\\]|\\[\s\S])*"'  # a backslash may end a line, as a string gap does
 TAG = re.compile(r"^[0-9A-Z]{4}$")
 TAGGING = re.compile(rf"^(?:stacks|stacks_fixed) (\S+)(?: ({STRING}))?$", re.S)
 REFERENCE = re.compile(rf"^(ega|sga) ({STRING})(?: ({STRING}))?$", re.S)
@@ -58,14 +58,15 @@ ESCAPES = {"n": "\n", "t": "\t", "r": "\r", "\\": "\\", '"': '"', "'": "'"}
 
 def lean_string(literal: str) -> str:
     """The value of a Lean string literal, written with its quotes: escapes decoded, and a gap (a backslash
-    ending a line, with the next line's leading space) taken out."""
+    ending a line, with the next line's leading space) taken out. An attribute list comes with its whitespace
+    collapsed, so a gap there reads as a backslash and one space."""
     body, out, i = literal[1:-1], [], 0
     while i < len(body):
         if body[i] == "\\" and i + 1 < len(body):
             following = body[i + 1]
-            if following == "\n":
-                i += 2
-                while i < len(body) and body[i] in " \t":
+            if following in " \t\n":
+                i += 1
+                while i < len(body) and body[i] in " \t\n":
                     i += 1
                 continue
             if following in ESCAPES:
@@ -210,7 +211,9 @@ def read_file(text: str, path: str) -> dict:
         line = line_of(code, start)
         command = REGISTRATION.match(plain, start)
         what, ref = (command.group(1), command.group(2)) if command else ("", "")
-        if what == "stacks" and TAG.match(ref):
+        if not command or not leansource.is_name(command.group(4)):
+            value = ""
+        elif what == "stacks" and TAG.match(ref):
             value = ref
         elif what in ("ega", "sga") and ref.startswith('"'):
             value = " ".join(lean_string(ref).split())
@@ -608,6 +611,7 @@ def tally(records: list[dict]) -> Counter:
             counts[block["tier"]] += 1
             counts["sorry"] += block["sorry"]
         counts["registrations"] += len(record["registrations"])
+        counts["registered_here"] += sum("declared" in item for item in record["registrations"])
     return counts
 
 
@@ -807,6 +811,8 @@ def intro(data: dict, stats: Counter) -> str:
     described = [f"{name} as “{ff.safe(readme['tiers'][name])}”" for name in TIERS if readme.get("tiers", {}).get(name)]
     tiers = f" It describes {' and '.join(described)}" if described else ""
     declarations = stats["StacksCore"] + stats["StacksFrontier"]
+    here = (f", {stats['registered_here']:,} of them declared in the repository itself" if stats["registered_here"] else
+            "")
     site = source.get("site", {})
     site_line = (f"The repository's site, {SITE}, links each tag to its Lean code; each block links the tag's page there."
                  if site.get("tags") else
@@ -831,7 +837,9 @@ def intro(data: dict, stats: Counter) -> str:
         f"Stacks Project orders them. They hold {plural(stats['tags'], 'tag')}, each a block listing the "
         f"{plural(declarations, 'declaration')} of the repository that carry it ({stats['StacksCore']:,} in StacksCore, "
         f"{stats['StacksFrontier']:,} in StacksFrontier) and the {plural(stats['registrations'], 'declaration')} "
-        "registered for it, mostly Mathlib's. A declaration carrying several tags is in each tag's block. The repository "
+        f"registered for it with `add_to_stacks` or an `attribute` command{here}. The README describes `add_to_stacks` as "
+        "registering a tag that Mathlib already covers on the Mathlib declaration, and the blocks link the others to "
+        "Mathlib's documentation. A declaration carrying several tags is in each tag's block. The repository "
         f"has {counts.get('files_StacksCore', 0):,} Lean files in StacksCore and {counts.get('files_StacksFrontier', 0):,} "
         "in StacksFrontier.",
         "No Lean is run for this chapter. Tags are read from the source text, as the attributes are written: a "

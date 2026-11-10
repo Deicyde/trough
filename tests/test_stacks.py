@@ -79,7 +79,8 @@ REGISTRATIONS = '''import StacksCore.Tactic.StacksAttribute
 
 add_to_stacks 00DT "the definition, as Mathlib states it; its comment spans
   two lines" Ideal.IsPrime
-add_to_stacks 9999 Nowhere.listed
+add_to_stacks 9999 "a comment with a string gap, \\
+which Lean reads as one line" Nowhere.listed
 '''
 
 FILES = {"StacksCore/Algebra/Foo.lean": CORE, "StacksFrontier/AlgebraicGeometry/Bar.lean": FRONTIER,
@@ -229,6 +230,8 @@ def data(tmp_path: Path, site: bool = False) -> dict:
 def test_lean_strings_decode_escapes_and_gaps():
     assert stacks.lean_string('"a \\"b\\" \\\\ c\\n"') == 'a "b" \\ c\n'
     assert stacks.lean_string('"one \\\n    two"') == "one two"
+    # As an attribute list gives it, its whitespace collapsed.
+    assert stacks.lean_string('"one \\ two"') == "one two"
     assert stacks.lean_string('"\\x41\\u00e9"') == "Aé"
 
 
@@ -263,7 +266,8 @@ def test_a_file_gives_its_tagged_declarations_registrations_and_attribute_comman
     assert registrations == [
         {"what": "stacks", "ref": "00DT", "line": 3, "name": "Ideal.IsPrime",
          "comment": "the definition, as Mathlib states it; its comment spans\n  two lines"},
-        {"what": "stacks", "ref": "9999", "line": 5, "name": "Nowhere.listed", "comment": ""}]
+        {"what": "stacks", "ref": "9999", "line": 5, "name": "Nowhere.listed",
+         "comment": "a comment with a string gap, which Lean reads as one line"}]
 
 
 def test_a_structure_without_where_states_itself_whole():
