@@ -11,7 +11,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [TauCeti.Hodge.MixedHodgeStructureCat.abelian](tauceti-hodge-mixedhodgestructurecat-abelian.md)
 - [Deligne's fine conjugation relation](delignes-fine-conjugation-relation.md)
 - [When `V` is flat over `ℤ`, the Riemann forms for `J` are exactly the forms polarizing its weight-one Hodge structure](when-v-is-flat-over-z-the-riemann-forms-for-j-ar.md)
-- [TauCeti.AlmostComplexStructure.isRiemannForm\_of\_isPolarization](tauceti-almostcomplexstructure-isriemannform-of.md)
+- [TauCeti.AlmostComplexStructure.isRiemannForm_of_isPolarization](tauceti-almostcomplexstructure-isriemannform-of.md)
 - [Self-duality is invertible up to a nonzero integer](self-duality-is-invertible-up-to-a-nonzero-integ.md)
 - [The dual of a polarizable pure Hodge structure is polarizable](the-dual-of-a-polarizable-pure-hodge-structure-i.md)
 - [Polarizable pure Hodge structures are closed under internal homs](polarizable-pure-hodge-structures-are-closed-und.md)

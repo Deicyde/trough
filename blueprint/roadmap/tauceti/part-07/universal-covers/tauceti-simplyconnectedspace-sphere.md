@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.simplyConnectedSpace\_sphere
+# TauCeti.simplyConnectedSpace_sphere
 
 Every sphere of nonnegative radius in a real normed space of rank greater than two is
 simply connected.

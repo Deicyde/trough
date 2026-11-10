@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.units\_mem\_ringHaarCharacter\_ker
+# NumberField.AdeleRing.units_mem_ringHaarCharacter_ker
 
 If $B$ is a finite-dimensional $\mathbb{Q}$-algebra (for example a number field, or a quaternion algebra over a number field), if $B_{\mathbb{A}}$ denotes the ring $B\otimes_{\mathbb{Q}}\mathbb{A}_{\mathbb{Q}}$, and if $b\in B^\times$, then $\delta_{B_{\mathbb{A}}}(b)=1$.
 
@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [MeasureTheory.addHaarScalarFactor\_tensor\_adeles\_eq\_one](measuretheory-addhaarscalarfactor-tensor-adeles.md)
+- [MeasureTheory.addHaarScalarFactor_tensor_adeles_eq_one](measuretheory-addhaarscalarfactor-tensor-adeles.md)
 
 ## Proof
 

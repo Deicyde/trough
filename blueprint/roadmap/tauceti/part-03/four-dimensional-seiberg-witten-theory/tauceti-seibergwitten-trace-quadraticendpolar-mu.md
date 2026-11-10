@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.SeibergWitten.trace\_quadraticEndPolar\_mul\_of\_mem\_traceFreeSelfAdjoint
+# TauCeti.SeibergWitten.trace_quadraticEndPolar_mul_of_mem_traceFreeSelfAdjoint
 
 Against a trace-free self-adjoint `T`, the polarization of `Q₀` pairs as
 `tr (B(ψ, φ) T) = 2 Re⟪T ψ, φ⟫`: the formal adjoint of the derivative `B(ψ, ·)` of `Q₀` is

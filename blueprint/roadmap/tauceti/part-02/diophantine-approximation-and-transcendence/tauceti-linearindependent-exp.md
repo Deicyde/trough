@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.linearIndependent\_exp
+# TauCeti.linearIndependent_exp
 
 **The Lindemann–Weierstrass theorem**, in Baker's form. The exponentials of pairwise distinct
 algebraic numbers are linearly independent over the field `integralClosure ℚ ℂ` of algebraic

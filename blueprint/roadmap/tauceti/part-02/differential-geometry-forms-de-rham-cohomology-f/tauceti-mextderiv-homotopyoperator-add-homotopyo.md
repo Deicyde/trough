@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.mextDeriv\_homotopyOperator\_add\_homotopyOperator\_mextDeriv
+# TauCeti.mextDeriv_homotopyOperator_add_homotopyOperator_mextDeriv
 
 **The cochain-homotopy identity** for the homotopy operator on the cylinder `M × [0, 1]`:
 for a `C¹` form `φ` with values in a Banach space on a `C²` manifold, possibly with boundary or

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.realize\_scottFormula\_iff\_bfEquiv
+# TauCeti.realize_scottFormula_iff_bfEquiv
 
 A tuple in any structure satisfies the canonical Scott formula exactly when it is
 back-and-forth equivalent to the original tuple at that countable ordinal.

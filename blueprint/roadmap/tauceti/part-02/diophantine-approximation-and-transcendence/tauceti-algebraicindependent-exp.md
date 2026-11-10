@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.algebraicIndependent\_exp
+# TauCeti.algebraicIndependent_exp
 
 **The Lindemann–Weierstrass theorem**, algebraic independence form. If the algebraic numbers
 `u i` are linearly independent over `ℕ` (equivalently, over `ℚ`), then their exponentials are
@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.linearIndependent\_exp](tauceti-linearindependent-exp.md)
+- [TauCeti.linearIndependent_exp](tauceti-linearindependent-exp.md)
 
 ## Lean
 

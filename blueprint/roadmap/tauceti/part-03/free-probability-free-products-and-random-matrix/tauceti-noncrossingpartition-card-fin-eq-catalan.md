@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NoncrossingPartition.card\_fin\_eq\_catalan
+# TauCeti.NoncrossingPartition.card_fin_eq_catalan
 
 There are `catalan n` noncrossing partitions of the `n` ordered positions of `Fin n`.
 

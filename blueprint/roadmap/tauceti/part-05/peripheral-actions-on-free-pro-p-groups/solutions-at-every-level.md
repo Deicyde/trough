@@ -27,7 +27,7 @@ TauCeti.Peripheral.exists_mem_level.{u_1} {p r : ℕ} [Fact (Nat.Prime p)] {F : 
 
 ## Proof depends on
 
-- [TauCeti.Peripheral.exists\_mem\_level\_succ](tauceti-peripheral-exists-mem-level-succ.md)
+- [TauCeti.Peripheral.exists_mem_level_succ](tauceti-peripheral-exists-mem-level-succ.md)
 
 ## Lean
 

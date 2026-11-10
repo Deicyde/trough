@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.norm\_mul
+# Hurwitz.norm_mul
 
 The norm of a product is the product of the norms.
 

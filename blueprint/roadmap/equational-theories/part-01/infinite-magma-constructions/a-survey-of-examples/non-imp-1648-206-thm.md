@@ -17,7 +17,7 @@ There exists a magma which satisfies [E1648](https://teorth.github.io/equational
 
 ## Lean
 
-Formalized as [`Equation1648_not_implies_Equation206`](https://teorth.github.io/equational_theories/docs/find/#doc/Equation1648_not_implies_Equation206).
+Stated as [`Equation1648_not_implies_Equation206`](https://teorth.github.io/equational_theories/docs/find/#doc/Equation1648_not_implies_Equation206); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

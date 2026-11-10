@@ -17,8 +17,8 @@ Note that it follows easily that that the map from the integers to $\widehat{\ma
 But $\widehat{\mathbb{Z}}$ is *much* larger than $\mathbb{Z}$; it has the same cardinality as the reals in fact. Let's write down an explicit example of an element of $\widehat{\mathbb{Z}}$ which isn't obviously in $\mathbb{Z}$.
 
 - [ZHat.e](zhat-e.md)
-- [ZHat.e\_def](zhat-e-def.md)
-- [ZHat.e\_not\_in\_Int](zhat-e-not-in-int.md)
+- [ZHat.e_def](zhat-e-def.md)
+- [ZHat.e_not_in_Int](zhat-e-not-in-int.md)
 
 Let's prove some more basic facts about $\widehat{\mathbb{Z}}$.
 

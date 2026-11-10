@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Module.End.mk\_trace\_homogeneousSubmoduleMapₛₗ\_mul\_reverse\_charpoly\_of\_pow\_eq\_one
+# Module.End.mk_trace_homogeneousSubmoduleMapₛₗ_mul_reverse_charpoly_of_pow_eq_one
 
 **The graded trace formula for an endomorphism of finite order** of a finite-dimensional
 vector space over an arbitrary field: if `f ^ n = 1` with `n` nonzero in `K`, then

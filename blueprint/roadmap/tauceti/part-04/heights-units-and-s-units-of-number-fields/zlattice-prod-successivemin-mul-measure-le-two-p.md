@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZLattice.prod\_successiveMin\_mul\_measure\_le\_two\_pow\_mul\_covolume
+# ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume
 
 **Minkowski's second theorem**, upper bound, in terms of the successive minima. For a full
 lattice `L` in a real normed space `E` of dimension `n`, a Haar measure `μ` on `E`, and a convex

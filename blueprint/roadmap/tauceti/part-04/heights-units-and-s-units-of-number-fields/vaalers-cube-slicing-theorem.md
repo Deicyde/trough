@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.hasPrekopaLeindler\_volume](../../part-03/euclidean-isoperimetry-sharp-inequalities-and-ri/tauceti-hasprekopaleindler-volume.md)
+- [TauCeti.hasPrekopaLeindler_volume](../../part-03/euclidean-isoperimetry-sharp-inequalities-and-ri/tauceti-hasprekopaleindler-volume.md)
 
 ## Lean
 

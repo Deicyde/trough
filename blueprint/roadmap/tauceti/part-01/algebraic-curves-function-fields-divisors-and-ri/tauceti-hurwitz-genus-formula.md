@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.hurwitz\_genus\_formula
+# TauCeti.hurwitz_genus_formula
 
 **The Hurwitz genus formula** (Stichtenoth, Theorem 3.4.13): for a finite separable extension
 `F' / k'` of the function field `F / k`, both with exact constants and with `k' / k` finite
@@ -31,7 +31,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.isRiemannRochDivisor\_weilDifferentialDivisor](tauceti-isriemannrochdivisor-weildifferentialdiv.md)
+- [TauCeti.isRiemannRochDivisor_weilDifferentialDivisor](tauceti-isriemannrochdivisor-weildifferentialdiv.md)
 - [TauCeti.Ring.IsJapanese](../../part-06/scheme-stack-cohomology-and-intersection-foundat/tauceti-ring-isjapanese.md)
 
 ## Lean

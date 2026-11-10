@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# CliffordAlgebra.bivectorExterior\_mul\_bivectorExterior\_add\_swap
+# CliffordAlgebra.bivectorExterior_mul_bivectorExterior_add_swap
 
 **The anticommutator of two two-forms** in the Clifford algebra of an oriented four-space:
 `c₂(α) c₂(β) + c₂(β) c₂(α) = -2 ⟪α, β⟫ - 2 ⟪⋆α, β⟫ Γ`. Since `α ∧ β = ⟪⋆α, β⟫ vol`, the

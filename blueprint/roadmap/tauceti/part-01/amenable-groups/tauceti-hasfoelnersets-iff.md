@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.hasFoelnerSets\_iff
+# TauCeti.hasFoelnerSets_iff
 
 A group has Følner sets exactly when for every finite `K ⊆ G` and every `ε > 0` there is a
 finite nonempty `F ⊆ G` with `|gF △ F| < ε · |F|` for all `g ∈ K`.

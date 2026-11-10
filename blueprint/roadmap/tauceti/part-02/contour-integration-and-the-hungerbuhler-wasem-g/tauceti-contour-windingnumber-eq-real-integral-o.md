@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Contour.windingNumber\_eq\_real\_integral\_of\_closed\_interior\_crossings
+# TauCeti.Contour.windingNumber_eq_real_integral_of_closed_interior_crossings
 
 **The real bounded-integrand formula, allowing crossings** (Hungerbühler–Wasem Prop 2.3).
 For a closed piecewise-`C¹` immersion `γ` on `[[a, b]]` that avoids `s` at the basepoint `a`

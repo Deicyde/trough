@@ -6,15 +6,15 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.DivisionAlgebra.Aux.C\_compact
+# NumberField.AdeleRing.DivisionAlgebra.Aux.C_compact
 
 $C$ is compact.
 
 ## Depends on
 
 - [NumberField.AdeleRing.DivisionAlgebra.Aux.C](numberfield-adelering-divisionalgebra-aux-c.md)
-- [NumberField.AdeleRing.DivisionAlgebra.Aux.T\_finite](numberfield-adelering-divisionalgebra-aux-t-fini.md)
-- [NumberField.AdeleRing.DivisionAlgebra.Aux.X\_compact](numberfield-adelering-divisionalgebra-aux-x-comp.md)
+- [NumberField.AdeleRing.DivisionAlgebra.Aux.T_finite](numberfield-adelering-divisionalgebra-aux-t-fini.md)
+- [NumberField.AdeleRing.DivisionAlgebra.Aux.X_compact](numberfield-adelering-divisionalgebra-aux-x-comp.md)
 
 ## Proof
 

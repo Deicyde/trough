@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/508
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_eq
+# MeasureTheory.addEquivAddHaarChar_eq
 
 $d_A(\phi)$ is independent of choice of regular Haar measure.
 

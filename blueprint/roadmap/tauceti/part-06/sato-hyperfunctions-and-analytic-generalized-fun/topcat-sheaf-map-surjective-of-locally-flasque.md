@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TopCat.Sheaf.map\_surjective\_of\_locally\_flasque
+# TopCat.Sheaf.map_surjective_of_locally_flasque
 
 If every restriction map of a sheaf inside some neighbourhood of each point is surjective, then
 every restriction map is surjective.

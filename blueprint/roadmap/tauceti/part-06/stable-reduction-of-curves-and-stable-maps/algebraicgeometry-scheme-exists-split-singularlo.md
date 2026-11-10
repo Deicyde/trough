@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# AlgebraicGeometry.Scheme.exists\_split\_singularLocus
+# AlgebraicGeometry.Scheme.exists_split_singularLocus
 
 All nodes of a proper nodal curve split over one finite separable field extension.
 For any chosen base change of the curve, its singular subscheme is the spectrum of a

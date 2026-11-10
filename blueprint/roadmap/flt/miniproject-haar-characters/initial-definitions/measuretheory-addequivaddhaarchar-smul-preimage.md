@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/509
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_smul\_preimage
+# MeasureTheory.addEquivAddHaarChar_smul_preimage
 
 If $X$ is a Borel set then $\mu(X)=d_A(\phi)\mu(\phi^{-1}X)$.
 
@@ -17,11 +17,11 @@ If $X$ is a Borel set then $\mu(X)=d_A(\phi)\mu(\phi^{-1}X)$.
 
 ## Proof depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_map](measuretheory-addequivaddhaarchar-smul-map.md)
 
 ## Proof
 
-This follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md) and the definition of the pushforward of a measure.
+This follows immediately from lemma [MeasureTheory.addEquivAddHaarChar_smul_map](measuretheory-addequivaddhaarchar-smul-map.md) and the definition of the pushforward of a measure.
 
 ## Lean
 

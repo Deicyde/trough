@@ -33,7 +33,7 @@ $$
 + \int_2^x (\sum_{p \leq t} \log p) \frac{dt}{t \log^2 t}
 $$
 
-as can be proven by interchanging the sum and integral and using the fundamental theorem of calculus. For any $\varepsilon$, we know from Theorem chebyshev\_asymptotic that there is $x_\varepsilon$ such that $\sum_{p \leq t} \log p = t + O(\varepsilon t)$ for $t \geq x_\varepsilon$, hence for $x \geq x_\varepsilon$
+as can be proven by interchanging the sum and integral and using the fundamental theorem of calculus. For any $\varepsilon$, we know from Theorem chebyshev_asymptotic that there is $x_\varepsilon$ such that $\sum_{p \leq t} \log p = t + O(\varepsilon t)$ for $t \geq x_\varepsilon$, hence for $x \geq x_\varepsilon$
 
 $$
 \pi(x) = \frac{1}{\log x} (x + O(\varepsilon x))

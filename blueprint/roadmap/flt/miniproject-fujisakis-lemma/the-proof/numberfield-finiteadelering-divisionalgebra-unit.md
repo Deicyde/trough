@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.FiniteAdeleRing.DivisionAlgebra.units\_cocompact
+# NumberField.FiniteAdeleRing.DivisionAlgebra.units_cocompact
 
 $D^\times\backslash(D\otimes_K\mathbb{A}_K^\infty)^\times$ is compact.
 
@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [NumberField.AdeleRing.DivisionAlgebra.compact\_quotient](../enter-the-adeles/numberfield-adelering-divisionalgebra-compact-qu.md)
+- [NumberField.AdeleRing.DivisionAlgebra.compact_quotient](../enter-the-adeles/numberfield-adelering-divisionalgebra-compact-qu.md)
 
 ## Proof
 

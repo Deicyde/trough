@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# DirichletCharacter.LFunction\_apply\_one\_pos
+# DirichletCharacter.LFunction_apply_one_pos
 
 The value at `s = 1` of the `L`-function of a nontrivial quadratic Dirichlet character is a
 positive real number.

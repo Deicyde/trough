@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Hurwitz.exists\_near
+# Hurwitz.exists_near
 
 Given a “usual” quaternion $a=x+yi+zj+wk$ with $x,y,z,w\in\mathbb{R}$, there exists a Hurwitz quaternion $q$ such that $N(a-q)<1$.
 

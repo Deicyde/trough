@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.continuous\_rationalDiagonal
+# TauCeti.continuous_rationalDiagonal
 
 The diagonal is continuous when the coordinate maps are continuous and there is one cofinite
 set of indices at which every `γ` is integral. Pointwise eventual integrality alone builds the

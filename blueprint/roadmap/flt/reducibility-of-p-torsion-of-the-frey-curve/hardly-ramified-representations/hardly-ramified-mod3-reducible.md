@@ -5,13 +5,13 @@ lean: GaloisRepresentation.IsHardlyRamified.mod_three
 statement: formalized
 ---
 
-# hardly\_ramified\_mod3\_reducible
+# hardly_ramified_mod3_reducible
 
 Suppose $k$ is a finite field of characteristic 3, and suppose $\overline{rho}:\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to\operatorname{GL}_2(k)$ is hardly ramified. Then $\overline{\rho}$ is an extension of the cyclotomic character by the trivial representation.
 
 ## Depends on
 
-- [hardly\_ramified](hardly-ramified.md)
+- [hardly_ramified](hardly-ramified.md)
 
 ## Proof
 
@@ -19,7 +19,7 @@ Omitted for now. **TODO**
 
 ## Lean
 
-Formalized as [`GaloisRepresentation.IsHardlyRamified.mod_three`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mod_three).
+Stated as [`GaloisRepresentation.IsHardlyRamified.mod_three`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mod_three); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

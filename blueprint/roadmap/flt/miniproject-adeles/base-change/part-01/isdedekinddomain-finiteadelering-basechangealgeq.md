@@ -12,16 +12,16 @@ This natural map $L\otimes_K\mathbb{A}_{A,K}^\infty\to\mathbb{A}_{B,L}^\infty$ i
 
 ## Depends on
 
-- [IsDedekindDomain.HeightOneSpectrum.range\_baseChange\_comp\_tensorAdicCompletionTo\_eq\_pi](isdedekinddomain-heightonespectrum-range-basecha.md)
-- [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md)
+- [IsDedekindDomain.HeightOneSpectrum.range_baseChange_comp_tensorAdicCompletionTo_eq_pi](isdedekinddomain-heightonespectrum-range-basecha.md)
+- [IsDedekindDomain.AKLB.tensorProduct_module_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md)
 
 ## Proof
 
-Follows immediately from theorem [IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/blueprint/src/chapter/AdeleMiniproject.tex#L579) and theorem [IsDedekindDomain.AKLB.tensorProduct\_module\_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
+Follows immediately from theorem [IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/blueprint/src/chapter/AdeleMiniproject.tex#L579) and theorem [IsDedekindDomain.AKLB.tensorProduct_module_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
 
 ## Lean
 
-Formalized as [`IsDedekindDomain.FiniteAdeleRing.baseChangeAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.FiniteAdeleRing.baseChangeAlgEquiv).
+Stated as [`IsDedekindDomain.FiniteAdeleRing.baseChangeAlgEquiv`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/IsDedekindDomain.FiniteAdeleRing.baseChangeAlgEquiv); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

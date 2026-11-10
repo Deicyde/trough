@@ -11,7 +11,7 @@ There's a natural ring map $K_v\to L_w$ extending the map $K\to L$. It is define
 
 ## Depends on
 
-- [IsDedekindDomain.HeightOneSpectrum.valuation\_comap](isdedekinddomain-heightonespectrum-valuation-com.md)
+- [IsDedekindDomain.HeightOneSpectrum.valuation_comap](isdedekinddomain-heightonespectrum-valuation-com.md)
 
 ## Lean
 

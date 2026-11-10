@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_isQF\_realize\_iff
+# TauCeti.exists_isQF_realize_iff
 
 **Quantifier elimination**, given projection closure. Every formula of ordered rings whose
 free variables `Sum.inl r` are assigned the parameters `r ∈ R` is equivalent, for every

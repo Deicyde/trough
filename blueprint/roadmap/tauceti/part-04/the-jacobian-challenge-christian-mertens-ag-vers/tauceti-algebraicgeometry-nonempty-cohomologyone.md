@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlgebraicGeometry.nonempty\_cohomologyOneDualEquivCohomologyZero\_differentials\_tensor\_dual
+# TauCeti.AlgebraicGeometry.nonempty_cohomologyOneDualEquivCohomologyZero_differentials_tensor_dual
 
 Over an exact constant field, the dual of `H¹(X, L)` is linearly equivalent to
 `H⁰(X, Ω_{X/k} ⊗ L⁻¹)`, by the identification of the differential line bundle with the canonical
@@ -39,7 +39,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.isRiemannRochDivisor\_weilDifferentialDivisor](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-isriemannrochdivisor-weildifferentialdiv.md)
+- [TauCeti.isRiemannRochDivisor_weilDifferentialDivisor](../../part-01/algebraic-curves-function-fields-divisors-and-ri/tauceti-isriemannrochdivisor-weildifferentialdiv.md)
 
 ## Lean
 

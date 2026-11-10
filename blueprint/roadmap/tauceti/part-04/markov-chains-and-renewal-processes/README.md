@@ -10,4 +10,4 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The time-`n` marginal of the chain](the-time-n-marginal-of-the-chain.md)
 - [The path-law kernel of a homogeneous Markov chain](the-path-law-kernel-of-a-homogeneous-markov-chai.md)
 - [TauCeti.Probability.renewalCount](tauceti-probability-renewalcount.md)
-- [TauCeti.Probability.renewalCount\_eq\_natCast\_iff](tauceti-probability-renewalcount-eq-natcast-iff.md)
+- [TauCeti.Probability.renewalCount_eq_natCast_iff](tauceti-probability-renewalcount-eq-natcast-iff.md)

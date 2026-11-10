@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.BlackScholes.callPrice\_sub\_putPrice
+# TauCeti.BlackScholes.callPrice_sub_putPrice
 
 **Put–call parity** for the closed-form prices: `C - P = s - K e^{-rτ}`.
 

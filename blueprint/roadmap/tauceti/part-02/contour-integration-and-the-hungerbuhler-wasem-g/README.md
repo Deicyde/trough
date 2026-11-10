@@ -2,9 +2,9 @@
 
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/Completed/ContourIntegration/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [TauCeti.Contour.Cycle.hungerbuhlerWasem\_residueTheorem](tauceti-contour-cycle-hungerbuhlerwasem-residuet.md)
+- [TauCeti.Contour.Cycle.hungerbuhlerWasem_residueTheorem](tauceti-contour-cycle-hungerbuhlerwasem-residuet.md)
 - [Hungerbühler--Wasem Proposition 2.2 (winding decomposition)](hungerbuhler-wasem-proposition-2-2-winding-decom.md)
-- [TauCeti.Contour.windingNumber\_eq\_real\_integral\_of\_closed\_interior\_crossings](tauceti-contour-windingnumber-eq-real-integral-o.md)
+- [TauCeti.Contour.windingNumber_eq_real_integral_of_closed_interior_crossings](tauceti-contour-windingnumber-eq-real-integral-o.md)
 - [Hungerbühler–Wasem Proposition 2.3, crossing value, under a `C²` hypothesis](hungerbuhler-wasem-proposition-2-3-crossing-valu.md)
 - [TauCeti.Contour.homologyCauchyTheorem](tauceti-contour-homologycauchytheorem.md)
 - [Cauchy's integral formula for the `k`-th derivative, homology form](cauchys-integral-formula-for-the-k-th-derivative.md)

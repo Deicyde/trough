@@ -33,7 +33,7 @@ Be careful though: just because every element of $\widehat{\mathbb{Q}}$ can be w
 
 If $A$ and $B$ are additive abelian groups then $A\otimes B$ is also an additive abelian group. However if $A$ and $B$ are commutative rings, then $A\otimes B$ also inherits the structure of a commutative ring, with $0=0\otimes_t 0$ and $1=1\otimes_t 1$. Pure tensors multiply in the obvious way: the product of $a_1\otimes_t b_1$ and $a_2\otimes_t b_2$ is $a_1a_2\otimes_t b_1b_2.$ There are ring homomorphisms $A\to A\otimes B$ and $B\to A\otimes B$ sending $a$ to $a\otimes_t 1$ and $b$ to $1\otimes_t b$. In general such maps are not injective, but in the case of $\widehat{\mathbb{Q}}=\mathbb{Q}\otimes\widehat{\mathbb{Z}}$ both maps from $\mathbb{Q}$ and $\widehat{\mathbb{Z}}$ are inclusions.
 
-- [QHat.injective\_rat](qhat-injective-rat.md)
-- [QHat.injective\_zHat](qhat-injective-zhat.md)
+- [QHat.injective_rat](qhat-injective-rat.md)
+- [QHat.injective_zHat](qhat-injective-zhat.md)
 
 We can thus identify $\mathbb{Q}=\mathbb{Q}\otimes\mathbb{Z}$ and $\widehat{\mathbb{Z}}=\mathbb{Z}\otimes\widehat{\mathbb{Z}}$ with subrings of $\widehat{\mathbb{Q}}=\mathbb{Q}\otimes\widehat{\mathbb{Z}}$. Note that, being commutative rings, $\mathbb{Q}$ and $\widehat{\mathbb{Z}}$ both contain a copy of $\mathbb{Z}$ as a subring, and the corresponding copies of $\mathbb{Z}$ in $\widehat{\mathbb{Q}}$ are equal; this is because $1\otimes a=a\otimes 1$ for all $a\in\mathbb{Z}$.

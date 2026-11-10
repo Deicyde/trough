@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Geometry.SimplicialComplex.space\_cone\_of\_space\_eq\_intrinsicFrontier
+# Geometry.SimplicialComplex.space_cone_of_space_eq_intrinsicFrontier
 
 Coning a triangulation of the intrinsic frontier of a compact convex set `C` to a point of the
 intrinsic interior of `C` triangulates `C`: every point of `C` is either the apex or lies on a

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZLattice.IsEven.qExpansion\_thetaSeries\_coeff
+# ZLattice.IsEven.qExpansion_thetaSeries_coeff
 
 The coefficients of the `q`-expansion of the theta series of an even lattice: the `m`-th
 coefficient in `q = exp (2 π i τ)` is the number `r_L(2m)` of vectors of half-norm `m`.

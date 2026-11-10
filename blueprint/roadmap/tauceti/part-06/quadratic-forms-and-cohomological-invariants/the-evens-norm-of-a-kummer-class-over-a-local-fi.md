@@ -39,7 +39,7 @@ TauCeti.galoisEvens_kummerClass_eq_hilbertSymbol_smul.{u} {K L : Type u} [Field 
 - [A Kummer cup over a local field is its Hilbert symbol times a fixed nonzero cup](a-kummer-cup-over-a-local-field-is-its-hilbert-s.md)
 - [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
 - [TauCeti.kummerIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-kummeriso.md)
-- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

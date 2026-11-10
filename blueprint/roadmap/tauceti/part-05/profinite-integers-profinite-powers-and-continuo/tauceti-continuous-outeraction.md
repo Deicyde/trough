@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.continuous\_outerAction
+# TauCeti.continuous_outerAction
 
 For compact `N`, the outer action `E ⧸ N → ContinuousOut N` is continuous for the quotient
 topologies.

@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/507
 ---
 
-# Topology.IsOpenEmbedding.isHaarMeasure\_comap
+# Topology.IsOpenEmbedding.isHaarMeasure_comap
 
 Let $A$ and $B$ be locally compact topological groups and let $f:A\to B$ be both a group homomorphism and open embedding. The pullback along $f$ of a Haar measure on $B$ is a Haar measure on $A$.
 

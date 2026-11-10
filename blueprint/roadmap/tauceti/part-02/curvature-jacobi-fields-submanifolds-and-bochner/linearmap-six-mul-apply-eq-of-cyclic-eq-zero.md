@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# LinearMap.six\_mul\_apply\_eq\_of\_cyclic\_eq\_zero
+# LinearMap.six_mul_apply_eq_of_cyclic_eq_zero
 
 The polarization identity for curvature-type tensors: for a quadrilinear form `T`
 antisymmetric in its first and in its last pair of arguments and satisfying the first Bianchi

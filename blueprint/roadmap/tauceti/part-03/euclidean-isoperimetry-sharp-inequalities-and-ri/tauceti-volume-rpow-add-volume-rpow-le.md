@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.volume\_rpow\_add\_volume\_rpow\_le
+# TauCeti.volume_rpow_add_volume_rpow_le
 
 **Brunn–Minkowski inequality** for nonempty Lebesgue-measurable sets
 in a positive-dimensional real inner product space. The sum has its outer volume and
@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.hasPrekopaLeindler\_volume](tauceti-hasprekopaleindler-volume.md)
+- [TauCeti.hasPrekopaLeindler_volume](tauceti-hasprekopaleindler-volume.md)
 
 ## Lean
 

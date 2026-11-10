@@ -32,7 +32,7 @@ Matrix.exists_linearIndependent_mulVec_eq_zero_prod_norm_le.{u_1} {ι : Type u_1
 
 - [The height of the kernel of an integer matrix](the-height-of-the-kernel-of-an-integer-matrix.md)
 - [Vaaler's cube-slicing theorem](vaalers-cube-slicing-theorem.md)
-- [ZLattice.prod\_successiveMin\_mul\_measure\_le\_two\_pow\_mul\_covolume](zlattice-prod-successivemin-mul-measure-le-two-p.md)
+- [ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume](zlattice-prod-successivemin-mul-measure-le-two-p.md)
 - [ZLattice.successiveMin](zlattice-successivemin.md)
 
 ## Lean

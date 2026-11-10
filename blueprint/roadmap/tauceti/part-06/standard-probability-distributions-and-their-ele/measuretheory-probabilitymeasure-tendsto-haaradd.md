@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.ProbabilityMeasure.tendsto\_haarAddCircle\_iff
+# MeasureTheory.ProbabilityMeasure.tendsto_haarAddCircle_iff
 
 Circle probability measures tend weakly to Haar probability exactly when every nonzero
 integer Fourier moment tends to zero.

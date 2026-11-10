@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.TopCat.normalSpace\_of\_isPushout
+# TauCeti.TopCat.normalSpace_of_isPushout
 
 Attaching a normal space `B` to a normal space `X` along a closed subspace of `B` gives a
 normal space: in a pushout square in `TopCat` whose side `m : A ⟶ B` is a closed embedding, the

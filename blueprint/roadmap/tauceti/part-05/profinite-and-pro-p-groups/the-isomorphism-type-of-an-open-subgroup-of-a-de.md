@@ -33,7 +33,7 @@ TauCeti.IsDemushkin.nonempty_continuousMulEquiv_openSubgroup_iff.{u, v} {p : ℕ
 
 - [Tate's theorem: an infinite Demushkin group has `p`-cohomological dimension exactly `2`](tates-theorem-an-infinite-demushkin-group-has-p.md)
 - [TauCeti.ContCohomology.dimensionShiftIso](../../part-02/continuous-cohomology-of-profinite-groups/tauceti-contcohomology-dimensionshiftiso.md)
-- [TauCeti.IsDemushkin.nonempty\_continuousMulEquiv\_iff](tauceti-isdemushkin-nonempty-continuousmulequiv.md)
+- [TauCeti.IsDemushkin.nonempty_continuousMulEquiv_iff](tauceti-isdemushkin-nonempty-continuousmulequiv.md)
 - [TauCeti.IsDemushkin.openSubgroup](tauceti-isdemushkin-opensubgroup.md)
 
 ## Lean

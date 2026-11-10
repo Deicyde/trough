@@ -2,12 +2,12 @@
 
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/MassFormula/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
-- [TauCeti.ncard\_isomorphic\_mul\_natCard\_algEquiv](tauceti-ncard-isomorphic-mul-natcard-algequiv.md)
-- [TauCeti.IsRepresentativeSet.tsum\_one\_div\_natCard\_algEquiv\_mul\_natCard\_residueField\_pow\_wildExponent\_eq\_one\_iff](tauceti-isrepresentativeset-tsum-one-div-natcard.md)
+- [TauCeti.ncard_isomorphic_mul_natCard_algEquiv](tauceti-ncard-isomorphic-mul-natcard-algequiv.md)
+- [TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueField_pow_wildExponent_eq_one_iff](tauceti-isrepresentativeset-tsum-one-div-natcard.md)
 - [The totally ramified quadratic extensions of `ℚ_2`](the-totally-ramified-quadratic-extensions-of-q-2.md)
 - [Serre's mass formula for the quadratic extensions of `ℚ_2`](serres-mass-formula-for-the-quadratic-extensions.md)
 - [Serre's mass formula for quadratic extensions in odd residue characteristic](serres-mass-formula-for-quadratic-extensions-in.md)
-- [Polynomial.exists\_isRoot\_addVal\_eval\_eq](polynomial-exists-isroot-addval-eval-eq.md)
+- [Polynomial.exists_isRoot_addVal_eval_eq](polynomial-exists-isroot-addval-eval-eq.md)
 - [Local constancy of the root count](local-constancy-of-the-root-count.md)
 - [The scaling law for Haar measure](the-scaling-law-for-haar-measure.md)
 - [Infinitely many totally ramified extensions in equal characteristic](infinitely-many-totally-ramified-extensions-in-e.md)
@@ -18,4 +18,4 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The volume of the Eisenstein region](the-volume-of-the-eisenstein-region.md)
 - [IntermediateField.rootCount](intermediatefield-rootcount.md)
 - [The root counts over `σ_K(n)` sum to `n`](the-root-counts-over-k-n-sum-to-n.md)
-- [Polynomial.card\_roots\_eq\_sum\_ite\_of\_addVal\_lt](polynomial-card-roots-eq-sum-ite-of-addval-lt.md)
+- [Polynomial.card_roots_eq_sum_ite_of_addVal_lt](polynomial-card-roots-eq-sum-ite-of-addval-lt.md)

@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/551
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_eq\_addEquivAddHaarChar\_of\_isOpenEmbedding
+# MeasureTheory.addEquivAddHaarChar_eq_addEquivAddHaarChar_of_isOpenEmbedding
 
 If $f:A\to B$ is a group homomorphism and open embedding between locally compact topological additive groups and if $\alpha:A\to A$ and $\beta:B\to B$ are additive homeomorphisms such that the square commutes (i.e., $f\circ\alpha=\beta\circ f$) then $d_A(\alpha)=d_B(\beta)$.
 
@@ -17,13 +17,13 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [Topology.IsOpenEmbedding.isHaarMeasure\_comap](topology-isopenembedding-ishaarmeasure-comap.md)
-- [Topology.IsOpenEmbedding.regular\_comap](topology-isopenembedding-regular-comap.md)
-- [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_comap](../initial-definitions/measuretheory-addequivaddhaarchar-smul-integral-2.md)
+- [Topology.IsOpenEmbedding.isHaarMeasure_comap](topology-isopenembedding-ishaarmeasure-comap.md)
+- [Topology.IsOpenEmbedding.regular_comap](topology-isopenembedding-regular-comap.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_integral_comap](../initial-definitions/measuretheory-addequivaddhaarchar-smul-integral-2.md)
 
 ## Proof
 
-Choose a regular Haar measure $\mu_B$ on $B$. We just saw in lemmas [Topology.IsOpenEmbedding.isHaarMeasure\_comap](topology-isopenembedding-ishaarmeasure-comap.md) and [Topology.IsOpenEmbedding.regular\_comap](topology-isopenembedding-regular-comap.md) that its pullback $\mu_A:=f^*\mu_B$ to $A$ is also a regular Haar measure. Now fix a continuous compactly-supported function $g$ on $A$ with $0\lt \int g(a)d\mu(a)\lt \infty$. Then $d_A(\alpha)\int g(a)d\mu_A(a)=\int g(a)d(\alpha^*\mu_A)(a)$ by lemma [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_comap](../initial-definitions/measuretheory-addequivaddhaarchar-smul-integral-2.md). This equals $\int g(a)d(\alpha^* f^*\mu_B)(a)$ by definition, which is $\int g(a)d(f^*\beta^*\mu_B)(a)$ because pullback of pullback is pullback. This equals $d_B(\beta)\int g(a) d(f^*\mu_B)(a)$ by corollary [MeasureTheory.addEquivAddHaarChar\_comap](../initial-definitions/measuretheory-addequivaddhaarchar-comap.md) which is $d_B(\beta)\int g(a)d\mu_A(a)$ by definition, and so $d_A(\alpha)=d_B(\beta)$ as required.
+Choose a regular Haar measure $\mu_B$ on $B$. We just saw in lemmas [Topology.IsOpenEmbedding.isHaarMeasure_comap](topology-isopenembedding-ishaarmeasure-comap.md) and [Topology.IsOpenEmbedding.regular_comap](topology-isopenembedding-regular-comap.md) that its pullback $\mu_A:=f^*\mu_B$ to $A$ is also a regular Haar measure. Now fix a continuous compactly-supported function $g$ on $A$ with $0\lt \int g(a)d\mu(a)\lt \infty$. Then $d_A(\alpha)\int g(a)d\mu_A(a)=\int g(a)d(\alpha^*\mu_A)(a)$ by lemma [MeasureTheory.addEquivAddHaarChar_smul_integral_comap](../initial-definitions/measuretheory-addequivaddhaarchar-smul-integral-2.md). This equals $\int g(a)d(\alpha^* f^*\mu_B)(a)$ by definition, which is $\int g(a)d(f^*\beta^*\mu_B)(a)$ because pullback of pullback is pullback. This equals $d_B(\beta)\int g(a) d(f^*\mu_B)(a)$ by corollary [MeasureTheory.addEquivAddHaarChar_comap](../initial-definitions/measuretheory-addequivaddhaarchar-comap.md) which is $d_B(\beta)\int g(a)d\mu_A(a)$ by definition, and so $d_A(\alpha)=d_B(\beta)$ as required.
 
 ## Lean
 

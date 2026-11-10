@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsDemushkin.nonempty\_continuousMulEquiv\_iff
+# TauCeti.IsDemushkin.nonempty_continuousMulEquiv_iff
 
 **The classification of Demushkin groups** (Labute): two Demushkin groups are topologically
 isomorphic if and only if they have the same rank and their canonical characters have the same

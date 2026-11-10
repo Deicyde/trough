@@ -6,17 +6,17 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_smul\_integral\_comap
+# MeasureTheory.addEquivAddHaarChar_smul_integral_comap
 
 If $f:A\to\mathbb{R}$ is a Borel measurable function then $d_A(\phi)\int f(x)d\mu(x)=\int f(x)d\phi^*\mu(x)$.
 
 ## Depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_comap](measuretheory-addequivaddhaarchar-comap.md)
+- [MeasureTheory.addEquivAddHaarChar_comap](measuretheory-addequivaddhaarchar-comap.md)
 
 ## Proof
 
-This is immediate from corollary [MeasureTheory.addEquivAddHaarChar\_comap](measuretheory-addequivaddhaarchar-comap.md).
+This is immediate from corollary [MeasureTheory.addEquivAddHaarChar_comap](measuretheory-addequivaddhaarchar-comap.md).
 
 ## Lean
 

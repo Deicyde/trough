@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# AddCircle.fundamentalGroupMulEquiv\_eq\_windingNumberIso
+# AddCircle.fundamentalGroupMulEquiv_eq_windingNumberIso
 
 For positive periods, the chosen-lift equivalence agrees with Mathlib's winding-number
 isomorphism. In particular it is independent of the chosen lift and has the same orientation.

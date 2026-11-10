@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isObjectwiseCongruenceInvariant\_iff\_of\_equivalence
+# TauCeti.isObjectwiseCongruenceInvariant_iff_of_equivalence
 
 Objectwise congruence invariance is independent of an equivariant presentation of
 the category. Only the forward functor of the equivalence needs a specified lineator.

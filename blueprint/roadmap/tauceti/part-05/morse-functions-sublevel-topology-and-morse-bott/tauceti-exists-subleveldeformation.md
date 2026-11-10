@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_sublevelDeformation
+# TauCeti.exists_sublevelDeformation
 
 **Deformation of sublevels across a band without critical points** (Milnor, Theorem 3.1). If
 `f` is smooth, `a ≤ b`, and the band `f⁻¹[a, b]` is compact and contains no critical point of `f`,

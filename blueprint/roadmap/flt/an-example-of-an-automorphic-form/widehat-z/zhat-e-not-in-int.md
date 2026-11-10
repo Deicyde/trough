@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZHat.e\_not\_in\_Int
+# ZHat.e_not_in_Int
 
 The element $(e_N)_N$ of $\widehat{\mathbb{Z}}$ is not in $\mathbb{Z}$.
 

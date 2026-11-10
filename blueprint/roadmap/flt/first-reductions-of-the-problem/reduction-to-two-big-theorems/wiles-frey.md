@@ -19,7 +19,7 @@ This is the main content of Wiles' magnum opus. We omit the argument for now, al
 
 ## Lean
 
-Formalized as [`FLT.Bosses.B4_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B4_proof).
+Stated as [`FLT.Bosses.B4_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B4_proof); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

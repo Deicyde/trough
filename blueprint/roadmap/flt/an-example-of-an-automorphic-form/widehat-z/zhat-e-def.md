@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZHat.e\_def
+# ZHat.e_def
 
 The collection $(e_N)_N$ is an element of $\widehat{\mathbb{Z}}$.
 

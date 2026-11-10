@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.BinaryGolay.weightEnumerator\_code
+# TauCeti.BinaryGolay.weightEnumerator_code
 
 The homogeneous weight enumerator is
 `X²⁴ + 759 X¹⁶Y⁸ + 2576 X¹²Y¹² + 759 X⁸Y¹⁶ + Y²⁴`.

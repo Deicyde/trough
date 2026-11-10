@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.selfStabilizationOrdinal\_eq\_iSup\_orbitRank
+# TauCeti.selfStabilizationOrdinal_eq_iSup_orbitRank
 
 The least simultaneous stabilization level is the supremum of the orbit ranks
 of all finite tuples. This holds for arbitrary structures.

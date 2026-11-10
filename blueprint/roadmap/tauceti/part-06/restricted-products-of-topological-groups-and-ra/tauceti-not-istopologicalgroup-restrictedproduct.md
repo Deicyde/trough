@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.not\_isTopologicalGroup\_restrictedProduct\_rat\_bot
+# TauCeti.not_isTopologicalGroup_restrictedProduct_rat_bot
 
 The restricted product `Πʳ n : ℕ, [Multiplicative ℚ, ⊥]` is not a topological group: the
 hypothesis `Fact (∀ i, IsOpen (A i))` of Mathlib's `RestrictedProduct.isTopologicalGroup` cannot be

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.UqSl2.isLocallyFiniteModule\_iff\_exists\_linearEquiv\_dfinsupp\_ladderModule
+# TauCeti.UqSl2.isLocallyFiniteModule_iff_exists_linearEquiv_dfinsupp_ladderModule
 
 At a generic parameter, a `UqSl2 q`-module is locally finite exactly when it is isomorphic to a
 direct sum of signed ladder modules `L_m^ε`.

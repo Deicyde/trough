@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/510
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map
+# MeasureTheory.addEquivAddHaarChar_smul_integral_map
 
 If $f:A\to\mathbb{R}$ is a Borel measurable function then $d_A(\phi)\int f(x)d\phi_*\mu(x)=\int f(x)d\mu(x)$.
 
@@ -17,11 +17,11 @@ If $f:A\to\mathbb{R}$ is a Borel measurable function then $d_A(\phi)\int f(x)d\p
 
 ## Proof depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_map](measuretheory-addequivaddhaarchar-smul-map.md)
 
 ## Proof
 
-This also follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md).
+This also follows immediately from lemma [MeasureTheory.addEquivAddHaarChar_smul_map](measuretheory-addequivaddhaarchar-smul-map.md).
 
 ## Lean
 

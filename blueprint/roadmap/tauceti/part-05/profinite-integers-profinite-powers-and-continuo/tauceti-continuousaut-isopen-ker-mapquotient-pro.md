@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.ContinuousAut.isOpen\_ker\_mapQuotient\_proPFrattini
+# TauCeti.ContinuousAut.isOpen_ker_mapQuotient_proPFrattini
 
 For a topologically finitely generated compact group, the continuous automorphisms acting
 trivially on the pro-`p` Frattini quotient form an open subgroup for the congruence topology: the

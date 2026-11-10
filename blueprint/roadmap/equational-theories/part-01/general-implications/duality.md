@@ -19,7 +19,7 @@ This follows from the fact that a magma $G$ satisfies a law $w \simeq w'$ if and
 
 ## Lean
 
-Formalized as [`Law.MagmaLaw.implies_iff_dual`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.implies_iff_dual).
+Stated as [`Law.MagmaLaw.implies_iff_dual`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.MagmaLaw.implies_iff_dual); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

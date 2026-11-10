@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.ClassFieldTheory.exists\_abelianLayer\_globalNormSubgroup\_eq\_of\_pow\_mem
+# TauCeti.ClassFieldTheory.exists_abelianLayer_globalNormSubgroup_eq_of_pow_mem
 
 **The Kummer case of global existence** (Milne VII, Lemma 9.3). Let `K` be a number field
 containing the `p`-th roots of unity for a prime `p`. Every open subgroup of the idele class group

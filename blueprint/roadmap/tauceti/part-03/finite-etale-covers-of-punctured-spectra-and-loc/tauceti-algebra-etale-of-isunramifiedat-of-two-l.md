@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Algebra.etale\_of\_isUnramifiedAt\_of\_two\_le\_ringKrullDim
+# TauCeti.Algebra.etale_of_isUnramifiedAt_of_two_le_ringKrullDim
 
 A finite flat algebra over a Noetherian local ring of dimension at least two is étale
 everywhere if it is unramified at each prime not lying over the closed point. This is the finite
@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.Algebra.etale\_iff\_etale\_fiber\_of\_height\_le\_one](tauceti-algebra-etale-iff-etale-fiber-of-height.md)
+- [TauCeti.Algebra.etale_iff_etale_fiber_of_height_le_one](tauceti-algebra-etale-iff-etale-fiber-of-height.md)
 
 ## Lean
 

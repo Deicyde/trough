@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.F4ShortRoot.PrimeField.specialIsogeny\_specialIsogeny
+# TauCeti.F4ShortRoot.PrimeField.specialIsogeny_specialIsogeny
 
 Squaring the special endomorphism gives the prime-field Frobenius on all carrier points.
 

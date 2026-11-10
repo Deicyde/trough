@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.holomorphicStructureSheaf.isFractionRing\_meromorphicGerms
+# TauCeti.holomorphicStructureSheaf.isFractionRing_meromorphicGerms
 
 The field of meromorphic germs at `a : ℂ` is the fraction field of the ring of holomorphic
 germs at `a`.

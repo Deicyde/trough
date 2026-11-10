@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsDemushkin.dualityMap1\_zModTwist\_bijective
+# TauCeti.IsDemushkin.dualityMap1_zModTwist_bijective
 
 **Tate's duality map `α₁` of an infinite Demushkin group with coefficients `I(χ)/pⁱ` is
 bijective** on every finite discrete `G`-module `M` killed by `pⁱ`:

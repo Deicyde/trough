@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Amenable.of\_directed\_of\_iSup\_eq\_top
+# TauCeti.Amenable.of_directed_of_iSup_eq_top
 
 A topological group which is the union of a nonempty directed family of amenable subgroups is
 amenable.
@@ -24,7 +24,7 @@ TauCeti.Amenable.of_directed_of_iSup_eq_top.{u_1, u_2} {G : Type u_1} [Group G] 
 
 ## Proof depends on
 
-- [TauCeti.amenable\_iff\_forall\_finset\_exists](tauceti-amenable-iff-forall-finset-exists.md)
+- [TauCeti.amenable_iff_forall_finset_exists](tauceti-amenable-iff-forall-finset-exists.md)
 - [TauCeti.UCB.leftTranslation](tauceti-ucb-lefttranslation.md)
 
 ## Lean

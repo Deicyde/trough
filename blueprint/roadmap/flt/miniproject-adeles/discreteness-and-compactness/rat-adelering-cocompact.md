@@ -19,7 +19,7 @@ The space $\prod_p\mathbb{Z}_p\times[0,1]\subseteq\mathbb{A}_{\mathbb{Q}}$ is a 
 
 ## Lean
 
-Formalized as [`Rat.AdeleRing.cocompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Rat.AdeleRing.cocompact).
+Stated as [`Rat.AdeleRing.cocompact`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/Rat.AdeleRing.cocompact); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

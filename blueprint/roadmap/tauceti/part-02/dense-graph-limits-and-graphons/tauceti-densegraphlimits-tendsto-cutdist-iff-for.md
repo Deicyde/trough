@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.DenseGraphLimits.tendsto\_cutDist\_iff\_forall\_homDensity\_tendsto
+# TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto
 
 **Cut-distance convergence is convergence of all homomorphism densities**, for graphons on
 arbitrary, possibly different, probability carriers, indexed by any type and taken along any
@@ -34,7 +34,7 @@ TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto.{u_1, u_3
 ## Proof depends on
 
 - [Frieze--Kannan weak regularity](frieze-kannan-weak-regularity.md)
-- [TauCeti.DenseGraphLimits.cutDist\_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
+- [TauCeti.DenseGraphLimits.cutDist_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
 - [TauCeti.DenseGraphLimits.Graphon.unitIntervalRepr](tauceti-densegraphlimits-graphon-unitintervalrep.md)
 
 ## Lean

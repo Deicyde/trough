@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.continuous\_continuousConnesB
+# TauCeti.continuous_continuousConnesB
 
 Connes' operator is continuous for bounded convergence of cochains.
 

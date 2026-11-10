@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Polynomial.card\_roots\_eq\_sum\_ite\_of\_addVal\_lt
+# Polynomial.card_roots_eq_sum_ite_of_addVal_lt
 
 Count roots by a finite disjoint family of balls covering them. If the derivative order at
 each root is smaller than the ball order, each occupied ball contributes exactly one root.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsSimpleRing.ringHaarChar\_eq\_addEquivAddHaarChar\_mulRight
+# IsSimpleRing.ringHaarChar_eq_addEquivAddHaarChar_mulRight
 
 If $B$ is a central simple algebra over a locally compact field $F$, and if $u\in B^\times$, then $d_B(r_u)=\delta_B(u)$ (recall that the latter is defined to mean $d_B(\ell_u)$).
 
@@ -16,11 +16,11 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [IsSimpleRing.mulLeft\_det\_eq\_mulRight\_det](issimplering-mulleft-det-eq-mulright-det.md)
+- [IsSimpleRing.mulLeft_det_eq_mulRight_det](issimplering-mulleft-det-eq-mulright-det.md)
 
 ## Proof
 
-If $\ell_u$ and $r_u$ denote left and right multiplication by $u$ on $B$, then we have seen in lemma MeasureTheory.addEquivAddHaarChar\_eq\_ringHaarChar\_det that $d_B(r_u)=\delta_F(\det(r_u))$. Lemma [IsSimpleRing.mulLeft\_det\_eq\_mulRight\_det](issimplering-mulleft-det-eq-mulright-det.md) tells us that this is $\delta_F(\det(\ell_u))$ and this is $\delta_B(u)$ again by corollary MeasureTheory.addEquivAddHaarChar\_eq\_ringHaarChar\_det.
+If $\ell_u$ and $r_u$ denote left and right multiplication by $u$ on $B$, then we have seen in lemma MeasureTheory.addEquivAddHaarChar_eq_ringHaarChar_det that $d_B(r_u)=\delta_F(\det(r_u))$. Lemma [IsSimpleRing.mulLeft_det_eq_mulRight_det](issimplering-mulleft-det-eq-mulright-det.md) tells us that this is $\delta_F(\det(\ell_u))$ and this is $\delta_B(u)$ again by corollary MeasureTheory.addEquivAddHaarChar_eq_ringHaarChar_det.
 
 ## Lean
 

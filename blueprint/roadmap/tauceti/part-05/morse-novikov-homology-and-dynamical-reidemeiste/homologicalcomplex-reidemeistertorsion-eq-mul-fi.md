@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# HomologicalComplex.reidemeisterTorsion\_eq\_mul\_finprod\_det
+# HomologicalComplex.reidemeisterTorsion_eq_mul_finprod_det
 
 The basis-change formula for the torsion: replacing the bases `c i` of `C` by `c' i`
 multiplies the torsion by `∏ᵢ [c'ᵢ / cᵢ] ^ ((-1) ^ i)`, where `[c'ᵢ / cᵢ]` is the determinant of

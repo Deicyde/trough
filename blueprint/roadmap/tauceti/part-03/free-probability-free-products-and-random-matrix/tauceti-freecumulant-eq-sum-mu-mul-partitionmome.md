@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.freeCumulant\_eq\_sum\_mu\_mul\_partitionMoment
+# TauCeti.freeCumulant_eq_sum_mu_mul_partitionMoment
 
 The free cumulant of a word is the sum over the noncrossing partitions `π` of its block
 moments weighted by the Möbius function, `κ_s(a) = ∑_{π ∈ NC(s)} μ(π, 1_s) φ_π(a)`.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Probability.renewalCount\_eq\_natCast\_iff
+# TauCeti.Probability.renewalCount_eq_natCast_iff
 
 The count at time `t` equals `n` exactly when `arrival T n ω ≤ t < arrival T (n + 1) ω`.
 

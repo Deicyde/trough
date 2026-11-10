@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Peripheral.not\_exists\_peripheral\_identity\_two
+# TauCeti.Peripheral.not_exists_peripheral_identity_two
 
 At exponent `2`, no normalized peripheral product in a rank-two free pro-`2` group is
 trivial even modulo the second closed lower-central-series term.

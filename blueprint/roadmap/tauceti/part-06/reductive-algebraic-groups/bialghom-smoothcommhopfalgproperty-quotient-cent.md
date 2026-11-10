@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# BialgHom.smoothCommHopfAlgProperty\_quotient\_centralizerHopfIdeal
+# BialgHom.smoothCommHopfAlgProperty_quotient_centralizerHopfIdeal
 
 **The centralizer of a diagonalizable subgroup of a smooth affine group of finite type is
 smooth**, over any base ring.

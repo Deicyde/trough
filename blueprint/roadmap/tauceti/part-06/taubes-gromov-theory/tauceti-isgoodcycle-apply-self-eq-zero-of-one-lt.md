@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsGoodCycle.apply\_self\_eq\_zero\_of\_one\_lt\_mult
+# TauCeti.IsGoodCycle.apply_self_eq_zero_of_one_lt_mult
 
 An image occurring with multiplicity at least two has square zero.
 

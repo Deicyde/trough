@@ -62,7 +62,7 @@ $$
 c > \frac{1-2^{-\epsilon}}\epsilon
 $$
 
-by Lemma Smooth1Properties\_estimate, so
+by Lemma Smooth1Properties_estimate, so
 
 $$
 1-c\epsilon < 2^{-\epsilon}.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Peripheral.forall\_mem\_level\_iff
+# TauCeti.Peripheral.forall_mem_level_iff
 
 A pair of conjugators lies in every peripheral level exactly when its defect is trivial: in
 a pro-`p` group the terms of the closed lower central series have trivial intersection.

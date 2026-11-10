@@ -29,7 +29,7 @@ so $b \to c \to d$ is good.
 
 ## Lean
 
-Formalized as [`WeakCentralGroupoid.isGood_five`](https://teorth.github.io/equational_theories/docs/find/#doc/WeakCentralGroupoid.isGood_five).
+Stated as [`WeakCentralGroupoid.isGood_five`](https://teorth.github.io/equational_theories/docs/find/#doc/WeakCentralGroupoid.isGood_five); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

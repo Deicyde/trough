@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.amenable\_iff\_forall\_finset\_exists
+# TauCeti.amenable_iff_forall_finset_exists
 
 Finite-intersection criterion: a topological group is amenable exactly when every finite
 family of invariance equations `m (L_g f) = m f` is satisfied by some mean.

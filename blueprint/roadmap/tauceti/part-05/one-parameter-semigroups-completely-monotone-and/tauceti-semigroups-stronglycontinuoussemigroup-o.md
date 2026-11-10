@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Semigroups.StronglyContinuousSemigroup.ofBounded\_resolvent\_eq\_inv\_smul\_tsum\_pow
+# TauCeti.Semigroups.StronglyContinuousSemigroup.ofBounded_resolvent_eq_inv_smul_tsum_pow
 
 For `λ > ‖A‖`, the Laplace-transform resolvent of `t ↦ exp (tA)` is the Neumann series
 `λ⁻¹ ∑' n, (λ⁻¹ A)ⁿ`.

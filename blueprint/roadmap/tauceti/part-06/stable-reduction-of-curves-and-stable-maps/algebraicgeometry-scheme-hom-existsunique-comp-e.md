@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# AlgebraicGeometry.Scheme.Hom.existsUnique\_comp\_eq\_of\_universallyClosed
+# AlgebraicGeometry.Scheme.Hom.existsUnique_comp_eq_of_universallyClosed
 
 **The universal property of a contraction**, for a universally closed surjective morphism,
 such as a proper surjective one, for which `𝒪_Y → c_* 𝒪_X` is an isomorphism.

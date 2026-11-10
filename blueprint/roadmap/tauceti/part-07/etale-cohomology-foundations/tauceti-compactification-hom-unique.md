@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Compactification.hom\_unique
+# TauCeti.Compactification.hom_unique
 
 Maps from a compactification with schematically dense interior to any fixed
 compactification are unique. No density assumption on the target is needed.

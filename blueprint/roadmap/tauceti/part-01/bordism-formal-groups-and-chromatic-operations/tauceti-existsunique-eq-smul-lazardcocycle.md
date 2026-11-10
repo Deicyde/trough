@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.existsUnique\_eq\_smul\_lazardCocycle
+# TauCeti.existsUnique_eq_smul_lazardCocycle
 
 **The symmetric 2-cocycle lemma**, with uniqueness: for `n ≥ 2`, a homogeneous symmetric
 additive 2-cocycle of degree `n` over any commutative ring is `r • C_n` for a unique `r`.

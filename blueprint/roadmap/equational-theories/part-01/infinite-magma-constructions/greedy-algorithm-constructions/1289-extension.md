@@ -27,7 +27,7 @@ We now work by cases on the values of the variables $x,y$ appearing in law 1:
 
 ## Lean
 
-Formalized as [`Eq1289.Greedy.lift`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1289.Greedy.lift).
+Stated as [`Eq1289.Greedy.lift`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq1289.Greedy.lift); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

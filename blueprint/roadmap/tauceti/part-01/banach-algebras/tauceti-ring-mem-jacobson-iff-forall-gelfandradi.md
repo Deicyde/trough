@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Ring.mem\_jacobson\_iff\_forall\_gelfandRadius\_mul\_eq\_zero
+# TauCeti.Ring.mem_jacobson_iff_forall_gelfandRadius_mul_eq_zero
 
 An element of a complex Banach algebra lies in its Jacobson radical exactly when every
 left multiple `b * a` is quasinilpotent, that is, `‖(b * a) ^ n‖ ^ (1 / n)` tends to zero.

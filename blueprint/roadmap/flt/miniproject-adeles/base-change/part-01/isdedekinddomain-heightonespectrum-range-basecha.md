@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsDedekindDomain.HeightOneSpectrum.range\_baseChange\_comp\_tensorAdicCompletionTo\_eq\_pi
+# IsDedekindDomain.HeightOneSpectrum.range_baseChange_comp_tensorAdicCompletionTo_eq_pi
 
 The isomorphism $L\otimes_KK_v\to\prod_{w|v}L_w$ induces an isomorphism $B\otimes_AA_v\to \prod_{w|v}B_w$ for all $v$ in the height one spectrum of $A$.
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Green.green\_ac\_winding
+# TauCeti.Green.green_ac_winding
 
 Green's theorem for a closed absolutely continuous curve with index vanishing outside
 the open field domain. The winding numbers may be unbounded and the curve may intersect itself.

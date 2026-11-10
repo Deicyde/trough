@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.LieAlgebra.exists\_eq\_smul\_killingForm
+# TauCeti.LieAlgebra.exists_eq_smul_killingForm
 
 **Every invariant bilinear form on a Lie algebra is a multiple of the Killing form**, for a
 finite-dimensional Lie algebra over an algebraically closed field whose adjoint module is

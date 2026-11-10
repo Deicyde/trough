@@ -19,7 +19,7 @@ This follows from a profound and long result of Mazur ([Mazur 1977](http://www.n
 
 ## Lean
 
-Formalized as [`FreyPackage.mazur`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyPackage.mazur).
+Stated as [`FreyPackage.mazur`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FreyPackage.mazur); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

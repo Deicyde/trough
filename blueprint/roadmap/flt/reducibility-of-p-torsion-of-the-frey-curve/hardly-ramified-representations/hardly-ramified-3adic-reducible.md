@@ -5,14 +5,14 @@ lean: GaloisRepresentation.IsHardlyRamified.three_adic
 statement: formalized
 ---
 
-# hardly\_ramified\_3adic\_reducible
+# hardly_ramified_3adic_reducible
 
 Suppose $L/\mathbb{Q}_3$ is a finite extension, with integer ring $\mathcal{O}_L$, and suppose $\rho_3:\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to\operatorname{GL}_2(\mathcal{O}_L)$ is hardly ramified. Then (considered as a representation to $\operatorname{GL}_2(L)$) $\rho_3^{ss}=1\oplus\chi_3$ where $1$ is the trivial character and $\chi_3$ is the 3-adic cyclotomic character.
 
 ## Depends on
 
-- [hardly\_ramified](hardly-ramified.md)
-- [hardly\_ramified\_mod3\_reducible](hardly-ramified-mod3-reducible.md)
+- [hardly_ramified](hardly-ramified.md)
+- [hardly_ramified_mod3_reducible](hardly-ramified-mod3-reducible.md)
 
 ## Proof
 
@@ -20,7 +20,7 @@ Omitted for now **TODO**
 
 ## Lean
 
-Formalized as [`GaloisRepresentation.IsHardlyRamified.three_adic`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.three_adic).
+Stated as [`GaloisRepresentation.IsHardlyRamified.three_adic`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.three_adic); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

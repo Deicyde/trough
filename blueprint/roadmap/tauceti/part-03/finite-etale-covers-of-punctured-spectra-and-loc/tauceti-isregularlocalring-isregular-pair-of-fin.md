@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsRegularLocalRing.isRegular\_pair\_of\_finite\_normal
+# TauCeti.IsRegularLocalRing.isRegular_pair_of_finite_normal
 
 Over a two-dimensional regular local ring, every pair generating the maximal ideal is
 regular on any finite injective normal local algebra, considered as a module over the base.

@@ -20,7 +20,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.simplyConnectedSpace\_sphere](tauceti-simplyconnectedspace-sphere.md)
+- [TauCeti.simplyConnectedSpace_sphere](tauceti-simplyconnectedspace-sphere.md)
 
 ## Lean
 

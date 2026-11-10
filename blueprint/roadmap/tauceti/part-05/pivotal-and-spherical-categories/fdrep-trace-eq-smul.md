@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# FDRep.trace\_eq\_smul
+# FDRep.trace_eq_smul
 
 The categorical trace of an equivariant endomorphism of a finite-dimensional representation
 is its linear trace, acting on the trivial representation by scalar multiplication.

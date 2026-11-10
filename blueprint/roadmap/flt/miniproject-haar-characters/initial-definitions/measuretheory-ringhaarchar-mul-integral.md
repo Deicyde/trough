@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/514
 ---
 
-# MeasureTheory.ringHaarChar\_mul\_integral
+# MeasureTheory.ringHaarChar_mul_integral
 
 If $f:R\to\mathbb{R}$ is a Borel measurable function and $u\in R^\times$ then $\delta_R(u)\int f(ux)d\mu(x)=\int f(x)d\mu(x)$.
 
@@ -17,11 +17,11 @@ If $f:R\to\mathbb{R}$ is a Borel measurable function and $u\in R^\times$ then $\
 
 ## Proof depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map](measuretheory-addequivaddhaarchar-smul-integral.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_integral_map](measuretheory-addequivaddhaarchar-smul-integral.md)
 
 ## Proof
 
-A short calculation using lemma [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map](measuretheory-addequivaddhaarchar-smul-integral.md).
+A short calculation using lemma [MeasureTheory.addEquivAddHaarChar_smul_integral_map](measuretheory-addequivaddhaarchar-smul-integral.md).
 
 ## Lean
 

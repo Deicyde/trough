@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# RootPairing.demazureOperator\_demazureOperator
+# RootPairing.demazureOperator_demazureOperator
 
 **The Demazure operator is idempotent**, `Dᵢ² = Dᵢ`.
 
@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [RootPairing.one\_sub\_single\_neg\_root\_mul\_demazureOperator](rootpairing-one-sub-single-neg-root-mul-demazure.md)
+- [RootPairing.one_sub_single_neg_root_mul_demazureOperator](rootpairing-one-sub-single-neg-root-mul-demazure.md)
 
 ## Lean
 

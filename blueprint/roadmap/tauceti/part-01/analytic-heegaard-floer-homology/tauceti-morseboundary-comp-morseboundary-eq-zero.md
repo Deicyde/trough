@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.morseBoundary\_comp\_morseBoundary\_eq\_zero\_iff
+# TauCeti.morseBoundary_comp_morseBoundary_eq_zero_iff
 
 The mod-two Morse boundary squares to zero exactly when, between any two critical points,
 the number of broken index-two trajectories is even.

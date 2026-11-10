@@ -20,7 +20,7 @@ The adeles of a number field are a product of the finite adeles and the infinite
 
 ## Lean
 
-Formalized as [`NumberField.AdeleRing.locallyCompactSpace`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.locallyCompactSpace).
+Stated as [`NumberField.AdeleRing.locallyCompactSpace`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.locallyCompactSpace); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

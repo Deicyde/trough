@@ -1,8 +1,7 @@
 # Trough
 
-Maps of Lean formalization libraries. Each library is a chapter of the
-roadmap: Mathlib, mapped from its four curated lists, and the research projects
-mapped from their leanblueprints.
+Maps of Lean formalization libraries: what each one formalizes and how its
+results depend on one another, not what the library may add.
 
 - [Roadmap](roadmap/README.md): the chapters, their articles and their
   dependencies.

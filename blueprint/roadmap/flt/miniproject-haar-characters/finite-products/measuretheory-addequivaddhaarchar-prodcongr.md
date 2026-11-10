@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/520
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_prodCongr
+# MeasureTheory.addEquivAddHaarChar_prodCongr
 
 If $(A,+)$ and $(B,+)$ are locally compact topological abelian groups, and if $\phi:A\to A$ and $\psi:B\to B$ are additive homeomorphisms, then $\phi\times\psi:A\times B\to A\times B$ is an additive homeomorphism (this is obvious), and $d_{A\times B}(\phi\times\psi)=d_A(\phi)d_B(\psi)$.
 

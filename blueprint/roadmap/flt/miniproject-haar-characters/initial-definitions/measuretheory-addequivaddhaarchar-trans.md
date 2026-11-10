@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/511
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_trans
+# MeasureTheory.addEquivAddHaarChar_trans
 
 $d_A(\phi\circ\psi)=d_A(\phi)d_A(\psi).$
 
@@ -17,11 +17,11 @@ $d_A(\phi\circ\psi)=d_A(\phi)d_A(\psi).$
 
 ## Proof depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md)
 
 ## Proof
 
-Here's one way: it suffices to prove that $d_A(\phi\circ\psi)(\phi\circ\psi)_*\mu=d_A(\phi)d_A(\psi)(\phi\circ\psi)_*\mu$ (because there exists a compact set with positive finite measure) and using lemma [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md) and the fact that $(\phi\circ\psi)_*\mu=\phi_*(\psi_*\mu)$ one can simplify both sides to $\mu$.
+Here's one way: it suffices to prove that $d_A(\phi\circ\psi)(\phi\circ\psi)_*\mu=d_A(\phi)d_A(\psi)(\phi\circ\psi)_*\mu$ (because there exists a compact set with positive finite measure) and using lemma [MeasureTheory.addEquivAddHaarChar_smul_map](measuretheory-addequivaddhaarchar-smul-map.md) and the fact that $(\phi\circ\psi)_*\mu=\phi_*(\psi_*\mu)$ one can simplify both sides to $\mu$.
 
 ## Lean
 

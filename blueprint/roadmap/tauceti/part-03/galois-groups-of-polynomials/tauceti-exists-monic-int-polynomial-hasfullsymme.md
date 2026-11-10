@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_monic\_int\_polynomial\_hasFullSymmetricGaloisGroup
+# TauCeti.exists_monic_int_polynomial_hasFullSymmetricGaloisGroup
 
 Every positive degree occurs for a monic integral polynomial irreducible over `ℚ`
 with full symmetric Galois group.

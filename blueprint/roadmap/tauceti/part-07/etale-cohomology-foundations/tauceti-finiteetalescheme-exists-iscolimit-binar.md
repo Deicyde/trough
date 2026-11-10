@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.FiniteEtaleScheme.exists\_isColimit\_binaryCofanMk\_of\_mono
+# TauCeti.FiniteEtaleScheme.exists_isColimit_binaryCofanMk_of_mono
 
 Every monomorphism `i : X ⟶ Y` of finite étale schemes over `S` is the inclusion of a direct
 summand: there is a finite étale `Z` over `S` with a morphism `u : Z ⟶ Y` exhibiting `Y` as the

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Floer.add\_sub\_add\_two\_mul\_chern\_productClass\_eq
+# TauCeti.Floer.add_sub_add_two_mul_chern_productClass_eq
 
 Cap independence of the index `μ₁(D₁) + μ₂(D₂) − μ₀(D₀) + 2 c₁(A)` of a product coefficient,
 for gradings `mᵢ` obeying the recapping law for twice the first Chern number. The Fredholm index

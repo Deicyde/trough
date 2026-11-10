@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Algebra.etale\_iff\_etale\_fiber\_of\_height\_le\_one
+# TauCeti.Algebra.etale_iff_etale_fiber_of_height_le_one
 
 A finite free algebra over a Noetherian ring is étale if and only if its fibres over all
 primes of height at most one are étale. Minimal primes must be included; no generic étaleness
@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [The discriminant criterion](the-discriminant-criterion.md)
-- [TauCeti.Algebra.etale\_iff\_traceForm\_nondegenerate](tauceti-algebra-etale-iff-traceform-nondegenerat.md)
+- [TauCeti.Algebra.etale_iff_traceForm_nondegenerate](tauceti-algebra-etale-iff-traceform-nondegenerat.md)
 
 ## Lean
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Bundle.ContMDiffRiemannianMetric.concordant\_iff\_exists\_isCollaredConcordance
+# Bundle.ContMDiffRiemannianMetric.concordant_iff_exists_isCollaredConcordance
 
 Two metrics are concordant exactly when there is a collared concordance from one to the
 other.
@@ -26,7 +26,7 @@ Bundle.ContMDiffRiemannianMetric.concordant_iff_exists_isCollaredConcordance.{u_
 
 ## Proof depends on
 
-- [Bundle.ContMDiffRiemannianMetric.scalarCurvature\_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
+- [Bundle.ContMDiffRiemannianMetric.scalarCurvature_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
 
 ## Lean
 

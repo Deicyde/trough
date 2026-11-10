@@ -5,7 +5,7 @@ mathlib: true
 mathlib_declaration: MulSemiringAction.monic_charpoly
 ---
 
-# MulSemiringAction.monic\_charpoly
+# MulSemiringAction.monic_charpoly
 
 $F_b$ is monic.
 

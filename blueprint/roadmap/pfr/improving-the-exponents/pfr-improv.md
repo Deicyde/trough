@@ -16,11 +16,11 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [pfr\_aux-improv](pfr-aux-improv.md)
+- [pfr_aux-improv](pfr-aux-improv.md)
 
 ## Proof
 
-By repeating the proof of [PFR](../proof-of-pfr/pfr.md) and using [Lemma pfr\_aux-improv](pfr-aux-improv.md) one obtains $2K^{11}$ in place of $2K^{12}$.
+By repeating the proof of [PFR](../proof-of-pfr/pfr.md) and using [Lemma pfr_aux-improv](pfr-aux-improv.md) one obtains $2K^{11}$ in place of $2K^{12}$.
 
 ## Lean
 

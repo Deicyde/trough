@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# QuadraticForm.isTotallyReal\_of\_add\_comp\_posDef
+# QuadraticForm.isTotallyReal_of_add_comp_posDef
 
 A submodule on which `Q` is nonpositive is totally real for a linear endomorphism `J` if
 `Q(v) + Q(Jv)` is positive for every nonzero `v`.

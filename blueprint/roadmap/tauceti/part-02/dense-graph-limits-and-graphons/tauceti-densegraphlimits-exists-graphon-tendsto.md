@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.DenseGraphLimits.exists\_graphon\_tendsto\_cutDist\_finiteGraphGraphon\_iff\_forall\_homDensityFin\_cauchySeq
+# TauCeti.DenseGraphLimits.exists_graphon_tendsto_cutDist_finiteGraphGraphon_iff_forall_homDensityFin_cauchySeq
 
 **Every convergent graph sequence has a limit graphon** (Lovász--Szegedy), on every atomless
 standard Borel carrier `(Ω, μ)`, such as the unit interval. A sequence of finite graphs on nonempty
@@ -35,9 +35,9 @@ TauCeti.DenseGraphLimits.exists_graphon_tendsto_cutDist_finiteGraphGraphon_iff_f
 ## Proof depends on
 
 - [Frieze--Kannan weak regularity](frieze-kannan-weak-regularity.md)
-- [TauCeti.DenseGraphLimits.cutDist\_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
+- [TauCeti.DenseGraphLimits.cutDist_triangle](tauceti-densegraphlimits-cutdist-triangle.md)
 - [TauCeti.DenseGraphLimits.Graphon.unitIntervalRepr](tauceti-densegraphlimits-graphon-unitintervalrep.md)
-- [TauCeti.DenseGraphLimits.tendsto\_cutDist\_iff\_forall\_homDensity\_tendsto](tauceti-densegraphlimits-tendsto-cutdist-iff-for.md)
+- [TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto](tauceti-densegraphlimits-tendsto-cutdist-iff-for.md)
 
 ## Lean
 

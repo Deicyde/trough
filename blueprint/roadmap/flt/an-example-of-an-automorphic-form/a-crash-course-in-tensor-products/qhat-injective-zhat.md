@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# QHat.injective\_zHat
+# QHat.injective_zHat
 
 The ring homomorphism $\widehat{\mathbb{Z}}\to\widehat{\mathbb{Q}}$ sending $z$ to $1\otimes_t z$ is injective.
 

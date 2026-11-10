@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.integralTopForm\_mpullback\_Icc\_eq\_pathIntegral
+# TauCeti.integralTopForm_mpullback_Icc_eq_pathIntegral
 
 For `a < b`, the line integral of a continuous real `1`-form along a `C¹` curve is the
 canonical oriented integral over `[a, b]` of the pullback of the form along the curve.

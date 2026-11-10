@@ -30,19 +30,19 @@ Let $n$ be a natural and let $M_n(X)$ for a set $X$ denote “$n\times n$ matric
 
 We now want to move from matrices to invertible matrices whilst keeping track of topology, so we need to understand units of topological monoids. Openness of the subobject was crucial in the above arguments, so we need the next lemma before we can get anywhere.
 
-- [Submonoid.units\_isOpen](submonoid-units-isopen.md)
+- [Submonoid.units_isOpen](submonoid-units-isopen.md)
 
 **Remark.** Note that $M^\times$ doesn't get the subspace topology from $M$, it is embedded into $M\times M$ via $g\mapsto (g,g^{-1})$ and gets the subspace topology from the product. This makes it into a topological group.
 
-*The proof of [Lemma Submonoid.units\_isOpen](submonoid-units-isopen.md) is shown with its statement.*
+*The proof of [Lemma Submonoid.units_isOpen](submonoid-units-isopen.md) is shown with its statement.*
 
 Later on, compactness will be key for us, so we record the analogous result for compactness.
 
-- [Submonoid.units\_isCompact](submonoid-units-iscompact.md)
+- [Submonoid.units_isCompact](submonoid-units-iscompact.md)
 
 **Remark.** Is Hausdorffness necessary?
 
-*The proof of [Lemma Submonoid.units\_isCompact](submonoid-units-iscompact.md) is shown with its statement.*
+*The proof of [Lemma Submonoid.units_isCompact](submonoid-units-iscompact.md) is shown with its statement.*
 
 - [ContinuousMulEquiv.piUnits](continuousmulequiv-piunits.md)
 - [ContinuousMulEquiv.restrictedProductUnits](continuousmulequiv-restrictedproductunits.md)

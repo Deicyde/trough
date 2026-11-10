@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# CovariantDerivative.IsMetricCompatible.riemannCurvatureTensor\_eq\_of\_forall\_linearIndependent
+# CovariantDerivative.IsMetricCompatible.riemannCurvatureTensor_eq_of_forall_linearIndependent
 
 For a metric-compatible torsion-free connection, the Riemann curvature tensor at `x` is the
 only quadrilinear form with the algebraic symmetries of a curvature tensor whose values
@@ -40,7 +40,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [LinearMap.six\_mul\_apply\_eq\_of\_cyclic\_eq\_zero](linearmap-six-mul-apply-eq-of-cyclic-eq-zero.md)
+- [LinearMap.six_mul_apply_eq_of_cyclic_eq_zero](linearmap-six-mul-apply-eq-of-cyclic-eq-zero.md)
 
 ## Lean
 

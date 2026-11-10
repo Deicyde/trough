@@ -25,7 +25,7 @@ with $y \to y \diamond x \to x$ and $x \to x \diamond (z \diamond y) \to (z \dia
 
 ## Lean
 
-Formalized as [`RelaxedWeakCentralGroupoid.strictify`](https://teorth.github.io/equational_theories/docs/find/#doc/RelaxedWeakCentralGroupoid.strictify).
+Stated as [`RelaxedWeakCentralGroupoid.strictify`](https://teorth.github.io/equational_theories/docs/find/#doc/RelaxedWeakCentralGroupoid.strictify); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -5,7 +5,7 @@ lean: NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_righ
 statement: formalized
 ---
 
-# NumberField.AdeleRing.isCentralSimple\_addHaarScalarFactor\_left\_mul\_eq\_right\_mul
+# NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul
 
 Let $B$ be a finite-dimensional central simple $K$-algebra. Say $u\in B_{\mathbb{A}}^\times$, and define $\ell_u$ and $r_u:B_{\mathbb{A}}\to B_{\mathbb{A}}$ by $\ell_u(x)=ux$ and $r_u(x)=xu$. Then $d_{B_{\mathbb{A}}}(\ell_u)=d_{B_{\mathbb{A}}}(r_u)$.
 
@@ -15,16 +15,16 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md)
-- [IsSimpleRing.ringHaarChar\_eq\_addEquivAddHaarChar\_mulRight](../left-and-right-multiplication/issimplering-ringhaarchar-eq-addequivaddhaarchar.md)
+- [MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md)
+- [IsSimpleRing.ringHaarChar_eq_addEquivAddHaarChar_mulRight](../left-and-right-multiplication/issimplering-ringhaarchar-eq-addequivaddhaarchar.md)
 
 ## Proof
 
-We think of $B_{\mathbb{A}}$ as $B\otimes_K\mathbb{A}_K$. If $u=(u_v)$ as $v$ runs through the places of $K$ then $d_{B_{\mathbb{A}}}(\ell_u)=\prod_v d_{B_v}(\ell_{u_v})$ by theorem [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) (and the product is finite). By corollary [IsSimpleRing.ringHaarChar\_eq\_addEquivAddHaarChar\_mulRight](../left-and-right-multiplication/issimplering-ringhaarchar-eq-addequivaddhaarchar.md) this equals $\prod_v d_{B_v}(r_{u_v})$, and again by theorem [MeasureTheory.addEquivAddHaarChar\_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) this is $d_{B_{\mathbb{A}}}(r_u)$.
+We think of $B_{\mathbb{A}}$ as $B\otimes_K\mathbb{A}_K$. If $u=(u_v)$ as $v$ runs through the places of $K$ then $d_{B_{\mathbb{A}}}(\ell_u)=\prod_v d_{B_v}(\ell_{u_v})$ by theorem [MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) (and the product is finite). By corollary [IsSimpleRing.ringHaarChar_eq_addEquivAddHaarChar_mulRight](../left-and-right-multiplication/issimplering-ringhaarchar-eq-addequivaddhaarchar.md) this equals $\prod_v d_{B_v}(r_{u_v})$, and again by theorem [MeasureTheory.addEquivAddHaarChar_restrictedProductCongrRight](../restricted-products/measuretheory-addequivaddhaarchar-restrictedprod.md) this is $d_{B_{\mathbb{A}}}(r_u)$.
 
 ## Lean
 
-Formalized as [`NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul).
+Stated as [`NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.AdeleRing.isCentralSimple_addHaarScalarFactor_left_mul_eq_right_mul); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

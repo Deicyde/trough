@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlgebraicGeometry.QuasicoherentSheaf.nonempty\_hasLeftDual\_iff\_isFiniteLocallyFree
+# TauCeti.AlgebraicGeometry.QuasicoherentSheaf.nonempty_hasLeftDual_iff_isFiniteLocallyFree
 
 A quasicoherent sheaf on any scheme has a left dual in `QuasicoherentSheaf X` if and only
 if it is finite locally free.

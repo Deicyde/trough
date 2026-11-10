@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# pfr\_aux
+# pfr_aux
 
 If $A \subset {\bf F}_2^n$ is non-empty and $|A+A| \leq K|A|$, then $A$ can be covered by at most $K ^ {13/2}|A|^{1/2}/|H|^{1/2}$ translates of a subspace $H$ of ${\bf F}_2^n$ with
 

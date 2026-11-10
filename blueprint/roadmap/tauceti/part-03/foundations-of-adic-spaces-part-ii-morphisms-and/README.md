@@ -4,9 +4,9 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Exactness of the Čech complex of localizations](exactness-of-the-cech-complex-of-localizations.md)
 - [Completion preserves strict exact sequences](completion-preserves-strict-exact-sequences.md)
-- [TauCeti.Huber.PairOfDefinition.isStrictMap\_of\_isNoetherianRing](tauceti-huber-pairofdefinition-isstrictmap-of-is.md)
-- [TauCeti.Huber.PairOfDefinition.isClosed\_of\_isNoetherianRing](tauceti-huber-pairofdefinition-isclosed-of-isnoe.md)
-- [TauCeti.Huber.PairOfDefinition.ofTensorProduct\_bijective](tauceti-huber-pairofdefinition-oftensorproduct-b.md)
+- [TauCeti.Huber.PairOfDefinition.isStrictMap_of_isNoetherianRing](tauceti-huber-pairofdefinition-isstrictmap-of-is.md)
+- [TauCeti.Huber.PairOfDefinition.isClosed_of_isNoetherianRing](tauceti-huber-pairofdefinition-isclosed-of-isnoe.md)
+- [TauCeti.Huber.PairOfDefinition.ofTensorProduct_bijective](tauceti-huber-pairofdefinition-oftensorproduct-b.md)
 - [The blowup of a finitely generated submodule is proper](the-blowup-of-a-finitely-generated-submodule-is.md)
 - [The affine charts of the blowup of a submodule](the-affine-charts-of-the-blowup-of-a-submodule.md)
 - [Noetherianity of complete rings](noetherianity-of-complete-rings.md)

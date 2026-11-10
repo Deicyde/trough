@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/563
 ---
 
-# QuotientGroup.mk\_image\_finite\_of\_compact\_of\_open
+# QuotientGroup.mk_image_finite_of_compact_of_open
 
 If $U$ and $V$ are compact subgroups of a topological group $G$, if $V$ is also open, and if $g\in G$, then the double coset space $UgV$ is a finite union of left cosets $g_iV$.
 

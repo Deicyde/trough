@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ModuleCat.exists\_isAlmostSplit\_X₃\_eq\_iff
+# ModuleCat.exists_isAlmostSplit_X₃_eq_iff
 
 Over a finite-dimensional algebra, a finitely generated module ends an almost-split sequence
 of `A`-modules exactly when it is indecomposable and non-projective.

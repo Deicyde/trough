@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.CStarAction.CovariantRepresentation.norm\_integratedOperator\_le
+# TauCeti.CStarAction.CovariantRepresentation.norm_integratedOperator_le
 
 The integrated form is bounded by the coefficient function's L¹ norm.
 

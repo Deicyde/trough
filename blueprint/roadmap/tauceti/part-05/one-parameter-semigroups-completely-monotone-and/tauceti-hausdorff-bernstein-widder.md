@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.hausdorff\_bernstein\_widder
+# TauCeti.hausdorff_bernstein_widder
 
 **Hausdorff--Bernstein--Widder theorem**, finite-measure version on `ℝ≥0`.
 

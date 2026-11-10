@@ -3,7 +3,7 @@
 The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d/TauCetiRoadmap/CombinatorialHeegaardFloer/README.md) names, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
 
 - [The commutation map is a chain map](the-commutation-map-is-a-chain-map.md)
-- [TauCeti.GridDiagram.unblockedDifferential\_commutationHomotopy\_add\_eq](tauceti-griddiagram-unblockeddifferential-commut.md)
+- [TauCeti.GridDiagram.unblockedDifferential_commutationHomotopy_add_eq](tauceti-griddiagram-unblockeddifferential-commut.md)
 - [Stabilization invariance of `GH⁻`](stabilization-invariance-of-gh.md)
 - [Stabilization multiplies the Poincaré series by `W`](stabilization-multiplies-the-poincare-series-by.md)
 - [`τ` of a torus knot grid](of-a-torus-knot-grid.md)

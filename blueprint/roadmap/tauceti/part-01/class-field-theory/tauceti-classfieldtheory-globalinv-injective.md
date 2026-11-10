@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.ClassFieldTheory.globalInv\_injective
+# TauCeti.ClassFieldTheory.globalInv_injective
 
 **The global invariant is injective**, because the idele-class `H¹` vanishes and the sum of
 the local invariants vanishes only on the classes that die in the idele classes.

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.continuous\_restrictedProductSum\_symm\_of\_principal
+# TauCeti.continuous_restrictedProductSum_symm_of_principal
 
 For a principal filter on `ι₁ ⊕ ι₂` the inverse of the splitting is continuous for every
 reference family, so that the splitting is a homeomorphism: the target is a principal stage,

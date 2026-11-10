@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlgebraicGeometry.smooth\_of\_grpObj\_of\_charZero
+# TauCeti.AlgebraicGeometry.smooth_of_grpObj_of_charZero
 
 An affine group scheme of finite type over a field of characteristic zero is smooth.
 

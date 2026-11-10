@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.ValuationSpectrum.exists\_eq\_classicalPoint\_or\_discPoint\_or\_discPointAbove\_or\_discPointBelow\_or\_nestedDiscPoint
+# TauCeti.ValuationSpectrum.exists_eq_classicalPoint_or_discPoint_or_discPointAbove_or_discPointBelow_or_nestedDiscPoint
 
 **Every point of the closed unit disc is of one of Wedhorn's five types**, over an
 algebraically closed complete nonarchimedean field (Example 7.57): a classical point `x_a`

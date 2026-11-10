@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.bcr\_semigroup\_bochner
+# TauCeti.bcr_semigroup_bochner
 
 **The Berg--Christensen--Ressel representation theorem** (Berg--Christensen--Ressel 4.1.13).
 A function on the involutive semigroup `ℝ≥0 × V`, for `V` a finite-dimensional real inner-product
@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 - [Bochner's theorem](bochners-theorem.md)
 - [Moment determinacy, exponential-moment form (the roadmap's B1 hypothesis)](../../part-07/weighted-orthogonal-l2-bases-completeness-hilber/moment-determinacy-exponential-moment-form-the-r.md)
-- [TauCeti.hausdorff\_bernstein\_widder](tauceti-hausdorff-bernstein-widder.md)
+- [TauCeti.hausdorff_bernstein_widder](tauceti-hausdorff-bernstein-widder.md)
 
 ## Lean
 

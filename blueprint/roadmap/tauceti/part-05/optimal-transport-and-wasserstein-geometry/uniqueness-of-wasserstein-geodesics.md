@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.exists\_map\_IccExtend\_eq\_lintegral\_curveAction\_eq](tauceti-exists-map-iccextend-eq-lintegral-curvea.md)
+- [TauCeti.exists_map_IccExtend_eq_lintegral_curveAction_eq](tauceti-exists-map-iccextend-eq-lintegral-curvea.md)
 
 ## Lean
 

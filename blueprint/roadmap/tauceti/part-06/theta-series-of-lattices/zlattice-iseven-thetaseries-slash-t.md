@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ZLattice.IsEven.thetaSeries\_slash\_T
+# ZLattice.IsEven.thetaSeries_slash_T
 
 The theta series of an even lattice is invariant under `T`, in every weight:
 `Θ_L ∣[k] T = Θ_L`.

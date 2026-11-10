@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# AbstractMeasure.amiceTransform\_weight\_id
+# AbstractMeasure.amiceTransform_weight_id
 
 For `ℤ_p`-valued measures, multiplication by `x` acts on the Amice transform as the Mahler
 derivation: `A (x μ) = (1 + T) d/dT A_μ`.

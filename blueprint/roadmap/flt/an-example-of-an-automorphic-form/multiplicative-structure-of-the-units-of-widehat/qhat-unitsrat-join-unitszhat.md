@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# QHat.unitsrat\_join\_unitszHat
+# QHat.unitsrat_join_unitszHat
 
 The product of $\mathbb{Q}^\times$ and $\widehat{\mathbb{Z}}^\times$ in $\widehat{\mathbb{Q}}^\times$ is all of $\widehat{\mathbb{Q}}^\times$. More precisely, every element of $\widehat{\mathbb{Q}}^\times$ can be written as $qz$ with $q\in\mathbb{Q}^\times$ and $z\in\widehat{\mathbb{Z}}^\times$.
 

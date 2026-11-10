@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae
+# TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae
 
 **The splitting criterion for quaternion algebras** (Lam III.2.7 and III.4.2, Serre III.1,
 Gille-Szamuely 1.1.9). For units `a` and `b` of a field in which `2` is invertible, the following

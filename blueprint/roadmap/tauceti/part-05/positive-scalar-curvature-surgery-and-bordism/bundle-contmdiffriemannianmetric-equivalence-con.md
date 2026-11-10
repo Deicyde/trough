@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Bundle.ContMDiffRiemannianMetric.equivalence\_concordant
+# Bundle.ContMDiffRiemannianMetric.equivalence_concordant
 
 Concordance is an equivalence relation on the metrics of positive scalar curvature on `M`.
 
@@ -24,7 +24,7 @@ Bundle.ContMDiffRiemannianMetric.equivalence_concordant.{u_1, u_2, u_3} {E : Typ
 
 ## Proof depends on
 
-- [Bundle.ContMDiffRiemannianMetric.scalarCurvature\_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
+- [Bundle.ContMDiffRiemannianMetric.scalarCurvature_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
 
 ## Lean
 

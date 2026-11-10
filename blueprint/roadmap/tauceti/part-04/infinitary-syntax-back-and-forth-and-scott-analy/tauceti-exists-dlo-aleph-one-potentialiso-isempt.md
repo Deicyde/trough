@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_dlo\_aleph\_one\_potentialIso\_isEmpty\_equiv
+# TauCeti.exists_dlo_aleph_one_potentialIso_isEmpty_equiv
 
 Potential isomorphism, and hence `L∞ω`-equivalence, does not imply isomorphism for
 uncountable structures of the same cardinality: in every universe there are two dense linear

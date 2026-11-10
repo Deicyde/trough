@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.enoughInjectives\_smoothModules
+# TauCeti.enoughInjectives_smoothModules
 
 For a directed family `J` of left ideals of `A : Type u`, the smooth `A`-modules in universe
 `max u w` have enough injectives: every smooth module embeds, through the unit of the coinduction

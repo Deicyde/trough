@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IntegralLattice.isLeast\_form\_self\_orthogonalSum
+# TauCeti.IntegralLattice.isLeast_form_self_orthogonalSum
 
 Attained least norms in two discriminant cosets add to the attained least norm of the
 corresponding coset of the orthogonal sum.

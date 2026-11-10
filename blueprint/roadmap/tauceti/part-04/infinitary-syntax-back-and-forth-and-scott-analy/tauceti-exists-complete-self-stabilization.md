@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_complete\_self\_stabilization
+# TauCeti.exists_complete_self_stabilization
 
 A countable structure stabilizes below `ω₁`. Only its tuples are counted; the language
 may be uncountable.

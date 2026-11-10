@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.EulerProductData.hasProd\_eulerFactor\_convolution
+# TauCeti.EulerProductData.hasProd_eulerFactor_convolution
 
 The Euler factors of a convolution have an unrestricted product equal to the product of
 the original norm-regrouped Dirichlet series, whenever both ideal-indexed series converge

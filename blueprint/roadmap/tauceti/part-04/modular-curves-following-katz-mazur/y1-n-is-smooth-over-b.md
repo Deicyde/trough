@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [`Y₁(N)` is a fine moduli scheme for `N ≥ 4`](y1-n-is-a-fine-moduli-scheme-for-n-4.md)
-- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale\_torsion\_hom\_of\_forall\_intCast\_ne\_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
+- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale_torsion_hom_of_forall_intCast_ne_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
 
 ## Lean
 

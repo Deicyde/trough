@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Peripheral.peripheralAut\_eq\_top\_rank\_one
+# TauCeti.Peripheral.peripheralAut_eq_top_rank_one
 
 In rank one the peripheral automorphism group is the whole group of continuous
 automorphisms.

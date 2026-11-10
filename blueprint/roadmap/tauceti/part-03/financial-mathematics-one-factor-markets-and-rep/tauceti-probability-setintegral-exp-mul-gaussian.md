@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Probability.setIntegral\_exp\_mul\_gaussianReal
+# TauCeti.Probability.setIntegral_exp_mul_gaussianReal
 
 Integrating the exponential weight `exp (t * x)` against `N(m, v)` over a set `s` gives the
 moment-generating function `exp (m t + v t² / 2)` times the mass of `s` under the tilted law

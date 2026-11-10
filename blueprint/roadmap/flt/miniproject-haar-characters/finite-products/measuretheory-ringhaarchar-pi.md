@@ -6,17 +6,17 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.ringHaarChar\_pi
+# MeasureTheory.ringHaarChar_pi
 
 If $R_i$ are a finite collection of locally compact topological rings, and $u_i\in R_i^\times$ then $\delta_{\prod_i R_i}((u_i)_i)=\prod_i\delta_{R_i}(u_i)$.
 
 ## Depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_piCongrRight](measuretheory-addequivaddhaarchar-picongrright.md)
+- [MeasureTheory.addEquivAddHaarChar_piCongrRight](measuretheory-addequivaddhaarchar-picongrright.md)
 
 ## Proof
 
-Follows immediately from lemma [MeasureTheory.addEquivAddHaarChar\_piCongrRight](measuretheory-addequivaddhaarchar-picongrright.md).
+Follows immediately from lemma [MeasureTheory.addEquivAddHaarChar_piCongrRight](measuretheory-addequivaddhaarchar-picongrright.md).
 
 ## Lean
 

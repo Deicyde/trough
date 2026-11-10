@@ -28,7 +28,7 @@ TauCeti.IsManifoldStronglyPseudoconvexAt.manifoldMorseIndex_le.{u_1, u_2} {E : T
 
 ## Proof depends on
 
-- [QuadraticForm.isTotallyReal\_of\_add\_comp\_posDef](quadraticform-istotallyreal-of-add-comp-posdef.md)
+- [QuadraticForm.isTotallyReal_of_add_comp_posDef](quadraticform-istotallyreal-of-add-comp-posdef.md)
 
 ## Lean
 

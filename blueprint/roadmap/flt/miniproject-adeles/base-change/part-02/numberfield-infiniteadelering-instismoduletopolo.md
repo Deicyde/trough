@@ -5,7 +5,7 @@ lean: NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT
 statement: formalized
 ---
 
-# NumberField.InfiniteAdeleRing.instIsModuleTopology\_fLT
+# NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT
 
 $L_{\infty}$ has the $K_{\infty}$-module topology.
 
@@ -19,7 +19,7 @@ Since $L_{\infty}$ is homeomorphic to a finite product of $K_{\infty}$ as a $K_{
 
 ## Lean
 
-Formalized as [`NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT).
+Stated as [`NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.InfiniteAdeleRing.instIsModuleTopology_fLT); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

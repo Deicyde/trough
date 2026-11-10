@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# LinearMap.continuous\_iff\_separatingSpace\_eq\_bot
+# LinearMap.continuous_iff_separatingSpace_eq_bot
 
 A linear map between Banach spaces is continuous if and only if its separating space is
 trivial.

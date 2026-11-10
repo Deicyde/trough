@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlmostComplexStructure.isRiemannForm\_of\_isPolarization
+# TauCeti.AlmostComplexStructure.isRiemannForm_of_isPolarization
 
 **Every form polarizing the weight-one Hodge structure of `J` is a Riemann form for `J`**, with
 no flatness assumption: `J`-invariance of `E_ℝ` says that the Weil operator is an isometry of the

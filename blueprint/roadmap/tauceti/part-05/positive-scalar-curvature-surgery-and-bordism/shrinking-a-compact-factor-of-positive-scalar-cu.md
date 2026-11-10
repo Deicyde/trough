@@ -37,7 +37,7 @@ Bundle.ContMDiffRiemannianMetric.exists_pos_hasPositiveScalarCurvature_prodTange
 
 ## Proof depends on
 
-- [Bundle.ContMDiffRiemannianMetric.scalarCurvature\_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
+- [Bundle.ContMDiffRiemannianMetric.scalarCurvature_prodTangentSpace](bundle-contmdiffriemannianmetric-scalarcurvature.md)
 
 ## Lean
 

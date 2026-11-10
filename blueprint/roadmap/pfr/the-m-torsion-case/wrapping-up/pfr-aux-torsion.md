@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# pfr\_aux\_torsion
+# pfr_aux_torsion
 
 Suppose that $G$ is a finite abelian group of torsion $m$. If $A \subset G$ is non-empty and $|A+A| \leq K|A|$, then $A$ can be covered by at most $K ^ {128m^3+1}|A|^{1/2}/|H|^{1/2}$ translates of a subspace $H$ of $G$ with
 
@@ -31,7 +31,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Repeat the proof of [Lemma pfr\_aux](../../proof-of-pfr/pfr-aux.md), but with [Entropy form of PFR](main-entropy.md) in place of [Entropy version of PFR](../../entropy-version-of-pfr/conclusion/entropy-pfr.md). Because of the lack of $2$-torsion, one has to use the Ruzsa triangle inequality to bound $d[U,U]$ by $2d[U,-U]$, costing an additional factor of $2$ in the estimates.
+Repeat the proof of [Lemma pfr_aux](../../proof-of-pfr/pfr-aux.md), but with [Entropy form of PFR](main-entropy.md) in place of [Entropy version of PFR](../../entropy-version-of-pfr/conclusion/entropy-pfr.md). Because of the lack of $2$-torsion, one has to use the Ruzsa triangle inequality to bound $d[U,U]$ by $2d[U,-U]$, costing an additional factor of $2$ in the estimates.
 
 ## Lean
 

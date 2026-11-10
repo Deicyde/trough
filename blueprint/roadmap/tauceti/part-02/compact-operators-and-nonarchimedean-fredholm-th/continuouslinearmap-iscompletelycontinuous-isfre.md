@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ContinuousLinearMap.IsCompletelyContinuous.isFredholm\_one\_sub
+# ContinuousLinearMap.IsCompletelyContinuous.isFredholm_one_sub
 
 A completely continuous perturbation of the identity is a Fredholm operator, over any
 complete nontrivially normed field.

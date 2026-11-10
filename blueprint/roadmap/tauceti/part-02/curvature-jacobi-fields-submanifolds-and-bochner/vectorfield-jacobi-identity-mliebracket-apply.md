@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# VectorField.jacobi\_identity\_mlieBracket\_apply
+# VectorField.jacobi_identity_mlieBracket_apply
 
 The **Jacobi identity** for the manifold Lie bracket, in cyclic form:
 `[U, [V, W]] + [V, [W, U]] + [W, [U, V]] = 0`. This rearranges Mathlib's Leibniz form

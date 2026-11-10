@@ -20,7 +20,7 @@ Openness should follow from the fact that the integers are $\{x : v(x)\lt v(1/\p
 
 ## Lean
 
-Formalized as [`NumberField.instCompactSpaceAdicCompletionIntegers`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.instCompactSpaceAdicCompletionIntegers).
+Stated as [`NumberField.instCompactSpaceAdicCompletionIntegers`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/NumberField.instCompactSpaceAdicCompletionIntegers); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

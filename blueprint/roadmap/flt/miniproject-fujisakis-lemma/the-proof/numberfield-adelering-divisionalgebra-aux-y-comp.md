@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.DivisionAlgebra.Aux.Y\_compact
+# NumberField.AdeleRing.DivisionAlgebra.Aux.Y_compact
 
 $Y$ is a compact subset of $D_{\mathbb{A}}$.
 

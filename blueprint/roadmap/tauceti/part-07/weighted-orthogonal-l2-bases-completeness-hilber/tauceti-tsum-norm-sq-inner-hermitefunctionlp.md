@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.tsum\_norm\_sq\_inner\_hermiteFunctionLp
+# TauCeti.tsum_norm_sq_inner_hermiteFunctionLp
 
 **Parseval's identity for the Hermite basis** (norm-square form): the squared Hermite
 coordinates of `f` sum to `‖f‖²`.

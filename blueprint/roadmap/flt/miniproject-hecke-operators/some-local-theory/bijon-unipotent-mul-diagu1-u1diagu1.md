@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# bijOn\_unipotent\_mul\_diagU1\_U1diagU1
+# bijOn_unipotent_mul_diagU1_U1diagU1
 
 The double coset space $UgU$ is the disjoint union of $g_tU$ as $t$ ranges through $\mathcal{O}_v/\alpha\mathcal{O}_v$ and $g_t:=\begin{pmatrix}\alpha&\tilde{t}\\0&1\end{pmatrix}$, where $\tilde{t}$ is any lift of $t$ to $\mathcal{O}_v$.
 

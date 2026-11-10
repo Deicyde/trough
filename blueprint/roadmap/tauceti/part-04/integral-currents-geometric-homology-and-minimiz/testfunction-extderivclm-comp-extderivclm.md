@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TestFunction.extDerivCLM\_comp\_extDerivCLM
+# TestFunction.extDerivCLM_comp_extDerivCLM
 
 **`d ∘ d = 0`** on test forms, as an identity of continuous linear maps.
 

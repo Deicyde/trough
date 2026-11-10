@@ -29,7 +29,7 @@ TauCeti.Peripheral.exists_defect_eq_one_of_forall_exists_mem_level.{u_1} {p r : 
 
 ## Proof depends on
 
-- [TauCeti.Peripheral.forall\_mem\_level\_iff](tauceti-peripheral-forall-mem-level-iff.md)
+- [TauCeti.Peripheral.forall_mem_level_iff](tauceti-peripheral-forall-mem-level-iff.md)
 
 ## Lean
 

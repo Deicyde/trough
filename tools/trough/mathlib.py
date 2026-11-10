@@ -1042,8 +1042,8 @@ def chapter(sources: Sources, authored: dict[str, Authored] | None = None
             "Items that name the same declarations in several lists, or name none and share a title, are one "
             "article, placed in the first list that has it; the other lists link to it. An article in Mathlib names its declarations, "
             "with their documentation and source; the docstrings and signatures it shows are Mathlib's, under "
-            "Apache-2.0. One that Mathlib states without a proof is marked not ready, since its "
-            "prerequisites are not mapped.",
+            "Apache-2.0. One that Mathlib states without a proof says so, and its prerequisites are not "
+            "mapped.",
             edges,
         ]
         + ([f"{len(authored):,} {'article is' if len(authored) == 1 else 'articles are'} written for Trough, under "

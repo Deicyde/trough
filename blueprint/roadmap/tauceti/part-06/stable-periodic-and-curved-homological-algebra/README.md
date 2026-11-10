@@ -6,7 +6,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [The triangulation of the periodic homotopy category is the mapping-cone triangulation](the-triangulation-of-the-periodic-homotopy-categ.md)
 - [TauCeti.MatrixFactorization.HomotopyCategory.instIsTriangulated](tauceti-matrixfactorization-homotopycategory-ins.md)
 - [TauCeti.CurvedDGRightModuleCat.homotopyIsTriangulated](tauceti-curveddgrightmodulecat-homotopyistriangu.md)
-- [TauCeti.isIndecomposableModule\_iff\_exists\_linearEquiv\_quotient\_span\_op\_root\_X\_pow\_pow](tauceti-isindecomposablemodule-iff-exists-linear.md)
+- [TauCeti.isIndecomposableModule_iff_exists_linearEquiv_quotient_span_op_root_X_pow_pow](tauceti-isindecomposablemodule-iff-exists-linear.md)
 - [The periodic free resolution of `M_i` over `R[X]/(X ^ n)`](the-periodic-free-resolution-of-m-i-over-r-x-x-n.md)
 - [TauCeti.OrbitCategory.lift](tauceti-orbitcategory-lift.md)
 - [Compression is a triangle functor on derived categories](compression-is-a-triangle-functor-on-derived-cat.md)

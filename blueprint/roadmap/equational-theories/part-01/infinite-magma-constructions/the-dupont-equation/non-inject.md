@@ -19,7 +19,7 @@ It suffices to find a partial solution that violates injectivity. This can be do
 
 ## Lean
 
-Formalized as [`Eq63.Equation63_not_implies_Equation1692`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq63.Equation63_not_implies_Equation1692).
+Stated as [`Eq63.Equation63_not_implies_Equation1692`](https://teorth.github.io/equational_theories/docs/find/#doc/Eq63.Equation63_not_implies_Equation1692); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

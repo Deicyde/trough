@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.DenseGraphLimits.cutDist\_triangle
+# TauCeti.DenseGraphLimits.cutDist_triangle
 
 The coupling-primary graphon cut distance satisfies the triangle inequality on arbitrary
 probability carriers.

@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.Iwasawa.ker\_levelCoordinate](tauceti-iwasawa-ker-levelcoordinate.md)
+- [TauCeti.Iwasawa.ker_levelCoordinate](tauceti-iwasawa-ker-levelcoordinate.md)
 
 ## Lean
 

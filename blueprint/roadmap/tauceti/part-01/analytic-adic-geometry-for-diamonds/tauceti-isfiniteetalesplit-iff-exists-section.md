@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isFiniteEtaleSplit\_iff\_exists\_section
+# TauCeti.isFiniteEtaleSplit_iff_exists_section
 
 A ring has no nonsplit finite étale covers if and only if every faithfully flat finite étale
 algebra over it admits a section. Faithful flatness is needed: over a nonzero ring the zero

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# MeasureTheory.addEquivAddHaarChar\_refl
+# MeasureTheory.addEquivAddHaarChar_refl
 
 $d_A(id)=1.$
 
@@ -16,7 +16,7 @@ $d_A(id)=1.$
 
 ## Proof depends on
 
-- [MeasureTheory.addEquivAddHaarChar\_eq](measuretheory-addequivaddhaarchar-eq.md)
+- [MeasureTheory.addEquivAddHaarChar_eq](measuretheory-addequivaddhaarchar-eq.md)
 
 ## Proof
 

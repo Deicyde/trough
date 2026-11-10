@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# LieModule.Cohomology.twoCocycle\_eq\_range\_d₁₂
+# LieModule.Cohomology.twoCocycle_eq_range_d₁₂
 
 **Whitehead's second lemma**, as an equality of submodules: the 2-cocycles of a
 Lie algebra with nondegenerate Killing form in characteristic zero, with values in a

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Amenable.of\_finite
+# TauCeti.Amenable.of_finite
 
 A finite topological group is amenable, for any group topology.
 

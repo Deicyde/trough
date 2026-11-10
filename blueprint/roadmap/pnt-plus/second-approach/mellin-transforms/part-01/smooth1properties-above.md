@@ -38,7 +38,7 @@ c:=2\log 2
 .
 $$
 
-By Lemma Smooth1Properties\_estimate,
+By Lemma Smooth1Properties_estimate,
 
 $$
 c > 2\frac{1-2^{-\epsilon}}\epsilon > 2^\epsilon\frac{1-2^{-\epsilon}}\epsilon

@@ -23,7 +23,7 @@ Since $f$ is multiplicative, we can express the sum over divisors of $ab$ in ter
 
 ## Lean
 
-Formalized as [`ArithmeticFunction.sum_divisors_mul_of_coprime`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.sum_divisors_mul_of_coprime).
+Stated as [`ArithmeticFunction.sum_divisors_mul_of_coprime`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.sum_divisors_mul_of_coprime); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

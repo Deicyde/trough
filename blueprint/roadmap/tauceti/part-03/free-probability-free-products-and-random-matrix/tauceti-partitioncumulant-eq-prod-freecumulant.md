@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.partitionCumulant\_eq\_prod\_freeCumulant
+# TauCeti.partitionCumulant_eq_prod_freeCumulant
 
 The free cumulants are *multiplicative*: the free cumulant of a noncrossing partition is the
 product of the free cumulants of the words read along its parts, `κ_π(a) = ∏_{B ∈ π} κ_B(a)`.

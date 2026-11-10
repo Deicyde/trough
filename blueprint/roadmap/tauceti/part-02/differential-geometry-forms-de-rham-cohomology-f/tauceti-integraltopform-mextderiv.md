@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.integralTopForm\_mextDeriv
+# TauCeti.integralTopForm_mextDeriv
 
 Stokes' theorem for a compactly supported C1 form on an oriented smooth manifold with
 boundary. The boundary carries its outward-first orientation.

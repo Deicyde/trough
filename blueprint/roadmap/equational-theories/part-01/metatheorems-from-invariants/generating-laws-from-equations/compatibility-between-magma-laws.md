@@ -21,7 +21,7 @@ In the reverse direction, suppose $\phi : \{0, 2, \ldots, n-1\} \to M$ is a subs
 
 ## Lean
 
-Formalized as [`Law.satisfies_fin_satisfies_nat`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.satisfies_fin_satisfies_nat).
+Stated as [`Law.satisfies_fin_satisfies_nat`](https://teorth.github.io/equational_theories/docs/find/#doc/Law.satisfies_fin_satisfies_nat); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -79,7 +79,7 @@ head = "a3210204ad88"
 head_date = "2026-10-22"
 map_status = "live"
 map_unit = "blueprint node"
-map_plan = "One article per node of its leanblueprint that is in Lean, with statuses from the blueprint's marks and dependencies from its uses; the Verso blueprint (3 chapters) is left for later."
+map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the Verso blueprint (3 chapters) is left for later."
 
 [[library]]
 id = "pnt-plus"
@@ -98,7 +98,7 @@ head = "127b50e33f60"
 head_date = "2026-10-20"
 map_status = "live"
 map_unit = "blueprint node"
-map_plan = "One article per node of its LeanArchitect blueprint that is in Lean, with statuses from the blueprint's marks and dependencies from its uses; the Blueprint build workflow builds the blueprint weekly with `lake build :blueprint`."
+map_plan = "One article per node of its LeanArchitect blueprint that is in Lean, with dependencies from its uses; the Blueprint build workflow builds the blueprint weekly with `lake build :blueprint`."
 
 [[library]]
 id = "pfr"
@@ -117,7 +117,7 @@ head = "7e7fadf0c4d0"
 head_date = "2026-10-29"
 map_status = "live"
 map_unit = "blueprint node"
-map_plan = "One article per node of its leanblueprint that is in Lean, with statuses from the blueprint's marks and dependencies from its uses."
+map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses."
 
 [[library]]
 id = "equational-theories"
@@ -136,7 +136,7 @@ head = "2ddb16c4c4c0"
 head_date = "2026-11-01"
 map_status = "live"
 map_unit = "blueprint node"
-map_plan = "One article per node of its leanblueprint that is in Lean, with statuses from the blueprint's marks and dependencies from its uses; the equations and implication classes in the project's data files are left for later."
+map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the equations and implication classes in the project's data files are left for later."
 
 [[library]]
 id = "strongpnt"
@@ -155,7 +155,7 @@ head = "2f5835c32231"
 head_date = "2025-09-11"
 map_status = "live"
 map_unit = "blueprint node"
-map_plan = "One article per node of its leanblueprint that is in Lean, with statuses from the blueprint's marks and dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them."
+map_plan = "One article per node of its leanblueprint that is in Lean, with dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them."
 
 [[library]]
 id = "formal-conjectures"

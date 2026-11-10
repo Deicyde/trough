@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.contMDiff\_orbitRelQuotientLift\_iff
+# TauCeti.contMDiff_orbitRelQuotientLift_iff
 
 For a free properly discontinuous action by `C^n` maps on a `C^n` manifold and `m ≤ n`, the
 descent of a `G`-invariant map is `C^m` exactly when the map is. For holomorphic actions on complex

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.card\_ideal\_absNorm\_le
+# NumberField.card_ideal_absNorm_le
 
 In any number field `F`, the set of nonzero integral ideals with norm at most `X` is
 finite, and for `X ≥ 1` its cardinality is at most `X² * 2^[F:ℚ]`.

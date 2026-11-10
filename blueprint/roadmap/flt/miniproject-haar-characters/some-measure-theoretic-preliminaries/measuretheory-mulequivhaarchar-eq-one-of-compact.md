@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/532
 ---
 
-# MeasureTheory.mulEquivHaarChar\_eq\_one\_of\_compactSpace
+# MeasureTheory.mulEquivHaarChar_eq_one_of_compactSpace
 
 Say $A$ is a compact topological additive group and $\phi:A\to A$ is an additive isomorphism. Then $d_A(\phi)=1.$
 
@@ -17,7 +17,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-We have $d_A(\phi)\mu(A)=\mu(A)$ from lemma [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](../initial-definitions/measuretheory-addequivaddhaarchar-smul-preimage.md) and $\mu(A)$ is positive and finite because $A$ is open and compact.
+We have $d_A(\phi)\mu(A)=\mu(A)$ from lemma [MeasureTheory.addEquivAddHaarChar_smul_preimage](../initial-definitions/measuretheory-addequivaddhaarchar-smul-preimage.md) and $\mu(A)$ is positive and finite because $A$ is open and compact.
 
 ## Lean
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Place.ramificationIdx\_restrict\_sup
+# TauCeti.Place.ramificationIdx_restrict_sup
 
 **Abhyankar's lemma** (Stichtenoth, Theorem 3.9.1). Let `E₁` and `E₂` be intermediate fields
 of a finite separable extension `F' / F` of function fields, and `P'` a place of `F'` such that

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.TopCat.normalSpace\_of\_isColimit
+# TauCeti.TopCat.normalSpace_of_isColimit
 
 The colimit of a sequence of normal spaces in `TopCat` whose transition maps are closed
 embeddings is normal.

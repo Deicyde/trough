@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.NumberField.QuadraticForm.exists\_hilbertSymbol\_eq\_ite
+# TauCeti.NumberField.QuadraticForm.exists_hilbertSymbol_eq_ite
 
 **Hilbert sign prescription** (O'Meara 71:19a). Let `S` be a finite set of finite places at
 which `b ∈ Kˣ` is a nonsquare and `T` a finite set of real places at which `b` is negative, with
@@ -39,7 +39,7 @@ Its statement uses no other declaration mapped here.
 - [The local class formation](../../part-01/class-field-theory/the-local-class-formation.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 - [TauCeti.ClassFieldTheory.ClassFormation.tateIso](../../part-01/class-field-theory/tauceti-classfieldtheory-classformation-tateiso.md)
-- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae](../../part-06/quadratic-forms-and-cohomological-invariants/tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 - [TauCeti.relDiscr](../../part-05/number-fields-ramification-frobenius-and-the-lmf/tauceti-reldiscr.md)
 - [TauCeti.semilocalEquiv](../../part-05/number-fields-ramification-frobenius-and-the-lmf/tauceti-semilocalequiv.md)
 

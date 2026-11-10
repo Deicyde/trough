@@ -20,7 +20,7 @@ The Liouville function $\lambda(n)$ is defined as $(-1)^{\Omega(n)}$, where $\Om
 
 ## Lean
 
-Formalized as [`ArithmeticFunction.isCompletelyMultiplicative_liouville`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.isCompletelyMultiplicative_liouville).
+Stated as [`ArithmeticFunction.isCompletelyMultiplicative_liouville`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.isCompletelyMultiplicative_liouville); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [TauCeti.Divisor.sectionRing](tauceti-divisor-sectionring.md)
-- [TauCeti.isRiemannRochDivisor\_weilDifferentialDivisor](tauceti-isriemannrochdivisor-weildifferentialdiv.md)
+- [TauCeti.isRiemannRochDivisor_weilDifferentialDivisor](tauceti-isriemannrochdivisor-weildifferentialdiv.md)
 
 ## Lean
 

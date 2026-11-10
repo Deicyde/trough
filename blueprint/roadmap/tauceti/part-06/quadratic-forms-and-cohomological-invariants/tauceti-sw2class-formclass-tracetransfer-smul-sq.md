@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.sw2Class\_formClass\_traceTransfer\_smul\_sq
+# TauCeti.sw2Class_formClass_traceTransfer_smul_sq
 
 **The relative Stiefel–Whitney formula in degree two, on the trace forms themselves** (Kahn,
 Théorème 2 in degree two): for a quadratic extension `L/K`, which is separable as `2` is
@@ -41,7 +41,7 @@ TauCeti.sw2Class_formClass_traceTransfer_smul_sq.{u} {K L : Type u} [Field K] [I
 ## Proof depends on
 
 - [TauCeti.brauerCohomologyEquiv](tauceti-brauercohomologyequiv.md)
-- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

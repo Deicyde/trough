@@ -20,7 +20,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [IsFreeGroup.maximal\_isMulCommutative\_iff](isfreegroup-maximal-ismulcommutative-iff.md)
+- [IsFreeGroup.maximal_isMulCommutative_iff](isfreegroup-maximal-ismulcommutative-iff.md)
 
 ## Lean
 

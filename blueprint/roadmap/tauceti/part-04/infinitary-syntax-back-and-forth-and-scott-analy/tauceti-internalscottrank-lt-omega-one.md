@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.internalScottRank\_lt\_omega\_one
+# TauCeti.internalScottRank_lt_omega_one
 
 Every countable structure has internal Scott rank below the first uncountable ordinal.
 The relational language need not be countable.
@@ -22,7 +22,7 @@ TauCeti.internalScottRank_lt_omega_one.{u, v, w} {L : FirstOrder.Language} [L.Is
 
 ## Proof depends on
 
-- [TauCeti.exists\_complete\_self\_stabilization](tauceti-exists-complete-self-stabilization.md)
+- [TauCeti.exists_complete_self_stabilization](tauceti-exists-complete-self-stabilization.md)
 
 ## Lean
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.BinaryGolay.isEven\_ofIsotropicSubgroup\_codeInZeroLatticeDiscriminantGroup
+# TauCeti.BinaryGolay.isEven_ofIsotropicSubgroup_codeInZeroLatticeDiscriminantGroup
 
 **Gluing `2 ℤ²⁴` along the Golay code gives an even lattice**, because the glue is
 quadratic-isotropic.

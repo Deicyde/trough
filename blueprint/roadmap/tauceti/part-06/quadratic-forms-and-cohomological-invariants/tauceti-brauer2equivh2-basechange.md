@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.brauer2EquivH2\_baseChange
+# TauCeti.brauer2EquivH2_baseChange
 
 Scalar extension of any two-torsion Brauer class corresponds under `ι` to
 restriction of its mod-two Galois cohomology class.

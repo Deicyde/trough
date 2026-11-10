@@ -23,7 +23,7 @@ $$
 
 ## Lean
 
-Formalized as [`ArithmeticFunction.LSeries_liouville_eq`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.LSeries_liouville_eq).
+Stated as [`ArithmeticFunction.LSeries_liouville_eq`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/ArithmeticFunction.LSeries_liouville_eq); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -14,26 +14,26 @@ Strictly speaking our definition of $d_A(\phi)$ depends on the choice of regular
 
 Here are some basic results about this construction. In all of them, $A$ is a locally compact topological group and $\phi:A\to A$ is a group isomorphism and a homeomorphism. The first lemma shows that the definition of $d_A(\phi)$ is indeed independent of the choice of Haar measure.
 
-- [MeasureTheory.addEquivAddHaarChar\_eq](measuretheory-addequivaddhaarchar-eq.md)
-- [MeasureTheory.addEquivAddHaarChar\_smul\_map](measuretheory-addequivaddhaarchar-smul-map.md)
+- [MeasureTheory.addEquivAddHaarChar_eq](measuretheory-addequivaddhaarchar-eq.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_map](measuretheory-addequivaddhaarchar-smul-map.md)
 
 We can of course also pull a Haar measure $\mu$ back along a homeomorphism $\phi$, giving a measure $\phi^*\mu$ such that $\phi^*\mu(X)=\mu(\phi(X))$.
 
-- [MeasureTheory.addEquivAddHaarChar\_comap](measuretheory-addequivaddhaarchar-comap.md)
+- [MeasureTheory.addEquivAddHaarChar_comap](measuretheory-addequivaddhaarchar-comap.md)
 
 Now let $\mu$ be any regular additive Haar measure on $A$.
 
-- [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md)
-- [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map](measuretheory-addequivaddhaarchar-smul-integral.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_integral_map](measuretheory-addequivaddhaarchar-smul-integral.md)
 
 We also have the following variant:
 
-- [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_comap](measuretheory-addequivaddhaarchar-smul-integral-2.md)
+- [MeasureTheory.addEquivAddHaarChar_smul_integral_comap](measuretheory-addequivaddhaarchar-smul-integral-2.md)
 
-Note that as a consequence of lemma [MeasureTheory.addEquivAddHaarChar\_smul\_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md), if $X$ is a Borel subset of $A$ with positive finite measure then we can read off $d_A(\phi)$ by $d_A(\phi)=\mu(X)/\mu(\phi^{-1}(X))$, and hence also by $d_A(\phi)=\mu(\phi(X))/\mu(X)$. A nice special case is when $\mu(X)=1$, in which case we have $d_A(\phi)=\mu(\phi(X))$ for all $\phi$, or $d_A(\phi)=1/\mu(\phi^{-1}(X))$. Similarly, by lemma [MeasureTheory.addEquivAddHaarChar\_smul\_integral\_map](measuretheory-addequivaddhaarchar-smul-integral.md), if $f$ is a measurable function with $0\lt \int f(x)d\mu(x)\lt \infty$ then we can read off $d_A(\phi)$ by $d_A(\phi)=(\int f(x)d\mu(x))/(\int f(x)\phi_*\mu(x))$. Note that mathlib supplies such $f$ with the function exists\_continuous\_nonneg\_pos. The following are also straightforward.
+Note that as a consequence of lemma [MeasureTheory.addEquivAddHaarChar_smul_preimage](measuretheory-addequivaddhaarchar-smul-preimage.md), if $X$ is a Borel subset of $A$ with positive finite measure then we can read off $d_A(\phi)$ by $d_A(\phi)=\mu(X)/\mu(\phi^{-1}(X))$, and hence also by $d_A(\phi)=\mu(\phi(X))/\mu(X)$. A nice special case is when $\mu(X)=1$, in which case we have $d_A(\phi)=\mu(\phi(X))$ for all $\phi$, or $d_A(\phi)=1/\mu(\phi^{-1}(X))$. Similarly, by lemma [MeasureTheory.addEquivAddHaarChar_smul_integral_map](measuretheory-addequivaddhaarchar-smul-integral.md), if $f$ is a measurable function with $0\lt \int f(x)d\mu(x)\lt \infty$ then we can read off $d_A(\phi)$ by $d_A(\phi)=(\int f(x)d\mu(x))/(\int f(x)\phi_*\mu(x))$. Note that mathlib supplies such $f$ with the function exists\_continuous\_nonneg\_pos. The following are also straightforward.
 
-- [MeasureTheory.addEquivAddHaarChar\_refl](measuretheory-addequivaddhaarchar-refl.md)
-- [MeasureTheory.addEquivAddHaarChar\_trans](measuretheory-addequivaddhaarchar-trans.md)
+- [MeasureTheory.addEquivAddHaarChar_refl](measuretheory-addequivaddhaarchar-refl.md)
+- [MeasureTheory.addEquivAddHaarChar_trans](measuretheory-addequivaddhaarchar-trans.md)
 
 ## Scaling Haar measure on a ring
 
@@ -41,11 +41,11 @@ Now let $R$ be a locally compact topological ring. The *Haar character* of $R$, 
 
 - [MeasureTheory.ringHaarChar](measuretheory-ringhaarchar.md)
 
-Lemmas [MeasureTheory.addEquivAddHaarChar\_refl](measuretheory-addequivaddhaarchar-refl.md) and [MeasureTheory.addEquivAddHaarChar\_trans](measuretheory-addequivaddhaarchar-trans.md) immediately imply that $\delta_R$ is a group homomorphism from $R^\times$ to $\mathbb{R}_{>0}$. Also immediate from previous lemmas is
+Lemmas [MeasureTheory.addEquivAddHaarChar_refl](measuretheory-addequivaddhaarchar-refl.md) and [MeasureTheory.addEquivAddHaarChar_trans](measuretheory-addequivaddhaarchar-trans.md) immediately imply that $\delta_R$ is a group homomorphism from $R^\times$ to $\mathbb{R}_{>0}$. Also immediate from previous lemmas is
 
-- [MeasureTheory.ringHaarChar\_mul\_integral](measuretheory-ringhaarchar-mul-integral.md)
-- [MeasureTheory.ringHaarChar\_mul\_volume](measuretheory-ringhaarchar-mul-volume.md)
+- [MeasureTheory.ringHaarChar_mul_integral](measuretheory-ringhaarchar-mul-integral.md)
+- [MeasureTheory.ringHaarChar_mul_volume](measuretheory-ringhaarchar-mul-volume.md)
 
 The next result lies a little deeper.
 
-- [MeasureTheory.ringHaarChar\_continuous](measuretheory-ringhaarchar-continuous.md)
+- [MeasureTheory.ringHaarChar_continuous](measuretheory-ringhaarchar-continuous.md)

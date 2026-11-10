@@ -10,4 +10,4 @@ It is not hard to check that $\widehat{D}$ contains $\widehat{\mathcal{O}}$ and 
 
 However the multiplicative structure is more interesting, especially as $D$ is not commutative. For a general quaternion algebra it is *not* true that $(\widehat{D})^\times=D^\times(\widehat{\mathcal{O}})^\times$, because there are "class group obstructions". The double coset space is some kind of non-commutative analogue of a class group. However for our particular choice of $D$ and $\mathcal{O}$ the result is true.
 
-- [HurwitzRatHat.completed\_units](hurwitzrathat-completed-units.md)
+- [HurwitzRatHat.completed_units](hurwitzrathat-completed-units.md)

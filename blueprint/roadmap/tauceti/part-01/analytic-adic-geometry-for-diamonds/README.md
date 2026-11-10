@@ -4,8 +4,8 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Morphisms out of the Huber pair of a finite algebra](morphisms-out-of-the-huber-pair-of-a-finite-alge.md)
 - [A finite algebra over a Tate ring is a Tate ring](a-finite-algebra-over-a-tate-ring-is-a-tate-ring.md)
-- [TauCeti.isFiniteEtaleSplit\_iff\_exists\_section](tauceti-isfiniteetalesplit-iff-exists-section.md)
-- [TauCeti.IsFiniteEtaleSplit.of\_henselianLocalRing](tauceti-isfiniteetalesplit-of-henselianlocalring.md)
+- [TauCeti.isFiniteEtaleSplit_iff_exists_section](tauceti-isfiniteetalesplit-iff-exists-section.md)
+- [TauCeti.IsFiniteEtaleSplit.of_henselianLocalRing](tauceti-isfiniteetalesplit-of-henselianlocalring.md)
 - [Henselian pairs are stable under directed colimits](henselian-pairs-are-stable-under-directed-colimi.md)
 - [TauCeti.IsFiniteEtaleSplit](tauceti-isfiniteetalesplit.md)
 - [TauCeti.Huber.IsPseudoCoherentOver](tauceti-huber-ispseudocoherentover.md)

@@ -3,7 +3,8 @@
 Maps of Lean formalization libraries: what each one formalizes and how its
 results depend on one another, not what the library may add. The maps are AutoformBot
 vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot)
-and published at https://deicyde.github.io/trough/.
+and published at https://deicyde.github.io/trough/. The book shows no Lean
+progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
 `catalog/libraries.toml` lists the 61 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with blueprints (Imperial's FLT, PNT+, PFR,
@@ -20,7 +21,7 @@ leanblueprints: Imperial's FLT, PFR, Equational Theories, Strong PNT and PNT+.
 Mathlib's maintainers keep four curated lists: `docs/overview.yaml`,
 `docs/undergrad.yaml`, `docs/100.yaml` and `docs/1000.yaml`. The map has one
 article per concept on them that Mathlib has: its declarations, a module, or a
-statement Mathlib states without a proof, which is marked not ready. Items
+statement Mathlib states without a proof, whose article says so. Items
 naming the same declarations, or the same first declaration, are one article,
 placed in the first list that has it (overview, undergraduate, 100, 1000+); the
 other lists link to it. An item naming none of these has no article, and its
@@ -118,7 +119,8 @@ and signature, titled by the docstring's bold lead when it has one.
    chain of unnamed Tau Ceti declarations; a name that does not resolve is
    listed as missing and has no article, as is one that now resolves outside
    Tau Ceti. A theorem whose proof reaches `sorry`, itself or through another
-   named declaration, is shown as stated, not proved.
+   named declaration, is recorded as stated, not proved, and its article says
+   so.
 3. A change to either pin file runs the workflow too, so the committed dump
    always matches the pins. The weekly run, or a dispatch with `newest`, moves both pins: Tau Ceti to
    its newest main commit whose CI passed, so its cache exists, and the

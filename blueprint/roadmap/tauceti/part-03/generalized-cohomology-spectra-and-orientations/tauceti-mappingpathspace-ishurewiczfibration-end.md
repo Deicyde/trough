@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.MappingPathSpace.isHurewiczFibration\_endpoint
+# TauCeti.MappingPathSpace.isHurewiczFibration_endpoint
 
 The endpoint map of a mapping-path replacement is a Hurewicz fibration, for test spaces in
 every universe.

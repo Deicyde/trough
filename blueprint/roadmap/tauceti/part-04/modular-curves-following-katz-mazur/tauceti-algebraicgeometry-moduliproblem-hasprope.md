@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.AlgebraicGeometry.ModuliProblem.hasProperty\_etale\_gammaRelRepData
+# TauCeti.AlgebraicGeometry.ModuliProblem.hasProperty_etale_gammaRelRepData
 
 **The moduli problem `[Γ(N)]` is étale over `Ell/B` when `N` is invertible on `B`**
 (Katz–Mazur, 3.7.1): where `N` is invertible on `B`, `[Γ(N)]` is isomorphic to `[Γ(N)]_naive`,
@@ -26,7 +26,7 @@ TauCeti.AlgebraicGeometry.ModuliProblem.hasProperty_etale_gammaRelRepData.{u}
 
 ## Proof depends on
 
-- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale\_torsion\_hom\_of\_forall\_intCast\_ne\_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
+- [TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale_torsion_hom_of_forall_intCast_ne_zero](tauceti-algebraicgeometry-ellipticcurvegeom-etal.md)
 - [TauCeti.AlgebraicGeometry.ModuliProblem.gammaIsoGammaNaive](tauceti-algebraicgeometry-moduliproblem-gammaiso.md)
 
 ## Lean

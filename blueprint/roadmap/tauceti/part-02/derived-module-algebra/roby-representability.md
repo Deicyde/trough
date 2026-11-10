@@ -24,7 +24,7 @@ DividedPowerAlgebra.homogeneousLawEquiv.{u, u_1, u_2} (R : Type u) [CommSemiring
 
 ## Proof depends on
 
-- [DividedPowerAlgebra.isInternal\_homogeneousSubmodule](dividedpoweralgebra-isinternal-homogeneoussubmod.md)
+- [DividedPowerAlgebra.isInternal_homogeneousSubmodule](dividedpoweralgebra-isinternal-homogeneoussubmod.md)
 - [PolynomialLaw.coeff](polynomiallaw-coeff.md)
 
 ## Lean

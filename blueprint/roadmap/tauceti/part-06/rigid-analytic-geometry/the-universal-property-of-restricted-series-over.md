@@ -33,7 +33,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Restricted series over an affinoid algebra form an affinoid algebra](restricted-series-over-an-affinoid-algebra-form.md)
-- [TauCeti.IsAffinoidAlgebra.continuous\_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [TauCeti.IsAffinoidAlgebra.continuous_algHom](tauceti-isaffinoidalgebra-continuous-alghom.md)
 
 ## Lean
 

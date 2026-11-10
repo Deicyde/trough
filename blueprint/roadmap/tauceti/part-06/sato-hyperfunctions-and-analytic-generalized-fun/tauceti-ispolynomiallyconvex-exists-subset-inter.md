@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsPolynomiallyConvex.exists\_subset\_interior\_polynomialPolyhedron
+# TauCeti.IsPolynomiallyConvex.exists_subset_interior_polynomialPolyhedron
 
 A compact polynomially convex set `K ⊆ ℂⁿ` lies in the interior of a polynomial polyhedron
 contained in any given open neighbourhood `U` of `K`.

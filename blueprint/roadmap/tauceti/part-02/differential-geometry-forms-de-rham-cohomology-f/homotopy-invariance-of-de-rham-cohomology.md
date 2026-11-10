@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [TauCeti.homotopyOperator](tauceti-homotopyoperator.md)
-- [TauCeti.mextDeriv\_homotopyOperator\_add\_homotopyOperator\_mextDeriv](tauceti-mextderiv-homotopyoperator-add-homotopyo.md)
+- [TauCeti.mextDeriv_homotopyOperator_add_homotopyOperator_mextDeriv](tauceti-mextderiv-homotopyoperator-add-homotopyo.md)
 
 ## Lean
 

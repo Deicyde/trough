@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# RootPairing.one\_sub\_single\_neg\_root\_mul\_demazureOperator
+# RootPairing.one_sub_single_neg_root_mul_demazureOperator
 
 **The localization identity** of the Demazure operator:
 `(1 - e^{-αᵢ}) Dᵢ(f) = f - e^{-αᵢ} sᵢ(f)`, where `sᵢ` reindexes `ℤ[M]` along the reflection of

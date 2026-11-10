@@ -32,7 +32,7 @@ and the claim then follows from the triangle inequality.
 
 ## Lean
 
-Formalized as [`prelim_decay_2`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/prelim_decay_2).
+Stated as [`prelim_decay_2`](https://AlexKontorovich.github.io/PrimeNumberTheoremAnd/docs/find/#doc/prelim_decay_2); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

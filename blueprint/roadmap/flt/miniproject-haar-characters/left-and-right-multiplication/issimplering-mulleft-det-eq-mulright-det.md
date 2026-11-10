@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/518
 ---
 
-# IsSimpleRing.mulLeft\_det\_eq\_mulRight\_det
+# IsSimpleRing.mulLeft_det_eq_mulRight_det
 
 Say $B$ is a finite-dimensional central simple algebra over a field $k$, and $u\in B^\times$. Let $\ell_u:B\to B$ be the $k$-linear mapping $x$ to $ux$ and let $r_u:B\to B$ be the $k$-linear map sending $x$ to $xu$. Then $\det(\ell_u)=\det(r_u)$.
 

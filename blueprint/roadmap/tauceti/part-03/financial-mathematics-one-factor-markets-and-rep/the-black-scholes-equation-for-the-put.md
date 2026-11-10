@@ -29,8 +29,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.BlackScholes.callPrice\_sub\_putPrice](tauceti-blackscholes-callprice-sub-putprice.md)
-- [TauCeti.BlackScholes.mul\_gaussianPDFReal\_dPlus](tauceti-blackscholes-mul-gaussianpdfreal-dplus.md)
+- [TauCeti.BlackScholes.callPrice_sub_putPrice](tauceti-blackscholes-callprice-sub-putprice.md)
+- [TauCeti.BlackScholes.mul_gaussianPDFReal_dPlus](tauceti-blackscholes-mul-gaussianpdfreal-dplus.md)
 
 ## Lean
 

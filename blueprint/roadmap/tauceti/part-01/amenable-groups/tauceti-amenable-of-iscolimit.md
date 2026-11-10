@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Amenable.of\_isColimit
+# TauCeti.Amenable.of_isColimit
 
 The apex of a colimit cocone over a filtered diagram of amenable topological groups in `GrpCat`
 is amenable, provided the legs of the cocone are continuous.
@@ -26,7 +26,7 @@ TauCeti.Amenable.of_isColimit.{u, v_1, u_1} {J : Type u_1} [CategoryTheory.Categ
 
 ## Proof depends on
 
-- [TauCeti.amenable\_iff\_forall\_finset\_exists](tauceti-amenable-iff-forall-finset-exists.md)
+- [TauCeti.amenable_iff_forall_finset_exists](tauceti-amenable-iff-forall-finset-exists.md)
 - [TauCeti.UCB.leftTranslation](tauceti-ucb-lefttranslation.md)
 
 ## Lean

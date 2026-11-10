@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.nonempty\_linearEquiv\_of\_projective\_of\_tensorRat
+# TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat
 
 **Swan's theorem for `ℤ_p[G]`** (NSW (5.6.10)(ii)). Two finitely generated projective
 `ℤ_p[G]`-modules with isomorphic rationalizations are isomorphic.

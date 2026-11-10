@@ -4,8 +4,8 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 
 - [Cohen–Hewitt factorization](cohen-hewitt-factorization.md)
 - [Sinclair's stability lemma](sinclairs-stability-lemma.md)
-- [LinearMap.continuous\_iff\_separatingSpace\_eq\_bot](linearmap-continuous-iff-separatingspace-eq-bot.md)
-- [TauCeti.Ring.mem\_jacobson\_iff\_forall\_gelfandRadius\_mul\_eq\_zero](tauceti-ring-mem-jacobson-iff-forall-gelfandradi.md)
+- [LinearMap.continuous_iff_separatingSpace_eq_bot](linearmap-continuous-iff-separatingspace-eq-bot.md)
+- [TauCeti.Ring.mem_jacobson_iff_forall_gelfandRadius_mul_eq_zero](tauceti-ring-mem-jacobson-iff-forall-gelfandradi.md)
 - [The homology Cauchy theorem for contour cycles](the-homology-cauchy-theorem-for-contour-cycles.md)
 - [LinearMap.separatingSpace](linearmap-separatingspace.md)
 - [TauCeti.nonUnitalJacobson](tauceti-nonunitaljacobson.md)

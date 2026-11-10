@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# ContinuousLinearMap.polarFactor\_comp\_modulus
+# ContinuousLinearMap.polarFactor_comp_modulus
 
 **Polar decomposition** of a bounded operator: `U |T| = T`.
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_diffeomorph\_sublevel
+# TauCeti.exists_diffeomorph_sublevel
 
 **Sublevels on either side of a band without critical points are diffeomorphic**
 (Milnor, Theorem 3.1). If `f` is smooth, `a ≤ b`, and the band `f⁻¹[a, b]` is compact and contains

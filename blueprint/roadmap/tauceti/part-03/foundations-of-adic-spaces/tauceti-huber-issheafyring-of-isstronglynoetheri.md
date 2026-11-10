@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Huber.isSheafyRing\_of\_isStronglyNoetherian
+# TauCeti.Huber.isSheafyRing_of_isStronglyNoetherian
 
 **Every strongly noetherian Tate ring is sheafy** in the sense of Wedhorn's Definition 8.26
 (`TauCeti.Huber.IsSheafyRing`). This is Wedhorn's Theorem 8.28(b); `A` need not be complete or

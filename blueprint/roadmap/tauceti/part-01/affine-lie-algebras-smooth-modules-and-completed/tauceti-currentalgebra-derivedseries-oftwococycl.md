@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.CurrentAlgebra.derivedSeries\_ofTwoCocycle\_eq\_top\_iff
+# TauCeti.CurrentAlgebra.derivedSeries_ofTwoCocycle_eq_top_iff
 
 The residue central extension of a perfect Lie algebra over a field is perfect if and
 only if its form is nonzero. No finite-dimensionality or characteristic assumption is needed.

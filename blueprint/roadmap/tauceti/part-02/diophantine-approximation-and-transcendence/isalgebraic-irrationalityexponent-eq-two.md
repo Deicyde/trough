@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsAlgebraic.irrationalityExponent\_eq\_two
+# IsAlgebraic.irrationalityExponent_eq_two
 
 The irrationality exponent of a real algebraic irrational number is two.
 
@@ -21,7 +21,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [IsAlgebraic.finite\_setOfPred\_abs\_sub\_le\_mulHeight₁\_rpow\_neg](isalgebraic-finite-setofpred-abs-sub-le-mulheigh.md)
+- [IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight₁_rpow_neg](isalgebraic-finite-setofpred-abs-sub-le-mulheigh.md)
 
 ## Lean
 

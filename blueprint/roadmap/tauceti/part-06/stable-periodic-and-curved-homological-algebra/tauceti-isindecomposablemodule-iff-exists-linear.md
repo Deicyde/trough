@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isIndecomposableModule\_iff\_exists\_linearEquiv\_quotient\_span\_op\_root\_X\_pow\_pow
+# TauCeti.isIndecomposableModule_iff_exists_linearEquiv_quotient_span_op_root_X_pow_pow
 
 **The indecomposable finitely generated right modules over `A = K[X]/(Xⁿ)` are exactly the
 `M_i`**, up to isomorphism: such a module is indecomposable exactly when it is isomorphic to

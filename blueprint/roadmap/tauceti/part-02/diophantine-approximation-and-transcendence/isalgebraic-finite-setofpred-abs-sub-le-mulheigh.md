@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsAlgebraic.finite\_setOfPred\_abs\_sub\_le\_mulHeight₁\_rpow\_neg
+# IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight₁_rpow_neg
 
 **Roth's theorem** (Roth, 1955). If `α` is a real algebraic number and `κ > 2`, then only
 finitely many rational numbers `ξ` satisfy `|ξ - α| ≤ H(ξ) ^ (-κ)`, where `H` is the

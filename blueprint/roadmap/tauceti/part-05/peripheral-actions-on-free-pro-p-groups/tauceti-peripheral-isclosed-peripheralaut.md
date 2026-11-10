@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Peripheral.isClosed\_peripheralAut
+# TauCeti.Peripheral.isClosed_peripheralAut
 
 **The peripheral automorphisms form a closed subgroup** of `ContinuousAut F` for the
 congruence topology, when `F` is topologically finitely generated.

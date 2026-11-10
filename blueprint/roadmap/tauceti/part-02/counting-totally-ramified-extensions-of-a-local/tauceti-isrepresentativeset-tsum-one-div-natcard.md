@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsRepresentativeSet.tsum\_one\_div\_natCard\_algEquiv\_mul\_natCard\_residueField\_pow\_wildExponent\_eq\_one\_iff
+# TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueField_pow_wildExponent_eq_one_iff
 
 For `0 < n`, Serre's mass formula over a set of representatives,
 `∑_{M ∈ R} 1 / (#Aut_K(M) · q ^ c(M)) = 1`, is equivalent to the mass formula over `σ_K(n)`,
@@ -38,7 +38,7 @@ TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueFie
 ## Proof depends on
 
 - [TauCeti.algebraicExtensionNormedField](../../part-04/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
-- [TauCeti.ncard\_isomorphic\_mul\_natCard\_algEquiv](tauceti-ncard-isomorphic-mul-natcard-algequiv.md)
+- [TauCeti.ncard_isomorphic_mul_natCard_algEquiv](tauceti-ncard-isomorphic-mul-natcard-algequiv.md)
 - [TauCeti.relDiscr](../../part-05/number-fields-ramification-frobenius-and-the-lmf/tauceti-reldiscr.md)
 
 ## Lean

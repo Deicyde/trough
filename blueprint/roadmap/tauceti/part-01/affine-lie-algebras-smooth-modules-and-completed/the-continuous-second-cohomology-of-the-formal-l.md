@@ -28,7 +28,7 @@ TauCeti.CurrentAlgebra.finrank_continuousSecondCohomology_eq_one.{u_4, u_5} (K :
 
 ## Proof depends on
 
-- [TauCeti.LieAlgebra.exists\_eq\_smul\_killingForm](tauceti-liealgebra-exists-eq-smul-killingform.md)
+- [TauCeti.LieAlgebra.exists_eq_smul_killingForm](tauceti-liealgebra-exists-eq-smul-killingform.md)
 - [Whitehead's first lemma](whiteheads-first-lemma.md)
 
 ## Lean

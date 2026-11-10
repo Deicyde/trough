@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.FiniteEtaleScheme.epi\_iff\_surjective
+# TauCeti.FiniteEtaleScheme.epi_iff_surjective
 
 A morphism of finite étale schemes is an epimorphism if and only if its underlying morphism
 of schemes is surjective.
@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.FiniteEtaleScheme.exists\_isColimit\_binaryCofanMk\_of\_mono](tauceti-finiteetalescheme-exists-iscolimit-binar.md)
+- [TauCeti.FiniteEtaleScheme.exists_isColimit_binaryCofanMk_of_mono](tauceti-finiteetalescheme-exists-iscolimit-binar.md)
 
 ## Lean
 

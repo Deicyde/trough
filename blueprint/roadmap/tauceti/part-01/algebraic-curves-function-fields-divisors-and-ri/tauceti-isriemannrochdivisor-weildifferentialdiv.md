@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isRiemannRochDivisor\_weilDifferentialDivisor
+# TauCeti.isRiemannRochDivisor_weilDifferentialDivisor
 
 **The Riemann–Roch theorem** (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself:
 the divisor of a nonzero Weil differential is a Riemann–Roch divisor for the genus.

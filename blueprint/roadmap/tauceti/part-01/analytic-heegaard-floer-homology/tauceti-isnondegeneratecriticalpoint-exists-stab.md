@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsNondegenerateCriticalPoint.exists\_stableSet\_isManifold
+# TauCeti.IsNondegenerateCriticalPoint.exists_stableSet_isManifold
 
 The global stable set of a Morse critical point of a globally `C^(n+1)` function has a `C^n`
 manifold structure modelled on the stable Hessian subspace, with its subspace topology and a

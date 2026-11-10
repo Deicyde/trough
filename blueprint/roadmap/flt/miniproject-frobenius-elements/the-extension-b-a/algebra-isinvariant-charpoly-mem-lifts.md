@@ -5,7 +5,7 @@ mathlib: true
 mathlib_declaration: Algebra.IsInvariant.charpoly_mem_lifts
 ---
 
-# Algebra.IsInvariant.charpoly\_mem\_lifts
+# Algebra.IsInvariant.charpoly_mem_lifts
 
 $F_b$ is the lift of some monic polynomial $M_b$ in $A[X]$.
 

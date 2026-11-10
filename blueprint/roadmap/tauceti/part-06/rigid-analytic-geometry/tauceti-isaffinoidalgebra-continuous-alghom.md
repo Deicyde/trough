@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.IsAffinoidAlgebra.continuous\_algHom
+# TauCeti.IsAffinoidAlgebra.continuous_algHom
 
 Every homomorphism from a noetherian ultrametric Banach algebra to a completely normed
 affinoid algebra is continuous. The affinoid presentation is purely algebraic.

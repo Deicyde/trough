@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.coeff\_rayTorusWeightSeries
+# TauCeti.coeff_rayTorusWeightSeries
 
 **Independent-component expansion** of the ray series: its `n`-th coefficient is the sum,
 over all configurations `l` of total class `n • A₀` (the elements of

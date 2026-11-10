@@ -20,7 +20,7 @@ Follows immediately from the previous two theorems [Mazur](mazur-frey.md) and [W
 
 ## Lean
 
-Formalized as [`FLT.Bosses.B3_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B3_proof).
+Stated as [`FLT.Bosses.B3_proof`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/FLT.Bosses.B3_proof); the blueprint marks no proof of it as formalized.
 
 ## Sources
 

@@ -7,7 +7,7 @@ proof: formalized
 discussion: https://github.com/ImperialCollegeLondon/FLT/issues/516
 ---
 
-# MeasureTheory.ringHaarChar\_continuous
+# MeasureTheory.ringHaarChar_continuous
 
 The function $\delta_R:R^\times\to\mathbb{R}_{>0}$ is continuous.
 
@@ -17,11 +17,11 @@ The function $\delta_R:R^\times\to\mathbb{R}_{>0}$ is continuous.
 
 ## Proof depends on
 
-- [MeasureTheory.ringHaarChar\_mul\_integral](measuretheory-ringhaarchar-mul-integral.md)
+- [MeasureTheory.ringHaarChar_mul_integral](measuretheory-ringhaarchar-mul-integral.md)
 
 ## Proof
 
-Fix a Haar measure $\mu$ on $R$ and a continuous real-valued function $f$ on $R$ with compact support and such that $\int f(x) d\mu(x)\not=0$. Then $r \mapsto \int f(rx) d\mu(x)$ is a continuous function from $R\to\mathbb{R}$ (because a continuous function with compact support is uniformly continuous) and thus gives a continuous function $R^\times\to\mathbb{R}$. Thus the function $u\mapsto (\int f(ux) d\mu(x))/(\int f(x)d\mu(x))$ is a continuous function from $R^\times$ to $\mathbb{R}$ taking values in $\mathbb{R}_{>0}$. Hence $\delta_R^{-1}$ is continuous, from lemma [MeasureTheory.ringHaarChar\_mul\_integral](measuretheory-ringhaarchar-mul-integral.md), and thus $\delta_R$ is too.
+Fix a Haar measure $\mu$ on $R$ and a continuous real-valued function $f$ on $R$ with compact support and such that $\int f(x) d\mu(x)\not=0$. Then $r \mapsto \int f(rx) d\mu(x)$ is a continuous function from $R\to\mathbb{R}$ (because a continuous function with compact support is uniformly continuous) and thus gives a continuous function $R^\times\to\mathbb{R}$. Thus the function $u\mapsto (\int f(ux) d\mu(x))/(\int f(x)d\mu(x))$ is a continuous function from $R^\times$ to $\mathbb{R}$ taking values in $\mathbb{R}_{>0}$. Hence $\delta_R^{-1}$ is continuous, from lemma [MeasureTheory.ringHaarChar_mul_integral](measuretheory-ringhaarchar-mul-integral.md), and thus $\delta_R$ is too.
 
 ## Lean
 

@@ -11,4 +11,4 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [An order is Gorenstein exactly when all of its proper fractional ideals are invertible](an-order-is-gorenstein-exactly-when-all-of-its-p.md)
 - [IsDedekindDomain.FiniteAdeleRing.sIntegralAdeles](isdedekinddomain-finiteadelering-sintegraladeles.md)
 - [The idele class group splits as `C_K¹ × ℝ>0`](the-idele-class-group-splits-as-c-k1-r-0.md)
-- [TauCeti.GlobalNumberFields.adeleBaseChangeEquiv\_tower](tauceti-globalnumberfields-adelebasechangeequiv.md)
+- [TauCeti.GlobalNumberFields.adeleBaseChangeEquiv_tower](tauceti-globalnumberfields-adelebasechangeequiv.md)

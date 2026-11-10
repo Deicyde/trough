@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isWeakHomotopyEquivalence\_cwApproximationMap
+# TauCeti.isWeakHomotopyEquivalence_cwApproximationMap
 
 **CW approximation** (Hatcher, Proposition 4.13). For a path-connected space `X`, the map
 `TauCeti.cwApproximationMap X x` from the CW complex `TauCeti.cwApproximation X x` to `X` is a weak

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.Algebra.etale\_iff\_traceForm\_nondegenerate
+# TauCeti.Algebra.etale_iff_traceForm_nondegenerate
 
 A finite-dimensional algebra over a field is étale iff its trace form is nondegenerate. The
 fibre case in the proof of Stacks, Lemma 49.3.1 (0BJF).

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# IsModuleTopology.continuous\_bilinear\_of\_finite\_left
+# IsModuleTopology.continuous_bilinear_of_finite_left
 
 Say $R$ and $S$ are topological rings, and $S$ is an $R$-algebra, finite as an $R$-module. Assume that the topology on $S$ is the $R$-module topology. Now say $M$ is an $S$-module, and give it the induced $R$-module structure. Then the $R$-module topology and $S$-module topology on $M$ coincide.
 

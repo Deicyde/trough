@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.RegularFormClass.cliffordInvariant\_eq\_hasseInvariant\_mul
+# TauCeti.RegularFormClass.cliffordInvariant_eq_hasseInvariant_mul
 
 **Lam's comparison of the Clifford and Hasse invariants** (Lam V.3.20). For a class of
 rank `n` with discriminant `d`, `c(q) = s(q) · [(-1, d)]^C(n-1,2) · [(-1,-1)]^C(n+1,4)`, where
@@ -28,7 +28,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.QuaternionAlgebra.nonempty\_algEquiv\_matrix\_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
+- [TauCeti.QuaternionAlgebra.nonempty_algEquiv_matrix_tfae](tauceti-quaternionalgebra-nonempty-algequiv-matr.md)
 
 ## Lean
 

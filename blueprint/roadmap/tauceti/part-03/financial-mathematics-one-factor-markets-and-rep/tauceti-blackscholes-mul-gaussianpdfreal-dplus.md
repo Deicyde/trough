@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.BlackScholes.mul\_gaussianPDFReal\_dPlus
+# TauCeti.BlackScholes.mul_gaussianPDFReal_dPlus
 
 The Black–Scholes density identity `s φ(d₊) = K e^{-rτ} φ(d₋)`, where `φ` is the standard
 Gaussian density. It expresses that `d₊² - d₋² = 2 (log (s / K) + r τ)`.

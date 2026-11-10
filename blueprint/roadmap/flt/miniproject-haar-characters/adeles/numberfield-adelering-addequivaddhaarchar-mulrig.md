@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.addEquivAddHaarChar\_mulRight\_unit\_eq\_one
+# NumberField.AdeleRing.addEquivAddHaarChar_mulRight_unit_eq_one
 
 If $B$ is a finite-dimensional $\mathbb{Q}$-algebra and if $b\in B^\times$ then right multiplication by $b$ does not change Haar measure on $B_{\mathbb{A}}$.
 
@@ -16,7 +16,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [MeasureTheory.addHaarScalarFactor\_tensor\_adeles\_eq\_one](measuretheory-addhaarscalarfactor-tensor-adeles.md)
+- [MeasureTheory.addHaarScalarFactor_tensor_adeles_eq_one](measuretheory-addhaarscalarfactor-tensor-adeles.md)
 
 ## Proof
 

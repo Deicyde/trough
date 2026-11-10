@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.freeCumulant\_fiberProd\_eq\_sum\_prod
+# TauCeti.freeCumulant_fiberProd_eq_sum_prod
 
 *Free cumulants with products as arguments*, in multiplicative form:
 `κ(fiberProd a s f) = ∑_{π ⊔ σ_f = 1_s} ∏_{B ∈ π} κ_B(a)`, where `σ_f` is the partition of `s`
@@ -27,7 +27,7 @@ TauCeti.freeCumulant_fiberProd_eq_sum_prod.{u_1, u_2, u_3, u_4} {R : Type u_1} {
 
 ## Proof depends on
 
-- [TauCeti.partitionCumulant\_eq\_prod\_freeCumulant](tauceti-partitioncumulant-eq-prod-freecumulant.md)
+- [TauCeti.partitionCumulant_eq_prod_freeCumulant](tauceti-partitioncumulant-eq-prod-freecumulant.md)
 
 ## Lean
 

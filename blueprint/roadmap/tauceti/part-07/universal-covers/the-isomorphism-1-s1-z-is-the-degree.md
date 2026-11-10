@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [AddCircle.fundamentalGroupMulEquiv\_eq\_windingNumberIso](addcircle-fundamentalgroupmulequiv-eq-windingnum.md)
+- [AddCircle.fundamentalGroupMulEquiv_eq_windingNumberIso](addcircle-fundamentalgroupmulequiv-eq-windingnum.md)
 
 ## Lean
 

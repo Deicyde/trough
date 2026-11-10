@@ -17,3 +17,8 @@ def test_coverage_has_a_row_per_library_not_live():
     page = catalog.coverage(libraries, [("Mathlib / overview", "DECOMPOSED", "[x](a.md)")])
     rows = [line for line in page.splitlines() if line.startswith("| ") and "---" not in line]
     assert len(rows) == 2 + sum(library["map_status"] != "live" for library in libraries)
+
+
+def test_the_book_shows_no_lean_progress():
+    root = catalog.roadmap_root(catalog.load(CATALOG), {}, None)
+    assert root.startswith("---\ntracks_lean: false\n---\n\n# Trough\n")

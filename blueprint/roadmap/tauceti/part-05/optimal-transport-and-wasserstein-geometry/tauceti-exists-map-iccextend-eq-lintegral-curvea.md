@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.exists\_map\_IccExtend\_eq\_lintegral\_curveAction\_eq
+# TauCeti.exists_map_IccExtend_eq_lintegral_curveAction_eq
 
 **Lisini's superposition principle** in a complete separable metric space. Let `1 < p < ∞`
 and let `μ` be a curve in `P_p(X)`, absolutely continuous on `[a, b]` with finite `p`-action,

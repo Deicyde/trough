@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# DividedPowerAlgebra.isInternal\_homogeneousSubmodule
+# DividedPowerAlgebra.isInternal_homogeneousSubmodule
 
 The homogeneous pieces of the divided power algebra form an internal direct sum: the sum
 map `⨁ d, Γ^d_R(M) → Γ_R(M)` is bijective.

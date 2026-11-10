@@ -35,7 +35,7 @@ Representation.mk_finrank_symmetricAlgebraInvariants_inf_homogeneousSubmodule_eq
 
 ## Proof depends on
 
-- [Module.End.mk\_trace\_homogeneousSubmoduleMapₛₗ\_mul\_reverse\_charpoly\_of\_pow\_eq\_one](module-end-mk-trace-homogeneoussubmodulemapsl-mu.md)
+- [Module.End.mk_trace_homogeneousSubmoduleMapₛₗ_mul_reverse_charpoly_of_pow_eq_one](module-end-mk-trace-homogeneoussubmodulemapsl-mu.md)
 
 ## Lean
 

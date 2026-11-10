@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# NumberField.AdeleRing.DivisionAlgebra.Aux.X\_meets\_kernel'
+# NumberField.AdeleRing.DivisionAlgebra.Aux.X_meets_kernel'
 
 Similarly, if $\beta\in D_{\mathbb{A}}^{(1)}$ then $X\beta^{-1}\cap D^\times\not=\emptyset$.
 
@@ -20,7 +20,7 @@ Similarly, if $\beta\in D_{\mathbb{A}}^{(1)}$ then $X\beta^{-1}\cap D^\times\not
 
 ## Proof
 
-Indeed, $\beta^{-1}\in D_{\mathbb{A}}^{(1)}$, and so left multiplication by $\beta^{-1}$ doesn't change Haar measure on $D_{\mathbb{A}}$, so neither does right multiplication (by theorem addHaarScalarFactor.left\_mul\_eq\_right\_mul). So the same argument works: $E\beta^{-1}\to D\backslash D_{\mathbb{A}}$ is not injective so choose $e_1\beta^{-1}\not=e_2\beta^{-1}$ with difference $b\in D$ and then $(e_1-e_2)\beta^{-1}\in D-{0}=D^\times$.
+Indeed, $\beta^{-1}\in D_{\mathbb{A}}^{(1)}$, and so left multiplication by $\beta^{-1}$ doesn't change Haar measure on $D_{\mathbb{A}}$, so neither does right multiplication (by theorem addHaarScalarFactor.left_mul_eq_right_mul). So the same argument works: $E\beta^{-1}\to D\backslash D_{\mathbb{A}}$ is not injective so choose $e_1\beta^{-1}\not=e_2\beta^{-1}$ with difference $b\in D$ and then $(e_1-e_2)\beta^{-1}\in D-{0}=D^\times$.
 
 ## Lean
 

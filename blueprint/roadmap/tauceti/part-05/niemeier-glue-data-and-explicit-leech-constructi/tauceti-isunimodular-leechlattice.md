@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# TauCeti.isUnimodular\_leechLattice
+# TauCeti.isUnimodular_leechLattice
 
 **The Leech lattice is unimodular**, being glued along a Lagrangian subgroup.
 
