@@ -19,7 +19,8 @@ research projects from their leanblueprints (Imperial's FLT, PFR, Equational
 Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
 headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
-and Axiom's Stacks Project formalization from its Stacks tags.
+Axiom's CFSG from its proof's case division and its milestones, and Axiom's
+Stacks Project formalization from its Stacks tags.
 
 ## The Mathlib map
 
@@ -346,6 +347,54 @@ states.
    checkout, a landmark's statement file states another theorem or may be cut
    short, or the landmarks drop under half the last count.
 
+## The CFSG chapter
+
+[AxiomMath/CFSG](https://github.com/AxiomMath/CFSG), by Axiom Math, is a Lean
+proof of the classification of finite simple groups, built on Mathlib and Tau
+Ceti, whose statement of the classification it uses. Its code has no docstrings
+outside `CFSG/ThirdParty/`, so the chapter follows the proof as the Lean writes
+it and titles its articles by Lean names. `CFSG/Statement.lean` states the
+classification; its proof applies `CFSG.Assembly.classification` to the catalog
+of simple groups and to a theorem for each case of a case division that
+`CFSG/Assembly/Reduction.lean` defines, a proposition per case. The first part
+has an article for the top theorem, one for the reduction, with the case
+propositions' definitions, and one per case: what it asserts, the theorem that
+proves it and the milestones its file reaches. The second part has an article
+per milestone module, the results the authors single out directly under
+`CFSG/Milestones/`: each declaration's Lean statement, its line in the source
+and whether its proof holds `sorry`. The front page quotes the README and the
+facts and main results of its formalization.yaml, and counts the files and
+theorems of the largest folders. The top theorem depends on the reduction and
+the cases, as its proof names them; every other edge means that one case or
+milestone file imports another's, directly or not, through no other case or
+milestone file, and imports of the file that declares the catalog are left out.
+Where a statement writes out the name of a declaration with an article in the
+Tau Ceti chapter, the article links it.
+
+1. `tools/refresh_cfsg.py CHECKOUT` reads a checkout and writes
+   `data/cfsg/source.json`, the commit, its date, toolchain, Mathlib and Tau
+   Ceti, and `proof.json`: the top theorem and the catalog, the reduction's
+   declarations, each case with its proposition and theorem, each milestone
+   module's declarations, the case and milestone files each such file
+   imports, directly or not, through no other, the main results, the facts of
+   formalization.yaml, the README's opening and the files and theorems of each
+   folder. It reads every Lean file but the certificates, which it counts.
+2. `tools/trough/leansource.py` reads each file as it does for Formal Frontier.
+   The top theorem's proof is read as a function and its arguments: the
+   reduction, the catalog, a theorem per hypothesis of the reduction, in its
+   order, and the group. The repository cannot be built in CI: its README says
+   a build takes most of a day, with changes to Lake.
+3. The **CFSG data** workflow (`.github/workflows/cfsg-data.yml`) fetches the
+   repository at the commit `source.json` pins, as a blobless sparse checkout
+   of every Lean file but the certificates, runs the refresh, regenerates the
+   pages and runs the tests; on a pull request it fails when the committed data
+   differ from what the pin gives. The weekly run, or a dispatch with `newest`,
+   moves the pin to the newest main commit. A refresh writes nothing, and the
+   workflow fails, when the repository is not Apache-2.0, lacks a file the
+   commit lists, or when the top theorem, the reduction, a case or a main
+   result is not found where it should be, a milestone module's scopes don't
+   close, or the milestones drop under half the last count.
+
 ## The Stacks Project chapter
 
 [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) formalizes
@@ -480,6 +529,8 @@ The text quoted in `data/anthropic-flt/` comes from the PROOF-PATH.md,
 formalization.yaml and `Theorems/` files of
 [anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem),
 Apache-2.0.
+The README text and Lean source in `data/cfsg/` come from
+[Axiom Math's CFSG](https://github.com/AxiomMath/CFSG), Apache-2.0.
 The docstrings, Lean statements and attribute comments in `data/stacks/tags/`
 come from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks), Apache-2.0;
 the titles in `data/stacks/structure.json` come from

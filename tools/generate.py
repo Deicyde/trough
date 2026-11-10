@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, blueprints, catalog, ff, formal_conjectures, lean_pool, links, mathlib, stacks, tauceti, wiki
+from trough import anthropic_flt, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -79,6 +79,7 @@ def generate() -> dict[Path, str]:
             file=sys.stderr,
         )
     tau = tauceti.load_sources(DATA)
+    tau_root = None
     if tau and tau.deps:
         tau_root, tau_stats, tau_links = tauceti.chapter(tau)
         assign_paths(tau_root, ROADMAP / "tauceti")
@@ -193,6 +194,26 @@ def generate() -> dict[Path, str]:
             f"{aflt_stats['edges']}; {aflt_stats['imperial_matches']} names shared with Imperial FLT",
             file=sys.stderr,
         )
+    cfsg_data = cfsg.load(DATA)
+    if cfsg_data:
+        cfsg_built, cfsg_links = cfsg.chapter(cfsg_data, tau_root)
+        assign_paths(cfsg_built.root, ROADMAP / "cfsg")
+        blueprints.resolve(cfsg_built, VAULT)
+        files.update(render_tree(cfsg_built.root, VAULT))
+        chapters["cfsg"] = "cfsg/README.md"
+        lean_links["cfsg"] = cfsg_links
+        cfsg_stats = Counter(cfsg_built.stats)  # the chapter keeps no zero counts
+        blueprint_rows.append((cfsg.TITLE, "DECOMPOSED",
+                               f"[The top theorem, its reduction to {cfsg_stats['cases']} cases and the theorem for each "
+                               f"case, and {cfsg_stats['milestones']:,} milestone modules](../roadmap/cfsg/README.md), one "
+                               "article each, with their Lean statements."))
+        print(
+            f"cfsg: {cfsg_stats['articles']} articles ({cfsg_stats['cases']} cases, {cfsg_stats['milestones']} milestones, "
+            f"{cfsg_stats['indexed']} of them indexed, {cfsg_stats['unreached']} reached by no case), "
+            f"{cfsg_stats['milestone_declarations']} milestone declarations, {cfsg_stats['sorry']} holding sorry, "
+            f"{cfsg_stats['edges']} import edges, {cfsg_stats['tauceti']} linking Tau Ceti",
+            file=sys.stderr,
+        )
     stacks_data = stacks.load(DATA)
     if stacks_data:
         stacks_built, stacks_links = stacks.chapter(stacks_data)
@@ -237,6 +258,7 @@ def generate() -> dict[Path, str]:
         formal_conjectures=fc_data["rev"] if fc_data else None,
         lean_pool=pool[0]["rev"] if pool else None,
         anthropic_flt=aflt[0] if aflt else None,
+        cfsg=cfsg_data["rev"] if cfsg_data else None,
         stacks=stacks_data["source"]["rev"] if stacks_data else None,
     )
     print(

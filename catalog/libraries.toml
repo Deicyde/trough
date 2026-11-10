@@ -4,11 +4,12 @@
 # from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08, and
 # drift as the libraries move; a Formal Frontier library's commit is the one
 # its data/ff/ record pins, Formal Conjectures' the one
-# data/formal-conjectures/source.json pins and Anthropic's FLT's the one
-# data/anthropic-flt/source.json pins, so their entries have no head.
-# Nor has Lean Pool's: its commit is the one data/lean-pool/ pins, and its
-# snapshot fields were read at that pin on 2026-11-08. map_status is "live"
-# (a chapter of this site), "elsewhere" (mapped on another site) or
+# data/formal-conjectures/source.json pins, Anthropic's FLT's the one
+# data/anthropic-flt/source.json pins and Axiom Math's CFSG's the one
+# data/cfsg/source.json pins, so their entries have no head. Nor has Lean
+# Pool's: its commit is the one data/lean-pool/ pins, and its snapshot fields
+# were read at that pin on 2026-11-08. map_status is "live" (a chapter of this
+# site), "elsewhere" (mapped on another site) or
 # "planned"; map_unit says what one article will be. A Formal Frontier
 # library's subject is its part of that chapter, one of SUBJECTS in
 # tools/trough/catalog.py.
@@ -299,17 +300,15 @@ repo = "AxiomMath/CFSG"
 group = "corpus"
 homepage = "https://cfsg.axiommath.ai"
 what = "A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver."
-informal_layer = "Website only; in-Lean CFSG/Blueprint catalog modules (53 files); docs/ has only references.bib"
+informal_layer = "No informal text in the repository: the code has no docstrings outside CFSG/ThirdParty/. CFSG/Statement.lean states the classification and applies CFSG.Assembly.classification (CFSG/Assembly/Reduction.lean), which defines each case of the proof's case division as a proposition, to a theorem per case; CFSG/Milestones.lean imports the milestone modules directly under CFSG/Milestones/. docs/ has only references.bib."
 formalization_yaml = "v0.4; 2 main_results naming declarations (CFSGComparator.classification in Comparator/Solution.lean with comparator.json; CFSG.Milestones.cfsg_classification_native_and_realization)"
 license = "Apache-2.0"
 toolchain = "v4.35.0-rc3"
 mathlib = "b63f6e8a68d2"
 lean_files = 229089
-head = "69cb972f587a"
-head_date = "2026-10-27"
-map_status = "planned"
-map_unit = "milestone"
-map_plan = "Milestones from the in-Lean CFSG/Blueprint catalog and the formalization.yaml main results."
+map_status = "live"
+map_unit = "case theorem and milestone module"
+map_plan = "The proof as the repository writes it: the top theorem, the reduction to its cases and the theorem for each case, then one article per milestone module directly under CFSG/Milestones/, titled by Lean names: each declaration's Lean statement, or a definition's text, source line and status, read from the source without Lean. Edges from the top theorem's proof to the reduction and the cases, and from imports between case and milestone files; the formalization.yaml main results on the chapter's front page."
 
 [[library]]
 id = "lean-pool"

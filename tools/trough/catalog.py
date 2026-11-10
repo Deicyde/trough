@@ -131,18 +131,20 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
                    tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
                    formal_conjectures: str | None = None, lean_pool: str | None = None,
-                   anthropic_flt: dict | None = None, stacks: str | None = None) -> str:
+                   anthropic_flt: dict | None = None, cfsg: str | None = None,
+                   stacks: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
     Conjectures commit read, *lean_pool* the commit Lean Pool's record pins, *anthropic_flt* the
-    source record of Anthropic's Fermat's Last Theorem, whose commit it pins, and *stacks* the commit of
-    Axiom's Stacks Project formalization."""
+    source record of Anthropic's Fermat's Last Theorem, whose commit it pins, *cfsg* the commit Axiom
+    Math's CFSG's record pins, and *stacks* the commit of Axiom's Stacks Project formalization."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
               | ({"lean-pool": lean_pool} if lean_pool else {})
               | ({"anthropic-flt": anthropic_flt["rev"]} if anthropic_flt else {})
+              | ({"cfsg": cfsg} if cfsg else {})
               | ({"stacks": stacks} if stacks else {}))
     lines = [
         "# Sources",
@@ -233,6 +235,19 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             f"(https://github.com/{anthropic_flt['repo']}/tree/{anthropic_flt['rev']}), each with its route stage, aliases "
             "and nearest landmarks from html/data/meta.js and html/data/edges.js and its Lean statement from its file "
             "under Theorems/, Apache-2.0. Nothing is read with Lean.",
+        ]
+    if cfsg:
+        lines += [
+            "",
+            "## Classification of Finite Simple Groups (Axiom)",
+            "",
+            "- `data/cfsg/proof.json`: the top theorem, the reduction and the theorem its proof gives for each case, "
+            "each milestone module's declarations, with their Lean statements and lines, the case and milestone files "
+            "each such file imports, directly or not, through no other, the main results, facts and README opening, "
+            "and the files and "
+            f"theorems of each folder, from [AxiomMath/CFSG at {cfsg[:8]}](https://github.com/AxiomMath/CFSG/tree/{cfsg}), "
+            "Apache-2.0. They are read from the source text, without Lean. `data/cfsg/source.json` records the commit, "
+            "its Lean toolchain, Mathlib and Tau Ceti.",
         ]
     if stacks:
         lines += [
