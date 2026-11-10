@@ -20,7 +20,7 @@ Its statement uses no other node of the blueprint.
 
 ## Proof
 
-Clear from Definition [Conditional Kullback–Leibler divergence](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/further_improvement.tex#L65) and Lemma [Gibbs inequality](gibbs.md).
+Clear from Definition [Conditional Kullback–Leibler divergence](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/further_improvement.tex#L65) and Lemma [Gibbs inequality](gibbs.md).
 
 ## Lean
 
@@ -28,4 +28,4 @@ Formalized as [`condKLDiv_nonneg`](https://teorth.github.io/pfr/docs/find/#doc/c
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/further_improvement.tex, line 78](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/further_improvement.tex#L78)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/further_improvement.tex, line 78](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/further_improvement.tex#L78)

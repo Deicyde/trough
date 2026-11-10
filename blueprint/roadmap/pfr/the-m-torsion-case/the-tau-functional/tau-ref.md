@@ -42,4 +42,4 @@ Formalized as [`multiTau_min_sum_le`](https://teorth.github.io/pfr/docs/find/#do
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 305](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/torsion.tex#L305)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 305](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L305)

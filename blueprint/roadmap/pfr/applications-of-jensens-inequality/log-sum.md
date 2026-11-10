@@ -30,4 +30,4 @@ Formalized as [`Real.sum_mul_log_div_leq`](https://teorth.github.io/pfr/docs/fin
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/jensen.tex, line 14](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/jensen.tex#L14)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/jensen.tex, line 14](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/jensen.tex#L14)

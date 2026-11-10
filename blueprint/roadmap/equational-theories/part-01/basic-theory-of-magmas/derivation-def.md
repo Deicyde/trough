@@ -26,4 +26,4 @@ Formalized as [`derive`](https://teorth.github.io/equational_theories/docs/find/
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/intro.tex, line 91](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/intro.tex#L91)
+- [Equational Theories blueprint: chapter/intro.tex, line 91](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/intro.tex#L91)

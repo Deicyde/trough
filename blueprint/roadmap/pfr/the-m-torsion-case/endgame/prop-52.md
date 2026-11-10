@@ -51,7 +51,7 @@ $$
 \mathbb{I}[ (P_i)_{i \in \mathbb{Z}/m\mathbb{Z}} : (Q_j)_{j \in \mathbb{Z}/m\mathbb{Z} } \,\big|\, W ] \leq t,
 $$
 
-with $t$ as in (2). Since $Z_1$ is a function of $(P_i)_{i \in \mathbb{Z}/m\mathbb{Z}}$ by [Additional random variables](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/torsion.tex#L594), and similarly $Z_2$ is a function of $(Q_j)_{j \in \mathbb{Z}/m\mathbb{Z}}$, it follows immediately from [Data processing inequality](../data-processing-inequality/data-process.md) that
+with $t$ as in (2). Since $Z_1$ is a function of $(P_i)_{i \in \mathbb{Z}/m\mathbb{Z}}$ by [Additional random variables](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L594), and similarly $Z_2$ is a function of $(Q_j)_{j \in \mathbb{Z}/m\mathbb{Z}}$, it follows immediately from [Data processing inequality](../data-processing-inequality/data-process.md) that
 
 $$
 \mathbb{I}[ Z_1 : Z_2 \,|\, W ] \leq t.
@@ -69,7 +69,7 @@ $$
 \sum_{i=1}^m X'_{i,j} = \sum_{i \in \mathbb{Z}/m\mathbb{Z}} Y_{i-j,j} = Q_j.
 $$
 
-As before, $\sum_{i,j=1}^m X'_{i,j} = W$. Hence, using [Additional random variables](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/torsion.tex#L594) and [Data processing inequality](../data-processing-inequality/data-process.md) again, [Bounding mutual information](../bounding-the-mutual-information/key.md) tells us
+As before, $\sum_{i,j=1}^m X'_{i,j} = W$. Hence, using [Additional random variables](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L594) and [Data processing inequality](../data-processing-inequality/data-process.md) again, [Bounding mutual information](../bounding-the-mutual-information/key.md) tells us
 
 $$
 \mathbb{I}[ Z_3 :  Z_2 \,|\, W] \leq \mathbb{I}[ (R_i)_{i \in \mathbb{Z}/m\mathbb{Z}} : (Q_j)_{j \in \mathbb{Z}/m\mathbb{Z} } \,\big|\, W ] \leq t.
@@ -101,4 +101,4 @@ Formalized as [`mutual_information_le_t_12`](https://teorth.github.io/pfr/docs/f
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 623](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/torsion.tex#L623)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 623](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L623)

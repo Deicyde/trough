@@ -16,7 +16,7 @@ Suppose that one has a sequence $(L'_{0,n}, \diamond'_{n}, S'_{n}, {\mathcal I}_
 
 ## Proof
 
-Take the direct limit of the chain to obtain total functions $L'_0, \diamond', S'$. The axioms (i'), (iii'), (iv”), (v”), (vi”), (vii”) of the partial solutions then easily imply that the direct limit satisfies the axioms (i'), (iii'), (iv'), (v), (vi'), (vii') (one also uses axiom (P) to note that all pending identities disappear in the direct limit). The claim now follows from [Reduction to new axioms](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/1729.tex#L134).
+Take the direct limit of the chain to obtain total functions $L'_0, \diamond', S'$. The axioms (i'), (iii'), (iv”), (v”), (vi”), (vii”) of the partial solutions then easily imply that the direct limit satisfies the axioms (i'), (iii'), (iv'), (v), (vi'), (vii') (one also uses axiom (P) to note that all pending identities disappear in the direct limit). The claim now follows from [Reduction to new axioms](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/1729.tex#L134).
 
 ## Lean
 
@@ -24,4 +24,4 @@ Formalized as [`Eq1729.use_chain`](https://teorth.github.io/equational_theories/
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/1729.tex, line 188](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/1729.tex#L188)
+- [Equational Theories blueprint: chapter/1729.tex, line 188](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/1729.tex#L188)

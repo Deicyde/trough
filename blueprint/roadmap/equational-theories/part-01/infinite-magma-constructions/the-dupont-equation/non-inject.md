@@ -23,4 +23,4 @@ Stated as [`Eq63.Equation63_not_implies_Equation1692`](https://teorth.github.io/
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/infinite_magma_constructions.tex, line 850](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L850)
+- [Equational Theories blueprint: chapter/infinite_magma_constructions.tex, line 850](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/infinite_magma_constructions.tex#L850)

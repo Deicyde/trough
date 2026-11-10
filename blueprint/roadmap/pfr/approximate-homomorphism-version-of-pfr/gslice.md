@@ -39,4 +39,4 @@ Formalized as [`card_of_slice`](https://teorth.github.io/pfr/docs/find/#doc/card
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/approx_hom_pfr.tex, line 115](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/approx_hom_pfr.tex#L115)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/approx_hom_pfr.tex, line 115](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/approx_hom_pfr.tex#L115)

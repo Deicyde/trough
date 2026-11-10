@@ -41,4 +41,4 @@ Formalized as [`Subgraph.Equation29_implies_Equation14`](https://teorth.github.i
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/implications.tex, line 29](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/implications.tex#L29)
+- [Equational Theories blueprint: chapter/implications.tex, line 29](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/implications.tex#L29)

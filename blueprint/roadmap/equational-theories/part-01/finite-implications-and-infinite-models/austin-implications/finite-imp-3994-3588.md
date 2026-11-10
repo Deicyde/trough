@@ -25,4 +25,4 @@ Formalized as [`InfModel.Finite.Equation3994_implies_Equation3588`](https://teor
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/infinite_models.tex, line 113](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_models.tex#L113)
+- [Equational Theories blueprint: chapter/infinite_models.tex, line 113](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/infinite_models.tex#L113)

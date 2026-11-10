@@ -29,4 +29,4 @@ Formalized as [`ProbabilityTheory.entropy_pair_le_add`](https://teorth.github.io
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/entropy.tex, line 199](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/entropy.tex#L199)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/entropy.tex, line 199](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/entropy.tex#L199)

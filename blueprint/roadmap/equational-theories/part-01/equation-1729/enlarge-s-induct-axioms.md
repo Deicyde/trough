@@ -67,4 +67,4 @@ Formalized as [`Eq1729.enlarge_S'_induction_with_axioms`](https://teorth.github.
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/1729.tex, line 218](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/1729.tex#L218)
+- [Equational Theories blueprint: chapter/1729.tex, line 218](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/1729.tex#L218)
